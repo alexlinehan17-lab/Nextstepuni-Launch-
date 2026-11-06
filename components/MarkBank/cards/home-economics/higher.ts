@@ -23910,4 +23910,3666 @@ export const CARDS: SecCard[] = [
     { id: "methods", kind: "criterion", verbatim: "Methods of tenderising", marks: 12, contextNote: "Four methods, each graded 3:2:0. Correct hanging/action of lactic acid; mincing; pounding-meat hammer/piercing- knives; marinating; curing/brining; meat tenderisers; proteolytic enzymes; slow, moist methods of cooking; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9,10,11,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]},{"id":"point-4","verbatim":"Point 4","marks":3,"permittedMarks":[0,2,3]}] },
     ],
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sa-q1", topicId: "home-economics-0-6", conceptId: "carbohydrate-formulas-examples",
+    section: "A", questionRef: "2026 HL Section A Q1",
+    questionText: "Complete the table below in relation to carbohydrates. Monosaccharide Disaccharide Polysaccharide Chemical formula Example",
+    tariffModel: {"kind":"fixed","notation":"6 required cells × 1 (1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "formula-1", kind: "point", verbatim: "Monosaccharide — C6H12O6", marks: 1 },
+    { id: "example-1", kind: "anyN", verbatim: "Monosaccharide — Example", marks: 1, contextNote: "Claim 1 distinct points at 1 mark each; further valid answers may be credited.", openList: true, group: {"claimMax":1,"perOption":1,"options":["glucose","fructose","galactose"]} },
+    { id: "formula-2", kind: "point", verbatim: "Disaccharide — C12H22O11", marks: 1 },
+    { id: "example-2", kind: "anyN", verbatim: "Disaccharide — Example", marks: 1, contextNote: "Claim 1 distinct points at 1 mark each; further valid answers may be credited.", openList: true, group: {"claimMax":1,"perOption":1,"options":["sucrose","maltose","lactose"]} },
+    { id: "formula-3", kind: "point", verbatim: "Polysaccharide — (C6H10O5)n", marks: 1 },
+    { id: "example-3", kind: "anyN", verbatim: "Polysaccharide — Example", marks: 1, contextNote: "Claim 1 distinct points at 1 mark each; further valid answers may be credited.", openList: true, group: {"claimMax":1,"perOption":1,"options":["starch","fibre","glycogen","pectin","gums"]} },
+    ],
+    taskGroups: [{"sourceCardId":"he-2026-hl-sa-q1-column-1","label":"Monosaccharide","marks":2,"rowIds":["formula-1","example-1"]},{"sourceCardId":"he-2026-hl-sa-q1-column-2","label":"Disaccharide","marks":2,"rowIds":["formula-2","example-2"]},{"sourceCardId":"he-2026-hl-sa-q1-column-3","label":"Polysaccharide","marks":2,"rowIds":["formula-3","example-3"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-hl-sa-q1-carbohydrate-table",
+          "src": "/exam-figures/home-economics/home-economics-2026-hl-sa-q1-carbohydrate-table.png",
+          "srcHash": "d224c1ef7abb1966a469e2f543a29e53",
+          "alt": "Original blank carbohydrate table. Columns: Monosaccharide, Disaccharide, Polysaccharide. Required rows: Chemical formula and Example; all six cells retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sa-q2", topicId: "home-economics-0-7", conceptId: "lipid-smoke-flash-points",
+    section: "A", questionRef: "2026 HL Section A Q2",
+    questionText: "In relation to lipids, explain the following terms. Smoke point Flash point",
+    tariffModel: {"kind":"fixed","notation":"2 required terms × 3 points × 1 (1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "1", kind: "anyN", verbatim: "Smoke Point", marks: 3, contextNote: "Historical temperature examples vary by fat/oil and conditions. Claim 3 distinct points at 1 mark each; further valid answers may be credited.", openList: true, group: {"claimMax":3,"perOption":1,"options":["when fats are heated to 200°C","oils heated to 250°C","glycerol separates from fatty acids","glycerol breaks down into acrolein","blue smoke/haze","acrid smell"]} },
+    { id: "2", kind: "anyN", verbatim: "Flash Point", marks: 3, contextNote: "Historical temperature examples vary by fat/oil and conditions. Source correction: flash point involves an external ignition source; it is distinct from spontaneous autoignition. Claim 3 distinct points at 1 mark each; further valid answers may be credited.", openList: true, group: {"claimMax":3,"perOption":1,"options":["when fats are heated to 310°C","oils heated to 325°C","causes a vapour to be released","can spontaneously ignite"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sa-q3", topicId: "home-economics-0-8", conceptId: "vitamin-c-functions",
+    section: "A", questionRef: "2026 HL Section A Q3",
+    questionText: "Outline three biological functions of vitamin C.",
+    tariffModel: {"kind":"fixed","notation":"3 functions × 2 (2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "functions", kind: "criterion", verbatim: "functions", marks: 6, contextNote: "Three functions, each graded 2:1:0. Complete historical guidance: forms collagen; healthy gums; promotes healing of wounds; absorption of iron; absorption of calcium; maintains immune system/fights illness and white cells fight infection; reduces inflammation/acts as an antioxidant in the body; healthy nervous system/healthy membranes/maintains myelin sheath/nerve impulses; healthy muscles/muscle contractions; forms connective tissue; prevents scurvy; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sa-q4", topicId: "home-economics-0-6", conceptId: "carbohydrate-caramelisation-crystallisation",
+    section: "A", questionRef: "2026 HL Section A Q4",
+    questionText: "Describe the following properties of carbohydrates. Caramelisation Crystallisation",
+    tariffModel: {"kind":"fixed","notation":"2 required properties × 3 points × 1 (1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "1", kind: "anyN", verbatim: "Caramelisation", marks: 3, contextNote: "A culinary application is accepted. The printed temperatures describe the historical model. Claim 3 distinct points at 1 mark each; further valid answers may be credited.", openList: true, group: {"claimMax":3,"perOption":1,"options":["occurs when sugar is heated","to between 104°C and 177°C","occurs over ten distinct stages","gradual browning occurs results in lighter brown/to darker brown colour","causes a sweeter taste","overheating causes bitterness","carbonises/burns if overheated/above 177°C"]} },
+    { id: "2", kind: "anyN", verbatim: "Crystallisation", marks: 3, contextNote: "A culinary application is accepted. The printed temperatures describe the historical model. Claim 3 distinct points at 1 mark each; further valid answers may be credited.", openList: true, group: {"claimMax":3,"perOption":1,"options":["occurs when a solution is saturated with sugar/more sugar is added to a solution/liquid that can be absorbed/dissolved","causes sugar crystals to form","these sugar crystals solidify on cooling"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sa-q5", topicId: "home-economics-0-9", conceptId: "uht-milk-processing",
+    section: "A", questionRef: "2026 HL Section A Q5",
+    questionText: "Complete the table in relation to the processing of milk. Process Temperature Time Effect Ultra Heat Treatment",
+    tariffModel: {"kind":"fixed","notation":"3 required cells × 2 (2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "temperature", kind: "criterion", verbatim: "Temperature — 132°C (130-135°C)", marks: 2, contextNote: "Source correction: UHT requires at least 135°C with a suitable holding time. The printed historical answer 132°C (130–135°C) is below that requirement except at its upper limit. Graded 2:1:0.", permittedMarks: [0,1,2] },
+    { id: "time", kind: "criterion", verbatim: "Time — 1-2 seconds", marks: 2, contextNote: "Historical scheme holding time, graded 2:1:0; a valid industrial process depends on the temperature/time combination.", permittedMarks: [0,1,2] },
+    { id: "effect", kind: "criterion", verbatim: "Effect", marks: 2, contextNote: "One effect, graded 2:1:0. Complete source examples: pathogenic bacteria destroyed; shelf life extended; loss of vitamin C; loss of B-group vitamins; lactose becomes sweeter; flavour slightly altered; etc.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-hl-sa-q5-uht-table",
+          "src": "/exam-figures/home-economics/home-economics-2026-hl-sa-q5-uht-table.png",
+          "srcHash": "129e9a27280f35fac8ae5325097d7df6",
+          "alt": "Original blank milk-processing table. Process: Ultra Heat Treatment; required answer columns: Temperature, Time and Effect.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper, page 4 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sa-q6", topicId: "home-economics-0-1", conceptId: "basal-metabolic-rate",
+    section: "A", questionRef: "2026 HL Section A Q6",
+    questionText: "Explain the term Basal Metabolic Rate (BMR).",
+    tariffModel: {"kind":"fixed","notation":"Definition 2 (2:1:0)"}, totalMarks: 2,
+    rows: [
+    { id: "definition", kind: "criterion", verbatim: "Basal Metabolic Rate", marks: 2, contextNote: "Definition, graded 2:1:0. Complete guidance: the minimum amount of energy; needed to keep internal organs functioning; maintain body temperature; when the body is at rest; etc.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sa-q6-factors", topicId: "home-economics-0-1", conceptId: "basal-metabolic-rate-factors",
+    section: "A", questionRef: "2026 HL Section A Q6 — factors",
+    questionText: "State two factors that affect Basal Metabolic Rate (BMR).",
+    tariffModel: {"kind":"fixed","notation":"2 factors × 2 (2:0)"}, totalMarks: 4,
+    rows: [
+    { id: "factors", kind: "anyN", verbatim: "factors", marks: 4, contextNote: "Complete historical factors; no partial mark is printed. Claim 2 distinct points at 2 marks each; further valid answers may be credited.", openList: true, group: {"claimMax":2,"perOption":2,"options":["body weight","height","age","gender","occupation","health status","activity level","hormones","climate","pregnancy","lactation","diet","genetics","stress","muscle mass"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sa-q7", topicId: "home-economics-0-8", conceptId: "iron-absorption-factors",
+    section: "A", questionRef: "2026 HL Section A Q7",
+    questionText: "Explain two factors that affect the absorption of iron in the body.",
+    tariffModel: {"kind":"fixed","notation":"2 factors × 3 (3:2:1; zero for no credit)"}, totalMarks: 6,
+    rows: [
+    { id: "factors", kind: "criterion", verbatim: "factors", marks: 6, contextNote: "Two explained factors, each with printed partial steps 3:2:1; zero is available for an absent/incorrect response. One card covers either enhancing or inhibiting factors; no quota is printed. Complete historical guidance: Assist: consuming haem and non-haem iron together; consuming foods high in vitamin C/reducing agent with non-haem iron sources; acidity from HCL in the stomach; protein; sugar; vitamin B6 Pyridoxine; vitamin B12 Cobalamin; Folic acid; vitamin D; etc. Hinder: tannins in tea, coffee; excess dietary fibre; phytic acid; oxalic acid; bind with iron in the intestine; phosphates in carbonated drinks; obesity; lack of vitamin C; excess alcohol; smoking; excess protein; excess vitamin E; gluten intolerance; lack of oestrogen; calcium; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sa-q8", topicId: "home-economics-0-4", conceptId: "fsai-role",
+    section: "A", questionRef: "2026 HL Section A Q8",
+    questionText: "Outline the role of the Food Safety Authority of Ireland (FSAI). Give three points.",
+    tariffModel: {"kind":"fixed","notation":"3 roles × 2 (2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "roles", kind: "criterion", verbatim: "roles", marks: 6, contextNote: "Three roles, each graded 2:1:0. Complete guidance: identifies/assesses/manages risks in the food chain; leading the response to food incidents and crises reported by the public/refers complaints about food safety from public to Environmental Health Office; issues improvement orders; issues closure orders; coordinates rapid-alert systems to recall potentially harmful food; advises government agencies e.g. HSE; advises food industry /businesses on hygiene standards and food production, food distribution food marketing and food legistlation; promotes a culture of excellence in food safety/advises consumers on food labeling/food allergens/food safety practices/ensures consumers are not misled about food they buy; asssists businesses on implementation of HACCP systems; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sa-q9", topicId: "home-economics-0-4", conceptId: "infectious-toxic-food-poisoning",
+    section: "A", questionRef: "2026 HL Section A Q9",
+    questionText: "Describe the following types of food poisoning. Infectious Food Poisoning Toxic Food Poisoning",
+    tariffModel: {"kind":"fixed","notation":"2 required types × 3 points × 1 (1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "1", kind: "anyN", verbatim: "Infectious Food Poisoning", marks: 3, contextNote: "These are historical examination descriptions; incubation time and heat resistance depend on the organism/toxin. Claim 3 distinct points at 1 mark each; further valid answers may be credited.", openList: true, group: {"claimMax":3,"perOption":1,"options":["illness caused by eating food containing large numbers of pathogenic bacteria","endotoxins are produced inside the bacterial cells","and released when bacterial cells die","easily destroyed by normal cooking temperatures","long incubation period/over 12 hours","Example: Salmonella/Listeria/E. coli/Campylobacter"]} },
+    { id: "2", kind: "anyN", verbatim: "Toxic Food Poisoning", marks: 3, contextNote: "These are historical examination descriptions; incubation time and heat resistance depend on the organism/toxin. Source correction: cooking does not destroy Staph toxin. Do not treat the generic “boil for 30 minutes” example as a method to make contaminated food safe. Claim 3 distinct points at 1 mark each; further valid answers may be credited.", openList: true, group: {"claimMax":3,"perOption":1,"options":["illness caused by eating food containing pathogenic bacteria","produce exotoxins outside the bacterial cell","toxins may be produced before or after the food is eaten","difficult to destroy/necessary to boil for 30 minutes","short incubation period/around 2 hours","Example: Clostridium botulinum/Staphylococcus aureus/Clostridium perfringens/welchii"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sa-q10", topicId: "home-economics-1-3", conceptId: "microwave-components",
+    section: "A", questionRef: "2026 HL Section A Q10",
+    questionText: "Explain the function of each of the following parts of a microwave oven. Transformer Magnetron",
+    tariffModel: {"kind":"fixed","notation":"2 functions × 3 (3:2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "transformer", kind: "criterion", verbatim: "Transformer", marks: 3, contextNote: "Explain its function, graded 3:2:1:0. Source correction: a transformer raises voltage, not supply frequency. Historical wording: domestic voltage is increased; to a higher frequency; domestic voltage 230V; etc.", permittedMarks: [0,1,2,3] },
+    { id: "magnetron", kind: "criterion", verbatim: "Magnetron", marks: 3, contextNote: "Explain its function, graded 3:2:1:0. Complete guidance: electrical energy is converted; into electromagnetic waves/microwave energy; etc.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sa-q11", topicId: "home-economics-1-4", conceptId: "furniture-fire-safety-label",
+    section: "A", questionRef: "2026 HL Section A Q11",
+    questionText: "Outline two pieces of information that are required on a permanent label in order to comply with the Fire Safety (Domestic Furniture) Order 1988, 1995.",
+    tariffModel: {"kind":"fixed","notation":"2 information points × 3 (3:2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "information", kind: "criterion", verbatim: "information", marks: 6, contextNote: "Two pieces of information, each graded 3:2:0. Answer about the legislation named in the historical paper; a labelled sketch is accepted. Complete guidance: warning message ‘Carelessness causes fire’; contact details/name and address of manufacturer or importer; manufacturers identification and batch number; description of the filling material used; description of cover material used; details of the fire-resistant inter-liner, if used; etc. Accept labelled sketch.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sa-q12", topicId: "home-economics-1-1", conceptId: "state-pension-types",
+    section: "A", questionRef: "2026 HL Section A Q12",
+    questionText: "Describe the following types of pensions. Contributory old age pension Non-Contributory old age pension",
+    tariffModel: {"kind":"fixed","notation":"2 required pension types × 3 points × 1 (1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "1", kind: "anyN", verbatim: "Contributory Old Age Pension", marks: 3, contextNote: "The source explicitly gives 2025 rates and historical eligibility summaries, not current benefit advice. Claim 3 distinct points at 1 mark each; further valid answers may be credited.", openList: true, group: {"claimMax":3,"perOption":1,"options":["must have enough PRSI contributions","must have paid PRSI for at least 10 years","must have started paying before the age of 56","not means tested","€289.30 is maximum weekly rate at age 66 years in 2025","receive from age 66","can defer claiming up to age 70"]} },
+    { id: "2", kind: "anyN", verbatim: "Non-Contributory Old Age Pension", marks: 3, contextNote: "The source explicitly gives 2025 rates and historical eligibility summaries, not current benefit advice. Claim 3 distinct points at 1 mark each; further valid answers may be credited.", openList: true, group: {"claimMax":3,"perOption":1,"options":["not enough PRSI contributions","taxable but dependent on other income","means tested","must have PPS number","must live in Ireland","€278 is maximum weekly rate at age 66 years in 2025","receive from age 66","for those who do not qualify for contributory"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sa-q13", topicId: "home-economics-3-3", conceptId: "housing-development-trends",
+    section: "A", questionRef: "2026 HL Section A Q13",
+    questionText: "Analyse three recent trends in housing development in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"3 trends × 2 (2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "trends", kind: "criterion", verbatim: "trends", marks: 6, contextNote: "Three analysed trends, each graded 2:1:0. Recent refers to the 2026 examination context. Complete guidance: high density and multi-unit developments and apartments; small, exclusive housing estates; gated communities; energy efficient house design: passive housing/sustainable energy/solar panels/air- to-water heating; etc. one-off houses in rural areas; housing built by developers; planning permission for back garden development; modular housing; approved housing bodies; derelict homes grant; vacant properties grant; SEAI grants; insufficient housing available; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sa-q14", topicId: "home-economics-1-1", conceptId: "mabs-role",
+    section: "A", questionRef: "2026 HL Section A Q14",
+    questionText: "Discuss the role of the Money Advice and Budgeting Service (MABS). Give two points.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 (3:2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 6, contextNote: "Two discussed points, each graded 3:2:0. Complete guidance: free independent advice to help individuals/families; help review budgets to manage sources of credit; support good saving/spending habits; look at opportunities to maximise income; negotiate with creditors/act as approved intermediaries to deal with mortgage and housing related debt; support clients at repossession court sittings as court mentors; provides on-line information; provides phone and face-to-face contacts; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sb-q1a", topicId: "home-economics-0-1", conceptId: "protein-snack-comparison",
+    section: "B", questionRef: "2026 HL Section B Q1(a)",
+    stem: "The targeted marketing of high-protein snack foods means consumers perceive them as healthy. (www.safefood.net) Below is the typical nutritional content per 100 g/100 ml of two high protein snack foods. Protein bar High protein fruit yogurt Energy 523 kcal 122 kcal Protein 17 g 12 g Fat of which saturates 37 g 7.6 g 2.9 g 1.3 g Carbohydrate of which sugars 24 g 16 g 10 g 8 g Calcium 60 mg 190 mg Fibre 13 g 3.5 g Salt 0.8 g 0.2 g",
+    questionText: "Using the information provided and having regard to current healthy eating guidelines, compare and evaluate the nutritional contribution of protein bars and high protein fruit yogurts to the diet.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:4:3:2:1:0)"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 20, contextNote: "4 distinct points, each graded 5:4:3:2:1:0. Complete source guidance: energy source; energy requirements for different activities; nutrient source; nutrient function; suitability of the food/nutrient for specific age group; suitability for those with dietary considerations; suitability for those with diet related diseases; etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,1,2,3,4,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,1,2,3,4,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,1,2,3,4,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,1,2,3,4,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-hl-sb-q1a-protein-snacks",
+          "src": "/exam-figures/home-economics/home-economics-2026-hl-sb-q1a-protein-snacks.png",
+          "srcHash": "423f9c5a8a6901bc23ca86d51ef522a3",
+          "alt": "Original high-protein snack table per 100 g/100 ml, including the adjacent product photograph and source caption. Protein bar / high-protein fruit yogurt: energy 523/122 kcal, protein 17/12 g, fat 37/2.9 g, saturates 7.6/1.3 g, carbohydrate 24/10 g, sugars 16/8 g, calcium 60/190 mg, fibre 13/3.5 g, salt 0.8/0.2 g.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sb-q1b", topicId: "home-economics-0-5", conceptId: "essential-nonessential-amino-acids",
+    section: "B", questionRef: "2026 HL Section B Q1(b)",
+    questionText: "Differentiate between essential amino acids and non-essential amino acids and give one example of each type of amino acid.",
+    tariffModel: {"kind":"fixed","notation":"2 required categories × (definition 2 (2:1:0) + example 2 (2:0))"}, totalMarks: 8,
+    rows: [
+    { id: "definition-1", kind: "criterion", verbatim: "cannot be made by the body, must be obtained from food", marks: 2, contextNote: "One definition, graded 2:1:0. Source correction: nine amino acids are essential for humans; the printed eight-adult/ten-child count is historical. Complete historical wording: cannot be made by the body, must be obtained from food; limited in number/10 for children/8 for adults; etc.", permittedMarks: [0,1,2] },
+    { id: "example-1", kind: "anyN", verbatim: "Example", marks: 2, contextNote: "Give an example of the SAME category, graded 2:0. Histidine is essential for adults too; arginine is conditionally essential. Claim 1 distinct points at 2 marks each; further valid answers may be credited.", openList: true, group: {"claimMax":1,"perOption":2,"options":["valine","leucine","isoleucine","lysine","methionine","phenylalanine","threonine","tryptophan","for children histidine, arginine"]} },
+    { id: "definition-2", kind: "criterion", verbatim: "can be made by the body, do not need to be obtained from food", marks: 2, contextNote: "One definition, graded 2:1:0. Complete historical wording: can be made by the body, do not need to be obtained from food; more than 10; etc.", permittedMarks: [0,1,2] },
+    { id: "example-2", kind: "anyN", verbatim: "Example", marks: 2, contextNote: "Give an example of the SAME category, graded 2:0. Claim 1 distinct points at 2 marks each; further valid answers may be credited.", openList: true, group: {"claimMax":1,"perOption":2,"options":["alanine","asparagine","aspartic acid","cysteine","glutamic acid","glutamine","glycine","proline","serine"]} },
+    ],
+    taskGroups: [{"sourceCardId":"he-2026-hl-sb-q1b-category-1","label":"Essential amino acids","marks":4,"rowIds":["definition-1","example-1"]},{"sourceCardId":"he-2026-hl-sb-q1b-category-2","label":"Non-essential amino acid","marks":4,"rowIds":["definition-2","example-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sb-q1c", topicId: "home-economics-0-5", conceptId: "protein-deamination",
+    section: "B", questionRef: "2026 HL Section B Q1(c)",
+    questionText: "Describe the deamination of protein.",
+    tariffModel: {"kind":"fixed","notation":"7 points × 2 (2:0)"}, totalMarks: 14,
+    rows: [
+    { id: "deamination", kind: "anyN", verbatim: "deamination", marks: 14, contextNote: "A labelled flow chart/diagram is accepted. Claim 7 distinct points at 2 marks each; further valid answers may be credited.", openList: true, group: {"claimMax":7,"perOption":2,"options":["excess amino acids that are not required by the body","occurs in the liver","amino group/(NH2)","converted to ammonia","converted to urea","urine is excreted","carboxyl group/(COOH)","is oxidised","used for heat and energy"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sb-q1d", topicId: "home-economics-0-5", conceptId: "protein-denaturation",
+    section: "B", questionRef: "2026 HL Section B Q1(d)",
+    questionText: "Explain the denaturation of protein. In your answer refer to:\n• heat\n• mechanical action\n• enzymes.",
+    tariffModel: {"kind":"fixed","notation":"3 required mechanisms × 3 points × 2 (2:1:0)"}, totalMarks: 18,
+    rows: [
+    { id: "1", kind: "criterion", verbatim: "Heat", marks: 6, contextNote: "Three points about this required mechanism, each graded 2:1:0. Culinary/practical application is accepted. Complete historical guidance: causes protein chains to unfold/change in structure; irreversible; protein chains bond together; food coagulates/sets; egg yolks at 68°C; egg whites at 60°C; dry heat: causes shrinkage and toughening of muscle tissue with loss of moisture resulting in a dry texture; etc. moist heat: converts collagen to gelatine; myoglobin in meat changes colour from red to brown; milk protein casein forms a skin; etc. Accept culinary application.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "2", kind: "criterion", verbatim: "Mechanical action", marks: 6, contextNote: "Three points about this required mechanism, each graded 2:1:0. Culinary/practical application is accepted. Complete historical guidance: causes protein chains to unfold/change in structure; irreversible; partial coagulation may occur; temporary foam created; permanently set by heat/gelatine; whisking meringues; etc. Accept culinary application.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "3", kind: "criterion", verbatim: "Enzymes", marks: 6, contextNote: "Three points about this required mechanism, each graded 2:1:0. Culinary/practical application is accepted. Complete historical guidance: causes protein chains to unfold/change in structure; irreversible; a chemical reaction occurs; occurs during cheese-making; rennin changes milk protein caseinogen into casein; fruit enzymes/papain/bromelain tenderise meat; proteolytic enzymes breakdown meat fibres making it tender; occurs in digestion, rennin/pepsin/trypsin/protease/peptidase, etc. Accept practical application.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sb-q1e", topicId: "home-economics-0-10", conceptId: "protein-food-safety-value",
+    section: "B", questionRef: "2026 HL Section B Q1(e)",
+    questionText: "Devise a set of strategies to follow when selecting protein foods to ensure safety and value for money.",
+    tariffModel: {"kind":"fixed","notation":"Safety 1 + value 1 + other 2, each 5 (5:4:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "safety", kind: "criterion", verbatim: "Safety", marks: 5, contextNote: "One safety point, graded 5:4:3:0. Complete historical guidance: buy from reliable sources; food business/staff implement AGPRC system; food handler following hygiene rules; check the best before date on perishable foods; packaging is intact and not damaged; cans not dented, rusted or blown; buy frozen foods at end of shopping trip; raw meat stored in-store away from cooked foods; storage units in shops should be at correct temperature e.g. frozen foods should be frozen solid; inspect food from all sides; fresh protein foods should have a fresh smell, good colour; check symbols on labels; etc.", permittedMarks: [0,3,4,5] },
+    { id: "value", kind: "criterion", verbatim: "Value for money", marks: 5, contextNote: "One value-for-money point, graded 5:4:3:0. Complete guidance: shop around; avail of special offers; buy cheaper cuts of meat; buy in bulk when cheaper; include tinned protein foods in diet; buy foods in season; buy minimally processed plant-based proteins e.g. dried pulses; avoid expensive ultra processed replacement ‘meat-style’ products; etc.", permittedMarks: [0,3,4,5] },
+    { id: "other", kind: "criterion", verbatim: "other points", marks: 10, contextNote: "Two further distinct points from either heading, each graded 5:4:3:0.", permittedMarks: [0,3,4,5,6,7,8,9,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,4,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,4,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sb-q2a", topicId: "home-economics-0-9", conceptId: "vegetables-nutritional-significance",
+    section: "B", questionRef: "2026 HL Section B Q2(a)",
+    stem: "Vegetables are a source of many nutrients and provide flavour and texture to meals.",
+    questionText: "Evaluate the nutritional significance of vegetables in the diet.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4 (4:3:2:1:0)"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 20, contextNote: "5 distinct points, each graded 4:3:2:1:0. Complete source guidance: Composition varies by vegetable; historical health effects are not guaranteed outcomes for an individual. protein: LBV/HBV protein in soya beans; pulse vegetables have highest LBV content; needed for growth and repair; etc. fat: 0-8%; most vegetables have no fat; olives and soya beans are exceptions; reduce risk of CHD/increase concentration; cholesterol increases risk of CHD; etc. carbohydrate: starch, dietary fibre and sugar in varying amounts; pulses, roots and tubers provide starch; needed for energy; dietary fibre found in skins of vegetables and pulse vegetables; aids digestion; small amounts of sugar in carrots, tomatoes, peppers and onions; provides energy; etc. vitamins: good source of B-group vitamins; B1 Thiamine in pulse vegetables aids metabolism of carbohydrates and fats; B2 Riboflavin in pulse vegetables and mushrooms aids metabolism of proteins, carbohydrates and fats; etc. B3 Niacin in mushrooms aids metabolism of carbohydrates; etc. B6 Pyridoxine in pulses supports healthy nerve activity; B9 Folate in leafy green vegetables maintains immune system; vitamin A in leafy green vegetables and orange/red colour vegetables for healthy eyesight; etc. vitamin C is present in all vegetables and assists absorption of iron and calcium; etc. minerals: calcium, small amounts in leafy green, root pulses strong bones and teeth; etc. iron in leafy green vegetables and pulses are good source of non-haem iron and assist in producing haemoglobin; sodium; zinc; iodine; etc. water: varies depending on type; higher water content, the less fat present; hydration; etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sb-q2b", topicId: "home-economics-0-3", conceptId: "vegetable-nutrient-retention",
+    section: "B", questionRef: "2026 HL Section B Q2(b)",
+    stem: "Vegetables are a source of many nutrients and provide flavour and texture to meals.",
+    questionText: "Outline four guidelines to follow when preparing and cooking vegetables in order to maximise retention of nutrients.",
+    tariffModel: {"kind":"fixed","notation":"Preparation 1 + cooking 1 + other 2, each 3 (3:2:1:0)"}, totalMarks: 12,
+    rows: [
+    { id: "preparation", kind: "criterion", verbatim: "Preparation", marks: 3, contextNote: "One preparation guideline, graded 3:2:1:0. Complete guidance: avoid peeling/chopping/shredding; prepare close to cooking time; avoid soaking in water; use a sharp knife to chop vegetables; etc.", permittedMarks: [0,1,2,3] },
+    { id: "cooking", kind: "criterion", verbatim: "Cooking", marks: 3, contextNote: "One cooking guideline, graded 3:2:1:0. Complete guidance: cook quickly; use minimum amount of water when cooking; cover pot with a lid; use cooking liquid for sauces and soups; do not add alkalis when cooking; avoid copper or brass saucepans; use cooking methods that help to retain nutrients e.g. stir-fry, steam; avoid overcooking, cook until al dente; etc.", permittedMarks: [0,1,2,3] },
+    { id: "other", kind: "criterion", verbatim: "other points", marks: 6, contextNote: "Two further distinct guidelines from either heading, each graded 3:2:1:0.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sb-q2c", topicId: "home-economics-0-4", conceptId: "vegetable-spoilage-causes",
+    section: "B", questionRef: "2026 HL Section B Q2(c)",
+    stem: "Vegetables are a source of many nutrients and provide flavour and texture to meals.",
+    questionText: "Discuss the causes of food spoilage in vegetables. Refer to:\n• enzymes\n• moisture loss\n• microbial contamination.",
+    tariffModel: {"kind":"fixed","notation":"3 required causes × 2 points × 3 (3:2:0)"}, totalMarks: 18,
+    rows: [
+    { id: "1", kind: "criterion", verbatim: "Enzymes", marks: 6, contextNote: "Two points on this required cause, each graded 3:2:0. Complete guidance: causes over-ripening; decay/decomposition; can work at low temperatures e.g. in freezer; softening occurs; oxidation, phenolase/oxidase released from cell walls when vegetables are cut; causes browning on exposure to oxygen e.g. potatoes; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "2", kind: "criterion", verbatim: "Moisture loss", marks: 6, contextNote: "Two points on this required cause, each graded 3:2:0. Complete guidance: moisture evaporates from vegetables after harvesting; they no longer absorb moisture from the soil; leads to shrinkage/wrinkling/wilting/limp appearance; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "3", kind: "criterion", verbatim: "Microbial contamination", marks: 6, contextNote: "Two points on this required cause, each graded 3:2:0. Complete guidance: moulds, yeast and bacteria feed on the nutrient rich, moist tissues of vegetables; cause visible food spoilage on exterior of vegetables; Rhizopus causes soft rot; Aspergillus causes black rot; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sb-q3a", topicId: "home-economics-0-11", conceptId: "processed-food-advantages-disadvantages",
+    section: "B", questionRef: "2026 HL Section B Q3(a)",
+    stem: "The range of processed foods extends from those that are minimally processed to foods that are ultra processed (UPFs).",
+    questionText: "Discuss the advantages and disadvantages of including processed/convenience foods in the diet.",
+    tariffModel: {"kind":"fixed","notation":"2 required headings × 2 points × 4 (4:2:0)"}, totalMarks: 16,
+    rows: [
+    { id: "1", kind: "criterion", verbatim: "Advantages", marks: 8, contextNote: "Two points under this required heading, each graded 4:2:0. Effects depend on the specific food and diet. Complete guidance: save time and energy in the home; fewer cooking skills may be required; allows for novel/new food products in the diet; may be healthier options; may be processed to reduce salt; may be processed to reduce sugar; may be processed to reduce fat; adds variety to diet; freezing, drying & canning allow food to last longer/increases shelf-life of food/less waste occurs; ensures wide choice all year round; allows for food fortification; caters for special dietary requirements; usable portion sizes; may be easier to store; pasteurisation destroys harmful bacteria; pre- chopped & pre-cooked foods save preparation and cooking time; may be cheaper; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "2", kind: "criterion", verbatim: "Disadvantages", marks: 8, contextNote: "Two points under this required heading, each graded 4:2:0. Effects depend on the specific food and diet. Complete guidance: may be more expensive; may be high salt; may be high sugar; may be higher in saturated fat; may be lower in fibre; may have inferior taste and texture than home-made; higher in additives; high calorie density; possible that relying heavily on processed foods can increase the risk of obesity, heart disease and Type 2 diabetes; vitamin C/ D/A/B group vitamins/iron/calcium/zinc may be lost in processing; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sb-q3b", topicId: "home-economics-0-11", conceptId: "artificial-sweetener-classes",
+    section: "B", questionRef: "2026 HL Section B Q3(b)",
+    stem: "The range of processed foods extends from those that are minimally processed to foods that are ultra processed (UPFs).",
+    questionText: "Write an informative account of artificial sweeteners. Refer to:\n• description of types/classes\n• examples\n• uses in food.",
+    tariffModel: {"kind":"fixed","notation":"2 classes × (description 3 (3:2:0) + example 3 (3:0) + use 3 (3:0))"}, totalMarks: 18,
+    rows: [
+    { id: "type-1", kind: "criterion", verbatim: "Intense sweeteners", marks: 3, contextNote: "Describe this required class, graded 3:2:0. Complete historical guidance: low in kilocalories; small amounts used; much sweeter than sugar; sweetening tablets or powder; etc.", permittedMarks: [0,2,3] },
+    { id: "example-1", kind: "alt", verbatim: "Aspartame; Canderel; NutraSweet; Saccharine; Hermesetas;", marks: 3, contextNote: "One example from the SAME class, graded 3:0.", openList: true },
+    { id: "use-1", kind: "alt", verbatim: "to replace sugar in foods; to sweeten food; to sweeten medicines; etc. no added-sugar canned vegetables; etc.", marks: 3, contextNote: "One use of the SAME class, graded 3:0.", openList: true },
+    { id: "type-2", kind: "criterion", verbatim: "Bulk sweeteners", marks: 3, contextNote: "Describe this required class, graded 3:2:0. Complete historical guidance: high in kilocalories; used in same amounts as sugar; similar sweetness to sugar; granules or powder; etc.", permittedMarks: [0,2,3] },
+    { id: "example-2", kind: "alt", verbatim: "Sorbitol Mannitol", marks: 3, contextNote: "One example from the SAME class, graded 3:0.", openList: true },
+    { id: "use-2", kind: "alt", verbatim: "confectionary; diabetic foods; etc. biscuits; sugar-free chewing gum; etc.", marks: 3, contextNote: "One use of the SAME class, graded 3:0.", openList: true },
+    ],
+    taskGroups: [{"sourceCardId":"he-2026-hl-sb-q3b-class-1","label":"Intense sweeteners","marks":9,"rowIds":["type-1","example-1","use-1"]},{"sourceCardId":"he-2026-hl-sb-q3b-class-2","label":"Bulk sweeteners","marks":9,"rowIds":["type-2","example-2","use-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sb-q3c", topicId: "home-economics-0-11", conceptId: "processed-food-labelling",
+    section: "B", questionRef: "2026 HL Section B Q3(c)",
+    stem: "The range of processed foods extends from those that are minimally processed to foods that are ultra processed (UPFs).",
+    questionText: "Analyse how labelling can assist consumers in their choice of processed/ convenience foods.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 4 (4:3:0)"}, totalMarks: 16,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 16, contextNote: "4 distinct points, each graded 4:3:0. Complete source guidance: information/feature name of food; list of ingredients in decreasing order of weight; declaration of allergens; exact % of key ingredients; nutritional information; traffic light symbols; net quantity; use-by date/best before date; alcoholic strength; specific storage instructions; specific reheating instructions/instructions for use; name and address of the food business/ manufacturer; country of origin; symbols organic/quality marks; specific claims; etc. assists choice recognised/quality brand; warnings; health status; type and number of additives; judgement on portion size/value for money; ease of storage; ease of use; etc.", permittedMarks: [0,3,4,6,7,8,9,10,11,12,13,14,15,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,3,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,3,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,3,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sb-q4a", topicId: "home-economics-1-2", conceptId: "consumer-shopping-patterns",
+    section: "B", questionRef: "2026 HL Section B Q4(a)",
+    stem: "A series of interrelated factors impact consumer behaviour.",
+    questionText: "Analyse the recent changes in consumer shopping patterns.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4 (4:2:0)"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "changes", marks: 20, contextNote: "5 distinct points, each graded 4:2:0. Complete source guidance: Recent refers to the 2026 examination context. online shopping, using postal, home-delivery service, click and collect; online research before making a purchase; consumer choices impacted by social media; increased focus on quality; increased focus on value for money; late-night shopping; one-stop shopping; cash replaced by card payments; money off vouchers; speciality supermarkets; mid-day grab and go shopping; consumer choices impacted by merchandising techniques; ethical/environmentally aware shopping patterns; consumer expectations; frequency; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sb-q4b", topicId: "home-economics-1-1", conceptId: "household-spending-influences",
+    section: "B", questionRef: "2026 HL Section B Q4(b)",
+    stem: "A series of interrelated factors impact consumer behaviour.",
+    questionText: "Discuss how the following impact on household spending:\n• income\n• family stage\n• personal values.",
+    tariffModel: {"kind":"fixed","notation":"3 required factors × 6 (6:4:2:0)"}, totalMarks: 18,
+    rows: [
+    { id: "1", kind: "criterion", verbatim: "Income", marks: 6, contextNote: "One developed point about this required factor, graded 6:4:2:0. Complete guidance: higher incomes/more money allows spending on discretionary items; lower incomes/less money means fewer luxury items/less discretionary spending and more focus on essential spending; etc.", permittedMarks: [0,2,4,6] },
+    { id: "2", kind: "criterion", verbatim: "Family stage", marks: 6, contextNote: "One developed point about this required factor, graded 6:4:2:0. Complete guidance: early years of house purchase; age of children, small children, teenage children play/study/socialising needs; stage of education, primary/secondary school/college costs; costs change when adult children leave home; parents move into older age, health issues may arise; etc.", permittedMarks: [0,2,4,6] },
+    { id: "3", kind: "criterion", verbatim: "Personal values", marks: 6, contextNote: "One developed point about this required factor, graded 6:4:2:0. Complete guidance: organic; shop local; sustainability; ethics; vegetarianism; environmental; family values; cultural; religion; social; well-being/health; cost; origin; etc.", permittedMarks: [0,2,4,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sb-q4c", topicId: "home-economics-1-1", conceptId: "household-budgeting-advantages",
+    section: "B", questionRef: "2026 HL Section B Q4(c)",
+    stem: "A series of interrelated factors impact consumer behaviour.",
+    questionText: "Describe the advantages of household budgeting.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4 (4:2:0)"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 12, contextNote: "3 distinct points, each graded 4:2:0. Complete source guidance: provides reassurance so less worry/anxiety and stress; areas of overspending become obvious; teaches children value of money and models good financial management skills; helps reduces reliance on credit, risk of overextending and large debt; savings/investments provide financial security; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sb-q5a", topicId: "home-economics-2-0", conceptId: "economic-social-family-change",
+    section: "B", questionRef: "2026 HL Section B Q5(a)",
+    stem: "In contemporary Ireland economic and social changes have impacted family life and family structures.",
+    questionText: "Analyse how economic and social changes affect families in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"Economic 2 + social 2 + other 1, each 4 (4:2:0)"}, totalMarks: 20,
+    rows: [
+    { id: "economic", kind: "criterion", verbatim: "Economic", marks: 8, contextNote: "Two economic points, each graded 4:2:0. Complete guidance: increase in cost of living/inflation; cost of childcare has increased; possible higher education costs; cost of housing has increased; both parents may need to work to support family home; families are having fewer children; families may be dependent on state support; stress and worry about finances can cause tensions among family members; as grandparents may be needed to support childcare, this allows for closer bonds with grandchildren; adult children still living at home; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "social", kind: "criterion", verbatim: "Social", marks: 8, contextNote: "Two social points, each graded 4:2:0. Complete guidance: decline in extended family; increasing gender equality; dual career families/women focusing on career; urbanisation; marriage breakdown/separation and divorce; increased leisure time; same sex marriages; women having children later in life; role reversal; patriarchal to more egalitarian decision making; segregated to shared roles/fathers more involved in care roles/mothers providing income; smaller family size/parent style changing and more focus on child; increased leisure allows for more family time building relationships/bonds; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "other", kind: "criterion", verbatim: "other point", marks: 4, contextNote: "One further distinct point under either heading, graded 4:2:0.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sb-q5b", topicId: "home-economics-2-1", conceptId: "family-life-cycle-roles",
+    section: "B", questionRef: "2026 HL Section B Q5(b)",
+    stem: "In contemporary Ireland economic and social changes have impacted family life and family structures.",
+    questionText: "Discuss how the roles of parents and children evolve throughout the life cycle of the family.",
+    tariffModel: {"kind":"fixed","notation":"2 required roles × 2 points × 4 (4:2:0)"}, totalMarks: 16,
+    rows: [
+    { id: "1", kind: "criterion", verbatim: "Role of parent", marks: 8, contextNote: "Two discussed points under this required heading, each graded 4:2:0. Complete guidance, including the lower-page continuation: role of caring for children high demands/input/intensity with younger children evolves to lesser demands/input/intensity through the lifecycle of the family; socialisation role teaching children society approved norms, values, behaviours and social skills evolving to encouraging/insisting that teenagers demonstrate those skills independently; the role of caring for children with additional needs may evolve to a role that involves lesser demands as the child becomes more independent, but may be limited by the types/degree of additional needs; parents move from full financial responsibility of children to less support for young adult children transitioning into the world of work and gaining financial independence, conversely, due to high cost of housing/living some parents may evolve back into financial support of their adult children; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "2", kind: "criterion", verbatim: "Role of children", marks: 8, contextNote: "Two discussed points under this required heading, each graded 4:2:0. Complete guidance, including the lower-page continuation: role influenced by age; role of small children involves limited responsibilities, they then gradually take on responsibilities in small ways, own toys, family pets, personal space, own homework, and then extra responsibilities, caring for younger siblings, contributing to running of the home, food preparation, cooking and cleaning; etc. small children are dependent, needing affirmation from parents and family then seeking independence, evolving & developing own identity; behaviour, the behaviour of small children may involve tantrums /outbursts on occasion, as they get older they learn to behave in more socially acceptable ways and understand the difference between right and wrong, evolving to demonstrating those skills independently; small children make few decisions but learn through smaller decisions relating to self, e.g. what to wear, choice of activities/books; etc. evolving to secondary school subject choice, contributing to family decision making e.g. family holiday destination; small children look to their parents for comfort and increasingly learn the skills of recognising and managing their own emotions and understanding the skills needed to take responsibility for their own emotional well-being; role reversal as adult children become older they may become carers or decision makers for aging parent; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sb-q5c", topicId: "home-economics-2-1", conceptId: "importance-making-will",
+    section: "B", questionRef: "2026 HL Section B Q5(c)",
+    stem: "In contemporary Ireland economic and social changes have impacted family life and family structures.",
+    questionText: "State why it is important for parents to make a will.",
+    tariffModel: {"kind":"fixed","notation":"2 importance points × 3 (3:2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "importance", kind: "criterion", verbatim: "importance", marks: 6, contextNote: "Two importance points, each graded 3:2:0. Historical examination context, not advice on making an individual will. Complete guidance: provides peace of mind; major problems/conflicts avoided; ensures an executor is appointed to carry out wishes; guardians/trustees are appointed to look after children; raises awareness of Capital Acquisition Tax limits placed on beneficiary’s inheritance; funeral and burial arrangements can be included; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sb-q5c-procedure", topicId: "home-economics-2-1", conceptId: "making-will-procedure",
+    section: "B", questionRef: "2026 HL Section B Q5(c) — procedure",
+    stem: "State why it is important for parents to make a will.",
+    questionText: "Outline the procedure involved.",
+    tariffModel: {"kind":"fixed","notation":"4 procedure points × 2 (2:1:0)"}, totalMarks: 8,
+    rows: [
+    { id: "procedure", kind: "criterion", verbatim: "procedure", marks: 8, contextNote: "Four procedure points, each graded 2:1:0. Historical examination summary, not a current legal checklist. Complete source guidance: employ solicitor; list asset stating location and value; appoint executor; list beneficiaries; include names, addresses and contact details; divide estate between listed beneficiaries; outline funeral arrangements; validate; written document; signed in the presence of two witnesses; store in safe place; executor made aware of location; review due to changes in life situations; etc.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]},{"id":"point-4","verbatim":"Point 4","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q1ai", topicId: "home-economics-3-3", conceptId: "housing-provision-adequacy",
+    section: "C", questionRef: "2026 HL Section C E1 Q1(a)(i)",
+    stem: "‘The “Housing for All” initiative aims to deliver a sustainable housing system in Ireland.’ (www.gov.ie)",
+    questionText: "Discuss the adequacy of housing provision in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete historical guidance: Current refers to the 2026 examination context. high level of private home ownership; % of home ownership increased in economic boom; decreased home ownership during economic recession; increase in house prices; currently high demand for private homes in urban areas; building of new estates in urban areas; student accommodation; apartment blocks; more one-off housing on own site; modular homes; house regeneration; increased cost of living resulted in more people renting; house/apartments rented from private landlords; more demand than supply; high rental costs; minimum standards for rental accommodation set down in legislation; housing provided by local authority/voluntary/co-operative housing groups; available to people on lower incomes/those unable to afford a private house; increasing numbers applying to the local authority for housing/on social housing waiting lists; supply does not meet demand; priority given to families, people with disabilities and the elderly; rent support available; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q1aii", topicId: "home-economics-3-3", conceptId: "housing-amenities-services",
+    section: "C", questionRef: "2026 HL Section C E1 Q1(a)(ii)",
+    stem: "‘The “Housing for All” initiative aims to deliver a sustainable housing system in Ireland.’ (www.gov.ie)",
+    questionText: "Analyse the importance of local amenities and services in housing developments.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: schools: develop social skills; provide stimulating environment; achieve academic potential; creche/child care centres: open late hours to assist people working long distances from home; play areas; green areas: space to have fun and socialise; safe for children to play; community centres: place to meet/socialise; sense of community; provide venue for classes, events; transport: enables people to travel to and from work and other amenities; limited public transport in rural areas; shops: enables easy access to essential items; greater choice in urban areas; refuse collection: keeps areas clean and hygienic; prevents littering; street lighting: people feel safer; broadband: allows people to work from home; gaming; entertainment; communications; sports facilities: e.g. tennis courts, cycling paths, outdoor gym, easy to exercise close to home; community gardens: share allotments space to grow vegetables and flowers; BBQ and picnic areas: outdoor communal dining; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q1aiii", topicId: "home-economics-3-3", conceptId: "housing-styles-history",
+    section: "C", questionRef: "2026 HL Section C E1 Q1(a)(iii)",
+    stem: "‘The “Housing for All” initiative aims to deliver a sustainable housing system in Ireland.’ (www.gov.ie)",
+    questionText: "Outline the historical development of housing styles in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: Three points are priced without a compulsory one-per-century split. 19th Century Rural areas: single storey thatched cottages; 2 rooms; stone and mud walls; small windows, half door, open fire; slate roof; large estate houses with servants’ quarters in the basement; etc. Urban areas: 2, 3 & 4 storey terraced houses with basements; slate roofs; door focal point, with steps leading up; high ceilings; small terraced houses; living over business; urban tenements; etc. 20th Century Rural areas: upgrade of rural houses; two storey houses; thatch replaced by slate/tiles; rural electrification; etc. Urban areas: council/housing estates; detached and semi-detached houses; brick with plaster walls, 2 storeys; tiles/slate roofed; bungalows; private housing estates; houses of the same design; one off houses; high rise housing; improved building regulations; new materials/construction methods; etc. 21st Century Rural areas: housing developments in small towns and villages; houses of different styles/sizes; renovation of period properties; one off house architecturally designed; attic conversions, extensions, sunrooms added to houses; sustainable energy; outside living space; improved security; renovation of derelict houses; etc. Urban areas: housing complexes; variety of town houses and apartments; security gates; more houses built on outskirts of towns/cities; high density housing; small living space; small outdoor areas; regeneration of inner-city industrial areas; modular homes; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q1bi", topicId: "home-economics-3-3", conceptId: "house-design-construction-factors",
+    section: "C", questionRef: "2026 HL Section C E1 Q1(b)(i)",
+    stem: "‘Housing completion figures show a 35% increase from 2024 to 2025.’ (www.rte.ie)",
+    questionText: "Analyse how the following factors influence house design and construction:\n• family requirements\n• technological developments\n• aesthetic and environmental factors.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 1 point × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "1", kind: "criterion", verbatim: "Family requirements", marks: 5, contextNote: "1 point under this required heading, each graded 5:3:0. Complete historical guidance: open-plan areas; design rooms to serve dual purposes; adequate space; cater for size of family; cater for age of family members; sufficient bedrooms; sufficient living space; special needs requirements a priority; adaptable for future needs; facilitate working from home; easy to clean surfaces; adequate storage solutions; etc.", permittedMarks: [0,3,5] },
+    { id: "2", kind: "criterion", verbatim: "Technological developments", marks: 5, contextNote: "1 point under this required heading, each graded 5:3:0. Complete historical guidance: computer aided design alterations to plans during the design stage; allows people to visualise final design in 3D; take virtual tours; use of AI to visual changes; modern heating systems; controls on apps on phones; zoned heating systems; modern ventilation systems; broadband access throughout house; sensor-operated cameras and gates for security; sensor operated lighting; systems operated/controlled through apps; intelligent appliances; etc.", permittedMarks: [0,3,5] },
+    { id: "3", kind: "criterion", verbatim: "Aesthetic and environmental factors", marks: 5, contextNote: "1 point under this required heading, each graded 5:3:0. Complete historical guidance: open-plan; split-level; passive architecture; use of natural materials; use of organic paints; sustainable sources of energy for lighting and heating; aspect of house; living areas facing south or west; shape of house; radon barrier to prevent radon seepage into house; bio tank to treat sewage; zoned heating systems; high standard insulation; etc.", permittedMarks: [0,3,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q1bii", topicId: "home-economics-3-3", conceptId: "house-building-professional-services",
+    section: "C", questionRef: "2026 HL Section C E1 Q1(b)(ii)",
+    stem: "‘Housing completion figures show a 35% increase from 2024 to 2025.’ (www.rte.ie)",
+    questionText: "Give details of the professional services available to assist in designing and building a home.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "services", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: Architects/draughtsman: advise on site; produce computer-aided design (CAD) drawings of design; carry out site visits; oversees house construction; advise builder; Site engineers: assess house plans before building begins; ensure plans meet current building guidelines structurally; site visits during construction; assess quality of work; ensure building standards are complied with; advise builders if problems arise; Surveyors: carry out detailed surveys of site; highlight any potential problems; advice on how to rectify problems; Solicitors: deal with legal matters relating to purchase of site and building of home; produce detail contract/payment plan; check the land register to confirm ownership; check right of way; provide advice on building regulations; Builders: produce detail contract/payment plan; provide costs for each stage of building; list of completion dates; prepare site for building; construct the house according to architects’ drawings & engineers’ guidelines; may hire subcontractors for specialist jobs; Electrician; Landscape designer; Plumber; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q1ci", topicId: "home-economics-3-6", conceptId: "renewable-energy-profile",
+    section: "C", questionRef: "2026 HL Section C E1 Q1(c)(i)",
+    stem: "‘Take control of your energy use, with smart options and low carbon technologies at your fingertips.’ (www.seai.ie)",
+    questionText: "Discuss one renewable energy source you have studied. Refer to:\n• name\n• advantages\n• disadvantages.",
+    tariffModel: {"kind":"fixed","notation":"Name 3 (3:2:0); advantage 5 + disadvantage 5 + other 5 (5:3:0)"}, totalMarks: 18,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Solar power", marks: 3, contextNote: "Name this chosen source, graded 3:2:0.", permittedMarks: [0,2,3] },
+    { id: "advantage", kind: "criterion", verbatim: "advantage", marks: 5, contextNote: "One advantage of the SAME source, graded 5:3:0. Source models depend on location, installation and operating conditions. Complete wording: can supply 50-60% of hot water requirements to the home; supply electricity to the home; grants available for installation; always available in limited amounts; can supply large proportion of energy requirements; no smoke emissions; no carbon dioxide emissions; etc.", permittedMarks: [0,3,5] },
+    { id: "disadvantage", kind: "criterion", verbatim: "disadvantage", marks: 5, contextNote: "One disadvantage, graded 5:3:0. Source models depend on location, installation and operating conditions. Complete wording: expensive initially; specialist install; limited, undependable supply of sunshine; may require other forms of energy as back up; house must be facing sun; etc.", permittedMarks: [0,3,5] },
+    { id: "other", kind: "criterion", verbatim: "other point", marks: 5, contextNote: "One further distinct advantage or disadvantage for the SAME source, graded 5:3:0.", permittedMarks: [0,3,5] },
+    ],
+    answerVariants: [
+          {
+                "id": "0",
+                "label": "Solar power",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Solar power",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name this chosen source, graded 3:2:0."
+                      },
+                      {
+                            "id": "advantage",
+                            "kind": "criterion",
+                            "verbatim": "advantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One advantage of the SAME source, graded 5:3:0. Source models depend on location, installation and operating conditions. Complete wording: can supply 50-60% of hot water requirements to the home; supply electricity to the home; grants available for installation; always available in limited amounts; can supply large proportion of energy requirements; no smoke emissions; no carbon dioxide emissions; etc."
+                      },
+                      {
+                            "id": "disadvantage",
+                            "kind": "criterion",
+                            "verbatim": "disadvantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One disadvantage, graded 5:3:0. Source models depend on location, installation and operating conditions. Complete wording: expensive initially; specialist install; limited, undependable supply of sunshine; may require other forms of energy as back up; house must be facing sun; etc."
+                      },
+                      {
+                            "id": "other",
+                            "kind": "criterion",
+                            "verbatim": "other point",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One further distinct advantage or disadvantage for the SAME source, graded 5:3:0."
+                      }
+                ]
+          },
+          {
+                "id": "1",
+                "label": "Hydro-power",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Hydro-power",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name this chosen source, graded 3:2:0."
+                      },
+                      {
+                            "id": "advantage",
+                            "kind": "criterion",
+                            "verbatim": "advantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One advantage of the SAME source, graded 5:3:0. Source models depend on location, installation and operating conditions. Source correction: river hydropower has operated commercially in Ireland since 1929. Being surrounded by sea is not the explanation for river hydropower; the source mixes marine-energy limitations into this model. Complete wording: very viable to operate in Ireland; good supply; island surrounded by water; running costs, when set up, are relatively low; etc."
+                      },
+                      {
+                            "id": "disadvantage",
+                            "kind": "criterion",
+                            "verbatim": "disadvantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One disadvantage, graded 5:3:0. Source models depend on location, installation and operating conditions. Source correction: river hydropower has operated commercially in Ireland since 1929. Being surrounded by sea is not the explanation for river hydropower; the source mixes marine-energy limitations into this model. Complete wording: initial costs can be very high; technology not available at a price that would make it commercially viable; etc."
+                      },
+                      {
+                            "id": "other",
+                            "kind": "criterion",
+                            "verbatim": "other point",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One further distinct advantage or disadvantage for the SAME source, graded 5:3:0."
+                      }
+                ]
+          },
+          {
+                "id": "2",
+                "label": "Wind power",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Wind power",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name this chosen source, graded 3:2:0."
+                      },
+                      {
+                            "id": "advantage",
+                            "kind": "criterion",
+                            "verbatim": "advantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One advantage of the SAME source, graded 5:3:0. Source models depend on location, installation and operating conditions. Complete wording: low running costs; climate suitable; winds from Atlantic coast very strong; etc."
+                      },
+                      {
+                            "id": "disadvantage",
+                            "kind": "criterion",
+                            "verbatim": "disadvantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One disadvantage, graded 5:3:0. Source models depend on location, installation and operating conditions. Complete wording: noisy; spoil natural landscape; opposition from locals; expensive to set up; etc."
+                      },
+                      {
+                            "id": "other",
+                            "kind": "criterion",
+                            "verbatim": "other point",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One further distinct advantage or disadvantage for the SAME source, graded 5:3:0."
+                      }
+                ]
+          },
+          {
+                "id": "3",
+                "label": "Bio energy",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Bio energy",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name this chosen source, graded 3:2:0."
+                      },
+                      {
+                            "id": "advantage",
+                            "kind": "criterion",
+                            "verbatim": "advantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One advantage of the SAME source, graded 5:3:0. Source models depend on location, installation and operating conditions. Complete wording: suitable for heating home; suitable for heating water; liquid biofuel can be used for vehicles; etc."
+                      },
+                      {
+                            "id": "disadvantage",
+                            "kind": "criterion",
+                            "verbatim": "disadvantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One disadvantage, graded 5:3:0. Source models depend on location, installation and operating conditions. Complete wording: harmful emissions; damages the environment; wood is slow growing form of energy; needs good planning for utilisation as an energy source; etc."
+                      },
+                      {
+                            "id": "other",
+                            "kind": "criterion",
+                            "verbatim": "other point",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One further distinct advantage or disadvantage for the SAME source, graded 5:3:0."
+                      }
+                ]
+          },
+          {
+                "id": "4",
+                "label": "Geo-thermal",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Geo-thermal",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name this chosen source, graded 3:2:0."
+                      },
+                      {
+                            "id": "advantage",
+                            "kind": "criterion",
+                            "verbatim": "advantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One advantage of the SAME source, graded 5:3:0. Source models depend on location, installation and operating conditions. Complete wording: very sustainable; no emissions produced; cost effective; reliable; water is warm when entering house; etc."
+                      },
+                      {
+                            "id": "disadvantage",
+                            "kind": "criterion",
+                            "verbatim": "disadvantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One disadvantage, graded 5:3:0. Source models depend on location, installation and operating conditions. Complete wording: expensive to install; limited geographic suitability; long payback period; etc."
+                      },
+                      {
+                            "id": "other",
+                            "kind": "criterion",
+                            "verbatim": "other point",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One further distinct advantage or disadvantage for the SAME source, graded 5:3:0."
+                      }
+                ]
+          },
+          {
+                "id": "another",
+                "label": "Another valid renewable source",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name another valid renewable source, graded 3:2:0. The choice is open."
+                      },
+                      {
+                            "id": "advantage",
+                            "kind": "criterion",
+                            "verbatim": "advantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One accurate advantage of the SAME source, graded 5:3:0. No further model is printed."
+                      },
+                      {
+                            "id": "disadvantage",
+                            "kind": "criterion",
+                            "verbatim": "disadvantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One accurate disadvantage of the SAME source, graded 5:3:0. No further model is printed."
+                      },
+                      {
+                            "id": "other",
+                            "kind": "criterion",
+                            "verbatim": "other point",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "One further distinct advantage or disadvantage for the SAME source, graded 5:3:0."
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q1cii", topicId: "home-economics-3-5", conceptId: "thermal-comfort-control",
+    section: "C", questionRef: "2026 HL Section C E1 Q1(c)(ii)",
+    stem: "‘Take control of your energy use, with smart options and low carbon technologies at your fingertips.’ (www.seai.ie)",
+    questionText: "Describe how levels of thermal comfort in the home can be controlled.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4 (4:2:0)"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 12, contextNote: "3 distinct points, each graded 4:2:0. Complete historical guidance: Source clarification: the printed 10–16°C bedroom range is not a safe universal target. WHO uses 18°C as a general-population indoor baseline during cold seasons, and vulnerable people may need warmer conditions. Complete historical wording: controlled by use of thermostat; smart thermostats; boiler thermostats; zoned heating; room thermostat; thermostatic radiator valve; timers; upgrading insulation; slow-emissivity window films; optimize natural ventilation; mechanical ventilation in passive housing; use blinds/shutters during periods of full sun in summer; living rooms 17°C to 21°C; bedrooms 10°C to 16°C; kitchen 15°C to 19°C; bathrooms 16°C to 19°C; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q2ai", topicId: "home-economics-3-8", conceptId: "current-fashion-trends",
+    section: "C", questionRef: "2026 HL Section C E2 Q2(a)(i)",
+    stem: "‘Fashion is a constantly evolving reflection of society.’ (www.garmentseducations.com)",
+    questionText: "Name and describe three current fashion trends.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3 (3:2:1:0)"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 9, contextNote: "3 distinct points, each graded 3:2:1:0. Complete historical guidance: Current refers to the 2026 paper. Each point must name and describe a trend; there is no extra naming tariff. athleisure, gym wear worn for everyday activities; use of Lycra; matching ‘co-ords’, leggings, crop tops; womenswear inspired by menswear, masculine tailoring; wide leg trousers; structured jackets; 80’s influence in blazers/coats, shoulder pads; comfortable oversized shapes in clothing, bomber jackets; barrel/balloon shape trousers; romantic features, bows, lace, ruffles; global and ethnic clothing influences, boho, fringe, ikat prints; music inspired fashion, indie, punk, rock; ethical clothing/organic, eco-friendly fabrics, organic cotton, recycled wool, Lycocell; up-cycling/revived clothes from 1960’s, 1970’s and 1980’s; etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q2aii", topicId: "home-economics-3-8", conceptId: "fashion-trend-outfit-sketch",
+    section: "C", questionRef: "2026 HL Section C E2 Q2(a)(ii)",
+    stem: "‘Fashion is a constantly evolving reflection of society.’ (www.garmentseducations.com)",
+    questionText: "Sketch and describe an outfit that incorporates one current fashion trend.",
+    tariffModel: {"kind":"fixed","notation":"Sketch 5 (5:3:1:0) + description 2 × 2 (2:1:0)"}, totalMarks: 9,
+    rows: [
+    { id: "sketch", kind: "criterion", verbatim: "Sketch", marks: 5, contextNote: "Sketch an outfit incorporating ONE current trend, graded 5:3:1:0. The scheme prints this criterion and ladder without a model drawing; no invented drawing requirements.", permittedMarks: [0,1,3,5] },
+    { id: "description", kind: "criterion", verbatim: "Description", marks: 4, contextNote: "Two description points for the SAME outfit, each graded 2:1:0. The scheme prints the criterion, without a developed model description.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q2aiii", topicId: "home-economics-3-8", conceptId: "fashion-outfit-fabric-appeal",
+    section: "C", questionRef: "2026 HL Section C E2 Q2(a)(iii)",
+    stem: "‘Fashion is a constantly evolving reflection of society.’ (www.garmentseducations.com)\nSketch and describe an outfit that incorporates one current fashion trend.",
+    questionText: "In relation to the outfit, give details of:\n• suitable fabric(s)\n• aesthetic appeal.",
+    tariffModel: {"kind":"fixed","notation":"Suitable fabric 3 (3:0) + aesthetic appeal 4 (4:2:0)"}, totalMarks: 7,
+    rows: [
+    { id: "fabric", kind: "anyN", verbatim: "Suitable fabrics", marks: 3, contextNote: "Choose a fabric suited to the outfit in the task context. Claim 1 distinct points at 3 marks each; further valid answers may be credited.", openList: true, group: {"claimMax":1,"perOption":3,"options":["cotton","linen","silk","wool","polyester","nylon","acrylic","lycra","rayon","lyocell"]} },
+    { id: "aesthetic", kind: "criterion", verbatim: "Aesthetic appeal", marks: 4, contextNote: "One developed point about the SAME outfit, graded 4:2:0. Complete guidance: colour; shape; cut; design; texture; accessories; etc.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q2b", topicId: "home-economics-3-7", conceptId: "natural-fabric-profile",
+    section: "C", questionRef: "2026 HL Section C E2 Q2(b)",
+    stem: "Natural fabrics have many advantages over synthetic fabrics.",
+    questionText: "Write a profile of one natural fabric. Refer to:\n• fibre production\n• fibre identification test\n• fabric properties.",
+    tariffModel: {"kind":"fixed","notation":"Name 3 (3:0) + 3 headings × 2 points × 2 (2:1:0)"}, totalMarks: 15,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Wool", marks: 3 },
+    { id: "production", kind: "criterion", verbatim: "Fibre production", marks: 4, contextNote: "Two points for the SAME fabric, each graded 2:1:0. Complete guidance: comes from the soft hair/fleece of sheep, goats, llamas; etc. fleece is removed/shorn from the animal; collected and graded to the length of the fibres, the colour and fineness of the wool; cleaned and combed/carding; spun into yarn; etc.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "identification", kind: "criterion", verbatim: "Fabric identification test", marks: 4, contextNote: "Two identification observations for the SAME fabric, each graded 2:1:0. Source observations for a supervised practical, not directions for unsupervised flame testing: smoulders; burns slowly; flickering flame; smells like burning feathers; black, crushable ash; etc.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "properties", kind: "criterion", verbatim: "Fabric properties", marks: 4, contextNote: "Two properties of the SAME fabric, each graded 2:1:0. Complete historical guidance: warm; absorbent; soft; resilient; durable; scorches easily; damaged by moths; damaged by careless washing, shrinks and felts; piles; hairy, can irritate some skins; etc.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "wool",
+                "label": "Wool",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Wool",
+                            "marks": 3
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "Fibre production",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Two points for the SAME fabric, each graded 2:1:0. Complete guidance: comes from the soft hair/fleece of sheep, goats, llamas; etc. fleece is removed/shorn from the animal; collected and graded to the length of the fibres, the colour and fineness of the wool; cleaned and combed/carding; spun into yarn; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "identification",
+                            "kind": "criterion",
+                            "verbatim": "Fabric identification test",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Two identification observations for the SAME fabric, each graded 2:1:0. Source observations for a supervised practical, not directions for unsupervised flame testing: smoulders; burns slowly; flickering flame; smells like burning feathers; black, crushable ash; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "Fabric properties",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Two properties of the SAME fabric, each graded 2:1:0. Complete historical guidance: warm; absorbent; soft; resilient; durable; scorches easily; damaged by moths; damaged by careless washing, shrinks and felts; piles; hairy, can irritate some skins; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "silk",
+                "label": "Silk",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Silk",
+                            "marks": 3
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "Fibre production",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Two points for the SAME fabric, each graded 2:1:0. Complete guidance: silkworm feeds on mulberry leaves; spins a cocoon of silk around itself; cocoons are soaked in water; silk threads are unwound from cocoons onto reels; several of these thin silk threads are spun or twisted together to make thicker thread; woven into fabric; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "identification",
+                            "kind": "criterion",
+                            "verbatim": "Fabric identification test",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Two identification observations for the SAME fabric, each graded 2:1:0. Source observations for a supervised practical, not directions for unsupervised flame testing: curls away from flame; burns slowly; smells like burning feathers; burns as black beads; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "Fabric properties",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Two properties of the SAME fabric, each graded 2:1:0. Complete historical guidance: absorbent; durability; smooth texture; luxurious drape; lightweight; hypoallergenic; odour resistant; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "linen",
+                "label": "Linen",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Linen",
+                            "marks": 3
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "Fibre production",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Two points for the SAME fabric, each graded 2:1:0. Complete guidance: made from the stem of flax plant; flax stems are pulled; stems are retted, soaked until outer stem rots; stems are crushed and combed; fibres are spun into yarn; yarn is bleached; dyed; woven into a textured fabric; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "identification",
+                            "kind": "criterion",
+                            "verbatim": "Fabric identification test",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Two identification observations for the SAME fabric, each graded 2:1:0. Source observations for a supervised practical, not directions for unsupervised flame testing: burns quickly; yellow flame; smells like burning paper or wood; grey ash; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "Fabric properties",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Two properties of the SAME fabric, each graded 2:1:0. Complete historical guidance: breathable; absorbent; durable; strong; wrinkles easily; antibacterial; hypoallergenic; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "cotton",
+                "label": "Cotton",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Cotton",
+                            "marks": 3
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "Fibre production",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Two points for the SAME fabric, each graded 2:1:0. Complete guidance: comes from the boll or seed head of the cotton plant; each fibre is 2-3cm long; fibres are white and fluffy; bolls are picked; fibres are separated from the seeds; pressed into bales; cotton is graded according to the length of the fibres; fibres can be combed or spun into yarn; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "identification",
+                            "kind": "criterion",
+                            "verbatim": "Fabric identification test",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Two identification observations for the SAME fabric, each graded 2:1:0. Source observations for a supervised practical, not directions for unsupervised flame testing: burns quickly; yellow flame; smells like charred paper; grey ash; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "Fabric properties",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Two properties of the SAME fabric, each graded 2:1:0. Complete historical guidance: strong; cool; absorbent; easy to launder; easy to dye and bleach; no elasticity; shrinks; burns easily; mildew damage; wrinkles; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another",
+                "label": "Another valid natural fabric",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Name another valid natural fabric, graded 3:0."
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "Fibre production",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Two accurate production points for the SAME fabric, each graded 2:1:0. No additional model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "identification",
+                            "kind": "criterion",
+                            "verbatim": "Fabric identification test",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Two identification-test points for the SAME fabric, each graded 2:1:0. No additional model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "Fabric properties",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4
+                            ],
+                            "contextNote": "Two accurate properties of the SAME fabric, each graded 2:1:0.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q2ci", topicId: "home-economics-3-8", conceptId: "clothing-function-choice",
+    section: "C", questionRef: "2026 HL Section C E2 Q2(c)(i)",
+    stem: "Our clothing choices allow for self-expression and creativity, but clothing also needs to be functional in order to meet our daily needs.",
+    questionText: "Describe, giving one example, how function influences our clothing choices.",
+    tariffModel: {"kind":"fixed","notation":"1 point × 6 (6:4:2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 6, contextNote: "1 distinct point, each graded 6:4:2:0. Complete historical guidance: The example belongs to the same developed explanation; there is no separate example tariff. fitness wear: absorbent, fast drying stretchy; workwear: comfortable; identification purposes; outerwear: protection from weather; occasion wear: formal, elevated; modesty; self- expression; etc.", permittedMarks: [0,2,4,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q2cii", topicId: "home-economics-3-8", conceptId: "clothing-social-influences",
+    section: "C", questionRef: "2026 HL Section C E2 Q2(c)(ii)",
+    stem: "Our clothing choices allow for self-expression and creativity, but clothing also needs to be functional in order to meet our daily needs.",
+    questionText: "Analyse how social influences impact the design of clothing.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3 (3:2:0)"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 9, contextNote: "3 distinct points, each graded 3:2:0. Complete historical guidance: public figures/celebrities/influencers; fashion houses/designers; environmental issues; dance influences; music influences; increase in travel; cultural influences/traditions; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q3ai", topicId: "home-economics-3-9", conceptId: "unemployment-extent-distribution",
+    section: "C", questionRef: "2026 HL Section C E3 Q3(a)(i)",
+    stem: "The rate of unemployment in Ireland has risen to 5.3%. (Labour Force Survey, CSO, November 2025)",
+    questionText: "Analyse the extent and distribution of unemployment across Ireland.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete historical guidance: Statistics and regional comparisons belong to the 2026 paper, not a current labour-market report. location/area higher unemployment evident in Border, mid-west, midlands and south-east areas with generally lower rates in Dublin and in the east of the country; there are some exceptions in Dublin in areas of higher social disadvantage; rural areas have generally higher unemployment rates than urban areas; exceptions exist with some pockets of high unemployment in certain (smaller) regional towns; global recession has caused unemployment in Ireland; youth unemployment remains high; lower skill levels some unemployment due to automation/redundancies; seasonal unemployment exists in some employment sectors, hospitality/tourism/agriculture and education; residual unemployment; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q3aii", topicId: "home-economics-3-9", conceptId: "unemployment-individual-society",
+    section: "C", questionRef: "2026 HL Section C E3 Q3(a)(ii)",
+    stem: "The rate of unemployment in Ireland has risen to 5.3%. (Labour Force Survey, CSO, November 2025)",
+    questionText: "Discuss the effects of unemployment on individuals and society.",
+    tariffModel: {"kind":"fixed","notation":"Individual 1 + society 1 + other 2, each 5 (5:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "individual", kind: "criterion", verbatim: "individual", marks: 5, contextNote: "One effect on the individual, graded 5:3:0. These are possible effects, not inevitable outcomes. Complete source guidance for both headings: emotional/psychological lower mood, distress, anxiety; loss of identity/status and self-esteem, work provides a sense of purpose and social standing, losing a job can cause feelings of worthlessness and lack of confidence; social isolation/loneliness, without the social engagement that work brings, people may become more socially isolated; poorer health, may lead to sedentary, less healthy habits/choices; unemployment may mean more limited access to healthcare and reliance on public healthcare with longer waiting lists; loss of income, less ability to meet basic needs, food, housing, clothing, causes financial insecurity, poverty/debt arrears; government costs and taxes, government must allocate a higher % of income to social welfare and supporting those who are unemployed; may lead to increased taxes; unemployment black spots are linked with cycles of disadvantage, antisocial behaviour and increased crime rates; public health costs may increase as unemployment may lead to a rise in sedentary and unhealthy lifestyle behaviours, along with an increasing risk of mental health issues; depopulation may occur in certain geographical areas, people may be forced to move for work; slow economic growth the economy contracts due to lost productivity and reduced consumer spending impacting society; skills erosion the longer people remain unemployed the more their skills decrease and become obsolete reducing their job prospects further, causing deeper impact on economy and society; etc.", permittedMarks: [0,3,5] },
+    { id: "society", kind: "criterion", verbatim: "society", marks: 5, contextNote: "One distinct effect on society, graded 5:3:0. Use the full source guidance above.", permittedMarks: [0,3,5] },
+    { id: "other", kind: "criterion", verbatim: "other points", marks: 10, contextNote: "Two further distinct effects from either heading, each graded 5:3:0.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q3aiii", topicId: "home-economics-3-9", conceptId: "statutory-employment-response",
+    section: "C", questionRef: "2026 HL Section C E3 Q3(a)(iii)",
+    stem: "The rate of unemployment in Ireland has risen to 5.3%. (Labour Force Survey, CSO, November 2025)",
+    questionText: "Name and discuss one statutory response to creating employment.",
+    tariffModel: {"kind":"fixed","notation":"Name 4 (4:2:0) + discussion 2 × 3 (3:2:0)"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Industrial Development Authority (IDA)", marks: 4, contextNote: "Name this response, graded 4:2:0.", permittedMarks: [0,2,4] },
+    { id: "discussion", kind: "criterion", verbatim: "Discussion", marks: 6, contextNote: "Two discussed points about the SAME response, each graded 3:2:0. Historical guidance: encourages foreign investment to establish in rural and urban regions; provides supports and services to potential foreign investors; provides information on key business sectors; provides information on locations; financial grants; creation of links between international businesses and third-level education institutions; encourages existing companies to expand their business; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "0",
+                "label": "Industrial Development Authority (IDA)",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Industrial Development Authority (IDA)",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Name this response, graded 4:2:0."
+                      },
+                      {
+                            "id": "discussion",
+                            "kind": "criterion",
+                            "verbatim": "Discussion",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two discussed points about the SAME response, each graded 3:2:0. Historical guidance: encourages foreign investment to establish in rural and urban regions; provides supports and services to potential foreign investors; provides information on key business sectors; provides information on locations; financial grants; creation of links between international businesses and third-level education institutions; encourages existing companies to expand their business; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "1",
+                "label": "Enterprise Ireland",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Enterprise Ireland",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Name this response, graded 4:2:0."
+                      },
+                      {
+                            "id": "discussion",
+                            "kind": "criterion",
+                            "verbatim": "Discussion",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two discussed points about the SAME response, each graded 3:2:0. Historical guidance: responsible for the development and growth of Irish enterprises on the world markets; works with Irish entrepreneurs and small businesses; helps to establish or expand businesses by providing advice, mentoring and grants; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "2",
+                "label": "Local Enterprise Offices (LEO)",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Local Enterprise Offices (LEO)",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Name this response, graded 4:2:0."
+                      },
+                      {
+                            "id": "discussion",
+                            "kind": "criterion",
+                            "verbatim": "Discussion",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two discussed points about the SAME response, each graded 3:2:0. Historical guidance: support business start-ups; develop existing micro-businesses and small businesses to increase job creation and sustainable jobs; offer business information, training and grants; provide a mentor service to support business development and growth; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "3",
+                "label": "Údarás Na Gaeltachta",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Údarás Na Gaeltachta",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Name this response, graded 4:2:0."
+                      },
+                      {
+                            "id": "discussion",
+                            "kind": "criterion",
+                            "verbatim": "Discussion",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two discussed points about the SAME response, each graded 3:2:0. Historical guidance: responsible for economic, social and cultural development of the Gaeltacht; offers qualifying businesses and companies a range of incentives and supports; assists companies to start up, diversify, expand or locate in a Gaeltacht region; encourages job creation in Gaeltacht regions; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another",
+                "label": "Another valid statutory response",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Name another valid statutory response, graded 4:2:0."
+                      },
+                      {
+                            "id": "discussion",
+                            "kind": "criterion",
+                            "verbatim": "Discussion",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two accurate discussed points about that SAME response, each graded 3:2:0. No further model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q3bi", topicId: "home-economics-3-11", conceptId: "voluntary-work-personal-benefits",
+    section: "C", questionRef: "2026 HL Section C E3 Q3(b)(i)",
+    stem: "Voluntary work benefits large sections of society. It also benefits the volunteers themselves.",
+    questionText: "Explain how an individual can benefit personally by participating in voluntary work.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: rewarding creates a sense of achievement and self-worth, personally affirming; improves people skills, builds soft skills, communication, teamwork and interpersonal skills; develops empathy provides insight into situation of others; builds skills useful for paid employment, provides work experience, develops workplace skills, retail skills, food preparation skills, horticulture skills; social engagement, spending time productively with others, builds friendships; improves emotional wellbeing provides fun and enjoyment; etc", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q3bii", topicId: "home-economics-3-11", conceptId: "voluntary-work-community-benefits",
+    section: "C", questionRef: "2026 HL Section C E3 Q3(b)(ii)",
+    stem: "Voluntary work benefits large sections of society. It also benefits the volunteers themselves.",
+    questionText: "Discuss the benefits of voluntary work to the community.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: builds community spirit creates closeness within a community/community united to achieve a common goal; improves community surroundings/environment restoring or cleaning the local landscape/green areas, improving/ enhancing facades of public and unused buildings, tidy town committee; leisure facilities voluntary sporting groups provide gyms/pitches/running/walking tracks, improving health and fitness levels; integration voluntary community groups (men’s sheds) help those who may be isolated and/or newcomers to integrate over shared interests, woodcrafts, supports those in need in a local community alleviates poverty/alleviates loneliness reduces anxiety/provides reassurances; support quickly, those in need in a community can be provided with help and services faster sometimes than state or health services can; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q3ci", topicId: "home-economics-3-10", conceptId: "education-child-development",
+    section: "C", questionRef: "2026 HL Section C E3 Q3(c)(i)",
+    stem: "Education has an important role to play in the development of a child.",
+    questionText: "Analyse the role of education in child development. Refer to:\n• physical development\n• emotional development\n• intellectual development\n• moral development.",
+    tariffModel: {"kind":"fixed","notation":"4 required headings × 1 point × 5 (5:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "1", kind: "criterion", verbatim: "Physical development", marks: 5, contextNote: "1 point under this required heading, each graded 5:3:0. Complete historical guidance: children in early and primary education play with toys which develop hand-eye coordination and dexterity; practical subjects in secondary school enhance coordination and motor skills; PE and sport in school develop cardio, balance and agility; etc.", permittedMarks: [0,3,5] },
+    { id: "2", kind: "criterion", verbatim: "Emotional development", marks: 5, contextNote: "1 point under this required heading, each graded 5:3:0. Complete historical guidance: children spend time away from parents, children gain emotional independence; meeting peers provides opportunities to develop relationships and build bonds with people outside the home; dealing with tasks/workload promotes emotional health and well-being and builds coping skills for life; interaction with other children and adults develops empathy; etc.", permittedMarks: [0,3,5] },
+    { id: "3", kind: "criterion", verbatim: "Intellectual development", marks: 5, contextNote: "1 point under this required heading, each graded 5:3:0. Complete historical guidance: providing access to an array of subjects, teachers, educational resources, tests, exams; etc. builds knowledge; provides examinations and homework assignments motivate students to achieve potential; provision is made for students with learning difficulties to be integrated and catered for in schools; etc.", permittedMarks: [0,3,5] },
+    { id: "4", kind: "criterion", verbatim: "Moral development", marks: 5, contextNote: "1 point under this required heading, each graded 5:3:0. Complete historical guidance: school ethos, beliefs, values, customs and moral thinking instil in students the difference between right and wrong; school rules teach students how rules help society to function; subjects like SPHE, Religion, Politics and Society, Climate Action explore moral dilemmas, ethics and ethical behaviours; etc.", permittedMarks: [0,3,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q3cii", topicId: "home-economics-3-10", conceptId: "statutory-preschool-initiative",
+    section: "C", questionRef: "2026 HL Section C E3 Q3(c)(ii)",
+    stem: "Education has an important role to play in the development of a child.",
+    questionText: "Name and give details of one statutory education initiative provided for pre-school children.",
+    tariffModel: {"kind":"fixed","notation":"Name 4 (4:2:0) + details 2 × 3 (3:2:0)"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "The Early Childhood Care and Education (ECCE) Scheme", marks: 4, contextNote: "Name this initiative, graded 4:2:0.", permittedMarks: [0,2,4] },
+    { id: "details", kind: "criterion", verbatim: "Details", marks: 6, contextNote: "Two details for the SAME initiative, each graded 3:2:0. The following eligibility, entry dates and schedules are historical scheme examples, not current application guidance: provides free early childhood care and education for children of pre-school age; children are eligible for the scheme if over 2 years and 8 months and not older than 5 years and 6 months; can enrol at different points in the year e.g. September, January and April; provide an appropriate programme that follows Síolta; attend 3 hours a day 5 days per week; pay for any extra hours; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "0",
+                "label": "The Early Childhood Care and Education (ECCE) Scheme",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "The Early Childhood Care and Education (ECCE) Scheme",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Name this initiative, graded 4:2:0."
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two details for the SAME initiative, each graded 3:2:0. The following eligibility, entry dates and schedules are historical scheme examples, not current application guidance: provides free early childhood care and education for children of pre-school age; children are eligible for the scheme if over 2 years and 8 months and not older than 5 years and 6 months; can enrol at different points in the year e.g. September, January and April; provide an appropriate programme that follows Síolta; attend 3 hours a day 5 days per week; pay for any extra hours; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "1",
+                "label": "The Early Start Programme",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "The Early Start Programme",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Name this initiative, graded 4:2:0."
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two details for the SAME initiative, each graded 3:2:0. The following eligibility, entry dates and schedules are historical scheme examples, not current application guidance: community-based initiative for 3-4 year olds in disadvantaged areas; funded, managed and evaluated by Department of Education and Youth; aims to provide children with a positive start in education; prevent future school failure; improve overall development of students from socially disadvantaged areas; a one-year project, offered for 2 ½ hours per day; taught by primary teachers, childcare assistants and parents; curriculum consists of language, cognitive, social and personal development; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another",
+                "label": "Another valid statutory initiative",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Name another valid statutory pre-school initiative, graded 4:2:0."
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6
+                            ],
+                            "contextNote": "Two accurate details about the SAME initiative, each graded 3:2:0. No further model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q4ai", topicId: "home-economics-0-9", conceptId: "wholegrain-cereal-diet",
+    section: "C", questionRef: "2026 HL Section C Q4(a)(i)",
+    stem: "While people in Ireland regularly consume cereal products the intake of wholegrain cereals is low relative to recommended guidelines.",
+    questionText: "Evaluate the contribution of wholegrain cereals to the diet.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 4 (4:3:2:1:0)"}, totalMarks: 16,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 16, contextNote: "4 distinct points, each graded 4:3:2:1:0. Complete historical guidance: Effects depend on the food and overall diet; historical health wording does not guarantee prevention or treatment. protein LBV in germ, needed for growth and repair for children; fat polyunsaturated fat; in germ, reduce risk of CHD/increase concentration; carbohydrate low GI (starch) slow-release energy for activity/early stages of carb loading; fibre causes waste to pass through the digestive system more quickly, less time for toxins to develop reducing risk of bowel disorders/cancer; absorbs water giving a feeling of fullness/useful in maintaining a healthy weight; soluble fibre lowers LDL cholesterol; lower blood pressure; reduced risk of type 2 diabetes; vitamins good source of B- group vitamins; B1 Thiamine aids metabolism of carbohydrates and fats; B2 Riboflavin aids metabolism of proteins, carbohydrates and fats; B3 Niacin aids metabolism of carbohydrates; B6 Pyridoxine supports healthy nerve activity; B9 Folate maintains immune system; vitamin E acts as an anti-oxidant; vitamin A for healthy eyes; minerals non-haem iron; produces haemoglobin; water low amounts for body fluids, hydration; digestion; Accept: adds variety to the diet; widely available; different types; cost; etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q4aii", topicId: "home-economics-0-9", conceptId: "flour-production-packaging",
+    section: "C", questionRef: "2026 HL Section C Q4(a)(ii)",
+    stem: "While people in Ireland regularly consume cereal products the intake of wholegrain cereals is low relative to recommended guidelines.",
+    questionText: "Give an informative account of the production of flour. Refer to:\n• stages of production\n• packaging and labelling.",
+    tariffModel: {"kind":"fixed","notation":"Production 7 × 2 (2:1:0) + packaging 2 × 1 + labelling 2 × 1 (1:0)"}, totalMarks: 18,
+    rows: [
+    { id: "production", kind: "criterion", verbatim: "Stages of production", marks: 14, contextNote: "Seven production points, each graded 2:1:0. Complete source guidance: screened: to remove sticks/straw/stones; cleaning: washed/air steamed to remove dust/soil/dirt; scoured: to remove beard; conditioning: by adding water to give required moisture content; blended: different types of wheat are blended, to form a grist; break rolling: grains are break rolled/pass through rotating metal ridged rollers; the endosperm is split from the germ and bran keeping the bran layers intact, wholemeal flour at this stage; air classifying: separates the parts of the grain; bran and germ can be packed and sold separately; reduce rolling: endosperm/flour is reduction rolled/ground by smooth/steel rollers; sieving: sieving is carried out through a series of rotating sieves; there is a repeated process of sieving, rolling and air classifying; fine flour is produced; air classifying: air is pumped through, to make the flour lighter/less dense in storage; addition of improvers: vitamin C/ascorbic acid; nutritive additives: e.g. vitamin B/vitamin D/iron/calcium are added; addition of: raising agent; flour is weighed; etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]},{"id":"point-4","verbatim":"Point 4","marks":2,"permittedMarks":[0,1,2]},{"id":"point-5","verbatim":"Point 5","marks":2,"permittedMarks":[0,1,2]},{"id":"point-6","verbatim":"Point 6","marks":2,"permittedMarks":[0,1,2]},{"id":"point-7","verbatim":"Point 7","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "packaging", kind: "anyN", verbatim: "Packaging", marks: 2, contextNote: "Claim 2 distinct points at 1 mark each; further valid answers may be credited.", openList: true, group: {"claimMax":2,"perOption":1,"options":["paper","cardboard","varying weights"]} },
+    { id: "labelling", kind: "anyN", verbatim: "Labelling", marks: 2, contextNote: "Claim 2 distinct points at 1 mark each; further valid answers may be credited.", openList: true, group: {"claimMax":2,"perOption":1,"options":["type of flour","ingredients","allergy advice","storage instructions","nutritional information"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q4aiii", topicId: "home-economics-0-11", conceptId: "cereal-dietary-requirements",
+    section: "C", questionRef: "2026 HL Section C Q4(a)(iii)",
+    stem: "While people in Ireland regularly consume cereal products the intake of wholegrain cereals is low relative to recommended guidelines.",
+    questionText: "Discuss the measures taken by manufacturers of cereal products in order to cater for those with diet-related problems and specific dietary requirements.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 4 (4:2:0)"}, totalMarks: 16,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 16, contextNote: "4 distinct points, each graded 4:2:0. Complete historical guidance: reformulation reduction/removal/addition/substitution of ingredients/using alternative ingredients; fortification with vitamins/minerals/Omega 3/essential fatty acids; clear labelling on packaging e.g. traffic lights/allergy warnings, dedicated production areas and stringent protocols to prevent allergen transfer; production of novel/convenience foods; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q4bi", topicId: "home-economics-0-2", conceptId: "sensory-difference-test",
+    section: "C", questionRef: "2026 HL Section C Q4(b)(i)",
+    stem: "‘Sensory analysis is a very important tool for the food industry, with a range of applications.’ (www.teagasc.ie)",
+    questionText: "Write a detailed account of one difference test used in the food industry. Refer to:\n• name of test\n• aim\n• implementation.",
+    tariffModel: {"kind":"fixed","notation":"Name 3 + aim 3 (3:2:0) + implementation 6 × 2 (2:1:0)"}, totalMarks: 18,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Simple Difference Paired Comparison Test", marks: 3, contextNote: "Name this chosen test, graded 3:2:0.", permittedMarks: [0,2,3] },
+    { id: "aim", kind: "criterion", verbatim: "to determine if testers can detect a difference between two samples; etc.", marks: 3, contextNote: "State the aim of the SAME test, graded 3:2:0.", permittedMarks: [0,2,3] },
+    { id: "implementation", kind: "criterion", verbatim: "Implementation", marks: 12, contextNote: "Six implementation points for the SAME test, each graded 2:1:0. Complete model, including its lower-page conclusion: set up trays; each tester is presented with two coded samples and asked if there is a difference between the samples; coded samples are presented to each tester in random order; samples can be the same or different; tester tastes the samples in the order given; asked if they can detect a difference; yes/no responses are collated on a record sheet; codes are revealed and results are calculated; results presented; etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]},{"id":"point-4","verbatim":"Point 4","marks":2,"permittedMarks":[0,1,2]},{"id":"point-5","verbatim":"Point 5","marks":2,"permittedMarks":[0,1,2]},{"id":"point-6","verbatim":"Point 6","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "0",
+                "label": "Simple Difference Paired Comparison Test",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Simple Difference Paired Comparison Test",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name this chosen test, graded 3:2:0."
+                      },
+                      {
+                            "id": "aim",
+                            "kind": "criterion",
+                            "verbatim": "to determine if testers can detect a difference between two samples; etc.",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "State the aim of the SAME test, graded 3:2:0."
+                      },
+                      {
+                            "id": "implementation",
+                            "kind": "criterion",
+                            "verbatim": "Implementation",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12
+                            ],
+                            "contextNote": "Six implementation points for the SAME test, each graded 2:1:0. Complete model, including its lower-page conclusion: set up trays; each tester is presented with two coded samples and asked if there is a difference between the samples; coded samples are presented to each tester in random order; samples can be the same or different; tester tastes the samples in the order given; asked if they can detect a difference; yes/no responses are collated on a record sheet; codes are revealed and results are calculated; results presented; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-5",
+                                        "verbatim": "Point 5",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-6",
+                                        "verbatim": "Point 6",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "1",
+                "label": "Directional Paired Comparison Test",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Directional Paired Comparison Test",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name this chosen test, graded 3:2:0."
+                      },
+                      {
+                            "id": "aim",
+                            "kind": "criterion",
+                            "verbatim": "to determine which of two samples has a greater degree of intensity in terms of a particular characteristic; etc.",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "State the aim of the SAME test, graded 3:2:0."
+                      },
+                      {
+                            "id": "implementation",
+                            "kind": "criterion",
+                            "verbatim": "Implementation",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12
+                            ],
+                            "contextNote": "Six implementation points for the SAME test, each graded 2:1:0. Complete model, including its lower-page conclusion: set up trays; each tester is presented with two coded samples and asked to determine which of the samples has a greater degree of intensity of a particular characteristic; coded samples are presented to each tester in random order; tester tastes the samples in order given; taste order is always specified to ensure random tasting of the samples; testers are asked to indicate which sample has the greater degree of intensity in terms of the particular characteristic being tested e.g. sweetness; responses collated on a record sheet; codes revealed and results calculated; results presented; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-5",
+                                        "verbatim": "Point 5",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-6",
+                                        "verbatim": "Point 6",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "2",
+                "label": "Triangle Test",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Triangle Test",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name this chosen test, graded 3:2:0."
+                      },
+                      {
+                            "id": "aim",
+                            "kind": "criterion",
+                            "verbatim": "to identify the sample that is different; etc.",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "State the aim of the SAME test, graded 3:2:0."
+                      },
+                      {
+                            "id": "implementation",
+                            "kind": "criterion",
+                            "verbatim": "Implementation",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12
+                            ],
+                            "contextNote": "Six implementation points for the SAME test, each graded 2:1:0. Complete model, including its lower-page conclusion: set up trays; each tester is presented with three coded samples and asked which one is different; coded samples are presented to each tester in balanced presentation order; tester tastes samples in the order given; taste order is always specified to ensure random tasting of the samples; asked if they can identify the sample that is different; responses are collated on a record sheet; codes are revealed; results are calculated; results are presented; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-5",
+                                        "verbatim": "Point 5",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-6",
+                                        "verbatim": "Point 6",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "3",
+                "label": "Duo-trio Test",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Duo-trio Test",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name this chosen test, graded 3:2:0."
+                      },
+                      {
+                            "id": "aim",
+                            "kind": "criterion",
+                            "verbatim": "to identify the sample that is different from the control/reference; etc.",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "State the aim of the SAME test, graded 3:2:0."
+                      },
+                      {
+                            "id": "implementation",
+                            "kind": "criterion",
+                            "verbatim": "Implementation",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12
+                            ],
+                            "contextNote": "Six implementation points for the SAME test, each graded 2:1:0. Complete model, including its lower-page conclusion: set up trays; each tester is presented with three samples; two samples are coded and one is identified as the reference; tester is asked to identify the sample that is different from the reference; samples are presented to each tester in random order; tester tastes samples in the order given, starting with the reference sample; taste order is always specified to ensure random tasting of the samples; testers identify the sample that is different from the reference; responses are collated on a record sheet; codes are revealed; results are calculated; results presented; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-5",
+                                        "verbatim": "Point 5",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-6",
+                                        "verbatim": "Point 6",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another",
+                "label": "Another valid difference test",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name of test",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name another valid difference test, graded 3:2:0."
+                      },
+                      {
+                            "id": "aim",
+                            "kind": "criterion",
+                            "verbatim": "aim",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "State that SAME test’s aim accurately, graded 3:2:0."
+                      },
+                      {
+                            "id": "implementation",
+                            "kind": "criterion",
+                            "verbatim": "implementation",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12
+                            ],
+                            "contextNote": "Six accurate implementation points for that SAME test, each graded 2:1:0. No additional model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-5",
+                                        "verbatim": "Point 5",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-6",
+                                        "verbatim": "Point 6",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              1,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q4bii", topicId: "home-economics-0-2", conceptId: "sensory-test-controlled-conditions",
+    section: "C", questionRef: "2026 HL Section C Q4(b)(ii)",
+    stem: "‘Sensory analysis is a very important tool for the food industry, with a range of applications.’ (www.teagasc.ie)",
+    questionText: "Outline the conditions that should be controlled for sensory analysis testing.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 3 (3:2:0)"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 12, contextNote: "4 distinct points, each graded 3:2:0. Complete historical guidance: timing: mid-morning or mid-afternoon as taste sensitivity is best; location: testing booths or adequate space between testers; lighting: bright room, natural light is best; ventilation: essential to remove any lingering odours; silence: should be maintained to avoid sharing of information/influencing decisions; organisers: should not be involved in tasting session; samples: uniform shape, size, colour and quantity; temperature: the same for all samples; coding of samples: labels used should not cause bias; rinsing water: needed; special dietary conditions; hygiene and food safety; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9,10,11,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]},{"id":"point-4","verbatim":"Point 4","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q4ci", topicId: "home-economics-2-0", conceptId: "family-additional-needs-challenges",
+    section: "C", questionRef: "2026 HL Section C Q4(c)(i)",
+    stem: "Caring for a family member with special needs brings challenges and rewards.",
+    questionText: "Discuss the challenges a family may experience when a member has special needs.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 6 (6:4:2:0)"}, totalMarks: 18,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 18, contextNote: "3 distinct points, each graded 6:4:2:0. Complete historical guidance: These are possible challenges and depend on each family’s circumstances. reduction in income/disposable income adjustment, as one parent might choose not to work outside the home so as to provide care; increased expenditure, equipment, more expensive travel costs, adapted vehicles, medical devices/costs; navigating services -advocating and applying for services/social welfare payments/grants can be slow, multi-layered and difficult; physical disruption to family home and life if building/housing adaptations are required; impact on family dynamic, parents trying to split their time between all family members, other children may feel left out or resentful; family members may have feelings of worry about the health of the family member; stress/exhaustion /interrupted sleep/burnout because of the many caring needs; isolation, lack of appropriate community infrastructure, difficulties accessing travel/public transport/public buildings/holiday and leisure facilities make participating in activities outside the home difficult; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16,18], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,2,4,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,2,4,6]},{"id":"point-3","verbatim":"Point 3","marks":6,"permittedMarks":[0,2,4,6]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC098ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Higher Level — © State Examinations Commission.",
+    id: "he-2026-hl-sc-q4cii", topicId: "home-economics-2-0", conceptId: "voluntary-family-disability-support",
+    section: "C", questionRef: "2026 HL Section C Q4(c)(ii)",
+    stem: "Caring for a family member with special needs brings challenges and rewards.",
+    questionText: "Name and give details of one voluntary organisation that supports families when a member has special needs.",
+    tariffModel: {"kind":"fixed","notation":"Name 3 + details 3 × 3 (3:2:0)"}, totalMarks: 12,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Rehab", marks: 3, contextNote: "Name this organisation, graded 3:2:0.", permittedMarks: [0,2,3] },
+    { id: "details", kind: "criterion", verbatim: "Details", marks: 9, contextNote: "Three details of the SAME organisation, each graded 3:2:0. Complete historical model: charity promotes diversity/inclusion; National Learning Network provides a range of training programmes and support; enables people with special needs to take up employment /further education; Rehab Enterprises employs people with disabilities; RehabCare provides health and social care services, support accommodation and respite care; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "0",
+                "label": "Rehab",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Rehab",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name this organisation, graded 3:2:0."
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three details of the SAME organisation, each graded 3:2:0. Complete historical model: charity promotes diversity/inclusion; National Learning Network provides a range of training programmes and support; enables people with special needs to take up employment /further education; Rehab Enterprises employs people with disabilities; RehabCare provides health and social care services, support accommodation and respite care; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "1",
+                "label": "Enable Ireland",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Enable Ireland",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name this organisation, graded 3:2:0."
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three details of the SAME organisation, each graded 3:2:0. Complete historical model: provides services to children and adults with disabilities to enable them to achieve maximum independence and inclusion; Children’s Services Team provides a range of services for children with physical disabilities/developmental challenges; each child receives an individual programme; respite breaks; literacy and computer training for adults with disabilities; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another",
+                "label": "Another valid voluntary organisation",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name another valid organisation, graded 3:2:0. The scheme also names Irish Wheelchair Association; Chime/DeafHear; National Council for the Blind of Ireland; etc."
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9
+                            ],
+                            "contextNote": "Three accurate details of that SAME organisation, each graded 3:2:0. No further developed model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];
