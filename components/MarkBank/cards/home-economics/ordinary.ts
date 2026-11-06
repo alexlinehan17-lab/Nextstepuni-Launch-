@@ -11269,4 +11269,1901 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sa-q1", topicId: "home-economics-0-6", conceptId: "carbohydrate-statements",
+    section: "A", questionRef: "2026 OL Section A Q1",
+    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false. True False Sugar and starch provide heat and energy to the body Fibre helps to prevent bowel disorders Carbohydrates contain the element nitrogen",
+    tariffModel: {"kind":"fixed","notation":"3 required statements × 2 (2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "statement-1", kind: "criterion", verbatim: "Sugar and starch provide heat and energy to the body — True", marks: 2, contextNote: "Published answer: True. Graded 2:0.", permittedMarks: [0,2] },
+    { id: "statement-2", kind: "criterion", verbatim: "Fibre helps to prevent bowel disorders — True", marks: 2, contextNote: "Published answer: True. Graded 2:0.", permittedMarks: [0,2] },
+    { id: "statement-3", kind: "criterion", verbatim: "Carbohydrates contain the element nitrogen — False", marks: 2, contextNote: "Published answer: False. Graded 2:0.", permittedMarks: [0,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sa-q2", topicId: "home-economics-0-10", conceptId: "food-choice-factors",
+    section: "A", questionRef: "2026 OL Section A Q2",
+    questionText: "Outline three factors that affect a person’s food choices.",
+    tariffModel: {"kind":"fixed","notation":"3 responses × 2 (2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 6, contextNote: "3 distinct responses, each graded 2:1:0. Complete source guidance: personal preferences/likes/dislikes; family size/stage; cost/disposable income; cooking skills; time constrains/busy lifestyle; specific needs, athletes/sportspeople, etc.; concerns about over-processed food, salt, sugar, and fat quantities; religious requirements; time of year/celebrations and associated foods; food availability/seasonality; food allergies; food intolerances; climate; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sa-q3", topicId: "home-economics-0-7", conceptId: "lipid-terms",
+    section: "A", questionRef: "2026 OL Section A Q3",
+    questionText: "Using the terms listed below, complete the following statements in relation to fats / lipids. lipase polyunsaturated adipose _____________________ fatty acids are found in oily fish. The enzyme ______________________ converts fats / lipids to fatty acids and glycerol. Excess fats / lipids are stored as _____________________ tissue under the skin.",
+    tariffModel: {"kind":"fixed","notation":"3 required blanks × 2 (2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "1", kind: "criterion", verbatim: "fatty acids found in oily fish — polyunsaturated", marks: 2, contextNote: "Correct completion: polyunsaturated. Graded 2:0.", permittedMarks: [0,2] },
+    { id: "2", kind: "criterion", verbatim: "enzyme converting fats / lipids — lipase", marks: 2, contextNote: "Correct completion: lipase. Graded 2:0.", permittedMarks: [0,2] },
+    { id: "3", kind: "criterion", verbatim: "tissue storing excess fats / lipids — adipose", marks: 2, contextNote: "Correct completion: adipose. Graded 2:0.", permittedMarks: [0,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sa-q4", topicId: "home-economics-0-8", conceptId: "vitamin-d-functions",
+    section: "A", questionRef: "2026 OL Section A Q4",
+    questionText: "State two functions of vitamin D in the body.",
+    tariffModel: {"kind":"fixed","notation":"2 functions × 2 (2:1:0)"}, totalMarks: 4,
+    rows: [
+    { id: "functions", kind: "criterion", verbatim: "functions", marks: 4, contextNote: "Two functions, each graded 2:1:0. Complete source guidance: healthy bones; healthy teeth; assists absorption of calcium; assists absorption of phosphorus; controls levels of calcium in the blood; supports immune system; healthy muscle function; prevents osteomalacia; prevents osteoporosis; prevents rickets; etc.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sa-q4-source", topicId: "home-economics-0-8", conceptId: "vitamin-d-dietary-source",
+    section: "A", questionRef: "2026 OL Section A Q4 — source",
+    questionText: "Name one dietary source of vitamin D.",
+    tariffModel: {"kind":"fixed","notation":"1 source × 2 (2:1:0)"}, totalMarks: 2,
+    rows: [
+    { id: "source", kind: "criterion", verbatim: "oily fish; liver; eggs; meat; milk; cheese; yougurt; fortified breakfast cereals; fortified replacement milk products; etc.", marks: 2, contextNote: "Name one valid dietary source; the actual published alternatives are shown in this claimable row. Graded 2:1:0.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sa-q5", topicId: "home-economics-0-9", conceptId: "egg-nutrition-statements",
+    section: "A", questionRef: "2026 OL Section A Q5",
+    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false. True False Eggs contain saturated fat The protein in eggs is a low biological value protein Eggs are a good source of vitamin C",
+    tariffModel: {"kind":"fixed","notation":"3 required statements × 2 (2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "statement-1", kind: "criterion", verbatim: "Eggs contain saturated fat — True", marks: 2, contextNote: "Published answer: True. Graded 2:0.", permittedMarks: [0,2] },
+    { id: "statement-2", kind: "criterion", verbatim: "The protein in eggs is a low biological value protein — False", marks: 2, contextNote: "Published answer: False. Graded 2:0.", permittedMarks: [0,2] },
+    { id: "statement-3", kind: "criterion", verbatim: "Eggs are a good source of vitamin C — False", marks: 2, contextNote: "Published answer: False. Graded 2:0.", permittedMarks: [0,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sa-q6", topicId: "home-economics-0-3", conceptId: "preservation-process-matching",
+    section: "A", questionRef: "2026 OL Section A Q6",
+    questionText: "Match each of the following processes with the correct description. Drying Chutney making Quick freezing Description Process Boiling fruit, vegetables, vinegar, sugar and spices together A method of removing moisture from foods Food is frozen at -25°C, small ice crystals are formed",
+    tariffModel: {"kind":"fixed","notation":"3 required matches × 2 (2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "1", kind: "criterion", verbatim: "Boiling fruit, vegetables, vinegar, sugar and spices together — Chutney making", marks: 2, contextNote: "Published process: Chutney making. Graded 2:0.", permittedMarks: [0,2] },
+    { id: "2", kind: "criterion", verbatim: "A method of removing moisture from foods — Drying", marks: 2, contextNote: "Published process: Drying. Graded 2:0.", permittedMarks: [0,2] },
+    { id: "3", kind: "criterion", verbatim: "Food is frozen at -25°C, small ice crystals are formed — Quick freezing", marks: 2, contextNote: "Published process: Quick freezing. Graded 2:0.", permittedMarks: [0,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sa-q7", topicId: "home-economics-0-3", conceptId: "pastry-success-guidelines",
+    section: "A", questionRef: "2026 OL Section A Q7",
+    questionText: "Outline three guidelines that should be followed to ensure success when making pastry. (www.freepik.com)",
+    tariffModel: {"kind":"fixed","notation":"3 responses × 2 (2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "guidelines", marks: 6, contextNote: "3 distinct responses, each graded 2:1:0. Complete source guidance: weigh ingredients accurately; measure liquids correctly; preheat the oven to a high temperature; all ingredients and utensils must be cold; sieve flour; rub in fat correctly; use a knife to mix water in; handle pastry as little as possible; knead lightly; roll in one direction only to prevent stretching; bake blind; bake at correct temperature; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-ol-sa-q7-pastry",
+          "src": "/exam-figures/home-economics/home-economics-2026-ol-sa-q7-pastry.png",
+          "srcHash": "31ad2b824b86e1d98239bc074f594610",
+          "alt": "Original photograph of flour being sifted into a bowl, with the printed Freepik source caption.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sa-q8", topicId: "home-economics-0-4", conceptId: "microorganism-growth-conditions",
+    section: "A", questionRef: "2026 OL Section A Q8",
+    questionText: "Describe two conditions required for the growth of micro-organisms.",
+    tariffModel: {"kind":"fixed","notation":"2 responses × 3 (3:2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "conditions", marks: 6, contextNote: "2 distinct responses, each graded 3:2:0. Complete source guidance: food, warmth/correct temperature; correct oxygen level; time; correct pH level; moisture; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sa-q9", topicId: "home-economics-0-11", conceptId: "paper-cardboard-packaging",
+    section: "A", questionRef: "2026 OL Section A Q9",
+    questionText: "State three advantages of paper / cardboard as a packaging material.",
+    tariffModel: {"kind":"fixed","notation":"3 responses × 2 (2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "advantages", marks: 6, contextNote: "3 distinct responses, each graded 2:1:0. Complete source guidance: biodegradable; recyclable; made from renewable resources; cost effective; easy to store; versatile/comes in different shapes and sizes; lightweight; flexible; information/images can be printed/written on it; reusable; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sa-q10", topicId: "home-economics-1-1", conceptId: "credit-purchase-advantages",
+    section: "A", questionRef: "2026 OL Section A Q10",
+    questionText: "Describe three advantages of buying goods on credit.",
+    tariffModel: {"kind":"fixed","notation":"3 responses × 2 (2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "advantages", marks: 6, contextNote: "3 distinct responses, each graded 2:1:0. Complete source guidance: useful to pay for large items; advantage can be taken of sales/promotions; useful for unexpected/emergency expenses; reduces the risk of carrying cash; encourages consumers to spend money and drives the economy; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sa-q11", topicId: "home-economics-1-5", conceptId: "pollution-examples",
+    section: "A", questionRef: "2026 OL Section A Q11",
+    questionText: "Give one example of the following types of pollution. Type of pollution Example Water pollution Air pollution Noise pollution",
+    tariffModel: {"kind":"fixed","notation":"3 required types × 2 (2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "1", kind: "criterion", verbatim: "Water pollution — sewage; farm slurry; litter/rubbish; detergents /cleaning agents; artificial fertilisers; chemical waste; oil/petrol; plastics/microplastics; etc.", marks: 2, contextNote: "Give one example of this required type. Complete published alternatives are shown in this claimable row. Graded 2:1:0.", permittedMarks: [0,1,2] },
+    { id: "2", kind: "criterion", verbatim: "Air pollution — carbon dioxide; sulphur dioxide; cfc’s; emissions/exhaust fumes; chemical sprays; smoke; ash/dust/particulate matter; greenhouse gasses; etc.", marks: 2, contextNote: "Give one example of this required type. Complete published alternatives are shown in this claimable row. Graded 2:1:0.", permittedMarks: [0,1,2] },
+    { id: "3", kind: "criterion", verbatim: "Noise pollution — nightclub music; car/house alarms; transport system engines; barking animals; garden power tools/equipment; construction noise/drills/pile hammering; etc.", marks: 2, contextNote: "Give one example of this required type. Complete published alternatives are shown in this claimable row. Graded 2:1:0.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sa-q12", topicId: "home-economics-1-3", conceptId: "fridge-freezer-energy-label",
+    section: "A", questionRef: "2026 OL Section A Q12",
+    questionText: "Explain how the information found on the energy label below will help consumers when purchasing a fridge-freezer. (www.seai.ie)",
+    tariffModel: {"kind":"fixed","notation":"2 responses × 3 (3:2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "information", marks: 6, contextNote: "2 distinct responses, each graded 3:2:1:0. Use the original label. Annual consumption is energy in kWh, not a power rating. Complete source guidance: information on energy efficiency-helps a consumer determine running costs and save money; helps a consumer to determine the environmental impact/carbon footprint; QR code gives access to more information on the model; the volume (frozen/fresh food) of the fridge is expressed in litres, helps a consumer to make comparision between models /choose the best size for their needs; the noise of the fridge is measured in decibels, important if the fridge is in a small space/near living space designed for relaxing; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-ol-sa-q12-energy-label",
+          "src": "/exam-figures/home-economics/home-economics-2026-ol-sa-q12-energy-label.png",
+          "srcHash": "295623432c838cb46a573be4a3a94380",
+          "alt": "Original fridge-freezer EU energy label and source caption. Rating D on the A–G scale; 265 kWh/annum; frozen compartment 208 L, fresh-food compartment 372 L; noise 41 dB, class C; QR code at the top. The adjacent original answer space is retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sa-q13", topicId: "home-economics-1-2", conceptId: "sale-goods-services-consumer-protection",
+    section: "A", questionRef: "2026 OL Section A Q13",
+    questionText: "State three ways the Sale of Goods and Supply of Services Act (1980) protects the consumer.",
+    tariffModel: {"kind":"fixed","notation":"3 responses × 2 (2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "ways", marks: 6, contextNote: "3 distinct responses, each graded 2:1:0. This question concerns the historical Act named in the paper; it is not current individual consumer advice. Complete source guidance: states goods should be of merchantable quality; fit for purpose; be as described; correspond to sample; services should be provided by a skilled person; materials used in the service must be of good quality; sets out the conditions for a guarantee; consumer is entitled to redress, repair, refund or replacement; sets up a contract between buyer and seller; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sa-q14", topicId: "home-economics-3-7", conceptId: "fabric-properties",
+    section: "A", questionRef: "2026 OL Section A Q14",
+    questionText: "Explain each of the following fabric properties. (www.textilelearner.net) Absorbent Flammable Crease resistant",
+    tariffModel: {"kind":"fixed","notation":"3 required properties × 2 (2:1:0)"}, totalMarks: 6,
+    rows: [
+    { id: "1", kind: "criterion", verbatim: "Absorbent — takes up moisture, e.g. water; receptive to colour application; etc.", marks: 2, contextNote: "Explain this required property, graded 2:1:0.", permittedMarks: [0,1,2] },
+    { id: "2", kind: "criterion", verbatim: "Flammable — catches fire easily; burns quickly; etc.", marks: 2, contextNote: "Explain this required property, graded 2:1:0.", permittedMarks: [0,1,2] },
+    { id: "3", kind: "criterion", verbatim: "Crease resistant — fabric does not wrinkle easily; easier to iron; etc.", marks: 2, contextNote: "Explain this required property, graded 2:1:0.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-ol-sa-q14-fabrics",
+          "src": "/exam-figures/home-economics/home-economics-2026-ol-sa-q14-fabrics.png",
+          "srcHash": "e593639ad6fafb6cc08087d75880c9f0",
+          "alt": "Original collage of colourful cushions, fabric swatches, upholstery and patterned household textiles, with the printed source caption.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sb-q1a", topicId: "home-economics-0-1", conceptId: "vegetarian-lasagne-nutrition",
+    section: "B", questionRef: "2026 OL Section B Q1(a)",
+    stem: "Homemade lasagne is a popular dish. The table below shows the nutritional value per 100 g of a vegetarian lasagne. (McCance and Widdowson’s Composition of foods)",
+    questionText: "Using the information presented in the table above, evaluate the nutritional value of the vegetarian lasagne.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:4:3:2:0)"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 20, contextNote: "4 distinct points, each graded 5:4:3:2:0. Complete historical guidance: Evaluate using the complete original table. The source prints iron as 1.0 g per 100 g; this is a source unit anomaly, preserved without inventing a corrected numeric value. Source health statements do not guarantee suitability or prevention of a condition. high in kilocalories/energy; protein for growth and repair; carbohydrates/sugar for heat and energy; fibre for digestion and bowel function; fat for heat and energy; contains no saturated fat/ low in fat, good for a person with obesity, CHD; iron for red blood cells; small amount of salt; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,2,3,4,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,2,3,4,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,2,3,4,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,2,3,4,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-ol-sb-q1a-lasagne",
+          "src": "/exam-figures/home-economics/home-economics-2026-ol-sb-q1a-lasagne.png",
+          "srcHash": "e469b5fc2ae2960d1602ec234b63959e",
+          "alt": "Original vegetarian-lasagne nutrition table per 100 g with adjacent food photograph and source caption. Energy 117 kcal; protein 4.8 g; carbohydrate 9.0 g, sugars 4.4 g; fibre 6.0 g; fats 3.5 g, saturates 0.0 g; iron printed as 1.0 g; salt 0.3 g. The iron unit is reproduced exactly as printed.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sb-q1b", topicId: "home-economics-0-10", conceptId: "lasagne-accompaniment-reason",
+    section: "B", questionRef: "2026 OL Section B Q1(b)",
+    questionText: "Recommend one suitable accompaniment to serve with lasagne. Give one reason for your choice.",
+    tariffModel: {"kind":"fixed","notation":"Accompaniment 4 + reason 4 (4:2:0)"}, totalMarks: 8,
+    rows: [
+    { id: "accompaniment", kind: "criterion", verbatim: "baked potato; green salad; garlic bread; selection of vegetables; etc.", marks: 4, contextNote: "Recommend one suitable accompaniment from these published examples or another valid choice, graded 4:2:0.", permittedMarks: [0,2,4] },
+    { id: "reason", kind: "criterion", verbatim: "reason", marks: 4, contextNote: "Give a reason for the SAME accompaniment, graded 4:2:0. Complete source examples: more nutritious, i.e. potato for carbohydrate; carbohydrate for heat and energy; green salad for Vitamin C; selection of vegetables for Vitamin C; etc. provides contrasting texture; adds variety /attractive colour; etc. Vegetarian Lasagne Energy (kcal) 117 kcal Protein 4.8 g Carbohydrates 9.0 g of which sugars 4.4 g Fibre 6.0 g Fats 3.5 g of which saturates 0.0 g Iron 1.0 g Salt 0.3 g", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sb-q1c", topicId: "home-economics-0-8", conceptId: "iron-sources-functions-deficiency",
+    section: "B", questionRef: "2026 OL Section B Q1(c)",
+    questionText: "Give an account of iron under each of the following headings:\n• dietary sources\n• functions in the body\n• effect of deficiency.",
+    tariffModel: {"kind":"fixed","notation":"Sources 3 × 4 + functions 2 × 4 + deficiency 4 (4:2:0)"}, totalMarks: 24,
+    rows: [
+    { id: "sources", kind: "criterion", verbatim: "dietary sources", marks: 12, contextNote: "Three sources, each graded 4:2:0. Complete guidance: red meat, beef; lamb; venison; pork; chicken; liver; kidney; wholegrain flour; fish; eggs; fortified cereals; leafy green veg; pulses; nuts; seeds; dried fruit/apricots/ prunes /raisins; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "functions", kind: "criterion", verbatim: "functions in the body", marks: 8, contextNote: "Two functions, each graded 4:2:0. Complete guidance: manufacture of haemoglobin in the blood; haemoglobin transports oxygen around the body; involved in myoglobin production which carries oxygen to the muscles; prevents anaemia; works with enzymes to release energy from food; supports cognitive function; maintains immune system; synthesise hormones; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "deficiency", kind: "criterion", verbatim: "effect of deficiency", marks: 4, contextNote: "One effect, graded 4:2:0. Complete guidance: tiredness/lack of energy; pale skin colour; breathlessness; light-headedness; difficulties concentrating; anaemia; etc.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sb-q1d", topicId: "home-economics-0-8", conceptId: "iron-absorption-factors",
+    section: "B", questionRef: "2026 OL Section B Q1(d)",
+    questionText: "Explain two factors that affect the absorption of iron in the body.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 4 (4:2:0)"}, totalMarks: 8,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 8, contextNote: "2 distinct points, each graded 4:2:0. Complete historical guidance: dietary enhancers; vitamin C; vitamin A; meat proteins; haem iron sources; dietary inhibitors; excess fibre; tannins; caffeine; excess calcium/phosphorus; excess protein; phytic acid; oxalic acid; excess zinc; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sb-q1e", topicId: "home-economics-0-11", conceptId: "food-label-consumer-benefits",
+    section: "B", questionRef: "2026 OL Section B Q1(e)",
+    questionText: "Describe four ways food labelling can benefit the consumer when purchasing food.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:4:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "ways", marks: 20, contextNote: "4 distinct points, each graded 5:4:3:0. Complete historical guidance: ingredients listed in descending order of weight; detail on additives used; nutritional information, allergen warning, net quantity; country of origin; use by date; best before date; instructions on cooking; storage instructions; name and address of manufacturer; quality assurance symbols; organic product symbol; fair trade; etc.", permittedMarks: [0,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,4,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,4,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,4,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,4,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sb-q2a", topicId: "home-economics-0-9", conceptId: "cheese-nutritive-dietetic-value",
+    section: "B", questionRef: "2026 OL Section B Q2(a)",
+    stem: "‘Ireland is one of the top cheese producing nations in the world.’ (www.irelandcentral.com)",
+    questionText: "Give an account of (i) the nutritive value and (ii) dietetic value of cheese.",
+    tariffModel: {"kind":"fixed","notation":"Nutritive 1 + dietetic 1 + other 2, each 5 (5:4:3:2:0)"}, totalMarks: 20,
+    rows: [
+    { id: "nutritive", kind: "criterion", verbatim: "nutritive value", marks: 5, contextNote: "One nutritive point, graded 5:4:3:2:0. Complete guidance: source of HBV protein/essential amino acid for growth/repair of body cells; saturated fat for heat/energy; lacks carbohydrate; vitamins, vitamin A for healthy eyes; vitamin D healthy bones and teeth; works with calcium; vitamin B for release of energy; minerals calcium for strong bones and teeth; phosphorus; etc. soft cheeses contain a high percentage of water; cheddar cheese contains salt; etc.", permittedMarks: [0,2,3,4,5] },
+    { id: "dietetic", kind: "criterion", verbatim: "dietetic value", marks: 5, contextNote: "One dietetic point, graded 5:4:3:2:0. Suitability depends on the specific cheese, person and preparation. Complete historical guidance: lacks carbohydrate, serve with food rich in carbohydrates; can be difficult to digest; high energy, high calorie food; important in the diet of children; versatile; high saturated fat content; or can be made from low fat milk; soft cheeses should be avoided by pregnant women to avoid the risk of food poisoning; etc.", permittedMarks: [0,2,3,4,5] },
+    { id: "other", kind: "criterion", verbatim: "others", marks: 10, contextNote: "Two further distinct points from either required heading, each graded 5:4:3:2:0.", permittedMarks: [0,2,3,4,5,6,7,8,9,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,2,3,4,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,2,3,4,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sb-q2b", topicId: "home-economics-0-10", conceptId: "healthy-day-menu-cheese",
+    section: "B", questionRef: "2026 OL Section B Q2(b)",
+    stem: "‘Ireland is one of the top cheese producing nations in the world.’ (www.irelandcentral.com)",
+    questionText: "Having regard to current healthy eating guidelines, set out a menu (3 meals) for one day. Include cheese in the main meal of the day.",
+    tariffModel: {"kind":"fixed","notation":"3 meals × (courses 2 × 2 (2:1:0) + beverage 2 (2:0))"}, totalMarks: 18,
+    rows: [
+    { id: "courses-1", kind: "criterion", verbatim: "courses", marks: 4, contextNote: "Breakfast: two suitable courses, each graded 2:1:0. Full printed sample: Orange juice; Scrambled eggs on toast; Tea/coffee/water/milk", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "beverage-1", kind: "criterion", verbatim: "beverage", marks: 2, contextNote: "Breakfast: suitable beverage, graded 2:0.", permittedMarks: [0,2] },
+    { id: "courses-2", kind: "criterion", verbatim: "courses", marks: 4, contextNote: "Lunch: two suitable courses, each graded 2:1:0. Full printed sample: Quiche Lorraine and green salad; Strawberry yoghurt; Glass of milk/water", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "beverage-2", kind: "criterion", verbatim: "beverage", marks: 2, contextNote: "Lunch: suitable beverage, graded 2:0.", permittedMarks: [0,2] },
+    { id: "courses-3", kind: "criterion", verbatim: "courses", marks: 4, contextNote: "Dinner: two suitable courses, each graded 2:1:0. Full printed sample: Carrot and lentil soup with brown bread; Lasagne and green salad; Glass of milk/water", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "beverage-3", kind: "criterion", verbatim: "beverage", marks: 2, contextNote: "Dinner: suitable beverage, graded 2:0.", permittedMarks: [0,2] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2026-ol-sb-q2b-meal-1","label":"Breakfast","marks":6,"rowIds":["courses-1","beverage-1"]},{"sourceCardId":"he-2026-ol-sb-q2b-meal-2","label":"Lunch","marks":6,"rowIds":["courses-2","beverage-2"]},{"sourceCardId":"he-2026-ol-sb-q2b-meal-3","label":"Dinner","marks":6,"rowIds":["courses-3","beverage-3"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sb-q2c", topicId: "home-economics-0-9", conceptId: "farmhouse-cheese-popularity",
+    section: "B", questionRef: "2026 OL Section B Q2(c)",
+    stem: "‘Ireland is one of the top cheese producing nations in the world.’ (www.irelandcentral.com)",
+    questionText: "Discuss three reasons for the growing popularity of Irish farmhouse cheese.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4 (4:2:0)"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "reasons", marks: 12, contextNote: "3 distinct points, each graded 4:2:0. Complete historical guidance: generally good quality; tasty/ appeals to consumers; different varieties available; available onsite, in farm shops, local markets and an increasing number of supermarkets; samples available to taste in supermarkets; locally sourced, lower carbon footprint; minimal/less processing; can be perceived to be more nutritious; high standards of animal welfare; high standards of production/hygiene; family run businesses; advertised/promoted online; promoted by TV chefs; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sb-q3a", topicId: "home-economics-0-1", conceptId: "food-pyramid-meal-planning",
+    section: "B", questionRef: "2026 OL Section B Q3(a)",
+    stem: "The food pyramid is a guide for planning healthy balanced meals. (adapted www.healthpromotion.ie)",
+    questionText: "Explain how the food pyramid is used to plan healthy balanced meals.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete historical guidance: gives guidance on number of portions to be included daily; gives guidance on portion sizes for adults and for children; makes recommendations on foods to be limited/avoided; presents information in a user friendly/colourful/visual way; reduces the risk of nutrition related diseases; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-ol-sb-q3a-food-pyramid",
+          "src": "/exam-figures/home-economics/home-economics-2026-ol-sb-q3a-food-pyramid.png",
+          "srcHash": "98074b60bdce56e31b83e3f6d2d6da12",
+          "alt": "Original six-shelf Food Pyramid for adults, teenagers and children aged five and over, with source caption. Top foods high in fat, sugar and salt: not every day, maximum once or twice a week. Fats/spreads/oils: very small amounts. Meat/poultry/fish/eggs/beans/nuts: 2 servings; milk/yogurt/cheese: 3 servings; wholemeal cereals/breads/potatoes/pasta/rice: 3–5 servings; vegetables/salad/fruit: 5–7 servings a day.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sb-q3b", topicId: "home-economics-0-10", conceptId: "healthy-lifestyle-guidelines",
+    section: "B", questionRef: "2026 OL Section B Q3(b)",
+    stem: "The food pyramid is a guide for planning healthy balanced meals. (adapted www.healthpromotion.ie)",
+    questionText: "Describe three lifestyle guidelines to follow to maintain good health.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "guidelines", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: exercise regularly; use strategies/techniques to best manage stress; avoid alcohol; avoid smoking; get enough sleep; reduce over-processed foods; avoid eating late at night; avoid high fat and sugar drinks and snacks/avoid empty kilocalorie foods; consider healthy cooking methods; ensure sufficient water intake; attend dentist regularly; attend regular medical check-ups /national screening appointments; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sb-q3c", topicId: "home-economics-0-1", conceptId: "adult-energy-requirement-factors",
+    section: "B", questionRef: "2026 OL Section B Q3(c)",
+    stem: "The food pyramid is a guide for planning healthy balanced meals. (adapted www.healthpromotion.ie)",
+    questionText: "Outline three factors that affect the energy requirements of an adult",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: age: young people require more energy; elderly require less energy; etc. occupation: those involved in heavy manual work require more energy; etc. gender: women require less energy than men; etc. climate: more energy required in colder climates; etc. activity levels: the more active people are, the more energy they need; etc. size and body weight: smaller people use less energy than larger people; etc. pregnancy: more energy is required for developing foetus; etc. lactation: additional energy required for breast milk production; etc. health status: during illness energy requirements often decrease; etc. physical injury: more energy required to repair breaks/cuts; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sb-q4a", topicId: "home-economics-1-3", conceptId: "microwave-oven-study",
+    section: "B", questionRef: "2026 OL Section B Q4(a)",
+    stem: "Informed consumers make better purchasing decisions. (www.powercity.ie)",
+    questionText: "Set out the details of a study you have carried out on microwave ovens. Refer to:\n• modern features\n• guidelines for use\n• care and cleaning.",
+    tariffModel: {"kind":"fixed","notation":"Modern features 2 × 3 (3:2:0) + use 2 × 4 (4:2:0) + care 2 × 3 (3:2:0)"}, totalMarks: 20,
+    rows: [
+    { id: "features", kind: "criterion", verbatim: "modern features", marks: 6, contextNote: "Two features, each graded 3:2:0. Complete source guidance: digital control panel; touch control operation; anti-bacterial linings; recipe memory settings; sensor cooking; different power levels; self-cleaning; auto weight defrost; smart technology; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "use", kind: "criterion", verbatim: "guidelines for use", marks: 8, contextNote: "Two guidelines, each graded 4:2:0. Complete source guidance: arrange foods in a circle, thickest part outwards; stir, turn and rotate food during cooking; pierce foods e.g. skin of sausages, potatoes; use recipes adapted for the microwave; time accurately; cover food to maintain moisture/ speed up the cooking time/ prevent splatters; allow standing time; never use metal/metal trimmed containers/dishes in the microwave; use appropriate cookware e.g. paper, glass, plastic; use defrost power setting to thaw foods; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "care", kind: "criterion", verbatim: "care and cleaning", marks: 6, contextNote: "Two points, each graded 3:2:0. Complete source guidance: follow the manufacturer’s instructions; unplug before cleaning; avoid moving; do not open the door while the microwave is still on; wipe up spills immediately; remove glass turntable when cleaning; clean regularly; avoid using harsh abrasives; wipe the outside and door seal with a damp cloth; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-ol-sb-q4a-microwave",
+          "src": "/exam-figures/home-economics/home-economics-2026-ol-sb-q4a-microwave.png",
+          "srcHash": "e891293eac1a65a871d31935c80ee3c3",
+          "alt": "Original photograph of a white microwave oven with a dark front window and two rotary controls, and the printed Powercity source caption.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sb-q4b", topicId: "home-economics-1-2", conceptId: "faulty-microwave-complaint",
+    section: "B", questionRef: "2026 OL Section B Q4(b)",
+    stem: "Informed consumers make better purchasing decisions. (www.powercity.ie)",
+    questionText: "Describe the complaint procedure to follow when a microwave oven becomes faulty immediately after purchase.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete historical guidance: Answer the historical examination task; this is not a current individual consumer-rights checklist. return to shop with (packaging)appliance as soon as possible; bring to the attention of the shop as soon as possible by emailing if necessary; mention/bring receipt/proof of purchase; speak to manager; explain problem; state what you require/like to shop to do; customer may be entitled to refund, replacement, repair; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sb-q4c", topicId: "home-economics-1-5", conceptId: "electrical-appliance-disposal",
+    section: "B", questionRef: "2026 OL Section B Q4(c)",
+    stem: "Informed consumers make better purchasing decisions. (www.powercity.ie)",
+    questionText: "Outline how a consumer can dispose of electrical appliances in an environmentally friendly way.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 5 (5:3:0)"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 10, contextNote: "2 distinct points, each graded 5:3:0. Complete historical guidance: return to the retailer; take to local authority recycling centre; use local /community group collection points; donate to charity shops (if allowed); offer to community groups; offer on free to take away sites; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sb-q5a", topicId: "home-economics-2-0", conceptId: "older-person-independence",
+    section: "B", questionRef: "2026 OL Section B Q5(a)",
+    stem: "Older people value their independence.",
+    questionText: "Describe three ways older people can maintain their independence.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: Benefit eligibility and rates below belong to the historical source. join active retirement groups to build social circle; make positive choices re diet and exercise; move to accommodation alongside/attached to the house of a family member; move to sheltered accommodation, supported by manager/warden; to have independence with less maintenance, downsize to a smaller house; to have ease of access/no stairs move to a bungalow; taking an active role in childcare gives a sense of purpose; take advantage of free travel, older people can travel accompanied by another adult; to maintain financial independence- state provides pension, medical cards are provided to all people over 70; public health nurses will visit older people in their homes to address minor health issues; HSE provides home help and home care assistants to help older people; Senior Alert Scheme provides grant support for equipment, e.g. monitored personal alarms; engage with voluntary services e.g. Meals on Wheels, meals provided at a reduced rate; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sb-q5b", topicId: "home-economics-2-1", conceptId: "older-person-family-roles",
+    section: "B", questionRef: "2026 OL Section B Q5(b)",
+    stem: "Older people value their independence.",
+    questionText: "Discuss four roles and responsibilities of older people within the family.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete historical guidance: spending time with their children/grandchildren; childcare; financial help for their families; emotional support for children/grandchildren; passing on values e.g. respect and life experiences; grandparents often indirectly teach young people respect and can offer emotional support for children or grandchildren; help with home maintenance; etc; more relaxed with grandchildren and can be positive role models; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sb-q5c", topicId: "home-economics-2-1", conceptId: "family-communication",
+    section: "B", questionRef: "2026 OL Section B Q5(c)",
+    stem: "Older people value their independence.",
+    questionText: "Outline the importance of good communication between family members.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: helps clarify rules and expectations, family members know what is expected of them; good communication is respectful, helps develop positive self-esteem; builds trust, family members are able to express their opinions in a safe environment; develops listening skills which can be transferred to all relationships ; helps to resolve conflict; communication is needed to compromise; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q1ai", topicId: "home-economics-3-3", conceptId: "family-house-layout-evaluation",
+    section: "C", questionRef: "2026 OL Section C E1 Q1(a)(i)",
+    stem: "The floorplan below shows the layout of a family home.",
+    questionText: "Evaluate the suitability of this house layout for a family with young children.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete historical guidance: cot in the bedroom for small children; coat and bag storage in the hallway; open plan kitchen; separate utility with backdoor access for easy entry/exit; patio doors to garden for easy access; large garage & gym for storage and fitness; playroom for children; walk in wardrobe for storage; large kitchen; dining area suitable for entertaining; ensuite off main bedroom; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-ol-sc-q1-house-plan",
+          "src": "/exam-figures/home-economics/home-economics-2026-ol-sc-q1-house-plan.png",
+          "srcHash": "eeb4cdf6699c9ffa84470cc6609e02b1",
+          "alt": "Original family-house floor plan. Left: utility, playroom and sitting room above an open kitchen/dining room with patio doors to the garden. Centre: entrance hall, coat and bag storage, bathroom and ensuite. Right: main bedroom, walk-in wardrobe, two further bedrooms including a cot, and garage and gym. Doors, circulation and all room labels retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q1aii", topicId: "home-economics-3-3", conceptId: "house-future-needs-modifications",
+    section: "C", questionRef: "2026 OL Section C E1 Q1(a)(ii)",
+    stem: "The floorplan below shows the layout of a family home.",
+    questionText: "Suggest two modifications that you could make to the house to cater for the future needs of the family. Give one reason for each modification.",
+    tariffModel: {"kind":"fixed","notation":"2 paired modifications × (modification 5 + reason 5), graded 5:3:0"}, totalMarks: 20,
+    rows: [
+    { id: "modification-1", kind: "criterion", verbatim: "modifications", marks: 5, contextNote: "One distinct proposed modification, graded 5:3:0. Complete source examples: make sitting room, kitchen and dining area open plan; change garage into another bedroom; make garage into a playroom; change playroom into an office; ramp at the front door; make playroom bigger; convert attic/ build extension; etc.", permittedMarks: [0,3,5] },
+    { id: "reason-1", kind: "criterion", verbatim: "reasons", marks: 5, contextNote: "One reason for the SAME modification, graded 5:3:0. Complete source examples: more space; increased storage; easier to clean; etc;", permittedMarks: [0,3,5] },
+    { id: "modification-2", kind: "criterion", verbatim: "modifications", marks: 5, contextNote: "One distinct proposed modification, graded 5:3:0. Complete source examples: make sitting room, kitchen and dining area open plan; change garage into another bedroom; make garage into a playroom; change playroom into an office; ramp at the front door; make playroom bigger; convert attic/ build extension; etc.", permittedMarks: [0,3,5] },
+    { id: "reason-2", kind: "criterion", verbatim: "reasons", marks: 5, contextNote: "One reason for the SAME modification, graded 5:3:0. Complete source examples: more space; increased storage; easier to clean; etc;", permittedMarks: [0,3,5] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2026-ol-sc-q1aii-pair-1","label":"Modification and reason 1","marks":10,"rowIds":["modification-1","reason-1"]},{"sourceCardId":"he-2026-ol-sc-q1aii-pair-2","label":"Modification and reason 2","marks":10,"rowIds":["modification-2","reason-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-ol-sc-q1-house-plan",
+          "src": "/exam-figures/home-economics/home-economics-2026-ol-sc-q1-house-plan.png",
+          "srcHash": "eeb4cdf6699c9ffa84470cc6609e02b1",
+          "alt": "Original family-house floor plan. Left: utility, playroom and sitting room above an open kitchen/dining room with patio doors to the garden. Centre: entrance hall, coat and bag storage, bathroom and ensuite. Right: main bedroom, walk-in wardrobe, two further bedrooms including a cot, and garage and gym. Doors, circulation and all room labels retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q1aiii", topicId: "home-economics-3-3", conceptId: "interior-designer-advantages-disadvantages",
+    section: "C", questionRef: "2026 OL Section C E1 Q1(a)(iii)",
+    stem: "The floorplan below shows the layout of a family home.",
+    questionText: "Discuss one advantage and one disadvantage of using an interior designer when planning and designing a home.",
+    tariffModel: {"kind":"fixed","notation":"Advantage 5 + disadvantage 5 (5:3:0)"}, totalMarks: 10,
+    rows: [
+    { id: "advantage", kind: "criterion", verbatim: "advantage", marks: 5, contextNote: "One advantage, graded 5:3:0. Complete guidance: expert opinion if homeowner isn’t confident about design decisions; guidance on use of colours/fabrics/furniture; advice on sustainability; help to define a consistent/ cohesive style in the home; may be carried out more quickly than if client (with work and family commitments) works alone; designer may have contacts and negotiate reductions; etc.", permittedMarks: [0,3,5] },
+    { id: "disadvantage", kind: "criterion", verbatim: "disadvantage", marks: 5, contextNote: "One disadvantage, graded 5:3:0. Complete guidance: expensive fees; need time for meetings with them; interior designer’s vision may not be the same as the home owner; etc. Main bedroom Bedroom Bedroom Kitchen / Dining room Utility Bathroom Ensuite Sitting room Playroom Garage & Gym Walk-in wardrobe Patio doors (to garden) ** ** Coat & bag storage *Cot * Entrance hall", permittedMarks: [0,3,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q1bi", topicId: "home-economics-3-4", conceptId: "heating-system-selection",
+    section: "C", questionRef: "2026 OL Section C E1 Q1(b)(i)",
+    stem: "Irish homes use a variety of heating systems.",
+    questionText: "Discuss four factors to consider when choosing a heating system for a home.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete historical guidance: Type: full central heating: heats the whole house from a central source, wet and dry systems; etc. partial central heating: heats one area of the house; usually from a central point; requires another heat source; etc. background heating: heats the whole house at a lower temperature; must be supplemented with other heating source; etc. local heating: heats one room only with a local heater; etc. passive solar heating: uses natural heat from the sun to heat south and west facing rooms; large glass windows fitted; etc. active solar heating: uses the heat of the sun to heat home and water using solar panels; etc. underfloor heating: geothermal heat pumps use the consent temperature of the ground or water several feet below earth surface as a source of heating; etc. Air to water heat exchanger; etc. Fuel/energy source: oil; gas; electricity; solid fuel; solar power; etc. Efficiency and convenience: all rooms achieve the same level of thermal comfort; easy to operate; easy to install; can heat water; causes little harm to the environment; can be activated using a smart phone; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q1bii", topicId: "home-economics-3-4", conceptId: "heating-thermostats-timers",
+    section: "C", questionRef: "2026 OL Section C E1 Q1(b)(ii)",
+    stem: "Irish homes use a variety of heating systems.",
+    questionText: "Explain how thermostats and timers on heating systems assist in energy saving in the home.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 5 (5:3:0)"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 10, contextNote: "2 distinct points, each graded 5:3:0. Complete historical guidance: Explain the controls asked for in the paper. The scheme prices two points without a separate naming tariff. timer/clock: electrically operated device used to switch the heating system on and off at pre-determined times set by the user; etc. boiler thermostat: a thermostat connected to the central heating boiler; when the desired temperature is reached the thermostat switches off the boiler; when the water temperature falls the boiler re-starts; etc. room thermostat: is mounted on the wall of a room and set to the desired temperature; the thermostat detects the surrounding temperature; it turns heating on when temperature falls below the desired level and off when the required temperature is reached; etc. radiator thermostat; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q1ci", topicId: "home-economics-3-3", conceptId: "wall-finish-selection",
+    section: "C", questionRef: "2026 OL Section C E1 Q1(c)(i)",
+    stem: "Wall finishes can enhance the character of a room.",
+    questionText: "Discuss three factors that should be considered when selecting wall finishes for a home.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: cost; function of the room; ease of cleaning and maintenance; room specifications; aesthetics; environmental; aspect; durability; texture; ease of application; coverage; light reflective; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q1cii", topicId: "home-economics-3-3", conceptId: "bathroom-wall-finishes",
+    section: "C", questionRef: "2026 OL Section C E1 Q1(c)(ii)",
+    stem: "Wall finishes can enhance the character of a room.",
+    questionText: "Describe three different wall finishes suitable for a bathroom.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: emulsion water-based paint: matt vinyl; silk vinyl; etc. oil-based paint: gloss; satin finish; etc. specialised paint: textured paint; flame retardant paint; etc. wall tiles: general purpose ceramic; mosaic tiles; patterned tiles; tile panels; etc. wallpaper: general purpose; vinyl; flock; embossed; etc. wood panelling; mosaic; etc", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q2ai", topicId: "home-economics-3-8", conceptId: "healthcare-uniform-suitability",
+    section: "C", questionRef: "2026 OL Section C E2 Q2(a)(i)",
+    stem: "Health care workers wear uniforms for professional and practical reasons. (www.netouniforms.com.au)",
+    questionText: "Comment on the suitability of the uniforms shown for health care workers. Refer to:\n• comfort\n• function\n• design.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 2 points × 3 (3:2:0)"}, totalMarks: 18,
+    rows: [
+    { id: "1", kind: "criterion", verbatim: "comfort", marks: 6, contextNote: "Two points under this required heading, each graded 3:2:0. Complete source guidance: allows for ease of movement in bending stretching while maintaining shape; easy to remove layer to allow for variations in temperature; stretch fabric; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "2", kind: "criterion", verbatim: "function", marks: 6, contextNote: "Two points under this required heading, each graded 3:2:0. Complete source guidance: easy to wear; durable; versatile; will maintain shape; will not crease; fabric suited to warm and cold weather; trousers are warm for winter wear; well-fitting flat shoes; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "3", kind: "criterion", verbatim: "design", marks: 6, contextNote: "Two points under this required heading, each graded 3:2:0. Complete source guidance: loose fitting; short sleeves; v neck; wide fitting leg; deep pockets; press studs; no buttons; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-ol-sc-q2-uniforms",
+          "src": "/exam-figures/home-economics/home-economics-2026-ol-sc-q2-uniforms.png",
+          "srcHash": "f5a2b44fdda7a69549194237282af509",
+          "alt": "Original photograph of four health care uniforms: a white coat, blue tunic and trousers, black tunic and trousers, and green tunic and trousers, with source caption.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q2aii", topicId: "home-economics-3-7", conceptId: "hospital-crest-application",
+    section: "C", questionRef: "2026 OL Section C E2 Q2(a)(ii)",
+    stem: "Health care workers wear uniforms for professional and practical reasons. (www.netouniforms.com.au)",
+    questionText: "Describe how to apply a hospital crest to a health care uniform.",
+    tariffModel: {"kind":"fixed","notation":"1 point × 4 (4:2:0) + 1 point × 3 (3:2:0)"}, totalMarks: 7,
+    rows: [
+    { id: "first", kind: "criterion", verbatim: "point", marks: 4, contextNote: "First description point, graded 4:2:0. The scheme prints these method examples only, with no developed application steps: appliqué; embroidery; quilting; embossing; fabric painting; iron-on; etc.", permittedMarks: [0,2,4] },
+    { id: "second", kind: "criterion", verbatim: "point", marks: 3, contextNote: "Second distinct description point for the SAME application, graded 3:2:0. No invented model procedure or additional criterion.", permittedMarks: [0,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-ol-sc-q2-uniforms",
+          "src": "/exam-figures/home-economics/home-economics-2026-ol-sc-q2-uniforms.png",
+          "srcHash": "f5a2b44fdda7a69549194237282af509",
+          "alt": "Original photograph of four health care uniforms: a white coat, blue tunic and trousers, black tunic and trousers, and green tunic and trousers, with source caption.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q2b", topicId: "home-economics-3-7", conceptId: "clothing-colour-application-methods",
+    section: "C", questionRef: "2026 OL Section C E2 Q2(b)",
+    stem: "Colour plays an important part in our clothing choices.",
+    questionText: "Name and describe two methods of colour application for clothing.",
+    tariffModel: {"kind":"fixed","notation":"2 names × 3 + 3 description points × 3 (3:2:0)"}, totalMarks: 15,
+    rows: [
+    { id: "names", kind: "criterion", verbatim: "Dyeing: may be applied by soaking in vat of dye or by placing in washing machine with the dye included; etc. Tie-dyeing: sewing or tying pieces of fabric together tightly and preventing the dye from entering the crevices formed; etc. Fabric painting; Batik; screen printing; etc.", marks: 6, contextNote: "Name TWO different methods from the actual published alternatives shown here or other valid methods. Each name graded 3:2:0.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "description", kind: "criterion", verbatim: "Description", marks: 9, contextNote: "Three total description points across the SAME two chosen methods, each graded 3:2:0. The scheme does not allocate three description points per method. Full published guidance is in the methods row; no further process model is supplied.", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q2ci", topicId: "home-economics-3-8", conceptId: "social-media-fashion-trends",
+    section: "C", questionRef: "2026 OL Section C E2 Q2(c)(i)",
+    stem: "Social media influencers are impacting our fashion choices.",
+    questionText: "Evaluate how social media contributes to current fashion trends.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3 (3:2:0)"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 9, contextNote: "3 distinct points, each graded 3:2:0. Complete historical guidance: social media keeps users informed of latest fashion trends, reinforcing the trend; bloggers/influencers review/ give feedback on clothes, some reviews may go viral; fashion companies give influencers clothes samples to wear, this promotes the trend; some influencers may not declare their posts are paid for reviews, may mislead/ be untrue; consumer adopt fashion trends more quickly increasing sales of fashion items; etc", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q2cii", topicId: "home-economics-3-8", conceptId: "preloved-vintage-clothing",
+    section: "C", questionRef: "2026 OL Section C E2 Q2(c)(ii)",
+    stem: "Social media influencers are impacting our fashion choices.",
+    questionText: "Discuss the increasing popularity of pre-loved / vintage clothing.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 (3:2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 6, contextNote: "2 distinct points, each graded 3:2:0. Complete historical guidance: good value for money; allows for an individual look; extends the lifecycle of clothing; quality of clothing may be better than current fast fashion; reduces carbon footprint; reduces demand for/ production of new clothing; reduces textile waste; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q3ai", topicId: "home-economics-3-10", conceptId: "education-work-preparation",
+    section: "C", questionRef: "2026 OL Section C E3 Q3(a)(i)",
+    stem: "Equality across the world of work ensures fair access to opportunities. (www.building.co.uk)",
+    questionText: "Discuss four ways education prepares students for the world of work.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "ways", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete historical guidance: promotes punctuality; trustworthiness/ responsibility; self-discipline; builds literacy skills; numeracy skills; IT/computer skills; occupational skills people skills, teamwork; social skills; work experience; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-ol-sc-q3-workers",
+          "src": "/exam-figures/home-economics/home-economics-2026-ol-sc-q3-workers.png",
+          "srcHash": "ba3eb25b09bd0a4793be8c4ed224f0e7",
+          "alt": "Original photograph of three construction workers wearing hard hats and high-visibility vests while consulting a plan, with the printed Building source caption.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q3aii", topicId: "home-economics-3-9", conceptId: "women-workforce-participation",
+    section: "C", questionRef: "2026 OL Section C E3 Q3(a)(ii)",
+    stem: "Equality across the world of work ensures fair access to opportunities. (www.building.co.uk)",
+    questionText: "Give three reasons for the increased participation of women in the workforce.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "reasons", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: two incomes needed to meet high cost of living; equality/anti-discrimination legislation in workplace; equal pay; desire for social contact; more stay at home partners; desire for independence; part-time work available; better working conditions, e.g. job share, flexitime, career breaks; etc; greater variety of childcare options available; role models for children; etc", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-ol-sc-q3-workers",
+          "src": "/exam-figures/home-economics/home-economics-2026-ol-sc-q3-workers.png",
+          "srcHash": "ba3eb25b09bd0a4793be8c4ed224f0e7",
+          "alt": "Original photograph of three construction workers wearing hard hats and high-visibility vests while consulting a plan, with the printed Building source caption.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q3aiii", topicId: "home-economics-3-9", conceptId: "worker-protection-legislation",
+    section: "C", questionRef: "2026 OL Section C E3 Q3(a)(iii)",
+    stem: "Equality across the world of work ensures fair access to opportunities. (www.building.co.uk)",
+    questionText: "Name and describe one piece of legislation that protects workers in employment.",
+    tariffModel: {"kind":"fixed","notation":"Name 5 + description 2 × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Protection of Young Persons (Employment) Act, 1996", marks: 5, contextNote: "Name the selected legislation, graded 5:3:0. The final source heading is a general rights/entitlements category; identify an appropriate actual law when using that route.", permittedMarks: [0,3,5] },
+    { id: "description", kind: "criterion", verbatim: "description", marks: 10, contextNote: "Two points about the SAME law, each graded 5:3:0. Historical source examples, not current individual legal advice: protect the rights of the young worker protects the health of young workers; regulates the hours young people can work; regulates ages young people can work at; regulates rest breaks; holidays and days off; minimum wage must be paid to young people; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "0",
+                "label": "Protection of Young Persons (Employment) Act, 1996",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Protection of Young Persons (Employment) Act, 1996",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name the selected legislation, graded 5:3:0. The final source heading is a general rights/entitlements category; identify an appropriate actual law when using that route."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "description",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  10
+                            ],
+                            "contextNote": "Two points about the SAME law, each graded 5:3:0. Historical source examples, not current individual legal advice: protect the rights of the young worker protects the health of young workers; regulates the hours young people can work; regulates ages young people can work at; regulates rest breaks; holidays and days off; minimum wage must be paid to young people; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "1",
+                "label": "Safety, Health and Welfare at Work Act 2005",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Safety, Health and Welfare at Work Act 2005",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name the selected legislation, graded 5:3:0. The final source heading is a general rights/entitlements category; identify an appropriate actual law when using that route."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "description",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  10
+                            ],
+                            "contextNote": "Two points about the SAME law, each graded 5:3:0. Historical source examples, not current individual legal advice: provides for the health and safety of people in the work place in order to prevent workplace injuries and ill health; etc. National Minimum Wage Order: sets out minimum wage to be paid to workers; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "2",
+                "label": "Employment Equality Acts",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Employment Equality Acts",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name the selected legislation, graded 5:3:0. The final source heading is a general rights/entitlements category; identify an appropriate actual law when using that route."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "description",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  10
+                            ],
+                            "contextNote": "Two points about the SAME law, each graded 5:3:0. Historical source examples, not current individual legal advice: protects people from discrimination in the workplace and in wider society i.e. gender, marital status, family status, age, race, religion, sexual orientation; member of an ethnic group; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "3",
+                "label": "Organisation of Working Time Act 1997",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Organisation of Working Time Act 1997",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name the selected legislation, graded 5:3:0. The final source heading is a general rights/entitlements category; identify an appropriate actual law when using that route."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "description",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  10
+                            ],
+                            "contextNote": "Two points about the SAME law, each graded 5:3:0. Historical source examples, not current individual legal advice: sets out the law in relation to working hours, rest breaks; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "4",
+                "label": "Employee Rights and Entitlements",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Employee Rights and Entitlements",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name the selected legislation, graded 5:3:0. The final source heading is a general rights/entitlements category; identify an appropriate actual law when using that route."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "description",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  10
+                            ],
+                            "contextNote": "Two points about the SAME law, each graded 5:3:0. Historical source examples, not current individual legal advice: paid holidays, benefits e.g. maternity or disability, parental leave, force majeure, carers leave; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another",
+                "label": "Another valid employment law",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name another valid law protecting workers, graded 5:3:0."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "description",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  10
+                            ],
+                            "contextNote": "Two accurate points about the SAME law, each graded 5:3:0. No additional model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-ol-sc-q3-workers",
+          "src": "/exam-figures/home-economics/home-economics-2026-ol-sc-q3-workers.png",
+          "srcHash": "ba3eb25b09bd0a4793be8c4ed224f0e7",
+          "alt": "Original photograph of three construction workers wearing hard hats and high-visibility vests while consulting a plan, with the printed Building source caption.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q3bi", topicId: "home-economics-3-11", conceptId: "leisure-participation-benefits",
+    section: "C", questionRef: "2026 OL Section C E3 Q3(b)(i)",
+    stem: "Families can choose to spend their leisure time on a variety of indoor and outdoor activities.",
+    questionText: "Discuss three benefits of participating in leisure activities.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "benefits", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: helps relax and unwind from stresses of daily life; assists mental well-being; improves physical health; encourages positive relationships; assist the development of new skills; develops creative skills; improves self-esteem; encourages family bonding; improves communication and teamwork; reduces boredom; good example for children; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q3bii", topicId: "home-economics-3-11", conceptId: "family-leisure-choice-factors",
+    section: "C", questionRef: "2026 OL Section C E3 Q3(b)(ii)",
+    stem: "Families can choose to spend their leisure time on a variety of indoor and outdoor activities.",
+    questionText: "Outline three factors that influence family leisure choices.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: age: interests vary with age; certain sports may not be suitable for younger children (dangerous; age may affect disposable income available for leisure, etc. gender: certain sports may be dominated by one gender; males sometimes have more leisure time than working mums; males tend to have a higher participation in sports; etc. social influences: socio-economic group; where a person lives; current trends; etc. cultural influences: certain sports associated with different countries / counties; family culture; traditions of particular countries e.g. dance, etc. occupational influences: salary/costs; choice of active/sedentary pursuits; extension of work; networking opportunity, etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q3ci", topicId: "home-economics-2-0", conceptId: "social-change-family-life",
+    section: "C", questionRef: "2026 OL Section C E3 Q3(c)(i)",
+    stem: "Social changes are impacting how and where we live.",
+    questionText: "Discuss how the following social changes impact family life:\n• changing attitudes to marriage\n• reduction in working hours\n• changing attitudes to parenting.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "1", kind: "criterion", verbatim: "changing attitudes to marriage", marks: 5, contextNote: "One developed point under this required heading, graded 5:3:0. Complete historical guidance: divorce /separation, less traditional nuclear family unit; remarrying, increase in blended families; increase in one-parent families; couples cohabiting; serial monogamy; increase in same-sex marriages; etc.", permittedMarks: [0,3,5] },
+    { id: "2", kind: "criterion", verbatim: "reduction in working hours", marks: 5, contextNote: "One developed point under this required heading, graded 5:3:0. Complete historical guidance: shorter working week/day; better hourly pay rates; more leisure time, greater variety of leisure activities; people are happier at work, positive effect on family life; jobs are less stressful; people work to live not live to work; etc.", permittedMarks: [0,3,5] },
+    { id: "3", kind: "criterion", verbatim: "changing attitudes to parenting", marks: 5, contextNote: "One developed point under this required heading, graded 5:3:0. Complete historical guidance: less segregated/divided parenting roles; both parents have an equal say, joint decision making, egalitarian approach; gentle parenting; more child centred attitude to childcare; more emotional awareness, discussion of emotions; move away from strict compliance; recognise importance of respecting child’s independence; etc.", permittedMarks: [0,3,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q3cii", topicId: "home-economics-3-3", conceptId: "urban-living-reasons",
+    section: "C", questionRef: "2026 OL Section C E3 Q3(c)(ii)",
+    stem: "Social changes are impacting how and where we live.",
+    questionText: "Discuss three reasons why more people in Ireland now choose to live in cities and towns / urban areas.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "reasons", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: more employment opportunities, large multinational companies in urban areas; more educational opportunities more services, amenities available; technological developments in agriculture have reduced number of jobs available; greater range of leisure/entertainment facilities; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q4ai", topicId: "home-economics-0-10", conceptId: "pregnancy-dietary-requirements",
+    section: "C", questionRef: "2026 OL Section C Q4(a)(i)",
+    stem: "Good nutrition during pregnancy is important for mother and baby. (www.goldrushhospital.com)",
+    questionText: "Discuss four dietary requirements of pregnant women.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete historical guidance: protein for growth and development of new cells and tissues; lipids/fatty acids for healthy nervous system; omega 3 fatty acids, development of nervous system; carbohydrate for energy; energy intake should be increased slightly; fibre to prevent constipation; vitamins folic acid/folate prior and during pregnancy to reduce possibility of neural tube defects; vitamin D for bone development; vitamin C to help absorb iron, fight infection; minerals calcium for bone development; iron for blood; water to prevent constipation and dehydration; salt intake should be reduced; reduce intake of raw eggs, unpasteurised cheese; pâté; avoid alcohol; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-ol-sc-q4-pregnancy",
+          "src": "/exam-figures/home-economics/home-economics-2026-ol-sc-q4-pregnancy.png",
+          "srcHash": "d0cb50b2b1e5b0ac403c216416f2c2a3",
+          "alt": "Original photograph of a pregnant woman preparing vegetables at a kitchen counter, with the printed source caption.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 8 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q4aii", topicId: "home-economics-0-10", conceptId: "pregnancy-day-menu",
+    section: "C", questionRef: "2026 OL Section C Q4(a)(ii)",
+    stem: "Good nutrition during pregnancy is important for mother and baby. (www.goldrushhospital.com)",
+    questionText: "Set out a menu (3 meals) for one day suitable for a pregnant woman.",
+    tariffModel: {"kind":"fixed","notation":"Breakfast 6 + lunch 6 + dinner 8: exact course/beverage tariffs"}, totalMarks: 20,
+    rows: [
+    { id: "courses-1", kind: "criterion", verbatim: "courses", marks: 4, contextNote: "Breakfast: two suitable courses, each graded 2:1:0. Complete published sample: Orange juice; Porridge; Tea/coffee/water/milk", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "beverage-1", kind: "criterion", verbatim: "beverage", marks: 2, contextNote: "Breakfast: suitable beverage, graded 2:0.", permittedMarks: [0,2] },
+    { id: "courses-2", kind: "criterion", verbatim: "courses", marks: 4, contextNote: "Lunch: two suitable courses, each graded 2:1:0. Complete published sample: Vegetable soup with wholemeal brown bread; Strawberry yoghurt; Glass of milk/water", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "beverage-2", kind: "criterion", verbatim: "beverage", marks: 2, contextNote: "Lunch: suitable beverage, graded 2:0.", permittedMarks: [0,2] },
+    { id: "starter", kind: "criterion", verbatim: "starter/dessert", marks: 2, contextNote: "Dinner: starter or dessert, graded 2:1:0. Complete published sample: Vegetable spring roll; Chicken and broccoli bake with mashed potatoes; Glass of milk/water", permittedMarks: [0,1,2] },
+    { id: "main", kind: "criterion", verbatim: "main course", marks: 4, contextNote: "Dinner: main course, graded 4:2:0.", permittedMarks: [0,2,4] },
+    { id: "beverage-3", kind: "criterion", verbatim: "beverage", marks: 2, contextNote: "Dinner: suitable beverage, graded 2:0.", permittedMarks: [0,2] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2026-ol-sc-q4aii-meal-1","label":"Breakfast","marks":6,"rowIds":["courses-1","beverage-1"]},{"sourceCardId":"he-2026-ol-sc-q4aii-meal-2","label":"Lunch","marks":6,"rowIds":["courses-2","beverage-2"]},{"sourceCardId":"he-2026-ol-sc-q4aii-meal-3","label":"Dinner","marks":8,"rowIds":["starter","main","beverage-3"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-ol-sc-q4-pregnancy",
+          "src": "/exam-figures/home-economics/home-economics-2026-ol-sc-q4-pregnancy.png",
+          "srcHash": "d0cb50b2b1e5b0ac403c216416f2c2a3",
+          "alt": "Original photograph of a pregnant woman preparing vegetables at a kitchen counter, with the printed source caption.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 8 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q4aiii", topicId: "home-economics-0-8", conceptId: "pregnancy-water-intake",
+    section: "C", questionRef: "2026 OL Section C Q4(a)(iii)",
+    stem: "Good nutrition during pregnancy is important for mother and baby. (www.goldrushhospital.com)",
+    questionText: "Explain the importance of adequate water intake during pregnancy.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 5 (5:3:0)"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 10, contextNote: "2 distinct points, each graded 5:3:0. Complete historical guidance: essential part of all body tissues; needed for transportation of nutrients, oxygen, carbon dioxide, hormones, and enzymes; necessary for hydrolysis during digestion; helps regulate body temperature; source of calcium, sodium and fluoride; quenches thirst; helps prevent constipation; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2026-ol-sc-q4-pregnancy",
+          "src": "/exam-figures/home-economics/home-economics-2026-ol-sc-q4-pregnancy.png",
+          "srcHash": "d0cb50b2b1e5b0ac403c216416f2c2a3",
+          "alt": "Original photograph of a pregnant woman preparing vegetables at a kitchen counter, with the printed source caption.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 8 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q4bi", topicId: "home-economics-1-2", conceptId: "online-purchase-advantages-disadvantages",
+    section: "C", questionRef: "2026 OL Section C Q4(b)(i)",
+    stem: "‘96% of Irish adults shopped online in 2024.’ (www.aviva.ie)",
+    questionText: "State the advantages and the disadvantages of buying goods online.",
+    tariffModel: {"kind":"fixed","notation":"Advantage 1 + disadvantage 1 + other 2, each 5 (5:3:0)"}, totalMarks: 20,
+    rows: [
+    { id: "advantage", kind: "criterion", verbatim: "advantage", marks: 5, contextNote: "One advantage, graded 5:3:0. Complete guidance: do not have to leave home; goods delivered by post, courier; variety of websites; easy to search different websites; more convenient; next day delivery; may be cheaper; not restricted by opening hours, goods may be purchased anytime; order may be tracked; can shop around various websites; can read reviews of products; etc.", permittedMarks: [0,3,5] },
+    { id: "disadvantage", kind: "criterion", verbatim: "disadvantage", marks: 5, contextNote: "One disadvantage, graded 5:3:0. Complete guidance: quality uncertain; shipping problems; risk of fraud /threat of digital scams; cost of returning goods; faulty goods; impersonal shopping experience; delays in delivery; hassle with refunds; etc.", permittedMarks: [0,3,5] },
+    { id: "other", kind: "criterion", verbatim: "others", marks: 10, contextNote: "Two further distinct points from either heading, each graded 5:3:0.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q4bii", topicId: "home-economics-1-1", conceptId: "consumer-credit-act-protection",
+    section: "C", questionRef: "2026 OL Section C Q4(b)(ii)",
+    stem: "‘96% of Irish adults shopped online in 2024.’ (www.aviva.ie)",
+    questionText: "Describe how consumers are protected by the Consumer Credit Act (1995).",
+    tariffModel: {"kind":"fixed","notation":"2 points × 5 (5:3:0)"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 10, contextNote: "2 distinct points, each graded 5:3:0. Complete historical guidance: Answer the historical Act named by the paper; not current individual credit advice. aims to protect the consumer by ensuring transparency in all credit agreements; ensures credit agreements are clear and easy to understand; regulates consumer credit; monitors credit advertising; stipulates the information to be included in all credit agreements; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q4ci", topicId: "home-economics-3-3", conceptId: "home-choice-influences",
+    section: "C", questionRef: "2026 OL Section C Q4(c)(i)",
+    stem: "Choosing a home is influenced by a combination of financial, personal and practical factors.",
+    questionText: "Explain how each of the following influence a person when choosing a home:\n• income\n• location\n• trends in housing development.",
+    tariffModel: {"kind":"fixed","notation":"3 required factors × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "1", kind: "criterion", verbatim: "income", marks: 5, contextNote: "One explained point about this required factor, graded 5:3:0. Complete guidance: money available/income; lending agency fees; legal fees; stamp duty; interest rate; cost of repayments; cost determines size and location; re-sale value of property; energy efficiency/BER rating; etc.", permittedMarks: [0,3,5] },
+    { id: "2", kind: "criterion", verbatim: "location", marks: 5, contextNote: "One explained point about this required factor, graded 5:3:0. Complete guidance: proximity to work, shops, schools; environmental factors; local community, neighbours; proposed developments in areas; rural or urban; amenities e.g. electricity, water, refuse; transport; privacy and security; possible risks e.g. pollution, flooding; etc.", permittedMarks: [0,3,5] },
+    { id: "3", kind: "criterion", verbatim: "trends in housing development", marks: 5, contextNote: "One explained point about this required factor, graded 5:3:0. Complete guidance: housing estates offer a range of house types; green open spaces; walled entrances; amenities; move away from single house developments; development of small, gated estates; buying old houses for refurbishment; redevelopment of inner-city houses; environmentally friendly houses; apartment living; passive houses with high energy rating-BER rating; etc.", permittedMarks: [0,3,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2026 Ordinary Level — © State Examinations Commission.",
+    id: "he-2026-ol-sc-q4cii", topicId: "home-economics-1-1", conceptId: "home-insurance-benefits",
+    section: "C", questionRef: "2026 OL Section C Q4(c)(ii)",
+    stem: "Choosing a home is influenced by a combination of financial, personal and practical factors.",
+    questionText: "Describe three benefits of home insurance.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "benefits", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: protection against loss or injury due to burglary; fires; flooding; security; provides peace of mind; protects assets e.g. valuables; public liability included; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];
