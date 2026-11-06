@@ -419,8 +419,19 @@ def build():
     return cards
 
 
-if __name__ == '__main__':
+def save_reviewed(cards):
+    """Replace this reviewed batch by stable ID and preserve other sittings."""
     output = ROOT / 'scripts/markbank/authored/russian-reviewed.json'
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(json.dumps(build(), ensure_ascii=False, indent=2) + '\n')
+    previous = json.loads(output.read_text()) if output.exists() else []
+    incoming = {card['id']: card for card in cards}
+    assert len(incoming) == len(cards)
+    existing = {card['id'] for card in previous}
+    merged = [incoming.get(card['id'], card) for card in previous]
+    merged.extend(card for card in cards if card['id'] not in existing)
+    output.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + '\n')
     print(output)
+
+
+if __name__ == '__main__':
+    save_reviewed(build())

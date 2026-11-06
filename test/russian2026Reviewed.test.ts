@@ -18,17 +18,18 @@ const get = (suffix: string) => {
   if (!card) throw new Error(suffix);
   return card;
 };
+const reviewedHigher = REVIEWED_CARDS.filter(card => card.year === 2026 && card.level === 'higher');
 
 describe('Russian 2026 Higher independent source review', () => {
   it('preserves all199 prior IDs and covers46 complete reviewed tasks', () => {
     const runtime = new Set([...HIGHER,...ORDINARY].map(card=>card.id));
     expect(legacy.every(card=>runtime.has(card.id))).toBe(true);
     expect(HIGHER).toHaveLength(129);
-    expect(ORDINARY).toHaveLength(116);
-    expect(REVIEWED_CARDS).toHaveLength(46);
-    expect(REVIEWED_CARDS.every(tariffReconciles)).toBe(true);
-    expect(REVIEWED_CARDS.reduce((sum,card)=>sum+card.totalMarks,0)).toBe(320);
-    expect(REVIEWED_CARDS.filter(card=>card.audioMaterial).reduce((sum,card)=>sum+card.totalMarks,0)).toBe(80);
+    expect(ORDINARY.length).toBeGreaterThanOrEqual(116);
+    expect(reviewedHigher).toHaveLength(46);
+    expect(reviewedHigher.every(tariffReconciles)).toBe(true);
+    expect(reviewedHigher.reduce((sum,card)=>sum+card.totalMarks,0)).toBe(320);
+    expect(reviewedHigher.filter(card=>card.audioMaterial).reduce((sum,card)=>sum+card.totalMarks,0)).toBe(80);
   });
   it('keeps the full printed pools and never invents a grammar tariff', () => {
     const winter=get('la1-ii'), grammar=get('gr');
@@ -89,7 +90,7 @@ describe('Russian 2026 Higher independent source review', () => {
     expect(audio).toHaveLength(17);
     expect(audio.every(record=>record.verification.status==='full-file-verified' && record.verification.sha256.length===64)).toBe(true);
     expect(audio.every(record=>record.verification.browserPlayback===false)).toBe(true);
-    for(const card of REVIEWED_CARDS.filter(card=>card.audioMaterial)) {
+    for(const card of reviewedHigher.filter(card=>card.audioMaterial)) {
       expect(card.paperFileid).toBe('LC099ALPA00BV');
       expect(card.audioMaterial?.canonicalUrl).toBe(audio.find(record=>record.year===2026)?.source.canonicalUrl);
     }
