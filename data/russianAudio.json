@@ -1,0 +1,559 @@
+[
+  {
+    "year": 2026,
+    "source": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2026 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "Official SEC archive response",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/71429240",
+      "bytes": 71429240,
+      "rangeBytes": 65536,
+      "rangeSha256": "3eee5ca65cf733bb88455ec435648fcaa42518c7a26ee70d7d78dba10fc53938",
+      "browserPlayback": false,
+      "sha256": "5911a9caea0c00c97a466fc3b9c5d2c086b24946af60f7eb8c4782df5b219f52",
+      "durationSeconds": 2232.16375
+    },
+    "paperFileids": [
+      "LC099ALPA00BV.pdf",
+      "LC099GLPA00BV.pdf"
+    ]
+  },
+  {
+    "year": 2025,
+    "source": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2025 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/russian/2025",
+      "listingSha256": "006583aa0e741dcb9569dc5fcc6aa31a79f6cf8ba19581c970784eac50e67244",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/73724655",
+      "bytes": 73724655,
+      "rangeBytes": 65536,
+      "rangeSha256": "3eee5ca65cf733bb88455ec435648fcaa42518c7a26ee70d7d78dba10fc53938",
+      "browserPlayback": false,
+      "sha256": "d66499c02e3783aa61ca567864c5b9e9ce1f45b255e8f3e505621c2ab7985175",
+      "durationSeconds": 2303.895469
+    },
+    "paperFileids": [
+      "LC099ALPA00BV.pdf",
+      "LC099GLPA00BV.pdf"
+    ]
+  },
+  {
+    "year": 2024,
+    "source": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2024 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/russian/2024",
+      "listingSha256": "843740c4449d1e817044ef9d1b26d77d4d3cf2eaebbd109cf665374dd8cc81b9",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/76665525",
+      "bytes": 76665525,
+      "rangeBytes": 65536,
+      "rangeSha256": "3eee5ca65cf733bb88455ec435648fcaa42518c7a26ee70d7d78dba10fc53938",
+      "browserPlayback": false,
+      "sha256": "c3fe43aa3b4ba0e3b261be825fb8c6cf9f4fdaba263914e7533b599958c83ae3",
+      "durationSeconds": 2395.797656,
+      "localFileRetained": false
+    },
+    "paperFileids": [
+      "LC099ALPA00BV.pdf",
+      "LC099GLPA00BV.pdf"
+    ]
+  },
+  {
+    "year": 2023,
+    "source": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2023 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/russian/2023",
+      "listingSha256": "22d14732d75130ed9c27710604e58ceb929ec2b160b9d1071952c2f431d4e26d",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/71086055",
+      "bytes": 71086055,
+      "rangeBytes": 65536,
+      "rangeSha256": "3eee5ca65cf733bb88455ec435648fcaa42518c7a26ee70d7d78dba10fc53938",
+      "browserPlayback": false,
+      "sha256": "cd65c6ac917dbaa3a4581ba9917c572c2bd2ce759b7d2c25556089c13acf0bb2",
+      "durationSeconds": 2221.439219,
+      "localFileRetained": false
+    },
+    "paperFileids": [
+      "LC099ALPA00BV.pdf",
+      "LC099GLPA00BV.pdf"
+    ]
+  },
+  {
+    "year": 2022,
+    "source": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/russian/2022",
+      "listingSha256": "3b6198e20b2daff59ed4a415b34971e3b52b7953a116c665f3bea173942bec46",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/79354225",
+      "bytes": 79354225,
+      "rangeBytes": 65536,
+      "rangeSha256": "bad680680aacfc8d5d24fbf54644c318f36237e9ce0b0c6360aa0b279fe39793",
+      "browserPlayback": false,
+      "sha256": "04322a9be749ed1ed2421069a47b2a0e37a41a56872751e095b4ee37cd457bbf",
+      "durationSeconds": 2479.819531,
+      "localFileRetained": false
+    },
+    "paperFileids": [
+      "LC099ALPA00BV.pdf",
+      "LC099GLPA00BV.pdf"
+    ]
+  },
+  {
+    "year": 2021,
+    "source": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/russian/2021",
+      "listingSha256": "321f780446f0305295aca93f363d5815bc0b1ae6d19b23d45c02cd043c798d4f",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/79399315",
+      "bytes": 79399315,
+      "rangeBytes": 65536,
+      "rangeSha256": "39fd233a29ec60bd99d2ad05d01f9ed32b1ecfc265eea636e5772672e35bd85e",
+      "browserPlayback": false,
+      "sha256": "6fab87ea18d69a7fad1dc37a44faac3a496ebc548f07c4677617baf809dff5b7",
+      "durationSeconds": 2481.228594,
+      "localFileRetained": false
+    },
+    "paperFileids": [
+      "LC099ALPA00BV.pdf",
+      "LC099GLPA00BV.pdf"
+    ]
+  },
+  {
+    "year": 2020,
+    "source": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2020 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/russian/2020",
+      "listingSha256": "c8f26ad66a4a2947549849fd3466b5ad88351eec6d5816b02e8f7df921a6d937",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/73969310",
+      "bytes": 73969310,
+      "rangeBytes": 65536,
+      "rangeSha256": "4bd74074fb68133c5637a8cada504c64b89968dd8d2145a75febb5d57c20a94c",
+      "browserPlayback": false,
+      "sha256": "c61c083a23fc9fa39c2818e43b99424f9e80b5d94b9f9f4cbf09d073746cc20f",
+      "durationSeconds": 2311.540937,
+      "localFileRetained": false
+    },
+    "paperFileids": [
+      "LC099ALPA00BV.pdf"
+    ]
+  },
+  {
+    "year": 2019,
+    "source": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2019 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/russian/2019",
+      "listingSha256": "ada0b69549a9b4a7f4d6f9a3f406406fca38054a85b4c16d237b898d08eaabf7",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/80056205",
+      "bytes": 80056205,
+      "rangeBytes": 65536,
+      "rangeSha256": "e00550d957cfd31ffb3c5589099e4331782d5716b209787386265aa9c3a16141",
+      "browserPlayback": false,
+      "sha256": "ea039936c0313298ad8d72f101b42d62973c4ff780d529f7961ebb1a9d7b1fbd",
+      "durationSeconds": 2501.694687,
+      "localFileRetained": false
+    },
+    "paperFileids": [
+      "LC099ALPA00BV.pdf",
+      "LC099GLPA00BV.pdf"
+    ]
+  },
+  {
+    "year": 2018,
+    "source": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2018 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2018/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2018/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/russian/2018",
+      "listingSha256": "cc48de6afd34687a292bccfb755fc0cf76fcbef9d27f6397d05b768b2ccc61ef",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/86211072",
+      "bytes": 86211072,
+      "rangeBytes": 65536,
+      "rangeSha256": "9e0a795a212bbc75e724c0e629de62ac4eea893a0bf337583aa521c9f64bdbe9",
+      "browserPlayback": false,
+      "sha256": "b8de3b3d1c0f572c7ecf5974e494d5c1411a3679d459b4d2f8d437e69c88c702",
+      "durationSeconds": 2694.034281,
+      "localFileRetained": false
+    },
+    "paperFileids": [
+      "LC099ALPA00EV.pdf",
+      "LC099GLPA00EV.pdf"
+    ]
+  },
+  {
+    "year": 2017,
+    "source": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2017 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/russian/2017",
+      "listingSha256": "8e62bfc218aedf9b2295a6dbe5b4d8fa90dc5b42a3dc217428a7c2d0caa910f2",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/11016899",
+      "bytes": 11016899,
+      "rangeBytes": 65536,
+      "rangeSha256": "504dd43547a655e19ab283da81a703e35922d380d604420c156c9a0dc5db5177",
+      "browserPlayback": false,
+      "sha256": "8208eac00fdda18dc02454324da2fec119a732699c3d3b10f17a5163230773e0",
+      "durationSeconds": 2630.426122,
+      "localFileRetained": false
+    },
+    "paperFileids": [
+      "LC099ALPA00EV.pdf",
+      "LC099GLPA00EV.pdf"
+    ]
+  },
+  {
+    "year": 2016,
+    "source": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2016 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/russian/2016",
+      "listingSha256": "77d9dc08c9a691599db81a3ac648425d1e0b8667cd410420975131d0c6c32cda",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/19836852",
+      "bytes": 19836852,
+      "rangeBytes": 65536,
+      "rangeSha256": "67a642616debb8fa9d91b80582b40576d2e9176efde7d22e659c7b0c37f9c452",
+      "browserPlayback": false,
+      "sha256": "776112e0f05899e75c34b7b18504dffe6bced2fbd0d1c08a0c24ab71389d1855",
+      "durationSeconds": 2479.44,
+      "localFileRetained": false
+    },
+    "paperFileids": [
+      "LC099ALPA00EV.pdf",
+      "LC099GLPA00EV.pdf"
+    ]
+  },
+  {
+    "year": 2015,
+    "source": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2015 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2015/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2015/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/russian/2015",
+      "listingSha256": "c712c152a086b8fe3d663537d032d8f024f9e87ec9cada110db69996a77635aa",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/67672910",
+      "bytes": 67672910,
+      "rangeBytes": 65536,
+      "rangeSha256": "1a24e7fd8db9e7633b16e38e10cb8b6b37ebdbb7e0dd79b949438f54e8edd476",
+      "browserPlayback": false,
+      "sha256": "f370457b7c9db227dec729b9919935b57737956da32999e9ae044bb71a4ae91d",
+      "durationSeconds": 2114.716719,
+      "localFileRetained": false
+    },
+    "paperFileids": [
+      "LC099ALPA00EV.pdf",
+      "LC099GLPA00EV.pdf"
+    ]
+  },
+  {
+    "year": 2014,
+    "source": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2014 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2014/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2014/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/russian/2014",
+      "listingSha256": "5491b8f3fe7c1dfd549fec07f0ba0027814666d66a8b646abd258a4965c911ab",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/66263552",
+      "bytes": 66263552,
+      "rangeBytes": 65536,
+      "rangeSha256": "cb4d80044d4fe27c271f3fc59e3cc116fe8d120b4d7e47ce044dded794f1541c",
+      "browserPlayback": false,
+      "sha256": "17ab46be7537b4773f80473378580d5bae37f8b3f76d5034b987b13e3b7f26a3",
+      "durationSeconds": 2760.90775,
+      "localFileRetained": false
+    },
+    "paperFileids": [
+      "LC099ALPA00EV.pdf",
+      "LC099GLPA00EV.pdf"
+    ]
+  },
+  {
+    "year": 2013,
+    "source": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2013 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2013/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2013/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/russian/2013",
+      "listingSha256": "15b48e71266310d6feb47941213e6a45bf72ca5ee4e8d21eea6de209806bf916",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/62237978",
+      "bytes": 62237978,
+      "rangeBytes": 65536,
+      "rangeSha256": "1a6b6539acf0450918391116891b79fc9959a9018213f27f2ac68336b8dfb05b",
+      "browserPlayback": false,
+      "sha256": "6d675888469b03abed165d621072185e5b30c1abf84b7516332acc64cda8ca3d",
+      "durationSeconds": 2593.1755,
+      "localFileRetained": false
+    },
+    "paperFileids": [
+      "LC099ALPA00EV.pdf",
+      "LC099GLPA00EV.pdf"
+    ]
+  },
+  {
+    "year": 2012,
+    "source": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/russian/2012",
+      "listingSha256": "59e72a5b314c8957ce67967b14786708f90b232a08f4a0b209090907013d804c",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/42826490",
+      "bytes": 42826490,
+      "rangeBytes": 65536,
+      "rangeSha256": "84acb31f691c3ef459a7922c0944cbf9b6a8716260c716c2349ec97cc056a9e6",
+      "browserPlayback": false,
+      "sha256": "6fc084dc3869092da29320ed8cf066cd69e49c5ee809de5bce240416f7161678",
+      "durationSeconds": 2676.558312,
+      "localFileRetained": false
+    },
+    "paperFileids": [
+      "LC099ALPA00EV.pdf",
+      "LC099GLPA00EV.pdf"
+    ]
+  },
+  {
+    "year": 2011,
+    "source": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2011 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/russian/2011",
+      "listingSha256": "644df9d8da570bf33774b22666bfaa68f6da3edbd6796784eedda1e48f703c36",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/36331405",
+      "bytes": 36331405,
+      "rangeBytes": 65536,
+      "rangeSha256": "c7f9ba1e49e9661036de4048dec795ab6103fa7079f985c7670b7c0614b20335",
+      "browserPlayback": false,
+      "sha256": "aa7f62d636044210af4e1cf3a01b04d336d2c8758fbeeb6a4367da31a2c76dee",
+      "durationSeconds": 2270.6155,
+      "localFileRetained": false
+    },
+    "paperFileids": [
+      "LC099ALPA00EV.pdf",
+      "LC099GLPA00EV.pdf"
+    ]
+  },
+  {
+    "year": 2010,
+    "source": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2010 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2010/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2010/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "verification": {
+      "verifiedAt": "2026-11-06",
+      "discoveredAt": "https://www.betterexams.ie/leaving-cert/russian/2010",
+      "listingSha256": "35699a39447bf14c506f6b3c47d1279a3c4b008630d6095e00ddfa5938083abc",
+      "status": "full-file-verified",
+      "contentType": "audio/mpeg",
+      "rangeStatus": 206,
+      "contentRange": "bytes 0-65535/33282392",
+      "bytes": 33282392,
+      "rangeBytes": 65536,
+      "rangeSha256": "fa21d9fdd92857a13a67bbb0058d495e50522d15d848ce72231575e1806d5d1e",
+      "browserPlayback": false,
+      "sha256": "b5e73346332a78a7716c784b5c6e5c2ee7f621909fb23048b0373af68846782c",
+      "durationSeconds": 2080.052187,
+      "localFileRetained": false
+    },
+    "paperFileids": [
+      "LC099ALPA00EV.pdf",
+      "LC099GLPA00EV.pdf"
+    ]
+  }
+]
