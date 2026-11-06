@@ -13,6 +13,8 @@ def normal(text):
 
 
 def claims(card):
+    if card.get('answerLanguageRule'):
+        yield card['answerLanguageRule']['sourceText']
     if card['kind'] == 'question':
         rows = [row for variant in card.get('answerVariants', []) for row in variant['rows']] or card['rows']
         for row in rows:
@@ -45,7 +47,8 @@ def verify(cards=None):
     for card in cards:
         level = 'hl' if card['level'] == 'higher' else 'ol'
         with fitz.open(ROOT / f"examiner-reports/russian/schemes/{card['year']}-{level}.pdf") as document:
-            pages = sorted(set(card['review']['schemePages'] + card['review'].get('guidancePages', [])))
+            pages = sorted(set(card['review']['schemePages'] + card['review'].get('guidancePages', [])
+                               + card.get('answerLanguageRule', {}).get('schemePages', [])))
             versions = ['\n'.join(document[p-1].get_text(sort=sort) for p in pages) for sort in (False,True)]
             sources = [normal(version) for version in versions]
         for claim in claims(card):
