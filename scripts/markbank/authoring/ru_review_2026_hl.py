@@ -415,8 +415,33 @@ def build():
             card['kind'] = 'question'
     cards.extend(writing(docs))
     cards.extend(listening(docs, P))
+    attach_language_rule(cards, docs['scheme'])
     assert len(cards) == 46
     return cards
+
+
+def attach_language_rule(cards, scheme):
+    """Apply the original Higher rule only to language-mandated responses.
+
+    The bilingual written comprehension permits Irish as well as English.
+    Number-matching, explicit three-language case naming and listening are
+    exempt. The 2026 whole-question grammar tariff currently has note-only
+    support; never manufacture a per-form price to enable the shared control.
+    """
+    source = 'Language of answer: ' + squash(between(page_text(scheme, 3), 'Language of answer:', 'Quality of English:'))
+    assert 'award NO marks' in source and 'listening comprehension' in source
+    for card in cards:
+        unit = card['section']
+        language_task = (unit in ('C1', 'C2', 'SE', 'GW') or
+                         (unit == 'LA1' and (card['year'] == 2026 or card['id'].endswith('-i'))) or
+                         (unit == 'LA2' and card['year'] == 2025 and card['id'].endswith('-i')) or
+                         (unit == 'GR' and card['year'] == 2025))
+        if language_task:
+            card['answerLanguageRule'] = {'otherLanguageMultiplier': 0, 'sourceText': source, 'schemePages': [3]}
+            if unit in ('C1', 'C2'):
+                card['notes'] += ' The original bilingual paper permits English or Irish; either is an accepted response language. Mark only answers in a language not permitted for this task as wrong-language.'
+        elif unit == 'GR':
+            card['notes'] += ' ' + source + ' This whole-question tariff currently has no numeric wrong-language control; apply the published rule when assessing the complete exercise.'
 
 
 def save_reviewed(cards):

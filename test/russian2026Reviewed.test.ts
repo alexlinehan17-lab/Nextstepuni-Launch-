@@ -7,7 +7,7 @@ import { REVIEWED_CARDS } from '../components/MarkBank/cards/russian/reviewed';
 import legacy from '../scripts/markbank/authored/russian.json';
 import sources from '../scripts/markbank/authoring/russian-reviewed-sources.json';
 import audio from '../data/russianAudio.json';
-import { languageMarks, languageScoreId, languageLengthId, languageGroupId, languageRowId } from '../components/MarkBank/languageScoring';
+import { languageMarks, languageScoreId, languageLengthId, languageGroupId, languageRowId, languageOtherLanguageId } from '../components/MarkBank/languageScoring';
 import { isRubricCard, tariffReconciles } from '../types/markBank';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import { PAPER_TRAIL_INDEX } from '../paperTrailData';
@@ -71,6 +71,23 @@ describe('Russian 2026 Higher independent source review', () => {
       scores[languageRowId(`answer-${n}`,'full')]=2;
     }
     expect(languageMarks(card,scores)).toBe(10);
+  });
+  it('applies the Higher zero-language rule only to mandated answers', () => {
+    expect(reviewedHigher.filter(card=>card.answerLanguageRule)).toHaveLength(18);
+    for(const card of reviewedHigher.filter(card=>card.answerLanguageRule)) {
+      expect(card.answerLanguageRule?.otherLanguageMultiplier).toBe(0);
+      expect(card.answerLanguageRule?.schemePages).toEqual([3]);
+    }
+    for(const suffix of ['la2-i','la2-ii','sd','gr','l1-1-i']) expect(get(suffix).answerLanguageRule).toBeUndefined();
+    expect(ORDINARY.every(card=>!card.answerLanguageRule)).toBe(true);
+    expect(get('c1-1-i').notes).toContain('permits English or Irish');
+    expect(get('gr').notes).toContain('no numeric wrong-language control');
+    const card=get('c2-1');
+    if(!isRubricCard(card)) throw new Error('Missing summary rubric');
+    const scores={ [languageGroupId('answer-1')]:1,[languageRowId('answer-1','full')]:2,
+      [languageGroupId('answer-2')]:1,[languageRowId('answer-2','full')]:2 };
+    expect(languageMarks(card,scores)).toBe(4);
+    expect(languageMarks(card,{...scores,[languageOtherLanguageId('row:answer-1:full')]:1})).toBe(2);
   });
   it('binds every task to reachable original-paper and scheme anchors', () => {
     for(const source of sources) {

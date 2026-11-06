@@ -44,8 +44,15 @@
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Read the complete printed source and instructions before answering."
     },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish.",
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish. The original bilingual paper permits English or Irish; either is an accepted response language. Mark only answers in a language not permitted for this task as wrong-language.",
     "kind": "question",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
     "specVersion": "lc-russian-syllabus",
@@ -112,8 +119,15 @@
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Read the complete printed source and instructions before answering."
     },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish.",
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish. The original bilingual paper permits English or Irish; either is an accepted response language. Mark only answers in a language not permitted for this task as wrong-language.",
     "kind": "question",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
     "specVersion": "lc-russian-syllabus",
@@ -182,8 +196,15 @@
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Read the complete printed source and instructions before answering."
     },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish.",
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish. The original bilingual paper permits English or Irish; either is an accepted response language. Mark only answers in a language not permitted for this task as wrong-language.",
     "kind": "question",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
     "specVersion": "lc-russian-syllabus",
@@ -254,8 +275,15 @@
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Read the complete printed source and instructions before answering."
     },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish.",
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish. The original bilingual paper permits English or Irish; either is an accepted response language. Mark only answers in a language not permitted for this task as wrong-language.",
     "kind": "question",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
     "specVersion": "lc-russian-syllabus",
@@ -324,8 +352,15 @@
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Read the complete printed source and instructions before answering."
     },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish.",
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish. The original bilingual paper permits English or Irish; either is an accepted response language. Mark only answers in a language not permitted for this task as wrong-language.",
     "kind": "question",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
     "specVersion": "lc-russian-syllabus",
@@ -396,8 +431,15 @@
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Read the complete printed source and instructions before answering."
     },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish.",
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish. The original bilingual paper permits English or Irish; either is an accepted response language. Mark only answers in a language not permitted for this task as wrong-language.",
     "kind": "question",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
     "specVersion": "lc-russian-syllabus",
@@ -466,8 +508,15 @@
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Read the complete printed source and instructions before answering."
     },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish.",
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish. The original bilingual paper permits English or Irish; either is an accepted response language. Mark only answers in a language not permitted for this task as wrong-language.",
     "kind": "question",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
     "specVersion": "lc-russian-syllabus",
@@ -534,8 +583,15 @@
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Read the complete printed source and instructions before answering."
     },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish.",
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish. The original bilingual paper permits English or Irish; either is an accepted response language. Mark only answers in a language not permitted for this task as wrong-language.",
     "kind": "question",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
     "specVersion": "lc-russian-syllabus",
@@ -605,8 +661,15 @@
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Read the complete printed source and instructions before answering."
     },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish.",
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish. The original bilingual paper permits English or Irish; either is an accepted response language. Mark only answers in a language not permitted for this task as wrong-language.",
     "kind": "question",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
     "specVersion": "lc-russian-syllabus",
@@ -671,8 +734,15 @@
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Read the complete printed source and instructions before answering."
     },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish.",
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4, 5. Answer in English or Irish. The original bilingual paper permits English or Irish; either is an accepted response language. Mark only answers in a language not permitted for this task as wrong-language.",
     "kind": "question",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
     "specVersion": "lc-russian-syllabus",
@@ -744,6 +814,13 @@
     },
     "notes": "Source reviewed against the original paper and marking scheme, pages 6.",
     "kind": "question",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
     "specVersion": "lc-russian-syllabus",
@@ -829,6 +906,13 @@
     },
     "notes": "Source reviewed against the original paper and marking scheme, pages 6.",
     "kind": "question",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
     "specVersion": "lc-russian-syllabus",
@@ -1022,7 +1106,7 @@
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Read the complete printed source and instructions before answering."
     },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 7, 8, 9.",
+    "notes": "Source reviewed against the original paper and marking scheme, pages 7, 8, 9. The original bilingual paper permits English or Irish; either is an accepted response language. Mark only answers in a language not permitted for this task as wrong-language.",
     "kind": "rubric",
     "rubric": {
       "system": "language-points",
@@ -1304,6 +1388,13 @@
         }
       ]
     },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
     "specVersion": "lc-russian-syllabus",
@@ -1351,7 +1442,7 @@
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Read the complete printed source and instructions before answering."
     },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 7, 8, 9.",
+    "notes": "Source reviewed against the original paper and marking scheme, pages 7, 8, 9. The original bilingual paper permits English or Irish; either is an accepted response language. Mark only answers in a language not permitted for this task as wrong-language.",
     "kind": "rubric",
     "rubric": {
       "system": "language-points",
@@ -1650,6 +1741,13 @@
         }
       ]
     },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
     "specVersion": "lc-russian-syllabus",
@@ -1697,7 +1795,7 @@
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Read the complete printed source and instructions before answering."
     },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 7, 8, 9.",
+    "notes": "Source reviewed against the original paper and marking scheme, pages 7, 8, 9. The original bilingual paper permits English or Irish; either is an accepted response language. Mark only answers in a language not permitted for this task as wrong-language.",
     "kind": "rubric",
     "rubric": {
       "system": "language-points",
@@ -1894,6 +1992,13 @@
         }
       ]
     },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
     "specVersion": "lc-russian-syllabus",
@@ -1941,7 +2046,7 @@
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Read the complete printed source and instructions before answering."
     },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 7, 8, 9.",
+    "notes": "Source reviewed against the original paper and marking scheme, pages 7, 8, 9. The original bilingual paper permits English or Irish; either is an accepted response language. Mark only answers in a language not permitted for this task as wrong-language.",
     "kind": "rubric",
     "rubric": {
       "system": "language-points",
@@ -2204,6 +2309,13 @@
             }
           ]
         }
+      ]
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
       ]
     },
     "source": "sec",
@@ -2515,7 +2627,7 @@
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Read the complete printed source and instructions before answering."
     },
-    "notes": "Source reviewed against the original paper and marking scheme, pages 12. The scheme gives 30 marks for the complete exercise and does not print a per-form tariff. Answers are either right or wrong; misspelled/transcribed forms and wrong verb tenses receive no marks.",
+    "notes": "Source reviewed against the original paper and marking scheme, pages 12. The scheme gives 30 marks for the complete exercise and does not print a per-form tariff. Answers are either right or wrong; misspelled/transcribed forms and wrong verb tenses receive no marks. Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks. This whole-question tariff currently has no numeric wrong-language control; apply the published rule when assessing the complete exercise.",
     "kind": "question",
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
@@ -2854,6 +2966,13 @@
         }
       ]
     },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
+      ]
+    },
     "source": "sec",
     "paperFileid": "LC099ALP000BV",
     "specVersion": "lc-russian-syllabus",
@@ -3166,6 +3285,13 @@
             "Deduct 2 marks from candidates who randomly use/fail to use soft sign in present tense forms or infinitives."
           ]
         }
+      ]
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0,
+      "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
+      "schemePages": [
+        3
       ]
     },
     "source": "sec",

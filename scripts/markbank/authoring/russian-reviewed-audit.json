@@ -1214,7 +1214,7 @@
         }
       ],
       "validation": {
-        "sourceSlicesVerified": 462,
+        "sourceSlicesVerified": 480,
         "reviewedCardTests": 7,
         "requiredPreservationCurriculumDeckAndReviewedTests": 239,
         "russianCoverageTests": 3,
@@ -1224,6 +1224,18 @@
         "deterministicRegenerations": 2,
         "otherSubjectDecksAndAtlasRecords": "preserved",
         "wholeBankCoverage": "Six pre-existing failures outside Russian: Home Economics and Maths counts; Business, Home Economics, Maths and Physics content hashes. Other subject baselines left unchanged."
+      },
+      "answerLanguageReview": {
+        "schemePage": 3,
+        "zeroCreditRules": 18,
+        "acceptedLanguages": "Bilingual comprehension accepts English or Irish; explicit Irish/English/Russian case-naming task unchanged.",
+        "exemptions": [
+          "listening",
+          "number-matching tasks",
+          "explicit multiple-language answers"
+        ],
+        "grammarLimitation": "Whole-question30-mark tariff retains the source rule as a visible note; numeric wrong-language control is not supported for this tariff.",
+        "ordinaryBoundary": "Original2026Ordinary scheme p3 says not to penalise answers supplied in Russian; no Higher rule is inherited."
       }
     },
     {
