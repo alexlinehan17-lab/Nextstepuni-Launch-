@@ -79,6 +79,7 @@ import { CARDS as RUSSIAN_HIGHER } from '../components/MarkBank/cards/russian/hi
 import { CARDS as RUSSIAN_ORDINARY } from '../components/MarkBank/cards/russian/ordinary';
 import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
+import japanese2026HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2026-hl-census.json';
 import { CARDS as POLISH_HIGHER } from '../components/MarkBank/cards/polish/higher';
 import { CARDS as POLISH_ORDINARY } from '../components/MarkBank/cards/polish/ordinary';
 import { CARDS as PORTUGUESE_HIGHER } from '../components/MarkBank/cards/portuguese/higher';
@@ -1357,6 +1358,9 @@ const homeEconomicsAdditionIds = new Set([
   'he-2023-hl-deferred-sc-q4aiii', 'he-2023-hl-deferred-sc-q4bi', 'he-2023-hl-deferred-sc-q4bii',
   'he-2023-hl-deferred-sc-q4ci', 'he-2023-hl-deferred-sc-q4cii',
 ]);
+// Reviewed 2026 HL adds 71 independently inventoried tasks; the original 600 stay frozen.
+const japaneseAdditionIds = new Set(japanese2026HigherCensus.tasks.map(task =>
+  `ja-2026-hl-${task.key.filter(part => part !== null).join('-').toLowerCase()}`));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
   if (name.startsWith('maths:')) {
@@ -1373,6 +1377,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
       ...economicsAliasIds.filter(id => id.includes(level)),
     ];
   }
+  if (name.startsWith('japanese:')) return ids.filter(id => !japaneseAdditionIds.has(id));
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
   if (name.startsWith('biology:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
@@ -1421,6 +1426,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
 };
 const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
   name.startsWith('maths:') ? cards.filter(card => mathsFrozen.has(card.id)).length
+    : name.startsWith('japanese:') ? cards.filter(card => !japaneseAdditionIds.has(card.id)).length
     : name.startsWith('home-economics:') ? cards.filter(card => !homeEconomicsAdditionIds.has(card.id)).length
     : name.startsWith('economics:') ? cards.filter(card => !economicsAdditionIds.has(card.id)).length
     : name.startsWith('agricultural-science:') ? cards.filter(card => !agriAdditionIds.has(card.id)).length
@@ -1541,7 +1547,7 @@ describe('Mark Bank card preservation', () => {
       name.startsWith('economics:') || name.startsWith('agricultural-science:') || name.startsWith('construction-studies:')
         || name.startsWith('geography:') || name.startsWith('english:') || name.startsWith('biology:')
         || name.startsWith('chemistry:') || name.startsWith('maths:') || name.startsWith('physics:')
-        || name.startsWith('home-economics:')
+        || name.startsWith('home-economics:') || name.startsWith('japanese:')
         ? frozenIds(name, cards).length - cards.length : 0;
     const artNet = artAdded('higher') + artAdded('ordinary') - artAliasIds.length;
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
@@ -1556,7 +1562,8 @@ describe('Mark Bank card preservation', () => {
         + englishAdditionIds.size - englishAliasIds.length
         + biologyAdditionIds.size - biologyAliasIds.length
         + chemistryAdded.size - chemistryWithdrawnShipped.length + mathsNet
-        + physicsAdditionIds.size - physicsAliasIds.length + homeEconomicsAdditionIds.size - homeEconomicsAliasIds.length);
+        + physicsAdditionIds.size - physicsAliasIds.length + homeEconomicsAdditionIds.size - homeEconomicsAliasIds.length
+        + japaneseAdditionIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

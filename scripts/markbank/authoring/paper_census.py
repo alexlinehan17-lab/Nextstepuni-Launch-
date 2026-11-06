@@ -1885,6 +1885,12 @@ def census_ja(subject, year, level):
 
     P = JaPaper(year, level, subject)
     S = JaScheme(year, level, subject)
+    from ja_review_census import reviewed_census
+    reviewed = reviewed_census(year, level)
+    if reviewed:
+        P.reviewed_task_census = reviewed
+        texts = {tuple(task['key']): f"Original {task['component']} task, pages {task['paperPages']}; scheme pages {task['schemePages']}; {task['marks']} marks" for task in reviewed['tasks']}
+        return set(texts), texts, [P.path, P.aural_path], P, S
     texts = {}
     for ask in P.all_asks():
         texts[ask.key] = ask.text
@@ -3658,8 +3664,14 @@ def census_subject(subject):
                 flags += ru_flags(P_, S_, claimed_)
                 marks = {(None, 0): lang_cover_marks(files)}
             elif cfg.get('walker') == 'ja':
-                flags += ja_flags(P_, S_)
-                marks = {(None, 0): lang_cover_marks(files)}
+                if getattr(P_, 'reviewed_task_census', None):
+                    # The source-pinned physical sweep owns these boundaries;
+                    # item-level parser mismatches remain diagnostic elsewhere.
+                    flags = []
+                    marks = {(None, 0): P_.reviewed_task_census['checksums']['total']}
+                else:
+                    flags += ja_flags(P_, S_)
+                    marks = {(None, 0): lang_cover_marks(files)}
             elif cfg.get('walker') == 'lat':
                 flags += lat_flags(P_, S_)
                 # The paper's own total changed with the 2023 syllabus: 300

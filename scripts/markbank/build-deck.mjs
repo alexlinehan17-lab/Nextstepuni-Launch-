@@ -966,7 +966,16 @@ for (const id of Object.keys(subjectSourceBindings)) {
 
 const appliedCorrections = [];
 const cards = [];
+// These two authored Japanese candidates were absent from the frozen served
+// deck. A later generic provenance improvement must not silently publish an
+// unreviewed older sitting during the 2026 source review. They remain OPEN in
+// the paper ledger until their 2021 Ordinary source review resolves them.
+const pendingJapaneseCandidates = new Set(['ja-2021-ol-2b-ii', 'ja-2021-ol-3a-4-iv']);
 for (const raw of rawCards) {
+  if (SUBJECT_ID === 'japanese' && pendingJapaneseCandidates.has(raw.id)) {
+    appliedCorrections.push(`${raw.id}: unshipped legacy candidate; awaiting its original-paper review`);
+    continue;
+  }
   if (repairedFrenchIds.has(raw.id)) {
     appliedCorrections.push(`${raw.id}: preserved in the visually reviewed reading deck`);
     continue;
@@ -1745,7 +1754,8 @@ if (businessRubrics.length) {
 // Subject-specific imports for the generated module. A subject with none gets
 // no line for them, so its module stays byte-identical to the one it had
 // before French and Applied Maths added theirs.
-const moduleImports = SUBJECT_ID === 'applied-maths' ? "import { withReviewedCards } from './reviewed';"
+const reviewedOverlaySubject = ['applied-maths', 'japanese'].includes(SUBJECT_ID);
+const moduleImports = reviewedOverlaySubject ? "import { withReviewedCards } from './reviewed';"
   : SUBJECT_ID === 'french' ? "import { writingCardsForLevel } from './writing';\nimport { readingCardsForLevel } from './reading';\nimport { clozeCardsForLevel } from './cloze';\nimport { listeningCardsForLevel } from './listening';\n"
     : businessRubrics.length ? "import { businessRubricCards } from './rubric';\n" : '';
 // Cards carrying exam-year curriculum nodes (Agricultural Science's reviewed
@@ -1780,9 +1790,9 @@ const base = {
   qa: { gates: ['verbatim', 'tariff', 'figure'], humanReviewedBy: 'agent-verified', humanReviewedAt: '2026-07-31' },
 };
 ` : ''}
-export const CARDS: SecCard[] = ${SUBJECT_ID === 'applied-maths' ? 'withReviewedCards(' : ''}[
+export const CARDS: SecCard[] = ${reviewedOverlaySubject ? 'withReviewedCards(' : ''}[
 ${cards.join('\n')}
-${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readingCardsForLevel(${q(level)}),\n  ...clozeCardsForLevel(${q(level)}),\n  ...listeningCardsForLevel(${q(level)}),\n` : businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : ''}]${SUBJECT_ID === 'applied-maths' ? `, '${level}')` : ''};
+${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readingCardsForLevel(${q(level)}),\n  ...clozeCardsForLevel(${q(level)}),\n  ...listeningCardsForLevel(${q(level)}),\n` : businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : ''}]${reviewedOverlaySubject ? `, '${level}')` : ''};
 `;
 
 /* A level gets a module when the subject HAS that level, never as a matter of
@@ -1798,13 +1808,13 @@ for (const level of LEVELS) {
   const path = resolve(OUT_DIR, `${level}.ts`);
   if (!levelCards.length && !levelRubrics && !existsSync(path)) continue;
   writeFileSync(path, moduleFor(level, levelCards));
-  const reviewedIds = SUBJECT_ID === 'applied-maths'
+  const reviewedIds = reviewedOverlaySubject
     ? JSON.parse(readFileSync(resolve(OUT_DIR, 'reviewed.json'), 'utf8')).filter(card => card.level === level).map(card => card.id) : [];
   const originalIds = levelCards.map(code => code.match(/^    id: "([^"]+)"/m)?.[1]).filter(Boolean);
   const additionsCount = SUBJECT_ID === 'french'
     ? ['writing.json', 'reading.json', 'cloze.json', 'listening.json'].flatMap(name => JSON.parse(readFileSync(resolve(OUT_DIR, name), 'utf8'))).filter(card => card.level === level).length
     : 0;
-  sizes[level] = SUBJECT_ID === 'applied-maths' ? new Set([...originalIds, ...reviewedIds]).size : levelCards.length + additionsCount + levelRubrics;
+  sizes[level] = reviewedOverlaySubject ? new Set([...originalIds, ...reviewedIds]).size : levelCards.length + additionsCount + levelRubrics;
   process.stderr.write(`  ${level}: ${sizes[level]} cards -> components/MarkBank/cards/${SUBJECT_ID}/${level}.ts\n`);
 }
 

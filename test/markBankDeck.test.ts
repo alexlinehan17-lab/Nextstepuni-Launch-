@@ -28,6 +28,7 @@ import { comparableScheme, claimMatches, normalise } from '../scripts/markbank/s
 import { questionStandsAlone } from '../scripts/markbank/questionText.mjs';
 import { reviewedPhysicsSource } from '../scripts/markbank/physicsSources.mjs';
 import { reviewedHomeEconomicsSource } from '../scripts/markbank/homeEconomicsSources.mjs';
+import { audioQuestionPaperFileid } from '../scripts/markbank/audioMaterial.mjs';
 import { createHash } from 'node:crypto';
 
 import { STRANDS, CHEMISTRY_STRANDS, PHYSICS_STRANDS, ALL_TOPICS, SUBJECTS, BLOCKED_FIGURES, deckSize } from '../components/MarkBank/deck';
@@ -552,9 +553,9 @@ describe('every card points at the question paper it came from', () => {
           ? { paperFileid: c.sourceMaterial.sourceFileid, schemeFileid: c.mathematicsScale.schemeFileid }
           : c.subjectId === 'physics' ? reviewedPhysicsSource(c.id)
           : c.subjectId === 'home-economics' ? reviewedHomeEconomicsSource(c.id) : undefined;
-        const expected = source
+        const expected = audioQuestionPaperFileid(c, c.subjectId) ?? (source
           ? resolveIndexedPaperFileid(c.subjectId, c.year, c.level, source)
-          : resolvePaperFileid(corpusSubjectFor(c.subjectId, c.questionRef), c.year, c.level, sourceSection);
+          : resolvePaperFileid(corpusSubjectFor(c.subjectId, c.questionRef), c.year, c.level, sourceSection));
         return c.paperFileid !== null && c.paperFileid !== expected;
       })
       .map(c => `${c.questionRef} (Section ${c.section}) -> ${c.paperFileid}`);
