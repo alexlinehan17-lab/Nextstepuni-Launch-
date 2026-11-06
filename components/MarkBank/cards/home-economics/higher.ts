@@ -27572,4 +27572,1788 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sa-q1", topicId: "home-economics-0-5", conceptId: "sa-q1",
+    section: "A", questionRef: "2010 HL Section A Q1",
+    questionText: "Complete the following in relation to the digestion of proteins.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "cell-2", kind: "point", verbatim: "Enzyme — Trypsin", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "cell-3", kind: "point", verbatim: "Substrate — Protein/Peptones", marks: null },
+    { id: "cell-4", kind: "point", verbatim: "Product — Peptones/Peptides/ Amino Acids", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2010-hl-sa-q1",
+          "src": "/exam-figures/home-economics/home-economics-2010-hl-sa-q1.png",
+          "srcHash": "8e9651762b80fb5795a4944682b8c696",
+          "alt": "Original protein-digestion question and table. Given cells: Organ / Gland, Pancreas; Secretion, Pancreatic Juice. Blank answer columns: Enzyme, Substrate and Product.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sa-q2", topicId: "home-economics-0-6", conceptId: "sa-q2",
+    section: "A", questionRef: "2010 HL Section A Q2",
+    questionText: "Name three properties of sugar and state one culinary use of each.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "pair-1", kind: "point", verbatim: "Sweetener / flavouring — Cakes, desserts, beverages", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "pair-2", kind: "point", verbatim: "Preservative — Jam", marks: null },
+    { id: "pair-3", kind: "point", verbatim: "Caramelisation — Desserts", marks: null },
+    { id: "pair-4", kind: "point", verbatim: "Fermentation — Bread making", marks: null },
+    { id: "pair-5", kind: "point", verbatim: "Gel formation — Jam", marks: null },
+    { id: "pair-6", kind: "point", verbatim: "Maillard reaction — Browning of food", marks: null },
+    { id: "pair-7", kind: "point", verbatim: "Inversion — Jam", marks: null },
+    { id: "pair-8", kind: "point", verbatim: "Crystallisation — Confectionary", marks: null },
+    { id: "pair-9", kind: "point", verbatim: "Solubility — Syrups", marks: null },
+    { id: "pair-10", kind: "point", verbatim: "Assists aeration — Sponges", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2010-hl-sa-q2",
+          "src": "/exam-figures/home-economics/home-economics-2010-hl-sa-q2.png",
+          "srcHash": "ee9885900f1d0e8e8b457316798295e8",
+          "alt": "Original question and three-row blank sugar-properties table. Columns: Property and Culinary use. The student selects three properties and a matching use for each.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sa-q3", topicId: "home-economics-0-8", conceptId: "sa-q3",
+    section: "A", questionRef: "2010 HL Section A Q3",
+    questionText: "State two functions of folate (folic acid) in the diet.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "answer-1", kind: "point", verbatim: "essential for the manufacture of DNA and RNA", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "answer-2", kind: "point", verbatim: "helps vitamin B12 form red blood cells", marks: null },
+    { id: "answer-3", kind: "point", verbatim: "essential for the development of the brain and spinal cord in the foetus", marks: null },
+    { id: "answer-4", kind: "point", verbatim: "prevents neural tube defects e.g. spina bifida", marks: null },
+    { id: "answer-5", kind: "point", verbatim: "supports the functions of the immune system", marks: null },
+    { id: "answer-6", kind: "point", verbatim: "may play a role in prevention of CHD and / some cancers", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sa-q4", topicId: "home-economics-0-1", conceptId: "sa-q4",
+    section: "A", questionRef: "2010 HL Section A Q4",
+    questionText: "List three main functions of energy in the body.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "answer-1", kind: "point", verbatim: "basal metabolism", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "answer-2", kind: "point", verbatim: "growth", marks: null },
+    { id: "answer-3", kind: "point", verbatim: "physical activity", marks: null },
+    { id: "answer-4", kind: "point", verbatim: "functioning of internal organs", marks: null },
+    { id: "answer-5", kind: "point", verbatim: "production of heat to maintain body temperature", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sa-q5", topicId: "home-economics-0-9", conceptId: "sa-q5",
+    section: "A", questionRef: "2010 HL Section A Q5",
+    questionText: "State the role of each of the following in relation to the processing of cheese. lactic acid bacteria rennet",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "lactic", kind: "point", verbatim: "lactic acid bacteria Starter culture / changes lactose to lactic acid / acts as a preservative", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "rennet", kind: "point", verbatim: "rennet Contains an enzyme that coagulates the milk protein caseinogen into curds", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sa-q6", topicId: "home-economics-0-3", conceptId: "sa-q6",
+    section: "A", questionRef: "2010 HL Section A Q6",
+    questionText: "Name two types of pastry. State one difference between the types of pastry named.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "type-1", kind: "point", verbatim: "short crust", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "type-2", kind: "point", verbatim: "rough puff", marks: null },
+    { id: "type-3", kind: "point", verbatim: "puff", marks: null },
+    { id: "type-4", kind: "point", verbatim: "flaky", marks: null },
+    { id: "type-5", kind: "point", verbatim: "choux", marks: null },
+    { id: "type-6", kind: "point", verbatim: "suet", marks: null },
+    { id: "type-7", kind: "point", verbatim: "filo", marks: null },
+    { id: "type-8", kind: "point", verbatim: "biscuit", marks: null },
+    { id: "type-9", kind: "point", verbatim: "cheese etc.", marks: null },
+    { id: "comparison", kind: "point", verbatim: "Accept differences in terms of ingredients used, proportions, method of making, characteristics / appearance of the pastry etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sa-q7", topicId: "home-economics-0-11", conceptId: "sa-q7",
+    section: "A", questionRef: "2010 HL Section A Q7",
+    questionText: "State the function of two of the physical conditioning agents named below.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "agent-1", kind: "point", verbatim: "Humectants — Prevents food drying out", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "agent-2", kind: "point", verbatim: "Polyphosphates — Prevents lumping (anti-caking), increases water retention", marks: null },
+    { id: "agent-3", kind: "point", verbatim: "Stabilisers — Prevents emulsions from separating", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2010-hl-sa-q7",
+          "src": "/exam-figures/home-economics/home-economics-2010-hl-sa-q7.png",
+          "srcHash": "f87d0c30319593c6b0aa14440beb8046",
+          "alt": "Original question and conditioning-agent table. Required choice: two of Humectants, Polyphosphates and Stabilisers; blank Function column.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sa-q8", topicId: "home-economics-0-4", conceptId: "sa-q8",
+    section: "A", questionRef: "2010 HL Section A Q8",
+    questionText: "Outline three benefits of implementing a HACCP system.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "answer-1", kind: "point", verbatim: "eliminates or reduces potential hazards / produces a safer product", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "answer-2", kind: "point", verbatim: "workers are focused on food safety", marks: null },
+    { id: "answer-3", kind: "point", verbatim: "legal requirements for safety are fulfilled, records provide evidence of efforts to improve food safety, records can influence future planning re safety, time and money", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sa-q9", topicId: "home-economics-1-3", conceptId: "sa-q9",
+    section: "A", questionRef: "2010 HL Section A Q9",
+    questionText: "State the function of each of the following parts of the refrigerator. Refrigerant Condenser",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "refrigerant", kind: "point", verbatim: "Refrigerant Draws heat from inside the refrigerator thereby reducing its temperature/the refrigerant evaporates by removing heat.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "condenser", kind: "point", verbatim: "Condenser Converts the gaseous refrigerant to a liquid.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sa-q10", topicId: "home-economics-1-4", conceptId: "sa-q10",
+    section: "A", questionRef: "2010 HL Section A Q10",
+    questionText: "Identify three desirable performance properties in textiles.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "answer-1", kind: "point", verbatim: "colour fast", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "answer-2", kind: "point", verbatim: "absorbent", marks: null },
+    { id: "answer-3", kind: "point", verbatim: "warm", marks: null },
+    { id: "answer-4", kind: "point", verbatim: "strong", marks: null },
+    { id: "answer-5", kind: "point", verbatim: "drapes well", marks: null },
+    { id: "answer-6", kind: "point", verbatim: "fade resistant", marks: null },
+    { id: "answer-7", kind: "point", verbatim: "stain resistant", marks: null },
+    { id: "answer-8", kind: "point", verbatim: "crease resistant", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sa-q11", topicId: "home-economics-1-2", conceptId: "sa-q11",
+    section: "A", questionRef: "2010 HL Section A Q11",
+    questionText: "Explain how borrowers are protected by the Consumer Credit Act (1995). Give two points.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "answer-1", kind: "point", verbatim: "credit advertisements must show APR, deposit required, instalments, extra charges, restrictions, cash price, total cost of credit etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. This is the historical legislation named in the 2010 paper." },
+    { id: "answer-2", kind: "point", verbatim: "10 day “cooling off” period", marks: null },
+    { id: "answer-3", kind: "point", verbatim: "credit agreements must be in writing, costs and penalties must be outlined", marks: null },
+    { id: "answer-4", kind: "point", verbatim: "certain practices not allowed e.g. lenders visiting borrowers in their workplace", marks: null },
+    { id: "answer-5", kind: "point", verbatim: "act transfers the responsibility for the control of bank charges from the Central Bank to the Director of Consumer Affairs therefore there is openness and transparency for the consumer.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sa-q12", topicId: "home-economics-1-5", conceptId: "sa-q12",
+    section: "A", questionRef: "2010 HL Section A Q12",
+    questionText: "What information does each of the following symbols convey to the consumer?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "green-dot", kind: "point", verbatim: "Green Dot — Packaging suppliers are committed to protecting the environment and have made a financial contribution to the cost of recycling the packaging waste… used only in Ireland by members of Repak", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "eco-label", kind: "point", verbatim: "Eco Label — Products that have this label cause minimum damage to the environment…", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2010-hl-sa-q12",
+          "src": "/exam-figures/home-economics/home-economics-2010-hl-sa-q12.png",
+          "srcHash": "698ec2526da96528d76ec6f6c0633fae",
+          "alt": "Original consumer-symbol question. Green Dot logo with two interlocking circular arrows and Eco Label flower logo with EU stars; both printed captions and answer spaces retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper, page 5 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sb-q1ai", topicId: "home-economics-0-11", conceptId: "sb-q1a",
+    section: "B", questionRef: "2010 HL Section B Q1(a)(i)",
+    stem: "Estimates of the distribution of Irish agri-food and drink exports in 2008 by sector are shown below.",
+    questionText: "Comment and elaborate on the distribution (%) of Irish food and drink exports as shown above. In your answer refer to four sectors.",
+    tariffModel: {"kind":"fixed","notation":"4 points @ 5 marks each"}, totalMarks: 20,
+    rows: [
+    { id: "sectors", kind: "anyN", verbatim: "Four sectors", marks: 20, contextNote: "Comment and elaborate on four different sectors using the original graph.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Dairy products – includes butter, cheese, cream, milk powder, dairy spreads, yoghurt, ice cream; exports widely; dairy farming, milk and other dairy products make up the largest share of agricultural exports etc.","Beef – Ireland is one of the largest exporters of beef to many different countries; high demand due to high standards of production and traceability etc.","Prepared foods – exports a wide range of convenience foods; includes ready meals, single portion products, pizzas, sauces etc., fastest growing sector of the Irish food industry; many of the companies are small companies; changing lifestyles, smaller households and travel have increased the demand for convenience foods and foods from other countries and Irish food industry has responded to these demands etc.","Beverages – includes non-alcoholic drinks such as spring water, fruit juices, soft drinks and alcoholic drinks such as whiskey, cider and cream liqueur e.g. Baileys; some companies have moved from Ireland to countries with a cheaper labour force etc.","Seafood – includes shellfish, fresh fish and processed fish e.g. smoked salmon, breaded fish and prepared meals. Ireland has an extensive coastline and easy access to relatively unpolluted waters and has a reputation for high quality fish and fish products; aquaculture /fish farming is a growing sector within this industry etc.","Pig meat – includes pork, bacon and pork products. UK is the main market for exports; also exported to the EU, US and Japan etc.","Other – includes edible horticulture i.e. fruit and vegetables, potatoes, cereals, confectionery; processed mushrooms and chilled potato products also produced; the Irish climate and soil conditions are ideal for the growth of products e.g. mushrooms, potatoes, salad ingredients; Ireland has high quality cereal production and milling industry – products include a wide range of breads, handmade chocolates and biscuits etc."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2010-hl-sb-q1-exports",
+          "src": "/exam-figures/home-economics/home-economics-2010-hl-sb-q1-exports.png",
+          "srcHash": "39081bfe14917a1c76393100510378cd",
+          "alt": "Original Bord Bia pie chart, Breakdown of Irish food and drink exports, 2008 (%). Dairy Products 29%, Beef 21%, Prepared Foods 18%, Beverages 15%, Pigmeat 4%, Seafood 4%, Other 9%. Complete title, seven sectors, labels and source caption retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sb-q1aii", topicId: "home-economics-0-11", conceptId: "sb-q1a",
+    section: "B", questionRef: "2010 HL Section B Q1(a)(ii)",
+    stem: "Estimates of the distribution of Irish agri-food and drink exports in 2008 by sector are shown below.",
+    questionText: "Give details of career opportunities available within one of the sectors named.",
+    tariffModel: {"kind":"fixed","notation":"2 points @ 2 marks each"}, totalMarks: 4,
+    rows: [
+    { id: "careers", kind: "anyN", verbatim: "Career opportunities", marks: 4, contextNote: "Two source points within one chosen sector; retain the paper’s sector context.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Farmers","fishermen","horticulturist","butcher/abattoir worker","baker/confectioner","chef","cheese makers","marketing","advertising industry","retailers","careers in hotel and catering industry","dietician","food technologist","food technician","product developer","production","support services"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2010-hl-sb-q1-exports",
+          "src": "/exam-figures/home-economics/home-economics-2010-hl-sb-q1-exports.png",
+          "srcHash": "39081bfe14917a1c76393100510378cd",
+          "alt": "Original Bord Bia pie chart, Breakdown of Irish food and drink exports, 2008 (%). Dairy Products 29%, Beef 21%, Prepared Foods 18%, Beverages 15%, Pigmeat 4%, Seafood 4%, Other 9%. Complete title, seven sectors, labels and source caption retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sb-q1b", topicId: "home-economics-0-8", conceptId: "sb-q1b",
+    section: "B", questionRef: "2010 HL Section B Q1(b)",
+    stem: "Estimates of the distribution of Irish agri-food and drink exports in 2008 by sector are shown below.",
+    questionText: "Meat makes an important contribution to the intake of micronutrients such as iron. Give an account of iron and refer to: • sources in the diet • biological functions • recommended daily allowance (RDA) for adults.",
+    tariffModel: {"kind":"fixed","notation":"3 sources × 3 + 3 functions × 3 + RDA 3"}, totalMarks: 21,
+    rows: [
+    { id: "sources", kind: "anyN", verbatim: "Sources", marks: 9, openList: true, group: {"claimMax":3,"perOption":3,"options":["Haem iron found in red meats","chicken","offal","broccoli","cereals","eggs","leafy green vegetables and pulses","tofu","dried fruits","fish","cocoa","plain chocolate","Guinness","curry powder"]} },
+    { id: "functions", kind: "anyN", verbatim: "Functions", marks: 9, openList: true, group: {"claimMax":3,"perOption":3,"options":["Essential component of haemoglobin in red blood cells which carries oxygen to the cells","forms part of myoglobin, which is an oxygen carrier","essential component of enzyme system which is important in the use of oxygen to release energy from food","essential for the immune system and brain development","prevents anaemia","aids the transfer of electrons."]} },
+    { id: "rda", kind: "point", verbatim: "RDA adults 10-14mg, pregnancy/lactation 15mg", marks: 3, contextNote: "Historical source RDA, as printed in the 2010 scheme." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sb-q1c", topicId: "home-economics-0-8", conceptId: "sb-q1c",
+    section: "B", questionRef: "2010 HL Section B Q1(c)",
+    stem: "Estimates of the distribution of Irish agri-food and drink exports in 2008 by sector are shown below.",
+    questionText: "Identify and explain three factors which affect the absorption of iron in the body.",
+    tariffModel: {"kind":"fixed","notation":"3 points @ 5 marks each"}, totalMarks: 15,
+    rows: [
+    { id: "answers", kind: "anyN", verbatim: "Published answer points", marks: 15, contextNote: "Only the printed full-credit point value is offered; the scheme gives no finer ladder.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Vitamin C assists the absorption of iron by changing the ferric iron to a more absorbable ferrous state","as haem iron in animal foods is more easily absorbed than non haem iron in vegetable foods, consuming non haem and haem iron together increases non haem absorption","hydrochloric acid in the stomach helps absorption of non haem iron by converting it to haem iron","sugars, citric acid and amines assist the absorption of non haem iron","protein is thought to assist iron absorption","oxalic acid found in fruit and vegetables","phytic acid found in cereal binds to the iron decreasing its absorption","fibre intake above 35g per day binds with iron and decreases its absorption","tannin found in tea and other polyphenols bind with iron and decreases its absorption","lack of vitamin C","caffeine, excess alcohol, smoking can also decrease iron absorption"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sb-q1d", topicId: "home-economics-0-9", conceptId: "sb-q1d",
+    section: "B", questionRef: "2010 HL Section B Q1(d)",
+    stem: "Estimates of the distribution of Irish agri-food and drink exports in 2008 by sector are shown below.",
+    questionText: "Discuss the factors that may affect consumers’ decision making in relation to the purchase of meat and meat products.",
+    tariffModel: {"kind":"fixed","notation":"4 points @ 5 marks each"}, totalMarks: 20,
+    rows: [
+    { id: "answers", kind: "anyN", verbatim: "Published answer points", marks: 20, contextNote: "Only the printed full-credit point value is offered; the scheme gives no finer ladder.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Financial – money available, less expensive cuts","Convenience – ready prepared, time, skills","Environmental – organic","Health – nutritious – low fat, high iron, low salt","Flavour – lamb in season has a better flavour","Trace ability – labelling, Irish produced","Advertising – Bord Bia runs Quality Assurance scheme and publish recipes","Meat products – smaller portions, easier to eat etc."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sb-q2a", topicId: "home-economics-0-9", conceptId: "sb-q2a",
+    section: "B", questionRef: "2010 HL Section B Q2(a)",
+    stem: "‘Few Irish people consume the two portions of fish recommended each week. Despite being surrounded by some of the best fishing and fish in the world we are often reluctant to try this incredibly healthy food.’ Press Release – Evening Herald",
+    questionText: "Evaluate the nutritional and dietetic contribution that fish makes to the diet.",
+    tariffModel: {"kind":"fixed","notation":"5 points @ 4; at least two nutritional and two dietetic"}, totalMarks: 20,
+    rows: [
+    { id: "nutritional", kind: "anyN", verbatim: "Nutritional", marks: 12, openList: true, group: {"claimMax":3,"perOption":4,"options":["Excellent source of easily digested HBV protein","no lipid in white fish","oily fish high in polyunsaturated fatty acids (omega 3 EPA and DHA)","shell fish contains cholesterol","iodine and fluorine are present in sea fish","fish is a good source of phosphorous, potassium and zinc","calcium in shellfish and bones of tinned fish","all fish contain B group vitamins, vitamins A and D in oily fish","oysters contain vitamin C"]} },
+    { id: "dietetic", kind: "anyN", verbatim: "Dietetic", marks: 8, openList: true, group: {"claimMax":2,"perOption":4,"options":["Good alternative to meat","supplies HBV proteins","low in fat therefore useful in low calorie and low cholesterol diets","types of fatty acids present are linked with lowering risk of heart disease","easy to digest so useful for diets for elderly and invalids","no carbohydrate so must serve with this","little vitamin C and iron therefore best served with foods rich in these nutrients","many different cooking methods can be used"]} },
+    ],
+    answerVariants: [
+          {
+                "id": "nutritional-three",
+                "label": "Three nutritional + two dietetic",
+                "rows": [
+                      {
+                            "id": "nutritional",
+                            "kind": "anyN",
+                            "verbatim": "Nutritional",
+                            "marks": 12,
+                            "openList": true,
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Excellent source of easily digested HBV protein",
+                                        "no lipid in white fish",
+                                        "oily fish high in polyunsaturated fatty acids (omega 3 EPA and DHA)",
+                                        "shell fish contains cholesterol",
+                                        "iodine and fluorine are present in sea fish",
+                                        "fish is a good source of phosphorous, potassium and zinc",
+                                        "calcium in shellfish and bones of tinned fish",
+                                        "all fish contain B group vitamins, vitamins A and D in oily fish",
+                                        "oysters contain vitamin C"
+                                  ]
+                            },
+                            "contextNote": ""
+                      },
+                      {
+                            "id": "dietetic",
+                            "kind": "anyN",
+                            "verbatim": "Dietetic",
+                            "marks": 8,
+                            "openList": true,
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Good alternative to meat",
+                                        "supplies HBV proteins",
+                                        "low in fat therefore useful in low calorie and low cholesterol diets",
+                                        "types of fatty acids present are linked with lowering risk of heart disease",
+                                        "easy to digest so useful for diets for elderly and invalids",
+                                        "no carbohydrate so must serve with this",
+                                        "little vitamin C and iron therefore best served with foods rich in these nutrients",
+                                        "many different cooking methods can be used"
+                                  ]
+                            },
+                            "contextNote": ""
+                      }
+                ]
+          },
+          {
+                "id": "dietetic-three",
+                "label": "Two nutritional + three dietetic",
+                "rows": [
+                      {
+                            "id": "nutritional",
+                            "kind": "anyN",
+                            "verbatim": "Nutritional",
+                            "marks": 8,
+                            "openList": true,
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Excellent source of easily digested HBV protein",
+                                        "no lipid in white fish",
+                                        "oily fish high in polyunsaturated fatty acids (omega 3 EPA and DHA)",
+                                        "shell fish contains cholesterol",
+                                        "iodine and fluorine are present in sea fish",
+                                        "fish is a good source of phosphorous, potassium and zinc",
+                                        "calcium in shellfish and bones of tinned fish",
+                                        "all fish contain B group vitamins, vitamins A and D in oily fish",
+                                        "oysters contain vitamin C"
+                                  ]
+                            },
+                            "contextNote": ""
+                      },
+                      {
+                            "id": "dietetic",
+                            "kind": "anyN",
+                            "verbatim": "Dietetic",
+                            "marks": 12,
+                            "openList": true,
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Good alternative to meat",
+                                        "supplies HBV proteins",
+                                        "low in fat therefore useful in low calorie and low cholesterol diets",
+                                        "types of fatty acids present are linked with lowering risk of heart disease",
+                                        "easy to digest so useful for diets for elderly and invalids",
+                                        "no carbohydrate so must serve with this",
+                                        "little vitamin C and iron therefore best served with foods rich in these nutrients",
+                                        "many different cooking methods can be used"
+                                  ]
+                            },
+                            "contextNote": ""
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sb-q2b", topicId: "home-economics-0-3", conceptId: "sb-q2b",
+    section: "B", questionRef: "2010 HL Section B Q2(b)",
+    stem: "‘Few Irish people consume the two portions of fish recommended each week. Despite being surrounded by some of the best fishing and fish in the world we are often reluctant to try this incredibly healthy food.’ Press Release – Evening Herald",
+    questionText: "Recommend one dry method of cooking and one moist method of cooking suitable for fish. In relation to each method recommended: • state the underlying cooking principle involved • comment on the palatability of the cooked fish.",
+    tariffModel: {"kind":"fixed","notation":"(method 2 + principle 2 × 3 + palatability 2) × 2"}, totalMarks: 20,
+    rows: [
+    { id: "dry-name", kind: "anyN", verbatim: "Dry Methods", marks: 2, openList: true, group: {"claimMax":1,"perOption":2,"options":["Baking","Grilling / Barbecuing","Roasting","Smoking","Microwave cooking"]} },
+    { id: "dry-principle", kind: "criterion", verbatim: "principle", marks: 6, contextNote: "Two principles for the SAME method. Full source guidance: Baking – convection currents, top shelf hottest, fan oven has even distribution of heat, steam produced by food prevents drying out, enhances flavour, crisp finish e.g. breaded fish. Grilling / Barbecuing – radiant heat, heat from grill seals the surface of the food and seals in the flavour, moisture and nutrients. Digestible, over cooking can easily occur. Roasting, Smoking etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "dry-palatability", kind: "criterion", verbatim: "palatability", marks: 2, contextNote: "Comment on the SAME cooked fish. Full source guidance: Baking – convection currents, top shelf hottest, fan oven has even distribution of heat, steam produced by food prevents drying out, enhances flavour, crisp finish e.g. breaded fish. Grilling / Barbecuing – radiant heat, heat from grill seals the surface of the food and seals in the flavour, moisture and nutrients. Digestible, over cooking can easily occur. Roasting, Smoking etc.", permittedMarks: [0,2] },
+    { id: "moist-name", kind: "anyN", verbatim: "Moist Methods", marks: 2, openList: true, group: {"claimMax":1,"perOption":2,"options":["Poaching","Steaming","Stewing","Braising","Microwave cooking"]} },
+    { id: "moist-principle", kind: "criterion", verbatim: "principle", marks: 6, contextNote: "Two principles for the SAME method. Full source guidance: Poaching – conduction and convection, cooking in liquid below simmering point 80°C to 90°C, digestible but can lack flavour. Usually served with an appropriate sauce to add flavour. Steaming – fish cooked as a result of the steam rising from boiling water, food does not touch the water, steam circulates around the fish, digestible but can lack flavour. Stewing - conduction and convection, fish cooked in a small amount of liquid simmering between 80°C and 90°C, flavour retained, digestible, overcooking can cause the fish to become mushy. Braising etc. Microwave cooking – dry/moist method", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "moist-palatability", kind: "criterion", verbatim: "palatability", marks: 2, contextNote: "Comment on the SAME cooked fish. Full source guidance: Poaching – conduction and convection, cooking in liquid below simmering point 80°C to 90°C, digestible but can lack flavour. Usually served with an appropriate sauce to add flavour. Steaming – fish cooked as a result of the steam rising from boiling water, food does not touch the water, steam circulates around the fish, digestible but can lack flavour. Stewing - conduction and convection, fish cooked in a small amount of liquid simmering between 80°C and 90°C, flavour retained, digestible, overcooking can cause the fish to become mushy. Braising etc. Microwave cooking – dry/moist method", permittedMarks: [0,2] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2010-hl-sb-q2b-dry","label":"Dry Methods","marks":10,"rowIds":["dry-name","dry-principle","dry-palatability"]},{"sourceCardId":"he-2010-hl-sb-q2b-moist","label":"Moist Methods","marks":10,"rowIds":["moist-name","moist-principle","moist-palatability"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sb-q2c", topicId: "home-economics-0-10", conceptId: "sb-q2c",
+    section: "B", questionRef: "2010 HL Section B Q2(c)",
+    stem: "‘Few Irish people consume the two portions of fish recommended each week. Despite being surrounded by some of the best fishing and fish in the world we are often reluctant to try this incredibly healthy food.’ Press Release – Evening Herald",
+    questionText: "Identify and discuss two contemporary trends in Irish eating patterns.",
+    tariffModel: {"kind":"fixed","notation":"2 points @ 5 marks each"}, totalMarks: 10,
+    rows: [
+    { id: "answers", kind: "anyN", verbatim: "Published answer points", marks: 10, contextNote: "Only the printed full-credit point value is offered; the scheme gives no finer ladder.", openList: true, group: {"claimMax":2,"perOption":5,"options":["New foods /ingredients","influence of foreign cultures","health conscious","value for money","organic","free trade","take away foods/ foods on the go/dash board dining","prepared food / meals from delis","the new going out is to entertain at home"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sb-q3a", topicId: "home-economics-0-3", conceptId: "sb-q3a",
+    section: "B", questionRef: "2010 HL Section B Q3(a)",
+    stem: "Preserving food to extend its shelf life, whilst ensuring it’s safety and quality, is a central aim of the food industry.",
+    questionText: "Set out details of the findings of a comparative evaluation you have carried out on a food which can be preserved using two different methods of preservation. In your answer refer to: • name of food • suitable methods of preservation • the underlying principle of each method of preservation • risk of food spoilage.",
+    tariffModel: {"kind":"fixed","notation":"Food 2 + methods 2 × 3 + principles 4 × 3 + spoilage 2 × 3"}, totalMarks: 26,
+    rows: [
+    { id: "food", kind: "criterion", verbatim: "name of food", marks: 2, contextNote: "The printed tariff names a food but supplies no model food; no example has been invented.", permittedMarks: [0,2] },
+    { id: "methods", kind: "anyN", verbatim: "suitable methods of preservation", marks: 6, openList: true, group: {"claimMax":2,"perOption":3,"options":["Freezing","Bottling/canning","Dehydration","Chemical","Irradiation","Pasteurisation","UHT","Sterilisation","Freeze-drying"]} },
+    { id: "principle-1", kind: "criterion", verbatim: "the underlying principle of each method", marks: 6, contextNote: "Two points for the first chosen method. Complete source guidance: Freezing – removal of warmth and moisture to inactivate enzymes; ice crystals formed so liquid is unavailable to bacteria; on thawing temperature rises, moisture becomes available and bacteria grow again; blanching before freezing inactivates enzymes; colour, flavour and nutritive value maintained if stored correctly; freeze at -25°C store at -18°C; repeated defrosting / thawing can encourage microbial growth; freezer burn results in toughening, drying out and discolouration etc. Bottling/canning – sterilisation at high temperatures destroys enzymes and micro-organisms; a vacuum is formed by the lid preventing re-entry of air and micro-organisms; loss of colour, flavour due to high temps; if cans are dented, food could become spoiled due to presence of clostridium botulinium, “blown” cans indicate the presence of bacteria etc. Dehydration – moisture removed and sugar/salt concentration increases, micro-organisms cannot multiply; long shelf life when stored correctly in cool, dry well ventilated area; risk of bacterial contamination when liquid added; pests etc. Chemical – e.g. addition of salt, sugar, alcohol, vinegar, acids, sulphur dioxide, and nitrate; chemical preservatives form a concentrated solution in the food, in an attempt to equalise the concentration water is drawn from the microbial cell and dies; alcohol denatures protein in bacterial cells; acids lower pH to unacceptable level for microbial growth and enzyme activity; micro-organisms cannot survive sugar concentrations above 65%, salt causes microbial cells to become dehydrated by osmosis etc. Irradiation – a defined dose of ionising gamma rays go through the food to sterilise it, to delay ripening, to inhibit or destroy food poisoning bacteria and to prevent sprouting; little change in colour, flavour & texture; food is sterilised – very long shelf life etc. Pasteurisation; UHT; Sterilisation; Freeze-drying etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "principle-2", kind: "criterion", verbatim: "the underlying principle of each method", marks: 6, contextNote: "Two points for the second chosen method. Complete source guidance: Freezing – removal of warmth and moisture to inactivate enzymes; ice crystals formed so liquid is unavailable to bacteria; on thawing temperature rises, moisture becomes available and bacteria grow again; blanching before freezing inactivates enzymes; colour, flavour and nutritive value maintained if stored correctly; freeze at -25°C store at -18°C; repeated defrosting / thawing can encourage microbial growth; freezer burn results in toughening, drying out and discolouration etc. Bottling/canning – sterilisation at high temperatures destroys enzymes and micro-organisms; a vacuum is formed by the lid preventing re-entry of air and micro-organisms; loss of colour, flavour due to high temps; if cans are dented, food could become spoiled due to presence of clostridium botulinium, “blown” cans indicate the presence of bacteria etc. Dehydration – moisture removed and sugar/salt concentration increases, micro-organisms cannot multiply; long shelf life when stored correctly in cool, dry well ventilated area; risk of bacterial contamination when liquid added; pests etc. Chemical – e.g. addition of salt, sugar, alcohol, vinegar, acids, sulphur dioxide, and nitrate; chemical preservatives form a concentrated solution in the food, in an attempt to equalise the concentration water is drawn from the microbial cell and dies; alcohol denatures protein in bacterial cells; acids lower pH to unacceptable level for microbial growth and enzyme activity; micro-organisms cannot survive sugar concentrations above 65%, salt causes microbial cells to become dehydrated by osmosis etc. Irradiation – a defined dose of ionising gamma rays go through the food to sterilise it, to delay ripening, to inhibit or destroy food poisoning bacteria and to prevent sprouting; little change in colour, flavour & texture; food is sterilised – very long shelf life etc. Pasteurisation; UHT; Sterilisation; Freeze-drying etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "spoilage", kind: "criterion", verbatim: "risk of food spoilage.", marks: 6, contextNote: "Two risk points across the chosen methods. Complete source guidance: Freezing – removal of warmth and moisture to inactivate enzymes; ice crystals formed so liquid is unavailable to bacteria; on thawing temperature rises, moisture becomes available and bacteria grow again; blanching before freezing inactivates enzymes; colour, flavour and nutritive value maintained if stored correctly; freeze at -25°C store at -18°C; repeated defrosting / thawing can encourage microbial growth; freezer burn results in toughening, drying out and discolouration etc. Bottling/canning – sterilisation at high temperatures destroys enzymes and micro-organisms; a vacuum is formed by the lid preventing re-entry of air and micro-organisms; loss of colour, flavour due to high temps; if cans are dented, food could become spoiled due to presence of clostridium botulinium, “blown” cans indicate the presence of bacteria etc. Dehydration – moisture removed and sugar/salt concentration increases, micro-organisms cannot multiply; long shelf life when stored correctly in cool, dry well ventilated area; risk of bacterial contamination when liquid added; pests etc. Chemical – e.g. addition of salt, sugar, alcohol, vinegar, acids, sulphur dioxide, and nitrate; chemical preservatives form a concentrated solution in the food, in an attempt to equalise the concentration water is drawn from the microbial cell and dies; alcohol denatures protein in bacterial cells; acids lower pH to unacceptable level for microbial growth and enzyme activity; micro-organisms cannot survive sugar concentrations above 65%, salt causes microbial cells to become dehydrated by osmosis etc. Irradiation – a defined dose of ionising gamma rays go through the food to sterilise it, to delay ripening, to inhibit or destroy food poisoning bacteria and to prevent sprouting; little change in colour, flavour & texture; food is sterilised – very long shelf life etc. Pasteurisation; UHT; Sterilisation; Freeze-drying etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sb-q3b", topicId: "home-economics-0-11", conceptId: "sb-q3b",
+    section: "B", questionRef: "2010 HL Section B Q3(b)",
+    stem: "Preserving food to extend its shelf life, whilst ensuring it’s safety and quality, is a central aim of the food industry.",
+    questionText: "Assess the use of plastics as a packaging material having regard to: • types • suitability for purpose • environmental impact.",
+    tariffModel: {"kind":"fixed","notation":"Types 2 × 2 + suitability 2 × 3 + environmental impact 2 × 3"}, totalMarks: 16,
+    rows: [
+    { id: "types", kind: "anyN", verbatim: "Types", marks: 4, openList: true, group: {"claimMax":2,"perOption":2,"options":["polythene bags","plastic cartons/boxes","PET bottles","polystyrene"]} },
+    { id: "suitability", kind: "anyN", verbatim: "Suitability for purpose", marks: 6, openList: true, group: {"claimMax":2,"perOption":3,"options":["strong","moisture proof","convenient","easy to handle","lightweight","flexible","can be heat sealed","relatively low cost","suitable for frozen foods","variety of weights, thickness","can be printed on","less hazardous","some may contaminate foodstuffs etc."]} },
+    { id: "impact", kind: "criterion", verbatim: "Environmental impact", marks: 6, contextNote: "Two distinct points. Complete source guidance: made from crude oil which is a non renewable resource, lack of facilities for recycling, contributes a huge bulk to landfill sites, non-biodegradable, not all plastics are recyclable etc. PET bottles can be shredded and used as fibre for polyester linings etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sb-q3c", topicId: "home-economics-1-2", conceptId: "sb-q3c",
+    section: "B", questionRef: "2010 HL Section B Q3(c)",
+    stem: "Preserving food to extend its shelf life, whilst ensuring it’s safety and quality, is a central aim of the food industry.",
+    questionText: "Outline the protection provided to the consumer by Labelling Regulations (1982, 1991 and 2002).",
+    tariffModel: {"kind":"fixed","notation":"2 points @ 4 marks each"}, totalMarks: 8,
+    rows: [
+    { id: "answers", kind: "anyN", verbatim: "Published answer points", marks: 8, contextNote: "Only the printed full-credit point value is offered; the scheme gives no finer ladder.", openList: true, group: {"claimMax":2,"perOption":4,"options":["All labels must be clear, legible, indelible","must not mislead the consumer i.e. no claims that suggest a food product is capable of preventing or curing disease","language understood by the consumer","should not be obscured in any way","essential information must be present on the package"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sb-q4a", topicId: "home-economics-1-1", conceptId: "sb-q4a",
+    section: "B", questionRef: "2010 HL Section B Q4(a)",
+    stem: "The average household in Ireland owes a whopping €115,000 according to the Central Statistics Office and as the recession bites a growing number of people are struggling with the burden of personal debt. (CSO – Press release April ’09)",
+    questionText: "Suggest some strategies that should be followed when planning family budgets to ensure effective management of financial resources.",
+    tariffModel: {"kind":"fixed","notation":"5 points @ 4 marks each"}, totalMarks: 20,
+    rows: [
+    { id: "answers", kind: "anyN", verbatim: "Published answer points", marks: 20, contextNote: "Only the printed full-credit point value is offered; the scheme gives no finer ladder.", openList: true, group: {"claimMax":5,"perOption":4,"options":["List all sources of net income.","List planned expenditure - fixed, irregular and discretionary.","Calculate weekly/monthly expenditure,","allow for discretionary spending – Christmas,","account for some possible changes in circumstances,","incorporate long term and short term savings,","allocate some money for personal expenses,","keep copies of bills and receipts,","evaluate and review budgets regularly etc."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sb-q4b", topicId: "home-economics-1-1", conceptId: "sb-q4b",
+    section: "B", questionRef: "2010 HL Section B Q4(b)",
+    stem: "The average household in Ireland owes a whopping €115,000 according to the Central Statistics Office and as the recession bites a growing number of people are struggling with the burden of personal debt. (CSO – Press release April ’09)",
+    questionText: "Explain why each of the following are important considerations when selecting a saving scheme: • security of savings • interest payable • access to funds • tax payable.",
+    tariffModel: {"kind":"fixed","notation":"4 required points @ 5 marks each"}, totalMarks: 20,
+    rows: [
+    { id: "factor-1", kind: "point", verbatim: "Security of savings – some saving schemes are very safe e.g. An Post and banks (government guarantee up to €100,000). Others offer greater potential returns on savings but there may also be a loss as they are dependent on the stock market (equity based schemes).", marks: 5, contextNote: "This is the 2010 scheme’s historical financial context." },
+    { id: "factor-2", kind: "point", verbatim: "Interest payable – varies between financial institutions and also different schemes offer different rates with the same institution. Rate of interest payable important if dependent on interest as income.", marks: 5, contextNote: "This is the 2010 scheme’s historical financial context." },
+    { id: "factor-3", kind: "point", verbatim: "Access to funds – if money may be needed in the short term, one should avoid investing in medium or long term schemes because penalties are imposed for early withdrawal or encashment. Some schemes allow 1/2 withdrawals annually without penalty etc.", marks: 5, contextNote: "This is the 2010 scheme’s historical financial context." },
+    { id: "factor-4", kind: "point", verbatim: "Tax payable – DIRT may have to be paid on savings but some are tax free e.g. An Post schemes etc.", marks: 5, contextNote: "This is the 2010 scheme’s historical financial context." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sb-q4c", topicId: "home-economics-1-1", conceptId: "sb-q4c",
+    section: "B", questionRef: "2010 HL Section B Q4(c)",
+    stem: "The average household in Ireland owes a whopping €115,000 according to the Central Statistics Office and as the recession bites a growing number of people are struggling with the burden of personal debt. (CSO – Press release April ’09)",
+    questionText: "Explain how MABS (Money Advice and Budgeting Service) assist families who are experiencing financial difficulties.",
+    tariffModel: {"kind":"fixed","notation":"2 points @ 5 marks each"}, totalMarks: 10,
+    rows: [
+    { id: "answers", kind: "anyN", verbatim: "Published answer points", marks: 10, contextNote: "Only the printed full-credit point value is offered; the scheme gives no finer ladder.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Advises on coping with immediate debt problems","helps families develop money management skills – planning realistic budgets and repayment schedule","advises re availability of special schemes e.g. fuel","advises on cheaper sources of finance e.g. credit unions"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sb-q5a", topicId: "home-economics-2-0", conceptId: "sb-q5a",
+    section: "B", questionRef: "2010 HL Section B Q5(a)",
+    stem: "‘The State recognises that family life gives to society a support without which the common good cannot be achieved. The State endeavours to support caring for others within the home.’ The Women’s Health Council",
+    questionText: "Describe four main functions of the family in modern society and outline how the state supports the family with these functions.",
+    tariffModel: {"kind":"fixed","notation":"4 points @ 6 marks each"}, totalMarks: 24,
+    rows: [
+    { id: "functions", kind: "anyN", verbatim: "Family function and matching State support", marks: 24, contextNote: "Each six-mark point includes the family function AND corresponding State support; no separate price for either half is printed.", openList: true, group: {"claimMax":4,"perOption":6,"options":["Nurturing, rearing, emotional function - family cares for emotional and psychological development of child, provides reassurance, encouragement, love and security, helping child to develop well balanced personality in a safe, secure loving environment etc. — Emotional - State supported parenting courses, psychological services","Economic function – adults in the family work to earn money to provide for dependents etc. — Economic - Child benefit, Job seekers Allowance FIS, medical card, allowances for the elderly;","Education/Intellectual function – family is the first educator, later supports state education of children by supervising homework, encouraging child and providing a stimulating home environment etc. — Educational- formal schooling; supports for students with special needs accommodations for state exams; NEWB to track early school leavers","Socialisation - family is the primary centre of socialisation, introduces the child to beliefs, culture, language, norms, traditions, values of society in which they live. Family acts as agent of social control by showing child what is acceptable and unacceptable behaviour etc. — Social function - supported in formal schooling","Protective/ Physical function - family protects, care for young, elderly, people with special needs; provides for the basic physical needs etc. — Protective / Physical function - the state can intervene in cases of child neglect, cruelty or abuse etc."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sb-q5b", topicId: "home-economics-2-1", conceptId: "sb-q5b",
+    section: "B", questionRef: "2010 HL Section B Q5(b)",
+    stem: "‘The State recognises that family life gives to society a support without which the common good cannot be achieved. The State endeavours to support caring for others within the home.’ The Women’s Health Council",
+    questionText: "Discuss the merits of good child-parent communication.",
+    tariffModel: {"kind":"fixed","notation":"3 points @ 4 marks each"}, totalMarks: 12,
+    rows: [
+    { id: "answers", kind: "anyN", verbatim: "Published answer points", marks: 12, contextNote: "Only the printed full-credit point value is offered; the scheme gives no finer ladder.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Enables quality relationships, children feel valued as they can express their ideas, feelings and thoughts in a safe environment","develops good listening skills - a good life skill","can prevent stress, easier to solve disagreements and agree compromises if necessary","essential to develop positive self esteem","creates a positive and relaxed home environment"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sb-q5c-importance", topicId: "home-economics-2-1", conceptId: "sb-q5c",
+    section: "B", questionRef: "2010 HL Section B Q5(c) — importance",
+    stem: "‘The State recognises that family life gives to society a support without which the common good cannot be achieved. The State endeavours to support caring for others within the home.’ The Women’s Health Council",
+    questionText: "State why it is important for parents to make a will",
+    tariffModel: {"kind":"fixed","notation":"2 points @ 2 marks each"}, totalMarks: 4,
+    rows: [
+    { id: "importance", kind: "anyN", verbatim: "Why it is important", marks: 4, openList: true, group: {"claimMax":2,"perOption":2,"options":["Parent / parents’ wishes will be carried out avoiding problems which could arise particularly for spouse","property passes to whom the deceased wishes","administration of the estate is done by a person of parents’ choice (executor)","inheritance tax can be reduced for dependents","guardianship arrangements for children if both parents are deceased"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sb-q5c-procedure", topicId: "home-economics-2-1", conceptId: "sb-q5c",
+    section: "B", questionRef: "2010 HL Section B Q5(c) — procedure",
+    stem: "State why it is important for parents to make a will and outline the procedure involved.",
+    questionText: "outline the procedure involved.",
+    tariffModel: {"kind":"fixed","notation":"5 points @ 2 marks each"}, totalMarks: 10,
+    rows: [
+    { id: "procedure", kind: "anyN", verbatim: "Procedure", marks: 10, contextNote: "The original combined prompt is retained as context. This independently priced task asks only for the procedure: five points at two marks each; importance is the companion four-mark card.", openList: true, group: {"claimMax":5,"perOption":2,"options":["Employ a solicitor","make a list of assets","choose executor","compile list of beneficiaries","outline wishes regarding funeral arrangements and burial place or arrangements for children if both parents are deceased","draw up will in writing","sign it in the presence of 2 witnesses","keep it safe (bank or solicitors office)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q1ai", topicId: "home-economics-3-4", conceptId: "sc-q1ai",
+    section: "C", questionRef: "2010 HL Section C E1 Q1(a)(i)",
+    stem: "An awareness of the elements and principles of design is essential when creating successful visual compositions.",
+    questionText: "Explain three principles of design and give an example of the application of each in interior design.",
+    tariffModel: {"kind":"fixed","notation":"3 points @ 6 marks each"}, totalMarks: 18,
+    rows: [
+    { id: "points", kind: "anyN", verbatim: "Published answer points", marks: 18, openList: true, group: {"claimMax":3,"perOption":6,"options":["Proportion – this is the relationship between different objects and their size. All objects in a room must be of a size / height that is relative to all other items intended for the room. This must be applied to colours, patterns and textures in the room.","Emphasis – this is where the eye is drawn to an object or a particular area or feature within the room. This is referred to as the room’s focal point e.g. a fireplace in a living room.","Balance – this means that there is harmony between each part of the design of a room. No one room feature or element should dominate the other. There should be an equal amount of colour, pattern and texture that work well together. A well balanced room is aesthetically pleasing.","Rhythm – this is where colours or patterns repeated on different objects draw the room together. It is achieved by linking various objects in a room. This can be done by repeating a different colour in different places or using items of similar style, shape or pattern throughout the room."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q1aii", topicId: "home-economics-3-4", conceptId: "sc-q1aii",
+    section: "C", questionRef: "2010 HL Section C E1 Q1(a)(ii)",
+    stem: "An awareness of the elements and principles of design is essential when creating successful visual compositions.",
+    questionText: "Explain how each of the factors listed below can influence the interior design of the home: • aesthetic and comfort factors • ergonomics • family size and circumstances.",
+    tariffModel: {"kind":"fixed","notation":"5 points @ 4 marks each"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 20, contextNote: "Use distinct relevant points at the source’s printed value. No finer partial-credit ladder is printed. Complete source guidance: Aesthetic and comfort factors - visual appeal, personal taste, colour trends, trends in pattern and texture, purpose of a room, heating, lighting and ventilation must be a comfortable level; all heights e.g. work surfaces must be at a suitable level to avoid discomfort Ergonomics – design of a room should allow for ease of movement, accommodate the natural traffic flow, spaces should be easy to clean with free access to all areas e.g. windows, sockets; room design should facilitate maximum efficiency e.g. work triangle Family size and circumstances – number and age of family members, areas for play and study, choices and preferences of each family member e.g. colours, family income, number of people working, practical, durable, flexible to include all occupants needs, easy to clean surfaces, current and future needs etc.", permittedMarks: [0,4,8,12,16,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q1aiii", topicId: "home-economics-3-4", conceptId: "sc-q1aiii",
+    section: "C", questionRef: "2010 HL Section C E1 Q1(a)(iii)",
+    stem: "An awareness of the elements and principles of design is essential when creating successful visual compositions.",
+    questionText: "Recommend one type of fabric suitable for household soft furnishings. Give reasons for your choice.",
+    tariffModel: {"kind":"fixed","notation":"Fabric 3 + reasons 3 × 3"}, totalMarks: 12,
+    rows: [
+    { id: "fabric", kind: "anyN", verbatim: "Fabrics", marks: 3, openList: true, group: {"claimMax":1,"perOption":3,"options":["cotton","linen","wool polyester","velvet","silk"]} },
+    { id: "reasons", kind: "criterion", verbatim: "Reasons", marks: 9, contextNote: "Three reasons for the same fabric and purpose. Complete source examples: relate to purpose of soft furnish e.g. curtain fabric – good draping, pre-shrunk, fade resistant, flame resistant, durable. Cushions – strong, washable / can be dry cleaned, stain resistant. Bed linen – smooth, closely woven, absorbent, easy to launder, shrink resistant etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q1bi", topicId: "home-economics-3-5", conceptId: "sc-q1bi",
+    section: "C", questionRef: "2010 HL Section C E1 Q1(b)(i)",
+    stem: "An awareness of the elements and principles of design is essential when creating successful visual compositions.",
+    questionText: "Describe the processes carried out at water treatment plants to ensure household water supply is fit for human consumption.",
+    tariffModel: {"kind":"fixed","notation":"5 points @ 3 marks each"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "anyN", verbatim: "Published answer points", marks: 15, openList: true, group: {"claimMax":5,"perOption":3,"options":["Screening – impurities in water such as floating debris are removed","Sedimentation – chemicals added to the water which attach to the dirt which sinks to the base of the tank, water is allowed settle so that leaves, soil and other solid matter can be removed","Filtration – water is filtered to remove any remaining impurities","Chlorination – chlorine is added to kill bacteria","Fluoridation – fluoride is added to strengthen teeth and reduce tooth decay","Softening – Chloride of lime is added to soften hard water","Testing – water is tested for quality and pureness."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q1bii", topicId: "home-economics-3-5", conceptId: "sc-q1bii",
+    section: "C", questionRef: "2010 HL Section C E1 Q1(b)(ii)",
+    stem: "An awareness of the elements and principles of design is essential when creating successful visual compositions.",
+    questionText: "In relation to the cold water storage system in the home, explain the function of each of the following: • stop cock • ball valve / ball cock • overflow pipe.",
+    tariffModel: {"kind":"fixed","notation":"3 required points @ 5 marks each"}, totalMarks: 15,
+    rows: [
+    { id: "part-1", kind: "point", verbatim: "Stop cock – controls the supply of water to an individual house (on/off)", marks: 5 },
+    { id: "part-2", kind: "point", verbatim: "Ball valve – controls water levels or rate of fill used in toilet cisterns or in water tanks", marks: 5 },
+    { id: "part-3", kind: "point", verbatim: "Overflow pipe – in case the ball valve fails this then takes away excess water from the storage tank.", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q1ci", topicId: "home-economics-3-3", conceptId: "sc-q1ci",
+    section: "C", questionRef: "2010 HL Section C E1 Q1(c)(i)",
+    stem: "For most young people, especially single individuals, buying a house is still a far-off prospect given reduced income levels and increasing unemployment.",
+    questionText: "Discuss the adequacy of housing provision in Ireland today.",
+    tariffModel: {"kind":"fixed","notation":"3 points @ 6 marks each"}, totalMarks: 18,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "housing provision", marks: 18, contextNote: "Use distinct relevant points at the source’s printed value. No finer partial-credit ladder is printed. Complete source guidance: Private housing – very high level of home ownership 80% home owners, higher than EU average, government policy has encouraged home ownership e.g. mortgage interest relief, tenant purchase schemes etc. In the recent past (celtic tiger boom) increased economic prosperity, low interest rates, a growing young population created conditions of high demand for home ownership. At its height demand exceeded supply. Huge numbers of houses built. This has now changed. Building industry slowed down considerably. Many houses built and are not selling. Value of property has reduced but market still very slow. Supply currently exceeds demand in some areas. Social housing – provided for people on lower incomes or those who are unable to afford a private house, provided by the local authority mainly or by voluntary or co-operative housing groups. Substantial increase in the number of people on waiting lists; can be waiting for a number of years. Supply does not meet demand. Families, disabled and elderly get priority, single people are disadvantaged. ‘Improvements works’ schemes in lieu of local authority housing scheme etc. Private rental sector - High demand for rented accommodation among young single workers or students; demand mainly in urban areas, availability is limited and sometimes of poor quality. Purpose built housing for students provides rental accommodation but availability is limited. Supply of rental properties has increased significantly in recent years and in some areas supply exceeds demands etc.", permittedMarks: [0,6,12,18], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,6]},{"id":"point-3","verbatim":"Point 3","marks":6,"permittedMarks":[0,6]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q1cii", topicId: "home-economics-3-3", conceptId: "sc-q1cii",
+    section: "C", questionRef: "2010 HL Section C E1 Q1(c)(ii)",
+    stem: "For most young people, especially single individuals, buying a house is still a far-off prospect given reduced income levels and increasing unemployment.",
+    questionText: "Name and give details of one type of social housing.",
+    tariffModel: {"kind":"fixed","notation":"Name 4 + details 2 × 4"}, totalMarks: 12,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Local authority housing", marks: 4 },
+    { id: "details", kind: "criterion", verbatim: "Details", marks: 8, contextNote: "Two details about this same form of social housing. Complete historical source description: providers of housing for those who do not have the resources to do so; to receive a loan there are conditions to be complied with i.e. be in need and unable to purchase from own resources, unable to secure a mortgage from bank or building society, satisfy income eligibility test. 95% of the house price may be borrowed and repaid over 25 years. Loan repayments are linked to income not to exceed 35% of net household income.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "local-authority-housing",
+                "label": "Local authority housing",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Local authority housing",
+                            "marks": 4
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Two details about this same form of social housing. Complete historical source description: providers of housing for those who do not have the resources to do so; to receive a loan there are conditions to be complied with i.e. be in need and unable to purchase from own resources, unable to secure a mortgage from bank or building society, satisfy income eligibility test. 95% of the house price may be borrowed and repaid over 25 years. Loan repayments are linked to income not to exceed 35% of net household income.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "tenant-purchase-scheme",
+                "label": "Tenant purchase scheme",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Tenant purchase scheme",
+                            "marks": 4
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Two details about this same form of social housing. Complete historical source description: For tenants who need housing but cannot pay the full market price. tenants of one year or over have the option to buy house outright or through shared ownership. House is priced at market value minus discounts for each year of tenancy up to a max of 10 years.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "shared-ownership-scheme",
+                "label": "Shared ownership scheme",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Shared ownership scheme",
+                            "marks": 4
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Two details about this same form of social housing. Complete historical source description: shared between the shared owner and L.A. Applicant must purchase 40% of the value of the house and rent the remaining 60% from the L.A. Tenant can purchase remaining 60% when initial share is paid for.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "mortgage-allowance-scheme",
+                "label": "Mortgage allowance scheme",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Mortgage allowance scheme",
+                            "marks": 4
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Two details about this same form of social housing. Complete historical source description: this is available for those who wish to build or buy a private home. An allowance is paid directly to the mortgage lender.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "affordable-housing-scheme",
+                "label": "Affordable housing scheme",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Affordable housing scheme",
+                            "marks": 4
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Two details about this same form of social housing. Complete historical source description: L.A. offers houses at discounted prices to those who are eligible (in need and satisfy income eligibility test). House has to be purchased outright.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "voluntary-housing",
+                "label": "Voluntary housing",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Voluntary housing",
+                            "marks": 4
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Two details about this same form of social housing. Complete historical source description: voluntary housing associations offer rented accommodation – houses, flats, sheltered housing, group homes, hostels - for those in need. They are non profit organisations e.g. Respond; must be approved by Dept of Environment and Local Government to get financial aid.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "co-operative-housing",
+                "label": "Co-operative housing",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Co-operative housing",
+                            "marks": 4
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Two details about this same form of social housing. Complete historical source description: group of people come together to form a co-operative and build houses by sharing costs of site, builder etc. may benefit from low cost sites provided by the L.A. if 75% of members are L.A. tenants or on housing list. Non profit. Supply houses for rent or ownership.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-type",
+                "label": "Another valid type",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "The choice is open. The scheme prints seven examples; no example has been invented here."
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Two details of the same valid type, four marks each; the source prints no additional model.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q2ai", topicId: "home-economics-3-8", conceptId: "sc-q2ai",
+    section: "C", questionRef: "2010 HL Section C E2 Q2(a)(i)",
+    stem: "Wearing the right festival gear can often make a big difference to your enjoyment of an event.",
+    questionText: "Give an account of the factors that would influence your selection of clothing when attending an outdoor music festival.",
+    tariffModel: {"kind":"fixed","notation":"4 points @ 2 marks each"}, totalMarks: 8,
+    rows: [
+    { id: "points", kind: "anyN", verbatim: "Published answer points", marks: 8, openList: true, group: {"claimMax":4,"perOption":2,"options":["Comfort","style","fashion","weather appropriate","festival theme"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q2aii", topicId: "home-economics-3-8", conceptId: "sc-q2aii",
+    section: "C", questionRef: "2010 HL Section C E2 Q2(a)(ii)",
+    stem: "Wearing the right festival gear can often make a big difference to your enjoyment of an event.",
+    questionText: "Sketch and describe an outfit suitable to wear to such a festival.",
+    tariffModel: {"kind":"fixed","notation":"Sketch 5 + Description 4"}, totalMarks: 9,
+    rows: [
+    { id: "sketch", kind: "criterion", verbatim: "Sketch", marks: 5, contextNote: "The scheme prints Sketch = 5 marks, with no model drawing or smaller step.", permittedMarks: [0,5] },
+    { id: "description", kind: "criterion", verbatim: "Description", marks: 4, contextNote: "The scheme prints Description = 4 marks, with no model description or smaller step.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q2aiii", topicId: "home-economics-3-7", conceptId: "sc-q2aiii",
+    section: "C", questionRef: "2010 HL Section C E2 Q2(a)(iii)",
+    stem: "Wearing the right festival gear can often make a big difference to your enjoyment of an event.\n\nSketch and describe an outfit suitable to wear to such a festival. (9)",
+    questionText: "In relation to the outfit, give details of • one type of suitable fabric and reasons for choice • one functional finish that could be applied to the fabric.",
+    tariffModel: {"kind":"fixed","notation":"Type 2 + reasons 2 × 2 + functional finish 2"}, totalMarks: 8,
+    rows: [
+    { id: "fabric", kind: "anyN", verbatim: "Fabric", marks: 2, openList: true, group: {"claimMax":1,"perOption":2,"options":["cotton","Polyester cotton","Lycra"]} },
+    { id: "reasons", kind: "criterion", verbatim: "reasons", marks: 4, contextNote: "Two reasons for the SAME fabric. Complete source examples: cotton – comfortable, soft, absorbent, cool Polyester cotton – strong, resists wrinkling, light Lycra – comfortable, stretchy, retains shape", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    { id: "finish", kind: "anyN", verbatim: "Functional finish", marks: 2, openList: true, group: {"claimMax":1,"perOption":2,"options":["crease resistant","anti-static","stain resistant","waterproof","water repellent"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q2b", topicId: "home-economics-3-7", conceptId: "sc-q2b",
+    section: "C", questionRef: "2010 HL Section C E2 Q2(b)",
+    stem: "Wearing the right festival gear can often make a big difference to your enjoyment of an event.",
+    questionText: "Write a profile of one blended fabric you have studied. Refer to: • production • properties • identification test • uses.",
+    tariffModel: {"kind":"fixed","notation":"Production 3 × 2 + properties 2 × 2 + identification 3 + uses 2 × 1"}, totalMarks: 15,
+    rows: [
+    { id: "production", kind: "criterion", verbatim: "production", marks: 6, contextNote: "Three production points for the one blended fabric selected. Full source guidance: Wool and nylon, Polyester cotton, cotton and Lycra, cotton and linen Cotton – boll is harvested, cotton fibres removed, spun into yarn Polyester – viscous liquid created and extruded through fine holes in a nozzle or spinneret. The filaments solidify when they reach cold air. Wool fleece is graded, cleaned and teased Nylon – two chemicals mixed together and heated, molecules link to produce a long filament, hot nylon is squirted from slit in base of steel vessels etc. Blending can be done in two ways – • Combinations/mixing - the threads are woven together e.g warp is cotton and the weft is linen • Blends - fibres are blended before or as fibre is being spun.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    { id: "properties", kind: "criterion", verbatim: "properties", marks: 4, contextNote: "Two properties. Source: the properties of both fabrics blended.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    { id: "test", kind: "point", verbatim: "burning test or microscopic evaluation", marks: 3 },
+    { id: "uses", kind: "anyN", verbatim: "uses", marks: 2, openList: true, group: {"claimMax":2,"perOption":1,"options":["clothing","soft furnishings","bed linen"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q2ci", topicId: "home-economics-3-8", conceptId: "sc-q2ci",
+    section: "C", questionRef: "2010 HL Section C E2 Q2(c)(i)",
+    stem: "Wearing the right festival gear can often make a big difference to your enjoyment of an event.",
+    questionText: "Discuss how the Irish clothing industry has maintained international recognition.",
+    tariffModel: {"kind":"fixed","notation":"3 points @ 3 marks each"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "anyN", verbatim: "Published answer points", marks: 9, openList: true, group: {"claimMax":3,"perOption":3,"options":["Producing products that meet the needs of its customers e.g. Magee suits, Phillip Treacy hats","updating and investing in new technologies – Magee weaving invested heavily in modern machinery to produce quality fabrics","competitiveness – offering quality designs at reasonable prices","marketing campaigns abroad highlighting the quality of the Irish brand","high profile personalities wearing clothes from Irish designers e.g. Mary Robinson wearing Louise Kennedy","Costumes for Riverdance designed by Irish couturier Jen Kelly raised the profile of traditional Irish fabric and crafts","Fás through training programmes and integrating technology","An Bord Trachtála ‘Look to Our Own’ campaign","Fobairt / Enterprise initiatives e.g. increase in use of CAD,"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q2cii", topicId: "home-economics-3-8", conceptId: "sc-q2cii",
+    section: "C", questionRef: "2010 HL Section C E2 Q2(c)(ii)",
+    stem: "Wearing the right festival gear can often make a big difference to your enjoyment of an event.",
+    questionText: "Name and give details of one career opportunity in the textile industry.",
+    tariffModel: {"kind":"fixed","notation":"Name 2 + details 2 × 2"}, totalMarks: 6,
+    rows: [
+    { id: "career", kind: "anyN", verbatim: "Name", marks: 2, openList: true, group: {"claimMax":1,"perOption":2,"options":["Fashion designers","tailors","fashion journalists and editors","photographers","models","stylists","clothing manufactures","advertising","sales people"]} },
+    { id: "details", kind: "criterion", verbatim: "give details", marks: 4, contextNote: "Two details about the SAME named career; the scheme lists careers but no model career details.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q3ai", topicId: "home-economics-3-9", conceptId: "sc-q3ai",
+    section: "C", questionRef: "2010 HL Section C E3 Q3(a)(i)",
+    stem: "The Irish economy has come to the end of a prolonged period of growth, this will increase the number of households vulnerable to poverty.",
+    questionText: "Discuss the influence of each of the following as a contributory factor to poverty in Ireland today: • the economic recession • social policy • the cycle of deprivation in families and geographical areas.",
+    tariffModel: {"kind":"fixed","notation":"5 points @ 6 marks each"}, totalMarks: 30,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "contributory factor", marks: 30, contextNote: "Use distinct relevant points at the source’s printed value. No finer partial-credit ladder is printed. Complete source guidance: Economic recession – when economy is weak / in recession unemployment levels rise; world economy / globalisation many jobs lost in manufacturing industry etc.; levels of demand for products and services has fallen so many indigenous companies closed and in debt, little hope for the future. Social Policy – if wages are low there is little incentive for long term unemployed to return to the workforce as they may loose some of their benefits and end up financially less better off. Social policy may perpetrate poverty if the benefits gained leave little incentive to gain employment. Cycle of deprivation and geographical areas – children from lower socio economic groups may not have the same opportunities as those from higher socio economic groups. This may result in unemployment or poorly paid jobs. In turn their children have the same experiences and the cycle continues. Poverty results from lack of education and lack of education can lead to poverty. Unemployment black spots; Industries closing down in areas with few other employment opportunities etc.", permittedMarks: [0,6,12,18,24,30], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,6]},{"id":"point-3","verbatim":"Point 3","marks":6,"permittedMarks":[0,6]},{"id":"point-4","verbatim":"Point 4","marks":6,"permittedMarks":[0,6]},{"id":"point-5","verbatim":"Point 5","marks":6,"permittedMarks":[0,6]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q3aii", topicId: "home-economics-3-9", conceptId: "sc-q3aii",
+    section: "C", questionRef: "2010 HL Section C E3 Q3(a)(ii)",
+    stem: "The Irish economy has come to the end of a prolonged period of growth, this will increase the number of households vulnerable to poverty.",
+    questionText: "Outline how the state has responded to eliminating poverty.",
+    tariffModel: {"kind":"fixed","notation":"2 points @ 5 marks each"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "anyN", verbatim: "Published answer points", marks: 10, openList: true, group: {"claimMax":2,"perOption":5,"options":["Social welfare assistance / benefits – job seekers allowance, one parent family payment, old age pension, child benefit, supplementary welfare allowance, family income supplement, local authority housing etc.","Initiatives encouraging foreign investment.","Schemes to reduce expenditure for low income families – Medical cards; Back to school clothing and foot wear allowance; school books grant scheme; mortgage allowance scheme; national fuel scheme.","Combat Poverty Agency – advises policy makers on preventing and eliminating poverty and social exclusion.","Community Development Programmes - develop community resource centres in areas of disadvantage.","National Anti Poverty Strategy (NAPS) – ten year programme to reduce poverty looking at income, unemployment, educational disadvantage and urban/rural poverty.","National minimum wage.","Money Advice and Budgeting Service – funded by Dept. of Social, Community and Family Affairs (Social Protection), FÁS, VTOS, etc."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q3aiii", topicId: "home-economics-3-9", conceptId: "sc-q3aiii",
+    section: "C", questionRef: "2010 HL Section C E3 Q3(a)(iii)",
+    stem: "The Irish economy has come to the end of a prolonged period of growth, this will increase the number of households vulnerable to poverty.",
+    questionText: "Write an informative note on one national voluntary organisation which works with individuals / families experiencing poverty.",
+    tariffModel: {"kind":"fixed","notation":"Name 2 + facts 2 × 4"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "anyN", verbatim: "Name", marks: 2, openList: true, group: {"claimMax":1,"perOption":2,"options":["Society of St Vincent de Paul","Focus Ireland","Simon Community"]} },
+    { id: "facts", kind: "criterion", verbatim: "facts", marks: 8, contextNote: "Two facts about the SAME named organisation; the scheme prints names but no model facts.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q3bi", topicId: "home-economics-3-9", conceptId: "sc-q3bi",
+    section: "C", questionRef: "2010 HL Section C E3 Q3(b)(i)",
+    stem: "‘Having a work environment that is dynamic encourages people to share their views and be innovative.’ (Irish Independent March 2009)",
+    questionText: "Assess how intrinsic and extrinsic factors affect attitudes to work.",
+    tariffModel: {"kind":"fixed","notation":"2 required points @ 5 marks each"}, totalMarks: 10,
+    rows: [
+    { id: "intrinsic", kind: "point", verbatim: "Intrinsic – fulfilment that job offers, if work gives a sense of achievement, this gives workers confidence, sense of pride, job satisfaction, scope for creativity, workers are motivated and are more creative", marks: 5 },
+    { id: "extrinsic", kind: "point", verbatim: "Extrinsic – financial rewards e.g. high salary, bonuses, benefits, status. Can affect performance, job satisfaction and commitment etc.", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q3bii", topicId: "home-economics-3-9", conceptId: "sc-q3bii",
+    section: "C", questionRef: "2010 HL Section C E3 Q3(b)(ii)",
+    stem: "‘Having a work environment that is dynamic encourages people to share their views and be innovative.’ (Irish Independent March 2009)",
+    questionText: "Identify and discuss some of the changes in patterns of work and work availability in Ireland today.",
+    tariffModel: {"kind":"fixed","notation":"4 points @ 5 marks each"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "anyN", verbatim: "Published answer points", marks: 20, openList: true, group: {"claimMax":4,"perOption":5,"options":["Use of technology","reduction in working hours","increased participation of women at work","qualifications needed for jobs","flexibility in working hours","working from home","support structures e.g crèches","improved working conditions","parental leave","term time leave","career breaks","job sharing","more ‘stay-at- home dads. Increase in service industries and decline in primary and secondary industries","cutbacks in tertiary industries has led to job losses in public services – manufacture moving to low labour cost countries","use of IT has changed the type of work that is available"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q3ci", topicId: "home-economics-3-10", conceptId: "sc-q3ci",
+    section: "C", questionRef: "2010 HL Section C E3 Q3(c)(i)",
+    stem: "‘Secondary education in Ireland aims to build on the foundation of primary education to provide a comprehensive, high quality learning environment to enable all students to live full lives and to realise their potential as individuals and citizens.’ (www.educationireland.ie)",
+    questionText: "Outline the purpose of education as a preparation for work.",
+    tariffModel: {"kind":"fixed","notation":"2 points @ 5 marks each"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "anyN", verbatim: "Published answer points", marks: 10, openList: true, group: {"claimMax":2,"perOption":5,"options":["Personal qualities – responsibility, trustworthy, self disciplined","Academic / Skills – numeracy, literacy, artistic, IT etc.","Socialisation – punctuality, respect for authority and rules, code of behaviour","Educational programmes – TY and LCA offer work experience, career guidance etc."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Higher Level — © State Examinations Commission.",
+    id: "he-2010-hl-sc-q3cii", topicId: "home-economics-3-10", conceptId: "sc-q3cii",
+    section: "C", questionRef: "2010 HL Section C E3 Q3(c)(ii)",
+    stem: "‘Secondary education in Ireland aims to build on the foundation of primary education to provide a comprehensive, high quality learning environment to enable all students to live full lives and to realise their potential as individuals and citizens.’ (www.educationireland.ie)",
+    questionText: "Discuss equality of opportunity in education with reference to each of the following: • gender equity • early school leavers. (20) .",
+    tariffModel: {"kind":"fixed","notation":"2 headings × 2 points × 5 marks"}, totalMarks: 20,
+    rows: [
+    { id: "gender", kind: "anyN", verbatim: "Gender inequity", marks: 10, openList: true, group: {"claimMax":2,"perOption":5,"options":["equal representation of both genders in third level, textbooks less gender stereotypical","subject availability and choice linked with school (single sex or co-ed)","differences in levels of attainment – girls higher level of achievement","schools’ emphasis – single sex girls schools Vs single sex boy’s schools"]} },
+    { id: "early-leavers", kind: "anyN", verbatim: "Early school leavers", marks: 10, openList: true, group: {"claimMax":2,"perOption":5,"options":["more likely to be unemployed and to experience social exclusion","programmes in place to help early school leavers return to education e.g. “school completion programme” available in schools with high numbers of early school leavers","DEIS programme","National Educational Welfare Board - tracking attendance","Back to Education Allowance","Youthreach","VTOS,"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];
