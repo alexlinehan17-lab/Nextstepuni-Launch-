@@ -219,5 +219,47 @@
     "attribution": "SEC Home Economics 2025 Higher Level marking scheme, page 15 — © State Examinations Commission.",
     "sourceNote": "Original source crop, bounds [30, 195, 576, 760], rendered at 2×. SHA256 0b69512ef2b7a0a87a0a60190c4428e25065e7849b2e5f85070dbdde6546d0fe.",
     "solution": true
+  },
+  "home-economics-2025-ol-sa-q14-care-symbols": {
+    "src": "/exam-figures/home-economics/home-economics-2025-ol-sa-q14-care-symbols.png",
+    "md5": "018e8ed4298c1db2d2f037e3de308c6f",
+    "alt": "Both original fabric-care symbols in printed order: hand in a wash tub, then an iron with two dots; original Woolmark and OMO source captions retained.",
+    "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [96, 366, 225, 610], rendered at 2×. SHA256 afe96c8eb618978a454e21ad63a7aab1cd28e8de4e3318c5f8e9a85bd6908850."
+  },
+  "home-economics-2025-ol-sb-q1a-soups": {
+    "src": "/exam-figures/home-economics/home-economics-2025-ol-sb-q1a-soups.png",
+    "md5": "034c0791f6abf970247103aa0c99ad16",
+    "alt": "Original comparison per 100 g. Soup A cook-chill costs €2.89; Soup B canned costs €2.00. A/B: energy 27/32 kcal, protein 1.1/0.8 g, carbohydrates 4.3/5.6 g, sugars 2.2/1.0 g, fibre 3.0/0.5 g, fat 0.6/0.5 g, saturates 0.1/0.3 g, salt 0.2/0.8 g. Both product images and source captions retained.",
+    "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [89, 218, 520, 499], rendered at 2×. SHA256 a84f3246f7ba7c3a054382088457bfb6dc89ac350bab3f10e287d9a9589ad70f."
+  },
+  "home-economics-2025-ol-sc-q1a-heat-loss": {
+    "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q1a-heat-loss.png",
+    "md5": "c5e7cc93c868076268c579696a2f1168",
+    "alt": "Original house heat-loss diagram with the five printed percentages: 25%, 35%, 10%, 15% and 15% and the Synergy Files source caption.",
+    "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [177, 228, 489, 361], rendered at 2×. SHA256 81bc60181d8bc82a6a12fc1a17244820542a29fc27eb0bbb7fd231a2184d8ccd."
+  },
+  "home-economics-2025-ol-sc-q2a-wedding-outfits": {
+    "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q2a-wedding-outfits.png",
+    "md5": "b9bc022d9f1b514613a9eaade14264af",
+    "alt": "All three original wedding outfits in printed order: a black one-shoulder jumpsuit, a dark grey suit with black top, and a blue floral dress. Original image-source caption retained.",
+    "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [168, 149, 475, 333], rendered at 2×. SHA256 2dc316c406a03029e1c79706b0d9cc43253e714fe2b5d88265445e515718c2df."
+  },
+  "home-economics-2025-ol-sc-q3a-classroom": {
+    "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q3a-classroom.png",
+    "md5": "a1f3169ec4ed5a31d8e74fd5b1313518",
+    "alt": "Original classroom photograph with children and their teacher, with the Logo Leisurewear source caption.",
+    "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [208, 132, 404, 291], rendered at 2×. SHA256 1176512475b0d7724d1885609d01df6a7b46dc92170ba5f71a45d01a574af08d."
+  },
+  "home-economics-2025-ol-sc-q4a-yoghurt": {
+    "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q4a-yoghurt.png",
+    "md5": "71b552657a12e3654fa93a702c9a92d4",
+    "alt": "Both original yoghurt photographs and their source captions: multiple retail tubs on the left and jars and small yoghurt pots on the right.",
+    "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 8 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [102, 140, 514, 267], rendered at 2×. SHA256 d55a8a02115dc2cc754bfe0cfa62644d4a576d664d60b4102dbc69fcfcd0767d."
   }
 }
