@@ -53,7 +53,7 @@ describe('source-defined language writing limits', () => {
   it('supports the Russian pre-title-deduction threshold, zero-content rule and explicit content cap', () => {
     const rubric: LanguageWritingRubric = {
       system: 'language-writing', taskRequirements: [], markingGuideNote: '', criteria: [
-        { id: 'content', label: 'Content', maxMarks: 10, permittedMarks: steps(10), guidance: [], limits: [{ id: 'one-item', maxMarks: 8, when: { any: [{ flag: 'one-item', prompt: 'Only one item discussed' }] }, guidance: [] }] },
+        { id: 'content', label: 'Content', maxMarks: 10, permittedMarks: [0, 2, 4, 6, 8, 10], guidance: [], limits: [{ id: 'one-item', maxMarks: 8, when: { any: [{ flag: 'one-item', prompt: 'Only one item discussed' }] }, guidance: [] }] },
         { id: 'title', label: 'Title deduction', kind: 'deduction', deductFrom: 'content', maxMarks: 1, permittedMarks: [0, 1], guidance: [] },
         { id: 'expression', label: 'Expression', maxMarks: 20, permittedMarks: steps(20), guidance: [], limits: [
           { id: 'lower', maxMarks: 14, when: { any: [{ criterionIds: ['content'], atMost: 5, ignoreDeductions: true }, { length: 'words', below: 25 }] }, guidance: [] },
@@ -64,7 +64,7 @@ describe('source-defined language writing limits', () => {
     };
     const scores: LanguageScores = { 'language:content': 6, 'language:title': 1, 'language:expression': 20, 'language:length:words': 25 };
     expect(languageWritingMarks(rubric, scores)).toBe(25); // raw C6 becomes5; E remains20
-    expect(languageWritingMarks(rubric, { ...scores, 'language:content': 5 })).toBe(18);
+    expect(languageWritingMarks(rubric, { ...scores, 'language:content': 4 })).toBe(17);
     expect(languageWritingMarks(rubric, { ...scores, 'language:length:words': 24 })).toBe(19);
     expect(languageWritingMarks(rubric, { ...scores, 'language:content': 0 })).toBe(0);
     expect(languageWritingMarks(rubric, { ...scores, 'language:soft-sign': 2 })).toBe(23);
