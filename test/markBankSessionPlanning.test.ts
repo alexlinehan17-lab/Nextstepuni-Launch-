@@ -94,4 +94,17 @@ describe('Mark Bank session counts stay consistent across every screen', () => {
     expect(sessionExerciseCount(announcements)).toBe(1);
     expect(new Set(announcements.map(card => card.id)).size).toBe(2);
   });
+
+  test.each(['japanese', 'russian'])('keeps every independently scored %s listening task visible', subjectId => {
+    const pool = cards(15).map(card => ({
+      ...card, subjectId, year: 2026, level: 'higher', topicId: `${subjectId}-1-0`,
+      audioMaterial: { playbackUrl: 'https://example.test/one-shared-recording.mp3' },
+    } as SecCard));
+    expect(pool.map(listeningExerciseKey)).toEqual(Array(15).fill(null));
+    expect(visibleSessionExercises(pool)).toEqual(pool);
+    const queue = resolveSessionQueue(pool, {}, NOW);
+    expect(queue).toHaveLength(MARK_BANK_SESSION_SIZE);
+    expect(sessionExerciseCount(queue)).toBe(MARK_BANK_SESSION_SIZE);
+    expect(new Set(queue.map(card => card.id)).size).toBe(MARK_BANK_SESSION_SIZE);
+  });
 });

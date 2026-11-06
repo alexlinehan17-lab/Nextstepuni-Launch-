@@ -2927,7 +2927,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </figure>
             )}
 
-            {!printedQuestionReplacesText && (audioMaterial && assessmentCard.subjectId === 'french' ? (
+            {!printedQuestionReplacesText && (audioMaterial && !listeningKey ? (
               <>
                 <AudioSourcePlayer source={audioMaterial} />
                 <QuestionText text={assessmentCard.questionChoices ? assessmentCard.questionText.split('\n')[0] : assessmentCard.questionText} />

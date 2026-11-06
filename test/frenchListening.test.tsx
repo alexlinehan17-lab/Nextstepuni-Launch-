@@ -481,17 +481,25 @@ describe('reviewed French listening tasks', () => {
     expect(screen.getByRole('radio', { name: 'bar' })).not.toBeChecked();
     expect(screen.queryByText('SEC French marking scheme')).not.toBeInTheDocument();
   });
-  it('keeps the official playback and recovery link available in Topic Atlas', () => {
+  it.each([
+    ['french', 'LC010GLPA00BV.pdf', 'LC010CLP017EV.mp3'],
+    ['japanese', 'LC058ALPA00BV.pdf', 'LC058ZLP017BV.mp3'],
+    ['russian', 'LC099ALPA00BV.pdf', 'LC099ZLP017BV.mp3'],
+  ] as const)('keeps the official %s playback and recovery link available in Topic Atlas', (subjectId, fileid, recording) => {
     vi.stubGlobal('IntersectionObserver', class {
       constructor(private callback: (entries: { isIntersecting: boolean }[]) => void) {}
       observe() { this.callback([{ isIntersecting: true }]); }
       disconnect() {}
     });
-    const { container } = render(<VaultQuestionCard sibling={{ subjectId: 'french', level: 'ordinary', lang: 'ev', year: 2026, fileid: 'LC010GLPA00BV.pdf', paperKey: 'aural', n: 'LA-Q1' }} saved={false} onToggleReview={vi.fn()} onOpenInPaper={vi.fn()} />);
+    const level = subjectId === 'french' ? 'ordinary' : 'higher';
+    // Audio must be available before the question crop or its anchor loads.
+    const n = subjectId === 'french' ? 'LA-Q1' : '1';
+    const { container } = render(<VaultQuestionCard sibling={{ subjectId, level, lang: 'ev', year: 2026, fileid, paperKey: 'aural', n }} saved={false} onToggleReview={vi.fn()} onOpenInPaper={vi.fn()} />);
     const player = container.querySelector('audio')!;
-    expect(player).toHaveAttribute('src', audio[0].source.playbackUrl);
+    const recordingUrl = `https://www.examinations.ie/archive/exampapers/2026/${recording}`;
+    expect(player).toHaveAttribute('src', recordingUrl);
     fireEvent.error(player);
-    expect(screen.getByRole('link', { name: 'Open the SEC recording' })).toHaveAttribute('href', audio[0].source.canonicalUrl);
+    expect(screen.getByRole('link', { name: 'Open the SEC recording' })).toHaveAttribute('href', recordingUrl);
     expect(within(container).queryByText('Camping (3rd option)')).not.toBeInTheDocument();
   });
 });
