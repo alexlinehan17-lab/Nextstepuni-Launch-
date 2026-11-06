@@ -282,5 +282,75 @@
     "alt": "Original high-protein snack table per 100 g/100 ml, including the adjacent product photograph and source caption. Protein bar / high-protein fruit yogurt: energy 523/122 kcal, protein 17/12 g, fat 37/2.9 g, saturates 7.6/1.3 g, carbohydrate 24/10 g, sugars 16/8 g, calcium 60/190 mg, fibre 13/3.5 g, salt 0.8/0.2 g.",
     "attribution": "SEC Home Economics 2026 Higher Level examination paper, page 2 — © State Examinations Commission.",
     "sourceNote": "Original source crop, bounds [78, 214, 539, 414], rendered at 2×. SHA256 ab66c21a305231f551dcf3fea99492ac323acef005d6f124a875dc6eace5636e."
+  },
+  "home-economics-2026-ol-sa-q7-pastry": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sa-q7-pastry.png",
+    "md5": "31ad2b824b86e1d98239bc074f594610",
+    "alt": "Original photograph of flour being sifted into a bowl, with the printed Freepik source caption.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [207, 76, 490, 184], rendered at 2×. SHA256 6af5da13a430e0b8f854bbaf05612aef86b8e1072ae0a5fd49c49b950f11608a."
+  },
+  "home-economics-2026-ol-sa-q12-energy-label": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sa-q12-energy-label.png",
+    "md5": "295623432c838cb46a573be4a3a94380",
+    "alt": "Original fridge-freezer EU energy label and source caption. Rating D on the A–G scale; 265 kWh/annum; frozen compartment 208 L, fresh-food compartment 372 L; noise 41 dB, class C; QR code at the top. The adjacent original answer space is retained.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [55, 449, 542, 718], rendered at 2×. SHA256 e1d5c789b726c115e14929fcae191bff220243befe042005c36936c1b89e5ec0."
+  },
+  "home-economics-2026-ol-sa-q14-fabrics": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sa-q14-fabrics.png",
+    "md5": "e593639ad6fafb6cc08087d75880c9f0",
+    "alt": "Original collage of colourful cushions, fabric swatches, upholstery and patterned household textiles, with the printed source caption.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [115, 313, 506, 538], rendered at 2×. SHA256 3211e15df6ab68ad1db4ed35c861db691f8b2b7e64e8c97b4b2eacaea5310a4e."
+  },
+  "home-economics-2026-ol-sb-q1a-lasagne": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sb-q1a-lasagne.png",
+    "md5": "e469b5fc2ae2960d1602ec234b63959e",
+    "alt": "Original vegetarian-lasagne nutrition table per 100 g with adjacent food photograph and source caption. Energy 117 kcal; protein 4.8 g; carbohydrate 9.0 g, sugars 4.4 g; fibre 6.0 g; fats 3.5 g, saturates 0.0 g; iron printed as 1.0 g; salt 0.3 g. The iron unit is reproduced exactly as printed.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [76, 210, 565, 433], rendered at 2×. SHA256 c27a737ae1740108674a19e4319c2891dd6ca1866ad2c294d0b3277e597621a8."
+  },
+  "home-economics-2026-ol-sb-q3a-food-pyramid": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sb-q3a-food-pyramid.png",
+    "md5": "98074b60bdce56e31b83e3f6d2d6da12",
+    "alt": "Original six-shelf Food Pyramid for adults, teenagers and children aged five and over, with source caption. Top foods high in fat, sugar and salt: not every day, maximum once or twice a week. Fats/spreads/oils: very small amounts. Meat/poultry/fish/eggs/beans/nuts: 2 servings; milk/yogurt/cheese: 3 servings; wholemeal cereals/breads/potatoes/pasta/rice: 3–5 servings; vegetables/salad/fruit: 5–7 servings a day.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [53, 326, 565, 634], rendered at 2×. SHA256 7ed41cd59c550a97cb29703a7d5afecd7c4f6d4cdd28fe24cf508040c9123921."
+  },
+  "home-economics-2026-ol-sb-q4a-microwave": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sb-q4a-microwave.png",
+    "md5": "e891293eac1a65a871d31935c80ee3c3",
+    "alt": "Original photograph of a white microwave oven with a dark front window and two rotary controls, and the printed Powercity source caption.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [157, 104, 525, 278], rendered at 2×. SHA256 d58b9c75fe72c7f6a6ac1635838d27bfaddd34040bd5eba4aaf367c4c77d7063."
+  },
+  "home-economics-2026-ol-sc-q1-house-plan": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sc-q1-house-plan.png",
+    "md5": "eeb4cdf6699c9ffa84470cc6609e02b1",
+    "alt": "Original family-house floor plan. Left: utility, playroom and sitting room above an open kitchen/dining room with patio doors to the garden. Centre: entrance hall, coat and bag storage, bathroom and ensuite. Right: main bedroom, walk-in wardrobe, two further bedrooms including a cot, and garage and gym. Doors, circulation and all room labels retained.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [44, 204, 535, 367], rendered at 2×. SHA256 563a81c56028d5c8ea06511b1469a512dfba347e55d9f5118d4d714b8774db53."
+  },
+  "home-economics-2026-ol-sc-q2-uniforms": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sc-q2-uniforms.png",
+    "md5": "f5a2b44fdda7a69549194237282af509",
+    "alt": "Original photograph of four health care uniforms: a white coat, blue tunic and trousers, black tunic and trousers, and green tunic and trousers, with source caption.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [159, 120, 538, 297], rendered at 2×. SHA256 6cb0589980e4b7a024b642137e83bbfc669962f9fec45a34ac650eba465f6170."
+  },
+  "home-economics-2026-ol-sc-q3-workers": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sc-q3-workers.png",
+    "md5": "ba3eb25b09bd0a4793be8c4ed224f0e7",
+    "alt": "Original photograph of three construction workers wearing hard hats and high-visibility vests while consulting a plan, with the printed Building source caption.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [209, 124, 526, 265], rendered at 2×. SHA256 1a3bd248c5f42d03c7d9c77b7ab0b5bdbfc9a0dc8bfa69b41e84d3f2f0ab97be."
+  },
+  "home-economics-2026-ol-sc-q4-pregnancy": {
+    "src": "/exam-figures/home-economics/home-economics-2026-ol-sc-q4-pregnancy.png",
+    "md5": "d0cb50b2b1e5b0ac403c216416f2c2a3",
+    "alt": "Original photograph of a pregnant woman preparing vegetables at a kitchen counter, with the printed source caption.",
+    "attribution": "SEC Home Economics 2026 Ordinary Level examination paper, page 8 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [173, 126, 535, 278], rendered at 2×. SHA256 7d778f995adcb946d853ed7be2365d6b680612e702eb64fdd63342fa4e4f56d3."
   }
 }
