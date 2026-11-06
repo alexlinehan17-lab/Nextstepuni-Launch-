@@ -23,6 +23,7 @@
  */
 
 import type { SecCard } from '../../../../types/markBank';
+import { withReviewedCards } from './reviewed';
 
 const base = {
   source: 'sec' as const,
@@ -31,7 +32,7 @@ const base = {
   qa: { gates: ['verbatim', 'tariff', 'figure'], humanReviewedBy: 'agent-verified', humanReviewedAt: '2026-07-31' },
 };
 
-export const CARDS: SecCard[] = [
+export const CARDS: SecCard[] = withReviewedCards([
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
@@ -2093,4 +2094,4 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the printed material exactly as the examination set it, then answer. The examination paper prints this question in Irish and in English and heads its page \"ANSWER THE FOLLOWING QUESTIONS IN ENGLISH\" — it is answered in English or in Irish, not in Russian."
     },
   } as SecCard,
-];
+], 'higher');
