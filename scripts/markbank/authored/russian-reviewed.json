@@ -19,7 +19,7 @@
         "kind": "anyN",
         "verbatim": "The answers the scheme accepts",
         "marks": null,
-        "contextNote": "",
+        "contextNote": "Answer in English or Irish. Both languages are permitted by the original bilingual paper.",
         "group": {
           "claimMax": 2,
           "perOption": 2,
@@ -89,7 +89,7 @@
         "kind": "anyN",
         "verbatim": "The answers the scheme accepts",
         "marks": null,
-        "contextNote": "",
+        "contextNote": "Answer in English or Irish. Both languages are permitted by the original bilingual paper.",
         "group": {
           "claimMax": 1,
           "perOption": 2,
@@ -156,7 +156,7 @@
         "kind": "anyN",
         "verbatim": "The answers the scheme accepts",
         "marks": null,
-        "contextNote": "",
+        "contextNote": "Answer in English or Irish. Both languages are permitted by the original bilingual paper.",
         "group": {
           "claimMax": 2,
           "perOption": 2,
@@ -225,7 +225,7 @@
         "kind": "anyN",
         "verbatim": "The answers the scheme accepts",
         "marks": null,
-        "contextNote": "",
+        "contextNote": "Answer in English or Irish. Both languages are permitted by the original bilingual paper.",
         "group": {
           "claimMax": 3,
           "perOption": 2,
@@ -296,7 +296,7 @@
         "kind": "anyN",
         "verbatim": "The answers the scheme accepts",
         "marks": null,
-        "contextNote": "",
+        "contextNote": "Answer in English or Irish. Both languages are permitted by the original bilingual paper.",
         "group": {
           "claimMax": 2,
           "perOption": 2,
@@ -365,7 +365,7 @@
         "kind": "anyN",
         "verbatim": "The answers the scheme accepts",
         "marks": null,
-        "contextNote": "",
+        "contextNote": "Answer in English or Irish. Both languages are permitted by the original bilingual paper.",
         "group": {
           "claimMax": 3,
           "perOption": 2,
@@ -436,7 +436,7 @@
         "kind": "anyN",
         "verbatim": "The answers the scheme accepts",
         "marks": null,
-        "contextNote": "",
+        "contextNote": "Answer in English or Irish. Both languages are permitted by the original bilingual paper.",
         "group": {
           "claimMax": 2,
           "perOption": 2,
@@ -505,7 +505,7 @@
         "kind": "anyN",
         "verbatim": "The answers the scheme accepts",
         "marks": null,
-        "contextNote": "",
+        "contextNote": "Answer in English or Irish. Both languages are permitted by the original bilingual paper.",
         "group": {
           "claimMax": 1,
           "perOption": 2,
@@ -572,7 +572,7 @@
         "kind": "anyN",
         "verbatim": "The answers the scheme accepts",
         "marks": null,
-        "contextNote": "",
+        "contextNote": "Answer in English or Irish. Both languages are permitted by the original bilingual paper.",
         "group": {
           "claimMax": 3,
           "perOption": 2,
@@ -647,7 +647,7 @@
           1,
           2
         ],
-        "contextNote": "1 mark for friends"
+        "contextNote": "1 mark for friends Answer in English or Irish. Both languages are permitted by the original bilingual paper."
       }
     ],
     "sourceMaterial": {
@@ -1239,7 +1239,7 @@
           ]
         }
       ],
-      "markingGuideNote": "",
+      "markingGuideNote": "Answer in English or Irish. Both languages are permitted by the original bilingual paper.",
       "criteria": [
         {
           "id": "summary-skills",
@@ -1582,7 +1582,7 @@
           ]
         }
       ],
-      "markingGuideNote": "",
+      "markingGuideNote": "Answer in English or Irish. Both languages are permitted by the original bilingual paper.",
       "criteria": [
         {
           "id": "summary-skills",
@@ -1823,7 +1823,7 @@
           ]
         }
       ],
-      "markingGuideNote": "",
+      "markingGuideNote": "Answer in English or Irish. Both languages are permitted by the original bilingual paper.",
       "criteria": [
         {
           "id": "summary-skills",
@@ -2132,7 +2132,7 @@
           ]
         }
       ],
-      "markingGuideNote": "",
+      "markingGuideNote": "Answer in English or Irish. Both languages are permitted by the original bilingual paper.",
       "criteria": [
         {
           "id": "summary-skills",
@@ -2354,7 +2354,8 @@
         "id": "form-1",
         "kind": "point",
         "verbatim": "девятом веке",
-        "marks": null
+        "marks": null,
+        "contextNote": "The complete exercise is marked out of 30. The scheme does not print separate marks for individual forms. Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks. Assess the complete exercise using this rule."
       },
       {
         "id": "form-2",
