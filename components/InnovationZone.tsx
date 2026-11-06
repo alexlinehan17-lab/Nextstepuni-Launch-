@@ -44,7 +44,7 @@ const MarkBank = lazy(() => import('./MarkBank/MarkBank'));
 const DiagramVault = lazy(() => import('./DiagramVault/DiagramVault'));
 const AnswerArchitect = lazy(() => import('./AnswerArchitect/AnswerArchitect'));
 const DefinitionDrill = lazy(() => import('./DefinitionDrill/DefinitionDrill'));
-const CourseworkCompanion = lazy(() => import('./CourseworkCompanion/CourseworkCompanion'));
+const CourseworkStudio = lazy(() => import('./CourseworkStudio/CourseworkStudio'));
 const HowTheyDidIt = lazy(() => import('./HowTheyDidIt'));
 const YourPossibleLife = lazy(() => import('./YourPossibleLife'));
 const OralExamTrainer = lazy(() => import('./OralExamTrainer'));
@@ -99,7 +99,7 @@ interface ToolChrome {
  * reading column. `max-w-4xl` yields 848px of usable width, which is right for a
  * page of prose and wrong for a two-pane workspace.
  */
-const WIDE_TOOLS = new Set(['mark-bank', 'your-possible-life', 'war-room', 'journey', 'planner', 'paper-trail']);
+const WIDE_TOOLS = new Set(['mark-bank', 'your-possible-life', 'war-room', 'journey', 'planner', 'paper-trail', 'coursework-companion']);
 
 const TOOL_CHROME: Record<string, ToolChrome> = {
   'journey':         { themeColor: '#8B82B8', eyebrow: 'Track · Simulator',           subtitle: 'Navigate the choices of your final school year, then turn the outcome into a practical next step.', showHeader: true },
@@ -133,7 +133,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'diagram-vault':   { themeColor: '#F26B1F', eyebrow: 'Understand · Exam diagrams',  subtitle: 'Every diagram, graph, map and chart that has come up — cropped from the paper and decoded.', showHeader: true },
   'answer-architect': { themeColor: '#F26B1F', eyebrow: 'Understand · Top-answer skeletons', subtitle: 'The mark-earning skeleton of a top answer — the beats a full-marks answer hits, in order, from the SEC scheme.', showHeader: true },
   'definition-drill': { themeColor: '#F26B1F', eyebrow: 'Understand · Key definitions', subtitle: 'Drill the exact mark-earning wording the SEC scheme awards the definition marks for.', showHeader: true },
-  'coursework-companion': { themeColor: '#F26B1F', eyebrow: 'Understand · Coursework & projects', subtitle: 'The coursework, project and practical components — marked exactly as the filed SEC scheme prints it.', showHeader: true },
+  'coursework-companion': { themeColor: '#F26B1F', eyebrow: 'Coursework Studio', subtitle: 'Keep the evidence. Make the connection. Know your next move.', showHeader: false },
   'command-word-reflex': { themeColor: '#6366F1', eyebrow: 'Technique · Exam skills', subtitle: 'Half of exam technique is reading the question right. Spot the command word in real questions and learn what it’s really asking — and the trap that loses marks.', showHeader: false },
   'how-they-did-it':  { themeColor: '#0E7C6B', eyebrow: 'Real people. Useful moves.', subtitle: 'See the route they took, and a move you can borrow.', showHeader: true },
   // The experience has its own stage header and editorial title on every step.
@@ -693,7 +693,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             iconBg: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-800 dark:text-sky-300',
             accentBarColor: 'bg-sky-700', tagBg: 'bg-sky-100 dark:bg-sky-900/30', tagText: 'text-sky-800 dark:text-sky-400',
             hoverBorder: 'hover:border-sky-400/50 dark:hover:border-sky-500/40',
-            component: <PaperTrail uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentLevels={subjectProfile?.subjects.map(s => ({ name: s.subjectName, level: s.level }))} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} isLca={isLcaYear(user?.yearGroup)} onboardingExamDate={subjectProfile?.examStartDate} onOpenTool={setActiveTool} onBack={() => setActiveTool(null)} />,
+            component: <PaperTrail uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentLevels={subjectProfile?.subjects.map(s => ({ name: s.subjectName, level: s.level }))} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} isLca={isLcaYear(user?.yearGroup)} onboardingExamDate={subjectProfile?.examStartDate} onOpenTool={setActiveTool} />,
         },
         {
             id: 'topic-atlas', title: 'Topic Atlas', description: 'Every question ever asked, mapped by topic \u2014 drill any topic across every year.', icon: Compass, needsProfile: false,
@@ -702,7 +702,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-800 dark:text-orange-300',
             accentBarColor: 'bg-orange-700', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-800 dark:text-orange-400',
             hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
-            component: <PaperTrail uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentLevels={subjectProfile?.subjects.map(s => ({ name: s.subjectName, level: s.level }))} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} isLca={isLcaYear(user?.yearGroup)} onboardingExamDate={subjectProfile?.examStartDate} onOpenTool={setActiveTool} onBack={() => setActiveTool(null)} initialView="revise" />,
+            component: <PaperTrail uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentLevels={subjectProfile?.subjects.map(s => ({ name: s.subjectName, level: s.level }))} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} isLca={isLcaYear(user?.yearGroup)} onboardingExamDate={subjectProfile?.examStartDate} onOpenTool={setActiveTool} initialView="revise" />,
         },
         {
             id: 'diagram-vault', title: 'Diagram Vault', description: 'Every diagram, graph, map and chart that has come up in the exams — decoded.', icon: Images, needsProfile: false,
@@ -733,13 +733,13 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             component: <DefinitionDrill studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
         },
         {
-            id: 'coursework-companion', title: 'Coursework Companion', description: 'The coursework, project and practical components — and exactly how the SEC scheme marks them.', icon: FolderCheck, needsProfile: false,
+            id: 'coursework-companion', title: 'Coursework Studio', description: 'Keep your evidence, connect your thinking and move your project forward.', icon: FolderCheck, needsProfile: false,
             curriculum: 'senior' as const,
             tag: 'Coursework & projects', accentHex: '#F26B1F', gridClass: 'md:col-span-2',
             iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-700 dark:text-orange-300',
             accentBarColor: 'bg-orange-500', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-orange-400',
             hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
-            component: <CourseworkCompanion studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
+            component: <CourseworkStudio uid={user?.uid} studentSubjects={subjectProfile?.subjects} examDate={subjectProfile?.examStartDate} yearGroup={user?.yearGroup} isLca={isLcaYear(user?.yearGroup)} />,
         },
         {
             id: 'oral-trainer', title: 'Irish Oral Trainer', description: 'Rehearse the Irish oral out loud, record yourself, and track your readiness on every part.', icon: Mic, needsProfile: false,
@@ -825,7 +825,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
     // (curriculumLevel itself is now declared above the tools array.)
     // Workshop (WIP) tools — parked out of the main grid but still openable via
     // the sidebar Workshop page's deep-links (currentTool lookup is unfiltered).
-    const WIP_TOOL_IDS = new Set(['diagram-vault', 'answer-architect', 'definition-drill', 'oral-trainer', 'examiners-chair', 'coursework-companion']);
+    const WIP_TOOL_IDS = new Set(['diagram-vault', 'answer-architect', 'definition-drill', 'oral-trainer', 'examiners-chair']);
     const curriculumVisibleTools = tools.filter(t => {
       // Old CAO Simulator URLs and module links remain valid, but the duplicate
       // tile is removed now that all of its capability lives in Points Passport.
@@ -908,7 +908,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
     >
 
       <header data-student-page-header
-        className={`lp-navigation-header ${activeTool === 'paper-trail' && !mobileAppDesign ? 'hidden md:block ' : ''}fixed top-0 left-0 right-0 z-[60] bg-[var(--surface-paper)] md:px-10 border-b border-[var(--outline-soft)]`}
+        className={`lp-navigation-header fixed top-0 left-0 right-0 z-[60] bg-[var(--surface-paper)] md:px-10 border-b border-[var(--outline-soft)]`}
         style={{
           paddingTop: 'calc(16px + var(--sat, 0px))',
           paddingBottom: '16px',

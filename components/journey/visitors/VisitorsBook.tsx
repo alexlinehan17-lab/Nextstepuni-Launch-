@@ -1,3 +1,4 @@
+import { Button } from '../../approved-ui-runtime';
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowUpRight, Check } from 'lucide-react';
 import type { PaperIsland } from '../../../functions/src/paperIslandModel';
@@ -19,10 +20,14 @@ function WonderCardArt({id}:{id:CrewId}) {
 }
 
 export function VisitorsBook({island,onVisit}:{island:PaperIsland;onVisit:(id:CrewId)=>void}) {
+  const [filter, setFilter] = useState<'All visitors' | 'On your island' | 'Wishes ready'>('All visitors');
   const met=island.metVisitors??[],claimed=island.claimedVisitors??[];
+  const visibleCrew = journeyCrew.filter(crew => filter === 'All visitors' || (filter === 'Wishes ready' ? met.includes(crew.id) && !claimed.includes(crew.id) && visitorWishFulfilled(island.tiles, crew.id) : met.includes(crew.id) || claimed.includes(crew.id) || visitorHasAnchor(island.tiles, crew.id)));
   return <section className="visitors-book" aria-label="Wandering visitors">
     <div className="visitors-book-heading"><span className="eyebrow">JOURNEY STAR CREW / 12 WANDERERS</span><h2>People of the journey<span>.</span></h2><p>A little place on your island. A wish to make together. Meet each visitor to discover the Wonder they bring.</p><span className="visitors-book-count">{claimed.length} / 12 wishes fulfilled</span></div>
-    <div className="visitors-card-grid">{journeyCrew.map(crew=>{
+    <nav className="visitor-filters" aria-label="Filter visitors">{(['All visitors', 'On your island', 'Wishes ready'] as const).map(label => <Button variant="outline" key={label} aria-pressed={filter === label} onClick={() => setFilter(label)}>{label}</Button>)}</nav>
+    {!visibleCrew.length && <p className="visitor-filter-empty">No wishes ready yet. Meet a visitor to discover what they would love you to build.</p>}
+    <div className="visitors-card-grid">{visibleCrew.map(crew=>{
       const earned=claimed.includes(crew.id),heard=met.includes(crew.id),arrived=heard||earned||visitorHasAnchor(island.tiles,crew.id),ready=heard&&!earned&&visitorWishFulfilled(island.tiles,crew.id);
       return <button className={`visitor-collection-card ${arrived?'has-arrived':''}`} key={crew.id} onClick={()=>onVisit(crew.id)} aria-label={`Meet ${crew.name}`}>
         <JourneyCrewArt id={crew.id} lazy/>

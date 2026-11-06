@@ -22,7 +22,7 @@ const result = await build({
   bundle: true, minify: true, sourcemap: false, format: 'esm', platform: 'browser',
   target: 'es2022', packages: 'external', metafile: true, jsx: 'automatic',
   outfile: 'components/approved-ui-runtime.js',
-  banner: { js: '/* Compiled purchased controls for NextStepUni. Editable originals remain local. */\nimport "./approved-ui-runtime.css";\nimport "./approved-ui-theme.css";' },
+  banner: { js: 'import "../design/quiet-focus.css";\n/* Compiled purchased controls for NextStepUni. Editable originals remain local. */\nimport "./approved-ui-runtime.css";\nimport "./approved-ui-theme.css";' },
   plugins: [{ name: 'private-control-sources', setup(api) {
     // Every Kobra scope shares the same sound runtime and listener ownership.
     // The navigation runtime contains the current purchased sound patches.

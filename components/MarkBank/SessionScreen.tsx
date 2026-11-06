@@ -108,9 +108,10 @@ const MUTED = 'var(--mb-muted)';
 const LABEL = 'var(--mb-label)';
 const MUTED_BORDER = 'var(--mb-border)';
 const PLATE = 'var(--mb-plate)';
-const SUCCESS = 'var(--mb-success)';
 const SUCCESS_TINT = 'var(--mb-success-tint)';
 const SUCCESS_TEXT = 'var(--mb-success-text)';
+const CLAIM = 'var(--mb-claim)';
+const ON_CLAIM = 'var(--mb-on-claim)';
 /** Accent means "this is the action / you are here". Never "correct". */
 const ACCENT = '#F26B1F';
 /** How far the frame layers sit off the card, and the stroke's weight. */
@@ -186,9 +187,29 @@ export interface SessionCardResult {
   marksAvailable: number;
 }
 
+/** In-memory work retained while checking the post-study recap. */
+export interface SessionResponse {
+  claims: Record<string, RowClaim>;
+  picks: Record<string, number[]>;
+  rubricScores: RubricScores;
+  draft: string;
+  requirementChecks: Record<number, boolean>;
+  answerVariantId: string | null;
+  waysInWork: WaysInWork;
+}
+
 export interface SessionScreenProps {
   /** Approved compact paper surface with a state-preserving full-screen view. */
   paperLayout?: boolean;
+  /** A finite post-study check using this same question and scoring surface. */
+  studyReview?: {
+    banner: React.ReactNode;
+    topicTitle: (card: SecCard) => string;
+    onCue: (cue: 'tap' | 'swipe' | 'skip' | 'complete') => void;
+    onResponse: (cardId: string, response: SessionResponse) => void;
+    responses?: Record<string, SessionResponse>;
+    revisit?: boolean;
+  };
   /** Resolved queue for this sitting. Snapshotted by the caller so it cannot
    *  shrink underneath the student mid-session. */
   cards: SecCard[];
@@ -622,9 +643,9 @@ const MarkRowView: React.FC<{
                     <button key={mark} type="button" disabled={blocked} aria-pressed={selected === mark}
                       aria-label={`Award ${mark} marks for ${part.verbatim} · ${row.verbatim}`}
                       onClick={() => onClaim(partClaimId(id, part.id), mark)}
-                      style={{ minWidth: 34, padding: '7px 10px', borderRadius: 6, border: `1px solid ${selected === mark ? SUCCESS : MUTED_BORDER}`,
-                        background: selected === mark ? SUCCESS : 'var(--mb-paper)',
-                        color: selected === mark ? '#fff' : INK, font: `700 11px/1 ${MONO}`, cursor: blocked ? 'default' : 'pointer' }}>
+                      style={{ minWidth: 34, padding: '7px 10px', borderRadius: 6, border: `1px solid ${selected === mark ? CLAIM : MUTED_BORDER}`,
+                        background: selected === mark ? CLAIM : 'var(--mb-paper)',
+                        color: selected === mark ? ON_CLAIM : INK, font: `700 11px/1 ${MONO}`, cursor: blocked ? 'default' : 'pointer' }}>
                       {mark}
                     </button>
                   ))}
@@ -683,12 +704,12 @@ const MarkRowView: React.FC<{
         transition={{ duration: 0.14, ease: EASE, delay: reduced ? 0 : Math.min(index, 8) * 0.024 }}
         style={{
           marginBottom: 8, padding: '12px 13px', borderRadius: 12,
-          border: `1.5px solid ${chosen ? SUCCESS : MUTED_BORDER}`,
-          background: chosen ? SUCCESS_TINT : 'var(--mb-paper)',
+          border: `1.5px solid ${MUTED_BORDER}`,
+          background: 'var(--mb-paper)',
         }}
       >
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10, marginBottom: 9 }}>
-          <span style={{ font: `600 12.5px/1.35 ${SANS}`, color: chosen ? SUCCESS_TEXT : INK_2 }}>
+          <span style={{ font: `600 12.5px/1.35 ${SANS}`, color: INK_2 }}>
             {/* A descending tariff is stated as it is paid. Saying "5 marks
                 each" of a 6-then-4 split is wrong for both halves. A menu the
                 scheme prices only as a whole (an orderedSplit or questionTotal
@@ -703,8 +724,8 @@ const MarkRowView: React.FC<{
             <span style={{
               font: `700 10.5px/1.7 ${MONO}`, borderRadius: 6, padding: '0 6px', whiteSpace: 'nowrap',
               fontVariantNumeric: 'tabular-nums',
-              background: chosen ? SUCCESS_TINT : 'var(--mb-raised)',
-              color: chosen ? SUCCESS_TEXT : MUTED,
+              background: 'var(--mb-raised)',
+              color: INK_2,
             }}>
               {chosen} of {g.claimMax}
             </span>
@@ -730,24 +751,24 @@ const MarkRowView: React.FC<{
                 aria-pressed={on}
                 style={{
                   width: '100%', textAlign: 'left', display: 'grid',
-                  gridTemplateColumns: '16px 1fr', gap: 8, alignItems: 'start',
+                  gridTemplateColumns: '16px 1fr', gap: 8, alignItems: 'center',
                   padding: '7px 9px', borderRadius: 9,
-                  border: `1px solid ${on ? SUCCESS : '#e4e0da'}`,
-                  background: on ? 'var(--mb-paper)' : 'transparent',
+                  border: `1px solid ${on ? CLAIM : MUTED_BORDER}`,
+                  background: on ? CLAIM : 'transparent',
                   cursor: disabled ? 'not-allowed' : 'pointer',
                   opacity: disabled ? 0.45 : 1,
-                  font: `500 12.5px/1.4 ${SANS}`, color: on ? SUCCESS_TEXT : INK_2,
+                  font: `500 12.5px/1.4 ${SANS}`, color: on ? ON_CLAIM : INK_2,
                 }}
               >
                 <span style={{
-                  width: 14, height: 14, borderRadius: 4, marginTop: 2, flex: 'none',
-                  background: on ? SUCCESS : 'transparent',
+                  width: 14, height: 14, borderRadius: 4, flex: 'none',
+                  background: on ? ON_CLAIM : 'transparent', color: CLAIM,
                   border: on ? 'none' : `1.5px solid ${MUTED_BORDER}`,
                   display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
                 }}>
                   {on && (
                     <svg width="9" height="9" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="#FFFFFF" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   )}
                 </span>
@@ -759,7 +780,7 @@ const MarkRowView: React.FC<{
                   {option.includes('\n')
                     ? option.split('\n').map((line, li) => (
                         <span key={li} style={{ display: 'grid', gridTemplateColumns: '10px 1fr', gap: 6, marginTop: li ? 3 : 0 }}>
-                          <span aria-hidden="true" style={{ color: MUTED }}>&middot;</span>
+                          <span aria-hidden="true" style={{ color: on ? ON_CLAIM : MUTED }}>&middot;</span>
                           <span>{line}</span>
                         </span>
                       ))
@@ -813,13 +834,13 @@ const MarkRowView: React.FC<{
         aria-pressed={claimed}
         style={{
           width: '100%', textAlign: 'left', display: 'grid',
-          gridTemplateColumns: '20px minmax(0, 1fr) auto', gap: 10, alignItems: 'start',
+          gridTemplateColumns: '20px minmax(0, 1fr) auto', gap: 10, alignItems: 'center',
           padding: '11px 12px', borderRadius: 12,
-          border: `1.5px solid ${claimed ? SUCCESS : MUTED_BORDER}`,
-          background: claimed ? SUCCESS_TINT : 'var(--mb-paper)',
+          border: `1.5px solid ${claimed ? CLAIM : MUTED_BORDER}`,
+          background: claimed ? CLAIM : 'var(--mb-paper)',
           cursor: blocked ? 'not-allowed' : 'pointer',
           opacity: blocked ? 0.5 : 1,
-          font: `500 13.5px/1.42 ${SANS}`, color: INK_2,
+          font: `500 13.5px/1.42 ${SANS}`, color: claimed ? ON_CLAIM : INK_2,
           transition: reduced ? 'none' : 'background 160ms, border-color 160ms',
         }}
       >
@@ -830,8 +851,8 @@ const MarkRowView: React.FC<{
             // A circle is a RADIO — one of many. Every marking point here is
             // claimed independently, so the control is a checkbox: rounded
             // square, not round.
-            width: 18, height: 18, borderRadius: 5, marginTop: 1,
-            background: claimed ? SUCCESS : 'transparent',
+            width: 18, height: 18, borderRadius: 5,
+            background: claimed ? ON_CLAIM : 'transparent', color: CLAIM,
             border: claimed ? 'none' : `1.5px solid ${MUTED_BORDER}`,
             display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flex: 'none',
           }}
@@ -840,31 +861,31 @@ const MarkRowView: React.FC<{
               on some platforms, and this app bans emoji as UI furniture. */}
           {claimed && (
             <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-              <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           )}
         </MotionSpan>
 
         <span style={{ minWidth: 0, overflowWrap: 'anywhere' }}>
           {wholeResponse && row.contextNote && (
-            <span style={{ display: 'block', marginBottom: 10, font: `400 12px/1.4 ${SANS}`, color: MUTED }}>
+            <span style={{ display: 'block', marginBottom: 10, font: `400 12px/1.4 ${SANS}`, color: claimed ? ON_CLAIM : MUTED }}>
               {row.contextNote}
             </span>
           )}
           {/* A marking point takes its direction from its own text, so an
               Arabic answer reads and aligns the way the scheme printed it. */}
-          <span dir="auto" style={{ color: claimed ? SUCCESS_TEXT : INK_2, whiteSpace: wholeResponse ? 'pre-line' : undefined }}>
+          <span dir="auto" style={{ color: claimed ? ON_CLAIM : INK_2, whiteSpace: wholeResponse ? 'pre-line' : undefined }}>
             {wholeResponse ? row.verbatim.replace(/ • /g, '\n\n') : row.verbatim}
             {/* The scheme's own alternatives, shown in full: a student who wrote
                 "heterotrophic" earned the mark and must be able to see that. */}
             {row.accepts?.length ? (
-              <span style={{ color: MUTED }}>
+              <span style={{ color: claimed ? ON_CLAIM : MUTED }}>
                 {' or '}{row.accepts.join(' or ')}
               </span>
             ) : null}
           </span>
           {!wholeResponse && row.contextNote && (
-            <span style={{ display: 'block', marginTop: 3, font: `400 12px/1.4 ${SANS}`, color: MUTED }}>
+            <span style={{ display: 'block', marginTop: 3, font: `400 12px/1.4 ${SANS}`, color: claimed ? ON_CLAIM : MUTED }}>
               {row.contextNote}
             </span>
           )}
@@ -879,8 +900,8 @@ const MarkRowView: React.FC<{
           <span style={{
             font: `700 10.5px/1.7 ${MONO}`, borderRadius: 6, padding: '0 6px', whiteSpace: 'nowrap',
             fontVariantNumeric: 'tabular-nums',
-            background: claimed ? SUCCESS_TINT : 'var(--mb-raised)',
-            color: claimed ? SUCCESS_TEXT : MUTED,
+            background: claimed ? CLAIM : 'var(--mb-raised)',
+            color: claimed ? ON_CLAIM : MUTED,
           }}>
             {claimed ? `${marks}m` : `${marks}m`}
           </span>
@@ -974,16 +995,16 @@ const PclmRubricPanel: React.FC<{
                 onClick={() => onRequirement(index)}
                 style={{
                   display: 'grid', gridTemplateColumns: '24px 1fr', gap: 9,
-                  alignItems: 'start', width: '100%', padding: '10px 11px', textAlign: 'left',
-                  borderRadius: 10, border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                  background: checked ? SUCCESS_TINT : 'var(--mb-paper)', color: checked ? SUCCESS_TEXT : INK_2,
+                  alignItems: 'center', width: '100%', padding: '10px 11px', textAlign: 'left',
+                  borderRadius: 10, border: `1.5px solid ${checked ? CLAIM : MUTED_BORDER}`,
+                  background: checked ? CLAIM : 'var(--mb-paper)', color: checked ? ON_CLAIM : INK_2,
                   font: `500 12.5px/1.45 ${SANS}`, cursor: 'pointer',
                 }}
               >
                 <span aria-hidden style={{
                   display: 'grid', placeItems: 'center', width: 20, height: 20, borderRadius: 6,
-                  border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                  background: checked ? SUCCESS : 'transparent', color: '#fff',
+                  border: `1.5px solid ${checked ? ON_CLAIM : MUTED_BORDER}`,
+                  background: checked ? ON_CLAIM : 'transparent', color: CLAIM,
                   font: `800 12px/1 ${SANS}`,
                 }}>
                   {checked ? (
@@ -1331,17 +1352,17 @@ const IrishRubricPanel: React.FC<{
                 onClick={() => onRequirement(index)}
                 style={{
                   display: 'grid', gridTemplateColumns: '24px 1fr', gap: 9,
-                  alignItems: 'start', width: '100%', padding: '10px 11px', textAlign: 'left',
-                  borderRadius: 10, border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                  background: checked ? SUCCESS_TINT : 'var(--mb-paper)',
-                  color: checked ? SUCCESS_TEXT : INK_2,
+                  alignItems: 'center', width: '100%', padding: '10px 11px', textAlign: 'left',
+                  borderRadius: 10, border: `1.5px solid ${checked ? CLAIM : MUTED_BORDER}`,
+                  background: checked ? CLAIM : 'var(--mb-paper)',
+                  color: checked ? ON_CLAIM : INK_2,
                   font: `500 12.5px/1.45 ${SANS}`, cursor: 'pointer',
                 }}
               >
                 <span aria-hidden style={{
                   display: 'grid', placeItems: 'center', width: 20, height: 20, borderRadius: 6,
-                  border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                  background: checked ? SUCCESS : 'transparent', color: '#fff',
+                  border: `1.5px solid ${checked ? ON_CLAIM : MUTED_BORDER}`,
+                  background: checked ? ON_CLAIM : 'transparent', color: CLAIM,
                 }}>
                   {checked ? <span style={{
                     width: 6, height: 10, borderRight: '2px solid currentColor',
@@ -1524,17 +1545,17 @@ const GeographyRubricPanel: React.FC<{
                   onClick={() => onRequirement(index)}
                   style={{
                     display: 'grid', gridTemplateColumns: '24px 1fr', gap: 9,
-                    alignItems: 'start', width: '100%', padding: '10px 11px', textAlign: 'left',
-                    borderRadius: 10, border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                    background: checked ? SUCCESS_TINT : 'var(--mb-paper)',
-                    color: checked ? SUCCESS_TEXT : INK_2,
+                    alignItems: 'center', width: '100%', padding: '10px 11px', textAlign: 'left',
+                    borderRadius: 10, border: `1.5px solid ${checked ? CLAIM : MUTED_BORDER}`,
+                    background: checked ? CLAIM : 'var(--mb-paper)',
+                    color: checked ? ON_CLAIM : INK_2,
                     font: `500 12.5px/1.45 ${SANS}`, cursor: 'pointer',
                   }}
                 >
                   <span aria-hidden style={{
                     display: 'grid', placeItems: 'center', width: 20, height: 20, borderRadius: 6,
-                    border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                    background: checked ? SUCCESS : 'transparent', color: '#fff',
+                    border: `1.5px solid ${checked ? ON_CLAIM : MUTED_BORDER}`,
+                    background: checked ? ON_CLAIM : 'transparent', color: CLAIM,
                   }}>
                     {checked ? <span style={{
                       width: 6, height: 10, borderRight: '2px solid currentColor',
@@ -2225,10 +2246,12 @@ const useTwoPane = () => {
 };
 
 const SessionScreen: React.FC<SessionScreenProps> = ({
-  cards, subjectLabel, reviewPoolTotal, reviewPoolLabel, onGrade, onExit, onFinish, paperLayout = false,
+  cards, subjectLabel, reviewPoolTotal, reviewPoolLabel, onGrade, onExit, onFinish, paperLayout = false, studyReview,
 }) => {
   const mobileAppDesign = useMobileAppDesign();
   const [expanded, setExpanded] = useState(false);
+  const advancedStudyCard = useRef<string | null>(null);
+  const studyTitleRef = useRef<HTMLHeadingElement>(null);
   const [drafts, setDrafts] = useState<Record<string,string>>({});
   const reduced = useReducedMotion() ?? false;
   const wide = useTwoPane();
@@ -2280,6 +2303,23 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const byId = useMemo(() => new Map(cards.map(c => [c.id, c])), [cards]);
 
   const card = byId.get(queue[position]);
+  const isStudyReview = Boolean(studyReview);
+  useEffect(() => {
+    if (!isStudyReview) return;
+    studyTitleRef.current?.focus({ preventScroll: true });
+  }, [card?.id, isStudyReview]);
+  const savedResponse = card && studyReview?.responses?.[card.id];
+  const revisit = Boolean(studyReview?.revisit);
+  useEffect(() => {
+    if (!revisit || !card) return;
+    setClaims(savedResponse?.claims ?? {});
+    setPicks(savedResponse?.picks ?? {});
+    setRubricScores(savedResponse?.rubricScores ?? {});
+    setRequirementChecks(savedResponse?.requirementChecks ?? {});
+    setDrafts(previous => ({ ...previous, [card.id]: savedResponse?.draft ?? '' }));
+    setWaysInWork(savedResponse?.waysInWork ?? emptyWaysInWork());
+    setRevealed(true);
+  }, [card, revisit, savedResponse]);
   const listeningKey = card ? listeningExerciseKey(card) : null;
   const listeningCards = useMemo(() => listeningKey
     ? cards.filter((candidate): candidate is SecCard & { audioMaterial: CardAudioMaterial } =>
@@ -2315,8 +2355,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const mathematicsCard = assessmentCard && isPointCard(assessmentCard) && assessmentCard.mathematicsScale
     ? assessmentCard as MathematicsScaleCard : undefined;
   useEffect(() => {
-    setAnswerVariantId(null);
-  }, [baseAssessmentCard?.id]);
+    setAnswerVariantId(revisit ? savedResponse?.answerVariantId ?? null : null);
+  }, [baseAssessmentCard?.id, revisit, savedResponse]);
   const exerciseTotal = visibleSessionExercises(cards).length;
   const distinctDone = new Set(results.map(result => {
     const resultCard = byId.get(result.cardId);
@@ -2395,11 +2435,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const routeTaken = assessmentCard ? committedRoute(assessmentCard, rowClaims) : null;
 
   const setClaim = useCallback((id: string, next: RowClaim) => {
+    studyReview?.onCue('tap');
     setSchemeInteracted(true);
     setClaims(prev => ({ ...prev, [id]: next }));
-  }, []);
+  }, [studyReview]);
 
   const setRubricScore = useCallback((id: RubricScoreId, marks: number) => {
+    studyReview?.onCue('tap');
     setSchemeInteracted(true);
     setRubricScores(prev => {
       const next = { ...prev, [id]: marks };
@@ -2413,7 +2455,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       }
       return next;
     });
-  }, []);
+  }, [studyReview]);
 
   const toggleRequirement = useCallback((index: number) => {
     setRequirementChecks(prev => ({ ...prev, [index]: !prev[index] }));
@@ -2445,6 +2487,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
   /** Toggle one option inside a bounded "Any N" group. */
   const togglePick = useCallback((id: string, optionIndex: number) => {
+    studyReview?.onCue('tap');
     setSchemeInteracted(true);
     setPicks(prev => {
       const current = prev[id] ?? [];
@@ -2453,10 +2496,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         : [...current, optionIndex];
       return { ...prev, [id]: next };
     });
-  }, []);
+  }, [studyReview]);
 
   const claimAll = useCallback(() => {
     if (!assessmentCard || !isPointCard(assessmentCard)) return;
+    studyReview?.onCue('tap');
     setSchemeInteracted(true);
     const all: Record<string, RowClaim> = {};
     const allPicks: Record<string, number[]> = {};
@@ -2470,10 +2514,31 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     if (assessmentCard.questionBonus) all[assessmentCard.questionBonus.id] = 'yes';
     setClaims(prev => ({ ...prev, ...all }));
     setPicks(prev => ({ ...prev, ...allPicks }));
-  }, [assessmentCard]);
+  }, [assessmentCard, studyReview]);
+
+  const advanceStudy = useCallback((result?: SessionCardResult) => {
+    if (!card || !studyReview || advancedStudyCard.current === card.id) return;
+    advancedStudyCard.current = card.id;
+    if (!revisit) {
+      studyReview.onResponse(card.id, { claims, picks, rubricScores, requirementChecks, answerVariantId, draft: drafts[card.id] ?? '', waysInWork });
+      if (result) onGrade(result);
+    }
+    const nextResults = result ? [...results, result] : results;
+    setResults(nextResults);
+    studyReview.onCue(result || revisit ? 'swipe' : 'skip');
+    if (position + 1 >= queue.length) { onFinish(nextResults); return; }
+    setClaims({}); setPicks({}); setRubricScores({}); setRequirementChecks({});
+    setAnswerVariantId(null); setRevealed(false); setWaysInOpen(false);
+    setWaysInFocusMode(false); setWaysInWork(emptyWaysInWork()); setSchemeInteracted(false);
+    setPosition(position + 1);
+  }, [card, studyReview, revisit, claims, picks, rubricScores, requirementChecks, answerVariantId, drafts, waysInWork, onGrade, results, position, queue.length, onFinish]);
 
   const commit = useCallback((grade: MarkBankGrade) => {
     if (!card) return;
+    if (studyReview) {
+      advanceStudy({ cardId: card.id, grade, marksClaimed: got, marksAvailable: total });
+      return;
+    }
     const gradedCards: SecCard[] = hasCombinedListeningAssessment
       ? listeningAssessmentCards
       : [card];
@@ -2540,7 +2605,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     else setPosition(position + 1);
   }, [
     card, got, hasCombinedListeningAssessment, listeningAssessmentCards,
-    rubricScores, onGrade, results, queue, position, onFinish,
+    rubricScores, onGrade, results, queue, position, onFinish, studyReview, advanceStudy, total,
   ]);
 
   useEffect(() => {
@@ -2560,8 +2625,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     // Do not send focus back to the background entry while the modal is open.
     setWaysInOpen(false);
     setWaysInFocusMode(false);
+    if (studyReview) { onExit(); return; }
     setConfirmExit(true);
-  }, []);
+  }, [studyReview, onExit]);
 
   const closeExitConfirmation = useCallback(() => {
     setConfirmExit(false);
@@ -2614,8 +2680,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     }}>
       {/* Session bar. Full-bleed, so the work surface below reads as contained
           by a declared edge rather than adrift in a wide window. */}
+      {studyReview?.banner}
       {paperLayout ? <header className="mb-paper-session-heading">
-        <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle>{reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{assessmentCard.totalMarks} marks · Question {Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
+        <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle ref={studyTitleRef} tabIndex={studyReview ? -1 : undefined}>{studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{assessmentCard.totalMarks} marks · Question {studyReview ? position + 1 : Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
         <div><Button variant="outline" aria-label={expanded?'Contract to compact view':'Expand to full screen'} aria-pressed={expanded} onClick={()=>setExpanded(value=>!value)}>{expanded?<Minimize2 size={16}/>:<Maximize2 size={16}/>}<span>{expanded?'Contract':'Expand'}</span></Button><Button ref={leaveButtonRef} variant="ghost" size="icon" aria-label="Close practice" onClick={openExitConfirmation}><X size={18}/></Button></div>
       </header> : <div style={{
         position: 'sticky', top: 0, zIndex: 3,
@@ -2982,7 +3049,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             border: '1.5px solid #383838', boxShadow: '0 12px 28px rgba(38, 32, 27, .045)',
           }}
         >
-          {paperLayout && !waysInOpen && <div className="mb-paper-draft"><label htmlFor="mark-bank-draft">Your answer</label><textarea data-slot="textarea" id="mark-bank-draft" value={drafts[card.id] ?? ''} onChange={event=>setDrafts(previous=>({...previous,[card.id]:event.target.value}))} placeholder="Make a start. You can also work on paper."/></div>}
+          {paperLayout && !waysInOpen && <div className="mb-paper-draft"><label htmlFor="mark-bank-draft">Your answer</label><textarea data-slot="textarea" id="mark-bank-draft" readOnly={revisit} value={drafts[card.id] ?? ''} onChange={event=>setDrafts(previous=>({...previous,[card.id]:event.target.value}))} placeholder="Make a start. You can also work on paper."/></div>}
           {!revealed && !waysInOpen && (
             <div className="mb-wi-entry">
               <span>Before the scheme</span>
@@ -3024,7 +3091,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 exit={{ opacity: 0 }}
                 transition={{ duration: reduced ? 0.12 : 0.18, ease: EASE }}
               >
-                <div style={{ padding: '4px 18px 18px' }}>
+                <fieldset disabled={revisit} style={{ padding: '4px 18px 18px', margin: 0, border: 0, minWidth: 0 }}>
                   <WaysInAttemptReview work={waysInWork} card={assessmentCard} subjectLabel={subjectLabel} />
                   <div style={{
                     display: 'flex', justifyContent: 'space-between', alignItems: 'center',
@@ -3066,6 +3133,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                         <p style={{ margin: '5px 0 0', font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
                           {wholeResponseAssessment
                             ? 'Compare your answer with the guidance and examples below. Tick each part you completed, then choose your grade for the full response.'
+                            : studyReview ? 'Tap every point that appeared in your answer, then continue to the next question.'
                             : 'Tap every point that appeared in your answer. This gives you a mark-based suggestion; you can still choose your own grade below.'}
                         </p>
                       </div>
@@ -3157,7 +3225,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                   <p style={{ margin: '14px 0 0', font: `400 10px/1.45 ${SANS}`, color: LABEL }}>
                     {assessmentCard.schemeCitation}
                   </p>
-                </div>
+                </fieldset>
               </MotionDiv>
             )}
           </AnimatePresence>
@@ -3213,6 +3281,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                   setWaysInOpen(false);
                   setWaysInFocusMode(false);
                   setSchemeInteracted(false);
+                  studyReview?.onCue('complete');
                   setRevealed(true);
                 }}
                 style={{
@@ -3232,9 +3301,19 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           </div>
         )}
 
+      {studyReview && <div className="sq-question-actions">
+        <span aria-live="polite">{revisit ? 'Reviewing your answers' : revealed ? `${got} / ${total} self-assessed marks` : 'Try the question before revealing the scheme.'}</span>
+        <div>
+          {!revisit && <Button variant="outline" onClick={() => advanceStudy()}>Skip question</Button>}
+          {revealed && <Button className="sq-primary" onClick={() => revisit ? advanceStudy() : commit(suggested)}>
+            {position + 1 < queue.length ? 'Next question' : revisit ? 'Back to summary' : 'See review summary'}
+          </Button>}
+        </div>
+      </div>}
+
       {/* Grade bar. Solid white, never translucent — blurred glass over a
           saturated colour goes muddy and reads as generated UI. */}
-      {revealed && (
+      {revealed && !studyReview && (
         <div style={{ padding: `12px 16px calc(12px + var(--sab, 0px))` }}>
           <div style={{ maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto' }}>
             {showsRowMarks(assessmentCard) && (

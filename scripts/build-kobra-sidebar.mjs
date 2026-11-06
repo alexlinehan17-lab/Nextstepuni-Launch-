@@ -21,7 +21,7 @@ await build({
   entryPoints: [entryFile], bundle: true, minify: true, format: 'esm',
   platform: 'browser', target: 'es2022', jsx: 'automatic', packages: 'external',
   outfile: 'components/kobra-navigation-runtime.js',
-  banner: { js: '/* Kobra navigation, purchased registry source retrieved 4 October 2026. */\nimport "./kobra-navigation-runtime.css";' },
+  banner: { js: 'import "../design/quiet-focus.css";\n/* Kobra navigation, purchased registry source retrieved 4 October 2026. */\nimport "./kobra-navigation-runtime.css";' },
 });
 const css = await transform(fs.readFileSync(path.join(source, 'scoped.css'), 'utf8'), { loader: 'css', minify: true });
 fs.writeFileSync('components/kobra-navigation-runtime.css', '/* Isolated purchased Kobra navigation styles. */\n' + css.code);

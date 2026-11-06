@@ -15,7 +15,7 @@ await build({
     export {RadioGroup,RadioGroupItem} from './components/kobra/components/ui/radio-group';`, resolveDir: process.cwd(), loader: 'tsx' },
   bundle: true, minify: true, sourcemap: false, format: 'esm', platform: 'browser', target: 'es2022', packages: 'external',
   outfile: 'components/account-ui-runtime.js',
-  banner: { js: '/* Compiled purchased Kobra controls for NextStepUni. Editable originals remain local. */' },
+  banner: { js: 'import "../design/quiet-focus.css";\n/* Compiled purchased Kobra controls for NextStepUni. Editable originals remain local. */' },
   plugins: [{ name: 'local-kobra-alias', setup(api) { api.onResolve({ filter: /^@\/components\/kobra\// }, args => {
     const base = path.resolve(args.path.slice(2));
     return { path: [base + '.tsx', base + '.ts'].find(file => fs.existsSync(file)) };

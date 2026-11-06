@@ -96,6 +96,11 @@
   .student-sidebar-shell .sh-profile { display:none; }
   .student-sidebar-shell .student-sidebar-page [data-student-page-header] { left:var(--navigation-width); right:8px; top:8px; border-radius:16px 16px 0 0; border-bottom-color:var(--outline-soft); background:var(--surface-paper); transition:left 300ms cubic-bezier(.32,.72,0,1); }
 }
+/* Launchpad is a continuous app surface, including its fixed navigation bar. */
+@media (min-width:768px) {
+  .student-sidebar-shell .student-sidebar-page:has(.launchpad-shell) { margin:0; border-radius:0; }
+  .student-sidebar-shell .student-sidebar-page .lp-navigation-header { top:0; right:0; border-radius:0; }
+}
 @media (prefers-reduced-motion:reduce) {
   .student-sidebar-shell *, .student-sidebar-shell *::before, .student-sidebar-shell *::after,
   .nsu-nav-account-menu *, .nsu-nav-submenu * { transition-duration:0s !important; animation-duration:0s !important; }

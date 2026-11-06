@@ -14,12 +14,13 @@
 
 import React from 'react';
 import { act, cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
-import { afterAll, afterEach, beforeAll, describe, expect, it, vi } from 'vitest';
+import { afterAll, afterEach, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest';
 import Viewer from '../components/PaperTrail/Viewer';
+import {readAnswer} from '../components/PaperTrail/answerDeskStore';
 import type * as PdfjsLoader from '../components/PaperTrail/pdfjsLoader';
 
 const PAGES = 40;
-const VIEW_W = 1000;
+let VIEW_W = 1000;
 const VIEW_H = 800;
 const PAD_Y = 12; // py-3 on the content wrapper
 const PAD_X = 8; // px-2
@@ -101,7 +102,7 @@ beforeAll(() => {
   stub(HTMLCanvasElement.prototype, 'getContext', { value: () => null });
   stub(P, 'offsetTop', { get(this: HTMLElement) { return this.dataset.page ? pageBox(this).top : 0; } });
   stub(P, 'offsetHeight', { get(this: HTMLElement) { return this.dataset.page ? pageBox(this).height : 0; } });
-  stub(E, 'clientHeight', { get(this: HTMLElement) { return isReader(this) ? VIEW_H : 0; } });
+  stub(E, 'clientHeight', { get(this: HTMLElement) { return isReader(this) ? VIEW_H : this.dataset?.page ? pageBox(this).height : 0; } });
   stub(E, 'clientWidth', {
     get(this: HTMLElement) {
       if (isReader(this)) return VIEW_W;
@@ -130,6 +131,7 @@ afterAll(() => {
     else delete (proto as Record<string, unknown>)[key];
   }
 });
+beforeEach(() => { VIEW_W = 1000; localStorage.clear(); });
 afterEach(cleanup);
 
 /** The page a student sees in the middle of the reader, from the model. */
@@ -145,6 +147,63 @@ const pageInMiddle = (reader: HTMLElement) => {
 const settle = () => act(() => new Promise(resolve => setTimeout(resolve, 20)));
 
 describe('Paper Trail viewer zoom', () => {
+  it('moves to the next question lower on the same page, then to a later page, retaining the original work', async () => {
+    const questions=[{n:'1',pP:4,pY:[.1,.5]},{n:'2',pP:4,pY:[.6,1]},{n:'3',pP:6,pY:[.1,1]}].map(q=>({...q,mode:'pagejump',region:[{p:7}]}));
+    const fetchSpy=vi.spyOn(globalThis,'fetch').mockResolvedValue({ok:true,json:async()=>({v:1,paperFileid:'paper.pdf',q:questions})} as Response);
+    try {
+      render(<Viewer title="Paper" paper={{url:'/paper.pdf',label:'Paper',bytes:0}} scheme={{url:'/scheme.pdf',label:'Scheme',bytes:0}} answersUrl="/map.json" storageNs="student|next-question" initialPaperPage={4} onClose={()=>{}} />);
+      const reader=await screen.findByLabelText(`Paper, page 4 of ${PAGES}`);
+      await waitFor(()=>expect(screen.getByLabelText('Working on')).toHaveValue('1'));
+      await settle();
+      fireEvent.change(screen.getByLabelText('Your attempt'),{target:{value:'Keep this first answer'}});
+      fireEvent.click(screen.getByRole('button',{name:'Keep my attempt & reveal'}));
+      const before=position(reader).top;
+      fireEvent.click(screen.getByRole('button',{name:'Move to next question'}));
+      await settle();
+      expect(screen.getByLabelText('Working on')).toHaveValue('2');
+      expect(position(reader).top).toBeGreaterThan(before+400);
+      expect(pageInMiddle(reader)).toBe(4);
+      expect(screen.getByText('Scheme hidden until you choose to reveal.')).toBeInTheDocument();
+      expect(readAnswer('student|next-question','1').record.first?.text).toBe('Keep this first answer');
+      fireEvent.click(screen.getByRole('button',{name:'Keep my attempt & reveal'}));
+      fireEvent.click(screen.getByRole('button',{name:'Move to next question'}));
+      await settle();
+      expect(screen.getByLabelText('Working on')).toHaveValue('3');
+      expect(pageInMiddle(reader)).toBe(6);
+      fireEvent.click(screen.getByRole('button',{name:'Keep my attempt & reveal'}));
+      expect(screen.queryByRole('button',{name:'Move to next question'})).not.toBeInTheDocument();
+    } finally {fetchSpy.mockRestore();}
+  });
+
+  it('jumps to an entered page from the header and bounds the destination to the document', async () => {
+    render(<Viewer title="Paper" paper={{url:'/paper.pdf',label:'Paper',bytes:0}} initialPaperPage={14} onClose={()=>{}} />);
+    const reader=await screen.findByLabelText(`Paper, page 14 of ${PAGES}`);
+    await waitFor(()=>expect(position(reader).top).toBeGreaterThan(0));
+    const pageInput=screen.getByRole('spinbutton',{name:'Go to page'});
+    fireEvent.change(pageInput,{target:{value:'23'}});
+    fireEvent.submit(screen.getByRole('form',{name:'Page navigation'}));
+    await settle();
+    expect(pageInMiddle(reader)).toBe(23);
+    fireEvent.change(pageInput,{target:{value:'999'}});
+    fireEvent.blur(pageInput);
+    await settle();
+    expect(pageInMiddle(reader)).toBe(PAGES);
+    expect(pageInput).toHaveValue(PAGES);
+  });
+
+  it('keeps the reading point when the viewport changes to phone width', async () => {
+    render(<Viewer title="Paper" paper={{url:'/paper.pdf',label:'Paper',bytes:0}} initialPaperPage={14} onClose={()=>{}} />);
+    const reader = await screen.findByLabelText(`Paper, page 14 of ${PAGES}`);
+    await waitFor(() => expect(position(reader).top).toBeGreaterThan(0));
+    await settle();
+    VIEW_W = 390;
+    fireEvent(window, new Event('resize'));
+    await act(() => new Promise(resolve => setTimeout(resolve, 350)));
+    await settle();
+    expect(pageInMiddle(reader)).toBe(14);
+    expect(reader).toHaveAttribute('aria-label', `Paper, page 14 of ${PAGES}`);
+  });
+
   it('keeps the page being read, and the counter, through every zoom step', async () => {
     render(<Viewer title="Agricultural Science" paper={{ url: '/paper.pdf', label: 'Paper', bytes: 0 }} initialPaperPage={14} onClose={() => {}} />);
     const reader = await screen.findByLabelText(`Paper, page 14 of ${PAGES}`);

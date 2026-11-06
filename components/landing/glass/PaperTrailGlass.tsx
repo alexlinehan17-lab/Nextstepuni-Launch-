@@ -48,7 +48,6 @@ const PaperTrailGlass: React.FC<GlassProps> = ({ active, height = 720, logicalWi
             studentLevels={DEMO_LEVELS}
             studentCycle="leaving-cert"
             onOpenTool={() => openDemo('atlas')}
-            onBack={() => undefined}
           />
         </div>
       </Suspense>

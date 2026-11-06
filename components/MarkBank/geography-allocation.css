@@ -15,7 +15,8 @@
   font: 500 13.5px/1.42 'DM Sans', system-ui, sans-serif;
   transition: background 160ms, border-color 160ms;
 }
-.mb-geo-srp[data-claimed="true"] { border-color: var(--mb-success); background: var(--mb-success-tint); color: var(--mb-success-text); }
+.mb-geo-srp[data-claimed="true"] { border-color: var(--mb-claim); background: var(--mb-claim); color: var(--mb-on-claim); }
+.mb-geo-srp[data-claimed="true"] .mb-geo-counter output { color: var(--mb-on-claim); }
 .mb-geo-counter { display: inline-flex; align-items: center; gap: 4px; }
 .mb-geo-counter button {
   min-width: 32px; height: 32px; padding: 0 9px; border-radius: 8px; cursor: pointer;
