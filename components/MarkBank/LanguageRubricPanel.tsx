@@ -33,7 +33,8 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
       const limits = languageCriterionLimits(writingRubric, criterion, scores, [criterion.id]);
       const cap = Math.min(criterion.maxMarks, ...limits.map(limit => limit.maxMarks));
       const selected = Math.min(scores[languageScoreId(criterion.id)] ?? 0, cap);
-      const bands = [...limits].sort((a, b) => a.maxMarks - b.maxMarks).find(limit => limit.bands)?.bands ?? criterion.bands;
+      const bands = ([...limits].sort((a, b) => a.maxMarks - b.maxMarks).find(limit => limit.bands)?.bands ?? criterion.bands)
+        ?.filter(band => Math.max(...band.marks) <= cap);
       const permitted = criterion.permittedMarks.filter(mark => mark <= cap);
       return <section className="mb-language-criterion" key={criterion.id}>
         <div className="mb-language-heading"><h4>{criterion.label}</h4><span>{criterion.kind === 'deduction' ? 'Deduction' : `Up to ${cap} marks`}</span></div>
