@@ -440,8 +440,14 @@ def attach_language_rule(cards, scheme):
             card['answerLanguageRule'] = {'otherLanguageMultiplier': 0, 'sourceText': source, 'schemePages': [3]}
             if unit in ('C1', 'C2'):
                 card['notes'] += ' The original bilingual paper permits English or Irish; either is an accepted response language. Mark only answers in a language not permitted for this task as wrong-language.'
+                direction = 'Answer in English or Irish. Both languages are permitted by the original bilingual paper.'
+                if card['kind'] == 'question':
+                    card['rows'][0]['contextNote'] = (card['rows'][0].get('contextNote', '') + ' ' + direction).strip()
+                else:
+                    card['rubric']['markingGuideNote'] = (card['rubric']['markingGuideNote'] + ' ' + direction).strip()
         elif unit == 'GR':
             card['notes'] += ' ' + source + ' This whole-question tariff currently has no numeric wrong-language control; apply the published rule when assessing the complete exercise.'
+            card['rows'][0]['contextNote'] = 'The complete exercise is marked out of 30. The scheme does not print separate marks for individual forms. ' + source + ' Assess the complete exercise using this rule.'
 
 
 def save_reviewed(cards):
