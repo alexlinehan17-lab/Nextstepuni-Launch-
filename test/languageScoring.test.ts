@@ -81,6 +81,18 @@ describe('source-defined language writing limits', () => {
     expect(html).toContain('Up to 15 marks');
     expect(html).toContain('Response length (');
   });
+
+  it('shows no impossible positive band when zero content withholds expression', () => {
+    const rubric = writing(4);
+    rubric.criteria[1].limits![0].bands = [{ label: 'Lower expression', marks: steps(15), guidance: ['Published lower expression descriptor'] }];
+    rubric.criteria[1].limits!.push({ id: 'zero', maxMarks: 0, when: { any: [{ criterionIds: ['content'], atMost: 0 }] }, guidance: ['No expression marks when content is zero.'] });
+    const card = { rubric, totalMarks: 40 } as SecRubricCard & { rubric: LanguageWritingRubric };
+    const html = renderToStaticMarkup(React.createElement(LanguageRubricPanel, { card, scores: { 'language:content': 0, 'language:expression': 20 }, onScore: () => {} }));
+    expect(html).toContain('Up to 0 marks');
+    expect(html).toContain('No expression marks when content is zero.');
+    expect(html).not.toContain('Published lower expression descriptor');
+    expect(html).not.toContain('Lower expression');
+  });
 });
 
 describe('grouped language answer selection', () => {
