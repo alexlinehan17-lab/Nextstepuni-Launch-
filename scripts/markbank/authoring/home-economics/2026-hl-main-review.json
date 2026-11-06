@@ -1,0 +1,636 @@
+{
+  "schemaVersion": 1,
+  "year": 2026,
+  "level": "higher",
+  "sitting": "main",
+  "language": "ev",
+  "status": "source-complete; validation-passed; browser-QA-pending",
+  "sources": {
+    "paper-trail-corpus/exampapers/2026/LC098ALP014EV.pdf": {
+      "sha256": "d52d52c9b5a7b8c0274dcbc67c1118b06f3d302238b8b66669155a4526c4de73",
+      "pages": 40
+    },
+    "paper-trail-corpus/exampapers/2026/LC098ALP039EV.pdf": {
+      "sha256": "32ddb5ae4cda9b1ae4ab638b1a33c6a5cd10a1d137b768ab112e8c01693ae228",
+      "pages": 12
+    },
+    "paper-trail-corpus/markingschemes/2026/LC098ALP000EV.pdf": {
+      "sha256": "45f563434c737a5a5fa6faf8e08705ebd08ddbd9aa4148ae3619377cdf9456b7",
+      "pages": 40
+    }
+  },
+  "visualSweep": {
+    "a": "All 40 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled answer pages 9–39, back cover 40.",
+    "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+    "scheme": "All 40 pages: cover 1, guidance/rubrics/annotations 2–5, A 6–9, B 10–16, C 17–28, separate food-studies coursework 29–38, blank 39, back cover 40. Coursework is a separate assessment and is not counted as written-paper tasks."
+  },
+  "expectedTasks": 60,
+  "expectedSectionTasks": {
+    "A": 15,
+    "B": 18,
+    "C": 27
+  },
+  "offeredPracticeMarks": 749,
+  "candidateMarks": [
+    280,
+    320
+  ],
+  "sourceClarifications": {
+    "uht": {
+      "source": "https://www.fsai.ie/getmedia/2d516a18-247a-41e4-ab78-93fdd9eb8837/Farmhouse-Cheesemakers-Workbook-FINAL.pdf?ext=.pdf",
+      "note": "UHT requires at least 135°C with a suitable holding time; the source table gives 132°C (130–135°C)."
+    },
+    "transformer": {
+      "source": "https://www.se.com/us/en/faqs/FA115747/",
+      "note": "A transformer changes voltage, not the supply frequency."
+    },
+    "flash-point": {
+      "source": "https://www.nist.gov/glossary-term/38496",
+      "note": "Flash-point testing applies an ignition source; spontaneous ignition is a different property."
+    },
+    "food-toxins": {
+      "source": "https://www.cdc.gov/staph-food-poisoning/about/",
+      "note": "Cooking can kill Staph bacteria but does not destroy its toxin. The scheme’s generic boiling-time statement is not safe decontamination guidance."
+    }
+  },
+  "tasks": [
+    {
+      "id": "he-2026-hl-sa-q1",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6,
+      "topicId": "home-economics-0-6",
+      "questionRef": "2026 HL Section A Q1"
+    },
+    {
+      "id": "he-2026-hl-sa-q2",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6,
+      "topicId": "home-economics-0-7",
+      "questionRef": "2026 HL Section A Q2"
+    },
+    {
+      "id": "he-2026-hl-sa-q3",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6,
+      "topicId": "home-economics-0-8",
+      "questionRef": "2026 HL Section A Q3"
+    },
+    {
+      "id": "he-2026-hl-sa-q4",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6,
+      "topicId": "home-economics-0-6",
+      "questionRef": "2026 HL Section A Q4"
+    },
+    {
+      "id": "he-2026-hl-sa-q5",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6,
+      "topicId": "home-economics-0-9",
+      "questionRef": "2026 HL Section A Q5"
+    },
+    {
+      "id": "he-2026-hl-sa-q6",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 2,
+      "topicId": "home-economics-0-1",
+      "questionRef": "2026 HL Section A Q6"
+    },
+    {
+      "id": "he-2026-hl-sa-q6-factors",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 4,
+      "topicId": "home-economics-0-1",
+      "questionRef": "2026 HL Section A Q6 — factors"
+    },
+    {
+      "id": "he-2026-hl-sa-q7",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6,
+      "topicId": "home-economics-0-8",
+      "questionRef": "2026 HL Section A Q7"
+    },
+    {
+      "id": "he-2026-hl-sa-q8",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6,
+      "topicId": "home-economics-0-4",
+      "questionRef": "2026 HL Section A Q8"
+    },
+    {
+      "id": "he-2026-hl-sa-q9",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6,
+      "topicId": "home-economics-0-4",
+      "questionRef": "2026 HL Section A Q9"
+    },
+    {
+      "id": "he-2026-hl-sa-q10",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6,
+      "topicId": "home-economics-1-3",
+      "questionRef": "2026 HL Section A Q10"
+    },
+    {
+      "id": "he-2026-hl-sa-q11",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6,
+      "topicId": "home-economics-1-4",
+      "questionRef": "2026 HL Section A Q11"
+    },
+    {
+      "id": "he-2026-hl-sa-q12",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6,
+      "topicId": "home-economics-1-1",
+      "questionRef": "2026 HL Section A Q12"
+    },
+    {
+      "id": "he-2026-hl-sa-q13",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6,
+      "topicId": "home-economics-3-3",
+      "questionRef": "2026 HL Section A Q13"
+    },
+    {
+      "id": "he-2026-hl-sa-q14",
+      "status": "source-reviewed",
+      "section": "A",
+      "marks": 6,
+      "topicId": "home-economics-1-1",
+      "questionRef": "2026 HL Section A Q14"
+    },
+    {
+      "id": "he-2026-hl-sb-q1a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20,
+      "topicId": "home-economics-0-1",
+      "questionRef": "2026 HL Section B Q1(a)"
+    },
+    {
+      "id": "he-2026-hl-sb-q1b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 8,
+      "topicId": "home-economics-0-5",
+      "questionRef": "2026 HL Section B Q1(b)"
+    },
+    {
+      "id": "he-2026-hl-sb-q1c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 14,
+      "topicId": "home-economics-0-5",
+      "questionRef": "2026 HL Section B Q1(c)"
+    },
+    {
+      "id": "he-2026-hl-sb-q1d",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 18,
+      "topicId": "home-economics-0-5",
+      "questionRef": "2026 HL Section B Q1(d)"
+    },
+    {
+      "id": "he-2026-hl-sb-q1e",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20,
+      "topicId": "home-economics-0-10",
+      "questionRef": "2026 HL Section B Q1(e)"
+    },
+    {
+      "id": "he-2026-hl-sb-q2a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20,
+      "topicId": "home-economics-0-9",
+      "questionRef": "2026 HL Section B Q2(a)"
+    },
+    {
+      "id": "he-2026-hl-sb-q2b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 12,
+      "topicId": "home-economics-0-3",
+      "questionRef": "2026 HL Section B Q2(b)"
+    },
+    {
+      "id": "he-2026-hl-sb-q2c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 18,
+      "topicId": "home-economics-0-4",
+      "questionRef": "2026 HL Section B Q2(c)"
+    },
+    {
+      "id": "he-2026-hl-sb-q3a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 16,
+      "topicId": "home-economics-0-11",
+      "questionRef": "2026 HL Section B Q3(a)"
+    },
+    {
+      "id": "he-2026-hl-sb-q3b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 18,
+      "topicId": "home-economics-0-11",
+      "questionRef": "2026 HL Section B Q3(b)"
+    },
+    {
+      "id": "he-2026-hl-sb-q3c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 16,
+      "topicId": "home-economics-0-11",
+      "questionRef": "2026 HL Section B Q3(c)"
+    },
+    {
+      "id": "he-2026-hl-sb-q4a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20,
+      "topicId": "home-economics-1-2",
+      "questionRef": "2026 HL Section B Q4(a)"
+    },
+    {
+      "id": "he-2026-hl-sb-q4b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 18,
+      "topicId": "home-economics-1-1",
+      "questionRef": "2026 HL Section B Q4(b)"
+    },
+    {
+      "id": "he-2026-hl-sb-q4c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 12,
+      "topicId": "home-economics-1-1",
+      "questionRef": "2026 HL Section B Q4(c)"
+    },
+    {
+      "id": "he-2026-hl-sb-q5a",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 20,
+      "topicId": "home-economics-2-0",
+      "questionRef": "2026 HL Section B Q5(a)"
+    },
+    {
+      "id": "he-2026-hl-sb-q5b",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 16,
+      "topicId": "home-economics-2-1",
+      "questionRef": "2026 HL Section B Q5(b)"
+    },
+    {
+      "id": "he-2026-hl-sb-q5c",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 6,
+      "topicId": "home-economics-2-1",
+      "questionRef": "2026 HL Section B Q5(c)"
+    },
+    {
+      "id": "he-2026-hl-sb-q5c-procedure",
+      "status": "source-reviewed",
+      "section": "B",
+      "marks": 8,
+      "topicId": "home-economics-2-1",
+      "questionRef": "2026 HL Section B Q5(c) — procedure"
+    },
+    {
+      "id": "he-2026-hl-sc-q1ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20,
+      "topicId": "home-economics-3-3",
+      "questionRef": "2026 HL Section C E1 Q1(a)(i)"
+    },
+    {
+      "id": "he-2026-hl-sc-q1aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15,
+      "topicId": "home-economics-3-3",
+      "questionRef": "2026 HL Section C E1 Q1(a)(ii)"
+    },
+    {
+      "id": "he-2026-hl-sc-q1aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15,
+      "topicId": "home-economics-3-3",
+      "questionRef": "2026 HL Section C E1 Q1(a)(iii)"
+    },
+    {
+      "id": "he-2026-hl-sc-q1bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15,
+      "topicId": "home-economics-3-3",
+      "questionRef": "2026 HL Section C E1 Q1(b)(i)"
+    },
+    {
+      "id": "he-2026-hl-sc-q1bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15,
+      "topicId": "home-economics-3-3",
+      "questionRef": "2026 HL Section C E1 Q1(b)(ii)"
+    },
+    {
+      "id": "he-2026-hl-sc-q1ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18,
+      "topicId": "home-economics-3-6",
+      "questionRef": "2026 HL Section C E1 Q1(c)(i)"
+    },
+    {
+      "id": "he-2026-hl-sc-q1cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12,
+      "topicId": "home-economics-3-5",
+      "questionRef": "2026 HL Section C E1 Q1(c)(ii)"
+    },
+    {
+      "id": "he-2026-hl-sc-q2ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 9,
+      "topicId": "home-economics-3-8",
+      "questionRef": "2026 HL Section C E2 Q2(a)(i)"
+    },
+    {
+      "id": "he-2026-hl-sc-q2aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 9,
+      "topicId": "home-economics-3-8",
+      "questionRef": "2026 HL Section C E2 Q2(a)(ii)"
+    },
+    {
+      "id": "he-2026-hl-sc-q2aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 7,
+      "topicId": "home-economics-3-8",
+      "questionRef": "2026 HL Section C E2 Q2(a)(iii)"
+    },
+    {
+      "id": "he-2026-hl-sc-q2b",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15,
+      "topicId": "home-economics-3-7",
+      "questionRef": "2026 HL Section C E2 Q2(b)"
+    },
+    {
+      "id": "he-2026-hl-sc-q2ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 6,
+      "topicId": "home-economics-3-8",
+      "questionRef": "2026 HL Section C E2 Q2(c)(i)"
+    },
+    {
+      "id": "he-2026-hl-sc-q2cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 9,
+      "topicId": "home-economics-3-8",
+      "questionRef": "2026 HL Section C E2 Q2(c)(ii)"
+    },
+    {
+      "id": "he-2026-hl-sc-q3ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20,
+      "topicId": "home-economics-3-9",
+      "questionRef": "2026 HL Section C E3 Q3(a)(i)"
+    },
+    {
+      "id": "he-2026-hl-sc-q3aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20,
+      "topicId": "home-economics-3-9",
+      "questionRef": "2026 HL Section C E3 Q3(a)(ii)"
+    },
+    {
+      "id": "he-2026-hl-sc-q3aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 10,
+      "topicId": "home-economics-3-9",
+      "questionRef": "2026 HL Section C E3 Q3(a)(iii)"
+    },
+    {
+      "id": "he-2026-hl-sc-q3bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15,
+      "topicId": "home-economics-3-11",
+      "questionRef": "2026 HL Section C E3 Q3(b)(i)"
+    },
+    {
+      "id": "he-2026-hl-sc-q3bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15,
+      "topicId": "home-economics-3-11",
+      "questionRef": "2026 HL Section C E3 Q3(b)(ii)"
+    },
+    {
+      "id": "he-2026-hl-sc-q3ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20,
+      "topicId": "home-economics-3-10",
+      "questionRef": "2026 HL Section C E3 Q3(c)(i)"
+    },
+    {
+      "id": "he-2026-hl-sc-q3cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 10,
+      "topicId": "home-economics-3-10",
+      "questionRef": "2026 HL Section C E3 Q3(c)(ii)"
+    },
+    {
+      "id": "he-2026-hl-sc-q4ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 16,
+      "topicId": "home-economics-0-9",
+      "questionRef": "2026 HL Section C Q4(a)(i)"
+    },
+    {
+      "id": "he-2026-hl-sc-q4aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18,
+      "topicId": "home-economics-0-9",
+      "questionRef": "2026 HL Section C Q4(a)(ii)"
+    },
+    {
+      "id": "he-2026-hl-sc-q4aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 16,
+      "topicId": "home-economics-0-11",
+      "questionRef": "2026 HL Section C Q4(a)(iii)"
+    },
+    {
+      "id": "he-2026-hl-sc-q4bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18,
+      "topicId": "home-economics-0-2",
+      "questionRef": "2026 HL Section C Q4(b)(i)"
+    },
+    {
+      "id": "he-2026-hl-sc-q4bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12,
+      "topicId": "home-economics-0-2",
+      "questionRef": "2026 HL Section C Q4(b)(ii)"
+    },
+    {
+      "id": "he-2026-hl-sc-q4ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18,
+      "topicId": "home-economics-2-0",
+      "questionRef": "2026 HL Section C Q4(c)(i)"
+    },
+    {
+      "id": "he-2026-hl-sc-q4cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12,
+      "topicId": "home-economics-2-0",
+      "questionRef": "2026 HL Section C Q4(c)(ii)"
+    }
+  ],
+  "sectionAReview": {
+    "tasks": 15,
+    "marks": 84,
+    "selectionDecisions": "BMR definition/factors have independent prompts and 2/4 tariffs. All required carbohydrate cells, terms, processing cells and pension types remain whole. Binary one-mark source clauses are directly claimable option rows; open judged responses preserve exact partial-credit ladders and full guidance.",
+    "checked": "2026-11-06"
+  },
+  "sectionBReview": {
+    "tasks": 18,
+    "marks": 280,
+    "selectionDecisions": "Will importance and procedure are independent 6/8-mark prompts. All other required headings, amino-acid example pairs and two sweetener classes stay whole. Nutrition comparisons keep the original table. Preserve every quota, exact partial ladder, and B3(c)/B5(b) lower-page continuation.",
+    "sourceClarifications": {
+      "essential-amino-acids": {
+        "source": "https://www.canada.ca/en/health-canada/services/food-nutrition/legislation-guidelines/guidance-documents/supplemented-foods-regulations.html",
+        "note": "Nine amino acids are essential for humans; the eight-adult count is historical."
+      }
+    },
+    "checked": "2026-11-06"
+  },
+  "sectionCReview": {
+    "tasks": 27,
+    "marks": 385,
+    "selectionDecisions": "All required headings and dependent profiles stay whole. C2(a)(iii) carries the exact previous outfit prompt as context. Natural-fabric production continues onto page22; complete all four models. Open energy, fabric, employment, pre-school, sensory-test and support-organisation choices carry every printed model plus a valid open alternative. No invented sketch rubric or name/detail split.",
+    "sourceClarifications": {
+      "hydropower": {
+        "source": "https://www.esbarchives.ie/generation/article/ardnacrusha",
+        "note": "River hydropower is established in Ireland, including Ardnacrusha since 1929; the scheme conflates it with marine-generation limitations."
+      },
+      "thermal-comfort": {
+        "source": "https://iris.who.int/bitstream/handle/10665/277465/WHO-CED-PHE-18.10-eng.pdf?ua=1",
+        "note": "WHO uses 18°C as a general-population cold-season baseline; vulnerable people may need warmer conditions. The source’s 10–16°C bedroom range is not a safe universal recommendation."
+      }
+    },
+    "checked": "2026-11-06"
+  },
+  "figures": {
+    "home-economics-2026-hl-sa-q1-carbohydrate-table": {
+      "source": "paper-trail-corpus/exampapers/2026/LC098ALP014EV.pdf",
+      "page": 3,
+      "bounds": [
+        83,
+        171,
+        544,
+        280
+      ],
+      "alt": "Original blank carbohydrate table. Columns: Monosaccharide, Disaccharide, Polysaccharide. Required rows: Chemical formula and Example; all six cells retained.",
+      "sha256": "9be5a679a36d276db2ceebc586459022b2958fea30c5d18362bb6325030f5e48"
+    },
+    "home-economics-2026-hl-sa-q5-uht-table": {
+      "source": "paper-trail-corpus/exampapers/2026/LC098ALP014EV.pdf",
+      "page": 4,
+      "bounds": [
+        83,
+        339,
+        544,
+        462
+      ],
+      "alt": "Original blank milk-processing table. Process: Ultra Heat Treatment; required answer columns: Temperature, Time and Effect.",
+      "sha256": "41d3f10bee278fb6e131a186aea7fb322eb4ae263eb16fead6745de0ded82a1f"
+    },
+    "home-economics-2026-hl-sb-q1a-protein-snacks": {
+      "source": "paper-trail-corpus/exampapers/2026/LC098ALP039EV.pdf",
+      "page": 2,
+      "bounds": [
+        78,
+        214,
+        539,
+        414
+      ],
+      "alt": "Original high-protein snack table per 100 g/100 ml, including the adjacent product photograph and source caption. Protein bar / high-protein fruit yogurt: energy 523/122 kcal, protein 17/12 g, fat 37/2.9 g, saturates 7.6/1.3 g, carbohydrate 24/10 g, sugars 16/8 g, calcium 60/190 mg, fibre 13/3.5 g, salt 0.8/0.2 g.",
+      "sha256": "ab66c21a305231f551dcf3fea99492ac323acef005d6f124a875dc6eace5636e"
+    }
+  },
+  "reviewedTasks": 60,
+  "reviewedSectionTasks": {
+    "A": 15,
+    "B": 18,
+    "C": 27
+  },
+  "validation": {
+    "requiredVitest": "232 preservation/curriculum/deck tests and six 2026 Higher source regressions passed (238 total).",
+    "atlas": "Two targeted Home Economics registry tests passed; all sixty tasks map to twenty-three source groups and canonical topics. Subject: 57 tagged papers, 593 physical question groups, 998 registry mappings.",
+    "mainTypecheck": "passed",
+    "scopedHomeEconomicsTestTypecheck": "passed",
+    "productionBuild": "passed; reproducible dist removed after success to conserve shared disk space",
+    "cardlint": "clean",
+    "regeneration": "Two complete authoring/figures/deck/Atlas/tags/showcase/landing regenerations byte-identical across 27 generated files.",
+    "scope": "All previous authored card objects, all other subject decks/census, all non-2026 Higher subject tags and other shared sizes/showcase subjects unchanged. Frozen preservation hashes unchanged; sixty explicit additions only.",
+    "reconciliation": "All 58 raw 2026 Higher candidates covered. Whole subject: 780 cards, 744/1342 raw candidates covered, 598 open, zero orphans/unparsed/exclusions; raw census remains diagnostic.",
+    "browser": "Pending: browser host unavailable; no live browser QA claimed.",
+    "environment": "Initial broad tests failed ENOSPC. Removed only regenerable worktree dist, reran successfully; source and review assets preserved."
+  },
+  "answerClarity": "Binary separately priced source clauses are directly claimable rows/options. Open judged responses retain published criteria, each priced point and its exact partial ladder, with full source guidance. The fifteen BMR source factors are retained rather than truncated to the advisory short-list limit.",
+  "atlas": {
+    "sourceQuestionGroups": 23,
+    "markBankMappings": 60,
+    "sourceSchemePages": 40
+  },
+  "next": "2026 Ordinary, then 2010–2020 and remaining published deferred material."
+}
