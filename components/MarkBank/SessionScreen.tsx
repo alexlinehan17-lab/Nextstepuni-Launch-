@@ -172,6 +172,14 @@ export const criterionMarksClaimed = (row: MarkRow, claim: RowClaim) => {
 
 /** A part's claim lives under its row's id, so a row's claims travel together. */
 export const partClaimId = (rowId: string, partId: string) => `${rowId}:${partId}`;
+/** A source-defined language adjustment travels with the answer, separately
+ * from its original tariff or selected mark. Option indices stay stable when
+ * another selected option is removed from a descending allocation. */
+export const answerLanguageClaimId = (id: string, optionIndex?: number) =>
+  `language:other-language:point:${JSON.stringify([id, optionIndex ?? null])}`;
+const answerLanguageMultiplier = (card: SecCard, claims: Record<string, RowClaim>, id: string, optionIndex?: number) =>
+  card.answerLanguageRule && claims[answerLanguageClaimId(id, optionIndex)] === 1
+    ? card.answerLanguageRule.otherLanguageMultiplier : 1;
 const partMarksClaimed = (part: MarkRowPart, claim: RowClaim) => {
   if (claim === 'yes') return part.marks;
   return typeof claim === 'number' && part.permittedMarks.includes(claim) ? claim : 0;
@@ -311,12 +319,25 @@ export function marksClaimed(
     // had, not as one all-or-nothing block worth twelve marks.
     if (r.kind === 'anyN' && r.group) {
       const chosen = Math.min(picks[id]?.length ?? 0, r.group.claimMax);
+      if (card.answerLanguageRule) {
+        const group = r.group;
+        const selected = [...new Set(picks[id] ?? [])]
+          .filter(option => Number.isInteger(option) && option >= 0 && option < group.options.length)
+          .slice(0, group.claimMax);
+        return n + selected.reduce((sum, option, position) => sum
+          + (group.perOptionSteps?.[position] ?? group.perOption)
+            * answerLanguageMultiplier(card, claims, id, option), 0);
+      }
       return n + claimedMarks(r.group, chosen);
     }
-    if (r.parts) return n + partsMarksClaimed(r, id, claims);
-    if (r.permittedMarks) return n + criterionMarksClaimed(r, claims[id] ?? 'no');
-    return isClaimed(claims, id) ? n + rowMarks(r) : n;
-  }, 0) + (bonus ? criterionMarksClaimed(bonus, claims[bonus.id] ?? 'no') : 0);
+    if (r.parts) return n + Math.min(r.marks ?? 0, r.parts.reduce((sum, part) => {
+      const partId = partClaimId(id, part.id);
+      return sum + partMarksClaimed(part, claims[partId] ?? 'no') * answerLanguageMultiplier(card, claims, partId);
+    }, 0));
+    const multiplier = answerLanguageMultiplier(card, claims, id);
+    if (r.permittedMarks) return n + criterionMarksClaimed(r, claims[id] ?? 'no') * multiplier;
+    return isClaimed(claims, id) ? n + rowMarks(r) * multiplier : n;
+  }, 0) + (bonus ? criterionMarksClaimed(bonus, claims[bonus.id] ?? 'no') * answerLanguageMultiplier(card, claims, bonus.id) : 0);
 }
 
 /**
@@ -563,7 +584,8 @@ const Tally: React.FC<{ value: number; reduced: boolean }> = ({ value, reduced }
     const tick = (t: number) => {
       if (start === undefined) start = t;
       const p = Math.min(1, Math.max(0, (t - start) / 260));
-      setShown(Math.round(from + (value - from) * (1 - Math.pow(1 - p, 3))));
+      const precision = Number.isInteger(from) && Number.isInteger(value) ? 1 : 2;
+      setShown(Math.round((from + (value - from) * (1 - Math.pow(1 - p, 3))) * precision) / precision);
       if (p < 1) raf.current = requestAnimationFrame(tick);
       else setShown(value);
     };
@@ -616,10 +638,20 @@ const MarkRowView: React.FC<{
   wholeResponse?: boolean;
   /** The claims on a row's parts, by part id; only a row with parts has them. */
   partClaims?: Record<string, RowClaim>;
-}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere, wholeResponse, partClaims }) => {
+  answerLanguageRule?: SecCard['answerLanguageRule'];
+  languageClaims?: Record<string, RowClaim>;
+}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere, wholeResponse, partClaims, answerLanguageRule, languageClaims }) => {
   const claimed = claim !== 'no';
   const marks = rowMarks(row);
   const canSynonym = !row.exactTermRequired && (row.openList || row.kind === 'alt');
+  const languageControl = (target: string, label: string, disabled: boolean) => showMarks && answerLanguageRule && (
+    <label className="mb-language-flag" style={{ margin: '6px 0 8px', font: `400 12px/1.45 ${SANS}`, color: INK_2 }}>
+      <input type="checkbox" aria-label={`${label} answered in another language`}
+        disabled={blocked || disabled} checked={languageClaims?.[target] === 1}
+        onChange={event => onClaim(target, event.currentTarget.checked ? 1 : 0)} />
+      <span>This answer uses a language other than specified · {answerLanguageRule.otherLanguageMultiplier === 0 ? 'no credit' : 'half credit'}</span>
+    </label>
+  );
 
   if (row.permittedMarks && row.parts) {
     // "Design feature 1 (2 for point, 4 for discussion)": each named component
@@ -650,6 +682,7 @@ const MarkRowView: React.FC<{
                     </button>
                   ))}
                 </div>
+                {languageControl(answerLanguageClaimId(partClaimId(id, part.id)), `${part.verbatim} · ${row.verbatim}`, selected === 0)}
               </div>
             );
           })}
@@ -678,6 +711,7 @@ const MarkRowView: React.FC<{
             </button>
           ))}
         </div>
+        {languageControl(answerLanguageClaimId(id), row.verbatim, selected === 0)}
         {blocked && blockedReason ? <p>{blockedReason}</p> : null}
       </section>
     );
@@ -743,8 +777,8 @@ const MarkRowView: React.FC<{
             const usedAlready = !on && takenElsewhere?.has(option);
             const disabled = !on && (atCap || Boolean(usedAlready));
             return (
+              <React.Fragment key={oi}>
               <button
-                key={oi}
                 type="button"
                 onClick={() => onPick(id, oi)}
                 disabled={disabled}
@@ -792,6 +826,8 @@ const MarkRowView: React.FC<{
                   )}
                 </span>
               </button>
+              {languageControl(answerLanguageClaimId(id, oi), option, !on)}
+              </React.Fragment>
             );
           })}
         </div>
@@ -908,6 +944,7 @@ const MarkRowView: React.FC<{
         )}
       </button>
 
+      {languageControl(answerLanguageClaimId(id), row.verbatim, !claimed)}
       {blocked && (
         <span style={{ display: 'block', marginTop: 4, marginLeft: 42, font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
           {blockedReason ?? 'This mark only counts if the point above was right.'}
@@ -2368,10 +2405,27 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     if (!assessmentCard || !isPointCard(assessmentCard)) return {};
     const out: Record<string, RowClaim> = {};
     assessmentCard.rows.forEach((r, i) => {
-      out[rowId(r, i)] = claimOf(rowId(r, i));
-      for (const part of r.parts ?? []) out[partClaimId(rowId(r, i), part.id)] = claimOf(partClaimId(rowId(r, i), part.id));
+      const id = rowId(r, i);
+      out[id] = claimOf(id);
+      const copyLanguageClaim = (answerId: string, optionIndex?: number) => {
+        if (assessmentCard.answerLanguageRule) {
+          const key = answerLanguageClaimId(answerId, optionIndex);
+          out[key] = claimOf(key);
+        }
+      };
+      copyLanguageClaim(id);
+      r.group?.options.forEach((_, optionIndex) => copyLanguageClaim(id, optionIndex));
+      for (const part of r.parts ?? []) {
+        const partId = partClaimId(id, part.id);
+        out[partId] = claimOf(partId);
+        copyLanguageClaim(partId);
+      }
     });
-    if (assessmentCard.questionBonus) out[assessmentCard.questionBonus.id] = claimOf(assessmentCard.questionBonus.id);
+    if (assessmentCard.questionBonus) {
+      out[assessmentCard.questionBonus.id] = claimOf(assessmentCard.questionBonus.id);
+      const key = answerLanguageClaimId(assessmentCard.questionBonus.id);
+      if (assessmentCard.answerLanguageRule) out[key] = claimOf(key);
+    }
     return out;
   }, [assessmentCard, claimOf]);
 
@@ -3166,6 +3220,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                             picks={picks[id] ?? []}
                             takenElsewhere={takenByRow[id]}
                             partClaims={row.parts ? Object.fromEntries(row.parts.map(part => [part.id, rowClaims[partClaimId(id, part.id)] ?? 'no'])) : undefined}
+                            answerLanguageRule={assessmentCard.answerLanguageRule}
+                            languageClaims={rowClaims}
                             onClaim={setClaim}
                             onPick={togglePick}
                           />
@@ -3185,12 +3241,17 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                             blocked={false}
                             reduced={reduced}
                             picks={[]}
+                            answerLanguageRule={assessmentCard.answerLanguageRule}
+                            languageClaims={rowClaims}
                             onClaim={setClaim}
                             onPick={togglePick}
                           />
                         </div>
                       )}
 
+                      {assessmentCard.answerLanguageRule && <p style={{ font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
+                        {assessmentCard.answerLanguageRule.sourceText}
+                      </p>}
                       {assessmentCard.tariffModel.kind === 'orderedSplit' && (
                         <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
                           The examiner marks the first correct answers higher than the rest
