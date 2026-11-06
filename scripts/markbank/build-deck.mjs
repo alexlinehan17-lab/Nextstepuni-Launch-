@@ -35,6 +35,7 @@ import { assertEconomicsReviewCoverage, bindEconomicsEditions } from './economic
 import { applyMathematicsReview, validateMathematicsReviewSources, assertReviewedMathematicsCards, reviewedMathematicsSource } from './mathematics/review.mjs';
 import { reviewedPhysicsSource } from './physicsSources.mjs';
 import { reviewedHomeEconomicsSource } from './homeEconomicsSources.mjs';
+import { audioMaterialFault, audioQuestionPaperFileid } from './audioMaterial.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -1415,6 +1416,9 @@ for (const c of cards) {
   const badVariants = answerVariantsFault(c);
   if (badVariants) { dropped.push(`${c.id}: ${badVariants}`); continue; }
 
+  const badAudio = audioMaterialFault(c, SUBJECT_ID);
+  if (badAudio) { dropped.push(`${c.id}: ${badAudio}`); continue; }
+
   const sources = [c.sourceMaterial, ...(c.additionalSourceMaterials ?? [])]
     .filter(Boolean);
   /* A source printed in a SEPARATE official document names that document by
@@ -1644,7 +1648,8 @@ for (const c of cards) {
     : SUBJECT_ID === 'home-economics' ? reviewedHomeEconomicsSource(c.id) : undefined;
   const fileid = reviewedSource
     ? resolveIndexedPaperFileid(SUBJECT_ID, year, level, reviewedSource)
-    : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
+    : audioQuestionPaperFileid(c, SUBJECT_ID)
+      ?? resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
   if (!fileid) unresolvedPapers++;
 
   out.push({ id: c.id, level, code: `  {
@@ -1658,7 +1663,7 @@ for (const c of cards) {
     tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},
     rows: [
 ${rows}
-    ],${c.mathematicsScale ? `\n    mathematicsScale: ${JSON.stringify(c.mathematicsScale)},` : ''}${c.taskGroups ? `\n    taskGroups: ${JSON.stringify(c.taskGroups)},` : ''}${c.questionBonus ? `\n    questionBonus: ${JSON.stringify(c.questionBonus)},` : ''}${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
+    ],${c.mathematicsScale ? `\n    mathematicsScale: ${JSON.stringify(c.mathematicsScale)},` : ''}${c.taskGroups ? `\n    taskGroups: ${JSON.stringify(c.taskGroups)},` : ''}${c.questionBonus ? `\n    questionBonus: ${JSON.stringify(c.questionBonus)},` : ''}${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.audioMaterial ? `\n    audioMaterial: ${JSON.stringify(c.audioMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
   } as SecCard,` });
 }
 
