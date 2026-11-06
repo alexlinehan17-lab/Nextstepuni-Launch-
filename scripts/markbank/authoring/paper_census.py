@@ -1379,6 +1379,16 @@ def census_sections(subject, year, level, files=None):
                 # A part marker can extract with a stray space, '(C )' in the
                 # 2026 OL Section 2 paper, which hid its (C) under (B).
                 block = re.sub(r'\(([A-H]) \)', r'(\1)', block)
+            if (subject, year, level) == ('home-economics', 2010, 'hl'):
+                # The reviewed combined booklet merges its answer rules and
+                # next question into one PDF block. Its quoted B5 follows a
+                # parenthesised tariff; C's long rubric precedes the elective
+                # in that same block. Preserve source text while exposing
+                # those real boundaries (paper pp2–5, 8–11). This is scoped
+                # to the independently swept sitting, not inferred for others.
+                block = re.sub(r'(?<=_)\s+(?=\d{1,2}\.\s+)', '\n', block)
+                block = re.sub(r'(?<=\))\s+(?=\d{1,2}\.\s+[A-Z‘])', '\n', block)
+                block = re.sub(r'\s+(?=Elective\s+\d\b)', '\n', block)
             # Business short questions can share a PDF block with the previous
             # question's underscore answer rules. Those rules have no sentence
             # punctuation, so the ordinary inline-head splitter misses Q2/Q3
@@ -1389,7 +1399,8 @@ def census_sections(subject, year, level, files=None):
             chunks = (re.split(r'(?<=_)\s+(?=\d{1,2}\.\s+)'
                               r'|\s+(?=\d{1,2}\.\s+\([a-z]\)\s+[A-Z])'
                               r'|(?<=\d)\s+(?=\d{1,2}\.\s+[A-Z][a-z]+\s)', block)
-                      if subject == 'business' else [block])
+                      if subject == 'business' else block.split('\n')
+                      if (subject, year, level) == ('home-economics', 2010, 'hl') else [block])
             for text in (part for chunk in chunks for part in PP.INLINE_QHEAD.split(chunk)):
                 if subject == 'business':
                     # Roman labels beside empty ruled answer slots are not

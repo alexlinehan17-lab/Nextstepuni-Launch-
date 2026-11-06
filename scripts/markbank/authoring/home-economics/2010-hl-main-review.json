@@ -1,0 +1,490 @@
+{
+  "schemaVersion": 1,
+  "year": 2010,
+  "level": "higher",
+  "sitting": "main",
+  "language": "ev",
+  "status": "source-reviewed",
+  "sources": {
+    "paper-trail-corpus/exampapers/2010/LC098ALP000EV.pdf": {
+      "sha256": "80a5625b3ef38cc0dbd0337e68dfe34dccba86bea005133aa0b7576ba3270df3",
+      "pages": 12
+    },
+    "paper-trail-corpus/markingschemes/2010/LC098ALP000EV.pdf": {
+      "sha256": "c18db92c5e9645dd372a558edf73e71c524d3333d47cdca72bcf9b84c5e61bcb",
+      "pages": 33
+    }
+  },
+  "visualSweep": {
+    "paper": "All twelve pages reviewed: cover/instructions1; SectionA2–5; B6–8; C9–11; blank12.",
+    "scheme": "All thirty-three pages reviewed: cover1,blank2,guidance3,A4–6,B7–12,C13–19,blank20,separate coursework21–32,backcover33."
+  },
+  "expectedTasks": 50,
+  "expectedSectionTasks": {
+    "A": 12,
+    "B": 18,
+    "C": 20
+  },
+  "sourceQuestionGroups": 20,
+  "offeredPracticeMarks": 627,
+  "tasks": [
+    {
+      "id": "he-2010-hl-sa-q1",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 HL Section A Q1",
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2010-hl-sa-q2",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 HL Section A Q2",
+      "topicId": "home-economics-0-6"
+    },
+    {
+      "id": "he-2010-hl-sa-q3",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 HL Section A Q3",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2010-hl-sa-q4",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 HL Section A Q4",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2010-hl-sa-q5",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 HL Section A Q5",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2010-hl-sa-q6",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 HL Section A Q6",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2010-hl-sa-q7",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 HL Section A Q7",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2010-hl-sa-q8",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 HL Section A Q8",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2010-hl-sa-q9",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 HL Section A Q9",
+      "topicId": "home-economics-1-3"
+    },
+    {
+      "id": "he-2010-hl-sa-q10",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 HL Section A Q10",
+      "topicId": "home-economics-1-4"
+    },
+    {
+      "id": "he-2010-hl-sa-q11",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 HL Section A Q11",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2010-hl-sa-q12",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2010 HL Section A Q12",
+      "topicId": "home-economics-1-5"
+    },
+    {
+      "id": "he-2010-hl-sb-q1ai",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2010 HL Section B Q1(a)(i)",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2010-hl-sb-q1aii",
+      "section": "B",
+      "marks": 4,
+      "questionRef": "2010 HL Section B Q1(a)(ii)",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2010-hl-sb-q1b",
+      "section": "B",
+      "marks": 21,
+      "questionRef": "2010 HL Section B Q1(b)",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2010-hl-sb-q1c",
+      "section": "B",
+      "marks": 15,
+      "questionRef": "2010 HL Section B Q1(c)",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2010-hl-sb-q1d",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2010 HL Section B Q1(d)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2010-hl-sb-q2a",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2010 HL Section B Q2(a)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2010-hl-sb-q2b",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2010 HL Section B Q2(b)",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2010-hl-sb-q2c",
+      "section": "B",
+      "marks": 10,
+      "questionRef": "2010 HL Section B Q2(c)",
+      "topicId": "home-economics-0-10"
+    },
+    {
+      "id": "he-2010-hl-sb-q3a",
+      "section": "B",
+      "marks": 26,
+      "questionRef": "2010 HL Section B Q3(a)",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2010-hl-sb-q3b",
+      "section": "B",
+      "marks": 16,
+      "questionRef": "2010 HL Section B Q3(b)",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2010-hl-sb-q3c",
+      "section": "B",
+      "marks": 8,
+      "questionRef": "2010 HL Section B Q3(c)",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2010-hl-sb-q4a",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2010 HL Section B Q4(a)",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2010-hl-sb-q4b",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2010 HL Section B Q4(b)",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2010-hl-sb-q4c",
+      "section": "B",
+      "marks": 10,
+      "questionRef": "2010 HL Section B Q4(c)",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2010-hl-sb-q5a",
+      "section": "B",
+      "marks": 24,
+      "questionRef": "2010 HL Section B Q5(a)",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2010-hl-sb-q5b",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2010 HL Section B Q5(b)",
+      "topicId": "home-economics-2-1"
+    },
+    {
+      "id": "he-2010-hl-sb-q5c-importance",
+      "section": "B",
+      "marks": 4,
+      "questionRef": "2010 HL Section B Q5(c) — importance",
+      "topicId": "home-economics-2-1"
+    },
+    {
+      "id": "he-2010-hl-sb-q5c-procedure",
+      "section": "B",
+      "marks": 10,
+      "questionRef": "2010 HL Section B Q5(c) — procedure",
+      "topicId": "home-economics-2-1"
+    },
+    {
+      "id": "he-2010-hl-sc-q1ai",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2010 HL Section C E1 Q1(a)(i)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2010-hl-sc-q1aii",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2010 HL Section C E1 Q1(a)(ii)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2010-hl-sc-q1aiii",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2010 HL Section C E1 Q1(a)(iii)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2010-hl-sc-q1bi",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2010 HL Section C E1 Q1(b)(i)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2010-hl-sc-q1bii",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2010 HL Section C E1 Q1(b)(ii)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2010-hl-sc-q1ci",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2010 HL Section C E1 Q1(c)(i)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2010-hl-sc-q1cii",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2010 HL Section C E1 Q1(c)(ii)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2010-hl-sc-q2ai",
+      "section": "C",
+      "marks": 8,
+      "questionRef": "2010 HL Section C E2 Q2(a)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2010-hl-sc-q2aii",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2010 HL Section C E2 Q2(a)(ii)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2010-hl-sc-q2aiii",
+      "section": "C",
+      "marks": 8,
+      "questionRef": "2010 HL Section C E2 Q2(a)(iii)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2010-hl-sc-q2b",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2010 HL Section C E2 Q2(b)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2010-hl-sc-q2ci",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2010 HL Section C E2 Q2(c)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2010-hl-sc-q2cii",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2010 HL Section C E2 Q2(c)(ii)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2010-hl-sc-q3ai",
+      "section": "C",
+      "marks": 30,
+      "questionRef": "2010 HL Section C E3 Q3(a)(i)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2010-hl-sc-q3aii",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2010 HL Section C E3 Q3(a)(ii)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2010-hl-sc-q3aiii",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2010 HL Section C E3 Q3(a)(iii)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2010-hl-sc-q3bi",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2010 HL Section C E3 Q3(b)(i)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2010-hl-sc-q3bii",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2010 HL Section C E3 Q3(b)(ii)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2010-hl-sc-q3ci",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2010 HL Section C E3 Q3(c)(i)",
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2010-hl-sc-q3cii",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2010 HL Section C E3 Q3(c)(ii)",
+      "topicId": "home-economics-3-10"
+    }
+  ],
+  "sectionAReview": {
+    "tasks": 12,
+    "marks": 72,
+    "tariffDecision": "Whole-question six-mark tariffs only; all answer rows unpriced. No inferred partial ladder or per-item value.",
+    "selectionDecisions": "Each printed question is one card: A2 three property/use pairs, A6 two pastry names plus dependent comparison, A7 two of three named agents. Full source options retained without fan-out."
+  },
+  "sectionBReview": {
+    "tasks": 18,
+    "marks": 280,
+    "selectionDecisions": "B1(a)20/4 and B5(c)4/10 are separate published task boundaries. Required cooking profiles, preservation comparison, family/support pairs and fish nutritional/dietetic quotas remain whole. Only published per-point values, no inferred partial ladders."
+  },
+  "sectionCReview": {
+    "tasks": 20,
+    "marks": 275,
+    "selectionDecisions": "Required headings, chosen-fabric profiles and sketch-plus-description stay whole. Open social-housing choice uses one card with source-specific marking routes. E1(a)(ii) and E3(a)(i) share a total point quota across required headings, with no invented allocation between headings. Only source-printed per-point full values are offered."
+  },
+  "figures": {
+    "home-economics-2010-hl-sa-q1": {
+      "source": "paper-trail-corpus/exampapers/2010/LC098ALP000EV.pdf",
+      "page": 2,
+      "bounds": [
+        45,
+        138.7676544189453,
+        560.219970703125,
+        290.5675354003906
+      ],
+      "alt": "Original protein-digestion question and table. Given cells: Organ / Gland, Pancreas; Secretion, Pancreatic Juice. Blank answer columns: Enzyme, Substrate and Product.",
+      "sha256": "4c6f6df4f4c0c37d4d3d4d453a0c831523e79e307199ba89eac3f152c4ecb14d"
+    },
+    "home-economics-2010-hl-sa-q2": {
+      "source": "paper-trail-corpus/exampapers/2010/LC098ALP000EV.pdf",
+      "page": 2,
+      "bounds": [
+        45,
+        290.5675354003906,
+        560.219970703125,
+        490.84765625
+      ],
+      "alt": "Original question and three-row blank sugar-properties table. Columns: Property and Culinary use. The student selects three properties and a matching use for each.",
+      "sha256": "2392098642ce25d68cf7124822d13564e4b6cd47ed1482df1ad095ca39361205"
+    },
+    "home-economics-2010-hl-sa-q7": {
+      "source": "paper-trail-corpus/exampapers/2010/LC098ALP000EV.pdf",
+      "page": 3,
+      "bounds": [
+        45,
+        481.4876708984375,
+        560.219970703125,
+        770
+      ],
+      "alt": "Original question and conditioning-agent table. Required choice: two of Humectants, Polyphosphates and Stabilisers; blank Function column.",
+      "sha256": "ca21e60db229e0cdada62d564ce8dc6ddaf752e515ff177065200e70312300fc"
+    },
+    "home-economics-2010-hl-sa-q12": {
+      "source": "paper-trail-corpus/exampapers/2010/LC098ALP000EV.pdf",
+      "page": 5,
+      "bounds": [
+        45,
+        233.08753967285156,
+        560.219970703125,
+        770
+      ],
+      "alt": "Original consumer-symbol question. Green Dot logo with two interlocking circular arrows and Eco Label flower logo with EU stars; both printed captions and answer spaces retained.",
+      "sha256": "d5ac7f71f615f4d5db130e4fb7db0affdd1262ab0c9b38ab24763d54ce649850"
+    },
+    "home-economics-2010-hl-sb-q1-exports": {
+      "source": "paper-trail-corpus/exampapers/2010/LC098ALP000EV.pdf",
+      "page": 6,
+      "bounds": [
+        150,
+        150,
+        505,
+        475
+      ],
+      "alt": "Original Bord Bia pie chart, Breakdown of Irish food and drink exports, 2008 (%). Dairy Products 29%, Beef 21%, Prepared Foods 18%, Beverages 15%, Pigmeat 4%, Seafood 4%, Other 9%. Complete title, seven sectors, labels and source caption retained.",
+      "sha256": "c9f88d187078825ec013a482448f4ae3c157c8dbb1b4e65caaaae8415a6f8d94"
+    }
+  },
+  "sourceCensus": {
+    "physicalGroups": 20,
+    "practiceTasks": 50,
+    "rawLeaves": 50,
+    "covered": 50,
+    "open": 0,
+    "excluded": 0,
+    "orphans": 0,
+    "continuityFlags": 0,
+    "explanation": "Paper and scheme visual census counted12 A,18 independently priced B and20 C tasks before authoring. Raw parser A5 has two role leaves and B5(c) one combined leaf; scheme prices B5(c) importance/procedure separately, so raw and practice totals happen to agree. Three genuine PDF block boundary corrections are scoped to2010 Higher; no other sitting changes."
+  },
+  "validation": {
+    "requiredVitest": "232 preservation/curriculum/deck tests passed; eight source tests passed.",
+    "atlas": "Two targeted Home Economics Atlas tests passed; all50 cards join the20 preserved original groups and canonical topics. 60 tagged papers,636 physical groups,1002 registry mappings.",
+    "mainTypecheck": "passed",
+    "scopedHomeEconomicsTestTypecheck": "passed",
+    "productionBuild": "passed; own reproducible dist removed after success",
+    "cardlint": "clean",
+    "regeneration": "Two full authoring/figures/deck/Atlas/tags/showcase/landing regenerations byte-identical across27 files.",
+    "preservation": "All previous authored cards, other subject decks, shared size/showcase subjects, unrelated tags/runtime/associations and every other HE census sitting unchanged. Frozen identity hashes unchanged.",
+    "visibleGuidance": "Total-only six-mark explanation, full cooking/preservation methods and will-task scope emit in row.contextNote; SessionScreen renders those notes in full. No new live browser QA claimed.",
+    "reconciliation": "2010 Higher50/50 raw asks covered, no opens/exclusions/orphans. Whole subject888 cards,851/1369 covered,518 open,0orphans/unparsed/exclusions and36 census flags.",
+    "browser": "Pending parent integration/live QA; source crops independently visually inspected."
+  },
+  "reviewCorrections": [
+    "Required tests caught a deprecated energy-topic choice; A4 now uses the existing Diet & Health node home-economics-0-1.",
+    "All A answers remain unpriced because the original scheme prints only six-mark totals; no per-answer marks or partial ladder inferred.",
+    "Printed method profiles stay together; required fish categories retain two source-compatible routes on one card.",
+    "B5(c) uses exact source clause excerpts plus full original context; the10-mark procedure scope is a visible row note."
+  ]
+}
