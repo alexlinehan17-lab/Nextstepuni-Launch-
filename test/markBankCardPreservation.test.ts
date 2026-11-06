@@ -78,6 +78,7 @@ import { CARDS as ITALIAN_ORDINARY } from '../components/MarkBank/cards/italian/
 import { CARDS as RUSSIAN_HIGHER } from '../components/MarkBank/cards/russian/higher';
 import { CARDS as RUSSIAN_ORDINARY } from '../components/MarkBank/cards/russian/ordinary';
 import russianReviewedSources from '../scripts/markbank/authoring/russian-reviewed-sources.json';
+import russianOriginalCardIds from './fixtures/russianOriginalCardIds.json';
 import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
 import { CARDS as POLISH_HIGHER } from '../components/MarkBank/cards/polish/higher';
@@ -856,7 +857,7 @@ const decks = [
    * pages of the question paper it was printed on; unlike them, fourteen of
    * its cards are answered in RUSSIAN rather than in English or Irish and say
    * so on their face. */
-  ['russian:higher', RUSSIAN_HIGHER, 129, 'd6dd301e3aab209e0c35878583aba74fcffd253a241adf020ee49119ed562a6c'],
+  ['russian:higher', RUSSIAN_HIGHER, 83, '28a15e33be6d11b7077181773cc7611e2681f8c34c057fa8361077b386491392'],
   ['russian:ordinary', RUSSIAN_ORDINARY, 116, '7a1246357f052dda6f3e337e5c05b1a7df6ce1ec213f8d3eb9cb648576fa8e49'],
   /* Japanese is the twenty-second subject and the first set in a non-Latin
    * script. Every card is new; none replaces anything. Two things are true of
@@ -1265,6 +1266,8 @@ const isBiologyAdded = (id: string) => {
 const biologyAdditionIds = new Set([...BIO_HIGHER, ...BIO_ORDINARY]
   .map(card => card.id).filter(isBiologyAdded));
 const biologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('bio-'));
+const russianFrozen = new Set([...russianOriginalCardIds.higher, ...russianOriginalCardIds.ordinary]);
+const russianAdditionIds = new Set(russianReviewedSources.map(card => card.id).filter(id => !russianFrozen.has(id)));
 const mathsFrozen = new Set([...mathsLaunchBaseline.higher, ...mathsLaunchBaseline.ordinary]);
 const mathsNewAliases = new Set([...Object.keys(mathsLaunchReview.choiceAliases), ...Object.keys(mathsLaunchReview.identityMigrations).filter(id => id !== 'maths-2021-ol-p2-q6')]);
 const mathsNet = MATHS_HIGHER.length + MATHS_ORDINARY.length - mathsFrozen.size;
@@ -1364,6 +1367,11 @@ const homeEconomicsAdditionIds = new Set([
 ]);
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
+  if (name.startsWith('russian:')) {
+    const published = new Set(ids);
+    return russianOriginalCardIds[name.endsWith(':higher') ? 'higher' : 'ordinary']
+      .filter(id => published.has(id) || published.has(CARD_ID_ALIASES[id]));
+  }
   if (name.startsWith('maths:')) {
     const published = new Set(ids);
     return mathsLaunchBaseline[name.endsWith(':higher') ? 'higher' : 'ordinary']
@@ -1432,7 +1440,8 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   return ids;
 };
 const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
-  name.startsWith('maths:') ? cards.filter(card => mathsFrozen.has(card.id)).length
+  name.startsWith('russian:') ? cards.filter(card => russianFrozen.has(card.id)).length
+    : name.startsWith('maths:') ? cards.filter(card => mathsFrozen.has(card.id)).length
     : name.startsWith('home-economics:') ? cards.filter(card => !homeEconomicsAdditionIds.has(card.id)).length
     : name.startsWith('economics:') ? cards.filter(card => !economicsAdditionIds.has(card.id)).length
     : name.startsWith('agricultural-science:') ? cards.filter(card => !agriAdditionIds.has(card.id)).length
@@ -1449,6 +1458,10 @@ const peAdditions = {
 } as const;
 
 describe('Mark Bank card preservation', () => {
+  it('retains reviewed Russian additions beside the original frozen identities', () => {
+    const additions = [...RUSSIAN_HIGHER, ...RUSSIAN_ORDINARY].filter(card => !russianFrozen.has(card.id));
+    expect(additions.map(card => card.id).sort()).toEqual([...russianAdditionIds].sort());
+  });
   it('retains the reviewed Home Economics additions beside the frozen set', () => {
     const added = [...HOME_EC_HIGHER, ...HOME_EC_ORDINARY].filter(card => homeEconomicsAdditionIds.has(card.id));
     expect(added.map(card => card.id).sort()).toEqual([...homeEconomicsAdditionIds].sort());
@@ -1569,9 +1582,9 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(23_343 + frenchAdditionIds.size + artNet + russianReviewedSources.length);
+    ), 0)).toBe(23_343 + frenchAdditionIds.size + artNet + russianAdditionIds.size);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(23_343 + frenchAdditionIds.size + businessAdditionIds.size + russianReviewedSources.length
+      .toBe(23_343 + frenchAdditionIds.size + businessAdditionIds.size + russianAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length
