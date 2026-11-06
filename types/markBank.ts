@@ -1282,7 +1282,66 @@ export interface FrenchRubric {
   practiceNotes?: string[];
 }
 
-export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric;
+/** Source-defined language grids. Conditions are printed scheme rules, never
+ * inferred from the language or carried forward from another examination. */
+export type LanguageLimitCondition =
+  | { criterionIds: string[]; atMost: number; ignoreDeductions?: boolean }
+  | { length: 'words' | 'characters'; below: number }
+  | { flag: string; prompt: string };
+
+export interface LanguageBand {
+  label: string;
+  marks: number[];
+  guidance: string[];
+}
+
+export interface LanguageWritingCriterion {
+  id: string;
+  label: string;
+  kind?: 'award' | 'deduction';
+  /** A deduction changes this criterion, including subsequent content tests. */
+  deductFrom?: string;
+  maxMarks: number;
+  permittedMarks: number[];
+  guidance: string[];
+  bands?: LanguageBand[];
+  limits?: Array<{
+    id: string;
+    maxMarks: number;
+    when: { any: LanguageLimitCondition[] };
+    bands?: LanguageBand[];
+    guidance: string[];
+  }>;
+}
+
+export interface LanguageWritingRubric {
+  system: 'language-writing';
+  taskRequirements: string[];
+  criteria: LanguageWritingCriterion[];
+  markingGuideNote: string;
+}
+
+/** A printed choose-k task whose options each have independently claimable
+ * components: e.g. a kanji reading AND meaning. Selection counts complete
+ * option groups, so partial components never create additional answer slots. */
+export interface LanguagePointsRubric {
+  system: 'language-points';
+  taskRequirements: string[];
+  count: number;
+  /** Whole-task criteria in addition to the chosen answers, e.g. the SEC's
+   * separately awarded discretionary marks. Never silently granted. */
+  criteria?: LanguageWritingCriterion[];
+  groups: Array<{
+    id: string;
+    label: string;
+    /** Mutually exclusive complete/partial wordings within one semantic answer. */
+    answerCount?: number;
+    rows: Array<{ id: string; text: string; marks: number; steps?: number[] }>;
+  }>;
+  markingGuideNote: string;
+}
+
+export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric | LanguageWritingRubric | LanguagePointsRubric;
 
 /** A prose/short-answer SEC card. */
 export interface SecQuestionCard extends SecPointCardBase {
@@ -1522,6 +1581,52 @@ export function rowPartsReconcile(row: MarkRow): boolean {
 
 export function tariffReconciles(card: SecCard): boolean {
   if (isRubricCard(card)) {
+    if (card.rubric.system === 'language-writing' || card.rubric.system === 'language-points') {
+      const rubric = card.rubric;
+      const criteria = rubric.criteria ?? [];
+      const ids = new Set(criteria.map(criterion => criterion.id));
+      const validSteps = (marks: number[], max: number) => marks.length > 0
+        && marks[0] === 0 && marks.at(-1) === max
+        && marks.every((mark, index) => Number.isInteger(mark) && mark >= 0 && (index === 0 || mark > marks[index - 1]));
+      const validBands = (bands: LanguageBand[] | undefined, allowed: number[]) => {
+        if (!bands) return true;
+        const marks = bands.flatMap(band => band.marks);
+        return marks.length === allowed.length && new Set(marks).size === marks.length
+          && marks.every(mark => allowed.includes(mark))
+          && bands.every(band => band.label.trim() && band.guidance.length > 0);
+      };
+      if (ids.size !== criteria.length || !criteria.every(criterion => criterion.id && criterion.label.trim()
+        && Number.isInteger(criterion.maxMarks) && criterion.maxMarks >= 0
+        && validSteps(criterion.permittedMarks, criterion.maxMarks)
+        && validBands(criterion.bands, criterion.permittedMarks)
+        && (criterion.kind !== 'deduction' || criteria.some(target => target.id === criterion.deductFrom && target.kind !== 'deduction'))
+        && (criterion.limits ?? []).every(limit => limit.id && criterion.permittedMarks.includes(limit.maxMarks)
+          && limit.when.any.length > 0 && validBands(limit.bands, criterion.permittedMarks.filter(mark => mark <= limit.maxMarks))
+          && limit.when.any.every(condition => 'criterionIds' in condition
+            ? condition.criterionIds.length > 0 && condition.criterionIds.every(id => ids.has(id) && id !== criterion.id) && Number.isFinite(condition.atMost)
+            : 'length' in condition ? Number.isInteger(condition.below) && condition.below > 0
+              : !!condition.flag && !!condition.prompt.trim())))) return false;
+      // Source rules may depend on other criteria, but circular definitions
+      // cannot establish a published tariff and are rejected at authoring time.
+      const cyclic = (id: string, path: string[]): boolean => {
+        if (path.includes(id)) return true;
+        const criterion = criteria.find(item => item.id === id);
+        return (criterion?.limits ?? []).some(limit => limit.when.any.some(condition => 'criterionIds' in condition
+          && condition.criterionIds.some(ref => cyclic(ref, [...path, id]))));
+      };
+      if (criteria.some(criterion => cyclic(criterion.id, []))) return false;
+      const criterionTotal = criteria.filter(criterion => criterion.kind !== 'deduction').reduce((sum, criterion) => sum + criterion.maxMarks, 0);
+      if (rubric.system === 'language-writing') return criteria.length > 0 && criterionTotal === card.totalMarks;
+      const { groups, count } = rubric;
+      if (!Number.isInteger(count) || count < 1 || count > groups.length || new Set(groups.map(group => group.id)).size !== groups.length) return false;
+      if (!groups.every(group => group.id && group.label.trim() && group.rows.length > 0
+        && new Set(group.rows.map(row => row.id)).size === group.rows.length
+        && (group.answerCount === undefined || (Number.isInteger(group.answerCount) && group.answerCount >= 1 && group.answerCount <= group.rows.length))
+        && group.rows.every(row => row.id && row.text.trim() && Number.isInteger(row.marks) && row.marks > 0 && (!row.steps || validSteps(row.steps, row.marks))))) return false;
+      const maxima = groups.map(group => group.rows.map(row => row.marks).sort((a, b) => b - a)
+        .slice(0, group.answerCount ?? group.rows.length).reduce((sum, mark) => sum + mark, 0)).sort((a, b) => b - a);
+      return maxima.slice(0, count).reduce((sum, mark) => sum + mark, 0) + criterionTotal === card.totalMarks;
+    }
     if (card.rubric.system === 'politics') {
       const { criteria, schemePages, schemeFileid } = card.rubric;
       return Boolean(schemeFileid)
