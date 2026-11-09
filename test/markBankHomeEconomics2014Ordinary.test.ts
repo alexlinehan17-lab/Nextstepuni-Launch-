@@ -71,6 +71,7 @@ describe('2014 Ordinary Home Economics: independently swept original sources', (
     for (const row of get('sb-q4bii').rows) expect(row.contextNote).toContain('Each effect must match its own type');
     expect(get('sb-q4c').rows[0].group?.options).toHaveLength(8);
     expect(get('sb-q5b').rows[0].contextNote).toContain('historical 2014');
+    for (const part of ['a', 'b', 'c']) expect(get(`sb-q5${part}`).topicId).toBe('home-economics-2-1');
   });
   it('retains source gaps, linked outfits and flexible required elective headings', () => {
     expect(get('sc-q1ai').rows.map(r => r.marks)).toEqual([6, 6, 6]);
