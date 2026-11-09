@@ -3161,5 +3161,133 @@
         0.95
       ]
     }
+  },
+  "ja-2016-ol-2a-1": {
+    "src": "/exam-figures/japanese/ja-2016-ol-2a-1.png",
+    "md5": "6b9a1509deaef4f6684351a51856ebdf",
+    "alt": "Match the shop/event with the location:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.5,
+        0.035,
+        0.97,
+        0.208
+      ]
+    }
+  },
+  "ja-2016-ol-2a-4": {
+    "src": "/exam-figures/japanese/ja-2016-ol-2a-4.png",
+    "md5": "a14f534dc7e5a7cfef4d477133188c51",
+    "alt": "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to support your answer, as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.075,
+        0.46,
+        0.97,
+        0.956
+      ]
+    }
+  },
+  "ja-2016-ol-2b-1": {
+    "src": "/exam-figures/japanese/ja-2016-ol-2b-1.png",
+    "md5": "81d40801d10f6a12c115b2619559adea",
+    "alt": "Write the following sentences in the positive form as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 6,
+      "region": [
+        0.075,
+        0.03,
+        0.97,
+        0.42
+      ]
+    }
+  },
+  "ja-2016-ol-2b-2": {
+    "src": "/exam-figures/japanese/ja-2016-ol-2b-2.png",
+    "md5": "4281835e9b634692928ddfb3c9053b80",
+    "alt": "Circle the correct particle (a), (b) or (c) below as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 6,
+      "region": [
+        0.075,
+        0.46,
+        0.97,
+        0.8
+      ]
+    }
+  },
+  "ja-2016-ol-2c": {
+    "src": "/exam-figures/japanese/ja-2016-ol-2c.png",
+    "md5": "86e78f7464a8a1af649c871abfffdaa8",
+    "alt": "Circle the correct meaning (a), (b), (c) or (d) for the following Kanji as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.07,
+        0.53,
+        0.97,
+        0.96
+      ]
+    }
+  },
+  "ja-2016-ol-4": {
+    "src": "/exam-figures/japanese/ja-2016-ol-4.png",
+    "md5": "ff4dd6e7a26e6df7da301994bf5d2c46",
+    "alt": "Insert the missing words from John’s self-introduction below as in the example. A word should be used only once.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 11,
+      "region": [
+        0.05,
+        0.045,
+        0.97,
+        0.95
+      ]
+    }
+  },
+  "ja-2016-ol-5": {
+    "src": "/exam-figures/japanese/ja-2016-ol-5.png",
+    "md5": "8feb6ffe6f4a8fc47c75aeeb6cd9af75",
+    "alt": "Answer ANY 5 of the following 7 questions about your summer holidays in Japanese in the spaces provided.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.05,
+        0.035,
+        0.97,
+        0.977
+      ]
+    }
+  },
+  "ja-2016-ol-lc-1-iii": {
+    "src": "/exam-figures/japanese/ja-2016-ol-lc-1-iii.png",
+    "md5": "7ac0e4cb174071f2be5bfdbe3b84a4b0",
+    "alt": "To make a reservation, call:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 4,
+      "region": [
+        0.53,
+        0.46,
+        0.97,
+        0.535
+      ]
+    }
   }
 }
