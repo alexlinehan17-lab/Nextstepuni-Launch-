@@ -1347,6 +1347,15 @@ export interface LanguagePointsRubric {
   system: 'language-points';
   taskRequirements: string[];
   count: number;
+  /** Published alternative ways of expressing the same answer. Only one
+   * member group from each set can contribute, even when their detail
+   * quotas or available marks differ. */
+  alternativeSets?: Array<{
+    id: string;
+    label: string;
+    sourceText: string;
+    schemePages: number[];
+  }>;
   /** An explicitly published cap across selected groups, before separate
    * whole-task criteria. A global answerCount counts individual row answers
    * after each group's own quota, not the number of selected groups. */
@@ -1362,6 +1371,7 @@ export interface LanguagePointsRubric {
   groups: Array<{
     id: string;
     label: string;
+    alternativeSet?: string;
     /** Mutually exclusive complete/partial wordings within one semantic answer. */
     answerCount?: number;
     rows: Array<{ id: string; text: string; marks: number; steps?: number[] }>;
@@ -1669,6 +1679,13 @@ export function tariffReconciles(card: SecCard): boolean {
       if (rubric.system === 'language-writing') return criteria.length > 0 && criterionTotal === card.totalMarks;
       const { groups, count } = rubric;
       if (!Number.isInteger(count) || count < 1 || count > groups.length || new Set(groups.map(group => group.id)).size !== groups.length) return false;
+      const alternatives = rubric.alternativeSets ?? [];
+      const alternativeIds = new Set(alternatives.map(set => set.id));
+      if (alternativeIds.size !== alternatives.length
+        || !alternatives.every(set => set.id && set.label.trim() && set.sourceText.trim()
+          && set.schemePages.length > 0 && set.schemePages.every(page => Number.isInteger(page) && page > 0)
+          && groups.filter(group => group.alternativeSet === set.id).length >= 2)
+        || !groups.every(group => group.alternativeSet === undefined || alternativeIds.has(group.alternativeSet))) return false;
       const allCriterionIds = [...criteria, ...groups.flatMap(group => group.criteria ?? [])].map(criterion => criterion.id);
       if (new Set(allCriterionIds).size !== allCriterionIds.length) return false;
       const groupCriterionTotal = (group: typeof groups[number]) => (group.criteria ?? []).filter(criterion => criterion.kind !== 'deduction')
@@ -1679,8 +1696,15 @@ export function tariffReconciles(card: SecCard): boolean {
         && new Set(group.rows.map(row => row.id)).size === group.rows.length
         && (group.answerCount === undefined || (Number.isInteger(group.answerCount) && group.answerCount >= 1 && group.answerCount <= group.rows.length))
         && group.rows.every(row => row.id && row.text.trim() && Number.isInteger(row.marks) && row.marks > 0 && (!row.steps || validSteps(row.steps, row.marks))))) return false;
-      const maxima = groups.map(group => group.rows.map(row => row.marks).sort((a, b) => b - a)
-        .slice(0, group.answerCount ?? group.rows.length).reduce((sum, mark) => sum + mark, 0) + groupCriterionTotal(group)).sort((a, b) => b - a);
+      const families = new Map<string, typeof groups>();
+      for (const group of groups) {
+        const key = group.alternativeSet === undefined ? `group:${group.id}` : `alternative:${group.alternativeSet}`;
+        families.set(key, [...(families.get(key) ?? []), group]);
+      }
+      const choices = [...families.values()];
+      if (count > choices.length) return false;
+      const maxima = choices.map(options => Math.max(...options.map(group => group.rows.map(row => row.marks).sort((a, b) => b - a)
+        .slice(0, group.answerCount ?? group.rows.length).reduce((sum, mark) => sum + mark, 0) + groupCriterionTotal(group)))).sort((a, b) => b - a);
       let allocationMaximum = maxima.slice(0, count).reduce((sum, mark) => sum + mark, 0);
       const cap = rubric.allocationCap;
       if (cap) {
@@ -1688,7 +1712,7 @@ export function tariffReconciles(card: SecCard): boolean {
           || !cap.schemePages.length || !cap.schemePages.every(page => Number.isInteger(page) && page > 0)) return false;
         if (cap.answerCount !== undefined) {
           const answerCount = cap.answerCount;
-          const maximumRows = groups.map(group => group.answerCount ?? group.rows.length).sort((a, b) => b - a)
+          const maximumRows = choices.map(options => Math.max(...options.map(group => group.answerCount ?? group.rows.length))).sort((a, b) => b - a)
             .slice(0, count).reduce((sum, rows) => sum + rows, 0);
           if (!Number.isInteger(answerCount) || answerCount < 1 || answerCount > maximumRows
             || groups.some(group => !!group.criteria?.length)) return false;
@@ -1697,15 +1721,17 @@ export function tariffReconciles(card: SecCard): boolean {
           // when one group contains two separately credited details.
           let best = Array.from({ length: count + 1 }, () => Array<number>(answerCount + 1).fill(-Infinity));
           best[0][0] = 0;
-          for (const group of groups) {
-            const rows = group.rows.map(row => row.marks).sort((a, b) => b - a)
-              .slice(0, group.answerCount ?? group.rows.length);
+          for (const options of choices) {
             const next = best.map(values => [...values]);
-            for (let chosen = 0; chosen < count; chosen++) for (let used = 0; used <= answerCount; used++) {
-              let marks = 0;
-              for (let take = 1; take <= rows.length && used + take <= answerCount; take++) {
-                marks += rows[take - 1];
-                next[chosen + 1][used + take] = Math.max(next[chosen + 1][used + take], best[chosen][used] + marks);
+            for (const group of options) {
+              const rows = group.rows.map(row => row.marks).sort((a, b) => b - a)
+                .slice(0, group.answerCount ?? group.rows.length);
+              for (let chosen = 0; chosen < count; chosen++) for (let used = 0; used <= answerCount; used++) {
+                let marks = 0;
+                for (let take = 1; take <= rows.length && used + take <= answerCount; take++) {
+                  marks += rows[take - 1];
+                  next[chosen + 1][used + take] = Math.max(next[chosen + 1][used + take], best[chosen][used] + marks);
+                }
               }
             }
             best = next;

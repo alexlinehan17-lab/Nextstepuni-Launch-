@@ -68,6 +68,16 @@ export function languageWritingMarks(rubric: LanguageWritingRubric, scores: Lang
     .reduce((sum, item) => sum + languageCriterionValue(rubric, item.id, scores), 0);
 }
 
+/** Inconsistent restored selections must be resolved by the student. Do not
+ * silently pick a preferred alternative or award both ways of saying it. */
+export function languageAlternativeConflicts(rubric: LanguagePointsRubric, scores: LanguageScores): Set<string> {
+  const counts = new Map<string, number>();
+  for (const group of rubric.groups) if (group.alternativeSet && scores[languageGroupId(group.id)] === 1) {
+    counts.set(group.alternativeSet, (counts.get(group.alternativeSet) ?? 0) + 1);
+  }
+  return new Set([...counts].filter(([, count]) => count > 1).map(([id]) => id));
+}
+
 export function languagePointsMarks(rubric: LanguagePointsRubric, scores: LanguageScores, rule?: SecCardBase['answerLanguageRule']): number {
   // A wholly wrong-language response includes its discretionary criteria.
   // This explicit whole-response flag supersedes, rather than compounds,
@@ -76,7 +86,9 @@ export function languagePointsMarks(rubric: LanguagePointsRubric, scores: Langua
   const individualRule = responseMultiplier === 1 ? rule : undefined;
   // Selection is explicit even if every component of an option earned zero.
   // Defensive slicing also prevents stale or tampered state exceeding quota.
-  const selectedGroups = rubric.groups.filter(group => scores[languageGroupId(group.id)] === 1).slice(0, rubric.count);
+  const conflicts = languageAlternativeConflicts(rubric, scores);
+  const selectedGroups = rubric.groups.filter(group => scores[languageGroupId(group.id)] === 1
+    && (!group.alternativeSet || !conflicts.has(group.alternativeSet))).slice(0, rubric.count);
   const rowMarks = selectedGroups.flatMap(group => group.rows.map(row => {
       const selected = scores[languageRowId(group.id, row.id)] ?? 0;
       const earned = row.steps ? row.steps.includes(selected) ? selected : 0 : selected === 1 ? row.marks : 0;

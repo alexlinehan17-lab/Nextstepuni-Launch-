@@ -1,7 +1,7 @@
 import React from 'react';
 import type { LanguageWritingRubric, LanguageWritingCriterion, LanguagePointsRubric, SecRubricCard } from '../../types/markBank';
 import { ClaimRow, MarkStrip } from './ClaimRows';
-import { languageMarks, languageScoreId, languageLengthId, languageFlagId, languageGroupId, languageRowId, languageCriterionPlacement, languageCriterionValue, languageOtherLanguageId, languageCreditAriaLabel, languageCreditCondition, type LanguageScoreId, type LanguageScores } from './languageScoring';
+import { languageMarks, languageScoreId, languageLengthId, languageFlagId, languageGroupId, languageRowId, languageCriterionPlacement, languageCriterionValue, languageAlternativeConflicts, languageOtherLanguageId, languageCreditAriaLabel, languageCreditCondition, type LanguageScoreId, type LanguageScores } from './languageScoring';
 import './language-rubric.css';
 
 export default function LanguageRubricPanel({ card, scores, onScore }: {
@@ -15,6 +15,7 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
   const lengths = [...new Set(conditions.flatMap(condition => 'length' in condition ? [condition.length] : []))];
   const flags = [...new Map(conditions.flatMap(condition => 'flag' in condition ? [[condition.flag, condition] as const] : [])).values()];
   const selectedGroups = rubric.system === 'language-points' ? rubric.groups.filter(group => scores[languageGroupId(group.id)] === 1).length : 0;
+  const alternativeConflicts = rubric.system === 'language-points' ? languageAlternativeConflicts(rubric, scores) : new Set<string>();
   const claimedDetails = rubric.system === 'language-points' ? rubric.groups
     .filter(group => scores[languageGroupId(group.id)] === 1)
     .reduce((sum, group) => sum + group.rows.filter(row => (scores[languageRowId(group.id, row.id)] ?? 0) > 0).length, 0) : 0;
@@ -81,24 +82,32 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
         <p>These answers earn up to {rubric.allocationCap.maxMarks} marks altogether.</p>
         <p>{rubric.allocationCap.sourceText}</p>
       </>}
+      {rubric.alternativeSets?.map(set => <React.Fragment key={set.id}>
+        <p><strong>{set.label}</strong></p>
+        <p>{set.sourceText}</p>
+        {alternativeConflicts.has(set.id) && <p role="status">Choose one alternative for {set.label} to assess it. The conflicting alternatives are currently unassessed.</p>}
+      </React.Fragment>)}
       {rubric.groups.map(group => {
         const selected = scores[languageGroupId(group.id)] === 1;
         const claimed = group.rows.filter(row => (scores[languageRowId(group.id, row.id)] ?? 0) > 0).length;
+        const anotherAlternativeSelected = group.alternativeSet !== undefined && rubric.groups.some(other => other.id !== group.id
+          && other.alternativeSet === group.alternativeSet && scores[languageGroupId(other.id)] === 1);
+        const conflicting = !!group.alternativeSet && alternativeConflicts.has(group.alternativeSet);
         return <section className="mb-language-criterion" key={group.id}>
           <button type="button" className="mb-language-choice" aria-pressed={selected}
-            disabled={!selected && selectedGroups >= rubric.count}
+            disabled={!selected && (selectedGroups >= rubric.count || anotherAlternativeSelected)}
             onClick={() => onScore(languageGroupId(group.id), selected ? 0 : 1)}>{group.label}</button>
           {group.rows.map(row => {
             const value = scores[languageRowId(group.id, row.id)] ?? 0;
             const quotaReached = claimed >= (group.answerCount ?? group.rows.length)
               || claimedDetails >= (rubric.allocationCap?.answerCount ?? Infinity);
-            return <React.Fragment key={row.id}><ClaimRow text={row.text} marks={row.marks} steps={row.steps} claimed={value > 0} value={value} disabled={!selected || (value === 0 && quotaReached)}
+            return <React.Fragment key={row.id}><ClaimRow text={row.text} marks={row.marks} steps={row.steps} claimed={value > 0} value={value} disabled={!selected || conflicting || (value === 0 && quotaReached)}
               onToggle={() => onScore(languageRowId(group.id, row.id), value ? 0 : 1)}
               onStep={mark => onScore(languageRowId(group.id, row.id), value === mark ? 0 : mark)} />
               {otherLanguageControl(`row:${group.id}:${row.id}`, row.text, !selected)}
             </React.Fragment>;
           })}
-          {group.criteria?.map(criterion => renderCriterion(criterion, { ...writingRubric, criteria: group.criteria! }, !selected))}
+          {group.criteria?.map(criterion => renderCriterion(criterion, { ...writingRubric, criteria: group.criteria! }, !selected || conflicting))}
           {!!group.criteria?.length && otherLanguageControl(`group:${group.id}`, group.label, !selected)}
         </section>;
       })}
