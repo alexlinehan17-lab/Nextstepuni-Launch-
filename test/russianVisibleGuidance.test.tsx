@@ -13,6 +13,21 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('shows the 2015 half-credit rule and conflicting published labels',async()=>{
+    reveal('la2','ol',2015);
+    await waitFor(()=>expect(screen.getByText(/Source discrepancy: the scheme prints/)).toBeVisible());
+    expect(screen.getByText(/The English and Russian labels disagree/)).toHaveTextContent('feminine singular / мужской род');
+    expect(screen.getAllByText(/Assign half the available marks/).length).toBe(6);
+    expect(screen.getAllByRole('button',{name:/^Award 0\.5 marks for/}).length).toBe(4);
+  });
+  it('shows the 2015 matching headline discrepancy and complete handwritten targets',async()=>{
+    reveal('mm-ii','ol',2015);
+    await waitFor(()=>expect(screen.getByText(/Source wording differs/)).toBeVisible());
+    expect(screen.getByText(/Source wording differs/)).toHaveTextContent('Сюрпризы погоды');
+    cleanup();reveal('la1','ol',2015);
+    await waitFor(()=>expect(screen.getByText(/no per-phrase allocation is inferred/)).toBeVisible());
+    expect(screen.getByRole('button',{name:/^Award 5\.5 marks for/})).toBeVisible();
+  });
   it('shows the2018 handwriting allocation limitation',async()=>{
     reveal('la1','ol',2018);
     await waitFor(()=>expect(screen.getByText(/The scheme gives 6 marks for both phrases/)).toBeVisible());
