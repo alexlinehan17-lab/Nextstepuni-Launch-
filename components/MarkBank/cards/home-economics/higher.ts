@@ -41461,4 +41461,3490 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sa-q1", topicId: "home-economics-0-5", conceptId: "sa-q1",
+    section: "A", questionRef: "2016 HL Section A Q1",
+    questionText: "Name one food source of each of the proteins listed below.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "protein-1", kind: "point", verbatim: "Casein — cheese, milk", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Give ONE source for this required protein." },
+    { id: "protein-2", kind: "point", verbatim: "Actin — fish, meat", marks: null, contextNote: "Give ONE source for this required protein." },
+    { id: "protein-3", kind: "point", verbatim: "Albumin — eggs", marks: null, contextNote: "Give ONE source for this required protein." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2016-hl-sa-q1",
+          "src": "/exam-figures/home-economics/home-economics-2016-hl-sa-q1.png",
+          "srcHash": "169ed93e058b3056549f33a78832b6e9",
+          "alt": "Original protein table: Casein, Actin and Albumin, with all three blank food-source cells.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sa-q2", topicId: "home-economics-0-7", conceptId: "sa-q2",
+    section: "A", questionRef: "2016 HL Section A Q2",
+    questionText: "State one function of omega 3 fatty acids in the diet. Name two different food sources of omega 3 fatty acids.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "function", kind: "point", verbatim: "reduces risk of heart attack, strokes, circulatory diseases and formation of blood clots; increase HDL cholesterol levels; healthy brain activity; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Give ONE function from the full source pool." },
+    { id: "source-1", kind: "point", verbatim: "(i) Oily fish; nuts; seeds;", marks: null, contextNote: "Choose ANY TWO different food sources across both source lines." },
+    { id: "source-2", kind: "point", verbatim: "(ii) soya beans; etc.", marks: null, contextNote: "Choose ANY TWO different food sources across both source lines." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sa-q3", topicId: "home-economics-0-11", conceptId: "sa-q3",
+    section: "A", questionRef: "2016 HL Section A Q3",
+    questionText: "Explain food fortification. Name one fortified food / product and explain how it benefits the consumer. Fortified food / product Benefit",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "fortification", kind: "point", verbatim: "Food that has added vitamins or minerals to enhance the nutritive value; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "product", kind: "point", verbatim: "breakfast cereals; milk; fruit juices; flour; margarine; TVP; dried potato; etc.", marks: null, contextNote: "Name ONE fortified food/product." },
+    { id: "benefit", kind: "point", verbatim: "replace nutrients lost in processing; increases the nutritional value of some foods e.g. margarine; address public health concerns e.g. folic acid for pregnant women; etc.", marks: null, contextNote: "Explain a benefit of the SAME named product using the original source guidance." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sa-q4", topicId: "home-economics-0-8", conceptId: "sa-q4",
+    section: "A", questionRef: "2016 HL Section A Q4",
+    questionText: "Give three functions of folic acid (folate).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "function-1", kind: "point", verbatim: "Red blood cell formation", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY THREE functions. The original sentence about development of brain, spinal cord and skeleton crosses printed answer lines; it remains intact." },
+    { id: "function-2", kind: "point", verbatim: "essential for synthesis of DNA and RNA", marks: null, contextNote: "Choose ANY THREE functions. The original sentence about development of brain, spinal cord and skeleton crosses printed answer lines; it remains intact." },
+    { id: "function-3", kind: "point", verbatim: "development of brain, spinal cord and skeleton in foetus", marks: null, contextNote: "Choose ANY THREE functions. The original sentence about development of brain, spinal cord and skeleton crosses printed answer lines; it remains intact." },
+    { id: "function-4", kind: "point", verbatim: "reduces risk of neural tube defects e.g. spina bifida", marks: null, contextNote: "Choose ANY THREE functions. The original sentence about development of brain, spinal cord and skeleton crosses printed answer lines; it remains intact." },
+    { id: "function-5", kind: "point", verbatim: "may play a role in preventing heart attacks, strokes and cancer", marks: null, contextNote: "Choose ANY THREE functions. The original sentence about development of brain, spinal cord and skeleton crosses printed answer lines; it remains intact." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sa-q5", topicId: "home-economics-0-5", conceptId: "sa-q5",
+    section: "A", questionRef: "2016 HL Section A Q5",
+    questionText: "State two advantages of including tofu in the diet. Other than tofu, name two protein alternatives that can be used in a vegan diet.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "advantage-1", kind: "point", verbatim: "(i) HBV protein; polyunsaturated fat; fibre; B group vitamins; calcium and iron;", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY TWO advantages across both source lines." },
+    { id: "advantage-2", kind: "point", verbatim: "(ii) not very expensive; versatile; little preparation needed; no cooking needed; etc.", marks: null, contextNote: "Choose ANY TWO advantages across both source lines." },
+    { id: "alternative-1", kind: "point", verbatim: "(i) TVP; tempeh; quorn; wheat protein (seitan);", marks: null, contextNote: "Choose ANY TWO protein alternatives other than tofu across both source lists. The original vegan list includes quorn; the printed source is retained." },
+    { id: "alternative-2", kind: "point", verbatim: "(ii) soya milk; soya cheese; etc.", marks: null, contextNote: "Choose ANY TWO protein alternatives other than tofu across both source lists. The original vegan list includes quorn; the printed source is retained." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sa-q6", topicId: "home-economics-0-11", conceptId: "sa-q6",
+    section: "A", questionRef: "2016 HL Section A Q6",
+    questionText: "Write a note on two of the following: Genetically modified food Organic food / produce Added-value food",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "type-1", kind: "point", verbatim: "Genetically modified food foods that have had their DNA altered to change the characteristics of the food e.g. size, speed of ripening, susceptibility to a disease; EU regulations demand the labelling of genetically modified food; food must be labelled as GM food if it has been produced from GM soya beans or maize, if it has been contaminated with more than 1% of GM soya or maize, contains ingredients which have been genetically modified; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY TWO of the THREE printed categories. Original historical 2016 definitions and GM labelling threshold retained." },
+    { id: "type-2", kind: "point", verbatim: "Organic food / produce grown without the use of chemical fertilisers, pesticides or preservatives; organic farming less intensive and must comply with rules on fertilisers, pest, weed and disease control; organic certificate can only be got from 3 agencies recognised by Department of Agriculture and organic products will carry the symbol of one of these associations; because organic farming is more labour intensive and has lower yields; products are more expensive; etc.", marks: null, contextNote: "Choose ANY TWO of the THREE printed categories. Original historical 2016 definitions and GM labelling threshold retained." },
+    { id: "type-3", kind: "point", verbatim: "Added-value food results from the processing of raw materials to produce a high quality end product e.g. processing milk to produce cheese, margarine, cook chill foods, breads etc.; it benefits the manufacturer while meeting the needs of the consumer; etc.", marks: null, contextNote: "Choose ANY TWO of the THREE printed categories. Original historical 2016 definitions and GM labelling threshold retained." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sa-q7", topicId: "home-economics-0-4", conceptId: "sa-q7",
+    section: "A", questionRef: "2016 HL Section A Q7",
+    questionText: "Name the parts A, B and C as shown on the diagram of a yeast cell.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "label-1", kind: "point", verbatim: "A = vacuole", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "label-2", kind: "point", verbatim: "B = nucleus", marks: null },
+    { id: "label-3", kind: "point", verbatim: "C = granular cytoplasm/food vacuole/food reserve", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2016-hl-sa-q7",
+          "src": "/exam-figures/home-economics/home-economics-2016-hl-sa-q7.png",
+          "srcHash": "18a30e226ca2f83b9cb27a57d5c96cfc",
+          "alt": "Original labelled yeast diagram with A, B and C, every pointer, blank answer field and the original image attribution.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper, page 4 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sa-q8", topicId: "home-economics-0-4", conceptId: "sa-q8",
+    section: "A", questionRef: "2016 HL Section A Q8",
+    questionText: "In relation to the Hazard Analysis Critical Control Point (HACCP) system, explain each of the following terms. Give one example in each case. Hazard Example Control measure Example",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "hazard", kind: "point", verbatim: "anything that could contaminate food or cause harm to the consumer - microbial, chemical, physical contaminants; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "hazard-example", kind: "point", verbatim: "minced meat may be contaminated with food-poisoning bacteria; fresh vegetables may be subjected to mould growth or insect damage; perishable ingredients may be incorrectly stored in shop; rise in temperature leading to growth in food-poisoning bacteria; growth of food-poisoning bacteria and toxins on meat; cross-contamination between meat and other perishables; contamination of high-risk foods; cross-contamination; etc.", marks: null, contextNote: "Give ONE example matching a hazard." },
+    { id: "control", kind: "point", verbatim: "a control measure is an area in the food preparation production system where a hazard could occur which must be controlled or minimised; areas include delivery, raw materials, preparing and storing food; etc.", marks: null, contextNote: "The original control-measure definition describes an area where a hazard could occur. This source wording is retained as printed, without an invented replacement." },
+    { id: "control-example", kind: "point", verbatim: "buy ingredients from reputable food suppliers; examine vegetables thoroughly on purchase; check dates and note storage temperature of chilled foods at point of purchase; wrap foods well and transport in suitable containers; store at suitable temperature as soon as possible after purchase; store food covered and in suitable containers; store at correct temperatures; place foods in separate areas of the fridge; observe good personal hygiene; surfaces and equipment must be clean; prepare raw and cooked foods separately; limit the time food is at room temperature; cook meat thoroughly, stir food frequently to ensure even temperature throughout; cook meat at correct temperature for recommended length of time; serve quickly to prevent cooling; serve as soon as possible after removing from the fridge; etc.", marks: null, contextNote: "Give ONE control-measure example from the complete original source pool." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sa-q9", topicId: "home-economics-1-2", conceptId: "sa-q9",
+    section: "A", questionRef: "2016 HL Section A Q9",
+    questionText: "State the purpose of consumer research. Name and describe one method of consumer research.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "purpose", kind: "point", verbatim: "to identify consumer wants and expectations; to test the market prior to developing/launching a new product; to highlight market trends; identify market size or potential markets; provide manufacturers with a greater understanding of what consumers will buy; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "method-1", kind: "point", verbatim: "Desk research: involves the collection of data from state agencies, web etc.; large quantities of information can be collected quickly; relatively inexpensive; information tends to be general and not very detailed (quantitative) e.g. phone/written surveys; etc.", marks: null, contextNote: "Name AND describe ONE method. The original scheme gives no model description for Focus groups; no description has been invented. Accept research by consumers and/or manufactures, as printed." },
+    { id: "method-2", kind: "point", verbatim: "Field research: information collected using techniques such as observing, interviews, surveys etc.; primary source; information is detailed e.g. study consumer behaviour and attitudes (qualitative) e.g. vox pops, interviews, consumer panels; etc.", marks: null, contextNote: "Name AND describe ONE method. The original scheme gives no model description for Focus groups; no description has been invented. Accept research by consumers and/or manufactures, as printed." },
+    { id: "method-3", kind: "point", verbatim: "Focus groups: etc Accept research by consumers and/or manufactures.", marks: null, contextNote: "Name AND describe ONE method. The original scheme gives no model description for Focus groups; no description has been invented. Accept research by consumers and/or manufactures, as printed." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sa-q10", topicId: "home-economics-1-1", conceptId: "sa-q10",
+    section: "A", questionRef: "2016 HL Section A Q10",
+    questionText: "Explain each of the following: Life assurance Mortgage protection policy",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "policy-1", kind: "point", verbatim: "Life assurance: insured person pays an agreed premium throughout his/her life; no time limit on the policy; the person’s family receives an agreed sum of money on the death of the insured person; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Explain this required policy. Original historical 2016 wording retained." },
+    { id: "policy-2", kind: "point", verbatim: "Mortgage protection policy: term assurance people have to take out when getting a mortgage; it protects the insured person for the life of the mortgage; if he/she dies prior to the mortgage being paid off the debt is cleared; some policies offer a saving option, which tends to make the premium more expensive; etc.", marks: null, contextNote: "Explain this required policy. Original historical 2016 wording retained." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sa-q11", topicId: "home-economics-1-4", conceptId: "sa-q11",
+    section: "A", questionRef: "2016 HL Section A Q11",
+    questionText: "List two desirable properties of fabric used in upholstered furniture. What information does the following label convey to the consumer?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "property-1", kind: "point", verbatim: "(i) durable; comfortable; resilient;", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY TWO properties across both source lists." },
+    { id: "property-2", kind: "point", verbatim: "(ii) stain resistant; hardwearing; etc.", marks: null, contextNote: "Choose ANY TWO properties across both source lists." },
+    { id: "label", kind: "point", verbatim: "Materials meet the requirements for resistance to cigarette and match ignition; fire/flame resistant; etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2016-hl-sa-q11",
+          "src": "/exam-figures/home-economics/home-economics-2016-hl-sa-q11.png",
+          "srcHash": "28156645402ceba6969a29611c8cb336",
+          "alt": "Original upholstered-furniture question with both property answer spaces and the complete fire/flame-resistant label and companion question.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper, page 5 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sa-q12", topicId: "home-economics-1-5", conceptId: "sa-q12",
+    section: "A", questionRef: "2016 HL Section A Q12",
+    questionText: "Name one cause of air pollution and state the effect of this pollution on the environment. Explain how air pollution can be reduced. Cause Effect Reduction measure",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "heading-1", kind: "point", verbatim: "Cause: gases (nitrogen, carbon dioxide, sulphur dioxide) from burning fossil fuels; CFC emissions (fridges and aerosols); carbon monoxide emissions (traffic); overuse of chemical sprays and cleaning agents; smoke from domestic and industrial combustion of fossil fuels; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Use ONE pollution cause, its matching effect and a relevant reduction measure. Full original open guidance retained; do not mix unrelated profiles." },
+    { id: "heading-2", kind: "point", verbatim: "Effect: global warming alters the earth’s climate over time; decline in ozone layer; depletion of ozone layer; acid rain lowers pH of soil and water harming plant and animal life; acid rain corrodes metal and stone; etc.", marks: null, contextNote: "Use ONE pollution cause, its matching effect and a relevant reduction measure. Full original open guidance retained; do not mix unrelated profiles." },
+    { id: "heading-3", kind: "point", verbatim: "Reduction measure: use renewable/cleaner energy sources e.g. gas, smokeless fuels, wind and solar energy; avoid products containing CFCs; buy energy efficient appliances; car pool; use public transport; etc.", marks: null, contextNote: "Use ONE pollution cause, its matching effect and a relevant reduction measure. Full original open guidance retained; do not mix unrelated profiles." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sb-q1a", topicId: "home-economics-0-6", conceptId: "sb-q1a",
+    section: "B", questionRef: "2016 HL Section B Q1(a)",
+    stem: "Current intakes of dietary fibre are generally inadequate in adults, with over 80% not meeting the European Food Safety Authority (EFSA) recommendation of 25-30 grams per day. (National Adult Nutrition Survey, 2011) The chart below provides information on the contribution of different foods to dietary fibre intake in Ireland for adults aged 18-64 years and those over 65 years.",
+    questionText: "Using the information provided in the chart, comment and elaborate on the contribution of four foods to the intake of dietary fibre with reference to the two categories of people identified above.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 6"}, totalMarks: 24,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "contribution", marks: 24, contextNote: "Choose FOUR foods and comment/elaborate with reference to BOTH age categories. The original six food groups and the complete models are retained; no four-food combination is imposed. Complete original source guidance: accept points on contribution to overall fibre intake; examples of foods in each food group; function of fibre; dietetic points in relation to foods; reasons for variation in contribution between the two groups; nutritional/dietetic points in relation to different foods; etc. Bread and rolls Brown/wholemeal breads and rolls — Highest contributor to dietary fibre in the diet for both groups, ≥ 65 group being 3% higher. High in fibre; high satiety value; popular with older health conscious people; fibre prevents bowel disorders; etc.; Vegetables and vegetable dishes Vegetables Vegetable dishes — The second highest contributor to dietary fibre for ≥ 65 group, third highest for the18-64 group. Fresh vegetable are hugely promoted e.g. fruit and veg. five a day campaign; many vegetables cheap; many varieties available; all vegetables have some fibre and more if skins are eaten; freezing does not affect fibre content; huge variety of pulses available and have become very popular with increasing numbers of vegetarian and vegans diets, easy to add to salads, soups, casseroles etc.; available dried, tinned, fresh and frozen; vegetable juices are also popular; etc. e.g. stir fries, vegan curries, veggie burgers, soups etc. are popular main course dishes; many vegetables are available pre-prepared making high fibre vegetable dishes easy to prepare; etc.; Potatoes and potato products Potatoes — The fourth highest contributor to the diet of 18-64 group, the fifth contributor for the ≥ 65 group. versatile i.e. boiled, baked, mashed, salads etc.; easy to digest and good source of fibre; etc.; Potato products — e.g. potato cakes, waffles, hash browns, wedges, chipped potatoes etc. are widely available; easy to prepare; crisps and chipped potatoes are a popular choice among younger people but may be high in salt; etc.; Fruit and fruit juices Fruit Fruit Juices — Fourth highest contributor for the ≥ 65 group, fifth highest contributor for the 18-64 group (at 5% lower). excellent source of fibre especially if the skins are eaten; dried fruit e.g. raisins are a popular snack food and are high in fibre; possible reason for the variation in contribution between the two groups – many fruit are cheap especially when in season; easy to digest; a good source of vitamins; etc. juicing fruit has become very popular and many juicers, juice the skin which ensures maximum fibre content; fruit smoothies can also provide a significant amount of fibre and vitamins; etc.; Breakfast cereals — Provide the lowest contribution to the diet of both groups possibly due to the wide variety of low fibre/high sugar ready-to-eat breakfast cereals available; people may opt for fruit, toast, wholemeal bread, etc. as alternative breakfast dishes to cereal; cereal bars are high in sugar; etc.; Others — Second highest contributor to the 18-64 group, third highest contributor to the ≥ 65 group, making it, at 9% less, the most significant variation. may include seeds, nuts, wholegrain rice and pasta which younger people eat a wide variety of as a staple carbohydrate, older people may include more potatoes; seeds and nuts are used in salads, breads etc.; available in small portions; convenient as healthy snacks; etc.", permittedMarks: [0,6,12,18,24], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,6]},{"id":"point-3","verbatim":"Point 3","marks":6,"permittedMarks":[0,6]},{"id":"point-4","verbatim":"Point 4","marks":6,"permittedMarks":[0,6]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2016-hl-sb-q1-fibre",
+          "src": "/exam-figures/home-economics/home-economics-2016-hl-sb-q1-fibre.png",
+          "srcHash": "d01cfb11e84fe1da9d25da5ef482bec9",
+          "alt": "Original fibre-intake table: all six food groups and total, both 18–64 and ≥65 age categories, percentages and gram values including 19.2 and 19.0 totals.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sb-q1b", topicId: "home-economics-0-6", conceptId: "sb-q1b",
+    section: "B", questionRef: "2016 HL Section B Q1(b)",
+    stem: "Current intakes of dietary fibre are generally inadequate in adults, with over 80% not meeting the European Food Safety Authority (EFSA) recommendation of 25-30 grams per day. (National Adult Nutrition Survey, 2011)",
+    questionText: "Suggest three strategies to increase the intake of dietary fibre in order to meet the European Food Safety Authority (EFSA) recommendation.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "strategies", marks: 12, contextNote: "Complete original source guidance: Breakfast: choose high fibre breakfast cereals – look for cereals with a minimum of 3g of fibre per 100g of cereal; choose wholegrain bread or toast; etc. Seeds: seeds are high in fibre e.g. sunflower seeds, sesame seeds, pumpkin seeds and linseeds, eat them whole or milled; aim to get 2 tablespoons of seeds each day; add seeds to breakfast cereals, yoghurt, homemade bread or sprinkle then over salads; etc. Beans: beans and lentils are very high in soluble fibre; half a tin of beans will give you 7.5g of fibre; try to have beans at least 3 or 4 times a week; chickpeas, kidney beans and butter beans are also very good – half a tin of these beans contain approx. 10g of fibre; try soups made with beans and lentils, add beans to a salad, add lentils into soups, stews and casseroles; etc. Vegetables: all vegetables have fibre – they can add up to some of a person’s 5-a-day; salad or vegetables should make up 1/3 of your lunch and 1/3 of your dinner; have a bowl of vegetable soup at lunch time, include vegetables at dinner; frozen vegetables are as high in fibre as the fresh variety if you are short on time; eat potatoes with the skins - most of the fibre in a potato is in the skin, so try potatoes baked/boiled in their jackets/wedges baked in the oven, baby potatoes are a great source of fibre; etc. Fruit - a piece of fruit will give you about 2g of fibre, aim to have 2-3 pieces of fruit everyday this can add 4 to 6g of fibre; slice banana over breakfast cereal, add chopped apple into a salad or eat fruit for your mid-afternoon snack; etc. Brown rice or pasta: switching from white rice/pasta to brown rice/pasta will also help to boost fibre intake; etc. Snack – nuts, dried fruit: a handful of nuts and raisins is a good snack that will help to boost your fibre intake; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sb-q1c", topicId: "home-economics-0-6", conceptId: "sb-q1c",
+    section: "B", questionRef: "2016 HL Section B Q1(c)",
+    stem: "Current intakes of dietary fibre are generally inadequate in adults, with over 80% not meeting the European Food Safety Authority (EFSA) recommendation of 25-30 grams per day. (National Adult Nutrition Survey, 2011)",
+    questionText: "Evaluate the benefits of a diet rich in fibre.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "benefits", marks: 15, contextNote: "Complete original source guidance: waste passes through the digestive system more quickly allowing less time for the development of toxins which may cause cancer; reduces constipation; reduces the risk of gastrointestinal disease i.e. diverticulitis, haemorrhoids, piles; fibre absorbs water giving a feeling of fullness so useful in maintaining healthy weight; lower LDL; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sb-q1d", topicId: "home-economics-0-1", conceptId: "sb-q1d",
+    section: "B", questionRef: "2016 HL Section B Q1(d)",
+    stem: "Current intakes of dietary fibre are generally inadequate in adults, with over 80% not meeting the European Food Safety Authority (EFSA) recommendation of 25-30 grams per day. (National Adult Nutrition Survey, 2011)",
+    questionText: "Name and give an account of one bowel disease. Refer to symptoms / effects.",
+    tariffModel: {"kind":"fixed","notation":"Name1 + account4 + symptoms/effects2×2"}, totalMarks: 9,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Constipation", marks: 1, contextNote: "Use this SAME bowel disease throughout." },
+    { id: "account", kind: "criterion", verbatim: "Account", marks: 4, contextNote: "constipation occurs when the stool passes through the large intestine too slowly and too much water is reabsorbed thus the faeces becomes hard and more difficult to expel; etc.", permittedMarks: [0,4] },
+    { id: "symptoms", kind: "criterion", verbatim: "Symptoms / effects", marks: 4, contextNote: "cramps; infrequent bowel movement; etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "source-1",
+                "label": "Constipation",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Constipation",
+                            "marks": 1,
+                            "contextNote": "Use this SAME bowel disease throughout."
+                      },
+                      {
+                            "id": "account",
+                            "kind": "criterion",
+                            "verbatim": "Account",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "constipation occurs when the stool passes through the large intestine too slowly and too much water is reabsorbed thus the faeces becomes hard and more difficult to expel; etc."
+                      },
+                      {
+                            "id": "symptoms",
+                            "kind": "criterion",
+                            "verbatim": "Symptoms / effects",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "cramps; infrequent bowel movement; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-2",
+                "label": "Haemorrhoids (piles)",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Haemorrhoids (piles)",
+                            "marks": 1,
+                            "contextNote": "Use this SAME bowel disease throughout."
+                      },
+                      {
+                            "id": "account",
+                            "kind": "criterion",
+                            "verbatim": "Account",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "swollen blood vessels found inside or around the rectum and anus; caused by severe straining during defecation; internal piles are generally painless but can bleed if a hard stool rubs against it during a bowel movement; prolonged sitting increases pressure on blood vessels; etc."
+                      },
+                      {
+                            "id": "symptoms",
+                            "kind": "criterion",
+                            "verbatim": "Symptoms / effects",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "pain and discomfort when expelling stools; itchiness around anus; blood loss when passing stools; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-3",
+                "label": "Irritable bowel syndrome",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Irritable bowel syndrome",
+                            "marks": 1,
+                            "contextNote": "Use this SAME bowel disease throughout."
+                      },
+                      {
+                            "id": "account",
+                            "kind": "criterion",
+                            "verbatim": "Account",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "a condition in which the nerves that control the muscles in the intestine do not function correctly; the intestine becomes sensitive to food(spicy and citrus foods), stool, gas, and stress; irregular muscle contractions in the bowel; etc."
+                      },
+                      {
+                            "id": "symptoms",
+                            "kind": "criterion",
+                            "verbatim": "Symptoms / effects",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "stomach cramps; bloating; diarrhoea; constipation; excessive flatulence; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-4",
+                "label": "Diverticulitis",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Diverticulitis",
+                            "marks": 1,
+                            "contextNote": "Use this SAME bowel disease throughout."
+                      },
+                      {
+                            "id": "account",
+                            "kind": "criterion",
+                            "verbatim": "Account",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "diverticulosis and diverticulitis; occurs when pouches, called diverticula, form in the colon; these pouches bulge; diverticulitis occurs if the pouches become inflamed; diverticulosis is thought to be caused by straining when passing stools; diverticulitis is caused when the pouches become full of food waste; the bacteria present produce acids and gases; etc."
+                      },
+                      {
+                            "id": "symptoms",
+                            "kind": "criterion",
+                            "verbatim": "Symptoms / effects",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "pain & discomfort; blood loss in stools, can lead to anaemia; bloating; inflammation; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-5",
+                "label": "Colon cancer",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Colon cancer",
+                            "marks": 1,
+                            "contextNote": "Use this SAME bowel disease throughout."
+                      },
+                      {
+                            "id": "account",
+                            "kind": "criterion",
+                            "verbatim": "Account",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "disorder of the colon and rectum; can start as polyps, which can develop into cancer over time, can be fatal; causes can be lack of fibre, insufficient water, diet high in saturated fat; etc."
+                      },
+                      {
+                            "id": "symptoms",
+                            "kind": "criterion",
+                            "verbatim": "Symptoms / effects",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "blood loss causing anaemia; changes in bowel habits; cramps; bloating; weight loss; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "additional-1",
+                "label": "colitis",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "colitis",
+                            "marks": 1,
+                            "contextNote": "The original scheme explicitly accepts colitis, coeliac and Crohn’s disease but supplies no accounts or symptom models for them. No additional model has been invented. Keep every detail about the SAME chosen disease."
+                      },
+                      {
+                            "id": "account",
+                            "kind": "criterion",
+                            "verbatim": "Account",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "The original scheme explicitly accepts colitis, coeliac and Crohn’s disease but supplies no accounts or symptom models for them. No additional model has been invented. Keep every detail about the SAME chosen disease."
+                      },
+                      {
+                            "id": "symptoms",
+                            "kind": "criterion",
+                            "verbatim": "Symptoms / effects",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "The original scheme explicitly accepts colitis, coeliac and Crohn’s disease but supplies no accounts or symptom models for them. No additional model has been invented. Keep every detail about the SAME chosen disease.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "additional-2",
+                "label": "coeliac",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "coeliac",
+                            "marks": 1,
+                            "contextNote": "The original scheme explicitly accepts colitis, coeliac and Crohn’s disease but supplies no accounts or symptom models for them. No additional model has been invented. Keep every detail about the SAME chosen disease."
+                      },
+                      {
+                            "id": "account",
+                            "kind": "criterion",
+                            "verbatim": "Account",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "The original scheme explicitly accepts colitis, coeliac and Crohn’s disease but supplies no accounts or symptom models for them. No additional model has been invented. Keep every detail about the SAME chosen disease."
+                      },
+                      {
+                            "id": "symptoms",
+                            "kind": "criterion",
+                            "verbatim": "Symptoms / effects",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "The original scheme explicitly accepts colitis, coeliac and Crohn’s disease but supplies no accounts or symptom models for them. No additional model has been invented. Keep every detail about the SAME chosen disease.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "additional-3",
+                "label": "Crohn’s disease",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Crohn’s disease",
+                            "marks": 1,
+                            "contextNote": "The original scheme explicitly accepts colitis, coeliac and Crohn’s disease but supplies no accounts or symptom models for them. No additional model has been invented. Keep every detail about the SAME chosen disease."
+                      },
+                      {
+                            "id": "account",
+                            "kind": "criterion",
+                            "verbatim": "Account",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "The original scheme explicitly accepts colitis, coeliac and Crohn’s disease but supplies no accounts or symptom models for them. No additional model has been invented. Keep every detail about the SAME chosen disease."
+                      },
+                      {
+                            "id": "symptoms",
+                            "kind": "criterion",
+                            "verbatim": "Symptoms / effects",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "The original scheme explicitly accepts colitis, coeliac and Crohn’s disease but supplies no accounts or symptom models for them. No additional model has been invented. Keep every detail about the SAME chosen disease.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "additional-4",
+                "label": "Another valid bowel disease",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 1,
+                            "permittedMarks": [
+                                  0,
+                                  1
+                            ],
+                            "contextNote": "The original scheme explicitly accepts colitis, coeliac and Crohn’s disease but supplies no accounts or symptom models for them. No additional model has been invented. Keep every detail about the SAME chosen disease."
+                      },
+                      {
+                            "id": "account",
+                            "kind": "criterion",
+                            "verbatim": "Account",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "The original scheme explicitly accepts colitis, coeliac and Crohn’s disease but supplies no accounts or symptom models for them. No additional model has been invented. Keep every detail about the SAME chosen disease."
+                      },
+                      {
+                            "id": "symptoms",
+                            "kind": "criterion",
+                            "verbatim": "Symptoms / effects",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "The original scheme explicitly accepts colitis, coeliac and Crohn’s disease but supplies no accounts or symptom models for them. No additional model has been invented. Keep every detail about the SAME chosen disease.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    figure: {
+          "candId": "home-economics-2016-hl-sb-q1d-diseases",
+          "src": "/exam-figures/home-economics/home-economics-2016-hl-sb-q1d-diseases.png",
+          "srcHash": "50ba2b735fc18d1d8f8d0f7bdc2dab81",
+          "alt": "Complete original five-model bowel-disease table with all names, matching accounts and symptoms/effects; no table row or continuation is omitted.",
+          "attribution": "SEC Home Economics 2016 Higher Level marking scheme, page 11 — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "Original PDF crop, bounds [66.75199839274089, 225.49769474909857, 555.2120198567708, 755.5292147122897], rendered at 2.5×. SHA256 f310fc50f1438673b71e6aac6fb50dfc7102f64d61fa5f99984fcea183a3ce8a.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sb-q1e", topicId: "home-economics-0-1", conceptId: "sb-q1e",
+    section: "B", questionRef: "2016 HL Section B Q1(e)",
+    stem: "Current intakes of dietary fibre are generally inadequate in adults, with over 80% not meeting the European Food Safety Authority (EFSA) recommendation of 25-30 grams per day. (National Adult Nutrition Survey, 2011)",
+    questionText: "Evening work, night shifts and rotating work schedules can have a negative effect on normal meal patterns. Suggest how individuals who have an irregular work schedule can manage to achieve a healthy balanced lifestyle and good dietary practices.",
+    tariffModel: {"kind":"fixed","notation":"Lifestyle4 + dietary practice4 + three others×4"}, totalMarks: 20,
+    rows: [
+    { id: "lifestyle", kind: "criterion", verbatim: "lifestyle", marks: 4, contextNote: "Lifestyle: maintain a good work/life balance; prepare meals for work in advance; eat a small snack before going to bed, this will help prevent disturbed sleep due to hunger; avoid large meals 1-2 hours prior to bedtime to avoid disturbed sleep; when working night shifts avoid eating, or try to eat less between 12pm and 6am; stick as closely as possible to a normal day and night pattern of food intake; avoid eating at desk/office/area where working, workers who eat at their desk are more likely to be overweight; maintain a healthy lifestyle with exercise, regular meal times and good sleeping habits when not working; take a vitamin D supplement, workers who do shift/night work get less sunshine and may lack vitamin D in the diet; etc.", permittedMarks: [0,4] },
+    { id: "diet", kind: "criterion", verbatim: "dietary practices", marks: 4, contextNote: "Dietary practices: bringing a lunch box reduces the reliance on canteen food, which can be high in fat and salt, leading to weight gain and heart problems etc.; opt for high fibre carbohydrates such as wholegrain, wholemeal, whole wheat pasta, rice and bread; these will provide slow release energy and keep hunger at bay; avoid eating sugar-rich foods with little fibre when at work; sweets, cakes, biscuits and fizzy drinks only provide a quick burst of energy and can also cause weight gain; avoid quick solutions e.g. pot noodles, packet soups etc. as they tend to be high in salt and lack nutritional value; monitor cholesterol levels regularly; drink water to prevent dehydration; etc.", permittedMarks: [0,4] },
+    { id: "other", kind: "criterion", verbatim: "3 other points", marks: 12, contextNote: "Three ADDITIONAL points from either heading. Historical 2016 wording is retained, including the source’s printed 12pm–6am period. Complete original source: Lifestyle: maintain a good work/life balance; prepare meals for work in advance; eat a small snack before going to bed, this will help prevent disturbed sleep due to hunger; avoid large meals 1-2 hours prior to bedtime to avoid disturbed sleep; when working night shifts avoid eating, or try to eat less between 12pm and 6am; stick as closely as possible to a normal day and night pattern of food intake; avoid eating at desk/office/area where working, workers who eat at their desk are more likely to be overweight; maintain a healthy lifestyle with exercise, regular meal times and good sleeping habits when not working; take a vitamin D supplement, workers who do shift/night work get less sunshine and may lack vitamin D in the diet; etc. Dietary practices: bringing a lunch box reduces the reliance on canteen food, which can be high in fat and salt, leading to weight gain and heart problems etc.; opt for high fibre carbohydrates such as wholegrain, wholemeal, whole wheat pasta, rice and bread; these will provide slow release energy and keep hunger at bay; avoid eating sugar-rich foods with little fibre when at work; sweets, cakes, biscuits and fizzy drinks only provide a quick burst of energy and can also cause weight gain; avoid quick solutions e.g. pot noodles, packet soups etc. as they tend to be high in salt and lack nutritional value; monitor cholesterol levels regularly; drink water to prevent dehydration; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sb-q2a", topicId: "home-economics-0-9", conceptId: "sb-q2a",
+    section: "B", questionRef: "2016 HL Section B Q2(a)",
+    stem: "Fish has long been recognised as one of nature’s best foods and with its rich supply of nutrients it is one of the few foods that can truly be called a superfood.",
+    questionText: "Discuss the nutritive value and the contribution of fresh fish / fish products to the diet.",
+    tariffModel: {"kind":"fixed","notation":"Nutrition2×4 + contribution2×4 + one other4"}, totalMarks: 20,
+    rows: [
+    { id: "nutrition", kind: "criterion", verbatim: "nutritive value", marks: 8, contextNote: "Nutritive value: excellent source of HBV protein; no fat in white fish; oily fish high in PUFA (omega 3, EPA and DPA); fish lacks carbohydrates so serve with starchy foods; shell fish contains cholesterol; iodine and fluorine are present in sea fish; good source of phosphorous, potassium and zinc; calcium in shellfish and bones of tinned fish; B group vitamins found in all fish, vitamins A and D in oily fish, oysters contain vitamin C; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "diet", kind: "criterion", verbatim: "contribution to the diet", marks: 8, contextNote: "Original wording, including “low in unsaturated fat”, retained as printed. Contribution to the Diet: versatile – many different cooking methods can be used; easy and quick to cook; good alternative to meat; low in unsaturated fat so useful in low calorie and low cholesterol diets; essential fatty acids present; omega 3 thought to reduce risk of heart disease means it is good for those with heart disease and high cholesterol; white fish easily digested therefore good for invalids and elderly; iodine in sea fish prevents goitre; fish products are nutritionally convenience foods when canned or fresh frozen; fish in breadcrumbs, batter or sauce contain carbohydrate; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "other", kind: "criterion", verbatim: "1 other", marks: 4, contextNote: "One ADDITIONAL point from either required heading. Nutritive value: excellent source of HBV protein; no fat in white fish; oily fish high in PUFA (omega 3, EPA and DPA); fish lacks carbohydrates so serve with starchy foods; shell fish contains cholesterol; iodine and fluorine are present in sea fish; good source of phosphorous, potassium and zinc; calcium in shellfish and bones of tinned fish; B group vitamins found in all fish, vitamins A and D in oily fish, oysters contain vitamin C; etc. Contribution to the Diet: versatile – many different cooking methods can be used; easy and quick to cook; good alternative to meat; low in unsaturated fat so useful in low calorie and low cholesterol diets; essential fatty acids present; omega 3 thought to reduce risk of heart disease means it is good for those with heart disease and high cholesterol; white fish easily digested therefore good for invalids and elderly; iodine in sea fish prevents goitre; fish products are nutritionally convenience foods when canned or fresh frozen; fish in breadcrumbs, batter or sauce contain carbohydrate; etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sb-q2b", topicId: "home-economics-0-4", conceptId: "sb-q2b",
+    section: "B", questionRef: "2016 HL Section B Q2(b)",
+    stem: "Fish has long been recognised as one of nature’s best foods and with its rich supply of nutrients it is one of the few foods that can truly be called a superfood.",
+    questionText: "Fish must be used or processed as soon as possible after being caught as spoilage occurs very quickly. Outline the main causes of fish spoilage.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "causes", marks: 15, contextNote: "Complete original source guidance: Oxidative rancidity: fish reacts with oxygen in the air causing an unpleasant smell and taste; etc. Bacterial action: fish struggle when caught and use up glycogen stores, glycogen when present converts to lactic acid which is a preservative; if lactic acid is not present fish goes off quickly; bacteria work on the flesh producing trimethylamine which is a strong smelling nitrogen compound; etc. Enzymes: the action of enzymes causes deterioration even at low temperatures; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sb-q2c", topicId: "home-economics-0-8", conceptId: "sb-q2c",
+    section: "B", questionRef: "2016 HL Section B Q2(c)",
+    stem: "Fish has long been recognised as one of nature’s best foods and with its rich supply of nutrients it is one of the few foods that can truly be called a superfood.",
+    questionText: "Oily fish and fish liver oils can make a significant contribution to a persons’ intake of vitamin D. Give an account of vitamin D and refer to: • type / form • properties • effects of deficiency.",
+    tariffModel: {"kind":"fixed","notation":"Type name1/detail2 + properties3×2 + deficiency2×3"}, totalMarks: 15,
+    rows: [
+    { id: "name", kind: "point", verbatim: "D3 – cholecalciferol", marks: 1 },
+    { id: "detail", kind: "criterion", verbatim: "detail", marks: 2, contextNote: "Use the SAME named form of vitamin D. D3 – cholecalciferol, found mainly in animal foods; can be formed by the action of the sun’s ultraviolet light on the skin; the sun converts 7-dehydrocholesterol in the skin to vitamin D3; etc.", permittedMarks: [0,2] },
+    { id: "properties", kind: "criterion", verbatim: "properties", marks: 6, contextNote: "Properties: white crystalline solid; fat soluble/insoluble in water; stable to heat; not affected by acids; alkalis; oxygen; unaffected by cooking or preservation; etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    { id: "deficiency", kind: "criterion", verbatim: "effects of deficiency", marks: 6, contextNote: "Effects of deficiency: rickets - weak malformed bones in children; osteomalacia - adult bone disease resulting in calcium loss and softening of bones; increased risk of bone fractures due to onset of osteoporosis; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "type-1",
+                "label": "D3 – cholecalciferol",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "D3 – cholecalciferol",
+                            "marks": 1
+                      },
+                      {
+                            "id": "detail",
+                            "kind": "criterion",
+                            "verbatim": "detail",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Use the SAME named form of vitamin D. D3 – cholecalciferol, found mainly in animal foods; can be formed by the action of the sun’s ultraviolet light on the skin; the sun converts 7-dehydrocholesterol in the skin to vitamin D3; etc."
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "properties",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Properties: white crystalline solid; fat soluble/insoluble in water; stable to heat; not affected by acids; alkalis; oxygen; unaffected by cooking or preservation; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "deficiency",
+                            "kind": "criterion",
+                            "verbatim": "effects of deficiency",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Effects of deficiency: rickets - weak malformed bones in children; osteomalacia - adult bone disease resulting in calcium loss and softening of bones; increased risk of bone fractures due to onset of osteoporosis; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "type-2",
+                "label": "D2 – ergocalciferol",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "D2 – ergocalciferol",
+                            "marks": 1
+                      },
+                      {
+                            "id": "detail",
+                            "kind": "criterion",
+                            "verbatim": "detail",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Use the SAME named form of vitamin D. D2 – ergocalciferol, ergosterol, a compound found in fungi and yeast, produces ergocalciferol when exposed to ultraviolet light; used in vitamin supplements; etc."
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "properties",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Properties: white crystalline solid; fat soluble/insoluble in water; stable to heat; not affected by acids; alkalis; oxygen; unaffected by cooking or preservation; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "deficiency",
+                            "kind": "criterion",
+                            "verbatim": "effects of deficiency",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Effects of deficiency: rickets - weak malformed bones in children; osteomalacia - adult bone disease resulting in calcium loss and softening of bones; increased risk of bone fractures due to onset of osteoporosis; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sb-q3a", topicId: "home-economics-0-10", conceptId: "sb-q3a",
+    section: "B", questionRef: "2016 HL Section B Q3(a)",
+    stem: "As more women enter the workforce and lifestyles change, global demand for frozen meals and ingredients will grow. (Bord Bia, 2013)",
+    questionText: "Outline the benefits of incorporating frozen foods in meal planning.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 3"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "benefits", marks: 12, contextNote: "Complete original source guidance: prevents waste; bulk cooking and freezing save time and fuel; frozen food is handy for emergencies; increases shelf life of foods; foods more economical; convenient; safe to eat; ensures the availability of a wide variety of foods; best method for maintaining colour, texture, flavour and nutritive value of foods; leftovers can be frozen for reuse; etc.", permittedMarks: [0,3,6,9,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]},{"id":"point-4","verbatim":"Point 4","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sb-q3b", topicId: "home-economics-0-11", conceptId: "sb-q3b",
+    section: "B", questionRef: "2016 HL Section B Q3(b)",
+    stem: "As more women enter the workforce and lifestyles change, global demand for frozen meals and ingredients will grow. (Bord Bia, 2013)",
+    questionText: "Set out details of one method of freezing fresh vegetables. Refer to: • description of the method used • underlying principle involved • the effect of freezing on the food.",
+    tariffModel: {"kind":"fixed","notation":"Name2 + description3×3 + principle2×3 + effect3"}, totalMarks: 20,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Home freezing", marks: 2 },
+    { id: "description", kind: "criterion", verbatim: "Description", marks: 9, contextNote: "Three description points for the SAME selected freezing method. Home freezing: blanching; foods frozen at -25ºC, stored -18ºC; food wrapped in moisture proof packaging; air removed; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    { id: "principle", kind: "criterion", verbatim: "underlying principle", marks: 6, contextNote: "Two principles appropriate to the SAME selected method. Original shared source: water present in food is converted to ice crystals; removal of warmth and moisture; to destroy or inactivate enzymes by blanching; to destroy or inactivate micro-organisms; to prevent the re-entry of new microbes by sealing food; to maintain the nutritive value, colour, flavour, texture of the food as far as possible; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "effect", kind: "criterion", verbatim: "effect of freezing", marks: 3, contextNote: "One effect appropriate to the SAME selected method. Complete original quick/slow/freezer-burn guidance: quick freezing: small ice crystals – food structure is unchanged; nutritive value, texture, colour and flavour are retained on thawing; etc. slow freezing: large ice crystals form, damage the structure of the food; greater loss of nutrients, colour and flavour; etc. freezer burn: toughens, discolours(through oxidation) and dries out protein foods; etc.", permittedMarks: [0,3] },
+    ],
+    answerVariants: [
+          {
+                "id": "method-1",
+                "label": "Home freezing",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Home freezing",
+                            "marks": 2
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9
+                            ],
+                            "contextNote": "Three description points for the SAME selected freezing method. Home freezing: blanching; foods frozen at -25ºC, stored -18ºC; food wrapped in moisture proof packaging; air removed; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Two principles appropriate to the SAME selected method. Original shared source: water present in food is converted to ice crystals; removal of warmth and moisture; to destroy or inactivate enzymes by blanching; to destroy or inactivate micro-organisms; to prevent the re-entry of new microbes by sealing food; to maintain the nutritive value, colour, flavour, texture of the food as far as possible; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "effect",
+                            "kind": "criterion",
+                            "verbatim": "effect of freezing",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "One effect appropriate to the SAME selected method. Complete original quick/slow/freezer-burn guidance: quick freezing: small ice crystals – food structure is unchanged; nutritive value, texture, colour and flavour are retained on thawing; etc. slow freezing: large ice crystals form, damage the structure of the food; greater loss of nutrients, colour and flavour; etc. freezer burn: toughens, discolours(through oxidation) and dries out protein foods; etc."
+                      }
+                ]
+          },
+          {
+                "id": "method-2",
+                "label": "Air Blast Freezing",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Air Blast Freezing",
+                            "marks": 2
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9
+                            ],
+                            "contextNote": "Three description points for the SAME selected freezing method. Air Blast Freezing: food passed through tunnel on conveyor belt and cold air (-30ºC - 40ºC) is blown over it, circulates around the food; suitable for most foods; takes 2-3 hours; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Two principles appropriate to the SAME selected method. Original shared source: water present in food is converted to ice crystals; removal of warmth and moisture; to destroy or inactivate enzymes by blanching; to destroy or inactivate micro-organisms; to prevent the re-entry of new microbes by sealing food; to maintain the nutritive value, colour, flavour, texture of the food as far as possible; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "effect",
+                            "kind": "criterion",
+                            "verbatim": "effect of freezing",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "One effect appropriate to the SAME selected method. Complete original quick/slow/freezer-burn guidance: quick freezing: small ice crystals – food structure is unchanged; nutritive value, texture, colour and flavour are retained on thawing; etc. slow freezing: large ice crystals form, damage the structure of the food; greater loss of nutrients, colour and flavour; etc. freezer burn: toughens, discolours(through oxidation) and dries out protein foods; etc."
+                      }
+                ]
+          },
+          {
+                "id": "method-3",
+                "label": "Plate or Contact Freezing",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Plate or Contact Freezing",
+                            "marks": 2
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9
+                            ],
+                            "contextNote": "Three description points for the SAME selected freezing method. Plate or Contact Freezing: food is pressed between 2 cold metal surfaces; used for thin foods; temperature -30ºC - 40ºC; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Two principles appropriate to the SAME selected method. Original shared source: water present in food is converted to ice crystals; removal of warmth and moisture; to destroy or inactivate enzymes by blanching; to destroy or inactivate micro-organisms; to prevent the re-entry of new microbes by sealing food; to maintain the nutritive value, colour, flavour, texture of the food as far as possible; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "effect",
+                            "kind": "criterion",
+                            "verbatim": "effect of freezing",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "One effect appropriate to the SAME selected method. Complete original quick/slow/freezer-burn guidance: quick freezing: small ice crystals – food structure is unchanged; nutritive value, texture, colour and flavour are retained on thawing; etc. slow freezing: large ice crystals form, damage the structure of the food; greater loss of nutrients, colour and flavour; etc. freezer burn: toughens, discolours(through oxidation) and dries out protein foods; etc."
+                      }
+                ]
+          },
+          {
+                "id": "method-4",
+                "label": "Flow Freezing/Fluidised Bed Freezing",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Flow Freezing/Fluidised Bed Freezing",
+                            "marks": 2
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9
+                            ],
+                            "contextNote": "Three description points for the SAME selected freezing method. Flow Freezing/Fluidised Bed Freezing: food passes through a tunnel on a perforated conveyor belt; freezing air - 30ºC - 40 ºC is blown from underneath and freezes each piece of food separately so they don’t stick together; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Two principles appropriate to the SAME selected method. Original shared source: water present in food is converted to ice crystals; removal of warmth and moisture; to destroy or inactivate enzymes by blanching; to destroy or inactivate micro-organisms; to prevent the re-entry of new microbes by sealing food; to maintain the nutritive value, colour, flavour, texture of the food as far as possible; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "effect",
+                            "kind": "criterion",
+                            "verbatim": "effect of freezing",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "One effect appropriate to the SAME selected method. Complete original quick/slow/freezer-burn guidance: quick freezing: small ice crystals – food structure is unchanged; nutritive value, texture, colour and flavour are retained on thawing; etc. slow freezing: large ice crystals form, damage the structure of the food; greater loss of nutrients, colour and flavour; etc. freezer burn: toughens, discolours(through oxidation) and dries out protein foods; etc."
+                      }
+                ]
+          },
+          {
+                "id": "another-method",
+                "label": "Another valid freezing method",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name ONE method consistently; four original models remain available."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9
+                            ],
+                            "contextNote": "Describe the SAME method. No additional model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Apply relevant principles to the SAME method. water present in food is converted to ice crystals; removal of warmth and moisture; to destroy or inactivate enzymes by blanching; to destroy or inactivate micro-organisms; to prevent the re-entry of new microbes by sealing food; to maintain the nutritive value, colour, flavour, texture of the food as far as possible; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "effect",
+                            "kind": "criterion",
+                            "verbatim": "effect of freezing",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Give an effect relevant to the SAME method. quick freezing: small ice crystals – food structure is unchanged; nutritive value, texture, colour and flavour are retained on thawing; etc. slow freezing: large ice crystals form, damage the structure of the food; greater loss of nutrients, colour and flavour; etc. freezer burn: toughens, discolours(through oxidation) and dries out protein foods; etc."
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sb-q3c", topicId: "home-economics-0-11", conceptId: "sb-q3c",
+    section: "B", questionRef: "2016 HL Section B Q3(c)",
+    stem: "As more women enter the workforce and lifestyles change, global demand for frozen meals and ingredients will grow. (Bord Bia, 2013)",
+    questionText: "Evaluate the role of packaging / labelling in relation to each of the following: • suitability for purpose • environmental impact • as a source of consumer information.",
+    tariffModel: {"kind":"fixed","notation":"Three required headings×two points×3"}, totalMarks: 18,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Suitability for purpose", marks: 6, contextNote: "Suitability for purpose: safe/non- toxic; strong; hygienic; easy to open and reseal if necessary; attractive; economical; protects the food i.e. impervious to moisture, gases, micro-organism; tins lacquered to prevent reaction with the food; easy to stack/store; suitable for heat treatment; may be printed on; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "Environmental impact", marks: 6, contextNote: "Environmental impact: metal is a limited and non - renewable resource, non –biodegradable/ recyclable; glass is reusable, recyclable; paper is biodegradable and recyclable; plastic is non – biodegradable, made from a limited and non-renewable resource; limited recycling facilities in Ireland; recycling saves raw materials and energy and reduces the impact production has on the environment in terms of air pollution and use of clean water; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "Source of consumer information", marks: 6, contextNote: "Source of consumer information: displays legal requirements such as ingredients; weight; nutritional information; allergy information; identify product; help sell product; cooking instructions; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sb-q4a", topicId: "home-economics-1-2", conceptId: "sb-q4a",
+    section: "B", questionRef: "2016 HL Section B Q4(a)",
+    stem: "‘While consumers are more optimistic about their financial outlook, they remain cautious, giving due consideration to all types of spend from grocery to big ticket items.’ (Retail Ireland, September 2014)",
+    questionText: "Discuss how consumer shopping patterns have changed over the past 10 years and suggest reasons for such changes.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "shopping patterns", marks: 20, contextNote: "Cover BOTH changed shopping patterns and reasons within FIVE points. No separate quota is printed for either heading. Historical 2016 context retained. Complete original source guidance: frequency; large shopping centres –’one stop shopping’; late night shopping – 24 hour shops; Sunday shopping; TV and online shopping; increased environmental awareness; cash replaced by laser/credit cards; store loyalty cards; premium brands; a stronger preference for service and convenience both in retail and product choice; home delivery; etc. Reasons: less time for shopping; limited resources; health conscious; convenience; increased consumer awareness; price consciousness to value for money; competition for consumer loyalty; etc.", permittedMarks: [0,4,8,12,16,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sb-q4b", topicId: "home-economics-1-2", conceptId: "sb-q4b",
+    section: "B", questionRef: "2016 HL Section B Q4(b)",
+    stem: "‘While consumers are more optimistic about their financial outlook, they remain cautious, giving due consideration to all types of spend from grocery to big ticket items.’ (Retail Ireland, September 2014)",
+    questionText: "Give details of four merchandising techniques used by retailers to maximise consumer spending.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "merchandising techniques", marks: 20, contextNote: "Complete original source guidance: Store Layout: size influences time spent in store; follow flow of aisles and see more products; location of goods in defined departments; etc. In-store stimuli: lighting; background music; aromas; etc. Product placement: essentials at back of store; sweets at checkouts; pasta and sauces together; etc. Shelf-position: luxuries at eye-level; etc. Pricing: items priced at €4.99 are perceived cheaper than €5; multiple buys e.g. three for €1.50 instead of 60 cents each; special offers; 3 for price of 2; loss leader technique; etc. Loyalty cards: points for money off; etc. Accept advertising; sponsorship; social media; etc.", permittedMarks: [0,5,10,15,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sb-q4c", topicId: "home-economics-1-2", conceptId: "sb-q4c",
+    section: "B", questionRef: "2016 HL Section B Q4(c)",
+    stem: "‘While consumers are more optimistic about their financial outlook, they remain cautious, giving due consideration to all types of spend from grocery to big ticket items.’ (Retail Ireland, September 2014)",
+    questionText: "Name and give details of one statutory agency that protects consumers.",
+    tariffModel: {"kind":"fixed","notation":"Name2 + details2×4"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Competition and Consumer protection Commission / National Consumer Agency (NCA)", marks: 2, contextNote: "Original historical 2016 names, classifications and conditions are retained. Give TWO details of the SAME selected body/procedure." },
+    { id: "details", kind: "criterion", verbatim: "Details", marks: 8, contextNote: "Original historical 2016 names, classifications and conditions are retained. Give TWO details of the SAME selected body/procedure. Competition and Consumer protection Commission / National Consumer Agency (NCA): encourage high advertising standards and investigate complaints; provide consumers information regarding their rights; investigate unfair and illegal trading practices; guarantee that products sold in Ireland conform to Irish safety standards; ensure that food labels supply all the legally required information; prosecute offences under the Consumer Information Act 1978; advise Government on consumer issues; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "agency-1",
+                "label": "Competition and Consumer protection Commission / National Consumer Agency (NCA)",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Competition and Consumer protection Commission / National Consumer Agency (NCA)",
+                            "marks": 2,
+                            "contextNote": "Original historical 2016 names, classifications and conditions are retained. Give TWO details of the SAME selected body/procedure."
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Original historical 2016 names, classifications and conditions are retained. Give TWO details of the SAME selected body/procedure. Competition and Consumer protection Commission / National Consumer Agency (NCA): encourage high advertising standards and investigate complaints; provide consumers information regarding their rights; investigate unfair and illegal trading practices; guarantee that products sold in Ireland conform to Irish safety standards; ensure that food labels supply all the legally required information; prosecute offences under the Consumer Information Act 1978; advise Government on consumer issues; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "agency-2",
+                "label": "Ombudsman",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Ombudsman",
+                            "marks": 2,
+                            "contextNote": "Original historical 2016 names, classifications and conditions are retained. Give TWO details of the SAME selected body/procedure."
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Original historical 2016 names, classifications and conditions are retained. Give TWO details of the SAME selected body/procedure. Ombudsman: investigates complaints made by the public against Government Departments e.g. Health boards, An Post, Insurance Companies, Credit Institutions (Banks); used as a last resort if no resolution can be made between the consumer and Department/agency; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "agency-3",
+                "label": "Citizens’ Information Centres",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Citizens’ Information Centres",
+                            "marks": 2,
+                            "contextNote": "Original historical 2016 names, classifications and conditions are retained. Give TWO details of the SAME selected body/procedure."
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Original historical 2016 names, classifications and conditions are retained. Give TWO details of the SAME selected body/procedure. Citizens’ Information Centres: provide free confidential information; each C.I.C. is an independent body; all are registered with Comhairle; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "agency-4",
+                "label": "National Standards Authority of Ireland (NSAI)",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "National Standards Authority of Ireland (NSAI)",
+                            "marks": 2,
+                            "contextNote": "Original historical 2016 names, classifications and conditions are retained. Give TWO details of the SAME selected body/procedure."
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Original historical 2016 names, classifications and conditions are retained. Give TWO details of the SAME selected body/procedure. National Standards Authority of Ireland (NSAI): establishes standards in relation to food safety and quality in products; it implements the ISO9000 scheme; these standards are implemented in Irish industries in order to provide better and safer products for the consumer; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "agency-5",
+                "label": "Small Claims Procedure",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Small Claims Procedure",
+                            "marks": 2,
+                            "contextNote": "Original historical 2016 names, classifications and conditions are retained. Give TWO details of the SAME selected body/procedure."
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Original historical 2016 names, classifications and conditions are retained. Give TWO details of the SAME selected body/procedure. Small Claims Procedure: complaint is registered and Notice of Claim to respondent; respondent can admit, dispute or ignore claim or can counterclaim; if claim is disputed within 15 days the Small Claims register will try to resolve the issue; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-agency",
+                "label": "Another valid statutory agency",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Choose ONE statutory agency consistently. All five original historical source models remain available."
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Give two details of that SAME agency. No additional source model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sb-q5a", topicId: "home-economics-2-0", conceptId: "sb-q5a",
+    section: "B", questionRef: "2016 HL Section B Q5(a)",
+    stem: "As the world’s oldest form of human relationship, the family has survived thousands of years, adapting itself constantly to changing socio-economic conditions and the progress of humanity.",
+    questionText: "Analyse the social and economic changes that affect contemporary families.",
+    tariffModel: {"kind":"fixed","notation":"Social2×4 + economic2×4 + one other4"}, totalMarks: 20,
+    rows: [
+    { id: "social", kind: "criterion", verbatim: "social", marks: 8, contextNote: "Social: decline in extended family; increased number of separations and divorces; introduction of contraception and family planning resulted in a decrease in the number of births; women choose to have their children later in life; Ireland has become multi-denominational; education, and educational achievement are seen as very important; decline in segregated roles; women have greater choice in education and the workplace; equal pay; children are now dependent on parents for longer; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "economic", kind: "criterion", verbatim: "economic", marks: 8, contextNote: "Economic: an increase in the cost of living has led to smaller family sizes; both parents required to work to support family home; agriculture no longer the main source of income for farming families; growth in unemployment has increased the financial burden on families; many families e.g. one parent families and the unemployed dependent on state support; the cost of living, housing and childcare has increased; high cost of education; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "other", kind: "criterion", verbatim: "1 other", marks: 4, contextNote: "One ADDITIONAL point from either required heading. Social: decline in extended family; increased number of separations and divorces; introduction of contraception and family planning resulted in a decrease in the number of births; women choose to have their children later in life; Ireland has become multi-denominational; education, and educational achievement are seen as very important; decline in segregated roles; women have greater choice in education and the workplace; equal pay; children are now dependent on parents for longer; etc. Economic: an increase in the cost of living has led to smaller family sizes; both parents required to work to support family home; agriculture no longer the main source of income for farming families; growth in unemployment has increased the financial burden on families; many families e.g. one parent families and the unemployed dependent on state support; the cost of living, housing and childcare has increased; high cost of education; etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sb-q5b", topicId: "home-economics-2-0", conceptId: "sb-q5b",
+    section: "B", questionRef: "2016 HL Section B Q5(b)",
+    stem: "As the world’s oldest form of human relationship, the family has survived thousands of years, adapting itself constantly to changing socio-economic conditions and the progress of humanity.",
+    questionText: "Explain how the family can meet the physical and psychological needs of children so that they can contribute to and succeed in a rapidly changing society.",
+    tariffModel: {"kind":"fixed","notation":"Physical2×3 + psychological2×3 + two others×3"}, totalMarks: 18,
+    rows: [
+    { id: "physical", kind: "criterion", verbatim: "physical", marks: 6, contextNote: "Physical: Food: parents need to provide children with a healthy balanced diet, paying particular attention to the nutritional requirements of the growing child; parents need to take responsibility for limiting the child’s intake of unhealthy food; etc. Clothing: parents provide sufficient clothing for modesty and protection of the child; etc. Shelter: children need shelter, a warm home in which to live, rest and play; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "psychological", kind: "criterion", verbatim: "psychological", marks: 6, contextNote: "Psychological: Love: affection and love that is experienced by the child in a relationship will allow the child to transfer this to his/her own relationships; etc. Security and trust: the presence of a dependable, constant caregiver in a nurturing role will provide children with security and trust; etc. Praise and encouragement: help to provide a stable and happy home life for children, this promotes self-esteem in the child; etc. Protection: the family protects its children and members with disabilities or illnesses; protection from physical, emotional and sexual abuse; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "other", kind: "criterion", verbatim: "2 others", marks: 6, contextNote: "Two ADDITIONAL points from either required heading. Physical: Food: parents need to provide children with a healthy balanced diet, paying particular attention to the nutritional requirements of the growing child; parents need to take responsibility for limiting the child’s intake of unhealthy food; etc. Clothing: parents provide sufficient clothing for modesty and protection of the child; etc. Shelter: children need shelter, a warm home in which to live, rest and play; etc. Psychological: Love: affection and love that is experienced by the child in a relationship will allow the child to transfer this to his/her own relationships; etc. Security and trust: the presence of a dependable, constant caregiver in a nurturing role will provide children with security and trust; etc. Praise and encouragement: help to provide a stable and happy home life for children, this promotes self-esteem in the child; etc. Protection: the family protects its children and members with disabilities or illnesses; protection from physical, emotional and sexual abuse; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sb-q5c", topicId: "home-economics-2-0", conceptId: "sb-q5c",
+    section: "B", questionRef: "2016 HL Section B Q5(c)",
+    stem: "As the world’s oldest form of human relationship, the family has survived thousands of years, adapting itself constantly to changing socio-economic conditions and the progress of humanity.",
+    questionText: "Discuss the challenges that may be experienced by the parents of a child with special needs.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "challenges", marks: 12, contextNote: "Complete original source guidance: to provide emotional support and assistance; modification of the family home to assist those with physical difficulties; encouraging independence and helping them integrate into society; applying for all social assistance and grants available; having to give up work and state at home; stress; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q1ai", topicId: "home-economics-3-3", conceptId: "sc-q1ai",
+    section: "C", questionRef: "2016 HL Section C E1 Q1(a)(i)",
+    stem: "The idea of your own self-build house construction can be a very compelling idea to give you a bespoke dream home tailored to your lifestyle and requirements.",
+    questionText: "Discuss the factors that influence a family’s choice of location and house style when building a house.",
+    tariffModel: {"kind":"fixed","notation":"Location2×4 + house style2×4 + two others×4"}, totalMarks: 24,
+    rows: [
+    { id: "location", kind: "criterion", verbatim: "location", marks: 8, contextNote: "Location: urban or rural setting; proximity to work, school and amenities, transport links; available services e.g. water, sewage, electricity, etc.; site orientation – south facing; good drainage; development plans for the area - building regulations in the area; environmental regulations in the area as planning permission can affect the style of the house, local authorities determine what is allowed e.g. skyline etc.; income – cost of site; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "style", kind: "criterion", verbatim: "house style", marks: 8, contextNote: "House style: personal preference - two story, single storey, detached, semi-detached, terraced; low-maintenance house; sufficient space for all family members to live comfortably; stage of family members; family members with special needs; houses should be able to withstand the weather of a country; aspect of the house ensures light gets into main rooms; if on a gradient site houses may need to be split-level; houses must fit into surrounding area; houses may have to use local stone around doors or on front of houses; conform to planning regulations; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "other", kind: "criterion", verbatim: "2 others", marks: 8, contextNote: "Two ADDITIONAL points from either required heading. Location: urban or rural setting; proximity to work, school and amenities, transport links; available services e.g. water, sewage, electricity, etc.; site orientation – south facing; good drainage; development plans for the area - building regulations in the area; environmental regulations in the area as planning permission can affect the style of the house, local authorities determine what is allowed e.g. skyline etc.; income – cost of site; etc. House style: personal preference - two story, single storey, detached, semi-detached, terraced; low-maintenance house; sufficient space for all family members to live comfortably; stage of family members; family members with special needs; houses should be able to withstand the weather of a country; aspect of the house ensures light gets into main rooms; if on a gradient site houses may need to be split-level; houses must fit into surrounding area; houses may have to use local stone around doors or on front of houses; conform to planning regulations; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q1aii", topicId: "home-economics-3-3", conceptId: "sc-q1aii",
+    section: "C", questionRef: "2016 HL Section C E1 Q1(a)(ii)",
+    stem: "The idea of your own self-build house construction can be a very compelling idea to give you a bespoke dream home tailored to your lifestyle and requirements.",
+    questionText: "Outline the procedures involved in obtaining full planning permission.",
+    tariffModel: {"kind":"fixed","notation":"Three procedures×4 + one additional procedure2"}, totalMarks: 14,
+    rows: [
+    { id: "procedures", kind: "criterion", verbatim: "procedures", marks: 12, contextNote: "pre-planning meeting; notice of intention/planning permission published in a local newspaper; pay fee and lodge detailed application to local planning authority; site notice erected; public inspection - any member of the public is free to inspect the plans; site inspection by planning officials; permission granted or refused with reasons given for refusal; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    { id: "additional", kind: "criterion", verbatim: "planning permission", marks: 2, contextNote: "One ADDITIONAL procedure, at the distinct two-mark tariff printed by the scheme. pre-planning meeting; notice of intention/planning permission published in a local newspaper; pay fee and lodge detailed application to local planning authority; site notice erected; public inspection - any member of the public is free to inspect the plans; site inspection by planning officials; permission granted or refused with reasons given for refusal; etc.", permittedMarks: [0,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q1aiii", topicId: "home-economics-3-3", conceptId: "sc-q1aiii",
+    section: "C", questionRef: "2016 HL Section C E1 Q1(a)(iii)",
+    stem: "The idea of your own self-build house construction can be a very compelling idea to give you a bespoke dream home tailored to your lifestyle and requirements.",
+    questionText: "Give an account of the specific housing requirements of the following groups: • people with disabilities • homeless people.",
+    tariffModel: {"kind":"fixed","notation":"Two required groups×two points×3"}, totalMarks: 12,
+    rows: [
+    { id: "group-1", kind: "criterion", verbatim: "People with disabilities", marks: 6, contextNote: "People with disabilities: certain adjustments to basic housing requirements, will depend on the type of disabilities e.g. people with mobility problems using a walking aid or wheelchair may require ramp access to house, wide doorways, lower kitchen worktops, light switches, sockets and door handles positioned appropriately, raised toilet level with rails beside toilet, bath, shower; alarm bells for visually impaired; people with hearing disability require flashing lights to alert them to door bells; alarm communication systems are useful in case of emergencies; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "group-2", kind: "criterion", verbatim: "Homeless people", marks: 6, contextNote: "Homeless people: shelter in the form of hostel accommodation; emergency B&B; rent assisted private accommodation or local authority housing; shelter to be regular and not a queue nightly system; privacy to retain their dignity; safe place to store possessions; communal facilities e.g. kitchen/day room may help to reduce feelings of isolation; serviced halting sites for mobile home/caravans; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q1bi", topicId: "home-economics-3-6", conceptId: "sc-q1bi",
+    section: "C", questionRef: "2016 HL Section C E1 Q1(b)(i)",
+    stem: "A variety of technologies are available for heating houses.",
+    questionText: "Discuss the options available when choosing a heating system for a new house.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "options", marks: 12, contextNote: "Complete original source guidance: Full central heating – wet, dry system; partial central heating; background heating; local heating; underfloor heating; solar heating; Geothermal; Biomass(woodchip and pellets); wind powered turbines; hydroelectric power(electricity generation); fuel type – oil, gas, electricity; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q1bii", topicId: "home-economics-3-6", conceptId: "sc-q1bii",
+    section: "C", questionRef: "2016 HL Section C E1 Q1(b)(ii)",
+    stem: "A variety of technologies are available for heating houses.",
+    questionText: "Describe one type of central heating system suitable for a family home. Refer to: • type of heating system • underlying principle • devices used to control thermal comfort in the home.",
+    tariffModel: {"kind":"fixed","notation":"System3 + principle3×3 + devices2×3"}, totalMarks: 18,
+    rows: [
+    { id: "type", kind: "point", verbatim: "Wet system/small bore system/indirect system", marks: 3 },
+    { id: "principle", kind: "criterion", verbatim: "underlying principle", marks: 9, contextNote: "Three principles for this SAME selected heating system. Wet system/small bore system/indirect system: water heated in a boiler by convection; water expands, rises and pumped to all radiators or underfloor pipes in the house; individual radiators heat the rooms by radiation and convection; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    { id: "devices", kind: "criterion", verbatim: "devices", marks: 6, contextNote: "Two devices suitable for this SAME heating system. The source gives a name only for Apps; no additional explanation is invented. Timers: mechanical or electrical; switches heat on/off at specific times; etc. Thermostats: gas or electric; can be incorporated into a system or be separate from it; control the temperature; etc. Zoned heating: uses thermostats and timers; different areas in the house can be set at different temperatures and different times for the heating to come on; all above environmentally friendly that control use of energy in the home; etc. Apps; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "system-1",
+                "label": "Wet system/small bore system/indirect system",
+                "rows": [
+                      {
+                            "id": "type",
+                            "kind": "point",
+                            "verbatim": "Wet system/small bore system/indirect system",
+                            "marks": 3
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9
+                            ],
+                            "contextNote": "Three principles for this SAME selected heating system. Wet system/small bore system/indirect system: water heated in a boiler by convection; water expands, rises and pumped to all radiators or underfloor pipes in the house; individual radiators heat the rooms by radiation and convection; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "devices",
+                            "kind": "criterion",
+                            "verbatim": "devices",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Two devices suitable for this SAME heating system. The source gives a name only for Apps; no additional explanation is invented. Timers: mechanical or electrical; switches heat on/off at specific times; etc. Thermostats: gas or electric; can be incorporated into a system or be separate from it; control the temperature; etc. Zoned heating: uses thermostats and timers; different areas in the house can be set at different temperatures and different times for the heating to come on; all above environmentally friendly that control use of energy in the home; etc. Apps; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "system-2",
+                "label": "Dry system/under floor heating/storage heating",
+                "rows": [
+                      {
+                            "id": "type",
+                            "kind": "point",
+                            "verbatim": "Dry system/under floor heating/storage heating",
+                            "marks": 3
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9
+                            ],
+                            "contextNote": "Three principles for this SAME selected heating system. Dry system/under floor heating/storage heating: electric elements embedded in thermal blocks of fireclay or concrete and surrounded by an insulating material; the elements are switched on at off peak periods at night and the blocks heat up; the radiators or floor gradually release heat during the day; boost heat option; some heat is radiated but most is transferred by convection; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "devices",
+                            "kind": "criterion",
+                            "verbatim": "devices",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Two devices suitable for this SAME heating system. The source gives a name only for Apps; no additional explanation is invented. Timers: mechanical or electrical; switches heat on/off at specific times; etc. Thermostats: gas or electric; can be incorporated into a system or be separate from it; control the temperature; etc. Zoned heating: uses thermostats and timers; different areas in the house can be set at different temperatures and different times for the heating to come on; all above environmentally friendly that control use of energy in the home; etc. Apps; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "system-3",
+                "label": "Solar heating",
+                "rows": [
+                      {
+                            "id": "type",
+                            "kind": "point",
+                            "verbatim": "Solar heating",
+                            "marks": 3
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9
+                            ],
+                            "contextNote": "Three principles for this SAME selected heating system. Solar heating: solar collectors absorb sunlight and convert it into heat; the system uses mechanical devices such as pumps and fans to move heat from collectors to storage and then to use; heat is transferred by convection around each room; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "devices",
+                            "kind": "criterion",
+                            "verbatim": "devices",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Two devices suitable for this SAME heating system. The source gives a name only for Apps; no additional explanation is invented. Timers: mechanical or electrical; switches heat on/off at specific times; etc. Thermostats: gas or electric; can be incorporated into a system or be separate from it; control the temperature; etc. Zoned heating: uses thermostats and timers; different areas in the house can be set at different temperatures and different times for the heating to come on; all above environmentally friendly that control use of energy in the home; etc. Apps; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-system",
+                "label": "Another valid heating system",
+                "rows": [
+                      {
+                            "id": "type",
+                            "kind": "criterion",
+                            "verbatim": "type of heating system",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Choose ONE system consistently. Complete original type pool: full central heating – wet or dry; partial central heating; background heating; local heating; solar heating; solar; Geothermal; Biomass(woodchip and pellets); fuel/energy source – oil; gas; solid fuel; etc."
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9
+                            ],
+                            "contextNote": "Three principles matching the SAME system. The source supplies worked accounts only for wet, dry and solar systems; other named systems have no additional worked model. Original complete accounts: Wet system/small bore system/indirect system: water heated in a boiler by convection; water expands, rises and pumped to all radiators or underfloor pipes in the house; individual radiators heat the rooms by radiation and convection; etc. Dry system/under floor heating/storage heating: electric elements embedded in thermal blocks of fireclay or concrete and surrounded by an insulating material; the elements are switched on at off peak periods at night and the blocks heat up; the radiators or floor gradually release heat during the day; boost heat option; some heat is radiated but most is transferred by convection; etc. Solar heating: solar collectors absorb sunlight and convert it into heat; the system uses mechanical devices such as pumps and fans to move heat from collectors to storage and then to use; heat is transferred by convection around each room; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "devices",
+                            "kind": "criterion",
+                            "verbatim": "devices",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Two devices applicable to the SAME selected system. Apps is named without a model description. Timers: mechanical or electrical; switches heat on/off at specific times; etc. Thermostats: gas or electric; can be incorporated into a system or be separate from it; control the temperature; etc. Zoned heating: uses thermostats and timers; different areas in the house can be set at different temperatures and different times for the heating to come on; all above environmentally friendly that control use of energy in the home; etc. Apps; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q1ci-principles", topicId: "home-economics-3-4", conceptId: "sc-q1ci-principles",
+    section: "C", questionRef: "2016 HL Section C E1 Q1(c)(i) — principles",
+    stem: "Home office spaces have become very popular as many people now run a business from home.",
+    questionText: "outline the principles that should be considered when planning a lighting system for a home office / study",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "principles", marks: 9, contextNote: "Complete original source guidance: Principles: general lighting - choose lighting to create different moods that suit day and evening work; use recessed ceiling light if work requires maximum light; capture as much natural day light as possible; sufficient lighting for the size of the room; avoid glare; safety; maintenance – easy access for replacing bulbs; etc. Task lighting: desk lamps etc.; consider situation of computer screen as natural light behind a screen all day can cause eye strain; allow for flexibility, consider position of light fittings, sockets/lamps as light bouncing off a screen can be tiresome; soften the room with table lamps and shades; safety; cost; etc. Create space: give an illusion of more space; etc. Decorative lighting: picture display lights; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q1ci-profile", topicId: "home-economics-3-4", conceptId: "sc-q1ci-profile",
+    section: "C", questionRef: "2016 HL Section C E1 Q1(c)(i) — profile",
+    stem: "Home office spaces have become very popular as many people now run a business from home.",
+    questionText: "name and describe one type of lighting suitable for the space.",
+    tariffModel: {"kind":"fixed","notation":"Name2 + description3"}, totalMarks: 5,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Central lights", marks: 2 },
+    { id: "description", kind: "criterion", verbatim: "Description", marks: 3, contextNote: "Describe the SAME lighting type for the home office/study. The original guidance gives these examples: Central lights: semi-flush and flush pendant; chandelier; rise and fall; etc.", permittedMarks: [0,3] },
+    ],
+    answerVariants: [
+          {
+                "id": "light-1",
+                "label": "Central lights",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Central lights",
+                            "marks": 2
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Describe the SAME lighting type for the home office/study. The original guidance gives these examples: Central lights: semi-flush and flush pendant; chandelier; rise and fall; etc."
+                      }
+                ]
+          },
+          {
+                "id": "light-2",
+                "label": "Wall brackets",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Wall brackets",
+                            "marks": 2
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Describe the SAME lighting type for the home office/study. The original guidance gives these examples: Wall brackets: picture lights; swivel lights; etc."
+                      }
+                ]
+          },
+          {
+                "id": "light-3",
+                "label": "Free standing lamps",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Free standing lamps",
+                            "marks": 2
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Describe the SAME lighting type for the home office/study. The original guidance gives these examples: Free standing lamps: table/floor lamps; pivot action; flexible stem; touch; up lighter/down lighter; etc."
+                      }
+                ]
+          },
+          {
+                "id": "light-4",
+                "label": "Ceiling lights",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Ceiling lights",
+                            "marks": 2
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Describe the SAME lighting type for the home office/study. The original guidance gives these examples: Ceiling lights: eyeball sockets; track; recessed; light emitted diode (LED); Halogen; CFL lighting; etc."
+                      }
+                ]
+          },
+          {
+                "id": "light-5",
+                "label": "Novelty lighting",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Novelty lighting",
+                            "marks": 2
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Describe the SAME lighting type for the home office/study. The original guidance gives these examples: Novelty lighting: computer aided lights; low voltage; etc."
+                      }
+                ]
+          },
+          {
+                "id": "another-light",
+                "label": "Another valid lighting type",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Choose ONE type suitable for the home office/study; all five original model families remain available."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Describe the SAME selected type. No additional source model is printed."
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q1cii", topicId: "home-economics-3-4", conceptId: "sc-q1cii",
+    section: "C", questionRef: "2016 HL Section C E1 Q1(c)(ii)",
+    stem: "Home office spaces have become very popular as many people now run a business from home.",
+    questionText: "Give four guidelines to be considered when choosing furniture to create a functional and aesthetic office space.",
+    tariffModel: {"kind":"fixed","notation":"Functional4 + aesthetic4 + two others×4"}, totalMarks: 16,
+    rows: [
+    { id: "functional", kind: "criterion", verbatim: "functional", marks: 4, contextNote: "Functional: size and shape of desk e.g. corner unit, kidney shaped, oblong; ergonomics – desk with built in drawers or storage; size and type of office chair; cost; quality; construction – built-in or free-standing units; storage – floor to ceiling shelving, book cases; size of the room; etc.", permittedMarks: [0,4] },
+    { id: "aesthetic", kind: "criterion", verbatim: "aesthetic", marks: 4, contextNote: "Aesthetic: décor; personal preference/style – modern or traditional; type of materials e.g. wood, glass, metal; seating; colour - complement the design of the room; aspect; etc.", permittedMarks: [0,4] },
+    { id: "other", kind: "criterion", verbatim: "2 others", marks: 8, contextNote: "Two ADDITIONAL points from either required heading. Functional: size and shape of desk e.g. corner unit, kidney shaped, oblong; ergonomics – desk with built in drawers or storage; size and type of office chair; cost; quality; construction – built-in or free-standing units; storage – floor to ceiling shelving, book cases; size of the room; etc. Aesthetic: décor; personal preference/style – modern or traditional; type of materials e.g. wood, glass, metal; seating; colour - complement the design of the room; aspect; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q2ai", topicId: "home-economics-3-8", conceptId: "sc-q2ai",
+    section: "C", questionRef: "2016 HL Section C E2 Q2(a)(i)",
+    stem: "Fashion trends have evolved through the ages, some have recurred, others have discontinued but all have contributed to fashion today.",
+    questionText: "Critically evaluate male or female fashion trends of the past decade.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "fashion trends", marks: 9, contextNote: "Evaluate MALE OR FEMALE fashion in the historical decade asked about by the 2016 paper. The original shared pool remains complete. Complete original source guidance: 2000’s fashion often described as a “mash-up” where trends saw the fusion of previous styles; global and ethnic clothing (e.g. boho) as well as the fashions of numerous music based subcultures; hip hop popular among young people followed by the unisex look later in the decade; globalization influenced clothing trends with middle - eastern and Asian dress into mainstream fashion; eco – friendly and ethical clothing such as recycled fashions and fake fur prominent; revived clothes from the 1960’s, 1970’s and 1980’s etc.; men’s fashion trends – influenced by lifestyle as much as taste and by practicalities as much as trends – tailored suits; knitted ties; denim/bomber/varsity jackets, blazers; gilets; shirts - chambray shirts, overshirts; sportswear, trainers; fashion trends tend to be cyclical; upcycling; bright colours; line and shape; accessories; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q2aii", topicId: "home-economics-3-8", conceptId: "sc-q2aii",
+    section: "C", questionRef: "2016 HL Section C E2 Q2(a)(ii)",
+    stem: "Fashion trends have evolved through the ages, some have recurred, others have discontinued but all have contributed to fashion today.",
+    questionText: "Sketch and design an outfit that incorporates one current fashion trend.",
+    tariffModel: {"kind":"fixed","notation":"Sketch5 + design4"}, totalMarks: 9,
+    rows: [
+    { id: "sketch", kind: "criterion", verbatim: "Sketch", marks: 5, contextNote: "Sketch the SAME outfit incorporating one current fashion trend in the historical 2016 task. The original scheme gives five marks without a worked sketch or smaller allocations.", permittedMarks: [0,5] },
+    { id: "design", kind: "criterion", verbatim: "Design", marks: 4, contextNote: "Design that SAME outfit. The original scheme gives four marks without a worked design or smaller allocations.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q2aiii", topicId: "home-economics-3-8", conceptId: "sc-q2aiii",
+    section: "C", questionRef: "2016 HL Section C E2 Q2(a)(iii)",
+    stem: "Fashion trends have evolved through the ages, some have recurred, others have discontinued but all have contributed to fashion today.\n\nSketch and design an outfit that incorporates one current fashion trend.",
+    questionText: "In relation to the outfit, give details of: • the fashion trend • suitability for purpose.",
+    tariffModel: {"kind":"fixed","notation":"Fashion trend4 + suitability3"}, totalMarks: 7,
+    rows: [
+    { id: "trend", kind: "criterion", verbatim: "fashion trend", marks: 4, contextNote: "Refer to the SAME outfit sketched/designed in part(ii). Fashion trends: neon colours; classic blazer; beach bags; costume jewellery – chains, earrings, tiaras; denim; frills/feathers/ruffles, fringing; floral prints; bomber jackets; jump suits; slip dress; gingham dresses; layering; etc.", permittedMarks: [0,4] },
+    { id: "suitability", kind: "criterion", verbatim: "suitability for purpose", marks: 3, contextNote: "Explain suitability of the SAME outfit. The original only gives the following general criteria, not an outfit-specific model: Suitable for purpose: fit for purpose; suitable of fashion trend; etc.", permittedMarks: [0,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q2bi", topicId: "home-economics-3-7", conceptId: "sc-q2bi",
+    section: "C", questionRef: "2016 HL Section C E2 Q2(b)(i)",
+    stem: "Fibres are the basis of all textiles.",
+    questionText: "Differentiate between regenerated fibres and synthetic fibres and give one example of each.",
+    tariffModel: {"kind":"fixed","notation":"Difference4 + one example of each category×1"}, totalMarks: 6,
+    rows: [
+    { id: "difference", kind: "criterion", verbatim: "Differentiate", marks: 4, contextNote: "Differentiate BOTH fibre categories in one four-mark account. No two-mark split is printed. Regenerated: made from cellulose; pulped and treated with chemicals and forced through nozzles e.g. rayon, viscose, acetate, tri-acetate; etc. Synthetic: made from chemicals such as coal or petroleum e.g. nylon, polyester, acrylic, PVC; etc.", permittedMarks: [0,4] },
+    { id: "regenerated", kind: "anyN", verbatim: "Regenerated", marks: 1, contextNote: "ONE example of regenerated fibre.", openList: true, group: {"claimMax":1,"perOption":1,"options":["rayon","viscose","acetate","tri-acetate"]} },
+    { id: "synthetic", kind: "anyN", verbatim: "Synthetic", marks: 1, contextNote: "ONE example of synthetic fibre.", openList: true, group: {"claimMax":1,"perOption":1,"options":["nylon","polyester","acrylic","PVC"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q2bii-colour", topicId: "home-economics-3-7", conceptId: "sc-q2bii-colour",
+    section: "C", questionRef: "2016 HL Section C E2 Q2(b)(ii) — colour",
+    stem: "Fibres are the basis of all textiles.",
+    questionText: "Name and describe one method of colour application to fabric",
+    tariffModel: {"kind":"fixed","notation":"One named/described method5"}, totalMarks: 5,
+    rows: [
+    { id: "method", kind: "criterion", verbatim: "colour application", marks: 5, contextNote: "Name AND describe ONE method. This source allocation covers both together; no separate name/description tariff is printed. The original lists method names only, with no worked descriptions: Colour application: dyeing – disperse, acid dyeing, tie dying; etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q2bii-design", topicId: "home-economics-3-7", conceptId: "sc-q2bii-design",
+    section: "C", questionRef: "2016 HL Section C E2 Q2(b)(ii) — design",
+    stem: "Fibres are the basis of all textiles.",
+    questionText: "Name and describe one method of design application to fabric.",
+    tariffModel: {"kind":"fixed","notation":"One named/described method4"}, totalMarks: 4,
+    rows: [
+    { id: "method", kind: "criterion", verbatim: "design application", marks: 4, contextNote: "Name AND describe ONE method. This source allocation covers both together; no separate name/description tariff is printed. The original lists method names only, with no worked descriptions: Design application: screen printing; roller printing; stenciling; transfer printing; embossing; embroidery; appliqué; etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q2ci", topicId: "home-economics-3-8", conceptId: "sc-q2ci",
+    section: "C", questionRef: "2016 HL Section C E2 Q2(c)(i)",
+    stem: "‘Fashion fades, only style remains the same.’ (Coco Chanel)",
+    questionText: "Discuss the work of one milliner or fashion designer.",
+    tariffModel: {"kind":"fixed","notation":"Name3 + work2×3"}, totalMarks: 9,
+    rows: [
+    { id: "name", kind: "anyN", verbatim: "Name", marks: 3, contextNote: "Choose ONE milliner OR fashion designer. All original names remain available; do not mix different people.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Louise Kennedy","Simone Rocha","Paul Costelloe","Peter O Brien","Natalie B. Coleman","Richard Malone","Emma Manley","Joanne Hynes","Phillip Treacy","Aisling Ahern","Carol Kennelly","Martha Lynn","Edel Ramberg","Celestine McCoy","Jennifer Wren"]} },
+    { id: "work", kind: "criterion", verbatim: "work", marks: 6, contextNote: "Two points about the SAME person. The original scheme gives names only; no model account of anyone’s work is printed. Complete original named pool: Designers: Louise Kennedy; Simone Rocha; Paul Costelloe; Peter O Brien; Natalie B. Coleman; Richard Malone; Emma Manley; Joanne Hynes; etc. Milliners: Phillip Treacy; Aisling Ahern; Carol Kennelly; Martha Lynn; Edel Ramberg; Celestine McCoy; Jennifer Wren; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q2cii", topicId: "home-economics-3-8", conceptId: "sc-q2cii",
+    section: "C", questionRef: "2016 HL Section C E2 Q2(c)(ii)",
+    stem: "‘Fashion fades, only style remains the same.’ (Coco Chanel)",
+    questionText: "Evaluate the growing popularity of accessories in completing an outfit.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 3"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "popularity of accessories", marks: 6, contextNote: "Complete original source guidance: draws attention to an area e.g. belt shows off waistline; brighten up an outfit e.g. colourful scarf; modernise an outfit e.g. detachable collar/cuffs, fur collars; balance colour e.g. shoes, bags; enhance the appearance e.g. statement jewellery; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q3ai", topicId: "home-economics-3-9", conceptId: "sc-q3ai",
+    section: "C", questionRef: "2016 HL Section C E3 Q3(a)(i)",
+    stem: "There are 755,570 people living in poverty in Ireland. This is a rise of 55,000 since 2011, over 23,000 of these are children. (Social Justice Ireland, November 2015)",
+    questionText: "Define poverty.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 4"}, totalMarks: 8,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "Poverty", marks: 8, contextNote: "Complete original source guidance: people living in poverty if their income and resources (material, cultural and social) as so inadequate as to preclude them from having a standard of living that is regarded as acceptable by Irish society generally; as a result of inadequate income and resources many people may be excluded and marginalised from participating in activities that are considered the norm for people in society; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q3aii", topicId: "home-economics-3-9", conceptId: "sc-q3aii",
+    section: "C", questionRef: "2016 HL Section C E3 Q3(a)(ii)",
+    stem: "There are 755,570 people living in poverty in Ireland. This is a rise of 55,000 since 2011, over 23,000 of these are children. (Social Justice Ireland, November 2015)",
+    questionText: "In relation to poverty explain each of the following: • relative poverty • the poverty line • the cycle of poverty.",
+    tariffModel: {"kind":"fixed","notation":"Three required terms×4"}, totalMarks: 12,
+    rows: [
+    { id: "term-1", kind: "criterion", verbatim: "Relative poverty", marks: 4, contextNote: "Relative poverty: people living below what society recognises as a basic standard of living; prevents people from partaking in activities which are looked upon as normal in society; etc.", permittedMarks: [0,4] },
+    { id: "term-2", kind: "criterion", verbatim: "Poverty line", marks: 4, contextNote: "Poverty line: may be described as the estimated minimum income considered necessary to maintain a basic standard of living; minimum amount of money a person would need to provide for basic needs such as food, clothing and shelter; etc.", permittedMarks: [0,4] },
+    { id: "term-3", kind: "criterion", verbatim: "Cycle of poverty", marks: 4, contextNote: "Cycle of poverty: in the cycle of poverty/deprivation one aspect of poverty contributes to another and creates a never ending cycle e.g. children born into a poor family may have children at a young age and this family is also poor; etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q3aiii", topicId: "home-economics-3-9", conceptId: "sc-q3aiii",
+    section: "C", questionRef: "2016 HL Section C E3 Q3(a)(iii)",
+    stem: "There are 755,570 people living in poverty in Ireland. This is a rise of 55,000 since 2011, over 23,000 of these are children. (Social Justice Ireland, November 2015)",
+    questionText: "Discuss the social and economic reasons why poverty continues to exist in today’s society.",
+    tariffModel: {"kind":"fixed","notation":"Social2×4 + economic2×4 + one other4"}, totalMarks: 20,
+    rows: [
+    { id: "social", kind: "criterion", verbatim: "social", marks: 8, contextNote: "Social: increase in one-parent families; large families; social problems - drugs and gambling; cycle of poverty; poverty trap; social policy; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "economic", kind: "criterion", verbatim: "economic", marks: 8, contextNote: "Economic: economic recession and unemployment; increase in the cost of living; lack of education & low income; housing costs and shortages; dependency on low state benefits; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "other", kind: "criterion", verbatim: "1 other", marks: 4, contextNote: "One ADDITIONAL point from either required heading. Social: increase in one-parent families; large families; social problems - drugs and gambling; cycle of poverty; poverty trap; social policy; etc. Economic: economic recession and unemployment; increase in the cost of living; lack of education & low income; housing costs and shortages; dependency on low state benefits; etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q3aiv", topicId: "home-economics-3-9", conceptId: "sc-q3aiv",
+    section: "C", questionRef: "2016 HL Section C E3 Q3(a)(iv)",
+    stem: "There are 755,570 people living in poverty in Ireland. This is a rise of 55,000 since 2011, over 23,000 of these are children. (Social Justice Ireland, November 2015)",
+    questionText: "Name and give details of one voluntary organisation which works to alleviate poverty in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"Name2 + details2×4"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "anyN", verbatim: "Name", marks: 2, contextNote: "Choose ONE voluntary organisation consistently.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Society of St Vincent de Paul","Focus Ireland","Simon Community"]} },
+    { id: "details", kind: "criterion", verbatim: "Details", marks: 8, contextNote: "Two details about the SAME organisation. The original supplies only three names and no detailed model account. Complete original named pool: Society of St Vincent de Paul; Focus Ireland,;Simon Community; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q3bi", topicId: "home-economics-3-10", conceptId: "sc-q3bi",
+    section: "C", questionRef: "2016 HL Section C E3 Q3(b)(i)",
+    stem: "Education has a direct effect on the overall development of the child and on the adult they will become.",
+    questionText: "Discuss the role of education in the social, emotional and intellectual development of children in their formative years.",
+    tariffModel: {"kind":"fixed","notation":"Three required development headings×6"}, totalMarks: 18,
+    rows: [
+    { id: "development-1", kind: "criterion", verbatim: "Social", marks: 6, contextNote: "Social: socialisation teaches children how to behave in a manner that is accepted in society; cultural values and religious beliefs can be passed on through socialisation; the hidden curriculum in schools teaches responsibility through punctuality, school rules; achievement awards; respect for authority; leadership; sharing and team work; reinforces social skills taught by parents; etc.", permittedMarks: [0,6] },
+    { id: "development-2", kind: "criterion", verbatim: "Emotional", marks: 6, contextNote: "Emotional: interaction with other children & adults, empathy; children are taught that it is normal to respond emotionally to a particular event – e.g. crying when upset or in pain; they are taught to be sensitive to others; etc.", permittedMarks: [0,6] },
+    { id: "development-3", kind: "criterion", verbatim: "Intellectual", marks: 6, contextNote: "Intellectual: language development, reading, numeric skills; music, artistic skills; provision is made for children with learning difficulties to be integrated and catered for in schools; etc.", permittedMarks: [0,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q3bii", topicId: "home-economics-3-10", conceptId: "sc-q3bii",
+    section: "C", questionRef: "2016 HL Section C E3 Q3(b)(ii)",
+    stem: "Education has a direct effect on the overall development of the child and on the adult they will become.",
+    questionText: "Name and give details of one statutory education initiative provided for pre-school children.",
+    tariffModel: {"kind":"fixed","notation":"Name4 + details2×4"}, totalMarks: 12,
+    rows: [
+    { id: "name", kind: "point", verbatim: "The Early Start Programme", marks: 4 },
+    { id: "details", kind: "criterion", verbatim: "Details", marks: 8, contextNote: "Use the SAME initiative. Original historical 2016 eligibility, timetable and conditions retained. The Early Start Programme: community-based initiative for 3-4year olds in disadvantaged areas; funded, managed & evaluated by Department of Education & Skills; the aim is to provide children with a positive start in education, to prevent future school failure & improve overall development of students from socially disadvantaged areas; it is a one year project, offered for 2½ hours a day; taught by primary school teachers, childcare assistants & parents; curriculum consists of – language, cognitive, social & personal development; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "initiative-1",
+                "label": "The Early Start Programme",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "The Early Start Programme",
+                            "marks": 4
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Use the SAME initiative. Original historical 2016 eligibility, timetable and conditions retained. The Early Start Programme: community-based initiative for 3-4year olds in disadvantaged areas; funded, managed & evaluated by Department of Education & Skills; the aim is to provide children with a positive start in education, to prevent future school failure & improve overall development of students from socially disadvantaged areas; it is a one year project, offered for 2½ hours a day; taught by primary school teachers, childcare assistants & parents; curriculum consists of – language, cognitive, social & personal development; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "initiative-2",
+                "label": "The Early Childhood Care and Education (ECCE) Scheme",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "The Early Childhood Care and Education (ECCE) Scheme",
+                            "marks": 4
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Use the SAME initiative. Original historical 2016 eligibility, timetable and conditions retained. The Early Childhood Care and Education (ECCE) Scheme: this scheme provides free early childhood care and education for children of pre-school age; children are eligible for the scheme if over 3 years and not older than 5 years; can enrol at 3 different points in the year – September, January, April in the school year; attend 3 hours a day 5 days a week; pay for any extra hours; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-initiative",
+                "label": "Another valid statutory pre-school initiative",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "Choose ONE initiative consistently; both original historical models remain available."
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 8,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8
+                            ],
+                            "contextNote": "Two details of the SAME initiative. No additional model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q3ci", topicId: "home-economics-3-11", conceptId: "sc-q3ci",
+    section: "C", questionRef: "2016 HL Section C E3 Q3(c)(i)",
+    stem: "Gender roles are defined by the socio-cultural norms of any society.",
+    questionText: "Describe how gender roles have changed within the contemporary family and outline the effect on family members.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "gender roles", marks: 15, contextNote: "Cover BOTH changes and effects on family members within the THREE points; no separate quota is printed. Complete original source guidance: traditional segregated roles changing as women in paid employment; egalitarian relationships although women bear most of the responsibility for childcare; egalitarian division of labour especially among younger couples; control of family finances done jointly now; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Higher Level — © State Examinations Commission.",
+    id: "he-2016-hl-sc-q3cii", topicId: "home-economics-3-11", conceptId: "sc-q3cii",
+    section: "C", questionRef: "2016 HL Section C E3 Q3(c)(ii)",
+    stem: "Gender roles are defined by the socio-cultural norms of any society.",
+    questionText: "Discuss the impact of dual earner families on family life with reference to: • role overload • role conflict.",
+    tariffModel: {"kind":"fixed","notation":"Role overload5 + role conflict5 + one other5"}, totalMarks: 15,
+    rows: [
+    { id: "overload", kind: "criterion", verbatim: "role overload", marks: 5, contextNote: "role overload individual attempts to play several roles at one time; reduced leisure time; increased stress and tension between spouses and other members of the family; difficult to find time to do both roles; can interfere with promotion prospects at work; no available time to care for the more vulnerable members of the family; women suffer more than men as childcare primarily falls to women; etc.", permittedMarks: [0,5] },
+    { id: "conflict", kind: "criterion", verbatim: "role conflict", marks: 5, contextNote: "role conflict when the expectations of a person in one role clash with what is expected in another role, i.e. sick child v work; conflict balancing work and home activities; work or family has to be prioritised; may cause competition between spouses/partners; one partner/spouse may feel the other is not supportive in their job; juggling home maker and participant in the workforce; creates stressful situations; conflict as to whom is contributing most to the family; etc.", permittedMarks: [0,5] },
+    { id: "other", kind: "criterion", verbatim: "dual earner families", marks: 5, contextNote: "One ADDITIONAL point from either required heading; three points in total, no fixed two-per-heading quota. Complete original guidance: role overload individual attempts to play several roles at one time; reduced leisure time; increased stress and tension between spouses and other members of the family; difficult to find time to do both roles; can interfere with promotion prospects at work; no available time to care for the more vulnerable members of the family; women suffer more than men as childcare primarily falls to women; etc. role conflict when the expectations of a person in one role clash with what is expected in another role, i.e. sick child v work; conflict balancing work and home activities; work or family has to be prioritised; may cause competition between spouses/partners; one partner/spouse may feel the other is not supportive in their job; juggling home maker and participant in the workforce; creates stressful situations; conflict as to whom is contributing most to the family; etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];
