@@ -435,7 +435,8 @@ def attach_language_rule(cards, scheme):
         language_task = (unit in ('C1', 'C2', 'SE', 'GW') or
                          (unit == 'LA1' and (card['year'] == 2026 or card['id'].endswith('-i'))) or
                          (unit == 'LA2' and card['year'] in (2022, 2024, 2025) and card['id'].endswith('-i')) or
-                         (unit == 'GR' and card['year'] in (2022, 2024, 2025)))
+                         (unit == 'LA2' and card['year'] == 2023 and card['id'].endswith('-ii')) or
+                         (unit == 'GR' and card['year'] in (2022, 2023, 2024, 2025)))
         if language_task:
             card['answerLanguageRule'] = {'otherLanguageMultiplier': 0, 'sourceText': source, 'schemePages': [3]}
             if unit in ('C1', 'C2'):

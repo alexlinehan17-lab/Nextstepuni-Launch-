@@ -26,6 +26,8 @@ def claims(card):
                 yield row['verbatim']
         return
     rubric = card['rubric']
+    if rubric.get('allocationCap'):
+        yield rubric['allocationCap']['sourceText']
     for group in rubric.get('groups', []):
         for row in group['rows']:
             yield from row['text'].split(' — ')
@@ -49,7 +51,8 @@ def verify(cards=None):
         level = 'hl' if card['level'] == 'higher' else 'ol'
         with open_scheme(card['year'], level) as document:
             pages = sorted(set(card['review']['schemePages'] + card['review'].get('guidancePages', [])
-                               + card.get('answerLanguageRule', {}).get('schemePages', [])))
+                               + card.get('answerLanguageRule', {}).get('schemePages', [])
+                               + card.get('rubric', {}).get('allocationCap', {}).get('schemePages', [])))
             versions = ['\n'.join(document[p-1].get_text(sort=sort) for p in pages) for sort in (False,True)]
             sources = [normal(version) for version in versions]
         # Some schemes expressly accept details from their original passage

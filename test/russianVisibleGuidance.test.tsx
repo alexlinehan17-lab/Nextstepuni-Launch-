@@ -13,6 +13,18 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('shows the 2023 hockey-only limit and preserves all listed details',async()=>{
+    reveal('l4-3','hl',2023);
+    await waitFor(()=>expect(screen.getByText(/Candidates must mention at least two hobbies/)).toBeVisible());
+    expect(screen.getByText('Trained in Czech Republic for a year')).toBeVisible();
+    expect(screen.getByText('Injured at 16')).toBeVisible();
+  });
+  it('shows why the 2023 grammar phrase contains two priced forms',async()=>{
+    reveal('gr','hl',2023);
+    await waitFor(()=>expect(screen.getByText(/The paper has 14 bracketed gaps/)).toBeVisible());
+    expect(screen.getByText('Олимпийском')).toBeVisible();
+    expect(screen.getByText('музеe')).toBeVisible();
+  });
   it('shows the 2010 Russian-only listening condition and keeps fractional full/partial awards',async()=>{
     reveal('l1-1-ii','ol',2010);
     await waitFor(()=>expect(screen.getByText(/Isolated Russian words or expressions do not reduce credit/)).toBeVisible());

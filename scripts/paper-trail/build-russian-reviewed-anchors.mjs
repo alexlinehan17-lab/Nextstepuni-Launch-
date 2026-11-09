@@ -47,4 +47,32 @@ for (const fileid of new Set(sources.map(source => `${source.year}/${source.pape
   write(`public/paper-anchors/${fileid}.json`,map);
 }
 fs.writeFileSync(path.join(ROOT,tagPath),JSON.stringify(tags,null,1)+'\n');
+// Keep the generated index's answer chips in sync with these reviewed maps.
+// Preserve every unrelated subject and every unchanged Russian line verbatim.
+const indexPath = path.join(ROOT, 'paperTrailData.ts');
+const indexText = fs.readFileSync(indexPath, 'utf8');
+const marker = '\n  "russian": [\n';
+const start = indexText.indexOf(marker) + marker.length;
+const end = indexText.indexOf('\n  ],', start);
+if (start < marker.length || end < start) throw new Error('Russian index block missing');
+const reviewedFiles = new Set(sources.map(source => `${source.year}|${source.level}|${source.paperFileid}`));
+const spacedJson = value => Array.isArray(value) ? `[${value.map(spacedJson).join(', ')}]`
+  : value !== null && typeof value === 'object'
+    ? `{${Object.entries(value).map(([key, item]) => `${JSON.stringify(key)}: ${spacedJson(item)}`).join(', ')}}`
+    : JSON.stringify(value);
+const indexRows = indexText.slice(start, end).split('\n').map(line => {
+  const raw = line.trim();
+  const comma = raw.endsWith(',');
+  const entry = JSON.parse(comma ? raw.slice(0, -1) : raw);
+  if (entry.lang !== 'ev' || (entry.sitting && entry.sitting !== 'main')) return line;
+  let changed = false;
+  for (const paper of entry.papers) {
+    if (paper.scheme && reviewedFiles.has(`${entry.year}|${entry.level}|${paper.doc.f}`) && paper.answers !== 1) {
+      paper.answers = 1;
+      changed = true;
+    }
+  }
+  return changed ? `    ${spacedJson(entry)}${comma ? ',' : ''}` : line;
+}).join('\n');
+fs.writeFileSync(indexPath, indexText.slice(0, start) + indexRows + indexText.slice(end));
 console.log(`Russian Atlas: ${sources.length} reviewed tasks linked to original question and scheme pages.`);
