@@ -3663,6 +3663,131 @@
         ],
         "testCorrection": "Scoped test types caught an invalid L1 section discriminator. Replaced with all five exact announcement IDs and verified nonempty scope/full instructions; all11 focused sitting cases, scoped types, lint and build passed afterward. No source change or weakened assertion."
       }
+    },
+    {
+      "year": 2016,
+      "level": "ordinary",
+      "reviewedAt": "2026-11-09",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "auralPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "independentPracticeTasks": 73,
+      "writtenTasks": 34,
+      "listeningTasks": 39,
+      "printedWrittenMarks": 220,
+      "printedListeningMarks": 100,
+      "allAlternativePracticeMarks": 320,
+      "newCards": 73,
+      "correctedCards": 0,
+      "previousIdsPreserved": 199,
+      "fullSizeTariffPages": [
+        3,
+        4,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14
+      ],
+      "sourceReview": "complete; total-only dialogue scoring limitation retained",
+      "diagnosedReaderIssues": [
+        "IR1(v) explicitly prints answer4 on original scheme physicalp3, y773.90–785.90. Earlier absent-answer finding was incorrect. Extraction is bound to793 to include the whole answer glyph and excludefooter1 at795.09, with mandatory exact question/answer and bounds regression. Prior775 boundary cuts the glyph box, but current PyMuPDF retains overlapping text; exact historical omission cause is unestablished. No passage-derived answer.",
+        "Three handwriting phrases carry3 each with half-mark deductions for incorrectly formed letters, repeated errors not deducted again, plus one global joining mark. Missing initial loop/dot condition caps joining atzero. Exact source says assess what is written even if the phrase is not correct; no handwritten exemplar invented.",
+        "IR2 pool dimensions use two complete answer variants, so length and width cannot be mixed across pools. Four one-mark classification answers sit within the printed IR2 total; all twenty two-mark matching answers retained.",
+        "All three dialogue interviews are mandatory, with ten actual printed gaps. First interview question4 is already complete. Published20 has no per-gap tariff: all exact answers are visible but numeric self-scoring remains unavailable, without inferred2pergap.",
+        "CD number and sisters are explicitly one mark each. Finishing fourth class versus fourth-class-only partial, and dance versus belly-dance partial, retain source distinctions without full+partial double credit.",
+        "Two-sisters and actor cross-question conditions stay visible; learners must not claim information already rewarded in the named earlier question.",
+        "Listening date/place pools retain explicit full2/partial1 groups. Song-title and worldwide-hit partials stay in their full concept. Other plus-separated accepted details remain independent under original quotas; slash alternatives stay in one printed option.",
+        "All39 listening tasks retain the printed2-per-detail allocation and Russian-answer/non-invalidating-excess exceptions. No written language penalty inherited.",
+        "Cultural writing retains two chosen topics, each content12/coherence3; extended writing uses source content12/expression12/coherence6 with no later-year expression cap or invented model answer.",
+        "Listening primary topics were reviewed against each actual prompt and canonical Russian curriculum labels; target-language-material remains an additional topic."
+      ],
+      "independentReview": {
+        "reviewers": [
+          "Codex coordinator"
+        ],
+        "findings": [
+          "Independently detected and verified original IR1(v) answer4 and its separate footer bounds; Russian worker reproduced original full-page visual and extraction evidence."
+        ]
+      },
+      "validation": {
+        "status": "source-reviewed and validated; dialogue numeric-scoring limitation remains explicit",
+        "sourceSlicesVerified": 380,
+        "combinedSourceSlicesVerified": 9836,
+        "mandatoryOriginalAndSyntheticSourceTestsPassed": 28,
+        "focusedAndSharedTestsPassed": 103,
+        "requiredTestsPassed": 550,
+        "russianCoverageTestsPassed": 3,
+        "appTypecheck": "passed",
+        "scopedTestTypecheck": "passed",
+        "targetedLint": "passed",
+        "productionBuild": "passed",
+        "productionBuildSeconds": 38.05,
+        "deterministicRegenerations": 2,
+        "all1001PriorReviewedCardsUnchanged": true,
+        "all1001PriorAuthoredRecordsUnchanged": true,
+        "otherSubjectsPreserved": true,
+        "decodedNonRussianAtlasPreserved": true,
+        "nonRussianIndexBytesPreserved": true,
+        "sittingOpenTasks": 0,
+        "sittingExcludedTasks": 0,
+        "sittingOrphans": 0,
+        "browserQa": "pending; native browser QA belongs to root integration",
+        "sourceLimitation": "SD: source supplies20 for all three interviews but no per-gap allocation. Ten answers and the exact limitation are visible; numeric self-scoring is unavailable, without invented2-per-gap marks.",
+        "testCorrections": [
+          "Original-answer regression retains exact question→4 and complete glyph/footer bounds; removed an untrue assumption that the older775 crop invariably omits overlapping text under current PyMuPDF. The source answer is unchanged and independently verified.",
+          "Two rendered tests corrected to select the original answer route before revealing and to await the existing answer animation. All57 sitting/visible-guidance cases passed, then all550 required tests passed."
+        ],
+        "interruptionRecovery": "Transient ENOSPC opening a log: all JSON parsed and all1001 prior authored records proved intact before rerunning the entire mandatory source/initial gate. Full production build ran after disk preflight and safe download-cache cleanup; no reduced build."
+      }
     }
   ]
 }
