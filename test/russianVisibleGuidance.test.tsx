@@ -13,6 +13,43 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('shows fractional 2016 handwriting controls and the global joining condition',async()=>{
+    reveal('la1','ol',2016);
+    await waitFor(()=>expect(screen.getByRole('button',{name:'Set For everyday life to 2.5 marks'})).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'Set For everyday life to 2.5 marks'}));
+    fireEvent.click(screen.getByRole('button',{name:'Set Joining letters together to 1 marks'}));
+    await waitFor(()=>expect(screen.getByText(/placement is 3.5 of 10 marks/)).toBeVisible());
+    fireEvent.click(screen.getByRole('checkbox',{name:/Where candidates omit the loop/}));
+    await waitFor(()=>expect(screen.getByText(/placement is 2.5 of 10 marks/)).toBeVisible());
+    expect(screen.getByText(/Do not penalise for repeat errors/)).toBeVisible();
+  });
+  it('resets 2016 dimensions when changing the chosen pool',async()=>{
+    const card=REVIEWED_CARDS.find(c=>c.id==='ru-2016-ol-ir2-v');
+    if(!card)throw new Error('Missing pool card');
+    render(<SessionScreen cards={[card]} subjectLabel="Russian" onGrade={vi.fn()} onFinish={vi.fn()} onExit={vi.fn()} />);
+    fireEvent.click(screen.getByRole('button',{name:'Big pool'}));
+    fireEvent.click(screen.getByRole('button',{name:'Reveal the marking scheme'}));
+    fireEvent.click(screen.getByRole('button',{name:'Award 2 marks for length: 50 m'}));
+    await waitFor(()=>expect(screen.getByText(/You claimed 2 of 4 marks/)).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'kids’ pool'}));
+    expect(screen.getByRole('button',{name:'Award 2 marks for length: 10m'})).toHaveAttribute('aria-pressed','false');
+    expect(screen.queryByRole('button',{name:'Award 2 marks for length: 50 m'})).not.toBeInTheDocument();
+    expect(screen.getByText(/do not combine dimensions from different pools/)).toBeVisible();
+  });
+  it('shows the 2016 whole-exercise dialogue limit and already-complete question',async()=>{
+    reveal('sd','ol',2016);
+    await waitFor(()=>expect(screen.getByText(/Complete all three interviews/)).toBeVisible());
+    expect(screen.getByText(/numeric self-scoring is unavailable/)).toHaveTextContent('Question 4 in the first interview is already complete');
+    await waitFor(()=>expect(screen.getByText('скольки/ скольких')).toBeVisible());
+  });
+  it('shows both the 2016 Russian exception and the repeated-information condition',async()=>{
+    reveal('cd-2-i','ol',2016);
+    await waitFor(()=>expect(screen.getByText(/only if it was not already rewarded in Q1\(i\)/)).toBeVisible());
+    expect(screen.getByText(/Marking scheme page 3: Do not penalise answers supplied in Russian/)).toBeVisible();
+    cleanup();reveal('l4-4-ii','ol',2016);
+    await waitFor(()=>expect(screen.getByText(/only if it was not already rewarded in Q1\(iii\) or Q3\(i\)/)).toBeVisible());
+    expect(screen.getByText(/If an answer is written entirely in Russian/)).toHaveTextContent('do not penalise');
+  });
   it('applies the actual 2015 employment-reference cap and restores selected answers',async()=>{
     reveal('l3-1','hl',2015);
     await waitFor(()=>expect(screen.getByRole('button',{name:'Answer 4'})).toBeVisible());

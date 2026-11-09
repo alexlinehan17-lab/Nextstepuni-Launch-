@@ -11,6 +11,27 @@ from pathlib import Path
 
 
 def reviewed_keys(year, level):
+    if (year, level) == (2016, 'ol'):
+        # Independent 44-page visual census: 34 written and 39 listening.
+        # Handwriting IR1(i) is LA1; language awareness contributes4 inside IR2.
+        root = Path(__file__).resolve().parents[3] / 'examiner-reports/russian'
+        for relative, digest in {
+            'papers/2016-ol-000-paper.pdf':'c664fa1ab4abdf8fc3eaec74dbde93201a196141aba9deb2b04744d3d048c7f8',
+            'papers/2016-ol-A00-paper.pdf':'b40b68b3174a9a4191343d4b01a7dc257730fc3df790c5f48a00b65e6dfe7ee4',
+            'schemes/2016-ol.pdf':'4242b1be879b2ff9973f75aabf3135478afe1e59b098d2c694ff581d1ce84616',
+        }.items():
+            assert hashlib.sha256((root / relative).read_bytes()).hexdigest() == digest
+        keys=[('IR1',None,None,r) for r in ('ii','iii','iv','v','vi','vii','viii','ix')]
+        keys += [('IR2',None,None,r) for r in ('i','ii','iii','iv','v','vi','vii')]
+        keys += [('CD',q,None,r) for q in (1,2,3,4) for r in (('i','ii','iii','iv') if q==4 else ('i','ii','iii'))]
+        keys += [(u,None,None,None) for u in ('LA1','LA2','MM','SD','SA','EW')]
+        assert len(keys)==34
+        keys += [('L1',q,None,r) for q in (1,2,3,4) for r in (('i','ii') if q==4 else ('i','ii','iii'))]
+        keys += [('L2',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,None),(3,'i'),(3,'ii'),(3,'iii'),(3,'iv')]]
+        keys += [('L3',q,None,r) for q,rs in [(1,('i','ii','iii','iv')),(2,('i','ii','iii')),(3,('i','ii'))] for r in rs]
+        keys += [('L4',q,None,r) for q,rs in [(1,('i','ii','iii','iv')),(2,('i','ii','iii')),(3,('i','ii')),(4,('i','ii','iii'))] for r in rs]
+        assert len(keys)==len(set(keys))==73
+        return set(keys)
     if (year, level) == (2015, 'hl'):
         # Original 44-page visual census: 44 printed asks. The two L3 Q3
         # leaves share one published eight-mark task, hence 43 cards.
