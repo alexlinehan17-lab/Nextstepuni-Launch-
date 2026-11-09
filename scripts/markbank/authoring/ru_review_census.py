@@ -11,6 +11,26 @@ from pathlib import Path
 
 
 def reviewed_keys(year, level):
+    if (year, level) == (2022, 'ol'):
+        # Independent53-page sweep. Adjusted175written+100listening;
+        # all practice alternatives305. Each complete choice pool is one task.
+        root = Path(__file__).resolve().parents[3] / 'examiner-reports/russian'
+        for relative, digest in {
+            'papers/2022-ol-000-paper.pdf':'a706a1a3b4a1898ebe170609a5b699388178b8dd45461a60a546e4381b8882cd',
+            'papers/2022-ol-A00-paper.pdf':'ed8dc696911237310a16ce4e7ed7bc2c16381aecf33ecc78fc976469119796fd',
+            'schemes/2022-ol.pdf':'184ff292e15bf7702b94bdb4e7626d7bfb538bfb948bed4c85ae4efe01df7399',
+        }.items():
+            assert hashlib.sha256((root / relative).read_bytes()).hexdigest() == digest
+        keys=[('IR1',q,None,None) for q in range(1,7)]
+        keys += [('IR2',1,None,r) for r in ('i','ii','iii','iv')]
+        keys += [('CD',q,None,r) for q,romans in [(1,(None,)),(2,('i','ii')),(3,(None,)),(4,('i','ii')),(5,(None,)),(6,(None,))] for r in romans]
+        keys += [(unit,None,None,None) for unit in ('LA1','LA2','MM','SD','SA','EW')]
+        assert len(keys)==24
+        keys += [(unit,q,None,r) for unit in ('L1','L2') for q,r in [(1,None),(2,None),(3,'i'),(3,'ii'),(4,None)]]
+        keys += [('L3',q,None,None) for q in (1,2,3,4)]
+        keys += [('L4',q,None,r) for q,r in [(1,None),(2,'i'),(2,'ii'),(3,None)]]
+        assert len(keys)==len(set(keys))==42
+        return set(keys)
     if (year, level) == (2022, 'hl'):
         # Independent51-page sweep (16written+8aural+27scheme). Adjusted
         # choice:170written+80listening; all practice alternatives320.
