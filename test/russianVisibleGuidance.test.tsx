@@ -13,6 +13,14 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('shows the unresolved 2024 Ordinary eight-lesson price discrepancy',async()=>{
+    reveal('l3-2','ol',2024);
+    const note=screen.getByText(/The answer list on marking scheme page 17 prints/);
+    await waitFor(()=>expect(note).toBeVisible());
+    expect(note).toHaveTextContent('80 000roubles');
+    expect(note).toHaveTextContent('8,000 roubles for 8 lessons');
+    expect(note).toHaveTextContent('recording has not been used to adjudicate');
+  });
   it('shows both listening exceptions and the complete 2024 viewing-time answers',async()=>{
     reveal('l1-2-ii','hl',2024);
     await waitFor(()=>expect(screen.getByText('There is no penalty for excess material which does not invalidate the answer.')).toBeVisible());
