@@ -478,5 +478,75 @@
     "alt": "Original bar chart: Retail Dairy Market in Republic of Ireland 2009. Milk 39%, Yogurts 26%, Cheese 18%, Cream and fats 17%. Complete four bars, percentage axis, product labels, title, legend and NDC source caption retained. The paper excludes independent/doorstep sales.",
     "attribution": "SEC Home Economics 2011 Higher Level examination paper, page 6 — © State Examinations Commission.",
     "sourceNote": "Original PDF crop, bounds [90, 185, 530, 458], rendered at 2×. SHA256 54dbc2dad72cd8ead1b72b41a79c86b786083229487d436c32c0a573c04d4085."
+  },
+  "home-economics-2011-ol-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sa-q1.png",
+    "md5": "87ec6e920eab65a5cf34af6844842164",
+    "alt": "Original carbohydrate matching table and printed classification choices. Sources: cellulose e.g. vegetables, glucose e.g. fruit, sucrose e.g. table sugar; blank Classification column.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 138.7676544189453, 570.219970703125, 354.8876647949219], rendered at 2×. SHA256 9ff71592ac34c53ae4f015ac0fb9da8aed6c68ce32f3cb8f9d6043e649ab9f03."
+  },
+  "home-economics-2011-ol-sa-q3": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sa-q3.png",
+    "md5": "b43380d377645ba32dcb46fb69916df3",
+    "alt": "Original B-vitamin cloze with all three complete sentences and the printed word bank: folic acid, thiamine, energy.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 506.6875915527344, 570.219970703125, 690], rendered at 2×. SHA256 ba9c0fc2d12cb295078c8e1abebe8ade7db957e7f6dda716e4902bed5951abbf."
+  },
+  "home-economics-2011-ol-sa-q4": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sa-q4.png",
+    "md5": "8cb17e3d2adb5df03fdadb11891f86ef",
+    "alt": "Original three-statement True/False table: osteoporosis, lacto-vegetarian dairy produce, and cholesterol transport; both response columns retained.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 570.219970703125, 247.60768127441406], rendered at 2×. SHA256 7183dfd5f33d692ffd475c7cd556e44cd2a75189a48363721d3f7706183c4630."
+  },
+  "home-economics-2011-ol-sa-q5": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sa-q5.png",
+    "md5": "c38abd229e015e65d8cf82f751dfa4cb",
+    "alt": "Original preservation-function matching table and word bank: pectin, blanching, sugar and vinegar; all three function rows retained.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 247.60768127441406, 570.219970703125, 463.6676940917969], rendered at 2×. SHA256 97f6271ec781bede56a8cdfb82d573e6b4529e24d87e2e4b0e833b4673f08a14."
+  },
+  "home-economics-2011-ol-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sa-q6.png",
+    "md5": "42f7248fc4c335c1d5f0cdcca5eaf806",
+    "alt": "Original raising-agent question, all three dish rows Bread / Sponge Cake / Muffins, blank Raising Agents column, and dependent underlying-principle prompt.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 463.6676940917969, 570.219970703125, 793.19189453125], rendered at 2×. SHA256 5e7c0977cfb5cabef00a1c8a81c97c8b13374f82726b521ba91a3f918287a5c9."
+  },
+  "home-economics-2011-ol-sa-q9": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sa-q9.png",
+    "md5": "c67f6ed5605c9b8a4d1fbf861e32955f",
+    "alt": "Original appliance energy label and question. Complete A–G efficiency scale, large A rating arrow, energy and washing/spinning performance, capacity, water and noise rows, and EU logo retained.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 440.1476745605469, 570.219970703125, 793.2518920898438], rendered at 2×. SHA256 9401a7b4ac2e6cc7695417531a0b7b7aa70ec18cfb77f31353761138c93f851d."
+  },
+  "home-economics-2011-ol-sb-q1-fish": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sb-q1-fish.png",
+    "md5": "7cce1c158b77d91082ccfef0aadc0a61",
+    "alt": "Original nutrition table per 100 g for Cod and Salmon. Protein 18.3 g/20.2 g; fat 0.7 g/11.0 g; carbohydrate 0 g/0 g; cod minerals Iron, Phosphorus, Iodine; salmon minerals Phosphorus, Calcium, Iodine; vitamins B group / A,D,B group; energy 80 kcal/180 kcal. Complete headings, units and both rows retained.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [82, 145, 545, 311], rendered at 2×. SHA256 dc09a72e256ab40ae6dff839b984dd07941d8b51416ce822d26bf18ca13d30c4."
+  },
+  "home-economics-2011-ol-sb-q2-fruit": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sb-q2-fruit.png",
+    "md5": "ae2b924db1bb5a8e0487310574596542",
+    "alt": "Original fooddudes.ie chart: More portions of fruit & veg being eaten in the HOME (%). All six paired bar categories None, One, Two, Three, Four, Five; black children and grey parents legend; full percentage axis 0–35; title and source caption retained. Bars carry no exact printed value labels.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [125, 105, 520, 365], rendered at 2×. SHA256 0c0f8c0e1e04ad8076fc7a3ba45c4e6d37ea46cc1f0e54f7e099ee21a6a4248d."
+  },
+  "home-economics-2011-ol-sc-q1-houses": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sc-q1-houses.png",
+    "md5": "a850659995d2e43dd4b8b011b17bedae",
+    "alt": "All three original housing-style photographs: a multi-storey apartment building, a detached single-storey house and adjoining two-storey houses. Complete images retained, without redrawing or invented labels.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [100, 176, 470, 322], rendered at 2×. SHA256 2dc83fa800e25bd3be2f336a572db47a74e3143820482be41d3aa69b3d95d344."
+  },
+  "home-economics-2011-ol-sc-q3-poverty": {
+    "src": "/exam-figures/home-economics/home-economics-2011-ol-sc-q3-poverty.png",
+    "md5": "46b4951b38f5d9620fd94bcabcf03cda",
+    "alt": "Original Poverty in Ireland 2008 table. Consistent Poverty 4.2% (178,074 people); At Risk of Poverty 14.4% (610,538 people); footnote also known as relative poverty. Complete title, two rows and footnote retained.",
+    "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 11 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [145, 133, 475, 238], rendered at 2×. SHA256 9302ae8cd75191d0e9fc731229e309efcde763f3f2e80e3034670f8f2ac33527."
   }
 }
