@@ -1399,13 +1399,13 @@ def census_sections(subject, year, level, files=None):
                 # A part marker can extract with a stray space, '(C )' in the
                 # 2026 OL Section 2 paper, which hid its (C) under (B).
                 block = re.sub(r'\(([A-H]) \)', r'(\1)', block)
-            if subject == 'home-economics' and year == 2010 and level in ('hl', 'ol'):
+            if subject == 'home-economics' and (year == 2010 and level in ('hl', 'ol') or (year, level) == (2011, 'hl')):
                 # The reviewed combined booklet merges its answer rules and
                 # next question into one PDF block. Quoted B heads follow a
                 # parenthesised tariff or a full stop; C's rubric precedes the elective
                 # in that same block. Preserve source text while exposing
                 # those real boundaries (paper pp2–5, 8–11). This is scoped
-                # to the two independently swept 2010 levels, not other years.
+                # to the independently swept 2010 levels and 2011 Higher only.
                 block = re.sub(r'(?<=_)\s+(?=\d{1,2}\.\s+)', '\n', block)
                 block = re.sub(r'(?<=[.)])\s+(?=\d{1,2}\.\s+[A-Z‘])', '\n', block)
                 block = re.sub(r'\s+(?=Elective\s+\d\b)', '\n', block)
@@ -1420,8 +1420,14 @@ def census_sections(subject, year, level, files=None):
                               r'|\s+(?=\d{1,2}\.\s+\([a-z]\)\s+[A-Z])'
                               r'|(?<=\d)\s+(?=\d{1,2}\.\s+[A-Z][a-z]+\s)', block)
                       if subject == 'business' else block.split('\n')
-                      if subject == 'home-economics' and year == 2010 and level in ('hl', 'ol') else [block])
+                      if subject == 'home-economics' and (year == 2010 and level in ('hl', 'ol') or (year, level) == (2011, 'hl')) else [block])
             for text in (part for chunk in chunks for part in PP.INLINE_QHEAD.split(chunk)):
+                if (subject, year, level) == ('home-economics', 2011, 'hl'):
+                    # A's roman markers label answer spaces, including the
+                    # two pictured symbols in Q12; they carry no prose asks.
+                    # Preserve the whole question rather than an empty (i).
+                    text = re.sub(r'\((?:i{1,3}|iv)\)\s*(?=_{3,})', '', text)
+                    text = re.sub(r'_{3,}', '', text)
                 if subject == 'business':
                     # Roman labels beside empty ruled answer slots are not
                     # independent printed asks. Keep actual roman prose.
@@ -1591,7 +1597,7 @@ def census_sections(subject, year, level, files=None):
                          # its ruled roman blanks are correctly discarded.
                          # Those real question stems still establish A before
                          # B begins. Cover rubrics have no such question stem.
-                         or ((subject, year, level) == ('home-economics', 2010, 'ol')
+                         or ((subject, year, level) in {('home-economics', 2010, 'ol'), ('home-economics', 2011, 'hl')}
                              and any(k[0] == section for k in stems))):
                 section, q, letter, roman = sh.group(1), None, None, None
             # 'Section 2 Applied Business Question 80 marks' is one block —

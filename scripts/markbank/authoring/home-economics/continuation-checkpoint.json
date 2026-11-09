@@ -10,12 +10,12 @@
   "currentCounts": {
     "subject": "home-economics",
     "mode": "sections",
-    "cards": 938,
-    "leaves": 1401,
-    "covered": 897,
+    "cards": 986,
+    "leaves": 1424,
+    "covered": 944,
     "excluded": 0,
-    "open": 504,
-    "coveragePct": 64.0,
+    "open": 480,
+    "coveragePct": 66.3,
     "orphans": [],
     "unparsed": [],
     "staleExclusions": [],
@@ -42,35 +42,10 @@
         "year": 2011,
         "level": "hl",
         "paper": null,
-        "leaves": 24,
-        "covered": 0,
+        "leaves": 47,
+        "covered": 47,
         "excluded": 0,
-        "open": [
-          "Section A Q1",
-          "Section A Q12(i)",
-          "Section A Q2",
-          "Section A Q5",
-          "Section A Q7",
-          "Section A Q9",
-          "Section B Q1(a)",
-          "Section B Q1(b)",
-          "Section B Q1(c)",
-          "Section B Q1(d)",
-          "Section B Q2(a)",
-          "Section B Q2(b)",
-          "Section B Q2(c)",
-          "Section B Q3(a)",
-          "Section B Q3(b)",
-          "Section B Q3(c)",
-          "Section B Q4(a)",
-          "Section B Q4(b)",
-          "Section B Q4(c)",
-          "Section B Q5(a)",
-          "Section B Q5(b)",
-          "Section B Q5(c)(i)",
-          "Section B Q5(c)(ii)",
-          "Section B Q5(c)(iii)"
-        ]
+        "open": []
       },
       {
         "year": 2011,
@@ -869,17 +844,17 @@
         "open": []
       }
     ],
-    "censusFlags": 34,
+    "censusFlags": 33,
     "unreadPapers": []
   },
   "nextActions": [
-    "2010 Higher and Ordinary main source reviews complete:50 tasks each,627 offered marks each,20 original Atlas groups each. Continue2011 Higher (12 paper/32 scheme pages rendered; independent visual sweep next),then2011 Ordinary and2012–2020 Higher/Ordinary and any remaining published deferred material.",
+    "2011 Higher main source review complete:48 priced tasks,627 offered marks,20 preserved original Atlas groups. Continue independent2011 Ordinary visual sweep,then2012–2020 Higher/Ordinary and remaining published deferred.",
     "2023 Higher/Ordinary English main source reviews complete: 59/60 tasks. 2023 Higher deferred source review complete: 58 tasks, 749 offered practice marks, all mapped to Atlas. Browser QA pending.",
     "2022 Higher deferred source review complete: all 61 tasks (749 offered practice marks), 23 Atlas question groups, all 79 source pages independently swept. Browser QA pending.",
     "Live SEC inventory: English Home Economics deferred publications found for 2022/2023 Higher only; no subject listing for 2024/2025, and no 2026 deferred year offered. Absence is a publication finding, not proof no exam was sat.",
     "Preserve prior card identities and progress, reconcile each verified batch, integrate locally and continue. Browser QA remains pending: browser host unavailable and native Chrome is in active use."
   ],
-  "coveragePolicy": "Raw census is diagnostic only: 504 open candidates and 34 flags are not an independent count of outstanding tasks. Both 2010 sittings are source-complete after independent visual review: 50 priced tasks each, reconciled to 50 Higher and 46 Ordinary raw leaves. Whole Home Economics remains in progress.",
+  "coveragePolicy": "Raw census is diagnostic only:480 open candidates and33 flags are not an independent count of outstanding tasks. 2011 Higher is complete after independent visual review of44 source pages:48 priced tasks reconciled to47 source leaves. Whole Home Economics remains in progress.",
   "integratedBatches": [
     {
       "workCommit": "14e08691b",
@@ -998,23 +973,23 @@
     }
   ],
   "latestValidatedBatch": {
-    "scope": "2010 Ordinary main: all50 tasks, eight original figure groups, twenty original Atlas identities and portable runtime/source gate separation.",
-    "runtimeCards": 938,
-    "higher": 531,
+    "scope": "2011 Higher main:48 tasks,5 original figures,20 preserved Atlas IDs.",
+    "runtimeCards": 986,
+    "higher": 579,
     "ordinary": 407,
-    "sourceReview": "2010-ol-main-review.json",
+    "sourceReview": "2011-hl-main-review.json",
     "validation": {
-      "requiredVitest": "232 required preservation/curriculum/deck tests passed; seven Higher and seven Ordinary2010 runtime/source regressions passed at maxWorkers1. Fourteen sitting regressions rerun after closing the two printed choose-two pools.",
-      "mandatoryRawSourceGate": "Passed: python3 scripts/markbank/authoring/he_validate_2010_source_census.py. Original hashes and independently pinned50HL/46OL source keys, zero continuity flags. Evidence: tmp/he-2010-source-census-gate.json. This source gate requires the local PDF archive; normal Vitest has no Python/fitz/archive dependency and no skipped suite.",
-      "atlas": "Two targeted Home Economics registry tests passed. All50 new cards map to20 preserved original groups and canonical topics;61 tagged papers,656 physical groups,1002 registry mappings.",
+      "runtime": "232 required preservation/curriculum/deck tests plus 7 each for 2010HL,2010OL,2011HL = 253 passed at maxWorkers1. Seven 2011 regressions reran after extraction-artifact cleanup.",
+      "mandatoryRawSourceGate": "Passed: python3 scripts/markbank/authoring/he_validate_2011_source_census.py, original source hashes and 47 independently pinned keys, zero flags. Separate 2010 source gate also reran successfully. No archive/Python dependency in normal Vitest.",
+      "atlas": "Two targeted Home Economics gates passed. 61 tagged papers,664 physical groups,1002 runtime mappings; 2011HL grew from12 incomplete tagged groups to all20 preserved identities. All48 cards mapped to canonical topics.",
       "mainTypecheck": "passed",
-      "scoped2010TestTypecheck": "passed",
-      "productionBuild": "passed; own reproducible dist removed after success",
-      "cardlint": "clean",
-      "regeneration": "Two full authoring/figures/deck/Atlas/tags/showcase/landing regenerations byte-identical across33 files, including final metadata.",
-      "preservation": "All earlier authored cards, other decks, unrelated sizes/showcase subjects, tags/runtime/associations and other HE sitting censuses unchanged; frozen identity hashes unchanged.",
-      "reconciliation": "2010 Ordinary46/46 raw paper leaves covered,50 independently priced tasks,zero exclusions/orphans/continuity flags. Whole subject938 cards,897/1401 covered,504 open,zero orphans/unparsed/exclusions and34 census flags.",
-      "browser": "Pending parent integration/live QA. All eight source crops independently visually inspected."
+      "scoped2011TestTypecheck": "passed",
+      "productionBuild": "passed; removed only own untracked reproducible dist output",
+      "cardlint": "clean; all1012 authored records including withdrawals inspected",
+      "regeneration": "Passed: two full authoring/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across29 reviewed files.",
+      "reconciliation": "2011HL47/47 raw leaves covered,48 priced tasks,zero exclusions/orphans/continuity flags. Whole subject986 cards579HL/407OL;944/1424 covered,480 open,zero orphans/unparsed/exclusions,33 flags.",
+      "browser": "Pending parent integration/live QA; all five source crops visually inspected.",
+      "preservation": "All earlier authored cards, other decks, unrelated sizes/showcase subjects, unrelated tags/runtime/associations and every other Home Economics raw sitting census unchanged. Frozen identity hashes preserved."
     }
   },
   "knownExistingValidationIssues": [
