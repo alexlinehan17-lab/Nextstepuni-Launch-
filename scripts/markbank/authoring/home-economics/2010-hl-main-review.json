@@ -466,7 +466,8 @@
     "excluded": 0,
     "orphans": 0,
     "continuityFlags": 0,
-    "explanation": "Paper and scheme visual census counted12 A,18 independently priced B and20 C tasks before authoring. Raw parser A5 has two role leaves and B5(c) one combined leaf; scheme prices B5(c) importance/procedure separately, so raw and practice totals happen to agree. Three genuine PDF block boundary corrections are scoped to2010 Higher; no other sitting changes."
+    "explanation": "Paper and scheme visual census counted12 A,18 independently priced B and20 C tasks before authoring. Raw parser A5 has two role leaves and B5(c) one combined leaf; scheme prices B5(c) importance/procedure separately, so raw and practice totals happen to agree. Three genuine PDF block boundary corrections are scoped to2010 Higher; no other sitting changes.",
+    "mandatorySourceGate": "python3 scripts/markbank/authoring/he_validate_2010_source_census.py"
   },
   "validation": {
     "requiredVitest": "232 preservation/curriculum/deck tests passed; eight source tests passed.",
@@ -479,7 +480,8 @@
     "preservation": "All previous authored cards, other subject decks, shared size/showcase subjects, unrelated tags/runtime/associations and every other HE census sitting unchanged. Frozen identity hashes unchanged.",
     "visibleGuidance": "Total-only six-mark explanation, full cooking/preservation methods and will-task scope emit in row.contextNote; SessionScreen renders those notes in full. No new live browser QA claimed.",
     "reconciliation": "2010 Higher50/50 raw asks covered, no opens/exclusions/orphans. Whole subject888 cards,851/1369 covered,518 open,0orphans/unparsed/exclusions and36 census flags.",
-    "browser": "Pending parent integration/live QA; source crops independently visually inspected."
+    "browser": "Pending parent integration/live QA; source crops independently visually inspected.",
+    "testPortability": "Raw-PDF census regression moved to the mandatory explicit source gate during2010 Ordinary continuation. Seven checkout-based source/runtime regressions remain in Vitest; no corpus dependency and no whole-suite skip."
   },
   "reviewCorrections": [
     "Required tests caught a deprecated energy-topic choice; A4 now uses the existing Diet & Health node home-economics-0-1.",

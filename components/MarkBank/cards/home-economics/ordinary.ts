@@ -13166,4 +13166,1317 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sa-q1", topicId: "home-economics-0-5", conceptId: "sa-q1",
+    section: "A", questionRef: "2010 OL Section A Q1",
+    questionText: "List the four elements found in proteins.",
+    tariffModel: {"kind":"fixed","notation":"4 elements × 1"}, totalMarks: 4,
+    rows: [
+    { id: "element-1", kind: "point", verbatim: "carbon", marks: 1 },
+    { id: "element-2", kind: "point", verbatim: "hydrogen", marks: 1 },
+    { id: "element-3", kind: "point", verbatim: "oxygen", marks: 1 },
+    { id: "fourth", kind: "anyN", verbatim: "Fourth element", marks: 1, contextNote: "The source lists carbon, hydrogen and oxygen, then alternatives in the fourth answer slot.", openList: true, group: {"claimMax":1,"perOption":1,"options":["nitrogen","sulphur","iron","phosphorus"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sa-q1-sources", topicId: "home-economics-0-5", conceptId: "sa-q1-sources",
+    section: "A", questionRef: "2010 OL Section A Q1 — sources",
+    questionText: "Give one source of each of the following proteins. Animal Plant (Vegetable)",
+    tariffModel: {"kind":"fixed","notation":"2 sources × 1"}, totalMarks: 2,
+    rows: [
+    { id: "animal", kind: "anyN", verbatim: "Animal", marks: 1, openList: true, group: {"claimMax":1,"perOption":1,"options":["meat","fish","eggs","milk","cheese","yoghurt"]} },
+    { id: "plant", kind: "anyN", verbatim: "Plant (Vegetable)", marks: 1, openList: true, group: {"claimMax":1,"perOption":1,"options":["soya beans","nuts","pulse vegetables","cereals","bread"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sa-q2", topicId: "home-economics-0-6", conceptId: "sa-q2",
+    section: "A", questionRef: "2010 OL Section A Q2",
+    questionText: "Complete the following statement in relation to the biological functions of carbohydrates using the words listed below. liver energy cellulose Glucose releases heat and . Excess glucose is stored as energy in the and muscles. stimulates the movement of food through the bowel.",
+    tariffModel: {"kind":"fixed","notation":"3 answers × 2"}, totalMarks: 6,
+    rows: [
+    { id: "blank-1", kind: "point", verbatim: "Glucose releases heat and energy.", marks: 2 },
+    { id: "blank-2", kind: "point", verbatim: "Excess glucose is stored as energy in the liver and muscles.", marks: 2 },
+    { id: "blank-3", kind: "point", verbatim: "Cellulose stimulates the movement of food through the bowel.", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2010-ol-sa-q2",
+          "src": "/exam-figures/home-economics/home-economics-2010-ol-sa-q2.png",
+          "srcHash": "6a6bda79217110a9b5505a3a02844437",
+          "alt": "Original carbohydrate cloze question with word bank: liver, energy, cellulose. All three sentences and answer blanks retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sa-q3", topicId: "home-economics-0-7", conceptId: "sa-q3",
+    section: "A", questionRef: "2010 OL Section A Q3",
+    questionText: "Explain two of the following properties of lipids (fats): Melting Point Smoke Point Flash Point",
+    tariffModel: {"kind":"fixed","notation":"2 properties × 3"}, totalMarks: 6,
+    rows: [
+    { id: "properties", kind: "anyN", verbatim: "Two properties of lipids", marks: 6, group: {"claimMax":2,"perOption":3,"options":["Melting Point: e.g. solid fats melt when heated to 30° C -40° C etc.","Smoke Point: e.g. when lipids are overheated they start to decompose, converting the_ triglyceride into its component glycerol and fatty acids, a blue haze forms, impurities lower smoke point of lipid and fats that have been used several times etc.","Flash Point: e.g. when lipids are overheated a vapour is emitted which can spontaneously burst into flames, flash point of solid fats is 310° C and oils 325° etc."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sa-q4", topicId: "home-economics-0-8", conceptId: "sa-q4",
+    section: "A", questionRef: "2010 OL Section A Q4",
+    questionText: "In relation to vitamins, indicate with a tick (✓) whether each of the following statements is true or false. Vitamins True False Night blindness is a result of a deficiency of Vitamin A Vitamin C is essential for the absorption of iron Vitamin B is a fat-soluble vitamin",
+    tariffModel: {"kind":"fixed","notation":"3 statements × 2"}, totalMarks: 6,
+    rows: [
+    { id: "statement-1", kind: "point", verbatim: "Night blindness is a result of a deficiency of Vitamin A — True", marks: 2 },
+    { id: "statement-2", kind: "point", verbatim: "Vitamin C is essential for the absorption of iron — True", marks: 2 },
+    { id: "statement-3", kind: "point", verbatim: "Vitamin B is a fat-soluble vitamin — False", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2010-ol-sa-q4",
+          "src": "/exam-figures/home-economics/home-economics-2010-ol-sa-q4.png",
+          "srcHash": "df47bb54ee33036bdccafabfc799a280",
+          "alt": "Original vitamin true/false table with all three statements and empty answer columns. Statements concern night blindness and vitamin A, vitamin C and iron absorption, and whether vitamin B is fat-soluble.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sa-q5", topicId: "home-economics-0-1", conceptId: "sa-q5",
+    section: "A", questionRef: "2010 OL Section A Q5",
+    questionText: "Outline three current nutritional guidelines (healthy eating guidelines) that are especially relevant for an obese person.",
+    tariffModel: {"kind":"fixed","notation":"3 guidelines × 2"}, totalMarks: 6,
+    rows: [
+    { id: "guidelines", kind: "anyN", verbatim: "Nutritional guidelines", marks: 6, openList: true, group: {"claimMax":3,"perOption":2,"options":["eat balanced meals with low energy values","increase intake of high fibre foods","avoid fatty foods especially saturated fats, use low-fat options / products","reduce salt,","reduce sugar etc."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sa-q6", topicId: "home-economics-0-11", conceptId: "sa-q6",
+    section: "A", questionRef: "2010 OL Section A Q6",
+    questionText: "Name two government departments or agencies that have a role in the food and drinks industry.",
+    tariffModel: {"kind":"fixed","notation":"2 names × 1"}, totalMarks: 2,
+    rows: [
+    { id: "agencies", kind: "anyN", verbatim: "Government departments or agencies", marks: 2, openList: true, group: {"claimMax":2,"perOption":1,"options":["An Bord Bia","Teagasc","Forbairt","Department of Food & Agriculture","BIM","FSAI","Department of Health","Department of Communications, Marine & Natural Resources","HSE","IDA"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sa-q6-careers", topicId: "home-economics-0-11", conceptId: "sa-q6-careers",
+    section: "A", questionRef: "2010 OL Section A Q6 — careers",
+    questionText: "List two career opportunities in the food industry.",
+    tariffModel: {"kind":"fixed","notation":"2 careers × 2"}, totalMarks: 4,
+    rows: [
+    { id: "careers", kind: "anyN", verbatim: "Career opportunities", marks: 4, openList: true, group: {"claimMax":2,"perOption":2,"options":["chef","waiter","receptionist","food manufacturing","dietetics","home economics teacher","butcher","confectioner","baker","engineer","agricultural scientist/ science graduates","sales","health inspector"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sa-q7", topicId: "home-economics-0-9", conceptId: "sa-q7",
+    section: "A", questionRef: "2010 OL Section A Q7",
+    questionText: "Name three types of flour used in home baking and give one different culinary use of each. Type of flour Culinary use 1. 1. 2. 2. 3. 3.",
+    tariffModel: {"kind":"fixed","notation":"3 matching pairs × (name 1 + use 1)"}, totalMarks: 6,
+    rows: [
+    { id: "flour-1", kind: "criterion", verbatim: "Type of flour", marks: 1, contextNote: "Choose a different type in each pair. Complete printed table: Type of flour Culinary use 1. wholemeal /wheat meal / brown 1. brown bread / scones 2. white / plain / cream 2. pastry, bread, scones, sauces, etc. 3. self raising flour, strong flour, gluten 3. cakes, yeast baking, coeliac products, free flour, high ratio flour, spelt, biscuits, etc. bleached/unbleached, corn flour etc.", permittedMarks: [0,1] },
+    { id: "use-1", kind: "criterion", verbatim: "Culinary use", marks: 1, contextNote: "One different culinary use matching this same flour. Complete printed table: Type of flour Culinary use 1. wholemeal /wheat meal / brown 1. brown bread / scones 2. white / plain / cream 2. pastry, bread, scones, sauces, etc. 3. self raising flour, strong flour, gluten 3. cakes, yeast baking, coeliac products, free flour, high ratio flour, spelt, biscuits, etc. bleached/unbleached, corn flour etc.", permittedMarks: [0,1] },
+    { id: "flour-2", kind: "criterion", verbatim: "Type of flour", marks: 1, contextNote: "Choose a different type in each pair. Complete printed table: Type of flour Culinary use 1. wholemeal /wheat meal / brown 1. brown bread / scones 2. white / plain / cream 2. pastry, bread, scones, sauces, etc. 3. self raising flour, strong flour, gluten 3. cakes, yeast baking, coeliac products, free flour, high ratio flour, spelt, biscuits, etc. bleached/unbleached, corn flour etc.", permittedMarks: [0,1] },
+    { id: "use-2", kind: "criterion", verbatim: "Culinary use", marks: 1, contextNote: "One different culinary use matching this same flour. Complete printed table: Type of flour Culinary use 1. wholemeal /wheat meal / brown 1. brown bread / scones 2. white / plain / cream 2. pastry, bread, scones, sauces, etc. 3. self raising flour, strong flour, gluten 3. cakes, yeast baking, coeliac products, free flour, high ratio flour, spelt, biscuits, etc. bleached/unbleached, corn flour etc.", permittedMarks: [0,1] },
+    { id: "flour-3", kind: "criterion", verbatim: "Type of flour", marks: 1, contextNote: "Choose a different type in each pair. Complete printed table: Type of flour Culinary use 1. wholemeal /wheat meal / brown 1. brown bread / scones 2. white / plain / cream 2. pastry, bread, scones, sauces, etc. 3. self raising flour, strong flour, gluten 3. cakes, yeast baking, coeliac products, free flour, high ratio flour, spelt, biscuits, etc. bleached/unbleached, corn flour etc.", permittedMarks: [0,1] },
+    { id: "use-3", kind: "criterion", verbatim: "Culinary use", marks: 1, contextNote: "One different culinary use matching this same flour. Complete printed table: Type of flour Culinary use 1. wholemeal /wheat meal / brown 1. brown bread / scones 2. white / plain / cream 2. pastry, bread, scones, sauces, etc. 3. self raising flour, strong flour, gluten 3. cakes, yeast baking, coeliac products, free flour, high ratio flour, spelt, biscuits, etc. bleached/unbleached, corn flour etc.", permittedMarks: [0,1] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2010-ol-sa-q7-pair-1","label":"Flour / use pair 1","marks":2,"rowIds":["flour-1","use-1"]},{"sourceCardId":"he-2010-ol-sa-q7-pair-2","label":"Flour / use pair 2","marks":2,"rowIds":["flour-2","use-2"]},{"sourceCardId":"he-2010-ol-sa-q7-pair-3","label":"Flour / use pair 3","marks":2,"rowIds":["flour-3","use-3"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2010-ol-sa-q7",
+          "src": "/exam-figures/home-economics/home-economics-2010-ol-sa-q7.png",
+          "srcHash": "9433eb4719cac16f91f74787ddd22405",
+          "alt": "Original three-row flour and culinary-use table. Each row asks for a type of flour and one different matching culinary use.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sa-q8", topicId: "home-economics-0-11", conceptId: "sa-q8",
+    section: "A", questionRef: "2010 OL Section A Q8",
+    questionText: "Set out in the table are classes (types) of food additives. Match each class with the correct example using the examples listed. Examples: herbs and spices, vitamin E, turmeric. Classes of Food Additives Example Colourings Flavourings Antioxidants",
+    tariffModel: {"kind":"fixed","notation":"3 matches × 2"}, totalMarks: 6,
+    rows: [
+    { id: "additive-1", kind: "point", verbatim: "Colourings — turmeric", marks: 2 },
+    { id: "additive-2", kind: "point", verbatim: "Flavourings — herbs and spices", marks: 2 },
+    { id: "additive-3", kind: "point", verbatim: "Antioxidants — vitamin E", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2010-ol-sa-q8",
+          "src": "/exam-figures/home-economics/home-economics-2010-ol-sa-q8.png",
+          "srcHash": "a4be808aae8a52f88ff9f917cf790fe9",
+          "alt": "Original food-additive matching table. Given options: herbs and spices, vitamin E, turmeric. Given classes: Colourings, Flavourings, Antioxidants; answer cells blank.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sa-q9", topicId: "home-economics-1-2", conceptId: "sa-q9",
+    section: "A", questionRef: "2010 OL Section A Q9",
+    questionText: "State the purpose of labelling on household cleaning agents.",
+    tariffModel: {"kind":"fixed","notation":"1 explanation × 3"}, totalMarks: 3,
+    rows: [
+    { id: "purpose", kind: "point", verbatim: "safety and hazard symbols can be recognised and adhered to, prevents accidents, informs consumer of contents of product and how to use products", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sa-q9-symbol", topicId: "home-economics-1-2", conceptId: "sa-q9-symbol",
+    section: "A", questionRef: "2010 OL Section A Q9 — symbol",
+    questionText: "Identify and explain this hazard symbol.",
+    tariffModel: {"kind":"fixed","notation":"1 identification / explanation × 3"}, totalMarks: 3,
+    rows: [
+    { id: "symbol", kind: "point", verbatim: "Harmful / Irritant Substances can cause irritation or reddening of skin, substance similar to toxic substances but less dangerous", marks: 3, contextNote: "Identification and explanation share one printed three-mark award; no split is published." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2010-ol-sa-q9-symbol",
+          "src": "/exam-figures/home-economics/home-economics-2010-ol-sa-q9-symbol.png",
+          "srcHash": "009cef192a3c6a021507537100de9c6a",
+          "alt": "Original household-cleaning hazard symbol: a bold black diagonal cross inside a square; the identification and explanation are left to the student.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sa-q10", topicId: "home-economics-1-1", conceptId: "sa-q10",
+    section: "A", questionRef: "2010 OL Section A Q10",
+    questionText: "Outline two advantages of planning a household budget.",
+    tariffModel: {"kind":"fixed","notation":"2 advantages × 2"}, totalMarks: 4,
+    rows: [
+    { id: "advantages", kind: "anyN", verbatim: "Advantages of a household budget", marks: 4, openList: true, group: {"claimMax":2,"perOption":2,"options":["helps to develop good management skills","spending and the use of credit facilities can be carefully monitored","areas of overspending / impulse buying become obvious,","economies can be made so that serious debt can be avoided,","financial security,","encourages savings,","sets a good example for family members"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sa-q10-assurance", topicId: "home-economics-1-1", conceptId: "sa-q10-assurance",
+    section: "A", questionRef: "2010 OL Section A Q10 — assurance",
+    questionText: "What protection does life assurance give to a person or family?",
+    tariffModel: {"kind":"fixed","notation":"1 explanation × 2"}, totalMarks: 2,
+    rows: [
+    { id: "protection", kind: "point", verbatim: "provides security e.g. in the event of premature death, provides cover for the financial hardships that result from death, when person dies the beneficiary receives a lump sum", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sa-q11", topicId: "home-economics-1-3", conceptId: "sa-q11",
+    section: "A", questionRef: "2010 OL Section A Q11",
+    questionText: "State three ways that technological developments have contributed to greater efficiency in the management of the home.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 2"}, totalMarks: 6,
+    rows: [
+    { id: "technology", kind: "anyN", verbatim: "Technological developments", marks: 6, openList: true, group: {"claimMax":3,"perOption":2,"options":["workload is lightened / reduced by appliances such as dishwashers & washing machines","some appliances save on electricity e.g. microwave and so save money","appliances have built in safety devices e.g. thermostats which protect the consumer,","save time e.g. food processors,","tasks are performed with increased efficiency,","security technology reduces the risk of burglary,","communication technology allows for easier and quicker access to information,","improvements in energy efficiency e.g. solar panels"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sa-q12", topicId: "home-economics-1-1", conceptId: "sa-q12",
+    section: "A", questionRef: "2010 OL Section A Q12",
+    questionText: "Explain two of the following methods of payment used for goods and services. Credit Card Laser Card Direct Debit / Standing Order",
+    tariffModel: {"kind":"fixed","notation":"2 explanations × 3"}, totalMarks: 6,
+    rows: [
+    { id: "payments", kind: "anyN", verbatim: "Two payment methods", marks: 6, group: {"claimMax":2,"perOption":3,"options":["Credit card: e.g. visa, master card, allow card holders to buy goods or services without having to pay for them until a ‘credit free’ period is over, minimum payment must be made each month, interest is charged if bill not paid in full, no interest if balance is cleared each month etc.","Laser Card: e.g. money is immediately debited from your account, can be used to get cash back in shops when paying for goods, money can be withdrawn at ATM machine, cheaper than using cheque etc.","Direct Debit / Standing Order: e.g. a specific amount of money can be withdrawn from account at regular intervals to pay bills e.g. mortgage, ESB etc, charge for setting up and each time money is withdrawn, etc."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sb-q1a", topicId: "home-economics-0-9", conceptId: "sb-q1a",
+    section: "B", questionRef: "2010 OL Section B Q1(a)",
+    stem: "‘Dem bones, dem bones need calcium….’ Ninety per cent of the adult skeleton is formed by the age of 17 years. Bone continues to grow during the 20s but from the mid 30s onwards the skeleton starts to weaken slowly. (National Dairy Council) The table below shows nutritional information, per 100g, for whole and semi-skimmed milk.",
+    questionText: "Identify the three main differences between whole milk and semi-skimmed milk.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "differences", marks: 9, contextNote: "Use distinct points at the source’s printed value. No smaller marking steps are published. Complete source guidance: e.g. whole milk is higher in energy, fat, saturated fatty acids, Vitamin A and iron, semi-skimmed milk is higher in protein, CHO, calcium, etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2010-ol-sb-q1-milk",
+          "src": "/exam-figures/home-economics/home-economics-2010-ol-sb-q1-milk.png",
+          "srcHash": "64cc1282e7bcc97ee7e2119cf94bf4b4",
+          "alt": "Original nutritional information per 100g: Whole Milk / Semi-skimmed Milk. Energy kcal 66 / 46; Protein (g) 3.3 / 3.5; Carbohydrates (g) 4.6 / 4.7; Fat (g) 3.9 / 1.7; Saturated fatty acids (g) 2.5 / 1.1; Calcium 118 / 120; Iron (mg) 0.03 / 0.02; Vitamin A (Retinol) 30 / 19; Folate 8 / 9; Vitamin C 2 / 2. All source rows and units retained; no missing units inferred.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sb-q1b", topicId: "home-economics-0-9", conceptId: "sb-q1b",
+    section: "B", questionRef: "2010 OL Section B Q1(b)",
+    stem: "‘Dem bones, dem bones need calcium….’ Ninety per cent of the adult skeleton is formed by the age of 17 years. Bone continues to grow during the 20s but from the mid 30s onwards the skeleton starts to weaken slowly. (National Dairy Council) The table below shows nutritional information, per 100g, for whole and semi-skimmed milk.",
+    questionText: "Give an account of the dietetic value of semi-skimmed milk.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "dietetic value", marks: 15, contextNote: "Use distinct points at the source’s printed value. No smaller marking steps are published. Complete source guidance: e.g. easy to digest therefore suitable for invalids and elderly, versatile food, convenient for people on low cholesterol, low kilocalorie diets, high in calcium for strong bones and teeth, protein for growth, cho for energy, not suitable for children as it is low/lacking in some nutrients, combine with foods rich in starch, fibre, iron, etc. to create a balanced diet.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2010-ol-sb-q1-milk",
+          "src": "/exam-figures/home-economics/home-economics-2010-ol-sb-q1-milk.png",
+          "srcHash": "64cc1282e7bcc97ee7e2119cf94bf4b4",
+          "alt": "Original nutritional information per 100g: Whole Milk / Semi-skimmed Milk. Energy kcal 66 / 46; Protein (g) 3.3 / 3.5; Carbohydrates (g) 4.6 / 4.7; Fat (g) 3.9 / 1.7; Saturated fatty acids (g) 2.5 / 1.1; Calcium 118 / 120; Iron (mg) 0.03 / 0.02; Vitamin A (Retinol) 30 / 19; Folate 8 / 9; Vitamin C 2 / 2. All source rows and units retained; no missing units inferred.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sb-q1c", topicId: "home-economics-0-8", conceptId: "sb-q1c",
+    section: "B", questionRef: "2010 OL Section B Q1(c)",
+    stem: "‘Dem bones, dem bones need calcium….’ Ninety per cent of the adult skeleton is formed by the age of 17 years. Bone continues to grow during the 20s but from the mid 30s onwards the skeleton starts to weaken slowly. (National Dairy Council) The table below shows nutritional information, per 100g, for whole and semi-skimmed milk.",
+    questionText: "Set out the results of a study you have carried out on calcium. Refer to each of the following: • sources in the diet • functions in the body • effects of deficiency • factors that affect absorption.",
+    tariffModel: {"kind":"fixed","notation":"Sources 3 × 4 + functions 2 × 4 + deficiency 2 × 4 + absorption 2 × 4"}, totalMarks: 36,
+    rows: [
+    { id: "sources", kind: "criterion", verbatim: "sources in the diet", marks: 12, contextNote: "Three sources. Complete printed list: e.g. hard water, dairy products – milk, cheese, yoghurt, canned fish, green leafy vegetables, fortified bread & flour, eggs, etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    { id: "functions", kind: "criterion", verbatim: "functions in the body", marks: 8, contextNote: "e.g. strong bones, healthy teeth, clotting of blood, muscle contraction, normal nerve function, membrane permeability, etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "deficiency", kind: "criterion", verbatim: "effects of deficiency", marks: 8, contextNote: "e.g. rickets, osteomalacia, osteoporosis, dental caries, irritability and muscle spasm, poor blood clotting, disturbances in functioning of nerve cells, irregularity in muscle contractions, etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "absorption", kind: "criterion", verbatim: "factors that affect absorption", marks: 8, contextNote: "e.g. increased by: an acid environment, Vitamin C, parathormone, vitamin D, adequate protein in diet, lactose, phosphorus etc. decreased by: excess fat, excess protein, incorrect calcium / phosphorus ratio, saturated fatty acids, dietary fibre, phytates, oxalates etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sb-q1d", topicId: "home-economics-0-11", conceptId: "sb-q1d",
+    section: "B", questionRef: "2010 OL Section B Q1(d)",
+    stem: "‘Dem bones, dem bones need calcium….’ Ninety per cent of the adult skeleton is formed by the age of 17 years. Bone continues to grow during the 20s but from the mid 30s onwards the skeleton starts to weaken slowly. (National Dairy Council) The table below shows nutritional information, per 100g, for whole and semi-skimmed milk.",
+    questionText: "Discuss how the food industry has responded to consumer demands through the development of new and value-added food products.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "food industry", marks: 20, contextNote: "Use distinct points at the source’s printed value. No smaller marking steps are published. Complete source guidance: e.g. ready to cook / reheat foods, frozen meals – quick, easy to use, cheaper than buying all different ingredients, handy in emergencies and for people in hurry, instant foods e.g. breakfast rolls, pizzas, etc. bio yoghurts, Benecol, Flora pro-active – lowers cholesterol, products with added omega 3, increased health benefits, improve metabolism, help to maintain a healthy lifestyle, reduce the risk of cardiovascular disease, energy drinks, breakfast/protein bars, juices and smoothies, etc.", permittedMarks: [0,5,10,15,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sb-q2a", topicId: "home-economics-0-9", conceptId: "sb-q2a",
+    section: "B", questionRef: "2010 OL Section B Q2(a)",
+    stem: "‘Meat plays a central role in the Irish diet providing a significant contribution to the intakes of the key nutrients.’ (An Bord Bia)",
+    questionText: "Describe the nutritive value of meat in the diet.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "nutritive value", marks: 20, contextNote: "Use distinct points at the source’s printed value. No smaller marking steps are published. Complete source guidance: e.g. HBV protein, saturated fat amounts depends on animal and cut of meat and the method of cooking, e.g. low in chicken, no carbohydrate – serve with starchy foods, vitamin B group, A & D in liver, iron in red meat, small amounts of sulphur, zinc, potassium, water, extractives, etc.", permittedMarks: [0,5,10,15,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sb-q2b", topicId: "home-economics-0-10", conceptId: "sb-q2b",
+    section: "B", questionRef: "2010 OL Section B Q2(b)",
+    stem: "‘Meat plays a central role in the Irish diet providing a significant contribution to the intakes of the key nutrients.’ (An Bord Bia)",
+    questionText: "Using meat as the main ingredient design a two course menu suitable for the main meal of the day for a family on a low income. Give reasons for your choice of foods.",
+    tariffModel: {"kind":"fixed","notation":"2 courses × 4 + 2 reasons × 3"}, totalMarks: 14,
+    rows: [
+    { id: "courses", kind: "criterion", verbatim: "Menu", marks: 8, contextNote: "Two courses in the same menu; use meat as the main ingredient and retain the low-income family context. Complete source model: Sample Menu Vegetable Soup ……… Spaghetti Bolognese", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "reasons", kind: "criterion", verbatim: "reasons", marks: 6, contextNote: "Two reasons supporting this menu. Complete source guidance: accept nutritive/convenience/cost/ personal preference/ skills reasons – e.g. any available vegetables can be used, meat is high in protein – good for growing children, high in iron – good for pregnant women, teenage girls, serve with starchy foods e.g. pasta, potatoes, balanced meal, reasonable cost, easy to cook, quick to prepare, etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sb-q2c", topicId: "home-economics-0-9", conceptId: "sb-q2c",
+    section: "B", questionRef: "2010 OL Section B Q2(c)",
+    stem: "‘Meat plays a central role in the Irish diet providing a significant contribution to the intakes of the key nutrients.’ (An Bord Bia)",
+    questionText: "Processed meats are popular consumer products. Name two types of processed meat and state one advantage of each.",
+    tariffModel: {"kind":"fixed","notation":"2 pairs × (name 4 + advantage 4)"}, totalMarks: 16,
+    rows: [
+    { id: "type-1", kind: "criterion", verbatim: "Name", marks: 4, contextNote: "Choose a different processed meat in each pair. Source examples: e.g. frozen meat products – burgers, nuggets, sausages, puddings, rashers, cooked cold meats, cured/salted – ham, smoked bacon, canned meat - stew, corned beef, dehydrated -TVP etc.", permittedMarks: [0,4] },
+    { id: "advantage-1", kind: "criterion", verbatim: "advantage", marks: 4, contextNote: "One advantage of this SAME processed meat. Source examples: e.g. economical, little loss of nutrients, no waste, easy to use, save time, labour & fuel, wide variety, longer shelf life, etc.", permittedMarks: [0,4] },
+    { id: "type-2", kind: "criterion", verbatim: "Name", marks: 4, contextNote: "Choose a different processed meat in each pair. Source examples: e.g. frozen meat products – burgers, nuggets, sausages, puddings, rashers, cooked cold meats, cured/salted – ham, smoked bacon, canned meat - stew, corned beef, dehydrated -TVP etc.", permittedMarks: [0,4] },
+    { id: "advantage-2", kind: "criterion", verbatim: "advantage", marks: 4, contextNote: "One advantage of this SAME processed meat. Source examples: e.g. economical, little loss of nutrients, no waste, easy to use, save time, labour & fuel, wide variety, longer shelf life, etc.", permittedMarks: [0,4] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2010-ol-sb-q2c-pair-1","label":"Processed meat 1","marks":8,"rowIds":["type-1","advantage-1"]},{"sourceCardId":"he-2010-ol-sb-q2c-pair-2","label":"Processed meat 2","marks":8,"rowIds":["type-2","advantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sb-q3a", topicId: "home-economics-0-4", conceptId: "sb-q3a",
+    section: "B", questionRef: "2010 OL Section B Q3(a)",
+    stem: "All home preservation is based on the principle of preventing enzymes and micro- organisms from causing food to decay.",
+    questionText: "State four of the main causes of food spoilage.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 4"}, totalMarks: 16,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "causes", marks: 16, contextNote: "Use distinct points at the source’s printed value. No smaller marking steps are published. Complete source guidance: e.g. enzyme action, microbial contamination – yeasts, moulds and bacteria, oxidation, moisture loss, foods not stored at correct temperature, poor hygiene practices – food handled and stored incorrectly, etc.", permittedMarks: [0,4,8,12,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sb-q3b", topicId: "home-economics-0-3", conceptId: "sb-q3b",
+    section: "B", questionRef: "2010 OL Section B Q3(b)",
+    stem: "All home preservation is based on the principle of preventing enzymes and micro- organisms from causing food to decay.",
+    questionText: "Give an account of one method of food preservation used in the home. Refer to: • method of preservation • suitable foods • how this method of preservation is carried out • packaging.",
+    tariffModel: {"kind":"fixed","notation":"Method 4 + pair of foods 4 + process 3 × 4 + packaging 4"}, totalMarks: 24,
+    rows: [
+    { id: "method", kind: "anyN", verbatim: "method of preservation", marks: 4, openList: true, group: {"claimMax":1,"perOption":4,"options":["freezing","jam","chutney and relishes","drying","pickling"]} },
+    { id: "foods", kind: "criterion", verbatim: "suitable foods", marks: 4, contextNote: "Give TWO suitable foods for the selected method. The source prints four marks for this pair, with no separate per-food allocation. Complete examples: e.g. fruit: apples, oranges, strawberries, plums, apricots etc. vegetables: carrots peas, beans, tomatoes, onions, cauliflower, broccoli etc", permittedMarks: [0,4] },
+    { id: "process", kind: "criterion", verbatim: "how this method of preservation is carried out", marks: 12, contextNote: "Three points for the SAME chosen method. Complete printed method guidance: e.g. freezing: turn on fast freeze button for 3-4 hours, choose best quality food only, freeze in usable quantities, blanch vegetables to inactivate enzymes, wrapping food prevents the re-entry of micro-organisms and helps to maintain colour, flavour and texture, etc., cool all foods before freezing, open-freeze foods that will stick together, e.g. strawberries, seal foods well in packaging removing as much air as possible, allow space for liquids to expand, label all foods with name, quantity and date of freezing, place food in freezer in contact with sides or base of compartment, leave for approximately 24 hours, remove to storage section etc. jam making: weigh and measure ingredients accurately, use sound, washed and sterilised jars, prepare fruit according to type, use heavy based / copper pan for cooking fruit, allow to simmer to release pectin, add sugar, boil until setting point is reached, test, skim, pot, cover, label and store.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    { id: "packaging", kind: "criterion", verbatim: "packaging", marks: 4, contextNote: "Packaging appropriate to the SAME method. Complete source examples: e.g. use moisture proof, vapour proof and strong packaging, foil / plastic containers, ties, labelling, glass jars, wax discs, cellophane covers, etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sb-q3c", topicId: "home-economics-0-4", conceptId: "sb-q3c",
+    section: "B", questionRef: "2010 OL Section B Q3(c)",
+    stem: "All home preservation is based on the principle of preventing enzymes and micro- organisms from causing food to decay.",
+    questionText: "Outline two uses of micro-organisms in food production.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 5"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "uses of micro-organisms", marks: 10, contextNote: "Use distinct points at the source’s printed value. No smaller marking steps are published. Complete source guidance: (10) e.g. Moulds – mycoprotein Yeast - vinegar, alcoholic drinks, yeast bread Moulds -manufacture of cheese, Bacteria - starter culture in yogurt, etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sb-q4a", topicId: "home-economics-1-3", conceptId: "sb-q4a",
+    section: "B", questionRef: "2010 OL Section B Q4(a)",
+    stem: "Jim and Ann are a couple with two young pre-school children. They are both working outside the home. The children attend play school every morning. Recently their washing machine has broken down.",
+    questionText: "Discuss four factors that Ann and Jim need to consider when planning the purchase of a new washing machine.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 20, contextNote: "Use distinct points at the source’s printed value. No smaller marking steps are published. Complete source guidance: e.g. energy rating, reliable brand, easy to operate, design of appliance, after sales service, guarantee, cash vs. credit, size of family, initial and maintenance cost, quality symbols, space available, colour, etc.", permittedMarks: [0,5,10,15,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sb-q4b", topicId: "home-economics-1-2", conceptId: "sb-q4b",
+    section: "B", questionRef: "2010 OL Section B Q4(b)",
+    stem: "Jim and Ann are a couple with two young pre-school children. They are both working outside the home. The children attend play school every morning. Recently their washing machine has broken down.",
+    questionText: "Explain how Jim and Ann could use the Small Claims Procedure if the washing machine they purchase is faulty and they cannot get redress from the shop.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "Small Claims Procedure", marks: 12, contextNote: "Use distinct points at the source’s printed value. No smaller marking steps are published. Complete source guidance: e.g. application form from District Court Registrar is completed, fee of 9 euros not refundable, the claimant must be the person who bought the faulty goods, copy sent to respondent, respondent can accept claim or challenge it, registrar will try to resolve case, if not resolved referred to courts, if respondent does not refute the claim within 15 days the claim is settled in favour of claimant, no solicitor is needed, deals with claims below 1,270 euros, if complaint is disputed and registrar fails to settle the dispute the case will be resolved by a court hearing, etc. Historical procedure and amounts are retained exactly from the 2010 marking scheme.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sb-q4c", topicId: "home-economics-1-1", conceptId: "sb-q4c",
+    section: "B", questionRef: "2010 OL Section B Q4(c)",
+    stem: "Jim and Ann are a couple with two young pre-school children. They are both working outside the home. The children attend play school every morning. Recently their washing machine has broken down.",
+    questionText: "Identify two main sources of income and four main areas of expenditure (spending) for this family.",
+    tariffModel: {"kind":"fixed","notation":"2 sources × 3 + 4 areas × 3"}, totalMarks: 18,
+    rows: [
+    { id: "income", kind: "criterion", verbatim: "sources of income", marks: 6, contextNote: "e.g. Jim & Ann’s salaries / wages, children’s allowance, interest on savings, rent allowance, F.I.S. etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "expenditure", kind: "criterion", verbatim: "areas of expenditure", marks: 12, contextNote: "e.g. food, mortgage/rent, childcare and play school fees, clothes, medical bills, utility bills - electricity, gas, telephone, transport, etc.", permittedMarks: [0,3,6,9,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]},{"id":"point-4","verbatim":"Point 4","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sb-q5a", topicId: "home-economics-2-0", conceptId: "sb-q5a",
+    section: "B", questionRef: "2010 OL Section B Q5(a)",
+    stem: "‘The effects of disadvantage can last a lifetime. It’s true that children have amazing abilities to cope, but the wrong start can affect the direction of their whole lives.’ (www.barnardos.ie)",
+    questionText: "With reference to the above statement, identify and explain the physical and psychological (emotional) needs of young children.",
+    tariffModel: {"kind":"fixed","notation":"3 needs × 5; at least one physical and one psychological"}, totalMarks: 15,
+    rows: [
+    { id: "physical", kind: "criterion", verbatim: "physical", marks: 5, contextNote: "e.g. food, clothing, shelter, warmth, security, protection of vulnerable etc.", permittedMarks: [0,5] },
+    { id: "psychological", kind: "criterion", verbatim: "psychological", marks: 5, contextNote: "e.g. provision of loving environment to develop self esteem and thus help child to form relationships, children need love, security, care, praise, stimulation to learn, etc.", permittedMarks: [0,5] },
+    { id: "other", kind: "criterion", verbatim: "1 other", marks: 5, contextNote: "One further distinct physical OR psychological need. Complete source guidance: physical: e.g. food, clothing, shelter, warmth, security, protection of vulnerable etc. psychological: e.g. provision of loving environment to develop self esteem and thus help child to form relationships, children need love, security, care, praise, stimulation to learn, etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sb-q5b", topicId: "home-economics-2-1", conceptId: "sb-q5b",
+    section: "B", questionRef: "2010 OL Section B Q5(b)",
+    stem: "‘The effects of disadvantage can last a lifetime. It’s true that children have amazing abilities to cope, but the wrong start can affect the direction of their whole lives.’ (www.barnardos.ie)",
+    questionText: "Give an account of four rights of children within the family.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "rights", marks: 20, contextNote: "Use distinct points at the source’s printed value. No smaller marking steps are published. Complete source guidance: e.g. right to life, name and nationality, to live with parents unless considered to be against the best interests of the child, to basic physical needs, to develop physically, mentally, socially, morally, spiritually, protection from all forms of abuse and neglect, right to education, leisure, cultural activities, recreation, etc.", permittedMarks: [0,5,10,15,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sb-q5c", topicId: "home-economics-2-1", conceptId: "sb-q5c",
+    section: "B", questionRef: "2010 OL Section B Q5(c)",
+    stem: "‘The effects of disadvantage can last a lifetime. It’s true that children have amazing abilities to cope, but the wrong start can affect the direction of their whole lives.’ (www.barnardos.ie)",
+    questionText: "Explain, giving examples, how the state provides support to children who are disadvantaged.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "support", marks: 15, contextNote: "Use distinct points at the source’s printed value. No smaller marking steps are published. Complete source guidance: e.g. provision of education i.e. pre-schools/ primary / post-primary schools, psychological assessment, providing resource teachers and class room assistants, economic - children’s allowance, Back to School Allowance, School Completion Programme, medical card, protection - removing children from the home either temporarily or permanently and placing them in foster care, support services e.g. Family Support Projects, state introduced Childcare Act, 1991, etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sc-q1ai", topicId: "home-economics-3-3", conceptId: "sc-q1ai",
+    section: "C", questionRef: "2010 OL Section C E1 Q1(a)(i)",
+    stem: "The diagram below shows the floor plan of a two-bedroom house. Bedroom Kitchen/Dining Bathroom Corridor Hall Lounge Bedroom (Blueprint Home Plans)",
+    questionText: "Assess the suitability of the house plan, shown above, for a family of one parent and two children aged 13 and 4 years.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "suitability", marks: 20, contextNote: "Use distinct points at the source’s printed value; no smaller steps are published. Complete source guidance: e.g. provides adequate basic accommodation for family, no bedroom for friends to stay overnight, children must share bed room – where does 13 year old study, only one bathroom to share, dining/kitchen area very small for eating in, no play area for children, not much storage space for toys, bicycles, smaller home can be easier to maintain and heat, inexpensive to run, compact, etc.", permittedMarks: [0,5,10,15,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2010-ol-sc-q1-plan",
+          "src": "/exam-figures/home-economics/home-economics-2010-ol-sc-q1-plan.png",
+          "srcHash": "79c40e64de6766603d7d77aedb8de380",
+          "alt": "Original two-bedroom house floor plan, with both bedrooms, bathroom, corridor, hall, lounge and kitchen/dining labels, walls, doors and windows intact. Blueprint Home Plans attribution retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sc-q1aii", topicId: "home-economics-3-3", conceptId: "sc-q1aii",
+    section: "C", questionRef: "2010 OL Section C E1 Q1(a)(ii)",
+    stem: "The diagram below shows the floor plan of a two-bedroom house. Bedroom Kitchen/Dining Bathroom Corridor Hall Lounge Bedroom (Blueprint Home Plans)",
+    questionText: "Describe three factors that might influence a person’s choice of location when building a house.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 15, contextNote: "Use distinct points at the source’s printed value; no smaller steps are published. Complete source guidance: e.g. urban or rural area, cost of site, proximity to family, friends, work, church and schools, size & orientation, natural shelter and light, no danger of flooding, proposed developments in area, planning permission, building regulations in the area, the surrounding neighbourhood, resale value, etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sc-q1aiii", topicId: "home-economics-3-3", conceptId: "sc-q1aiii",
+    section: "C", questionRef: "2010 OL Section C E1 Q1(a)(iii)",
+    stem: "The diagram below shows the floor plan of a two-bedroom house. Bedroom Kitchen/Dining Bathroom Corridor Hall Lounge Bedroom (Blueprint Home Plans)",
+    questionText: "In relation to house building and purchase explain the role of each of the following: (a) the architect, (b) the surveyor and (c) the solicitor.",
+    tariffModel: {"kind":"fixed","notation":"3 required roles × 5"}, totalMarks: 15,
+    rows: [
+    { id: "role-1", kind: "point", verbatim: "Architect: e.g. design, co-ordinate & manage the building project, advise on the design of an extension or refurbishment of a house, advise on site, advise on contractors etc.", marks: 5 },
+    { id: "role-2", kind: "point", verbatim: "Surveyor: e.g. carry out comprehensive site survey, identify potential problems in houses and sites and provides proactive advice on how to solve them, etc.", marks: 5 },
+    { id: "role-3", kind: "point", verbatim: "Solicitor: e.g. handles the legal aspects concerning the title deeds of site / house, prepares contracts for purchase site / house, checks rights of way, advises on building regulations and planning permission etc.", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sc-q1bi", topicId: "home-economics-3-6", conceptId: "sc-q1bi",
+    section: "C", questionRef: "2010 OL Section C E1 Q1(b)(i)",
+    stem: "Awareness of energy efficiency has increased significantly in recent years.",
+    questionText: "Identify three areas in the home where energy inefficiencies may occur and in relation to each suggest one method of improving efficiency.",
+    tariffModel: {"kind":"fixed","notation":"3 pairs × (area 3 + method 3)"}, totalMarks: 18,
+    rows: [
+    { id: "area-1", kind: "criterion", verbatim: "area", marks: 3, contextNote: "Name a different area in each pair. Complete source examples and methods: walls: e.g. solid walls – insulation sheets attached and covered with a plaster board layer, etc., cavity walls, injection of polystyrene beads or granules into cavity walls, blanket insulation etc. attic: e.g. insulation blanket made from glass / mineral fibre, pellets of polystyrene or vermiculite poured between joists, foam sprayed between roof rafters and solidifies etc. windows / doors: e.g. double glazed windows, well fitted windows, fit draught excluders, use heavy lined curtains, fit draught excluders at letter boxes, etc. heating: e.g. service boiler regularly, set thermostats to correct temperature – not too high, use individual room thermostats and timers, heat unused rooms at a lower temperature, only use heat when necessary, etc. lighting: e.g. use correct wattage bulbs, use CFL bulbs, turn off lights when not in use etc. water heating: lag pipes and water cylinder, take showers instead of baths, have timer and thermostat on immersion, avoid washing under running tap, use jug kettle for small amounts, use economy programme on dishwashers and washing machines, etc. use of appliances e.g. avoid leaving on stand-by etc.", permittedMarks: [0,3] },
+    { id: "method-1", kind: "criterion", verbatim: "method", marks: 3, contextNote: "A method appropriate to this SAME area. Complete guidance is in the paired area row.", permittedMarks: [0,3] },
+    { id: "area-2", kind: "criterion", verbatim: "area", marks: 3, contextNote: "Name a different area in each pair. Complete source examples and methods: walls: e.g. solid walls – insulation sheets attached and covered with a plaster board layer, etc., cavity walls, injection of polystyrene beads or granules into cavity walls, blanket insulation etc. attic: e.g. insulation blanket made from glass / mineral fibre, pellets of polystyrene or vermiculite poured between joists, foam sprayed between roof rafters and solidifies etc. windows / doors: e.g. double glazed windows, well fitted windows, fit draught excluders, use heavy lined curtains, fit draught excluders at letter boxes, etc. heating: e.g. service boiler regularly, set thermostats to correct temperature – not too high, use individual room thermostats and timers, heat unused rooms at a lower temperature, only use heat when necessary, etc. lighting: e.g. use correct wattage bulbs, use CFL bulbs, turn off lights when not in use etc. water heating: lag pipes and water cylinder, take showers instead of baths, have timer and thermostat on immersion, avoid washing under running tap, use jug kettle for small amounts, use economy programme on dishwashers and washing machines, etc. use of appliances e.g. avoid leaving on stand-by etc.", permittedMarks: [0,3] },
+    { id: "method-2", kind: "criterion", verbatim: "method", marks: 3, contextNote: "A method appropriate to this SAME area. Complete guidance is in the paired area row.", permittedMarks: [0,3] },
+    { id: "area-3", kind: "criterion", verbatim: "area", marks: 3, contextNote: "Name a different area in each pair. Complete source examples and methods: walls: e.g. solid walls – insulation sheets attached and covered with a plaster board layer, etc., cavity walls, injection of polystyrene beads or granules into cavity walls, blanket insulation etc. attic: e.g. insulation blanket made from glass / mineral fibre, pellets of polystyrene or vermiculite poured between joists, foam sprayed between roof rafters and solidifies etc. windows / doors: e.g. double glazed windows, well fitted windows, fit draught excluders, use heavy lined curtains, fit draught excluders at letter boxes, etc. heating: e.g. service boiler regularly, set thermostats to correct temperature – not too high, use individual room thermostats and timers, heat unused rooms at a lower temperature, only use heat when necessary, etc. lighting: e.g. use correct wattage bulbs, use CFL bulbs, turn off lights when not in use etc. water heating: lag pipes and water cylinder, take showers instead of baths, have timer and thermostat on immersion, avoid washing under running tap, use jug kettle for small amounts, use economy programme on dishwashers and washing machines, etc. use of appliances e.g. avoid leaving on stand-by etc.", permittedMarks: [0,3] },
+    { id: "method-3", kind: "criterion", verbatim: "method", marks: 3, contextNote: "A method appropriate to this SAME area. Complete guidance is in the paired area row.", permittedMarks: [0,3] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2010-ol-sc-q1bi-pair-1","label":"Area / method 1","marks":6,"rowIds":["area-1","method-1"]},{"sourceCardId":"he-2010-ol-sc-q1bi-pair-2","label":"Area / method 2","marks":6,"rowIds":["area-2","method-2"]},{"sourceCardId":"he-2010-ol-sc-q1bi-pair-3","label":"Area / method 3","marks":6,"rowIds":["area-3","method-3"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sc-q1bii", topicId: "home-economics-3-6", conceptId: "sc-q1bii",
+    section: "C", questionRef: "2010 OL Section C E1 Q1(b)(ii)",
+    stem: "Awareness of energy efficiency has increased significantly in recent years.",
+    questionText: "State the advantages / the disadvantages of solar energy.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "advantages / the disadvantages", marks: 12, contextNote: "Use distinct points at the source’s printed value; no smaller steps are published. Complete source guidance: e.g. advantages: saves up to 68% on heating bills, ensures comfort – plentiful supply of hot water for space and water heating, converts light from sun directly into electricity, no carbon dioxide emissions, grants available, etc. disadvantages: expensive to install solar panels, limited amount of sunshine in Ireland, house has to be south facing to absorb most sun and light, etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sc-q1ci", topicId: "home-economics-3-4", conceptId: "sc-q1ci",
+    section: "C", questionRef: "2010 OL Section C E1 Q1(c)(i)",
+    stem: "Floral prints, checks and stripes are examples of pattern used in interior design.",
+    questionText: "Explain, giving examples, how pattern may be used to enhance (improve) the appearance of a room.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 6"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "pattern", marks: 12, contextNote: "Use distinct points at the source’s printed value; no smaller steps are published. Complete source guidance: e.g. pattern adds variety style, interest & contrast, alters the proportion of a room i.e. bold patterns advance, vertical lines give height, etc. Examples – soft furnishings, curtains, carpets, wallpaper, etc.", permittedMarks: [0,6,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,6]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sc-q1cii", topicId: "home-economics-3-4", conceptId: "sc-q1cii",
+    section: "C", questionRef: "2010 OL Section C E1 Q1(c)(ii)",
+    stem: "Floral prints, checks and stripes are examples of pattern used in interior design.",
+    questionText: "Suggest two types of flooring suitable for a sitting room. State two properties of each.",
+    tariffModel: {"kind":"fixed","notation":"2 profiles × (type 3 + 2 properties × 3)"}, totalMarks: 18,
+    rows: [
+    { id: "type-1", kind: "criterion", verbatim: "type", marks: 3, contextNote: "Choose a different suitable flooring for each pair. Full source options: e.g. wood, carpet, vinyl, marmoleum, ceramic tiles, cork, etc.", permittedMarks: [0,3] },
+    { id: "properties-1", kind: "criterion", verbatim: "properties", marks: 6, contextNote: "Two properties for this SAME flooring. Full printed guidance: e.g. wood - durable, attractive, may get marked, etc. vinyl – available in a variety of colours, patterns, warm, soft, easy to clean, etc. carpet – wide variety of colours, pattern, designs, good insulator, absorbs noise, etc. marmoleum – wide variety of colours, patterns, easy-care, quiet, etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "type-2", kind: "criterion", verbatim: "type", marks: 3, contextNote: "Choose a different suitable flooring for each pair. Full source options: e.g. wood, carpet, vinyl, marmoleum, ceramic tiles, cork, etc.", permittedMarks: [0,3] },
+    { id: "properties-2", kind: "criterion", verbatim: "properties", marks: 6, contextNote: "Two properties for this SAME flooring. Full printed guidance: e.g. wood - durable, attractive, may get marked, etc. vinyl – available in a variety of colours, patterns, warm, soft, easy to clean, etc. carpet – wide variety of colours, pattern, designs, good insulator, absorbs noise, etc. marmoleum – wide variety of colours, patterns, easy-care, quiet, etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2010-ol-sc-q1cii-flooring-1","label":"Flooring 1","marks":9,"rowIds":["type-1","properties-1"]},{"sourceCardId":"he-2010-ol-sc-q1cii-flooring-2","label":"Flooring 2","marks":9,"rowIds":["type-2","properties-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sc-q2ai", topicId: "home-economics-3-8", conceptId: "sc-q2ai",
+    section: "C", questionRef: "2010 OL Section C E2 Q2(a)(i)",
+    questionText: "Comment on current fashion trends (male and female) as shown in the photograph above. Refer to: • colour / pattern • fashion influences • the use of accessories.",
+    tariffModel: {"kind":"fixed","notation":"6 points × 3"}, totalMarks: 18,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "fashion trends", marks: 18, contextNote: "Address all three printed headings and both outfits. The source gives six points at three marks, without a split between headings. Its fashion-influences answer bullet is blank; no missing model has been invented. Complete printed guidance: • colour / pattern: dress – black / grey / white; pattern introduced on bodice with lace type overlay also in panels on skirt. Suit – solid black with further colour (grey and white) and pattern introduced in shirt and cravat • • use of accessories: sunglasses, hat, belt, earrings, chain with medallion etc.", permittedMarks: [0,3,6,9,12,15,18], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]},{"id":"point-4","verbatim":"Point 4","marks":3,"permittedMarks":[0,3]},{"id":"point-5","verbatim":"Point 5","marks":3,"permittedMarks":[0,3]},{"id":"point-6","verbatim":"Point 6","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2010-ol-sc-q2-fashion",
+          "src": "/exam-figures/home-economics/home-economics-2010-ol-sc-q2-fashion.png",
+          "srcHash": "ed2b99c2a3e4a9c089b2bc77be378aa8",
+          "alt": "Original black-and-white photograph of two adults wearing formal outfits. Complete photograph retained: dress, suit, patterned shirt and neckwear, hat, sunglasses, belt and jewellery are visible.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 10 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sc-q2aii", topicId: "home-economics-3-8", conceptId: "sc-q2aii",
+    section: "C", questionRef: "2010 OL Section C E2 Q2(a)(ii)",
+    questionText: "Name and describe one method of applying a design to a jacket.",
+    tariffModel: {"kind":"fixed","notation":"Method 3 + description 2 × 2"}, totalMarks: 7,
+    rows: [
+    { id: "method", kind: "anyN", verbatim: "method", marks: 3, openList: true, group: {"claimMax":1,"perOption":3,"options":["appliqué","embroidery","quilting","beads","screen printing","roller printing","embossing"]} },
+    { id: "description", kind: "criterion", verbatim: "description", marks: 4, contextNote: "Two details of this SAME chosen method. The source gives one model: appliqué: decorative method of applying one fabric to another, the top fabric may be applied by hand or machine.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sc-q2bi", topicId: "home-economics-3-8", conceptId: "sc-q2bi",
+    section: "C", questionRef: "2010 OL Section C E2 Q2(b)(i)",
+    questionText: "Outline the contribution of cottage industries to the Irish clothing and textile industry.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "cottage industries", marks: 9, contextNote: "Use distinct points at the source’s printed value; no smaller steps are published. Complete source guidance: e.g. accounts for approximately 70% of all clothing businesses in Ireland, important in rural communities for employment, work is often subcontracted to locals to do at home, this is especially true of hand-weaving and hand knitting traditional crafts, e.g. Aran knitting, Carrickmacross lace, etc. are promoted by FÁS, I.C.A.T.A., offer support and advice etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sc-q2bii", topicId: "home-economics-3-8", conceptId: "sc-q2bii",
+    section: "C", questionRef: "2010 OL Section C E2 Q2(b)(ii)",
+    questionText: "State two reasons why career opportunities in the Irish clothing industry have declined.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 3"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "reasons", marks: 6, contextNote: "Use distinct points at the source’s printed value; no smaller steps are published. Complete source guidance: e.g. high cost of raw materials, transport, wages, competition from abroad, downturn in the Irish economy, etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sc-q2c", topicId: "home-economics-3-7", conceptId: "sc-q2c",
+    section: "C", questionRef: "2010 OL Section C E2 Q2(c)",
+    questionText: "Synthetic and regenerated fibres are increasingly used in the production of modern textiles. Write a profile of a fabric made from manufactured fibre under the following headings: • fibre production • properties • fabric uses.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 3; one reference to each + one other"}, totalMarks: 15,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "name", marks: 3, contextNote: "The original paper names three profile headings. The scheme additionally requires the fabric name, then production, properties and uses plus one further point. Its worked example is Nylon; no extra paper question has been invented.", permittedMarks: [0,3] },
+    { id: "production", kind: "criterion", verbatim: "fibre production", marks: 3, contextNote: "e.g. Nylon – two chemicals called monomers are mixed in a 1:1 ratio and heated creating a long chain polymer, the fibre is run onto a water-cooled revolving wheel, which cools the ribbon, it is then drawn through a cold water tank where it solidifies, it is cut into chips which have to be dried, they are then melted, extruded from a small hole, on contact with cold air they solidify into nylon yarn ready for spinning.", permittedMarks: [0,3] },
+    { id: "properties", kind: "criterion", verbatim: "properties", marks: 3, contextNote: "e.g. very strong, crease resistant, light to wear, drapes well, high abrasion resistance, can be ‘set’ permanently in size and shape which prevents stretching or shrinking after washing, easy to dye, good fire resistance, mildew resistant, etc.", permittedMarks: [0,3] },
+    { id: "uses", kind: "criterion", verbatim: "fabric uses", marks: 3, contextNote: "e.g. used in shirts, lingerie, stockings, tights, netting for bridal veils, snowsuits, ski clothes, windbreakers, knitted dresses and suits, carpets, soft furnishings, etc.", permittedMarks: [0,3] },
+    { id: "other", kind: "criterion", verbatim: "1 other point", marks: 3, contextNote: "One further distinct point about this SAME manufactured fabric. Complete printed guidance: • fibre production e.g. Nylon – two chemicals called monomers are mixed in a 1:1 ratio and heated creating a long chain polymer, the fibre is run onto a water-cooled revolving wheel, which cools the ribbon, it is then drawn through a cold water tank where it solidifies, it is cut into chips which have to be dried, they are then melted, extruded from a small hole, on contact with cold air they solidify into nylon yarn ready for spinning. • properties e.g. very strong, crease resistant, light to wear, drapes well, high abrasion resistance, can be ‘set’ permanently in size and shape which prevents stretching or shrinking after washing, easy to dye, good fire resistance, mildew resistant, etc. • fabric uses e.g. used in shirts, lingerie, stockings, tights, netting for bridal veils, snowsuits, ski clothes, windbreakers, knitted dresses and suits, carpets, soft furnishings, etc.", permittedMarks: [0,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sc-q3ai", topicId: "home-economics-3-9", conceptId: "sc-q3ai",
+    section: "C", questionRef: "2010 OL Section C E3 Q3(a)(i)",
+    stem: "‘Ireland has moved from having the second lowest unemployment rate among the EU-15 countries two years ago to the second highest.’ (Irish Independent, July 2009)",
+    questionText: "Discuss the effects of unemployment on • the family unit • the individual • society.",
+    tariffModel: {"kind":"fixed","notation":"4 effects × 5; one reference to each + one other"}, totalMarks: 20,
+    rows: [
+    { id: "family", kind: "criterion", verbatim: "the family unit", marks: 5, contextNote: "e.g. lack of money, decline in living standards, poverty, problems paying rent, bills etc, strain on family relationships, tension, children can suffer academically in school, may be tendency to turn to drink or drugs, loss of home, etc.", permittedMarks: [0,5] },
+    { id: "individual", kind: "criterion", verbatim: "the individual", marks: 5, contextNote: "e.g. loss of income, stress, feeling worthless, worry, guilt, loss of identity, status and self esteem, loss of social contact, depression, ill health, boredom, loneliness, isolation etc.", permittedMarks: [0,5] },
+    { id: "society", kind: "criterion", verbatim: "society", marks: 5, contextNote: "e.g. burden on state through payment of unemployment assistance, increased poverty and crime, increases emigration, creates inequalities within communities, increase in taxes, social problems, a growth in the black economy, etc.", permittedMarks: [0,5] },
+    { id: "other", kind: "criterion", verbatim: "1 other point", marks: 5, contextNote: "One further distinct effect from any of the three required headings. Complete source guidance: • the family unit e.g. lack of money, decline in living standards, poverty, problems paying rent, bills etc, strain on family relationships, tension, children can suffer academically in school, may be tendency to turn to drink or drugs, loss of home, etc. • the individual e.g. loss of income, stress, feeling worthless, worry, guilt, loss of identity, status and self esteem, loss of social contact, depression, ill health, boredom, loneliness, isolation etc. • society. e.g. burden on state through payment of unemployment assistance, increased poverty and crime, increases emigration, creates inequalities within communities, increase in taxes, social problems, a growth in the black economy, etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sc-q3aii", topicId: "home-economics-3-9", conceptId: "sc-q3aii",
+    section: "C", questionRef: "2010 OL Section C E3 Q3(a)(ii)",
+    stem: "‘Ireland has moved from having the second lowest unemployment rate among the EU-15 countries two years ago to the second highest.’ (Irish Independent, July 2009)",
+    questionText: "Outline the benefits of voluntary work to (a) the unemployed person and (b) the community.",
+    tariffModel: {"kind":"fixed","notation":"2 required headings × 2 benefits × 4"}, totalMarks: 16,
+    rows: [
+    { id: "person", kind: "criterion", verbatim: "unemployed person", marks: 8, contextNote: "e.g. rewarding, helps personal development, may lead to paid work, learning new skills, develop empathy when they see difficulties faced by others, opportunity to see different aspects of life, make new friends, occupies free time, etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "community", kind: "criterion", verbatim: "community", marks: 8, contextNote: "services provided quickly without bureaucracy and cost, attention focused on social issues, sense of community spirit, cleaner streets, etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sc-q3aiii", topicId: "home-economics-3-9", conceptId: "sc-q3aiii",
+    section: "C", questionRef: "2010 OL Section C E3 Q3(a)(iii)",
+    stem: "‘Ireland has moved from having the second lowest unemployment rate among the EU-15 countries two years ago to the second highest.’ (Irish Independent, July 2009)",
+    questionText: "Give details of two different types of support provided by voluntary organisations to families when the main wage earner is unemployed.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 7"}, totalMarks: 14,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "types of support", marks: 14, contextNote: "Use distinct points at the source’s printed value; no smaller steps are published. Complete source guidance: e.g. support can be financial, advisory, material – provided by St. Vincent de Paul, CIC, Rotary, Lions clubs etc. Can act as pressure groups, can offer government bodies detailed information and possible solutions, funding of classes to teach people the skills to help them cope with their situation, etc.", permittedMarks: [0,7,14], parts: [{"id":"point-1","verbatim":"Point 1","marks":7,"permittedMarks":[0,7]},{"id":"point-2","verbatim":"Point 2","marks":7,"permittedMarks":[0,7]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sc-q3bi", topicId: "home-economics-3-10", conceptId: "sc-q3bi",
+    section: "C", questionRef: "2010 OL Section C E3 Q3(b)(i)",
+    stem: "‘A litany of serious neglect in childcare standards at crèches and Montessori schools can be revealed today’. (Irish Independent, September 2009)",
+    questionText: "Outline the reasons why each of the following is important in crèches / pre-schools: • adequate levels of supervision • sufficient resources • high levels of hygiene and safety.",
+    tariffModel: {"kind":"fixed","notation":"6 reasons × 3; one reference to each + three others"}, totalMarks: 18,
+    rows: [
+    { id: "supervision", kind: "criterion", verbatim: "adequate levels of supervision", marks: 3, contextNote: "e.g. appropriate ratio of adults to children, to ensure that each child has adequate supervision for learning, play, eating, toileting, to enable children to interact, to enable development of independence, etc.", permittedMarks: [0,3] },
+    { id: "resources", kind: "criterion", verbatim: "sufficient resources", marks: 3, contextNote: "e.g. for children to learn at their own rate through play in a fun and active environment, to sleep/ eat as necessary, to give a positive start to their education, sufficient indoor and outdoor space for number of children, adequate age appropriate toys, etc., to stimulate curiosity, develop dexterity, etc.", permittedMarks: [0,3] },
+    { id: "hygiene", kind: "criterion", verbatim: "high levels of hygiene and safety", marks: 3, contextNote: "e.g. for health and safety of the child, to keep them free from infections in a safe environment, toys and furniture should all meet required safety standards, foods / beverages kept at required temperatures to prevent food poisoning etc.", permittedMarks: [0,3] },
+    { id: "other", kind: "criterion", verbatim: "3 others", marks: 9, contextNote: "Three further distinct reasons under any of the required headings. Complete source guidance: • adequate levels of supervision e.g. appropriate ratio of adults to children, to ensure that each child has adequate supervision for learning, play, eating, toileting, to enable children to interact, to enable development of independence, etc. • adequate resources e.g. for children to learn at their own rate through play in a fun and active environment, to sleep/ eat as necessary, to give a positive start to their education, sufficient indoor and outdoor space for number of children, adequate age appropriate toys, etc., to stimulate curiosity, develop dexterity, etc. • high levels of hygiene and safety. e.g. for health and safety of the child, to keep them free from infections in a safe environment, toys and furniture should all meet required safety standards, foods / beverages kept at required temperatures to prevent food poisoning etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sc-q3bii", topicId: "home-economics-3-10", conceptId: "sc-q3bii",
+    section: "C", questionRef: "2010 OL Section C E3 Q3(b)(ii)",
+    stem: "‘A litany of serious neglect in childcare standards at crèches and Montessori schools can be revealed today’. (Irish Independent, September 2009)",
+    questionText: "Explain how attending pre-school can assist a child’s development.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "development", marks: 12, contextNote: "Use distinct points at the source’s printed value; no smaller steps are published. Complete source guidance: e.g. socialisation, part of team, form relationships with other children, form relationships outside the home, learn to interact with others, become independent and confident, develop physically by playing games, intellectual development helped by learning in a stimulating environment, etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "he-2010-ol-sc-q3c", topicId: "home-economics-3-11", conceptId: "sc-q3c",
+    section: "C", questionRef: "2010 OL Section C E3 Q3(c)",
+    questionText: "The notion that work in the home is becoming evenly distributed among the sexes is a myth. Research shows that women are responsible for 86% of child supervision, 82% of care of adults and 80% of cooking. (Report from The National Women’s Council of Ireland, October 2009) Discuss how the burden of home care duties can affect women in relation to three of the following: • health • employment opportunities • leisure time • pension entitlements.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 6"}, totalMarks: 30,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "home care duties", marks: 30, contextNote: "Choose THREE of the four printed headings. Give at least one point under each chosen heading, then two further distinct points within those chosen headings. Five points at six marks; do not count the same point twice. Full original guidance, including the next scheme page: • health e.g. role overload with no time to themselves can cause stress, little support from working partner, can become depressed when children start school, no outside interests, put on weight and can be careless in appearance, lack of stimulation etc. • employment opportunities e.g. home care demands may result in women not being available for full time work or work not adjacent to home, lack of work experience can lead to difficulty getting employment, need to retrain, often working in the services sector on a part time basis, may never achieve managerial status, promotion, etc. • leisure time e.g. little or no time for leisure activities can lead to stress, money not available to join leisure centres, if partner’s attitude not positive can lead to friction, partner’s working hours, etc. • pension entitlements. e.g. as often engaged in homecare duties do not contribute to pension scheme so dependent on state pension; where employed on a part time / casual basis less opportunity to join an occupational pension scheme; career breaks / job sharing can lead to reduced pension entitlements, etc.", permittedMarks: [0,6,12,18,24,30], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,6]},{"id":"point-3","verbatim":"Point 3","marks":6,"permittedMarks":[0,6]},{"id":"point-4","verbatim":"Point 4","marks":6,"permittedMarks":[0,6]},{"id":"point-5","verbatim":"Point 5","marks":6,"permittedMarks":[0,6]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];

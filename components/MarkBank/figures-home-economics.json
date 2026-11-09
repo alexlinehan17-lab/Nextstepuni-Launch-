@@ -387,5 +387,61 @@
     "alt": "Original Bord Bia pie chart, Breakdown of Irish food and drink exports, 2008 (%). Dairy Products 29%, Beef 21%, Prepared Foods 18%, Beverages 15%, Pigmeat 4%, Seafood 4%, Other 9%. Complete title, seven sectors, labels and source caption retained.",
     "attribution": "SEC Home Economics 2010 Higher Level examination paper, page 6 — © State Examinations Commission.",
     "sourceNote": "Original PDF crop, bounds [150, 150, 505, 475], rendered at 2×. SHA256 c9f88d187078825ec013a482448f4ae3c157c8dbb1b4e65caaaae8415a6f8d94."
+  },
+  "home-economics-2010-ol-sa-q2": {
+    "src": "/exam-figures/home-economics/home-economics-2010-ol-sa-q2.png",
+    "md5": "6a6bda79217110a9b5505a3a02844437",
+    "alt": "Original carbohydrate cloze question with word bank: liver, energy, cellulose. All three sentences and answer blanks retained.",
+    "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 400.9676818847656, 560.219970703125, 566.5675048828125], rendered at2×. SHA256 e1adfeca6161ac67972b52855d105a2ce24a49a02401467896ff480dadc563cc."
+  },
+  "home-economics-2010-ol-sa-q4": {
+    "src": "/exam-figures/home-economics/home-economics-2010-ol-sa-q4.png",
+    "md5": "df47bb54ee33036bdccafabfc799a280",
+    "alt": "Original vitamin true/false table with all three statements and empty answer columns. Statements concern night blindness and vitamin A, vitamin C and iron absorption, and whether vitamin B is fat-soluble.",
+    "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 560.219970703125, 228.4076690673828], rendered at2×. SHA256 37d4c2b3dc82230a02cd3c1f35910839a672cdbb2e69ae4e7a7d06f45996e084."
+  },
+  "home-economics-2010-ol-sa-q7": {
+    "src": "/exam-figures/home-economics/home-economics-2010-ol-sa-q7.png",
+    "md5": "9433eb4719cac16f91f74787ddd22405",
+    "alt": "Original three-row flour and culinary-use table. Each row asks for a type of flour and one different matching culinary use.",
+    "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 587.1475830078125, 560.219970703125, 790], rendered at2×. SHA256 77e077e2939d6387494ba04753c698f8fea2ce04a8074f45082cc0db62fee714."
+  },
+  "home-economics-2010-ol-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2010-ol-sa-q8.png",
+    "md5": "a4be808aae8a52f88ff9f917cf790fe9",
+    "alt": "Original food-additive matching table. Given options: herbs and spices, vitamin E, turmeric. Given classes: Colourings, Flavourings, Antioxidants; answer cells blank.",
+    "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 560.219970703125, 256.0076599121094], rendered at2×. SHA256 0b77980d775bdb748d91bcf6e4c9300a7a877d164e986bf201669988c9dab0a9."
+  },
+  "home-economics-2010-ol-sa-q9-symbol": {
+    "src": "/exam-figures/home-economics/home-economics-2010-ol-sa-q9-symbol.png",
+    "md5": "009cef192a3c6a021507537100de9c6a",
+    "alt": "Original household-cleaning hazard symbol: a bold black diagonal cross inside a square; the identification and explanation are left to the student.",
+    "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [98, 390, 201, 498], rendered at2×. SHA256 3ca3e04191299eb3e8c265696e1ad07a045c6e4ae6de6da60c9bb33521ff0c2e."
+  },
+  "home-economics-2010-ol-sb-q1-milk": {
+    "src": "/exam-figures/home-economics/home-economics-2010-ol-sb-q1-milk.png",
+    "md5": "64cc1282e7bcc97ee7e2119cf94bf4b4",
+    "alt": "Original nutritional information per 100g: Whole Milk / Semi-skimmed Milk. Energy kcal 66 / 46; Protein (g) 3.3 / 3.5; Carbohydrates (g) 4.6 / 4.7; Fat (g) 3.9 / 1.7; Saturated fatty acids (g) 2.5 / 1.1; Calcium 118 / 120; Iron (mg) 0.03 / 0.02; Vitamin A (Retinol) 30 / 19; Folate 8 / 9; Vitamin C 2 / 2. All source rows and units retained; no missing units inferred.",
+    "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 180, 550, 462], rendered at2×. SHA256 484ad1d5d6682b67544cd878747cec2887ca37033fe3c2c2e55462581eb8eaad."
+  },
+  "home-economics-2010-ol-sc-q1-plan": {
+    "src": "/exam-figures/home-economics/home-economics-2010-ol-sc-q1-plan.png",
+    "md5": "79c40e64de6766603d7d77aedb8de380",
+    "alt": "Original two-bedroom house floor plan, with both bedrooms, bathroom, corridor, hall, lounge and kitchen/dining labels, walls, doors and windows intact. Blueprint Home Plans attribution retained.",
+    "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [130, 170, 505, 444], rendered at2×. SHA256 d0f7e57368324b1458f51b6f44653860425d1983be18f2aa568fbe10bba6d6da."
+  },
+  "home-economics-2010-ol-sc-q2-fashion": {
+    "src": "/exam-figures/home-economics/home-economics-2010-ol-sc-q2-fashion.png",
+    "md5": "ed2b99c2a3e4a9c089b2bc77be378aa8",
+    "alt": "Original black-and-white photograph of two adults wearing formal outfits. Complete photograph retained: dress, suit, patterned shirt and neckwear, hat, sunglasses, belt and jewellery are visible.",
+    "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 10 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [199, 85, 382, 350], rendered at2×. SHA256 7e336340a581f85609ec5d896ecb2b82550b0c0f1d319d65bd9da7077fa79eef."
   }
 }
