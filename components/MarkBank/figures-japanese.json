@@ -2057,5 +2057,181 @@
         0.674
       ]
     }
+  },
+  "ja-2019-hl-2a-1": {
+    "src": "/exam-figures/japanese/ja-2019-hl-2a-1.png",
+    "md5": "29721f2118382eb843ad0a0b402522e3",
+    "alt": "Complete the following table in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.06,
+        0.035,
+        0.96,
+        0.27
+      ]
+    }
+  },
+  "ja-2019-hl-2b-1": {
+    "src": "/exam-figures/japanese/ja-2019-hl-2b-1.png",
+    "md5": "eb0b3cc8e932c3c0472a221b449e838a",
+    "alt": "Write the meaning of the following Kanji in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.06,
+        0.055,
+        0.96,
+        0.44
+      ]
+    }
+  },
+  "ja-2019-hl-2b-2": {
+    "src": "/exam-figures/japanese/ja-2019-hl-2b-2.png",
+    "md5": "cbfa7a0eb1e005e44b20d7b61a687002",
+    "alt": "Write the reading of the following Kanji in Hiragana.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.06,
+        0.46,
+        0.96,
+        0.87
+      ]
+    }
+  },
+  "ja-2019-hl-2c-1": {
+    "src": "/exam-figures/japanese/ja-2019-hl-2c-1.png",
+    "md5": "c00720789b67124092c176c5faec18ef",
+    "alt": "Write the following in the past form as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.06,
+        0.055,
+        0.96,
+        0.44
+      ]
+    }
+  },
+  "ja-2019-hl-2c-2": {
+    "src": "/exam-figures/japanese/ja-2019-hl-2c-2.png",
+    "md5": "fcbc23b6be2ae6859b40d6f092291dd7",
+    "alt": "Write the correct form of each verb.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.06,
+        0.44,
+        0.96,
+        0.89
+      ]
+    }
+  },
+  "ja-2019-hl-3c": {
+    "src": "/exam-figures/japanese/ja-2019-hl-3c.png",
+    "md5": "82d1ccece89a0efa6174a5cb289c31a6",
+    "alt": "Circle the correct reading for the following Kanji and write the meaning in English as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.02,
+        0.025,
+        0.98,
+        0.42
+      ]
+    }
+  },
+  "ja-2019-hl-3d": {
+    "src": "/exam-figures/japanese/ja-2019-hl-3d.png",
+    "md5": "4c68be36d7936a7e5c361992339b36c0",
+    "alt": "Insert the correct particle into each blank space below. There may be more than one correct answer.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.06,
+        0.427,
+        0.98,
+        0.91
+      ]
+    }
+  },
+  "ja-2019-hl-4": {
+    "src": "/exam-figures/japanese/ja-2019-hl-4.png",
+    "md5": "88ac1f0fc5cbed3ef1b53cfde77bcbd3",
+    "alt": "Write about (a) OR (b) in approximately 200 Japanese characters.\n(a) You are just back from a holiday with your family. Write a short presentation to your Japanese class about your trip. Include answers to the following questions. (i) どこに行きましたか。 (ii) 一番楽（ばんたの）しかったことは何ですか。Nó/Or 一番楽（ばんたの）しくなかったことは何ですか。\nOR\n(b) You went to a party last weekend. Write a short presentation to your Japanese class about the party. Include answers to the following questions. (i) どこに行きましたか。 (ii) 一番楽（ばんたの）しかったことは何ですか。Nó/Or 一番楽（ばんたの）しくなかったことは何ですか。",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 14,
+      "region": [
+        0.045,
+        0.025,
+        0.97,
+        0.88
+      ]
+    }
+  },
+  "ja-2019-hl-5": {
+    "src": "/exam-figures/japanese/ja-2019-hl-5.png",
+    "md5": "11a2c408085cd869d1fae373d2679e17",
+    "alt": "Your Japanese friend is coming over to Ireland in September for the first time and will stay with you for a month. Write an email to your friend in approximately 320 Japanese characters covering ANY 4 of the following headings.\n1. 家族（かぞく）について              Faoi do theaghlach/\nAbout your family\n2. 家（いえ）について Faoi do theach/\nAbout your house\n3. 家（いえ）で食べる料理（りょうり） An bia a itheann tú sa bhaile/\nThe food you eat at home\n4. 町（まち）の施設（しせつ） Na háiseanna i do bhaile mór/\nFacilities in your town\n5. 町（まち）でいっしょにできること Nithe is féidir libh a dhéanamh le chéile sa bhaile mór/\nThings you can do together in town\n6. アイルランドの 9 月の天気 An aimsir in Éirinn i mí Mheán Fómhair/\nIrish weather in September",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 16,
+      "region": [
+        0.045,
+        0.025,
+        0.97,
+        0.88
+      ]
+    }
+  },
+  "ja-2019-hl-la": {
+    "src": "/exam-figures/japanese/ja-2019-hl-la.png",
+    "md5": "3188ae680c4a77c50a2a4e45edebd5d1",
+    "alt": "Complete the table below.\nWhat club are they in?\nWhen do they practice?\nWhere do they practice?\nWhy do they like their club?\n1.\n2.\n3.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 2,
+      "region": [
+        0.075,
+        0.17,
+        0.97,
+        0.83
+      ]
+    }
+  },
+  "ja-2019-hl-lb-1-v": {
+    "src": "/exam-figures/japanese/ja-2019-hl-lb-1-v.png",
+    "md5": "7f61596e66bfbd6b321e647edbc66703",
+    "alt": "To make a reservation, you should call:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 3,
+      "region": [
+        0.51,
+        0.598,
+        0.98,
+        0.69
+      ]
+    }
   }
 }

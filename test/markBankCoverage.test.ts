@@ -50,6 +50,8 @@ import japanese2023OrdinaryCensus from '../scripts/markbank/authoring/reviews/ja
 import japanese2023OrdinaryReview from '../scripts/markbank/authoring/reviews/japanese-2023-ol.json';
 import japanese2023HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2023-hl-census.json';
 import japanese2023HigherReview from '../scripts/markbank/authoring/reviews/japanese-2023-hl.json';
+import japanese2019HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2019-hl-census.json';
+import japanese2019HigherReview from '../scripts/markbank/authoring/reviews/japanese-2019-hl.json';
 import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/higher';
 import { CARDS as FRENCH_ORDINARY } from '../components/MarkBank/cards/french/ordinary';
 
@@ -61,8 +63,10 @@ const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
 const japaneseUnnumberedRefs = new Map(([
   [japanese2023HigherCensus, japanese2023HigherReview],
   [japanese2023OrdinaryCensus, japanese2023OrdinaryReview],
+  [japanese2019HigherCensus, japanese2019HigherReview],
 ] as const).flatMap(([census, review]) => census.tasks
-  .filter(task => task.key[0] === 'LD' && task.key[1] === null)
+  .filter(task => task.key[0] === 'LD' && task.key[1] === null
+    && (census.year === 2023 || 'paperRef' in task))
   .map(task => {
     const [section, , letter, roman] = task.key;
     const id = `ja-${census.year}-${census.level}-${task.key.filter(part => part !== null).join('-').toLowerCase()}`;
@@ -243,15 +247,17 @@ describe('Mark Bank paper-coverage ratchet', () => {
   });
 
   it('japanese unnumbered references reject another year, sibling, order or suffix', () => {
-    expect(japaneseUnnumberedRefs.size).toBe(18);
+    expect(japaneseUnnumberedRefs.size).toBe(22);
     for (const [id, ref] of japaneseUnnumberedRefs) {
       expect(isJapaneseUnnumberedRef(id, ref)).toBe(true);
-      expect(isJapaneseUnnumberedRef(id, ref.replace('2023', '2024'))).toBe(false);
+      expect(isJapaneseUnnumberedRef(id, ref.replace(/^\d{4}/, year => String(Number(year) + 1)))).toBe(false);
       expect(isJapaneseUnnumberedRef(id, ref + ' — unrelated')).toBe(false);
     }
     expect(isJapaneseUnnumberedRef('ja-2023-hl-ld-a-iv', '2023 HL Section LD(iv)(b)')).toBe(false);
     expect(isJapaneseUnnumberedRef('ja-2023-hl-ld-a-iv', '2023 HL Section LD(a)(iv)')).toBe(false);
     expect(isJapaneseUnnumberedRef('unbound-id', '2023 HL Section LD(i)')).toBe(false);
+    expect(isJapaneseUnnumberedRef('ja-2019-hl-ld-a-v', '2019 HL Section LD(v)(b)')).toBe(false);
+    expect(isJapaneseUnnumberedRef('ja-2019-hl-ld-a-v', '2019 HL Section LD(a)(v)')).toBe(false);
   });
 
   it('every subject with a deck is measured', () => {
