@@ -13,6 +13,21 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('shows the 2011 unresolved festival allocation and the complete accepted answer',async()=>{
+    reveal('ir1-i','ol',2011);
+    await waitFor(()=>expect(screen.getByText(/Source allocation conflict: the scheme gives 6 marks/)).toBeVisible());
+    expect(screen.getByText(/numeric self-scoring is unavailable/)).toHaveTextContent('No one-mark allocation or choose-three rule is inferred');
+    expect(screen.getByText("20.00o'clock")).toBeVisible();
+    await waitFor(()=>expect(screen.getByText("18.00o'clock")).toBeVisible());
+    await waitFor(()=>expect(screen.getByText('27th of August')).toBeVisible());
+  });
+  it('shows the 2011 date/place wording and all three printed accepted details',async()=>{
+    reveal('l4-1','ol',2011);
+    await waitFor(()=>expect(screen.getByText(/no separate one-date\/one-place restriction is printed/)).toBeVisible());
+    expect(screen.getByText('17th of May')).toBeVisible();
+    expect(screen.getByText('1992')).toBeVisible();
+    expect(screen.getByText('Moscow')).toBeVisible();
+  });
   it('shows the 2012 handwriting allocation and its printed bilingual total discrepancy',async()=>{
     reveal('ir1-iv-a','ol',2012);
     await waitFor(()=>expect(screen.getByText(/The two dish names carry 5 marks each and the drink name 3/)).toBeVisible());
