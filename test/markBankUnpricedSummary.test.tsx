@@ -31,6 +31,8 @@ const start = async () => {
 
 test('an unpriced source review is retained without zero-score analytics or a perfect-score summary', async () => {
   await start();
+  expect(screen.getByText(/Marks are not calculated for this task/)).toBeInTheDocument();
+  expect(screen.queryByText(/mark-based suggestion/)).not.toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
   expect(await screen.findByText('Your review is complete.')).toBeInTheDocument();
   expect(screen.getByText('1 answer review had no calculated marks.')).toBeInTheDocument();

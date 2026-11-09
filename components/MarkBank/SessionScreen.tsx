@@ -2989,15 +2989,14 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </figure>
             )}
 
+            {audioMaterial && <AudioSourcePlayer source={audioMaterial} />}
             {!printedQuestionReplacesText && (audioMaterial && !listeningKey ? (
               <>
-                <AudioSourcePlayer source={audioMaterial} />
                 <QuestionText text={assessmentCard.questionChoices ? assessmentCard.questionText.split('\n')[0] : assessmentCard.questionText} />
                 {assessmentCard.questionChoices && <FrenchQuestionChoices key={assessmentCard.id} options={assessmentCard.questionChoices} />}
               </>
             ) : audioMaterial ? (
               <>
-                <AudioSourcePlayer source={audioMaterial} />
                 <ListeningQuestionSet cards={listeningCards} />
               </>
             ) : assessmentCard.subjectId === 'french' && assessmentCard.questionChoices ? <>
@@ -3447,7 +3446,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       : !schemeInteracted
                       ? isRubricCard(assessmentCard)
                         ? <>No {rubricLabel} placement selected yet. Use the SEC grid above for a mark-based suggestion, or choose your own grade now.</>
-                        : <>No points selected yet. Select them above for a mark-based suggestion, or choose your own grade now.</>
+                        : showsRowMarks(assessmentCard)
+                          ? <>No points selected yet. Select them above for a mark-based suggestion, or choose your own grade now.</>
+                          : <>Compare your response with the scheme, then choose how securely you answered. Marks are not calculated for this task.</>
                       : isRubricCard(assessmentCard)
                         ? <>Your {rubricLabel} placement is {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
                         : showsRowMarks(assessmentCard)

@@ -2,6 +2,7 @@ import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import SessionScreen from '../components/MarkBank/SessionScreen';
 import type { CardAudioMaterial, SecCard, SecQuestionCard } from '../types/markBank';
+import { REVIEWED_CARDS as JAPANESE } from '../components/MarkBank/cards/japanese/reviewed';
 
 afterEach(cleanup);
 
@@ -33,6 +34,23 @@ function fixtures(subjectId: 'japanese' | 'russian'): SecCard[] {
 }
 
 describe('independently scored language listening sessions', () => {
+  it('retains the official audio when an original question crop replaces the typed prompt', () => {
+    const card = JAPANESE.find(candidate => candidate.id === 'ja-2022-ol-lb-1-v')!;
+    if (card.kind !== 'question') throw new Error('Expected the original point-question card');
+    expect(card.questionFigure?.includesPrompt).not.toBe(false);
+    expect(card.questionFigure).toBeDefined();
+    expect(card.audioMaterial).toBeDefined();
+    const { baseElement } = render(<SessionScreen cards={[card]} subjectLabel="Japanese"
+      onGrade={vi.fn()} onFinish={vi.fn()} onExit={vi.fn()} />);
+    expect(screen.getByRole('img', { name: card.questionFigure!.alt })).toBeInTheDocument();
+    expect(screen.queryByText(card.questionText)).not.toBeInTheDocument();
+    expect(baseElement.querySelectorAll('audio')).toHaveLength(1);
+    expect(baseElement.querySelector('audio')).toHaveAttribute('controls');
+    expect(baseElement.querySelector('audio')).toHaveAttribute('src', card.audioMaterial!.playbackUrl);
+    fireEvent.click(screen.getByRole('button', { name: 'Reveal the marking scheme' }));
+    expect(baseElement.querySelectorAll('audio')).toHaveLength(1);
+  });
+
   it.each(['japanese', 'russian'] as const)('shows and grades both %s tasks sharing a recording', subjectId => {
     const cards = fixtures(subjectId);
     const onGrade = vi.fn();
