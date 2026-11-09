@@ -1384,7 +1384,8 @@ def census_sections(subject, year, level, files=None):
                               and path.endswith('LC098ALP039EV.pdf')) else ()
         for block in (_business_blocks(path) if subject == 'business' else
                       PP._blocks(path, subject=subject if subject in PP.MANGLED_PAPERS or subject in PP.GUTTER_MARKERS else None,
-                                 skip_pages=skip_pages)):
+                                 skip_pages=skip_pages,
+                                 strip_pages=(4, 7, 9) if (subject, year, level) == ('home-economics', 2011, 'ol') else ())):
             # The answerbook's own back matter -- its instructions, its ruled
             # pages, the image acknowledgements and the copyright notice --
             # follows the last question in the SAME booklet, and the walker
@@ -1399,13 +1400,16 @@ def census_sections(subject, year, level, files=None):
                 # A part marker can extract with a stray space, '(C )' in the
                 # 2026 OL Section 2 paper, which hid its (C) under (B).
                 block = re.sub(r'\(([A-H]) \)', r'(\1)', block)
-            if subject == 'home-economics' and (year == 2010 and level in ('hl', 'ol') or (year, level) == (2011, 'hl')):
+            if subject == 'home-economics' and (year in (2010, 2011) and level in ('hl', 'ol')):
                 # The reviewed combined booklet merges its answer rules and
                 # next question into one PDF block. Quoted B heads follow a
                 # parenthesised tariff or a full stop; C's rubric precedes the elective
                 # in that same block. Preserve source text while exposing
                 # those real boundaries (paper pp2–5, 8–11). This is scoped
-                # to the independently swept 2010 levels and 2011 Higher only.
+                # to the independently swept 2010 and 2011 levels only.
+                # 2011 Ordinary pp4/7/9 use strip-set text with duplicated
+                # glyphs at strip edges. The positional reader above keeps
+                # each original glyph once and restores printed part markers.
                 block = re.sub(r'(?<=_)\s+(?=\d{1,2}\.\s+)', '\n', block)
                 block = re.sub(r'(?<=[.)])\s+(?=\d{1,2}\.\s+[A-Z‘])', '\n', block)
                 block = re.sub(r'\s+(?=Elective\s+\d\b)', '\n', block)
@@ -1420,9 +1424,9 @@ def census_sections(subject, year, level, files=None):
                               r'|\s+(?=\d{1,2}\.\s+\([a-z]\)\s+[A-Z])'
                               r'|(?<=\d)\s+(?=\d{1,2}\.\s+[A-Z][a-z]+\s)', block)
                       if subject == 'business' else block.split('\n')
-                      if subject == 'home-economics' and (year == 2010 and level in ('hl', 'ol') or (year, level) == (2011, 'hl')) else [block])
+                      if subject == 'home-economics' and (year in (2010, 2011) and level in ('hl', 'ol')) else [block])
             for text in (part for chunk in chunks for part in PP.INLINE_QHEAD.split(chunk)):
-                if (subject, year, level) == ('home-economics', 2011, 'hl'):
+                if subject == 'home-economics' and year == 2011 and level in ('hl', 'ol'):
                     # A's roman markers label answer spaces, including the
                     # two pictured symbols in Q12; they carry no prose asks.
                     # Preserve the whole question rather than an empty (i).
@@ -1597,7 +1601,7 @@ def census_sections(subject, year, level, files=None):
                          # its ruled roman blanks are correctly discarded.
                          # Those real question stems still establish A before
                          # B begins. Cover rubrics have no such question stem.
-                         or ((subject, year, level) in {('home-economics', 2010, 'ol'), ('home-economics', 2011, 'hl')}
+                         or ((subject, year, level) in {('home-economics', 2010, 'ol'), ('home-economics', 2011, 'hl'), ('home-economics', 2011, 'ol')}
                              and any(k[0] == section for k in stems))):
                 section, q, letter, roman = sh.group(1), None, None, None
             # 'Section 2 Applied Business Question 80 marks' is one block —
