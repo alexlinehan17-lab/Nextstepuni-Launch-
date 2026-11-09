@@ -245,7 +245,8 @@ def listening(docs,P):
             if (unit,item,roman)==('L2',1,'i'):
                 assert extra==['Accept relevant details from other sections e.g. vegetarian']
                 c['rubric']['groups'].append({'id':'vegetarian','label':'Other explicitly accepted detail','answerCount':1,'rows':[{'id':'full','text':'vegetarian','marks':price}]})
-            if unit=='L1':topic='russian-0-11' if item==1 else 'russian-0-8' if item==2 else 'russian-0-9'
+            # Irina's daily schedule and recommended routine: Everyday Life, not feelings.
+            if unit=='L1':topic='russian-2-2' if item==1 else 'russian-0-8' if item==2 else 'russian-0-9'
             elif unit=='L2':topic='russian-0-6' if item==3 and roman=='ii' else 'russian-0-2' if item==2 else 'russian-0-3'
             elif unit=='L3':topic='russian-0-8'
             else:topic='russian-0-1' if item==2 else 'russian-0-5' if item==3 else 'russian-0-7'

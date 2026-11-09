@@ -307,11 +307,12 @@ def listening(docs, P):
             if unit == 'L1':
                 topic = ('russian-0-3' if roman == 'ii' else 'russian-0-4') if item == 1 else 'russian-0-9' if item == 2 else 'russian-0-14'
             elif unit == 'L2':
-                topic = 'russian-0-1' if item == 1 and roman == 'i' else 'russian-0-6' if item == 3 else 'russian-0-3'
+                topic = 'russian-0-1' if item == 1 and roman == 'i' else 'russian-0-6' if item == 3 else 'russian-0-8' if item == 2 and roman == 'i' else 'russian-0-3'
             elif unit == 'L3':
-                topic = 'russian-0-3' if item == 3 else 'russian-0-5'
+                # Co-working access is Work; a package price is Goods & Services.
+                topic = 'russian-0-4' if item == 1 else 'russian-0-3' if item == 3 else 'russian-0-9' if roman == 'iii' else 'russian-0-5'
             else:
-                topic = 'russian-0-7' if item == 1 and roman == 'i' else 'russian-0-4' if item in (1, 2) else 'russian-2-5'
+                topic = ('russian-0-7' if roman == 'i' else 'russian-0-3') if item == 1 else 'russian-0-4' if item == 2 else 'russian-2-5'
             card['topicId'] = topic
             card['additionalTopicIds'] = ['russian-1-0']
             card['rubric']['taskRequirements'] = general
