@@ -56,10 +56,11 @@ describe('Japanese 2026 Higher source review', () => {
     expect(originalIds).toHaveLength(600);
     for (const id of originalIds) expect(live.has(id) || live.has(aliasMap[id]), id).toBe(true);
     const newIds = reviewed.filter(card => !originalIds.includes(card.id));
-    expect(newIds).toHaveLength(501);
-    expect(Object.keys(aliases)).toHaveLength(352);
+    expect(newIds).toHaveLength(540);
+    expect(Object.keys(aliases)).toHaveLength(391);
     expect(live.size).toBe(600 + newIds.length - Object.keys(aliases).length);
-    expect([...higher, ...ordinary].some(card => ['ja-2021-ol-2b-ii', 'ja-2021-ol-3a-4-iv'].includes(card.id))).toBe(false);
+    // Both were absent from the shipped literal baseline; the independently reviewed 2021 sitting now covers them.
+    expect(originalIds.some(id => ['ja-2021-ol-2b-ii', 'ja-2021-ol-3a-4-iv'].includes(id))).toBe(false);
   });
 
   it('emits the verified half-credit convention only for this source-reviewed sitting', () => {

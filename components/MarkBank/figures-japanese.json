@@ -1758,5 +1758,128 @@
         0.75
       ]
     }
+  },
+  "ja-2021-ol-2b": {
+    "src": "/exam-figures/japanese/ja-2021-ol-2b.png",
+    "md5": "4e95af7b903ee220790388107b09c740",
+    "alt": "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to support your answer as in the example.  Answer any five.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.075,
+        0.425,
+        0.97,
+        0.92
+      ]
+    }
+  },
+  "ja-2021-ol-2c": {
+    "src": "/exam-figures/japanese/ja-2021-ol-2c.png",
+    "md5": "8fe0774ecbb94102f2178405cf0b2d75",
+    "alt": "Circle the correct meaning (a), (b), (c) or (d) for the following Kanji as in the example.  Answer any ten.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 6,
+      "region": [
+        0.075,
+        0.58,
+        0.97,
+        0.9
+      ],
+      "continuations": [
+        {
+          "page": 7,
+          "region": [
+            0.075,
+            0.06,
+            0.97,
+            0.22
+          ]
+        }
+      ]
+    }
+  },
+  "ja-2021-ol-3b-1": {
+    "src": "/exam-figures/japanese/ja-2021-ol-3b-1.png",
+    "md5": "1cc61a800c69e04d20dfce5dbb335871",
+    "alt": "Write the underlined in the negative form as in the example. Answer any five.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 10,
+      "region": [
+        0.075,
+        0.345,
+        0.97,
+        0.618
+      ]
+    }
+  },
+  "ja-2021-ol-3b-2": {
+    "src": "/exam-figures/japanese/ja-2021-ol-3b-2.png",
+    "md5": "f3330c47973baba95c1752c22526bed8",
+    "alt": "Circle the correct particle (a), (b) or (c) below as in the example. Answer any five.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 10,
+      "region": [
+        0.075,
+        0.619,
+        0.97,
+        0.92
+      ]
+    }
+  },
+  "ja-2021-ol-4": {
+    "src": "/exam-figures/japanese/ja-2021-ol-4.png",
+    "md5": "1d88513f216ff874d0bec7a2a482ac19",
+    "alt": "Insert the missing words from the box below as in the example.  A word should be used only once.  Answer any ten.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 11,
+      "region": [
+        0.075,
+        0.04,
+        0.97,
+        0.91
+      ]
+    }
+  },
+  "ja-2021-ol-5": {
+    "src": "/exam-figures/japanese/ja-2021-ol-5.png",
+    "md5": "d34f9858c21dadab171f21842c6e4585",
+    "alt": "Answer ANY 5 of the following 8 questions about your summer holidays in Japanese in the spaces provided.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.05,
+        0.04,
+        0.97,
+        0.943
+      ]
+    }
+  },
+  "ja-2021-ol-lc-v": {
+    "src": "/exam-figures/japanese/ja-2021-ol-lc-v.png",
+    "md5": "c941e9257d2abe2f52b592568470fcd9",
+    "alt": "To contact the restaurant, call:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 4,
+      "region": [
+        0.52,
+        0.575,
+        0.97,
+        0.672
+      ]
+    }
   }
 }

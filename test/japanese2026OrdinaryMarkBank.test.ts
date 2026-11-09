@@ -57,14 +57,14 @@ describe('Japanese 2026 Ordinary independent source review', () => {
     }
     // Global frozen-ID/content and alias accounting is pinned independently by
     // markBankCardPreservation and the 2025/2026 Higher review tests.
-    expect(ordinary.filter(card => card.year !== 2026)).toHaveLength(261 + 42 - 22 + 40 - 40 + 41 - 34 + 40 - 41);
+    expect(ordinary.filter(card => card.year !== 2026)).toHaveLength(261 + 42 - 22 + 40 - 40 + 41 - 34 + 40 - 41 + 39 - 39);
     expect(cards.some(card => card.questionText.trim().length === 0)).toBe(false);
   });
 
   it('emits the exact reviewed convention, without extending it to unreviewed sittings', () => {
     const source = review.selectors.find(selector => selector.document === 'scheme' && selector.page === 3 && selector.row === 12 && selector.group === 1)!;
     for (const found of cards) expect(found.answerLanguageRule).toEqual({ otherLanguageMultiplier: 0.5, sourceText: source.text, schemePages: [3] });
-    expect(ordinary.filter(card => card.year < 2022).some(card => card.answerLanguageRule)).toBe(false);
+    expect(ordinary.filter(card => card.year < 2021).some(card => card.answerLanguageRule)).toBe(false);
   });
 
   it('retains the restaurant table, printed examples, underlines, cloze and prefilled phone number', () => {
