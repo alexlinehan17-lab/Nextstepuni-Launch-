@@ -159,7 +159,25 @@ describe('Japanese 2019-2022 written answer coverage', () => {
     expect(map.q.map(question => question.n)).toEqual(
       map.q.map((_, index) => String(index + 1)),
     );
-    expect(digest(map.q.slice(0, spec.base))).toBe(spec.baseHash);
+    const originalQuestions = map.q.slice(0, spec.base);
+    if (spec.year === 2022 && spec.level === 'ordinary') {
+      // The source review corrected these three labels from scheme numbering
+      // to the original paper's Q3 A5 / B1 / B2. Restore only those old strings
+      // for the frozen digest, retaining every old identity, page and region.
+      const labels: Record<string, [string, string]> = {
+        '19': ['Q3 · B (Answer in Japanese)', 'Q3 A · 5 (Answer in Japanese)'],
+        '20': ['Q3 C · 1 (Past tense)', 'Q3 B · 1 (Past tense)'],
+        '21': ['Q3 C · 2 (Particles)', 'Q3 B · 2 (Particles)'],
+      };
+      expect(digest(originalQuestions.map(question => {
+        const correction = labels[question.n];
+        if (!correction) return question;
+        expect(question.label).toBe(correction[1]);
+        return { ...question, label: correction[0] };
+      }))).toBe(spec.baseHash);
+    } else {
+      expect(digest(originalQuestions)).toBe(spec.baseHash);
+    }
   });
 
   it.each(specs)('$year $level presents the stable IDs in physical paper order', spec => {

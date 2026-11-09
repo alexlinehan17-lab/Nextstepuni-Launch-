@@ -56,8 +56,8 @@ describe('Japanese 2026 Higher source review', () => {
     expect(originalIds).toHaveLength(600);
     for (const id of originalIds) expect(live.has(id) || live.has(aliasMap[id]), id).toBe(true);
     const newIds = reviewed.filter(card => !originalIds.includes(card.id));
-    expect(newIds).toHaveLength(429);
-    expect(Object.keys(aliases)).toHaveLength(268);
+    expect(newIds).toHaveLength(469);
+    expect(Object.keys(aliases)).toHaveLength(309);
     expect(live.size).toBe(600 + newIds.length - Object.keys(aliases).length);
     expect([...higher, ...ordinary].some(card => ['ja-2021-ol-2b-ii', 'ja-2021-ol-3a-4-iv'].includes(card.id))).toBe(false);
   });
