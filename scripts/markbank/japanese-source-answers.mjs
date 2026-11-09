@@ -6,6 +6,40 @@ export const japaneseAnswerRows = card => [
   ...(card.answerVariants ?? []).flatMap(variant => variant.rows),
 ];
 
+/** One reviewed cloze-bank spelling, never a general Japanese normalization. */
+export function japaneseBoundBankAnswers(card, review) {
+  const bindings = (review.sourceAnswerBindings ?? []).filter(binding => binding.cardId === card.id);
+  if (!bindings.length) return new Set();
+  const expected = {
+    cardId: 'ja-2015-ol-4', answer: '日本りょうり', rowIds: ['r-1', 'r-4'],
+    paperSelector: { document: 'paper', page: 11, row: 17, group: 1, text: '日本りょうり' },
+    schemeSelectors: [
+      { document: 'scheme', page: 10, row: 2, group: 1, text: '日本りようり' },
+      { document: 'scheme', page: 10, row: 7, group: 0, text: '（大好き/日本料理  accepted if not used elsewhere）' },
+    ],
+  };
+  const same = (left, right) => JSON.stringify(left) === JSON.stringify(right);
+  if (bindings.length !== 1 || !same(bindings[0], expected)
+    || review.sitting !== '2015-ol' || card.kind !== 'question' || card.tariffModel?.kind !== 'fixed'
+    || card.answerVariants?.length || card.rows?.length !== 10 || card.sourceEvidence?.component !== 'paper'
+    || !same(card.sourceEvidence?.paperPages, [11]) || !same(card.sourceEvidence?.schemePages, [10])) {
+    throw new Error(`${card.id}: unsupported source-local bank spelling binding`);
+  }
+  const evidence = [expected.paperSelector, ...expected.schemeSelectors];
+  if (!evidence.every(selector => review.selectors.some(actual => same(actual, selector)))) {
+    throw new Error(`${card.id}: bank spelling is not bound to the exact original selectors`);
+  }
+  const matching = (card.rows ?? []).filter(row => row.verbatim === expected.answer
+    || (row.kind === 'anyN' && row.group.options.includes(expected.answer)));
+  if (!same(matching.map(row => row.id), expected.rowIds)
+    || !matching.every(row => row.kind === 'anyN' && row.contextNote?.includes('日本りようり')
+      && row.contextNote.includes('日本料理') && row.contextNote.includes('only once'))
+    || !matching[1].contextNote.includes(expected.schemeSelectors[1].text)) {
+    throw new Error(`${card.id}: bank spelling lost its row scope or visible original wording`);
+  }
+  return new Set([expected.answer]);
+}
+
 /** A selectable route must also bind to this task's reviewed physical pages. */
 export function assertJapaneseVariantSources(card, selectors, unprintedAnswer) {
   if (!card.answerVariants?.length) return;
