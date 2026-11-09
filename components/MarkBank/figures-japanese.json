@@ -1550,5 +1550,213 @@
         0.639
       ]
     }
+  },
+  "ja-2021-hl-1a-2": {
+    "src": "/exam-figures/japanese/ja-2021-hl-1a-2.png",
+    "md5": "c892af8622f36f63eefc91810d85913d",
+    "alt": "Complete the table.\nName of the top‐selling item\nDescription of item (two details)\nFor men\nFor women",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 3,
+      "region": [
+        0.07,
+        0.29,
+        0.94,
+        0.495
+      ]
+    }
+  },
+  "ja-2021-hl-2a-1": {
+    "src": "/exam-figures/japanese/ja-2021-hl-2a-1.png",
+    "md5": "9897c0c129856beb44b6262572e228d4",
+    "alt": "Complete the following table in English.\nHometown Nanzan /Reason for going to Physical description (two details)\nNanzan University\nRachel\nJun",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.06,
+        0.048,
+        0.95,
+        0.249
+      ]
+    }
+  },
+  "ja-2021-hl-2b-1": {
+    "src": "/exam-figures/japanese/ja-2021-hl-2b-1.png",
+    "md5": "378a2a0605e18e165c0bff34f8833451",
+    "alt": "Write the meaning of any FIVE of following Kanji in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.06,
+        0.06,
+        0.96,
+        0.47
+      ]
+    }
+  },
+  "ja-2021-hl-2b-2": {
+    "src": "/exam-figures/japanese/ja-2021-hl-2b-2.png",
+    "md5": "cca492bd9a767715222f84ac3ecfb77a",
+    "alt": "Write the reading of any FIVE of following Kanji in Hiragana.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.06,
+        0.474,
+        0.96,
+        0.92
+      ]
+    }
+  },
+  "ja-2021-hl-2c-1": {
+    "src": "/exam-figures/japanese/ja-2021-hl-2c-1.png",
+    "md5": "078b359748d45efb1a571b4c2b738901",
+    "alt": "Write the following in the negative form as in the example. Answer any FIVE.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.06,
+        0.06,
+        0.96,
+        0.44
+      ]
+    }
+  },
+  "ja-2021-hl-2c-2": {
+    "src": "/exam-figures/japanese/ja-2021-hl-2c-2.png",
+    "md5": "7ba3f046c16715dd9baecc4146722a48",
+    "alt": "Write the correct form of each verb. Answer any FIVE.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.06,
+        0.437,
+        0.96,
+        0.88
+      ]
+    }
+  },
+  "ja-2021-hl-3c": {
+    "src": "/exam-figures/japanese/ja-2021-hl-3c.png",
+    "md5": "bcad0a68eadd15bd08b437b3a4387691",
+    "alt": "Circle the correct reading for ANY FIVE of the following Kanji and write the meaning in English as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.06,
+        0.06,
+        0.98,
+        0.475
+      ]
+    }
+  },
+  "ja-2021-hl-3d": {
+    "src": "/exam-figures/japanese/ja-2021-hl-3d.png",
+    "md5": "034da75ade721a47a8b551d5a2d5df69",
+    "alt": "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.06,
+        0.478,
+        0.98,
+        0.91
+      ]
+    }
+  },
+  "ja-2021-hl-4": {
+    "src": "/exam-figures/japanese/ja-2021-hl-4.png",
+    "md5": "3ac5a554878843c7e3496bb0192b9447",
+    "alt": "Answer either Question 4 or Question 5.\nWrite about (a), (b) OR (c) in no less than 200 Japanese characters.\n(a) You are on holiday in Japan. Write a postcard to your Japanese teacher. Include answer to the following questions.\n(i) 何をしていますか。\n(ii) 天気はどうですか。\n(iii) 食べ物はどうですか。\nOR\n(b) It was your 18th birthday yesterday. Write a diary entry. Include answers to the following questions.\n(i) 何をしましたか。\n(ii) 何を食べましたか。\n(iii) とうでしたか。\nOR\n(c) You are writing to your Japanese e‐pal about your town. Include answers to the following questions.\n(i) どんな町（まち）ですか。\n(ii) 何がありますか。\n(iii) 好きですか。きらいですか。それはどうしてですか。",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 14,
+      "region": [
+        0.045,
+        0.015,
+        0.97,
+        0.92
+      ]
+    }
+  },
+  "ja-2021-hl-5": {
+    "src": "/exam-figures/japanese/ja-2021-hl-5.png",
+    "md5": "a5571f292417133250d6ebe8d0548a2b",
+    "alt": "Answer either Question 4 or Question 5.\nToday is your last day in school. Write an essay for an essay contest on Memories of your School (セカンダリースクールの思い出) in no less than 320 Japanese characters covering ANY 4 of the following headings.\n1. 一番楽（いちばんたの）しかったこと an rud (na rudaí) is mó a thaitin liom /\nThe most enjoyable thing(s)\n2. 一番（いちばん）大変（たいへん）だったこと an rud (na rudaí) ba dheacra /\nThe hardest thing(s)\n3. 日本語の勉強 Ag déanamh staidéir ar an tSeapáinis /\nStudying Japanese\n4. 休み時間 Amanna sosa /\nBreak times\n5．好きな先生 Múinteoirí a thaitníonn liom (a thaitin liom) /\nTeachers I like(d)\n6．友（とも）だち Cara (cairde) /\nA friend/ friends\n7. クラブ活動（かつどう） Gníomhaíochtaí sa chlub /\nClub activities\n8.  学校のイベント Imeacht (imeachtaí) scoile /\nSchool event(s)",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 16,
+      "region": [
+        0.045,
+        0.015,
+        0.97,
+        0.92
+      ]
+    }
+  },
+  "ja-2021-hl-la": {
+    "src": "/exam-figures/japanese/ja-2021-hl-la.png",
+    "md5": "44d98a75998b0cbdb90b8699d2485d00",
+    "alt": "Complete the table below.\nAge\nHobbies\nOne reason for studying Japanese\nHow are they studying Japanese?\nMaria\nMax\nSophie",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 2,
+      "region": [
+        0.075,
+        0.151,
+        0.97,
+        0.71
+      ]
+    }
+  },
+  "ja-2021-hl-lb-2": {
+    "src": "/exam-figures/japanese/ja-2021-hl-lb-2.png",
+    "md5": "b3e486db271506e7add649e0c0a744f1",
+    "alt": "Okinawa weather forecast\nWeather / Advice\nSaturday\nSunday",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 3,
+      "region": [
+        0.52,
+        0.69,
+        0.96,
+        0.925
+      ]
+    }
+  },
+  "ja-2021-hl-lc-vi": {
+    "src": "/exam-figures/japanese/ja-2021-hl-lc-vi.png",
+    "md5": "e21b280716ce8a761f0bd76dfaa88e92",
+    "alt": "To make a reservation, you can call:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 4,
+      "region": [
+        0.54,
+        0.675,
+        0.98,
+        0.75
+      ]
+    }
   }
 }
