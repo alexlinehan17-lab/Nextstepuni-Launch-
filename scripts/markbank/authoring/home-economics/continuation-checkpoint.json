@@ -10,12 +10,12 @@
   "currentCounts": {
     "subject": "home-economics",
     "mode": "sections",
-    "cards": 1391,
-    "leaves": 1693,
-    "covered": 1340,
+    "cards": 1442,
+    "leaves": 1711,
+    "covered": 1390,
     "excluded": 0,
-    "open": 353,
-    "coveragePct": 79.1,
+    "open": 321,
+    "coveragePct": 81.2,
     "orphans": [],
     "unparsed": [],
     "staleExclusions": [],
@@ -123,43 +123,10 @@
         "year": 2015,
         "level": "ol",
         "paper": null,
-        "leaves": 32,
-        "covered": 0,
+        "leaves": 50,
+        "covered": 50,
         "excluded": 0,
-        "open": [
-          "Section A Q1",
-          "Section A Q10",
-          "Section A Q11(a)",
-          "Section A Q11(b)",
-          "Section A Q11(c)(i)",
-          "Section A Q11(c)(ii)",
-          "Section A Q11(d)",
-          "Section A Q2",
-          "Section A Q3",
-          "Section A Q4",
-          "Section A Q7",
-          "Section A Q8",
-          "Section C Q1(a)",
-          "Section C Q1(b)(i)",
-          "Section C Q1(b)(ii)",
-          "Section C Q1(c)(i)",
-          "Section C Q1(c)(ii)",
-          "Section C Q2(i)",
-          "Section C Q2(ii)",
-          "Section C Q2(iii)",
-          "Section C Q2(a)(i)",
-          "Section C Q2(a)(ii)",
-          "Section C Q2(b)",
-          "Section C Q2(c)(i)",
-          "Section C Q2(c)(ii)",
-          "Section C Q3(a)(i)",
-          "Section C Q3(a)(ii)",
-          "Section C Q3(a)(iii)",
-          "Section C Q3(b)(i)",
-          "Section C Q3(b)(ii)",
-          "Section C Q3(c)(i)",
-          "Section C Q3(c)(ii)"
-        ]
+        "open": []
       },
       {
         "year": 2016,
@@ -709,17 +676,17 @@
         "open": []
       }
     ],
-    "censusFlags": 23,
+    "censusFlags": 22,
     "unreadPapers": []
   },
   "nextActions": [
-    "2010–2014 Higher/Ordinary and2015Higher original-source reviews complete. Independently sweep2015Ordinary next, then2016–2020 both levels and remaining published deferred.",
+    "2010–2015 Higher/Ordinary original-source reviews complete. Independently sweep2016Higher next, then remaining2016–2020 both levels and remaining published deferred.",
     "2023 Higher/Ordinary English main source reviews complete: 59/60 tasks. 2023 Higher deferred source review complete: 58 tasks, 749 offered practice marks, all mapped to Atlas. Browser QA pending.",
     "2022 Higher deferred source review complete: all 61 tasks (749 offered practice marks), 23 Atlas question groups, all 79 source pages independently swept. Browser QA pending.",
     "Live SEC inventory: English Home Economics deferred publications found for 2022/2023 Higher only; no subject listing for 2024/2025, and no 2026 deferred year offered. Absence is a publication finding, not proof no exam was sat.",
     "Preserve prior card identities and progress, reconcile each verified batch, integrate locally and continue. Browser QA remains pending: browser host unavailable and native Chrome is in active use."
   ],
-  "coveragePolicy": "Raw census is diagnostic only:353open candidates and23flags do not independently count outstanding tasks.2015Higher source-complete after49-page independent visual sweep:49original leaves reconcile to48priced tasks because B1(a)(i)/(ii) share a flexible24-mark tariff. Whole subject remains in progress.",
+  "coveragePolicy": "Raw census is diagnostic only:321 open candidates and22 flags do not independently count outstanding tasks.2015Ordinary source-complete after48-page independent visual sweep:50 original leaves reconcile to51 priced tasks, with shared fish nutrition/diet tariff, separate cooking method names/explanation and house-plan evaluation/modifications documented. Whole subject remains in progress.",
   "integratedBatches": [
     {
       "workCommit": "14e08691b",
@@ -838,23 +805,23 @@
     }
   ],
   "latestValidatedBatch": {
-    "scope": "2015Higher main:48tasks,ten original figures,20preserved Atlas IDs.",
-    "runtimeCards": 1391,
+    "scope": "2015Ordinary main:51tasks,six original figures,20preserved Atlas IDs.",
+    "runtimeCards": 1442,
     "higher": 776,
-    "ordinary": 615,
-    "sourceReview": "2015-hl-main-review.json",
+    "ordinary": 666,
+    "sourceReview": "2015-ol-main-review.json",
     "validation": {
-      "runtime": "309 required/sitting tests passed:232 required plus seven each 2010–2014 Higher/Ordinary and2015Higher; maxWorkers1.",
-      "mandatoryRawSourceGate": "Explicit2010–2015 original-PDF hash/key gates passed.2015Higher49 pinned original leaves reconcile to48priced tasks because B1(a)(i)/(ii) share one flexible24-mark tariff. Normal Vitest has no local archive/Python dependency.",
-      "atlas": "Two targeted Home Economics gates passed:68 tagged papers,812physical groups,1007registry mappings. All20 original identities retained; exact runtime count995 unchanged.",
+      "runtime": "316 required/sitting tests passed:232 required plus seven each 2010–2015 Higher/Ordinary; maxWorkers1. Seven sitting tests passed on the first full run; two new cards were moved from the general Food&Nutrition heading to specific canonical MealPlanning&Preparation/Diet&Health nodes before the complete successful rerun.",
+      "mandatoryRawSourceGate": "Explicit2010–2015 original-PDF hash/key gates passed.2015Ordinary50 independent original leaves reconcile to51 priced tasks; exact exceptions documented separately. Normal Vitest has no local archive/Python dependency.",
+      "atlas": "Two targeted Home Economics gates passed:69 tagged papers,832 physical groups,1008 registry mappings. All20 original IDs retained. Formerly unmapped original A6 food-spoilage group adds one exact mapping995→996.",
       "mainTypecheck": "passed",
       "scoped2015TestTypecheck": "passed",
       "productionBuild": "passed; only own reproducible untracked dist removed after success",
-      "cardlint": "clean;1417 authored records including withdrawals inspected",
-      "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across33 generated files.",
-      "reconciliation": "2015HL49/49 raw leaves covered,48priced tasks,zero sitting opens/exclusions/continuity flags. Lane1391cards776HL/615OL;1340/1693raw leaves covered,353open,zero orphan/unparsed/excluded,23flags.",
+      "cardlint": "clean;1468 authored records including withdrawals inspected",
+      "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across29 generated files.",
+      "reconciliation": "2015OL50/50 raw leaves covered,51 priced tasks,zero sitting opens/exclusions/continuity flags. Lane1442 cards776HL/666OL;1390/1711 raw leaves covered,321 open,zero orphan/unparsed/excluded,22 flags.",
       "preservation": "Every earlier authored card, unrelated deck, other sizes/showcase subjects, full/decoded nonHE Atlas data, unrelated HE tags/runtime/associations and every other HE raw census sitting unchanged. Frozen identity hashes unchanged.",
-      "browser": "Parent-owned/pending. All ten original crops individually visually inspected:five question inputs and five original answer tables."
+      "browser": "Parent-owned/pending. All six original question crops individually visually inspected, including final trimmed A tables."
     }
   },
   "knownExistingValidationIssues": [

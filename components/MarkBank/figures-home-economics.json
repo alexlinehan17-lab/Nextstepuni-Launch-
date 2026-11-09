@@ -927,5 +927,47 @@
     "attribution": "SEC Home Economics 2015 Higher Level marking scheme, page 16 — © State Examinations Commission.",
     "sourceNote": "Original PDF crop, bounds [67.86000156402588, 549.6599731445312, 534.6599731445312, 734.4599990844727], rendered at 2.5×. SHA256 130d96814007ae884d4f51c0f8ca002e467cab9a9fc086ea5937b990c54f599c.",
     "solution": true
+  },
+  "home-economics-2015-ol-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2015-ol-sa-q1.png",
+    "md5": "566e3656b4a6a2a38d328b56f315db81",
+    "alt": "Original calcium true/false table with all three complete statements and blank True/False columns.",
+    "attribution": "SEC Home Economics 2015 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [35, 138.7676544189453, 570.219970703125, 282.55997467041016], rendered at 2.5×. SHA256 cecf04d5c037209c01acca239076240810cec68c42c8d037b5b7d1029d7b5da5."
+  },
+  "home-economics-2015-ol-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2015-ol-sa-q6.png",
+    "md5": "883e07e408ed2312b7d2c8da4948f67e",
+    "alt": "Original food-spoilage true/false table with all three complete statements and blank True/False columns.",
+    "attribution": "SEC Home Economics 2015 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [35, 426.2875061035156, 570.219970703125, 583.8200073242188], rendered at 2.5×. SHA256 daca9cbdbd309b5987a16bff2e369bca5ca0c1f57db37acfbd96c346600de783."
+  },
+  "home-economics-2015-ol-sa-q7": {
+    "src": "/exam-figures/home-economics/home-economics-2015-ol-sa-q7.png",
+    "md5": "f47581b64d0827ca4e63b32b551cf78f",
+    "alt": "Original cheese matching question: all three supplied choices and complete Hard/Soft/Processed cheese blank rows.",
+    "attribution": "SEC Home Economics 2015 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [35, 39.88777160644531, 570.219970703125, 211.30000813802084], rendered at 2.5×. SHA256 4e8fd7f962e67ba3e9e495d7fa285ccc2e5eb5e713355a779c302ab0f8bd78df."
+  },
+  "home-economics-2015-ol-sb-q1-meats": {
+    "src": "/exam-figures/home-economics/home-economics-2015-ol-sb-q1-meats.png",
+    "md5": "474328500295550b2fa3c3cef1663396",
+    "alt": "Original four-meat nutritional table: Beef, Chicken, Liver and Pork, all five nutrient columns, every value and original unit.",
+    "attribution": "SEC Home Economics 2015 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [84.25999895731609, 196.08001708984375, 527.5600179036459, 341.4942932128906], rendered at 2.5×. SHA256 c23c13aabed77f5f4ccb784ad964372077693dc2fe850494f40d0dfba18f6faf."
+  },
+  "home-economics-2015-ol-sc-q3-school": {
+    "src": "/exam-figures/home-economics/home-economics-2015-ol-sc-q3-school.png",
+    "md5": "d5a47cdcd0da284e3dbfef872c3bacae",
+    "alt": "Original school-leaver table: every year group and count1,500/1,777/1,064/3,299 from2009/2010, preserving the chart input.",
+    "attribution": "SEC Home Economics 2015 Ordinary Level examination paper, page 11 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [117.43999926249187, 138.5400390625, 485.0199839274089, 276.25998942057294], rendered at 2.5×. SHA256 8ff921a7fd3dd3f9cd23ff01e458809f6ab539a35962ea83e3e03c52773a325b."
+  },
+  "home-economics-2015-ol-sc-q1-plan": {
+    "src": "/exam-figures/home-economics/home-economics-2015-ol-sc-q1-plan.png",
+    "md5": "369e305b4fbee090c2f88c543db37f3c",
+    "alt": "Complete original floor plan for Sean and Julie: all four bedrooms, bathroom, ensuite, WC, kitchen/dining, utility, garage and lounge, with every door/wall and original label.",
+    "attribution": "SEC Home Economics 2015 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [104.94000244140625, 198.05999755859375, 503.0400085449219, 408.6600036621094], rendered at 2.5×. SHA256 4b69ca311c4935d83d1e0660dd28d8b188de64ed1af82d830930ad2cbdb8c07d."
   }
 }
