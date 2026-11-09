@@ -1331,6 +1331,15 @@ export interface LanguagePointsRubric {
   system: 'language-points';
   taskRequirements: string[];
   count: number;
+  /** An explicitly published cap across selected groups, before separate
+   * whole-task criteria. A global answerCount counts individual row answers
+   * after each group's own quota, not the number of selected groups. */
+  allocationCap?: {
+    maxMarks: number;
+    answerCount?: number;
+    sourceText: string;
+    schemePages: number[];
+  };
   /** Whole-task criteria in addition to the chosen answers, e.g. the SEC's
    * separately awarded discretionary marks. Never silently granted. */
   criteria?: LanguageWritingCriterion[];
@@ -1647,7 +1656,41 @@ export function tariffReconciles(card: SecCard): boolean {
         && group.rows.every(row => row.id && row.text.trim() && Number.isInteger(row.marks) && row.marks > 0 && (!row.steps || validSteps(row.steps, row.marks))))) return false;
       const maxima = groups.map(group => group.rows.map(row => row.marks).sort((a, b) => b - a)
         .slice(0, group.answerCount ?? group.rows.length).reduce((sum, mark) => sum + mark, 0) + groupCriterionTotal(group)).sort((a, b) => b - a);
-      return maxima.slice(0, count).reduce((sum, mark) => sum + mark, 0) + criterionTotal === card.totalMarks;
+      let allocationMaximum = maxima.slice(0, count).reduce((sum, mark) => sum + mark, 0);
+      const cap = rubric.allocationCap;
+      if (cap) {
+        if (!Number.isInteger(cap.maxMarks) || cap.maxMarks <= 0 || !cap.sourceText.trim()
+          || !cap.schemePages.length || !cap.schemePages.every(page => Number.isInteger(page) && page > 0)) return false;
+        if (cap.answerCount !== undefined) {
+          const answerCount = cap.answerCount;
+          const maximumRows = groups.map(group => group.answerCount ?? group.rows.length).sort((a, b) => b - a)
+            .slice(0, count).reduce((sum, rows) => sum + rows, 0);
+          if (!Number.isInteger(answerCount) || answerCount < 1 || answerCount > maximumRows
+            || groups.some(group => !!group.criteria?.length)) return false;
+          // Compute an achievable maximum under BOTH quotas. Simply taking
+          // the highest group totals can overstate a three-detail allocation
+          // when one group contains two separately credited details.
+          let best = Array.from({ length: count + 1 }, () => Array<number>(answerCount + 1).fill(-Infinity));
+          best[0][0] = 0;
+          for (const group of groups) {
+            const rows = group.rows.map(row => row.marks).sort((a, b) => b - a)
+              .slice(0, group.answerCount ?? group.rows.length);
+            const next = best.map(values => [...values]);
+            for (let chosen = 0; chosen < count; chosen++) for (let used = 0; used <= answerCount; used++) {
+              let marks = 0;
+              for (let take = 1; take <= rows.length && used + take <= answerCount; take++) {
+                marks += rows[take - 1];
+                next[chosen + 1][used + take] = Math.max(next[chosen + 1][used + take], best[chosen][used] + marks);
+              }
+            }
+            best = next;
+          }
+          allocationMaximum = Math.max(...best.flat());
+        }
+        if (cap.maxMarks > allocationMaximum) return false;
+        allocationMaximum = cap.maxMarks;
+      }
+      return allocationMaximum + criterionTotal === card.totalMarks;
     }
     if (card.rubric.system === 'politics') {
       const { criteria, schemePages, schemeFileid } = card.rubric;

@@ -57,14 +57,18 @@ export function languagePointsMarks(rubric: LanguagePointsRubric, scores: Langua
   const individualRule = responseMultiplier === 1 ? rule : undefined;
   // Selection is explicit even if every component of an option earned zero.
   // Defensive slicing also prevents stale or tampered state exceeding quota.
-  const allocation = rubric.groups.filter(group => scores[languageGroupId(group.id)] === 1).slice(0, rubric.count)
-    .reduce((total, group) => total + group.rows.map(row => {
+  const selectedGroups = rubric.groups.filter(group => scores[languageGroupId(group.id)] === 1).slice(0, rubric.count);
+  const rowMarks = selectedGroups.flatMap(group => group.rows.map(row => {
       const selected = scores[languageRowId(group.id, row.id)] ?? 0;
       const earned = row.steps ? row.steps.includes(selected) ? selected : 0 : selected === 1 ? row.marks : 0;
       return earned * languageCreditMultiplier(individualRule, scores, `row:${group.id}:${row.id}`);
-    }).sort((a, b) => b - a).slice(0, group.answerCount ?? group.rows.length).reduce((sum, mark) => sum + mark, 0)
-      + (group.criteria ? languageWritingMarks({ ...rubric, system: 'language-writing', criteria: group.criteria }, scores)
-        * languageCreditMultiplier(individualRule, scores, `group:${group.id}`) : 0), 0);
+    }).sort((a, b) => b - a).slice(0, group.answerCount ?? group.rows.length));
+  const rowAllocation = rowMarks.sort((a, b) => b - a).slice(0, rubric.allocationCap?.answerCount ?? rowMarks.length)
+    .reduce((sum, mark) => sum + mark, 0);
+  const groupCriteria = selectedGroups.reduce((sum, group) => sum + (group.criteria
+    ? languageWritingMarks({ ...rubric, system: 'language-writing', criteria: group.criteria }, scores)
+      * languageCreditMultiplier(individualRule, scores, `group:${group.id}`) : 0), 0);
+  const allocation = Math.min(rowAllocation + groupCriteria, rubric.allocationCap?.maxMarks ?? Infinity);
   return (allocation + (rubric.criteria ? languageWritingMarks({ ...rubric, system: 'language-writing', criteria: rubric.criteria }, scores) : 0)) * responseMultiplier;
 }
 

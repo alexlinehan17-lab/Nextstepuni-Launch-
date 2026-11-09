@@ -15,6 +15,9 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
   const lengths = [...new Set(conditions.flatMap(condition => 'length' in condition ? [condition.length] : []))];
   const flags = [...new Map(conditions.flatMap(condition => 'flag' in condition ? [[condition.flag, condition] as const] : [])).values()];
   const selectedGroups = rubric.system === 'language-points' ? rubric.groups.filter(group => scores[languageGroupId(group.id)] === 1).length : 0;
+  const claimedDetails = rubric.system === 'language-points' ? rubric.groups
+    .filter(group => scores[languageGroupId(group.id)] === 1)
+    .reduce((sum, group) => sum + group.rows.filter(row => (scores[languageRowId(group.id, row.id)] ?? 0) > 0).length, 0) : 0;
   const renderCriterion = (criterion: LanguageWritingCriterion, criterionRubric: LanguageWritingRubric, disabled = false) => {
       const limits = languageCriterionLimits(criterionRubric, criterion, scores, [criterion.id]);
       const cap = Math.min(criterion.maxMarks, ...limits.map(limit => limit.maxMarks));
@@ -58,7 +61,13 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
     {rubric.system === 'language-writing' && otherLanguageControl('response', 'Response')}
     {rubric.system === 'language-points' && <>
       {otherLanguageControl('response', 'All answers')}
-      <p>Select the {rubric.count} items you answered, then claim each component.</p>
+      <p>{rubric.allocationCap?.answerCount
+        ? `Select up to ${rubric.count} groups, then claim up to ${rubric.allocationCap.answerCount} details in total.`
+        : `Select the ${rubric.count} items you answered, then claim each component.`}</p>
+      {rubric.allocationCap && <>
+        <p>These answers earn up to {rubric.allocationCap.maxMarks} marks altogether.</p>
+        <p>{rubric.allocationCap.sourceText}</p>
+      </>}
       {rubric.groups.map(group => {
         const selected = scores[languageGroupId(group.id)] === 1;
         const claimed = group.rows.filter(row => (scores[languageRowId(group.id, row.id)] ?? 0) > 0).length;
@@ -68,7 +77,9 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
             onClick={() => onScore(languageGroupId(group.id), selected ? 0 : 1)}>{group.label}</button>
           {group.rows.map(row => {
             const value = scores[languageRowId(group.id, row.id)] ?? 0;
-            return <React.Fragment key={row.id}><ClaimRow text={row.text} marks={row.marks} steps={row.steps} claimed={value > 0} value={value} disabled={!selected || (value === 0 && claimed >= (group.answerCount ?? group.rows.length))}
+            const quotaReached = claimed >= (group.answerCount ?? group.rows.length)
+              || claimedDetails >= (rubric.allocationCap?.answerCount ?? Infinity);
+            return <React.Fragment key={row.id}><ClaimRow text={row.text} marks={row.marks} steps={row.steps} claimed={value > 0} value={value} disabled={!selected || (value === 0 && quotaReached)}
               onToggle={() => onScore(languageRowId(group.id, row.id), value ? 0 : 1)}
               onStep={mark => onScore(languageRowId(group.id, row.id), value === mark ? 0 : mark)} />
               {otherLanguageControl(`row:${group.id}:${row.id}`, row.text, !selected)}
