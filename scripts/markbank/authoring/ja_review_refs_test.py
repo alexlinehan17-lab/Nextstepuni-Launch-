@@ -1,4 +1,4 @@
-"""Source-gate regressions for Japanese printed nested listening references."""
+"""Source-gate regressions for Japanese printed nested references."""
 import unittest
 
 from ja_review_refs import bind_japanese_ref, reviewed_japanese_refs
@@ -8,8 +8,10 @@ from reconcile import match_leaves, parse_ref
 class PrintedJapaneseReferences(unittest.TestCase):
     def test_nested_tasks_cover_only_their_independently_censused_leaf(self):
         bindings = reviewed_japanese_refs()
-        self.assertEqual(len(bindings), 18)
+        self.assertEqual(len(bindings), 20)
         self.assertEqual(sum(binding['q'] is None for binding in bindings.values()), 6)
+        self.assertEqual({cid for cid, binding in bindings.items() if not binding['section'].startswith('L')},
+                         {'ja-2017-hl-1a-2-a-ii', 'ja-2017-hl-1a-2-b-ii'})
         for cid, binding in bindings.items():
             with self.subTest(card=cid):
                 section, q = binding['section'], binding['q']
