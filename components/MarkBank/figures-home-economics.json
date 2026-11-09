@@ -689,5 +689,61 @@
     "alt": "Original five-shelf Food Pyramid daily-servings table with complete SLAN 2007 source caption. 1998/2007 percentages: cereals/breads/potatoes40/26; fruit/vegetables56/65; milk/cheese/yoghurt22/20; meat/fish/poultry/alternatives36/39; top shelf fats/sugar/salt14/14. All original shelf names and daily-serving limits retained.",
     "attribution": "SEC Home Economics 2013 Higher Level examination paper, page 6 — © State Examinations Commission.",
     "sourceNote": "Original PDF crop, bounds [81, 175, 541, 468], rendered at 2.5×. SHA256 953c0bf7e273b4e4f8e423e06b82778918294ed9cb5660a68af3827b6f28d050."
+  },
+  "home-economics-2013-ol-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2013-ol-sa-q1.png",
+    "md5": "cebe72be850dafd0087177f43e98382e",
+    "alt": "Original fat-classification question with the complete avocado, sardines, cheese choice pool and blank Animal, Vegetable (Plant), Marine table.",
+    "attribution": "SEC Home Economics 2013 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 138.7676544189453, 570.219970703125, 341.0876770019531], rendered at 2.5×. SHA256 846082f200ae5695afca5f95fa6f480ccff99988816b92de3671f2f1a45608cc."
+  },
+  "home-economics-2013-ol-sa-q3": {
+    "src": "/exam-figures/home-economics/home-economics-2013-ol-sa-q3.png",
+    "md5": "41464cd9315679d1b7072fcab6553dd3",
+    "alt": "Original coronary-heart-disease true/false question table, all three full statements and blank True/False columns.",
+    "attribution": "SEC Home Economics 2013 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 546.4676513671875, 570.219970703125, 786.5319213867188], rendered at 2.5×. SHA256 6f5369f4fe0fbafe521434a4460814e5e0189c4f6bf362f342bbdfcca1d3ad64."
+  },
+  "home-economics-2013-ol-sa-q4": {
+    "src": "/exam-figures/home-economics/home-economics-2013-ol-sa-q4.png",
+    "md5": "6942bd2f84ac8b90bb7dae0e43cea260",
+    "alt": "Original cooking-method question table with Moist cooking methods, Dry cooking methods and Frying columns, two blank example rows for each.",
+    "attribution": "SEC Home Economics 2013 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88777160644531, 570.219970703125, 188.2676544189453], rendered at 2.5×. SHA256 d00bf5e2f42ea65faf604b1e865cbd0f038f8c98b7298c5e37f770c80c14c801."
+  },
+  "home-economics-2013-ol-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2013-ol-sa-q6.png",
+    "md5": "75e790559c18c69668cbcc252888cfe6",
+    "alt": "Original soup true/false question table, all three full statements and blank True/False columns.",
+    "attribution": "SEC Home Economics 2013 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 367.66766357421875, 570.219970703125, 542.3876342773438], rendered at 2.5×. SHA256 7fd966cbc4ef68459a97cb9b192e43b29c31068c44c6329516bb1ca75d4cf7a4."
+  },
+  "home-economics-2013-ol-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2013-ol-sa-q8.png",
+    "md5": "06e71aace99c7e12814d5c17a338082a",
+    "alt": "Original complete textile-care symbols: hand in wash tub and crossed-out tumble-dryer symbol, both with full blank response spaces.",
+    "attribution": "SEC Home Economics 2013 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88777160644531, 570.219970703125, 328.7276306152344], rendered at 2.5×. SHA256 f3b9d4a0321d227b8fb84e8701dcdd20021093844823955233493172745bb385."
+  },
+  "home-economics-2013-ol-sa-q11": {
+    "src": "/exam-figures/home-economics/home-economics-2013-ol-sa-q11.png",
+    "md5": "8331a6b210968a6f6142cbc9832cd395",
+    "alt": "Original electrical-appliance safety-feature and example-of-use table, full prompt and both blank paired rows.",
+    "attribution": "SEC Home Economics 2013 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88777160644531, 570.219970703125, 202.06764221191406], rendered at 2.5×. SHA256 47122e12f3e0a4b7922146564bad96fe8c31aec7c1bdc947826b49f877a82426."
+  },
+  "home-economics-2013-ol-sb-q1-pyramid": {
+    "src": "/exam-figures/home-economics/home-economics-2013-ol-sb-q1-pyramid.png",
+    "md5": "c51f1752a776d137c770f4f73eecef47",
+    "alt": "Original complete food pyramid illustration and its Food Safety Authority, 2012 caption. Every pictured food and shelf, top and base, retained from the original examination paper.",
+    "attribution": "SEC Home Economics 2013 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [82, 110, 548, 427], rendered at 2.5×. SHA256 62059cf04d097fc36bfd686f20f3c44f4dc37533a7371485be771621329a8e97."
+  },
+  "home-economics-2013-ol-sc-q1-heat-loss": {
+    "src": "/exam-figures/home-economics/home-economics-2013-ol-sc-q1-heat-loss.png",
+    "md5": "8a0418302fe7209fee4e3a7c67797c99",
+    "alt": "Original house heat-loss diagram. Complete house and arrows, roof25%, windows15%, walls35%, doors10%, floors15%, and Average heat loss from a house caption retained.",
+    "attribution": "SEC Home Economics 2013 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [198, 179, 405, 384], rendered at 2.5×. SHA256 1a1721464fbe4aed24d436a4eb437b297e1a6c563359d08f5ab8065da4b9094a."
   }
 }
