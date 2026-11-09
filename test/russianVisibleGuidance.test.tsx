@@ -13,6 +13,40 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('renders both complete 2014 matching routes with ten four-mark answers',async()=>{
+    const card=REVIEWED_CARDS.find(c=>c.id==='ru-2014-ol-mm');
+    if(!card)throw new Error('Missing matching card');
+    render(<SessionScreen cards={[card]} subjectLabel="Russian" onGrade={vi.fn()} onFinish={vi.fn()} onExit={vi.fn()} />);
+    fireEvent.click(screen.getByRole('button',{name:'Profession then position'}));
+    fireEvent.click(screen.getByRole('button',{name:'Reveal the marking scheme'}));
+    await waitFor(()=>expect(screen.getAllByRole('button',{name:/4m$/})).toHaveLength(10));
+    const lawyer=screen.getByRole('button',{name:/^Юрист /});
+    fireEvent.click(lawyer);
+    expect(lawyer).toHaveAttribute('aria-pressed','true');
+    await waitFor(()=>expect(screen.getByText(/You claimed 4 of 40 marks/)).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'Position then profession'}));
+    await waitFor(()=>expect(screen.getByRole('button',{name:/^Юрист /})).toHaveAttribute('aria-pressed','false'));
+    expect(screen.getAllByRole('button',{name:/4m$/})).toHaveLength(10);
+  });
+
+  it('shows the 2014 paper handwriting split and total-only classification limit',async()=>{
+    reveal('la1','ol',2014);
+    await waitFor(()=>expect(screen.getByText(/The original paper supplies this 3 \+ 3 allocation/)).toBeVisible());
+    expect(screen.getByText('Letter formation')).toBeVisible();
+    expect(screen.getByText('Accurate transcription')).toBeVisible();
+    cleanup();reveal('la2','ol',2014);
+    await waitFor(()=>expect(screen.getByText(/numeric self-scoring is unavailable/)).toBeVisible());
+    expect(screen.getByText(/The scheme gives 10 marks/)).toHaveTextContent('no per-word allocation');
+  });
+  it('shows the 2014 explicit partial-answer guidance and scoped writing requirements',async()=>{
+    reveal('sd','ol',2014);
+    await waitFor(()=>expect(screen.getByText(/gap 3 accepts “Кто”/)).toBeVisible());
+    expect(screen.getByText(/gap 3 accepts “Кто”/)).toHaveTextContent('“Сколько” for 1 mark');
+    cleanup();reveal('ew','ol',2014);
+    await waitFor(()=>expect(screen.getByText(/Choice 3: Opening\/greeting; congratulations/)).toBeVisible());
+    expect(screen.getByText(/Choice 3: Opening\/greeting; congratulations/)).toHaveTextContent('Small talk; Signing off');
+  });
+
   it('shows the 2015 half-credit rule and conflicting published labels',async()=>{
     reveal('la2','ol',2015);
     await waitFor(()=>expect(screen.getByText(/Source discrepancy: the scheme prints/)).toBeVisible());
