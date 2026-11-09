@@ -5,8 +5,8 @@ import { REVIEWED_CARDS } from '../components/MarkBank/cards/russian/reviewed';
 
 afterEach(cleanup);
 
-function reveal(suffix:string) {
-  const card=REVIEWED_CARDS.find(c=>c.id===`ru-2026-hl-${suffix}`);
+function reveal(suffix:string, level='hl') {
+  const card=REVIEWED_CARDS.find(c=>c.id===`ru-2026-${level}-${suffix}`);
   if(!card)throw new Error(suffix);
   render(<SessionScreen cards={[card]} subjectLabel="Russian" onGrade={vi.fn()} onFinish={vi.fn()} onExit={vi.fn()} />);
   fireEvent.click(screen.getByRole('button',{name:'Reveal the marking scheme'}));
@@ -30,5 +30,11 @@ describe('Russian source directions visible in the practice session',()=>{
     await waitFor(()=>expect(note).toBeVisible());
     expect(note).toHaveTextContent('1 июля 1939 года');
     expect(note).toHaveTextContent('source discrepancy remains under review');
+  });
+  it.each(['ir1-1-i','ir2-1'])('shows the Ordinary Russian-language exception for %s',async suffix=>{
+    reveal(suffix,'ol');
+    const direction=screen.getByText(/Marking scheme page 3: Do not penalise answers supplied in Russian/);
+    await waitFor(()=>expect(direction).toBeVisible());
+    expect(direction).toHaveTextContent('English or Irish');
   });
 });

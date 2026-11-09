@@ -1348,7 +1348,14 @@
           "paperPage": 7,
           "description": "Scheme says 2(ii); booklet says 3(ii). Card follows the original question booklet and discloses the discrepancy."
         }
-      ]
+      ],
+      "visibleLanguageGuidance": {
+        "sourcePage": 3,
+        "instruction": "Do not penalise answers supplied in Russian.",
+        "readingTasks": 25,
+        "renderedRegression": "passed for both rubric and fixed-point table tasks",
+        "reviewedAt": "2026-11-09"
+      }
     },
     {
       "year": 2025,

@@ -60,6 +60,7 @@ def unprice(text):
 
 def reading(docs, P):
     S, cards = docs['scheme'], []
+    assert 'Do not penalise answers supplied in Russian.' in squash(page_text(S, 3))
     specs = [
         ('IR1', [4, 5], [2, 3, 4], [2, 1, 2, 1, 1, 2, 1, 2], 'LANGUAGE AWARENESS'),
         ('IR2', [6, 7], [6, 7, 8], [4, 1, 1, 2, 2, 2, 2], 'Language awareness'),
@@ -114,6 +115,11 @@ def reading(docs, P):
                 card['rubric']['taskRequirements'] = [squash(general)]
             card['review']['questionPages'] = [candidates[0].page + 1]
             card['notes'] += ' The paper asks for English; the general marking directions also accept answers supplied in Russian.'
+            direction = 'Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian.'
+            if card['kind'] == 'question':
+                card['rows'][0]['contextNote'] = (card['rows'][0].get('contextNote', '') + '\n' + direction).strip()
+            else:
+                card['rubric']['markingGuideNote'] = direction
             cards.append(card)
     assert len(cards) == 25 and sum(c['totalMarks'] for c in cards) == 88
     return cards

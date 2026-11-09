@@ -28,7 +28,7 @@ describe('Russian 2026 Ordinary original-source tasks', () => {
   it('keeps all four required event headings in one task', () => {
     const card = get('ir2-1');
     if (card.kind !== 'question') throw new Error('Missing event table');
-    expect(card.rows.map(row => row.contextNote)).toEqual(['Day of the week', 'Date', 'Year', 'Time']);
+    expect(card.rows.map(row => row.contextNote?.split('\n')[0])).toEqual(['Day of the week', 'Date', 'Year', 'Time']);
     expect(card.rows.map(row => row.marks)).toEqual([1, 1, 1, 1]);
   });
 
