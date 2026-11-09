@@ -11,6 +11,25 @@ from pathlib import Path
 
 
 def reviewed_keys(year, level):
+    if (year, level) == (2024, 'hl'):
+        # Independent original-PDF sweep:16written+8aural+28scheme pages.
+        # Twelve comprehension asks; four whole summaries; each complete
+        # writing choice pool and discourse exercise remains one task.
+        root = Path(__file__).resolve().parents[3] / 'examiner-reports/russian'
+        for relative, digest in {
+            'papers/2024-hl-000-paper.pdf': 'c154f981d7a257665eb0a71e24e2246dc5e0e14431297819ff91017da79fc1c7',
+            'papers/2024-hl-A00-paper.pdf': '98df8494df03f7ff48a5438d5202036813c4d9a7525d102ca75c9201c95a54c9',
+            'schemes/2024-hl.pdf': '3fd5f06ee6dbc78e1ef53bcaa1e1e6f9a6d822c6ee898a69f16ec34cf0aac999',
+        }.items():
+            assert hashlib.sha256((root / relative).read_bytes()).hexdigest() == digest
+        keys = [('C1', q, None, r) for q, romans in [(1, ('i','ii')), (2, ('i','ii','iii','iv')), (3, ('i','ii','iii','iv')), (4, ('i','ii'))] for r in romans]
+        keys += [('C2', q, None, None) for q in (1,2,3,4)]
+        keys += [(unit, None, None, roman) for unit in ('LA1','LA2') for roman in ('i','ii')]
+        keys += [(unit, question, None, None) for unit, question in [('SD',3),('GR',1),('SE',2),('GW',3)]]
+        assert len(keys) == 24
+        keys += [(unit,q,None,r) for unit in ('L1','L2','L3','L4') for q in (1,2,3) for r in ('i','ii')]
+        assert len(keys) == len(set(keys)) == 48
+        return set(keys)
     if (year, level) == (2025, 'hl'):
         # Independent visual review: all16 written,8 aural,27 scheme pages.
         # Four complete summaries include their discretionary component;

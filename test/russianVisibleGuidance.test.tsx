@@ -5,14 +5,21 @@ import { REVIEWED_CARDS } from '../components/MarkBank/cards/russian/reviewed';
 
 afterEach(cleanup);
 
-function reveal(suffix:string, level='hl') {
-  const card=REVIEWED_CARDS.find(c=>c.id===`ru-2026-${level}-${suffix}`);
+function reveal(suffix:string, level='hl', year=2026) {
+  const card=REVIEWED_CARDS.find(c=>c.id===`ru-${year}-${level}-${suffix}`);
   if(!card)throw new Error(suffix);
   render(<SessionScreen cards={[card]} subjectLabel="Russian" onGrade={vi.fn()} onFinish={vi.fn()} onExit={vi.fn()} />);
   fireEvent.click(screen.getByRole('button',{name:'Reveal the marking scheme'}));
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('shows both listening exceptions and the complete 2024 viewing-time answers',async()=>{
+    reveal('l1-2-ii','hl',2024);
+    await waitFor(()=>expect(screen.getByText('There is no penalty for excess material which does not invalidate the answer.')).toBeVisible());
+    expect(screen.getByText(/incorrect contradictory answer nullifies the correct answer/)).toBeVisible();
+    expect(screen.getByText('on weekdays + after 6 pm')).toBeVisible();
+    expect(screen.getByText('on Saturday + before lunch')).toBeVisible();
+  });
   it.each(['c1-1-i','c2-1'])('shows both permitted response languages for %s',async suffix=>{
     reveal(suffix);
     await waitFor(()=>expect(screen.getByText(/Answer in English or Irish\. Both languages are permitted/)).toBeVisible());
