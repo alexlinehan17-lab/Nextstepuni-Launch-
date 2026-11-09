@@ -56,7 +56,7 @@ describe('Japanese 2026 Higher source review', () => {
     expect(originalIds).toHaveLength(600);
     for (const id of originalIds) expect(live.has(id) || live.has(aliasMap[id]), id).toBe(true);
     const newIds = reviewed.filter(card => !originalIds.includes(card.id));
-    expect(newIds).toHaveLength(960);
+    expect(newIds).toHaveLength(1016);
     expect(Object.keys(aliases)).toHaveLength(391);
     expect(live.size).toBe(600 + newIds.length - Object.keys(aliases).length);
     // Both were absent from the shipped literal baseline; the independently reviewed 2021 sitting now covers them.
