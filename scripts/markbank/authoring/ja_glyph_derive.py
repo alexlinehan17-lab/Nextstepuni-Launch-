@@ -2,9 +2,10 @@
 """Derive the exact 2017 Japanese font repair from original PDF font outlines.
 
 The exact embedded-outline routine includes component offsets for composite
-TrueType glyphs. A character is accepted only when every named matching
-outline agrees. Blank glyphs must be proven to have no outline. No inference
-from code-point arithmetic, words, or manually supplied character strings.
+TrueType glyphs. Named matching outlines must agree; blank glyphs must be
+proven to have no outline. One unmatched required glyph has a separately
+reviewed original-image proof, validated against its hash, crop and exact
+trace location. No character is inferred from code-point arithmetic or words.
 """
 import argparse
 import collections

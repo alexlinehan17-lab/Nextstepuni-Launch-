@@ -1,7 +1,8 @@
 """Recover only the hash-pinned 2017 written PDF's missing ToUnicode glyphs.
 
-The repair table is derived from identical embedded TrueType glyph outlines in
-original PDFs, with source paths/hashes retained, never from a manually guessed character mapping.
+The repair table uses identical embedded TrueType glyph outlines in original
+PDFs and one independently read original-image glyph, bound to its exact
+page, font, glyph ID and origin. Every source path and hash is retained.
 Known characters and every other PDF are unchanged. Missing derivation fails.
 """
 import hashlib
