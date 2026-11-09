@@ -132266,5 +132266,5529 @@
    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
    "presentationNote": "Open the original examination page to review this task in context."
   }
+ },
+ {
+  "id": "he-2017-hl-sa-q1",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-5",
+  "conceptId": "sa-q1",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "questionRef": "2017 HL Section A Q1",
+  "questionText": "Amino acids are the building blocks of protein. Explain and give an example of each of the following terms: Essential amino acids Example Non‐essential amino acids Example",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "essential",
+    "kind": "point",
+    "verbatim": "Essential amino acids Cannot be manufactured by the body; 8 essential for adults, 10 essential for children; must be supplied by the diet; etc. Example Valine; leucine; Isoleucine; lysine; methionine; phenylanine; threonine; tryptophan; Histidine; arginine.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Explain essential amino acids and give ONE matching example from the complete original pool."
+   },
+   {
+    "id": "nonessential",
+    "kind": "point",
+    "verbatim": "Non-essential amino acids Can be made by the body; do not need to be supplied by the diet; etc. Example Alanine, asparagine, aspartic acid, cysteine, glutamic acid, glutamine, glycine, proline, serine, tyrosine.",
+    "marks": null,
+    "contextNote": "Explain non-essential amino acids and give ONE matching example from the complete original pool."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sa-q2",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-6",
+  "conceptId": "sa-q2",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "questionRef": "2017 HL Section A Q2",
+  "questionText": "Describe the effect of gelatinisation on starch. Give two culinary examples of gelatinisation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "effect",
+    "kind": "point",
+    "verbatim": "When starch is mixed with liquid and heated, the starch cells burst and absorb water, this causes the mixture to thicken; thickened mixture is called a sol / colloidal solution; etc.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "example-1",
+    "kind": "point",
+    "verbatim": "(i) roux sauces; pastry; soup;",
+    "marks": null,
+    "contextNote": "Choose ANY TWO examples across both original answer lines; no one-per-line restriction."
+   },
+   {
+    "id": "example-2",
+    "kind": "point",
+    "verbatim": "(ii) lemon curd; rice pudding; etc.",
+    "marks": null,
+    "contextNote": "Choose ANY TWO examples across both original answer lines; no one-per-line restriction."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sa-q3",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-4",
+  "conceptId": "sa-q3",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "questionRef": "2017 HL Section A Q3",
+  "questionText": "Outline the role of the Food Safety Authority of Ireland (FSAI) in the food industry.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "role",
+    "kind": "point",
+    "verbatim": "Responsible for co-ordinating the enforcement of food safety regulation in Ireland; advises the Minister; protects consumers – safe food, accurate food information; works with the food industry to ensure food produced is safe to eat (HACCP); takes action when a premises is in breach of food regulations; processes applications for novel foods and new methods of processing; etc.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sa-q4",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-8",
+  "conceptId": "sa-q4",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "questionRef": "2017 HL Section A Q4",
+  "questionText": "Complete the following table in relation to anaemia.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "point",
+    "verbatim": "Cause — Lack of haemoglobin / red blood cells, low iron diet; blood loss – menstruation, ulcers, operations; etc.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "heading-2",
+    "kind": "point",
+    "verbatim": "Effect of deficiency — Tiredness; pale skin; shortness of breath; irritability; dizziness; causes a reduction in oxygen levels in the blood; etc.",
+    "marks": null
+   },
+   {
+    "id": "heading-3",
+    "kind": "point",
+    "verbatim": "Corrective measure — Increased consumption of iron rich foods; iron supplements; foods high in vitamin C; decrease consumption of tea, coffee, excess fibre, phytic and oxalic acid, calcium; etc.",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2017-hl-sa-q4",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2017-hl-sa-q5",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sa-q5",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "questionRef": "2017 HL Section A Q5",
+  "questionText": "Explain each of the following: Modified atmosphere packaging Biodegradable packaging",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "packaging-1",
+    "kind": "point",
+    "verbatim": "Modified atmosphere packaging Air is removed and replaced with a controlled mixture of gases - carbon dioxide, nitrogen and oxygen; the pack is heat sealed; slows down the growth of bacteria, yeasts and moulds that spoil food; enhances the shelf life of food; etc.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "packaging-2",
+    "kind": "point",
+    "verbatim": "Biodegradable packaging Breaks down into the raw materials of nature e.g. paper bags and cardboard; etc.",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sa-q6",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-4",
+  "conceptId": "sa-q6",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "questionRef": "2017 HL Section A Q6",
+  "questionText": "Name and describe two common food poisoning bacteria using the headings below.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "bacterium-1",
+    "kind": "point",
+    "verbatim": "Salmonella",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY TWO different bacteria. For EACH give its matching description/characteristic AND habitat. Complete original paired model: Salmonella — Description / characteristic: Rod shaped; gram negative; non spore forming; asexual reproduction; etc. Habitat: Intestines of humans and animals; human and animal waste; unwashed hands; etc."
+   },
+   {
+    "id": "bacterium-2",
+    "kind": "point",
+    "verbatim": "Listeria",
+    "marks": null,
+    "contextNote": "Choose ANY TWO different bacteria. For EACH give its matching description/characteristic AND habitat. Complete original paired model: Listeria — Description / characteristic: Rod shaped; gram positive; non spore forming; asexual reproduction; etc. Habitat: Soil; human and animal waste; etc."
+   },
+   {
+    "id": "bacterium-3",
+    "kind": "point",
+    "verbatim": "E-coli",
+    "marks": null,
+    "contextNote": "Choose ANY TWO different bacteria. For EACH give its matching description/characteristic AND habitat. Complete original paired model: E-coli — Description / characteristic: Rod shaped; gram negative; non spore forming; asexual reproduction; etc. Habitat: Intestines of humans and animals; human and animal excreta; contaminated water; unwashed hands; etc."
+   },
+   {
+    "id": "bacterium-4",
+    "kind": "point",
+    "verbatim": "Clostridium botulinum",
+    "marks": null,
+    "contextNote": "Choose ANY TWO different bacteria. For EACH give its matching description/characteristic AND habitat. Complete original paired model: Clostridium botulinum — Description / characteristic: Rod shaped; gram positive; spore-forming; asexual reproduction; etc. Habitat: Soil and decaying matter; vegetables; fish and pig intestines; etc."
+   },
+   {
+    "id": "bacterium-5",
+    "kind": "point",
+    "verbatim": "Staphylococcus aureus",
+    "marks": null,
+    "contextNote": "Choose ANY TWO different bacteria. For EACH give its matching description/characteristic AND habitat. Complete original paired model: Staphylococcus aureus — Description / characteristic: Spherical; gram positive; non spore forming; asexual reproduction; etc. Habitat: Nose, throat and infected skin e.g. boils; unwashed hands etc."
+   },
+   {
+    "id": "other-bacteria",
+    "kind": "point",
+    "verbatim": "Clostridium Welchii; Campylobacter; etc.",
+    "marks": null,
+    "contextNote": "The original scheme names Clostridium Welchii and Campylobacter without description/habitat models. No model has been invented. Keep all headings about each SAME selected bacterium."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2017-hl-sa-q6",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2017-hl-sa-q7",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-4",
+  "conceptId": "sa-q7",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "questionRef": "2017 HL Section A Q7",
+  "questionText": "Explain the process of fermentation. Name two by‐products of fermentation.",
+  "stem": "",
+  "figureKey": "home-economics-2017-hl-sa-q7-equation",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "fermentation",
+    "kind": "point",
+    "verbatim": "The breakdown of organic substances by microorganisms i.e. bacteria and yeast to produce CO2, alcohol & energy;",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. The complete original chemical equation is retained in the source image."
+   },
+   {
+    "id": "product-1",
+    "kind": "point",
+    "verbatim": "(i) carbon dioxide; acids; vinegar;",
+    "marks": null,
+    "contextNote": "Choose ANY TWO by-products across both original source lines."
+   },
+   {
+    "id": "product-2",
+    "kind": "point",
+    "verbatim": "(ii) alcohol; energy; etc.",
+    "marks": null,
+    "contextNote": "Choose ANY TWO by-products across both original source lines."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sa-q8",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sa-q8",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "questionRef": "2017 HL Section A Q8",
+  "questionText": "Complete the table below in relation to the processing of milk.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "cell-1",
+    "kind": "point",
+    "verbatim": "Temperature — 132°C",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "cell-2",
+    "kind": "point",
+    "verbatim": "Time — 1 to 3 seconds",
+    "marks": null
+   },
+   {
+    "id": "cell-3",
+    "kind": "point",
+    "verbatim": "Effect — Change in flavour; loss of vitamins B and C; all bacteria destroyed so milk keeps unopened for several months without refrigeration; etc.",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2017-hl-sa-q8",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2017-hl-sa-q9",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-0",
+  "conceptId": "sa-q9",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "questionRef": "2017 HL Section A Q9",
+  "questionText": "Name three components / stages in family resource management. Give two examples of family life which require management skills.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "stages",
+    "kind": "point",
+    "verbatim": "Inputs; throughputs; outputs;",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "example-1",
+    "kind": "point",
+    "verbatim": "(i) meal planning; decision making;",
+    "marks": null,
+    "contextNote": "Choose ANY TWO family-life examples from both source lines; no one-per-line quota."
+   },
+   {
+    "id": "example-2",
+    "kind": "point",
+    "verbatim": "(ii) budgeting; problem solving; home management; etc.",
+    "marks": null,
+    "contextNote": "Choose ANY TWO family-life examples from both source lines; no one-per-line quota."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sa-q10",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sa-q10",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "questionRef": "2017 HL Section A Q10",
+  "questionText": "Explain each of the following: Insurance premium Insurance policy",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "insurance-1",
+    "kind": "point",
+    "verbatim": "Insurance premium The sum of money paid annually or in instalments to the insurance company in order to be insured; etc.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "insurance-2",
+    "kind": "point",
+    "verbatim": "Insurance policy Written details of the terms and conditions of insurance cover; etc.",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sa-q11",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sa-q11",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "questionRef": "2017 HL Section A Q11",
+  "questionText": "Name three social welfare payments available to individuals.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "payment-1",
+    "kind": "point",
+    "verbatim": "(i) supplementary welfare allowance; maternity benefit; one-parent family payments;",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Name ANY THREE social welfare payments across the full pool. Do not require a pension or one choice from each source line. Historical 2017 names retained."
+   },
+   {
+    "id": "payment-2",
+    "kind": "point",
+    "verbatim": "(ii) pensions – old age, widows, blind persons;",
+    "marks": null,
+    "contextNote": "Name ANY THREE social welfare payments across the full pool. Do not require a pension or one choice from each source line. Historical 2017 names retained."
+   },
+   {
+    "id": "payment-3",
+    "kind": "point",
+    "verbatim": "(iii) FIS; carer’s allowance; disability allowance; job seekers benefit / allowance; etc.",
+    "marks": null,
+    "contextNote": "Name ANY THREE social welfare payments across the full pool. Do not require a pension or one choice from each source line. Historical 2017 names retained."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sa-q12",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-2",
+  "conceptId": "sa-q12",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "questionRef": "2017 HL Section A Q12",
+  "questionText": "What protection is provided to the consumer by the Consumer Information Act, 1978 / Consumer Protection Act, 2007?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "protection-1",
+    "kind": "point",
+    "verbatim": "(i) protects consumers against false or misleading claims about goods or services (advertising); false trade descriptions;",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Historical consumer legislation named in the 2017 paper; original complete source guidance retained."
+   },
+   {
+    "id": "protection-2",
+    "kind": "point",
+    "verbatim": "(ii) forbids false or misleading information regarding price, previous price or recommended retail price; etc.",
+    "marks": null,
+    "contextNote": "Historical consumer legislation named in the 2017 paper; original complete source guidance retained."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sb-q1a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sb-q1a",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "questionRef": "2017 HL Section B Q1(a)",
+  "questionText": "Using the information provided in the chart, comment and elaborate on the variations in Body Mass Index among the different age groups of the Irish population.",
+  "stem": "Rising levels of overweight and obesity are placing an increasing burden on individuals and society. Currently, six in ten adults and one in four children are overweight or obese. (A Healthy Weight for Ireland: Obesity Policy and Action Plan 2016 – 2025) Body Mass Index (BMI) is a standardised measure used to estimate whether or not someone is underweight, normal weight, overweight or obese.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "Body Mass Index",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15,
+     20
+    ],
+    "contextNote": "Comment AND elaborate on variations between the original age groups within four points. All four original BMI-category models remain available; no one-per-category quota is printed. Complete original source guidance: Obese: obesity tends to rise as one gets older up to age band 55-64, 64+ it tends to fall; poor diet; less time for exercise due to work / family commitments; sedentary jobs; metabolic rate decreasing while portion sizes remain the same; etc. Overweight: high in the younger age band of 15-24 (28%); increases significantly in the 25-34 age group (almost 50%); remains between 40-50% throughout all other age groups; people in their teens and early 20’s are quite active and participate in sports; jobs may be sedentary with little time for exercise; basal metabolic rate decreases as one gets older; increased consumption of food and alcohol; diet high in sugar, saturated fat and refined carbohydrates; poor eating patterns; reliance on convenience food; etc. Normal weight: 60% of people in the 15-24 age group are a normal weight; decreases significantly in the 25-34 age group (30-40%) and decreases further to its lowest point between (10-20%) in the 55-64 age group; is a slight increase in the 64+ age group; teenagers are still growing; family meals being freshly prepared at home; young people in their teens and early 20’ s are quite active and participate in sports; awareness of healthy eating guidelines; jobs may be sedentary with little time for exercise; basal metabolic rate decreases as one gets older; increased consumption of food and alcohol; diet high in sugar, saturated fat and refined carbohydrates; poor eating patterns; reliance on convenience food; as people retire they have more time for exercise; older people can be more conscious of healthy diet and lifestyle; etc. Underweight: less than 5% of people are underweight in the 15-24 age group; decreases throughout the other age groups; dieting and psychological conditions e.g. anorexia nervosa; energy output being greater than energy intake; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2017-hl-sb-q1-bmi",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2017-hl-sb-q1b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-6",
+  "conceptId": "sb-q1b",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "questionRef": "2017 HL Section B Q1(b)",
+  "questionText": "Classify carbohydrates. With reference to each class give: • the chemical formula • examples • food source.",
+  "stem": "Rising levels of overweight and obesity are placing an increasing burden on individuals and society. Currently, six in ten adults and one in four children are overweight or obese. (A Healthy Weight for Ireland: Obesity Policy and Action Plan 2016 – 2025) Body Mass Index (BMI) is a standardised measure used to estimate whether or not someone is underweight, normal weight, overweight or obese.",
+  "figureKey": "home-economics-2017-hl-sb-q1b-carbohydrates",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Three classes × (name1 + formula1 + two examples1 + source1)"
+  },
+  "rows": [
+   {
+    "id": "class-1",
+    "kind": "point",
+    "verbatim": "Monosaccharides (simple sugars)",
+    "marks": 1
+   },
+   {
+    "id": "formula-1",
+    "kind": "point",
+    "verbatim": "C6H12O6",
+    "marks": 1,
+    "contextNote": "Chemical formula for the SAME carbohydrate class; original subscripted formula is shown in the source table."
+   },
+   {
+    "id": "examples-1",
+    "kind": "anyN",
+    "verbatim": "Examples",
+    "marks": 2,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Glucose",
+      "Fructose",
+      "Galactose"
+     ]
+    },
+    "contextNote": "Choose ANY TWO examples of this SAME carbohydrate class."
+   },
+   {
+    "id": "source-1",
+    "kind": "anyN",
+    "verbatim": "Food Source",
+    "marks": 1,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Fruit",
+      "Honey/fruit",
+      "Digested milk"
+     ]
+    },
+    "contextNote": "ONE source of this SAME carbohydrate class. The complete original table preserves the example/source relationships."
+   },
+   {
+    "id": "class-2",
+    "kind": "point",
+    "verbatim": "Disaccharides (double sugars)",
+    "marks": 1
+   },
+   {
+    "id": "formula-2",
+    "kind": "point",
+    "verbatim": "C12H22O11",
+    "marks": 1,
+    "contextNote": "Chemical formula for the SAME carbohydrate class; original subscripted formula is shown in the source table."
+   },
+   {
+    "id": "examples-2",
+    "kind": "anyN",
+    "verbatim": "Examples",
+    "marks": 2,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Sucrose",
+      "Lactose",
+      "Maltose"
+     ]
+    },
+    "contextNote": "Choose ANY TWO examples of this SAME carbohydrate class."
+   },
+   {
+    "id": "source-2",
+    "kind": "anyN",
+    "verbatim": "Food Source",
+    "marks": 1,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Table sugar",
+      "Milk",
+      "Barley"
+     ]
+    },
+    "contextNote": "ONE source of this SAME carbohydrate class. The complete original table preserves the example/source relationships."
+   },
+   {
+    "id": "class-3",
+    "kind": "point",
+    "verbatim": "Polysaccharides Complex non-sugars)",
+    "marks": 1
+   },
+   {
+    "id": "formula-3",
+    "kind": "point",
+    "verbatim": "(C6H10O5)n",
+    "marks": 1,
+    "contextNote": "Chemical formula for the SAME carbohydrate class; original subscripted formula is shown in the source table."
+   },
+   {
+    "id": "examples-3",
+    "kind": "anyN",
+    "verbatim": "Examples",
+    "marks": 2,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Starch",
+      "Pectin",
+      "Cellulose"
+     ]
+    },
+    "contextNote": "Choose ANY TWO examples of this SAME carbohydrate class."
+   },
+   {
+    "id": "source-3",
+    "kind": "anyN",
+    "verbatim": "Food Source",
+    "marks": 1,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Potatoes, cereals",
+      "Fruit"
+     ]
+    },
+    "contextNote": "ONE source of this SAME carbohydrate class. The complete original table preserves the example/source relationships."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "taskGroups": [
+   {
+    "sourceCardId": "he-2017-hl-sb-q1b-class-1",
+    "label": "Monosaccharides (simple sugars)",
+    "marks": 5,
+    "rowIds": [
+     "class-1",
+     "formula-1",
+     "examples-1",
+     "source-1"
+    ]
+   },
+   {
+    "sourceCardId": "he-2017-hl-sb-q1b-class-2",
+    "label": "Disaccharides (double sugars)",
+    "marks": 5,
+    "rowIds": [
+     "class-2",
+     "formula-2",
+     "examples-2",
+     "source-2"
+    ]
+   },
+   {
+    "sourceCardId": "he-2017-hl-sb-q1b-class-3",
+    "label": "Polysaccharides Complex non-sugars)",
+    "marks": 5,
+    "rowIds": [
+     "class-3",
+     "formula-3",
+     "examples-3",
+     "source-3"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2017-hl-sb-q1c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-6",
+  "conceptId": "sb-q1c",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "questionRef": "2017 HL Section B Q1(c)",
+  "questionText": "Explain three properties of sugar and the related culinary use of each.",
+  "stem": "Rising levels of overweight and obesity are placing an increasing burden on individuals and society. Currently, six in ten adults and one in four children are overweight or obese. (A Healthy Weight for Ireland: Obesity Policy and Action Plan 2016 – 2025) Body Mass Index (BMI) is a standardised measure used to estimate whether or not someone is underweight, normal weight, overweight or obese.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "properties",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15
+    ],
+    "contextNote": "Explain THREE properties and the related use of EACH. Each complete property/use pair earns five marks; no name/explanation/use split is printed. Hydrolysis and Inversion are named without worked accounts in the original; none is invented. Complete original source guidance: Solubility: sugars are white crystalline compounds that are soluble in water; solubility is increased by heating the water; a syrup is formed when sugar is heated; etc. use: icings; etc. Assists Aeration: sugar denatures egg protein, enabling aeration to occur; the egg when whisked with sugar becomes aerated; etc. use: meringues; sponge cakes; etc. Crystallisation: this occurs if more sugar is added than can be absorbed by a liquid; crystal particles are formed when the mixture cools; etc. use: sweets; confectionary; etc. Caramelisation: when sugars are heated, they produce a range of brown substances known as a caramel; there are ten gradual changes in sugar between melting and caramelisation; these stages occur between 104°C & 177°C; eventually, the heat will cause carbonisation (burning); etc. use: crème caramel; etc. Maillard Reaction: chemical reaction sugar (carbohydrate) + amino acid + dry heat = non enzymic browning of food; etc. use: roast potatoes; etc. Sweetness: sugar has varying degrees of sweetness based on a point scale using the tasting method; sucrose has a relative sweetness of 100; fructose has a relative sweetness of 170; lactose has a relative sweetness of 15; etc. use: cakes; sweets; shortbread; etc. Hydrolysis; Inversion; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sb-q1d",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sb-q1d",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "questionRef": "2017 HL Section B Q1(d)",
+  "questionText": "Assess the effects of high sugar consumption on the body.",
+  "stem": "Rising levels of overweight and obesity are placing an increasing burden on individuals and society. Currently, six in ten adults and one in four children are overweight or obese. (A Healthy Weight for Ireland: Obesity Policy and Action Plan 2016 – 2025) Body Mass Index (BMI) is a standardised measure used to estimate whether or not someone is underweight, normal weight, overweight or obese.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Three effects:4+3+3"
+  },
+  "rows": [
+   {
+    "id": "effects",
+    "kind": "anyN",
+    "verbatim": "effects",
+    "marks": 10,
+    "openList": true,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Obesity: foods high in sugar are often calorie dense and nutrient poor, can lead to weight gain; etc.",
+      "High blood pressure: eating foods high in fructose raises blood pressure; etc.",
+      "Heart disease: overconsumption of refined carbohydrates especially those high in sugar e.g. cakes and pastries can result in excess insulin production which can raise LDLs; etc.",
+      "Type 2 diabetes: excess sugar consumption leads to an increased risk for diabetes; normal blood sugar levels are between 4.0 – 7.9mmol/l; if blood sugars drop below this range hypoglycaemia can occur; if blood sugars rise above this range hyperglycaemia can occur; etc.",
+      "Dental disease: sugar causes tooth decay, it interacts with bacteria to produce acid; etc.",
+      "Nutritional deficiency: when too much sugar is consumed, other foods that provide important nutrients, such as fruits and vegetables may be lacking in the diet; etc."
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      3
+     ]
+    },
+    "contextNote": "Choose ANY THREE distinct effects from the complete original pool. The first credited effect earns4, the next3, the next3; no fixed effect receives the four-mark award. Original 2017 scientific wording retained."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sb-q1e",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sb-q1e",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "questionRef": "2017 HL Section B Q1(e)",
+  "questionText": "The rate of obesity in Ireland has been increasing despite the fact that it is preventable. Outline five strategies to be considered when purchasing and preparing food in order to reduce sugar consumption.",
+  "stem": "Rising levels of overweight and obesity are placing an increasing burden on individuals and society. Currently, six in ten adults and one in four children are overweight or obese. (A Healthy Weight for Ireland: Obesity Policy and Action Plan 2016 – 2025) Body Mass Index (BMI) is a standardised measure used to estimate whether or not someone is underweight, normal weight, overweight or obese.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Purchasing4 + preparing4 + three others4"
+  },
+  "rows": [
+   {
+    "id": "purchase",
+    "kind": "criterion",
+    "verbatim": "Purchasing",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Purchasing: choose fruit canned in juice rather than syrup; avoid cereals coated with sugar or honey; compare labels and choose foods that are lower in sugars; traffic light system - labels that include colour coding allow you to see at a glance if the food is high, medium or low in sugars; read labels, added sugar must be included in the ingredients list; watch out for words used to describe added sugars, i.e. cane sugar, honey, brown sugar, fruit juice concentrate, corn syrup, fructose, sucrose, glucose, crystalline sucrose, nectars; etc."
+   },
+   {
+    "id": "prepare",
+    "kind": "criterion",
+    "verbatim": "Preparing",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Preparing: replace sugar with pureed fruit; reduce the sugar in recipes; plan meals and snacks; opt for water, sugar-free, diet or no added sugar drinks; dilute fruit juice with sparkling water as an alternative to fizzy drinks; reduce sugar in hot drinks or cereals; use reduced sugar jams; etc."
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "3 others",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12
+    ],
+    "contextNote": "Three ADDITIONAL strategies from either required heading. Purchasing: choose fruit canned in juice rather than syrup; avoid cereals coated with sugar or honey; compare labels and choose foods that are lower in sugars; traffic light system - labels that include colour coding allow you to see at a glance if the food is high, medium or low in sugars; read labels, added sugar must be included in the ingredients list; watch out for words used to describe added sugars, i.e. cane sugar, honey, brown sugar, fruit juice concentrate, corn syrup, fructose, sucrose, glucose, crystalline sucrose, nectars; etc. Preparing: replace sugar with pureed fruit; reduce the sugar in recipes; plan meals and snacks; opt for water, sugar-free, diet or no added sugar drinks; dilute fruit juice with sparkling water as an alternative to fizzy drinks; reduce sugar in hot drinks or cereals; use reduced sugar jams; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sb-q2a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sb-q2a",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "questionRef": "2017 HL Section B Q2(a)",
+  "questionText": "Evaluate the nutritional value and the dietetic contribution of cheese to the diet.",
+  "stem": "Ireland produces more farmhouse cheese varieties per capita than any other country in the world. Our reputation for quality extends overseas, with Ireland exporting 90% of the cheese it produces. (The National Dairy Council)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Nutrition2×4 + dietetic2×4 + one other4"
+  },
+  "rows": [
+   {
+    "id": "nutrition",
+    "kind": "criterion",
+    "verbatim": "nutritional value",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Nutritional value: Protein: 10 - 27%, HBV, casein, soft cheese contains less protein than hard; etc. Fat: 4 - 35%, hard cheese is high in fat but less if made with skimmed milk; high in saturated fat; etc. Carbohydrate: 0% - 1.5% in cottage cheese; heat and energy; etc. Vitamins: 1%, A (retinol) and beta carotene (eyes, skin, membranes and growth); Vitamin B2 (riboflavin) for energy release; contains some vitamin D (absorption of calcium) but deficient in vitamin C; etc. Minerals: 1.5 - 4% calcium for bones and teeth; sodium present as salt is added during production; lacks iron; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "diet",
+    "kind": "criterion",
+    "verbatim": "dietetic contribution",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Dietetic contribution: Water content varies depending on the type of cheese; the higher the water content the less fat is present; relatively cheap protein food with no waste - good for people on a low income; no cooking necessary; can be hard to digest; wide variety available; very versatile; economical; high in saturated fat so should be avoided by those on low calorie or low cholesterol diets; soft cheeses should be avoided by pregnant women due to the risk of listeria; rich in protein and calcium - essential for growth in children, adolescents, pregnant women and nursing mothers; high-energy food - suitable for active people; cottage cheese (4% fat) and low- fat types for low-kilocalorie / low cholesterol / weight-watching diets; lacks carbohydrates so should be eaten with foods rich in carbohydrate e.g. bread; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "1 other",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "One ADDITIONAL point from either required heading. Nutritional value: Protein: 10 - 27%, HBV, casein, soft cheese contains less protein than hard; etc. Fat: 4 - 35%, hard cheese is high in fat but less if made with skimmed milk; high in saturated fat; etc. Carbohydrate: 0% - 1.5% in cottage cheese; heat and energy; etc. Vitamins: 1%, A (retinol) and beta carotene (eyes, skin, membranes and growth); Vitamin B2 (riboflavin) for energy release; contains some vitamin D (absorption of calcium) but deficient in vitamin C; etc. Minerals: 1.5 - 4% calcium for bones and teeth; sodium present as salt is added during production; lacks iron; etc. Dietetic contribution: Water content varies depending on the type of cheese; the higher the water content the less fat is present; relatively cheap protein food with no waste - good for people on a low income; no cooking necessary; can be hard to digest; wide variety available; very versatile; economical; high in saturated fat so should be avoided by those on low calorie or low cholesterol diets; soft cheeses should be avoided by pregnant women due to the risk of listeria; rich in protein and calcium - essential for growth in children, adolescents, pregnant women and nursing mothers; high-energy food - suitable for active people; cottage cheese (4% fat) and low- fat types for low-kilocalorie / low cholesterol / weight-watching diets; lacks carbohydrates so should be eaten with foods rich in carbohydrate e.g. bread; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sb-q2b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sb-q2b",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "questionRef": "2017 HL Section B Q2(b)",
+  "questionText": "Describe the production of cheese. Refer to: • stages of production • packaging and labelling.",
+  "stem": "Ireland produces more farmhouse cheese varieties per capita than any other country in the world. Our reputation for quality extends overseas, with Ireland exporting 90% of the cheese it produces. (The National Dairy Council)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Seven production stages2 + packaging2 + labelling2"
+  },
+  "rows": [
+   {
+    "id": "production",
+    "kind": "criterion",
+    "verbatim": "stages of production",
+    "marks": 14,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12,
+     14
+    ],
+    "contextNote": "Stages of production: a culture of lactic acid bacteria is added to pasteurised milk; lactose (sugar in milk) changes to lactic acid which adds flavour and acts as a preservative; milk is heated to 30°C, rennet is added - contains enzymes rennin which coagulates protein (caseinogen to casein); mixture separates into curds (solids) and whey (liquid); curds are chopped to release more whey, whey is drained off; curds are heated to 35 - 40°c to squeeze out more whey and achieve correct consistency (scalding); curds are cut into blocks and piled on top of each other to complete drainage of whey (cheddaring); the blocks are cut and 2% salt is added for flavour and preservation; salted curds are placed in moulds and pressed; moulds may be sprayed with hot water to form a protective rind; cheese is removed from the mould, date stamped and stored for 3 - 12 months to ripen (mature); cheese is graded; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-6",
+      "verbatim": "Point 6",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-7",
+      "verbatim": "Point 7",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "packaging",
+    "kind": "criterion",
+    "verbatim": "packaging",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Packaging: vacuum packed in polythene zip-lock plastic bag; waxed paper, plastic tubs; etc."
+   },
+   {
+    "id": "labelling",
+    "kind": "criterion",
+    "verbatim": "labelling",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Labelling: type; brand; quantity; nutritional information; date-stamp; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sb-q2c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-10",
+  "conceptId": "sb-q2c",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "questionRef": "2017 HL Section B Q2(c)",
+  "questionText": "Discuss the role of artisan producers / small businesses in the Irish food industry.",
+  "stem": "Ireland produces more farmhouse cheese varieties per capita than any other country in the world. Our reputation for quality extends overseas, with Ireland exporting 90% of the cheese it produces. (The National Dairy Council)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points × 3"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "artisan producers / small businesses",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     3,
+     6,
+     9,
+     12
+    ],
+    "contextNote": "Complete original source guidance: Speciality foods are produced in limited quantities by small businesses or home enterprises using non- industrial traditional skills e.g. cheeses, chutneys, jams, breads, smoked fish, chocolates etc.; many are family run and based in rural areas; provide employment for local people and bring a skilled workforce to the market; produce good quality speciality food; implement very high standards of hygiene in the production of their foods; promote the area in which they are based; enhance Irelands reputation as a producer of high quality food and drink; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sb-q3a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sb-q3a",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(a)",
+  "questionText": "Discuss the influence of the senses when choosing, cooking and eating food.",
+  "stem": "The ‘taste’ experience is an accumulation of multiple senses.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Choosing4 + cooking4 + eating4 + other4"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "criterion",
+    "verbatim": "Choosing",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Choosing: Sight is used to judge appearance - colour, size, shape; presentation e.g. garnish and serving; we expect certain foods to have a certain colour e.g. apples; flavour is associated with colour e.g. lemon - yellow, strawberry - red, mint - green; appearance and colour used to judge freshness when choosing food e.g. mould on Stilton cheese but not on bread; smell can be used to determine if food is fresh, rancid or poisonous; shape, size and surface appearance can determine whether to accept or reject a food; etc."
+   },
+   {
+    "id": "heading-2",
+    "kind": "criterion",
+    "verbatim": "Cooking",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Cooking: Colour change due to cooking; cooking intensifies flavours - more appetising than raw food; doneness of food – under / over cooked, rare; cooking develops flavours - fruity, pungent, roasted, smoky, sour, spicy, strong; aroma develops; texture changes; sounds associated with cooking i.e. sizzling sausages; etc."
+   },
+   {
+    "id": "heading-3",
+    "kind": "criterion",
+    "verbatim": "Eating",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Eating: Taste buds — bitter, sour, sweet and salty; nerves in the skin of the mouth are stimulated by thermal or chemical reactions e.g. coldness of ice cream or burning of chilli; mouth feel helps us detect the texture of food; descriptors - acidic, bitter, bland, creamy, piquant, salty, sharp, smoky, sour, spicy, sweet, tangy, tasteless; texture - consistency, roughness, smoothness of the food; detected by mouth feel; hearing / sound when eating - used to determine freshness of food e.g. crunchy vegetables or biscuits; descriptors - bubbling, crackling, crunchy, fizzy, snapping; etc."
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "1 other",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "One ADDITIONAL point from any of the three required headings. Choosing: Sight is used to judge appearance - colour, size, shape; presentation e.g. garnish and serving; we expect certain foods to have a certain colour e.g. apples; flavour is associated with colour e.g. lemon - yellow, strawberry - red, mint - green; appearance and colour used to judge freshness when choosing food e.g. mould on Stilton cheese but not on bread; smell can be used to determine if food is fresh, rancid or poisonous; shape, size and surface appearance can determine whether to accept or reject a food; etc. Cooking: Colour change due to cooking; cooking intensifies flavours - more appetising than raw food; doneness of food – under / over cooked, rare; cooking develops flavours - fruity, pungent, roasted, smoky, sour, spicy, strong; aroma develops; texture changes; sounds associated with cooking i.e. sizzling sausages; etc. Eating: Taste buds — bitter, sour, sweet and salty; nerves in the skin of the mouth are stimulated by thermal or chemical reactions e.g. coldness of ice cream or burning of chilli; mouth feel helps us detect the texture of food; descriptors - acidic, bitter, bland, creamy, piquant, salty, sharp, smoky, sour, spicy, sweet, tangy, tasteless; texture - consistency, roughness, smoothness of the food; detected by mouth feel; hearing / sound when eating - used to determine freshness of food e.g. crunchy vegetables or biscuits; descriptors - bubbling, crackling, crunchy, fizzy, snapping; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sb-q3b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sb-q3b",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(b)",
+  "questionText": "Outline four conditions required for sensory analysis testing.",
+  "stem": "The ‘taste’ experience is an accumulation of multiple senses.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points × 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "conditions",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12,
+     16
+    ],
+    "contextNote": "Complete original source guidance: Location: testing booths or adequate space between testers; lighting: bright room, natural light is best; ventilation: it is essential to remove any lingering odours; silence should be maintained to avoid sharing of information; timing: mid-morning, mid-afternoon - taste sensitivity best; no strongly flavoured foods for at least 30 minutes before tests; test organisers should not be involved in the tasting session; special dietary conditions; strict hygiene and food safety; each sample should be of uniform shape, colour and amount; temperature of all samples the same; rinsing water needed; sample containers identical in size, shape, colour; coding of samples must not cause bias; sequencing must be well planned; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sb-q3c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sb-q3c",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(c)",
+  "questionText": "Write a detailed account of one difference test used in the food industry. Refer to: • name of test • aim • implementation.",
+  "stem": "The ‘taste’ experience is an accumulation of multiple senses.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name3 + aim3 + implementation6×2"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "point",
+    "verbatim": "Simple Difference Paired Comparison Test",
+    "marks": 3
+   },
+   {
+    "id": "aim",
+    "kind": "point",
+    "verbatim": "To determine if testers can detect a difference between two samples.",
+    "marks": 3,
+    "contextNote": "Aim of the SAME selected difference test."
+   },
+   {
+    "id": "implementation",
+    "kind": "criterion",
+    "verbatim": "Implementation",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12
+    ],
+    "contextNote": "Six implementation points for the SAME difference test. Simple difference paired comparison test: set up trays; each tester is presented with two coded samples and asked if there is a difference between the samples; coded samples are presented to each tester in random order; the samples can be the same or different; tester tastes the samples in the order given; asked if they can detect a difference; yes / no responses are collated on a record sheet; codes are revealed and results are calculated; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-6",
+      "verbatim": "Point 6",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "answerVariants": [
+   {
+    "id": "test-1",
+    "label": "Simple Difference Paired Comparison Test",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Simple Difference Paired Comparison Test",
+      "marks": 3
+     },
+     {
+      "id": "aim",
+      "kind": "point",
+      "verbatim": "To determine if testers can detect a difference between two samples.",
+      "marks": 3,
+      "contextNote": "Aim of the SAME selected difference test."
+     },
+     {
+      "id": "implementation",
+      "kind": "criterion",
+      "verbatim": "Implementation",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Six implementation points for the SAME difference test. Simple difference paired comparison test: set up trays; each tester is presented with two coded samples and asked if there is a difference between the samples; coded samples are presented to each tester in random order; the samples can be the same or different; tester tastes the samples in the order given; asked if they can detect a difference; yes / no responses are collated on a record sheet; codes are revealed and results are calculated; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-5",
+        "verbatim": "Point 5",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-6",
+        "verbatim": "Point 6",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "test-2",
+    "label": "Directional Paired Comparison Test",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Directional Paired Comparison Test",
+      "marks": 3
+     },
+     {
+      "id": "aim",
+      "kind": "point",
+      "verbatim": "To determine which of two samples has a greater degree of intensity in terms of a particular characteristic.",
+      "marks": 3,
+      "contextNote": "Aim of the SAME selected difference test."
+     },
+     {
+      "id": "implementation",
+      "kind": "criterion",
+      "verbatim": "Implementation",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Six implementation points for the SAME difference test. Directional paired comparison test: set up trays; each tester is presented with two coded samples and asked to determine which of the samples has a greater degree of intensity in terms of a particular characteristic; coded samples are presented to each tester in random order; tester tastes the samples in the order given; taste order is always specified to ensure random tasting of the samples; testers are asked to indicate which sample has the greater degree of intensity in terms of the particular characteristic being tested for e.g. sweetness; responses are collated on a record sheet; codes are revealed and results are calculated; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-5",
+        "verbatim": "Point 5",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-6",
+        "verbatim": "Point 6",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "test-3",
+    "label": "Triangle Test",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Triangle Test",
+      "marks": 3
+     },
+     {
+      "id": "aim",
+      "kind": "point",
+      "verbatim": "To identify the sample that is different.",
+      "marks": 3,
+      "contextNote": "Aim of the SAME selected difference test."
+     },
+     {
+      "id": "implementation",
+      "kind": "criterion",
+      "verbatim": "Implementation",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Six implementation points for the SAME difference test. Triangle test: set up trays; each tester is presented with three coded samples and asked which one is different; coded samples are presented to each tester in balanced presentation order; tester tastes the samples in the order given; taste order is always specified to ensure random tasting of the samples; asked if they can identify the sample that is different; responses are collated on a record sheet; codes are revealed and results are calculated; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-5",
+        "verbatim": "Point 5",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-6",
+        "verbatim": "Point 6",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "test-4",
+    "label": "Duo-trio Test",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Duo-trio Test",
+      "marks": 3
+     },
+     {
+      "id": "aim",
+      "kind": "point",
+      "verbatim": "To identify the sample that is different from the control / reference.",
+      "marks": 3,
+      "contextNote": "Aim of the SAME selected difference test."
+     },
+     {
+      "id": "implementation",
+      "kind": "criterion",
+      "verbatim": "Implementation",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Six implementation points for the SAME difference test. Duo-trio test: set up trays; each tester is presented with three samples; two samples are coded and one is identified as the reference; tester is asked to identify the sample that is different from the reference; samples are presented to each tester in random order; tester tastes the samples in the order given, starting with the reference sample; taste order is always specified to ensure random tasting of the samples; testers identify the sample that is different from the reference; responses are collated on a record sheet; codes are revealed and results are calculated; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-5",
+        "verbatim": "Point 5",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-6",
+        "verbatim": "Point 6",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "other-test",
+    "label": "Another valid difference test",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Choose ONE difference test consistently; all four original models remain available."
+     },
+     {
+      "id": "aim",
+      "kind": "criterion",
+      "verbatim": "Aim",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Aim of the SAME selected test; no additional source model is printed."
+     },
+     {
+      "id": "implementation",
+      "kind": "criterion",
+      "verbatim": "Implementation",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Six implementation points for the SAME selected test; no additional source model is printed.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-5",
+        "verbatim": "Point 5",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-6",
+        "verbatim": "Point 6",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2017-hl-sb-q4a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sb-q4a",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "questionRef": "2017 HL Section B Q4(a)",
+  "questionText": "Analyse the factors that influence housing choices. Refer to: • socio‐economic factors • availability of housing • national housing policy.",
+  "stem": "Everyone needs a home: a secure, comfortable place in a pleasant and sustainable community; a place to rear a family if they so wish and to grow old in serenity. (Social Housing Strategy, 2020)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Three required headings×two factors3"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "criterion",
+    "verbatim": "Socio-economic factors",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Socio-economic factors: cost; location; size of the household; ages of the children; special needs of family members e.g. elderly people; personal preference – layout, view; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "heading-2",
+    "kind": "criterion",
+    "verbatim": "Availability of housing",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Availability of housing – private housing: some urban areas are currently experiencing a shortage of private housing as demand is exceeding supply; increase in house prices; ghost estates; etc. rental market: rent has increased due to demand for rental properties; supply shortage of suitable affordable accommodation; etc. social housing: severe shortage due to high demand; long waiting lists; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "heading-3",
+    "kind": "criterion",
+    "verbatim": "National housing policy",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "National housing policy: high density living; sustainable communities supported by shops, schools, proper infrastructure; retention of listed buildings through grants; protection of natural environment; promotion of energy efficient homes; improvement grant schemes e.g. solar panels; provision of social and affordable housing; housing supports to alleviate homelessness; traveller-specific accommodation; encouragement of home ownership through mortgage interest relief; provision of rent allowance; registration of rented accommodation with the PRTB; code of conduct for financial institutions to follow when handling mortgage arrears; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sb-q4b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sb-q4b",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "questionRef": "2017 HL Section B Q4(b)",
+  "questionText": "Outline the conditions that are required in order to qualify for mortgage approval.",
+  "stem": "Everyone needs a home: a secure, comfortable place in a pleasant and sustainable community; a place to rear a family if they so wish and to grow old in serenity. (Social Housing Strategy, 2020)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points × 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "mortgage approval",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12,
+     16
+    ],
+    "contextNote": "Historical 2017 mortgage rules and original amounts apply to this source task. Complete original source guidance: Borrowing limit: loan-income-limit - set at 3.5 times the gross income; loan-value-limit - 10% minimum deposit needed on properties costing up to €220,000; 1st January 2017 – first time buyers of principal dwelling houses, the limit of 90% applies, 10% deposit; etc. good financial management / credit history: must be evident i.e. a steady build-up of savings and reasonable spending habits; etc. employment must be secure; income: must supply proof of income; etc. term of loan: repaid over 20 - 40 years, older applicant over a shorter term; etc. property: must be in good condition, house surveyed by lending agency; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sb-q4c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sb-q4c",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "questionRef": "2017 HL Section B Q4(c)",
+  "questionText": "Name and describe one type of mortgage available to house purchasers.",
+  "stem": "Everyone needs a home: a secure, comfortable place in a pleasant and sustainable community; a place to rear a family if they so wish and to grow old in serenity. (Social Housing Strategy, 2020)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name4 + three description points4"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "point",
+    "verbatim": "Annuity / Repayment Mortgage",
+    "marks": 4
+   },
+   {
+    "id": "description",
+    "kind": "criterion",
+    "verbatim": "Description",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12
+    ],
+    "contextNote": "Three details of the SAME mortgage. Original historical 2017 conditions and figures retained. Annuity / Repayment Mortgage: each repayment goes partly to pay off the interest on the loan and partly to repay the principal amount borrowed; amount owed declines over the years; must take out a mortgage protection policy; interest rates may be variable or fixed or a combination; variable rate fluctuates in line with interest rates from the ECB – element of risk involved as interest rates may increase; fixed rate is fixed for a set number of years, generally higher than a variable interest rate and outgoings are always the same; combination – loan is divided between variable and fixed; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "answerVariants": [
+   {
+    "id": "mortgage-1",
+    "label": "Annuity / Repayment Mortgage",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Annuity / Repayment Mortgage",
+      "marks": 4
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       4,
+       8,
+       12
+      ],
+      "contextNote": "Three details of the SAME mortgage. Original historical 2017 conditions and figures retained. Annuity / Repayment Mortgage: each repayment goes partly to pay off the interest on the loan and partly to repay the principal amount borrowed; amount owed declines over the years; must take out a mortgage protection policy; interest rates may be variable or fixed or a combination; variable rate fluctuates in line with interest rates from the ECB – element of risk involved as interest rates may increase; fixed rate is fixed for a set number of years, generally higher than a variable interest rate and outgoings are always the same; combination – loan is divided between variable and fixed; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "mortgage-2",
+    "label": "Endowment",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Endowment",
+      "marks": 4
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       4,
+       8,
+       12
+      ],
+      "contextNote": "Three details of the SAME mortgage. Original historical 2017 conditions and figures retained. Endowment: combination of borrowing and investing; interest is paid on the loan and in addition a premium is paid on a life assurance policy; life assurance policy is designed to pay off / cover the loan when it matures; the yield from the policy may not fully cover the loan; no extra mortgage protection policy needed (part of life assurance policy); not widely available presently to house buyers; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "mortgage-3",
+    "label": "Pension linked",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Pension linked",
+      "marks": 4
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       4,
+       8,
+       12
+      ],
+      "contextNote": "Three details of the SAME mortgage. Original historical 2017 conditions and figures retained. Pension linked: pays interest on the loan and pays a sum into a pension scheme; loan is repaid from the pension fund on retirement; mortgage protection policy is necessary; popular with self-employed people because of better tax relief; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "mortgage-4",
+    "label": "Local authority mortgage / Home Choice Loan",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Local authority mortgage / Home Choice Loan",
+      "marks": 4
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       4,
+       8,
+       12
+      ],
+      "contextNote": "Three details of the SAME mortgage. Original historical 2017 conditions and figures retained. Local authority mortgage / Home Choice Loan: loan may be up to 92% of price of house subject to a maximum €285,000; annuity mortgage with variable interest rates; much show you cannot get a loan elsewhere; income must satisfy income test; first time buyers; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "other-1",
+    "label": "Tracker",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Tracker",
+      "marks": 4,
+      "contextNote": "The original scheme names Tracker, Current account / Offset mortgage and Deferred start / Interest only mortgage without description models. No model is invented. Describe the SAME selected mortgage."
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       4,
+       8,
+       12
+      ],
+      "contextNote": "The original scheme names Tracker, Current account / Offset mortgage and Deferred start / Interest only mortgage without description models. No model is invented. Describe the SAME selected mortgage.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "other-2",
+    "label": "Current account / Offset mortgage",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Current account / Offset mortgage",
+      "marks": 4,
+      "contextNote": "The original scheme names Tracker, Current account / Offset mortgage and Deferred start / Interest only mortgage without description models. No model is invented. Describe the SAME selected mortgage."
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       4,
+       8,
+       12
+      ],
+      "contextNote": "The original scheme names Tracker, Current account / Offset mortgage and Deferred start / Interest only mortgage without description models. No model is invented. Describe the SAME selected mortgage.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "other-3",
+    "label": "Deferred start / Interest only mortgage",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Deferred start / Interest only mortgage",
+      "marks": 4,
+      "contextNote": "The original scheme names Tracker, Current account / Offset mortgage and Deferred start / Interest only mortgage without description models. No model is invented. Describe the SAME selected mortgage."
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       4,
+       8,
+       12
+      ],
+      "contextNote": "The original scheme names Tracker, Current account / Offset mortgage and Deferred start / Interest only mortgage without description models. No model is invented. Describe the SAME selected mortgage.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "other-4",
+    "label": "Another valid mortgage",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ],
+      "contextNote": "The original scheme names Tracker, Current account / Offset mortgage and Deferred start / Interest only mortgage without description models. No model is invented. Describe the SAME selected mortgage."
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       4,
+       8,
+       12
+      ],
+      "contextNote": "The original scheme names Tracker, Current account / Offset mortgage and Deferred start / Interest only mortgage without description models. No model is invented. Describe the SAME selected mortgage.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2017-hl-sb-q5a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-1",
+  "conceptId": "sb-q5a",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "questionRef": "2017 HL Section B Q5(a)",
+  "questionText": "Outline the variations that exist in marriages today.",
+  "stem": "Marriage is still very popular in Ireland. In 2015, religious ceremonies accounted for the highest proportion of marriages (66.3%). Civil ceremonies were the most popular choice for non‐religious marriage ceremonies (28%). In recent years the Humanist Association has also risen in popularity with 5.7% of marriages. (Central Statistics Office, 2016)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points × 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "variations",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12,
+     16
+    ],
+    "contextNote": "Complete original source guidance: Cultural variations – minimum age; choice of partners; number of spouses – monogamy and polygamy; arranged marriages; interfaith marriages and different faiths; same sex marriages; different ages; type of ceremony; location of ceremony; 2nd marriages; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sb-q5b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-1",
+  "conceptId": "sb-q5b",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "questionRef": "2017 HL Section B Q5(b)",
+  "questionText": "Discuss the benefits of pre‐marriage courses for couples preparing for marriage.",
+  "stem": "Marriage is still very popular in Ireland. In 2015, religious ceremonies accounted for the highest proportion of marriages (66.3%). Civil ceremonies were the most popular choice for non‐religious marriage ceremonies (28%). In recent years the Humanist Association has also risen in popularity with 5.7% of marriages. (Central Statistics Office, 2016)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points × 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "benefits",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12,
+     16
+    ],
+    "contextNote": "Complete original source guidance: Provide information regarding the expectations and reality of marriage i.e. communication; conflict resolution; relationships; family planning; child rearing; financial responsibility; legality of marriage; buying a home; problems that may occur e.g. addictions; couples look at personal qualities and are encouraged to discuss issues that may have a negative impact on marriage; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sb-q5c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-1",
+  "conceptId": "sb-q5c",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "questionRef": "2017 HL Section B Q5(c)",
+  "questionText": "Evaluate each of the following options available to couples experiencing difficulties in their marriage: • marriage counselling • family mediation • legal separation.",
+  "stem": "Marriage is still very popular in Ireland. In 2015, religious ceremonies accounted for the highest proportion of marriages (66.3%). Civil ceremonies were the most popular choice for non‐religious marriage ceremonies (28%). In recent years the Humanist Association has also risen in popularity with 5.7% of marriages. (Central Statistics Office, 2016)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Three required options×two points3"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "criterion",
+    "verbatim": "Marriage counselling",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Historical 2017 source account. Marriage counselling: aims to assist couples to resolve marriage problems before they become grounds for separation or divorce; confidential service; free of charge; provided by Accord or the Marriage and Relationship Counselling Services; qualified counsellors work with the couple and may refer them to experts on issues such as sexual relations, law or addictions; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "heading-2",
+    "kind": "criterion",
+    "verbatim": "Family mediation",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Historical 2017 source account. Family mediation: separating couple can negotiate a separation agreement; during mediation, the couple meet in the presence of an impartial mediator; issues are discussed and decisions reached relating to all aspects of their future such as custody of children, division of finances, parenting of children and issues concerning the family home; free and confidential by the Family Mediation Service under the Department of Social and Family Affairs; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "heading-3",
+    "kind": "criterion",
+    "verbatim": "Legal separation",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Historical 2017 source account. Legal separation: a separation agreement / deed of separation – legally binding written contract; sets out future rights and duties i.e. agreement to live apart; responsibility and care of dependent children; maintenance; home ownership arrangements; mediator can help negotiate terms; must be drawn up by solicitor; etc. Judicial separation / decree of separation – made under the Judicial Separation and Family Law Reform Act 1989; must be based on following grounds – adultery, unreasonable behaviour; desertion; no normal marital relations; heard by judge; judge may also be used to agree custody, maintenance, property, succession rights; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sc-q1ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-4",
+  "conceptId": "sc-q1ai",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E1 Q1(a)(i)",
+  "questionText": "Evaluate the suitability of the home for the family’s present and future needs. Suggest modifications, if required.",
+  "stem": "The Murphy family live in a bungalow with their two children, John (11 years) and Emily (4 years).",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "suitability",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15,
+     20
+    ],
+    "contextNote": "Evaluate present/future needs and suggest modifications if required, within FOUR points. The source gives no separate evaluation/modification allocation. The complete original plan and family ages remain available. Complete original source guidance: Bedroom 4 as a guest bedroom; sliding door to garden from dining room; open plan kitchen and dining room; utility room off kitchen; separate sitting room for privacy; bedroom 4 could be a study; dining and bedroom 3 combined to make a more open plan family area; garage could be converted to a playroom / study; double doors between lounge and kitchen / dining to create open plan family space; bedroom 2 could become walk in wardrobe for parents; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2017-hl-sc-q1-bungalow",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2017-hl-sc-q1aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-6",
+  "conceptId": "sc-q1aii",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E1 Q1(a)(ii)",
+  "questionText": "Identify potential energy inefficiencies in a home and suggest strategies for improvement.",
+  "stem": "The Murphy family live in a bungalow with their two children, John (11 years) and Emily (4 years).",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "energy inefficiencies",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15
+    ],
+    "contextNote": "Give THREE energy inefficiencies and the related improvement strategy for EACH. Each linked account has five marks; do not detach the strategy from its inefficiency. Complete original source guidance: Inefficiencies: boilers and heating systems not serviced regularly; thermostats set too high; individual room thermostats and timers not used; un-lagged pipes and cylinders; taking baths instead of showers; turning on the heating system to heat small amounts of water; not having the correct setting / timer on the immersion thermostat; leaking hot taps; washing items under running water; choosing unnecessarily high temperature cycles for the dishwasher and washing machine; draughts - ill-fitted windows and doors; insufficient roof, attic and wall insulation; not drawing curtains at night; not using low emissivity glazing; using higher wattage bulbs than necessary; not using CFL’s; leaving on unnecessary lights; not choosing A or B rated energy efficient appliances; choosing less energy efficient option when using appliances e.g. using a grill instead of a toaster; over-running appliances such as food mixers; using conventional cooking methods instead of microwaving e.g. to reheat food; not making full use of economy / half load cycles in dishwashers and washing machines; using tumble driers to dry clothes instead of clothes line; etc. Strategies: good insulation; timer and thermostats should be used on heating systems / hot water; lag hot water cylinder and pipes; double / triple glazed and low emissivity windows prevent heat loss; lining on curtains to keep in heat; solar energy to heat living space; zone heating systems; choose energy efficient appliances; replace tungsten bulbs with CFLs or LEDs; use sensors on outside lights; consider night saver electricity; fix dripping taps; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sc-q1aiii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-6",
+  "conceptId": "sc-q1aiii",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E1 Q1(a)(iii)",
+  "questionText": "Write an informative note on the Building Energy Rating (BER) certificate.",
+  "stem": "The Murphy family live in a bungalow with their two children, John (11 years) and Emily (4 years).",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "BER certificate",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15
+    ],
+    "contextNote": "Complete original source guidance: A BER certificate is compulsory for all homes being sold or rented and must be included in commercial advertisements; the home must be assessed by a registered assessor in order to determine a BER rating and obtain a certificate; during the survey they assess the area of the rooms and windows, thickness of the walls and levels of insulation, heating system, floor and wall types; energy scale of A to G, triple A rated homes are the most efficient, G rated homes are the least efficient; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sc-q1bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1bi",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E1 Q1(b)(i)",
+  "questionText": "Evaluate the adequacy of social housing provision in Ireland.",
+  "stem": "To the greatest extent possible, every household in Ireland will have access to secure, good quality housing suited to their needs at an affordable price and in a sustainable community. (Vision Statement: Department of Housing, Planning, Community and Local Government)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 6"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "social housing provision",
+    "marks": 18,
+    "permittedMarks": [
+     0,
+     6,
+     12,
+     18
+    ],
+    "contextNote": "Historical 2017 provision and conditions as printed. Complete original source guidance: Available to people on lower incomes or who are unable to afford a private house; provided by local authority or by voluntary or co-operative housing groups; effects of the recession has resulted in more people renting or applying to the local authority for housing; increase in the number of people on waiting lists - elderly people, people with a disability and homeless people account for over 10% of the total waiting list; increase in refugees and asylum seekers has increased the demand for housing; supply does not meet demand, can be on the waiting list for a long time; families, people with disabilities and the elderly get priority as opposed to single people; rent support available; tenant purchase scheme and affordable housing schemes are no longer available so this has impacted on the provision of housing; rental accommodation scheme RAS is very popular; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       6
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       6
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       6
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sc-q1bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1bii",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E1 Q1(b)(ii)",
+  "questionText": "Comment on the importance of each of the following services for new housing developments: • schools • transport • refuse collection.",
+  "stem": "To the greatest extent possible, every household in Ireland will have access to secure, good quality housing suited to their needs at an affordable price and in a sustainable community. (Vision Statement: Department of Housing, Planning, Community and Local Government)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Schools4 + transport4 + refuse4"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "criterion",
+    "verbatim": "Schools",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Schools: pre-schools, primary and secondary schools to facilitate the number of children in the area and allowing for future population growth; children should not have to travel far; safety when travelling - number of cars on the road, traffic congestion and pollution; well educated population; etc."
+   },
+   {
+    "id": "heading-2",
+    "kind": "criterion",
+    "verbatim": "Transport",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Transport: a well-planned road network ensures the safety of residents; links to public transport in urban areas enable people to travel with ease to and from work and to other amenities; local authority must erect signage and introduce traffic calming within housing developments as a safety measure; etc."
+   },
+   {
+    "id": "heading-3",
+    "kind": "criterion",
+    "verbatim": "Refuse collection",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Refuse collection: keeps housing developments and the surrounding areas clean and hygienic, prevents vermin and the spread of disease; prevents unsightly littering; all these affect the property value of the homes in the development; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sc-q1ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-5",
+  "conceptId": "sc-q1ci",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E1 Q1(c)(i)",
+  "questionText": "Outline the importance of adequate ventilation in the home.",
+  "stem": "Proper ventilation is vital to a family’s health and comfort.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "ventilation",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12
+    ],
+    "contextNote": "Complete original source guidance: Provides fresh air; removes stale air; controls humidity levels; controls temperature; reduces condensation; removes smells; assists combustion; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sc-q1cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-5",
+  "conceptId": "sc-q1cii",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E1 Q1(c)(ii)",
+  "questionText": "Recommend one natural and one artificial method of ventilation suitable for a kitchen / living area. Explain the underlying principle of each method.",
+  "stem": "Proper ventilation is vital to a family’s health and comfort.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Natural(name3 + principle2×3) + artificial(name3 + principle2×3)"
+  },
+  "rows": [
+   {
+    "id": "natural-name",
+    "kind": "anyN",
+    "verbatim": "Natural methods",
+    "marks": 3,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "windows and doors",
+      "fireplaces and flues",
+      "air bricks",
+      "wall air vents"
+     ]
+    },
+    "contextNote": "Choose ONE natural method suitable for the kitchen/living area, and explain its matching principle."
+   },
+   {
+    "id": "natural-principle",
+    "kind": "criterion",
+    "verbatim": "Principle",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Two principle points matching the SAME natural method. natural ventilation involves introducing fresh, cool air from outside through openings on the walls, to replace stale, warm air in the room; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "artificial-name",
+    "kind": "point",
+    "verbatim": "Extractor fan",
+    "marks": 3
+   },
+   {
+    "id": "artificial-principle",
+    "kind": "criterion",
+    "verbatim": "Principle",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Two principle points matching this SAME artificial method. Extractor fan: when the fan is turned on the shutters open and the electric motor rotates the blades; the speed of the rotation creates suction drawing stale air out of the room; the stale air is naturally replaced by fresh air; shutters close when not in use; controlled by a switch or pull cord; variable speeds; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "answerVariants": [
+   {
+    "id": "artificial-1",
+    "label": "Extractor fan",
+    "rows": [
+     {
+      "id": "natural-name",
+      "kind": "anyN",
+      "verbatim": "Natural methods",
+      "marks": 3,
+      "openList": true,
+      "group": {
+       "claimMax": 1,
+       "perOption": 3,
+       "options": [
+        "windows and doors",
+        "fireplaces and flues",
+        "air bricks",
+        "wall air vents"
+       ]
+      },
+      "contextNote": "Choose ONE natural method suitable for the kitchen/living area, and explain its matching principle."
+     },
+     {
+      "id": "natural-principle",
+      "kind": "criterion",
+      "verbatim": "Principle",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       3,
+       6
+      ],
+      "contextNote": "Two principle points matching the SAME natural method. natural ventilation involves introducing fresh, cool air from outside through openings on the walls, to replace stale, warm air in the room; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "artificial-name",
+      "kind": "point",
+      "verbatim": "Extractor fan",
+      "marks": 3
+     },
+     {
+      "id": "artificial-principle",
+      "kind": "criterion",
+      "verbatim": "Principle",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       3,
+       6
+      ],
+      "contextNote": "Two principle points matching this SAME artificial method. Extractor fan: when the fan is turned on the shutters open and the electric motor rotates the blades; the speed of the rotation creates suction drawing stale air out of the room; the stale air is naturally replaced by fresh air; shutters close when not in use; controlled by a switch or pull cord; variable speeds; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "artificial-2",
+    "label": "Cooker hood",
+    "rows": [
+     {
+      "id": "natural-name",
+      "kind": "anyN",
+      "verbatim": "Natural methods",
+      "marks": 3,
+      "openList": true,
+      "group": {
+       "claimMax": 1,
+       "perOption": 3,
+       "options": [
+        "windows and doors",
+        "fireplaces and flues",
+        "air bricks",
+        "wall air vents"
+       ]
+      },
+      "contextNote": "Choose ONE natural method suitable for the kitchen/living area, and explain its matching principle."
+     },
+     {
+      "id": "natural-principle",
+      "kind": "criterion",
+      "verbatim": "Principle",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       3,
+       6
+      ],
+      "contextNote": "Two principle points matching the SAME natural method. natural ventilation involves introducing fresh, cool air from outside through openings on the walls, to replace stale, warm air in the room; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "artificial-name",
+      "kind": "point",
+      "verbatim": "Cooker hood",
+      "marks": 3
+     },
+     {
+      "id": "artificial-principle",
+      "kind": "criterion",
+      "verbatim": "Principle",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       3,
+       6
+      ],
+      "contextNote": "Two principle points matching this SAME artificial method. Cooker hood: fitted over cooker hobs to expel cooking odours and vapours; an electric motor rotates a fan; high speed fan creates a suction drawing in warm, odour-laden greasy air; ducted - air is expelled to the outside; ductless - filters remove fumes and absorb grease; purifying the air; recirculates the air back into the room; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "other-artificial",
+    "label": "Another valid artificial method",
+    "rows": [
+     {
+      "id": "natural-name",
+      "kind": "anyN",
+      "verbatim": "Natural methods",
+      "marks": 3,
+      "openList": true,
+      "group": {
+       "claimMax": 1,
+       "perOption": 3,
+       "options": [
+        "windows and doors",
+        "fireplaces and flues",
+        "air bricks",
+        "wall air vents"
+       ]
+      },
+      "contextNote": "Choose ONE natural method suitable for the kitchen/living area, and explain its matching principle."
+     },
+     {
+      "id": "natural-principle",
+      "kind": "criterion",
+      "verbatim": "Principle",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       3,
+       6
+      ],
+      "contextNote": "Two principle points matching the SAME natural method. natural ventilation involves introducing fresh, cool air from outside through openings on the walls, to replace stale, warm air in the room; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "artificial-name",
+      "kind": "criterion",
+      "verbatim": "Artificial methods",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Name ONE artificial method suitable for the kitchen/living area."
+     },
+     {
+      "id": "artificial-principle",
+      "kind": "criterion",
+      "verbatim": "Principle",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       3,
+       6
+      ],
+      "contextNote": "Two principle points matching the SAME selected method. The source gives worked models only for extractor fan and cooker hood; no additional model is invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "taskGroups": [
+   {
+    "sourceCardId": "he-2017-hl-sc-q1cii-natural",
+    "label": "Natural ventilation",
+    "marks": 9,
+    "rowIds": [
+     "natural-name",
+     "natural-principle"
+    ]
+   },
+   {
+    "sourceCardId": "he-2017-hl-sc-q1cii-artificial",
+    "label": "Artificial ventilation",
+    "marks": 9,
+    "rowIds": [
+     "artificial-name",
+     "artificial-principle"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2017-hl-sc-q2ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2ai",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E2 Q2(a)(i)",
+  "questionText": "Comment on the outfit shown in the picture above. Refer to: • comfort • aesthetic appeal • current fashion trend.",
+  "stem": "The athleisure trend is turning workout wear into a serious style statement. People of every age are wearing workout clothes all day.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Comfort5 + aesthetic5 + current fashion5"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "criterion",
+    "verbatim": "Comfort",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     5
+    ],
+    "contextNote": "Comfort: loose fitting top; drawstring waist; trousers made from soft fabric; jacket zip opening is easy and can be left fully open or partially open; all contribute to the comfort and wear-ability of the outfit; etc."
+   },
+   {
+    "id": "heading-2",
+    "kind": "criterion",
+    "verbatim": "Aesthetic appeal",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     5
+    ],
+    "contextNote": "Aesthetic appeal: appeals to younger people and those who are fashion conscious; may not suit all shapes and sizes; etc."
+   },
+   {
+    "id": "heading-3",
+    "kind": "criterion",
+    "verbatim": "Current fashion trend",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     5
+    ],
+    "contextNote": "Current fashion trend: Athleisure is a trend in fashion in which clothing designed for workouts and other athletic activities is worn in other settings, such as during work, casual or social occasions; can be worn for multiple occasions without having to change, greater convenience, people do not have to carry an extra gym outfit on the way to the office; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2017-hl-sc-q2-outfit",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2017-hl-sc-q2aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2aii",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E2 Q2(a)(ii)",
+  "questionText": "Discuss the influence of trend setters and the media on fashion.",
+  "stem": "The athleisure trend is turning workout wear into a serious style statement. People of every age are wearing workout clothes all day.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Trendsetters5 + media5"
+  },
+  "rows": [
+   {
+    "id": "trendsetters",
+    "kind": "criterion",
+    "verbatim": "trendsetters",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     5
+    ],
+    "contextNote": "One point specifically about trendsetters. Complete shared source: Trend setters and the media influence fashion by developing public interest and excitement in the latest styles and trends through the wide publication of glamorous photographs; celebrity endorsements and informative articles; media acts as a fashion barometer, measuring the high and low points of celebrity styles, indicating the changing fashion elements reflective of the iconic views and lifestyles of relevant popular celebrities, public figures and role models; influence of social media snapchat, instagram and fashion bloggers; etc."
+   },
+   {
+    "id": "media",
+    "kind": "criterion",
+    "verbatim": "media",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     5
+    ],
+    "contextNote": "One point specifically about media. Complete shared source: Trend setters and the media influence fashion by developing public interest and excitement in the latest styles and trends through the wide publication of glamorous photographs; celebrity endorsements and informative articles; media acts as a fashion barometer, measuring the high and low points of celebrity styles, indicating the changing fashion elements reflective of the iconic views and lifestyles of relevant popular celebrities, public figures and role models; influence of social media snapchat, instagram and fashion bloggers; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sc-q2b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-7",
+  "conceptId": "sc-q2b",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E2 Q2(b)",
+  "questionText": "Blending is combining different fibres together to achieve a desired product characteristic. Write a profile of one blended fabric. Refer to: • fibre production • fabric properties • uses.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Production3×3 + properties3×1 + uses3×1; no name tariff"
+  },
+  "rows": [
+   {
+    "id": "production",
+    "kind": "criterion",
+    "verbatim": "fibre production",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     3,
+     6,
+     9
+    ],
+    "contextNote": "Three points about production of the SAME chosen blended fabric, using its constituent fibres and blending. Wool: fleece is graded cleaned and teased; etc. Nylon: two chemicals mixed together and heated; molecules link to produce a long filament; hot nylon is squirted from slit in base of steel vessels; etc. Blending: combinations / mixing the threads are woven together e.g. warp is one fibre and the weft is a different fibre; fibres are blended before or as fibre is being woven; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "properties",
+    "kind": "criterion",
+    "verbatim": "fabric properties",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Three properties of the SAME blended fabric, reflecting BOTH constituents. Wool: warm; absorbent; soft; resilient; durable; scorches easily; damaged by moths; damaged by careless washing – shrinks and felts; piles; hairy – can irritate some skins; etc. Nylon: strong; warm; elastic; light; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "id": "uses",
+    "kind": "criterion",
+    "verbatim": "uses",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Three uses appropriate to the SAME selected blend. Complete original shared guidance: clothing, soft furnishings, bed linen; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "answerVariants": [
+   {
+    "id": "blend-1",
+    "label": "wool and nylon",
+    "rows": [
+     {
+      "id": "production",
+      "kind": "criterion",
+      "verbatim": "fibre production",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       3,
+       6,
+       9
+      ],
+      "contextNote": "Three points about production of the SAME chosen blended fabric, using its constituent fibres and blending. Wool: fleece is graded cleaned and teased; etc. Nylon: two chemicals mixed together and heated; molecules link to produce a long filament; hot nylon is squirted from slit in base of steel vessels; etc. Blending: combinations / mixing the threads are woven together e.g. warp is one fibre and the weft is a different fibre; fibres are blended before or as fibre is being woven; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "properties",
+      "kind": "criterion",
+      "verbatim": "fabric properties",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Three properties of the SAME blended fabric, reflecting BOTH constituents. Wool: warm; absorbent; soft; resilient; durable; scorches easily; damaged by moths; damaged by careless washing – shrinks and felts; piles; hairy – can irritate some skins; etc. Nylon: strong; warm; elastic; light; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "uses",
+      "kind": "criterion",
+      "verbatim": "uses",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Three uses appropriate to the SAME selected blend. Complete original shared guidance: clothing, soft furnishings, bed linen; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "blend-2",
+    "label": "polyester cotton",
+    "rows": [
+     {
+      "id": "production",
+      "kind": "criterion",
+      "verbatim": "fibre production",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       3,
+       6,
+       9
+      ],
+      "contextNote": "Three points about production of the SAME chosen blended fabric, using its constituent fibres and blending. Polyester: viscous liquid created and extruded through fine holes in a nozzle or spinneret; the filaments solidify when they reach cold air; etc. Cotton: boll is harvested; cotton fibres removed; spun into yarn; etc. Blending: combinations / mixing the threads are woven together e.g. warp is one fibre and the weft is a different fibre; fibres are blended before or as fibre is being woven; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "properties",
+      "kind": "criterion",
+      "verbatim": "fabric properties",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Three properties of the SAME blended fabric, reflecting BOTH constituents. Polyester: strong; warm; crease resistant; etc. Cotton: strong; cool; absorbent; easy to launder; easy to dye and bleach; no elasticity; shrinks; burns easily; mildew damage; wrinkles; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "uses",
+      "kind": "criterion",
+      "verbatim": "uses",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Three uses appropriate to the SAME selected blend. Complete original shared guidance: clothing, soft furnishings, bed linen; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "another-blend",
+    "label": "Another valid blended fabric",
+    "rows": [
+     {
+      "id": "production",
+      "kind": "criterion",
+      "verbatim": "fibre production",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       3,
+       6,
+       9
+      ],
+      "contextNote": "Use ONE blended fabric consistently. The source models wool/nylon and polyester/cotton only; no production model is invented for another blend. Shared blending guidance: Blending: combinations / mixing the threads are woven together e.g. warp is one fibre and the weft is a different fibre; fibres are blended before or as fibre is being woven; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "properties",
+      "kind": "criterion",
+      "verbatim": "fabric properties",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Three properties of the SAME blend reflecting its constituents. No additional model is printed.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "uses",
+      "kind": "criterion",
+      "verbatim": "uses",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Three uses appropriate to the SAME blend. Complete shared source: clothing, soft furnishings, bed linen; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2017-hl-sc-q2ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2ci",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E2 Q2(c)(i)",
+  "questionText": "Outline how the Irish fashion industry is promoted at home and abroad.",
+  "stem": "The textile and fashion industry is one which is market‐driven, with high levels of skill, imagination and creativity.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 3"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "promotion",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     3,
+     6,
+     9
+    ],
+    "contextNote": "Complete original source guidance: Support from Enterprise Boards; shops that support Irish designers - Kilkenny Design Centre, the design centre at Powerscourt Townhouse; Irish designers producing design ranges for high street stores; fashion weeks; fashion blogs; Irish designers showcase at international fashion shows; public figures wearing Irish designers; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sc-q2cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2cii",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E2 Q2(c)(ii)",
+  "questionText": "Name and give details of one career opportunity in the textile and fashion industry.",
+  "stem": "The textile and fashion industry is one which is market‐driven, with high levels of skill, imagination and creativity.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name2 + details2×2"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "anyN",
+    "verbatim": "Name",
+    "marks": 2,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Fashion designers",
+      "tailors",
+      "fashion journalist",
+      "photographer",
+      "model",
+      "stylist",
+      "clothing manufacturer",
+      "advertising",
+      "retail sales assistants"
+     ]
+    },
+    "contextNote": "Choose ONE career consistently; every original career name is available."
+   },
+   {
+    "id": "details",
+    "kind": "criterion",
+    "verbatim": "Details",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Two details about the SAME chosen career. The original scheme supplies names only, with no worked career details; none are invented. Complete original pool: Fashion designers; tailors; fashion journalist; photographer; model; stylist; clothing manufacturer; advertising; retail sales assistants; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sc-q3ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3ai",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E3 Q3(a)(i)",
+  "questionText": "Comment on the information provided above and analyse why unemployment rates have changed in Ireland.",
+  "stem": "Unemployment in Ireland is now at its lowest level since December 2008. Total numbers unemployed have now fallen by 52% from the 327,000 peak recorded in 2011.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "Comment",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15,
+     20
+    ],
+    "contextNote": "Comment on the source table AND analyse the change within FOUR points. The source gives no fixed comment/analysis quota. Complete six-year table retained. Complete original source guidance: Comment: unemployment rates in Ireland in 2008 were very high due to the worldwide recession; growth in the economy between 2011 and 2016 has led to a gradual decrease in unemployment; etc. Analysis: growth in economy - economic growth causes employment figures to increase; growth in the construction, retail and service industries; greater demand for products and services; more disposable income - leads to increased spending power; manufacturing and related industries expand which results in more jobs; state investment in job creation schemes e.g. Enterprise Ireland and IDA have been successful; tourism brings employment; low corporation tax (12.5%) encourages foreign direct investment (FDI); emigration; measures like JobsWeek – match jobseekers with employers; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2017-hl-sc-q3-unemployment",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2017-hl-sc-q3aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3aii",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E3 Q3(a)(ii)",
+  "questionText": "Discuss the effects of unemployment on individuals, families and society.",
+  "stem": "Unemployment in Ireland is now at its lowest level since December 2008. Total numbers unemployed have now fallen by 52% from the 327,000 peak recorded in 2011.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Individuals4 + families4 + society4 + two others4"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "criterion",
+    "verbatim": "Effects on individuals",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Effects on individuals Financial insecurity: drop in income leading to drop in living standards; poverty; mortgage arrears - repossession of homes; etc. Loss of identity and status: feel undervalued, low self-worth; etc. Social isolation; loneliness; individuals prevented from participating in social events due to limited income; etc. Depression: long term unemployment can reduce an individuals’ self-esteem and create feelings of hopelessness and failure; may led to self-destructive habits e.g. alcohol / drug abuse; increase in suicide rates; etc."
+   },
+   {
+    "id": "heading-2",
+    "kind": "criterion",
+    "verbatim": "Effects on families",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Effects on families Decline in standard of living: many families reliant on social welfare payments, provision of basic needs may become difficult; etc. repossession of family home: failure to make mortgage repayments due to loss of jobs can cause homes to be repossessed, families may become homeless or in need of emergency accommodation; etc. relationship problems: relationship between couples can become strained due to financial stress, may lead to marital breakdown; etc. decline in education success: children’s’ school work and concentration in class may be affected due to worry about family’s financial situation; lack of finances may result in early school leavers; etc."
+   },
+   {
+    "id": "heading-3",
+    "kind": "criterion",
+    "verbatim": "Effects on society",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Effects on society Emigration: many people forced to emigrate - leading to depopulation, lower birth rates, isolation of older people; etc. antisocial behaviour; drug and alcohol abuse; crime and vandalism; may result in unemployment black-spots; etc. increase in taxes when a large % of the government’s budget is allocated to social welfare payments; etc."
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "2 others",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Two ADDITIONAL effects from any of the three required headings. Effects on individuals Financial insecurity: drop in income leading to drop in living standards; poverty; mortgage arrears - repossession of homes; etc. Loss of identity and status: feel undervalued, low self-worth; etc. Social isolation; loneliness; individuals prevented from participating in social events due to limited income; etc. Depression: long term unemployment can reduce an individuals’ self-esteem and create feelings of hopelessness and failure; may led to self-destructive habits e.g. alcohol / drug abuse; increase in suicide rates; etc. Effects on families Decline in standard of living: many families reliant on social welfare payments, provision of basic needs may become difficult; etc. repossession of family home: failure to make mortgage repayments due to loss of jobs can cause homes to be repossessed, families may become homeless or in need of emergency accommodation; etc. relationship problems: relationship between couples can become strained due to financial stress, may lead to marital breakdown; etc. decline in education success: children’s’ school work and concentration in class may be affected due to worry about family’s financial situation; lack of finances may result in early school leavers; etc. Effects on society Emigration: many people forced to emigrate - leading to depopulation, lower birth rates, isolation of older people; etc. antisocial behaviour; drug and alcohol abuse; crime and vandalism; may result in unemployment black-spots; etc. increase in taxes when a large % of the government’s budget is allocated to social welfare payments; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sc-q3aiii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3aiii",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E3 Q3(a)(iii)",
+  "questionText": "Name and give details of one scheme to reduce expenditure for low‐income families.",
+  "stem": "Unemployment in Ireland is now at its lowest level since December 2008. Total numbers unemployed have now fallen by 52% from the 327,000 peak recorded in 2011.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name2 + details2×4"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "anyN",
+    "verbatim": "Name",
+    "marks": 2,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Medical cards",
+      "School Books Grant Scheme",
+      "School meals",
+      "Fuel Allowance",
+      "Back to school Clothing and Footwear Allowance",
+      "Housing Assistance Payment (HAP)",
+      "Back to Education Allowance",
+      "Mortgage Allowance Scheme",
+      "Family Income Supplement (FIS)",
+      "One parent family payment",
+      "Farm payments e.g Farm Assist",
+      "Rural Social Schemes (RSS) e.g. Tús"
+     ]
+    },
+    "contextNote": "Choose ONE scheme to reduce low-income family expenditure. Original historical 2017 names retained."
+   },
+   {
+    "id": "details",
+    "kind": "criterion",
+    "verbatim": "Details",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Two details of the SAME selected scheme. The original scheme lists names and brief descriptors only, not complete two-point worked accounts. No additional model is invented. Complete original pool: Medical cards; School Books Grant Scheme; School meals; Fuel Allowance; Back to school Clothing and Footwear Allowance; Housing Assistance Payment (HAP); Back to Education Allowance; Mortgage Allowance Scheme; Family Income Supplement (FIS); One parent family payment; Farm payments e.g Farm Assist; Rural Social Schemes (RSS) e.g. Tús; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sc-q3bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-11",
+  "conceptId": "sc-q3bi",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E3 Q3(b)(i)",
+  "questionText": "Analyse the factors that influence the participation of women in employment.",
+  "stem": "The percentage of men exceeds the percentage of women in the labour force.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "participation of women",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15
+    ],
+    "contextNote": "Complete original source guidance: Social acceptance; economic pressure / necessity; higher education attainment; good support structures in place - childcare supports; flexibility in the workplace e.g. part-time or job-sharing options, parental leave; equality of opportunity in employment and education; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sc-q3bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-11",
+  "conceptId": "sc-q3bii",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E3 Q3(b)(ii)",
+  "questionText": "Comment and elaborate on the childcare options available for working parents.",
+  "stem": "The percentage of men exceeds the percentage of women in the labour force.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Two names2+1 + three details2 for EACH selected option"
+  },
+  "rows": [
+   {
+    "id": "names",
+    "kind": "anyN",
+    "verbatim": "Name",
+    "marks": 3,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Crèche",
+      "Childminder in own or child’s home",
+      "Au pair",
+      "Naíonra",
+      "Playschools / Playgroups",
+      "Montessori"
+     ],
+     "perOptionSteps": [
+      2,
+      1
+     ]
+    },
+    "contextNote": "Choose TWO different childcare options. The first credited name earns2, the second1; no fixed option is tied to either award. Keep three details matched to EACH named option."
+   },
+   {
+    "id": "details-1",
+    "kind": "criterion",
+    "verbatim": "Details",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Three details of the SAME option 1 selected above. The source gives accounts for Crèche, Childminder and Au pair; Naíonra, Playschools/Playgroups and Montessori have names only. No additional models are invented. Complete original paired guidance: Crèche: purpose build; opening hours 8am – 6pm; children learn socialisation; stimulating environment; qualified personnel; facilities; cost; etc. Childminder in own or child’s home: convenient; cost; flexible hours; relative; parents and childminders arrange their own terms and conditions; etc. Au pair: flexible working hours; one-one; can live in or out; etc. Naíonra; Playschools / Playgroups; Montessori; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "details-2",
+    "kind": "criterion",
+    "verbatim": "Details",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Three details of the SAME option 2 selected above. The source gives accounts for Crèche, Childminder and Au pair; Naíonra, Playschools/Playgroups and Montessori have names only. No additional models are invented. Complete original paired guidance: Crèche: purpose build; opening hours 8am – 6pm; children learn socialisation; stimulating environment; qualified personnel; facilities; cost; etc. Childminder in own or child’s home: convenient; cost; flexible hours; relative; parents and childminders arrange their own terms and conditions; etc. Au pair: flexible working hours; one-one; can live in or out; etc. Naíonra; Playschools / Playgroups; Montessori; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sc-q3ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-11",
+  "conceptId": "sc-q3ci",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E3 Q3(c)(i)",
+  "questionText": "People often move from place to place in search of work, discuss the impact this has on individuals and their families.",
+  "stem": "The number of people emigrating remains high, despite improvements in the economy and a fall in unemployment.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "impact",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15,
+     20
+    ],
+    "contextNote": "Complete original source guidance: Decline of population in rural areas – as a result businesses and post offices, small primary schools, transport services may close which leads to fewer employment opportunities; other family members may follow leading to rural depopulation and a sense of isolation for elderly people who remain behind; fewer amenities available, social life declines; etc. Entertainment and leisure facilities are more accessible; increase in air, noise and traffic pollution can effect health; educational and health services are strained due to rapid population growth; employment opportunities may become more competitive leading to unemployment and social problems e.g. drug and alcohol abuse, vandalism, crime; family break up; opportunities to experience new cultures; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2017-hl-sc-q3cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-11",
+  "conceptId": "sc-q3cii",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "questionRef": "2017 HL Section C E3 Q3(c)(ii)",
+  "questionText": "Outline how a person’s work ethic influences their attitude to work.",
+  "stem": "The number of people emigrating remains high, despite improvements in the economy and a fall in unemployment.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "work ethic",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     10
+    ],
+    "contextNote": "Complete original source guidance: A good work ethic influences their work in a positive way – highly motivated, productive, efficient employee; etc. A poor work ethic impacts negatively on work related issues such as time wasting; punctuality; absenteeism which can affect the success of a company or business; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
  }
 ]
