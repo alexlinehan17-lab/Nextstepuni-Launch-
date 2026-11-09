@@ -796,5 +796,61 @@
     "attribution": "SEC Home Economics 2014 Higher Level marking scheme, page 19 — © State Examinations Commission.",
     "sourceNote": "Original PDF crop, bounds [354.6816101074219, 509.5430603027344, 589.8394775390625, 552.8961791992188], rendered at 2.5×. SHA256 3112608b04ed38e098c7ab9b35dd06bd0bd93e14c3bec11c1bd126811674c987.",
     "solution": true
+  },
+  "home-economics-2014-ol-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2014-ol-sa-q1.png",
+    "md5": "71a9024336039ca2fda622c4789025e8",
+    "alt": "Original fats true/false table, all three full statements and blank True/False columns.",
+    "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 152.56764221191406, 570.219970703125, 341.0876770019531], rendered at 2.5×. SHA256 c2e84d579fb75d1d6a9eb82899fdbb8ae6ff28148a0f597e226c4693bb76a66f."
+  },
+  "home-economics-2014-ol-sa-q2": {
+    "src": "/exam-figures/home-economics/home-economics-2014-ol-sa-q2.png",
+    "md5": "068fbaacefb2e1c372406d0d08ca06e2",
+    "alt": "Original two-row vitamin-classification and example table, complete question and paired blank cells.",
+    "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 341.0876770019531, 570.219970703125, 492.16766357421875], rendered at 2.5×. SHA256 79dcbba9246561aa871d86cc7f8d8dd7aba7cef31e3b59c160c70578e711d5a3."
+  },
+  "home-economics-2014-ol-sa-q4": {
+    "src": "/exam-figures/home-economics/home-economics-2014-ol-sa-q4.png",
+    "md5": "400ce4b87813e1cb9ac539f733a803ad",
+    "alt": "Original diet/health true/false table, all three full statements and blank True/False columns.",
+    "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 570.219970703125, 228.4076690673828], rendered at 2.5×. SHA256 53b0d00402dedd14bad21e42392142ab1d5f14f9682945d467b45ad59e1c3571."
+  },
+  "home-economics-2014-ol-sa-q5": {
+    "src": "/exam-figures/home-economics/home-economics-2014-ol-sa-q5.png",
+    "md5": "568ff4c45527b15dd105ec671758a00c",
+    "alt": "Original cheese nutrient tick table, all Protein/Vitamin C/Calcium choices and the complete companion cooking-effects question.",
+    "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 228.4076690673828, 570.219970703125, 448.8476257324219], rendered at 2.5×. SHA256 464a4be458a1c51981e01c077b31549a814129a526b0932bfaa57af0f516e518."
+  },
+  "home-economics-2014-ol-sa-q9": {
+    "src": "/exam-figures/home-economics/home-economics-2014-ol-sa-q9.png",
+    "md5": "6bc03ccd8798e4c4bbc0b243015178aa",
+    "alt": "Original microwave part/function matching question, complete wave guide/turntable/magnetron choice pool and all three function rows.",
+    "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 246.88758850097656, 570.219970703125, 462.94769287109375], rendered at 2.5×. SHA256 d23fae1def6f0adf70841f74484024ac63403eef3f2f4eca5c2c4ac2b6528580."
+  },
+  "home-economics-2014-ol-sa-q11": {
+    "src": "/exam-figures/home-economics/home-economics-2014-ol-sa-q11.png",
+    "md5": "f9e72e79ccf11e004870b34d4f6227b5",
+    "alt": "Original natural/synthetic fibre table and complete companion question asking why natural fibres are used in household textiles.",
+    "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 570.219970703125, 260.3876037597656], rendered at 2.5×. SHA256 545d9aaf6034e57d9c71f09ff047a585d03a69ed1420f0966a3de44c12991480."
+  },
+  "home-economics-2014-ol-sb-q1-nutrients": {
+    "src": "/exam-figures/home-economics/home-economics-2014-ol-sb-q1-nutrients.png",
+    "md5": "e064616228218fe3950d196e52110fad",
+    "alt": "Original three-dish carbohydrate/protein/fat table: Beef Lasagne11.8g/8.1g/8.9g; Sweet & Sour Chicken & Rice20.0g/6.8g/0.4g; Cheese Burger27.1g/14.2g/3.2g. All original headings, dish names and units retained; FSAI attribution remains in the source stem.",
+    "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [83.53199768066406, 168.47999572753906, 526.007958984375, 280.7279907226563], rendered at 2.5×. SHA256 dc898ed9fbd54306022d264a87598ff9483263726aead56eea4ccb6611647458."
+  },
+  "home-economics-2014-ol-sc-q1-electricity": {
+    "src": "/exam-figures/home-economics/home-economics-2014-ol-sc-q1-electricity.png",
+    "md5": "411ae988b598d6c524d966a40c8e9512",
+    "alt": "Both original electricity-supply pictures, complete Meter Box and Miniature Circuit Breakers, with their original captions.",
+    "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [153.24000549316406, 180.36001586914062, 465.37298583984375, 327.6717224121094], rendered at 2.5×. SHA256 f61bb13185cdfa86bac3a663f95a96a0ed31caa2d83c12853f9ca82e3be95775."
   }
 }
