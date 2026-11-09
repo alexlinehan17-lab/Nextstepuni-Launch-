@@ -42,6 +42,7 @@ import subprocess
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from paper_census import SUBJECTS, census_subject, key_label  # noqa: E402
+from ja_review_refs import reviewed_japanese_refs, bind_japanese_ref  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
@@ -646,8 +647,11 @@ def reconcile_subject(subject, census=None):
 
     cards = shipped_cards(subject)
     exact_papers = reviewed_maths_paper_keys() if subject == 'maths' else {}
+    exact_japanese_refs = reviewed_japanese_refs() if subject == 'japanese' else {}
     for cid, refstr in cards:
         ref = parse_ref(refstr)
+        if subject == 'japanese':
+            ref = bind_japanese_ref(cid, refstr, ref, exact_japanese_refs)
         if subject == 'chemistry':
             ref = chemistry_choice(refstr, ref)
         if not ref:
