@@ -61,6 +61,8 @@ export const HOSTED_ANSWER_OVERRIDES = new Set([
   'russian|2024|LC099GLPA00BV.pdf',
   'russian|2023|LC099GLP000BV.pdf',
   'russian|2023|LC099GLPA00BV.pdf',
+  'russian|2023|LC099ALP000BV.pdf',
+  'russian|2023|LC099ALPA00BV.pdf',
   'russian|2022|LC099ALP000BV.pdf',
   'russian|2022|LC099ALPA00BV.pdf',
   'russian|2022|LC099GLP000BV.pdf',
