@@ -40,9 +40,11 @@ const papers = subjectFilter
     .filter(paper => paper.subjectId !== subjectFilter)
   : [];
 const reviewedTopics = new Set();
-for (const fn of fs.readdirSync(TAGS_DIR).filter(f => f.endsWith('.json')
-  && (!subjectFilter || f === `${subjectFilter}.json`)).sort()) {
+for (const fn of fs.readdirSync(TAGS_DIR).filter(f => f.endsWith('.json')).sort()) {
   const arr = JSON.parse(fs.readFileSync(path.join(TAGS_DIR, fn), 'utf8'));
+  // A subject can own supplemental wave files (for example Japanese's
+  // recovered 2019–2022 written papers). Select by ownership, not filename.
+  if (subjectFilter && !arr.some(paper => paper.subjectId === subjectFilter)) continue;
   if (subjectFilter && arr.some(paper => paper.subjectId !== subjectFilter)) {
     throw new Error(`${fn} contains a different subject`);
   }
