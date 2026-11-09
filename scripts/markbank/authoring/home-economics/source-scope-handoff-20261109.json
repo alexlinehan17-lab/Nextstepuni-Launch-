@@ -1,0 +1,1587 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "home-economics",
+  "checkedAt": "2026-11-09",
+  "scope": "English main written papers 2010-2026, Higher and Ordinary, plus the published 2022/2023 Higher deferred sets. Irish editions and separate Food Studies coursework are outside this authored written-paper scope.",
+  "status": "available-English-source-review-complete; coordinator-integration-and-release-QA-pending; 2019-Higher-partial-credit-held",
+  "manualReviewedSittings": 36,
+  "manualReviewedMainSittings": 34,
+  "manualReviewedDeferredSittings": 2,
+  "emittedPricedTasks": 1953,
+  "higherCards": 1026,
+  "ordinaryCards": 927,
+  "diagnostic": {
+    "rawLeaves": 1908,
+    "covered": 1908,
+    "open": 0,
+    "excluded": 0,
+    "orphans": 0,
+    "unparsed": 0,
+    "remainingFlags": 11,
+    "classifiedFlags": 11,
+    "unclassifiedFlags": 0,
+    "classificationRecord": "final-census-flags-20261109.json"
+  },
+  "coveragePolicy": "Manual original-page sweeps, source-priced task boundaries and full printed choice pools establish source coverage. Raw leaves and emitted cards are distinct reconciliation counts and neither is a substitute for the visual ledgers. Offered practice marks include alternatives and must not be mistaken for candidate exam totals.",
+  "deferredInventory": "deferred-source-inventory.json",
+  "heldNumericIssue": "2019-hl-bacteria-authority-check-20261109.json",
+  "releaseStatus": "Not a release-complete claim. Coordinator retains integration, student-facing scoring of the held 2019 case, and browser/release QA. Per-sitting historical browser-pending annotations remain preserved.",
+  "finalSittingValidation": {
+    "runtime": "248 affected/required tests passed: eight 2020 Ordinary and eight 2020 Higher plus 232 preservation/curriculum/deck. maxWorkers=1; owned temporary test caches removed automatically.",
+    "mandatoryRawSourceGate": "Explicit 2010-2020 original-PDF hash/key gates passed. Independent 78-page visual census and saved pre-parser manual ledger pinned 55 source leaves A13/B20/C22 and 56 priced tasks A15/B19/C22, 627 offered marks. A2 named roman definitions retained in one whole task; three A companion asks separately priced. B3(a) two inline source roman leaves restored narrowly; shared flexible tariff stays one task. No source marker removed.",
+    "atlas": "Two targeted HE checks passed: 76 tagged papers, 986 physical groups, 1014 registry mappings. All 17 original identities retained, missing C groups added as B/C6-8. Runtime 1002.",
+    "coverage": "Three targeted HE cases passed. Subject-only measured baseline: 1953 cards, 1908/1908 diagnostic raw leaves covered, zero open/excluded/orphan/unparsed. All other subject entries unchanged.",
+    "mainTypecheck": "passed",
+    "scoped2020TestTypecheck": "passed",
+    "productionBuild": "passed in 38.48s; owned ignored nonsymlink dist removed after success",
+    "cardlint": "1979 authored records inspected, clean",
+    "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across 36 generated files.",
+    "reconciliation": "2020 Ordinary 55/55 independently observed source leaves covered by 56 priced tasks; zero sitting opens/exclusions/continuity flags. Lane 1953 cards (1026 Higher / 927 Ordinary), 1908/1908 raw leaves covered, zero orphan/unparsed/excluded/open. All 11 remaining marks-checksum diagnostics explicitly classified in final-census-flags-20261109.json; flags are retained, not suppressed.",
+    "preservation": "Every earlier authored card and all 871 earlier Ordinary emitted blocks unchanged, along with every other deck, unrelated sizes/showcase subject, full/decoded non-HE Atlas, unrelated HE mappings and other HE census sittings. Frozen identity hashes retained; all 56 additions explicitly pinned. Narrow shared census change is scoped to Home Economics 2020 Ordinary B3(a).",
+    "browser": "Parent-owned; all ten original figure crops individually inspected here, with final chart quotation/attribution complete."
+  },
+  "sittings": [
+    {
+      "year": 2010,
+      "level": "hl",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2010-hl-main-review.json",
+          "sha256": "19ad66cc646db72caa380b7bc8d3774f08647205077495495eede4a2890fbdcf"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "80a5625b3ef38cc0dbd0337e68dfe34dccba86bea005133aa0b7576ba3270df3",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2010/LC098ALP000EV.pdf"
+        },
+        {
+          "sha256": "c18db92c5e9645dd372a558edf73e71c524d3333d47cdca72bcf9b84c5e61bcb",
+          "pages": 33,
+          "path": "paper-trail-corpus/markingschemes/2010/LC098ALP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All twelve pages reviewed: cover/instructions1; SectionA2–5; B6–8; C9–11; blank12.",
+        "scheme": "All thirty-three pages reviewed: cover1,blank2,guidance3,A4–6,B7–12,C13–19,blank20,separate coursework21–32,backcover33."
+      },
+      "manualPricedTasks": 50,
+      "emittedPricedTasks": 50,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 50,
+      "runtimeCardIdentitySha256": "6f6be8ef9f75bf8a776ca5a5e764d1fec80e54cbb1e3bf96df4a71fce49edc56"
+    },
+    {
+      "year": 2010,
+      "level": "ol",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2010-ol-main-review.json",
+          "sha256": "e4d4340b0c2de25c7b7bfd1b8c2bf077a90192982703c0f5ce08d266bbb03398"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "2d1345c5b86465c9cc40c45d04d141bd3bd9c7c3b02e0f0ca31dfb832b79bfdd",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2010/LC098GLP000EV.pdf"
+        },
+        {
+          "sha256": "bcd30296678dc76bcccd09b70d783d3e295721e6d7e60192e11c156c79808200",
+          "pages": 34,
+          "path": "paper-trail-corpus/markingschemes/2010/LC098GLP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All 12 pages independently reviewed: cover/instructions1; A2–5; B6–8; C9–11; explicit blank12.",
+        "scheme": "All 34 pages independently reviewed: cover1,blank2,guidance3,A4–7,B8–13,C14–20 (C3 continuation20),separate food-studies coursework21–32,blank33,backcover34."
+      },
+      "manualPricedTasks": 50,
+      "emittedPricedTasks": 50,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 46,
+      "runtimeCardIdentitySha256": "44780c82796536cce1f7e91eb8b9712c9693688c4998e3a13726529ffc9b44a0"
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2011-hl-main-review.json",
+          "sha256": "52d6442f7d0d2f59827e7960ff261b08d8e9d79a9ccded96fb10cd90400e5189"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "4acfe59d0dc12db9f1b745b2fd1f8d9dfeb9283e6aa2c44e41ccceb1071969c3",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2011/LC098ALP000EV.pdf"
+        },
+        {
+          "sha256": "9b34c478f6f8dd4e64ce212b8f537e490495754c8ecb21e1f0341b1cba89eb8d",
+          "pages": 32,
+          "path": "paper-trail-corpus/markingschemes/2011/LC098ALP000EV.PDF"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All 12 original pages visually inspected: cover/instructions 1; Section A 2–5; B 6–8; C 9–11; explicit blank 12.",
+        "scheme": "All 32 original pages visually inspected: cover 1, blank 2, guidance 3; A 4–6; B 7–13; C 14–19; separate Food Studies coursework 20–30; blank 31; backcover 32.",
+        "evidence": "tmp/pdfs/home-economics-review/2011-hl-main: paper-01..03.png and scheme-01..08.png, full source texts and hash inventory.",
+        "method": "Full independent page sweep before authoring or parser reconciliation; all 44 physical pages including covers/blanks/coursework were inspected."
+      },
+      "manualPricedTasks": 48,
+      "emittedPricedTasks": 48,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 47,
+      "runtimeCardIdentitySha256": "53e616f2156e6aa414046b40f4afd5148701bcfda0e28e731459219093c00beb"
+    },
+    {
+      "year": 2011,
+      "level": "ol",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2011-ol-main-review.json",
+          "sha256": "941caf733e3593db7d1bcf46fae31c017319036e9c0d203459c4bc1a7c5212e0"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "603fecfd5aa5f7fe0c4ef963e05bc3001921e9ca1fbabc31362cf0bd1344c28a",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2011/LC098GLP000EV.pdf"
+        },
+        {
+          "sha256": "3abf73d93781c28a5b282a6d3094c3d4702b90c4d062def396ba1abd69bb0fd8",
+          "pages": 32,
+          "path": "paper-trail-corpus/markingschemes/2011/LC098GLP000EV.PDF"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All12 physical pages reviewed: cover/instructions1;A2–5;B6–8;C9–11;explicit blank12.",
+        "scheme": "All32 physical pages reviewed:cover1,blank2,guidance3;A4–7;B8–14;C15–20;separate coursework21–30;blank31;backcover32.",
+        "evidence": "tmp/pdfs/home-economics-review/2011-ol-main:paper-01..03.png,scheme-01..08.png,full texts and hash inventory.",
+        "method": "Independent complete original-page inspection before authoring or relying on parser output."
+      },
+      "manualPricedTasks": 52,
+      "emittedPricedTasks": 52,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 50,
+      "runtimeCardIdentitySha256": "9cf4e3b453c22b1e271eaf9a360e36eca55ba436ddf5c22d0d81aef10da63f95"
+    },
+    {
+      "year": 2012,
+      "level": "hl",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2012-hl-main-review.json",
+          "sha256": "7ddc1ed8bc0cd6ec461ce4b2d6a6274f534d54bb8d26ea41359ca7a725b17ef8"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "545d922fd61d92a465f64d68bfd95dd898cc7506e6710f1c679eb2d322da4d20",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2012/LC098ALP000EV.pdf"
+        },
+        {
+          "sha256": "522426f0c1258dfe6db2c0a41674482e911e906af28b0af771e2598523402dc8",
+          "pages": 36,
+          "path": "paper-trail-corpus/markingschemes/2012/LC098ALP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All 12 physical pages independently inspected: cover/instructions 1, Section A 2–5, Section B 6–8, Section C 9–11, explicit blank 12.",
+        "scheme": "All 36 physical pages independently inspected: cover 1, blank 2, guidance 3; A 4–6; B 7–13; C 14–19; blank 20; separate food studies coursework 21–33; blank 34–35; back cover 36.",
+        "evidence": "tmp/pdfs/home-economics-review/2012-hl-main: paper-01..03 and scheme-01..09 contacts, original extracted texts and hash inventory.",
+        "method": "Independent full original-page inspection completed before authoring and before relying on raw parser counts."
+      },
+      "manualPricedTasks": 51,
+      "emittedPricedTasks": 51,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 50,
+      "runtimeCardIdentitySha256": "30567ff523b05210d4e8f7832337b978b8285017697e2f1595bf2aa77df81756"
+    },
+    {
+      "year": 2012,
+      "level": "ol",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2012-ol-main-review.json",
+          "sha256": "6075ba88fa104e626c88c5a8d7e765371fc6563ec719db8654079d237d5afea8"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "c92998f0e2ff944108a0615022a899b910776248b2fe219317c6d08dadb5c4b1",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2012/LC098GLP000EV.pdf"
+        },
+        {
+          "sha256": "3f3fbde5c556d4d9d94935ffc2965da75ec01e1e59f59446dea64d5343529b50",
+          "pages": 32,
+          "path": "paper-trail-corpus/markingschemes/2012/LC098GLP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All 12 original pages independently inspected: cover/instructions 1, A 2–5, B 6–8, C 9–11, blank 12.",
+        "scheme": "All 32 original pages independently inspected: cover 1, blank 2, guidance 3, A 4–6, B 7–12, C 13–18, separate coursework 19–30, blank 31 and back cover 32.",
+        "evidence": "tmp/pdfs/home-economics-review/2012-ol-main: all paper-01..03 and scheme-01..08 contacts inspected, original texts and hash inventory saved.",
+        "method": "Full independent visual sweep and manual priced-task ledger completed before authoring or trusting parser/card counts."
+      },
+      "manualPricedTasks": 53,
+      "emittedPricedTasks": 53,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 49,
+      "runtimeCardIdentitySha256": "c9d30eb6bcfb95204bb8d380d22ee009510bf537aa6da2b050071a9f9d6c25d1"
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2013-hl-main-review.json",
+          "sha256": "205ad847be9da3571e8d95a2c2da37a713c9affcee213e45deb30aa20d57f6c4"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "066d568cef0b12060037c81a0be9eab1bc9129cf9550f38a91166ba47509727d",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2013/LC098ALP000EV.pdf"
+        },
+        {
+          "sha256": "5ec2779ff9fd711f73e3db8216f6fad1405fc5c141929c8dcbedf6b3d97985d6",
+          "pages": 36,
+          "path": "paper-trail-corpus/markingschemes/2013/LC098ALP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All12 physical pages inspected: cover/instructions1, A2–5, B6–8, C9–11, blank12.",
+        "scheme": "All36 physical pages inspected: cover1, source-use notice2, guidance3, A4–7, B8–13, C14–21, blank22, separate coursework23–33, blanks34–35, backcover36.",
+        "evidence": "tmp/pdfs/home-economics-review/2013-hl-main: paper-01..03 and scheme-01..09 visually inspected, complete extracted text and hash inventory saved.",
+        "method": "Independent full original-page visual sweep and priced-task ledger before authoring or parser/card counts."
+      },
+      "manualPricedTasks": 49,
+      "emittedPricedTasks": 49,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 49,
+      "runtimeCardIdentitySha256": "5351bd19be35cc4df7a8d85b528654b7a7f5145df192302cf554999187063027"
+    },
+    {
+      "year": 2013,
+      "level": "ol",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2013-ol-main-review.json",
+          "sha256": "2e00b4dbd82fc48df268a8e0c393c8d008bf86493853aee45a313168a1cc28c5"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "4e08ed9a0032d4e91f1e46110e82960b8e8c50dd0b192d47b697224c0c9a0d7e",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2013/LC098GLP000EV.pdf"
+        },
+        {
+          "sha256": "d52c45073f9ac1867280624c21467101b3be27f3a674dc216f8211db9dc7c98c",
+          "pages": 36,
+          "path": "paper-trail-corpus/markingschemes/2013/LC098GLP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All 12 original pages inspected: cover/instructions1; A2–5; B6–8; C9–11; blank12.",
+        "scheme": "All 36 original pages inspected: cover1, source-use notice2, instructions3, A4–7, B8–13, C14–20, blanks21–22, separate coursework23–33, blanks34–35, backcover36.",
+        "evidence": "tmp/pdfs/home-economics-review/2013-ol-main: paper-01..03 and scheme-01..09 all visually inspected; original text and hashes retained.",
+        "method": "Independent full original-page sweep and manual priced-task census before authoring or parser/card-count inspection."
+      },
+      "manualPricedTasks": 52,
+      "emittedPricedTasks": 52,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 50,
+      "runtimeCardIdentitySha256": "4c519586fb9adeeda346777931bf81bb0ef2e1b4dd0c6d8b66192c864722771d"
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2014-hl-main-review.json",
+          "sha256": "5ed588bdab1ebf51b9b7f8ef403d998775fedc6c30210b6f4f126c8de416aea2"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "520a2a2ab00814b34453c21b7dd78323d855b08c778513672244b96dc17a3ef6",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2014/LC098ALP000EV.pdf"
+        },
+        {
+          "sha256": "93331547487b86d251bd7bd632f6f06ed248f7a3f0165408a15b864f268f0706",
+          "pages": 40,
+          "path": "paper-trail-corpus/markingschemes/2014/LC098ALP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All 12 original pages inspected: cover/instructions1; A2–5; B6–8; C9–11; blank12.",
+        "scheme": "All 40 original pages inspected: cover1, source-use notice2, instructions3, A4–7, B8–18, C19–27, blank28, separate coursework29–39, backcover40.",
+        "evidence": "tmp/pdfs/home-economics-review/2014-hl-main: paper-01..03 and scheme-01..10 all visually inspected; original texts and hashes retained.",
+        "method": "Full independent original-page visual sweep and manual priced-task ledger before authoring or parser/card-count inspection."
+      },
+      "manualPricedTasks": 49,
+      "emittedPricedTasks": 49,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 48,
+      "runtimeCardIdentitySha256": "bd432ae9b7cb7084fab4b75591edbe3cabbc8b77b6bfcb95a983f95375168613"
+    },
+    {
+      "year": 2014,
+      "level": "ol",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2014-ol-main-review.json",
+          "sha256": "247e6d6b38818072ddfa12e2591e69eab6d0ed890788a7562aa293430c5b44d6"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "42e680a67b38aa3c7c13b7cc73c1feb32c0230e81cd9ac67fd51a37a394b2df6",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2014/LC098GLP000EV.pdf"
+        },
+        {
+          "sha256": "755b7743b1dc19b8dca4d37ef254c34e5ac3a3ba7b6c17a8c0f66165f4bba044",
+          "pages": 36,
+          "path": "paper-trail-corpus/markingschemes/2014/LC098GLP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All12 original pages inspected: cover/instructions1,A2–5,B6–8,C9–11,blank12.",
+        "scheme": "All36 original pages inspected: cover1,source-use notice2,instructions3,A4–7,B8–14,C15–22,separate coursework23–33,blanks34–35,backcover36.",
+        "evidence": "tmp/pdfs/home-economics-review/2014-ol-main: paper-01..03 and scheme-01..09 all visually inspected; original texts/hashes retained.",
+        "method": "Independent full original-page sweep and manual priced-task ledger before authoring or parser/card-count inspection."
+      },
+      "manualPricedTasks": 51,
+      "emittedPricedTasks": 51,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 51,
+      "runtimeCardIdentitySha256": "d93c2f458fc85fd4eb4697ecaacfbbc2e59c40bb3744a6247fe73a5fe37d7139"
+    },
+    {
+      "year": 2015,
+      "level": "hl",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2015-hl-main-review.json",
+          "sha256": "f29d9eb660be501cb3493e0f74a7b5cc9784786505b245562087e4f24f95d001"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "f983bc14638b99ad8c57e4c19dd44d2ff2037acf389b49d0c5cb0c25bcdd7047",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2015/LC098ALP000EV.pdf"
+        },
+        {
+          "sha256": "ed9467e251cfdf8084d1efc7dea7db47783b11c9a6f63fdcf7a87af0ae71bbdf",
+          "pages": 37,
+          "path": "paper-trail-corpus/markingschemes/2015/LC098ALP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All12 original pages inspected: cover1,A2–5,B6–8,C9–11,blank12.",
+        "scheme": "All37 original pages inspected: cover1,source-use notice2,written cover/instructions3,A4–7,B8–15,C16–23,blank24,separate coursework25–35,blank36,backcover37.",
+        "evidence": "tmp/pdfs/home-economics-review/2015-hl-main: paper-01..03 and scheme-01..10 all visually inspected; original texts/hashes retained.",
+        "method": "Independent full original-page visual sweep and manual priced-task ledger before authoring or parser/card-count inspection."
+      },
+      "manualPricedTasks": 48,
+      "emittedPricedTasks": 48,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 49,
+      "runtimeCardIdentitySha256": "fd5df3e33d9cc739706adb29a83c0832679644acc6c5de55c397148531cf05ef"
+    },
+    {
+      "year": 2015,
+      "level": "ol",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2015-ol-main-review.json",
+          "sha256": "9d11be54464eb2e2cc751f9b6060bba4f3b94fe133b85957a77ce4e68215ec7a"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "e0aa871c86189030c12b785043448cb825fc6d3b2c2378bce9b59a0817e9f0f0",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2015/LC098GLP000EV.pdf"
+        },
+        {
+          "sha256": "1f24cb97ca1b4b1a6d68455ac4286339ffbe442cca28f839b700a1cdcb5727f1",
+          "pages": 36,
+          "path": "paper-trail-corpus/markingschemes/2015/LC098GLP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All12 original pages inspected: cover1,A2–5,B6–8,C9–11,blank12.",
+        "scheme": "All36 original pages inspected: cover1,source-use notice2,written cover/instructions3,A4–6,B7–12,C13–19,blank20,separate coursework21–31,blanks32–35,backcover36.",
+        "evidence": "tmp/pdfs/home-economics-review/2015-ol-main: paper-01..03 and scheme-01..09 all visually inspected; original texts/hashes retained.",
+        "method": "Independent full original-page visual sweep and manual priced-task ledger before authoring or parser/card-count inspection."
+      },
+      "manualPricedTasks": 51,
+      "emittedPricedTasks": 51,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 50,
+      "runtimeCardIdentitySha256": "9d6cdbd1901ff7a00fae1b103cbe7692f87f58f6151ffd946a846934348f83f2"
+    },
+    {
+      "year": 2016,
+      "level": "hl",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2016-hl-main-review.json",
+          "sha256": "f5208f9b3e5e31d3c77ba77fd413f54f3ca7934bc7ad9fbfa4b8907397d943a1"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "eed9c2b03c01e4036bd52faddd45555384a12610eb90efd4291300eab9faa51b",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2016/LC098ALP000EV.pdf"
+        },
+        {
+          "sha256": "3be6624649c45c3c1dbe76b68189c55f2a90a8c40cc42478a3d633ea3a63641b",
+          "pages": 40,
+          "path": "paper-trail-corpus/markingschemes/2016/LC098ALP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All 12 original pages inspected: cover1,A2–5,B6–8,C9–11,blank12.",
+        "scheme": "All 40 original pages inspected: cover1,source-use notice2,guidance/instructions3,A4–8,B9–17,C18–25,blank26,separate coursework27–37,blanks38–39,backcover40.",
+        "evidence": "tmp/pdfs/home-economics-review/2016-hl-main: paper-01..03 and scheme-01..10 all visually inspected; original texts/hashes retained.",
+        "method": "Independent full original-page visual sweep and manual priced-task ledger before authoring or parser/card-count inspection."
+      },
+      "manualPricedTasks": 53,
+      "emittedPricedTasks": 53,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 51,
+      "runtimeCardIdentitySha256": "352445065f89a8f6a72f9e4a6e3c98bfe3d352e3716843afb70708dc275d64fb"
+    },
+    {
+      "year": 2016,
+      "level": "ol",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2016-ol-main-review.json",
+          "sha256": "c80faa099260e05d5c781a4ad96fa79307af6414c3792e3e97cfaec3ae5e9d4f"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "23c89d7a9e410e4df2ceff7ea713dda2160513c7619d0ce76bbf71ad534f59a3",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2016/LC098GLP000EV.pdf"
+        },
+        {
+          "sha256": "18c3106ebc93d5d23dbe807fd53c5337e31acebea0bf7e6ea3c385c391da55cc",
+          "pages": 36,
+          "path": "paper-trail-corpus/markingschemes/2016/LC098GLP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All12 original pages seen:cover1,A2–5,B6–8,C9–11,blank12.",
+        "scheme": "All36 original pages seen:cover1,notice2,guidance3,A4–7,B8–14,C15–22,separate coursework23–33,blanks34–35,backcover36.",
+        "evidence": "tmp/pdfs/home-economics-review/2016-ol-main:paper-01..03 and scheme-01..09 all visually inspected.",
+        "method": "Full original-page independent visual review and manual priced ledger before any2016Ordinary parser/card inspection."
+      },
+      "manualPricedTasks": 48,
+      "emittedPricedTasks": 48,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 51,
+      "runtimeCardIdentitySha256": "ec4c2718fa55afd04d7c423cd0c36737d8669b340f615f946f4d6965e55d5fb5"
+    },
+    {
+      "year": 2017,
+      "level": "hl",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2017-hl-main-review.json",
+          "sha256": "fe0849881159254987bf7f1a9c209bf4cb1a1e2c8ccf15b90a2496be1370ca37"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "b6d772120643fe1d8dd51a7704a37b57d216cc1beebe2fb3b987bd6d3ffc702e",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2017/LC098ALP000EV.pdf"
+        },
+        {
+          "sha256": "ebdd081ae16bce2f3d4579652be79629d468be5ff0ab6444fc5893ee8459675c",
+          "pages": 40,
+          "path": "paper-trail-corpus/markingschemes/2017/LC098ALP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All 12 original pages inspected: cover1, A2–5, B6–8, C9–11, explicit blank12.",
+        "scheme": "All 40 original pages inspected: cover1, notice2, guidance3, A4–7, B8–17, C18–25, blank26, separate coursework27–36, blanks37–39, backcover40.",
+        "evidence": "tmp/pdfs/home-economics-review/2017-hl-main: paper-01..03 and scheme-01..10 all individually inspected.",
+        "method": "Independent full-page visual review and manual task/pricing ledger saved before any 2017 parser/author/card inspection."
+      },
+      "manualPricedTasks": 48,
+      "emittedPricedTasks": 48,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 48,
+      "runtimeCardIdentitySha256": "087f491ee37ebf548cc1b419d724719455e03b8a8546aa2c8354322c968b6eae"
+    },
+    {
+      "year": 2017,
+      "level": "ol",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2017-ol-main-review.json",
+          "sha256": "d7c93621abab3fd66590db69e58eb807e6970067f88bcb00eb8d72f6a8b8b59b"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "b6a03df9bccb63758498c363de21dbafb0b76dc8c00ed118ccb892ec851fd7ce",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2017/LC098GLP000EV.pdf"
+        },
+        {
+          "sha256": "d11f346fc0a130b450444da8070ace4e386a6351034729825e3de5eb525fa737",
+          "pages": 32,
+          "path": "paper-trail-corpus/markingschemes/2017/LC098GLP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All 12 original pages inspected: cover 1, A 2–5, B 6–8, C 9–11, explicit blank 12.",
+        "scheme": "All 32 original pages inspected: cover 1, notice 2, guidance 3, A 4–7, B 8–13, C 14–20, separate coursework 21–30, blank 31, back cover 32.",
+        "evidence": "tmp/pdfs/home-economics-review/2017-ol-main: paper-01..03 and scheme-01..08 all individually viewed.",
+        "method": "Independent original-page sweep and this manual task/pricing ledger completed before any 2017 Ordinary parser or authored-card inspection."
+      },
+      "manualPricedTasks": 52,
+      "emittedPricedTasks": 52,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 52,
+      "runtimeCardIdentitySha256": "6d9366c4c273f862e45dceab570189c4f673e8aa392cc1ef6d2956dfc2e61743"
+    },
+    {
+      "year": 2018,
+      "level": "hl",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2018-hl-main-review.json",
+          "sha256": "6bc161ef13d295149ab330cad21d385982e1ca2b3edc45fa6798da66bd1d8073"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "ee04fa824be50891a0f3dc3ca302824c0376f365a42af6ddd0ce4965a6e665a0",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2018/LC098ALP000EV.pdf"
+        },
+        {
+          "sha256": "33abfca7e608003644b9f6a5bb68a52d4d828c429f8a826329c609b7b296e333",
+          "pages": 40,
+          "path": "paper-trail-corpus/markingschemes/2018/LC098ALP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All 12 original pages inspected: cover 1, A 2–5, B 6–8, C 9–11, explicit blank 12.",
+        "scheme": "All 40 original pages inspected: cover 1, notice 2, rubric/guidance 3, A 4–7, B 8–16, C 17–25, blank 26, separate coursework 27–36, blanks 37–39, back cover 40.",
+        "evidence": "tmp/pdfs/home-economics-review/2018-hl-main: paper-01..03 and scheme-01..10 all individually viewed.",
+        "method": "Independent original-page visual sweep and this manual task/pricing ledger saved before any 2018 parser/card/author inspection."
+      },
+      "manualPricedTasks": 49,
+      "emittedPricedTasks": 49,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 49,
+      "runtimeCardIdentitySha256": "30e10b4c164e0978c01055388104c0e5e4b7ca4af23c9797eaf931f0448d75e6"
+    },
+    {
+      "year": 2018,
+      "level": "ol",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2018-ol-main-review.json",
+          "sha256": "18e1d68083a79304feb59ee26cd01116c40eaa97205b9c7fe0822d43228e9b8a"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "8d04d3858090b7db4c13222c2e806d11b719b40783c428bc3490e010ab5902c9",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2018/LC098GLP000EV.pdf"
+        },
+        {
+          "sha256": "a4bd923c2c0e8b37427b4ff7a99a23347f5eefc9e829631a1b28d3e0371a79fd",
+          "pages": 32,
+          "path": "paper-trail-corpus/markingschemes/2018/LC098GLP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All12 pages viewed: cover1,A2–5,B6–8,C9–11,blank12.",
+        "scheme": "All32 pages viewed: cover1,notice2,rubric/guidance3,A4–7,B8–13,C14–20,separatecoursework21–30,blank31,backcover32.",
+        "evidence": "tmp/pdfs/home-economics-review/2018-ol-main: paper01..03 andscheme01..08 individually viewed.",
+        "method": "Original visual sweep/manual tariff ledger saved BEFORE any2018OL parser/card/author inspection."
+      },
+      "manualPricedTasks": 53,
+      "emittedPricedTasks": 53,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 54,
+      "runtimeCardIdentitySha256": "968aa277b285961f12eafb8cbf0c3834e348f49d34e2a98712d2994dde02abc4"
+    },
+    {
+      "year": 2019,
+      "level": "hl",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2019-hl-main-review.json",
+          "sha256": "be9785baa12cd3cf24e82235bc990d4ef9ac1b43105931c21e45e6e4a9f82404"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "60700cd2f6f12a62480dbf8d3263c04d8131fea98817d5d0a3148cb9b5ad5990",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2019/LC098ALP000EV.pdf"
+        },
+        {
+          "sha256": "c427e9c129a5c14f32444e68fc44b3b67fbe520f91b49f4da5d4a22413fd7699",
+          "pages": 36,
+          "path": "paper-trail-corpus/markingschemes/2019/LC098ALP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All 12 original pages viewed: cover 1, A 2–5, B 6–8, C 9–11, blank 12.",
+        "scheme": "All 36 original pages viewed: cover 1, notice 2, written rubric 3, A 4–7, B 8–15, C 16–22, blanks 23–24, separate coursework 25–34, blank 35, back cover 36.",
+        "evidence": "tmp/pdfs/home-economics-review/2019-hl-main: all three paper and all nine scheme contacts visually inspected. The truncated combined scheme05–07 call was not counted; scheme05–09 subsequently viewed individually.",
+        "method": "Original visual sweep and manual tariff ledger saved BEFORE any 2019 Higher parser/card/author inspection."
+      },
+      "manualPricedTasks": 51,
+      "emittedPricedTasks": 51,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 51,
+      "runtimeCardIdentitySha256": "0245d534bd1c113e8f1a82233bad8ab4452f5d8cc1da7e83917ac36772c2d0ae",
+      "heldNumericSourceAmbiguity": "B3(b) disputed 1-mark case remains unassessed; see 2019-hl-bacteria-authority-check-20261109.json. Review completion does not resolve it."
+    },
+    {
+      "year": 2019,
+      "level": "ol",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2019-ol-main-review.json",
+          "sha256": "6be271783efafe4bff34f5a766f308977c468119d06dd1f6fb46d74ce1d3231d"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "d123a4b468df8896744d4c44bf30ebbb5af770087cb879e84e79de8d3e2cde3c",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2019/LC098GLP000EV.pdf"
+        },
+        {
+          "sha256": "8f99827fd5eb3027deeead7fa3630f4e37ee6939d9cae1eb195e0c4580ec4b0e",
+          "pages": 36,
+          "path": "paper-trail-corpus/markingschemes/2019/LC098GLP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper": "All 12 original pages viewed: cover 1, A 2–5, B 6–8, C 9–11, blank 12.",
+        "scheme": "All 36 original pages viewed: cover 1, notice 2, rubric 3, A 4–7, B 8–14, C 15–21, blank 22, separate coursework 23–32, blanks 33–35, back cover 36.",
+        "evidence": "All paper-01..03 and scheme-01..09 contacts individually visually inspected at tmp/pdfs/home-economics-review/2019-ol-main.",
+        "method": "Original visual sweep and this manual tariff ledger saved BEFORE any 2019 Ordinary parser/card/author inspection."
+      },
+      "manualPricedTasks": 52,
+      "emittedPricedTasks": 52,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 54,
+      "runtimeCardIdentitySha256": "462e119b7cc9cdde2c4963e22b1ab93580c1fcb62f07bcc57e2de14e89ed625f"
+    },
+    {
+      "year": 2020,
+      "level": "hl",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2020-hl-main-review.json",
+          "sha256": "f7adecae77dfd1e8489ada1a604b5f3a7630765565bb65133df839e4b14949a1"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "209d36fc7f5c38698bc1192d71ce5a0d93338022f91b4c58f7c9dcc287c69580",
+          "pages": 40,
+          "path": "paper-trail-corpus/exampapers/2020/LC098ALP014EV.pdf"
+        },
+        {
+          "sha256": "7452e4edb380755ddc2d6a92b0c0e06e039283956945f6339fd90845c15d8d7b",
+          "pages": 8,
+          "path": "paper-trail-corpus/exampapers/2020/LC098ALP039EV.pdf"
+        },
+        {
+          "sha256": "dd443f95fd1de761fe1305598d00ee89649ca13c90cdf878da260a74942d2395",
+          "pages": 42,
+          "path": "paper-trail-corpus/markingschemes/2020/LC098ALP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "paper A": "All 40 original pages viewed: cover1, instructions2, A3–6, answerbook guide7, ruled answer pages8–39, back40.",
+        "paperBC": "All eight original pages viewed: cover1, B2–4, C5–7, back8.",
+        "scheme": "All42 original pages viewed: cover1, notice2, rubric3, annotations4, A5–8, B9–18, C19–27, blank28, separate coursework29–39, blanks40–41, back42.",
+        "evidence": "All paper-a-01..10, paper-bc-01..02, scheme-01..11 contacts individually visually inspected at tmp/pdfs/home-economics-review/2020-hl-main.",
+        "method": "This manual source ledger saved before inspecting any parser, existing card or authoring output for 2020 Higher."
+      },
+      "manualPricedTasks": 49,
+      "emittedPricedTasks": 49,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 53,
+      "runtimeCardIdentitySha256": "27f83c28e8fe4c7c660e72cdb266ea33143d03283aa765e970a437281ac79138"
+    },
+    {
+      "year": 2020,
+      "level": "ol",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2020-ol-main-review.json",
+          "sha256": "d550347358f90c756259dc0ff951a67f73d30c82bfae46ce0fc49516c1c46621"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "path": "paper-trail-corpus/exampapers/2020/LC098GLP014EV.pdf",
+          "sha256": "c25745702775fc93d7fc789b5d19aa39f38bfa45a94d3df875aef941154a37f0",
+          "pages": 32
+        },
+        {
+          "path": "paper-trail-corpus/exampapers/2020/LC098GLP039EV.pdf",
+          "sha256": "22863d489e51c88ec07912670032002f18e0d8a32013833d954766c82c08d013",
+          "pages": 8
+        },
+        {
+          "path": "paper-trail-corpus/markingschemes/2020/LC098GLP000EV.pdf",
+          "sha256": "df16abbeb05005a72c051315b2addb88ffa08d5abcb890ff2ed5e83d53a411b7",
+          "pages": 38
+        }
+      ],
+      "manualVisualSweep": {
+        "paper-a": "All 32 physical pages individually viewed on contacts 01-08: cover 1, instructions 2, A 3-6, answerbook guide 7, ruled answer pages 8-31, backcover 32.",
+        "paper-bc": "All 8 physical pages viewed on contacts 01-02: cover 1, B 2-4, C 5-7, backcover 8.",
+        "scheme": "All 38 physical pages viewed on contacts 01-10: cover 1, publication notice 2, rubric 3, A 4-7, B 8-13, C 14-21, explicit blank 22, separate coursework 23-33, blank 34-37, blue back 38. Coursework and blank pages inspected but not written-paper tasks."
+      },
+      "manualPricedTasks": 56,
+      "emittedPricedTasks": 56,
+      "offeredPracticeMarks": 627,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 55,
+      "runtimeCardIdentitySha256": "975964b6c0f4dffbce5ad9fa112aa7b0c121f18cc1264769a360922bf33d9bac"
+    },
+    {
+      "year": 2021,
+      "level": "hl",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2021-hl-main-review.json",
+          "sha256": "3e198b45d1d4cf13c092f146a8f557a8c386f5b197593ec6569e256794e12c03"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "06bce3bc889da9318bda7bbc69c86a39da81c94cf21bb2c93ceddd77f64a49d6",
+          "pages": 40,
+          "path": "examiner-reports/home-economics/papers/2021-hl-014-paper.pdf"
+        },
+        {
+          "sha256": "f8317b0dea9c8d80cbad97119c7b5f8bfc082f332365c2fd43bae30dd067713c",
+          "pages": 12,
+          "path": "examiner-reports/home-economics/papers/2021-hl-039-paper.pdf"
+        },
+        {
+          "sha256": "881590c9b385c78977134367c09f1241e5d113f50e5fb7845b9a2b096f6c782b",
+          "pages": 40,
+          "path": "paper-trail-corpus/markingschemes/2021/LC098ALP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "a": "All 40 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled pages 9–39, back cover 40.",
+        "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+        "scheme": "All 40 pages: cover 1, guidance/rubrics 2–4, A 5–9, B 10–17, C 18–28, explicit blank 29, separate food-studies coursework 30–38, blank 39, back cover 40. Coursework is a separate assessment, not a task in these written-paper booklets."
+      },
+      "manualPricedTasks": 62,
+      "emittedPricedTasks": 62,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        200,
+        240
+      ],
+      "diagnosticRawLeaves": 58,
+      "runtimeCardIdentitySha256": "9d1041c9fa727af72437caa9011e25882d38f0cb59bdfccdc244800e754629a6"
+    },
+    {
+      "year": 2021,
+      "level": "ol",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2021-ol-main-review.json",
+          "sha256": "32d8822f1ec0360de2f88b734940c06f05835230cf42db8a6e517d74b2a8d363"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "75d58efd9c87f4d18c5800212a7e19537264cdfe1bfebd15e9903aeb95b54822",
+          "pages": 32,
+          "path": "examiner-reports/home-economics/papers/2021-ol-014-paper.pdf"
+        },
+        {
+          "sha256": "14d85cdaeefa4491d30a42cbed2a367ecd3e9037953145ef4daff34786960c0e",
+          "pages": 12,
+          "path": "examiner-reports/home-economics/papers/2021-ol-039-paper.pdf"
+        },
+        {
+          "sha256": "8f7e8b5c26529cc1f087117b873cf2b1f545e55db5deb6f2aaa19fb87448355e",
+          "pages": 40,
+          "path": "paper-trail-corpus/markingschemes/2021/LC098GLP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "a": "All 32 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled pages 9–31, back cover 32.",
+        "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+        "scheme": "All 40 pages: cover 1, guidance/rubrics 2–3, A 4–8, B 9–14, C 15–25, explicit blanks 26–27, separate food-studies coursework 28–36, blanks 37–39, back cover 40. Coursework is a separate assessment, not a task in these written-paper booklets."
+      },
+      "manualPricedTasks": 61,
+      "emittedPricedTasks": 61,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        200,
+        240
+      ],
+      "diagnosticRawLeaves": 58,
+      "runtimeCardIdentitySha256": "0a3fd158e6880c74658eb8b3004639331855c2c484c82fc49e48840fe2e8fba3"
+    },
+    {
+      "year": 2022,
+      "level": "hl",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2022-hl-main-review.json",
+          "sha256": "f2833076ccaef6da49075a7f1250f6ce852a978e9c65e422adb0bc0ea5194c8b"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "40ccc02c39d133657b9248faeabca42ce92dbe286fce217d748bfd26f028bb5b",
+          "pages": 40,
+          "path": "examiner-reports/home-economics/papers/2022-hl-014-paper.pdf"
+        },
+        {
+          "sha256": "d9fc4f8d3aa3f81a5258b9aabe3ba2824e81f5623db827a434d4843a0f31ec78",
+          "pages": 12,
+          "path": "examiner-reports/home-economics/papers/2022-hl-039-paper.pdf"
+        },
+        {
+          "sha256": "703878ac5312b2cc5b087ce3c2243051f4b49b495ea81c67fbaa1a96efb3dade",
+          "pages": 42,
+          "path": "paper-trail-corpus/markingschemes/2022/LC098ALP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "a": "All 40 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled pages 9–39, back cover 40.",
+        "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+        "scheme": "All 42 pages: cover 1, guidance/rubrics 2–5, A 6–10, B 11–17, C 18–30, separate food-studies coursework 31–40, blank 41, back cover 42. Coursework is a separate assessment, not a task in these written-paper booklets."
+      },
+      "manualPricedTasks": 62,
+      "emittedPricedTasks": 62,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        200,
+        240
+      ],
+      "diagnosticRawLeaves": 58,
+      "runtimeCardIdentitySha256": "809ef3198d138edd937a8add37b7c5e85ab8a6e77fd2c21dbf8c51d38baeaac1"
+    },
+    {
+      "year": 2022,
+      "level": "ol",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2022-ol-main-review.json",
+          "sha256": "eca70d9b7ba12cce34605a14c4e687806ff276e7aaf4141bf919b24d1f2f7650"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "d37643ef21753607e255f0afae544a1af0df497c8ed9e9795b33901547eb2354",
+          "pages": 32,
+          "path": "examiner-reports/home-economics/papers/2022-ol-014-paper.pdf"
+        },
+        {
+          "sha256": "6fd83dce9dc39044b6284a9f16814c05c31b0dd9b6ed11c7b311e25ffc42b608",
+          "pages": 12,
+          "path": "examiner-reports/home-economics/papers/2022-ol-039-paper.pdf"
+        },
+        {
+          "sha256": "5eed036a64a77bd7d9b68d47827bd21a81e385d751c82bab133a8cacc33e5286",
+          "pages": 37,
+          "path": "paper-trail-corpus/markingschemes/2022/LC098GLP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "a": "All 32 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled pages 9–31, back cover 32.",
+        "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+        "scheme": "All 37 pages: cover 1, guidance/rubric/annotations 2–5, A 6–10, B 11–16, C 17–25, separate practical-coursework scheme 26–35, blank 36 and back cover 37. Coursework is a separate assessment, not a task in these written-paper booklets."
+      },
+      "manualPricedTasks": 60,
+      "emittedPricedTasks": 60,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        200,
+        240
+      ],
+      "diagnosticRawLeaves": 57,
+      "runtimeCardIdentitySha256": "088d6f2722cdfe6db8b5d87ef12191bfb53b5ec72753902c31e7268655efa467"
+    },
+    {
+      "year": 2023,
+      "level": "hl",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2023-hl-recovery-review.json",
+          "sha256": "cb9d7c41a5522d7089b7c12322d7a53370a9992fadc0ed58297e5125aef36a7a"
+        },
+        {
+          "path": "scripts/markbank/authoring/home-economics/section-a-2023-hl-review.json",
+          "sha256": "6d5cb289f95ea241c9cb4813d6c1396d5e2ad65179ab3468644312866b250d58"
+        },
+        {
+          "path": "scripts/markbank/authoring/home-economics/section-b-q1-2023-hl-review.json",
+          "sha256": "5a8058a3ab0c09c778404b3294d9c7525c59a3901bfe02245ed3dc8b77577fcb"
+        },
+        {
+          "path": "scripts/markbank/authoring/home-economics/section-b-rest-2023-hl-review.json",
+          "sha256": "4830160f334a0eb21bb34ee5d6cd7ba82da49a84454faeffb02cbdc23b10beee"
+        },
+        {
+          "path": "scripts/markbank/authoring/home-economics/section-c-2023-hl-review.json",
+          "sha256": "69528379b082f9cf26770ae0857d4dbf88aaae7522657f10f6f65682b1681c7b"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "path": "examiner-reports/home-economics/papers/2023-hl-014-paper.pdf",
+          "sha256": "8a1dceedb76a3c4aadeaa57ecc94c59d23b78c07dbbec75bd679f6e30e0c5243"
+        },
+        {
+          "path": "examiner-reports/home-economics/papers/2023-hl-039-paper.pdf",
+          "sha256": "f81801f7c53b59c23a368c1640698d603c8f4361a440db2456f6d230439415ba"
+        },
+        {
+          "path": "examiner-reports/home-economics/2023-marking-scheme.pdf",
+          "sha256": "885b58b2d7c1c5ad60b107a4367795762443399dd91778697367399b3e64ea2b"
+        }
+      ],
+      "manualVisualSweep": {
+        "sectionABooklet": "All 40 physical pages inspected: p1 cover; p2 instructions; p3–7 questions; p8 answer-book instructions; p9–39 answer pages; p40 back cover.",
+        "sectionBCBooklet": "All 12 pages inspected: p1 cover; p2–4 B1–B5; p5–8 C1–C4; p9–11 blank; p12 back cover.",
+        "scheme": "All 44 pages inspected: p1 cover; p2–5 guidance/annotations; p6–9 Section A; p10–17 Section B; p18–28 Section C; p29–30 Irish bonus; p31–40 separate Food Studies coursework; p41–43 blank; p44 back cover."
+      },
+      "manualPricedTasks": 59,
+      "emittedPricedTasks": 59,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 57,
+      "runtimeCardIdentitySha256": "280cb81c1deaa397f2ff756afcb087afb4a10e9d25c9415de1273ee2800672ea",
+      "manualWholeSittingConclusion": {
+        "printedQuestionsAndParts": 57,
+        "practiceTasks": 59,
+        "sectionATasks": 16,
+        "sectionBTasks": 16,
+        "sectionCTasks": 27,
+        "offeredMarks": 749,
+        "sourceSweep": "All 40 Section A booklet pages, all 12 B/C booklet pages and all 44 scheme pages independently inspected. Ruled answer pages, blank pages, covers and separate Food Studies coursework identified. Main written tasks covered; this is not a deferred-sitting claim."
+      }
+    },
+    {
+      "year": 2023,
+      "level": "ol",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2023-ol-recovery-review.json",
+          "sha256": "d25b7981c4f15b16996f5f43acab2d4683cedfdab5a05e293b50cc10266c78e3"
+        },
+        {
+          "path": "scripts/markbank/authoring/home-economics/section-a-2023-ol-review.json",
+          "sha256": "0b83fb305c0381998b87ff4f6f778ce1f122908b69a41f3f9d6f9bde8b381961"
+        },
+        {
+          "path": "scripts/markbank/authoring/home-economics/section-b-2023-ol-review.json",
+          "sha256": "e8ceff9c1f788423dd1344073a75c36b631ed8155f16fb3eacc3f572843326de"
+        },
+        {
+          "path": "scripts/markbank/authoring/home-economics/section-c-2023-ol-review.json",
+          "sha256": "5b8ec2887957a41850a3a31b9321ff3dfb3f42a81208916cdfed8488c6d4c7c1"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "path": "examiner-reports/home-economics/papers/2023-ol-014-paper.pdf",
+          "sha256": "6a3f42524c13a8fc9d3661f53dd767c7aa66917d81a863a58fe6547e6a313da0"
+        },
+        {
+          "path": "examiner-reports/home-economics/papers/2023-ol-039-paper.pdf",
+          "sha256": "25ba9252a844743751fe0933052603ce8071c07b1227de413acf31b52b21491f"
+        },
+        {
+          "path": "paper-trail-corpus/markingschemes/2023/LC098GLP000EV.pdf",
+          "sha256": "856913d37890c8ffc78aa2c03b4f3507f909730c9dc3d2b5d4ba80f477f5db82"
+        }
+      ],
+      "manualVisualSweep": {
+        "sectionABooklet": "All 32 physical pages inspected: p1 cover, p2 instructions, p3–7 questions, p8 answer instructions, p9–31 ruled answer pages, p32 back cover.",
+        "sectionBCBooklet": "All 12 pages inspected: p1 cover, p2–4 Section B, p5–8 Section C, p9–11 blank, p12 back cover.",
+        "scheme": "All 38 physical pages inspected: p1 cover, p2–5 guidance, p6–9 Section A, p10–15 Section B, p16–24 Section C, p25–26 Irish bonus, p27–36 separate Food Studies coursework, p37 blank, p38 back cover."
+      },
+      "manualPricedTasks": 60,
+      "emittedPricedTasks": 60,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 59,
+      "runtimeCardIdentitySha256": "d69ea87f2832e4228d9589d6ea8e423e715b6ff4d34754f34a67e5af64890742",
+      "manualWholeSittingConclusion": "All 60 Ordinary main-sitting response boundaries independently checked against visually swept paper and scheme. Offered totals: A84+B280+C385=749; candidate total remains 280/320. Does not include deferred sitting or separate Food Studies coursework."
+    },
+    {
+      "year": 2024,
+      "level": "hl",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2024-hl-main-review.json",
+          "sha256": "b5b92ef7a35f8878e01a0bef5a4dc69a2918586c72e760fb8ab88d04eb752442"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "8b69f7212d16dfb0e99a86f6779631a79a43123dc9d77fd7cb1c2c5146adf1b0",
+          "pages": 40,
+          "path": "examiner-reports/home-economics/papers/2024-hl-014-paper.pdf"
+        },
+        {
+          "sha256": "d96c7c489e029bec11fdead0572ab327ae59e93b873ab123f9de75ae639c2d91",
+          "pages": 12,
+          "path": "examiner-reports/home-economics/papers/2024-hl-039-paper.pdf"
+        },
+        {
+          "sha256": "baf9dcc0aef0b7abe6b58b1327196a29a39bb6b5065f2cdd2538a060f6a9ca13",
+          "pages": 42,
+          "path": "paper-trail-corpus/markingschemes/2024/LC098ALP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "a": "All 40 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled pages 9–39, back cover 40.",
+        "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+        "scheme": "All 42 pages: cover 1, guidance/rubrics/annotations 2–5, A 6–10, B 11–17, C 18–29, Irish-language bonus tables 30–31, separate food-studies coursework 32–40, blank 41, back cover 42. Coursework is a separate assessment, not a task in these written-paper booklets."
+      },
+      "manualPricedTasks": 58,
+      "emittedPricedTasks": 58,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 56,
+      "runtimeCardIdentitySha256": "dba08e2ac416469260f0df8d9a08016c2e4bd2e759d16b502cb360c7bc8964b0"
+    },
+    {
+      "year": 2024,
+      "level": "ol",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2024-ol-main-review.json",
+          "sha256": "1cb75c040219a0901add6166f39878e1b6788bfebc49fa30bad99e25d974b2e6"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "bb3203d5a58a3ba377ad3cf90e332d15797214e9a57e2b447cc7b88f29525499",
+          "pages": 32,
+          "path": "examiner-reports/home-economics/papers/2024-ol-014-paper.pdf"
+        },
+        {
+          "sha256": "5e304e9af0e873c3c5b79923d04399c488bbe12da4a1d15046cda4799bbc87fb",
+          "pages": 12,
+          "path": "examiner-reports/home-economics/papers/2024-ol-039-paper.pdf"
+        },
+        {
+          "sha256": "ff68e9eda1be40ee7756b7cc1e62399031a99038f5919d93945cd8976167346d",
+          "pages": 38,
+          "path": "paper-trail-corpus/markingschemes/2024/LC098GLP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "a": "All 32 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled pages 9–31, back cover 32.",
+        "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+        "scheme": "All 38 pages: cover 1, guidance/rubrics/annotations 2–5, A 6–9, B 10–15, C 16–25, Irish-language bonus tables 26–27, separate food-studies coursework 28–36, blank 37, back cover 38. Coursework is a separate assessment, not a task in these written-paper booklets."
+      },
+      "manualPricedTasks": 58,
+      "emittedPricedTasks": 58,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 56,
+      "runtimeCardIdentitySha256": "ec2c1ebf305dd26c0a7f29df57483e6a2b7be6f37dc6366c429cba03a03e8137"
+    },
+    {
+      "year": 2025,
+      "level": "hl",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2025-hl-main-review.json",
+          "sha256": "2241a0ee1adb00c882bdf9866628d2fe276859695b9094eb07cd4422e3bfcf1f"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "ba1c8a8406190cfdad6fa5a727477d06605d1f31c1bb9b3d309fa1ce6f39a779",
+          "pages": 40,
+          "path": "examiner-reports/home-economics/papers/2025-hl-014-paper.pdf"
+        },
+        {
+          "sha256": "0e736bbcd3fec699c6383fa2edb6b0f61370cb30d7fecfc0860df40754e1a956",
+          "pages": 12,
+          "path": "examiner-reports/home-economics/papers/2025-hl-039-paper.pdf"
+        },
+        {
+          "sha256": "00ee82fb17ba14cbbfd1d36cfbcce58e61685510f4986fb328d97891b3f0abee",
+          "pages": 44,
+          "path": "paper-trail-corpus/markingschemes/2025/LC098ALP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "a": "All 40 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled pages 9–39, back cover 40.",
+        "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+        "scheme": "All 44 pages: cover 1, guidance/rubrics/annotations 2–5, A 6–10, B 11–18, C 19–30, separate food-studies coursework 31–42, blank 43, back cover 44. Coursework is a separate assessment, not a task in these written-paper booklets."
+      },
+      "manualPricedTasks": 61,
+      "emittedPricedTasks": 61,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 57,
+      "runtimeCardIdentitySha256": "3664ffce2b78b6b83eabfead505c131f226915385ac18e09261b562de1d2fb88"
+    },
+    {
+      "year": 2025,
+      "level": "ol",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2025-ol-main-review.json",
+          "sha256": "b90d8de9d7fae1d37aeb852f12b0f77bd7baed3df19202681ba226d9aa3389de"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "f1d9435a507af6a43aeac07851aa75413ab4875a93c3c68c1e62bf402d4010a3",
+          "pages": 32,
+          "path": "examiner-reports/home-economics/papers/2025-ol-014-paper.pdf"
+        },
+        {
+          "sha256": "398dde1de551cdbce0ac53623c6b7297011f70f9bf6eaca982f2dce57c9d13da",
+          "pages": 12,
+          "path": "examiner-reports/home-economics/papers/2025-ol-039-paper.pdf"
+        },
+        {
+          "sha256": "479835ebb1deae606c8bebd92dbd833129874d66d0dcac91c1f4a6390d5affb5",
+          "pages": 37,
+          "path": "paper-trail-corpus/markingschemes/2025/LC098GLP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "a": "All 32 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled pages 9–31, back cover 32.",
+        "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+        "scheme": "All 37 pages: cover 1, guidance/rubrics/annotations 2–5, A 6–9, B 10–15, C 16–23, separate food-studies coursework 24–35, blank 36, back cover 37. Coursework is a separate assessment, not a written-paper task."
+      },
+      "manualPricedTasks": 60,
+      "emittedPricedTasks": 60,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 57,
+      "runtimeCardIdentitySha256": "53daf75903eb451bbdc5b378ff323fbffef6b8c2a8bcc1d32310ea579b4dbc26"
+    },
+    {
+      "year": 2026,
+      "level": "hl",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2026-hl-main-review.json",
+          "sha256": "87be4ce66cb2adff77758e7ec3c51ee8fa37d400f12ad34d9f1dd071e34a9351"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "d52d52c9b5a7b8c0274dcbc67c1118b06f3d302238b8b66669155a4526c4de73",
+          "pages": 40,
+          "path": "paper-trail-corpus/exampapers/2026/LC098ALP014EV.pdf"
+        },
+        {
+          "sha256": "32ddb5ae4cda9b1ae4ab638b1a33c6a5cd10a1d137b768ab112e8c01693ae228",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2026/LC098ALP039EV.pdf"
+        },
+        {
+          "sha256": "45f563434c737a5a5fa6faf8e08705ebd08ddbd9aa4148ae3619377cdf9456b7",
+          "pages": 40,
+          "path": "paper-trail-corpus/markingschemes/2026/LC098ALP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "a": "All 40 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled answer pages 9–39, back cover 40.",
+        "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+        "scheme": "All 40 pages: cover 1, guidance/rubrics/annotations 2–5, A 6–9, B 10–16, C 17–28, separate food-studies coursework 29–38, blank 39, back cover 40. Coursework is a separate assessment and is not counted as written-paper tasks."
+      },
+      "manualPricedTasks": 60,
+      "emittedPricedTasks": 60,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 58,
+      "runtimeCardIdentitySha256": "88e30b28bde0ab858088b15a4141197123e7aa4574e2c938d01b04c532334a2a"
+    },
+    {
+      "year": 2026,
+      "level": "ol",
+      "sitting": "main",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2026-ol-main-review.json",
+          "sha256": "8019117378a73307d231dfefae36712fa393261cb83e0b506701f1ba68d7d7c1"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "sha256": "78eebd039a3f2d2678243e6d2592f327f09b181ca61e6bb8d0b7659c1bb9f590",
+          "pages": 32,
+          "path": "paper-trail-corpus/exampapers/2026/LC098GLP014EV.pdf"
+        },
+        {
+          "sha256": "96a2dc5a978dd38392a28c7814130c0c32a6083c7f307047027960707afedfab",
+          "pages": 12,
+          "path": "paper-trail-corpus/exampapers/2026/LC098GLP039EV.pdf"
+        },
+        {
+          "sha256": "833bb4365215e38cdb3d718989fb3b89be6c89fc6ca98bb88046547dd917f885",
+          "pages": 34,
+          "path": "paper-trail-corpus/markingschemes/2026/LC098GLP000EV.pdf"
+        }
+      ],
+      "manualVisualSweep": {
+        "a": "All 32 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled answer pages 9–31, back cover 32.",
+        "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+        "scheme": "All 34 pages: cover 1, guidance/rubrics/annotations 2–5, A 6–8, B 9–14, C 15–22, separate food-studies coursework 23–32, blank 33, back cover 34. Coursework is a separate assessment and is not counted as written-paper tasks."
+      },
+      "manualPricedTasks": 58,
+      "emittedPricedTasks": 58,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 57,
+      "runtimeCardIdentitySha256": "cf2d43186524d3cc4c120b795ec4e54a79261ab8ff0b8dd56fbcf0b0d8cd2b95"
+    },
+    {
+      "year": 2022,
+      "level": "hl",
+      "sitting": "deferred",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2022-hl-deferred-review.json",
+          "sha256": "68caf4488b1204b91fb608184f42a86ada9279e7a38691127dde7545bd7bdae0"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "fileid": "LC098ALP014EV.pdf",
+          "path": "paper-trail-corpus/deferredexams/2022/LC098ALP014EV.pdf",
+          "sha256": "5861dc717c7f278c4cc3f6b748349221c26a42789f72054442bfe4094ab14cb6",
+          "pages": 40
+        },
+        {
+          "fileid": "LC098ALP039EV.pdf",
+          "path": "paper-trail-corpus/deferredexams/2022/LC098ALP039EV.pdf",
+          "sha256": "8c0b8d9a47cc7bbdf52434650d64ba5a26f4e5e650985dfa0ed88cebf204de03",
+          "pages": 12
+        },
+        {
+          "fileid": "LC098ALP000EV.pdf",
+          "path": "paper-trail-corpus/deferredmarkingschemes/2022/LC098ALP000EV.pdf",
+          "sha256": "8e9ff528232a53b0c03cd41d2a4f4a44fbcd294c0c2c3932182ae9a93e818e8f",
+          "pages": 27
+        }
+      ],
+      "manualVisualSweep": {
+        "a": "All 40 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled pages 9–39, back cover 40.",
+        "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+        "scheme": "All 27 pages: cover 1, deferred notice 2, candidate rubric 3, A 4–8, B 9–15, C 16–25, blank 26, back cover 27."
+      },
+      "manualPricedTasks": 61,
+      "emittedPricedTasks": 61,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        200,
+        240
+      ],
+      "diagnosticRawLeaves": 56,
+      "runtimeCardIdentitySha256": "50aeaa4a54eec1daa16fa7e5b1895ebb2c1521c2caf3bbf87e4d9fbb6aa1c5ab"
+    },
+    {
+      "year": 2023,
+      "level": "hl",
+      "sitting": "deferred",
+      "language": "ev",
+      "reviewStatus": "manual-source-review-complete",
+      "reviewRecords": [
+        {
+          "path": "scripts/markbank/authoring/home-economics/2023-hl-deferred-review.json",
+          "sha256": "caf284d17dfc36c61f94814e88143727241cd75b91350c1cc4cea32d608f7b24"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "fileid": "LC098ALP014EV.pdf",
+          "path": "paper-trail-corpus/deferredexams/2023/LC098ALP014EV.pdf",
+          "sha256": "3841b3f1398f2a92c6378812733017cc0c30b39a81b565b1ffb723f172e1df30",
+          "pages": 40
+        },
+        {
+          "fileid": "LC098ALP039EV.pdf",
+          "path": "paper-trail-corpus/deferredexams/2023/LC098ALP039EV.pdf",
+          "sha256": "06fc5065019afdec8a60e87f85afe11a59c6f11c4c9761bfd3a2676f166008c3",
+          "pages": 12
+        },
+        {
+          "fileid": "LC098ALP000EV.pdf",
+          "path": "paper-trail-corpus/deferredmarkingschemes/2023/LC098ALP000EV.pdf",
+          "sha256": "1ff62adab752ea79017ecd7b7f40c1e553a399c34bfb07bda4b7e7a96548b952",
+          "pages": 32
+        }
+      ],
+      "manualVisualSweep": {
+        "a": "All 40 pages: cover 1, instructions 2, questions 3–7, answer instructions 8, ruled answer pages 9–39, back cover 40.",
+        "bc": "All 12 pages: cover 1, B 2–4, C 5–8, explicit blanks 9–11, back cover 12.",
+        "scheme": "All 32 pages: cover 1, deferred marking notice 2, candidate rubric 3, A 4–7, B 8–17, C 18–30, blank 31, back cover 32."
+      },
+      "manualPricedTasks": 58,
+      "emittedPricedTasks": 58,
+      "offeredPracticeMarks": 749,
+      "candidateExamMarks": [
+        280,
+        320
+      ],
+      "diagnosticRawLeaves": 57,
+      "runtimeCardIdentitySha256": "af8fc9fcfbd4e9a5c2bc75be0110c74c836b62f227d5055d6b0fd6fb56465a93"
+    }
+  ],
+  "sharedParserPreservation": "AST-level proof: removing exactly the new conditional expression whose test is (subject, year, level) == (home-economics, 2020, ol), with the original [block] else, makes the entire parser AST identical to HEAD. Therefore every non-HE execution takes the identical original code. Earlier HE census rows, all other emitted decks, full/decoded non-HE Atlas and other subject baselines were independently compared unchanged; no other subject content or reconciliation logic changed."
+}

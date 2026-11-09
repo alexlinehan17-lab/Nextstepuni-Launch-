@@ -31791,4 +31791,2371 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sa-q1", topicId: "home-economics-0-6", conceptId: "sa-q1",
+    section: "A", questionRef: "2020 OL Section A Q1",
+    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.",
+    tariffModel: {"kind":"fixed","notation":"Original component allocations and exact partial-credit ladders"}, totalMarks: 6,
+    rows: [
+    { id: "statement-1", kind: "point", verbatim: "Carbohydrates are a source of heat and energy — True", marks: 2, contextNote: "The original visible tick position determines the answer; each statement is 2 or 0 marks." },
+    { id: "statement-2", kind: "point", verbatim: "Carbohydrates contain the element nitrogen — False", marks: 2, contextNote: "The original visible tick position determines the answer; each statement is 2 or 0 marks." },
+    { id: "statement-3", kind: "point", verbatim: "Excess carbohydrates are converted to fat in the body — True", marks: 2, contextNote: "The original visible tick position determines the answer; each statement is 2 or 0 marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2020-ol-sa-q1",
+          "src": "/exam-figures/home-economics/home-economics-2020-ol-sa-q1.png",
+          "srcHash": "ea075c4265c51ed9f2575f4f76875b77",
+          "alt": "Complete original three-statement carbohydrate True/False table.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Section A booklet page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sa-q2", topicId: "home-economics-0-7", conceptId: "sa-q2",
+    section: "A", questionRef: "2020 OL Section A Q2",
+    questionText: "Explain the following properties of lipids (fats): Smoke point Flash point",
+    tariffModel: {"kind":"fixed","notation":"Original component allocations and exact partial-credit ladders"}, totalMarks: 6,
+    rows: [
+    { id: "term-1", kind: "criterion", verbatim: "Smoke point", marks: 3, contextNote: "Smoke point: lipids when heated to 200°C (fats), 250°C (oils) start to decompose; glycerol separates from the fatty acid; glycerol breaks down into acrolein; blue haze produced; acrid smell; etc.", permittedMarks: [0,2,3] },
+    { id: "term-2", kind: "criterion", verbatim: "Flash point", marks: 3, contextNote: "Flash point: high temperatures/overheating of lipids to 310°C (fats), 325°C (oils); vapour produced; can spontaneously ignite; etc.", permittedMarks: [0,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sa-q3", topicId: "home-economics-0-9", conceptId: "sa-q3",
+    section: "A", questionRef: "2020 OL Section A Q3",
+    questionText: "Using the words listed below, complete the following statements in relation to milk processing.",
+    tariffModel: {"kind":"fixed","notation":"Original component allocations and exact partial-credit ladders"}, totalMarks: 6,
+    rows: [
+    { id: "blank-1", kind: "point", verbatim: "Milk is pasteurised to make it safe for human consumption.", marks: 2, contextNote: "Fill the three original blanks in order, using the printed word pool; each is 2 or 0 marks." },
+    { id: "blank-2", kind: "point", verbatim: "The process that breaks down fat globules in milk is called homogenisation.", marks: 2, contextNote: "Fill the three original blanks in order, using the printed word pool; each is 2 or 0 marks." },
+    { id: "blank-3", kind: "point", verbatim: "Spray drying is used to change liquid milk into milk powder.", marks: 2, contextNote: "Fill the three original blanks in order, using the printed word pool; each is 2 or 0 marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2020-ol-sa-q3",
+          "src": "/exam-figures/home-economics/home-economics-2020-ol-sa-q3.png",
+          "srcHash": "558251e7acba905fac46aa1a71582b40",
+          "alt": "Complete original milk-processing cloze task, all three blanks and spray drying, pasteurised, homogenisation word pool.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Section A booklet page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sa-q4", topicId: "home-economics-0-3", conceptId: "sa-q4",
+    section: "A", questionRef: "2020 OL Section A Q4",
+    questionText: "Name two culinary uses of eggs and suggest a food/dish that demonstrates each culinary use.",
+    tariffModel: {"kind":"fixed","notation":"Original component allocations and exact partial-credit ladders"}, totalMarks: 6,
+    rows: [
+    { id: "uses", kind: "criterion", verbatim: "Culinary uses of eggs", marks: 2, contextNote: "Name ANY TWO different uses. Preserve the complete original grouped table; no one-per-row quota or invented one-to-one key. Culinary uses: Binding; thickening; coating; garnishing; clarifying; as part of a dish; Food/dish: Burgers; fish cakes; custard; quiche; breaded foods; jelly; stock; | Culinary uses: Glazing; enriching; aerating; emulsifying; eating as a whole food; etc. Food/dish: Scones; tarts; brown bread; sponge; meringue; mayonnaise; hollandaise sauce; boiled, fried eggs; etc.", permittedMarks: [0,1,2], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "dishes", kind: "criterion", verbatim: "Food/dish", marks: 4, contextNote: "Give ONE matching food/dish for EACH of the SAME TWO selected uses. Complete grouped source pool: Culinary uses: Binding; thickening; coating; garnishing; clarifying; as part of a dish; Food/dish: Burgers; fish cakes; custard; quiche; breaded foods; jelly; stock; | Culinary uses: Glazing; enriching; aerating; emulsifying; eating as a whole food; etc. Food/dish: Scones; tarts; brown bread; sponge; meringue; mayonnaise; hollandaise sauce; boiled, fried eggs; etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2020-ol-sa-q4",
+          "src": "/exam-figures/home-economics/home-economics-2020-ol-sa-q4.png",
+          "srcHash": "679dc9432d389bbd15b5f8106b1c37ca",
+          "alt": "Complete original two egg culinary-use and matching food/dish blank table.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Section A booklet page 4 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sa-q5", topicId: "home-economics-0-3", conceptId: "sa-q5",
+    section: "A", questionRef: "2020 OL Section A Q5",
+    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.",
+    tariffModel: {"kind":"fixed","notation":"Original component allocations and exact partial-credit ladders"}, totalMarks: 6,
+    rows: [
+    { id: "statement-1", kind: "point", verbatim: "A roux based sauce is made of equal quantities of fat and flour — True", marks: 2, contextNote: "The original visible tick position determines the answer; each statement is 2 or 0 marks." },
+    { id: "statement-2", kind: "point", verbatim: "Sauces improve the nutritive value of a dish — True", marks: 2, contextNote: "The original visible tick position determines the answer; each statement is 2 or 0 marks." },
+    { id: "statement-3", kind: "point", verbatim: "Sauces should only be served hot — False", marks: 2, contextNote: "The original visible tick position determines the answer; each statement is 2 or 0 marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2020-ol-sa-q5",
+          "src": "/exam-figures/home-economics/home-economics-2020-ol-sa-q5.png",
+          "srcHash": "8575551d62ce4e70aeca49564b308c0d",
+          "alt": "Complete original three-statement sauce True/False table.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Section A booklet page 4 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sa-q6-definition", topicId: "home-economics-0-11", conceptId: "sa-q6-definition",
+    section: "A", questionRef: "2020 OL Section A Q6 — definition",
+    questionText: "Explain the term ‘food additive’.",
+    tariffModel: {"kind":"fixed","notation":"Separately printed and priced companion ask; exact original steps"}, totalMarks: 2,
+    rows: [
+    { id: "definition", kind: "criterion", verbatim: "Food additive", marks: 2, contextNote: "Food additives are substances intentionally added to foods; improve colour, texture, flavour, shelf life, or nutritive value; natural or artificial; additives can become directly or indirectly a component of foods; direct additives are added to foods for a specific reason, e.g. keeping quality; indirect additives become part of a product due to handling, packaging or storage; etc.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sa-q6-additives", topicId: "home-economics-0-11", conceptId: "sa-q6-additives",
+    section: "A", questionRef: "2020 OL Section A Q6 — additives",
+    questionText: "Name two food additives used in processed foods.",
+    tariffModel: {"kind":"fixed","notation":"Separately printed and priced companion ask; exact original steps"}, totalMarks: 4,
+    rows: [
+    { id: "additives", kind: "criterion", verbatim: "Food additives", marks: 4, contextNote: "ANY TWO different additives across the complete original pool: colourings; preservatives; antioxidants; physical conditioning agents; flavourings; flavour enhancers; sweeteners; nutritive additives; etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sa-q7", topicId: "home-economics-0-1", conceptId: "sa-q7",
+    section: "A", questionRef: "2020 OL Section A Q7",
+    questionText: "State the effect on the body of each of the following:",
+    tariffModel: {"kind":"fixed","notation":"Original component allocations and exact partial-credit ladders"}, totalMarks: 6,
+    rows: [
+    { id: "effect-1", kind: "criterion", verbatim: "High saturated fat diet", marks: 2, contextNote: "Give an effect for this REQUIRED dietary condition. Full original guidance: weight gain; CHD; diabetes; obesity; high cholesterol; gallstones; arthritis; etc.", permittedMarks: [0,2] },
+    { id: "effect-2", kind: "criterion", verbatim: "Low dietary fibre diet", marks: 2, contextNote: "Give an effect for this REQUIRED dietary condition. Full original guidance: bowel disorder; constipation; haemorrhoids; diverticulosis; irritable bowel syndrome; bowel cancer; etc.", permittedMarks: [0,2] },
+    { id: "effect-3", kind: "criterion", verbatim: "Low calcium intake", marks: 2, contextNote: "Give an effect for this REQUIRED dietary condition. Full original guidance: osteoporosis; rickets; osteomalacia; tooth decay; brittle bones; etc.", permittedMarks: [0,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2020-ol-sa-q7",
+          "src": "/exam-figures/home-economics/home-economics-2020-ol-sa-q7.png",
+          "srcHash": "ccba826cb122a5142e35cec8b2d4fe70",
+          "alt": "Complete original three-row diet-effect table: high saturated fat, low fibre and low calcium.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Section A booklet page 5 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sa-q8-foods", topicId: "home-economics-0-11", conceptId: "sa-q8-foods",
+    section: "A", questionRef: "2020 OL Section A Q8 — foods",
+    questionText: "Name two foods exported from Ireland.",
+    tariffModel: {"kind":"fixed","notation":"Separately printed and priced companion ask; exact original steps"}, totalMarks: 4,
+    rows: [
+    { id: "foods", kind: "criterion", verbatim: "Foods exported from Ireland", marks: 4, contextNote: "ANY TWO different foods across the complete pool: fish; fish products; meat; meat products; poultry; dairy products; cheese; milk; soft fruits; beer; whiskey; vegetables; prepared consumer foods; cereals; etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sa-q8-careers", topicId: "home-economics-0-11", conceptId: "sa-q8-careers",
+    section: "A", questionRef: "2020 OL Section A Q8 — careers",
+    questionText: "List two career opportunities in the food industry.",
+    tariffModel: {"kind":"fixed","notation":"Separately printed and priced companion ask; exact original steps"}, totalMarks: 2,
+    rows: [
+    { id: "careers", kind: "criterion", verbatim: "Career opportunities", marks: 2, contextNote: "ANY TWO different careers across the complete pool: farmer; fisherman; horticulturalist; chef; marketing manager; production operator; nutritionist; dietician; baker; cheese maker; environmental health officer; chef; waiter; etc.", permittedMarks: [0,1,2], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sa-q9", topicId: "home-economics-1-1", conceptId: "sa-q9",
+    section: "A", questionRef: "2020 OL Section A Q9",
+    questionText: "Indicate with a (✓) whether each of the following statements is true or false.",
+    tariffModel: {"kind":"fixed","notation":"Original component allocations and exact partial-credit ladders"}, totalMarks: 6,
+    rows: [
+    { id: "statement-1", kind: "point", verbatim: "Universal Social Charge (USC) is a voluntary deduction from wages or salaries — False", marks: 2, contextNote: "The original visible tick position determines the answer; each statement is 2 or 0 marks." },
+    { id: "statement-2", kind: "point", verbatim: "Utility bills are an example of essential expenditure — True", marks: 2, contextNote: "The original visible tick position determines the answer; each statement is 2 or 0 marks." },
+    { id: "statement-3", kind: "point", verbatim: "Child benefit is a universal social welfare payment — True", marks: 2, contextNote: "The original visible tick position determines the answer; each statement is 2 or 0 marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2020-ol-sa-q9",
+          "src": "/exam-figures/home-economics/home-economics-2020-ol-sa-q9.png",
+          "srcHash": "c5daf24b9900dddb86344850e5e9682c",
+          "alt": "Complete original three-statement USC, utility bills and child benefit True/False table.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Section A booklet page 5 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sa-q10-advantages", topicId: "home-economics-1-2", conceptId: "sa-q10-advantages",
+    section: "A", questionRef: "2020 OL Section A Q10 — advantages",
+    questionText: "State two advantages of online shopping.",
+    tariffModel: {"kind":"fixed","notation":"Separately printed and priced companion ask; exact original steps"}, totalMarks: 4,
+    rows: [
+    { id: "advantages", kind: "criterion", verbatim: "Advantages", marks: 4, contextNote: "ANY TWO different advantages across both source lines: do not have to leave home; goods delivered to home by post, courier; variety of websites; easy to search different websites; more convenient; next day delivery; delivered on day of order; groceries can be booked weeks in advance; click and collect; may be cheaper; not restricted by opening hours, goods may be purchased anytime; orders may be tracked; etc.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sa-q10-payment", topicId: "home-economics-1-2", conceptId: "sa-q10-payment",
+    section: "A", questionRef: "2020 OL Section A Q10 — payment",
+    questionText: "Name one method of paying for goods online.",
+    tariffModel: {"kind":"fixed","notation":"Separately printed and priced companion ask; exact original steps"}, totalMarks: 2,
+    rows: [
+    { id: "payment", kind: "criterion", verbatim: "method", marks: 2, contextNote: "credit card; PayPal; debit card; cheque; etc.", permittedMarks: [0,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sa-q11", topicId: "home-economics-3-3", conceptId: "sa-q11",
+    section: "A", questionRef: "2020 OL Section A Q11",
+    questionText: "Outline three factors that influence a family’s choice of housing.",
+    tariffModel: {"kind":"fixed","notation":"Original component allocations and exact partial-credit ladders"}, totalMarks: 6,
+    rows: [
+    { id: "factors", kind: "criterion", verbatim: "Factors", marks: 6, contextNote: "Choose ANY THREE distinct factors across the complete pool; no answer-line quotas. Initial cost; maintenance costs; family stage; location, near school, work, amenities; family member with special needs; personal likes and dislikes; proximity to family, friends; future needs of the family; house design/layout; size; energy efficiency; condition of the house, in need of renovation; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sa-q12", topicId: "home-economics-1-4", conceptId: "sa-q12",
+    section: "A", questionRef: "2020 OL Section A Q12",
+    questionText: "Explain each of the textile care symbols below.",
+    tariffModel: {"kind":"fixed","notation":"Original component allocations and exact partial-credit ladders"}, totalMarks: 6,
+    rows: [
+    { id: "symbol-1", kind: "criterion", verbatim: "Line dry", marks: 3, contextNote: "Original source answer: Line dry.", permittedMarks: [0,2,3] },
+    { id: "symbol-2", kind: "criterion", verbatim: "Do not dry clean", marks: 3, contextNote: "Original source answer: Do not dry clean.", permittedMarks: [0,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2020-ol-sa-q12",
+          "src": "/exam-figures/home-economics/home-economics-2020-ol-sa-q12.png",
+          "srcHash": "0b117927b148f8d0eac94232ea56594b",
+          "alt": "Both complete original textile-care symbols, their response spaces and full goodhousekeeping.com attribution.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Section A booklet page 6 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q1ai", topicId: "home-economics-0-1", conceptId: "sb-q1ai",
+    section: "B", questionRef: "2020 OL Section B Q1(a)(i)",
+    stem: "‘1 in 3 people claim to have reduced the intake of red meat in their diet.’ (Dietary Lifestyles Report |Thinking House, Bord Bia)",
+    questionText: "Using the information provided in the table, comment on four of the reasons why people are choosing to reduce their intake of red meat.",
+    tariffModel: {"kind":"fixed","notation":"4 points; original steps [0, 2, 4, 6]"}, totalMarks: 24,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "reasons", marks: 24, contextNote: "Choose FOUR different reasons from all six original chart categories; complete original guidance: Media influence: internet; celebrity chefs, TV/sport personalities; etc. awareness of meat alternative recipes; etc. Save money: red meat is an expensive protein food; cheaper protein alternatives available; etc. Animal welfare: feel it is wrong to kill or harm animals; disagree with animal cruelty/inhumane slaughtering; disagree with intensive animal rearing; etc. Environment: red meat production produces high levels of greenhouse gas emissions; high water consumption for meat production; transport cost, food miles; etc. Lifestyle change: popularity of vegetarianism; flexitarians; food fashion fads; meat free Monday; etc. Health: red meat has a higher saturated fat content; lacks fibre; cholesterol present; reduce risk of CHD; obesity; bowel disorder; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16,18,20,22,24], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,2,4,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,2,4,6]},{"id":"point-3","verbatim":"Point 3","marks":6,"permittedMarks":[0,2,4,6]},{"id":"point-4","verbatim":"Point 4","marks":6,"permittedMarks":[0,2,4,6]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2020-ol-sb-q1-red-meat",
+          "src": "/exam-figures/home-economics/home-economics-2020-ol-sb-q1-red-meat.png",
+          "srcHash": "74d90f7cae39d1512719beed5b1985f8",
+          "alt": "Complete original Reduction in red meat consumption chart: all six reasons and percentages (11, 17, 27, 30, 30, 67), with the full Dietary Lifestyles Report / Thinking House / Bord Bia attribution.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Sections B/C booklet page 2 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q1aii", topicId: "home-economics-0-5", conceptId: "sb-q1aii",
+    section: "B", questionRef: "2020 OL Section B Q1(a)(ii)",
+    stem: "‘1 in 3 people claim to have reduced the intake of red meat in their diet.’ (Dietary Lifestyles Report |Thinking House, Bord Bia)",
+    questionText: "Name a protein food that could be used instead of red meat.",
+    tariffModel: {"kind":"fixed","notation":"1 points; original steps [0, 6]"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "protein food", marks: 6, contextNote: "Tofu; soya bean; TVP; tempeh; mycoprotein; Quorn; peas; beans; chicken; milk; yoghurt; nuts; eggs; cheese; etc.", permittedMarks: [0,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q1b", topicId: "home-economics-0-8", conceptId: "sb-q1b",
+    section: "B", questionRef: "2020 OL Section B Q1(b)",
+    stem: "‘1 in 3 people claim to have reduced the intake of red meat in their diet.’ (Dietary Lifestyles Report |Thinking House, Bord Bia)",
+    questionText: "Give an account of iron under each of the following headings: • functions in the body • dietary sources • effect of deficiency.",
+    tariffModel: {"kind":"fixed","notation":"TWO functions4 + THREE sources4 + ONE deficiency4"}, totalMarks: 24,
+    rows: [
+    { id: "functions", kind: "criterion", verbatim: "functions in the body", marks: 8, contextNote: "Manufacture of haemoglobin in the blood; haemoglobin transports oxygen around the body; involved in myoglobin production which carries oxygen to the muscles; efficient functioning of enzymes in the body; works with enzymes to release energy from food; prevents anaemia; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "sources", kind: "criterion", verbatim: "dietary sources", marks: 12, contextNote: "Red meat; chicken; liver; kidney; wholegrain flour; fish; eggs; cereals; broccoli; cabbage; pulses; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    { id: "deficiency", kind: "criterion", verbatim: "effect of deficiency", marks: 4, contextNote: "Tiredness; lack of energy; pale skin colour; tired muscles; breathlessness; anaemia; etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q1c", topicId: "home-economics-0-8", conceptId: "sb-q1c",
+    section: "B", questionRef: "2020 OL Section B Q1(c)",
+    stem: "‘1 in 3 people claim to have reduced the intake of red meat in their diet.’ (Dietary Lifestyles Report |Thinking House, Bord Bia)",
+    questionText: "State two ways of increasing iron in the diet.",
+    tariffModel: {"kind":"fixed","notation":"2 points; original steps [0, 2, 3]"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "ways", marks: 6, contextNote: "Eat red meat, dark green vegetables, fortified breakfast cereals; combining haem and non-haem iron; include vitamin C for absorption; avoid too much dietary fibre, phytic acid, oxalic acid, tannins; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q1d", topicId: "home-economics-0-9", conceptId: "sb-q1d",
+    section: "B", questionRef: "2020 OL Section B Q1(d)",
+    stem: "‘1 in 3 people claim to have reduced the intake of red meat in their diet.’ (Dietary Lifestyles Report |Thinking House, Bord Bia)",
+    questionText: "Discuss four factors consumers should consider when selecting and buying meat and meat products.",
+    tariffModel: {"kind":"fixed","notation":"ONE selecting5 + ONE buying5 + TWO other5"}, totalMarks: 20,
+    rows: [
+    { id: "selecting", kind: "criterion", verbatim: "Selecting", marks: 5, contextNote: "Selecting: use by date, best before date; buy from a reliable shop; nutritional value; storage details; cooking instructions; Bord Bia quality mark; packaging recyclable; etc.", permittedMarks: [0,3,5] },
+    { id: "buying", kind: "criterion", verbatim: "Buying", marks: 5, contextNote: "Buying: cost and value for money; organic; buy in useable quantities; package is not opened; packaging easy to open; traceability; labelling; country of origin; prepared ready to serve; clean hygienic shop; etc.", permittedMarks: [0,3,5] },
+    { id: "other", kind: "criterion", verbatim: "2 other points", marks: 10, contextNote: "TWO additional distinct points from either category; no repeated credit. Selecting: use by date, best before date; buy from a reliable shop; nutritional value; storage details; cooking instructions; Bord Bia quality mark; packaging recyclable; etc. Buying: cost and value for money; organic; buy in useable quantities; package is not opened; packaging easy to open; traceability; labelling; country of origin; prepared ready to serve; clean hygienic shop; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q2ai", topicId: "home-economics-0-1", conceptId: "sb-q2ai",
+    section: "B", questionRef: "2020 OL Section B Q2(a)(i)",
+    stem: "‘Cardiovascular disease including coronary heart disease is the most common cause of death in Ireland, accounting for 36% of all deaths.’ (www.hse.ie)",
+    questionText: "Explain coronary heart disease (CHD).",
+    tariffModel: {"kind":"fixed","notation":"1 points; original steps [0, 2, 4]"}, totalMarks: 4,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "Explanation", marks: 4, contextNote: "Occurs when fatty substances including cholesterol become lodged on coronary artery walls; causing narrowing of the arteries; cholesterol slowly restricts the flow of oxygen-rich blood through the arteries of the heart; etc.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q2aii", topicId: "home-economics-0-1", conceptId: "sb-q2aii",
+    section: "B", questionRef: "2020 OL Section B Q2(a)(ii)",
+    stem: "‘Cardiovascular disease including coronary heart disease is the most common cause of death in Ireland, accounting for 36% of all deaths.’ (www.hse.ie)",
+    questionText: "Outline three factors that increase a person’s risk of developing coronary heart disease.",
+    tariffModel: {"kind":"fixed","notation":"3 points; original steps [0, 2, 4]"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 12, contextNote: "Diet high in saturated fat; high cholesterol levels; overweight; obesity; lack of exercise; smoking; increased stress levels; excess alcohol consumption; age; high blood pressure; diabetes; heredity; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q2b", topicId: "home-economics-0-1", conceptId: "sb-q2b",
+    section: "B", questionRef: "2020 OL Section B Q2(b)",
+    stem: "‘Cardiovascular disease including coronary heart disease is the most common cause of death in Ireland, accounting for 36% of all deaths.’ (www.hse.ie)",
+    questionText: "State four healthy eating guidelines that should be followed to reduce the risk of coronary heart disease.",
+    tariffModel: {"kind":"fixed","notation":"4 points; original steps [0, 2, 4]"}, totalMarks: 16,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "guidelines", marks: 16, contextNote: "Reduce fat intake, especially saturated fat; consume more polyunsaturated fatty acids; reduce salt intake; reduce refined carbohydrates; reduce convenience foods; eat more nuts, oily fish; increase intake of fibre rich foods i.e. fruit, vegetables etc.; choose low fat products; lean meats; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q2c", topicId: "home-economics-0-10", conceptId: "sb-q2c",
+    section: "B", questionRef: "2020 OL Section B Q2(c)",
+    stem: "‘Cardiovascular disease including coronary heart disease is the most common cause of death in Ireland, accounting for 36% of all deaths.’ (www.hse.ie)",
+    questionText: "Having regard to current healthy eating guidelines, set out a menu (3 meals) for one day for a person with coronary heart disease.",
+    tariffModel: {"kind":"fixed","notation":"THREE meals EACH two courses2 + beverage2"}, totalMarks: 18,
+    rows: [
+    { id: "meal-1-courses", kind: "criterion", verbatim: "2 courses", marks: 4, contextNote: "TWO appropriate courses for this REQUIRED Breakfast meal. Full original sample menu, read as a single column: Breakfast Orange juice *** Porridge with low fat milk *** Low fat fruit smoothie Tea/coffee/water", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "meal-1-drink", kind: "criterion", verbatim: "beverage", marks: 2, contextNote: "ONE suitable beverage for the SAME Breakfast meal. Breakfast Orange juice *** Porridge with low fat milk *** Low fat fruit smoothie Tea/coffee/water", permittedMarks: [0,2] },
+    { id: "meal-2-courses", kind: "criterion", verbatim: "2 courses", marks: 4, contextNote: "TWO appropriate courses for this REQUIRED Lunch meal. Full original sample menu, read as a single column: Lunch Carrot and Lentil soup with brown bread *** Low fat strawberry yoghurt *** Apple Glass of low fat milk", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "meal-2-drink", kind: "criterion", verbatim: "beverage", marks: 2, contextNote: "ONE suitable beverage for the SAME Lunch meal. Lunch Carrot and Lentil soup with brown bread *** Low fat strawberry yoghurt *** Apple Glass of low fat milk", permittedMarks: [0,2] },
+    { id: "meal-3-courses", kind: "criterion", verbatim: "2 courses", marks: 4, contextNote: "TWO appropriate courses for this REQUIRED Dinner meal. Full original sample menu, read as a single column: Dinner Melon *** Vegetable stir fry with brown rice *** Fresh fruit salad Low fat milk/water", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "meal-3-drink", kind: "criterion", verbatim: "beverage", marks: 2, contextNote: "ONE suitable beverage for the SAME Dinner meal. Dinner Melon *** Vegetable stir fry with brown rice *** Fresh fruit salad Low fat milk/water", permittedMarks: [0,2] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2020-ol-sb-q2c-meal-1","label":"Breakfast","marks":6,"rowIds":["meal-1-courses","meal-1-drink"]},{"sourceCardId":"he-2020-ol-sb-q2c-meal-2","label":"Lunch","marks":6,"rowIds":["meal-2-courses","meal-2-drink"]},{"sourceCardId":"he-2020-ol-sb-q2c-meal-3","label":"Dinner","marks":6,"rowIds":["meal-3-courses","meal-3-drink"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q3a", topicId: "home-economics-0-9", conceptId: "sb-q3a",
+    section: "B", questionRef: "2020 OL Section B Q3(a)",
+    stem: "‘Fish has long been recognised as one of nature’s healthiest foods.’ (www.bordbia.ie)",
+    questionText: "Give an account of (i) the nutritive value and (ii) the dietetic value of fish.",
+    tariffModel: {"kind":"fixed","notation":"TWO nutritive4 + TWO dietetic4 + ONE other4; whole shared roman task"}, totalMarks: 20,
+    rows: [
+    { id: "nutritive", kind: "criterion", verbatim: "nutritive value", marks: 8, contextNote: "Nutritional value: HBV protein; polyunsaturated fat; omega 3 fatty acids present in oily fish; vitamin B; vitamin C in oysters; vitamins A & D in oily fish; source of potassium, phosphorus, zinc, iodine; calcium in tinned fish; iron in shellfish and sardines; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "dietetic", kind: "criterion", verbatim: "dietetic value", marks: 8, contextNote: "Dietetic value: easy to digest, suitable for children, elderly, invalids; protein for growth in children and adolescents; healthy muscles and repair for all age groups; polyunsaturated fat; omega 3 fatty acids help to reduce CHD; suitable for low calorie diets; no carbohydrate so should be served with carbohydrate foods; versatile; different cooking methods can be used; available processed out of season; cooks quickly, saves time and fuel; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "other", kind: "criterion", verbatim: "1 other", marks: 4, contextNote: "ONE additional distinct point from either category, no repeated credit. Nutritional value: HBV protein; polyunsaturated fat; omega 3 fatty acids present in oily fish; vitamin B; vitamin C in oysters; vitamins A & D in oily fish; source of potassium, phosphorus, zinc, iodine; calcium in tinned fish; iron in shellfish and sardines; etc. Dietetic value: easy to digest, suitable for children, elderly, invalids; protein for growth in children and adolescents; healthy muscles and repair for all age groups; polyunsaturated fat; omega 3 fatty acids help to reduce CHD; suitable for low calorie diets; no carbohydrate so should be served with carbohydrate foods; versatile; different cooking methods can be used; available processed out of season; cooks quickly, saves time and fuel; etc.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q3b", topicId: "home-economics-0-9", conceptId: "sb-q3b",
+    section: "B", questionRef: "2020 OL Section B Q3(b)",
+    stem: "‘Fish has long been recognised as one of nature’s healthiest foods.’ (www.bordbia.ie)",
+    questionText: "Discuss the advantages and the disadvantages of including processed fish in the diet.",
+    tariffModel: {"kind":"fixed","notation":"TWO advantages4 + TWO disadvantages4"}, totalMarks: 16,
+    rows: [
+    { id: "advantages", kind: "criterion", verbatim: "Advantages", marks: 8, contextNote: "Advantages: quick to cook; little or no cooking skills required; little or no waste; can be fortified with vitamins and minerals; easily stored; large variety; available frozen; can be cooked straight from freezer; canned fish has long shelf life; processed fish readily available; easy to digest; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "disadvantages", kind: "criterion", verbatim: "Disadvantages", marks: 8, contextNote: "Disadvantages: expensive; may contain additives, preservatives, colourings and flavourings; low in fibre; inferior taste to fresh fish; high in salt; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q3c", topicId: "home-economics-0-11", conceptId: "sb-q3c",
+    section: "B", questionRef: "2020 OL Section B Q3(c)",
+    stem: "‘Fish has long been recognised as one of nature’s healthiest foods.’ (www.bordbia.ie)",
+    questionText: "Name two food packaging materials. Outline the impact of each packaging material on the environment.",
+    tariffModel: {"kind":"fixed","notation":"TWO material profiles EACH name3 + impact4"}, totalMarks: 14,
+    rows: [
+    { id: "material-1", kind: "criterion", verbatim: "Food packaging material", marks: 3, contextNote: "Name material 1 of TWO DIFFERENT materials. Full original paired pool (valid alternatives remain open): Metal: limited and non-renewable resource; non-biodegradable; recyclable; reduces greenhouse gas emissions; etc. Glass: reusable; recyclable; reduces greenhouse gas emissions; may go to landfill; non- biodegradable; careless disposal can be dangerous to wildlife; etc. Paper: biodegradable; recyclable; reduces greenhouse gas emissions; littering; paper with plastic coating, resistant to biodegradation; etc. Plastic: non-biodegradable; made from a limited and non-renewable resource; limited recycling facilities in Ireland; recycling saves raw materials and energy, reduces the impact of production on the environment in terms of air pollution; littering; can cause damage to fish and animals; etc. Polystyrene: non-biodegradable; may go to landfill; littering; contributes a huge bulk to landfill; etc.", permittedMarks: [0,3] },
+    { id: "impact-1", kind: "criterion", verbatim: "Impact", marks: 4, contextNote: "ONE impact point about the SAME material 1; use its matching original profile above. No further model is invented for an unprinted valid alternative.", permittedMarks: [0,2,4] },
+    { id: "material-2", kind: "criterion", verbatim: "Food packaging material", marks: 3, contextNote: "Name material 2 of TWO DIFFERENT materials. Full original paired pool (valid alternatives remain open): Metal: limited and non-renewable resource; non-biodegradable; recyclable; reduces greenhouse gas emissions; etc. Glass: reusable; recyclable; reduces greenhouse gas emissions; may go to landfill; non- biodegradable; careless disposal can be dangerous to wildlife; etc. Paper: biodegradable; recyclable; reduces greenhouse gas emissions; littering; paper with plastic coating, resistant to biodegradation; etc. Plastic: non-biodegradable; made from a limited and non-renewable resource; limited recycling facilities in Ireland; recycling saves raw materials and energy, reduces the impact of production on the environment in terms of air pollution; littering; can cause damage to fish and animals; etc. Polystyrene: non-biodegradable; may go to landfill; littering; contributes a huge bulk to landfill; etc.", permittedMarks: [0,3] },
+    { id: "impact-2", kind: "criterion", verbatim: "Impact", marks: 4, contextNote: "ONE impact point about the SAME material 2; use its matching original profile above. No further model is invented for an unprinted valid alternative.", permittedMarks: [0,2,4] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2020-ol-sb-q3c-material-1","label":"Packaging material 1","marks":7,"rowIds":["material-1","impact-1"]},{"sourceCardId":"he-2020-ol-sb-q3c-material-2","label":"Packaging material 2","marks":7,"rowIds":["material-2","impact-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q4a", topicId: "home-economics-1-3", conceptId: "sb-q4a",
+    section: "B", questionRef: "2020 OL Section B Q4(a)",
+    stem: "Microwave ovens are popular kitchen appliances.",
+    questionText: "Discuss four factors that should be considered when selecting kitchen appliances.",
+    tariffModel: {"kind":"fixed","notation":"4 points; original steps [0, 2, 4]"}, totalMarks: 16,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 16, contextNote: "Cost - initial and running costs; quality; energy efficiency; space available; size; brand name; reliability; design; construction; easy to operate; ease of cleaning; safety features; guarantee; after sales service; needs of individual/family; colour suits kitchen; space available; moveable; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q4b", topicId: "home-economics-1-2", conceptId: "sb-q4b",
+    section: "B", questionRef: "2020 OL Section B Q4(b)",
+    stem: "Microwave ovens are popular kitchen appliances.",
+    questionText: "Outline three consumer responsibilities.",
+    tariffModel: {"kind":"fixed","notation":"3 points; original steps [0, 2, 4]"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "responsibilities", marks: 12, contextNote: "To inform yourself about goods and services; to choose wisely; understand the balance between cost and quality; read labels; follow manufacturer’s instructions; know your rights; know consumer laws; complain about faulty goods and services; protection of the environment; use resources responsibly; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q4c", topicId: "home-economics-1-3", conceptId: "sb-q4c",
+    section: "B", questionRef: "2020 OL Section B Q4(c)",
+    stem: "Microwave ovens are popular kitchen appliances.",
+    questionText: "Set out the results of a study you have carried out on a microwave oven. Refer to: • guidelines for use • modern features • care and cleaning.",
+    tariffModel: {"kind":"fixed","notation":"THREE use4 + TWO features2 + ONE care3 + ONE cleaning3"}, totalMarks: 22,
+    rows: [
+    { id: "use", kind: "criterion", verbatim: "guidelines for use", marks: 12, contextNote: "Arrange foods in a circle, thickest part outwards; stir, turn and rotate food during cooking; pierce foods e.g. skin of sausages, potatoes; time accurately; use recipes adapted for the microwave; cover food to maintain moisture, speed up the cooking time, prevent splatters; never place metal or metal trim containers/dishes in the microwave; use appropriate cookware e.g. paper, glass, plastic; allow standing time; use defrost power setting when thawing foods; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "features", kind: "criterion", verbatim: "modern features", marks: 4, contextNote: "Digital control panel; touch control operation; anti-bacterial linings; recipe memory settings; sensor cooking; different power levels; self-cleaning; auto weight defrosts; smart technology; etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    { id: "care", kind: "criterion", verbatim: "care", marks: 3, contextNote: "ONE required reference to care. Complete original care/cleaning pool: Follow the manufacturer’s instructions; unplug before cleaning; avoid moving; do not open the door while the microwave is still on; wipe up spills immediately; remove glass turntable when cleaning; clean regularly; wipe the outside and door seal with a damp cloth; avoid using harsh abrasives; etc.", permittedMarks: [0,2,3] },
+    { id: "cleaning", kind: "criterion", verbatim: "cleaning", marks: 3, contextNote: "ONE required reference to cleaning, distinct from care. Follow the manufacturer’s instructions; unplug before cleaning; avoid moving; do not open the door while the microwave is still on; wipe up spills immediately; remove glass turntable when cleaning; clean regularly; wipe the outside and door seal with a damp cloth; avoid using harsh abrasives; etc.", permittedMarks: [0,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q5ai", topicId: "home-economics-2-1", conceptId: "sb-q5ai",
+    section: "B", questionRef: "2020 OL Section B Q5(a)(i)",
+    stem: "‘In Ireland there were 21,053 marriages in 2018 including 664 same-sex marriages.’ (www.cso.ie)",
+    questionText: "Define ‘marriage’.",
+    tariffModel: {"kind":"fixed","notation":"1 points; original steps [0, 2, 3, 5]"}, totalMarks: 5,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "Definition", marks: 5, contextNote: "A socially and legally acceptable contract between two people to the exclusion of all others; etc.", permittedMarks: [0,2,3,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q5aii", topicId: "home-economics-2-1", conceptId: "sb-q5aii",
+    section: "B", questionRef: "2020 OL Section B Q5(a)(ii)",
+    stem: "‘In Ireland there were 21,053 marriages in 2018 including 664 same-sex marriages.’ (www.cso.ie)",
+    questionText: "Outline four conditions necessary for a marriage to be legally valid in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"4 points; original steps [0, 3, 5]"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "conditions", marks: 20, contextNote: "Historical 2020 scheme wording retained for this examination task. Three months’ notice required by registrar; partners must be over 18 years of age (over 16 years with parental/guardian consent); marriage must be voluntary; both people must be free to marry, cannot be married already; partners must not be too closely related; two witnesses must be present; the register must be signed by the couple and witnesses; all marriages must be registered after the ceremony; must take place in a registered building e.g. registry office, church, or approved venue; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q5b", topicId: "home-economics-2-1", conceptId: "sb-q5b",
+    section: "B", questionRef: "2020 OL Section B Q5(b)",
+    stem: "‘In Ireland there were 21,053 marriages in 2018 including 664 same-sex marriages.’ (www.cso.ie)",
+    questionText: "Discuss three benefits to a couple of attending a pre-marriage course.",
+    tariffModel: {"kind":"fixed","notation":"3 points; original steps [0, 3, 5]"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "benefits", marks: 15, contextNote: "Allows couples to discuss expectations of married life and reality of marriage i.e. communication, conflict resolution, relationships, family planning, child rearing, financial responsibilities; legality of marriage; encourages openness and communication; equips couples with skills to detect problems; couples look at personal qualities, each other’s positive attributes; are encouraged to discuss issues that may have a negative impact on marriage; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sb-q5c", topicId: "home-economics-2-1", conceptId: "sb-q5c",
+    section: "B", questionRef: "2020 OL Section B Q5(c)",
+    stem: "‘In Ireland there were 21,053 marriages in 2018 including 664 same-sex marriages.’ (www.cso.ie)",
+    questionText: "Explain each of the following options available to couples who are experiencing difficulties in their marriage: • marriage counselling • legal separation.",
+    tariffModel: {"kind":"fixed","notation":"ONE required counselling5 + ONE separation5"}, totalMarks: 10,
+    rows: [
+    { id: "counselling", kind: "criterion", verbatim: "marriage counselling", marks: 5, contextNote: "Marriage counselling: assists couples to resolve marriage problems; helps to discuss problems couples might otherwise have difficulty discussing; help couples express concerns, feelings, personal issues; free and confidential service; helps to reduce conflict between partners; offers guidance; etc.", permittedMarks: [0,3,5] },
+    { id: "separation", kind: "criterion", verbatim: "legal separation", marks: 5, contextNote: "Historical source account, including its full Judicial Separation continuation: Legal separation: Deed of Separation/legal separation agreement; legal binding written contract; sets out future rights and duties - agreement to live apart; responsibility and care of dependent children; maintenance; arrangements regarding ownership and occupation of the family home; trained mediator is available to negotiate terms; must be drawn up by solicitor; helps couples avoid court procedures; etc. Judicial Separation: under the guidelines of the Judicial Separation and Family Law Reform Act 1989, Family Law Act 2019; must be based on the following grounds - adultery, unreasonable behaviour; desertion; no normal marital relations; heard by a judge; judge may also make orders in relation to custody, maintenance, property, barring and safety orders; succession rights; etc.", permittedMarks: [0,3,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q1ai", topicId: "home-economics-3-3", conceptId: "sc-q1ai",
+    section: "C", questionRef: "2020 OL Section C E1 Q1(a)(i)",
+    stem: "Shown below is the ground floor plan of a house.",
+    questionText: "Evaluate the suitability of the floor plan layout for the daily living requirements of a family.",
+    tariffModel: {"kind":"fixed","notation":"4 points; original steps [0, 3, 5]"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 20, contextNote: "Adequate storage area with the garage; garage suitable for conversion into a playroom; large kitchen; dining area suitable for entertaining; living area can open onto patio; separate utility with backdoor access for easy entry/exit; separate sitting room provides space for reading, watching T.V.; possible play area; study area suitable for children or adults working from home; no toilet downstairs; steps to front door; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2020-ol-sc-q1-floor-plan",
+          "src": "/exam-figures/home-economics/home-economics-2020-ol-sc-q1-floor-plan.png",
+          "srcHash": "7df7d012d3db80bf3c8c4e03c7ef1a1a",
+          "alt": "Complete original ground-floor plan with all rooms, patio, garage, stairs and front-door label, retained for both suitability and accessibility-modification tasks.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Sections B/C booklet page 5 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q1aii", topicId: "home-economics-3-3", conceptId: "sc-q1aii",
+    section: "C", questionRef: "2020 OL Section C E1 Q1(a)(ii)",
+    stem: "Shown below is the ground floor plan of a house.",
+    questionText: "Give details of two modifications that could be made to the floor plan layout to suit the requirements of people with disabilities.",
+    tariffModel: {"kind":"fixed","notation":"2 points; original steps [0, 3, 5]"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "modifications", marks: 10, contextNote: "Convert sitting room to a bedroom with en-suite; divide utility room and put in toilet; remove walls in kitchen and dining room and make living/dining/kitchen open plan; put in ramp at front door; remove/widen internal doors for wheelchair access; widen hallway; put a sliding door between patio and dining room; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2020-ol-sc-q1-floor-plan",
+          "src": "/exam-figures/home-economics/home-economics-2020-ol-sc-q1-floor-plan.png",
+          "srcHash": "7df7d012d3db80bf3c8c4e03c7ef1a1a",
+          "alt": "Complete original ground-floor plan with all rooms, patio, garage, stairs and front-door label, retained for both suitability and accessibility-modification tasks.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Sections B/C booklet page 5 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q1aiii", topicId: "home-economics-3-3", conceptId: "sc-q1aiii",
+    section: "C", questionRef: "2020 OL Section C E1 Q1(a)(iii)",
+    stem: "Shown below is the ground floor plan of a house.",
+    questionText: "Name and describe two professional services available to people when designing and building a home.",
+    tariffModel: {"kind":"fixed","notation":"2 coherent choices each name3 + 1 details2"}, totalMarks: 10,
+    rows: [
+    { id: "name-1", kind: "criterion", verbatim: "Name", marks: 3, contextNote: "Select Professional service 1 of 2 DIFFERENT options, keeping the SAME option throughout its criteria. Architect, Surveyor, Engineer, Solicitor and Builder have full printed models. Electrician, Plummer, Plasterer and Interior Designer are printed by name only; no description model is invented for these or another valid alternative. Complete original paired pool: Architect: provide information and advice on site-purchase, location and orientation of house; design house plans suitable for family needs; submit plans as part of planning application; advice on suitable building contractor; carry out on-site visits; supervise and advice on the construction of the house; etc. Surveyor: complete a building survey of a property; highlight any potential problems that could affect future design and building of the house; advice on how to rectify defects/problems and provide solutions; etc. Engineer: provide advice on house design and construction; check house plans to ensure they are compliant with current legislation; oversee building of the house; advice on problems that may arise during construction; etc. Solicitor: advice on legal aspect of building, buying and selling a house; advice on planning regulations; check title deeds and land registry to confirm ownership; check rights of way; etc. Builder: provide a detailed contract with prices for each stage of building, including dates of completion; prepare site for laying foundations; construction of house and finishing exterior according to architect’s drawings; etc. Electrician; Plummer; Plasterer; Interior Designer; etc.", permittedMarks: [0,3] },
+    { id: "details-1", kind: "criterion", verbatim: "Description", marks: 2, contextNote: "For the SAME selected Professional service 1, use the matching original guidance above. Architect, Surveyor, Engineer, Solicitor and Builder have full printed models. Electrician, Plummer, Plasterer and Interior Designer are printed by name only; no description model is invented for these or another valid alternative.", permittedMarks: [0,1,2] },
+    { id: "name-2", kind: "criterion", verbatim: "Name", marks: 3, contextNote: "Select Professional service 2 of 2 DIFFERENT options, keeping the SAME option throughout its criteria. Architect, Surveyor, Engineer, Solicitor and Builder have full printed models. Electrician, Plummer, Plasterer and Interior Designer are printed by name only; no description model is invented for these or another valid alternative. Complete original paired pool: Architect: provide information and advice on site-purchase, location and orientation of house; design house plans suitable for family needs; submit plans as part of planning application; advice on suitable building contractor; carry out on-site visits; supervise and advice on the construction of the house; etc. Surveyor: complete a building survey of a property; highlight any potential problems that could affect future design and building of the house; advice on how to rectify defects/problems and provide solutions; etc. Engineer: provide advice on house design and construction; check house plans to ensure they are compliant with current legislation; oversee building of the house; advice on problems that may arise during construction; etc. Solicitor: advice on legal aspect of building, buying and selling a house; advice on planning regulations; check title deeds and land registry to confirm ownership; check rights of way; etc. Builder: provide a detailed contract with prices for each stage of building, including dates of completion; prepare site for laying foundations; construction of house and finishing exterior according to architect’s drawings; etc. Electrician; Plummer; Plasterer; Interior Designer; etc.", permittedMarks: [0,3] },
+    { id: "details-2", kind: "criterion", verbatim: "Description", marks: 2, contextNote: "For the SAME selected Professional service 2, use the matching original guidance above. Architect, Surveyor, Engineer, Solicitor and Builder have full printed models. Electrician, Plummer, Plasterer and Interior Designer are printed by name only; no description model is invented for these or another valid alternative.", permittedMarks: [0,1,2] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2020-ol-sc-q1aiii-choice-1","label":"Professional service 1","marks":5,"rowIds":["name-1","details-1"]},{"sourceCardId":"he-2020-ol-sc-q1aiii-choice-2","label":"Professional service 2","marks":5,"rowIds":["name-2","details-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q1aiv", topicId: "home-economics-3-4", conceptId: "sc-q1aiv",
+    section: "C", questionRef: "2020 OL Section C E1 Q1(a)(iv)",
+    stem: "Shown below is the ground floor plan of a house.",
+    questionText: "Identify and comment on two trends currently popular in interior design.",
+    tariffModel: {"kind":"fixed","notation":"2 coherent choices each name2 + 1 details3"}, totalMarks: 10,
+    rows: [
+    { id: "name-1", kind: "criterion", verbatim: "Name", marks: 2, contextNote: "Select Interior trend 1 of 2 DIFFERENT options, keeping the SAME option throughout its criteria. Choose two distinct trends from the full original pool; current trends refer to the original 2020 context. The source prints names with no separate expanded commentary model. Complete original paired pool: Use of bold colours; neutral, monochromatic colour schemes; variety of textures; use of patterns; modular furniture; contemporary fireplaces; vintage furniture; bringing nature indoors; use of natural materials; refurbished furniture; use of wallpaper; accent lighting; low profile furniture; curved couches; etc.", permittedMarks: [0,2] },
+    { id: "details-1", kind: "criterion", verbatim: "Comment", marks: 3, contextNote: "For the SAME selected Interior trend 1, use the matching original guidance above. Choose two distinct trends from the full original pool; current trends refer to the original 2020 context. The source prints names with no separate expanded commentary model.", permittedMarks: [0,2,3] },
+    { id: "name-2", kind: "criterion", verbatim: "Name", marks: 2, contextNote: "Select Interior trend 2 of 2 DIFFERENT options, keeping the SAME option throughout its criteria. Choose two distinct trends from the full original pool; current trends refer to the original 2020 context. The source prints names with no separate expanded commentary model. Complete original paired pool: Use of bold colours; neutral, monochromatic colour schemes; variety of textures; use of patterns; modular furniture; contemporary fireplaces; vintage furniture; bringing nature indoors; use of natural materials; refurbished furniture; use of wallpaper; accent lighting; low profile furniture; curved couches; etc.", permittedMarks: [0,2] },
+    { id: "details-2", kind: "criterion", verbatim: "Comment", marks: 3, contextNote: "For the SAME selected Interior trend 2, use the matching original guidance above. Choose two distinct trends from the full original pool; current trends refer to the original 2020 context. The source prints names with no separate expanded commentary model.", permittedMarks: [0,2,3] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2020-ol-sc-q1aiv-choice-1","label":"Interior trend 1","marks":5,"rowIds":["name-1","details-1"]},{"sourceCardId":"he-2020-ol-sc-q1aiv-choice-2","label":"Interior trend 2","marks":5,"rowIds":["name-2","details-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q1bi", topicId: "home-economics-3-5", conceptId: "sc-q1bi",
+    section: "C", questionRef: "2020 OL Section C E1 Q1(b)(i)",
+    stem: "Good ventilation is very important to home comfort.",
+    questionText: "Outline the importance of good ventilation in the home.",
+    tariffModel: {"kind":"fixed","notation":"3 points; original steps [0, 2, 4]"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 12, contextNote: "Provides fresh air; removes impure, stale air; controls humidity levels; controls temperature; reduces condensation; reduces odours; prevents mould; reduces risk of infections and illness; assists combustion e.g. open fires; more comfortable atmosphere; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q1bii", topicId: "home-economics-3-5", conceptId: "sc-q1bii",
+    section: "C", questionRef: "2020 OL Section C E1 Q1(b)(ii)",
+    stem: "Good ventilation is very important to home comfort.",
+    questionText: "Name two methods of ventilation suitable for a bathroom. Explain the underlying principle of each method of ventilation named.",
+    tariffModel: {"kind":"fixed","notation":"2 coherent choices each name3 + 2 details3"}, totalMarks: 18,
+    rows: [
+    { id: "name-1", kind: "criterion", verbatim: "Name", marks: 3, contextNote: "Select Ventilation method 1 of 2 DIFFERENT options, keeping the SAME option throughout its criteria. Extractor fan and wall vents have full printed principle models. Other original method names and valid alternatives remain available, but no unprinted principle is invented. Complete original paired pool: 2 methods @ 3 marks (graded 3:2:0) Extractor fan; open doors, open windows; air bricks; window, wall vents; etc. Underlying principle: 2 points @ 3 marks (graded 3:2:0) X 2 Extractor fan: powered by electricity; switch or pull cord operated; when fan is turned on the shutters open; electric motor rotates blades at high speed; causes suction, drawing out stale moisture-laden air from the room; replaced by fresh air; etc. Wall vents: involve introducing fresh, cool air from outside; replaces stale, warm, moist air in the room; vents are placed high up on walls; adjustable to control ventilation and prevent draughts; etc. Open doors; open windows; window vents; etc.", permittedMarks: [0,2,3] },
+    { id: "details-1", kind: "criterion", verbatim: "Underlying principle", marks: 6, contextNote: "For the SAME selected Ventilation method 1, use the matching original guidance above. Extractor fan and wall vents have full printed principle models. Other original method names and valid alternatives remain available, but no unprinted principle is invented.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "name-2", kind: "criterion", verbatim: "Name", marks: 3, contextNote: "Select Ventilation method 2 of 2 DIFFERENT options, keeping the SAME option throughout its criteria. Extractor fan and wall vents have full printed principle models. Other original method names and valid alternatives remain available, but no unprinted principle is invented. Complete original paired pool: 2 methods @ 3 marks (graded 3:2:0) Extractor fan; open doors, open windows; air bricks; window, wall vents; etc. Underlying principle: 2 points @ 3 marks (graded 3:2:0) X 2 Extractor fan: powered by electricity; switch or pull cord operated; when fan is turned on the shutters open; electric motor rotates blades at high speed; causes suction, drawing out stale moisture-laden air from the room; replaced by fresh air; etc. Wall vents: involve introducing fresh, cool air from outside; replaces stale, warm, moist air in the room; vents are placed high up on walls; adjustable to control ventilation and prevent draughts; etc. Open doors; open windows; window vents; etc.", permittedMarks: [0,2,3] },
+    { id: "details-2", kind: "criterion", verbatim: "Underlying principle", marks: 6, contextNote: "For the SAME selected Ventilation method 2, use the matching original guidance above. Extractor fan and wall vents have full printed principle models. Other original method names and valid alternatives remain available, but no unprinted principle is invented.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2020-ol-sc-q1bii-choice-1","label":"Ventilation method 1","marks":9,"rowIds":["name-1","details-1"]},{"sourceCardId":"he-2020-ol-sc-q1bii-choice-2","label":"Ventilation method 2","marks":9,"rowIds":["name-2","details-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q1ci", topicId: "home-economics-3-4", conceptId: "sc-q1ci",
+    section: "C", questionRef: "2020 OL Section C E1 Q1(c)(i)",
+    stem: "There is a whole world of wall finishes to explore.",
+    questionText: "Discuss four factors to consider when selecting wall finishes for a home.",
+    tariffModel: {"kind":"fixed","notation":"4 points; original steps [0, 2, 4]"}, totalMarks: 16,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 16, contextNote: "Cost; function of the room; ease of cleaning and maintenance; room specifications; aesthetics; environmental; aspect; durability; texture; ease of application; coverage; light reflective; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q1cii", topicId: "home-economics-3-4", conceptId: "sc-q1cii",
+    section: "C", questionRef: "2020 OL Section C E1 Q1(c)(ii)",
+    stem: "There is a whole world of wall finishes to explore.",
+    questionText: "Name one wall finish suitable for a kitchen. State one advantage and one disadvantage of the wall finish named.",
+    tariffModel: {"kind":"fixed","notation":"ONE finish: name4 + advantage5 + disadvantage5"}, totalMarks: 14,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 4, contextNote: "Use ONE coherent finish profile throughout. Selected source name and types: Emulsion water-based paint: matt vinyl, silk vinyl; etc. ", permittedMarks: [0,2,4] },
+    { id: "advantage", kind: "criterion", verbatim: "Advantage", marks: 5, contextNote: "ONE advantage of the SAME finish. Advantage: easy to apply; good coverage; dries quickly; available in unlimited colours; durable; inexpensive; can mask minor imperfections on walls; etc.", permittedMarks: [0,3,5] },
+    { id: "disadvantage", kind: "criterion", verbatim: "Disadvantage", marks: 5, contextNote: "ONE disadvantage of the SAME finish. Disadvantage: not as hardwearing as oil-based paint; surface must be prepared in advance; etc.", permittedMarks: [0,3,5] },
+    ],
+    answerVariants: [
+          {
+                "id": "finish-1",
+                "label": "Emulsion water-based paint",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Use ONE coherent finish profile throughout. Selected source name and types: Emulsion water-based paint: matt vinyl, silk vinyl; etc. "
+                      },
+                      {
+                            "id": "advantage",
+                            "kind": "criterion",
+                            "verbatim": "Advantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "ONE advantage of the SAME finish. Advantage: easy to apply; good coverage; dries quickly; available in unlimited colours; durable; inexpensive; can mask minor imperfections on walls; etc."
+                      },
+                      {
+                            "id": "disadvantage",
+                            "kind": "criterion",
+                            "verbatim": "Disadvantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "ONE disadvantage of the SAME finish. Disadvantage: not as hardwearing as oil-based paint; surface must be prepared in advance; etc."
+                      }
+                ]
+          },
+          {
+                "id": "finish-2",
+                "label": "Oil-based paint",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Use ONE coherent finish profile throughout. Selected source name and types: Oil-based paint: gloss, satin finish; etc. "
+                      },
+                      {
+                            "id": "advantage",
+                            "kind": "criterion",
+                            "verbatim": "Advantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "ONE advantage of the SAME finish. Advantage: hardwearing; durable; available in a large range of colours; glossy finish; reflective finish; washable; suitable for outdoor use; can be used on wood and metal; etc."
+                      },
+                      {
+                            "id": "disadvantage",
+                            "kind": "criterion",
+                            "verbatim": "Disadvantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "ONE disadvantage of the SAME finish. Disadvantage: undercoat required; dries slowly; strong odour; highlights imperfections; etc."
+                      }
+                ]
+          },
+          {
+                "id": "finish-3",
+                "label": "Specialised paint",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Use ONE coherent finish profile throughout. Selected source name and types: Specialised paint: textured paint; flame retardant paint; etc. "
+                      },
+                      {
+                            "id": "advantage",
+                            "kind": "criterion",
+                            "verbatim": "Advantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "ONE advantage of the SAME finish. Advantage: flame retardant can be used in high-risk areas, e.g. kitchens; textured paint can cover minor imperfections on walls; etc."
+                      },
+                      {
+                            "id": "disadvantage",
+                            "kind": "criterion",
+                            "verbatim": "Disadvantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "ONE disadvantage of the SAME finish. Disadvantage: may be difficult to apply to the walls; more expensive; etc."
+                      }
+                ]
+          },
+          {
+                "id": "finish-4",
+                "label": "Wall tiles",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Use ONE coherent finish profile throughout. Selected source name and types: Wall tiles: general purpose ceramic, mosaic tiles, patterned tiles, tile panels, etc. "
+                      },
+                      {
+                            "id": "advantage",
+                            "kind": "criterion",
+                            "verbatim": "Advantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "ONE advantage of the SAME finish. Advantage: easy to clean; durable; cheap; suitable for high moisture areas; variety of shapes, sizes available; etc."
+                      },
+                      {
+                            "id": "disadvantage",
+                            "kind": "criterion",
+                            "verbatim": "Disadvantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "ONE disadvantage of the SAME finish. Disadvantage: can be expensive; specialist needed to fit and grout; etc."
+                      }
+                ]
+          },
+          {
+                "id": "finish-5",
+                "label": "Wallpaper",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Use ONE coherent finish profile throughout. Selected source name and types: Wallpaper: general purpose, vinyl, flock, embossed; etc. "
+                      },
+                      {
+                            "id": "advantage",
+                            "kind": "criterion",
+                            "verbatim": "Advantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "ONE advantage of the SAME finish. Advantage: washable; durable; can camouflage faults; vary in thickness; adds texture; can be painted over; available in different designs; can create contrast in a room; etc."
+                      },
+                      {
+                            "id": "disadvantage",
+                            "kind": "criterion",
+                            "verbatim": "Disadvantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "ONE disadvantage of the SAME finish. Disadvantage: tears easily; embossed and flock paper can be expensive; can be difficult and time consuming to hang; patterns must be matched; etc."
+                      }
+                ]
+          },
+          {
+                "id": "finish-6",
+                "label": "Wood panelling",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Use ONE coherent finish profile throughout. Selected source name and types: Wood panelling"
+                      },
+                      {
+                            "id": "advantage",
+                            "kind": "criterion",
+                            "verbatim": "Advantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "ONE advantage of the SAME finish. The source lists this finish by name only; no further advantage/disadvantage model is printed or invented."
+                      },
+                      {
+                            "id": "disadvantage",
+                            "kind": "criterion",
+                            "verbatim": "Disadvantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "ONE disadvantage of the SAME finish. The source lists this finish by name only; no further advantage/disadvantage model is printed or invented."
+                      }
+                ]
+          },
+          {
+                "id": "finish-7",
+                "label": "mosaic",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Use ONE coherent finish profile throughout. Selected source name and types: mosaic"
+                      },
+                      {
+                            "id": "advantage",
+                            "kind": "criterion",
+                            "verbatim": "Advantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "ONE advantage of the SAME finish. The source lists this finish by name only; no further advantage/disadvantage model is printed or invented."
+                      },
+                      {
+                            "id": "disadvantage",
+                            "kind": "criterion",
+                            "verbatim": "Disadvantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "ONE disadvantage of the SAME finish. The source lists this finish by name only; no further advantage/disadvantage model is printed or invented."
+                      }
+                ]
+          },
+          {
+                "id": "finish-8",
+                "label": "Another valid wall finish",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Use ONE coherent finish profile throughout. Selected source name and types: Another valid wall finish"
+                      },
+                      {
+                            "id": "advantage",
+                            "kind": "criterion",
+                            "verbatim": "Advantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "ONE advantage of the SAME finish. The paper leaves the choice open; no further model is printed or invented."
+                      },
+                      {
+                            "id": "disadvantage",
+                            "kind": "criterion",
+                            "verbatim": "Disadvantage",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "ONE disadvantage of the SAME finish. The paper leaves the choice open; no further model is printed or invented."
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q2ai", topicId: "home-economics-3-8", conceptId: "sc-q2ai",
+    section: "C", questionRef: "2020 OL Section C E2 Q2(a)(i)",
+    stem: "Children’s clothing has become as fashionable as adult clothing in recent years. (www.dunnesstores.com)",
+    questionText: "Comment on the suitability of the children’s clothing shown above. Refer to: • function • comfort • aesthetic appeal.",
+    tariffModel: {"kind":"fixed","notation":"TWO points3 for EACH function/comfort/aesthetic appeal"}, totalMarks: 18,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Function", marks: 6, contextNote: "Function: suitable for activities; durable; versatile; will maintain shape; will not crease; suited to warm and cold weather; shoes have Velcro opening making them easy to remove; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "Comfort", marks: 6, contextNote: "Comfort: allows for ease of movement in bending, stretching while maintaining shape; easy to remove jacket/sweatshirt; well-fitting flat shoes; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "Aesthetic appeal", marks: 6, contextNote: "Aesthetic appeal: variety of colours; cartoon character/appliqué motifs; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2020-ol-sc-q2-clothing",
+          "src": "/exam-figures/home-economics/home-economics-2020-ol-sc-q2-clothing.png",
+          "srcHash": "dbd9aae9bac84210cb1f2bec761404d2",
+          "alt": "Complete original children’s clothing photograph and full dunnesstores.com attribution; retained for suitability and matching fabric tasks.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Sections B/C booklet page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q2aii", topicId: "home-economics-3-7", conceptId: "sc-q2aii",
+    section: "C", questionRef: "2020 OL Section C E2 Q2(a)(ii)",
+    stem: "Children’s clothing has become as fashionable as adult clothing in recent years. (www.dunnesstores.com)",
+    questionText: "Name one fabric suitable for a child’s trousers/pants and give a reason for your choice.",
+    tariffModel: {"kind":"fixed","notation":"ONE fabric: name3 + matching reason4"}, totalMarks: 7,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 3, contextNote: "Name ONE fabric consistently throughout: Wool", permittedMarks: [0,3] },
+    { id: "reason", kind: "criterion", verbatim: "Reason", marks: 4, contextNote: "Give ONE reason matching the SAME selected fabric. Wool: warm; will not crease; hardwearing; resilient; light weight; absorbent; etc.", permittedMarks: [0,2,4] },
+    ],
+    answerVariants: [
+          {
+                "id": "fabric-1",
+                "label": "Wool",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Name ONE fabric consistently throughout: Wool"
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Give ONE reason matching the SAME selected fabric. Wool: warm; will not crease; hardwearing; resilient; light weight; absorbent; etc."
+                      }
+                ]
+          },
+          {
+                "id": "fabric-2",
+                "label": "Linen",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Name ONE fabric consistently throughout: Linen"
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Give ONE reason matching the SAME selected fabric. Linen: strong; has a good lustre; absorbent; light weight; etc."
+                      }
+                ]
+          },
+          {
+                "id": "fabric-3",
+                "label": "Cotton",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Name ONE fabric consistently throughout: Cotton"
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Give ONE reason matching the SAME selected fabric. Cotton: strong; washes and dries easily; dyes well; cool; absorbent; easy to launder; etc."
+                      }
+                ]
+          },
+          {
+                "id": "fabric-4",
+                "label": "Polyester",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Name ONE fabric consistently throughout: Polyester"
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Give ONE reason matching the SAME selected fabric. Polyester: strong; resistant to stretching; quick drying; washes easily; holds body heat; resists creasing; etc."
+                      }
+                ]
+          },
+          {
+                "id": "fabric-5",
+                "label": "Viscose/rayon",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Name ONE fabric consistently throughout: Viscose/rayon"
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Give ONE reason matching the SAME selected fabric. Viscose/rayon: absorbent; soft; drapes well; conducts heat away from the body of wearer; dyes easily; etc."
+                      }
+                ]
+          },
+          {
+                "id": "fabric-6",
+                "label": "Acrylic",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Name ONE fabric consistently throughout: Acrylic"
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Give ONE reason matching the SAME selected fabric. Acrylic: light weight; soft; warm; stretchy; quick drying; etc."
+                      }
+                ]
+          },
+          {
+                "id": "fabric-7",
+                "label": "Polyester cotton",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Name ONE fabric consistently throughout: Polyester cotton"
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Give ONE reason matching the SAME selected fabric. Polyester cotton: washes easily; light weight; easy to iron; strong; drip dries quickly; resists staining; comfortable; low static level; etc."
+                      }
+                ]
+          },
+          {
+                "id": "other-fabric",
+                "label": "Another valid fabric",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Name ONE suitable fabric."
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Give ONE matching reason; no additional model is printed or invented."
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2020-ol-sc-q2-clothing",
+          "src": "/exam-figures/home-economics/home-economics-2020-ol-sc-q2-clothing.png",
+          "srcHash": "dbd9aae9bac84210cb1f2bec761404d2",
+          "alt": "Complete original children’s clothing photograph and full dunnesstores.com attribution; retained for suitability and matching fabric tasks.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper, Sections B/C booklet page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q2bi", topicId: "home-economics-3-8", conceptId: "sc-q2bi",
+    section: "C", questionRef: "2020 OL Section C E2 Q2(b)(i)",
+    stem: "Bloggers, influencers and YouTube sensations are some of the modern world’s trendsetters.",
+    questionText: "Explain how trendsetters influence the choice of clothing worn by young adults.",
+    tariffModel: {"kind":"fixed","notation":"3 points; original steps [0, 2, 3]"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 9, contextNote: "Young people want to wear what trendsetters are wearing; trendsetters/sports celebrities set up their own clothing ranges; trendsetters are photographed wearing clothes by specific designers at media events; T.V. programmes feature makeovers; sponsorship deals that celebrities have with clothing companies; television programmes show confidence about clothing; social media e.g. Snapchat, Instagram; newspapers have fashion features; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q2bii", topicId: "home-economics-3-7", conceptId: "sc-q2bii",
+    section: "C", questionRef: "2020 OL Section C E2 Q2(b)(ii)",
+    stem: "Bloggers, influencers and YouTube sensations are some of the modern world’s trendsetters.",
+    questionText: "Name and describe one method of colour application suitable for natural fabrics.",
+    tariffModel: {"kind":"fixed","notation":"ONE method name2 + TWO description points2"}, totalMarks: 6,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 2, contextNote: "Name ONE method consistently throughout: Dyeing", permittedMarks: [0,2] },
+    { id: "description", kind: "criterion", verbatim: "Description", marks: 4, contextNote: "TWO description points for the SAME method. Dyeing: may be applied by soaking in vat of dye or by placing in washing machine with the dye included; etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "colour-1",
+                "label": "Dyeing",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name ONE method consistently throughout: Dyeing"
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "TWO description points for the SAME method. Dyeing: may be applied by soaking in vat of dye or by placing in washing machine with the dye included; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "colour-2",
+                "label": "Tie-dyeing",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name ONE method consistently throughout: Tie-dyeing"
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "TWO description points for the SAME method. Tie-dyeing: sewing or tying pieces of fabric together tightly and preventing the dye from entering the crevices formed; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "colour-3",
+                "label": "Fabric painting",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name ONE method consistently throughout: Fabric painting"
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "TWO description points for the SAME method. The source accepts this method by name only; no detailed model is printed or invented.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "colour-4",
+                "label": "Batik",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name ONE method consistently throughout: Batik"
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "TWO description points for the SAME method. The source accepts this method by name only; no detailed model is printed or invented.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "colour-5",
+                "label": "screen printing",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name ONE method consistently throughout: screen printing"
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "TWO description points for the SAME method. The source accepts this method by name only; no detailed model is printed or invented.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "colour-6",
+                "label": "Another valid colour-application method",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name ONE method consistently throughout: Another valid colour-application method"
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "TWO description points for the SAME method. The choice remains open to valid alternatives; no further model is printed or invented.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q2ci", topicId: "home-economics-3-8", conceptId: "sc-q2ci",
+    section: "C", questionRef: "2020 OL Section C E2 Q2(c)(i)",
+    stem: "The Irish fashion industry is hugely exciting with lots of emerging talent.",
+    questionText: "Discuss the role of small businesses in the clothing and textile industry in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"3 points; original steps [0, 2, 3]"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 9, contextNote: "Provides employment; work can be subcontracted to locals to do at home i.e. Aran knitting; etc. skilled or unskilled work available; promotes Irish traditional crafts; encourages the survival of traditional crafts; encouraged by Government incentives; businesses can be set up without a large capital outlay; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q2cii", topicId: "home-economics-3-8", conceptId: "sc-q2cii",
+    section: "C", questionRef: "2020 OL Section C E2 Q2(c)(ii)",
+    stem: "The Irish fashion industry is hugely exciting with lots of emerging talent.",
+    questionText: "Give details of one career opportunity in the fashion industry.",
+    tariffModel: {"kind":"fixed","notation":"2 points; original steps [0, 2, 3]"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 6, contextNote: "Give TWO details of ONE selected career. The source prints career names but no expanded detail model or fixed name/detail allocation; none is invented. Complete original name pool: Fashion designer; milliner; tailor; machinist; model; photographer; stylist; clothing fashion writer; manufacturer; fashion buyer; retail sales assistant; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q3ai", topicId: "home-economics-3-9", conceptId: "sc-q3ai",
+    section: "C", questionRef: "2020 OL Section C E3 Q3(a)(i)",
+    stem: "A strong work ethic is an important part of being successful in a person’s career.",
+    questionText: "Define work and work ethic.",
+    tariffModel: {"kind":"fixed","notation":"Required work3 + work ethic3"}, totalMarks: 6,
+    rows: [
+    { id: "term-1", kind: "criterion", verbatim: "Work", marks: 3, contextNote: "Work: physical, mental effort, or activity directed towards the production or accomplishment of something; paid employment; a duty, a task or undertaking; work can be paid, unpaid, voluntary; etc.", permittedMarks: [0,2,3] },
+    { id: "term-2", kind: "criterion", verbatim: "Work ethic", marks: 3, contextNote: "Work ethic: person’s attitude of determination and dedication towards work; attitude to punctuality; organisational skills; loyalty; respect; teamwork; absenteeism; developed in the home and school; etc.", permittedMarks: [0,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q3aii", topicId: "home-economics-3-9", conceptId: "sc-q3aii",
+    section: "C", questionRef: "2020 OL Section C E3 Q3(a)(ii)",
+    stem: "A strong work ethic is an important part of being successful in a person’s career.",
+    questionText: "Discuss four factors that influence a person’s attitude to work.",
+    tariffModel: {"kind":"fixed","notation":"4 points; original steps [0, 3, 5]"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 20, contextNote: "Home background; work ethic shown by parents; social economic group; level of education; intrinsic job satisfaction; extrinsic job satisfaction; self-esteem; working conditions; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q3aiii", topicId: "home-economics-3-11", conceptId: "sc-q3aiii",
+    section: "C", questionRef: "2020 OL Section C E3 Q3(a)(iii)",
+    stem: "A strong work ethic is an important part of being successful in a person’s career.",
+    questionText: "Outline the benefits of voluntary work to the volunteer and to the community.",
+    tariffModel: {"kind":"fixed","notation":"ONE volunteer4 + ONE community4 + TWO other4"}, totalMarks: 16,
+    rows: [
+    { id: "volunteer", kind: "criterion", verbatim: "Volunteer", marks: 4, contextNote: "Volunteer: feeling fulfilled, a sense of purpose; rewarding; builds self-confidence; aids personal development; sense of achievement; self-esteem; personal satisfaction; occupies free time; build friendships; develops empathy; etc.", permittedMarks: [0,2,4] },
+    { id: "community", kind: "criterion", verbatim: "Community", marks: 4, contextNote: "Community: reduces reliance on state resources; can provide a quick service e.g. care of the elderly; friendships and bonds can be formed; creates a sense of community spirit; provides new skills in an area; complements work carried out by statutory bodies; provides an unfunded service; offers a more personal local service; attention focused on local/social issues; etc.", permittedMarks: [0,2,4] },
+    { id: "other", kind: "criterion", verbatim: "2 points", marks: 8, contextNote: "TWO additional distinct benefits from either required category; no repeated credit. Volunteer: feeling fulfilled, a sense of purpose; rewarding; builds self-confidence; aids personal development; sense of achievement; self-esteem; personal satisfaction; occupies free time; build friendships; develops empathy; etc. Community: reduces reliance on state resources; can provide a quick service e.g. care of the elderly; friendships and bonds can be formed; creates a sense of community spirit; provides new skills in an area; complements work carried out by statutory bodies; provides an unfunded service; offers a more personal local service; attention focused on local/social issues; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q3aiv", topicId: "home-economics-3-9", conceptId: "sc-q3aiv",
+    section: "C", questionRef: "2020 OL Section C E3 Q3(a)(iv)",
+    stem: "A strong work ethic is an important part of being successful in a person’s career.",
+    questionText: "Name and give details of one support provided by voluntary organisations to individuals and families in need.",
+    tariffModel: {"kind":"fixed","notation":"ONE support name2 + TWO matching details3"}, totalMarks: 8,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 2, contextNote: "Choose ONE support consistently throughout. Complete original paired pool: Financial: hampers; scholarships; crèches; breakfast clubs; etc. Housing: emergency accommodation; shelter; homes; etc. Advisory: counsellors; street outreach services; training projects; etc. Material: clothes shops; family holidays; good as new shops; etc. Emotional support; social support; etc.", permittedMarks: [0,2] },
+    { id: "details", kind: "criterion", verbatim: "Details", marks: 6, contextNote: "TWO details of the SAME support. Financial/housing/advisory/material have original examples; emotional/social support are named with no further model printed or invented. Financial: hampers; scholarships; crèches; breakfast clubs; etc. Housing: emergency accommodation; shelter; homes; etc. Advisory: counsellors; street outreach services; training projects; etc. Material: clothes shops; family holidays; good as new shops; etc. Emotional support; social support; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q3bi", topicId: "home-economics-3-11", conceptId: "sc-q3bi",
+    section: "C", questionRef: "2020 OL Section C E3 Q3(b)(i)",
+    stem: "‘Childminding is of huge importance to children, to parents, to our economy and to our society.’ (www.irishtimes.com)",
+    questionText: "Discuss four factors parents should consider when choosing suitable childcare for their children.",
+    tariffModel: {"kind":"fixed","notation":"4 points; original steps [0, 2, 4]"}, totalMarks: 16,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 16, contextNote: "Environment - safe, hygienic; good heating, ventilation; sufficient light; personal references; qualifications and experience; proximity to home/work; age/needs of child; cost; special needs children; first aid training; opening/closing hours; after school care requirements; reliability; flexibility/school holidays; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q3bii", topicId: "home-economics-3-11", conceptId: "sc-q3bii",
+    section: "C", questionRef: "2020 OL Section C E3 Q3(b)(ii)",
+    stem: "‘Childminding is of huge importance to children, to parents, to our economy and to our society.’ (www.irishtimes.com)",
+    questionText: "Identify and describe two childcare options available to a family with young children.",
+    tariffModel: {"kind":"fixed","notation":"2 coherent choices each name3 + 1 details4"}, totalMarks: 14,
+    rows: [
+    { id: "name-1", kind: "criterion", verbatim: "Name", marks: 3, contextNote: "Select Childcare option 1 of 2 DIFFERENT options, keeping the SAME option throughout its criteria. Choose TWO DIFFERENT options from the complete original pool; named suboptions remain within their full original profiles, and valid alternatives remain open. Complete original paired pool: Full day care: structured care service for more than 5 hours per day; may include after school facility; sleeping arrangements and food preparation available; must meet standards laid down by Tusla; providers include day nurseries and Crèches; etc. Sessional services: offer a planned programme up to 3.5 hours per session; staff need to have recognised childcare qualification; Montessori groups focused on individualised education; Naíonraí nursery schools and playschools operating through Irish; Play schools give children an opportunity to play with other children of similar age; Early Start Programme: one-year preventative intervention scheme; offered in selected schools in disadvantaged areas to 3 to 4 year old children; etc. Childminder: children cared for in childminder’s own home; childminder can care for up to 5 children under 6 years of age; offered for full working day or for different periods during the day; parents and childminders arrange their own terms and conditions; etc. Parent and toddler groups: group of parents, guardians or carers and children come together for supervised play and companionship for their parents; etc. School-age childcare: breakfast clubs; summer camps; homework club; etc.", permittedMarks: [0,2,3] },
+    { id: "details-1", kind: "criterion", verbatim: "Description", marks: 4, contextNote: "For the SAME selected Childcare option 1, use the matching original guidance above. Choose TWO DIFFERENT options from the complete original pool; named suboptions remain within their full original profiles, and valid alternatives remain open.", permittedMarks: [0,2,4] },
+    { id: "name-2", kind: "criterion", verbatim: "Name", marks: 3, contextNote: "Select Childcare option 2 of 2 DIFFERENT options, keeping the SAME option throughout its criteria. Choose TWO DIFFERENT options from the complete original pool; named suboptions remain within their full original profiles, and valid alternatives remain open. Complete original paired pool: Full day care: structured care service for more than 5 hours per day; may include after school facility; sleeping arrangements and food preparation available; must meet standards laid down by Tusla; providers include day nurseries and Crèches; etc. Sessional services: offer a planned programme up to 3.5 hours per session; staff need to have recognised childcare qualification; Montessori groups focused on individualised education; Naíonraí nursery schools and playschools operating through Irish; Play schools give children an opportunity to play with other children of similar age; Early Start Programme: one-year preventative intervention scheme; offered in selected schools in disadvantaged areas to 3 to 4 year old children; etc. Childminder: children cared for in childminder’s own home; childminder can care for up to 5 children under 6 years of age; offered for full working day or for different periods during the day; parents and childminders arrange their own terms and conditions; etc. Parent and toddler groups: group of parents, guardians or carers and children come together for supervised play and companionship for their parents; etc. School-age childcare: breakfast clubs; summer camps; homework club; etc.", permittedMarks: [0,2,3] },
+    { id: "details-2", kind: "criterion", verbatim: "Description", marks: 4, contextNote: "For the SAME selected Childcare option 2, use the matching original guidance above. Choose TWO DIFFERENT options from the complete original pool; named suboptions remain within their full original profiles, and valid alternatives remain open.", permittedMarks: [0,2,4] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2020-ol-sc-q3bii-choice-1","label":"Childcare option 1","marks":7,"rowIds":["name-1","details-1"]},{"sourceCardId":"he-2020-ol-sc-q3bii-choice-2","label":"Childcare option 2","marks":7,"rowIds":["name-2","details-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q3ci", topicId: "home-economics-3-11", conceptId: "sc-q3ci",
+    section: "C", questionRef: "2020 OL Section C E3 Q3(c)(i)",
+    stem: "Irish society is changing rapidly and these changes are having a significant impact on the family.",
+    questionText: "Outline the impact (effect) of each of the following on family life: • reduction in working hours • improved conditions of work • improvements in the provision of education.",
+    tariffModel: {"kind":"fixed","notation":"TWO points3 for EACH of three required changes; original continuation retained"}, totalMarks: 18,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Reduction in working hours", marks: 6, contextNote: "Change of lifestyle; more time to spend with families; parents can collect children from school, more leisure time; less disposable income for family; uncertainty regarding future; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "Improved conditions of work", marks: 6, contextNote: "Shorter working hours; improved pay rates; improved heating, lighting, ventilation, ergonomics; work breaks; canteen facilities; crèches; defined holidays; sick leave; parental leave; paternity leave; adoptive leave; sick leave and sick pay; carer’s leave; job sharing; flexitime; safe working environment; increased annual leave; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "Improvements in the provision of education", marks: 6, contextNote: "Pre-school; playgroups; play schools; Early Childhood Care and Education Scheme (ECCE), Early Start School-Programme, Gaelscoileanna; Educate Together Primary and Secondary Schools; educational supports - iPad, computers; school book grant scheme; Home School Community Liaison Scheme (HSCL); Transition Year; Leaving Certificate Applied Programme (LCA); Leaving Certificate Vocational Programme(LCVP); Junior Certificate Schools Programme (JCSP); special needs assistants; resource teachers; special schools; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2020 Ordinary Level — © State Examinations Commission.",
+    id: "he-2020-ol-sc-q3cii", topicId: "home-economics-3-9", conceptId: "sc-q3cii",
+    section: "C", questionRef: "2020 OL Section C E3 Q3(c)(ii)",
+    stem: "Irish society is changing rapidly and these changes are having a significant impact on the family.",
+    questionText: "Explain how the Working Family Payment (Family Income Supplement) provides support to families.",
+    tariffModel: {"kind":"fixed","notation":"3 points; original steps [0, 2, 4]"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "points", marks: 12, contextNote: "Historical 2020 source wording: Weekly tax-free payment available to employees with children; gives financial support to families on low pay with children; helps with day to day living expenses; helps to reduce financial stress in families; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];

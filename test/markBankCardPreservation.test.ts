@@ -1329,6 +1329,27 @@ const homeEconomicsAdditionIds = new Set([
   'he-2020-hl-sc-q3aii', 'he-2020-hl-sc-q3aiii', 'he-2020-hl-sc-q3bi',
   'he-2020-hl-sc-q3bii', 'he-2020-hl-sc-q3biii', 'he-2020-hl-sc-q3ci',
   'he-2020-hl-sc-q3cii',
+
+  // 2020 Ordinary: 55 original leaves, 56 separately priced tasks.
+  'he-2020-ol-sa-q1', 'he-2020-ol-sa-q2', 'he-2020-ol-sa-q3',
+  'he-2020-ol-sa-q4', 'he-2020-ol-sa-q5', 'he-2020-ol-sa-q6-definition',
+  'he-2020-ol-sa-q6-additives', 'he-2020-ol-sa-q7', 'he-2020-ol-sa-q8-foods',
+  'he-2020-ol-sa-q8-careers', 'he-2020-ol-sa-q9', 'he-2020-ol-sa-q10-advantages',
+  'he-2020-ol-sa-q10-payment', 'he-2020-ol-sa-q11', 'he-2020-ol-sa-q12',
+  'he-2020-ol-sb-q1ai', 'he-2020-ol-sb-q1aii', 'he-2020-ol-sb-q1b',
+  'he-2020-ol-sb-q1c', 'he-2020-ol-sb-q1d', 'he-2020-ol-sb-q2ai',
+  'he-2020-ol-sb-q2aii', 'he-2020-ol-sb-q2b', 'he-2020-ol-sb-q2c',
+  'he-2020-ol-sb-q3a', 'he-2020-ol-sb-q3b', 'he-2020-ol-sb-q3c',
+  'he-2020-ol-sb-q4a', 'he-2020-ol-sb-q4b', 'he-2020-ol-sb-q4c',
+  'he-2020-ol-sb-q5ai', 'he-2020-ol-sb-q5aii', 'he-2020-ol-sb-q5b',
+  'he-2020-ol-sb-q5c', 'he-2020-ol-sc-q1ai', 'he-2020-ol-sc-q1aii',
+  'he-2020-ol-sc-q1aiii', 'he-2020-ol-sc-q1aiv', 'he-2020-ol-sc-q1bi',
+  'he-2020-ol-sc-q1bii', 'he-2020-ol-sc-q1ci', 'he-2020-ol-sc-q1cii',
+  'he-2020-ol-sc-q2ai', 'he-2020-ol-sc-q2aii', 'he-2020-ol-sc-q2bi',
+  'he-2020-ol-sc-q2bii', 'he-2020-ol-sc-q2ci', 'he-2020-ol-sc-q2cii',
+  'he-2020-ol-sc-q3ai', 'he-2020-ol-sc-q3aii', 'he-2020-ol-sc-q3aiii',
+  'he-2020-ol-sc-q3aiv', 'he-2020-ol-sc-q3bi', 'he-2020-ol-sc-q3bii',
+  'he-2020-ol-sc-q3ci', 'he-2020-ol-sc-q3cii',
   // 2019 Higher: 51 independently source-reviewed additions; all prior cards remain frozen.
   'he-2019-hl-sa-q1', 'he-2019-hl-sa-q2', 'he-2019-hl-sa-q3',
   'he-2019-hl-sa-q4', 'he-2019-hl-sa-q5', 'he-2019-hl-sa-q6',
@@ -1868,7 +1889,7 @@ describe('Mark Bank card preservation', () => {
     const added = [...HOME_EC_HIGHER, ...HOME_EC_ORDINARY].filter(card => homeEconomicsAdditionIds.has(card.id));
     expect(added.map(card => card.id).sort()).toEqual([...homeEconomicsAdditionIds].sort());
     expect(HOME_EC_HIGHER).toHaveLength(1026);
-    expect(HOME_EC_ORDINARY).toHaveLength(871);
+    expect(HOME_EC_ORDINARY).toHaveLength(927);
   });
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
     const frozen = frozenIds(name, cards);

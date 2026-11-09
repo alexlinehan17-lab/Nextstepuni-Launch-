@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-01",
+  "checkedAt": "2026-11-09T22:49:49.248500+00:00",
   "authority": "State Examinations Commission",
   "archiveUrl": "https://www.examinations.ie/exammaterialarchive/index.php",
   "offeredYears": {
@@ -21,7 +21,7 @@
     {
       "view": "deferredexams",
       "year": 2025,
-      "subjectListSha256": "e3799ebe616e9c1a094dacc8b8297ac0f5afea3647796deb5526abca2b213242",
+      "subjectListSha256": "00af6fd883b83ce2128c46abc6847bd7aa6f1daba4520ed16e27b90151c2f674",
       "homeEconomicsSubjects": [],
       "subjectIds": [
         "25",
@@ -34,7 +34,7 @@
     {
       "view": "deferredexams",
       "year": 2024,
-      "subjectListSha256": "af0c23065b5ac85c4cc35c379c1c7af9bd3bb14d22007c4ded487c19dd0adac9",
+      "subjectListSha256": "fbbf53af180b49f07e604e1f8183780b57ca8bd2babec819bf31315460884812",
       "homeEconomicsSubjects": [],
       "subjectIds": [
         "25",
@@ -47,65 +47,91 @@
     {
       "view": "deferredexams",
       "year": 2023,
-      "subjectListSha256": "4ce972a1e9fdbd4c27cd6f8fbe8622c9745892fe7bdf9dcbcec3ebf080430e2e",
+      "subjectListSha256": "3baebdfbba626396e151df438f564c2adac01b525ebe5384064b2e3b595f62ef",
       "homeEconomicsSubjects": [
         [
           "98",
           "Home Economics S & S"
         ]
       ],
-      "files": [
-        [
-          "LC098ALP014EV.pdf",
-          "Section A / Higher Level (EV)",
-          ""
-        ],
-        [
-          "LC098ALP014IV.pdf",
-          "Section A / Higher Level (IV)",
-          ""
-        ],
-        [
-          "LC098ALP039EV.pdf",
-          "Section B&C / Higher Level (EV)",
-          ""
-        ],
-        [
-          "LC098ALP039IV.pdf",
-          "Section B&C / Higher Level (IV)",
-          ""
-        ]
+      "subjectIds": [
+        "32",
+        "24",
+        "20",
+        "14",
+        "25",
+        "33",
+        "22",
+        "562",
+        "27",
+        "2",
+        "10",
+        "5",
+        "4",
+        "98",
+        "1",
+        "6",
+        "462",
+        "3",
+        "67",
+        "225",
+        "21"
       ],
-      "listingSha256": "2ef367580bec3e1891f9b9c63e60d50eaa4e37ff6b4bb31537f00d376894008d"
+      "listingSha256": "dc2a706ea4db9fc6875dbc0021dcd0ff9395a0222893aefbc10864781f449b1c",
+      "files": [
+        "LC098ALP014EV.pdf",
+        "LC098ALP014IV.pdf",
+        "LC098ALP039EV.pdf",
+        "LC098ALP039IV.pdf"
+      ]
     },
     {
       "view": "deferredexams",
       "year": 2022,
-      "subjectListSha256": "4308a255b853794c8367f3a76ec41d55921a34fe3aff5614533674858e9db161",
+      "subjectListSha256": "14c83f5807510aca2ccf7fe81bba0e37f364044fa4d15be70269aa86fe1e41bf",
       "homeEconomicsSubjects": [
         [
           "98",
           "Home Economics S & S"
         ]
       ],
-      "files": [
-        [
-          "LC098ALP014EV.pdf",
-          "Section A / Higher Level (EV)",
-          ""
-        ],
-        [
-          "LC098ALP039EV.pdf",
-          "Section B&C / Higher Level (EV)",
-          ""
-        ]
+      "subjectIds": [
+        "32",
+        "20",
+        "14",
+        "25",
+        "33",
+        "22",
+        "29",
+        "562",
+        "34",
+        "27",
+        "2",
+        "10",
+        "5",
+        "11",
+        "4",
+        "98",
+        "1",
+        "462",
+        "3",
+        "67",
+        "225",
+        "21",
+        "23",
+        "568",
+        "12"
       ],
-      "listingSha256": "7251ce11e34d590ce927070d9b895088101f2f9a4f7f4cfc06ec390304012924"
+      "listingSha256": "ca924d914f12af924c98e719eb8551a71c69504c68e28b39a441d19f29c2b8d6",
+      "files": [
+        "LC098ALP014EV.pdf",
+        "LC098ALP039EV.pdf"
+      ]
     },
     {
       "view": "deferredmarkingschemes",
       "year": 2025,
-      "subjectListSha256": "2126718797e0f1e150c46157386064db2fabe0be6351f95e46c0cba148fa71a5",
+      "subjectListSha256": "58bb7f63c8d7fb7009f9e8280957d4dce6c205f61864dae079170d0ca39603a7",
       "homeEconomicsSubjects": [],
       "subjectIds": [
         "25",
@@ -118,7 +144,7 @@
     {
       "view": "deferredmarkingschemes",
       "year": 2024,
-      "subjectListSha256": "6a5d1c40ddcd905b2bcdcc8638c2cfd249e5eee36e53c62afe84a078f2425b9d",
+      "subjectListSha256": "b8eaf9f84d7d9401ea8d7bde2435ce32a29377ffa61d482769807279c9fcd5f9",
       "homeEconomicsSubjects": [],
       "subjectIds": [
         "25",
@@ -131,40 +157,81 @@
     {
       "view": "deferredmarkingschemes",
       "year": 2023,
-      "subjectListSha256": "9ac56a71d20e75bb7c94af0099b7102fca724dcb9e0d4a6678ad6923ef214ba8",
+      "subjectListSha256": "4f16951e985ad255b2b433bd902dd1169f82ded159e084c9dd62645c5496efbd",
       "homeEconomicsSubjects": [
         [
           "98",
           "Home Economics S & S"
         ]
       ],
-      "files": [
-        [
-          "LC098ALP000EV.pdf",
-          "Higher Level (EV)",
-          ""
-        ]
+      "subjectIds": [
+        "32",
+        "24",
+        "20",
+        "14",
+        "25",
+        "33",
+        "22",
+        "562",
+        "27",
+        "2",
+        "10",
+        "5",
+        "4",
+        "98",
+        "1",
+        "462",
+        "3",
+        "67",
+        "225",
+        "21"
       ],
-      "listingSha256": "bef0399e6729c4c1cd5d221b9ea873d42d355ef33e67fa0fd842bf599acf455e"
+      "listingSha256": "d1ce73bcc662a4ec1fb641c9c132701cc5fa334560f1ceb07bea0930d7f46cbf",
+      "files": [
+        "LC098ALP000EV.pdf"
+      ]
     },
     {
       "view": "deferredmarkingschemes",
       "year": 2022,
-      "subjectListSha256": "86348941ce136849d0c7ab3cf2248f62549e5d986084e35f63beb7f558335823",
+      "subjectListSha256": "17c590045fee0ea57d7496db938a3a7fa69ae5f36aa264e35bff412a424b0e4c",
       "homeEconomicsSubjects": [
         [
           "98",
           "Home Economics S & S"
         ]
       ],
-      "files": [
-        [
-          "LC098ALP000EV.pdf",
-          "Higher Level (EV)",
-          ""
-        ]
+      "subjectIds": [
+        "32",
+        "20",
+        "14",
+        "25",
+        "33",
+        "22",
+        "29",
+        "562",
+        "34",
+        "27",
+        "2",
+        "10",
+        "5",
+        "11",
+        "4",
+        "98",
+        "1",
+        "462",
+        "3",
+        "67",
+        "225",
+        "21",
+        "23",
+        "568",
+        "12"
       ],
-      "listingSha256": "fd6e745ac28ab8bb75b9fab724b33788dbef8dbe9bc5f656b4234eab6974e30e"
+      "listingSha256": "5f7ca858a27f51139c70acae6df627a38fe2eb0840e67b97146244943dd30bdd",
+      "files": [
+        "LC098ALP000EV.pdf"
+      ]
     }
   ],
   "scope": "English editions only; Irish editions deferred at user instruction.",
@@ -192,7 +259,7 @@
           "sha256": "8e9ff528232a53b0c03cd41d2a4f4a44fbcd294c0c2c3932182ae9a93e818e8f"
         }
       },
-      "visualReview": "pending"
+      "visualReview": "2022-hl-deferred-review.json"
     },
     {
       "year": 2023,
@@ -218,5 +285,160 @@
       },
       "visualReview": "2023-hl-deferred-review.json"
     }
-  ]
+  ],
+  "priorListingCheck": {
+    "checkedAt": "2026-11-01",
+    "listings": [
+      {
+        "view": "deferredexams",
+        "year": 2025,
+        "subjectListSha256": "e3799ebe616e9c1a094dacc8b8297ac0f5afea3647796deb5526abca2b213242",
+        "homeEconomicsSubjects": [],
+        "subjectIds": [
+          "25",
+          "2",
+          "5",
+          "1",
+          "3"
+        ]
+      },
+      {
+        "view": "deferredexams",
+        "year": 2024,
+        "subjectListSha256": "af0c23065b5ac85c4cc35c379c1c7af9bd3bb14d22007c4ded487c19dd0adac9",
+        "homeEconomicsSubjects": [],
+        "subjectIds": [
+          "25",
+          "2",
+          "5",
+          "1",
+          "3"
+        ]
+      },
+      {
+        "view": "deferredexams",
+        "year": 2023,
+        "subjectListSha256": "4ce972a1e9fdbd4c27cd6f8fbe8622c9745892fe7bdf9dcbcec3ebf080430e2e",
+        "homeEconomicsSubjects": [
+          [
+            "98",
+            "Home Economics S & S"
+          ]
+        ],
+        "files": [
+          [
+            "LC098ALP014EV.pdf",
+            "Section A / Higher Level (EV)",
+            ""
+          ],
+          [
+            "LC098ALP014IV.pdf",
+            "Section A / Higher Level (IV)",
+            ""
+          ],
+          [
+            "LC098ALP039EV.pdf",
+            "Section B&C / Higher Level (EV)",
+            ""
+          ],
+          [
+            "LC098ALP039IV.pdf",
+            "Section B&C / Higher Level (IV)",
+            ""
+          ]
+        ],
+        "listingSha256": "2ef367580bec3e1891f9b9c63e60d50eaa4e37ff6b4bb31537f00d376894008d"
+      },
+      {
+        "view": "deferredexams",
+        "year": 2022,
+        "subjectListSha256": "4308a255b853794c8367f3a76ec41d55921a34fe3aff5614533674858e9db161",
+        "homeEconomicsSubjects": [
+          [
+            "98",
+            "Home Economics S & S"
+          ]
+        ],
+        "files": [
+          [
+            "LC098ALP014EV.pdf",
+            "Section A / Higher Level (EV)",
+            ""
+          ],
+          [
+            "LC098ALP039EV.pdf",
+            "Section B&C / Higher Level (EV)",
+            ""
+          ]
+        ],
+        "listingSha256": "7251ce11e34d590ce927070d9b895088101f2f9a4f7f4cfc06ec390304012924"
+      },
+      {
+        "view": "deferredmarkingschemes",
+        "year": 2025,
+        "subjectListSha256": "2126718797e0f1e150c46157386064db2fabe0be6351f95e46c0cba148fa71a5",
+        "homeEconomicsSubjects": [],
+        "subjectIds": [
+          "25",
+          "2",
+          "5",
+          "1",
+          "3"
+        ]
+      },
+      {
+        "view": "deferredmarkingschemes",
+        "year": 2024,
+        "subjectListSha256": "6a5d1c40ddcd905b2bcdcc8638c2cfd249e5eee36e53c62afe84a078f2425b9d",
+        "homeEconomicsSubjects": [],
+        "subjectIds": [
+          "25",
+          "2",
+          "5",
+          "1",
+          "3"
+        ]
+      },
+      {
+        "view": "deferredmarkingschemes",
+        "year": 2023,
+        "subjectListSha256": "9ac56a71d20e75bb7c94af0099b7102fca724dcb9e0d4a6678ad6923ef214ba8",
+        "homeEconomicsSubjects": [
+          [
+            "98",
+            "Home Economics S & S"
+          ]
+        ],
+        "files": [
+          [
+            "LC098ALP000EV.pdf",
+            "Higher Level (EV)",
+            ""
+          ]
+        ],
+        "listingSha256": "bef0399e6729c4c1cd5d221b9ea873d42d355ef33e67fa0fd842bf599acf455e"
+      },
+      {
+        "view": "deferredmarkingschemes",
+        "year": 2022,
+        "subjectListSha256": "86348941ce136849d0c7ab3cf2248f62549e5d986084e35f63beb7f558335823",
+        "homeEconomicsSubjects": [
+          [
+            "98",
+            "Home Economics S & S"
+          ]
+        ],
+        "files": [
+          [
+            "LC098ALP000EV.pdf",
+            "Higher Level (EV)",
+            ""
+          ]
+        ],
+        "listingSha256": "fd6e745ac28ab8bb75b9fab724b33788dbef8dbe9bc5f656b4234eab6974e30e"
+      }
+    ]
+  },
+  "publicationFinding": "Both deferred archive views currently offer 2022-2025 only. No Home Economics is listed for 2024/2025; 2026 is not an offered year. The 2022 and 2023 English Higher paper/scheme sets are reviewed. No Ordinary deferred set is listed. This is a publication finding, not a claim that no other examination was sat.",
+  "responseEvidence": "Original HTML responses retained locally under tmp/pdfs/home-economics-review/deferred-inventory-20261109; response SHA-256 values recorded in listings. Dynamic archive session content can change response bytes; file identities and subject listings are the comparison evidence."
 }

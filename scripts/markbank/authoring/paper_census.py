@@ -1432,6 +1432,9 @@ def census_sections(subject, year, level, files=None):
                 # B1(a) and B1(c). B1(a)'s two source leaves share one flexible
                 # 24-mark tariff; the independent census keeps both leaves.
                 block = re.sub(r'\s+(?=\((?:i|ii)\)\s+(?:the provision|the nutritional significance|what is osteoporosis|the main factors))', '\n', block)
+            # Original 2020 Ordinary B/C booklet p3 B3(a) prints two inline
+            # lowercase roman asks (nutritive and dietetic value). Its shared
+            # flexible tariff is one authored task but both source leaves stay.
             # Business short questions can share a PDF block with the previous
             # question's underscore answer rules. Those rules have no sentence
             # punctuation, so the ordinary inline-head splitter misses Q2/Q3
@@ -1443,7 +1446,8 @@ def census_sections(subject, year, level, files=None):
                               r'|\s+(?=\d{1,2}\.\s+\([a-z]\)\s+[A-Z])'
                               r'|(?<=\d)\s+(?=\d{1,2}\.\s+[A-Z][a-z]+\s)', block)
                       if subject == 'business' else block.split('\n')
-                      if subject == 'home-economics' and ((year in (2010, 2011, 2012) and level in ('hl', 'ol')) or (year == 2013 and level in ('hl', 'ol')) or (year == 2014 and level in ('hl', 'ol')) or (year == 2015 and level in ('hl', 'ol')) or (year == 2016 and level in ('hl', 'ol')) or (year == 2017 and level in ('hl', 'ol')) or (year == 2018 and level in ('hl', 'ol')) or (year == 2019 and level in ('hl', 'ol'))) else [block])
+                      if subject == 'home-economics' and ((year in (2010, 2011, 2012) and level in ('hl', 'ol')) or (year == 2013 and level in ('hl', 'ol')) or (year == 2014 and level in ('hl', 'ol')) or (year == 2015 and level in ('hl', 'ol')) or (year == 2016 and level in ('hl', 'ol')) or (year == 2017 and level in ('hl', 'ol')) or (year == 2018 and level in ('hl', 'ol')) or (year == 2019 and level in ('hl', 'ol'))) else re.split(r'\s+(?=\((?:i|ii)\)\s+(?:the nutritive value|the dietetic value))', block)
+                      if (subject, year, level) == ('home-economics', 2020, 'ol') else [block])
             for text in (part for chunk in chunks for part in PP.INLINE_QHEAD.split(chunk)):
                 if subject == 'home-economics' and ((year in (2011, 2012) and level in ('hl', 'ol')) or (year == 2013 and level in ('hl', 'ol')) or (year == 2014 and level in ('hl', 'ol')) or (year == 2015 and level in ('hl', 'ol')) or (year == 2016 and level in ('hl', 'ol')) or (year == 2017 and level in ('hl', 'ol')) or (year == 2018 and level in ('hl', 'ol')) or (year == 2019 and level in ('hl', 'ol'))):
                     # A's roman markers label answer spaces, including the

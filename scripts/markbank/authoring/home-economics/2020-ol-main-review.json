@@ -1,0 +1,776 @@
+{
+  "year": 2020,
+  "level": "ordinary",
+  "status": "source-reviewed",
+  "sourcesManifest": "tmp/pdfs/home-economics-review/2020-ol-main/sources.json",
+  "originalPagesVisuallyInspected": 78,
+  "pageSweep": {
+    "paper-a": "All 32 physical pages individually viewed on contacts 01-08: cover 1, instructions 2, A 3-6, answerbook guide 7, ruled answer pages 8-31, backcover 32.",
+    "paper-bc": "All 8 physical pages viewed on contacts 01-02: cover 1, B 2-4, C 5-7, backcover 8.",
+    "scheme": "All 38 physical pages viewed on contacts 01-10: cover 1, publication notice 2, rubric 3, A 4-7, B 8-13, C 14-21, explicit blank 22, separate coursework 23-33, blank 34-37, blue back 38. Coursework and blank pages inspected but not written-paper tasks."
+  },
+  "manualOriginalLeaves": {
+    "A": 13,
+    "B": 20,
+    "C": 22,
+    "total": 55
+  },
+  "manualPricedTasks": {
+    "A": 15,
+    "B": 19,
+    "C": 22,
+    "total": 56,
+    "offeredMarks": 627
+  },
+  "leafReconciliation": [
+    "A2 has two expressly named roman terms Smoke point and Flash point; both are original leaves with separate 3-mark rows within the whole 6-mark task. Ordinary answer-slot numerals without independently named prompts are not extra leaves.",
+    "A6 has definition 2 plus separately printed additive-naming 4; A8 has exported foods 4 plus separately printed careers 2; A10 has advantages 4 plus separately printed payment-method 2. Each companion ask is independently priced, giving 15 tasks for A13 original named leaves.",
+    "B3(a) prints roman nutritive and dietetic leaves but gives a flexible shared five-point tariff: two references to each plus one other, 20 marks. Keep one whole task. B2(a) and B5(a) romans have separate scheme tariffs and stay separately priced tasks. B20 original leaves maps to B19 tasks."
+  ],
+  "pricedTaskLedger": {
+    "A": {
+      "1": 6,
+      "2": 6,
+      "3": 6,
+      "4": 6,
+      "5": 6,
+      "6-definition": 2,
+      "6-additives": 4,
+      "7": 6,
+      "8-foods": 4,
+      "8-careers": 2,
+      "9": 6,
+      "10-advantages": 4,
+      "10-payment": 2,
+      "11": 6,
+      "12": 6
+    },
+    "B": {
+      "1ai": 24,
+      "1aii": 6,
+      "1b": 24,
+      "1c": 6,
+      "1d": 20,
+      "2ai": 4,
+      "2aii": 12,
+      "2b": 16,
+      "2c": 18,
+      "3a": 20,
+      "3b": 16,
+      "3c": 14,
+      "4a": 16,
+      "4b": 12,
+      "4c": 22,
+      "5ai": 5,
+      "5aii": 20,
+      "5b": 15,
+      "5c": 10
+    },
+    "C": {
+      "1ai": 20,
+      "1aii": 10,
+      "1aiii": 10,
+      "1aiv": 10,
+      "1bi": 12,
+      "1bii": 18,
+      "1ci": 16,
+      "1cii": 14,
+      "2ai": 18,
+      "2aii": 7,
+      "2bi": 9,
+      "2bii": 6,
+      "2ci": 9,
+      "2cii": 6,
+      "3ai": 6,
+      "3aii": 20,
+      "3aiii": 16,
+      "3aiv": 8,
+      "3bi": 16,
+      "3bii": 14,
+      "3ci": 18,
+      "3cii": 12
+    }
+  },
+  "originalInputFigures": [
+    "A1 carbohydrate true/false table",
+    "A4 egg culinary-use/food blank table",
+    "A5 sauce true/false table",
+    "A7 three diet-effect rows",
+    "A9 USC/utility/child-benefit true/false table",
+    "A12 both textile-care symbols with goodhousekeeping caption",
+    "B1 all six red-meat-reduction bars with percentages and full Dietary Lifestyles Report / Thinking House / Bord Bia attribution",
+    "C1(a)(i) and (ii) complete original floor plan with front-door label",
+    "C2(a)(i) and (ii) complete children's clothing photo with dunnesstores caption"
+  ],
+  "sourceDecisions": [
+    "A1/A3/A5/A7/A9 three 2-mark answers [0,2]; A2 required Smoke point and Flash point each 3 [0,2,3], exact original temperatures retained; A4 any two paired egg uses name1 [0,1] plus matching dish2 [0,2], preserve entire grouped original source pool without invented row quotas or pairing keys.",
+    "A6 definition2 [0,1,2], TWO additives2 [0,2] each from full pool. A8 TWO exports2 [0,2] each and TWO careers1 [0,1] each, full pool no printed-answer-slot quotas. A10 TWO advantages2 [0,1,2] plus separate payment2 [0,2]. A11 THREE factors2 [0,1,2] any from full pool. A12 line dry and do not dry clean each3 [0,2,3].",
+    "B1(ai) FOUR of six reasons,6 [0,2,4,6] each, all six original chart rows and explanation pools retained; (aii) ONE replacement protein food6 [0,6]. (b) TWO functions4 [0,2,4], THREE sources4 [0,4], ONE deficiency4 [0,4]. (c) TWO ways3 [0,2,3]. (d) FOUR factors5 [0,3,5], required ONE selecting and ONE buying plus TWO additional, no other imposed quota.",
+    "B2(ai) CHD explanation4 [0,2,4]; (aii) THREE risk factors4 [0,2,4]. (b) FOUR guidelines4 [0,2,4]. (c) THREE meals6 each: TWO courses2 [0,1,2] and beverage2 [0,2]. Lift each original breakfast/lunch/dinner column independently, preserve all sample alternatives and proper pairing.",
+    "B3(a) FIVE points4 [0,2,4]: TWO nutritive, TWO dietetic plus ONE other within whole20. (b) TWO advantages and TWO disadvantages4 [0,2,4]. (c) TWO coherent packaging profiles, each name3 [0,3] plus environmental impact4 [0,2,4], full metal/glass/paper/plastic/polystyrene original guidance and open valid alternative, no invented split inside impact.",
+    "B4(a) FOUR appliance factors4 [0,2,4]; (b) THREE responsibilities4 [0,2,4]; (c) THREE microwave-use guidelines4 [0,2,4], TWO modern features2 [0,2], ONE care and ONE cleaning3 [0,2,3], total22.",
+    "B5(ai) marriage definition5 [0,2,3,5]; (aii) FOUR conditions5 [0,3,5]. Preserve original historical legal statements verbatim as exam source. (b) THREE premarriage benefits5 [0,3,5]. (c) ONE counselling and ONE separation explanation5 [0,3,5] each, full legal-separation/Judicial Separation continuation retained.",
+    "C1(ai) FOUR plan evaluations5 [0,3,5]; (aii) TWO modifications5 [0,3,5]. (aiii) TWO coherent professional profiles name3 [0,3]+description2 [0,1,2]; full Architect/Surveyor/Engineer/Solicitor/Builder models cross pages14-15, Electrician/Plumber/Plasterer/Interior Designer name-only alternatives with explicit model gap plus open valid option. (aiv) TWO trends name2 [0,2]+comment3 [0,2,3], full original pool.",
+    "C1(bi) THREE importance points4 [0,2,4]. (bii) TWO ventilation profiles each name3 [0,2,3] plus TWO principle points3 [0,2,3]. Full extractor/wall-vent principles; open doors/windows/air bricks/window vents names with source gaps explicit, no invented explanations. (ci) FOUR wall-finish factors4 [0,2,4]. (cii) ONE wall finish name4 [0,2,4]+advantage5 [0,3,5]+disadvantage5 [0,3,5]. All five full finish profiles plus wood panelling/mosaic name-only and open valid alternatives retained.",
+    "C2(ai) TWO points under EACH function/comfort/aesthetic appeal3 [0,2,3], whole18; photo retained. (aii) ONE fabric name3 [0,3]+reason4 [0,2,4], all seven full fabric profiles plus open valid; original pictured clothing context retained. (bi) THREE trendsetter points3 [0,2,3]. (bii) ONE colour method name2 [0,2]+TWO description points2 [0,2], dyeing/tie-dyeing models and fabric-painting/batik/screen-printing name-only choices retained. (ci) THREE small-business roles3 [0,2,3]. (cii) ONE career, TWO points3 [0,2,3], source prints career names only; no invented detailed model/name quota.",
+    "Targeted larger original rendering of scheme p19 confirmed the heading is Elective 3, consistent with the paper (the initial reduced contact-sheet reading was mistaken). (ai) work and work ethic required3 [0,2,3] each within whole6. (aii) FOUR attitudes factors5 [0,3,5]. (aiii) FOUR benefits4 [0,2,4], required ONE volunteer/ONE community plus TWO others. (aiv) ONE support name2 [0,2]+TWO details3 [0,2,3], full financial/housing/advisory/material models and emotional/social name-only guidance.",
+    "C3(bi) FOUR childcare factors4 [0,2,4]. (bii) TWO childcare options each name3 [0,2,3]+description4 [0,2,4], all six full original options preserved. (ci) TWO points under EACH reduction of working hours/improved conditions/provision of education3 [0,2,3], continuation pages20-21. (cii) THREE Working Family Payment points4 [0,2,4]."
+  ],
+  "next": "Source-scope handoff complete; coordinator owns integration, held 2019 numerical ambiguity and release QA. No further available English Home Economics sitting awaiting source authoring in the checked inventory.",
+  "sources": {
+    "paper-a": {
+      "path": "paper-trail-corpus/exampapers/2020/LC098GLP014EV.pdf",
+      "sha256": "c25745702775fc93d7fc789b5d19aa39f38bfa45a94d3df875aef941154a37f0",
+      "pages": 32
+    },
+    "paper-bc": {
+      "path": "paper-trail-corpus/exampapers/2020/LC098GLP039EV.pdf",
+      "sha256": "22863d489e51c88ec07912670032002f18e0d8a32013833d954766c82c08d013",
+      "pages": 8
+    },
+    "scheme": {
+      "path": "paper-trail-corpus/markingschemes/2020/LC098GLP000EV.pdf",
+      "sha256": "df16abbeb05005a72c051315b2addb88ffa08d5abcb890ff2ed5e83d53a411b7",
+      "pages": 38
+    }
+  },
+  "schemaVersion": 1,
+  "sitting": "main",
+  "language": "ev",
+  "expectedTasks": 56,
+  "expectedSectionTasks": {
+    "A": 15,
+    "B": 19,
+    "C": 22
+  },
+  "sourceQuestionGroups": 20,
+  "offeredPracticeMarks": 627,
+  "tasks": [
+    {
+      "id": "he-2020-ol-sa-q1",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 OL Section A Q1",
+      "topicId": "home-economics-0-6"
+    },
+    {
+      "id": "he-2020-ol-sa-q2",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 OL Section A Q2",
+      "topicId": "home-economics-0-7"
+    },
+    {
+      "id": "he-2020-ol-sa-q3",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 OL Section A Q3",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2020-ol-sa-q4",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 OL Section A Q4",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2020-ol-sa-q5",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 OL Section A Q5",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2020-ol-sa-q6-definition",
+      "section": "A",
+      "marks": 2,
+      "questionRef": "2020 OL Section A Q6 — definition",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2020-ol-sa-q6-additives",
+      "section": "A",
+      "marks": 4,
+      "questionRef": "2020 OL Section A Q6 — additives",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2020-ol-sa-q7",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 OL Section A Q7",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2020-ol-sa-q8-foods",
+      "section": "A",
+      "marks": 4,
+      "questionRef": "2020 OL Section A Q8 — foods",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2020-ol-sa-q8-careers",
+      "section": "A",
+      "marks": 2,
+      "questionRef": "2020 OL Section A Q8 — careers",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2020-ol-sa-q9",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 OL Section A Q9",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2020-ol-sa-q10-advantages",
+      "section": "A",
+      "marks": 4,
+      "questionRef": "2020 OL Section A Q10 — advantages",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2020-ol-sa-q10-payment",
+      "section": "A",
+      "marks": 2,
+      "questionRef": "2020 OL Section A Q10 — payment",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2020-ol-sa-q11",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 OL Section A Q11",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2020-ol-sa-q12",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2020 OL Section A Q12",
+      "topicId": "home-economics-1-4"
+    },
+    {
+      "id": "he-2020-ol-sb-q1ai",
+      "section": "B",
+      "marks": 24,
+      "questionRef": "2020 OL Section B Q1(a)(i)",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2020-ol-sb-q1aii",
+      "section": "B",
+      "marks": 6,
+      "questionRef": "2020 OL Section B Q1(a)(ii)",
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2020-ol-sb-q1b",
+      "section": "B",
+      "marks": 24,
+      "questionRef": "2020 OL Section B Q1(b)",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2020-ol-sb-q1c",
+      "section": "B",
+      "marks": 6,
+      "questionRef": "2020 OL Section B Q1(c)",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2020-ol-sb-q1d",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2020 OL Section B Q1(d)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2020-ol-sb-q2ai",
+      "section": "B",
+      "marks": 4,
+      "questionRef": "2020 OL Section B Q2(a)(i)",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2020-ol-sb-q2aii",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2020 OL Section B Q2(a)(ii)",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2020-ol-sb-q2b",
+      "section": "B",
+      "marks": 16,
+      "questionRef": "2020 OL Section B Q2(b)",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2020-ol-sb-q2c",
+      "section": "B",
+      "marks": 18,
+      "questionRef": "2020 OL Section B Q2(c)",
+      "topicId": "home-economics-0-10"
+    },
+    {
+      "id": "he-2020-ol-sb-q3a",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2020 OL Section B Q3(a)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2020-ol-sb-q3b",
+      "section": "B",
+      "marks": 16,
+      "questionRef": "2020 OL Section B Q3(b)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2020-ol-sb-q3c",
+      "section": "B",
+      "marks": 14,
+      "questionRef": "2020 OL Section B Q3(c)",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2020-ol-sb-q4a",
+      "section": "B",
+      "marks": 16,
+      "questionRef": "2020 OL Section B Q4(a)",
+      "topicId": "home-economics-1-3"
+    },
+    {
+      "id": "he-2020-ol-sb-q4b",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2020 OL Section B Q4(b)",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2020-ol-sb-q4c",
+      "section": "B",
+      "marks": 22,
+      "questionRef": "2020 OL Section B Q4(c)",
+      "topicId": "home-economics-1-3"
+    },
+    {
+      "id": "he-2020-ol-sb-q5ai",
+      "section": "B",
+      "marks": 5,
+      "questionRef": "2020 OL Section B Q5(a)(i)",
+      "topicId": "home-economics-2-1"
+    },
+    {
+      "id": "he-2020-ol-sb-q5aii",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2020 OL Section B Q5(a)(ii)",
+      "topicId": "home-economics-2-1"
+    },
+    {
+      "id": "he-2020-ol-sb-q5b",
+      "section": "B",
+      "marks": 15,
+      "questionRef": "2020 OL Section B Q5(b)",
+      "topicId": "home-economics-2-1"
+    },
+    {
+      "id": "he-2020-ol-sb-q5c",
+      "section": "B",
+      "marks": 10,
+      "questionRef": "2020 OL Section B Q5(c)",
+      "topicId": "home-economics-2-1"
+    },
+    {
+      "id": "he-2020-ol-sc-q1ai",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2020 OL Section C E1 Q1(a)(i)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2020-ol-sc-q1aii",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2020 OL Section C E1 Q1(a)(ii)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2020-ol-sc-q1aiii",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2020 OL Section C E1 Q1(a)(iii)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2020-ol-sc-q1aiv",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2020 OL Section C E1 Q1(a)(iv)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2020-ol-sc-q1bi",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2020 OL Section C E1 Q1(b)(i)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2020-ol-sc-q1bii",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2020 OL Section C E1 Q1(b)(ii)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2020-ol-sc-q1ci",
+      "section": "C",
+      "marks": 16,
+      "questionRef": "2020 OL Section C E1 Q1(c)(i)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2020-ol-sc-q1cii",
+      "section": "C",
+      "marks": 14,
+      "questionRef": "2020 OL Section C E1 Q1(c)(ii)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2020-ol-sc-q2ai",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2020 OL Section C E2 Q2(a)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2020-ol-sc-q2aii",
+      "section": "C",
+      "marks": 7,
+      "questionRef": "2020 OL Section C E2 Q2(a)(ii)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2020-ol-sc-q2bi",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2020 OL Section C E2 Q2(b)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2020-ol-sc-q2bii",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2020 OL Section C E2 Q2(b)(ii)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2020-ol-sc-q2ci",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2020 OL Section C E2 Q2(c)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2020-ol-sc-q2cii",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2020 OL Section C E2 Q2(c)(ii)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2020-ol-sc-q3ai",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2020 OL Section C E3 Q3(a)(i)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2020-ol-sc-q3aii",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2020 OL Section C E3 Q3(a)(ii)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2020-ol-sc-q3aiii",
+      "section": "C",
+      "marks": 16,
+      "questionRef": "2020 OL Section C E3 Q3(a)(iii)",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2020-ol-sc-q3aiv",
+      "section": "C",
+      "marks": 8,
+      "questionRef": "2020 OL Section C E3 Q3(a)(iv)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2020-ol-sc-q3bi",
+      "section": "C",
+      "marks": 16,
+      "questionRef": "2020 OL Section C E3 Q3(b)(i)",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2020-ol-sc-q3bii",
+      "section": "C",
+      "marks": 14,
+      "questionRef": "2020 OL Section C E3 Q3(b)(ii)",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2020-ol-sc-q3ci",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2020 OL Section C E3 Q3(c)(i)",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2020-ol-sc-q3cii",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2020 OL Section C E3 Q3(c)(ii)",
+      "topicId": "home-economics-3-9"
+    }
+  ],
+  "sourceCensusComparison": "Existing raw parser produced 54 candidates, omitting the two lowercase inline B3(a) roman labels as separate leaves. The independently observed A2 named definition pair already survives and must remain. A narrow 2020 Ordinary B3(a) split restores the manual 55-leaf census without changing the whole shared-tariff task.",
+  "expectedSourceLeaves": 55,
+  "expectedSectionSourceLeaves": {
+    "A": 13,
+    "B": 20,
+    "C": 22
+  },
+  "figureVisualReview": "All ten final original inputs individually inspected: seven complete A tasks/tables/cloze/symbols, all six chart bars and percentages with the full original quotation and complete Dietary Lifestyles Report / Thinking House / Bord Bia attribution, complete ground-floor plan with front-door label, and complete children photo with dunnesstores attribution. Both plan tasks and both clothing tasks retain their original shared figure.",
+  "sectionAReview": {
+    "tasks": 15,
+    "marks": 72,
+    "tariffDecision": "All required named definitions and exact original partial ladders, complete truth/cloze/effect/symbol inputs, coherent egg use/dish selections without invented pairing keys, and three separately printed and priced companion asks."
+  },
+  "sectionBReview": {
+    "tasks": 19,
+    "marks": 280,
+    "selectionDecisions": "All six red-meat reasons; iron quotas; exact CHD/menu allocations and independently read menu columns; full fish flexible/shared roman task; paired environmental profiles; use/features/care/cleaning requirements; full historical marriage and separation guidance."
+  },
+  "sectionCReview": {
+    "tasks": 22,
+    "marks": 275,
+    "selectionDecisions": "Full floorplan/photo source inputs, all professional/ventilation/finish/fabric/colour/support/childcare alternatives with visible name-only gaps, required headings and flexible categories, precise original partial ladders, and cross-page continuations."
+  },
+  "figures": {
+    "home-economics-2020-ol-sa-q1": {
+      "kind": "a",
+      "source": "paper-trail-corpus/exampapers/2020/LC098GLP014EV.pdf",
+      "page": 3,
+      "bounds": [
+        20,
+        153.65972900390625,
+        570.219970703125,
+        292.57999420166016
+      ],
+      "alt": "Complete original three-statement carbohydrate True/False table.",
+      "sha256": "86b8176e9d5e5527c3a0db9cc9be2767628c084bf18b87ccf2e9e83613a3a9d1"
+    },
+    "home-economics-2020-ol-sa-q3": {
+      "kind": "a",
+      "source": "paper-trail-corpus/exampapers/2020/LC098GLP014EV.pdf",
+      "page": 3,
+      "bounds": [
+        20,
+        554.1597290039062,
+        570.219970703125,
+        763.5396728515625
+      ],
+      "alt": "Complete original milk-processing cloze task, all three blanks and spray drying, pasteurised, homogenisation word pool.",
+      "sha256": "6d1be13f9968f3a0ec54d8ff88fcc4754db5d8dddc441b2e474ac1a569d13296"
+    },
+    "home-economics-2020-ol-sa-q4": {
+      "kind": "a",
+      "source": "paper-trail-corpus/exampapers/2020/LC098GLP014EV.pdf",
+      "page": 4,
+      "bounds": [
+        20,
+        56.09967041015625,
+        570.219970703125,
+        182.58001708984375
+      ],
+      "alt": "Complete original two egg culinary-use and matching food/dish blank table.",
+      "sha256": "d622514f668916b276491c0777aca0cda61e5bad84c535da7c58975799f54b6c"
+    },
+    "home-economics-2020-ol-sa-q5": {
+      "kind": "a",
+      "source": "paper-trail-corpus/exampapers/2020/LC098GLP014EV.pdf",
+      "page": 4,
+      "bounds": [
+        20,
+        236.27972412109375,
+        570.219970703125,
+        389.84001541137695
+      ],
+      "alt": "Complete original three-statement sauce True/False table.",
+      "sha256": "33a1e040cbec3ce409aac39cada2e6d5b182e829056a2a7b3ddac96a91425988"
+    },
+    "home-economics-2020-ol-sa-q7": {
+      "kind": "a",
+      "source": "paper-trail-corpus/exampapers/2020/LC098GLP014EV.pdf",
+      "page": 5,
+      "bounds": [
+        20,
+        56.09967041015625,
+        570.219970703125,
+        195.05999755859375
+      ],
+      "alt": "Complete original three-row diet-effect table: high saturated fat, low fibre and low calcium.",
+      "sha256": "bbe5764edec0e2d517843dd3b324054a703f93b12820ab2071d699eb1cf02d86"
+    },
+    "home-economics-2020-ol-sa-q9": {
+      "kind": "a",
+      "source": "paper-trail-corpus/exampapers/2020/LC098GLP014EV.pdf",
+      "page": 5,
+      "bounds": [
+        20,
+        480.65972900390625,
+        570.219970703125,
+        634.1960083007813
+      ],
+      "alt": "Complete original three-statement USC, utility bills and child benefit True/False table.",
+      "sha256": "264ea7984a3eb77c082f55bd896e13d4ff0aa0cb12f5c230a1360d01462951bf"
+    },
+    "home-economics-2020-ol-sa-q12": {
+      "kind": "a",
+      "source": "paper-trail-corpus/exampapers/2020/LC098GLP014EV.pdf",
+      "page": 6,
+      "bounds": [
+        20,
+        504.9595947265625,
+        570.219970703125,
+        763.5396728515625
+      ],
+      "alt": "Both complete original textile-care symbols, their response spaces and full goodhousekeeping.com attribution.",
+      "sha256": "61c980e2317973e4e4f7454bd1a3337bdd1729d5a55c940886bb4af92baa7152"
+    },
+    "home-economics-2020-ol-sb-q1-red-meat": {
+      "kind": "bc",
+      "source": "paper-trail-corpus/exampapers/2020/LC098GLP039EV.pdf",
+      "page": 2,
+      "bounds": [
+        55.0,
+        160.2197265625,
+        545.0,
+        485.5796813964844
+      ],
+      "alt": "Complete original Reduction in red meat consumption chart: all six reasons and percentages (11, 17, 27, 30, 30, 67), with the full Dietary Lifestyles Report / Thinking House / Bord Bia attribution.",
+      "sha256": "68c04ff842d7b837f84b55f88198dbb4ba992307dda9e5ccc703dba91a1be651"
+    },
+    "home-economics-2020-ol-sc-q1-floor-plan": {
+      "kind": "bc",
+      "source": "paper-trail-corpus/exampapers/2020/LC098GLP039EV.pdf",
+      "page": 5,
+      "bounds": [
+        115.87999725341797,
+        215.66001892089844,
+        527.5914306640625,
+        362.260009765625
+      ],
+      "alt": "Complete original ground-floor plan with all rooms, patio, garage, stairs and front-door label, retained for both suitability and accessibility-modification tasks.",
+      "sha256": "bc4ae80d4db218890531690aaac9ccfe6f998064b8a40fe213aae5556c48de4d"
+    },
+    "home-economics-2020-ol-sc-q2-clothing": {
+      "kind": "bc",
+      "source": "paper-trail-corpus/exampapers/2020/LC098GLP039EV.pdf",
+      "page": 6,
+      "bounds": [
+        190.27999877929688,
+        138.739990234375,
+        390.82000732421875,
+        339.6846923828125
+      ],
+      "alt": "Complete original children’s clothing photograph and full dunnesstores.com attribution; retained for suitability and matching fabric tasks.",
+      "sha256": "4dcb008084e4987bd397607aba991143345af6dba0b92301f11bcfa013d35806"
+    }
+  },
+  "sourceCensusReconciliation": {
+    "level": "ordinary",
+    "sourceHashes": "verified",
+    "expectedSourceLeaves": 55,
+    "observedSourceLeaves": 55,
+    "continuityFlags": [],
+    "keys": [
+      "Section A Q1",
+      "Section A Q10",
+      "Section A Q11",
+      "Section A Q12",
+      "Section A Q2(i)",
+      "Section A Q2(ii)",
+      "Section A Q3",
+      "Section A Q4",
+      "Section A Q5",
+      "Section A Q6",
+      "Section A Q7",
+      "Section A Q8",
+      "Section A Q9",
+      "Section B Q1(a)(i)",
+      "Section B Q1(a)(ii)",
+      "Section B Q1(b)",
+      "Section B Q1(c)",
+      "Section B Q1(d)",
+      "Section B Q2(a)(i)",
+      "Section B Q2(a)(ii)",
+      "Section B Q2(b)",
+      "Section B Q2(c)",
+      "Section B Q3(a)(i)",
+      "Section B Q3(a)(ii)",
+      "Section B Q3(b)",
+      "Section B Q3(c)",
+      "Section B Q4(a)",
+      "Section B Q4(b)",
+      "Section B Q4(c)",
+      "Section B Q5(a)(i)",
+      "Section B Q5(a)(ii)",
+      "Section B Q5(b)",
+      "Section B Q5(c)",
+      "Section C Q1(a)(i)",
+      "Section C Q1(a)(ii)",
+      "Section C Q1(a)(iii)",
+      "Section C Q1(a)(iv)",
+      "Section C Q1(b)(i)",
+      "Section C Q1(b)(ii)",
+      "Section C Q1(c)(i)",
+      "Section C Q1(c)(ii)",
+      "Section C Q2(a)(i)",
+      "Section C Q2(a)(ii)",
+      "Section C Q2(b)(i)",
+      "Section C Q2(b)(ii)",
+      "Section C Q2(c)(i)",
+      "Section C Q2(c)(ii)",
+      "Section C Q3(a)(i)",
+      "Section C Q3(a)(ii)",
+      "Section C Q3(a)(iii)",
+      "Section C Q3(a)(iv)",
+      "Section C Q3(b)(i)",
+      "Section C Q3(b)(ii)",
+      "Section C Q3(c)(i)",
+      "Section C Q3(c)(ii)"
+    ],
+    "reconciliation": "Independent 78-page visual sweep and saved manual ledger before parser/card inspection: 55 original leaves A13/B20/C22 map to 56 priced tasks A15/B19/C22, 627 marks. A2 named roman terms remain required 3-mark rows in one task. Three A companion asks are separately printed/priced; B3(a) two named roman leaves share a flexible five-point allocation and stay one whole task. Narrow original B3(a) marker restoration; no source marker removed."
+  },
+  "validation": {
+    "runtime": "248 affected/required tests passed: eight 2020 Ordinary and eight 2020 Higher plus 232 preservation/curriculum/deck. maxWorkers=1; owned temporary test caches removed automatically.",
+    "mandatoryRawSourceGate": "Explicit 2010-2020 original-PDF hash/key gates passed. Independent 78-page visual census and saved pre-parser manual ledger pinned 55 source leaves A13/B20/C22 and 56 priced tasks A15/B19/C22, 627 offered marks. A2 named roman definitions retained in one whole task; three A companion asks separately priced. B3(a) two inline source roman leaves restored narrowly; shared flexible tariff stays one task. No source marker removed.",
+    "atlas": "Two targeted HE checks passed: 76 tagged papers, 986 physical groups, 1014 registry mappings. All 17 original identities retained, missing C groups added as B/C6-8. Runtime 1002.",
+    "coverage": "Three targeted HE cases passed. Subject-only measured baseline: 1953 cards, 1908/1908 diagnostic raw leaves covered, zero open/excluded/orphan/unparsed. All other subject entries unchanged.",
+    "mainTypecheck": "passed",
+    "scoped2020TestTypecheck": "passed",
+    "productionBuild": "passed in 38.48s; owned ignored nonsymlink dist removed after success",
+    "cardlint": "1979 authored records inspected, clean",
+    "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across 36 generated files.",
+    "reconciliation": "2020 Ordinary 55/55 independently observed source leaves covered by 56 priced tasks; zero sitting opens/exclusions/continuity flags. Lane 1953 cards (1026 Higher / 927 Ordinary), 1908/1908 raw leaves covered, zero orphan/unparsed/excluded/open. All 11 remaining marks-checksum diagnostics explicitly classified in final-census-flags-20261109.json; flags are retained, not suppressed.",
+    "preservation": "Every earlier authored card and all 871 earlier Ordinary emitted blocks unchanged, along with every other deck, unrelated sizes/showcase subject, full/decoded non-HE Atlas, unrelated HE mappings and other HE census sittings. Frozen identity hashes retained; all 56 additions explicitly pinned. Narrow shared census change is scoped to Home Economics 2020 Ordinary B3(a).",
+    "browser": "Parent-owned; all ten original figure crops individually inspected here, with final chart quotation/attribution complete."
+  }
+}
