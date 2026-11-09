@@ -11,6 +11,27 @@ from pathlib import Path
 
 
 def reviewed_keys(year, level):
+    if (year, level) == (2019, 'ol'):
+        # Independent48-page visual census:20written+8aural+20scheme.
+        # Both discourse dialogues are required; TWO cultural topics share30.
+        root = Path(__file__).resolve().parents[3] / 'examiner-reports/russian'
+        for relative, digest in {
+            'papers/2019-ol-000-paper.pdf':'41d32895142e7d84b407db7aba924b55c6f436cf04f8e5d42752008d52766857',
+            'papers/2019-ol-A00-paper.pdf':'f0a5627680ab08fd5249384d34e2d95dd67eba058144feb7c6458ea1683f2dbb',
+            'schemes/2019-ol.pdf':'8622b34ca8c3a357141ced0ff917e9ebeea56e3f3783e86f3f1403d5e32a3237',
+        }.items():
+            assert hashlib.sha256((root / relative).read_bytes()).hexdigest() == digest
+        keys=[('IR1',q,None,None) for q in range(1,8)]
+        keys += [('IR2',q,None,None) for q in range(1,6)]
+        keys += [('CD',q,None,r) for q,romans in [(1,('i','ii','iii','iv')),(2,('i','ii','iii')),(3,('i','ii'))] for r in romans]
+        keys += [(unit,None,None,None) for unit in ('LA1','LA2','MM','SD','SA','EW')]
+        assert len(keys)==27
+        keys += [('L1',q,None,None) for q in (1,2,3,4,5)]
+        keys += [('L2',q,None,None) for q in (1,2,3,4)]
+        keys += [('L3',q,None,r) for q,r in [(1,None),(2,'i'),(2,'ii'),(3,None)]]
+        keys += [('L4',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,None),(3,None)]]
+        assert len(keys)==len(set(keys))==44
+        return set(keys)
     if (year, level) == (2021, 'ol'):
         # Independent52-page visual sweep. Adjusted175written+100listening;
         # all practice alternatives305. Each complete choice pool is one task.

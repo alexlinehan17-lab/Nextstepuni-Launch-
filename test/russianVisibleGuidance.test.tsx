@@ -13,6 +13,17 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('shows the2019 mandatory dialogues and overall-only allocation',async()=>{
+    reveal('sd','ol',2019);
+    await waitFor(()=>expect(screen.getByText(/Complete both Group A and Group B/)).toBeVisible());
+    expect(screen.getByText(/numeric self-scoring is unavailable/)).toHaveTextContent('20 marks');
+  });
+  it('shows the2019 accepted earlier prices and no-repeat condition',async()=>{
+    reveal('ir1-7','ol',2019);
+    await waitFor(()=>expect(screen.getByText(/Accept answers referring to price options from earlier in the text/)).toBeVisible());
+    expect(screen.getByText(/Accept answers referring to price options from earlier in the text/)).toHaveTextContent('if marks have not already been awarded');
+    expect(screen.getByText('детский билет (7‐13 лет) стоит 800 руб')).toBeVisible();
+  });
   it('shows the2021 ordered listening tariff and explicit Russian exception',async()=>{
     reveal('l3-4','ol',2021);
     await waitFor(()=>expect(screen.getByText(/Any 2 of these.*2 then 3 marks/)).toBeVisible());
