@@ -85,6 +85,7 @@ import japanese2026HigherCensus from '../scripts/markbank/authoring/reviews/japa
 import japanese2026OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2026-ol-census.json';
 import japanese2025HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2025-hl-census.json';
 import japanese2025OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2025-ol-census.json';
+import japanese2024OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2024-ol-census.json';
 import japanese2024HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2024-hl-census.json';
 import japaneseAliases from '../components/MarkBank/cards/japanese/aliases.json';
 import { CARDS as POLISH_HIGHER } from '../components/MarkBank/cards/polish/higher';
@@ -1691,7 +1692,9 @@ const japaneseLiteralIds = new Set(['higher', 'ordinary'].flatMap(level =>
 const japaneseAliasIds = Object.keys(japaneseAliases);
 // 2024 Higher: 72 full tasks, 20 retained IDs, 52 additions and 44 original
 // fragments explicitly aliased to seven complete pools; frozen 600 unchanged.
-const japaneseAdditionIds = new Set([japanese2026HigherCensus, japanese2026OrdinaryCensus, japanese2025HigherCensus, japanese2025OrdinaryCensus, japanese2024HigherCensus].flatMap(census => census.tasks.map(task =>
+// 2024 Ordinary: 59 full tasks, 19 retained IDs, 40 additions, 40 fragment
+// aliases across six complete tasks. No frozen original identity is removed.
+const japaneseAdditionIds = new Set([japanese2026HigherCensus, japanese2026OrdinaryCensus, japanese2025HigherCensus, japanese2025OrdinaryCensus, japanese2024HigherCensus, japanese2024OrdinaryCensus].flatMap(census => census.tasks.map(task =>
   `ja-${census.year}-${census.level}-${task.key.filter(part => part !== null).join('-').toLowerCase()}`)).filter(id => !japaneseLiteralIds.has(id)));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);

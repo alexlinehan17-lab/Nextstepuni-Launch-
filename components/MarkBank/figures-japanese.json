@@ -750,5 +750,133 @@
         0.36
       ]
     }
+  },
+  "ja-2024-ol-1-6": {
+    "src": "/exam-figures/japanese/ja-2024-ol-1-6.png",
+    "md5": "598ad4f5630dd453669f56800725e2af",
+    "alt": "Complete the table about the TD members value plan.\nSilver Gold member\nmember\nConditions 8 visits per\nyear\nGift card\namount",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 3,
+      "region": [
+        0.52,
+        0.62,
+        0.96,
+        0.835
+      ]
+    }
+  },
+  "ja-2024-ol-2b": {
+    "src": "/exam-figures/japanese/ja-2024-ol-2b.png",
+    "md5": "46e2f10433b50cbf58178a68d50d4fe6",
+    "alt": "Write whether the following sentences are True or False.  Choose a Japanese phrase from the text to support your answer as in the example.  Answer any five.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.025,
+        0.475,
+        0.97,
+        0.92
+      ]
+    }
+  },
+  "ja-2024-ol-2c": {
+    "src": "/exam-figures/japanese/ja-2024-ol-2c.png",
+    "md5": "d5cd66301b5cf6fcf609f52a8b1cd807",
+    "alt": "Circle the correct meaning (a), (b), (c) or (d) for the following Kanji as in the example. Answer any ten.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 6,
+      "region": [
+        0.07,
+        0.49,
+        0.96,
+        0.89
+      ]
+    }
+  },
+  "ja-2024-ol-3b-1": {
+    "src": "/exam-figures/japanese/ja-2024-ol-3b-1.png",
+    "md5": "e13781867e47f4989d5d87843565efe1",
+    "alt": "Write the underlined in the negative as in the example. Answer any five.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 10,
+      "region": [
+        0.07,
+        0.365,
+        0.96,
+        0.81
+      ]
+    }
+  },
+  "ja-2024-ol-3b-2": {
+    "src": "/exam-figures/japanese/ja-2024-ol-3b-2.png",
+    "md5": "6a4ea15a6ddd1f08e24fa25f9bd79e30",
+    "alt": "Circle the correct particle (a), (b) or (c) below as in the example. Answer any five.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 11,
+      "region": [
+        0.07,
+        0.04,
+        0.96,
+        0.39
+      ]
+    }
+  },
+  "ja-2024-ol-4": {
+    "src": "/exam-figures/japanese/ja-2024-ol-4.png",
+    "md5": "aa708ee8f63cdf25568b408daf88dc9e",
+    "alt": "Insert the missing words from the box below as in the example. A word should be used only once. Answer any ten.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.07,
+        0.055,
+        0.975,
+        0.815
+      ]
+    }
+  },
+  "ja-2024-ol-5": {
+    "src": "/exam-figures/japanese/ja-2024-ol-5.png",
+    "md5": "9f74bd5b293389f252d1c9f0c7c9edb9",
+    "alt": "Answer ANY 5 of the following 8 questions about your friend in Japanese in the spaces provided.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 13,
+      "region": [
+        0.05,
+        0.04,
+        0.97,
+        0.93
+      ]
+    }
+  },
+  "ja-2024-ol-ld-1-iii": {
+    "src": "/exam-figures/japanese/ja-2024-ol-ld-1-iii.png",
+    "md5": "963050d9708ce211749e4cb5515033cf",
+    "alt": "What is Anna’s phone number?",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 5,
+      "region": [
+        0.55,
+        0.295,
+        0.96,
+        0.37
+      ]
+    }
   }
 }
