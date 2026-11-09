@@ -1421,5 +1421,40 @@
     "alt": "Complete original four runners and their leisurewear, with full Lidl attribution; used for both suitability and matching-jacket tasks.",
     "attribution": "SEC Home Economics 2019 Ordinary Level examination paper, page 10 — © State Examinations Commission.",
     "sourceNote": "Original PDF crop, bounds [194.94000244140625, 143.39999389648438, 386.1600036621094, 323.4447021484375], rendered at 2.5×. SHA256 927a1dd9df0e072c5a2b0d15a8093745e6673d8ea66445882a2f8d73539c7e9a."
+  },
+  "home-economics-2020-hl-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2020-hl-sa-q1.png",
+    "md5": "d4095ea208023aa222d4612bf21210ee",
+    "alt": "Complete original carbohydrate table: required formula and example fields for monosaccharides, disaccharides and polysaccharides.",
+    "attribution": "SEC Home Economics 2020 Higher Level examination paper, Section A booklet page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 147.479736328125, 570.219970703125, 286.4000244140625], rendered at 2.5×. SHA256 0f25cdb71ef8204fca0e48cb078f030bfca437ff850befbf28c82cc2fb6ffc23."
+  },
+  "home-economics-2020-hl-sa-q4": {
+    "src": "/exam-figures/home-economics/home-economics-2020-hl-sa-q4.png",
+    "md5": "f1d8e19d550a98cc940ed1bc84258c6f",
+    "alt": "Complete original vitamin-deficiency table: poor blood clotting, neural tube defects and night blindness.",
+    "attribution": "SEC Home Economics 2020 Higher Level examination paper, Section A booklet page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 56.09967041015625, 570.219970703125, 212.70003255208334], rendered at 2.5×. SHA256 cabb2c3342d846e23e49e48b69330a5f94a2d66ad0693e4a1b48f7809edb46ed."
+  },
+  "home-economics-2020-hl-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2020-hl-sa-q8.png",
+    "md5": "6c511cc6896c0dbdb829e60c18edd258",
+    "alt": "Complete original artificial-sweetener class/type and matching-example table.",
+    "attribution": "SEC Home Economics 2020 Higher Level examination paper, Section A booklet page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 227.51971435546875, 570.219970703125, 339.3599853515625], rendered at 2.5×. SHA256 6abd69d0b50716fe787ddb7f480e44a4e1ba82997740d3df72a0216e1b82b36d."
+  },
+  "home-economics-2020-hl-sa-q9": {
+    "src": "/exam-figures/home-economics/home-economics-2020-hl-sa-q9.png",
+    "md5": "bb93cba99e3edd7641b99f38f4526680",
+    "alt": "Both complete original consumer symbols: Green Dot and PET identification 1 recycling symbol, with repak.ie and clearpak.com source captions.",
+    "attribution": "SEC Home Economics 2020 Higher Level examination paper, Section A booklet page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 378.41973876953125, 570.219970703125, 763.5396728515625], rendered at 2.5×. SHA256 5e52d20c3177866e0aab98a9b69a8e4f3d28c9ac6dcc33bd262a4641f5075d32."
+  },
+  "home-economics-2020-hl-sb-q1-portions": {
+    "src": "/exam-figures/home-economics/home-economics-2020-hl-sb-q1-portions.png",
+    "md5": "3a9c80d07dec8a367d7ec8077d210938",
+    "alt": "Complete original safefood portion-size table: all ten situations and three percentage columns (sometimes, always and never difficult), with complete safefood.eu/media/safefoodlibrary attribution.",
+    "attribution": "SEC Home Economics 2020 Higher Level examination paper, Sections B/C booklet page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [80.78399658203125, 217.20590209960938, 513.1600036621094, 486.86468505859375], rendered at 2.5×. SHA256 82eb0a0920171ce159b5c7db585b375bbf6b33b53d57b4fb9ef27359b037c758."
   }
 }
