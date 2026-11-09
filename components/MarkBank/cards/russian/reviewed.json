@@ -56786,5 +56786,5924 @@
       "humanReviewedBy": "Codex source review; browser QA pending",
       "humanReviewedAt": "2026-11-06"
     }
+  },
+  {
+    "id": "ru-2022-ol-ir1-1",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "makes-school-unique",
+    "questionRef": "2022 OL Section IR1 Q1",
+    "questionText": "What makes this school unique? Give one detail.",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Young children can go there",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Prepared for the stage / professional dancer",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Leading ballets in Russia and Europe",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Best teachers in Russia and in the world",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 4 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-ir1-2",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "advantages-these-children-starting-ballet-school",
+    "questionRef": "2022 OL Section IR1 Q2",
+    "questionText": "What are the advantages of these children starting ballet school so young? Give two details.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "They are flexible",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Listen carefully to the teachers",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Learn moves quickly",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Can go on to a professional school",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 4 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-ir1-3",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "subjects-taught-school",
+    "questionRef": "2022 OL Section IR1 Q3",
+    "questionText": "Name three subjects taught at the school.",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Classical dance",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Choreography",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Gymnastics",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Acting",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Speech development",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Improvisation",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Historical dance",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Contemporary dance",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Folk dance",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-10",
+          "label": "Answer 10",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Music",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 4 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-ir1-4",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "additional-activities-available-these-students",
+    "questionRef": "2022 OL Section IR1 Q4",
+    "questionText": "Name two additional activities available to these students.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Art",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Foreign language (English /French)",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "History of the theatre/ballet/costume",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Piano",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 4 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-ir1-5",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "choice-these-students-age",
+    "questionRef": "2022 OL Section IR1 Q5",
+    "questionText": "What choice do these students have at the age of 11? Give two details.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "To enter a ballet academy",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "To continue in the school",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Stay in great shape",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Get satisfaction from the lessons",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Do something new",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 4 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-ir1-6",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "ways-contact-school",
+    "questionRef": "2022 OL Section IR1 Q6",
+    "questionText": "Give two ways you can contact the school.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Telephone",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Leave a message on the site",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "E-mail",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 4 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-ir2-1-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "IR2",
+    "topicId": "russian-3-4",
+    "conceptId": "should-included-personal-contact-information-section",
+    "questionRef": "2022 OL Section IR2 Q1(i)",
+    "questionText": "Give three details which should be included in the Personal and Contact Information section.",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — IR2",
+      "pages": [
+        5,
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 5.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Name",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Date of Birth",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Age",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Family situation",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Address",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Phone number",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 5 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-ir2-1-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "IR2",
+    "topicId": "russian-3-4",
+    "conceptId": "should-included-education-training-section",
+    "questionRef": "2022 OL Section IR2 Q1(ii)",
+    "questionText": "Give three details which should be included in the Education and Training section.",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — IR2",
+      "pages": [
+        5,
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 5.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "School education",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Year of completion of secondary school",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Year started higher education",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Name of higher education institution",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Full time/part time/distance learning",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Courses/learning completed",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 5 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-ir2-1-iii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "IR2",
+    "topicId": "russian-3-4",
+    "conceptId": "should-included-additional-skills-section",
+    "questionRef": "2022 OL Section IR2 Q1(iii)",
+    "questionText": "Give three details which should be included in the Additional Skills section.",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — IR2",
+      "pages": [
+        5,
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 5.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Languages",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Knowledge of office technology",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Knowledge of computer programs",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Driver’s licence",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Ability to work in a team",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 5 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-ir2-1-iv",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "IR2",
+    "topicId": "russian-3-4",
+    "conceptId": "should-included-additional-information-section",
+    "questionRef": "2022 OL Section IR2 Q1(iv)",
+    "questionText": "Give three details which should be included in the Additional Information section.",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — IR2",
+      "pages": [
+        5,
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 5.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Willingness to travel",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Hobbies and interests",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Passport",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Lack of bad habits",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Personal characteristics",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 5 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-cd-1",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "sochi",
+    "questionRef": "2022 OL Section CD Q1",
+    "questionText": "Give two details about Sochi.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Shore of the black Sea",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Clear blue sea",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Holiday Resort",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Clear blue skies",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Warm sun",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "City of celebrations",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 10, 11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-cd-2-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "climate-sochi",
+    "questionRef": "2022 OL Section CD Q2(i)",
+    "questionText": "Give two details about the climate in Sochi.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Warm",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Sunny",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Humid",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Sub-tropical",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Palms grow there",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 10, 11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-cd-2-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "tea-plantation",
+    "questionRef": "2022 OL Section CD Q2(ii)",
+    "questionText": "Give three details about the tea plantation.",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Not far from Sochi",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Most northerly tea plantation in the world",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Only one in Russia",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Ecologically clean",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Far away from industry and motorways",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Different types of tea",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Send the tea all around Russia",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 10, 11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-cd-3",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "swimming-sochi",
+    "questionRef": "2022 OL Section CD Q3",
+    "questionText": "Give three details about swimming in Sochi?",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "The sea is very warm",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Start swimming in May and finish in October",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "In winter people don’t swim",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Water is still warm even though there is snow",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "In winter people like to walk and breathe in the fresh sea air",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 10, 11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-cd-4-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "winter-olympics-sochi",
+    "questionRef": "2022 OL Section CD Q4(i)",
+    "questionText": "Give two details about the Winter Olympics in Sochi.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "7th - 23rd February 2014",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "City became famous all around the world",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "A lot of facilities were built",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "An Olympic Stadium was constructed",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Fountains were built",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 10, 11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-cd-4-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "olympic-stadium",
+    "questionRef": "2022 OL Section CD Q4(ii)",
+    "questionText": "Give two details about the Olympic Stadium.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Dish where the Olympic flame burns",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "4 stands",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "2 side ones and 2 with views of the mountains",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "It holds 40,000 spectators for the Olympics",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "45,000 spectators for football matches",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "25,000 spectators for less important events",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 10, 11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-cd-5",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "things-people-entertainment",
+    "questionRef": "2022 OL Section CD Q5",
+    "questionText": "Name three things that people can do for entertainment.",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Aquapark",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Dolphin park",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Zoo",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Museum",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Skate park",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Dancing",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Theatre",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 10, 11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-cd-6",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "types-festivals-take-place-sochi-every",
+    "questionRef": "2022 OL Section CD Q6",
+    "questionText": "Name three types of festivals that take place in Sochi every year.",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept.",
+        "Max 2 marks for mentioning the name of a festival"
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Music",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Cinema",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Fashion",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Jazz",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "festival-name",
+          "label": "Named festival (maximum 2 marks)",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "mentioning the name of a festival",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 10, 11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-la1",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "LA1",
+    "topicId": "russian-3-2",
+    "conceptId": "out-following-phrases-handwritten-cursive-script",
+    "questionRef": "2022 OL Section LA1",
+    "questionText": "Write out three of the following phrases in handwritten/cursive script.\n\nбалетная школа\nактёрское мастерство\nдополнительные навыки\nисторический танец\nиностранный язык\nнародный танец",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — LA1",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 5.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "Three phrases in handwritten/cursive script.",
+        "2 marks per phrase.",
+        "Do not penalise for repeated errors."
+      ],
+      "criteria": [
+        {
+          "id": "phrase-1",
+          "label": "Chosen phrase 1",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "2 marks per phrase."
+          ]
+        },
+        {
+          "id": "phrase-2",
+          "label": "Chosen phrase 2",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "2 marks per phrase."
+          ]
+        },
+        {
+          "id": "phrase-3",
+          "label": "Chosen phrase 3",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "2 marks per phrase."
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 5 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-la2",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "LA2",
+    "topicId": "russian-3-2",
+    "conceptId": "put-expressions-below-into-nominative-case",
+    "questionRef": "2022 OL Section LA2",
+    "questionText": "Put three of the expressions below into the nominative case.",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — LA2",
+      "pages": [
+        7
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 6.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Do not penalise if the singular is supplied instead of the plural",
+        "1 mark if nominative correctly identified but spelled incorrectly"
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "средней школы — Средняя школа",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "в учебном заведении — Учебное заведение",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "с офисной техникой — Офисная техника",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "компьютерных программ — Компьютерные программы",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "вредных привычек — Вредные привычки",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "школьного образования — Школьное образование",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 6 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-mm",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "MM",
+    "topicId": "russian-3-5",
+    "conceptId": "match-headings-internet-page-information-supplied",
+    "questionRef": "2022 OL Section MM",
+    "questionText": "Match the headings from an internet page with the \ninformation supplied about St Petersburg. \n \nInsert the number of the correct heading in the \nleft-hand column. \n \n \nCeannteidil ar leathanach ón idirlíon / Headings from an internet page   \n \n \n1.  Население  \n \n \n6.  Религии \n2.  Старые названия  \n \n7.  Дата основания \n3.  Национальности  \n \n8.  Телефонный код \n4.  Расположение \n \n \n9.  Площадь \n5.  Неофициальные названия \n10. Kлимат \n \n \nUimhir / \nNumber  \n \nEolas faoi Chathair Pheadair / Information about St Petersburg \n \n \n16 мая 1703 \n \nдо 1914 года — Санкт-Петербург \nдо 1924 года — Петроград \nдо 1991 года — Ленинград \n \n1439 км² \n \nумеренный морской \n \n5 383 890 человек (2019 год) \n \nрусские  — 92,5 % \nукраинцы —  1,5 % \nбелорусы —  0,9 %  \nтатары  \n—  0,7 % \nевреи  \n—  0,6 % \nузбеки  \n—  0,5 % \nармяне  —  0,5 % \n \nхристиане (преимущественно православные Московского патриархата), мусульмане, \nиудеи, буддисты и др. \n \n+7 812 \n \nПетербург, Питер, Город на Неве, Город-Герой Ленинград, Северная Венеция, \nСеверная столица, Окно в Европу, Город белых ночей. \n \nна северо-западе страны, на побережье Финского залива и в устье реки Невы. \n \n \n",
+    "totalMarks": 40,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — MM",
+      "pages": [
+        8
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 7.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [],
+      "count": 10,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "16 мая 1703 — 7",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "до 1914 года — Санкт-Петербург до 1924 года — Петроград до 1991 года — Ленинград — 2",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "1439 км² — 9",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "умеренный морской — 10",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "5 383 890 человек (2019 год) — 1",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "русские — 92,5 % украинцы — 1,5 % белорусы — 0,9 % татары — 0,7 % евреи — 0,6 % узбеки — 0,5 % армяне — 0,5 % — 3",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "христиане (преимущественно православные Московского патриархата), мусульмане, иудеи, буддисты и др. — 6",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "+7 812 — 8",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Петербург, Питер, Город на Неве, Город-Герой Ленинград, Северная Венеция, Северная столица, Окно в Европу, Город белых ночей. — 5",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-10",
+          "label": "Answer 10",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "на северо-западе страны, на побережье Финского залива и в устье реки Невы. — 4",
+              "marks": 4
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 7 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 7,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-sd",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "SD",
+    "topicId": "russian-3-3",
+    "conceptId": "read-through-dialogue-below-insert-words",
+    "questionRef": "2022 OL Section SD",
+    "questionText": "Read through the dialogue below and insert words in the spaces provided. Select your answers from the lists supplied below. All the words are provided in the appropriate form. Answer Group A or Group B\n\n    Freagair Grúpa A nó Grúpa B.        Answer Group A or Group B\n\n\n\nFocail in easnamh/ Missing words/ Пропущенные слова\n\n  ЭТО МОЙ ГОРОД: ПЕВЕЦ МАРК ТИШМАН»\n\n\n\n               почему      кем         где       чем         какое\n\n\n\nGrúpa A / Group A\n\n\nМарк, расскажите …………………………….. вы родились и выросли?\n\nЯ родился в Махачкале на берегу Каспийского моря. Мы жили на первом этаже\nвосьмиквартирного дома. Там я окончил среднюю школу и в 16 лет уехал в Москву\n\n…………………………….. вы хотели стать в детстве?\n\nВ детстве я мечтал стать водителем автобуса. Часто смотрел как водитель открывал и закрывал\nдвери, нажимая красные и зелёные кнопки.\n\n…………………………….. у вас любимое место в Москве?\n\nЯ обожаю исторический центр Москвы.\n\n…………………………….. вы живёте на Патриарших прудах?\n\nЗдесь я живу последние восемь лет. Это получилось случайно. Я хотел жить на Арбате, но из-за\nпроблем с документами на квартиру в том районе я оказался здесь.\n\n…………………………….. вы любите заниматься в свободное время?\n\nЯ просто люблю гулять по Москве. Вставляю наушники с музыкой или какой-нибудь лекцией и\nиду по тихим переулкам в сторону Арбата, или до Трубной, или за Большой Никитский. По ходу\nучу тексты или сочиняю песни.\n\n                  NÓ / OR\n\n\n\nGrúpa B / Group B\n\n\n\n                  где         чего         что        какой      почему\n\n\n\n\n\n  …………………………….. у вас любимый театр в Москве?\n\n  Театр «Современник», часто ходил туда, когда был студентом.\n\n\n\n  …………………………….. вам нравится встречаться с друзьями?\n\n  Клубы, бары, выставки - места встреч с друзьями.\n\n  …………………………….. вам нравится Москва?\n\n  Москва очень изменилась за последнее время. Здесь стало удобно ходить пешком. Стало\n  много пешеходных зон, парков.\n\n  …………………………….. вы хотите изменить в Москве?\n\n  Я хочу, чтобы как можно больше музеев и театров были доступны людям с ограничениями\n   слуха и зрения. Уверен, это нужно не только им, но и всем нам, всему городу.\n\n  …………………………….. вам не хватает в Москве?\n\n  Мне очень не хватает моря.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "gap-1",
+        "kind": "point",
+        "verbatim": "где",
+        "marks": 4
+      },
+      {
+        "id": "gap-2",
+        "kind": "point",
+        "verbatim": "Кем",
+        "marks": 4
+      },
+      {
+        "id": "gap-3",
+        "kind": "point",
+        "verbatim": "какое",
+        "marks": 4
+      },
+      {
+        "id": "gap-4",
+        "kind": "point",
+        "verbatim": "почему",
+        "marks": 4
+      },
+      {
+        "id": "gap-5",
+        "kind": "point",
+        "verbatim": "чем",
+        "marks": 4
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — SD",
+      "pages": [
+        9,
+        10
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 8, 9.",
+    "kind": "question",
+    "answerVariants": [
+      {
+        "id": "group-a",
+        "label": "Group A",
+        "rows": [
+          {
+            "id": "gap-1",
+            "kind": "point",
+            "verbatim": "где",
+            "marks": 4
+          },
+          {
+            "id": "gap-2",
+            "kind": "point",
+            "verbatim": "Кем",
+            "marks": 4
+          },
+          {
+            "id": "gap-3",
+            "kind": "point",
+            "verbatim": "какое",
+            "marks": 4
+          },
+          {
+            "id": "gap-4",
+            "kind": "point",
+            "verbatim": "почему",
+            "marks": 4
+          },
+          {
+            "id": "gap-5",
+            "kind": "point",
+            "verbatim": "чем",
+            "marks": 4
+          }
+        ]
+      },
+      {
+        "id": "group-b",
+        "label": "Group B",
+        "rows": [
+          {
+            "id": "gap-1",
+            "kind": "point",
+            "verbatim": "какой",
+            "marks": 4
+          },
+          {
+            "id": "gap-2",
+            "kind": "point",
+            "verbatim": "где",
+            "marks": 4
+          },
+          {
+            "id": "gap-3",
+            "kind": "point",
+            "verbatim": "почему",
+            "marks": 4
+          },
+          {
+            "id": "gap-4",
+            "kind": "point",
+            "verbatim": "что",
+            "marks": 4
+          },
+          {
+            "id": "gap-5",
+            "kind": "point",
+            "verbatim": "чего",
+            "marks": 4
+          }
+        ]
+      }
+    ],
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 8, 9 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 8,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-sa",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "SA",
+    "topicId": "russian-3-6",
+    "conceptId": "sentences-topics-below-russian-english-answer",
+    "questionRef": "2022 OL Section SA",
+    "questionText": "Write 3-5 sentences on ONE of the topics below in Russian or English. Your answer should contain three factual details. Marks are awarded for relevant content and textual coherence. Indicate which essay you are writing by supplying the essay titles.\n\n1. Русская кухня / 1. Russian food\n2. Традиционная русская культура / 2. Traditional Russian culture\n3. Как русские школьники проводят летние каникулы / 3. How Russian school children spend their summer holidays\n4. Школы в Российской Федерации / 4. Schools in the Russian Federation\n5. Ваш любимый русский писатель / 5. Your favourite Russian writer",
+    "totalMarks": 15,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — SA",
+      "pages": [
+        14
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 12.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "Write 3-5 sentences on ONE of the following topics in Russian or English. Each answer should contain three factual details. Marks are awarded for relevant content and textual coherence.",
+        "The quality of the English/Russian will only be an assessment factor insofar as it impedes communication."
+      ],
+      "criteria": [
+        {
+          "id": "content",
+          "label": "Content",
+          "maxMarks": 12,
+          "permittedMarks": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "guidance": [
+            "Allocate 4 marks for each correct idea/concept up to a maximum of 12 marks Allocate 2 marks for a partially correct idea/concept up to a maximum of 6 marks."
+          ]
+        },
+        {
+          "id": "coherence",
+          "label": "Textual coherence",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "3",
+              "marks": [
+                3
+              ],
+              "guidance": [
+                "Excellent organisation. A high degree of coherence throughout."
+              ]
+            },
+            {
+              "label": "2",
+              "marks": [
+                2
+              ],
+              "guidance": [
+                "Material generally developed within a carefully planned framework. Generally well- constructed but lacking coherence in places."
+              ]
+            },
+            {
+              "label": "1",
+              "marks": [
+                1
+              ],
+              "guidance": [
+                "Satisfactory organisation of material. Development of ideas patchy and/or unambitious. Rambling and/or repetitive at times."
+              ]
+            },
+            {
+              "label": "0",
+              "marks": [
+                0
+              ],
+              "guidance": [
+                "Limited ability to organise material and develop ideas. Structure lacks coherence."
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 12 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 12,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-ew",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "EW",
+    "topicId": "russian-3-9",
+    "conceptId": "sentences-following-topics-russian-prompts-questions",
+    "questionRef": "2022 OL Section EW",
+    "questionText": "Write 6-10 sentences on ONE of the following topics IN RUSSIAN. The prompts for the questions below are suggestions only.\n\n1. Кемпинг Опишите ваш последний поход с ночёвкой. Куда вы отправились? С кем вы были на кемпинге? Чем вы там занимались? Что вы кушали?\n\n1. Camping Describe a recent camping trip. Where did you camp? Who did you go camping with? What kinds of activities did you do whilst on that trip? How was the food?\n\n2. Письмо Напишите письмо другу по переписке о своём путешествии в большой город. Куда вы ездили? Когда вы ездили? С кем вы ездили? Как вы туда добирались? Какая была погода? Как вы проводили там время?\n\n2. Letter Write a letter to your penpal describing a trip to a big city. Where did you go? When did you go? Who did you go with? How did you get there? What was the weather like? What did you do there?\n\n3. Пример для подражания или мой кумир/герой Напишите о своём кумире/герое. Кто является вашим примером для подражания? Опишите вашего кумира. Почему он/она является для ваc примером для подражания?\n\n3. My role-model Write about your role model. Who is your role model? Describe your role model. Why is this person your role model?",
+    "totalMarks": 30,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — EW",
+      "pages": [
+        15
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2022 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 13, 14.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "Write 6-10 sentences on ONE of the following topics IN RUSSIAN. The prompts for the questions below are suggestions only.",
+        "No marks are awarded for additional information/content."
+      ],
+      "criteria": [
+        {
+          "id": "content",
+          "label": "Communication + content",
+          "maxMarks": 12,
+          "permittedMarks": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "guidance": [
+            "2 points for content details up to maximum of 12"
+          ]
+        },
+        {
+          "id": "expression",
+          "label": "Language + expression",
+          "maxMarks": 12,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "12",
+              "marks": [
+                12
+              ],
+              "guidance": [
+                "Almost flawless in terms of accuracy. Shows sophistication in the manipulation of the structures of the language."
+              ]
+            },
+            {
+              "label": "10-11",
+              "marks": [
+                10,
+                11
+              ],
+              "guidance": [
+                "A few errors, mostly of a minor nature. Successful manipulation of the language."
+              ]
+            },
+            {
+              "label": "7-9",
+              "marks": [
+                7,
+                8,
+                9
+              ],
+              "guidance": [
+                "A number of major grammatical or spelling errors made, without impairing communication significantly. Satisfactory to good manipulation of the language."
+              ]
+            },
+            {
+              "label": "4-6",
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "Communication often impaired by basic error e.g. agreements, verb forms. Limited ability to manipulate language + mainly simple 'translated' language, which impedes communication."
+              ]
+            },
+            {
+              "label": "1-3",
+              "marks": [
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "Accuracy only in the simplest forms. A high incidence of basic error. Very little ability to manipulate language."
+              ]
+            },
+            {
+              "label": "0",
+              "marks": [
+                0
+              ],
+              "guidance": [
+                "Knowledge and range so limited that no mark can be awarded"
+              ]
+            }
+          ],
+          "limits": [
+            {
+              "id": "lower-expression",
+              "maxMarks": 9,
+              "when": {
+                "any": [
+                  {
+                    "criterionIds": [
+                      "content"
+                    ],
+                    "atMost": 6
+                  },
+                  {
+                    "flag": "fewer-six-sentences",
+                    "prompt": "If the answer does not meet the required 6 sentences, or if the content mark is 6 or less, mark expression out of 9 and write ‘lower E’ to indicate this."
+                  }
+                ]
+              },
+              "guidance": [
+                "If the answer does not meet the required 6 sentences, or if the content mark is 6 or less, mark expression out of 9 and write ‘lower E’ to indicate this."
+              ],
+              "bands": [
+                {
+                  "label": "9",
+                  "marks": [
+                    9
+                  ],
+                  "guidance": [
+                    "Almost flawless in terms of accuracy. Shows sophistication in the manipulation of the structures of the language."
+                  ]
+                },
+                {
+                  "label": "8",
+                  "marks": [
+                    8
+                  ],
+                  "guidance": [
+                    "A few errors, mostly of a minor nature. Successful manipulation of the language."
+                  ]
+                },
+                {
+                  "label": "6-7",
+                  "marks": [
+                    6,
+                    7
+                  ],
+                  "guidance": [
+                    "A number of major grammatical or spelling errors made, without impairing communication significantly. Satisfactory to good manipulation of the language."
+                  ]
+                },
+                {
+                  "label": "3-5",
+                  "marks": [
+                    3,
+                    4,
+                    5
+                  ],
+                  "guidance": [
+                    "Communication often impaired by basic error e.g. agreements, verb forms. Limited ability to manipulate language + mainly simple 'translated' language, which impedes communication."
+                  ]
+                },
+                {
+                  "label": "1-2",
+                  "marks": [
+                    1,
+                    2
+                  ],
+                  "guidance": [
+                    "Accuracy only in the simplest forms. A high incidence of basic error. Very little ability to manipulate language."
+                  ]
+                },
+                {
+                  "label": "0",
+                  "marks": [
+                    0
+                  ],
+                  "guidance": [
+                    "Knowledge and range so limited that no mark can be awarded"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "coherence",
+          "label": "Textual coherence",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "6",
+              "marks": [
+                6
+              ],
+              "guidance": [
+                "Excellent organisation. A high degree of coherence throughout."
+              ]
+            },
+            {
+              "label": "4-5",
+              "marks": [
+                4,
+                5
+              ],
+              "guidance": [
+                "Material generally developed within a carefully planned framework. Generally well-constructed but lacking coherence in places."
+              ]
+            },
+            {
+              "label": "2-3",
+              "marks": [
+                2,
+                3
+              ],
+              "guidance": [
+                "Satisfactory organisation of material. Development of ideas patchy and/or unambitious. Rambling and/or repetitive at times."
+              ]
+            },
+            {
+              "label": "1",
+              "marks": [
+                1
+              ],
+              "guidance": [
+                "Limited ability to organise material and develop ideas. Structure lacks coherence."
+              ]
+            },
+            {
+              "label": "0",
+              "marks": [
+                0
+              ],
+              "guidance": [
+                "So ill-organised and lacking coherence that no credit can be given."
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLP000BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 13, 14 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 13,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-l1-1",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "L1",
+    "topicId": "russian-0-3",
+    "conceptId": "language-course-offered-global-dialogue-education",
+    "questionRef": "2022 OL Section L1 Q1",
+    "questionText": "Give one detail about the language course\noffered by Global Dialogue Education Centre.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "English",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Online",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "10-16 year olds",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "1 or 2 weeks",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Up to 15 hours of English per week",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "10-13.30. 16.00-19.30",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 15 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 15,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-l1-2",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "L1",
+    "topicId": "russian-0-8",
+    "conceptId": "masha-visiting-friend",
+    "questionRef": "2022 OL Section L1 Q2",
+    "questionText": "Masha is visiting her friend. Give two details.",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "5 days",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "First time without family / alone",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Visit park",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Summer holidays",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Wooden sculptures",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 15 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 15,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-l1-3-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "L1",
+    "topicId": "russian-0-8",
+    "conceptId": "time-train-departing",
+    "questionRef": "2022 OL Section L1 Q3(i)",
+    "questionText": "What time is the train departing?",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "08.20",
+              "marks": 3
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "The question booklet labels this 3(i); the marking scheme labels it 3. This card follows the original question booklet."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 15 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 15,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-l1-3-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "L1",
+    "topicId": "russian-0-8",
+    "conceptId": "much-passenger-pay-ticket",
+    "questionRef": "2022 OL Section L1 Q3(ii)",
+    "questionText": "How much does the passenger pay for his ticket?",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "16000",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "The question booklet labels this 3(ii); the marking scheme labels it 4. This card follows the original question booklet."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 15 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 15,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-l1-4",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "L1",
+    "topicId": "russian-0-9",
+    "conceptId": "item-customer-chosen",
+    "questionRef": "2022 OL Section L1 Q4",
+    "questionText": "Give one detail about the item the customer has\nchosen.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Black shoes",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Comfortable",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "10% discount",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Size 38",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "For office",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Leather",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "The question booklet labels this 4; the marking scheme labels it unnumbered. This card follows the original question booklet."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 15 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 15,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-l2-1",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "L2",
+    "topicId": "russian-0-1",
+    "conceptId": "eric-parents",
+    "questionRef": "2022 OL Section L2 Q1",
+    "questionText": "Give one detail about Eric’s parents.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 16.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Mother from Latvia",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Father from Russia",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "They came to Ireland before he was born / in 2004",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "They liked the country and decided to stay.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Mother teaches music.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Father has his own business.",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 16 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 16,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-l2-2",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "L2",
+    "topicId": "russian-0-3",
+    "conceptId": "eric-start-doing-years-old",
+    "questionRef": "2022 OL Section L2 Q2",
+    "questionText": "What did Eric start doing when he was 7 years\nold?",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 16.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "school-and-day",
+          "label": "Russian school and day",
+          "answerCount": 2,
+          "rows": [
+            {
+              "id": "school",
+              "text": "Started going to Russian school",
+              "marks": 3
+            },
+            {
+              "id": "day",
+              "text": "on Saturdays",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 16 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 16,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-l2-3-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "L2",
+    "topicId": "russian-0-3",
+    "conceptId": "helps-eric-improve-russian-outside-school",
+    "questionRef": "2022 OL Section L2 Q3(i)",
+    "questionText": "What helps Eric improve his Russian outside of\nschool? Give one detail.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 16.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "His parents have Russian friends",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "They meet up with them often",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He listens to them speaking Russian",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 16 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 16,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-l2-3-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "L2",
+    "topicId": "russian-0-3",
+    "conceptId": "eric-parents-weekends",
+    "questionRef": "2022 OL Section L2 Q3(ii)",
+    "questionText": "What does Eric do with his parents at\nweekends? Give one detail.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 16.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "They watch Russian films together.",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 16 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 16,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-l2-4",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "L2",
+    "topicId": "russian-0-8",
+    "conceptId": "eric-want-visit-russia",
+    "questionRef": "2022 OL Section L2 Q4",
+    "questionText": "Why does Eric want to visit Russia?\nGive one detail.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 16.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He wants to see Siberia, Kamchatka and Karelia.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "It is a unique place.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Russia is a huge, diverse place",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He has only been in Moscow so far",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "To explore his Russian side/heritage",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 16 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 16,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-l3-1",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "L3",
+    "topicId": "russian-0-9",
+    "conceptId": "device-help-dog-owners",
+    "questionRef": "2022 OL Section L3 Q1",
+    "questionText": "What can this device do to help dog owners?\nGive one detail",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Can see the dog on screen",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Play recorded message/music",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Alert you if something unusual happens",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 17 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 17,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-l3-2",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "L3",
+    "topicId": "russian-0-8",
+    "conceptId": "luxury-resort",
+    "questionRef": "2022 OL Section L3 Q2",
+    "questionText": "Give one detail about this luxury resort.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "On the banks of the Volga",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Own beach",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Spa",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Comfortable rooms - standard and luxury",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "In every room, there is a television, fridge, furniture and crockery",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Indoor pool",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Gym",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 17 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 17,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-l3-3",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "L3",
+    "topicId": "russian-0-3",
+    "conceptId": "learning-language-moscow-university",
+    "questionRef": "2022 OL Section L3 Q3",
+    "questionText": "Give one detail about learning a language in\nMoscow state university.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Russian and foreign specialists.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Practical classes and lectures",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "4 years.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Day courses / full time",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Free",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Or on contract basis / for money",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Learn culture",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 17 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 17,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-l3-4",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "L3",
+    "topicId": "russian-2-1",
+    "conceptId": "book",
+    "questionRef": "2022 OL Section L3 Q4",
+    "questionText": "Give two details about this book.",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Russian fairy tales",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Stories about animals and heroes",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Adventures",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Discount of 20% from 30 December until 10 January",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Illustrations by Russian artists / from a collection of paintings",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 17 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 17,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-l4-1",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "L4",
+    "topicId": "russian-0-1",
+    "conceptId": "olga-family",
+    "questionRef": "2022 OL Section L4 Q1",
+    "questionText": "Give two details about Olga’s family.",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — L4",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 18.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Parents divorced soon after she was born",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Raised by her mother and grandmother",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Mother is an art teacher",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Grandmother is a doctor",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "The question booklet labels this 1; the marking scheme labels it 1(i). This card follows the original question booklet."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 18 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 18,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-l4-2-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "L4",
+    "topicId": "russian-0-7",
+    "conceptId": "happened-olga",
+    "questionRef": "2022 OL Section L4 Q2(i)",
+    "questionText": "What happened when Olga was 13?\nGive one detail.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — L4",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 18.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She went on holidays to Moscow with her mother.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She was spotted by a modelling agency",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "The question booklet labels this 2(i); the marking scheme labels it 2(ii). This card follows the original question booklet."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 18 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 18,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-l4-2-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "L4",
+    "topicId": "russian-0-7",
+    "conceptId": "olga-life-new-york",
+    "questionRef": "2022 OL Section L4 Q2(ii)",
+    "questionText": "Give one detail about Olga’s life in New York.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — L4",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 18.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "1999",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She worked as a model",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She did various classes, including ceramics.",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 18 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 18,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
+  },
+  {
+    "id": "ru-2022-ol-l4-3",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2022,
+    "section": "L4",
+    "topicId": "russian-0-11",
+    "conceptId": "olga-like-going-back-russia",
+    "questionRef": "2022 OL Section L4 Q3",
+    "questionText": "Why does Olga like going back to Russia?\nGive one detail.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2022 Ordinary Russian — L4",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 18.",
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "People speak her native language.",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Moscow is the city where her career started",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Her friends are still there.",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2022 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "secFileid": "LC099ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC099ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    },
+    "source": "sec",
+    "paperFileid": "LC099GLPA00BV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2022 Ordinary Level marking scheme, pages 18 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099GLP000EV.pdf",
+      "p": 18,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
   }
 ]
