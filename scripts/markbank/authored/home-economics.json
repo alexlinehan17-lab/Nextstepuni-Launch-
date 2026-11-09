@@ -162322,5 +162322,6062 @@
     ]
    }
   ]
+ },
+ {
+  "id": "he-2020-hl-sa-q1",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-6",
+  "conceptId": "sa-q1",
+  "level": "higher",
+  "year": 2020,
+  "section": "A",
+  "questionRef": "2020 HL Section A Q1",
+  "questionText": "Complete the following table in relation to carbohydrates.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and exact partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "formula-1",
+    "kind": "point",
+    "verbatim": "Monosaccharides — C6H12O6",
+    "marks": 1
+   },
+   {
+    "id": "example-1",
+    "kind": "anyN",
+    "verbatim": "Monosaccharides — Example",
+    "marks": 1,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Glucose",
+      "fructose",
+      "galactose"
+     ]
+    },
+    "contextNote": "Choose ONE example from the SAME required carbohydrate class."
+   },
+   {
+    "id": "formula-2",
+    "kind": "point",
+    "verbatim": "Disaccharides — C12H22O11",
+    "marks": 1
+   },
+   {
+    "id": "example-2",
+    "kind": "anyN",
+    "verbatim": "Disaccharides — Example",
+    "marks": 1,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Sucrose",
+      "lactose",
+      "maltose"
+     ]
+    },
+    "contextNote": "Choose ONE example from the SAME required carbohydrate class."
+   },
+   {
+    "id": "formula-3",
+    "kind": "point",
+    "verbatim": "Polysaccharides — (C6H10O5)n",
+    "marks": 1
+   },
+   {
+    "id": "example-3",
+    "kind": "anyN",
+    "verbatim": "Polysaccharides — Example",
+    "marks": 1,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Starch",
+      "pectin",
+      "cellulose",
+      "glycogen"
+     ]
+    },
+    "contextNote": "Choose ONE example from the SAME required carbohydrate class."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2020-hl-sa-q1",
+  "questionFigureIncludesPrompt": true,
+  "taskGroups": [
+   {
+    "sourceCardId": "he-2020-hl-sa-q1-class-1",
+    "label": "Monosaccharides",
+    "marks": 2,
+    "rowIds": [
+     "formula-1",
+     "example-1"
+    ]
+   },
+   {
+    "sourceCardId": "he-2020-hl-sa-q1-class-2",
+    "label": "Disaccharides",
+    "marks": 2,
+    "rowIds": [
+     "formula-2",
+     "example-2"
+    ]
+   },
+   {
+    "sourceCardId": "he-2020-hl-sa-q1-class-3",
+    "label": "Polysaccharides",
+    "marks": 2,
+    "rowIds": [
+     "formula-3",
+     "example-3"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2020-hl-sa-q2",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sa-q2",
+  "level": "higher",
+  "year": 2020,
+  "section": "A",
+  "questionRef": "2020 HL Section A Q2",
+  "questionText": "Outline how consumers have become more nutritionally aware and health conscious in their food choices.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and exact partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "nutrition",
+    "kind": "criterion",
+    "verbatim": "nutritionally aware",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "ONE required reference to nutritional awareness. (i) examining food labels; comparing nutritional information on products; consuming 5-7 a day; moving away from convenience and processed food; checking product origin; maintaining fitness through nutrition;"
+   },
+   {
+    "id": "health",
+    "kind": "criterion",
+    "verbatim": "health conscious",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "ONE required reference to health consciousness. (ii) choosing organic produce; looking for food traceability; purchasing healthier options; paying more for better quality; including variety in diets to include raw food, dairy free and vegan products; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sa-q3",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-7",
+  "conceptId": "sa-q3",
+  "level": "higher",
+  "year": 2020,
+  "section": "A",
+  "questionRef": "2020 HL Section A Q3",
+  "questionText": "State two functions of omega 3 fatty acids in the diet.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and exact partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "functions",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Give ANY 2 distinct points across the complete original pool; answer lines do not impose category quotas. lowers elevated triglyceride levels reducing the risk of heart disease and stroke; provides starting point for making hormones that regulate blood clotting; prevents stiffness and joint pain by boosting the effectiveness of anti-inflammatory drugs; lowers blood pressure; associated with healthy brain activity; reduces inflammation in asthmatics; may reduce symptoms of ADHD; visual and neurological development in infants; can fight depression and anxiety; eye health; healthy skin and hair; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sa-q4",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-8",
+  "conceptId": "sa-q4",
+  "level": "higher",
+  "year": 2020,
+  "section": "A",
+  "questionRef": "2020 HL Section A Q4",
+  "questionText": "The following health conditions may result from a vitamin deficiency in the diet. Identify one vitamin in each case.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and exact partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "vitamin-1",
+    "kind": "criterion",
+    "verbatim": "Poor blood clotting",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Name ONE vitamin for this required condition. Original 2020 source alternatives are retained exactly: Vitamin K, Vitamin C, Vitamin D,"
+   },
+   {
+    "id": "vitamin-2",
+    "kind": "criterion",
+    "verbatim": "Neural tube defects",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Name ONE vitamin for this required condition. Original 2020 source alternatives are retained exactly: Vitamin B (folate), Vitamin B12,"
+   },
+   {
+    "id": "vitamin-3",
+    "kind": "criterion",
+    "verbatim": "Night blindness",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Name ONE vitamin for this required condition. Original 2020 source alternatives are retained exactly: Vitamin A."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2020-hl-sa-q4",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2020-hl-sa-q5",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sa-q5",
+  "level": "higher",
+  "year": 2020,
+  "section": "A",
+  "questionRef": "2020 HL Section A Q5",
+  "questionText": "State two functions of An Bord Bia (The Irish Food Board).",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and exact partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "functions",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Give ANY 2 distinct points across the complete original pool; answer lines do not impose category quotas. a link between Irish food, drink and horticulture suppliers, existing and potential customers throughout the world; enabling the growth and sustainability of food producers; offers marketing services to food and drinks manufacturers to promote their products worldwide; issues Bord Bia quality marks on meat, eggs and horticulture; runs the Origin Green initiative, enabling food and drink manufacturers to commit to environmental sustainability in Ireland and abroad; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sa-q6",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-3",
+  "conceptId": "sa-q6",
+  "level": "higher",
+  "year": 2020,
+  "section": "A",
+  "questionRef": "2020 HL Section A Q6",
+  "questionText": "In relation to meat, explain each of the following terms: Extractives Marinating",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and exact partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "term-1",
+    "kind": "criterion",
+    "verbatim": "Extractives",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Extractives: substances dissolved in the water of the meat fibres, give meat distinct flavour; improve the flavour of the meat; stimulate the secretion of saliva and gastric juices which aid meat digestion; etc."
+   },
+   {
+    "id": "term-2",
+    "kind": "criterion",
+    "verbatim": "Marinating",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Marinating: covering/soaking/steeping meat in a mixture of acid (wine, lemon juice /vinegar/yoghurt) and other ingredients e.g. oil, alcohol, salt, herbs, spices; breaks down the fibres and tenderises the meat; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sa-q7",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sa-q7",
+  "level": "higher",
+  "year": 2020,
+  "section": "A",
+  "questionRef": "2020 HL Section A Q7",
+  "questionText": "Outline the process involved in the homogenisation of milk.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and exact partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "points",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Give ANY 3 distinct points across the complete original pool; answer lines do not impose category quotas. Milk is heated to 60˚C; forced under pressure through a machine with tiny holes; breaks up the large fat globules; disperses them evenly throughout the milk; suspends the droplets in milk; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sa-q8",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sa-q8",
+  "level": "higher",
+  "year": 2020,
+  "section": "A",
+  "questionRef": "2020 HL Section A Q8",
+  "questionText": "Classify artificial sweeteners and give one example in each class/type.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and exact partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "class-1",
+    "kind": "point",
+    "verbatim": "Intense",
+    "marks": 2
+   },
+   {
+    "id": "sample-1",
+    "kind": "anyN",
+    "verbatim": "Example",
+    "marks": 1,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Aspartame (Canderel)",
+      "Saccharin (Hermesetas)"
+     ]
+    },
+    "contextNote": "Give ONE example matching the SAME sweetener class: Intense."
+   },
+   {
+    "id": "class-2",
+    "kind": "point",
+    "verbatim": "Bulk",
+    "marks": 2
+   },
+   {
+    "id": "sample-2",
+    "kind": "anyN",
+    "verbatim": "Example",
+    "marks": 1,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Sorbitol",
+      "Mannitol"
+     ]
+    },
+    "contextNote": "Give ONE example matching the SAME sweetener class: Bulk."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2020-hl-sa-q8",
+  "questionFigureIncludesPrompt": true,
+  "taskGroups": [
+   {
+    "sourceCardId": "he-2020-hl-sa-q8-class-1",
+    "label": "Intense",
+    "marks": 3,
+    "rowIds": [
+     "class-1",
+     "sample-1"
+    ]
+   },
+   {
+    "sourceCardId": "he-2020-hl-sa-q8-class-2",
+    "label": "Bulk",
+    "marks": 3,
+    "rowIds": [
+     "class-2",
+     "sample-2"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2020-hl-sa-q9",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-5",
+  "conceptId": "sa-q9",
+  "level": "higher",
+  "year": 2020,
+  "section": "A",
+  "questionRef": "2020 HL Section A Q9",
+  "questionText": "What information does each of the following symbols convey to the consumer?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and exact partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "symbol-1",
+    "kind": "criterion",
+    "verbatim": "Green dot",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Green dot is the license symbol; packaging suppliers have contributed to the funding for recovery and recycling of packaging waste; Repak (packaging compliance scheme) is the sole registered licenser of the Green Dot trademark for Ireland, only Repak companies carry this symbol; etc."
+   },
+   {
+    "id": "symbol-2",
+    "kind": "criterion",
+    "verbatim": "Plastic packaging made from polyethylene terephthalate (PET)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Plastic packaging made from polyethylene terephthalate (PET); most common packaging for single-use bottled beverages etc.; have the identification number on the bottom, which makes them easier to identify different types of plastic in the recycling stream; most widely recycled plastic; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2020-hl-sa-q9",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2020-hl-sa-q10",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-4",
+  "conceptId": "sa-q10",
+  "level": "higher",
+  "year": 2020,
+  "section": "A",
+  "questionRef": "2020 HL Section A Q10",
+  "questionText": "In relation to fabric detergents, explain the purpose of each of the following: Enzymes Surfactants",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and exact partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "term-1",
+    "kind": "criterion",
+    "verbatim": "Enzymes",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Enzymes: breakdown protein based stains e.g. milk, blood, egg, into smaller particles; making it easier for detergents to clean fabrics; inactivated at temperatures higher than 60˚C; etc."
+   },
+   {
+    "id": "term-2",
+    "kind": "criterion",
+    "verbatim": "Surfactants",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Surfactants: reduce the surface tension of the fabric; allow fabric to become wet, dislodging the dirt from the fabric; contain a hydrophilic head and hydrophobic tail which reduces the surface tension of water; hydrophilic head attaches to the surface of the water, disrupting the bonding of water molecules and enabling them to thoroughly wet fabric; hydrophobic tail attaches itself to and loosens the dirt or stain on fabric and keeps the dirt particles suspended in the water; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sa-q11",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sa-q11",
+  "level": "higher",
+  "year": 2020,
+  "section": "A",
+  "questionRef": "2020 HL Section A Q11",
+  "questionText": "Differentiate between the mortgage interest rates below. Fixed rate Variable rate",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and exact partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "term-1",
+    "kind": "criterion",
+    "verbatim": "Fixed rate",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Fixed rate: monthly repayments are fixed for a set period of time; repayments will not increase/decrease; fixed rates are available over different periods; etc."
+   },
+   {
+    "id": "term-2",
+    "kind": "criterion",
+    "verbatim": "Variable rate",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Explain the requested variable rate. The source also prints loan-to-value and tracker notes, retained here as supplementary guidance without extra required claims. Variable rate: standard variable rates rise and fall, mortgage repayments can increase and decrease during the term of the mortgage; etc. Loan-to-value rate: rate is based on the amount owed on the mortgage relative to the market value of the property; etc. Tracker rate: rates are set at a fixed % or margin above the European Central Bank (ECB) rate and as this rises and falls, so does a tracker mortgage rate; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sa-q12",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-2",
+  "conceptId": "sa-q12",
+  "level": "higher",
+  "year": 2020,
+  "section": "A",
+  "questionRef": "2020 HL Section A Q12",
+  "questionText": "Describe how each of the following influence consumers when shopping. Product placement Loyalty schemes",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and exact partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "term-1",
+    "kind": "criterion",
+    "verbatim": "Product placement",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Product placement: essential products placed at the back of the shop; products placed by association; special offers; attractive displays; non essentials at checkouts; etc."
+   },
+   {
+    "id": "term-2",
+    "kind": "criterion",
+    "verbatim": "Loyalty schemes",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Loyalty schemes: points earned with each purchase; encourages store loyalty; accumulated points exchanged for money off coupons or as credit towards goods purchased; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sb-q1a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sb-q1a",
+  "level": "higher",
+  "year": 2020,
+  "section": "B",
+  "questionRef": "2020 HL Section B Q1(a)",
+  "questionText": "With reference to five of the above situations/settings, suggest reasons why participants may/may not find it difficult to manage portion sizes.",
+  "stem": "Consumer surveys confirm that large portion sizes are associated with overeating in both adults and children. The following table from a study carried out by safefood reveals participants’ opinions on situations where it is difficult to manage food portion sizes.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 points; original steps [0, 1, 2, 3, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "reasons",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "contextNote": "Refer to FIVE different situations/settings from the complete ten-row original table. The source groups examples as difficult/not difficult, without fixed category quotas or a separate answer key for each situation. Complete original guidance: Difficult: portions large when purchasing processed food e.g. ready meals for one; individual confectionery items can be oversized; sizes of food packs for sharing; oversized tableware; dining out/friends/host, controls portion sizes served; portion size may not be stated on the label e.g. chocolate bars; unable to self-regulate; eating while watching tv; etc. Not difficult: information on packaging gives portion size; restaurants use portion control methods; healthy eating guidelines easily accessible with advice on portion size and calorie content; preparing own food, control over portion sizes; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2020-hl-sb-q1-portions",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2020-hl-sb-q1b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-5",
+  "conceptId": "sb-q1b",
+  "level": "higher",
+  "year": 2020,
+  "section": "B",
+  "questionRef": "2020 HL Section B Q1(b)",
+  "questionText": "Give a detailed account of protein and refer to: • how a peptide bond is formed • essential and non-essential amino acids • supplementary value/complementary role.",
+  "stem": "Consumer surveys confirm that large portion sizes are associated with overeating in both adults and children.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Three required protein headings, four points2 EACH"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "criterion",
+    "verbatim": "How a peptide bond is formed",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "contextNote": "How a peptide bond is formed: two amino acids join together; results in the loss of a water molecule - condensation reaction; the COOH (carboxyl/acidic) group of one amino acid reacts with the NH2 (amino group/basic) group of another; the COOH group loses an OH group; the NH2 group loses a hydrogen (H) atom; the hydrogen and the OH group join together to form a water molecule that is lost; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "heading-2",
+    "kind": "criterion",
+    "verbatim": "Essential and non-essential amino acids",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "contextNote": "Essential and non-essential amino acids: essential amino acids - cannot be manufactured by the body; 8 essential for adults, 10 essential for children; must be supplied by the diet; examples valine, leucine, isoleucine, lysine, methionine, threonine, phenylalanine, tryptophan, histidine, arginine; etc. Non-essential amino acids - can be made by the body; do not need dietary sources; examples alanine, asparagine, cysteine, glutamine, glycine, proline, serine, tyrosine; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "heading-3",
+    "kind": "criterion",
+    "verbatim": "Supplementary value/complementary role",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "contextNote": "Supplementary value/complementary role: the ability of a protein food to make good the deficiency of another protein food; low biological value (LBV) proteins are deficient in one or more essential amino acids; consuming two low LBV protein foods together (each lacking different essential amino acids) can ensure all essential amino acids are obtained; examples of complementary protein foods include beans on toast, hummus and naan, beans and hummus are low in methionine and high in lysine, toast and naan are low in lysine and high in methionine; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sb-q1c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-5",
+  "conceptId": "sb-q1c",
+  "level": "higher",
+  "year": 2020,
+  "section": "B",
+  "questionRef": "2020 HL Section B Q1(c)",
+  "questionText": "Proteins have many functions in food production. Explain the following in relation to protein and make reference to the culinary application of each: • gel formation • foam formation.",
+  "stem": "Consumer surveys confirm that large portion sizes are associated with overeating in both adults and children.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Two required protein properties, four points2 EACH"
+  },
+  "rows": [
+   {
+    "id": "property-1",
+    "kind": "criterion",
+    "verbatim": "Gel formation",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "contextNote": "Explain this REQUIRED property with culinary application. The source provides four points overall for each property, with no separate explanation/application allocation. Gel formation: collagen when heated converts to gelatine; gelatine can absorb large amounts of water when heated; protein chain uncoils and water becomes entrapped; forms a sol; on cooling sol forms a gel, a semi-viscous solution that has a 3D protein matrix in which water molecules become trapped; culinary application – cheesecakes, soufflés, jelly sweets; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "property-2",
+    "kind": "criterion",
+    "verbatim": "Foam formation",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "contextNote": "Explain this REQUIRED property with culinary application. The source provides four points overall for each property, with no separate explanation/application allocation. Foam formation: when egg white is whisked, protein chains unfold and air bubbles form; protein chains entrap air, creating a foam; whisking creates small amount of heat, which begins to set the egg albumin forming a temporary foam; further heating/cooking is required to set as a permanent foam; culinary application – meringues, sponge cakes; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sb-q1d",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sb-q1d",
+  "level": "higher",
+  "year": 2020,
+  "section": "B",
+  "questionRef": "2020 HL Section B Q1(d)",
+  "questionText": "Devise a set of strategies for controlling food portion sizes when shopping for food, eating at home and eating out.",
+  "stem": "Consumer surveys confirm that large portion sizes are associated with overeating in both adults and children.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "One shopping5 + one at home5 + one eating out5 + one other5"
+  },
+  "rows": [
+   {
+    "id": "category-1",
+    "kind": "criterion",
+    "verbatim": "Shopping for food",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "Shopping for food: do not buy foods that you tend to overeat; make a list, buy only what is needed; check the number of portions in pre packed food; if buying treat foods buy snack sizes; buy food already packaged into portion controlled sizes; etc."
+   },
+   {
+    "id": "category-2",
+    "kind": "criterion",
+    "verbatim": "Eating at home",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "Eating at home: eat slowly; use a smaller plate; fill half of the plate with vegetables or salad; serve food on individual plates; freeze or chill left overs immediately to avoid second helpings; avoid eating while watching TV; look at portion size on the label; allow smaller portions for children; eat until satisfied; count calories; etc."
+   },
+   {
+    "id": "category-3",
+    "kind": "criterion",
+    "verbatim": "Eating out",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "Eating out: if ordering high calorie food, choose smaller options; order half portions; have a starter as the main course; share dessert; stop eating when full; check calories on menus; etc."
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "1 other",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "ONE additional distinct strategy from any of the three required categories; no repeated credit. Shopping for food: do not buy foods that you tend to overeat; make a list, buy only what is needed; check the number of portions in pre packed food; if buying treat foods buy snack sizes; buy food already packaged into portion controlled sizes; etc. Eating at home: eat slowly; use a smaller plate; fill half of the plate with vegetables or salad; serve food on individual plates; freeze or chill left overs immediately to avoid second helpings; avoid eating while watching TV; look at portion size on the label; allow smaller portions for children; eat until satisfied; count calories; etc. Eating out: if ordering high calorie food, choose smaller options; order half portions; have a starter as the main course; share dessert; stop eating when full; check calories on menus; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sb-q2a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sb-q2a",
+  "level": "higher",
+  "year": 2020,
+  "section": "B",
+  "questionRef": "2020 HL Section B Q2(a)",
+  "questionText": "Discuss the nutritional significance of cereals in the diet.",
+  "stem": "Cereal products such as bread, pasta and rice are significant energy providers for the body.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 points; original steps [0, 1, 2, 3, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "points",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "contextNote": "Protein: LBV protein; protein gluten - wheat and rye; lysine, threonine, tryptophan and methionine present; can be deficient in some essential amino acids; growth and repair; cereals containing gluten cannot be digested by coeliacs; etc. Fat: polyunsaturated fat that contains essential fatty acids e.g. oleic acid; linoleic acid present in germ; beneficial in low-cholesterol diets; low in kilocalories; heat and energy; etc. Carbohydrate: excellent source of carbohydrates; starch 64% - energy; outer husk contains 8% fibre/cellulose, most of which is removed in the production of white flour - prevents bowel disorders; wheat bran and rolled oats have a low glycaemic index; etc. Vitamins: B group vitamins, B1 (Thiamine), B2 (Riboflavin) - metabolism of carbohydrates; B3 (Niacin) - healthy nerve activity; Vitamin E in germ - antioxidant; etc. Minerals: calcium - healthy bones; etc. non-haem iron; - supplies oxygen to cells; etc. phosphorus - works with calcium for healthy bones; etc. Water: low - hydration; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sb-q2b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sb-q2b",
+  "level": "higher",
+  "year": 2020,
+  "section": "B",
+  "questionRef": "2020 HL Section B Q2(b)",
+  "questionText": "Outline the stages involved in the processing of a cereal product of your choice. In your answer refer to production, packaging and labelling.",
+  "stem": "Cereal products such as bread, pasta and rice are significant energy providers for the body.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Production six2 + packaging3 + labelling3"
+  },
+  "rows": [
+   {
+    "id": "production",
+    "kind": "criterion",
+    "verbatim": "Production",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "contextNote": "Use ONE coherent Flour profile throughout. Flour: screening; cleaning; conditioning; blending; (wholegrain flour, bran and germ produced at this stage); break rolling; sifting and purifying; reducing rollers; air classifying; fortification /addition of additives; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-6",
+      "verbatim": "Point 6",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "packaging",
+    "kind": "criterion",
+    "verbatim": "Packaging",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Describe packaging appropriate to the SAME selected product. Packaging: weighed; packed in paper, cardboard, plastic; glass; etc."
+   },
+   {
+    "id": "labelling",
+    "kind": "criterion",
+    "verbatim": "Labelling",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Describe labelling appropriate to the SAME selected product. Labelling: type; brand name; best before date; quantity; nutritional information; specific dietary information; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "answerVariants": [
+   {
+    "id": "cereal-1",
+    "label": "Flour",
+    "rows": [
+     {
+      "id": "production",
+      "kind": "criterion",
+      "verbatim": "Production",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ],
+      "contextNote": "Use ONE coherent Flour profile throughout. Flour: screening; cleaning; conditioning; blending; (wholegrain flour, bran and germ produced at this stage); break rolling; sifting and purifying; reducing rollers; air classifying; fortification /addition of additives; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-5",
+        "verbatim": "Point 5",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-6",
+        "verbatim": "Point 6",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "packaging",
+      "kind": "criterion",
+      "verbatim": "Packaging",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "Describe packaging appropriate to the SAME selected product. Packaging: weighed; packed in paper, cardboard, plastic; glass; etc."
+     },
+     {
+      "id": "labelling",
+      "kind": "criterion",
+      "verbatim": "Labelling",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "Describe labelling appropriate to the SAME selected product. Labelling: type; brand name; best before date; quantity; nutritional information; specific dietary information; etc."
+     }
+    ]
+   },
+   {
+    "id": "cereal-2",
+    "label": "Pasta",
+    "rows": [
+     {
+      "id": "production",
+      "kind": "criterion",
+      "verbatim": "Production",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ],
+      "contextNote": "Use ONE coherent Pasta profile throughout. Pasta: made from endosperm of durum wheat; endosperm is ground into semolina flour; mixed with eggs, water, salt and oil to form a dough; dough is moulded into various shapes; other ingredients can be added for colour e.g. spinach; tomato puree, squid ink; moulded into different shapes; can be fresh or dried; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-5",
+        "verbatim": "Point 5",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-6",
+        "verbatim": "Point 6",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "packaging",
+      "kind": "criterion",
+      "verbatim": "Packaging",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "Describe packaging appropriate to the SAME selected product. Packaging: weighed; packed in paper, cardboard, plastic; glass; etc."
+     },
+     {
+      "id": "labelling",
+      "kind": "criterion",
+      "verbatim": "Labelling",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "Describe labelling appropriate to the SAME selected product. Labelling: type; brand name; best before date; quantity; nutritional information; specific dietary information; etc."
+     }
+    ]
+   },
+   {
+    "id": "cereal-3",
+    "label": "Another valid cereal product",
+    "rows": [
+     {
+      "id": "production",
+      "kind": "criterion",
+      "verbatim": "Production",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ],
+      "contextNote": "Use ONE coherent Another valid cereal product profile throughout. The paper leaves the cereal-product choice open. No further production model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-5",
+        "verbatim": "Point 5",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       },
+       {
+        "id": "point-6",
+        "verbatim": "Point 6",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         1,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "packaging",
+      "kind": "criterion",
+      "verbatim": "Packaging",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "Describe packaging appropriate to the SAME selected product. Packaging: weighed; packed in paper, cardboard, plastic; glass; etc."
+     },
+     {
+      "id": "labelling",
+      "kind": "criterion",
+      "verbatim": "Labelling",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ],
+      "contextNote": "Describe labelling appropriate to the SAME selected product. Labelling: type; brand name; best before date; quantity; nutritional information; specific dietary information; etc."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2020-hl-sb-q2c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-6",
+  "conceptId": "sb-q2c",
+  "level": "higher",
+  "year": 2020,
+  "section": "B",
+  "questionRef": "2020 HL Section B Q2(c)",
+  "questionText": "Explain the benefits of a diet high in fibre.",
+  "stem": "Cereal products such as bread, pasta and rice are significant energy providers for the body.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "benefits",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12
+    ],
+    "contextNote": "Peristalsis speeds up passage of food and waste; prevents bowel disorders; prevents poisonous substances building up in the body; adds bulk to the diet, giving a feeling of fullness without adding calories; aids in achieving a healthy weight; controls blood sugar levels, slows the release of glucose into the blood which benefits diabetics; lowers blood cholesterol therefore reducing rick of CHD; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sb-q3a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-4",
+  "conceptId": "sb-q3a",
+  "level": "higher",
+  "year": 2020,
+  "section": "B",
+  "questionRef": "2020 HL Section B Q3(a)",
+  "questionText": "Discuss methods of good practice to ensure the safe preparation and storage of food in the home.",
+  "stem": "Safe food storage and preparation practices help to prevent food waste and foodborne illnesses.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "One preparation3 + one storage3 + two other3"
+  },
+  "rows": [
+   {
+    "id": "preparation",
+    "kind": "criterion",
+    "verbatim": "Preparation",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Preparation: avoid over-handling food; wash hands before handling food; frozen meat and poultry should be thawed fully before cooking; avoid having food out of fridge for long periods during preparation; ensure surfaces and utensils are clean; good lighting and ventilation; HACCP; etc."
+   },
+   {
+    "id": "storage",
+    "kind": "criterion",
+    "verbatim": "Storage",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Storage: cover food before storage; check fridge/freezer temperature; check best before and use by dates; store perishable food below 5°C; store frozen food at -18°C; remove packaging from fruit and vegetables; cool cooked foods before storage; store perishable and chilled cooked food in fridge; store ready-to-eat food separate to raw food; store raw food on base of fridge; avoid over- packing the fridge; etc."
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "2 other points",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "TWO additional distinct points from either category; no repeated credit. Preparation: avoid over-handling food; wash hands before handling food; frozen meat and poultry should be thawed fully before cooking; avoid having food out of fridge for long periods during preparation; ensure surfaces and utensils are clean; good lighting and ventilation; HACCP; etc. Storage: cover food before storage; check fridge/freezer temperature; check best before and use by dates; store perishable food below 5°C; store frozen food at -18°C; remove packaging from fruit and vegetables; cool cooked foods before storage; store perishable and chilled cooked food in fridge; store ready-to-eat food separate to raw food; store raw food on base of fridge; avoid over- packing the fridge; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sb-q3b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-4",
+  "conceptId": "sb-q3b",
+  "level": "higher",
+  "year": 2020,
+  "section": "B",
+  "questionRef": "2020 HL Section B Q3(b)",
+  "questionText": "Describe two methods of home food preservation. In each case refer to: • how the method of preservation is carried out • the underlying principle • risk of food spoilage.",
+  "stem": "Safe food storage and preparation practices help to prevent food waste and foodborne illnesses.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 26,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "TWO profiles each: method2×2 + principle2×3 + risk3"
+  },
+  "rows": [
+   {
+    "id": "method-1",
+    "kind": "criterion",
+    "verbatim": "Preservation method",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Describe method 1 of TWO DIFFERENT methods; retain the SAME method throughout its three criteria. Complete five paired original profiles (including all named submethods): Method: Freezing: removal of warmth and moisture; ice crystals formed; blanching; freeze at -25°C, store at -18°C; etc.\nUnderlying principle: Low temperatures inactive micro- organism growth; slow down enzyme activity; convert water to ice making it unavailable to microorganisms; blanching – high temperature inactivates micro- organisms and enzymes; food wrapped prior to freezing prevents re-entry of micro-organisms; etc.\nRisk of food spoilage: Freezer burn/ discoloration; toughening; thawing and refreezing; etc.\n\nMethod: Heat treatments: e.g. jam, chutney; etc. Fruit and/or vegetables are boiled with a mixture of sugar, vinegar, spices; etc.\nUnderlying principle: High temperatures destroy micro- organisms; inactivate enzymes; vinegar in chutney reduces pH so microbes cannot survive; high concentration of sugar/salt causes water to pass from bacterial cell by osmosis which destroys the bacteria; sealing in airtight containers prevents re-entry of micro- organisms; etc.\nRisk of food spoilage: Incorrect concentration of sugar; jars not sealed properly; etc.\n\nMethod: Chemical preservation: e.g. pickling etc. Fruit and/or vegetables are preserved in vinegar with sugar, salt and spices added; etc.\nUnderlying principle: Chemical preservatives e.g. salt, sugar, acids etc. dissolve in the water of the food cells forming a concentrated solution; microbial cells are dehydrated by osmosis and destroyed; acids lower ph to a level unsuitable for microbial growth and enzyme activity; etc.\nRisk of food spoilage: Incorrect concentration of vinegar; jars not sealed properly; etc.\n\nMethod: Dehydration: removal of moisture from herbs, fruit, vegetables, meat; etc.\nUnderlying principle: Water is evaporated from the cells of the food causing them to become dehydrated; fruit/vegetables are blanched before drying to inactivate enzymes; etc.\nRisk of food spoilage: All moisture not removed from food; etc.\n\nMethod: Salting: e.g. Dry salting - meat or fish covered with salt; flavourings e.g. sugar may be added etc. Brining - meat, fish or vegetables are steeped in a salt/water solution; excess water removed; etc.\nUnderlying principle: Salt inhibits the growth of microorganisms by osmosis; concentrations of up to 20% salt are required to destroy most bacteria; etc.\nRisk of food spoilage: Incorrect concentration of salt; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "principle-1",
+    "kind": "criterion",
+    "verbatim": "Underlying principle",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Explain the principle for the SAME selected method 1; use its matching original table column in the complete guidance above.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "risk-1",
+    "kind": "criterion",
+    "verbatim": "Risk of food spoilage",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Explain a spoilage risk for the SAME selected method 1; use its matching original table column in the complete guidance above."
+   },
+   {
+    "id": "method-2",
+    "kind": "criterion",
+    "verbatim": "Preservation method",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Describe method 2 of TWO DIFFERENT methods; retain the SAME method throughout its three criteria. Complete five paired original profiles (including all named submethods): Method: Freezing: removal of warmth and moisture; ice crystals formed; blanching; freeze at -25°C, store at -18°C; etc.\nUnderlying principle: Low temperatures inactive micro- organism growth; slow down enzyme activity; convert water to ice making it unavailable to microorganisms; blanching – high temperature inactivates micro- organisms and enzymes; food wrapped prior to freezing prevents re-entry of micro-organisms; etc.\nRisk of food spoilage: Freezer burn/ discoloration; toughening; thawing and refreezing; etc.\n\nMethod: Heat treatments: e.g. jam, chutney; etc. Fruit and/or vegetables are boiled with a mixture of sugar, vinegar, spices; etc.\nUnderlying principle: High temperatures destroy micro- organisms; inactivate enzymes; vinegar in chutney reduces pH so microbes cannot survive; high concentration of sugar/salt causes water to pass from bacterial cell by osmosis which destroys the bacteria; sealing in airtight containers prevents re-entry of micro- organisms; etc.\nRisk of food spoilage: Incorrect concentration of sugar; jars not sealed properly; etc.\n\nMethod: Chemical preservation: e.g. pickling etc. Fruit and/or vegetables are preserved in vinegar with sugar, salt and spices added; etc.\nUnderlying principle: Chemical preservatives e.g. salt, sugar, acids etc. dissolve in the water of the food cells forming a concentrated solution; microbial cells are dehydrated by osmosis and destroyed; acids lower ph to a level unsuitable for microbial growth and enzyme activity; etc.\nRisk of food spoilage: Incorrect concentration of vinegar; jars not sealed properly; etc.\n\nMethod: Dehydration: removal of moisture from herbs, fruit, vegetables, meat; etc.\nUnderlying principle: Water is evaporated from the cells of the food causing them to become dehydrated; fruit/vegetables are blanched before drying to inactivate enzymes; etc.\nRisk of food spoilage: All moisture not removed from food; etc.\n\nMethod: Salting: e.g. Dry salting - meat or fish covered with salt; flavourings e.g. sugar may be added etc. Brining - meat, fish or vegetables are steeped in a salt/water solution; excess water removed; etc.\nUnderlying principle: Salt inhibits the growth of microorganisms by osmosis; concentrations of up to 20% salt are required to destroy most bacteria; etc.\nRisk of food spoilage: Incorrect concentration of salt; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "principle-2",
+    "kind": "criterion",
+    "verbatim": "Underlying principle",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Explain the principle for the SAME selected method 2; use its matching original table column in the complete guidance above.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "risk-2",
+    "kind": "criterion",
+    "verbatim": "Risk of food spoilage",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Explain a spoilage risk for the SAME selected method 2; use its matching original table column in the complete guidance above."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "taskGroups": [
+   {
+    "sourceCardId": "he-2020-hl-sb-q3b-method-1",
+    "label": "Preservation method 1",
+    "marks": 13,
+    "rowIds": [
+     "method-1",
+     "principle-1",
+     "risk-1"
+    ]
+   },
+   {
+    "sourceCardId": "he-2020-hl-sb-q3b-method-2",
+    "label": "Preservation method 2",
+    "marks": 13,
+    "rowIds": [
+     "method-2",
+     "principle-2",
+     "risk-2"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2020-hl-sb-q3c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-4",
+  "conceptId": "sb-q3c",
+  "level": "higher",
+  "year": 2020,
+  "section": "B",
+  "questionRef": "2020 HL Section B Q3(c)",
+  "questionText": "Outline the protection provided to the consumer by current food legislation. Refer to one Regulation/Act in your answer.",
+  "stem": "Safe food storage and preparation practices help to prevent food waste and foodborne illnesses.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name4 + two matching points4"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "criterion",
+    "verbatim": "Name of Act",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Name ONE Regulation/Act consistently throughout. Original selected name: Food Hygiene Regulations"
+   },
+   {
+    "id": "details",
+    "kind": "criterion",
+    "verbatim": "points",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "contextNote": "Two details about the SAME named Regulation/Act. The original historical 2020 legal account is retained. Food Hygiene Regulations: ban the sale of food that is diseased, contaminated or unfit for human consumption; require precautions to be taken to prevent the contamination of food; require food premises to maintain hygienic conditions; require food handlers to maintain the highest standards of hygiene and adhere to HACCP system; require mobile food stalls to obtain a licence for their business; issue closure orders to food premises where there is an immediate threat to public health; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "answerVariants": [
+   {
+    "id": "law-1",
+    "label": "Food Hygiene Regulations",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name of Act",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4
+      ],
+      "contextNote": "Name ONE Regulation/Act consistently throughout. Original selected name: Food Hygiene Regulations"
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8
+      ],
+      "contextNote": "Two details about the SAME named Regulation/Act. The original historical 2020 legal account is retained. Food Hygiene Regulations: ban the sale of food that is diseased, contaminated or unfit for human consumption; require precautions to be taken to prevent the contamination of food; require food premises to maintain hygienic conditions; require food handlers to maintain the highest standards of hygiene and adhere to HACCP system; require mobile food stalls to obtain a licence for their business; issue closure orders to food premises where there is an immediate threat to public health; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "law-2",
+    "label": "Food Information to Consumers (FIC) Regulation",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name of Act",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4
+      ],
+      "contextNote": "Name ONE Regulation/Act consistently throughout. Original selected name: Food Information to Consumers (FIC) Regulation"
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8
+      ],
+      "contextNote": "Two details about the SAME named Regulation/Act. The original historical 2020 legal account is retained. Food Information to Consumers (FIC) Regulation: labelling requirements which must appear on packaged food - name of the food; list of ingredients in descending order of weight; declaration of allergens; quantity of certain ingredients; net quantity; date of minimum durability; special storage instructions; name and address of the food business; country of origin; instructions for use; alcohol strength; etc. nutritional labelling requirements: nutritional information per 100 g/100 ml; must relate to foodstuff as sold; must be presented together in one place, in a table with numbers aligned; must provide minimum mandatory information – energy, fat, saturates, carbohydrates, sugars, protein and salt; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "law-3",
+    "label": "European Communities (Hygiene of Foodstuffs) Regulations",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name of Act",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4
+      ],
+      "contextNote": "Name ONE Regulation/Act consistently throughout. Original selected name: European Communities (Hygiene of Foodstuffs) Regulations"
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8
+      ],
+      "contextNote": "Two details about the SAME named Regulation/Act. The original historical 2020 legal account is retained. European Communities (Hygiene of Foodstuffs) Regulations: outline the general hygiene standards that food premises must follow; require all staff to be trained in food hygiene; require a food safety management system e.g. HACCP, to be in place and adhered to; where there is an immediate risk to public health, closure orders can be issued to food premises and unfit food destroyed; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "law-4",
+    "label": "Sale of Food and Drugs Acts",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name of Act",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4
+      ],
+      "contextNote": "Name ONE Regulation/Act consistently throughout. Original selected name: Sale of Food and Drugs Acts"
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8
+      ],
+      "contextNote": "Two details about the SAME named Regulation/Act. The original historical 2020 legal account is retained. Sale of Food and Drugs Acts: protects the consumer against fraud and adulteration of food; it is an offence to mix, colour or stain a food with an ingredient or material that makes it hazardous to human health; it is an offence to sell any food that is not of the nature and quality demanded by consumers; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "law-5",
+    "label": "Health Acts",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name of Act",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4
+      ],
+      "contextNote": "Name ONE Regulation/Act consistently throughout. Original selected name: Health Acts"
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8
+      ],
+      "contextNote": "Two details about the SAME named Regulation/Act. The original historical 2020 legal account is retained. Health Acts: prevent danger to public health arising from the importation, manufacture, distribution or sale of food; control compositional standards of foods that are of importance to consumers’ health; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "law-6",
+    "label": "An Bord Bia Act 1994",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name of Act",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4
+      ],
+      "contextNote": "Name ONE Regulation/Act consistently throughout. Original selected name: An Bord Bia Act 1994"
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8
+      ],
+      "contextNote": "Two details about the SAME named Regulation/Act. The original historical 2020 legal account is retained. Accepted by name only in the source; no detail model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "law-7",
+    "label": "Food Safety Authority of Ireland Act",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name of Act",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4
+      ],
+      "contextNote": "Name ONE Regulation/Act consistently throughout. Original selected name: Food Safety Authority of Ireland Act"
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8
+      ],
+      "contextNote": "Two details about the SAME named Regulation/Act. The original historical 2020 legal account is retained. Accepted by name only in the source; no detail model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "law-8",
+    "label": "Another valid Regulation/Act",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name of Act",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4
+      ],
+      "contextNote": "Name ONE Regulation/Act consistently throughout. Original selected name: Another valid Regulation/Act"
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8
+      ],
+      "contextNote": "Two details about the SAME named Regulation/Act. The original historical 2020 legal account is retained. The source leaves valid alternatives open; no further detail model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2020-hl-sb-q4a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-3",
+  "conceptId": "sb-q4a",
+  "level": "higher",
+  "year": 2020,
+  "section": "B",
+  "questionRef": "2020 HL Section B Q4(a)",
+  "questionText": "Name and describe one household appliance with a motor suitable for use in a kitchen. Refer to: • selection criteria • sourcing consumer information • working principle • guidelines for use.",
+  "stem": "Design and style are inherent factors in modern kitchen appliances.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 26,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name2 + selection3×2 + information3×2 + working4×2 + use2×2"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "criterion",
+    "verbatim": "Name of household appliance",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Select ONE motorised appliance suitable for use in a kitchen, consistently throughout all five criteria. Complete original name pool: e.g. refrigerator, food processor, food mixer, juicer, hand held blender, liquidiser, smoothie maker, electric carving knife, extractor fan, can opener, soup maker, microwave oven, washing machine, tumble dryer, dishwasher etc."
+   },
+   {
+    "id": "selection",
+    "kind": "criterion",
+    "verbatim": "Selection criteria",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "For the SAME selected appliance. Cost; brand name; energy efficiency; safety; size; space available; design and construction; ease of cleaning; guarantee; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "information",
+    "kind": "criterion",
+    "verbatim": "Sourcing consumer information",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "For the SAME selected appliance. Online reviews; sales people; consumer magazines; web sites; advertisements; newspaper /magazine articles; manufacturers leaflets/brochures; word of mouth; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "working",
+    "kind": "criterion",
+    "verbatim": "Working principle",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "contextNote": "For the SAME selected appliance. Full refrigerator and food-processor models follow; other listed appliances are accepted by name, with no additional working model printed or invented. Labelled diagrams are accepted. Refrigerator: compressor contains gaseous refrigerant; motor attached to compressor forces gaseous refrigerant into the condenser; condenser cools the refrigerant and converts it to a liquid; liquid refrigerant passes into the evaporator where it changes to a gas drawing heat from inside the fridge; gaseous refrigerant returns to the compressor and the cycle begins again; thermostat disconnects the motor when the fridge temperature is between 1°C and 4°C; etc. Food processor: blade/disc is placed on the spindle; food is placed in the bowl/feeder funnel, lid is locked in place; plugged into electric socket; motor powered by electricity causes the belt in the base to turn; the belt causes the spindle and attachments to rotate at high speed; foods can be chopped, liquidised, sliced, grated or whisked; foods/liquids can be added at the start or during operation through the feed tube; a pusher is used to push food through; safety lock system prevents the appliance from operating unless the lid is fully locked in position, it will turn off the motor if the lid is removed during use; etc. N.B. Accept well labelled diagram/s",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "use",
+    "kind": "criterion",
+    "verbatim": "Guidelines for use",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "For the SAME selected appliance. Full refrigerator and food-processor models follow; no additional use models are invented. Food processor: never use with wet hands; choose appropriate attachment; assemble correctly; choose correct speed; etc. Refrigerator: avoid opening door unnecessarily; cool hot food before placing in the fridge; cover food; store raw food below coked food; use food in rotation; do not over pack; etc. N.B. Accept points relevant to household appliances with a motor suitable for use in a kitchen.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sb-q4b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-5",
+  "conceptId": "sb-q4b",
+  "level": "higher",
+  "year": 2020,
+  "section": "B",
+  "questionRef": "2020 HL Section B Q4(b)",
+  "questionText": "Outline how the consumer can protect the environment when choosing, using and disposing of electrical appliances.",
+  "stem": "Design and style are inherent factors in modern kitchen appliances.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "ONE required choosing/using/disposing point4 EACH"
+  },
+  "rows": [
+   {
+    "id": "category-1",
+    "kind": "criterion",
+    "verbatim": "Choosing",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Choosing: high rating on energy efficient label; correct size for needs; etc."
+   },
+   {
+    "id": "category-2",
+    "kind": "criterion",
+    "verbatim": "Using",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Using: economy cycles; use full loads; low temperature washes; standby mode switched off; etc."
+   },
+   {
+    "id": "category-3",
+    "kind": "criterion",
+    "verbatim": "Disposing",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Disposing: recycling centres; care when disposing of fridges (refrigerant gas); WEEE directive requires producers to finance the collection, treatment, recovery and environmentally-sound disposal of waste electrical and electronic equipment; enables consumers to leave household electrical and electronic equipment back free of charge, either to retail outlets or to other authorised collection points; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sb-q4c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-2",
+  "conceptId": "sb-q4c",
+  "level": "higher",
+  "year": 2020,
+  "section": "B",
+  "questionRef": "2020 HL Section B Q4(c)",
+  "questionText": "Explain how the Sale of Goods and Supply of Services Act (1980) supports the consumer should the product prove faulty.",
+  "stem": "Design and style are inherent factors in modern kitchen appliances.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 1, 2, 3, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "points",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "contextNote": "Original historical account of the 1980 Act named in the paper: Legally binding contract between the buyer and seller when a product is purchased; goods must be fit for the purpose intended; goods must be of merchantable quality; reasonably durable; goods must be as described; goods must correspond to the displayed sample; act applies to guarantees and notices in shops; redress – refund, repair or replace; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sb-q5a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-0",
+  "conceptId": "sb-q5a",
+  "level": "higher",
+  "year": 2020,
+  "section": "B",
+  "questionRef": "2020 HL Section B Q5(a)",
+  "questionText": "Give an account of the historical development of the family in Ireland from the middle of the twentieth century to the present day.",
+  "stem": "A family is two or more people who share goals and values, have long term commitments to one another and usually reside in the same dwelling.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "TWO mid-century4 + TWO present-day4 + ONE other4"
+  },
+  "rows": [
+   {
+    "id": "middle",
+    "kind": "criterion",
+    "verbatim": "middle of the century",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8
+    ],
+    "contextNote": "Post industrialisation: decline in rural extended family; move towards more nuclear families; more mobile; couples married younger; both parents could work outside the home; couples married for love rather than economic reasons; wages increased, better standard of living; children nurtured and educated; family size decreased; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "present",
+    "kind": "criterion",
+    "verbatim": "present day",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8
+    ],
+    "contextNote": "Present day means the original 2020 source context. The modern family: nuclear family; divorce; blended family; same sex marriage; family members travel abroad to seek work; communication on Facebook, Skype, Zoom etc.; further reduction in family size; dual-income families increased; more egalitarian type families; greater democracy within families; higher standard of living; increased demand for childcare; role overload; role conflict; state supports for families; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "1 other",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "ONE additional distinct point from either era, without repeated credit. Post industrialisation: decline in rural extended family; move towards more nuclear families; more mobile; couples married younger; both parents could work outside the home; couples married for love rather than economic reasons; wages increased, better standard of living; children nurtured and educated; family size decreased; etc. The modern family: nuclear family; divorce; blended family; same sex marriage; family members travel abroad to seek work; communication on Facebook, Skype, Zoom etc.; further reduction in family size; dual-income families increased; more egalitarian type families; greater democracy within families; higher standard of living; increased demand for childcare; role overload; role conflict; state supports for families; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sb-q5b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-0",
+  "conceptId": "sb-q5b",
+  "level": "higher",
+  "year": 2020,
+  "section": "B",
+  "questionRef": "2020 HL Section B Q5(b)",
+  "questionText": "Outline the roles and responsibilities of family members and explain how these roles evolve through the life cycle of the family.",
+  "stem": "A family is two or more people who share goals and values, have long term commitments to one another and usually reside in the same dwelling.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "ONE required reference6 to EACH family group"
+  },
+  "rows": [
+   {
+    "id": "group-1",
+    "kind": "criterion",
+    "verbatim": "Children’s/teenager’s roles and responsibilities",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Children’s/teenager’s roles and responsibilities: responsibilities influenced by age; showing respect, learning to behave in a socially acceptable manner; acquiring knowledge formally and informally; achieving gradual independence; adolescents may have extra responsibilities helping with younger siblings; contributing to decision making and running of the home; etc."
+   },
+   {
+    "id": "group-2",
+    "kind": "criterion",
+    "verbatim": "Parent’s roles and responsibilities",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Parent’s roles and responsibilities: reproduction; nurturing; socialisation; economic; education; caring for each other; caring for the elderly; etc."
+   },
+   {
+    "id": "group-3",
+    "kind": "criterion",
+    "verbatim": "Grandparent’s roles and responsibilities",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Grandparent’s roles and responsibilities: grandparents play a prominent role in family life; spending time with their children/grandchildren; provide childcare; financial help; emotional support; passing on values; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sb-q5c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-0",
+  "conceptId": "sb-q5c",
+  "level": "higher",
+  "year": 2020,
+  "section": "B",
+  "questionRef": "2020 HL Section B Q5(c)",
+  "questionText": "Discuss the importance of good communication within the family.",
+  "stem": "A family is two or more people who share goals and values, have long term commitments to one another and usually reside in the same dwelling.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "points",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12
+    ],
+    "contextNote": "Encourages good quality relationships; children feel valued; develop good listening skills; prevents stress; easier to solve disagreements; develops positive self-esteem; creates a positive and relaxed home environment; clarifies rules and expectations; helps to build trust among family members; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q1ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1ai",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E1 Q1(a)(i)",
+  "questionText": "Evaluate the suitability of open plan living spaces in house design.",
+  "stem": "Flexibility of space is critical to the success of today’s homes.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points; original steps [0, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "points",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12,
+     14,
+     16
+    ],
+    "contextNote": "Evaluate FOUR points using the complete original positive/negative pool, with no fixed balance quota. Multifunctional; brings family together; easier to observe children; conducive to entertaining; traffic flow; spacious and visually appealing; increases value of property; shared light; layout flexibility; improved sociability and communication; etc. High noise levels; spaces can appear untidy; lingering cooking smells; heat costs; lack privacy; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q1aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-4",
+  "conceptId": "sc-q1aii",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E1 Q1(a)(ii)",
+  "questionText": "Discuss the factors that should be considered when planning the interior design of a home.",
+  "stem": "Flexibility of space is critical to the success of today’s homes.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points; original steps [0, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "factors",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12,
+     14,
+     16
+    ],
+    "contextNote": "Budget available; family requirements; special needs; traffic flow; aesthetics; comfort; ergonomics; environmental awareness; sustainability; colour scheme; fabrics; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q1aiii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-4",
+  "conceptId": "sc-q1aiii",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E1 Q1(a)(iii)",
+  "questionText": "Describe three principles of design and give an example of the application of each principle when designing an interior space.",
+  "stem": "Flexibility of space is critical to the success of today’s homes.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 4, 6]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "principles",
+    "marks": 18,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12,
+     14,
+     16,
+     18
+    ],
+    "contextNote": "Select THREE DIFFERENT principles and include an application for each. The source gives six marks overall per principle, with no internal description/application split. All four complete original models: Balance; proportion; emphasis; rhythm; Balance: when harmony is achieved between the elements of design (colours, patterns and textures); well-balanced room is aesthetically pleasing; symmetrical balance is achieved when one object is a mirror image of another in terms of size/shape, colour, pattern or texture; etc. Proportion: relationship between objects and their size; achieved when the pieces of furniture in a room relate to one another in size and relate to the size of the room; etc. Emphasis: the eye is drawn to a particular object/area/feature in a room; add interest/variety to a room giving it a focal point; achieved by using strong/contrasting colours, pattern, texture, shape or lighting; etc. Rhythm: used to link various objects in a room to create a harmonious, unified look; colours /patterns/textures repeated to bring a space together; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q1bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1bi",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E1 Q1(b)(i)",
+  "questionText": "Discuss the comparative costs for a young couple of buying versus renting a house.",
+  "stem": "‘The average rent in Ireland is at an all-time high and the availability of houses to rent is at its lowest ever level.’ (www.daft.ie 2019)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points; original steps [0, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "factors",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12,
+     14,
+     16
+    ],
+    "contextNote": "Compare buying and renting using FOUR points overall; no fixed quota for each cost category. Original historical 2020 source figures and conditions: Buying: initial costs – 10% deposit on properties up to €220,000, over €220,000 20% deposit required on the excess; fees – lending agency fees to include application fee, property search fee, lender’s survey cost, indemnity bond; legal fees; stamp duty; buyers survey fee; etc. Continuous costs – property tax (LPT) monthly mortgage repayments; mortgage protection policy; house insurance; maintenance and repair costs; service charges; household bills; etc. Renting: initial costs – deposit of one month to six weeks rent in advance; fees – lending agency fees if used to find a rental property; etc. Continuous costs – monthly rent payments; contents insurance; service charges; household bills; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q1bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1bii",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E1 Q1(b)(ii)",
+  "questionText": "Name and give details of one housing scheme offered by Local Authorities.",
+  "stem": "‘The average rent in Ireland is at an all-time high and the availability of houses to rent is at its lowest ever level.’ (www.daft.ie 2019)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 14,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "One name2 + three matching details4"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "criterion",
+    "verbatim": "Name",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Name ONE local-authority scheme consistently throughout. Original selected name: Housing Assistance Payment (HAP)"
+   },
+   {
+    "id": "details",
+    "kind": "criterion",
+    "verbatim": "points",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12
+    ],
+    "contextNote": "Give THREE details for the SAME selected scheme. Original historical 2020 rates and conditions: Housing Assistance Payment (HAP): available to those who have a long term housing need, approved for social housing support, enables people to obtain accommodation within the private rental sector; suitable accommodation in the private rental sector must be sourced by the person in receipt of the HAP, once approved the Local Authority pays the full agreed monthly rent to the landlord on behalf of the person; individuals in receipt of HAP pay a rent contribution to the Local Authority, based on their income and ability to pay; individuals in receipt of HAP are able to take up full time employment; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "answerVariants": [
+   {
+    "id": "housing-1",
+    "label": "Housing Assistance Payment (HAP)",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Name ONE local-authority scheme consistently throughout. Original selected name: Housing Assistance Payment (HAP)"
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Give THREE details for the SAME selected scheme. Original historical 2020 rates and conditions: Housing Assistance Payment (HAP): available to those who have a long term housing need, approved for social housing support, enables people to obtain accommodation within the private rental sector; suitable accommodation in the private rental sector must be sourced by the person in receipt of the HAP, once approved the Local Authority pays the full agreed monthly rent to the landlord on behalf of the person; individuals in receipt of HAP pay a rent contribution to the Local Authority, based on their income and ability to pay; individuals in receipt of HAP are able to take up full time employment; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "housing-2",
+    "label": "Mortgage Allowance Scheme",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Name ONE local-authority scheme consistently throughout. Original selected name: Mortgage Allowance Scheme"
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Give THREE details for the SAME selected scheme. Original historical 2020 rates and conditions: Mortgage Allowance Scheme: available to social housing tenants to take out a mortgage to buy or build a private house; designed to ease the transition from rented social housing to paying a mortgage and to ensure that mortgage repayments can be met; an allowance of up to €11,450 is paid directly to the lending agency by the Department of the Environment, Community & Local Government over a five-year period on a reducing scale; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "housing-3",
+    "label": "Rebuilding Ireland Home Loan (Home Choice Loan/ Local Authority Mortgage)",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Name ONE local-authority scheme consistently throughout. Original selected name: Rebuilding Ireland Home Loan (Home Choice Loan/ Local Authority Mortgage)"
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Give THREE details for the SAME selected scheme. Original historical 2020 rates and conditions: Rebuilding Ireland Home Loan (Home Choice Loan/ Local Authority Mortgage): government based loan provided by local authorities, available to first-time buyers who are unable to obtain a loan from a commercial lending agency; loan offered can be up to 92% of the price of a new or second-hand property, or the price of building a new home up to €285,000; monthly repayments over 30 years; to qualify single applicants must earn over €35,000,or €45,000 as joint applicants, be in continuous employment for a minimum of one year, or submit certified accounts for the previous two years if self-employed; provide evidence they could not obtain sufficient finance from two banks or building societies; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "housing-4",
+    "label": "Incremental Purchase Scheme",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Name ONE local-authority scheme consistently throughout. Original selected name: Incremental Purchase Scheme"
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Give THREE details for the SAME selected scheme. Original historical 2020 rates and conditions: Incremental Purchase Scheme: provides an affordable route to homeownership for households in receipt of social housing support for a minimum of one year and earning at least €15,000 annually; applies to new-build social housing or approved houses only; depending on their income applicants receive a discount of 40-60% on the total price of the house; applicant must take out a mortgage with a lending agency to purchase the remaining balance and pay it to the local authority; must pay an incremental purchase charge to the local authority on the discounted amount over the next 20-30 years, which reduces annually by 2% until the charge is fully paid; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "other-housing",
+    "label": "Another valid local-authority housing scheme",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ],
+      "contextNote": "Name ONE valid local-authority housing scheme."
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Give THREE details for the SAME selected scheme; no additional model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2020-hl-sc-q1ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-5",
+  "conceptId": "sc-q1ci",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E1 Q1(c)(i)",
+  "questionText": "Explain the factors that should be considered when choosing a heating system for a new house.",
+  "stem": "The heating system is integral to the overall design of a home.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points; original steps [0, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "points",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12,
+     14,
+     16
+    ],
+    "contextNote": "Cost - installation, running and maintenance; safety; environmental impact - renewable heating sources e.g. solar; non-renewable fossil fuels; sustainability; storage required; aesthetics; heating requirements; size of house; zoned heating; reliability; maintenance; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q1cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-5",
+  "conceptId": "sc-q1cii",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E1 Q1(c)(ii)",
+  "questionText": "Name and describe one type of home central heating system. In your answer refer to: • fuel/energy source • working principle • impact on the environment.",
+  "stem": "The heating system is integral to the overall design of a home.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 14,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name1 + fuel1 + working3×3 + environmental impact3"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "criterion",
+    "verbatim": "Name of heating system",
+    "marks": 1,
+    "permittedMarks": [
+     0,
+     1
+    ],
+    "contextNote": "Use ONE coherent system throughout. Full original choice pool: Full central heating – wet, dry system; partial central heating; local heating; underfloor heating; solar heating; geothermal thermal; biomass; wind powered turbines; hydroelectric power; etc."
+   },
+   {
+    "id": "fuel",
+    "kind": "criterion",
+    "verbatim": "Fuel/energy source",
+    "marks": 1,
+    "permittedMarks": [
+     0,
+     1
+    ],
+    "contextNote": "Choose a fuel appropriate to the SAME selected system. Fuel/energy source: oil; gas; solid fuel; solar; geothermal; etc."
+   },
+   {
+    "id": "working",
+    "kind": "criterion",
+    "verbatim": "Working principle",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "Explain the SAME selected system, using its matching model from the complete original wet/dry/solar/air-source/ground-source pool. Name-only alternatives retain the published tariff; no extra model is invented. Labelled diagrams are accepted. Wet central heating: boiler heats cold water by convection; heated water rises and draws the colder water underneath; creates convection currents, water reaches the required temperature; due to thermal expansion the hot water leaves the top of the boiler and travels to the hot water cylinder; passes through a heat exchanger, heats the water in the tank indirectly through convection; when the water in the heat exchanger cools, it returns to the boiler; hot water is sent from the boiler to radiators; radiators heat rooms by radiation and convection; etc. Dry central heating: under floor/storage heating - electrical elements embedded in thermal blocks of fireclay or concrete, surrounded by an insulating material; elements are heated by electricity at off-peak periods, the thermal blocks heat up; fire clay blocks absorb heat through conduction and gradually release heat during the day; radiated heat; heat transferred by convection; boost heat option; etc. Solar heating: solar collectors absorb sunlight, convert it into heat; mechanical devices such as pumps and fans transfer the solar heat directly to the interior space or to a storage system for later use; heat is transferred by convection around each room; etc. Air source heat pump: extracts heat from the outside environment by using a fan in a wall mounted unit; the system contains a compressor, a condenser, an expansion valve and an evaporator; the fan passes air over the evaporator; refrigerant absorbs heat from the outside air; refrigerant boils and evaporates at a low temperature giving vapour; vapour passes into the compressor and compression increases the temperature; the warm vapour is condensed in the heat exchanger, rejected heat is passed into the heating system and is distributed through radiators and underfloor heating; condensed vapour returns to liquid, passes back through expansion valve, reducing pressure and temperature, cycle starts again; etc. Ground source heat pump: extracts heat from the ground through a refrigerant loop buried in the ground; etc. NB. Accept well labelled diagram/s.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "environment",
+    "kind": "criterion",
+    "verbatim": "Impact on the environment",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "For the SAME system and selected fuel. Impact on the environment: must relate to fuel used in chosen heating system; e.g. low use of fossil fuels; renewable/non-renewable; sustainable; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q2ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2ai",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E2 Q2(a)(i)",
+  "questionText": "Sketch and describe a daywear outfit suitable for a college student.",
+  "stem": "Style is the way to say who you are without having to speak.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Matching sketch4 + description6"
+  },
+  "rows": [
+   {
+    "id": "sketch",
+    "kind": "criterion",
+    "verbatim": "Sketch",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Sketch a daywear outfit suitable for a college student, as requested in the original paper. The source prints a sketch tariff but no model sketch."
+   },
+   {
+    "id": "description",
+    "kind": "criterion",
+    "verbatim": "Description",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Describe the SAME daywear outfit. The source prints a description tariff but no model account; none is invented."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q2aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2aii",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E2 Q2(a)(ii)",
+  "questionText": "Evaluate the outfit with reference to each of the following: • suitability for purpose • sustainability • current fashion trends.",
+  "stem": "Style is the way to say who you are without having to speak. Sketch and describe a daywear outfit suitable for a college student.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "ONE required suitability/sustainability/fashion point5 EACH"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "criterion",
+    "verbatim": "Suitability for purpose",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "Evaluate the SAME college-student daywear outfit for this REQUIRED heading. Current trends refer to the original 2020 context. Suitability for purpose: comfort; practical; easy to care for; durable; etc."
+   },
+   {
+    "id": "heading-2",
+    "kind": "criterion",
+    "verbatim": "Sustainability",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "Evaluate the SAME college-student daywear outfit for this REQUIRED heading. Current trends refer to the original 2020 context. Sustainability: eco-friendly fabrics e.g. organic cotton; hardwearing; long lasting; can be recycled; etc."
+   },
+   {
+    "id": "heading-3",
+    "kind": "criterion",
+    "verbatim": "Current fashion trends",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "Evaluate the SAME college-student daywear outfit for this REQUIRED heading. Current trends refer to the original 2020 context. Current fashion trends: athleisure; active wear; denim; block colours; puff shoulders; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q2bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-7",
+  "conceptId": "sc-q2bi",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E2 Q2(b)(i)",
+  "questionText": "Identify three functional finishes applied to fabrics.",
+  "stem": "Fabrics are given a variety of treatments to alter their performance.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Three different finish names2"
+  },
+  "rows": [
+   {
+    "id": "finishes",
+    "kind": "anyN",
+    "verbatim": "finishes",
+    "marks": 6,
+    "openList": true,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Anti-bacterial",
+      "anti-static",
+      "crease resistant",
+      "flame resistant/flame retardant",
+      "mercerised",
+      "moth-proof",
+      "pre-shrunk",
+      "stain-resistant",
+      "water-proof",
+      "water-repellent"
+     ]
+    },
+    "contextNote": "Choose ANY THREE different functional finishes from the complete original pool."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q2bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-7",
+  "conceptId": "sc-q2bii",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E2 Q2(b)(ii)",
+  "questionText": "Explain how finishes enhance fabric performance.",
+  "stem": "Fabrics are given a variety of treatments to alter their performance.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "points",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "Explain THREE enhancement points across the original finish pool; no fixed requirement for three different finishes. Moth-proof is accepted by name in the preceding source list without an additional printed model. Anti-bacterial: fabric will resist many types of bacteria, including those present in perspiration; etc. anti-static: fabric does not gather static electricity, will not cling; etc. crease-resistant: fabric will resist and recover from creases; etc. flame resistant: fabric does not actively support a flame once its source has been removed; etc. mercerised: fabric has greater strength, lustre and affinity for dyes; etc. pre-shrunk: fabric will not shrink more than the percentage indicated (1-2 % ); etc. stain resistant: fabrics resist water-based and/or oil-based stains; etc. waterproof: fabric is totally impervious to water under any conditions; etc. water-repellent: fabric resists absorption and penetration of water but remains porous; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q2ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-7",
+  "conceptId": "sc-q2ci",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E2 Q2(c)(i)",
+  "questionText": "Give a brief overview of the structure of the clothing and textile industry.",
+  "stem": "The clothing and textile industry in Ireland provides significant employment.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "points",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "Small family-owned and managed businesses; large companies; some manufacturing out sourced; indigenous and non-indigenous firms; involves research, design, marketing, brand awareness; different sectors - ladies wear, menswear, sportswear, accessories, footwear; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q2cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-7",
+  "conceptId": "sc-q2cii",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E2 Q2(c)(ii)",
+  "questionText": "Describe the importance of small businesses in this industry.",
+  "stem": "The clothing and textile industry in Ireland provides significant employment.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points; original steps [0, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "points",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Provide opportunities for entrepreneurs to create jobs; greater job satisfaction than with larger companies; foster local economies; more adaptable and innovative; allows for production of artisan products; offers greater variety; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q3ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-10",
+  "conceptId": "sc-q3ai",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E3 Q3(a)(i)",
+  "questionText": "Explain how education is used as a method of socialisation for young children.",
+  "stem": "Education opens the minds of students and prepares them to face the world.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 3, 5]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "points",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     3,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11,
+     13,
+     15
+    ],
+    "contextNote": "Formal in the classroom; informal through the hidden curriculum; reinforces social skills taught at home; behaviour; cultural values; responsibility; punctuality; respect for authority; sharing and team work; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q3aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-10",
+  "conceptId": "sc-q3aii",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E3 Q3(a)(ii)",
+  "questionText": "Discuss the role of education in contributing to the development of the individual. Refer to: • physical development • emotional development • moral development • intellectual development.",
+  "stem": "Education opens the minds of students and prepares them to face the world.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "ONE required physical/emotional/moral/intellectual account5 EACH"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "criterion",
+    "verbatim": "Physical development",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "Physical development: provides opportunities for children in early education to play with toys which can develop hand-eye coordination and dexterity; provides practical subjects which can enhance coordination and motor skills; provides PE which develops balance and agility; etc."
+   },
+   {
+    "id": "heading-2",
+    "kind": "criterion",
+    "verbatim": "Emotional development",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "Emotional development: helps children gain emotional independence from parents; provides opportunities to develop relationships outside the home; promotes emotional health and well- being by providing coping skills for life; mixed-sex schools enable them to be emotionally accustomed to relate to people of both genders; etc."
+   },
+   {
+    "id": "heading-3",
+    "kind": "criterion",
+    "verbatim": "Moral development",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "Moral development: have an ethos outlining their beliefs, values, customs and moral thinking; have rules, which teach students how to function well in society; examine moral dilemmas, instilling in students the difference between right and wrong; etc."
+   },
+   {
+    "id": "heading-4",
+    "kind": "criterion",
+    "verbatim": "Intellectual development",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "Intellectual development: provides access to educational resources e.g. computers; challenges and tests intellect by providing an array of subjects and extra-curricular activities; provides examinations and homework assignments that motivate students to achieve potential; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q3aiii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-10",
+  "conceptId": "sc-q3aiii",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E3 Q3(a)(iii)",
+  "questionText": "Give an account of the supports provided in second level schools for children with special educational needs.",
+  "stem": "Education opens the minds of students and prepares them to face the world.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 points; original steps [0, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "points",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "contextNote": "Learning support/resource teachers; special needs assistants; visiting teacher services provide support for children with visual or hearing impairments; multisensory rooms; assistive technology e.g. laptops with zoom text software; reasonable accommodations in examinations; language support; special transport support; adapted furniture and equipment; improved accessibility; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q3bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3bi",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E3 Q3(b)(i)",
+  "questionText": "Discuss the causes of unemployment.",
+  "stem": "‘The number of people unemployed in Ireland was 126,900 in September 2019.’ (www.irish examiner.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "causes",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "Geographical location; foreign/global competition; low incentive; economic recession; seasonal factors; automation/technological advances; demand for products and services; COVID-19; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q3bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3bii",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E3 Q3(b)(ii)",
+  "questionText": "Outline the effects of unemployment on society.",
+  "stem": "‘The number of people unemployed in Ireland was 126,900 in September 2019.’ (www.irish examiner.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "effects",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12
+    ],
+    "contextNote": "Emigration; antisocial behaviour; increase in crime; unemployment cycle; increase in taxes; growth in black economy; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q3biii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3biii",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E3 Q3(b)(iii)",
+  "questionText": "Name and give details of one statutory initiative that encourages foreign investment and creates employment.",
+  "stem": "‘The number of people unemployed in Ireland was 126,900 in September 2019.’ (www.irish examiner.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "One name3 + two matching details3"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "criterion",
+    "verbatim": "Name",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Name ONE statutory initiative consistently throughout. Selected name: IDA Ireland (Industrial Development Agency)"
+   },
+   {
+    "id": "details",
+    "kind": "criterion",
+    "verbatim": "points",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Give TWO details about the SAME named initiative. IDA Ireland (Industrial Development Agency): encourages foreign investment to set up in rural and urban areas by providing supports and services to potential foreign investors; provides information on key business sectors and locations within the country; grants; creating links between businesses and local industries, service providers and educational institutions; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "answerVariants": [
+   {
+    "id": "initiative-1",
+    "label": "IDA Ireland (Industrial Development Agency)",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Name ONE statutory initiative consistently throughout. Selected name: IDA Ireland (Industrial Development Agency)"
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Give TWO details about the SAME named initiative. IDA Ireland (Industrial Development Agency): encourages foreign investment to set up in rural and urban areas by providing supports and services to potential foreign investors; provides information on key business sectors and locations within the country; grants; creating links between businesses and local industries, service providers and educational institutions; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "initiative-2",
+    "label": "Enterprise Ireland",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Name ONE statutory initiative consistently throughout. Selected name: Enterprise Ireland"
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Give TWO details about the SAME named initiative. Enterprise Ireland: responsible for the development and growth of Irish enterprises at home and on the world markets; works in partnership with Irish entrepreneurs to establish or expand businesses through advice, mentoring and grants; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "initiative-3",
+    "label": "SOLAS",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Name ONE statutory initiative consistently throughout. Selected name: SOLAS"
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Give TWO details about the SAME named initiative. The source accepts this initiative by name only; no detail model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "initiative-4",
+    "label": "Local Enterprise Offices (LEO)",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Name ONE statutory initiative consistently throughout. Selected name: Local Enterprise Offices (LEO)"
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Give TWO details about the SAME named initiative. The source accepts this initiative by name only; no detail model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "initiative-5",
+    "label": "Another valid statutory initiative",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Name ONE statutory initiative consistently throughout. Selected name: Another valid statutory initiative"
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "points",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "contextNote": "Give TWO details about the SAME named initiative. The source leaves valid alternatives open; no additional model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         2,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2020-hl-sc-q3ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-11",
+  "conceptId": "sc-q3ci",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E3 Q3(c)(i)",
+  "questionText": "Describe how age and gender impact on a person’s choice of leisure activities.",
+  "stem": "Leisure and sports activities play an important role in communities.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "TWO age points3 + TWO gender points3"
+  },
+  "rows": [
+   {
+    "id": "age",
+    "kind": "criterion",
+    "verbatim": "Age",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Age: young people and retired people tend to have fewer commitments, more time to spend on leisure activities; disposable income can vary with age; children and teenagers tend to opt for physically active or technology-based activities; some activities can be regarded as dangerous for children e.g. scuba diving; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "gender",
+    "kind": "criterion",
+    "verbatim": "Gender",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Gender: stereotyping is not permitted in leisure activities; some leisure activities are still dominated by one gender; amount of time available can be determined by gender; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2020-hl-sc-q3cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-11",
+  "conceptId": "sc-q3cii",
+  "level": "higher",
+  "year": 2020,
+  "section": "C",
+  "questionRef": "2020 HL Section C E3 Q3(c)(ii)",
+  "questionText": "Evaluate two leisure facilities available in the community. Refer to: • facilities offered • value for money • benefit to the community.",
+  "stem": "Leisure and sports activities play an important role in communities.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "TWO coherent facilities × (facilities3 + value3 + community3)"
+  },
+  "rows": [
+   {
+    "id": "facility-1-1",
+    "kind": "criterion",
+    "verbatim": "Facilities offered",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Evaluate facility 1 of TWO DIFFERENT facilities. All three criteria must refer to the SAME selected facility; choose relevant guidance from the original pool. N.B. accept all leisure facilities i.e. leisure centres, sports clubs, golf, tennis, horse riding etc. Facilities offered: classes; tuition; professional advice; equipment; pitches for games; floodlighting; all weather pitches; changing facilities; canteen/bar; etc."
+   },
+   {
+    "id": "facility-1-2",
+    "kind": "criterion",
+    "verbatim": "Value for money",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Evaluate facility 1 of TWO DIFFERENT facilities. All three criteria must refer to the SAME selected facility; choose relevant guidance from the original pool. N.B. accept all leisure facilities i.e. leisure centres, sports clubs, golf, tennis, horse riding etc. Value for money: initial costs; membership fees; special equipment/clothes; amount of use/access; family rates; special discounts; extra benefits e.g. free entry to tournaments; friends can participate at reduced rates; etc."
+   },
+   {
+    "id": "facility-1-3",
+    "kind": "criterion",
+    "verbatim": "Benefit to the community",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Evaluate facility 1 of TWO DIFFERENT facilities. All three criteria must refer to the SAME selected facility; choose relevant guidance from the original pool. N.B. accept all leisure facilities i.e. leisure centres, sports clubs, golf, tennis, horse riding etc. Benefit to the community: provides employment; creates community links as many local people might avail of the facility; sports facilities offer opportunities to develop teamwork skills; improves wellbeing; etc."
+   },
+   {
+    "id": "facility-2-1",
+    "kind": "criterion",
+    "verbatim": "Facilities offered",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Evaluate facility 2 of TWO DIFFERENT facilities. All three criteria must refer to the SAME selected facility; choose relevant guidance from the original pool. N.B. accept all leisure facilities i.e. leisure centres, sports clubs, golf, tennis, horse riding etc. Facilities offered: classes; tuition; professional advice; equipment; pitches for games; floodlighting; all weather pitches; changing facilities; canteen/bar; etc."
+   },
+   {
+    "id": "facility-2-2",
+    "kind": "criterion",
+    "verbatim": "Value for money",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Evaluate facility 2 of TWO DIFFERENT facilities. All three criteria must refer to the SAME selected facility; choose relevant guidance from the original pool. N.B. accept all leisure facilities i.e. leisure centres, sports clubs, golf, tennis, horse riding etc. Value for money: initial costs; membership fees; special equipment/clothes; amount of use/access; family rates; special discounts; extra benefits e.g. free entry to tournaments; friends can participate at reduced rates; etc."
+   },
+   {
+    "id": "facility-2-3",
+    "kind": "criterion",
+    "verbatim": "Benefit to the community",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Evaluate facility 2 of TWO DIFFERENT facilities. All three criteria must refer to the SAME selected facility; choose relevant guidance from the original pool. N.B. accept all leisure facilities i.e. leisure centres, sports clubs, golf, tennis, horse riding etc. Benefit to the community: provides employment; creates community links as many local people might avail of the facility; sports facilities offer opportunities to develop teamwork skills; improves wellbeing; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "taskGroups": [
+   {
+    "sourceCardId": "he-2020-hl-sc-q3cii-facility-1",
+    "label": "Leisure facility 1",
+    "marks": 9,
+    "rowIds": [
+     "facility-1-1",
+     "facility-1-2",
+     "facility-1-3"
+    ]
+   },
+   {
+    "sourceCardId": "he-2020-hl-sc-q3cii-facility-2",
+    "label": "Leisure facility 2",
+    "marks": 9,
+    "rowIds": [
+     "facility-2-1",
+     "facility-2-2",
+     "facility-2-3"
+    ]
+   }
+  ]
  }
 ]
