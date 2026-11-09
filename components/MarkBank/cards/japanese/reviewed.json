@@ -1,5 +1,6411 @@
 [
   {
+    "id": "ja-2025-hl-1a-1",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "link-click-homepage-shop-search-new",
+    "questionRef": "2025 HL Section 1A Q1",
+    "questionText": "Which link (1-10) would you click on for the following?\ne.g. Homepage 1\n(a) Shop search\n(b) New products\n(c) Electric appliance recycling\n(d) Part-time jobs\n(e) Language",
+    "totalMarks": 5,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        7
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(a) Shop search — 7",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "(b) New products — 2",
+        "marks": 1,
+        "id": "r-2"
+      },
+      {
+        "kind": "point",
+        "verbatim": "(c) Electric appliances recycling — 6",
+        "marks": 1,
+        "id": "r-3"
+      },
+      {
+        "kind": "point",
+        "verbatim": "(d) Part-time jobs — 9",
+        "marks": 1,
+        "id": "r-4"
+      },
+      {
+        "kind": "point",
+        "verbatim": "(e) Language — 10",
+        "marks": 1,
+        "id": "r-5"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(34 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        7
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-1a-2-a",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "who-tanaka-marina",
+    "questionRef": "2025 HL Section 1A Q2(a)",
+    "questionText": "Who is Tanaka Marina?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        7
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "an influencer",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "a fitness instructor",
+        "marks": 1,
+        "id": "r-2"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(34 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        7
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer 1 – 7 in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-1a-2-b",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "product-she-promoting",
+    "questionRef": "2025 HL Section 1A Q2(b)",
+    "questionText": "Give two details about the product she is promoting.",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        7
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "protein",
+            "chocolate and strawberry (flavours)",
+            "4680 yen",
+            "very delicious"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(34 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        7
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer 1 – 7 in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-1a-3-a",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "product-recommended-may-15th",
+    "questionRef": "2025 HL Section 1A Q3(a)",
+    "questionText": "What product is recommended on May 15th?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        7
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "air bed",
+        "marks": 2,
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(34 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        7
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer 1 – 7 in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-1a-3-b",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "when-product-convenient",
+    "questionRef": "2025 HL Section 1A Q3(b)",
+    "questionText": "When is this product convenient?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        7
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "camping",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "sleeping in the car",
+        "marks": 1,
+        "id": "r-2"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(34 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        7
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer 1 – 7 in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-1a-4",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "travel-items-recommended-april-20th",
+    "questionRef": "2025 HL Section 1A Q4",
+    "questionText": "Name two travel items recommended on April 20th.",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        7
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "ear plugs",
+            "neck pillow",
+            "slippers"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(34 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        7
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer 1 – 7 in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-1a-5",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "much-bicycle",
+    "questionRef": "2025 HL Section 1A Q5",
+    "questionText": "How much is the bicycle?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        7
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "27,900 yen",
+        "marks": 2,
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(34 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        7
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer 1 – 7 in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-1a-6",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "types-bags-recommended-new-academic-year",
+    "questionRef": "2025 HL Section 1A Q6",
+    "questionText": "Mention two types of bags recommended for the new academic year.",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        7
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "Italian leather",
+            "sports",
+            "rucksack/backpack",
+            "tote"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(34 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        7
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer 1 – 7 in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-1a-7",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "complete-don-quijote-mascots-ainm-donpen",
+    "questionRef": "2025 HL Section 1A Q7",
+    "questionText": "Complete (a)–(c) about the Don Quijote mascots.\nAinm/Name: Donpen Donko\n(a) (c) Cur síos fisiciúil / Physical description: Pearsantacht / (b) rud beag cúthail / a little shy Personality:",
+    "totalMarks": 5,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        7
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "penguin",
+            "boy",
+            "body is midnight blue",
+            "wears a red hat",
+            "short",
+            "chubby"
+          ]
+        },
+        "contextNote": "(a) Donpen — Physical description",
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "cheerful / lively",
+        "marks": 1,
+        "contextNote": "(b) Donpen — Personality",
+        "id": "r-2"
+      },
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "girl",
+            "body is pink",
+            "red heart mark (on the belly)",
+            "smaller than Donpen"
+          ]
+        },
+        "contextNote": "(c) Donko — Physical description",
+        "id": "r-3"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(34 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        7
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "paperFileid": "LC058ALP000BV",
+    "questionFigure": {
+      "candId": "ja-2025-hl-1a-7",
+      "src": "/exam-figures/japanese/ja-2025-hl-1a-7.png",
+      "srcHash": "a6ee45f5802b7af231d513ed6a5f0322",
+      "alt": "Complete (a)–(c) about the Don Quijote mascots.\nAinm/Name: Donpen Donko\n(a) (c) Cur síos fisiciúil / Physical description: Pearsantacht / (b) rud beag cúthail / a little shy Personality:",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2025-hl-1b-1-a",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "like-shop-don-quijote",
+    "questionRef": "2025 HL Section 1B Q1(a)",
+    "questionText": "Why does Su-ho like to shop in Don Quijote?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        7
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "has Korean staff",
+        "marks": 2,
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(34 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        7
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-1b-1-b",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "explain-her-family-when-came-japan",
+    "questionRef": "2025 HL Section 1B Q1(b)",
+    "questionText": "Explain what her family did when they came to Japan.",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        7
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "tax free shopping / showed passport",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "bought (lots of) souvenirs/omiyage",
+        "marks": 1,
+        "id": "r-2"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(34 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        7
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-1b-2-a",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "when-naoki-shop-don-quijote",
+    "questionRef": "2025 HL Section 1B Q2(a)",
+    "questionText": "When does Naoki shop in Don Quijote?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        7
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "when he wants Japanese food",
+        "marks": 2,
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(34 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        7
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-1b-2-b",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "prefer-don-quijote-japan",
+    "questionRef": "2025 HL Section 1B Q2(b)",
+    "questionText": "Why does he prefer Don Quijote in Japan?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        7
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "bigger",
+            "cheaper",
+            "more choice"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(34 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        7
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-1b-3",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "steff-like-shopping-don-quijote-night",
+    "questionRef": "2025 HL Section 1B Q3",
+    "questionText": "What does Steff like about shopping in Don Quijote at night?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        7
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "no people",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "quiet",
+        "marks": 1,
+        "id": "r-2"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(34 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        7
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-2a-1-a",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "2",
+    "topicId": "japanese-5-2",
+    "conceptId": "expo25",
+    "questionRef": "2025 HL Section 2A Q1(a)",
+    "questionText": "EXPO25 は日本のどこですか。",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        8
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "大阪（さか） / 夢（ゆめ）洲（しま）",
+        "marks": 2,
+        "id": "r-1"
+      }
+    ],
+    "extraneousMaterialRule": {
+      "multiplier": 0.5,
+      "sourceText": "(8 marks) Half marks where there is strong evidence of extraneous material. / Half marks if answered in English.",
+      "schemePages": [
+        8
+      ]
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "English",
+      "sourceText": "(8 marks) Half marks where there is strong evidence of extraneous material. / Half marks if answered in English.",
+      "schemePages": [
+        8
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in Japanese.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-2a-1-b",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "2",
+    "topicId": "japanese-5-2",
+    "conceptId": "ja-2025-hl-2a-1-b",
+    "questionRef": "2025 HL Section 2A Q1(b)",
+    "questionText": "誰（だれ）がオフィシャル・テーマ・ソングを歌（うた）っていますか。",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        8
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "criterion",
+        "verbatim": "コブクロ (男の人二人 1 mark)",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "id": "r-1"
+      }
+    ],
+    "extraneousMaterialRule": {
+      "multiplier": 0.5,
+      "sourceText": "(8 marks) Half marks where there is strong evidence of extraneous material. / Half marks if answered in English.",
+      "schemePages": [
+        8
+      ]
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "English",
+      "sourceText": "(8 marks) Half marks where there is strong evidence of extraneous material. / Half marks if answered in English.",
+      "schemePages": [
+        8
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in Japanese.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-2a-1-c",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "2",
+    "topicId": "japanese-5-2",
+    "conceptId": "ja-2025-hl-2a-1-c",
+    "questionRef": "2025 HL Section 2A Q1(c)",
+    "questionText": "和太鼓（わだいこ）のワークショップで、何をしますか。",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        8
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "わだいこをつくって",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "わだいこのにぎやかなリズムを学びます。",
+        "marks": 1,
+        "id": "r-2"
+      }
+    ],
+    "extraneousMaterialRule": {
+      "multiplier": 0.5,
+      "sourceText": "(8 marks) Half marks where there is strong evidence of extraneous material. / Half marks if answered in English.",
+      "schemePages": [
+        8
+      ]
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "English",
+      "sourceText": "(8 marks) Half marks where there is strong evidence of extraneous material. / Half marks if answered in English.",
+      "schemePages": [
+        8
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in Japanese.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-2a-1-d",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "2",
+    "topicId": "japanese-5-2",
+    "conceptId": "expo25",
+    "questionRef": "2025 HL Section 2A Q1(d)",
+    "questionText": "ボランティアが電車で EXPO25 に行くと、いくらまでもらうことができますか。",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        8
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "一日",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "三千五百円",
+        "marks": 1,
+        "id": "r-2"
+      }
+    ],
+    "extraneousMaterialRule": {
+      "multiplier": 0.5,
+      "sourceText": "(8 marks) Half marks where there is strong evidence of extraneous material. / Half marks if answered in English.",
+      "schemePages": [
+        8
+      ]
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "English",
+      "sourceText": "(8 marks) Half marks where there is strong evidence of extraneous material. / Half marks if answered in English.",
+      "schemePages": [
+        8
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in Japanese.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-2a-2-a",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "2",
+    "topicId": "japanese-5-2",
+    "conceptId": "learn-expo-long-history",
+    "questionRef": "2025 HL Section 2A Q2(a)",
+    "questionText": "What do you learn about EXPO’s long history?",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        9
+      ],
+      "generalSchemePages": [
+        9
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "started in 1851",
+            "held in Europe, America, Asia",
+            "3rd time in Japan"
+          ],
+          "perOptionSteps": [
+            2,
+            1
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(14 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        9
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-2a-2-b",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "2",
+    "topicId": "japanese-5-2",
+    "conceptId": "official-theme-song-easy-sing",
+    "questionRef": "2025 HL Section 2A Q2(b)",
+    "questionText": "Why is the official theme song easy to sing?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        9
+      ],
+      "generalSchemePages": [
+        9
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "Konnichiwa appears four times (in the melody line)",
+        "marks": 2,
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(14 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        9
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-2a-2-c-i",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "2",
+    "topicId": "japanese-5-2",
+    "conceptId": "ireland-pavilion-described-text",
+    "questionRef": "2025 HL Section 2A Q2(c)(i)",
+    "questionText": "How is the Ireland pavilion described in the text?",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        9
+      ],
+      "generalSchemePages": [
+        9
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "its theme is creativity connects people",
+            "design is based on old Celtic art",
+            "three circles are Ireland, Japan and creativity",
+            "the wood is from Ireland",
+            "sustainable"
+          ],
+          "perOptionSteps": [
+            2,
+            1
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(14 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        9
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-2a-2-c-ii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "2",
+    "topicId": "japanese-5-2",
+    "conceptId": "good-location-ireland-pavilion",
+    "questionRef": "2025 HL Section 2A Q2(c)(ii)",
+    "questionText": "What is good about the location of the Ireland pavilion?",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        9
+      ],
+      "generalSchemePages": [
+        9
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "right side of the entrance",
+            "1-minute walk",
+            "many people will come"
+          ],
+          "perOptionSteps": [
+            2,
+            1
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(14 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        9
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-2a-2-d",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "2",
+    "topicId": "japanese-5-2",
+    "conceptId": "requirements-become-volunteer",
+    "questionRef": "2025 HL Section 2A Q2(d)",
+    "questionText": "What are the requirements to become a volunteer?",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        9
+      ],
+      "generalSchemePages": [
+        9
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 3,
+          "perOption": 1,
+          "options": [
+            "over 18",
+            "good at communication",
+            "can speak foreign language(s)",
+            "can do 3 days per week"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(14 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        9
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-2a-3",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "2",
+    "topicId": "japanese-5-3",
+    "conceptId": "translate-into-english-expo25",
+    "questionRef": "2025 HL Section 2A Q3",
+    "questionText": "Translate the following into English.\nEXPO25 のメイン・テーマは「将（しょう）来の社会（しゃかい）へのデザイン」です。百五十の国の新しいテクノロジーや 文化（ぶんか）、アート、音楽（おんがく）、クラフトなどを体験（たいけん）したり、勉強したりすることができます。",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        9
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "The main theme of EXPO25 is “Design for future society”",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "You can experience and study new technology, culture, art, music, craft etc",
+        "marks": 2,
+        "id": "r-2"
+      },
+      {
+        "kind": "point",
+        "verbatim": "of over 150 countries",
+        "marks": 1,
+        "id": "r-3"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-2b-1",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "2",
+    "topicId": "japanese-5-4",
+    "conceptId": "meaning-five-kanji-english-tseap-japan",
+    "questionRef": "2025 HL Section 2B Q1",
+    "questionText": "Write the meaning of any FIVE of the following Kanji in English.\ne.g. 日本 An tSeapáin / Japan\n(a) 月 ________________\n(b) 今 ________________\n(c) 人気 ________________\n(d) 子ども ________________\n(e) 来る ________________\n(f) 毎週金曜（よう）日 ________________",
+    "totalMarks": 5,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        9
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 5,
+          "perOption": 1,
+          "options": [
+            "(a) — month / moon",
+            "(b) — now",
+            "(c) — popular",
+            "(d) — child(ren)",
+            "(e) — come",
+            "(f) — every Friday"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "paperFileid": "LC058ALP000BV",
+    "questionFigure": {
+      "candId": "ja-2025-hl-2b-1",
+      "src": "/exam-figures/japanese/ja-2025-hl-2b-1.png",
+      "srcHash": "992879240d4a8ef65a55f82b08e0d272",
+      "alt": "Write the meaning of any FIVE of the following Kanji in English.\ne.g. 日本 An tSeapáin / Japan\n(a) 月 ________________\n(b) 今 ________________\n(c) 人気 ________________\n(d) 子ども ________________\n(e) 来る ________________\n(f) 毎週金曜（よう）日 ________________",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2025-hl-2b-2",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "2",
+    "topicId": "japanese-5-4",
+    "conceptId": "reading-five-kanji-hiragana",
+    "questionRef": "2025 HL Section 2B Q2",
+    "questionText": "Write the reading of any FIVE of following Kanji in Hiragana.\ne.g. 日本 にほん\n(a) 今年 ________________\n(b) 新しい ________________\n(c) 勉強 ________________\n(d) 男の人 ________________\n(e) 右 ________________\n(f) 思い出 ________________",
+    "totalMarks": 5,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        10
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 5,
+          "perOption": 1,
+          "options": [
+            "(a) — ことし",
+            "(b) — あたらしい",
+            "(c) — べんきょう",
+            "(d) — おとこのひと",
+            "(e) — みぎ",
+            "(f) — おもいで"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "paperFileid": "LC058ALP000BV",
+    "questionFigure": {
+      "candId": "ja-2025-hl-2b-2",
+      "src": "/exam-figures/japanese/ja-2025-hl-2b-2.png",
+      "srcHash": "093bb1fa3ebb761792d8b91f8893d647",
+      "alt": "Write the reading of any FIVE of following Kanji in Hiragana.\ne.g. 日本 にほん\n(a) 今年 ________________\n(b) 新しい ________________\n(c) 勉強 ________________\n(d) 男の人 ________________\n(e) 右 ________________\n(f) 思い出 ________________",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2025-hl-2c-1",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "2",
+    "topicId": "japanese-5-5",
+    "conceptId": "past-form-example-five",
+    "questionRef": "2025 HL Section 2C Q1",
+    "questionText": "Write the following in the past form as in the example.  Answer any FIVE.\ne.g. 好きです。 好きでした。\n(a) 日本にあります。 __________________\n(b) すばらしいイベントだ。 __________________\n(c) チケットは高い。 __________________\n(d) テーマ・ソングを歌（うた）いません。 __________________\n(e) パビリオンは静（しず）かじゃない。 __________________\n(f) アイルランド音楽（おんがく）を聞く。 __________________",
+    "totalMarks": 5,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        10
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 5,
+          "perOption": 1,
+          "options": [
+            "(a) — ありました",
+            "(b) — (イベント)だった",
+            "(c) — 高かった",
+            "(d) — 歌（うた）いませんでした",
+            "(e) — (しずか)じゃなかった",
+            "(f) — 聞いた"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "paperFileid": "LC058ALP000BV",
+    "questionFigure": {
+      "candId": "ja-2025-hl-2c-1",
+      "src": "/exam-figures/japanese/ja-2025-hl-2c-1.png",
+      "srcHash": "450d7b914f1da9fae4963f40c337c4bf",
+      "alt": "Write the following in the past form as in the example.  Answer any FIVE.\ne.g. 好きです。 好きでした。\n(a) 日本にあります。 __________________\n(b) すばらしいイベントだ。 __________________\n(c) チケットは高い。 __________________\n(d) テーマ・ソングを歌（うた）いません。 __________________\n(e) パビリオンは静（しず）かじゃない。 __________________\n(f) アイルランド音楽（おんがく）を聞く。 __________________",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2025-hl-2c-2",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "2",
+    "topicId": "japanese-5-5",
+    "conceptId": "correct-form-verb-five-expo25-expo25",
+    "questionRef": "2025 HL Section 2C Q2",
+    "questionText": "Write the correct form of each verb.  Answer any FIVE.\ne.g. 私は大阪（さか）に（すみます） すんで います。\n(a) 旅行会社（りょこうがいしゃ）でチケットを（買いません）__________________ほうがいいです。\n(b) 来月、一人で EXPO25 に（行きます）__________________かもしれません。\n(c) 日本食を食べたり、お茶（ちゃ）を（飲みます）__________________りします。\n(d) EXPO25 でクラフトを（作（つく）ります）__________________たいです。\n(e) アイリッシュ・ダンスを（しません）__________________と思います。\n(f) 花（はな）火を（見ます）__________________から、電車で帰（かえ）ります。",
+    "totalMarks": 5,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        10
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 5,
+          "perOption": 1,
+          "options": [
+            "(a) — 買わない",
+            "(b) — 行く",
+            "(c) — 飲んだ",
+            "(d) — つくり",
+            "(e) — しない",
+            "(f) — 見て/見るから/見たから"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "paperFileid": "LC058ALP000BV",
+    "questionFigure": {
+      "candId": "ja-2025-hl-2c-2",
+      "src": "/exam-figures/japanese/ja-2025-hl-2c-2.png",
+      "srcHash": "77377febc2e0e10dc3f7a56f4abd41e5",
+      "alt": "Write the correct form of each verb.  Answer any FIVE.\ne.g. 私は大阪（さか）に（すみます） すんで います。\n(a) 旅行会社（りょこうがいしゃ）でチケットを（買いません）__________________ほうがいいです。\n(b) 来月、一人で EXPO25 に（行きます）__________________かもしれません。\n(c) 日本食を食べたり、お茶（ちゃ）を（飲みます）__________________りします。\n(d) EXPO25 でクラフトを（作（つく）ります）__________________たいです。\n(e) アイリッシュ・ダンスを（しません）__________________と思います。\n(f) 花（はな）火を（見ます）__________________から、電車で帰（かえ）ります。",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2025-hl-3a-1",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "3",
+    "topicId": "japanese-5-1",
+    "conceptId": "ronan-feel-when-arrived-japan",
+    "questionRef": "2025 HL Section 3A Q1",
+    "questionText": "How did Ronan feel when he arrived in Japan?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        11
+      ],
+      "generalSchemePages": [
+        11
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "tired",
+            "sore throat",
+            "caught a cold"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(14 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        11
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        10
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-3a-2",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "3",
+    "topicId": "japanese-5-1",
+    "conceptId": "learn-morita",
+    "questionRef": "2025 HL Section 3A Q2",
+    "questionText": "What do you learn about Ms. Morita? Give details.",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        11
+      ],
+      "generalSchemePages": [
+        11
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 3,
+          "perOption": 1,
+          "options": [
+            "cleans the dorm/ cleans twice a week",
+            "sometimes gives him vegetables and eggs",
+            "nice",
+            "chatty",
+            "good for Ronan’s Japanese practice"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(14 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        11
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        10
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-3a-3",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "3",
+    "topicId": "japanese-5-1",
+    "conceptId": "ronan-having-difficulty-making-friends-dormitory",
+    "questionRef": "2025 HL Section 3A Q3",
+    "questionText": "Why is Ronan having difficulty making friends in the dormitory?",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        11
+      ],
+      "generalSchemePages": [
+        11
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "they eat bento from a convenience store in their room",
+            "they don’t use the kitchen",
+            "no chance to meet them"
+          ],
+          "perOptionSteps": [
+            2,
+            1
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(14 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        11
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        10
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-3a-4",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "3",
+    "topicId": "japanese-5-1",
+    "conceptId": "describe-ronan-room",
+    "questionRef": "2025 HL Section 3A Q4",
+    "questionText": "Describe Ronan’s room.",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        11
+      ],
+      "generalSchemePages": [
+        11
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 3,
+          "perOption": 1,
+          "options": [
+            "6 mat room",
+            "Japanese style room",
+            "desk and chair",
+            "futon",
+            "big window"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(14 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        11
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        10
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-3a-5",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "3",
+    "topicId": "japanese-5-1",
+    "conceptId": "ronan-friend-tsuyoshi",
+    "questionRef": "2025 HL Section 3A Q5",
+    "questionText": "Give details about Ronan’s friend Tsuyoshi.",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        11
+      ],
+      "generalSchemePages": [
+        11
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 3,
+          "perOption": 1,
+          "options": [
+            "same maths course",
+            "sits beside him",
+            "in soccer club",
+            "plays soccer",
+            "from Kyoto",
+            "funny",
+            "lived with father in Canada",
+            "lived in Canada when he was in primary school",
+            "bilingual"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(14 marks) Half marks if answered in Japanese",
+      "schemePages": [
+        11
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        10
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in English.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-3b-1",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "3",
+    "topicId": "japanese-5-1",
+    "conceptId": "ja-2025-hl-3b-1",
+    "questionRef": "2025 HL Section 3B Q1",
+    "questionText": "空港（くうこう）から大学の寮（りょう）までどれぐらいかかりましたか。",
+    "totalMarks": 1,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        11
+      ],
+      "generalSchemePages": [
+        11
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "三時間",
+        "marks": 1,
+        "id": "r-1"
+      }
+    ],
+    "extraneousMaterialRule": {
+      "multiplier": 0.5,
+      "sourceText": "(6 marks) Half marks where there is strong evidence of extraneous material./ Half marks if answered in English.",
+      "schemePages": [
+        11
+      ]
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "English",
+      "sourceText": "(6 marks) Half marks where there is strong evidence of extraneous material./ Half marks if answered in English.",
+      "schemePages": [
+        11
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        10
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in Japanese.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-3b-2",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "3",
+    "topicId": "japanese-5-1",
+    "conceptId": "ja-2025-hl-3b-2",
+    "questionRef": "2025 HL Section 3B Q2",
+    "questionText": "長野（ながの）の天気はどうでしたか。",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        11
+      ],
+      "generalSchemePages": [
+        11
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "二十九ど",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "むしあつかった",
+        "marks": 1,
+        "id": "r-2"
+      }
+    ],
+    "extraneousMaterialRule": {
+      "multiplier": 0.5,
+      "sourceText": "(6 marks) Half marks where there is strong evidence of extraneous material./ Half marks if answered in English.",
+      "schemePages": [
+        11
+      ]
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "English",
+      "sourceText": "(6 marks) Half marks where there is strong evidence of extraneous material./ Half marks if answered in English.",
+      "schemePages": [
+        11
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        10
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in Japanese.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-3b-3",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "3",
+    "topicId": "japanese-5-1",
+    "conceptId": "ja-2025-hl-3b-3",
+    "questionRef": "2025 HL Section 3B Q3",
+    "questionText": "ローナンさんと強（つよし）さんは、どんな時に何語で話しますか。",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        11
+      ],
+      "generalSchemePages": [
+        11
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "大学の時は日本語",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "あそぶ時は英語",
+        "marks": 1,
+        "id": "r-2"
+      }
+    ],
+    "extraneousMaterialRule": {
+      "multiplier": 0.5,
+      "sourceText": "(6 marks) Half marks where there is strong evidence of extraneous material./ Half marks if answered in English.",
+      "schemePages": [
+        11
+      ]
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "English",
+      "sourceText": "(6 marks) Half marks where there is strong evidence of extraneous material./ Half marks if answered in English.",
+      "schemePages": [
+        11
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        10
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in Japanese.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-3b-4",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "3",
+    "topicId": "japanese-5-1",
+    "conceptId": "ja-2025-hl-3b-4",
+    "questionRef": "2025 HL Section 3B Q4",
+    "questionText": "ローナンさんは、試験（しけん）の後、何が楽（たの）しみですか。",
+    "totalMarks": 1,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure",
+        "reviewed-card-correction"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        11
+      ],
+      "generalSchemePages": [
+        11
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "スキー",
+        "marks": 1,
+        "id": "r-1"
+      }
+    ],
+    "extraneousMaterialRule": {
+      "multiplier": 0.5,
+      "sourceText": "(6 marks) Half marks where there is strong evidence of extraneous material./ Half marks if answered in English.",
+      "schemePages": [
+        11
+      ]
+    },
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "English",
+      "sourceText": "(6 marks) Half marks where there is strong evidence of extraneous material./ Half marks if answered in English.",
+      "schemePages": [
+        11
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        10
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058ALP000BV",
+      "sourceYear": 2025
+    },
+    "stem": "Answer in Japanese.",
+    "paperFileid": "LC058ALP000BV"
+  },
+  {
+    "id": "ja-2025-hl-3c",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "rubric",
+    "level": "higher",
+    "year": 2025,
+    "section": "3",
+    "topicId": "japanese-5-4",
+    "conceptId": "circle-correct-reading-five-kanji-meaning",
+    "questionRef": "2025 HL Section 3C",
+    "questionText": "Circle the correct reading of any FIVE of the following Kanji and write the meaning in English as in the example.\ne.g. 日本 (a) にちもと (b) にんほ (c) にほん (d) にちほん An tSeapáin / Japan\n1. 休む (a) きゅうむ (b) ねむ (c) のむ (d) やすむ _______________\n2. 半月 (a) こんげつ (b) さつき (c) はんつき (d) はんにち _______________\n3. 後ろ (a) うしろ (b) ごんろ (c) ぜんろ (d) まえろ _______________\n4. 小学校 (a) しょうがくせい (b) しょうがっこう (c) ちいがこう (d) ちゅうがっこう _______________\n5. 高い (a) たかい (b) ながい (c) ひくい (d) みじかい _______________\n6. 先生 (a) せいせん (b) せいと (c) せんこう (d) せんせい _______________",
+    "totalMarks": 10,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        12
+      ],
+      "schemePages": [
+        12
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "rubric": {
+      "system": "language-points",
+      "count": 5,
+      "groups": [
+        {
+          "id": "item-1",
+          "label": "休む",
+          "rows": [
+            {
+              "id": "reading",
+              "text": "(d)",
+              "marks": 1
+            },
+            {
+              "id": "meaning",
+              "text": "rest",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "item-2",
+          "label": "半月",
+          "rows": [
+            {
+              "id": "reading",
+              "text": "(c)",
+              "marks": 1
+            },
+            {
+              "id": "meaning",
+              "text": "a half month",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "item-3",
+          "label": "後ろ",
+          "rows": [
+            {
+              "id": "reading",
+              "text": "(a)",
+              "marks": 1
+            },
+            {
+              "id": "meaning",
+              "text": "behind",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "item-4",
+          "label": "小学校",
+          "rows": [
+            {
+              "id": "reading",
+              "text": "(b)",
+              "marks": 1
+            },
+            {
+              "id": "meaning",
+              "text": "elementary school",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "item-5",
+          "label": "高い",
+          "rows": [
+            {
+              "id": "reading",
+              "text": "(a)",
+              "marks": 1
+            },
+            {
+              "id": "meaning",
+              "text": "high/expensive",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "item-6",
+          "label": "先生",
+          "rows": [
+            {
+              "id": "reading",
+              "text": "(d)",
+              "marks": 1
+            },
+            {
+              "id": "meaning",
+              "text": "teacher",
+              "marks": 1
+            }
+          ]
+        }
+      ],
+      "taskRequirements": [
+        "Circle the correct reading of any FIVE of the following Kanji and write the meaning in English as in the example."
+      ],
+      "markingGuideNote": "The scheme awards one mark for the correct reading and one for the meaning for each of five selected kanji."
+    },
+    "paperFileid": "LC058ALP000BV",
+    "questionFigure": {
+      "candId": "ja-2025-hl-3c",
+      "src": "/exam-figures/japanese/ja-2025-hl-3c.png",
+      "srcHash": "ce9381686b405a650bbef28e737b3bd4",
+      "alt": "Circle the correct reading of any FIVE of the following Kanji and write the meaning in English as in the example.\ne.g. 日本 (a) にちもと (b) にんほ (c) にほん (d) にちほん An tSeapáin / Japan\n1. 休む (a) きゅうむ (b) ねむ (c) のむ (d) やすむ _______________\n2. 半月 (a) こんげつ (b) さつき (c) はんつき (d) はんにち _______________\n3. 後ろ (a) うしろ (b) ごんろ (c) ぜんろ (d) まえろ _______________\n4. 小学校 (a) しょうがくせい (b) しょうがっこう (c) ちいがこう (d) ちゅうがっこう _______________\n5. 高い (a) たかい (b) ながい (c) ひくい (d) みじかい _______________\n6. 先生 (a) せいせん (b) せいと (c) せんこう (d) せんせい _______________",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2025-hl-3d",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "rubric",
+    "level": "higher",
+    "year": 2025,
+    "section": "3",
+    "topicId": "japanese-5-5",
+    "conceptId": "insert-correct-particle-into-ten-blank",
+    "questionRef": "2025 HL Section 3D",
+    "questionText": "Insert the correct particle into any TEN blank spaces below.  There may be more than one correct answer.\n1. ローナンさんは、大学の寮（りょう）はきれいだ_________言っています。\n2. サッカーのトレーニングは夜（よる）7 時_________8 時半__________です。\n3. 大学の左_________コンビニ_________あります。\n4. ローナンさんは、寮（りょう）__________友（とも）だち__________ばんご飯（はん）__________食べません。\n5. 長野（ながの）のほう__________ダブリン__________楽（たの）しいです。\n6. 大学まで自転（じてん）車__________15 分ぐらいかかります。\n7. ローナンさんは、ときどき強（つよし）さんの部（へ）屋（や）__________行って、料理（りょうり）します。",
+    "totalMarks": 10,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        12
+      ],
+      "schemePages": [
+        12
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "rubric": {
+      "system": "language-points",
+      "count": 10,
+      "groups": [
+        {
+          "id": "1-1",
+          "label": "1. Blank 1",
+          "rows": [
+            {
+              "id": "particle",
+              "text": "と",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "2-1",
+          "label": "2. Blank 1",
+          "rows": [
+            {
+              "id": "particle",
+              "text": "から",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "2-2",
+          "label": "2. Blank 2",
+          "rows": [
+            {
+              "id": "particle",
+              "text": "まで",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "3-1",
+          "label": "3. Blank 1",
+          "rows": [
+            {
+              "id": "particle",
+              "text": "に／の／は",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "3-2",
+          "label": "3. Blank 2",
+          "rows": [
+            {
+              "id": "particle",
+              "text": "が／は／に",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "4-1",
+          "label": "4. Blank 1",
+          "rows": [
+            {
+              "id": "particle",
+              "text": "の ／で",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "4-2",
+          "label": "4. Blank 2",
+          "rows": [
+            {
+              "id": "particle",
+              "text": "と／の",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "4-3",
+          "label": "4. Blank 3",
+          "rows": [
+            {
+              "id": "particle",
+              "text": "を",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "5-1",
+          "label": "5. Blank 1",
+          "rows": [
+            {
+              "id": "particle",
+              "text": "が",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "5-2",
+          "label": "5. Blank 2",
+          "rows": [
+            {
+              "id": "particle",
+              "text": "より",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "6-1",
+          "label": "6. Blank 1",
+          "rows": [
+            {
+              "id": "particle",
+              "text": "で",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "7-1",
+          "label": "7. Blank 1",
+          "rows": [
+            {
+              "id": "particle",
+              "text": "に / へ",
+              "marks": 1
+            }
+          ]
+        }
+      ],
+      "taskRequirements": [
+        "Insert the correct particle into any TEN blank spaces below.  There may be more than one correct answer."
+      ],
+      "markingGuideNote": "Select ten of the twelve blanks. Each correct particle earns one mark; slash-separated forms are alternatives for the same blank."
+    },
+    "paperFileid": "LC058ALP000BV",
+    "questionFigure": {
+      "candId": "ja-2025-hl-3d",
+      "src": "/exam-figures/japanese/ja-2025-hl-3d.png",
+      "srcHash": "5f5f8c63bf732cfaaffc4093d72e3e7c",
+      "alt": "Insert the correct particle into any TEN blank spaces below.  There may be more than one correct answer.\n1. ローナンさんは、大学の寮（りょう）はきれいだ_________言っています。\n2. サッカーのトレーニングは夜（よる）7 時_________8 時半__________です。\n3. 大学の左_________コンビニ_________あります。\n4. ローナンさんは、寮（りょう）__________友（とも）だち__________ばんご飯（はん）__________食べません。\n5. 長野（ながの）のほう__________ダブリン__________楽（たの）しいです。\n6. 大学まで自転（じてん）車__________15 分ぐらいかかります。\n7. ローナンさんは、ときどき強（つよし）さんの部（へ）屋（や）__________行って、料理（りょうり）します。",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2025-hl-4",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "rubric",
+    "level": "higher",
+    "year": 2025,
+    "section": "4",
+    "topicId": "japanese-5-7",
+    "conceptId": "less-than-200-japanese-characters-have",
+    "questionRef": "2025 HL Section 4",
+    "questionText": "Write about (a) OR (b) OR (c) in no less than 200 Japanese characters.\n(a) You have just started a new hobby.  Write to your Japanese e-pal about it.  Include answers to the following questions.\n(i) 新しいしゅみは何ですか。\n(ii) どうして好きですか。\nOR\n(b) You have to give a speech to your classmates about your experience learning Japanese.  Write the speech including answers to the following questions.\n(i) 日本語の勉強はどうですか。\n(ii) どうして日本語を勉強したいと思いましたか。\nOR\n(c) You went on a school trip yesterday.  Write a diary entry.  Include answers to the following questions.\n(i) どこに行きましたか。\n(ii) どうでしたか。",
+    "totalMarks": 40,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        14
+      ],
+      "schemePages": [
+        13,
+        14
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "Write about (a) OR (b) OR (c) in no less than 200 Japanese characters."
+      ],
+      "criteria": [
+        {
+          "id": "opening",
+          "label": "Opening",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidance": [
+            "1 discretionary mark for opening"
+          ]
+        },
+        {
+          "id": "point-i",
+          "label": "(i)",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidance": [
+            "9 marks for each point 18 marks"
+          ]
+        },
+        {
+          "id": "point-ii",
+          "label": "(ii)",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidance": [
+            "9 marks for each point 18 marks"
+          ]
+        },
+        {
+          "id": "closing",
+          "label": "Closing",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidance": [
+            "1 discretionary mark for closing"
+          ]
+        },
+        {
+          "id": "expression",
+          "label": "Expression 20 marks",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [
+            "N.B. Take a global view of language use (E = Expression) to locate the candidate’s work in the most appropriate category."
+          ],
+          "bands": [
+            {
+              "label": "0–5",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Vocabulary very inadequate; incorrect use of Hiragana and Katakana; some Romaji used; illegible characters; little or no Kanji used; very limited range of structures used. Little or no textual cohesion. Poor punctuation. Incorrect use of Genkouyoushi. Serious grammatical errors: Verb and adjective forms generally incorrect; particles generally incorrect; tense inconsistent, inappropriate."
+              ]
+            },
+            {
+              "label": "6–14",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+              ],
+              "guidance": [
+                "Vocabulary use quite good – generally adequate and appropriate with perhaps some Japanese idiom. Appropriate and correct use of Hiragana and Katakana with only occasional errors; adequate use of Kanji. Adequate range of structures used. Punctuation quite good. Textual cohesion quite good. Use of Genkouyoushi quite good. Few serious/frequent minor grammatical errors: Verb forms and adjective, tense, particles correct more often than not."
+              ]
+            },
+            {
+              "label": "15–20",
+              "marks": [
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. No or very few mistakes using Hiragana and Katakana. Good use of Kanji. Wide range of structures used. Correct punctuation. Good Textual cohesion. Good use of Genkouyoushi. Grammar generally correct: Good level of accuracy in verb and adjective forms, tense, particles."
+              ]
+            }
+          ],
+          "limits": [
+            {
+              "id": "lower-e",
+              "maxMarks": 15,
+              "when": {
+                "any": [
+                  {
+                    "criterionIds": [
+                      "opening",
+                      "point-i",
+                      "point-ii",
+                      "closing"
+                    ],
+                    "atMost": 10
+                  },
+                  {
+                    "length": "characters",
+                    "below": 150
+                  }
+                ]
+              },
+              "bands": [
+                {
+                  "label": "0–3",
+                  "marks": [
+                    0,
+                    1,
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Vocabulary very inadequate; incorrect use of Hiragana and Katakana; some Romaji used; illegible characters; little or no Kanji used; very limited range of structures used. Little or no textual cohesion. Poor punctuation. Incorrect use of Genkouyoushi. Serious grammatical errors: Verb and adjective forms generally incorrect; particles generally incorrect; tense inconsistent, inappropriate."
+                  ]
+                },
+                {
+                  "label": "4–10",
+                  "marks": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                  ],
+                  "guidance": [
+                    "Vocabulary use quite good – generally adequate and appropriate with perhaps some Japanese idiom. Appropriate and correct use of Hiragana and Katakana with only occasional errors; adequate use of Kanji. Adequate range of structures used. Punctuation quite good. Textual cohesion quite good. Use of Genkouyoushi quite good. Few serious/frequent minor grammatical errors: Verb forms and adjective, tense, particles correct more often than not."
+                  ]
+                },
+                {
+                  "label": "11–15",
+                  "marks": [
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                  ],
+                  "guidance": [
+                    "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. No or very few mistakes using Hiragana and Katakana. Good use of Kanji. Wide range of structures used. Correct punctuation. Good Textual cohesion. Good use of Genkouyoushi. Grammar generally correct: Good level of accuracy in verb and adjective forms, tense, particles."
+                  ]
+                }
+              ],
+              "guidance": [
+                "Expression: Marked out of 20 or 15. If the content mark is 10 or less, or the composition is too short (less than 150 characters), mark expression out of 15 and write ‘lower E’ to indicate this. Use the numbering (1-9) when showing individual content points, display total content points (C =…) and add E/Lower E to give total marks for the composition."
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Assess the one option you answered. The same printed content and expression grid applies to all three options."
+    },
+    "paperFileid": "LC058ALP000BV",
+    "questionFigure": {
+      "candId": "ja-2025-hl-4",
+      "src": "/exam-figures/japanese/ja-2025-hl-4.png",
+      "srcHash": "cb7a4d98fd8b8955f4e8008d011cdc4b",
+      "alt": "Write about (a) OR (b) OR (c) in no less than 200 Japanese characters.\n(a) You have just started a new hobby.  Write to your Japanese e-pal about it.  Include answers to the following questions.\n(i) 新しいしゅみは何ですか。\n(ii) どうして好きですか。\nOR\n(b) You have to give a speech to your classmates about your experience learning Japanese.  Write the speech including answers to the following questions.\n(i) 日本語の勉強はどうですか。\n(ii) どうして日本語を勉強したいと思いましたか。\nOR\n(c) You went on a school trip yesterday.  Write a diary entry.  Include answers to the following questions.\n(i) どこに行きましたか。\n(ii) どうでしたか。",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2025-hl-5",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "rubric",
+    "level": "higher",
+    "year": 2025,
+    "section": "Q5",
+    "topicId": "japanese-5-7",
+    "conceptId": "japanese-exchange-student-coming-stay-weeks",
+    "questionRef": "2025 HL Section 5",
+    "questionText": "A Japanese exchange student is coming to stay with you for 4 weeks.  Write to him/her in no less than 320 Japanese characters covering ANY 4 of the following headings.\n1. 家族（かぞく） Your family\n2. ペット Your pet(s)\n3. 家（いえ） Your house\n4. 家（いえ）の食事 Meals at home\n5. 町（まち）の有名（ゆうめい）なところ A famous place in your town\n6. 天気 The weather\n7. 毎日すること Your daily routine\n8. 一緒（いっしょ）にしたいこと Things you want to do together",
+    "totalMarks": 60,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        16
+      ],
+      "schemePages": [
+        15,
+        16
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "A Japanese exchange student is coming to stay with you for 4 weeks.  Write to him/her in no less than 320 Japanese characters covering ANY 4 of the following headings."
+      ],
+      "criteria": [
+        {
+          "id": "heading-1",
+          "label": "Heading 1 you chose",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "guidance": [
+            "7 marks for any heading 1-8",
+            "1. 家族（かぞく） Your family",
+            "2. ペット Your pet(s)",
+            "3. 家（いえ） Your house",
+            "4. 家の（いえ）食事 Meals at home",
+            "5. 町の（まち）有名な（ゆうめい）ところ A famous place in your town",
+            "6. 天気 The weather",
+            "7. 毎日すること Your daily routine",
+            "8. 一緒に（いっしょ）したいこと Things you want to do together"
+          ]
+        },
+        {
+          "id": "heading-2",
+          "label": "Heading 2 you chose",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "guidance": [
+            "7 marks for any heading 1-8",
+            "1. 家族（かぞく） Your family",
+            "2. ペット Your pet(s)",
+            "3. 家（いえ） Your house",
+            "4. 家の（いえ）食事 Meals at home",
+            "5. 町の（まち）有名な（ゆうめい）ところ A famous place in your town",
+            "6. 天気 The weather",
+            "7. 毎日すること Your daily routine",
+            "8. 一緒に（いっしょ）したいこと Things you want to do together"
+          ]
+        },
+        {
+          "id": "heading-3",
+          "label": "Heading 3 you chose",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "guidance": [
+            "7 marks for any heading 1-8",
+            "1. 家族（かぞく） Your family",
+            "2. ペット Your pet(s)",
+            "3. 家（いえ） Your house",
+            "4. 家の（いえ）食事 Meals at home",
+            "5. 町の（まち）有名な（ゆうめい）ところ A famous place in your town",
+            "6. 天気 The weather",
+            "7. 毎日すること Your daily routine",
+            "8. 一緒に（いっしょ）したいこと Things you want to do together"
+          ]
+        },
+        {
+          "id": "heading-4",
+          "label": "Heading 4 you chose",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "guidance": [
+            "7 marks for any heading 1-8",
+            "1. 家族（かぞく） Your family",
+            "2. ペット Your pet(s)",
+            "3. 家（いえ） Your house",
+            "4. 家の（いえ）食事 Meals at home",
+            "5. 町の（まち）有名な（ゆうめい）ところ A famous place in your town",
+            "6. 天気 The weather",
+            "7. 毎日すること Your daily routine",
+            "8. 一緒に（いっしょ）したいこと Things you want to do together"
+          ]
+        },
+        {
+          "id": "opening",
+          "label": "Opening",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidance": [
+            "1 discretionary mark for opening"
+          ]
+        },
+        {
+          "id": "closing",
+          "label": "Closing",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidance": [
+            "1 discretionary mark for closing"
+          ]
+        },
+        {
+          "id": "expression",
+          "label": "Expression  30 marks",
+          "maxMarks": 30,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
+          ],
+          "guidance": [
+            "N.B. Take a global view of language use (E = Expression) to locate the candidate’s work in the most appropriate category."
+          ],
+          "bands": [
+            {
+              "label": "0–7",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "guidance": [
+                "Vocabulary very inadequate; incorrect use of Hiragana and Katakana; some Romaji used; illegible characters; little or no Kanji used; very limited range of structures used. Little or no textual cohesion. Poor punctuation. Incorrect use of Genkouyoushi. Serious grammatical errors: Verb and adjective forms generally incorrect; particles generally incorrect; tense inconsistent, inappropriate."
+              ]
+            },
+            {
+              "label": "8–20",
+              "marks": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "Vocabulary use quite good – generally adequate and appropriate with perhaps some Japanese idiom. Appropriate and correct use of Hiragana and Katakana with only occasional errors; adequate use of Kanji. Adequate range of structures used. Punctuation quite good. Textual cohesion quite good. Use of Genkouyoushi quite good. Few serious/frequent minor grammatical errors: Verb forms and adjective, tense, particles correct more often than not."
+              ]
+            },
+            {
+              "label": "21–30",
+              "marks": [
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30
+              ],
+              "guidance": [
+                "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. No or very few mistakes using Hiragana and Katakana. Good use of Kanji. Wide range of structures used. Correct punctuation. Good Textual cohesion. Good use of Genkouyoushi. Grammar generally correct: Good level of accuracy in verb and adjective forms, tense, particles."
+              ]
+            }
+          ],
+          "limits": [
+            {
+              "id": "lower-e",
+              "maxMarks": 20,
+              "when": {
+                "any": [
+                  {
+                    "criterionIds": [
+                      "heading-1",
+                      "heading-2",
+                      "heading-3",
+                      "heading-4",
+                      "opening",
+                      "closing"
+                    ],
+                    "atMost": 15
+                  },
+                  {
+                    "length": "characters",
+                    "below": 200
+                  }
+                ]
+              },
+              "bands": [
+                {
+                  "label": "0–4",
+                  "marks": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  "guidance": [
+                    "Vocabulary very inadequate; incorrect use of Hiragana and Katakana; some Romaji used; illegible characters; little or no Kanji used; very limited range of structures used. Little or no textual cohesion. Poor punctuation. Incorrect use of Genkouyoushi. Serious grammatical errors: Verb and adjective forms generally incorrect; particles generally incorrect; tense inconsistent, inappropriate."
+                  ]
+                },
+                {
+                  "label": "5–12",
+                  "marks": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12
+                  ],
+                  "guidance": [
+                    "Vocabulary use quite good – generally adequate and appropriate with perhaps some Japanese idiom. Appropriate and correct use of Hiragana and Katakana with only occasional errors; adequate use of Kanji. Adequate range of structures used. Punctuation quite good. Textual cohesion quite good. Use of Genkouyoushi quite good. Few serious/frequent minor grammatical errors: Verb forms and adjective, tense, particles correct more often than not."
+                  ]
+                },
+                {
+                  "label": "13–20",
+                  "marks": [
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20
+                  ],
+                  "guidance": [
+                    "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. No or very few mistakes using Hiragana and Katakana. Good use of Kanji. Wide range of structures used. Correct punctuation. Good Textual cohesion. Good use of Genkouyoushi. Grammar generally correct: Good level of accuracy in verb and adjective forms, tense, particles."
+                  ]
+                }
+              ],
+              "guidance": [
+                "Expression: Marked out of 30 or 20. If the content mark is 15` or less, or the composition is too short (less than 200 characters), mark expression out of 20 and write ‘lower E’ to indicate this. Use the numbering 1-8, when showing individual content points, display total content points (C =…) and add E/Lower E to give total marks for the composition."
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Assess four different selected headings once each, using the printed content and expression grid."
+    },
+    "paperFileid": "LC058ALP000BV",
+    "questionFigure": {
+      "candId": "ja-2025-hl-5",
+      "src": "/exam-figures/japanese/ja-2025-hl-5.png",
+      "srcHash": "b3668716462439ffe9caa253178178fb",
+      "alt": "A Japanese exchange student is coming to stay with you for 4 weeks.  Write to him/her in no less than 320 Japanese characters covering ANY 4 of the following headings.\n1. 家族（かぞく） Your family\n2. ペット Your pet(s)\n3. 家（いえ） Your house\n4. 家（いえ）の食事 Meals at home\n5. 町（まち）の有名（ゆうめい）なところ A famous place in your town\n6. 天気 The weather\n7. 毎日すること Your daily routine\n8. 一緒（いっしょ）にしたいこと Things you want to do together",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2025-hl-la-1",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "A",
+    "topicId": "japanese-6-1",
+    "conceptId": "complete-table-below-emi-where-work",
+    "questionRef": "2025 HL Section LA Q1",
+    "questionText": "Complete the table below.\nEmi\nWhere they work.\nWhen they work.\nPositive comments about their job.\nNegative comments about their job.",
+    "totalMarks": 7,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        3
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "café",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "Saturdays",
+        "marks": 1,
+        "id": "r-2"
+      },
+      {
+        "kind": "point",
+        "verbatim": "9-4",
+        "marks": 1,
+        "id": "r-3"
+      },
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "5-minute walk",
+            "convenient",
+            "can have soup",
+            "can have wrap for lunch"
+          ]
+        },
+        "id": "r-4"
+      },
+      {
+        "kind": "point",
+        "verbatim": "sometimes rude / selfish people",
+        "marks": 1,
+        "id": "r-5"
+      },
+      {
+        "kind": "point",
+        "verbatim": "come to café",
+        "marks": 1,
+        "id": "r-6"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear three students present on their part-time jobs in class.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-la-2",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "A",
+    "topicId": "japanese-6-1",
+    "conceptId": "complete-table-below-andy-where-work",
+    "questionRef": "2025 HL Section LA Q2",
+    "questionText": "Complete the table below.\nAndy\nWhere they work.\nWhen they work.\nPositive comments about their job.\nNegative comments about their job.",
+    "totalMarks": 7,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        3
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "Toyota dealer/ father’s company",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "Wednesdays from 2pm / Saturdays from 8:30 am",
+        "marks": 2,
+        "id": "r-2"
+      },
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "loves cars",
+            "fun cleaning (cool) cars",
+            "fun waxing (cool) cars"
+          ]
+        },
+        "id": "r-3"
+      },
+      {
+        "kind": "point",
+        "verbatim": "tough when the weather is bad/when he uses water in cold weather",
+        "marks": 1,
+        "id": "r-4"
+      },
+      {
+        "kind": "point",
+        "verbatim": "hands get red/ hands get sore",
+        "marks": 1,
+        "id": "r-5"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear three students present on their part-time jobs in class.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-la-3",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "A",
+    "topicId": "japanese-6-1",
+    "conceptId": "complete-table-below-naomi-where-work",
+    "questionRef": "2025 HL Section LA Q3",
+    "questionText": "Complete the table below.\nNaomi\nWhere they work.\nWhen they work.\nPositive comments about their job.\nNegative comments about their job.",
+    "totalMarks": 7,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        3
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "cinema",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "Tuesday to Friday",
+        "marks": 1,
+        "id": "r-2"
+      },
+      {
+        "kind": "point",
+        "verbatim": "after school",
+        "marks": 1,
+        "id": "r-3"
+      },
+      {
+        "kind": "point",
+        "verbatim": "easy / can watch new films for free.",
+        "marks": 2,
+        "id": "r-4"
+      },
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "Thursday is too free",
+            "can’t use mobile phone",
+            "can’t chat with staff"
+          ]
+        },
+        "id": "r-5"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear three students present on their part-time jobs in class.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-lb-1-a",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "B",
+    "topicId": "japanese-6-2",
+    "conceptId": "where-first-ever-capsule-hotel",
+    "questionRef": "2025 HL Section LB Q1(a)",
+    "questionText": "Where was the first ever capsule hotel?",
+    "totalMarks": 1,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "Osaka",
+        "marks": 1,
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear two news items from a radio programme for learners of Japanese.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-lb-1-b",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "B",
+    "topicId": "japanese-6-2",
+    "conceptId": "groups-people-who-use-hotel",
+    "questionRef": "2025 HL Section LB Q1(b)",
+    "questionText": "Mention two groups of people who use this hotel.",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "men",
+            "women",
+            "university students",
+            "foreigners"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear two news items from a radio programme for learners of Japanese.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-lb-1-c",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "B",
+    "topicId": "japanese-6-2",
+    "conceptId": "explain-concept",
+    "questionRef": "2025 HL Section LB Q1(c)",
+    "questionText": "Explain the 1+7+1 concept.",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "1 hour for shower",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "7 hours for sleeping",
+        "marks": 1,
+        "id": "r-2"
+      },
+      {
+        "kind": "point",
+        "verbatim": "1 hour for breakfast",
+        "marks": 1,
+        "id": "r-3"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear two news items from a radio programme for learners of Japanese.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-lb-1-d",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "B",
+    "topicId": "japanese-6-2",
+    "conceptId": "10th-floor-hotel",
+    "questionRef": "2025 HL Section LB Q1(d)",
+    "questionText": "What can you do on the 10th floor of the hotel?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "see the Tokyo night view /see the wonderful night view",
+            "Tokyo Tower",
+            "go to lounge"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear two news items from a radio programme for learners of Japanese.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-lb-1-e",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "B",
+    "topicId": "japanese-6-2",
+    "conceptId": "directions-given-shinagawa-station",
+    "questionRef": "2025 HL Section LB Q1(e)",
+    "questionText": "What directions are given from Shinagawa station?",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "north exit",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "go straight for 100 metres",
+            "turn left at the first traffic light",
+            "next to hospital",
+            "3-minute walk (from the station)"
+          ],
+          "perOptionSteps": [
+            2,
+            1
+          ]
+        },
+        "id": "r-2"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear two news items from a radio programme for learners of Japanese.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-lb-1-f",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "B",
+    "topicId": "japanese-6-2",
+    "conceptId": "nine-hours-phone-number",
+    "questionRef": "2025 HL Section LB Q1(f)",
+    "questionText": "Nine Hours phone number is:",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "050-1807-3493",
+        "marks": 2,
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear two news items from a radio programme for learners of Japanese.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV",
+    "questionFigure": {
+      "candId": "ja-2025-hl-lb-1-f",
+      "src": "/exam-figures/japanese/ja-2025-hl-lb-1-f.png",
+      "srcHash": "eaf55fc10552eda3ec146fea2656e508",
+      "alt": "Nine Hours phone number is:",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2025-hl-lb-2-a",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "B",
+    "topicId": "japanese-6-2",
+    "conceptId": "weather-forecast-saturday",
+    "questionRef": "2025 HL Section LB Q2(a)",
+    "questionText": "What is the weather forecast for Saturday?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "windy in morning/strong wind",
+            "rain in afternoon",
+            "14 degrees",
+            "cool"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear two news items from a radio programme for learners of Japanese.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-lb-2-b",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "B",
+    "topicId": "japanese-6-2",
+    "conceptId": "advice-given-saturday",
+    "questionRef": "2025 HL Section LB Q2(b)",
+    "questionText": "What advice is given for Saturday?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "don’t forget/ bring umbrella",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "don’t forget/ bring jacket",
+        "marks": 1,
+        "id": "r-2"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear two news items from a radio programme for learners of Japanese.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-lb-2-c",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "B",
+    "topicId": "japanese-6-2",
+    "conceptId": "weather-forecast-sunday",
+    "questionRef": "2025 HL Section LB Q2(c)",
+    "questionText": "What is the weather forecast for Sunday?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "warmer than Saturday",
+            "fine",
+            "20 degrees",
+            "beautiful/autumn weather"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear two news items from a radio programme for learners of Japanese.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-lc-1",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "C",
+    "topicId": "japanese-6-1",
+    "conceptId": "ikeda-based-his-profile",
+    "questionRef": "2025 HL Section LC Q1",
+    "questionText": "Give two details about Mr. Ikeda based on his profile.",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "owner of a restaurant in Galway",
+            "sushi chef",
+            "from Yokohama",
+            "29 years old",
+            "living in Galway for 4 years"
+          ],
+          "perOptionSteps": [
+            2,
+            1
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear an interview with Mr. Ikeda, restaurant owner and chef.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-lc-2",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "C",
+    "topicId": "japanese-6-1",
+    "conceptId": "type-restaurant-ikeda-work-melbourne",
+    "questionRef": "2025 HL Section LC Q2",
+    "questionText": "In which type of restaurant did Mr. Ikeda work in Melbourne?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "Asian",
+        "marks": 2,
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear an interview with Mr. Ikeda, restaurant owner and chef.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-lc-3",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "C",
+    "topicId": "japanese-6-1",
+    "conceptId": "ikeda-move-ireland",
+    "questionRef": "2025 HL Section LC Q3",
+    "questionText": "Why did Mr. Ikeda move to Ireland?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "his girlfriend (Ciara) was homesick / to be with his girlfriend (Ciara)/ his girlfriend wanted to return to Galway",
+        "marks": 2,
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear an interview with Mr. Ikeda, restaurant owner and chef.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-lc-4",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "C",
+    "topicId": "japanese-6-1",
+    "conceptId": "ikeda-call-his-restaurant-matsuri",
+    "questionRef": "2025 HL Section LC Q4",
+    "questionText": "Why did Mr. Ikeda call his restaurant Matsuri?",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "Japanese festivals/matsuri are lively",
+            "lots of festivals (all year)",
+            "everyone loves festivals"
+          ],
+          "perOptionSteps": [
+            2,
+            1
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear an interview with Mr. Ikeda, restaurant owner and chef.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-lc-5",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "C",
+    "topicId": "japanese-6-1",
+    "conceptId": "complete-table",
+    "questionRef": "2025 HL Section LC Q5",
+    "questionText": "Complete the following table.",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "fish",
+        "marks": 1,
+        "contextNote": "Ireland",
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "vegetables",
+        "marks": 1,
+        "contextNote": "Europe",
+        "id": "r-2"
+      },
+      {
+        "kind": "point",
+        "verbatim": "rice",
+        "marks": 1,
+        "contextNote": "Japan",
+        "id": "r-3"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear an interview with Mr. Ikeda, restaurant owner and chef.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV",
+    "questionFigure": {
+      "candId": "ja-2025-hl-lc-5",
+      "src": "/exam-figures/japanese/ja-2025-hl-lc-5.png",
+      "srcHash": "3908c78e18b3378aca5d92e87bc888d2",
+      "alt": "Complete the following table.",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2025-hl-lc-6",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "C",
+    "topicId": "japanese-6-1",
+    "conceptId": "lunch",
+    "questionRef": "2025 HL Section LC Q6",
+    "questionText": "Give details about lunch.",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "Sashimi/raw fish bento/lunch box",
+            "16 euro",
+            "present of chopsticks"
+          ],
+          "perOptionSteps": [
+            2,
+            1
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear an interview with Mr. Ikeda, restaurant owner and chef.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-lc-7",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "C",
+    "topicId": "japanese-6-1",
+    "conceptId": "ikeda-prefer-galway-tokyo-melbourne",
+    "questionRef": "2025 HL Section LC Q7",
+    "questionText": "Why does Mr. Ikeda prefer Galway to Tokyo and Melbourne?",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "Tokyo has earthquakes",
+            "earthquakes are scary",
+            "Melbourne is expensive/ apartment in Melbourne was expensive"
+          ],
+          "perOptionSteps": [
+            2,
+            1
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear an interview with Mr. Ikeda, restaurant owner and chef.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-ld-1-a",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "D",
+    "topicId": "japanese-6-0",
+    "conceptId": "family-member-planning-culture-festival-akemi",
+    "questionRef": "2025 HL Section LD Q1(a)",
+    "questionText": "What family member is planning to go to the culture festival with Akemi?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "her younger",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "sister",
+        "marks": 1,
+        "id": "r-2"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear three conversations between Akemi and Chris.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-ld-1-b",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "D",
+    "topicId": "japanese-6-0",
+    "conceptId": "where-meet",
+    "questionRef": "2025 HL Section LD Q1(b)",
+    "questionText": "Where will they meet up?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "in front of",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "the post office",
+        "marks": 1,
+        "id": "r-2"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear three conversations between Akemi and Chris.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-ld-2-a-i",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "D",
+    "topicId": "japanese-6-0",
+    "conceptId": "chris-buy",
+    "questionRef": "2025 HL Section LD Q2(a)(i)",
+    "questionText": "What does Chris buy?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "manga",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "(2) magazines",
+        "marks": 1,
+        "id": "r-2"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear three conversations between Akemi and Chris.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-ld-2-a-ii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "D",
+    "topicId": "japanese-6-0",
+    "conceptId": "much-items-cost",
+    "questionRef": "2025 HL Section LD Q2(a)(ii)",
+    "questionText": "How much do the items cost?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "500 yen (1 is 200 yen, 3 is 500 yen)",
+        "marks": 2,
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear three conversations between Akemi and Chris.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-ld-2-b-i",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "D",
+    "topicId": "japanese-6-0",
+    "conceptId": "chris-reluctant-tea-ceremony",
+    "questionRef": "2025 HL Section LD Q2(b)(i)",
+    "questionText": "Why is Chris reluctant to go to tea ceremony?",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "tough to sit on tatami",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "he has long legs /his body will be sore",
+        "marks": 2,
+        "id": "r-2"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear three conversations between Akemi and Chris.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-ld-2-b-ii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "D",
+    "topicId": "japanese-6-0",
+    "conceptId": "akemi-persuade-chris-tea-ceremony",
+    "questionRef": "2025 HL Section LD Q2(b)(ii)",
+    "questionText": "How does Akemi persuade Chris to go to tea ceremony?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "she told Chris he would be ok because there were chairs / he likes (green) tea",
+        "marks": 2,
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear three conversations between Akemi and Chris.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-ld-3-a",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "D",
+    "topicId": "japanese-6-0",
+    "conceptId": "chris-think-nishi-high-school-strict",
+    "questionRef": "2025 HL Section LD Q3(a)",
+    "questionText": "Why does Chris think that Nishi High School is strict?",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "criterion",
+        "verbatim": "students wore their uniform at the (culture) festival, students did not wear make-up, all hair styles were the same. (any 2, 2 marks + 1 mark) (his own school is not strict/ students have blond or green hair/ no uniform 1 mark)",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear three conversations between Akemi and Chris.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-ld-3-b",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "D",
+    "topicId": "japanese-6-0",
+    "conceptId": "akemi-describe-students-nishi-high-school",
+    "questionRef": "2025 HL Section LD Q3(b)",
+    "questionText": "How does Akemi describe the students of Nishi High School?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "serious / clever",
+        "marks": 2,
+        "id": "r-1"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear three conversations between Akemi and Chris.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
+    "id": "ja-2025-hl-ld-3-c",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "higher",
+    "year": 2025,
+    "section": "D",
+    "topicId": "japanese-6-0",
+    "conceptId": "date-sports-festival-held",
+    "questionRef": "2025 HL Section LD Q3(c)",
+    "questionText": "On what date will the sports festival be held?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "10th",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "October",
+        "marks": 1,
+        "id": "r-2"
+      }
+    ],
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "penalizedLanguage": "Japanese",
+      "sourceText": "(1/2 marks if answered in Japanese, romaji or Japanese script)",
+      "schemePages": [
+        3
+      ]
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "2025 Japanese Higher Level",
+      "title": "Original examination material",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058ALPA00BV",
+      "sourceYear": 2025
+    },
+    "stem": "You will hear three conversations between Akemi and Chris.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2025 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "secFileid": "LC058ZLP017BV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC058ZLP017BV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058ALPA00BV"
+  },
+  {
     "id": "ja-2026-hl-1a-1",
     "source": "sec",
     "subjectId": "japanese",

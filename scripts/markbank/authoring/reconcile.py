@@ -189,6 +189,12 @@ def shipped_cards(subject):
         originals = {cid for cid, _ in out}
         for cid in originals & by_id.keys():
             assert 'reviewed-card-correction' in by_id[cid]['qa']['gates'], f'Unaudited correction: {cid}'
+        if subject == 'japanese':
+            aliases = json.load(open(os.path.join(DECKS, subject, 'aliases.json'), encoding='utf-8'))
+            for old, target in aliases.items():
+                assert old in originals and target in by_id and target not in aliases
+                assert old.startswith(target + '-') and old != target, f'Invalid Japanese consolidation: {old}'
+            out = [(cid, ref) for cid, ref in out if cid not in aliases]
         out = [(cid, by_id[cid]['questionRef'] if cid in by_id else ref) for cid, ref in out]
         out.extend((card['id'], card['questionRef']) for card in reviewed if card['id'] not in originals)
     if subject == 'business':
@@ -821,6 +827,8 @@ def content_hash(subject):
         # PE's bands and rows are cut from the reviewed guidance at load (answers.ts).
         for name in (('factory.ts', 'reviewed.json', 'answers.ts') if subject == 'physical-education' else ('reviewed.ts', 'reviewed.json')):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
+    if subject == 'japanese':
+        h.update(open(os.path.join(DECKS, subject, 'aliases.json'), 'rb').read())
     if subject == 'business':
         # Reviewed rubric cards and printed routes are data, not literal cards.
         for name in ('rubric-authored.json', 'route-pools.json', 'routes.mjs', 'rubric.ts'):

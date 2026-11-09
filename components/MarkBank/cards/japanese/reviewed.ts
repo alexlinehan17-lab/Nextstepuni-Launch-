@@ -1,4 +1,5 @@
 import rawCards from './reviewed.json';
+import rawAliases from './aliases.json';
 import { resolveCurriculumSpecification, specificationContainsId } from '../../../../curriculumRegistry';
 import { tariffReconciles, type SecCard } from '../../../../types/markBank';
 
@@ -16,8 +17,16 @@ export function withReviewedCards(originals: SecCard[], level: 'higher' | 'ordin
   const reviewed = REVIEWED_CARDS.filter(card => card.level === level);
   const byId = new Map(reviewed.map(card => [card.id, card]));
   const originalIds = new Set(originals.map(card => card.id));
+  const aliases: Readonly<Record<string, string>> = rawAliases;
+  for (const original of originals) {
+    const target = aliases[original.id];
+    if (target && (!byId.has(target) || Object.hasOwn(aliases, target)
+      || byId.get(target)!.year !== original.year || !original.id.startsWith(`${target}-`))) {
+      throw new Error(`Japanese card ${original.id} has an invalid consolidation target`);
+    }
+  }
   return [
-    ...originals.map(original => {
+    ...originals.filter(original => !Object.hasOwn(aliases, original.id)).map(original => {
       const correction = byId.get(original.id);
       if (correction && !correction.qa?.gates?.includes('reviewed-card-correction')) {
         throw new Error(`Japanese card ${original.id} has an unaudited correction`);

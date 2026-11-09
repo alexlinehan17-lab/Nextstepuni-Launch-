@@ -1,7 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { CARDS as higher } from '../components/MarkBank/cards/japanese/higher';
 import { CARDS as ordinary } from '../components/MarkBank/cards/japanese/ordinary';
 import reviewed from '../components/MarkBank/cards/japanese/reviewed.json';
 import census from '../scripts/markbank/authoring/reviews/japanese-2026-ol-census.json';
@@ -56,9 +55,9 @@ describe('Japanese 2026 Ordinary independent source review', () => {
       expect(source.pagesReviewed).toEqual(Object.keys(pages).map(Number));
       expect(Object.values(pages).every(Boolean)).toBe(true);
     }
-    expect(higher.filter(card => card.year !== 2026)).toHaveLength(339);
+    // Global frozen-ID/content and alias accounting is pinned independently by
+    // markBankCardPreservation and the 2025/2026 Higher review tests.
     expect(ordinary.filter(card => card.year !== 2026)).toHaveLength(261);
-    expect(new Set([...higher, ...ordinary].map(card => card.id)).size).toBe(730);
     expect(cards.some(card => card.questionText.trim().length === 0)).toBe(false);
   });
 

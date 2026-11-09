@@ -263,6 +263,9 @@ describe('Mark Bank paper-coverage ratchet', () => {
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }
     }
+    if (subject === 'japanese') {
+      h.update(readFileSync(resolve(__dirname, '..', 'components', 'MarkBank', 'cards', subject, 'aliases.json')));
+    }
     if (subject === 'business') {
       // Same files and order as reconcile.py's content hash.
       for (const name of ['rubric-authored.json', 'route-pools.json', 'routes.mjs', 'rubric.ts']) {

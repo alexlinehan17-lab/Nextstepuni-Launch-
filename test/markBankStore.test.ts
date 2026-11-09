@@ -282,6 +282,26 @@ describe('the review survives, which is the whole point', () => {
     expect(store.memoryFor(deck, canonicalId)).toEqual(memory);
   });
 
+  it('keeps the latest Japanese fragment history and schedules its complete task once', async () => {
+    const { CARDS } = await import('../components/MarkBank/cards/japanese/higher');
+    const { default: aliases } = await import('../components/MarkBank/cards/japanese/aliases.json');
+    const { planSession } = await import('../components/MarkBank/scheduler');
+    const canonicalId = 'ja-2025-hl-2b-1';
+    const fragments = Object.entries(aliases).filter(([, target]) => target === canonicalId).map(([id]) => id);
+    expect(fragments).toHaveLength(6);
+    const old = { s: 1, d: 4.4, last: NOW - 30 * 86_400_000, reps: 3, lapses: 0, state: 2 as const };
+    const latest = { ...old, last: NOW - 20 * 86_400_000, reps: 4 };
+    const deck = { v: 1, updatedAt: NOW, cards: { [fragments[0]]: old, [fragments[1]]: latest } };
+    expect(store.memoryFor(deck, canonicalId)).toEqual(latest);
+    const servedIds = CARDS.filter(card => card.id === canonicalId || fragments.includes(card.id)).map(card => card.id);
+    expect(servedIds).toEqual([canonicalId]);
+    const plan = planSession(servedIds, { [canonicalId]: store.memoryFor(deck, canonicalId) }, NOW, { size: 12 });
+    expect(plan.queue).toEqual([canonicalId]);
+    expect(plan.dueCount).toBe(1);
+    expect(plan.newCount).toBe(0);
+    expect(Object.keys(deck.cards)).toEqual(fragments.slice(0, 2));
+  });
+
   it('keeps English review memory across every Higher Level legacy bridge', async () => {
     const published = (await import('../components/MarkBank/cards/english/published-higher.json')).default as unknown as {
       bridgedLegacyIds: string[]; bridgeAliases: Record<string, string>; cards: Array<{ id: string }>;

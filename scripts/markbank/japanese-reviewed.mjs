@@ -23,6 +23,9 @@ const criterionGuidance = criterion => [
   ...(criterion.limits ?? []).flatMap(limit => [...limit.guidance, ...(limit.bands ?? []).flatMap(band => band.guidance)]),
 ];
 const cards = [];
+const aliases = {};
+const originalIds = new Set(['higher', 'ordinary'].flatMap(level =>
+  [...readFileSync(resolve(root, `components/MarkBank/cards/japanese/${level}.ts`), 'utf8').matchAll(/^    id: "([^"]+)"/gm)].map(match => match[1])));
 
 for (const name of readdirSync(reviewsDir).filter(name => /^japanese-\d{4}-(?:hl|ol)\.json$/.test(name)).sort()) {
   const review = JSON.parse(readFileSync(resolve(reviewsDir, name), 'utf8'));
@@ -35,6 +38,23 @@ for (const name of readdirSync(reviewsDir).filter(name => /^japanese-\d{4}-(?:hl
   // Original PDF columns are read in different orders by whole-page extraction.
   // The pinned authoring selectors preserve the inspected column sequence.
   const selectedScheme = comparableScheme(review.selectors.filter(selector => selector.document === 'scheme').map(selector => selector.text).join('\n'));
+  const census = JSON.parse(readFileSync(resolve(reviewsDir, name.replace('.json', '-census.json')), 'utf8'));
+  for (const entry of review.consolidations ?? []) {
+    const task = census.tasks.find(task => JSON.stringify(task.key) === JSON.stringify(entry.taskKey));
+    const canonical = review.cards.find(card => card.id === entry.canonicalId);
+    if (!task || !canonical || canonical.totalMarks !== task.marks || entry.marks !== task.marks
+      || canonical.year !== census.year || canonical.level !== (census.level === 'hl' ? 'higher' : 'ordinary')
+      || !entry.reason || !entry.legacyIds.length) throw new Error(`${entry.canonicalId}: invalid source consolidation`);
+    for (const [document, evidence, pages] of [['paper', entry.paperEvidence, task.paperPages], ['scheme', entry.schemeEvidence, task.schemePages]]) {
+      if (!pages.includes(evidence.page) || !review.selectors.some(selector => selector.document === document
+        && selector.page === evidence.page && selector.text === evidence.text)) throw new Error(`${entry.canonicalId}: unbound consolidation evidence`);
+    }
+    for (const oldId of entry.legacyIds) {
+      if (!originalIds.has(oldId) || !oldId.startsWith(`${entry.canonicalId}-`) || oldId === entry.canonicalId
+        || Object.hasOwn(aliases, oldId) || review.cards.some(card => card.id === oldId)) throw new Error(`${oldId}: invalid original consolidation identity`);
+      aliases[oldId] = entry.canonicalId;
+    }
+  }
   for (const original of review.cards) {
     const card = structuredClone(original);
     const evidence = card.sourceEvidence;
@@ -43,8 +63,20 @@ for (const name of readdirSync(reviewsDir).filter(name => /^japanese-\d{4}-(?:hl
       const sourceBound = review.selectors.some(selector => selector.document === 'scheme'
         && rule.schemePages.includes(selector.page) && selector.text === rule.sourceText);
       if (![0, 0.5].includes(rule.otherLanguageMultiplier) || !sourceBound
-        || !rule.schemePages.every(page => evidence.generalSchemePages?.includes(page))) {
+        || !rule.schemePages.every(page => evidence.generalSchemePages?.includes(page))
+        || (rule.penalizedLanguage !== undefined && (!['English', 'Japanese'].includes(rule.penalizedLanguage)
+          || !rule.sourceText.includes(`answered in ${rule.penalizedLanguage}`)))) {
         throw new Error(`${card.id}: answer-language rule is not bound to its reviewed scheme selector`);
+      }
+    }
+    if (card.extraneousMaterialRule) {
+      const rule = card.extraneousMaterialRule;
+      const sourceBound = review.selectors.some(selector => selector.document === 'scheme'
+        && rule.schemePages.includes(selector.page) && selector.text === rule.sourceText);
+      if (card.kind !== 'question' || card.tariffModel?.kind !== 'fixed'
+        || rule.multiplier !== 0.5 || !sourceBound
+        || !rule.schemePages.every(page => evidence.generalSchemePages?.includes(page))) {
+        throw new Error(`${card.id}: extraneous-material rule is not bound to its reviewed scheme selector`);
       }
     }
     if (evidence.component === 'aural') {
@@ -88,5 +120,8 @@ for (const name of readdirSync(reviewsDir).filter(name => /^japanese-\d{4}-(?:hl
   }
 }
 if (new Set(cards.map(card => card.id)).size !== cards.length) throw new Error('Duplicate Japanese reviewed identity');
+if (Object.entries(aliases).some(([oldId, target]) => oldId === target || Object.hasOwn(aliases, target)
+  || !cards.some(card => card.id === target))) throw new Error('Japanese consolidation has a missing target or alias chain');
 writeFileSync(resolve(root, 'components/MarkBank/cards/japanese/reviewed.json'), JSON.stringify(cards, null, 2) + '\n');
+writeFileSync(resolve(root, 'components/MarkBank/cards/japanese/aliases.json'), JSON.stringify(aliases, null, 2) + '\n');
 console.log(`Japanese reviewed tasks: ${cards.length}; ${cards.reduce((sum, card) => sum + card.totalMarks, 0)} offered marks.`);
