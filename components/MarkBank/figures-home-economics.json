@@ -591,5 +591,68 @@
     "attribution": "SEC Home Economics 2012 Higher Level marking scheme, page 8 — © State Examinations Commission.",
     "sourceNote": "Original PDF crop, bounds [76, 106, 575, 404], rendered at 2.5×. SHA256 7a1049c12390ad17fae20d4d06e774a38b95dd20422517389abc94a441365828.",
     "solution": true
+  },
+  "home-economics-2012-ol-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2012-ol-sa-q1.png",
+    "md5": "94cf79e181e67af90b7950436110bcad",
+    "alt": "Original protein true/false question: three complete statements, True and False columns, all blank tick cells.",
+    "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 152.56764221191406, 570.219970703125, 368.68768310546875], rendered at 2.5×. SHA256 48a1c80c7de1f4fbb7854ee68cb7af11f1bf0790ea1e1151a3fc0c1847caadbb."
+  },
+  "home-economics-2012-ol-sa-q2": {
+    "src": "/exam-figures/home-economics/home-economics-2012-ol-sa-q2.png",
+    "md5": "19655d4db59ca0437eb60e6d13d1ca77",
+    "alt": "Original starch cloze: insoluble, gelatinisation, hygroscopic word bank and all three complete statements with their blank spaces.",
+    "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 368.68768310546875, 570.219970703125, 571.0675048828125], rendered at 2.5×. SHA256 d78b644fcdb5869d5d818a9bb76341ccc6be716f0529949d08a505643f125847."
+  },
+  "home-economics-2012-ol-sa-q5": {
+    "src": "/exam-figures/home-economics/home-economics-2012-ol-sa-q5.png",
+    "md5": "b916c4e44f67690f6bc3c00c8ed8530d",
+    "alt": "Original vegetarian food-source table: Protein, Calcium, Vitamin B, with Source 1 and Source 2 blank cells.",
+    "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 219.28761291503906, 570.219970703125, 393.9476623535156], rendered at 2.5×. SHA256 86b9941fa1f9be664b5dab0e8e008f80b4b76327c792d3ea41537debdcfbc421."
+  },
+  "home-economics-2012-ol-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2012-ol-sa-q6.png",
+    "md5": "7a750aa28e3a12e58e22b5a92f326dbf",
+    "alt": "Original fruit table: Class of Fruit and matching Example columns, three paired blank numbered rows.",
+    "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 393.9476623535156, 570.219970703125, 568.6676635742188], rendered at 2.5×. SHA256 177eb8cf9559dafdd962c20c7a74a80b0950c94f7e4026f1483dd479389e29c1."
+  },
+  "home-economics-2012-ol-sa-q10": {
+    "src": "/exam-figures/home-economics/home-economics-2012-ol-sa-q10.png",
+    "md5": "0fb6089230c729196d260062f354b45b",
+    "alt": "Original six-property textile pool: Durable, Colourfast, Irritant, Windproof, Flammable, Absorbent; choose three and all blank tick cells retained.",
+    "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 440.0876159667969, 570.219970703125, 792.6519165039062], rendered at 2.5×. SHA256 61f54f36fe9ef43a91b3278026e6b43e2ce8d563124628faf17298dfc862fda4."
+  },
+  "home-economics-2012-ol-sa-q11": {
+    "src": "/exam-figures/home-economics/home-economics-2012-ol-sa-q11.png",
+    "md5": "d1302dab05374b4efc82716b814840d6",
+    "alt": "Original renewable/non-renewable energy table and its separately worded request for two energy-reduction methods. Complete blank table and answer rules retained.",
+    "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 570.219970703125, 260.3876037597656], rendered at 2.5×. SHA256 ab84195b1696de8cfe291116c0129b5c32a9e09058d5369c545075b5f9a4d842."
+  },
+  "home-economics-2012-ol-sb-q1-choice": {
+    "src": "/exam-figures/home-economics/home-economics-2012-ol-sb-q1-choice.png",
+    "md5": "9463506f6a97d3f1863ad7022ae26901",
+    "alt": "Original National Adult Nutritional Survey 2011 food-choice pie chart and Irish Universities Nutrition Alliance caption: Taste 41%, Health & Nutrition 36%, Cost 9%, Convenience 7%, Mood 2%, Weight Control 5%. All six sectors and labels retained.",
+    "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [80, 127.8, 555, 359], rendered at 2.5×. SHA256 1ac6b99e08d0313973f425c1a2309c866cca1603660bbe43598bbfe7c375e5f2."
+  },
+  "home-economics-2012-ol-sc-q1-water": {
+    "src": "/exam-figures/home-economics/home-economics-2012-ol-sc-q1-water.png",
+    "md5": "73268cec4aefdc4760da5cc45c61f0c4",
+    "alt": "Original full water-treatment diagram: reservoir, screening, sedimentation, filtration, chlorination and fluoridation, softening and testing, high storage reservoir and to mains. All original diagram labels and border retained; no diagram redrawn.",
+    "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [86, 187, 553, 361], rendered at 2.5×. SHA256 afb66a584514b08f0d390d191103f181d2d1b89b863ebba92465c3b157723e8f."
+  },
+  "home-economics-2012-ol-sc-q2-uniform": {
+    "src": "/exam-figures/home-economics/home-economics-2012-ol-sc-q2-uniform.png",
+    "md5": "5d63e687bb3cc76e87fc2a68738d6cdf",
+    "alt": "Original full school uniform photograph: two complete outfits including shirt, cardigan and crest, trousers, skirt and shoes. No garments cropped.",
+    "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 10 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [208, 110, 399, 319], rendered at 2.5×. SHA256 9d1af39369e95a11f39653c7c35c2598725845e4699c550771709704f861c410."
   }
 }

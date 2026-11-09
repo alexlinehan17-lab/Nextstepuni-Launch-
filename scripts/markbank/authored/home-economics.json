@@ -90935,5 +90935,4168 @@
     ]
    }
   ]
+ },
+ {
+  "id": "he-2012-ol-sa-q1",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-5",
+  "conceptId": "sa-q1",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "A",
+  "questionRef": "2012 OL Section A Q1",
+  "questionText": "In relation to proteins, indicate with a tick (✓) whether each of the following statements is true or false.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "statement-1",
+    "kind": "point",
+    "verbatim": "Proteins are large molecules made up of smaller units called amino acids. — True",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "statement-2",
+    "kind": "point",
+    "verbatim": "Albumin is the protein found in egg white. — True",
+    "marks": null
+   },
+   {
+    "id": "statement-3",
+    "kind": "point",
+    "verbatim": "Peas, beans and lentils are examples of high biological value protein foods — False",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2012-ol-sa-q1",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2012-ol-sa-q2",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-6",
+  "conceptId": "sa-q2",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "A",
+  "questionRef": "2012 OL Section A Q2",
+  "questionText": "Complete the following statements in relation to the properties of starch using the words listed below.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "blank-1",
+    "kind": "point",
+    "verbatim": "Starch can absorb moisture from the air because it is hygroscopic.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "blank-2",
+    "kind": "point",
+    "verbatim": "When starch is heated, it swells, bursts and absorbs the liquid in a process known as gelatinisation.",
+    "marks": null
+   },
+   {
+    "id": "blank-3",
+    "kind": "point",
+    "verbatim": "Starch is insoluble in cold water.",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2012-ol-sa-q2",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2012-ol-sa-q3",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sa-q3",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "A",
+  "questionRef": "2012 OL Section A Q3",
+  "questionText": "List three biological functions of water.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "functions",
+    "kind": "point",
+    "verbatim": "regulates body temperature, component of all body cells, removal of waste, quenches thirst, necessary for breakdown of food during digestion, transports nutrients, oxygen, carbon dioxide, hormones and enzymes around body, provides minerals – calcium, fluorine, etc.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sa-q4",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-8",
+  "conceptId": "sa-q4",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "A",
+  "questionRef": "2012 OL Section A Q4",
+  "questionText": "What is meant by the term anaemia? List two sources of haem-iron.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "meaning",
+    "kind": "point",
+    "verbatim": "Disorder due to iron deficiency or its absorption in the body, iron is responsible for the manufacture of haemoglobin which carries oxygen in the blood etc.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "source-1",
+    "kind": "point",
+    "verbatim": "(i) liver, red meat,",
+    "marks": null
+   },
+   {
+    "id": "source-2",
+    "kind": "point",
+    "verbatim": "(ii) meat products, chicken, etc.",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sa-q5",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sa-q5",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "A",
+  "questionRef": "2012 OL Section A Q5",
+  "questionText": "Name two food sources of each of the nutrients listed below suitable for a vegetarian.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "nutrient-1",
+    "kind": "point",
+    "verbatim": "Protein",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Original food sources: soya bean, pulse vegetables, seeds & nuts; quorn, TVP, tofu, dairy products, etc."
+   },
+   {
+    "id": "nutrient-2",
+    "kind": "point",
+    "verbatim": "Calcium",
+    "marks": null,
+    "contextNote": "Original food sources: dairy products, soya products, sesame seeds; green leafy vegetables, eggs, fortified flour, bread, cereals, etc."
+   },
+   {
+    "id": "nutrient-3",
+    "kind": "point",
+    "verbatim": "Vitamin B",
+    "marks": null,
+    "contextNote": "Original food sources: eggs, dairy products, cereals; yeast, dark green vegetables, fortified foods, etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2012-ol-sa-q5",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2012-ol-sa-q6",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sa-q6",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "A",
+  "questionRef": "2012 OL Section A Q6",
+  "questionText": "Name three classes of fruit and give one example of each class.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "class-1",
+    "kind": "point",
+    "verbatim": "1. citrus, — 1.oranges, lemons, limes, grapefruit, mandarins, etc.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "class-2",
+    "kind": "point",
+    "verbatim": "2. hard / pommes — 2. apples, pears, etc.",
+    "marks": null
+   },
+   {
+    "id": "class-3",
+    "kind": "point",
+    "verbatim": "2. stone / drupes — 3. plums, peaches, nectarines, cherries, avocados, etc.",
+    "marks": null
+   },
+   {
+    "id": "class-4",
+    "kind": "point",
+    "verbatim": "Dried — prunes, sultanas, currants, raisins, apricots, dates, etc.",
+    "marks": null
+   },
+   {
+    "id": "class-5",
+    "kind": "point",
+    "verbatim": "Berries — blackberries, blueberries, strawberries, raspberries, grapes, etc.",
+    "marks": null
+   },
+   {
+    "id": "class-6",
+    "kind": "point",
+    "verbatim": "Other (tropical, exotic) — bananas, kiwis, rhubarb, pineapple, melon, etc",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2012-ol-sa-q6",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2012-ol-sa-q7",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sa-q7",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "A",
+  "questionRef": "2012 OL Section A Q7",
+  "questionText": "Explain the term food additive. State two disadvantages of using additives in food.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "meaning",
+    "kind": "point",
+    "verbatim": "An additive is any substance natural or artificial added to a food during manufacture to improve its colour, taste, texture, appearance, keeping qualities, nutritive value, and to facilitate processing, etc.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "disadvantage-1",
+    "kind": "point",
+    "verbatim": "(i) may cause allergies, aftertaste, deceive the consumer, cumulative effect",
+    "marks": null
+   },
+   {
+    "id": "disadvantage-2",
+    "kind": "point",
+    "verbatim": "(ii) hyperactivity in children, some additives destroy nutrients e.g. sulphur dioxide destroys Vitamin B",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sa-q8",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sa-q8",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "A",
+  "questionRef": "2012 OL Section A Q8",
+  "questionText": "Give two reasons why food production in small businesses and home enterprises is increasing. Name two major Irish food exports.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "reason-1",
+    "kind": "point",
+    "verbatim": "(i) growth in demand for speciality foods, creates employment and a skilled workforce, use of locally produced ingredients, provides a quality product, etc.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "reason-2",
+    "kind": "point",
+    "verbatim": "(ii) greater product variety, additive free, food hand made with care, natural image, etc.",
+    "marks": null
+   },
+   {
+    "id": "export-1",
+    "kind": "point",
+    "verbatim": "(i) dairy and ingredients, beef / lamb / sheep /pig meat, poultry, fruit, vegetables,",
+    "marks": null
+   },
+   {
+    "id": "export-2",
+    "kind": "point",
+    "verbatim": "(ii) edible horticulture, mariculture / seafood, prepared foods, beverages, etc.",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sa-q9",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sa-q9",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "A",
+  "questionRef": "2012 OL Section A Q9",
+  "questionText": "Explain the term PRSI. State two benefits of PRSI to the individual.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "meaning",
+    "kind": "point",
+    "verbatim": "Pay Related Social Insurance, compulsory deduction shared between employer and employee, based on percentage of individual’s income, employees over 16 years of age must pay and then low paid are exempt from contributing, etc.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Historical 2012 source names and conditions are retained for this examination."
+   },
+   {
+    "id": "benefit-1",
+    "kind": "point",
+    "verbatim": "(i) unemployment benefit / job seekers allowance, maternity benefit, contributory state pension",
+    "marks": null
+   },
+   {
+    "id": "benefit-2",
+    "kind": "point",
+    "verbatim": "(ii) dental, optic, disability benefit, goes towards running employment & training schemes, etc.",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sa-q10",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-4",
+  "conceptId": "sa-q10",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "A",
+  "questionRef": "2012 OL Section A Q10",
+  "questionText": "Listed below are six properties of textiles. Tick (✓) three properties required when choosing textiles for household use.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "property-1",
+    "kind": "point",
+    "verbatim": "Durable",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose THREE of the four properties ticked in the source; the complete six-option printed pool is shown above."
+   },
+   {
+    "id": "property-2",
+    "kind": "point",
+    "verbatim": "Colourfast",
+    "marks": null
+   },
+   {
+    "id": "property-4",
+    "kind": "point",
+    "verbatim": "Windproof",
+    "marks": null
+   },
+   {
+    "id": "property-6",
+    "kind": "point",
+    "verbatim": "Absorbent",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2012-ol-sa-q10",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2012-ol-sa-q11",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-5",
+  "conceptId": "sa-q11",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "A",
+  "questionRef": "2012 OL Section A Q11",
+  "questionText": "Name one renewable energy source and one non-renewable energy source. Renewable Energy Source Non-renewable Energy Source State two different methods of reducing energy consumption in the home.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "energy-0",
+    "kind": "point",
+    "verbatim": "Renewable Energy Source",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Original table examples: wind power, biomass, energy / solar power, hydropower, geothermal, nuclear, etc. The original scheme includes nuclear in the renewable cell and uranium in the non-renewable cell; the printed classification is preserved here."
+   },
+   {
+    "id": "energy-1",
+    "kind": "point",
+    "verbatim": "Non-renewable Energy Source",
+    "marks": null,
+    "contextNote": "Original table examples: coal, gas, oil, peat, fossil fuel, uranium, coke, anthracite, etc."
+   },
+   {
+    "id": "method-1",
+    "kind": "point",
+    "verbatim": "(i) fit lagging jacket on cylinder, insulate house, fit solar panels, fit timer to immersion heater, use CFL bulbs, switch off lights when not in use, use energy saving appliances, etc.",
+    "marks": null
+   },
+   {
+    "id": "method-2",
+    "kind": "point",
+    "verbatim": "(ii) use thermostats & timers efficiently, keep heating systems & appliances serviced, purchase rechargeable batteries, do not leave appliances on stand by, etc.",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2012-ol-sa-q11",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2012-ol-sa-q12",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-2",
+  "conceptId": "sa-q12",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "A",
+  "questionRef": "2012 OL Section A Q12",
+  "questionText": "Identify two factors that influence consumer choice when purchasing goods and services. Name one statutory body concerned with consumer protection. Statutory Body",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "factor-1",
+    "kind": "point",
+    "verbatim": "(i) cost / price, advertising, packaging & labelling, sales person",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Historical 2012 source names and conditions are retained for this examination."
+   },
+   {
+    "id": "factor-2",
+    "kind": "point",
+    "verbatim": "(ii) marketing, merchandising, personal choice / values etc.",
+    "marks": null
+   },
+   {
+    "id": "statutory-body",
+    "kind": "point",
+    "verbatim": "Statutory Body e.g. Office of Director of Consumer Affairs, Office of the Ombudsman, Comhairle, Citizens Information Board, National Standards Authority of Ireland, National Consumer Agency, European Consumer Centre, Employment Equality Agency, Financial Regulator, etc.",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q1a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sb-q1a",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q1(a)",
+  "questionText": "Using the information presented in the chart above comment and elaborate on the six factors which affect a person’s choice of food.",
+  "stem": "The National Adult Nutritional Survey (2011) asked participants to rank in order of importance to them six factors which affect food choice. The results are presented below. (Irish Universities Nutrition Alliance)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 required factors × 4"
+  },
+  "rows": [
+   {
+    "id": "factor-1",
+    "kind": "criterion",
+    "verbatim": "Taste",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Use the ORIGINAL chart and comment/elaborate on this factor. Source: Taste: highest factor, role of the senses in choice of food, sight, smell, touch, sound, perceptions of food taste, promotion stands in supermarkets, culture, etc."
+   },
+   {
+    "id": "factor-2",
+    "kind": "criterion",
+    "verbatim": "Health & Nutrition",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Use the ORIGINAL chart and comment/elaborate on this factor. Source: Health & Nutrition: second highest factor, consumers are nutritionally aware, people read food labels, increase in diet related disorders, allergies, specific dietary requirements, cooking methods, etc."
+   },
+   {
+    "id": "factor-3",
+    "kind": "criterion",
+    "verbatim": "Cost",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Use the ORIGINAL chart and comment/elaborate on this factor. Source: Cost: price wars, increased competition, reduced income, recession, stores like Lidl/Aldi, socio- economic background, disposable income, seasonality, etc."
+   },
+   {
+    "id": "factor-4",
+    "kind": "criterion",
+    "verbatim": "Convenience",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Use the ORIGINAL chart and comment/elaborate on this factor. Source: Convenience: busy lifestyles, availability of convenience products, dash board dining, change in eating patterns, locality, type of work and hours worked, etc."
+   },
+   {
+    "id": "factor-5",
+    "kind": "criterion",
+    "verbatim": "Weight Control",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Use the ORIGINAL chart and comment/elaborate on this factor. Source: Weight Control: consumers who are more weight conscious tend to shop for more nutritious foods, increased levels of heart disease, cholesterol and obesity all weight linked, availability of low fat products, use of nutritious drinks, read labels for energy value, etc."
+   },
+   {
+    "id": "factor-6",
+    "kind": "criterion",
+    "verbatim": "Mood",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Use the ORIGINAL chart and comment/elaborate on this factor. Source: Mood: least important factor, humour can allow us make irrational food choices such as indulging in convenience / fast food, reward/comfort foods, irregular eating habits, etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2012-ol-sb-q1-choice",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2012-ol-sb-q1b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-8",
+  "conceptId": "sb-q1b",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q1(b)",
+  "questionText": "Give an account of vitamin C under each of the following headings: • main food sources • biological functions • effect of deficiency • role in mineral absorption.",
+  "stem": "The National Adult Nutritional Survey (2011) asked participants to rank in order of importance to them six factors which affect food choice. The results are presented below. (Irish Universities Nutrition Alliance)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Sources 2×4 + functions 2×4 + deficiency4 + absorption4"
+  },
+  "rows": [
+   {
+    "id": "sources",
+    "kind": "criterion",
+    "verbatim": "main food sources",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Fruit: citrus fruits, strawberries, blackcurrants, rosehips, kiwi fruit, melon, etc. Vegetables: green peppers, spinach, cabbage, Brussels sprouts, broccoli, peas, tomatoes, potatoes, etc. Milk and yoghurt etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "functions",
+    "kind": "criterion",
+    "verbatim": "biological functions",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "e.g. production of collagen/production of connective tissue, absorption of iron and calcium, antioxidant, healthy immune system, prevention of scurvy, linked with manufacture of thyroxine, promotes healing of wounds, prevents bleeding gums, role in prevention of heart disease, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "deficiency",
+    "kind": "criterion",
+    "verbatim": "effect of deficiency",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "e.g. scurvy, delayed healing of wounds, anaemia, bruising and bleeding, individual more prone to illness and infections, blood may take longer to clot, arthritis, Parkinson’s disease, skin ulcers, degeneration of eyes, etc."
+   },
+   {
+    "id": "absorption",
+    "kind": "criterion",
+    "verbatim": "role in mineral absorption",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "e.g. vitamin C helps the body to absorb calcium, magnesium, and iron by converting dietary iron to a soluble form, non haem iron to haem iron, etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q1c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-3",
+  "conceptId": "sb-q1c",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q1(c)",
+  "questionText": "Identify ways of retaining Vitamin C when (i) preparing and (ii) cooking foods that have a high Vitamin C content.",
+  "stem": "The National Adult Nutritional Survey (2011) asked participants to rank in order of importance to them six factors which affect food choice. The results are presented below. (Irish Universities Nutrition Alliance)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "One preparation4 + one cooking4 + one other4"
+  },
+  "rows": [
+   {
+    "id": "preparation",
+    "kind": "criterion",
+    "verbatim": "preparing",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "eat raw where possible, choose good quality fresh produce, use a sharp knife and or vegetable peeler, prepare just before cooking, do not steep in water, etc."
+   },
+   {
+    "id": "cooking",
+    "kind": "criterion",
+    "verbatim": "cooking",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "cook in the minimum amount of water for the minimum amount of time in a saucepan with a tight fitting lid, use the cooking liquid to make soup and sauces, avoid using bread soda, avoid overcooking, choose suitable cooking method e.g. steaming retains maximum amount of nutrients, stir-fry, use a microwave oven, cook frozen vegetables without thawing, etc."
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "one other",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "One additional distinct method from EITHER heading; the source requires one reference to each plus one other. Preparation: eat raw where possible, choose good quality fresh produce, use a sharp knife and or vegetable peeler, prepare just before cooking, do not steep in water, etc. Cooking: cook in the minimum amount of water for the minimum amount of time in a saucepan with a tight fitting lid, use the cooking liquid to make soup and sauces, avoid using bread soda, avoid overcooking, choose suitable cooking method e.g. steaming retains maximum amount of nutrients, stir-fry, use a microwave oven, cook frozen vegetables without thawing, etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q1d",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-2",
+  "conceptId": "sb-q1d",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q1(d)",
+  "questionText": "The following items of information are generally included on food packaging. Explain the benefit to the consumer of each item. • list of ingredients • weight • nutritional information • best before date • country of origin.",
+  "stem": "The National Adult Nutritional Survey (2011) asked participants to rank in order of importance to them six factors which affect food choice. The results are presented below. (Irish Universities Nutrition Alliance)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 required items × 4"
+  },
+  "rows": [
+   {
+    "id": "item-1",
+    "kind": "criterion",
+    "verbatim": "list of ingredients",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "list of ingredients e.g. people can avoid if allergic to any of the ingredients, ingredients are in descending order for people to know the quantity of the main ingredient, is food suitable for special dietary needs, (e.g. coeliac, vegetarian, etc.), additives (including flavourings and sweeteners) must be included, beverages with more than 1.2% alcohol by volume must display alcoholic strength, etc."
+   },
+   {
+    "id": "item-2",
+    "kind": "criterion",
+    "verbatim": "weight",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "weight e.g. net quantity must be shown in metric units i.e. kilograms, eggs are graded according to size (e.g. size 1 = 70g +), to ascertain how many portions/servings the product will yield, to compare prices with other products of the same weight, etc."
+   },
+   {
+    "id": "item-3",
+    "kind": "criterion",
+    "verbatim": "nutritional information",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "nutritional information e.g. fortified food must be clearly labelled, claims on food must be true, (e.g. low fat butter contains 39% fat, has reduced salt, is gluten free, energy value of the food, nutrient content – starch, saturated and polyunsaturated fats), nutritional information supplied per serving or per portion, etc."
+   },
+   {
+    "id": "item-4",
+    "kind": "criterion",
+    "verbatim": "best before date",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "best before date e.g. this is used on non-perishable foods with a long shelf life, date should be clearly visible on the products, food bought will be at its best for consumption, can be less than 3 months, 3 – 18 months, 18 months + depending on the food, foods can be bought in advance and in bulk, etc."
+   },
+   {
+    "id": "item-5",
+    "kind": "criterion",
+    "verbatim": "country of origin.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "country of origin. e.g. name and address of manufacturer, packager or seller within the E.U. the absence of which can mislead the customer, consumers may only want to purchase home produce, etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q2a-sources",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sb-q2a-sources",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q2(a) — sources",
+  "questionText": "Identify the main sources of cereals in the Irish diet",
+  "stem": "‘Cereals account for the major part of carbohydrate intake in the diet.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 × 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "sources",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12
+    ],
+    "contextNote": "Complete original source guidance: breads, pasta, rice, breakfast cereals, maize, barley, rye, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q2a-reasons",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sb-q2a-reasons",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q2(a) — reasons",
+  "questionText": "state why some people avoid / limit their intake of cereals.",
+  "stem": "‘Cereals account for the major part of carbohydrate intake in the diet.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 × 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "reasons",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Complete original source guidance: gluten cannot be digested by coeliacs, cause bloating, low GI diet, low carbohydrate diet, too much can cause weight gain, some cereals include hidden salt / sugars, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q2b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sb-q2b",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q2(b)",
+  "questionText": "Give an account of the nutritive value of cereals.",
+  "stem": "‘Cereals account for the major part of carbohydrate intake in the diet.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "nutritive value",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15
+    ],
+    "contextNote": "Complete original source guidance: e.g. outer husk of cereal grains is high in fibre – aids digestion by stimulating peristalsis, protein (LBV), fat in germ, carbohydrate in form of starch, fibre in unprocessed cereals, vitamin B group, minerals – calcium, iron & phosphorus, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q2c-definition",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sb-q2c-definition",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q2(c) — definition",
+  "questionText": "Explain food fortification.",
+  "stem": "‘Cereals account for the major part of carbohydrate intake in the diet.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 5,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "explanation",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     5
+    ],
+    "contextNote": "Complete original source guidance: Food fortification: the addition of nutrients e.g. vitamins and minerals to a food to replace nutrients lost in processing or to increase levels above those normally present in that food e.g. Vitamins A & D added to low fat milk, etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q2c-consumption",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sb-q2c-consumption",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q2(c) — consumption",
+  "questionText": "Comment on the increasing consumption of fortified food products.",
+  "stem": "‘Cereals account for the major part of carbohydrate intake in the diet.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "increased consumption",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     10
+    ],
+    "contextNote": "Complete original source guidance: Increased consumption: e.g. increase in diet related illness- food fortification attempts to address these e.g. folic acid to reduce incidence of NTD’s, Vitamins A&D added to milk to prevent osteoporosis, food value of food increased, supports healthy eating habits, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q3a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sb-q3a",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q3(a)",
+  "questionText": "Outline four factors that affect the dietary requirements of adolescents.",
+  "stem": "Adolescence is a time of rapid growth and development.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 × 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "factors",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12,
+     16
+    ],
+    "contextNote": "Complete original source guidance: e.g. age, activity levels, gender – girls begin menstruation so iron is necessary to avoid anaemia, health status, pregnancy, “faddy” eating, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q3b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-10",
+  "conceptId": "sb-q3b",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q3(b)",
+  "questionText": "Having regard to current healthy eating guidelines and the specific dietary needs of adolescents, plan a menu (3 meals) for one day for a family with teenagers.",
+  "stem": "Adolescence is a time of rapid growth and development.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 meals × 6; no per-food split"
+  },
+  "rows": [
+   {
+    "id": "meal-0",
+    "kind": "criterion",
+    "verbatim": "Breakfast",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     6
+    ],
+    "contextNote": "Plan this meal as part of the complete daily menu for teenagers. Original example: Orange Juice Muesli + Milk Scrambled Egg on Toast Beverage"
+   },
+   {
+    "id": "meal-1",
+    "kind": "criterion",
+    "verbatim": "Lunch",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     6
+    ],
+    "contextNote": "Plan this meal as part of the complete daily menu for teenagers. Original example: Cheese Salad Filled Brown Roll Apple / Pear / Orange Water / Yop"
+   },
+   {
+    "id": "meal-2",
+    "kind": "criterion",
+    "verbatim": "Dinner",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     6
+    ],
+    "contextNote": "Plan this meal as part of the complete daily menu for teenagers. Original example: Vegetable Soup Spaghetti Bolognese Fruit Salad Water"
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q3c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sb-q3c",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q3(c)",
+  "questionText": "Discuss four changes in the eating patterns of Irish adolescents from the beginning of the twentieth century.",
+  "stem": "Adolescence is a time of rapid growth and development.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 × 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "changes",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12,
+     16
+    ],
+    "contextNote": "Complete original source guidance: e.g. increase in consumption of convenience foods resulting in increase in additives, salt, saturated fat and sugar, low fibre intake, irregular meals, individual members of a family eating at different times, variety of foods have replaced traditional ones – rice and pasta instead of potatoes, increase in vegetarianism, wide range of breads e.g. ciabata and flavoured breads, different cooking methods e.g. microwave, stir-fry and barbecued foods, cooking skills, food scares, influence of other cultures through holidays, tv programmes, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q4a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sb-q4a",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q4(a)",
+  "questionText": "Discuss four of the principle guidelines that should be followed when drawing up a budget for a family.",
+  "stem": "‘Budgeting has become an ever more important household task in recessionary times.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "guidelines",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15,
+     20
+    ],
+    "contextNote": "Complete original source guidance: e.g. list all sources of income including salary/wages, social welfare benefits; list all items of expenditure to include fixed and seasonal expenditure, irregular and discretionary expenditure; draw up a budget allocating a percentage of income to each expense; do not include bonuses or overtime when calculating income, allow for savings, keep all receipts, plan for needs and essentials first e.g. mortgage / rent and household bills, make provision for savings long and short term, plan for emergencies, allow for changes in circumstances, review and evaluate regularly and make changes where needed, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q4b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sb-q4b",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q4(b)",
+  "questionText": "Describe four different ways a consumer could reduce expenditure when managing the household budget.",
+  "stem": "‘Budgeting has become an ever more important household task in recessionary times.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 × 3"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "ways",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     3,
+     6,
+     9,
+     12
+    ],
+    "contextNote": "Complete original source guidance: e.g. make a list when shopping and stick to it, buy second hand/shop in charity shops, buy own brand products, buy food in bulk, use cheaper cuts of meat, make full use of the oven when cooking, use tiered steamers / saucepans when cooking e.g. potatoes and vegetables, use pressure cooker and / or microwave cooker, reduce heat thermostats, use clothes line instead of a tumble dryer, only turn on washing machine and dishwasher when full, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q4c-reasons",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sb-q4c-reasons",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q4(c) — reasons",
+  "questionText": "Outline three reasons why it is important for a family to save money",
+  "stem": "‘Budgeting has become an ever more important household task in recessionary times.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 × 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "reasons",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12
+    ],
+    "contextNote": "Complete original source guidance: e.g. reduce financial worries, give a feeling of security and independence, emergencies can be catered for, sets a good example for family members, avoids the necessity for loans / credit agreements, builds a sound financial reputation for the family, can earn interest if invested wisely, useful if planning for something e.g. holiday, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q4c-schemes",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sb-q4c-schemes",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q4(c) — schemes",
+  "questionText": "name two saving schemes suitable for a low-income family.",
+  "stem": "‘Budgeting has become an ever more important household task in recessionary times.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 × 3"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "saving schemes",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Complete original source guidance: e.g. An Post: deposit account, instalment saving agreement (minimum monthly instalment 25.00 euros), saving certificates, saving bonds etc. Banks & Building Societies: demand deposit accounts, notice accounts, special term accounts etc. Credit Union: demand deposit accounts, notice accounts, 2.00 euro saving stamps, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q5ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-0",
+  "conceptId": "sb-q5ai",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q5(a)(i)",
+  "questionText": "Describe four functions of the modern family.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "functions",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15,
+     20
+    ],
+    "contextNote": "Complete original source guidance: Physical Function: reproduction – survival of the species, regulates sexual behaviour, nurturing – provision for the physical needs of the child, protection – safe environment for all family members including vulnerable members etc. Emotional: love, security, provision of caring environment, help children to develop self- esteem, enable them to form healthy relationships, parents role models for children etc. Economic: dual career families, parents work to provide money for the needs of family members, spend money on goods and services, contributes to the country’s economy by paying taxes etc. Socialisation: family teaches norms and values, children learn through observation and imitation, discipline, respect for society’s values, norms and customs, etc. Education: family primary source of education, praise, encouragement and interest aid this informal education period, stimulating environment, supports the work of the school by helping with homework, educational trips, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q5aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-0",
+  "conceptId": "sb-q5aii",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q5(a)(ii)",
+  "questionText": "Give two examples of how the state provides support to parents in carrying out these functions.",
+  "stem": "Describe four functions of the modern family.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 × 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "examples",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Complete original source guidance: Physical Function: housing from local authorities, foster care, support services such as community mothers projects and family support projects, etc. Emotional: parenting courses, social workers, counsellors, schools providing counselling services to students affected by family breakup or death of a parent, etc. Economic: unemployment benefit, child benefit, FIS, one parent family payment, disability allowance, carer’s allowance, OAP, medical card, etc. Socialisation: nurseries, playgroups, mother & toddler groups, state has to deal with non- conforming individuals through the judicial system, etc. Education: preschools, primary and secondary schools, support for those with learning difficulties, back to work schemes, psychological assessments to identify learning problems, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q5b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-0",
+  "conceptId": "sb-q5b",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q5(b)",
+  "questionText": "Outline three changes in modern society that has affected gender roles in the family.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 × 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "changes",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12
+    ],
+    "contextNote": "Complete original source guidance: e.g. increased equality between men and women, men more involved in childcare by choice or because of unemployment in current recession, due to increase in one parent families greater responsibility on the remaining parent, education equally important for males and females, increased number of women working outside the home, some women are now the breadwinner in the family, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sb-q5c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-1",
+  "conceptId": "sb-q5c",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "B",
+  "questionRef": "2012 OL Section B Q5(c)",
+  "questionText": "Explain how the Family Law (Maintenance of Spouses and Children) Act, (1976) protects the family.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "protection",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     10
+    ],
+    "contextNote": "Historical 2012 examination guidance for the named Act. Complete original source guidance: e.g. maintenance is financial support paid by a person for the benefit of a dependent spouse and dependent children, child must be under 18 yrs of age, or 23 yrs in full time education or a child with a disability, maintenance can be sought whether living with or apart from the other spouse or whether they are married to each other or not, maintenance can be agreed or application can be made to District or Circuit Court depending on amount, a court order will issue detailing amount, under this Act a court can order that a sum be deducted from the wages of the earning spouse and paid directly to the dependent spouse, this is known as an Attachment of Earnings Order, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sc-q1ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-5",
+  "conceptId": "sc-q1ai",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E1 Q1(a)(i)",
+  "questionText": "Explain four of the stages involved in the treatment of water to make it safe for human consumption and domestic use.",
+  "stem": "The diagram below indicates the stages involved in the treatment of water before it enters the home.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 stages × 5"
+  },
+  "rows": [
+   {
+    "id": "stages",
+    "kind": "criterion",
+    "verbatim": "stages",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15,
+     20
+    ],
+    "contextNote": "Explain four stages from the ORIGINAL diagram, including any of its printed choices. Complete source models: Screening – impurities in water such as floating debris are removed, etc. Sedimentation – chemicals added to the water which attach to the dirt which sinks to the base of the tank, water is allowed settle so that soil and other solid matter can be removed, etc. Filtration – water passes through filter beds of sand, gravel and stones to remove any excess matter / dirt, etc. Chlorination – chlorine is added to kill bacteria etc. Testing – water is tested for quality and pureness and stored in high storage reservoir, etc. Storage – water is stored in a storage reservoir so that it cannot become impure, etc. The diagram also names Fluoridation and Softening, but the scheme supplies no explanations for them. A named stage still requires an explanation; no model has been invented.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2012-ol-sc-q1-water",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2012-ol-sc-q1aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-5",
+  "conceptId": "sc-q1aii",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E1 Q1(a)(ii)",
+  "questionText": "In relation to the cold water supply system in a house, state the function of each of the following: • ball cock/valve • stop cock • overflow pipe • mains pipe.",
+  "stem": "The diagram below indicates the stages involved in the treatment of water before it enters the home.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 required parts × 5"
+  },
+  "rows": [
+   {
+    "id": "part-1",
+    "kind": "criterion",
+    "verbatim": "ball cock / valve",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     5
+    ],
+    "contextNote": "ball cock / valve e.g. controls the level of water in the water tank in the attic or toilet cistern, allows correct amount into tank and prevents an overflow of water into house, etc."
+   },
+   {
+    "id": "part-2",
+    "kind": "criterion",
+    "verbatim": "stop cock",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     5
+    ],
+    "contextNote": "stop cock e.g. is situated outside the house, water can be turned off in case of emergency or during repairs / flooding, or when the family go on holidays, a second stop cock may be found under kitchen sink, etc."
+   },
+   {
+    "id": "part-3",
+    "kind": "criterion",
+    "verbatim": "overflow pipe",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     5
+    ],
+    "contextNote": "overflow pipe e.g. fitted from the water tank in the attic leading to the outside in case the ball cock / valve does not work etc."
+   },
+   {
+    "id": "part-4",
+    "kind": "criterion",
+    "verbatim": "mains pipe.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     5
+    ],
+    "contextNote": "mains pipe. e.g. water is transferred from the reservoir via a mains pipe bringing clean water to the house, manholes located at regular intervals for inspection etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sc-q1aiii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-5",
+  "conceptId": "sc-q1aiii",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E1 Q1(a)(iii)",
+  "questionText": "Describe two methods of reducing the amount of water used in the home.",
+  "stem": "The diagram below indicates the stages involved in the treatment of water before it enters the home.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "methods",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     10
+    ],
+    "contextNote": "Complete original source guidance: e.g. take a shower instead of a bath, stop tap running while washing teeth, plug the sink when washing hands/dishes, turn off/repair dripping taps, do not overfill the kettle, install mixer taps, fit cisterns with high and low volume flushes, avail of half load programmes on dishwashers and washing machines, hand wash small amounts of dishes rather than using the dishwasher, use tiered steamer when cooking Christmas puddings, potatoes, vegetables, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sc-q1bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1bi",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E1 Q1(b)(i)",
+  "questionText": "Why is it necessary to obtain planning permission?",
+  "stem": "‘Planning permission is required for all building projects unless the type of development is exempt under planning regulations.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points × 3"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "planning permission",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Complete original source guidance: e.g. proposed developments must all fit in with the local development plan, to avoid industrial factories being built in residential areas, to keep scenery and tourist attractions, to preserve old buildings, prevent houses being devalued, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sc-q1bii-difference",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1bii-difference",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E1 Q1(b)(ii) — difference",
+  "questionText": "State the difference between outline and full planning permission",
+  "stem": "‘Planning permission is required for all building projects unless the type of development is exempt under planning regulations.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 point on each type × 4"
+  },
+  "rows": [
+   {
+    "id": "outline",
+    "kind": "criterion",
+    "verbatim": "Outline Planning Permission",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Historical 2012 source: required to ascertain if the planning authority agrees in principle to the proposed development, no house plans are required just a site map showing the location and layout of proposed site, OPP has a three year duration, etc. "
+   },
+   {
+    "id": "full",
+    "kind": "criterion",
+    "verbatim": "Full Planning Permission",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Historical 2012 source:  requires in depth detail of the development i.e. details of plans, drawings, site layout maps, water supply and drainage, copies of public notices (newspaper and site), position of site notice, appropriate fee & details of materials to be used in construction, etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sc-q1bii-procedure",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1bii-procedure",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E1 Q1(b)(ii) — procedure",
+  "questionText": "describe the procedure involved in obtaining full planning permission.",
+  "stem": "‘Planning permission is required for all building projects unless the type of development is exempt under planning regulations.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points × 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "Procedure",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12,
+     16
+    ],
+    "contextNote": "Complete original source guidance: submit site maps, house plans with all specifications including elevations, finishes and details of materials being used notice of application must be placed in the local newspaper and on the proposed site, application lodged in relevant local authority, relevant fee paid, application authority acknowledges receipt of same and places on planning register for public inspection, written objections lodged, site inspected, decision granted after two months, permission granted one month later, if permission refused applicants must be given the reason, appeals against the planning authority can be made to An Bórd Pleanála, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sc-q1ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-4",
+  "conceptId": "sc-q1ci",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E1 Q1(c)(i)",
+  "questionText": "Identify and discuss three factors that should be considered when planning the interior design of a house.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "factors",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15
+    ],
+    "contextNote": "Complete original source guidance: e.g. space available, function of room, comfort, money available, costs-initial and maintenance costs, family size, energy efficiency, aspect of house/room, existing fixtures/fittings, personal choice, colour scheme, materials used, environmental awareness, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sc-q1cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-4",
+  "conceptId": "sc-q1cii",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E1 Q1(c)(ii)",
+  "questionText": "Give a brief account of three safety considerations that should be taken into account when planning and fitting out a family bathroom.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "safety considerations",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15
+    ],
+    "contextNote": "Complete original source guidance: e.g. non slip flooring, good lighting – natural: window and skylights, artificial: central fitting and light over sink, no sockets in bathroom except for shaver, all switches should be operated by a pull cord or a switch outside the bathroom door, good heating system to avoid portable heaters being brought into bathroom, wheelchair accessible shower – wet room, grab rails, no mats etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sc-q2ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2ai",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E2 Q2(a)(i)",
+  "questionText": "Comment on the suitability of the school uniform as shown above. Refer to: • function • shape • proportion.",
+  "stem": "Shown below is a traditional school uniform.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 references to EACH heading × 2"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "criterion",
+    "verbatim": "function",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "function  e.g. can provide protection from the cold, rain, wind and sunshine, protect from injury, fire, infection and chemicals, cardigan for warmth, polo shirt can be used for class and PE wear, identification, shoes appear to be comfortable and practical, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "heading-2",
+    "kind": "criterion",
+    "verbatim": "shape",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "shape e.g. should suit figure of person wearing, full pleated skirt may not suit wide hipped people, separate garments cut small people and make tall people look smaller, trousers casual style, emphasis on shoulders, neckline, waist, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "heading-3",
+    "kind": "criterion",
+    "verbatim": "proportion",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "proportion e.g.equal / unequal – knee length skirt with below waist cardigan, crest in proportion, neckline not too low on cardigan, neckline on shirt can be open or closed, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2012-ol-sc-q2-uniform",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2012-ol-sc-q2aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-7",
+  "conceptId": "sc-q2aii",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E2 Q2(a)(ii)",
+  "questionText": "Suggest a suitable fibre for the school cardigan and give a reason for your choice.",
+  "stem": "Shown below is a traditional school uniform.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name3 + reason3"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "point",
+    "verbatim": "wool",
+    "marks": 3
+   },
+   {
+    "id": "reason",
+    "kind": "criterion",
+    "verbatim": "Reason",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     3
+    ],
+    "contextNote": "One reason matching the SAME fibre. Source: soft, strong, absorbent, warm, resilient, comfortable to wear, etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "answerVariants": [
+   {
+    "id": "wool",
+    "label": "wool",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "wool",
+      "marks": 3
+     },
+     {
+      "id": "reason",
+      "kind": "criterion",
+      "verbatim": "Reason",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "One reason matching the SAME fibre. Source: soft, strong, absorbent, warm, resilient, comfortable to wear, etc."
+     }
+    ]
+   },
+   {
+    "id": "acrylic",
+    "label": "Acrylic",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Acrylic",
+      "marks": 3
+     },
+     {
+      "id": "reason",
+      "kind": "criterion",
+      "verbatim": "Reason",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "One reason matching the SAME fibre. Source: strong, does not stretch, easy to wash, quick drying, etc."
+     }
+    ]
+   },
+   {
+    "id": "another-fibre",
+    "label": "Another suitable fibre",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "One fibre suitable for this school cardigan."
+     },
+     {
+      "id": "reason",
+      "kind": "criterion",
+      "verbatim": "Reason",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "A reason matching the SAME fibre. The source models wool and acrylic; no further model is printed."
+     }
+    ]
+   }
+  ],
+  "questionFigureKey": "home-economics-2012-ol-sc-q2-uniform",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2012-ol-sc-q2aiii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2aiii",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E2 Q2(a)(iii)",
+  "questionText": "Describe one method of applying a school crest.",
+  "stem": "Shown below is a traditional school uniform.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 7,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name3 + description 2×2"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "point",
+    "verbatim": "appliqué",
+    "marks": 3
+   },
+   {
+    "id": "description",
+    "kind": "criterion",
+    "verbatim": "Description",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Describe the SAME method. Original model:  decorative method of applying one fabric to another, the top fabric may be applied by hand or by machine, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "answerVariants": [
+   {
+    "id": "method-1",
+    "label": "appliqué",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "appliqué",
+      "marks": 3
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Describe the SAME method. Original model:  decorative method of applying one fabric to another, the top fabric may be applied by hand or by machine, etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "method-2",
+    "label": "embroidery",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "embroidery",
+      "marks": 3
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Describe the SAME method. The scheme names this method but supplies no model description; its only described example is appliqué:  decorative method of applying one fabric to another, the top fabric may be applied by hand or by machine, etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "method-3",
+    "label": "quilting",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "quilting",
+      "marks": 3
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Describe the SAME method. The scheme names this method but supplies no model description; its only described example is appliqué:  decorative method of applying one fabric to another, the top fabric may be applied by hand or by machine, etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "method-4",
+    "label": "beading",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "beading",
+      "marks": 3
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Describe the SAME method. The scheme names this method but supplies no model description; its only described example is appliqué:  decorative method of applying one fabric to another, the top fabric may be applied by hand or by machine, etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "method-5",
+    "label": "embossing",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "embossing",
+      "marks": 3
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Describe the SAME method. The scheme names this method but supplies no model description; its only described example is appliqué:  decorative method of applying one fabric to another, the top fabric may be applied by hand or by machine, etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "another-method",
+    "label": "Another valid method",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "One method of applying a school crest."
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Two matching description points. No further model is printed; original appliqué model:  decorative method of applying one fabric to another, the top fabric may be applied by hand or by machine, etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2012-ol-sc-q2bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2bi",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E2 Q2(b)(i)",
+  "questionText": "Name one Irish designer and comment on his/her contribution to the fashion industry.",
+  "stem": "‘The successful combination of fashion and style is the main aim of the clothing industry.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name3 + matching contribution3"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "anyN",
+    "verbatim": "Name",
+    "marks": 3,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Louise Kennedy",
+      "John Rocha",
+      "Paul Costello",
+      "Lainey Keogh",
+      "Orla Kiely",
+      "Philip Treacy"
+     ]
+    },
+    "contextNote": ""
+   },
+   {
+    "id": "contribution",
+    "kind": "criterion",
+    "verbatim": "Contribution",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     3
+    ],
+    "contextNote": "Contribution of the SAME designer. Complete source examples:  promote Irish clothing abroad and at home, to raise the industry’s profile, cater for all income groups, provide employment, create employment in Irish fabrics/fashion industry, etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sc-q2bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2bii",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E2 Q2(b)(ii)",
+  "questionText": "Discuss the contribution of accessories to current fashion trends.",
+  "stem": "‘The successful combination of fashion and style is the main aim of the clothing industry.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 3"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "contribution of accessories",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     3,
+     6,
+     9
+    ],
+    "contextNote": "Complete original source guidance: e.g. contribute to the overall look, compliment the outfit, create a focal point e.g. a belt draws attention to waist and hips, scarves can add colour to a plain outfit, update an outfit, coordinated beads & bangles can help to finish off a look, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sc-q2ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2ci",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E2 Q2(c)(i)",
+  "questionText": "Identify three factors that should be considered when selecting commercial patterns.",
+  "stem": "‘A wide variety of commercial patterns are available to meet consumer needs.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 2"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "factors",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Complete original source guidance: e.g. body measurements, correct size pattern, brand of pattern, buy pattern with a variety of garments – value for money, purchase pattern before fabric, person’s ability to use patterns – select accordingly, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sc-q2cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2cii",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E2 Q2(c)(ii)",
+  "questionText": "List the stages that should be followed when laying out a pattern on fabric.",
+  "stem": "‘A wide variety of commercial patterns are available to meet consumer needs.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 3"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "stages",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     3,
+     6,
+     9
+    ],
+    "contextNote": "Complete original source guidance: e.g. follow the pattern instructions, pin the fabric together on open sides, place straight grain parallel to the selvage, pattern pieces to be placed to the fold should be placed exactly on the fold, be aware of nap on fabric, pattern on fabric e.g. lines, overall print, etc., keep fabric flat on a hard surface, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sc-q3ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-11",
+  "conceptId": "sc-q3ai",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E3 Q3(a)(i)",
+  "questionText": "Discuss two effects of each of the following on family life in Ireland: • more people living in urban areas • changing attitudes to marriage • changing attitudes to parenting • improvements in the provision of social welfare.",
+  "stem": "‘Social changes occur for a variety of reasons and have had a significant impact on family life in Ireland.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 40,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 effects under EACH of 4 headings × 5"
+  },
+  "rows": [
+   {
+    "id": "effect-1",
+    "kind": "criterion",
+    "verbatim": "more people living in urban areas",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     10
+    ],
+    "contextNote": "e.g. more services and amenities available, entertainment and leisure facilities are more accessible, increase in noise & air pollution, traffic congestion, education & health services may be inadequate due to population growth, unemployment black spots, social problems, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   },
+   {
+    "id": "effect-2",
+    "kind": "criterion",
+    "verbatim": "changing attitudes to marriage",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     10
+    ],
+    "contextNote": "e.g. decreasing influence of the Church, breakdown in traditional family, increase in single parents, children may not have a male/female role model, fewer marriages, more people choose to cohabit, divorce and marital breakdown more socially acceptable, no longer stigma attached to children born outside marriage, children must adapt to blended families, women better educated and capable of following their own careers – less dependent on spouse / partner, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   },
+   {
+    "id": "effect-3",
+    "kind": "criterion",
+    "verbatim": "changing attitudes to parenting",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     10
+    ],
+    "contextNote": "e.g. more democracy in families, children have a greater say in family matters, paternity and parental leave acknowledge the role of the father as well as the mother, provision of day care facilities in the workplace, paid maternity leave, option of flexitime or job sharing to encourage women to remain at work, leniency and too much freedom as well as lack of parental supervision is often seen as a factor in increasing social problems, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   },
+   {
+    "id": "effect-4",
+    "kind": "criterion",
+    "verbatim": "improvements in the provision of social welfare.",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     10
+    ],
+    "contextNote": "e.g. child benefit has reduced the incidence of child poverty, old age pensions, living alone allowance, fuel allowances help to alleviate hardship for elderly, family unit feels less responsible for retired, disabled, unemployed or widowed since introduction of social welfare, one parent families, widowed or lone parents can receive state benefits, families on low income can avail of FIS and Back to School clothing and footwear allowance, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sc-q3aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3aii",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E3 Q3(a)(ii)",
+  "questionText": "Name and give details of one initiative that has helped maintain the population in rural areas.",
+  "stem": "‘Social changes occur for a variety of reasons and have had a significant impact on family life in Ireland.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name4 + details 2×3"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "anyN",
+    "verbatim": "Name",
+    "marks": 4,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "redeployment of government departments and state agencies to rural locations",
+      "rural resettlement schemes",
+      "IDA",
+      "Fás /Solas",
+      "Enterprise Ireland",
+      "County Enterprise Boards",
+      "Job Start",
+      "Improved infrastructure"
+     ]
+    },
+    "contextNote": ""
+   },
+   {
+    "id": "details",
+    "kind": "criterion",
+    "verbatim": "Details",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Two points about the SAME initiative. Full historical source: e.g. redeployment of government departments and state agencies to rural locations. rural resettlement schemes IDA – responsibility of securing investment from overseas, encourages existing investors to expand and develop their business in rural areas etc. Fás /Solas – provides community based employment, training programmes in areas such as childcare & horticulture etc. help people gain experience to further training or employment, offers training for minority groups, provides up skilling, payment while training etc. Enterprise Ireland – develops and promotes Irish business at home and abroad, helps companies to build markets, increase sales and employ more people etc. County Enterprise Boards – support small businesses at local level, offer advice, mentoring, and financial assistance in form of grants, encourages job creation and the maintenance of sustainable jobs, cottage industries, co-operatives, etc. Job Start, Improved infrastructure – roads, telecommunications etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sc-q3bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3bi",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E3 Q3(b)(i)",
+  "questionText": "Identify and discuss four of the key reasons why people work.",
+  "stem": "‘Work occupies a larger part of life than any other single activity.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "reasons",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15,
+     20
+    ],
+    "contextNote": "Complete original source guidance: e.g. people have a right to work, financial independence, raise standard of living, status, save money for houses, cars, college etc., assist parents to pay for basic needs, school fees, bills etc., peer pressure, understand adult working role, own money allows them to make personal consumer choices, job satisfaction, sense of achievement, make use of qualifications, keeps people occupied, socialisation, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sc-q3bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3bii",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E3 Q3(b)(ii)",
+  "questionText": "Outline the protection provided by the Protection of Young Persons (Employment) Act, (1996).",
+  "stem": "‘Work occupies a larger part of life than any other single activity.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "protection",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     10
+    ],
+    "contextNote": "Historical 2012 examination guidance for the named Act. Complete original source guidance: e.g. applies to all employees under eighteen years of age, sets out working conditions – hours, age limits and rest periods, employment of under 16’s in full-time position is prohibited, 14 & 15 year olds may be employed for ‘light’ work during school holidays or term time or work experience, 14 & 15 year olds may work maximum 35 hours a week, 16 – 18 years may work up to a maximum 40 hours a week, under 18 years cannot be required to work after 10pm, employers must obtain copy of birth cert if employee is under 18 and needs written permission from parents / guardian if employee under 16 years, employers who breach this legislation may be prosecuted and fined, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2012-ol-sc-q3ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-10",
+  "conceptId": "sc-q3ci",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E3 Q3(c)(i)",
+  "questionText": "Name and give details of two education programmes designed specifically to help retain young people in second level education.",
+  "stem": "‘Improvement of student achievement has always been one of the main goals of education.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 programmes × (name4 + details5)"
+  },
+  "rows": [
+   {
+    "id": "name-1",
+    "kind": "anyN",
+    "verbatim": "Name",
+    "marks": 4,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "School Completion Programme",
+      "Leaving Cert Applied",
+      "Youthreach",
+      "LCVP",
+      "Transition Year",
+      "JCSP"
+     ]
+    },
+    "contextNote": "Choose a DIFFERENT education programme for each pair."
+   },
+   {
+    "id": "details-1",
+    "kind": "criterion",
+    "verbatim": "Details",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     5
+    ],
+    "contextNote": "One detail point about the SAME named programme. Complete source: School Completion Programme – reduces number of students from leaving school early, extra teaching hours provided, absences monitored, breakfast and lunch clubs to ensure students eating balanced meals, after school homework clubs, each school involved must develop a retention plan specific to its needs, an induction plan for first years are all key parts of this initiative, etc. Leaving Cert Applied – prepares students for work, modular programme, students assessed over two year period with written, oral, interviews and assessments of student tasks, etc. Other programmes include: Youthreach, LCVP, Transition Year and JCSP etc. The scheme names four further programmes without model details; no new details have been invented."
+   },
+   {
+    "id": "name-2",
+    "kind": "anyN",
+    "verbatim": "Name",
+    "marks": 4,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "School Completion Programme",
+      "Leaving Cert Applied",
+      "Youthreach",
+      "LCVP",
+      "Transition Year",
+      "JCSP"
+     ]
+    },
+    "contextNote": "Choose a DIFFERENT education programme for each pair."
+   },
+   {
+    "id": "details-2",
+    "kind": "criterion",
+    "verbatim": "Details",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     5
+    ],
+    "contextNote": "One detail point about the SAME named programme. Complete source: School Completion Programme – reduces number of students from leaving school early, extra teaching hours provided, absences monitored, breakfast and lunch clubs to ensure students eating balanced meals, after school homework clubs, each school involved must develop a retention plan specific to its needs, an induction plan for first years are all key parts of this initiative, etc. Leaving Cert Applied – prepares students for work, modular programme, students assessed over two year period with written, oral, interviews and assessments of student tasks, etc. Other programmes include: Youthreach, LCVP, Transition Year and JCSP etc. The scheme names four further programmes without model details; no new details have been invented."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "taskGroups": [
+   {
+    "sourceCardId": "he-2012-ol-sc-q3ci-pair-1",
+    "label": "Education programme 1",
+    "marks": 9,
+    "rowIds": [
+     "name-1",
+     "details-1"
+    ]
+   },
+   {
+    "sourceCardId": "he-2012-ol-sc-q3ci-pair-2",
+    "label": "Education programme 2",
+    "marks": 9,
+    "rowIds": [
+     "name-2",
+     "details-2"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2012-ol-sc-q3cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-10",
+  "conceptId": "sc-q3cii",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "C",
+  "questionRef": "2012 OL Section C E3 Q3(c)(ii)",
+  "questionText": "State two benefits to the student of each programme named.",
+  "stem": "‘Improvement of student achievement has always been one of the main goals of education.’\n\nName and give details of two education programmes designed specifically to help retain young people in second level education.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 benefits for EACH of 2 programmes × 3"
+  },
+  "rows": [
+   {
+    "id": "benefits-1",
+    "kind": "criterion",
+    "verbatim": "benefits",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Programme 1: two benefits of the SAME programme named in part (i), separately for each of the two programmes. Full original source: socialisation continues enabling persons to fit into and be accepted by society, contributes to emotional development and sensitivity to the needs of others, peers and exams can provide challenges and competition, self esteem increases, encourages self development, sense of achievement, teaches life skills and skills applicable to adult working life, work experience facilitates links in the community and businesses and gives students practical experience of certain careers and courses suited to individual needs and may be a source of further employment, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "benefits-2",
+    "kind": "criterion",
+    "verbatim": "benefits",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Programme 2: two benefits of the SAME programme named in part (i), separately for each of the two programmes. Full original source: socialisation continues enabling persons to fit into and be accepted by society, contributes to emotional development and sensitivity to the needs of others, peers and exams can provide challenges and competition, self esteem increases, encourages self development, sense of achievement, teaches life skills and skills applicable to adult working life, work experience facilitates links in the community and businesses and gives students practical experience of certain careers and courses suited to individual needs and may be a source of further employment, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2012 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
  }
 ]
