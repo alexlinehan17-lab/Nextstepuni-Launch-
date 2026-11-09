@@ -307,6 +307,9 @@ const collapsedCache = new Map();
  * re-checked by the rule that admitted it.
  */
 export const claimMatches = (scheme, claim) => {
+  // An empty crop/selector is not source evidence. Check the original text:
+  // punctuation-only answers must retain the existing comparison behaviour.
+  if (!claim.trim()) return false;
   const c = normalise(claim);
   if (scheme.includes(c)) return true;
   let collapsed = collapsedCache.get(scheme);

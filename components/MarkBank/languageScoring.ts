@@ -72,6 +72,14 @@ export function languageAlternativeConflicts(rubric: LanguagePointsRubric, score
   return new Set([...counts].filter(([, count]) => count > 1).map(([id]) => id));
 }
 
+/** Apply only conditions the student explicitly marked as present in the
+ * actual response. Selected answer labels do not infer its wording. */
+export function languageAllocationMaximum(rubric: LanguagePointsRubric, scores: LanguageScores): number {
+  const cap = rubric.allocationCap;
+  return Math.min(cap?.maxMarks ?? Infinity, ...(cap?.limits ?? [])
+    .filter(limit => scores[languageFlagId(limit.when.flag)] === 1).map(limit => limit.maxMarks));
+}
+
 export function languagePointsMarks(rubric: LanguagePointsRubric, scores: LanguageScores, rule?: SecCardBase['answerLanguageRule']): number {
   // A wholly wrong-language response includes its discretionary criteria.
   // This explicit whole-response flag supersedes, rather than compounds,
@@ -93,7 +101,7 @@ export function languagePointsMarks(rubric: LanguagePointsRubric, scores: Langua
   const groupCriteria = selectedGroups.reduce((sum, group) => sum + (group.criteria
     ? languageWritingMarks({ ...rubric, system: 'language-writing', criteria: group.criteria }, scores)
       * languageCreditMultiplier(individualRule, scores, `group:${group.id}`) : 0), 0);
-  const allocation = Math.min(rowAllocation + groupCriteria, rubric.allocationCap?.maxMarks ?? Infinity);
+  const allocation = Math.min(rowAllocation + groupCriteria, languageAllocationMaximum(rubric, scores));
   return (allocation + (rubric.criteria ? languageWritingMarks({ ...rubric, system: 'language-writing', criteria: rubric.criteria }, scores) : 0)) * responseMultiplier;
 }
 

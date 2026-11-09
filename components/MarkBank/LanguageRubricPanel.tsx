@@ -1,7 +1,7 @@
 import React from 'react';
 import type { LanguageWritingRubric, LanguageWritingCriterion, LanguagePointsRubric, SecRubricCard } from '../../types/markBank';
 import { ClaimRow, MarkStrip } from './ClaimRows';
-import { languageMarks, languageScoreId, languageLengthId, languageFlagId, languageGroupId, languageRowId, languageCriterionPlacement, languageCriterionValue, languageAlternativeConflicts, languageOtherLanguageId, type LanguageScoreId, type LanguageScores } from './languageScoring';
+import { languageMarks, languageScoreId, languageLengthId, languageFlagId, languageGroupId, languageRowId, languageCriterionPlacement, languageCriterionValue, languageAlternativeConflicts, languageAllocationMaximum, languageOtherLanguageId, type LanguageScoreId, type LanguageScores } from './languageScoring';
 import './language-rubric.css';
 
 export default function LanguageRubricPanel({ card, scores, onScore }: {
@@ -22,13 +22,18 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
   const renderCriterion = (criterion: LanguageWritingCriterion, criterionRubric: LanguageWritingRubric, disabled = false) => {
       const { limits, permitted, selected, minimum, cap, needsRangeReview } = languageCriterionPlacement(criterionRubric, criterion, scores, [criterion.id]);
       const bandedLimits = [...limits].sort((a, b) => a.maxMarks - b.maxMarks).filter(limit => limit.bands);
+      const sourceLimits = limits.filter(limit => limit.bands || limit.scaleLabel || (limit.minMarks ?? 0) > 0);
+      const literalScales = sourceLimits.filter(limit => !limit.bands);
       // Simultaneous Lower A/Lower E rules do not establish descriptor
       // precedence. Keep both named source scales and their printed ranges;
       // the controls below enforce the numeric intersection without inventing
       // a conversion between descriptors.
       const scales = (minimum > 0 ? bandedLimits : bandedLimits.slice(0, 1))
         .map(limit => ({ id: limit.id, label: limit.scaleLabel, bands: limit.bands! }));
-      if (!scales.length && criterion.bands) scales.push({ id: criterion.id, label: undefined, bands: criterion.bands });
+      // A contradictory printed descriptor table may be quoted literally
+      // while its unambiguous numeric range remains assessable. Do not label
+      // normal descriptors as active when that source scale has no bands.
+      if (!sourceLimits.length && criterion.bands) scales.push({ id: criterion.id, label: undefined, bands: criterion.bands });
       const visibleScales = scales.map(scale => ({ ...scale, bands: scale.bands.filter(band => minimum > 0
         ? band.marks.some(mark => mark > 0 && permitted.includes(mark))
           || (band.marks.every(mark => mark === 0) && permitted.includes(0))
@@ -37,8 +42,11 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
         <div className="mb-language-heading"><h4>{criterion.label}</h4><span>{criterion.kind === 'deduction' ? 'Deduction'
           : minimum > 0 && cap > 0 ? `${minimum}–${cap} marks` : `Up to ${cap} marks`}</span></div>
         {criterion.guidance.map((text, index) => <p key={index}>{text}</p>)}
-        {limits.flatMap(limit => limit.guidance).map((text, index) => <p className="mb-language-rule" key={index}>{text}</p>)}
-        {visibleScales.length > 1 && <p>Both source scales apply. Use their shared mark range and reassess against each set of descriptors.</p>}
+        {limits.map(limit => <React.Fragment key={limit.id}>
+          {!limit.bands && limit.scaleLabel && <p><strong>{limit.scaleLabel}</strong></p>}
+          {limit.guidance.map((text, index) => <p className="mb-language-rule" key={index}>{text}</p>)}
+        </React.Fragment>)}
+        {cap > 0 && visibleScales.length + literalScales.length > 1 && <p>Both source scales apply. Use their shared mark range and reassess against each set of descriptors.</p>}
         {visibleScales.map(scale => <React.Fragment key={scale.id}>
           {scale.label && <p><strong>{scale.label}</strong></p>}
           {scale.bands.map(band => <div className="mb-language-band" key={band.label}>
@@ -79,8 +87,16 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
         ? `Select up to ${rubric.count} groups, then claim up to ${rubric.allocationCap.answerCount} details in total.`
         : `Select the ${rubric.count} items you answered, then claim each component.`}</p>
       {rubric.allocationCap && <>
-        <p>These answers earn up to {rubric.allocationCap.maxMarks} marks altogether.</p>
+        <p>These answers earn up to {languageAllocationMaximum(rubric, scores)} marks altogether.</p>
         <p>{rubric.allocationCap.sourceText}</p>
+        {rubric.allocationCap.limits?.map(limit => <React.Fragment key={limit.id}>
+          {limit.sourceText !== rubric.allocationCap!.sourceText && <p>{limit.sourceText}</p>}
+          <label className="mb-language-flag">
+            <input type="checkbox" checked={scores[languageFlagId(limit.when.flag)] === 1}
+              onChange={event => onScore(languageFlagId(limit.when.flag), event.currentTarget.checked ? 1 : 0)} />
+            <span>{limit.when.prompt}</span>
+          </label>
+        </React.Fragment>)}
       </>}
       {rubric.alternativeSets?.map(set => <React.Fragment key={set.id}>
         <p><strong>{set.label}</strong></p>
