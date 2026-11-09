@@ -49,7 +49,7 @@ beforeEach(() => {
     addEventListener: (_event: string, listener: () => void) => { mediaListeners.add(listener); },
     removeEventListener: (_event: string, listener: () => void) => { mediaListeners.delete(listener); },
     addListener: vi.fn(), removeListener: vi.fn(), dispatchEvent: () => false,
-  } as MediaQueryList));
+  } as unknown as MediaQueryList));
 });
 afterEach(() => { cleanup(); mediaListeners.clear(); vi.restoreAllMocks(); });
 
@@ -59,7 +59,7 @@ describe('persistent tablet navigation', () => {
     render(<NextStepUniSidebar {...props} />);
     expect(screen.getByRole('navigation', { name: 'Main navigation' })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Collapse sidebar' })).toHaveAttribute('aria-expanded', 'true');
-    fireEvent.click(screen.getByRole('button', { name: 'Mark Bank', exact: true }));
+    fireEvent.click(screen.getByRole('button', { name: 'Mark Bank' }));
     expect(navigateToInnovationZone).toHaveBeenCalledWith('mark-bank');
   });
   it('shows the same sidebar in the native iPad app', () => {
