@@ -1618,7 +1618,7 @@ export function tariffReconciles(card: SecCard): boolean {
       const ids = new Set(criteria.map(criterion => criterion.id));
       const validSteps = (marks: number[], max: number) => marks.length > 0
         && marks[0] === 0 && marks.at(-1) === max
-        && marks.every((mark, index) => Number.isInteger(mark) && mark >= 0 && (index === 0 || mark > marks[index - 1]));
+        && marks.every((mark, index) => Number.isFinite(mark) && mark >= 0 && mark <= max && (index === 0 || mark > marks[index - 1]));
       const validBands = (bands: LanguageBand[] | undefined, allowed: number[]) => {
         if (!bands) return true;
         const marks = bands.flatMap(band => band.marks);
