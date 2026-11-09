@@ -156676,5 +156676,5651 @@
    "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Open the original examination page to review this task in context."
   }
+ },
+ {
+  "id": "he-2019-ol-sa-q1",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-8",
+  "conceptId": "sa-q1",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 OL Section A Q1",
+  "questionText": "Indicate with a tick (✓) whether each of the following statements is true or false.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and printed partial-credit steps"
+  },
+  "rows": [
+   {
+    "id": "statement-1",
+    "kind": "point",
+    "verbatim": "Water is an essential component (part) of all body cells. — True",
+    "marks": 2,
+    "contextNote": "The original visible tick position determines the answer; each statement is 2 or 0 marks."
+   },
+   {
+    "id": "statement-2",
+    "kind": "point",
+    "verbatim": "Water helps to regulate body temperature through perspiration. — True",
+    "marks": 2,
+    "contextNote": "The original visible tick position determines the answer; each statement is 2 or 0 marks."
+   },
+   {
+    "id": "statement-3",
+    "kind": "point",
+    "verbatim": "Water prevents the digestion and absorption of food. — False",
+    "marks": 2,
+    "contextNote": "The original visible tick position determines the answer; each statement is 2 or 0 marks."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2019-ol-sa-q1",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2019-ol-sa-q2",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-8",
+  "conceptId": "sa-q2",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 OL Section A Q2",
+  "questionText": "Using the words listed below, complete the following statements in relation to vitamins.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and printed partial-credit steps"
+  },
+  "rows": [
+   {
+    "id": "blank-1",
+    "kind": "point",
+    "verbatim": "A deficiency of vitamin D causes rickets in children.",
+    "marks": 2,
+    "contextNote": "Fill the three original blanks in order; each is 2 or 0 marks."
+   },
+   {
+    "id": "blank-2",
+    "kind": "point",
+    "verbatim": "Vitamin C is also known as ascorbic acid.",
+    "marks": 2,
+    "contextNote": "Fill the three original blanks in order; each is 2 or 0 marks."
+   },
+   {
+    "id": "blank-3",
+    "kind": "point",
+    "verbatim": "Vitamin A is required for the production of rhodopsin a pigment in the retina of the eye.",
+    "marks": 2,
+    "contextNote": "Fill the three original blanks in order; each is 2 or 0 marks."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2019-ol-sa-q2",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2019-ol-sa-q3",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-5",
+  "conceptId": "sa-q3",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 OL Section A Q3",
+  "questionText": "In relation to protein explain the property: Coagulation Name two different dishes that show the property of coagulation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and printed partial-credit steps"
+  },
+  "rows": [
+   {
+    "id": "coagulation",
+    "kind": "criterion",
+    "verbatim": "Coagulation",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Heat causes protein to coagulate and set; egg white coagulates at 60°C; egg yolk coagulates at 68°C; moist heat changes collagen to gelatine; myoglobin in meat causes colour to change; agitation, mechanical action – whipping egg white will turn it to foam; enzyme rennin coagulates milk protein; etc."
+   },
+   {
+    "id": "dishes",
+    "kind": "criterion",
+    "verbatim": "Dishes",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Choose ANY TWO different dishes across both source lines; no one-per-line quota. quiche; pavlova; meringues; soufflés; etc. roast beef; lemon meringue pie; omelette; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sa-q4",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-10",
+  "conceptId": "sa-q4",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 OL Section A Q4",
+  "questionText": "Identify three changes in eating patterns in the Irish diet.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and printed partial-credit steps"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "Changes in eating patterns",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Choose ANY THREE across the complete source pool; no forced answer-line quota. more people eating out; eating more fast foods; more ready meals consumed; family not eating main meal of day together; main meal eaten in the evening; people ‘eating on the go’; more processed/convenience foods eaten; eating more healthy/unhealthy foods; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sa-q5",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sa-q5",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 OL Section A Q5",
+  "questionText": "Listed below are classes of fruit. Name two fruits in each class.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and printed partial-credit steps"
+  },
+  "rows": [
+   {
+    "id": "class-1",
+    "kind": "criterion",
+    "verbatim": "Citrus fruit",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Name ANY TWO different fruits in this REQUIRED class. Complete original pool: oranges; lemons; limes; grapefruit; clementine; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "id": "class-2",
+    "kind": "criterion",
+    "verbatim": "Dried fruit",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Name ANY TWO different fruits in this REQUIRED class. Complete original pool: raisins; currants; sultanas; dates; prunes; figs; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "id": "class-3",
+    "kind": "criterion",
+    "verbatim": "Stone fruit",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Name ANY TWO different fruits in this REQUIRED class. Complete original pool: plums; peaches; nectarines; avocado; cherries; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2019-ol-sa-q5",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2019-ol-sa-q6",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sa-q6",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 OL Section A Q6",
+  "questionText": "Give three dietary guidelines that help prevent bowel disease.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and printed partial-credit steps"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "Dietary guidelines",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Choose ANY THREE across the complete source pool; no forced answer-line quota. eat whole cereals; brown bread; wholegrain rice; leave skins on fruit/vegetables; eat fruit/vegetables raw where possible; substitute processed snack foods with fresh fruit/dried fruit; increase intake of nuts/seeds; eat whole fruits instead of fruit juices; drink plenty of water; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sa-q7",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-3",
+  "conceptId": "sa-q7",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 OL Section A Q7",
+  "questionText": "Name two different types of pastry and suggest a suitable dish that can be made using each type.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and printed partial-credit steps"
+  },
+  "rows": [
+   {
+    "id": "types",
+    "kind": "criterion",
+    "verbatim": "Types of Pastry",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Name TWO different pastry types. Both complete original grouped choice pools are retained: Types of pastry: choux; shortcrust; rough puff; puff; Suitable dishes: eclairs; profiteroles; apple tart; quiche; sausage rolls; steak and kidney pie; croissants; vol au vents; etc. | Types of pastry: flaky; filo; suet; rich shortcrust; etc. Suitable dishes: mince pies; spring rolls; steamed puddings; samosas; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "dishes",
+    "kind": "criterion",
+    "verbatim": "Dish",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Give ONE suitable dish matching EACH of the SAME TWO selected pastry types. The original table groups several types and dishes; no one-to-one answer key has been invented. Types of pastry: choux; shortcrust; rough puff; puff; Suitable dishes: eclairs; profiteroles; apple tart; quiche; sausage rolls; steak and kidney pie; croissants; vol au vents; etc. | Types of pastry: flaky; filo; suet; rich shortcrust; etc. Suitable dishes: mince pies; spring rolls; steamed puddings; samosas; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2019-ol-sa-q7",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2019-ol-sa-q8",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-3",
+  "conceptId": "sa-q8",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 OL Section A Q8",
+  "questionText": "Indicate with a tick (✓) whether each of the following statements is true or false.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and printed partial-credit steps"
+  },
+  "rows": [
+   {
+    "id": "statement-1",
+    "kind": "point",
+    "verbatim": "Grilling is a slow method of cooking food. — False",
+    "marks": 2,
+    "contextNote": "The original visible tick position determines the answer; each statement is 2 or 0 marks."
+   },
+   {
+    "id": "statement-2",
+    "kind": "point",
+    "verbatim": "Deep frying is cooking food immersed in hot fat. — True",
+    "marks": 2,
+    "contextNote": "The original visible tick position determines the answer; each statement is 2 or 0 marks."
+   },
+   {
+    "id": "statement-3",
+    "kind": "point",
+    "verbatim": "Poaching is suitable for delicate foods e.g. eggs and fish. — True",
+    "marks": 2,
+    "contextNote": "The original visible tick position determines the answer; each statement is 2 or 0 marks."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2019-ol-sa-q8",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2019-ol-sa-q9",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-4",
+  "conceptId": "sa-q9",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 OL Section A Q9",
+  "questionText": "Using the words listed below, complete the following statements in relation to household textiles.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and printed partial-credit steps"
+  },
+  "rows": [
+   {
+    "id": "blank-1",
+    "kind": "point",
+    "verbatim": "Fabric conditioners reduce the build-up of static in synthetic fibres.",
+    "marks": 2,
+    "contextNote": "Fill the original blanks in order; each is 2 or 0 marks."
+   },
+   {
+    "id": "blank-2",
+    "kind": "point",
+    "verbatim": "Wool fabric can shrink when washed at high temperatures.",
+    "marks": 2,
+    "contextNote": "Fill the original blanks in order; each is 2 or 0 marks."
+   },
+   {
+    "id": "blank-3",
+    "kind": "point",
+    "verbatim": "Proban is a flame-retardant finish used on household textiles.",
+    "marks": 2,
+    "contextNote": "Fill the original blanks in order; each is 2 or 0 marks."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2019-ol-sa-q9",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2019-ol-sa-q10",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sa-q10",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 OL Section A Q10",
+  "questionText": "What two factors should be considered when choosing a saving scheme? Name one saving scheme available to consumers.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and printed partial-credit steps"
+  },
+  "rows": [
+   {
+    "id": "factors",
+    "kind": "criterion",
+    "verbatim": "Factors",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Choose ANY TWO factors from the full pool: ease of access to funds; rate of interest; security of scheme - covered by Government Deposit Guarantee Scheme; tax free; subject to DIRT tax (Deposit Interest Retention Tax); etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "scheme",
+    "kind": "criterion",
+    "verbatim": "Saving scheme",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Name ONE savings scheme from the full original historical 2019 pool: Post Office: deposit account; instalment savings scheme; saving bonds; saving certificates; National Solidarity Bond; etc. Banks/Building Societies: demand deposit account; notice deposit account; special term account; etc. Credit Union: saver account; junior saver account; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sa-q11",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sa-q11",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 OL Section A Q11",
+  "questionText": "Explain the following terms: Gross Income Net Income",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and printed partial-credit steps"
+  },
+  "rows": [
+   {
+    "id": "term-1",
+    "kind": "criterion",
+    "verbatim": "Gross Income",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "income earned before deductions are made; etc."
+   },
+   {
+    "id": "term-2",
+    "kind": "criterion",
+    "verbatim": "Net Income",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "income after deductions are made; take home pay; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sa-q12",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-5",
+  "conceptId": "sa-q12",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 OL Section A Q12",
+  "questionText": "What information does each of the following symbols convey to the consumer?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original component allocations and printed partial-credit steps"
+  },
+  "rows": [
+   {
+    "id": "symbol-1",
+    "kind": "criterion",
+    "verbatim": "Universal recycling symbol",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Original 2019 source wording: Universal recycling symbol; goods and packaging contain recyclable materials; etc."
+   },
+   {
+    "id": "symbol-2",
+    "kind": "criterion",
+    "verbatim": "European Union eco label",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Original 2019 source wording: European Union eco label; products carrying this label cause minimum damage to the environment; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2019-ol-sa-q12",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2019-ol-sb-q1ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sb-q1ai",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q1(a)(i)",
+  "questionText": "Using the information presented in the table above: comment on four of the baked goods purchased weekly by households and give reasons for their popularity.",
+  "stem": "Bread is still considered a staple food in Ireland. The table below shows the types of baked goods purchased by households on a weekly basis.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Four matching comment2/reason3 accounts"
+  },
+  "rows": [
+   {
+    "id": "comment-1",
+    "kind": "criterion",
+    "verbatim": "Comment",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Choose FOUR different baked goods from the original five-bar chart. Comment on selected item 1; all original models: Comment: comparison; reference to %; rank order; popularity; etc. White Sliced Bread: cheap; easily available; versatile; high in carbohydrate; lacking in fibre; gluten free option available; etc. French Bread (Baguettes): cost; lacking in fibre; popular; versatile; etc. Soda/Brown Bread: traditional bread; contains fibre; cost; etc. Wraps: different varieties available; different sizes; versatile; etc. Rolls/Buns/Baps: cost; different varieties; versatile; available frozen; etc."
+   },
+   {
+    "id": "reason-1",
+    "kind": "criterion",
+    "verbatim": "Reasons",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Give a popularity reason for the SAME selected baked good 1; no separate naming mark is printed. Comment: comparison; reference to %; rank order; popularity; etc. White Sliced Bread: cheap; easily available; versatile; high in carbohydrate; lacking in fibre; gluten free option available; etc. French Bread (Baguettes): cost; lacking in fibre; popular; versatile; etc. Soda/Brown Bread: traditional bread; contains fibre; cost; etc. Wraps: different varieties available; different sizes; versatile; etc. Rolls/Buns/Baps: cost; different varieties; versatile; available frozen; etc."
+   },
+   {
+    "id": "comment-2",
+    "kind": "criterion",
+    "verbatim": "Comment",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Choose FOUR different baked goods from the original five-bar chart. Comment on selected item 2; all original models: Comment: comparison; reference to %; rank order; popularity; etc. White Sliced Bread: cheap; easily available; versatile; high in carbohydrate; lacking in fibre; gluten free option available; etc. French Bread (Baguettes): cost; lacking in fibre; popular; versatile; etc. Soda/Brown Bread: traditional bread; contains fibre; cost; etc. Wraps: different varieties available; different sizes; versatile; etc. Rolls/Buns/Baps: cost; different varieties; versatile; available frozen; etc."
+   },
+   {
+    "id": "reason-2",
+    "kind": "criterion",
+    "verbatim": "Reasons",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Give a popularity reason for the SAME selected baked good 2; no separate naming mark is printed. Comment: comparison; reference to %; rank order; popularity; etc. White Sliced Bread: cheap; easily available; versatile; high in carbohydrate; lacking in fibre; gluten free option available; etc. French Bread (Baguettes): cost; lacking in fibre; popular; versatile; etc. Soda/Brown Bread: traditional bread; contains fibre; cost; etc. Wraps: different varieties available; different sizes; versatile; etc. Rolls/Buns/Baps: cost; different varieties; versatile; available frozen; etc."
+   },
+   {
+    "id": "comment-3",
+    "kind": "criterion",
+    "verbatim": "Comment",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Choose FOUR different baked goods from the original five-bar chart. Comment on selected item 3; all original models: Comment: comparison; reference to %; rank order; popularity; etc. White Sliced Bread: cheap; easily available; versatile; high in carbohydrate; lacking in fibre; gluten free option available; etc. French Bread (Baguettes): cost; lacking in fibre; popular; versatile; etc. Soda/Brown Bread: traditional bread; contains fibre; cost; etc. Wraps: different varieties available; different sizes; versatile; etc. Rolls/Buns/Baps: cost; different varieties; versatile; available frozen; etc."
+   },
+   {
+    "id": "reason-3",
+    "kind": "criterion",
+    "verbatim": "Reasons",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Give a popularity reason for the SAME selected baked good 3; no separate naming mark is printed. Comment: comparison; reference to %; rank order; popularity; etc. White Sliced Bread: cheap; easily available; versatile; high in carbohydrate; lacking in fibre; gluten free option available; etc. French Bread (Baguettes): cost; lacking in fibre; popular; versatile; etc. Soda/Brown Bread: traditional bread; contains fibre; cost; etc. Wraps: different varieties available; different sizes; versatile; etc. Rolls/Buns/Baps: cost; different varieties; versatile; available frozen; etc."
+   },
+   {
+    "id": "comment-4",
+    "kind": "criterion",
+    "verbatim": "Comment",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Choose FOUR different baked goods from the original five-bar chart. Comment on selected item 4; all original models: Comment: comparison; reference to %; rank order; popularity; etc. White Sliced Bread: cheap; easily available; versatile; high in carbohydrate; lacking in fibre; gluten free option available; etc. French Bread (Baguettes): cost; lacking in fibre; popular; versatile; etc. Soda/Brown Bread: traditional bread; contains fibre; cost; etc. Wraps: different varieties available; different sizes; versatile; etc. Rolls/Buns/Baps: cost; different varieties; versatile; available frozen; etc."
+   },
+   {
+    "id": "reason-4",
+    "kind": "criterion",
+    "verbatim": "Reasons",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Give a popularity reason for the SAME selected baked good 4; no separate naming mark is printed. Comment: comparison; reference to %; rank order; popularity; etc. White Sliced Bread: cheap; easily available; versatile; high in carbohydrate; lacking in fibre; gluten free option available; etc. French Bread (Baguettes): cost; lacking in fibre; popular; versatile; etc. Soda/Brown Bread: traditional bread; contains fibre; cost; etc. Wraps: different varieties available; different sizes; versatile; etc. Rolls/Buns/Baps: cost; different varieties; versatile; available frozen; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "taskGroups": [
+   {
+    "sourceCardId": "he-2019-ol-sb-q1ai-item-1",
+    "label": "Baked good 1",
+    "marks": 5,
+    "rowIds": [
+     "comment-1",
+     "reason-1"
+    ]
+   },
+   {
+    "sourceCardId": "he-2019-ol-sb-q1ai-item-2",
+    "label": "Baked good 2",
+    "marks": 5,
+    "rowIds": [
+     "comment-2",
+     "reason-2"
+    ]
+   },
+   {
+    "sourceCardId": "he-2019-ol-sb-q1ai-item-3",
+    "label": "Baked good 3",
+    "marks": 5,
+    "rowIds": [
+     "comment-3",
+     "reason-3"
+    ]
+   },
+   {
+    "sourceCardId": "he-2019-ol-sb-q1ai-item-4",
+    "label": "Baked good 4",
+    "marks": 5,
+    "rowIds": [
+     "comment-4",
+     "reason-4"
+    ]
+   }
+  ],
+  "questionFigureKey": "home-economics-2019-ol-sb-q1-bread",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2019-ol-sb-q1aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sb-q1aii",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q1(a)(ii)",
+  "questionText": "Using the information presented in the table above: suggest one modification (change) that could be made to one of the baked goods to make it healthier. (5) Give a reason for your choice.",
+  "stem": "Bread is still considered a staple food in Ireland. The table below shows the types of baked goods purchased by households on a weekly basis.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 5,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Modification3 + matching reason2"
+  },
+  "rows": [
+   {
+    "id": "modification",
+    "kind": "criterion",
+    "verbatim": "Modification",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Choose ONE modification to ONE baked good from the original chart. Use brown flour instead of white flour; add seeds to increase fibre content; use olive oil instead of butter; decorate tops of breads with mixed seeds; add chopped nuts, spinach, cheese, herbs, sundried tomatoes; etc."
+   },
+   {
+    "id": "reason",
+    "kind": "criterion",
+    "verbatim": "Reason",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Give a reason matching the SAME modification. Source examples, without invented additional explanations: Use brown flour instead of white flour; add seeds to increase fibre content; use olive oil instead of butter; decorate tops of breads with mixed seeds; add chopped nuts, spinach, cheese, herbs, sundried tomatoes; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2019-ol-sb-q1-bread",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2019-ol-sb-q1b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-6",
+  "conceptId": "sb-q1b",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q1(b)",
+  "questionText": "Give an account of carbohydrates under each of the following headings: • classification • dietary sources • functions in the body.",
+  "stem": "Bread is still considered a staple food in Ireland. The table below shows the types of baked goods purchased by households on a weekly basis.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 26,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Three classes2 + three sources4 + two functions4"
+  },
+  "rows": [
+   {
+    "id": "classes",
+    "kind": "criterion",
+    "verbatim": "classification",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Monosaccharides; disaccharides; polysaccharides; Sugar; starch; fibre/cellulose; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "sources",
+    "kind": "criterion",
+    "verbatim": "dietary sources",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12
+    ],
+    "contextNote": "Breakfast cereals; rice; pasta; potatoes; bread; fruit; vegetables; nuts; seeds; honey; cakes; biscuits; sweets; popcorn; milk; sugar; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "functions",
+    "kind": "criterion",
+    "verbatim": "functions in the body",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Heat; energy; stimulate peristalsis; prevents constipation; prevents bowel disorders; acts as a protein sparer; insulation, excess carbohydrate stored as adipose tissue; glycogen reserve; fibre gives a feeling of fullness; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sb-q1c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sb-q1c",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q1(c)",
+  "questionText": "Suggest three ways people can reduce sugar in their diet.",
+  "stem": "Bread is still considered a staple food in Ireland. The table below shows the types of baked goods purchased by households on a weekly basis.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "ways",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "Avoid fizzy drinks; do not add sugar to drinks; replace sugar with sweeteners; reduce cakes, biscuits and sweets in diet; do not add sugar to cereals; replace sugary snacks with fruit/vegetable sticks; eat whole fruits instead of smoothies/juices; modify recipes to reduce sugar content; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sb-q1d",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sb-q1d",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q1(d)",
+  "questionText": "Below are four items of consumer information found on food packaging. Explain the importance of each to the consumer: • additives • nutritional information • list of ingredients • storage instructions.",
+  "stem": "Bread is still considered a staple food in Ireland. The table below shows the types of baked goods purchased by households on a weekly basis.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "All four required consumer-information accounts5"
+  },
+  "rows": [
+   {
+    "id": "item-1",
+    "kind": "criterion",
+    "verbatim": "Additives",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "Explain this REQUIRED item. Additives: listed for consumers with possible allergic reactions; to prevent over consumption of additives; etc."
+   },
+   {
+    "id": "item-2",
+    "kind": "criterion",
+    "verbatim": "Nutritional information",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "Explain this REQUIRED item. Nutritional information: consumer will know exactly what they are eating; energy content in kcals/kj; amount of protein, fat, carbohydrates, sugars, fibre and sodium; allergy information to support coeliac/lactose intolerance/nut allergy; suitability for vegetarians /vegans; etc."
+   },
+   {
+    "id": "item-3",
+    "kind": "criterion",
+    "verbatim": "List of ingredients",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "Explain this REQUIRED item. List of ingredients: consumer is able to see exactly what ingredients are used in the product; quantities of ingredients used; consumers can make informed food choices; etc."
+   },
+   {
+    "id": "item-4",
+    "kind": "criterion",
+    "verbatim": "Storage instructions",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "Explain this REQUIRED item. Storage instructions: details of how to store products to prevent spoilage; best before date; use by date; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sb-q2a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sb-q2a",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q2(a)",
+  "questionText": "Discuss four factors that determine a person’s energy requirements.",
+  "stem": "‘Almost 1.5 billion adults around the world are not getting enough exercise.’ (Irish Times, 2018)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points; original steps [0, 3, 5]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "factors",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     3,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     18,
+     20
+    ],
+    "contextNote": "Age: young people require more energy; elderly require less energy; etc. occupation: those involved in heavy manual work require more energy; etc. gender: women require less energy than men; etc. climate: more energy required in colder climates; etc. activity levels: the more active people are, the more energy they need; etc. size and body weight: smaller people use less energy than larger people; etc. pregnancy: more energy is required for developing foetus; etc. lactation: additional energy required for breast milk production; etc. health status: during illness energy requirements often decrease due to lack of physical activity; etc. physical injury: more energy required to repair breaks/cuts; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sb-q2b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-10",
+  "conceptId": "sb-q2b",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q2(b)",
+  "questionText": "Having regard to current healthy eating guidelines, set out a menu (3 meals) for one day for a teenager who plays sport.",
+  "stem": "‘Almost 1.5 billion adults around the world are not getting enough exercise.’ (Irish Times, 2018)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Three meals×(two courses2 + beverage2)"
+  },
+  "rows": [
+   {
+    "id": "courses-1",
+    "kind": "criterion",
+    "verbatim": "2 courses",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Breakfast: provide TWO suitable courses for this meal, not every suggested course. Full original breakfast model: Mixed fresh fruit & raspberry yoghurt *** Porridge with full fat milk *** Poached eggs/ wholemeal toast Tea/coffee/water",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "beverage-1",
+    "kind": "criterion",
+    "verbatim": "beverage",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Breakfast: provide ONE suitable beverage for the SAME meal. Full original paired model: Mixed fresh fruit & raspberry yoghurt *** Porridge with full fat milk *** Poached eggs/ wholemeal toast Tea/coffee/water"
+   },
+   {
+    "id": "courses-2",
+    "kind": "criterion",
+    "verbatim": "2 courses",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Lunch: provide TWO suitable courses for this meal, not every suggested course. Full original lunch model: Tuna and pasta salad *** Strawberry smoothie *** Mixed nuts Water",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "beverage-2",
+    "kind": "criterion",
+    "verbatim": "beverage",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Lunch: provide ONE suitable beverage for the SAME meal. Full original paired model: Tuna and pasta salad *** Strawberry smoothie *** Mixed nuts Water"
+   },
+   {
+    "id": "courses-3",
+    "kind": "criterion",
+    "verbatim": "2 courses",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Dinner: provide TWO suitable courses for this meal, not every suggested course. Full original dinner model: Vegetable soup & brown bread *** Chicken curry & brown rice *** Apple & blackberry crumble with natural yoghurt Milk/water",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "beverage-3",
+    "kind": "criterion",
+    "verbatim": "beverage",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Dinner: provide ONE suitable beverage for the SAME meal. Full original paired model: Vegetable soup & brown bread *** Chicken curry & brown rice *** Apple & blackberry crumble with natural yoghurt Milk/water"
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "taskGroups": [
+   {
+    "sourceCardId": "he-2019-ol-sb-q2b-meal-1",
+    "label": "Breakfast",
+    "marks": 6,
+    "rowIds": [
+     "courses-1",
+     "beverage-1"
+    ]
+   },
+   {
+    "sourceCardId": "he-2019-ol-sb-q2b-meal-2",
+    "label": "Lunch",
+    "marks": 6,
+    "rowIds": [
+     "courses-2",
+     "beverage-2"
+    ]
+   },
+   {
+    "sourceCardId": "he-2019-ol-sb-q2b-meal-3",
+    "label": "Dinner",
+    "marks": 6,
+    "rowIds": [
+     "courses-3",
+     "beverage-3"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2019-ol-sb-q2c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sb-q2c",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q2(c)",
+  "questionText": "In relation to energy: (i) outline the importance of balancing energy intake and energy output (ii) explain basal metabolic rate (BMR).",
+  "stem": "‘Almost 1.5 billion adults around the world are not getting enough exercise.’ (Irish Times, 2018)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Balancing energy4 + BMR4 + one additional4"
+  },
+  "rows": [
+   {
+    "id": "balance",
+    "kind": "criterion",
+    "verbatim": "balancing energy",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Balancing energy intake and energy output: if energy intake exceeds energy output people gain weight; excess energy converted to fat and stored as adipose tissue; energy output exceeds energy intake people loose weight; to maintain the correct weight; etc."
+   },
+   {
+    "id": "bmr",
+    "kind": "criterion",
+    "verbatim": "BMR",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Basal metabolic rate: is the minimum amount of energy required to maintain body functions when at rest; to keep internal organs working; to maintain body temperature; measured 12 hours after eating; when person is warm and completely at rest; determined by body weight, age, gender; etc."
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "1 other point",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "One ADDITIONAL point from either required category. Both printed roman asks share this single tariff; no 6/6 split is printed. Balancing energy intake and energy output: if energy intake exceeds energy output people gain weight; excess energy converted to fat and stored as adipose tissue; energy output exceeds energy intake people loose weight; to maintain the correct weight; etc. Basal metabolic rate: is the minimum amount of energy required to maintain body functions when at rest; to keep internal organs working; to maintain body temperature; measured 12 hours after eating; when person is warm and completely at rest; determined by body weight, age, gender; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sb-q3a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sb-q3a",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q3(a)",
+  "questionText": "Give an account of (i) the nutritive value and (ii) the dietetic value of cheese.",
+  "stem": "‘In Ireland our farmhouse cheeses are unique to each producer.’ (www.bordbia.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Two nutritive4 + two dietetic4 + one additional4"
+  },
+  "rows": [
+   {
+    "id": "nutritive",
+    "kind": "criterion",
+    "verbatim": "nutritive value",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8
+    ],
+    "contextNote": "Nutritive value: source of HBV protein, essential amino acid for growth/repair of body cells; lacks carbohydrate; saturated fat for heat/energy; calcium for strong bones and teeth; vitamin A for healthy eyes; vitamin D which combines with calcium; vitamin B for release of energy; cheddar cheese contains salt; soft cheeses contain a high percentage of water; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "dietetic",
+    "kind": "criterion",
+    "verbatim": "dietetic value",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8
+    ],
+    "contextNote": "Dietetic value: lacks carbohydrate, serve with food rich in carbohydrates; important in the diet of children; high energy, high calorie food; versatile; can be difficult to digest; high saturated fat content; can be made from low fat milk; soft cheeses should be avoided by pregnant women to avoid the risk of food poisoning; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "1 other",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "One ADDITIONAL point from either category. The two original roman asks share 20 marks; no fixed 10/10 split. Nutritive value: source of HBV protein, essential amino acid for growth/repair of body cells; lacks carbohydrate; saturated fat for heat/energy; calcium for strong bones and teeth; vitamin A for healthy eyes; vitamin D which combines with calcium; vitamin B for release of energy; cheddar cheese contains salt; soft cheeses contain a high percentage of water; etc. Dietetic value: lacks carbohydrate, serve with food rich in carbohydrates; important in the diet of children; high energy, high calorie food; versatile; can be difficult to digest; high saturated fat content; can be made from low fat milk; soft cheeses should be avoided by pregnant women to avoid the risk of food poisoning; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sb-q3bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-3",
+  "conceptId": "sb-q3bi",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q3(b)(i)",
+  "questionText": "Outline: three different culinary uses of cheese",
+  "stem": "‘In Ireland our farmhouse cheeses are unique to each producer.’ (www.bordbia.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "culinary uses",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "Culinary uses: sandwiches; snacks; baking; pastry; fillings for savoury and sweet dishes; sauces; desserts; cheeseboards; as a main ingredient in a dish; dips; fondue; to add flavour to dishes; toppings; garnishes; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sb-q3bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-3",
+  "conceptId": "sb-q3bii",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q3(b)(ii)",
+  "questionText": "Outline: the effects of heat on cheese.",
+  "stem": "‘In Ireland our farmhouse cheeses are unique to each producer.’ (www.bordbia.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "effects of heat",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "Effects of heat: colour changes; protein coagulates/denatures; protein shrinks; fat melts, separates and becomes stringy; if overcooked it becomes tough and indigestible; little change in nutritive value; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sb-q3c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sb-q3c",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q3(c)",
+  "questionText": "State three reasons for the growing popularity of farmhouse cheeses in Ireland.",
+  "stem": "‘In Ireland our farmhouse cheeses are unique to each producer.’ (www.bordbia.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "reasons",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12
+    ],
+    "contextNote": "Available in local markets; provides local employment; different varieties available; family run businesses; high standards of hygiene; better quality; less processing; can be perceived to be more nutritious; promoted by TV chefs; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sb-q4a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-0",
+  "conceptId": "sb-q4a",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q4(a)",
+  "questionText": "Explain how each of the following would influence an individual when choosing a family home: • availability • location • trends in housing development.",
+  "stem": "‘Buying a house is one of the biggest financial decisions that a person can make in their lifetime.’ (www.daft.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Three required housing influences6 [0,4,6]"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "criterion",
+    "verbatim": "Availability",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     4,
+     6
+    ],
+    "contextNote": "Availability: money available; rental costs have increased, buying could be cheaper; high demand in urban areas; social housing; private housing; apartments; local authority housing lists; disability access; etc."
+   },
+   {
+    "id": "heading-2",
+    "kind": "criterion",
+    "verbatim": "Location",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     4,
+     6
+    ],
+    "contextNote": "Location: proximity to work, schools, shops, crèche; local amenities in area; rural or urban area; proximity to family, friends; etc."
+   },
+   {
+    "id": "heading-3",
+    "kind": "criterion",
+    "verbatim": "Trends in housing development",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     4,
+     6
+    ],
+    "contextNote": "Trends in housing development: housing estates offer a range of house types; green open spaces; walled entrances; amenities; move away from single house developments; development of small gated estates; buying old houses for refurbishment; redevelopment of inner city houses; environmentally friendly houses; apartment living; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sb-q4bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sb-q4bi",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q4(b)(i)",
+  "questionText": "In relation to insurance: state three advantages of household insurance",
+  "stem": "‘Buying a house is one of the biggest financial decisions that a person can make in their lifetime.’ (www.daft.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "advantages",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12
+    ],
+    "contextNote": "Provides peace of mind; protects assets e.g. valuables; protection against loss or injury due to burglary; fires; flooding; security; public liability included; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sb-q4bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sb-q4bii",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q4(b)(ii)",
+  "questionText": "In relation to insurance: outline two factors to be considered when choosing household insurance.",
+  "stem": "‘Buying a house is one of the biggest financial decisions that a person can make in their lifetime.’ (www.daft.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points; original steps [0, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "factors",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8
+    ],
+    "contextNote": "Value for money; is the company secure; cost to insure your home for the amount it would cost to rebuild it; insure the contents for the amount it would cost to replace them; all risks policy cover; discounts available if the house has an alarm; monitored alarm; smoke detector; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sb-q4c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-5",
+  "conceptId": "sb-q4c",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q4(c)",
+  "questionText": "Describe three ways to reduce pollution to promote a cleaner environment.",
+  "stem": "‘Buying a house is one of the biggest financial decisions that a person can make in their lifetime.’ (www.daft.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "ways",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12
+    ],
+    "contextNote": "Use renewable energy resources; avoid products with CFC’s; choose pump action/ozone friendly products; use smokeless fuels; use public transport; use hybrid/electric cars; walk or cycle; buy energy efficient appliances; use phosphate free detergents; implement efficient sewage treatment system; reduce, reuse, recycle; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sb-q5ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-0",
+  "conceptId": "sb-q5ai",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q5(a)(i)",
+  "questionText": "Describe each of the following functions of the family: • economic function • educational function • physical function • social function.",
+  "stem": "‘Family plays a crucial role in modern society.’ (www.betterhelp.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "All FOUR required family functions4"
+  },
+  "rows": [
+   {
+    "id": "function-1",
+    "kind": "criterion",
+    "verbatim": "Economic",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Economic: support children until they reach the age of 18 or 23 if in fulltime education; both parents may work; large families may work together as an economic unit; working families pay taxes and spend money in the economy; contribute to the county’s economy; etc."
+   },
+   {
+    "id": "function-2",
+    "kind": "criterion",
+    "verbatim": "Educational",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Educational: family is primary educator; beliefs and customs are passed from parents to children; should provide a stimulating environment; may teach children to read; demonstrate an interest in schoolwork by attending parent/teacher meetings; supervising homework; encouraging children around exams; provide praise, helping child to reach their full potential; etc."
+   },
+   {
+    "id": "function-3",
+    "kind": "criterion",
+    "verbatim": "Physical",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Physical: provides basic needs e.g. food, clothes, shelter; protects vulnerable members by providing a safe environment; procreation/reproduction; etc."
+   },
+   {
+    "id": "function-4",
+    "kind": "criterion",
+    "verbatim": "Social",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Social: teaches social norms; what is acceptable in society; respect; teaching right from wrong; children learn how to behave in a socially acceptable way; through imitation and observation; children need consistent discipline to help them develop a set of values; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sb-q5aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-0",
+  "conceptId": "sb-q5aii",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q5(a)(ii)",
+  "questionText": "Explain how the state assists with one family function.",
+  "stem": "‘Family plays a crucial role in modern society.’ (www.betterhelp.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 points; original steps [0, 1, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "state assists",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     4
+    ],
+    "contextNote": "Physical: social welfare allowances; HSE e.g. public health nurse; Community Mothers and Family Support Programmes; etc. Emotional: Parent Plus Programmes; Parent & Toddler Groups; etc. Social: pre-school, primary, secondary school; judicial system; etc. Educational: pre-school; Early Childhood Care and Education Scheme (ECCE); primary and post primary schools; ISA’s; special schools; HEAR; DARE; etc. Economic: social welfare; Disability & Carers Allowance; Back to School Clothing and Footwear Allowance; Child Benefit; Working family Payment (FIS); etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sb-q5b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-0",
+  "conceptId": "sb-q5b",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q5(b)",
+  "questionText": "Outline the importance of good communication within the family.",
+  "stem": "‘Family plays a crucial role in modern society.’ (www.betterhelp.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 5]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "communication",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     12,
+     15
+    ],
+    "contextNote": "Communication in the form of praise and encouragement can help self-esteem; family members will learn how others feel about issues; allows people to express their feelings; can help prevent stress; is necessary to ensure each person is heard; helps child to form relationships; helps in socialisation of the child; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sb-q5c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-1",
+  "conceptId": "sb-q5c",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 OL Section B Q5(c)",
+  "questionText": "Explain three ways of dealing with conflict between adolescents and adults.",
+  "stem": "‘Family plays a crucial role in modern society.’ (www.betterhelp.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 5]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "ways",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     12,
+     15
+    ],
+    "contextNote": "Avoid confrontation; communicate – talk; listen; compromise; take time out to calm down; ability to empathise, understand each other’s point of view; respect all points of view; both sides should have a clear understanding of what is expected; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sc-q1ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1ai",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E1 Q1(a)(i)",
+  "questionText": "Discuss three environmental factors that could influence a person’s choice of house style.",
+  "stem": "‘There are a number of ways to make buildings blend in with their environment.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 5]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "environmental factors",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     12,
+     15
+    ],
+    "contextNote": "Large/velux windows to maximise light; stone walls to blend in with environment; solar panels for heating/hot water; roofs/window frames in colours complimenting the local colour; shape and size of house to fit in with surroundings; split level to blend in with the gradient of the site; landscaped garden for aesthetically pleasing house; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2019-ol-sc-q1-house",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2019-ol-sc-q1aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1aii",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E1 Q1(a)(ii)",
+  "questionText": "Elaborate on how each of the following influence house design: • family requirements (present and future) • energy efficiency • technological developments • cost.",
+  "stem": "‘There are a number of ways to make buildings blend in with their environment.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "All FOUR required house-design influences5"
+  },
+  "rows": [
+   {
+    "id": "influence-1",
+    "kind": "criterion",
+    "verbatim": "Family requirements",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     5
+    ],
+    "contextNote": "Explain this REQUIRED influence. Family requirements: sufficient space for all family members; families with young children will need greater outdoor space; space for people with disabilities; ‘granny’ flat attached to house; etc."
+   },
+   {
+    "id": "influence-2",
+    "kind": "criterion",
+    "verbatim": "Energy efficiency",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     5
+    ],
+    "contextNote": "Explain this REQUIRED influence. Energy efficiency: double or treble glazed windows with low emissivity glass; insulation in walls, roof and doors; zoned heating system; use of renewable energy sources; use of thermostats, timers and energy efficient appliances; etc."
+   },
+   {
+    "id": "influence-3",
+    "kind": "criterion",
+    "verbatim": "Technological developments",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     5
+    ],
+    "contextNote": "Explain this REQUIRED influence. Technological developments: use of easy to clean stain resistant materials; sensor lighting; centralised vacuum cleaner system; thermostatic controls; monitored security system; electronic gates; integrated sound and lighting system; use of smart technology; etc."
+   },
+   {
+    "id": "influence-4",
+    "kind": "criterion",
+    "verbatim": "Cost",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     5
+    ],
+    "contextNote": "Explain this REQUIRED influence. Cost: the larger the house the greater the cost; site may need to be purchased; certain design features will add to the cost; landscaping; natural stone external walls are more expensive than plaster finish; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sc-q1aiii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1aiii",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E1 Q1(a)(iii)",
+  "questionText": "List the steps to follow to obtain planning permission to build a house.",
+  "stem": "‘There are a number of ways to make buildings blend in with their environment.’",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 points; original steps [0, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "steps",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     3,
+     6,
+     9,
+     12,
+     15
+    ],
+    "contextNote": "Original historical 2019 planning procedure and application fee: Pre-planning meeting - what will be allowed in an area; architectural drawings showing building plans, materials to be used; notice in local paper; site notice near the proposed entrance; submit application to local authority; application fee €65.00; site map; application goes on planning register; can be inspected by the general public; planning officials visit site; local authority will inform applicant of decision; permission granted or refused; seek further clarification; if permission is refused an appeal can be lodged with An Bord Pleanala; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sc-q1bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-5",
+  "conceptId": "sc-q1bi",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E1 Q1(b)(i)",
+  "questionText": "Discuss three factors that should be considered when planning a lighting system for an open plan family kitchen/living room.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 4, 6]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "factors",
+    "marks": 18,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12,
+     14,
+     16,
+     18
+    ],
+    "contextNote": "Function of room; sufficient light to avoid eye strain; amount of natural light entering the room; use of both natural and artificial light; colour of the walls/furniture; size of room; ambience of room; focal point of room; mix of direct and indirect light; flexibility e.g. dimmer switches/moveable lamps; CFL/LED lighting to save energy; lighting to create different moods; avoiding glare; safety; easy maintenance; ease of access to replace bulbs; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sc-q1bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-5",
+  "conceptId": "sc-q1bii",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E1 Q1(b)(ii)",
+  "questionText": "Give details of two contemporary (modern) lighting developments suitable for a home.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Two developments×(name3 + matching details3)"
+  },
+  "rows": [
+   {
+    "id": "name-1",
+    "kind": "criterion",
+    "verbatim": "Name",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     3
+    ],
+    "contextNote": "Name different lighting development 1 of TWO. Original choices: Sensor and motion activated lights; recess ceiling lights; rise and fall lights; ceramic and plaster-based wall lights; under counter and cabinet lights; picture display lights; LED lighting; CFL lighting; track lighting; spot lights; chandeliers; colour changing lighting; LED rope lighting; outdoor lighting with photovoltaic cells; outdoor lights; use of smart technology to turn on/off lights; etc."
+   },
+   {
+    "id": "details-1",
+    "kind": "criterion",
+    "verbatim": "Details",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Give details for the SAME selected development 1. The original source lists choices without detailed model accounts; none are invented. Sensor and motion activated lights; recess ceiling lights; rise and fall lights; ceramic and plaster-based wall lights; under counter and cabinet lights; picture display lights; LED lighting; CFL lighting; track lighting; spot lights; chandeliers; colour changing lighting; LED rope lighting; outdoor lighting with photovoltaic cells; outdoor lights; use of smart technology to turn on/off lights; etc."
+   },
+   {
+    "id": "name-2",
+    "kind": "criterion",
+    "verbatim": "Name",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     3
+    ],
+    "contextNote": "Name different lighting development 2 of TWO. Original choices: Sensor and motion activated lights; recess ceiling lights; rise and fall lights; ceramic and plaster-based wall lights; under counter and cabinet lights; picture display lights; LED lighting; CFL lighting; track lighting; spot lights; chandeliers; colour changing lighting; LED rope lighting; outdoor lighting with photovoltaic cells; outdoor lights; use of smart technology to turn on/off lights; etc."
+   },
+   {
+    "id": "details-2",
+    "kind": "criterion",
+    "verbatim": "Details",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Give details for the SAME selected development 2. The original source lists choices without detailed model accounts; none are invented. Sensor and motion activated lights; recess ceiling lights; rise and fall lights; ceramic and plaster-based wall lights; under counter and cabinet lights; picture display lights; LED lighting; CFL lighting; track lighting; spot lights; chandeliers; colour changing lighting; LED rope lighting; outdoor lighting with photovoltaic cells; outdoor lights; use of smart technology to turn on/off lights; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "taskGroups": [
+   {
+    "sourceCardId": "he-2019-ol-sc-q1bii-light-1",
+    "label": "Lighting development 1",
+    "marks": 6,
+    "rowIds": [
+     "name-1",
+     "details-1"
+    ]
+   },
+   {
+    "sourceCardId": "he-2019-ol-sc-q1bii-light-2",
+    "label": "Lighting development 2",
+    "marks": 6,
+    "rowIds": [
+     "name-2",
+     "details-2"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2019-ol-sc-q1ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-5",
+  "conceptId": "sc-q1ci",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E1 Q1(c)(i)",
+  "questionText": "Name and describe one type of heating system for a new house. Refer to: • type of heating system • fuel/energy source • efficiency and convenience.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name3 + type4 + fuel4 + efficiency/convenience4"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "criterion",
+    "verbatim": "Name",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     3
+    ],
+    "contextNote": "Choose ONE heating system consistently throughout all four criteria. Original complete and name-only choices: Type: full central heating: heats the whole house from a central source, wet and dry systems; etc. partial central heating: heats one area of the house; usually from a central point; requires another heat source; etc. background heating: heats the whole house at a lower temperature; must be supplemented with other heating source; etc. local heating: heats one room only with a local heater; etc. passive solar heating: uses natural heat from the sun to heat south and west facing rooms; large glass windows fitted; etc. active solar heating: uses the heat of the sun to heat home and water using solar panels; etc. underfloor heating: geothermal heat pumps use the consent temperature of the ground or water several feet below earth surface as a source of heating; etc. Air to water heat exchanger; etc."
+   },
+   {
+    "id": "type",
+    "kind": "criterion",
+    "verbatim": "type of heating system",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Describe the SAME selected system; no additional model is invented for Air to water heat exchanger, which is accepted by name only. Type: full central heating: heats the whole house from a central source, wet and dry systems; etc. partial central heating: heats one area of the house; usually from a central point; requires another heat source; etc. background heating: heats the whole house at a lower temperature; must be supplemented with other heating source; etc. local heating: heats one room only with a local heater; etc. passive solar heating: uses natural heat from the sun to heat south and west facing rooms; large glass windows fitted; etc. active solar heating: uses the heat of the sun to heat home and water using solar panels; etc. underfloor heating: geothermal heat pumps use the consent temperature of the ground or water several feet below earth surface as a source of heating; etc. Air to water heat exchanger; etc."
+   },
+   {
+    "id": "fuel",
+    "kind": "criterion",
+    "verbatim": "fuel/energy source",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "State a fuel/energy source appropriate to the SAME selected system. Complete original pool, without invented system/fuel pairings: Fuel/energy source: oil; gas; electricity; solid fuel; solar power; etc."
+   },
+   {
+    "id": "efficiency",
+    "kind": "criterion",
+    "verbatim": "efficiency and convenience",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Explain efficiency/convenience appropriate to the SAME selected system. Select matching guidance from the original pool: Efficiency and convenience: all rooms achieve the same level of thermal comfort; easy to operate; easy to install; can heat water; causes little harm to the environment; can be activated using a smart phone; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sc-q1cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-5",
+  "conceptId": "sc-q1cii",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E1 Q1(c)(ii)",
+  "questionText": "Explain three benefits of using timers and/or thermostats in a heating system.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 5]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "benefits",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     12,
+     15
+    ],
+    "contextNote": "Choose ANY THREE timer and/or thermostat benefits; no fixed category quota. Timers: can switch on the heating at predetermined times; ensures room is warm when required; less energy is wasted; heating is automatically turned on and off; can be used with a smart phone; etc. Thermostats: automatically regulates temperature; will help save energy; allows greater control of home’s temperature; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sc-q2ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2ai",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E2 Q2(a)(i)",
+  "questionText": "Comment on the suitability of the leisure wear as shown above. Refer to: • comfort • aesthetic appeal • shape.",
+  "stem": "With so many more people taking part in leisure activities, manufacturers have become increasingly fashion conscious.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Two required points3 for EACH comfort/aesthetic appeal/shape"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "criterion",
+    "verbatim": "Comfort",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     6
+    ],
+    "contextNote": "Comfort: loose fitting tops; leggings easy to put on; suitable for all types of exercise; lycra material allowing for ease of movement; absorbs perspiration; keeps body cool during exercise; shorts suitable for warm weather; hairband to keep hair away from eyes; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "heading-2",
+    "kind": "criterion",
+    "verbatim": "Aesthetic appeal",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     6
+    ],
+    "contextNote": "Aesthetic appeal: appeal to younger people; may not suit all shapes and sizes; colours; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "heading-3",
+    "kind": "criterion",
+    "verbatim": "Shape",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     6
+    ],
+    "contextNote": "Shape: tight fitting leggings and tops; sleeveless for ease of movement; longer leggings are flattering; high and low-neck shape to suit different people; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2019-ol-sc-q2-leisure",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2019-ol-sc-q2aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2aii",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E2 Q2(a)(ii)",
+  "questionText": "Sketch and describe a leisure wear jacket to complement the outfits.",
+  "stem": "With so many more people taking part in leisure activities, manufacturers have become increasingly fashion conscious.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 7,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Sketch3 [0,1,3] + matching description4 [0,2,4]"
+  },
+  "rows": [
+   {
+    "id": "sketch",
+    "kind": "criterion",
+    "verbatim": "Sketch",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ],
+    "contextNote": "Sketch: clearly labelled, should show detail of design features, i.e. line; shape; proportion; harmony; may include fabric, colour; etc."
+   },
+   {
+    "id": "description",
+    "kind": "criterion",
+    "verbatim": "Description",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Description: colour; design; line; proportion; shape; pockets; type of neckline; sleeves; zips; fabric; fabric finish; accessories; etc. Accept description on sketch."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2019-ol-sc-q2-leisure",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2019-ol-sc-q2b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-7",
+  "conceptId": "sc-q2b",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E2 Q2(b)",
+  "questionText": "Write a profile of a fabric made from manufactured fibres under the following headings: • fibre production • properties • fabric construction technique.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "One profile: two production3 + three properties1 + two construction3"
+  },
+  "rows": [
+   {
+    "id": "production",
+    "kind": "criterion",
+    "verbatim": "fibre production",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     6
+    ],
+    "contextNote": "Write ONE coherent Viscose fabric profile throughout. Viscose (rayon fibre): chemical process, cellulose becomes more soluble; shredded (white crumb) easier to process; aged using chemicals; placed in drum of chemicals to give characteristic yellow colour; crumb dissolved in caustic soda; viscose - allowed to stand to ripen; filtered to remove undissolved materials; forced through a spinneret; wet spinning – filament forced through a liquid to set; dry spinning – warm air dries the filament; continuous filament produced; cut into staple fibre; spun into yarn; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "properties",
+    "kind": "criterion",
+    "verbatim": "properties",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Three properties of the SAME selected fabric. Viscose: drapes well; highly absorbent; soft; comfortable to wear; dyes well; becomes weak when wet; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "id": "construction",
+    "kind": "criterion",
+    "verbatim": "fabric construction technique",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     6
+    ],
+    "contextNote": "Explain a construction technique appropriate to the SAME selected fabric across two points. Both original weaving and knitting models are available; there is no requirement to describe both. Fabric construction technique: Weaving: warp stretched on a loom; weft passed over and under warp from one side to another; as the weft threads come down the outside edges of the warp threads a selvedge edge is formed which prevents fraying; etc. Knitting: made up of a series of interlocking loops that result in a flexible construction; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "answerVariants": [
+   {
+    "id": "fabric-1",
+    "label": "Viscose",
+    "rows": [
+     {
+      "id": "production",
+      "kind": "criterion",
+      "verbatim": "fibre production",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       6
+      ],
+      "contextNote": "Write ONE coherent Viscose fabric profile throughout. Viscose (rayon fibre): chemical process, cellulose becomes more soluble; shredded (white crumb) easier to process; aged using chemicals; placed in drum of chemicals to give characteristic yellow colour; crumb dissolved in caustic soda; viscose - allowed to stand to ripen; filtered to remove undissolved materials; forced through a spinneret; wet spinning – filament forced through a liquid to set; dry spinning – warm air dries the filament; continuous filament produced; cut into staple fibre; spun into yarn; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "properties",
+      "kind": "criterion",
+      "verbatim": "properties",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Three properties of the SAME selected fabric. Viscose: drapes well; highly absorbent; soft; comfortable to wear; dyes well; becomes weak when wet; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "construction",
+      "kind": "criterion",
+      "verbatim": "fabric construction technique",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       6
+      ],
+      "contextNote": "Explain a construction technique appropriate to the SAME selected fabric across two points. Both original weaving and knitting models are available; there is no requirement to describe both. Fabric construction technique: Weaving: warp stretched on a loom; weft passed over and under warp from one side to another; as the weft threads come down the outside edges of the warp threads a selvedge edge is formed which prevents fraying; etc. Knitting: made up of a series of interlocking loops that result in a flexible construction; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fabric-2",
+    "label": "Nylon",
+    "rows": [
+     {
+      "id": "production",
+      "kind": "criterion",
+      "verbatim": "fibre production",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       6
+      ],
+      "contextNote": "Write ONE coherent Nylon fabric profile throughout. Nylon: two chemicals called monomers are mixed in a 1:1 ratio; heated creating a long chain polymer; fibre is run onto a water-cooling revolving wheel, which cools the ribbon; drawn through a cold water tank where it solidifies; cut into chips; dried; melted; extruded from a small hole; solidify into nylon yard for spinning; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "properties",
+      "kind": "criterion",
+      "verbatim": "properties",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Three properties of the SAME selected fabric. Nylon: drapes well; light to wear; strong; crease resistant; easy to dye; mildew resistant; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "construction",
+      "kind": "criterion",
+      "verbatim": "fabric construction technique",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       6
+      ],
+      "contextNote": "Explain a construction technique appropriate to the SAME selected fabric across two points. Both original weaving and knitting models are available; there is no requirement to describe both. Fabric construction technique: Weaving: warp stretched on a loom; weft passed over and under warp from one side to another; as the weft threads come down the outside edges of the warp threads a selvedge edge is formed which prevents fraying; etc. Knitting: made up of a series of interlocking loops that result in a flexible construction; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fabric-3",
+    "label": "Acetate",
+    "rows": [
+     {
+      "id": "production",
+      "kind": "criterion",
+      "verbatim": "fibre production",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       6
+      ],
+      "contextNote": "Write ONE coherent Acetate fabric profile throughout. The original source accepts this fibre by name only; no production model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "properties",
+      "kind": "criterion",
+      "verbatim": "properties",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Three properties of the SAME selected fabric. No property model is printed or invented for this additional selected fabric.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "construction",
+      "kind": "criterion",
+      "verbatim": "fabric construction technique",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       6
+      ],
+      "contextNote": "Explain a construction technique appropriate to the SAME selected fabric across two points. Both original weaving and knitting models are available; there is no requirement to describe both. Fabric construction technique: Weaving: warp stretched on a loom; weft passed over and under warp from one side to another; as the weft threads come down the outside edges of the warp threads a selvedge edge is formed which prevents fraying; etc. Knitting: made up of a series of interlocking loops that result in a flexible construction; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fabric-4",
+    "label": "tri-acetate",
+    "rows": [
+     {
+      "id": "production",
+      "kind": "criterion",
+      "verbatim": "fibre production",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       6
+      ],
+      "contextNote": "Write ONE coherent tri-acetate fabric profile throughout. The original source accepts this fibre by name only; no production model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "properties",
+      "kind": "criterion",
+      "verbatim": "properties",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Three properties of the SAME selected fabric. No property model is printed or invented for this additional selected fabric.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "construction",
+      "kind": "criterion",
+      "verbatim": "fabric construction technique",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       6
+      ],
+      "contextNote": "Explain a construction technique appropriate to the SAME selected fabric across two points. Both original weaving and knitting models are available; there is no requirement to describe both. Fabric construction technique: Weaving: warp stretched on a loom; weft passed over and under warp from one side to another; as the weft threads come down the outside edges of the warp threads a selvedge edge is formed which prevents fraying; etc. Knitting: made up of a series of interlocking loops that result in a flexible construction; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fabric-5",
+    "label": "Polyester",
+    "rows": [
+     {
+      "id": "production",
+      "kind": "criterion",
+      "verbatim": "fibre production",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       6
+      ],
+      "contextNote": "Write ONE coherent Polyester fabric profile throughout. The original source accepts this fibre by name only; no production model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "properties",
+      "kind": "criterion",
+      "verbatim": "properties",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Three properties of the SAME selected fabric. No property model is printed or invented for this additional selected fabric.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "construction",
+      "kind": "criterion",
+      "verbatim": "fabric construction technique",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       6
+      ],
+      "contextNote": "Explain a construction technique appropriate to the SAME selected fabric across two points. Both original weaving and knitting models are available; there is no requirement to describe both. Fabric construction technique: Weaving: warp stretched on a loom; weft passed over and under warp from one side to another; as the weft threads come down the outside edges of the warp threads a selvedge edge is formed which prevents fraying; etc. Knitting: made up of a series of interlocking loops that result in a flexible construction; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fabric-6",
+    "label": "Acrylic",
+    "rows": [
+     {
+      "id": "production",
+      "kind": "criterion",
+      "verbatim": "fibre production",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       6
+      ],
+      "contextNote": "Write ONE coherent Acrylic fabric profile throughout. The original source accepts this fibre by name only; no production model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "properties",
+      "kind": "criterion",
+      "verbatim": "properties",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Three properties of the SAME selected fabric. No property model is printed or invented for this additional selected fabric.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "construction",
+      "kind": "criterion",
+      "verbatim": "fabric construction technique",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       6
+      ],
+      "contextNote": "Explain a construction technique appropriate to the SAME selected fabric across two points. Both original weaving and knitting models are available; there is no requirement to describe both. Fabric construction technique: Weaving: warp stretched on a loom; weft passed over and under warp from one side to another; as the weft threads come down the outside edges of the warp threads a selvedge edge is formed which prevents fraying; etc. Knitting: made up of a series of interlocking loops that result in a flexible construction; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fabric-7",
+    "label": "Another valid manufactured fabric",
+    "rows": [
+     {
+      "id": "production",
+      "kind": "criterion",
+      "verbatim": "fibre production",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       6
+      ],
+      "contextNote": "Write ONE coherent Another valid manufactured fabric fabric profile throughout. The source leaves valid alternatives open; no further production model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "id": "properties",
+      "kind": "criterion",
+      "verbatim": "properties",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "contextNote": "Three properties of the SAME selected fabric. No property model is printed or invented for this additional selected fabric.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 1,
+        "permittedMarks": [
+         0,
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "construction",
+      "kind": "criterion",
+      "verbatim": "fabric construction technique",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       6
+      ],
+      "contextNote": "Explain a construction technique appropriate to the SAME selected fabric across two points. Both original weaving and knitting models are available; there is no requirement to describe both. Fabric construction technique: Weaving: warp stretched on a loom; weft passed over and under warp from one side to another; as the weft threads come down the outside edges of the warp threads a selvedge edge is formed which prevents fraying; etc. Knitting: made up of a series of interlocking loops that result in a flexible construction; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 3,
+        "permittedMarks": [
+         0,
+         1,
+         3
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2019-ol-sc-q2ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2ci",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E2 Q2(c)(i)",
+  "questionText": "Discuss three points to be considered when selecting commercial patterns.",
+  "stem": "‘Sales of patterns for both sewing and knitting have soared by 60% in recent years.’ (www.the guardian.co.uk)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 1, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "points",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9
+    ],
+    "contextNote": "Beginners should choose a simple pattern with few darts or seams; select easy to use/ simple to sew ranges; pattern size for skirts or pants is determined by hip measurement; dress, shirt, coat, jacket size is determined by bust or chest size; personal preference; cost; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sc-q2cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2cii",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E2 Q2(c)(ii)",
+  "questionText": "Explain the importance of one item of information found on a commercial pattern envelope.",
+  "stem": "‘Sales of patterns for both sewing and knitting have soared by 60% in recent years.’ (www.the guardian.co.uk)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points; original steps [0, 1, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "information",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     6
+    ],
+    "contextNote": "Explain the importance of ONE selected pattern-envelope information item across two points; do not require two different items. Complete source choices: Standard body measurements; fabric quantity needed for each style and size; front and back views of the garments; finished garment measurements; advice for using plaids or diagonal fabrics; suggested fabrics; notions, button size, zipper length; extra requirements, interfacing, lining and trimmings; number of pattern pieces; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sc-q3ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-10",
+  "conceptId": "sc-q3ai",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E3 Q3(a)(i)",
+  "questionText": "Explain adult and second‐chance education.",
+  "stem": "‘The numbers enrolled in higher education have been steadily increasing in recent years.’ (www.education.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points; original steps [0, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "adult and second-chance education",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Explain this combined concept across TWO points; the source does not allocate one point to each term separately. Aims to promote a culture of lifelong learning; creating opportunities for adults of all ages/ educational levels to go back to education; gain skills within a flexible learning environment; gain new qualifications; to improve skills for a career change; to keep up with technological advances in the workplace; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sc-q3aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-10",
+  "conceptId": "sc-q3aii",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E3 Q3(a)(ii)",
+  "questionText": "Discuss four reasons for the increase in the number of students availing of third level education.",
+  "stem": "‘The numbers enrolled in higher education have been steadily increasing in recent years.’ (www.education.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points; original steps [0, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "reasons",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12,
+     14,
+     16
+    ],
+    "contextNote": "Families can afford to send children to college; students/parents value college education as a means of getting a well-paying job; wide range of courses available; colleges may be local to students; motivation; stimulation; DARE; HEAR; SUSI; TAP - TCD Access Programme; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sc-q3aiii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-10",
+  "conceptId": "sc-q3aiii",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E3 Q3(a)(iii)",
+  "questionText": "Outline four ways education prepares a young person for work.",
+  "stem": "‘The numbers enrolled in higher education have been steadily increasing in recent years.’ (www.education.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points; original steps [0, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "ways",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12,
+     14,
+     16
+    ],
+    "contextNote": "Literacy skills; numeracy skills; computer skills; develop qualities - respect for authority; punctuality; trustworthiness; responsibility; self-discipline; socialisation skills; work experience; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sc-q3aiv",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3aiv",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E3 Q3(a)(iv)",
+  "questionText": "How does the Protection of Young Persons (Employment) Act, 1996 protect the rights of young workers?",
+  "stem": "‘The numbers enrolled in higher education have been steadily increasing in recent years.’ (www.education.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "protects",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12
+    ],
+    "contextNote": "Original historical 2019 source account of the 1996 Act: Protects the health of young workers; regulates the hours young people can work; regulates ages young people can work at; regulates rest breaks; holidays and days off; minimum wage must be paid to young people; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sc-q3bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-11",
+  "conceptId": "sc-q3bi",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E3 Q3(b)(i)",
+  "questionText": "Outline three benefits to the family of having more leisure time.",
+  "stem": "Shorter working hours have resulted in increased leisure time.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 5]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "benefits",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     12,
+     15
+    ],
+    "contextNote": "Helps relax and unwind from stresses of daily life; assists mental well-being; improves physical health; furthers social interaction; encourages positive relationships; assist the development of new skills; develops creative skills; improves self-esteem; encourages family bonding; improves communication and teamwork; alleviates boredom; good examples for children; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sc-q3bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-11",
+  "conceptId": "sc-q3bii",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E3 Q3(b)(ii)",
+  "questionText": "Discuss how leisure activities help the development of the individual. Refer to: • physical development • social development • emotional development.",
+  "stem": "Shorter working hours have resulted in increased leisure time.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Required physical/social/emotional accounts5 EACH"
+  },
+  "rows": [
+   {
+    "id": "development-1",
+    "kind": "criterion",
+    "verbatim": "Physical",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     5
+    ],
+    "contextNote": "Physical: improve physical strength; muscle mass; control weight, prevent obesity; fresh air strengthens the immune system; develops hand eye co-ordination; weight bearing exercises help prevent osteoporosis; etc."
+   },
+   {
+    "id": "development-2",
+    "kind": "criterion",
+    "verbatim": "Social",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     5
+    ],
+    "contextNote": "Social: team-based activities - meet new people, making new friends; develop cooperation/ communication skills; strengthens relationships in families; team sports develop leadership skills; gain confidence; develop listening skills; improve memory; etc."
+   },
+   {
+    "id": "development-3",
+    "kind": "criterion",
+    "verbatim": "Emotional",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     5
+    ],
+    "contextNote": "Emotional: self-esteem and confidence are improved; may provide opportunity to relax and reduce stress; give a sense of belonging when part of a team; can encourage positive emotional development; benefit mental health and reduce risk of depression; lead to a sense of pride in one’s achievements; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sc-q3ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3ci",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E3 Q3(c)(i)",
+  "questionText": "Outline three reasons why poverty continues to be a feature of Irish society.",
+  "stem": "‘In Ireland today 780,000 people are living in poverty, a quarter of a million of whom are children.’ (Social Justice Ireland, 2018)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; original steps [0, 2, 5]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "reasons",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     12,
+     15
+    ],
+    "contextNote": "Increased cost of housing; shortage of social housing; large families experience greater costs and expenses; one-parent families, one income households; high rates of unemployment; social problems, alcohol, drugs, gambling; lack of education; low paid jobs; cycle of poverty; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-ol-sc-q3cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3cii",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 OL Section C E3 Q3(c)(ii)",
+  "questionText": "Name and give details of one voluntary organisation that helps families who are experiencing poverty.",
+  "stem": "‘In Ireland today 780,000 people are living in poverty, a quarter of a million of whom are children.’ (Social Justice Ireland, 2018)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "One organisation name3 + three matching details4"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "point",
+    "verbatim": "St. Vincent de Paul",
+    "marks": 3
+   },
+   {
+    "id": "details",
+    "kind": "criterion",
+    "verbatim": "Details",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12
+    ],
+    "contextNote": "Give THREE details about the SAME named organisation. St. Vincent de Paul: provides for the most vulnerable members in a community; gives financial assistance to people in need; provides person to person contact to discuss problems; members visit needy families; do shopping for the elderly; provide housing; holiday breaks; homework clubs; hostels and social housing projects; care for the homeless; day care centres for older people; education grants; fund raising; charity shops; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2019 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "answerVariants": [
+   {
+    "id": "organisation-1",
+    "label": "St. Vincent de Paul",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "St. Vincent de Paul",
+      "marks": 3
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "Details",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Give THREE details about the SAME named organisation. St. Vincent de Paul: provides for the most vulnerable members in a community; gives financial assistance to people in need; provides person to person contact to discuss problems; members visit needy families; do shopping for the elderly; provide housing; holiday breaks; homework clubs; hostels and social housing projects; care for the homeless; day care centres for older people; education grants; fund raising; charity shops; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "organisation-2",
+    "label": "Simon Community",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Simon Community",
+      "marks": 3
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "Details",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Give THREE details about the SAME named organisation. Simon Community: provides support; emergency shelter – temporary accommodation; rough sleeper team; soup kitchens/soup runs; addiction treatment options; assistance with food and clothes; provides counselling and education services; social clubs; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "organisation-3",
+    "label": "Focus Ireland",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Focus Ireland",
+      "marks": 3
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "Details",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Give THREE details about the SAME named organisation. Focus Ireland: provides services for people who are homeless or at risk of homelessness; provide tenancy supports; provides training in personal and life skills; information on job opportunities; provides drop in coffee shops, emergency accommodation; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "organisation-4",
+    "label": "Lions Club",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Lions Club",
+      "marks": 3
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "Details",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Give THREE details about the SAME named organisation. This organisation is accepted by name only; no detail model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "organisation-5",
+    "label": "Rotary Club",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Rotary Club",
+      "marks": 3
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "Details",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Give THREE details about the SAME named organisation. This organisation is accepted by name only; no detail model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "organisation-6",
+    "label": "Another valid voluntary organisation",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Name ONE valid voluntary organisation helping families experiencing poverty; the source leaves valid alternatives open."
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "Details",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6,
+       8,
+       10,
+       12
+      ],
+      "contextNote": "Give THREE details about the SAME named organisation. No additional detail model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         2,
+         4
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
  }
 ]
