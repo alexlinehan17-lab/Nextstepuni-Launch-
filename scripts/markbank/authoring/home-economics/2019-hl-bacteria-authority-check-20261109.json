@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-11-09T22:50:31.642584+00:00",
+  "archiveUrl": "https://www.examinations.ie/exammaterialarchive/index.php",
+  "currentDownloadUrl": "https://www.examinations.ie/archive/markingschemes/2019/LC098ALP000EV.pdf",
+  "listedFiles": [
+    {
+      "fileid": "LC098ALP000EV.pdf",
+      "labels": [
+        "Higher Level (EV)",
+        "Click Here\r\n                                                     [560KB]"
+      ]
+    },
+    {
+      "fileid": "LC098ALP000IV.pdf",
+      "labels": [
+        "Higher Level (IV)",
+        "Click Here\r\n                                                     [350KB]"
+      ]
+    },
+    {
+      "fileid": "LC098GLP000EV.pdf",
+      "labels": [
+        "Ordinary Level (EV)",
+        "Click Here\r\n                                                     [950KB]"
+      ]
+    },
+    {
+      "fileid": "LC098GLP000IV.pdf",
+      "labels": [
+        "Ordinary Level (IV)",
+        "Click Here\r\n                                                     [1MB]"
+      ]
+    }
+  ],
+  "currentHigherSha256": "c427e9c129a5c14f32444e68fc44b3b67fbe520f91b49f4da5d4a22413fd7699",
+  "reviewedHigherSha256": "c427e9c129a5c14f32444e68fc44b3b67fbe520f91b49f4da5d4a22413fd7699",
+  "byteIdenticalToReviewed": true,
+  "searches": [
+    "site:examinations.ie \"2019\" \"Home Economics\" \"erratum\"",
+    "site:examinations.ie \"2019\" \"LC098ALP000EV\" correction",
+    "site:examinations.ie \"Home Economics\" \"bacteria\" marking 2019"
+  ],
+  "searchResult": "No indexed result returned for these queries; this is not proof that no erratum exists.",
+  "decision": "The disputed 1-mark case remains unassessed unless authoritative clarification is found. No page precedence is inferred.",
+  "sourceReview": "2019-hl-main-review.json",
+  "conflict": {
+    "question": "2019 Higher Section B Q3(b)",
+    "schemePhysicalPages": [
+      12,
+      13
+    ],
+    "page12": "Conditions/source/high-risk foods columns: 2:1:0.",
+    "page13": "The same columns: 2:0.",
+    "scope": "No published page precedence established; name/reproduction remain 0/2. All four complete bacterium profiles, three name-only alternatives and the open valid alternative remain present.",
+    "disputedIntermediateCredit": "Unassessed pending authoritative clarification; no forced zero, invented one or inferred precedence."
+  },
+  "owner": "Coordinator: held numeric source ambiguity and final scoring/release QA."
+}
