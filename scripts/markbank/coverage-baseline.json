@@ -468,19 +468,19 @@
     "refsHash": "7bc73bbdfb897f41"
   },
   "japanese": {
-    "cards": 936,
-    "contentHash": "057cdd5018313d64",
-    "coveragePct": 35.3,
-    "covered": 936,
+    "cards": 997,
+    "contentHash": "d53f4c9d5f908985",
+    "coveragePct": 38.2,
+    "covered": 997,
     "excluded": 0,
-    "leaves": 2650,
-    "open": 1714,
+    "leaves": 2610,
+    "open": 1613,
     "orphans": 0,
     "papers": {
       "count": 66,
       "hash": "daeb2b7e93e3b7f1"
     },
-    "refsHash": "e0b710d347bda473"
+    "refsHash": "953602cff371d33f"
   },
   "latin": {
     "cards": 227,

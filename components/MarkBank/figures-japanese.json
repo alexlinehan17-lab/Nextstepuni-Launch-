@@ -2361,5 +2361,181 @@
         0.612
       ]
     }
+  },
+  "ja-2018-hl-2a": {
+    "src": "/exam-figures/japanese/ja-2018-hl-2a.png",
+    "md5": "cf3c65673e2415d2db6a68f620ee90b9",
+    "alt": "Complete the following table in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.075,
+        0.065,
+        0.95,
+        0.326
+      ]
+    }
+  },
+  "ja-2018-hl-2b": {
+    "src": "/exam-figures/japanese/ja-2018-hl-2b.png",
+    "md5": "6ec7b22701cd3df8b5d699d58ab7580c",
+    "alt": "Circle the correct reading for the following Kanji and write the meaning in English as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.075,
+        0.055,
+        0.97,
+        0.365
+      ]
+    }
+  },
+  "ja-2018-hl-2c": {
+    "src": "/exam-figures/japanese/ja-2018-hl-2c.png",
+    "md5": "bd56f1316e65f15a8817cfc67e935713",
+    "alt": "Insert the correct particle into each blank space below. There may be more than one correct answer.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.075,
+        0.39,
+        0.97,
+        0.9
+      ]
+    }
+  },
+  "ja-2018-hl-3c-1": {
+    "src": "/exam-figures/japanese/ja-2018-hl-3c-1.png",
+    "md5": "1f52e2c68600e13d48f8baccf6fddde2",
+    "alt": "Write the meaning of the following Kanji in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.075,
+        0.065,
+        0.97,
+        0.46
+      ]
+    }
+  },
+  "ja-2018-hl-3c-2": {
+    "src": "/exam-figures/japanese/ja-2018-hl-3c-2.png",
+    "md5": "5f1a52f400a116eff51d2df7f56fe2cb",
+    "alt": "Write the reading of the following Kanji in Hiragana.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.075,
+        0.47,
+        0.97,
+        0.9
+      ]
+    }
+  },
+  "ja-2018-hl-3d-1": {
+    "src": "/exam-figures/japanese/ja-2018-hl-3d-1.png",
+    "md5": "ccd207c935b994f9cfd97f7c3ccf1b62",
+    "alt": "Write the underlined into the negative as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 13,
+      "region": [
+        0.075,
+        0.05,
+        0.97,
+        0.45
+      ]
+    }
+  },
+  "ja-2018-hl-3d-2": {
+    "src": "/exam-figures/japanese/ja-2018-hl-3d-2.png",
+    "md5": "5221ba3ca53e131e460c1c101b19c283",
+    "alt": "Write the correct form of each verb as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 13,
+      "region": [
+        0.075,
+        0.47,
+        0.97,
+        0.91
+      ]
+    }
+  },
+  "ja-2018-hl-4": {
+    "src": "/exam-figures/japanese/ja-2018-hl-4.png",
+    "md5": "44fa641c7e7d3faa2ee56649ac4f3b44",
+    "alt": "Your teacher is collating information on your locality to send to your partner school in Japan. You must contribute a short article in approximately 200 Japanese characters on (a) OR (b).\n(a) おすすめレストラン (Bialann a mholfainn do dhaoine / A restaurant I would recommend)\nCuir freagraí ar na ceisteanna a leanas san áireamh. / Include answers to the following questions.\n(i) どんなレストランですか。\n(ii) どうしておすすめしますか。\nNÓ / OR\n(b) おすすめのところ    (Áit a mholfainn do dhaoine / A place I would recommend)\nCuir freagraí ar na ceisteanna a leanas san áireamh. / Include answers to the following questions.\n(i) どんなところですか。\n(ii) どうしておすすめしますか。",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 14,
+      "region": [
+        0.045,
+        0.025,
+        0.97,
+        0.9
+      ]
+    }
+  },
+  "ja-2018-hl-5": {
+    "src": "/exam-figures/japanese/ja-2018-hl-5.png",
+    "md5": "0950073bf155699af1eeb743a7103265",
+    "alt": "You have just returned from a two week homestay in Japan. Write a thank you email in approximately 320 Japanese characters to your Japanese exchange partner. Include ANY 4 of the following headings.\n1. アイルランドへの帰（かえ）り道（みち） Do thuras ar ais go hÉirinn / Your journey back to\nIreland\n2. ホストファミリーと過（す）ごして、 Na rudaí a thaitin leat faoin teaghlach ar fhan tú leo\nよかったこと                                                       / What you liked about your homestay family\n3. 日本で一番楽（ばんたの）しかったこと                          Na rudaí a thaitin leat sa tSeapáin / What you\nmost enjoyed in Japan\n4. 今のアイルランド天気 An aimsir in Éirinn anois / The weather in Ireland now\n5. 来週学校に行くこと Ag dul ar scoil an tseachtain seo chugainn / Going to\nschool next week\n6. リービングサートの後で、また日本に An aidhm atá agat filleadh ar an tSeapáin i ndiaidh na\n行くプラン                                                           hArdteistiméireachta / Your plan to go back to Japan\nafter the Leaving Cert",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 16,
+      "region": [
+        0.045,
+        0.025,
+        0.97,
+        0.9
+      ]
+    }
+  },
+  "ja-2018-hl-la": {
+    "src": "/exam-figures/japanese/ja-2018-hl-la.png",
+    "md5": "fd5b9617981c6e71a0e7107208f5bc52",
+    "alt": "What type of phone do they have?\nWhen did they get the phone?\nMention two things they like to do on their mobile phone.\nMention one negative aspect of mobile phones or their use.\n1.\n2.\n3.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 2,
+      "region": [
+        0.075,
+        0.18,
+        0.97,
+        0.72
+      ]
+    }
+  },
+  "ja-2018-hl-lb-1-iv": {
+    "src": "/exam-figures/japanese/ja-2018-hl-lb-1-iv.png",
+    "md5": "516477da4c83f00d1f246da5c0da8bbf",
+    "alt": "To enquire, you should call:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 3,
+      "region": [
+        0.52,
+        0.399,
+        0.95,
+        0.48
+      ]
+    }
   }
 }
