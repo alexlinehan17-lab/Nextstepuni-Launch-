@@ -3327,5 +3327,224 @@
     "secondary": "russian-1-0"
    }
   ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC099ALP000BV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "c1-1-i",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "c1-1-ii",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "c1-1-iii",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "c1-2-i",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "c1-2-ii",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "c1-3-i",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "c1-3-ii",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "c1-3-iii",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "c1-4",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "c2-1",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "c2-2",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "c2-3",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "c2-4",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "la1-i",
+    "primary": "russian-3-2"
+   },
+   {
+    "n": "la1-ii",
+    "primary": "russian-3-2"
+   },
+   {
+    "n": "la2-i",
+    "primary": "russian-3-2"
+   },
+   {
+    "n": "la2-ii",
+    "primary": "russian-3-2"
+   },
+   {
+    "n": "sd",
+    "primary": "russian-3-3"
+   },
+   {
+    "n": "gr",
+    "primary": "russian-3-7"
+   },
+   {
+    "n": "se",
+    "primary": "russian-3-8"
+   },
+   {
+    "n": "gw",
+    "primary": "russian-3-9"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC099ALPA00BV.pdf",
+  "paperKey": "aural",
+  "q": [
+   {
+    "n": "l1-1-i",
+    "primary": "russian-0-3",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l1-1-ii",
+    "primary": "russian-0-3",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l1-2-i",
+    "primary": "russian-0-8",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l1-2-ii",
+    "primary": "russian-0-8",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l1-3",
+    "primary": "russian-0-8",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l1-4",
+    "primary": "russian-0-9",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l2-1-i",
+    "primary": "russian-0-11",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l2-1-ii",
+    "primary": "russian-0-3",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l2-2-i",
+    "primary": "russian-0-3",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l2-2-ii",
+    "primary": "russian-0-3",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l2-3",
+    "primary": "russian-0-6",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l2-4",
+    "primary": "russian-0-8",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l3-1",
+    "primary": "russian-0-9",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l3-2",
+    "primary": "russian-0-5",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l3-3",
+    "primary": "russian-0-3",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l3-4-i",
+    "primary": "russian-2-1",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l3-4-ii",
+    "primary": "russian-0-9",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l4-1-i",
+    "primary": "russian-0-1",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l4-1-ii",
+    "primary": "russian-0-5",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l4-2-i",
+    "primary": "russian-0-4",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l4-2-ii",
+    "primary": "russian-0-7",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l4-3-i",
+    "primary": "russian-0-4",
+    "secondary": "russian-1-0"
+   },
+   {
+    "n": "l4-3-ii",
+    "primary": "russian-0-11",
+    "secondary": "russian-1-0"
+   }
+  ]
  }
 ]
