@@ -2,6 +2,7 @@ import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import SessionScreen, { answerLanguageClaimId, marksClaimed, partClaimId, type SessionResponse } from '../components/MarkBank/SessionScreen';
 import { emptyWaysInWork } from '../components/MarkBank/WaysInPanel';
+import { REVIEWED_CARDS as JAPANESE_REVIEWED } from '../components/MarkBank/cards/japanese/reviewed';
 import type { SecQuestionCard } from '../types/markBank';
 
 afterEach(cleanup);
@@ -22,6 +23,23 @@ const fixture = (multiplier: 0 | 0.5 = 0.5): SecQuestionCard => ({
 });
 
 describe('source-defined language credit on point answers', () => {
+  it('grades the actual Japanese two-reason task without inventing model answers', () => {
+    const card = JAPANESE_REVIEWED.find(candidate => candidate.id === 'ja-2026-ol-2d');
+    if (!card || card.kind !== 'question' || !card.rows[0].parts) throw new Error('Missing reviewed two-reason task');
+    const row = card.rows[0];
+    const onGrade = vi.fn();
+    render(<SessionScreen cards={[card]} subjectLabel="Japanese" onGrade={onGrade} onFinish={vi.fn()} onExit={vi.fn()} />);
+    fireEvent.click(screen.getByRole('button', { name: 'Reveal the marking scheme' }));
+    for (const part of row.parts!) {
+      fireEvent.click(screen.getByRole('button', { name: `Award 2 marks for ${part.verbatim} · ${row.verbatim}` }));
+    }
+    fireEvent.click(screen.getByRole('checkbox', { name: `${row.parts![0].verbatim} · ${row.verbatim} answered in another language` }));
+    expect(screen.getByText('(any 2 points, 2 marks each)')).toBeInTheDocument();
+    expect(screen.queryByRole('checkbox', { name: /extraneous material/ })).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Shaky' }));
+    expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({ cardId: card.id, marksClaimed: 3, marksAvailable: 4 }));
+  });
+
   it('adjusts only the named earned answer, keeping half marks and the published steps', () => {
     const card = fixture();
     const claims = { plain: 'yes' as const, stepped: 1, [answerLanguageClaimId('stepped')]: 1 };
