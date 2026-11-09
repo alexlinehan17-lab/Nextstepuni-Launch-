@@ -80,6 +80,8 @@ describe('2018 Higher Home Economics: independently swept original sources', () 
     expect(get('sc-q1bii').taskGroups?.map(g => g.marks)).toEqual([6, 6, 6]);
     for (const text of ['Stone carpeting', 'Marble/travertine', 'Block Parquet', 'Tufted', 'linoleum']) expect(get('sc-q1bii').rows[0].contextNote).toContain(text);
     expect(get('sc-q1ci').rows[0].contextNote).toContain('sustainability of EACH');
+    expect(get('sc-q1ci').rows[0].contextNote).toContain('ANY THREE sources');
+    expect(get('sc-q1ci').rows[0].contextNote).toContain('no required mix of energy-source types or internal mark split');
     expect(get('sc-q1cii').rows[0].contextNote).toContain('No fixed climate/acid-rain/smog quota');
   });
   it('keeps original unsplit fibre tariffs, paired programme profiles and leisure quotas', () => {
