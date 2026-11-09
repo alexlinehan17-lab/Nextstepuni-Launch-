@@ -12,6 +12,7 @@ import { CURRICULUM } from '../curriculum';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import japaneseCrosswalkJson from '../data/examTopics/japanese-local-crosswalk.json';
 import japaneseBaselineJson from './fixtures/japaneseTopicQuestionBaseline.json';
+import ordinary2023Census from '../scripts/markbank/authoring/reviews/japanese-2023-ol-census.json';
 import {
   browseTopicIdsForQuestion,
   subjectAtlasStats,
@@ -140,19 +141,25 @@ describe('Japanese exam-topic registry', () => {
       const live = topicsForPaper('japanese', expected.year, expected.level, expected.lang, expected.fileid);
       expect(live, `${expected.level}|${expected.lang}|${expected.year}|${expected.fileid}`).not.toBeNull();
       expect(live!.paperKey).toBe(expected.paperKey);
-      expect(live!.q.map(question => question.n)).toEqual(expected.questions);
+      // The frozen 1,329 identities remain intact. The independently reviewed
+      // 2023 Ordinary culture response appends one previously omitted task.
+      const culture = ordinary2023Census.tasks.find(task => task.key[0] === '3B')!;
+      const additions = expected.year === 2023 && expected.level === 'ordinary'
+        && expected.fileid === culture.atlas.fileid ? [culture.atlas.questionNumber] : [];
+      expect(additions).toEqual(additions.length ? ['25'] : []);
+      expect(live!.q.map(question => question.n)).toEqual([...expected.questions, ...additions]);
     }
   });
 
-  it('classifies every one of the 1,329 retained local cards explicitly', () => {
+  it('classifies every one of the 1,329 preserved identities and the new source-reviewed culture task explicitly', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'japanese');
     expect(papers).toHaveLength(93);
-    expect(papers.reduce((count, paper) => count + paper.q.length, 0)).toBe(1_329);
+    expect(papers.reduce((count, paper) => count + paper.q.length, 0)).toBe(1_330);
     expect(crosswalk.summary).toMatchObject({
       localPaperVariants: 93,
-      localQuestionMappings: 1_329,
+      localQuestionMappings: 1_330,
       referenceMappedLocalQuestions: 388,
-      retainedLocalQuestions: 941,
+      retainedLocalQuestions: 942,
     });
 
     const validTopicIds = new Set(taxonomy.topics.map(topic => topic.id));
@@ -193,9 +200,9 @@ describe('Japanese exam-topic registry', () => {
     ]);
   });
 
-  it('surfaces all 968 distinct local cards without inflating translations', () => {
+  it('surfaces all 969 distinct local cards without inflating translations', () => {
     expect(subjectAtlasStats('japanese')).toMatchObject({
-      questions: 968,
+      questions: 969,
       topics: 14,
       yearMin: 2010,
       yearMax: 2026,

@@ -1086,5 +1086,149 @@
         0.342
       ]
     }
+  },
+  "ja-2023-ol-1-7": {
+    "src": "/exam-figures/japanese/ja-2023-ol-1-7.png",
+    "md5": "2544d82cb934532dbac478a6398120c2",
+    "alt": "Describe two items in the Xmas Box.\nItem Name Quantity",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 3,
+      "region": [
+        0.52,
+        0.677,
+        0.96,
+        0.79
+      ]
+    }
+  },
+  "ja-2023-ol-2a-1": {
+    "src": "/exam-figures/japanese/ja-2023-ol-2a-1.png",
+    "md5": "7126b48d2f194abc5211e6cbb36f02d4",
+    "alt": "Complete the following table in English.\nBirthday Home prefecture Name of the most famous single\nYonezu Kenshi Lemon\nAimyon Hyougo",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.075,
+        0.064,
+        0.94,
+        0.22
+      ]
+    }
+  },
+  "ja-2023-ol-2b": {
+    "src": "/exam-figures/japanese/ja-2023-ol-2b.png",
+    "md5": "9a80fbca9b4262621749b0fe93b11577",
+    "alt": "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to support your answer as in the example. Answer any five.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.075,
+        0.425,
+        0.94,
+        0.9
+      ]
+    }
+  },
+  "ja-2023-ol-2c": {
+    "src": "/exam-figures/japanese/ja-2023-ol-2c.png",
+    "md5": "1c2069e9def02e69c56419f40a292852",
+    "alt": "Circle the correct meaning (a), (b), (c) or (d) for the following Kanji as in the example. Answer any ten.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 6,
+      "region": [
+        0.075,
+        0.48,
+        0.96,
+        0.9
+      ]
+    }
+  },
+  "ja-2023-ol-2d": {
+    "src": "/exam-figures/japanese/ja-2023-ol-2d.png",
+    "md5": "5d1c9ebe2fdcc0c946d0f3aad3fa06f6",
+    "alt": "Circle the correct particle (a), (b) or (c) below as in the example. Answer any five.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.075,
+        0.06,
+        0.96,
+        0.49
+      ]
+    }
+  },
+  "ja-2023-ol-3c": {
+    "src": "/exam-figures/japanese/ja-2023-ol-3c.png",
+    "md5": "ff27abfba97e16d65ff6592f2fd5731e",
+    "alt": "Change the underlined into the past tense as in the example. Answer any five.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 10,
+      "region": [
+        0.075,
+        0.61,
+        0.96,
+        0.915
+      ]
+    }
+  },
+  "ja-2023-ol-4": {
+    "src": "/exam-figures/japanese/ja-2023-ol-4.png",
+    "md5": "742dd5f83e778aa0cf45034d3ce64db6",
+    "alt": "Insert the missing words from the box below as in the example. A word should be used only once. Answer any ten.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 11,
+      "region": [
+        0.075,
+        0.055,
+        0.97,
+        0.93
+      ]
+    }
+  },
+  "ja-2023-ol-5": {
+    "src": "/exam-figures/japanese/ja-2023-ol-5.png",
+    "md5": "89fa152f68cd533044a99ca0f79ef004",
+    "alt": "Answer ANY 5 of the following 8 questions about your hobbies in Japanese in the spaces provided.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.05,
+        0.04,
+        0.97,
+        0.944
+      ]
+    }
+  },
+  "ja-2023-ol-lb-1-v": {
+    "src": "/exam-figures/japanese/ja-2023-ol-lb-1-v.png",
+    "md5": "a82a494a23980fc3f70fc4517a47b0b7",
+    "alt": "Yumi’s new phone number is:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 3,
+      "region": [
+        0.49,
+        0.47,
+        0.91,
+        0.53
+      ]
+    }
   }
 }
