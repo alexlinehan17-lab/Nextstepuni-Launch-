@@ -88,6 +88,7 @@ import japanese2025OrdinaryCensus from '../scripts/markbank/authoring/reviews/ja
 import japanese2024OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2024-ol-census.json';
 import japanese2023OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2023-ol-census.json';
 import japanese2022HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2022-hl-census.json';
+import japanese2022OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2022-ol-census.json';
 import japanese2023HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2023-hl-census.json';
 import japanese2024HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2024-hl-census.json';
 import japaneseAliases from '../components/MarkBank/cards/japanese/aliases.json';
@@ -1703,7 +1704,9 @@ const japaneseAliasIds = Object.keys(japaneseAliases);
 // original fragments resolving to five complete source-reviewed pools.
 // 2022 Higher: 66 whole tasks, 24 retained IDs, 42 additions and 43
 // original fragments bound to seven complete source-reviewed tasks.
-const japaneseAdditionIds = new Set([japanese2022HigherCensus, japanese2026HigherCensus, japanese2026OrdinaryCensus, japanese2025HigherCensus, japanese2025OrdinaryCensus, japanese2024HigherCensus, japanese2024OrdinaryCensus, japanese2023HigherCensus, japanese2023OrdinaryCensus].flatMap(census => census.tasks.map(task =>
+// 2022 Ordinary: 58 whole tasks, 18 retained IDs, 40 additions and 41
+// original fragments bound to six complete source-reviewed tasks.
+const japaneseAdditionIds = new Set([japanese2022OrdinaryCensus, japanese2022HigherCensus, japanese2026HigherCensus, japanese2026OrdinaryCensus, japanese2025HigherCensus, japanese2025OrdinaryCensus, japanese2024HigherCensus, japanese2024OrdinaryCensus, japanese2023HigherCensus, japanese2023OrdinaryCensus].flatMap(census => census.tasks.map(task =>
   `ja-${census.year}-${census.level}-${task.key.filter(part => part !== null).join('-').toLowerCase()}`)).filter(id => !japaneseLiteralIds.has(id)));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
