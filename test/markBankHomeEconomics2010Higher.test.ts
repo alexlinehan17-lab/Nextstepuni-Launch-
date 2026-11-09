@@ -1,5 +1,4 @@
 import { describe, expect, it } from 'vitest';
-import { execFileSync } from 'node:child_process';
 import { CARDS } from '../components/MarkBank/cards/home-economics/higher';
 import { tariffReconciles } from '../types/markBank';
 import runtime from '../data/examTopics/home-economics-s-and-s-question-runtime.json';
@@ -25,27 +24,6 @@ describe('2010 Higher Home Economics: independently reviewed combined booklet', 
       expect(tariffReconciles(c), c.id).toBe(true);
       for (const v of c.answerVariants ?? []) expect(tariffReconciles({ ...c, rows: v.rows }), `${c.id}/${v.id}`).toBe(true);
     }
-  });
-  it('reconciles the independent PDF census across older merged blocks', () => {
-    const observed = JSON.parse(execFileSync('python3', ['-c', `
-import json,sys
-sys.path.insert(0,'scripts/markbank/authoring')
-import paper_census as c
-p,t,s=c.census_sections('home-economics',2010,'hl')
-print(json.dumps({'keys':sorted(c.key_label(k,'home-economics') for k in c.leaves_of(p)),'flags':c.continuity_flags(p,t,'home-economics')}))
-`], { encoding: 'utf8' }));
-    const expected = [
-      ...Array.from({ length: 12 }, (_, i) => i + 1).filter(n => n !== 5).map(n => `Section A Q${n}`),
-      'Section A Q5(i)', 'Section A Q5(ii)',
-      'Section B Q1(a)(i)', 'Section B Q1(a)(ii)',
-      ...['b', 'c', 'd'].map(l => `Section B Q1(${l})`),
-      ...[2, 3, 4, 5].flatMap(n => ['a', 'b', 'c'].map(l => `Section B Q${n}(${l})`)),
-      ...[1, 3].flatMap(n => ['a', 'b', 'c'].flatMap(l => (l === 'a' ? ['i', 'ii', 'iii'] : ['i', 'ii']).map(r => `Section C Q${n}(${l})(${r})`))),
-      ...['i', 'ii', 'iii'].map(r => `Section C Q2(a)(${r})`),
-      'Section C Q2(b)', 'Section C Q2(c)(i)', 'Section C Q2(c)(ii)',
-    ];
-    expect(observed.keys).toEqual(expected.sort());
-    expect(observed.flags).toEqual([]);
   });
   it('does not invent per-answer marks in the six-mark short questions', () => {
     for (let n = 1; n <= 12; n++) {

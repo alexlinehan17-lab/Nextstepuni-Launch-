@@ -1379,15 +1379,15 @@ def census_sections(subject, year, level, files=None):
                 # A part marker can extract with a stray space, '(C )' in the
                 # 2026 OL Section 2 paper, which hid its (C) under (B).
                 block = re.sub(r'\(([A-H]) \)', r'(\1)', block)
-            if (subject, year, level) == ('home-economics', 2010, 'hl'):
+            if subject == 'home-economics' and year == 2010 and level in ('hl', 'ol'):
                 # The reviewed combined booklet merges its answer rules and
-                # next question into one PDF block. Its quoted B5 follows a
-                # parenthesised tariff; C's long rubric precedes the elective
+                # next question into one PDF block. Quoted B heads follow a
+                # parenthesised tariff or a full stop; C's rubric precedes the elective
                 # in that same block. Preserve source text while exposing
                 # those real boundaries (paper pp2–5, 8–11). This is scoped
-                # to the independently swept sitting, not inferred for others.
+                # to the two independently swept 2010 levels, not other years.
                 block = re.sub(r'(?<=_)\s+(?=\d{1,2}\.\s+)', '\n', block)
-                block = re.sub(r'(?<=\))\s+(?=\d{1,2}\.\s+[A-Z‘])', '\n', block)
+                block = re.sub(r'(?<=[.)])\s+(?=\d{1,2}\.\s+[A-Z‘])', '\n', block)
                 block = re.sub(r'\s+(?=Elective\s+\d\b)', '\n', block)
             # Business short questions can share a PDF block with the previous
             # question's underscore answer rules. Those rules have no sentence
@@ -1400,7 +1400,7 @@ def census_sections(subject, year, level, files=None):
                               r'|\s+(?=\d{1,2}\.\s+\([a-z]\)\s+[A-Z])'
                               r'|(?<=\d)\s+(?=\d{1,2}\.\s+[A-Z][a-z]+\s)', block)
                       if subject == 'business' else block.split('\n')
-                      if (subject, year, level) == ('home-economics', 2010, 'hl') else [block])
+                      if subject == 'home-economics' and year == 2010 and level in ('hl', 'ol') else [block])
             for text in (part for chunk in chunks for part in PP.INLINE_QHEAD.split(chunk)):
                 if subject == 'business':
                     # Roman labels beside empty ruled answer slots are not
@@ -1566,7 +1566,13 @@ def census_sections(subject, year, level, files=None):
             if sh.group(1) != section and (section is None
                                            or sh.group(1) > section) \
                     and (section is None
-                         or any(k[0] == section for k in parts)):
+                         or any(k[0] == section for k in parts)
+                         # Every 2010 Ordinary A ask is a whole question;
+                         # its ruled roman blanks are correctly discarded.
+                         # Those real question stems still establish A before
+                         # B begins. Cover rubrics have no such question stem.
+                         or ((subject, year, level) == ('home-economics', 2010, 'ol')
+                             and any(k[0] == section for k in stems))):
                 section, q, letter, roman = sh.group(1), None, None, None
             # 'Section 2 Applied Business Question 80 marks' is one block —
             # the header AND the headless compulsory question it opens.
@@ -1683,6 +1689,13 @@ def census_sections(subject, year, level, files=None):
         if q is None:
             continue
         if PP.RUBRIC.match(text):
+            continue
+        if (subject, year, level, section, q, letter) == \
+                ('home-economics', 2010, 'ol', 'B', 1, None) \
+                and re.match(r'^\(g\)(?:\s|$)', text):
+            # The source nutrition table prints grams as '(g)' before (a).
+            # These are input units, not a phantom question part (g).
+            stems.setdefault((section, q, None), []).append(text)
             continue
         if (subject, year, level, section, q, letter, roman) == \
                 ('home-economics', 2022, 'ol', 'C', 1, 'c', 'i') \
