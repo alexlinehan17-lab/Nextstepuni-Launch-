@@ -20,4 +20,17 @@ def verify_higher():
  assert actual==set(expected),dict(missing=sorted(set(expected)-actual),unexpected=sorted(actual-set(expected)))
  flags=continuity_flags(parts,texts,'home-economics');assert not flags,flags
  print(json.dumps(dict(level='higher',sourceHashes='verified',expectedSourceLeaves=48,observedSourceLeaves=len(actual),continuityFlags=flags,keys=sorted(actual),reconciliation='48 independent original leaves A12/B17/C19 become49 priced tasks A12/B18/C19,627 marks: B2(b) independently prices toughness factors9 and tenderising methods6 (paper7,scheme11). Coherent protein47 (classification24/complementary8/structure15), microwave26 and family-change30 accounts preserve their printed priced headings. All A tasks retain whole6 without inferred suballocations. All52 original pages visually swept.'),ensure_ascii=False,indent=2))
-if __name__=='__main__':verify_higher()
+def verify_ordinary():
+ from he_review_2014_ol_main import documents as ordinary_documents
+ d=ordinary_documents();assert [len(d[k]) for k in ['paper','scheme']]==[12,36]
+ expected=[f'Section A Q{n}' for n in range(1,13)]
+ expected += [f'Section B Q1({letter})' for letter in 'abcd']
+ expected += [f'Section B Q{n}({letter})' for n in [2,5] for letter in 'abc']
+ expected += [f'Section B Q{n}({part})' for n in [3,4] for part in ['a','b)(i','b)(ii','c']]
+ expected += [f'Section C Q{n}({letter})({roman})' for n in [1,2,3] for letter in 'abc' for roman in (['i','ii','iii'] if letter=='a' else ['i','ii'])]
+ assert len(expected)==len(set(expected))==51
+ parts,texts,_=census_sections('home-economics',2014,'ol');actual={key_label(k,'home-economics') for k in leaves_of(parts)}
+ assert actual==set(expected),dict(missing=sorted(set(expected)-actual),unexpected=sorted(actual-set(expected)))
+ flags=continuity_flags(parts,texts,'home-economics');assert not flags,flags
+ print(json.dumps(dict(level='ordinary',sourceHashes='verified',expectedSourceLeaves=51,observedSourceLeaves=len(actual),continuityFlags=flags,keys=sorted(actual),reconciliation='Independent original leaves and priced tasks both51 A12/B18/C21,627marks. Soup range/evaluation12/12 and pollution names/effects10/10 have separate printed roman labels and tariffs. The second pollution task includes the original naming context and matches one effect to each of the SAME two types without charging again for names. Carbohydrate30, milk20 and leisure20 accounts retain their required/flexible headings. All48 original pages visually swept.'),ensure_ascii=False,indent=2))
+if __name__=='__main__':verify_higher();verify_ordinary()

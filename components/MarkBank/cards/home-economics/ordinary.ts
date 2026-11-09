@@ -19335,4 +19335,1519 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sa-q1", topicId: "home-economics-0-7", conceptId: "sa-q1",
+    section: "A", questionRef: "2014 OL Section A Q1",
+    questionText: "In relation to fats indicate with a tick (✓) whether each of the following statements is true or false.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "statement-1", kind: "point", verbatim: "Fats contain the element nitrogen. — False", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "statement-2", kind: "point", verbatim: "Essential fatty acids are made in the body. — False", marks: null },
+    { id: "statement-3", kind: "point", verbatim: "Omega-3 fatty acids are found in oily fish. — True", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2014-ol-sa-q1",
+          "src": "/exam-figures/home-economics/home-economics-2014-ol-sa-q1.png",
+          "srcHash": "71a9024336039ca2fda622c4789025e8",
+          "alt": "Original fats true/false table, all three full statements and blank True/False columns.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sa-q2", topicId: "home-economics-0-8", conceptId: "sa-q2",
+    section: "A", questionRef: "2014 OL Section A Q2",
+    questionText: "Name the two classes of vitamins and state one example of each class.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "class-1", kind: "point", verbatim: "Water-soluble — B, C.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. One example of this required vitamin class." },
+    { id: "class-2", kind: "point", verbatim: "Fat-soluble — A, D, E, K.", marks: null, contextNote: "One example of this required vitamin class." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2014-ol-sa-q2",
+          "src": "/exam-figures/home-economics/home-economics-2014-ol-sa-q2.png",
+          "srcHash": "068fbaacefb2e1c372406d0d08ca06e2",
+          "alt": "Original two-row vitamin-classification and example table, complete question and paired blank cells.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sa-q3", topicId: "home-economics-0-8", conceptId: "sa-q3",
+    section: "A", questionRef: "2014 OL Section A Q3",
+    questionText: "List two biological functions of iron. Name two good dietary sources of iron.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "function-1", kind: "point", verbatim: "(i) formation of the pigment haemoglobin in the red blood cells; haemoglobin transports oxygen around the body; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY TWO biological functions across the complete source guidance." },
+    { id: "function-2", kind: "point", verbatim: "(ii) iron produces myoglobin which carries oxygen to the muscles; necessary for the efficient functioning of enzymes to release energy from food; etc.", marks: null, contextNote: "Choose ANY TWO biological functions across the complete source guidance." },
+    { id: "source-1", kind: "point", verbatim: "(i) offal e.g. liver, kidney, etc. red meat/meat, meat products, poultry,", marks: null, contextNote: "Choose ANY TWO dietary sources across both printed lists." },
+    { id: "source-2", kind: "point", verbatim: "(ii) eggs, cereals, green vegetables, pulses, fish, etc.", marks: null, contextNote: "Choose ANY TWO dietary sources across both printed lists." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sa-q4", topicId: "home-economics-0-1", conceptId: "sa-q4",
+    section: "A", questionRef: "2014 OL Section A Q4",
+    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "statement-1", kind: "point", verbatim: "Diabetes can be caused by sedentary lifestyles and unhealthy diets. — True", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "statement-2", kind: "point", verbatim: "Bowel disease is caused by eating high fibre foods. — False", marks: null },
+    { id: "statement-3", kind: "point", verbatim: "A person is considered obese when his/her weight is 20% or more above the recommended weight. — True", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2014-ol-sa-q4",
+          "src": "/exam-figures/home-economics/home-economics-2014-ol-sa-q4.png",
+          "srcHash": "400ce4b87813e1cb9ac539f733a803ad",
+          "alt": "Original diet/health true/false table, all three full statements and blank True/False columns.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sa-q5", topicId: "home-economics-0-9", conceptId: "sa-q5",
+    section: "A", questionRef: "2014 OL Section A Q5",
+    questionText: "Tick (✓) which of the following nutrients is not found in cheese. Protein Vitamin C Calcium List two effects of cooking on cheese.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "nutrient", kind: "point", verbatim: "Vitamin C", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "effect-1", kind: "point", verbatim: "(i) there is little loss of nutrients; protein coagulates and shrinks; fat melts; colour changes as cheese browns, but if overcooked carbonises;", marks: null, contextNote: "Choose ANY TWO cooking effects from both source lines." },
+    { id: "effect-2", kind: "point", verbatim: "(ii) overcooked cheese becomes tough and indigestible; overcooking causes the fat to separate; cheese becomes stringy; etc.", marks: null, contextNote: "Choose ANY TWO cooking effects from both source lines." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2014-ol-sa-q5",
+          "src": "/exam-figures/home-economics/home-economics-2014-ol-sa-q5.png",
+          "srcHash": "568ff4c45527b15dd105ec671758a00c",
+          "alt": "Original cheese nutrient tick table, all Protein/Vitamin C/Calcium choices and the complete companion cooking-effects question.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sa-q6", topicId: "home-economics-0-3", conceptId: "sa-q6",
+    section: "A", questionRef: "2014 OL Section A Q6",
+    questionText: "Using the words listed below complete the following statements in relation to the preparation and cooking of meat. denaturation, mincing, collagen [blank] helps to break up the fibres of tougher cuts of meat. During cooking [blank] is converted to gelatine and meat becomes tender. Colour changes from red to brown due to the [blank] of myoglobin.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "blank-1", kind: "point", verbatim: "mincing", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "blank-2", kind: "point", verbatim: "collagen", marks: null },
+    { id: "blank-3", kind: "point", verbatim: "denaturation", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sa-q7", topicId: "home-economics-0-1", conceptId: "sa-q7",
+    section: "A", questionRef: "2014 OL Section A Q7",
+    questionText: "Identify three changes in the eating habits of Irish people in recent years.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "change-1", kind: "point", verbatim: "(i) lifestyle changes; meals tend to be irregular with the main meal in the evening and individual family members often eating at different times;", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY THREE changes from all printed source guidance; no one-per-line quota." },
+    { id: "change-2", kind: "point", verbatim: "(ii) variety of foods available; cooking methods changing, barbecued and microwaved foods regularly form part of the diet; potatoes are replaced by either rice, couscous and pasta; variety of breads available; cost effectiveness;", marks: null, contextNote: "Choose ANY THREE changes from all printed source guidance; no one-per-line quota." },
+    { id: "change-3", kind: "point", verbatim: "(iii) eating habits influenced by other cultures, foreign holidays, TV programmes, immigrants from other countries, holidays; etc. greater nutritional awareness; dash board dining; greater use of convenience foods; different cooking methods; price awareness; etc.", marks: null, contextNote: "Choose ANY THREE changes from all printed source guidance; no one-per-line quota." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sa-q8", topicId: "home-economics-0-11", conceptId: "sa-q8",
+    section: "A", questionRef: "2014 OL Section A Q8",
+    questionText: "Explain the term added value foods. Give two examples of added value foods sold in supermarkets.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "definition", kind: "point", verbatim: "When a raw material is processed resulting in a higher nutritional / economic value food e.g. cheese from milk; to meet the taste / preferences of consumers; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "example-1", kind: "point", verbatim: "(i) cook-chill foods e.g. soup; milk further processed to produce cheese/yoghurt; sliced ham:", marks: null, contextNote: "Choose ANY TWO examples across both source lists." },
+    { id: "example-2", kind: "point", verbatim: "(ii) goats cheese; readymade meals; herb flavoured oils / vinegar; jams; pickles; fruit sauces / spreads; tapenades; salsas; hot chilli sauces; etc.", marks: null, contextNote: "Choose ANY TWO examples across both source lists." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sa-q9", topicId: "home-economics-1-3", conceptId: "sa-q9",
+    section: "A", questionRef: "2014 OL Section A Q9",
+    questionText: "Named below are three parts of a microwave oven. Match each part with the function stated.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "part-1", kind: "point", verbatim: "Changes the electrical energy into microwave energy. — magnetron", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "part-2", kind: "point", verbatim: "Guides the microwaves into the oven. — wave guide", marks: null },
+    { id: "part-3", kind: "point", verbatim: "Rotates to help even cooking of food. — turntable", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2014-ol-sa-q9",
+          "src": "/exam-figures/home-economics/home-economics-2014-ol-sa-q9.png",
+          "srcHash": "6bc03ccd8798e4c4bbc0b243015178aa",
+          "alt": "Original microwave part/function matching question, complete wave guide/turntable/magnetron choice pool and all three function rows.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sa-q10", topicId: "home-economics-1-1", conceptId: "sa-q10",
+    section: "A", questionRef: "2014 OL Section A Q10",
+    questionText: "Explain the term PAYE. Give two examples of how PAYE contributions are used by the government.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "definition", kind: "point", verbatim: "Pay as You Earn; compulsory deduction from an employee’s salary paid to the Revenue Commissioners representing the Government; calculated by the Revenue Commissioners; amount depends on person’s income; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "use-1", kind: "point", verbatim: "(i) capital expenditure - pays public servants e.g. teachers, nurses, guards; etc., providing hospitals, schools; etc.", marks: null, contextNote: "Choose ANY TWO uses across both printed source lists." },
+    { id: "use-2", kind: "point", verbatim: "(ii) constructing and maintaining road networks; transport; communication; heritage; culture; etc.", marks: null, contextNote: "Choose ANY TWO uses across both printed source lists." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sa-q11", topicId: "home-economics-1-4", conceptId: "sa-q11",
+    section: "A", questionRef: "2014 OL Section A Q11",
+    questionText: "Name one natural fibre and one synthetic fibre. Natural Fibre Synthetic Fibre Explain why natural fibres are commonly used in household textiles.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "natural", kind: "point", verbatim: "Natural Fibre — Wool, silk, cotton, linen", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ONE natural fibre." },
+    { id: "synthetic", kind: "point", verbatim: "Synthetic Fibre — Nylon, polyester, lycra, etc.", marks: null, contextNote: "Choose ONE synthetic fibre." },
+    { id: "reason", kind: "point", verbatim: "suitability of purpose; cost; personal choice; aesthetic appeal; fabric properties e.g. absorbency, soft, strong when wet, easy care, resilient, easy to dye; linen can withstand high temperatures; can be made flame retardant, stain resistant; available in a variety of colours; etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2014-ol-sa-q11",
+          "src": "/exam-figures/home-economics/home-economics-2014-ol-sa-q11.png",
+          "srcHash": "f9e72e79ccf11e004870b34d4f6227b5",
+          "alt": "Original natural/synthetic fibre table and complete companion question asking why natural fibres are used in household textiles.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sa-q12", topicId: "home-economics-1-2", conceptId: "sa-q12",
+    section: "A", questionRef: "2014 OL Section A Q12",
+    questionText: "Name one statutory body and one voluntary body / agency concerned with consumer protection. Statutory body Voluntary body / agency",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "body-1", kind: "point", verbatim: "Statutory body: National Consumer Agency; Ombudsman, National Standards Authority of Ireland; The Office of the Financial Regulator; Comhairle (CIC); etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ONE body from this required category. Original historical 2014 classification retained." },
+    { id: "body-2", kind: "point", verbatim: "Voluntary body / agency: Consumer Association of Ireland; Advertising Standards Authority of Ireland; etc.", marks: null, contextNote: "Choose ONE body from this required category. Original historical 2014 classification retained." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sb-q1a", topicId: "home-economics-0-1", conceptId: "sb-q1a",
+    section: "B", questionRef: "2014 OL Section B Q1(a)",
+    stem: "The table below illustrates the carbohydrate, protein and fat content of a range of ready-made meat dishes. (FSAI website)",
+    questionText: "Using the information presented in the table above, state which dish you would recommend for a family meal. Explain three reasons for your choice.",
+    tariffModel: {"kind":"fixed","notation":"Name 3 + reasons 3×5"}, totalMarks: 18,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Beef Lasagne", marks: 3 },
+    { id: "reasons", kind: "criterion", verbatim: "reasons", marks: 15, contextNote: "Three reasons for the SAME chosen meal using the original data table. Original model: Beef Lasagne: meat contains HBV protein for growth and repair; CHO and fat combined for heat and energy; contains iron which is easily absorbed in the body and prevents anaemia; meal suitable for most families; economical if cost is a factor; nutritional balance; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "meal-1",
+                "label": "Beef Lasagne",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Beef Lasagne",
+                            "marks": 3
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "reasons",
+                            "marks": 15,
+                            "permittedMarks": [
+                                  0,
+                                  5,
+                                  10,
+                                  15
+                            ],
+                            "contextNote": "Three reasons for the SAME chosen meal using the original data table. Original model: Beef Lasagne: meat contains HBV protein for growth and repair; CHO and fat combined for heat and energy; contains iron which is easily absorbed in the body and prevents anaemia; meal suitable for most families; economical if cost is a factor; nutritional balance; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "meal-2",
+                "label": "Sweet & Sour Chicken & Rice",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Sweet & Sour Chicken & Rice",
+                            "marks": 3
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "reasons",
+                            "marks": 15,
+                            "permittedMarks": [
+                                  0,
+                                  5,
+                                  10,
+                                  15
+                            ],
+                            "contextNote": "Three reasons for the SAME chosen meal using the original data table. Original model: Sweet & Sour Chicken & Rice: good supply of HBV protein for growth and repair; high CHO content for energy; low in fat, suitable for low fat diet; ease of cooking and serving; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "meal-3",
+                "label": "Cheese Burger",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Cheese Burger",
+                            "marks": 3
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "reasons",
+                            "marks": 15,
+                            "permittedMarks": [
+                                  0,
+                                  5,
+                                  10,
+                                  15
+                            ],
+                            "contextNote": "Three reasons for the SAME chosen meal using the original data table. Original model: Cheese Burger: provides the highest amount of protein necessary for growth and repair; CHO for energy; suitable meal for an active family; low fat content so suitable for low cholesterol / fat diets; cheap to purchase; easy to prepare / cook for a family on a budget; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2014-ol-sb-q1-nutrients",
+          "src": "/exam-figures/home-economics/home-economics-2014-ol-sb-q1-nutrients.png",
+          "srcHash": "e064616228218fe3950d196e52110fad",
+          "alt": "Original three-dish carbohydrate/protein/fat table: Beef Lasagne11.8g/8.1g/8.9g; Sweet & Sour Chicken & Rice20.0g/6.8g/0.4g; Cheese Burger27.1g/14.2g/3.2g. All original headings, dish names and units retained; FSAI attribution remains in the source stem.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sb-q1b", topicId: "home-economics-0-6", conceptId: "sb-q1b",
+    section: "B", questionRef: "2014 OL Section B Q1(b)",
+    stem: "The table below illustrates the carbohydrate, protein and fat content of a range of ready-made meat dishes. (FSAI website)",
+    questionText: "Give an account of carbohydrates under each of the following headings: • classification • dietary sources • functions in the body • properties.",
+    tariffModel: {"kind":"fixed","notation":"Classification 9 + sources 9 + functions 8 + properties 4"}, totalMarks: 30,
+    rows: [
+    { id: "classes", kind: "criterion", verbatim: "classification", marks: 9, contextNote: "Three classes, using either original classification wording; not all six labels. Original source: (9) Monosaccharides, (simple sugars); Disaccharides, (double sugars); Polysaccharides; (complex non-sugars). Sugar; Starch; Cellulose.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    { id: "sources", kind: "criterion", verbatim: "dietary sources", marks: 9, contextNote: "Three sources from the complete original source guidance: Monosaccharides / Disaccharides/Sugars: table sugar, biscuits, cakes, sweets, honey, jams, fruit; etc. Polysaccharides/ Starch: breakfast cereals, potatoes, rice, pasta, root vegetables; etc. Polysaccharides/Cellulose: fruit and vegetables; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    { id: "functions", kind: "criterion", verbatim: "functions in the body", marks: 8, contextNote: "(8) Produce heat and energy; aids peristalsis assisting the movement of food in the intestine; spares protein for growth and repair; excess carbohydrate is converted into glycogen and stored as an energy reserve; excess converted into fat and stored as adipose tissue, which acts as an insulator; fibre absorbs water which gives a feeling of fullness; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "properties", kind: "criterion", verbatim: "properties", marks: 4, contextNote: "The original carbohydrate-property pool includes “assists aeration/foaming (denatures egg protein)”; this source wording is retained without an invented replacement. Original source: (4) Soluble in water; adds flavour; Maillard reaction – browning occurs when sugars and amino acids react when heated; hydrolysis as in digestion; crystallisation; gelatinisation; carmelisation; assists aeration/foaming (denatures egg protein); etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sb-q1c", topicId: "home-economics-0-6", conceptId: "sb-q1c",
+    section: "B", questionRef: "2014 OL Section B Q1(c)",
+    stem: "The table below illustrates the carbohydrate, protein and fat content of a range of ready-made meat dishes. (FSAI website)",
+    questionText: "Outline three ways an individual can ensure an adequate intake of fibre in his/her diet.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "ways", marks: 12, contextNote: "Complete original source guidance: Increase intake of fruit and vegetables; avoid peeling fruit and vegetables; eat with skins on; substitute white bread, pasta with whole meal products, and white rice with brown rice; add seeds, nuts and grains to breakfast cereals, yoghurts, stir fries; add bran to breakfast cereals and homemade breads; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sb-q1d", topicId: "home-economics-1-2", conceptId: "sb-q1d",
+    section: "B", questionRef: "2014 OL Section B Q1(d)",
+    stem: "The table below illustrates the carbohydrate, protein and fat content of a range of ready-made meat dishes. (FSAI website)",
+    questionText: "Discuss how each of the following could influence the consumer when buying fresh fruit and vegetables: • cost • skills • time available for preparation • storage space.",
+    tariffModel: {"kind":"fixed","notation":"4 required headings × 5"}, totalMarks: 20,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "cost", marks: 5, contextNote: "• cost Buy fresh good quality fruit and vegetables in season when they are plentiful and at their cheapest; buy loose as packaging increases the cost; buy both in usable quantities; buy in bulk only if freezer is available or preserves can be made; amount of money available will determine type of fruit and vegetables selected; avail of special offers; buy direct from growers; etc.", permittedMarks: [0,5] },
+    { id: "heading-2", kind: "criterion", verbatim: "skills", marks: 5, contextNote: "• skills Skills of the cook will determine type of fruit and vegetables being selected / purchased; knowledge of cooking methods is also important; peel or scrape vegetables thinly using a sharp knife to avoid waste; peel thinly to minimise the loss of vitamins and minerals especially vitamin C; etc.", permittedMarks: [0,5] },
+    { id: "heading-3", kind: "criterion", verbatim: "time available for preparation", marks: 5, contextNote: "• time available for preparation Eat both raw where / when possible, this will depend on type of vegetable available, e.g. carrots and root vegetables need washing before peeling, chopping or slicing, whereas broccoli / cauliflower require mainly just washing; prepare vegetables shortly before cooking; fruit must be washed to remove any traces of chemicals; time available for preparation will determine the type of fruit and vegetables; use of pre-prepared fruit and vegetables in salads and stir-fry’s; etc.", permittedMarks: [0,5] },
+    { id: "heading-4", kind: "criterion", verbatim: "storage space", marks: 5, contextNote: "• storage space. If vegetables and fruit are stored incorrectly they will deteriorate quickly resulting in loss of flavour, texture and nutritive value; store both in cool, dark, well ventilated larder / cupboard; pack loosely in a vegetable rack or in salad drawer / crisper of the refrigerator; use up products quickly after purchase; storage / layout in shops can influence buying; etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sb-q2a", topicId: "home-economics-0-9", conceptId: "sb-q2a",
+    section: "B", questionRef: "2014 OL Section B Q2(a)",
+    stem: "For most consumers, milk and dairy products form a significant part of a well balanced diet.",
+    questionText: "Give an account of the nutritive value and the dietetic value of milk.",
+    tariffModel: {"kind":"fixed","notation":"Nutritive 5 + dietetic 5 + two others × 5"}, totalMarks: 20,
+    rows: [
+    { id: "nutritive", kind: "criterion", verbatim: "nutritive value", marks: 5, contextNote: "One nutritive point. Original shared guidance: Complete food; easily available; HBV protein for growth and repair; saturated fat; carbohydrate in form of lactose for energy; vitamins A, B, D; minerals: calcium in abundance plus phosphorus – both necessary for strong bones and teeth; traces of magnesium, potassium and sodium; milk contains 87% water; easily digested; relatively cheap; variety of types available; essential for growth so very important in the diets of pregnant women, children and teenagers; can be fortified with minerals, vitamins and omega-3 fatty acids; low fat and skimmed milk available for people on low cholesterol or slimming diets; versatile food with many culinary uses; should be combined with foods rich in starch, fibre, vitamin C and iron in order to balance the diet; etc.", permittedMarks: [0,5] },
+    { id: "dietetic", kind: "criterion", verbatim: "dietetic value", marks: 5, contextNote: "One dietetic point. Original shared guidance: Complete food; easily available; HBV protein for growth and repair; saturated fat; carbohydrate in form of lactose for energy; vitamins A, B, D; minerals: calcium in abundance plus phosphorus – both necessary for strong bones and teeth; traces of magnesium, potassium and sodium; milk contains 87% water; easily digested; relatively cheap; variety of types available; essential for growth so very important in the diets of pregnant women, children and teenagers; can be fortified with minerals, vitamins and omega-3 fatty acids; low fat and skimmed milk available for people on low cholesterol or slimming diets; versatile food with many culinary uses; should be combined with foods rich in starch, fibre, vitamin C and iron in order to balance the diet; etc.", permittedMarks: [0,5] },
+    { id: "other", kind: "criterion", verbatim: "2 others", marks: 10, contextNote: "Two ADDITIONAL points from either heading, with no extra per-heading quota. Original source: Complete food; easily available; HBV protein for growth and repair; saturated fat; carbohydrate in form of lactose for energy; vitamins A, B, D; minerals: calcium in abundance plus phosphorus – both necessary for strong bones and teeth; traces of magnesium, potassium and sodium; milk contains 87% water; easily digested; relatively cheap; variety of types available; essential for growth so very important in the diets of pregnant women, children and teenagers; can be fortified with minerals, vitamins and omega-3 fatty acids; low fat and skimmed milk available for people on low cholesterol or slimming diets; versatile food with many culinary uses; should be combined with foods rich in starch, fibre, vitamin C and iron in order to balance the diet; etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sb-q2b", topicId: "home-economics-0-9", conceptId: "sb-q2b",
+    section: "B", questionRef: "2014 OL Section B Q2(b)",
+    stem: "For most consumers, milk and dairy products form a significant part of a well balanced diet.",
+    questionText: "Explain the difference between whole milk, skimmed milk and fortified milk.",
+    tariffModel: {"kind":"fixed","notation":"3 required types × 4"}, totalMarks: 12,
+    rows: [
+    { id: "type-1", kind: "criterion", verbatim: "Whole milk", marks: 4, contextNote: "Whole milk: full fat milk - 3.5% to 4% fat; milk is pasteurised; is the most popular milk used; etc.", permittedMarks: [0,4] },
+    { id: "type-2", kind: "criterion", verbatim: "Skimmed milk", marks: 4, contextNote: "Skimmed milk: contains 0.1% to 0.4% fat as remainder has been removed; fat soluble vitamins A & D are also removed: suitable for low fat / cholesterol diets; etc.", permittedMarks: [0,4] },
+    { id: "type-3", kind: "criterion", verbatim: "Fortified milk", marks: 4, contextNote: "Fortified milk: full fat, low fat or skimmed milk; nutrients e.g. vitamins A, D, folic acid, mineral calcium, protein, omega 3, etc. have been added; etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sb-q2c", topicId: "home-economics-0-10", conceptId: "sb-q2c",
+    section: "B", questionRef: "2014 OL Section B Q2(c)",
+    stem: "For most consumers, milk and dairy products form a significant part of a well balanced diet.",
+    questionText: "Having regard to current healthy eating guidelines, and the need for teenage girls to increase their intake of calcium, plan a menu (3 meals) for one day for a teenage girl.",
+    tariffModel: {"kind":"fixed","notation":"3 meals × 6"}, totalMarks: 18,
+    rows: [
+    { id: "meal-1", kind: "criterion", verbatim: "Breakfast", marks: 6, contextNote: "One meal in the SAME balanced day for a teenage girl, with the original calcium requirement. Complete original example: Breakfast Orange Juice Wheetabix and Milk Scrambled Egg on Toast Tea/Coffee/Milk/Water", permittedMarks: [0,6] },
+    { id: "meal-2", kind: "criterion", verbatim: "Lunch", marks: 6, contextNote: "One meal in the SAME balanced day for a teenage girl, with the original calcium requirement. Complete original example: Lunch Tuna and Corn Roll Strawberry Yoghurt Water/Tea/Coffee/Juice", permittedMarks: [0,6] },
+    { id: "meal-3", kind: "criterion", verbatim: "Dinner", marks: 6, contextNote: "One meal in the SAME balanced day for a teenage girl, with the original calcium requirement. Complete original example: Dinner Goats Cheese Bruschetta Chicken Stir Fry and Rice Chocolate Roulade Water/Coffee/Tea", permittedMarks: [0,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sb-q3a", topicId: "home-economics-0-3", conceptId: "sb-q3a",
+    section: "B", questionRef: "2014 OL Section B Q3(a)",
+    stem: "Nothing says comfort like a steaming bowl of freshly made soup.",
+    questionText: "Name two classes of homemade soup and give one example of each class.",
+    tariffModel: {"kind":"fixed","notation":"2 pairs × (class 4 + example 3)"}, totalMarks: 14,
+    rows: [
+    { id: "class-1", kind: "anyN", verbatim: "Class", marks: 4, contextNote: "Choose TWO different classes in total.", openList: true, group: {"claimMax":1,"perOption":4,"options":["Thick","Thin","Cold"]} },
+    { id: "example-1", kind: "criterion", verbatim: "Example", marks: 3, contextNote: "One example of the SAME chosen class. Original matching source: Thick — Purées, thickened; Thin — Clear, broths, consommé; Cold — Gazpacho", permittedMarks: [0,3] },
+    { id: "class-2", kind: "anyN", verbatim: "Class", marks: 4, contextNote: "Choose TWO different classes in total.", openList: true, group: {"claimMax":1,"perOption":4,"options":["Thick","Thin","Cold"]} },
+    { id: "example-2", kind: "criterion", verbatim: "Example", marks: 3, contextNote: "One example of the SAME chosen class. Original matching source: Thick — Purées, thickened; Thin — Clear, broths, consommé; Cold — Gazpacho", permittedMarks: [0,3] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2014-ol-sb-q3a-class-1","label":"Class 1","marks":7,"rowIds":["class-1","example-1"]},{"sourceCardId":"he-2014-ol-sb-q3a-class-2","label":"Class 2","marks":7,"rowIds":["class-2","example-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sb-q3bi", topicId: "home-economics-0-3", conceptId: "sb-q3bi",
+    section: "B", questionRef: "2014 OL Section B Q3(b)(i)",
+    stem: "Nothing says comfort like a steaming bowl of freshly made soup.",
+    questionText: "Outline: the range of convenience soups available to the consumer",
+    tariffModel: {"kind":"fixed","notation":"3 types × 4"}, totalMarks: 12,
+    rows: [
+    { id: "types", kind: "anyN", verbatim: "types", marks: 12, openList: true, group: {"claimMax":3,"perOption":4,"options":["(12) dehydrated/packaged","cook-chill","canned/tinned","frozen","soupfulls"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sb-q3bii", topicId: "home-economics-0-3", conceptId: "sb-q3bii",
+    section: "B", questionRef: "2014 OL Section B Q3(b)(ii)",
+    stem: "Nothing says comfort like a steaming bowl of freshly made soup.",
+    questionText: "Outline: the advantages and disadvantages of convenience soups.",
+    tariffModel: {"kind":"fixed","notation":"Advantage 4 + disadvantage 4 + one other 4"}, totalMarks: 12,
+    rows: [
+    { id: "advantage", kind: "criterion", verbatim: "Advantages", marks: 4, contextNote: "Advantages: little preparation time; simple skills required; useful in emergencies; wide variety available; easy to store; etc.", permittedMarks: [0,4] },
+    { id: "disadvantage", kind: "criterion", verbatim: "Disadvantages", marks: 4, contextNote: "Disadvantages: can be expensive for quantity / portion size; some contain artificial colours and flavours; often high salt content and additives; etc.", permittedMarks: [0,4] },
+    { id: "other", kind: "criterion", verbatim: "points", marks: 4, contextNote: "One ADDITIONAL point from either side. Both sides required within THREE total points; no two-per-side quota. Complete source: Advantages: little preparation time; simple skills required; useful in emergencies; wide variety available; easy to store; etc. Disadvantages: can be expensive for quantity / portion size; some contain artificial colours and flavours; often high salt content and additives; etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sb-q3c", topicId: "home-economics-1-2", conceptId: "sb-q3c",
+    section: "B", questionRef: "2014 OL Section B Q3(c)",
+    stem: "Nothing says comfort like a steaming bowl of freshly made soup.",
+    questionText: "Evaluate the role of food labelling in assisting the consumer when purchasing convenience soups.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "food labelling", marks: 12, contextNote: "Complete original source guidance: Name of product; list of ingredients present; quantity in metric measurements; nutritional content; cooking instructions; information on preparing and storage; best before date; manufacturer’s name and address; country of origin; has food or any ingredients used been genetically modified or irradiated; has food been packaged in a modified atmosphere; does food contain nuts or any other allergens; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sb-q4a", topicId: "home-economics-3-3", conceptId: "sb-q4a",
+    section: "B", questionRef: "2014 OL Section B Q4(a)",
+    stem: "Paul and Geraldine are responsible consumers planning to buy a new home.",
+    questionText: "Explain how each of the following could influence Paul and Geraldine when planning to buy their new home: • cost • size and type of house / apartment • location / environment • trends in housing developments.",
+    tariffModel: {"kind":"fixed","notation":"4 required headings × 5"}, totalMarks: 20,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "cost", marks: 5, contextNote: "• cost Money available/income; lending agency fees; legal fees; stamp duty; interest rate; cost of repayments; cost determines size and location; re-sale value of property; etc.", permittedMarks: [0,5] },
+    { id: "heading-2", kind: "criterion", verbatim: "size and type of house / apartment", marks: 5, contextNote: "• size and type of house / apartment Personal preference; suitability of the design for the landscape; energy efficient home; adequate for family size and lifestyle; possibility of attic conversion; sufficient space for all activities, e.g. working from home, patio / garden for leisure, parking; etc. variety of house types available e.g. bungalow, dormer bungalow, two story houses, detached, semi- detached, terraced, town house, apartments, bedsits; etc.", permittedMarks: [0,5] },
+    { id: "heading-3", kind: "criterion", verbatim: "location / environment", marks: 5, contextNote: "• location / environment Environmental factors i.e. shelter, natural light, aspect; proposed developments in areas; value of property in the area; rural or urban, proximity to work, shops, schools; etc. amenities i.e. ESB, water, refuse; etc. transport; local community, neighbours; privacy and security; possible risks i.e. pollution, flooding, power lines, pylons, factories, landfill sites; etc.", permittedMarks: [0,5] },
+    { id: "heading-4", kind: "criterion", verbatim: "trends in housing developments", marks: 5, contextNote: "• trends in housing developments. ‘Custom’ designed, timber frame; developer’s homes i.e. show-houses – very common in urban areas; redevelopment of inner city areas; exclusive houses in small estates; individual houses in suburbs or country; estates with large open greens; walled entrances; security; estates with a mix of housing i.e. detached, semi-detached, terraced, duplex; increase in apartment living - layout may be open plan or traditional style; refurbishing of older homes; etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sb-q4bi", topicId: "home-economics-1-5", conceptId: "sb-q4bi",
+    section: "B", questionRef: "2014 OL Section B Q4(b)(i)",
+    stem: "Paul and Geraldine are responsible consumers planning to buy a new home.",
+    questionText: "Name two different types of pollution that can cause problems for householders.",
+    tariffModel: {"kind":"fixed","notation":"2 names × 5"}, totalMarks: 10,
+    rows: [
+    { id: "types", kind: "anyN", verbatim: "types of pollution", marks: 10, contextNote: "Choose TWO different types.", openList: true, group: {"claimMax":2,"perOption":5,"options":["water","air","noise","light","thermal"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sb-q4bii", topicId: "home-economics-1-5", conceptId: "sb-q4bii",
+    section: "B", questionRef: "2014 OL Section B Q4(b)(ii)",
+    stem: "Paul and Geraldine are responsible consumers planning to buy a new home.\n\nName two different types of pollution that can cause problems for householders.",
+    questionText: "State the effect on the environment of each type of pollution named.",
+    tariffModel: {"kind":"fixed","notation":"1 effect for each of 2 chosen types × 5"}, totalMarks: 10,
+    rows: [
+    { id: "effect-1", kind: "criterion", verbatim: "effect", marks: 5, contextNote: "ONE effect for chosen type 1; use two DIFFERENT pollution types from the preceding original naming task. Each effect must match its own type. Naming is already priced in part(i), with no second name charge here. Complete original source: (1 effect on each type) Air: Effects: acid rain – lowers ph of soil and water harming animal and plant life; corrodes metal and stone; is a threat to historical buildings; global warming; depletion of ozone layer; increase risk of skin cancer; increase in respiratory conditions i.e. asthma, bronchitis; etc. Water: Effects: algae bloom uses up oxygen destroys aquatic life – kills fish; destroys beauty spots; kills birds so species become depleted; harms fishing and impacts on tourist industry; unfit for human consumption; etc. Noise: Effects: anxiety; nightclubs; headaches; irritation; insomnia; tension between neighbours; etc. Thermal: Effects: as sea temperature increases it causes world climate to change; icebergs melt; sea level rises; high tides causing flooding; etc. Light: Effects: intrusive to neighbours; affects nocturnal animals; etc.", permittedMarks: [0,5] },
+    { id: "effect-2", kind: "criterion", verbatim: "effect", marks: 5, contextNote: "ONE effect for chosen type 2; use two DIFFERENT pollution types from the preceding original naming task. Each effect must match its own type. Naming is already priced in part(i), with no second name charge here. Complete original source: (1 effect on each type) Air: Effects: acid rain – lowers ph of soil and water harming animal and plant life; corrodes metal and stone; is a threat to historical buildings; global warming; depletion of ozone layer; increase risk of skin cancer; increase in respiratory conditions i.e. asthma, bronchitis; etc. Water: Effects: algae bloom uses up oxygen destroys aquatic life – kills fish; destroys beauty spots; kills birds so species become depleted; harms fishing and impacts on tourist industry; unfit for human consumption; etc. Noise: Effects: anxiety; nightclubs; headaches; irritation; insomnia; tension between neighbours; etc. Thermal: Effects: as sea temperature increases it causes world climate to change; icebergs melt; sea level rises; high tides causing flooding; etc. Light: Effects: intrusive to neighbours; affects nocturnal animals; etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sb-q4c", topicId: "home-economics-1-5", conceptId: "sb-q4c",
+    section: "B", questionRef: "2014 OL Section B Q4(c)",
+    stem: "Paul and Geraldine are responsible consumers planning to buy a new home.",
+    questionText: "Identify and give details of one initiative aimed at promoting a clean green environment.",
+    tariffModel: {"kind":"fixed","notation":"Name 5 + detail 5"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "anyN", verbatim: "Name", marks: 5, openList: true, group: {"claimMax":1,"perOption":5,"options":["Reduce, Reuse, Recycle","Green Dot","WEEE","Blue Flower Symbol","Plastic Bag Levy","Green Flags","Blue Flags","Tidy Towns"]} },
+    { id: "details", kind: "criterion", verbatim: "Details", marks: 5, contextNote: "One detail for the SAME chosen initiative. Complete original historical source: Reduce, Reuse, Recycle: reduce using packaging; disposable products; reuse shopping bags, plastic containers, newspapers, clothes, ink cartridges; etc. Green Dot: signifies the user has contributed financially to the cost of recovery and recycling of the packaging; etc. WEEE: producers must enable customers to dispose of electrical and electronic equipment by collecting and treating the waste products; etc. Blue Flower Symbol: products within the EU that are environmentally friendly carry the eco-label with a blue flower; the aim of the label is to promote renewable resources and prevent unnecessary waste and energy expenditure i.e. dishwashers, washing machines, detergents, fridges, paint, footwear; etc. Plastic Bag Levy: government environmental levy of 22cents on plastic bags; etc. Green Flags: schools; etc. Blue Flags: beaches; etc. Tidy Towns: maintain clean environment; etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sb-q5a", topicId: "home-economics-2-2", conceptId: "sb-q5a",
+    section: "B", questionRef: "2014 OL Section B Q5(a)",
+    stem: "Different cultures have different marriage customs, with many symbolising the same thing; the couple starting a new life together.",
+    questionText: "Explain three ways in which marriage customs may differ between cultures.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 6"}, totalMarks: 18,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "ways", marks: 18, contextNote: "Complete original source guidance: Arranged Marriages: parents will decide on their child’s spouse based on background and suitability; this type of marriage is popular in the travelling community, Japanese and Sikh cultures; etc. Number of Partners: Monogamy: is the norm in the western world i.e. one husband, one wife; those who marry for a second time without the death or divorce of the first spouse are guilty of bigamy; etc. Polygamy: allows a spouse to have more than one partner, it is illegal in Ireland; etc. Polygyny: allows a man to have more than one wife; etc. Polyandry: allows a woman to have more than one husband; etc. Jewish weddings: are held under a canopy which is symbolic of the couple’s future home; at the end of the ceremony a glass is broken under the groom’s foot to symbolise the destruction of the ancient Jewish temple in Jerusalem to remind the couple that a marriage can also break; etc. Quaker couples: marry at a public gathering without an official in attendance – they believe that God alone makes a couple man and wife; etc. Many wedding customs have been popular for centuries e.g. veils, rings, throwing rice, etc. Location: church, mosque, synagogue, registry office, temporary registration of a hotel, beach, garden, etc. can be obtained; etc.", permittedMarks: [0,6,12,18], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,6]},{"id":"point-3","verbatim":"Point 3","marks":6,"permittedMarks":[0,6]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sb-q5b", topicId: "home-economics-2-2", conceptId: "sb-q5b",
+    section: "B", questionRef: "2014 OL Section B Q5(b)",
+    stem: "Different cultures have different marriage customs, with many symbolising the same thing; the couple starting a new life together.",
+    questionText: "Discuss four conditions required to make a marriage legally valid in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "conditions", marks: 20, contextNote: "Original historical 2014 marriage-condition guidance is retained for this examination task. Complete original source guidance: Three months notice required by registrar of area; 18 years of age (over 16 years with parental / guardian consent); must be voluntary; both people must be free to marry, cannot be married already; partners must not be too closely related; two witnesses must be present; the register must be signed by the couple and witnesses; all marriages must be registered after the ceremony; etc.", permittedMarks: [0,5,10,15,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sb-q5c", topicId: "home-economics-2-2", conceptId: "sb-q5c",
+    section: "B", questionRef: "2014 OL Section B Q5(c)",
+    stem: "Different cultures have different marriage customs, with many symbolising the same thing; the couple starting a new life together.",
+    questionText: "Outline the role of each of the following in relation to marriage preparation: • the school • marriage preparation courses.",
+    tariffModel: {"kind":"fixed","notation":"2 required roles × 6"}, totalMarks: 12,
+    rows: [
+    { id: "role-1", kind: "criterion", verbatim: "the school", marks: 6, contextNote: "• the school In Home Economics students examine roles and responsibilities of partners in marriage; laws relating to marriage; marriage relationships are discussed in SPHE, RSE, Science classes; etc. co-ed schools help develop interpersonal boy / girl relationships: etc.", permittedMarks: [0,6] },
+    { id: "role-2", kind: "criterion", verbatim: "marriage preparation courses", marks: 6, contextNote: "• marriage preparation courses. Provides information about expectations and the reality of marriage commitment; allows couples to examine what marriage consists of, discuss their vision of marriage; gives advice on finance, family planning, communication, conflict resolution, children; etc. Accord and the Marriage and Relationships Counselling Service provide marriage preparation courses; etc.", permittedMarks: [0,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q1ai", topicId: "home-economics-3-5", conceptId: "sc-q1ai",
+    section: "C", questionRef: "2014 OL Section C E1 Q1(a)(i)",
+    stem: "The diagrams below show a meter box and miniature circuit breakers. Meter Box Miniature Circuit Breakers",
+    questionText: "Explain how electricity enters the home. Include reference to the meter box and the miniature circuit breakers.",
+    tariffModel: {"kind":"fixed","notation":"Meter box 6 + circuit breakers 6 + one other 6"}, totalMarks: 18,
+    rows: [
+    { id: "meter", kind: "criterion", verbatim: "meter box", marks: 6, contextNote: "One reference to the meter box. Original shared source: Electricity flows through a supply / service cable into a sealed fuse box; a meter records the amount/consumption of electricity used; the electricity then flows to the main fuse box which contains the mains switch and miniature circuit breakers for a number of different circuits within the home i.e. sockets, lights; etc. each circuit has its own fuse; in modern household installations fuses have been replaced by MCB’s which work on the same principle as fuses i.e. when a fault occurs in an appliance the MCB switches off the current; when the problem is located and solved the MCB can be reset by flicking it to the upward position; etc.", permittedMarks: [0,6] },
+    { id: "breakers", kind: "criterion", verbatim: "miniature circuit breakers", marks: 6, contextNote: "One reference to the miniature circuit breakers. Original shared source: Electricity flows through a supply / service cable into a sealed fuse box; a meter records the amount/consumption of electricity used; the electricity then flows to the main fuse box which contains the mains switch and miniature circuit breakers for a number of different circuits within the home i.e. sockets, lights; etc. each circuit has its own fuse; in modern household installations fuses have been replaced by MCB’s which work on the same principle as fuses i.e. when a fault occurs in an appliance the MCB switches off the current; when the problem is located and solved the MCB can be reset by flicking it to the upward position; etc.", permittedMarks: [0,6] },
+    { id: "other", kind: "criterion", verbatim: "1 other", marks: 6, contextNote: "One ADDITIONAL point about electricity entering the home, with no fixed two-per-heading quota. Original source: Electricity flows through a supply / service cable into a sealed fuse box; a meter records the amount/consumption of electricity used; the electricity then flows to the main fuse box which contains the mains switch and miniature circuit breakers for a number of different circuits within the home i.e. sockets, lights; etc. each circuit has its own fuse; in modern household installations fuses have been replaced by MCB’s which work on the same principle as fuses i.e. when a fault occurs in an appliance the MCB switches off the current; when the problem is located and solved the MCB can be reset by flicking it to the upward position; etc.", permittedMarks: [0,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2014-ol-sc-q1-electricity",
+          "src": "/exam-figures/home-economics/home-economics-2014-ol-sc-q1-electricity.png",
+          "srcHash": "411ae988b598d6c524d966a40c8e9512",
+          "alt": "Both original electricity-supply pictures, complete Meter Box and Miniature Circuit Breakers, with their original captions.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q1aii", topicId: "home-economics-3-5", conceptId: "sc-q1aii",
+    section: "C", questionRef: "2014 OL Section C E1 Q1(a)(ii)",
+    stem: "The diagrams below show a meter box and miniature circuit breakers. Meter Box Miniature Circuit Breakers",
+    questionText: "In relation to electricity explain each of the following: • fuse • kilowatt per hour (kWh) • voltage.",
+    tariffModel: {"kind":"fixed","notation":"3 required terms × 4"}, totalMarks: 12,
+    rows: [
+    { id: "term-1", kind: "criterion", verbatim: "fuse", marks: 4, contextNote: "• fuse Safety device; used in electrical appliances; deliberate weak link in the electrical circuit which will melt cutting off electricity when a fault occurs or if too much current passes through it; fuses are colour coded indicating their amperage; etc.", permittedMarks: [0,4] },
+    { id: "term-2", kind: "criterion", verbatim: "kilowatt per hour (kWh)", marks: 4, contextNote: "The paper and scheme print “kilowatt per hour (kWh)”. The original term and source explanation are retained as printed. • kilowatt per hour (kWh) A kilowatt is a unit of electricity which equals a 1000 watts; a kWh is the amount of electricity used by an appliance per hour of operation; etc.", permittedMarks: [0,4] },
+    { id: "term-3", kind: "criterion", verbatim: "voltage", marks: 4, contextNote: "• voltage. A measure of electrical force/pressure necessary to drive the electric current along; Irish voltage is 230 volts; etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q1aiii", topicId: "home-economics-3-5", conceptId: "sc-q1aiii",
+    section: "C", questionRef: "2014 OL Section C E1 Q1(a)(iii)",
+    stem: "The diagrams below show a meter box and miniature circuit breakers. Meter Box Miniature Circuit Breakers",
+    questionText: "Outline four guidelines for the safe use of electricity in the home.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "guidelines", marks: 20, contextNote: "Complete original source guidance: Never mix electricity and water; do not use electrical appliances in the bathroom except shaver sockets; use pull cords for light switches; purchase only electrical appliances that carry recognised safety symbols; avoid overuse of adaptors and extension cables; check electric blankets for sign of wear; do not pull flexes across cooker hob or sink; repair damaged flexes; avoid trailing flexes; unplug appliances before cleaning them; replace broken plugs or sockets; check plugs are correctly wired; always read manufacturer’s instructions and follow with care; keep electric heaters away from curtains; etc.", permittedMarks: [0,5,10,15,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q1bi", topicId: "home-economics-3-3", conceptId: "sc-q1bi",
+    section: "C", questionRef: "2014 OL Section C E1 Q1(b)(i)",
+    stem: "Amenities are as important as good quality housing and need to be in place early in the life of a new community.",
+    questionText: "Discuss the provision of amenities in new housing developments.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "amenities", marks: 12, contextNote: "Complete original source guidance: Schools – depend on number of children in area; transport links, roads / footpaths, etc. properly finished; street lighting – sensor controlled and operate when light is insufficient; refuse collections – bin or bags; play areas for children – green open spaces must be included in all new housing developments; shops; sporting facilities – some developments include community centres / sports complex; child minding facilities / crèche; library; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q1bii", topicId: "home-economics-3-3", conceptId: "sc-q1bii",
+    section: "C", questionRef: "2014 OL Section C E1 Q1(b)(ii)",
+    stem: "Amenities are as important as good quality housing and need to be in place early in the life of a new community.",
+    questionText: "Give details of the housing requirements for each of the following: • a young single person • a retired couple • a family with young children.",
+    tariffModel: {"kind":"fixed","notation":"3 required households × 6"}, totalMarks: 18,
+    rows: [
+    { id: "household-1", kind: "criterion", verbatim: "a young single person", marks: 6, contextNote: "• a young single person Requires less space than a family; often prefers urban lifestyle; some like to commute, depending on access to public transport; entertainment facilities; apartment /bedsit / town house; renting on own or sharing a house can be an alternative to buying a property; proximity to work or college; internet/broadband; etc.", permittedMarks: [0,6] },
+    { id: "household-2", kind: "criterion", verbatim: "a retired couple", marks: 6, contextNote: "• a retired couple Single story compact accommodation; chairlift may be necessary; good lighting to avoid falls; security; alarmed communication system; downstairs bathroom, non-slip surface in bathroom and kitchen; handrails, adapted taps; easy to use heating system; small garden or patio – easy maintenance; etc.", permittedMarks: [0,6] },
+    { id: "household-3", kind: "criterion", verbatim: "a family with young children", marks: 6, contextNote: "• a family with young children. Depends on size and composition of family; proximity to schools; etc. older children like their own personal space; storage space – lockers, wardrobes, hot press for clothes; living room with books / internet / broadband; playroom for toys; garage or shed for bicycles; well equipped, ventilated, adequately lit and spacious kitchen; living room for relaxing /TV viewing; etc., enclosed garden, patio, decking for play; etc.", permittedMarks: [0,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q1ci", topicId: "home-economics-3-5", conceptId: "sc-q1ci",
+    section: "C", questionRef: "2014 OL Section C E1 Q1(c)(i)",
+    stem: "Good natural lighting in the home saves electricity, decreases eye strain and makes people feel better physically and psychologically.",
+    questionText: "Describe three ways by which the amount of natural light entering a home may be maximised (increased).",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "ways", marks: 15, contextNote: "Complete original source guidance: Positioning, size and number of windows; aspect of the house; colour scheme; use of glass bricks and skylights; high ceilings; cut down trees blocking natural light; avoid using net curtains or roller/venetian blinds; use of clear glass instead of frosted glass; placing of furniture; reflective surfaces; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q1cii", topicId: "home-economics-3-5", conceptId: "sc-q1cii",
+    section: "C", questionRef: "2014 OL Section C E1 Q1(c)(ii)",
+    stem: "Good natural lighting in the home saves electricity, decreases eye strain and makes people feel better physically and psychologically.",
+    questionText: "Give an account of the factors that should be taken into account when planning the lighting system for a teenager’s study bedroom.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 15, contextNote: "Complete original source guidance: Use CFL’s for economy; sufficient light to avoid eye strain; have study / desk lamp and strip lighting over the bed; have recessed lights for overall lighting; amount of natural light entering the room; aspect of room; colour of walls, furniture and soft furnishings; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q2ai", topicId: "home-economics-3-8", conceptId: "sc-q2ai",
+    section: "C", questionRef: "2014 OL Section C E2 Q2(a)(i)",
+    stem: "The first impression you make on a potential employer is the most important one, that is why it is important to dress professionally for an interview regardless of the work environment.",
+    questionText: "Sketch and describe a two piece outfit suitable to wear for a job interview.",
+    tariffModel: {"kind":"fixed","notation":"Sketch 6 + description 2×3"}, totalMarks: 12,
+    rows: [
+    { id: "sketch", kind: "criterion", verbatim: "Sketch", marks: 6, contextNote: "The original scheme gives criteria but no model drawing. Draw the SAME two-piece interview outfit described below. Original criteria: Sketch: should show detail of design features i.e. line, shape, proportion, harmony, etc. be clearly labelled, may include fabric colour; etc.", permittedMarks: [0,6] },
+    { id: "description", kind: "criterion", verbatim: "Description", marks: 6, contextNote: "Two description points for the SAME two-piece outfit. No full model outfit is supplied. Original criteria: Description: colour; design; line; proportion; shape; pockets; seams; type of neckline; sleeves; fabric; fabric finishes / properties; accessories i.e. belt; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q2aii", topicId: "home-economics-3-8", conceptId: "sc-q2aii",
+    section: "C", questionRef: "2014 OL Section C E2 Q2(a)(ii)",
+    stem: "The first impression you make on a potential employer is the most important one, that is why it is important to dress professionally for an interview regardless of the work environment.\n\nSketch and describe a two piece outfit suitable to wear for a job interview.",
+    questionText: "Suggest a suitable fabric for the outfit and give a reason for your choice.",
+    tariffModel: {"kind":"fixed","notation":"Fabric 3 + reason 3"}, totalMarks: 6,
+    rows: [
+    { id: "fabric", kind: "anyN", verbatim: "Fabric", marks: 3, contextNote: "Choose one fabric suitable for the SAME preceding interview outfit.", openList: true, group: {"claimMax":1,"perOption":3,"options":["cotton","linen","light wool","silk","polyester","acrylic"]} },
+    { id: "reason", kind: "criterion", verbatim: "Reason", marks: 3, contextNote: "Give one reason matching the SAME chosen fabric and outfit. The original fabric/reason lists are unpaired; no exact pairings have been invented. Original reason guidance: durable; strong; washable; drapes well; conducts heat giving a ‘cool’ feel; dyes well; has good lustre due to its natural wax content; available in many colours; warm; resilient; soft; etc.", permittedMarks: [0,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q2aiii", topicId: "home-economics-3-8", conceptId: "sc-q2aiii",
+    section: "C", questionRef: "2014 OL Section C E2 Q2(a)(iii)",
+    stem: "The first impression you make on a potential employer is the most important one, that is why it is important to dress professionally for an interview regardless of the work environment.\n\nSketch and describe a two piece outfit suitable to wear for a job interview.",
+    questionText: "Name and explain one principle of design shown in your sketch.",
+    tariffModel: {"kind":"fixed","notation":"Name 4 + explanation 3"}, totalMarks: 7,
+    rows: [
+    { id: "name", kind: "anyN", verbatim: "Name", marks: 4, contextNote: "One principle shown in the SAME outfit sketch.", openList: true, group: {"claimMax":1,"perOption":4,"options":["Balance","Emphasis","Proportion","Rhythm"]} },
+    { id: "explanation", kind: "criterion", verbatim: "Explanation", marks: 3, contextNote: "Explain the SAME principle in the preceding outfit. Original models: Balance: can be vertical; symmetrical or asymmetrical; etc. Emphasis: achieved through use of colour; lines and other details; there should only be one centre of emphasis in an outfit; etc. Proportion: relationship between parts of the garment e.g. pockets should be in proportion with the rest of the garment; can be equal or unequal i.e. short jacket, long skirt; etc. Rhythm: associated with repetition in clothing; etc.", permittedMarks: [0,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q2bi", topicId: "home-economics-3-8", conceptId: "sc-q2bi",
+    section: "C", questionRef: "2014 OL Section C E2 Q2(b)(i)",
+    stem: "Hobbies can be turned into businesses in recessionary times.",
+    questionText: "Discuss the role played by small businesses and cottage/home based industries in the Irish fashion industry.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "roles", marks: 9, contextNote: "Complete original source guidance: Small firms in rural communities for employment; work is often subcontracted to locals to do at home i.e. Aran knitting; etc., Avoca Handweavers have several regional outlets; skilled or unskilled work available; promotes Irish traditional crafts; encourages the survival of traditional crafts; encouraged by Government incentives; businesses can be set up without a large capital outlay; sheep for wool can be reared; cotton/linen can be grown; spun dyed and woven into products; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q2bii", topicId: "home-economics-3-8", conceptId: "sc-q2bii",
+    section: "C", questionRef: "2014 OL Section C E2 Q2(b)(ii)",
+    stem: "Hobbies can be turned into businesses in recessionary times.",
+    questionText: "Describe two career opportunities in the clothing and fashion industry.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 3"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "career opportunities", marks: 6, contextNote: "Describe TWO career opportunities. The original scheme lists names only, without model descriptions; no missing descriptions have been invented. Complete original source guidance: Fashion designer, milliner, tailor, machinist, models, photographers, stylists, factory workers, sales people, fashion buyer, fashion writers, etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q2ci", topicId: "home-economics-3-7", conceptId: "sc-q2ci",
+    section: "C", questionRef: "2014 OL Section C E2 Q2(c)(i)",
+    stem: "Fabrics may be treated with specific fabric finishes for a variety of reasons.",
+    questionText: "Explain why fabric finishes are used when manufacturing fabrics.",
+    tariffModel: {"kind":"fixed","notation":"1 points × 5"}, totalMarks: 5,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "fabric finishes", marks: 5, contextNote: "Complete original source guidance: Change appearance; improve the look and feel of a fabric; prevent shrinkage and creasing; make fabric more durable during washing and wearing; make fabric flame retardant; waterproof; texture can be added i.e. embossing; easy care; anti-bacterial finish; etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q2cii", topicId: "home-economics-3-7", conceptId: "sc-q2cii",
+    section: "C", questionRef: "2014 OL Section C E2 Q2(c)(ii)",
+    stem: "Fabrics may be treated with specific fabric finishes for a variety of reasons.",
+    questionText: "Name and describe two fabric finishes.",
+    tariffModel: {"kind":"fixed","notation":"2 finishes × (name 3 + detail 2)"}, totalMarks: 10,
+    rows: [
+    { id: "name-1", kind: "anyN", verbatim: "Name", marks: 3, contextNote: "Choose TWO different finishes in total.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Crease resistant","stain resistant","waterproof","anti static","mercerising","flame retardant (Proban)","turbenising","moth proofing"]} },
+    { id: "detail-1", kind: "criterion", verbatim: "Detail", marks: 2, contextNote: "One detail for the SAME named finish. Complete original models: Crease resistant: prevents fabric from creasing; etc. stain resistant: fabrics are made easier to launder; etc. waterproof: makes fabric water repellent; etc. anti static: prevents fabric from clinging; etc. mercerising: makes fabric stronger and more absorbent; etc. flame retardant (Proban); reduces the flammability of a fabric; etc. turbenising: stiffens fabrics for use in cuffs and collars, etc. moth proofing: on wool; etc.", permittedMarks: [0,2] },
+    { id: "name-2", kind: "anyN", verbatim: "Name", marks: 3, contextNote: "Choose TWO different finishes in total.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Crease resistant","stain resistant","waterproof","anti static","mercerising","flame retardant (Proban)","turbenising","moth proofing"]} },
+    { id: "detail-2", kind: "criterion", verbatim: "Detail", marks: 2, contextNote: "One detail for the SAME named finish. Complete original models: Crease resistant: prevents fabric from creasing; etc. stain resistant: fabrics are made easier to launder; etc. waterproof: makes fabric water repellent; etc. anti static: prevents fabric from clinging; etc. mercerising: makes fabric stronger and more absorbent; etc. flame retardant (Proban); reduces the flammability of a fabric; etc. turbenising: stiffens fabrics for use in cuffs and collars, etc. moth proofing: on wool; etc.", permittedMarks: [0,2] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2014-ol-sc-q2cii-finish-1","label":"Finish 1","marks":5,"rowIds":["name-1","detail-1"]},{"sourceCardId":"he-2014-ol-sc-q2cii-finish-2","label":"Finish 2","marks":5,"rowIds":["name-2","detail-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q3ai", topicId: "home-economics-3-9", conceptId: "sc-q3ai",
+    section: "C", questionRef: "2014 OL Section C E3 Q3(a)(i)",
+    stem: "In Ireland in the early 1960’s just 5% of women were in paid employment, now 56% of women work outside the home. (Irish Times, June 2013 MRBI Poll 2013)",
+    questionText: "Discuss four factors that have contributed to 56% of women being in paid employment in Ireland today.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 20, contextNote: "Complete original source guidance: Self-esteem; status; better educated; equality in the workplace; social contact; equal pay; part- time work available in the service industry; better working conditions e.g. job sharing; career breaks; flexitime; higher standard of living; more stay at home partners; greater variety of child care options available; two incomes needed to pay mortgages; independence – with increasing marital breakdown; etc.", permittedMarks: [0,5,10,15,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q3aii", topicId: "home-economics-3-11", conceptId: "sc-q3aii",
+    section: "C", questionRef: "2014 OL Section C E3 Q3(a)(ii)",
+    stem: "In Ireland in the early 1960’s just 5% of women were in paid employment, now 56% of women work outside the home. (Irish Times, June 2013 MRBI Poll 2013)",
+    questionText: "Discuss the impact of dual-earner families on family life. Refer to: • role overload • role conflict • distribution of parental and homecare responsibilities.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 5 + one other 5"}, totalMarks: 20,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "role overload", marks: 5, contextNote: "• role overload Occurs when an individual attempts to play several roles at one time; reduced leisure time; increased stress and tension between spouses and other members of the family; difficult to find time to do both roles; can interfere with promotion prospects; no one available to care for the more vulnerable members of the family; women suffer more than men as childcare primarily falls to women; etc.", permittedMarks: [0,5] },
+    { id: "heading-2", kind: "criterion", verbatim: "role conflict", marks: 5, contextNote: "• role conflict Is caused when the expectations of a person in one role clash with what is expected in another role, i.e. sick child v work; conflict balancing work and home activities; work or family has to be prioritised; competition between spouses / partners; one partner/spouse may feel the other is not supportive in their job; conflict as to whom is contributing most to the family; etc.", permittedMarks: [0,5] },
+    { id: "heading-3", kind: "criterion", verbatim: "distribution of parental and homecare responsibilities", marks: 5, contextNote: "• distribution of parental and homecare responsibilities. Greater reliance on labour saving appliances; decision making shared by both partners; less time available to spend with children; outside help may take over some parental duties; no one is seen as responsible for running the house as everyone has to play an equal part; father actively involved in child care; children become more independent as they learn to do jobs for themselves; children have a positive attitude to parental and homecare responsibilities; extra responsibility on older children; etc.", permittedMarks: [0,5] },
+    { id: "other", kind: "criterion", verbatim: "1 other", marks: 5, contextNote: "One ADDITIONAL point from any required heading. Original source: Refer to: • role overload Occurs when an individual attempts to play several roles at one time; reduced leisure time; increased stress and tension between spouses and other members of the family; difficult to find time to do both roles; can interfere with promotion prospects; no one available to care for the more vulnerable members of the family; women suffer more than men as childcare primarily falls to women; etc. • role conflict Is caused when the expectations of a person in one role clash with what is expected in another role, i.e. sick child v work; conflict balancing work and home activities; work or family has to be prioritised; competition between spouses / partners; one partner/spouse may feel the other is not supportive in their job; conflict as to whom is contributing most to the family; etc. • distribution of parental and homecare responsibilities. Greater reliance on labour saving appliances; decision making shared by both partners; less time available to spend with children; outside help may take over some parental duties; no one is seen as responsible for running the house as everyone has to play an equal part; father actively involved in child care; children become more independent as they learn to do jobs for themselves; children have a positive attitude to parental and homecare responsibilities; extra responsibility on older children; etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q3aiii", topicId: "home-economics-3-9", conceptId: "sc-q3aiii",
+    section: "C", questionRef: "2014 OL Section C E3 Q3(a)(iii)",
+    stem: "In Ireland in the early 1960’s just 5% of women were in paid employment, now 56% of women work outside the home. (Irish Times, June 2013 MRBI Poll 2013)",
+    questionText: "Write an informative note on Family Income Supplement (FIS).",
+    tariffModel: {"kind":"fixed","notation":"2 points × 5"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "Family Income Supplement", marks: 10, contextNote: "Historical 2014 FIS conditions and payment wording retained. Complete original source guidance: Weekly payment for low income workers or lone parent families; money payable is dependent on income and number of dependents; must work at least 19 hours a week; have at least one dependent child; have an average weekly income which falls below a fixed amount for the particular family size; FIS payment is 60% of the difference between your average weekly family income and the income limit of your family size; etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q3bi", topicId: "home-economics-3-11", conceptId: "sc-q3bi",
+    section: "C", questionRef: "2014 OL Section C E3 Q3(b)(i)",
+    stem: "Having less money to spend has impacted on consumers’ lifestyles and leisure habits.",
+    questionText: "Evaluate the importance of leisure for all family members and state the impact of the recession on family leisure activities.",
+    tariffModel: {"kind":"fixed","notation":"Importance 5 + impact 5 + two others × 5"}, totalMarks: 20,
+    rows: [
+    { id: "importance", kind: "criterion", verbatim: "Importance of leisure", marks: 5, contextNote: "Importance of leisure: contributes to the physical, social, emotional and intellectual well-being of a person: allows time to de-stress and relax; encourages family bonding; social interaction; fosters relationships in communities; helps the development of new skills; self-esteem; sets good example for children on how to use their free time positively; relieves boredom; satisfies the senses i.e. going to an opera; etc.", permittedMarks: [0,5] },
+    { id: "impact", kind: "criterion", verbatim: "Impact of recession", marks: 5, contextNote: "Impact of recession: less money available for leisure activities; more time available to spend with family members for people not working; people involved in more activities that cost no money e.g. walking; expensive leisure activities e.g. foreign holidays and school trips may have to be curtailed, etc.", permittedMarks: [0,5] },
+    { id: "other", kind: "criterion", verbatim: "2 others", marks: 10, contextNote: "Two ADDITIONAL points across either required heading; no fixed two-per-heading quota. Original source: Importance of leisure: contributes to the physical, social, emotional and intellectual well-being of a person: allows time to de-stress and relax; encourages family bonding; social interaction; fosters relationships in communities; helps the development of new skills; self-esteem; sets good example for children on how to use their free time positively; relieves boredom; satisfies the senses i.e. going to an opera; etc. Impact of recession: less money available for leisure activities; more time available to spend with family members for people not working; people involved in more activities that cost no money e.g. walking; expensive leisure activities e.g. foreign holidays and school trips may have to be curtailed, etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q3bii", topicId: "home-economics-3-11", conceptId: "sc-q3bii",
+    section: "C", questionRef: "2014 OL Section C E3 Q3(b)(ii)",
+    stem: "Having less money to spend has impacted on consumers’ lifestyles and leisure habits.",
+    questionText: "Outline how leisure activities may contribute to the development of the individual.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 5"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "development", marks: 10, contextNote: "Complete original source guidance: Physical activities contribute to good health and wellbeing: fitness; learning new skill i.e. swimming; coordination skills; social development i.e. team sports; involves communication and cooperation, winning/losing; helps people to cope with the successes and failures of life; intellectual development i.e. analysis of situations - card games, debating; concentration – playing bridge; etc. emotional development – relaxation, yoga, improves self-esteem; confidence; self-development; gives a sense of belonging and independence; greater ability to form and express opinions; encourages new relationships; relieves boredom, stimulation of senses; promotes and encourages team based skills/new skills; fosters new friendships; facilitates social outings; helps to develop leadership skills in people; etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q3ci", topicId: "home-economics-3-9", conceptId: "sc-q3ci",
+    section: "C", questionRef: "2014 OL Section C E3 Q3(c)(i)",
+    stem: "‘People are living in poverty if they do not have enough money to do the things that most people in Ireland take for granted.’ (Combat Poverty Agency)",
+    questionText: "Discuss four of the main reasons why poverty continues to be a feature of Irish society.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "reasons", marks: 20, contextNote: "Complete original source guidance: Early school leavers depend on the minimum wage if employed; large families – high cost of living; education expenses; child-rearing; unemployment; recession; unskilled workers; lack of educational qualifications; cycle of poverty; inability to manage money effectively; social welfare system inadequate; high cost of housing during celtic tiger; high taxes; alcohol/drug abuse, gambling; etc.", permittedMarks: [0,5,10,15,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "he-2014-ol-sc-q3cii", topicId: "home-economics-3-9", conceptId: "sc-q3cii",
+    section: "C", questionRef: "2014 OL Section C E3 Q3(c)(ii)",
+    stem: "‘People are living in poverty if they do not have enough money to do the things that most people in Ireland take for granted.’ (Combat Poverty Agency)",
+    questionText: "Name and give details of one national voluntary agency that provides support to those at risk of poverty.",
+    tariffModel: {"kind":"fixed","notation":"Name 5 + detail 5"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "anyN", verbatim: "Name", marks: 5, contextNote: "Choose ONE voluntary agency.", openList: true, group: {"claimMax":1,"perOption":5,"options":["St. Vincent De Paul","Simon Community","Focus Ireland"]} },
+    { id: "details", kind: "criterion", verbatim: "Details", marks: 5, contextNote: "One detail for the SAME chosen agency. Complete original source: St. Vincent De Paul: raises money through church gate collections, charity shops, sales of work, etc., provides financial assistance to people in need in the local community, assist in paying bills; buying school books, uniforms, etc., provides person-person contact, members visit needy families in their area - the elderly to do housework, gardening, shopping; provide emergency housing; holiday breaks; homework clubs; etc. Simon Community: provides support and emergency accommodation to people who are homeless or at risk of homelessness; soup kitchens; addiction treatment options; provide assistance with food and clothing; provides counselling and education services; etc. Focus Ireland: works to combat and prevent homelessness; provide training in personal and life skills; information on job opportunities; provide coffee shop, accommodation; etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];
