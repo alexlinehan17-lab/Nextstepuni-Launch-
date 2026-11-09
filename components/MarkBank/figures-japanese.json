@@ -2233,5 +2233,133 @@
         0.69
       ]
     }
+  },
+  "ja-2019-ol-1-5": {
+    "src": "/exam-figures/japanese/ja-2019-ol-1-5.png",
+    "md5": "f59a910dca27025a1e017d65568d7759",
+    "alt": "Complete the table.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 3,
+      "region": [
+        0.52,
+        0.56,
+        0.97,
+        0.75
+      ]
+    }
+  },
+  "ja-2019-ol-2b": {
+    "src": "/exam-figures/japanese/ja-2019-ol-2b.png",
+    "md5": "2ff8ad7b6618a4772625d288e8dbe9a9",
+    "alt": "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to support your answer as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.075,
+        0.43,
+        0.97,
+        0.91
+      ]
+    }
+  },
+  "ja-2019-ol-2c": {
+    "src": "/exam-figures/japanese/ja-2019-ol-2c.png",
+    "md5": "a8c4e98dd2fafc3bae988329bd461692",
+    "alt": "Circle the correct meaning (a), (b), (c) or (d) for the following Kanji as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 6,
+      "region": [
+        0.075,
+        0.5,
+        0.97,
+        0.94
+      ]
+    }
+  },
+  "ja-2019-ol-3b-1": {
+    "src": "/exam-figures/japanese/ja-2019-ol-3b-1.png",
+    "md5": "94c21c88e346876234accd232cfc4676",
+    "alt": "Write the underlined in the negative form as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 10,
+      "region": [
+        0.075,
+        0.325,
+        0.97,
+        0.63
+      ]
+    }
+  },
+  "ja-2019-ol-3b-2": {
+    "src": "/exam-figures/japanese/ja-2019-ol-3b-2.png",
+    "md5": "439180180a08c01317f6ac3737192d2c",
+    "alt": "Circle the correct particle (a), (b) or (c) below as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 10,
+      "region": [
+        0.075,
+        0.63,
+        0.97,
+        0.94
+      ]
+    }
+  },
+  "ja-2019-ol-4": {
+    "src": "/exam-figures/japanese/ja-2019-ol-4.png",
+    "md5": "9a5c40b204e2482facb44499312dd70f",
+    "alt": "Insert the missing words from the box below as in the example. A word should be used only once.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 11,
+      "region": [
+        0.075,
+        0.06,
+        0.97,
+        0.94
+      ]
+    }
+  },
+  "ja-2019-ol-5": {
+    "src": "/exam-figures/japanese/ja-2019-ol-5.png",
+    "md5": "ccaf499dbff3c9cdbdc6a6c296e1fd50",
+    "alt": "Answer ANY 5 of the following 7 questions about your Japanese study in Japanese in the spaces provided.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.05,
+        0.04,
+        0.97,
+        0.945
+      ]
+    }
+  },
+  "ja-2019-ol-lb-1-v": {
+    "src": "/exam-figures/japanese/ja-2019-ol-lb-1-v.png",
+    "md5": "4655d88b83244f8fe4a096d8f08029b3",
+    "alt": "To enquire about the workshop, call:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 3,
+      "region": [
+        0.5,
+        0.53,
+        0.93,
+        0.612
+      ]
+    }
   }
 }
