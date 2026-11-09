@@ -1337,5 +1337,19 @@
     "alt": "Complete original photograph of three primary-school uniforms and full www.aldi.ie attribution.",
     "attribution": "SEC Home Economics 2018 Ordinary Level examination paper, page 10 — © State Examinations Commission.",
     "sourceNote": "Original PDF crop, bounds [198.60000610351562, 143.72000122070312, 369.239990234375, 357.9247131347656], rendered at 2.5×. SHA256 919cc857d1e52cb3f15b2a801e04005b70a59ba1e66459232fc384d1174be2f4."
+  },
+  "home-economics-2019-hl-sa-q3": {
+    "src": "/exam-figures/home-economics/home-economics-2019-hl-sa-q3.png",
+    "md5": "27de540c0b45616b4534362d96c9b718",
+    "alt": "Complete original mineral-deficiency table with Osteomalacia, Dry flaky skin and Goitre rows and blank Mineral answers.",
+    "attribution": "SEC Home Economics 2019 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 581.2796020507812, 570.219970703125, 740.6899948120117], rendered at 2.5×. SHA256 a48fc02659ab596c5d25b57ac1fff03110005fb5566dd2ef1646be2ad17a38a3."
+  },
+  "home-economics-2019-hl-sb-q1-survey": {
+    "src": "/exam-figures/home-economics/home-economics-2019-hl-sb-q1-survey.png",
+    "md5": "40d3de00ef7eda6eab19153209c77ed6",
+    "alt": "Complete original Healthy Snacking Survey chart: low sugar 66%, low fat 56%, calories 54%, low salt 36%, high protein 35%, additive free 26%, clean 23%, raw 5%, with full Bord Bia attribution.",
+    "attribution": "SEC Home Economics 2019 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [76.63999938964844, 208.87998962402344, 522.4783325195312, 427.0447082519531], rendered at 2.5×. SHA256 5bdd513c46df71a225464d8f25df54d3a6c69b98d2e8627659b714c95672af45."
   }
 }

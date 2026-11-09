@@ -1,0 +1,585 @@
+{
+  "schemaVersion": 1,
+  "year": 2019,
+  "level": "higher",
+  "sitting": "main",
+  "language": "ev",
+  "status": "source-reviewed",
+  "sources": {
+    "paper-trail-corpus/exampapers/2019/LC098ALP000EV.pdf": {
+      "sha256": "60700cd2f6f12a62480dbf8d3263c04d8131fea98817d5d0a3148cb9b5ad5990",
+      "pages": 12
+    },
+    "paper-trail-corpus/markingschemes/2019/LC098ALP000EV.pdf": {
+      "sha256": "c427e9c129a5c14f32444e68fc44b3b67fbe520f91b49f4da5d4a22413fd7699",
+      "pages": 36
+    }
+  },
+  "visualSweep": {
+    "paper": "All 12 original pages viewed: cover 1, A 2–5, B 6–8, C 9–11, blank 12.",
+    "scheme": "All 36 original pages viewed: cover 1, notice 2, written rubric 3, A 4–7, B 8–15, C 16–22, blanks 23–24, separate coursework 25–34, blank 35, back cover 36.",
+    "evidence": "tmp/pdfs/home-economics-review/2019-hl-main: all three paper and all nine scheme contacts visually inspected. The truncated combined scheme05–07 call was not counted; scheme05–09 subsequently viewed individually.",
+    "method": "Original visual sweep and manual tariff ledger saved BEFORE any 2019 Higher parser/card/author inspection."
+  },
+  "expectedTasks": 51,
+  "expectedSectionTasks": {
+    "A": 12,
+    "B": 18,
+    "C": 21
+  },
+  "sourceQuestionGroups": 20,
+  "offeredPracticeMarks": 627,
+  "independentTaskCensus": {
+    "A": {
+      "Q1": 6,
+      "Q2": 6,
+      "Q3": 6,
+      "Q4": 6,
+      "Q5": 6,
+      "Q6": 6,
+      "Q7": 6,
+      "Q8": 6,
+      "Q9": 6,
+      "Q10": 6,
+      "Q11": 6,
+      "Q12": 6
+    },
+    "B": {
+      "Q1(a)": 12,
+      "Q1(b)": 12,
+      "Q1(c)": 18,
+      "Q1(d)": 18,
+      "Q1(e)": 20,
+      "Q2(a)": 15,
+      "Q2(b)(i)": 8,
+      "Q2(b)(ii)": 12,
+      "Q2(c)": 15,
+      "Q3(a)": 20,
+      "Q3(b)": 20,
+      "Q3(c)": 10,
+      "Q4(a)": 20,
+      "Q4(b)": 20,
+      "Q4(c)": 10,
+      "Q5(a)": 14,
+      "Q5(b)": 12,
+      "Q5(c)": 24
+    },
+    "C": {
+      "Q1(a)(i)": 20,
+      "Q1(a)(ii)": 18,
+      "Q1(a)(iii)": 12,
+      "Q1(b)(i)": 16,
+      "Q1(b)(ii)": 14,
+      "Q1(c)(i)": 12,
+      "Q1(c)(ii)": 18,
+      "Q2(a)(i)": 15,
+      "Q2(a)(ii)": 10,
+      "Q2(b)(i)": 9,
+      "Q2(b)(ii)": 6,
+      "Q2(c)(i)": 6,
+      "Q2(c)(ii)": 9,
+      "Q3(a)(i)": 12,
+      "Q3(a)(ii)": 16,
+      "Q3(a)(iii)": 10,
+      "Q3(a)(iv)": 12,
+      "Q3(b)(i)": 12,
+      "Q3(b)(ii)": 18,
+      "Q3(c)(i)": 12,
+      "Q3(c)(ii)": 18
+    }
+  },
+  "sourceLeafReconciliation": "51 independently observed original leaves A12/B18/C21 map one-to-one to 51 priced tasks. B2(b) has two separately printed roman tasks 8/12. B1(c) retains both snack descriptions and all four nutritional merits in one paired-profile task, with no invented two-merits-per-snack quota. C2(a)(ii) combines sketch 4 and description 6 inside its printed roman task.",
+  "sourceDecisions": [
+    "A explicitly prints partial-credit steps for the first time in this continuation range: A1 both 3 [0,1,2,3]; A2 three 2 [0,1,2]; A3 all three mineral matches 2 [0,2]; A4–6 both 3 [0,2,3]; A7 three 2 [0,2]; A8 both 3 [0,2,3]; A9 three 2 [0,1,2]; A10 both 3 [0,2,3]; A11 each definition 2 [0,1,2] plus matching example 1; A12 two 3 [0,2,3]. Do not reuse whole-question-only tariffs. Full choice pools across answer lines, not one forced choice per line. Preserve original diabetes/transformer wording with clear source attribution.",
+    "B1 all eight chart bars/percentages and full attribution. a four 3 [0,2,3]. b four benefits 3 [0,1,2,3], no invented benefit models where source only gives generic assessor guidance. c two snack descriptions 3 [0,2,3] plus four nutritional-merit points 3 [0,1,2,3], same selected snacks, no internal per-snack merit quota. d three each calcium sources 2 [0,1,2], functions 2 [0,2], deficiency effects 2 [0,2]. e four points 5 [0,3,5]: one attracts, one informs and two other.",
+    "B2a five nutritive points 3 [0,1,2,3], maximum two mineral and maximum two vitamin references; retain source restriction visibly. bi four strategies 2 [0,1,2]; bii four guidelines 3 [0,2,3]. c three properties 1, three sources 1, three functions 3 [0,2,3], full source continuation pages 10–11.",
+    "B3a four causes 5 [0,2,3,5], all seven full models. b ONE coherent bacterium: name 2, conditions three 2, one source 2, reproduction three 2, two high-risk foods 2. Four complete profiles plus three name-only alternatives. Source conflict: scheme12 overview allows conditions/source/high-risk 2:1:0, but scheme13 table headers say 2:0; retain both printed statements visibly and resolve scoring explicitly with parent, not an invented ladder. c two HSE functions 5 [0,3,5].",
+    "B4a five factors 4 [0,2,4], b five strategies 4 [0,2,4], c two MABS points 5 [0,3,5]. B5a required socialisation/socio-economic group/social mobility/social change 3 [0,2,3] each and kinship 2 [0,1,2]. b four points 3 [0,1,2,3], source lists family types without characteristic models: preserve the guidance gap, invent no model answer. c TWO each social/economic/technological influences 4 [0,2,4].",
+    "C1ai five points 4 [0,2,4], explicit reference to TWO centuries; all three century models remain available. aii one economic plus one environmental plus one other point 6 [0,2,4,6]. aiii four services points 3 [0,1,2,3], all explained and name-only alternatives. bi four wall-finish factors 4 [0,2,4]. bii two coherent finishes each name 1, description 2 [0,2], two properties 2 [0,2], full source paint/wallpaper/tile models and name-only choices. ci required ring circuit and MCB each three 2 [0,1,2]; cii six safety guidelines 3 [0,2,3].",
+    "C2ai five factors 3 [0,2,3]. aii sketch 4 [0,2,4], description 6 [0,2,4,6], accept description on labelled sketch; original source provides no model outfit. bi three construction points 3 [0,2,3]. bii three properties and three uses 1 each. ci one designer name 2 and two details 2 [0,2], all original name choices, no invented biographies. cii three economy points 3 [0,2,3].",
+    "C3ai primary, secondary, tertiary contribution each 4 [0,2,4]. aii two positive and two negative effects 4 [0,2,4]. aiii two qualifications points 5 [0,2,3,5]. aiv three legislation points 4 [0,1,2,3,4], retain continuation pages 21–22. bi four childcare factors 3 [0,2,3]. bii two coherent childcare options each name 1 and evaluation four 2 [0,1,2], source gives names only, no invented evaluation models. ci four at-risk group/reason points 3 [0,1,3], original reasoning gap visible. cii six points 3 [0,2,3] covering social policy and state response without an invented category quota."
+  ],
+  "tasks": [
+    {
+      "id": "he-2019-hl-sa-q1",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2019 HL Section A Q1",
+      "topicId": "home-economics-0-7"
+    },
+    {
+      "id": "he-2019-hl-sa-q2",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2019 HL Section A Q2",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2019-hl-sa-q3",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2019 HL Section A Q3",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2019-hl-sa-q4",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2019 HL Section A Q4",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2019-hl-sa-q5",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2019 HL Section A Q5",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2019-hl-sa-q6",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2019 HL Section A Q6",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2019-hl-sa-q7",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2019 HL Section A Q7",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2019-hl-sa-q8",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2019 HL Section A Q8",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2019-hl-sa-q9",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2019 HL Section A Q9",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2019-hl-sa-q10",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2019 HL Section A Q10",
+      "topicId": "home-economics-1-3"
+    },
+    {
+      "id": "he-2019-hl-sa-q11",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2019 HL Section A Q11",
+      "topicId": "home-economics-1-5"
+    },
+    {
+      "id": "he-2019-hl-sa-q12",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2019 HL Section A Q12",
+      "topicId": "home-economics-1-5"
+    },
+    {
+      "id": "he-2019-hl-sb-q1a",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2019 HL Section B Q1(a)",
+      "topicId": "home-economics-0-10"
+    },
+    {
+      "id": "he-2019-hl-sb-q1b",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2019 HL Section B Q1(b)",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2019-hl-sb-q1c",
+      "section": "B",
+      "marks": 18,
+      "questionRef": "2019 HL Section B Q1(c)",
+      "topicId": "home-economics-0-10"
+    },
+    {
+      "id": "he-2019-hl-sb-q1d",
+      "section": "B",
+      "marks": 18,
+      "questionRef": "2019 HL Section B Q1(d)",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2019-hl-sb-q1e",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2019 HL Section B Q1(e)",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2019-hl-sb-q2a",
+      "section": "B",
+      "marks": 15,
+      "questionRef": "2019 HL Section B Q2(a)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2019-hl-sb-q2bi",
+      "section": "B",
+      "marks": 8,
+      "questionRef": "2019 HL Section B Q2(b)(i)",
+      "topicId": "home-economics-0-10"
+    },
+    {
+      "id": "he-2019-hl-sb-q2bii",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2019 HL Section B Q2(b)(ii)",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2019-hl-sb-q2c",
+      "section": "B",
+      "marks": 15,
+      "questionRef": "2019 HL Section B Q2(c)",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2019-hl-sb-q3a",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2019 HL Section B Q3(a)",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2019-hl-sb-q3b",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2019 HL Section B Q3(b)",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2019-hl-sb-q3c",
+      "section": "B",
+      "marks": 10,
+      "questionRef": "2019 HL Section B Q3(c)",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2019-hl-sb-q4a",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2019 HL Section B Q4(a)",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2019-hl-sb-q4b",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2019 HL Section B Q4(b)",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2019-hl-sb-q4c",
+      "section": "B",
+      "marks": 10,
+      "questionRef": "2019 HL Section B Q4(c)",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2019-hl-sb-q5a",
+      "section": "B",
+      "marks": 14,
+      "questionRef": "2019 HL Section B Q5(a)",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2019-hl-sb-q5b",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2019 HL Section B Q5(b)",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2019-hl-sb-q5c",
+      "section": "B",
+      "marks": 24,
+      "questionRef": "2019 HL Section B Q5(c)",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2019-hl-sc-q1ai",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2019 HL Section C E1 Q1(a)(i)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2019-hl-sc-q1aii",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2019 HL Section C E1 Q1(a)(ii)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2019-hl-sc-q1aiii",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2019 HL Section C E1 Q1(a)(iii)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2019-hl-sc-q1bi",
+      "section": "C",
+      "marks": 16,
+      "questionRef": "2019 HL Section C E1 Q1(b)(i)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2019-hl-sc-q1bii",
+      "section": "C",
+      "marks": 14,
+      "questionRef": "2019 HL Section C E1 Q1(b)(ii)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2019-hl-sc-q1ci",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2019 HL Section C E1 Q1(c)(i)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2019-hl-sc-q1cii",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2019 HL Section C E1 Q1(c)(ii)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2019-hl-sc-q2ai",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2019 HL Section C E2 Q2(a)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2019-hl-sc-q2aii",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2019 HL Section C E2 Q2(a)(ii)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2019-hl-sc-q2bi",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2019 HL Section C E2 Q2(b)(i)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2019-hl-sc-q2bii",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2019 HL Section C E2 Q2(b)(ii)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2019-hl-sc-q2ci",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2019 HL Section C E2 Q2(c)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2019-hl-sc-q2cii",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2019 HL Section C E2 Q2(c)(ii)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2019-hl-sc-q3ai",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2019 HL Section C E3 Q3(a)(i)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2019-hl-sc-q3aii",
+      "section": "C",
+      "marks": 16,
+      "questionRef": "2019 HL Section C E3 Q3(a)(ii)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2019-hl-sc-q3aiii",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2019 HL Section C E3 Q3(a)(iii)",
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2019-hl-sc-q3aiv",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2019 HL Section C E3 Q3(a)(iv)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2019-hl-sc-q3bi",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2019 HL Section C E3 Q3(b)(i)",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2019-hl-sc-q3bii",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2019 HL Section C E3 Q3(b)(ii)",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2019-hl-sc-q3ci",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2019 HL Section C E3 Q3(c)(i)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2019-hl-sc-q3cii",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2019 HL Section C E3 Q3(c)(ii)",
+      "topicId": "home-economics-3-9"
+    }
+  ],
+  "figures": {
+    "home-economics-2019-hl-sa-q3": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2019/LC098ALP000EV.pdf",
+      "page": 2,
+      "bounds": [
+        20,
+        581.2796020507812,
+        570.219970703125,
+        740.6899948120117
+      ],
+      "alt": "Complete original mineral-deficiency table with Osteomalacia, Dry flaky skin and Goitre rows and blank Mineral answers.",
+      "sha256": "a48fc02659ab596c5d25b57ac1fff03110005fb5566dd2ef1646be2ad17a38a3"
+    },
+    "home-economics-2019-hl-sb-q1-survey": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2019/LC098ALP000EV.pdf",
+      "page": 6,
+      "bounds": [
+        76.63999938964844,
+        208.87998962402344,
+        522.4783325195312,
+        427.0447082519531
+      ],
+      "alt": "Complete original Healthy Snacking Survey chart: low sugar 66%, low fat 56%, calories 54%, low salt 36%, high protein 35%, additive free 26%, clean 23%, raw 5%, with full Bord Bia attribution.",
+      "sha256": "5bdd513c46df71a225464d8f25df54d3a6c69b98d2e8627659b714c95672af45"
+    }
+  },
+  "sectionAReview": {
+    "tasks": 12,
+    "marks": 72,
+    "tariffDecision": "Original component tariffs and exact partial-credit steps, unrestricted answer-line pools, all three mineral-condition matches, both resource definitions with matching examples. Original diabetes and transformer wording identified visibly."
+  },
+  "sectionBReview": {
+    "tasks": 18,
+    "marks": 280,
+    "selectionDecisions": "Original survey/choice pools, paired snack merits, calcium and Vitamin C headings, exact packaging quotas, vegetable category caps, both separately priced B2(b) romans, seven coherent bacterium alternatives, all five sociology definitions and three compulsory change categories. Source gaps visible; no model answers invented.",
+    "unresolvedNumericSourceAmbiguity": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2."
+  },
+  "sectionCReview": {
+    "tasks": 21,
+    "marks": 275,
+    "selectionDecisions": "Two-century requirement and economic/environmental/additional quota; full wall-finish paired pools; both electrical-system accounts; original sketch/description ladders; all designer names with visible absence of detail models; all three industrial sectors; employment-law continuation; two coherent childcare profiles with source-model gaps; poverty reasons and state response requirements."
+  },
+  "figureVisualReview": "Both complete original inputs individually inspected: A3 full mineral-deficiency table and question; B1 all eight survey bars/percentages plus full Bord Bia attribution. First crop missed the separately spanned attribution; corrected boundary re-rendered and visually checked.",
+  "sourceCensusReconciliation": {
+    "level": "higher",
+    "sourceHashes": "verified",
+    "expectedSourceLeaves": 51,
+    "observedSourceLeaves": 51,
+    "continuityFlags": [],
+    "keys": [
+      "Section A Q1",
+      "Section A Q10",
+      "Section A Q11",
+      "Section A Q12",
+      "Section A Q2",
+      "Section A Q3",
+      "Section A Q4",
+      "Section A Q5",
+      "Section A Q6",
+      "Section A Q7",
+      "Section A Q8",
+      "Section A Q9",
+      "Section B Q1(a)",
+      "Section B Q1(b)",
+      "Section B Q1(c)",
+      "Section B Q1(d)",
+      "Section B Q1(e)",
+      "Section B Q2(a)",
+      "Section B Q2(b)(i)",
+      "Section B Q2(b)(ii)",
+      "Section B Q2(c)",
+      "Section B Q3(a)",
+      "Section B Q3(b)",
+      "Section B Q3(c)",
+      "Section B Q4(a)",
+      "Section B Q4(b)",
+      "Section B Q4(c)",
+      "Section B Q5(a)",
+      "Section B Q5(b)",
+      "Section B Q5(c)",
+      "Section C Q1(a)(i)",
+      "Section C Q1(a)(ii)",
+      "Section C Q1(a)(iii)",
+      "Section C Q1(b)(i)",
+      "Section C Q1(b)(ii)",
+      "Section C Q1(c)(i)",
+      "Section C Q1(c)(ii)",
+      "Section C Q2(a)(i)",
+      "Section C Q2(a)(ii)",
+      "Section C Q2(b)(i)",
+      "Section C Q2(b)(ii)",
+      "Section C Q2(c)(i)",
+      "Section C Q2(c)(ii)",
+      "Section C Q3(a)(i)",
+      "Section C Q3(a)(ii)",
+      "Section C Q3(a)(iii)",
+      "Section C Q3(a)(iv)",
+      "Section C Q3(b)(i)",
+      "Section C Q3(b)(ii)",
+      "Section C Q3(c)(i)",
+      "Section C Q3(c)(ii)"
+    ],
+    "reconciliation": "Independent 48-page original visual sweep pinned 51 original leaves A12/B18/C21 before parser/author inspection. One-to-one mapping to 51 priced tasks, 627 marks. B2(b) has two separately allocated roman tasks 8/12. Paired snack and sketch/description asks remain coherent within their original leaf."
+  },
+  "validation": {
+    "runtime": "247 affected/required tests passed: eight 2019 Higher and seven 2018 Ordinary plus 232 preservation/curriculum/deck. maxWorkers=1, owned temporary test caches removed automatically.",
+    "mandatoryRawSourceGate": "Explicit 2010–2019 original-PDF hash/key gates passed. Independent 48-page visual census pinned 51 original leaves A12/B18/C21 before parser/card inspection; one-to-one mapping to 51 priced tasks and 627 marks.",
+    "atlas": "Two targeted Home Economics checks passed: 75 tagged papers, 960 physical groups, 1008 registry mappings. All 20 original IDs retained; exact runtime 996.",
+    "coverage": "Three targeted Home Economics checks passed. Subject-only baseline 1796 cards / 1746 of 1881 raw leaves covered, 135 open. Zero ratchet findings before/after; all other subject entries unchanged.",
+    "mainTypecheck": "passed",
+    "scoped2019TestTypecheck": "passed",
+    "productionBuild": "passed; own ignored nonsymlink dist removed after success",
+    "cardlint": "clean; 1822 authored records including withdrawals inspected",
+    "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across 25 generated files.",
+    "reconciliation": "2019 Higher 51/51 original leaves and 51 priced tasks, zero sitting opens/exclusions/continuity flags. Lane 1796 cards (977 Higher / 819 Ordinary), 1746/1881 raw leaves covered, 135 open, zero orphan/unparsed/excluded, 13 flags.",
+    "preservation": "Every earlier authored card and all 926 earlier emitted Higher blocks, unrelated decks, sizes/showcase subjects, full and decoded non-HE Atlas records, unrelated HE mappings and every other HE raw census sitting unchanged. Frozen identity hashes unchanged; 51 additions explicitly pinned.",
+    "browser": "Parent-owned/pending; both original input crops individually visually inspected.",
+    "numericAmbiguity": "B3(b) conditions/source/high-risk-foods: page 12 prints 2:1:0 and page 13 prints 2:0; no source precedence established. Both ladders are visible. Only common 0/2 choices are exposed; a response potentially meriting the disputed 1 mark must remain unassessed pending authoritative clarification. Full task and all profiles retained. This numeric conflict remains unresolved."
+  },
+  "unresolvedNumericAmbiguities": [
+    "B3(b) conditions/source/high-risk-foods: page 12 prints 2:1:0 and page 13 prints 2:0; no source precedence established. Both ladders are visible. Only common 0/2 choices are exposed; a response potentially meriting the disputed 1 mark must remain unassessed pending authoritative clarification. Full task and all profiles retained. This numeric conflict remains unresolved."
+  ]
+}

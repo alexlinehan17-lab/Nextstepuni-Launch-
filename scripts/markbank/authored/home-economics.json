@@ -150672,5 +150672,6009 @@
    "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
    "presentationNote": "Open the original examination page to review this task in context."
   }
+ },
+ {
+  "id": "he-2019-hl-sa-q1",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-7",
+  "conceptId": "sa-q1",
+  "level": "higher",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 HL Section A Q1",
+  "questionText": "In relation to lipids, explain each of the following properties: Hydrogenation Plasticity",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original printed component allocations and partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "account-1",
+    "kind": "criterion",
+    "verbatim": "Hydrogenation",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Hydrogen can be added to unsaturated fatty acids; in the presence of a nickel catalyst; converting oils into saturated fats; used in the production of margarine; etc. Accept a clearly labelled diagram."
+   },
+   {
+    "id": "account-2",
+    "kind": "criterion",
+    "verbatim": "Plasticity",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "This relates to whether a lipid is solid, liquid or spreadable at room temperature; determined by the degree of saturation; the fewer unsaturated fatty acids present the more solid the lipid; e.g. unsaturated margarines are spreadable and suitable for creaming; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sa-q2",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sa-q2",
+  "level": "higher",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 HL Section A Q2",
+  "questionText": "Suggest three meal planning guidelines that should be considered when preparing meals for a person with Coronary Heart Disease (CHD).",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original printed component allocations and partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "Meal planning guidelines",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Choose ANY 3 responses across the complete original pool; answer lines do not impose separate category quotas. reduce intake of saturated fats, replace foods with low fat varieties; include mono and polyunsaturated oils; increase fibre intake; reduce refined carbohydrates; increase consumption of fish and chicken; reduce salt; use functional foods; grill, bake, steam or boil food; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sa-q3",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-8",
+  "conceptId": "sa-q3",
+  "level": "higher",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 HL Section A Q3",
+  "questionText": "Health conditions can result from a mineral deficiency in the diet. Identify one mineral in each case.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original printed component allocations and partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "mineral-1",
+    "kind": "criterion",
+    "verbatim": "Osteomalacia",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Name ONE mineral for this required condition. Complete original alternatives: Calcium; phosphorous;"
+   },
+   {
+    "id": "mineral-2",
+    "kind": "criterion",
+    "verbatim": "Dry, flaky skin",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Name ONE mineral for this required condition. Complete original alternatives: Zinc;"
+   },
+   {
+    "id": "mineral-3",
+    "kind": "criterion",
+    "verbatim": "Goitre",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Name ONE mineral for this required condition. Complete original alternatives: Iodine;"
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2019-hl-sa-q3",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2019-hl-sa-q4",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sa-q4",
+  "level": "higher",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 HL Section A Q4",
+  "questionText": "In relation to eggs, explain each of the following: Organic Lecithin",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original printed component allocations and partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "account-1",
+    "kind": "criterion",
+    "verbatim": "Organic",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Eggs from birds which have not been treated with growth hormones or given antibiotics; feed used that is not treated with artificial pesticides, fertilisers; etc."
+   },
+   {
+    "id": "account-2",
+    "kind": "criterion",
+    "verbatim": "Lecithin",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Found in egg yolk; is a natural emulsifier that has the ability to join two immiscible liquids (oil and vinegar) together; the molecule has a hydrophilic head and a hydrophobic tail; the hydrophilic head attaches itself to the water molecule and the hydrophobic tail attaches itself to the oil molecule preventing two substances from separating; etc. Accept a clearly labelled diagram"
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sa-q5",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-4",
+  "conceptId": "sa-q5",
+  "level": "higher",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 HL Section A Q5",
+  "questionText": "Differentiate between each of the following methods of smoking fish. Cold smoking Hot smoking",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original printed component allocations and partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "account-1",
+    "kind": "criterion",
+    "verbatim": "Cold smoking",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Fish is exposed to smoke rising from smouldering wood chips; the temperature of the fish does not exceed 27°C; the fish requires further cooking; etc."
+   },
+   {
+    "id": "account-2",
+    "kind": "criterion",
+    "verbatim": "Hot smoking",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Fish is exposed to smoke rising from smouldering wood chips; the temperature is gradually increased to 80°C; does not require further cooking; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sa-q6",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-3",
+  "conceptId": "sa-q6",
+  "level": "higher",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 HL Section A Q6",
+  "questionText": "Describe one physical and one chemical change that occur during the cooking of food. Physical change Chemical change",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original printed component allocations and partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "account-1",
+    "kind": "criterion",
+    "verbatim": "Physical change",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Increase/decrease in size; tenderising; nutrient loss; colour loss; colour change; texture change; thickening; etc."
+   },
+   {
+    "id": "account-2",
+    "kind": "criterion",
+    "verbatim": "Chemical change",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Maillard reaction; caramelisation; dextrinisation; tenderising; chemical/biological raising agents increase volume; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sa-q7",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-8",
+  "conceptId": "sa-q7",
+  "level": "higher",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 HL Section A Q7",
+  "questionText": "State three biological functions of water.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original printed component allocations and partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "Biological functions",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Choose ANY 3 responses across the complete original pool; answer lines do not impose separate category quotas. removes waste products; quenches thirst; prevents dehydration; metabolism; constituent of blood plasma; transporting nutrients, hormones, oxygen and carbon dioxide to body cells; provides calcium and fluorine/fluoride; regulates body temperature; hydrolysis; prevents constipation; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sa-q8",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sa-q8",
+  "level": "higher",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 HL Section A Q8",
+  "questionText": "Explain each of the following types of diabetes. Type1: Insulin dependent Type 2: Non‐insulin dependent",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original printed component allocations and partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "account-1",
+    "kind": "criterion",
+    "verbatim": "Type1: Insulin dependent",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "The original 2019 scheme wording is reproduced for this examination task. Insulin is not produced by the pancreas; hereditary; can develop in childhood, adolescence or young adulthood; controlled by oral medication, injectable insulin, diet and exercise; cannot be reversed; etc."
+   },
+   {
+    "id": "account-2",
+    "kind": "criterion",
+    "verbatim": "Type 2: Non-insulin dependent",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "The original 2019 scheme wording is reproduced for this examination task. Insulin is produced by the pancreas but it cannot be used by the body; develops mainly during later adulthood especially among overweight adults; can occur in children; controlled by oral medication, injectable insulin, diet or exercise, or by a combination of diet and exercise; can be reversed when a person loses weight; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sa-q9",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-2",
+  "conceptId": "sa-q9",
+  "level": "higher",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 HL Section A Q9",
+  "questionText": "Name three statutory bodies concerned with consumer protection.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original printed component allocations and partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "Statutory bodies",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Choose ANY 3 responses across the complete original pool; answer lines do not impose separate category quotas. Competition and Consumer Protection Commission; Central Bank; Office of the Ombudsman; Food Safety Authority of Ireland; Small Claims Court; Citizen’s information Board; National Standards Authority of Ireland; European Consumer Centre Ireland; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sa-q10",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-3",
+  "conceptId": "sa-q10",
+  "level": "higher",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 HL Section A Q10",
+  "questionText": "Outline the function of each of the following parts of a microwave oven. Magnetron Transformer",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original printed component allocations and partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "account-1",
+    "kind": "criterion",
+    "verbatim": "Magnetron",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "This converts electrical energy into microwave energy or electromagnetic waves /microwaves; etc."
+   },
+   {
+    "id": "account-2",
+    "kind": "criterion",
+    "verbatim": "Transformer",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "The original scheme describes the transformer as increasing voltage to a “higher frequency”; that source wording is reproduced here. This increases domestic voltage from 230V to a higher frequency; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sa-q11",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-5",
+  "conceptId": "sa-q11",
+  "level": "higher",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 HL Section A Q11",
+  "questionText": "In relation to the environment, explain and give an example of each of the following: Renewable resource Example Non‐renewable resource Example",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original printed component allocations and partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "resource-1",
+    "kind": "criterion",
+    "verbatim": "Renewable resource",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Always available naturally; not depleted despite constant use; causes no harm to the environment; etc."
+   },
+   {
+    "id": "example-1",
+    "kind": "criterion",
+    "verbatim": "Example",
+    "marks": 1,
+    "permittedMarks": [
+     0,
+     1
+    ],
+    "contextNote": "Give ONE example matching renewable resource. Complete original pool: Solar energy; biomass energy; wind energy; geothermal energy; hydropower; etc."
+   },
+   {
+    "id": "resource-2",
+    "kind": "criterion",
+    "verbatim": "Non-renewable resource",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Limited in supply; cannot be replaced once they have been depleted; can cause harm to the environment; etc."
+   },
+   {
+    "id": "example-2",
+    "kind": "criterion",
+    "verbatim": "Example",
+    "marks": 1,
+    "permittedMarks": [
+     0,
+     1
+    ],
+    "contextNote": "Give ONE example matching non-renewable resource. Complete original pool: Fossil fuels – coal, peat, natural gas; oil; nuclear energy; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sa-q12",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-5",
+  "conceptId": "sa-q12",
+  "level": "higher",
+  "year": 2019,
+  "section": "A",
+  "questionRef": "2019 HL Section A Q12",
+  "questionText": "Explain how consumers can contribute to sustainable waste management.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original printed component allocations and partial-credit ladders"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "points",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Choose ANY 2 responses across the complete original pool; answer lines do not impose separate category quotas. composting; buying in bulk; buying recyclable products; buying concentrated detergents; prevention; minimisation; reusing; recycling; energy recovery; disposal; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sb-q1a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-10",
+  "conceptId": "sb-q1a",
+  "level": "higher",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 HL Section B Q1(a)",
+  "questionText": "In addition to the benefits in the chart above what are the key factors that influence food choices?",
+  "stem": "Over 70% of all consumers snack each day. The following question was asked in a survey on snacking trends: “When choosing a snack for health benefits, which of the following are important to you?” The results of the survey question are given below.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points; printed steps [0, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "factors",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "contextNote": "Sensory aspects - personal preference, colour, flavour; culture; religion; advertising and marketing; allergies/intolerances; health issues; budget/value for money; eating patterns; availability; brand; origin; cooking facilities; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2019-hl-sb-q1-survey",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2019-hl-sb-q1b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sb-q1b",
+  "level": "higher",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 HL Section B Q1(b)",
+  "questionText": "Discuss the motivations for the respondent choices given in the survey. (12) In your answer refer to four benefits.",
+  "stem": "Over 70% of all consumers snack each day. The following question was asked in a survey on snacking trends: “When choosing a snack for health benefits, which of the following are important to you?” The results of the survey question are given below.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points; printed steps [0, 1, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "benefits",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "contextNote": "Discuss motivations for FOUR benefits from the original chart. The source gives assessor guidance, not model benefit explanations: Motivations: why is this health benefit important; identify group of people who are motivated by the particular benefit; ingredients/foods that provide this benefit and/or ingredients/foods that should be avoided; rank - high/low quantity; % comparisons; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2019-hl-sb-q1-survey",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2019-hl-sb-q1c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-10",
+  "conceptId": "sb-q1c",
+  "level": "higher",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 HL Section B Q1(c)",
+  "questionText": "Describe two healthy snacks suitable for college students. Outline the nutritional merits of incorporating these snacks in a person’s diet.",
+  "stem": "Over 70% of all consumers snack each day. The following question was asked in a survey on snacking trends: “When choosing a snack for health benefits, which of the following are important to you?” The results of the survey question are given below.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Two snack descriptions3 + four matching merits3"
+  },
+  "rows": [
+   {
+    "id": "snacks",
+    "kind": "criterion",
+    "verbatim": "Description",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Describe TWO healthy snacks. These are source suggestions; naming alone is not a complete description: Fresh fruit or vegetables; vegetable snacks/vegetable pots; yoghurt/dairy drinks; smoothies; fresh fruit and/or vegetable juices; nuts; seeds; trail mixes; granola/flapjacks; dried fruit and vegetable crisps; rice cakes/corn cakes; protein bars/balls; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "merits",
+    "kind": "criterion",
+    "verbatim": "Merits",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "contextNote": "Four merits of the SAME TWO chosen snacks. The source requires four points overall, with no fixed two-per-snack split. Merits: ingredient/food linked with appropriate nutrient and function; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sb-q1d",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-8",
+  "conceptId": "sb-q1d",
+  "level": "higher",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 HL Section B Q1(d)",
+  "questionText": "Dairy based snacks can contribute to micro‐nutrient intake. Give an account of calcium under each of the following headings: • sources • biological functions • effects of deficiency.",
+  "stem": "Over 70% of all consumers snack each day. The following question was asked in a survey on snacking trends: “When choosing a snack for health benefits, which of the following are important to you?” The results of the survey question are given below.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Three sources2 + three functions2 + three deficiency effects2"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "criterion",
+    "verbatim": "Sources",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Sources: dairy products; eggs; dark green vegetables; oily fish; white flour; hard water; bottled water; fortified juices; supplements; sesame seeds; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "heading-2",
+    "kind": "criterion",
+    "verbatim": "Biological functions",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Biological functions: formation and development of bones; teeth; blood clotting; muscle contractions; normal functioning of nerves and membrane permeability; regulate cell metabolism; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "heading-3",
+    "kind": "criterion",
+    "verbatim": "Effects of deficiency",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Effects of deficiency: rickets; osteomalacia; osteoporosis; dental cavities; failure of blood to clot; muscular spasms; interference in the transmission of impulses along the nerves; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sb-q1e",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sb-q1e",
+  "level": "higher",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 HL Section B Q1(e)",
+  "questionText": "Explain how the packaging on food products attracts and informs consumers.",
+  "stem": "Over 70% of all consumers snack each day. The following question was asked in a survey on snacking trends: “When choosing a snack for health benefits, which of the following are important to you?” The results of the survey question are given below.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "One attracts5 + one informs5 + two additional5"
+  },
+  "rows": [
+   {
+    "id": "attracts",
+    "kind": "criterion",
+    "verbatim": "Attracts",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "Attracts: visual appearance; natural colours; bold garish colours; made of natural materials; gloss or matt finish; high quality food/ingredient imagery; short ingredient deck; benefits clearly identifiable on the front; not too busy on front; etc."
+   },
+   {
+    "id": "informs",
+    "kind": "criterion",
+    "verbatim": "Informs",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "Informs: list of ingredients given with RDA; nutrients present; energy value; allergens listed; storage/preparation/cooking instructions given; origin – farm; free range, organic; etc."
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "2 other points",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     3,
+     5,
+     6,
+     8,
+     10
+    ],
+    "contextNote": "TWO additional points from either category; no repeated credit. Attracts: visual appearance; natural colours; bold garish colours; made of natural materials; gloss or matt finish; high quality food/ingredient imagery; short ingredient deck; benefits clearly identifiable on the front; not too busy on front; etc. Informs: list of ingredients given with RDA; nutrients present; energy value; allergens listed; storage/preparation/cooking instructions given; origin – farm; free range, organic; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sb-q2a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sb-q2a",
+  "level": "higher",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 HL Section B Q2(a)",
+  "questionText": "Discuss the nutritional significance of vegetables in the diet.",
+  "stem": "‘Research reveals that 19% of the average weekly family food shop is spent on highly processed ‘treat’ foods. This compares with only 10% spent on fruit and 7% on vegetables.’ (Safefood, 2018)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 points; printed steps [0, 1, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "nutritional significance",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "contextNote": "Assess FIVE points with a MAXIMUM of TWO mineral references and TWO vitamin references. Do not award a third reference within either restricted category. Protein: 2-8%; LBV protein; pulses a better source of protein; soya beans, HBV protein; growth and repair; etc. Fat: olives, avocados, soya beans - sources of polyunsaturated fat; heat and energy; etc. Carbohydrate: 3-20%; fibre - pulse vegetables good source; starch in potatoes, root vegetables and pulses; small amounts of sugar in carrots and onions; energy; etc. Vitamins: beta carotene (pro-vitamin A) in dark green/yellow/orange/red vegetables; manufacture of rhodopsin; etc. Vitamin C in leafy greens, tomatoes, peppers, potatoes; absorption of iron; etc. vitamins B1, B2 and B6 in pulse vegetables; B2 and niacin in mushrooms; metabolism; folate in leafy green vegetables; etc. vitamins A, C and E are antioxidants; etc. Minerals: calcium in root and leafy greens; healthy bones; etc. iron in dark green vegetables; carries oxygen around the body; traces of potassium, zinc and iodine; etc. Accept: maximum 2 references to minerals, 2 references to vitamins.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sb-q2bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-10",
+  "conceptId": "sb-q2bi",
+  "level": "higher",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 HL Section B Q2(b)(i)",
+  "questionText": "Suggest strategies for increasing a person’s daily consumption of vegetables.",
+  "stem": "‘Research reveals that 19% of the average weekly family food shop is spent on highly processed ‘treat’ foods. This compares with only 10% spent on fruit and 7% on vegetables.’ (Safefood, 2018)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points; printed steps [0, 1, 2]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "strategies",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "contextNote": "Eat vegetable based soups regularly; add vegetables to salads; increase vegetables in savoury dishes; introduce new vegetables and new ways of cooking them; use a spiralizer to make vegetable noodles; substitute vegetables for carbohydrate foods e.g. cauliflower rice; introduce vegetarian main courses for all the family; add vegetables to sauces; add greens to smoothies; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sb-q2bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-3",
+  "conceptId": "sb-q2bii",
+  "level": "higher",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 HL Section B Q2(b)(ii)",
+  "questionText": "Compile a set of guidelines for cooking vegetables in order to maintain their nutritive value.",
+  "stem": "‘Research reveals that 19% of the average weekly family food shop is spent on highly processed ‘treat’ foods. This compares with only 10% spent on fruit and 7% on vegetables.’ (Safefood, 2018)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points; printed steps [0, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "guidelines",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "contextNote": "Cook quickly; cook in the minimum amount of water; cover pot with a lid; use cooking liquid for soups and sauces; do not use alkalis; avoid copper or brass saucepans; stir-fry, steam or microwave; serve al dente; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sb-q2c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-8",
+  "conceptId": "sb-q2c",
+  "level": "higher",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 HL Section B Q2(c)",
+  "questionText": "Give an account of Vitamin C (ascorbic acid) under each of the following headings: • properties • sources • biological functions.",
+  "stem": "‘Research reveals that 19% of the average weekly family food shop is spent on highly processed ‘treat’ foods. This compares with only 10% spent on fruit and 7% on vegetables.’ (Safefood, 2018)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Three properties1 + three sources1 + three functions3"
+  },
+  "rows": [
+   {
+    "id": "properties",
+    "kind": "criterion",
+    "verbatim": "Properties",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Properties: white crystalline acid; sweet/sour taste; water soluble; unstable – lost during storage; food preparation; cooking; exposure to light and air; destroyed by alkalis; oxidase; dehydration; effective antioxidant; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "id": "sources",
+    "kind": "criterion",
+    "verbatim": "sources",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Fruits: blackcurrants; kiwis; citrus; strawberries; melon; etc. Vegetables: peppers; tomatoes; greens; potatoes; etc. Supplements; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "id": "functions",
+    "kind": "criterion",
+    "verbatim": "Biological functions",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "Biological functions: formation of connective tissue, collagen; necessary for the immune system; helps absorption of iron, calcium; promotes healing of wounds; healthy blood vessels; acts as an antioxidant; protects HDL cholesterol; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sb-q3a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-4",
+  "conceptId": "sb-q3a",
+  "level": "higher",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 HL Section B Q3(a)",
+  "questionText": "Discuss the main causes of food spoilage.",
+  "stem": "Food spoilage is a disagreeable change in a food’s normal state. Such changes can be detected by smell, taste, touch or sight.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points; printed steps [0, 2, 3, 5]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "causes",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     20
+    ],
+    "contextNote": "Bacteria: putrefaction - protein decomposition – odour – hydrogen sulphate (eggs); fish struggle, use up glycogen stores, causes deterioration; strong smelling nitrogen compound, trimethylamine is produced; etc. Moulds: visible on surface of foods; produce mycotoxins; etc. Yeast: can be visible on exterior of foods; etc. Physical damage: bruising; etc. Rancidity: in fats; etc. Moisture loss: shrinkage, wrinkling, limp appearance of skin on fruit and vegetables; cheese, high protein food – hard surface due to moisture loss when exposed to air; etc. Enzymes: ripening of fruit – enzymes continue to work, cause food to over-ripen, decay and decompose; browning - certain foods are cut e.g. apples, cut surface releases enzyme, oxidase, reacts with oxygen and causes food to go brown; naturally present enzymes in fish cause flesh to deteriorate even at low temperatures; vegetables may be spoiled in the freezer if not blanched prior to freezing; oxidase present in the cell wall of plants is activated by oxygen and can destroy thiamine, vitamin C and carotene; enzymes cause triglycerides to hydrolyse which results in rancidity; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sb-q3b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-4",
+  "conceptId": "sb-q3b",
+  "level": "higher",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 HL Section B Q3(b)",
+  "questionText": "Name and give details of one common food poisoning bacteria. Refer to: • conditions necessary for growth • source • reproduction/growth of bacteria • high risk foods.",
+  "stem": "Food spoilage is a disagreeable change in a food’s normal state. Such changes can be detected by smell, taste, touch or sight.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name2 + conditions3×2 + source2 + reproduction3×2 + high-risk foods2×2; disputed one-mark case held"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "point",
+    "verbatim": "Salmonella",
+    "marks": 2
+   },
+   {
+    "id": "conditions",
+    "kind": "criterion",
+    "verbatim": "conditions necessary for growth",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Salmonella profile: Food: saprophytic or parasitic; Temp: mesophilic 20 – 45°C; Moisture: etc. Oxygen: facultative; etc. pH: neutral; etc. Time: etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "source",
+    "kind": "criterion",
+    "verbatim": "source",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Salmonella profile: Human, animal and bird intestines; faeces; unwashed hands; etc."
+   },
+   {
+    "id": "reproduction",
+    "kind": "criterion",
+    "verbatim": "reproduction/growth of bacteria",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Use the SAME Salmonella profile. Original scientific wording is reproduced: Asexual; Binary fission; Mitosis;",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "foods",
+    "kind": "criterion",
+    "verbatim": "high risk foods",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Salmonella profile: Raw or undercooked meat, fish, eggs; unpasteurised dairy products; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "answerVariants": [
+   {
+    "id": "bacterium-1",
+    "label": "Salmonella",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Salmonella",
+      "marks": 2
+     },
+     {
+      "id": "conditions",
+      "kind": "criterion",
+      "verbatim": "conditions necessary for growth",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Salmonella profile: Food: saprophytic or parasitic; Temp: mesophilic 20 – 45°C; Moisture: etc. Oxygen: facultative; etc. pH: neutral; etc. Time: etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "source",
+      "kind": "criterion",
+      "verbatim": "source",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Salmonella profile: Human, animal and bird intestines; faeces; unwashed hands; etc."
+     },
+     {
+      "id": "reproduction",
+      "kind": "criterion",
+      "verbatim": "reproduction/growth of bacteria",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Use the SAME Salmonella profile. Original scientific wording is reproduced: Asexual; Binary fission; Mitosis;",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "foods",
+      "kind": "criterion",
+      "verbatim": "high risk foods",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Salmonella profile: Raw or undercooked meat, fish, eggs; unpasteurised dairy products; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "bacterium-2",
+    "label": "Listeria",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Listeria",
+      "marks": 2
+     },
+     {
+      "id": "conditions",
+      "kind": "criterion",
+      "verbatim": "conditions necessary for growth",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Listeria profile: Food: saprophytic or parasitic; Temp: psychrophilic 5 – 20°C mesophilic 20 – 45°C; Moisture: etc. Oxygen; facultative; etc. pH: neutral/slightly acidic; etc. Time: etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "source",
+      "kind": "criterion",
+      "verbatim": "source",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Listeria profile: Uncooked foods; cooked chill foods; foods not heated to sufficiently high temperatures; soil; human & animal waste; etc."
+     },
+     {
+      "id": "reproduction",
+      "kind": "criterion",
+      "verbatim": "reproduction/growth of bacteria",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Use the SAME Listeria profile. Original scientific wording is reproduced: Asexual; Binary fission; Mitosis;",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "foods",
+      "kind": "criterion",
+      "verbatim": "high risk foods",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Listeria profile: Soft cheese; pâté; unpasteurised milk, cheese; raw or undercooked meats; pre- prepared salads; cook-chill foods; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "bacterium-3",
+    "label": "E.coli",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "E.coli",
+      "marks": 2
+     },
+     {
+      "id": "conditions",
+      "kind": "criterion",
+      "verbatim": "conditions necessary for growth",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME E.coli profile: Food: saprophytic or parasitic; Temp: mesophilic 20 – 45°C; Moisture: etc. Oxygen: aerobic; etc. pH: neutral; etc. Time: etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "source",
+      "kind": "criterion",
+      "verbatim": "source",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME E.coli profile: Human and animal intestines; human & animal excreta; polluted water; unwashed hands; etc."
+     },
+     {
+      "id": "reproduction",
+      "kind": "criterion",
+      "verbatim": "reproduction/growth of bacteria",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Use the SAME E.coli profile. Original scientific wording is reproduced: Asexual; Sexual; Binary fission; Mitosis;",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "foods",
+      "kind": "criterion",
+      "verbatim": "high risk foods",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME E.coli profile: Undercooked meats; raw meats; unpasteurised milk and cheese; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "bacterium-4",
+    "label": "Clostridium botulinum",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Clostridium botulinum",
+      "marks": 2
+     },
+     {
+      "id": "conditions",
+      "kind": "criterion",
+      "verbatim": "conditions necessary for growth",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Clostridium botulinum profile: Food: saprophytic or parasitic; Temp: mesophilic 20 – 45°C; Moisture: etc. Oxygen: anaerobic; pH: 4.6 or higher; etc. Time: etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "source",
+      "kind": "criterion",
+      "verbatim": "source",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Clostridium botulinum profile: Soil; decaying matter; unwashed hands; human and animal faeces; etc."
+     },
+     {
+      "id": "reproduction",
+      "kind": "criterion",
+      "verbatim": "reproduction/growth of bacteria",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Use the SAME Clostridium botulinum profile. Original scientific wording is reproduced: Asexual; Sexual; Binary fission; Mitosis;",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "foods",
+      "kind": "criterion",
+      "verbatim": "high risk foods",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Clostridium botulinum profile: Unpasteurised cheese, milk, yoghurt; faulty processing of low acid canned foods; vacuum-packed foods; smoked fish; oil infused with garlic; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "bacterium-5",
+    "label": "Staphylococcus Aureus",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Staphylococcus Aureus",
+      "marks": 2
+     },
+     {
+      "id": "conditions",
+      "kind": "criterion",
+      "verbatim": "conditions necessary for growth",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME Staphylococcus Aureus throughout. This bacterium is accepted by name only in the original source; no conditions necessary for growth model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "source",
+      "kind": "criterion",
+      "verbatim": "source",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME Staphylococcus Aureus throughout. This bacterium is accepted by name only in the original source; no source model is printed or invented."
+     },
+     {
+      "id": "reproduction",
+      "kind": "criterion",
+      "verbatim": "reproduction/growth of bacteria",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Use the SAME Staphylococcus Aureus throughout. This bacterium is accepted by name only in the original source; no reproduction/growth of bacteria model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "foods",
+      "kind": "criterion",
+      "verbatim": "high risk foods",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME Staphylococcus Aureus throughout. This bacterium is accepted by name only in the original source; no high risk foods model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "bacterium-6",
+    "label": "Clostridium Perfringens",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Clostridium Perfringens",
+      "marks": 2
+     },
+     {
+      "id": "conditions",
+      "kind": "criterion",
+      "verbatim": "conditions necessary for growth",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME Clostridium Perfringens throughout. This bacterium is accepted by name only in the original source; no conditions necessary for growth model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "source",
+      "kind": "criterion",
+      "verbatim": "source",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME Clostridium Perfringens throughout. This bacterium is accepted by name only in the original source; no source model is printed or invented."
+     },
+     {
+      "id": "reproduction",
+      "kind": "criterion",
+      "verbatim": "reproduction/growth of bacteria",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Use the SAME Clostridium Perfringens throughout. This bacterium is accepted by name only in the original source; no reproduction/growth of bacteria model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "foods",
+      "kind": "criterion",
+      "verbatim": "high risk foods",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME Clostridium Perfringens throughout. This bacterium is accepted by name only in the original source; no high risk foods model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "bacterium-7",
+    "label": "Campylobacter",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Campylobacter",
+      "marks": 2
+     },
+     {
+      "id": "conditions",
+      "kind": "criterion",
+      "verbatim": "conditions necessary for growth",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME Campylobacter throughout. This bacterium is accepted by name only in the original source; no conditions necessary for growth model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "source",
+      "kind": "criterion",
+      "verbatim": "source",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME Campylobacter throughout. This bacterium is accepted by name only in the original source; no source model is printed or invented."
+     },
+     {
+      "id": "reproduction",
+      "kind": "criterion",
+      "verbatim": "reproduction/growth of bacteria",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Use the SAME Campylobacter throughout. This bacterium is accepted by name only in the original source; no reproduction/growth of bacteria model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "foods",
+      "kind": "criterion",
+      "verbatim": "high risk foods",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME Campylobacter throughout. This bacterium is accepted by name only in the original source; no high risk foods model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "other-bacterium",
+    "label": "Another valid food-poisoning bacterium",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name of food poisoning bacteria",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Name ONE valid food-poisoning bacterium. The original source ends its named alternatives with “etc.”; this open alternative preserves that scope without inventing another model."
+     },
+     {
+      "id": "conditions",
+      "kind": "criterion",
+      "verbatim": "conditions necessary for growth",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME selected bacterium throughout. No additional source model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "source",
+      "kind": "criterion",
+      "verbatim": "source",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME selected bacterium throughout. No additional source model is printed or invented."
+     },
+     {
+      "id": "reproduction",
+      "kind": "criterion",
+      "verbatim": "reproduction/growth of bacteria",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Use the SAME selected bacterium throughout. No additional source model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "foods",
+      "kind": "criterion",
+      "verbatim": "high risk foods",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME selected bacterium throughout. No additional source model is printed or invented.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2019-hl-sb-q3c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-4",
+  "conceptId": "sb-q3c",
+  "level": "higher",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 HL Section B Q3(c)",
+  "questionText": "Outline the role of the Health Service Executive (HSE) in relation to food safety.",
+  "stem": "Food spoilage is a disagreeable change in a food’s normal state. Such changes can be detected by smell, taste, touch or sight.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points; printed steps [0, 3, 5]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "role",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     3,
+     5,
+     6,
+     8,
+     10
+    ],
+    "contextNote": "Involved in registering new food premises; inspections of food premises; farm inspections; handles complaints regarding hygiene standards in food premises; closure orders; ensuring food safety at public gatherings; monitoring legislation that deals with food and nutrition labelling, additives and contaminants; responding to rapid alerts - recalling of food products; provides education and advises businesses on how to ensure compliance with food safety and hygiene laws; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sb-q4a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sb-q4a",
+  "level": "higher",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 HL Section B Q4(a)",
+  "questionText": "Analyse the factors that affect household income.",
+  "stem": "‘The average gross weekly household income in 2016 was €1,100 which is 7% higher than the figure recorded for 2010.’ (Household Budget Survey, 2016)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 points; printed steps [0, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "factors",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12,
+     14,
+     16,
+     18,
+     20
+    ],
+    "contextNote": "Age: income tends to increase as people age, are more experienced, move up the pay scale; income can decrease on retirement if pensions have not been paid into; teenagers can have part time jobs and make a contribution to family income; etc. Gender: number of women in the work force has increased; “back to work schemes” encourage women back to the labour market; Employment Equality Act ensures equal pay regardless of gender; managerial positions still tend to be male dominated; etc. Socio-economic group: lower socio-economic groups tend to leave school early without academic qualifications leading to low paid jobs, fewer opportunities for career advancement and improving income level; middle class background have more educational opportunities, more likely to avail of third level education; etc. Number of family members in employment: dual career families have a higher income; etc. Working hours: full time or part time; job sharing; flexi time; seasonal work; etc. Culture: different cultures may have different expectations; etc. Disabilities; Addictions; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sb-q4b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sb-q4b",
+  "level": "higher",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 HL Section B Q4(b)",
+  "questionText": "Suggest strategies that should be followed when planning a family budget to ensure the effective management of financial resources.",
+  "stem": "‘The average gross weekly household income in 2016 was €1,100 which is 7% higher than the figure recorded for 2010.’ (Household Budget Survey, 2016)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 points; printed steps [0, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "strategies",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12,
+     14,
+     16,
+     18,
+     20
+    ],
+    "contextNote": "List all sources of income; list planned expenditure – fixed, irregular and discretionary; calculate weekly/monthly expenditure; allow for discretionary spending; allow for changes in circumstances; incorporate long and short term savings; allocate some money for personal expenses; keep copies of bills and receipts; evaluate and review budget regularly; allocation of income - housing 25%, food 25%, household expenses 15%, education 5%, childcare 5%, travel 5%, clothing 5%, medical 5%, savings 5%, entertainment 5%; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sb-q4c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sb-q4c",
+  "level": "higher",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 HL Section B Q4(c)",
+  "questionText": "Outline the role of the Money Advice and Budgeting Service (MABS) for families who are experiencing financial difficulties.",
+  "stem": "‘The average gross weekly household income in 2016 was €1,100 which is 7% higher than the figure recorded for 2010.’ (Household Budget Survey, 2016)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points; printed steps [0, 3, 5]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "role",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     3,
+     5,
+     6,
+     8,
+     10
+    ],
+    "contextNote": "Free independent advice service; advises on coping with current debt problems; helps families develop money management skills – planning budgets and repayment schedules; advises on consumer finance products; advises on interest rates; mortgage debt resolution; negotiation with lenders; personal insolvency advice; income maximisation; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sb-q5a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-0",
+  "conceptId": "sb-q5a",
+  "level": "higher",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 HL Section B Q5(a)",
+  "questionText": "Explain the following sociological terms: • socialisation • socio‐economic group • social mobility • social change • kinship.",
+  "stem": "Sociology is the study of society, patterns of social relationships, social interaction and culture of everyday life.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 14,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Four required terms3 + required kinship2"
+  },
+  "rows": [
+   {
+    "id": "term-1",
+    "kind": "criterion",
+    "verbatim": "Socialisation",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Socialisation: the process whereby an individual learns appropriate norms, values, behaviour and social skills in order to behave in a manner acceptable to society; primary socialisation happens in the family; secondary through school, work and media; life long process; etc."
+   },
+   {
+    "id": "term-2",
+    "kind": "criterion",
+    "verbatim": "Socio economic group",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Socio economic group: classification of individuals within society according to their economic, and social position in relation to others; these groups are usually classified as lower, middle and higher socio-economic classes; division is known as social stratification or layering; etc."
+   },
+   {
+    "id": "term-3",
+    "kind": "criterion",
+    "verbatim": "Social mobility",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Social mobility: movement of individuals from one socio-economic group to another; education, income and occupation enable social mobility; etc."
+   },
+   {
+    "id": "term-4",
+    "kind": "criterion",
+    "verbatim": "Social change",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Social change: changes that occur within society due to major developments e.g. law reform; technology; national and international events; etc."
+   },
+   {
+    "id": "term-5",
+    "kind": "criterion",
+    "verbatim": "Kinship",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Kinship: relationships; family ties; family connections; blood relationship; blood ties; common ancestry; common lineage; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sb-q5b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-0",
+  "conceptId": "sb-q5b",
+  "level": "higher",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 HL Section B Q5(b)",
+  "questionText": "Describe the characteristics of contemporary family structures.",
+  "stem": "Sociology is the study of society, patterns of social relationships, social interaction and culture of everyday life.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points; printed steps [0, 1, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "characteristics",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "contextNote": "Describe characteristics across FOUR points. The original source only names these structures; no characteristic model is printed or invented, and names alone do not complete the task. Nuclear; extended; blended/reconstituted/step; lone parent; same sex parents; childless families; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sb-q5c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-0",
+  "conceptId": "sb-q5c",
+  "level": "higher",
+  "year": 2019,
+  "section": "B",
+  "questionRef": "2019 HL Section B Q5(c)",
+  "questionText": "Discuss the social, economic and technological changes that affect families today.",
+  "stem": "Sociology is the study of society, patterns of social relationships, social interaction and culture of everyday life.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Two REQUIRED references each to social/economic/technological4"
+  },
+  "rows": [
+   {
+    "id": "category-1",
+    "kind": "criterion",
+    "verbatim": "Social",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8
+    ],
+    "contextNote": "Social: decline in extended family; urbanisation; gender equality; dual career families; marriage breakdown, separation and divorce; same sex marriages and adoption; segregated and shared roles; changing role of women; increased leisure time; stay at home fathers; fewer children; women having children later in life; antisocial behaviour; addictions; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "category-2",
+    "kind": "criterion",
+    "verbatim": "Economic",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8
+    ],
+    "contextNote": "Economic: high cost of living; housing costs; state benefits; state support; both partners working; higher standard of living; higher expectations; moving in search of work or because of work; cost of childcare/education; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "category-3",
+    "kind": "criterion",
+    "verbatim": "Technological",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8
+    ],
+    "contextNote": "Technological: communication technology; social media; technology which enables working from home, paying bills, booking holidays etc.; household technology; home entertainment; security technology; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q1ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1ai",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E1 Q1(a)(i)",
+  "questionText": "Outline the historical development of housing styles in Ireland.",
+  "stem": "Architecture involves creating design solutions to make homes that meet the needs of the people who will live there.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 points; printed steps [0, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "housing styles",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12,
+     14,
+     16,
+     18,
+     20
+    ],
+    "contextNote": "The original scheme requires reference to TWO centuries across FIVE points, with no fixed points-per-century quota. Keep that requirement when assessing. All three original century models remain available: 19th Century: rural areas – single story thatched cottages, 2 rooms - kitchen and bedroom, stone and mud walls, small windows, half door, open fire; prosperous farmers two storey houses, slate roof, parlour; wealthy landowners large estate houses with servants quarters in the basement; etc. urban areas - Georgian style, 2, 3 and 4 storey terraced houses with basements; slate roofed houses; door focal point, with steps leading up to; rooms with high ceilings; middle class small terraced houses; shop keepers lived over their shops; workers single storey cottages; urban tenements; Georgian home divided into flats/single rooms; etc. Gothic and Tudor styles; etc. 20th century: rural areas – upgrade of rural homes; two story houses; thatch replaced by slate or tiles; rural electrification; etc. urban areas - council and housing estates; detached and semi-detached houses; use of brick with plaster walls, 2 storey, tiles replaced slates, slate roofed bungalows; etc. private housing estates; houses of the same design; one off houses; high rise housing; improved standards due to building regulations; new materials and construction methods e.g. fibreglass, double/triple glazing, plastic (pvc); etc. 21st Century: rural areas - housing developments in small towns and villages; houses of different styles and sizes; renovation of period properties; one off houses architecturally designed; attic conversions, extensions, sunrooms added to houses; outside living space - balconies, decking, patios; improved security – electronic gates, flood lighting; etc. urban areas – housing complexes, which include a variety of town houses and apartments enclosed behind security gates; more houses build on outskirts of towns/cities; high density housing; small living space and outdoor areas; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q1aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1aii",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E1 Q1(a)(ii)",
+  "questionText": "Discuss the economic and environmental factors that influence the choice of housing styles.",
+  "stem": "Architecture involves creating design solutions to make homes that meet the needs of the people who will live there.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "One economic6 + one environmental6 + one additional6"
+  },
+  "rows": [
+   {
+    "id": "economic",
+    "kind": "criterion",
+    "verbatim": "economic factor",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Economic: income; type and cost of building materials; fees/costs; investment potential; building energy rating; grants available; etc."
+   },
+   {
+    "id": "environmental",
+    "kind": "criterion",
+    "verbatim": "environmental factor",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Environmental: building regulations; energy efficiency; ecological principles; aspect; fitting in with surrounding environment; etc."
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "1 other",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "One ADDITIONAL point from either required category. Economic: income; type and cost of building materials; fees/costs; investment potential; building energy rating; grants available; etc. Environmental: building regulations; energy efficiency; ecological principles; aspect; fitting in with surrounding environment; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q1aiii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1aiii",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E1 Q1(a)(iii)",
+  "questionText": "Give details of the professional services available to consumers to assist in the design and building of a home.",
+  "stem": "Architecture involves creating design solutions to make homes that meet the needs of the people who will live there.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points; printed steps [0, 1, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "professional services",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "contextNote": "Four service details; names alone are not complete accounts. Original explained and name-only choices: Architect: advises on site, house design, oversee construction; etc. Structural/site engineer: oversee house construction and advice re building problems; etc. Surveyor: survey site, identify possible problems and suggest solutions; etc. Solicitor: deals with legal aspects - purchasing site and registering property ownership, contracts; etc. Builder: draws up building contract re costs and completion dates, site preparation, sub contract work to specialists, deals with snag list; etc. Interior designer; Landscaper Architect; Electrician; Plumber; BER Assessor; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q1bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-4",
+  "conceptId": "sc-q1bi",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E1 Q1(b)(i)",
+  "questionText": "Outline four factors that should be considered when selecting wall finishes for a home.",
+  "stem": "Walls can be a decorative feature, or may simply be background.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points; printed steps [0, 2, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "factors",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12,
+     14,
+     16
+    ],
+    "contextNote": "Aesthetics; cost; environmental; room specifications; aspect; durability; washable; finish; texture; ease of application; easy to clean; coverage; light reflective; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q1bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-4",
+  "conceptId": "sc-q1bii",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E1 Q1(b)(ii)",
+  "questionText": "Name and describe two types of wall finishes suitable for a kitchen/living room. (14) State two properties of each finish.",
+  "stem": "Walls can be a decorative feature, or may simply be background.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 14,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Two finishes×(name1 + description2 + two properties2)"
+  },
+  "rows": [
+   {
+    "id": "name-1",
+    "kind": "criterion",
+    "verbatim": "Name",
+    "marks": 1,
+    "permittedMarks": [
+     0,
+     1
+    ],
+    "contextNote": "Choose TWO different wall finishes. Name selected finish 1. Preserve each description/property relationship in the complete source pool: Water-based paint: emulsion - vinyl matt, silk vinyl; etc. Oil/solvent-based: gloss, satin finish; etc. Specialised paint: textured paint; flame-retardant paint; etc. Properties: washable; water resistant; easy/difficult to apply; suitable for areas of high condensation; quick/long drying time; strong/no odour; durable/hard wearing; easy to clean; plastic fibres give textured finish; available in different colours; reflects light; etc. General purpose wallpaper: design machine or hand printed onto paper; etc. Embossed wall paper: design is pressed onto a paper backing; raised textured; etc. Wood chip: wood chips pressed between two layers of paper; etc. Vinyl: designs are printed on paper backing; treated with vinyl coat; etc. Flock: velvet-like texture design is printed onto a paper backing; creates three dimensional effect; etc. Properties: can withstand condensation; washable; durable; can camouflage faults; varies in thickness; adds texture; can be painted over; available in different designs; easy/difficult to hang; tears easily; etc. Tiles: ceramic, porcelain; etc. Properties: hardwearing; waterproof; easy to maintain; available in many colours, sizes; glazed; unglazed; hard/cold to touch; etc. Wood panelling; Mosaic; Stone; etc."
+   },
+   {
+    "id": "description-1",
+    "kind": "criterion",
+    "verbatim": "Description",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Describe the SAME finish 1. Paint and wallpaper subtypes retain their shared property lists; tiles retain their own model. Wood panelling, mosaic and stone are name-only alternatives; no description is invented. Water-based paint: emulsion - vinyl matt, silk vinyl; etc. Oil/solvent-based: gloss, satin finish; etc. Specialised paint: textured paint; flame-retardant paint; etc. Properties: washable; water resistant; easy/difficult to apply; suitable for areas of high condensation; quick/long drying time; strong/no odour; durable/hard wearing; easy to clean; plastic fibres give textured finish; available in different colours; reflects light; etc. General purpose wallpaper: design machine or hand printed onto paper; etc. Embossed wall paper: design is pressed onto a paper backing; raised textured; etc. Wood chip: wood chips pressed between two layers of paper; etc. Vinyl: designs are printed on paper backing; treated with vinyl coat; etc. Flock: velvet-like texture design is printed onto a paper backing; creates three dimensional effect; etc. Properties: can withstand condensation; washable; durable; can camouflage faults; varies in thickness; adds texture; can be painted over; available in different designs; easy/difficult to hang; tears easily; etc. Tiles: ceramic, porcelain; etc. Properties: hardwearing; waterproof; easy to maintain; available in many colours, sizes; glazed; unglazed; hard/cold to touch; etc. Wood panelling; Mosaic; Stone; etc."
+   },
+   {
+    "id": "properties-1",
+    "kind": "criterion",
+    "verbatim": "Properties",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Two properties of the SAME finish 1. Water-based paint: emulsion - vinyl matt, silk vinyl; etc. Oil/solvent-based: gloss, satin finish; etc. Specialised paint: textured paint; flame-retardant paint; etc. Properties: washable; water resistant; easy/difficult to apply; suitable for areas of high condensation; quick/long drying time; strong/no odour; durable/hard wearing; easy to clean; plastic fibres give textured finish; available in different colours; reflects light; etc. General purpose wallpaper: design machine or hand printed onto paper; etc. Embossed wall paper: design is pressed onto a paper backing; raised textured; etc. Wood chip: wood chips pressed between two layers of paper; etc. Vinyl: designs are printed on paper backing; treated with vinyl coat; etc. Flock: velvet-like texture design is printed onto a paper backing; creates three dimensional effect; etc. Properties: can withstand condensation; washable; durable; can camouflage faults; varies in thickness; adds texture; can be painted over; available in different designs; easy/difficult to hang; tears easily; etc. Tiles: ceramic, porcelain; etc. Properties: hardwearing; waterproof; easy to maintain; available in many colours, sizes; glazed; unglazed; hard/cold to touch; etc. Wood panelling; Mosaic; Stone; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "name-2",
+    "kind": "criterion",
+    "verbatim": "Name",
+    "marks": 1,
+    "permittedMarks": [
+     0,
+     1
+    ],
+    "contextNote": "Choose TWO different wall finishes. Name selected finish 2. Preserve each description/property relationship in the complete source pool: Water-based paint: emulsion - vinyl matt, silk vinyl; etc. Oil/solvent-based: gloss, satin finish; etc. Specialised paint: textured paint; flame-retardant paint; etc. Properties: washable; water resistant; easy/difficult to apply; suitable for areas of high condensation; quick/long drying time; strong/no odour; durable/hard wearing; easy to clean; plastic fibres give textured finish; available in different colours; reflects light; etc. General purpose wallpaper: design machine or hand printed onto paper; etc. Embossed wall paper: design is pressed onto a paper backing; raised textured; etc. Wood chip: wood chips pressed between two layers of paper; etc. Vinyl: designs are printed on paper backing; treated with vinyl coat; etc. Flock: velvet-like texture design is printed onto a paper backing; creates three dimensional effect; etc. Properties: can withstand condensation; washable; durable; can camouflage faults; varies in thickness; adds texture; can be painted over; available in different designs; easy/difficult to hang; tears easily; etc. Tiles: ceramic, porcelain; etc. Properties: hardwearing; waterproof; easy to maintain; available in many colours, sizes; glazed; unglazed; hard/cold to touch; etc. Wood panelling; Mosaic; Stone; etc."
+   },
+   {
+    "id": "description-2",
+    "kind": "criterion",
+    "verbatim": "Description",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Describe the SAME finish 2. Paint and wallpaper subtypes retain their shared property lists; tiles retain their own model. Wood panelling, mosaic and stone are name-only alternatives; no description is invented. Water-based paint: emulsion - vinyl matt, silk vinyl; etc. Oil/solvent-based: gloss, satin finish; etc. Specialised paint: textured paint; flame-retardant paint; etc. Properties: washable; water resistant; easy/difficult to apply; suitable for areas of high condensation; quick/long drying time; strong/no odour; durable/hard wearing; easy to clean; plastic fibres give textured finish; available in different colours; reflects light; etc. General purpose wallpaper: design machine or hand printed onto paper; etc. Embossed wall paper: design is pressed onto a paper backing; raised textured; etc. Wood chip: wood chips pressed between two layers of paper; etc. Vinyl: designs are printed on paper backing; treated with vinyl coat; etc. Flock: velvet-like texture design is printed onto a paper backing; creates three dimensional effect; etc. Properties: can withstand condensation; washable; durable; can camouflage faults; varies in thickness; adds texture; can be painted over; available in different designs; easy/difficult to hang; tears easily; etc. Tiles: ceramic, porcelain; etc. Properties: hardwearing; waterproof; easy to maintain; available in many colours, sizes; glazed; unglazed; hard/cold to touch; etc. Wood panelling; Mosaic; Stone; etc."
+   },
+   {
+    "id": "properties-2",
+    "kind": "criterion",
+    "verbatim": "Properties",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Two properties of the SAME finish 2. Water-based paint: emulsion - vinyl matt, silk vinyl; etc. Oil/solvent-based: gloss, satin finish; etc. Specialised paint: textured paint; flame-retardant paint; etc. Properties: washable; water resistant; easy/difficult to apply; suitable for areas of high condensation; quick/long drying time; strong/no odour; durable/hard wearing; easy to clean; plastic fibres give textured finish; available in different colours; reflects light; etc. General purpose wallpaper: design machine or hand printed onto paper; etc. Embossed wall paper: design is pressed onto a paper backing; raised textured; etc. Wood chip: wood chips pressed between two layers of paper; etc. Vinyl: designs are printed on paper backing; treated with vinyl coat; etc. Flock: velvet-like texture design is printed onto a paper backing; creates three dimensional effect; etc. Properties: can withstand condensation; washable; durable; can camouflage faults; varies in thickness; adds texture; can be painted over; available in different designs; easy/difficult to hang; tears easily; etc. Tiles: ceramic, porcelain; etc. Properties: hardwearing; waterproof; easy to maintain; available in many colours, sizes; glazed; unglazed; hard/cold to touch; etc. Wood panelling; Mosaic; Stone; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "taskGroups": [
+   {
+    "sourceCardId": "he-2019-hl-sc-q1bii-finish-1",
+    "label": "Wall finish 1",
+    "marks": 7,
+    "rowIds": [
+     "name-1",
+     "description-1",
+     "properties-1"
+    ]
+   },
+   {
+    "sourceCardId": "he-2019-hl-sc-q1bii-finish-2",
+    "label": "Wall finish 2",
+    "marks": 7,
+    "rowIds": [
+     "name-2",
+     "description-2",
+     "properties-2"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2019-hl-sc-q1ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-5",
+  "conceptId": "sc-q1ci",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E1 Q1(c)(i)",
+  "questionText": "In relation to household electricity supply describe each of the following: • ring circuit • minature circuit breaker (MCB).",
+  "stem": "‘Electricity is so much part of modern living that we can often take it for granted. It is a powerful and versatile energy but can be dangerous if not used properly.’ (www.esbnetworks.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "BOTH ring circuit and MCB: three points2 each"
+  },
+  "rows": [
+   {
+    "id": "part-1",
+    "kind": "criterion",
+    "verbatim": "Ring circuit",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Ring circuit: wire leads from the consumer unit/main fuse board to sockets all around the house returning to the consumer unit; ring loop may contain all the sockets for the house; one ring loop can be used for upstairs sockets; one for downstairs sockets; contains an earth wire for safety; each circuit has its own fuse; etc. Accept clearly labelled diagrams.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "part-2",
+    "kind": "criterion",
+    "verbatim": "MCB",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "MCB: safety feature with trip switches that interrupt the circuit and disconnect the current when a fault occurs or the circuit is overloaded; safety feature; trip switches can be reset when the fault has been rectified; MCBs contain RCDs (residual current device) providing additional protection; etc. Accept clearly labelled diagrams.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q1cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-5",
+  "conceptId": "sc-q1cii",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E1 Q1(c)(ii)",
+  "questionText": "Compile a set of guidelines for the safe use of electricity in the home.",
+  "stem": "‘Electricity is so much part of modern living that we can often take it for granted. It is a powerful and versatile energy but can be dangerous if not used properly.’ (www.esbnetworks.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 points; printed steps [0, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "guidelines",
+    "marks": 18,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ],
+    "contextNote": "Buy appliances with a safety approval mark; ensure plugs are correctly wired and replace if defective; examine flexes for wear and tear; take care when using electrical appliances outdoors; do not handle sockets, plugs or electrical appliances with wet hands; do not have flexes trailing over hob or sink; do not use adapters/extension leads to overload sockets; do not repair faulty appliances; unplug all appliances before cleaning; do not put heavy items on the bed when the electric blanket is switched on; check electric blankets for wear and tear (scorch marks); do not attempt to repair a faulty blanket; never drape clothes over heaters; clean out dust from convector and fan heaters; in bathrooms - use pull cords for wall lighting; avoid the use of portable heaters; use light shades that completely enclose bulbs; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-6",
+      "verbatim": "Point 6",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q2ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2ai",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E2 Q2(a)(i)",
+  "questionText": "Summarise the factors that influence teenagers when purchasing clothes.",
+  "stem": "The growth of young people’s spending power has ensured that the teenage market is a crucial sector of the fashion business.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 points; printed steps [0, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "factors",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "contextNote": "Fashion trends; peers; social media; bloggers & influencers; lifestyle; budget; comfort; occasion; personality; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q2aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2aii",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E2 Q2(a)(ii)",
+  "questionText": "Sketch and describe an outfit suitable to wear to an outdoor music festival.",
+  "stem": "The growth of young people’s spending power has ensured that the teenage market is a crucial sector of the fashion business.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Sketch4 [0,2,4] + description6 [0,2,4,6]"
+  },
+  "rows": [
+   {
+    "id": "sketch",
+    "kind": "criterion",
+    "verbatim": "Sketch",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Sketch an outfit suitable for an outdoor music festival. The original scheme prints the sketch tariff but no model outfit; none is invented."
+   },
+   {
+    "id": "description",
+    "kind": "criterion",
+    "verbatim": "Description",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Describe the SAME outfit. Accept description on labelled sketch. The original scheme gives no model outfit description."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q2bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-7",
+  "conceptId": "sc-q2bi",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E2 Q2(b)(i)",
+  "questionText": "Explain how knitted fabric is constructed.",
+  "stem": "A fabric’s appearance, properties and end use is influenced by the way it is constructed.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; printed steps [0, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "constructed",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "Made up of a series of interlocking loops that result in a flexible construction; stretch depends on yarn used; produced by hand using needles or by machine; two basic structures – weft knitting is done by hand/machine; stitches run across the width of the fabric; usually knitted with one piece of yarn; warp knitting done by machine, yarn zigzags along the length of the fabric; different looping methods can be used – plain, rib, purl; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q2bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-7",
+  "conceptId": "sc-q2bii",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E2 Q2(b)(ii)",
+  "questionText": "Outline the properties and uses of knitted fabric.",
+  "stem": "A fabric’s appearance, properties and end use is influenced by the way it is constructed.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Three properties1 + three uses1"
+  },
+  "rows": [
+   {
+    "id": "properties",
+    "kind": "criterion",
+    "verbatim": "Properties",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Properties: warm, good insulator; good elasticity, stretchy; light or dense depending on the stitches chosen; comfortable; tendency to snag, sagging at stress points; shrinks; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "id": "uses",
+    "kind": "criterion",
+    "verbatim": "Uses",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Uses: coats, hats, scarves, dresses, jumpers, throws, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q2ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2ci",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E2 Q2(c)(i)",
+  "questionText": "Elaborate on the work of a contemporary Irish fashion designer.",
+  "stem": "Talented young designers ensure that the Irish fashion industry continues to thrive.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "One name2 + two matching details2"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "criterion",
+    "verbatim": "Name",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Choose ONE contemporary Irish designer. Complete original name pool: Simone Rocca; Lainey Keogh; Paul Costelloe; Louise Kennedy; Peter O Brien; Natalie B. Coleman; Emma Manley; Philip Treacy; Joanne Hynes; Lennon and Courtney; etc."
+   },
+   {
+    "id": "details",
+    "kind": "criterion",
+    "verbatim": "Details",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Give TWO details about the SAME selected designer. The source prints accepted names only; no biographical/work models are printed or invented. Simone Rocca; Lainey Keogh; Paul Costelloe; Louise Kennedy; Peter O Brien; Natalie B. Coleman; Emma Manley; Philip Treacy; Joanne Hynes; Lennon and Courtney; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q2cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2cii",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E2 Q2(c)(ii)",
+  "questionText": "Explain how the economy influences the design and fashion industry.",
+  "stem": "Talented young designers ensure that the Irish fashion industry continues to thrive.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; printed steps [0, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "economy",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "Reduced consumer spending, more sombre/simple fashion; use of low cost materials; CAD design; more money for research & technology - development of new fibres and blends; new and young talented designers emerge; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q3ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3ai",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E3 Q3(a)(i)",
+  "questionText": "In relation to the food industry, comment on the contribution made by the primary, secondary and tertiary sectors.",
+  "stem": "‘Central Statistics Office (CSO) statistics, show the employment rate is up 3% so far this year. Almost 2.3 million people in Ireland are now in work.’ (Irish Examiner, November 2018)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Required primary/secondary/tertiary contributions4 each"
+  },
+  "rows": [
+   {
+    "id": "sector-1",
+    "kind": "criterion",
+    "verbatim": "Primary",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Comment on this REQUIRED sector, relating its contribution to the food industry. Original model: Primary: resource based industries, therefore dependent on natural resources e.g. agriculture, fishing; etc."
+   },
+   {
+    "id": "sector-2",
+    "kind": "criterion",
+    "verbatim": "Secondary",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Comment on this REQUIRED sector, relating its contribution to the food industry. Original model: Secondary: involved in manufacturing or processing the raw materials from the primary sector to finished goods; food production; food manufacturing; etc."
+   },
+   {
+    "id": "sector-3",
+    "kind": "criterion",
+    "verbatim": "Tertiary",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Comment on this REQUIRED sector, relating its contribution to the food industry. Original model: Tertiary: service industries which do not produce goods but supply services e.g. tourism and leisure; healthcare; transport; media; food outlets; education; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q3aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3aii",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E3 Q3(a)(ii)",
+  "questionText": "Analyse the positive and negative effects of technology on work and employment.",
+  "stem": "‘Central Statistics Office (CSO) statistics, show the employment rate is up 3% so far this year. Almost 2.3 million people in Ireland are now in work.’ (Irish Examiner, November 2018)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Two positive4 + two negative4"
+  },
+  "rows": [
+   {
+    "id": "effect-1",
+    "kind": "criterion",
+    "verbatim": "Positive",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8
+    ],
+    "contextNote": "Positive: interesting jobs for those with relevant qualifications; elimination of repetitive tasks; safer, cleaner work environment; increased productivity; increased leisure time; people can work from home; improves quality and consistency; increase work availability; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "effect-2",
+    "kind": "criterion",
+    "verbatim": "Negative",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8
+    ],
+    "contextNote": "Negative: unskilled people lose their jobs; companies relocate to countries with cheaper labour costs; deskilling; loss of pride and craftsmanship; reduced job satisfaction; social isolation; decrease in the primary and secondary industries; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q3aiii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-10",
+  "conceptId": "sc-q3aiii",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E3 Q3(a)(iii)",
+  "questionText": "Discuss how educational qualifications can lead to greater employment options.",
+  "stem": "‘Central Statistics Office (CSO) statistics, show the employment rate is up 3% so far this year. Almost 2.3 million people in Ireland are now in work.’ (Irish Examiner, November 2018)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points; printed steps [0, 2, 3, 5]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "educational qualifications",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10
+    ],
+    "contextNote": "Leaving certificate has become the minimum level of education for many employment opportunities; qualifications lead to more choice of employment options; most jobs now require FETAC level qualifications; additional qualifications needed for career advancement; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q3aiv",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3aiv",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E3 Q3(a)(iv)",
+  "questionText": "Explain, giving examples, how legislation protects people in employment.",
+  "stem": "‘Central Statistics Office (CSO) statistics, show the employment rate is up 3% so far this year. Almost 2.3 million people in Ireland are now in work.’ (Irish Examiner, November 2018)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points; printed steps [0, 1, 2, 3, 4]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "legislation",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "contextNote": "Explain protection WITH examples across three points; no separate statute/example quota is printed. Original historical 2019 account, including all page-22 continuation choices: Safety, Health and Welfare at Work Act 2005: provides for the health and safety of people in the work place in order to prevent workplace injuries and ill health; etc. National Minimum Wage Order: sets out minimum wage to be paid to workers; etc. Employment Equality Acts: protects people from discrimination in the workplace and in wider society i.e. gender, marital status, family status, age, race, religion, sexual orientation; member of an ethnic group; etc. Organisation of Working Time Act 1997: sets out the law in relation to working hours, rest breaks; etc. Employee Rights and Entitlements: paid holidays, benefits e.g. maternity or disability, parental leave, force majeure, carers leave; etc. Protection of Young Persons (Employment) Act 1996: regulates young people’s working hours, rest breaks, days off; etc. Zero-hour contracts; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q3bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-11",
+  "conceptId": "sc-q3bi",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E3 Q3(b)(i)",
+  "questionText": "Summarise the principal factors that influence a family’s requirements for childcare.",
+  "stem": "Quality childcare fulfils an important role for society.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points; printed steps [0, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "factors",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "contextNote": "Both parents working; single parent working; availability of grandparents/family members; cost; after school care requirements; availability/convenience; opening/closing hours; flexibility/school holidays; proximity to child’s home; special needs of the child; age of child; reliability; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q3bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-11",
+  "conceptId": "sc-q3bii",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E3 Q3(b)(ii)",
+  "questionText": "Evaluate two different childcare options available to parents.",
+  "stem": "Quality childcare fulfils an important role for society.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Two options×(name1 + four evaluation points2)"
+  },
+  "rows": [
+   {
+    "id": "name-1",
+    "kind": "criterion",
+    "verbatim": "Name",
+    "marks": 1,
+    "permittedMarks": [
+     0,
+     1
+    ],
+    "contextNote": "Name different childcare option 1 of TWO. Original choices: Montessori; nurseries; crèches; playschool; playgroup; childminder; au pair: pre-school; after school groups: etc."
+   },
+   {
+    "id": "evaluation-1",
+    "kind": "criterion",
+    "verbatim": "Evaluate",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "contextNote": "Evaluate the SAME option 1 across four points. The scheme supplies accepted option names only, with no evaluation models; none are invented. Montessori; nurseries; crèches; playschool; playgroup; childminder; au pair: pre-school; after school groups: etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "name-2",
+    "kind": "criterion",
+    "verbatim": "Name",
+    "marks": 1,
+    "permittedMarks": [
+     0,
+     1
+    ],
+    "contextNote": "Name different childcare option 2 of TWO. Original choices: Montessori; nurseries; crèches; playschool; playgroup; childminder; au pair: pre-school; after school groups: etc."
+   },
+   {
+    "id": "evaluation-2",
+    "kind": "criterion",
+    "verbatim": "Evaluate",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "contextNote": "Evaluate the SAME option 2 across four points. The scheme supplies accepted option names only, with no evaluation models; none are invented. Montessori; nurseries; crèches; playschool; playgroup; childminder; au pair: pre-school; after school groups: etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "taskGroups": [
+   {
+    "sourceCardId": "he-2019-hl-sc-q3bii-childcare-1",
+    "label": "Childcare option 1",
+    "marks": 9,
+    "rowIds": [
+     "name-1",
+     "evaluation-1"
+    ]
+   },
+   {
+    "sourceCardId": "he-2019-hl-sc-q3bii-childcare-2",
+    "label": "Childcare option 2",
+    "marks": 9,
+    "rowIds": [
+     "name-2",
+     "evaluation-2"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2019-hl-sc-q3ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3ci",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E3 Q3(c)(i)",
+  "questionText": "Identify and discuss the groups of people who are at risk of poverty. (12) Give reasons for your answer.",
+  "stem": "‘Over one in six people in Ireland are at risk of poverty and 105,051 people living in poverty in Ireland are actually in employment.’ (Central Statistics Office, 2017)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points; printed steps [0, 1, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "groups",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12
+    ],
+    "contextNote": "Identify/discuss groups AND give reasons across four points; no separate group/reason allocation is printed. The original guidance lists groups without model reasons; none are invented. Stay at home parent; elderly; people with special needs; people with long term illnesses; unemployed; early school leavers; low paid workers; lone parents; ethnic minorities; households with cycle of deprivation; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2019-hl-sc-q3cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3cii",
+  "level": "higher",
+  "year": 2019,
+  "section": "C",
+  "questionRef": "2019 HL Section C E3 Q3(c)(ii)",
+  "questionText": "Discuss the influence of social policy on poverty. Include reference to how the state has responded to eliminating poverty.",
+  "stem": "‘Over one in six people in Ireland are at risk of poverty and 105,051 people living in poverty in Ireland are actually in employment.’ (Central Statistics Office, 2017)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 points; printed steps [0, 2, 3]"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "social policy",
+    "marks": 18,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ],
+    "contextNote": "Discuss social policy AND include the state response across six points; the source sets no fixed policy/response quota. Original historical account: Social Policy: minimum wage; low wages result in little incentive for the unemployed to return to work; social welfare benefits can be perceived as adequate/too generous; housing policy; education policy; etc. Response: social welfare assistance and benefits; schemes to reduce expenditure for low income families e.g. back to school clothing and footwear allowance; free electricity; TV licence; medical card; local Community Development Programmes; National Action Plan for social inclusion; minimum social welfare rate; minimum wage; MABS; RAPID; DEIS; SOLAS; SICAP; SUSI; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-6",
+      "verbatim": "Point 6",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
  }
 ]
