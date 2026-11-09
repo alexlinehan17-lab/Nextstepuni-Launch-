@@ -11,6 +11,25 @@ from pathlib import Path
 
 
 def reviewed_keys(year, level):
+    if (year, level) == (2024, 'ol'):
+        # All20written+8aural+25scheme pages independently inspected.
+        # CD booklet3(iii)/(iv) are misnumbered(iv)/(v) in the scheme.
+        root = Path(__file__).resolve().parents[3] / 'examiner-reports/russian'
+        for relative, digest in {
+            'papers/2024-ol-000-paper.pdf': '7ca7754d00496ebdc9ce022665c6eba8f7378bf7325d02d46ceab168f3761970',
+            'papers/2024-ol-A00-paper.pdf': '9384428ab46b24725f66f30afafdfb22048b4507de24e6307eb2df4fe1ea547c',
+            'schemes/2024-ol.pdf': 'ecba77fed2ef00afe4503bb1d4ed4b5ea0c5803a53727338592764406fbee44a',
+        }.items():
+            assert hashlib.sha256((root / relative).read_bytes()).hexdigest() == digest
+        keys = [('IR1',q,None,r) for q,romans in [(1,('i','ii')),(2,('i','ii')),(3,('i','ii','iii')),(4,(None,))] for r in romans]
+        keys += [('IR2',q,None,None) for q in range(1,8)]
+        keys += [('CD',q,None,r) for q,romans in [(1,('i','ii')),(2,('i','ii','iii')),(3,('i','ii','iii','iv'))] for r in romans]
+        keys += [(unit,None,None,None) for unit in ('LA1','LA2','MM','SD','SA','EW')]
+        assert len(keys) == 30
+        keys += [(unit,q,None,r) for unit in ('L1','L2','L3') for q,r in [(1,'i'),(1,'ii'),(2,None),(3,'i'),(3,'ii')]]
+        keys += [('L4',q,None,r) for q,r in [(1,None),(2,'i'),(2,'ii'),(3,'i'),(3,'ii')]]
+        assert len(keys) == len(set(keys)) == 50
+        return set(keys)
     if (year, level) == (2024, 'hl'):
         # Independent original-PDF sweep:16written+8aural+28scheme pages.
         # Twelve comprehension asks; four whole summaries; each complete

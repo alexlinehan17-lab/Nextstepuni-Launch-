@@ -1679,6 +1679,125 @@
         "browserQa": "pending; browser host unavailable"
       },
       "sourceReview": "complete"
+    },
+    {
+      "year": 2024,
+      "level": "ordinary",
+      "reviewedAt": "2026-11-09",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "auralPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "independentPracticeTasks": 50,
+      "printedWrittenMarks": 220,
+      "printedListeningMarks": 100,
+      "allAlternativePracticeMarks": 320,
+      "newCards": 26,
+      "correctedCards": 24,
+      "previousIdsPreserved": 199,
+      "fullSizeTariffPages": [
+        2,
+        4,
+        5,
+        11,
+        12,
+        14,
+        16,
+        17,
+        22
+      ],
+      "diagnosedReaderIssues": [
+        "The accepted-Russian exception is on p2, not p3.",
+        "LA1 is cursive and LA2 nominative: each preserves all six source choices and the three-choice quota.",
+        "The booklet CD3(iii)/(iv) are misnumbered(iv)/(v) in the scheme.",
+        "The p16 friends partial is associated with the immediately preceding hiking/camping-with-friends answer based on wording/layout, not an explicit source grouping bracket. Full3 and partial1 cannot both score for the same detail."
+      ],
+      "sourceDiscrepancies": [
+        {
+          "task": "ru-2024-ol-l3-2",
+          "schemePage": 17,
+          "transcriptPage": 22,
+          "description": "Answer list says8lessons cost80000roubles; transcript says8000for8lessons. Published answer retained with visible precise discrepancy; recording not used to adjudicate."
+        },
+        {
+          "task": "ru-2024-ol-cd-3-iii / ru-2024-ol-cd-3-iv",
+          "schemePage": 11,
+          "paperPage": 14,
+          "description": "Scheme labels these(iv)/(v); booklet prints(iii)/(iv). Cards follow booklet with visible source note."
+        }
+      ],
+      "validation": {
+        "sourceSlicesVerified": 376,
+        "status": "source and runtime gates passed",
+        "requiredTestsPassed": 294,
+        "russianCoverageTestsPassed": 3,
+        "typecheck": "passed",
+        "scopedTestTypes": "passed",
+        "targetedLint": "passed",
+        "productionBuild": "passed",
+        "deterministicRegenerations": 2,
+        "otherSubjectPreservation": "passed",
+        "baselineRegression": "none",
+        "sittingOpenTasks": 0,
+        "sittingExclusions": 0,
+        "browserQa": "pending; browser host unavailable"
+      },
+      "sourceReview": "complete"
     }
   ]
 }
