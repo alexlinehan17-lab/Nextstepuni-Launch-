@@ -47831,4 +47831,1661 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sa-q1", topicId: "home-economics-0-6", conceptId: "sa-q1",
+    section: "A", questionRef: "2018 HL Section A Q1",
+    questionText: "Complete the table below in relation to the digestion of carbohydrates.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "pancreas", kind: "point", verbatim: "Pancreas — Amylase — Starch — Maltose", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Complete the required PANCREAS row with this coherent enzyme/substrate/product profile." },
+    { id: "intestine-1", kind: "point", verbatim: "Maltase — Maltose — Glucose", marks: null, contextNote: "Choose ONE complete SMALL INTESTINE enzyme/substrate/product profile from the three original alternatives; do not mix cells between profiles." },
+    { id: "intestine-2", kind: "point", verbatim: "Sucrase — Sucrose — Glucose / Fructose", marks: null, contextNote: "Choose ONE complete SMALL INTESTINE enzyme/substrate/product profile from the three original alternatives; do not mix cells between profiles." },
+    { id: "intestine-3", kind: "point", verbatim: "Lactase — Lactose — Glucose / Fructose", marks: null, contextNote: "Choose ONE complete SMALL INTESTINE enzyme/substrate/product profile from the three original alternatives; do not mix cells between profiles. The original scheme prints Glucose / Fructose for Lactase / Lactose; the source wording is reproduced here." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2018-hl-sa-q1",
+          "src": "/exam-figures/home-economics/home-economics-2018-hl-sa-q1.png",
+          "srcHash": "4dd4ded7233545e0b7f8bfeb4b1f25d0",
+          "alt": "Complete original Organ, Enzyme, Substrate and Product table with required Pancreas and Small Intestine blank rows.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sa-q2", topicId: "home-economics-0-8", conceptId: "sa-q2",
+    section: "A", questionRef: "2018 HL Section A Q2",
+    questionText: "State three functions of Vitamin C in the body.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "function-1", kind: "point", verbatim: "(i) formation of connective tissue/collage;", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY THREE Vitamin C functions across all original answer lines; no compulsory collagen/immune-system split." },
+    { id: "function-2", kind: "point", verbatim: "(ii) critical for the immune system;", marks: null, contextNote: "Choose ANY THREE Vitamin C functions across all original answer lines; no compulsory collagen/immune-system split." },
+    { id: "function-3", kind: "point", verbatim: "(iii) helps absorption of iron and calcium; prevents scurvy; promotes healing of wounds; formation of healthy blood vessels; acts as antioxidant; protects HDL cholesterol; helps prevent bruising; healthy gums; etc.", marks: null, contextNote: "Choose ANY THREE Vitamin C functions across all original answer lines; no compulsory collagen/immune-system split." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sa-q3", topicId: "home-economics-0-9", conceptId: "sa-q3",
+    section: "A", questionRef: "2018 HL Section A Q3",
+    questionText: "Name two proteins found in meat. Outline two effects of cooking on protein in meat.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "protein-1", kind: "point", verbatim: "(i) Myosin; actin; globulin;", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY TWO meat proteins across both complete source pools." },
+    { id: "protein-2", kind: "point", verbatim: "(ii) collagen; elastin; gelatine (in bones); etc.", marks: null, contextNote: "Choose ANY TWO meat proteins across both complete source pools." },
+    { id: "effect-1", kind: "point", verbatim: "(i) protein coagulates causing the fibres to shrink; collagen is converted to gelatine; maillard reaction – amino acids and sugars on meat surface, improves flavour;", marks: null, contextNote: "Choose ANY TWO cooking effects across both complete source pools." },
+    { id: "effect-2", kind: "point", verbatim: "(ii) fibres fall apart and meat becomes more digestible; over-cooking causes meat fibres to become tough and indigestible; etc.", marks: null, contextNote: "Choose ANY TWO cooking effects across both complete source pools." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sa-q4", topicId: "home-economics-0-1", conceptId: "sa-q4",
+    section: "A", questionRef: "2018 HL Section A Q4",
+    questionText: "Outline the role of energy in the body.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "role-1", kind: "point", verbatim: "(i) growth; physical activity;", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Outline the role of energy using the complete source guidance. Answer lines carry no separate allocation." },
+    { id: "role-2", kind: "point", verbatim: "(ii) metabolism - cell and nerve activity; working of all internal organs;", marks: null, contextNote: "Outline the role of energy using the complete source guidance. Answer lines carry no separate allocation." },
+    { id: "role-3", kind: "point", verbatim: "(iii) generating heat and maintaining a constant body temperature (37°C); etc.", marks: null, contextNote: "Outline the role of energy using the complete source guidance. Answer lines carry no separate allocation." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sa-q5", topicId: "home-economics-0-1", conceptId: "sa-q5",
+    section: "A", questionRef: "2018 HL Section A Q5",
+    questionText: "Explain the significance of the following symbol to the consumer. Name two products that use this symbol on their labelling.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "significance", kind: "point", verbatim: "Food products are gluten free and suitable for people with coeliac disease; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "product-1", kind: "point", verbatim: "(i) soya products e.g. TVP; rice; maize products e.g. cornflakes;", marks: null, contextNote: "Choose ANY TWO labelled products across both original pools, after explaining the symbol." },
+    { id: "product-2", kind: "point", verbatim: "(ii) specially made gluten free products i.e. bread, biscuits; pasta; baked beans; sausages; etc.", marks: null, contextNote: "Choose ANY TWO labelled products across both original pools, after explaining the symbol." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2018-hl-sa-q5",
+          "src": "/exam-figures/home-economics/home-economics-2018-hl-sa-q5.png",
+          "srcHash": "3d8d966e238393e123c11b34ebc29ead",
+          "alt": "Complete original gluten-free symbol and question, including the request for two labelled products.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sa-q6", topicId: "home-economics-0-11", conceptId: "sa-q6",
+    section: "A", questionRef: "2018 HL Section A Q6",
+    questionText: "Complete the table below in relation to processed food. Give one example of a different food / product in each case.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "category-1", kind: "point", verbatim: "Foods that are extensively processed — flour, margarine; pasta; biscuits; convenience foods; dried milk; cheese; yoghurt; soups; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Give ONE different food/product for EACH required processed-food category; full original model pool retained." },
+    { id: "category-2", kind: "point", verbatim: "Foods processed to extend shelf life — milk; jams/chutneys/relishes; tinned fish; etc.", marks: null, contextNote: "Give ONE different food/product for EACH required processed-food category; full original model pool retained." },
+    { id: "category-3", kind: "point", verbatim: "Fortified foods — breakfast cereal; super/omega 3 milk; etc.", marks: null, contextNote: "Give ONE different food/product for EACH required processed-food category; full original model pool retained." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2018-hl-sa-q6",
+          "src": "/exam-figures/home-economics/home-economics-2018-hl-sa-q6.png",
+          "srcHash": "845b6a6840b4181ebdddee22b4054eb1",
+          "alt": "Complete original processed-food table with all three category headings and blank Food/Product fields.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sa-q7", topicId: "home-economics-0-3", conceptId: "sa-q7",
+    section: "A", questionRef: "2018 HL Section A Q7",
+    questionText: "Explain each of the following methods of heat transfer when cooking food. Conduction Convection",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "method-1", kind: "point", verbatim: "Conduction: transfer of heat from one food molecule to the next by vibration of molecules; cooker heats the pan which in turn heats the liquid or fat and then the food; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "method-2", kind: "point", verbatim: "Convection: heat transfer by convection currents in cooking liquid or air, based on the principle that hot air rises when heated and falls on cooling; etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sa-q8", topicId: "home-economics-0-4", conceptId: "sa-q8",
+    section: "A", questionRef: "2018 HL Section A Q8",
+    questionText: "State the temperature range for optimum growth for each of the following groups of micro‐organisms.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "group-1", kind: "point", verbatim: "Psychrophiles — -5°C to 20°C", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. State the complete original optimum-growth temperature RANGE for this required group." },
+    { id: "group-2", kind: "point", verbatim: "Mesophiles — 20°C to 45°C", marks: null, contextNote: "State the complete original optimum-growth temperature RANGE for this required group." },
+    { id: "group-3", kind: "point", verbatim: "Thermophiles — 45°C to 75°C", marks: null, contextNote: "State the complete original optimum-growth temperature RANGE for this required group." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2018-hl-sa-q8",
+          "src": "/exam-figures/home-economics/home-economics-2018-hl-sa-q8.png",
+          "srcHash": "028668e3ff1478bc92dd6a3b1c3db0ad",
+          "alt": "Complete original optimum-growth temperature table with Psychrophiles, Mesophiles and Thermophiles.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 4 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sa-q9", topicId: "home-economics-1-4", conceptId: "sa-q9",
+    section: "A", questionRef: "2018 HL Section A Q9",
+    questionText: "Suggest two textiles suitable for use in the home and state one property of each. Textile Property Name one fire retardant finish used on household textiles.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "textile-1", kind: "point", verbatim: "Cotton", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY TWO textiles, giving ONE property matching EACH selected textile. Complete original paired guidance: Cotton — strong; drapes well; fade resistant; washable/dry cleanable; breathable; easy to dye and bleach; no elasticity; shrinks; burns easily; subject to mildew damage; creases easily; etc." },
+    { id: "textile-2", kind: "point", verbatim: "Linen", marks: null, contextNote: "Choose ANY TWO textiles, giving ONE property matching EACH selected textile. Complete original paired guidance: Linen — very strong; durable; colourfast; creases easily unless treated; easily laundered; absorbent; may be pre-shrunk; etc." },
+    { id: "textile-3", kind: "point", verbatim: "Silk", marks: null, contextNote: "Choose ANY TWO textiles, giving ONE property matching EACH selected textile. Complete original paired guidance: Silk — strong; warm; light; drapes well; absorbent; crease resistant; etc." },
+    { id: "textile-4", kind: "point", verbatim: "Wool", marks: null, contextNote: "Choose ANY TWO textiles, giving ONE property matching EACH selected textile. Complete original paired guidance: Wool — warm; insulating; absorbent; soft; resilient; durable; scorches easily; damaged by moths; damaged by careless washing - shrinks and felts; etc." },
+    { id: "textile-5", kind: "point", verbatim: "Nylon", marks: null, contextNote: "Choose ANY TWO textiles, giving ONE property matching EACH selected textile. Complete original paired guidance: Nylon — strong; warm; stretches; lightweight; etc." },
+    { id: "textile-6", kind: "point", verbatim: "Polyester", marks: null, contextNote: "Choose ANY TWO textiles, giving ONE property matching EACH selected textile. Complete original paired guidance: Polyester — strong; warm; crease resistant; etc." },
+    { id: "textile-7", kind: "point", verbatim: "Acrylic", marks: null, contextNote: "Choose ANY TWO textiles, giving ONE property matching EACH selected textile. Complete original paired guidance: Acrylic — strong; durable; light; crease resistant; shrink resistant; etc." },
+    { id: "textile-8", kind: "point", verbatim: "Dralon (Velvet)", marks: null, contextNote: "Choose ANY TWO textiles, giving ONE property matching EACH selected textile. Complete original paired guidance: Dralon (Velvet) — soft; warm; light; durable; shrink resistant; etc." },
+    { id: "finish", kind: "point", verbatim: "Proban; Provatex; etc.", marks: null, contextNote: "Also name ONE fire-retardant finish from the original source pool." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2018-hl-sa-q9",
+          "src": "/exam-figures/home-economics/home-economics-2018-hl-sa-q9.png",
+          "srcHash": "25bd259b9261ab2a96065071413e022b",
+          "alt": "Complete original two-textile/property table and companion fire-retardant finish question.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 4 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sa-q10", topicId: "home-economics-1-2", conceptId: "sa-q10",
+    section: "A", questionRef: "2018 HL Section A Q10",
+    questionText: "Explain how advertising affects consumers’ buying behaviour.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "influence-1", kind: "point", verbatim: "(i) creates awareness of the product; brand awareness; creates interest in the product; creates a need among consumers to buy the product;", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Explain how advertising affects buying behaviour using the complete source guidance; no separate answer-line allocation is printed." },
+    { id: "influence-2", kind: "point", verbatim: "(ii) advertising techniques used to influence consumer decisions e.g. product placement; shelf position; food samples; humour; celebrity endorsements; music/songs; etc.", marks: null, contextNote: "Explain how advertising affects buying behaviour using the complete source guidance; no separate answer-line allocation is printed." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sa-q11", topicId: "home-economics-1-1", conceptId: "sa-q11",
+    section: "A", questionRef: "2018 HL Section A Q11",
+    questionText: "State two advantages of regular saving. Name two saving schemes offered by financial institutions.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "advantage-1", kind: "point", verbatim: "(i) more security, less worries; cope better with unexpected bills;", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY TWO saving advantages across both original pools." },
+    { id: "advantage-2", kind: "point", verbatim: "(ii) less risk of bad debts; good example to children; avoids paying on credit; safer than money kept at home; etc.", marks: null, contextNote: "Choose ANY TWO saving advantages across both original pools." },
+    { id: "schemes", kind: "point", verbatim: "Demand deposit account; notice deposit account; special term account; savings account; student saver account; junior saver account; online saver account; savings bonds; saving certificates; instalment savings schemes; etc.", marks: null, contextNote: "Also name ANY TWO saving schemes from the complete original list." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sa-q12", topicId: "home-economics-1-1", conceptId: "sa-q12",
+    section: "A", questionRef: "2018 HL Section A Q12",
+    questionText: "In relation to a person’s income, explain each of the following: Tax Credit USC",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "tax-1", kind: "point", verbatim: "Tax Credit: reduces the amount of income tax a person has to pay; income tax is calculated on gross income and then tax credits are deducted; notification of determination of tax credits and standard cut off points is issued annually by the Revenue Commissioners to each employee; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Original historical 2018 tax wording, thresholds and rates are preserved." },
+    { id: "tax-2", kind: "point", verbatim: "USC: compulsory tax payable on gross income; paid before pension contributions; calculated as % of a person’s total income, 1% - 8%; employees are liable to pay USC tax if their gross income is more than €13,000 annually; exempt if earning less than €13,000; etc.", marks: null, contextNote: "Original historical 2018 tax wording, thresholds and rates are preserved." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sb-q1a", topicId: "home-economics-0-1", conceptId: "sb-q1a",
+    section: "B", questionRef: "2018 HL Section B Q1(a)",
+    stem: "Calorie menu labelling in restaurants can help combat obesity even where only modest changes occur in consumer behaviour. (Calories on menus in Ireland, FSAI)",
+    questionText: "With reference to the sample menu above, comment and elaborate on the suitability of the menu options for a person on a weight reducing diet. In your answer, suggest modifications to the dishes for a healthier menu.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 6"}, totalMarks: 24,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "suitability", marks: 24, contextNote: "Comment AND elaborate on suitability and suggest modifications across four points. The source sets no separate suitability/modification quota. Complete original source guidance: Suitability: accept comments on individual ingredients i.e. nutritive/dietetic value in dishes; portion size; proportion of vegetables to meat; salmon & fish (haddock) oily fish – omega 3 reduce cholesterol; chicken breast – low fat; chutney – high sugar; basil butter – high in saturated fat; potatoes/rice/naan bread/poppadoms/chips – high in starchy carbohydrates which taken in excess can be converted to fat; vegetables – high in fibre; comparison of calories and foods within dishes; cooking methods i.e. frying, roasting, baking etc. Modifications: omit butter in grilled salmon dish; naan bread or poppadoms – serve one not both; rice – change to brown rice more filling and higher in fibre; use soda water/water in batter; offer salad instead of chips/garlic bread/fresh bread; low fat cheese/milk; omit cream from creamy sauce; etc.", permittedMarks: [0,6,12,18,24], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,6]},{"id":"point-3","verbatim":"Point 3","marks":6,"permittedMarks":[0,6]},{"id":"point-4","verbatim":"Point 4","marks":6,"permittedMarks":[0,6]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2018-hl-sb-q1-menu",
+          "src": "/exam-figures/home-economics/home-economics-2018-hl-sb-q1-menu.png",
+          "srcHash": "26746a4173d52e8afda0ecc88f7bf963",
+          "alt": "Complete original six-dish Sample Main Course Menu, all ingredients, accompaniments and calorie totals.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sb-q1b", topicId: "home-economics-0-7", conceptId: "sb-q1b",
+    section: "B", questionRef: "2018 HL Section B Q1(b)",
+    stem: "Calorie menu labelling in restaurants can help combat obesity even where only modest changes occur in consumer behaviour. (Calories on menus in Ireland, FSAI)",
+    questionText: "In relation to lipids, state the elemental composition and describe the chemical structure of a triglyceride.",
+    tariffModel: {"kind":"fixed","notation":"Three elements1 + three structure points2"}, totalMarks: 9,
+    rows: [
+    { id: "elements", kind: "anyN", verbatim: "Elemental composition", marks: 3, contextNote: "State all THREE original elements.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Carbon(C)","Hydrogen(H)","Oxygen(O)"]} },
+    { id: "structure", kind: "criterion", verbatim: "Structure", marks: 6, contextNote: "Made up of 3 fatty acids; one glycerol molecule; glycerol is an alcohol with three OH molecules; a fatty acid attaches itself to each hydroxyl group; three water molecules are eliminated (condensation) forming the triglyceride; etc. Accept a clearly labelled diagram", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sb-q1c", topicId: "home-economics-0-7", conceptId: "sb-q1c",
+    section: "B", questionRef: "2018 HL Section B Q1(c)",
+    stem: "Calorie menu labelling in restaurants can help combat obesity even where only modest changes occur in consumer behaviour. (Calories on menus in Ireland, FSAI)",
+    questionText: "Describe the structure and give one example of each of the following: • saturated fatty acids • monounsaturated fatty acids • polyunsaturated fatty acids.",
+    tariffModel: {"kind":"fixed","notation":"Three required structure/example accounts6"}, totalMarks: 18,
+    rows: [
+    { id: "class-1", kind: "criterion", verbatim: "Saturated fatty acids", marks: 6, contextNote: "Describe the structure AND give ONE matching example for this required class. The source awards six to the complete account without an internal split. Saturated fatty acids: each carbon atom is saturated with hydrogen; there are no double bonds present between the carbon atoms; carboxyl group at one end; methyl group at other end; etc. Example: butyric acid; stearic acid; etc. x", permittedMarks: [0,6] },
+    { id: "class-2", kind: "criterion", verbatim: "Monounsaturated fatty acids", marks: 6, contextNote: "Describe the structure AND give ONE matching example for this required class. The source awards six to the complete account without an internal split. Monounsaturated fatty acids: each carbon atom is not saturated with hydrogen; there is one double bond present between the carbon atoms; carboxyl group at one end; methyl group at other end; etc. Example: oleic acid; etc. x", permittedMarks: [0,6] },
+    { id: "class-3", kind: "criterion", verbatim: "Polyunsaturated fatty acids (PUFA’s)", marks: 6, contextNote: "Describe the structure AND give ONE matching example for this required class. The source awards six to the complete account without an internal split. Polyunsaturated fatty acids (PUFA’s): each carbon atom is not saturated with hydrogen; there is more than one double bond present between the carbon atoms; carboxyl group at one end; methyl group at other end; etc. Example: linoleic; linolenic; arachidonic acid; etc. Accept clearly labelled diagrams", permittedMarks: [0,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sb-q1d", topicId: "home-economics-0-7", conceptId: "sb-q1d",
+    section: "B", questionRef: "2018 HL Section B Q1(d)",
+    stem: "Calorie menu labelling in restaurants can help combat obesity even where only modest changes occur in consumer behaviour. (Calories on menus in Ireland, FSAI)",
+    questionText: "Outline the significance of fatty acids in the diet.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "significance", marks: 9, contextNote: "Complete original source guidance: Unsaturated fatty acids (cis) are generally good as they help reduce LDL and increase HDL; etc. Trans fatty acids are believed to increase incidence of CHD – increasing levels of LDL, depositing cholesterol on the wall of the arteries; reduces HDL which removes cholesterol from circulation; during cooking and processing cis fatty acids may be converted to trans fatty acids; etc. Saturated fatty acids increase levels of LDL cholesterol and lower HDL cholesterol increasing the risk of CHD; etc. Omega 3 fatty acids reduce risk of heart attack, stroke, circulatory diseases, formation of blood clots, and certain cancers; linked with healthy brain activity; prevention of eczema; etc. Essential fatty acids – linoleic, linolenic and arachidonic - cannot be manufactured in the body so must be obtained from food; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sb-q1e", topicId: "home-economics-0-11", conceptId: "sb-q1e",
+    section: "B", questionRef: "2018 HL Section B Q1(e)",
+    stem: "Calorie menu labelling in restaurants can help combat obesity even where only modest changes occur in consumer behaviour. (Calories on menus in Ireland, FSAI)",
+    questionText: "The aim of food labelling is to provide consumers with information which may influence their purchasing decisions. In addition to nutritional information, discuss the reasons why consumers consult food labels on pre‐packaged food prior to purchase.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "reasons", marks: 20, contextNote: "Complete original source guidance: Product information; calorie content; specific ingredients; allergen information; use by/best before date; food additives; origin; salt/fat/sugar content; cooking instructions; storing instructions; GM foods; irradiated food; serving size; health logo’s; contact details; etc.", permittedMarks: [0,4,8,12,16,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sb-q2a", topicId: "home-economics-0-1", conceptId: "sb-q2a",
+    section: "B", questionRef: "2018 HL Section B Q2(a)",
+    stem: "Vegetarian diets are a popular choice with many individuals and families.",
+    questionText: "In relation to vegetarian diets discuss: • classes / types • specific dietary requirements • benefits of a vegetarian diet.",
+    tariffModel: {"kind":"fixed","notation":"Three classes3 + four requirements3 + three benefits3"}, totalMarks: 30,
+    rows: [
+    { id: "classes", kind: "criterion", verbatim: "classes / types", marks: 9, contextNote: "Vegan: do not include milk, dairy products, eggs, meat and fish; eat plant based foods only; etc. lacto vegetarian: do not include eggs, meat and fish in diet; include milk and dairy products; etc. lacto ovo vegetarian: excludes meat and fish; include milk, dairy products and eggs; etc. ovo vegetarian: include eggs but not dairy products or meat: etc. pesco-vegetarian: do not include meat; include fish, milk, dairy products, eggs and poultry; etc. pollo vegetarian: do not include red meat or fish; include poultry, eggs, milk and dairy products; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    { id: "diet", kind: "criterion", verbatim: "specific dietary requirements", marks: 12, contextNote: "Each meal should include all food groups, follow vegetarian food pyramid; include protein from legumes, pulses, soya beans, nuts, cereals etc.; include vitamin B - use wholegrain products e.g. brown rice; use vegan foods that have been fortified e.g. soya milk, breakfast cereals or take B12 supplements; calcium - include cheese, milk, yoghurt in lacto vegetarian diets for calcium and protein; vegans can use alternative dairy foods e.g. soya milk; for iron include fortified breakfast cereals, dark green vegetables, wholemeal products, dried fruit, beans; use soya milk, tofu and TVP instead of milk, cheese and meat; use vegetable spreads, oils, vegetable stock cubes and agar instead of gelatine; replace animal fats with vegetable oil; include herbs and spices in dishes to add flavour; aim to use fortified products for vegan; etc.", permittedMarks: [0,3,6,9,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]},{"id":"point-4","verbatim":"Point 4","marks":3,"permittedMarks":[0,3]}] },
+    { id: "benefits", kind: "criterion", verbatim: "benefits of a vegetarian diet", marks: 9, contextNote: "Healthier as it contains less saturated fat; high in fibre therefore there is less chance of CHD and bowel disorders; eating fresh produce means less additives are eaten; a smaller number of vegetarians get diabetes; the high level of fruit/vegetables means obesity is less likely; less salt; cheaper; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sb-q2b", topicId: "home-economics-0-5", conceptId: "sb-q2b",
+    section: "B", questionRef: "2018 HL Section B Q2(b)",
+    stem: "Vegetarian diets are a popular choice with many individuals and families.",
+    questionText: "Name and describe two novel (alternative) protein foods that can be used in vegetarian diets.",
+    tariffModel: {"kind":"fixed","notation":"Two names2 + two matching descriptions2"}, totalMarks: 8,
+    rows: [
+    { id: "names", kind: "anyN", verbatim: "Name", marks: 4, contextNote: "Choose ANY TWO different novel protein foods from the complete original pool.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Tofu","Soya milk","Soya yoghurt","Tempeh","Textured Vegetable Protein","Miso","Quorn","soya products"]} },
+    { id: "descriptions", kind: "criterion", verbatim: "Description", marks: 4, contextNote: "Give ONE description for EACH of the SAME TWO selected foods; keep name and description matched. Complete paired source models: Tofu: soya bean curd made from soya milk; bland but can be smoked or marinated; made by curdling soya milk and pressing the resulting curds into blocks; etc. Soya milk: made by soaking soya beans in water; grinding with soaking water; etc. Soya yoghurt: fermented soya milk; etc. Tempeh: made from cooked and fermented soya beans; chewy in texture; etc. Textured Vegetable Protein: made from soya beans, cooked and dried; etc. Miso: paste made from soya beans mixed with rice, salt and water, then fermented; etc. Quorn: made from mycoprotein (fungi) and sold in ready to cook forms such as mince; etc. Accept: soya products. No description model is printed for this broader accepted category.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sb-q2c", topicId: "home-economics-0-5", conceptId: "sb-q2c",
+    section: "B", questionRef: "2018 HL Section B Q2(c)",
+    stem: "Vegetarian diets are a popular choice with many individuals and families.",
+    questionText: "Outline the manufacture / production of one novel (alternative) protein food.",
+    tariffModel: {"kind":"fixed","notation":"Name2 + five production points2"}, totalMarks: 12,
+    rows: [
+    { id: "name", kind: "point", verbatim: "TVP", marks: 2 },
+    { id: "production", kind: "criterion", verbatim: "Details", marks: 10, contextNote: "Five manufacture/production points for this SAME named food. TVP: Soya beans are de-hulled and oil extracted; beans ground into flour; carbohydrate removed; vegetable oil, flavouring, seasoning, nutritional additives (B12, methionine, iron) added; mixture heated and extruded; cubed or chopped (mince); dried; packed and labelled; etc.", permittedMarks: [0,2,4,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]},{"id":"point-4","verbatim":"Point 4","marks":2,"permittedMarks":[0,2]},{"id":"point-5","verbatim":"Point 5","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "food-1",
+                "label": "TVP",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "TVP",
+                            "marks": 2
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10
+                            ],
+                            "contextNote": "Five manufacture/production points for this SAME named food. TVP: Soya beans are de-hulled and oil extracted; beans ground into flour; carbohydrate removed; vegetable oil, flavouring, seasoning, nutritional additives (B12, methionine, iron) added; mixture heated and extruded; cubed or chopped (mince); dried; packed and labelled; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-5",
+                                        "verbatim": "Point 5",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "food-2",
+                "label": "Mycoprotein",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Mycoprotein",
+                            "marks": 2
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10
+                            ],
+                            "contextNote": "Five manufacture/production points for this SAME named food. Mycoprotein: fungus (fusarium gramineurum) is fermented in optimum condition; cells are harvested, filtered and drained; albumin is used to bind the sheets of fungi together; flavouring and colouring added; textured to resemble meat; sliced, cubed or shredded and steamed to set binder; packed and labelled; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-5",
+                                        "verbatim": "Point 5",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "other-food",
+                "label": "Another valid novel protein food",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Name ONE novel protein food. The original scheme supplies TVP and mycoprotein models; no additional model has been invented."
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6,
+                                  8,
+                                  10
+                            ],
+                            "contextNote": "Five manufacture/production points for the SAME named food; no additional source model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-5",
+                                        "verbatim": "Point 5",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sb-q3a", topicId: "home-economics-0-11", conceptId: "sb-q3a",
+    section: "B", questionRef: "2018 HL Section B Q3(a)",
+    stem: "Many modern processed products such as low calorie, snack and ready to eat convenience foods, would not be possible without the use of food additives.",
+    questionText: "What is a processed food? Evaluate the merits of incorporating processed foods in the diet.",
+    tariffModel: {"kind":"fixed","notation":"Definition4 + four merits4"}, totalMarks: 20,
+    rows: [
+    { id: "definition", kind: "criterion", verbatim: "processed food", marks: 4, contextNote: "A processed food is any food that has been altered in some way during preparation; food processing can be as basic as freezing, canning, baking, and drying; not all processed food is unhealthy but some contain high levels of sugar, salt and fat; etc.", permittedMarks: [0,4] },
+    { id: "merits", kind: "criterion", verbatim: "Merits", marks: 16, contextNote: "Merits: makes food safe to eat; save time & energy in the home; creates new food products; healthier food options; adds variety to the diet; increase the shelf-life of food; ensure wide choice all year round; allow for fortification; etc.", permittedMarks: [0,4,8,12,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sb-q3b", topicId: "home-economics-0-11", conceptId: "sb-q3b",
+    section: "B", questionRef: "2018 HL Section B Q3(b)",
+    stem: "Many modern processed products such as low calorie, snack and ready to eat convenience foods, would not be possible without the use of food additives.",
+    questionText: "Give an informative account of flavourings and antioxidants. Refer to: • classes / types • examples • functions • use.",
+    tariffModel: {"kind":"fixed","notation":"BOTH additives: two classes1 + examples1 + uses1 + functions2"}, totalMarks: 20,
+    rows: [
+    { id: "additive-1-classes", kind: "criterion", verbatim: "classes", marks: 2, contextNote: "For Flavourings, give ANY TWO classes; keep examples and uses matched to the selected classes. The three printed flavouring classes Natural, Artificial and Flavour Enhancers remain available; do not force Natural/Artificial. Complete original class/example/use/function relationships: Natural — Examples: Sugar: Uses: Jam, tinned beans, cereals; etc. Functions: To add flavour to bland food; to replace flavour lost in processing; to enhance the flavour of food; etc. | Natural — Examples: Salt; Uses: Cheese, butter, convenience foods; etc. | Natural — Examples: Spices; herbs etc. Uses: Meat products, sauces, stock cubes; etc. | Artificial — Examples: Ethyl acetate; Uses: Rum flavour; | Artificial — Examples: Amyl acetate; Uses: Pear flavour; | Artificial — Examples: Benzaldehyde Uses: Cherry flavour; | Artificial — Examples: Maltol; Esters; aldehydes; etc. Uses: Baked goods; etc. Cakes: etc. | Flavour Enhancers E600-699 — Examples: Monosodium Glutamate E621 Uses: Soups, sauces, stock cubes; prepared meals; etc. Accept: Sweeteners; etc.", permittedMarks: [0,1,2], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "additive-1-examples", kind: "criterion", verbatim: "examples", marks: 2, contextNote: "For Flavourings, give ANY TWO examples; keep examples and uses matched to the selected classes. The three printed flavouring classes Natural, Artificial and Flavour Enhancers remain available; do not force Natural/Artificial. Complete original class/example/use/function relationships: Natural — Examples: Sugar: Uses: Jam, tinned beans, cereals; etc. Functions: To add flavour to bland food; to replace flavour lost in processing; to enhance the flavour of food; etc. | Natural — Examples: Salt; Uses: Cheese, butter, convenience foods; etc. | Natural — Examples: Spices; herbs etc. Uses: Meat products, sauces, stock cubes; etc. | Artificial — Examples: Ethyl acetate; Uses: Rum flavour; | Artificial — Examples: Amyl acetate; Uses: Pear flavour; | Artificial — Examples: Benzaldehyde Uses: Cherry flavour; | Artificial — Examples: Maltol; Esters; aldehydes; etc. Uses: Baked goods; etc. Cakes: etc. | Flavour Enhancers E600-699 — Examples: Monosodium Glutamate E621 Uses: Soups, sauces, stock cubes; prepared meals; etc. Accept: Sweeteners; etc.", permittedMarks: [0,1,2], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "additive-1-uses", kind: "criterion", verbatim: "uses", marks: 2, contextNote: "For Flavourings, give ANY TWO uses; keep examples and uses matched to the selected classes. The three printed flavouring classes Natural, Artificial and Flavour Enhancers remain available; do not force Natural/Artificial. Complete original class/example/use/function relationships: Natural — Examples: Sugar: Uses: Jam, tinned beans, cereals; etc. Functions: To add flavour to bland food; to replace flavour lost in processing; to enhance the flavour of food; etc. | Natural — Examples: Salt; Uses: Cheese, butter, convenience foods; etc. | Natural — Examples: Spices; herbs etc. Uses: Meat products, sauces, stock cubes; etc. | Artificial — Examples: Ethyl acetate; Uses: Rum flavour; | Artificial — Examples: Amyl acetate; Uses: Pear flavour; | Artificial — Examples: Benzaldehyde Uses: Cherry flavour; | Artificial — Examples: Maltol; Esters; aldehydes; etc. Uses: Baked goods; etc. Cakes: etc. | Flavour Enhancers E600-699 — Examples: Monosodium Glutamate E621 Uses: Soups, sauces, stock cubes; prepared meals; etc. Accept: Sweeteners; etc.", permittedMarks: [0,1,2], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "additive-1-functions", kind: "criterion", verbatim: "functions", marks: 4, contextNote: "For Flavourings, give ANY TWO functions; keep examples and uses matched to the selected classes. The three printed flavouring classes Natural, Artificial and Flavour Enhancers remain available; do not force Natural/Artificial. Complete original class/example/use/function relationships: Natural — Examples: Sugar: Uses: Jam, tinned beans, cereals; etc. Functions: To add flavour to bland food; to replace flavour lost in processing; to enhance the flavour of food; etc. | Natural — Examples: Salt; Uses: Cheese, butter, convenience foods; etc. | Natural — Examples: Spices; herbs etc. Uses: Meat products, sauces, stock cubes; etc. | Artificial — Examples: Ethyl acetate; Uses: Rum flavour; | Artificial — Examples: Amyl acetate; Uses: Pear flavour; | Artificial — Examples: Benzaldehyde Uses: Cherry flavour; | Artificial — Examples: Maltol; Esters; aldehydes; etc. Uses: Baked goods; etc. Cakes: etc. | Flavour Enhancers E600-699 — Examples: Monosodium Glutamate E621 Uses: Soups, sauces, stock cubes; prepared meals; etc. Accept: Sweeteners; etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    { id: "additive-2-classes", kind: "criterion", verbatim: "classes", marks: 2, contextNote: "For Antioxidants, give ANY TWO classes; keep examples and uses matched to the selected classes. Complete original class/example/use/function relationships: Natural — Examples: Ascorbic acid/Vitamin C, Tocopherol/ Vitamin E (E306), etc. Uses: Fruit drinks, vegetable oils, jams; etc. Functions: Prevents oxidative rancidity where food is spoiled by reacting with oxygen; reduces food waste; food has a longer shelf life; etc. | Artificial — Examples: BHA (E320), BHT (E321), etc. Uses: Stock cubes, cheese spread, chewing gum, crisps, cooking oils, tinned fish etc.", permittedMarks: [0,1,2], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "additive-2-examples", kind: "criterion", verbatim: "examples", marks: 2, contextNote: "For Antioxidants, give ANY TWO examples; keep examples and uses matched to the selected classes. Complete original class/example/use/function relationships: Natural — Examples: Ascorbic acid/Vitamin C, Tocopherol/ Vitamin E (E306), etc. Uses: Fruit drinks, vegetable oils, jams; etc. Functions: Prevents oxidative rancidity where food is spoiled by reacting with oxygen; reduces food waste; food has a longer shelf life; etc. | Artificial — Examples: BHA (E320), BHT (E321), etc. Uses: Stock cubes, cheese spread, chewing gum, crisps, cooking oils, tinned fish etc.", permittedMarks: [0,1,2], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "additive-2-uses", kind: "criterion", verbatim: "uses", marks: 2, contextNote: "For Antioxidants, give ANY TWO uses; keep examples and uses matched to the selected classes. Complete original class/example/use/function relationships: Natural — Examples: Ascorbic acid/Vitamin C, Tocopherol/ Vitamin E (E306), etc. Uses: Fruit drinks, vegetable oils, jams; etc. Functions: Prevents oxidative rancidity where food is spoiled by reacting with oxygen; reduces food waste; food has a longer shelf life; etc. | Artificial — Examples: BHA (E320), BHT (E321), etc. Uses: Stock cubes, cheese spread, chewing gum, crisps, cooking oils, tinned fish etc.", permittedMarks: [0,1,2], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "additive-2-functions", kind: "criterion", verbatim: "functions", marks: 4, contextNote: "For Antioxidants, give ANY TWO functions; keep examples and uses matched to the selected classes. Complete original class/example/use/function relationships: Natural — Examples: Ascorbic acid/Vitamin C, Tocopherol/ Vitamin E (E306), etc. Uses: Fruit drinks, vegetable oils, jams; etc. Functions: Prevents oxidative rancidity where food is spoiled by reacting with oxygen; reduces food waste; food has a longer shelf life; etc. | Artificial — Examples: BHA (E320), BHT (E321), etc. Uses: Stock cubes, cheese spread, chewing gum, crisps, cooking oils, tinned fish etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2018-hl-sb-q3b-additive-1","label":"Flavourings","marks":10,"rowIds":["additive-1-classes","additive-1-examples","additive-1-uses","additive-1-functions"]},{"sourceCardId":"he-2018-hl-sb-q3b-additive-2","label":"Antioxidants","marks":10,"rowIds":["additive-2-classes","additive-2-examples","additive-2-uses","additive-2-functions"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sb-q3c", topicId: "home-economics-0-11", conceptId: "sb-q3c",
+    section: "B", questionRef: "2018 HL Section B Q3(c)",
+    stem: "Many modern processed products such as low calorie, snack and ready to eat convenience foods, would not be possible without the use of food additives.",
+    questionText: "Explain how the use of food additives is regulated by European Union (EU) legislation.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 5"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "regulated", marks: 10, contextNote: "Complete original source guidance: Provide a list of approved additives that have been tested; each approved additive has E number (except flavourings); E number or name must be on labels; additives should not reduce nutritive value; cannot be used to disguise faults; must not be a health hazard; must not mislead consumer; must be used in smallest possible effective quantity; colourings not allowed in fresh fruit, vegetables, meat, poultry, fish; preservatives, BHA, BHT and colourings not allowed in baby food; sweeteners not permitted in food for infants or young children; additives are tested by the European Scientific Committee for Food (SCF); the SCF take advice from the World Health Organisation (WHO) and the Joint Expert Committee on Food Additives (JECFA); in Ireland the (Food Safety Authority of Ireland) FSAI are responsible for enforcing the safe use of food additives; etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sb-q4a", topicId: "home-economics-1-3", conceptId: "sb-q4a",
+    section: "B", questionRef: "2018 HL Section B Q4(a)",
+    stem: "Smart home technology is the automation and management of your home and daily life.",
+    questionText: "Discuss how technology has contributed to the efficient management of the home.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "technology", marks: 20, contextNote: "Complete original source guidance: Appliances reduce workload; less labour intensive; improve quality of home life as tasks completed quickly; easy to care for products require less maintenance; increase in effectiveness of some tasks e.g. steam cleaners; use of computer chips in household appliances; design of appliances; automated systems - electronic gates, security lighting, burglar alarms, CCTV; oven timers; apps to turn on lights, heating; use of computer packages for accounts and budgeting, banking on line; internet shopping; communication via skype, social media; etc.", permittedMarks: [0,4,8,12,16,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sb-q4b", topicId: "home-economics-1-3", conceptId: "sb-q4b",
+    section: "B", questionRef: "2018 HL Section B Q4(b)",
+    stem: "Smart home technology is the automation and management of your home and daily life.",
+    questionText: "Set out details of a study that you have undertaken on a refrigeration appliance. Refer to: • working principle • guidelines for use • modern features.",
+    tariffModel: {"kind":"fixed","notation":"Working principle4×3 + use3×2 + modern features2×2"}, totalMarks: 22,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Working principle", marks: 12, contextNote: "Working principle: a compressor at the base of the fridge contains a refrigerant - Freon 12/liquid ammonia/isobutene; a motor activates the compressor which forces the refrigerant into the condenser; the condenser cools the gaseous refrigerant, condenses it into a liquid; the refrigerant moves to the evaporator where it turns back into a gas; the liquid evaporates as heat is taken from the fridge cabinet, this cools the fridge; the refrigerant returns to the compressor and cycle starts again; a thermostat is connected to the compressor and maintains an internal temperature of 3°C - 4°C within the refrigerator by turning on and off the motor when needed; etc. Accept a clearly labelled diagram.", permittedMarks: [0,3,6,9,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]},{"id":"point-4","verbatim":"Point 4","marks":3,"permittedMarks":[0,3]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "Guidelines for use", marks: 6, contextNote: "Guidelines for use: avoid opening unnecessarily, it raises the temperature putting pressure on motor; cool foods before placing in fridge to avoid raising temperature; cover foods to avoid drying out and cross-flavouring; store raw fish/meat below cooked food/dairy to avoid cross contamination; use food in rotation to prevent waste & food passing its best-before date; do not over pack to allow air circulation; etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "Modern features", marks: 4, contextNote: "Modern features: chilled drinks dispenser; gated shelves for tall containers; integrated fridge door to match kitchen cabinet doors; digital temperature display; internal or external ice-maker; zoned refrigeration; automatic defrosting; frost-free fridges; quick chill settings; antibacterial coatings; LED lighting; alarm; humidity controlled drawers; smart refrigerators; etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sb-q4c", topicId: "home-economics-1-3", conceptId: "sb-q4c",
+    section: "B", questionRef: "2018 HL Section B Q4(c)",
+    stem: "Smart home technology is the automation and management of your home and daily life.",
+    questionText: "Evaluate the role of energy labelling when selecting household appliances.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 4"}, totalMarks: 8,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "energy labelling", marks: 8, contextNote: "Historical 2018 energy-label wording and ratings are preserved. Complete original source guidance: Energy labelling indicates the energy consumption of the appliance - rated A-G, A-rated appliances use the least amount of electricity making them cheapest to run; cause least harm to the environment; G-rated appliances use the most electricity, making them the most expensive to run; cause the greatest harm to the environment; provides information on appliance capacity; noise emitted described in decibels; the capacity of fresh food & frozen food in litres for refrigerators and combined appliance; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sb-q5a", topicId: "home-economics-2-0", conceptId: "sb-q5a",
+    section: "B", questionRef: "2018 HL Section B Q5(a)",
+    stem: "‘There can be no keener revelation of a society’s soul than the way in which it treats its children’. (Nelson Mandela)",
+    questionText: "Identify and explain the rights of children in society today.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 4"}, totalMarks: 16,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "rights", marks: 16, contextNote: "Complete original source guidance: Right to life; name and nationality; education; family life; play and recreation; adequate standard of living; protection from physical, emotional, sexual abuse and harm; right to environment that provides for their physical, psychological, social and educational needs; right to love, affection and understanding; safety; protection from discrimination, cruelty and exploitation; etc.", permittedMarks: [0,4,8,12,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sb-q5b", topicId: "home-economics-2-1", conceptId: "sb-q5b",
+    section: "B", questionRef: "2018 HL Section B Q5(b)",
+    stem: "‘There can be no keener revelation of a society’s soul than the way in which it treats its children’. (Nelson Mandela)",
+    questionText: "Discuss the possible causes of conflict between adolescents and adults. Suggest strategies for resolving this conflict.",
+    tariffModel: {"kind":"fixed","notation":"Three causes4 + three strategies4"}, totalMarks: 24,
+    rows: [
+    { id: "causes", kind: "criterion", verbatim: "Causes", marks: 12, contextNote: "Causes: high parental expectations; school work; phone use; noise; boyfriend/girlfriend; church/religion; personal appearance; smoking, drink, drug use; dishonesty; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    { id: "strategies", kind: "criterion", verbatim: "Strategies", marks: 12, contextNote: "Strategies: identify the issues – be clear and concise, do not try to solve too many problems at once; listen with empathy; use “I” statements; clarify feelings; build lines of communication; negotiate; use positive methods; see issue from both sides; compromise; enlist the help of a family relative or friend who is removed from the situation; counselling; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sb-q5c", topicId: "home-economics-2-1", conceptId: "sb-q5c",
+    section: "B", questionRef: "2018 HL Section B Q5(c)",
+    stem: "‘There can be no keener revelation of a society’s soul than the way in which it treats its children’. (Nelson Mandela)",
+    questionText: "Outline the protection available for families under the Family Law (Maintenance of Spouses and Children) Act, 1976.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 5"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "protection", marks: 10, contextNote: "Historical 2018 scheme account of the named 1976 Act. Complete original source guidance: If a relationship breaks down maintenance must be paid to a dependant spouse/civil partner if they do not have the financial resources to support themselves; if a relationship breaks down maintenance must be paid to the parent with custody of the dependent child/children even if both are sharing the same house; if a maintenance agreement cannot be reached they will have to attend the district court and apply for a maintenance order; an Attachment of Earnings Order can be granted if the supporting spouse fails to pay maintenance, money is deducted from his/her wages and paid directly to dependent spouse; etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q1ai", topicId: "home-economics-3-3", conceptId: "sc-q1ai",
+    section: "C", questionRef: "2018 HL Section C E1 Q1(a)(i)",
+    stem: "According to CSO figures, 896 families were homeless on census night including 1,726 children in those families. (Central Statistics Office, 2016)",
+    questionText: "Outline the housing requirements necessary to meet the needs of people who are homeless.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 4"}, totalMarks: 16,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "housing requirements", marks: 16, contextNote: "Complete original source guidance: Regular shelter e.g. hostel, emergency bed and breakfast or private accommodation with a bathroom/shower facilities; secure storage for belongings; privacy - a bed of their own and private changing facilities; communal facilities e.g. a shared kitchen or TV room; access to laundry facilities; serviced halting sites for mobile homes; etc.", permittedMarks: [0,4,8,12,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q1aii", topicId: "home-economics-3-3", conceptId: "sc-q1aii",
+    section: "C", questionRef: "2018 HL Section C E1 Q1(a)(ii)",
+    stem: "According to CSO figures, 896 families were homeless on census night including 1,726 children in those families. (Central Statistics Office, 2016)",
+    questionText: "Give an informative account of the quality of accommodation provided in each of the following housing sectors: • private housing sector / owner occupied • private rental sector.",
+    tariffModel: {"kind":"fixed","notation":"BOTH housing sectors: three points3 each"}, totalMarks: 18,
+    rows: [
+    { id: "sector-1", kind: "criterion", verbatim: "private housing sector/owner occupied", marks: 9, contextNote: "Historical 2018 accommodation and legislative account. private housing sector/owner occupied: 3 points @ 3 marks each The quality of private homes can vary depending on year of construction; higher incidence of poor quality housing in older houses because of the lack of standards in terms of insulation, damp proofing and ventilation at the time of building; many older dwellings are occupied by elderly people living alone on fixed incomes unable to afford repairs and upgrades; homes built in recent years are of higher standard due to stricter building regulations – Buildings Regulations Act 1991; the National House Building guarantee scheme “Homebond” ensures a high standard of quality; good insulation, high levels of comfort, zoned heating; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    { id: "sector-2", kind: "criterion", verbatim: "private rental sector", marks: 9, contextNote: "Historical 2018 accommodation and legislative account. private rental sector: 3 points @ 3 marks each Legislation – Residential Tenancies Act 2004 sets down minimum standards for rental accommodation, however some accommodation offered is of poor quality and not good value for money; rent charged depends on demand and supply, the quality and size of the building, amenities; regulations ensure that properties for rent meet minimum physical standards; regulations require the landlord to ensure the property is in a proper state of structural repair, maintain the property, ensure gas/electricity supplies are safe and in good repair, ensure that every room has adequate ventilation and lighting; hot and cold water must be provided; bathrooms and showers need to be in good working order; sufficient cooking facilities must be in place; electricity, lighting, ventilation and heating must be provided; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q1aiii", topicId: "home-economics-3-3", conceptId: "sc-q1aiii",
+    section: "C", questionRef: "2018 HL Section C E1 Q1(a)(iii)",
+    stem: "According to CSO figures, 896 families were homeless on census night including 1,726 children in those families. (Central Statistics Office, 2016)",
+    questionText: "Discuss the importance of house building standards with reference to how building standards are regulated.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 4"}, totalMarks: 16,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "house building standards", marks: 16, contextNote: "Discuss importance WITH REFERENCE TO regulation across four points. No separate importance/regulation quota is printed; historical 2018 source guidance retained. Complete original source guidance: Necessary to procure a loan; safety; sustainability – houses to last, heated by sustainable methods; environmentally friendly; etc. National House Building Guarantee Scheme (Homebond) – registered builders, house inspected 3 times during construction, certificate is issued if house meets required standard; certificate guarantees against loss of deposit if builder goes bankrupt; against major structural defects within 10 years; many lending agencies require that new houses have a homebond certificate; scheme is run by the Department of the Environment; etc. Building Regulations Act 1991 – sets out rules in relation to areas of house design and construction to ensure that houses are safe and comfortable living spaces for occupants; regulations apply to materials used, construction standards, insulation, heating, lighting, ventilation and waste disposal; etc. Building Energy Rating (BER) – stipulates that all homes available to buy or rent must display a BER certificate; rates the house from A-G, A- rated homes most energy efficient, G rated homes least energy efficient; etc.", permittedMarks: [0,4,8,12,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q1bi", topicId: "home-economics-3-4", conceptId: "sc-q1bi",
+    section: "C", questionRef: "2018 HL Section C E1 Q1(b)(i)",
+    stem: "Well‐chosen floor coverings provide style and beauty and improve the aesthetics of a room.",
+    questionText: "Outline four factors that should be considered when selecting floor coverings for a home.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 3"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 12, contextNote: "Complete original source guidance: Cost; function of the room; ease of maintenance/cleaning; aesthetics; safety; subfloor; etc.", permittedMarks: [0,3,6,9,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]},{"id":"point-4","verbatim":"Point 4","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q1bii", topicId: "home-economics-3-4", conceptId: "sc-q1bii",
+    section: "C", questionRef: "2018 HL Section C E1 Q1(b)(ii)",
+    stem: "Well‐chosen floor coverings provide style and beauty and improve the aesthetics of a room.",
+    questionText: "Describe three types of flooring / floor coverings used in the home. List the properties of each.",
+    tariffModel: {"kind":"fixed","notation":"Three coverings×(description4 + two properties1)"}, totalMarks: 18,
+    rows: [
+    { id: "description-1", kind: "criterion", verbatim: "Description", marks: 4, contextNote: "Choose THREE different floor coverings. Give the description of selected covering 1; the source gives no separate name tariff and no internal description split. Complete original paired models: Description: Ceramic tiles - made of water, clay and minerals; can be glazed or unglazed; variety of sizes and shapes; etc. Properties: Hard-wearing; easy to clean; low maintenance; range of colours, designs and sizes; hard underfoot; stain resistant; fire resistant; cold; crack/chip easily; etc. | Description: Flagstone/cut stone – various shapes; natural colours; may have uneven textures; etc. Properties: Hard wearing; cold underfoot; chips easily; etc. | Description: Slate - fine-grained, foliated metamorphic rock; etc. Properties: Hard wearing; warm underfoot; uneven texture; dark colours; slightly absorbent; easy to clean; etc. | Description: Marble/travertine e.g. limestone refined into the individual tiles and slabs; flecks of colour; etc. Properties: Cold underfoot; chips easily; available in a variety of colours; etc. | Description: Stone carpeting – gravel based mixture poured on subfloor and sealed when set; etc. Properties: Hard-wearing; easy to clean; low maintenance; range of colours, designs and sizes; hard underfoot; etc. | Description: Mosaics – a mixture of glass, metal, resin and stone in various textures and colours; etc. Properties: Decorative; hard wearing; etc. | Description: Wood: strip – strips of hardwood e.g. oak, beech, maple or soft wood e.g. pine, spruce, tongue and grooved to form a smooth finish; strips vary in thickness; may be solid wood or laminated with a plastic veneer; etc. Block Parquet – blocks of hard wood laid in a herringbone pattern; etc. Mosaic – blocks of hard wood laid in a basket weave pattern; etc. Properties: Attractive; durable; low maintenance; most are ready sealed; noisy; cold; marked and scratched easily; etc. | Description: Vinyl: resin, plasticiser, pigment and filler put together under heat and pressure on to an alkali-resistant backing; may have a foam backing for extra thickness; patterns may be marbled, flecked, embossed, veined or striped; sheets or tiles; etc. Properties: Warm and soft underfoot; durability varies with thickness; scorches and melts when subjected to heat; easy to clean and maintain, stain resistant; huge variety in colour, design and texture; quiet; etc. | Description: Carpet: woven – fabric pile is woven on to hessian backing; cut pile Axminster weave allows for unlimited range of colours and designs; continuous strand Wilton weave limits number of colours; thicker carpet; etc. Tufted – tufts of pile inserted into a woven backing, held In place with adhesive and backed with foam; carpet tiles - graded as light, medium, heavy and general; 100% wool; 80% wool and 20% nylon; etc. Properties: Wide variety of colours, patterns and textures; good insulator and noise absorber; non slip; easy to maintain; hard wearing; etc. Accept: cork; linoleum; concrete; etc.", permittedMarks: [0,4] },
+    { id: "properties-1", kind: "criterion", verbatim: "properties", marks: 2, contextNote: "Two properties of the SAME selected covering 1. Keep properties paired with its description. Cork, linoleum and concrete are accepted names only; no models are invented. Description: Ceramic tiles - made of water, clay and minerals; can be glazed or unglazed; variety of sizes and shapes; etc. Properties: Hard-wearing; easy to clean; low maintenance; range of colours, designs and sizes; hard underfoot; stain resistant; fire resistant; cold; crack/chip easily; etc. | Description: Flagstone/cut stone – various shapes; natural colours; may have uneven textures; etc. Properties: Hard wearing; cold underfoot; chips easily; etc. | Description: Slate - fine-grained, foliated metamorphic rock; etc. Properties: Hard wearing; warm underfoot; uneven texture; dark colours; slightly absorbent; easy to clean; etc. | Description: Marble/travertine e.g. limestone refined into the individual tiles and slabs; flecks of colour; etc. Properties: Cold underfoot; chips easily; available in a variety of colours; etc. | Description: Stone carpeting – gravel based mixture poured on subfloor and sealed when set; etc. Properties: Hard-wearing; easy to clean; low maintenance; range of colours, designs and sizes; hard underfoot; etc. | Description: Mosaics – a mixture of glass, metal, resin and stone in various textures and colours; etc. Properties: Decorative; hard wearing; etc. | Description: Wood: strip – strips of hardwood e.g. oak, beech, maple or soft wood e.g. pine, spruce, tongue and grooved to form a smooth finish; strips vary in thickness; may be solid wood or laminated with a plastic veneer; etc. Block Parquet – blocks of hard wood laid in a herringbone pattern; etc. Mosaic – blocks of hard wood laid in a basket weave pattern; etc. Properties: Attractive; durable; low maintenance; most are ready sealed; noisy; cold; marked and scratched easily; etc. | Description: Vinyl: resin, plasticiser, pigment and filler put together under heat and pressure on to an alkali-resistant backing; may have a foam backing for extra thickness; patterns may be marbled, flecked, embossed, veined or striped; sheets or tiles; etc. Properties: Warm and soft underfoot; durability varies with thickness; scorches and melts when subjected to heat; easy to clean and maintain, stain resistant; huge variety in colour, design and texture; quiet; etc. | Description: Carpet: woven – fabric pile is woven on to hessian backing; cut pile Axminster weave allows for unlimited range of colours and designs; continuous strand Wilton weave limits number of colours; thicker carpet; etc. Tufted – tufts of pile inserted into a woven backing, held In place with adhesive and backed with foam; carpet tiles - graded as light, medium, heavy and general; 100% wool; 80% wool and 20% nylon; etc. Properties: Wide variety of colours, patterns and textures; good insulator and noise absorber; non slip; easy to maintain; hard wearing; etc. Accept: cork; linoleum; concrete; etc.", permittedMarks: [0,1,2], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "description-2", kind: "criterion", verbatim: "Description", marks: 4, contextNote: "Choose THREE different floor coverings. Give the description of selected covering 2; the source gives no separate name tariff and no internal description split. Complete original paired models: Description: Ceramic tiles - made of water, clay and minerals; can be glazed or unglazed; variety of sizes and shapes; etc. Properties: Hard-wearing; easy to clean; low maintenance; range of colours, designs and sizes; hard underfoot; stain resistant; fire resistant; cold; crack/chip easily; etc. | Description: Flagstone/cut stone – various shapes; natural colours; may have uneven textures; etc. Properties: Hard wearing; cold underfoot; chips easily; etc. | Description: Slate - fine-grained, foliated metamorphic rock; etc. Properties: Hard wearing; warm underfoot; uneven texture; dark colours; slightly absorbent; easy to clean; etc. | Description: Marble/travertine e.g. limestone refined into the individual tiles and slabs; flecks of colour; etc. Properties: Cold underfoot; chips easily; available in a variety of colours; etc. | Description: Stone carpeting – gravel based mixture poured on subfloor and sealed when set; etc. Properties: Hard-wearing; easy to clean; low maintenance; range of colours, designs and sizes; hard underfoot; etc. | Description: Mosaics – a mixture of glass, metal, resin and stone in various textures and colours; etc. Properties: Decorative; hard wearing; etc. | Description: Wood: strip – strips of hardwood e.g. oak, beech, maple or soft wood e.g. pine, spruce, tongue and grooved to form a smooth finish; strips vary in thickness; may be solid wood or laminated with a plastic veneer; etc. Block Parquet – blocks of hard wood laid in a herringbone pattern; etc. Mosaic – blocks of hard wood laid in a basket weave pattern; etc. Properties: Attractive; durable; low maintenance; most are ready sealed; noisy; cold; marked and scratched easily; etc. | Description: Vinyl: resin, plasticiser, pigment and filler put together under heat and pressure on to an alkali-resistant backing; may have a foam backing for extra thickness; patterns may be marbled, flecked, embossed, veined or striped; sheets or tiles; etc. Properties: Warm and soft underfoot; durability varies with thickness; scorches and melts when subjected to heat; easy to clean and maintain, stain resistant; huge variety in colour, design and texture; quiet; etc. | Description: Carpet: woven – fabric pile is woven on to hessian backing; cut pile Axminster weave allows for unlimited range of colours and designs; continuous strand Wilton weave limits number of colours; thicker carpet; etc. Tufted – tufts of pile inserted into a woven backing, held In place with adhesive and backed with foam; carpet tiles - graded as light, medium, heavy and general; 100% wool; 80% wool and 20% nylon; etc. Properties: Wide variety of colours, patterns and textures; good insulator and noise absorber; non slip; easy to maintain; hard wearing; etc. Accept: cork; linoleum; concrete; etc.", permittedMarks: [0,4] },
+    { id: "properties-2", kind: "criterion", verbatim: "properties", marks: 2, contextNote: "Two properties of the SAME selected covering 2. Keep properties paired with its description. Cork, linoleum and concrete are accepted names only; no models are invented. Description: Ceramic tiles - made of water, clay and minerals; can be glazed or unglazed; variety of sizes and shapes; etc. Properties: Hard-wearing; easy to clean; low maintenance; range of colours, designs and sizes; hard underfoot; stain resistant; fire resistant; cold; crack/chip easily; etc. | Description: Flagstone/cut stone – various shapes; natural colours; may have uneven textures; etc. Properties: Hard wearing; cold underfoot; chips easily; etc. | Description: Slate - fine-grained, foliated metamorphic rock; etc. Properties: Hard wearing; warm underfoot; uneven texture; dark colours; slightly absorbent; easy to clean; etc. | Description: Marble/travertine e.g. limestone refined into the individual tiles and slabs; flecks of colour; etc. Properties: Cold underfoot; chips easily; available in a variety of colours; etc. | Description: Stone carpeting – gravel based mixture poured on subfloor and sealed when set; etc. Properties: Hard-wearing; easy to clean; low maintenance; range of colours, designs and sizes; hard underfoot; etc. | Description: Mosaics – a mixture of glass, metal, resin and stone in various textures and colours; etc. Properties: Decorative; hard wearing; etc. | Description: Wood: strip – strips of hardwood e.g. oak, beech, maple or soft wood e.g. pine, spruce, tongue and grooved to form a smooth finish; strips vary in thickness; may be solid wood or laminated with a plastic veneer; etc. Block Parquet – blocks of hard wood laid in a herringbone pattern; etc. Mosaic – blocks of hard wood laid in a basket weave pattern; etc. Properties: Attractive; durable; low maintenance; most are ready sealed; noisy; cold; marked and scratched easily; etc. | Description: Vinyl: resin, plasticiser, pigment and filler put together under heat and pressure on to an alkali-resistant backing; may have a foam backing for extra thickness; patterns may be marbled, flecked, embossed, veined or striped; sheets or tiles; etc. Properties: Warm and soft underfoot; durability varies with thickness; scorches and melts when subjected to heat; easy to clean and maintain, stain resistant; huge variety in colour, design and texture; quiet; etc. | Description: Carpet: woven – fabric pile is woven on to hessian backing; cut pile Axminster weave allows for unlimited range of colours and designs; continuous strand Wilton weave limits number of colours; thicker carpet; etc. Tufted – tufts of pile inserted into a woven backing, held In place with adhesive and backed with foam; carpet tiles - graded as light, medium, heavy and general; 100% wool; 80% wool and 20% nylon; etc. Properties: Wide variety of colours, patterns and textures; good insulator and noise absorber; non slip; easy to maintain; hard wearing; etc. Accept: cork; linoleum; concrete; etc.", permittedMarks: [0,1,2], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "description-3", kind: "criterion", verbatim: "Description", marks: 4, contextNote: "Choose THREE different floor coverings. Give the description of selected covering 3; the source gives no separate name tariff and no internal description split. Complete original paired models: Description: Ceramic tiles - made of water, clay and minerals; can be glazed or unglazed; variety of sizes and shapes; etc. Properties: Hard-wearing; easy to clean; low maintenance; range of colours, designs and sizes; hard underfoot; stain resistant; fire resistant; cold; crack/chip easily; etc. | Description: Flagstone/cut stone – various shapes; natural colours; may have uneven textures; etc. Properties: Hard wearing; cold underfoot; chips easily; etc. | Description: Slate - fine-grained, foliated metamorphic rock; etc. Properties: Hard wearing; warm underfoot; uneven texture; dark colours; slightly absorbent; easy to clean; etc. | Description: Marble/travertine e.g. limestone refined into the individual tiles and slabs; flecks of colour; etc. Properties: Cold underfoot; chips easily; available in a variety of colours; etc. | Description: Stone carpeting – gravel based mixture poured on subfloor and sealed when set; etc. Properties: Hard-wearing; easy to clean; low maintenance; range of colours, designs and sizes; hard underfoot; etc. | Description: Mosaics – a mixture of glass, metal, resin and stone in various textures and colours; etc. Properties: Decorative; hard wearing; etc. | Description: Wood: strip – strips of hardwood e.g. oak, beech, maple or soft wood e.g. pine, spruce, tongue and grooved to form a smooth finish; strips vary in thickness; may be solid wood or laminated with a plastic veneer; etc. Block Parquet – blocks of hard wood laid in a herringbone pattern; etc. Mosaic – blocks of hard wood laid in a basket weave pattern; etc. Properties: Attractive; durable; low maintenance; most are ready sealed; noisy; cold; marked and scratched easily; etc. | Description: Vinyl: resin, plasticiser, pigment and filler put together under heat and pressure on to an alkali-resistant backing; may have a foam backing for extra thickness; patterns may be marbled, flecked, embossed, veined or striped; sheets or tiles; etc. Properties: Warm and soft underfoot; durability varies with thickness; scorches and melts when subjected to heat; easy to clean and maintain, stain resistant; huge variety in colour, design and texture; quiet; etc. | Description: Carpet: woven – fabric pile is woven on to hessian backing; cut pile Axminster weave allows for unlimited range of colours and designs; continuous strand Wilton weave limits number of colours; thicker carpet; etc. Tufted – tufts of pile inserted into a woven backing, held In place with adhesive and backed with foam; carpet tiles - graded as light, medium, heavy and general; 100% wool; 80% wool and 20% nylon; etc. Properties: Wide variety of colours, patterns and textures; good insulator and noise absorber; non slip; easy to maintain; hard wearing; etc. Accept: cork; linoleum; concrete; etc.", permittedMarks: [0,4] },
+    { id: "properties-3", kind: "criterion", verbatim: "properties", marks: 2, contextNote: "Two properties of the SAME selected covering 3. Keep properties paired with its description. Cork, linoleum and concrete are accepted names only; no models are invented. Description: Ceramic tiles - made of water, clay and minerals; can be glazed or unglazed; variety of sizes and shapes; etc. Properties: Hard-wearing; easy to clean; low maintenance; range of colours, designs and sizes; hard underfoot; stain resistant; fire resistant; cold; crack/chip easily; etc. | Description: Flagstone/cut stone – various shapes; natural colours; may have uneven textures; etc. Properties: Hard wearing; cold underfoot; chips easily; etc. | Description: Slate - fine-grained, foliated metamorphic rock; etc. Properties: Hard wearing; warm underfoot; uneven texture; dark colours; slightly absorbent; easy to clean; etc. | Description: Marble/travertine e.g. limestone refined into the individual tiles and slabs; flecks of colour; etc. Properties: Cold underfoot; chips easily; available in a variety of colours; etc. | Description: Stone carpeting – gravel based mixture poured on subfloor and sealed when set; etc. Properties: Hard-wearing; easy to clean; low maintenance; range of colours, designs and sizes; hard underfoot; etc. | Description: Mosaics – a mixture of glass, metal, resin and stone in various textures and colours; etc. Properties: Decorative; hard wearing; etc. | Description: Wood: strip – strips of hardwood e.g. oak, beech, maple or soft wood e.g. pine, spruce, tongue and grooved to form a smooth finish; strips vary in thickness; may be solid wood or laminated with a plastic veneer; etc. Block Parquet – blocks of hard wood laid in a herringbone pattern; etc. Mosaic – blocks of hard wood laid in a basket weave pattern; etc. Properties: Attractive; durable; low maintenance; most are ready sealed; noisy; cold; marked and scratched easily; etc. | Description: Vinyl: resin, plasticiser, pigment and filler put together under heat and pressure on to an alkali-resistant backing; may have a foam backing for extra thickness; patterns may be marbled, flecked, embossed, veined or striped; sheets or tiles; etc. Properties: Warm and soft underfoot; durability varies with thickness; scorches and melts when subjected to heat; easy to clean and maintain, stain resistant; huge variety in colour, design and texture; quiet; etc. | Description: Carpet: woven – fabric pile is woven on to hessian backing; cut pile Axminster weave allows for unlimited range of colours and designs; continuous strand Wilton weave limits number of colours; thicker carpet; etc. Tufted – tufts of pile inserted into a woven backing, held In place with adhesive and backed with foam; carpet tiles - graded as light, medium, heavy and general; 100% wool; 80% wool and 20% nylon; etc. Properties: Wide variety of colours, patterns and textures; good insulator and noise absorber; non slip; easy to maintain; hard wearing; etc. Accept: cork; linoleum; concrete; etc.", permittedMarks: [0,1,2], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2018-hl-sc-q1bii-floor-1","label":"Floor covering 1","marks":6,"rowIds":["description-1","properties-1"]},{"sourceCardId":"he-2018-hl-sc-q1bii-floor-2","label":"Floor covering 2","marks":6,"rowIds":["description-2","properties-2"]},{"sourceCardId":"he-2018-hl-sc-q1bii-floor-3","label":"Floor covering 3","marks":6,"rowIds":["description-3","properties-3"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q1ci", topicId: "home-economics-3-6", conceptId: "sc-q1ci",
+    section: "C", questionRef: "2018 HL Section C E1 Q1(c)(i)",
+    stem: "Sustainable energy improves people’s lives, brings comfort and convenience and addresses environmental challenges. (Sustainable Energy Authority of Ireland)",
+    questionText: "Identify and elaborate on three sources of energy supply to the home. Comment on the sustainability of each of these energy sources.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "sources of energy", marks: 15, contextNote: "Identify/elaborate on ANY THREE sources AND discuss sustainability of EACH. Each complete source/sustainability account earns five marks; no fixed source quota or internal split. All described and name-only alternatives remain available. Complete original source guidance: Fossil fuels include coal, oil, gas, peat and uranium (used to make nuclear energy, which is used to generate electricity); etc. Electricity: generated in power stations by burning fossil fuels (non-renewable resources) or by solar energy, wind power and hydropower (renewable sources); reliable; clean; easily available; efficient; no fumes; etc. Sustainability: electricity itself will not run out, using non-renewable sources to generate electricity is not sustainable as fossil fuels are depleting and cannot be replaced; etc. Oil: crude oil which has to be refined before use; used for heating and cooking; high heating value; clean, producing little waste or pollution when burned; oil spills cause environmental damage; etc. Sustainability: non-renewable; oil reserves are limited; etc. Gas: natural gas piped ashore by underground pipes to homes on the national grid; liquefied petroleum gas (LPG) delivered to domestic tanks or sold in bottles; efficient as used for heating and cooking; cleaner than other fossil fuels; produces 70% less carbon dioxide than coal or oil; dangerous; etc. Sustainability: non- renewable, reserves are limited and cannot be replaced; etc. Solar energy: created using radiant light and heat from the sun; can also use energy from wind and rain; 3 systems – passive solar architecture, active solar heating, solar photovoltaic system (PV); grants available; no emissions; systems are initially expensive to purchase; etc. Sustainability: renewable – infinite supply; etc. Geothermal: takes heat from earth’s crust; cost effective and reliable; no emissions; etc. Sustainability: very sustainable; heat pumps collect heat from the environment; etc. Accept: coal; peat; bio-energy; wood; hydropower; wind energy; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q1cii", topicId: "home-economics-3-6", conceptId: "sc-q1cii",
+    section: "C", questionRef: "2018 HL Section C E1 Q1(c)(ii)",
+    stem: "Sustainable energy improves people’s lives, brings comfort and convenience and addresses environmental challenges. (Sustainable Energy Authority of Ireland)",
+    questionText: "Give an account of the emissions produced from burning fuels in the home and the effect these emissions have on the environment.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "emissions", marks: 15, contextNote: "Give three accounts linking emissions to their environmental effects. No fixed climate/acid-rain/smog quota or separate emission/effect allocation is printed. Complete original source guidance: Emissions: carbon dioxide (CO2); carbon monoxide; water vapour; etc. Effect: global warming; climate change; etc. Emissions: sulphur dioxide (SO2); nitrogen oxide (NO2); etc. Effect: acid rain - damage to plants and crops, fish species endangered and ecosystems are destroyed; harmful emissions e.g. carbon dioxide and sulphur dioxide combine with water vapour resulting in acidic precipitation with a Ph of 4.1; reduces Ph of soil, affecting growth; dissolves calcium carbonate in limestone, destroys historic buildings, damages paintwork, stained glass and corrodes metal; etc. Smog and smoke: smoke from burning fossil fuels released into the atmosphere; combines with fog and results in smog; etc. Effects: reduced sunshine which effects plant growth; makes area seem darker; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q2ai", topicId: "home-economics-3-8", conceptId: "sc-q2ai",
+    section: "C", questionRef: "2018 HL Section C E2 Q2(a)(i)",
+    stem: "‘Fashion is a trend, style lives within a person.’ (Oscar de la Renta)",
+    questionText: "Assess the role of fashion as an expression of personality, with reference to the picture above.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "personality", marks: 15, contextNote: "Complete original source guidance: A person’s personality is represented through their clothing; style may be casual, trendy or formal; moods can be expressed through clothing – black outfit can reflect a dark mood, colours can reflect a happy mood as in the floral dress; many women choose to wear classic clothes which can make them look thinner and taller and for simplicity, chicness, and to highlight their personality; making fashion statements; etc. the romantic dresser sticks to the pastel colours, paisley prints and polka dots; etc. trendy fashion personality follows bloggers for current trends e.g. short skirts, high heels, cropped trousers; personalities come through in the choice of accessories as shown in the use of belts and bags; etc. casual fashion personality gives preference to jeans, pants, shirts - relaxing and comfortable style; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2018-hl-sc-q2-outfits",
+          "src": "/exam-figures/home-economics/home-economics-2018-hl-sc-q2-outfits.png",
+          "srcHash": "0f02b020efe9d620707c5ec926ea6e8c",
+          "alt": "Complete original four outfits and Adored Vintage: Runway Report/Sonia Rykiel attribution.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 10 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q2aii", topicId: "home-economics-3-8", conceptId: "sc-q2aii",
+    section: "C", questionRef: "2018 HL Section C E2 Q2(a)(ii)",
+    stem: "‘Fashion is a trend, style lives within a person.’ (Oscar de la Renta)",
+    questionText: "Analyse the technological influences on the design and construction of clothing.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 5"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "technological influences", marks: 10, contextNote: "Complete original source guidance: Computer aided design; development of new fabrics e.g. scuba, lycra; fabric finishes; international fashion shows, showing new season fashions – images are sent by phones to magazines so trends hit the high street earlier; bloggers; etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q2bi", topicId: "home-economics-3-7", conceptId: "sc-q2bi",
+    section: "C", questionRef: "2018 HL Section C E2 Q2(b)(i)",
+    stem: "Natural fibres are a sustainable resource as they can be used without depleting or damaging the environment.",
+    questionText: "Classify natural fibres, giving examples and uses in each case.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "natural fibres", marks: 9, contextNote: "Classify fibres WITH examples and uses in each case across three points. The source does not allocate separate marks to class, example or use, or require three classes. Complete original source guidance: Animal: wool; silk; Plant: cotton; linen; Uses: household items e.g. curtains, cushions, bed linen; etc. clothing e.g. dresses, trousers, shirts, nightwear etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q2bii", topicId: "home-economics-3-7", conceptId: "sc-q2bii",
+    section: "C", questionRef: "2018 HL Section C E2 Q2(b)(ii)",
+    stem: "Natural fibres are a sustainable resource as they can be used without depleting or damaging the environment.",
+    questionText: "Explain how fibres can be identified using a burning test. Give one example.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 2"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "burning test", marks: 6, contextNote: "Explain identification by burning test AND give ONE example across three points. No separate example allocation or fixed flame/smell/ash quota is printed. Complete original source guidance: Fibres can be identified by flame e.g. cotton and linen burn quickly with yellow flame; polyester burns slowly; wool smoulders, burns slowly with slow flickering flame; etc. smell e.g. wool/silk - burning feathers; cotton - charred paper; polyester slightly sweetish smell; etc. by ash e.g. wool - black, crushable; cotton/linen - grey ash; silk - burns as black beads; polyester – hard round brittle black bead; etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q2ci", topicId: "home-economics-3-8", conceptId: "sc-q2ci",
+    section: "C", questionRef: "2018 HL Section C E2 Q2(c)(i)",
+    stem: "A commercial pattern reflects the designer’s vision for the outfit.",
+    questionText: "Suggest reasons why commercial patterns may require modification.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "modification", marks: 9, contextNote: "Complete original source guidance: To fit a figure that does not conform to standard body shape e.g. to add length; to add width; to reduce a pattern; different preferences; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q2cii", topicId: "home-economics-3-8", conceptId: "sc-q2cii",
+    section: "C", questionRef: "2018 HL Section C E2 Q2(c)(ii)",
+    stem: "A commercial pattern reflects the designer’s vision for the outfit.",
+    questionText: "Describe one method of modification to a commercial pattern.",
+    tariffModel: {"kind":"fixed","notation":"Method2 + two description points2"}, totalMarks: 6,
+    rows: [
+    { id: "method", kind: "point", verbatim: "lengthen", marks: 2 },
+    { id: "description", kind: "criterion", verbatim: "Description", marks: 4, contextNote: "Two description points for the SAME selected modification. lengthen - cut through alteration lines and insert tissue paper; redraw sewing/fitting lines;", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "method-1",
+                "label": "lengthen",
+                "rows": [
+                      {
+                            "id": "method",
+                            "kind": "point",
+                            "verbatim": "lengthen",
+                            "marks": 2
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Two description points for the SAME selected modification. lengthen - cut through alteration lines and insert tissue paper; redraw sewing/fitting lines;",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "method-2",
+                "label": "shortening",
+                "rows": [
+                      {
+                            "id": "method",
+                            "kind": "point",
+                            "verbatim": "shortening",
+                            "marks": 2
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Two description points for the SAME selected modification. reduce pattern - make a fold along one of the alteration lines; half the amount you want to reduce; pin fold in position; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "other-method",
+                "label": "Another valid modification method",
+                "rows": [
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "Method",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Choose ONE method consistently. The original scheme models lengthening and shortening; no additional model is invented."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Two points describing the SAME selected method; no additional source model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q3ai", topicId: "home-economics-3-10", conceptId: "sc-q3ai",
+    section: "C", questionRef: "2018 HL Section C E3 Q3(a)(i)",
+    stem: "The demand for education is growing. Adults with higher educational attainment have better economic outcomes. (Education at a Glance 2017, OECD)",
+    questionText: "Name and describe two programmes provided in second level education. Refer to: • curriculum offered • assessment / examination system.",
+    tariffModel: {"kind":"fixed","notation":"Two programmes×(name2 + curriculum4 + assessment4)"}, totalMarks: 20,
+    rows: [
+    { id: "names", kind: "anyN", verbatim: "Name", marks: 4, contextNote: "Choose ANY TWO different programmes. Historical 2018 names and programme descriptions retained.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Junior Certificate","Junior Cycle","Transition Year Programme","Leaving Certificate Programme","LCVP","LCA","PLC courses"]} },
+    { id: "curriculum-1", kind: "criterion", verbatim: "curriculum", marks: 4, contextNote: "Give the curriculum for the SAME programme 1 selected above. This is a whole four-mark criterion; no internal split is printed. All six complete original paired models, including LCVP across the page break: Junior Certificate: 3 year examination course; broad curriculum; compulsory and optional subjects; level differentiation; etc. Assessment: subjects examined by a combination of terminal written exams, practical and project work; examinations at higher and ordinary level; Maths and Irish are offered at foundation level; etc. | Junior Cycle: new programme featuring new subject specifications and short courses; aims to expand and deepen students’ knowledge, develop confidence, creativity, communication, personal and social skills; focuses on literacy, numeracy and key skills; new approaches to assessment and reporting; provides the basis for schools to plan quality, inclusive and relevant education programmes; improves learning experiences for all students including special needs students; etc. Assessment: each subject will have classroom-based assessments; assessment includes project tasks, oral language tasks, investigations, field studies and artistic performance; after the second CBA, students will complete a written assessment task on what they have learned and the skills and competencies that they have developed in that assessment; the written assessment task along with the final exam at the end of third year will be marked by the State Examinations Commission; etc. | Transition Year Programme: student-centred, encouraging self-development; non-exam focused; no set curriculum; broad range of non-state examinations subjects offered e.g. drama, enterprise etc.; aims to promote personal development; skill development in creative and critical thinking, communication, teamwork, research and leadership by incorporating work life and adult experiences; etc. Assessment: ongoing in the form of project, portfolio, oral, written and practical work; some schools offer IT exams e.g. ECDL; etc. | Leaving Certificate Programme: two-year programme, culminating in state examinations at end of 2nd Year; at least 5 subjects including English, Irish and Mathematics; level differentiation – higher, ordinary, foundation; etc. Assessment: subjects are examined by a combination of terminal written examinations, practical coursework and project work; grades received are allocated a point value, which may be used to access third-level education; etc. | LCVP: students study 5 leaving certificate subjects, including two vocational subjects and a foreign language; three compulsory link modules - enterprise education, preparation for work, work experience; etc. Assessment: assessed by written exam (40%) and by portfolio work (60%); awarded with a pass, merit or distinction; result may be substituted for one Leaving certificate subject (for points); etc. | LCA: two year programme; modular based, divided into 4 half-year modules; programme can be used to access Post-Leaving Certificate courses; etc. Assessment: assessment is continuous with practical, written and oral examinations at the end of second year; practical tasks are carried out during first and second year, assessed on basis of a written report and an interview; etc. PLC courses are accepted by name only; no curriculum/assessment model is invented.", permittedMarks: [0,4] },
+    { id: "assessment-1", kind: "criterion", verbatim: "assessment/examination systems", marks: 4, contextNote: "Give the assessment/examination systems for the SAME programme 1 selected above. This is a whole four-mark criterion; no internal split is printed. All six complete original paired models, including LCVP across the page break: Junior Certificate: 3 year examination course; broad curriculum; compulsory and optional subjects; level differentiation; etc. Assessment: subjects examined by a combination of terminal written exams, practical and project work; examinations at higher and ordinary level; Maths and Irish are offered at foundation level; etc. | Junior Cycle: new programme featuring new subject specifications and short courses; aims to expand and deepen students’ knowledge, develop confidence, creativity, communication, personal and social skills; focuses on literacy, numeracy and key skills; new approaches to assessment and reporting; provides the basis for schools to plan quality, inclusive and relevant education programmes; improves learning experiences for all students including special needs students; etc. Assessment: each subject will have classroom-based assessments; assessment includes project tasks, oral language tasks, investigations, field studies and artistic performance; after the second CBA, students will complete a written assessment task on what they have learned and the skills and competencies that they have developed in that assessment; the written assessment task along with the final exam at the end of third year will be marked by the State Examinations Commission; etc. | Transition Year Programme: student-centred, encouraging self-development; non-exam focused; no set curriculum; broad range of non-state examinations subjects offered e.g. drama, enterprise etc.; aims to promote personal development; skill development in creative and critical thinking, communication, teamwork, research and leadership by incorporating work life and adult experiences; etc. Assessment: ongoing in the form of project, portfolio, oral, written and practical work; some schools offer IT exams e.g. ECDL; etc. | Leaving Certificate Programme: two-year programme, culminating in state examinations at end of 2nd Year; at least 5 subjects including English, Irish and Mathematics; level differentiation – higher, ordinary, foundation; etc. Assessment: subjects are examined by a combination of terminal written examinations, practical coursework and project work; grades received are allocated a point value, which may be used to access third-level education; etc. | LCVP: students study 5 leaving certificate subjects, including two vocational subjects and a foreign language; three compulsory link modules - enterprise education, preparation for work, work experience; etc. Assessment: assessed by written exam (40%) and by portfolio work (60%); awarded with a pass, merit or distinction; result may be substituted for one Leaving certificate subject (for points); etc. | LCA: two year programme; modular based, divided into 4 half-year modules; programme can be used to access Post-Leaving Certificate courses; etc. Assessment: assessment is continuous with practical, written and oral examinations at the end of second year; practical tasks are carried out during first and second year, assessed on basis of a written report and an interview; etc. PLC courses are accepted by name only; no curriculum/assessment model is invented.", permittedMarks: [0,4] },
+    { id: "curriculum-2", kind: "criterion", verbatim: "curriculum", marks: 4, contextNote: "Give the curriculum for the SAME programme 2 selected above. This is a whole four-mark criterion; no internal split is printed. All six complete original paired models, including LCVP across the page break: Junior Certificate: 3 year examination course; broad curriculum; compulsory and optional subjects; level differentiation; etc. Assessment: subjects examined by a combination of terminal written exams, practical and project work; examinations at higher and ordinary level; Maths and Irish are offered at foundation level; etc. | Junior Cycle: new programme featuring new subject specifications and short courses; aims to expand and deepen students’ knowledge, develop confidence, creativity, communication, personal and social skills; focuses on literacy, numeracy and key skills; new approaches to assessment and reporting; provides the basis for schools to plan quality, inclusive and relevant education programmes; improves learning experiences for all students including special needs students; etc. Assessment: each subject will have classroom-based assessments; assessment includes project tasks, oral language tasks, investigations, field studies and artistic performance; after the second CBA, students will complete a written assessment task on what they have learned and the skills and competencies that they have developed in that assessment; the written assessment task along with the final exam at the end of third year will be marked by the State Examinations Commission; etc. | Transition Year Programme: student-centred, encouraging self-development; non-exam focused; no set curriculum; broad range of non-state examinations subjects offered e.g. drama, enterprise etc.; aims to promote personal development; skill development in creative and critical thinking, communication, teamwork, research and leadership by incorporating work life and adult experiences; etc. Assessment: ongoing in the form of project, portfolio, oral, written and practical work; some schools offer IT exams e.g. ECDL; etc. | Leaving Certificate Programme: two-year programme, culminating in state examinations at end of 2nd Year; at least 5 subjects including English, Irish and Mathematics; level differentiation – higher, ordinary, foundation; etc. Assessment: subjects are examined by a combination of terminal written examinations, practical coursework and project work; grades received are allocated a point value, which may be used to access third-level education; etc. | LCVP: students study 5 leaving certificate subjects, including two vocational subjects and a foreign language; three compulsory link modules - enterprise education, preparation for work, work experience; etc. Assessment: assessed by written exam (40%) and by portfolio work (60%); awarded with a pass, merit or distinction; result may be substituted for one Leaving certificate subject (for points); etc. | LCA: two year programme; modular based, divided into 4 half-year modules; programme can be used to access Post-Leaving Certificate courses; etc. Assessment: assessment is continuous with practical, written and oral examinations at the end of second year; practical tasks are carried out during first and second year, assessed on basis of a written report and an interview; etc. PLC courses are accepted by name only; no curriculum/assessment model is invented.", permittedMarks: [0,4] },
+    { id: "assessment-2", kind: "criterion", verbatim: "assessment/examination systems", marks: 4, contextNote: "Give the assessment/examination systems for the SAME programme 2 selected above. This is a whole four-mark criterion; no internal split is printed. All six complete original paired models, including LCVP across the page break: Junior Certificate: 3 year examination course; broad curriculum; compulsory and optional subjects; level differentiation; etc. Assessment: subjects examined by a combination of terminal written exams, practical and project work; examinations at higher and ordinary level; Maths and Irish are offered at foundation level; etc. | Junior Cycle: new programme featuring new subject specifications and short courses; aims to expand and deepen students’ knowledge, develop confidence, creativity, communication, personal and social skills; focuses on literacy, numeracy and key skills; new approaches to assessment and reporting; provides the basis for schools to plan quality, inclusive and relevant education programmes; improves learning experiences for all students including special needs students; etc. Assessment: each subject will have classroom-based assessments; assessment includes project tasks, oral language tasks, investigations, field studies and artistic performance; after the second CBA, students will complete a written assessment task on what they have learned and the skills and competencies that they have developed in that assessment; the written assessment task along with the final exam at the end of third year will be marked by the State Examinations Commission; etc. | Transition Year Programme: student-centred, encouraging self-development; non-exam focused; no set curriculum; broad range of non-state examinations subjects offered e.g. drama, enterprise etc.; aims to promote personal development; skill development in creative and critical thinking, communication, teamwork, research and leadership by incorporating work life and adult experiences; etc. Assessment: ongoing in the form of project, portfolio, oral, written and practical work; some schools offer IT exams e.g. ECDL; etc. | Leaving Certificate Programme: two-year programme, culminating in state examinations at end of 2nd Year; at least 5 subjects including English, Irish and Mathematics; level differentiation – higher, ordinary, foundation; etc. Assessment: subjects are examined by a combination of terminal written examinations, practical coursework and project work; grades received are allocated a point value, which may be used to access third-level education; etc. | LCVP: students study 5 leaving certificate subjects, including two vocational subjects and a foreign language; three compulsory link modules - enterprise education, preparation for work, work experience; etc. Assessment: assessed by written exam (40%) and by portfolio work (60%); awarded with a pass, merit or distinction; result may be substituted for one Leaving certificate subject (for points); etc. | LCA: two year programme; modular based, divided into 4 half-year modules; programme can be used to access Post-Leaving Certificate courses; etc. Assessment: assessment is continuous with practical, written and oral examinations at the end of second year; practical tasks are carried out during first and second year, assessed on basis of a written report and an interview; etc. PLC courses are accepted by name only; no curriculum/assessment model is invented.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q3aii", topicId: "home-economics-3-10", conceptId: "sc-q3aii",
+    section: "C", questionRef: "2018 HL Section C E3 Q3(a)(ii)",
+    stem: "The demand for education is growing. Adults with higher educational attainment have better economic outcomes. (Education at a Glance 2017, OECD)",
+    questionText: "Analyse the factors that influence educational achievement.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "educational achievement", marks: 15, contextNote: "Complete original source guidance: Intelligence/individual ability; attitude to education; influence of family; home environment; work ethic; family size; school attended – locality and school environment; peer group; supports for special needs; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q3aiii", topicId: "home-economics-3-10", conceptId: "sc-q3aiii",
+    section: "C", questionRef: "2018 HL Section C E3 Q3(a)(iii)",
+    stem: "The demand for education is growing. Adults with higher educational attainment have better economic outcomes. (Education at a Glance 2017, OECD)",
+    questionText: "Evaluate equality of opportunity in second level education with reference to students at risk of disadvantage and social exclusion.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "equality of opportunity", marks: 15, contextNote: "Complete original source guidance: Delivering Equality of Opportunity in Schools (DEIS) action plan designed to reduce the number of early school leavers, the participating schools provide a school completion programme with initiatives such as homework clubs, after school supports and mentoring programmes, school meals programme, access to home school community liaison services, enhanced school book grants; etc. Learning Support: withdrawal from class for extra tuition with resource teachers; etc. Cúntóirí Teanga: assistance with the Irish language in Gaeltacht schools and in Gaelscoileanna; etc. Special Needs Assistants/Inclusion Support Assistants: one-to-one assistance in class; etc. Extra Resources e.g. laptop; reader/scribe in examinations or extra time to complete the paper; smaller pupil-teacher ratio caters for students with mild/moderate learning difficulties; special classrooms for children with Autism with one teacher for every 6 children; programmes like JCSP and LCA cater for students as the curriculum is more assessment based and focuses on the world of work; schools for children with special needs 5-18 years with learning difficulties, schools for visually and hearing impaired children; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q3bi", topicId: "home-economics-3-11", conceptId: "sc-q3bi",
+    section: "C", questionRef: "2018 HL Section C E3 Q3(b)(i)",
+    stem: "Volunteering enriches individuals’ lives and the communities in which they live.",
+    questionText: "Discuss, with examples, how a community can benefit from the work of volunteers.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "community", marks: 15, contextNote: "Complete original source guidance: Community: provides range of services quickly to those in need in a community i.e. older people, people with disabilities or homeless people, reducing disadvantage for community members; complement the work carried out by statutory bodies; offer a more personal local service e.g. St. Vincent de Paul; when state funding is lacking or inadequate they organise and run services which should have been provided by the state; improves community by restoring and cleaning the local landscape or by alleviating poverty and social problems; creates a sense of community spirit, as volunteers come together to achieve a common goal e.g. tidy towns; friendships formed which can create a sense of closeness within community; issues can be dealt with quickly before they become major social problems; attracting media attention, can initiate change and social reform; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q3bii", topicId: "home-economics-3-11", conceptId: "sc-q3bii",
+    section: "C", questionRef: "2018 HL Section C E3 Q3(b)(ii)",
+    stem: "Volunteering enriches individuals’ lives and the communities in which they live.",
+    questionText: "Explain how a volunteer can benefit personally by participating in community projects.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "Volunteer", marks: 15, contextNote: "Complete original source guidance: Volunteer: rewarding, builds a sense of achievement, self-worth and knowledge that a positive contribution has been made to the community; aids personal development in terms of communication, teamwork, organisational and interpersonal skills, which will benefit them in paid employment; provides insight and experience; develop empathy towards less fortunate; form friendships with co-workers and with those they seek to help; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q3ci", topicId: "home-economics-3-11", conceptId: "sc-q3ci",
+    section: "C", questionRef: "2018 HL Section C E3 Q3(c)(i)",
+    stem: "Leisure is an important component of daily life and a core ingredient for overall well‐being.",
+    questionText: "Discuss the value of leisure in today’s society.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "value of leisure", marks: 15, contextNote: "Complete original source guidance: Contributes to the social, emotional, physical and intellectual development of a person; provides relaxation and relieves stress from everyday life; helps develop new skills; encourages physical wellbeing; can further social interaction; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2018 Higher Level — © State Examinations Commission.",
+    id: "he-2018-hl-sc-q3cii", topicId: "home-economics-3-11", conceptId: "sc-q3cii",
+    section: "C", questionRef: "2018 HL Section C E3 Q3(c)(ii)",
+    stem: "Leisure is an important component of daily life and a core ingredient for overall well‐being.",
+    questionText: "Analyse the social and cultural factors that influence an individual’s choice of leisure activities.",
+    tariffModel: {"kind":"fixed","notation":"Social5 + cultural5 + one additional point5"}, totalMarks: 15,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Social", marks: 5, contextNote: "Social: the leisure activities of the socioeconomic group one belongs to; status; local amenities in the area; income/money available; leisure trends; influence of famous people; etc.", permittedMarks: [0,5] },
+    { id: "heading-2", kind: "criterion", verbatim: "Cultural Influences", marks: 5, contextNote: "Cultural Influences: certain activities are linked with certain areas/countries e.g. hurling in Ireland, basketball in USA; culture in the family influences the leisure activities; multicultural Ireland has lead to a broader range of leisure activities; etc.", permittedMarks: [0,5] },
+    { id: "other", kind: "criterion", verbatim: "1 other point", marks: 5, contextNote: "One ADDITIONAL point from either required category. Social: the leisure activities of the socioeconomic group one belongs to; status; local amenities in the area; income/money available; leisure trends; influence of famous people; etc. Cultural Influences: certain activities are linked with certain areas/countries e.g. hurling in Ireland, basketball in USA; culture in the family influences the leisure activities; multicultural Ireland has lead to a broader range of leisure activities; etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];

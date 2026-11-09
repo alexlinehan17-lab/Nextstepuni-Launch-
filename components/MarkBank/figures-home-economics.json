@@ -1225,5 +1225,54 @@
     "alt": "Both original Debs outfits, suit and dress, shown completely with both original source attributions.",
     "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 10 — © State Examinations Commission.",
     "sourceNote": "Original PDF crop, bounds [140.77999877929688, 122.21998596191406, 456.82000732421875, 350.7746887207031], rendered at 2.5×. SHA256 9bd6349f0d235ec3b12f26700d6b76dfafe2f4fedc87a5fd94e90c7364765bff."
+  },
+  "home-economics-2018-hl-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2018-hl-sa-q1.png",
+    "md5": "4dd4ded7233545e0b7f8bfeb4b1f25d0",
+    "alt": "Complete original Organ, Enzyme, Substrate and Product table with required Pancreas and Small Intestine blank rows.",
+    "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 145.73980712890625, 570.219970703125, 295.2371303013393], rendered at 2.5×. SHA256 7df325418e5ece44547e7a8449b3e14d2587870b78b74a25d969595668731493."
+  },
+  "home-economics-2018-hl-sa-q5": {
+    "src": "/exam-figures/home-economics/home-economics-2018-hl-sa-q5.png",
+    "md5": "3d8d966e238393e123c11b34ebc29ead",
+    "alt": "Complete original gluten-free symbol and question, including the request for two labelled products.",
+    "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 276.77978515625, 570.219970703125, 525.8400268554688], rendered at 2.5×. SHA256 adbffcabc29351bb41a608886ed7eb3b352305565f5b0ef1ad2a37b6956f5c0c."
+  },
+  "home-economics-2018-hl-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2018-hl-sa-q6.png",
+    "md5": "845b6a6840b4181ebdddee22b4054eb1",
+    "alt": "Complete original processed-food table with all three category headings and blank Food/Product fields.",
+    "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 525.8400268554688, 570.219970703125, 718.1899948120117], rendered at 2.5×. SHA256 88d6fbb670d098d53085e8633bf68556355b503dddcb10a44e4012d492dd3893."
+  },
+  "home-economics-2018-hl-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2018-hl-sa-q8.png",
+    "md5": "028668e3ff1478bc92dd6a3b1c3db0ad",
+    "alt": "Complete original optimum-growth temperature table with Psychrophiles, Mesophiles and Thermophiles.",
+    "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 280.67974853515625, 570.219970703125, 436.0099849700928], rendered at 2.5×. SHA256 fa3dabdedc63c49440b5e56e120314df44c140d3d94375739e62e57d2097f89c."
+  },
+  "home-economics-2018-hl-sa-q9": {
+    "src": "/exam-figures/home-economics/home-economics-2018-hl-sa-q9.png",
+    "md5": "25bd259b9261ab2a96065071413e022b",
+    "alt": "Complete original two-textile/property table and companion fire-retardant finish question.",
+    "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 471.8997497558594, 570.219970703125, 782.0797119140625], rendered at 2.5×. SHA256 233bb33f4c980e8ac6d0bb8a263f8e044db1c628b3ae1f19a8430f0aebcccf84."
+  },
+  "home-economics-2018-hl-sb-q1-menu": {
+    "src": "/exam-figures/home-economics/home-economics-2018-hl-sb-q1-menu.png",
+    "md5": "26746a4173d52e8afda0ecc88f7bf963",
+    "alt": "Complete original six-dish Sample Main Course Menu, all ingredients, accompaniments and calorie totals.",
+    "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [82.36000061035156, 174.8397216796875, 541.0800170898438, 430.9254455566406], rendered at 2.5×. SHA256 713a5934a36ae31df1357ed38b56267829c63c6b11df34f5bfcfe7dfbd07d3d9."
+  },
+  "home-economics-2018-hl-sc-q2-outfits": {
+    "src": "/exam-figures/home-economics/home-economics-2018-hl-sc-q2-outfits.png",
+    "md5": "0f02b020efe9d620707c5ec926ea6e8c",
+    "alt": "Complete original four outfits and Adored Vintage: Runway Report/Sonia Rykiel attribution.",
+    "attribution": "SEC Home Economics 2018 Higher Level examination paper, page 10 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [175.0800018310547, 142.94003295898438, 420.239990234375, 336.8647155761719], rendered at 2.5×. SHA256 3549264a451bba0c736ed5109a26bb14a4a4d1faa5aff4c53fa12dc469385064."
   }
 }
