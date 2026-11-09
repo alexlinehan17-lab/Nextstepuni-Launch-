@@ -1,4 +1,3 @@
-import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
@@ -43,9 +42,19 @@ describe('Japanese 2026 Ordinary independent source review', () => {
     expect(Object.values(census.pageRoles).map(pages => Object.keys(pages).length)).toEqual([16, 8, 20]);
   });
 
-  it('pins all reviewed source bytes and retains every previously served identity', () => {
+  it('reconciles the committed source pins and retains every previously served identity', () => {
+    // Mandatory authoring gate: ja_review_verify.py rereads the pinned PDFs,
+    // every physical page and every selector. CI has no ignored source archive.
+    expect(review.sources.map(source => ({ component: source.document, path: source.path, sha256: source.sha256 }))).toEqual(census.sources);
+    expect(review.sources.map(source => source.sha256)).toEqual([
+      '3e426ef7ef17020d89b812e13eabaf47efb18d3b0b97e6dd4810d966551634b7',
+      '19c7f71b7308c47f20207f7f90845456ea9c445e5e64e6ba1e72f56a878181d1',
+      '1781dbc10f0f34043655b1ee9a093f368726a8caa5203dad214d0c63051321cc',
+    ]);
     for (const source of review.sources) {
-      expect(createHash('sha256').update(readFileSync(resolve(__dirname, '..', source.path))).digest('hex')).toBe(source.sha256);
+      const pages = census.pageRoles[source.document as keyof typeof census.pageRoles];
+      expect(source.pagesReviewed).toEqual(Object.keys(pages).map(Number));
+      expect(Object.values(pages).every(Boolean)).toBe(true);
     }
     expect(higher.filter(card => card.year !== 2026)).toHaveLength(339);
     expect(ordinary.filter(card => card.year !== 2026)).toHaveLength(261);
