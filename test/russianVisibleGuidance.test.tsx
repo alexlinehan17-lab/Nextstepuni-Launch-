@@ -13,6 +13,46 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('uses the 2017 general or specific crowd route without duplicate credit',async()=>{
+    reveal('c2-4','hl',2017);
+    await waitFor(()=>expect(screen.getByRole('button',{name:'General description'})).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'General description'}));
+    expect(screen.getByRole('button',{name:'Specific crowd actions'})).toBeDisabled();
+    fireEvent.click(screen.getByRole('button',{name:'Claim 2 marks for everyone was joining in'}));
+    await waitFor(()=>expect(screen.getByText(/placement is 2 of 10 marks/)).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'General description'}));
+    fireEvent.click(screen.getByRole('button',{name:'Specific crowd actions'}));
+    fireEvent.click(screen.getByRole('button',{name:'Claim 2 marks for dancing'}));
+    fireEvent.click(screen.getByRole('button',{name:'Claim 2 marks for shouting'}));
+    expect(screen.getByRole('button',{name:'Claim 2 marks for singing along'})).toBeDisabled();
+    await waitFor(()=>expect(screen.getByText(/placement is 4 of 10 marks/)).toBeVisible());
+  });
+  it('shows the 2017 duplicate-entry explanation and only claims that passage word once',async()=>{
+    reveal('la2','hl',2017);
+    await waitFor(()=>expect(screen.getByText(/one supplied word, послушать/)).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'One passage word: accepted forms'}));
+    fireEvent.click(screen.getByRole('button',{name:'(по)слушать · 1m'}));
+    expect(screen.getByRole('button',{name:'послушать · 1m'})).toBeDisabled();
+    await waitFor(()=>expect(screen.getByText(/placement is 1 of 10 marks/)).toBeVisible());
+  });
+  it('shows both 2017 guided-writing source scales and keeps their shared numeric range',async()=>{
+    reveal('gw','hl',2017);
+    await waitFor(()=>expect(screen.getByRole('button',{name:'Set Communication/content (C) to 7 marks'})).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'Set Communication/content (C) to 7 marks'}));
+    fireEvent.change(screen.getByRole('spinbutton',{name:/Response length \(words\)/}),{target:{value:'140'}});
+    fireEvent.click(screen.getByRole('checkbox',{name:/If the expression is very fluent/}));
+    expect(screen.getByText('Lower A')).toBeVisible();expect(screen.getByText('Lower E')).toBeVisible();
+    expect(screen.getByText(/Both source scales apply/)).toBeVisible();
+    expect(screen.getByRole('button',{name:'Set Language + expression (E) to 7 marks'})).toBeEnabled();
+    expect(screen.queryByRole('button',{name:'Set Language + expression (E) to 6 marks'})).not.toBeInTheDocument();
+    expect(screen.queryByRole('button',{name:'Set Language + expression (E) to 11 marks'})).not.toBeInTheDocument();
+  });
+  it('shows the unresolved 2017 China/Vietnam combination beside the published country/detail scoring',async()=>{
+    reveal('l3-3-i','hl',2017);
+    await waitFor(()=>expect(screen.getByText(/does not clarify whether both may be used/)).toBeVisible());
+    expect(screen.getByRole('button',{name:'Set First country to 1 marks'})).toBeVisible();
+    expect(screen.getByRole('button',{name:'Set Detail about the second country to 1 marks'})).toBeVisible();
+  });
   it('shows the 2023 hockey-only limit and preserves all listed details',async()=>{
     reveal('l4-3','hl',2023);
     await waitFor(()=>expect(screen.getByText(/Candidates must mention at least two hobbies/)).toBeVisible());
