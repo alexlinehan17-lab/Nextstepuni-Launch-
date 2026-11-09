@@ -1881,5 +1881,181 @@
         0.672
       ]
     }
+  },
+  "ja-2020-hl-2a-1": {
+    "src": "/exam-figures/japanese/ja-2020-hl-2a-1.png",
+    "md5": "4c1967e13cc8bf0df6f6ef5ea9cdce33",
+    "alt": "Complete the following table in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.06,
+        0.045,
+        0.96,
+        0.26
+      ]
+    }
+  },
+  "ja-2020-hl-2b-1": {
+    "src": "/exam-figures/japanese/ja-2020-hl-2b-1.png",
+    "md5": "3bccb925af4a3b497976abdd4cbc1c2d",
+    "alt": "Write the meaning of the following Kanji in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.06,
+        0.055,
+        0.96,
+        0.37
+      ]
+    }
+  },
+  "ja-2020-hl-2b-2": {
+    "src": "/exam-figures/japanese/ja-2020-hl-2b-2.png",
+    "md5": "2bbae82fd93c4e9ca5d742e806e3cec9",
+    "alt": "Write the reading of the following Kanji in Hiragana.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.06,
+        0.37,
+        0.96,
+        0.75
+      ]
+    }
+  },
+  "ja-2020-hl-2c-1": {
+    "src": "/exam-figures/japanese/ja-2020-hl-2c-1.png",
+    "md5": "7a22cfa1e84e5b4c17002223d0d2cd97",
+    "alt": "Write the underlined into the negative as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.06,
+        0.055,
+        0.96,
+        0.44
+      ]
+    }
+  },
+  "ja-2020-hl-2c-2": {
+    "src": "/exam-figures/japanese/ja-2020-hl-2c-2.png",
+    "md5": "04d81e8972605155260d1e887d5611b2",
+    "alt": "Write the correct form of each verb as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.06,
+        0.44,
+        0.96,
+        0.88
+      ]
+    }
+  },
+  "ja-2020-hl-3c": {
+    "src": "/exam-figures/japanese/ja-2020-hl-3c.png",
+    "md5": "b45fbb6b7acdab21e7445ef5fb58ad00",
+    "alt": "Circle the correct reading for the following Kanji and write the meaning in English as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.06,
+        0.045,
+        0.98,
+        0.42
+      ]
+    }
+  },
+  "ja-2020-hl-3d": {
+    "src": "/exam-figures/japanese/ja-2020-hl-3d.png",
+    "md5": "e8794edbd056ec2eda49fc0bb8c88a5a",
+    "alt": "Insert the correct particle into each blank space below. There may be more than one correct answer.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.06,
+        0.427,
+        0.98,
+        0.91
+      ]
+    }
+  },
+  "ja-2020-hl-4": {
+    "src": "/exam-figures/japanese/ja-2020-hl-4.png",
+    "md5": "9a712ad62738bd63bdba13e38e4e9e04",
+    "alt": "Write an email to your Japanese friend in no less than 200 Japanese characters on (a) OR (b).\n(a) アルバイトについて (Faoi mo phost páirtaimseartha / About my part-time job)\nCuir freagraí ar na ceisteanna a leanas san áireamh. / Include answers to the following questions.\n(i) どんなアルバイトをしていますか。\n(ii) アルバイトはどうですか。\nNÓ / OR\n(b) リービング・サートの勉強について (Faoi mo chuid staidéir don Ardteistiméireacht / About my\nstudy for the Leaving Cert)\nCuir freagraí ar na ceisteanna a leanas san áireamh. / Include answers to the following questions.\n(i) 何を勉強していますか。\n(ii) 勉強はどうですか。",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 14,
+      "region": [
+        0.045,
+        0.025,
+        0.97,
+        0.88
+      ]
+    }
+  },
+  "ja-2020-hl-5": {
+    "src": "/exam-figures/japanese/ja-2020-hl-5.png",
+    "md5": "91734147da0cffe2542714341706b5ae",
+    "alt": "You are in a school in Japan and have been asked to talk about Ireland. Write a speech in no less than 320 Japanese characters to your Japanese classmates. Include ANY 4 of the following headings.\n1. アイルランド（サイズ、人口など） Eolas ginearálta faoi Éirinn (méid, daonra, srl) / General\nInformation about Ireland (size, population, etc.)\n2. アイルランドの天気 An aimsir in Éirinn / Irish weather\n3. アイルランドの文化（ぶんか） Cultúr na hÉireann (spórt, ceol, srl) / Irish culture\n（スポーツ、音楽（おんがく）など） (sport, music, etc.)\n4. アイルランドの有名（ゆうめい）人 Éireannach cáiliúil / Éireannaigh cháiliúla /\n(A) famous Irish person / people\n5. アイルランドの学校 Scoileanna in Éirinn / Schools in Ireland\n6. アイルランド人が好きな料理（りょうり） Bia is maith le hÉireannaigh / Food Irish people like",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 16,
+      "region": [
+        0.045,
+        0.025,
+        0.97,
+        0.88
+      ]
+    }
+  },
+  "ja-2020-hl-la": {
+    "src": "/exam-figures/japanese/ja-2020-hl-la.png",
+    "md5": "3a9f58952250abb3a643b14821ec5967",
+    "alt": "Complete the table below.\nWhere do they stay in Japan?\nHow long have they been in Japan?\nWhat is their best experience in Japan? Give details.\nWhat is their worst experience in Japan? Give details.\n(i)\n(ii)\n(iii)",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 2,
+      "region": [
+        0.075,
+        0.162,
+        0.97,
+        0.76
+      ]
+    }
+  },
+  "ja-2020-hl-lc-2-iii": {
+    "src": "/exam-figures/japanese/ja-2020-hl-lc-2-iii.png",
+    "md5": "3951f2a343aa8176cdb01f4a81584d2c",
+    "alt": "To enquire, you should call:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 4,
+      "region": [
+        0.51,
+        0.61,
+        0.98,
+        0.674
+      ]
+    }
   }
 }
