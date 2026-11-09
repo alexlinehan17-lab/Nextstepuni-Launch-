@@ -62,18 +62,19 @@ describe('Japanese 2025 Higher independent source review', () => {
     });
     const live = new Set([...higher, ...ordinary].map(card => card.id));
     for (const id of originalIds) expect(live.has(id) || live.has(CARD_ID_ALIASES[id]), id).toBe(true);
-    expect(rawCards.filter(card => !originalIds.includes(card.id))).toHaveLength(170);
-    expect(live.size).toBe(600 + 170 - 42);
+    expect(rawCards.filter(card => !originalIds.includes(card.id))).toHaveLength(212);
+    expect(live.size).toBe(600 + 212 - 64);
     expect(cards.filter(card => originalIds.includes(card.id))).toHaveLength(29);
   });
 
   it('binds exactly 42 original fragment aliases to seven complete source tasks', () => {
     const expected = Object.fromEntries(review.consolidations.flatMap(entry => entry.legacyIds.map(id => [id, entry.canonicalId])));
-    expect(aliases).toEqual(expected);
-    expect(Object.keys(aliases)).toHaveLength(42);
-    expect(new Set(Object.values(aliases)).size).toBe(7);
+    const sittingAliases = Object.fromEntries(Object.entries(aliases).filter(([id]) => id.startsWith('ja-2025-hl-')));
+    expect(sittingAliases).toEqual(expected);
+    expect(Object.keys(sittingAliases)).toHaveLength(42);
+    expect(new Set(Object.values(sittingAliases)).size).toBe(7);
     const live = new Set(cards.map(card => card.id));
-    for (const [old, target] of Object.entries(aliases)) {
+    for (const [old, target] of Object.entries(sittingAliases)) {
       expect(CARD_ID_ALIASES[old]).toBe(target);
       expect(old.startsWith(`${target}-`)).toBe(true);
       expect(live.has(old)).toBe(false);

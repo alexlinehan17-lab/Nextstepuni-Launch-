@@ -430,5 +430,149 @@
         0.655
       ]
     }
+  },
+  "ja-2025-ol-1-5": {
+    "src": "/exam-figures/japanese/ja-2025-ol-1-5.png",
+    "md5": "da08924393769ce96b235287b85661a5",
+    "alt": "Based on the Tokyo Treat Plan, complete the table.\nMember type Price\nBronze ￥12,000 for 3 months\n(a) ￥15,000 for 6 months\n(b) (c)",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 3,
+      "region": [
+        0.53,
+        0.63,
+        0.95,
+        0.817
+      ]
+    }
+  },
+  "ja-2025-ol-2b": {
+    "src": "/exam-figures/japanese/ja-2025-ol-2b.png",
+    "md5": "9b240418ab71537e758e8be91254c151",
+    "alt": "Write whether the following sentences are True or False.  Choose a Japanese phrase from the text to support your answer as in the example.  Answer any five.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.07,
+        0.46,
+        0.94,
+        0.93
+      ]
+    }
+  },
+  "ja-2025-ol-2c": {
+    "src": "/exam-figures/japanese/ja-2025-ol-2c.png",
+    "md5": "4ac0173fd9b48211d5951c9c461f69a1",
+    "alt": "Circle the correct meaning (a), (b), (c) or (d) for the following Kanji as in the example. Answer any ten.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 6,
+      "region": [
+        0.06,
+        0.49,
+        0.95,
+        0.87
+      ]
+    }
+  },
+  "ja-2025-ol-3b-1": {
+    "src": "/exam-figures/japanese/ja-2025-ol-3b-1.png",
+    "md5": "8a6c2dda959ef3318002e918b68c527e",
+    "alt": "Write the underlined in the negative form as in the example.  Answer any five.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 10,
+      "region": [
+        0.07,
+        0.39,
+        0.95,
+        0.86
+      ]
+    }
+  },
+  "ja-2025-ol-3b-2": {
+    "src": "/exam-figures/japanese/ja-2025-ol-3b-2.png",
+    "md5": "acb93eb337be9fde792d1329275922c3",
+    "alt": "Circle the correct particle (a) or (b) or (c) below as in the example. Answer any five.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 11,
+      "region": [
+        0.07,
+        0.04,
+        0.95,
+        0.55
+      ]
+    }
+  },
+  "ja-2025-ol-4": {
+    "src": "/exam-figures/japanese/ja-2025-ol-4.png",
+    "md5": "f51cd7e133fbccc1b72ca941f875a8f2",
+    "alt": "Insert the missing words from the box below as in the example.  A word should be used only once.  Answer any ten.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.07,
+        0.055,
+        0.95,
+        0.91
+      ]
+    }
+  },
+  "ja-2025-ol-5": {
+    "src": "/exam-figures/japanese/ja-2025-ol-5.png",
+    "md5": "a5c97432a304633e4801bba5f6464353",
+    "alt": "Answer any five of the following eight questions about your school in Japanese in the spaces provided.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 13,
+      "region": [
+        0.05,
+        0.04,
+        0.96,
+        0.93
+      ]
+    }
+  },
+  "ja-2025-ol-lb-1-vi": {
+    "src": "/exam-figures/japanese/ja-2025-ol-lb-1-vi.png",
+    "md5": "58fd04bc89d3f0ecad84c6372332c96e",
+    "alt": "The hotel’s phone number is:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 3,
+      "region": [
+        0.51,
+        0.61,
+        0.94,
+        0.67
+      ]
+    }
+  },
+  "ja-2025-ol-lc-4": {
+    "src": "/exam-figures/japanese/ja-2025-ol-lc-4.png",
+    "md5": "75fbbe24e568acfb50865f22111b1270",
+    "alt": "Complete (a), (b) and (c) on the table.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 4,
+      "region": [
+        0.51,
+        0.52,
+        0.94,
+        0.68
+      ]
+    }
   }
 }
