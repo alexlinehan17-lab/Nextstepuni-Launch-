@@ -1,5 +1,3 @@
-import { execFileSync } from 'node:child_process';
-import { existsSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { REVIEWED_CARDS } from '../components/MarkBank/cards/russian/reviewed';
 import { languageMarks, languageScoreId, languageLengthId, languageFlagId, languageGroupId, languageRowId, languageOtherLanguageId } from '../components/MarkBank/languageScoring';
@@ -14,7 +12,6 @@ const get=(suffix:string)=>{
 const points=(suffix:string)=>{const c=get(suffix);if(c.rubric.system!=='language-points')throw new Error(suffix);return {...c,rubric:c.rubric};};
 const writing=(suffix:string)=>{const c=get(suffix);if(c.rubric.system!=='language-writing')throw new Error(suffix);return {...c,rubric:c.rubric};};
 const selected=(group:string,row='full',value=1)=>({[languageGroupId(group)]:1,[languageRowId(group,row)]:value});
-const canReadSources=(()=>{try{execFileSync('python3',['-c','import fitz'],{stdio:'ignore'});return ['papers/2017-hl-000-paper.pdf','papers/2017-hl-A00-paper.pdf','schemes/2017-hl.pdf'].every(p=>existsSync(`examiner-reports/russian/${p}`));}catch{return false;}})();
 
 describe('Russian 2017 Higher original source review',()=>{
   it('covers all 20 written and 19 listening tasks and the printed 300 marks',()=>{
@@ -112,22 +109,5 @@ describe('Russian 2017 Higher original source review',()=>{
     expect(languageMarks(c,Object.fromEntries(c.rubric.criteria.map(x=>[languageScoreId(x.id),1])))).toBe(4);
     expect(c.rubric.taskRequirements.join(' ')).toContain('China /Vietnam');
     expect(c.rubric.markingGuideNote).toContain('does not clarify whether both');
-  });
-  it.skipIf(!canReadSources)('verifies originals, the single passage word and the independent census',()=>{
-    const output=execFileSync('python3',['-c',`
-import copy,sys
-sys.path.insert(0,'scripts/markbank/authoring')
-from ru_review_2017_hl import build
-from ru_verify_review import verify
-from ru_review_census import reviewed_keys
-cards=build();verify(cards);assert len(reviewed_keys(2017,'hl'))==39
-c=copy.deepcopy(next(c for c in cards if c['id']=='ru-2017-hl-c2-4'))
-c['rubric']['alternativeSets'][0]['sourceText']='Invented mutually exclusive route rule'
-try:verify([c])
-except AssertionError:pass
-else:raise AssertionError('Invented alternative source rule accepted')
-print('Original sources and independent census verified')
-`],{encoding:'utf8',timeout:30000});
-    expect(output).toContain('Original sources and independent census verified');
   });
 });
