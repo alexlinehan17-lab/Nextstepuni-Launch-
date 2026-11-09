@@ -93288,5 +93288,5868 @@
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
     }
+  },
+  {
+    "id": "ru-2012-ol-ir1-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "kind-customers-okey-dokey-cafes-designed",
+    "questionRef": "2012 OL Section IR1 Q(i)",
+    "questionText": "What kind of customers are the Okey- Dokey cafes designed for? (Give one detail.)",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "review": {
+      "paperPages": [
+        2,
+        3,
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "component": "000",
+      "guidancePages": [
+        3
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated (each idea/concept separated by +) and 1 mark for a partially correct idea/concept. Do not deduct marks for incorrect English (spelling, syntax) unless it impedes communication.",
+        "Do not penalise answers supplied in Russian.",
+        "Where a candidate uses the same information in response to two or more questions, accept the first answer only."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "(people who live in) big cities",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "positive (people)",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "(like) new design",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "international menu",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "home- style dishes",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "wide range of clientele",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question."
+    }
+  },
+  {
+    "id": "ru-2012-ol-ir1-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "types-food-served-caf",
+    "questionRef": "2012 OL Section IR1 Q(ii)",
+    "questionText": "Name two of the types of food served in this café.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "review": {
+      "paperPages": [
+        2,
+        3,
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "component": "000",
+      "guidancePages": [
+        3
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated (each idea/concept separated by +) and 1 mark for a partially correct idea/concept. Do not deduct marks for incorrect English (spelling, syntax) unless it impedes communication.",
+        "Do not penalise answers supplied in Russian.",
+        "Where a candidate uses the same information in response to two or more questions, accept the first answer only.",
+        "no marks: kitchen food"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "international",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "home-style/traditional dishes",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "european",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "japanese",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Russian",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "items on the menu",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question."
+    }
+  },
+  {
+    "id": "ru-2012-ol-ir1-iii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "many-okey-dokey-caf-there-moscow",
+    "questionRef": "2012 OL Section IR1 Q(iii)",
+    "questionText": "How many Okey-Dokey cafés are there in Moscow?",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "review": {
+      "paperPages": [
+        2,
+        3,
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "component": "000",
+      "guidancePages": [
+        3
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated (each idea/concept separated by +) and 1 mark for a partially correct idea/concept. Do not deduct marks for incorrect English (spelling, syntax) unless it impedes communication.",
+        "Do not penalise answers supplied in Russian.",
+        "Where a candidate uses the same information in response to two or more questions, accept the first answer only."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "five (5)",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question."
+    }
+  },
+  {
+    "id": "ru-2012-ol-ir1-iv-a",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "menu-select-courses-more-than-section",
+    "questionRef": "2012 OL Section IR1 Q(iv)(a)",
+    "questionText": "From the menu select two courses (no more than one from any section) and one drink. Complete the following exercises based on your selection:\n\nWrite out in Russian / Cyrillic handwritten script the names of the dishes and drink which you have selected. Marks are awarded for the quality of your handwriting, not for your choice of dish.",
+    "totalMarks": 13,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "review": {
+      "paperPages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        4
+      ],
+      "component": "000",
+      "guidancePages": [
+        3
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated (each idea/concept separated by +) and 1 mark for a partially correct idea/concept. Do not deduct marks for incorrect English (spelling, syntax) unless it impedes communication.",
+        "Do not penalise answers supplied in Russian.",
+        "Where a candidate uses the same information in response to two or more questions, accept the first answer only.",
+        "Marks are awarded for the quality of your handwriting, not for your choice of dish."
+      ],
+      "criteria": [
+        {
+          "id": "dish-1",
+          "label": "Dish one",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "5",
+              "marks": [
+                5
+              ],
+              "guidance": [
+                "perfectly formed letters, joined together appropriately"
+              ]
+            },
+            {
+              "label": "4",
+              "marks": [
+                4
+              ],
+              "guidance": [
+                "well formed letters, some minor problems with joining letters"
+              ]
+            },
+            {
+              "label": "3",
+              "marks": [
+                3
+              ],
+              "guidance": [
+                "combination of printed and cursive scripts; confusion between Cyrillic and Latin scripts"
+              ]
+            },
+            {
+              "label": "2",
+              "marks": [
+                2
+              ],
+              "guidance": [
+                "some errors in transcription: letters omitted or confused"
+              ]
+            },
+            {
+              "label": "1",
+              "marks": [
+                1
+              ],
+              "guidance": [
+                "correct rendition of letters in block capitals/printed script"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dish-2",
+          "label": "Dish two",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "5",
+              "marks": [
+                5
+              ],
+              "guidance": [
+                "perfectly formed letters, joined together appropriately"
+              ]
+            },
+            {
+              "label": "4",
+              "marks": [
+                4
+              ],
+              "guidance": [
+                "well formed letters, some minor problems with joining letters"
+              ]
+            },
+            {
+              "label": "3",
+              "marks": [
+                3
+              ],
+              "guidance": [
+                "combination of printed and cursive scripts; confusion between Cyrillic and Latin scripts"
+              ]
+            },
+            {
+              "label": "2",
+              "marks": [
+                2
+              ],
+              "guidance": [
+                "some errors in transcription: letters omitted or confused"
+              ]
+            },
+            {
+              "label": "1",
+              "marks": [
+                1
+              ],
+              "guidance": [
+                "correct rendition of letters in block capitals/printed script"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "drink",
+          "label": "Drink",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "3",
+              "marks": [
+                3
+              ],
+              "guidance": [
+                "perfectly formed letters, joined together appropriately",
+                "well formed letters, some minor problems with joining letters"
+              ]
+            },
+            {
+              "label": "2",
+              "marks": [
+                2
+              ],
+              "guidance": [
+                "combination of printed and cursive scripts; confusion between Cyrillic and Latin scripts",
+                "some errors in transcription: letters omitted or confused"
+              ]
+            },
+            {
+              "label": "1",
+              "marks": [
+                1
+              ],
+              "guidance": [
+                "correct rendition of letters in block capitals/printed script"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question. The scheme gives criteria for your own menu choices and no worked example. Select two courses from different menu sections and one drink. The two dish names carry 5 marks each and the drink name 3. No handwritten exemplar is supplied. The scheme’s English Text 1 heading gives 35 marks while its Irish heading gives 30; the priced subparts and original paper total 35."
+    }
+  },
+  {
+    "id": "ru-2012-ol-ir1-iv-b",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "menu-select-courses-more-than-section",
+    "questionRef": "2012 OL Section IR1 Q(iv)(b)",
+    "questionText": "From the menu select two courses (no more than one from any section) and one drink. Complete the following exercises based on your selection:\n\nGive two ingredients in each of the dishes you have selected.",
+    "totalMarks": 8,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "review": {
+      "paperPages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        4
+      ],
+      "component": "000",
+      "guidancePages": [
+        3
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated (each idea/concept separated by +) and 1 mark for a partially correct idea/concept. Do not deduct marks for incorrect English (spelling, syntax) unless it impedes communication.",
+        "Do not penalise answers supplied in Russian.",
+        "Where a candidate uses the same information in response to two or more questions, accept the first answer only."
+      ],
+      "criteria": [
+        {
+          "id": "dish-1-ingredient-1",
+          "label": "Dish 1: ingredient 1",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidance": [
+            "2 marks for each ingredient"
+          ]
+        },
+        {
+          "id": "dish-1-ingredient-2",
+          "label": "Dish 1: ingredient 2",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidance": [
+            "2 marks for each ingredient"
+          ]
+        },
+        {
+          "id": "dish-2-ingredient-1",
+          "label": "Dish 2: ingredient 1",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidance": [
+            "2 marks for each ingredient"
+          ]
+        },
+        {
+          "id": "dish-2-ingredient-2",
+          "label": "Dish 2: ingredient 2",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidance": [
+            "2 marks for each ingredient"
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question. The scheme gives criteria for your own menu choices and no worked example. Select two courses from different menu sections and one drink."
+    }
+  },
+  {
+    "id": "ru-2012-ol-ir1-iv-c",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "menu-select-courses-more-than-section",
+    "questionRef": "2012 OL Section IR1 Q(iv)(c)",
+    "questionText": "From the menu select two courses (no more than one from any section) and one drink. Complete the following exercises based on your selection:\n\nHow much will your bill come to? Write out the cost of each item and indicate the total cost.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "review": {
+      "paperPages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        4
+      ],
+      "component": "000",
+      "guidancePages": [
+        3
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated (each idea/concept separated by +) and 1 mark for a partially correct idea/concept. Do not deduct marks for incorrect English (spelling, syntax) unless it impedes communication.",
+        "Do not penalise answers supplied in Russian.",
+        "Where a candidate uses the same information in response to two or more questions, accept the first answer only."
+      ],
+      "criteria": [
+        {
+          "id": "bill",
+          "label": "Correct bill",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            4
+          ],
+          "guidance": [
+            "4 marks for correct bill"
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question. The scheme gives criteria for your own menu choices and no worked example. Select two courses from different menu sections and one drink. Four marks are for a correct bill; the general one-mark partial-answer rule is retained. No per-item price allocation is inferred."
+    }
+  },
+  {
+    "id": "ru-2012-ol-ir1-iv-d",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "menu-select-courses-more-than-section",
+    "questionRef": "2012 OL Section IR1 Q(iv)(d)",
+    "questionText": "From the menu select two courses (no more than one from any section) and one drink. Complete the following exercises based on your selection:\n\nYou have gone to the café with a vegetarian friend. Select ONE appropriate dish for him/her. Supply the name of the dish in English or Russian.",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "review": {
+      "paperPages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        4
+      ],
+      "component": "000",
+      "guidancePages": [
+        3
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated (each idea/concept separated by +) and 1 mark for a partially correct idea/concept. Do not deduct marks for incorrect English (spelling, syntax) unless it impedes communication.",
+        "Do not penalise answers supplied in Russian.",
+        "Where a candidate uses the same information in response to two or more questions, accept the first answer only."
+      ],
+      "criteria": [
+        {
+          "id": "vegetarian",
+          "label": "Vegetarian dish",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidance": [
+            "vegetarian dish"
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question. The scheme gives criteria for your own menu choices and no worked example. Select two courses from different menu sections and one drink."
+    }
+  },
+  {
+    "id": "ru-2012-ol-ir2-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "IR2",
+    "topicId": "russian-3-4",
+    "conceptId": "avor-travel-first-travel-company-provide",
+    "questionRef": "2012 OL Section IR2 Q(i)",
+    "questionText": "What is AVOR travel the first travel company to provide?",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — IR2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 5.",
+    "review": {
+      "paperPages": [
+        6,
+        7
+      ],
+      "schemePages": [
+        5
+      ],
+      "component": "000",
+      "guidancePages": [
+        3
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated (each idea/concept separated by +) and 1 mark for a partially correct idea/concept. Do not deduct marks for incorrect English (spelling, syntax) unless it impedes communication.",
+        "Do not penalise answers supplied in Russian.",
+        "Where a candidate uses the same information in response to two or more questions, accept the first answer only."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Russian-language",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "special rates",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "new year party 2012",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question."
+    }
+  },
+  {
+    "id": "ru-2012-ol-ir2-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "IR2",
+    "topicId": "russian-3-4",
+    "conceptId": "six-outing-activities-facilities-provided",
+    "questionRef": "2012 OL Section IR2 Q(ii)",
+    "questionText": "Give six details about the outing (where it is to, what activities and/or facilities are provided).",
+    "totalMarks": 12,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — IR2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 5.",
+    "review": {
+      "paperPages": [
+        6,
+        7
+      ],
+      "schemePages": [
+        5
+      ],
+      "component": "000",
+      "guidancePages": [
+        3
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated (each idea/concept separated by +) and 1 mark for a partially correct idea/concept. Do not deduct marks for incorrect English (spelling, syntax) unless it impedes communication.",
+        "Do not penalise answers supplied in Russian.",
+        "Where a candidate uses the same information in response to two or more questions, accept the first answer only.",
+        "one mark: hotel"
+      ],
+      "count": 6,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "New Year (2012)",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "party",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Maldron Hotel/Tallaght",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "dinner/food",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "show/entertainment",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "live music",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "competitions/quizzes/games",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "dancing",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "comfortable/stylish hotel",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-10",
+          "label": "Answer 10",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "convenient transport/Luas",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-11",
+          "label": "Answer 11",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "sauna",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-12",
+          "label": "Answer 12",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "fitness-centre",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-13",
+          "label": "Answer 13",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "massage",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-14",
+          "label": "Answer 14",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "children’s play room",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-15",
+          "label": "Answer 15",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "hydromassage",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-16",
+          "label": "Answer 16",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "bowling",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-17",
+          "label": "Answer 17",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "swimming pool",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-18",
+          "label": "Answer 18",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Father Christmas",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-19",
+          "label": "Answer 19",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "story telling",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-20",
+          "label": "Answer 20",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "gift for kids",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question. Hotel alone is one partial detail, counted once within the six-detail quota. The scheme does not attach this note exclusively to either the named venue or the separate comfortable/stylish description."
+    }
+  },
+  {
+    "id": "ru-2012-ol-ir2-iii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "IR2",
+    "topicId": "russian-3-4",
+    "conceptId": "cost-outing-included-cost",
+    "questionRef": "2012 OL Section IR2 Q(iii)",
+    "questionText": "Give three details about the cost of the outing and what is included in the cost.",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — IR2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 5.",
+    "review": {
+      "paperPages": [
+        6,
+        7
+      ],
+      "schemePages": [
+        5
+      ],
+      "component": "000",
+      "guidancePages": [
+        3
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated (each idea/concept separated by +) and 1 mark for a partially correct idea/concept. Do not deduct marks for incorrect English (spelling, syntax) unless it impedes communication.",
+        "Do not penalise answers supplied in Russian.",
+        "Where a candidate uses the same information in response to two or more questions, accept the first answer only."
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "129 euro",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "single room plus 40 euro",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "children (under 12 & 2 adults) 69 euro",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "includes: night in hotel",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "breakfast",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "visit to spa",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "dinner",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "show",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question."
+    }
+  },
+  {
+    "id": "ru-2012-ol-cd-1-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "andrei-sister-section",
+    "questionRef": "2012 OL Section CD Q1(i)",
+    "questionText": "What does Andrei write about his sister? Give two details. (Section 1)",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — CD",
+      "pages": [
+        10,
+        11,
+        12
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 8.",
+    "review": {
+      "paperPages": [
+        10,
+        11,
+        12
+      ],
+      "schemePages": [
+        8
+      ],
+      "component": "000",
+      "guidancePages": [
+        3
+      ],
+      "questionPages": [
+        11
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept (each idea/concept separated by +) and 1 mark for a partially correct idea/concept [unless otherwise stated].",
+        "Do not penalise answers supplied in Russian.",
+        "Where a candidate uses the same information in response to two or more questions, accept the first answer only."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "name/ Lena",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "lives in Lugansk",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "(lives) with parents & Andrei",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "at school",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "likes foreign languages",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "wants to be a teacher",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question."
+    }
+  },
+  {
+    "id": "ru-2012-ol-cd-1-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "andrei-father-section",
+    "questionRef": "2012 OL Section CD Q1(ii)",
+    "questionText": "What does Andrei write about his father? Give two details. (Section 1)",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — CD",
+      "pages": [
+        10,
+        11,
+        12
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 8.",
+    "review": {
+      "paperPages": [
+        10,
+        11,
+        12
+      ],
+      "schemePages": [
+        8
+      ],
+      "component": "000",
+      "guidancePages": [
+        3
+      ],
+      "questionPages": [
+        11
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept (each idea/concept separated by +) and 1 mark for a partially correct idea/concept [unless otherwise stated].",
+        "Do not penalise answers supplied in Russian.",
+        "Where a candidate uses the same information in response to two or more questions, accept the first answer only."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "name/ Alexander (Nikolaevich)",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "lives in Lugansk",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "works in bank/banker",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "always busy",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "except in summer/time-off/annual leave/vacation in summer",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "holiday at sea",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "has a brother",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "has a sister",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question."
+    }
+  },
+  {
+    "id": "ru-2012-ol-cd-1-iii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "andrei-aunt-section",
+    "questionRef": "2012 OL Section CD Q1(iii)",
+    "questionText": "What does Andrei write about his aunt? Give one detail. (Section 1)",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — CD",
+      "pages": [
+        10,
+        11,
+        12
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 8.",
+    "review": {
+      "paperPages": [
+        10,
+        11,
+        12
+      ],
+      "schemePages": [
+        8
+      ],
+      "component": "000",
+      "guidancePages": [
+        3
+      ],
+      "questionPages": [
+        11
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept (each idea/concept separated by +) and 1 mark for a partially correct idea/concept [unless otherwise stated].",
+        "Do not penalise answers supplied in Russian.",
+        "Where a candidate uses the same information in response to two or more questions, accept the first answer only."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "lives in Lugansk",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "nurse",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "works in hospital",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "visits (not often)",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "lives nearby",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question."
+    }
+  },
+  {
+    "id": "ru-2012-ol-cd-2-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "andrei-mother-section",
+    "questionRef": "2012 OL Section CD Q2(i)",
+    "questionText": "What does Andrei write about his mother? Give two details. (Section 2)",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — CD",
+      "pages": [
+        10,
+        11,
+        12
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 8.",
+    "review": {
+      "paperPages": [
+        10,
+        11,
+        12
+      ],
+      "schemePages": [
+        8
+      ],
+      "component": "000",
+      "guidancePages": [
+        3
+      ],
+      "questionPages": [
+        11
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept (each idea/concept separated by +) and 1 mark for a partially correct idea/concept [unless otherwise stated].",
+        "Do not penalise answers supplied in Russian.",
+        "Where a candidate uses the same information in response to two or more questions, accept the first answer only."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "works in university",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "id": "partial-1",
+              "text": "teaches in Institute",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "name/Olga Ivanovna",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "teaches Spanish",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "has 2 sisters",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "has a brother",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question."
+    }
+  },
+  {
+    "id": "ru-2012-ol-cd-2-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "andrei-mother-brother-section",
+    "questionRef": "2012 OL Section CD Q2(ii)",
+    "questionText": "What does Andrei write about his mother’s brother? Give two details. (Section 2)",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — CD",
+      "pages": [
+        10,
+        11,
+        12
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 8.",
+    "review": {
+      "paperPages": [
+        10,
+        11,
+        12
+      ],
+      "schemePages": [
+        8
+      ],
+      "component": "000",
+      "guidancePages": [
+        3
+      ],
+      "questionPages": [
+        11
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept (each idea/concept separated by +) and 1 mark for a partially correct idea/concept [unless otherwise stated].",
+        "Do not penalise answers supplied in Russian.",
+        "Where a candidate uses the same information in response to two or more questions, accept the first answer only."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "works in TV",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "is married",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "has 2 sons",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "id": "partial-1",
+              "text": "has a son",
+              "marks": 1
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question."
+    }
+  },
+  {
+    "id": "ru-2012-ol-cd-2-iii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "andrei-grandparents-section",
+    "questionRef": "2012 OL Section CD Q2(iii)",
+    "questionText": "What does Andrei write about his grandparents? Give one detail. (Section 2)",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — CD",
+      "pages": [
+        10,
+        11,
+        12
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 8.",
+    "review": {
+      "paperPages": [
+        10,
+        11,
+        12
+      ],
+      "schemePages": [
+        8
+      ],
+      "component": "000",
+      "guidancePages": [
+        3
+      ],
+      "questionPages": [
+        11
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept (each idea/concept separated by +) and 1 mark for a partially correct idea/concept [unless otherwise stated].",
+        "Do not penalise answers supplied in Russian.",
+        "Where a candidate uses the same information in response to two or more questions, accept the first answer only."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "father’s parents live in the country/in village",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "mother’s parents live in another city",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "all are pensioners",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "they often visit them",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question."
+    }
+  },
+  {
+    "id": "ru-2012-ol-cd-3",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "andrei-daily-routine-section",
+    "questionRef": "2012 OL Section CD Q3",
+    "questionText": "Give five details about Andrei’s daily routine. (Section 3)",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — CD",
+      "pages": [
+        10,
+        11,
+        12
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 8.",
+    "review": {
+      "paperPages": [
+        10,
+        11,
+        12
+      ],
+      "schemePages": [
+        8
+      ],
+      "component": "000",
+      "guidancePages": [
+        3
+      ],
+      "questionPages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept (each idea/concept separated by +) and 1 mark for a partially correct idea/concept [unless otherwise stated].",
+        "Do not penalise answers supplied in Russian.",
+        "Where a candidate uses the same information in response to two or more questions, accept the first answer only."
+      ],
+      "count": 5,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "gets up early/at 7:00",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "takes shower",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "gets breakfast",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "eats something light (for breakfast)",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "drinks coffee (for breakfast)",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "goes to university/7:45",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "lectures begin at 8:00",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "at lectures pays attention and takes notes/ does exercises",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "has lunch with friends/at 14:00",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-10",
+          "label": "Answer 10",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "goes to café (usually)",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-11",
+          "label": "Answer 11",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "sometimes prepare lunch for themselves",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-12",
+          "label": "Answer 12",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "shops",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-13",
+          "label": "Answer 13",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "buys bread/ kefir/ bananas/ yogourt/ butter/the makings of lunch",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-14",
+          "label": "Answer 14",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "go back to hostel",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-15",
+          "label": "Answer 15",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "evenings relax",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-16",
+          "label": "Answer 16",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "watches TV",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-17",
+          "label": "Answer 17",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "reads papers and magazines",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-18",
+          "label": "Answer 18",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "has evening meal/ 19:00",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-19",
+          "label": "Answer 19",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "does homework",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-20",
+          "label": "Answer 20",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "goes to bed at 23:00",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question."
+    }
+  },
+  {
+    "id": "ru-2012-ol-cd-4",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "alexander-section",
+    "questionRef": "2012 OL Section CD Q4",
+    "questionText": "Give five details about Alexander. (Section 4)",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — CD",
+      "pages": [
+        10,
+        11,
+        12
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 8.",
+    "review": {
+      "paperPages": [
+        10,
+        11,
+        12
+      ],
+      "schemePages": [
+        8
+      ],
+      "component": "000",
+      "guidancePages": [
+        3
+      ],
+      "questionPages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept (each idea/concept separated by +) and 1 mark for a partially correct idea/concept [unless otherwise stated].",
+        "Do not penalise answers supplied in Russian.",
+        "Where a candidate uses the same information in response to two or more questions, accept the first answer only."
+      ],
+      "count": 5,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "student",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "studying chinese",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "for a year",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "understands quite well",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "speaks a little",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "likes Chinese",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "gets up at 7:00",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "goes to classes at 7:30",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "goes home at 14:00",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-10",
+          "label": "Answer 10",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "does shopping on the way",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-11",
+          "label": "Answer 11",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "buys bread/ meat/ milk/ vegetables/ fruit",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-12",
+          "label": "Answer 12",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "relaxes/reads/listens to radio",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-13",
+          "label": "Answer 13",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "does homework in the evenings",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-14",
+          "label": "Answer 14",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "goes to bed at 11:00",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish unless the task specifies otherwise. The scheme explicitly accepts Russian answers. Do not claim the same information again in another question."
+    }
+  },
+  {
+    "id": "ru-2012-ol-la2",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "LA2",
+    "topicId": "russian-3-2",
+    "conceptId": "avor-advertisement-find-following-supply-word",
+    "questionRef": "2012 OL Section LA2",
+    "questionText": "In the AVOR advertisement find ONE of each of the following. Supply the word in Russian.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — LA2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 5.",
+    "review": {
+      "paperPages": [
+        6,
+        7
+      ],
+      "schemePages": [
+        5
+      ],
+      "component": "000"
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "Award one marks for each correct answer"
+      ],
+      "criteria": [
+        {
+          "id": "word-1",
+          "label": "A masculine word",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidance": []
+        },
+        {
+          "id": "word-2",
+          "label": "A feminine word",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidance": []
+        },
+        {
+          "id": "word-3",
+          "label": "A neuter word",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidance": []
+        },
+        {
+          "id": "word-4",
+          "label": "A plural word",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidance": []
+        },
+        {
+          "id": "word-5",
+          "label": "A verb",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "Find one example of each category in the original AVOR advertisement. The scheme supplies no closed answer list."
+    }
+  },
+  {
+    "id": "ru-2012-ol-mm",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "MM",
+    "topicId": "russian-3-5",
+    "conceptId": "match-following-sections-links-internet-site",
+    "questionRef": "2012 OL Section MM",
+    "questionText": "Match the following sections/links on an Internet site with the headlines supplied below. Write the number of the section in the space provided beside each headline.",
+    "totalMarks": 40,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — MM",
+      "pages": [
+        8
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 6.",
+    "review": {
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        6
+      ],
+      "component": "000"
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Assign FOUR marks per correct answer"
+      ],
+      "count": 10,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "В Москве перекрыто движение транспорта по десяткам центральных улиц. ГИБДД просит автомобилистов заранее выбирать альтернативные маршруты движения.",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "3 / автомобили",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Владивосток засыпает мокрым снегом, дует сильный ветер, порывы достигают 25 метров в секунду.",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "1/ погода",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Кто больше всех пользуется социальными сетями в Европе? Чемпион по проникновению соцсетей — Турция, на втором месте — Польша, на третьем — Великобритания. Показатель России — средний по Европе: 83,4 %, это десятое место.",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "8 / Интернет",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Миллионы людей теперь могут увидеть то, что видел Юрий Гагарин в иллюминатор корабля «Восток». В Великобритании создали документальный фильм, в котором запись знаменитого голоса сопровождают кадры аэрокосмической съемки.",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "9 / кино",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Москва завершила празднование Дня Победы салютом. Воочию фейерверк могли наблюдать около трех миллионов человек.",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "7/ праздники",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Музей изобразительных искусств имени А. С. Пушкина экспонирует картину Боттичелли «Паллада и кентавр».",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "2 / выставки",
+              "marks": 4
+            },
+            {
+              "id": "partial",
+              "text": "6 / история",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "На выставке в Лондоне показали самые экологичные дома.",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "5 / строительство",
+              "marks": 4
+            },
+            {
+              "id": "alternative-1",
+              "text": "2 / выставки",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Петербургский клуб моряков сегодня увековечил имя капитана 1-го ранга Василия Тураева. На доме № 12 по Наличной улице появилась мемориальная доска.",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "6 / история",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Российские буддисты сегодня отмечают Новый год по восточному лунному календарю. Бурятии его называют Сагаалган, что означает «белый месяц».",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "10 / религия",
+              "marks": 4
+            },
+            {
+              "id": "alternative-1",
+              "text": "7/ праздники",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-10",
+          "label": "Сегодня в Москве открылась Первая глобальная конференция по здоровому образу жизни.",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "4 / медицина",
+              "marks": 4
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "The museum headline accepts 2 / выставки for 4 marks or 6 / история for 2. The eco-houses and Buddhist-new-year headlines each retain both printed full-credit alternatives."
+    }
+  },
+  {
+    "id": "ru-2012-ol-sd",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "SD",
+    "topicId": "russian-3-3",
+    "conceptId": "complete-interview-inserting-following-words-appropriate",
+    "questionRef": "2012 OL Section SD",
+    "questionText": "Complete the interview by inserting the following words in the appropriate spaces provided. All the words are provided in the appropriate form.\n\nFocail in easnamh / Missing words\nГде            Как           Какую          Кто            Почему\nКак            Какие           Когда          Куда           Сколько\n\nAgallamh / Interview / Интервью с Камилем Кухажевским для e-Lama\nКамиль Кухажевский (Kamil Kucharzewski), 12 лет, родом из Вроцлава, двукратный вице-чемпион мира\nпо Electric Boogie.\n\n\n–___________________________________ ты всерьёз задумался о танцах?\n– В 7 лет.\n\n\n–___________________________________ ты захотел танцевать?\n– Потому что у меня хорошее чувство музыки.\n\n\n–___________________________________ прошёл твой последний турнир?\n– Недавно я участвовал в Чемпионате Мира и в конце концов выиграл.\n\n\n–___________________________________ ты ездил на Чемпионат Мира ?\n– В Берлин.\n\n\n–___________________________________ предложил участвовать в кастинге программы\n«You Can Dance»?\n– Это папа придумал.\n\n\n–___________________________________ времени проходил кастинг?\n– Страшно долго всё это длилось. Мы должны были час отстоять в очереди, кто-то сказал мне\nзаполнить анкету, в которой было 49 вопросов.\n\n\n– A ___________________________________ еще у тебя есть хобби?\n– Я люблю плавать, у меня хорошо получается и я люблю это.\n\n\n–___________________________________ ты проводишь свободное время?\n– Танцую, мог бы это делать часами. Когда совсем устану – смотрю фильмы о танцах в Интернете.\n\n\n–___________________________________ ты танцуешь?\n–Я танцую везде: и дома, и в школе. Танцую на переменах и на уроках, но только ногами под партой.\n\n\n– Под ___________________________________ музыку тебе танцуется лучше?\n– У меня есть свои любимые исполнители, в последнее время полюбил танцевать под музыку 80-х\nгодов, например, под Майкла Джексона.",
+    "totalMarks": 20,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — SD",
+      "pages": [
+        9
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 7.",
+    "review": {
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        7
+      ],
+      "component": "000"
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "TWO marks per correct answer"
+      ],
+      "count": 10,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Когда",
+              "marks": 2
+            },
+            {
+              "id": "partial-1",
+              "text": "Сколько",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Почему",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Как (/когда)",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Куда",
+              "marks": 2
+            },
+            {
+              "id": "partial-1",
+              "text": "Где",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Кто",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Сколько",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "какие",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Как",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Где",
+              "marks": 2
+            },
+            {
+              "id": "partial-1",
+              "text": "Куда",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "answer-10",
+          "label": "Answer 10",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "какую",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Complete all ten gaps. The source gives one-mark alternatives Сколько for gap 1, Где for gap 4 and Куда for gap 9. Gap 3 accepts Как or когда."
+    }
+  },
+  {
+    "id": "ru-2012-ol-sa",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "SA",
+    "topicId": "russian-3-6",
+    "conceptId": "sentences-following-topics-russian-english-answer",
+    "questionRef": "2012 OL Section SA",
+    "questionText": "Write 3-5 sentences on TWO of the following topics in Russian or English. Each answer should contain three factual details. Marks are awarded for relevant content and textual coherence. Indicate which essays you are writing by supplying the essay titles. 1. Traditional Russian food and cooking/ Tрадиционная кухня русского народа 2. Holidays in Russia/ Отдых в РФ 3. Russians abroad/ Русские за границей 4. A Russian city of your choice / Российский город на выбор 5. Education in Russia/ Образование в РФ 6. Russian media/ Российские средства массовой информации 7. Russian Internet resources/ Русскоязычные веб-сайты 8. Culture in Russia today/ Культура в РФ сегодня",
+    "totalMarks": 30,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — SA",
+      "pages": [
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 9.",
+    "review": {
+      "paperPages": [
+        13
+      ],
+      "schemePages": [
+        9
+      ],
+      "component": "000"
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "Write 3-5 sentences on TWO of the following topics in Russian or English. Each answer should contain three factual details. Marks are awarded for relevant content and textual coherence.",
+        "The quality of the English/Russian will only be an assessment factor insofar as it impedes communication."
+      ],
+      "criteria": [
+        {
+          "id": "first-content",
+          "label": "First chosen topic: content",
+          "maxMarks": 12,
+          "permittedMarks": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "guidance": [
+            "Allocate 4 marks for each correct idea/concept up to a maximum of 12 marks; Allocate 2 marks for a partially correct idea/concept up to a maximum of 6 marks."
+          ]
+        },
+        {
+          "id": "first-coherence",
+          "label": "First chosen topic: textual coherence",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "3",
+              "marks": [
+                3
+              ],
+              "guidance": [
+                "Excellent organisation. A high degree of coherence throughout."
+              ]
+            },
+            {
+              "label": "2",
+              "marks": [
+                2
+              ],
+              "guidance": [
+                "Material generally developed within a carefully planned framework. Generally well constructed but lacking coherence in places."
+              ]
+            },
+            {
+              "label": "1",
+              "marks": [
+                1
+              ],
+              "guidance": [
+                "Satisfactory organisation of material. Development of ideas patchy and/or unambitious. Rambling and/or repetitive at times."
+              ]
+            },
+            {
+              "label": "0",
+              "marks": [
+                0
+              ],
+              "guidance": [
+                "Limited ability to organise material and develop ideas. Structure lacks coherence."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "second-content",
+          "label": "Second chosen topic: content",
+          "maxMarks": 12,
+          "permittedMarks": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "guidance": [
+            "Allocate 4 marks for each correct idea/concept up to a maximum of 12 marks; Allocate 2 marks for a partially correct idea/concept up to a maximum of 6 marks."
+          ]
+        },
+        {
+          "id": "second-coherence",
+          "label": "Second chosen topic: textual coherence",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "3",
+              "marks": [
+                3
+              ],
+              "guidance": [
+                "Excellent organisation. A high degree of coherence throughout."
+              ]
+            },
+            {
+              "label": "2",
+              "marks": [
+                2
+              ],
+              "guidance": [
+                "Material generally developed within a carefully planned framework. Generally well constructed but lacking coherence in places."
+              ]
+            },
+            {
+              "label": "1",
+              "marks": [
+                1
+              ],
+              "guidance": [
+                "Satisfactory organisation of material. Development of ideas patchy and/or unambitious. Rambling and/or repetitive at times."
+              ]
+            },
+            {
+              "label": "0",
+              "marks": [
+                0
+              ],
+              "guidance": [
+                "Limited ability to organise material and develop ideas. Structure lacks coherence."
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    }
+  },
+  {
+    "id": "ru-2012-ol-ew",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "EW",
+    "topicId": "russian-3-9",
+    "conceptId": "sentences-following-topics-russian-interview-questions",
+    "questionRef": "2012 OL Section EW",
+    "questionText": "Write 6-10 sentences on ONE of the following\ntopics IN RUSSIAN.\n\n1.  Write an interview (4-5 questions and answers)\n    with a Russian person living in Ireland.\n    Include:\n   •  how or why they came to Ireland\n   •  what they like the most about Ireland\n   •  what they dislike about living in Ireland\n   •  what plans they have for the future\n\n\n             OR\n\n2. You are away on a trip abroad and have\n    decided to write a blog. In your blog include:\n   •  where you are staying\n   •  what the weather is like\n   •  what you did today\n   •  who you are away with\n   •  what you are going to do tomorrow\n\n\n             OR\n\n 3.  Write a profile for your school year book.\n    Include:\n   •  personal information\n   •   interests and hobbies\n\n   •  your current studies or working life\n\n   •  plans for the future",
+    "totalMarks": 30,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — EW",
+      "pages": [
+        14
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "review": {
+      "paperPages": [
+        14
+      ],
+      "schemePages": [
+        10,
+        11
+      ],
+      "component": "000"
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "Write 6-10 sentences on one of the following topics IN RUSSIAN.",
+        "No marks are awarded for additional information/content."
+      ],
+      "criteria": [
+        {
+          "id": "content",
+          "label": "Communication + content",
+          "maxMarks": 12,
+          "permittedMarks": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "guidance": [
+            "2 points for content details up to maximum of 12"
+          ]
+        },
+        {
+          "id": "expression",
+          "label": "Language + expression",
+          "maxMarks": 12,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "12",
+              "marks": [
+                12
+              ],
+              "guidance": [
+                "Almost flawless in terms of accuracy. Shows sophistication in the manipulation of the structures of the language."
+              ]
+            },
+            {
+              "label": "10-11",
+              "marks": [
+                10,
+                11
+              ],
+              "guidance": [
+                "A few errors, mostly of a minor nature. Successful manipulation of the language."
+              ]
+            },
+            {
+              "label": "7-9",
+              "marks": [
+                7,
+                8,
+                9
+              ],
+              "guidance": [
+                "A number of major grammatical errors made, without impairing communication significantly. Satisfactory to good manipulation of the language."
+              ]
+            },
+            {
+              "label": "4-6",
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "Communication often impaired by basic error e.g. agreements, verb forms. Limited ability to manipulate language; mainly simple 'translated' language, which impedes communication."
+              ]
+            },
+            {
+              "label": "1-3",
+              "marks": [
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "Accuracy only in the simplest forms. A high incidence of basic error. Very little ability to manipulate language."
+              ]
+            },
+            {
+              "label": "0",
+              "marks": [
+                0
+              ],
+              "guidance": [
+                "Knowledge and range so limited that no mark can be awarded"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "coherence",
+          "label": "Textual coherence",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "6",
+              "marks": [
+                6
+              ],
+              "guidance": [
+                "Excellent organisation. A high degree of coherence throughout."
+              ]
+            },
+            {
+              "label": "4-5",
+              "marks": [
+                4,
+                5
+              ],
+              "guidance": [
+                "Material generally developed within a carefully planned framework. Generally well constructed but lacking coherence in places."
+              ]
+            },
+            {
+              "label": "2-3",
+              "marks": [
+                2,
+                3
+              ],
+              "guidance": [
+                "Satisfactory organisation of material. Development of ideas patchy and/or unambitious. Rambling and/or repetitive at times."
+              ]
+            },
+            {
+              "label": "1",
+              "marks": [
+                1
+              ],
+              "guidance": [
+                "Limited ability to organise material and develop ideas. Structure lacks coherence."
+              ]
+            },
+            {
+              "label": "0",
+              "marks": [
+                0
+              ],
+              "guidance": [
+                "So ill-organised and lacking coherence that no credit can be given."
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    }
+  },
+  {
+    "id": "ru-2012-ol-l1-1",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L1",
+    "topicId": "russian-0-5",
+    "conceptId": "actor-film-director-charge-panel-judges",
+    "questionRef": "2012 OL Section L1 Q1",
+    "questionText": "What actor/film director is in charge of the panel of judges at the Cannes Film Festival? a. Al Pacino b. Clint Eastwood c. Mel Gibson d. Robert de Niro",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 12.",
+    "review": {
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        12
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "d. Robert de Niro",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2012-ol-l1-2",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L1",
+    "topicId": "russian-0-7",
+    "conceptId": "happening-night-14th-may-moscow-circus",
+    "questionRef": "2012 OL Section L1 Q2",
+    "questionText": "What is happening on the night of the 14th May in Moscow? a. Circus night b. Dance night c. Food night d. Museum night",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 12.",
+    "review": {
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        12
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "d. Museum night",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2012-ol-l1-3-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L1",
+    "topicId": "russian-0-2",
+    "conceptId": "country-dovlatov-festival-held",
+    "questionRef": "2012 OL Section L1 Q3(i)",
+    "questionText": "In what country was the Dovlatov Festival held?",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 12.",
+    "review": {
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        12
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Estonia",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2012-ol-l1-3-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L1",
+    "topicId": "russian-0-7",
+    "conceptId": "dovlatov",
+    "questionRef": "2012 OL Section L1 Q3(ii)",
+    "questionText": "Give one detail about Dovlatov.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 12.",
+    "review": {
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        12
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "First name: Sergei",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "(lived/worked in capital of) Estonia/Tallin (from 1972-1975)",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "correspondent",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "three papers (“Soviet Estonia”/ “Estonian sailor”/ “ Evening Tallin”)",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "emigrated to New-York",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "emigrated in 1978",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "died in New-York",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "24th of August is his death anniversary",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He died 21 years ago",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2012-ol-l1-4",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L1",
+    "topicId": "russian-2-5",
+    "conceptId": "victory-day-celebrated-moscow",
+    "questionRef": "2012 OL Section L1 Q4",
+    "questionText": "How was Victory Day celebrated in Moscow? Give one detail.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 12.",
+    "review": {
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        12
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Several million people (took part)",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "fireworks (in the evening)",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "concerts",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "fairs",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "exhibitions",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "(40’s style) ball",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "(main event – military) parade (at 10.00)",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "thousand of spectators/veterans of war were watching",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "president of Russian Federation /D. Medvedev",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-10",
+          "label": "Answer 10",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "prime minister/ V.Putin",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-11",
+          "label": "Answer 11",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "members of the Parliament",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-12",
+          "label": "Answer 12",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "members of the government",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2012-ol-l2-1",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L2",
+    "topicId": "russian-0-7",
+    "conceptId": "event-irish-history-concert-timed-coincide",
+    "questionRef": "2012 OL Section L2 Q1",
+    "questionText": "What event in Irish history is this concert timed to coincide with? a. The Civil War b. The Easter Rising c. The Famine d. The Great War",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 13.",
+    "review": {
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        13
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "b. The Easter Rising",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2012-ol-l2-2-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L2",
+    "topicId": "russian-0-5",
+    "conceptId": "kind-music-pauline-scanlon-play-classical",
+    "questionRef": "2012 OL Section L2 Q2(i)",
+    "questionText": "What kind of music does Pauline Scanlon play? a. Classical b. Pop c. Rock d. Traditional",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 13.",
+    "review": {
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        13
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "d. Traditional",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2012-ol-l2-2-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L2",
+    "topicId": "russian-0-2",
+    "conceptId": "russian-city-group-foggy-dew-based",
+    "questionRef": "2012 OL Section L2 Q2(ii)",
+    "questionText": "In what Russian city is the group Foggy Dew based? a. Ekaterinburg b. Kazan’ c. Rostov-on-the-Don d. Saint Petersburg",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 13.",
+    "review": {
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        13
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "c. Rostov-on-the-Don",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2012-ol-l2-3",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L2",
+    "topicId": "russian-0-8",
+    "conceptId": "get-concert-venue",
+    "questionRef": "2012 OL Section L2 Q3",
+    "questionText": "Give two details on how to get to the concert venue.",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 13.",
+    "review": {
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        13
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Limited parking",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "use public transport",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "by metro",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Mayakovskiy station",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "trolleybuses",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Numbers 24/14",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "any bus along Tverskoy street",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2012-ol-l3-1-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L3",
+    "topicId": "russian-0-7",
+    "conceptId": "age-mair-nesbitt-start-playing-fiddle",
+    "questionRef": "2012 OL Section L3 Q1(i)",
+    "questionText": "At what age did Mairéad Nesbitt start playing the fiddle?",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 14.",
+    "review": {
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        14
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She started late/ when she was 6 years old",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2012-ol-l3-1-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L3",
+    "topicId": "russian-0-1",
+    "conceptId": "mair-family",
+    "questionRef": "2012 OL Section L3 Q1(ii)",
+    "questionText": "Give one detail about Mairéad’s family.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 14.",
+    "review": {
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        14
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Musical family",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "mother-violinist, teacher of music",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "father- accordionist",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "siblings all musicians",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "grandmother on the mother’s side and all the family are musicians",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "father’s family- all teach music",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2012-ol-l3-2-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L3",
+    "topicId": "russian-0-3",
+    "conceptId": "mair-studies",
+    "questionRef": "2012 OL Section L3 Q2(i)",
+    "questionText": "Give one detail about Mairéad’s studies.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 14.",
+    "review": {
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        14
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "7 years",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "classical music/ music school",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "3 years in Waterford",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "in Cork Musical school",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Karnelia Zedech was her teacher",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "in London (by Emanuel Hurwitz)",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2012-ol-l3-2-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L3",
+    "topicId": "russian-0-4",
+    "conceptId": "mair-career-before-started-working-michael",
+    "questionRef": "2012 OL Section L3 Q2(ii)",
+    "questionText": "Give one detail about Mairéad’s career before she started working for Michael Flatley.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 14.",
+    "review": {
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        14
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "RTE Concert Orchestra for 5 years",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "ability to play classical and traditional music",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "worked with different rock groups/musicians/like Van Morrison/ Sinead O’Connor",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "was contacted by press agent of Michael Flatley and offered a job",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2012-ol-l3-3",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L3",
+    "topicId": "russian-0-5",
+    "conceptId": "many-tracks-there-mair-new-album",
+    "questionRef": "2012 OL Section L3 Q3",
+    "questionText": "How many tracks will there be on Mairéad’s new album? a. 4 b. 5 c. 9 d. 14",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 14.",
+    "review": {
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        14
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "d. 14",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2012-ol-l4-1",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L4",
+    "topicId": "russian-0-7",
+    "conceptId": "alexander-rosenbaum-born-september-1951-september",
+    "questionRef": "2012 OL Section L4 Q1",
+    "questionText": "When was Alexander Rosenbaum born? a. 3 September 1951 b. 13 September 1951 c. 3 September 1961 d. 13 September 1961",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L4",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "review": {
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "b. 13 September 1951",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2012-ol-l4-2-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L4",
+    "topicId": "russian-0-3",
+    "conceptId": "alexander-rosenbaum-study-left-school-driving",
+    "questionRef": "2012 OL Section L4 Q2(i)",
+    "questionText": "What did Alexander Rosenbaum study when he left school? a. driving b. engineering c. medicine d. nursing",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L4",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "review": {
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "c. medicine",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2012-ol-l4-2-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L4",
+    "topicId": "russian-0-7",
+    "conceptId": "alexander-rosenbaum-win-prize-kiev-leningrad",
+    "questionRef": "2012 OL Section L4 Q2(ii)",
+    "questionText": "Where did Alexander Rosenbaum win a prize? a. Kiev b. Leningrad c. Moscow d. Sochi",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L4",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "review": {
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "a. Kiev",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2012-ol-l4-3",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L4",
+    "topicId": "russian-0-3",
+    "conceptId": "graduation-alexander-rosenbaum-worked-ambulance-service",
+    "questionRef": "2012 OL Section L4 Q3",
+    "questionText": "On graduation Alexander Rosenbaum worked in the ambulance service. What did he study in the evenings?",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L4",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "review": {
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Evening Jazz college",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "3 times weekly",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "was learning jazz composition",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "arrangement",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "graduated with diploma in Jazz studies",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "partial",
+          "label": "Published partial answer",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "music",
+              "text": "music",
+              "marks": 3
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2012-ol-l4-4",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2012,
+    "section": "L4",
+    "topicId": "russian-0-4",
+    "conceptId": "alexander-rosenbaum-1980-became-professional-musician",
+    "questionRef": "2012 OL Section L4 Q4",
+    "questionText": "What did Alexander Rosenbaum do in 1980? a. Became a professional musician b. Got married c. Moved to Argentina d. Opened up a GP practice",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2012 Ordinary Russian — L4",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "review": {
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "component": "A00",
+      "guidancePages": [
+        12
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian or – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise",
+        "Award FIVE marks for each correct/relevant point."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "a. Became a professional musician",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2012 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "secFileid": "LC099ZLPO17EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC099ZLPO17EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
   }
 ]

@@ -13,6 +13,22 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('shows the 2012 handwriting allocation and its printed bilingual total discrepancy',async()=>{
+    reveal('ir1-iv-a','ol',2012);
+    await waitFor(()=>expect(screen.getByText(/The two dish names carry 5 marks each and the drink name 3/)).toBeVisible());
+    expect(screen.getByText(/its Irish heading gives 30/)).toHaveTextContent('original paper total 35');
+    fireEvent.click(screen.getByRole('button',{name:'Set Dish one to 5 marks'}));
+    fireEvent.click(screen.getByRole('button',{name:'Set Drink to 3 marks'}));
+    await waitFor(()=>expect(screen.getByText(/placement is 8 of 13 marks/)).toBeVisible());
+  });
+  it('shows the 2012 question-level hotel partial and source repeat-information rule',async()=>{
+    reveal('ir2-ii','ol',2012);
+    await waitFor(()=>expect(screen.getByText('one mark: hotel')).toBeVisible());
+    expect(screen.getByText(/Hotel alone is one partial detail/)).toHaveTextContent('counted once within the six-detail quota');
+    expect(screen.getByText(/Where a candidate uses the same information/)).toBeVisible();
+    expect(screen.getByText('Maldron Hotel/Tallaght')).toBeVisible();
+    expect(screen.getByText('comfortable/stylish hotel')).toBeVisible();
+  });
   it('shows the 2013 handwriting discount and the published benefits-count discrepancy',async()=>{
     reveal('ir1-i','ol',2013);
     await waitFor(()=>expect(screen.getByText(/The scheme discounts the handwriting column/)).toBeVisible());
