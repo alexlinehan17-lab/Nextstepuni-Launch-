@@ -222,7 +222,7 @@ MAPS: dict[tuple[int, str], list[dict]] = {
         C("Q3 B · Grammar 1", 10, .4146, R(10, .0456, .3775)),
         C("Q3 B · Grammar 2", 11, .0702, R(10, .3655, .85), end=(11, .93)),
         C("Q4 · School cloze", 12, .0829, R(11, .0814, .5277), end=(12, .93)),
-        C("Q5 · Summer holidays", 13, .0797, R(11, .5157, .92), end=(13, .93)),
+        C("Q5 · Summer holidays", 13, .0797, R(11, .5157, .92), R(12, .04, .92), end=(13, .93)),
     ],
 }
 

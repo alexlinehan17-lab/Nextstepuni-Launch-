@@ -50,8 +50,8 @@ describe('Japanese 2026 Higher source review', () => {
 
   it('retains all 600 previously served cards while adding the reviewed sitting', () => {
     expect(higher.filter(card => card.year !== 2026)).toHaveLength(339);
-    expect(ordinary).toHaveLength(261);
-    expect(new Set([...higher, ...ordinary].map(card => card.id)).size).toBe(671);
+    expect(ordinary.filter(card => card.year !== 2026)).toHaveLength(261);
+    expect(new Set([...higher, ...ordinary].map(card => card.id)).size).toBe(730);
     expect([...higher, ...ordinary].some(card => ['ja-2021-ol-2b-ii', 'ja-2021-ol-3a-4-iv'].includes(card.id))).toBe(false);
   });
 
@@ -63,7 +63,7 @@ describe('Japanese 2026 Higher source review', () => {
       expect(card.answerLanguageRule, card.id).toEqual({ otherLanguageMultiplier: 0.5, sourceText, schemePages: [3] });
     }
     expect(higher.filter(card => card.year !== 2026).some(card => card.answerLanguageRule)).toBe(false);
-    expect(ordinary.some(card => card.answerLanguageRule)).toBe(false);
+    expect(ordinary.filter(card => card.year !== 2026).some(card => card.answerLanguageRule)).toBe(false);
   });
 
   it('retains full bilingual-line continuations, the translation and gift-table example', () => {
