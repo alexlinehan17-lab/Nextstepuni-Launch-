@@ -23,6 +23,19 @@ const fixture = (multiplier: 0 | 0.5 = 0.5): SecQuestionCard => ({
 });
 
 describe('source-defined language credit on point answers', () => {
+  it('labels and grades only the named response-language condition from the source', () => {
+    const card = fixture();
+    card.answerLanguageRule = { ...card.answerLanguageRule!, penalizedLanguage: 'English' };
+    const onGrade = vi.fn();
+    render(<SessionScreen cards={[card]} subjectLabel="Japanese" onGrade={onGrade} onFinish={vi.fn()} onExit={vi.fn()} />);
+    fireEvent.click(screen.getByRole('button', { name: 'Reveal the marking scheme' }));
+    fireEvent.click(screen.getByRole('button', { name: /First fixture answer/ }));
+    fireEvent.click(screen.getByRole('checkbox', { name: 'First fixture answer answered in English' }));
+    expect(screen.queryByRole('checkbox', { name: /answered in another language/ })).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Shaky' }));
+    expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({ marksClaimed: 0.5 }));
+  });
+
   it('grades the actual Japanese two-reason task without inventing model answers', () => {
     const card = JAPANESE_REVIEWED.find(candidate => candidate.id === 'ja-2026-ol-2d');
     if (!card || card.kind !== 'question' || !card.rows[0].parts) throw new Error('Missing reviewed two-reason task');

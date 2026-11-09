@@ -93,7 +93,7 @@ import BusinessRubricPanel from './BusinessRubricPanel';
 import { businessMarks, type BusinessScoreId } from './businessRubric';
 import FrenchRubricPanel from './FrenchRubricPanel';
 import LanguageRubricPanel from './LanguageRubricPanel';
-import { languageMarks, type LanguageScoreId } from './languageScoring';
+import { languageMarks, languageCreditAriaLabel, languageCreditCondition, type LanguageScoreId } from './languageScoring';
 import FrenchQuestionChoices from './FrenchQuestionChoices';
 import { frenchMarks, type FrenchScoreId } from './frenchRubric';
 import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
@@ -653,10 +653,10 @@ const MarkRowView: React.FC<{
   const canSynonym = !row.exactTermRequired && (row.openList || row.kind === 'alt');
   const languageControl = (target: string, label: string, disabled: boolean) => showMarks && answerLanguageRule && (
     <label className="mb-language-flag" style={{ margin: '6px 0 8px', font: `400 12px/1.45 ${SANS}`, color: INK_2 }}>
-      <input type="checkbox" aria-label={`${label} answered in another language`}
+      <input type="checkbox" aria-label={languageCreditAriaLabel(answerLanguageRule, label)}
         disabled={blocked || disabled} checked={languageClaims?.[target] === 1}
         onChange={event => onClaim(target, event.currentTarget.checked ? 1 : 0)} />
-      <span>This answer uses a language other than specified · {answerLanguageRule.otherLanguageMultiplier === 0 ? 'no credit' : 'half credit'}</span>
+      <span>{languageCreditCondition(answerLanguageRule)} · {answerLanguageRule.otherLanguageMultiplier === 0 ? 'no credit' : 'half credit'}</span>
     </label>
   );
 
