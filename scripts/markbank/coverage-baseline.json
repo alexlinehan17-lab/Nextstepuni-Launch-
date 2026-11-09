@@ -408,19 +408,19 @@
     "refsHash": "eab7907b0ead2f31"
   },
   "home-economics": {
-    "cards": 1643,
-    "contentHash": "02d728039342fe04",
-    "coveragePct": 87.4,
-    "covered": 1592,
+    "cards": 1692,
+    "contentHash": "2851e0133076af01",
+    "coveragePct": 89.2,
+    "covered": 1641,
     "excluded": 0,
-    "leaves": 1821,
-    "open": 229,
+    "leaves": 1840,
+    "open": 199,
     "orphans": 0,
     "papers": {
       "count": 48,
       "hash": "a640889609f96625"
     },
-    "refsHash": "ca1d7a7773a89fe4"
+    "refsHash": "b15e42f550a6c431"
   },
   "hungarian": {
     "cards": 168,
