@@ -85,6 +85,7 @@ import japanese2025HigherCensus from '../scripts/markbank/authoring/reviews/japa
 import japanese2025OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2025-ol-census.json';
 import japanese2024OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2024-ol-census.json';
 import japanese2023OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2023-ol-census.json';
+import japanese2021HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2021-hl-census.json';
 import japanese2022HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2022-hl-census.json';
 import japanese2022OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2022-ol-census.json';
 import japanese2023HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2023-hl-census.json';
@@ -1386,7 +1387,9 @@ const japaneseAliasIds = Object.keys(japaneseAliases);
 // original fragments bound to seven complete source-reviewed tasks.
 // 2022 Ordinary: 58 whole tasks, 18 retained IDs, 40 additions and 41
 // original fragments bound to six complete source-reviewed tasks.
-const japaneseAdditionIds = new Set([japanese2022OrdinaryCensus, japanese2022HigherCensus, japanese2026HigherCensus, japanese2026OrdinaryCensus, japanese2025HigherCensus, japanese2025OrdinaryCensus, japanese2024HigherCensus, japanese2024OrdinaryCensus, japanese2023HigherCensus, japanese2023OrdinaryCensus].flatMap(census => census.tasks.map(task =>
+// 2021 Higher: 58 whole tasks, 26 retained IDs, 32 additions and 43
+// original fragments bound to seven complete source-reviewed pools.
+const japaneseAdditionIds = new Set([japanese2021HigherCensus, japanese2022OrdinaryCensus, japanese2022HigherCensus, japanese2026HigherCensus, japanese2026OrdinaryCensus, japanese2025HigherCensus, japanese2025OrdinaryCensus, japanese2024HigherCensus, japanese2024OrdinaryCensus, japanese2023HigherCensus, japanese2023OrdinaryCensus].flatMap(census => census.tasks.map(task =>
   `ja-${census.year}-${census.level}-${task.key.filter(part => part !== null).join('-').toLowerCase()}`)).filter(id => !japaneseLiteralIds.has(id)));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
