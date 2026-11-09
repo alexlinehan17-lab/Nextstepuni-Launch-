@@ -7,6 +7,7 @@ import { CARDS as ordinary } from '../components/MarkBank/cards/japanese/ordinar
 import reviewed from '../components/MarkBank/cards/japanese/reviewed.json';
 import census from '../scripts/markbank/authoring/reviews/japanese-2026-hl-census.json';
 import review from '../scripts/markbank/authoring/reviews/japanese-2026-hl.json';
+import aliases from '../components/MarkBank/cards/japanese/aliases.json';
 import figures from '../components/MarkBank/figures-japanese.json';
 import { languageCriterionValue, languagePointsMarks, languageWritingMarks, type LanguageScores } from '../components/MarkBank/languageScoring';
 import { tariffReconciles, type LanguageWritingRubric, type LanguagePointsRubric } from '../types/markBank';
@@ -49,9 +50,15 @@ describe('Japanese 2026 Higher source review', () => {
   });
 
   it('retains all 600 previously served cards while adding the reviewed sitting', () => {
-    expect(higher.filter(card => card.year !== 2026)).toHaveLength(339);
-    expect(ordinary.filter(card => card.year !== 2026)).toHaveLength(261);
-    expect(new Set([...higher, ...ordinary].map(card => card.id)).size).toBe(730);
+    const originalIds = ['higher', 'ordinary'].flatMap(level => [...readFileSync(resolve(__dirname, `../components/MarkBank/cards/japanese/${level}.ts`), 'utf8').matchAll(/^ {4}id: "([^"]+)"/gm)].map(match => match[1]));
+    const live = new Set([...higher, ...ordinary].map(card => card.id));
+    const aliasMap: Record<string, string> = aliases;
+    expect(originalIds).toHaveLength(600);
+    for (const id of originalIds) expect(live.has(id) || live.has(aliasMap[id]), id).toBe(true);
+    const newIds = reviewed.filter(card => !originalIds.includes(card.id));
+    expect(newIds).toHaveLength(170);
+    expect(Object.keys(aliases)).toHaveLength(42);
+    expect(live.size).toBe(600 + newIds.length - Object.keys(aliases).length);
     expect([...higher, ...ordinary].some(card => ['ja-2021-ol-2b-ii', 'ja-2021-ol-3a-4-iv'].includes(card.id))).toBe(false);
   });
 
@@ -62,8 +69,8 @@ describe('Japanese 2026 Higher source review', () => {
     for (const card of cards) {
       expect(card.answerLanguageRule, card.id).toEqual({ otherLanguageMultiplier: 0.5, sourceText, schemePages: [3] });
     }
-    expect(higher.filter(card => card.year !== 2026).some(card => card.answerLanguageRule)).toBe(false);
-    expect(ordinary.filter(card => card.year !== 2026).some(card => card.answerLanguageRule)).toBe(false);
+    expect(higher.filter(card => !rawById.has(card.id)).some(card => card.answerLanguageRule)).toBe(false);
+    expect(ordinary.filter(card => !rawById.has(card.id)).some(card => card.answerLanguageRule)).toBe(false);
   });
 
   it('retains full bilingual-line continuations, the translation and gift-table example', () => {

@@ -31,7 +31,13 @@ def verify(path):
             rows[source['document']] = [page_rows(page) for page in doc]
     asks = None
     for selector in review['selectors']:
-        if 'row' in selector:
+        if 'parts' in selector:
+            parts = []
+            for part in selector['parts']:
+                groups = rows[selector['document']][selector['page'] - 1][part['row']]
+                parts.append(' '.join(group[2] for group in groups) if part['group'] is None else groups[part['group']][2])
+            actual = ' '.join(parts)
+        elif 'row' in selector:
             groups = rows[selector['document']][selector['page'] - 1][selector['row']]
             actual = ' '.join(group[2] for group in groups) if selector['group'] is None else groups[selector['group']][2]
         else:

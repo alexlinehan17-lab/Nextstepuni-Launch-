@@ -81,6 +81,8 @@ import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
 import japanese2026HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2026-hl-census.json';
 import japanese2026OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2026-ol-census.json';
+import japanese2025HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2025-hl-census.json';
+import japaneseAliases from '../components/MarkBank/cards/japanese/aliases.json';
 import { CARDS as POLISH_HIGHER } from '../components/MarkBank/cards/polish/higher';
 import { CARDS as POLISH_ORDINARY } from '../components/MarkBank/cards/polish/ordinary';
 import { CARDS as PORTUGUESE_HIGHER } from '../components/MarkBank/cards/portuguese/higher';
@@ -1359,10 +1361,14 @@ const homeEconomicsAdditionIds = new Set([
   'he-2023-hl-deferred-sc-q4aiii', 'he-2023-hl-deferred-sc-q4bi', 'he-2023-hl-deferred-sc-q4bii',
   'he-2023-hl-deferred-sc-q4ci', 'he-2023-hl-deferred-sc-q4cii',
 ]);
-// The two reviewed 2026 sittings add 130 independently inventoried tasks;
-// the original 600 cards and their identity hashes stay frozen.
-const japaneseAdditionIds = new Set([japanese2026HigherCensus, japanese2026OrdinaryCensus].flatMap(census => census.tasks.map(task =>
-  `ja-${census.year}-${census.level}-${task.key.filter(part => part !== null).join('-').toLowerCase()}`)));
+// 2026 adds 130 tasks. 2025 Higher adds 40 new task identities and corrects
+// 29 existing ones, consolidating 42 legacy fragments onto seven complete tasks.
+// Original 600 identity counts/hashes stay frozen, including explicit alias keys.
+const japaneseLiteralIds = new Set(['higher', 'ordinary'].flatMap(level =>
+  [...readFileSync(resolve(__dirname, `../components/MarkBank/cards/japanese/${level}.ts`), 'utf8').matchAll(/^ {4}id: "([^"]+)"/gm)].map(match => match[1])));
+const japaneseAliasIds = Object.keys(japaneseAliases);
+const japaneseAdditionIds = new Set([japanese2026HigherCensus, japanese2026OrdinaryCensus, japanese2025HigherCensus].flatMap(census => census.tasks.map(task =>
+  `ja-${census.year}-${census.level}-${task.key.filter(part => part !== null).join('-').toLowerCase()}`)).filter(id => !japaneseLiteralIds.has(id)));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
   if (name.startsWith('maths:')) {
@@ -1379,7 +1385,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
       ...economicsAliasIds.filter(id => id.includes(level)),
     ];
   }
-  if (name.startsWith('japanese:')) return ids.filter(id => !japaneseAdditionIds.has(id));
+  if (name.startsWith('japanese:')) return [...ids.filter(id => !japaneseAdditionIds.has(id)), ...japaneseAliasIds.filter(id => id.includes(name.endsWith(':higher') ? '-hl-' : '-ol-'))];
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
   if (name.startsWith('biology:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
@@ -1565,7 +1571,7 @@ describe('Mark Bank card preservation', () => {
         + biologyAdditionIds.size - biologyAliasIds.length
         + chemistryAdded.size - chemistryWithdrawnShipped.length + mathsNet
         + physicsAdditionIds.size - physicsAliasIds.length + homeEconomicsAdditionIds.size - homeEconomicsAliasIds.length
-        + japaneseAdditionIds.size);
+        + japaneseAdditionIds.size - japaneseAliasIds.length);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -1923,7 +1929,7 @@ describe('Mark Bank card preservation', () => {
     for (const id of physicsAliasIds) expect(physicsWithdrawn, id).toContain(id);
     expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length
       + geographyAliasedIds.length + englishAliasIds.length + biologyAliasIds.length
-      + chemistryAuditAliases.length + mathsNewAliases.size + physicsAliasIds.length + homeEconomicsAliasIds.length);
+      + chemistryAuditAliases.length + mathsNewAliases.size + physicsAliasIds.length + homeEconomicsAliasIds.length + japaneseAliasIds.length);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -1980,7 +1986,7 @@ describe('Mark Bank card preservation', () => {
     // Chemistry counts its live frozen cards (876 less the 34 shipped ids it
     // withdrew, now alias keys: net 0), and its audit aliased eighteen
     // pre-audit ids the base build never shipped (+18).
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).filter(id => !mathsNewAliases.has(id) || mathsFrozen.has(id)).length).toBe(9_768 + 18);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).filter(id => !id.startsWith('ja-') && (!mathsNewAliases.has(id) || mathsFrozen.has(id))).length).toBe(9_768 + 18);
   });
 
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {

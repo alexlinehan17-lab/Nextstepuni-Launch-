@@ -1811,10 +1811,12 @@ for (const level of LEVELS) {
   const reviewedIds = reviewedOverlaySubject
     ? JSON.parse(readFileSync(resolve(OUT_DIR, 'reviewed.json'), 'utf8')).filter(card => card.level === level).map(card => card.id) : [];
   const originalIds = levelCards.map(code => code.match(/^    id: "([^"]+)"/m)?.[1]).filter(Boolean);
+  const reviewedAliases = SUBJECT_ID === 'japanese'
+    ? JSON.parse(readFileSync(resolve(OUT_DIR, 'aliases.json'), 'utf8')) : {};
   const additionsCount = SUBJECT_ID === 'french'
     ? ['writing.json', 'reading.json', 'cloze.json', 'listening.json'].flatMap(name => JSON.parse(readFileSync(resolve(OUT_DIR, name), 'utf8'))).filter(card => card.level === level).length
     : 0;
-  sizes[level] = reviewedOverlaySubject ? new Set([...originalIds, ...reviewedIds]).size : levelCards.length + additionsCount + levelRubrics;
+  sizes[level] = reviewedOverlaySubject ? new Set([...originalIds.filter(id => !Object.hasOwn(reviewedAliases, id)), ...reviewedIds]).size : levelCards.length + additionsCount + levelRubrics;
   process.stderr.write(`  ${level}: ${sizes[level]} cards -> components/MarkBank/cards/${SUBJECT_ID}/${level}.ts\n`);
 }
 

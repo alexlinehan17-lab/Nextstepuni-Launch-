@@ -10,7 +10,11 @@
  * card now published as separately marked reviewed tasks);
  * english_publish.py refuses to publish a bridged paper until each is here.
  */
+import japaneseAliases from './cards/japanese/aliases.json';
+
 export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
+  // Original identities retained by independently reviewed whole-task pools.
+  ...japaneseAliases,
   // 2022 Higher Home Economics: complete the single floor-covering profile.
   "he-2022-hl-sc-q1aii-properties": "he-2022-hl-sc-q1aii",
   // Maths launch reconciliation: reviewed identities and consolidated printed choices.
