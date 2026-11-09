@@ -1400,13 +1400,13 @@ def census_sections(subject, year, level, files=None):
                 # A part marker can extract with a stray space, '(C )' in the
                 # 2026 OL Section 2 paper, which hid its (C) under (B).
                 block = re.sub(r'\(([A-H]) \)', r'(\1)', block)
-            if subject == 'home-economics' and ((year in (2010, 2011, 2012) and level in ('hl', 'ol')) or (year == 2013 and level in ('hl', 'ol')) or (year == 2014 and level in ('hl', 'ol')) or (year == 2015 and level in ('hl', 'ol')) or (year == 2016 and level in ('hl', 'ol'))):
+            if subject == 'home-economics' and ((year in (2010, 2011, 2012) and level in ('hl', 'ol')) or (year == 2013 and level in ('hl', 'ol')) or (year == 2014 and level in ('hl', 'ol')) or (year == 2015 and level in ('hl', 'ol')) or (year == 2016 and level in ('hl', 'ol')) or (year == 2017 and level == 'hl')):
                 # The reviewed combined booklet merges its answer rules and
                 # next question into one PDF block. Quoted B heads follow a
                 # parenthesised tariff or a full stop; C's rubric precedes the elective
                 # in that same block. Preserve source text while exposing
                 # those real boundaries (paper pp2–5, 8–11). This is scoped
-                # to the independently swept 2010–2012 Higher/Ordinary and 2013 Higher/Ordinary plus 2014–2015 Higher/Ordinary and 2016 Higher/Ordinary sittings.
+                # to the independently swept 2010–2012 Higher/Ordinary and 2013 Higher/Ordinary plus 2014–2015 Higher/Ordinary and 2016 Higher/Ordinary plus 2017 Higher sittings.
                 # 2011 Ordinary pp4/7/9 use strip-set text with duplicated
                 # glyphs at strip edges. The positional reader above keeps
                 # each original glyph once and restores printed part markers.
@@ -1452,9 +1452,9 @@ def census_sections(subject, year, level, files=None):
                               r'|\s+(?=\d{1,2}\.\s+\([a-z]\)\s+[A-Z])'
                               r'|(?<=\d)\s+(?=\d{1,2}\.\s+[A-Z][a-z]+\s)', block)
                       if subject == 'business' else block.split('\n')
-                      if subject == 'home-economics' and ((year in (2010, 2011, 2012) and level in ('hl', 'ol')) or (year == 2013 and level in ('hl', 'ol')) or (year == 2014 and level in ('hl', 'ol')) or (year == 2015 and level in ('hl', 'ol')) or (year == 2016 and level in ('hl', 'ol'))) else [block])
+                      if subject == 'home-economics' and ((year in (2010, 2011, 2012) and level in ('hl', 'ol')) or (year == 2013 and level in ('hl', 'ol')) or (year == 2014 and level in ('hl', 'ol')) or (year == 2015 and level in ('hl', 'ol')) or (year == 2016 and level in ('hl', 'ol')) or (year == 2017 and level == 'hl')) else [block])
             for text in (part for chunk in chunks for part in PP.INLINE_QHEAD.split(chunk)):
-                if subject == 'home-economics' and ((year in (2011, 2012) and level in ('hl', 'ol')) or (year == 2013 and level in ('hl', 'ol')) or (year == 2014 and level in ('hl', 'ol')) or (year == 2015 and level in ('hl', 'ol')) or (year == 2016 and level in ('hl', 'ol'))):
+                if subject == 'home-economics' and ((year in (2011, 2012) and level in ('hl', 'ol')) or (year == 2013 and level in ('hl', 'ol')) or (year == 2014 and level in ('hl', 'ol')) or (year == 2015 and level in ('hl', 'ol')) or (year == 2016 and level in ('hl', 'ol')) or (year == 2017 and level == 'hl')):
                     # A's roman markers label answer spaces, including the
                     # two pictured symbols in Q12; they carry no prose asks.
                     # Preserve the whole question rather than an empty (i).
@@ -1629,7 +1629,7 @@ def census_sections(subject, year, level, files=None):
                          # its ruled roman blanks are correctly discarded.
                          # Those real question stems still establish A before
                          # B begins. Cover rubrics have no such question stem.
-                         or ((subject, year, level) in {('home-economics', 2010, 'ol'), ('home-economics', 2011, 'hl'), ('home-economics', 2011, 'ol'), ('home-economics', 2012, 'hl'), ('home-economics', 2012, 'ol'), ('home-economics', 2013, 'hl'), ('home-economics', 2013, 'ol'), ('home-economics', 2014, 'hl'), ('home-economics', 2014, 'ol'), ('home-economics', 2015, 'hl'), ('home-economics', 2015, 'ol'), ('home-economics', 2016, 'hl'), ('home-economics', 2016, 'ol')}
+                         or ((subject, year, level) in {('home-economics', 2010, 'ol'), ('home-economics', 2011, 'hl'), ('home-economics', 2011, 'ol'), ('home-economics', 2012, 'hl'), ('home-economics', 2012, 'ol'), ('home-economics', 2013, 'hl'), ('home-economics', 2013, 'ol'), ('home-economics', 2014, 'hl'), ('home-economics', 2014, 'ol'), ('home-economics', 2015, 'hl'), ('home-economics', 2015, 'ol'), ('home-economics', 2016, 'hl'), ('home-economics', 2016, 'ol'), ('home-economics', 2017, 'hl')}
                              and any(k[0] == section for k in stems))):
                 section, q, letter, roman = sh.group(1), None, None, None
             # 'Section 2 Applied Business Question 80 marks' is one block —
@@ -1691,11 +1691,13 @@ def census_sections(subject, year, level, files=None):
             # information supplied...'. Unread, its whole Section 2 vanished
             # from the census and every card citing it read as an orphan.
             text = re.sub(r'^QUESTION\s+(\d{1,2})\b', r'Question \1', text)
-        if (subject, year, level, section, q, letter) == ('home-economics', 2015, 'ol', 'C', 1, 'a') and text == '2':
+        if (subject, year, level, section, q, letter) in {('home-economics', 2015, 'ol', 'C', 1, 'a'), ('home-economics', 2017, 'hl', 'C', 1, 'a')} and text == '2':
             # Original paper9: this lone glyph at(454,237) lies INSIDE the
             # floor-plan image(108,201,500,406), in Bedroom2. It is a diagram
             # label, not the next question; the following three asks remain1(a).
-            # The complete original plan, including that label, is retained.
+            # 2017 Higher paper9 repeats this text-layer Bedroom2 label
+            # inside its original bungalow plan. The complete original plans
+            # and labels are retained; only the census ignores the glyph.
             continue
         if (subject, year, level, section, q) == ('home-economics', 2015, 'hl', 'B', None) \
                 and text == '1.' and index + 1 < len(blocks) \

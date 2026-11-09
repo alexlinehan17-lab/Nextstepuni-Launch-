@@ -1083,5 +1083,70 @@
     "attribution": "SEC Home Economics 2016 Ordinary Level marking scheme, page 10 — © State Examinations Commission.",
     "sourceNote": "Original PDF crop, bounds [195.1699981689453, 391.1499938964844, 407.22998046875, 618.9400024414062], rendered at 2.5×. SHA256 860d85065b6eee044d628b867aed01b9f88f382848f67de108ee8979f8207ac5.",
     "solution": true
+  },
+  "home-economics-2017-hl-sa-q4": {
+    "src": "/exam-figures/home-economics/home-economics-2017-hl-sa-q4.png",
+    "md5": "36102b187f450dec274bf411a6179bbc",
+    "alt": "Complete original anaemia table with Cause, Effect of deficiency and Corrective measure blank fields.",
+    "attribution": "SEC Home Economics 2017 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 46.3197021484375, 570.219970703125, 239.57001495361328], rendered at 2.5×. SHA256 a8b64d7b8f4efe19127ad3437f197e2c27473758c8f33690bbf5107dccfd6e16."
+  },
+  "home-economics-2017-hl-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2017-hl-sa-q6.png",
+    "md5": "fe1f14a3845c777177ee9851800bdf0d",
+    "alt": "Complete original two-bacterium profile table with Food poisoning bacteria, Description/characteristic and Habitat headings and both blank rows.",
+    "attribution": "SEC Home Economics 2017 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 516.5399169921875, 570.219970703125, 760.2254444469105], rendered at 2.5×. SHA256 258a96aa92711ee512a7ce25eff8ca22d9174acce2e3d72d51d14c113e03d9c2."
+  },
+  "home-economics-2017-hl-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2017-hl-sa-q8.png",
+    "md5": "699f6915e860e6b3421ec6622e68c41f",
+    "alt": "Complete original Ultra Heat Treatment table with blank Temperature, Time and Effect cells.",
+    "attribution": "SEC Home Economics 2017 Higher Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 236.69989013671875, 570.219970703125, 376.1171340942383], rendered at 2.5×. SHA256 fddbcf0573aaafebcb477a3f79a806c2109d427855837286e0a6d38aaaaa4591."
+  },
+  "home-economics-2017-hl-sb-q1-bmi": {
+    "src": "/exam-figures/home-economics/home-economics-2017-hl-sb-q1-bmi.png",
+    "md5": "04f4857cf319674e1cfdd6f554b53d2f",
+    "alt": "Complete original BMI chart: six age groups, four BMI categories, percentage axis, all bars and full legend.",
+    "attribution": "SEC Home Economics 2017 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [81.4800033569336, 217.44000244140625, 519.47998046875, 408.7799987792969], rendered at 2.5×. SHA256 d39cd65003d6aeee0650870d45a0b5ce177f808663ab353c026b9502aa6e7dbd."
+  },
+  "home-economics-2017-hl-sc-q1-bungalow": {
+    "src": "/exam-figures/home-economics/home-economics-2017-hl-sc-q1-bungalow.png",
+    "md5": "b333092f02fa26baf976848af3068163",
+    "alt": "Complete original Murphy family bungalow, all room labels including Bedroom 2, doors, windows, title and attribution.",
+    "attribution": "SEC Home Economics 2017 Higher Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [112.68000030517578, 177.83999633789062, 486.6000061035156, 361.239990234375], rendered at 2.5×. SHA256 71e110e17b1c2d6aff0e415d1b98f0c6f4422946dc8bb406b285f6f2278dfaa4."
+  },
+  "home-economics-2017-hl-sc-q2-outfit": {
+    "src": "/exam-figures/home-economics/home-economics-2017-hl-sc-q2-outfit.png",
+    "md5": "5eacc83a12853927b875904cee80588e",
+    "alt": "Complete original athleisure outfit photograph and original attribution.",
+    "attribution": "SEC Home Economics 2017 Higher Level examination paper, page 10 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [222.83999633789062, 123.83999633789062, 398.03997802734375, 369.084716796875], rendered at 2.5×. SHA256 af7a6ab075ae2676ce0ec56ca502ddeffd012cb447a6c6525de1e13ae9ff66dc."
+  },
+  "home-economics-2017-hl-sc-q3-unemployment": {
+    "src": "/exam-figures/home-economics/home-economics-2017-hl-sc-q3-unemployment.png",
+    "md5": "57c18fa7f8be3e969fb1da3e7ac50396",
+    "alt": "Complete original unemployment table for 2011–2016, all six percentages, row heading and The Irish Times attribution.",
+    "attribution": "SEC Home Economics 2017 Higher Level examination paper, page 11 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [69.05999755859375, 140.2220458984375, 543.5399780273438, 227.00469970703125], rendered at 2.5×. SHA256 409230aa853bd7cf076acc469dea2e13fabdb7162ecfe430d3439552857b5e63."
+  },
+  "home-economics-2017-hl-sb-q1b-carbohydrates": {
+    "src": "/exam-figures/home-economics/home-economics-2017-hl-sb-q1b-carbohydrates.png",
+    "md5": "088b7fb07c87dae45236b4f9731266da",
+    "alt": "Complete original carbohydrate classification, chemical formula, examples and food-source table, preserving subscripts and all printed alternatives.",
+    "attribution": "SEC Home Economics 2017 Higher Level marking scheme, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [39.49199905395508, 142.6919921875, 541.7279907226563, 333.8879821777344], rendered at 2.5×. SHA256 cc11150b1d6e973b439cd7b83d59b508b44109fd28291d27de82568dda36a86f.",
+    "solution": true
+  },
+  "home-economics-2017-hl-sa-q7-equation": {
+    "src": "/exam-figures/home-economics/home-economics-2017-hl-sa-q7-equation.png",
+    "md5": "5896ad04a7117460fe41716fe18694b7",
+    "alt": "Complete original fermentation equation with yeast, glucose, moisture, warmth, reaction arrow, carbon dioxide, alcohol and energy; original subscripts preserved.",
+    "attribution": "SEC Home Economics 2017 Higher Level marking scheme, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [67.92005157470703, 277.7319641113281, 545.0640258789062, 295.2120361328125], rendered at 2.5×. SHA256 ea8062ed96dddc516c1e96349eda4dbc6fda4ecc843e92775527f5b27db90726.",
+    "solution": true
   }
 }
