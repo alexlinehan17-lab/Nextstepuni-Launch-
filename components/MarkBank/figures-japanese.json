@@ -2969,5 +2969,197 @@
         0.58
       ]
     }
+  },
+  "ja-2016-hl-2a-1": {
+    "src": "/exam-figures/japanese/ja-2016-hl-2a-1.png",
+    "md5": "de364e2924c2ba09939c442d24918517",
+    "alt": "Complete the following table in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.06,
+        0.035,
+        0.97,
+        0.28
+      ]
+    }
+  },
+  "ja-2016-hl-2b": {
+    "src": "/exam-figures/japanese/ja-2016-hl-2b.png",
+    "md5": "012d2404a95ea2b3d537a059037ebfc4",
+    "alt": "Circle the correct reading of the following Kanji and write the meaning in English as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.06,
+        0.025,
+        0.97,
+        0.355
+      ]
+    }
+  },
+  "ja-2016-hl-2c": {
+    "src": "/exam-figures/japanese/ja-2016-hl-2c.png",
+    "md5": "7a644412ad537e08302d3cfb95df688b",
+    "alt": "Insert the correct particle into each blank space below. There may be more than one correct answer.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.06,
+        0.36,
+        0.97,
+        0.92
+      ]
+    }
+  },
+  "ja-2016-hl-3c-1": {
+    "src": "/exam-figures/japanese/ja-2016-hl-3c-1.png",
+    "md5": "29368ce27c96a8bc3d6ab9ec4a12fd34",
+    "alt": "Write the meaning of the following Kanji in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.06,
+        0.035,
+        0.97,
+        0.36
+      ]
+    }
+  },
+  "ja-2016-hl-3c-2": {
+    "src": "/exam-figures/japanese/ja-2016-hl-3c-2.png",
+    "md5": "931fa867ded1c52b404e06b5d1038559",
+    "alt": "Write the reading of the following Kanji in Hiragana.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.06,
+        0.375,
+        0.97,
+        0.7
+      ]
+    }
+  },
+  "ja-2016-hl-3d-1": {
+    "src": "/exam-figures/japanese/ja-2016-hl-3d-1.png",
+    "md5": "84e111cbff263383e7bc76fe89089a73",
+    "alt": "Write the underlined in the positive form.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 13,
+      "region": [
+        0.06,
+        0.035,
+        0.97,
+        0.48
+      ]
+    }
+  },
+  "ja-2016-hl-3d-2": {
+    "src": "/exam-figures/japanese/ja-2016-hl-3d-2.png",
+    "md5": "4ed9e0bb8ed29129d264bac8f1fa4a7f",
+    "alt": "Write the correct form of each verb.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 13,
+      "region": [
+        0.06,
+        0.48,
+        0.97,
+        0.91
+      ]
+    }
+  },
+  "ja-2016-hl-4": {
+    "src": "/exam-figures/japanese/ja-2016-hl-4.png",
+    "md5": "5b82ed3625bdb105555dd33f65060f19",
+    "alt": "Write about (a) OR (b) in approximately 200 Japanese characters.\n(a) You went hiking today. Write a diary entry answering the following questions.\n• ハイキングはどうでしたか。\n• ハイキングの後で、何をしましたか。\nOR\n(b) You went to a film festival today. Write a diary entry answering the following questions.\n• 映画祭（えいがさい）はどうでしたか。\n• 映画祭（えいがさい）の後で、何をしましたか。",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 14,
+      "region": [
+        0.045,
+        0.025,
+        0.97,
+        0.92
+      ]
+    }
+  },
+  "ja-2016-hl-5": {
+    "src": "/exam-figures/japanese/ja-2016-hl-5.png",
+    "md5": "f38789a092b1e33d061fc87dbfba9755",
+    "alt": "A Japanese exchange student is coming to stay with you in September for three weeks. Write your first email in approximately 320 Japanese characters to him/her covering ANY 4 of the following headings.\n1. 家 族 紹 介（かぞくしょうかい） — Introduction of your family\n2. アイルランドの天気 — Irish weather\n3. アイルランドの料 理（りょうり） — Irish food\n4. 地元（じもと）ですること — Things to do in your locality\n5. 学校での日 常 生 活（にちじょうせいかつ） — A typical day in your school\n6. アイルランドに持（も）ってきたほうがいい物 — Things the student should bring with him/her to Ireland",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 16,
+      "region": [
+        0.045,
+        0.025,
+        0.97,
+        0.92
+      ]
+    }
+  },
+  "ja-2016-hl-la": {
+    "src": "/exam-figures/japanese/ja-2016-hl-la.png",
+    "md5": "d50551c217472f21aa129d28951ea5ef",
+    "alt": "Complete the table below.\nWhat would they do if they won the lotto?\nWhy would they do this?\nWho would they give money to?\nWhy would they give the money to this person?\n1.\n2.\n3.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 2,
+      "region": [
+        0.06,
+        0.16,
+        0.975,
+        0.77
+      ]
+    }
+  },
+  "ja-2016-hl-lc-1-iv": {
+    "src": "/exam-figures/japanese/ja-2016-hl-lc-1-iv.png",
+    "md5": "1c2287f199f60ac8ed5b30d48e5ef2e9",
+    "alt": "To make a reservation, you should call:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 4,
+      "region": [
+        0.54,
+        0.415,
+        0.97,
+        0.504
+      ]
+    }
+  },
+  "ja-2016-hl-lc-3": {
+    "src": "/exam-figures/japanese/ja-2016-hl-lc-3.png",
+    "md5": "64e5f4b3c9d16c3b42eb9150e557b471",
+    "alt": "3.   World weather forecast Place Forecast San Francisco Clear skies, 28ºC Auckland Singapore",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 4,
+      "region": [
+        0.54,
+        0.72,
+        0.97,
+        0.95
+      ]
+    }
   }
 }
