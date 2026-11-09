@@ -11,6 +11,28 @@ from pathlib import Path
 
 
 def reviewed_keys(year, level):
+    if (year, level) == (2010, 'ol'):
+        # Independent 40-page census: three club-capacity subparts, one named
+        # five-floor task, ten dialogue gaps including two in exchange6.
+        root = Path(__file__).resolve().parents[3] / 'examiner-reports/russian'
+        for relative, digest in {
+            'papers/2010-ol-000-paper.pdf': '8a4c29e76ab591c9d406b8cb3fcd57f57cbf7f4b178e32ea6c26614f1ac5502d',
+            'papers/2010-ol-A00-paper.pdf': '0fb3329b722ebca3bcd74cd30fac7df55ed2b5ba7ab4d267d19a2af60f021844',
+            'schemes/2010-ol.pdf': 'a9fa632484624a15aab956313b463260948d60ae1deaeb4f6344ef4dff2da67e',
+        }.items():
+            assert hashlib.sha256((root / relative).read_bytes()).hexdigest() == digest
+        keys = [('IR1',None,None,r) for r in ('i','ii','iii','iv','v','vi','vii')]
+        keys += [('IR2',None,None,r) for r in ('i','iii','iv')]
+        keys += [('IR2',None,a,'ii') for a in ('a','b','c')]
+        keys += [('CD',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,'i'),(3,None),(4,None)]]
+        keys += [(u,None,None,None) for u in ('LA1','LA2','MM','SD','SA','EW')]
+        assert len(keys) == 24
+        keys += [('L1',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,None),(3,None),(4,None)]]
+        keys += [('L2',q,None,r) for q,r in [(1,None),(2,None),(3,'i'),(3,'ii'),(4,None)]]
+        keys += [('L3',q,None,r) for q,r in [(1,None),(2,None),(3,'i'),(3,'ii')]]
+        keys += [('L4',q,None,r) for q,r in [(1,'i'),(2,'i'),(2,'ii'),(3,None)]]
+        assert len(keys) == len(set(keys)) == 42
+        return set(keys)
     if (year, level) == (2011, 'ol'):
         # Independent 44-page visual census. CD Q2 has no booklet roman marker;
         # the festival time/date/year question remains one total-only task.

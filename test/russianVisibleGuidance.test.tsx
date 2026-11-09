@@ -13,6 +13,23 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('shows the 2010 Russian-only listening condition and keeps fractional full/partial awards',async()=>{
+    reveal('l1-1-ii','ol',2010);
+    await waitFor(()=>expect(screen.getByText(/Isolated Russian words or expressions do not reduce credit/)).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'Answer 1 · Half credit only when the whole answer is in Russian'}));
+    fireEvent.click(screen.getByRole('button',{name:'Claim 2.5 marks for President of Russian Federation/Russia'}));
+    await waitFor(()=>expect(screen.getByText(/placement is 2.5 of 5 marks/)).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'Clear 2.5 marks for President of Russian Federation/Russia'}));
+    fireEvent.click(screen.getByRole('button',{name:'Claim 1 marks for President'}));
+    await waitFor(()=>expect(screen.getByText(/placement is 1 of 5 marks/)).toBeVisible());
+  });
+  it('shows the 2010 grammar English exception and original four-times-six writing guidance',async()=>{
+    reveal('la1','ol',2010);
+    await waitFor(()=>expect(screen.getByText(/Do not penalise students who supply appropriate words in English/)).toBeVisible());
+    cleanup();reveal('ew','ol',2010);
+    await waitFor(()=>expect(screen.getByText(/The scheme prints 4 x 6 marks for each choice/)).toBeVisible());
+    expect(screen.queryByText(/Almost flawless in terms of accuracy/)).not.toBeInTheDocument();
+  });
   it('shows the 2011 unresolved festival allocation and the complete accepted answer',async()=>{
     reveal('ir1-i','ol',2011);
     await waitFor(()=>expect(screen.getByText(/Source allocation conflict: the scheme gives 6 marks/)).toBeVisible());
