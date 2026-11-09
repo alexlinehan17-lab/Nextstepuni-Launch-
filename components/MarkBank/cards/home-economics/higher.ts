@@ -34708,4 +34708,2021 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sa-q1", topicId: "home-economics-0-5", conceptId: "sa-q1",
+    section: "A", questionRef: "2013 HL Section A Q1",
+    questionText: "Complete the table below in relation to the biological functions of protein.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "type-1", kind: "point", verbatim: "Structural proteins — Growth & repair of body cells, muscles and skin;", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "type-2", kind: "point", verbatim: "Physiologically active proteins — Production of hormones, enzymes, antibodies, blood proteins, nucleoproteins;", marks: null },
+    { id: "type-3", kind: "point", verbatim: "Nutrient proteins — Provides essential amino acids for the body; Excess protein is used for energy, etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2013-hl-sa-q1",
+          "src": "/exam-figures/home-economics/home-economics-2013-hl-sa-q1.png",
+          "srcHash": "bdf1fe75bbf6001c3020b68221aa77d0",
+          "alt": "Original protein-function question table with all three protein types and blank function cells.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sa-q2", topicId: "home-economics-0-7", conceptId: "sa-q2",
+    section: "A", questionRef: "2013 HL Section A Q2",
+    questionText: "In relation to lipids, explain each of the following terms: Oxidative rancidity Hydrolytic rancidity",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "type-1", kind: "point", verbatim: "(i) Oxidative rancidity This occurs as a result of a reaction which takes place between unsaturated fatty acids and oxygen in the air; oxygen combines with the carbon atoms at the double bond; causes unpleasant rancid smell due to the production of compounds i.e. aldehydes and ketones, etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "type-2", kind: "point", verbatim: "(ii) Hydrolytic rancidity This occurs when enzymes (lipases) hydrolyse fats, breaking them down into fatty acids and glycerol; micro-organisms present in fat foods may also produce enzymes which can give fats an unpleasant taste and smell; occurs in freezers when enzymes are not destroyed, etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sa-q3", topicId: "home-economics-0-8", conceptId: "sa-q3",
+    section: "A", questionRef: "2013 HL Section A Q3",
+    questionText: "The conditions listed below are caused by a deficiency in the diet of specific vitamins. Identify the vitamin in each case.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "vitamin-1", kind: "point", verbatim: "Nightblindness — A", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "vitamin-2", kind: "point", verbatim: "Rickets — D", marks: null },
+    { id: "vitamin-3", kind: "point", verbatim: "Poor blood clotting — K", marks: null },
+    { id: "vitamin-4", kind: "point", verbatim: "Anaemia — C; B12; Folic Acid/Folate", marks: null },
+    { id: "vitamin-5", kind: "point", verbatim: "Beri-beri — B1/Thiamine", marks: null },
+    { id: "vitamin-6", kind: "point", verbatim: "Neural tube defects — Folic Acid/Folate", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2013-hl-sa-q3",
+          "src": "/exam-figures/home-economics/home-economics-2013-hl-sa-q3.png",
+          "srcHash": "929594cb91627a0a1afe1e52ee5bc8b1",
+          "alt": "Original six-row vitamin-deficiency question table: Nightblindness, Rickets, Poor blood clotting, Anaemia, Beri-beri, Neural tube defects; all blank vitamin cells retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sa-q4", topicId: "home-economics-0-9", conceptId: "sa-q4",
+    section: "A", questionRef: "2013 HL Section A Q4",
+    questionText: "Name three types of flour and suggest a different culinary use for each.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "flour-1", kind: "point", verbatim: "1. wholemeal flour — breads, pizza bases, etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "flour-2", kind: "point", verbatim: "2. gluten free flour — coeliac products, etc.", marks: null },
+    { id: "flour-3", kind: "point", verbatim: "3. high ratio flour — confectionary, etc.", marks: null },
+    { id: "other-types", kind: "point", verbatim: "strong flour; stone ground flour; self- raising flour; wheatmeal flour; cornflour; rice flour white/plain /cream flour, etc.", marks: null, contextNote: "The source prints these additional types and uses as separate lists, without pairing them. Match each chosen flour to an appropriate different use." },
+    { id: "other-uses", kind: "point", verbatim: "cakes; bread; pastry; thickening, etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2013-hl-sa-q4",
+          "src": "/exam-figures/home-economics/home-economics-2013-hl-sa-q4.png",
+          "srcHash": "e17d0a7d26c11bfe3a98070d24cf7a32",
+          "alt": "Original flour and culinary-use table, complete headings and three paired blank rows.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sa-q5", topicId: "home-economics-0-9", conceptId: "sa-q5",
+    section: "A", questionRef: "2013 HL Section A Q5",
+    questionText: "Differentiate between the following dairy spreads and give one example of each. Low-fat spreads Example Functional dairy spreads Example",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "spread-1", kind: "point", verbatim: "Low-fat spreads These spreads contain approx. half the fat of butter (38-40%); suitable for those on a low calorie controlled diet – they contain 95kcal per 25g versus 185kcal for margarine or butter; ingredients include water, vegetable oil and milk proteins; they are low in saturates and high in mono-unsaturated fatty acids; can be used as a spread but not suitable for baking or frying due to high water content, etc. Example – Dairygold Light; Avonmore Extra Light", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "spread-2", kind: "point", verbatim: "Functional dairy spreads Proven to reduce cholesterol; made from sunflower oil, vegetable oil, buttermilk, plant stanol, water and salt; the plant sterols (stanol ester) prevents the absorption of cholesterol in the small intestine so that it is excreted from the body; there are no hydrogenated fatty acids and virtually no trans-fatty acids in these spreads, etc. Example - Benecol, Flora Pro-Active", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sa-q6", topicId: "home-economics-0-4", conceptId: "sa-q6",
+    section: "A", questionRef: "2013 HL Section A Q6",
+    questionText: "Complete the table below in relation to food contamination.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "contaminant-1", kind: "point", verbatim: "Pesticides", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. How contamination occurs — Crops sprayed with insecticides, herbicides and fungicides, water contaminated with run offs from sprayed crops, carried in the air, enters water and then taken up by plants and soil organisms, etc. Possible effect on the body — Respiratory problems; heart and circulatory problems; birth defects; affects nervous system; may cause cancer, etc." },
+    { id: "contaminant-2", kind: "point", verbatim: "Metal residues", marks: null, contextNote: "How contamination occurs — Transferred to food from soil, water and water pipes, food containers – lead is used to seal food cans, cooking equipment, humans consume the contaminated food, etc. Possible effect on the body — Stomach cramps; damage to kidney and liver; effects immune system; effects the nervous system, headaches, etc." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2013-hl-sa-q6",
+          "src": "/exam-figures/home-economics/home-economics-2013-hl-sa-q6.png",
+          "srcHash": "953702c893e5ed3c79b50a594ca1875c",
+          "alt": "Original food-contamination table with Pesticides and Metal residues, How contamination occurs and Possible effect on the body headings; all blank cells retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sa-q7", topicId: "home-economics-0-3", conceptId: "sa-q7",
+    section: "A", questionRef: "2013 HL Section A Q7",
+    questionText: "In relation to freezing explain each of the following: Quick freezing Slow freezing",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "quick", kind: "point", verbatim: "Quick freezing Food is frozen quickly at -25ºC to -40ºC in the fast freeze section of a freezer; small ice crystals form within the food, causing less damage to the cell walls of the food; nutritive value, texture, colour and flavour are better retained than with slow freezing, etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "slow", kind: "point", verbatim: "Slow freezing occurs at 0ºC to-24 ºC or above; ice crystals are big and damage the food cells; causing loss of texture, nutrients, colour & flavour on thawing, etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sa-q8", topicId: "home-economics-0-4", conceptId: "sa-q8",
+    section: "A", questionRef: "2013 HL Section A Q8",
+    questionText: "Differentiate between each of the following micro-organisms: Aerobic micro-organisms Anaerobic micro-organisms Facultative micro-organisms",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "microorganism-1", kind: "point", verbatim: "Aerobic micro-organisms: require oxygen to survive, etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "microorganism-2", kind: "point", verbatim: "Anaerobic micro-organisms: can thrive without oxygen, etc.", marks: null },
+    { id: "microorganism-3", kind: "point", verbatim: "Facultative micro-organisms: adapt to aerobic/anaerobic conditions, etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sa-q9", topicId: "home-economics-1-3", conceptId: "sa-q9",
+    section: "A", questionRef: "2013 HL Section A Q9",
+    questionText: "State the function of each of the following refrigerator parts: Compressor Condenser Evaporator",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "part-1", kind: "point", verbatim: "Compressor: Contains the gaseous refrigerant, etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "part-2", kind: "point", verbatim: "Condenser: Cools the gaseous refrigerant, changing it to a liquid, etc.", marks: null },
+    { id: "part-3", kind: "point", verbatim: "Evaporator: Converts refrigerant back into a gas, drawing heat from inside the fridge and keeping food cold, etc", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sa-q10", topicId: "home-economics-1-2", conceptId: "sa-q10",
+    section: "A", questionRef: "2013 HL Section A Q10",
+    questionText: "Outline the role of each of the consumer organisations named below. Consumer Association of Ireland (CAI) Advertising Standards Authority of Ireland (ASAI)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "organisation-1", kind: "point", verbatim: "Consumer Association of Ireland (CAI) Carries out research and surveys on goods and services which are published in Consumer Choice magazine; to provide objective information on consumer products and services; to lobby the government on consumer issues; to advise through its ‘Consumer Personal Service’; represents consumers on a number of bodies, etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Historical 2013 organisation names and roles are retained." },
+    { id: "organisation-2", kind: "point", verbatim: "Advertising Standards Authority of Ireland (ASAI) It ensures that all marketing communications should be legal, decent, honest and truthful; it investigates complaints made by the public regarding advertisements e.g. false claims, offensive content, etc. It may recommend that an advertisement be altered or removed, etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sa-q11", topicId: "home-economics-1-4", conceptId: "sa-q11",
+    section: "A", questionRef: "2013 HL Section A Q11",
+    questionText: "Explain the purpose of any two of the following fabric detergent components: Surfactants Enzymes Fluorescents",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "component-1", kind: "point", verbatim: "Surfactants Reduce the surface tension of the fabric, thus allowing the water to wet the fabric thoroughly, that the dirt is dislodged and dispersed in the water, etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY TWO of the three printed components. All three original models are retained; do not require all three." },
+    { id: "component-2", kind: "point", verbatim: "Enzymes Remove protein-based stains breaking down the large protein molecules into smaller particles allowing the detergent to work more effectively, etc.", marks: null },
+    { id: "component-3", kind: "point", verbatim: "Fluorescents Help to reflect light and make the fabric appear whiter, etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sa-q12", topicId: "home-economics-1-1", conceptId: "sa-q12",
+    section: "A", questionRef: "2013 HL Section A Q12",
+    questionText: "In relation to household budgeting, explain essential expenditure and discretionary expenditure. Give one example of each. Essential expenditure Example Discretionary expenditure Example",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "profile-1", kind: "point", verbatim: "Essential expenditure – money that has to be spent to manage family life i.e. spending on necessities; it can be fixed (at the same time for the same amount) or irregular (different times for varying amounts), etc. Example – Fixed: rent/mortgage; insurance; telephone; etc Irregular: food; clothes; doctors bills; school expenses, etc", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "profile-2", kind: "point", verbatim: "Discretionary expenditure – spending on non-essentials; this occurs when all essential expenditure and savings have been made, etc. Example – luxuries - holidays, leisure, entertainment, etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sb-q1a", topicId: "home-economics-0-1", conceptId: "sb-q1a",
+    section: "B", questionRef: "2013 HL Section B Q1(a)",
+    stem: "Irish healthy eating guidelines encourage people to eat a variety of foods based on the Food Pyramid. Findings are presented below on the percentage of respondents consuming the recommended number of daily servings from each shelf of the Food Pyramid (1998 and 2007). (SLAN 2007: Survey of Lifestyle, Attitudes and Nutrition in Ireland. Dietary Habits of the Irish Population, Department of Health and Children)",
+    questionText: "In relation to the information provided in the chart, comment and elaborate on the percentage of respondents consuming the recommended number of daily servings from each shelf of the Food Pyramid.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 6"}, totalMarks: 24,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "food shelves", marks: 24, contextNote: "The paper asks about EACH of five shelves; the scheme explicitly expects FOUR shelf references at 6 marks each. All five original source models remain below. Apply the printed 24-mark tariff without inventing a fifth allocation. Complete original source guidance: Points may include some of the following: Comment on chart re: increase or decrease of food consumption, possible reasons for the increase or decrease between one year and another; possible reasons for the differences in % consumption between food groups; comments on compliance rates – over or under compliance i.e. offer an opinion on whether people eat a greater or lower % for the particular food groups; consequences of compliance rates, etc. Cereals, breads and potatoes (6+ daily servings): consumption of cereals, breads and potatoes declined from 1998 to 2007; men are more likely to consume 6 or more daily servings; too little CHO intake causes weight loss, etc. Effects of carbohydrate consumption: consumption of more processed and convenience foods can have health implications; low fibre intake resulting in bowel diseases e.g. constipation, colon cancer, etc. Fruit and vegetables (4+ daily servings): it is recommended that 5 servings of fruit and vegetables are consumed on a daily basis; women are more likely than men to consume at least 5 daily servings, etc. Possible reasons for consumption rates: more farmers’ markets selling fresh products; more people growing their own fruit and vegetables; promotional campaigns e.g. ‘food dudes’ in schools, etc. Milk, cheese and yoghurt products (3 daily servings): over or under-consumption may have a negative impact on nutritional health, etc. Possible reasons for consumption rates: insufficient intake of calcium rich foods, many dairy considered high in fat, allergies to dairy produce, etc. Meat, fish, poultry and alternatives (2 daily servings): over or under consumption may have a negative impact on nutritional health, etc. Possible reasons for consumption rates: inadequate intake of iron-rich foods e.g. red meat – may be linked to high fat; traceability of meat, poultry etc. aimed at creating confidence in the food industry following scares about BSE and foot and mouth, etc. Top shelf: foods high in fats, sugar or salt (less than 3 daily servings); over-consumption 86% consumed more than 3 daily servings; it is recommended to consume these foods sparingly on a daily basis as they can have adverse effects on health, etc. Possible reasons for consumption rates: more restaurants and fast food outlets, which has led to a greater number of people eating out regularly or eating takeaways, etc. Effects of consumption: people are taking in more energy than they need, which can lead to weight gain; increase in type 2 diabetes; increase in people with high blood pressure and coronary heart disease; people in lower social groups are more likely to consume foods from this group, etc. ", permittedMarks: [0,6,12,18,24], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,6]},{"id":"point-3","verbatim":"Point 3","marks":6,"permittedMarks":[0,6]},{"id":"point-4","verbatim":"Point 4","marks":6,"permittedMarks":[0,6]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2013-hl-sb-q1-pyramid",
+          "src": "/exam-figures/home-economics/home-economics-2013-hl-sb-q1-pyramid.png",
+          "srcHash": "31c6ceddede4b431fb8ca7c568a169f1",
+          "alt": "Original five-shelf Food Pyramid daily-servings table with complete SLAN 2007 source caption. 1998/2007 percentages: cereals/breads/potatoes40/26; fruit/vegetables56/65; milk/cheese/yoghurt22/20; meat/fish/poultry/alternatives36/39; top shelf fats/sugar/salt14/14. All original shelf names and daily-serving limits retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sb-q1b", topicId: "home-economics-0-1", conceptId: "sb-q1b",
+    section: "B", questionRef: "2013 HL Section B Q1(b)",
+    stem: "Irish healthy eating guidelines encourage people to eat a variety of foods based on the Food Pyramid. Findings are presented below on the percentage of respondents consuming the recommended number of daily servings from each shelf of the Food Pyramid (1998 and 2007). (SLAN 2007: Survey of Lifestyle, Attitudes and Nutrition in Ireland. Dietary Habits of the Irish Population, Department of Health and Children)",
+    questionText: "Identify and give an account of the main factors that are contributing to the prevalence of obesity in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 4"}, totalMarks: 16,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 16, contextNote: "Complete original source guidance: Energy intake greater than output; poor food choices (processed and fast food); unhealthy eating patterns; inactive/sedentary lifestyle; lack of regular exercise; psychological factors – depression, low self-esteem; certain drugs increase weight; hormonal imbalance – thyroid gland, etc.", permittedMarks: [0,4,8,12,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sb-q1c", topicId: "home-economics-0-7", conceptId: "sb-q1c",
+    section: "B", questionRef: "2013 HL Section B Q1(c)",
+    stem: "Irish healthy eating guidelines encourage people to eat a variety of foods based on the Food Pyramid. Findings are presented below on the percentage of respondents consuming the recommended number of daily servings from each shelf of the Food Pyramid (1998 and 2007). (SLAN 2007: Survey of Lifestyle, Attitudes and Nutrition in Ireland. Dietary Habits of the Irish Population, Department of Health and Children)",
+    questionText: "Outline the significance of fatty acids in the diet.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 4"}, totalMarks: 8,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "significance", marks: 8, contextNote: "Complete original source guidance: Unsaturated fatty acids (cis) are generally good as they help to reduce LDL and increase HDL Trans fatty acids thought to increase incidence of CHD – increasing levels of LDL depositing cholesterol on wall of arteries; reduces HDL which removes cholesterol from circulation, etc., during cooking and processing cis fatty acids may be converted into trans-fatty acids, etc. Saturated fatty acids increases levels of LDL cholesterol and lowers the HDL cholesterol increasing risk CHD, etc. Omega 3 fatty acids reduce risk of heart attack, stroke, circulatory diseases and formation of blood clots; reduce risk of certain cancers; linked with healthy brain activity; thought to play a role in eczema prevention, etc. Essential Fatty acids cannot be manufactured in the body so must be obtained from food – raise HDL and lower LDL, lower incidence of CHD, etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sb-q1d", topicId: "home-economics-0-7", conceptId: "sb-q1d",
+    section: "B", questionRef: "2013 HL Section B Q1(d)",
+    stem: "Irish healthy eating guidelines encourage people to eat a variety of foods based on the Food Pyramid. Findings are presented below on the percentage of respondents consuming the recommended number of daily servings from each shelf of the Food Pyramid (1998 and 2007). (SLAN 2007: Survey of Lifestyle, Attitudes and Nutrition in Ireland. Dietary Habits of the Irish Population, Department of Health and Children)",
+    questionText: "Describe the structure of each of the following: • cis fatty acids • trans fatty acids • omega 3 fatty acids.",
+    tariffModel: {"kind":"fixed","notation":"3 required structures × 4"}, totalMarks: 12,
+    rows: [
+    { id: "fatty-acid-1", kind: "criterion", verbatim: "cis fatty acids", marks: 4, contextNote: "Original structure description: Cis fatty acid -- occur when the hydrogen atoms on either side of the double bond are both above or both below the carbon chain, etc.", permittedMarks: [0,4] },
+    { id: "fatty-acid-2", kind: "criterion", verbatim: "trans fatty acids", marks: 4, contextNote: "Original structure description: Trans fatty acids - occur when hydrogen atoms on either side of the double bond are on the opposite side of the carbon chain, etc.", permittedMarks: [0,4] },
+    { id: "fatty-acid-3", kind: "criterion", verbatim: "omega 3 fatty acids", marks: 4, contextNote: "Original structure description: Omega 3 fatty acids – an unsaturated fatty acid where the double bond occurs between the 3rd and 4th carbon atoms on the carbon chain, etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sb-q1e", topicId: "home-economics-1-2", conceptId: "sb-q1e",
+    section: "B", questionRef: "2013 HL Section B Q1(e)",
+    stem: "Irish healthy eating guidelines encourage people to eat a variety of foods based on the Food Pyramid. Findings are presented below on the percentage of respondents consuming the recommended number of daily servings from each shelf of the Food Pyramid (1998 and 2007). (SLAN 2007: Survey of Lifestyle, Attitudes and Nutrition in Ireland. Dietary Habits of the Irish Population, Department of Health and Children)",
+    questionText: "Discuss how food labelling assists consumers in making informed food choices.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "food labelling", marks: 20, contextNote: "Complete original source guidance: Ingredients in order of decreasing weight; Guideline Daily Amounts (GDA’s); quantity of certain ingredients e.g. beef in burgers; energy value; country of origin; use by date on perishables, best before date on non-perishables; instructions for storage and use; provides information on GM ingredients; irradiated food; colour-coded systems (e.g. traffic lights) which show the amounts of fat, sugar and salt per 100g of the food or per portion; health logos such as the swedish keyhole are used on foods that meet certain nutrient criteria by category of food, and help consumers to identify and purchase better-for-you options; serving size and number of servings per container; food allergies – additives used; sugar-free, low fat; class and variety, etc.", permittedMarks: [0,4,8,12,16,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sb-q2a", topicId: "home-economics-0-10", conceptId: "sb-q2a",
+    section: "B", questionRef: "2013 HL Section B Q2(a)",
+    stem: "‘Given the priority for population dietary change there is a need for a greater understanding of the determinants that affect food choice.’ (The European Food Information Council)",
+    questionText: "Discuss the importance of aesthetic awareness in relation to the choice and presentation of food.",
+    tariffModel: {"kind":"fixed","notation":"Choice4 + presentation4 + one other4"}, totalMarks: 12,
+    rows: [
+    { id: "choice", kind: "criterion", verbatim: "choice", marks: 4, contextNote: "appearance/ sight - sight is used to judge appearance and colour; appearance - size, shape, surface appearance; appearance and colour used to judge freshness / ripeness of food; certain flavour associated with colours e.g. lemon/yellow; expect certain foods to have a certain appearance & colour e.g. mould ok on stilton cheese but not on bread, etc. Smell - nasal cavity has receptor cells that detect smell, can be used to determine if food is fresh, or rancid, etc. Texture - detected by mouth feel and sight; variety of textures is important in a meal e.g. crisp salad, etc.", permittedMarks: [0,4] },
+    { id: "presentation", kind: "criterion", verbatim: "presentation", marks: 4, contextNote: "colour added by garnishing or decorating; colour i.e. actual colour, colour change due to cooking; food/dishes are evaluated based on their presentation e.g. parmesan shavings on pasta dishes, icing sugar on cakes, etc.", permittedMarks: [0,4] },
+    { id: "other", kind: "criterion", verbatim: "1 other", marks: 4, contextNote: "One ADDITIONAL point from either heading. Original choice guidance: appearance/ sight - sight is used to judge appearance and colour; appearance - size, shape, surface appearance; appearance and colour used to judge freshness / ripeness of food; certain flavour associated with colours e.g. lemon/yellow; expect certain foods to have a certain appearance & colour e.g. mould ok on stilton cheese but not on bread, etc. Smell - nasal cavity has receptor cells that detect smell, can be used to determine if food is fresh, or rancid, etc. Texture - detected by mouth feel and sight; variety of textures is important in a meal e.g. crisp salad, etc. Presentation: colour added by garnishing or decorating; colour i.e. actual colour, colour change due to cooking; food/dishes are evaluated based on their presentation e.g. parmesan shavings on pasta dishes, icing sugar on cakes, etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sb-q2bi", topicId: "home-economics-0-11", conceptId: "sb-q2bi",
+    section: "B", questionRef: "2013 HL Section B Q2(b)(i)",
+    stem: "‘Given the priority for population dietary change there is a need for a greater understanding of the determinants that affect food choice.’ (The European Food Information Council)",
+    questionText: "State, giving examples, when sensory analysis tests are used in the food industry.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 4"}, totalMarks: 8,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "uses", marks: 8, contextNote: "Complete original source guidance: Product development: companies develop own label foods to taste like brand leader; to gauge consumer response to a product, etc. Modifying an existing product: based on consumer demand e.g. to make healthier, salt replaced with low sodium alternative, a different ingredient or a different ingredient supplier used so difference tests done to ensure consumer cannot perceive a change, etc. Matching an existing food product: copying other well - known branded products, etc. Evaluation of products: check that the final product meets its original specifications; analyse specific attributes e.g. shortness in biscuits; quality control, etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sb-q2bii", topicId: "home-economics-0-11", conceptId: "sb-q2bii",
+    section: "B", questionRef: "2013 HL Section B Q2(b)(ii)",
+    stem: "‘Given the priority for population dietary change there is a need for a greater understanding of the determinants that affect food choice.’ (The European Food Information Council)",
+    questionText: "Name three main categories of sensory analysis tests and state the main purpose of the tests in each category.",
+    tariffModel: {"kind":"fixed","notation":"3 categories × (name3 + purpose3)"}, totalMarks: 18,
+    rows: [
+    { id: "name-1", kind: "point", verbatim: "Preference test", marks: 3 },
+    { id: "purpose-1", kind: "criterion", verbatim: "Purpose", marks: 3, contextNote: "Purpose of the SAME category. Source:  to supply information about whether people like or dislike a product e.g. used to determine if consumers like a product / if one product is preferred over another / if consumers intend to use a product, etc.", permittedMarks: [0,3] },
+    { id: "name-2", kind: "point", verbatim: "Difference test", marks: 3 },
+    { id: "purpose-2", kind: "criterion", verbatim: "Purpose", marks: 3, contextNote: "Purpose of the SAME category. Source:  used to detect small differences in food e.g. does a difference exist, would people notice the difference, how would you describe the difference, etc.", permittedMarks: [0,3] },
+    { id: "name-3", kind: "point", verbatim: "Descriptive test", marks: 3 },
+    { id: "purpose-3", kind: "criterion", verbatim: "Purpose", marks: 3, contextNote: "Purpose of the SAME category. Source:  used to describe the perceived sensory characteristics of products e.g. what does the product taste like, what are its perceived sensory characteristics, how does a change in processing, packaging or storing affect the sensory quality of the product, etc.", permittedMarks: [0,3] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2013-hl-sb-q2bii-pair-1","label":"Preference test","marks":6,"rowIds":["name-1","purpose-1"]},{"sourceCardId":"he-2013-hl-sb-q2bii-pair-2","label":"Difference test","marks":6,"rowIds":["name-2","purpose-2"]},{"sourceCardId":"he-2013-hl-sb-q2bii-pair-3","label":"Descriptive test","marks":6,"rowIds":["name-3","purpose-3"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sb-q2c", topicId: "home-economics-0-10", conceptId: "sb-q2c",
+    section: "B", questionRef: "2013 HL Section B Q2(c)",
+    stem: "‘Given the priority for population dietary change there is a need for a greater understanding of the determinants that affect food choice.’ (The European Food Information Council)",
+    questionText: "State the reasons why recipes may be modified / adapted.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "reasons", marks: 12, contextNote: "Complete original source guidance: To make the dish more nutritious in line with healthy-eating guidelines e.g. to increase fibre; to cater for individuals on special diets e.g. coeliacs; to increase or decrease quantity (standard recipes cater for 4 adults); to add variety to a basic recipe e.g. nuts in vegetable stir fries; to economise by substituting expensive ingredients with less expensive ones e.g. margarine instead of butter; in accordance with peoples likes and dislikes, etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sb-q3a", topicId: "home-economics-0-4", conceptId: "sb-q3a",
+    section: "B", questionRef: "2013 HL Section B Q3(a)",
+    stem: "The shelf-life of a product is critical in determining both its quality and profitability.",
+    questionText: "Discuss the causes of food spoilage in relation to the action of enzymes.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "food spoilage", marks: 15, contextNote: "Complete original source guidance: Enzymes bring about spoilage in 3 ways – over-ripening, browning and enzyme deterioration Over-ripening: enzymes cause food to over- ripen e.g. hard under-ripe banana becomes softer and easier to digest; enzymes cause over-ripeness / spoilage e.g. black banana, etc. Enzymic browning: when certain foods are cut, e.g. apples, bananas and potatoes, the cut surface releases oxidase and is exposed to the air, causing them to turn brown, etc. Enzymic deterioration (rotting): enzymes in fish cause deterioration even at low temperatures; vegetables may be spoiled in the freezer particularly if they were not blanched before freezing; the enzyme oxidase present in the cell walls of plants is activated by oxygen and can destroy thiamine, Vit C and carotene, etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sb-q3b", topicId: "home-economics-0-4", conceptId: "sb-q3b",
+    section: "B", questionRef: "2013 HL Section B Q3(b)",
+    stem: "The shelf-life of a product is critical in determining both its quality and profitability.",
+    questionText: "Name and give details of one type of food poisoning bacteria. Refer to: • conditions necessary for growth • source • reproduction / growth of bacteria • high risk foods.",
+    tariffModel: {"kind":"fixed","notation":"Name2 + growth3×2 + source2 + reproduction2×2 + foods3×2"}, totalMarks: 20,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 2, contextNote: "The original scheme gives the criteria and tariffs for this chosen bacterium, but provides NO named bacterium or model answers. Supply a coherent profile of ONE food-poisoning bacterium; no additional model has been invented. Name one type.", permittedMarks: [0,2] },
+    { id: "growth", kind: "criterion", verbatim: "conditions necessary for growth", marks: 6, contextNote: "The original scheme gives the criteria and tariffs for this chosen bacterium, but provides NO named bacterium or model answers. Supply a coherent profile of ONE food-poisoning bacterium; no additional model has been invented. Three growth conditions for the SAME type.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    { id: "source", kind: "criterion", verbatim: "source", marks: 2, contextNote: "The original scheme gives the criteria and tariffs for this chosen bacterium, but provides NO named bacterium or model answers. Supply a coherent profile of ONE food-poisoning bacterium; no additional model has been invented. One source of the SAME type.", permittedMarks: [0,2] },
+    { id: "reproduction", kind: "criterion", verbatim: "reproduction / growth of bacteria", marks: 4, contextNote: "The original scheme gives the criteria and tariffs for this chosen bacterium, but provides NO named bacterium or model answers. Supply a coherent profile of ONE food-poisoning bacterium; no additional model has been invented. Two points about the SAME type.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    { id: "foods", kind: "criterion", verbatim: "high risk foods", marks: 6, contextNote: "The original scheme gives the criteria and tariffs for this chosen bacterium, but provides NO named bacterium or model answers. Supply a coherent profile of ONE food-poisoning bacterium; no additional model has been invented. Three foods associated with the SAME type.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sb-q3c", topicId: "home-economics-0-3", conceptId: "sb-q3c",
+    section: "B", questionRef: "2013 HL Section B Q3(c)",
+    stem: "The shelf-life of a product is critical in determining both its quality and profitability.",
+    questionText: "Assess irradiation as a method of food preservation.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "irradiation", marks: 15, contextNote: "Complete original source guidance: Advantages: destroys food poisoning bacteria and other parasites; longer shelf life; slows ripening and sprouting in fruit and vegetables; little effect on colour, flavour, texture of food; eliminates need for chemical preservatives, etc. Disadvantages: not suitable for high fat food, causes rancidity; loss of vitamins; high levels of radiation needed to destroy some microbes; public concern; may be used to disguise poor manufacturing, etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sb-q4a", topicId: "home-economics-1-0", conceptId: "sb-q4a",
+    section: "B", questionRef: "2013 HL Section B Q4(a)",
+    stem: "Management may be defined as planning for and implementing the use of resources to meet demands.",
+    questionText: "Discuss four factors that can influence the management of family resources.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 20, contextNote: "Complete original source guidance: Composition of family: number of people in the family, presence of persons with special needs, one parent or two parent families, etc. Stages in life cycle: priorities are different for a family with or without children, as children get older they become part of the decision making process, etc. Employment patterns: number of family members working, whether employment is inside or outside the home, type of employment, hours of employment, etc. Socio-economic status: people from different socio economic backgrounds have different needs, lower socio economic backgrounds place emphasis on needs whilst people from higher socio economic backgrounds place emphasis on luxuries, etc. Culture: the culture of a country can affect management of family e.g. dress code, food eaten, religious practices, etc. Management of dual roles: this refers to where both parties work outside the home and extra planning is required; single parent families - extra demand being the earner and parent, etc. Gender roles - roles or behaviour expected by men and women, more equal partnership and shared roles nowadays, etc. Values and standards: affect management as they determine decision taken; when circumstances change in a family so too can values e.g. illness of a family member, etc.", permittedMarks: [0,5,10,15,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sb-q4b", topicId: "home-economics-1-0", conceptId: "sb-q4b",
+    section: "B", questionRef: "2013 HL Section B Q4(b)",
+    stem: "Management may be defined as planning for and implementing the use of resources to meet demands.",
+    questionText: "You have been elected as chairperson of your school’s graduation committee. Using the management framework (inputs, throughputs and outputs), set out the plan for the event.",
+    tariffModel: {"kind":"fixed","notation":"3 headings × 3 points × 2"}, totalMarks: 18,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Inputs", marks: 6, contextNote: "Three points for this required heading, applied to the SCHOOL GRADUATION COMMITTEE event. Source: Inputs: Demands – needs; goals; wants; values, etc. Resources – human; economic; material; environmental, etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "Throughputs", marks: 6, contextNote: "Three points for this required heading, applied to the SCHOOL GRADUATION COMMITTEE event. Source: Throughputs: Planning; Organising; Implementing; Planning – gathering information, considering alternatives, deciding on course of action, etc. Organising – allocating different tasks, communication with the committee, etc. Implementing – putting the plan into action e.g. booking venue, making necessary changes as needs arise, etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "Outputs / Evaluation", marks: 6, contextNote: "Three points for this required heading, applied to the SCHOOL GRADUATION COMMITTEE event. Source: Outputs / Evaluation: assess the end result of inputs and throughputs - have the goals been reached; have the values changed; have the needs been met; were the wants fulfilled; were all resources used effectively, etc. was the event organised efficiently; did it meet the needs of the class group; were the class happy with event, etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sb-q4c", topicId: "home-economics-1-0", conceptId: "sb-q4c",
+    section: "B", questionRef: "2013 HL Section B Q4(c)",
+    stem: "Management may be defined as planning for and implementing the use of resources to meet demands.",
+    questionText: "Give an account of the importance of decision making in family resource management.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "decision making", marks: 12, contextNote: "Complete original source guidance: Involves sharing of information and ideas; is necessary for the allocation of tasks; sharing of values, views and concerns; helps achieve goals; is necessary resolving conflict/issues; evaluation provides solutions for future improvements; improves efficiency; discussion gives people a broader view of issues, etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sb-q5a", topicId: "home-economics-2-0", conceptId: "sb-q5a",
+    section: "B", questionRef: "2013 HL Section B Q5(a)",
+    stem: "The family is an important setting in which health-related behaviours and attitudes are shaped.",
+    questionText: "Explain the following sociological terms: • culture • norms • values • role.",
+    tariffModel: {"kind":"fixed","notation":"4 required terms × 3"}, totalMarks: 12,
+    rows: [
+    { id: "term-1", kind: "criterion", verbatim: "Culture", marks: 3, contextNote: "Culture: the way of life of a society, it includes language, music and behavioural patterns, values, norms, mores, customs passed from one generation to the next e.g. Irish culture, etc.", permittedMarks: [0,3] },
+    { id: "term-2", kind: "criterion", verbatim: "Norms", marks: 3, contextNote: "Norms: acceptable way of behaving in society e.g. forming a queue, etc.", permittedMarks: [0,3] },
+    { id: "term-3", kind: "criterion", verbatim: "Values", marks: 3, contextNote: "Values: beliefs and attitudes regarding what is right and what is wrong, etc.", permittedMarks: [0,3] },
+    { id: "term-4", kind: "criterion", verbatim: "Role", marks: 3, contextNote: "Role: pattern of behaviour considered appropriate for a person according to his/her position in society e.g. teacher, student, adult, child, parent, etc.", permittedMarks: [0,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sb-q5b", topicId: "home-economics-2-0", conceptId: "sb-q5b",
+    section: "B", questionRef: "2013 HL Section B Q5(b)",
+    stem: "The family is an important setting in which health-related behaviours and attitudes are shaped.",
+    questionText: "Discuss the social, economic and technological changes that affect families in Ireland today.",
+    tariffModel: {"kind":"fixed","notation":"Social6 + economic6 + technological6 + one other6"}, totalMarks: 24,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Social", marks: 6, contextNote: "Social: marriage break up; divorce; children born outside of marriage; blended families; fewer children; working mothers; stay at home dads; equality of roles; role conflict; role overload; access to education; poor communication in families; social problems; cyber bullying, etc.", permittedMarks: [0,6] },
+    { id: "heading-2", kind: "criterion", verbatim: "Economic", marks: 6, contextNote: "Economic: economic downturn; increase in cost of living has led to smaller family sizes; state provides financial benefits and support for single families and unemployed; necessary for both parents to work outside the home due to increased cost of living and housing; recession has resulted in a greater economic burden on families due to unemployment, mortgage repayments and increase in utility bills; easy access to borrowed money leading to financial difficulties now; nuclear family – independent – emigrate; large mortgages, adults moving back into homes to cope with economic downturn, etc.", permittedMarks: [0,6] },
+    { id: "heading-3", kind: "criterion", verbatim: "Technological", marks: 6, contextNote: "Technological – household appliances save time and labour; household appliances contribute to the change in separate gender roles; communication technologies make it easier for people to work from home and also to carry out household tasks e.g. bill payment; films have highlighted the different expectations and experiences in other societies and cultures; entertainment at home has been greatly influenced by advances in technology DVD’s, broadband; security technology e.g. alarms; mass production so cost of products decrease and are more readily available to families; cyber bullying, etc.", permittedMarks: [0,6] },
+    { id: "other", kind: "criterion", verbatim: "1 other", marks: 6, contextNote: "One ADDITIONAL distinct point from any required heading. Full source: Social: marriage break up; divorce; children born outside of marriage; blended families; fewer children; working mothers; stay at home dads; equality of roles; role conflict; role overload; access to education; poor communication in families; social problems; cyber bullying, etc. Economic: economic downturn; increase in cost of living has led to smaller family sizes; state provides financial benefits and support for single families and unemployed; necessary for both parents to work outside the home due to increased cost of living and housing; recession has resulted in a greater economic burden on families due to unemployment, mortgage repayments and increase in utility bills; easy access to borrowed money leading to financial difficulties now; nuclear family – independent – emigrate; large mortgages, adults moving back into homes to cope with economic downturn, etc. Technological – household appliances save time and labour; household appliances contribute to the change in separate gender roles; communication technologies make it easier for people to work from home and also to carry out household tasks e.g. bill payment; films have highlighted the different expectations and experiences in other societies and cultures; entertainment at home has been greatly influenced by advances in technology DVD’s, broadband; security technology e.g. alarms; mass production so cost of products decrease and are more readily available to families; cyber bullying, etc.", permittedMarks: [0,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sb-q5c", topicId: "home-economics-2-1", conceptId: "sb-q5c",
+    section: "B", questionRef: "2013 HL Section B Q5(c)",
+    stem: "The family is an important setting in which health-related behaviours and attitudes are shaped.",
+    questionText: "Comment on the protection afforded to children under current Irish family law. (14) Refer to two acts.",
+    tariffModel: {"kind":"fixed","notation":"2 Acts × (name3 + protection4)"}, totalMarks: 14,
+    rows: [
+    { id: "act-1", kind: "anyN", verbatim: "Name of Act", marks: 3, contextNote: "Choose two DIFFERENT Acts as applicable to this historical 2013 task.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Domestic Violence Act 1996","Childcare Act 1991","Children’s Act 1997","Family Law (Maintenance of Spouse and Children) Act 1976","Family Home Protection Act 1976","Judicial Separation or Divorce Act","Succession Act 1965"]} },
+    { id: "protection-1", kind: "criterion", verbatim: "protection", marks: 4, contextNote: "One point on the SAME named Act. Complete original historical source: Domestic Violence Act 1996 (Family Law Act 1976 – section 22 barring orders): safety, barring or protection orders can be applied for if dependent children are under threat of physical, sexual or psychological violence from family member; if court order is broken the penalty is fine or imprisonment, etc. Childcare Act 1991: involves health services; intervention; care order or supervision order - considers requests of child; child may be removed from home, etc. Children’s Act 1997: unmarried father joint guardianship of child, etc. Family Law (Maintenance of Spouse and Children) Act 1976: financial support paid for the benefit of dependent children; dependent child – under 18, under 23 in education, disabled, this is regardless whether the parents are married or living together, etc. Family Home Protection Act 1976: family home cannot be sold without consent of both spouses, regardless of who owns the home, children have the security of a home, etc. Judicial Separation or Divorce Act: provision for dependent children, etc. Succession Act 1965: children entitled to two thirds of estate; family home rights, etc.", permittedMarks: [0,4] },
+    { id: "act-2", kind: "anyN", verbatim: "Name of Act", marks: 3, contextNote: "Choose two DIFFERENT Acts as applicable to this historical 2013 task.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Domestic Violence Act 1996","Childcare Act 1991","Children’s Act 1997","Family Law (Maintenance of Spouse and Children) Act 1976","Family Home Protection Act 1976","Judicial Separation or Divorce Act","Succession Act 1965"]} },
+    { id: "protection-2", kind: "criterion", verbatim: "protection", marks: 4, contextNote: "One point on the SAME named Act. Complete original historical source: Domestic Violence Act 1996 (Family Law Act 1976 – section 22 barring orders): safety, barring or protection orders can be applied for if dependent children are under threat of physical, sexual or psychological violence from family member; if court order is broken the penalty is fine or imprisonment, etc. Childcare Act 1991: involves health services; intervention; care order or supervision order - considers requests of child; child may be removed from home, etc. Children’s Act 1997: unmarried father joint guardianship of child, etc. Family Law (Maintenance of Spouse and Children) Act 1976: financial support paid for the benefit of dependent children; dependent child – under 18, under 23 in education, disabled, this is regardless whether the parents are married or living together, etc. Family Home Protection Act 1976: family home cannot be sold without consent of both spouses, regardless of who owns the home, children have the security of a home, etc. Judicial Separation or Divorce Act: provision for dependent children, etc. Succession Act 1965: children entitled to two thirds of estate; family home rights, etc.", permittedMarks: [0,4] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2013-hl-sb-q5c-act-1","label":"Act 1","marks":7,"rowIds":["act-1","protection-1"]},{"sourceCardId":"he-2013-hl-sb-q5c-act-2","label":"Act 2","marks":7,"rowIds":["act-2","protection-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q1ai", topicId: "home-economics-3-3", conceptId: "sc-q1ai",
+    section: "C", questionRef: "2013 HL Section C E1 Q1(a)(i)",
+    stem: "Buildings in the countryside alter and influence the landscape profoundly and become focal points for the eye.",
+    questionText: "Outline the historical development of housing styles in Ireland since the nineteenth century to the present day.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "historical development", marks: 20, contextNote: "Complete original source guidance: Early Nineteenth Century: Rural areas in the early 1800’s, the single storey thatched cottage; it generally consisted of two rooms, a kitchen and a bedroom, the walls were constructed from solid stone, the windows were small and the door - usually a half-door, opened into the kitchen; an open turf fire was used for cooking and to provide heat; the thatch was of reeds, straw or hay; some cottages had a room or loft directly under the thatch which was accessed by a ladder, where children slept; wealthy farmers lived in a two-storey, slate roofed houses with up to five bedrooms including a parlour; wealthy landowners lived in a large estate house with servants quarters generally in the basement, etc. Urban areas: Georgian style 2, 3, 4 storey terraced with basements, etc. Suburbs; middle class had small terraced houses, shopkeepers lived over their shops, workers single storey cottages, etc. Late Nineteenth Century: two-storey, slate-roofed stone buildings were the most common dwellings; a greater variety of building materials became available due to improved transportation; more ornate – gothic and tudor styles; stone used; rural – 2 storey houses with slated roofs; urban – move to suburbs, Georgian houses divided and rented to poorer families, etc. Early Twentieth Century: detached and semi detached; council and housing estates; use of brick with plaster walls; 2 storey as land was expensive; tiles replaced slates; rural electrification (1950’s) and government housing grants brought changes to housing in rural Ireland; the slate roofed bungalow gradually replaced the thatched cottage of the past, etc. Late Twentieth Century: private housing estates use a common design; many different designs for private houses including classical and modern; building regulations greatly improved housing standards; new materials and methods e.g. double-glazing, plastic (pvc) and fibreglass used, etc. Twenty-first Century: housing estates, although each housing estate usually consists of one style, there are many different types including single-storey detached, dormer style and two storey semi-detached; restoration of old dilapidated buildings or old thatched cottages; custom designed houses on a private site; a popular method of extending space within houses is to convert attic space and install velux windows; conservatory / sunroom extensions can be seen on many houses, etc.", permittedMarks: [0,4,8,12,16,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q1aii", topicId: "home-economics-3-3", conceptId: "sc-q1aii",
+    section: "C", questionRef: "2013 HL Section C E1 Q1(a)(ii)",
+    stem: "Buildings in the countryside alter and influence the landscape profoundly and become focal points for the eye.",
+    questionText: "Give an account of the specific housing requirements of the following groups: • families • single people • elderly people.",
+    tariffModel: {"kind":"fixed","notation":"2 references to EACH group × 3"}, totalMarks: 18,
+    rows: [
+    { id: "group-1", kind: "criterion", verbatim: "Families", marks: 6, contextNote: "Families: The ages of the family members and size of the family will determine housing requirements; a well-equipped, ventilated, adequately lit and spacious kitchen is a requirement for most families; sufficient bedrooms to accommodate all members are necessary, including adequate storage for clothing; teenagers may require study facilities; extra bathrooms will be required for larger families; a living room used by family members for relaxing e.g. TV viewing is a requirement; a large hot-press is particularly important for families with young children; a safe enclosed back garden is a requirement for a family with young children; a garage or garden shed may be required for the storage of garden and sports equipment; a garage may be necessary for a family owning a car; proximity to work, schools, shops, parks and public transport may be important to some families, etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "group-2", kind: "criterion", verbatim: "Single people", marks: 6, contextNote: "Single people: a smaller space will be required; there are more housing options available to a single person - bedsits, small town houses or apartments may be suitable options; house sharing is common among young singles where the rent and all expenses are shared among the occupants; proximity to work or college is usually important to young single people who may not own cars or choose to travel long distances, proximity to public transport, etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "group-3", kind: "criterion", verbatim: "Elderly people", marks: 6, contextNote: "Elderly people : The basic housing requirements remain the same for elderly people as for other people, however, there are some alterations to consider due to age, which may be accompanied by special needs; because many elderly people are less mobile single-storey compact accommodation is more appropriate; chairlifts may be fitted on stairways; a downstairs bathroom fitted with handrails, non-slip flooring, raised toilet level and shower seat can assist elderly people; because elderly people feel the cold more, an easy, safe and effective method of home heating is very important; to reduce the risk of falls good lighting is essential; proximity to local shops, libraries and church is often important to elderly people who are on their own and may not drive; security is particularly important to elderly people living on their own; secure windows and door locks are essential; doors can be fitted with door-chains and a peep-hole for extra security; an alarm communication system can be fitted, this is activated in emergencies giving peace of mind to many elderly people; in some situations, sheltered housing or institutional care may be more appropriate than continuing to live alone, etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q1aiii", topicId: "home-economics-3-3", conceptId: "sc-q1aiii",
+    section: "C", questionRef: "2013 HL Section C E1 Q1(a)(iii)",
+    stem: "Buildings in the countryside alter and influence the landscape profoundly and become focal points for the eye.",
+    questionText: "Evaluate the adequacy of social housing provision in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "social housing", marks: 12, contextNote: "Complete original source guidance: Available to people on lower incomes or who are unable to afford a private house, provided by local authority or by voluntary or co-operative housing groups; the high rate of unemployment during the recession has resulted in more people renting or applying to the local authority for housing; increase in the number of people on waiting lists, elderly people, people with a disability and homeless people account for over 10% of the total waiting list; the increase in refugees and asylum seekers has also increased the demand for suitable housing in this sector; can be waiting for a number of years; supply does not meet demand; families, disabled and elderly people get priority, single people are disadvantaged; rent support available; ‘improvements works’ schemes in lieu of local authority schemes. Tenant purchase scheme and affordable housing schemes no longer available so this has impacted on provision of social housing. Rental accommodation scheme RAS 2004 has become more popular, etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q1bi", topicId: "home-economics-3-5", conceptId: "sc-q1bi",
+    section: "C", questionRef: "2013 HL Section C E1 Q1(b)(i)",
+    questionText: "Explain the underlying principle of one type of energy efficient lighting.",
+    tariffModel: {"kind":"fixed","notation":"Principle3×4; no name tariff"}, totalMarks: 12,
+    rows: [
+    { id: "principle", kind: "criterion", verbatim: "underlying principle", marks: 12, contextNote: "Three points explaining the SAME energy-efficient lighting type. Original model: CFL/fluorescents lights: are made compact by looping the tube a number of times; consists of a glass tube coated with phosphor; contains argon and mercury; when electricity flows electrodes at each end of the glass tube heat up causing mercury to vaporise; the gases react with the phosphor coating and cause it to glow, etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "source-1",
+                "label": "CFL/fluorescents lights",
+                "rows": [
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8,
+                                  12
+                            ],
+                            "contextNote": "Three points explaining the SAME energy-efficient lighting type. Original model: CFL/fluorescents lights: are made compact by looping the tube a number of times; consists of a glass tube coated with phosphor; contains argon and mercury; when electricity flows electrodes at each end of the glass tube heat up causing mercury to vaporise; the gases react with the phosphor coating and cause it to glow, etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-2",
+                "label": "LED",
+                "rows": [
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8,
+                                  12
+                            ],
+                            "contextNote": "Three points explaining the SAME energy-efficient lighting type. Original model: LED: light emitting diode; when switched on electrodes combine with holes within the bulb releasing energy(photons), the effect is electro luminescence; the colour is determined by the energy band gap of the semi-conductor; lowers the energy consumption giving a longer shelf life; can be in the form of bulb lighting or rope lighting, etc",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-type",
+                "label": "Another energy-efficient lighting type",
+                "rows": [
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "underlying principle",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8,
+                                  12
+                            ],
+                            "contextNote": "Explain three principle points for ONE type. The scheme models CFL/fluorescents and LED only; no further model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q1bii", topicId: "home-economics-3-5", conceptId: "sc-q1bii",
+    section: "C", questionRef: "2013 HL Section C E1 Q1(b)(ii)",
+    questionText: "Give details of three contemporary developments in lighting technology.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 6"}, totalMarks: 18,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "developments", marks: 18, contextNote: "Complete original source guidance: New lighting technology: compact fluorescent lights; LED lights, halogen lights; fibre optics; low-wattage lights; touch-sensitive lights; dimmer switches; sensor lights; solar-powered lights; pool and pond lights, home lighting operated by your mobile phone/ipad, etc. Light Fittings: Central Lights: flush central, chandeliers, rise and fall lights, etc. Wall Brackets: wall washers, picture lights, swivel, spots, ceramic and plaster based wall lights, etc. Decorative: under-counter and cabinet lighting; pelmet and window lighting, etc. Lamps: pivot action, flexible stem, touch lights, etc. Ceiling: eyeball spots, recessed, track, etc. Floor: pivot, up lighters/down lighters, etc. Outdoor Lighting: column lighting, sensor, solar powered fountain, step and decking lighting, pool and pond lighting etc.", permittedMarks: [0,6,12,18], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,6]},{"id":"point-3","verbatim":"Point 3","marks":6,"permittedMarks":[0,6]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q1ci", topicId: "home-economics-3-4", conceptId: "sc-q1ci",
+    section: "C", questionRef: "2013 HL Section C E1 Q1(c)(i)",
+    stem: "It is important to choose the correct flooring for your home or business. It must meet your individual lifestyle/business needs and be flexible and durable enough to withstand the rigours of daily life.",
+    questionText: "Explain each of the following: • solid floors • suspended floors.",
+    tariffModel: {"kind":"fixed","notation":"2 references to EACH floor type × 3"}, totalMarks: 12,
+    rows: [
+    { id: "type-1", kind: "criterion", verbatim: "Solid floors", marks: 6, contextNote: "Solid floors: made of concrete, usually found on ground floor of modern homes; consists of a hard core layer with a concrete slab; covered with a damp-proof course; followed by a final thin layer of concrete/ fine screed layer on top, etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "type-2", kind: "criterion", verbatim: "Suspended floors", marks: 6, contextNote: "Suspended floors: usually found on the first floor of a house; made of joists of wood/concrete/steel which are covered with tongue and groove wooden planks; space between the wood to allow air to circulate in order to prevent dampness, a damp-proof course can be added; planks used to cover the joists can be sanded and varnished, etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q1cii", topicId: "home-economics-3-4", conceptId: "sc-q1cii",
+    section: "C", questionRef: "2013 HL Section C E1 Q1(c)(ii)",
+    stem: "It is important to choose the correct flooring for your home or business. It must meet your individual lifestyle/business needs and be flexible and durable enough to withstand the rigours of daily life.",
+    questionText: "Name and describe one semi-hard flooring and one soft flooring that you would recommend for a family living room. State the main advantage and the main disadvantage of each.",
+    tariffModel: {"kind":"fixed","notation":"Required semi-hard + soft, each name3/description2/advantage2/disadvantage2"}, totalMarks: 18,
+    rows: [
+    { id: "semi-hard-name", kind: "anyN", verbatim: "Name", marks: 3, contextNote: "ONE Semi hard flooring for the family living room.", openList: true, group: {"claimMax":1,"perOption":3,"options":["wood","vinyl","linoleum","cork","coir","sisal"]} },
+    { id: "semi-hard-description", kind: "criterion", verbatim: "Description", marks: 2, contextNote: "Match this point to the SAME chosen Semi hard flooring. Complete original models: wood, vinyl, linoleum, cork, coir, sisal, etc. Wood: can be soft wooden planks, strip flooring- wooden floors which are tongued and grooved; strips of pine, deal woods; thin layer of hardwood attached to a softwood; block flooring e.g. parquet or mosaic flooring; durable; low maintenance; most are ready sealed; can be expensive; noisy (parquet); cold; marked and scratched easily, etc. Vinyl: polyvinyl chloride – developed from petroleum; resin and pigment; plastic floor covering durable, easy to clean, hygienic, quiet, resilient, acid, alkali and water resistant; wide variety of colours and designs; foam-backed vinyl is soft underfoot; non-slip; melt when subjected to high temperatures; available in individual tiles or sheets, etc. Cork: derived from bark of cork oak tree, formed from bark granules, bonded together using polyurethane resin; some sliced directly from bark; bought sealed or unsealed; warm; not hardwearing, etc. Coir: made from coconut fibre, softened in water, beaten, spun, woven; tough, hardwearing, etc. Sisal: derived from dark green spiky plant; hardwearing, easy to clean; anti-static, etc. The source names linoleum/rugs without separate models and does not supply every evaluative point for every example; no missing detail has been invented.", permittedMarks: [0,2] },
+    { id: "semi-hard-advantage", kind: "criterion", verbatim: "Advantage", marks: 2, contextNote: "Match this point to the SAME chosen Semi hard flooring. Complete original models: wood, vinyl, linoleum, cork, coir, sisal, etc. Wood: can be soft wooden planks, strip flooring- wooden floors which are tongued and grooved; strips of pine, deal woods; thin layer of hardwood attached to a softwood; block flooring e.g. parquet or mosaic flooring; durable; low maintenance; most are ready sealed; can be expensive; noisy (parquet); cold; marked and scratched easily, etc. Vinyl: polyvinyl chloride – developed from petroleum; resin and pigment; plastic floor covering durable, easy to clean, hygienic, quiet, resilient, acid, alkali and water resistant; wide variety of colours and designs; foam-backed vinyl is soft underfoot; non-slip; melt when subjected to high temperatures; available in individual tiles or sheets, etc. Cork: derived from bark of cork oak tree, formed from bark granules, bonded together using polyurethane resin; some sliced directly from bark; bought sealed or unsealed; warm; not hardwearing, etc. Coir: made from coconut fibre, softened in water, beaten, spun, woven; tough, hardwearing, etc. Sisal: derived from dark green spiky plant; hardwearing, easy to clean; anti-static, etc. The source names linoleum/rugs without separate models and does not supply every evaluative point for every example; no missing detail has been invented.", permittedMarks: [0,2] },
+    { id: "semi-hard-disadvantage", kind: "criterion", verbatim: "Disadvantage", marks: 2, contextNote: "Match this point to the SAME chosen Semi hard flooring. Complete original models: wood, vinyl, linoleum, cork, coir, sisal, etc. Wood: can be soft wooden planks, strip flooring- wooden floors which are tongued and grooved; strips of pine, deal woods; thin layer of hardwood attached to a softwood; block flooring e.g. parquet or mosaic flooring; durable; low maintenance; most are ready sealed; can be expensive; noisy (parquet); cold; marked and scratched easily, etc. Vinyl: polyvinyl chloride – developed from petroleum; resin and pigment; plastic floor covering durable, easy to clean, hygienic, quiet, resilient, acid, alkali and water resistant; wide variety of colours and designs; foam-backed vinyl is soft underfoot; non-slip; melt when subjected to high temperatures; available in individual tiles or sheets, etc. Cork: derived from bark of cork oak tree, formed from bark granules, bonded together using polyurethane resin; some sliced directly from bark; bought sealed or unsealed; warm; not hardwearing, etc. Coir: made from coconut fibre, softened in water, beaten, spun, woven; tough, hardwearing, etc. Sisal: derived from dark green spiky plant; hardwearing, easy to clean; anti-static, etc. The source names linoleum/rugs without separate models and does not supply every evaluative point for every example; no missing detail has been invented.", permittedMarks: [0,2] },
+    { id: "soft-name", kind: "anyN", verbatim: "Name", marks: 3, contextNote: "ONE Soft flooring for the family living room.", openList: true, group: {"claimMax":1,"perOption":3,"options":["carpet","rugs","carpet tiles"]} },
+    { id: "soft-description", kind: "criterion", verbatim: "Description", marks: 2, contextNote: "Match this point to the SAME chosen Soft flooring. Complete original models: carpet, rugs, carpet tiles etc. Carpet: 80% wool, 20% nylon; acrylic, polypropylene, woven e.g. axminster, wilton or tufted carpets wide variety of colours; soft underfoot; durable; resilient; warm; expensive; need regular vacuuming; can dirty easily, etc. Carpet tiles: squares of sealed edged carpets; backed with PVC or rubber; acrylic / polyester; durable; stain-resistant; individual tiles can be replaced if damaged; limited variety of colours and patterns, etc. The source names linoleum/rugs without separate models and does not supply every evaluative point for every example; no missing detail has been invented.", permittedMarks: [0,2] },
+    { id: "soft-advantage", kind: "criterion", verbatim: "Advantage", marks: 2, contextNote: "Match this point to the SAME chosen Soft flooring. Complete original models: carpet, rugs, carpet tiles etc. Carpet: 80% wool, 20% nylon; acrylic, polypropylene, woven e.g. axminster, wilton or tufted carpets wide variety of colours; soft underfoot; durable; resilient; warm; expensive; need regular vacuuming; can dirty easily, etc. Carpet tiles: squares of sealed edged carpets; backed with PVC or rubber; acrylic / polyester; durable; stain-resistant; individual tiles can be replaced if damaged; limited variety of colours and patterns, etc. The source names linoleum/rugs without separate models and does not supply every evaluative point for every example; no missing detail has been invented.", permittedMarks: [0,2] },
+    { id: "soft-disadvantage", kind: "criterion", verbatim: "Disadvantage", marks: 2, contextNote: "Match this point to the SAME chosen Soft flooring. Complete original models: carpet, rugs, carpet tiles etc. Carpet: 80% wool, 20% nylon; acrylic, polypropylene, woven e.g. axminster, wilton or tufted carpets wide variety of colours; soft underfoot; durable; resilient; warm; expensive; need regular vacuuming; can dirty easily, etc. Carpet tiles: squares of sealed edged carpets; backed with PVC or rubber; acrylic / polyester; durable; stain-resistant; individual tiles can be replaced if damaged; limited variety of colours and patterns, etc. The source names linoleum/rugs without separate models and does not supply every evaluative point for every example; no missing detail has been invented.", permittedMarks: [0,2] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2013-hl-sc-q1cii-semi-hard","label":"Semi hard flooring","marks":9,"rowIds":["semi-hard-name","semi-hard-description","semi-hard-advantage","semi-hard-disadvantage"]},{"sourceCardId":"he-2013-hl-sc-q1cii-soft","label":"Soft flooring","marks":9,"rowIds":["soft-name","soft-description","soft-advantage","soft-disadvantage"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q2ai", topicId: "home-economics-3-8", conceptId: "sc-q2ai",
+    section: "C", questionRef: "2013 HL Section C E2 Q2(a)(i)",
+    stem: "Fashion is a revolving door. Trends change with the seasons and styles are constantly being revived and revamped.",
+    questionText: "Evaluate current fashion trends in casual wear. Refer to: • colour and pattern • line / shape • accessories.",
+    tariffModel: {"kind":"fixed","notation":"One per heading3 + one other3"}, totalMarks: 12,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Colour/pattern", marks: 3, contextNote: "Colour/pattern: bright colours; fluorescent colours, colour panelling; geometric prints; busy patterns; pyjamas as outerwear, printed trousers; skull motifs; (heavily embellished, sequins, beading), etc.", permittedMarks: [0,3] },
+    { id: "heading-2", kind: "criterion", verbatim: "Line/shape", marks: 3, contextNote: "Line/shape: exaggerated silhouettes; cocoon shoulders; high waist trousers; capri pants; peplum skirts and dresses; masculine tailored coats, ponchos, capes, etc.", permittedMarks: [0,3] },
+    { id: "heading-3", kind: "criterion", verbatim: "Accessories", marks: 3, contextNote: "Accessories: Belts; big bags, embellished clutch bags; fluorescent jewellery; collar necklaces; leg warmers; head bands; colourful scarves; patent shoes, etc.", permittedMarks: [0,3] },
+    { id: "other", kind: "criterion", verbatim: "one other", marks: 3, contextNote: "One ADDITIONAL point across these required headings. Original 2013 fashion examples: Colour/pattern: bright colours; fluorescent colours, colour panelling; geometric prints; busy patterns; pyjamas as outerwear, printed trousers; skull motifs; (heavily embellished, sequins, beading), etc. Line/shape: exaggerated silhouettes; cocoon shoulders; high waist trousers; capri pants; peplum skirts and dresses; masculine tailored coats, ponchos, capes, etc. Accessories: Belts; big bags, embellished clutch bags; fluorescent jewellery; collar necklaces; leg warmers; head bands; colourful scarves; patent shoes, etc.", permittedMarks: [0,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q2aii", topicId: "home-economics-3-8", conceptId: "sc-q2aii",
+    section: "C", questionRef: "2013 HL Section C E2 Q2(a)(ii)",
+    stem: "Fashion is a revolving door. Trends change with the seasons and styles are constantly being revived and revamped.",
+    questionText: "Describe, with the aid of a diagram, one method of customising denim jeans in order to give them a unique look.",
+    tariffModel: {"kind":"fixed","notation":"Description3 + matching diagram4"}, totalMarks: 7,
+    rows: [
+    { id: "description", kind: "criterion", verbatim: "Description", marks: 3, contextNote: "Describe ONE customisation. The source supplies these examples but no further full model: Vintage / distressed look, frayed edges, grated/ shredded patches; punk look, bleaching; adding colour and texture; biker look, add studs; sequins; embroidery - machine, hand stitched; stencils; appliqué - smiley faces, etc.", permittedMarks: [0,3] },
+    { id: "diagram", kind: "criterion", verbatim: "Diagram", marks: 4, contextNote: "Draw the SAME customisation. No model diagram is printed in the scheme. Source examples: Vintage / distressed look, frayed edges, grated/ shredded patches; punk look, bleaching; adding colour and texture; biker look, add studs; sequins; embroidery - machine, hand stitched; stencils; appliqué - smiley faces, etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q2aiii", topicId: "home-economics-3-8", conceptId: "sc-q2aiii",
+    section: "C", questionRef: "2013 HL Section C E2 Q2(a)(iii)",
+    stem: "Fashion is a revolving door. Trends change with the seasons and styles are constantly being revived and revamped.\n\nDescribe, with the aid of a diagram, one method of customising denim jeans in order to give them a unique look.",
+    questionText: "Evaluate the design of the customised jeans with reference to function and aesthetic appeal.",
+    tariffModel: {"kind":"fixed","notation":"Function3 + aesthetic appeal3"}, totalMarks: 6,
+    rows: [
+    { id: "function", kind: "criterion", verbatim: "function", marks: 3, contextNote: "Evaluate the FUNCTION of the SAME customised jeans from part(ii). The scheme prints this criterion but no model evaluation.", permittedMarks: [0,3] },
+    { id: "aesthetic", kind: "criterion", verbatim: "aesthetic appeal", marks: 3, contextNote: "Evaluate AESTHETIC APPEAL of the SAME customised jeans from part(ii). The scheme prints this criterion but no model evaluation.", permittedMarks: [0,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q2b", topicId: "home-economics-3-7", conceptId: "sc-q2b",
+    section: "C", questionRef: "2013 HL Section C E2 Q2(b)",
+    questionText: "Write a profile of one fabric made from manufactured fibres. Refer to: • name of fabric • fibre production • fabric properties • fibre identification test.",
+    tariffModel: {"kind":"fixed","notation":"Name2 + production3×2 + properties2×2 + identification3"}, totalMarks: 15,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Nylon", marks: 2 },
+    { id: "production", kind: "criterion", verbatim: "fibre production", marks: 6, contextNote: "Three production points about this SAME fibre. Original applicable model/group guidance: Nylon filament made from oil or coal; chemicals (monomers) are mixed and heated and melted to form nylon polymers; the liquid is pumped through a spinneret and cooled to form long fibres which are conditioned and wound on to a spool, etc. Nylon, polyester, acrylic are made entirely from chemicals; nylon fibres come from coal or oil which has been mixed with air, water and certain chemicals, etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    { id: "properties", kind: "criterion", verbatim: "fabric properties", marks: 4, contextNote: "Two properties of this SAME fabric. Original model: Nylon: strong; elastic; lightweight; easy care; soft, etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    { id: "identification", kind: "criterion", verbatim: "fibre identification test", marks: 3, contextNote: "Identification of this SAME fibre. Original model: Nylon: burns with difficulty smells like plastic or celery; drips leaving a hard beige grey beard, etc.", permittedMarks: [0,3] },
+    ],
+    answerVariants: [
+          {
+                "id": "fabric-0",
+                "label": "Nylon",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Nylon",
+                            "marks": 2
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three production points about this SAME fibre. Original applicable model/group guidance: Nylon filament made from oil or coal; chemicals (monomers) are mixed and heated and melted to form nylon polymers; the liquid is pumped through a spinneret and cooled to form long fibres which are conditioned and wound on to a spool, etc. Nylon, polyester, acrylic are made entirely from chemicals; nylon fibres come from coal or oil which has been mixed with air, water and certain chemicals, etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Two properties of this SAME fabric. Original model: Nylon: strong; elastic; lightweight; easy care; soft, etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "identification",
+                            "kind": "criterion",
+                            "verbatim": "fibre identification test",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Identification of this SAME fibre. Original model: Nylon: burns with difficulty smells like plastic or celery; drips leaving a hard beige grey beard, etc."
+                      }
+                ]
+          },
+          {
+                "id": "fabric-1",
+                "label": "Polyester",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Polyester",
+                            "marks": 2
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three production points about this SAME fibre. Original applicable model/group guidance: Nylon, polyester, acrylic are made entirely from chemicals; nylon fibres come from coal or oil which has been mixed with air, water and certain chemicals, etc. No separate detailed manufacturing model is printed for this individual fibre.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Two properties of this SAME fabric. Original model: Polyester: strong; resistant to stretching and shrinking; quick drying; wrinkle resistant; washes easily, etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "identification",
+                            "kind": "criterion",
+                            "verbatim": "fibre identification test",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Identification of this SAME fibre. Original model: Polyester: melts and burns; smoke is thick and black; sweet smell; residue is hard with a small brown beard; under microscope – fibres are circular and uniform, etc."
+                      }
+                ]
+          },
+          {
+                "id": "fabric-2",
+                "label": "Acrylic",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Acrylic",
+                            "marks": 2
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three production points about this SAME fibre. Original applicable model/group guidance: Nylon, polyester, acrylic are made entirely from chemicals; nylon fibres come from coal or oil which has been mixed with air, water and certain chemicals, etc. No separate detailed manufacturing model is printed for this individual fibre.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Two properties of this SAME fabric. Original model: Acrylic: light weight, soft, warm, stretchy quick drying time, etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "identification",
+                            "kind": "criterion",
+                            "verbatim": "fibre identification test",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Identification of this SAME fibre. Original model: Acrylic: burns with a sharp, pungent, unpleasant odour; hard black residue, etc."
+                      }
+                ]
+          },
+          {
+                "id": "fabric-3",
+                "label": "Viscose/Rayon",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Viscose/Rayon",
+                            "marks": 2
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three production points about this SAME fibre. Original applicable model/group guidance: viscous, acetate, rayon, come from nature, but chemicals are added to get certain properties; viscose and rayon comes from spruce trees; the wood chips are mixed with chemicals and spun to make fibres, etc. No separate detailed manufacturing model is printed for this individual fibre.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Two properties of this SAME fabric. Original model: Viscose/Rayon: soft, smooth, absorbent; slow to dry; dyes well; creases; soft; drapes well, etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "identification",
+                            "kind": "criterion",
+                            "verbatim": "fibre identification test",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Identification of this SAME fibre. Original model: Viscose: after removal from flame it continues to burn (afterglow), the resulting ash is grey, feathery, smooth edge, and odour is of burning paper, etc."
+                      }
+                ]
+          },
+          {
+                "id": "fabric-4",
+                "label": "Acetate",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Acetate",
+                            "marks": 2
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three production points about this SAME fibre. Original applicable model/group guidance: viscous, acetate, rayon, come from nature, but chemicals are added to get certain properties; viscose and rayon comes from spruce trees; the wood chips are mixed with chemicals and spun to make fibres, etc. No separate detailed manufacturing model is printed for this individual fibre.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Two properties of this SAME fabric. Original model: Acetate: relatively weak, moderately absorbent, dyes well; resists stretching; accumulates static electricity, etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "identification",
+                            "kind": "criterion",
+                            "verbatim": "fibre identification test",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Identification of this SAME fibre. Original model: Acetate: melts and burns; after removal from flame it continues to burn and melt, the resulting ash is brittle, black, hard bead; acrid odour, etc."
+                      }
+                ]
+          },
+          {
+                "id": "another-fabric",
+                "label": "Another manufactured fabric",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "ONE fabric made from manufactured fibres."
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three matching production points. The scheme models nylon and gives synthetic/regenerated group guidance; no additional individual model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4
+                            ],
+                            "contextNote": "Two matching properties. No model for another fabric is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "identification",
+                            "kind": "criterion",
+                            "verbatim": "fibre identification test",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Identification of the SAME fibre. No model for another fabric is printed."
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q2ci", topicId: "home-economics-3-8", conceptId: "sc-q2ci",
+    section: "C", questionRef: "2013 HL Section C E2 Q2(c)(i)",
+    stem: "The contribution that the fashion industry makes to the economy is often undervalued.",
+    questionText: "Suggest how the Irish fashion industry can be promoted in order to give it wider recognition.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 3"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "promoted", marks: 6, contextNote: "Complete original source guidance: Support for Council for Irish Fashion Designers; support from Enterprise Boards; shops promoting Irish design e.g. Kilkenny design; blogs; fashion weeks; designers producing a range of clothes for high street shops e.g. Louise Kennedy for Brown Thomas, Paul Costello for Dunnes, John Rocha, Ben de Lisi for Debenhams; designers showcase at international fashion shows, etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q2cii", topicId: "home-economics-3-8", conceptId: "sc-q2cii",
+    section: "C", questionRef: "2013 HL Section C E2 Q2(c)(ii)",
+    stem: "The contribution that the fashion industry makes to the economy is often undervalued.",
+    questionText: "Discuss, giving examples, the reasons for the growing popularity of textile craft work.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "textile craft work", marks: 9, contextNote: "Complete original source guidance: Method of socialising; learning new/traditional skills; social influence e.g. film stars knitting on set; knitting/stitching clubs; save money; more free time; start-up business; desire for originality in clothing; up-cycled fashion; recession busting ideas; free workshops available at events like Bloom; knitting and stitching show, etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q3ai", topicId: "home-economics-3-9", conceptId: "sc-q3ai",
+    section: "C", questionRef: "2013 HL Section C E3 Q3(a)(i)",
+    stem: "In an age of austerity, high unemployment and street protests that focus on the harsh economic realities of the present day, there’s a sense that the world of secure employment and jobs with good benefits are a thing of the past.",
+    questionText: "Differentiate between paid work and unpaid work.",
+    tariffModel: {"kind":"fixed","notation":"Paid work5 + unpaid work5"}, totalMarks: 10,
+    rows: [
+    { id: "type-1", kind: "criterion", verbatim: "Paid work", marks: 5, contextNote: "Paid work: financial gain - wage / salary from working usually in a designated place; may be permanent, temporary, full-time, part-time or contract-based; self-employed or employed by another person; a wide range of skills required ranging from manual to managerial position; provides security in the form of pensions, PRSI, holiday and sick pay, etc.", permittedMarks: [0,5] },
+    { id: "type-2", kind: "criterion", verbatim: "Unpaid work", marks: 5, contextNote: "Unpaid work : no financial reward for work; domestic housework i.e. child – rearing, caring for elderly/disabled, general tasks e.g. cooking, cleaning etc.; DIY home related activities, etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q3aii", topicId: "home-economics-3-9", conceptId: "sc-q3aii",
+    section: "C", questionRef: "2013 HL Section C E3 Q3(a)(ii)",
+    stem: "In an age of austerity, high unemployment and street protests that focus on the harsh economic realities of the present day, there’s a sense that the world of secure employment and jobs with good benefits are a thing of the past.",
+    questionText: "Discuss the impact of social, economic and technological change on patterns of work and work availability in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"Social5/economic5/technological5 + two others5"}, totalMarks: 25,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Social", marks: 5, contextNote: "Social: Increased educational requirements for obtaining employment - difficult for early school leavers to acquire work; more flexibility in working hours – leads to increased participation of women in the workforce; greater participation of women in the workforce, etc.", permittedMarks: [0,5] },
+    { id: "heading-2", kind: "criterion", verbatim: "Economic", marks: 5, contextNote: "Economic: Better working conditions – improved pay and working from home; many women returning to the workforce due to economic downturn; decline in primary and secondary industries & increase in service industries – loss of jobs in manufacturing, companies relocating to Eastern countries, etc.", permittedMarks: [0,5] },
+    { id: "heading-3", kind: "criterion", verbatim: "Technological", marks: 5, contextNote: "Technological: developments in industry – automation and increased output has lead to reduction in working hours, work taken over by machines therefore job losses, electronic communication therefore less social interaction; decline in primary and secondary industries & increase in service industries – loss of jobs in manufacturing, companies relocating to Eastern countries, etc.", permittedMarks: [0,5] },
+    { id: "other", kind: "criterion", verbatim: "2 others", marks: 10, contextNote: "Two ADDITIONAL points across the three required headings; no extra per-heading quota. Source: Social: Increased educational requirements for obtaining employment - difficult for early school leavers to acquire work; more flexibility in working hours – leads to increased participation of women in the workforce; greater participation of women in the workforce, etc. Economic: Better working conditions – improved pay and working from home; many women returning to the workforce due to economic downturn; decline in primary and secondary industries & increase in service industries – loss of jobs in manufacturing, companies relocating to Eastern countries, etc. Technological: developments in industry – automation and increased output has lead to reduction in working hours, work taken over by machines therefore job losses, electronic communication therefore less social interaction; decline in primary and secondary industries & increase in service industries – loss of jobs in manufacturing, companies relocating to Eastern countries, etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q3aiii", topicId: "home-economics-3-9", conceptId: "sc-q3aiii",
+    section: "C", questionRef: "2013 HL Section C E3 Q3(a)(iii)",
+    stem: "In an age of austerity, high unemployment and street protests that focus on the harsh economic realities of the present day, there’s a sense that the world of secure employment and jobs with good benefits are a thing of the past.",
+    questionText: "Identify and elaborate on the factors that affect an individual’s attitude to work.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "attitude to work", marks: 15, contextNote: "Complete original source guidance: Social group: children from higher socio-economic group tend to have higher educational aspirations and long-term goals; they are encouraged and therefore more likely to attain work in desired area; children from lower socio-economic group tend to have fewer educational opportunities and are often less qualified; they may attain employment in low-status positions, with little chance of advancement and little job satisfaction, etc. Education: higher socio-economic group have better qualifications and higher career expectations, they have a more positive experience of work and remain in employment for longer; early school leavers find it difficult to find well paid long term employment, etc. Extrinsic satisfaction: based on bonuses associated with work rather than the job itself; repetitive uninteresting work e.g. assembly line – may fail to stimulate so the wage alone may become the focus for satisfaction; satisfaction is derived from spending the money on luxury goods and/or socialising, etc. Intrinsic satisfaction: work gives sense of fulfilment, pleasure and scope for creativity; pride in work; develops self-esteem, confidence, independence; confers status and respect; satisfies psychological and social needs, etc. Work ethic: attitude to work including absenteeism, punctuality, commitment to work and respect for authority, etc. Personal identity: some professions confer status in the community and as a result may link to a positive attitude to work, etc. Working conditions: availability of part time work, job sharing, flexitime and working from home make work life balance easier, atmosphere at work, etc. Social contact: influenced by background, experience, peer pressure, etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q3bi", topicId: "home-economics-3-9", conceptId: "sc-q3bi",
+    section: "C", questionRef: "2013 HL Section C E3 Q3(b)(i)",
+    questionText: "Discuss the extent and distribution of poverty in Ireland today.",
+    tariffModel: {"kind":"fixed","notation":"Extent5 + distribution5 + two others5"}, totalMarks: 20,
+    rows: [
+    { id: "extent", kind: "criterion", verbatim: "extent", marks: 5, contextNote: "Extent: the number of people below the poverty line decreased since the 1960’s and 1970’s, during the 1980’s the number of people unemployed increased as there was a recession; the Celtic tiger in the 1990’s meant an increase in employment and a decrease in the number of people living below the poverty line; towards the early/mid 2000’s there was an increase in the number of people living below the poverty line due to the extremely high house prices and the high cost of living; over 20% of Irish households live below poverty line; one in four children live below the poverty line; Ireland has one of the highest poverty rates in Europe including a very high rate of child poverty, etc.", permittedMarks: [0,5] },
+    { id: "distribution", kind: "criterion", verbatim: "distribution", marks: 5, contextNote: "Distribution: groups at risk – women over 65, households where the head of the household is working in the home, elderly, disabled, unemployed, low paid workers, lone parents, members of the travelling community, ethnic minorities; cycle of deprivation in families; etc.", permittedMarks: [0,5] },
+    { id: "other", kind: "criterion", verbatim: "2 others", marks: 10, contextNote: "Two ADDITIONAL points across either required heading. Historical 2013 source: Extent: the number of people below the poverty line decreased since the 1960’s and 1970’s, during the 1980’s the number of people unemployed increased as there was a recession; the Celtic tiger in the 1990’s meant an increase in employment and a decrease in the number of people living below the poverty line; towards the early/mid 2000’s there was an increase in the number of people living below the poverty line due to the extremely high house prices and the high cost of living; over 20% of Irish households live below poverty line; one in four children live below the poverty line; Ireland has one of the highest poverty rates in Europe including a very high rate of child poverty, etc. Distribution: groups at risk – women over 65, households where the head of the household is working in the home, elderly, disabled, unemployed, low paid workers, lone parents, members of the travelling community, ethnic minorities; cycle of deprivation in families; etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q3bii", topicId: "home-economics-3-9", conceptId: "sc-q3bii",
+    section: "C", questionRef: "2013 HL Section C E3 Q3(b)(ii)",
+    questionText: "Name and set out details of one statutory response to eliminating poverty in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"Visible source: name5 + one detail5"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 5, contextNote: "Name ONE statutory response. The printed marking scheme awards 5 marks for the name. Complete original examples: Social welfare assistance and benefits: rent allowance, family income supplement, supplementary welfare allowance, back to work allowance; child benefit, etc. Schemes to reduce expenditure for low income families: back to school clothing and footwear allowance; free electricity & TV licence; medical card; exemption from examination fees; fuel allowance scheme; mortgage allowance scheme, etc. Local Community Development Programmes: that promote awareness of statutory, voluntary and community service and increase people’s work readiness and employment prospects; NAPS/ social inclusion strategy -minimum social welfare rate, policy on pre - school education for those in DEIS school; National minimum wage; one year paid pre- school education for all, etc. SOLAS: up skilling those unemployed, CV training and access to job opportunities, etc. MABS: free confidential budgeting advice service etc. Social Inclusion Division; RAPID (Revitalising Areas by Planning, Investment and Development) planning and investment co- ordination in local areas, etc. The PEACE Programme: funded by the European Social fund set up to prevent and fight unemployment - they have initiatives relating to upskilling of workers supports for marginalised groups in the workforce, etc.", permittedMarks: [0,5] },
+    { id: "details", kind: "criterion", verbatim: "details", marks: 5, contextNote: "One detail point for the SAME response. The printed marking scheme awards 5 marks for one matching detail. Original guidance: Social welfare assistance and benefits: rent allowance, family income supplement, supplementary welfare allowance, back to work allowance; child benefit, etc. Schemes to reduce expenditure for low income families: back to school clothing and footwear allowance; free electricity & TV licence; medical card; exemption from examination fees; fuel allowance scheme; mortgage allowance scheme, etc. Local Community Development Programmes: that promote awareness of statutory, voluntary and community service and increase people’s work readiness and employment prospects; NAPS/ social inclusion strategy -minimum social welfare rate, policy on pre - school education for those in DEIS school; National minimum wage; one year paid pre- school education for all, etc. SOLAS: up skilling those unemployed, CV training and access to job opportunities, etc. MABS: free confidential budgeting advice service etc. Social Inclusion Division; RAPID (Revitalising Areas by Planning, Investment and Development) planning and investment co- ordination in local areas, etc. The PEACE Programme: funded by the European Social fund set up to prevent and fight unemployment - they have initiatives relating to upskilling of workers supports for marginalised groups in the workforce, etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2013 Higher Level — © State Examinations Commission.",
+    id: "he-2013-hl-sc-q3c", topicId: "home-economics-3-10", conceptId: "sc-q3c",
+    section: "C", questionRef: "2013 HL Section C E3 Q3(c)",
+    stem: "In relation to primary schools there has been much discussion about the inherited pattern of denominational school patronage and the rights of citizens in a more culturally and religiously diverse contemporary Irish society. (The Forum on Patronage and Pluralism in the Primary Sector, Report of the Forum’s Advisory group 2012)",
+    questionText: "Discuss primary level education in Ireland. Refer to: • choice / types of primary school • curriculum offered • educational supports / resources • provision for pupils with special needs.",
+    tariffModel: {"kind":"fixed","notation":"Required headings9 + 9 + 6 + 6"}, totalMarks: 30,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Choice / Types", marks: 9, contextNote: "Choice / Types: state funded primary schools, special schools and private primary schools; State funded includes religious schools/ denominational – patronage is a single religious community; non-denominational schools, Educate together; inter-denominational – patronage or trusteeship of more than one religious faith community; multi-denominational schools and gaelscoileanna (Irish medium schools); run by Board of Management, etc., state pays the bulk of the building and running costs of state funded primary schools, but a local contribution is made towards their running costs; teachers’ salaries paid by the DES, etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "Curriculum offered", marks: 9, contextNote: "Curriculum offered: aims to enable children to meet with self confidence and assurance, the demands of life both now and in the future; provides a broad learning experience and encourages a rich variety of approaches to teaching and learning that cater for the different needs of individual children; curriculum designed to nurture the child in all dimensions of his or her life – spiritual, moral, cognitive, emotional, imaginative, aesthetic, social and physical; curriculum divided into key areas Language (Irish & English), Mathematics, Social, Environment and Scientific Education, ICT, Arts including visual arts, Music and Drama, Physical Education, Social, Personal and Health Education and Religious Education; delivered over eight years; learner centred; emphasis on literacy, numeracy and language; responds to changing needs in science and technology, social personal and health education and citizenship, etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "Educational supports / resources", marks: 6, contextNote: "Educational supports / resources: psychologists; counsellors; back to school allowance; IT rooms; interactive white boards; web sites and on-line resources for teachers and parents; discussion forums for parents; download educational apps, cúntóirí teanga, gaeltacht schools have a smaller pupil teacher ratio, etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "heading-4", kind: "criterion", verbatim: "Provision for special needs", marks: 6, contextNote: "Provision for special needs: special schools, special classes in schools e.g. autism unit; resource teachers; special needs assistants (SNA); lower pupil teacher ratio in special schools; laptops, gross motor and fine motor exercise routines; ramps etc to improve access, etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];
