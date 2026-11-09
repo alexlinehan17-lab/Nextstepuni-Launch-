@@ -878,5 +878,213 @@
         0.37
       ]
     }
+  },
+  "ja-2023-hl-1a-8": {
+    "src": "/exam-figures/japanese/ja-2023-hl-1a-8.png",
+    "md5": "1ee89fbff89272d0470a6b5727c7f3b4",
+    "alt": "Complete the table:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 3,
+      "region": [
+        0.065,
+        0.725,
+        0.95,
+        0.938
+      ]
+    }
+  },
+  "ja-2023-hl-2a-1": {
+    "src": "/exam-figures/japanese/ja-2023-hl-2a-1.png",
+    "md5": "f29a94160d660b38fa5dfc7b4e795195",
+    "alt": "Complete the following table in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.065,
+        0.03,
+        0.95,
+        0.205
+      ]
+    }
+  },
+  "ja-2023-hl-2b-1": {
+    "src": "/exam-figures/japanese/ja-2023-hl-2b-1.png",
+    "md5": "243b6275128f2c2a466cb6e0e9ae343b",
+    "alt": "Write the meaning of any FIVE of following Kanji as they appear in the text in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.055,
+        0.025,
+        0.97,
+        0.49
+      ]
+    }
+  },
+  "ja-2023-hl-2b-2": {
+    "src": "/exam-figures/japanese/ja-2023-hl-2b-2.png",
+    "md5": "e7c6e1078026233a5db0ddf802f9bb24",
+    "alt": "Write the reading of any FIVE of following Kanji as they appear in the text in Hiragana.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.055,
+        0.505,
+        0.97,
+        0.935
+      ]
+    }
+  },
+  "ja-2023-hl-2c-1": {
+    "src": "/exam-figures/japanese/ja-2023-hl-2c-1.png",
+    "md5": "dc127f7b94b16363e8cbe1547ecbaa1a",
+    "alt": "Write the following in the negative form as in the example. Answer any FIVE.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.055,
+        0.025,
+        0.97,
+        0.46
+      ]
+    }
+  },
+  "ja-2023-hl-2c-2": {
+    "src": "/exam-figures/japanese/ja-2023-hl-2c-2.png",
+    "md5": "ccd69bf3f8eb295ac0ef1c54c547d8ad",
+    "alt": "Write the correct form of each verb.  Answer any FIVE.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.055,
+        0.46,
+        0.97,
+        0.905
+      ]
+    }
+  },
+  "ja-2023-hl-3c": {
+    "src": "/exam-figures/japanese/ja-2023-hl-3c.png",
+    "md5": "f00c1b8442f0fe6ec71fa4a9438ca634",
+    "alt": "Circle the correct reading for ANY FIVE of the following Kanji and write the meaning in English as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.045,
+        0.035,
+        0.98,
+        0.47
+      ]
+    }
+  },
+  "ja-2023-hl-3d": {
+    "src": "/exam-figures/japanese/ja-2023-hl-3d.png",
+    "md5": "5e4acf4ddb77dfc3e6a5ccd49499674d",
+    "alt": "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.045,
+        0.48,
+        0.98,
+        0.91
+      ]
+    }
+  },
+  "ja-2023-hl-4": {
+    "src": "/exam-figures/japanese/ja-2023-hl-4.png",
+    "md5": "ecaea8416e5143de031f7a98e2a29350",
+    "alt": "Write about (a), (b) OR (c) in no less than 200 Japanese characters.\n(a) You are preparing a speech for a Japanese guest visiting your school. Write the speech including answers to the following prompts.\n(i) 学校について\n(ii) 6 年生について\nOR\n(b) Write an email to your Japanese friend about your part-time job. Include answers to the following questions.\n(i) どんなアルバイトですか。\n(ii) アルバイトはどうですか。\nOR\n(c) You went to a festival last week. Write a diary entry including answers to the following questions.\n(i) お祭（まつ）りはどこでしたか。\n(ii) お祭（まつ）りはどうでしたか。",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 14,
+      "region": [
+        0.045,
+        0.015,
+        0.97,
+        0.92
+      ]
+    }
+  },
+  "ja-2023-hl-5": {
+    "src": "/exam-figures/japanese/ja-2023-hl-5.png",
+    "md5": "2c202f35b9df1fbacb7588fc7457da30",
+    "alt": "You have just come back from a school trip to Japan. Write an article for the school on Memories of your Japanese Trip (日本旅行（りょこう）の思い出) in no less than 320 Japanese characters covering ANY 4 of the following headings.\n1. 日本旅行（りょこう）のスケジュール Sceideal an turais chun na Seapáine / Japan trip\nschedule\n2. 日本の天気 An aimsir sa tSeapáin / The weather in Japan\n3. 日本の食べ物 An bia Seapánach / Japanese food\n4. 日本文化（ぶんか）のけいけん Eispéiris de chultúr na Seapáine/  Experiences of\nJapanese culture\n5．泊（と）まったところ An áit ar fhan tú / Where you stayed\n6．買った物 Rudaí a cheannaigh tú / Things you bought\n7. 一番（ばん）よかったこと An rud ab fhearr / The best thing\n8.   一番（ばん）大変（へん）だったこと An rud ba dheacra / The hardest thing",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 16,
+      "region": [
+        0.045,
+        0.015,
+        0.97,
+        0.92
+      ]
+    }
+  },
+  "ja-2023-hl-lb-1-v": {
+    "src": "/exam-figures/japanese/ja-2023-hl-lb-1-v.png",
+    "md5": "57148e82003d4b0a0d86dcd0181cdf75",
+    "alt": "Sarah’s new phone number is:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 3,
+      "region": [
+        0.51,
+        0.525,
+        0.95,
+        0.592
+      ]
+    }
+  },
+  "ja-2023-hl-lb-2-ii": {
+    "src": "/exam-figures/japanese/ja-2023-hl-lb-2-ii.png",
+    "md5": "a24fcf5342589196e337d155a5e72e8c",
+    "alt": "Complete the chart below. For whom Present(s) Totoro cap & t-shirt Host Family Book & a puzzle",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 3,
+      "region": [
+        0.51,
+        0.69,
+        0.95,
+        0.86
+      ]
+    }
+  },
+  "ja-2023-hl-lc-1-i": {
+    "src": "/exam-figures/japanese/ja-2023-hl-lc-1-i.png",
+    "md5": "03473dc3abfe749486d151df9a4754a8",
+    "alt": "Rank Dream job of Dream job of high primary school school students in students in Matsue Matsue 1 YouTuber 2 Teacher 3",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 4,
+      "region": [
+        0.5,
+        0.14,
+        0.97,
+        0.342
+      ]
+    }
   }
 }

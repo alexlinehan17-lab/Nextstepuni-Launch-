@@ -65,7 +65,7 @@ for (const name of readdirSync(reviewsDir).filter(name => /^japanese-\d{4}-(?:hl
       if (![0, 0.5].includes(rule.otherLanguageMultiplier) || !sourceBound
         || !rule.schemePages.every(page => evidence.generalSchemePages?.includes(page))
         || (rule.penalizedLanguage !== undefined && (!['English', 'Japanese'].includes(rule.penalizedLanguage)
-          || !rule.sourceText.includes(`answered in ${rule.penalizedLanguage}`)))) {
+          || !['answered', 'marked'].some(verb => rule.sourceText.includes(`${verb} in ${rule.penalizedLanguage}`))))) {
         throw new Error(`${card.id}: answer-language rule is not bound to its reviewed scheme selector`);
       }
     }

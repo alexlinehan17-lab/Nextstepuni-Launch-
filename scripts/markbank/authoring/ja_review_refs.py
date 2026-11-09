@@ -26,11 +26,13 @@ def reviewed_japanese_refs(directory=None):
                 continue
             section, q, letter, roman = task['key']
             assert task['component'] == 'aural' and re.fullmatch(r'L[A-D]', section)
-            assert isinstance(q, int) and q > 0
+            assert q is None or (isinstance(q, int) and q > 0)
             assert re.fullmatch(r'[a-z]', letter) and re.fullmatch(r'(?:i|ii|iii|iv|v|vi|vii|viii|ix|x)', roman)
-            literal = f"{census['year']} {census['level'].upper()} Section {section} Q{q}({roman})({letter})"
+            question = f' Q{q}' if q is not None else ''
+            literal = f"{census['year']} {census['level'].upper()} Section {section}{question}({roman})({letter})"
             assert task['paperRef'] == literal, (path, task)
-            cid = f"ja-{census['year']}-{census['level']}-{section.lower()}-{q}-{letter}-{roman}"
+            question_id = f'-{q}' if q is not None else ''
+            cid = f"ja-{census['year']}-{census['level']}-{section.lower()}{question_id}-{letter}-{roman}"
             matches = [card for card in review['cards'] if card['id'] == cid]
             assert len(matches) == 1 and matches[0]['questionRef'] == literal, cid
             assert matches[0]['sourceEvidence']['paperPages'] == task['paperPages'], cid
