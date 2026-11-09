@@ -1148,5 +1148,82 @@
     "attribution": "SEC Home Economics 2017 Higher Level marking scheme, page 6 — © State Examinations Commission.",
     "sourceNote": "Original PDF crop, bounds [67.92005157470703, 277.7319641113281, 545.0640258789062, 295.2120361328125], rendered at 2.5×. SHA256 ea8062ed96dddc516c1e96349eda4dbc6fda4ecc843e92775527f5b27db90726.",
     "solution": true
+  },
+  "home-economics-2017-ol-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sa-q1.png",
+    "md5": "384bf3198bf7819e701b593d0af94acb",
+    "alt": "Original lipid true/false question with all three statements and blank True/False columns.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 144.5396728515625, 570.219970703125, 291.625468860973], rendered at 2.5×. SHA256 cb9f24781160c751845910fa25b534b35520bd81dc743c59261377f0bc1f8a48."
+  },
+  "home-economics-2017-ol-sa-q3": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sa-q3.png",
+    "md5": "4d2a0b78b13e4c78a593e303a35e7224",
+    "alt": "Original protein table with Eggs, Peas and Fish and blank High Biological Value/Low Biological Value columns.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 474.119873046875, 570.219970703125, 639.5654518821023], rendered at 2.5×. SHA256 a061fb2c6aedd08a4d601213a106518405988dac146c8b9d085363ee95dc0391."
+  },
+  "home-economics-2017-ol-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sa-q6.png",
+    "md5": "64ba34b8697fca8d42b606e01c9e527a",
+    "alt": "Original cooking-method table with Grilling, Steaming and Roasting and both blank example columns.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 399.8397521972656, 570.219970703125, 561.625468860973], rendered at 2.5×. SHA256 beddc77b1aaa65a80035eba8687787343a2a0672d2c404824f8f1253e7b131b3."
+  },
+  "home-economics-2017-ol-sa-q7": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sa-q7.png",
+    "md5": "f674e2b076acb0c08b336b5316c07a93",
+    "alt": "Complete original cereal cloze, with all three blank sentences and the bran, endosperm, staple word bank.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 597.5997314453125, 570.219970703125, 793.6446533203125], rendered at 2.5×. SHA256 c72b1f7bc763a65f8689fc1753216c89214da44136d74ed7294661c06c05c2a1."
+  },
+  "home-economics-2017-ol-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sa-q8.png",
+    "md5": "6033d5fb28402cdfaa2d3c541dbdb6da",
+    "alt": "Original food-additives true/false question with all three statements and blank True/False columns.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 41.939697265625, 570.219970703125, 233.54545177112925], rendered at 2.5×. SHA256 e856afe00b0d9bcdad340cd9255c0600b63fcf13e1867b94f8db751943161640."
+  },
+  "home-economics-2017-ol-sa-q11": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sa-q11.png",
+    "md5": "85e0851cfd63558204d8ebd69787a697",
+    "alt": "Complete original historical refrigerator energy label, including A–G bands, rating A, annual 325 kWh, storage volumes, noise field and attribution, with the original question and answer space.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 41.939697265625, 570.219970703125, 472.13970947265625], rendered at 2.5×. SHA256 b81b69a254a128a5158a5b4ca814ac20f5c5208a8c2117e45c82436dcac2d753."
+  },
+  "home-economics-2017-ol-sa-q12": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sa-q12.png",
+    "md5": "c2e4c2ac2ca4fe13a3f82bd16965b8c1",
+    "alt": "Original pollution table with Air pollution, Water pollution and Noise pollution and all blank example fields.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 472.13970947265625, 570.219970703125, 652.5500068664551], rendered at 2.5×. SHA256 c21268d6bbe7c69168f894e4970a97dee1a4aa6a62644c644ec66c5349ae2cce."
+  },
+  "home-economics-2017-ol-sb-q1-chart": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sb-q1-chart.png",
+    "md5": "9c44dd9f365a321b6e194ffbf530016c",
+    "alt": "Complete original fruit-and-vegetable consumption chart: all three age groups 15–34, 35–54 and 55+, both men/women bars, full legend, percent axis and title.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [83.81999969482422, 156.6000213623047, 525.7799682617188, 410.8800048828125], rendered at 2.5×. SHA256 3fa3ac4d926764731390312921e3700bb783aac38dd379653e91ed1fa6aa5f7c."
+  },
+  "home-economics-2017-ol-sb-q2-menu": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sb-q2-menu.png",
+    "md5": "3f8687af86123d58fa903168cc2c217d",
+    "alt": "Complete original Paul and Lisa school-day menu: breakfast, morning break, lunch and dinner, retaining every food and drink.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [164.43999481201172, 99.37749735514323, 445.2433386908637, 319.55454323508525], rendered at 2.5×. SHA256 3d7c8f196858ab8b8bc394c9dffa16f9ad1f4cf0fcdf037ce2409e053264fe3f."
+  },
+  "home-economics-2017-ol-sc-q1-housing": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sc-q1-housing.png",
+    "md5": "9addac56896fbcbf4d7ed7493ed9a7f8",
+    "alt": "All three original housing-style images in full, with their original source attributions.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [82.58000183105469, 180.1199951171875, 500.8000183105469, 294.5697021484375], rendered at 2.5×. SHA256 141f783be3a57a31b9502d87c5b11e8d1508cad5694f3790d74d8e4ba4b23a39."
+  },
+  "home-economics-2017-ol-sc-q2-outfits": {
+    "src": "/exam-figures/home-economics/home-economics-2017-ol-sc-q2-outfits.png",
+    "md5": "2f2393e2374b8aebe72b26bbef04f16b",
+    "alt": "Both original Debs outfits, suit and dress, shown completely with both original source attributions.",
+    "attribution": "SEC Home Economics 2017 Ordinary Level examination paper, page 10 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [140.77999877929688, 122.21998596191406, 456.82000732421875, 350.7746887207031], rendered at 2.5×. SHA256 9bd6349f0d235ec3b12f26700d6b76dfafe2f4fedc87a5fd94e90c7364765bff."
   }
 }

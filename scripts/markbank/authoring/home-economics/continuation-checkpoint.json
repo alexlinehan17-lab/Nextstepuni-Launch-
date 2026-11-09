@@ -10,12 +10,12 @@
   "currentCounts": {
     "subject": "home-economics",
     "mode": "sections",
-    "cards": 1591,
-    "leaves": 1784,
-    "covered": 1540,
+    "cards": 1643,
+    "leaves": 1821,
+    "covered": 1592,
     "excluded": 0,
-    "open": 244,
-    "coveragePct": 86.3,
+    "open": 229,
+    "coveragePct": 87.4,
     "orphans": [],
     "unparsed": [],
     "staleExclusions": [],
@@ -159,26 +159,10 @@
         "year": 2017,
         "level": "ol",
         "paper": null,
-        "leaves": 15,
-        "covered": 0,
+        "leaves": 52,
+        "covered": 52,
         "excluded": 0,
-        "open": [
-          "Section A Q1",
-          "Section A Q11",
-          "Section A Q12(a)(i)",
-          "Section A Q12(a)(ii)",
-          "Section A Q12(b)(i)",
-          "Section A Q12(b)(ii)",
-          "Section A Q12(c)(i)",
-          "Section A Q12(c)(ii)",
-          "Section A Q12(c)(iii)",
-          "Section A Q12(d)",
-          "Section A Q2",
-          "Section A Q4",
-          "Section A Q7",
-          "Section A Q8",
-          "Section A Q9"
-        ]
+        "open": []
       },
       {
         "year": 2018,
@@ -596,17 +580,17 @@
         "open": []
       }
     ],
-    "censusFlags": 19,
+    "censusFlags": 18,
     "unreadPapers": []
   },
   "nextActions": [
-    "2010–2016 Higher/Ordinary and 2017 Higher original-source reviews complete. Independently sweep 2017 Ordinary next, then remaining 2018–2020 both levels and remaining published deferred.",
+    "2010–2017 Higher/Ordinary original-source reviews complete. 2018 Higher independent 52-page sweep and 49-task manual ledger already saved; author next, then remaining 2018 Ordinary and 2019–2020 both levels and remaining published deferred.",
     "2023 Higher/Ordinary English main source reviews complete: 59/60 tasks. 2023 Higher deferred source review complete: 58 tasks, 749 offered practice marks, all mapped to Atlas. Browser QA pending.",
     "2022 Higher deferred source review complete: all 61 tasks (749 offered practice marks), 23 Atlas question groups, all 79 source pages independently swept. Browser QA pending.",
     "Live SEC inventory: English Home Economics deferred publications found for 2022/2023 Higher only; no subject listing for 2024/2025, and no 2026 deferred year offered. Absence is a publication finding, not proof no exam was sat.",
     "Preserve prior card identities and progress, reconcile each verified batch, integrate locally and continue. Browser QA remains pending: browser host unavailable and native Chrome is in active use."
   ],
-  "coveragePolicy": "Raw census is diagnostic only: 244 open candidates and 19 flags do not independently count outstanding tasks. 2017 Higher source-complete after 52-page independent visual sweep: all 48 original leaves and 48 priced tasks. Whole subject remains in progress.",
+  "coveragePolicy": "Raw census is diagnostic only: 229 open candidates and 18 flags do not independently count outstanding tasks. 2017 Ordinary complete after independent 44-page sweep, 52 original leaves and 52 priced tasks with explicit merge/split reconciliation. Whole subject remains in progress.",
   "integratedBatches": [
     {
       "workCommit": "14e08691b",
@@ -725,24 +709,24 @@
     }
   ],
   "latestValidatedBatch": {
-    "scope": "2017 Higher main: 48 tasks, nine original figures, 20 preserved Atlas IDs.",
-    "runtimeCards": 1591,
+    "scope": "2017 Ordinary main: 52 tasks, eleven original figures, 20 preserved Atlas IDs.",
+    "runtimeCards": 1643,
     "higher": 877,
-    "ordinary": 714,
-    "sourceReview": "2017-hl-main-review.json",
+    "ordinary": 766,
+    "sourceReview": "2017-ol-main-review.json",
     "validation": {
-      "runtime": "337 required/sitting tests passed: 232 required plus seven each 2010–2016 Higher/Ordinary and 2017 Higher; maxWorkers1.",
-      "mandatoryRawSourceGate": "Explicit 2010–2017 original-PDF hash/key gates passed. 2017 Higher 48 independent original leaves reconcile one-to-one to 48 priced tasks. The original floor plan has a text-layer Bedroom2 glyph; the census ignores this diagram label only in this reviewed sitting, while the full original image retains it. Normal Vitest remains portable without local PDFs/Python.",
-      "atlas": "Two targeted Home Economics gates passed: 71 tagged papers, 880 physical groups, 1008 registry mappings. All 20 original IDs retained. Exact runtime remains 996.",
-      "coverage": "Three narrow Home Economics coverage tests passed. Subject-only baseline remeasured to 1591 cards / 1540 covered of 1784 leaves, 244 open. Ratchet findings empty before and after; all other subject entries unchanged.",
+      "runtime": "344 required/sitting tests passed: 232 required plus seven each 2010–2017 Higher/Ordinary; maxWorkers1.",
+      "mandatoryRawSourceGate": "Explicit 2010–2017 original-PDF hash/key gates passed. Ordinary original leaves A12/B20/C20 = 52 reconcile to priced tasks A12/B19/C21 = 52: B3(a) two roman leaves share one flexible 20-mark task, while C3(a)(i) has separately printed definition 6/types 12 tasks. The independent 44-page sweep and manual ledger preceded parser/card inspection. Normal Vitest remains portable without local PDF/Python dependencies.",
+      "atlas": "Two targeted Home Economics gates passed: 72 tagged papers, 900 physical groups, 1008 registry mappings. All 20 original IDs retained. Exact runtime remains 996.",
+      "coverage": "Three narrow Home Economics coverage tests passed. Subject-only baseline remeasured to 1643 cards / 1592 covered of 1821 leaves, 229 open. Ratchet findings empty before and after; all other subject entries unchanged.",
       "mainTypecheck": "passed",
       "scoped2017TestTypecheck": "passed",
       "productionBuild": "passed; only own reproducible untracked dist removed after success",
-      "cardlint": "clean; 1617 authored records including withdrawals inspected",
-      "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across 32 generated files.",
-      "reconciliation": "2017 HL 48/48 raw leaves covered, 48 priced tasks, zero sitting opens/exclusions/continuity flags. Lane 1591 cards: 877 HL / 714 OL; 1540/1784 raw leaves covered, 244 open, zero orphan/unparsed/excluded, 19 flags.",
-      "preservation": "Every earlier authored card, unrelated deck, other sizes/showcase subjects, full and decoded non-HE Atlas data, unrelated HE tags/runtime/associations and every other HE raw census sitting unchanged. Frozen identity hashes unchanged; 48 additions explicitly pinned.",
-      "browser": "Parent-owned/pending. All nine original crops individually visually inspected. Unequal published tariffs use existing perOptionSteps; no shared scorer changes."
+      "cardlint": "clean; 1669 authored records including withdrawals inspected",
+      "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across 34 generated files.",
+      "reconciliation": "2017 Ordinary 52/52 raw leaves covered, 52 priced tasks, zero sitting opens/exclusions/continuity flags. Lane 1643 cards: 877 Higher / 766 Ordinary; 1592/1821 raw leaves covered, 229 open, zero orphan/unparsed/excluded, 18 flags.",
+      "preservation": "Every earlier authored card and all 714 prior emitted Ordinary card blocks byte-identical. Unrelated decks, other sizes/showcase subjects, full and decoded non-HE Atlas data, unrelated HE tags/runtime/associations and every other HE raw census sitting unchanged. Frozen identity hashes unchanged; 52 additions explicitly pinned.",
+      "browser": "Parent-owned/pending. All eleven original crops individually visually inspected. Published unequal furnishing-reason and preschool-name tariffs preserved with matching guidance; no shared scorer changes."
     }
   },
   "knownExistingValidationIssues": [
