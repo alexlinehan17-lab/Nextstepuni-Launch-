@@ -31715,4 +31715,2997 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sa-q1", topicId: "home-economics-0-8", conceptId: "sa-q1",
+    section: "A", questionRef: "2012 HL Section A Q1",
+    questionText: "Give one main function of sodium in the diet. List two good dietary sources of sodium.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "functions", kind: "point", verbatim: "Maintains fluid balance in body tissue; healthy nerve activity; normal muscle contractions", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "sources-1", kind: "point", verbatim: "(i) salt; processed food; cheese; snack foods", marks: null },
+    { id: "sources-2", kind: "point", verbatim: "(ii) smoked and cured meat and fish; meat products, etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sa-q2", topicId: "home-economics-0-7", conceptId: "sa-q2",
+    section: "A", questionRef: "2012 HL Section A Q2",
+    questionText: "Explain each of the following terms. Low-density lipoproteins (LDL) High-density lipoproteins (HDL)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "ldl", kind: "point", verbatim: "Low-density lipoproteins (LDL) In the blood cholesterol is bound to certain proteins forming lipoproteins. LDL harmful, thought to build up cholesterol in the arteries which causes damage to blood vessels and heart disease.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "hdl", kind: "point", verbatim: "High-density lipoproteins (HDL) Help to remove cholesterol from circulation and reduce risk of heart disease. Counteracts the hardening effect of cholesterol.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sa-q3", topicId: "home-economics-0-11", conceptId: "sa-q3",
+    section: "A", questionRef: "2012 HL Section A Q3",
+    questionText: "Explain the role of emulsifiers in food production.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "explanation", kind: "point", verbatim: "To hold two immiscible liquids together – an emulsifier has a hydrophilic head and a hydrophobic tail. The hydrophilic head attaches itself to the water molecule and the hydrophobic tail attaches itself to the oil molecule thereby preventing the two substances from separating. Examples – lecithin, GMS, alginates. Used in the manufacturing of mayonnaise, ice creams, etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sa-q4", topicId: "home-economics-0-9", conceptId: "sa-q4",
+    section: "A", questionRef: "2012 HL Section A Q4",
+    questionText: "What are speciality foods and give two examples of such foods. Speciality foods Examples",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "meaning", kind: "point", verbatim: "Speciality foods foods produced by small businesses or home enterprises; produced in small quantities; often sold at farmers markets; made using locally sourced ingredients; organic; little or any use of additives; foods manufactured specifically for special diets e.g. coeliac, vegan, diabetic, etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "examples", kind: "point", verbatim: "Examples: chocolate; chutney; honey; preserves; cheese; yogurt; ice cream; home baking, etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sa-q5", topicId: "home-economics-0-5", conceptId: "sa-q5",
+    section: "A", questionRef: "2012 HL Section A Q5",
+    questionText: "Complete the following table in relation to alternative (novel) protein foods.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "food-1", kind: "point", verbatim: "Plant", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Original table: Source — Soya beans; Product — TVP, tofu, soya oil, tempeh, soya products e.g. miso, milk, yogurt, , etc." },
+    { id: "food-2", kind: "point", verbatim: "Micro-organisms", marks: null, contextNote: "Original table: Source — Bacteria, fungi, yeast, algae - Mycoprotein; Product — Quorn products – burgers, mince, etc." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2012-hl-sa-q5",
+          "src": "/exam-figures/home-economics/home-economics-2012-hl-sa-q5.png",
+          "srcHash": "6ed845e5d5e6c7c4161e58a455e823b7",
+          "alt": "Original alternative (novel) protein question table. Plant and Micro-organisms rows, Source and Product columns; all blank input cells retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sa-q6", topicId: "home-economics-0-3", conceptId: "sa-q6",
+    section: "A", questionRef: "2012 HL Section A Q6",
+    questionText: "Name three methods of heat transfer and give one example of a method of cooking that illustrates the use of each.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "method-1", kind: "point", verbatim: "1. Conduction", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Original cooking examples: Boiling, Grilling, Roasting, Baking, Frying, Microwave cooking The original scheme places Microwave cooking under Conduction; this preserves its printed classification." },
+    { id: "method-2", kind: "point", verbatim: "2. Convection", marks: null, contextNote: "Original cooking examples: Boiling, Roasting, Baking, Steaming" },
+    { id: "method-3", kind: "point", verbatim: "3. Radiation", marks: null, contextNote: "Original cooking examples: Grilling" },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2012-hl-sa-q6",
+          "src": "/exam-figures/home-economics/home-economics-2012-hl-sa-q6.png",
+          "srcHash": "efca1e462eb72320d4603997caa1ed2e",
+          "alt": "Original heat-transfer question table. Complete Method of Heat Transfer and Cooking Method columns, three blank rows and the printed paired-response prompt.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sa-q7", topicId: "home-economics-0-11", conceptId: "sa-q7",
+    section: "A", questionRef: "2012 HL Section A Q7",
+    questionText: "Identify three major sectors of the Irish food industry.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "sector-1", kind: "point", verbatim: "(i) dairy", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "sector-2", kind: "point", verbatim: "(ii) beef, lamb, pig, poultry", marks: null },
+    { id: "sector-3", kind: "point", verbatim: "(iii) mariculture, edible horticulture, beverages, prepared consumer foods", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sa-q8", topicId: "home-economics-0-4", conceptId: "sa-q8",
+    section: "A", questionRef: "2012 HL Section A Q8",
+    questionText: "In relation to moulds, identify parts A, B and C as shown on the diagram.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "label-1", kind: "point", verbatim: "A. sporangium", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "label-2", kind: "point", verbatim: "B. hypha /sporangiophore", marks: null },
+    { id: "label-3", kind: "point", verbatim: "C. mycelium", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2012-hl-sa-q8",
+          "src": "/exam-figures/home-economics/home-economics-2012-hl-sa-q8.png",
+          "srcHash": "cb43ce460373d1ded41bbcde42af0249",
+          "alt": "Original mould diagram and question. All labelled A, B and C pointers, intact spore structures and hyphal network retained; blank answer spaces remain.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper, page 4 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sa-q9", topicId: "home-economics-1-2", conceptId: "sa-q9",
+    section: "A", questionRef: "2012 HL Section A Q9",
+    questionText: "Outline the protection provided to the consumer by the Consumer Information Act, 1978. Give two points.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "answer-1", kind: "point", verbatim: "(i) protects consumers against false or misleading claims about goods or services (advertising)", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Historical 2012 source wording is retained for this examination task." },
+    { id: "answer-2", kind: "point", verbatim: "(ii) forbids false or misleading information regarding price, previous price or recommended retail price", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sa-q10", topicId: "home-economics-1-1", conceptId: "sa-q10",
+    section: "A", questionRef: "2012 HL Section A Q10",
+    questionText: "Outline two benefits of private health insurance.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "answer-1", kind: "point", verbatim: "(i) payment of consultants and GP fees; choice of private or semi-private hospital;", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Historical 2012 source wording is retained for this examination task." },
+    { id: "answer-2", kind: "point", verbatim: "(ii) medical treatment abroad; tax relief; stays at convalescent homes; treatment in private out- patient clinics; allows for faster access to treatment; etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sa-q11", topicId: "home-economics-1-2", conceptId: "sa-q11",
+    section: "A", questionRef: "2012 HL Section A Q11",
+    questionText: "In relation to consumer research, differentiate between each of the following two methods: Desk Research Field Research",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "answer-1", kind: "point", verbatim: "(i) Desk Research involves the collection of data from sources such as state agencies, internet, etc; large quantity of information can be collected quickly; relatively inexpensive; information tends to be general and not very detailed (quantitative).", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "answer-2", kind: "point", verbatim: "(ii) Field Research information collected using techniques such as observing, interviews, surveys; information is detailed e.g. study consumer behaviour and attitudes (qualitative).", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sa-q12", topicId: "home-economics-1-3", conceptId: "sa-q12",
+    section: "A", questionRef: "2012 HL Section A Q12",
+    questionText: "Explain energy labelling in relation to household appliances. Name two household appliances which carry an energy label.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "meaning", kind: "point", verbatim: "enables consumers to choose appliances based on their energy efficiency; rated on an A to G scale – A is the most efficient", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Historical 2012 source wording is retained for this examination task." },
+    { id: "appliances-1", kind: "point", verbatim: "(i) refrigerators, freezers", marks: null },
+    { id: "appliances-2", kind: "point", verbatim: "(ii) washing machines, tumble dryers, dish washers, ovens, etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sb-q1a", topicId: "home-economics-0-1", conceptId: "sb-q1a",
+    section: "B", questionRef: "2012 HL Section B Q1(a)",
+    stem: "‘Food-based dietary guidelines’ is the complete scientific term for a set of healthy eating messages provided for a population, in terms of how much and which types of foods to eat for good health. (Food Safety Authority of Ireland, FSAI) New recommendations for food-based guidelines for healthy eating in Ireland were devised by the FSAI. An extract relating to the recommended servings per day for two food groups (bread/cereals and fruit & vegetables) is presented in the table below.",
+    questionText: "In relation to the two food groups referred to in the table, comment and suggest reasons for the variations in the recommendations made.",
+    tariffModel: {"kind":"fixed","notation":"2 references per food group × (analysis 2 + elaboration 4)"}, totalMarks: 24,
+    rows: [
+    { id: "analysis-1", kind: "criterion", verbatim: "simple analysis of table", marks: 2, contextNote: "Bread/Cereals reference 1. Two references to EACH of the two food groups are required, not four to one.", permittedMarks: [0,2] },
+    { id: "elaboration-1", kind: "criterion", verbatim: "elaboration", marks: 4, contextNote: "Elaborate on the SAME analysis. Complete source guidance: Gender – women have different calorie and nutrient needs compared with men - males have a higher daily energy requirement (kcal) than females, etc. Age group – growing children have very different calorie and nutrient needs to adults - young children have lower energy requirements than adults; as people get older physical activity decreases and therefore energy requirements; teenagers and adult males little difference in energy requirements due to rapid growth in teenager years, etc. Children and older people – same number of servings recommended for fruit and vegetables but young adults and adults slightly more, this could be due to appetite/ older people metabolism slows down, etc. Activity – active people have greater calorie and nutrient needs compared with inactive people - sedentary workers have a lower daily energy requirement than active workers, etc. Metabolism – males generally have greater muscle mass and a lower body fat % than females therefore they have a higher BMR; metabolism slows down with age thus older people need to make adjustments to their diet, etc. Difference between the 2 food groups – bread cereals are high energy carbohydrate foods so care needed to balance energy intake with energy output, fruit and vegetable group are high fibre foods and do not affect calorific intake, etc.", permittedMarks: [0,4] },
+    { id: "analysis-2", kind: "criterion", verbatim: "simple analysis of table", marks: 2, contextNote: "Bread/Cereals reference 2. Two references to EACH of the two food groups are required, not four to one.", permittedMarks: [0,2] },
+    { id: "elaboration-2", kind: "criterion", verbatim: "elaboration", marks: 4, contextNote: "Elaborate on the SAME analysis. Complete source guidance: Gender – women have different calorie and nutrient needs compared with men - males have a higher daily energy requirement (kcal) than females, etc. Age group – growing children have very different calorie and nutrient needs to adults - young children have lower energy requirements than adults; as people get older physical activity decreases and therefore energy requirements; teenagers and adult males little difference in energy requirements due to rapid growth in teenager years, etc. Children and older people – same number of servings recommended for fruit and vegetables but young adults and adults slightly more, this could be due to appetite/ older people metabolism slows down, etc. Activity – active people have greater calorie and nutrient needs compared with inactive people - sedentary workers have a lower daily energy requirement than active workers, etc. Metabolism – males generally have greater muscle mass and a lower body fat % than females therefore they have a higher BMR; metabolism slows down with age thus older people need to make adjustments to their diet, etc. Difference between the 2 food groups – bread cereals are high energy carbohydrate foods so care needed to balance energy intake with energy output, fruit and vegetable group are high fibre foods and do not affect calorific intake, etc.", permittedMarks: [0,4] },
+    { id: "analysis-3", kind: "criterion", verbatim: "simple analysis of table", marks: 2, contextNote: "Fruit & Vegetables reference 1. Two references to EACH of the two food groups are required, not four to one.", permittedMarks: [0,2] },
+    { id: "elaboration-3", kind: "criterion", verbatim: "elaboration", marks: 4, contextNote: "Elaborate on the SAME analysis. Complete source guidance: Gender – women have different calorie and nutrient needs compared with men - males have a higher daily energy requirement (kcal) than females, etc. Age group – growing children have very different calorie and nutrient needs to adults - young children have lower energy requirements than adults; as people get older physical activity decreases and therefore energy requirements; teenagers and adult males little difference in energy requirements due to rapid growth in teenager years, etc. Children and older people – same number of servings recommended for fruit and vegetables but young adults and adults slightly more, this could be due to appetite/ older people metabolism slows down, etc. Activity – active people have greater calorie and nutrient needs compared with inactive people - sedentary workers have a lower daily energy requirement than active workers, etc. Metabolism – males generally have greater muscle mass and a lower body fat % than females therefore they have a higher BMR; metabolism slows down with age thus older people need to make adjustments to their diet, etc. Difference between the 2 food groups – bread cereals are high energy carbohydrate foods so care needed to balance energy intake with energy output, fruit and vegetable group are high fibre foods and do not affect calorific intake, etc.", permittedMarks: [0,4] },
+    { id: "analysis-4", kind: "criterion", verbatim: "simple analysis of table", marks: 2, contextNote: "Fruit & Vegetables reference 2. Two references to EACH of the two food groups are required, not four to one.", permittedMarks: [0,2] },
+    { id: "elaboration-4", kind: "criterion", verbatim: "elaboration", marks: 4, contextNote: "Elaborate on the SAME analysis. Complete source guidance: Gender – women have different calorie and nutrient needs compared with men - males have a higher daily energy requirement (kcal) than females, etc. Age group – growing children have very different calorie and nutrient needs to adults - young children have lower energy requirements than adults; as people get older physical activity decreases and therefore energy requirements; teenagers and adult males little difference in energy requirements due to rapid growth in teenager years, etc. Children and older people – same number of servings recommended for fruit and vegetables but young adults and adults slightly more, this could be due to appetite/ older people metabolism slows down, etc. Activity – active people have greater calorie and nutrient needs compared with inactive people - sedentary workers have a lower daily energy requirement than active workers, etc. Metabolism – males generally have greater muscle mass and a lower body fat % than females therefore they have a higher BMR; metabolism slows down with age thus older people need to make adjustments to their diet, etc. Difference between the 2 food groups – bread cereals are high energy carbohydrate foods so care needed to balance energy intake with energy output, fruit and vegetable group are high fibre foods and do not affect calorific intake, etc.", permittedMarks: [0,4] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2012-hl-sb-q1a-point-1","label":"Bread/Cereals reference 1","marks":6,"rowIds":["analysis-1","elaboration-1"]},{"sourceCardId":"he-2012-hl-sb-q1a-point-2","label":"Bread/Cereals reference 2","marks":6,"rowIds":["analysis-2","elaboration-2"]},{"sourceCardId":"he-2012-hl-sb-q1a-point-3","label":"Fruit & Vegetables reference 1","marks":6,"rowIds":["analysis-3","elaboration-3"]},{"sourceCardId":"he-2012-hl-sb-q1a-point-4","label":"Fruit & Vegetables reference 2","marks":6,"rowIds":["analysis-4","elaboration-4"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2012-hl-sb-q1-servings",
+          "src": "/exam-figures/home-economics/home-economics-2012-hl-sb-q1-servings.png",
+          "srcHash": "2ef4fd77f552e7e5fa47f34ac61cff41",
+          "alt": "Original daily food-group servings table. Age groups 5–13, 14–18, 19–50 and 51+, each Male/Female. Bread/Cereals moderately active: 3–5/3–4, 5–7/4, 5–7/4–5, 4–5/3–4; sedentary: 3–5/3–4, 4–5/3, 4–6/3–4, 4/3. Fruit & Vegetables: 5/5, 5–6/5, 5–7/5–6, 5/5. All original headings, gender/activity labels and cells retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sb-q1b", topicId: "home-economics-0-6", conceptId: "sb-q1b",
+    section: "B", questionRef: "2012 HL Section B Q1(b)",
+    stem: "‘Food-based dietary guidelines’ is the complete scientific term for a set of healthy eating messages provided for a population, in terms of how much and which types of foods to eat for good health. (Food Safety Authority of Ireland, FSAI) New recommendations for food-based guidelines for healthy eating in Ireland were devised by the FSAI. An extract relating to the recommended servings per day for two food groups (bread/cereals and fruit & vegetables) is presented in the table below.",
+    questionText: "Give an account of carbohydrates and refer to: • the chemical structure of a monosaccharide • the formation of disaccharides • the hydrolysis of sugar to include inversion.",
+    tariffModel: {"kind":"fixed","notation":"Structure 8 + formation 4 × 2 + hydrolysis/inversion 4 × 2"}, totalMarks: 24,
+    rows: [
+    { id: "structure", kind: "criterion", verbatim: "the chemical structure of a monosaccharide", marks: 8, contextNote: "The source gives eight marks for the structure, without per-atom allocations. Original chemical diagrams are retained below. Source: Chemical structure– glucose C6H12O6", permittedMarks: [0,8] },
+    { id: "formation", kind: "criterion", verbatim: "the formation of disaccharides", marks: 8, contextNote: "Complete original diagram and equation are shown below. The printed equation uses H20 while its diagram labels H₂O; both are retained as source material. Source: Formation of disaccharides– formed when 2 monosaccharides join together with the elimination of water; C6H12O6 + C6H12O6 = C12H22O11 + H20 (glucose + glucose = maltose) (glucose + fructose = sucrose) (glucose + galactose = lactose) H2O", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]},{"id":"point-4","verbatim":"Point 4","marks":2,"permittedMarks":[0,2]}] },
+    { id: "hydrolysis", kind: "criterion", verbatim: "the hydrolysis of sugar to include inversion.", marks: 8, contextNote: "disaccharide sugars react with water and enzymes and break down in to their respective monosaccharide units; this happens during digestion; inversion is caused by heating with an acid or by the addition of an enzyme; sucrose breaks down into glucose and fructose this is known as an invert sugar; invert sugar is used when making boiled sweets and jam, etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]},{"id":"point-4","verbatim":"Point 4","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    figure: {
+          "candId": "home-economics-2012-hl-sb-q1b-carbohydrates",
+          "src": "/exam-figures/home-economics/home-economics-2012-hl-sb-q1b-carbohydrates.png",
+          "srcHash": "b227c2cf716216e15fb88c996f4c4e60",
+          "alt": "Original carbohydrate answer models: labelled glucose chemical structure, disaccharide formation equation and ring diagram with water eliminated, plus hydrolysis and inversion explanation. Complete source diagrams, symbols and printed eight-mark allocations retained.",
+          "attribution": "SEC Home Economics 2012 Higher Level marking scheme, page 8 — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "Original PDF crop, bounds [76, 106, 575, 404], rendered at 2.5×. SHA256 7a1049c12390ad17fae20d4d06e774a38b95dd20422517389abc94a441365828.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sb-q1c", topicId: "home-economics-0-1", conceptId: "sb-q1c",
+    section: "B", questionRef: "2012 HL Section B Q1(c)",
+    stem: "‘Food-based dietary guidelines’ is the complete scientific term for a set of healthy eating messages provided for a population, in terms of how much and which types of foods to eat for good health. (Food Safety Authority of Ireland, FSAI) New recommendations for food-based guidelines for healthy eating in Ireland were devised by the FSAI. An extract relating to the recommended servings per day for two food groups (bread/cereals and fruit & vegetables) is presented in the table below.",
+    questionText: "Discuss the importance of balancing energy intake and energy output.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "balancing energy intake and energy output", marks: 12, contextNote: "Distinct points at the published value; no finer partial-credit steps are printed. Complete source guidance: Energy intake should match energy output to maintain a healthy body weight; if kcal intake is greater than energy output, this can lead to weight gain; obesity and other health complications may result. If kcal output is greater than energy intake, this leads to weight loss this may also have an on going adverse effect on the body.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sb-q1d", topicId: "home-economics-1-2", conceptId: "sb-q1d",
+    section: "B", questionRef: "2012 HL Section B Q1(d)",
+    stem: "‘Food-based dietary guidelines’ is the complete scientific term for a set of healthy eating messages provided for a population, in terms of how much and which types of foods to eat for good health. (Food Safety Authority of Ireland, FSAI) New recommendations for food-based guidelines for healthy eating in Ireland were devised by the FSAI. An extract relating to the recommended servings per day for two food groups (bread/cereals and fruit & vegetables) is presented in the table below.",
+    questionText: "Identify and discuss contemporary trends in food shopping practices.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "trends in food shopping practices", marks: 20, contextNote: "Distinct points at the published value; no finer partial-credit steps are printed. Complete source guidance: Late night / 24 hour shopping; specialist shops – ethnic, gourmet foods; shopping in a number of different shops Tesco, Dunnes, Aldi; purchase of organic and free trade goods; choice of cheaper/value/discount brands; on-line shopping; home delivery; one stop shopping – shopping centres – shops, restaurant, crèches; environmentally friendly - choosing products with minimum packaging; less cash transactions – debit and credit cards popular; ready to go foods – vegetable stir fry, fresh fruit salad; purchase of locally produced produce; speciality foods have become popular; purchase of functional foods has become popular; shopping for dietary specific foods such as coeliac or vegetarian; consumer shopping practices are influenced by retail marketing strategies e.g. product placement, aroma of freshly baked bread, etc.", permittedMarks: [0,4,8,12,16,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sb-q2a", topicId: "home-economics-0-9", conceptId: "sb-q2a",
+    section: "B", questionRef: "2012 HL Section B Q2(a)",
+    stem: "‘Almost six in ten people are aware of the “five or more a day message” but on average Irish people claim to be eating only three portions of fruit and vegetables a day.’ (Bord Bia)",
+    questionText: "Discuss the options available to consumers when selecting and purchasing fruit and vegetables.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 3"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "options", marks: 12, contextNote: "Distinct points at the published value; no finer partial-credit steps are printed. Complete source guidance: Wide range of fruit and vegetables available – exotic fruit etc; organic fruit and vegetables; free trade fruit and vegetables; pre-packed or loose; ready prepared / ready to go - vegetable stir fry, fruit salad; available out of season – irradiated; good value, special offers 3 for 2, 3 for €3; fruit and vegetables can be bought fresh, frozen or processed, etc.", permittedMarks: [0,3,6,9,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]},{"id":"point-4","verbatim":"Point 4","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sb-q2b", topicId: "home-economics-0-9", conceptId: "sb-q2b",
+    section: "B", questionRef: "2012 HL Section B Q2(b)",
+    stem: "‘Almost six in ten people are aware of the “five or more a day message” but on average Irish people claim to be eating only three portions of fruit and vegetables a day.’ (Bord Bia)",
+    questionText: "Give details of the nutritional significance and the contribution to the diet of either fruit or vegetables.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "nutritional significance and the contribution to the diet", marks: 20, contextNote: "Distinct points at the published value; no finer partial-credit steps are printed. Complete source guidance: Choose EITHER fruit OR vegetables consistently. Both original source models are included; the historical nutritional statements are retained as marking guidance. Protein – LBV (roots, greens, fruit); pulses a better source of protein; soya beans HBV Fruit has no protein Fat – none except olives and soya beans (polyunsaturated fat) Fruit has no fat except for avocados Carbohydrate – vegetables very good source of fibre especially pulse vegetables; potatoes, root vegetables and pulses high in starch; carrots and onions have small amounts of sugar Fruit contains sugar, starch, cellulose and pectin; sugar is present in all fruit in the forms of glucose, fructose and sucrose; Starch is present in under ripe fruit such as bananas; fibre is present in the cell wall of fruit Vitamins – high in beta carotene (pro –vitamin A), some B group and vitamin C; dark green vegetables and yellow/orange or red vegetables best sources of beta carotene Vitamin C – leafy greens, tomatoes and peppers; potatoes an important source of Vitamin C in the Irish diet; Vitamin B1, B2 and B6 found in pulse vegetables; vitamin B2 and niacin in mushrooms; folate in leafy green vegetables Fruit is a valuable source of vitamin C e.g. blackcurrants and kiwi; yellow, orange and red coloured fruit are good sources of pro-vitamin A Minerals – small quantities of calcium and iron present; root vegetables / leafy greens good source of calcium; iron in dark green vegetables; traces of potassium; zinc and iodine present Small amounts of calcium and iron present in fruit; bananas contain potassium Contribution to diet –HBV Protein for the growth & repair of body cells in adult children or teenage diets; useful in low calorie diets; low cholesterol diets; high fibre diets; wide variety available; economical, versatile – snack food; little loss of nutrients in frozen version; tinned fruit high in sugar unsuited to diabetic diet; antioxidant properties so beneficial in helping to prevent disease, etc.", permittedMarks: [0,4,8,12,16,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sb-q2c", topicId: "home-economics-0-8", conceptId: "sb-q2c",
+    section: "B", questionRef: "2012 HL Section B Q2(c)",
+    stem: "‘Almost six in ten people are aware of the “five or more a day message” but on average Irish people claim to be eating only three portions of fruit and vegetables a day.’ (Bord Bia)",
+    questionText: "Give an account of Vitamin A under each of the following headings: • biological functions • effects of deficiency • properties.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 3 points × 2"}, totalMarks: 18,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "biological functions", marks: 6, contextNote: "e.g. to produce rhodopsin which prevents night blindness; maintain healthy membranes in the eye nose and mouth; healthy skin and hair; regulate growth; helps to prevent coronary heart disease; necessary for metabolism, etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "effects of deficiency", marks: 6, contextNote: "e.g. night blindness; xeropthalmia an eye infection; reduced resistance to infection; dry skin; retarded growth, etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "properties", marks: 6, contextNote: "e.g. fat soluble, insoluble in water, soluble in organic solvents; heat stable; can be destroyed by prolonged high temperatures; can be destroyed by oxygen; it is an anti-oxidant, etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sb-q3a", topicId: "home-economics-0-4", conceptId: "sb-q3a",
+    section: "B", questionRef: "2012 HL Section B Q3(a)",
+    stem: "‘Food safety is a right not a privilege.’ (Safefood, 2007)",
+    questionText: "To ensure that food is safe to eat, discuss the importance of each of the following: • food storage • cooking and reheating procedures • kitchen hygiene.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 2 points × 4"}, totalMarks: 24,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Storage", marks: 8, contextNote: "Storage – check fridge / freezer temperature; store perishable food below 5◦C; store frozen food -18◦C; check mould on vegetables; remove plastic from fruit and vegetables; raw and cooked foods should be kept apart; check best before and use by dates; cool foods before refrigerating / freezing; storage areas should be kept clean and well ventilated, etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "Cooking & reheating", marks: 8, contextNote: "Cooking & reheating – defrost frozen foods completely (in the fridge); cook large joints of meat and poultry thoroughly; use correct time and temperature when cooking; serve foods immediately; keep food hot at temp above 65 ◦C, consume hot food within 1.5 hours; reheat quickly above 100◦C; reheat once only; keep food covered or in sealed containers before reheating; adhere to correct reheating times in the microwave, etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "Kitchen hygiene", marks: 8, contextNote: "Kitchen hygiene – floor, walls and work surfaces should be easy to clean; good lighting system; effective ventilation to reduce condensation and growth of micro-organisms; clean water system to maintain hygiene; no access points for pets; good kitchen hygiene should be in place and adhered to e.g. HACCP, etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sb-q3b", topicId: "home-economics-0-3", conceptId: "sb-q3b",
+    section: "B", questionRef: "2012 HL Section B Q3(b)",
+    stem: "‘Food safety is a right not a privilege.’ (Safefood, 2007)",
+    questionText: "Name one method of home preservation that involves the application of heat and explain the principle involved.",
+    tariffModel: {"kind":"fixed","notation":"Name 4 + principle 3 × 4"}, totalMarks: 16,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Jam/chutney making", marks: 4 },
+    { id: "principle", kind: "criterion", verbatim: "Principle involved", marks: 12, contextNote: "Three principle points for this SAME selected method. Complete source: Jam/chutney making Heat – very high heat is used to soften the fruit and to kill microbes and enzymes. Sugar – a high proportion of sugar is used to help setting and also acts as a preservative. The sugar dissolves in the water of the fruit forming a concentrated solution. Water is then drawn from any microbial cells by osmosis to equalise the solution. This dehydrates the microbial cells causing death. Fruit – good quality, ripe fruit will have a high pectin content which will help setting. Acid – necessary to draw pectin out of the fruit, gives better colour and flavour and helps to prevent crystallisation. Lemons can be added if the fruit does not have a high acid content. Pectin – ripe fruit has pectin if fruit is under or over ripe no pectin. Some fruits have more pectin than others so fruits are often combined to get a good overall pectin content. Sealing – prevents the re-entry of micro-organisms. Sterilising – to kill bacteria present. PH – the vinegar in chutney lowers the PH which prevents microbial growth", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "source-1",
+                "label": "Jam/chutney making",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Jam/chutney making",
+                            "marks": 4
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "Principle involved",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8,
+                                  12
+                            ],
+                            "contextNote": "Three principle points for this SAME selected method. Complete source: Jam/chutney making Heat – very high heat is used to soften the fruit and to kill microbes and enzymes. Sugar – a high proportion of sugar is used to help setting and also acts as a preservative. The sugar dissolves in the water of the fruit forming a concentrated solution. Water is then drawn from any microbial cells by osmosis to equalise the solution. This dehydrates the microbial cells causing death. Fruit – good quality, ripe fruit will have a high pectin content which will help setting. Acid – necessary to draw pectin out of the fruit, gives better colour and flavour and helps to prevent crystallisation. Lemons can be added if the fruit does not have a high acid content. Pectin – ripe fruit has pectin if fruit is under or over ripe no pectin. Some fruits have more pectin than others so fruits are often combined to get a good overall pectin content. Sealing – prevents the re-entry of micro-organisms. Sterilising – to kill bacteria present. PH – the vinegar in chutney lowers the PH which prevents microbial growth",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-2",
+                "label": "Bottling",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Bottling",
+                            "marks": 4
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "Principle involved",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8,
+                                  12
+                            ],
+                            "contextNote": "Three principle points for this SAME selected method. Complete source: Bottling – a process of preservation by sterilisation, usually fruit. Bottling kills yeast and moulds already present in or on the fruit by heating the jars of fruit in a water bath in the oven, on the hob or in a pressure cooker and then sealing the jars when hot. This forms a vacuum on cooling that creates a seal and prevents the re-entry of un-sterilised air.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-3",
+                "label": "Drying",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Drying",
+                            "marks": 4
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "Principle involved",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8,
+                                  12
+                            ],
+                            "contextNote": "Three principle points for this SAME selected method. Complete source: Drying – herbs can be dried by tying them in bundles and allowing them to dry out in a hot press for a few days. As both micro-organisms and enzymes require moisture they are inactivated without it and the herbs are preserved.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-method",
+                "label": "Another valid method",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name method of preservation",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "Choose a valid method involving application of heat. The source lists jam/chutney making, bottling and drying."
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "Principle involved",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8,
+                                  12
+                            ],
+                            "contextNote": "Three matching principle points for that SAME method, at four marks each. No further model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sb-q3c", topicId: "home-economics-0-4", conceptId: "sb-q3c",
+    section: "B", questionRef: "2012 HL Section B Q3(c)",
+    stem: "‘Food safety is a right not a privilege.’ (Safefood, 2007)",
+    questionText: "Outline the role of the Department of Agriculture, Food and the Marine in food safety.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 5"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "role of the Department of Agriculture, Food and the Marine", marks: 10, contextNote: "Distinct points at the published value; no finer partial-credit steps are printed. Complete source guidance: Ensures the highest possible standards of food safety and consumer protection in Ireland by: monitoring food safety in meat and meat products, milk and milk products, eggs and egg products and the use of pesticides; enforces EU legislation controlling the import of animal based foods from countries outside the EU; has responsible for registration and traceability of cattle, pigs and sheep; ensures correct hygiene procedures are implemented from the dairy farm to the dairy to the retailer and finally the consumer, etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sb-q4a", topicId: "home-economics-3-3", conceptId: "sb-q4a",
+    section: "B", questionRef: "2012 HL Section B Q4(a)",
+    stem: "‘Buying a home is one of the most significant financial decisions you will make in your lifetime.’ (www.myhome.ie)",
+    questionText: "Discuss the factors which influence individual and family housing choices. Refer to each of the following: • economic factors • national housing policy • trends in housing developments.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 2 points × 4"}, totalMarks: 24,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Economic factors", marks: 8, contextNote: "Economic factors – cost; money available; parental assistance in house purchase; location; interest rates, etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "Housing policy", marks: 8, contextNote: "Housing policy – high density living; sustainable communities supported by shops, schools, proper infrastructure etc.; retention of listed buildings through grants; protection of natural environment; provision of social and affordable housing; promotion of energy efficient homes; encouragement of home ownership through mortgage interest relief; improvements grants schemes e.g. insulation grants for solar panels; provision of rent allowance; registration of rented accommodation with the PRTB, etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "Trends", marks: 8, contextNote: "Trends – development of larger housing estates; mixed developments in town centres including apartments, town houses and larger houses; increase in apartments especially in urban areas; big houses built in small estates; one-off houses on privately owned sites; larger houses in suburbs and home owner commutes to work; redevelopment of inner city areas; restoration of old/period properties; energy efficient houses; environmentally friendly methods of construction, etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sb-q4b", topicId: "home-economics-1-1", conceptId: "sb-q4b",
+    section: "B", questionRef: "2012 HL Section B Q4(b)",
+    stem: "‘Buying a home is one of the most significant financial decisions you will make in your lifetime.’ (www.myhome.ie)",
+    questionText: "Name and describe one type of mortgage available to potential house buyers.",
+    tariffModel: {"kind":"fixed","notation":"Name 4 + description 2 × 5"}, totalMarks: 14,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Annuity", marks: 4 },
+    { id: "description", kind: "criterion", verbatim: "Description", marks: 10, contextNote: "Two description points for the SAME mortgage. Historical 2012 source: Annuity – each repayment goes partly to pay off the interest on the loan and partly to repay the principal amount borrowed; amount owed declines over the years; must take out a mortgage protection policy; popular interest rates may be variable or fixed or combination; variable rate fluctuates in line with interest rates from the ECB – element of risk involved as interest rates may increase; fixed rate is fixed for a set number of years, generally higher than a variable interest rate and outgoings are always the same; combination – loan is divided between variable and fixed, etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "source-1",
+                "label": "Annuity",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Annuity",
+                            "marks": 4
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  5,
+                                  10
+                            ],
+                            "contextNote": "Two description points for the SAME mortgage. Historical 2012 source: Annuity – each repayment goes partly to pay off the interest on the loan and partly to repay the principal amount borrowed; amount owed declines over the years; must take out a mortgage protection policy; popular interest rates may be variable or fixed or combination; variable rate fluctuates in line with interest rates from the ECB – element of risk involved as interest rates may increase; fixed rate is fixed for a set number of years, generally higher than a variable interest rate and outgoings are always the same; combination – loan is divided between variable and fixed, etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-2",
+                "label": "Endowment",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Endowment",
+                            "marks": 4
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  5,
+                                  10
+                            ],
+                            "contextNote": "Two description points for the SAME mortgage. Historical 2012 source: Endowment – combination of borrowing and investing; interest is paid on the loan and in addition a premium is paid on a life assurance policy; life assurance policy is designed to pay off/cover the loan when it matures; chance that the yield from the policy may not fully cover the loan; no extra mortgage protection policy needed (part of life assurance policy), etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-3",
+                "label": "Pension linked",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Pension linked",
+                            "marks": 4
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  5,
+                                  10
+                            ],
+                            "contextNote": "Two description points for the SAME mortgage. Historical 2012 source: Pension linked – pays interest on the loan and pays a sum into a pension scheme; loan is repaid from the pension fund on retirement; mortgage protection policy is necessary; popular with self-employed people because of better tax relief, etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-4",
+                "label": "Interest only",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Interest only",
+                            "marks": 4
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  5,
+                                  10
+                            ],
+                            "contextNote": "Two description points for the SAME mortgage. Historical 2012 source: Interest only – traditionally these mortgages were only available in respect of investment property purchases; interest only is paid to the lender with the capital balance staying constant; a number of conditions attached e.g. interest only facilities up to a maximum of three years with the underlying thinking being that it gives first time buyers a chance to get on their feet; a review of the interest only facility is imposed about every five years, etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-5",
+                "label": "Tracker",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Tracker",
+                            "marks": 4
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  5,
+                                  10
+                            ],
+                            "contextNote": "Two description points for the SAME mortgage. Historical 2012 source: Tracker – no longer available for new mortgages as Irish lenders were forced to withdraw these products following the credit squeeze; the product was priced by way of a margin over the ECB base rate, etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-6",
+                "label": "Current account",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Current account",
+                            "marks": 4
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  5,
+                                  10
+                            ],
+                            "contextNote": "Two description points for the SAME mortgage. Historical 2012 source: Current account – by combining a persons current account with their mortgage account all the money that is lodged in to the current account will be taken off the mortgage with the result that the mortgage is paid off earlier than planned by simply reducing the capital amount; this is a variable rate product and does not facilitate a fixed rate, etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-mortgage",
+                "label": "Another valid mortgage",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "One mortgage type. Source examples are Annuity, Endowment, Pension linked, Interest only, Tracker and Current account."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  5,
+                                  10
+                            ],
+                            "contextNote": "Two matching description points for that SAME mortgage. No additional source model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sb-q4c", topicId: "home-economics-3-3", conceptId: "sb-q4c",
+    section: "B", questionRef: "2012 HL Section B Q4(c)",
+    stem: "‘Buying a home is one of the most significant financial decisions you will make in your lifetime.’ (www.myhome.ie)",
+    questionText: "Name and give details of one Local Authority scheme available to people in need of housing",
+    tariffModel: {"kind":"fixed","notation":"Name 3 + details 3 × 3"}, totalMarks: 12,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Tenant purchase scheme", marks: 3 },
+    { id: "details", kind: "criterion", verbatim: "Details", marks: 9, contextNote: "Three details for the SAME scheme. Historical 2012 conditions: Tenant purchase scheme – Local Authority tenants for at least one year can opt to buy the house; house may be bought outright or through shared ownership scheme; house is priced at market value minus discounts; discount for each year of tenancy up to a max. of ten years.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "source-1",
+                "label": "Tenant purchase scheme",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Tenant purchase scheme",
+                            "marks": 3
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9
+                            ],
+                            "contextNote": "Three details for the SAME scheme. Historical 2012 conditions: Tenant purchase scheme – Local Authority tenants for at least one year can opt to buy the house; house may be bought outright or through shared ownership scheme; house is priced at market value minus discounts; discount for each year of tenancy up to a max. of ten years.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-2",
+                "label": "Mortgage allowance scheme",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Mortgage allowance scheme",
+                            "marks": 3
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9
+                            ],
+                            "contextNote": "Three details for the SAME scheme. Historical 2012 conditions: Mortgage allowance scheme – can return existing home to Local Authority in order to buy or build a private home and may qualify for a mortgage allowance; allowance (up to €11,450) is paid on a reducing scale over 5 years and is paid directly to the mortgage lender; designed to make the transition from rent to home ownership easier.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-3",
+                "label": "Shared ownership scheme",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Shared ownership scheme",
+                            "marks": 3
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9
+                            ],
+                            "contextNote": "Three details for the SAME scheme. Historical 2012 conditions: Shared ownership scheme – must be in need of housing and satisfy an income test to be eligible; ownership is shared between the shared owner and the Local Authority; applicant must purchase at least 40% the value of the house and rent the remainder from the Local Authority; to pay a mortgage loan can be applied for from the Local Authority; outgoings consist of mortgage payments and a rent calculated at 4.4% of the cost of the rented share; outgoings are lower than for a standard mortgage; option of buying the remaining share when the initial share is fully purchased , etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-4",
+                "label": "Affordable housing scheme",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Affordable housing scheme",
+                            "marks": 3
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9
+                            ],
+                            "contextNote": "Three details for the SAME scheme. Historical 2012 conditions: Affordable housing scheme – LA provides new houses on land that it owns; houses are supplied at discounted prices to eligible purchasers (in need of housing and satisfy an income eligibility test); houses are purchased outright through a mortgage provided by the LA; loans of up to 97% of the price of the house are paid over 25 years; generally loan repayments should not exceed 35% of net household income, etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-5",
+                "label": "Rental Accommodation Scheme (RAS 2004)",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Rental Accommodation Scheme (RAS 2004)",
+                            "marks": 3
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9
+                            ],
+                            "contextNote": "Three details for the SAME scheme. Historical 2012 conditions: Rental Accommodation Scheme (RAS 2004) – available to those in receipt of rent supplement for 18 months or more; LA enters into medium or long term leases with landlords to provide good standard accommodation for households with a long term housing requirement; main benefit is the elimination of poverty traps as it allows tenants to take up employment, training or education opportunities and continue with RAS; their contribution to rent will increase in line with increased income.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-6",
+                "label": "Tenant Purchase of Apartments Scheme (TPAS 2012)",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Tenant Purchase of Apartments Scheme (TPAS 2012)",
+                            "marks": 3
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9
+                            ],
+                            "contextNote": "Three details for the SAME scheme. Historical 2012 conditions: Tenant Purchase of Apartments Scheme (TPAS 2012) – applicants eligible for Local Authority housing may apply to purchase an apartment; incremental purchase system applies with discounts of 40%, 50% or 60% depending on household income; apartment complexes (with at least 5 apartments) must be assessed to be deemed eligible for consideration.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-scheme",
+                "label": "Another valid scheme",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name of scheme",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "One Local Authority housing scheme. The original scheme provides six models."
+                      },
+                      {
+                            "id": "details",
+                            "kind": "criterion",
+                            "verbatim": "Details",
+                            "marks": 9,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9
+                            ],
+                            "contextNote": "Three details matching that SAME housing scheme. No further source model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sb-q5a", topicId: "home-economics-2-0", conceptId: "sb-q5a",
+    section: "B", questionRef: "2012 HL Section B Q5(a)",
+    stem: "‘Today more than ever before, young people are recognised as having rights.’ (Unicef)",
+    questionText: "Outline four rights of children within the family.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 3"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "rights of children", marks: 12, contextNote: "Distinct points at the published value; no finer partial-credit steps are printed. Complete source guidance: Right to life; name and be granted a nationality; live with parents unless against their best interests; basic physical needs; to develop physically, mentally, socially, morally and spiritually; access medical care; protection from abuse and neglect; education, leisure, recreation and cultural activities; special care, education and training for those with a disability, etc.", permittedMarks: [0,3,6,9,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]},{"id":"point-4","verbatim":"Point 4","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sb-q5b-child", topicId: "home-economics-2-0", conceptId: "sb-q5b",
+    section: "B", questionRef: "2012 HL Section B Q5(b) — child",
+    stem: "‘Today more than ever before, young people are recognised as having rights.’ (Unicef)",
+    questionText: "Discuss each of the following: • the difficulties that the family unit may experience when a child has special needs",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "difficulties", marks: 12, contextNote: "Distinct points at the published value; no finer partial-credit steps are printed. Complete source guidance: shortage of available help; fewer educational opportunities; lack of adequate state financial support; reduced income if one parent stays at home to look after child; inadequate medical facilities; inadequate state facilities which puts the onus on the family to provide these. The source states that some points may be common to both child and parent.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sb-q5b-parent", topicId: "home-economics-2-0", conceptId: "sb-q5b",
+    section: "B", questionRef: "2012 HL Section B Q5(b) — parent",
+    stem: "‘Today more than ever before, young people are recognised as having rights.’ (Unicef)",
+    questionText: "Discuss each of the following: • the difficulties that the family unit may experience when a parent has special needs.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "difficulties", marks: 12, contextNote: "Distinct points at the published value; no finer partial-credit steps are printed. Complete source guidance: social isolation; prejudice; lack of mobility and difficulty in accessing public transport and facilities; fewer employment opportunities; cost of modifying home to make it suitable; lack of independence; constant emotional support needed; difficulty in accessing available social assistance and grants; lack of support financial strain on those caring for the parent, etc. The source states that some points may be common to both child and parent.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sb-q5c", topicId: "home-economics-2-0", conceptId: "sb-q5c",
+    section: "B", questionRef: "2012 HL Section B Q5(c)",
+    stem: "‘Today more than ever before, young people are recognised as having rights.’ (Unicef)",
+    questionText: "Write an informative note on the Childcare Act, 1991.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 7"}, totalMarks: 14,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "Childcare Act, 1991", marks: 14, contextNote: "Distinct points at the published value; no finer partial-credit steps are printed. Complete source guidance: Makes provision for the care and protection of children by the following: Intervention - health boards have the power to intervene in family situations where a child is deemed to be at risk e.g. assaulted, neglected or sexually abused. Care order – health board may apply to the courts for a care order to facilitate the removal of a child from the family home to be placed in care for long or short term. Supervision order – health boards may apply for a supervision order so that health board personnel can visit a child in their home periodically to monitor their health and welfare.", permittedMarks: [0,7,14], parts: [{"id":"point-1","verbatim":"Point 1","marks":7,"permittedMarks":[0,7]},{"id":"point-2","verbatim":"Point 2","marks":7,"permittedMarks":[0,7]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q1ai", topicId: "home-economics-3-5", conceptId: "sc-q1ai",
+    section: "C", questionRef: "2012 HL Section C E1 Q1(a)(i)",
+    stem: "‘If each of us becomes aware of our own power when it comes to energy efficiency and use it properly, we can collectively make a big difference to ourselves, our pockets and to the environment.’ (Sustainable Energy Authority of Ireland)",
+    questionText: "Discuss four factors that should be considered when choosing a heating system for a new house.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 4"}, totalMarks: 16,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 16, contextNote: "Distinct points at the published value; no finer partial-credit steps are printed. Complete source guidance: Cost (installation and running); safety; space heating requirements; convenience; aesthetic appeal; environmental factors; water heating included; storage required; the size of the house, etc.", permittedMarks: [0,4,8,12,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q1aii", topicId: "home-economics-3-5", conceptId: "sc-q1aii",
+    section: "C", questionRef: "2012 HL Section C E1 Q1(a)(ii)",
+    stem: "‘If each of us becomes aware of our own power when it comes to energy efficiency and use it properly, we can collectively make a big difference to ourselves, our pockets and to the environment.’ (Sustainable Energy Authority of Ireland)",
+    questionText: "Describe one type of central heating system suitable for a family home and include reference to: • fuel/energy source • working principle to include methods of heat transfer • impact on the environment.",
+    tariffModel: {"kind":"fixed","notation":"Name 4 + fuel 4 + principle 3 × 4 + impact 4"}, totalMarks: 24,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Wet system/small bore system/indirect system", marks: 4 },
+    { id: "fuel", kind: "criterion", verbatim: "fuel/energy source", marks: 4, contextNote: "Name a fuel for the SAME system. Source examples: oil, gas, solid fuel, solar etc", permittedMarks: [0,4] },
+    { id: "principle", kind: "criterion", verbatim: "working principle", marks: 12, contextNote: "Three points including heat transfer for the SAME system. Source: Wet system/small bore system/indirect system – water heated in a boiler by convection; water expands, rises and pumped to all radiators in the house; individual radiators heat the rooms by radiation and convection.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    { id: "impact", kind: "criterion", verbatim: "impact on the environment", marks: 4, contextNote: "Match the impact to the SAME system. Source examples: low use of fossil fuels; fumes from oil heating, etc.", permittedMarks: [0,4] },
+    ],
+    answerVariants: [
+          {
+                "id": "source-1",
+                "label": "Wet system/small bore system/indirect system",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Wet system/small bore system/indirect system",
+                            "marks": 4
+                      },
+                      {
+                            "id": "fuel",
+                            "kind": "criterion",
+                            "verbatim": "fuel/energy source",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "Name a fuel for the SAME system. Source examples: oil, gas, solid fuel, solar etc"
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "working principle",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8,
+                                  12
+                            ],
+                            "contextNote": "Three points including heat transfer for the SAME system. Source: Wet system/small bore system/indirect system – water heated in a boiler by convection; water expands, rises and pumped to all radiators in the house; individual radiators heat the rooms by radiation and convection.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "impact",
+                            "kind": "criterion",
+                            "verbatim": "impact on the environment",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "Match the impact to the SAME system. Source examples: low use of fossil fuels; fumes from oil heating, etc."
+                      }
+                ]
+          },
+          {
+                "id": "source-2",
+                "label": "Dry system/under floor heating/storage heating",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Dry system/under floor heating/storage heating",
+                            "marks": 4
+                      },
+                      {
+                            "id": "fuel",
+                            "kind": "criterion",
+                            "verbatim": "fuel/energy source",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "Name a fuel for the SAME system. Source examples: oil, gas, solid fuel, solar etc"
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "working principle",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8,
+                                  12
+                            ],
+                            "contextNote": "Three points including heat transfer for the SAME system. Source: Dry system/under floor heating/storage heating – electric elements embedded in thermal blocks of fireclay or concrete and surrounded by an insulating material. These elements are switched on at off-peak periods at night and the blocks heat up. The radiators or floor gradually release heat during the day. Many systems have an afternoon boost heat option. Some heat is radiated, but most is transferred by convection.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "impact",
+                            "kind": "criterion",
+                            "verbatim": "impact on the environment",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "Match the impact to the SAME system. Source examples: low use of fossil fuels; fumes from oil heating, etc."
+                      }
+                ]
+          },
+          {
+                "id": "source-3",
+                "label": "Solar heating",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Solar heating",
+                            "marks": 4
+                      },
+                      {
+                            "id": "fuel",
+                            "kind": "criterion",
+                            "verbatim": "fuel/energy source",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "Name a fuel for the SAME system. Source examples: oil, gas, solid fuel, solar etc"
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "working principle",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8,
+                                  12
+                            ],
+                            "contextNote": "Three points including heat transfer for the SAME system. Source: Solar heating – solar collectors absorb sunlight and convert it into heat. The system uses mechanical devices such as pumps and fans to move heat from collectors to storage and then to use. The heat is transferred by convection around each room.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "impact",
+                            "kind": "criterion",
+                            "verbatim": "impact on the environment",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "Match the impact to the SAME system. Source examples: low use of fossil fuels; fumes from oil heating, etc."
+                      }
+                ]
+          },
+          {
+                "id": "another-system",
+                "label": "Another valid system",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Naming system",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "One central heating system. The source provides wet, dry and solar examples."
+                      },
+                      {
+                            "id": "fuel",
+                            "kind": "criterion",
+                            "verbatim": "fuel/energy source",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "A fuel for the SAME system. Source examples: oil, gas, solid fuel, solar etc"
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "working principle",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8,
+                                  12
+                            ],
+                            "contextNote": "Three principle points including heat transfer for the SAME system. No additional model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "impact",
+                            "kind": "criterion",
+                            "verbatim": "impact on the environment",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "One matching environmental impact. Source examples: low use of fossil fuels; fumes from oil heating, etc."
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q1aiii", topicId: "home-economics-3-5", conceptId: "sc-q1aiii",
+    section: "C", questionRef: "2012 HL Section C E1 Q1(a)(iii)",
+    stem: "‘If each of us becomes aware of our own power when it comes to energy efficiency and use it properly, we can collectively make a big difference to ourselves, our pockets and to the environment.’ (Sustainable Energy Authority of Ireland)",
+    questionText: "Explain, giving examples, how levels of thermal comfort in the home can be controlled.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 5"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "thermal comfort", marks: 10, contextNote: "Distinct points at the published value; no finer partial-credit steps are printed. Complete source guidance: Rooms in the home used for different activities require varying levels of thermal comfort which can be regulated by the use of a thermostat. Recommended temperature varies for each room depending on its function e.g. sitting room 19◦C to 23◦C, living room 17◦C to 21◦C, bedroom 10◦C to 16◦C, minimum temperature of 20◦C recommended for elderly people. Room thermostat – the room thermostat detects the surrounding temperature of the room and maintains the temperature that it is set at. Thermostatic radiator valve – This is fitted to the individual radiator. It opens and closes a valve to either allow or prevent the flow of water into the radiator. Zoned Heating - this allows for heating various sections of the house.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q1bi", topicId: "home-economics-3-5", conceptId: "sc-q1bi",
+    section: "C", questionRef: "2012 HL Section C E1 Q1(b)(i)",
+    questionText: "Discuss the importance of adequate ventilation in a house.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "ventilation", marks: 15, contextNote: "Distinct points at the published value; no finer partial-credit steps are printed. Complete source guidance: Provides fresh air for respiration; removes stale air full of impurities and odours; assists combustion e.g. open fires; controls humidity levels in the air; reduces condensation; controls air temperature; helps in the control of respiratory conditions such as asthma, etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q1bii", topicId: "home-economics-3-5", conceptId: "sc-q1bii",
+    section: "C", questionRef: "2012 HL Section C E1 Q1(b)(ii)",
+    questionText: "Recommend one method of artificial ventilation suitable for a kitchen and describe the working principle of the method recommended.",
+    tariffModel: {"kind":"fixed","notation":"Name 3 + principle 3 × 4"}, totalMarks: 15,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Extractor fans", marks: 3 },
+    { id: "principle", kind: "criterion", verbatim: "Working principle", marks: 12, contextNote: "Three points for the SAME method. Full source: Extractor fans – positioned high up on an outside wall; when the fan is turned on the shutters open and the electric motor rotates the blades. The high speed of rotation creates suction drawing stale air out of the room. This is naturally replaced by fresh air.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "source-1",
+                "label": "Extractor fans",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Extractor fans",
+                            "marks": 3
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "Working principle",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8,
+                                  12
+                            ],
+                            "contextNote": "Three points for the SAME method. Full source: Extractor fans – positioned high up on an outside wall; when the fan is turned on the shutters open and the electric motor rotates the blades. The high speed of rotation creates suction drawing stale air out of the room. This is naturally replaced by fresh air.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-2",
+                "label": "Cooker hoods — ducted",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Cooker hoods",
+                            "marks": 3
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "Working principle",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8,
+                                  12
+                            ],
+                            "contextNote": "Three points for the SAME method. Full source: Cooker hoods – canopy shaped extractor fan fitted over the cooker hob, may be ducted to the outside or may be ductless Working Principle Ducted – fitted to an outside wall to ensure the shortest and most direct route to the outside; when turned on an electric motor rotates a fan, the high speed fan creates suction and draws in the stale air. The filters remove odours and grease purifying the air. The air is expelled to the outside. A hole cut in the external wall allows the stale air to exit.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-3",
+                "label": "Cooker hoods — ductless",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Cooker hoods",
+                            "marks": 3
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "Working principle",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8,
+                                  12
+                            ],
+                            "contextNote": "Three points for the SAME method. Full source: Cooker hoods – canopy shaped extractor fan fitted over the cooker hob, may be ducted to the outside or may be ductless Working Principle Ductless – used where there is no access to the outside (no duct) – air is recirculated back into the kitchen after it has been filtered via a carbon exhaust filter to prevent toxic fumes.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-method",
+                "label": "Another valid method",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name method",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "One artificial ventilation method suitable for a kitchen."
+                      },
+                      {
+                            "id": "principle",
+                            "kind": "criterion",
+                            "verbatim": "Working principle",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  4,
+                                  8,
+                                  12
+                            ],
+                            "contextNote": "Three matching principle points. The source models extractor fans and ducted/ductless cooker hoods; no other model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 4,
+                                        "permittedMarks": [
+                                              0,
+                                              4
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q1ci", topicId: "home-economics-3-4", conceptId: "sc-q1ci",
+    section: "C", questionRef: "2012 HL Section C E1 Q1(c)(i)",
+    stem: "Interior design involves determining the structure of a space, the needs of the occupants and the style that best suits both.",
+    questionText: "State, giving examples, how each of the following may impact on the interior design of the home: • function of the room • cost • environmental awareness.",
+    tariffModel: {"kind":"fixed","notation":"1 reference per heading × 3 + 3 other points × 3"}, totalMarks: 18,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Function", marks: 3, contextNote: "One reference to this required heading. Source: Function – design of a room should allow for ease of movement, accommodate the natural traffic flow; room design should facilitate maximum efficiency e.g. work triangle; lighting and ventilation must be at a comfortable level to suit the use of the room e.g. kitchen different to sitting room; all heights e.g. work surfaces must be at a suitable level to avoid discomfort; spaces should be easy to clean and have free access to windows and sockets, etc.", permittedMarks: [0,3] },
+    { id: "heading-2", kind: "criterion", verbatim: "Cost", marks: 3, contextNote: "One reference to this required heading. Source: Cost – people confined by budget constraints, have to choose within ones budget so choice may be restricted; good interior design does not have to cost a lot of money – taste; many outlets sell reasonably good quality and attractive pieces of furniture that are not expensive, etc.", permittedMarks: [0,3] },
+    { id: "heading-3", kind: "criterion", verbatim: "Environmental awareness", marks: 3, contextNote: "One reference to this required heading. Source: Environmental awareness – use of natural materials e.g. wooden floors, stone fireplaces; features e.g. wood burning stove – environmentally friendly; tiling is energy efficient as it absorbs solar energy and releases heat gradually; organic paints are more environmentally friendly as there is less waste produced during their manufacture, etc.", permittedMarks: [0,3] },
+    { id: "other-points", kind: "criterion", verbatim: "other points", marks: 9, contextNote: "Three ADDITIONAL points across the required headings; no per-heading quota for these three. Full source: Function – design of a room should allow for ease of movement, accommodate the natural traffic flow; room design should facilitate maximum efficiency e.g. work triangle; lighting and ventilation must be at a comfortable level to suit the use of the room e.g. kitchen different to sitting room; all heights e.g. work surfaces must be at a suitable level to avoid discomfort; spaces should be easy to clean and have free access to windows and sockets, etc. Cost – people confined by budget constraints, have to choose within ones budget so choice may be restricted; good interior design does not have to cost a lot of money – taste; many outlets sell reasonably good quality and attractive pieces of furniture that are not expensive, etc. Environmental awareness – use of natural materials e.g. wooden floors, stone fireplaces; features e.g. wood burning stove – environmentally friendly; tiling is energy efficient as it absorbs solar energy and releases heat gradually; organic paints are more environmentally friendly as there is less waste produced during their manufacture, etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q1cii", topicId: "home-economics-3-4", conceptId: "sc-q1cii",
+    section: "C", questionRef: "2012 HL Section C E1 Q1(c)(ii)",
+    stem: "Interior design involves determining the structure of a space, the needs of the occupants and the style that best suits both.",
+    questionText: "Explain two elements of design and give an example of the application of each in interior design.",
+    tariffModel: {"kind":"fixed","notation":"2 pairs × (explanation 3 + application 3)"}, totalMarks: 12,
+    rows: [
+    { id: "explanation-1", kind: "criterion", verbatim: "Explanation", marks: 3, contextNote: "Choose a different element in each pair. Source: Colour – a design device that impacts greatly on how a room looks and feels….; primary, secondary, tertiary colours; warm, cool, pastel and neutral colours; colour schemes can be contrasting / complementary, monochromatic use of an accent colour; harmonious colour scheme; shade, tint, tone, etc. Application – colour can be used to link rooms in a house; alter the proportions of a room; highlight good features, create atmosphere; aspect of the room may influence the choice of colour, etc. Pattern – decorative designs which add variety and contrast to a room; over use can make a room fussy, under use room can appear bland, etc. Application – add interest to a room e.g. using several patterns that are linked by colour, texture or motif in common; large scale and small scale patterns; bold patterns, etc. Texture - refers to the feel or touch of an object or surface eg. smooth/rough, cold/warm Application – contrasting textures add interest; smooth textures e.g. glass, mirror are cold and hygienic and suited to bathrooms and kitchens; rough surfaces such as carpet and upholstery are warm and comfortable adding atmosphere to a sitting room; matt surfaces such as emulsion paint absorb light and make colours appear darker, etc.", permittedMarks: [0,3] },
+    { id: "application-1", kind: "criterion", verbatim: "Application", marks: 3, contextNote: "One application of that SAME element. Source: Colour – a design device that impacts greatly on how a room looks and feels….; primary, secondary, tertiary colours; warm, cool, pastel and neutral colours; colour schemes can be contrasting / complementary, monochromatic use of an accent colour; harmonious colour scheme; shade, tint, tone, etc. Application – colour can be used to link rooms in a house; alter the proportions of a room; highlight good features, create atmosphere; aspect of the room may influence the choice of colour, etc. Pattern – decorative designs which add variety and contrast to a room; over use can make a room fussy, under use room can appear bland, etc. Application – add interest to a room e.g. using several patterns that are linked by colour, texture or motif in common; large scale and small scale patterns; bold patterns, etc. Texture - refers to the feel or touch of an object or surface eg. smooth/rough, cold/warm Application – contrasting textures add interest; smooth textures e.g. glass, mirror are cold and hygienic and suited to bathrooms and kitchens; rough surfaces such as carpet and upholstery are warm and comfortable adding atmosphere to a sitting room; matt surfaces such as emulsion paint absorb light and make colours appear darker, etc.", permittedMarks: [0,3] },
+    { id: "explanation-2", kind: "criterion", verbatim: "Explanation", marks: 3, contextNote: "Choose a different element in each pair. Source: Colour – a design device that impacts greatly on how a room looks and feels….; primary, secondary, tertiary colours; warm, cool, pastel and neutral colours; colour schemes can be contrasting / complementary, monochromatic use of an accent colour; harmonious colour scheme; shade, tint, tone, etc. Application – colour can be used to link rooms in a house; alter the proportions of a room; highlight good features, create atmosphere; aspect of the room may influence the choice of colour, etc. Pattern – decorative designs which add variety and contrast to a room; over use can make a room fussy, under use room can appear bland, etc. Application – add interest to a room e.g. using several patterns that are linked by colour, texture or motif in common; large scale and small scale patterns; bold patterns, etc. Texture - refers to the feel or touch of an object or surface eg. smooth/rough, cold/warm Application – contrasting textures add interest; smooth textures e.g. glass, mirror are cold and hygienic and suited to bathrooms and kitchens; rough surfaces such as carpet and upholstery are warm and comfortable adding atmosphere to a sitting room; matt surfaces such as emulsion paint absorb light and make colours appear darker, etc.", permittedMarks: [0,3] },
+    { id: "application-2", kind: "criterion", verbatim: "Application", marks: 3, contextNote: "One application of that SAME element. Source: Colour – a design device that impacts greatly on how a room looks and feels….; primary, secondary, tertiary colours; warm, cool, pastel and neutral colours; colour schemes can be contrasting / complementary, monochromatic use of an accent colour; harmonious colour scheme; shade, tint, tone, etc. Application – colour can be used to link rooms in a house; alter the proportions of a room; highlight good features, create atmosphere; aspect of the room may influence the choice of colour, etc. Pattern – decorative designs which add variety and contrast to a room; over use can make a room fussy, under use room can appear bland, etc. Application – add interest to a room e.g. using several patterns that are linked by colour, texture or motif in common; large scale and small scale patterns; bold patterns, etc. Texture - refers to the feel or touch of an object or surface eg. smooth/rough, cold/warm Application – contrasting textures add interest; smooth textures e.g. glass, mirror are cold and hygienic and suited to bathrooms and kitchens; rough surfaces such as carpet and upholstery are warm and comfortable adding atmosphere to a sitting room; matt surfaces such as emulsion paint absorb light and make colours appear darker, etc.", permittedMarks: [0,3] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2012-hl-sc-q1cii-pair-1","label":"Design element 1","marks":6,"rowIds":["explanation-1","application-1"]},{"sourceCardId":"he-2012-hl-sc-q1cii-pair-2","label":"Design element 2","marks":6,"rowIds":["explanation-2","application-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q2ai", topicId: "home-economics-3-8", conceptId: "sc-q2ai",
+    section: "C", questionRef: "2012 HL Section C E2 Q2(a)(i)",
+    stem: "‘The economic climate and a fresh approach to fashion, has succeeded in turning many more fashion hounds towards the vintage fashion rails.’ (www.stylebible.ie)",
+    questionText: "Assess the effects of socio-economic influences on the clothing industry.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 3"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "socio-economic influences", marks: 15, contextNote: "Distinct points at the published value; no finer partial-credit steps are printed. Complete source guidance: Social – social conformity; status of women; changing roles for men/women; the media; famous people; world events e.g the Olympics; award events, etc. Economic – reduced consumer spending, down turn in the economy, more sombre / simple fashions, production costs; use of low cost materials; CAD design; development of new fibres and blends with endless qualities for use in garments, etc.", permittedMarks: [0,3,6,9,12,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]},{"id":"point-4","verbatim":"Point 4","marks":3,"permittedMarks":[0,3]},{"id":"point-5","verbatim":"Point 5","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q2aii", topicId: "home-economics-3-8", conceptId: "sc-q2aii",
+    section: "C", questionRef: "2012 HL Section C E2 Q2(a)(ii)",
+    stem: "‘The economic climate and a fresh approach to fashion, has succeeded in turning many more fashion hounds towards the vintage fashion rails.’ (www.stylebible.ie)",
+    questionText: "You have been invited to attend a friend’s 18th birthday party with a 1980’s theme. Sketch and describe the outfit you would wear to the party.",
+    tariffModel: {"kind":"fixed","notation":"Sketch 6 + description 2 × 2"}, totalMarks: 10,
+    rows: [
+    { id: "sketch", kind: "criterion", verbatim: "Sketch", marks: 6, contextNote: "An outfit for the printed 1980’s birthday-party theme. The source supplies clothing examples but no model drawing. Source: Large jewellery, slouch knitted dresses, lots of colour, puffed sleeves, etc.", permittedMarks: [0,6] },
+    { id: "description", kind: "criterion", verbatim: "Description", marks: 4, contextNote: "Describe the SAME sketched outfit. Source examples: Large jewellery, slouch knitted dresses, lots of colour, puffed sleeves, etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q2bi", topicId: "home-economics-3-7", conceptId: "sc-q2bi",
+    section: "C", questionRef: "2012 HL Section C E2 Q2(b)(i)",
+    questionText: "Discuss why blended fabrics are popular in modern clothing.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 3"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "blended fabrics", marks: 6, contextNote: "Distinct points at the published value; no finer partial-credit steps are printed. Complete source guidance: Improve fabric performance; make some fabrics more affordable; produce better quality (different grades of wool blended together); improve overall characteristics – crease resistance; wearing performance; moisture absorbency; improve durability; enhance dye-ability; reduce static, etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q2bii", topicId: "home-economics-3-7", conceptId: "sc-q2bii",
+    section: "C", questionRef: "2012 HL Section C E2 Q2(b)(ii)",
+    questionText: "Set out the results of a study you have undertaken on one blended fabric. Refer to: • name • properties • uses.",
+    tariffModel: {"kind":"fixed","notation":"Name 3 + properties 3 × 1 + uses 3 × 1"}, totalMarks: 9,
+    rows: [
+    { id: "name", kind: "point", verbatim: "polyester cotton (polycotton)", marks: 3 },
+    { id: "properties", kind: "criterion", verbatim: "properties", marks: 3, contextNote: "Three properties of this SAME fabric. Source: Positive - good wash wear; easy to press; strong; permeable to air; drip dries quickly; resists staining; comfortable; low static level due to cotton; good for dyeing; Negative - mildew and rotting, static and pills (polyester); uncomfortable (low moisture absorption); damaged by hot concentrated alkalis, etc.", permittedMarks: [0,1,2,3], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]},{"id":"point-3","verbatim":"Point 3","marks":1,"permittedMarks":[0,1]}] },
+    { id: "uses", kind: "criterion", verbatim: "uses", marks: 3, contextNote: "Three uses of this SAME fabric. Source: shirts, suits and skirts, etc.", permittedMarks: [0,1,2,3], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]},{"id":"point-3","verbatim":"Point 3","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "polycotton",
+                "label": "polyester cotton (polycotton)",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "polyester cotton (polycotton)",
+                            "marks": 3
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "properties",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three properties of this SAME fabric. Source: Positive - good wash wear; easy to press; strong; permeable to air; drip dries quickly; resists staining; comfortable; low static level due to cotton; good for dyeing; Negative - mildew and rotting, static and pills (polyester); uncomfortable (low moisture absorption); damaged by hot concentrated alkalis, etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "uses",
+                            "kind": "criterion",
+                            "verbatim": "uses",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three uses of this SAME fabric. Source: shirts, suits and skirts, etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-blend",
+                "label": "Another blended fabric",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Name ONE blended fabric you studied. The source models polyester cotton only."
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "properties",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three properties of that SAME blend. No further model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "uses",
+                            "kind": "criterion",
+                            "verbatim": "uses",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three uses of that SAME blend. No further model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q2c-construction", topicId: "home-economics-3-7", conceptId: "sc-q2c",
+    section: "C", questionRef: "2012 HL Section C E2 Q2(c) — Fabric construction",
+    stem: "Fabric construction methods influence the appearance, properties and performance of the fabric.",
+    questionText: "In relation to textile manufacture, name and describe each of the following: • one fabric construction technique",
+    tariffModel: {"kind":"fixed","notation":"Name + description 5"}, totalMarks: 5,
+    rows: [
+    { id: "name-description", kind: "criterion", verbatim: "Fabric construction", marks: 5, contextNote: "Name AND describe one matching technique. Five marks cover the complete response; no name/description sub-allocation is printed. The scheme lists names but supplies no model descriptions. Original source options: Fabric construction – knitting, weaving, bonding", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q2c-colour", topicId: "home-economics-3-7", conceptId: "sc-q2c",
+    section: "C", questionRef: "2012 HL Section C E2 Q2(c) — Colour application",
+    stem: "Fabric construction methods influence the appearance, properties and performance of the fabric.",
+    questionText: "In relation to textile manufacture, name and describe each of the following: • one method of colour application",
+    tariffModel: {"kind":"fixed","notation":"Name + description 5"}, totalMarks: 5,
+    rows: [
+    { id: "name-description", kind: "criterion", verbatim: "Colour application", marks: 5, contextNote: "Name AND describe one matching technique. Five marks cover the complete response; no name/description sub-allocation is printed. The scheme lists names but supplies no model descriptions. Original source options: Colour application – dyeing- disperse, acid dyeing, tie dying", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q2c-design", topicId: "home-economics-3-7", conceptId: "sc-q2c",
+    section: "C", questionRef: "2012 HL Section C E2 Q2(c) — Design application",
+    stem: "Fabric construction methods influence the appearance, properties and performance of the fabric.",
+    questionText: "In relation to textile manufacture, name and describe each of the following: • one method of design application.",
+    tariffModel: {"kind":"fixed","notation":"Name + description 5"}, totalMarks: 5,
+    rows: [
+    { id: "name-description", kind: "criterion", verbatim: "Design application", marks: 5, contextNote: "Name AND describe one matching technique. Five marks cover the complete response; no name/description sub-allocation is printed. The scheme lists names but supplies no model descriptions. Original source options: Design application – screen printing, roller printing, stencil printing, transfer printing, embossing, etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q3ai", topicId: "home-economics-3-9", conceptId: "sc-q3ai",
+    section: "C", questionRef: "2012 HL Section C E3 Q3(a)(i)",
+    stem: "The high level of joblessness and the continuing threat of unemployment are among the biggest issues adversely affecting the Irish economy. Figures released by the Central Statistics Office show that the standardised jobless rate increased to 14.4% in October 2011. Among those signing on were 93,013 Jobseeker’s Benefit claimants and 301,333 Jobseeker’s Allowance claimants.",
+    questionText: "Having regard to the information provided above, discuss unemployment in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"1 chart point × 5 + 3 discussion points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "chart-reference", kind: "criterion", verbatim: "One point to refer to the chart", marks: 5, contextNote: "Original paper table: 2010 is 13.7%; the scheme repeats 13.6%. Use the paper’s original 13.7%. The prose states 14.4% for October 2011 while the table gives 14.2%; both original values remain visible. Source: Extent, reasons/causes, effects, etc. Extent – gradual growth in unemployment figures leading to significant increase between 2008 and 2009 and steady rise upwards; employment levels reflect the state of the economy, recent economic downturn has seen a very significant increase in unemployment figures; construction industry worst affected, retail and service industries also affected; increase in emigration; service industry cutbacks due to on- going recession; rate of unemployment increased by more than 200% between 2006 and 2011; gradual increase between 2006/2008 with the biggest increase (50%) between 2008 and 2009; more than 300,000 are claiming jobseeker’s allowance thus are unemployed for more than 1 year, etc. Causes –global recession / down turn in the economy; developing technology; decline in primary and secondary industries; increased educational requirements; manufacturing companies relocating to Eastern Europe – high wage/salary levels leading to a lack of competitiveness; lack of demand for products and services; unemployment black spots; residual unemployment; geographical factors; seasonal factors, etc. Effects on the Individual – loss of income; stress related to financial insecurity and fear of poverty; loss of status, self esteem; feelings of inadequacy leading to ill health and depression; substance abuse; sense of guilt; social isolation; suicide, etc. Effects on the Family – drop in income leading to drop in living standards; poverty; mortgage arrears - repossession of homes; children may have to drop activities they were involved in; strain on relationships; lack of financial security, etc. Effects on Society – emigration; cost to the state – higher taxes; lack of role models and positive work ethic; antisocial behaviour, etc.", permittedMarks: [0,5] },
+    { id: "discussion", kind: "criterion", verbatim: "unemployment in Ireland", marks: 15, contextNote: "Three further discussion points. Complete historical source: Extent, reasons/causes, effects, etc. Extent – gradual growth in unemployment figures leading to significant increase between 2008 and 2009 and steady rise upwards; employment levels reflect the state of the economy, recent economic downturn has seen a very significant increase in unemployment figures; construction industry worst affected, retail and service industries also affected; increase in emigration; service industry cutbacks due to on- going recession; rate of unemployment increased by more than 200% between 2006 and 2011; gradual increase between 2006/2008 with the biggest increase (50%) between 2008 and 2009; more than 300,000 are claiming jobseeker’s allowance thus are unemployed for more than 1 year, etc. Causes –global recession / down turn in the economy; developing technology; decline in primary and secondary industries; increased educational requirements; manufacturing companies relocating to Eastern Europe – high wage/salary levels leading to a lack of competitiveness; lack of demand for products and services; unemployment black spots; residual unemployment; geographical factors; seasonal factors, etc. Effects on the Individual – loss of income; stress related to financial insecurity and fear of poverty; loss of status, self esteem; feelings of inadequacy leading to ill health and depression; substance abuse; sense of guilt; social isolation; suicide, etc. Effects on the Family – drop in income leading to drop in living standards; poverty; mortgage arrears - repossession of homes; children may have to drop activities they were involved in; strain on relationships; lack of financial security, etc. Effects on Society – emigration; cost to the state – higher taxes; lack of role models and positive work ethic; antisocial behaviour, etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2012-hl-sc-q3-unemployment",
+          "src": "/exam-figures/home-economics/home-economics-2012-hl-sc-q3-unemployment.png",
+          "srcHash": "2f4fc40a31116d4c8a9091cd723c03ad",
+          "alt": "Original unemployment table for Ireland, with full Central Statistics Office caption. Years 2006, 2007, 2008, 2009, 2010, 2011: 4.4%, 4.5%, 6.4%, 11.8%, 13.7%, 14.2%. The original PAPER value for 2010 is 13.7%; scheme repeats 13.6%.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper, page 11 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q3aii", topicId: "home-economics-3-9", conceptId: "sc-q3aii",
+    section: "C", questionRef: "2012 HL Section C E3 Q3(a)(ii)",
+    stem: "The high level of joblessness and the continuing threat of unemployment are among the biggest issues adversely affecting the Irish economy. Figures released by the Central Statistics Office show that the standardised jobless rate increased to 14.4% in October 2011. Among those signing on were 93,013 Jobseeker’s Benefit claimants and 301,333 Jobseeker’s Allowance claimants.",
+    questionText: "Analyse how each of the following has impacted on current rates of unemployment: • geographical location • the global economy • the level of demand for products and services.",
+    tariffModel: {"kind":"fixed","notation":"1 reference per heading × 5 + 1 other point × 5"}, totalMarks: 20,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Geographical location", marks: 5, contextNote: "One point on this required heading. Source: Geographical location – variations in employment in different regions e.g. highest in border region and south east, lowest in the mid-east and west; areas where there is high unemployment can lead to further unemployment as people leave the area to find work elsewhere and consequently shops and services Close, etc.", permittedMarks: [0,5] },
+    { id: "heading-2", kind: "criterion", verbatim: "Global economy", marks: 5, contextNote: "One point on this required heading. Source: Global economy – downturn in the global economy causes unemployment rates in Ireland to rise; multi- national companies move their business to countries where production costs are lower etc.", permittedMarks: [0,5] },
+    { id: "heading-3", kind: "criterion", verbatim: "Demand for products / services", marks: 5, contextNote: "One point on this required heading. Source: Demand for products / services – cheaper imported goods has lead to a fall in demand for Irish products; unemployed people spending less so demand for services has decreased; people have cut back on spending because they have had cuts to their income so spending power is reduced; Irish tourism affected by availability of reasonably priced foreign holidays; shopping on-line has offered cheaper option to purchasing products locally, etc.", permittedMarks: [0,5] },
+    { id: "other-point", kind: "criterion", verbatim: "one other point", marks: 5, contextNote: "One ADDITIONAL point across the three headings. Source: Geographical location – variations in employment in different regions e.g. highest in border region and south east, lowest in the mid-east and west; areas where there is high unemployment can lead to further unemployment as people leave the area to find work elsewhere and consequently shops and services Close, etc. Global economy – downturn in the global economy causes unemployment rates in Ireland to rise; multi- national companies move their business to countries where production costs are lower etc. Demand for products / services – cheaper imported goods has lead to a fall in demand for Irish products; unemployed people spending less so demand for services has decreased; people have cut back on spending because they have had cuts to their income so spending power is reduced; Irish tourism affected by availability of reasonably priced foreign holidays; shopping on-line has offered cheaper option to purchasing products locally, etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2012-hl-sc-q3-unemployment",
+          "src": "/exam-figures/home-economics/home-economics-2012-hl-sc-q3-unemployment.png",
+          "srcHash": "2f4fc40a31116d4c8a9091cd723c03ad",
+          "alt": "Original unemployment table for Ireland, with full Central Statistics Office caption. Years 2006, 2007, 2008, 2009, 2010, 2011: 4.4%, 4.5%, 6.4%, 11.8%, 13.7%, 14.2%. The original PAPER value for 2010 is 13.7%; scheme repeats 13.6%.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper, page 11 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q3aiii", topicId: "home-economics-3-9", conceptId: "sc-q3aiii",
+    section: "C", questionRef: "2012 HL Section C E3 Q3(a)(iii)",
+    stem: "The high level of joblessness and the continuing threat of unemployment are among the biggest issues adversely affecting the Irish economy. Figures released by the Central Statistics Office show that the standardised jobless rate increased to 14.4% in October 2011. Among those signing on were 93,013 Jobseeker’s Benefit claimants and 301,333 Jobseeker’s Allowance claimants.",
+    questionText: "Name and give details of one statutory response to creating employment.",
+    tariffModel: {"kind":"fixed","notation":"Name 5 + matching details 5"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "anyN", verbatim: "Name", marks: 5, openList: true, group: {"claimMax":1,"perOption":5,"options":["Enterprise Ireland","County Enterprise Board","FÁS/ Solas","Forfás","IDA","Low corporation tax","JobBridge"]} },
+    { id: "details", kind: "criterion", verbatim: "Details", marks: 5, contextNote: "Details of that SAME statutory response. Original historical source: Enterprise Ireland state agency that assists companies to increase their sales and exports thus creating more employment County Enterprise Board offers support, training, advice, financial assistance - feasibility grants, capital grants, employment grants, equity grants, support enterprise and the creation and maintenance of jobs FÁS/ Solas –community employment schemes which allows unemployed people to work in their communities on a temporary basis to help develop their skills – projects include the arts, culture, tourism, sport and the environment Forfás – encourages the development of employment in the science and technology industry IDA – responsible for securing overseas investment grants for foreign investors Low corporation tax – encourages foreign companies to set up in Ireland JobBridge – National internship scheme launched in 2011 aims to provide work experience placements for interns for 6 or 9 months – aims to break the cycle where jobseekers require experience to get a job. Interns receive an extra €50 a week in addition to their social welfare payment.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2012-hl-sc-q3-unemployment",
+          "src": "/exam-figures/home-economics/home-economics-2012-hl-sc-q3-unemployment.png",
+          "srcHash": "2f4fc40a31116d4c8a9091cd723c03ad",
+          "alt": "Original unemployment table for Ireland, with full Central Statistics Office caption. Years 2006, 2007, 2008, 2009, 2010, 2011: 4.4%, 4.5%, 6.4%, 11.8%, 13.7%, 14.2%. The original PAPER value for 2010 is 13.7%; scheme repeats 13.6%.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper, page 11 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q3bi-definition", topicId: "home-economics-3-11", conceptId: "sc-q3bi",
+    section: "C", questionRef: "2012 HL Section C E3 Q3(b)(i) — definition",
+    stem: "Using your leisure time wisely will have long term benefits.",
+    questionText: "Define leisure",
+    tariffModel: {"kind":"fixed","notation":"Definition 6"}, totalMarks: 6,
+    rows: [
+    { id: "definition", kind: "point", verbatim: "Leisure is time not spent working or meeting the necessities of life; time available for relaxation; freedom from occupation or business, etc.", marks: 6, contextNote: "The source gives six marks for the definition, without smaller steps." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q3bi-value", topicId: "home-economics-3-11", conceptId: "sc-q3bi",
+    section: "C", questionRef: "2012 HL Section C E3 Q3(b)(i) — value",
+    stem: "Using your leisure time wisely will have long term benefits.\n\nDefine leisure",
+    questionText: "discuss its value in today’s society.",
+    tariffModel: {"kind":"fixed","notation":"Discussion 3 × 4"}, totalMarks: 12,
+    rows: [
+    { id: "discussion", kind: "criterion", verbatim: "value", marks: 12, contextNote: "allows people to relax and unwind from everyday stresses; improves physical well-being; enables family bonding; encourages social interaction; good example to children in relation to making use of free time, etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q3bii", topicId: "home-economics-3-11", conceptId: "sc-q3bii",
+    section: "C", questionRef: "2012 HL Section C E3 Q3(b)(ii)",
+    stem: "Using your leisure time wisely will have long term benefits.",
+    questionText: "Discuss the factors that can influence a person’s choice of leisure activities.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 12, contextNote: "Distinct points at the published value; no finer partial-credit steps are printed. Complete source guidance: Age – older people may be less physically able; certain sports may not be suitable for younger children (dangerous); interests vary with age; age may affect disposable income available for leisure, etc. Gender – certain sports may be dominated by one gender; males sometimes have more leisure time than working mums; males tend to have a higher participation in sports…, etc. Social influences – socio-economic group; where a person lives; current trends; etc. Cultural influences – certain sports associated with different countries / counties; family culture; traditions of particular countries e.g. dance, etc. Occupational influences – salary; choice of active/sedentary pursuits; extension of work; to network, etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q3ci", topicId: "home-economics-3-11", conceptId: "sc-q3ci",
+    section: "C", questionRef: "2012 HL Section C E3 Q3(c)(i)",
+    questionText: "Discuss the principle factors that can affect a family’s requirements for childcare.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "requirements for childcare", marks: 12, contextNote: "Distinct points at the published value; no finer partial-credit steps are printed. Complete source guidance: Parents working full time or part time; single parent working; availability of grandparents/family members; cost of care; after school care requirements; hours of opening; availability during school holidays; proximity to family home; special needs of child, etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2012 Higher Level — © State Examinations Commission.",
+    id: "he-2012-hl-sc-q3cii", topicId: "home-economics-3-11", conceptId: "sc-q3cii",
+    section: "C", questionRef: "2012 HL Section C E3 Q3(c)(ii)",
+    questionText: "Name and evaluate two types of childcare options that are available to parents.",
+    tariffModel: {"kind":"fixed","notation":"2 types × (name 3 + 2 evaluation points × 3)"}, totalMarks: 18,
+    rows: [
+    { id: "name-1", kind: "anyN", verbatim: "Name", marks: 3, contextNote: "Choose two DIFFERENT childcare types.", openList: true, group: {"claimMax":1,"perOption":3,"options":["nurseries and crèches","playschool/playgroup","Montessori school","childminder","au pair","after school groups,"]} },
+    { id: "evaluation-1", kind: "criterion", verbatim: "evaluative statement", marks: 6, contextNote: "Two evaluations of the SAME childcare type. The source requires advantages/disadvantages but provides no model evaluations. Source wording: evaluative statement - i.e. advantages/disadvantages , etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "name-2", kind: "anyN", verbatim: "Name", marks: 3, contextNote: "Choose two DIFFERENT childcare types.", openList: true, group: {"claimMax":1,"perOption":3,"options":["nurseries and crèches","playschool/playgroup","Montessori school","childminder","au pair","after school groups,"]} },
+    { id: "evaluation-2", kind: "criterion", verbatim: "evaluative statement", marks: 6, contextNote: "Two evaluations of the SAME childcare type. The source requires advantages/disadvantages but provides no model evaluations. Source wording: evaluative statement - i.e. advantages/disadvantages , etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2012-hl-sc-q3cii-option-1","label":"Childcare type 1","marks":9,"rowIds":["name-1","evaluation-1"]},{"sourceCardId":"he-2012-hl-sc-q3cii-option-2","label":"Childcare type 2","marks":9,"rowIds":["name-2","evaluation-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];
