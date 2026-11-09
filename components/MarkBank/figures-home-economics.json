@@ -852,5 +852,80 @@
     "alt": "Both original electricity-supply pictures, complete Meter Box and Miniature Circuit Breakers, with their original captions.",
     "attribution": "SEC Home Economics 2014 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
     "sourceNote": "Original PDF crop, bounds [153.24000549316406, 180.36001586914062, 465.37298583984375, 327.6717224121094], rendered at 2.5×. SHA256 f61bb13185cdfa86bac3a663f95a96a0ed31caa2d83c12853f9ca82e3be95775."
+  },
+  "home-economics-2015-hl-sa-q2": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sa-q2.png",
+    "md5": "02f88a83a7e78c27a17e08ffc476545a",
+    "alt": "Original carbohydrate table: all three named classes, Example and Food source columns, and every blank cell.",
+    "attribution": "SEC Home Economics 2015 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [35, 304.3675231933594, 570.219970703125, 483.7674255371094], rendered at 2.5×. SHA256 5c4476ce216694c183e33d8518a2bd7059dd3fd964f17516639e7e21fd5c4b2c."
+  },
+  "home-economics-2015-hl-sa-q5": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sa-q5.png",
+    "md5": "e3854c33dc69622e5df5cb7c0e693faf",
+    "alt": "Original wheat-grain table: complete Bran/Endosperm/Germ inputs and nutritional-significance cells.",
+    "attribution": "SEC Home Economics 2015 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [35, 39.88771057128906, 570.219970703125, 223.0076446533203], rendered at 2.5×. SHA256 029ced0ae20330d296a6f5cf37f0025bd47e4a30d5556f55e6cbad0728b894a8."
+  },
+  "home-economics-2015-hl-sa-q7": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sa-q7.png",
+    "md5": "0ae511f3351179c661db9c1a8c5a8592",
+    "alt": "Original sauce-classification question and TWO blank classification/example rows, preserving the printed response quota.",
+    "attribution": "SEC Home Economics 2015 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [35, 374.8076171875, 570.219970703125, 527.4475708007812], rendered at 2.5×. SHA256 55be8c8284e5c6b5a588eeb70bbaba4d1a3d41881a89734dacd7fb3381816963."
+  },
+  "home-economics-2015-hl-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sa-q8.png",
+    "md5": "23c1cb85391d6b21c716b0424f1b1d72",
+    "alt": "Original enzymic-spoilage question asking TWO of THREE named treatments: Blanching, Cold temperatures and Acids.",
+    "attribution": "SEC Home Economics 2015 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [35, 527.4475708007812, 570.219970703125, 792.2164916992188], rendered at 2.5×. SHA256 c2991c49220e21eb95307aee7df08b9074b7ade421a7a41dbc340807ee17715b."
+  },
+  "home-economics-2015-hl-sb-q1-survey": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sb-q1-survey.png",
+    "md5": "abbdb7adca8c76bfa0293588083fe060",
+    "alt": "Complete original school-food survey quotation, including every outlet percentage and all nine food/drink categories and percentages.",
+    "attribution": "SEC Home Economics 2015 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [82.44000244140625, 115.79998779296875, 523.739990234375, 295.32000732421875], rendered at 2.5×. SHA256 e58eb3d287c270949fe9e246d656b907d53ba4f3c78a01debc25b2ab76c05b64."
+  },
+  "home-economics-2015-hl-sa-q2-answer-table": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sa-q2-answer-table.png",
+    "md5": "76e32d2c5781795bb30b7d7d2effeb46",
+    "alt": "Original complete carbohydrate answer table, preserving each class and the aligned example/food-source associations.",
+    "attribution": "SEC Home Economics 2015 Higher Level marking scheme, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [66.67200469970703, 269.0999755859375, 540.527978515625, 440.93999099731445], rendered at 2.5×. SHA256 aaaacc05cce803e061135eacb2e00f4fe00c670cf470d6d21ff7d7cee24ac8a7.",
+    "solution": true
+  },
+  "home-economics-2015-hl-sb-q3b-moulds": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sb-q3b-moulds.png",
+    "md5": "0600b83ad82c57093d89a87d44c47d04",
+    "alt": "Original four-mould table with every name, characteristic and applicable reproduction method; complete general reproduction guidance remains in the answer rows.",
+    "attribution": "SEC Home Economics 2015 Higher Level marking scheme, page 12 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [67.88000170389812, 306.41998291015625, 548.9200032552084, 501.29997634887695], rendered at 2.5×. SHA256 05166fd3ce175db061a0b70d0249c85a80fb2d59d52f671957e2f5a2a9dece89.",
+    "solution": true
+  },
+  "home-economics-2015-hl-sb-q4b-budget": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sb-q4b-budget.png",
+    "md5": "46596e973545a024d49c69236c26998a",
+    "alt": "Original ten-area family budget, preserving all percentages, euro amounts and reasons, including underlined compulsory Housing, Food and Savings.",
+    "attribution": "SEC Home Economics 2015 Higher Level marking scheme, page 13 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [74.98000367482503, 445.99196166992186, 541.8199869791666, 689.2079711914063], rendered at 2.5×. SHA256 bac5b0e228459268b28066d7893450dc916ee30220ea9f24ddc364fdadff557c.",
+    "solution": true
+  },
+  "home-economics-2015-hl-sb-q4c-savings": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sb-q4c-savings.png",
+    "md5": "92fac17264061be883c4ca835c91d099",
+    "alt": "Original complete six-model savings table: institution/scheme, historical interest, access and tax remain aligned in their original cells.",
+    "attribution": "SEC Home Economics 2015 Higher Level marking scheme, page 14 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [67.89000177383423, 146.23197021484376, 549.1499938964844, 678.653306749132], rendered at 2.5×. SHA256 6848e25917eabdcd6b59a4292352e364a601cafd894f2ec4d6ab8b262bb25ad9.",
+    "solution": true
+  },
+  "home-economics-2015-hl-sc-q1aii-plastics": {
+    "src": "/exam-figures/home-economics/home-economics-2015-hl-sc-q1aii-plastics.png",
+    "md5": "bfeb21a964fc75396305b15392e47441",
+    "alt": "Original Thermoplastic/Thermosetting comparison table, retaining both properties and all matching example/use pairs.",
+    "attribution": "SEC Home Economics 2015 Higher Level marking scheme, page 16 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [67.86000156402588, 549.6599731445312, 534.6599731445312, 734.4599990844727], rendered at 2.5×. SHA256 130d96814007ae884d4f51c0f8ca002e467cab9a9fc086ea5937b990c54f599c.",
+    "solution": true
   }
 }

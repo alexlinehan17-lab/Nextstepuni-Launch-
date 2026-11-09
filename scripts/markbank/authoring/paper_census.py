@@ -1400,13 +1400,13 @@ def census_sections(subject, year, level, files=None):
                 # A part marker can extract with a stray space, '(C )' in the
                 # 2026 OL Section 2 paper, which hid its (C) under (B).
                 block = re.sub(r'\(([A-H]) \)', r'(\1)', block)
-            if subject == 'home-economics' and ((year in (2010, 2011, 2012) and level in ('hl', 'ol')) or (year == 2013 and level in ('hl', 'ol')) or (year == 2014 and level in ('hl', 'ol'))):
+            if subject == 'home-economics' and ((year in (2010, 2011, 2012) and level in ('hl', 'ol')) or (year == 2013 and level in ('hl', 'ol')) or (year == 2014 and level in ('hl', 'ol')) or (year == 2015 and level == 'hl')):
                 # The reviewed combined booklet merges its answer rules and
                 # next question into one PDF block. Quoted B heads follow a
                 # parenthesised tariff or a full stop; C's rubric precedes the elective
                 # in that same block. Preserve source text while exposing
                 # those real boundaries (paper pp2–5, 8–11). This is scoped
-                # to the independently swept 2010–2012 Higher/Ordinary and 2013 Higher/Ordinary plus 2014 Higher/Ordinary sittings.
+                # to the independently swept 2010–2012 Higher/Ordinary and 2013 Higher/Ordinary plus 2014 Higher/Ordinary and 2015 Higher sittings.
                 # 2011 Ordinary pp4/7/9 use strip-set text with duplicated
                 # glyphs at strip edges. The positional reader above keeps
                 # each original glyph once and restores printed part markers.
@@ -1425,6 +1425,13 @@ def census_sections(subject, year, level, files=None):
                 # Paper7 B3(b)'s two genuine priced roman asks follow
                 # Outline: as lowercase clauses. Keep both original markers.
                 block = re.sub(r'\s+(?=\((?:i|ii)\)\s+(?:the range of convenience soups|the advantages and disadvantages of convenience soups))', '\n', block)
+            if (subject, year, level) == ('home-economics', 2015, 'hl'):
+                # Page6 extracts the B1 number and (a) after the answering rubric.
+                block = re.sub(r'(?<=\.)\s+(?=1\.\s+\(a\)\s+Using the information given above)', '\n', block)
+                # Original paper6 prints lowercase inline roman headings in
+                # B1(a) and B1(c). B1(a)'s two source leaves share one flexible
+                # 24-mark tariff; the independent census keeps both leaves.
+                block = re.sub(r'\s+(?=\((?:i|ii)\)\s+(?:the provision|the nutritional significance|what is osteoporosis|the main factors))', '\n', block)
             # Business short questions can share a PDF block with the previous
             # question's underscore answer rules. Those rules have no sentence
             # punctuation, so the ordinary inline-head splitter misses Q2/Q3
@@ -1436,9 +1443,9 @@ def census_sections(subject, year, level, files=None):
                               r'|\s+(?=\d{1,2}\.\s+\([a-z]\)\s+[A-Z])'
                               r'|(?<=\d)\s+(?=\d{1,2}\.\s+[A-Z][a-z]+\s)', block)
                       if subject == 'business' else block.split('\n')
-                      if subject == 'home-economics' and ((year in (2010, 2011, 2012) and level in ('hl', 'ol')) or (year == 2013 and level in ('hl', 'ol')) or (year == 2014 and level in ('hl', 'ol'))) else [block])
+                      if subject == 'home-economics' and ((year in (2010, 2011, 2012) and level in ('hl', 'ol')) or (year == 2013 and level in ('hl', 'ol')) or (year == 2014 and level in ('hl', 'ol')) or (year == 2015 and level == 'hl')) else [block])
             for text in (part for chunk in chunks for part in PP.INLINE_QHEAD.split(chunk)):
-                if subject == 'home-economics' and ((year in (2011, 2012) and level in ('hl', 'ol')) or (year == 2013 and level in ('hl', 'ol')) or (year == 2014 and level in ('hl', 'ol'))):
+                if subject == 'home-economics' and ((year in (2011, 2012) and level in ('hl', 'ol')) or (year == 2013 and level in ('hl', 'ol')) or (year == 2014 and level in ('hl', 'ol')) or (year == 2015 and level == 'hl')):
                     # A's roman markers label answer spaces, including the
                     # two pictured symbols in Q12; they carry no prose asks.
                     # Preserve the whole question rather than an empty (i).
@@ -1613,7 +1620,7 @@ def census_sections(subject, year, level, files=None):
                          # its ruled roman blanks are correctly discarded.
                          # Those real question stems still establish A before
                          # B begins. Cover rubrics have no such question stem.
-                         or ((subject, year, level) in {('home-economics', 2010, 'ol'), ('home-economics', 2011, 'hl'), ('home-economics', 2011, 'ol'), ('home-economics', 2012, 'hl'), ('home-economics', 2012, 'ol'), ('home-economics', 2013, 'hl'), ('home-economics', 2013, 'ol'), ('home-economics', 2014, 'hl'), ('home-economics', 2014, 'ol')}
+                         or ((subject, year, level) in {('home-economics', 2010, 'ol'), ('home-economics', 2011, 'hl'), ('home-economics', 2011, 'ol'), ('home-economics', 2012, 'hl'), ('home-economics', 2012, 'ol'), ('home-economics', 2013, 'hl'), ('home-economics', 2013, 'ol'), ('home-economics', 2014, 'hl'), ('home-economics', 2014, 'ol'), ('home-economics', 2015, 'hl')}
                              and any(k[0] == section for k in stems))):
                 section, q, letter, roman = sh.group(1), None, None, None
             # 'Section 2 Applied Business Question 80 marks' is one block —
@@ -1675,6 +1682,13 @@ def census_sections(subject, year, level, files=None):
             # information supplied...'. Unread, its whole Section 2 vanished
             # from the census and every card citing it read as an orphan.
             text = re.sub(r'^QUESTION\s+(\d{1,2})\b', r'Question \1', text)
+        if (subject, year, level, section, q) == ('home-economics', 2015, 'hl', 'B', None) \
+                and text == '1.' and index + 1 < len(blocks) \
+                and blocks[index + 1].startswith('(a) Using the information given above'):
+            # Original paper6 prints B1's number beside a separate survey box.
+            # The first head has no prior q for the generic next-number rule.
+            q, letter, roman = 1, None, None
+            continue
         m = PP.QHEAD.match(text)
         if not m:
             un = PP.RUBRIC_HEAD.sub('', text, count=1)
