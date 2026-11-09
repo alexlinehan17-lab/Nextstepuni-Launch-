@@ -295,15 +295,33 @@ export function claimableTotal(card: SecCard): number {
 export const showsRowMarks = (card: SecCard) =>
   isPointCard(card) && !card.mathematicsScale && card.tariffModel.kind === 'fixed';
 
+/** Stored selections must still refer to distinct, published options. */
+const selectedOptionIndices = (group: NonNullable<MarkRow['group']>, picks: number[] = []) =>
+  [...new Set(picks)]
+    .filter(option => Number.isInteger(option) && option >= 0 && option < group.options.length)
+    .slice(0, group.claimMax);
+
 /**
  * Which mutually exclusive answer route the student has committed to, if any.
  * The SEC's double solidus separates routes that may not be mixed.
  */
-export function committedRoute(card: SecCard, claims: Record<string, RowClaim>): string | null {
+export function committedRoute(
+  card: SecCard,
+  claims: Record<string, RowClaim>,
+  picks: Record<string, number[]> = {},
+): string | null {
   if (!isPointCard(card)) return null;
+  // Keep explicitly claimed points' established priority when reopening work.
   for (let i = 0; i < card.rows.length; i++) {
     const r = card.rows[i];
     if (r.route && isClaimed(claims, rowId(r, i))) return r.route;
+  }
+  // Menu choices live separately from row claims. They also commit the answer
+  // to one route; otherwise two individually valid pools could be added.
+  for (let i = 0; i < card.rows.length; i++) {
+    const r = card.rows[i];
+    if (r.route && r.kind === 'anyN' && r.group
+        && selectedOptionIndices(r.group, picks[rowId(r, i)]).length > 0) return r.route;
   }
   return null;
 }
@@ -315,7 +333,7 @@ export function marksClaimed(
 ): number {
   if (!isPointCard(card)) return 0;
   if (!showsRowMarks(card)) return 0;
-  const route = committedRoute(card, claims);
+  const route = committedRoute(card, claims, picks);
   const bonus = card.questionBonus;
   return card.rows.reduce((n, r, i) => {
     const id = rowId(r, i);
@@ -325,17 +343,14 @@ export function marksClaimed(
     // A bounded "Any four 4(3)" group is scored by how many the student actually
     // had, not as one all-or-nothing block worth twelve marks.
     if (r.kind === 'anyN' && r.group) {
-      const chosen = Math.min(picks[id]?.length ?? 0, r.group.claimMax);
+      const selected = selectedOptionIndices(r.group, picks[id]);
       if (card.answerLanguageRule || card.extraneousMaterialRule) {
         const group = r.group;
-        const selected = [...new Set(picks[id] ?? [])]
-          .filter(option => Number.isInteger(option) && option >= 0 && option < group.options.length)
-          .slice(0, group.claimMax);
         return n + selected.reduce((sum, option, position) => sum
           + (group.perOptionSteps?.[position] ?? group.perOption)
             * answerCreditMultiplier(card, claims, id, option), 0);
       }
-      return n + claimedMarks(r.group, chosen);
+      return n + claimedMarks(r.group, selected.length);
     }
     if (r.parts) return n + Math.min(r.marks ?? 0, r.parts.reduce((sum, part) => {
       const partId = partClaimId(id, part.id);
@@ -782,7 +797,8 @@ const MarkRowView: React.FC<{
             // two of those menus, which banked one answer twice and told the
             // student they had scored marks the examiner never gave.
             const usedAlready = !on && takenElsewhere?.has(option);
-            const disabled = !on && (atCap || Boolean(usedAlready));
+            // Retained picks on a now-blocked route must remain removable.
+            const disabled = !on && (blocked || atCap || Boolean(usedAlready));
             return (
               <React.Fragment key={oi}>
               <button
@@ -845,6 +861,11 @@ const MarkRowView: React.FC<{
         {row.contextNote && (
           <p style={{ margin: '8px 0 0', font: `400 11.5px/1.45 ${SANS}`, color: MUTED }}>
             {row.contextNote}
+          </p>
+        )}
+        {blocked && blockedReason && (
+          <p style={{ margin: '8px 0 0', font: `400 11.5px/1.45 ${SANS}`, color: MUTED }}>
+            {blockedReason}
           </p>
         )}
         {atCap && (
@@ -2454,7 +2475,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
    */
   const unclaimed = useMemo(() => {
     if (!assessmentCard || !isPointCard(assessmentCard)) return [];
-    const route = committedRoute(assessmentCard, rowClaims);
+    const route = committedRoute(assessmentCard, rowClaims, picks);
     return assessmentCard.rows
       .filter((r, i) => {
         if (r.route && route && r.route !== route) return false;
@@ -2472,7 +2493,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         const tail = r.verbatim.split(/\s[—-]\s/).pop() ?? r.verbatim;
         return tail.trim().length <= 6 ? r.verbatim : tail;
       });
-  }, [assessmentCard, rowClaims]);
+  }, [assessmentCard, rowClaims, picks]);
   /* Three names fit the band; beyond that the count carries it. Naming all six
      would wrap the bar and push the grade buttons around. */
   const unclaimedNames = unclaimed.slice(0, 3);
@@ -2494,7 +2515,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       : assessmentCard.rubric.system === 'language-points' ? 'SEC answer allocation'
       : assessmentCard.rubric.system === 'business' ? 'Business allocation' : 'Geography allocation'
     : 'rubric';
-  const routeTaken = assessmentCard ? committedRoute(assessmentCard, rowClaims) : null;
+  const routeTaken = assessmentCard ? committedRoute(assessmentCard, rowClaims, picks) : null;
 
   const setClaim = useCallback((id: string, next: RowClaim) => {
     studyReview?.onCue('tap');
