@@ -11,6 +11,28 @@ from pathlib import Path
 
 
 def reviewed_keys(year, level):
+    if (year, level) == (2011, 'ol'):
+        # Independent 44-page visual census. CD Q2 has no booklet roman marker;
+        # the festival time/date/year question remains one total-only task.
+        root = Path(__file__).resolve().parents[3] / 'examiner-reports/russian'
+        for relative, digest in {
+            'papers/2011-ol-000-paper.pdf': '66f722cae32f9fe493d4b0c6fc5c3ace6127e75d0ea70e588f14bd3af9c338b7',
+            'papers/2011-ol-A00-paper.pdf': '714fb158cd3dbeeb8c556fb529881376db8154a1c6615ad8a3c8a4f4da8bb8ed',
+            'schemes/2011-ol.pdf': 'e4160e18369177d720c75bfba145a13289b352affa583db0881a37b058df1716',
+        }.items():
+            assert hashlib.sha256((root / relative).read_bytes()).hexdigest() == digest
+        keys = [('IR1',None,None,r) for r in ('i','ii','iii','iv','v','vi','vii','viii','ix')]
+        keys += [('IR2',None,None,r) for r in ('i','ii','iii','iv')]
+        keys += [('CD',q,None,r) for q in (1,4,5) for r in ('i','ii')]
+        keys += [('CD',q,None,None) for q in (2,3)]
+        keys += [(u,None,None,None) for u in ('LA2','MM','SD','SA','EW')]
+        assert len(keys) == 26
+        keys += [('L1',q,None,None) for q in range(1,5)]
+        keys += [('L2',q,None,r) for q,r in [(1,None),(2,'i'),(2,'ii'),(3,'i'),(3,'ii')]]
+        keys += [('L3',q,None,None) for q in range(1,4)]
+        keys += [('L4',q,None,None) for q in range(1,5)]
+        assert len(keys) == len(set(keys)) == 42
+        return set(keys)
     if (year, level) == (2012, 'ol'):
         # Independent 44-page census. Menu task (iv) has four priced subparts;
         # the grammar task belongs to the AVOR text and is not that handwriting.
