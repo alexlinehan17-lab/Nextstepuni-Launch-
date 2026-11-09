@@ -11,6 +11,27 @@ from pathlib import Path
 
 
 def reviewed_keys(year, level):
+    if (year, level) == (2015, 'hl'):
+        # Original 44-page visual census: 44 printed asks. The two L3 Q3
+        # leaves share one published eight-mark task, hence 43 cards.
+        root = Path(__file__).resolve().parents[3] / 'examiner-reports/russian'
+        for relative, digest in {
+            'papers/2015-hl-000-paper.pdf': '119308b8b944f4a21dab09cf461ebb94c84cb4289458b38925634cc74ed45e66',
+            'papers/2015-hl-A00-paper.pdf': 'ffc5916d6a67988ce34ebc982b8d10c62e420e01593ae9c953008e0035439dbd',
+            'schemes/2015-hl.pdf': '210b81b664cfac3107aed4c750d839c70c82777d40b92c805f7f5db60d1c730c',
+        }.items():
+            assert hashlib.sha256((root / relative).read_bytes()).hexdigest() == digest
+        keys = [('C1',q,None,r) for q in (1,2,3,4) for r in (('i','ii','iii','iv') if q==4 else ('i','ii','iii'))]
+        keys += [('C2',q,None,None) for q in (1,2,3,4)]
+        keys += [('LA1',None,None,None)] + [('LA2',None,None,r) for r in ('i','ii')]
+        keys += [(u,q,None,None) for u,q in [('SD',3),('GR',1),('SE',2),('GW',3)]]
+        assert len(keys)==24
+        keys += [('L1',q,None,None) for q in (1,2,3,4,5)]
+        keys += [('L2',q,None,r) for q,r in [(1,None),(2,None),(3,'i'),(3,'ii')]]
+        keys += [('L3',q,None,r) for q,r in [(1,None),(2,None),(3,'i'),(3,'ii'),(4,None)]]
+        keys += [('L4',q,None,r) for q,r in [(1,None),(2,'i'),(2,'ii'),(3,'i'),(3,'ii'),(4,None)]]
+        assert len(keys)==len(set(keys))==44
+        return set(keys)
     if (year, level) == (2016, 'hl'):
         # Independent 44-page census: 20 written and 20 listening tasks.
         # The two printed language-awareness tasks Q2.2/Q2.3 stay distinct.

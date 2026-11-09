@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import SessionScreen from '../components/MarkBank/SessionScreen';
 import { REVIEWED_CARDS } from '../components/MarkBank/cards/russian/reviewed';
@@ -13,6 +13,56 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('applies the actual 2015 employment-reference cap and restores selected answers',async()=>{
+    reveal('l3-1','hl',2015);
+    await waitFor(()=>expect(screen.getByRole('button',{name:'Answer 4'})).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'Answer 4'}));
+    fireEvent.click(screen.getByRole('button',{name:'he was invited to the interview · 2m'}));
+    fireEvent.click(screen.getByRole('button',{name:'Answer 5'}));
+    fireEvent.click(screen.getByRole('button',{name:'he was successful at interview · 2m'}));
+    await waitFor(()=>expect(screen.getByText(/placement is 4 of 4 marks/)).toBeVisible());
+    const flag=screen.getByRole('checkbox',{name:'No detail refers to work, employment, boxing, a trainer, a position or a post.'});
+    fireEvent.click(flag);
+    await waitFor(()=>expect(screen.getByText(/placement is 3 of 4 marks/)).toBeVisible());
+    expect(screen.getByText('These answers earn up to 3 marks altogether.')).toBeVisible();
+    fireEvent.click(flag);
+    await waitFor(()=>expect(screen.getByText(/placement is 4 of 4 marks/)).toBeVisible());
+  });
+  it('shows the 2015 literal Lower A overlap without relabelling the normal grid',async()=>{
+    reveal('gw','hl',2015);
+    await waitFor(()=>expect(screen.getByRole('button',{name:'Set Communication/content (C) to 15 marks'})).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'Set Communication/content (C) to 15 marks'}));
+    fireEvent.change(screen.getByRole('spinbutton',{name:/Response length \(words\)/}),{target:{value:'140'}});
+    const expression=screen.getByRole('heading',{name:'Language + expression (E)'}).closest('section');
+    if(!expression)throw new Error('expression');
+    expect(within(expression).getByText(/11–15 marks/)).toBeVisible();
+    fireEvent.click(screen.getByRole('checkbox',{name:/If the expression is very fluent/}));
+    expect(within(expression).queryByText(/11–15 marks/)).not.toBeInTheDocument();
+    expect(within(expression).getByText(/9\s*[-–]\s*11 Vocabulary/)).toBeVisible();
+    expect(within(expression).getByText('Lower A')).toBeVisible();
+    expect(screen.getByRole('button',{name:'Set Language + expression (E) to 0 marks'})).toHaveAttribute('aria-pressed','true');
+    fireEvent.click(screen.getByRole('button',{name:'Set Communication/content (C) to 7 marks'}));
+    expect(within(expression).getByText('Lower E')).toBeVisible();
+    expect(within(expression).getByText(/Both source scales apply/)).toBeVisible();
+    expect(screen.getByRole('button',{name:'Set Language + expression (E) to 7 marks'})).toBeEnabled();
+    expect(screen.queryByRole('button',{name:'Set Language + expression (E) to 11 marks'})).not.toBeInTheDocument();
+    expect(within(expression).getByText(/9\s*[-–]\s*11 Vocabulary/)).toBeVisible();
+  });
+  it('shows both 2015 printed job questions under the published joint allocation',async()=>{
+    reveal('l3-3','hl',2015);
+    await waitFor(()=>expect(screen.getByText(/Both printed questions are practised together/)).toBeVisible());
+    expect(screen.getByText(/Give one detail/)).toHaveTextContent('Give three details');
+    expect(screen.getByText(/single eight-mark maximum/)).toBeVisible();
+  });
+  it('keeps each 2015 complete admission explanation as one four-mark claim',async()=>{
+    reveal('c1-2-i','hl',2015);
+    await waitFor(()=>expect(screen.getByRole('button',{name:'Complete admission explanation'})).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'Complete admission explanation'}));
+    const claims=screen.getAllByRole('button',{name:/· 4m$/});
+    expect(claims).toHaveLength(2);fireEvent.click(claims[0]);
+    expect(claims[1]).toBeDisabled();
+    await waitFor(()=>expect(screen.getByText(/placement is 4 of 4 marks/)).toBeVisible());
+  });
   it('shows the 2016 food partial beside its constrained score control',async()=>{
     reveal('c1-1-ii','hl',2016);
     await waitFor(()=>expect(screen.getByText(/one-mark step on the main-course row/)).toBeVisible());
