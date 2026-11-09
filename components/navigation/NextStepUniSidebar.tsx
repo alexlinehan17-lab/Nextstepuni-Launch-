@@ -11,7 +11,6 @@ import {
 } from '../kobra-navigation-runtime';
 import { NavigationIcon, type NavigationIconName } from './NavigationIcon';
 import { useNavigation } from '../../contexts/NavigationContext';
-import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 import type { SessionUser } from '../../utils/authUtils';
 import type { UserSettings } from '../../types';
 import Avatar from '../Avatar';
@@ -47,7 +46,6 @@ const WIDTH_STORAGE_KEY = 'nextstepuni-sidebar-width';
 /** Uses the current purchased Kobra parts. Only the destinations/brand composition are ours. */
 export default function NextStepUniSidebar(props: Props) {
   const mobile = useIsMobile();
-  const mobileAppDesign = useMobileAppDesign();
   const nav = useNavigation();
   const [open, setOpen] = useState(() => {
     const saved = document.cookie.match(/(?:^|; )sidebar_state=(true|false)(?:;|$)/);
@@ -117,8 +115,10 @@ export default function NextStepUniSidebar(props: Props) {
     setHover({ x: row.left - parent.left, y: row.top - parent.top + content.current.scrollTop, width: row.width, height: row.height });
   };
 
-  // Mobile keeps its native bottom bar and profile sheet. No desktop sidebar shortcut is mounted.
-  if (mobile || mobileAppDesign) return <>{props.children}<div className="hidden"><NotificationBell uid={props.user.uid} onUnreadCountChange={props.onUnreadCountChange} /></div></>;
+  // Match the bottom bar's 768px breakpoint on every platform, including native
+  // iPads and desktop-mode Safari. Device detection must not leave tablets with
+  // neither navigation bar. Narrow Split View windows keep the bottom bar.
+  if (mobile) return <>{props.children}<div className="hidden"><NotificationBell uid={props.user.uid} onUnreadCountChange={props.onUnreadCountChange} /></div></>;
 
   const SoundScope = typeof globalThis.AudioContext === 'function' ? SoundEffects : Fragment;
   return <SoundScope><TooltipProvider>
