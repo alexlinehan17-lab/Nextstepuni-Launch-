@@ -13,6 +13,20 @@ def normal(text):
     return re.sub(r'[^\w]+', '', text.casefold())
 
 
+def verify_alternative_sources(document, card):
+    """An alternative rule must occur on its own declared source pages.
+
+    Do not accept a matching phrase elsewhere in the task's wider guidance.
+    This gate reads original PDF text; runtime tests do not require local PDFs.
+    """
+    for alternative in card.get('rubric', {}).get('alternativeSets', []):
+        pages = alternative['schemePages']
+        assert pages and all(type(page) is int and 1 <= page <= len(document) for page in pages), (card['id'], alternative['id'])
+        claim = normal(alternative['sourceText'])
+        sources = [normal('\n'.join(document[page-1].get_text(sort=sort) for page in pages)) for sort in (False, True)]
+        assert claim and any(claim in source for source in sources), (card['id'], alternative['id'], alternative['sourceText'])
+
+
 def claims(card):
     if card.get('answerLanguageRule'):
         yield card['answerLanguageRule']['sourceText']
@@ -50,6 +64,7 @@ def verify(cards=None):
     for card in cards:
         level = 'hl' if card['level'] == 'higher' else 'ol'
         with open_scheme(card['year'], level) as document:
+            verify_alternative_sources(document, card)
             pages = sorted(set(card['review']['schemePages'] + card['review'].get('guidancePages', [])
                                + card.get('answerLanguageRule', {}).get('schemePages', [])
                                + card.get('rubric', {}).get('allocationCap', {}).get('schemePages', [])))
