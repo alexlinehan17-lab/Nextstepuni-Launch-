@@ -146633,5 +146633,4044 @@
    "attribution": "SEC Home Economics 2018 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Open the original examination page to review this task in context."
   }
+ },
+ {
+  "id": "he-2018-ol-sa-q1",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-8",
+  "conceptId": "sa-q1",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "A",
+  "questionRef": "2018 OL Section A Q1",
+  "questionText": "Indicate with a tick (✓) whether each of the following statements is true or false.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "statement-1",
+    "kind": "point",
+    "verbatim": "Iron is essential for the manufacture of haemoglobin in the blood. — True",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. The original visible tick position determines True/False; its text-layer glyph extracts as9."
+   },
+   {
+    "id": "statement-2",
+    "kind": "point",
+    "verbatim": "Anaemia is caused by lack of iron in the diet. — True",
+    "marks": null,
+    "contextNote": "The original visible tick position determines True/False; its text-layer glyph extracts as9."
+   },
+   {
+    "id": "statement-3",
+    "kind": "point",
+    "verbatim": "A diet rich in fibre assists the absorption of iron. — False",
+    "marks": null,
+    "contextNote": "The original visible tick position determines True/False; its text-layer glyph extracts as9."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2018-ol-sa-q1",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2018-ol-sa-q2",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-8",
+  "conceptId": "sa-q2",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "A",
+  "questionRef": "2018 OL Section A Q2",
+  "questionText": "Using the words listed below, complete the following statements in relation to vitamins.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "blank-1",
+    "kind": "point",
+    "verbatim": "vitamin K",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Fill the three blanks in their original order. Complete original source: The primary function of vitamin K is to assist blood clotting. Vitamin B is necessary for the release of energy from carbohydrate and fat. Neural tube defects in the unborn baby may be prevented by pregnant women taking folic acid."
+   },
+   {
+    "id": "blank-2",
+    "kind": "point",
+    "verbatim": "Vitamin B",
+    "marks": null,
+    "contextNote": "Fill the three blanks in their original order. Complete original source: The primary function of vitamin K is to assist blood clotting. Vitamin B is necessary for the release of energy from carbohydrate and fat. Neural tube defects in the unborn baby may be prevented by pregnant women taking folic acid."
+   },
+   {
+    "id": "blank-3",
+    "kind": "point",
+    "verbatim": "folic acid",
+    "marks": null,
+    "contextNote": "Fill the three blanks in their original order. Complete original source: The primary function of vitamin K is to assist blood clotting. Vitamin B is necessary for the release of energy from carbohydrate and fat. Neural tube defects in the unborn baby may be prevented by pregnant women taking folic acid."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2018-ol-sa-q2",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2018-ol-sa-q3",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-10",
+  "conceptId": "sa-q3",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "A",
+  "questionRef": "2018 OL Section A Q3",
+  "questionText": "Outline two ways finance (money available) affects food choices among Irish consumers.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "way-1",
+    "kind": "point",
+    "verbatim": "(i) consumers with more money available can buy expensive foods frequently; tend to eat outside the home in restaurants; travel abroad experiencing different foods;",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Outline ANY TWO effects of finance using the full original source pool; no fixed higher/lower-income quota."
+   },
+   {
+    "id": "way-2",
+    "kind": "point",
+    "verbatim": "(ii) consumers with less money available may choose cheaper food options; buy less luxury food items; highly processed foods may be more cost effective; must plan for food shopping, shop wisely in order to live within their means; etc.",
+    "marks": null,
+    "contextNote": "Outline ANY TWO effects of finance using the full original source pool; no fixed higher/lower-income quota."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sa-q4",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-7",
+  "conceptId": "sa-q4",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "A",
+  "questionRef": "2018 OL Section A Q4",
+  "questionText": "Match each of the sources of lipids (fats) listed below with the correct food.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "pair-1",
+    "kind": "point",
+    "verbatim": "Salmon — marine",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "pair-2",
+    "kind": "point",
+    "verbatim": "Olive Oil — vegetable (plant)",
+    "marks": null
+   },
+   {
+    "id": "pair-3",
+    "kind": "point",
+    "verbatim": "Butter — animal",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2018-ol-sa-q4",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2018-ol-sa-q5",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sa-q5",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "A",
+  "questionRef": "2018 OL Section A Q5",
+  "questionText": "Identify three health problems that are caused by a diet high in sugar.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "problem-1",
+    "kind": "point",
+    "verbatim": "(i) tooth decay; obesity/weight gain;",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Identify ANY THREE problems across all original answer lines; no one-per-line quota."
+   },
+   {
+    "id": "problem-2",
+    "kind": "point",
+    "verbatim": "(ii) hyper activity; headaches;",
+    "marks": null,
+    "contextNote": "Identify ANY THREE problems across all original answer lines; no one-per-line quota."
+   },
+   {
+    "id": "problem-3",
+    "kind": "point",
+    "verbatim": "(iii) diabetes; heart disease; high blood pressure; etc.",
+    "marks": null,
+    "contextNote": "Identify ANY THREE problems across all original answer lines; no one-per-line quota."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sa-q6",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-4",
+  "conceptId": "sa-q6",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "A",
+  "questionRef": "2018 OL Section A Q6",
+  "questionText": "Explain why each of the following is important in safe food preparation and cooking: Food storage Personal hygiene Reheating procedures",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "point",
+    "verbatim": "Food storage: store raw and cooked foods in different areas of the fridge to prevent microbial cross contamination; store perishable food below 5°C to help slow down bacterial growth; store frozen food at -18°C; store foods in vermin proof containers; store dry foods in a cool, dry, well ventilated cupboard; remove vegetables and fruit from plastic wrapping to prevent the growth of moulds; when preparing perishable foods, keep out of the fridge for the shortest time to reduce the risk of food poisoning; follow storage instructions on food labels; check ‘use by date’/‘best before date’; cover foods when storing in fridge to prevent food drying out/cross contamination/odour transfer; etc.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Explain this required heading. Original2018 source wording and temperatures retained."
+   },
+   {
+    "id": "heading-2",
+    "kind": "point",
+    "verbatim": "Personal hygiene: wash hands before handling food as people may carry food poisoning bacteria on their hands; coughing and sneezing near food can contaminate it; clothing, aprons must be clean; cuts must be covered with a bright coloured plaster to prevent infections passing to food; ensure nails are clean; remove jewellery; a food handler with diarrhoea, vomiting etc. should not prepare or cook food; etc.",
+    "marks": null,
+    "contextNote": "Explain this required heading. Original2018 source wording and temperatures retained."
+   },
+   {
+    "id": "heading-3",
+    "kind": "point",
+    "verbatim": "Reheating procedures: food must be heated to a temperature high enough to destroy bacteria, or it may cause food poisoning; a temperature of 100°C for at least five minutes is necessary to destroy bacteria; high risk foods such as stews and gravies require heating to 100°C; reheating should be done quickly and thoroughly; reheat foods once only; if reheating in a microwave set at highest power setting; etc.",
+    "marks": null,
+    "contextNote": "Explain this required heading. Original2018 source wording and temperatures retained."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sa-q7",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-4",
+  "conceptId": "sa-q7",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "A",
+  "questionRef": "2018 OL Section A Q7",
+  "questionText": "Indicate with a tick (✓) whether each of the following statements is true or false.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "statement-1",
+    "kind": "point",
+    "verbatim": "Sugar is used as a preservative when making jam. — True",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. The original visible tick position determines True/False; its text-layer glyph extracts as9."
+   },
+   {
+    "id": "statement-2",
+    "kind": "point",
+    "verbatim": "Quick freezing results in the formation of large ice crystals within the food cell. — False",
+    "marks": null,
+    "contextNote": "The original visible tick position determines True/False; its text-layer glyph extracts as9."
+   },
+   {
+    "id": "statement-3",
+    "kind": "point",
+    "verbatim": "Chutney is made by boiling fruit and / or vegetables with sugar, vinegar and spices. — True",
+    "marks": null,
+    "contextNote": "The original visible tick position determines True/False; its text-layer glyph extracts as9."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2018-ol-sa-q7",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2018-ol-sa-q8",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-4",
+  "conceptId": "sa-q8",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "A",
+  "questionRef": "2018 OL Section A Q8",
+  "questionText": "Using the words listed below, complete the following statements in relation to food spoilage and food production.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "blank-1",
+    "kind": "point",
+    "verbatim": "Cheese and yoghurt are produced using bacteria.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "blank-2",
+    "kind": "point",
+    "verbatim": "Enzymes/yeast cause food spoilage in fruit and vegetables.",
+    "marks": null,
+    "contextNote": "The original scheme accepts Enzymes/yeast for the second blank. Retain both alternatives even though yeast also completes the third statement."
+   },
+   {
+    "id": "blank-3",
+    "kind": "point",
+    "verbatim": "The biological raising agent used in bread making is yeast.",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2018-ol-sa-q8",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2018-ol-sa-q9",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sa-q9",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "A",
+  "questionRef": "2018 OL Section A Q9",
+  "questionText": "Outline three steps that should be followed when planning a household budget.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "step-1",
+    "kind": "point",
+    "verbatim": "(i) estimate total regular income, salaries, wages, children’s allowance, pensions, social welfare benefits/allowances etc.; decide to budget weekly/monthly/yearly;",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Outline ANY THREE budget-planning steps across all original answer lines."
+   },
+   {
+    "id": "step-2",
+    "kind": "point",
+    "verbatim": "(ii) identify areas of expenditure; itemise all bills; allocate a percentage of income to each expense; make a list of planned spending;",
+    "marks": null,
+    "contextNote": "Outline ANY THREE budget-planning steps across all original answer lines."
+   },
+   {
+    "id": "step-3",
+    "kind": "point",
+    "verbatim": "(iii) allow for savings; look at the previous year’s bills; allow for special occasions, Christmas, holidays; store/save receipts; etc.",
+    "marks": null,
+    "contextNote": "Outline ANY THREE budget-planning steps across all original answer lines."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sa-q10",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sa-q10",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "A",
+  "questionRef": "2018 OL Section A Q10",
+  "questionText": "Give one advantage and one disadvantage of buying goods on credit. Advantage Disadvantage Name two types of credit available to consumers when buying a car.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "credit-1",
+    "kind": "point",
+    "verbatim": "Advantage: do not have to save for goods; can use the goods before they are paid for; can purchase large expensive items e.g. houses and cars; safer than carrying large amounts of cash; free credit for certain time length offered; can be used for online shopping; build up a good credit rating; etc.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "credit-2",
+    "kind": "point",
+    "verbatim": "Disadvantage: more expensive; interest rates can be high; can lead to debt; can cause impulse buying; goods can be repossessed if bought on hire purchase; annual stamp duty charge of €30 on credit cards paid to the government; etc.",
+    "marks": null
+   },
+   {
+    "id": "type-1",
+    "kind": "point",
+    "verbatim": "(i) personal loan; term loan from bank/building society/credit union;",
+    "marks": null,
+    "contextNote": "Also name ANY TWO car-credit types across both complete original source pools."
+   },
+   {
+    "id": "type-2",
+    "kind": "point",
+    "verbatim": "(ii) licensed money lenders; credit cards; hire purchase; overdraft; Personal Contract Plan Finance(PCP); etc.",
+    "marks": null,
+    "contextNote": "Also name ANY TWO car-credit types across both complete original source pools."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sa-q11",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-4",
+  "conceptId": "sa-q11",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "A",
+  "questionRef": "2018 OL Section A Q11",
+  "questionText": "Explain each of the textile care symbols shown below.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "symbol-1",
+    "kind": "point",
+    "verbatim": "Hot Iron",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "symbol-2",
+    "kind": "point",
+    "verbatim": "Drip dry",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2018-ol-sa-q11",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2018-ol-sa-q12",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-3",
+  "conceptId": "sa-q12",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "A",
+  "questionRef": "2018 OL Section A Q12",
+  "questionText": "State three ways technology has contributed to greater efficiency in the home.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "way-1",
+    "kind": "point",
+    "verbatim": "(i) timers - lower fuel bills; zoned heating for comfort; steam cleaners - hygiene; Skype - improved communication; mobile phones - pay bills;",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. State ANY THREE ways technology increases efficiency from all original source lines; no one-per-line quota."
+   },
+   {
+    "id": "way-2",
+    "kind": "point",
+    "verbatim": "(ii) electrical appliances - less time spent on tasks, reducing the work load in the home, giving more leisure time;",
+    "marks": null,
+    "contextNote": "State ANY THREE ways technology increases efficiency from all original source lines; no one-per-line quota."
+   },
+   {
+    "id": "way-3",
+    "kind": "point",
+    "verbatim": "(iii) computers - can work from home; alarm systems - improved home security; apps linked to phone to turn on heating, cooker; smart refrigerators; etc.",
+    "marks": null,
+    "contextNote": "State ANY THREE ways technology increases efficiency from all original source lines; no one-per-line quota."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q1ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-5",
+  "conceptId": "sb-q1ai",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q1(a)(i)",
+  "questionText": "Using the information presented in the table above and having regard to current healthy eating guidelines, evaluate the nutritional value of the pre‐prepared beef lasagne.",
+  "stem": "Dietary protein is one of the essential nutrients that we must eat every day. The table below shows the ingredients and nutritional information (per 100 g), of a pre‐prepared Beef Lasagne.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 points × 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "nutritional value",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12,
+     16,
+     20
+    ],
+    "contextNote": "Complete original source guidance: Fats for heat/energy; carbohydrates for heat/energy; sugar may lead to obesity, tooth decay; fibre to prevent constipation; protein for growth/repair of body cells; is a balanced meal 3 out of 4 food groups present; salt could cause high blood pressure; contains very little vegetable; fat could increase cholesterol; has very little fibre; saturated fat in the mince beef; no artificial additives; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2018-ol-sb-q1-lasagne",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2018-ol-sb-q1aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-10",
+  "conceptId": "sb-q1aii",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q1(a)(ii)",
+  "questionText": "Suggest one suitable accompaniment that could be served with beef lasagne. Give a reason for your choice.",
+  "stem": "Dietary protein is one of the essential nutrients that we must eat every day. The table below shows the ingredients and nutritional information (per 100 g), of a pre‐prepared Beef Lasagne.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 5,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Accompaniment2 + matching reason3"
+  },
+  "rows": [
+   {
+    "id": "accompaniment",
+    "kind": "criterion",
+    "verbatim": "Accompaniment",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Choose ONE suitable accompaniment consistently. Complete paired source guidance: Green salad for extra vitamins/minerals; steamed green vegetables for iron/calcium; baked potato for extra carbohydrates/fibre; garlic bread for extra carbohydrates; fresh orange juice for vitamin C; milk for calcium/vitamin D; variety; colour; texture; etc."
+   },
+   {
+    "id": "reason",
+    "kind": "criterion",
+    "verbatim": "Reason",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     3
+    ],
+    "contextNote": "Give the matching reason for the SAME accompaniment. Green salad for extra vitamins/minerals; steamed green vegetables for iron/calcium; baked potato for extra carbohydrates/fibre; garlic bread for extra carbohydrates; fresh orange juice for vitamin C; milk for calcium/vitamin D; variety; colour; texture; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q1b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-5",
+  "conceptId": "sb-q1b",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q1(b)",
+  "questionText": "Give an account of protein under each of the following headings: • classification • dietary sources • functions in the body.",
+  "stem": "Dietary protein is one of the essential nutrients that we must eat every day. The table below shows the ingredients and nutritional information (per 100 g), of a pre‐prepared Beef Lasagne.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 26,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Two classes4 + three sources4 + two functions3"
+  },
+  "rows": [
+   {
+    "id": "classes",
+    "kind": "criterion",
+    "verbatim": "classification",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "High biological value/animal protein; low biological value/vegetable/plant protein; simple proteins; conjugated proteins; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "sources",
+    "kind": "criterion",
+    "verbatim": "dietary sources",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12
+    ],
+    "contextNote": "ANY THREE sources across the complete animal/vegetable pools; no fixed heading quota. Animal protein: meat; fish; milk; dairy products - cheese, yogurt; eggs; etc. Vegetable protein: soya beans; cereals; nuts; lentils; seeds; beans; peas; etc. x",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "functions",
+    "kind": "criterion",
+    "verbatim": "functions in the body",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Growth; repair of body cells; manufacture of new cells; formation of muscle; skin and cell membranes; production of hormones; antibodies; enzymes; manufacture of blood plasma; a source of energy; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q1c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-5",
+  "conceptId": "sb-q1c",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q1(c)",
+  "questionText": "Outline three effects of heat on protein foods.",
+  "stem": "Dietary protein is one of the essential nutrients that we must eat every day. The table below shows the ingredients and nutritional information (per 100 g), of a pre‐prepared Beef Lasagne.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 3"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "effects of heat",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     3,
+     6,
+     9
+    ],
+    "contextNote": "Complete original source guidance: Protein coagulates; colour changes; denaturation occurs; becomes more digestible; connective tissue changes to gelatine in moist heat; meat softens and is easy to chew; improves flavour; destroys micro-organisms; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q1d",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-2",
+  "conceptId": "sb-q1d",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q1(d)",
+  "questionText": "Shopping online for food has become very popular. Discuss two advantages and two disadvantages of shopping online for groceries (food items).",
+  "stem": "Dietary protein is one of the essential nutrients that we must eat every day. The table below shows the ingredients and nutritional information (per 100 g), of a pre‐prepared Beef Lasagne.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Two advantages5 + two disadvantages5"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "criterion",
+    "verbatim": "Advantages",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     10
+    ],
+    "contextNote": "Advantages: do not have to leave home and visit shops; no parking charges; more convenient; no queuing to pay for items; can make price comparison; no crowds; variety of web sites; may be cheaper; not restricted to opening hours, goods may be purchased at any time; can research different products in own time; suitable for people with reduced mobility; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   },
+   {
+    "id": "heading-2",
+    "kind": "criterion",
+    "verbatim": "Disadvantages",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     10
+    ],
+    "contextNote": "Disadvantages: risk of credit card fraud; security of some web sites; impulse buying; can overspend; product purchased may not be as expected - inferior quality; size, may not be as described; goods take time to be delivered; may not be at home when delivery is attempted; cost of returning the goods; lack of touch/feel creates concerns over quality of the product on offer; lack of interactivity with a sales person; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q2a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sb-q2a",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q2(a)",
+  "questionText": "Discuss: (i) the causes of osteoporosis (ii) the effects of osteoporosis on the body.",
+  "stem": "‘At present it is estimated that 300,000 people in Ireland have osteoporosis.’ (www.irishosteoporosis.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Two causes4 + two effects4 + one other4"
+  },
+  "rows": [
+   {
+    "id": "causes",
+    "kind": "criterion",
+    "verbatim": "causes",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Causes: lack of calcium rich foods in the diet from an early age; lack of vitamin D; low levels of oestrogen in postmenopausal women; eating disorders; low testosterone in men; lack of weight bearing exercise; smoking; medications e.g. for rheumatoid arthritis and psoriasis; medical conditions e.g. some cancers; too much alcohol; thyroid conditions; hereditary; risk increases with age; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "effects",
+    "kind": "criterion",
+    "verbatim": "effects",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Effects: fragile/brittle bones; bone fractures; back/neck pain; loss of height; curved spine; rounded shoulders; loss of bone density/bone mass; tooth decay etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "1 other",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "One ADDITIONAL cause or effect. Original roman(i)/(ii) asks share20 marks; no10/10 split. Causes: lack of calcium rich foods in the diet from an early age; lack of vitamin D; low levels of oestrogen in postmenopausal women; eating disorders; low testosterone in men; lack of weight bearing exercise; smoking; medications e.g. for rheumatoid arthritis and psoriasis; medical conditions e.g. some cancers; too much alcohol; thyroid conditions; hereditary; risk increases with age; etc. Effects: fragile/brittle bones; bone fractures; back/neck pain; loss of height; curved spine; rounded shoulders; loss of bone density/bone mass; tooth decay etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q2b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-10",
+  "conceptId": "sb-q2b",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q2(b)",
+  "questionText": "Having regard to current healthy eating guidelines, set out a menu (3 meals) for one day for a person with osteoporosis.",
+  "stem": "‘At present it is estimated that 300,000 people in Ireland have osteoporosis.’ (www.irishosteoporosis.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Three whole meals6"
+  },
+  "rows": [
+   {
+    "id": "meal-1",
+    "kind": "criterion",
+    "verbatim": "Breakfast",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     6
+    ],
+    "contextNote": "Plan this complete meal for the SAME one-day osteoporosis menu. The source awards whole meals6, with no per-food allocation. Complete original model: Breakfast: orange juice; porridge with full fat milk; scrambled egg on wholemeal toast; fruit smoothie; fruit yoghurt; etc."
+   },
+   {
+    "id": "meal-2",
+    "kind": "criterion",
+    "verbatim": "Lunch",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     6
+    ],
+    "contextNote": "Plan this complete meal for the SAME one-day osteoporosis menu. The source awards whole meals6, with no per-food allocation. Complete original model: Lunch: ham/cheese sandwich; strawberry yoghurt; apple; glass of milk; etc."
+   },
+   {
+    "id": "meal-3",
+    "kind": "criterion",
+    "verbatim": "Dinner",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     6
+    ],
+    "contextNote": "Plan this complete meal for the SAME one-day osteoporosis menu. The source awards whole meals6, with no per-food allocation. Complete original model: Dinner: egg mayonnaise; lasagne and green salad; rice pudding; glass of milk; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q2c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sb-q2c",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q2(c)",
+  "questionText": "Give details of three dietary and / or lifestyle changes that will help prevent osteoporosis.",
+  "stem": "‘At present it is estimated that 300,000 people in Ireland have osteoporosis.’ (www.irishosteoporosis.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "changes",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12
+    ],
+    "contextNote": "Choose ANY THREE dietary and/or lifestyle changes across both complete source pools; no fixed heading quota. Complete original source guidance: Dietary: increase intake of vitamin D and phosphorus rich foods in the diet; increase the intake of calcium; increase intake of vitamin C; include dairy products in the diet; reduce caffeine; take calcium and vitamin D supplements; balance protein intake, too much or too little can have an effect on bone density; etc. Lifestyle: exercise regularly, especially weightbearing exercise; do not smoke; limit alcohol intake; have regular bone density scans; consider HRT for post-menopausal women; get enough sunshine; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q3a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sb-q3a",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q3(a)",
+  "questionText": "Give an account of (i) the nutritive value and (ii) the dietetic value of cereals.",
+  "stem": "Cereals are the staple food of many countries.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Two nutritive4 + two dietetic4 + one other4"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "criterion",
+    "verbatim": "Nutritive",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Nutritive: source of LBV protein, for growth/repair of boby cells; source of carbohydrate in the form of starch, for heat/energy; wholegrains are a source of fibre which prevents constipation; contain unsaturated fatty acids; source of B group vitamins; the germ is a source of vitamin E; source of calcium, iron & phosphorus; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "heading-2",
+    "kind": "criterion",
+    "verbatim": "Dietetic",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Dietetic: source of starch for energy; whole grains contain dietary fibre to stimulate peristalsis; fat is polyunsaturated, does not contribute to the build-up of cholesterol; very versatile, can be used in many different ways; inexpensive to buy; easy to use; gluten cannot be digested by coeliac’s; phytic acid inhibits the absorption of iron and calcium; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "1 other",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "One ADDITIONAL nutritive or dietetic point. Original inline roman(i)/(ii) asks share20 marks; no10/10 split. Nutritive: source of LBV protein, for growth/repair of boby cells; source of carbohydrate in the form of starch, for heat/energy; wholegrains are a source of fibre which prevents constipation; contain unsaturated fatty acids; source of B group vitamins; the germ is a source of vitamin E; source of calcium, iron & phosphorus; etc. Dietetic: source of starch for energy; whole grains contain dietary fibre to stimulate peristalsis; fat is polyunsaturated, does not contribute to the build-up of cholesterol; very versatile, can be used in many different ways; inexpensive to buy; easy to use; gluten cannot be digested by coeliac’s; phytic acid inhibits the absorption of iron and calcium; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q3b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sb-q3b",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q3(b)",
+  "questionText": "List three cereals. Name a different product made from each of the cereals listed.",
+  "stem": "Cereals are the staple food of many countries.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Three cereals2 + three matching products2"
+  },
+  "rows": [
+   {
+    "id": "cereals",
+    "kind": "anyN",
+    "verbatim": "cereals",
+    "marks": 6,
+    "openList": true,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "wheat",
+      "barley",
+      "rye",
+      "oats",
+      "rice",
+      "maize"
+     ]
+    },
+    "contextNote": "Choose ANY THREE different cereals from the full printed pool."
+   },
+   {
+    "id": "products",
+    "kind": "criterion",
+    "verbatim": "products",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Give a DIFFERENT product matching EACH of the SAME THREE selected cereals. Complete original paired source pools: Wheat: wholemeal/stone-ground/white/self-raising/strong flour; pasta; breakfast cereals e.g. weetabix; etc. barley: beer; barley water; vinegar; soup mix; etc. rye: rye bread; crisp breads; etc. oats: porridge; oat cakes; flapjacks; etc. rice: rice pudding; rice flour; rice cakes; rice krispies; etc. maize: cornflour; popcorn; sweetcorn; cornflakes; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q3ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sb-q3ci",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q3(c)(i)",
+  "questionText": "explain the difference between white (plain / cream) flour and wholemeal flour",
+  "stem": "Cereals are the staple food of many countries.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points × 3"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "difference",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Explain the difference using both full flour profiles. Two3 points are printed; no independent3-mark award is attached to a specific flour. Complete original source guidance: White flour: bran and germ are completely removed; endosperm remains in the flour; loss of vitamin B; fortified with vitamins; 75% extraction rate; etc. Wholemeal flour: brown in colour; high fibre content; 100% extraction rate; contains all the wheat grain; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q3cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-4",
+  "conceptId": "sb-q3cii",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q3(c)(ii)",
+  "questionText": "outline three guidelines to consider when storing cereal products.",
+  "stem": "Cereals are the staple food of many countries.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "guidelines",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12
+    ],
+    "contextNote": "Complete original source guidance: Store in a cool, dry place; when opened, store in an airtight container; use by ‘best before date’; whole grain cereals have a shorter shelf life due to fat in the germ; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q4a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-2",
+  "conceptId": "sb-q4a",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q4(a)",
+  "questionText": "In your opinion, was the shop entitled to refuse a refund to Seán and Áine? Give reasons for your answer.",
+  "stem": "Seán and Áine bought a television in a sale. When they unpacked the television, they found the screen was broken. They returned the television to the shop and were refused a refund.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "reasons",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15
+    ],
+    "contextNote": "Original historical2018 account of the faulty-sale-item scenario. Complete original source guidance: Consumer is entitled to return an item which is faulty; entitled to repair, refund or replacement; entitlement is the same for sale items unless the consumer was made aware of the fault at the time of purchase; the television was checked before leaving the shop; television and package left the shop in perfect condition; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q4bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-2",
+  "conceptId": "sb-q4bi",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q4(b)(i)",
+  "questionText": "Name one reliable source of consumer advice available to Seán and Áine.",
+  "stem": "Seán and Áine bought a television in a sale. When they unpacked the television, they found the screen was broken. They returned the television to the shop and were refused a refund.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 5,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "One name5"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "anyN",
+    "verbatim": "Name",
+    "marks": 5,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "National Consumer Agency",
+      "Ombudsman",
+      "National Standards Authority of Ireland",
+      "Consumer Association of Ireland",
+      "Advertising Standard Authority of Ireland",
+      "Citizens Information Board",
+      "European Consumer Centre (ECC) Ireland",
+      "Competition and Consumer Protection Commission(CCPC)",
+      "Money Advice and Budgeting Service (MABS)",
+      "magazines – Consumer Choice, Which",
+      "websites"
+     ]
+    },
+    "contextNote": "Name ONE reliable source from the full original historical agency/magazine/website pool."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q4bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-2",
+  "conceptId": "sb-q4bii",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q4(b)(ii)",
+  "questionText": "Outline the procedure for making a complaint when a problem occurs.",
+  "stem": "Seán and Áine bought a television in a sale. When they unpacked the television, they found the screen was broken. They returned the television to the shop and were refused a refund.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 points × 3"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "procedure",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     3,
+     6,
+     9,
+     12,
+     15
+    ],
+    "contextNote": "Complete original source guidance: Return to the retailer a soon as possible with the faulty goods; bring receipt as proof of purchase; complain promptly to the supplier if there is a fault with a service; speak to the manager; outline the complaint briefly; state what should be done about the faulty goods or service; must be realistic about compensation; if the response is unsatisfactory, complaint should be made in writing; letter should include, description of the goods/service, copy of receipt, where and when it was bought, and redress sought; could go to the Small Claims Court or solicitor; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q4c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-2",
+  "conceptId": "sb-q4c",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q4(c)",
+  "questionText": "Explain three benefits of the Small Claims Court to the consumer.",
+  "stem": "Seán and Áine bought a television in a sale. When they unpacked the television, they found the screen was broken. They returned the television to the shop and were refused a refund.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "benefits",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15
+    ],
+    "contextNote": "Historical2018 Small Claims fee and maximum award retained. Complete original source guidance: Resolves small claims quickly; is inexpensive; easy; cost of application is €25.00; no need for a solicitor; may award claims up to €2,000; is available locally; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q5a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-3",
+  "conceptId": "sb-q5a",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q5(a)",
+  "questionText": "Discuss four ways older people (grandparent/s) provide support for other members of the family.",
+  "stem": "Each family member has many roles and responsibilities within the family.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "support",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15,
+     20
+    ],
+    "contextNote": "Complete original source guidance: Help their children out financially i.e. deposit for a house; help out with child-minding; provide emotional support to their children and grandchildren; pass on values from one generation to the next; spend time with grandchildren helping out with homework; help with household tasks; collect grandchildren from school; help rear young children; advise; indirectly teach young people respect; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q5b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-3",
+  "conceptId": "sb-q5b",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q5(b)",
+  "questionText": "Describe three ways older people can maintain (keep) their independence.",
+  "stem": "Each family member has many roles and responsibilities within the family.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "independence",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15
+    ],
+    "contextNote": "Complete original source guidance: Join active retirement groups to build their own social circle; move to sheltered accommodation with their own unit supported by a manager/warden; move into a granny flat attached to the house of a family member; downsize to a smaller house, less maintenance/cleaning; move to a bungalow, ease of access/no stairs; engage with voluntary services e.g. Meals on Wheels, will provide meals at a much reduced rate; state provides pension, financial independence; medical cards are provided to all people over 70; free travel to all people over 66, allows older people to travel accompanied by another adult; public health nurses will visit older people in their homes to address minor health issues; HSE provides home help and home care assistants to help older people; Senior Alert Scheme provides grant support for the supply of equipment, e.g. monitored personal alarms; Active Age groups do activities e.g. bowling, bingo to prevent isolation and loneliness; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q5c-definition",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-1",
+  "conceptId": "sb-q5c-definition",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q5(c) — definition",
+  "questionText": "Explain generation conflict.",
+  "stem": "Each family member has many roles and responsibilities within the family.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 5,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Definition5"
+  },
+  "rows": [
+   {
+    "id": "definition",
+    "kind": "criterion",
+    "verbatim": "generation conflict",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     5
+    ],
+    "contextNote": "Conflict may arise between parents and adolescents; can occur between adults and their own parents; occurs when attitudes and views of one generation clash with those of another generation; older generation can recall their own behaviour at the same age as their children or grandchildren, without taking into account the social changes that have taken place since; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sb-q5c-ways",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-1",
+  "conceptId": "sb-q5c-ways",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "B",
+  "questionRef": "2018 OL Section B Q5(c) — ways",
+  "questionText": "Outline two ways of dealing with generation conflict.",
+  "stem": "Each family member has many roles and responsibilities within the family.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Two ways5"
+  },
+  "rows": [
+   {
+    "id": "ways",
+    "kind": "criterion",
+    "verbatim": "ways",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     10
+    ],
+    "contextNote": "Good communication avoids confrontation; is important that everyone knows what is expected of them and where their boundaries lie; patience; understanding of others prevent conflict; younger people should appreciate the wisdom and experience of older generations; appreciate both sides; do not ignore conflict; create an atmosphere where people can talk to each other; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sc-q1ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-5",
+  "conceptId": "sc-q1ai",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E1 Q1(a)(i)",
+  "questionText": "Explain the function of the following parts of the cold‐water system shown above: • stopcock • ball valve (ballcock) • overflow pipe.",
+  "stem": "‘We value water as a precious natural resource on which the quality of life depends.’ (www.engineersireland.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Three required parts×two function points3"
+  },
+  "rows": [
+   {
+    "id": "part-1",
+    "kind": "criterion",
+    "verbatim": "stopcock",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "stopcock 2 points @ 3 marks each Is a special valve found on a service pipe outside the house/under the kitchen sink; allows the water supply to be shut off if there is a problem; etc. x",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "part-2",
+    "kind": "criterion",
+    "verbatim": "ball valve (ballcock)",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "ball valve (ballcock) 2 points @ 3 marks each Controls the level of water in the water tank in the attic or toilet cistern; it floats on the top of a full tank keeping the valve closed; it closes off the pipe and stops the flow when a certain level is reached; when water is used e.g. toilet is flushed the ball drops, opening the valve until the water fills again to the correct level, closing the valve; prevents an overflow of water into the house; etc. x",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "part-3",
+    "kind": "criterion",
+    "verbatim": "overflow pipe",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "overflow pipe. 2 points @ 3 marks each Prevents flooding if there is a problem with the ballcock; if the tank fills beyond maximum capacity it allows excess water to flow outside the house preventing damage; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2018-ol-sc-q1-water",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2018-ol-sc-q1aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-5",
+  "conceptId": "sc-q1aii",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E1 Q1(a)(ii)",
+  "questionText": "Describe each of the following stages in the water treatment process: (a) screening (b) chlorination (c) fluoridation (d) testing.",
+  "stem": "‘We value water as a precious natural resource on which the quality of life depends.’ (www.engineersireland.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Four required stages4"
+  },
+  "rows": [
+   {
+    "id": "stage-1",
+    "kind": "criterion",
+    "verbatim": "Screening",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Screening: impurities in water such as floating debris are removed from the water; water passes through a series of coarse filters and fine screens to remove floating debris e.g. leaves or twigs; etc."
+   },
+   {
+    "id": "stage-2",
+    "kind": "criterion",
+    "verbatim": "Chlorination",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Chlorination: chlorine is added to kill any bacteria; etc."
+   },
+   {
+    "id": "stage-3",
+    "kind": "criterion",
+    "verbatim": "Fluoridation",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Fluoridation: fluoride is added to strengthen teeth and reduce tooth decay; etc."
+   },
+   {
+    "id": "stage-4",
+    "kind": "criterion",
+    "verbatim": "Testing",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Testing: water is tested for quality and purity; is passed fit for human consumption; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sc-q1aiii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-5",
+  "conceptId": "sc-q1aiii",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E1 Q1(a)(iii)",
+  "questionText": "Outline four ways of conserving water in the home.",
+  "stem": "‘We value water as a precious natural resource on which the quality of life depends.’ (www.engineersireland.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points × 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "conserving water",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12,
+     16
+    ],
+    "contextNote": "Choose ANY FOUR conservation ways across all source headings; no toilet/tap/appliance/water quota. Complete original source guidance: Toilet: install a dual flush toilet; a rainwater harvesting system linked to the water system can be used to flush toilets; etc. Taps: repair leaking taps as they waste up to one litre of water per hour; do not wash items under a running tap; do not leave taps running while washing teeth; use a basin in the sink rather than washing under a running tap; etc. Appliances: choose A rated appliances e.g. dishwasher as they are more efficient in use of water; fill kettle with only the amount of water needed; wait until the washing machine or dishwasher is full before turning on; use economy or quick wash cycle; etc. Water: use a shower instead of a bath; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sc-q1bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1bi",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E1 Q1(b)(i)",
+  "questionText": "Discuss the benefits of three local amenities for families with young children.",
+  "stem": "Proximity to local amenities can add value to a house.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "benefits",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15
+    ],
+    "contextNote": "Discuss benefits of ANY THREE local amenities for families with young children. Keep each benefit matched to its amenity; preserve all described/name-only choices. Complete original source guidance: Schools: availability of pre-schools, primary and secondary schools help children achieve their academic potential; etc. community centres: provide a place for individuals and families to meet and socialise, help develop a sense of community spirit; etc. sports fields/facilities: provide an area for people to train and socialise; etc. nearby public transport links: enables people to travel easily to work or to other amenities; etc. green spaces: with landscaping help to give a housing development a sense of space and add visual appeal; etc. play areas: provide children outdoor space to play and socialise in safe environment; etc. street lighting: makes people feel safer when driving or walking in a public area; etc. refuse collection: keeps homes and housing developments clean, hygienic and prevents littering; etc. shops: enables easy access to essential items without having to travel to urban areas; etc. accept: water; sewage; street cleaning; libraries; swimming pools; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sc-q1bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1bii",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E1 Q1(b)(ii)",
+  "questionText": "Give three reasons why renting a house is a more popular choice than buying for some people.",
+  "stem": "Proximity to local amenities can add value to a house.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "reasons",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15
+    ],
+    "contextNote": "Complete original source guidance: No initial capital outlay; smaller deposit required making it more affordable; houses expensive to buy; freedom to move whenever they wish e.g. changing jobs; wider choice of accommodation options available to rent; landlord responsible for maintenance; landlord must give notice to quit; the Residential Tenancies Act provides protection for tenants and landlords; rent allowance is available; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sc-q1ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-4",
+  "conceptId": "sc-q1ci",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E1 Q1(c)(i)",
+  "questionText": "Outline three factors that a student should consider when selecting furniture for a bedroom.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "factors",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15
+    ],
+    "contextNote": "Complete original source guidance: Function of the room; cost; good quality; construction, well made; space available; durable/strong/hard wearing; size of the room, furniture will fit into room without dominating it; décor of the room; personal preferences; easy to use; safe to use; comfortable; design; functions efficiently; large enough to provide sufficient storage space; ergonomics of the furniture; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sc-q1cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-4",
+  "conceptId": "sc-q1cii",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E1 Q1(c)(ii)",
+  "questionText": "Identify and describe three items of storage furniture suitable for a student’s rented accommodation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Three names2 + three matching descriptions3"
+  },
+  "rows": [
+   {
+    "id": "names",
+    "kind": "anyN",
+    "verbatim": "Identify",
+    "marks": 6,
+    "openList": true,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Built-in wardrobes",
+      "shelving",
+      "modular units",
+      "free-standing units",
+      "bed storage",
+      "clothes organisers/rails",
+      "bedside lockers"
+     ]
+    },
+    "contextNote": "Choose ANY THREE different items of storage furniture."
+   },
+   {
+    "id": "descriptions",
+    "kind": "criterion",
+    "verbatim": "Description",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     3,
+     6,
+     9
+    ],
+    "contextNote": "Describe EACH of the SAME THREE selected items. Complete paired source guidance: Built-in wardrobes: consist of hanging rails, drawers and open shelving; available in a wide variety of shapes, sizes, and materials; may be custom built to suit the space; cannot be moved or rearranged after they are installed; etc. shelving: open shelving units; available in a wide variety of shapes, sizes and materials; cheap form of storage; bookcases; etc. modular units: consist of a single wall unit designed with open shelving/cupboards/display areas/or desk; display decorative items; used in confined spaces; computer desks; etc. free-standing units: flatpack furniture; open shelving units and drawers; can be moved easily; etc. bed storage: under the bed drawers; etc. clothes organisers/rails; bedside lockers; etc. Clothes organisers/rails and bedside lockers are accepted names only; no description models are invented.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sc-q2ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2ai",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E2 Q2(a)(i)",
+  "questionText": "Comment on the suitability of the uniforms as shown above for primary school students. Refer to: • function • comfort • aesthetic appeal.",
+  "stem": "‘A school uniform can play a crucial role in establishing and maintaining the school identity.’ (www.oireachtas.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Function2×3 + comfort2×3 + aesthetic appeal2×3"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "criterion",
+    "verbatim": "Function",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Function: easy to wear; suitable for school; durable; versatile; will maintain shape; will not crease; fabric suited to warm and cold weather; trousers and tights are warm for winter wear; well fitting flat shoes; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "heading-2",
+    "kind": "criterion",
+    "verbatim": "Comfort",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Comfort: allows for ease of movement in bending stretching while maintaining shape; easy to remove cardigan or jumper; stretch fabric; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "heading-3",
+    "kind": "criterion",
+    "verbatim": "Aesthetic appeal",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Aesthetic appeal: no logo or school crest; will suit all shapes and sizes; v neck cardigan suits the type of blouse; short sleeves on blouse are attractive; pleats on skirt/pinafore allow for different shapes; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2018-ol-sc-q2-uniforms",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2018-ol-sc-q2aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2aii",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E2 Q2(a)(ii)",
+  "questionText": "Suggest two methods that could be used to apply a crest to the uniform.",
+  "stem": "‘A school uniform can play a crucial role in establishing and maintaining the school identity.’ (www.oireachtas.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 7,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Two methods4+3"
+  },
+  "rows": [
+   {
+    "id": "methods",
+    "kind": "anyN",
+    "verbatim": "methods",
+    "marks": 7,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Appliqué",
+      "embroidery",
+      "quilting",
+      "beading",
+      "embossing",
+      "fabric painting",
+      "iron-on"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    },
+    "contextNote": "Choose ANY TWO different methods from the complete original pool. The first credited method earns4 and the second3; no fixed method receives the higher award."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sc-q2bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-7",
+  "conceptId": "sc-q2bi",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E2 Q2(b)(i)",
+  "questionText": "Explain why fabric finishes are used on fabric.",
+  "stem": "Modern fabrics have a variety of finishes applied to them during manufacture.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 3"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "fabric finishes",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     3,
+     6,
+     9
+    ],
+    "contextNote": "Complete original source guidance: To prevent creasing; prevent shrinkage; to give a fabric desirable characteristics e.g. waterproofing, stain resistant etc.; to make the fabric hard wearing; improve safety; to improve wearing qualities; to prevent loss of colour; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sc-q2bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-7",
+  "conceptId": "sc-q2bii",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E2 Q2(b)(ii)",
+  "questionText": "Name and describe one fabric finish.",
+  "stem": "Modern fabrics have a variety of finishes applied to them during manufacture.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name3 + description3"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "point",
+    "verbatim": "Waterproofing",
+    "marks": 3
+   },
+   {
+    "id": "description",
+    "kind": "criterion",
+    "verbatim": "Description",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     3
+    ],
+    "contextNote": "Describe this SAME selected finish. Waterproofing: makes fabric water repellent; etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "answerVariants": [
+   {
+    "id": "finish-1",
+    "label": "Waterproofing",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Waterproofing",
+      "marks": 3
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Describe this SAME selected finish. Waterproofing: makes fabric water repellent; etc."
+     }
+    ]
+   },
+   {
+    "id": "finish-2",
+    "label": "anti-static",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "anti-static",
+      "marks": 3
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Describe this SAME selected finish. anti-static: prevents fabric from clinging to the skin; etc."
+     }
+    ]
+   },
+   {
+    "id": "finish-3",
+    "label": "stain resistant",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "stain resistant",
+      "marks": 3
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Describe this SAME selected finish. stain resistant: makes fabrics easier to clean and keep clean; etc."
+     }
+    ]
+   },
+   {
+    "id": "finish-4",
+    "label": "crease resistant",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "crease resistant",
+      "marks": 3
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Describe this SAME selected finish. crease resistant: prevents fabrics from creasing, reducing the need for ironing; etc."
+     }
+    ]
+   },
+   {
+    "id": "finish-5",
+    "label": "mercerising",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "mercerising",
+      "marks": 3
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Describe this SAME selected finish. mercerising: makes the fabric stronger and more absorbent; etc."
+     }
+    ]
+   },
+   {
+    "id": "finish-6",
+    "label": "flame retardant",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "flame retardant",
+      "marks": 3
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Describe this SAME selected finish. flame retardant: reduces the flammability of a fabric; etc."
+     }
+    ]
+   },
+   {
+    "id": "another-finish",
+    "label": "Another valid fabric finish",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Choose ONE finish consistently; all six original models retained."
+     },
+     {
+      "id": "description",
+      "kind": "criterion",
+      "verbatim": "Description",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Describe the SAME selected finish; no additional original model is printed."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2018-ol-sc-q2ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2ci",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E2 Q2(c)(i)",
+  "questionText": "Outline three factors that influence fashion changes.",
+  "stem": "‘A new season means new fashion.’ (www.stellar.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 9,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 3"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "factors",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     3,
+     6,
+     9
+    ],
+    "contextNote": "Complete original source guidance: Fashion magazines; newspaper articles; TV and film stars; celebrities; peer groups; work; changing trends/values; leisure activities; age; fashion designers e.g. Victoria Beckham; vibrant economy; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sc-q2cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2cii",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E2 Q2(c)(ii)",
+  "questionText": "Describe two challenges (difficulties) affecting the growth of the Irish clothing industry.",
+  "stem": "‘A new season means new fashion.’ (www.stellar.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points × 3"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "challenges",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Complete original source guidance: Labour intensive industry; take home pay can be low; cost of labour lower in other countries e.g. China; imports are rising from other countries where cost of labour is cheap; increased competition; few people trained with required skills; technology has reduced the labour intensive crafts; consumer demand is seasonal; traditional manufacturing is reduced; decline in demand for traditional Irish fabrics/crafts; employment in the textile industry is declining; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sc-q3ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3ai",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E3 Q3(a)(i)",
+  "questionText": "Define unemployment.",
+  "stem": "‘Youth unemployment across Europe remains far too high.’ (Irish Examiner, 2017)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points × 3"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "unemployment",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Complete original source guidance: Unemployment is actively seeking work/willing to work; not currently employed/jobless; people are available for work; willing to work; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sc-q3aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3aii",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E3 Q3(a)(ii)",
+  "questionText": "Outline the effects of unemployment on: • the young adult • the family • society.",
+  "stem": "‘Youth unemployment across Europe remains far too high.’ (Irish Examiner, 2017)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Three required headings×two effects4"
+  },
+  "rows": [
+   {
+    "id": "heading-1",
+    "kind": "criterion",
+    "verbatim": "Young adult",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Young adult: financial insecurity; drop in income leading to drop in living standards; poverty; mortgage arrears, homelessness, reposition of homes; social isolation; depression; addiction - drug/alcohol abuse; loss of identity/status; poor self-esteem; lack of money can prevent participation in leisure and social activities; loss of purpose and sense of direction; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "heading-2",
+    "kind": "criterion",
+    "verbatim": "Family",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Family: decline in living standards due to reliance on welfare payments; unstable home; provision of basic needs may be difficult; families may become homeless or in need of emergency accommodation; relationship problems; marital breakdown; children may be unable to attend college due to lack of money; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "heading-3",
+    "kind": "criterion",
+    "verbatim": "Society",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Society: cost to the state to pay benefits; result in increased taxation; cycle of poverty continues; disenfranchised young people may become involved in anti-social behaviour; emigration; unstable communities; increase in family breakdown; increase in the black economy to supplement welfare allowance; unemployment blackspots; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sc-q3aiii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-10",
+  "conceptId": "sc-q3aiii",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E3 Q3(a)(iii)",
+  "questionText": "Discuss the importance of an educational qualification for young people.",
+  "stem": "‘Youth unemployment across Europe remains far too high.’ (Irish Examiner, 2017)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points × 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "qualification",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Complete original source guidance: Helps attain a suitable career; develops qualities valued in the work place; reduces the risk of unemployment; attain skills to enter the labour force; aids social inclusion; social mobility; may use to travel; gain employment in other countries; may follow their chosen career; allows to change careers; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sc-q3aiv",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3aiv",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E3 Q3(a)(iv)",
+  "questionText": "Name and give details of one programme / course designed to train and upskill the unemployed.",
+  "stem": "‘Youth unemployment across Europe remains far too high.’ (Irish Examiner, 2017)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name4 + two matching details4"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "anyN",
+    "verbatim": "Name",
+    "marks": 4,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Solas",
+      "Springboard",
+      "Momentum - Action Plan for Jobs",
+      "Jobs Plus",
+      "VTOS",
+      "Back to Education Programme",
+      "Skillsnet",
+      "Safe Pass"
+     ]
+    },
+    "contextNote": "Choose ONE programme/course consistently; historical2018 original names retained."
+   },
+   {
+    "id": "details",
+    "kind": "criterion",
+    "verbatim": "Details",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Give TWO details of the SAME named programme. Complete original models: Solas: work with ETB to deliver programmes at local level; provide formal training; workplace experience in a range of disciplines; provide apprentice programmes; specific skills training; etc. Springboard: gives jobseekers the opportunity to study; etc. Momentum - Action Plan for Jobs: is an initiative offering training to long term unemployed; etc. Jobs Plus: employer incentive to employ jobseekers from the live register; VTOS; Back to Education Programme; Skillsnet; Safe Pass; etc. VTOS, Back to Education Programme, Skillsnet and Safe Pass are accepted names only; no extra details are invented.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sc-q3bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-11",
+  "conceptId": "sc-q3bi",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E3 Q3(b)(i)",
+  "questionText": "Explain three reasons why there is an increase in the number of women in the workplace.",
+  "stem": "‘Empowering women in the workplace is a win‐win for us all.’ (Irish Independent, 2017)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "reasons",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15
+    ],
+    "contextNote": "Complete original source guidance: More jobs available to women; more women completing third level education; equality in the workplace; women marrying later in life after they have established a career; women are having fewer children; reduction in gender pay gap making it lucrative for women to work; due to the cost of accommodation both partners have to work to make ends meet; want a better standard of living; support structures in place e.g. flexible hours, job sharing, parental leave; wide range of childcare available; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sc-q3bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-11",
+  "conceptId": "sc-q3bii",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E3 Q3(b)(ii)",
+  "questionText": "Outline the advantages and the disadvantages for family life of dual‐earners (both parents working).",
+  "stem": "‘Empowering women in the workplace is a win‐win for us all.’ (Irish Independent, 2017)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "dual-earners",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15
+    ],
+    "contextNote": "Address advantages AND disadvantages across three points. No separate category quota or internal split is printed. Complete original source guidance: Advantages: greater disposable income; higher standard of living; can afford luxuries like foreign holidays; positive role models for children; socialisation of children with peers from an early age; etc. Disadvantages: role overload as parents struggle with home and career; parents feel guilty when work interferes with their role as parent e.g. attending concerts/plays; children spend time in childcare which can be expensive; difficulty bonding with children because parents often work long hours/travel long distances; older children may have to help out with childcare, may have an impact on schoolwork; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sc-q3ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-11",
+  "conceptId": "sc-q3ci",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E3 Q3(c)(i)",
+  "questionText": "Discuss three reasons why more people live in urban areas.",
+  "stem": "‘Almost two‐thirds of the population are now living in urban areas.’ (The Irish Times, 2017)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "urban areas",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15
+    ],
+    "contextNote": "Complete original source guidance: Employment opportunities; education services; better amenities; transport; range of services e.g. banks, post offices; greater variety of leisure facilities, entertainment facilities; greater choice of housing options available; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2018-ol-sc-q3cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-11",
+  "conceptId": "sc-q3cii",
+  "level": "ordinary",
+  "year": 2018,
+  "section": "C",
+  "questionRef": "2018 OL Section C E3 Q3(c)(ii)",
+  "questionText": "Explain three ways that migration (moving) from rural to urban areas has impacted on life in rural areas.",
+  "stem": "‘Almost two‐thirds of the population are now living in urban areas.’ (The Irish Times, 2017)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points × 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "migration",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     5,
+     10,
+     15
+    ],
+    "contextNote": "Complete original source guidance: Decrease in population size; fewer services in the area; less amenities; imbalance in gender; more elderly people, fewer young people; poorer infrastructure; more unemployment; shops, banks and post offices closing; falling births and marriage rates; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2018 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
  }
 ]
