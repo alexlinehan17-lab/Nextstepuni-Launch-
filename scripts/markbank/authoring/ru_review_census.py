@@ -33,6 +33,27 @@ def reviewed_keys(year, level):
         keys += [('L4',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,'i'),(2,'ii'),(3,None)]]
         assert len(keys) == len(set(keys)) == 43
         return set(keys)
+    if (year, level) == (2025, 'ol'):
+        # Independent visual sweep:20written+8aural+26scheme pages. The
+        # event table and each complete alternative pool are single tasks.
+        root = Path(__file__).resolve().parents[3] / 'examiner-reports/russian'
+        for relative, digest in {
+            'papers/2025-ol-000-paper.pdf': 'a32ab3a53c7d4b97e511656c01384558307700f6d4874dc34337f067c988acc4',
+            'papers/2025-ol-A00-paper.pdf': '5621c29b27d2a9b226e8f239a058e24cebe90aa904f18d6bb4fcab31f7454a77',
+            'schemes/2025-ol.pdf': '2da580d0bece12bce51802feedb9117cc96d0a28ba5a334d61cd93055f3104d3',
+        }.items():
+            assert hashlib.sha256((root / relative).read_bytes()).hexdigest() == digest
+        keys = [('IR1', q, None, r) for q in (1,2,3,4) for r in ('i','ii')]
+        keys += [('IR2',1,None,r) for r in ('i','ii')]
+        keys += [('IR2',q,None,None) for q in (2,3,4,5)]
+        keys += [('CD',q,None,r) for q in (1,2) for r in ('i','ii','iii')]
+        keys += [('CD',3,None,r) for r in ('i','ii')]
+        keys += [('CD',4,None,r) for r in ('i','ii','iii','iv')]
+        keys += [(unit,None,None,None) for unit in ('LA1','LA2','MM','SD','SA','EW')]
+        assert len(keys) == 32
+        keys += [(unit,q,None,r) for unit in ('L1','L2','L3','L4') for q in (1,2,3) for r in ('i','ii')]
+        assert len(keys) == len(set(keys)) == 56
+        return set(keys)
     if year != 2026 or level not in ('hl', 'ol'):
         return None
     root = Path(__file__).resolve().parents[3]
