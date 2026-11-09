@@ -22,6 +22,18 @@ const rubric: LanguagePointsRubric = { system: 'language-points', count: 5, task
 const card = { kind: 'rubric', rubric, totalMarks: 50, answerLanguageRule: rule } as SecRubricCard & { rubric: LanguagePointsRubric };
 
 describe('selected language writing responses and source-defined half credit', () => {
+  it.each(['English', 'Japanese'] as const)('shows a source condition limited to %s without broadening it', penalizedLanguage => {
+    const scoped = { ...card, answerLanguageRule: { ...rule, penalizedLanguage } };
+    expect(tariffReconciles(scoped)).toBe(true);
+    const calls: string[] = [];
+    render(<LanguageRubricPanel card={scoped} scores={{ 'language:group:q1': 1 }} onScore={id => calls.push(id)} />);
+    const response = screen.getByRole('checkbox', { name: `Response 1 answered in ${penalizedLanguage}` });
+    fireEvent.click(response);
+    expect(calls).toEqual(['language:other-language:group:q1']);
+    expect(screen.getByText(`All answers are in ${penalizedLanguage} · half credit`)).toBeInTheDocument();
+    expect(screen.queryByRole('checkbox', { name: /answered in another language/ })).not.toBeInTheDocument();
+  });
+
   it('prices five independently placed responses and never counts an unselected or sixth response', () => {
     expect(tariffReconciles(card)).toBe(true);
     const scores: LanguageScores = {};

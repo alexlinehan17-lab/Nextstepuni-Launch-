@@ -10,6 +10,12 @@ export const languageRowId = (group: string, row: string): LanguageScoreId => `l
 export const languageOtherLanguageId = (target: string): LanguageScoreId => `language:other-language:${target}`;
 export const languageCreditMultiplier = (rule: SecCardBase['answerLanguageRule'], scores: LanguageScores, target: string) =>
   rule && scores[languageOtherLanguageId(target)] === 1 ? rule.otherLanguageMultiplier : 1;
+export const languageCreditAriaLabel = (rule: NonNullable<SecCardBase['answerLanguageRule']>, label: string) =>
+  `${label} answered in ${rule.penalizedLanguage ?? 'another language'}`;
+export const languageCreditCondition = (rule: NonNullable<SecCardBase['answerLanguageRule']>, plural = false) =>
+  rule.penalizedLanguage
+    ? `${plural ? 'All answers are' : 'This answer is'} in ${rule.penalizedLanguage}`
+    : `${plural ? 'All answers use' : 'This answer uses'} a language other than specified`;
 
 const selectedMark = (criterion: LanguageWritingCriterion, scores: LanguageScores) => {
   const mark = scores[languageScoreId(criterion.id)] ?? 0;

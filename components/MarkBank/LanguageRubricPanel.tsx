@@ -1,7 +1,7 @@
 import React from 'react';
 import type { LanguageWritingRubric, LanguageWritingCriterion, LanguagePointsRubric, SecRubricCard } from '../../types/markBank';
 import { ClaimRow, MarkStrip } from './ClaimRows';
-import { languageMarks, languageScoreId, languageLengthId, languageFlagId, languageGroupId, languageRowId, languageCriterionLimits, languageCriterionValue, languageOtherLanguageId, type LanguageScoreId, type LanguageScores } from './languageScoring';
+import { languageMarks, languageScoreId, languageLengthId, languageFlagId, languageGroupId, languageRowId, languageCriterionLimits, languageCriterionValue, languageOtherLanguageId, languageCreditAriaLabel, languageCreditCondition, type LanguageScoreId, type LanguageScores } from './languageScoring';
 import './language-rubric.css';
 
 export default function LanguageRubricPanel({ card, scores, onScore }: {
@@ -35,10 +35,10 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
       </section>;
   };
   const otherLanguageControl = (target: string, label: string, disabled = false) => card.answerLanguageRule && <label className="mb-language-flag">
-    <input type="checkbox" disabled={disabled || (target !== 'response' && scores[languageOtherLanguageId('response')] === 1)} aria-label={`${label} answered in another language`}
+    <input type="checkbox" disabled={disabled || (target !== 'response' && scores[languageOtherLanguageId('response')] === 1)} aria-label={languageCreditAriaLabel(card.answerLanguageRule, label)}
       checked={scores[languageOtherLanguageId(target)] === 1}
       onChange={event => onScore(languageOtherLanguageId(target), event.currentTarget.checked ? 1 : 0)} />
-    <span>{target === 'response' && rubric.system === 'language-points' ? 'All answers use' : 'This answer uses'} a language other than specified · {card.answerLanguageRule.otherLanguageMultiplier === 0 ? 'no credit' : 'half credit'}</span>
+    <span>{languageCreditCondition(card.answerLanguageRule, target === 'response' && rubric.system === 'language-points')} · {card.answerLanguageRule.otherLanguageMultiplier === 0 ? 'no credit' : 'half credit'}</span>
   </label>;
   return <div className="mb-language-rubric">
     <h3>Assess your response</h3>

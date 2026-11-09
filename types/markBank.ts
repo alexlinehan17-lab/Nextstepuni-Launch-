@@ -458,7 +458,14 @@ export interface SecCardBase extends CardBase {
   audioMaterial?: CardAudioMaterial;
   /** Apply only the verified sitting's explicit wrong-language rule, after
    * earning marks under its unchanged source tariff. Never infer language. */
-  answerLanguageRule?: { otherLanguageMultiplier: 0 | 0.5; sourceText: string; schemePages: number[] };
+  answerLanguageRule?: {
+    otherLanguageMultiplier: 0 | 0.5;
+    sourceText: string;
+    schemePages: number[];
+    /** Some schemes name a particular response language; do not broaden that
+     * condition to every language other than the question's requested one. */
+    penalizedLanguage?: 'English' | 'Japanese';
+  };
   /** An explicitly published half-credit condition for the complete priced
    * response. This and wrong-language half credit apply once, not cumulatively.
    * Supported only on fixed point cards; never infer extraneous material. */
@@ -1598,6 +1605,8 @@ export function tariffReconciles(card: SecCard): boolean {
     || !isPointCard(card) || card.tariffModel.kind !== 'fixed' || !!card.mathematicsScale)) return false;
   if (card.answerLanguageRule && (![0, 0.5].includes(card.answerLanguageRule.otherLanguageMultiplier)
     || !card.answerLanguageRule.sourceText.trim() || !card.answerLanguageRule.schemePages.length
+    || (card.answerLanguageRule.penalizedLanguage !== undefined
+      && !['English', 'Japanese'].includes(card.answerLanguageRule.penalizedLanguage))
     || !card.answerLanguageRule.schemePages.every(page => Number.isInteger(page) && page > 0))) return false;
   if (card.answerLanguageRule && (isRubricCard(card)
     ? !['language-writing', 'language-points'].includes(card.rubric.system)
