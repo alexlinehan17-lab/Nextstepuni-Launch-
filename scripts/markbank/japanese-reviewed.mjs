@@ -7,6 +7,7 @@ import { resolvePaperFileid } from './paperIndex.mjs';
 import { audioMaterialFault, audioQuestionPaperFileid } from './audioMaterial.mjs';
 import { comparableScheme, claimMatches, LIGATURES } from './schemeText.mjs';
 import { matchesNamedLanguageCondition } from './japanese-source-rules.mjs';
+import { assertJapaneseVariantSources, japaneseAnswerRows } from './japanese-source-answers.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const reviewsDir = resolve(root, 'scripts/markbank/authoring/reviews');
@@ -99,7 +100,8 @@ for (const name of readdirSync(reviewsDir).filter(name => /^japanese-\d{4}-(?:hl
       card.questionFigure = { candId: key, src: figure.src, srcHash: figure.md5, alt: figure.alt, attribution: figure.attribution, lettersVisible: [], includesPrompt: true };
       delete card.questionFigureKey;
     }
-    const answers = (card.rows ?? []).flatMap(row => {
+    assertJapaneseVariantSources(card, review.selectors, unprintedAnswer);
+    const answers = japaneseAnswerRows(card).flatMap(row => {
       if (row.unprinted) {
         if (row.verbatim !== unprintedAnswer) throw new Error(`${card.id}: unprinted row invents an answer`);
         return [];
