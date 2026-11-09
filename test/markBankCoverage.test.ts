@@ -46,10 +46,29 @@ import { CARDS as BUSINESS_HIGHER } from '../components/MarkBank/cards/business/
 import { CARDS as BUSINESS_ORDINARY } from '../components/MarkBank/cards/business/ordinary';
 import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
+import japanese2023HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2023-hl-census.json';
+import japanese2023HigherReview from '../scripts/markbank/authoring/reviews/japanese-2023-hl.json';
 import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/higher';
 import { CARDS as FRENCH_ORDINARY } from '../components/MarkBank/cards/french/ordinary';
 
 const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
+
+// This paper prints roman tasks directly beneath Part D, without a Q number.
+// Accept only the independent census's exact source-bound IDs and references.
+// Other subjects and the generic citation grammar remain unchanged.
+const japaneseUnnumberedRefs = new Map(japanese2023HigherCensus.tasks
+  .filter(task => task.key[0] === 'LD' && task.key[1] === null)
+  .map(task => {
+    const [section, , letter, roman] = task.key;
+    const id = `ja-2023-hl-${task.key.filter(part => part !== null).join('-').toLowerCase()}`;
+    const ref = `2023 HL Section ${section}(${roman})${letter === null ? '' : `(${letter})`}`;
+    const reviewed = japanese2023HigherReview.cards.find(card => card.id === id);
+    if (reviewed?.questionRef !== ref || JSON.stringify(reviewed.sourceEvidence.paperPages) !== JSON.stringify(task.paperPages)) {
+      throw new Error(`Unbound Japanese unnumbered reference: ${id}`);
+    }
+    return [id, ref] as const;
+  }));
+const isJapaneseUnnumberedRef = (id: string, ref: string) => japaneseUnnumberedRefs.get(id) === ref;
 
 const deckCards = (subject: string): { id: string; ref: string }[] => {
   if (subject === 'accounting') return [...ACCOUNTING_HIGHER, ...ACCOUNTING_ORDINARY].map(({ id, questionRef: ref }) => ({ id, ref }));
@@ -193,7 +212,8 @@ describe('Mark Bank paper-coverage ratchet', () => {
 
   it.each(SUBJECTS)('%s citations all parse under the grammar', (subject) => {
     const bad = deckCards(subject)
-      .filter(({ ref }) => {
+      .filter(({ id, ref }) => {
+        if (subject === 'japanese' && isJapaneseUnnumberedRef(id, ref)) return false;
         if (subject === 'accounting') return !/^\d{4} (?:HL|OL) Q[1-9][A-Z]?(?:\([a-z0-9]+\))*(?:-[a-z0-9()-]+)?$/.test(ref);
         if (subject === 'english') {
           // Legacy 2021-2025 cards bundle linked parts; reviewed published
@@ -215,6 +235,18 @@ describe('Mark Bank paper-coverage ratchet', () => {
       })
       .map(({ id, ref }) => `${id}: "${ref}"`);
     expect(bad, `${subject}: unparseable questionRef(s)`).toEqual([]);
+  });
+
+  it('japanese unnumbered references reject another year, sibling, order or suffix', () => {
+    expect(japaneseUnnumberedRefs.size).toBe(10);
+    for (const [id, ref] of japaneseUnnumberedRefs) {
+      expect(isJapaneseUnnumberedRef(id, ref)).toBe(true);
+      expect(isJapaneseUnnumberedRef(id, ref.replace('2023', '2024'))).toBe(false);
+      expect(isJapaneseUnnumberedRef(id, ref + ' — unrelated')).toBe(false);
+    }
+    expect(isJapaneseUnnumberedRef('ja-2023-hl-ld-a-iv', '2023 HL Section LD(iv)(b)')).toBe(false);
+    expect(isJapaneseUnnumberedRef('ja-2023-hl-ld-a-iv', '2023 HL Section LD(a)(iv)')).toBe(false);
+    expect(isJapaneseUnnumberedRef('unbound-id', '2023 HL Section LD(i)')).toBe(false);
   });
 
   it('every subject with a deck is measured', () => {

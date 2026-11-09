@@ -8,21 +8,22 @@ from reconcile import match_leaves, parse_ref
 class PrintedJapaneseReferences(unittest.TestCase):
     def test_nested_tasks_cover_only_their_independently_censused_leaf(self):
         bindings = reviewed_japanese_refs()
-        self.assertEqual(len(bindings), 6)
+        self.assertEqual(len(bindings), 12)
+        self.assertEqual(sum(binding['q'] is None for binding in bindings.values()), 2)
         for cid, binding in bindings.items():
             with self.subTest(card=cid):
                 section, q = binding['section'], binding['q']
                 letter, roman = binding['path']
                 other_letter = 'b' if letter == 'a' else 'a'
                 leaves = [(section, q, letter, roman), (section, q, other_letter, roman),
-                          (section, q, None, roman), (section, q + 1, letter, roman)]
+                          (section, q, None, roman), (section, (q or 0) + 1, letter, roman)]
                 generic = parse_ref(binding['literal'])
                 self.assertNotEqual(generic['paths'], [(letter, roman)])
                 bound = bind_japanese_ref(cid, binding['literal'], generic, bindings)
                 self.assertEqual(match_leaves(bound, leaves, True), [leaves[0]])
                 for changed in [binding['literal'].replace(f'({roman})({letter})', f'({letter})({roman})'),
                                 binding['literal'].replace(f'({letter})', f'({other_letter})'),
-                                binding['literal'].replace('2024', '2023'),
+                                binding['literal'].replace(str(binding['year']), str(binding['year'] + 1)),
                                 binding['literal'] + ' — unrelated suffix']:
                     self.assertIsNone(bind_japanese_ref(cid, changed, parse_ref(changed), bindings))
 
