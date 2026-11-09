@@ -1,7 +1,7 @@
 import React from 'react';
 import type { LanguageWritingRubric, LanguageWritingCriterion, LanguagePointsRubric, SecRubricCard } from '../../types/markBank';
 import { ClaimRow, MarkStrip } from './ClaimRows';
-import { languageMarks, languageScoreId, languageLengthId, languageFlagId, languageGroupId, languageRowId, languageCriterionLimits, languageCriterionValue, languageOtherLanguageId, type LanguageScoreId, type LanguageScores } from './languageScoring';
+import { languageMarks, languageScoreId, languageLengthId, languageFlagId, languageGroupId, languageRowId, languageCriterionPlacement, languageCriterionValue, languageOtherLanguageId, type LanguageScoreId, type LanguageScores } from './languageScoring';
 import './language-rubric.css';
 
 export default function LanguageRubricPanel({ card, scores, onScore }: {
@@ -19,21 +19,34 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
     .filter(group => scores[languageGroupId(group.id)] === 1)
     .reduce((sum, group) => sum + group.rows.filter(row => (scores[languageRowId(group.id, row.id)] ?? 0) > 0).length, 0) : 0;
   const renderCriterion = (criterion: LanguageWritingCriterion, criterionRubric: LanguageWritingRubric, disabled = false) => {
-      const limits = languageCriterionLimits(criterionRubric, criterion, scores, [criterion.id]);
-      const cap = Math.min(criterion.maxMarks, ...limits.map(limit => limit.maxMarks));
-      const selected = Math.min(scores[languageScoreId(criterion.id)] ?? 0, cap);
-      const bands = ([...limits].sort((a, b) => a.maxMarks - b.maxMarks).find(limit => limit.bands)?.bands ?? criterion.bands)
-        ?.filter(band => Math.max(...band.marks) <= cap);
-      const permitted = criterion.permittedMarks.filter(mark => mark <= cap);
+      const { limits, permitted, selected, minimum, cap, needsRangeReview } = languageCriterionPlacement(criterionRubric, criterion, scores, [criterion.id]);
+      const bandedLimits = [...limits].sort((a, b) => a.maxMarks - b.maxMarks).filter(limit => limit.bands);
+      // Simultaneous Lower A/Lower E rules do not establish descriptor
+      // precedence. Keep both named source scales and their printed ranges;
+      // the controls below enforce the numeric intersection without inventing
+      // a conversion between descriptors.
+      const scales = (minimum > 0 ? bandedLimits : bandedLimits.slice(0, 1))
+        .map(limit => ({ id: limit.id, label: limit.scaleLabel, bands: limit.bands! }));
+      if (!scales.length && criterion.bands) scales.push({ id: criterion.id, label: undefined, bands: criterion.bands });
+      const visibleScales = scales.map(scale => ({ ...scale, bands: scale.bands.filter(band => minimum > 0
+        ? band.marks.some(mark => mark > 0 && permitted.includes(mark))
+          || (band.marks.every(mark => mark === 0) && permitted.includes(0))
+        : Math.max(...band.marks) <= cap) })).filter(scale => scale.bands.length > 0);
       return <section className="mb-language-criterion" key={criterion.id}>
-        <div className="mb-language-heading"><h4>{criterion.label}</h4><span>{criterion.kind === 'deduction' ? 'Deduction' : `Up to ${cap} marks`}</span></div>
+        <div className="mb-language-heading"><h4>{criterion.label}</h4><span>{criterion.kind === 'deduction' ? 'Deduction'
+          : minimum > 0 && cap > 0 ? `${minimum}–${cap} marks` : `Up to ${cap} marks`}</span></div>
         {criterion.guidance.map((text, index) => <p key={index}>{text}</p>)}
         {limits.flatMap(limit => limit.guidance).map((text, index) => <p className="mb-language-rule" key={index}>{text}</p>)}
-        {bands?.map(band => <div className="mb-language-band" key={band.label}>
-          <strong>{band.marks[0]}–{band.marks.at(-1)} marks · {band.label}</strong>
-          <ul>{band.guidance.map((text, index) => <li key={index}>{text}</li>)}</ul>
-        </div>)}
+        {visibleScales.length > 1 && <p>Both source scales apply. Use their shared mark range and reassess against each set of descriptors.</p>}
+        {visibleScales.map(scale => <React.Fragment key={scale.id}>
+          {scale.label && <p><strong>{scale.label}</strong></p>}
+          {scale.bands.map(band => <div className="mb-language-band" key={band.label}>
+            <strong>{band.marks[0]}–{band.marks.at(-1)} marks · {band.label}</strong>
+            <ul>{band.guidance.map((text, index) => <li key={index}>{text}</li>)}</ul>
+          </div>)}
+        </React.Fragment>)}
         <MarkStrip disabled={disabled} label={criterion.label} marks={permitted} selected={selected} onSelect={mark => onScore(languageScoreId(criterion.id), mark)} />
+        {needsRangeReview && cap > 0 && <p>{selected === 0 ? 'Choose a mark within the active range.' : 'Review this placement against the active range.'}</p>}
         {criterion.kind !== 'deduction' && languageCriterionValue(criterionRubric, criterion.id, scores) !== selected && <p>After published deductions: {languageCriterionValue(criterionRubric, criterion.id, scores)} marks.</p>}
       </section>;
   };
