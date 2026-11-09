@@ -22881,4 +22881,2659 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sa-q1", topicId: "home-economics-0-5", conceptId: "sa-q1",
+    section: "A", questionRef: "2016 OL Section A Q1",
+    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "statement-1", kind: "point", verbatim: "Protein is the only nutrient that contains nitrogen. — True", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "statement-2", kind: "point", verbatim: "Excess protein is stored as adipose tissue. — True", marks: null },
+    { id: "statement-3", kind: "point", verbatim: "Protein is necessary for the growth of body cells. — True", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2016-ol-sa-q1",
+          "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q1.png",
+          "srcHash": "d17c72cfc38e9b58166a1caa39aaf543",
+          "alt": "Original protein true/false question with all three statements and blank True/False columns.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sa-q2", topicId: "home-economics-0-6", conceptId: "sa-q2",
+    section: "A", questionRef: "2016 OL Section A Q2",
+    questionText: "Give one dietary source of each of the following carbohydrates.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "carbohydrate-1", kind: "point", verbatim: "Sugar — fruit; table sugar; fizzy drinks; cakes; biscuits; sweets; jam; honey; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Give ONE dietary source of this required carbohydrate." },
+    { id: "carbohydrate-2", kind: "point", verbatim: "Starch — rice; pasta; potatoes; bread; breakfast cereals; flour; etc.", marks: null, contextNote: "Give ONE dietary source of this required carbohydrate." },
+    { id: "carbohydrate-3", kind: "point", verbatim: "Fibre — wholegrain bread; wholegrain cereals; fruit; vegetables; seeds; nuts; wholemeal pasta; wheat bran; etc.", marks: null, contextNote: "Give ONE dietary source of this required carbohydrate." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2016-ol-sa-q2",
+          "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q2.png",
+          "srcHash": "0ad77ad415df434ee8ec850d1c657ea2",
+          "alt": "Original carbohydrate source table with Sugar, Starch and Fibre and all blank dietary-source fields.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sa-q3", topicId: "home-economics-0-8", conceptId: "sa-q3",
+    section: "A", questionRef: "2016 OL Section A Q3",
+    questionText: "State two functions of Vitamin A. Name two good dietary sources of Vitamin A.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "function-1", kind: "point", verbatim: "(i) production of rhodopsin; healthy lining membranes; healthy skin and hair;", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY TWO functions across both source lists." },
+    { id: "function-2", kind: "point", verbatim: "(ii) growth and repair of body cells; prevents night blindness; aids growth and development of children; beta carotene acts as a powerful antioxidant that can counteract the damaging effects of free radicals; etc.", marks: null, contextNote: "Choose ANY TWO functions across both source lists." },
+    { id: "source-1", kind: "point", verbatim: "(i) retinol: fish; fish liver oils; margarine; dairy products - butter; milk; cheese; eggs; meat; offal; margarine;", marks: null, contextNote: "Choose ANY TWO dietary sources across both original retinol/beta-carotene pools; no one-per-source-line quota." },
+    { id: "source-2", kind: "point", verbatim: "(ii) beta carotene: green leafy vegetables; carrots; tomatoes; yellow/red peppers; sweet potatoes; apricots; etc.", marks: null, contextNote: "Choose ANY TWO dietary sources across both original retinol/beta-carotene pools; no one-per-source-line quota." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sa-q4", topicId: "home-economics-0-1", conceptId: "sa-q4",
+    section: "A", questionRef: "2016 OL Section A Q4",
+    questionText: "List three factors that influence the energy requirements of teenagers.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "factor-1", kind: "point", verbatim: "(i) gender; age; body size; activity level;", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY THREE factors from the complete source pool across all three answer lines." },
+    { id: "factor-2", kind: "point", verbatim: "(ii) sedentary lifestyle; climate; health status; growth spurts;", marks: null, contextNote: "Choose ANY THREE factors from the complete source pool across all three answer lines." },
+    { id: "factor-3", kind: "point", verbatim: "(iii) amount of exercise; BMR; etc.", marks: null, contextNote: "Choose ANY THREE factors from the complete source pool across all three answer lines." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sa-q5", topicId: "home-economics-0-8", conceptId: "sa-q5",
+    section: "A", questionRef: "2016 OL Section A Q5",
+    questionText: "Name two nutrients necessary in the diet to prevent osteoporosis. State one lifestyle change that would improve bone health.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "nutrient-1", kind: "point", verbatim: "(i) vitamin D; vitamin C; protein;", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY TWO nutrients across both original lists." },
+    { id: "nutrient-2", kind: "point", verbatim: "(ii) calcium; phosphorus; etc.", marks: null, contextNote: "Choose ANY TWO nutrients across both original lists." },
+    { id: "lifestyle", kind: "point", verbatim: "increase exercise; weight bearing exercise; reduce alcohol; cut out smoking; sunshine; etc.", marks: null, contextNote: "Give ONE lifestyle change from the complete original source pool." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sa-q6", topicId: "home-economics-0-9", conceptId: "sa-q6",
+    section: "A", questionRef: "2016 OL Section A Q6",
+    questionText: "Using the words listed below, complete the following statements in relation to cheese.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "blank-1", kind: "point", verbatim: "lactic acid", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Fill the three blanks in their original order. Complete original source sentence: In the production of cheese a culture is added to milk to convert the lactose to lactic acid. The enzyme rennin changes caseinogen to casein. The mixture is allowed to rest for 30 minutes and separates into curds and whey." },
+    { id: "blank-2", kind: "point", verbatim: "rennin", marks: null },
+    { id: "blank-3", kind: "point", verbatim: "curds", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2016-ol-sa-q6",
+          "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q6.png",
+          "srcHash": "478e58329119c6c2ce273a68007782bc",
+          "alt": "Complete original cheese cloze with every blank and the full curds, lactic acid, rennin word bank.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sa-q7", topicId: "home-economics-0-11", conceptId: "sa-q7",
+    section: "A", questionRef: "2016 OL Section A Q7",
+    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "statement-1", kind: "point", verbatim: "Quick freezing at -25°C forms small ice crystals within the food cells. — True", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "statement-2", kind: "point", verbatim: "Bananas and lettuce are suitable foods for freezing. — False", marks: null },
+    { id: "statement-3", kind: "point", verbatim: "Vegetables are blanched before freezing to destroy enzymes. — True", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2016-ol-sa-q7",
+          "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q7.png",
+          "srcHash": "b81bbc90e84a30364aaa9ca043a27533",
+          "alt": "Original freezing true/false question with all three statements, temperature and blank True/False columns.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sa-q8", topicId: "home-economics-0-9", conceptId: "sa-q8",
+    section: "A", questionRef: "2016 OL Section A Q8",
+    questionText: "Give two examples of vegetables in each of the following classes.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "class-1", kind: "point", verbatim: "Pulse vegetables — peas; beans; broad beans; chickpeas; lentils; French beans; kidney beans; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Give ANY TWO examples for EACH of the THREE required classes. Both original example columns form one complete pool; no forced one-per-column quota." },
+    { id: "class-2", kind: "point", verbatim: "Root vegetables — potatoes; sweet potato; carrots; parsnips; turnips; beetroot; radishes; onions; garlic; etc.", marks: null, contextNote: "Give ANY TWO examples for EACH of the THREE required classes. Both original example columns form one complete pool; no forced one-per-column quota." },
+    { id: "class-3", kind: "point", verbatim: "Green vegetables — spinach; cabbage; broccoli; kale; brussel sprouts; lettuce; etc.", marks: null, contextNote: "Give ANY TWO examples for EACH of the THREE required classes. Both original example columns form one complete pool; no forced one-per-column quota." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2016-ol-sa-q8",
+          "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q8.png",
+          "srcHash": "0450fc82a893f2ba67f4225e3673d23f",
+          "alt": "Original vegetable table with Pulse, Root and Green categories and both blank example columns.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sa-q9", topicId: "home-economics-1-1", conceptId: "sa-q9",
+    section: "A", questionRef: "2016 OL Section A Q9",
+    questionText: "Explain the term gross pay. Name two compulsory deductions taken from gross pay.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "definition", kind: "point", verbatim: "the income earned before any deductions are made; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "deduction-1", kind: "point", verbatim: "(i) PAYE; PRSI;", marks: null, contextNote: "Choose ANY TWO compulsory deductions from the full PAYE/PRSI/USC pool; no compulsory USC choice. Original historical 2016 wording retained." },
+    { id: "deduction-2", kind: "point", verbatim: "(ii) USC; etc.", marks: null, contextNote: "Choose ANY TWO compulsory deductions from the full PAYE/PRSI/USC pool; no compulsory USC choice. Original historical 2016 wording retained." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sa-q10", topicId: "home-economics-1-4", conceptId: "sa-q10",
+    section: "A", questionRef: "2016 OL Section A Q10",
+    questionText: "What information does each of the following fabric care symbols convey to the consumer?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "symbol-1", kind: "point", verbatim: "hand wash only", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "symbol-2", kind: "point", verbatim: "do not bleach", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2016-ol-sa-q10",
+          "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q10.png",
+          "srcHash": "a73131a84d316598ffeaf8842e9bd87e",
+          "alt": "Both original fabric-care symbols, hand-wash and do-not-bleach, with the full question and blank response spaces.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sa-q11", topicId: "home-economics-1-3", conceptId: "sa-q11",
+    section: "A", questionRef: "2016 OL Section A Q11",
+    questionText: "Indicate with a tick (✓) which of the following household appliances has a motor or an element.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "appliance-1", kind: "point", verbatim: "Kettle — Element", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "appliance-2", kind: "point", verbatim: "Food processor — Motor", marks: null },
+    { id: "appliance-3", kind: "point", verbatim: "Toaster — Element", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2016-ol-sa-q11",
+          "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q11.png",
+          "srcHash": "f6e59a4f3c37f0071b10dc90470e37ba",
+          "alt": "Original appliance table with Kettle, Food processor and Toaster, and blank Element/Motor columns.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sa-q12", topicId: "home-economics-1-5", conceptId: "sa-q12",
+    section: "A", questionRef: "2016 OL Section A Q12",
+    questionText: "Name two sources of renewable energy. Explain the benefit of renewable energy to the environment.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "source-1", kind: "point", verbatim: "(i) hydro (water); geothermal; biomass; wood burners; plant material;", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY TWO renewable energy sources across both original lists." },
+    { id: "source-2", kind: "point", verbatim: "(ii) solar; wind; tidal – wave power; etc.", marks: null, contextNote: "Choose ANY TWO renewable energy sources across both original lists." },
+    { id: "benefit", kind: "point", verbatim: "sustainable - will not run out; clean; efficient; produce very little pollution; some have no waste products; etc.", marks: null, contextNote: "Explain the environmental benefit using the complete original source guidance." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sb-q1a", topicId: "home-economics-0-10", conceptId: "sb-q1a",
+    section: "B", questionRef: "2016 OL Section B Q1(a)",
+    stem: "‘Saturated fat has a bad reputation in recent years, but it might not be entirely deserved. Foods such as milk that are high in SFA (saturated fatty acids) and high in calcium don’t seem to raise harmful cholesterol levels.’ (Paula Mee, The Irish Times, July 2015) The table below shows the nutritional content of two pre-prepared meals. Nutritional Information",
+    questionText: "Using the information presented in the table above, state which of the pre-prepared meals you would recommend for a young person involved in sport. Explain three reasons for your choice.",
+    tariffModel: {"kind":"fixed","notation":"Meal name2 + reasons3×6"}, totalMarks: 20,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Fisherman’s pie", marks: 2 },
+    { id: "reasons", kind: "criterion", verbatim: "Reasons", marks: 18, contextNote: "Three reasons for the SAME meal and the young sports-person context. Both source meal models are available. The original fish-pie model says low in saturated fat; this wording is retained as printed. Fisherman’s pie: fat for heat & energy; low in saturated fat preventing build-up of cholesterol; carbohydrates from potato; contains starch; low GI provides heat and a long lasting source of energy; contains fibre needed to prevent constipation; (HBV) protein for growth and repair; salt 30% of adult RDA; salt for hydration; white fish low in fat; etc.", permittedMarks: [0,6,12,18], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,6]},{"id":"point-3","verbatim":"Point 3","marks":6,"permittedMarks":[0,6]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "meal-1",
+                "label": "Fisherman’s pie",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Fisherman’s pie",
+                            "marks": 2
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "Reasons",
+                            "marks": 18,
+                            "permittedMarks": [
+                                  0,
+                                  6,
+                                  12,
+                                  18
+                            ],
+                            "contextNote": "Three reasons for the SAME meal and the young sports-person context. Both source meal models are available. The original fish-pie model says low in saturated fat; this wording is retained as printed. Fisherman’s pie: fat for heat & energy; low in saturated fat preventing build-up of cholesterol; carbohydrates from potato; contains starch; low GI provides heat and a long lasting source of energy; contains fibre needed to prevent constipation; (HBV) protein for growth and repair; salt 30% of adult RDA; salt for hydration; white fish low in fat; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 6,
+                                        "permittedMarks": [
+                                              0,
+                                              6
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 6,
+                                        "permittedMarks": [
+                                              0,
+                                              6
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 6,
+                                        "permittedMarks": [
+                                              0,
+                                              6
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "meal-2",
+                "label": "Chicken curry with rice",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Chicken curry with rice",
+                            "marks": 2
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "Reasons",
+                            "marks": 18,
+                            "permittedMarks": [
+                                  0,
+                                  6,
+                                  12,
+                                  18
+                            ],
+                            "contextNote": "Three reasons for the SAME meal and the young sports-person context. Both source meal models are available. The original fish-pie model says low in saturated fat; this wording is retained as printed. Chicken curry with rice: higher kcals; low in fat; carbohydrates in rice; low GI needed for heat and energy; fibre to aid peristalsis; protein (HBV) growth & repair; lower salt content - needed for hydration; will not increase the risk of blood pressure; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 6,
+                                        "permittedMarks": [
+                                              0,
+                                              6
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 6,
+                                        "permittedMarks": [
+                                              0,
+                                              6
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 6,
+                                        "permittedMarks": [
+                                              0,
+                                              6
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2016-ol-sb-q1-meals",
+          "src": "/exam-figures/home-economics/home-economics-2016-ol-sb-q1-meals.png",
+          "srcHash": "1a4b0eac02fa69417323b29e7c7c9b66",
+          "alt": "Complete original comparison of Fisherman’s pie and Chicken curry with rice: all ingredients, energy and five nutrient values per serving, with original units.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sb-q1b", topicId: "home-economics-0-7", conceptId: "sb-q1b",
+    section: "B", questionRef: "2016 OL Section B Q1(b)",
+    stem: "‘Saturated fat has a bad reputation in recent years, but it might not be entirely deserved. Foods such as milk that are high in SFA (saturated fatty acids) and high in calcium don’t seem to raise harmful cholesterol levels.’ (Paula Mee, The Irish Times, July 2015)",
+    questionText: "Give an account of lipids (fats) under each of the following headings: • classification • functions in the body • dietary sources.",
+    tariffModel: {"kind":"fixed","notation":"Classes2×4 + functions2×4 + sources4×3"}, totalMarks: 28,
+    rows: [
+    { id: "classes", kind: "criterion", verbatim: "Classification", marks: 8, contextNote: "animal; plant; marine; saturated; unsaturated; monounsaturated; polyunsaturated; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "functions", kind: "criterion", verbatim: "functions in the body", marks: 8, contextNote: "heat; energy; excess lipids are stored as adipose tissue insulating the body and acting as an energy reserve; lipids protect delicate organs; supply fat soluble vitamins A, D, E & K; source of essential fatty acids; delays the feeling of hunger; needed to build cell walls; omega fatty acids improve concentration and brain activity; some unsaturated lipids help lower cholesterol; speeds up the transmission of nerve impulses; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "sources", kind: "criterion", verbatim: "dietary sources", marks: 12, contextNote: "meat; eggs; dripping; soya beans; avocados; olives; dairy products; nuts and nut oils; vegetable oils; oily fish; fish liver oils; margarine; seeds and seed oils; etc.", permittedMarks: [0,3,6,9,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]},{"id":"point-4","verbatim":"Point 4","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sb-q1c", topicId: "home-economics-0-7", conceptId: "sb-q1c",
+    section: "B", questionRef: "2016 OL Section B Q1(c)",
+    stem: "‘Saturated fat has a bad reputation in recent years, but it might not be entirely deserved. Foods such as milk that are high in SFA (saturated fatty acids) and high in calcium don’t seem to raise harmful cholesterol levels.’ (Paula Mee, The Irish Times, July 2015)",
+    questionText: "Outline three ways an individual can reduce his / her intake of fat.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "ways", marks: 12, contextNote: "Complete original source guidance: reduce intake of butter; cheese; red meat; reduce consumption of take away foods; use low fat products; change cooking methods to steaming, grilling, poaching, microwaving; trim meat in preparation for cooking; meat may be fried off in its own fat on non-stick cookware; reduce intake of cakes and pastries; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sb-q1d", topicId: "home-economics-1-5", conceptId: "sb-q1d",
+    section: "B", questionRef: "2016 OL Section B Q1(d)",
+    stem: "‘Saturated fat has a bad reputation in recent years, but it might not be entirely deserved. Foods such as milk that are high in SFA (saturated fatty acids) and high in calcium don’t seem to raise harmful cholesterol levels.’ (Paula Mee, The Irish Times, July 2015)",
+    questionText: "Discuss four ways consumers can be environmentally aware when shopping and buying food for family meals.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "environmentally aware", marks: 20, contextNote: "Complete original source guidance: buy products without packaging; buy in bulk; buy fruit and vegetables loose; buy economy size to reduce packaging; buy products in reusable containers; use reusable bags for shopping; use biodegradable packaging; choose eco-refill products e.g. coffee; buy products in recycled packaging, e.g. cereals; select products with ECO label; minimise shopping trips; etc.", permittedMarks: [0,5,10,15,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sb-q2a", topicId: "home-economics-0-10", conceptId: "sb-q2a",
+    section: "B", questionRef: "2016 OL Section B Q2(a)",
+    stem: "‘Going vegetarian is one of the best things you could do for your health. All the nutrients you need are easily provided in a vegetarian diet.’ (Vegetarian Society of Ireland, July 2015)",
+    questionText: "Discuss four reasons why some teenagers become vegetarian.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "reasons", marks: 20, contextNote: "Complete original source guidance: Cultural: traditional diet of a particular area or country; etc. Religion: some Jews or Muslims do not eat pork; some Hindus are vegetarian; etc. Moral/Ethics: may believe it is wrong to kill animals for the human food chain; may disagree with intensive animal rearing; etc. Health: vegetarian diets are healthier; lower in saturated fat; higher in fibre thus preventing bowel disorders; reducing the risk of heart disease, obesity, and Type 2 diabetes; etc. Choice: may not like the taste, smell, appearance of meat/fish; many vegetarian options available e.g. quorn; TVP; wide selection of grains, nuts and seeds; sections in supermarkets dedicated to vegetarian options; available on restaurant menus; etc. Economic: vegetarian diet can be cheaper; etc. Family: parents or older sibling often influence a teenager to adopt a vegetarian diet; etc. Influence: family; celebrities; peers; media; etc.", permittedMarks: [0,5,10,15,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sb-q2b", topicId: "home-economics-0-10", conceptId: "sb-q2b",
+    section: "B", questionRef: "2016 OL Section B Q2(b)",
+    stem: "‘Going vegetarian is one of the best things you could do for your health. All the nutrients you need are easily provided in a vegetarian diet.’ (Vegetarian Society of Ireland, July 2015)",
+    questionText: "Having regard to current healthy eating guidelines, set out a menu (3 meals) for one day for a lacto-vegetarian to ensure their nutritional needs are met.",
+    tariffModel: {"kind":"fixed","notation":"Three complete meals×6"}, totalMarks: 18,
+    rows: [
+    { id: "meal-1", kind: "criterion", verbatim: "Breakfast", marks: 6, contextNote: "One complete meal in the SAME day’s menu. The source prints no per-course split. The original lacto-vegetarian dinner contains Egg Mayonnaise; that source anomaly is retained visibly without an invented replacement. Breakfast Fresh Orange Juice Porridge with milk Wholemeal Toast Tea/Coffee/Water/ Milk", permittedMarks: [0,6] },
+    { id: "meal-2", kind: "criterion", verbatim: "Lunch", marks: 6, contextNote: "One complete meal in the SAME day’s menu. The source prints no per-course split. The original lacto-vegetarian dinner contains Egg Mayonnaise; that source anomaly is retained visibly without an invented replacement. Lunch Vegetable Soup with Brown Bread Strawberry Yoghurt Apple Tea/Coffee/Water/ Milk", permittedMarks: [0,6] },
+    { id: "meal-3", kind: "criterion", verbatim: "Dinner", marks: 6, contextNote: "One complete meal in the SAME day’s menu. The source prints no per-course split. The original lacto-vegetarian dinner contains Egg Mayonnaise; that source anomaly is retained visibly without an invented replacement. Dinner Egg Mayonnaise Vegetarian Stir Fry with Noodles Lemon Cheesecake Tea/Coffee/Water/ Milk", permittedMarks: [0,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    figure: {
+          "candId": "home-economics-2016-ol-sb-q2b-menu",
+          "src": "/exam-figures/home-economics/home-economics-2016-ol-sb-q2b-menu.png",
+          "srcHash": "c396d73c83b4ace9145a97e32d0a8727",
+          "alt": "Complete original breakfast, lunch and dinner model including every food/drink and the printed Egg Mayonnaise anomaly in the lacto-vegetarian menu.",
+          "attribution": "SEC Home Economics 2016 Ordinary Level marking scheme, page 10 — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "Original PDF crop, bounds [195.1699981689453, 391.1499938964844, 407.22998046875, 618.9400024414062], rendered at 2.5×. SHA256 860d85065b6eee044d628b867aed01b9f88f382848f67de108ee8979f8207ac5.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sb-q2c", topicId: "home-economics-0-3", conceptId: "sb-q2c",
+    section: "B", questionRef: "2016 OL Section B Q2(c)",
+    stem: "‘Going vegetarian is one of the best things you could do for your health. All the nutrients you need are easily provided in a vegetarian diet.’ (Vegetarian Society of Ireland, July 2015)",
+    questionText: "Explain three guidelines that should be followed when preparing and cooking vegetables to retain maximum nutrients.",
+    tariffModel: {"kind":"fixed","notation":"Preparation4 + cooking4 + one other4"}, totalMarks: 12,
+    rows: [
+    { id: "preparation", kind: "criterion", verbatim: "preparation", marks: 4, contextNote: "eat raw where possible; prepare just before cooking; use a sharp knife; leave skins on if possible; avoid steeping; cook in a small amount of water for short time until ‘al dente’; use saucepan with tightly fitted lid; use cooking liquid for soups and sauces; do not use bread soda as it destroys vitamin C; avoid overcooking; use suitable cooking methods e.g. steaming, stir frying and microwaving; etc.", permittedMarks: [0,4] },
+    { id: "cooking", kind: "criterion", verbatim: "cooking", marks: 4, contextNote: "eat raw where possible; prepare just before cooking; use a sharp knife; leave skins on if possible; avoid steeping; cook in a small amount of water for short time until ‘al dente’; use saucepan with tightly fitted lid; use cooking liquid for soups and sauces; do not use bread soda as it destroys vitamin C; avoid overcooking; use suitable cooking methods e.g. steaming, stir frying and microwaving; etc.", permittedMarks: [0,4] },
+    { id: "other", kind: "criterion", verbatim: "1 other", marks: 4, contextNote: "One ADDITIONAL point from either required heading. eat raw where possible; prepare just before cooking; use a sharp knife; leave skins on if possible; avoid steeping; cook in a small amount of water for short time until ‘al dente’; use saucepan with tightly fitted lid; use cooking liquid for soups and sauces; do not use bread soda as it destroys vitamin C; avoid overcooking; use suitable cooking methods e.g. steaming, stir frying and microwaving; etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sb-q3a", topicId: "home-economics-0-9", conceptId: "sb-q3a",
+    section: "B", questionRef: "2016 OL Section B Q3(a)",
+    stem: "‘Eggs are great value, easy to cook and a very versatile ingredient for both savoury and sweet dishes.’ (www.bordbia.ie)",
+    questionText: "Describe (i) the nutritional and (ii) the dietetic value of eggs.",
+    tariffModel: {"kind":"fixed","notation":"Nutrition5 + dietetic5 + two others×5"}, totalMarks: 20,
+    rows: [
+    { id: "nutrition", kind: "criterion", verbatim: "nutritional value", marks: 5, contextNote: "Nutritional: HBV protein; 100% biological value; white contains albumin, ovalbumin and globulin; yolk contains vitelin and livetin; saturated fat; lecithin - natural emulsifier; yolk contains cholesterol; white is fat-free; no carbohydrate; 75% water; fat soluble vitamins A, D,E, K; water soluble B group vitamins; calcium; phosphorus; iron; zinc; etc.", permittedMarks: [0,5] },
+    { id: "dietetic", kind: "criterion", verbatim: "dietetic value", marks: 5, contextNote: "Dietetic: very versatile; can be used for lots of dishes both sweet and savoury; HBV protein assists growth and repair, ideal for children and adolescents; easy to digest; quick and easy to cook; can be eaten on their own; a meal in themselves when carbohydrate is added e.g. toast; contains saturated fat and cholesterol; have no vitamin C; important in the diet of a vegetarian; low in kilocalories - suitable for people following a calorie controlled diet; inexpensive and quick to cook saving energy costs; etc.", permittedMarks: [0,5] },
+    { id: "other", kind: "criterion", verbatim: "2 others", marks: 10, contextNote: "Two ADDITIONAL points from either required heading. The printed roman asks share this flexible twenty-mark allocation; no ten/ten split is printed. Nutritional: HBV protein; 100% biological value; white contains albumin, ovalbumin and globulin; yolk contains vitelin and livetin; saturated fat; lecithin - natural emulsifier; yolk contains cholesterol; white is fat-free; no carbohydrate; 75% water; fat soluble vitamins A, D,E, K; water soluble B group vitamins; calcium; phosphorus; iron; zinc; etc. Dietetic: very versatile; can be used for lots of dishes both sweet and savoury; HBV protein assists growth and repair, ideal for children and adolescents; easy to digest; quick and easy to cook; can be eaten on their own; a meal in themselves when carbohydrate is added e.g. toast; contains saturated fat and cholesterol; have no vitamin C; important in the diet of a vegetarian; low in kilocalories - suitable for people following a calorie controlled diet; inexpensive and quick to cook saving energy costs; etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sb-q3b", topicId: "home-economics-0-3", conceptId: "sb-q3b",
+    section: "B", questionRef: "2016 OL Section B Q3(b)",
+    stem: "‘Eggs are great value, easy to cook and a very versatile ingredient for both savoury and sweet dishes.’ (www.bordbia.ie)",
+    questionText: "Outline: (i) the factors to be considered when storing eggs (ii) the effects of heat on eggs.",
+    tariffModel: {"kind":"fixed","notation":"Storage5 + heat5 + two others×5"}, totalMarks: 20,
+    rows: [
+    { id: "storage", kind: "criterion", verbatim: "storing", marks: 5, contextNote: "Storing: store in fridge @ 4°C in egg compartment; remove from carton; store pointed end down; do not store near strongly flavoured foods; store leftover egg white in a sealed container for up to 2-4 days; store left over egg yolk in water for up to 4 days; use within best before date; do not wash the shell to avoid more rapid staling of egg; etc.", permittedMarks: [0,5] },
+    { id: "heat", kind: "criterion", verbatim: "effects of heat", marks: 5, contextNote: "Effects of heat: protein coagulates; white changes colour; loss of vitamin B; high temperature causes curdling; overcooking makes eggs rubbery/tough; kills bacteria; egg white becomes insoluble when heated; a reaction between iron and sulphur causes a green ring to form around yolk if overcooked; etc.", permittedMarks: [0,5] },
+    { id: "other", kind: "criterion", verbatim: "2 others", marks: 10, contextNote: "Two ADDITIONAL points from either required heading. Both printed roman asks remain in this shared twenty-mark account. Storing: store in fridge @ 4°C in egg compartment; remove from carton; store pointed end down; do not store near strongly flavoured foods; store leftover egg white in a sealed container for up to 2-4 days; store left over egg yolk in water for up to 4 days; use within best before date; do not wash the shell to avoid more rapid staling of egg; etc. Effects of heat: protein coagulates; white changes colour; loss of vitamin B; high temperature causes curdling; overcooking makes eggs rubbery/tough; kills bacteria; egg white becomes insoluble when heated; a reaction between iron and sulphur causes a green ring to form around yolk if overcooked; etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sb-q3c", topicId: "home-economics-0-11", conceptId: "sb-q3c",
+    section: "B", questionRef: "2016 OL Section B Q3(c)",
+    stem: "‘Eggs are great value, easy to cook and a very versatile ingredient for both savoury and sweet dishes.’ (www.bordbia.ie)",
+    questionText: "Describe two items of consumer information found on an egg carton (box).",
+    tariffModel: {"kind":"fixed","notation":"2 points × 5"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "items", marks: 10, contextNote: "Complete original source guidance: country of origin; name and address; registration number of producer/packer; quantity; class; week number (1-52); size – small, medium, large; weight; use by/best before date; storage instructions; quality assurance mark; organic or free range; nutritional information; etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sb-q4a", topicId: "home-economics-1-1", conceptId: "sb-q4a",
+    section: "B", questionRef: "2016 OL Section B Q4(a)",
+    stem: "Saoirse is a 1st year college student living away from home and sharing a house with two other students. She has a weekly allowance of €220, for all her college expenses including rent, and she cycles to college.",
+    questionText: "Discuss four reasons why Saoirse should set out a budget.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "reasons", marks: 20, contextNote: "Complete original source guidance: Prevents overspending: as there is only a certain amount of money available; etc. Reduce stress: a budget provides financial security; alleviates worry and stress as bills will be paid; she will know where all monies are going; etc. Provide for emergencies: visit to doctor or dentist; etc. Savings: develops savings habit; encourages students to wait until they have the money to buy something; ensures money available to cover unplanned eventualities e.g. job loss; etc. Develop money management skills: if student can manage on small budget when they earn money these skills will transfer; etc. Avoid debt: start working life with a positive credit rating; avoid impulse buying; budgeting reduces reliance on credit; etc.", permittedMarks: [0,5,10,15,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sb-q4b", topicId: "home-economics-1-1", conceptId: "sb-q4b",
+    section: "B", questionRef: "2016 OL Section B Q4(b)",
+    stem: "Saoirse is a 1st year college student living away from home and sharing a house with two other students. She has a weekly allowance of €220, for all her college expenses including rent, and she cycles to college.",
+    questionText: "Set out a weekly budget plan showing how Saoirse should allocate her money to ensure her needs and wants are met.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "weekly budget plan", marks: 20, contextNote: "Give ONE coherent weekly budget for Saoirse’s €220 allowance, including rent and her cycling context. Five published four-mark points; no compulsory category quota or amount/reason split is printed. Complete original percentage allocation pool: rent 25%; food 25%; household bills 15% - lighting/heating/bin collection/phone/internet; education 10% e.g. photocopying, exam fees, books etc.; clothes 5%; leisure/entertainment 5%; savings 5%; health 5%; discretionary spending 5%; evaluate/review budget on a regular basis; etc.", permittedMarks: [0,4,8,12,16,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sb-q4c", topicId: "home-economics-1-1", conceptId: "sb-q4c",
+    section: "B", questionRef: "2016 OL Section B Q4(c)",
+    stem: "Saoirse is a 1st year college student living away from home and sharing a house with two other students. She has a weekly allowance of €220, for all her college expenses including rent, and she cycles to college.",
+    questionText: "Suggest one suitable savings account that you would recommend for Saoirse. Give one reason for your choice.",
+    tariffModel: {"kind":"fixed","notation":"Name5 + reason5"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "point", verbatim: "An Post - deposit account", marks: 5 },
+    { id: "reason", kind: "criterion", verbatim: "Reason", marks: 5, contextNote: "Use the SAME savings account for the name and reason, for Saoirse. Original historical 2016 conditions retained. An Post - deposit account: ease of access; post office open on Saturday; has many local branches; deposit book provided; withdrawals can be made from any post office on the production of valid ID; savings are secure; dirt tax deducted; interest calculated on a daily basis; etc.", permittedMarks: [0,5] },
+    ],
+    answerVariants: [
+          {
+                "id": "account-1",
+                "label": "An Post - deposit account",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "An Post - deposit account",
+                            "marks": 5
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  5
+                            ],
+                            "contextNote": "Use the SAME savings account for the name and reason, for Saoirse. Original historical 2016 conditions retained. An Post - deposit account: ease of access; post office open on Saturday; has many local branches; deposit book provided; withdrawals can be made from any post office on the production of valid ID; savings are secure; dirt tax deducted; interest calculated on a daily basis; etc."
+                      }
+                ]
+          },
+          {
+                "id": "account-2",
+                "label": "Credit union - share account",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Credit union - share account",
+                            "marks": 5
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  5
+                            ],
+                            "contextNote": "Use the SAME savings account for the name and reason, for Saoirse. Original historical 2016 conditions retained. Credit union - share account: local; open on Saturdays/late in the evening; easier to get a loan if you have a savings record; interest rate low; dirt tax deducted; savings are secure; an annual dividend is paid on savings; etc."
+                      }
+                ]
+          },
+          {
+                "id": "account-3",
+                "label": "Bank - deposit account",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Bank - deposit account",
+                            "marks": 5
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  5
+                            ],
+                            "contextNote": "Use the SAME savings account for the name and reason, for Saoirse. Original historical 2016 conditions retained. Bank - deposit account: set up saving record; easy access to money 24/7 through ATM machine; interest rate very low; dirt tax deducted; savings are secure; etc."
+                      }
+                ]
+          },
+          {
+                "id": "account-4",
+                "label": "Building society",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Building society",
+                            "marks": 5
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  5
+                            ],
+                            "contextNote": "Use the SAME savings account for the name and reason, for Saoirse. Original historical 2016 conditions retained. The source names Building society but prints no reason model; none has been invented. Building society: etc."
+                      }
+                ]
+          },
+          {
+                "id": "another-account",
+                "label": "Another valid savings account",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  5
+                            ],
+                            "contextNote": "One suitable savings account for Saoirse; all original historical source choices remain available."
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  5
+                            ],
+                            "contextNote": "One reason for the SAME account. No additional source model is printed."
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sb-q5a", topicId: "home-economics-2-1", conceptId: "sb-q5a",
+    section: "B", questionRef: "2016 OL Section B Q5(a)",
+    stem: "‘According to the Annual Report of the Registrar General for 2014, some 22,033 marriages were recorded for the year, a 6.6% increase over the figure in 2013.’ (Irish Independent, July 2015)",
+    questionText: "Discuss why marriage is a popular option for couples in Ireland today.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "marriage", marks: 15, contextNote: "Complete original source guidance: marriage is popular today because there are more options than the traditional model e.g. civil marriages, same sex marriages; gives couples security; to have children in a caring relationship; they love each other; religious reasons; legal protection of the relationship; companionship; family tradition; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sb-q5b", topicId: "home-economics-2-1", conceptId: "sb-q5b",
+    section: "B", questionRef: "2016 OL Section B Q5(b)",
+    stem: "‘According to the Annual Report of the Registrar General for 2014, some 22,033 marriages were recorded for the year, a 6.6% increase over the figure in 2013.’ (Irish Independent, July 2015)",
+    questionText: "Discuss (i) the rights and (ii) the responsibilities of a couple within the marriage relationship.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "rights", marks: 20, contextNote: "Cover BOTH rights and responsibilities within FOUR points. The source gives no separate quota or ten/ten split for the two printed roman asks. Original complete historical 2016 guidance: (i) rights: to each other’s company; live together as partners; monogamous relationship; to be faithful/loyal to each other; consummate the marriage; non- consummated marriages can be annulled; a sexual relationship with their partner; can inherit from each other (Succession Act 1965); etc. (ii) responsibilities: provide financial support for partner and children; joint guardianship of children; legal duty to provide for the physical, emotional, social, moral and educational needs of the children; work on the relationship to ensure it is functioning; show commitment to the marriage; etc.", permittedMarks: [0,5,10,15,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sb-q5c", topicId: "home-economics-2-1", conceptId: "sb-q5c",
+    section: "B", questionRef: "2016 OL Section B Q5(c)",
+    stem: "‘According to the Annual Report of the Registrar General for 2014, some 22,033 marriages were recorded for the year, a 6.6% increase over the figure in 2013.’ (Irish Independent, July 2015)",
+    questionText: "Name and give an account of one option available to couples who are experiencing difficulties in their marriage.",
+    tariffModel: {"kind":"fixed","notation":"Name5 + account2×5"}, totalMarks: 15,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Marriage counselling", marks: 5 },
+    { id: "account", kind: "criterion", verbatim: "Account", marks: 10, contextNote: "Two details of the SAME selected option. Complete original historical 2016 terms and legal conditions retained: Marriage counselling: assists couples to resolve marriage problems before they become grounds for separation or divorce; partners can attend separately/together/with children; confidential service; offered by ACCORD, the Family Support Agency; and independent groups; if there are specific problems e.g. alcohol addiction they can be referred to a more specialised counsellor; etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "option-1",
+                "label": "Marriage counselling",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Marriage counselling",
+                            "marks": 5
+                      },
+                      {
+                            "id": "account",
+                            "kind": "criterion",
+                            "verbatim": "Account",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  5,
+                                  10
+                            ],
+                            "contextNote": "Two details of the SAME selected option. Complete original historical 2016 terms and legal conditions retained: Marriage counselling: assists couples to resolve marriage problems before they become grounds for separation or divorce; partners can attend separately/together/with children; confidential service; offered by ACCORD, the Family Support Agency; and independent groups; if there are specific problems e.g. alcohol addiction they can be referred to a more specialised counsellor; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "option-2",
+                "label": "Family mediation",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Family mediation",
+                            "marks": 5
+                      },
+                      {
+                            "id": "account",
+                            "kind": "criterion",
+                            "verbatim": "Account",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  5,
+                                  10
+                            ],
+                            "contextNote": "Two details of the SAME selected option. Complete original historical 2016 terms and legal conditions retained: Family mediation: a confidential service for couples who have agreed to separate or divorce; may be an alternative to court proceedings; helps couples negotiate an agreement on issues such as parenting arrangements; custody of children; division of finance; property issues; maintenance; funded by the Family Support Agency; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "option-3",
+                "label": "Legal separation",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Legal separation",
+                            "marks": 5
+                      },
+                      {
+                            "id": "account",
+                            "kind": "criterion",
+                            "verbatim": "Account",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  5,
+                                  10
+                            ],
+                            "contextNote": "Two details of the SAME selected option. Complete original historical 2016 terms and legal conditions retained: Legal separation: can be arranged through mediation if all parties agree on the separation; mediation can avoid court proceedings which are expensive; the terms of the separation are documented in the Deed of Separation; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "option-4",
+                "label": "Judicial separation",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Judicial separation",
+                            "marks": 5
+                      },
+                      {
+                            "id": "account",
+                            "kind": "criterion",
+                            "verbatim": "Account",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  5,
+                                  10
+                            ],
+                            "contextNote": "Two details of the SAME selected option. Complete original historical 2016 terms and legal conditions retained: Judicial separation: necessary when the couple cannot agree on the terms of separation; The Judicial Separation Act 1989 sets out the grounds for the separation - adultery, desertion, unreasonable behaviour; normal marital relationships have not existed for at least one year prior to the application; the couple haven’t lived together for one year (agreed separation) or three years (lack of consent); application for judicial separation has to be heard by a judge, if successful he/she will grant a decree of judicial separation; he/she may also make additional orders e.g. extinguishment of succession rights; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "option-5",
+                "label": "Legal nullity",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Legal nullity",
+                            "marks": 5
+                      },
+                      {
+                            "id": "account",
+                            "kind": "criterion",
+                            "verbatim": "Account",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  5,
+                                  10
+                            ],
+                            "contextNote": "Two details of the SAME selected option. Complete original historical 2016 terms and legal conditions retained: Legal nullity: obtained by couples who married in civil or church ceremonies; it is required in order for either spouse to remarry and avoid bigamy; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "option-6",
+                "label": "Church nullity",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Church nullity",
+                            "marks": 5
+                      },
+                      {
+                            "id": "account",
+                            "kind": "criterion",
+                            "verbatim": "Account",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  5,
+                                  10
+                            ],
+                            "contextNote": "Two details of the SAME selected option. Complete original historical 2016 terms and legal conditions retained: Church nullity: church annulment is granted by the Church after a marriage tribunal has studied and declared the marriage annulled; it has no legal standing so couples are still married; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "option-7",
+                "label": "Divorce",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Divorce",
+                            "marks": 5
+                      },
+                      {
+                            "id": "account",
+                            "kind": "criterion",
+                            "verbatim": "Account",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  5,
+                                  10
+                            ],
+                            "contextNote": "Two details of the SAME selected option. Complete original historical 2016 terms and legal conditions retained: Divorce: the couple have lived apart for four out of the previous five years; there is no realistic possibility of reconciliation; sufficient provision has been made for the spouse and children; under a decree of divorce the court may also make orders in relation to custody and access of children, allocation of property, payment of maintenance, extinguishment of succession rights; when the decree is granted it cannot be reversed; divorce hearing held in Family Circuit Court; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-option",
+                "label": "Another valid option",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  5
+                            ],
+                            "contextNote": "One option for couples experiencing marriage difficulties; all seven original models remain available."
+                      },
+                      {
+                            "id": "account",
+                            "kind": "criterion",
+                            "verbatim": "Account",
+                            "marks": 10,
+                            "permittedMarks": [
+                                  0,
+                                  5,
+                                  10
+                            ],
+                            "contextNote": "Two details of the SAME option. No additional source model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q1ai", topicId: "home-economics-3-4", conceptId: "sc-q1ai",
+    section: "C", questionRef: "2016 OL Section C E1 Q1(a)(i)",
+    stem: "Kitchen design requires careful consideration and planning. The diagram shows the layout of a kitchen. (www.buzhomedesign.com)",
+    questionText: "Evaluate the suitability of the kitchen for a couple with two young children under each of the following headings: • suitability for family use • ventilation • ergonomics (work triangle).",
+    tariffModel: {"kind":"fixed","notation":"Three required headings×5 + one other5"}, totalMarks: 20,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Suitability for family use", marks: 5, contextNote: "Suitability for family use: large to meet family needs; stain resistant non slip flooring; easy to keep clean; sufficient room for storage; modern in design; adequate lighting; work surfaces are at a suitable level for work comfort; large fridge/freezer; as it is a family kitchen there should be table and chairs, and a play area; etc.", permittedMarks: [0,5] },
+    { id: "heading-2", kind: "criterion", verbatim: "Ventilation", marks: 5, contextNote: "Ventilation: the extractor unit over the hob; large kitchen windows; etc.", permittedMarks: [0,5] },
+    { id: "heading-3", kind: "criterion", verbatim: "Ergonomics", marks: 5, contextNote: "Ergonomics: small work triangle; design allows for ease of movement in the kitchen; accommodates the natural traffic flow; spaces are easy to clean; free access to all areas e.g. windows; good food preparation sequence; adequate storage space; appliances at a comfortable height; etc.", permittedMarks: [0,5] },
+    { id: "other", kind: "criterion", verbatim: "1 other", marks: 5, contextNote: "One ADDITIONAL point from any of the THREE required headings. Suitability for family use: large to meet family needs; stain resistant non slip flooring; easy to keep clean; sufficient room for storage; modern in design; adequate lighting; work surfaces are at a suitable level for work comfort; large fridge/freezer; as it is a family kitchen there should be table and chairs, and a play area; etc. Ventilation: the extractor unit over the hob; large kitchen windows; etc. Ergonomics: small work triangle; design allows for ease of movement in the kitchen; accommodates the natural traffic flow; spaces are easy to clean; free access to all areas e.g. windows; good food preparation sequence; adequate storage space; appliances at a comfortable height; etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2016-ol-sc-q1-kitchen",
+          "src": "/exam-figures/home-economics/home-economics-2016-ol-sc-q1-kitchen.png",
+          "srcHash": "453e9470bb3a2f0b431a4ad4c657feb1",
+          "alt": "Complete original kitchen layout with all visible appliances, storage, worktops, windows and original source attribution.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q1aii", topicId: "home-economics-3-6", conceptId: "sc-q1aii",
+    section: "C", questionRef: "2016 OL Section C E1 Q1(a)(ii)",
+    stem: "Kitchen design requires careful consideration and planning. The diagram shows the layout of a kitchen. (www.buzhomedesign.com)",
+    questionText: "Discuss three factors which should be considered when choosing heating for the kitchen.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 15, contextNote: "Complete original source guidance: cost: installation; running and maintenance; etc. energy efficiency: is the source renewable; etc. convenience: automatic timer that is easy to use; thermostat to control heating; etc. size of kitchen: larger kitchen will need a more flexible system; etc. comfort: temperature fairly constant; etc. safety: priority for family with young children; etc. water heating: immersion with a timer to save electricity; instantaneous heaters (geysers); etc. aesthetic appeal: underfloor heating; types of radiators; etc. impact on the environment: gas and smokeless fuel produce less pollution; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2016-ol-sc-q1-kitchen",
+          "src": "/exam-figures/home-economics/home-economics-2016-ol-sc-q1-kitchen.png",
+          "srcHash": "453e9470bb3a2f0b431a4ad4c657feb1",
+          "alt": "Complete original kitchen layout with all visible appliances, storage, worktops, windows and original source attribution.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q1aiii", topicId: "home-economics-3-6", conceptId: "sc-q1aiii",
+    section: "C", questionRef: "2016 OL Section C E1 Q1(a)(iii)",
+    stem: "Kitchen design requires careful consideration and planning. The diagram shows the layout of a kitchen. (www.buzhomedesign.com)",
+    questionText: "Suggest three ways to improve the energy efficiency of a kitchen.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "ways", marks: 15, contextNote: "Complete original source guidance: timers: time heating to come on just when needed; etc. room thermostats: allows you to reduce the heat by 1or 2 degrees; etc. energy efficient appliances: induction hobs; unplug appliances when not in use; never leave appliances on standby; use full loads; buy appliances with energy efficient labels A or B; etc. energy sources: solar panels, expensive to install but cheap to run; install night saver electricity; etc. windows: triple/double glazed with low emissivity glass; well fitted; draught excluders around windows and doors; etc. bulbs: use low energy CFL light bulbs; turn off lights when not in use; use correct wattage; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2016-ol-sc-q1-kitchen",
+          "src": "/exam-figures/home-economics/home-economics-2016-ol-sc-q1-kitchen.png",
+          "srcHash": "453e9470bb3a2f0b431a4ad4c657feb1",
+          "alt": "Complete original kitchen layout with all visible appliances, storage, worktops, windows and original source attribution.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q1bi", topicId: "home-economics-3-4", conceptId: "sc-q1bi",
+    section: "C", questionRef: "2016 OL Section C E1 Q1(b)(i)",
+    stem: "The floor makes up a large part of the surface area of any room and thus has a definite effect on the overall appearance of the room.",
+    questionText: "Give an account of four factors that should be considered when choosing floor coverings for a family home.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 20, contextNote: "Complete original source guidance: room function; quality; durability; easy to clean and hygienic; insulating properties in relation to warmth and sound; safety, non-slip; type of sub floor; décor; adds atmosphere to the room; cost; size of the room; traffic flow; condition of the floor beneath; aesthetics; occupants; etc.", permittedMarks: [0,5,10,15,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q1bii", topicId: "home-economics-3-4", conceptId: "sc-q1bii",
+    section: "C", questionRef: "2016 OL Section C E1 Q1(b)(ii)",
+    stem: "The floor makes up a large part of the surface area of any room and thus has a definite effect on the overall appearance of the room.",
+    questionText: "Suggest one type of floor covering suitable for a family bathroom. State two properties of the selected floor covering.",
+    tariffModel: {"kind":"fixed","notation":"Name4 + properties2×3"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Tiles", marks: 4 },
+    { id: "properties", kind: "criterion", verbatim: "Properties", marks: 6, contextNote: "Two properties of the SAME chosen bathroom floor covering. Complete original model: Tiles: ceramic, slate, terracotta, glazed stone - durable; cold and hard under foot; resistant to water; easy to maintain; variety of colours; non-slip; easy to fit – can be cut to size/shape; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "floor-1",
+                "label": "Tiles",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Tiles",
+                            "marks": 4
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "Properties",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Two properties of the SAME chosen bathroom floor covering. Complete original model: Tiles: ceramic, slate, terracotta, glazed stone - durable; cold and hard under foot; resistant to water; easy to maintain; variety of colours; non-slip; easy to fit – can be cut to size/shape; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "floor-2",
+                "label": "Vinyl",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Vinyl",
+                            "marks": 4
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "Properties",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Two properties of the SAME chosen bathroom floor covering. Complete original model: Vinyl: durable; easy to clean; hygienic; resilient to water and acid; warm underfoot; relatively non- slip; melts when subjected to heat; marked by furniture/heels; can be purchased in a variety of thicknesses and designs; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "floor-3",
+                "label": "Wooden flooring",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Wooden flooring",
+                            "marks": 4
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "Properties",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Two properties of the SAME chosen bathroom floor covering. Complete original model: Wooden flooring: laminated; hard wearing; noisy; low maintenance; hard underfoot; may scratch easily; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "floor-4",
+                "label": "Safety flooring",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Safety flooring",
+                            "marks": 4
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "Properties",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Two properties of the SAME chosen bathroom floor covering. Complete original model: Safety flooring: e.g. Tarasafe Ultra – slip resistant vinyl floor covering, hardwearing; hygienic and easily maintained; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-floor",
+                "label": "Another valid floor covering",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "Choose ONE suitable family-bathroom floor covering; all four original models remain available."
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "Properties",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Two properties of that SAME covering. No additional source model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q1ci", topicId: "home-economics-3-3", conceptId: "sc-q1ci",
+    section: "C", questionRef: "2016 OL Section C E1 Q1(c)(i)",
+    stem: "Today less people can afford to buy their own home.",
+    questionText: "Explain why the cost of rental accommodation has increased in urban areas.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "rental accommodation", marks: 12, contextNote: "Complete original source guidance: high demand; low supply; high cost of mortgages; large demand due from college students; housing shortage; difficult to save for a large deposit so people rent for longer; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q1cii", topicId: "home-economics-3-3", conceptId: "sc-q1cii",
+    section: "C", questionRef: "2016 OL Section C E1 Q1(c)(ii)",
+    stem: "Today less people can afford to buy their own home.",
+    questionText: "Name a suitable type of accommodation for each of the following people: (a) a college student (b) a person with reduced mobility and (c) an elderly couple. Give one reason for your choice in each case.",
+    tariffModel: {"kind":"fixed","notation":"Three required groups×(name3 + reason3)"}, totalMarks: 18,
+    rows: [
+    { id: "name-1", kind: "criterion", verbatim: "Name", marks: 3, contextNote: "Name ONE suitable accommodation type for this required group. All original options: (a) college student: rented apartment, shared house, digs; campus accommodation; etc. ", permittedMarks: [0,3] },
+    { id: "reason-1", kind: "criterion", verbatim: "Reasons", marks: 3, contextNote: "Give ONE reason matching the SAME selected accommodation and this required group.  near college; close to amenities, e.g. shops, public transport; cost; has Wi-Fi; security; shared/own bedroom; study space; storage; etc.", permittedMarks: [0,3] },
+    { id: "name-2", kind: "criterion", verbatim: "Name", marks: 3, contextNote: "Name ONE suitable accommodation type for this required group. All original options: (b) person with reduced mobility: single storey house; two storey with a stairs lift; sheltered housing; ramps to main door; etc. ", permittedMarks: [0,3] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reasons", marks: 3, contextNote: "Give ONE reason matching the SAME selected accommodation and this required group.  dwelling with no steps; good lighting to avoid falls; non slip flooring; specially adapted bathroom with a shower (seat for safety) and handrails; easy maintenance; close to church, shops, post office, library; have independence with 24 hour assistance available; have monitored alarm system to provide safety and security; panic button; key fob for monitored alarm system; handrails throughout the home; etc.", permittedMarks: [0,3] },
+    { id: "name-3", kind: "criterion", verbatim: "Name", marks: 3, contextNote: "Name ONE suitable accommodation type for this required group. All original options: (c) elderly couple: compact single storey dwelling; sheltered accommodation; with family members; flat adjacent to family; etc. ", permittedMarks: [0,3] },
+    { id: "reason-3", kind: "criterion", verbatim: "Reasons", marks: 3, contextNote: "Give ONE reason matching the SAME selected accommodation and this required group.  live in town or village close to public transport and amenities if not driving; security; independent living; close to family; easy to maintain; have a small low maintenance garden or patio; etc.", permittedMarks: [0,3] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2016-ol-sc-q1cii-group-1","label":"college student","marks":6,"rowIds":["name-1","reason-1"]},{"sourceCardId":"he-2016-ol-sc-q1cii-group-2","label":"person with reduced mobility","marks":6,"rowIds":["name-2","reason-2"]},{"sourceCardId":"he-2016-ol-sc-q1cii-group-3","label":"elderly couple","marks":6,"rowIds":["name-3","reason-3"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q2ai", topicId: "home-economics-3-8", conceptId: "sc-q2ai",
+    section: "C", questionRef: "2016 OL Section C E2 Q2(a)(i)",
+    stem: "Nothing can quite prepare you for the experience of your first office job. (www. pinterest.com)",
+    questionText: "Comment on the suitability of the office suits as shown above. Refer to: • function • comfort • aesthetic appeal.",
+    tariffModel: {"kind":"fixed","notation":"Three required office-suit headings×6"}, totalMarks: 18,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "function", marks: 6, contextNote: "function: easy to wear; suitable for the purpose; durable; versatile; will maintain shape; will not crease easily; fabric suited to warm and cool weather; stain resistant; buttons and zips should work; etc.", permittedMarks: [0,6] },
+    { id: "heading-2", kind: "criterion", verbatim: "comfort", marks: 6, contextNote: "comfort: should be considered in the design of the suits; allows for ease of movement in bending, stretching while maintaining shape; etc.", permittedMarks: [0,6] },
+    { id: "heading-3", kind: "criterion", verbatim: "aesthetic appeal", marks: 6, contextNote: "aesthetic appeal: cropped jacket above the hip are popular for workwear; modern features; formal tailored suits are very popular; tie matches the suit; buttons on jacket give balance; attractive looking; tie expresses confidence; etc.", permittedMarks: [0,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2016-ol-sc-q2-suits",
+          "src": "/exam-figures/home-economics/home-economics-2016-ol-sc-q2-suits.png",
+          "srcHash": "77a0d10a08223346b06698e36ac031b5",
+          "alt": "Both original office-suit examples, male and female, in full with the original image attribution.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 10 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q2aii", topicId: "home-economics-3-8", conceptId: "sc-q2aii",
+    section: "C", questionRef: "2016 OL Section C E2 Q2(a)(ii)",
+    stem: "Nothing can quite prepare you for the experience of your first office job. (www. pinterest.com)",
+    questionText: "Suggest one fabric suitable for the suit jacket and give a reason for your choice.",
+    tariffModel: {"kind":"fixed","notation":"Name3 + reason4"}, totalMarks: 7,
+    rows: [
+    { id: "name", kind: "point", verbatim: "wool", marks: 3 },
+    { id: "reason", kind: "criterion", verbatim: "Reason", marks: 4, contextNote: "ONE reason for the SAME selected fabric in the pictured suit-jacket context. wool: warm; will not crease; hardwearing; resilient; light weight; absorbent; etc.", permittedMarks: [0,4] },
+    ],
+    answerVariants: [
+          {
+                "id": "fabric-1",
+                "label": "wool",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "wool",
+                            "marks": 3
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "ONE reason for the SAME selected fabric in the pictured suit-jacket context. wool: warm; will not crease; hardwearing; resilient; light weight; absorbent; etc."
+                      }
+                ]
+          },
+          {
+                "id": "fabric-2",
+                "label": "linen",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "linen",
+                            "marks": 3
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "ONE reason for the SAME selected fabric in the pictured suit-jacket context. linen: strong; resists mildew; has a good lustre; absorbent; light weight; etc."
+                      }
+                ]
+          },
+          {
+                "id": "fabric-3",
+                "label": "cotton",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "cotton",
+                            "marks": 3
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "ONE reason for the SAME selected fabric in the pictured suit-jacket context. cotton: strong; washes and dries easily; dyes well; cool; draws heat from wearer; absorbent; easy to launder; etc."
+                      }
+                ]
+          },
+          {
+                "id": "fabric-4",
+                "label": "silk",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "silk",
+                            "marks": 3
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "ONE reason for the SAME selected fabric in the pictured suit-jacket context. silk: strong; smooth; crease resistant; absorbent; drapes well; etc."
+                      }
+                ]
+          },
+          {
+                "id": "fabric-5",
+                "label": "polyester",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "polyester",
+                            "marks": 3
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "ONE reason for the SAME selected fabric in the pictured suit-jacket context. polyester: strong; resistant to stretching; quick drying; washes easily; holds body heat of wearer; resists wrinkling; etc."
+                      }
+                ]
+          },
+          {
+                "id": "fabric-6",
+                "label": "viscose/rayon",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "viscose/rayon",
+                            "marks": 3
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "ONE reason for the SAME selected fabric in the pictured suit-jacket context. viscose/rayon: absorbent; soft; drapes well; holds in body heat of wearer; dyes easily; etc."
+                      }
+                ]
+          },
+          {
+                "id": "fabric-7",
+                "label": "acrylic",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "acrylic",
+                            "marks": 3
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "ONE reason for the SAME selected fabric in the pictured suit-jacket context. acrylic: light weight; soft; warm; stretchy; quick drying; etc."
+                      }
+                ]
+          },
+          {
+                "id": "fabric-8",
+                "label": "polyester cotton",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "polyester cotton",
+                            "marks": 3
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "ONE reason for the SAME selected fabric in the pictured suit-jacket context. polyester cotton: washes easily; light weight; easy to press; strong; drip dries quickly; resists staining; comfortable; low static level; etc."
+                      }
+                ]
+          },
+          {
+                "id": "another-fabric",
+                "label": "Another valid fabric",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "One suitable fabric for the pictured suit jacket; all eight source models remain available."
+                      },
+                      {
+                            "id": "reason",
+                            "kind": "criterion",
+                            "verbatim": "Reason",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "One reason for the SAME fabric. No additional source model is printed."
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2016-ol-sc-q2-suits",
+          "src": "/exam-figures/home-economics/home-economics-2016-ol-sc-q2-suits.png",
+          "srcHash": "77a0d10a08223346b06698e36ac031b5",
+          "alt": "Both original office-suit examples, male and female, in full with the original image attribution.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 10 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q2bi", topicId: "home-economics-3-7", conceptId: "sc-q2bi",
+    section: "C", questionRef: "2016 OL Section C E2 Q2(b)(i)",
+    stem: "Natural fabrics have many advantages over synthetic fabrics.",
+    questionText: "Write a profile of a natural fabric under each of the following headings: • fibre production • how the fabric is constructed.",
+    tariffModel: {"kind":"fixed","notation":"Production3×2 + construction3"}, totalMarks: 9,
+    rows: [
+    { id: "production", kind: "criterion", verbatim: "fibre production", marks: 6, contextNote: "Three production points for this SAME natural fabric. No separate name marks are printed. linen: made from the stem of the flax plant; fibres extracted; the seeds are removed; process called retting where flax is soaked in water for several days/weeks; fibres are separated from the woody part; fibres are combed and spun into yarn; longer fibres are called ‘line’ and shorter ones are called ‘tow’; etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    { id: "construction", kind: "criterion", verbatim: "how fabric is constructed", marks: 3, contextNote: "One construction account appropriate to the SAME fabric. Complete original weaving/knitting/bonding pool: weaving: warp threads stretched on a loom; weft threads passed over and under the warp from one side of loom to the other; selvedge edge is formed to prevent fraying; etc. knitting: made up of a series of interlocking loops that result in a flexible construction; etc. bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a light weight lining; etc.", permittedMarks: [0,3] },
+    ],
+    answerVariants: [
+          {
+                "id": "natural-1",
+                "label": "linen",
+                "rows": [
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three production points for this SAME natural fabric. No separate name marks are printed. linen: made from the stem of the flax plant; fibres extracted; the seeds are removed; process called retting where flax is soaked in water for several days/weeks; fibres are separated from the woody part; fibres are combed and spun into yarn; longer fibres are called ‘line’ and shorter ones are called ‘tow’; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "construction",
+                            "kind": "criterion",
+                            "verbatim": "how fabric is constructed",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "One construction account appropriate to the SAME fabric. Complete original weaving/knitting/bonding pool: weaving: warp threads stretched on a loom; weft threads passed over and under the warp from one side of loom to the other; selvedge edge is formed to prevent fraying; etc. knitting: made up of a series of interlocking loops that result in a flexible construction; etc. bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a light weight lining; etc."
+                      }
+                ]
+          },
+          {
+                "id": "natural-2",
+                "label": "cotton",
+                "rows": [
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three production points for this SAME natural fabric. No separate name marks are printed. cotton: fibres come from cotton plant; called boll or seed head; white and fluffy; bolls picked by hand; fibres separated from seeds (ginning); pressed into bales; graded according to length; fibres combed and spun into yarn; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "construction",
+                            "kind": "criterion",
+                            "verbatim": "how fabric is constructed",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "One construction account appropriate to the SAME fabric. Complete original weaving/knitting/bonding pool: weaving: warp threads stretched on a loom; weft threads passed over and under the warp from one side of loom to the other; selvedge edge is formed to prevent fraying; etc. knitting: made up of a series of interlocking loops that result in a flexible construction; etc. bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a light weight lining; etc."
+                      }
+                ]
+          },
+          {
+                "id": "natural-3",
+                "label": "wool",
+                "rows": [
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three production points for this SAME natural fabric. No separate name marks are printed. wool: fleece removed from sheep; graded according to colour, fineness and length of fibres; cleaned and combed; spun into yarn; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "construction",
+                            "kind": "criterion",
+                            "verbatim": "how fabric is constructed",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "One construction account appropriate to the SAME fabric. Complete original weaving/knitting/bonding pool: weaving: warp threads stretched on a loom; weft threads passed over and under the warp from one side of loom to the other; selvedge edge is formed to prevent fraying; etc. knitting: made up of a series of interlocking loops that result in a flexible construction; etc. bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a light weight lining; etc."
+                      }
+                ]
+          },
+          {
+                "id": "natural-4",
+                "label": "silk",
+                "rows": [
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three production points for this SAME natural fabric. No separate name marks are printed. silk: produced from the silk worm; silk moth lays eggs; worms feed on leaves of mulberry tree; worms spin cocoons of silk; cocoons are heated; soaked and threads are removed; threads wound into reels; spun into thicker yarns; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "construction",
+                            "kind": "criterion",
+                            "verbatim": "how fabric is constructed",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "One construction account appropriate to the SAME fabric. Complete original weaving/knitting/bonding pool: weaving: warp threads stretched on a loom; weft threads passed over and under the warp from one side of loom to the other; selvedge edge is formed to prevent fraying; etc. knitting: made up of a series of interlocking loops that result in a flexible construction; etc. bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a light weight lining; etc."
+                      }
+                ]
+          },
+          {
+                "id": "another-natural",
+                "label": "Another valid natural fabric",
+                "rows": [
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three production points for ONE natural fabric consistently; no additional source model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "construction",
+                            "kind": "criterion",
+                            "verbatim": "how fabric is constructed",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "One account appropriate to the SAME fabric. Complete original construction pool: weaving: warp threads stretched on a loom; weft threads passed over and under the warp from one side of loom to the other; selvedge edge is formed to prevent fraying; etc. knitting: made up of a series of interlocking loops that result in a flexible construction; etc. bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a light weight lining; etc."
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q2bii", topicId: "home-economics-3-7", conceptId: "sc-q2bii",
+    section: "C", questionRef: "2016 OL Section C E2 Q2(b)(ii)",
+    stem: "Natural fabrics have many advantages over synthetic fabrics.",
+    questionText: "Give two advantages of using natural fibres / fabric in clothing.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 3"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "advantages", marks: 6, contextNote: "Complete original source guidance: washable; durable; will take a fabric finish; cheaper; absorbent; can be dyed; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q2ci", topicId: "home-economics-3-8", conceptId: "sc-q2ci",
+    section: "C", questionRef: "2016 OL Section C E2 Q2(c)(i)",
+    stem: "‘I love fashion. I think it’s so important because it’s how you show yourself to the world.’ (Emma Watson, April 2015)",
+    questionText: "Explain how the media influences the choice of clothing worn by teenagers.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "media", marks: 9, contextNote: "Complete original source guidance: television; movies; magazines; surfing the internet; social media; stylists/writers predict trends for seasons; young people want to wear what celebrities are wearing; celebrities/sports celebrities set up their own clothing range; celebrities are photographed wearing clothes by specific designers at media events; many T.V programmes feature makeovers; most Sunday newspapers have fashion features; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q2cii", topicId: "home-economics-3-8", conceptId: "sc-q2cii",
+    section: "C", questionRef: "2016 OL Section C E2 Q2(c)(ii)",
+    stem: "‘I love fashion. I think it’s so important because it’s how you show yourself to the world.’ (Emma Watson, April 2015)",
+    questionText: "Discuss the contribution of modern footwear to current fashion trends.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 3"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "contribution", marks: 6, contextNote: "Complete original source guidance: contribute to the overall look; compliment the outfit; create a focal point; update an outfit; help to finish off a look; contrast in colour; balance an outfit; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q3ai", topicId: "home-economics-3-11", conceptId: "sc-q3ai",
+    section: "C", questionRef: "2016 OL Section C E3 Q3(a)(i)",
+    stem: "Work has a direct impact on resources such as time and money, and affects the amount of each available for family life.",
+    questionText: "Explain each of the following: • paid work • unpaid work • voluntary work.",
+    tariffModel: {"kind":"fixed","notation":"Three required work types×6"}, totalMarks: 18,
+    rows: [
+    { id: "type-1", kind: "criterion", verbatim: "Paid work", marks: 6, contextNote: "Paid work: employment/occupation which is a means of earning an income; for financial gain from working; provides security in the form of pensions, PRSI contributions, holiday and sick pay; a person can be self-employed or employed by another person; it can be full, part-time or temporary; etc.", permittedMarks: [0,6] },
+    { id: "type-2", kind: "criterion", verbatim: "Unpaid work", marks: 6, contextNote: "Unpaid work: no financial reward for the work done; mainly done in the home; tasks may include: child care, housework, caring for an elderly parent; person with a disability; can be monotonous; lacks advantages of paid work e.g. sick pay; etc.", permittedMarks: [0,6] },
+    { id: "type-3", kind: "criterion", verbatim: "Voluntary work", marks: 6, contextNote: "Voluntary work: working by choice in the community; not for financial gain; working with charity groups; has a higher status than unpaid work; people participate in this work as it is personally rewarding; builds friendships, teamwork, new skills, empathy; etc.", permittedMarks: [0,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q3aii", topicId: "home-economics-3-11", conceptId: "sc-q3aii",
+    section: "C", questionRef: "2016 OL Section C E3 Q3(a)(ii)",
+    stem: "Work has a direct impact on resources such as time and money, and affects the amount of each available for family life.",
+    questionText: "Discuss the advantages and the disadvantage of students working in part-time employment.",
+    tariffModel: {"kind":"fixed","notation":"Advantage5 + disadvantage5 + two others×5"}, totalMarks: 20,
+    rows: [
+    { id: "advantage", kind: "criterion", verbatim: "advantage", marks: 5, contextNote: "Advantages: earn money to fund social life, buy clothes, pay back student loans; have better time management skills; will gain experience in the work place; understand responsibility; not reliant on parent for pocket money; good work ethic leads to attaining a job; etc.", permittedMarks: [0,5] },
+    { id: "disadvantage", kind: "criterion", verbatim: "disadvantage", marks: 5, contextNote: "Disadvantages: less time for studies; increase absenteeism from class/lectures; obtain lower grades in exams; increase in stress levels; tiredness attending class; little job security; less leisure time; can impact on health; family relationships can suffer; etc.", permittedMarks: [0,5] },
+    { id: "other", kind: "criterion", verbatim: "2 others", marks: 10, contextNote: "Two ADDITIONAL points from either required heading. Advantages: earn money to fund social life, buy clothes, pay back student loans; have better time management skills; will gain experience in the work place; understand responsibility; not reliant on parent for pocket money; good work ethic leads to attaining a job; etc. Disadvantages: less time for studies; increase absenteeism from class/lectures; obtain lower grades in exams; increase in stress levels; tiredness attending class; little job security; less leisure time; can impact on health; family relationships can suffer; etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q3aiii", topicId: "home-economics-3-11", conceptId: "sc-q3aiii",
+    section: "C", questionRef: "2016 OL Section C E3 Q3(a)(iii)",
+    stem: "Work has a direct impact on resources such as time and money, and affects the amount of each available for family life.",
+    questionText: "How does the Protection of Young Persons (Employment) Act, 1996 protect young people in the labour force?",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "protect young people", marks: 12, contextNote: "Original historical 2016 employment conditions and €6.06 minimum-wage wording retained. Complete original source guidance: limits the number of hours a young person can work; it is an offence to employ children under 16 years full-time; under 14 years cannot work during school term; during holidays cannot work more than 7 hours per day, 35 hours per week; must have a break of 30 minutes every 4 hours; must have 2 rest days a week; must have 21 free days; 15 year olds must not work more than 8 hours a week during school term; 16/17 year olds must not work more than 40 hours per week; must not work before 6.00am or after 10.00pm; employer must get evidence of a young persons’ age; permission from parent or guardian; keep a register of hours worked; must be paid the National Minimum Wage of €6.06 per hour (under 18 years of age); etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q3bi", topicId: "home-economics-3-10", conceptId: "sc-q3bi",
+    section: "C", questionRef: "2016 OL Section C E3 Q3(b)(i)",
+    stem: "Recently, third level colleges have seen a big increase in the number of mature students applying for places on courses.",
+    questionText: "Discuss three reasons why adults are returning to education.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 6"}, totalMarks: 18,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "reasons", marks: 18, contextNote: "Complete original source guidance: help apply for a new job; promotion in their chosen field; learn a new skill; people lost jobs in the recession and returned to college to enhance employment prospects; help children with homework; set a good example for their family around their attitude to education; learn a new language to facilitate travel; hobbies and interests; meet new people; expand social circle; to fulfil a life-long ambition; they enjoy studying; to keep up with technological advances; to develop literacy and numeracy skills; etc.", permittedMarks: [0,6,12,18], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,6]},{"id":"point-3","verbatim":"Point 3","marks":6,"permittedMarks":[0,6]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q3bii", topicId: "home-economics-3-10", conceptId: "sc-q3bii",
+    section: "C", questionRef: "2016 OL Section C E3 Q3(b)(ii)",
+    stem: "Recently, third level colleges have seen a big increase in the number of mature students applying for places on courses.",
+    questionText: "Name and give details of one initiative available to adults to improve their educational qualifications.",
+    tariffModel: {"kind":"fixed","notation":"Name4 + details2×4"}, totalMarks: 12,
+    rows: [
+    { id: "name", kind: "anyN", verbatim: "Name", marks: 4, contextNote: "Choose ONE adult-education initiative consistently. Complete original historical source names/brief descriptors retained.", openList: true, group: {"claimMax":1,"perOption":4,"options":["adult literacy services","BTEI - Back to Education Initiative","NALA - National Adult Literacy Association","VTOS - Vocational, Training Opportunities Scheme","ETB offering a wide range of night classes","Teagasc/Coillte","Solas (FÁS) skill based training","Open University/distance learning","Universities and Institutes of Technology"]} },
+    { id: "details", kind: "criterion", verbatim: "Details", marks: 8, contextNote: "Two details of the SAME initiative. The original supplies names and brief descriptors only, not complete two-point worked accounts; no additional model has been invented. adult literacy services; BTEI - Back to Education Initiative; NALA - National Adult Literacy Association; VTOS - Vocational, Training Opportunities Scheme; ETB offering a wide range of night classes; Teagasc/Coillte; Solas (FÁS) skill based training; Open University/distance learning; Universities and Institutes of Technology; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q3ci", topicId: "home-economics-3-11", conceptId: "sc-q3ci",
+    section: "C", questionRef: "2016 OL Section C E3 Q3(c)(i)",
+    stem: "Many people are stressed by life, this is why leisure activities are crucial to the development of a good work / life balance.",
+    questionText: "Define leisure.",
+    tariffModel: {"kind":"fixed","notation":"1 points × 6"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "leisure", marks: 6, contextNote: "Complete original source guidance: the residual time left over after essential activities have been completed; the time that an individual can choose to spend as he/she wishes; time available for ease and relaxation; etc.", permittedMarks: [0,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC098GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "he-2016-ol-sc-q3cii", topicId: "home-economics-3-11", conceptId: "sc-q3cii",
+    section: "C", questionRef: "2016 OL Section C E3 Q3(c)(ii)",
+    stem: "Many people are stressed by life, this is why leisure activities are crucial to the development of a good work / life balance.",
+    questionText: "Describe how family leisure activities are influenced by each of the following: • age • occupation • culture • cost.",
+    tariffModel: {"kind":"fixed","notation":"Four required leisure headings×6"}, totalMarks: 24,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Age", marks: 6, contextNote: "Age: young people have fewer commitments and more time for leisure; couples with young children have the least amount of time and disposable income; retired couples have more time and money to spend on leisure; older people have less money, may have physical constraints and do more sedentary pursuits; leisure activities change with age; some leisure activities are regarded as too dangerous for children e.g. under 10’s may not scuba dive; etc.", permittedMarks: [0,6] },
+    { id: "heading-2", kind: "criterion", verbatim: "Occupation", marks: 6, contextNote: "Occupation: amount of disposable income available; number of working hours; type of work; leisure can contrast with a person’s occupation; can be an extension of work; work is a means of providing income for leisure; part-time workers, job sharing and career breaks all allow for more time for leisure activities; sedentary worker could opt for an energy consuming type of activity and vice- versa; etc.", permittedMarks: [0,6] },
+    { id: "heading-3", kind: "criterion", verbatim: "Culture", marks: 6, contextNote: "Culture: surfing, hurling etc. in a particular area of a county; traditional to a country e.g. Irish music, Flamenco in Spain; etc. children’s choice of leisure activities often influenced by parent’s activities; etc.", permittedMarks: [0,6] },
+    { id: "heading-4", kind: "criterion", verbatim: "Cost", marks: 6, contextNote: "Cost: membership fee; annual fee; joining fee; pay as you go; need for special clothes and equipment; people with little disposable income may choose inexpensive/free activities e.g. walking; etc.", permittedMarks: [0,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];

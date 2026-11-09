@@ -1005,5 +1005,83 @@
     "attribution": "SEC Home Economics 2016 Higher Level marking scheme, page 11 — © State Examinations Commission.",
     "sourceNote": "Original PDF crop, bounds [66.75199839274089, 225.49769474909857, 555.2120198567708, 755.5292147122897], rendered at 2.5×. SHA256 f310fc50f1438673b71e6aac6fb50dfc7102f64d61fa5f99984fcea183a3ce8a.",
     "solution": true
+  },
+  "home-economics-2016-ol-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q1.png",
+    "md5": "d17c72cfc38e9b58166a1caa39aaf543",
+    "alt": "Original protein true/false question with all three statements and blank True/False columns.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 138.7676544189453, 570.219970703125, 284.06545188210225], rendered at 2.5×. SHA256 3009381143a70a6b9485e15823fe9b79c07d6baa23f5168b1abe81ba1ddcebee."
+  },
+  "home-economics-2016-ol-sa-q2": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q2.png",
+    "md5": "0ad77ad415df434ee8ec850d1c657ea2",
+    "alt": "Original carbohydrate source table with Sugar, Starch and Fibre and all blank dietary-source fields.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 315.4675598144531, 570.219970703125, 463.910005569458], rendered at 2.5×. SHA256 b7d6e5cda31c05982cadaaa12b8d0fa317e1967efd85bb1aa775be786d583f32."
+  },
+  "home-economics-2016-ol-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q6.png",
+    "md5": "478e58329119c6c2ce273a68007782bc",
+    "alt": "Complete original cheese cloze with every blank and the full curds, lactic acid, rennin word bank.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 215.6875762939453, 570.219970703125, 432.8874816894531], rendered at 2.5×. SHA256 7ec42bb0a142829fe2ba3b6d8a0b2235434812354de244ad74041f92346d17cd."
+  },
+  "home-economics-2016-ol-sa-q7": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q7.png",
+    "md5": "b81bbc90e84a30364aaa9ca043a27533",
+    "alt": "Original freezing true/false question with all three statements, temperature and blank True/False columns.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 432.8874816894531, 570.219970703125, 623.7854558771306], rendered at 2.5×. SHA256 1980191f3805481f25349179cb5eac75d9aec135ede8551507b35086bad0739c."
+  },
+  "home-economics-2016-ol-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q8.png",
+    "md5": "0450fc82a893f2ba67f4225e3673d23f",
+    "alt": "Original vegetable table with Pulse, Root and Green categories and both blank example columns.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 39.88771057128906, 570.219970703125, 185.18546641956675], rendered at 2.5×. SHA256 23708fb61ddca89ddf51c9ee727c141ab36382f21eb1e6f84da7ad1a47dbe06a."
+  },
+  "home-economics-2016-ol-sa-q10": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q10.png",
+    "md5": "a73131a84d316598ffeaf8842e9bd87e",
+    "alt": "Both original fabric-care symbols, hand-wash and do-not-bleach, with the full question and blank response spaces.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 395.9875183105469, 570.219970703125, 792.6519165039062], rendered at 2.5×. SHA256 ad790bae1e70f59c2c891c0a0000feb72f81cddc3ccbcd31fb8ec1cf72fd6685."
+  },
+  "home-economics-2016-ol-sa-q11": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sa-q11.png",
+    "md5": "f6e59a4f3c37f0071b10dc90470e37ba",
+    "alt": "Original appliance table with Kettle, Food processor and Toaster, and blank Element/Motor columns.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 39.88771057128906, 570.219970703125, 198.98546808416194], rendered at 2.5×. SHA256 c911ffc49c49b32f97261b6533b432c7aa2e2f4c3d8940b98ec822be5b09fd77."
+  },
+  "home-economics-2016-ol-sb-q1-meals": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sb-q1-meals.png",
+    "md5": "1a4b0eac02fa69417323b29e7c7c9b66",
+    "alt": "Complete original comparison of Fisherman’s pie and Chicken curry with rice: all ingredients, energy and five nutrient values per serving, with original units.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [82.41000032424927, 196.55079064002405, 535.2666558159722, 407.4654554887251], rendered at 2.5×. SHA256 92a5811be8b84ad32ee7353b44c857ea28a9599bad7fe75731ac0423747a76d0."
+  },
+  "home-economics-2016-ol-sc-q1-kitchen": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sc-q1-kitchen.png",
+    "md5": "453e9470bb3a2f0b431a4ad4c657feb1",
+    "alt": "Complete original kitchen layout with all visible appliances, storage, worktops, windows and original source attribution.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [103.37999725341797, 190.4400177001953, 491.8800048828125, 353.28399658203125], rendered at 2.5×. SHA256 2a0684cecdf8064132e6136fe3dd4dc322c3be7c2a6fab715b18fdaa6ab8e611."
+  },
+  "home-economics-2016-ol-sc-q2-suits": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sc-q2-suits.png",
+    "md5": "77a0d10a08223346b06698e36ac031b5",
+    "alt": "Both original office-suit examples, male and female, in full with the original image attribution.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level examination paper, page 10 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [178.3800048828125, 125.33999633789062, 403.0884704589844, 350.67138671875], rendered at 2.5×. SHA256 14455fcaac8c6fc05945aba43296900b6fe671e00abc52386559316224381546."
+  },
+  "home-economics-2016-ol-sb-q2b-menu": {
+    "src": "/exam-figures/home-economics/home-economics-2016-ol-sb-q2b-menu.png",
+    "md5": "c396d73c83b4ace9145a97e32d0a8727",
+    "alt": "Complete original breakfast, lunch and dinner model including every food/drink and the printed Egg Mayonnaise anomaly in the lacto-vegetarian menu.",
+    "attribution": "SEC Home Economics 2016 Ordinary Level marking scheme, page 10 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [195.1699981689453, 391.1499938964844, 407.22998046875, 618.9400024414062], rendered at 2.5×. SHA256 860d85065b6eee044d628b867aed01b9f88f382848f67de108ee8979f8207ac5.",
+    "solution": true
   }
 }
