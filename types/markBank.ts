@@ -1321,7 +1321,12 @@ export interface LanguageWritingCriterion {
   bands?: LanguageBand[];
   limits?: Array<{
     id: string;
+    /** A source scale may start above zero. Zero remains unassessed; a
+     * previous lower placement must never be raised to this minimum. */
+    minMarks?: number;
     maxMarks: number;
+    /** The published scale name, e.g. Lower A or Lower E. */
+    scaleLabel?: string;
     when: { any: LanguageLimitCondition[] };
     bands?: LanguageBand[];
     guidance: string[];
@@ -1643,7 +1648,10 @@ export function tariffReconciles(card: SecCard): boolean {
         && validBands(criterion.bands, criterion.permittedMarks)
         && (criterion.kind !== 'deduction' || criteria.some(target => target.id === criterion.deductFrom && target.kind !== 'deduction'))
         && (criterion.limits ?? []).every(limit => limit.id && criterion.permittedMarks.includes(limit.maxMarks)
-          && limit.when.any.length > 0 && validBands(limit.bands, criterion.permittedMarks.filter(mark => mark <= limit.maxMarks))
+          && (limit.minMarks === undefined || (criterion.permittedMarks.includes(limit.minMarks) && limit.minMarks <= limit.maxMarks))
+          && (limit.scaleLabel === undefined || !!limit.scaleLabel.trim())
+          && limit.when.any.length > 0 && validBands(limit.bands, criterion.permittedMarks.filter(mark => mark === 0
+            || (mark >= (limit.minMarks ?? 0) && mark <= limit.maxMarks)))
           && limit.when.any.every(condition => 'criterionIds' in condition
             ? condition.criterionIds.length > 0 && condition.criterionIds.every(id => ids.has(id) && id !== criterion.id) && Number.isFinite(condition.atMost)
             : 'length' in condition ? Number.isInteger(condition.below) && condition.below > 0

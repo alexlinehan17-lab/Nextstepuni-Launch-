@@ -37,13 +37,26 @@ export function languageCriterionLimits(rubric: LanguageWritingRubric, criterion
   return (criterion.limits ?? []).filter(limit => limit.when.any.some(condition => languageConditionApplies(rubric, condition, scores, visited)));
 }
 
+/** One active source scale shared by the displayed controls and scorer.
+ * Retain raw saved choices so clearing a condition restores the placement.
+ * A lower bound restricts positive choices; it never grants minimum credit. */
+export function languageCriterionPlacement(rubric: LanguageWritingRubric, criterion: LanguageWritingCriterion, scores: LanguageScores, visited: string[] = []) {
+  const limits = languageCriterionLimits(rubric, criterion, scores, visited);
+  const ceiling = Math.min(criterion.maxMarks, ...limits.map(limit => limit.maxMarks));
+  const minimum = Math.max(0, ...limits.map(limit => limit.minMarks ?? 0));
+  const permitted = criterion.permittedMarks.filter(mark => mark === 0 || (mark >= minimum && mark <= ceiling));
+  const stored = selectedMark(criterion, scores);
+  const capped = Math.min(stored, ceiling);
+  const selected = permitted.includes(capped) ? capped : 0;
+  return { limits, permitted, selected, minimum, cap: Math.max(0, ...permitted),
+    needsRangeReview: minimum > 0 && stored > 0 && !permitted.includes(stored) };
+}
+
 export function languageCriterionValue(rubric: LanguageWritingRubric, id: string, scores: LanguageScores, ignoreDeductions = false, visited: string[] = []): number {
   const criterion = rubric.criteria.find(item => item.id === id);
   if (!criterion || visited.includes(id)) return 0;
   const path = [...visited, id];
-  const limits = languageCriterionLimits(rubric, criterion, scores, path);
-  const cap = Math.min(criterion.maxMarks, ...limits.map(limit => limit.maxMarks));
-  const raw = Math.min(selectedMark(criterion, scores), cap);
+  const { selected: raw } = languageCriterionPlacement(rubric, criterion, scores, path);
   if (ignoreDeductions || criterion.kind === 'deduction') return raw;
   const deducted = rubric.criteria.filter(item => item.kind === 'deduction' && item.deductFrom === id)
     .reduce((sum, item) => sum + languageCriterionValue(rubric, item.id, scores, true, path), 0);
