@@ -2,6 +2,7 @@ import React from 'react';
 import { act, cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import NextStepUniSidebar from '../components/navigation/NextStepUniSidebar';
+import { NOTIFICATION_PANEL_TOGGLE_EVENT } from '../utils/notificationPanel';
 
 const platform = vi.hoisted(() => ({ native: false }));
 const navigateToInnovationZone = vi.hoisted(() => vi.fn());
@@ -67,6 +68,19 @@ describe('persistent tablet navigation', () => {
     render(<NextStepUniSidebar {...props} />);
     expect(screen.getByRole('navigation', { name: 'Main navigation' })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Open account menu' })).toBeInTheDocument();
+  });
+  it('opens updates directly and reflects unread changes without hiding them in the account menu', () => {
+    const toggle = vi.fn();
+    window.addEventListener(NOTIFICATION_PANEL_TOGGLE_EVENT, toggle);
+    const { rerender } = render(<NextStepUniSidebar {...props} unreadCount={3} />);
+    fireEvent.click(screen.getByRole('button', { name: 'Open updates, 3 unread' }));
+    expect(toggle).toHaveBeenCalledTimes(1);
+    expect(screen.queryByRole('menu')).toBeNull();
+    fireEvent.click(screen.getByRole('button', { name: 'Collapse sidebar' }));
+    expect(screen.getByRole('button', { name: 'Open updates, 3 unread' })).toBeInTheDocument();
+    rerender(<NextStepUniSidebar {...props} unreadCount={0} />);
+    expect(screen.getByRole('button', { name: 'Open updates' })).not.toHaveAttribute('data-unread');
+    window.removeEventListener(NOTIFICATION_PANEL_TOGGLE_EVENT, toggle);
   });
   it('keeps the rail available after collapse and restores its labels', () => {
     render(<NextStepUniSidebar {...props} />);
