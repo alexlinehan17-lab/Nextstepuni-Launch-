@@ -1,0 +1,638 @@
+{
+  "schemaVersion": 1,
+  "year": 2013,
+  "level": "ordinary",
+  "sitting": "main",
+  "language": "ev",
+  "status": "source-reviewed",
+  "sources": {
+    "paper-trail-corpus/exampapers/2013/LC098GLP000EV.pdf": {
+      "sha256": "4e08ed9a0032d4e91f1e46110e82960b8e8c50dd0b192d47b697224c0c9a0d7e",
+      "pages": 12
+    },
+    "paper-trail-corpus/markingschemes/2013/LC098GLP000EV.pdf": {
+      "sha256": "d52c45073f9ac1867280624c21467101b3be27f3a674dc216f8211db9dc7c98c",
+      "pages": 36
+    }
+  },
+  "visualSweep": {
+    "paper": "All 12 original pages inspected: cover/instructions1; A2–5; B6–8; C9–11; blank12.",
+    "scheme": "All 36 original pages inspected: cover1, source-use notice2, instructions3, A4–7, B8–13, C14–20, blanks21–22, separate coursework23–33, blanks34–35, backcover36.",
+    "evidence": "tmp/pdfs/home-economics-review/2013-ol-main: paper-01..03 and scheme-01..09 all visually inspected; original text and hashes retained.",
+    "method": "Independent full original-page sweep and manual priced-task census before authoring or parser/card-count inspection."
+  },
+  "expectedTasks": 52,
+  "expectedSectionTasks": {
+    "A": 12,
+    "B": 20,
+    "C": 20
+  },
+  "sourceQuestionGroups": 20,
+  "offeredPracticeMarks": 627,
+  "independentTaskCensus": {
+    "A": {
+      "Q1": 6,
+      "Q2": 6,
+      "Q3": 6,
+      "Q4": 6,
+      "Q5": 6,
+      "Q6": 6,
+      "Q7": 6,
+      "Q8": 6,
+      "Q9": 6,
+      "Q10": 6,
+      "Q11": 6,
+      "Q12": 6
+    },
+    "B": {
+      "Q1(a)": 16,
+      "Q1(b)": 32,
+      "Q1(c)": 12,
+      "Q1(d)": 20,
+      "Q2(a)": 12,
+      "Q2(b)-guidelines": 12,
+      "Q2(b)-menu": 18,
+      "Q2(c)": 8,
+      "Q3(a)": 16,
+      "Q3(b)": 24,
+      "Q3(c)": 10,
+      "Q4(a)": 10,
+      "Q4(b)": 12,
+      "Q4(c)": 16,
+      "Q4(d)": 12,
+      "Q5(a)": 15,
+      "Q5(b)(i)": 10,
+      "Q5(b)(ii)": 10,
+      "Q5(c)-definition": 5,
+      "Q5(c)-ways": 10
+    },
+    "C": {
+      "E1(a)(i)": 12,
+      "E1(a)(ii)": 16,
+      "E1(a)(iii)": 12,
+      "E1(a)(iv)": 10,
+      "E1(b)(i)": 18,
+      "E1(b)(ii)": 12,
+      "E1(c)(i)": 12,
+      "E1(c)(ii)": 18,
+      "E2(a)(i)": 9,
+      "E2(a)(ii)": 16,
+      "E2(b)": 15,
+      "E2(c)(i)": 9,
+      "E2(c)(ii)": 6,
+      "E3(a)(i)": 24,
+      "E3(a)(ii)": 16,
+      "E3(a)(iii)": 10,
+      "E3(b)(i)": 18,
+      "E3(b)(ii)": 12,
+      "E3(c)(i)": 15,
+      "E3(c)(ii)": 15
+    }
+  },
+  "tasks": [
+    {
+      "id": "he-2013-ol-sa-q1",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2013 OL Section A Q1",
+      "topicId": "home-economics-0-7"
+    },
+    {
+      "id": "he-2013-ol-sa-q2",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2013 OL Section A Q2",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2013-ol-sa-q3",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2013 OL Section A Q3",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2013-ol-sa-q4",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2013 OL Section A Q4",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2013-ol-sa-q5",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2013 OL Section A Q5",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2013-ol-sa-q6",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2013 OL Section A Q6",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2013-ol-sa-q7",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2013 OL Section A Q7",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2013-ol-sa-q8",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2013 OL Section A Q8",
+      "topicId": "home-economics-1-4"
+    },
+    {
+      "id": "he-2013-ol-sa-q9",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2013 OL Section A Q9",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2013-ol-sa-q10",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2013 OL Section A Q10",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2013-ol-sa-q11",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2013 OL Section A Q11",
+      "topicId": "home-economics-1-3"
+    },
+    {
+      "id": "he-2013-ol-sa-q12",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2013 OL Section A Q12",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2013-ol-sb-q1a",
+      "section": "B",
+      "marks": 16,
+      "questionRef": "2013 OL Section B Q1(a)",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2013-ol-sb-q1b",
+      "section": "B",
+      "marks": 32,
+      "questionRef": "2013 OL Section B Q1(b)",
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2013-ol-sb-q1c",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2013 OL Section B Q1(c)",
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2013-ol-sb-q1d",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2013 OL Section B Q1(d)",
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2013-ol-sb-q2a",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2013 OL Section B Q2(a)",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2013-ol-sb-q2b-guidelines",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2013 OL Section B Q2(b) — guidelines",
+      "topicId": "home-economics-0-10"
+    },
+    {
+      "id": "he-2013-ol-sb-q2b-menu",
+      "section": "B",
+      "marks": 18,
+      "questionRef": "2013 OL Section B Q2(b) — menu",
+      "topicId": "home-economics-0-10"
+    },
+    {
+      "id": "he-2013-ol-sb-q2c",
+      "section": "B",
+      "marks": 8,
+      "questionRef": "2013 OL Section B Q2(c)",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2013-ol-sb-q3a",
+      "section": "B",
+      "marks": 16,
+      "questionRef": "2013 OL Section B Q3(a)",
+      "topicId": "home-economics-1-3"
+    },
+    {
+      "id": "he-2013-ol-sb-q3b",
+      "section": "B",
+      "marks": 24,
+      "questionRef": "2013 OL Section B Q3(b)",
+      "topicId": "home-economics-1-3"
+    },
+    {
+      "id": "he-2013-ol-sb-q3c",
+      "section": "B",
+      "marks": 10,
+      "questionRef": "2013 OL Section B Q3(c)",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2013-ol-sb-q4a",
+      "section": "B",
+      "marks": 10,
+      "questionRef": "2013 OL Section B Q4(a)",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2013-ol-sb-q4b",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2013 OL Section B Q4(b)",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2013-ol-sb-q4c",
+      "section": "B",
+      "marks": 16,
+      "questionRef": "2013 OL Section B Q4(c)",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2013-ol-sb-q4d",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2013 OL Section B Q4(d)",
+      "topicId": "home-economics-1-5"
+    },
+    {
+      "id": "he-2013-ol-sb-q5a",
+      "section": "B",
+      "marks": 15,
+      "questionRef": "2013 OL Section B Q5(a)",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2013-ol-sb-q5bi",
+      "section": "B",
+      "marks": 10,
+      "questionRef": "2013 OL Section B Q5(b)(i)",
+      "topicId": "home-economics-2-3"
+    },
+    {
+      "id": "he-2013-ol-sb-q5bii",
+      "section": "B",
+      "marks": 10,
+      "questionRef": "2013 OL Section B Q5(b)(ii)",
+      "topicId": "home-economics-2-3"
+    },
+    {
+      "id": "he-2013-ol-sb-q5c-definition",
+      "section": "B",
+      "marks": 5,
+      "questionRef": "2013 OL Section B Q5(c) — definition",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2013-ol-sb-q5c-ways",
+      "section": "B",
+      "marks": 10,
+      "questionRef": "2013 OL Section B Q5(c) — ways",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2013-ol-sc-q1ai",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2013 OL Section C E1 Q1(a)(i)",
+      "topicId": "home-economics-3-6"
+    },
+    {
+      "id": "he-2013-ol-sc-q1aii",
+      "section": "C",
+      "marks": 16,
+      "questionRef": "2013 OL Section C E1 Q1(a)(ii)",
+      "topicId": "home-economics-3-6"
+    },
+    {
+      "id": "he-2013-ol-sc-q1aiii",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2013 OL Section C E1 Q1(a)(iii)",
+      "topicId": "home-economics-3-6"
+    },
+    {
+      "id": "he-2013-ol-sc-q1aiv",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2013 OL Section C E1 Q1(a)(iv)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2013-ol-sc-q1bi",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2013 OL Section C E1 Q1(b)(i)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2013-ol-sc-q1bii",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2013 OL Section C E1 Q1(b)(ii)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2013-ol-sc-q1ci",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2013 OL Section C E1 Q1(c)(i)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2013-ol-sc-q1cii",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2013 OL Section C E1 Q1(c)(ii)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2013-ol-sc-q2ai",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2013 OL Section C E2 Q2(a)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2013-ol-sc-q2aii",
+      "section": "C",
+      "marks": 16,
+      "questionRef": "2013 OL Section C E2 Q2(a)(ii)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2013-ol-sc-q2b",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2013 OL Section C E2 Q2(b)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2013-ol-sc-q2ci",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2013 OL Section C E2 Q2(c)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2013-ol-sc-q2cii",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2013 OL Section C E2 Q2(c)(ii)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2013-ol-sc-q3ai",
+      "section": "C",
+      "marks": 24,
+      "questionRef": "2013 OL Section C E3 Q3(a)(i)",
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2013-ol-sc-q3aii",
+      "section": "C",
+      "marks": 16,
+      "questionRef": "2013 OL Section C E3 Q3(a)(ii)",
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2013-ol-sc-q3aiii",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2013 OL Section C E3 Q3(a)(iii)",
+      "topicId": "home-economics-3-10"
+    },
+    {
+      "id": "he-2013-ol-sc-q3bi",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2013 OL Section C E3 Q3(b)(i)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2013-ol-sc-q3bii",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2013 OL Section C E3 Q3(b)(ii)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2013-ol-sc-q3ci",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2013 OL Section C E3 Q3(c)(i)",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2013-ol-sc-q3cii",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2013 OL Section C E3 Q3(c)(ii)",
+      "topicId": "home-economics-3-11"
+    }
+  ],
+  "decisionsBeforeAuthoring": [
+    "All A questions publish whole6 totals without per-answer allocations, including companions A5 milk nutrients/heat treatments, A7 growth/use, A10 provider/advantages and A12 technique/spending. Preserve complete printed prompts, blank figures and unpriced source guidance; do not invent companion splits.",
+    "Original question figures: A1 fat/food pool and table; A3 CHD true/false; A4 cooking-method table; A6 soup true/false; A8 two complete care symbols; A11 safety-feature/example blank table; B1 pyramid with printed source caption; C1 heat-loss house with all labels and percentage values. A2 printed word pool remains in text.",
+    "A4 two examples for EACH method; original full pools span both table rows. A11 prints a shared feature/use list plus explicit radial-circuit/RCD electric-shower row. Preserve source list associations, no guessed pairings for first row.",
+    "B1 protein account32 keeps required composition4/classification8/sources12/functions8 within one account. Protein properties12 keep two linked explanation3/example3 profiles as one required two-property task. Each model remains complete.",
+    "B2(b) independently priced meal-planning12 and one-day menu18 become separate tasks. Menu source3 meals6 each includes snacks; no extra snack price. B3(b) one refrigerator profile24 keeps description2/modern features9/use9/energy efficiency4.",
+    "B4(a) original jacket scenario essential. B4(c) four consumer rights4 each: scheme mostly prints names and only one example explanation; retain actual guidance and visibly avoid inventing missing explanations. Historical law/guidance retained as2013 exam material.",
+    "B5(b) two printed roman asks separately10 each. B5(c) definition5 and two ways10 become separate tasks. Paired family definitions and linked profiles remain intact.",
+    "C1(a)(i) two areas4 each plus ONE reason4, not one reason per area. C1(a)(ii) one roof and one wall method each name4/description4, whole16 with paired groups. C1(b)(i) three factors each identify2/discuss4. C1(b)(ii) three points4 each: one advantage, one disadvantage, one extra; no two-per-heading quota.",
+    "C2(a)(i) sketch3/description6: source gives generic criteria but NO drawing or full outfit model. C2(a)(ii) requires four headings4 each and the SAME chosen outfit; preceding prompt retained. C2(b) natural-fabric profile15 gives three required headings5 each, no name tariff; full linen/cotton/wool/silk production/properties and construction continuation scheme18 preserved. Scheme adds(i) to B absent from paper, not another task.",
+    "C3(a)(i) four development headings6 each. C3(a)(iii) one chosen pre-school scheme with TWO detail points5 each and no separate name price; complete ECCE/Early Start original models retained. C3(b)(i) requires both groups within THREE total points6; C3(c)(ii) positive and negative within THREE total points5; no fabricated per-heading two-point quota."
+  ],
+  "sourceAnomalies": [
+    "Original A5 milk-treatment guidance includes dried/evaporated/condensed under heat treatments; retained without substitution.",
+    "Original B1 food-pyramid guidance represents the2013 scheme, including its listed milk-product servings; historical examination content retained.",
+    "Paper1(c) rental quote29%/47% and paper3(b) unemployment almost40%/82000 retain original dates and attributions.",
+    "A2 supplied word pool prints hypervitaminosis, while its completed source line misspells the word hypervitiminosis. Authored answer retains the actual pool word and shows the source-line mismatch in rendered guidance.",
+    "C1(a)(ii) source calls its first roof model fire blanket insulation while describing glass/mineral fibre strips; original label and full description retained.",
+    "C3(b)(i) visible original page20 has one young-adults heading; hidden text layer repeats it. Author removes only the exact adjacent duplicate heading, retaining all source prose."
+  ],
+  "sectionAReview": {
+    "tasks": 12,
+    "marks": 72,
+    "tariffDecision": "All twelve original whole6 tariffs, complete companion prompts and full source guidance retained without inferred splits. Original A2 word-pool/answer spelling discrepancy visible; source safety-feature/use list associations preserved."
+  },
+  "sectionBReview": {
+    "tasks": 20,
+    "marks": 280,
+    "selectionDecisions": "Independent planning/menu12/18 and conflict explanation/ways5/10 split. Protein account32 and linked property/example profiles12 stay coherent. Required/flexible source quotas, complete profiles and original missing-rights explanations visible."
+  },
+  "sectionCReview": {
+    "tasks": 20,
+    "marks": 275,
+    "selectionDecisions": "All required/flexible quotas retained. Paired roof/wall profiles8 each, one shared insulation reason4, factor2/4 pairs, outfit sketch3/description6 with no model drawing, complete natural-fabric variants and continued construction guidance. Historical pre-school details5+5 without name price; both required groups/sides within three total points."
+  },
+  "figures": {
+    "home-economics-2013-ol-sa-q1": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2013/LC098GLP000EV.pdf",
+      "page": 2,
+      "bounds": [
+        45,
+        138.7676544189453,
+        570.219970703125,
+        341.0876770019531
+      ],
+      "alt": "Original fat-classification question with the complete avocado, sardines, cheese choice pool and blank Animal, Vegetable (Plant), Marine table.",
+      "sha256": "846082f200ae5695afca5f95fa6f480ccff99988816b92de3671f2f1a45608cc"
+    },
+    "home-economics-2013-ol-sa-q3": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2013/LC098GLP000EV.pdf",
+      "page": 2,
+      "bounds": [
+        45,
+        546.4676513671875,
+        570.219970703125,
+        786.5319213867188
+      ],
+      "alt": "Original coronary-heart-disease true/false question table, all three full statements and blank True/False columns.",
+      "sha256": "6f5369f4fe0fbafe521434a4460814e5e0189c4f6bf362f342bbdfcca1d3ad64"
+    },
+    "home-economics-2013-ol-sa-q4": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2013/LC098GLP000EV.pdf",
+      "page": 3,
+      "bounds": [
+        45,
+        39.88777160644531,
+        570.219970703125,
+        188.2676544189453
+      ],
+      "alt": "Original cooking-method question table with Moist cooking methods, Dry cooking methods and Frying columns, two blank example rows for each.",
+      "sha256": "d00bf5e2f42ea65faf604b1e865cbd0f038f8c98b7298c5e37f770c80c14c801"
+    },
+    "home-economics-2013-ol-sa-q6": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2013/LC098GLP000EV.pdf",
+      "page": 3,
+      "bounds": [
+        45,
+        367.66766357421875,
+        570.219970703125,
+        542.3876342773438
+      ],
+      "alt": "Original soup true/false question table, all three full statements and blank True/False columns.",
+      "sha256": "7fd966cbc4ef68459a97cb9b192e43b29c31068c44c6329516bb1ca75d4cf7a4"
+    },
+    "home-economics-2013-ol-sa-q8": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2013/LC098GLP000EV.pdf",
+      "page": 4,
+      "bounds": [
+        45,
+        39.88777160644531,
+        570.219970703125,
+        328.7276306152344
+      ],
+      "alt": "Original complete textile-care symbols: hand in wash tub and crossed-out tumble-dryer symbol, both with full blank response spaces.",
+      "sha256": "f3b9d4a0321d227b8fb84e8701dcdd20021093844823955233493172745bb385"
+    },
+    "home-economics-2013-ol-sa-q11": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2013/LC098GLP000EV.pdf",
+      "page": 5,
+      "bounds": [
+        45,
+        39.88777160644531,
+        570.219970703125,
+        202.06764221191406
+      ],
+      "alt": "Original electrical-appliance safety-feature and example-of-use table, full prompt and both blank paired rows.",
+      "sha256": "47122e12f3e0a4b7922146564bad96fe8c31aec7c1bdc947826b49f877a82426"
+    },
+    "home-economics-2013-ol-sb-q1-pyramid": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2013/LC098GLP000EV.pdf",
+      "page": 6,
+      "bounds": [
+        82,
+        110,
+        548,
+        427
+      ],
+      "alt": "Original complete food pyramid illustration and its Food Safety Authority, 2012 caption. Every pictured food and shelf, top and base, retained from the original examination paper.",
+      "sha256": "62059cf04d097fc36bfd686f20f3c44f4dc37533a7371485be771621329a8e97"
+    },
+    "home-economics-2013-ol-sc-q1-heat-loss": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2013/LC098GLP000EV.pdf",
+      "page": 9,
+      "bounds": [
+        198,
+        179,
+        405,
+        384
+      ],
+      "alt": "Original house heat-loss diagram. Complete house and arrows, roof25%, windows15%, walls35%, doors10%, floors15%, and Average heat loss from a house caption retained.",
+      "sha256": "1a1721464fbe4aed24d436a4eb437b297e1a6c563359d08f5ab8065da4b9094a"
+    }
+  },
+  "sourceCensusReconciliation": {
+    "rawSourceLeaves": 50,
+    "pricedTasks": 52,
+    "rawSectionLeaves": {
+      "A": 12,
+      "B": 18,
+      "C": 20
+    },
+    "independentlyPricedCompanions": [
+      {
+        "sourceLeaf": "B2(b)",
+        "paperPage": 7,
+        "schemePage": 10,
+        "allocation": "meal-planning guidelines12/menu18"
+      },
+      {
+        "sourceLeaf": "B5(c)",
+        "paperPage": 8,
+        "schemePage": 13,
+        "allocation": "generation-conflict definition5/two ways10"
+      }
+    ],
+    "mandatoryGate": "python3 scripts/markbank/authoring/he_validate_2013_source_census.py",
+    "portability": "Independent visual census and raw PDF verification remain mandatory authoring gates, separate from portable checkout tests."
+  },
+  "sourceExtractionReview": "All48 original pages visually inspected before authoring. Scheme11 fridge temperature glyph U+F0FB recovered as the visible degree symbol; A7 growth-condition source lines kept separately with ANY TWO across the full pool. All eight original crops individually visually inspected. B1 top enlarged and reinspected: complete quotation, source caption and entire pyramid. Original paper8 lowercase B5(b) roman clauses exposed by a narrowly scoped parser split; both printed source asks remain independently counted.",
+  "validation": {
+    "runtime": "288 required/sitting checks passed across main run and targeted rerun:232 required plus7 each2010–2013 Higher/Ordinary. The closed-pool assertion now normalizes omitted false in emitted rows, matching SessionScreen behavior; no content/scoring change. maxWorkers1.",
+    "mandatoryRawSourceGate": "Explicit2010–2013 original-PDF hash/key gates passed.2013Ordinary50 independently pinned leaves, zero continuity flags, reconciled to52 priced tasks. Original paper8 lowercase B5(b) clauses narrowly exposed after independent gate detected their missing roman boundaries. Normal Vitest has no archive/Python dependency.",
+    "atlas": "Two targeted Home Economics gates passed:65 tagged papers,752 physical groups,1003 registry mappings. All20 original2013Ordinary IDs retained; every task canonically mapped.",
+    "mainTypecheck": "passed",
+    "scoped2013TestTypecheck": "passed",
+    "productionBuild": "passed; only own reproducible untracked dist removed after success",
+    "cardlint": "clean;1269 authored records including withdrawals inspected",
+    "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across32 generated files.",
+    "reconciliation": "2013OL50/50 raw leaves covered,52 priced tasks,zero open/excluded/orphan/continuity flags. Whole lane1243 cards679HL/564OL;1192/1586 raw leaves covered,394 open,zero orphan/unparsed/excluded,26 flags.",
+    "preservation": "Every earlier authored card, unrelated deck, other sizes/showcase subjects, full/decoded compact non-HE Atlas data, unrelated HE tags/runtime/associations and every other HE raw census sitting unchanged. Frozen identity hashes unchanged.",
+    "browser": "Parent-owned/pending; all eight original crops individually visually inspected, including final enlarged pyramid quotation/caption."
+  }
+}
