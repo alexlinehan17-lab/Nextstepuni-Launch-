@@ -82,6 +82,7 @@ import russianOriginalCardIds from './fixtures/russianOriginalCardIds.json';
 import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
 import japanese2026HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2026-hl-census.json';
+import japanese2026OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2026-ol-census.json';
 import { CARDS as POLISH_HIGHER } from '../components/MarkBank/cards/polish/higher';
 import { CARDS as POLISH_ORDINARY } from '../components/MarkBank/cards/polish/ordinary';
 import { CARDS as PORTUGUESE_HIGHER } from '../components/MarkBank/cards/portuguese/higher';
@@ -1426,9 +1427,10 @@ const homeEconomicsAdditionIds = new Set([
   'he-2023-hl-deferred-sc-q4aiii', 'he-2023-hl-deferred-sc-q4bi', 'he-2023-hl-deferred-sc-q4bii',
   'he-2023-hl-deferred-sc-q4ci', 'he-2023-hl-deferred-sc-q4cii',
 ]);
-// Reviewed 2026 HL adds 71 independently inventoried tasks; the original 600 stay frozen.
-const japaneseAdditionIds = new Set(japanese2026HigherCensus.tasks.map(task =>
-  `ja-2026-hl-${task.key.filter(part => part !== null).join('-').toLowerCase()}`));
+// The two reviewed 2026 sittings add 130 independently inventoried tasks;
+// the original 600 cards and their identity hashes stay frozen.
+const japaneseAdditionIds = new Set([japanese2026HigherCensus, japanese2026OrdinaryCensus].flatMap(census => census.tasks.map(task =>
+  `ja-${census.year}-${census.level}-${task.key.filter(part => part !== null).join('-').toLowerCase()}`)));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
   if (name.startsWith('russian:')) {

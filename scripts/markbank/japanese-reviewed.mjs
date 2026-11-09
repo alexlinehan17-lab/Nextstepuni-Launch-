@@ -17,6 +17,11 @@ const repair = value => typeof value === 'string'
   : Array.isArray(value) ? value.map(repair)
     : value && typeof value === 'object' ? Object.fromEntries(Object.entries(value).map(([key, value]) => [key, repair(value)])) : value;
 const hash = (path, kind = 'sha256') => createHash(kind).update(readFileSync(path)).digest('hex');
+const unprintedAnswer = readFileSync(resolve(root, 'types/markBank.ts'), 'utf8').match(/export const UNPRINTED_ANSWER = '([^']+)'/)[1];
+const criterionGuidance = criterion => [
+  ...(criterion.guidance ?? []), ...(criterion.bands ?? []).flatMap(band => band.guidance),
+  ...(criterion.limits ?? []).flatMap(limit => [...limit.guidance, ...(limit.bands ?? []).flatMap(band => band.guidance)]),
+];
 const cards = [];
 
 for (const name of readdirSync(reviewsDir).filter(name => /^japanese-\d{4}-(?:hl|ol)\.json$/.test(name)).sort()) {
@@ -27,6 +32,9 @@ for (const name of readdirSync(reviewsDir).filter(name => /^japanese-\d{4}-(?:hl
   const schemePath = review.sources.find(source => source.document === 'scheme').path.replace(/\.pdf$/, '.md');
   if (!existsSync(resolve(root, schemePath))) throw new Error(`Extract original scheme first: ${schemePath}`);
   const scheme = comparableScheme(readFileSync(resolve(root, schemePath), 'utf8'));
+  // Original PDF columns are read in different orders by whole-page extraction.
+  // The pinned authoring selectors preserve the inspected column sequence.
+  const selectedScheme = comparableScheme(review.selectors.filter(selector => selector.document === 'scheme').map(selector => selector.text).join('\n'));
   for (const original of review.cards) {
     const card = structuredClone(original);
     const evidence = card.sourceEvidence;
@@ -59,12 +67,23 @@ for (const name of readdirSync(reviewsDir).filter(name => /^japanese-\d{4}-(?:hl
       card.questionFigure = { candId: key, src: figure.src, srcHash: figure.md5, alt: figure.alt, attribution: figure.attribution, lettersVisible: [], includesPrompt: true };
       delete card.questionFigureKey;
     }
-    const answers = (card.rows ?? []).flatMap(row => row.kind === 'anyN' ? row.group.options : [row.verbatim]);
+    const answers = (card.rows ?? []).flatMap(row => {
+      if (row.unprinted) {
+        if (row.verbatim !== unprintedAnswer) throw new Error(`${card.id}: unprinted row invents an answer`);
+        return [];
+      }
+      return row.kind === 'anyN' ? row.group.options : [row.verbatim];
+    });
+    const guidance = [];
     if (card.rubric?.system === 'language-points') {
       answers.push(...card.rubric.groups.flatMap(group => group.rows.map(row => row.text)));
+      guidance.push(...card.rubric.groups.flatMap(group => (group.criteria ?? []).flatMap(criterionGuidance)));
     }
+    if (['language-points', 'language-writing'].includes(card.rubric?.system)) guidance.push(...(card.rubric.criteria ?? []).flatMap(criterionGuidance));
     const unsupported = answers.filter(answer => !claimMatches(scheme, answer));
     if (unsupported.length) throw new Error(`${card.id}: answer not found in original scheme: ${JSON.stringify(unsupported)}`);
+    const unsupportedGuidance = guidance.filter(text => !claimMatches(scheme, text) && !claimMatches(selectedScheme, text));
+    if (unsupportedGuidance.length) throw new Error(`${card.id}: rubric guidance not found in original scheme selectors: ${JSON.stringify(unsupportedGuidance)}`);
     cards.push(repair(card));
   }
 }

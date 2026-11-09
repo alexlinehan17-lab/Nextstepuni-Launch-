@@ -126,5 +126,133 @@
         0.92
       ]
     }
+  },
+  "ja-2026-ol-1-6-c": {
+    "src": "/exam-figures/japanese/ja-2026-ol-1-6-c.png",
+    "md5": "5523df4e02c2eb1b2c92ab22895bbf37",
+    "alt": "Complete the table below.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 3,
+      "region": [
+        0.07,
+        0.72,
+        0.94,
+        0.9
+      ]
+    }
+  },
+  "ja-2026-ol-2b": {
+    "src": "/exam-figures/japanese/ja-2026-ol-2b.png",
+    "md5": "31a98cf711c4d4d7105a7197492696d3",
+    "alt": "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to support your answer as in the example. Answer any five.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.07,
+        0.46,
+        0.94,
+        0.94
+      ]
+    }
+  },
+  "ja-2026-ol-2c": {
+    "src": "/exam-figures/japanese/ja-2026-ol-2c.png",
+    "md5": "0b5eefc2a86e3b51efe2117e3cc2c906",
+    "alt": "Circle the correct meaning (a), (b), (c) or (d) for the following Kanji as in the example. Answer any ten.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 6,
+      "region": [
+        0.06,
+        0.518,
+        0.95,
+        0.93
+      ]
+    }
+  },
+  "ja-2026-ol-3b-1": {
+    "src": "/exam-figures/japanese/ja-2026-ol-3b-1.png",
+    "md5": "6db850fb29531ad46678a0245733e151",
+    "alt": "Write the underlined in the past tense as in the example. Answer any five.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 10,
+      "region": [
+        0.07,
+        0.4,
+        0.95,
+        0.83
+      ]
+    }
+  },
+  "ja-2026-ol-3b-2": {
+    "src": "/exam-figures/japanese/ja-2026-ol-3b-2.png",
+    "md5": "f42678772bfda5d09b3a0cc9b822e2b5",
+    "alt": "Circle the correct particle A, B or C below as in the example. Answer any five.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 11,
+      "region": [
+        0.07,
+        0.04,
+        0.95,
+        0.48
+      ]
+    }
+  },
+  "ja-2026-ol-4": {
+    "src": "/exam-figures/japanese/ja-2026-ol-4.png",
+    "md5": "e3afc89e2c6a9b526c52b61705ca0d13",
+    "alt": "Insert the missing words from the box below as in the example. A word should be used only once. Answer any ten.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.07,
+        0.055,
+        0.95,
+        0.94
+      ]
+    }
+  },
+  "ja-2026-ol-5": {
+    "src": "/exam-figures/japanese/ja-2026-ol-5.png",
+    "md5": "77be2466db8a7714cced66e6525d7f66",
+    "alt": "Answer any 5 of the following 8 questions about your summer holidays in Japanese in the spaces provided.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 13,
+      "region": [
+        0.06,
+        0.04,
+        0.96,
+        0.92
+      ]
+    }
+  },
+  "ja-2026-ol-lb-3-i": {
+    "src": "/exam-figures/japanese/ja-2026-ol-lb-3-i.png",
+    "md5": "44e8237671ce483f056d4d00d5828da3",
+    "alt": "(i) What is Sarah’s phone number?",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 3,
+      "region": [
+        0.07,
+        0.608,
+        0.94,
+        0.68
+      ]
+    }
   }
 }
