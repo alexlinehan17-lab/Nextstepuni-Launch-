@@ -136,7 +136,11 @@ describe('Mathematics exam-topic registry', () => {
       expect(ids.length).toBeGreaterThan(0);
       expect(ids.filter(id => !canonicalIds.has(id))).toEqual([]);
     }
-    expectEveryExistingCardMapped('mathematics', 140, 1281, 1632, taxonomy);
+    // Includes the independently reviewed main, Project Maths and deferred
+    // booklet mappings, plus the preserved 2011 single-slot aliases. The
+    // source-ledger/served-card/Atlas reconciliation is exercised separately
+    // by mathematicsEnglishScope; the 140 papers and 1,281 anchors remain.
+    expectEveryExistingCardMapped('mathematics', 140, 1281, 2091, taxonomy);
   });
 });
 
