@@ -969,5 +969,41 @@
     "alt": "Complete original floor plan for Sean and Julie: all four bedrooms, bathroom, ensuite, WC, kitchen/dining, utility, garage and lounge, with every door/wall and original label.",
     "attribution": "SEC Home Economics 2015 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
     "sourceNote": "Original PDF crop, bounds [104.94000244140625, 198.05999755859375, 503.0400085449219, 408.6600036621094], rendered at 2.5×. SHA256 4b69ca311c4935d83d1e0660dd28d8b188de64ed1af82d830930ad2cbdb8c07d."
+  },
+  "home-economics-2016-hl-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2016-hl-sa-q1.png",
+    "md5": "169ed93e058b3056549f33a78832b6e9",
+    "alt": "Original protein table: Casein, Actin and Albumin, with all three blank food-source cells.",
+    "attribution": "SEC Home Economics 2016 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 124.60768127441406, 570.219970703125, 273.4099884033203], rendered at 2.5×. SHA256 32994c2ed9d87a62a2a53d8173a99a5dc596e770655696b32de7cf93c0b22774."
+  },
+  "home-economics-2016-hl-sa-q7": {
+    "src": "/exam-figures/home-economics/home-economics-2016-hl-sa-q7.png",
+    "md5": "18a30e226ca2f83b9cb27a57d5c96cfc",
+    "alt": "Original labelled yeast diagram with A, B and C, every pointer, blank answer field and the original image attribution.",
+    "attribution": "SEC Home Economics 2016 Higher Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 25.727678298950195, 570.219970703125, 250.5475616455078], rendered at 2.5×. SHA256 06a9f32b6ea21e88720ab09e1685f7f70aadfdf19de8bde4dae37de8388ed61f."
+  },
+  "home-economics-2016-hl-sa-q11": {
+    "src": "/exam-figures/home-economics/home-economics-2016-hl-sa-q11.png",
+    "md5": "28156645402ceba6969a29611c8cb336",
+    "alt": "Original upholstered-furniture question with both property answer spaces and the complete fire/flame-resistant label and companion question.",
+    "attribution": "SEC Home Economics 2016 Higher Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [20, 246.4674835205078, 570.219970703125, 556.0672607421875], rendered at 2.5×. SHA256 6c77a321fb9e9c70b4144ad20c41d8f4a73d75bf4f0db3fee398addd8df6fbfa."
+  },
+  "home-economics-2016-hl-sb-q1-fibre": {
+    "src": "/exam-figures/home-economics/home-economics-2016-hl-sb-q1-fibre.png",
+    "md5": "d01cfb11e84fe1da9d25da5ef482bec9",
+    "alt": "Original fibre-intake table: all six food groups and total, both 18–64 and ≥65 age categories, percentages and gram values including 19.2 and 19.0 totals.",
+    "attribution": "SEC Home Economics 2016 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [91.26000156402588, 191.51078444260818, 535.8799874441964, 375.4058801987592], rendered at 2.5×. SHA256 e76cc7bc989074b45d6f4c10615d69f566de246faf118ea9df07a54a776506be."
+  },
+  "home-economics-2016-hl-sb-q1d-diseases": {
+    "src": "/exam-figures/home-economics/home-economics-2016-hl-sb-q1d-diseases.png",
+    "md5": "50ba2b735fc18d1d8f8d0f7bdc2dab81",
+    "alt": "Complete original five-model bowel-disease table with all names, matching accounts and symptoms/effects; no table row or continuation is omitted.",
+    "attribution": "SEC Home Economics 2016 Higher Level marking scheme, page 11 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [66.75199839274089, 225.49769474909857, 555.2120198567708, 755.5292147122897], rendered at 2.5×. SHA256 f310fc50f1438673b71e6aac6fb50dfc7102f64d61fa5f99984fcea183a3ce8a.",
+    "solution": true
   }
 }
