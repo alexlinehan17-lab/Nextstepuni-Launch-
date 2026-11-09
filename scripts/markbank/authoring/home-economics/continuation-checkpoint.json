@@ -10,12 +10,12 @@
   "currentCounts": {
     "subject": "home-economics",
     "mode": "sections",
-    "cards": 1343,
-    "leaves": 1657,
-    "covered": 1291,
+    "cards": 1391,
+    "leaves": 1693,
+    "covered": 1340,
     "excluded": 0,
-    "open": 366,
-    "coveragePct": 77.9,
+    "open": 353,
+    "coveragePct": 79.1,
     "orphans": [],
     "unparsed": [],
     "staleExclusions": [],
@@ -114,24 +114,10 @@
         "year": 2015,
         "level": "hl",
         "paper": null,
-        "leaves": 13,
-        "covered": 0,
+        "leaves": 49,
+        "covered": 49,
         "excluded": 0,
-        "open": [
-          "Section A Q1",
-          "Section A Q12(a)(i)",
-          "Section A Q12(a)(ii)",
-          "Section A Q12(b)",
-          "Section A Q12(c)(i)",
-          "Section A Q12(c)(ii)",
-          "Section A Q12(c)(iii)",
-          "Section A Q12(d)",
-          "Section A Q3",
-          "Section A Q5",
-          "Section A Q6",
-          "Section A Q8",
-          "Section A Q9"
-        ]
+        "open": []
       },
       {
         "year": 2015,
@@ -723,17 +709,17 @@
         "open": []
       }
     ],
-    "censusFlags": 24,
+    "censusFlags": 23,
     "unreadPapers": []
   },
   "nextActions": [
-    "2010–2014 Higher/Ordinary original-source reviews complete. Independently sweep 2015 Higher next, then 2015 Ordinary and 2016–2020 both levels and remaining published deferred.",
+    "2010–2014 Higher/Ordinary and2015Higher original-source reviews complete. Independently sweep2015Ordinary next, then2016–2020 both levels and remaining published deferred.",
     "2023 Higher/Ordinary English main source reviews complete: 59/60 tasks. 2023 Higher deferred source review complete: 58 tasks, 749 offered practice marks, all mapped to Atlas. Browser QA pending.",
     "2022 Higher deferred source review complete: all 61 tasks (749 offered practice marks), 23 Atlas question groups, all 79 source pages independently swept. Browser QA pending.",
     "Live SEC inventory: English Home Economics deferred publications found for 2022/2023 Higher only; no subject listing for 2024/2025, and no 2026 deferred year offered. Absence is a publication finding, not proof no exam was sat.",
     "Preserve prior card identities and progress, reconcile each verified batch, integrate locally and continue. Browser QA remains pending: browser host unavailable and native Chrome is in active use."
   ],
-  "coveragePolicy": "Raw census is diagnostic only:366 open candidates and24 flags do not independently count outstanding tasks. 2014 Ordinary is source-complete after48-page independent visual sweep:51 original leaves independently match51 priced tasks. Whole subject remains in progress.",
+  "coveragePolicy": "Raw census is diagnostic only:353open candidates and23flags do not independently count outstanding tasks.2015Higher source-complete after49-page independent visual sweep:49original leaves reconcile to48priced tasks because B1(a)(i)/(ii) share a flexible24-mark tariff. Whole subject remains in progress.",
   "integratedBatches": [
     {
       "workCommit": "14e08691b",
@@ -852,24 +838,23 @@
     }
   ],
   "latestValidatedBatch": {
-    "scope": "2014 Ordinary main:51 tasks,eight original figures,20 preserved Atlas IDs.",
-    "runtimeCards": 1343,
-    "higher": 728,
+    "scope": "2015Higher main:48tasks,ten original figures,20preserved Atlas IDs.",
+    "runtimeCards": 1391,
+    "higher": 776,
     "ordinary": 615,
-    "sourceReview": "2014-ol-main-review.json",
+    "sourceReview": "2015-hl-main-review.json",
     "validation": {
-      "runtime": "302 required/sitting tests passed across the full run and final sitting retest:232 required plus seven each 2010–2014 Higher/Ordinary; maxWorkers1. Three paraphrased assertion strings were corrected to the actual original/rendered wording, without changing content.",
-      "mandatoryRawSourceGate": "Explicit 2010–2014 original-PDF hash/key gates passed. 2014 Ordinary51 pinned original leaves independently match51 priced tasks, A12/B18/C21. Normal Vitest has no local archive/Python dependency.",
-      "atlas": "Two targeted Home Economics gates passed:67 tagged papers,792 physical groups,1007 registry mappings. All20 original identities retained; new source-backed A8/B4 exact rows reconcile993→995 runtime mappings.",
+      "runtime": "309 required/sitting tests passed:232 required plus seven each 2010–2014 Higher/Ordinary and2015Higher; maxWorkers1.",
+      "mandatoryRawSourceGate": "Explicit2010–2015 original-PDF hash/key gates passed.2015Higher49 pinned original leaves reconcile to48priced tasks because B1(a)(i)/(ii) share one flexible24-mark tariff. Normal Vitest has no local archive/Python dependency.",
+      "atlas": "Two targeted Home Economics gates passed:68 tagged papers,812physical groups,1007registry mappings. All20 original identities retained; exact runtime count995 unchanged.",
       "mainTypecheck": "passed",
-      "scoped2014TestTypecheck": "passed",
+      "scoped2015TestTypecheck": "passed",
       "productionBuild": "passed; only own reproducible untracked dist removed after success",
-      "cardlint": "clean;1369 authored records including withdrawals inspected",
-      "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across31 generated files.",
-      "reconciliation": "2014OL51/51 raw leaves covered,51 priced tasks,zero sitting opens/exclusions/continuity flags. Lane1343 cards728HL/615OL;1291/1657 raw leaves covered,366 open,zero orphan/unparsed/excluded,24 flags.",
-      "preservation": "Every earlier authored card, unrelated deck, other sizes/showcase subjects, full/decoded non-HE Atlas data, unrelated HE tags/runtime/associations and every other HE raw census sitting unchanged. Frozen identity hashes unchanged.",
-      "browser": "Parent-owned/pending. All eight original crops individually visually inspected; final electricity caption union includes every original caption word.",
-      "canonicalTopicReview": "Follow-up canonical-topic review: B5(a)/(b)/(c) marriage customs, validity and preparation map to home-economics-2-1 (Marriage & the Family Life Cycle). Original source content, tariffs and IDs unchanged.239 required/sitting tests,two HE Atlas gates and cardlint passed; all other cards/tags preserved."
+      "cardlint": "clean;1417 authored records including withdrawals inspected",
+      "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across33 generated files.",
+      "reconciliation": "2015HL49/49 raw leaves covered,48priced tasks,zero sitting opens/exclusions/continuity flags. Lane1391cards776HL/615OL;1340/1693raw leaves covered,353open,zero orphan/unparsed/excluded,23flags.",
+      "preservation": "Every earlier authored card, unrelated deck, other sizes/showcase subjects, full/decoded nonHE Atlas data, unrelated HE tags/runtime/associations and every other HE raw census sitting unchanged. Frozen identity hashes unchanged.",
+      "browser": "Parent-owned/pending. All ten original crops individually visually inspected:five question inputs and five original answer tables."
     }
   },
   "knownExistingValidationIssues": [

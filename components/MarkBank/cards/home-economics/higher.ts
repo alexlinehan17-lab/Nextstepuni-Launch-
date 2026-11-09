@@ -38586,4 +38586,2879 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sa-q1", topicId: "home-economics-0-5", conceptId: "sa-q1",
+    section: "A", questionRef: "2015 HL Section A Q1",
+    questionText: "Explain protein deamination.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "deamination", kind: "point", verbatim: "This is the process by which excess protein is used for energy; occurs when excess amino acids are broken down by the liver; the amino group (NH2) is converted to ammonia, then to urea and then excreted by the kidneys as a waste product in urine; the carboxyl group (COOH) is oxidised and used to produce heat and energy; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sa-q2", topicId: "home-economics-0-6", conceptId: "sa-q2",
+    section: "A", questionRef: "2015 HL Section A Q2",
+    questionText: "Complete the table below in relation to carbohydrates.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "class-1", kind: "point", verbatim: "Monosaccharides — Glucose Fructose Galactose — Fruit Honey Digested milk", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Give ONE example and its matching food source for this required class. Full original table preserves all printed example/source associations." },
+    { id: "class-2", kind: "point", verbatim: "Disaccharides — Lactose Maltose Sucrose — Milk Barley Table sugar", marks: null, contextNote: "Give ONE example and its matching food source for this required class. Full original table preserves all printed example/source associations." },
+    { id: "class-3", kind: "point", verbatim: "Polysaccharides — Starch Cellulose Pectin Glycogen — Bread; cereals; pasta; potatoes; Whole cereals; fruit and vegables; Fruits Meat", marks: null, contextNote: "Give ONE example and its matching food source for this required class. Full original table preserves all printed example/source associations." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2015-hl-sa-q2",
+          "src": "/exam-figures/home-economics/home-economics-2015-hl-sa-q2.png",
+          "srcHash": "02f88a83a7e78c27a17e08ffc476545a",
+          "alt": "Original carbohydrate table: all three named classes, Example and Food source columns, and every blank cell.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "home-economics-2015-hl-sa-q2-answer-table",
+          "src": "/exam-figures/home-economics/home-economics-2015-hl-sa-q2-answer-table.png",
+          "srcHash": "76e32d2c5781795bb30b7d7d2effeb46",
+          "alt": "Original complete carbohydrate answer table, preserving each class and the aligned example/food-source associations.",
+          "attribution": "SEC Home Economics 2015 Higher Level marking scheme, page 4 — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "Original PDF crop, bounds [66.67200469970703, 269.0999755859375, 540.527978515625, 440.93999099731445], rendered at 2.5×. SHA256 aaaacc05cce803e061135eacb2e00f4fe00c670cf470d6d21ff7d7cee24ac8a7.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sa-q3", topicId: "home-economics-0-8", conceptId: "sa-q3",
+    section: "A", questionRef: "2015 HL Section A Q3",
+    questionText: "Enumerate three biological functions of water.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "function-1", kind: "point", verbatim: "(i) transporting nutrients, oxygen, enzymes and hormones around the body;", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY THREE functions across all original source lines, without a one-per-line quota." },
+    { id: "function-2", kind: "point", verbatim: "(ii) removal of waste products from the body, e.g. from the kidneys;", marks: null, contextNote: "Choose ANY THREE functions across all original source lines, without a one-per-line quota." },
+    { id: "function-3", kind: "point", verbatim: "(iii) contains the minerals calcium and fluorine; controls body temperature through perspiration; significant in the hydrolysis of nutrients during digestion; essential element of all body fluids and tissues; etc.", marks: null, contextNote: "Choose ANY THREE functions across all original source lines, without a one-per-line quota." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sa-q4", topicId: "home-economics-0-7", conceptId: "sa-q4",
+    section: "A", questionRef: "2015 HL Section A Q4",
+    questionText: "In relation to lipids explain each of the following: Smoke point Flash point",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "term-1", kind: "point", verbatim: "Smoke point Lipids begin to decompose into glycerol & 3 fatty acids; heating past its smoke point fat starts to break down; a blue haze emerges; an acrid-smelling compound known as acrolein is present; fats smoke point 200°C; oils 250°C; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "term-2", kind: "point", verbatim: "Flash point Lipids spontaneously burst into flames; fats at 310°C; oils at 325°C; the decomposition of the lipids continues; etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sa-q5", topicId: "home-economics-0-9", conceptId: "sa-q5",
+    section: "A", questionRef: "2015 HL Section A Q5",
+    questionText: "State the nutritional significance of each of the following parts of the wheat grain.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "part-1", kind: "point", verbatim: "Bran — Made up of layers of cellulose which are an excellent source of roughage; aids digestion by stimulating peristalsis; non-haem iron to make haemoglobin for healthy blood; calcium for bones; Vitamin B for the release of energy; phosphorous for healthy bones and teeth; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Original scheme: Accept relevant nutrient and its function." },
+    { id: "part-2", kind: "point", verbatim: "Endosperm — Starch for energy; protein (gluten) for growth; Vitamin B for metabolism, healthy nervous system; etc.", marks: null, contextNote: "Original scheme: Accept relevant nutrient and its function." },
+    { id: "part-3", kind: "point", verbatim: "Germ — Fat for energy; Vitamin B for healthy nerve activity; Vitamin E anti- oxidant to help prevent cancer; iron to prevent anaemia; protein growth or repair; etc.", marks: null, contextNote: "Original scheme: Accept relevant nutrient and its function." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2015-hl-sa-q5",
+          "src": "/exam-figures/home-economics/home-economics-2015-hl-sa-q5.png",
+          "srcHash": "e3854c33dc69622e5df5cb7c0e693faf",
+          "alt": "Original wheat-grain table: complete Bran/Endosperm/Germ inputs and nutritional-significance cells.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sa-q6", topicId: "home-economics-0-2", conceptId: "sa-q6",
+    section: "A", questionRef: "2015 HL Section A Q6",
+    questionText: "Outline three conditions necessary to ensure accurate results when carrying out sensory analysis tests.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "condition-1", kind: "point", verbatim: "(i) timing - mid-morning, mid-afternoon, taste sensitivity best;", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY THREE conditions across all original source lines, without a one-per-line quota." },
+    { id: "condition-2", kind: "point", verbatim: "(ii) no strongly flavoured foods for at least 30 minutes before tests;", marks: null, contextNote: "Choose ANY THREE conditions across all original source lines, without a one-per-line quota." },
+    { id: "condition-3", kind: "point", verbatim: "(iii) temperature of all samples the same; equal quantity of each sample; rinsing water/dry cracker needed; sample containers identical in size, shape, colour; coding of samples must not cause bias; sequencing must be well planned; testers must not set up the test; importance of silence; etc.", marks: null, contextNote: "Choose ANY THREE conditions across all original source lines, without a one-per-line quota." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sa-q7", topicId: "home-economics-0-3", conceptId: "sa-q7",
+    section: "A", questionRef: "2015 HL Section A Q7",
+    questionText: "Classify sauces and give one example in each class.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "class-1", kind: "point", verbatim: "Roux — white, parsley, béchamel; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Complete the TWO original table rows using any TWO classes and one matching example each. All SIX original classes remain available." },
+    { id: "class-2", kind: "point", verbatim: "Sweet — chocolate, caramel; etc.", marks: null, contextNote: "Complete the TWO original table rows using any TWO classes and one matching example each. All SIX original classes remain available." },
+    { id: "class-3", kind: "point", verbatim: "Egg based — custard, hollandaise; etc.", marks: null, contextNote: "Complete the TWO original table rows using any TWO classes and one matching example each. All SIX original classes remain available." },
+    { id: "class-4", kind: "point", verbatim: "Fruit — apple, orange; etc.", marks: null, contextNote: "Complete the TWO original table rows using any TWO classes and one matching example each. All SIX original classes remain available." },
+    { id: "class-5", kind: "point", verbatim: "Cold / Dressings — mint, French dressing;, mayonnaise; etc.", marks: null, contextNote: "Complete the TWO original table rows using any TWO classes and one matching example each. All SIX original classes remain available." },
+    { id: "class-6", kind: "point", verbatim: "Miscellaneous / Other — bread; etc.", marks: null, contextNote: "Complete the TWO original table rows using any TWO classes and one matching example each. All SIX original classes remain available." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2015-hl-sa-q7",
+          "src": "/exam-figures/home-economics/home-economics-2015-hl-sa-q7.png",
+          "srcHash": "0ae511f3351179c661db9c1a8c5a8592",
+          "alt": "Original sauce-classification question and TWO blank classification/example rows, preserving the printed response quota.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sa-q8", topicId: "home-economics-0-4", conceptId: "sa-q8",
+    section: "A", questionRef: "2015 HL Section A Q8",
+    questionText: "Explain how two of the following assist in the control of enzymic food spoilage.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "method-1", kind: "point", verbatim: "Blanching — Vegetables put into boiling water to inactivate enzymes; then food is plunged into ice cold water for the same amount of time to prevent further cooking; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY TWO of the THREE original treatments and explain each; do not answer all three for extra marks." },
+    { id: "method-2", kind: "point", verbatim: "Cold temperatures — Enzyme action is slowed down; by placing in fridge (4°C); etc.", marks: null, contextNote: "Choose ANY TWO of the THREE original treatments and explain each; do not answer all three for extra marks." },
+    { id: "method-3", kind: "point", verbatim: "Acids — The addition of acids e.g. lemon juice deactivates enzymes in food; alters the ph of foods such as bananas to prevent them going brown; etc.", marks: null, contextNote: "Choose ANY TWO of the THREE original treatments and explain each; do not answer all three for extra marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2015-hl-sa-q8",
+          "src": "/exam-figures/home-economics/home-economics-2015-hl-sa-q8.png",
+          "srcHash": "23c1cb85391d6b21c716b0424f1b1d72",
+          "alt": "Original enzymic-spoilage question asking TWO of THREE named treatments: Blanching, Cold temperatures and Acids.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sa-q9", topicId: "home-economics-1-0", conceptId: "sa-q9",
+    section: "A", questionRef: "2015 HL Section A Q9",
+    questionText: "State the purpose of family resource management. List the three components of management.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "purpose", kind: "point", verbatim: "To use available resources efficiently in order to achieve goals; to improve the quality of family life; to enable family members to achieve their full potential; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "component-1", kind: "point", verbatim: "(i) Inputs", marks: null },
+    { id: "component-2", kind: "point", verbatim: "(ii) Throughputs", marks: null },
+    { id: "component-3", kind: "point", verbatim: "(iii) Outputs", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sa-q10", topicId: "home-economics-1-1", conceptId: "sa-q10",
+    section: "A", questionRef: "2015 HL Section A Q10",
+    questionText: "State one advantage and one disadvantage of using credit to pay household utility bills. Advantage Disadvantage",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "side-1", kind: "point", verbatim: "Advantage Access to utilities/services even though cash is limited at the time; avoids having services cut off e.g. gas; avoids having to pay reconnection fee (electricity); etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Give ONE point for this required side." },
+    { id: "side-2", kind: "point", verbatim: "Disadvantage High interest charged if credit bill is not paid on time; could run into debt if interest increases and one is not able to pay; difficult at times to predict what amount the bills will come to and the amount owed can accumulate easily; etc.", marks: null, contextNote: "Give ONE point for this required side." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sa-q11", topicId: "home-economics-1-3", conceptId: "sa-q11",
+    section: "A", questionRef: "2015 HL Section A Q11",
+    questionText: "State the function of each of the following parts of the refrigerator: Thermostat Refrigerant",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "part-1", kind: "point", verbatim: "Thermostat Controls and maintains the temperature within the cabinet at 5°C or below; disconnects the motor when the temperature rises; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. The original thermostat source says “disconnects the motor when the temperature rises”; this wording is retained as printed." },
+    { id: "part-2", kind: "point", verbatim: "Refrigerant Liquid in the refrigerator that evaporates by drawing heat from within the cabinet, thus cooling the cabinet; etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sa-q12", topicId: "home-economics-1-2", conceptId: "sa-q12",
+    section: "A", questionRef: "2015 HL Section A Q12",
+    questionText: "Outline two functions of the Citizens Information Board.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "function-1", kind: "point", verbatim: "(i) provides the public with information about rights and entitlements such as Job Seekers Benefit, Family Income Supplement;", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ANY TWO functions across both source lines. Historical 2015 agency wording retained." },
+    { id: "function-2", kind: "point", verbatim: "(ii) provides the public with advice on housing issues in the social services; advises on consumer issues; provides a money advice and budgeting service (MABS); etc.", marks: null, contextNote: "Choose ANY TWO functions across both source lines. Historical 2015 agency wording retained." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sb-q1a", topicId: "home-economics-0-1", conceptId: "sb-q1a",
+    section: "B", questionRef: "2015 HL Section B Q1(a)",
+    stem: "A survey was conducted to identify the level and type of marketing of foodstuffs in post primary schools in the Republic of Ireland. An extract from the summary of the main findings showed that a variety of food outlets e.g. tuck shops (53.2%), canteens (53.2%) and drinks vending machines (44.7%) are in operation in post-primary schools in Ireland, with a high proportion of schools also reporting a shop close to the grounds (64.4%). A variety of healthy foods are available through one or more of these outlets including water (92.1%), juice (78.4%), sandwiches (73.9%) and fruit (62%). However, confectionery (74.1%), salty snacks/crisps (57.2%), fizzy/high sugar drinks (51.8%), diet drinks (50.2%) and biscuits, cakes and pastries (32.6%) are also widely available.",
+    questionText: "Using the information given above, comment and elaborate on (i) the provision and (ii) the nutritional significance of the foods and beverages available to students in post primary schools.",
+    tariffModel: {"kind":"fixed","notation":"Provision 2×4 + nutritional significance 2×4 + two others×4"}, totalMarks: 24,
+    rows: [
+    { id: "provision", kind: "criterion", verbatim: "provision", marks: 8, contextNote: "Provision: (Accept detailed points on %, availability of different foods – high / low, reason given for this). Tuck shop (53.2%): more variety offered than in vending machines; generally provide less healthy options i.e. salty snacks, crisps and fizzy /high sugar drinks; provision of water is high; most of the food provided is pre-packed convenience food; etc. Canteen (53.2%): a wide variety of healthy foods are available including sandwiches, fruit, milk; less healthy options e.g. confectionary, salty snacks/crisps, fizzy/high sugar drinks which are of poor nutrient density are also available; restricted opening times; most offer hot and cold food options; food can be prepared fresh on the premises; etc. Drinks vending machines (44.7%): less choice available as space is limited; tend to provide less healthy options - fizzy drinks and salty snacks, crisps; water is not generally available; provision of healthy options e.g. sandwiches, milk and fruit is very small due to short shelf life and machines are not refrigerated; reduces queues at lunch times and breaks and relieves school catering staff to prepare food; also removes the need for till points and avoids crowding at serving areas; schools are free to stock the machines with their own choice of products; convenient as food is readily available; etc. Shop close to school (64.4%): a wide variety of foods offered e.g. hot and cold; some nutritious foods e.g. salad bar, soup, paninis, and other foods high in fat or sugar; lunch time deals; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "nutrition", kind: "criterion", verbatim: "nutritional significance", marks: 8, contextNote: "Nutritional Significance: Water (92.1%): provides a good alternative to fizzy drinks, quenches thirst, prevents dehydration and is good for clear skin; no added sugar, less dental caries or risk of diabetes; etc. Juice (78.4%): type available - fresh natural juice; concentrated juice with high sugar content; etc. Sandwiches (73.9%): convenient alternative to making own lunch; variety may be limited; often made using white bread therefore lacking in fibre; etc. Fruit (62%): is not generally available from vending machines; excellent source of fibre to aid digestion and vitamin C to boost immunity; etc. Confectionery (74.1%): (e.g. sweets, chocolate) high energy foods, can cause dental decay; leads to obesity in inactive teenagers; can cause early on-set diabetes; etc. Salty snacks/crisps (57.2%): very little nutritional value; can lead to obesity; high in saturated fats; can aggravate acne in teenagers; high in salt which can have long term effects of causing high blood pressure; etc. Fizzy/high sugar drinks (51.8%): generally very high in sugar, provide empty calories; can cause dental decay and obesity; etc. Diet drinks (50.2%): sugar free, zero calories/low calorie; etc. Biscuits, cakes and pastries (32.6%): high in saturated fat; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "other", kind: "criterion", verbatim: "2 others", marks: 8, contextNote: "Two ADDITIONAL points from either required heading, no fixed three-per-heading quota. Original complete source: Provision: (Accept detailed points on %, availability of different foods – high / low, reason given for this). Tuck shop (53.2%): more variety offered than in vending machines; generally provide less healthy options i.e. salty snacks, crisps and fizzy /high sugar drinks; provision of water is high; most of the food provided is pre-packed convenience food; etc. Canteen (53.2%): a wide variety of healthy foods are available including sandwiches, fruit, milk; less healthy options e.g. confectionary, salty snacks/crisps, fizzy/high sugar drinks which are of poor nutrient density are also available; restricted opening times; most offer hot and cold food options; food can be prepared fresh on the premises; etc. Drinks vending machines (44.7%): less choice available as space is limited; tend to provide less healthy options - fizzy drinks and salty snacks, crisps; water is not generally available; provision of healthy options e.g. sandwiches, milk and fruit is very small due to short shelf life and machines are not refrigerated; reduces queues at lunch times and breaks and relieves school catering staff to prepare food; also removes the need for till points and avoids crowding at serving areas; schools are free to stock the machines with their own choice of products; convenient as food is readily available; etc. Shop close to school (64.4%): a wide variety of foods offered e.g. hot and cold; some nutritious foods e.g. salad bar, soup, paninis, and other foods high in fat or sugar; lunch time deals; etc. Nutritional Significance: Water (92.1%): provides a good alternative to fizzy drinks, quenches thirst, prevents dehydration and is good for clear skin; no added sugar, less dental caries or risk of diabetes; etc. Juice (78.4%): type available - fresh natural juice; concentrated juice with high sugar content; etc. Sandwiches (73.9%): convenient alternative to making own lunch; variety may be limited; often made using white bread therefore lacking in fibre; etc. Fruit (62%): is not generally available from vending machines; excellent source of fibre to aid digestion and vitamin C to boost immunity; etc. Confectionery (74.1%): (e.g. sweets, chocolate) high energy foods, can cause dental decay; leads to obesity in inactive teenagers; can cause early on-set diabetes; etc. Salty snacks/crisps (57.2%): very little nutritional value; can lead to obesity; high in saturated fats; can aggravate acne in teenagers; high in salt which can have long term effects of causing high blood pressure; etc. Fizzy/high sugar drinks (51.8%): generally very high in sugar, provide empty calories; can cause dental decay and obesity; etc. Diet drinks (50.2%): sugar free, zero calories/low calorie; etc. Biscuits, cakes and pastries (32.6%): high in saturated fat; etc. ", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2015-hl-sb-q1-survey",
+          "src": "/exam-figures/home-economics/home-economics-2015-hl-sb-q1-survey.png",
+          "srcHash": "abbdb7adca8c76bfa0293588083fe060",
+          "alt": "Complete original school-food survey quotation, including every outlet percentage and all nine food/drink categories and percentages.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sb-q1b", topicId: "home-economics-0-8", conceptId: "sb-q1b",
+    section: "B", questionRef: "2015 HL Section B Q1(b)",
+    stem: "A survey was conducted to identify the level and type of marketing of foodstuffs in post primary schools in the Republic of Ireland. An extract from the summary of the main findings showed that a variety of food outlets e.g. tuck shops (53.2%), canteens (53.2%) and drinks vending machines (44.7%) are in operation in post-primary schools in Ireland, with a high proportion of schools also reporting a shop close to the grounds (64.4%). A variety of healthy foods are available through one or more of these outlets including water (92.1%), juice (78.4%), sandwiches (73.9%) and fruit (62%). However, confectionery (74.1%), salty snacks/crisps (57.2%), fizzy/high sugar drinks (51.8%), diet drinks (50.2%) and biscuits, cakes and pastries (32.6%) are also widely available.",
+    questionText: "Poor food choices have contributed to 42% of teenage girls and 23% of teenage boys not getting enough calcium in their diet. Give an account of calcium and include reference to: • sources • biological functions • factors assisting/inhibiting absorption.",
+    tariffModel: {"kind":"fixed","notation":"Sources 3×2 + functions 3×2 + absorption 3×2"}, totalMarks: 18,
+    rows: [
+    { id: "sources", kind: "criterion", verbatim: "sources", marks: 6, contextNote: "Sources: dairy products e.g. milk, cheese, yoghurt; eggs; dark green vegetables e.g. spinach, cabbage; fish, e.g. salmon; flour; hard water; bottled water; fortified juices; supplements; etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    { id: "functions", kind: "criterion", verbatim: "biological functions", marks: 6, contextNote: "Biological functions: calcium plays a major role in the formation & development of bones & teeth; important in blood clotting; necessary for muscle contractions; normal functioning of nerves & membrane permeability; regulates metabolism in the cells; prevents bone disease e.g. osteoporosis, osteomalacia; etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    { id: "absorption", kind: "criterion", verbatim: "factors assisting/inhibiting absorption", marks: 6, contextNote: "Choose THREE factors across both complete original assisting/inhibiting pools; no separate count for each side is printed. Factors assisting absorption: Vitamin D which stimulates calcium binding protein & increases absorption; parathormone is a hormone that controls the level of calcium in the blood; amino acids combine with the calcium salts, which are absorbed easily; phosphorus combines with calcium to form calcium phosphate; an acidic environment helps calcium absorption (eating vitamin C with calcium rich foods); etc. Factors inhibiting absorption: phytic acid present in cereals and grains binds to calcium, preventing its absorption; oxalic acid present in rhubarb & spinach, binds to calcium, preventing its absorption; too much fibre binds to calcium, preventing its absorption; excess saturated fat forms insoluble soaps with calcium, preventing its absorption; overconsumption of soft drinks; an incorrect calcium/phosphorus ratio; low levels of oestrogen in postmenopausal women plays a major role in the absorption of calcium; tannins in tea and coffee; long term use of medications such as steroids; etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sb-q1ci", topicId: "home-economics-0-1", conceptId: "sb-q1ci",
+    section: "B", questionRef: "2015 HL Section B Q1(c)(i)",
+    stem: "A survey was conducted to identify the level and type of marketing of foodstuffs in post primary schools in the Republic of Ireland. An extract from the summary of the main findings showed that a variety of food outlets e.g. tuck shops (53.2%), canteens (53.2%) and drinks vending machines (44.7%) are in operation in post-primary schools in Ireland, with a high proportion of schools also reporting a shop close to the grounds (64.4%). A variety of healthy foods are available through one or more of these outlets including water (92.1%), juice (78.4%), sandwiches (73.9%) and fruit (62%). However, confectionery (74.1%), salty snacks/crisps (57.2%), fizzy/high sugar drinks (51.8%), diet drinks (50.2%) and biscuits, cakes and pastries (32.6%) are also widely available.",
+    questionText: "Explain what is osteoporosis;",
+    tariffModel: {"kind":"fixed","notation":"2 points × 3"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "osteoporosis", marks: 6, contextNote: "Complete original source guidance: Osteoporosis is a disease which causes the bones to become thin and porous; this results in fragile and brittle bones that break easily; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sb-q1cii", topicId: "home-economics-0-1", conceptId: "sb-q1cii",
+    section: "B", questionRef: "2015 HL Section B Q1(c)(ii)",
+    stem: "A survey was conducted to identify the level and type of marketing of foodstuffs in post primary schools in the Republic of Ireland. An extract from the summary of the main findings showed that a variety of food outlets e.g. tuck shops (53.2%), canteens (53.2%) and drinks vending machines (44.7%) are in operation in post-primary schools in Ireland, with a high proportion of schools also reporting a shop close to the grounds (64.4%). A variety of healthy foods are available through one or more of these outlets including water (92.1%), juice (78.4%), sandwiches (73.9%) and fruit (62%). However, confectionery (74.1%), salty snacks/crisps (57.2%), fizzy/high sugar drinks (51.8%), diet drinks (50.2%) and biscuits, cakes and pastries (32.6%) are also widely available.",
+    questionText: "Explain the main factors that increase the risk of developing osteoporosis.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 12, contextNote: "Complete original source guidance: Gender: more common in females (especially post-menopausal women); diet: a lack of calcium and vitamin D in the diet; hereditary: family history can increase risk; age: risk increases with age; weight: considerable weight loss may also cause loss of bone mass; lack of weight bearing exercise contributes to weakening of bones; disability: wheel chair and bed bound people are at risk due to inactivity; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sb-q1d", topicId: "home-economics-0-1", conceptId: "sb-q1d",
+    section: "B", questionRef: "2015 HL Section B Q1(d)",
+    stem: "A survey was conducted to identify the level and type of marketing of foodstuffs in post primary schools in the Republic of Ireland. An extract from the summary of the main findings showed that a variety of food outlets e.g. tuck shops (53.2%), canteens (53.2%) and drinks vending machines (44.7%) are in operation in post-primary schools in Ireland, with a high proportion of schools also reporting a shop close to the grounds (64.4%). A variety of healthy foods are available through one or more of these outlets including water (92.1%), juice (78.4%), sandwiches (73.9%) and fruit (62%). However, confectionery (74.1%), salty snacks/crisps (57.2%), fizzy/high sugar drinks (51.8%), diet drinks (50.2%) and biscuits, cakes and pastries (32.6%) are also widely available.",
+    questionText: "Discuss the role of parents in shaping their children’s food choices.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "role of parents", marks: 20, contextNote: "Complete original source guidance: Role model: be a good food role model, offer a wide variety of nutritious foods, if children see parents eating healthy food they will learn to like them and be more inclined to experiment with new foods; etc. Home prepared meals: children enjoy helping adults grocery shop and helping to prepare meals, it is also an opportunity to teach them about the nutritional values of different foods, how to read food labels, getting children involved means that they are more inclined to eat the meal served; etc. Regular family meal time: eating together helps to give structure to mealtime, knowing dinner is served at approximately the same time every night and that the entire family will be sitting down together is positive; etc. Healthy snacks: make a variety of healthy foods and drinks available - keep plenty of fruits, vegetables, whole grain snacks and beverages (water, milk and unsweetened fruit juices) around and easily accessible; etc. Eating Patterns: do not eat in front of the TV - have your family meals around a table, eating in front of the TV means distraction which can result in overeating as no attention is being paid to the food or what younger children are eating; etc. Positive attitude to new taste: encourage children to try new foods - serve a variety of fruits and vegetables daily, add vegetables to stir fries or casseroles etc.; include treats in the child's diet on an occasional basis, keep treat foods on a higher shelf where they are not as noticeable; etc. One meal for all: one variety of meal cooked for the entire family; etc. Culture: children eat foods that are cultural choices of their parents; etc. Religion: foods selected dependent on the religious beliefs of the family members: etc. Nutritional awareness of parents: when parents base the food choices on a sound nutritional basis this can affect the children’s choices or the opposite my also apply; etc. Health status: if the parents are following a particular dietary regime this may also be applied to the children’s food choices i.e. healthy food choices; etc. Finance: less of a food intake or variety if finances are low: etc.", permittedMarks: [0,4,8,12,16,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sb-q2a", topicId: "home-economics-0-9", conceptId: "sb-q2a",
+    section: "B", questionRef: "2015 HL Section B Q2(a)",
+    stem: "Over 85% of adults in Ireland enjoy eggs at least once a week, with 56% of men and 47% of women eating eggs two to three times per week. (Bord Bia, 2014)",
+    questionText: "Set out the results of a study you have carried out on eggs. Refer to: • nutritional significance • contribution to the diet • properties and related culinary uses.",
+    tariffModel: {"kind":"fixed","notation":"Nutrition/diet 6×4 + two property profiles × (name2/explanation4/use2)"}, totalMarks: 40,
+    rows: [
+    { id: "nutrition", kind: "criterion", verbatim: "nutritional significance", marks: 4, contextNote: "Nutritional significance - Protein: 13%, HBV, albumin & globulin in white, livetin & vitellin in yolk; (growth and repair); etc. Fat: 12%, saturated in yolk, in fine emulsion because of lecithin, easy to digest; cholesterol is also present; (heat and energy); etc. Carbohydrate: 0%, serve with complex carbohydrates, no fibre present; etc. Vitamins: A (lining membranes); D (bones & teeth); E (antioxidant); K (blood clotting); B1, B2 (release of energy); Niacin and B12 (aids metabolism) (more in free range); lacks vitamin C; Minerals: 1%, calcium, phosphorus in useful amounts, (strong bones and teeth); iron in yolk (formation of haemoglobin); etc.", permittedMarks: [0,4] },
+    { id: "diet", kind: "criterion", verbatim: "contribution to the diet", marks: 4, contextNote: "Contribution to the diet - cheap & nutritious, suitable for low budgets; versatile; protein alternative to meat/fish; source of HBV protein for lacto-vegetarians; easily digested therefore good for invalids, children, elderly; should be served with food rich in complex carbohydrates, fibre and vitamin C; etc.", permittedMarks: [0,4] },
+    { id: "other", kind: "criterion", verbatim: "4 others", marks: 16, contextNote: "Four ADDITIONAL points from either of the two required headings. Original source: Nutritional significance - Protein: 13%, HBV, albumin & globulin in white, livetin & vitellin in yolk; (growth and repair); etc. Fat: 12%, saturated in yolk, in fine emulsion because of lecithin, easy to digest; cholesterol is also present; (heat and energy); etc. Carbohydrate: 0%, serve with complex carbohydrates, no fibre present; etc. Vitamins: A (lining membranes); D (bones & teeth); E (antioxidant); K (blood clotting); B1, B2 (release of energy); Niacin and B12 (aids metabolism) (more in free range); lacks vitamin C; Minerals: 1%, calcium, phosphorus in useful amounts, (strong bones and teeth); iron in yolk (formation of haemoglobin); etc. Contribution to the diet - cheap & nutritious, suitable for low budgets; versatile; protein alternative to meat/fish; source of HBV protein for lacto-vegetarians; easily digested therefore good for invalids, children, elderly; should be served with food rich in complex carbohydrates, fibre and vitamin C; etc.", permittedMarks: [0,4,8,12,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]}] },
+    { id: "property-1", kind: "anyN", verbatim: "Name", marks: 2, contextNote: "Choose TWO DIFFERENT egg properties across the two profiles.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Coagulation","Aeration","Emulsification"]} },
+    { id: "explanation-1", kind: "criterion", verbatim: "Explanation", marks: 4, contextNote: "Explain the SAME named property. Complete original models: Coagulation: egg protein coagulates and sets when heated; white at 60-65ºC, yolk at 65-70 ºC; coagulation causes the protein chains to untwist and straighten (denature) and bond together around small pockets of water; when overheated the protein clumps together, squeezes out the water and this causes curdling; etc. Culinary use: cooking e.g. boiled, poached, scrambled, fried; thickening e.g. custards, quiche; binding e.g. burgers; glazing e.g. scones/pastries; coating e.g. fish, chicken goujons; clarifying e.g. soup; etc. Aeration: whisking egg brings bubbles of air into a mixture; this heats the egg protein and makes them unravel and line up around the air bubbles and slightly sets the protein chains; this causes a temporary foam to form; to keep the foamy texture permanently in place the mixture must be further heated or a setting agent like gelatine must be added; etc. Culinary use: whole eggs to aerate cakes e.g. sponge; egg whites to make meringues, soufflés; etc. Emulsification: Lecithin in egg yolk is an emulsifier; an emulsifier is a substance that enables two immiscible liquids (e.g. vinegar and olive oil) to join together; etc. Culinary use: mayonnaise; hollandaise sauce; blending fat and sugar in cakes; etc.", permittedMarks: [0,4] },
+    { id: "use-1", kind: "criterion", verbatim: "Culinary use", marks: 2, contextNote: "Give one culinary use matching the SAME named property. Complete original models: Coagulation: egg protein coagulates and sets when heated; white at 60-65ºC, yolk at 65-70 ºC; coagulation causes the protein chains to untwist and straighten (denature) and bond together around small pockets of water; when overheated the protein clumps together, squeezes out the water and this causes curdling; etc. Culinary use: cooking e.g. boiled, poached, scrambled, fried; thickening e.g. custards, quiche; binding e.g. burgers; glazing e.g. scones/pastries; coating e.g. fish, chicken goujons; clarifying e.g. soup; etc. Aeration: whisking egg brings bubbles of air into a mixture; this heats the egg protein and makes them unravel and line up around the air bubbles and slightly sets the protein chains; this causes a temporary foam to form; to keep the foamy texture permanently in place the mixture must be further heated or a setting agent like gelatine must be added; etc. Culinary use: whole eggs to aerate cakes e.g. sponge; egg whites to make meringues, soufflés; etc. Emulsification: Lecithin in egg yolk is an emulsifier; an emulsifier is a substance that enables two immiscible liquids (e.g. vinegar and olive oil) to join together; etc. Culinary use: mayonnaise; hollandaise sauce; blending fat and sugar in cakes; etc.", permittedMarks: [0,2] },
+    { id: "property-2", kind: "anyN", verbatim: "Name", marks: 2, contextNote: "Choose TWO DIFFERENT egg properties across the two profiles.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Coagulation","Aeration","Emulsification"]} },
+    { id: "explanation-2", kind: "criterion", verbatim: "Explanation", marks: 4, contextNote: "Explain the SAME named property. Complete original models: Coagulation: egg protein coagulates and sets when heated; white at 60-65ºC, yolk at 65-70 ºC; coagulation causes the protein chains to untwist and straighten (denature) and bond together around small pockets of water; when overheated the protein clumps together, squeezes out the water and this causes curdling; etc. Culinary use: cooking e.g. boiled, poached, scrambled, fried; thickening e.g. custards, quiche; binding e.g. burgers; glazing e.g. scones/pastries; coating e.g. fish, chicken goujons; clarifying e.g. soup; etc. Aeration: whisking egg brings bubbles of air into a mixture; this heats the egg protein and makes them unravel and line up around the air bubbles and slightly sets the protein chains; this causes a temporary foam to form; to keep the foamy texture permanently in place the mixture must be further heated or a setting agent like gelatine must be added; etc. Culinary use: whole eggs to aerate cakes e.g. sponge; egg whites to make meringues, soufflés; etc. Emulsification: Lecithin in egg yolk is an emulsifier; an emulsifier is a substance that enables two immiscible liquids (e.g. vinegar and olive oil) to join together; etc. Culinary use: mayonnaise; hollandaise sauce; blending fat and sugar in cakes; etc.", permittedMarks: [0,4] },
+    { id: "use-2", kind: "criterion", verbatim: "Culinary use", marks: 2, contextNote: "Give one culinary use matching the SAME named property. Complete original models: Coagulation: egg protein coagulates and sets when heated; white at 60-65ºC, yolk at 65-70 ºC; coagulation causes the protein chains to untwist and straighten (denature) and bond together around small pockets of water; when overheated the protein clumps together, squeezes out the water and this causes curdling; etc. Culinary use: cooking e.g. boiled, poached, scrambled, fried; thickening e.g. custards, quiche; binding e.g. burgers; glazing e.g. scones/pastries; coating e.g. fish, chicken goujons; clarifying e.g. soup; etc. Aeration: whisking egg brings bubbles of air into a mixture; this heats the egg protein and makes them unravel and line up around the air bubbles and slightly sets the protein chains; this causes a temporary foam to form; to keep the foamy texture permanently in place the mixture must be further heated or a setting agent like gelatine must be added; etc. Culinary use: whole eggs to aerate cakes e.g. sponge; egg whites to make meringues, soufflés; etc. Emulsification: Lecithin in egg yolk is an emulsifier; an emulsifier is a substance that enables two immiscible liquids (e.g. vinegar and olive oil) to join together; etc. Culinary use: mayonnaise; hollandaise sauce; blending fat and sugar in cakes; etc.", permittedMarks: [0,2] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2015-hl-sb-q2a-nutrition","label":"Nutrition and contribution to the diet","marks":24,"rowIds":["nutrition","diet","other"]},{"sourceCardId":"he-2015-hl-sb-q2a-property-1","label":"Egg property 1","marks":8,"rowIds":["property-1","explanation-1","use-1"]},{"sourceCardId":"he-2015-hl-sb-q2a-property-2","label":"Egg property 2","marks":8,"rowIds":["property-2","explanation-2","use-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sb-q2b", topicId: "home-economics-0-4", conceptId: "sb-q2b",
+    section: "B", questionRef: "2015 HL Section B Q2(b)",
+    stem: "Over 85% of adults in Ireland enjoy eggs at least once a week, with 56% of men and 47% of women eating eggs two to three times per week. (Bord Bia, 2014)",
+    questionText: "Explain how quality is assured in egg production in order to minimise food safety risks.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 5"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "quality", marks: 10, contextNote: "Complete original source guidance: Ireland has an EU approved salmonella plan to maintain the health of the country’s laying stock; incoming hens must be certified as salmonella free; laying hens are checked for salmonella on a monthly basis; all feed for hens is heat treated; management systems ensure full traceability of eggs; eggs carry best before date, house code and logo; all producers and suppliers are inspected and approved; all systems are independently inspected before Bord Bia Quality mark is awarded; etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sb-q3a", topicId: "home-economics-0-4", conceptId: "sb-q3a",
+    section: "B", questionRef: "2015 HL Section B Q3(a)",
+    stem: "Micro-organisms are commonly used in the production of many foods.",
+    questionText: "Discuss four conditions necessary for the growth of moulds.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 4"}, totalMarks: 16,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "conditions", marks: 16, contextNote: "Complete original source guidance: Food: most moulds are saprophytes, feed from dead organic matter e.g. bread and cheese; etc. Warmth: most are mesophiles, freezing (-18° C) inactivates mould growth; etc. Moisture: is needed for growth, thus frozen foods are unsuitable; etc. Oxygen: moulds are aerobic, need oxygen, so they will grow on the surface of food e.g. jam or through open structure foods e.g. bread; etc. PH level: moulds like slightly acidic conditions, extreme acids inhibit growth; etc. Time: moulds need time to multiply; etc.", permittedMarks: [0,4,8,12,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sb-q3b", topicId: "home-economics-0-4", conceptId: "sb-q3b",
+    section: "B", questionRef: "2015 HL Section B Q3(b)",
+    stem: "Micro-organisms are commonly used in the production of many foods.",
+    questionText: "Write a detailed account of one type of mould with reference to the following: • name • description/characteristics • reproduction.",
+    tariffModel: {"kind":"fixed","notation":"Name4 + characteristics2×3 + reproduction4×3"}, totalMarks: 22,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Mucor", marks: 4, contextNote: "Use this SAME mould throughout the profile. Original spelling retained." },
+    { id: "characteristics", kind: "criterion", verbatim: "Description/Characteristics", marks: 6, contextNote: "Saprophytic mould; white hyphae; grey sporangia; reproduce sexually and asexually; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "reproduction", kind: "criterion", verbatim: "Reproduction", marks: 12, contextNote: "Four reproduction points for this SAME mould using only the method(s) in its original row. Source row: Reproduce sexually and asexually; etc. Complete applicable source: Asexual reproduction: when the mycelium is well established reproduction occurs; a hypha grows upwards; the head of the hypha can either be a sporangium (round) or a conidium (chains of spores); when ripe, the sporangium or conidia bursts, releasing spores which travel into the air; if the spore then finds suitable conditions, new mould growth begins; etc. Sexual reproduction: two hyphae grow beside each other; the two hyphae fuse together; the dividing wall breaks down and a zygospore develops; the zygospore produces and stores spores; the zygospore has a thick wall and protects the spores until there are suitable conditions; when conditions are suitable, the spores germinate, hyphae grow and extend out; spores are released into air and the cycle begins again; etc.", permittedMarks: [0,3,6,9,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]},{"id":"point-4","verbatim":"Point 4","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "source-1",
+                "label": "Mucor",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Mucor",
+                            "marks": 4,
+                            "contextNote": "Use this SAME mould throughout the profile. Original spelling retained."
+                      },
+                      {
+                            "id": "characteristics",
+                            "kind": "criterion",
+                            "verbatim": "Description/Characteristics",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Saprophytic mould; white hyphae; grey sporangia; reproduce sexually and asexually; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "reproduction",
+                            "kind": "criterion",
+                            "verbatim": "Reproduction",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9,
+                                  12
+                            ],
+                            "contextNote": "Four reproduction points for this SAME mould using only the method(s) in its original row. Source row: Reproduce sexually and asexually; etc. Complete applicable source: Asexual reproduction: when the mycelium is well established reproduction occurs; a hypha grows upwards; the head of the hypha can either be a sporangium (round) or a conidium (chains of spores); when ripe, the sporangium or conidia bursts, releasing spores which travel into the air; if the spore then finds suitable conditions, new mould growth begins; etc. Sexual reproduction: two hyphae grow beside each other; the two hyphae fuse together; the dividing wall breaks down and a zygospore develops; the zygospore produces and stores spores; the zygospore has a thick wall and protects the spores until there are suitable conditions; when conditions are suitable, the spores germinate, hyphae grow and extend out; spores are released into air and the cycle begins again; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-2",
+                "label": "Rhizopus",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Rhizopus",
+                            "marks": 4,
+                            "contextNote": "Use this SAME mould throughout the profile. Original spelling retained."
+                      },
+                      {
+                            "id": "characteristics",
+                            "kind": "criterion",
+                            "verbatim": "Description/Characteristics",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Saprophytic mould; fluffy white mycelium; black pin-head sporangia; reproduce sexually and asexually; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "reproduction",
+                            "kind": "criterion",
+                            "verbatim": "Reproduction",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9,
+                                  12
+                            ],
+                            "contextNote": "Four reproduction points for this SAME mould using only the method(s) in its original row. Source row: Reproduce sexually and asexually: etc Complete applicable source: Asexual reproduction: when the mycelium is well established reproduction occurs; a hypha grows upwards; the head of the hypha can either be a sporangium (round) or a conidium (chains of spores); when ripe, the sporangium or conidia bursts, releasing spores which travel into the air; if the spore then finds suitable conditions, new mould growth begins; etc. Sexual reproduction: two hyphae grow beside each other; the two hyphae fuse together; the dividing wall breaks down and a zygospore develops; the zygospore produces and stores spores; the zygospore has a thick wall and protects the spores until there are suitable conditions; when conditions are suitable, the spores germinate, hyphae grow and extend out; spores are released into air and the cycle begins again; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-3",
+                "label": "Penicillium",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Penicillium",
+                            "marks": 4,
+                            "contextNote": "Use this SAME mould throughout the profile. Original spelling retained."
+                      },
+                      {
+                            "id": "characteristics",
+                            "kind": "criterion",
+                            "verbatim": "Description/Characteristics",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Saprophytic mould; green-blue with powdery texture favour; temperatures of 20°C - 25°C; reproduce asexually; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "reproduction",
+                            "kind": "criterion",
+                            "verbatim": "Reproduction",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9,
+                                  12
+                            ],
+                            "contextNote": "Four reproduction points for this SAME mould using only the method(s) in its original row. Source row: Reproduce asexually; hyphae develop conidia; etc. Complete applicable source: Asexual reproduction: when the mycelium is well established reproduction occurs; a hypha grows upwards; the head of the hypha can either be a sporangium (round) or a conidium (chains of spores); when ripe, the sporangium or conidia bursts, releasing spores which travel into the air; if the spore then finds suitable conditions, new mould growth begins; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-4",
+                "label": "Aspergillis",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Aspergillis",
+                            "marks": 4,
+                            "contextNote": "Use this SAME mould throughout the profile. Original spelling retained."
+                      },
+                      {
+                            "id": "characteristics",
+                            "kind": "criterion",
+                            "verbatim": "Description/Characteristics",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Saprophytic mould; black or green mould; favour temperatures of 20°C - 25°C; reproduce asexually; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "reproduction",
+                            "kind": "criterion",
+                            "verbatim": "Reproduction",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9,
+                                  12
+                            ],
+                            "contextNote": "Four reproduction points for this SAME mould using only the method(s) in its original row. Source row: Reproduce asexually only; hyphae develop conidia; etc. Complete applicable source: Asexual reproduction: when the mycelium is well established reproduction occurs; a hypha grows upwards; the head of the hypha can either be a sporangium (round) or a conidium (chains of spores); when ripe, the sporangium or conidia bursts, releasing spores which travel into the air; if the spore then finds suitable conditions, new mould growth begins; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-mould",
+                "label": "Another valid mould",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "name",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "One valid mould, used consistently. Four original named models remain available."
+                      },
+                      {
+                            "id": "characteristics",
+                            "kind": "criterion",
+                            "verbatim": "description/characteristics",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Two matching characteristics. No additional source model is supplied.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "reproduction",
+                            "kind": "criterion",
+                            "verbatim": "reproduction",
+                            "marks": 12,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6,
+                                  9,
+                                  12
+                            ],
+                            "contextNote": "Four points using the method(s) applicable to the SAME chosen mould. The original general accounts are: Asexual reproduction: when the mycelium is well established reproduction occurs; a hypha grows upwards; the head of the hypha can either be a sporangium (round) or a conidium (chains of spores); when ripe, the sporangium or conidia bursts, releasing spores which travel into the air; if the spore then finds suitable conditions, new mould growth begins; etc. Sexual reproduction: two hyphae grow beside each other; the two hyphae fuse together; the dividing wall breaks down and a zygospore develops; the zygospore produces and stores spores; the zygospore has a thick wall and protects the spores until there are suitable conditions; when conditions are suitable, the spores germinate, hyphae grow and extend out; spores are released into air and the cycle begins again; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    figure: {
+          "candId": "home-economics-2015-hl-sb-q3b-moulds",
+          "src": "/exam-figures/home-economics/home-economics-2015-hl-sb-q3b-moulds.png",
+          "srcHash": "0600b83ad82c57093d89a87d44c47d04",
+          "alt": "Original four-mould table with every name, characteristic and applicable reproduction method; complete general reproduction guidance remains in the answer rows.",
+          "attribution": "SEC Home Economics 2015 Higher Level marking scheme, page 12 — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "Original PDF crop, bounds [67.88000170389812, 306.41998291015625, 548.9200032552084, 501.29997634887695], rendered at 2.5×. SHA256 05166fd3ce175db061a0b70d0249c85a80fb2d59d52f671957e2f5a2a9dece89.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sb-q3c", topicId: "home-economics-0-11", conceptId: "sb-q3c",
+    section: "B", questionRef: "2015 HL Section B Q3(c)",
+    stem: "Micro-organisms are commonly used in the production of many foods.",
+    questionText: "Outline the uses of micro-organisms in food production.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "uses", marks: 12, contextNote: "Complete original source guidance: Some are edible such as mushrooms and truffles; yeast used for bread and sourdough; cultures of bacteria are used to produce salami, pepperoni and chorizo; mould flavours cheese; used for novel protein foods e.g. mycoprotein such as Quorn; etc. bacteria - are used to make food supplements; used in food production e.g. yoghurt & cheese; used in functional foods such as pro-biotic yogurts; used in making vinegar, wine and beer; apergillis is used in making soy sauce; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sb-q4a", topicId: "home-economics-1-1", conceptId: "sb-q4a",
+    section: "B", questionRef: "2015 HL Section B Q4(a)",
+    stem: "Money management skills are vital to running the house as a financial unit.",
+    questionText: "Analyse three social factors that affect household income.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 6"}, totalMarks: 18,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 18, contextNote: "Complete original source guidance: Age: income tends to increase as people get older, more experienced and move up the pay scale; individuals can experience a drop in income on retirement unless pensions have been put in place; teenagers can earn money in part-time jobs ensuring that they have pocket money and easing the financial strain on the family; etc. Gender: the number of women in the workforce has increased; ‘Back to Work’ schemes encourage women back into workforce; Employment Equality Act ensures equal pay and conditions for all regardless of gender; managerial positions in Ireland are still male dominated; etc. Socio - economic group: individuals from poorer backgrounds tend to leave school early without qualifications; this can lead to unemployment or low paid jobs with few opportunities for career advancement or for improving income level; people from middle-class backgrounds generally have better educational opportunities and are more likely to get a third-level qualification enabling them to find well paid work; the economic downturn has affected all socio-economic groups; etc. Culture: different cultures may have different expectations for example in some cultures men are the sole bread winners; etc. Disability: family members with a disability can increase household costs; can affect the ability to earn money; etc.", permittedMarks: [0,6,12,18], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,6]},{"id":"point-3","verbatim":"Point 3","marks":6,"permittedMarks":[0,6]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sb-q4b", topicId: "home-economics-1-1", conceptId: "sb-q4b",
+    section: "B", questionRef: "2015 HL Section B Q4(b)",
+    stem: "Money management skills are vital to running the house as a financial unit.",
+    questionText: "Design a family budget (two adults and two young children) where the net weekly income is €650. Give a reason for the proposed allocation of income for each area of expenditure.",
+    tariffModel: {"kind":"fixed","notation":"Required Housing/Food/Savings 3 each + three others×3"}, totalMarks: 18,
+    rows: [
+    { id: "housing", kind: "criterion", verbatim: "Housing", marks: 3, contextNote: "Required underlined area: allocation with matching reason in the SAME €650 family budget. Source model: Housing | 25% | €162.50 | Rent, mortgage repayments; household repairs, insurance; etc.", permittedMarks: [0,3] },
+    { id: "food", kind: "criterion", verbatim: "Food", marks: 3, contextNote: "Required underlined area: allocation with matching reason in the SAME €650 family budget. Source model: Food | 25% | €162.50 | Meals eaten at home and outside; etc.", permittedMarks: [0,3] },
+    { id: "savings", kind: "criterion", verbatim: "Savings", marks: 3, contextNote: "Required underlined area: allocation with matching reason in the SAME €650 family budget. Source model: Savings | 5% | €32.50 | Plan for emergencies; special occasions; etc.", permittedMarks: [0,3] },
+    { id: "other", kind: "criterion", verbatim: "3 others", marks: 9, contextNote: "Three ADDITIONAL areas, each with an allocation and reason in the SAME budget; the source does not separately price amounts and reasons. Original complete budget: Area of expenditure | % | Amount | Reason; Housing | 25% | €162.50 | Rent, mortgage repayments; household repairs, insurance; etc.; Food | 25% | €162.50 | Meals eaten at home and outside; etc.; Household Expenses | 15% | €97.50 | Bills: electricity, gas, telephone, TV; etc.; Education | 5% | €32.50 | Books; uniform; planning for college; etc.; Childcare | 5% | €32.50 | Crèche, childminder; etc.; Travel | 5% | €32.50 | To get to work and school; etc.; Clothing | 5% | €32.50 | Buy clothes for work and leisure; etc; Medical | 5% | €32.50 | Visits to doctor; prescription costs; etc.; Savings | 5% | €32.50 | Plan for emergencies; special occasions; etc.; Entertainment | 5% | €32.50 | To socialise with family and friends; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    figure: {
+          "candId": "home-economics-2015-hl-sb-q4b-budget",
+          "src": "/exam-figures/home-economics/home-economics-2015-hl-sb-q4b-budget.png",
+          "srcHash": "46596e973545a024d49c69236c26998a",
+          "alt": "Original ten-area family budget, preserving all percentages, euro amounts and reasons, including underlined compulsory Housing, Food and Savings.",
+          "attribution": "SEC Home Economics 2015 Higher Level marking scheme, page 13 — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "Original PDF crop, bounds [74.98000367482503, 445.99196166992186, 541.8199869791666, 689.2079711914063], rendered at 2.5×. SHA256 bac5b0e228459268b28066d7893450dc916ee30220ea9f24ddc364fdadff557c.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sb-q4c", topicId: "home-economics-1-1", conceptId: "sb-q4c",
+    section: "B", questionRef: "2015 HL Section B Q4(c)",
+    stem: "Money management skills are vital to running the house as a financial unit.",
+    questionText: "Recommend one type of savings scheme suitable for a family. Refer to: • name of institution • type of savings scheme • interest paid • ease of access to funds • tax payable.",
+    tariffModel: {"kind":"fixed","notation":"Institution2 + scheme3 + interest3 + access3 + tax3"}, totalMarks: 14,
+    rows: [
+    { id: "institution", kind: "point", verbatim: "Post Office", marks: 2, contextNote: "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme." },
+    { id: "scheme", kind: "point", verbatim: "Deposit account", marks: 3, contextNote: "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme." },
+    { id: "interest", kind: "criterion", verbatim: "interest paid", marks: 3, contextNote: "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. Interest payable (0.25%);", permittedMarks: [0,3] },
+    { id: "access", kind: "criterion", verbatim: "ease of access to funds", marks: 3, contextNote: "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. Money can be withdrawn easily at any P.O. with proof of ID with deposit book; etc.", permittedMarks: [0,3] },
+    { id: "tax", kind: "criterion", verbatim: "tax payable", marks: 3, contextNote: "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. Interest subject to DIRT (41%);", permittedMarks: [0,3] },
+    ],
+    answerVariants: [
+          {
+                "id": "source-1",
+                "label": "Post Office — Deposit account",
+                "rows": [
+                      {
+                            "id": "institution",
+                            "kind": "point",
+                            "verbatim": "Post Office",
+                            "marks": 2,
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme."
+                      },
+                      {
+                            "id": "scheme",
+                            "kind": "point",
+                            "verbatim": "Deposit account",
+                            "marks": 3,
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme."
+                      },
+                      {
+                            "id": "interest",
+                            "kind": "criterion",
+                            "verbatim": "interest paid",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. Interest payable (0.25%);"
+                      },
+                      {
+                            "id": "access",
+                            "kind": "criterion",
+                            "verbatim": "ease of access to funds",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. Money can be withdrawn easily at any P.O. with proof of ID with deposit book; etc."
+                      },
+                      {
+                            "id": "tax",
+                            "kind": "criterion",
+                            "verbatim": "tax payable",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. Interest subject to DIRT (41%);"
+                      }
+                ]
+          },
+          {
+                "id": "source-2",
+                "label": "Post Office — Instalment saving scheme",
+                "rows": [
+                      {
+                            "id": "institution",
+                            "kind": "point",
+                            "verbatim": "Post Office",
+                            "marks": 2,
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme."
+                      },
+                      {
+                            "id": "scheme",
+                            "kind": "point",
+                            "verbatim": "Instalment saving scheme",
+                            "marks": 3,
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme."
+                      },
+                      {
+                            "id": "interest",
+                            "kind": "criterion",
+                            "verbatim": "interest paid",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. Interest rate is 7%(AER 1.24%); save for 1 year and leave for 5 years; interest is calculated annually; etc."
+                      },
+                      {
+                            "id": "access",
+                            "kind": "criterion",
+                            "verbatim": "ease of access to funds",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. 7 days’ notice necessary for withdrawal; 30 days’ notice necessary for withdrawals before the end of the contribution period; penalty if money is withdrawn early; etc."
+                      },
+                      {
+                            "id": "tax",
+                            "kind": "criterion",
+                            "verbatim": "tax payable",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. Interest earned is tax free;"
+                      }
+                ]
+          },
+          {
+                "id": "source-3",
+                "label": "Post Office — Savings certificates",
+                "rows": [
+                      {
+                            "id": "institution",
+                            "kind": "point",
+                            "verbatim": "Post Office",
+                            "marks": 2,
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme."
+                      },
+                      {
+                            "id": "scheme",
+                            "kind": "point",
+                            "verbatim": "Savings certificates",
+                            "marks": 3,
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme."
+                      },
+                      {
+                            "id": "interest",
+                            "kind": "criterion",
+                            "verbatim": "interest paid",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. interest is 7% after 5years & 6 months; (APR 1.24%); interest is calculated every month; interest is reduced if cashed in early; interest rate is higher than deposit accounts; etc."
+                      },
+                      {
+                            "id": "access",
+                            "kind": "criterion",
+                            "verbatim": "ease of access to funds",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. 7 working days’ notice necessary to cash certificates; etc."
+                      },
+                      {
+                            "id": "tax",
+                            "kind": "criterion",
+                            "verbatim": "tax payable",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. Interest is tax free;"
+                      }
+                ]
+          },
+          {
+                "id": "source-4",
+                "label": "Post Office — Savings Bonds",
+                "rows": [
+                      {
+                            "id": "institution",
+                            "kind": "point",
+                            "verbatim": "Post Office",
+                            "marks": 2,
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme."
+                      },
+                      {
+                            "id": "scheme",
+                            "kind": "point",
+                            "verbatim": "Savings Bonds",
+                            "marks": 3,
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme."
+                      },
+                      {
+                            "id": "interest",
+                            "kind": "criterion",
+                            "verbatim": "interest paid",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. Interest is tax free; 2.50% (AER 0.83%) after 3 years; no interest paid if withdrawn during 1st year; interest is paid annually; etc."
+                      },
+                      {
+                            "id": "access",
+                            "kind": "criterion",
+                            "verbatim": "ease of access to funds",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. 7 working days’ notice necessary for withdrawal; etc."
+                      },
+                      {
+                            "id": "tax",
+                            "kind": "criterion",
+                            "verbatim": "tax payable",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. Interest is tax free;"
+                      }
+                ]
+          },
+          {
+                "id": "source-5",
+                "label": "Credit Union — Saver Account/ Junior Saver Account",
+                "rows": [
+                      {
+                            "id": "institution",
+                            "kind": "point",
+                            "verbatim": "Credit Union",
+                            "marks": 2,
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme."
+                      },
+                      {
+                            "id": "scheme",
+                            "kind": "point",
+                            "verbatim": "Saver Account/ Junior Saver Account",
+                            "marks": 3,
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme."
+                      },
+                      {
+                            "id": "interest",
+                            "kind": "criterion",
+                            "verbatim": "interest paid",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. Interest 0.75%"
+                      },
+                      {
+                            "id": "access",
+                            "kind": "criterion",
+                            "verbatim": "ease of access to funds",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. Money can be withdrawn easily; proof of ID; opening hours; etc."
+                      },
+                      {
+                            "id": "tax",
+                            "kind": "criterion",
+                            "verbatim": "tax payable",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. Interest subject to DIRT (41%);"
+                      }
+                ]
+          },
+          {
+                "id": "source-6",
+                "label": "Bank of Ireland — Regular Saver",
+                "rows": [
+                      {
+                            "id": "institution",
+                            "kind": "point",
+                            "verbatim": "Bank of Ireland",
+                            "marks": 2,
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme."
+                      },
+                      {
+                            "id": "scheme",
+                            "kind": "point",
+                            "verbatim": "Regular Saver",
+                            "marks": 3,
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme."
+                      },
+                      {
+                            "id": "interest",
+                            "kind": "criterion",
+                            "verbatim": "interest paid",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. Interest 1.25%"
+                      },
+                      {
+                            "id": "access",
+                            "kind": "criterion",
+                            "verbatim": "ease of access to funds",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. 14 days notice required"
+                      },
+                      {
+                            "id": "tax",
+                            "kind": "criterion",
+                            "verbatim": "tax payable",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Historical 2015 original rates/conditions retained; all details must match the SAME institution and scheme. Interest subject to DIRT (41%);"
+                      }
+                ]
+          },
+          {
+                "id": "another-scheme",
+                "label": "Another valid savings scheme",
+                "rows": [
+                      {
+                            "id": "institution",
+                            "kind": "criterion",
+                            "verbatim": "name of institution",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "Choose one institution and savings scheme consistently. Six original historical models are available."
+                      },
+                      {
+                            "id": "scheme",
+                            "kind": "criterion",
+                            "verbatim": "type of savings scheme",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "Name a scheme of that SAME institution. No additional source model is printed."
+                      },
+                      {
+                            "id": "interest",
+                            "kind": "criterion",
+                            "verbatim": "interest paid",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "State the historical interest for that SAME scheme. No additional source model is printed."
+                      },
+                      {
+                            "id": "access",
+                            "kind": "criterion",
+                            "verbatim": "ease of access to funds",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "State access conditions for that SAME scheme. No additional source model is printed."
+                      },
+                      {
+                            "id": "tax",
+                            "kind": "criterion",
+                            "verbatim": "tax payable",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "State tax treatment for that SAME scheme. No additional source model is printed."
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    figure: {
+          "candId": "home-economics-2015-hl-sb-q4c-savings",
+          "src": "/exam-figures/home-economics/home-economics-2015-hl-sb-q4c-savings.png",
+          "srcHash": "92fac17264061be883c4ca835c91d099",
+          "alt": "Original complete six-model savings table: institution/scheme, historical interest, access and tax remain aligned in their original cells.",
+          "attribution": "SEC Home Economics 2015 Higher Level marking scheme, page 14 — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "Original PDF crop, bounds [67.89000177383423, 146.23197021484376, 549.1499938964844, 678.653306749132], rendered at 2.5×. SHA256 6848e25917eabdcd6b59a4292352e364a601cafd894f2ec4d6ab8b262bb25ad9.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sb-q5ai", topicId: "home-economics-2-1", conceptId: "sb-q5ai",
+    section: "B", questionRef: "2015 HL Section B Q5(a)(i)",
+    stem: "Each year thousands of couples get married in Ireland. The majority of these marriages begin with some form of official ceremony with Church ceremonies being the most popular. (Accord)",
+    questionText: "Define marriage as it exists in Irish law.",
+    tariffModel: {"kind":"fixed","notation":"1 points × 5"}, totalMarks: 5,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "Definition", marks: 5, contextNote: "Historical 2015 examination guidance and legal wording retained. Complete original source guidance: Marriage can be defined as “a socially and legally acceptable union between a man and a woman with the exclusion of all others”; it incorporates living together; remaining faithful to each other; child rearing in the union; Ireland now allows same sex marriages or legal partnerships which allow the same legal rights as heterosexual unions; etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sb-q5aii", topicId: "home-economics-2-1", conceptId: "sb-q5aii",
+    section: "B", questionRef: "2015 HL Section B Q5(a)(ii)",
+    stem: "Each year thousands of couples get married in Ireland. The majority of these marriages begin with some form of official ceremony with Church ceremonies being the most popular. (Accord)",
+    questionText: "Set out the legal requirements for marriage in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 4"}, totalMarks: 16,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "requirements", marks: 16, contextNote: "Historical 2015 examination guidance and legal wording retained. Complete original source guidance: A wedding must take place in a registered building e.g. in a registry office, church or mosque or in a venue which has been inspected and approved in advance by a Registrar; licences can now be obtained to allow people to temporarily register a location such as a hotel, beach or a garden for the purpose of marriage; ‘three months’ written notice must be given to the registrar; marriages must be registered after the ceremony; two witnesses must sign the register; marriage must be entered into voluntarily by both partners; partners must be over 18 years of age; neither spouse may be in an existing marriage; couples are restricted by blood relationships; etc.", permittedMarks: [0,4,8,12,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sb-q5b", topicId: "home-economics-2-1", conceptId: "sb-q5b",
+    section: "B", questionRef: "2015 HL Section B Q5(b)",
+    stem: "Each year thousands of couples get married in Ireland. The majority of these marriages begin with some form of official ceremony with Church ceremonies being the most popular. (Accord)",
+    questionText: "Discuss the rights and responsibilities of partners within a marriage relationship.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "rights and responsibilities", marks: 20, contextNote: "Historical 2015 examination guidance and legal wording retained. Complete original source guidance: Each spouse is entitled to live together; each spouse is expected to remain faithful and loyal to the other in a monogamous relationship; couples are entitled to have sexual relations with each other to consummate the marriage, non-consummated marriages can be annulled; each spouse has the responsibility to financially support one another and their children under the Maintenance of Spouse and Children’s Act 1976; legally any child born must be looked after physically, morally and socially; joint custody and responsibilities for care and upbringing shared; the inheritance of a spouse is provided for in the Succession Act 1965; if there is no will after death of one spouse, the surviving spouse is entitled to the entire estate, if there are children the surviving spouse is entitled to two thirds of the estate and the children one third of the estate; etc.", permittedMarks: [0,4,8,12,16,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sb-q5c", topicId: "home-economics-2-1", conceptId: "sb-q5c",
+    section: "B", questionRef: "2015 HL Section B Q5(c)",
+    stem: "Each year thousands of couples get married in Ireland. The majority of these marriages begin with some form of official ceremony with Church ceremonies being the most popular. (Accord)",
+    questionText: "Outline the conditions required for granting a divorce under the Family Law (Divorce) Act, 1996.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "conditions", marks: 9, contextNote: "Historical 2015 examination guidance and legal wording retained. Complete original source guidance: Spouses must have lived apart for at least 4 of the previous 5 years; there is no prospect of reconciliation; adequate provision has been made for spouse, children and any other dependent relative; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q1ai", topicId: "home-economics-3-4", conceptId: "sc-q1ai",
+    section: "C", questionRef: "2015 HL Section C E1 Q1(a)(i)",
+    stem: "Today the kitchen is the new living room, a modern hybrid of a living room, kitchen and dining area.",
+    questionText: "Discuss the factors that influence the interior design of a contemporary style kitchen/living area for a family with a member who has special needs. Refer to each of the following: • ergonomics • aesthetic and comfort factors.",
+    tariffModel: {"kind":"fixed","notation":"Three required design headings×6"}, totalMarks: 18,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Ergonomics", marks: 6, contextNote: "Ergonomics: room design/layout should allow ease of movement; space should be easy to clean with easy access to all areas; design should facilitate maximum efficiency; the work triangle involves placing sink, fridge and cooker at the three points of an imaginary triangle when planning a kitchen; choose stain-resistant, durable and easy-to-clean surfaces; accessibility needs of the special needs family member should be taken into account; etc.", permittedMarks: [0,6] },
+    { id: "heading-2", kind: "criterion", verbatim: "Aesthetics", marks: 6, contextNote: "Aesthetics: room must be aesthetically pleasing to occupants; choose a design which will not date too quickly; the elements of design should be incorporated – colour, pattern, shape, texture, line; use design principles to create an attractive room; the likes and dislikes of the person with special needs should be taken into account; etc.", permittedMarks: [0,6] },
+    { id: "heading-3", kind: "criterion", verbatim: "Comfort", marks: 6, contextNote: "Comfort: consider the function of the room – occupants should be comfortable whether working or relaxing; heating, lighting and ventilation must be at a comfortable level; all seating and work surfaces should be at a comfortable level; design should be adaptable to the special needs of occupants; lower units; self closing drawers; adjustable furniture; remote controls for opening windows, setting alarms; etc.", permittedMarks: [0,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q1aii", topicId: "home-economics-3-4", conceptId: "sc-q1aii",
+    section: "C", questionRef: "2015 HL Section C E1 Q1(a)(ii)",
+    stem: "Today the kitchen is the new living room, a modern hybrid of a living room, kitchen and dining area.",
+    questionText: "Differentiate between thermoplastic and thermosetting plastics. Refer to: • properties • examples • uses.",
+    tariffModel: {"kind":"fixed","notation":"Two required types×(properties2×4 + examples/uses2×1)"}, totalMarks: 20,
+    rows: [
+    { id: "properties-1", kind: "criterion", verbatim: "Properties", marks: 8, contextNote: "Thermoplastic: Soft and flexible; softens on heating and can be moulded and remoulded; hardens on cooling; damaged by solvents; not damaged by alkalis& acids; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "examples-uses-1", kind: "criterion", verbatim: "Examples and Uses", marks: 2, contextNote: "Thermoplastic: Cover both an example and its matching use within the TWO one-mark points for this type. Original table: Fluorocarbon: non-stick finish- kitchen utensils; etc. Polytetrafluorethylene (PTFE)/Teflon: saucepans; frying pans; etc. Polyethylene: bottles; food containers; toys; etc.", permittedMarks: [0,1,2], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "properties-2", kind: "criterion", verbatim: "Properties", marks: 8, contextNote: "Thermosetting: Hard/rigid cannot be remoulded; withstands high temperatures; blister & crack if overheated; damaged by strong acids & alkalis, not by solvents; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "examples-uses-2", kind: "criterion", verbatim: "Examples and Uses", marks: 2, contextNote: "Thermosetting: Cover both an example and its matching use within the TWO one-mark points for this type. Original table: Melamine formaldehyde: cups, plates, saucers; laminated countertops; etc. Phenol formaldehyde: interior paddles of top loading washing machines; etc. Bakelite: light switches; telephones; handles on utensils; control knobs on cookers; etc.", permittedMarks: [0,1,2], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2015-hl-sc-q1aii-type-1","label":"Thermoplastic","marks":10,"rowIds":["properties-1","examples-uses-1"]},{"sourceCardId":"he-2015-hl-sc-q1aii-type-2","label":"Thermosetting","marks":10,"rowIds":["properties-2","examples-uses-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    figure: {
+          "candId": "home-economics-2015-hl-sc-q1aii-plastics",
+          "src": "/exam-figures/home-economics/home-economics-2015-hl-sc-q1aii-plastics.png",
+          "srcHash": "bfeb21a964fc75396305b15392e47441",
+          "alt": "Original Thermoplastic/Thermosetting comparison table, retaining both properties and all matching example/use pairs.",
+          "attribution": "SEC Home Economics 2015 Higher Level marking scheme, page 16 — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "Original PDF crop, bounds [67.86000156402588, 549.6599731445312, 534.6599731445312, 734.4599990844727], rendered at 2.5×. SHA256 130d96814007ae884d4f51c0f8ca002e467cab9a9fc086ea5937b990c54f599c.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q1aiii", topicId: "home-economics-3-5", conceptId: "sc-q1aiii",
+    section: "C", questionRef: "2015 HL Section C E1 Q1(a)(iii)",
+    stem: "Today the kitchen is the new living room, a modern hybrid of a living room, kitchen and dining area.",
+    questionText: "Outline the effects of condensation in the home and state how condensation may be reduced/prevented.",
+    tariffModel: {"kind":"fixed","notation":"Three points×4 covering both effects and prevention"}, totalMarks: 12,
+    rows: [
+    { id: "effects", kind: "criterion", verbatim: "Effects", marks: 4, contextNote: "Effects: it can cause wallpaper and paints to mould; metals to rust; wood to rot; structural damage; mould on ceilings, carpet, clothes; cause rooms to smell musty and unpleasant; aggravate respiratory problems; damp insulating materials will increase heat loss from the house; etc.", permittedMarks: [0,4] },
+    { id: "prevention", kind: "criterion", verbatim: "Reduce/prevent", marks: 4, contextNote: "Reduce/prevent: install a good ventilation system; add extra ventilation in rooms with high humidity; provide good insulation all over the house as this raises the internal temperature and prevents condensation; have an efficient heating system; use hygroscopic materials in soft furnishings and floorings; etc.", permittedMarks: [0,4] },
+    { id: "other", kind: "criterion", verbatim: "condensation", marks: 4, contextNote: "One ADDITIONAL point from either requested heading, THREE total points; no fixed two-per-heading quota. Complete original source: Effects: it can cause wallpaper and paints to mould; metals to rust; wood to rot; structural damage; mould on ceilings, carpet, clothes; cause rooms to smell musty and unpleasant; aggravate respiratory problems; damp insulating materials will increase heat loss from the house; etc. Reduce/prevent: install a good ventilation system; add extra ventilation in rooms with high humidity; provide good insulation all over the house as this raises the internal temperature and prevents condensation; have an efficient heating system; use hygroscopic materials in soft furnishings and floorings; etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q1bi", topicId: "home-economics-3-5", conceptId: "sc-q1bi",
+    section: "C", questionRef: "2015 HL Section C E1 Q1(b)(i)",
+    questionText: "Name and explain three charges shown on a domestic electricity bill.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "charges", marks: 12, contextNote: "Three DIFFERENT charges, each named and explained; no separate name/explanation marks are printed. Historical 2015 bill wording/rates retained. Complete original source guidance: Standing charge: for maintenance of the electrical network and costs such as meter reading and issuing of bills; standing charge is higher in rural areas than urban; etc. Unit charge: the amount of electricity used recorded in units; one unit is equivalent to 1000 watts of electricity used for 1kw hour (kWh); etc. Public Service Obligations Levy (PSO): relates to the recovery of any additional costs associated with meeting the obligation to purchase electricity generated from sustainable, renewable and indigenous sources; etc. Specially priced units: night saver electricity for storage/under floor heating; etc. VAT: 13.5%", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q1bii", topicId: "home-economics-3-5", conceptId: "sc-q1bii",
+    section: "C", questionRef: "2015 HL Section C E1 Q1(b)(ii)",
+    questionText: "Explain how each of the following impact on electrical safety: • fuses • miniature circuit breakers (MCBs) • earth wire.",
+    tariffModel: {"kind":"fixed","notation":"Three required safety devices×6"}, totalMarks: 18,
+    rows: [
+    { id: "device-1", kind: "criterion", verbatim: "Fuses", marks: 6, contextNote: "Fuses: a deliberate weak link; contains a thin piece of wire that forms part of the circuit; if a fault occurs, the fuse wire melts or breaks, stopping the flow of electricity and breaking the circuit; prevents injury and fire; etc.", permittedMarks: [0,6] },
+    { id: "device-2", kind: "criterion", verbatim: "Miniature Circuit Breakers (MCB)", marks: 6, contextNote: "Miniature Circuit Breakers (MCB): safety devices which ‘trip’, cutting off the current; if a fault develops which can prevent injury or fire; can then be reset when the fault has been identified and repaired; etc.", permittedMarks: [0,6] },
+    { id: "device-3", kind: "criterion", verbatim: "Earth wire", marks: 6, contextNote: "Earth wire: if a fault occurs in the appliance, the earth wire carries the electrical current to the ground; prevents electrocution; etc.", permittedMarks: [0,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q1ci", topicId: "home-economics-3-5", conceptId: "sc-q1ci",
+    section: "C", questionRef: "2015 HL Section C E1 Q1(c)(i)",
+    stem: "Fresh water is a finite and vulnerable resource, essential to sustain life, development and the environment. (Global Water Partnership)",
+    questionText: "Describe the cold water system in a house.",
+    tariffModel: {"kind":"fixed","notation":"Required service pipe3 + stopcock3 + three others×3"}, totalMarks: 15,
+    rows: [
+    { id: "service-pipe", kind: "criterion", verbatim: "service pipe", marks: 3, contextNote: "Required underlined part. Original system description: Mains pipe brings the water to the area; a service pipe connects the mains pipe with the household; in the house this service pipe is generally connected to the kitchen sink; there, a stopcock allows the water supply to be turned off; rising mains supplies the storage tank in the attic with cold water; the storage tank which has a capacity of 230 litres, is placed in the attic so that it is high enough to create pressure to feed the system; a pipe leads off the storage tank to supply cold water to the bathroom taps and toilets in the rest of the house; a ball valve inside the storage tank controls the level of water and stops its flow when a certain level has been reached; the storage tank should be insulated and covered, the water from the storage tank is not suitable for drinking; etc.", permittedMarks: [0,3] },
+    { id: "stopcock", kind: "criterion", verbatim: "stopcock", marks: 3, contextNote: "Required underlined part. Original system description: Mains pipe brings the water to the area; a service pipe connects the mains pipe with the household; in the house this service pipe is generally connected to the kitchen sink; there, a stopcock allows the water supply to be turned off; rising mains supplies the storage tank in the attic with cold water; the storage tank which has a capacity of 230 litres, is placed in the attic so that it is high enough to create pressure to feed the system; a pipe leads off the storage tank to supply cold water to the bathroom taps and toilets in the rest of the house; a ball valve inside the storage tank controls the level of water and stops its flow when a certain level has been reached; the storage tank should be insulated and covered, the water from the storage tank is not suitable for drinking; etc.", permittedMarks: [0,3] },
+    { id: "other", kind: "criterion", verbatim: "3 others", marks: 9, contextNote: "Three ADDITIONAL system points. Original description: Mains pipe brings the water to the area; a service pipe connects the mains pipe with the household; in the house this service pipe is generally connected to the kitchen sink; there, a stopcock allows the water supply to be turned off; rising mains supplies the storage tank in the attic with cold water; the storage tank which has a capacity of 230 litres, is placed in the attic so that it is high enough to create pressure to feed the system; a pipe leads off the storage tank to supply cold water to the bathroom taps and toilets in the rest of the house; a ball valve inside the storage tank controls the level of water and stops its flow when a certain level has been reached; the storage tank should be insulated and covered, the water from the storage tank is not suitable for drinking; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q1cii", topicId: "home-economics-3-5", conceptId: "sc-q1cii",
+    section: "C", questionRef: "2015 HL Section C E1 Q1(c)(ii)",
+    stem: "Fresh water is a finite and vulnerable resource, essential to sustain life, development and the environment. (Global Water Partnership)",
+    questionText: "Write an informative note on water with reference to each of the following: • sources of domestic water in rural or urban areas • water quality • water charges.",
+    tariffModel: {"kind":"fixed","notation":"Three required headings×5"}, totalMarks: 15,
+    rows: [
+    { id: "supply", kind: "criterion", verbatim: "sources of domestic water", marks: 5, contextNote: "Choose EITHER rural OR urban sources for this required heading; both original models retained. Rural areas: public supply; private wells/springs: natural springs – cleaner quality water, less impurities; water is tested and treated for harmful impurities; wells are lined with steel or concrete to prevent contamination from the soil; water is pumped into the house by an electric pump; water purifiers are fitted to remove suspended impurities; etc. or Urban areas: public supply(Irish Water): water travels from the reservoir to urban areas by mains (pipes); service pipe leads to each building; a valve (stopcock, located externally) allows water to be turned off during repairs; service pipe enters the house under the kitchen sink (another stopcock) which supplies the sink with fresh drinking water while another branch fills the storage tank (cistern) in the attic: this storage tank supplies all other cold taps, toilets, hot press tank and back boiler; etc.", permittedMarks: [0,5] },
+    { id: "quality", kind: "criterion", verbatim: "water quality", marks: 5, contextNote: "Water quality: most of Irelands drinking water is sourced from surface water (rivers & lakes) which varies in quality; water samples are tested for several parameters to ensure supplies are safe to drink; standards are outlined in legislation to protect public health; compliance with standards is monitored by the EPA; high quality drinking water is vital for public health, food industry and tourism; areas of the country where samples have not met standards have had water restriction notice and /or boil notices issued by the water provider; fluoride and chlorine are added; etc.", permittedMarks: [0,5] },
+    { id: "charges", kind: "criterion", verbatim: "water charges", marks: 5, contextNote: "Historical 2015 examination conditions/rates are retained. Water charges: Irish Water is the new national water body with responsible for providing and developing water services throughout Ireland; clean water is expensive to produce and manage, so a new system of domestic water charges has been introduced for homes connected to a public water supply or to public waste water service; standard water charges will apply for public water services in 2015; each house will have a metre to measure water usage; a water conservation grant of €100 is available; charges are being capped and the rate of 1,000 litres of water is €3.70; capped charges will apply until 31st December 2018; etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q2ai", topicId: "home-economics-3-8", conceptId: "sc-q2ai",
+    section: "C", questionRef: "2015 HL Section C E2 Q2(a)(i)",
+    stem: "Playsuits and jumpsuits have evolved from men’s clothing to chic and versatile garments and are important fashion staples in every person’s wardrobe.",
+    questionText: "Sketch and describe a playsuit/jumpsuit you would choose to wear for an occasion of your choice.",
+    tariffModel: {"kind":"fixed","notation":"Sketch5 + description4"}, totalMarks: 9,
+    rows: [
+    { id: "sketch", kind: "criterion", verbatim: "Sketch", marks: 5, contextNote: "The original scheme gives Sketch = 5 marks, without a model drawing or smaller allocations. Draw the SAME playsuit/jumpsuit described in your answer, suitable for your chosen occasion.", permittedMarks: [0,5] },
+    { id: "description", kind: "criterion", verbatim: "Description", marks: 4, contextNote: "The original scheme gives Description = 4 marks, without a model description or smaller allocations. Describe the SAME chosen garment and occasion.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q2aii", topicId: "home-economics-3-8", conceptId: "sc-q2aii",
+    section: "C", questionRef: "2015 HL Section C E2 Q2(a)(ii)",
+    stem: "Playsuits and jumpsuits have evolved from men’s clothing to chic and versatile garments and are important fashion staples in every person’s wardrobe.\n\nSketch and describe a playsuit/jumpsuit you would choose to wear for an occasion of your choice.",
+    questionText: "You plan to make the garment. Give details of each of the following: • body measurements required • type of fabric you would select and reason for choice • outline plan of work to assemble the garment.",
+    tariffModel: {"kind":"fixed","notation":"Measurements2×2 + fabric2/reason2 + plan4×2"}, totalMarks: 16,
+    rows: [
+    { id: "measurements", kind: "criterion", verbatim: "body measurements required", marks: 4, contextNote: "Nape to waist: measure from the most prominent bone at the base of the neck down to waistline; bust: bring the measuring tape around the fullest part of the bust and straight across the widest part of the back under the arms; waist: tie a string loosely around the waist to find the natural waistline, measure over this with a measuring tape, do not pull the tape too tight; hips: usually 18 – 23 cm below the waist, measure around the fullest part; trouser length: on the outside of the leg, measure from the waistline to the hem length, do the same on the inside of the leg; etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    { id: "fabric", kind: "anyN", verbatim: "Type of fabric", marks: 2, contextNote: "Choose one fabric suitable for the SAME preceding garment.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Cotton","polyester cotton","denim","viscose"]} },
+    { id: "reason", kind: "criterion", verbatim: "Reason", marks: 2, contextNote: "Give a reason for the SAME selected fabric and garment. The original source lists fabric names only; it supplies no reason models and none have been invented.", permittedMarks: [0,2] },
+    { id: "layout", kind: "criterion", verbatim: "layout/ pattern pieces on fabric", marks: 2, contextNote: "Required underlined stage. Complete original plan for the SAME garment: Plan of work: layout/ pattern pieces on fabric; cutting; pin and tack pieces together; machine sewing/assembly/implementation; pressing/finishing; evaluation-fit and finish; etc.", permittedMarks: [0,2] },
+    { id: "pin-tack", kind: "criterion", verbatim: "pin and tack pieces together", marks: 2, contextNote: "Required underlined stage. Complete original plan for the SAME garment: Plan of work: layout/ pattern pieces on fabric; cutting; pin and tack pieces together; machine sewing/assembly/implementation; pressing/finishing; evaluation-fit and finish; etc.", permittedMarks: [0,2] },
+    { id: "other-stages", kind: "criterion", verbatim: "outline plan of work", marks: 4, contextNote: "Two ADDITIONAL stages from the complete original work plan for the SAME garment: Plan of work: layout/ pattern pieces on fabric; cutting; pin and tack pieces together; machine sewing/assembly/implementation; pressing/finishing; evaluation-fit and finish; etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q2b", topicId: "home-economics-3-7", conceptId: "sc-q2b",
+    section: "C", questionRef: "2015 HL Section C E2 Q2(b)",
+    questionText: "Write a profile of one fabric manufactured from natural fibres. Refer to: • fibre production • fabric properties • uses.",
+    tariffModel: {"kind":"fixed","notation":"Name3 + production3×2 + properties3×1 + uses3×1"}, totalMarks: 15,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Cotton", marks: 3 },
+    { id: "production", kind: "criterion", verbatim: "fibre production", marks: 6, contextNote: "Three production points for this SAME fabric. Fibre production: comes from the boll or seed head of the cotton plant, with each fibre being between 2-3cm long; fibres are white and fluffy; the bolls are picked, by either hand or machine; the fibres are separated from the seeds; they are then pressed into bales; the cotton is then graded according to the length of the fibres; these fibres can be combed or spun into yarn; etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    { id: "properties", kind: "criterion", verbatim: "fabric properties", marks: 3, contextNote: "Three properties of this SAME fabric. Properties: strong; absorbent; cool; washes and dries easily; dyes easily; shrinks; creases; affected by mildew; weakened by sun; etc.", permittedMarks: [0,1,2,3], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]},{"id":"point-3","verbatim":"Point 3","marks":1,"permittedMarks":[0,1]}] },
+    { id: "uses", kind: "criterion", verbatim: "uses", marks: 3, contextNote: "Three uses of this SAME fabric. Uses: clothes, towels, sheets and curtains; etc.", permittedMarks: [0,1,2,3], parts: [{"id":"point-1","verbatim":"Point 1","marks":1,"permittedMarks":[0,1]},{"id":"point-2","verbatim":"Point 2","marks":1,"permittedMarks":[0,1]},{"id":"point-3","verbatim":"Point 3","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "source-1",
+                "label": "Cotton",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Cotton",
+                            "marks": 3
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three production points for this SAME fabric. Fibre production: comes from the boll or seed head of the cotton plant, with each fibre being between 2-3cm long; fibres are white and fluffy; the bolls are picked, by either hand or machine; the fibres are separated from the seeds; they are then pressed into bales; the cotton is then graded according to the length of the fibres; these fibres can be combed or spun into yarn; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three properties of this SAME fabric. Properties: strong; absorbent; cool; washes and dries easily; dyes easily; shrinks; creases; affected by mildew; weakened by sun; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "uses",
+                            "kind": "criterion",
+                            "verbatim": "uses",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three uses of this SAME fabric. Uses: clothes, towels, sheets and curtains; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-2",
+                "label": "Linen",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Linen",
+                            "marks": 3
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three production points for this SAME fabric. Fibre production: made from the stem of the flax plant; flax stems are pulled and stems are retted, soaked until outer stem rots; stems are crushed and combed; fibres are spun into yarn; yarn is bleached and dyed; woven into a textured fabric; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three properties of this SAME fabric. Properties: absorbent; cool; strong; washes well; creases easily; shrinks easily; difficult to dye; damaged by mildew; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "uses",
+                            "kind": "criterion",
+                            "verbatim": "uses",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three uses of this SAME fabric. Uses: dresses; suits; soft furnishings; towels; napkins; tablecloths; handkerchiefs; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-3",
+                "label": "Wool",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Wool",
+                            "marks": 3
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three production points for this SAME fabric. Fibre production: comes from the soft hair of sheep; the soft hair, which is called its fleece, is removed from the sheep; it is then collected and graded to the length of the fibres and also the colour and fineness of the wool; it is then cleaned and combed which is sometimes known as carding; it is then spun into yarn and can then be used to produce textiles; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three properties of this SAME fabric. Properties: warm; absorbent; does not burn easily; hardwearing; resilient; shrinks if washed at too high a temperature or if tumble dried; coarse, can irritate the skin; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "uses",
+                            "kind": "criterion",
+                            "verbatim": "uses",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three uses of this SAME fabric. Uses: jumpers; blankets; carpets; soft furnishings; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "source-4",
+                "label": "Silk",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Silk",
+                            "marks": 3
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three production points for this SAME fabric. Fibre production: silkworm feeds on mulberry leaves; it spins a cocoon of silk around itself; cocoons are soaked in water; silk threads are unwound from cocoons onto reels; several of these thin silk threads are spun or twisted together to make thicker thread; these are then woven into fabric; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three properties of this SAME fabric. Properties: absorbent; crease resistant; strong; smooth; light; drapes well; expensive; damaged by careless washing, moths, sunshine, chemicals; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "uses",
+                            "kind": "criterion",
+                            "verbatim": "uses",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three uses of this SAME fabric. Uses: blouses; shirts; dresses; suits; ties; paintings; cushion covers; curtains; etc. or",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-fabric",
+                "label": "Another valid natural fabric",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name of fabric",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "One fabric manufactured from natural fibres; use that SAME fabric throughout. Four original models are available."
+                      },
+                      {
+                            "id": "production",
+                            "kind": "criterion",
+                            "verbatim": "fibre production",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  4,
+                                  6
+                            ],
+                            "contextNote": "Three matching production points; no additional model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 2,
+                                        "permittedMarks": [
+                                              0,
+                                              2
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "properties",
+                            "kind": "criterion",
+                            "verbatim": "fabric properties",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three matching properties; no additional model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "uses",
+                            "kind": "criterion",
+                            "verbatim": "uses",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Three matching uses; no additional model is printed.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 1,
+                                        "permittedMarks": [
+                                              0,
+                                              1
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q2ci", topicId: "home-economics-3-8", conceptId: "sc-q2ci",
+    section: "C", questionRef: "2015 HL Section C E2 Q2(c)(i)",
+    stem: "As a practice of expression and as a way to individualism it is obvious that music and fashion are closely linked.",
+    questionText: "Discuss, giving examples, how music and/or musicians have influenced trends in fashion over the years.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 3"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "music and/or musicians", marks: 6, contextNote: "Complete original source guidance: Punk, Indie, New Wave, Dance, Grunge, Goth, Heavy Metal, Hip-hop, Christian Rock; etc. Pop and rock stars: Rihanna, Lady Gaga; Madonna, Michael Jackson, Prince; etc. Madonna introduced lingerie-inspired pieces, visible underwear, leggings, fingerless gloves, and jelly bangle bracelets; etc. Michael Jackson popularized the one-gloved look and leather jackets; etc. Prince inspired an androgynous look, in which he wore clothes and colours (most notably a bright violet shade of purple) traditionally associated with women's wear; leggings were still in vogue in the early 1990s and experienced an update in the 2000s with a tighter fit than the original 1980s version; etc. plaid embraced by Punk and Grunge; Lady Gaga leather, wet-look trousers, bodysuits, hot pants; full length leather coats have been reworked from their ‘80s heyday and can be found in many stores alongside glam leather pencil skirts, party dresses and more classic items like gloves; etc. Cheryl Cole chic look, structured, fitted dress and sky-high heels; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q2cii", topicId: "home-economics-3-8", conceptId: "sc-q2cii",
+    section: "C", questionRef: "2015 HL Section C E2 Q2(c)(ii)",
+    stem: "As a practice of expression and as a way to individualism it is obvious that music and fashion are closely linked.",
+    questionText: "Give examples of how a garment can be restyled to reflect a modern trend.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "examples", marks: 9, contextNote: "Complete original source guidance: Take in; shorten/lengthen; taper; patches; slashing; linings; zips; buttons; bindings; beading; pockets; shoulder pads; patches; appliqué; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q3ai", topicId: "home-economics-3-9", conceptId: "sc-q3ai",
+    section: "C", questionRef: "2015 HL Section C E3 Q3(a)(i)",
+    stem: "While the improvement in the Irish economy is creating more opportunities for people to find work, there remains significant challenges in terms of youth and long-term unemployment. (The Irish Times, November 2014)",
+    questionText: "Discuss how changes in the availability of work have affected individuals and families in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"Individual4 + family4 + three others×4"}, totalMarks: 20,
+    rows: [
+    { id: "individual", kind: "criterion", verbatim: "individual", marks: 4, contextNote: "One effect on individuals. Complete original shared source: Work availability: increase / decrease in available work; etc. Technological developments: banking; house design; etc. Type of work: secondment, job share, part-time, over time; etc. Sector: primary, secondary, tertiary; etc. Affects: reduced working hours, increased leisure time; reduced or eradicated uninteresting jobs for individuals; safer, cleaner environment; more skilled workforce needed; decline in leisure and entertainment industry has resulted in loss of jobs / income; stress as a result of financial insecurity/fear of poverty; loss of status, self- esteem and confidence; loss of purpose/feelings of inadequacy, depression; substance abuse; feelings of guilt; social isolation; work less labour intensive; reduced income which may lead to reduction in living standards; repossession of cars; change of home; poverty; strain on family relationships; lack of financial security which can lead to stress and ill health for family members; family members emigrate to seek work this can cause loneliness and isolation for the family left behind and there is no family support for the member who has emigrated; higher educational requirements for obtaining jobs; greater participation of women in the workforce; some family members have opted to avail of job share opportunities this creates better work life balance for the person working; it affords work opportunities to the other person who is sharing the job; work availability has seen a small but significant increase in recent times consequently the effects of this are positive for individuals and families alike; the availability of seasonal summer jobs for students has increased this gives the family more income and creates a happier home environment; etc.", permittedMarks: [0,4] },
+    { id: "family", kind: "criterion", verbatim: "family", marks: 4, contextNote: "One effect on families. Complete original shared source: Work availability: increase / decrease in available work; etc. Technological developments: banking; house design; etc. Type of work: secondment, job share, part-time, over time; etc. Sector: primary, secondary, tertiary; etc. Affects: reduced working hours, increased leisure time; reduced or eradicated uninteresting jobs for individuals; safer, cleaner environment; more skilled workforce needed; decline in leisure and entertainment industry has resulted in loss of jobs / income; stress as a result of financial insecurity/fear of poverty; loss of status, self- esteem and confidence; loss of purpose/feelings of inadequacy, depression; substance abuse; feelings of guilt; social isolation; work less labour intensive; reduced income which may lead to reduction in living standards; repossession of cars; change of home; poverty; strain on family relationships; lack of financial security which can lead to stress and ill health for family members; family members emigrate to seek work this can cause loneliness and isolation for the family left behind and there is no family support for the member who has emigrated; higher educational requirements for obtaining jobs; greater participation of women in the workforce; some family members have opted to avail of job share opportunities this creates better work life balance for the person working; it affords work opportunities to the other person who is sharing the job; work availability has seen a small but significant increase in recent times consequently the effects of this are positive for individuals and families alike; the availability of seasonal summer jobs for students has increased this gives the family more income and creates a happier home environment; etc.", permittedMarks: [0,4] },
+    { id: "other", kind: "criterion", verbatim: "3 others", marks: 12, contextNote: "Three ADDITIONAL points from either required heading. Complete original shared source: Work availability: increase / decrease in available work; etc. Technological developments: banking; house design; etc. Type of work: secondment, job share, part-time, over time; etc. Sector: primary, secondary, tertiary; etc. Affects: reduced working hours, increased leisure time; reduced or eradicated uninteresting jobs for individuals; safer, cleaner environment; more skilled workforce needed; decline in leisure and entertainment industry has resulted in loss of jobs / income; stress as a result of financial insecurity/fear of poverty; loss of status, self- esteem and confidence; loss of purpose/feelings of inadequacy, depression; substance abuse; feelings of guilt; social isolation; work less labour intensive; reduced income which may lead to reduction in living standards; repossession of cars; change of home; poverty; strain on family relationships; lack of financial security which can lead to stress and ill health for family members; family members emigrate to seek work this can cause loneliness and isolation for the family left behind and there is no family support for the member who has emigrated; higher educational requirements for obtaining jobs; greater participation of women in the workforce; some family members have opted to avail of job share opportunities this creates better work life balance for the person working; it affords work opportunities to the other person who is sharing the job; work availability has seen a small but significant increase in recent times consequently the effects of this are positive for individuals and families alike; the availability of seasonal summer jobs for students has increased this gives the family more income and creates a happier home environment; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q3aii", topicId: "home-economics-3-11", conceptId: "sc-q3aii",
+    section: "C", questionRef: "2015 HL Section C E3 Q3(a)(ii)",
+    stem: "While the improvement in the Irish economy is creating more opportunities for people to find work, there remains significant challenges in terms of youth and long-term unemployment. (The Irish Times, November 2014)",
+    questionText: "Discuss, giving examples, how flexibility in working hours has impacted on work/life balance for many people.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "flexibility", marks: 20, contextNote: "Historical 2015 leave and employment conditions retained. Complete original source guidance: Parental leave is 14 weeks unpaid leave, taken whole or broken up over an agreed period of time up until the child is 8 years of age; this enables parents spend more time with the child and also reduce the pressure of work e.g. work a 3 or 4 day week; parental leave can be shared between both parents so this will allow for a career conscious person to balance their work and home life more evenly; career breaks an option in some jobs, enable a parent to take unpaid leave to spend time with children, ageing parent and return to their job at a later stage; working from home, flexitime, part-time work allows parents to plan their schedules to make family life run smoother; child minding arrangements can be arranged with ease if a person’s work schedule is know well in advance; term time now known as the shorter working year can be availed of by all employees, this creates more options and a happier work force for those who avail of this; job share allows for more leisure time; etc.", permittedMarks: [0,4,8,12,16,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q3aiii", topicId: "home-economics-3-9", conceptId: "sc-q3aiii",
+    section: "C", questionRef: "2015 HL Section C E3 Q3(a)(iii)",
+    stem: "While the improvement in the Irish economy is creating more opportunities for people to find work, there remains significant challenges in terms of youth and long-term unemployment. (The Irish Times, November 2014)",
+    questionText: "Name and give details of one statutory initiative aimed at creating employment.",
+    tariffModel: {"kind":"fixed","notation":"Name2 + details2×4"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "anyN", verbatim: "Name", marks: 2, contextNote: "Choose ONE original historical initiative; all details must match it.", openList: true, group: {"claimMax":1,"perOption":2,"options":["IDA","Solas","Enterprise Ireland","County / City Enterprise Boards","Údarás na Gaeltachta","JobBridge"]} },
+    { id: "details", kind: "criterion", verbatim: "Details", marks: 8, contextNote: "Two details of the SAME selected initiative. Complete original historical models: IDA: main aim is to attract new investment from overseas in the manufacturing and services industry; encourages existing companies to expand; skilled and flexible workforce, young educated workforce; low corporate tax rate, grant assistance; excellent telecommunication infrastructure; easy access to EU market; etc. Solas: provides community based employment and training programmes aimed at long term unemployed; training programmes offer experience and the opportunity to go into employment; advice and practical assistance to job seekers; offers training programmes to people with disabilities and minority groups; encourages education in the workplace and “up skilling” e.g. specially designed training apprentice programmes to qualify as craftspeople; etc. Enterprise Ireland: responsible for developing and promoting Irish business at home and abroad; helps Irish companies to compete and grow on an international level; companies are helped to build markets, increasing sales and exports and employ more people; etc. County / City Enterprise Boards: aim to support small business at a local level; encourage job creation and the maintenance of sustainable jobs; offer advice, mentoring and financial assistance in the form of grants; etc. Údarás na Gaeltachta: offer qualifying businesses and companies from various sectors a range of incentives and supports to start up, develop, diversify, expand or locate in a Gaeltacht region; financial incentives in the form of grants; etc. JobBridge: national internship provides work experience placement for a 6 or 9 month period; aims to break the cycle where jobseekers are unable to get a job without experience; interns receive an allowance of €50 per week in addition to their social welfare entitlement; etc.", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q3bi", topicId: "home-economics-3-10", conceptId: "sc-q3bi",
+    section: "C", questionRef: "2015 HL Section C E3 Q3(b)(i)",
+    questionText: "Evaluate three supports that are available to improve the accessibility of second-level education for all students.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "supports", marks: 15, contextNote: "Complete original source guidance: Financial: Back to School payments such as Back to School Clothing and Footwear Allowance and BTEA, Cost of Education Allowance; free examination fees for candidates with a medical card; etc. Curriculum: Courses - Junior Certificate School Programme(JCSP) this is aimed at making the Junior Certificate more accessible to young people who may drop out; on completion the student also receives a profile of achievements; LCVP - Link modules assessed by written exam (40%) and portfolio of coursework (60%); awarded with a Pass, Merit or Distinction; result may be substituted for one Leaving certificate subject (for points); LCA - course divided into 4 half-year modules; continual assessment – written, practical, orals, interviews and task assessments; certification – Pass, Merit or Distinction; etc. Examinations System: level differentiation at J. Cert and L. Cert – subjects are examined at higher and ordinary level, Irish, English and Maths are also offered at foundation level; practical work and project work e.g. Home Economics, Science; availability of scribes, use of laptop and special centres for exams; modified papers for visually impaired, use of Braille; subjects extended to cater for diverse needs; etc. Disadvantaged: DEIS; Home School Community Liaison; breakfast clubs; home work clubs; Youthreach; etc", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q3bii", topicId: "home-economics-3-10", conceptId: "sc-q3bii",
+    section: "C", questionRef: "2015 HL Section C E3 Q3(b)(ii)",
+    questionText: "Explain, giving examples, how education prepares students for participation in employment.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "education", marks: 15, contextNote: "Complete original source guidance: (15) Personal qualities: responsibility, trustworthy, self discipline, team work, high values on punctuality, good attendance; etc. Academic / Skills: numeracy, literacy, artistic, communication, ICT; etc. Socialisation: respect for authority and rules; code of behaviour; empathy for others; etc. Educational programmes: TY, LCA and LCVP offer work experience, career guidance; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q3ci", topicId: "home-economics-3-11", conceptId: "sc-q3ci",
+    section: "C", questionRef: "2015 HL Section C E3 Q3(c)(i)",
+    stem: "Although an individual's leisure can often be affected by numerous external factors such as age, race, income and gender, there is no denying the benefits of incorporating a small amount of leisure into a person’s routine.",
+    questionText: "Discuss, giving examples, the role of leisure activities in personal development. Refer to the following factors: • physical • social • emotional.",
+    tariffModel: {"kind":"fixed","notation":"Three required development headings×6"}, totalMarks: 18,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Physical development", marks: 6, contextNote: "Physical development: many are sports based and help develop muscle tone; improve fitness; control weight gain; increase energy levels; good for overall health and well-being.; helps with co- ordination; weight bearing leisure activities can help to reduce the likelihood of developing osteoporosis; etc.", permittedMarks: [0,6] },
+    { id: "heading-2", kind: "criterion", verbatim: "Social development", marks: 6, contextNote: "Social development: many are team based e.g. football and hurling, these promote co-operation and good communication skills and develops resilience to help accept defeat; social development can be enhanced by interactions with other people; playing cards, bingo, etc. can encourage individuals to make new friends; developing listening skills is vital to activities e.g. debating, drama; etc.", permittedMarks: [0,6] },
+    { id: "heading-3", kind: "criterion", verbatim: "Emotional development", marks: 6, contextNote: "Emotional development: self-esteem and confidence can be improved through competitive leisure pursuits; ability to form and express opinions that are valued by others help development; many provide opportunity for relaxation e.g. yoga; a sense of belonging established by joining teams within a community; having fun can encourage positive emotional development; etc.", permittedMarks: [0,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "he-2015-hl-sc-q3cii", topicId: "home-economics-3-11", conceptId: "sc-q3cii",
+    section: "C", questionRef: "2015 HL Section C E3 Q3(c)(ii)",
+    stem: "Although an individual's leisure can often be affected by numerous external factors such as age, race, income and gender, there is no denying the benefits of incorporating a small amount of leisure into a person’s routine.",
+    questionText: "Name and evaluate two leisure facilities popular with retired people.",
+    tariffModel: {"kind":"fixed","notation":"Two facilities×(name2 + evaluation2×2)"}, totalMarks: 12,
+    rows: [
+    { id: "name-1", kind: "anyN", verbatim: "Name", marks: 2, contextNote: "Choose TWO different facilities in total.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Golf","bingo","gym/ leisure centre - aerobics classes, fitness classes","library / book clubs","swimming pool","cinema","musical society/choir","drama groups","card games","adult classes - pottery, art, photography"]} },
+    { id: "evaluation-1", kind: "criterion", verbatim: "Evaluate", marks: 4, contextNote: "Two evaluation points for the SAME selected facility, in the retired-person context. Original shared guidance: cost/value for money; convenience; accessibility; social benefits; physical benefits; emotional benefits; facilities; etc. The source gives facility names and shared evaluation criteria, not complete facility-specific models.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    { id: "name-2", kind: "anyN", verbatim: "Name", marks: 2, contextNote: "Choose TWO different facilities in total.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Golf","bingo","gym/ leisure centre - aerobics classes, fitness classes","library / book clubs","swimming pool","cinema","musical society/choir","drama groups","card games","adult classes - pottery, art, photography"]} },
+    { id: "evaluation-2", kind: "criterion", verbatim: "Evaluate", marks: 4, contextNote: "Two evaluation points for the SAME selected facility, in the retired-person context. Original shared guidance: cost/value for money; convenience; accessibility; social benefits; physical benefits; emotional benefits; facilities; etc. The source gives facility names and shared evaluation criteria, not complete facility-specific models.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2015-hl-sc-q3cii-facility-1","label":"Facility 1","marks":6,"rowIds":["name-1","evaluation-1"]},{"sourceCardId":"he-2015-hl-sc-q3cii-facility-2","label":"Facility 2","marks":6,"rowIds":["name-2","evaluation-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];
