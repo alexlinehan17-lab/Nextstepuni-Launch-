@@ -63,8 +63,8 @@ describe('Japanese 2017 Higher independent source review', () => {
     expect(originalIds.some(id => id.startsWith('ja-2017-'))).toBe(false);
     expect(review.consolidations).toEqual([]);
     expect(Object.keys(aliases)).toHaveLength(391);
-    expect(rawCards.filter(card => !originalIds.includes(card.id))).toHaveLength(1068);
-    expect(live.size).toBe(600 + 1068 - 391);
+    expect(rawCards.filter(card => !originalIds.includes(card.id))).toHaveLength(1128);
+    expect(live.size).toBe(600 + 1128 - 391);
   });
 
   it('preserves the roman-then-letter paper addresses and complete required pools', () => {
