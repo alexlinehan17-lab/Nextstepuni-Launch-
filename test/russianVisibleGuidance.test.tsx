@@ -13,6 +13,19 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('shows the 2022 Higher Russian listening exception and explicit qualifications',async()=>{
+    reveal('l2-1-ii','hl',2022);
+    await waitFor(()=>expect(screen.getByText('Accept answers written in Russian.')).toBeVisible());
+    expect(screen.getByText(/must mention ‘liked’/)).toBeVisible();
+    expect(screen.getByText('Award no marks: Russian school')).toBeVisible();
+  });
+  it('shows both 2022 forms within their original grammar gap',async()=>{
+    reveal('gr','hl',2022);
+    await waitFor(()=>expect(screen.getByText(/The paper has 14 bracketed gaps/)).toBeVisible());
+    expect(screen.getByText('близкими')).toBeVisible();
+    expect(screen.getByText('людьми')).toBeVisible();
+    expect(screen.getByText('15 x 2 marks')).toBeVisible();
+  });
   it('shows the unresolved 2024 Ordinary eight-lesson price discrepancy',async()=>{
     reveal('l3-2','ol',2024);
     const note=screen.getByText(/The answer list on marking scheme page 17 prints/);
