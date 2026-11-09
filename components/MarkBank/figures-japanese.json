@@ -574,5 +574,181 @@
         0.68
       ]
     }
+  },
+  "ja-2024-hl-1a-3-ii": {
+    "src": "/exam-figures/japanese/ja-2024-hl-1a-3-ii.png",
+    "md5": "44a10e0b75529e25f8d73a16ea8ac6b8",
+    "alt": "Complete the table.\nRanking / Flavour Name\n1/1st\n5ú/5th\n7ú/7th\n10ú/10th",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 3,
+      "region": [
+        0.07,
+        0.575,
+        0.83,
+        0.76
+      ]
+    }
+  },
+  "ja-2024-hl-2a-1": {
+    "src": "/exam-figures/japanese/ja-2024-hl-2a-1.png",
+    "md5": "4bdf438ad43bf80d9a3488c5600a5498",
+    "alt": "Complete the table in English.\nWhere is the main office? / How much does it cost? / Who are these activities intended for?\nTokyo Kart — Akihabara\nKimono & tea ceremony",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.06,
+        0.03,
+        0.99,
+        0.23
+      ]
+    }
+  },
+  "ja-2024-hl-2b-1": {
+    "src": "/exam-figures/japanese/ja-2024-hl-2b-1.png",
+    "md5": "3104cb82e4a551d8b2d35bccc307e40a",
+    "alt": "Write the meaning of any FIVE of the following Kanji in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.06,
+        0.05,
+        0.96,
+        0.485
+      ]
+    }
+  },
+  "ja-2024-hl-2b-2": {
+    "src": "/exam-figures/japanese/ja-2024-hl-2b-2.png",
+    "md5": "5bb4effcfd3155b1e04bcebeba798e27",
+    "alt": "Write the reading of any FIVE of following Kanji in Hiragana.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.06,
+        0.485,
+        0.96,
+        0.91
+      ]
+    }
+  },
+  "ja-2024-hl-2c-1": {
+    "src": "/exam-figures/japanese/ja-2024-hl-2c-1.png",
+    "md5": "33deb8087949a1a83c5dfe704208da70",
+    "alt": "Write the following in the plain form as in the example. Answer any FIVE.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.06,
+        0.05,
+        0.96,
+        0.46
+      ]
+    }
+  },
+  "ja-2024-hl-2c-2": {
+    "src": "/exam-figures/japanese/ja-2024-hl-2c-2.png",
+    "md5": "424bd53e555d3e9b87518175ddb9fa91",
+    "alt": "Write the correct form of each verb. Answer any FIVE.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.06,
+        0.465,
+        0.96,
+        0.91
+      ]
+    }
+  },
+  "ja-2024-hl-3c": {
+    "src": "/exam-figures/japanese/ja-2024-hl-3c.png",
+    "md5": "40ff529957ccd4c3af484ed475856f6b",
+    "alt": "Circle the correct reading for ANY FIVE of the following Kanji and write the meaning in English as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.06,
+        0.03,
+        0.97,
+        0.455
+      ]
+    }
+  },
+  "ja-2024-hl-3d": {
+    "src": "/exam-figures/japanese/ja-2024-hl-3d.png",
+    "md5": "6d7c9031e40917d932204e232edb5684",
+    "alt": "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.06,
+        0.47,
+        0.97,
+        0.89
+      ]
+    }
+  },
+  "ja-2024-hl-4": {
+    "src": "/exam-figures/japanese/ja-2024-hl-4.png",
+    "md5": "d3cab408544f950870952a06c6a93bfe",
+    "alt": "Write about (a) OR (b) OR (c) in no less than 200 Japanese characters.\n(a) You have just moved into your new house. Write to your Japanese e‐pal including answers to the following questions.\n(i) どんな家（いえ）ですか。\n(ii) 新しい家（いえ）が好きですか。\nOR\n(b) Write a speech to give in class about your favourite sports personality. Include answers to the following questions.\n(i) 好きなスポーツ選手（せんしゅ）はだれですか。\n(ii) どうしてこのスポーツ選手（せんしゅ）が好きですか。\nOR\n(c) You are feeling unwell. Write a diary entry including answers to the following questions.\n(i) どうしましたか。\n(ii) 今日家（いえ）で何をしましたか。",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 14,
+      "region": [
+        0.045,
+        0.015,
+        0.96,
+        0.92
+      ]
+    }
+  },
+  "ja-2024-hl-5": {
+    "src": "/exam-figures/japanese/ja-2024-hl-5.png",
+    "md5": "55b713a1a4e8048d635498bd4ca4f55c",
+    "alt": "Write an application for a scholarship to spend 3 weeks learning Japanese in Tokyo. Write the application in no less than 320 Japanese characters covering ANY 4 of the following headings.\n1. About yourself\n2. Your reasons for applying\n3. Your experience learning Japanese\n4. Your experience travelling abroad\n5. Aspects of Irish culture you would like to introduce in Japan\n6. Food you would like to eat in Japan\n7. Places in Japan you would like to see\n8. Your plans after the scholarship",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 16,
+      "region": [
+        0.045,
+        0.015,
+        0.96,
+        0.92
+      ]
+    }
+  },
+  "ja-2024-hl-ld-1-iii": {
+    "src": "/exam-figures/japanese/ja-2024-hl-ld-1-iii.png",
+    "md5": "0da71ee7117e01b253919cdae83d9da0",
+    "alt": "What is Anna’s mobile number?",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 5,
+      "region": [
+        0.53,
+        0.298,
+        0.96,
+        0.36
+      ]
+    }
   }
 }
