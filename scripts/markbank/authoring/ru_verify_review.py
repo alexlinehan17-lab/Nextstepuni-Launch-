@@ -27,6 +27,17 @@ def verify_alternative_sources(document, card):
         assert claim and any(claim in source for source in sources), (card['id'], alternative['id'], alternative['sourceText'])
 
 
+def criterion_claims(criteria):
+    for criterion in criteria:
+        yield from criterion['guidance']
+        for band in criterion.get('bands', []):
+            yield from band['guidance']
+        for limit in criterion.get('limits', []):
+            yield from limit['guidance']
+            for band in limit.get('bands', []):
+                yield from band['guidance']
+
+
 def claims(card):
     if card.get('answerLanguageRule'):
         yield card['answerLanguageRule']['sourceText']
@@ -45,15 +56,9 @@ def claims(card):
     for group in rubric.get('groups', []):
         for row in group['rows']:
             yield from row['text'].split(' — ')
+        yield from criterion_claims(group.get('criteria', []))
     yield from rubric['taskRequirements']
-    for criterion in rubric.get('criteria', []):
-        yield from criterion['guidance']
-        for band in criterion.get('bands', []):
-            yield from band['guidance']
-        for limit in criterion.get('limits', []):
-            yield from limit['guidance']
-            for band in limit.get('bands', []):
-                yield from band['guidance']
+    yield from criterion_claims(rubric.get('criteria', []))
 
 
 def verify(cards=None):
