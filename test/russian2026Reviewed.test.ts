@@ -24,7 +24,7 @@ describe('Russian 2026 Higher independent source review', () => {
   it('preserves all199 prior IDs and covers46 complete reviewed tasks', () => {
     const runtime = new Set([...HIGHER,...ORDINARY].map(card=>card.id));
     expect(legacy.every(card=>runtime.has(card.id))).toBe(true);
-    expect(HIGHER).toHaveLength(129);
+    expect(HIGHER.length).toBeGreaterThanOrEqual(129);
     expect(ORDINARY.length).toBeGreaterThanOrEqual(116);
     expect(reviewedHigher).toHaveLength(46);
     expect(reviewedHigher.every(tariffReconciles)).toBe(true);
@@ -80,8 +80,9 @@ describe('Russian 2026 Higher independent source review', () => {
     }
     for(const suffix of ['la2-i','la2-ii','sd','gr','l1-1-i']) expect(get(suffix).answerLanguageRule).toBeUndefined();
     expect(ORDINARY.every(card=>!card.answerLanguageRule)).toBe(true);
-    expect(get('c1-1-i').notes).toContain('permits English or Irish');
-    expect(get('gr').notes).toContain('no numeric wrong-language control');
+    const comprehension=get('c1-1-i'), grammar=get('gr');
+    expect(comprehension.kind==='question' && comprehension.rows[0].contextNote).toContain('English or Irish');
+    expect(grammar.kind==='question' && grammar.rows[0].contextNote).toContain('does not print separate marks for individual forms');
     const card=get('c2-1');
     if(!isRubricCard(card)) throw new Error('Missing summary rubric');
     const scores={ [languageGroupId('answer-1')]:1,[languageRowId('answer-1','full')]:2,

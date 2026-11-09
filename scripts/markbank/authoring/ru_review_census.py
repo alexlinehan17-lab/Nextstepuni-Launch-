@@ -11,6 +11,28 @@ from pathlib import Path
 
 
 def reviewed_keys(year, level):
+    if (year, level) == (2025, 'hl'):
+        # Independent visual review: all16 written,8 aural,27 scheme pages.
+        # Four complete summaries include their discretionary component;
+        # five essay topics and six guided prompts remain two choice pools.
+        root = Path(__file__).resolve().parents[3] / 'examiner-reports/russian'
+        for relative, digest in {
+            'papers/2025-hl-000-paper.pdf': '671650c672d92ab191f615700de4dfd7077835d86223a2e976a8818809c8d97f',
+            'papers/2025-hl-A00-paper.pdf': 'edcc2149eddeababbeb62a5e471c22de654b4fb74bbf671b2e12c0e5abb921fe',
+            'schemes/2025-hl.pdf': '3c74de1d1d5d35a4e0e9ada2b5e7754446722444003f480a2bd876c90c27a52b',
+        }.items():
+            assert hashlib.sha256((root / relative).read_bytes()).hexdigest() == digest
+        keys = [('C1', q, None, r) for q, romans in [(1, ('i','ii','iii')), (2, ('i','ii')), (3, ('i','ii','iii')), (4, (None,))] for r in romans]
+        keys += [('C2', q, None, None) for q in (1,2,3,4)]
+        keys += [(unit, None, None, roman) for unit in ('LA1','LA2') for roman in ('i','ii')]
+        keys += [(unit, question, None, None) for unit, question in [('SD',3),('GR',1),('SE',2),('GW',3)]]
+        assert len(keys) == 21
+        for unit in ('L1','L3'):
+            keys += [(unit,q,None,r) for q in (1,2,3) for r in ('i','ii')]
+        keys += [('L2',q,None,r) for q,r in [(1,None),(2,'i'),(2,'ii'),(3,'i'),(3,'ii')]]
+        keys += [('L4',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,'i'),(2,'ii'),(3,None)]]
+        assert len(keys) == len(set(keys)) == 43
+        return set(keys)
     if year != 2026 or level not in ('hl', 'ol'):
         return None
     root = Path(__file__).resolve().parents[3]
