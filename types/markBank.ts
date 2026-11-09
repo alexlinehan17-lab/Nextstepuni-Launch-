@@ -459,6 +459,10 @@ export interface SecCardBase extends CardBase {
   /** Apply only the verified sitting's explicit wrong-language rule, after
    * earning marks under its unchanged source tariff. Never infer language. */
   answerLanguageRule?: { otherLanguageMultiplier: 0 | 0.5; sourceText: string; schemePages: number[] };
+  /** An explicitly published half-credit condition for the complete priced
+   * response. This and wrong-language half credit apply once, not cumulatively.
+   * Supported only on fixed point cards; never infer extraneous material. */
+  extraneousMaterialRule?: { multiplier: 0.5; sourceText: string; schemePages: number[] };
   /** Verbatim from the QUESTION PAPER — not the scheme. Required, always. */
   questionText: string;
   /** Names a separately priced task within a shared printed instruction. */
@@ -1588,6 +1592,10 @@ export function rowPartsReconcile(row: MarkRow): boolean {
 }
 
 export function tariffReconciles(card: SecCard): boolean {
+  if (card.extraneousMaterialRule && (card.extraneousMaterialRule.multiplier !== 0.5
+    || !card.extraneousMaterialRule.sourceText.trim() || !card.extraneousMaterialRule.schemePages.length
+    || !card.extraneousMaterialRule.schemePages.every(page => Number.isInteger(page) && page > 0)
+    || !isPointCard(card) || card.tariffModel.kind !== 'fixed' || !!card.mathematicsScale)) return false;
   if (card.answerLanguageRule && (![0, 0.5].includes(card.answerLanguageRule.otherLanguageMultiplier)
     || !card.answerLanguageRule.sourceText.trim() || !card.answerLanguageRule.schemePages.length
     || !card.answerLanguageRule.schemePages.every(page => Number.isInteger(page) && page > 0))) return false;
