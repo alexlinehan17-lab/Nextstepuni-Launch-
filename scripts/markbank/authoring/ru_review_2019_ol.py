@@ -278,7 +278,12 @@ def listening(docs,P):
                 if partial:c['rubric']['groups'][0]['rows'].append({'id':'museum-partial','text':partial,'marks':2})
                 c['rubric']['taskRequirements']=general
                 if (unit,item,roman)==('L3',2,'i'):c['rubric']['markingGuideNote']='The booklet labels this question2(i); scheme page12 prints only.(i). This card follows the booklet.'
-            c['topicId']=('russian-0-8' if item in (1,5) else 'russian-0-4' if item==2 else 'russian-0-5' if item==3 else 'russian-0-3') if section==1 else ('russian-0-1' if section==4 else 'russian-0-3')
+            # Match the published curriculum labels to the actual question.
+            topics=[['russian-0-8','russian-0-3','russian-0-14','russian-0-6','russian-0-8'],
+                    ['russian-0-7','russian-2-5','russian-0-4','russian-0-6'],
+                    ['russian-2-5','russian-0-5','russian-0-9','russian-2-5'],
+                    ['russian-0-1','russian-0-5','russian-0-7','russian-0-7']]
+            c['topicId']=topics[section-1][index]
             c['additionalTopicIds']=['russian-1-0']
             c['sourceMaterial']['kind']='source-question';c['sourceMaterial']['presentationNote']='Listen to the official recording and answer the printed question. The transcript is not shown before answering.'
             c['audioMaterial']=audio;c['review']['guidancePages']=[11];cards.append(c)

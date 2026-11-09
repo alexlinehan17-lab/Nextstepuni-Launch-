@@ -69,6 +69,8 @@ export const HOSTED_ANSWER_OVERRIDES = new Set([
   'russian|2021|LC099GLPA00BV.pdf',
   'russian|2019|LC099GLP000BV.pdf',
   'russian|2019|LC099GLPA00BV.pdf',
+  'russian|2018|LC099GLP000EV.pdf',
+  'russian|2018|LC099GLPA00EV.pdf',
   // Reviewed English B/C booklet: preserve Section B and append Section C.
   'home-economics-s-and-s|2023|LC098ALP039EV.pdf',
   'home-economics-s-and-s|2023|LC098GLP039EV.pdf',

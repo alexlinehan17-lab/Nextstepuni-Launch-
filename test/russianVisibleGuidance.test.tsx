@@ -13,6 +13,17 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('shows the2018 handwriting allocation limitation',async()=>{
+    reveal('la1','ol',2018);
+    await waitFor(()=>expect(screen.getByText(/The scheme gives 6 marks for both phrases/)).toBeVisible());
+    expect(screen.getByText(/numeric self-scoring is unavailable/)).toHaveTextContent('without per-phrase allocations or a handwritten exemplar');
+  });
+  it('shows the2018 listening rate and no-credit examples',async()=>{
+    reveal('l1-4','ol',2018);
+    await waitFor(()=>expect(screen.getByText('Award five marks for each correct/relevant point.')).toBeVisible());
+    expect(screen.getByText('no marks: seat downstairs, ticket for coupe wagon, wagon P')).toBeVisible();
+    expect(screen.getByText(/If an answer is written entirely in Russian/)).toBeVisible();
+  });
   it('shows the2019 mandatory dialogues and overall-only allocation',async()=>{
     reveal('sd','ol',2019);
     await waitFor(()=>expect(screen.getByText(/Complete both Group A and Group B/)).toBeVisible());
