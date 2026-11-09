@@ -548,5 +548,48 @@
     "alt": "Original Poverty in Ireland 2008 table. Consistent Poverty 4.2% (178,074 people); At Risk of Poverty 14.4% (610,538 people); footnote also known as relative poverty. Complete title, two rows and footnote retained.",
     "attribution": "SEC Home Economics 2011 Ordinary Level examination paper, page 11 — © State Examinations Commission.",
     "sourceNote": "Original PDF crop, bounds [145, 133, 475, 238], rendered at 2×. SHA256 9302ae8cd75191d0e9fc731229e309efcde763f3f2e80e3034670f8f2ac33527."
+  },
+  "home-economics-2012-hl-sa-q5": {
+    "src": "/exam-figures/home-economics/home-economics-2012-hl-sa-q5.png",
+    "md5": "6ed845e5d5e6c7c4161e58a455e823b7",
+    "alt": "Original alternative (novel) protein question table. Plant and Micro-organisms rows, Source and Product columns; all blank input cells retained.",
+    "attribution": "SEC Home Economics 2012 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 219.2875518798828, 570.219970703125, 383.2676696777344], rendered at 2.5×. SHA256 55eb5bedfdd2b405f11bcde9a8c020eafa67675440e20c50c21c88f0cafc55bc."
+  },
+  "home-economics-2012-hl-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2012-hl-sa-q6.png",
+    "md5": "efca1e462eb72320d4603997caa1ed2e",
+    "alt": "Original heat-transfer question table. Complete Method of Heat Transfer and Cooking Method columns, three blank rows and the printed paired-response prompt.",
+    "attribution": "SEC Home Economics 2012 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 383.2676696777344, 570.219970703125, 585.5875854492188], rendered at 2.5×. SHA256 a95e6fd86cec1453b6b9322df10112c076144531e5fe0c60d0b65309fb94b05d."
+  },
+  "home-economics-2012-hl-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2012-hl-sa-q8.png",
+    "md5": "cb43ce460373d1ded41bbcde42af0249",
+    "alt": "Original mould diagram and question. All labelled A, B and C pointers, intact spore structures and hyphal network retained; blank answer spaces remain.",
+    "attribution": "SEC Home Economics 2012 Higher Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 570.219970703125, 299.7475280761719], rendered at 2.5×. SHA256 efe9cf98bdec4d58926d4a8d83241114bf3117ae0a45a895eb19af676eba5b90."
+  },
+  "home-economics-2012-hl-sb-q1-servings": {
+    "src": "/exam-figures/home-economics/home-economics-2012-hl-sb-q1-servings.png",
+    "md5": "2ef4fd77f552e7e5fa47f34ac61cff41",
+    "alt": "Original daily food-group servings table. Age groups 5–13, 14–18, 19–50 and 51+, each Male/Female. Bread/Cereals moderately active: 3–5/3–4, 5–7/4, 5–7/4–5, 4–5/3–4; sedentary: 3–5/3–4, 4–5/3, 4–6/3–4, 4/3. Fruit & Vegetables: 5/5, 5–6/5, 5–7/5–6, 5/5. All original headings, gender/activity labels and cells retained.",
+    "attribution": "SEC Home Economics 2012 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [82, 234, 557, 401], rendered at 2.5×. SHA256 2b570fdb72422ec74613fc22adca05847c6f78bc3dee08f8447e4c12348facbf."
+  },
+  "home-economics-2012-hl-sc-q3-unemployment": {
+    "src": "/exam-figures/home-economics/home-economics-2012-hl-sc-q3-unemployment.png",
+    "md5": "2f4fc40a31116d4c8a9091cd723c03ad",
+    "alt": "Original unemployment table for Ireland, with full Central Statistics Office caption. Years 2006, 2007, 2008, 2009, 2010, 2011: 4.4%, 4.5%, 6.4%, 11.8%, 13.7%, 14.2%. The original PAPER value for 2010 is 13.7%; scheme repeats 13.6%.",
+    "attribution": "SEC Home Economics 2012 Higher Level examination paper, page 11 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [103, 165, 546, 257], rendered at 2.5×. SHA256 302633aaada576c04377dae6ed1b6947d210224cba19fa057be9f3e8c6cafbee."
+  },
+  "home-economics-2012-hl-sb-q1b-carbohydrates": {
+    "src": "/exam-figures/home-economics/home-economics-2012-hl-sb-q1b-carbohydrates.png",
+    "md5": "b227c2cf716216e15fb88c996f4c4e60",
+    "alt": "Original carbohydrate answer models: labelled glucose chemical structure, disaccharide formation equation and ring diagram with water eliminated, plus hydrolysis and inversion explanation. Complete source diagrams, symbols and printed eight-mark allocations retained.",
+    "attribution": "SEC Home Economics 2012 Higher Level marking scheme, page 8 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [76, 106, 575, 404], rendered at 2.5×. SHA256 7a1049c12390ad17fae20d4d06e774a38b95dd20422517389abc94a441365828.",
+    "solution": true
   }
 }

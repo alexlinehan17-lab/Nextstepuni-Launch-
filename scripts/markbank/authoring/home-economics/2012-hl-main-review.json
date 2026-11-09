@@ -1,0 +1,667 @@
+{
+  "schemaVersion": 1,
+  "year": 2012,
+  "level": "higher",
+  "sitting": "main",
+  "language": "ev",
+  "status": "source-reviewed",
+  "sources": {
+    "paper-trail-corpus/exampapers/2012/LC098ALP000EV.pdf": {
+      "sha256": "545d922fd61d92a465f64d68bfd95dd898cc7506e6710f1c679eb2d322da4d20",
+      "pages": 12
+    },
+    "paper-trail-corpus/markingschemes/2012/LC098ALP000EV.pdf": {
+      "sha256": "522426f0c1258dfe6db2c0a41674482e911e906af28b0af771e2598523402dc8",
+      "pages": 36
+    }
+  },
+  "visualSweep": {
+    "paper": "All 12 physical pages independently inspected: cover/instructions 1, Section A 2–5, Section B 6–8, Section C 9–11, explicit blank 12.",
+    "scheme": "All 36 physical pages independently inspected: cover 1, blank 2, guidance 3; A 4–6; B 7–13; C 14–19; blank 20; separate food studies coursework 21–33; blank 34–35; back cover 36.",
+    "evidence": "tmp/pdfs/home-economics-review/2012-hl-main: paper-01..03 and scheme-01..09 contacts, original extracted texts and hash inventory.",
+    "method": "Independent full original-page inspection completed before authoring and before relying on raw parser counts."
+  },
+  "expectedTasks": 51,
+  "expectedSectionTasks": {
+    "A": 12,
+    "B": 17,
+    "C": 22
+  },
+  "sourceQuestionGroups": 20,
+  "offeredPracticeMarks": 627,
+  "independentTaskCensus": {
+    "A": {
+      "Q1": 6,
+      "Q2": 6,
+      "Q3": 6,
+      "Q4": 6,
+      "Q5": 6,
+      "Q6": 6,
+      "Q7": 6,
+      "Q8": 6,
+      "Q9": 6,
+      "Q10": 6,
+      "Q11": 6,
+      "Q12": 6
+    },
+    "B": {
+      "Q1(a)": 24,
+      "Q1(b)": 24,
+      "Q1(c)": 12,
+      "Q1(d)": 20,
+      "Q2(a)": 12,
+      "Q2(b)": 20,
+      "Q2(c)": 18,
+      "Q3(a)": 24,
+      "Q3(b)": 16,
+      "Q3(c)": 10,
+      "Q4(a)": 24,
+      "Q4(b)": 14,
+      "Q4(c)": 12,
+      "Q5(a)": 12,
+      "Q5(b)-child": 12,
+      "Q5(b)-parent": 12,
+      "Q5(c)": 14
+    },
+    "C": {
+      "E1(a)(i)": 16,
+      "E1(a)(ii)": 24,
+      "E1(a)(iii)": 10,
+      "E1(b)(i)": 15,
+      "E1(b)(ii)": 15,
+      "E1(c)(i)": 18,
+      "E1(c)(ii)": 12,
+      "E2(a)(i)": 15,
+      "E2(a)(ii)": 10,
+      "E2(b)(i)": 6,
+      "E2(b)(ii)": 9,
+      "E2(c)-construction": 5,
+      "E2(c)-colour": 5,
+      "E2(c)-design": 5,
+      "E3(a)(i)": 20,
+      "E3(a)(ii)": 20,
+      "E3(a)(iii)": 10,
+      "E3(b)(i)-definition": 6,
+      "E3(b)(i)-value": 12,
+      "E3(b)(ii)": 12,
+      "E3(c)(i)": 12,
+      "E3(c)(ii)": 18
+    }
+  },
+  "decisionsBeforeAuthoring": [
+    "Every Section A question carries only the printed whole six-mark tariff. No source per-answer split or partial ladder exists. All companion prompts and paired/table answers stay visible on the whole question.",
+    "B1(a) requires two references to EACH food group: four points of six, with two analysis and four elaboration marks per point.",
+    "B1(b) is one carbohydrate account/profile with three required headings at eight each; retain original chemical structure and disaccharide formation diagrams. No invented per-atom marking.",
+    "B2(b) is an either-fruit-or-vegetables choice under one 20-mark task; preserve full corresponding nutrition and dietary contribution guidance.",
+    "B3(a) and B4(a) require two points under EACH of three headings. Preservation method, mortgage and Local Authority scheme remain chosen profiles with dependent name/details.",
+    "B5(b) separately prices child and parent special-needs difficulties at 12 each. C3(b)(i) separately prices leisure definition 6 and value discussion 12.",
+    "C2(c) requires three independent manufacturing techniques (construction, colour, design) at five each for name plus description; keep each full five-mark criterion without inventing name/description sub-splits.",
+    "C1(c)(i) requires one reference to EACH of three headings plus three other points; do not invent two-per-heading quotas. C3(a)(ii) requires one per heading plus one other point.",
+    "C1(a)(ii) central heating has name 4, fuel 4, three principle points at 4 and impact 4. C1(b)(ii) ventilation name 3 plus three principle points at 4; preserve each method’s full source model.",
+    "C3(c)(ii) is two chosen childcare profiles, each name 3 plus two evaluative points at 3. The scheme names examples but supplies no model advantages/disadvantages; make that omission visible.",
+    "Original question inputs: A5 protein table, A6 heat-transfer table, A8 mould diagram, B1 food group serving table and C3 unemployment table; also retain the two original chemical answer diagrams from scheme page 8."
+  ],
+  "sourceAnomalies": [
+    "Paper page11 unemployment table gives 2010 as13.7%, whereas scheme page18 repeats13.6%. The original paper is the input; show its13.7% and a visible note identifying the differing scheme value. Both paper and scheme prose mention14.4% October2011 while the table says14.2%; retain both without inventing correction.",
+    "Scheme A6 places Microwave cooking under Conduction. Retain the original printed classification, identified as source table wording.",
+    "Scheme B2(b) includes broad historical statements such as Fruit has no protein. Preserve the original marking guidance as exam-source material; do not rewrite nutritional content.",
+    "Paper C1(c) text layer carries a stray space inside (c ); normalize only the part-marker boundary. Original printed question prose is retained.",
+    "The carbohydrate printed equation on scheme8 uses H20 while its accompanying diagram labels H₂O. The complete original answer crop preserves both; no silently corrected diagram or formula is substituted."
+  ],
+  "tasks": [
+    {
+      "id": "he-2012-hl-sa-q1",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2012 HL Section A Q1",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2012-hl-sa-q2",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2012 HL Section A Q2",
+      "topicId": "home-economics-0-7"
+    },
+    {
+      "id": "he-2012-hl-sa-q3",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2012 HL Section A Q3",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2012-hl-sa-q4",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2012 HL Section A Q4",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2012-hl-sa-q5",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2012 HL Section A Q5",
+      "topicId": "home-economics-0-5"
+    },
+    {
+      "id": "he-2012-hl-sa-q6",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2012 HL Section A Q6",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2012-hl-sa-q7",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2012 HL Section A Q7",
+      "topicId": "home-economics-0-11"
+    },
+    {
+      "id": "he-2012-hl-sa-q8",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2012 HL Section A Q8",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2012-hl-sa-q9",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2012 HL Section A Q9",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2012-hl-sa-q10",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2012 HL Section A Q10",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2012-hl-sa-q11",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2012 HL Section A Q11",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2012-hl-sa-q12",
+      "section": "A",
+      "marks": 6,
+      "questionRef": "2012 HL Section A Q12",
+      "topicId": "home-economics-1-3"
+    },
+    {
+      "id": "he-2012-hl-sb-q1a",
+      "section": "B",
+      "marks": 24,
+      "questionRef": "2012 HL Section B Q1(a)",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2012-hl-sb-q1b",
+      "section": "B",
+      "marks": 24,
+      "questionRef": "2012 HL Section B Q1(b)",
+      "topicId": "home-economics-0-6"
+    },
+    {
+      "id": "he-2012-hl-sb-q1c",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2012 HL Section B Q1(c)",
+      "topicId": "home-economics-0-1"
+    },
+    {
+      "id": "he-2012-hl-sb-q1d",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2012 HL Section B Q1(d)",
+      "topicId": "home-economics-1-2"
+    },
+    {
+      "id": "he-2012-hl-sb-q2a",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2012 HL Section B Q2(a)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2012-hl-sb-q2b",
+      "section": "B",
+      "marks": 20,
+      "questionRef": "2012 HL Section B Q2(b)",
+      "topicId": "home-economics-0-9"
+    },
+    {
+      "id": "he-2012-hl-sb-q2c",
+      "section": "B",
+      "marks": 18,
+      "questionRef": "2012 HL Section B Q2(c)",
+      "topicId": "home-economics-0-8"
+    },
+    {
+      "id": "he-2012-hl-sb-q3a",
+      "section": "B",
+      "marks": 24,
+      "questionRef": "2012 HL Section B Q3(a)",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2012-hl-sb-q3b",
+      "section": "B",
+      "marks": 16,
+      "questionRef": "2012 HL Section B Q3(b)",
+      "topicId": "home-economics-0-3"
+    },
+    {
+      "id": "he-2012-hl-sb-q3c",
+      "section": "B",
+      "marks": 10,
+      "questionRef": "2012 HL Section B Q3(c)",
+      "topicId": "home-economics-0-4"
+    },
+    {
+      "id": "he-2012-hl-sb-q4a",
+      "section": "B",
+      "marks": 24,
+      "questionRef": "2012 HL Section B Q4(a)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2012-hl-sb-q4b",
+      "section": "B",
+      "marks": 14,
+      "questionRef": "2012 HL Section B Q4(b)",
+      "topicId": "home-economics-1-1"
+    },
+    {
+      "id": "he-2012-hl-sb-q4c",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2012 HL Section B Q4(c)",
+      "topicId": "home-economics-3-3"
+    },
+    {
+      "id": "he-2012-hl-sb-q5a",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2012 HL Section B Q5(a)",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2012-hl-sb-q5b-child",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2012 HL Section B Q5(b) — child",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2012-hl-sb-q5b-parent",
+      "section": "B",
+      "marks": 12,
+      "questionRef": "2012 HL Section B Q5(b) — parent",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2012-hl-sb-q5c",
+      "section": "B",
+      "marks": 14,
+      "questionRef": "2012 HL Section B Q5(c)",
+      "topicId": "home-economics-2-0"
+    },
+    {
+      "id": "he-2012-hl-sc-q1ai",
+      "section": "C",
+      "marks": 16,
+      "questionRef": "2012 HL Section C E1 Q1(a)(i)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2012-hl-sc-q1aii",
+      "section": "C",
+      "marks": 24,
+      "questionRef": "2012 HL Section C E1 Q1(a)(ii)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2012-hl-sc-q1aiii",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2012 HL Section C E1 Q1(a)(iii)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2012-hl-sc-q1bi",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2012 HL Section C E1 Q1(b)(i)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2012-hl-sc-q1bii",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2012 HL Section C E1 Q1(b)(ii)",
+      "topicId": "home-economics-3-5"
+    },
+    {
+      "id": "he-2012-hl-sc-q1ci",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2012 HL Section C E1 Q1(c)(i)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2012-hl-sc-q1cii",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2012 HL Section C E1 Q1(c)(ii)",
+      "topicId": "home-economics-3-4"
+    },
+    {
+      "id": "he-2012-hl-sc-q2ai",
+      "section": "C",
+      "marks": 15,
+      "questionRef": "2012 HL Section C E2 Q2(a)(i)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2012-hl-sc-q2aii",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2012 HL Section C E2 Q2(a)(ii)",
+      "topicId": "home-economics-3-8"
+    },
+    {
+      "id": "he-2012-hl-sc-q2bi",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2012 HL Section C E2 Q2(b)(i)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2012-hl-sc-q2bii",
+      "section": "C",
+      "marks": 9,
+      "questionRef": "2012 HL Section C E2 Q2(b)(ii)",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2012-hl-sc-q2c-construction",
+      "section": "C",
+      "marks": 5,
+      "questionRef": "2012 HL Section C E2 Q2(c) — Fabric construction",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2012-hl-sc-q2c-colour",
+      "section": "C",
+      "marks": 5,
+      "questionRef": "2012 HL Section C E2 Q2(c) — Colour application",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2012-hl-sc-q2c-design",
+      "section": "C",
+      "marks": 5,
+      "questionRef": "2012 HL Section C E2 Q2(c) — Design application",
+      "topicId": "home-economics-3-7"
+    },
+    {
+      "id": "he-2012-hl-sc-q3ai",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2012 HL Section C E3 Q3(a)(i)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2012-hl-sc-q3aii",
+      "section": "C",
+      "marks": 20,
+      "questionRef": "2012 HL Section C E3 Q3(a)(ii)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2012-hl-sc-q3aiii",
+      "section": "C",
+      "marks": 10,
+      "questionRef": "2012 HL Section C E3 Q3(a)(iii)",
+      "topicId": "home-economics-3-9"
+    },
+    {
+      "id": "he-2012-hl-sc-q3bi-definition",
+      "section": "C",
+      "marks": 6,
+      "questionRef": "2012 HL Section C E3 Q3(b)(i) — definition",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2012-hl-sc-q3bi-value",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2012 HL Section C E3 Q3(b)(i) — value",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2012-hl-sc-q3bii",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2012 HL Section C E3 Q3(b)(ii)",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2012-hl-sc-q3ci",
+      "section": "C",
+      "marks": 12,
+      "questionRef": "2012 HL Section C E3 Q3(c)(i)",
+      "topicId": "home-economics-3-11"
+    },
+    {
+      "id": "he-2012-hl-sc-q3cii",
+      "section": "C",
+      "marks": 18,
+      "questionRef": "2012 HL Section C E3 Q3(c)(ii)",
+      "topicId": "home-economics-3-11"
+    }
+  ],
+  "figures": {
+    "home-economics-2012-hl-sa-q5": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2012/LC098ALP000EV.pdf",
+      "page": 3,
+      "bounds": [
+        45,
+        219.2875518798828,
+        570.219970703125,
+        383.2676696777344
+      ],
+      "alt": "Original alternative (novel) protein question table. Plant and Micro-organisms rows, Source and Product columns; all blank input cells retained.",
+      "sha256": "55eb5bedfdd2b405f11bcde9a8c020eafa67675440e20c50c21c88f0cafc55bc"
+    },
+    "home-economics-2012-hl-sa-q6": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2012/LC098ALP000EV.pdf",
+      "page": 3,
+      "bounds": [
+        45,
+        383.2676696777344,
+        570.219970703125,
+        585.5875854492188
+      ],
+      "alt": "Original heat-transfer question table. Complete Method of Heat Transfer and Cooking Method columns, three blank rows and the printed paired-response prompt.",
+      "sha256": "a95e6fd86cec1453b6b9322df10112c076144531e5fe0c60d0b65309fb94b05d"
+    },
+    "home-economics-2012-hl-sa-q8": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2012/LC098ALP000EV.pdf",
+      "page": 4,
+      "bounds": [
+        45,
+        39.88771057128906,
+        570.219970703125,
+        299.7475280761719
+      ],
+      "alt": "Original mould diagram and question. All labelled A, B and C pointers, intact spore structures and hyphal network retained; blank answer spaces remain.",
+      "sha256": "efe9cf98bdec4d58926d4a8d83241114bf3117ae0a45a895eb19af676eba5b90"
+    },
+    "home-economics-2012-hl-sb-q1-servings": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2012/LC098ALP000EV.pdf",
+      "page": 6,
+      "bounds": [
+        82,
+        234,
+        557,
+        401
+      ],
+      "alt": "Original daily food-group servings table. Age groups 5–13, 14–18, 19–50 and 51+, each Male/Female. Bread/Cereals moderately active: 3–5/3–4, 5–7/4, 5–7/4–5, 4–5/3–4; sedentary: 3–5/3–4, 4–5/3, 4–6/3–4, 4/3. Fruit & Vegetables: 5/5, 5–6/5, 5–7/5–6, 5/5. All original headings, gender/activity labels and cells retained.",
+      "sha256": "2b570fdb72422ec74613fc22adca05847c6f78bc3dee08f8447e4c12348facbf"
+    },
+    "home-economics-2012-hl-sc-q3-unemployment": {
+      "kind": "paper",
+      "source": "paper-trail-corpus/exampapers/2012/LC098ALP000EV.pdf",
+      "page": 11,
+      "bounds": [
+        103,
+        165,
+        546,
+        257
+      ],
+      "alt": "Original unemployment table for Ireland, with full Central Statistics Office caption. Years 2006, 2007, 2008, 2009, 2010, 2011: 4.4%, 4.5%, 6.4%, 11.8%, 13.7%, 14.2%. The original PAPER value for 2010 is 13.7%; scheme repeats 13.6%.",
+      "sha256": "302633aaada576c04377dae6ed1b6947d210224cba19fa057be9f3e8c6cafbee"
+    },
+    "home-economics-2012-hl-sb-q1b-carbohydrates": {
+      "kind": "scheme",
+      "source": "paper-trail-corpus/markingschemes/2012/LC098ALP000EV.pdf",
+      "page": 8,
+      "bounds": [
+        76,
+        106,
+        575,
+        404
+      ],
+      "alt": "Original carbohydrate answer models: labelled glucose chemical structure, disaccharide formation equation and ring diagram with water eliminated, plus hydrolysis and inversion explanation. Complete source diagrams, symbols and printed eight-mark allocations retained.",
+      "solution": true,
+      "sha256": "7a1049c12390ad17fae20d4d06e774a38b95dd20422517389abc94a441365828"
+    }
+  },
+  "sourceCensusReconciliation": {
+    "rawPaperLeaves": 50,
+    "rawSections": {
+      "A": 15,
+      "B": 16,
+      "C": 19
+    },
+    "pricedTasks": 51,
+    "pricedSections": {
+      "A": 12,
+      "B": 17,
+      "C": 22
+    },
+    "wholeQuestionMerges": [
+      {
+        "source": "Section A Q2(i)/(ii)",
+        "paper": 2,
+        "scheme": 4,
+        "reason": "One published whole-question six-mark tariff; no separate per-part allocation."
+      },
+      {
+        "source": "Section A Q4(i)/(ii)",
+        "paper": 3,
+        "scheme": 4,
+        "reason": "One published whole-question six-mark tariff; no separate per-part allocation."
+      },
+      {
+        "source": "Section A Q11(i)/(ii)",
+        "paper": 5,
+        "scheme": 6,
+        "reason": "One published whole-question six-mark tariff; no separate per-part allocation."
+      }
+    ],
+    "independentPricedSplits": [
+      {
+        "source": "Section B Q5(b)",
+        "paper": 8,
+        "scheme": 13,
+        "marks": [
+          12,
+          12
+        ],
+        "asks": [
+          "child special needs",
+          "parent special needs"
+        ]
+      },
+      {
+        "source": "Section C Q2(c)",
+        "paper": 10,
+        "scheme": 17,
+        "marks": [
+          5,
+          5,
+          5
+        ],
+        "asks": [
+          "construction technique",
+          "colour application",
+          "design application"
+        ]
+      },
+      {
+        "source": "Section C Q3(b)(i)",
+        "paper": 11,
+        "scheme": 19,
+        "marks": [
+          6,
+          12
+        ],
+        "asks": [
+          "leisure definition",
+          "leisure value"
+        ]
+      }
+    ],
+    "gate": "python3 scripts/markbank/authoring/he_validate_2012_source_census.py",
+    "policy": "All formal source keys are independently pinned from original pages. The three whole-question merges and four added priced companions reconcile50→51; no printed ask is omitted."
+  },
+  "figuresVisuallyInspected": [
+    "home-economics-2012-hl-sa-q5",
+    "home-economics-2012-hl-sa-q6",
+    "home-economics-2012-hl-sa-q8",
+    "home-economics-2012-hl-sb-q1-servings",
+    "home-economics-2012-hl-sc-q3-unemployment",
+    "home-economics-2012-hl-sb-q1b-carbohydrates"
+  ],
+  "sectionAReview": {
+    "tasks": 12,
+    "marks": 72,
+    "tariffDecision": "Published whole-question six-mark totals only. Full unpriced source rows plus visible total-only explanation; no per-answer split or partial ladder invented. All companion asks and original table/diagram inputs retained."
+  },
+  "sectionBReview": {
+    "tasks": 17,
+    "marks": 280,
+    "selectionDecisions": "Independent B5(b) child/parent asks at12 each. Preserve required food-group and heading quotas, one carbohydrate profile with original diagrams, and chosen preservation/mortgage/housing-scheme dependencies with complete method-specific models."
+  },
+  "sectionCReview": {
+    "tasks": 22,
+    "marks": 275,
+    "selectionDecisions": "C2(c) three independently required techniques at5 each; C3(b)(i) definition6/value12 independent. Full chosen profiles and printed flexible heading quotas preserved. Paper/scheme unemployment discrepancy visible. Named technique/childcare examples retained while missing model descriptions/evaluations explicitly identified."
+  },
+  "validation": {
+    "runtime": "267 tests passed: 232 required preservation/curriculum/deck plus seven each 2010HL/OL, 2011HL/OL and 2012HL, maxWorkers1. Final run includes source-aligned A3/A4 canonical-topic correction.",
+    "mandatoryRawSourceGate": "Explicit Python 2010/2011/2012 original-PDF hash/key census gates passed. 2012HL has 50 independently pinned leaves and zero continuity flags. Portable checkout Vitest has no archive/Python dependency.",
+    "atlas": "Two targeted HE gates passed: 62 papers, 692 groups, 1003 registry mappings. Original 20 IDs retained; previously absent tag record added; exact mappings already existed.",
+    "mainTypecheck": "passed",
+    "scopedTestTypecheck": "passed on final data",
+    "productionBuild": "passed; removed only own reproducible dist",
+    "cardlint": "clean; 1115 authored records including withdrawals inspected",
+    "regeneration": "Two complete regenerations byte-identical across 29 source/generation files.",
+    "reconciliation": "2012HL 50/50 source leaves covered, 51 priced tasks, zero opens/exclusions/orphans/continuity flags. Whole subject 1089 cards (630HL/459OL), 1044/1482 raw leaves covered, 438 open, zero orphan/unparsed/excluded, 29 flags.",
+    "preservation": "Every earlier card, other deck, unrelated sizes/showcase subject, full and decoded compact non-HE Atlas record, unrelated HE tag/runtime/association and every other HE sitting census unchanged. Frozen identity hashes retained.",
+    "browser": "Parent-owned/pending; all six complete original crops individually visually inspected.",
+    "correctedValidationFindings": "Original source roman answer lines in A1/A12 retained separately to prevent total-only row rejection; A8 original diagram label key restored. All 51 tasks emit. Final source/topic review aligned A3 emulsifiers to Food Industry and A4 speciality foods to Food Commodities; final required tests passed."
+  }
+}
