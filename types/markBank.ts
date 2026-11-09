@@ -1364,6 +1364,15 @@ export interface LanguagePointsRubric {
     answerCount?: number;
     sourceText: string;
     schemePages: number[];
+    /** Explicit source conditions reduce the whole allocation, without
+     * inventing partial credit for an otherwise full-mark detail. */
+    limits?: Array<{
+      id: string;
+      maxMarks: number;
+      when: { flag: string; prompt: string };
+      sourceText: string;
+      schemePages: number[];
+    }>;
   };
   /** Whole-task criteria in addition to the chosen answers, e.g. the SEC's
    * separately awarded discretionary marks. Never silently granted. */
@@ -1650,14 +1659,16 @@ export function tariffReconciles(card: SecCard): boolean {
         // without inventing a source band the scheme did not print.
         return allowed.every(mark => mark === 0 || marks.includes(mark)) && new Set(marks).size === marks.length
           && marks.every(mark => allowed.includes(mark))
-          && bands.every(band => band.label.trim() && band.guidance.length > 0);
+          && bands.every(band => band.label.trim() && band.guidance.length > 0 && band.guidance.every(text => text.trim()));
       };
       if (ids.size !== criteria.length || !criteria.every(criterion => criterion.id && criterion.label.trim()
+        && criterion.guidance.every(text => text.trim())
         && Number.isInteger(criterion.maxMarks) && criterion.maxMarks >= 0
         && validSteps(criterion.permittedMarks, criterion.maxMarks)
         && validBands(criterion.bands, criterion.permittedMarks)
         && (criterion.kind !== 'deduction' || criteria.some(target => target.id === criterion.deductFrom && target.kind !== 'deduction'))
         && (criterion.limits ?? []).every(limit => limit.id && criterion.permittedMarks.includes(limit.maxMarks)
+          && limit.guidance.every(text => text.trim())
           && (limit.minMarks === undefined || (criterion.permittedMarks.includes(limit.minMarks) && limit.minMarks <= limit.maxMarks))
           && (limit.scaleLabel === undefined || !!limit.scaleLabel.trim())
           && limit.when.any.length > 0 && validBands(limit.bands, criterion.permittedMarks.filter(mark => mark === 0
@@ -1710,6 +1721,12 @@ export function tariffReconciles(card: SecCard): boolean {
       if (cap) {
         if (!Number.isInteger(cap.maxMarks) || cap.maxMarks <= 0 || !cap.sourceText.trim()
           || !cap.schemePages.length || !cap.schemePages.every(page => Number.isInteger(page) && page > 0)) return false;
+        const limits = cap.limits ?? [];
+        if (new Set(limits.map(limit => limit.id)).size !== limits.length
+          || !limits.every(limit => limit.id.trim() && Number.isInteger(limit.maxMarks)
+            && limit.maxMarks >= 0 && limit.maxMarks < cap.maxMarks
+            && limit.when.flag.trim() && limit.when.prompt.trim() && limit.sourceText.trim()
+            && limit.schemePages.length > 0 && limit.schemePages.every(page => Number.isInteger(page) && page > 0))) return false;
         if (cap.answerCount !== undefined) {
           const answerCount = cap.answerCount;
           const maximumRows = choices.map(options => Math.max(...options.map(group => group.answerCount ?? group.rows.length))).sort((a, b) => b - a)

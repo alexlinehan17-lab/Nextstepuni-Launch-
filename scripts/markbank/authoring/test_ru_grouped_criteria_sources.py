@@ -49,9 +49,10 @@ class GroupedCriteriaSourceTest(unittest.TestCase):
                     'limit': criterion['limits'][0],
                     'limited-band': criterion['limits'][0]['bands'][0],
                 }[location]
-                target['guidance'] = ['An invented award not present in the source']
-                with self.assertRaises(AssertionError):
-                    self.check(card)
+                for text in ('An invented award not present in the source', ' \n\t'):
+                    target['guidance'] = [text]
+                    with self.assertRaises(AssertionError):
+                        self.check(card)
 
     def test_existing_whole_task_criteria_remain_source_bound(self):
         card = copy.deepcopy(self.card)

@@ -129,4 +129,42 @@ describe('conditional source ranges for language writing', () => {
     expect(within(screen.getByRole('group', { name: 'Expression mark' })).getAllByRole('button').map(button => button.textContent)).toEqual(['0', '9', '10']);
     expect(screen.getByText('20 / 30')).toBeInTheDocument();
   });
+
+  it('shows an unbanded active scale literally and restores normal descriptors when cleared', () => {
+    const card = source(7, 12, 15);
+    const expression = card.rubric.criteria[1];
+    expression.bands = [{ label: 'Normal scale', marks: steps(0, 15), guidance: ['Normal expression descriptor.'] }];
+    delete expression.limits![0].bands;
+    expression.limits![0].guidance = ['Prose: 7–8, 9–10, 11–12. Table: 7–8, 9–11, 11–12. The descriptor overlap at 11 remains unresolved.'];
+    expression.limits!.push({ id: 'lower-e', maxMarks: 10, scaleLabel: 'Lower E',
+      when: { any: [{ flag: 'short', prompt: 'Lower E condition applies' }] }, guidance: [],
+      bands: [{ label: 'Lower expression', marks: steps(0, 10), guidance: ['Published lower expression descriptor.'] }] });
+    expect(tariffReconciles(card)).toBe(true);
+    function Harness() {
+      const [scores, setScores] = useState<LanguageScores>({ 'language:content': 10, 'language:expression': 12 });
+      return <LanguageRubricPanel card={card} scores={scores}
+        onScore={(id, value) => setScores(old => ({ ...old, [id]: value }))} />;
+    }
+    render(<Harness />);
+    expect(screen.getByText('Normal expression descriptor.')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('checkbox', { name: 'Source Lower A accuracy condition applies' }));
+    expect(screen.getByText('Lower A')).toBeInTheDocument();
+    expect(screen.getByText(expression.limits![0].guidance[0])).toBeInTheDocument();
+    expect(screen.queryByText('Normal expression descriptor.')).not.toBeInTheDocument();
+    expect(within(screen.getByRole('group', { name: 'Expression mark' })).getAllByRole('button').map(button => button.textContent))
+      .toEqual(['0', '7', '8', '9', '10', '11', '12']);
+    fireEvent.click(screen.getByRole('checkbox', { name: 'Lower E condition applies' }));
+    expect(screen.getByText('Lower A')).toBeInTheDocument();
+    expect(screen.getByText('Lower E')).toBeInTheDocument();
+    expect(screen.getByText('Published lower expression descriptor.')).toBeInTheDocument();
+    expect(screen.getByText('Both source scales apply. Use their shared mark range and reassess against each set of descriptors.')).toBeInTheDocument();
+    expect(screen.queryByText('Normal expression descriptor.')).not.toBeInTheDocument();
+    expect(within(screen.getByRole('group', { name: 'Expression mark' })).getAllByRole('button').map(button => button.textContent))
+      .toEqual(['0', '7', '8', '9', '10']);
+    fireEvent.click(screen.getByRole('checkbox', { name: 'Lower E condition applies' }));
+    fireEvent.click(screen.getByRole('checkbox', { name: 'Source Lower A accuracy condition applies' }));
+    expect(screen.getByText('Normal expression descriptor.')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Set Expression to 12 marks' })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByText('22 / 25')).toBeInTheDocument();
+  });
 });

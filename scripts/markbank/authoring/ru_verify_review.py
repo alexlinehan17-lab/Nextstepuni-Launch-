@@ -27,6 +27,19 @@ def verify_alternative_sources(document, card):
         assert claim and any(claim in source for source in sources), (card['id'], alternative['id'], alternative['sourceText'])
 
 
+def verify_allocation_sources(document, card):
+    """Each fixed/conditional cap must quote its own original scheme pages."""
+    cap = card.get('rubric', {}).get('allocationCap')
+    if not cap:
+        return
+    for rule in [cap, *cap.get('limits', [])]:
+        pages = rule['schemePages']
+        assert pages and all(type(page) is int and 1 <= page <= len(document) for page in pages), card['id']
+        claim = normal(rule['sourceText'])
+        sources = [normal('\n'.join(document[page-1].get_text(sort=sort) for page in pages)) for sort in (False, True)]
+        assert claim and any(claim in source for source in sources), (card['id'], rule.get('id', 'allocation-cap'), rule['sourceText'])
+
+
 def criterion_claims(criteria):
     for criterion in criteria:
         yield from criterion['guidance']
@@ -53,6 +66,8 @@ def claims(card):
     rubric = card['rubric']
     if rubric.get('allocationCap'):
         yield rubric['allocationCap']['sourceText']
+        for limit in rubric['allocationCap'].get('limits', []):
+            yield limit['sourceText']
     for group in rubric.get('groups', []):
         for row in group['rows']:
             yield from row['text'].split(' — ')
@@ -70,9 +85,12 @@ def verify(cards=None):
         level = 'hl' if card['level'] == 'higher' else 'ol'
         with open_scheme(card['year'], level) as document:
             verify_alternative_sources(document, card)
+            verify_allocation_sources(document, card)
             pages = sorted(set(card['review']['schemePages'] + card['review'].get('guidancePages', [])
                                + card.get('answerLanguageRule', {}).get('schemePages', [])
-                               + card.get('rubric', {}).get('allocationCap', {}).get('schemePages', [])))
+                               + card.get('rubric', {}).get('allocationCap', {}).get('schemePages', [])
+                               + [page for limit in card.get('rubric', {}).get('allocationCap', {}).get('limits', [])
+                                  for page in limit['schemePages']]))
             versions = ['\n'.join(document[p-1].get_text(sort=sort) for p in pages) for sort in (False,True)]
             sources = [normal(version) for version in versions]
         # Some schemes expressly accept details from their original passage
@@ -88,7 +106,7 @@ def verify(cards=None):
             paper_answers[normal(binding['text'])]=True
         for claim in claims(card):
             count += 1
-            if not any(normal(claim) in source for source in sources) and normal(claim) not in paper_answers:
+            if not claim.strip() or (not any(normal(claim) in source for source in sources) and normal(claim) not in paper_answers):
                 failures.append((card['id'], claim))
     assert not failures, '\n'.join(f'{cid}: {claim}' for cid,claim in failures)
     print(f'{len(cards)} Russian cards: {count} answer/guidance slices verified against their original scheme pages and explicitly accepted paper bindings.')
