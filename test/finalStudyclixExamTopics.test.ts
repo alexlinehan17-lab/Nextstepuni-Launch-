@@ -93,7 +93,7 @@ describe('Home Economics exam-topic registry', () => {
       expect(ids.filter(id => !canonicalIds.has(id))).toEqual([]);
     }
     // Four source-reviewed 2025 Higher Section C groups now have their own anchors.
-    expectEveryExistingCardMapped('home-economics-s-and-s', 62, 692, 1003, taxonomy);
+    expectEveryExistingCardMapped('home-economics-s-and-s', 63, 712, 1003, taxonomy);
   });
 });
 
