@@ -1230,5 +1230,197 @@
         0.53
       ]
     }
+  },
+  "ja-2022-hl-1a-6": {
+    "src": "/exam-figures/japanese/ja-2022-hl-1a-6.png",
+    "md5": "7da704f793b6999d9e8cdf77cf89aec6",
+    "alt": "Complete the table.\nHappy Moment Photo Contest Details\nClosing Date\nOne photo suggestion\nHow to send the photo\nPrize",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 3,
+      "region": [
+        0.075,
+        0.68,
+        0.96,
+        0.925
+      ]
+    }
+  },
+  "ja-2022-hl-2a-1": {
+    "src": "/exam-figures/japanese/ja-2022-hl-2a-1.png",
+    "md5": "6769932f04d4d18fb53497d847ff19e0",
+    "alt": "Complete the following in English.\nTown name:\nDescription of town:\nWhy the town is famous:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.09,
+        0.05,
+        0.9,
+        0.234
+      ]
+    }
+  },
+  "ja-2022-hl-2b-1": {
+    "src": "/exam-figures/japanese/ja-2022-hl-2b-1.png",
+    "md5": "5f68eed6bcf7afbf9723e980fb0679dd",
+    "alt": "Write the meaning of any FIVE of the following Kanji in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.06,
+        0.06,
+        0.96,
+        0.47
+      ]
+    }
+  },
+  "ja-2022-hl-2b-2": {
+    "src": "/exam-figures/japanese/ja-2022-hl-2b-2.png",
+    "md5": "598f9d46dd64f788930fb5551a7f2602",
+    "alt": "Write the reading of any FIVE of following Kanji in Hiragana.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.06,
+        0.474,
+        0.96,
+        0.92
+      ]
+    }
+  },
+  "ja-2022-hl-2c-1": {
+    "src": "/exam-figures/japanese/ja-2022-hl-2c-1.png",
+    "md5": "1ac74b2549b819f5490156cf1c6acdc0",
+    "alt": "Write the following in the plain form as in the example. Answer any FIVE.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.06,
+        0.06,
+        0.96,
+        0.44
+      ]
+    }
+  },
+  "ja-2022-hl-2c-2": {
+    "src": "/exam-figures/japanese/ja-2022-hl-2c-2.png",
+    "md5": "02608d143907bf380b6b990060485f54",
+    "alt": "Write the correct form of each verb. Answer any FIVE.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.06,
+        0.45,
+        0.96,
+        0.88
+      ]
+    }
+  },
+  "ja-2022-hl-3c": {
+    "src": "/exam-figures/japanese/ja-2022-hl-3c.png",
+    "md5": "e40da3cad2a390c2a456a638c78dc08f",
+    "alt": "Circle the correct reading for ANY FIVE of the following Kanji and write the meaning in English as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.06,
+        0.06,
+        0.98,
+        0.417
+      ]
+    }
+  },
+  "ja-2022-hl-3d": {
+    "src": "/exam-figures/japanese/ja-2022-hl-3d.png",
+    "md5": "90fcef58354a0be8765d59ce2d4742d5",
+    "alt": "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.06,
+        0.42,
+        0.98,
+        0.91
+      ]
+    }
+  },
+  "ja-2022-hl-4": {
+    "src": "/exam-figures/japanese/ja-2022-hl-4.png",
+    "md5": "47c55012803789e88da2b52b55ebf271",
+    "alt": "Answer either Question 4 or Question 5.\nWrite about (a), (b) OR (c) in no less than 200 Japanese characters.\n(a) You have just come back from holidaying in Ireland. Write to your Japanese e‐pal about your holiday. Include answers to the following questions.\n(i) 何をしましたか。\n(ii) どうでしたか。\nOR\n(b) Write a thank you letter to your Japanese teacher. Include answers to the following questions.\n(i) 日本語のクラスはどうでしたか。\n(ii) リービング・サートの後で、何をしますか。\nOR\n(c) You have just moved house with your family. Write a diary entry. Include answers to the following questions.\n(i) どんな家（いえ）ですか。\n(ii) その家（いえ）はどうですか。",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 14,
+      "region": [
+        0.045,
+        0.015,
+        0.97,
+        0.92
+      ]
+    }
+  },
+  "ja-2022-hl-5": {
+    "src": "/exam-figures/japanese/ja-2022-hl-5.png",
+    "md5": "733f4675f06dc3441aafaac94acee4c3",
+    "alt": "Answer either Question 4 or Question 5.\nWrite about your locality for the Japan page of the school website.  Write in no less than 320 Japanese characters covering ANY 4 of the following headings.\n1. 地域（ちいき）の情 報（じょうほう） Eolas ginearálta faoi do cheantar /\nGeneral information about your locality\n2. 天気                 An aimsir / The weather\n3. 一番（いちばん）好きなところ An áit is fearr leat / Your favourite place\n4. 一番（いちばん）好きなレストラン An bhialann is fearr leat / Your favourite restaurant\n5. 人気のあるスポーツ Spóirt a bhfuil tóir orthu / Popular sports\n6． 有名（ゆうめい）な人 Duine cáiliúil / A famous person\n7. 季節（きせつ）のイベント Imeacht séasúrach / A seasonal event\n8.  わかい人に人気がある活動（かつどう） Imeachtaí a bhfuil tóir orthu i measc na n‐óg /\nPopular activities for young people",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 16,
+      "region": [
+        0.045,
+        0.015,
+        0.97,
+        0.92
+      ]
+    }
+  },
+  "ja-2022-hl-la-table": {
+    "src": "/exam-figures/japanese/ja-2022-hl-la-table.png",
+    "md5": "56d202cead6d5cffb574b1f4044463b2",
+    "alt": "Complete the table below.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 2,
+      "region": [
+        0.075,
+        0.17,
+        0.96,
+        0.79
+      ]
+    }
+  },
+  "ja-2022-hl-lb-1-v": {
+    "src": "/exam-figures/japanese/ja-2022-hl-lb-1-v.png",
+    "md5": "915ff39f676c6aaa329ed5ff18cf6264",
+    "alt": "The Taiko Centre phone number is:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 3,
+      "region": [
+        0.55,
+        0.56,
+        0.96,
+        0.621
+      ]
+    }
   }
 }
