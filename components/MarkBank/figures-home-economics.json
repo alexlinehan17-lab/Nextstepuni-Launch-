@@ -745,5 +745,56 @@
     "alt": "Original house heat-loss diagram. Complete house and arrows, roof25%, windows15%, walls35%, doors10%, floors15%, and Average heat loss from a house caption retained.",
     "attribution": "SEC Home Economics 2013 Ordinary Level examination paper, page 9 — © State Examinations Commission.",
     "sourceNote": "Original PDF crop, bounds [198, 179, 405, 384], rendered at 2.5×. SHA256 1a1721464fbe4aed24d436a4eb437b297e1a6c563359d08f5ab8065da4b9094a."
+  },
+  "home-economics-2014-hl-sa-q2": {
+    "src": "/exam-figures/home-economics/home-economics-2014-hl-sa-q2.png",
+    "md5": "1ea614bb23259bc39805d63e84e48434",
+    "alt": "Original lipid-digestion question table, complete Small Intestine row and blank Secretion, Enzyme and Product cells.",
+    "attribution": "SEC Home Economics 2014 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 373.3675537109375, 570.219970703125, 495.4676818847656], rendered at 2.5×. SHA256 a8bf94d8e349a9bd524f6dc5089441fbb1c206b630ea4d9b1c95d700cfd01884."
+  },
+  "home-economics-2014-hl-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2014-hl-sa-q6.png",
+    "md5": "9c3a9008836e7e5d578526813df416ed",
+    "alt": "Original cheese-classification question table with three blank classification/example pairs and the complete prompt.",
+    "attribution": "SEC Home Economics 2014 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 440.0874328613281, 570.219970703125, 620.147705078125], rendered at 2.5×. SHA256 89ca5ddda2c458b05d71bde30d69ef31e9a4bea9d94cc6c70a97dd6dae2b1057."
+  },
+  "home-economics-2014-hl-sa-q8": {
+    "src": "/exam-figures/home-economics/home-economics-2014-hl-sa-q8.png",
+    "md5": "112e752bc7529550ffd30562b10ead83",
+    "alt": "Original micro-organism/use question table: Lactic acid bacteria, Lactobacillus bulgaricus and Yeast; all blank use cells retained.",
+    "attribution": "SEC Home Economics 2014 Higher Level examination paper, page 4 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 570.219970703125, 212.26771545410156], rendered at 2.5×. SHA256 4c58f09f63df68a1e8f724b5b2fc420e7ebb14885d9151788f01e77ffd273359."
+  },
+  "home-economics-2014-hl-sb-q1-costs": {
+    "src": "/exam-figures/home-economics/home-economics-2014-hl-sb-q1-costs.png",
+    "md5": "c891d149ba56a946a9544049d2d29842",
+    "alt": "Original four-household, three-outlet food-cost table: every household description, euro value, percentage and daily calorie requirement retained; complete multiple-supermarket, low-cost-shop and local-shop headings.",
+    "attribution": "SEC Home Economics 2014 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [82.03999773661296, 166.55999755859375, 548.8000081380209, 465.22800903320314], rendered at 2.5×. SHA256 01aab8cf429f71aa691b543c06f5aad2414b6512171613778b6e51d4187deb36."
+  },
+  "home-economics-2014-hl-sc-q2-dress": {
+    "src": "/exam-figures/home-economics/home-economics-2014-hl-sc-q2-dress.png",
+    "md5": "fbfa9defa71fe282f92e39a102dc7761",
+    "alt": "Complete original examination photograph for the Imelda May dress-design question, including the striped dress, belt, arms and shoes; full original frame retained.",
+    "attribution": "SEC Home Economics 2014 Higher Level examination paper, page 10 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [247.3000030517578, 127.17999267578125, 363.79998779296875, 332.8999938964844], rendered at 2.5×. SHA256 5e805ab3dd85c8c171f2dafd05bc208a42a357f250d55106226bb7f0876a87d4."
+  },
+  "home-economics-2014-hl-sb-q1d-protein": {
+    "src": "/exam-figures/home-economics/home-economics-2014-hl-sb-q1d-protein.png",
+    "md5": "900fb6ec928f4213f95a48ad48a7e59e",
+    "alt": "Original complete protein-classification answer table, preserving merged Simple/Animal/Plant and Conjugated groups, subgroups, all examples and aligned food sources.",
+    "attribution": "SEC Home Economics 2014 Higher Level marking scheme, page 9 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [54.40177590506418, 417.6600036621094, 559.1903599330357, 645.8200022379557], rendered at 2.5×. SHA256 bd3c6ba5881e54ce85d0abda16dd842bbb35565193179073a17bf6ee59c7ec37.",
+    "solution": true
+  },
+  "home-economics-2014-hl-sc-q1aii-allowance": {
+    "src": "/exam-figures/home-economics/home-economics-2014-hl-sc-q1aii-allowance.png",
+    "md5": "b29100f38a6cebac1a2db069b0abe2d0",
+    "alt": "Original image-only marking note: Due to an inconsistency between the English and Irish versions of the examination paper, non-renewable sources of energy were also accepted.",
+    "attribution": "SEC Home Economics 2014 Higher Level marking scheme, page 19 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [354.6816101074219, 509.5430603027344, 589.8394775390625, 552.8961791992188], rendered at 2.5×. SHA256 3112608b04ed38e098c7ab9b35dd06bd0bd93e14c3bec11c1bd126811674c987.",
+    "solution": true
   }
 }

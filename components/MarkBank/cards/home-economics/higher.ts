@@ -36725,4 +36725,1865 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original examination page to review this task in context."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sa-q1", topicId: "home-economics-0-6", conceptId: "sa-q1",
+    section: "A", questionRef: "2014 HL Section A Q1",
+    questionText: "In relation to carbohydrates, explain each of the following properties: Caramelisation Crystallisation",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "property-1", kind: "point", verbatim: "Caramelisation Heat applied to sugar or sugar syrup; sugar melts and caramelises producing a darker caramel colour; a pleasant smell and a slightly bitter after taste; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "property-2", kind: "point", verbatim: "Crystallisation This occurs if more sugar is added than can be absorbed by a liquid; crystal particles are formed when the mixture cools; used in the confectionary and sweet industry; can occur in jam making if over 65% of jam is added; etc.", marks: null, contextNote: "The original crystallisation model literally says “if over 65% of jam is added”. That printed wording is retained; no substitute ingredient has been invented." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sa-q2", topicId: "home-economics-0-7", conceptId: "sa-q2",
+    section: "A", questionRef: "2014 HL Section A Q2",
+    questionText: "Complete the following table in relation to the digestion of lipids.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "cell-1", kind: "point", verbatim: "Secretion — Intestinal juice", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. For the Small Intestine row." },
+    { id: "cell-2", kind: "point", verbatim: "Enzyme — lipase", marks: null, contextNote: "For the Small Intestine row." },
+    { id: "cell-3", kind: "point", verbatim: "Product — Fatty acids and glycerol", marks: null, contextNote: "For the Small Intestine row." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2014-hl-sa-q2",
+          "src": "/exam-figures/home-economics/home-economics-2014-hl-sa-q2.png",
+          "srcHash": "1ea614bb23259bc39805d63e84e48434",
+          "alt": "Original lipid-digestion question table, complete Small Intestine row and blank Secretion, Enzyme and Product cells.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sa-q3", topicId: "home-economics-0-8", conceptId: "sa-q3",
+    section: "A", questionRef: "2014 HL Section A Q3",
+    questionText: "Differentiate between the following and give one food source of each. Haem iron Source Non-haem iron Source",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "iron-1", kind: "point", verbatim: "Haem iron Ferrous iron; soluble; easily absorbed; etc. Source Offal; meat; meat products; chicken; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "iron-2", kind: "point", verbatim: "Non-haem iron Ferric iron; cannot be absorbed by the body; must be changed into ferrous to be absorbed; etc. Source Eggs; wholegrain flour; dark green vegetables; fish; etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sa-q4", topicId: "home-economics-0-1", conceptId: "sa-q4",
+    section: "A", questionRef: "2014 HL Section A Q4",
+    questionText: "What is Basal Metabolic Rate (BMR)? Give two factors that determine a person’s basal metabolic rate.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "definition", kind: "point", verbatim: "The minimum amount of energy needed to sustain the body at complete rest; measured when the body is at complete rest, maintain body temperature and keep the internal organs working; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "factor-1", kind: "point", verbatim: "(i) Body weight;", marks: null, contextNote: "Choose ANY TWO factors across the complete source lists; no one-per-line quota." },
+    { id: "factor-2", kind: "point", verbatim: "(ii) Age; gender; activity; pregnancy; hormones; climate; etc.", marks: null, contextNote: "Choose ANY TWO factors across the complete source lists; no one-per-line quota." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sa-q5", topicId: "home-economics-0-11", conceptId: "sa-q5",
+    section: "A", questionRef: "2014 HL Section A Q5",
+    questionText: "Name and explain the primary function of one national agency involved in the Irish Food Industry. Name Function",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "agency-1", kind: "point", verbatim: "Teagasc – research on agri - food development and production; advice and training on farming issues e.g. Rural Environment Protection Scheme REPS; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Choose ONE named agency and explain its own primary function. Historical 2014 source wording retained." },
+    { id: "agency-2", kind: "point", verbatim: "BIM – develop Irish marine culture; promote seafood nationally and internationally; promote eating fish; etc.", marks: null, contextNote: "Choose ONE named agency and explain its own primary function. Historical 2014 source wording retained." },
+    { id: "agency-3", kind: "point", verbatim: "An Bord Bia - promote Irish food nationally and internationally; support service for small and large Irish food companies re marketing their products; etc.", marks: null, contextNote: "Choose ONE named agency and explain its own primary function. Historical 2014 source wording retained." },
+    { id: "agency-4", kind: "point", verbatim: "The Food Safety Authority of Ireland (FSAI) ensure that food produced and sold in Ireland meets high standards; etc.", marks: null, contextNote: "Choose ONE named agency and explain its own primary function. Historical 2014 source wording retained." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sa-q6", topicId: "home-economics-0-9", conceptId: "sa-q6",
+    section: "A", questionRef: "2014 HL Section A Q6",
+    questionText: "Classify cheese and give one example in each class.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "cheese-1", kind: "point", verbatim: "Hard — Cheddar, Parmesan, Cheshire, Emmenthal, etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Complete THREE classification/example pairs using the original blank table. All five source classes remain available; no requirement to use all five." },
+    { id: "cheese-2", kind: "point", verbatim: "Semi hard /semi soft — Stilton, Gouda, Halloumi, Edam, etc.", marks: null, contextNote: "Complete THREE classification/example pairs using the original blank table. All five source classes remain available; no requirement to use all five." },
+    { id: "cheese-3", kind: "point", verbatim: "Soft — Cottage, Brie, Mozzarella, Feta, Camembert, etc.", marks: null, contextNote: "Complete THREE classification/example pairs using the original blank table. All five source classes remain available; no requirement to use all five." },
+    { id: "cheese-4", kind: "point", verbatim: "Processed — Cheese spread, Smoked Cheese, Spreads, etc.", marks: null, contextNote: "Complete THREE classification/example pairs using the original blank table. All five source classes remain available; no requirement to use all five." },
+    { id: "cheese-5", kind: "point", verbatim: "Mould (internal/ external) — Cashel blue, Roquefort, Gorgonzola, etc.", marks: null, contextNote: "Complete THREE classification/example pairs using the original blank table. All five source classes remain available; no requirement to use all five." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2014-hl-sa-q6",
+          "src": "/exam-figures/home-economics/home-economics-2014-hl-sa-q6.png",
+          "srcHash": "9c3a9008836e7e5d578526813df416ed",
+          "alt": "Original cheese-classification question table with three blank classification/example pairs and the complete prompt.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper, page 3 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sa-q7", topicId: "home-economics-0-1", conceptId: "sa-q7",
+    section: "A", questionRef: "2014 HL Section A Q7",
+    questionText: "Explain the term functional food. Outline two health benefits of including functional foods in the diet.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "definition", kind: "point", verbatim: "Foods that have health benefits over and above their nutritive value; must be made from natural ingredients; when digested it should have a special function; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "benefit-1", kind: "point", verbatim: "(i) reduce cholesterol (plant sterols); reduce the risk of CHD;", marks: null, contextNote: "Choose ANY TWO benefits from the complete source lists." },
+    { id: "benefit-2", kind: "point", verbatim: "(ii) improved digestive system (probiotics); reduce cancer; heart disease (omega 3); reduce the risk of neural tube defects (Folic acid); etc.", marks: null, contextNote: "Choose ANY TWO benefits from the complete source lists." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sa-q8", topicId: "home-economics-0-4", conceptId: "sa-q8",
+    section: "A", questionRef: "2014 HL Section A Q8",
+    questionText: "Complete the table below in relation to the use of micro-organisms in food production.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "organism-1", kind: "point", verbatim: "Lactic acid bacteria — cheese, yoghurt", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "organism-2", kind: "point", verbatim: "Lactobacillus bulgaricus — yoghurt", marks: null },
+    { id: "organism-3", kind: "point", verbatim: "Yeast — bread, wine making, beer making", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2014-hl-sa-q8",
+          "src": "/exam-figures/home-economics/home-economics-2014-hl-sa-q8.png",
+          "srcHash": "112e752bc7529550ffd30562b10ead83",
+          "alt": "Original micro-organism/use question table: Lactic acid bacteria, Lactobacillus bulgaricus and Yeast; all blank use cells retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper, page 4 — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sa-q9", topicId: "home-economics-1-1", conceptId: "sa-q9",
+    section: "A", questionRef: "2014 HL Section A Q9",
+    questionText: "What is Pay Related Social Insurance (PRSI)? Name two PRSI benefits.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "definition", kind: "point", verbatim: "A compulsory deduction from income; which goes to the government to provide social welfare; run employment and training schemes; related to pay; employees and employers share the cost; different PRSI classes: etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "benefit-1", kind: "point", verbatim: "(i) job seekers benefit, maternity benefit, carers benefit,", marks: null, contextNote: "Choose ANY TWO benefits from the complete historical 2014 source lists." },
+    { id: "benefit-2", kind: "point", verbatim: "(ii) disability benefit; state pensions, optical, dental; etc.", marks: null, contextNote: "Choose ANY TWO benefits from the complete historical 2014 source lists." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sa-q10", topicId: "home-economics-3-3", conceptId: "sa-q10",
+    section: "A", questionRef: "2014 HL Section A Q10",
+    questionText: "Identify two features of current National Housing Policy in Ireland.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "feature-1", kind: "point", verbatim: "Sustainable communities supported by amenities and proper infrastructure", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Give TWO features. The original historical 2014 policy guidance is retained." },
+    { id: "feature-2", kind: "point", verbatim: "retention of listed buildings", marks: null },
+    { id: "feature-3", kind: "point", verbatim: "protection of natural environment", marks: null },
+    { id: "feature-4", kind: "point", verbatim: "provision of social and affordable housing through social housing schemes", marks: null },
+    { id: "feature-5", kind: "point", verbatim: "promotion of energy efficient homes - insulation grants", marks: null },
+    { id: "feature-6", kind: "point", verbatim: "BER ratings for houses for sale", marks: null },
+    { id: "feature-7", kind: "point", verbatim: "solar panel grants", marks: null },
+    { id: "feature-8", kind: "point", verbatim: "support of home ownership through mortgage interest relief", marks: null },
+    { id: "feature-9", kind: "point", verbatim: "home modification grant scheme", marks: null },
+    { id: "feature-10", kind: "point", verbatim: "rent allowance scheme (RAS)", marks: null },
+    { id: "feature-11", kind: "point", verbatim: "registration of rented accommodation PRTB", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sa-q11", topicId: "home-economics-1-4", conceptId: "sa-q11",
+    section: "A", questionRef: "2014 HL Section A Q11",
+    questionText: "Name a fire / flame retardant finish used on household furnishings. Outline two effects of this finish.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "finish", kind: "point", verbatim: "Proban; Pyrovatex; etc.", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred." },
+    { id: "effect-1", kind: "point", verbatim: "(i) reduces risk of fabric igniting; self extinguishing;", marks: null, contextNote: "Choose ANY TWO effects for the chosen finish; original source models retained." },
+    { id: "effect-2", kind: "point", verbatim: "(ii) may cause allergic reaction; may require special care during cleaning; etc.", marks: null, contextNote: "Choose ANY TWO effects for the chosen finish; original source models retained." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sa-q12", topicId: "home-economics-1-5", conceptId: "sa-q12",
+    section: "A", questionRef: "2014 HL Section A Q12",
+    questionText: "Explain how consumers / householders can contribute to sustainable waste management. Give two points.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "point-1", kind: "point", verbatim: "(i) reduce; reuse; recycle;", marks: null, contextNote: "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Give ANY TWO points from the complete source lists." },
+    { id: "point-2", kind: "point", verbatim: "(ii) compost; buy in bulk; buy recyclable products; buy concentrated detergents; etc.", marks: null, contextNote: "Give ANY TWO points from the complete source lists." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sb-q1a", topicId: "home-economics-0-1", conceptId: "sb-q1a",
+    section: "B", questionRef: "2014 HL Section B Q1(a)",
+    stem: "Shown below in the table is the cost (€) and percentage (%) of the weekly social welfare allowance required to purchase the foods necessary for healthy eating for four households using three different grocery store outlets.",
+    questionText: "Evaluate shopping in the three grocery outlets referred to in the chart above.",
+    tariffModel: {"kind":"fixed","notation":"3 required outlets × 4"}, totalMarks: 12,
+    rows: [
+    { id: "outlet-1", kind: "criterion", verbatim: "multiples were cheaper", marks: 4, contextNote: "Points may include some of the following: cost; convenience; time; brand loyalty; customer loyalty i.e. shop local; etc.  multiples were cheaper than local shops but more expensive than low cost – they tend to stock a wide selection of products and different brands at competitive prices; etc.", permittedMarks: [0,4] },
+    { id: "outlet-2", kind: "criterion", verbatim: "low cost shop was the least expensive", marks: 4, contextNote: "Points may include some of the following: cost; convenience; time; brand loyalty; customer loyalty i.e. shop local; etc.  low cost shop was the least expensive – these shops may not have as many store outlets so cost of travelling to these has to be taken into account, and in some cases tend to be outside towns so not accessible without transport; may not have the range of locally produced food products; etc.", permittedMarks: [0,4] },
+    { id: "outlet-3", kind: "criterion", verbatim: "local shop was the most expensive", marks: 4, contextNote: "Points may include some of the following: cost; convenience; time; brand loyalty; customer loyalty i.e. shop local; etc.  local shop was the most expensive – however for many families (households 3 and 4 in particular) this shop may be the most accessible in terms of access to transport; etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2014-hl-sb-q1-costs",
+          "src": "/exam-figures/home-economics/home-economics-2014-hl-sb-q1-costs.png",
+          "srcHash": "c891d149ba56a946a9544049d2d29842",
+          "alt": "Original four-household, three-outlet food-cost table: every household description, euro value, percentage and daily calorie requirement retained; complete multiple-supermarket, low-cost-shop and local-shop headings.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sb-q1b", topicId: "home-economics-0-1", conceptId: "sb-q1b",
+    section: "B", questionRef: "2014 HL Section B Q1(b)",
+    stem: "Shown below in the table is the cost (€) and percentage (%) of the weekly social welfare allowance required to purchase the foods necessary for healthy eating for four households using three different grocery store outlets.",
+    questionText: "Apart from family size, give three reasons for the variation in the percentage of income spent on food each week.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "reasons", marks: 12, contextNote: "Complete original source guidance: Age – young children require a lot of energy; elderly people’s energy requirements fall with decreased activity and decreased BMR; etc. Gender – in general women have a lower calorie requirement than men; etc. Activity – the more physically active the more energy is required; etc. Appetite – males tend to have greater; etc. Nutritional knowledge – convenience foods can be expensive; etc. Cooking skill / time – ready prepared meals are more expensive than purchasing raw ingredients; etc. Specialised diets - coeliac, diabetic, low fat - products tend to be expensive but necessary; etc. Functional foods are expensive but regularly purchased by health conscious individuals; etc. Lunch foods purchased for school going children; etc. ", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2014-hl-sb-q1-costs",
+          "src": "/exam-figures/home-economics/home-economics-2014-hl-sb-q1-costs.png",
+          "srcHash": "c891d149ba56a946a9544049d2d29842",
+          "alt": "Original four-household, three-outlet food-cost table: every household description, euro value, percentage and daily calorie requirement retained; complete multiple-supermarket, low-cost-shop and local-shop headings.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sb-q1c", topicId: "home-economics-0-5", conceptId: "sb-q1c",
+    section: "B", questionRef: "2014 HL Section B Q1(c)",
+    stem: "Shown below in the table is the cost (€) and percentage (%) of the weekly social welfare allowance required to purchase the foods necessary for healthy eating for four households using three different grocery store outlets.",
+    questionText: "Protein rich foods are a significant cost for many families. Recommend a variety of low-cost protein foods and state how each can be incorporated into a healthy eating plan.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "Protein rich foods", marks: 9, contextNote: "Complete original source guidance: Good value (economical) cuts of meat for family meals; meat/fish on special offer; pulse vegetables, hummus; myco proteins such as quorn, tofu, TVP; dairy products i.e. milk, cheese, yoghurt; use of eggs; nuts; quinoa, couscous; etc. Healthy eating plan – use above foods as main meals for family; salads for packed lunches (pulse vegetables, quinoa); meat substitutes or meat extender (tofu, TVP); snacks (cheese); low cost dishes e.g. Spaghetti Bolognese; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sb-q1d", topicId: "home-economics-0-5", conceptId: "sb-q1d",
+    section: "B", questionRef: "2014 HL Section B Q1(d)",
+    stem: "Shown below in the table is the cost (€) and percentage (%) of the weekly social welfare allowance required to purchase the foods necessary for healthy eating for four households using three different grocery store outlets.",
+    questionText: "Give a detailed account of protein and refer to: • classification (simple and conjugated) (24) • supplementary value / complementary role (8) • structure (primary, secondary and tertiary).",
+    tariffModel: {"kind":"fixed","notation":"Classification 3×4 + 6×2; complementary 2×4; three structures 5 each"}, totalMarks: 47,
+    rows: [
+    { id: "classification-groups", kind: "criterion", verbatim: "classification groups", marks: 12, contextNote: "Original table, read in its printed columns: Classification | Group | Sub-group | Examples | Food Source; Simple | Animal | Fibrous | Collagen Elastin myosin | Connective tissue (meat);  |  | Globular | myoglobin Lactalbumin Ovalbumin | meat Milk eggs;  | Plant | Glutelins | Glutelin Oryzenin | Wheat Rice;  |  | Prolamines | Zein Gliadin | Corn/maize wheat; Conjugated | Lipoproteins Phosphoprotein Nucleoproteins chromoproteins |  | Lecithin Casein Chromosomes chlorophyll | Egg yolk Milk Cell nuclei Green plants", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    { id: "classification-points", kind: "criterion", verbatim: "classification", marks: 12, contextNote: "Original table, read in its printed columns: Classification | Group | Sub-group | Examples | Food Source; Simple | Animal | Fibrous | Collagen Elastin myosin | Connective tissue (meat);  |  | Globular | myoglobin Lactalbumin Ovalbumin | meat Milk eggs;  | Plant | Glutelins | Glutelin Oryzenin | Wheat Rice;  |  | Prolamines | Zein Gliadin | Corn/maize wheat; Conjugated | Lipoproteins Phosphoprotein Nucleoproteins chromoproteins |  | Lecithin Casein Chromosomes chlorophyll | Egg yolk Milk Cell nuclei Green plants", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]},{"id":"point-4","verbatim":"Point 4","marks":2,"permittedMarks":[0,2]},{"id":"point-5","verbatim":"Point 5","marks":2,"permittedMarks":[0,2]},{"id":"point-6","verbatim":"Point 6","marks":2,"permittedMarks":[0,2]}] },
+    { id: "complementary", kind: "criterion", verbatim: "supplementary value / complementary role", marks: 8, contextNote: "(8) This is the ability of protein foods to make good the deficiency of another; when foods which are lacking in one or more of the essential amino acids are eaten together, a full complement of essential amino acids can be provided if the deficiency of one amino acid in one food is made up by the other; e.g. beans on toast provides a complete protein, but beans on their own would be deficient; other examples are hummus and pitta, dhal and chapatti, etc. Bread Methionine ↑ Lysine ↓ Beans Methionine ↓ Lysine ↑", permittedMarks: [0,4,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]}] },
+    { id: "structure-1", kind: "criterion", verbatim: "Primary Structure", marks: 5, contextNote: "Primary Structure This is the sequence or order of amino acids in the polypeptide chain; amino acids are linked together by peptide links; etc.", permittedMarks: [0,5] },
+    { id: "structure-2", kind: "criterion", verbatim: "Secondary Structure", marks: 5, contextNote: "Secondary Structure This is further linking of amino acids in the polypeptide chain to give protein a definite shape which is often in the form of a spiral; etc. Examples of the links/bonds are: Disulphide links – when 2 sulphurs join e.g. two cysteine amino acids (cysteine contains an SH group) link together; this can take place on one polypeptide chain or bringing together two polypeptide chains; etc. Hydrogen bonds – polypeptide chains can be linked by hydrogen bonds when the hydrogen in one chain bonds with the oxygen in another chain e.g. collagen; etc.", permittedMarks: [0,5] },
+    { id: "structure-3", kind: "criterion", verbatim: "Tertiary Structure", marks: 5, contextNote: "Tertiary Structure This refers to the three dimensional organisation of the polypeptide chain into a compressed unit due to the pattern of folding of the polypeptide chains; the protein chains cross link to form a fibrous, straight, coiled or zig- zag in shape or a globular structure; etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    figure: {
+          "candId": "home-economics-2014-hl-sb-q1d-protein",
+          "src": "/exam-figures/home-economics/home-economics-2014-hl-sb-q1d-protein.png",
+          "srcHash": "900fb6ec928f4213f95a48ad48a7e59e",
+          "alt": "Original complete protein-classification answer table, preserving merged Simple/Animal/Plant and Conjugated groups, subgroups, all examples and aligned food sources.",
+          "attribution": "SEC Home Economics 2014 Higher Level marking scheme, page 9 — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "Original PDF crop, bounds [54.40177590506418, 417.6600036621094, 559.1903599330357, 645.8200022379557], rendered at 2.5×. SHA256 bd3c6ba5881e54ce85d0abda16dd842bbb35565193179073a17bf6ee59c7ec37.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sb-q2a", topicId: "home-economics-0-9", conceptId: "sb-q2a",
+    section: "B", questionRef: "2014 HL Section B Q2(a)",
+    stem: "‘A thorough understanding of the factors which influence meat eating quality is imperative in order to produce a product consistently in line with consumer expectations.’ (Teagasc)",
+    questionText: "Discuss the nutritional significance of meat in the diet.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "nutritional significance", marks: 20, contextNote: "Complete original source guidance: Protein – HBV for growth of body cells, manufacture of hormones; myosin, actin and globulin in meat fibres; connective tissue contains collagen and elastin; etc. Fats – saturated fat for energy; content varies depending on the type, the cut and the method of cooking; pork and lamb higher fat content than chicken breast; etc. Carbohydrate – none therefore serve with a starchy food; liver may contain glycogen; etc. Minerals – haem-iron in red meat and offal to prevent anaemia; small amounts of potassium for muscles; zinc for enzyme activity; phosphorous for muscle contraction; sulphur; etc. Vitamins – source of B group vitamins niacin, thiamine B1, riboflavin B2, pyridoxine B6 all for the release of energy; cobalamin B12; small amounts of vitamins A and D in the liver; etc.", permittedMarks: [0,4,8,12,16,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sb-q2b-factors", topicId: "home-economics-0-3", conceptId: "sb-q2b-factors",
+    section: "B", questionRef: "2014 HL Section B Q2(b) — factors",
+    stem: "‘A thorough understanding of the factors which influence meat eating quality is imperative in order to produce a product consistently in line with consumer expectations.’ (Teagasc)",
+    questionText: "Describe the following: • the factors that cause toughness in meat",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 9, contextNote: "Complete original source guidance: Factors - age of the animal meat from older animals is tougher; etc. activity the more active parts e.g. legs are tougher; etc. treatment before slaughter – rest; etc. correct hanging time; incorrect cooking methods; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sb-q2b-methods", topicId: "home-economics-0-3", conceptId: "sb-q2b-methods",
+    section: "B", questionRef: "2014 HL Section B Q2(b) — methods",
+    stem: "‘A thorough understanding of the factors which influence meat eating quality is imperative in order to produce a product consistently in line with consumer expectations.’ (Teagasc)",
+    questionText: "Describe two methods of tenderising meat.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 3"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "methods", marks: 6, contextNote: "Complete original source guidance: Methods - before slaughter - animal should be rested to allow build-up of glycogen; etc. after slaughter –hanging allows time for the glycogen to change to lactic acid and helps to tenderise the meat; etc. mechanical breakdown e.g. beating; mincing; marinating; etc. long slow moist cooking e.g. stews and casseroles; etc. injection of enzymes; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sb-q2c", topicId: "home-economics-0-3", conceptId: "sb-q2c",
+    section: "B", questionRef: "2014 HL Section B Q2(c)",
+    stem: "‘A thorough understanding of the factors which influence meat eating quality is imperative in order to produce a product consistently in line with consumer expectations.’ (Teagasc)",
+    questionText: "Set out details of one process used to extend the shelf life of meat. In your answer refer to: • name of process • how the process is carried out to include the underlying principle involved • the effect of the process on meat.",
+    tariffModel: {"kind":"fixed","notation":"Name 2 + process/principle 3×3 + effect 4"}, totalMarks: 15,
+    rows: [
+    { id: "name", kind: "anyN", verbatim: "Name of process", marks: 2, contextNote: "Choose ONE process; all remaining details must refer to that same process.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Freezing","Refrigeration","Vacuum Packing / Modified Atmospheric Packaging","Curing/Salting","Canning","Dehydration"]} },
+    { id: "process", kind: "criterion", verbatim: "underlying principle", marks: 9, contextNote: "Process – Freezing, Refrigeration. Freezing: boned, trimmed; blast frozen –30°C; fast frozen; sealed in moisture proof package; liquid no longer available; etc. Effect: loss of extractives and soluble nutrients in drip; fat can go rancid if stored badly; freezer burn if exposed to air; retains nutrients, colour and texture; slight loss of vitamin B and minerals; etc. Refrigeration: meat generally covered; cool temperature of fridge 2°to 5°C retards growth of micro-organisms; etc. Effect: loss of extractives and soluble nutrients in drip; fat can go rancid if stored badly; freezer burn if exposed to air; retains nutrients well; slight loss of vitamin B and minerals; etc. Underlying principle freezing / refrigeration: reducing temperature – low temperatures 5°C or lower for refrigeration, - 25°C to - 18°C for freezing inhibit enzyme activity and microbial growth; microbes are inactivated; moisture is converted to ice, making it unavailable for microbial growth; fast freezing forms small ice crystals which helps maintain colour, flavour, texture and nutrients; wrapping prevents the re-entry of microbes; etc. Process - Vacuum Packing / Modified Atmospheric Packaging: meat boned, wrapped in strong polythene; all air removed; needs refrigeration; has a use by date; etc. Effect: must be treated as fresh once opened; nutritive value, flavour and texture unaffected; etc. Underlying principle: remove air – aerobic microbes need air to survive; sealing prevents the re-entry of microbes; gases i.e. carbon dioxide, oxygen and N2 (inert gas) may be used; etc. Process – Curing/Salting: cooled to 4°C, injected with brine, soaked in brine for 4 days; hung in cold room 4/5 days; smoked or green; etc. Effect: little loss of nutritive value; increase in sodium; change in colour and flavour; etc. Underlying principle: addition of chemicals, the addition of salt dehydrates microbial cells through osmosis and affects enzyme activity; etc. Process: Canning: food cooked; syrup, brine, sauce added; air removed, cans sealed and sterilised; etc. Effect: long shelf-life; loss of B vitamins especially thiamine; meat tenderised, cooked, sealed; etc. Underlying principle: high temperatures are used, 140°C destroy microbes and inactivates enzymes; etc. Process - Dehydration: packet meals, soup, etc. contain freeze dried meat; meat is prepared and freeze-dried; once rehydrated use quickly; etc. Effect: loss of Vitamin B; change in texture, meat can become tough; long shelf-life; etc. Underlying principle: moisture removed – microbes require moisture for metabolism and growth; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    { id: "effect", kind: "criterion", verbatim: "effect of the process on meat", marks: 4, contextNote: "Process – Freezing, Refrigeration. Freezing: boned, trimmed; blast frozen –30°C; fast frozen; sealed in moisture proof package; liquid no longer available; etc. Effect: loss of extractives and soluble nutrients in drip; fat can go rancid if stored badly; freezer burn if exposed to air; retains nutrients, colour and texture; slight loss of vitamin B and minerals; etc. Refrigeration: meat generally covered; cool temperature of fridge 2°to 5°C retards growth of micro-organisms; etc. Effect: loss of extractives and soluble nutrients in drip; fat can go rancid if stored badly; freezer burn if exposed to air; retains nutrients well; slight loss of vitamin B and minerals; etc. Underlying principle freezing / refrigeration: reducing temperature – low temperatures 5°C or lower for refrigeration, - 25°C to - 18°C for freezing inhibit enzyme activity and microbial growth; microbes are inactivated; moisture is converted to ice, making it unavailable for microbial growth; fast freezing forms small ice crystals which helps maintain colour, flavour, texture and nutrients; wrapping prevents the re-entry of microbes; etc. Process - Vacuum Packing / Modified Atmospheric Packaging: meat boned, wrapped in strong polythene; all air removed; needs refrigeration; has a use by date; etc. Effect: must be treated as fresh once opened; nutritive value, flavour and texture unaffected; etc. Underlying principle: remove air – aerobic microbes need air to survive; sealing prevents the re-entry of microbes; gases i.e. carbon dioxide, oxygen and N2 (inert gas) may be used; etc. Process – Curing/Salting: cooled to 4°C, injected with brine, soaked in brine for 4 days; hung in cold room 4/5 days; smoked or green; etc. Effect: little loss of nutritive value; increase in sodium; change in colour and flavour; etc. Underlying principle: addition of chemicals, the addition of salt dehydrates microbial cells through osmosis and affects enzyme activity; etc. Process: Canning: food cooked; syrup, brine, sauce added; air removed, cans sealed and sterilised; etc. Effect: long shelf-life; loss of B vitamins especially thiamine; meat tenderised, cooked, sealed; etc. Underlying principle: high temperatures are used, 140°C destroy microbes and inactivates enzymes; etc. Process - Dehydration: packet meals, soup, etc. contain freeze dried meat; meat is prepared and freeze-dried; once rehydrated use quickly; etc. Effect: loss of Vitamin B; change in texture, meat can become tough; long shelf-life; etc. Underlying principle: moisture removed – microbes require moisture for metabolism and growth; etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sb-q3a", topicId: "home-economics-0-4", conceptId: "sb-q3a",
+    section: "B", questionRef: "2014 HL Section B Q3(a)",
+    stem: "Outdoor dining is a great way to savour good food, company and the great outdoors.",
+    questionText: "Outline a HACCP system that should be followed when preparing and barbequing food. Refer to potential hazards and the corresponding control measures that should be implemented.",
+    tariffModel: {"kind":"fixed","notation":"Preparation 4 + cooking 4 + four others × 4"}, totalMarks: 24,
+    rows: [
+    { id: "preparation", kind: "criterion", verbatim: "preparation", marks: 4, contextNote: "Preparing: Potential hazards — Contamination – bacterial, chemical; Multiplication of bacteria; Cross contamination; Corresponding control measures — • foods within date and with quality assurance marks; • hands washed with antibacterial soap before and after handling food; handle food as little as possible; • colour coded boards to prevent cross contamination; keep all food covered; avoid cross-contamination by ensuring that raw food does not come into contact with cooked food; make sure frozen foods are fully thawed (preferably in the fridge on the bottom shelf; • use separate utensils for handling raw and cooked meat; keep perishable foods like salads, coleslaw and quiche in your fridge until needed; keep raw meat separate from cooked meat and ready-to-eat foods like salads; • maintain the fridge temperature below 5°C, this temperature will delay the growth of micro-organisms; • ensure that containers used for storage are absolutely clean; • Avoid having foods for too long in danger zone 6 - 63°C; etc.", permittedMarks: [0,4] },
+    { id: "cooking", kind: "criterion", verbatim: "cooking", marks: 4, contextNote: "Barbecuing/ Cooking: Potential hazards — Multiplication of bacteria; Cross contamination; Survival of bacteria;` Food poisoning; Corresponding control measures — • when cooking poultry always ensure that sufficiently high temperatures 72°C or higher are reached to prevent the risk of food poisoning; • make sure food has been cooked thoroughly, this is particularly important when cooking poultry, pork, minced and skewered meats, such as burgers, sausages and kebabs on the barbecue - while the outside may look cooked (and in some cases burnt), the inside can still be raw; make sure to turn food regularly; • when cooked place on a clean plate; for meats that need to be cooked all the way through be sure to cut into the centre of them to check that: steaks or whole meat joints of beef or lamb can be served 'rare' as long as they are cooked on the outside as any harmful bacteria will be on the outside only, and not in the centre; • if using a marinade with your barbeque, make sure any marinade used on raw meat is not then used as a sauce to coat vegetables or cooked meat as it will contain raw meat bacteria; bring marinade to the boil before serving it; • serve cooked food straight after cooking; avoid reheating; if reheating food, make sure it reaches temperatures above 100° C; cooked foods must be held above 63°C; etc.", permittedMarks: [0,4] },
+    { id: "other", kind: "criterion", verbatim: "4 others", marks: 16, contextNote: "Four ADDITIONAL points from either stage, linking potential hazards to corresponding controls. Complete original source: Preparing: Potential hazards — Contamination – bacterial, chemical; Multiplication of bacteria; Cross contamination; Corresponding control measures — • foods within date and with quality assurance marks; • hands washed with antibacterial soap before and after handling food; handle food as little as possible; • colour coded boards to prevent cross contamination; keep all food covered; avoid cross-contamination by ensuring that raw food does not come into contact with cooked food; make sure frozen foods are fully thawed (preferably in the fridge on the bottom shelf; • use separate utensils for handling raw and cooked meat; keep perishable foods like salads, coleslaw and quiche in your fridge until needed; keep raw meat separate from cooked meat and ready-to-eat foods like salads; • maintain the fridge temperature below 5°C, this temperature will delay the growth of micro-organisms; • ensure that containers used for storage are absolutely clean; • Avoid having foods for too long in danger zone 6 - 63°C; etc. Barbecuing/ Cooking: Potential hazards — Multiplication of bacteria; Cross contamination; Survival of bacteria;` Food poisoning; Corresponding control measures — • when cooking poultry always ensure that sufficiently high temperatures 72°C or higher are reached to prevent the risk of food poisoning; • make sure food has been cooked thoroughly, this is particularly important when cooking poultry, pork, minced and skewered meats, such as burgers, sausages and kebabs on the barbecue - while the outside may look cooked (and in some cases burnt), the inside can still be raw; make sure to turn food regularly; • when cooked place on a clean plate; for meats that need to be cooked all the way through be sure to cut into the centre of them to check that: steaks or whole meat joints of beef or lamb can be served 'rare' as long as they are cooked on the outside as any harmful bacteria will be on the outside only, and not in the centre; • if using a marinade with your barbeque, make sure any marinade used on raw meat is not then used as a sauce to coat vegetables or cooked meat as it will contain raw meat bacteria; bring marinade to the boil before serving it; • serve cooked food straight after cooking; avoid reheating; if reheating food, make sure it reaches temperatures above 100° C; cooked foods must be held above 63°C; etc.", permittedMarks: [0,4,8,12,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sb-q3b", topicId: "home-economics-0-3", conceptId: "sb-q3b",
+    section: "B", questionRef: "2014 HL Section B Q3(b)",
+    stem: "Outdoor dining is a great way to savour good food, company and the great outdoors.",
+    questionText: "Assess grilling / barbequing as a method of cooking. Refer to: • cooking / underlying principle • guidelines to follow in order to ensure palatability of food • effect on the nutritive value of food.",
+    tariffModel: {"kind":"fixed","notation":"Principle 3×3 + guidelines 3×3 + effect 2"}, totalMarks: 20,
+    rows: [
+    { id: "principle", kind: "criterion", verbatim: "cooking / underlying principle", marks: 9, contextNote: "Cooking / underlying principle - fast method of cooking food by radiant heat from an electric element or gas grill / barbecuing, involves cooking food over radiant heat e.g. burning charcoal, heat from the grill seals the surface of the food; food is cooked on a solid plate which in turn cooks the food by conduction; both methods retain nutrients, moisture and flavour; food needs to be turned throughout the process so that it cooks evenly; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    { id: "guidelines", kind: "criterion", verbatim: "guidelines", marks: 9, contextNote: "Guidelines - pre-heat grill; seal surface of the food with high heat to prevent nutrient and moisture loss; use tongs to turn food; foods should not be thicker than 25mm to ensure the food cooks right through; don’t salt food before grilling, it inhibits surface browning; oil grill grid to prevent sticking; food needs to be turned throughout the process so that it cooks evenly; cooking oil brushed on the surface of the food prevents dryness; marinating food in advance will add flavour and retain moisture; accurate timing is important as overcooking can occur easily; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    { id: "effect", kind: "criterion", verbatim: "effect", marks: 2, contextNote: "Effect - protein denatures which improves the texture; reduces fat content as fats melt; loss of vitamin B and C; maillard reaction browning through heating proteins and carbohydrates; shrinkage due to collagen which is converted into gelatine which results in loss of meat juices and loss of nutrients; etc.", permittedMarks: [0,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sb-q3c", topicId: "home-economics-0-4", conceptId: "sb-q3c",
+    section: "B", questionRef: "2014 HL Section B Q3(c)",
+    stem: "Outdoor dining is a great way to savour good food, company and the great outdoors.",
+    questionText: "Differentiate between toxic food poisoning and infectious food poisoning.",
+    tariffModel: {"kind":"fixed","notation":"2 required types × 3"}, totalMarks: 6,
+    rows: [
+    { id: "type-1", kind: "criterion", verbatim: "Toxic food poisoning", marks: 3, contextNote: "Toxic food poisoning - ingesting food that is contaminated by a toxin produced by a bacterial cell; some bacteria produce exotoxins as they grow in food both before and after it is eaten; exotoxins are hard to destroy; boiling for 30 mins is required; symptoms develop quickly- often within 2 hours; examples: staphylococcus aureus, clostridium botulinum, clostridium preferingens; etc.", permittedMarks: [0,3] },
+    { id: "type-2", kind: "criterion", verbatim: "Infectious food poisoning", marks: 3, contextNote: "Infectious food poisoning - caused by consumption of food containing large numbers of pathogenic bacteria; these bacteria make endotoxins which are released when they die; endotoxins are easy to destroy; proper cooking and reheating will destroy both toxins and bacteria; if not destroyed symptoms will appear after approx. 12 hours; e.g. salmonella, E coli, campylobacter and listeria cause infectious food poisoning; etc.", permittedMarks: [0,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sb-q4a", topicId: "home-economics-1-3", conceptId: "sb-q4a",
+    section: "B", questionRef: "2014 HL Section B Q4(a)",
+    stem: "Kitchen appliances play a prominent role in enhancing the performance of modern kitchens.",
+    questionText: "Discuss the following factors that should be considered when selecting kitchen appliances for a family home: • sourcing consumer information • design • value for money.",
+    tariffModel: {"kind":"fixed","notation":"3 required factors × 4"}, totalMarks: 12,
+    rows: [
+    { id: "factor-1", kind: "criterion", verbatim: "Sourcing consumer information", marks: 4, contextNote: "Sourcing consumer information – sales people; consumer magazines e.g. Consumer Choice; web sites; advertisements; newspaper and magazine articles; manufacturers leaflets and brochures; TV programmes; word of mouth; etc.", permittedMarks: [0,4] },
+    { id: "factor-2", kind: "criterion", verbatim: "Design", marks: 4, contextNote: "Design – easy to operate; sturdy, durable; colour and shape; safety; ease of cleaning; space available; etc.", permittedMarks: [0,4] },
+    { id: "factor-3", kind: "criterion", verbatim: "Value for money", marks: 4, contextNote: "Value for money – cost i.e. initial, running and servicing; reliability/brand name; guarantee/ after sales service; etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sb-q4b", topicId: "home-economics-1-3", conceptId: "sb-q4b",
+    section: "B", questionRef: "2014 HL Section B Q4(b)",
+    stem: "Kitchen appliances play a prominent role in enhancing the performance of modern kitchens.",
+    questionText: "Set out details of a study you have undertaken on microwave ovens. Refer to each of the following: • construction and working principle • guidelines for use.",
+    tariffModel: {"kind":"fixed","notation":"Construction 4×2 + working principle 3×4 + use 3×2"}, totalMarks: 26,
+    rows: [
+    { id: "construction", kind: "criterion", verbatim: "construction", marks: 8, contextNote: "metal lined enamel steel box; glass door encasing perforated metal sheet; safety lock and safety seal; internal light; turntable; controls; transformer increases domestic voltage; magnetron changes electrical energy to electromagnetic energy; wave guide guides waves into the cabinet; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]},{"id":"point-4","verbatim":"Point 4","marks":2,"permittedMarks":[0,2]}] },
+    { id: "working", kind: "criterion", verbatim: "working principle", marks: 12, contextNote: "transformer increases domestic voltage; magnetron changes electrical energy to electromagnetic energy; wave-guide, guides the microwaves into cabinet; microwaves can be reflected, transmitted and absorbed; microwaves penetrate food to a depth of 2-4cm; microwaves cause food molecules to vibrate rapidly, which causes friction and produces high heat; heat spreads to the centre of food through conduction; any water in food is driven to the surface and prevents browning of food; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    { id: "use", kind: "criterion", verbatim: "guidelines for use", marks: 6, contextNote: "time accurately; cover food to prevent spatters; turn/stir food to cook evenly; pierce skin of sausages, potatoes; arrange food thickest part outwards; use recommended containers only; allow standing time; suitable cooking processes – defrosting; reheating; cooking; melting; heating; etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sb-q4c", topicId: "home-economics-1-5", conceptId: "sb-q4c",
+    section: "B", questionRef: "2014 HL Section B Q4(c)",
+    stem: "Kitchen appliances play a prominent role in enhancing the performance of modern kitchens.",
+    questionText: "Explain how the consumer can protect the environment when choosing, using and disposing of electrical appliances.",
+    tariffModel: {"kind":"fixed","notation":"3 required stages × 4"}, totalMarks: 12,
+    rows: [
+    { id: "stage-1", kind: "criterion", verbatim: "Choosing", marks: 4, contextNote: "Choosing – high rating on energy efficient label; choose correct size for needs; etc.", permittedMarks: [0,4] },
+    { id: "stage-2", kind: "criterion", verbatim: "Using", marks: 4, contextNote: "Using – economy / short cycles in washing machine / dishwashers; use full loads; use low temperature washes; standby mode switched off; etc.", permittedMarks: [0,4] },
+    { id: "stage-3", kind: "criterion", verbatim: "Disposing", marks: 4, contextNote: "Disposing – WEEE directive - retailers of electrical and electronic equipment have obligations in relation to waste from electrical and electronic equipment by providing free in-store take back for customers buying new electrical equipment; bring to waste disposal /recycling centre; care when disposing of old fridges (refrigerant gas); etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sb-q5a", topicId: "home-economics-2-0", conceptId: "sb-q5a",
+    section: "B", questionRef: "2014 HL Section B Q5(a)",
+    stem: "One of the most striking features of the family in Ireland during the last decades of the twentieth century is the rapid rate at which it has changed.",
+    questionText: "Outline the historical development of the family in Ireland from the beginning of the twentieth century to the present day.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 4"}, totalMarks: 16,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "historical development", marks: 16, contextNote: "Complete original source guidance: Pre-industrialisation (1900-1960) – extended family most common; large families; agriculture provided most of employment; arranged marriages common; child mortality rates high; segregated gender roles; authoritarian discipline; patriarchal control; religion had a strong influence; rural electrification in 1940’s reduced mothers workload; 1940’s farming became less labour intensive; 1950’s improvement in general standard of living; etc. Post-industrialisation (1960- 1990) – decline in rural extended family, move towards more nuclear families; more mobile; couples married younger; both parents could work outside the home; couples married for love rather than economic reasons; wages increased, better standard of living; children nurtured and educated; 1960’s saw introduction of 2nd level education for all; family size decreased; etc. The modern family (1990- present day) – family members abroad to seek work; communication facebook and skype; further reduction in family size; dual-income families increased; more egalitarian type families, greater democracy within families; higher standard of living; increased demand for childcare facilities; role overload; role conflict as parents try to manage elderly parents as well as their own families; change in family structure due to introduction of divorce so more single parent families; blended families; state supports for families; recession –stay at home fathers; both parents unemployed even those highly skilled/qualified; civil partnerships; same gender partners; etc.", permittedMarks: [0,4,8,12,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sb-q5bi", topicId: "home-economics-2-0", conceptId: "sb-q5bi",
+    section: "B", questionRef: "2014 HL Section B Q5(b)(i)",
+    stem: "One of the most striking features of the family in Ireland during the last decades of the twentieth century is the rapid rate at which it has changed.",
+    questionText: "Give an account of each of the following functions of the family: • economic function • socialisation function • educational function.",
+    tariffModel: {"kind":"fixed","notation":"3 required functions × 5"}, totalMarks: 15,
+    rows: [
+    { id: "function-1", kind: "criterion", verbatim: "Economic", marks: 5, contextNote: "Economic - in some societies large families work together as an economic unit; in modern society one/both parents may work and children are economically supported; working family members pay taxes and spend money, contributing to the country’s economy; etc.", permittedMarks: [0,5] },
+    { id: "function-2", kind: "criterion", verbatim: "Socialisation", marks: 5, contextNote: "Socialisation - children learn how to behave in an acceptable way through imitation and observation; children need consistent discipline to help them develop a set of values; etc.", permittedMarks: [0,5] },
+    { id: "function-3", kind: "criterion", verbatim: "Educational", marks: 5, contextNote: "Educational - act as the primary educator; to pass on beliefs and customs through informal learning; to provide praise, encouragement and a stimulating environment; to support work of school, helping children to reach their full potential; etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sb-q5bii", topicId: "home-economics-2-0", conceptId: "sb-q5bii",
+    section: "B", questionRef: "2014 HL Section B Q5(b)(ii)",
+    stem: "One of the most striking features of the family in Ireland during the last decades of the twentieth century is the rapid rate at which it has changed. Give an account of each of the following functions of the family: • economic function • socialisation function • educational function.",
+    questionText: "Explain how state interventions assist the family in carrying out these functions.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 5"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "different state interventions", marks: 10, contextNote: "Complete original source guidance: (reference to 2 different state interventions) State Intervention: Allowances – e.g. job seekers’ allowance, carers’ allowance, child benefit, old age pension; state supported services – e.g. medical cards, homes for the elderly, free travel and benefits for the elderly; etc. Socialisation - pre-schools, primary and secondary schools continue the process of socialisation through the hidden curriculum; if the family fails, the state deals with non-conforming individuals through the judicial system; etc. Education - early childhood care and education scheme ECCE; formal schooling begins at around five years of age; help for those experiencing learning difficulties, e.g. resource hours, special classes, SNA’s; etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sb-q5c", topicId: "home-economics-2-0", conceptId: "sb-q5c",
+    section: "B", questionRef: "2014 HL Section B Q5(c)",
+    stem: "One of the most striking features of the family in Ireland during the last decades of the twentieth century is the rapid rate at which it has changed.",
+    questionText: "Assess the role of grandparents in modern family life.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "role of grandparents", marks: 9, contextNote: "Complete original source guidance: (9) Grandparents may provide support for other members of the family through child-minding; grandparents often indirectly teach young people respect and can be a great emotional support for children or grandchildren; provide financial assistance; more relaxed with grandchildren and can be positive role models for their grandchildren; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q1ai", topicId: "home-economics-3-6", conceptId: "sc-q1ai",
+    section: "C", questionRef: "2014 HL Section C E1 Q1(a)(i)",
+    stem: "The design and construction of modern houses is undergoing radical change with particular emphasis on sustainable energy.",
+    questionText: "Identify three areas of the house that should be insulated in order to reduce heat loss. Recommend a method of insulation for each area and explain the underlying principle of each method.",
+    tariffModel: {"kind":"fixed","notation":"3 areas × (area 2 + method 2 + principle 4)"}, totalMarks: 24,
+    rows: [
+    { id: "area-1", kind: "anyN", verbatim: "Area", marks: 2, contextNote: "Choose THREE different areas in total.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Attic/roof","Wall insulation","Floor insulation","External insulation","Window/door insulation","Hot water cylinder/pipes"]} },
+    { id: "method-1", kind: "criterion", verbatim: "method of insulation", marks: 2, contextNote: "One method suitable for the SAME area. Full original source: Attic/roof: fibre blanket insulation; loose fill insulation; foam insulation; insulate water tank and pipes to prevent freezing; etc. Wall insulation: cavity walls - air, polystyrene sheets, polystyrene foam; solid walls - blanket insulation (fibreglass or rockwool) inserted into frame on internal wall and covered with plasterboard; insulation sheets attached to walls and covered with plasterboard; etc. Floor insulation: fill gaps in and around floor boards; fitted carpets with thick underlay; etc. External insulation: polystyrene with reinforced mesh, acrylic paint finish; etc. Window/door insulation: well-fitting windows and doors; double/triple glazing; draught proofing; heavy lined curtains; etc. Hot water cylinder/pipes: permanently insulated cylinder; lagging jacket; split foam sleeves on pipes; etc. Underlying principle Some materials have very good insulating properties and therefore prevent heat from escaping; certain materials have no insulation properties, they are good conductors so heat escapes; good insulators/poor conductors (air, polystyrene, fibreglass) are used to prevent/reduce the amount of heat loss; etc.", permittedMarks: [0,2] },
+    { id: "principle-1", kind: "criterion", verbatim: "underlying principle", marks: 4, contextNote: "Explain the principle of the SAME method. Full original source: Attic/roof: fibre blanket insulation; loose fill insulation; foam insulation; insulate water tank and pipes to prevent freezing; etc. Wall insulation: cavity walls - air, polystyrene sheets, polystyrene foam; solid walls - blanket insulation (fibreglass or rockwool) inserted into frame on internal wall and covered with plasterboard; insulation sheets attached to walls and covered with plasterboard; etc. Floor insulation: fill gaps in and around floor boards; fitted carpets with thick underlay; etc. External insulation: polystyrene with reinforced mesh, acrylic paint finish; etc. Window/door insulation: well-fitting windows and doors; double/triple glazing; draught proofing; heavy lined curtains; etc. Hot water cylinder/pipes: permanently insulated cylinder; lagging jacket; split foam sleeves on pipes; etc. Underlying principle Some materials have very good insulating properties and therefore prevent heat from escaping; certain materials have no insulation properties, they are good conductors so heat escapes; good insulators/poor conductors (air, polystyrene, fibreglass) are used to prevent/reduce the amount of heat loss; etc.", permittedMarks: [0,4] },
+    { id: "area-2", kind: "anyN", verbatim: "Area", marks: 2, contextNote: "Choose THREE different areas in total.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Attic/roof","Wall insulation","Floor insulation","External insulation","Window/door insulation","Hot water cylinder/pipes"]} },
+    { id: "method-2", kind: "criterion", verbatim: "method of insulation", marks: 2, contextNote: "One method suitable for the SAME area. Full original source: Attic/roof: fibre blanket insulation; loose fill insulation; foam insulation; insulate water tank and pipes to prevent freezing; etc. Wall insulation: cavity walls - air, polystyrene sheets, polystyrene foam; solid walls - blanket insulation (fibreglass or rockwool) inserted into frame on internal wall and covered with plasterboard; insulation sheets attached to walls and covered with plasterboard; etc. Floor insulation: fill gaps in and around floor boards; fitted carpets with thick underlay; etc. External insulation: polystyrene with reinforced mesh, acrylic paint finish; etc. Window/door insulation: well-fitting windows and doors; double/triple glazing; draught proofing; heavy lined curtains; etc. Hot water cylinder/pipes: permanently insulated cylinder; lagging jacket; split foam sleeves on pipes; etc. Underlying principle Some materials have very good insulating properties and therefore prevent heat from escaping; certain materials have no insulation properties, they are good conductors so heat escapes; good insulators/poor conductors (air, polystyrene, fibreglass) are used to prevent/reduce the amount of heat loss; etc.", permittedMarks: [0,2] },
+    { id: "principle-2", kind: "criterion", verbatim: "underlying principle", marks: 4, contextNote: "Explain the principle of the SAME method. Full original source: Attic/roof: fibre blanket insulation; loose fill insulation; foam insulation; insulate water tank and pipes to prevent freezing; etc. Wall insulation: cavity walls - air, polystyrene sheets, polystyrene foam; solid walls - blanket insulation (fibreglass or rockwool) inserted into frame on internal wall and covered with plasterboard; insulation sheets attached to walls and covered with plasterboard; etc. Floor insulation: fill gaps in and around floor boards; fitted carpets with thick underlay; etc. External insulation: polystyrene with reinforced mesh, acrylic paint finish; etc. Window/door insulation: well-fitting windows and doors; double/triple glazing; draught proofing; heavy lined curtains; etc. Hot water cylinder/pipes: permanently insulated cylinder; lagging jacket; split foam sleeves on pipes; etc. Underlying principle Some materials have very good insulating properties and therefore prevent heat from escaping; certain materials have no insulation properties, they are good conductors so heat escapes; good insulators/poor conductors (air, polystyrene, fibreglass) are used to prevent/reduce the amount of heat loss; etc.", permittedMarks: [0,4] },
+    { id: "area-3", kind: "anyN", verbatim: "Area", marks: 2, contextNote: "Choose THREE different areas in total.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Attic/roof","Wall insulation","Floor insulation","External insulation","Window/door insulation","Hot water cylinder/pipes"]} },
+    { id: "method-3", kind: "criterion", verbatim: "method of insulation", marks: 2, contextNote: "One method suitable for the SAME area. Full original source: Attic/roof: fibre blanket insulation; loose fill insulation; foam insulation; insulate water tank and pipes to prevent freezing; etc. Wall insulation: cavity walls - air, polystyrene sheets, polystyrene foam; solid walls - blanket insulation (fibreglass or rockwool) inserted into frame on internal wall and covered with plasterboard; insulation sheets attached to walls and covered with plasterboard; etc. Floor insulation: fill gaps in and around floor boards; fitted carpets with thick underlay; etc. External insulation: polystyrene with reinforced mesh, acrylic paint finish; etc. Window/door insulation: well-fitting windows and doors; double/triple glazing; draught proofing; heavy lined curtains; etc. Hot water cylinder/pipes: permanently insulated cylinder; lagging jacket; split foam sleeves on pipes; etc. Underlying principle Some materials have very good insulating properties and therefore prevent heat from escaping; certain materials have no insulation properties, they are good conductors so heat escapes; good insulators/poor conductors (air, polystyrene, fibreglass) are used to prevent/reduce the amount of heat loss; etc.", permittedMarks: [0,2] },
+    { id: "principle-3", kind: "criterion", verbatim: "underlying principle", marks: 4, contextNote: "Explain the principle of the SAME method. Full original source: Attic/roof: fibre blanket insulation; loose fill insulation; foam insulation; insulate water tank and pipes to prevent freezing; etc. Wall insulation: cavity walls - air, polystyrene sheets, polystyrene foam; solid walls - blanket insulation (fibreglass or rockwool) inserted into frame on internal wall and covered with plasterboard; insulation sheets attached to walls and covered with plasterboard; etc. Floor insulation: fill gaps in and around floor boards; fitted carpets with thick underlay; etc. External insulation: polystyrene with reinforced mesh, acrylic paint finish; etc. Window/door insulation: well-fitting windows and doors; double/triple glazing; draught proofing; heavy lined curtains; etc. Hot water cylinder/pipes: permanently insulated cylinder; lagging jacket; split foam sleeves on pipes; etc. Underlying principle Some materials have very good insulating properties and therefore prevent heat from escaping; certain materials have no insulation properties, they are good conductors so heat escapes; good insulators/poor conductors (air, polystyrene, fibreglass) are used to prevent/reduce the amount of heat loss; etc.", permittedMarks: [0,4] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2014-hl-sc-q1ai-area-1","label":"Area 1","marks":8,"rowIds":["area-1","method-1","principle-1"]},{"sourceCardId":"he-2014-hl-sc-q1ai-area-2","label":"Area 2","marks":8,"rowIds":["area-2","method-2","principle-2"]},{"sourceCardId":"he-2014-hl-sc-q1ai-area-3","label":"Area 3","marks":8,"rowIds":["area-3","method-3","principle-3"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q1aii", topicId: "home-economics-3-6", conceptId: "sc-q1aii",
+    section: "C", questionRef: "2014 HL Section C E1 Q1(a)(ii)",
+    stem: "The design and construction of modern houses is undergoing radical change with particular emphasis on sustainable energy.",
+    questionText: "Name and set out details of one renewable energy source you have studied. Include reference to: • source • advantages / disadvantages • sustainability.",
+    tariffModel: {"kind":"fixed","notation":"Name 2 + source 3 + evaluation 2×3 + sustainability 3"}, totalMarks: 14,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Solar power", marks: 2, contextNote: "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied." },
+    { id: "source", kind: "criterion", verbatim: "source", marks: 3, contextNote: "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. Use the SAME energy source. Original model: Source - Solar power– sun. Advantages/disadvantages - can supply 50-60% of hot water requirements in the home; reduced heating costs; etc. Sustainability – could supply a large proportion of the world’s energy requirements for an infinite period; etc.", permittedMarks: [0,3] },
+    { id: "evaluation", kind: "criterion", verbatim: "advantages / disadvantages", marks: 6, contextNote: "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. Two points about the SAME source. Original model: Source - Solar power– sun. Advantages/disadvantages - can supply 50-60% of hot water requirements in the home; reduced heating costs; etc. Sustainability – could supply a large proportion of the world’s energy requirements for an infinite period; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    { id: "sustainability", kind: "criterion", verbatim: "sustainability", marks: 3, contextNote: "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. One point about the SAME source. Original model: Source - Solar power– sun. Advantages/disadvantages - can supply 50-60% of hot water requirements in the home; reduced heating costs; etc. Sustainability – could supply a large proportion of the world’s energy requirements for an infinite period; etc.", permittedMarks: [0,3] },
+    ],
+    answerVariants: [
+          {
+                "id": "source-1",
+                "label": "Solar power",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Solar power",
+                            "marks": 2,
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied."
+                      },
+                      {
+                            "id": "source",
+                            "kind": "criterion",
+                            "verbatim": "source",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. Use the SAME energy source. Original model: Source - Solar power– sun. Advantages/disadvantages - can supply 50-60% of hot water requirements in the home; reduced heating costs; etc. Sustainability – could supply a large proportion of the world’s energy requirements for an infinite period; etc."
+                      },
+                      {
+                            "id": "evaluation",
+                            "kind": "criterion",
+                            "verbatim": "advantages / disadvantages",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. Two points about the SAME source. Original model: Source - Solar power– sun. Advantages/disadvantages - can supply 50-60% of hot water requirements in the home; reduced heating costs; etc. Sustainability – could supply a large proportion of the world’s energy requirements for an infinite period; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "sustainability",
+                            "kind": "criterion",
+                            "verbatim": "sustainability",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. One point about the SAME source. Original model: Source - Solar power– sun. Advantages/disadvantages - can supply 50-60% of hot water requirements in the home; reduced heating costs; etc. Sustainability – could supply a large proportion of the world’s energy requirements for an infinite period; etc."
+                      }
+                ]
+          },
+          {
+                "id": "source-2",
+                "label": "Hydropower",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Hydropower",
+                            "marks": 2,
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied."
+                      },
+                      {
+                            "id": "source",
+                            "kind": "criterion",
+                            "verbatim": "source",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. Use the SAME energy source. Original model: Source - Hydropower – water; tidal power; fast flowing rivers. Advantages/disadvantages – very viable to operate in Ireland but the initial costs can be very expensive; the technology is not yet available at a price that would make it commercially viable; running costs once the plant is set up are relatively low; etc. Sustainability – good supply; Ireland surrounded by water; etc."
+                      },
+                      {
+                            "id": "evaluation",
+                            "kind": "criterion",
+                            "verbatim": "advantages / disadvantages",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. Two points about the SAME source. Original model: Source - Hydropower – water; tidal power; fast flowing rivers. Advantages/disadvantages – very viable to operate in Ireland but the initial costs can be very expensive; the technology is not yet available at a price that would make it commercially viable; running costs once the plant is set up are relatively low; etc. Sustainability – good supply; Ireland surrounded by water; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "sustainability",
+                            "kind": "criterion",
+                            "verbatim": "sustainability",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. One point about the SAME source. Original model: Source - Hydropower – water; tidal power; fast flowing rivers. Advantages/disadvantages – very viable to operate in Ireland but the initial costs can be very expensive; the technology is not yet available at a price that would make it commercially viable; running costs once the plant is set up are relatively low; etc. Sustainability – good supply; Ireland surrounded by water; etc."
+                      }
+                ]
+          },
+          {
+                "id": "source-3",
+                "label": "Wind power",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Wind power",
+                            "marks": 2,
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied."
+                      },
+                      {
+                            "id": "source",
+                            "kind": "criterion",
+                            "verbatim": "source",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. Use the SAME energy source. Original model: Source - Wind power – energy captured from the wind. Advantages/disadvantages – noisy; spoil natural landscape; lots of opposition to it from people living in the locality; expensive to set up; low running costs; etc. Sustainability – Ireland is ideally located to capitalise on wind energy, winds from Atlantic coast are very strong; etc."
+                      },
+                      {
+                            "id": "evaluation",
+                            "kind": "criterion",
+                            "verbatim": "advantages / disadvantages",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. Two points about the SAME source. Original model: Source - Wind power – energy captured from the wind. Advantages/disadvantages – noisy; spoil natural landscape; lots of opposition to it from people living in the locality; expensive to set up; low running costs; etc. Sustainability – Ireland is ideally located to capitalise on wind energy, winds from Atlantic coast are very strong; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "sustainability",
+                            "kind": "criterion",
+                            "verbatim": "sustainability",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. One point about the SAME source. Original model: Source - Wind power – energy captured from the wind. Advantages/disadvantages – noisy; spoil natural landscape; lots of opposition to it from people living in the locality; expensive to set up; low running costs; etc. Sustainability – Ireland is ideally located to capitalise on wind energy, winds from Atlantic coast are very strong; etc."
+                      }
+                ]
+          },
+          {
+                "id": "source-4",
+                "label": "Bio energy",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Bio energy",
+                            "marks": 2,
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied."
+                      },
+                      {
+                            "id": "source",
+                            "kind": "criterion",
+                            "verbatim": "source",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. Use the SAME energy source. Original model: Source - Bio energy – biomass- organic material e.g. leaves, stems, wood, manure, sewage etc; biofuels – solid (wood), liquid (oil). Advantages/disadvantages – suitable for heating homes and water; liquid bio fuel can be used as a fuel for vehicles; harmful emissions produced, damaging to the environment; etc. Sustainability – wood is a slow growing form of energy; it needs good planning for utilisation as an energy source; etc."
+                      },
+                      {
+                            "id": "evaluation",
+                            "kind": "criterion",
+                            "verbatim": "advantages / disadvantages",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. Two points about the SAME source. Original model: Source - Bio energy – biomass- organic material e.g. leaves, stems, wood, manure, sewage etc; biofuels – solid (wood), liquid (oil). Advantages/disadvantages – suitable for heating homes and water; liquid bio fuel can be used as a fuel for vehicles; harmful emissions produced, damaging to the environment; etc. Sustainability – wood is a slow growing form of energy; it needs good planning for utilisation as an energy source; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "sustainability",
+                            "kind": "criterion",
+                            "verbatim": "sustainability",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. One point about the SAME source. Original model: Source - Bio energy – biomass- organic material e.g. leaves, stems, wood, manure, sewage etc; biofuels – solid (wood), liquid (oil). Advantages/disadvantages – suitable for heating homes and water; liquid bio fuel can be used as a fuel for vehicles; harmful emissions produced, damaging to the environment; etc. Sustainability – wood is a slow growing form of energy; it needs good planning for utilisation as an energy source; etc."
+                      }
+                ]
+          },
+          {
+                "id": "source-5",
+                "label": "Geothermal",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Geothermal",
+                            "marks": 2,
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied."
+                      },
+                      {
+                            "id": "source",
+                            "kind": "criterion",
+                            "verbatim": "source",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. Use the SAME energy source. Original model: Source - Geothermal – earth’s crust. Advantages/disadvantages – cost affective; reliable; water warm when entering the house; expensive to install; etc. Sustainability – very sustainable; etc"
+                      },
+                      {
+                            "id": "evaluation",
+                            "kind": "criterion",
+                            "verbatim": "advantages / disadvantages",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. Two points about the SAME source. Original model: Source - Geothermal – earth’s crust. Advantages/disadvantages – cost affective; reliable; water warm when entering the house; expensive to install; etc. Sustainability – very sustainable; etc",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "sustainability",
+                            "kind": "criterion",
+                            "verbatim": "sustainability",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. One point about the SAME source. Original model: Source - Geothermal – earth’s crust. Advantages/disadvantages – cost affective; reliable; water warm when entering the house; expensive to install; etc. Sustainability – very sustainable; etc"
+                      }
+                ]
+          },
+          {
+                "id": "another-source",
+                "label": "Another source, including non-renewable",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 2,
+                            "permittedMarks": [
+                                  0,
+                                  2
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied."
+                      },
+                      {
+                            "id": "source",
+                            "kind": "criterion",
+                            "verbatim": "source",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. Identify the source of the SAME named energy."
+                      },
+                      {
+                            "id": "evaluation",
+                            "kind": "criterion",
+                            "verbatim": "advantages / disadvantages",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. Two points for the SAME source.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      },
+                      {
+                            "id": "sustainability",
+                            "kind": "criterion",
+                            "verbatim": "sustainability",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "The original scheme explicitly accepts NON-RENEWABLE sources too because the English and Irish versions of the paper differ. Its printed models cover five renewable sources; no non-renewable model is supplied. One point for the SAME source."
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    figure: {
+          "candId": "home-economics-2014-hl-sc-q1aii-allowance",
+          "src": "/exam-figures/home-economics/home-economics-2014-hl-sc-q1aii-allowance.png",
+          "srcHash": "b29100f38a6cebac1a2db069b0abe2d0",
+          "alt": "Original image-only marking note: Due to an inconsistency between the English and Irish versions of the examination paper, non-renewable sources of energy were also accepted.",
+          "attribution": "SEC Home Economics 2014 Higher Level marking scheme, page 19 — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "Original PDF crop, bounds [354.6816101074219, 509.5430603027344, 589.8394775390625, 552.8961791992188], rendered at 2.5×. SHA256 3112608b04ed38e098c7ab9b35dd06bd0bd93e14c3bec11c1bd126811674c987.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q1aiii", topicId: "home-economics-3-6", conceptId: "sc-q1aiii",
+    section: "C", questionRef: "2014 HL Section C E1 Q1(a)(iii)",
+    stem: "The design and construction of modern houses is undergoing radical change with particular emphasis on sustainable energy.",
+    questionText: "Write an informative note on the Building Energy Rating (BER) system.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "Building Energy Rating", marks: 12, contextNote: "Complete original source guidance: (12) A Building Energy Rating (BER) is similar to the energy label on appliances, with a scale of triple A to G; A-rated homes are the most energy efficient, while G is the least efficient; since 1st January 2009, a BER certificate is compulsory for all homes being sold or rented; to sell or rent a house it must be assessed by a registered BER assessor in order to get a certificate; the assessor will also advise on how to improve the energy rating; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q1bi", topicId: "home-economics-3-4", conceptId: "sc-q1bi",
+    section: "C", questionRef: "2014 HL Section C E1 Q1(b)(i)",
+    stem: "From whole house revamps to room makeovers, tired and dated interiors can be transformed at relatively low expense.",
+    questionText: "Discuss four factors that should be considered when planning the interior design of the home.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 4"}, totalMarks: 16,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 16, contextNote: "Complete original source guidance: Aesthetics; comfort; ergonomics; cost; environmental awareness; family size and circumstances; etc.", permittedMarks: [0,4,8,12,16], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q1bii", topicId: "home-economics-3-4", conceptId: "sc-q1bii",
+    section: "C", questionRef: "2014 HL Section C E1 Q1(b)(ii)",
+    stem: "From whole house revamps to room makeovers, tired and dated interiors can be transformed at relatively low expense.",
+    questionText: "Name and describe two different wall finishes suitable for use in a living room. State two properties of each finish.",
+    tariffModel: {"kind":"fixed","notation":"2 finishes × (name 1 + description 2 + properties 2×2)"}, totalMarks: 14,
+    rows: [
+    { id: "name-1", kind: "anyN", verbatim: "Name", marks: 1, contextNote: "Choose TWO DIFFERENT wall finishes in total.", openList: true, group: {"claimMax":1,"perOption":1,"options":["Water-based paint","Specialised paint","General purpose wall paper","Washable wall paper","Embossed Wall paper","Wood chip","wood panelling","ceramic tiles"]} },
+    { id: "description-1", kind: "criterion", verbatim: "Description", marks: 2, contextNote: "Describe the SAME finish. Complete original source: Paint Water-based paint - easy to apply; quick drying; no strong odour; inexpensive; range of colours; durable; easy to clean; etc. Specialised paint - textured - plastic fibres give textured finish; range of colours; durable; etc. Wallpaper General purpose wall paper - design printed onto paper; varies in thickness; good to hide faults; variety of designs; etc. Washable wall paper - coated with a plastic layer; withstands condensation; durable and strong; suitable in all rooms; huge variety; camouflages faults; makes rooms cosier; etc. Embossed Wall paper - design is stamped into paper; can be painted after hanging; etc. Wood chip - wood is pressed between two layers of paper; gives textured effect; can be painted over; etc. Others – wood panelling, ceramic tiles, etc. or ", permittedMarks: [0,2] },
+    { id: "properties-1", kind: "criterion", verbatim: "Properties", marks: 4, contextNote: "Two properties of the SAME finish. The source names wood panelling/ceramic tiles without separate models; no missing details have been invented. Original source: Paint Water-based paint - easy to apply; quick drying; no strong odour; inexpensive; range of colours; durable; easy to clean; etc. Specialised paint - textured - plastic fibres give textured finish; range of colours; durable; etc. Wallpaper General purpose wall paper - design printed onto paper; varies in thickness; good to hide faults; variety of designs; etc. Washable wall paper - coated with a plastic layer; withstands condensation; durable and strong; suitable in all rooms; huge variety; camouflages faults; makes rooms cosier; etc. Embossed Wall paper - design is stamped into paper; can be painted after hanging; etc. Wood chip - wood is pressed between two layers of paper; gives textured effect; can be painted over; etc. Others – wood panelling, ceramic tiles, etc. or ", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    { id: "name-2", kind: "anyN", verbatim: "Name", marks: 1, contextNote: "Choose TWO DIFFERENT wall finishes in total.", openList: true, group: {"claimMax":1,"perOption":1,"options":["Water-based paint","Specialised paint","General purpose wall paper","Washable wall paper","Embossed Wall paper","Wood chip","wood panelling","ceramic tiles"]} },
+    { id: "description-2", kind: "criterion", verbatim: "Description", marks: 2, contextNote: "Describe the SAME finish. Complete original source: Paint Water-based paint - easy to apply; quick drying; no strong odour; inexpensive; range of colours; durable; easy to clean; etc. Specialised paint - textured - plastic fibres give textured finish; range of colours; durable; etc. Wallpaper General purpose wall paper - design printed onto paper; varies in thickness; good to hide faults; variety of designs; etc. Washable wall paper - coated with a plastic layer; withstands condensation; durable and strong; suitable in all rooms; huge variety; camouflages faults; makes rooms cosier; etc. Embossed Wall paper - design is stamped into paper; can be painted after hanging; etc. Wood chip - wood is pressed between two layers of paper; gives textured effect; can be painted over; etc. Others – wood panelling, ceramic tiles, etc. or ", permittedMarks: [0,2] },
+    { id: "properties-2", kind: "criterion", verbatim: "Properties", marks: 4, contextNote: "Two properties of the SAME finish. The source names wood panelling/ceramic tiles without separate models; no missing details have been invented. Original source: Paint Water-based paint - easy to apply; quick drying; no strong odour; inexpensive; range of colours; durable; easy to clean; etc. Specialised paint - textured - plastic fibres give textured finish; range of colours; durable; etc. Wallpaper General purpose wall paper - design printed onto paper; varies in thickness; good to hide faults; variety of designs; etc. Washable wall paper - coated with a plastic layer; withstands condensation; durable and strong; suitable in all rooms; huge variety; camouflages faults; makes rooms cosier; etc. Embossed Wall paper - design is stamped into paper; can be painted after hanging; etc. Wood chip - wood is pressed between two layers of paper; gives textured effect; can be painted over; etc. Others – wood panelling, ceramic tiles, etc. or ", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2014-hl-sc-q1bii-finish-1","label":"Finish 1","marks":7,"rowIds":["name-1","description-1","properties-1"]},{"sourceCardId":"he-2014-hl-sc-q1bii-finish-2","label":"Finish 2","marks":7,"rowIds":["name-2","description-2","properties-2"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q1ci", topicId: "home-economics-3-3", conceptId: "sc-q1ci",
+    section: "C", questionRef: "2014 HL Section C E1 Q1(c)(i)",
+    stem: "Property has always been considered to be a good long-term investment and buying will probably save money in the long run compared to a life time of renting.",
+    questionText: "Discuss the comparative costs of buying versus renting a house for a family.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "comparative costs", marks: 15, contextNote: "Complete original source guidance: Buying - initial costs - deposit - usually 10% of purchase price, in the case of local authority mortgages 5% of purchase price; lending agency fees; an application fee; lenders survey cost; searches; indemnity bond; legal fees - may be a fixed or a percentage of the purchase price in addition to legal searches; land registry fees which are part of the legal process; buyer's survey fee; when purchasing second-hand housing - stamp duty; government taxes payable at different rate depending on the size of the house, the value of the house; etc. On-going costs of buying - mortgage repayments: a monthly expenditure based on the amount borrowed; mortgage protection/life assurance policy: may be a monthly or once yearly premium; home insurance: for building and contents; property tax; furnishing costs; maintenance/repairs costs; service charges: e.g. refuse collection; water charges; redecorating /repairs; replacing furniture/furnishings; garden maintenance; etc Renting - initial costs – deposit, usually one month's rent in advance; agency fee - applies if an agency secures the accommodation for renting; although expenses relating to renting appears to be far less than for buying, actual rent is often more expensive than the repayments on a mortgage for the average house; buying a house can be an investment in some areas as property prices increase in value whereas renting does not offer a long-term return; however renting may be a preferred option in areas where house prices have plummeted due to the recession; On-going costs of renting - rent; insurance of contents; minor repairs; water and refuse charges; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q1cii", topicId: "home-economics-3-3", conceptId: "sc-q1cii",
+    section: "C", questionRef: "2014 HL Section C E1 Q1(c)(ii)",
+    stem: "Property has always been considered to be a good long-term investment and buying will probably save money in the long run compared to a life time of renting.",
+    questionText: "Write an informative note on the private rented accommodation sector. Give three points.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5"}, totalMarks: 15,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "private rented accommodation", marks: 15, contextNote: "Complete original source guidance: Includes houses, apartments and flats; found mainly in urban areas especially larger cities; popular with students, young people starting work, are an option for those who cannot afford to purchase a home; quality of accommodation can vary; affords flexibility for those in temporary employment; allows for movement from different areas; more rent supplement may be provided; landlords are required to be registered with the PRTB; etc.", permittedMarks: [0,5,10,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q2ai", topicId: "home-economics-3-8", conceptId: "sc-q2ai",
+    section: "C", questionRef: "2014 HL Section C E2 Q2(a)(i)",
+    stem: "Imelda May’s distinctive rockabilly style is iconic to the core and bold in its delivery – 50s all the way.",
+    questionText: "Evaluate the design of the dress shown in the diagram above. Refer to: • comfort • aesthetic appeal • current fashion trends.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 5"}, totalMarks: 15,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Comfort", marks: 5, contextNote: "Comfort - a figure-hugging dress comfortable to wear; allows for body movement while maintaining shape; stretch fabric; modest below knee length; etc.", permittedMarks: [0,5] },
+    { id: "heading-2", kind: "criterion", verbatim: "Aesthetic appeal", marks: 5, contextNote: "Aesthetic appeal - overall appearance of garment; black and white stripes create a striking effect; etc.", permittedMarks: [0,5] },
+    { id: "heading-3", kind: "criterion", verbatim: "Current fashion trends", marks: 5, contextNote: "Current fashion trends - there is a revival of vintage fashion on the high street, in fashion magazines and on the catwalks; overall look enhanced by jewellery, scarves, court shoes; a wide belt to focus attention on the waist, creating an hourglass shape; etc.", permittedMarks: [0,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2014-hl-sc-q2-dress",
+          "src": "/exam-figures/home-economics/home-economics-2014-hl-sc-q2-dress.png",
+          "srcHash": "fbfa9defa71fe282f92e39a102dc7761",
+          "alt": "Complete original examination photograph for the Imelda May dress-design question, including the striped dress, belt, arms and shoes; full original frame retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper, page 10 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q2aii", topicId: "home-economics-3-8", conceptId: "sc-q2aii",
+    section: "C", questionRef: "2014 HL Section C E2 Q2(a)(ii)",
+    stem: "Imelda May’s distinctive rockabilly style is iconic to the core and bold in its delivery – 50s all the way.",
+    questionText: "Discuss the significance of the elements of design when choosing clothing to flatter body size and shape.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 5"}, totalMarks: 10,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "elements", marks: 10, contextNote: "Complete original source guidance: Colour - colour can change the perception of the person wearing the garment e.g. appear taller, thinner, rounder; etc. darker colours can reduce the size of a person while light colours can increase it; colour can be used to highlight details of a garment, e.g. the pleats, cuffs; etc. warm colours are stronger than pale colours; neutral colours such as black, white and cream are easy and comfortable to wear; they also blend easily with other colours; repetition of a colour will emphasise direction and line; harmonising colours are easy to wear and to look at; etc. Shape - the shape of a garment should accentuate positive body features and detract from negative ones; shape can have the following effect - narrow rectangular shapes have a slimming effect; boxy rectangular shapes will increase width and reduce height; triangular shape, (i.e. where the garment is wider at the top than at the bottom) the width on the top half can have a slimming effect on the overall appearance; etc. Line - encloses and divides space, creating shapes and forms; seam lines divide and enclose space on a garment; there are four main types of structural lines - curved, romantic, feminine, graceful; diagonal - active, movement, dramatic; horizontal – widens, restful, relaxed, casual; vertical – lengthens; conservative; structural lines can be used to enhance balance and to direct or focus the eye, can create optical illusions; etc. Texture - used to create surface appearance; refers to the material that something is made of; texture is both visual and tactile; the texture refers to the feel of the fabric - it can be rough, smooth, silky, shiny, fine, thick; rough texture will absorb light while smooth shiny texture will reflect it; this can affect the colour and the visual impact of the garment; shiny smooth fabrics can make a person appear heavier, dull fabrics will have the opposite effect; etc. Pattern - is the repetition of line and shape; herringbone, zig-zag, polka dot; etc. and ", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q2bi", topicId: "home-economics-3-7", conceptId: "sc-q2bi",
+    section: "C", questionRef: "2014 HL Section C E2 Q2(b)(i)",
+    questionText: "Name and describe a fabric construction technique suitable for cotton fabric.",
+    tariffModel: {"kind":"fixed","notation":"Name 3 + description 2×3"}, totalMarks: 9,
+    rows: [
+    { id: "name", kind: "point", verbatim: "Weaving", marks: 3 },
+    { id: "description", kind: "criterion", verbatim: "description", marks: 6, contextNote: "Two description points for the SAME fabric construction technique. Original model: Weaving- weaving is done on a loom; lines of yarn called selvage or warp threads are stretched down the loom; another set of threads called weft threads are passed over and under the warp threads from side to side; the simplest weave is called plain weave; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "technique-1",
+                "label": "Weaving",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Weaving",
+                            "marks": 3
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "description",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Two description points for the SAME fabric construction technique. Original model: Weaving- weaving is done on a loom; lines of yarn called selvage or warp threads are stretched down the loom; another set of threads called weft threads are passed over and under the warp threads from side to side; the simplest weave is called plain weave; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "technique-2",
+                "label": "Knitting",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "point",
+                            "verbatim": "Knitting",
+                            "marks": 3
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "description",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Two description points for the SAME fabric construction technique. Original model: Knitting - done by hand or machine; knitting is linking or interlocking loops of yarn together; knitted fabrics are stretchy, comfortable, crease resistant; 2 basic stitches used plain and purl; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another-technique",
+                "label": "Another suitable construction technique",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  3
+                            ],
+                            "contextNote": "One technique suitable for cotton fabric."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "description",
+                            "marks": 6,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  6
+                            ],
+                            "contextNote": "Two matching description points. The scheme models weaving and knitting only; no further model is supplied.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 3,
+                                        "permittedMarks": [
+                                              0,
+                                              3
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q2bii", topicId: "home-economics-3-7", conceptId: "sc-q2bii",
+    section: "C", questionRef: "2014 HL Section C E2 Q2(b)(ii)",
+    questionText: "Give details of one functional fabric finish applied to enhance fabric performance.",
+    tariffModel: {"kind":"fixed","notation":"2 points × 3"}, totalMarks: 6,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "functional fabric finish", marks: 6, contextNote: "Choose ONE finish and give TWO details about that SAME finish; no name mark is printed. Some source examples have fewer than two developed details; no missing details have been invented. Complete original source guidance: Brushing: makes fabric warmer by giving them a fluffy finish that traps air which acts as insulator; etc. Crease-resistance: easy care; creases fall out easily; etc. Shrink-resistance: fabrics do not shrink and are easy care; etc. Stain-repellent: Scotchguard - makes fabric resist stains; etc. Water proofing: Scotchguard - stops water soaking into fabric; etc. Flame-proofing: makes fabric harder to burn; etc. Others: moth proofing and polishing; etc.", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q2ci", topicId: "home-economics-3-8", conceptId: "sc-q2ci",
+    section: "C", questionRef: "2014 HL Section C E2 Q2(c)(i)",
+    stem: "Irish fashion and textile designers enjoy worldwide recognition.",
+    questionText: "Discuss the challenges encountered by the clothing and textile industry in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 3"}, totalMarks: 9,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "challenges", marks: 9, contextNote: "Complete original source guidance: Global recession; less disposable income; increase in cheaper goods imported; high labour costs for skilled workers; adapting to new trends in shopping e.g. online and mobile technology; China the world’s factory – cheaper/faster labour; rise of discount stores (low price, high volume); tragedies in Bangladesh – efforts to raise safety standards in garment factories; etc.", permittedMarks: [0,3,6,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q2cii", topicId: "home-economics-3-8", conceptId: "sc-q2cii",
+    section: "C", questionRef: "2014 HL Section C E2 Q2(c)(ii)",
+    stem: "Irish fashion and textile designers enjoy worldwide recognition.",
+    questionText: "Outline the work of one Irish designer in promoting Irish fashion.",
+    tariffModel: {"kind":"fixed","notation":"Name 2 + work 4"}, totalMarks: 6,
+    rows: [
+    { id: "name", kind: "anyN", verbatim: "Name", marks: 2, contextNote: "The source lists these names and generic work examples, without a full model for each designer. Apply the work point to the SAME chosen designer; no name/work pairing has been invented. ", openList: true, group: {"claimMax":1,"perOption":2,"options":["John Rocha","Philip Treacy","Lainey Keogh","Paul Costelloe","Louise Kennedy","Sybill Connolly"]} },
+    { id: "work", kind: "criterion", verbatim: "promoting Irish fashion", marks: 4, contextNote: "The source lists these names and generic work examples, without a full model for each designer. Apply the work point to the SAME chosen designer; no name/work pairing has been invented. Original source: John Rocha, Philip Treacy, Lainey Keogh, Paul Costelloe, Louise Kennedy, Sybill Connolly, etc. Designing for royalty, world leaders, celebrities; designing for major events – Riverdance costumes; etc.", permittedMarks: [0,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q3ai", topicId: "home-economics-3-10", conceptId: "sc-q3ai",
+    section: "C", questionRef: "2014 HL Section C E3 Q3(a)(i)",
+    stem: "The drive to promote lifelong learning, and create a learning society, is at the heart of education policy developments within the European Union.",
+    questionText: "Describe the provision of education in Ireland today with regard to adult and second chance education.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "adult and second chance education", marks: 20, contextNote: "Complete original source guidance: Many opportunities for people of all ages and educational levels because government policy is to develop a culture of lifelong learning; Aontas (Irish National Association of Adult Eeducation promotes development of learning, and supports and co-ordinates adult education; adult education is available in full-time, part-time, modular, day, evening or weekend courses; Third- level colleges/universities run Adult literacy schemes providing basic literacy courses; Distance learning; ETB’s/VEC’s run evening courses; PLC courses are run in many 2nd level schools; SOLAS provides a range of training and employment programmes; VTOS offers a range of courses designed to meet the educational needs of unemployed people; Teagasc; Coillte; etc.", permittedMarks: [0,5,10,15,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q3aii", topicId: "home-economics-3-10", conceptId: "sc-q3aii",
+    section: "C", questionRef: "2014 HL Section C E3 Q3(a)(ii)",
+    stem: "The drive to promote lifelong learning, and create a learning society, is at the heart of education policy developments within the European Union.",
+    questionText: "Analyse the considerations that adults may take into account when deciding to return to education.",
+    tariffModel: {"kind":"fixed","notation":"4 points × 5"}, totalMarks: 20,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "considerations", marks: 20, contextNote: "Complete original source guidance: Availability of courses; finding a course suitable to their needs; skills acquired, qualifications achieved; personal/professional development increase chances of gaining employment / promotion; cost, affordability; fear of failure; balancing responsibilities; supports available (tutors, grants), commuting distance; stages of family; etc.", permittedMarks: [0,5,10,15,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q3aiii", topicId: "home-economics-3-10", conceptId: "sc-q3aiii",
+    section: "C", questionRef: "2014 HL Section C E3 Q3(a)(iii)",
+    stem: "The drive to promote lifelong learning, and create a learning society, is at the heart of education policy developments within the European Union.",
+    questionText: "Name and give details of one contemporary initiative aimed at improving equality of opportunity in education.",
+    tariffModel: {"kind":"fixed","notation":"Name 4 + details 2×3"}, totalMarks: 10,
+    rows: [
+    { id: "name", kind: "anyN", verbatim: "Name", marks: 4, contextNote: "Choose ONE contemporary initiative in this historical 2014 exam.", openList: true, group: {"claimMax":1,"perOption":4,"options":["The National Adult Learning Council (NALC)","Aontas","VTOS","Bluebrick","Springboard","Youthreach","Solas","PLC courses","BTEA","Community Education Schemes","HEAR","DARE"]} },
+    { id: "details", kind: "criterion", verbatim: "details", marks: 6, contextNote: "Two points about the SAME chosen initiative. Complete original 2014 source: The National Adult Learning Council (NALC) – was established to meet the requirements of the National Action Plan for Social Inclusion 2007-2016; etc. Aontas – helps promote the development of learning in adults; it provides advice and support in all areas of adult education; etc. VTOS – open to the long term unemployed over 21 years of age; offers skilled-based programmes to help people return to employment; training allowances are granted similar to social welfare entitlements; etc. Bluebrick – online resource that can be used to search for accredited courses offered by the IT’s; it also offers the facility to compare the various courses to help the user decide which course is best for them; etc. Springboard – is an initiative giving job seekers the opportunity to study a part-time course in higher education; free of charge, without losing their social welfare benefits; etc. Youthreach – for 15 to 20 year olds who have left school without qualifications; two year integrated training and education programme; participants receive a training allowance; many centres located around the country including traveller training centres and community training workshops based in local communities; etc. Solas – provides community training workshops for adults; etc. PLC courses – offer training with work experience; means of accessing further education; variety of courses; FETAC certification; etc. BTEA – funded by Dept of Social Welfare; unemployed for 15 months and over 21; full time or part time; receive social welfare payments and a small grant; etc. Community Education Schemes – adult literacy initiative; etc. HEAR – higher education access route to enable students from disadvantaged backgrounds (who meet a range of pre-defined indicators) to attend third level colleges on a reduced points basis; supports are put in place for them in college; etc. DARE – disability access route to education for those with a disability e.g. dyslexia, DCD, blind, deaf, autistic, etc.; reduced points; receive on-going support in college; etc. and ", permittedMarks: [0,3,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q3b", topicId: "home-economics-3-11", conceptId: "sc-q3b",
+    section: "C", questionRef: "2014 HL Section C E3 Q3(b)",
+    questionText: "Social change has had a major impact on family life in Ireland today. Discuss this statement in relation to: • changing attitudes to marriage • changes in traditional roles within the family • the impact of modern communications technology.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 2 points × 5"}, totalMarks: 30,
+    rows: [
+    { id: "heading-1", kind: "criterion", verbatim: "Changing attitudes to marriage", marks: 10, contextNote: "Changing attitudes to marriage – people cohabiting first, marrying later; civil partnership for same gender couples; declining influence of catholic church – increasing popularity of civil ceremonies; increase in divorce and separation rates; social acceptance of marital breakdown; etc. ", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "Traditional roles within the family", marks: 10, contextNote: "Traditional roles within the family – women working outside the home; high levels on unemployment among males; stay at home fathers more common; egalitarian roles; women better educated and financially independent; maternity and paternity leave available to parents; corporal punishment socially and legally unacceptable; role conflict, role overload as mothers and fathers try to cope with their ageing parents needs along with their children’s needs; etc. ", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "Impact of modern communications technology", marks: 10, contextNote: "Impact of modern communications technology – young children skilled in IT; social media teenagers - facebook, twitter, snapchat, instagram positive and negative effects; etc. increase in mobile phones; popularity of computer apps. some addictive others very educational; communication via Skype; ease of accessing information; etc.", permittedMarks: [0,5,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q3ci", topicId: "home-economics-3-11", conceptId: "sc-q3ci",
+    section: "C", questionRef: "2014 HL Section C E3 Q3(c)(i)",
+    stem: "Volunteering is the commitment of time and energy for the benefit of society and local communities.",
+    questionText: "Discuss, giving examples, the role of voluntary work in the community.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 6"}, totalMarks: 18,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "voluntary work", marks: 18, contextNote: "Complete original source guidance: Voluntary workers supply a wide range of services to disadvantaged and underprivileged groups e.g. elderly: voluntary organisations complement the work carried out by statutory bodies but offer a more local and personal service when state funding is lacking or inadequate; voluntary organisations organise and run services which should otherwise have been provided by the state; much voluntary work is preventative in nature i.e. issues can be dealt with quickly before these issues become major social problems; voluntary organisations can assert influence by highlighting social problems, attracting media attention and can therefore initiate change and social reform; voluntary workers offer advice in the development of government policies and legislation; etc.", permittedMarks: [0,6,12,18], parts: [{"id":"point-1","verbatim":"Point 1","marks":6,"permittedMarks":[0,6]},{"id":"point-2","verbatim":"Point 2","marks":6,"permittedMarks":[0,6]},{"id":"point-3","verbatim":"Point 3","marks":6,"permittedMarks":[0,6]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC098ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2014 Higher Level — © State Examinations Commission.",
+    id: "he-2014-hl-sc-q3cii", topicId: "home-economics-3-11", conceptId: "sc-q3cii",
+    section: "C", questionRef: "2014 HL Section C E3 Q3(c)(ii)",
+    stem: "Volunteering is the commitment of time and energy for the benefit of society and local communities.",
+    questionText: "Evaluate the benefits to be gained from voluntary work by the volunteer.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4"}, totalMarks: 12,
+    rows: [
+    { id: "points", kind: "criterion", verbatim: "benefits", marks: 12, contextNote: "Complete original source guidance: Volunteer – work is rewarding; aids personal development in terms of organisational and communication skills; affords workers an opportunity to see life from other perspectives thereby cultivating altruistic traits; voluntary workers build relationships with co-workers and with those who seek help; etc.", permittedMarks: [0,4,8,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,4]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Home Economics 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
 ];
