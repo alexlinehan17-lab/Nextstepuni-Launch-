@@ -4,6 +4,7 @@ import json
 import re
 from pathlib import Path
 import fitz
+from ru_source_text import open_scheme
 
 ROOT = Path(__file__).resolve().parents[3]
 
@@ -46,7 +47,7 @@ def verify(cards=None):
     count = 0
     for card in cards:
         level = 'hl' if card['level'] == 'higher' else 'ol'
-        with fitz.open(ROOT / f"examiner-reports/russian/schemes/{card['year']}-{level}.pdf") as document:
+        with open_scheme(card['year'], level) as document:
             pages = sorted(set(card['review']['schemePages'] + card['review'].get('guidancePages', [])
                                + card.get('answerLanguageRule', {}).get('schemePages', [])))
             versions = ['\n'.join(document[p-1].get_text(sort=sort) for p in pages) for sort in (False,True)]

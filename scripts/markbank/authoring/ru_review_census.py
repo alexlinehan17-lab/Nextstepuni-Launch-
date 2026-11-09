@@ -11,6 +11,25 @@ from pathlib import Path
 
 
 def reviewed_keys(year, level):
+    if (year, level) == (2014, 'ol'):
+        # Independent 44-page visual census, hash-bound before authoring.
+        root = Path(__file__).resolve().parents[3] / 'examiner-reports/russian'
+        for relative, digest in {
+            'papers/2014-ol-000-paper.pdf': 'fa8c43f85b8c65aa24a0989c22213a548c729106057965052908d8a887107eef',
+            'papers/2014-ol-A00-paper.pdf': '1e2b3340b53b7ecd8f8e2deeb9ff5ed3b96914f41f3c77aafe21e13f37468720',
+            'schemes/2014-ol.pdf': 'b3186b37ad28e970e617c4c9fc3710628400da21c59a2dd18e51f444799e2d3c',
+        }.items():
+            assert hashlib.sha256((root / relative).read_bytes()).hexdigest() == digest
+        keys = [(unit, None, None, roman) for unit in ('IR1', 'IR2') for roman in ('i','ii','iii','iv','v','vi')]
+        keys += [('CD', q, None, roman) for q in range(1,5) for roman in ('i','ii','iii')]
+        keys += [(unit, None, None, None) for unit in ('LA1','LA2','MM','SD','SA','EW')]
+        assert len(keys) == 30
+        keys += [('L1', q, None, r) for q,r in [(1,None),(2,'i'),(2,'ii'),(3,None),(4,None)]]
+        keys += [('L2', q, None, r) for q,r in [(1,None),(2,'i'),(2,'ii'),(3,'i'),(3,'ii')]]
+        keys += [('L3', q, None, r) for q,r in [(1,None),(2,None),(3,'i'),(3,'ii'),(4,None)]]
+        keys += [('L4', q, None, r) for q,r in [(1,None),(2,'i'),(2,'ii'),(3,'i'),(3,'ii')]]
+        assert len(keys) == len(set(keys)) == 50
+        return set(keys)
     if (year, level) == (2015, 'ol'):
         # Independent 44-page visual census. Three separately numbered/priced
         # matching exercises; two cultural essays share one 30-mark choice task.
