@@ -64,7 +64,7 @@ describe('Japanese 2026 Ordinary independent source review', () => {
   it('emits the exact reviewed convention, without extending it to unreviewed sittings', () => {
     const source = review.selectors.find(selector => selector.document === 'scheme' && selector.page === 3 && selector.row === 12 && selector.group === 1)!;
     for (const found of cards) expect(found.answerLanguageRule).toEqual({ otherLanguageMultiplier: 0.5, sourceText: source.text, schemePages: [3] });
-    expect(ordinary.filter(card => card.year < 2025).some(card => card.answerLanguageRule)).toBe(false);
+    expect(ordinary.filter(card => card.year < 2024).some(card => card.answerLanguageRule)).toBe(false);
   });
 
   it('retains the restaurant table, printed examples, underlines, cloze and prefilled phone number', () => {

@@ -62,8 +62,8 @@ describe('Japanese 2024 Higher independent source review', () => {
     });
     const live = new Set([...higher, ...ordinary].map(card => card.id));
     for (const id of originalIds) expect(live.has(id) || live.has(CARD_ID_ALIASES[id]), id).toBe(true);
-    expect(rawCards.filter(card => !originalIds.includes(card.id))).toHaveLength(264);
-    expect(live.size).toBe(600 + 264 - 108);
+    expect(rawCards.filter(card => !originalIds.includes(card.id))).toHaveLength(304);
+    expect(live.size).toBe(600 + 304 - 148);
     expect(cards.filter(card => originalIds.includes(card.id))).toHaveLength(20);
   });
 
