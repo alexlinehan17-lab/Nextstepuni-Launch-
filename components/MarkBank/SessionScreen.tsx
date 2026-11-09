@@ -177,9 +177,16 @@ export const partClaimId = (rowId: string, partId: string) => `${rowId}:${partId
  * another selected option is removed from a descending allocation. */
 export const answerLanguageClaimId = (id: string, optionIndex?: number) =>
   `language:other-language:point:${JSON.stringify([id, optionIndex ?? null])}`;
-const answerLanguageMultiplier = (card: SecCard, claims: Record<string, RowClaim>, id: string, optionIndex?: number) =>
-  card.answerLanguageRule && claims[answerLanguageClaimId(id, optionIndex)] === 1
+export const extraneousMaterialClaimId = 'answer:extraneous-material:response';
+const answerCreditMultiplier = (card: SecCard, claims: Record<string, RowClaim>, id: string, optionIndex?: number) => {
+  const language = card.answerLanguageRule && claims[answerLanguageClaimId(id, optionIndex)] === 1
     ? card.answerLanguageRule.otherLanguageMultiplier : 1;
+  const extraneous = card.extraneousMaterialRule && claims[extraneousMaterialClaimId] === 1
+    ? card.extraneousMaterialRule.multiplier : 1;
+  // Either published condition earns half credit. The source does not award
+  // quarter credit when both occur; an explicit zero rule still earns zero.
+  return Math.min(language, extraneous);
+};
 const partMarksClaimed = (part: MarkRowPart, claim: RowClaim) => {
   if (claim === 'yes') return part.marks;
   return typeof claim === 'number' && part.permittedMarks.includes(claim) ? claim : 0;
@@ -319,25 +326,25 @@ export function marksClaimed(
     // had, not as one all-or-nothing block worth twelve marks.
     if (r.kind === 'anyN' && r.group) {
       const chosen = Math.min(picks[id]?.length ?? 0, r.group.claimMax);
-      if (card.answerLanguageRule) {
+      if (card.answerLanguageRule || card.extraneousMaterialRule) {
         const group = r.group;
         const selected = [...new Set(picks[id] ?? [])]
           .filter(option => Number.isInteger(option) && option >= 0 && option < group.options.length)
           .slice(0, group.claimMax);
         return n + selected.reduce((sum, option, position) => sum
           + (group.perOptionSteps?.[position] ?? group.perOption)
-            * answerLanguageMultiplier(card, claims, id, option), 0);
+            * answerCreditMultiplier(card, claims, id, option), 0);
       }
       return n + claimedMarks(r.group, chosen);
     }
     if (r.parts) return n + Math.min(r.marks ?? 0, r.parts.reduce((sum, part) => {
       const partId = partClaimId(id, part.id);
-      return sum + partMarksClaimed(part, claims[partId] ?? 'no') * answerLanguageMultiplier(card, claims, partId);
+      return sum + partMarksClaimed(part, claims[partId] ?? 'no') * answerCreditMultiplier(card, claims, partId);
     }, 0));
-    const multiplier = answerLanguageMultiplier(card, claims, id);
+    const multiplier = answerCreditMultiplier(card, claims, id);
     if (r.permittedMarks) return n + criterionMarksClaimed(r, claims[id] ?? 'no') * multiplier;
     return isClaimed(claims, id) ? n + rowMarks(r) * multiplier : n;
-  }, 0) + (bonus ? criterionMarksClaimed(bonus, claims[bonus.id] ?? 'no') * answerLanguageMultiplier(card, claims, bonus.id) : 0);
+  }, 0) + (bonus ? criterionMarksClaimed(bonus, claims[bonus.id] ?? 'no') * answerCreditMultiplier(card, claims, bonus.id) : 0);
 }
 
 /**
@@ -2426,6 +2433,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       const key = answerLanguageClaimId(assessmentCard.questionBonus.id);
       if (assessmentCard.answerLanguageRule) out[key] = claimOf(key);
     }
+    if (assessmentCard.extraneousMaterialRule) out[extraneousMaterialClaimId] = claimOf(extraneousMaterialClaimId);
     return out;
   }, [assessmentCard, claimOf]);
 
@@ -3252,6 +3260,17 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       {assessmentCard.answerLanguageRule && <p style={{ font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
                         {assessmentCard.answerLanguageRule.sourceText}
                       </p>}
+                      {assessmentCard.extraneousMaterialRule && <div>
+                        <label className="mb-language-flag">
+                          <input type="checkbox" aria-label="Strong evidence of extraneous material in this response"
+                            checked={rowClaims[extraneousMaterialClaimId] === 1}
+                            onChange={event => setClaim(extraneousMaterialClaimId, event.currentTarget.checked ? 1 : 0)} />
+                          <span>Strong evidence of extraneous material · half credit</span>
+                        </label>
+                        <p style={{ font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
+                          {assessmentCard.extraneousMaterialRule.sourceText}
+                        </p>
+                      </div>}
                       {assessmentCard.tariffModel.kind === 'orderedSplit' && (
                         <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
                           The examiner marks the first correct answers higher than the rest
