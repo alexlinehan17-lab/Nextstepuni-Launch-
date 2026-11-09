@@ -13,6 +13,22 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('shows the 2013 handwriting discount and the published benefits-count discrepancy',async()=>{
+    reveal('ir1-i','ol',2013);
+    await waitFor(()=>expect(screen.getByText(/The scheme discounts the handwriting column/)).toBeVisible());
+    expect(screen.getByText(/Discount as majority/)).toBeVisible();
+    cleanup();reveal('cd-3-ii','ol',2013);
+    await waitFor(()=>expect(screen.getByText(/Source discrepancy: the booklet asks for two benefits/)).toBeVisible());
+    expect(screen.getByText(/The two-answer quota and four-mark total are retained/)).toHaveTextContent('Three of');
+  });
+  it('shows the 2013 learner-group quotas and the open gender-phrase allowance',async()=>{
+    reveal('ir2-ii','ol',2013);
+    await waitFor(()=>expect(screen.getByText(/Choose five learner groups and two details in each/)).toBeVisible());
+    expect(screen.getByText('2 groups // primary/beginners’ school/ 1-4 classes')).toBeVisible();
+    cleanup();reveal('la1','ol',2013);
+    await waitFor(()=>expect(screen.getByText(/The printed example банкетный зал cannot be used/)).toBeVisible());
+    expect(screen.getAllByText(/whether it is in the text or not/).length).toBeGreaterThan(0);
+  });
   it('renders both complete 2014 matching routes with ten four-mark answers',async()=>{
     const card=REVIEWED_CARDS.find(c=>c.id==='ru-2014-ol-mm');
     if(!card)throw new Error('Missing matching card');

@@ -11,6 +11,27 @@ from pathlib import Path
 
 
 def reviewed_keys(year, level):
+    if (year, level) == (2013, 'ol'):
+        # Independent 44-page visual census. The two restaurant subparts are
+        # distinct asks; nine learner groups belong to one choose-five task.
+        root = Path(__file__).resolve().parents[3] / 'examiner-reports/russian'
+        for relative, digest in {
+            'papers/2013-ol-000-paper.pdf': '48a29fa96259ea535913e07fde760949d91f854dacb10ae8a90cdb0eb9b18a07',
+            'papers/2013-ol-A00-paper.pdf': '3aa28cebff239c2f82bdbf2d82e085112eaf1b8d514d0931e1d1bd37b8d79de2',
+            'schemes/2013-ol.pdf': '0aafd6dfe0224a50fd53f45934ebb0e32e9241b05ba51c2854e8b712a792a0be',
+        }.items():
+            assert hashlib.sha256((root / relative).read_bytes()).hexdigest() == digest
+        keys = [('IR1',None,None,'i'),('IR1',None,'a','ii'),('IR1',None,'b','ii'),('IR1',None,None,'iii')]
+        keys += [('IR2',None,None,r) for r in ('i','ii')]
+        keys += [('CD',q,None,r) for q,rs in [(1,('i','ii','iii','iv')),(2,('i','ii')),(3,('i','ii')),(4,('i','ii','iii','iv'))] for r in rs]
+        keys += [(u,None,None,None) for u in ('LA1','LA2','MM','SD','SA','EW')]
+        assert len(keys) == 24
+        keys += [('L1',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,None),(3,None),(4,None)]]
+        keys += [('L2',q,None,r) for q,r in [(1,None),(2,'i'),(2,'ii'),(3,None)]]
+        keys += [('L3',q,None,None) for q in range(1,5)]
+        keys += [('L4',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,None),(3,None),(4,None)]]
+        assert len(keys) == len(set(keys)) == 42
+        return set(keys)
     if (year, level) == (2014, 'ol'):
         # Independent 44-page visual census, hash-bound before authoring.
         root = Path(__file__).resolve().parents[3] / 'examiner-reports/russian'
