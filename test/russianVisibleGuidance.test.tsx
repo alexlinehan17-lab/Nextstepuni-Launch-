@@ -13,6 +13,12 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('shows the2021 ordered listening tariff and explicit Russian exception',async()=>{
+    reveal('l3-4','ol',2021);
+    await waitFor(()=>expect(screen.getByText(/Any 2 of these.*2 then 3 marks/)).toBeVisible());
+    expect(screen.getByText(/Published tariff: 2 marks \+ 3 marks/)).toHaveTextContent('If an answer is written entirely in Russian – do not penalise');
+    expect(screen.getByText('Tretyakov Gallery')).toBeVisible();
+  });
   it('shows the claimable 2022 Ordinary festival-name maximum',async()=>{
     reveal('cd-6','ol',2022);
     await waitFor(()=>expect(screen.getByText('Max 2 marks for mentioning the name of a festival')).toBeVisible());

@@ -58451,5 +58451,5768 @@
       "attribution": "© State Examinations Commission.",
       "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
     }
+  },
+  {
+    "id": "ru-2021-ol-ir1-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "festival-take-place",
+    "questionRef": "2021 OL Section IR1 Q(i)",
+    "questionText": "When will this festival take place?",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "review": {
+      "paperPages": [
+        2,
+        3,
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "component": "000",
+      "questionPages": [
+        3
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "17th and 18th August",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-ir1-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "participants-come-different-countries-these-countries",
+    "questionRef": "2021 OL Section IR1 Q(ii)",
+    "questionText": "The participants will come from different countries. Name three of these countries.",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "review": {
+      "paperPages": [
+        2,
+        3,
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "component": "000",
+      "questionPages": [
+        3
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Russia",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Canada",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "France",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Italy",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Spain",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Portugal",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Argentina",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Pakistan",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-ir1-iii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "theme-festival",
+    "questionRef": "2021 OL Section IR1 Q(iii)",
+    "questionText": "What is the theme of the festival?",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "review": {
+      "paperPages": [
+        2,
+        3,
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "component": "000",
+      "questionPages": [
+        3
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Theatre",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-ir1-iv",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "opening-ceremony-take-place",
+    "questionRef": "2021 OL Section IR1 Q(iv)",
+    "questionText": "Where will the opening ceremony take place?",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "review": {
+      "paperPages": [
+        2,
+        3,
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "component": "000",
+      "questionPages": [
+        3
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Brateyevskoi Park",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-ir1-v",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "colours-fireworks",
+    "questionRef": "2021 OL Section IR1 Q(v)",
+    "questionText": "Name two of the colours of the fireworks.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "review": {
+      "paperPages": [
+        2,
+        3,
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "component": "000",
+      "questionPages": [
+        3
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Red",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "White",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Blue",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-ir1-vi",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "activities-events-take-place-festival",
+    "questionRef": "2021 OL Section IR1 Q(vi)",
+    "questionText": "What activities/events will take place at the festival. Give two details.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "review": {
+      "paperPages": [
+        2,
+        3,
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "component": "000",
+      "questionPages": [
+        3
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Golf",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Yoga",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Zumba",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Music",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-ir1-vii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "going-sing-festival",
+    "questionRef": "2021 OL Section IR1 Q(vii)",
+    "questionText": "Who is going to sing at the festival? Give one detail.",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "review": {
+      "paperPages": [
+        2,
+        3,
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "component": "000",
+      "questionPages": [
+        4
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Yolka pop group",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Bravo group",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Dima Bilan",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Yuliana Karaulova",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-ir1-viii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "IR1",
+    "topicId": "russian-3-4",
+    "conceptId": "price-tickets",
+    "questionRef": "2021 OL Section IR1 Q(viii)",
+    "questionText": "Give one detail about the price of the tickets.",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — IR1",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 4.",
+    "review": {
+      "paperPages": [
+        2,
+        3,
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "component": "000",
+      "questionPages": [
+        4
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Cost 500 roubles",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Children under 7 are free",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian. The booklet labels the ticket-price question(viii); scheme page4 repeats(vii). This card follows the booklet."
+    }
+  },
+  {
+    "id": "ru-2021-ol-ir2-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "IR2",
+    "topicId": "russian-3-4",
+    "conceptId": "luxury-villa",
+    "questionRef": "2021 OL Section IR2 Q(i)",
+    "questionText": "Give three details about this luxury villa.",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — IR2",
+      "pages": [
+        5,
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 5, 6.",
+    "review": {
+      "paperPages": [
+        5,
+        6
+      ],
+      "schemePages": [
+        5,
+        6
+      ],
+      "component": "000",
+      "questionPages": [
+        5
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "It has 3 levels",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "By the sea",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "There are 2 separate apartments",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "The house is 1000 sq m",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "The plot is 1600 sq m ?",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "4 bedrooms",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Kitchen",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Patio",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Has a cinema",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-ir2-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "IR2",
+    "topicId": "russian-3-4",
+    "conceptId": "activities-while-staying-there",
+    "questionRef": "2021 OL Section IR2 Q(ii)",
+    "questionText": "Name three activities that you can do while staying there.",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — IR2",
+      "pages": [
+        5,
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 5, 6.",
+    "review": {
+      "paperPages": [
+        5,
+        6
+      ],
+      "schemePages": [
+        5,
+        6
+      ],
+      "component": "000",
+      "questionPages": [
+        6
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Barbeque",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Relax in a hammock",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Play tennis",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Swim the in the pool",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Relax in a sauna",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Read a book",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-ir2-iii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "IR2",
+    "topicId": "russian-3-4",
+    "conceptId": "facilities-available-hotel-nearby",
+    "questionRef": "2021 OL Section IR2 Q(iii)",
+    "questionText": "Give three details about the facilities available in the hotel nearby.",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — IR2",
+      "pages": [
+        5,
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 5, 6.",
+    "review": {
+      "paperPages": [
+        5,
+        6
+      ],
+      "schemePages": [
+        5,
+        6
+      ],
+      "component": "000",
+      "questionPages": [
+        6
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Bars",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Restaurants",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Conference hall",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Cinema",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Bikes for hire",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Open and closed pools",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Gym",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Spa",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Rent sports equipment",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-ir2-iv",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "IR2",
+    "topicId": "russian-3-4",
+    "conceptId": "places-visit-while-staying-villa",
+    "questionRef": "2021 OL Section IR2 Q(iv)",
+    "questionText": "Name three places you can visit while staying at the villa.",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — IR2",
+      "pages": [
+        5,
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 5, 6.",
+    "review": {
+      "paperPages": [
+        5,
+        6
+      ],
+      "schemePages": [
+        5,
+        6
+      ],
+      "component": "000",
+      "questionPages": [
+        6
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept unless otherwise stated and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Krsnaya Polyana",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Promenade in Adler",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Theme park – Sochi Park",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Olympic Village",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Formula 1",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Nature Park",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "‘Southern Cultures’ Park",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-cd-1-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "dina-subscribers-come-many-different-countries",
+    "questionRef": "2021 OL Section CD Q1(i)",
+    "questionText": "Dina’s subscribers come from many different countries. Name two of these countries.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "review": {
+      "paperPages": [
+        11,
+        12,
+        13
+      ],
+      "schemePages": [
+        10,
+        11
+      ],
+      "component": "000",
+      "questionPages": [
+        12
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "India",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "USA",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Saudi Arabia",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Kazakhstan",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-cd-1-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "dina-family",
+    "questionRef": "2021 OL Section CD Q1(ii)",
+    "questionText": "Give three details about Dina’s family.",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "review": {
+      "paperPages": [
+        11,
+        12,
+        13
+      ],
+      "schemePages": [
+        10,
+        11
+      ],
+      "component": "000",
+      "questionPages": [
+        12
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Born in Tadzhikistan",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Grew up in capital of Tadzhikistan",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Family of a cook + taxi driver",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Has a brother and a sister",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Early 2000s family got Russian citizenship + moved to Yekaterinburg",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Her father worked in a night club when they moved to Russia",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "They often slept on the floor of the night club",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Spent days in IKEA",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-cd-1-iii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "dina-life-family-moved-yekaterinburg",
+    "questionRef": "2021 OL Section CD Q1(iii)",
+    "questionText": "Give two details about Dina’s life when the family moved to Yekaterinburg.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "review": {
+      "paperPages": [
+        11,
+        12,
+        13
+      ],
+      "schemePages": [
+        10,
+        11
+      ],
+      "component": "000",
+      "questionPages": [
+        12
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Life was very difficult",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "They had nowhere to live",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Her father worked in a night club when they moved to Russia",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "They often slept on the floor of the night club",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Spent days in IKEA + had nowhere else to go",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-cd-2-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "creative-activities-dina-participated",
+    "questionRef": "2021 OL Section CD Q2(i)",
+    "questionText": "Name two creative activities Dina participated in.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "review": {
+      "paperPages": [
+        11,
+        12,
+        13
+      ],
+      "schemePages": [
+        10,
+        11
+      ],
+      "component": "000",
+      "questionPages": [
+        12
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She liked theatre",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She participated in school concerts",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Uploaded dance routines online",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-cd-2-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "dina-join-instagram",
+    "questionRef": "2021 OL Section CD Q2(ii)",
+    "questionText": "Why did Dina join Instagram?",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "review": {
+      "paperPages": [
+        11,
+        12,
+        13
+      ],
+      "schemePages": [
+        10,
+        11
+      ],
+      "component": "000",
+      "questionPages": [
+        12
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "To publish and share her dance and lip synching clips",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "To share her content with the world",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-cd-2-iii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "content-dina-shared-subscribers-first-joined",
+    "questionRef": "2021 OL Section CD Q2(iii)",
+    "questionText": "Give two details about the content Dina shared with her subscribers when she first joined Instagram.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "review": {
+      "paperPages": [
+        11,
+        12,
+        13
+      ],
+      "schemePages": [
+        10,
+        11
+      ],
+      "component": "000",
+      "questionPages": [
+        13
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Dance clips",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Using traditional songs of different nations.",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Lip synching clips.",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-cd-2-iv",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "many-subscribers-dina-end-first-year",
+    "questionRef": "2021 OL Section CD Q2(iv)",
+    "questionText": "How many subscribers did Dina have by the end of her first year on Instagram?",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "review": {
+      "paperPages": [
+        11,
+        12,
+        13
+      ],
+      "schemePages": [
+        10,
+        11
+      ],
+      "component": "000",
+      "questionPages": [
+        13
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "40,000 people",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-cd-3-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "dina-move-moscow",
+    "questionRef": "2021 OL Section CD Q3(i)",
+    "questionText": "Why did Dina move to Moscow? Give one detail.",
+    "totalMarks": 2,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "review": {
+      "paperPages": [
+        11,
+        12,
+        13
+      ],
+      "schemePages": [
+        10,
+        11
+      ],
+      "component": "000",
+      "questionPages": [
+        13
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "To earn more money",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-cd-3-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "dina-change-instagram-tiktok",
+    "questionRef": "2021 OL Section CD Q3(ii)",
+    "questionText": "Why did Dina change from Instagram to TikTok? Give two details.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "review": {
+      "paperPages": [
+        11,
+        12,
+        13
+      ],
+      "schemePages": [
+        10,
+        11
+      ],
+      "component": "000",
+      "questionPages": [
+        13
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "The decrease in numbers of subscribers pushed her to change to TikTok",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "TikTok popular with teenagers",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She already had a TikTok account",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-cd-4-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "content-dina-shared-subscribers-first-joined",
+    "questionRef": "2021 OL Section CD Q4(i)",
+    "questionText": "Give two details about the content Dina shared with her subscribers when she first joined TikTok.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "review": {
+      "paperPages": [
+        11,
+        12,
+        13
+      ],
+      "schemePages": [
+        10,
+        11
+      ],
+      "component": "000",
+      "questionPages": [
+        13
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Various challenges",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Short funny clips using scenes from films",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Popular music of western pop-stars",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Motivation videos to make this world a better place.",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-cd-4-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "CD",
+    "topicId": "russian-3-0",
+    "conceptId": "dina-keep-tiktok-subscribers-interested",
+    "questionRef": "2021 OL Section CD Q4(ii)",
+    "questionText": "How did Dina keep her TikTok subscribers interested in her. Give two details.",
+    "totalMarks": 4,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — CD",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 10, 11.",
+    "review": {
+      "paperPages": [
+        11,
+        12,
+        13
+      ],
+      "schemePages": [
+        10,
+        11
+      ],
+      "component": "000",
+      "questionPages": [
+        13
+      ],
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Allocate 2 marks for each correct idea/concept and 1 mark for a partially correct idea/concept."
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She joined different groups",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Fitness",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Vocal",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Acting",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "English language",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "4-5 videos a day",
+              "marks": 2,
+              "steps": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Answer in English or Irish. Marking scheme page 3: Do not penalise answers supplied in Russian."
+    }
+  },
+  {
+    "id": "ru-2021-ol-la1",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "LA1",
+    "topicId": "russian-3-2",
+    "conceptId": "out-following-phrases-handwritten-cursive-script",
+    "questionRef": "2021 OL Section LA1",
+    "questionText": "Write out two of the following phrases in handwritten/cursive script.\n\nмеждународный фестиваль\nвсе выступления\nпосетить город\nроссийские музыканты",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — LA1",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 5.",
+    "review": {
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "component": "000"
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "Two of the following phrases in handwritten, cursive script."
+      ],
+      "criteria": [
+        {
+          "id": "phrase-1",
+          "label": "Chosen phrase 1",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidance": [
+            "2 x 3 marks"
+          ]
+        },
+        {
+          "id": "phrase-2",
+          "label": "Chosen phrase 2",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidance": [
+            "2 x 3 marks"
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    }
+  },
+  {
+    "id": "ru-2021-ol-la2",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "LA2",
+    "topicId": "russian-3-2",
+    "conceptId": "put-following-expressions-into-nominative-case",
+    "questionRef": "2021 OL Section LA2",
+    "questionText": "Put three of the following expressions into the nominative case.",
+    "totalMarks": 6,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — LA2",
+      "pages": [
+        7
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 6.",
+    "review": {
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        6
+      ],
+      "component": "000",
+      "correctsExisting": true
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "Put three of the following expression into the nominative case."
+      ],
+      "count": 3,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "(на) первом этаже — первый этаж",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "необходимую бытовую технику — необходимая бытовая техника",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "(для) летнего отдыха — летний отдых",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "термальным комплексом — термальный комплекс",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "(до) Красной Поляны — Красная Поляна",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "железнодорожного вокзала — железнодорожный вокзал",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    }
+  },
+  {
+    "id": "ru-2021-ol-mm",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "MM",
+    "topicId": "russian-3-5",
+    "conceptId": "match-words-table-correct-meaning-table",
+    "questionRef": "2021 OL Section MM",
+    "questionText": "Match the words in Table 1 with the correct \nmeaning in Table 2.  \n \nInsert the number of the appropriate question  \nin the box beside its answer. \n1.   Кинотеатр \n6.   Кафе \n2.   Почтa \n7.   Банк \n3.   Библиотека \n8.   Церковь \n4.   Отель   \n9.   Cупермаркет \n5.   Музей \n10. Cтадион \n \n \nЭто денежно-кредитная организация; вы можете открыть счёт и взять кредит. \n \n \n \nЭто помещение для публичного показа кинофильмов. \n \n \n \nБольшой магазин где можно купить продукты, товары для дома,товары для детей \nи т. д.   \n \n \n  \nЭто место, где находится много памятников искусства, предметы и документы, \nимеющие культурное, научное, историческое значение. \n \n \n \nЗаведение, в котором подают кофе, шоколад, какао и кондитерские изделия. \n \n \n \nСооружение для спортивных занятий и игр, состоящее из футбольного поля, \nплощадок и беговых дорожек, окруженное трибунами для зрителей. \n \n \n \nДом с меблированными комнатами для кратковременного проживания туристов. \nВ каждом  номерe есть ванная комната и туалет. \n \n \n \nЗдесь вы можете отправить или получить письмо, купить конверты и открытки. \n \n \n \nСобрание книг, а также место где они хранятся. Здесь вы можете сесть и почитать \nкниги и журналы или взять их на время домой. \n \n \n \nЗдание для богослужения, храм для христиан. \n \n",
+    "totalMarks": 40,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — MM",
+      "pages": [
+        8
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 7.",
+    "review": {
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        7
+      ],
+      "component": "000"
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [],
+      "count": 10,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Это денежно-кредитная организация; вы можете открыть счёт и взять кредит. — 7",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Это помещение для публичного показа кинофильмов. — 1",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Большой магазин где можно купить продукты, товары для дома,товары для детей и т. д. — 9",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Это место, где находится много памятников искусства, предметы и документы, имеющие культурное, научное, историческое значение. — 5",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Заведение, в котором подают кофе, шоколад, какао и кондитерские изделия. — 6",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Сооружение для спортивных занятий и игр, состоящее из футбольного поля, площадок и беговых дорожек, окруженное трибунами для зрителей. — 10",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Дом с меблированными комнатами для кратковременного проживания туристов. В каждом номерe есть ванная комната и туалет. — 4",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Здесь вы можете отправить или получить письмо, купить конверты и открытки. — 2",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Собрание книг, а также место где они хранятся. Здесь вы можете сесть и почитать книги и журналы или взять их на время домой. — 3",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "id": "answer-10",
+          "label": "Answer 10",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Здание для богослужения, храм для христиан. — 8",
+              "marks": 4
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    }
+  },
+  {
+    "id": "ru-2021-ol-sd",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "SD",
+    "topicId": "russian-3-3",
+    "conceptId": "read-through-following-dialogue-insert-words",
+    "questionRef": "2021 OL Section SD",
+    "questionText": "Read through the following dialogue and insert words in the spaces provided. Answer Group A or Group B Select your answers from the lists supplied below. All the words are provided in the appropriate form.\n\nFocail in easnamh/ Missing words/ Пропущенные слова\n\nGrúpa A / Group A\n\n                 кто         как          где        какие      почему\n\n\nСтепан: Надя, …………………….. ты планируешь провести выходные?\n\nНадя: Я собираюсь прогуляться в центральном парке и пофотографировать окружающую\nприроду.\n\nСтепан: ………………………………… ты любишь проводить свое свободное время?\n\nНадя: Фотография — это одно из моих недавних хобби. Мне в особенности нравится\nфотографировать деревья и цветы, животных и птиц. Помимо этого, мне нравится проводить\nвыходные за просмотром своего любимого комедийного сериала и за чтением детективных\nисторий.\n\nСтепан: Звучит заманчиво. Мне тоже нравятся детективные истории. А ………………………… твой\nлюбимый писатель?\n\nНадя: Агата Кристи. Больше всего мне нравится читать её рассказы о мисс Марпл.\n\nСтепан: …………………………. тебе нравится мисс Марпл? Я читал только об Эркюле Пуаро.\n\nНадя: Потому что мисс Джейн Марпл — это умная, пожилая леди, которая хорошо\nраскрывает преступления. Также как и Эркюль Пуаро, она детектив-консультант. Эти\nперсонажи оба довольно знамениты и популярны.\n\nСтепан: Понятно. Ты также упомянула, что смотришь сериалы. ………………………………… твои\nлюбимые?\n\nНадя: Когда у меня есть свободное время, я люблю смотреть комедийный сериал под\nназванием «Друзья».\n\n                          OR/NÓ\n\n\nGrúpa B / Group B\n\n\n              сколько     o чём       какие        что       какую\n\n\nНадя: Когда у меня есть свободное время, я люблю смотреть комедийный сериал под\nназванием «Друзья».\n\nСтепан: ……………………………………. он?\n\nНадя: Это американский сериал о пяти друзьях, которые живут в одной квартире. Они очень\nвесёлые. Каждый эпизод длится примерно двадцать минут и полон смешных ситуаций.\nОн тебе точно понравится. Кстати, а какие у тебя хобби?\n\nСтепан: Ну, одним из моих любимых занятий является игра в теннис.\n\nНадя: …………………………….. времени ты уделяешь теннису?\n\nСтепан: Дважды в неделю я отправляюсь на местный корт, чтобы играть с тренером.\nПоэтому, можно сказать, что теннис — это мое основное хобби.\n\nНадя: …………………………….. ещё ты любишь делать в свободное время?\n\nСтепан: Обычно на выходных я слушаю хорошую музыку и смотрю фантастику.\n\nНадя: ……………………………. музыку ты любишь больше всего?\n\nСтепан: Ты удивишься, но я люблю электронную музыку.\n\nНадя: А ............................ книги ты любишь читать?\n\nСтепан: В основном я читаю книги Стивена Кинга.\n\nНадя: Ясно. Я пыталась прочесть одну из его книг, но если честно, то она мне не\nпонравилась.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "gap-1",
+        "kind": "point",
+        "verbatim": "где",
+        "marks": 4
+      },
+      {
+        "id": "gap-2",
+        "kind": "point",
+        "verbatim": "как",
+        "marks": 4
+      },
+      {
+        "id": "gap-3",
+        "kind": "point",
+        "verbatim": "кто",
+        "marks": 4
+      },
+      {
+        "id": "gap-4",
+        "kind": "point",
+        "verbatim": "почему/как",
+        "marks": 4
+      },
+      {
+        "id": "gap-5",
+        "kind": "point",
+        "verbatim": "какие",
+        "marks": 4
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — SD",
+      "pages": [
+        9,
+        10
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 8, 9.",
+    "review": {
+      "paperPages": [
+        9,
+        10
+      ],
+      "schemePages": [
+        8,
+        9
+      ],
+      "component": "000"
+    },
+    "kind": "question",
+    "answerVariants": [
+      {
+        "id": "group-a",
+        "label": "Group A",
+        "rows": [
+          {
+            "id": "gap-1",
+            "kind": "point",
+            "verbatim": "где",
+            "marks": 4
+          },
+          {
+            "id": "gap-2",
+            "kind": "point",
+            "verbatim": "как",
+            "marks": 4
+          },
+          {
+            "id": "gap-3",
+            "kind": "point",
+            "verbatim": "кто",
+            "marks": 4
+          },
+          {
+            "id": "gap-4",
+            "kind": "point",
+            "verbatim": "почему/как",
+            "marks": 4
+          },
+          {
+            "id": "gap-5",
+            "kind": "point",
+            "verbatim": "какие",
+            "marks": 4
+          }
+        ]
+      },
+      {
+        "id": "group-b",
+        "label": "Group B",
+        "rows": [
+          {
+            "id": "gap-1",
+            "kind": "point",
+            "verbatim": "o чём",
+            "marks": 4
+          },
+          {
+            "id": "gap-2",
+            "kind": "point",
+            "verbatim": "сколько",
+            "marks": 4
+          },
+          {
+            "id": "gap-3",
+            "kind": "point",
+            "verbatim": "что",
+            "marks": 4
+          },
+          {
+            "id": "gap-4",
+            "kind": "point",
+            "verbatim": "какую",
+            "marks": 4
+          },
+          {
+            "id": "gap-5",
+            "kind": "point",
+            "verbatim": "какие",
+            "marks": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ru-2021-ol-sa",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "SA",
+    "topicId": "russian-3-6",
+    "conceptId": "sentences-following-topics-russian-english-answer",
+    "questionRef": "2021 OL Section SA",
+    "questionText": "Write 3-5 sentences on ONE of the following topics in Russian or English. Each answer should contain three factual details. Marks are awarded for relevant content and textual coherence. Indicate which essay you are writing by supplying the essay title.\n\n1. Социальные сети в РФ / 1. Social media in the Russian Federation\n2. Стиль жизни в РФ / 2. Lifestyle in the Russian Federation\n3. Жильё в РФ / 3. Housing in the Russian Federation\n4. Известный город или деревня в РФ / 4. A famous city or village in the Russian Federation\n5. Магазины в РФ / 5. Shops in the Russian Federation",
+    "totalMarks": 15,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — SA",
+      "pages": [
+        14
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 12.",
+    "review": {
+      "paperPages": [
+        14
+      ],
+      "schemePages": [
+        12
+      ],
+      "component": "000"
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "Write 3-5 sentences on ONE of the following topics in Russian or English. Each answer should contain three factual details. Marks are awarded for relevant content and textual coherence.",
+        "The quality of the English/Russian will only be an assessment factor insofar as it impedes communication."
+      ],
+      "criteria": [
+        {
+          "id": "content",
+          "label": "Content",
+          "maxMarks": 12,
+          "permittedMarks": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "guidance": [
+            "Allocate 4 marks for each correct idea/concept up to a maximum of 12 marks Allocate 2 marks for a partially correct idea/concept up to a maximum of 6 marks."
+          ]
+        },
+        {
+          "id": "coherence",
+          "label": "Textual coherence",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "3",
+              "marks": [
+                3
+              ],
+              "guidance": [
+                "Excellent organisation. A high degree of coherence throughout."
+              ]
+            },
+            {
+              "label": "2",
+              "marks": [
+                2
+              ],
+              "guidance": [
+                "Material generally developed within a carefully planned framework. Generally well- constructed but lacking coherence in places."
+              ]
+            },
+            {
+              "label": "1",
+              "marks": [
+                1
+              ],
+              "guidance": [
+                "Satisfactory organisation of material. Development of ideas patchy and/or unambitious. Rambling and/or repetitive at times."
+              ]
+            },
+            {
+              "label": "0",
+              "marks": [
+                0
+              ],
+              "guidance": [
+                "Limited ability to organise material and develop ideas. Structure lacks coherence."
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    }
+  },
+  {
+    "id": "ru-2021-ol-ew",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "EW",
+    "topicId": "russian-3-9",
+    "conceptId": "sentences-following-topics-russian-prompts-questions",
+    "questionRef": "2021 OL Section EW",
+    "questionText": "Write 6-10 sentences on ONE of the following topics IN RUSSIAN. The prompts for the questions below are suggestions only.\n\n1. Напишите об известном человеке, который вам интересен в социальных сетях. Опишите этого человека. Почему этот человек популярен? Почему вам интересен этот человек?\n\n1. Write about a famous person you follow on social media. Describe this person. Why are they famous? Why do you follow this person?\n\n2. Опишите каникулы, которые вам понравились больше всего. Что вы делали? Куда вы ездили? С кем вы провели каникулы? Почему это были самые лучшие каникулы в вашей жизни?\n\n2. Write a description of the best holiday you ever had. What did you do? Where did you go? Who did you spend your holiday with? Why was it the best holiday ever?\n\n3. Опишите ваш дом. Где он находится? Опишите комнаты, которые есть в вашем доме. Какая ваша любимая комната? Почему это ваша любимая комната?\n\n3. Write a description of your home. Where is your home situated? Describe the rooms in your house. What is your favourite room? Why is it your favourite room?",
+    "totalMarks": 30,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — EW",
+      "pages": [
+        15
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering. The 2021 paper offers 175 written marks. Choose one information-retrieval text and its language task; all alternatives remain available here for practice."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 13, 14.",
+    "review": {
+      "paperPages": [
+        15
+      ],
+      "schemePages": [
+        13,
+        14
+      ],
+      "component": "000"
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-writing",
+      "taskRequirements": [
+        "Write 6-10 sentences on ONE of the following topics IN RUSSIAN. The prompts for the questions below are suggestions only.",
+        "No marks are awarded for additional information/content."
+      ],
+      "criteria": [
+        {
+          "id": "content",
+          "label": "Communication + content",
+          "maxMarks": 12,
+          "permittedMarks": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "guidance": [
+            "2 points for content details up to maximum of 12 Accuracy and fluency"
+          ]
+        },
+        {
+          "id": "expression",
+          "label": "Language + expression",
+          "maxMarks": 12,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "12",
+              "marks": [
+                12
+              ],
+              "guidance": [
+                "Almost flawless in terms of accuracy. Shows sophistication in the manipulation of the structures of the language."
+              ]
+            },
+            {
+              "label": "10-11",
+              "marks": [
+                10,
+                11
+              ],
+              "guidance": [
+                "A few errors, mostly of a minor nature. Successful manipulation of the language."
+              ]
+            },
+            {
+              "label": "7-9",
+              "marks": [
+                7,
+                8,
+                9
+              ],
+              "guidance": [
+                "A number of major grammatical or spelling errors made, without impairing communication significantly. Satisfactory to good manipulation of the language."
+              ]
+            },
+            {
+              "label": "4-6",
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "Communication often impaired by basic error e.g. agreements, verb forms. Limited ability to manipulate language + mainly simple 'translated' language, which impedes communication."
+              ]
+            },
+            {
+              "label": "1-3",
+              "marks": [
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "Accuracy only in the simplest forms. A high incidence of basic error. Very little ability to manipulate language."
+              ]
+            },
+            {
+              "label": "0",
+              "marks": [
+                0
+              ],
+              "guidance": [
+                "Knowledge and range so limited that no mark can be awarded"
+              ]
+            }
+          ],
+          "limits": [
+            {
+              "id": "lower-expression",
+              "maxMarks": 9,
+              "when": {
+                "any": [
+                  {
+                    "criterionIds": [
+                      "content"
+                    ],
+                    "atMost": 6
+                  }
+                ]
+              },
+              "guidance": [
+                "If the content mark is 6 or less, mark expression out of 9 and write ‘lower E’ to indicate this."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "coherence",
+          "label": "Textual coherence",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "6",
+              "marks": [
+                6
+              ],
+              "guidance": [
+                "Excellent organisation. A high degree of coherence throughout."
+              ]
+            },
+            {
+              "label": "4-5",
+              "marks": [
+                4,
+                5
+              ],
+              "guidance": [
+                "Material generally developed within a carefully planned framework. Generally well-constructed but lacking coherence in places."
+              ]
+            },
+            {
+              "label": "2-3",
+              "marks": [
+                2,
+                3
+              ],
+              "guidance": [
+                "Satisfactory organisation of material. Development of ideas patchy and/or unambitious. Rambling and/or repetitive at times."
+              ]
+            },
+            {
+              "label": "1",
+              "marks": [
+                1
+              ],
+              "guidance": [
+                "Limited ability to organise material and develop ideas. Structure lacks coherence."
+              ]
+            },
+            {
+              "label": "0",
+              "marks": [
+                0
+              ],
+              "guidance": [
+                "So ill-organised and lacking coherence that no credit can be given."
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    }
+  },
+  {
+    "id": "ru-2021-ol-l1-1",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "L1",
+    "topicId": "russian-0-8",
+    "conceptId": "piece-maxim-describes-family-holidays",
+    "questionRef": "2021 OL Section L1 Q1",
+    "questionText": "In this piece Maxim describes his family’s\nholidays. Give two details.",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "review": {
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        15
+      ],
+      "component": "A00",
+      "guidancePages": [
+        15
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "His parents want to go to the Black sea",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Every year + in August they go to the same place",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "It’s a small village + 20km away from Sochi",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "There are mountains not far from Sochi",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2021-ol-l1-2",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "L1",
+    "topicId": "russian-0-3",
+    "conceptId": "andrei-interests",
+    "questionRef": "2021 OL Section L1 Q2",
+    "questionText": "Give one detail about Andrei’s interests.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "review": {
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        15
+      ],
+      "component": "A00",
+      "guidancePages": [
+        15
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He is interested in sports",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Nearly every day he goes to the tennis court",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He loves playing chess",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Nearly every weekend he plays chess (spends his time over the chess board)",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He would like to learn how to play the guitar or drums",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "guitar-partial",
+          "label": "Published partial answer",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "partial",
+              "text": "Plays guitar",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2021-ol-l1-3",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "L1",
+    "topicId": "russian-0-5",
+    "conceptId": "anna-want-bring-charlie-vet",
+    "questionRef": "2021 OL Section L1 Q3",
+    "questionText": "Why does Anna want to bring Charlie to the\nvet? Give one detail.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "review": {
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        15
+      ],
+      "component": "A00",
+      "guidancePages": [
+        15
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She is worried about his state",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He has lost appetite (in the past couple of days)",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "His eyes are wet",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He doesn’t seem to have energy",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He is lying down all the time",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He doesn’t want to play",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2021-ol-l1-4",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "L1",
+    "topicId": "russian-0-8",
+    "conceptId": "man-telephone-number",
+    "questionRef": "2021 OL Section L1 Q4",
+    "questionText": "What is this man’s telephone number?",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — L1",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 15.",
+    "review": {
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        15
+      ],
+      "component": "A00",
+      "guidancePages": [
+        15
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "495 – 380 – 2464",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2021-ol-l2-1-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "L2",
+    "topicId": "russian-0-1",
+    "conceptId": "victor",
+    "questionRef": "2021 OL Section L2 Q1(i)",
+    "questionText": "Give two details about Victor.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 5,
+    "rows": [
+      {
+        "id": "answers",
+        "kind": "anyN",
+        "verbatim": "The answers the scheme accepts",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "perOptionSteps": [
+            2,
+            3
+          ],
+          "options": [
+            "His family is from Moscow",
+            "He moved to Ireland 10 years ago when he was 6",
+            "He plays Gaelic football / GAA"
+          ]
+        },
+        "contextNote": "There is no penalty for excess material which does not invalidate the answer. Accept any formulation which communicates the information sought. Accept answers to questions written in the wrong place. The quality of the English will only be an assessment factor insofar as it impedes communication. If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise Published tariff: 2 marks + 3 marks. Choose two distinct accepted details; the ordered awards are 2 and then 3."
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 16.",
+    "review": {
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        16
+      ],
+      "component": "A00",
+      "guidancePages": [
+        15
+      ]
+    },
+    "kind": "question",
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2021-ol-l2-1-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "L2",
+    "topicId": "russian-0-3",
+    "conceptId": "victor-talks-first-experiences-gaelic-football",
+    "questionRef": "2021 OL Section L2 Q1(ii)",
+    "questionText": "Victor talks about his first experiences\nwith Gaelic football. Give one detail.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 16.",
+    "review": {
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        16
+      ],
+      "component": "A00",
+      "guidancePages": [
+        15
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He didn’t know about this game when he moved to Ireland",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He wanted to try it and make new friends",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "He looked silly at the beginning",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "It took him a year to learn the technique",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Friends helped him",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2021-ol-l2-2",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "L2",
+    "topicId": "russian-0-3",
+    "conceptId": "victor-talks-club",
+    "questionRef": "2021 OL Section L2 Q2",
+    "questionText": "Victor talks about his club. Give one detail.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 16.",
+    "review": {
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        16
+      ],
+      "component": "A00",
+      "guidancePages": [
+        15
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "It’s called St Patrick’s",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Victor has been a member for five years",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Club membership costs €50",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Membership includes insurance, navy and golden jersey",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Victor plays in the under-15 team",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "They have training twice a week + on Tuesdays and Thursdays",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "They have matches at weekends",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "They hope to get to the final this year and maybe even win",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Next week they are playing in the quarter-final",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "The booklet labels this question2; scheme page16 labels it2(i). This card follows the booklet."
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2021-ol-l2-3",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "L2",
+    "topicId": "russian-0-3",
+    "conceptId": "victor-most-like-gaelic-football",
+    "questionRef": "2021 OL Section L2 Q3",
+    "questionText": "What does Victor most like about Gaelic\nfootball? Give one detail.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 16.",
+    "review": {
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        16
+      ],
+      "component": "A00",
+      "guidancePages": [
+        15
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Lots of things",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Being in a good physical form",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Learning to play in a team",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "His friends",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Excellent relations between friends",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2021-ol-l2-4",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "L2",
+    "topicId": "russian-0-3",
+    "conceptId": "victor-hopes-dreams-future",
+    "questionRef": "2021 OL Section L2 Q4",
+    "questionText": "What are Victor’s hopes/dreams for the\nfuture? Give one detail.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — L2",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 16.",
+    "review": {
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        16
+      ],
+      "component": "A00",
+      "guidancePages": [
+        15
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "To play better with each year",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "To win a few medals with the club",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "To share this joy with the team",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "To become the captain of the team",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "To play for the county",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2021-ol-l3-1",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "L3",
+    "topicId": "russian-0-8",
+    "conceptId": "included-price-tour",
+    "questionRef": "2021 OL Section L3 Q1",
+    "questionText": "What is included in the price of the tour?\nGive one detail.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17.",
+    "review": {
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        17
+      ],
+      "component": "A00",
+      "guidancePages": [
+        15
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "You will visit 2 Russian capital cities",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "You will see the biggest lakes in Europe",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "You will be introduced to unique architecture of the island Kizhi",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Travelling along the rivers and canals in central Russia",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Transfer from Dublin to St Petersburg",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Accommodation on the cruise ship on the Volga",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "3 meals a day",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-8",
+          "label": "Answer 8",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Tickets to the local museums",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-9",
+          "label": "Answer 9",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Tour guides",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2021-ol-l3-2-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "L3",
+    "topicId": "russian-0-8",
+    "conceptId": "cabins-steamboat",
+    "questionRef": "2021 OL Section L3 Q2(i)",
+    "questionText": "Give one detail about the cabins on the steamboat.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17.",
+    "review": {
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        17
+      ],
+      "component": "A00",
+      "guidancePages": [
+        15
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Air conditioner",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "TV",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Shower",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Toilet",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2021-ol-l3-2-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "L3",
+    "topicId": "russian-0-8",
+    "conceptId": "facilities-steam-boat",
+    "questionRef": "2021 OL Section L3 Q2(ii)",
+    "questionText": "Give one detail about the facilities on the\nsteam boat.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17.",
+    "review": {
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        17
+      ],
+      "component": "A00",
+      "guidancePages": [
+        15
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Two restaurants",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "3 bars",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Reading hall",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Small cinema",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Gym",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2021-ol-l3-3",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "L3",
+    "topicId": "russian-0-8",
+    "conceptId": "island-kizhi",
+    "questionRef": "2021 OL Section L3 Q3",
+    "questionText": "Give one detail about the island of Kizhi.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — L3",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17.",
+    "review": {
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        17
+      ],
+      "component": "A00",
+      "guidancePages": [
+        15
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "There is a wooden church with 22 spires",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Built without using nails",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Built in the 18th century",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "You can visit a village house and see the life of people in North Russia",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Open air museum",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2021-ol-l3-4",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "L3",
+    "topicId": "russian-2-1",
+    "conceptId": "famous-tourist-attractions-visit-moscow-while",
+    "questionRef": "2021 OL Section L3 Q4",
+    "questionText": "Name two famous tourist attractions you\ncould visit in Moscow while on this trip.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 5,
+    "rows": [
+      {
+        "id": "answers",
+        "kind": "anyN",
+        "verbatim": "The answers the scheme accepts",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "perOptionSteps": [
+            2,
+            3
+          ],
+          "options": [
+            "Bolshoi Theatre",
+            "Moscow Circus",
+            "Gorky Park",
+            "Pushkin Museum",
+            "Tretyakov Gallery"
+          ]
+        },
+        "contextNote": "There is no penalty for excess material which does not invalidate the answer. Accept any formulation which communicates the information sought. Accept answers to questions written in the wrong place. The quality of the English will only be an assessment factor insofar as it impedes communication. If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise Published tariff: 2 marks + 3 marks. Choose two distinct accepted details; the ordered awards are 2 and then 3."
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — L3",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 17.",
+    "review": {
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "component": "A00",
+      "guidancePages": [
+        15
+      ]
+    },
+    "kind": "question",
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2021-ol-l4-1-i",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "L4",
+    "topicId": "russian-0-1",
+    "conceptId": "personal-sasha",
+    "questionRef": "2021 OL Section L4 Q1(i)",
+    "questionText": "Give one personal detail about Sasha.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — L4",
+      "pages": [
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 18.",
+    "review": {
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        18
+      ],
+      "component": "A00",
+      "guidancePages": [
+        15
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She graduated from the Journalism faculty + of MGU (Moscow State University)",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She got her Master’s Degree + in Higher School of Economics",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Did karate as a child",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Born 27 June",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Lives in Moscow",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2021-ol-l4-1-ii",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "L4",
+    "topicId": "russian-0-1",
+    "conceptId": "sasha-first-posts-instagram",
+    "questionRef": "2021 OL Section L4 Q1(ii)",
+    "questionText": "Give one detail about Sasha’s first posts on\nInstagram.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — L4",
+      "pages": [
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 18.",
+    "review": {
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        18
+      ],
+      "component": "A00",
+      "guidancePages": [
+        15
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Joking/funny",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "About herself",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "About food",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2021-ol-l4-2",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "L4",
+    "topicId": "russian-0-11",
+    "conceptId": "sasha-success",
+    "questionRef": "2021 OL Section L4 Q2",
+    "questionText": "Give two details about Sasha’s success.",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — L4",
+      "pages": [
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 18.",
+    "review": {
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        18
+      ],
+      "component": "A00",
+      "guidancePages": [
+        15
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 2,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Sasha is the author of one of the most readable and discussed Instagram blogs on Runet/the Russian Internet",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She has 2 million subscribers",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She earns up to 70 million roubles a year",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-4",
+          "label": "Answer 4",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She has her successful YouTube channel",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-5",
+          "label": "Answer 5",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She has her own clothes brand",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-6",
+          "label": "Answer 6",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She has a website with details of her projects",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-7",
+          "label": "Answer 7",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She does webinars on blogging, nutrition and fitness",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
+  },
+  {
+    "id": "ru-2021-ol-l4-3",
+    "subjectId": "russian",
+    "level": "ordinary",
+    "year": 2021,
+    "section": "L4",
+    "topicId": "russian-0-1",
+    "conceptId": "sasha-private-life",
+    "questionRef": "2021 OL Section L4 Q3",
+    "questionText": "Give one detail about Sasha’s private life.",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "Official question and source",
+      "title": "2021 Ordinary Russian — L4",
+      "pages": [
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Listen to the official recording and answer the printed question. The transcript is not shown before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 18.",
+    "review": {
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        18
+      ],
+      "component": "A00",
+      "guidancePages": [
+        15
+      ]
+    },
+    "kind": "rubric",
+    "rubric": {
+      "system": "language-points",
+      "taskRequirements": [
+        "There is no penalty for excess material which does not invalidate the answer.",
+        "Accept any formulation which communicates the information sought.",
+        "Accept answers to questions written in the wrong place.",
+        "The quality of the English will only be an assessment factor insofar as it impedes communication.",
+        "If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise"
+      ],
+      "count": 1,
+      "groups": [
+        {
+          "id": "answer-1",
+          "label": "Answer 1",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "She’s not married",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-2",
+          "label": "Answer 2",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Not much is known",
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "id": "answer-3",
+          "label": "Answer 3",
+          "answerCount": 1,
+          "rows": [
+            {
+              "id": "full",
+              "text": "Ex-boyfriend Konstantin",
+              "marks": 5
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": ""
+    },
+    "additionalTopicIds": [
+      "russian-1-0"
+    ],
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Russian listening",
+      "title": "2021 Russian · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "secFileid": "LC099ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC099ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · sections I–IV. Use the player to pause, replay or move through the recording."
+    }
   }
 ]
