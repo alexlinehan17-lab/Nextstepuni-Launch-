@@ -67,7 +67,15 @@
 .nsu-nav-account-copy > span { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size:13px; }
 .nsu-nav-account-copy small { color:var(--muted-foreground); font-size:11px; }
 .nsu-nav-account-chevron { flex-shrink:0; color:var(--muted-foreground); }
-.nsu-nav-unread-dot { position:absolute; left:28px; top:10px; width:7px; height:7px; border-radius:50%; background:#f26b1f; box-shadow:0 0 0 2px var(--sidebar); }
+.nsu-nav-updates { display:flex; align-items:center; gap:9px; width:100%; min-height:44px; padding:10px 12px; border:1px solid var(--sidebar-border); border-radius:8px; background:var(--sidebar); color:var(--sidebar-foreground); font-size:13px; font-weight:600; text-align:left; cursor:pointer; }
+.nsu-nav-updates > svg { width:18px; height:18px; flex-shrink:0; }
+.nsu-nav-updates-label { flex:1; }
+.nsu-nav-updates[data-unread] { background:#292925; border-color:#292925; color:#fff; }
+.dark .nsu-nav-updates[data-unread] { background:#fff; border-color:#fff; color:#292925; }
+.nsu-nav-updates:hover { filter:brightness(.94); }
+.nsu-nav-updates:focus-visible { outline:2px solid var(--sidebar-ring); outline-offset:2px; }
+.nsu-nav-updates-count { padding:3px 6px; border-radius:4px; background:#fff; color:#292925; font-size:11px; line-height:1.2; white-space:nowrap; font-variant-numeric:tabular-nums; }
+.dark .nsu-nav-updates-count { background:#292925; color:#fff; }
 .nsu-nav-notification-count { margin-left:auto; padding:0 6px; border-radius:20px; background:var(--accent); color:var(--foreground); font-size:11px; }
 .nsu-kobra-nav .nsu-nav-account-menu { width:304px; max-width:calc(100vw - 24px); font-family:var(--font-sans); }
 .nsu-kobra-nav > div:has(> [data-slot=dropdown-menu-content]),
@@ -87,13 +95,16 @@
 [data-slot=sidebar][data-state=collapsed] .nsu-nav-brand-row { justify-content:center; }
 [data-slot=sidebar][data-state=collapsed] .nsu-nav-account-copy, [data-slot=sidebar][data-state=collapsed] .nsu-nav-account-chevron { display:none; }
 [data-slot=sidebar][data-state=collapsed] .nsu-nav-account { justify-content:center; padding:9px 0; }
-[data-slot=sidebar][data-state=collapsed] .nsu-nav-unread-dot { left:28px; }
+[data-slot=sidebar][data-state=collapsed] .nsu-nav-updates { flex-direction:column; justify-content:center; gap:3px; min-height:44px; padding:6px 0; }
+[data-slot=sidebar][data-state=collapsed] .nsu-nav-updates-label,
+[data-slot=sidebar][data-state=collapsed] .nsu-nav-updates-new { display:none; }
+[data-slot=sidebar][data-state=collapsed] .nsu-nav-updates-count { padding:1px 3px; font-size:9px; }
 [data-slot=sidebar][data-state=collapsed] .nsu-nav-label { opacity:0; filter:blur(3px); translate:-6px; visibility:hidden; width:0; }
 [data-slot=sidebar][data-state=collapsed] .nsu-nav-group { padding:6px 12px; }
 [data-slot=sidebar][data-state=collapsed] .nsu-nav-group-label { margin-top:-28px; margin-bottom:0; opacity:0; pointer-events:none; }
 [data-slot=sidebar][data-state=collapsed] .nsu-nav-button { width:40px !important; height:36px !important; padding:8px 10px !important; gap:0; }
 @media (min-width:768px) {
-  .student-sidebar-shell .sh-profile { display:none; }
+  .student-sidebar-shell .student-sidebar-page .sh-profile { display:none; }
   .student-sidebar-shell .student-sidebar-page [data-student-page-header] { left:var(--navigation-width); right:8px; top:8px; border-radius:16px 16px 0 0; border-bottom-color:var(--outline-soft); background:var(--surface-paper); transition:left 300ms cubic-bezier(.32,.72,0,1); }
 }
 /* Launchpad is a continuous app surface, including its fixed navigation bar. */

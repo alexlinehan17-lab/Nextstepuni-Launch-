@@ -16,6 +16,7 @@ export type NotificationType =
   | 'streak-milestone'
   | 'study-insight'
   | 'subject-neglect'
+  | 'product-update'
   | 'gc-broadcast';
 
 export interface AppNotification {
@@ -24,7 +25,7 @@ export interface AppNotification {
   title: string;
   /**
    * Display text for APP-GENERATED notifications (comeback, streak-milestone,
-   * study-insight, subject-neglect). Staff-originated types must NOT be
+   * study-insight, subject-neglect, product-update). Staff-originated types must NOT be
    * rendered from this field — see `messageId` and STAFF_ORIGINATED below.
    */
   body: string;

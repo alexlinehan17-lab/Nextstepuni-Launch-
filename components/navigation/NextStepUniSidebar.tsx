@@ -77,6 +77,7 @@ export default function NextStepUniSidebar(props: Props) {
   }, [preferredWidth, resizing]);
   const content = useRef<HTMLDivElement>(null);
   const accountTrigger = useRef<HTMLButtonElement>(null);
+  const updatesTrigger = useRef<HTMLButtonElement>(null);
   const reduced = useReducedMotion();
   const { viewState, activeTool } = nav.state;
   const email = auth.currentUser?.uid === props.user.uid ? auth.currentUser.email : null;
@@ -154,10 +155,17 @@ export default function NextStepUniSidebar(props: Props) {
           </SidebarContent>
         </LayoutGroup>
         <SidebarFooter className="nsu-nav-footer">
+          <button ref={updatesTrigger} type="button" className="nsu-nav-updates" data-notification-toggle
+            data-unread={props.unreadCount > 0 || undefined} onClick={toggleNotificationPanel}
+            aria-label={props.unreadCount > 0 ? `Open updates, ${props.unreadCount} unread` : 'Open updates'}
+            title={props.unreadCount > 0 ? `${props.unreadCount} unread updates` : 'Updates'}>
+            <NavigationIcon name="bell" />
+            <span className="nsu-nav-updates-label">Updates</span>
+            {props.unreadCount > 0 && <span className="nsu-nav-updates-count">{props.unreadCount > 99 ? '99+' : props.unreadCount}<span className="nsu-nav-updates-new"> new</span></span>}
+          </button>
           <DropdownMenu>
             <DropdownMenuTrigger ref={accountTrigger} className="nsu-nav-account" aria-label="Open account menu" data-coach="help">
               <Avatar seed={props.settings.avatar || props.user.avatar} alt="" className="nsu-nav-avatar" />
-              {props.unreadCount > 0 && <span className="nsu-nav-unread-dot" aria-label={`${props.unreadCount} unread notifications`} />}
               <span className="nsu-nav-account-copy"><span>{props.user.name}</span><small>{props.user.isAdmin ? 'Admin' : 'Student'}</small></span>
               <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="nsu-nav-account-chevron"><path d="m6 8 4-4 4 4M6 12l4 4 4-4" /></svg>
             </DropdownMenuTrigger>
@@ -198,7 +206,7 @@ export default function NextStepUniSidebar(props: Props) {
       </Sidebar>
       {open && <SidebarResize width={sidebarWidth} minWidth={MIN_WIDTH} maxWidth={maxWidth} defaultWidth={DEFAULT_WIDTH} onWidthChange={setPreferredWidth} onResizingChange={handleResizingChange} />}
       <SidebarInset className="student-sidebar-page">{props.children}</SidebarInset>
-      <NotificationBell uid={props.user.uid} variant="sidebar" returnFocusRef={accountTrigger} onUnreadCountChange={props.onUnreadCountChange} />
+      <NotificationBell uid={props.user.uid} variant="sidebar" returnFocusRef={updatesTrigger} onUnreadCountChange={props.onUnreadCountChange} />
     </SidebarProvider>
   </TooltipProvider></SoundScope>;
 }

@@ -984,6 +984,7 @@ const App: React.FC = () => {
       {user && userProgressReady && !user.isAdmin && !isSchoolStaff(user.role) && (
         <MobileProfileSheet
           isOpen={mobileProfileOpen}
+          onUnreadCountChange={setUnreadNotificationCount}
           onClose={() => setMobileProfileOpen(false)}
           user={user}
           onLogout={handleLogout}
