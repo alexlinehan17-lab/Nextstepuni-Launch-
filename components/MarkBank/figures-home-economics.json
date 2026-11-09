@@ -443,5 +443,40 @@
     "alt": "Original black-and-white photograph of two adults wearing formal outfits. Complete photograph retained: dress, suit, patterned shirt and neckwear, hat, sunglasses, belt and jewellery are visible.",
     "attribution": "SEC Home Economics 2010 Ordinary Level examination paper, page 10 — © State Examinations Commission.",
     "sourceNote": "Original PDF crop, bounds [199, 85, 382, 350], rendered at2×. SHA256 7e336340a581f85609ec5d896ecb2b82550b0c0f1d319d65bd9da7077fa79eef."
+  },
+  "home-economics-2011-hl-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2011-hl-sa-q1.png",
+    "md5": "7e89aaf8a983f701f6459af07e0528ef",
+    "alt": "Original carbohydrate question and blank table: Classification, Example, Food Source. Rows: Monosaccharides, Disaccharides, Polysaccharides.",
+    "attribution": "SEC Home Economics 2011 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 138.7676544189453, 570.219970703125, 322.7875671386719], rendered at 2×. SHA256 4af1d105ea32c92c0f27e46e324ca4a1f7e8a531c9ffe626ece39dafb6155e69."
+  },
+  "home-economics-2011-hl-sa-q4": {
+    "src": "/exam-figures/home-economics/home-economics-2011-hl-sa-q4.png",
+    "md5": "16001ce7ce96cb6968eae021ccd3e7a3",
+    "alt": "Original protein question and blank table: Food / Type of Protein, with Fish, Eggs and Wheat in the food column.",
+    "attribution": "SEC Home Economics 2011 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 598.7276611328125, 570.219970703125, 793.19189453125], rendered at 2×. SHA256 517c3e8d4e40395b2506e93ff0c516cbe59127e9f04134a81b85a9be9f22b5e2."
+  },
+  "home-economics-2011-hl-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2011-hl-sa-q6.png",
+    "md5": "504839dce97cc17e011d0c708442f386",
+    "alt": "Original food-additives question and blank antioxidant table: Example, Function, Example of use.",
+    "attribution": "SEC Home Economics 2011 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 214.6675567626953, 570.219970703125, 351.8876647949219], rendered at 2×. SHA256 b623a86b7fe64b027083de7de2bf296e113c332f3e5bf1a33c32b0d8f6344e96."
+  },
+  "home-economics-2011-hl-sa-q12": {
+    "src": "/exam-figures/home-economics/home-economics-2011-hl-sa-q12.png",
+    "md5": "502a5c5dc4583dcefd28cf1410c01237",
+    "alt": "Original consumer-symbol question with the CE marking and the double-square insulation symbol, both numbered labels and answer spaces retained.",
+    "attribution": "SEC Home Economics 2011 Higher Level examination paper, page 5 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 570.219970703125, 300], rendered at 2×. SHA256 d2f4eceac21e91dd3dec8749955d014f6e65ebc814e87a690a1f6c5b59d74da3."
+  },
+  "home-economics-2011-hl-sb-q1-dairy": {
+    "src": "/exam-figures/home-economics/home-economics-2011-hl-sb-q1-dairy.png",
+    "md5": "bfa99d2b979754430a30285e973fe985",
+    "alt": "Original bar chart: Retail Dairy Market in Republic of Ireland 2009. Milk 39%, Yogurts 26%, Cheese 18%, Cream and fats 17%. Complete four bars, percentage axis, product labels, title, legend and NDC source caption retained. The paper excludes independent/doorstep sales.",
+    "attribution": "SEC Home Economics 2011 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [90, 185, 530, 458], rendered at 2×. SHA256 54dbc2dad72cd8ead1b72b41a79c86b786083229487d436c32c0a573c04d4085."
   }
 }

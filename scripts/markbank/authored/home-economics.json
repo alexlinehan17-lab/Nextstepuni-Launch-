@@ -77052,5 +77052,4454 @@
    "attribution": "SEC Home Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
    "presentationNote": "Open the original examination page to review this task in context."
   }
+ },
+ {
+  "id": "he-2011-hl-sa-q1",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-6",
+  "conceptId": "sa-q1",
+  "level": "higher",
+  "year": 2011,
+  "section": "A",
+  "questionRef": "2011 HL Section A Q1",
+  "questionText": "Complete the following table in relation to carbohydrates.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "pair-1",
+    "kind": "point",
+    "verbatim": "Monosaccharides — glucose — fruit",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "pair-2",
+    "kind": "point",
+    "verbatim": "Monosaccharides — fructose — fruit , honey",
+    "marks": null
+   },
+   {
+    "id": "pair-3",
+    "kind": "point",
+    "verbatim": "Monosaccharides — galactose — digested milk",
+    "marks": null
+   },
+   {
+    "id": "pair-4",
+    "kind": "point",
+    "verbatim": "Disaccharides — sucrose — table sugar",
+    "marks": null
+   },
+   {
+    "id": "pair-5",
+    "kind": "point",
+    "verbatim": "Disaccharides — lactose — milk",
+    "marks": null
+   },
+   {
+    "id": "pair-6",
+    "kind": "point",
+    "verbatim": "Disaccharides — maltose — barley",
+    "marks": null
+   },
+   {
+    "id": "pair-7",
+    "kind": "point",
+    "verbatim": "Polysaccharides — starch — potatoes",
+    "marks": null
+   },
+   {
+    "id": "pair-8",
+    "kind": "point",
+    "verbatim": "Polysaccharides — cellulose — fruit & vegetables",
+    "marks": null
+   },
+   {
+    "id": "pair-9",
+    "kind": "point",
+    "verbatim": "Polysaccharides — pectin, glycogen — fruit",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2011-hl-sa-q1",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2011-hl-sa-q2",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-8",
+  "conceptId": "sa-q2",
+  "level": "higher",
+  "year": 2011,
+  "section": "A",
+  "questionRef": "2011 HL Section A Q2",
+  "questionText": "List three properties of Vitamin A (Retinol).",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "answer-1",
+    "kind": "point",
+    "verbatim": "fat soluble, insoluble in water, soluble in organic solvents",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "answer-2",
+    "kind": "point",
+    "verbatim": "heat stable, destroyed by prolonged high temperatures",
+    "marks": null
+   },
+   {
+    "id": "answer-3",
+    "kind": "point",
+    "verbatim": "destroyed by oxygen",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sa-q3",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-8",
+  "conceptId": "sa-q3",
+  "level": "higher",
+  "year": 2011,
+  "section": "A",
+  "questionRef": "2011 HL Section A Q3",
+  "questionText": "State three effects of calcium deficiency on the body.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "answer-1",
+    "kind": "point",
+    "verbatim": "rickets,",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "answer-2",
+    "kind": "point",
+    "verbatim": "osteoporosis",
+    "marks": null
+   },
+   {
+    "id": "answer-3",
+    "kind": "point",
+    "verbatim": "osteomalacia, osteopenia, tooth decay, poor blood clotting, irregularity in muscle contractions, poor functioning in nerve cells",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sa-q4",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-5",
+  "conceptId": "sa-q4",
+  "level": "higher",
+  "year": 2011,
+  "section": "A",
+  "questionRef": "2011 HL Section A Q4",
+  "questionText": "Name the main type of protein found in each of the foods listed below.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "food-1",
+    "kind": "point",
+    "verbatim": "Fish — myosin, collagen, actin",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "food-2",
+    "kind": "point",
+    "verbatim": "Eggs — albumin, globulin, vitellin, livetin",
+    "marks": null
+   },
+   {
+    "id": "food-3",
+    "kind": "point",
+    "verbatim": "Wheat — gluten, gliadin, glutenin",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2011-hl-sa-q4",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2011-hl-sa-q5",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-3",
+  "conceptId": "sa-q5",
+  "level": "higher",
+  "year": 2011,
+  "section": "A",
+  "questionRef": "2011 HL Section A Q5",
+  "questionText": "In relation to freezing vegetables, explain how loss of vitamin B1 and vitamin C may occur.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "loss-1",
+    "kind": "point",
+    "verbatim": "Blanching results in loss of vitamins, these vitamins are water soluble, lost at high temperatures",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "loss-2",
+    "kind": "point",
+    "verbatim": "if foods are not frozen quickly (slow freezing), ice crystals will be large and vitamins will be lost when food defrosts",
+    "marks": null
+   },
+   {
+    "id": "loss-3",
+    "kind": "point",
+    "verbatim": "a certain loss of vitamin B1 and C on thawing of vegetables if not cooked from frozen.",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sa-q6",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sa-q6",
+  "level": "higher",
+  "year": 2011,
+  "section": "A",
+  "questionRef": "2011 HL Section A Q6",
+  "questionText": "Complete the following table in relation to food additives.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "cell-1",
+    "kind": "point",
+    "verbatim": "Example",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Original antioxidant table, Example: Vitamins A, C, E BHA BHT"
+   },
+   {
+    "id": "cell-2",
+    "kind": "point",
+    "verbatim": "Function",
+    "marks": null,
+    "contextNote": "Original antioxidant table, Function: prevents oxidative rancidity prevents oxidation"
+   },
+   {
+    "id": "cell-3",
+    "kind": "point",
+    "verbatim": "Example of use",
+    "marks": null,
+    "contextNote": "Original antioxidant table, Example of use: fats, cooking oils, crisps, biscuits, stock cubes, cheese spread"
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2011-hl-sa-q6",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2011-hl-sa-q7",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-3",
+  "conceptId": "sa-q7",
+  "level": "higher",
+  "year": 2011,
+  "section": "A",
+  "questionRef": "2011 HL Section A Q7",
+  "questionText": "Name one method used to tenderise meat and explain the principle involved.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "method-1",
+    "kind": "point",
+    "verbatim": "Hanging – animals rested before slaughter to allow glycogen to build up in their muscles. After slaughter muscles stiffen in rigor mortis, making the meat tough. During hanging the glycogen changes to lactic acid, which helps to tenderise the meat. Proteolytic enzymes present in the meat help to break down fibres.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "method-2",
+    "kind": "point",
+    "verbatim": "Mechanical breakdown – pounding the meat with a meat hammer or piercing with knives helps to tenderise the meat by breaking down the meat fibres.",
+    "marks": null
+   },
+   {
+    "id": "method-3",
+    "kind": "point",
+    "verbatim": "Mincing of tougher cuts of meat breaks down the meat fibres.",
+    "marks": null
+   },
+   {
+    "id": "method-4",
+    "kind": "point",
+    "verbatim": "Tenderisers – sprinkled on meat before cooking these contain proteolytic enzymes which breakdown the meat fibres making them more digestible e.g. papain, bromelin.",
+    "marks": null
+   },
+   {
+    "id": "method-5",
+    "kind": "point",
+    "verbatim": "Marinating – before cooking soaking or coating meat with a marinade mixture e.g. oil, wine, lemon juice/vinegar and flavourings helps to tenderise the meat.",
+    "marks": null
+   },
+   {
+    "id": "method-6",
+    "kind": "point",
+    "verbatim": "Slow moist methods of cooking tenderise the meat fibres – e.g. stewing, braising.",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sa-q8",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-4",
+  "conceptId": "sa-q8",
+  "level": "higher",
+  "year": 2011,
+  "section": "A",
+  "questionRef": "2011 HL Section A Q8",
+  "questionText": "Name three common food poisoning bacteria.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "answer-1",
+    "kind": "point",
+    "verbatim": "clostridium botulinum, clostridium welchi",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "answer-2",
+    "kind": "point",
+    "verbatim": "staphylococcus aureus",
+    "marks": null
+   },
+   {
+    "id": "answer-3",
+    "kind": "point",
+    "verbatim": "salmonella, listeria, e. coli",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sa-q9",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-0",
+  "conceptId": "sa-q9",
+  "level": "higher",
+  "year": 2011,
+  "section": "A",
+  "questionRef": "2011 HL Section A Q9",
+  "questionText": "Identify three components of the Management Process. Give an example of when the Management Process may be used.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "components",
+    "kind": "point",
+    "verbatim": "input throughput output",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "examples",
+    "kind": "point",
+    "verbatim": "Meal planning; money management; problem solving; home management; decision making etc.",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sa-q10",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sa-q10",
+  "level": "higher",
+  "year": 2011,
+  "section": "A",
+  "questionRef": "2011 HL Section A Q10",
+  "questionText": "What is Family Income Supplement (FIS)? State two conditions that must be fulfilled in order to qualify for FIS.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "definition",
+    "kind": "point",
+    "verbatim": "A weekly payment for families (including lone parents) where the earner is in low paid employment. F.I.S. payment is 60% of the difference between the net family income and income limit that applies to the family.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Historical 2011 scheme wording and conditions are retained for this examination task."
+   },
+   {
+    "id": "condition-1",
+    "kind": "point",
+    "verbatim": "be in full time employment (+19 hours a week)",
+    "marks": null
+   },
+   {
+    "id": "condition-2",
+    "kind": "point",
+    "verbatim": "have at least one dependent child",
+    "marks": null
+   },
+   {
+    "id": "condition-3",
+    "kind": "point",
+    "verbatim": "have income below a fixed amount for the family size.",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sa-q11",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sa-q11",
+  "level": "higher",
+  "year": 2011,
+  "section": "A",
+  "questionRef": "2011 HL Section A Q11",
+  "questionText": "Outline three conditions that are generally required in order to qualify for a mortgage.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "answer-1",
+    "kind": "point",
+    "verbatim": "amount borrowed, 10% deposit required, term of loan",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred. Historical 2011 scheme wording and conditions are retained for this examination task."
+   },
+   {
+    "id": "answer-2",
+    "kind": "point",
+    "verbatim": "proof of income, steady income, good credit record",
+    "marks": null
+   },
+   {
+    "id": "answer-3",
+    "kind": "point",
+    "verbatim": "mortgage protection policy, mortgage indemnity bond, property in good condition",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sa-q12",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-2",
+  "conceptId": "sa-q12",
+  "level": "higher",
+  "year": 2011,
+  "section": "A",
+  "questionRef": "2011 HL Section A Q12",
+  "questionText": "What information does each of the following symbols convey to the consumer?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "rows": [
+   {
+    "id": "ce",
+    "kind": "point",
+    "verbatim": "Goods comply with European standards of safety.",
+    "marks": null,
+    "contextNote": "The scheme prints 6 marks for the complete question, with no per-answer allocation or partial-credit ladder. Check the complete response; no separate answer marks have been inferred."
+   },
+   {
+    "id": "insulation",
+    "kind": "point",
+    "verbatim": "Appliance has double insulation.",
+    "marks": null
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2011-hl-sa-q12",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "he-2011-hl-sb-q1a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-9",
+  "conceptId": "sb-q1a",
+  "level": "higher",
+  "year": 2011,
+  "section": "B",
+  "questionRef": "2011 HL Section B Q1(a)",
+  "questionText": "Using the information provided in the chart, comment and elaborate on consumer consumption of milk and dairy products in Ireland.",
+  "stem": "The National Dairy Council (NDC) plays a vital role in driving a sustainable dairy industry in Ireland and in educating consumers on the role of dairy in their lifestyles. The chart below provides information on the retail dairy market in Ireland in 2009 (excluding independent/doorstep sales).",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 required products × (analysis 2 + elaboration 3)"
+  },
+  "rows": [
+   {
+    "id": "analysis-1",
+    "kind": "criterion",
+    "verbatim": "simple analysis of the chart",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Milk: original chart 39%. This is the explicit two-mark simple-analysis component."
+   },
+   {
+    "id": "elaboration-1",
+    "kind": "criterion",
+    "verbatim": "elaboration",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     3
+    ],
+    "contextNote": "Elaborate on this SAME product. Complete source guidance: Milk – Highest at 39% HBV protein food, nutrient dense food; used on its own and in cooking; widely available; available as UHT, condensed, evaporated and powdered milks; many varieties available e.g. flavoured milks; fortified; health conscious can choose low fat and skimmed versions etc."
+   },
+   {
+    "id": "analysis-2",
+    "kind": "criterion",
+    "verbatim": "simple analysis of the chart",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Yogurts: original chart 26%. This is the explicit two-mark simple-analysis component."
+   },
+   {
+    "id": "elaboration-2",
+    "kind": "criterion",
+    "verbatim": "elaboration",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     3
+    ],
+    "contextNote": "Elaborate on this SAME product. Complete source guidance: Yogurt –second highest consumption- can be used for drinks, soups, sauces, dressings, savoury dishes, desserts; it can be substituted for cream; used as a topping for cereals and fruit; tasty, convenient snack; nutritious – high in HBV protein and calcium; easily digested; readily available, in wide variety of flavours; low fat or reduced fat varieties for those on special diets; bio yogurts popular as studies have shown they help the digestive system etc."
+   },
+   {
+    "id": "analysis-3",
+    "kind": "criterion",
+    "verbatim": "simple analysis of the chart",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Cheese: original chart 18%. This is the explicit two-mark simple-analysis component."
+   },
+   {
+    "id": "elaboration-3",
+    "kind": "criterion",
+    "verbatim": "elaboration",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     3
+    ],
+    "contextNote": "Elaborate on this SAME product. Complete source guidance: Cheese – second lowest consumption, HBV protein food; rich in calcium and protein; convenient – little preparation and no cooking; versatile; high energy nutritious snack; value for money; varieties available – cottage, processed, low fat, vegetarian, farmhouse etc."
+   },
+   {
+    "id": "analysis-4",
+    "kind": "criterion",
+    "verbatim": "simple analysis of the chart",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "Cream and fats: original chart 17%. This is the explicit two-mark simple-analysis component."
+   },
+   {
+    "id": "elaboration-4",
+    "kind": "criterion",
+    "verbatim": "elaboration",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     3
+    ],
+    "contextNote": "Elaborate on this SAME product. Complete source guidance: Cream and Fats – smallest consumption group- includes butter, ice cream, cream – high in saturated fat; ice cream high in sugar; many varieties of butter, ice cream and cream available etc."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "taskGroups": [
+   {
+    "sourceCardId": "he-2011-hl-sb-q1a-product-1",
+    "label": "Milk",
+    "marks": 5,
+    "rowIds": [
+     "analysis-1",
+     "elaboration-1"
+    ]
+   },
+   {
+    "sourceCardId": "he-2011-hl-sb-q1a-product-2",
+    "label": "Yogurts",
+    "marks": 5,
+    "rowIds": [
+     "analysis-2",
+     "elaboration-2"
+    ]
+   },
+   {
+    "sourceCardId": "he-2011-hl-sb-q1a-product-3",
+    "label": "Cheese",
+    "marks": 5,
+    "rowIds": [
+     "analysis-3",
+     "elaboration-3"
+    ]
+   },
+   {
+    "sourceCardId": "he-2011-hl-sb-q1a-product-4",
+    "label": "Cream and fats",
+    "marks": 5,
+    "rowIds": [
+     "analysis-4",
+     "elaboration-4"
+    ]
+   }
+  ],
+  "questionFigureKey": "home-economics-2011-hl-sb-q1-dairy",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2011-hl-sb-q1b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-5",
+  "conceptId": "sb-q1b",
+  "level": "higher",
+  "year": 2011,
+  "section": "B",
+  "questionRef": "2011 HL Section B Q1(b)",
+  "questionText": "Give an account of protein and refer to: • the structure of an amino acid • how a peptide bond is formed • properties.",
+  "stem": "The National Dairy Council (NDC) plays a vital role in driving a sustainable dairy industry in Ireland and in educating consumers on the role of dairy in their lifestyles. The chart below provides information on the retail dairy market in Ireland in 2009 (excluding independent/doorstep sales).",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 28,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Structure 4 × 2 + bond 4 × 2 + properties 4 × 3"
+  },
+  "rows": [
+   {
+    "id": "structure",
+    "kind": "criterion",
+    "verbatim": "the structure of an amino acid",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8
+    ],
+    "contextNote": "a carbon atom at the centre with 4 bonds: H = hydrogen atom, NH2 = amino group, COOH = carboxyl group, R = varies depending on amino acid.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "bond",
+    "kind": "criterion",
+    "verbatim": "how a peptide bond is formed",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8
+    ],
+    "contextNote": "forms when 2 amino acids join together. The NH2 group (alkaline) of one amino acid reacts with the COOH group (acidic) of another amino acid. The NH2 group loses a hydrogen atom. The COOH group loses an OH group. This results in the loss of a water (H2O) molecule and is called a condensation reaction.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "properties",
+    "kind": "anyN",
+    "verbatim": "properties",
+    "marks": 12,
+    "openList": true,
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "Denaturation – unfolding of the protein chain resulting in an irreversible change in shape. This can be caused by Heat – moist heat collagen changes to gelatine tenderising meat, dry heat causes shrinkage and toughening of meat. Acids – lower pH e.g. milk souring bacteria in cheese making, vinegar in marinades to tenderise meat. Enzymes – rennin in stomach coagulates milk Mechanical action – whisking egg whites Salt – increase firmness in cheese",
+      "Solubility – insoluble in water except egg white in cold water and collagen in hot water.",
+      "Maillard Reaction – reaction between amino acids and carbohydrates resulting in food browning. e.g. toast",
+      "Elasticity – some proteins are elastic e.g. gluten",
+      "Gel Formation – some can absorb water and form a gel e.g. gelatine used as a setting agent."
+     ]
+    },
+    "contextNote": ""
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sb-q1c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-3",
+  "conceptId": "sb-q1c",
+  "level": "higher",
+  "year": 2011,
+  "section": "B",
+  "questionRef": "2011 HL Section B Q1(c)",
+  "questionText": "Describe one process used by manufacturers to prolong the shelf life of milk. In your answer refer to: • name of process • how the process is carried out • the effect of the process on the nutritive value of milk.",
+  "stem": "The National Dairy Council (NDC) plays a vital role in driving a sustainable dairy industry in Ireland and in educating consumers on the role of dairy in their lifestyles. The chart below provides information on the retail dairy market in Ireland in 2009 (excluding independent/doorstep sales).",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 2 + process 3 × 2 + effects 2 × 2"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "point",
+    "verbatim": "Pasteurisation",
+    "marks": 2
+   },
+   {
+    "id": "process",
+    "kind": "criterion",
+    "verbatim": "how the process is carried out",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Three points for the SAME selected process. Source: Heated to 72º-75 ºC for 15-25 seconds then cooled rapidly to below 10 ºC.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "effect",
+    "kind": "criterion",
+    "verbatim": "the effect of the process on the nutritive value of milk",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Two points for this SAME process. Source: Loss of vitamin B1 and vitamin C.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "answerVariants": [
+   {
+    "id": "pasteurisation",
+    "label": "Pasteurisation",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Pasteurisation",
+      "marks": 2
+     },
+     {
+      "id": "process",
+      "kind": "criterion",
+      "verbatim": "how the process is carried out",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Three points for the SAME selected process. Source: Heated to 72º-75 ºC for 15-25 seconds then cooled rapidly to below 10 ºC.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "effect",
+      "kind": "criterion",
+      "verbatim": "the effect of the process on the nutritive value of milk",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Two points for this SAME process. Source: Loss of vitamin B1 and vitamin C.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "sterilisation",
+    "label": "Sterilisation",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Sterilisation",
+      "marks": 2
+     },
+     {
+      "id": "process",
+      "kind": "criterion",
+      "verbatim": "how the process is carried out",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Three points for the SAME selected process. Source: Sealed in to bottles and heated to 104ºC-113ºC for 15- 40 minutes, then cooled.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "effect",
+      "kind": "criterion",
+      "verbatim": "the effect of the process on the nutritive value of milk",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Two points for this SAME process. Source: Loss of B group vitamins and vitamin C.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "uht",
+    "label": "UHT",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "UHT",
+      "marks": 2
+     },
+     {
+      "id": "process",
+      "kind": "criterion",
+      "verbatim": "how the process is carried out",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Three points for the SAME selected process. Source: Heated to 132ºC for 1 to 3 seconds by pouring it over a heated surface. Then cooled to 10ºC and packed in sterile containers.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "effect",
+      "kind": "criterion",
+      "verbatim": "the effect of the process on the nutritive value of milk",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Two points for this SAME process. Source: Loss of vitamin B and vitamin C.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "evaporated",
+    "label": "Evaporated",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Evaporated",
+      "marks": 2
+     },
+     {
+      "id": "process",
+      "kind": "criterion",
+      "verbatim": "how the process is carried out",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Three points for the SAME selected process. Source: Pasteurised milk is evaporated to half its volume, then homogenised, sealed into cans and sterilised at 115ºC for 20 minutes.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "effect",
+      "kind": "criterion",
+      "verbatim": "the effect of the process on the nutritive value of milk",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Two points for this SAME process. Source: Loss of vitamin B and vitamin C.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "dried",
+    "label": "Dried",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Dried",
+      "marks": 2
+     },
+     {
+      "id": "process",
+      "kind": "criterion",
+      "verbatim": "how the process is carried out",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Three points for the SAME selected process. Source: Homogenised, pasteurised and then evaporated to 60% of its original volume, spray or roller dried.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "effect",
+      "kind": "criterion",
+      "verbatim": "the effect of the process on the nutritive value of milk",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Two points for this SAME process. Source: Loss of vitamin B. Some amino acids destroyed.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "condensed",
+    "label": "Condensed",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Condensed",
+      "marks": 2
+     },
+     {
+      "id": "process",
+      "kind": "criterion",
+      "verbatim": "how the process is carried out",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Three points for the SAME selected process. Source: Milk is homogenised, pasteurised 72ºC-80ºC + 15% sugar, evaporated to 1/3 its volume cooled and sealed into cans.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "effect",
+      "kind": "criterion",
+      "verbatim": "the effect of the process on the nutritive value of milk",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Two points for this SAME process. Source: Loss of vitamin B and C.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "another-process",
+    "label": "Another valid process",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "name of process",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ],
+      "contextNote": "The question allows a process of choice. The source provides six examples; no extra model has been invented."
+     },
+     {
+      "id": "process",
+      "kind": "criterion",
+      "verbatim": "how the process is carried out",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "contextNote": "Three points for the same valid process, at the printed two marks each.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "effect",
+      "kind": "criterion",
+      "verbatim": "the effect of the process on the nutritive value of milk",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ],
+      "contextNote": "Two points for the same process, at the printed two marks each.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 2,
+        "permittedMarks": [
+         0,
+         2
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2011-hl-sb-q1d",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sb-q1d",
+  "level": "higher",
+  "year": 2011,
+  "section": "B",
+  "questionRef": "2011 HL Section B Q1(d)",
+  "questionText": "Comment and elaborate on the growing popularity of foods produced by small businesses and home enterprises.",
+  "stem": "The National Dairy Council (NDC) plays a vital role in driving a sustainable dairy industry in Ireland and in educating consumers on the role of dairy in their lifestyles. The chart below provides information on the retail dairy market in Ireland in 2009 (excluding independent/doorstep sales).",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 points @ 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "anyN",
+    "verbatim": "Published answer points",
+    "marks": 20,
+    "openList": true,
+    "group": {
+     "claimMax": 5,
+     "perOption": 4,
+     "options": [
+      "Wide range – Ice cream, cheese, chutneys, cakes, breads, jams, smoked fish etc.",
+      "Cost & quality – expensive / inexpensive. Quality in comparison to mass produced",
+      "Availability – farmers markets and or supermarkets, on line etc.",
+      "Perceived benefits – less processed perceived to be more nutritious, healthier etc.",
+      "Value to the economy – provides employment locally (direct) and (indirect) suppliers etc.",
+      "Uses local produce, many farmers turning to alternative produce to make a living etc.",
+      "Good support for local produce in a recession etc."
+     ]
+    },
+    "contextNote": ""
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sb-q2a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-1",
+  "conceptId": "sb-q2a",
+  "level": "higher",
+  "year": 2011,
+  "section": "B",
+  "questionRef": "2011 HL Section B Q2(a)",
+  "questionText": "Write an informative account of diabetes. Refer to: • types • symptoms • specific dietary requirements that should be followed in order to manage the condition.",
+  "stem": "‘Diabetes affects people from all walks of life, from the very young to the very old and is now considered an epidemic that is exploding across the world.’ (World Health Organisation)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 30,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Types 6 × 2 + symptoms 3 × 2 + dietary requirements 4 × 3"
+  },
+  "rows": [
+   {
+    "id": "types",
+    "kind": "criterion",
+    "verbatim": "types",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12
+    ],
+    "contextNote": "Six points across the requested types. Historical scheme guidance: Type 1 - (insulin dependent, juvenile or childhood onset), deficient insulin production and requires daily administration of insulin. Type 2 - (non insulin dependent or adult onset) results from the body’s ineffective use of insulin. Type 2 comprises 90% of people with diabetes and is largely the result of excess body weight and physical inactivity. Previously associated with adults only but now also occurring in children. Gestational - is hyperglycaemia with onset or first recognition during pregnancy.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-6",
+      "verbatim": "Point 6",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "symptoms",
+    "kind": "anyN",
+    "verbatim": "symptoms",
+    "marks": 6,
+    "openList": true,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "frequent urination",
+      "thirst",
+      "constant hunger",
+      "weight loss",
+      "vision changes",
+      "fatigue"
+     ]
+    },
+    "contextNote": ""
+   },
+   {
+    "id": "diet",
+    "kind": "anyN",
+    "verbatim": "specific dietary requirements",
+    "marks": 12,
+    "openList": true,
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "Eat 3 regular meals a day to stabilise blood sugar levels",
+      "Reduce sugar intake, use artificial sweetener",
+      "Eat a healthy diet of between 3 and 5 servings of fruit and vegetables a day",
+      "Follow a low glycaemic inde",
+      "(GI) diet",
+      "Reduce saturated fat intake,",
+      "Increase fibre foods and starch based carbohydrate foods"
+     ]
+    },
+    "contextNote": "The source wording is retained for this 2011 examination task."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sb-q2b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sb-q2b",
+  "level": "higher",
+  "year": 2011,
+  "section": "B",
+  "questionRef": "2011 HL Section B Q2(b)",
+  "questionText": "Classify artificial sweeteners and give one example of each.",
+  "stem": "‘Diabetes affects people from all walks of life, from the very young to the very old and is now considered an epidemic that is exploding across the world.’ (World Health Organisation)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 classifications × 3 + 2 matching examples × 3"
+  },
+  "rows": [
+   {
+    "id": "intense",
+    "kind": "point",
+    "verbatim": "Intense sweeteners",
+    "marks": 3
+   },
+   {
+    "id": "intense-example",
+    "kind": "criterion",
+    "verbatim": "Examples",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     3
+    ],
+    "contextNote": "One example matching Intense sweeteners. Source: Aspartame (NutraSweet, Canderel), Saccharin (Hermesetes)"
+   },
+   {
+    "id": "bulk",
+    "kind": "point",
+    "verbatim": "Bulk sweeteners",
+    "marks": 3
+   },
+   {
+    "id": "bulk-example",
+    "kind": "criterion",
+    "verbatim": "Examples",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     3
+    ],
+    "contextNote": "One example matching Bulk sweeteners. Original 2011 classification/examples retained: Sorbitol, Mannitol, Xylitol, (Splenda)"
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sb-q2c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sb-q2c",
+  "level": "higher",
+  "year": 2011,
+  "section": "B",
+  "questionRef": "2011 HL Section B Q2(c)",
+  "questionText": "Outline the uses of sweeteners in food manufacture.",
+  "stem": "‘Diabetes affects people from all walks of life, from the very young to the very old and is now considered an epidemic that is exploding across the world.’ (World Health Organisation)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 4"
+  },
+  "rows": [
+   {
+    "id": "uses",
+    "kind": "anyN",
+    "verbatim": "uses of sweeteners",
+    "marks": 8,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "To sweeten food improving flavour and palatability.",
+      "Used in slimming and low calorie foods.",
+      "Production of diabetic foods/confectionery.",
+      "Production of soft drinks.",
+      "Used an ingredient in the manufacture of sweets e.g. fudge.",
+      "Used in preservation e.g. jam making.",
+      "Used as a humectant to prevent food drying out etc."
+     ]
+    },
+    "contextNote": ""
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sb-q3a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-10",
+  "conceptId": "sb-q3a",
+  "level": "higher",
+  "year": 2011,
+  "section": "B",
+  "questionRef": "2011 HL Section B Q3(a)",
+  "questionText": "Give an account of the factors that affect a consumer’s choice of food.",
+  "stem": "The organic, home-made food trend may have grown rapidly in the past decade, but in the recession many consumers have returned to cheaper processed food.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 points @ 4"
+  },
+  "rows": [
+   {
+    "id": "factors",
+    "kind": "anyN",
+    "verbatim": "factors",
+    "marks": 20,
+    "openList": true,
+    "group": {
+     "claimMax": 5,
+     "perOption": 4,
+     "options": [
+      "Culture – pasta in Italy, spices in India. Religion –Jews do not eat pig meat etc.",
+      "Sensory aspects – personal preferences, colour, flavour etc.",
+      "Nutritional awareness – current dietary guidelines, perceived benefits, GM foods etc.",
+      "Health status – restricted diets e.g. diabetes, coeliac disease, CHD, allergies etc.",
+      "Marketing and advertising – supermarket layout, position of foods, TV, print media etc.",
+      "Money available – more expensive brands, cuts of meat, eating out etc.",
+      "Eating patterns – lifestyle – convenience foods, ready to eat, fast foods, family meals etc.",
+      "Availability – foods in season, location – fish etc.",
+      "Safety issues – Consumers tend to avoid buying products with health issues etc."
+     ]
+    },
+    "contextNote": ""
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sb-q3b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-0-11",
+  "conceptId": "sb-q3b",
+  "level": "higher",
+  "year": 2011,
+  "section": "B",
+  "questionRef": "2011 HL Section B Q3(b)",
+  "questionText": "Profile a food of your choice that has undergone extensive processing. Give details of each of the following: • stages of production • packaging • labelling.",
+  "stem": "The organic, home-made food trend may have grown rapidly in the past decade, but in the recession many consumers have returned to cheaper processed food.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 2 + production 5 × 2 + packaging 2 × 2 + labelling 2 × 2"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "anyN",
+    "verbatim": "name of product",
+    "marks": 2,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Flour",
+      "Cook chill meals"
+     ]
+    },
+    "contextNote": ""
+   },
+   {
+    "id": "production",
+    "kind": "criterion",
+    "verbatim": "stages of production",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10
+    ],
+    "contextNote": "Five production points for ONE chosen product. Complete source models: Flour Production – cleaning, blending, break rolling, sieving, rolling, air classifying, addition of additives Packaging – weighed, packed – paper etc. Labelling – brand name, best before, date, quantity, nutritional information etc. Cook chill meals Production – cooked, divided into portions, cooled to 3qC within 30 minutes of cooking, then completely chilled within 90 minutes of cooking, stored at temperatures between 1q - 3qC, transported in cold conditions, stored in chilled cabinets. Packaging – easy to open, aesthetic, economical, reasonably strong, biodegradable or recyclable, e.g. foil containers and cardboard etc. Labelling – brand name, best before, date, quantity, nutritional information etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "packaging",
+    "kind": "criterion",
+    "verbatim": "packaging",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Two packaging points for that SAME product. Complete source models: Flour Production – cleaning, blending, break rolling, sieving, rolling, air classifying, addition of additives Packaging – weighed, packed – paper etc. Labelling – brand name, best before, date, quantity, nutritional information etc. Cook chill meals Production – cooked, divided into portions, cooled to 3qC within 30 minutes of cooking, then completely chilled within 90 minutes of cooking, stored at temperatures between 1q - 3qC, transported in cold conditions, stored in chilled cabinets. Packaging – easy to open, aesthetic, economical, reasonably strong, biodegradable or recyclable, e.g. foil containers and cardboard etc. Labelling – brand name, best before, date, quantity, nutritional information etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "labelling",
+    "kind": "criterion",
+    "verbatim": "labelling",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Two labelling points for that SAME product. Complete source models: Flour Production – cleaning, blending, break rolling, sieving, rolling, air classifying, addition of additives Packaging – weighed, packed – paper etc. Labelling – brand name, best before, date, quantity, nutritional information etc. Cook chill meals Production – cooked, divided into portions, cooled to 3qC within 30 minutes of cooking, then completely chilled within 90 minutes of cooking, stored at temperatures between 1q - 3qC, transported in cold conditions, stored in chilled cabinets. Packaging – easy to open, aesthetic, economical, reasonably strong, biodegradable or recyclable, e.g. foil containers and cardboard etc. Labelling – brand name, best before, date, quantity, nutritional information etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sb-q3c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-2",
+  "conceptId": "sb-q3c",
+  "level": "higher",
+  "year": 2011,
+  "section": "B",
+  "questionRef": "2011 HL Section B Q3(c)",
+  "questionText": "Outline the protection provided to the consumer by the Sale of Food and Drugs Acts (1875, 1879, 1899 and 1936).",
+  "stem": "The organic, home-made food trend may have grown rapidly in the past decade, but in the recession many consumers have returned to cheaper processed food.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "protection",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     10
+    ],
+    "contextNote": "Distinct source points at the printed value; no finer marking ladder is published. Complete source guidance: Protects the consumer against adulteration and fraud. It is an offence to: x mix, colour or stain food with any ingredient that would render the food dangerous to human health x sell any food which is not of the nature or quality expected by consumers. Gives consumer the right, on payment of a fee, to have food analysed by the Public Analysis Laboratory.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sb-q4a",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sb-q4a",
+  "level": "higher",
+  "year": 2011,
+  "section": "B",
+  "questionRef": "2011 HL Section B Q4(a)",
+  "questionText": "Outline the role of the household/family as a financial unit within the economy.",
+  "stem": "‘The performance of the economy has had a significant impact on the family unit.’ (The Irish Times, 13th September 2010)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 5"
+  },
+  "rows": [
+   {
+    "id": "roles",
+    "kind": "anyN",
+    "verbatim": "role of the household/family",
+    "marks": 10,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Family members who are working contribute to the economy by purchasing food and necessities.",
+      "Spending creates and maintains jobs.",
+      "Family provides accommodation for family members by purchasing property, stamp duty contributes to economy and to the financial institutions.",
+      "Money Management skills are learned and are essential to the independent running of the family unit.",
+      "Many families are financially independent, however with the recent down turn in the economy some are experiencing financial difficulties and are therefore dependent on state aid.",
+      "Pay taxes which contribute to the national economy and to the running of the country.",
+      "Produces children and therefore a future workforce"
+     ]
+    },
+    "contextNote": ""
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sb-q4b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sb-q4b",
+  "level": "higher",
+  "year": 2011,
+  "section": "B",
+  "questionRef": "2011 HL Section B Q4(b)",
+  "questionText": "Discuss the impact of the following social factors on household income: • age • gender • social class • culture.",
+  "stem": "‘The performance of the economy has had a significant impact on the family unit.’ (The Irish Times, 13th September 2010)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 required factors × 6"
+  },
+  "rows": [
+   {
+    "id": "factor-1",
+    "kind": "point",
+    "verbatim": "Age – income tends to increase as people get older, drop in income on retirement, teenagers can get part time jobs to ease the financial burden etc.",
+    "marks": 6,
+    "contextNote": "Historical 2011 scheme wording; each of the four named factors is required."
+   },
+   {
+    "id": "factor-2",
+    "kind": "point",
+    "verbatim": "Gender – Employment Equality Act, equal pay for all regardless of gender, some managerial positions still male dominated etc.",
+    "marks": 6,
+    "contextNote": "Historical 2011 scheme wording; each of the four named factors is required."
+   },
+   {
+    "id": "factor-3",
+    "kind": "point",
+    "verbatim": "Social class – some from poorer backgrounds leave school earlier without qualifications, may lead to unemployment; middle class backgrounds generally better educational opportunities, more likely to gain qualifications leading to better paid jobs etc.",
+    "marks": 6,
+    "contextNote": "Historical 2011 scheme wording; each of the four named factors is required."
+   },
+   {
+    "id": "factor-4",
+    "kind": "point",
+    "verbatim": "Cultural factors – different cultures value income differently – developing countries income spent on needs, more affluent countries disposable income spent on luxuries; some cultures determine whether women can work outside the home which affects household income; lower socio economic group – in some cases the culture may be not to seek employment which limits household income; traveller communities the culture to stay close to the community that they grew up in, which may limit opportunities for earning etc.",
+    "marks": 6,
+    "contextNote": "Historical 2011 scheme wording; each of the four named factors is required."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sb-q4c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-1-1",
+  "conceptId": "sb-q4c",
+  "level": "higher",
+  "year": 2011,
+  "section": "B",
+  "questionRef": "2011 HL Section B Q4(c)",
+  "questionText": "Identify and explain four factors that may contribute to varying patterns of household expenditure.",
+  "stem": "‘The performance of the economy has had a significant impact on the family unit.’ (The Irish Times, 13th September 2010)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points @ 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "factors",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12,
+     16
+    ],
+    "contextNote": "Distinct source points at the printed value; no finer marking ladder is published. Complete source guidance: Expenditure is relative to each home and the different levels of income. Level of expenditure needs to correspond with the level of income to prevent getting into debt. Essential expenditure (Fixed) – mortgage, loans, insurance, utilities (Irregular) – food, clothing, doctor, car Discretionary – savings, luxuries, holidays, entertainment. Household Budget Survey – people on low income spent more on food than those on higher income highest increase in expenditure was for housing, lowest increase recorded for alcohol and tobacco. Income level, social class influence spending patterns in different homes. Low income families less discretionary income. Women’s incomes largely devoted to family rather than personal expenses. Urban homes spend more than rural ones. Family size, family stages etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sb-q5a-definition",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-0",
+  "conceptId": "sb-q5a",
+  "level": "higher",
+  "year": 2011,
+  "section": "B",
+  "questionRef": "2011 HL Section B Q5(a) — definition",
+  "questionText": "Define the term family",
+  "stem": "Families are the oldest expression of human relationship and have been continually adapting to change, human development and progress.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 5,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Definition 5"
+  },
+  "rows": [
+   {
+    "id": "definition",
+    "kind": "anyN",
+    "verbatim": "Definition",
+    "marks": 5,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Group of people related to each other by blood, marriage or adoption.",
+      "‘The basic unit of society, which acts as a support for its members and which transmits values from one generation to the next.’ (United Nations)",
+      "‘The natural, primary and fundamental unit group of society.’ (Irish Constitution)"
+     ]
+    },
+    "contextNote": ""
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sb-q5a-universality",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-0",
+  "conceptId": "sb-q5a",
+  "level": "higher",
+  "year": 2011,
+  "section": "B",
+  "questionRef": "2011 HL Section B Q5(a) — universality",
+  "questionText": "explain what is understood by the universality of the family.",
+  "stem": "Define the term family and explain what is understood by the universality of the family.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 5,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Universality 5"
+  },
+  "rows": [
+   {
+    "id": "universality",
+    "kind": "point",
+    "verbatim": "Family is present in all known societies. The form the family takes may differ from one society to another, but the concept of the family is universal.",
+    "marks": 5
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sb-q5b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-1",
+  "conceptId": "sb-q5b",
+  "level": "higher",
+  "year": 2011,
+  "section": "B",
+  "questionRef": "2011 HL Section B Q5(b)",
+  "questionText": "Discuss the roles and responsibilities of family members and explain how these roles change through the life cycle of the family.",
+  "stem": "Families are the oldest expression of human relationship and have been continually adapting to change, human development and progress.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 points @ 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "roles and responsibilities",
+    "marks": 24,
+    "permittedMarks": [
+     0,
+     4,
+     8,
+     12,
+     16,
+     20,
+     24
+    ],
+    "contextNote": "Distinct source points at the printed value; no finer marking ladder is published. Complete source guidance: Children’s Roles and Responsibilities Son/daughter/brother/sister/grandchild. Responsibilities influenced by age but include showing respect, learning to behave in a socially acceptable manner, acquiring knowledge informally and formally, achieving gradual independence. Adolescents May have extra responsibilities babysitting, helping younger children with homework, contributing to decision making and running of the home. Parents’ Roles and Responsibilities Mother/Father/Spouse Reproduction; Nurturing; Socialisation; economic; education; caring for each other; caring for the elderly. Grandparents’ Roles and Responsibilities Grandparent/spouse As people tend to live longer nowadays and are generally in good health, they play a prominent role in family life. Spending time with their children/grandchildren; childcare; financial help for their families; emotional support for children/grandchildren; passing on values e.g. respect and life experiences etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-5",
+      "verbatim": "Point 5",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-6",
+      "verbatim": "Point 6",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sb-q5c",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-2-3",
+  "conceptId": "sb-q5c",
+  "level": "higher",
+  "year": 2011,
+  "section": "B",
+  "questionRef": "2011 HL Section B Q5(c)",
+  "questionText": "Give an account of four factors that enable older people to maintain their independence.",
+  "stem": "Families are the oldest expression of human relationship and have been continually adapting to change, human development and progress.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points @ 4"
+  },
+  "rows": [
+   {
+    "id": "factors",
+    "kind": "anyN",
+    "verbatim": "factors",
+    "marks": 16,
+    "openList": true,
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Social welfare payment and medical cards allow people to be financially independent within the family.",
+      "Free travel allows people to travel, keep in touch with friends and family.",
+      "Community care focuses on keeping elderly in their homes rather than taking them into hospitals.",
+      "Good family and neighbours can help older person maintain their independence by calling regularly and offering help if needed.",
+      "Different housing options can help older person maintain independence if no longer able to live alone e.g. sheltered housing schemes.",
+      "Voluntary schemes such as Meals on Wheels offers nutritionally balanced meals at a low cost.",
+      "Financial security e.g. pension.",
+      "Being active community members etc."
+     ]
+    },
+    "contextNote": ""
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sc-q1ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1ai",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E1 Q1(a)(i)",
+  "questionText": "Identify three housing styles commonly found in Ireland today and suggest reasons for the popularity of each.",
+  "stem": "Different building styles have evolved with increasing population and advancement in construction technology. There are reasons for the development of every housing style.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points @ 8"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "anyN",
+    "verbatim": "Published answer points",
+    "marks": 24,
+    "openList": true,
+    "group": {
+     "claimMax": 3,
+     "perOption": 8,
+     "options": [
+      "Traditional – neo Georgian etc – proportions and elegance",
+      "Modern – minimalist, lots of light – easy to care for and maintain",
+      "Old style cottage – popular in tourist areas in keeping with local environment",
+      "Restoration of old houses - proportions and elegance, grants available",
+      "Terraced, semi detached, detached popular in towns and cities as many people are urban dwellers, starter homes",
+      "Bungalows dormer bungalow 2 story housing popular in rural areas as sites and building costs lower",
+      "Apartment blocks – shortage of space, increasing population, less maintenance",
+      "Complexes (including a variety of town houses and apartments) often enclosed behind security gates– suit people starting off on the property ladder and older people downsizing – safety, investment etc."
+     ]
+    },
+    "contextNote": ""
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sc-q1aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1aii",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E1 Q1(a)(ii)",
+  "questionText": "Outline the procedures involved in obtaining full planning permission.",
+  "stem": "Different building styles have evolved with increasing population and advancement in construction technology. There are reasons for the development of every housing style.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points @ 3"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "criterion",
+    "verbatim": "procedures",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     3,
+     6,
+     9,
+     12
+    ],
+    "contextNote": "Distinct source points at the printed value; no smaller marking steps are published. Complete source guidance: Full procedure expected for full marks. Notice of intention/planning permission published in a local newspaper, pay fee and lodge detailed application to local planning authority, site notice erected, public inspection- any member of the public is free to inspect the plans, site inspection by planning officials, permission granted or refused with reasons given for refusal.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sc-q1aiii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-3",
+  "conceptId": "sc-q1aiii",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E1 Q1(a)(iii)",
+  "questionText": "Set out details of one piece of current legislation which regulates house building standards.",
+  "stem": "Different building styles have evolved with increasing population and advancement in construction technology. There are reasons for the development of every housing style.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 14,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 4 + details 2 × 5"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "point",
+    "verbatim": "National House Building Guarantee Scheme (Homebond)",
+    "marks": 4
+   },
+   {
+    "id": "details",
+    "kind": "criterion",
+    "verbatim": "details",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     10
+    ],
+    "contextNote": "Two details of this same choice. Historical 2011 scheme example: National House Building Guarantee Scheme (Homebond) – registered builders, house inspected three times during construction, certificate is issued if house meets required standards; certificate guarantees against loss of deposit if builder goes bankrupt and against major structural defects within ten years; many lending agencies require that new houses have a Homebond certificate; scheme is run by NHBG Company and the Dept. of Environment Community and local Government.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "answerVariants": [
+   {
+    "id": "homebond",
+    "label": "National House Building Guarantee Scheme (Homebond)",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "National House Building Guarantee Scheme (Homebond)",
+      "marks": 4
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "details",
+      "marks": 10,
+      "permittedMarks": [
+       0,
+       5,
+       10
+      ],
+      "contextNote": "Two details of this same choice. Historical 2011 scheme example: National House Building Guarantee Scheme (Homebond) – registered builders, house inspected three times during construction, certificate is issued if house meets required standards; certificate guarantees against loss of deposit if builder goes bankrupt and against major structural defects within ten years; many lending agencies require that new houses have a Homebond certificate; scheme is run by NHBG Company and the Dept. of Environment Community and local Government.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         5
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "building-regulations",
+    "label": "Building Regulations Act 1991",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "point",
+      "verbatim": "Building Regulations Act 1991",
+      "marks": 4
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "details",
+      "marks": 10,
+      "permittedMarks": [
+       0,
+       5,
+       10
+      ],
+      "contextNote": "Two details of this same choice. Historical 2011 scheme example: Building Regulations Act 1991 – sets out rules in relation to areas of house design and construction to ensure that houses are safe and comfortable living spaces for occupants. Regulations apply to materials used, construction standards, insulation, heating, lighting, ventilation and waste disposal. It is the responsibility of the local authority to enforce this legislation.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         5
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "another-valid-choice",
+    "label": "Another valid choice",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Name legislation",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ],
+      "contextNote": "Use the examination’s 2011 context. No further source model has been invented."
+     },
+     {
+      "id": "details",
+      "kind": "criterion",
+      "verbatim": "details",
+      "marks": 10,
+      "permittedMarks": [
+       0,
+       5,
+       10
+      ],
+      "contextNote": "Two details for the same choice, five marks each.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         5
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2011-hl-sc-q1bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-6",
+  "conceptId": "sc-q1bi",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E1 Q1(b)(i)",
+  "questionText": "Discuss one non-renewable source of energy used in the home. Refer to: • source • advantages/disadvantages • sustainability.",
+  "stem": "Most energy used in the world is generated from non-renewable energy sources.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Source 3 + advantages/disadvantages 2 × 4 + sustainability 4"
+  },
+  "rows": [
+   {
+    "id": "source",
+    "kind": "criterion",
+    "verbatim": "source",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     3
+    ],
+    "contextNote": "Account of this SAME energy source. Original table: Electricity - energy released by burning fossil fuels, rotates a turbine which powers generator to produce electricity. Electricity passes through transformers to reduce the voltage and make it suitable for use in the home."
+   },
+   {
+    "id": "advantages",
+    "kind": "criterion",
+    "verbatim": "advantages/disadvantages",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Two points for this SAME source. Some word endings are visibly clipped at table borders in the original scheme; the printed text is retained without inventing missing letters. Source: Clean, efficient. Many uses heating, lighting and to power appliances. Cost to the consumer– expensive.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "id": "sustainability",
+    "kind": "criterion",
+    "verbatim": "sustainability",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "For this SAME energy source. Original table wording retained, including visibly clipped word endings: Coal, gas, oil and peat used t produce electricity – limited and non renewable. Wind, solar power and hydro-power renewable/sustainable."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "answerVariants": [
+   {
+    "id": "source-1",
+    "label": "Electricity",
+    "rows": [
+     {
+      "id": "source",
+      "kind": "criterion",
+      "verbatim": "source",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Account of this SAME energy source. Original table: Electricity - energy released by burning fossil fuels, rotates a turbine which powers generator to produce electricity. Electricity passes through transformers to reduce the voltage and make it suitable for use in the home."
+     },
+     {
+      "id": "advantages",
+      "kind": "criterion",
+      "verbatim": "advantages/disadvantages",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       4,
+       8
+      ],
+      "contextNote": "Two points for this SAME source. Some word endings are visibly clipped at table borders in the original scheme; the printed text is retained without inventing missing letters. Source: Clean, efficient. Many uses heating, lighting and to power appliances. Cost to the consumer– expensive.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "sustainability",
+      "kind": "criterion",
+      "verbatim": "sustainability",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ],
+      "contextNote": "For this SAME energy source. Original table wording retained, including visibly clipped word endings: Coal, gas, oil and peat used t produce electricity – limited and non renewable. Wind, solar power and hydro-power renewable/sustainable."
+     }
+    ]
+   },
+   {
+    "id": "source-2",
+    "label": "Oil",
+    "rows": [
+     {
+      "id": "source",
+      "kind": "criterion",
+      "verbatim": "source",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Account of this SAME energy source. Original table: Oil – fossil fuel decayed plant and animal remains buried between layers of earth and rock, subjected to heat and pressure. Oil rigs drill for oil on land and at sea, crude oil refined before use."
+     },
+     {
+      "id": "advantages",
+      "kind": "criterion",
+      "verbatim": "advantages/disadvantages",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       4,
+       8
+      ],
+      "contextNote": "Two points for this SAME source. Some word endings are visibly clipped at table borders in the original scheme; the printed text is retained without inventing missing letters. Source: Clean, efficient. Produces little waste or pollution when burned Many uses - heating rooms and wate and cooking. Cost to the consumer – very expensiv and continues to rise. Cost dependen on the global economy.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "sustainability",
+      "kind": "criterion",
+      "verbatim": "sustainability",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ],
+      "contextNote": "For this SAME energy source. Original table wording retained, including visibly clipped word endings: Reserves limited with consumption rising. Oil exploration very expensive."
+     }
+    ]
+   },
+   {
+    "id": "source-3",
+    "label": "Gas",
+    "rows": [
+     {
+      "id": "source",
+      "kind": "criterion",
+      "verbatim": "source",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Account of this SAME energy source. Original table: Gas – Natural and bottled (LPG) Fossil fuel occurring naturally under the seabed; Ireland has an indigenous supply off the south coast and this is piped ashore. Due to growing demand some now imported."
+     },
+     {
+      "id": "advantages",
+      "kind": "criterion",
+      "verbatim": "advantages/disadvantages",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       4,
+       8
+      ],
+      "contextNote": "Two points for this SAME source. Some word endings are visibly clipped at table borders in the original scheme; the printed text is retained without inventing missing letters. Source: Natural gas burns completely and does not pollute the atmosphere; requires no refining and little processing before use. Can be dangerous if installed or used incorrectly.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "sustainability",
+      "kind": "criterion",
+      "verbatim": "sustainability",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ],
+      "contextNote": "For this SAME energy source. Original table wording retained, including visibly clipped word endings: Non-renewable, reserves are limited. Consumption worldwide is increasing."
+     }
+    ]
+   },
+   {
+    "id": "source-4",
+    "label": "Solid fuel – coal",
+    "rows": [
+     {
+      "id": "source",
+      "kind": "criterion",
+      "verbatim": "source",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Account of this SAME energy source. Original table: Solid fuel – coal is a fossil fuel in beds under the earth’s surface. It must be mined to extract it from underground."
+     },
+     {
+      "id": "advantages",
+      "kind": "criterion",
+      "verbatim": "advantages/disadvantages",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       4,
+       8
+      ],
+      "contextNote": "Two points for this SAME source. Some word endings are visibly clipped at table borders in the original scheme; the printed text is retained without inventing missing letters. Source: Coal produces more heat than turf o wood; relatively cheap to produce; smokeless coal available; used to generate electricity and for heating space and water. Burning produces ash, soot and smoke. It produces more CO2 than gas or oil and more sulphur dioxide and nitrogen oxides, so contributes greatly to atmospheric pollution.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "sustainability",
+      "kind": "criterion",
+      "verbatim": "sustainability",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ],
+      "contextNote": "For this SAME energy source. Original table wording retained, including visibly clipped word endings: Supplies are finite but reserves are large and more evenly distributed throughou the world than oil or gas. Ireland imports most of its coal."
+     }
+    ]
+   },
+   {
+    "id": "source-5",
+    "label": "Solid fuel – turf/peat",
+    "rows": [
+     {
+      "id": "source",
+      "kind": "criterion",
+      "verbatim": "source",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "Account of this SAME energy source. Original table: Solid fuel – turf/peat consists of partially decomposed remains of plants which have accumulated in water logged areas where climate is relatively cool. Bord na Mona supply briquettes and machine turf ."
+     },
+     {
+      "id": "advantages",
+      "kind": "criterion",
+      "verbatim": "advantages/disadvantages",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       4,
+       8
+      ],
+      "contextNote": "Two points for this SAME source. Some word endings are visibly clipped at table borders in the original scheme; the printed text is retained without inventing missing letters. Source: Turf/peat relatively cheap; briquette (smokeless) available. Burning produces ash, soot and smoke.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "sustainability",
+      "kind": "criterion",
+      "verbatim": "sustainability",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ],
+      "contextNote": "For this SAME energy source. Original table wording retained, including visibly clipped word endings: Turf is non- renewable. Some areas are in immediate danger of depletion."
+     }
+    ]
+   },
+   {
+    "id": "another-source",
+    "label": "Another valid non-renewable source",
+    "rows": [
+     {
+      "id": "source",
+      "kind": "criterion",
+      "verbatim": "source",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ],
+      "contextNote": "One non-renewable source, with an account of its source; no additional model is printed."
+     },
+     {
+      "id": "advantages",
+      "kind": "criterion",
+      "verbatim": "advantages/disadvantages",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       4,
+       8
+      ],
+      "contextNote": "Two points for the same energy source.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 4,
+        "permittedMarks": [
+         0,
+         4
+        ]
+       }
+      ]
+     },
+     {
+      "id": "sustainability",
+      "kind": "criterion",
+      "verbatim": "sustainability",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ],
+      "contextNote": "One point about this same source."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2011-hl-sc-q1bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-6",
+  "conceptId": "sc-q1bii",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E1 Q1(b)(ii)",
+  "questionText": "Describe three ways in which the design and construction of a house can help reduce energy consumption.",
+  "stem": "Most energy used in the world is generated from non-renewable energy sources.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points @ 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "anyN",
+    "verbatim": "Published answer points",
+    "marks": 15,
+    "openList": true,
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Solar systems – e.g. passive solar architecture house orientation, layout, glazing and insulation is designed to make full use of solar energy; active solar heating i.e. solar collectors convert sunlight into heat; solar photovoltaic systems i.e. convert solar energy to electricity",
+      "Large windows on south facing walls- solar energy giving heat and light",
+      "Windows – double glazed…..",
+      "Insulation in roof, attic and walls……",
+      "Heating - zoned heating, room thermostats and timers, geothermal",
+      "BER - a low BER rating e.g. A1",
+      "Timber framed houses…",
+      "Sensor lighting…",
+      "Cavity walls… etc."
+     ]
+    },
+    "contextNote": ""
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sc-q1ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-5",
+  "conceptId": "sc-q1ci",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E1 Q1(c)(i)",
+  "questionText": "Discuss the principles that should be considered when planning a lighting system for a family home.",
+  "stem": "‘It’s very easy to underestimate the value lighting has on our well being and mood.’ (Ireland’s Home Interiors & Living Magazine, August 2010)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points @ 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "anyN",
+    "verbatim": "Published answer points",
+    "marks": 12,
+    "openList": true,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Plan at earliest possible stage during construction…..",
+      "Include the following types of lighting –general, task and accent……",
+      "Sufficient lighting for the size of the room…..",
+      "Consider function of the room……",
+      "Avoid glare, make use of shades…..",
+      "Include light from different sources, natural and artificial…..",
+      "Allow flexibility – dimmer……",
+      "Safety….",
+      "Maintenance – easy access for replacing bulbs and ease of cleaning……."
+     ]
+    },
+    "contextNote": ""
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sc-q1cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-5",
+  "conceptId": "sc-q1cii",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E1 Q1(c)(ii)",
+  "questionText": "Name and explain three properties of light. In each case give an example of its application in the home.",
+  "stem": "‘It’s very easy to underestimate the value lighting has on our well being and mood.’ (Ireland’s Home Interiors & Living Magazine, August 2010)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points @ 6"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "anyN",
+    "verbatim": "Published answer points",
+    "marks": 18,
+    "openList": true,
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Reflected – rays of light bounce off a shiny surface – glazed ceramic tiles, mirrors, white ceiling.",
+      "Refracted – rays of light bend when they pass through thick glass e.g. glass bricks, frosted glass.",
+      "Diffused – rays are scattered when they pass through translucent substances or hit non reflecting surface e.g. opaque lamp shades.",
+      "Absorbed – dark and mat surfaces absorb light rays e.g. dark colours on walls make room appear smaller.",
+      "Dispersed – rays of light that pass through a prism or crystal break down in to their component colours e.g. crystal chandelier."
+     ]
+    },
+    "contextNote": ""
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sc-q2ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2ai",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E2 Q2(a)(i)",
+  "questionText": "Sketch and describe an outfit suitable for wear as a school uniform.",
+  "stem": "A good school uniform not only helps to develop a sense of pride but also helps to promote each individual school.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Sketch 4 + description 6"
+  },
+  "rows": [
+   {
+    "id": "sketch",
+    "kind": "criterion",
+    "verbatim": "Sketch",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "One sketch of the selected school-uniform outfit, four marks as printed. The scheme supplies no model sketch or smaller steps."
+   },
+   {
+    "id": "description",
+    "kind": "criterion",
+    "verbatim": "Description",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     6
+    ],
+    "contextNote": "Describe that SAME outfit, six marks as printed. The scheme supplies no model description or smaller steps."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sc-q2aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2aii",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E2 Q2(a)(ii)",
+  "questionText": "In relation to the outfit give details of: • how three principles of design have been applied • how the outfit is suitable for purpose.",
+  "stem": "A good school uniform not only helps to develop a sense of pride but also helps to promote each individual school.\n\nSketch and describe an outfit suitable for wear as a school uniform. (10)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 applied principles × 3 + 2 suitability points × 3"
+  },
+  "rows": [
+   {
+    "id": "design",
+    "kind": "criterion",
+    "verbatim": "principles of design",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     3,
+     6,
+     9
+    ],
+    "contextNote": "Explain how three principles apply to the SAME outfit sketched in (i), rather than merely naming principles. Source examples: balance; proportion; emphasis; rhythm; harmony",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "purpose",
+    "kind": "criterion",
+    "verbatim": "suitable for purpose",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Two points showing why that SAME outfit is suitable. Source examples: durability, ease of care, cost, comfort etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sc-q2b",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-7",
+  "conceptId": "sc-q2b",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E2 Q2(b)",
+  "questionText": "Write a profile of one fabric manufactured from natural fibres. Refer to: • fibre production • fibre properties • identification of fibres using the burning test.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 15,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Production 3 × 2 + properties 2 × 2 + burning test 5"
+  },
+  "rows": [
+   {
+    "id": "production",
+    "kind": "criterion",
+    "verbatim": "fibre production",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "The original marking scheme prints the task and tariffs but supplies no model answer for this natural-fabric profile. Judge the stated criterion for ONE chosen fabric; no answer or extra partial-credit step has been invented.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "properties",
+    "kind": "criterion",
+    "verbatim": "fibre properties",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "The original marking scheme prints the task and tariffs but supplies no model answer for this natural-fabric profile. Judge the stated criterion for ONE chosen fabric; no answer or extra partial-credit step has been invented.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "burning-test",
+    "kind": "criterion",
+    "verbatim": "identification of fibres using the burning test",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     5
+    ],
+    "contextNote": "The original marking scheme prints the task and tariffs but supplies no model answer for this natural-fabric profile. Judge the stated criterion for ONE chosen fabric; no answer or extra partial-credit step has been invented."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sc-q2ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2ci",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E2 Q2(c)(i)",
+  "questionText": "Name three major sectors in the Irish clothing and textile industry.",
+  "stem": "Ireland has an international reputation for the design and manufacture of quality clothing.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 3,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points @ 1"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "anyN",
+    "verbatim": "Published answer points",
+    "marks": 3,
+    "openList": true,
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "Menswear",
+      "women’s wear",
+      "children’s wear",
+      "knitwear",
+      "leisure/sportswear",
+      "accessories/hosiery",
+      "lingerie",
+      "footwear"
+     ]
+    },
+    "contextNote": ""
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sc-q2cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-8",
+  "conceptId": "sc-q2cii",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E2 Q2(c)(ii)",
+  "questionText": "Explain how each of the following impact on the design and construction of clothing: • fashion trends • lifestyle • cost.",
+  "stem": "Ireland has an international reputation for the design and manufacture of quality clothing.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 required factors × 4"
+  },
+  "rows": [
+   {
+    "id": "factor-1",
+    "kind": "point",
+    "verbatim": "Fashion trends – copy what pop stars and media personalities, royalty are wearing; influenced by what is on the catwalk/fashion designers.",
+    "marks": 4
+   },
+   {
+    "id": "factor-2",
+    "kind": "point",
+    "verbatim": "Lifestyle – fitness and exercise and more leisure time creates demand for comfortable, breathable, flexible garments, strong but light weight, so fabrics like Lycra and leisurewear i.e. tracksuits; function of clothing will determine design i.e. uniform.",
+    "marks": 4
+   },
+   {
+    "id": "factor-3",
+    "kind": "point",
+    "verbatim": "Cost – less disposable income so less expensive fabrics and more use of synthetic fabrics in construction; in booming economies clothes constructed with luxurious fabrics and no expense spared etc.",
+    "marks": 4
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sc-q3ai",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-10",
+  "conceptId": "sc-q3ai",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E3 Q3(a)(i)",
+  "questionText": "Analyse the principle factors that influence educational achievement.",
+  "stem": "‘Less than 15 percent of Leaving Certificate students in some poorer areas of Dublin are progressing to third level while most schools in south Dublin have a progression rate of 100 percent.’ (The Irish Times, 16th November 2010)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points @ 6"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "anyN",
+    "verbatim": "Published answer points",
+    "marks": 24,
+    "openList": true,
+    "group": {
+     "claimMax": 4,
+     "perOption": 6,
+     "options": [
+      "intelligence",
+      "influence of family",
+      "home environment",
+      "individual’s work ethic",
+      "family size",
+      "school attended – locality and school environment",
+      "peers",
+      "supports for special needs"
+     ]
+    },
+    "contextNote": ""
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sc-q3aii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-10",
+  "conceptId": "sc-q3aii",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E3 Q3(a)(ii)",
+  "questionText": "Discuss four factors that contribute to the increasing demand for adult and second chance education in Ireland.",
+  "stem": "‘Less than 15 percent of Leaving Certificate students in some poorer areas of Dublin are progressing to third level while most schools in south Dublin have a progression rate of 100 percent.’ (The Irish Times, 16th November 2010)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points @ 4"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "anyN",
+    "verbatim": "Published answer points",
+    "marks": 16,
+    "openList": true,
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Increases chances of employment",
+      "gain/add to qualifications",
+      "improves chances of promotion",
+      "self fulfilment",
+      "technological changes",
+      "to pursue an area of interest/hobby",
+      "professional development / keeping skills up to date",
+      "socialisation",
+      "as a second chance of education to increase literacy and numeracy, availability of courses, Back to Education Allowance (BTEA)"
+     ]
+    },
+    "contextNote": ""
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sc-q3aiii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-10",
+  "conceptId": "sc-q3aiii",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E3 Q3(a)(iii)",
+  "questionText": "Name and give details of one contemporary initiative that has improved access for students to third level education.",
+  "stem": "‘Less than 15 percent of Leaving Certificate students in some poorer areas of Dublin are progressing to third level while most schools in south Dublin have a progression rate of 100 percent.’ (The Irish Times, 16th November 2010)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 2 + details 2 × 4"
+  },
+  "rows": [
+   {
+    "id": "name",
+    "kind": "anyN",
+    "verbatim": "Name",
+    "marks": 2,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Distance Learning Courses",
+      "Open University courses",
+      "BTEA",
+      "“Cost of Education Allowance”",
+      "Free fees and maintenance grants",
+      "Higher Education Access Route (HEAR)",
+      "Scholarships",
+      "Supplementary Admission Route (DARE)",
+      "Fás apprenticeships",
+      "PLC courses",
+      "Level 7 courses HETAC"
+     ]
+    },
+    "contextNote": ""
+   },
+   {
+    "id": "details",
+    "kind": "criterion",
+    "verbatim": "details",
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     4,
+     8
+    ],
+    "contextNote": "Two details of the SAME selected initiative. The historical 2011 names and guidance are retained as printed. Complete source guidance: Distance Learning Courses, Open University courses may be full or part time to facilitate all students. BTEA available to the unemployed or single parents and those with a disability for 3rd level courses “Cost of Education Allowance” paid at the start of the year to unemployed or single parents; Free fees and maintenance grants. Higher Education Access Route (HEAR) an admission scheme aimed at improving access to 3rd level for students from socially disadvantaged backgrounds- students who qualify must meet basic requirements for the course but may be allocated a place with reduced points. Scholarships. Supplementary Admission Route (DARE)-disability access route to education for students with learning difficulties and disabilities they will be given access to assistive technologies and supports in college as well as may have a reduced points entry. Fás apprenticeships; PLC courses; Level 7 courses HETAC, etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sc-q3bi",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-11",
+  "conceptId": "sc-q3bi",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E3 Q3(b)(i)",
+  "questionText": "Discuss the impact of social change on family life.",
+  "stem": "In Ireland, the last 30 years have seen dramatic social and economic changes.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points @ 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "anyN",
+    "verbatim": "Published answer points",
+    "marks": 20,
+    "openList": true,
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "change is settlement patterns between rural and urban areas",
+      "reduction in working hours and increase in leisure time",
+      "improvements in the provision of education",
+      "improvements in provision of social welfare",
+      "changing attitudes to marriage, parenting and traditional roles within the family",
+      "increased participation of women in the workforce",
+      "legislation on equal pay and employment opportunities",
+      "unemployment, emigration - one parent working abroad"
+     ]
+    },
+    "contextNote": ""
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sc-q3bii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3bii",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E3 Q3(b)(ii)",
+  "questionText": "Assess the effects of decreasing employment opportunities in Ireland today.",
+  "stem": "In Ireland, the last 30 years have seen dramatic social and economic changes.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "anyN",
+    "verbatim": "Published answer points",
+    "marks": 10,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "reduced income – difficulty paying mortgage and utility bills",
+      "less disposable income available – non essential spending reduced",
+      "more quality time to spend with children",
+      "time for low cost activities as a family",
+      "family stresses become evident",
+      "effects on the individual seeking employment",
+      "financial cost to the state for those unemployed",
+      "low morale",
+      "decrease in rural population as people leave the area to seek employment",
+      "emigration"
+     ]
+    },
+    "contextNote": ""
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sc-q3ci",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-11",
+  "conceptId": "sc-q3ci",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E3 Q3(c)(i)",
+  "questionText": "Analyse the factors that have contributed to the increased participation rate of women in the Irish labour market.",
+  "stem": "In 2007, two out of every three women were active in the Irish labour market. (A Woman’s Place: Female Participation in the Irish Labour Market. ESRI, 2009)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 20,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points @ 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "anyN",
+    "verbatim": "Published answer points",
+    "marks": 20,
+    "openList": true,
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "smaller families",
+      "women not having their children until their careers are well established",
+      "male unemployment so many women returning to work as the family breadwinner",
+      "economic pressures two incomes required to maintain lifestyle",
+      "highly educated wish to make use of qualifications",
+      "support structures in place e.g. crèches",
+      "increased flexibility in the workplace e.g. job sharing, working part time, flexible hours, parental leave, term time etc",
+      "equality of opportunity in employment and education"
+     ]
+    },
+    "contextNote": ""
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2011-hl-sc-q3cii",
+  "subjectId": "home-economics",
+  "topicId": "home-economics-3-9",
+  "conceptId": "sc-q3cii",
+  "level": "higher",
+  "year": 2011,
+  "section": "C",
+  "questionRef": "2011 HL Section C E3 Q3(c)(ii)",
+  "questionText": "Give two examples of how legislation protects the rights of people in employment.",
+  "stem": "In 2007, two out of every three women were active in the Irish labour market. (A Woman’s Place: Female Participation in the Irish Labour Market. ESRI, 2009)",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 5"
+  },
+  "rows": [
+   {
+    "id": "points",
+    "kind": "anyN",
+    "verbatim": "Published answer points",
+    "marks": 10,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "improved working conditions – issues which impact on health (heating, lighting, ventilation and hygiene) and safety are set down in legislation and monitored by the Health and Safety Authority.",
+      "National Minimum wage Act - Minimum wage.",
+      "Equality Act 2004 prohibits discrimination on certain grounds e.g. gender, marital status, family status age, race, religion, sexual orientation, member of the Travelling Community.",
+      "Organisation of Working Time Act 1997 - working hours and breaks.",
+      "Legal entitlements to include paid holidays, benefits such as maternity leave or disability benefit, parental leave, force majeure, carers leave .",
+      "Protection of Young Person ( Employment) Act 1996 re employees under the age of 16 working conditions-full time employment of children under 16 prohibited, 14/15 year olds light work, 14/15 yr old work max 35 per week, 16-18 yr olds max 40 hr week, under 18’s cannot work after 10pm Rest breaks must be allowed -30 mins. every 4 hrs for 14 /15 yr olds- 30 mins. every 4.5 hrs for 16 year olds"
+     ]
+    },
+    "contextNote": ""
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Home Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
  }
 ]
