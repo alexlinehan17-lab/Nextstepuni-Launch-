@@ -1,0 +1,1539 @@
+{
+  "subjectId": "japanese",
+  "year": 2019,
+  "level": "hl",
+  "reviewedAt": "2026-11-09",
+  "method": "Independent full visual sweep of all 20 written, eight aural and 20 scheme physical pages before authoring. Required pools and tables remain whole tasks; separately priced responses retain their source boundaries.",
+  "sources": [
+    {
+      "component": "paper",
+      "path": "examiner-reports/japanese/papers/2019-hl-000-paper.pdf",
+      "sha256": "c1127796075df825e5e7e676529d14e9ab3d9db3b9dae7a909e9e91abd6653c1"
+    },
+    {
+      "component": "aural",
+      "path": "examiner-reports/japanese/papers/2019-hl-A00-paper.pdf",
+      "sha256": "6b36a5c5ab891adf5c9ed0634f559d19cc08ef9699f6a658dbb6d44023cc95e4"
+    },
+    {
+      "component": "scheme",
+      "path": "examiner-reports/japanese/schemes/2019-hl.pdf",
+      "sha256": "272b8bc5bc9e6fd7adcb43a02abed17768cc0c35e02fce8b6271e00da3fc525c"
+    }
+  ],
+  "tasks": [
+    {
+      "key": [
+        "1A",
+        1,
+        null,
+        null
+      ],
+      "marks": 6,
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "1"
+      }
+    },
+    {
+      "key": [
+        "1A",
+        2,
+        null,
+        "i"
+      ],
+      "marks": 1,
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "key": [
+        "1A",
+        2,
+        null,
+        "ii"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "key": [
+        "1A",
+        3,
+        null,
+        "i"
+      ],
+      "marks": 1,
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "key": [
+        "1A",
+        3,
+        null,
+        "ii"
+      ],
+      "marks": 1,
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "key": [
+        "1A",
+        5,
+        null,
+        "i"
+      ],
+      "marks": 4,
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "5"
+      }
+    },
+    {
+      "key": [
+        "1A",
+        5,
+        null,
+        "ii"
+      ],
+      "marks": 1,
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "5"
+      }
+    },
+    {
+      "key": [
+        "1A",
+        5,
+        null,
+        "iii"
+      ],
+      "marks": 1,
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "5"
+      }
+    },
+    {
+      "key": [
+        "1A",
+        4,
+        null,
+        null
+      ],
+      "marks": 1,
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "4"
+      }
+    },
+    {
+      "key": [
+        "1B",
+        1,
+        null,
+        "i"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        8
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "6"
+      }
+    },
+    {
+      "key": [
+        "1B",
+        1,
+        null,
+        "ii"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        8
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "6"
+      }
+    },
+    {
+      "key": [
+        "1B",
+        2,
+        null,
+        "i"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        8
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "7"
+      }
+    },
+    {
+      "key": [
+        "1B",
+        2,
+        null,
+        "ii"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        8
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "7"
+      }
+    },
+    {
+      "key": [
+        "1B",
+        3,
+        null,
+        "i"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        8
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "8"
+      }
+    },
+    {
+      "key": [
+        "1B",
+        3,
+        null,
+        "ii"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        8
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "8"
+      }
+    },
+    {
+      "key": [
+        "2A",
+        1,
+        null,
+        null
+      ],
+      "marks": 8,
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        8
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "9"
+      }
+    },
+    {
+      "key": [
+        "2A",
+        2,
+        null,
+        "i"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        8
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "10"
+      }
+    },
+    {
+      "key": [
+        "2A",
+        2,
+        null,
+        "ii"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        8
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "10"
+      }
+    },
+    {
+      "key": [
+        "2A",
+        2,
+        null,
+        "iii"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        8
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "10"
+      }
+    },
+    {
+      "key": [
+        "2A",
+        3,
+        null,
+        "i"
+      ],
+      "marks": 4,
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        9
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "11"
+      }
+    },
+    {
+      "key": [
+        "2A",
+        3,
+        null,
+        "ii"
+      ],
+      "marks": 3,
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        9
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "11"
+      }
+    },
+    {
+      "key": [
+        "2A",
+        3,
+        null,
+        "iii"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        9
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "11"
+      }
+    },
+    {
+      "key": [
+        "2A",
+        3,
+        null,
+        "iv"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        9
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "11"
+      }
+    },
+    {
+      "key": [
+        "2A",
+        4,
+        null,
+        null
+      ],
+      "marks": 5,
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        9
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "12"
+      }
+    },
+    {
+      "key": [
+        "2B",
+        1,
+        null,
+        null
+      ],
+      "marks": 5,
+      "component": "paper",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        9
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "key": [
+        "2C",
+        1,
+        null,
+        null
+      ],
+      "marks": 5,
+      "component": "paper",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        10
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "key": [
+        "2B",
+        2,
+        null,
+        null
+      ],
+      "marks": 5,
+      "component": "paper",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        9
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "key": [
+        "2C",
+        2,
+        null,
+        null
+      ],
+      "marks": 5,
+      "component": "paper",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        10
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "16"
+      }
+    },
+    {
+      "key": [
+        "3A",
+        1,
+        null,
+        "i"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        10
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "17"
+      }
+    },
+    {
+      "key": [
+        "3A",
+        1,
+        null,
+        "ii"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        10
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "17"
+      }
+    },
+    {
+      "key": [
+        "3B",
+        1,
+        null,
+        null
+      ],
+      "marks": 1,
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        11
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "21"
+      }
+    },
+    {
+      "key": [
+        "3A",
+        2,
+        null,
+        "i"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        10
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "18"
+      }
+    },
+    {
+      "key": [
+        "3A",
+        2,
+        null,
+        "ii"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        10
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "18"
+      }
+    },
+    {
+      "key": [
+        "3B",
+        2,
+        null,
+        null
+      ],
+      "marks": 1,
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        11
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "22"
+      }
+    },
+    {
+      "key": [
+        "3A",
+        3,
+        null,
+        "i"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        10
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "19"
+      }
+    },
+    {
+      "key": [
+        "3A",
+        3,
+        null,
+        "ii"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        10
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "19"
+      }
+    },
+    {
+      "key": [
+        "3B",
+        3,
+        null,
+        null
+      ],
+      "marks": 1,
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        11
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "23"
+      }
+    },
+    {
+      "key": [
+        "3A",
+        4,
+        null,
+        "i"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        11
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "20"
+      }
+    },
+    {
+      "key": [
+        "3A",
+        4,
+        null,
+        "ii"
+      ],
+      "marks": 2,
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        11
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "20"
+      }
+    },
+    {
+      "key": [
+        "3B",
+        4,
+        null,
+        null
+      ],
+      "marks": 1,
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        11
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "24"
+      }
+    },
+    {
+      "key": [
+        "3C",
+        null,
+        null,
+        null
+      ],
+      "marks": 10,
+      "component": "paper",
+      "paperPages": [
+        12
+      ],
+      "schemePages": [
+        11
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "25"
+      }
+    },
+    {
+      "key": [
+        "3D",
+        null,
+        null,
+        null
+      ],
+      "marks": 10,
+      "component": "paper",
+      "paperPages": [
+        12
+      ],
+      "schemePages": [
+        11
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "26"
+      }
+    },
+    {
+      "key": [
+        "4",
+        null,
+        null,
+        null
+      ],
+      "marks": 40,
+      "component": "paper",
+      "paperPages": [
+        14
+      ],
+      "schemePages": [
+        12,
+        13
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "27"
+      }
+    },
+    {
+      "key": [
+        "5",
+        null,
+        null,
+        null
+      ],
+      "marks": 60,
+      "component": "paper",
+      "paperPages": [
+        16
+      ],
+      "schemePages": [
+        14,
+        15
+      ],
+      "atlas": {
+        "fileid": "LC058ALP000BV.pdf",
+        "questionNumber": "28"
+      }
+    },
+    {
+      "key": [
+        "LA",
+        null,
+        null,
+        null
+      ],
+      "marks": 18,
+      "component": "aural",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        4
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "1"
+      }
+    },
+    {
+      "key": [
+        "LB",
+        1,
+        null,
+        "i"
+      ],
+      "marks": 2,
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "key": [
+        "LB",
+        1,
+        null,
+        "ii"
+      ],
+      "marks": 3,
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "key": [
+        "LB",
+        1,
+        null,
+        "iii"
+      ],
+      "marks": 3,
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "key": [
+        "LB",
+        1,
+        null,
+        "iv"
+      ],
+      "marks": 4,
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "key": [
+        "LB",
+        1,
+        null,
+        "v"
+      ],
+      "marks": 3,
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "key": [
+        "LB",
+        2,
+        null,
+        "i"
+      ],
+      "marks": 3,
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "key": [
+        "LB",
+        2,
+        null,
+        "ii"
+      ],
+      "marks": 2,
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "key": [
+        "LB",
+        2,
+        null,
+        "iii"
+      ],
+      "marks": 3,
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "key": [
+        "LC",
+        1,
+        null,
+        "i"
+      ],
+      "marks": 4,
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "key": [
+        "LC",
+        1,
+        null,
+        "ii"
+      ],
+      "marks": 2,
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "key": [
+        "LC",
+        1,
+        null,
+        "iii"
+      ],
+      "marks": 4,
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "key": [
+        "LC",
+        1,
+        null,
+        "iv"
+      ],
+      "marks": 4,
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "key": [
+        "LC",
+        2,
+        null,
+        "i"
+      ],
+      "marks": 2,
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "key": [
+        "LC",
+        2,
+        null,
+        "ii"
+      ],
+      "marks": 3,
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "key": [
+        "LC",
+        2,
+        null,
+        "iii"
+      ],
+      "marks": 2,
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "key": [
+        "LD",
+        null,
+        null,
+        "i"
+      ],
+      "marks": 2,
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "4"
+      }
+    },
+    {
+      "key": [
+        "LD",
+        null,
+        "a",
+        "ii"
+      ],
+      "marks": 2,
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "4"
+      },
+      "paperRef": "2019 HL Section LD(ii)(a)"
+    },
+    {
+      "key": [
+        "LD",
+        null,
+        "b",
+        "ii"
+      ],
+      "marks": 2,
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "4"
+      },
+      "paperRef": "2019 HL Section LD(ii)(b)"
+    },
+    {
+      "key": [
+        "LD",
+        null,
+        null,
+        "iii"
+      ],
+      "marks": 2,
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "4"
+      }
+    },
+    {
+      "key": [
+        "LD",
+        null,
+        null,
+        "iv"
+      ],
+      "marks": 2,
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "4"
+      }
+    },
+    {
+      "key": [
+        "LD",
+        null,
+        "a",
+        "v"
+      ],
+      "marks": 2,
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "4"
+      },
+      "paperRef": "2019 HL Section LD(v)(a)"
+    },
+    {
+      "key": [
+        "LD",
+        null,
+        "b",
+        "v"
+      ],
+      "marks": 2,
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "4"
+      },
+      "paperRef": "2019 HL Section LD(v)(b)"
+    },
+    {
+      "key": [
+        "LD",
+        null,
+        null,
+        "vi"
+      ],
+      "marks": 2,
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "4"
+      }
+    },
+    {
+      "key": [
+        "LD",
+        null,
+        null,
+        "vii"
+      ],
+      "marks": 2,
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "atlas": {
+        "fileid": "LC058ALPA00BV.pdf",
+        "questionNumber": "4"
+      }
+    }
+  ],
+  "checksums": {
+    "reading": 120,
+    "writing": 100,
+    "listening": 80,
+    "total": 300
+  },
+  "candidateMaximum": {
+    "written": 220,
+    "listening": 80,
+    "total": 300,
+    "writingChoice": "The original paper requires all five questions. Q4 chooses one of two 40-mark presentation prompts; Q5 is a 60-mark email covering any four of six headings."
+  },
+  "pageRoles": {
+    "paper": {
+      "1": "cover: written220, answer all five questions",
+      "2": "Q1A original Tokyo Paralympic website links, historical sport table, event facts and vocabulary",
+      "3": "Q1A required six-link task and eight separately priced responses",
+      "4": "Q1B three original athlete profiles, photographs and six separately priced responses",
+      "5": "explicit blank",
+      "6": "Q2 original Japanese uniform history, summer/winter changes, survey and CONOMI awards; pictures and underlined translation",
+      "7": "Q2A required uniform table, three Japanese responses, four English responses and translation",
+      "8": "Q2B five required meanings and five required hiragana readings",
+      "9": "Q2C five required past forms and five required verb forms, original underlines",
+      "10": "Q3 original Dara diary with four dated entries, photographs and vocabulary",
+      "11": "Q3A eight English and Q3B four Japanese responses",
+      "12": "Q3C five required reading/meaning pairs; Q3D ten required particle blanks across seven sentences",
+      "13": "explicit blank",
+      "14": "Q4 one of two presentations about holiday or party, approximately200 characters, two content prompts each",
+      "15": "Q4 answer grid",
+      "16": "Q5 email to visiting Japanese friend, approximately320 characters, any four of six headings",
+      "17": "Q5 answer grid",
+      "18": "Q5 answer grid",
+      "19": "additional answer grid",
+      "20": "explicit blank back cover"
+    },
+    "aural": {
+      "1": "cover: listening80, answer all questions in English",
+      "2": "Part A one required three-club/four-column table",
+      "3": "Part B Hotel Okura five tasks and Kyoto weather three tasks, including whole phone grid",
+      "4": "Part C Yoshiko and mother: four morning tasks, three lunchtime tasks",
+      "5": "Part D Yuri and Kenta: nine separately priced tasks, with letters nested under(ii) and(v)",
+      "6": "explicit blank",
+      "7": "explicit blank",
+      "8": "explicit blank back cover"
+    },
+    "scheme": {
+      "1": "cover",
+      "2": "general examiner guidance",
+      "3": "internal Higher cover",
+      "4": "listening Japanese/romaji/script half-credit rule; Part A18 complete table and Part B1 hotel15",
+      "5": "Part B2 weather8; Part C21 with sickness-zero instruction and printed partial components",
+      "6": "Part D18, nine priced tasks including Languages-only1 partial and encouragement1+1",
+      "7": "Q1A18: all six links, exact dated-event2+2 and other response tariffs; scheme repeats3(ii)",
+      "8": "Q1B12 local Japanese half credit and sister-only1 partial; Q2A table8 and three Japanese responses6 with extraneous-material rule only",
+      "9": "Q2A3 English11, translation5, Q2B five meanings/five readings10; no language penalty printed here",
+      "10": "Q2C required grammar10, Q3A first six responses12; diary question called blog in scheme",
+      "11": "Q3A last two responses4, Q3B four Japanese answers4, Q3C reading-letter/meaning10 and Q3D ten particles10; grammar mislabelledC and final(vii) repeats(vi)",
+      "12": "Q4 two presentation choices, each two content9 plus opening1/closing1 and expression20",
+      "13": "Q4 exact normal/lower expression bands; cap15 if content<=10 or length<150",
+      "14": "Q5 four headings6 each, opening1/closing1 and four discretionary content marks, expression30",
+      "15": "Q5 exact normal/lower expression bands; cap20 if content<=15 or length<200",
+      "16": "tapescript Part A",
+      "17": "tapescript Part B",
+      "18": "tapescript Part C",
+      "19": "tapescript Part D",
+      "20": "blank back cover"
+    }
+  },
+  "sourceDiscrepancies": [
+    {
+      "taskKey": [
+        "1A",
+        3,
+        null,
+        "i"
+      ],
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "evidence": "The year question is3(i) in the original paper; the scheme repeats(ii). Retain the actual question identity and its2000 answer1."
+    },
+    {
+      "taskKey": [
+        "3A",
+        1,
+        null,
+        "ii"
+      ],
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        10
+      ],
+      "evidence": "The paper asks who told Dara to write a diary and why; the scheme calls it a blog. The corresponding teacher1 and writing-practice1 answer is explicit. Preserve the actual paper wording."
+    },
+    {
+      "taskKey": [
+        "3D",
+        null,
+        null,
+        null
+      ],
+      "paperPages": [
+        12
+      ],
+      "schemePages": [
+        11
+      ],
+      "evidence": "The paper labels grammarD and final sentence(vii); the scheme repeatsC and(vi). Preserve the printed paper citation and all ten priced particle blanks."
+    }
+  ],
+  "choiceBoundaries": [
+    "Q1A1 is one required six-link task,1 each. Date endpoints each carry2, not an invented per-component split. All other separately priced responses remain distinct.",
+    "Q1B2(i) older sister earns2; sister alone1. Q1B1(i) sight1 plus left eye1 and Q1B2(ii) bronze1 plus Rio1 remain exact components. Six Q1B tasks carry the local Japanese-half rule.",
+    "Q2A table is one task8: each row has three unfilled answer cells; boys and Kyoto Heisei Jogakkuin are printed examples and earn no new marks. Uniform descriptions each allow two details1 each. Required kanji and grammar pools each contain all five items.",
+    "Q2A2 extraneous-material half credit applies to three answers. No incorrect-English clause is printed; do not inherit one from another year. No all-paper language or writing penalty is printed.",
+    "Q3C five required pairs each carry the correct reading-letter1 plus meaning1; retain all original paper options. Q3D has ten required blanks across seven sentences,1 each, retaining alternatives and correcting only paper/scheme label mismatches.",
+    "Q4 one40-mark choice: two content9, opening1, closing1, expression20; lowerE15 if C<=10 or fewer than150 characters. Q5 one60-mark email: four headings6, opening1, closing1, discretionary4, expression30; lowerE20 if C<=15 or fewer than200 characters. Both writing questions are required.",
+    "Listening A is one18-mark required table with12 cells. Tuesday1/Thursday1 and every day1/from4to6 one mark are distinct. Third club Monday1/Wednesday1 has a separately printed three-times-a-week1 alternative; do not combine its generic partial with a complete route.",
+    "Listening B has eight tasks; north exit1, go straight about five minutes1 and end of road1 are all required. Phone03-3562-9704 is whole3, not per-digit. Listening C has seven tasks, preserves feels-sick-zero, and exact yakiniku1/restaurant1 plus out-with-friend1 partial guidance under its total2.",
+    "Listening D has nine tasks; English1+Chinese1 versus generic Languages1 are alternative routes, not additive. Four roman-then-letter tasks retain literal paper references and canonical letter/roman keys. All25 listening tasks carry the namedJapanese/romaji/script half-credit rule.",
+    "Preserve all28 original written and four aural Atlas identities, labels, pages and regions. Correct scheme upper bounds21→20, and append a required continuation only if independent source review proves it missing."
+  ]
+}

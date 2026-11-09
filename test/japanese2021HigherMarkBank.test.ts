@@ -62,8 +62,8 @@ describe('Japanese 2021 Higher independent source review', () => {
     });
     const live = new Set([...higher, ...ordinary].map(card => card.id));
     for (const id of originalIds) expect(live.has(id) || live.has(CARD_ID_ALIASES[id]), id).toBe(true);
-    expect(rawCards.filter(card => !originalIds.includes(card.id))).toHaveLength(602);
-    expect(live.size).toBe(600 + 602 - 391);
+    expect(rawCards.filter(card => !originalIds.includes(card.id))).toHaveLength(671);
+    expect(live.size).toBe(600 + 671 - 391);
     expect(originalIds.filter(id => id.startsWith('ja-2021-hl-'))).toHaveLength(69);
     expect(cards.filter(card => originalIds.includes(card.id))).toHaveLength(26);
     expect(cards.filter(card => !originalIds.includes(card.id))).toHaveLength(32);

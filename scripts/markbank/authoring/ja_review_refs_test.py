@@ -8,8 +8,8 @@ from reconcile import match_leaves, parse_ref
 class PrintedJapaneseReferences(unittest.TestCase):
     def test_nested_tasks_cover_only_their_independently_censused_leaf(self):
         bindings = reviewed_japanese_refs()
-        self.assertEqual(len(bindings), 14)
-        self.assertEqual(sum(binding['q'] is None for binding in bindings.values()), 2)
+        self.assertEqual(len(bindings), 18)
+        self.assertEqual(sum(binding['q'] is None for binding in bindings.values()), 6)
         for cid, binding in bindings.items():
             with self.subTest(card=cid):
                 section, q = binding['section'], binding['q']
