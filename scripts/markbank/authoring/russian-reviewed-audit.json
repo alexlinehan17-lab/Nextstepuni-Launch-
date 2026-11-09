@@ -3538,6 +3538,131 @@
         ],
         "sourceTestSeparation": "Actual original-PDF, independent census and negative source-rule checks are a mandatory Python gate; the2016 Vitest suite is portable and contains no conditional PDF skip."
       }
+    },
+    {
+      "year": 2015,
+      "level": "higher",
+      "reviewedAt": "2026-11-09",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "auralPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "independentPrintedAsks": 44,
+      "independentPracticeTasks": 43,
+      "writtenTasks": 24,
+      "listeningTasks": 19,
+      "printedListeningAsks": 20,
+      "printedWrittenMarks": 220,
+      "printedListeningMarks": 80,
+      "allAlternativePracticeMarks": 300,
+      "newCards": 43,
+      "correctedCards": 0,
+      "previousIdsPreserved": 199,
+      "fullSizeTariffPages": [
+        4,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16
+      ],
+      "sourceReview": "complete; literal overlapping descriptor and unmapped category guidance retained",
+      "diagnosedReaderIssues": [
+        "All 44 original printed asks are retained in 43 cards. L3Q3(i)/(ii) has one explicitly joint four-detail/eight-mark award, with both original one/three-detail questions visible and no invented per-part cap.",
+        "C1Q2(i) includes two complete explanations expressly priced four marks each, within its four-mark question maximum. Other full two-mark details and explicit one-mark partials remain available without duplicate credit.",
+        "Family-advice and timing partials retain their complete source wordings within reviewed same-concept groups. Independent partial facts remain separate; no semantic-similarity-only exclusions.",
+        "Grammar aligns the 15 original bracketed gaps against fixed surrounding text in the original scheme, retaining all 18 accepted forms and Latin lookalikes. The accepted older придти shares one credit with прийти; rejected spellings remain visible.",
+        "All summary main and secondary details retain two-mark full credit, intelligible partial one, incomplete discretion maximum one, and whole-response wrong-language zero including discretion.",
+        "Guided writing Lower A consistently permits 7–12 numerically, but its prose middle band 9/10 conflicts with the grid middle 9–11 overlapping 11–12. Both exact descriptor versions are quoted literally, with no structured Lower A bands or invented descriptor precedence. Normal and Lower E grids remain structured.",
+        "Writing retains source-specific soft-sign deductions: essay one or two marks, guided writing two marks. Generic category letters are not silently assigned to the actual writing choices.",
+        "L3Q1 uses an explicit absence-of-employment/boxing-reference flag to apply the source whole-answer maximum three, otherwise four. Details stay two each; the condition is judged from the actual response, not English keyword matching or selected answer labels.",
+        "L3Q2 preserves the question-level one-mark world-championship partial with two manual 0/1/2 answer slots and the complete literal pool, without invented specific association.",
+        "Listening accepts Russian and source-specific excess material. No written wrong-language penalty is inherited by listening; no audio adjudication claimed."
+      ],
+      "independentReview": {
+        "reviewers": [
+          "Codex coordinator"
+        ],
+        "findings": [
+          "Original p16 conditional cap and pp13–14 conflicting descriptor versions independently confirmed.",
+          "Coordinator independently confirmed both complete four-mark admission explanations under the four-mark C1Q2(i) maximum. Complete4, ordinary2+2, partial1 and no over-credit regressions pass."
+        ]
+      },
+      "validation": {
+        "status": "source-reviewed and validated; published descriptor overlap remains explicit",
+        "sourceSlicesVerified": 432,
+        "combinedSourceSlicesVerified": 9456,
+        "mandatoryOriginalAndSyntheticSourceTestsPassed": 23,
+        "focusedAndSharedTestsPassed": 100,
+        "requiredTestsPassed": 536,
+        "russianCoverageTestsPassed": 3,
+        "appTypecheck": "passed",
+        "scopedTestTypecheck": "passed",
+        "targetedLint": "passed",
+        "productionBuild": "passed",
+        "deterministicRegenerations": 2,
+        "all958PriorReviewedCardsUnchanged": true,
+        "all958PriorAuthoredRecordsUnchanged": true,
+        "otherSubjectsPreserved": true,
+        "decodedNonRussianAtlasPreserved": true,
+        "nonRussianIndexBytesPreserved": true,
+        "sittingOpenTasks": 0,
+        "sittingExcludedTasks": 0,
+        "sittingOrphans": 0,
+        "browserQa": "pending; browser host unavailable",
+        "sourceLimitations": [
+          "Lower A descriptor middle range differs between prose and table; both literal versions retained with consistent numeric7–12 and no invented category conversion.",
+          "The writing scheme does not assign its generic category letters to the printed choices; no mapping invented."
+        ],
+        "testCorrection": "Scoped test types caught an invalid L1 section discriminator. Replaced with all five exact announcement IDs and verified nonempty scope/full instructions; all11 focused sitting cases, scoped types, lint and build passed afterward. No source change or weakened assertion."
+      }
     }
   ]
 }
