@@ -10,12 +10,12 @@
   "currentCounts": {
     "subject": "home-economics",
     "mode": "sections",
-    "cards": 1745,
-    "leaves": 1859,
-    "covered": 1695,
+    "cards": 1796,
+    "leaves": 1881,
+    "covered": 1746,
     "excluded": 0,
-    "open": 164,
-    "coveragePct": 91.2,
+    "open": 135,
+    "coveragePct": 92.8,
     "orphans": [],
     "unparsed": [],
     "staleExclusions": [],
@@ -186,40 +186,10 @@
         "year": 2019,
         "level": "hl",
         "paper": null,
-        "leaves": 29,
-        "covered": 0,
+        "leaves": 51,
+        "covered": 51,
         "excluded": 0,
-        "open": [
-          "Section A Q1",
-          "Section A Q4",
-          "Section A Q7(a)",
-          "Section A Q7(b)(i)",
-          "Section A Q7(b)(ii)",
-          "Section A Q7(c)",
-          "Section A Q7(d)",
-          "Section A Q7(e)",
-          "Section C Q1(a)(i)",
-          "Section C Q1(a)(ii)",
-          "Section C Q1(a)(iii)",
-          "Section C Q1(b)(i)",
-          "Section C Q1(b)(ii)",
-          "Section C Q1(c)(i)",
-          "Section C Q1(c)(ii)",
-          "Section C Q2(a)(i)",
-          "Section C Q2(a)(ii)",
-          "Section C Q2(b)(i)",
-          "Section C Q2(b)(ii)",
-          "Section C Q2(c)(i)",
-          "Section C Q2(c)(ii)",
-          "Section C Q3(a)(i)",
-          "Section C Q3(a)(ii)",
-          "Section C Q3(a)(iii)",
-          "Section C Q3(a)(iv)",
-          "Section C Q3(b)(i)",
-          "Section C Q3(b)(ii)",
-          "Section C Q3(c)(i)",
-          "Section C Q3(c)(ii)"
-        ]
+        "open": []
       },
       {
         "year": 2019,
@@ -513,17 +483,17 @@
         "open": []
       }
     ],
-    "censusFlags": 14,
+    "censusFlags": 13,
     "unreadPapers": []
   },
   "nextActions": [
-    "2010–2018 Higher/Ordinary source reviews complete. Finish independent 2019 Higher original-page sweep and manual ledger before parser/author inspection; continue 2019–2020 both levels and remaining published deferred.",
+    "2010–2018 Higher/Ordinary and 2019 Higher source reviews checkpointed. Continue 2019 Ordinary original sweep/authoring, then 2020 both levels and current deferred publication inventory. Resolve the explicitly held 2019 B3(b) one-mark ambiguity only with authoritative evidence.",
     "2023 Higher/Ordinary English main source reviews complete: 59/60 tasks. 2023 Higher deferred source review complete: 58 tasks, 749 offered practice marks, all mapped to Atlas. Browser QA pending.",
     "2022 Higher deferred source review complete: all 61 tasks (749 offered practice marks), 23 Atlas question groups, all 79 source pages independently swept. Browser QA pending.",
     "Live SEC inventory: English Home Economics deferred publications found for 2022/2023 Higher only; no subject listing for 2024/2025, and no 2026 deferred year offered. Absence is a publication finding, not proof no exam was sat.",
     "Preserve prior card identities and progress, reconcile each verified batch, integrate locally and continue. Browser QA remains pending: browser host unavailable and native Chrome is in active use."
   ],
-  "coveragePolicy": "Raw census is diagnostic only: 164 open candidates and 14 flags do not independently count outstanding tasks. 2018 Ordinary source-complete after 44-page independent visual sweep: 54 original leaves, 53 separately priced tasks, 627 marks. Whole subject remains in progress.",
+  "coveragePolicy": "Raw census is diagnostic only: 135 open candidates and 13 flags do not independently count outstanding tasks. 2019 Higher retains all 51 independently counted tasks, with B3(b) disputed intermediate marks explicitly unassessed. Whole subject remains in progress.",
   "integratedBatches": [
     {
       "workCommit": "14e08691b",
@@ -642,24 +612,25 @@
     }
   ],
   "latestValidatedBatch": {
-    "scope": "2018 Ordinary main: 53 tasks, nine original figures, 20 preserved Atlas IDs.",
-    "runtimeCards": 1745,
-    "higher": 926,
+    "scope": "2019 Higher main: 51 tasks, two original figures, 20 preserved Atlas IDs; B3(b) intermediate-mark ambiguity explicitly unresolved.",
+    "runtimeCards": 1796,
+    "higher": 977,
     "ordinary": 819,
-    "sourceReview": "2018-ol-main-review.json",
+    "sourceReview": "2019-hl-main-review.json",
     "validation": {
-      "runtime": "246 affected/required tests passed: seven each for 2018 Higher and Ordinary plus 232 preservation/curriculum/deck. maxWorkers=1; each Vitest invocation uses an owned temporary cache directory cleaned immediately afterwards.",
-      "mandatoryRawSourceGate": "Explicit 2010–2018 original-PDF hash/key gates passed. Independent visual census: 54 original leaves A12/B21/C21 reconcile to 53 priced tasks A12/B20/C21. Both B2(a) and B3(a) roman pairs share 20 marks; B5(c) separately prices definition 5 and response ways 10. C1(a)(ii) inline (a)–(d) are four water-treatment stages inside one roman task. Normal runtime tests require no local PDFs/Python.",
-      "atlas": "Two targeted Home Economics checks passed: 74 tagged papers, 940 physical groups, 1008 registry mappings. All 20 original IDs retained; exact runtime remains 996.",
-      "coverage": "Three targeted Home Economics tests passed. Subject baseline 1745 cards / 1695 covered of 1859 raw leaves, 164 open. Ratchet findings empty before and after; all other subject entries unchanged.",
+      "runtime": "247 affected/required tests passed: eight 2019 Higher and seven 2018 Ordinary plus 232 preservation/curriculum/deck. maxWorkers=1, owned temporary test caches removed automatically.",
+      "mandatoryRawSourceGate": "Explicit 2010–2019 original-PDF hash/key gates passed. Independent 48-page visual census pinned 51 original leaves A12/B18/C21 before parser/card inspection; one-to-one mapping to 51 priced tasks and 627 marks.",
+      "atlas": "Two targeted Home Economics checks passed: 75 tagged papers, 960 physical groups, 1008 registry mappings. All 20 original IDs retained; exact runtime 996.",
+      "coverage": "Three targeted Home Economics checks passed. Subject-only baseline 1796 cards / 1746 of 1881 raw leaves covered, 135 open. Zero ratchet findings before/after; all other subject entries unchanged.",
       "mainTypecheck": "passed",
-      "scoped2018TestTypecheck": "passed",
-      "productionBuild": "passed; only own reproducible untracked nonsymlink dist removed immediately after success",
-      "cardlint": "clean; 1771 authored records including withdrawals inspected",
-      "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across 32 generated files.",
-      "reconciliation": "2018 Ordinary 54/54 raw leaves covered by 53 priced tasks, 627 marks; zero sitting opens/exclusions/continuity flags. Lane 1745 cards: 926 Higher / 819 Ordinary; 1695/1859 raw leaves covered, 164 open, zero orphan/unparsed/excluded, 14 flags.",
-      "preservation": "Every earlier authored card and all 766 earlier emitted Ordinary blocks, unrelated decks, other sizes/showcase subjects, full and decoded non-HE Atlas data, unrelated HE tags/runtime/associations and every other HE raw census sitting unchanged. Frozen identity hashes unchanged; 53 additions explicitly pinned.",
-      "browser": "Parent-owned/pending. All nine original crops individually visually inspected; no shared UI/scorer changes."
+      "scoped2019TestTypecheck": "passed",
+      "productionBuild": "passed; own ignored nonsymlink dist removed after success",
+      "cardlint": "clean; 1822 authored records including withdrawals inspected",
+      "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across 25 generated files.",
+      "reconciliation": "2019 Higher 51/51 original leaves and 51 priced tasks, zero sitting opens/exclusions/continuity flags. Lane 1796 cards (977 Higher / 819 Ordinary), 1746/1881 raw leaves covered, 135 open, zero orphan/unparsed/excluded, 13 flags.",
+      "preservation": "Every earlier authored card and all 926 earlier emitted Higher blocks, unrelated decks, sizes/showcase subjects, full and decoded non-HE Atlas records, unrelated HE mappings and every other HE raw census sitting unchanged. Frozen identity hashes unchanged; 51 additions explicitly pinned.",
+      "browser": "Parent-owned/pending; both original input crops individually visually inspected.",
+      "numericAmbiguity": "B3(b) conditions/source/high-risk-foods: page 12 prints 2:1:0 and page 13 prints 2:0; no source precedence established. Both ladders are visible. Only common 0/2 choices are exposed; a response potentially meriting the disputed 1 mark must remain unassessed pending authoritative clarification. Full task and all profiles retained. This numeric conflict remains unresolved."
     }
   },
   "knownExistingValidationIssues": [
