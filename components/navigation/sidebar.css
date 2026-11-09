@@ -24,7 +24,7 @@
 .nsu-nav-resize:hover::after, .nsu-nav-resize:focus-visible::after, .student-sidebar-shell[data-resizing] .nsu-nav-resize::after { background:var(--sidebar-ring); }
 .student-sidebar-shell[data-resizing] { cursor:col-resize; user-select:none; }
 .student-sidebar-shell[data-resizing] :is([data-slot=sidebar-gap], [data-slot=sidebar-container], [data-student-page-header]) { transition:none !important; }
-.student-sidebar-shell [data-slot=sidebar-inner] { background:var(--sidebar); }
+.student-sidebar-shell [data-slot=sidebar-inner] { background:var(--sidebar); padding-top:var(--sat,0px); padding-bottom:var(--sab,0px); }
 .student-sidebar-shell .student-sidebar-page { --accent:242,107,31; min-width:0; margin:8px 8px 8px 0; border:0; border-radius:16px; box-shadow:none; overflow:clip; background:var(--surface-canvas); font:16px/1.5 'DM Sans',sans-serif; }
 .student-sidebar-shell .student-sidebar-page > :is(.product-shell, .theme-compat, .nsu-kobra, .min-h-screen),
 .student-sidebar-shell .student-sidebar-page :is(.nsu-learning, .nsu-planner, .nsu-progress) { background:var(--surface-canvas); }
