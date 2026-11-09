@@ -13,6 +13,33 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('shows the 2016 food partial beside its constrained score control',async()=>{
+    reveal('c1-1-ii','hl',2016);
+    await waitFor(()=>expect(screen.getByText(/one-mark step on the main-course row/)).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'What Pavel eats'}));
+    fireEvent.click(screen.getByRole('button',{name:'Claim 1 marks for main course/ second course/ second dish'}));
+    await waitFor(()=>expect(screen.getByText(/placement is 1 of 6 marks/)).toBeVisible());
+  });
+  it('shows Kira’s unresolved source travel span and only full-credit generic slots',async()=>{
+    reveal('l1-2','hl',2016);
+    await waitFor(()=>expect(screen.getByText(/festival and solo-concert context/)).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'Other distinct detail 1'}));
+    expect(screen.getByRole('button',{name:'Set Other distinct detail 1 to 2 marks'})).toBeEnabled();
+    expect(screen.queryByRole('button',{name:'Set Other distinct detail 1 to 1 marks'})).not.toBeInTheDocument();
+  });
+  it('keeps the 2016 cross-question partial visibly unassessed',async()=>{
+    reveal('l4-2-ii','hl',2016);
+    await waitFor(()=>expect(screen.getByText(/leave that cross-question partial unassessed here/)).toBeVisible());
+    expect(screen.getByRole('button',{name:'Set First distinct detail to 2 marks'})).toBeVisible();
+    expect(screen.queryByRole('button',{name:'Set First distinct detail to 1 marks'})).not.toBeInTheDocument();
+    expect(screen.getAllByText(/started doing music/).length).toBeGreaterThan(1);
+  });
+  it('shows both general and specific 2016 sports routes without duplicate credit',async()=>{
+    reveal('l2-2','hl',2016);
+    await waitFor(()=>expect(screen.getByRole('button',{name:'Sporting activities'})).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'Sporting activities'}));
+    expect(screen.getByRole('button',{name:'Named sporting activities'})).toBeDisabled();
+  });
   it('uses the 2017 general or specific crowd route without duplicate credit',async()=>{
     reveal('c2-4','hl',2017);
     await waitFor(()=>expect(screen.getByRole('button',{name:'General description'})).toBeVisible());

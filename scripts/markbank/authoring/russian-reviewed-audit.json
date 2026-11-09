@@ -3408,6 +3408,136 @@
         "requiredTestRunNote": "483/484 initially passed; missing scheme Markdown extracted directly from the hash-bound20-page original, followed by all104 affected deck tests passing. No scoring exemption.",
         "sourceLimitation": "L3Q3(i): China/Vietnam dual-country combination is not adjudicated by the scheme. The published four country/detail marks and literal source rows remain visible; no automated acceptance or rejection of that combination."
       }
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "reviewedAt": "2026-11-09",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "auralPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "independentPracticeTasks": 40,
+      "writtenTasks": 20,
+      "listeningTasks": 20,
+      "printedWrittenMarks": 220,
+      "printedListeningMarks": 80,
+      "allAlternativePracticeMarks": 300,
+      "newCards": 40,
+      "correctedCards": 0,
+      "previousIdsPreserved": 199,
+      "fullSizeTariffPages": [
+        4,
+        5,
+        7,
+        9,
+        10,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "sourceReview": "complete; explicit travel-overlap and transferred-partial limitations retained",
+      "diagnosedReaderIssues": [
+        "Food question maximum two food details and two reason details within global three-detail quota; the second-meal one-mark partial is a step on its full main-course row and cannot earn twice.",
+        "Snow-activities question has two 0/1/2 answer placements with its complete full/partial pool because the two question-level partials have no uniquely printed full-answer association.",
+        "All summary details retain two-mark full and one-mark intelligible partial credit. Section4 discretionary credit is zero if the delayed return is not understood; incomplete answers cap discretion at one. Whole wrong-language zero includes discretion.",
+        "The two printed smoking entries describe one event, confirmed in original paperp7 paragraph4 (курили), and share one claim group with both literal forms retained.",
+        "LA1 chooses five of six phrases, with separately priced one-mark adjective and one-mark noun. Both language-awareness tasks Q2.2/Q2.3 remain distinct; all16 circus words and all five infinitives retained, with rejected words/wrong-aspect guidance.",
+        "Grammar derives all15 answers from the original PDF drawing boxes, not approximate text emphasis. Each frame uses paired horizontal lines; accepted мной/мною and пароходе/пароходах stay in single-credit groups. времени retained.",
+        "Exact positive Lower A ranges and both named scales preserved; no automatic minimum or inferred descriptor conversion. Original one-mark soft-sign penalties and waiver guidance retained.",
+        "Camp sports general route versus four named sports follows the original slash layout, within five total details. Independent art/excursion/education/classes units stay intact.",
+        "Camp timetable/location/price groups follow the three categories named in the prompt and mirrored in the scheme; original plus-linked price wording remains visible, with reviewed interpretation clearly described.",
+        "Kira asks THREE details, six marks. One singer/songwriter full2/partial1 concept plus three generic full2-only slots under three-answer quota preserves the unresolved festival/solo-concert travel overlap without inventing geography groups or deduplicating USA.",
+        "L3 future question retains the expressly open cross-section allowance through a source-bound manual full2 slot. L4 education/achievements questions show both complete original pools and explicit mutual acceptance.",
+        "The started-doing-music partial is explicitly one mark in L4Q2(i), but its transferred tariff in Q2(ii) is not established. The visible note leaves that cross-partial unassessed; clear native full-credit details retain 0/2 controls.",
+        "Listening accepts Russian and non-invalidating excess material; no Higher written-language penalty is applied to listening. No audio adjudication claimed."
+      ],
+      "independentReview": {
+        "reviewers": [
+          "Codex coordinator",
+          "Japanese Codex worker"
+        ],
+        "findings": [
+          "Coordinator reviewed original sport routes, smoking-event passage binding, snow partial scope, Kira travel ambiguity and transferred partial tariff.",
+          "Japanese worker independently reviewed the camp category interpretation."
+        ]
+      },
+      "validation": {
+        "status": "source-reviewed and validated; two source limitations remain explicit",
+        "browserQa": "pending; browser host unavailable",
+        "sourceSlicesVerified": 409,
+        "combinedSourceSlicesVerified": 9024,
+        "focusedAndSharedTestsPassed": 73,
+        "mandatoryOriginalAndSyntheticSourceTestsPassed": 17,
+        "requiredTestsPassed": 499,
+        "russianCoverageTestsPassed": 3,
+        "appTypecheck": "passed",
+        "scopedTestTypecheck": "passed",
+        "targetedLint": "passed",
+        "productionBuild": "passed",
+        "deterministicRegenerations": 2,
+        "all918PriorReviewedCardsUnchanged": true,
+        "all918PriorAuthoredRecordsUnchanged": true,
+        "otherSubjectsPreserved": true,
+        "decodedNonRussianAtlasPreserved": true,
+        "nonRussianIndexBytesPreserved": true,
+        "sittingOpenTasks": 0,
+        "sittingExcludedTasks": 0,
+        "sittingOrphans": 0,
+        "sourceLimitations": [
+          "L1Q2: the published travel span has unresolved festival/solo-concert overlap; literal pool and manual full-credit slots preserve it without invented geography groups.",
+          "L4Q2(ii): the transferred started-doing-music partial has no established tariff and remains explicitly unassessed; clear full-credit details retain their native 0/2 controls."
+        ],
+        "sourceTestSeparation": "Actual original-PDF, independent census and negative source-rule checks are a mandatory Python gate; the2016 Vitest suite is portable and contains no conditional PDF skip."
+      }
     }
   ]
 }
