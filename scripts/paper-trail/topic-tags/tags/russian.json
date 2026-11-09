@@ -2720,7 +2720,7 @@
    },
    {
     "n": "l2-2-i",
-    "primary": "russian-0-3",
+    "primary": "russian-0-8",
     "secondary": "russian-1-0"
    },
    {
@@ -2735,12 +2735,12 @@
    },
    {
     "n": "l3-1-i",
-    "primary": "russian-0-5",
+    "primary": "russian-0-4",
     "secondary": "russian-1-0"
    },
    {
     "n": "l3-1-ii",
-    "primary": "russian-0-5",
+    "primary": "russian-0-4",
     "secondary": "russian-1-0"
    },
    {
@@ -2755,7 +2755,7 @@
    },
    {
     "n": "l3-2-iii",
-    "primary": "russian-0-5",
+    "primary": "russian-0-9",
     "secondary": "russian-1-0"
    },
    {
@@ -2775,7 +2775,7 @@
    },
    {
     "n": "l4-1-ii",
-    "primary": "russian-0-4",
+    "primary": "russian-0-3",
     "secondary": "russian-1-0"
    },
    {
@@ -3894,12 +3894,12 @@
   "q": [
    {
     "n": "l1-1-i",
-    "primary": "russian-0-11",
+    "primary": "russian-2-2",
     "secondary": "russian-1-0"
    },
    {
     "n": "l1-1-ii",
-    "primary": "russian-0-11",
+    "primary": "russian-2-2",
     "secondary": "russian-1-0"
    },
    {
@@ -4550,17 +4550,17 @@
    },
    {
     "n": "l1-2",
-    "primary": "russian-0-3",
-    "secondary": "russian-1-0"
-   },
-   {
-    "n": "l1-3",
     "primary": "russian-0-5",
     "secondary": "russian-1-0"
    },
    {
+    "n": "l1-3",
+    "primary": "russian-0-9",
+    "secondary": "russian-1-0"
+   },
+   {
     "n": "l1-4",
-    "primary": "russian-0-8",
+    "primary": "russian-0-14",
     "secondary": "russian-1-0"
    },
    {
@@ -4570,22 +4570,22 @@
    },
    {
     "n": "l2-1-ii",
-    "primary": "russian-0-3",
+    "primary": "russian-0-5",
     "secondary": "russian-1-0"
    },
    {
     "n": "l2-2",
-    "primary": "russian-0-3",
+    "primary": "russian-0-5",
     "secondary": "russian-1-0"
    },
    {
     "n": "l2-3",
-    "primary": "russian-0-3",
+    "primary": "russian-0-5",
     "secondary": "russian-1-0"
    },
    {
     "n": "l2-4",
-    "primary": "russian-0-3",
+    "primary": "russian-0-6",
     "secondary": "russian-1-0"
    },
    {
@@ -4610,22 +4610,22 @@
    },
    {
     "n": "l3-4",
-    "primary": "russian-2-1",
+    "primary": "russian-0-8",
     "secondary": "russian-1-0"
    },
    {
     "n": "l4-1-i",
-    "primary": "russian-0-1",
+    "primary": "russian-0-7",
     "secondary": "russian-1-0"
    },
    {
     "n": "l4-1-ii",
-    "primary": "russian-0-1",
+    "primary": "russian-0-4",
     "secondary": "russian-1-0"
    },
    {
     "n": "l4-2",
-    "primary": "russian-0-11",
+    "primary": "russian-0-4",
     "secondary": "russian-1-0"
    },
    {

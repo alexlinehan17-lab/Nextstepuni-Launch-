@@ -261,10 +261,13 @@ def listening(docs,P):
                 if (item,roman)!=(scheme_item,scheme_roman):
                     assert (unit,item,roman,scheme_item,scheme_roman)==('L2',2,None,2,'i')
                     c['rubric']['markingGuideNote']='The booklet labels this question2; scheme page16 labels it2(i). This card follows the booklet.'
-            if section==1:topic='russian-0-8' if item in (1,4) else 'russian-0-3' if item==2 else 'russian-0-5'
-            elif section==2:topic='russian-0-1' if item==1 and roman=='i' else 'russian-0-3'
-            elif section==3:topic='russian-2-1' if item==4 else 'russian-0-8'
-            else:topic='russian-0-1' if item in (1,3) else 'russian-0-11'
+            # Canonical curriculum labels: hobbies/Gaelic football are Leisure
+            # Pursuits, future ambitions are Plans, tourist sites are Travel,
+            # and the blogger's publishing/success belongs to Work.
+            if section==1:topic={1:'russian-0-8',2:'russian-0-5',3:'russian-0-9',4:'russian-0-14'}[item]
+            elif section==2:topic='russian-0-1' if item==1 and roman=='i' else 'russian-0-6' if item==4 else 'russian-0-5'
+            elif section==3:topic='russian-0-8'
+            else:topic='russian-0-1' if item==3 else 'russian-0-7' if item==1 and roman=='i' else 'russian-0-4'
             c['topicId']=topic;c['additionalTopicIds']=['russian-1-0']
             if (unit,item,roman)==('L3',4,None):c['sourceMaterial']['pages']=[5];c['review']['paperPages']=[5]
             if section==4:c['sourceMaterial']['pages']=[6];c['review']['paperPages']=[6]
