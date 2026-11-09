@@ -5954,6 +5954,5363 @@
     "paperFileid": "LC058ALPA00EV"
   },
   {
+    "id": "ja-2016-ol-1-1",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "time-workshops-start-piano-trumpet-cello",
+    "questionRef": "2016 OL Section 1 Q1",
+    "questionText": "At what time do the following workshops start?\ne.g. Piano 2:00\n(i)  Trumpet\n(ii)   Cello\n(iii)  Drums\n(iv)  Violin\n(v)  Flute",
+    "totalMarks": 10,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "3:00",
+        "marks": 2,
+        "contextNote": "(i)  Trumpet",
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "11:30",
+        "marks": 2,
+        "contextNote": "(ii)   Cello",
+        "id": "r-2"
+      },
+      {
+        "kind": "point",
+        "verbatim": "2:00",
+        "marks": 2,
+        "contextNote": "(iii)  Drums",
+        "id": "r-3"
+      },
+      {
+        "kind": "point",
+        "verbatim": "11:30",
+        "marks": 2,
+        "contextNote": "(iv)  Violin",
+        "id": "r-4"
+      },
+      {
+        "kind": "point",
+        "verbatim": "10:00",
+        "marks": 2,
+        "contextNote": "(v)  Flute",
+        "id": "r-5"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-1-2",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "date-tokyo-orchestra-workshop-take-place",
+    "questionRef": "2016 OL Section 1 Q2",
+    "questionText": "What date does the Tokyo orchestra workshop take place?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "12th",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "of July",
+        "marks": 1,
+        "id": "r-2"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "stem": "Answer questions 2-6 in English.",
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-1-3",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "where-workshops-take-place-percussion-brass",
+    "questionRef": "2016 OL Section 1 Q3",
+    "questionText": "Where will the following workshops take place?\n(i)  Percussion\n(ii)  Brass",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "Hall 1",
+        "marks": 2,
+        "contextNote": "(i)  Percussion",
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "Hall 2",
+        "marks": 2,
+        "contextNote": "(ii)  Brass",
+        "id": "r-2"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-1-5",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "events-take-place-months-august-november",
+    "questionRef": "2016 OL Section 1 Q5",
+    "questionText": "What events will take place in the following months?\n(i)  August\n(ii)  November\n(iii)  December",
+    "totalMarks": 6,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "Ireland workshop",
+        "marks": 2,
+        "contextNote": "(i)  August",
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "Kids festival",
+        "marks": 2,
+        "contextNote": "(ii)  November",
+        "id": "r-2"
+      },
+      {
+        "kind": "point",
+        "verbatim": "Christmas fair",
+        "marks": 2,
+        "contextNote": "(iii)  December",
+        "id": "r-3"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-1-4",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "lunch-options",
+    "questionRef": "2016 OL Section 1 Q4",
+    "questionText": "Name two lunch options.",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "Tempura",
+            "chicken",
+            "salmon"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-1-6",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "1",
+    "topicId": "japanese-5-0",
+    "conceptId": "names-japanese-instruments-learn-japan-workshop",
+    "questionRef": "2016 OL Section 1 Q6",
+    "questionText": "What are the names of two Japanese instruments you can learn in the Japan workshop?",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "Shakuhachi",
+            "shamisen",
+            "koto"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-2a-1",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "2",
+    "topicId": "japanese-5-2",
+    "conceptId": "match-shop-event-location-marion-crepes",
+    "questionRef": "2016 OL Section 2A Q1",
+    "questionText": "Match the shop/event with the location:\n(i) Marion Crepes ・ ・ Yoyogi park\n(ii) Flea market   ・ ・ Harajuku\n(iii) Kiddy Land   ・ ・ Takeshita street",
+    "totalMarks": 9,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "Takeshita street",
+        "marks": 3,
+        "contextNote": "Marion Crepes",
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "Yoyogi Park",
+        "marks": 3,
+        "contextNote": "Flea market",
+        "id": "r-2"
+      },
+      {
+        "kind": "point",
+        "verbatim": "Harajuku",
+        "marks": 3,
+        "contextNote": "Kiddy Land",
+        "id": "r-3"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "paperFileid": "LC058GLP000EV",
+    "questionFigure": {
+      "candId": "ja-2016-ol-2a-1",
+      "src": "/exam-figures/japanese/ja-2016-ol-2a-1.png",
+      "srcHash": "6b9a1509deaef4f6684351a51856ebdf",
+      "alt": "Match the shop/event with the location:",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2016-ol-2a-2",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "2",
+    "topicId": "japanese-5-2",
+    "conceptId": "crepes-popular-high-school-students",
+    "questionRef": "2016 OL Section 2A Q2",
+    "questionText": "Give one detail about the crepes popular with high school students.",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 1,
+          "perOption": 3,
+          "options": [
+            "Strawberry",
+            "cream"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "stem": "A: Answer questions 1-3 in English.",
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-2a-3-i",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "2",
+    "topicId": "japanese-5-2",
+    "conceptId": "character-kiddy-land-girls",
+    "questionRef": "2016 OL Section 2A Q3(i)",
+    "questionText": "Name one character in Kiddy Land for\n(i) girls:",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 1,
+          "perOption": 2,
+          "options": [
+            "hello kitty",
+            "Disney",
+            "snoopy",
+            "rirakuma"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "stem": "A: Answer questions 1-3 in English.",
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-2a-3-ii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "2",
+    "topicId": "japanese-5-2",
+    "conceptId": "character-kiddy-land-boys",
+    "questionRef": "2016 OL Section 2A Q3(ii)",
+    "questionText": "Name one character in Kiddy Land for\n(ii) boys:",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 1,
+          "perOption": 2,
+          "options": [
+            "lego",
+            "tomika",
+            "star wars",
+            "spiderman"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "stem": "A: Answer questions 1-3 in English.",
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-2a-4",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "rubric",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "2",
+    "topicId": "japanese-5-2",
+    "conceptId": "whether-sentences-true-false-choose-japanese",
+    "questionRef": "2016 OL Section 2A Q4",
+    "questionText": "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to support your answer, as in the example.\n(i) Marion Crepes is closed on Mondays.\n(ii) The flea market is the biggest in Tokyo.\n(iii) The flea market has 100 shops.\n(iv) Kiddy Land is open from 11 a.m.\n(v) Studio Ghibli goods are sold on the third floor of Kiddy Land.",
+    "totalMarks": 15,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "rubric": {
+      "system": "language-points",
+      "count": 5,
+      "taskRequirements": [
+        "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to support your answer, as in the example."
+      ],
+      "groups": [
+        {
+          "id": "item-1",
+          "label": "(i) Marion Crepes is closed on Mondays.",
+          "rows": [
+            {
+              "id": "true-false",
+              "text": "False",
+              "marks": 1
+            },
+            {
+              "id": "quote",
+              "text": "毎日（九時から 8 時までです）。",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "item-2",
+          "label": "(ii) The flea market is the biggest in Tokyo.",
+          "rows": [
+            {
+              "id": "true-false",
+              "text": "True",
+              "marks": 1
+            },
+            {
+              "id": "quote",
+              "text": "東京（とうきょう）で一番大（いちばんおお）きいフリーマーケットです。",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "item-3",
+          "label": "(iii) The flea market has 100 shops.",
+          "rows": [
+            {
+              "id": "true-false",
+              "text": "False",
+              "marks": 1
+            },
+            {
+              "id": "quote",
+              "text": "おみせが六百もあります。",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "item-4",
+          "label": "(iv) Kiddy Land is open from 11 a.m.",
+          "rows": [
+            {
+              "id": "true-false",
+              "text": "True",
+              "marks": 1
+            },
+            {
+              "id": "quote",
+              "text": "十一時から",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "item-5",
+          "label": "(v) Studio Ghibli goods are sold on the third floor of Kiddy Land.",
+          "rows": [
+            {
+              "id": "true-false",
+              "text": "True",
+              "marks": 1
+            },
+            {
+              "id": "quote",
+              "text": "スタジオ・ジブリは三階（かい）です。",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "4. (15 marks)"
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "paperFileid": "LC058GLP000EV",
+    "questionFigure": {
+      "candId": "ja-2016-ol-2a-4",
+      "src": "/exam-figures/japanese/ja-2016-ol-2a-4.png",
+      "srcHash": "a14f534dc7e5a7cfef4d477133188c51",
+      "alt": "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to support your answer, as in the example.",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2016-ol-2b-1",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "rubric",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "2",
+    "topicId": "japanese-5-5",
+    "conceptId": "sentences-positive-form-example-iii",
+    "questionRef": "2016 OL Section 2B Q1",
+    "questionText": "Write the following sentences in the positive form as in the example.\nE.g.  トトロはスタジオ・ジブリじゃありません。 です\n(i) クレープを食べません。\n(ii) フリーマーケットはおもしろくないです。\n(iii) お店（みせ）の人はしんせつじゃありません。\n(iv) まんがを買いませんでした。\n(v) 九時までじゃありませんでした。",
+    "totalMarks": 10,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "rubric": {
+      "system": "language-points",
+      "count": 5,
+      "taskRequirements": [
+        "Write the following sentences in the positive form as in the example."
+      ],
+      "groups": [
+        {
+          "id": "item-1",
+          "label": "(i) クレープを食べません。",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "たべます。",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "item-2",
+          "label": "(ii) フリーマーケットはおもしろくないです。",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "おもしいです。",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "item-3",
+          "label": "(iii) お店（みせ）の人はしんせつじゃありません。",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "しんせつです。",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "item-4",
+          "label": "(iv) まんがを買いませんでした。",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "買いました。",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "item-5",
+          "label": "(v) 九時までじゃありませんでした。",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "でした。",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "1. (10 marks) — The original scheme prints おもしいです。 for (ii), visibly omitting ろ from the adjective in the paper prompt. The published answer is retained literally here; this spelling discrepancy is not a changed question or an additional marking condition."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "paperFileid": "LC058GLP000EV",
+    "questionFigure": {
+      "candId": "ja-2016-ol-2b-1",
+      "src": "/exam-figures/japanese/ja-2016-ol-2b-1.png",
+      "srcHash": "81d40801d10f6a12c115b2619559adea",
+      "alt": "Write the following sentences in the positive form as in the example.",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2016-ol-2b-2",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "rubric",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "2",
+    "topicId": "japanese-5-5",
+    "conceptId": "circle-correct-particle-below-example-dvd",
+    "questionRef": "2016 OL Section 2B Q2",
+    "questionText": "Circle the correct particle (a), (b) or (c) below as in the example.\nE.g.  コーヒー (a) を (b) は (c) と 飲みます。\n(i) DVD (a)  を (b) の (c) へ 見ます。\n(ii) トトロ (a) に (b) を (c) が 大好きです。\n(iii) 十時 (a) で (b) と (c) に 行きます。\n(iv) マーケット (a) の (b) は (c) に たのしいです。\n(v) 原（はら） 宿（じゅく） (a) まで (b) の (c) を 5 分です。",
+    "totalMarks": 10,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "rubric": {
+      "system": "language-points",
+      "count": 5,
+      "taskRequirements": [
+        "Circle the correct particle (a), (b) or (c) below as in the example."
+      ],
+      "groups": [
+        {
+          "id": "item-1",
+          "label": "(i) DVD (a)  を (b) の (c) へ 見ます。",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "(a) を",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "item-2",
+          "label": "(ii) トトロ (a) に (b) を (c) が 大好きです。",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "(c) が",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "item-3",
+          "label": "(iii) 十時 (a) で (b) と (c) に 行きます。",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "(c) に",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "item-4",
+          "label": "(iv) マーケット (a) の (b) は (c) に たのしいです。",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "(b)   は",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "id": "item-5",
+          "label": "(v) 原（はら） 宿（じゅく） (a) まで (b) の (c) を 5 分です。",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "(a)  まで",
+              "marks": 2
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "2.  (10 marks)"
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        6
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "paperFileid": "LC058GLP000EV",
+    "questionFigure": {
+      "candId": "ja-2016-ol-2b-2",
+      "src": "/exam-figures/japanese/ja-2016-ol-2b-2.png",
+      "srcHash": "4281835e9b634692928ddfb3c9053b80",
+      "alt": "Circle the correct particle (a), (b) or (c) below as in the example.",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2016-ol-2c",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "rubric",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "2",
+    "topicId": "japanese-5-4",
+    "conceptId": "circle-correct-meaning-kanji-example-year",
+    "questionRef": "2016 OL Section 2C",
+    "questionText": "Circle the correct meaning (a), (b), (c) or (d) for the following Kanji as in the example.\nE.g. 年 (a) year (b) month (c) date (d) birthday\n(i) 小学生 (a) primary school student (b) small child (c) college student (d) teacher\n(ii) 食べます (a) drink (b) buy (c) restaurant (d) eat\n(iii) 毎日 (a) morning (b) every week (c) every day (d) tomorrow\n(iv) 九時 (a) 9 seconds (b) 6 o’clock (c) 6 minutes (d) 9 o’clock\n(v) 日本 (a) book (b) Japan (c) the sun (d) China\n(vi) 大きい (a) university (b) small (c) big (d) like\n(vii) 人 (a) person (b) enter (c) above (d) below\n(viii) 日曜（よう）日 (a) Monday (b) Sunday (c) December (d) weekday\n(ix) 物 (a) shopping (b) food (c) dress (d) thing\n(x) 女の子 (a) mother (b) girl (c) boy (d) child",
+    "totalMarks": 10,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        7
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "rubric": {
+      "system": "language-points",
+      "count": 10,
+      "taskRequirements": [
+        "Circle the correct meaning (a), (b), (c) or (d) for the following Kanji as in the example."
+      ],
+      "groups": [
+        {
+          "id": "item-1",
+          "label": "(i) 小学生 (a) primary school student (b) small child (c) college student (d) teacher",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "(a)",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "item-2",
+          "label": "(ii) 食べます (a) drink (b) buy (c) restaurant (d) eat",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "(d)",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "item-3",
+          "label": "(iii) 毎日 (a) morning (b) every week (c) every day (d) tomorrow",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "(c)",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "item-4",
+          "label": "(iv) 九時 (a) 9 seconds (b) 6 o’clock (c) 6 minutes (d) 9 o’clock",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "(d)",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "item-5",
+          "label": "(v) 日本 (a) book (b) Japan (c) the sun (d) China",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "(b)",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "item-6",
+          "label": "(vi) 大きい (a) university (b) small (c) big (d) like",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "(c)",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "item-7",
+          "label": "(vii) 人 (a) person (b) enter (c) above (d) below",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "(a)",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "item-8",
+          "label": "(viii) 日曜（よう）日 (a) Monday (b) Sunday (c) December (d) weekday",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "(b)",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "item-9",
+          "label": "(ix) 物 (a) shopping (b) food (c) dress (d) thing",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "(d)",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "id": "item-10",
+          "label": "(x) 女の子 (a) mother (b) girl (c) boy (d) child",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "(b)",
+              "marks": 1
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "C:   (10 marks)"
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        7
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "paperFileid": "LC058GLP000EV",
+    "questionFigure": {
+      "candId": "ja-2016-ol-2c",
+      "src": "/exam-figures/japanese/ja-2016-ol-2c.png",
+      "srcHash": "86e78f7464a8a1af649c871abfffdaa8",
+      "alt": "Circle the correct meaning (a), (b), (c) or (d) for the following Kanji as in the example.",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2016-ol-3a-1",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "3",
+    "topicId": "japanese-5-2",
+    "conceptId": "where-sandra-living",
+    "questionRef": "2016 OL Section 3A Q1",
+    "questionText": "Where is Sandra living?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "Ueno",
+        "marks": 2,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        8
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "stem": "A:  Answer questions 1-3 in English.",
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-3a-2-i",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "3",
+    "topicId": "japanese-5-2",
+    "conceptId": "nationalities-sandra-school",
+    "questionRef": "2016 OL Section 3A Q2(i)",
+    "questionText": "Name two nationalities in Sandra’s school.",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "Chinese",
+            "French",
+            "American",
+            "Australian"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        8
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "stem": "A:  Answer questions 1-3 in English.",
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-3a-2-ii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "3",
+    "topicId": "japanese-5-2",
+    "conceptId": "sandra-say-lunch-menu",
+    "questionRef": "2016 OL Section 3A Q2(ii)",
+    "questionText": "What does Sandra say about the lunch menu?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 1,
+          "perOption": 2,
+          "options": [
+            "Cheap",
+            "delicious"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        8
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "stem": "A:  Answer questions 1-3 in English.",
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-3a-3-i",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "3",
+    "topicId": "japanese-5-2",
+    "conceptId": "breakfast-sandra-has-cereal-tea-rice",
+    "questionRef": "2016 OL Section 3A Q3(i)",
+    "questionText": "For breakfast, Sandra has a. cereal and tea b. rice and miso soup c. bread and coffee d. bread and tea",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(c) bread and coffee",
+        "marks": 3,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        8
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "stem": "Indicate your choice by putting a, b, c or d in the box provided.",
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-3a-3-ii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "3",
+    "topicId": "japanese-5-2",
+    "conceptId": "sandra-get-her-part-time-job",
+    "questionRef": "2016 OL Section 3A Q3(ii)",
+    "questionText": "How does Sandra get to her part-time job?  a. train b. walks c. taxi d. bus",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(a) train",
+        "marks": 3,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        8
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "stem": "Indicate your choice by putting a, b, c or d in the box provided.",
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-3a-3-iii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "3",
+    "topicId": "japanese-5-2",
+    "conceptId": "when-she-gets-home-sandra-not",
+    "questionRef": "2016 OL Section 3A Q3(iii)",
+    "questionText": "When she gets home, Sandra does NOT  a. listen to music b. watch TV c. go on facebook d. do her homework",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(b) watch TV",
+        "marks": 3,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        8
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "stem": "Indicate your choice by putting a, b, c or d in the box provided.",
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-3a-4-i",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "3",
+    "topicId": "japanese-5-2",
+    "conceptId": "ja-2016-ol-3a-4-i",
+    "questionRef": "2016 OL Section 3A Q4(i)",
+    "questionText": "サンドラさんは、何時に起（お）きますか。",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "7 時",
+        "marks": 3,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        8
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "stem": "Answer in Japanese.",
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-3a-4-ii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "3",
+    "topicId": "japanese-5-2",
+    "conceptId": "ja-2016-ol-3a-4-ii",
+    "questionRef": "2016 OL Section 3A Q4(ii)",
+    "questionText": "サンドラさんは誰（だれ）と昼（ひる）ごはんを食べますか。",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "ともだちと食べます。",
+        "marks": 3,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        8
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "stem": "Answer in Japanese.",
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-3a-4-iii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "3",
+    "topicId": "japanese-5-2",
+    "conceptId": "ja-2016-ol-3a-4-iii",
+    "questionRef": "2016 OL Section 3A Q4(iii)",
+    "questionText": "先生はどんな人ですか。",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "（とても）やさしいです。",
+        "marks": 3,
+        "id": "r-1",
+        "contextNote": "The scheme repeats (ii) for this third Japanese prompt. The paper prints (iii); the complete question wording establishes this binding."
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        8
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "stem": "Answer in Japanese.",
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-3b",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "3",
+    "topicId": "japanese-5-6",
+    "conceptId": "might-typical-japanese-high-school-student",
+    "questionRef": "2016 OL Section 3B",
+    "questionText": "How might a typical Japanese high school student’s day differ from your own?",
+    "totalMarks": 3,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "generalSchemePages": [
+        5
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if not answered in the appropriate language)",
+      "schemePages": [
+        5
+      ]
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "unprinted": true,
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "parts": [
+          {
+            "id": "point",
+            "verbatim": "2 mark for any point",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "discretionary",
+            "verbatim": "1 discretionary mark",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ],
+        "contextNote": "2 mark for any point, 1 discretionary mark",
+        "id": "r-1"
+      }
+    ],
+    "stem": "The following section is designed to test your knowledge of Japanese culture and society. Answer in English.",
+    "paperFileid": "LC058GLP000EV"
+  },
+  {
+    "id": "ja-2016-ol-4",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "rubric",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "4",
+    "topicId": "japanese-5-7",
+    "conceptId": "insert-missing-words-john-self-introduction",
+    "questionRef": "2016 OL Section 4",
+    "questionText": "Insert the missing words from John’s self-introduction below as in the example. A word should be used only once.\n(e.g.) こんにちは。私はジョンです。\n私の(i)       はサッカーです。\n週 2 回（かい）サッカーのトレーニングが(ii)      。\n(iii)      でサッカーをします。火曜（よう）日と(iv)       にします。\n(v) から 6 時までです。2 時間のトレーニングです。\nこのサッカーのクラブに、友（とも）だちがたくさん (vi)      。\nときどき日曜（よう）日に(vii)       とサッカーをします。\n父の(viii)       はクリスです。父はサッカーが上手です。\n私の一 番（いちばん）(ix)       チームはマンチェスター・シティーです。\nどうぞ(x)        お願（ねが）いします。\n好きな      学校 なまえ     父\nしゅみ      います      4 時    こんにちは\n木曜（よう）日      よろしく    あります",
+    "totalMarks": 30,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        9
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "rubric": {
+      "system": "language-points",
+      "count": 10,
+      "taskRequirements": [
+        "Insert the missing words from John’s self-introduction below as in the example. A word should be used only once."
+      ],
+      "groups": [
+        {
+          "id": "item-1",
+          "label": "(i)",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "しゅみ",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "id": "item-2",
+          "label": "(ii)",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "あります",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "id": "item-3",
+          "label": "(iii)",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "学校",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "id": "item-4",
+          "label": "(iv)",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "木曜日",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "id": "item-5",
+          "label": "(v)",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "4 時",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "id": "item-6",
+          "label": "(vi)",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "います",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "id": "item-7",
+          "label": "(vii)",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "父",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "id": "item-8",
+          "label": "(viii)",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "なまえ",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "id": "item-9",
+          "label": "(ix)",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "好きな",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "id": "item-10",
+          "label": "(x)",
+          "rows": [
+            {
+              "id": "answer",
+              "text": "よろしく",
+              "marks": 3
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "The same word may not be used twice （30 marks）"
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        11
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "paperFileid": "LC058GLP000EV",
+    "questionFigure": {
+      "candId": "ja-2016-ol-4",
+      "src": "/exam-figures/japanese/ja-2016-ol-4.png",
+      "srcHash": "ff4dd6e7a26e6df7da301994bf5d2c46",
+      "alt": "Insert the missing words from John’s self-introduction below as in the example. A word should be used only once.",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2016-ol-5",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "rubric",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "Q5",
+    "topicId": "japanese-5-7",
+    "conceptId": "questions-summer-holidays-japanese-spaces-provided",
+    "questionRef": "2016 OL Section 5",
+    "questionText": "Answer ANY 5 of the following 7 questions about your summer holidays in Japanese in the spaces provided.\n(i) なつ休（やす）みは何月何日からですか。\n(ii) なつ休（やす）みに何をしますか。\n(iii) どこに行きますか。\n(iv) だれと行きますか。\n(v) なつ休（やす）みにスポーツをしますか。\n(vi) なつ休（やす）みにアルバイトをしますか。\n(vii) なつ休（やす）みの後で、何をしますか。",
+    "totalMarks": 50,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "paper",
+      "paperPages": [
+        12
+      ],
+      "schemePages": [
+        9,
+        10
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "rubric": {
+      "system": "language-points",
+      "count": 5,
+      "taskRequirements": [
+        "Answer ANY 5 of the following 7 questions about your summer holidays in Japanese in the spaces provided."
+      ],
+      "groups": [
+        {
+          "id": "item-1",
+          "label": "(i) なつ休（やす）みは何月何日からですか。",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "item-1-content",
+              "label": "Content marks",
+              "maxMarks": 5,
+              "permittedMarks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "5 marks for content; 5 marks for expression."
+              ],
+              "bands": [
+                {
+                  "label": "1 mark:",
+                  "marks": [
+                    1
+                  ],
+                  "guidance": [
+                    "Very short answer to question"
+                  ]
+                },
+                {
+                  "label": "2-3 marks:",
+                  "marks": [
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Partial answer to question"
+                  ]
+                },
+                {
+                  "label": "4-5 marks:",
+                  "marks": [
+                    4,
+                    5
+                  ],
+                  "guidance": [
+                    "Full answer to question"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "item-1-expression",
+              "label": "Expression marks",
+              "maxMarks": 5,
+              "permittedMarks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Expression: Marked out of 5 for each question where content is 4 or 5. Where content is less than 4, mark expression out of 3."
+              ],
+              "bands": [
+                {
+                  "label": "1",
+                  "marks": [
+                    1
+                  ],
+                  "guidance": [
+                    "Vocabulary very inadequate; incorrect use of Hiragana and Katakana; writing difficult to decode; much use of Romaji; very limited range of structures used. Poor punctuation. Serious grammatical errors:verb and adjective forms generally incorrect; particles generally incorrect; tense inconsistent, inappropriate."
+                  ]
+                },
+                {
+                  "label": "2-3",
+                  "marks": [
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Vocabulary use quite good – generally adequate and appropriate with perhaps some Japanese idiom. Appropriate and correct use of Hiragana and Katakana with only occasional errors; adequate use of Kanji. Adequate range of structures used. Punctuation quite good. Few serious/frequent minor grammatical errors:verb and adjective forms, tense, particles correct more often than not."
+                  ]
+                },
+                {
+                  "label": "4-5",
+                  "marks": [
+                    4,
+                    5
+                  ],
+                  "guidance": [
+                    "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. No or very few mistakes using Hiragana and Katakana. Good use of Kanji. Wide use of structures used. Good use of Genkouyoushi. Correct punctuation. Grammar generally correct:good level of accuracy in verb and adjective forms, tense, particles."
+                  ]
+                }
+              ],
+              "limits": [
+                {
+                  "id": "item-1-low-content",
+                  "maxMarks": 3,
+                  "when": {
+                    "any": [
+                      {
+                        "criterionIds": [
+                          "item-1-content"
+                        ],
+                        "atMost": 3
+                      }
+                    ]
+                  },
+                  "guidance": [
+                    "Expression: Marked out of 5 for each question where content is 4 or 5. Where content is less than 4, mark expression out of 3."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "item-2",
+          "label": "(ii) なつ休（やす）みに何をしますか。",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "item-2-content",
+              "label": "Content marks",
+              "maxMarks": 5,
+              "permittedMarks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "5 marks for content; 5 marks for expression."
+              ],
+              "bands": [
+                {
+                  "label": "1 mark:",
+                  "marks": [
+                    1
+                  ],
+                  "guidance": [
+                    "Very short answer to question"
+                  ]
+                },
+                {
+                  "label": "2-3 marks:",
+                  "marks": [
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Partial answer to question"
+                  ]
+                },
+                {
+                  "label": "4-5 marks:",
+                  "marks": [
+                    4,
+                    5
+                  ],
+                  "guidance": [
+                    "Full answer to question"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "item-2-expression",
+              "label": "Expression marks",
+              "maxMarks": 5,
+              "permittedMarks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Expression: Marked out of 5 for each question where content is 4 or 5. Where content is less than 4, mark expression out of 3."
+              ],
+              "bands": [
+                {
+                  "label": "1",
+                  "marks": [
+                    1
+                  ],
+                  "guidance": [
+                    "Vocabulary very inadequate; incorrect use of Hiragana and Katakana; writing difficult to decode; much use of Romaji; very limited range of structures used. Poor punctuation. Serious grammatical errors:verb and adjective forms generally incorrect; particles generally incorrect; tense inconsistent, inappropriate."
+                  ]
+                },
+                {
+                  "label": "2-3",
+                  "marks": [
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Vocabulary use quite good – generally adequate and appropriate with perhaps some Japanese idiom. Appropriate and correct use of Hiragana and Katakana with only occasional errors; adequate use of Kanji. Adequate range of structures used. Punctuation quite good. Few serious/frequent minor grammatical errors:verb and adjective forms, tense, particles correct more often than not."
+                  ]
+                },
+                {
+                  "label": "4-5",
+                  "marks": [
+                    4,
+                    5
+                  ],
+                  "guidance": [
+                    "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. No or very few mistakes using Hiragana and Katakana. Good use of Kanji. Wide use of structures used. Good use of Genkouyoushi. Correct punctuation. Grammar generally correct:good level of accuracy in verb and adjective forms, tense, particles."
+                  ]
+                }
+              ],
+              "limits": [
+                {
+                  "id": "item-2-low-content",
+                  "maxMarks": 3,
+                  "when": {
+                    "any": [
+                      {
+                        "criterionIds": [
+                          "item-2-content"
+                        ],
+                        "atMost": 3
+                      }
+                    ]
+                  },
+                  "guidance": [
+                    "Expression: Marked out of 5 for each question where content is 4 or 5. Where content is less than 4, mark expression out of 3."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "item-3",
+          "label": "(iii) どこに行きますか。",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "item-3-content",
+              "label": "Content marks",
+              "maxMarks": 5,
+              "permittedMarks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "5 marks for content; 5 marks for expression."
+              ],
+              "bands": [
+                {
+                  "label": "1 mark:",
+                  "marks": [
+                    1
+                  ],
+                  "guidance": [
+                    "Very short answer to question"
+                  ]
+                },
+                {
+                  "label": "2-3 marks:",
+                  "marks": [
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Partial answer to question"
+                  ]
+                },
+                {
+                  "label": "4-5 marks:",
+                  "marks": [
+                    4,
+                    5
+                  ],
+                  "guidance": [
+                    "Full answer to question"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "item-3-expression",
+              "label": "Expression marks",
+              "maxMarks": 5,
+              "permittedMarks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Expression: Marked out of 5 for each question where content is 4 or 5. Where content is less than 4, mark expression out of 3."
+              ],
+              "bands": [
+                {
+                  "label": "1",
+                  "marks": [
+                    1
+                  ],
+                  "guidance": [
+                    "Vocabulary very inadequate; incorrect use of Hiragana and Katakana; writing difficult to decode; much use of Romaji; very limited range of structures used. Poor punctuation. Serious grammatical errors:verb and adjective forms generally incorrect; particles generally incorrect; tense inconsistent, inappropriate."
+                  ]
+                },
+                {
+                  "label": "2-3",
+                  "marks": [
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Vocabulary use quite good – generally adequate and appropriate with perhaps some Japanese idiom. Appropriate and correct use of Hiragana and Katakana with only occasional errors; adequate use of Kanji. Adequate range of structures used. Punctuation quite good. Few serious/frequent minor grammatical errors:verb and adjective forms, tense, particles correct more often than not."
+                  ]
+                },
+                {
+                  "label": "4-5",
+                  "marks": [
+                    4,
+                    5
+                  ],
+                  "guidance": [
+                    "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. No or very few mistakes using Hiragana and Katakana. Good use of Kanji. Wide use of structures used. Good use of Genkouyoushi. Correct punctuation. Grammar generally correct:good level of accuracy in verb and adjective forms, tense, particles."
+                  ]
+                }
+              ],
+              "limits": [
+                {
+                  "id": "item-3-low-content",
+                  "maxMarks": 3,
+                  "when": {
+                    "any": [
+                      {
+                        "criterionIds": [
+                          "item-3-content"
+                        ],
+                        "atMost": 3
+                      }
+                    ]
+                  },
+                  "guidance": [
+                    "Expression: Marked out of 5 for each question where content is 4 or 5. Where content is less than 4, mark expression out of 3."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "item-4",
+          "label": "(iv) だれと行きますか。",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "item-4-content",
+              "label": "Content marks",
+              "maxMarks": 5,
+              "permittedMarks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "5 marks for content; 5 marks for expression."
+              ],
+              "bands": [
+                {
+                  "label": "1 mark:",
+                  "marks": [
+                    1
+                  ],
+                  "guidance": [
+                    "Very short answer to question"
+                  ]
+                },
+                {
+                  "label": "2-3 marks:",
+                  "marks": [
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Partial answer to question"
+                  ]
+                },
+                {
+                  "label": "4-5 marks:",
+                  "marks": [
+                    4,
+                    5
+                  ],
+                  "guidance": [
+                    "Full answer to question"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "item-4-expression",
+              "label": "Expression marks",
+              "maxMarks": 5,
+              "permittedMarks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Expression: Marked out of 5 for each question where content is 4 or 5. Where content is less than 4, mark expression out of 3."
+              ],
+              "bands": [
+                {
+                  "label": "1",
+                  "marks": [
+                    1
+                  ],
+                  "guidance": [
+                    "Vocabulary very inadequate; incorrect use of Hiragana and Katakana; writing difficult to decode; much use of Romaji; very limited range of structures used. Poor punctuation. Serious grammatical errors:verb and adjective forms generally incorrect; particles generally incorrect; tense inconsistent, inappropriate."
+                  ]
+                },
+                {
+                  "label": "2-3",
+                  "marks": [
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Vocabulary use quite good – generally adequate and appropriate with perhaps some Japanese idiom. Appropriate and correct use of Hiragana and Katakana with only occasional errors; adequate use of Kanji. Adequate range of structures used. Punctuation quite good. Few serious/frequent minor grammatical errors:verb and adjective forms, tense, particles correct more often than not."
+                  ]
+                },
+                {
+                  "label": "4-5",
+                  "marks": [
+                    4,
+                    5
+                  ],
+                  "guidance": [
+                    "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. No or very few mistakes using Hiragana and Katakana. Good use of Kanji. Wide use of structures used. Good use of Genkouyoushi. Correct punctuation. Grammar generally correct:good level of accuracy in verb and adjective forms, tense, particles."
+                  ]
+                }
+              ],
+              "limits": [
+                {
+                  "id": "item-4-low-content",
+                  "maxMarks": 3,
+                  "when": {
+                    "any": [
+                      {
+                        "criterionIds": [
+                          "item-4-content"
+                        ],
+                        "atMost": 3
+                      }
+                    ]
+                  },
+                  "guidance": [
+                    "Expression: Marked out of 5 for each question where content is 4 or 5. Where content is less than 4, mark expression out of 3."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "item-5",
+          "label": "(v) なつ休（やす）みにスポーツをしますか。",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "item-5-content",
+              "label": "Content marks",
+              "maxMarks": 5,
+              "permittedMarks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "5 marks for content; 5 marks for expression."
+              ],
+              "bands": [
+                {
+                  "label": "1 mark:",
+                  "marks": [
+                    1
+                  ],
+                  "guidance": [
+                    "Very short answer to question"
+                  ]
+                },
+                {
+                  "label": "2-3 marks:",
+                  "marks": [
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Partial answer to question"
+                  ]
+                },
+                {
+                  "label": "4-5 marks:",
+                  "marks": [
+                    4,
+                    5
+                  ],
+                  "guidance": [
+                    "Full answer to question"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "item-5-expression",
+              "label": "Expression marks",
+              "maxMarks": 5,
+              "permittedMarks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Expression: Marked out of 5 for each question where content is 4 or 5. Where content is less than 4, mark expression out of 3."
+              ],
+              "bands": [
+                {
+                  "label": "1",
+                  "marks": [
+                    1
+                  ],
+                  "guidance": [
+                    "Vocabulary very inadequate; incorrect use of Hiragana and Katakana; writing difficult to decode; much use of Romaji; very limited range of structures used. Poor punctuation. Serious grammatical errors:verb and adjective forms generally incorrect; particles generally incorrect; tense inconsistent, inappropriate."
+                  ]
+                },
+                {
+                  "label": "2-3",
+                  "marks": [
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Vocabulary use quite good – generally adequate and appropriate with perhaps some Japanese idiom. Appropriate and correct use of Hiragana and Katakana with only occasional errors; adequate use of Kanji. Adequate range of structures used. Punctuation quite good. Few serious/frequent minor grammatical errors:verb and adjective forms, tense, particles correct more often than not."
+                  ]
+                },
+                {
+                  "label": "4-5",
+                  "marks": [
+                    4,
+                    5
+                  ],
+                  "guidance": [
+                    "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. No or very few mistakes using Hiragana and Katakana. Good use of Kanji. Wide use of structures used. Good use of Genkouyoushi. Correct punctuation. Grammar generally correct:good level of accuracy in verb and adjective forms, tense, particles."
+                  ]
+                }
+              ],
+              "limits": [
+                {
+                  "id": "item-5-low-content",
+                  "maxMarks": 3,
+                  "when": {
+                    "any": [
+                      {
+                        "criterionIds": [
+                          "item-5-content"
+                        ],
+                        "atMost": 3
+                      }
+                    ]
+                  },
+                  "guidance": [
+                    "Expression: Marked out of 5 for each question where content is 4 or 5. Where content is less than 4, mark expression out of 3."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "item-6",
+          "label": "(vi) なつ休（やす）みにアルバイトをしますか。",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "item-6-content",
+              "label": "Content marks",
+              "maxMarks": 5,
+              "permittedMarks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "5 marks for content; 5 marks for expression."
+              ],
+              "bands": [
+                {
+                  "label": "1 mark:",
+                  "marks": [
+                    1
+                  ],
+                  "guidance": [
+                    "Very short answer to question"
+                  ]
+                },
+                {
+                  "label": "2-3 marks:",
+                  "marks": [
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Partial answer to question"
+                  ]
+                },
+                {
+                  "label": "4-5 marks:",
+                  "marks": [
+                    4,
+                    5
+                  ],
+                  "guidance": [
+                    "Full answer to question"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "item-6-expression",
+              "label": "Expression marks",
+              "maxMarks": 5,
+              "permittedMarks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Expression: Marked out of 5 for each question where content is 4 or 5. Where content is less than 4, mark expression out of 3."
+              ],
+              "bands": [
+                {
+                  "label": "1",
+                  "marks": [
+                    1
+                  ],
+                  "guidance": [
+                    "Vocabulary very inadequate; incorrect use of Hiragana and Katakana; writing difficult to decode; much use of Romaji; very limited range of structures used. Poor punctuation. Serious grammatical errors:verb and adjective forms generally incorrect; particles generally incorrect; tense inconsistent, inappropriate."
+                  ]
+                },
+                {
+                  "label": "2-3",
+                  "marks": [
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Vocabulary use quite good – generally adequate and appropriate with perhaps some Japanese idiom. Appropriate and correct use of Hiragana and Katakana with only occasional errors; adequate use of Kanji. Adequate range of structures used. Punctuation quite good. Few serious/frequent minor grammatical errors:verb and adjective forms, tense, particles correct more often than not."
+                  ]
+                },
+                {
+                  "label": "4-5",
+                  "marks": [
+                    4,
+                    5
+                  ],
+                  "guidance": [
+                    "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. No or very few mistakes using Hiragana and Katakana. Good use of Kanji. Wide use of structures used. Good use of Genkouyoushi. Correct punctuation. Grammar generally correct:good level of accuracy in verb and adjective forms, tense, particles."
+                  ]
+                }
+              ],
+              "limits": [
+                {
+                  "id": "item-6-low-content",
+                  "maxMarks": 3,
+                  "when": {
+                    "any": [
+                      {
+                        "criterionIds": [
+                          "item-6-content"
+                        ],
+                        "atMost": 3
+                      }
+                    ]
+                  },
+                  "guidance": [
+                    "Expression: Marked out of 5 for each question where content is 4 or 5. Where content is less than 4, mark expression out of 3."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "item-7",
+          "label": "(vii) なつ休（やす）みの後で、何をしますか。",
+          "rows": [],
+          "criteria": [
+            {
+              "id": "item-7-content",
+              "label": "Content marks",
+              "maxMarks": 5,
+              "permittedMarks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "5 marks for content; 5 marks for expression."
+              ],
+              "bands": [
+                {
+                  "label": "1 mark:",
+                  "marks": [
+                    1
+                  ],
+                  "guidance": [
+                    "Very short answer to question"
+                  ]
+                },
+                {
+                  "label": "2-3 marks:",
+                  "marks": [
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Partial answer to question"
+                  ]
+                },
+                {
+                  "label": "4-5 marks:",
+                  "marks": [
+                    4,
+                    5
+                  ],
+                  "guidance": [
+                    "Full answer to question"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "item-7-expression",
+              "label": "Expression marks",
+              "maxMarks": 5,
+              "permittedMarks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Expression: Marked out of 5 for each question where content is 4 or 5. Where content is less than 4, mark expression out of 3."
+              ],
+              "bands": [
+                {
+                  "label": "1",
+                  "marks": [
+                    1
+                  ],
+                  "guidance": [
+                    "Vocabulary very inadequate; incorrect use of Hiragana and Katakana; writing difficult to decode; much use of Romaji; very limited range of structures used. Poor punctuation. Serious grammatical errors:verb and adjective forms generally incorrect; particles generally incorrect; tense inconsistent, inappropriate."
+                  ]
+                },
+                {
+                  "label": "2-3",
+                  "marks": [
+                    2,
+                    3
+                  ],
+                  "guidance": [
+                    "Vocabulary use quite good – generally adequate and appropriate with perhaps some Japanese idiom. Appropriate and correct use of Hiragana and Katakana with only occasional errors; adequate use of Kanji. Adequate range of structures used. Punctuation quite good. Few serious/frequent minor grammatical errors:verb and adjective forms, tense, particles correct more often than not."
+                  ]
+                },
+                {
+                  "label": "4-5",
+                  "marks": [
+                    4,
+                    5
+                  ],
+                  "guidance": [
+                    "Vocabulary use good – rich, idiomatic and appropriate. Few word order mistakes. No or very few mistakes using Hiragana and Katakana. Good use of Kanji. Wide use of structures used. Good use of Genkouyoushi. Correct punctuation. Grammar generally correct:good level of accuracy in verb and adjective forms, tense, particles."
+                  ]
+                }
+              ],
+              "limits": [
+                {
+                  "id": "item-7-low-content",
+                  "maxMarks": 3,
+                  "when": {
+                    "any": [
+                      {
+                        "criterionIds": [
+                          "item-7-content"
+                        ],
+                        "atMost": 3
+                      }
+                    ]
+                  },
+                  "guidance": [
+                    "Expression: Marked out of 5 for each question where content is 4 or 5. Where content is less than 4, mark expression out of 3."
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "10 marks each for any 5 questions answered. 5 marks for content; 5 marks for expression. Expression: Marked out of 5 for each question where content is 4 or 5. Where content is less than 4, mark expression out of 3. N.B. Take a global view of language use (E = Expression) to locate the candidate’s work in the most appropriate category."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        12
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two.",
+      "sourceFileid": "LC058GLP000EV",
+      "sourceYear": 2016
+    },
+    "paperFileid": "LC058GLP000EV",
+    "questionFigure": {
+      "candId": "ja-2016-ol-5",
+      "src": "/exam-figures/japanese/ja-2016-ol-5.png",
+      "srcHash": "8feb6ffe6f4a8fc47c75aeeb6cd9af75",
+      "alt": "Answer ANY 5 of the following 7 questions about your summer holidays in Japanese in the spaces provided.",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2016-ol-la-1-i",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "A",
+    "topicId": "japanese-6-1",
+    "conceptId": "buy",
+    "questionRef": "2016 OL Section LA Q1(i)",
+    "questionText": "What would he buy?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        3
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "Car",
+        "marks": 1,
+        "id": "r-1"
+      },
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 1,
+          "perOption": 1,
+          "options": [
+            "Toyota",
+            "new",
+            "red",
+            "sports"
+          ]
+        },
+        "id": "r-2"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear three interviews in a survey about winning the lotto. The interviews will be played three times: first right through, then with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-la-1-ii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "A",
+    "topicId": "japanese-6-1",
+    "conceptId": "who-money-his-father-his-child",
+    "questionRef": "2016 OL Section LA Q1(ii)",
+    "questionText": "Who would he give money to? (a) His father (b) His child (c) His younger brother (d) His grandfather",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        3
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(b) his child",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear three interviews in a survey about winning the lotto. The interviews will be played three times: first right through, then with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-la-1-iii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "A",
+    "topicId": "japanese-6-1",
+    "conceptId": "money-person-start-business-buy-apartment",
+    "questionRef": "2016 OL Section LA Q1(iii)",
+    "questionText": "Why would he give the money to this person? (a) To start a business (b) To buy an apartment (c) To go on a holiday (d) To go to university",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        3
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(d) to go to university",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear three interviews in a survey about winning the lotto. The interviews will be played three times: first right through, then with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-la-2-ii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "A",
+    "topicId": "japanese-6-1",
+    "conceptId": "she-like-there-good-weather-learn",
+    "questionRef": "2016 OL Section LA Q2(ii)",
+    "questionText": "Why would she like to go there? (a) For the good weather (b) To learn to cook (c) To do volunteer work (d) To learn the language",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        3
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(b) to learn to cook",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear three interviews in a survey about winning the lotto. The interviews will be played three times: first right through, then with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-la-2-iii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "A",
+    "topicId": "japanese-6-1",
+    "conceptId": "who-she-money-her-mother-her",
+    "questionRef": "2016 OL Section LA Q2(iii)",
+    "questionText": "Who would she give money to? (a) Her mother (b) Her friends (c) Her younger sister (d) A charity",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        3
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(a) mother",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear three interviews in a survey about winning the lotto. The interviews will be played three times: first right through, then with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-la-3-i",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "A",
+    "topicId": "japanese-6-1",
+    "conceptId": "like-study-german-art-cello-office",
+    "questionRef": "2016 OL Section LA Q3(i)",
+    "questionText": "What would he like to study? (a) German (b) Art (c) The cello (d) Office skills",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        3
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(c) the cello",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear three interviews in a survey about winning the lotto. The interviews will be played three times: first right through, then with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-la-3-ii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "A",
+    "topicId": "japanese-6-1",
+    "conceptId": "his-good-friend-wants-travel-world",
+    "questionRef": "2016 OL Section LA Q3(ii)",
+    "questionText": "His good friend wants to (a) travel the world (b) be a banker (c) open a restaurant (d) study nursing.",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        3
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(d) study nursing",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear three interviews in a survey about winning the lotto. The interviews will be played three times: first right through, then with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-la-2-i",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "A",
+    "topicId": "japanese-6-1",
+    "conceptId": "where-she",
+    "questionRef": "2016 OL Section LA Q2(i)",
+    "questionText": "Where would she go?",
+    "totalMarks": 2,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        3
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 1,
+          "perOption": 2,
+          "options": [
+            "Asia",
+            "Vietnam"
+          ]
+        },
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        2
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear three interviews in a survey about winning the lotto. The interviews will be played three times: first right through, then with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-lb-1-i",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "B",
+    "topicId": "japanese-6-0",
+    "conceptId": "miki-invites-ciara-concert-cinema-shinjuku",
+    "questionRef": "2016 OL Section LB Q1(i)",
+    "questionText": "Miki invites Ciara to go to  (a) a concert (b) the cinema (c) Shinjuku (d) a festival.",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        3
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(a) a concert",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "Part B consists of a conversation amongst friends. This conversation is divided in two sections. Each section will be played three times: first right through, then in segments with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.\n1. Invitation to an event",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-lb-1-ii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "B",
+    "topicId": "japanese-6-0",
+    "conceptId": "event-costs-500-yen-000-yen",
+    "questionRef": "2016 OL Section LB Q1(ii)",
+    "questionText": "The event costs (a) 8,500 yen (b) 50,000 yen (c) 7,500 yen (d) 200 yen.",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        3
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(c) ¥7500",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "Part B consists of a conversation amongst friends. This conversation is divided in two sections. Each section will be played three times: first right through, then in segments with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.\n1. Invitation to an event",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-lb-1-iii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "B",
+    "topicId": "japanese-6-0",
+    "conceptId": "event-takes-place-minute-walk-station",
+    "questionRef": "2016 OL Section LB Q1(iii)",
+    "questionText": "The event takes place (a) a 3 minute walk from the station (b) inside the station (c) at the west exit of the station (d) in the town centre.",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        3
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(a) a 3 minute walk from the station",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "Part B consists of a conversation amongst friends. This conversation is divided in two sections. Each section will be played three times: first right through, then in segments with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.\n1. Invitation to an event",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-lb-1-iv",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "B",
+    "topicId": "japanese-6-0",
+    "conceptId": "before-event-shopping-eat-have-coffee",
+    "questionRef": "2016 OL Section LB Q1(iv)",
+    "questionText": "Before the event, they will (a) go shopping (b) eat (c) have a coffee (d) dress up.",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        3
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(c) have a coffee",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "Part B consists of a conversation amongst friends. This conversation is divided in two sections. Each section will be played three times: first right through, then in segments with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.\n1. Invitation to an event",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-lb-2-i",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "B",
+    "topicId": "japanese-6-0",
+    "conceptId": "ciara-enjoyed-event-because-people-were",
+    "questionRef": "2016 OL Section LB Q2(i)",
+    "questionText": "Ciara enjoyed the event because (a) the people were friendly (b) the costumes were great (c) the weather was fine (d) the food was good.",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        3
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(b) the costumes were great",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "Part B consists of a conversation amongst friends. This conversation is divided in two sections. Each section will be played three times: first right through, then in segments with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.\n2. After the event",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-lb-2-ii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "B",
+    "topicId": "japanese-6-0",
+    "conceptId": "after-event-miki-had-sore-leg",
+    "questionRef": "2016 OL Section LB Q2(ii)",
+    "questionText": "After the event, Miki had (a) a sore leg (b) sunburn (c) a fever (d) an earache.",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        3
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(d) an earache",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        3
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "Part B consists of a conversation amongst friends. This conversation is divided in two sections. Each section will be played three times: first right through, then in segments with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.\n2. After the event",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-lc-1-i",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "C",
+    "topicId": "japanese-6-2",
+    "conceptId": "special-hotel-staffed-robots-has-robot",
+    "questionRef": "2016 OL Section LC Q1(i)",
+    "questionText": "What is special about this hotel? (a) It is staffed by robots. (b) It has a robot exhibition. (c) It is the biggest in Nagasaki. (d) It is 200 years old.",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(a) It is staffed by robots",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear three news items from a radio programme for learners of Japanese. Each news item will be played three times: first right through, then with pauses, and finally right through again.  For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.\n1. Henn-na hotel",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-lc-1-ii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "C",
+    "topicId": "japanese-6-2",
+    "conceptId": "type-room-not-available-superior-standard",
+    "questionRef": "2016 OL Section LC Q1(ii)",
+    "questionText": "What type of room is NOT available? (a) superior (b) standard (c) deluxe (d) Japanese style",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(d) Japanese style",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear three news items from a radio programme for learners of Japanese. Each news item will be played three times: first right through, then with pauses, and finally right through again.  For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.\n1. Henn-na hotel",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-lc-1-iii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "C",
+    "topicId": "japanese-6-2",
+    "conceptId": "make-reservation-call",
+    "questionRef": "2016 OL Section LC Q1(iii)",
+    "questionText": "To make a reservation, call:",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "5",
+        "marks": 1,
+        "contextNote": "Missing digit 1 (position 2 in 0570–064–110). (0570–064–110) (1 mark for each correct digit) — Only the four missing digits score; the printed digits are given.",
+        "id": "r-1"
+      },
+      {
+        "kind": "point",
+        "verbatim": "6",
+        "marks": 1,
+        "contextNote": "Missing digit 2 (position 6 in 0570–064–110). (0570–064–110) (1 mark for each correct digit) — Only the four missing digits score; the printed digits are given.",
+        "id": "r-2"
+      },
+      {
+        "kind": "point",
+        "verbatim": "4",
+        "marks": 1,
+        "contextNote": "Missing digit 3 (position 7 in 0570–064–110). (0570–064–110) (1 mark for each correct digit) — Only the four missing digits score; the printed digits are given.",
+        "id": "r-3"
+      },
+      {
+        "kind": "point",
+        "verbatim": "1",
+        "marks": 1,
+        "contextNote": "Missing digit 4 (position 8 in 0570–064–110). (0570–064–110) (1 mark for each correct digit) — Only the four missing digits score; the printed digits are given.",
+        "id": "r-4"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear three news items from a radio programme for learners of Japanese. Each news item will be played three times: first right through, then with pauses, and finally right through again.  For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.\n1. Henn-na hotel",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV",
+    "questionFigure": {
+      "candId": "ja-2016-ol-lc-1-iii",
+      "src": "/exam-figures/japanese/ja-2016-ol-lc-1-iii.png",
+      "srcHash": "7ac0e4cb174071f2be5bfdbe3b84a4b0",
+      "alt": "To make a reservation, call:",
+      "attribution": "© State Examinations Commission.",
+      "lettersVisible": [],
+      "includesPrompt": true
+    }
+  },
+  {
+    "id": "ja-2016-ol-lc-2",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "C",
+    "topicId": "japanese-6-2",
+    "conceptId": "false-she-amateur-sumo-wrestler-she",
+    "questionRef": "2016 OL Section LC Q2",
+    "questionText": "Which ONE of the following is FALSE?  (a) She is an amateur sumo wrestler. (b) She is 25 years old. (c) She weighs 200 kg. (d) She has 4 world championship titles.",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(b) she is 25 years old",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear three news items from a radio programme for learners of Japanese. Each news item will be played three times: first right through, then with pauses, and finally right through again.  For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.\n2.   Sharran Alexander",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-lc-3-i",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "C",
+    "topicId": "japanese-6-2",
+    "conceptId": "weather-forecast-places-san-francisco",
+    "questionRef": "2016 OL Section LC Q3(i)",
+    "questionText": "What is the weather forecast for the following places? (i) San Francisco",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "Sunny",
+            "nice",
+            "Clear skies",
+            "28 degrees"
+          ]
+        },
+        "id": "r-1",
+        "contextNote": "The scheme gives 4 marks for this weather response and lists these alternatives; no separate per-detail allocation is printed."
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear three news items from a radio programme for learners of Japanese. Each news item will be played three times: first right through, then with pauses, and finally right through again.  For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.\n3.   World weather forecast",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-lc-3-ii",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "C",
+    "topicId": "japanese-6-2",
+    "conceptId": "weather-forecast-places-singapore",
+    "questionRef": "2016 OL Section LC Q3(ii)",
+    "questionText": "What is the weather forecast for the following places? (ii)   Singapore",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "anyN",
+        "verbatim": "Accepted answers",
+        "marks": null,
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "rain",
+            "32 degrees",
+            "humid"
+          ]
+        },
+        "id": "r-1",
+        "contextNote": "The scheme gives 4 marks for this weather response and lists these alternatives; no separate per-detail allocation is printed."
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        4
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear three news items from a radio programme for learners of Japanese. Each news item will be played three times: first right through, then with pauses, and finally right through again.  For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.\n3.   World weather forecast",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-ld-1",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "D",
+    "topicId": "japanese-6-0",
+    "conceptId": "nationality-daniel-italian-brazilian-korean-english",
+    "questionRef": "2016 OL Section LD Q1",
+    "questionText": "What nationality is Daniel? (a) Italian (b) Brazilian (c) Korean (d) English",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(b) Brazilian",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear a conversation between Daniel and his Japanese neighbour. The conversation will be played three times: first right through, then with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-ld-2",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "D",
+    "topicId": "japanese-6-0",
+    "conceptId": "daniel-surname",
+    "questionRef": "2016 OL Section LD Q2",
+    "questionText": "What is Daniel’s surname?",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "Saito",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear a conversation between Daniel and his Japanese neighbour. The conversation will be played three times: first right through, then with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-ld-3",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "D",
+    "topicId": "japanese-6-0",
+    "conceptId": "who-japanese-daniel-family-his-father",
+    "questionRef": "2016 OL Section LD Q3",
+    "questionText": "Who is Japanese in Daniel’s family?  (a) His father (b) His mother (c) His grandfather (d) His wife",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(c) his grandfather",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear a conversation between Daniel and his Japanese neighbour. The conversation will be played three times: first right through, then with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-ld-4",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "D",
+    "topicId": "japanese-6-0",
+    "conceptId": "daniel-say-learning-japanese-studied-hours",
+    "questionRef": "2016 OL Section LD Q4",
+    "questionText": "What does Daniel say about learning Japanese? (a) He studied about 10 hours a day. (b) He practiced it with his dad. (c) His teacher was strict. (d) He learned it through television.",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(a) He studied about 10 hours a day",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear a conversation between Daniel and his Japanese neighbour. The conversation will be played three times: first right through, then with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-ld-5",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "D",
+    "topicId": "japanese-6-0",
+    "conceptId": "learn-kanji-checked-new-kanji-phone",
+    "questionRef": "2016 OL Section LD Q5",
+    "questionText": "How did he learn Kanji? (a) He checked new Kanji on the phone. (b) He took photos of signs. (c) He asked his teacher. (d) He read novels.",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(a) He checked new Kanji on his phone",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear a conversation between Daniel and his Japanese neighbour. The conversation will be played three times: first right through, then with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
+    "id": "ja-2016-ol-ld-6",
+    "source": "sec",
+    "subjectId": "japanese",
+    "specVersion": "lc-japanese-syllabus",
+    "kind": "question",
+    "level": "ordinary",
+    "year": 2016,
+    "section": "D",
+    "topicId": "japanese-6-0",
+    "conceptId": "souvenirs-daniel-not-buy-his-family",
+    "questionRef": "2016 OL Section LD Q6",
+    "questionText": "Which of the following souvenirs did Daniel NOT buy for his family? (a) Computer games (b) Japanese rice wine (c) a Yukata (d) Chopsticks",
+    "totalMarks": 4,
+    "qa": {
+      "gates": [
+        "verbatim",
+        "tariff",
+        "figure"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-09"
+    },
+    "sourceEvidence": {
+      "component": "aural",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        4
+      ],
+      "generalSchemePages": [
+        3
+      ]
+    },
+    "schemeCitation": "Marking points quoted from the SEC marking scheme, Japanese 2016 Ordinary Level — © State Examinations Commission.",
+    "answerLanguageRule": {
+      "otherLanguageMultiplier": 0.5,
+      "sourceText": "(Half marks if answered in romaji or Japanese script)",
+      "schemePages": [
+        3
+      ],
+      "penalizedLanguage": "Japanese"
+    },
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "rows": [
+      {
+        "kind": "point",
+        "verbatim": "(d) chopsticks",
+        "marks": 4,
+        "id": "r-1"
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "2016 Japanese Ordinary Level",
+      "title": "Original examination material",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "sourceFileid": "LC058GLPA00EV",
+      "sourceYear": 2016
+    },
+    "stem": "You will hear a conversation between Daniel and his Japanese neighbour. The conversation will be played three times: first right through, then with pauses, and finally right through again. For multiple choice questions, indicate your choice by putting a, b, c or d in the box provided.",
+    "audioMaterial": {
+      "kind": "source-audio",
+      "label": "Japanese listening",
+      "title": "2016 Japanese · Higher and Ordinary Level",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "secFileid": "LC058ZLP017EV.mp3",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC058ZLP017EV.mp3",
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Full official recording · parts A–D. Use the player to pause, replay or move through the recording."
+    },
+    "paperFileid": "LC058GLPA00EV"
+  },
+  {
     "id": "ja-2017-hl-1a-1",
     "source": "sec",
     "subjectId": "japanese",

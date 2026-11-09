@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { resolvePaperFileid } from './paperIndex.mjs';
 import { audioMaterialFault, audioQuestionPaperFileid } from './audioMaterial.mjs';
 import { comparableScheme, claimMatches, LIGATURES } from './schemeText.mjs';
+import { matchesNamedLanguageCondition } from './japanese-source-rules.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const reviewsDir = resolve(root, 'scripts/markbank/authoring/reviews');
@@ -64,8 +65,7 @@ for (const name of readdirSync(reviewsDir).filter(name => /^japanese-\d{4}-(?:hl
         && rule.schemePages.includes(selector.page) && selector.text === rule.sourceText);
       if (![0, 0.5].includes(rule.otherLanguageMultiplier) || !sourceBound
         || !rule.schemePages.every(page => evidence.generalSchemePages?.includes(page))
-        || (rule.penalizedLanguage !== undefined && (!['English', 'Japanese'].includes(rule.penalizedLanguage)
-          || !['answered', 'marked'].some(verb => rule.sourceText.includes(`${verb} in ${rule.penalizedLanguage}`))))) {
+        || (rule.penalizedLanguage !== undefined && !matchesNamedLanguageCondition(rule.penalizedLanguage, rule.sourceText))) {
         throw new Error(`${card.id}: answer-language rule is not bound to its reviewed scheme selector`);
       }
     }
