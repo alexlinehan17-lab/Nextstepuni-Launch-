@@ -50,6 +50,7 @@ import os
 import sys
 
 import pymupdf
+from ja_glyphs import repaired_rawdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -94,7 +95,7 @@ def page_rows(page):
     Furigana is folded into the group it glosses; superscripts rejoin the line
     they were set against; the reading order is the printed order.
     """
-    raw = page.get_text('rawdict')
+    raw = repaired_rawdict(page, page.get_text('rawdict'))
     spans, sizes = [], collections.Counter()
     for b in raw['blocks']:
         if b['type'] != 0:

@@ -2665,5 +2665,181 @@
         0.46
       ]
     }
+  },
+  "ja-2017-hl-2a-1": {
+    "src": "/exam-figures/japanese/ja-2017-hl-2a-1.png",
+    "md5": "5d9af9ccaf946352be984f9b9fd2cb16",
+    "alt": "Complete in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.06,
+        0.045,
+        0.96,
+        0.343
+      ]
+    }
+  },
+  "ja-2017-hl-2b-1": {
+    "src": "/exam-figures/japanese/ja-2017-hl-2b-1.png",
+    "md5": "1fcf742358ac8779e57bb9dd05f9ead7",
+    "alt": "Write the meaning of the following Kanji in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.06,
+        0.05,
+        0.96,
+        0.45
+      ]
+    }
+  },
+  "ja-2017-hl-2b-2": {
+    "src": "/exam-figures/japanese/ja-2017-hl-2b-2.png",
+    "md5": "19d944fae1e75bcbfbb295bbf0e642c4",
+    "alt": "Write the reading of the following Kanji in Hiragana.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.06,
+        0.46,
+        0.96,
+        0.88
+      ]
+    }
+  },
+  "ja-2017-hl-2c-1": {
+    "src": "/exam-figures/japanese/ja-2017-hl-2c-1.png",
+    "md5": "3ff134a87bf98ad558268976f07ab8ea",
+    "alt": "Write the following in the plain form.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.06,
+        0.03,
+        0.97,
+        0.48
+      ]
+    }
+  },
+  "ja-2017-hl-2c-2": {
+    "src": "/exam-figures/japanese/ja-2017-hl-2c-2.png",
+    "md5": "5ffacbacb3a5dee986b2d1748415e3fb",
+    "alt": "Write the correct form of each verb.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.06,
+        0.48,
+        0.97,
+        0.89
+      ]
+    }
+  },
+  "ja-2017-hl-3c": {
+    "src": "/exam-figures/japanese/ja-2017-hl-3c.png",
+    "md5": "3d1c104f6ea7399c89ff43b211d00d2d",
+    "alt": "Circle the correct reading for the following Kanji and write the meaning in English as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.06,
+        0.035,
+        0.97,
+        0.455
+      ]
+    }
+  },
+  "ja-2017-hl-3d": {
+    "src": "/exam-figures/japanese/ja-2017-hl-3d.png",
+    "md5": "db73a1ef782b4d809050600e709103b2",
+    "alt": "Insert the correct particle into each blank space below. There may be more than one correct answer.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.06,
+        0.465,
+        0.97,
+        0.91
+      ]
+    }
+  },
+  "ja-2017-hl-4": {
+    "src": "/exam-figures/japanese/ja-2017-hl-4.png",
+    "md5": "c6363043dbd323fe84a25c170041683d",
+    "alt": "Write about (a) OR (b) in approximately 200 Japanese characters.\n(a) You are preparing a short presentation to your class about (i) your study of the Japanese language and (ii) the aspect(s) of Japanese culture you find interesting. Write the speech you would give to your class. Include answers to the following questions.\n(i) 日本語の勉強は、どうですか。\n(ii) 日本の文化（ぶんか）で、何がおもしろいですか。\nOR\n(b) You are preparing a short presentation to your class about your plans for the future including (i) your chosen college and area of study and (ii) college life. Write the speech you would give to your class. Include answers to the following questions.\n(i) どの大学で、何を勉強したいですか。\n(ii) 大学生活（せいかつ）は、どう思いますか。",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 14,
+      "region": [
+        0.045,
+        0.025,
+        0.97,
+        0.9
+      ]
+    }
+  },
+  "ja-2017-hl-5": {
+    "src": "/exam-figures/japanese/ja-2017-hl-5.png",
+    "md5": "ebdb10898ddb034c56e20073bcd50901",
+    "alt": "You have just moved house. Write an email to your Japanese e‐pal in approximately 320 Japanese characters covering ANY 4 of the following headings.\n1. 前の家（いえ）について                        Ag cur síos ar an teach ina raibh tú roimhe seo /\nAbout your previous house\n2. 新しい家（いえ）のロケーション An áit a bhfuil do theach nua /\nThe location of your new house\n3. 新しい家（いえ）の大きさと部（へ）屋（や）のしゅるい Méid agus cineál na seomraí i do theach nua /\nThe size and room types in your new house\n4. 新しい家（いえ）の一番（ばん）好きな部（へ）屋（や） An seomra is fearr leat sa teach nua /\nYour favourite room in the new house\n5. 新しい家（いえ）の庭（にわ） An gairdín i do theach nua /\nThe garden in your new house\n6. アイルランドの家（いえ）と日本の家（いえ） Tithe Éireannacha agus Seapánacha /\nIrish and Japanese houses",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 16,
+      "region": [
+        0.045,
+        0.025,
+        0.97,
+        0.9
+      ]
+    }
+  },
+  "ja-2017-hl-la": {
+    "src": "/exam-figures/japanese/ja-2017-hl-la.png",
+    "md5": "2eaa0e6dd96ea20983d3270eeb936582",
+    "alt": "Where will they go?\nHow long will they stay there?\nWho will they go with?\nWhat do they want to do there?\n1.\n2.\n3.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 2,
+      "region": [
+        0.075,
+        0.18,
+        0.97,
+        0.74
+      ]
+    }
+  },
+  "ja-2017-hl-lb-1-v": {
+    "src": "/exam-figures/japanese/ja-2017-hl-lb-1-v.png",
+    "md5": "f89247f90dc48447de9fd1f80b3d97e2",
+    "alt": "To enquire, you should call:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 3,
+      "region": [
+        0.53,
+        0.53,
+        0.965,
+        0.616
+      ]
+    }
   }
 }

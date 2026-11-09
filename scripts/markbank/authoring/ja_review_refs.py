@@ -1,7 +1,7 @@
 """Exact source-reviewed Japanese references with roman-then-letter nesting.
 
 The generic grammar treats a letter after a roman as a sibling. Japanese
-listening papers also print letters nested below romans. Only an explicitly
+written and listening papers also print letters nested below romans. Only an explicitly
 inventoried literal reference may bind to the canonical (letter, roman) key;
 this module does not broaden the grammar or affect another subject.
 """
@@ -25,7 +25,8 @@ def reviewed_japanese_refs(directory=None):
             if 'paperRef' not in task:
                 continue
             section, q, letter, roman = task['key']
-            assert task['component'] == 'aural' and re.fullmatch(r'L[A-D]', section)
+            assert ((task['component'] == 'aural' and re.fullmatch(r'L[A-D]', section))
+                    or (task['component'] == 'paper' and re.fullmatch(r'[1-3][A-D]', section)))
             assert q is None or (isinstance(q, int) and q > 0)
             assert re.fullmatch(r'[a-z]', letter) and re.fullmatch(r'(?:i|ii|iii|iv|v|vi|vii|viii|ix|x)', roman)
             question = f' Q{q}' if q is not None else ''

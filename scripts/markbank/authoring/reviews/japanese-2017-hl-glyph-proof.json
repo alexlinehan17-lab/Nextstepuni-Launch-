@@ -1,0 +1,22 @@
+{
+  "source": "examiner-reports/japanese/papers/2017-hl-000-paper.pdf",
+  "sha256": "e96083ac6d83286da7ad5e1172a3094819339d01cfe1acda36e4abeed1762a0e",
+  "page": 9,
+  "font": "MS-Mincho",
+  "gid": 5251,
+  "text": "居",
+  "origin": [
+    126.5,
+    255.9
+  ],
+  "crop": [
+    45,
+    215,
+    480,
+    272
+  ],
+  "image": "scripts/markbank/authoring/reviews/glyphs/japanese-2017-hl-p9-q2c1-iii.png",
+  "imageSha256": "a92d4436e5b192f1601c9b3f54b081a9d8cd26d226dbdb65e6f7855a08cb3bb9",
+  "method": "Direct full-size original-image reading, independently confirmed by coordinator. Second kanji of 中居 in Q2 C1(iii); ruby なかい supports but does not replace the legible source glyph. No inferred substitution from surrounding vocabulary.",
+  "correction": "An initial location hypothesis referred to item (v). Actual glyph trace locates gid5251 in item (iii); only this corrected glyph/coordinate association is accepted."
+}

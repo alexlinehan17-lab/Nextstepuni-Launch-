@@ -21,6 +21,9 @@ ROOT = Path(__file__).resolve().parents[3]
 def verify(path):
     review = json.loads(path.read_text())
     year, level = review['sitting'].split('-')
+    if recovery := review.get('glyphRecovery'):
+        assert hashlib.sha256((ROOT / recovery['path']).read_bytes()).hexdigest() == recovery['sha256'], 'Glyph recovery proof changed'
+        assert '\ufffd' not in json.dumps([review['cards'], review['selectors']], ensure_ascii=False), 'Unresolved glyph in published text'
     assert reviewed_census(int(year), level), f'{path}: no independent census'
     rows = {}
     for source in review['sources']:
