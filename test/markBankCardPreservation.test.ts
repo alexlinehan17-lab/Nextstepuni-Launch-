@@ -86,6 +86,7 @@ import japanese2026OrdinaryCensus from '../scripts/markbank/authoring/reviews/ja
 import japanese2025HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2025-hl-census.json';
 import japanese2025OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2025-ol-census.json';
 import japanese2024OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2024-ol-census.json';
+import japanese2023OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2023-ol-census.json';
 import japanese2023HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2023-hl-census.json';
 import japanese2024HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2024-hl-census.json';
 import japaneseAliases from '../components/MarkBank/cards/japanese/aliases.json';
@@ -1697,7 +1698,9 @@ const japaneseAliasIds = Object.keys(japaneseAliases);
 // aliases across six complete tasks. No frozen original identity is removed.
 // 2023 Higher: 67 whole tasks, 25 retained IDs, 42 additions and 43 original
 // fragments resolving to seven independently source-reviewed whole tasks.
-const japaneseAdditionIds = new Set([japanese2026HigherCensus, japanese2026OrdinaryCensus, japanese2025HigherCensus, japanese2025OrdinaryCensus, japanese2024HigherCensus, japanese2024OrdinaryCensus, japanese2023HigherCensus].flatMap(census => census.tasks.map(task =>
+// 2023 Ordinary: 58 whole tasks, 17 retained IDs, 41 additions and 34
+// original fragments resolving to five complete source-reviewed pools.
+const japaneseAdditionIds = new Set([japanese2026HigherCensus, japanese2026OrdinaryCensus, japanese2025HigherCensus, japanese2025OrdinaryCensus, japanese2024HigherCensus, japanese2024OrdinaryCensus, japanese2023HigherCensus, japanese2023OrdinaryCensus].flatMap(census => census.tasks.map(task =>
   `ja-${census.year}-${census.level}-${task.key.filter(part => part !== null).join('-').toLowerCase()}`)).filter(id => !japaneseLiteralIds.has(id)));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);

@@ -13,9 +13,9 @@
     "matchedLocalCardLinks": 436,
     "localPaperVariants": 93,
     "hostedPaperAnchorMaps": 93,
-    "localQuestionMappings": 1329,
+    "localQuestionMappings": 1330,
     "referenceMappedLocalQuestions": 388,
-    "retainedLocalQuestions": 941,
+    "retainedLocalQuestions": 942,
     "preservedBaselinePaperVariants": 93,
     "preservedBaselineCards": 1329
   },
@@ -6913,6 +6913,18 @@
       "n": "24",
       "topicIds": [
         "japanese-common-personal-writing-all"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC058GLP000BV.pdf",
+      "paperKey": "single",
+      "n": "25",
+      "topicIds": [
+        "japanese-common-comprehension-general-reading"
       ],
       "provenance": "retained-local"
     },

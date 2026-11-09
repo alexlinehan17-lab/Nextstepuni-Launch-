@@ -46,6 +46,8 @@ import { CARDS as BUSINESS_HIGHER } from '../components/MarkBank/cards/business/
 import { CARDS as BUSINESS_ORDINARY } from '../components/MarkBank/cards/business/ordinary';
 import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
+import japanese2023OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2023-ol-census.json';
+import japanese2023OrdinaryReview from '../scripts/markbank/authoring/reviews/japanese-2023-ol.json';
 import japanese2023HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2023-hl-census.json';
 import japanese2023HigherReview from '../scripts/markbank/authoring/reviews/japanese-2023-hl.json';
 import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/higher';
@@ -55,21 +57,24 @@ import { CARDS as RUSSIAN_ORDINARY } from '../components/MarkBank/cards/russian/
 
 const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
 
-// This paper prints roman tasks directly beneath Part D, without a Q number.
-// Accept only the independent census's exact source-bound IDs and references.
+// These papers print roman tasks directly beneath Part D, without a Q number.
+// Accept only the independent censuses' exact source-bound IDs and references.
 // Other subjects and the generic citation grammar remain unchanged.
-const japaneseUnnumberedRefs = new Map(japanese2023HigherCensus.tasks
+const japaneseUnnumberedRefs = new Map(([
+  [japanese2023HigherCensus, japanese2023HigherReview],
+  [japanese2023OrdinaryCensus, japanese2023OrdinaryReview],
+] as const).flatMap(([census, review]) => census.tasks
   .filter(task => task.key[0] === 'LD' && task.key[1] === null)
   .map(task => {
     const [section, , letter, roman] = task.key;
-    const id = `ja-2023-hl-${task.key.filter(part => part !== null).join('-').toLowerCase()}`;
-    const ref = `2023 HL Section ${section}(${roman})${letter === null ? '' : `(${letter})`}`;
-    const reviewed = japanese2023HigherReview.cards.find(card => card.id === id);
+    const id = `ja-${census.year}-${census.level}-${task.key.filter(part => part !== null).join('-').toLowerCase()}`;
+    const ref = `${census.year} ${census.level.toUpperCase()} Section ${section}(${roman})${letter === null ? '' : `(${letter})`}`;
+    const reviewed = review.cards.find(card => card.id === id);
     if (reviewed?.questionRef !== ref || JSON.stringify(reviewed.sourceEvidence.paperPages) !== JSON.stringify(task.paperPages)) {
       throw new Error(`Unbound Japanese unnumbered reference: ${id}`);
     }
     return [id, ref] as const;
-  }));
+  })));
 const isJapaneseUnnumberedRef = (id: string, ref: string) => japaneseUnnumberedRefs.get(id) === ref;
 
 const deckCards = (subject: string): { id: string; ref: string }[] => {
@@ -241,7 +246,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
   });
 
   it('japanese unnumbered references reject another year, sibling, order or suffix', () => {
-    expect(japaneseUnnumberedRefs.size).toBe(10);
+    expect(japaneseUnnumberedRefs.size).toBe(18);
     for (const [id, ref] of japaneseUnnumberedRefs) {
       expect(isJapaneseUnnumberedRef(id, ref)).toBe(true);
       expect(isJapaneseUnnumberedRef(id, ref.replace('2023', '2024'))).toBe(false);
