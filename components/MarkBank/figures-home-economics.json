@@ -654,5 +654,40 @@
     "alt": "Original full school uniform photograph: two complete outfits including shirt, cardigan and crest, trousers, skirt and shoes. No garments cropped.",
     "attribution": "SEC Home Economics 2012 Ordinary Level examination paper, page 10 — © State Examinations Commission.",
     "sourceNote": "Original PDF crop, bounds [208, 110, 399, 319], rendered at 2.5×. SHA256 9d1af39369e95a11f39653c7c35c2598725845e4699c550771709704f861c410."
+  },
+  "home-economics-2013-hl-sa-q1": {
+    "src": "/exam-figures/home-economics/home-economics-2013-hl-sa-q1.png",
+    "md5": "bdf1fe75bbf6001c3020b68221aa77d0",
+    "alt": "Original protein-function question table with all three protein types and blank function cells.",
+    "attribution": "SEC Home Economics 2013 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 138.7676544189453, 570.219970703125, 318.1675109863281], rendered at 2.5×. SHA256 e825d8fa99142a19cdafb9bc2e129f3ebc59904546735a21f3a770dc1d6877f8."
+  },
+  "home-economics-2013-hl-sa-q3": {
+    "src": "/exam-figures/home-economics/home-economics-2013-hl-sa-q3.png",
+    "md5": "929594cb91627a0a1afe1e52ee5bc8b1",
+    "alt": "Original six-row vitamin-deficiency question table: Nightblindness, Rickets, Poor blood clotting, Anaemia, Beri-beri, Neural tube defects; all blank vitamin cells retained.",
+    "attribution": "SEC Home Economics 2013 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 525.16748046875, 570.219970703125, 793.19189453125], rendered at 2.5×. SHA256 3bfae11312ec339b04c81d13a98374897143b0a60b04e186131541667efeed68."
+  },
+  "home-economics-2013-hl-sa-q4": {
+    "src": "/exam-figures/home-economics/home-economics-2013-hl-sa-q4.png",
+    "md5": "e17d0a7d26c11bfe3a98070d24cf7a32",
+    "alt": "Original flour and culinary-use table, complete headings and three paired blank rows.",
+    "attribution": "SEC Home Economics 2013 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 39.88771057128906, 570.219970703125, 205.48756408691406], rendered at 2.5×. SHA256 d6141c3f787ca881883fa979b51d89a7c5bd2c211b23f60b09416c412c8d970f."
+  },
+  "home-economics-2013-hl-sa-q6": {
+    "src": "/exam-figures/home-economics/home-economics-2013-hl-sa-q6.png",
+    "md5": "953702c893e5ed3c79b50a594ca1875c",
+    "alt": "Original food-contamination table with Pesticides and Metal residues, How contamination occurs and Possible effect on the body headings; all blank cells retained.",
+    "attribution": "SEC Home Economics 2013 Higher Level examination paper, page 3 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [45, 412.4875183105469, 570.219970703125, 596.5676879882812], rendered at 2.5×. SHA256 00595edd51c2d2d1868c528b020ff0d8d2f7dfe894b71281b00bb2b65c176e11."
+  },
+  "home-economics-2013-hl-sb-q1-pyramid": {
+    "src": "/exam-figures/home-economics/home-economics-2013-hl-sb-q1-pyramid.png",
+    "md5": "31c6ceddede4b431fb8ca7c568a169f1",
+    "alt": "Original five-shelf Food Pyramid daily-servings table with complete SLAN 2007 source caption. 1998/2007 percentages: cereals/breads/potatoes40/26; fruit/vegetables56/65; milk/cheese/yoghurt22/20; meat/fish/poultry/alternatives36/39; top shelf fats/sugar/salt14/14. All original shelf names and daily-serving limits retained.",
+    "attribution": "SEC Home Economics 2013 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original PDF crop, bounds [81, 175, 541, 468], rendered at 2.5×. SHA256 953c0bf7e273b4e4f8e423e06b82778918294ed9cb5660a68af3827b6f28d050."
   }
 }

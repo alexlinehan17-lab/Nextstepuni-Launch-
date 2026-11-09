@@ -10,12 +10,12 @@
   "currentCounts": {
     "subject": "home-economics",
     "mode": "sections",
-    "cards": 1038,
-    "leaves": 1453,
-    "covered": 994,
+    "cards": 1191,
+    "leaves": 1552,
+    "covered": 1142,
     "excluded": 0,
-    "open": 459,
-    "coveragePct": 68.4,
+    "open": 410,
+    "coveragePct": 73.6,
     "orphans": [],
     "unparsed": [],
     "staleExclusions": [],
@@ -60,80 +60,28 @@
         "year": 2012,
         "level": "hl",
         "paper": null,
-        "leaves": 21,
-        "covered": 0,
+        "leaves": 50,
+        "covered": 50,
         "excluded": 0,
-        "open": [
-          "Section A Q1(i)",
-          "Section A Q1(ii)",
-          "Section A Q11(i)",
-          "Section A Q11(ii)",
-          "Section A Q4(i)",
-          "Section A Q4(ii)",
-          "Section A Q6",
-          "Section A Q7",
-          "Section A Q8",
-          "Section B Q1(a)",
-          "Section B Q1(b)",
-          "Section B Q1(c)",
-          "Section B Q1(d)",
-          "Section B Q2(a)",
-          "Section B Q2(b)",
-          "Section B Q2(c)",
-          "Section B Q4(a)",
-          "Section B Q4(b)",
-          "Section B Q4(c)(i)",
-          "Section B Q4(c)(ii)",
-          "Section B Q4(c)(iii)"
-        ]
+        "open": []
       },
       {
         "year": 2012,
         "level": "ol",
         "paper": null,
-        "leaves": 14,
-        "covered": 0,
+        "leaves": 49,
+        "covered": 49,
         "excluded": 0,
-        "open": [
-          "Section A Q1",
-          "Section A Q11(a)(i)",
-          "Section A Q11(a)(ii)",
-          "Section A Q11(b)",
-          "Section A Q11(c)(i)",
-          "Section A Q11(c)(ii)",
-          "Section A Q11(c)(iii)",
-          "Section A Q11(d)",
-          "Section A Q2",
-          "Section A Q3",
-          "Section A Q4",
-          "Section A Q6",
-          "Section A Q7",
-          "Section A Q8"
-        ]
+        "open": []
       },
       {
         "year": 2013,
         "level": "hl",
         "paper": null,
-        "leaves": 14,
-        "covered": 0,
+        "leaves": 49,
+        "covered": 49,
         "excluded": 0,
-        "open": [
-          "Section A Q1",
-          "Section A Q11(a)",
-          "Section A Q11(b)(i)",
-          "Section A Q11(b)(ii)",
-          "Section A Q11(c)(i)",
-          "Section A Q11(c)(ii)",
-          "Section A Q11(c)(iii)",
-          "Section A Q11(d)",
-          "Section A Q11(e)",
-          "Section A Q2",
-          "Section A Q4",
-          "Section A Q5",
-          "Section A Q7",
-          "Section A Q8"
-        ]
+        "open": []
       },
       {
         "year": 2013,
@@ -822,17 +770,17 @@
         "open": []
       }
     ],
-    "censusFlags": 31,
+    "censusFlags": 27,
     "unreadPapers": []
   },
   "nextActions": [
-    "2011 Higher and Ordinary source reviews complete:48/52 priced tasks,627 offered marks each,20 original Atlas groups each. Continue independent2012 Higher sweep, then2012–2020 both levels and remaining published deferred.",
+    "2010–2012 Higher/Ordinary and2013Higher original-source reviews complete. Continue2013Ordinary from the completed48-page independent visual sweep, then2014–2020 both levels and remaining published deferred.",
     "2023 Higher/Ordinary English main source reviews complete: 59/60 tasks. 2023 Higher deferred source review complete: 58 tasks, 749 offered practice marks, all mapped to Atlas. Browser QA pending.",
     "2022 Higher deferred source review complete: all 61 tasks (749 offered practice marks), 23 Atlas question groups, all 79 source pages independently swept. Browser QA pending.",
     "Live SEC inventory: English Home Economics deferred publications found for 2022/2023 Higher only; no subject listing for 2024/2025, and no 2026 deferred year offered. Absence is a publication finding, not proof no exam was sat.",
     "Preserve prior card identities and progress, reconcile each verified batch, integrate locally and continue. Browser QA remains pending: browser host unavailable and native Chrome is in active use."
   ],
-  "coveragePolicy": "Raw census is diagnostic only:459 open candidates and31 flags do not independently count outstanding tasks. 2011Ordinary complete after44-page visual sweep:52 priced tasks reconciled to50 source leaves. Whole Home Economics remains in progress.",
+  "coveragePolicy": "Raw census is diagnostic only:410 open candidates and27 flags do not independently count outstanding tasks.2013Higher source-complete after48-page independent sweep:49 tasks/49 source leaves. Whole subject remains in progress.",
   "integratedBatches": [
     {
       "workCommit": "14e08691b",
@@ -951,24 +899,23 @@
     }
   ],
   "latestValidatedBatch": {
-    "scope": "2011 Ordinary main:52 tasks,10 original figures,20 preserved Atlas IDs.",
-    "runtimeCards": 1038,
-    "higher": 579,
-    "ordinary": 459,
-    "sourceReview": "2011-ol-main-review.json",
+    "scope": "2013 Higher main:49 tasks,five original figures,20 preserved Atlas IDs.",
+    "runtimeCards": 1191,
+    "higher": 679,
+    "ordinary": 512,
+    "sourceReview": "2013-hl-main-review.json",
     "validation": {
-      "runtime": "232 required preservation/curriculum/deck tests plus7 each2010HL/2010OL/2011HL/2011OL =260 passed at maxWorkers1. Seven Ordinary regressions reran after original glyph-position reconstruction.",
-      "mandatoryRawSourceGate": "Passed explicit Python2010 and2011 source gates: original source hashes and independent pinned keys. 2011Ordinary50 leaves, zero continuity flags. Normal checkout Vitest has no archive/Python dependency.",
-      "atlas": "Two targeted Home Economics tests passed. 61 tagged papers,672 physical groups,1003 registry mappings. Original IDs1–20 retained; every task mapped to canonical topics. Exact Q8 replaces its prior fileless fallback; Q16 newly mapped.",
+      "runtime": "281 required/sitting checks passed across the main run and targeted rerun:232 required plus7 each2010HL/OL,2011HL/OL,2012HL/OL,2013HL. One test expectation corrected from black, bead to the full printed black, hard bead. Seven2013 checks reran after final explanatory-text spacing polish; maxWorkers1.",
+      "mandatoryRawSourceGate": "Explicit2010/2011/2012/2013 original-PDF hash/key gates passed.2013Higher49 independent source leaves, zero continuity flags. Portable runtime tests have no local archive/Python dependency.",
+      "atlas": "Two targeted Home Economics gates passed;64 tagged papers,732 physical groups,1003 registry mappings. All20 original2013Higher question IDs retained and all49 tasks linked to canonical topics.",
       "mainTypecheck": "passed",
-      "scoped2011TestTypecheck": "passed",
-      "productionBuild": "passed; removed only own reproducible untracked dist output",
-      "cardlint": "clean;1064 authored records including withdrawals inspected",
-      "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across33 files.",
-      "reconciliation": "2011OL50/50 raw source leaves covered;52 priced tasks;zero open/excluded/orphan/continuity flags. Whole subject1038 cards579HL/459OL,994/1453 raw leaves covered,459 open,zero orphan/unparsed/excluded,31 flags.",
-      "browser": "Parent-owned/pending; all ten original source crops visually inspected.",
-      "preservation": "All earlier authored cards, other decks, unrelated sizes/showcase subjects, full and decoded compact non-HE Atlas data, unrelated HE tags/runtime/associations and every other HE sitting census unchanged. Frozen identity hashes preserved.",
-      "correctedValidationFindings": "Initial pass found nonexistent A4 curriculum node0-0, corrected to0-1, and test casing Sponge Cake vs printed scheme Sponge cake. Source-corrected data passed260 tests. Registry count initially estimated1004; inspected canonical bridge proves Q8 fallback replacement, final1003 exact expected."
+      "scoped2013TestTypecheck": "passed",
+      "productionBuild": "passed; own reproducible untracked dist removed after success",
+      "cardlint": "clean;1217 authored records including withdrawals inspected, final wording included",
+      "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across28 generated files, repeated after final wording polish.",
+      "reconciliation": "2013HL49/49 raw leaves covered, zero open/excluded/orphan/continuity flags. Whole lane1191 cards679HL/512OL;1142/1552 raw leaves covered,410 open,zero orphan/unparsed/excluded,27 flags.",
+      "preservation": "All earlier authored cards, other decks, unrelated sizes/showcase subjects, full/decoded compact non-HE Atlas records, unrelated HE tags/runtime/associations and every other HE raw census sitting unchanged. Frozen identity hashes unchanged.",
+      "browser": "Parent-owned/pending. All five original figures individually visually inspected."
     }
   },
   "knownExistingValidationIssues": [
