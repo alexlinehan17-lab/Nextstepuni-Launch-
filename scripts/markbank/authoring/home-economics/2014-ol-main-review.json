@@ -283,21 +283,21 @@
       "section": "B",
       "marks": 18,
       "questionRef": "2014 OL Section B Q5(a)",
-      "topicId": "home-economics-2-2"
+      "topicId": "home-economics-2-1"
     },
     {
       "id": "he-2014-ol-sb-q5b",
       "section": "B",
       "marks": 20,
       "questionRef": "2014 OL Section B Q5(b)",
-      "topicId": "home-economics-2-2"
+      "topicId": "home-economics-2-1"
     },
     {
       "id": "he-2014-ol-sb-q5c",
       "section": "B",
       "marks": 12,
       "questionRef": "2014 OL Section B Q5(c)",
-      "topicId": "home-economics-2-2"
+      "topicId": "home-economics-2-1"
     },
     {
       "id": "he-2014-ol-sc-q1ai",
@@ -680,6 +680,7 @@
     "regeneration": "Two full author/figure/deck/Atlas/tag/showcase/landing regenerations byte-identical across31 generated files.",
     "reconciliation": "2014OL51/51 raw leaves covered,51 priced tasks,zero sitting opens/exclusions/continuity flags. Lane1343 cards728HL/615OL;1291/1657 raw leaves covered,366 open,zero orphan/unparsed/excluded,24 flags.",
     "preservation": "Every earlier authored card, unrelated deck, other sizes/showcase subjects, full/decoded non-HE Atlas data, unrelated HE tags/runtime/associations and every other HE raw census sitting unchanged. Frozen identity hashes unchanged.",
-    "browser": "Parent-owned/pending. All eight original crops individually visually inspected; final electricity caption union includes every original caption word."
+    "browser": "Parent-owned/pending. All eight original crops individually visually inspected; final electricity caption union includes every original caption word.",
+    "canonicalTopicReview": "Follow-up canonical-topic review: B5(a)/(b)/(c) marriage customs, validity and preparation map to home-economics-2-1 (Marriage & the Family Life Cycle). Original source content, tariffs and IDs unchanged.239 required/sitting tests,two HE Atlas gates and cardlint passed; all other cards/tags preserved."
   }
 }

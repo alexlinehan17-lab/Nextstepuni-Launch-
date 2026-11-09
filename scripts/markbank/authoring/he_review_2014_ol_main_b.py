@@ -38,9 +38,9 @@ def build():
  types=guide(12,'2 types of pollution @ 5 marks each','(ii)');options=[v.strip().removesuffix(' etc.').strip() for v in types.split(',') if v.strip()!='etc.'];add(4,'b','1-5',10,[menu('types','types of pollution',2,5,options,'Choose TWO different types.')],'2 names × 5',roman='i')
  effects=guide(12,'2 effects @ 5 marks each');c=add(4,'b','1-5',10,[criterion(f'effect-{i}','effect',1,[0,5],f'ONE effect for chosen type {i}; use two DIFFERENT pollution types from the preceding original naming task. Each effect must match its own type. Naming is already priced in part(i), with no second name charge here. Complete original source: '+effects) for i in [1,2]],'1 effect for each of 2 chosen types × 5',roman='ii');c['stem']+='\n\n'+prompt(4,'b','i')
  green=guide(13,'Name: 5 marks, Details: 5 marks');options=chosen(green,['Reduce, Reuse, Recycle','Green Dot','WEEE','Blue Flower Symbol','Plastic Bag Levy','Green Flags','Blue Flags','Tidy Towns']);add(4,'c','1-5',10,[menu('name','Name',1,5,options),criterion('details','Details',1,[0,5],'One detail for the SAME chosen initiative. Complete original historical source: '+green)],'Name 5 + detail 5')
- judged(5,'a','2-2',3,6,'ways',guide(14,'3 ways @ 6 marks each','(b)'))
- c=judged(5,'b','2-2',4,5,'conditions',guide(14,'4 conditions @ 5 marks each','(c)'));c['rows'][0]['contextNote']='Original historical 2014 marriage-condition guidance is retained for this examination task. '+c['rows'][0]['contextNote']
- heads=['• the school','• marriage preparation courses.'];add(5,'c','2-2',12,[criterion(f'role-{i}',head.removeprefix('• ').rstrip('.'),1,[0,6],body) for i,(head,body) in enumerate(zip(heads,named(guide(14,'2 points @ 6 marks each'),heads)),1)],'2 required roles × 6')
+ judged(5,'a','2-1',3,6,'ways',guide(14,'3 ways @ 6 marks each','(b)'))
+ c=judged(5,'b','2-1',4,5,'conditions',guide(14,'4 conditions @ 5 marks each','(c)'));c['rows'][0]['contextNote']='Original historical 2014 marriage-condition guidance is retained for this examination task. '+c['rows'][0]['contextNote']
+ heads=['• the school','• marriage preparation courses.'];add(5,'c','2-1',12,[criterion(f'role-{i}',head.removeprefix('• ').rstrip('.'),1,[0,6],body) for i,(head,body) in enumerate(zip(heads,named(guide(14,'2 points @ 6 marks each'),heads)),1)],'2 required roles × 6')
  assert len(cards)==18 and sum(c['totalMarks'] for c in cards)==280,(len(cards),sum(c['totalMarks'] for c in cards))
  return cards
 if __name__=='__main__':
