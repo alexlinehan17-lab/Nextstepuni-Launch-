@@ -5,6 +5,7 @@ import { CARDS as ordinary } from '../components/MarkBank/cards/japanese/ordinar
 import reviewed from '../components/MarkBank/cards/japanese/reviewed.json';
 import census from '../scripts/markbank/authoring/reviews/japanese-2026-ol-census.json';
 import review from '../scripts/markbank/authoring/reviews/japanese-2026-ol.json';
+import census2015 from '../scripts/markbank/authoring/reviews/japanese-2015-ol-census.json';
 import { languagePointsMarks, type LanguageScores } from '../components/MarkBank/languageScoring';
 import { tariffReconciles, UNPRINTED_ANSWER, type LanguagePointsRubric } from '../types/markBank';
 import type { PaperAnswerMap } from '../types/paperTrail';
@@ -57,14 +58,16 @@ describe('Japanese 2026 Ordinary independent source review', () => {
     }
     // Global frozen-ID/content and alias accounting is pinned independently by
     // markBankCardPreservation and the 2025/2026 Higher review tests.
-    expect(ordinary.filter(card => card.year !== 2026)).toHaveLength(261 + 42 - 22 + 40 - 40 + 41 - 34 + 40 - 41 + 39 - 39 + 56 + 57 + 54 + 52);
+    expect(ordinary.filter(card => card.year !== 2026)).toHaveLength(261 + 42 - 22 + 40 - 40 + 41 - 34 + 40 - 41 + 39 - 39 + 56 + 57 + 54 + 52 + census2015.tasks.length);
+    expect(census2015.tasks).toHaveLength(51);
+    expect(ordinary.filter(card => card.year === 2015).map(card => card.id).sort()).toEqual(census2015.tasks.map(task => `ja-2015-ol-${task.key.filter(part => part !== null).join('-').toLowerCase()}`).sort());
     expect(cards.some(card => card.questionText.trim().length === 0)).toBe(false);
   });
 
   it('emits the exact reviewed convention, without extending it to unreviewed sittings', () => {
     const source = review.selectors.find(selector => selector.document === 'scheme' && selector.page === 3 && selector.row === 12 && selector.group === 1)!;
     for (const found of cards) expect(found.answerLanguageRule).toEqual({ otherLanguageMultiplier: 0.5, sourceText: source.text, schemePages: [3] });
-    expect(ordinary.filter(card => card.year < 2016).some(card => card.answerLanguageRule)).toBe(false);
+    expect(ordinary.filter(card => !rawById.has(card.id)).some(card => card.answerLanguageRule)).toBe(false);
   });
 
   it('retains the restaurant table, printed examples, underlines, cloze and prefilled phone number', () => {
