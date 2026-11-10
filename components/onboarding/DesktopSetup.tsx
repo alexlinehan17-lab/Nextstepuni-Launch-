@@ -581,7 +581,7 @@ export default function DesktopSetup(props: OnboardingProps) {
                             >
                               <span className="setup-subject-name">
                                 <SubjectAvatar subject={item.name} />
-                                <span>{item.name}</span>
+                                <span>{item.label ?? item.name}</span>
                               </span>
                               <span className="setup-subject-state" aria-hidden="true">
                                 {draft.subjects.includes(item.name) ? "Added" : "Add"}

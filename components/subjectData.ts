@@ -22,8 +22,8 @@ export type LcvpGrade = 'Distinction' | 'Merit' | 'Pass';
 // 'common' for LCVP Link Modules. Junior Cycle subjects without an
 // H/O choice (all JC subjects except English / Irish / Mathematics) carry
 // level 'common'. Treat this as a runtime flag — LC code that branches on
-// level === 'higher' / 'ordinary' continues to work because no LC subject
-// ever has level === 'common'.
+// level === 'higher' / 'ordinary' must keep common-level LCVP and non-exam
+// courses separate; only LCVP awards Distinction / Merit / Pass exam grades.
 export type Level = 'higher' | 'ordinary' | 'foundation' | 'common';
 
 // LC entries set currentGrade / targetGrade. JC entries set currentBand /
@@ -95,8 +95,19 @@ export interface LCSubject {
   /** Other names students search by, including the name the subject takes
    *  for a later exam cohort (e.g. Construction Technology from 2028). */
   aliases?: string[];
-  /** LCA only: a course assessed by key assignments, with no SEC written exam. */
+  /** Current official label; `name` remains compatible with saved profiles. */
+  label?: string;
+  /** No SEC written paper. These courses do not use exam grade targets. */
   noWrittenExam?: boolean;
+  /** An externally assessed project can still award national exam grades (JC Visual Art). */
+  examGrades?: boolean;
+  /** LCA Social Education: final exam ended for the cohort entering in 2025. */
+  lastWrittenExamYear?: number;
+  /** Explicit route for separately certified LCE subjects selected by LCA students. */
+  establishedSubject?: string;
+  /** JC paper identity, including current names for legacy saved choices. */
+  paperSubjectId?: string;
+  shortCourseLevel?: 1 | 2 | 3;
 }
 
 
@@ -105,7 +116,7 @@ export interface LCSubject {
  *  (paperTrailData cycle 'lca') so a student's chosen subjects link straight to
  *  their papers. Courses assessed only by key assignments are marked
  *  `noWrittenExam`. LCA students may also take Leaving Cert Mathematics at any
- *  level. All LCA courses are assessed at common level: credits
+ *  level and separately certified LCE modern foreign languages. LCA courses are assessed at common level: credits
  *  (Distinction / Merit / Pass), not H/O grades. */
 export const LCA_SUBJECTS: LCSubject[] = [
   // Languages & communication
@@ -118,29 +129,35 @@ export const LCA_SUBJECTS: LCSubject[] = [
   { name: 'Sign Language', group: 'languages' },
   // STEM
   { name: 'Mathematical Applications', group: 'stem', isMaths: true },
-  { name: 'Leaving Cert Maths', group: 'stem', levels: ['higher', 'ordinary', 'foundation'], aliases: ['Mathematics', 'Ordinary Maths', 'Maths'] },
-  { name: 'Information & Communication Tech.', group: 'stem', aliases: ['ICT', 'Information and Communication Technology'] },
-  { name: 'Introduction to ICT', group: 'stem', noWrittenExam: true, aliases: ['Introduction to Information and Communication Technology'] },
+  { name: 'Leaving Cert Maths', group: 'stem', establishedSubject: 'Mathematics', levels: ['higher', 'ordinary', 'foundation'], aliases: ['Mathematics', 'Ordinary Maths', 'Maths'] },
+  { name: 'Information & Communication Tech.', group: 'stem', aliases: ['ICT', 'Information and Communication Technology', 'Information and Communications Technology', 'Information and Communications Technology (Voc. Specialism)'] },
+  { name: 'Introduction to ICT', group: 'stem', noWrittenExam: true, aliases: ['Introduction to Information and Communication Technology', 'Introduction to Information and Communications Technology'] },
   { name: 'Science', group: 'stem', noWrittenExam: true },
   // Business / vocational
   { name: 'Vocational Preparation & Guidance', group: 'business', noWrittenExam: true, aliases: ['VPG', 'Vocational Preparation and Guidance', 'Vocational Studies', 'Vocational Studies and Preparation'] },
   { name: 'Office Admin And Customer', group: 'business', aliases: ['Office Administration and Customer Care'] },
-  { name: 'Hotel / Catering & Tourism', group: 'business', aliases: ['Hotel, Catering and Tourism'] },
+  { name: 'Hotel / Catering & Tourism', group: 'business', aliases: ['Hotel, Catering and Tourism', 'Hotel Catering and Tourism'] },
   // Humanities
-  { name: 'Social Education', group: 'humanities' },
+  { name: 'Social Education', group: 'humanities', lastWrittenExamYear: 2026 },
+  { name: 'SPHE', group: 'humanities', noWrittenExam: true, aliases: ['Social Personal and Health Education'] },
   { name: 'Religious Education', group: 'humanities', noWrittenExam: true },
   // Practical / vocational specialisms
   { name: 'Engineering', group: 'practical' },
   { name: 'Graphics And Construction Studies', group: 'practical', aliases: ['Wood Technology', 'Woodwork', 'Woodcraft'] },
-  { name: 'Agriculture / Horticulture', group: 'practical' },
-  { name: 'Childcare / Community Care', group: 'practical' },
+  { name: 'Agriculture / Horticulture', group: 'practical', aliases: ['Agriculture/ Horticulture', 'Agriculture/Horticulture'] },
+  { name: 'Childcare / Community Care', group: 'practical', aliases: ['Childcare/Community Care'] },
   { name: 'Hair And Beauty', group: 'practical' },
   { name: 'Active Leisure Studies', group: 'practical' },
   { name: 'Leisure and Recreation', group: 'practical', noWrittenExam: true },
   { name: 'Technology', group: 'practical' },
   // Creative
   { name: 'Crafts & Design', group: 'creative', aliases: ['Craft and Design'] },
-  { name: 'Arts Education', group: 'creative', noWrittenExam: true, aliases: ['Dance', 'Drama', 'Music', 'Visual Arts'] },
+  // Keep the old umbrella choice for saved profiles, alongside its official courses.
+  { name: 'Arts Education', group: 'creative', noWrittenExam: true },
+  { name: 'Dance', group: 'creative', noWrittenExam: true },
+  { name: 'Drama', group: 'creative', noWrittenExam: true },
+  { name: 'Music', group: 'creative', noWrittenExam: true },
+  { name: 'Visual Art', group: 'creative', noWrittenExam: true, aliases: ['Visual Arts', 'Art'] },
 ];
 
 const HIGHER_ONLY: Level[] = ['higher'];
@@ -218,7 +235,21 @@ export const LC_SUBJECTS: LCSubject[] = [
   { name: 'Art', group: 'creative' },
   { name: 'Music', group: 'creative' },
   { name: 'Drama, Film and Theatre Studies', group: 'creative', aliases: ['DFTS'] },
+  { name: 'SPHE', group: 'humanities', levels: ['common'], noWrittenExam: true, aliases: ['Social Personal and Health Education'] },
+  { name: 'Religious Education (non-exam)', group: 'humanities', levels: ['common'], noWrittenExam: true, aliases: ['Religious Education Non-examination Framework', 'Non-exam RE'] },
+  { name: 'Physical Education (non-exam)', group: 'practical', levels: ['common'], noWrittenExam: true, aliases: ['Physical Education Framework', 'PE Framework', 'Non-exam PE'] },
 ];
+
+// NCCA LCA addendum, September 2022: an LCE modern foreign language can be
+// taken in addition to the LCA language. Separate names preserve both courses
+// and their different assessments, including Higher-only non-curricular languages.
+// These choices record a student's course; school/SEC eligibility still applies.
+LCA_SUBJECTS.push(...LC_SUBJECTS.filter(subject => subject.group === 'languages'
+  && !['English', 'Irish', 'Latin', 'Ancient Greek', 'Hebrew Studies'].includes(subject.name))
+  .map(subject => ({ ...subject, name: `Leaving Cert ${subject.name}`,
+    establishedSubject: subject.name, levels: subject.levels ?? ['higher', 'ordinary'],
+    aliases: [`LCE ${subject.name}`, ...(subject.aliases ?? []).map(alias => `Leaving Cert ${alias}`)] } as LCSubject)));
+
 
 const DEFAULT_LC_LEVELS: Level[] = ['higher', 'ordinary'];
 
@@ -227,7 +258,7 @@ export function lcSubjectLevels(name: string): Level[] {
   return LC_SUBJECTS.find(subject => subject.name === name)?.levels ?? LCA_SUBJECTS.find(subject => subject.name === name)?.levels ?? DEFAULT_LC_LEVELS;
 }
 
-/** LCA courses use common level; the separately examined LC Maths keeps its own levels. */
+/** LCA courses use common level; separately examined LCE subjects keep their own levels. */
 export function lcaSubjectLevels(name: string): Level[] {
   return LCA_SUBJECTS.find(subject => subject.name === name)?.levels ?? ['common'];
 }
@@ -238,11 +269,12 @@ export const LEVEL_LABELS: Record<Level, string> = { higher: 'Higher', ordinary:
 export function subjectMatchesQuery(subject: LCSubject, query: string): boolean {
   const q = query.trim().toLocaleLowerCase();
   if (!q) return true;
-  return [subject.name, ...(subject.aliases ?? [])].some(name => name.toLocaleLowerCase().includes(q));
+  return [subject.name, subject.label ?? subject.name, ...(subject.aliases ?? [])].some(name => name.toLocaleLowerCase().includes(q));
 }
 
 /** One line for a subject whose level is fixed, or null when the student chooses. */
 export function fixedLevelNote(name: string): string | null {
+  if (LC_SUBJECTS.find(subject => subject.name === name)?.noWrittenExam) return 'Non-exam course';
   const levels = lcSubjectLevels(name);
   if (levels.length !== 1) return null;
   return levels[0] === 'common'
@@ -275,45 +307,83 @@ export const SUBJECT_GROUP_LABELS: Record<LCSubject['group'], string> = {
 // Technology (Wood)"; LC "DCG" vs JC "Graphics"). We never need to map
 // across — the student picks from one list based on their curriculum.
 
-export interface JCSubject {
-  name: string;
-  group: LCSubject['group'];
-  isMaths?: boolean;
+export interface JCSubject extends LCSubject {
   jcHasLevelChoice?: boolean; // true only for English / Irish / Mathematics
 }
 
 export const JC_SUBJECTS: JCSubject[] = [
-  // Languages
-  { name: 'English', group: 'languages', jcHasLevelChoice: true },
-  { name: 'Irish', group: 'languages', jcHasLevelChoice: true },
-  { name: 'French', group: 'languages' },
-  { name: 'German', group: 'languages' },
-  { name: 'Spanish', group: 'languages' },
-  { name: 'Italian', group: 'languages' },
-  // STEM
-  { name: 'Mathematics', group: 'stem', isMaths: true, jcHasLevelChoice: true },
-  { name: 'Science', group: 'stem' }, // single integrated subject at JC (not split into Biology/Chemistry/Physics)
-  // Business
-  { name: 'Business Studies', group: 'business' },
-  // Humanities
-  { name: 'History', group: 'humanities' },
-  { name: 'Geography', group: 'humanities' },
-  { name: 'CSPE', group: 'humanities' },        // Civic, Social and Political Education
-  { name: 'SPHE', group: 'humanities' },        // Social, Personal and Health Education
-  { name: 'Religious Education', group: 'humanities' },
-  { name: 'Classical Studies', group: 'humanities' },
-  { name: 'Latin', group: 'humanities' },
-  // Practical
-  { name: 'Home Economics', group: 'practical' },
-  { name: 'Materials Technology (Wood)', group: 'practical' },
-  { name: 'Metalwork', group: 'practical' },
-  { name: 'Graphics', group: 'practical' },
-  { name: 'Technology', group: 'practical' },
-  { name: 'Physical Education', group: 'practical' },
-  // Creative
-  { name: 'Art', group: 'creative' },
-  { name: 'Music', group: 'creative' },
+  { name: 'English', group: 'languages', jcHasLevelChoice: true, paperSubjectId: 'jc-english' },
+  { name: 'Irish', group: 'languages', jcHasLevelChoice: true, aliases: ['Gaeilge', 'Gaeilge T2', 'Irish T2'], paperSubjectId: 'jc-irish' },
+  { name: 'Irish T1', group: 'languages', jcHasLevelChoice: true, aliases: ['Gaeilge T1', 'Irish first language'], paperSubjectId: 'jc-irish-t1' },
+  { name: 'French', group: 'languages', paperSubjectId: 'jc-french' },
+  { name: 'German', group: 'languages', paperSubjectId: 'jc-german' },
+  { name: 'Spanish', group: 'languages', paperSubjectId: 'jc-spanish' },
+  { name: 'Italian', group: 'languages', paperSubjectId: 'jc-italian' },
+  { name: 'Mathematics', group: 'stem', isMaths: true, jcHasLevelChoice: true, aliases: ['Maths'], paperSubjectId: 'jc-mathematics' },
+  { name: 'Science', group: 'stem', paperSubjectId: 'jc-science' },
+  { name: 'Business Studies', group: 'business', paperSubjectId: 'jc-business-studies' },
+  { name: 'History', group: 'humanities', paperSubjectId: 'jc-history' },
+  { name: 'Geography', group: 'humanities', paperSubjectId: 'jc-geography' },
+  { name: 'Religious Education', group: 'humanities', aliases: ['RE', 'Religion'], paperSubjectId: 'jc-religious-education' },
+  { name: 'Jewish Studies', group: 'humanities', paperSubjectId: 'jc-jewish-studies' },
+  { name: 'Classical Studies', label: 'Classics', group: 'humanities', aliases: ['Classics'], paperSubjectId: 'jc-classics' },
+  // Latin is a route within Classics; retain the old saved choice and route it correctly.
+  { name: 'Latin', label: 'Classics (Latin)', group: 'humanities', aliases: ['Classics Latin'], paperSubjectId: 'jc-classics' },
+  { name: 'Home Economics', group: 'practical', aliases: ['Home Ec'], paperSubjectId: 'jc-home-economics' },
+  { name: 'Materials Technology (Wood)', label: 'Wood Technology', group: 'practical', aliases: ['Wood Technology', 'Woodwork'], paperSubjectId: 'jc-wood-technology' },
+  { name: 'Metalwork', label: 'Engineering', group: 'practical', aliases: ['Engineering'], paperSubjectId: 'jc-engineering' },
+  { name: 'Graphics', group: 'practical', paperSubjectId: 'jc-graphics' },
+  { name: 'Technology', label: 'Applied Technology', group: 'practical', aliases: ['Applied Technology'], paperSubjectId: 'jc-applied-technology' },
+  { name: 'Art', label: 'Visual Art', group: 'creative', aliases: ['Visual Art'], noWrittenExam: true, examGrades: true },
+  { name: 'Music', group: 'creative', paperSubjectId: 'jc-music' },
+  // Every NCCA-published short course. Assessment is not the written-exam band scale.
+  { name: 'CSPE', group: 'humanities', noWrittenExam: true, shortCourseLevel: 3, aliases: ['Civic Social and Political Education'] },
+  { name: 'SPHE', group: 'humanities', noWrittenExam: true, shortCourseLevel: 3, aliases: ['Social Personal and Health Education'] },
+  { name: 'Physical Education', group: 'practical', noWrittenExam: true, shortCourseLevel: 3, aliases: ['PE'] },
+  { name: 'Artistic Performance', group: 'creative', noWrittenExam: true, shortCourseLevel: 3 },
+  { name: 'Chinese Language and Culture', group: 'languages', noWrittenExam: true, shortCourseLevel: 3 },
+  { name: 'Coding', group: 'stem', noWrittenExam: true, shortCourseLevel: 3 },
+  { name: 'Digital Media Literacy', group: 'stem', noWrittenExam: true, shortCourseLevel: 3 },
+  { name: 'Philosophy', group: 'humanities', noWrittenExam: true, shortCourseLevel: 3 },
+  { name: 'A Personal Project: Caring for Animals (Level 2)', group: 'practical', noWrittenExam: true, shortCourseLevel: 2 },
+  { name: 'CSI: Exploring Forensic Science (Level 2)', group: 'stem', noWrittenExam: true, shortCourseLevel: 2 },
+  { name: 'Enterprise in Animation (Level 2)', group: 'creative', noWrittenExam: true, shortCourseLevel: 2 },
+  { name: 'History (Level 2)', group: 'humanities', noWrittenExam: true, shortCourseLevel: 2 },
+  { name: 'Around the world in eighty days (Level 1)', group: 'humanities', noWrittenExam: true, shortCourseLevel: 1 },
+  { name: 'Food glorious food (Level 1)', group: 'practical', noWrittenExam: true, shortCourseLevel: 1 },
+  { name: 'Keeping well, looking good, feeling great (Level 1)', group: 'practical', noWrittenExam: true, shortCourseLevel: 1 },
 ];
+
+export type SubjectProgramme = 'jc' | 'lca' | 'lc';
+export const subjectProgramme = (year?: YearGroup | null, curriculumLevel?: CurriculumLevel): SubjectProgramme =>
+  year === 'LCA1' || year === 'LCA2' ? 'lca'
+    : year === '1st' || year === '2nd' || year === '3rd' || (!year && curriculumLevel === 'junior') ? 'jc' : 'lc';
+export const catalogueForProgramme = (programme: SubjectProgramme): LCSubject[] =>
+  programme === 'jc' ? JC_SUBJECTS : programme === 'lca' ? LCA_SUBJECTS : LC_SUBJECTS;
+export const catalogueSubject = (programme: SubjectProgramme, name: string) => {
+  const key = name.toLocaleLowerCase();
+  const catalogue = catalogueForProgramme(programme);
+  return catalogue.find(subject => subject.name.toLocaleLowerCase() === key)
+    ?? catalogue.find(subject => [subject.label, ...(subject.aliases ?? [])].some(alias => alias?.toLocaleLowerCase() === key));
+};
+export const subjectHasWrittenExam = (subject: LCSubject, examYear?: number): boolean =>
+  !subject.noWrittenExam && !(examYear && subject.lastWrittenExamYear && examYear > subject.lastWrittenExamYear);
+export function subjectLevels(programme: SubjectProgramme, name: string): Level[] {
+  if (programme === 'jc') return JC_SUBJECTS.find(subject => subject.name === name)?.jcHasLevelChoice ? ['higher', 'ordinary'] : ['common'];
+  return programme === 'lca' ? lcaSubjectLevels(name) : lcSubjectLevels(name);
+}
+export function subjectUsesExamGrades(programme: SubjectProgramme, name: string): boolean {
+  const subject = catalogueSubject(programme, name);
+  if (subject?.noWrittenExam && !subject.examGrades) return false;
+  return programme !== 'lca' || Boolean(subject?.establishedSubject);
+}
+export function subjectAssessmentNote(programme: SubjectProgramme, name: string): string {
+  const subject = catalogueSubject(programme, name);
+  if (programme === 'lca' && !subject?.establishedSubject) return 'Common level · LCA credits';
+  if (subject?.shortCourseLevel) return `Level ${subject.shortCourseLevel} short course · No written exam`;
+  if (subject?.noWrittenExam) return 'Non-exam course';
+  return '';
+}
 
 // ─── Junior Cycle grading scale ────────────────────────────────────────────
 //
@@ -340,9 +410,10 @@ export const JC_BANDS: JCBand[] = [
 ];
 
 export const JC_BAND_RANGES: Record<JCBand, [number, number]> = {
-  'Distinction': [90, 100],
-  'Higher Merit': [75, 89],
-  'Merit': [55, 74],
+  // Department of Education, revised bands from the 2025 examinations.
+  'Distinction': [85, 100],
+  'Higher Merit': [70, 84],
+  'Merit': [55, 69],
   'Achieved': [40, 54],
   'Partially Achieved': [20, 39],
   'Not Graded': [0, 19],

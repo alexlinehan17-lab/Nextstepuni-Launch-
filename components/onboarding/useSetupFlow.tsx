@@ -134,7 +134,7 @@ export function useSetupFlow(
   const maxVision = junior ? 3 : 5;
   const subjectList = subjectsFor(draft.year);
   const gradeSubjects = draft.subjects.filter(name => requiresGradeSetup(draft.year, name));
-  const skipGrades = lca && gradeSubjects.length === 0;
+  const skipGrades = gradeSubjects.length === 0;
   const currentSubject =
     draft.gradeSubject && gradeSubjects.includes(draft.gradeSubject)
       ? draft.gradeSubject
@@ -154,7 +154,7 @@ export function useSetupFlow(
   const points = pointsFor(draft);
   const studyDays = DAYS_OF_WEEK.filter((day) => !draft.rest.includes(day));
   const route: SetupStep[] = transition
-    ? ["subjects", "grades", "north", "vision", "schedule", "summary"]
+    ? ["subjects", ...(skipGrades ? [] : ["grades" as const]), "north", "vision", "schedule", "summary"]
     : [
         "welcome",
         "year",
