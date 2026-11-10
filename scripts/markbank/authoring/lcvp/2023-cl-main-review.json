@@ -1,0 +1,1103 @@
+{
+  "schemaVersion": 1,
+  "year": 2023,
+  "level": "common",
+  "sitting": "main",
+  "language": "ev",
+  "status": "validated-source-reviewed; data-only-checkpoint; native-video-QA-pending",
+  "createdAt": "2026-11-10T14:41:09.819378+00:00",
+  "reviewedBy": "Codex /root/home_economics",
+  "sources": [
+    {
+      "kind": "exampapers",
+      "year": 2023,
+      "path": "paper-trail-corpus/exampapers/2023/LC462CLP000EV.pdf",
+      "fileid": "LC462CLP000EV.pdf",
+      "sha256": "b14f72edc63c2909a24bc0dc116c823cf8910ddb17e00eccf7afb1cbcf26b492",
+      "pages": 40
+    },
+    {
+      "kind": "markingschemes",
+      "year": 2023,
+      "path": "paper-trail-corpus/markingschemes/2023/LC462CLP000EV.pdf",
+      "fileid": "LC462CLP000EV.pdf",
+      "sha256": "6e8b6ebb225d2da4f49034a547c37310bc2b775772f81c7b663636508d5aaa67",
+      "pages": 24
+    },
+    {
+      "kind": "portfolio-markingscheme",
+      "year": 2023,
+      "path": "tmp/pdfs/lcvp-review/official-supplements/2023-LC462CLP044EV.pdf",
+      "fileid": "LC462CLP044EV.pdf",
+      "sha256": "efd814736f74804071eafbc07816ed6b012e1bd9f1de8f57aefeca905d5daf2b",
+      "pages": 2
+    }
+  ],
+  "visualSweep": {
+    "paper": "All 40 original pages viewed: cover1; COVID-adjusted instructions2; Career Investigation audiovisual instructions3; A4–8; entire Ballyfert case9; B10–12; ruled13; repeated C overview14–15; C1 16–18; C2 19–21; C3 22–24; C4 25–27; C5 28–30; C6 31–33; C7 34–36; extra work37–39; backcover40. No omitted continuation tasks; all overview prompts repeat later answer pages.",
+    "writtenScheme": "All 24 original pages viewed: cover1; source-use notice2; general marking principles3; A4–5 including explicit universal award for A6; B6–8 including both research-table columns and continuation lists; C1 9–10; C2 11–12; C3 13–14; C4 15–16; C5 17–18; C6 19; C7 20–21; blank22–23; backcover24.",
+    "portfolio": "Both separate portfolio pages viewed. Four core grids (CV40, three65-mark grids), core maximum170; four optional grids70each, anyONE optional70; separate maximum240, not extra written-paper tasks."
+  },
+  "evidence": "tmp/pdfs/lcvp-review/2023-main/paper-01..10, scheme-01..06, portfolio-01. All original pages viewed before parser or legacy-card inspection; paper-04..06 reopened after a truncated tool result, not falsely counted from that result.",
+  "manualOriginalLeaves": 43,
+  "manualSectionLeaves": {
+    "A": 8,
+    "B": 6,
+    "C": 29
+  },
+  "manualPricedTasks": 43,
+  "manualSectionTasks": {
+    "A": 8,
+    "B": 6,
+    "C": 29
+  },
+  "candidateWrittenMarks": 160,
+  "offeredPracticeMarks": 235,
+  "pricedTaskLedger": [
+    {
+      "section": "A",
+      "question": 1,
+      "part": null,
+      "marks": 1,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "A",
+      "question": 2,
+      "part": null,
+      "marks": 2,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "A",
+      "question": 3,
+      "part": null,
+      "marks": 3,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "A",
+      "question": 4,
+      "part": null,
+      "marks": 2,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "A",
+      "question": 5,
+      "part": null,
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "A",
+      "question": 6,
+      "part": null,
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "A",
+      "question": 7,
+      "part": null,
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "A",
+      "question": 8,
+      "part": null,
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "B",
+      "question": 1,
+      "part": null,
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "B",
+      "question": 2,
+      "part": "i",
+      "marks": 3,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "B",
+      "question": 2,
+      "part": "ii",
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "B",
+      "question": 3,
+      "part": "i",
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "B",
+      "question": 3,
+      "part": "ii",
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "B",
+      "question": 3,
+      "part": "iii",
+      "marks": 3,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 1,
+      "part": "a",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 1,
+      "part": "b",
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 1,
+      "part": "c",
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 1,
+      "part": "d",
+      "marks": 9,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 2,
+      "part": "a",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 2,
+      "part": "b",
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 2,
+      "part": "c",
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 2,
+      "part": "d",
+      "marks": 9,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 3,
+      "part": "a",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 3,
+      "part": "b",
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 3,
+      "part": "c",
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 3,
+      "part": "d",
+      "marks": 9,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 4,
+      "part": "a",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 4,
+      "part": "b",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 4,
+      "part": "c",
+      "marks": 8,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 4,
+      "part": "d",
+      "marks": 9,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 5,
+      "part": "a",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 5,
+      "part": "b",
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 5,
+      "part": "c(i)",
+      "marks": 3,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 5,
+      "part": "c(ii)",
+      "marks": 3,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 5,
+      "part": "d",
+      "marks": 9,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 6,
+      "part": "a",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 6,
+      "part": "b",
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 6,
+      "part": "c",
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 6,
+      "part": "d",
+      "marks": 9,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 7,
+      "part": "a",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 7,
+      "part": "b",
+      "marks": 7,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 7,
+      "part": "c",
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 7,
+      "part": "d",
+      "marks": 8,
+      "sourceLeaves": 1
+    }
+  ],
+  "taskBoundaryDecisions": {
+    "A6": "One complete task retained with six printed marks. The final scheme explicitly awards6 to ALL candidates because the question was positioned under Part2 rather than Part3. It also prints Three valid reasons beside2x3(0/3). Preserve the whole task, all eight illustrative reasons and literal historical universal-award notice; no answer-dependent grading or invented resolution of inconsistent quotas. Proposed confidence-only practice pending parent shared-contract review.",
+    "B2ii": "One6-mark task: three distinct point+expansion profiles2each, MUST contain one advantage, one disadvantage and one other of either kind. Complete pools10 advantages/7 disadvantages; no three unrestricted points or invented expansion.",
+    "B3i": "One6-mark task: TWO DIFFERENT research types, each type1+example1+advantage1. Preserve complete Primary/Field seven-example column and Secondary/Desk four examples plus etc.; any relevant advantage, no repetition. No invented model advantages or independent cards for example combinations.",
+    "B3ii": "One6-mark task: three areas other than those in original case;2each(1+1), NO marks for headings. Preserve all seven areas and matching expansion guidance.",
+    "C1d": "One9-mark task: three profiles3each(1+1+1), MUST include one business impact and one consumer impact plus one other; no repetitions. All seven business/six consumer pools retained.",
+    "C2d": "One9-mark task: THREE stages other than Forming. Fixed Storming, Norming, Performing profiles3each(name+two explanations). No fabricated fourth stage or optional combination.",
+    "C4c": "One8-mark task covering ALL FOUR named Ps. NO marks for headings; TWO valid applications for EACH P,1each. Complete original Product/Price/Place/Promotion models remain coherent for the chosen familiar business.",
+    "C4d": "One9-mark task: three method profiles, each method1+explanation1+reason-for-choosing1; NO repeated reasons.",
+    "C5c": "Two independently priced3-mark tasks: contract definition3x1 and key areas3x1. Printed paper prices parent6, scheme explicitly separates3+3.",
+    "C6a": "One4-mark task: TWO subject/application profiles, each subject1+how useful to understanding business1. No personal subject models supplied, none invented.",
+    "C7a": "One4-mark definition, four statements1each; entire original CSR paragraph retained, no artificial required phrase.",
+    "C7b": "One7-mark coherent enterprise/stakeholder response: enterprise1 and THREE impact profiles2each(statement+expansion). Preserve all seven stakeholder models and the original fast-food-restaurant example.",
+    "outerChoice": "SectionC anyFOUR ofSEVEN; each full question25. Retain all tasks, no four-question combinations. A/B compulsory. Overview14–15 duplicates are not additional leaves.",
+    "openChoices": "Business, local enterprise/location, subjects, visit and candidate experience are open prompts. Illustrative models are complete guidance, not separately multiplied cards."
+  },
+  "importantTariffs": {
+    "A": "A1QuantitySurveyor1; A2two methods1each from4; A3three career facts1each from6; A4two email points1each from5; A5two profiles2each(1+1) from4; A6universal6 and inconsistent printed quota; A7two reasons3each(1+1+1), clients/co-workers plus any relevant stakeholder; A8three benefits2each(1+1), seven models, no repeated expansions.",
+    "B": "B1three benefits2each(1+1),7models. B2i3x1,10models; B2ii6with compulsory advantage/disadvantage. B3i6two different research profiles; B3ii6three non-case areas/no heading marks; B3iii3one public-meeting reason+two expansions,6models.",
+    "C1": "a4two characteristics(1+1),9models; b6three supports(1+1),6models; c6three benefits(1+1),10models across2pages/no repeated expansions; d9three mixed business/consumer profiles(1+1+1),13models.",
+    "C2": "a4two duties(1+1),7models; b6three skills(1+1),9models; c6three teamwork benefits(1+1),7models; d9three fixed non-Forming stages(name+two explanations).",
+    "C3": "a4four areas1each,11models; b6three challenges(1+1),16models; c6three benefits(1+1),8models/no repeated expansions; d9three actions(1+1+1),8models.",
+    "C4": "a4two reasons(1+1),8models; b4two local-location reasons(1+1),6models; c8four Ps TWO applications each1+1 and no heading marks; d9three method/explanation/reason profiles,8models/no repeated reasons.",
+    "C5": "a4two differences(1+1),11models; b6three actions(1+1),14models; ci3explicit definition components1each; cii3keyareas1each,13models; d9three statement+two-expansion profiles,15models.",
+    "C6": "a4two subject/application pairs; b6three skill/expansion pairs,7models; c6three statement/expansion pairs,5models; d9three statement+two-expansion profiles,6models.",
+    "C7": "a4four statements1each from complete definition; b7enterprise1+three stakeholder impact/expansion pairs,7models; c6three benefits(1+1),7models; d8four inclusive actions(1+1),13models plus relevant alternative."
+  },
+  "media": {
+    "sourceTheme": "Career Investigation",
+    "verifiedScope": "Official listing, headers and prefix inventory; whole-file download and native playback not claimed. Exact year/sitting URL will be bound from saved authoritative inventory.",
+    "officialUrl": "https://www.examinations.ie/archive/exampapers/2023/LC462CLP031EV.mov",
+    "fullFileDownloaded": false
+  },
+  "numericSourceAmbiguities": [
+    {
+      "task": "A6",
+      "marks": 6,
+      "kind": "historical-universal-award-and-inconsistent-reason-quota",
+      "sourcePages": [
+        5
+      ],
+      "practiceTreatment": "Whole questionTotal6 confidence review confirmed by coordinator; universal-award runtime support remains a separate follow-up."
+    }
+  ],
+  "legacyAuditAfterManualSweep": {
+    "cards": 41,
+    "printedMarksRepresented": 224,
+    "missingWholeTasks": [
+      "C6(a)",
+      "C7(b)"
+    ],
+    "targetTasks": 43,
+    "targetOfferedMarks": 235,
+    "preservation": "Retain all41 old IDs and concepts; restore two omitted whole tasks. Canonical topic metadata independently corrected."
+  },
+  "selectionClassification": {
+    "paper2": "All three sections compulsory; any four of seven C questions, all source tasks preserved.",
+    "paper15and31": "BOTH means both separately chosen subjects require matching business applications inside the same4-mark task, not a finite printed choice.",
+    "paper9": "Both one-of phrases are narrative facts in the full case (one festival event; broadband as one key area), not candidate choice directives."
+  },
+  "targetedVisualReview": {
+    "pages": [
+      "scheme physical5",
+      "scheme physical7"
+    ],
+    "finding": "Complete original two-column ruled table viewed at full size. Primary/Field retains seven examples and Secondary/Desk four plus etc.; no example crosses categories. The full physical5 A6 universal-award notice and inconsistent residual quota were also viewed at full size."
+  },
+  "tasks": [
+    {
+      "id": "lcvp-2023-cl-a1",
+      "questionRef": "2023 CL Section A Q1",
+      "marks": 1,
+      "topicId": "lcvp-link-modules-0-2"
+    },
+    {
+      "id": "lcvp-2023-cl-a2",
+      "questionRef": "2023 CL Section A Q2",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-0-2"
+    },
+    {
+      "id": "lcvp-2023-cl-a3",
+      "questionRef": "2023 CL Section A Q3",
+      "marks": 3,
+      "topicId": "lcvp-link-modules-0-2"
+    },
+    {
+      "id": "lcvp-2023-cl-a4",
+      "questionRef": "2023 CL Section A Q4",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-0-1"
+    },
+    {
+      "id": "lcvp-2023-cl-a5",
+      "questionRef": "2023 CL Section A Q5",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-3"
+    },
+    {
+      "id": "lcvp-2023-cl-a6",
+      "questionRef": "2023 CL Section A Q6",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-3"
+    },
+    {
+      "id": "lcvp-2023-cl-a7",
+      "questionRef": "2023 CL Section A Q7",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2023-cl-a8",
+      "questionRef": "2023 CL Section A Q8",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2023-cl-b1",
+      "questionRef": "2023 CL Section B Q1",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2023-cl-b2i",
+      "questionRef": "2023 CL Section B Q2(i)",
+      "marks": 3,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2023-cl-b2ii",
+      "questionRef": "2023 CL Section B Q2(ii)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2023-cl-b3i",
+      "questionRef": "2023 CL Section B Q3(i)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2023-cl-b3ii",
+      "questionRef": "2023 CL Section B Q3(ii)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2023-cl-b3iii",
+      "questionRef": "2023 CL Section B Q3(iii)",
+      "marks": 3,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2023-cl-c1a",
+      "questionRef": "2023 CL Section C Q1(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2023-cl-c1b",
+      "questionRef": "2023 CL Section C Q1(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c1c",
+      "questionRef": "2023 CL Section C Q1(c)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c1d",
+      "questionRef": "2023 CL Section C Q1(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c2a",
+      "questionRef": "2023 CL Section C Q2(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2023-cl-c2b",
+      "questionRef": "2023 CL Section C Q2(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2023-cl-c2c",
+      "questionRef": "2023 CL Section C Q2(c)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2023-cl-c2d",
+      "questionRef": "2023 CL Section C Q2(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2023-cl-c3a",
+      "questionRef": "2023 CL Section C Q3(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c3b",
+      "questionRef": "2023 CL Section C Q3(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c3c",
+      "questionRef": "2023 CL Section C Q3(c)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c3d",
+      "questionRef": "2023 CL Section C Q3(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c4a",
+      "questionRef": "2023 CL Section C Q4(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c4b",
+      "questionRef": "2023 CL Section C Q4(b)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c4c",
+      "questionRef": "2023 CL Section C Q4(c)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c4d",
+      "questionRef": "2023 CL Section C Q4(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c5a",
+      "questionRef": "2023 CL Section C Q5(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2023-cl-c5b",
+      "questionRef": "2023 CL Section C Q5(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c5ci",
+      "questionRef": "2023 CL Section C Q5(c)(i)",
+      "marks": 3,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2023-cl-c5cii",
+      "questionRef": "2023 CL Section C Q5(c)(ii)",
+      "marks": 3,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2023-cl-c5d",
+      "questionRef": "2023 CL Section C Q5(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-0-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c6a",
+      "questionRef": "2023 CL Section C Q6(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c6b",
+      "questionRef": "2023 CL Section C Q6(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c6c",
+      "questionRef": "2023 CL Section C Q6(c)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c6d",
+      "questionRef": "2023 CL Section C Q6(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c7a",
+      "questionRef": "2023 CL Section C Q7(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c7b",
+      "questionRef": "2023 CL Section C Q7(b)",
+      "marks": 7,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2023-cl-c7c",
+      "questionRef": "2023 CL Section C Q7(c)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2023-cl-c7d",
+      "questionRef": "2023 CL Section C Q7(d)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-0-0"
+    }
+  ],
+  "legacyCorrections": {
+    "retainedStableIds": 41,
+    "addedIds": [
+      "lcvp-2023-cl-c6a",
+      "lcvp-2023-cl-c7b"
+    ],
+    "previousPrintedMarks": 224,
+    "correctedPrintedMarks": 235,
+    "canonicalTopics": "Reviewed against curriculumRegistry.ts; old metadata corrected without changing any old ID or concept. Original Atlas assessment-format anchors preserved."
+  },
+  "heldNumericScoring": [
+    {
+      "task": "A6",
+      "printedMarks": 6,
+      "reason": "Historical universal six-mark award for a misplaced question; not an answer-dependent practice allocation. Complete source notice and eight models retained unpriced.",
+      "practiceMode": "questionTotal confidence review; shared automatic historical-award support is a later root follow-up"
+    }
+  ],
+  "scoringScope": {
+    "printedOfferedMarks": 235,
+    "pricedTaskMarks": 229,
+    "heldWholeTaskMarks": 6,
+    "heldTasks": 1,
+    "distinction": "All 43 tasks from 43 original leaves are retained. A6 is a historical universal award, not an answer-dependent practice tariff. Source/task and numeric review completion do not imply native-video playback or whole-subject release readiness."
+  },
+  "validation": {
+    "completedAt": "2026-11-10T14:51:47.827197+00:00",
+    "sourceGate": {
+      "year": 2023,
+      "sitting": "main",
+      "sourceHashes": "verified",
+      "sourcePages": [
+        40,
+        24,
+        2
+      ],
+      "manualLeaves": 43,
+      "rawLeaves": 43,
+      "tasks": 43,
+      "marks": 235,
+      "explicitlyPricedPracticeMarks": 229,
+      "leafKeys": [
+        [
+          "A",
+          1,
+          null,
+          null
+        ],
+        [
+          "A",
+          2,
+          null,
+          null
+        ],
+        [
+          "A",
+          3,
+          null,
+          null
+        ],
+        [
+          "A",
+          4,
+          null,
+          null
+        ],
+        [
+          "A",
+          5,
+          null,
+          null
+        ],
+        [
+          "A",
+          6,
+          null,
+          null
+        ],
+        [
+          "A",
+          7,
+          null,
+          null
+        ],
+        [
+          "A",
+          8,
+          null,
+          null
+        ],
+        [
+          "B",
+          1,
+          null,
+          null
+        ],
+        [
+          "B",
+          2,
+          null,
+          "i"
+        ],
+        [
+          "B",
+          2,
+          null,
+          "ii"
+        ],
+        [
+          "B",
+          3,
+          null,
+          "i"
+        ],
+        [
+          "B",
+          3,
+          null,
+          "ii"
+        ],
+        [
+          "B",
+          3,
+          null,
+          "iii"
+        ],
+        [
+          "C",
+          1,
+          "a",
+          null
+        ],
+        [
+          "C",
+          1,
+          "b",
+          null
+        ],
+        [
+          "C",
+          1,
+          "c",
+          null
+        ],
+        [
+          "C",
+          1,
+          "d",
+          null
+        ],
+        [
+          "C",
+          2,
+          "a",
+          null
+        ],
+        [
+          "C",
+          2,
+          "b",
+          null
+        ],
+        [
+          "C",
+          2,
+          "c",
+          null
+        ],
+        [
+          "C",
+          2,
+          "d",
+          null
+        ],
+        [
+          "C",
+          3,
+          "a",
+          null
+        ],
+        [
+          "C",
+          3,
+          "b",
+          null
+        ],
+        [
+          "C",
+          3,
+          "c",
+          null
+        ],
+        [
+          "C",
+          3,
+          "d",
+          null
+        ],
+        [
+          "C",
+          4,
+          "a",
+          null
+        ],
+        [
+          "C",
+          4,
+          "b",
+          null
+        ],
+        [
+          "C",
+          4,
+          "c",
+          null
+        ],
+        [
+          "C",
+          4,
+          "d",
+          null
+        ],
+        [
+          "C",
+          5,
+          "a",
+          null
+        ],
+        [
+          "C",
+          5,
+          "b",
+          null
+        ],
+        [
+          "C",
+          5,
+          "c",
+          "i"
+        ],
+        [
+          "C",
+          5,
+          "c",
+          "ii"
+        ],
+        [
+          "C",
+          5,
+          "d",
+          null
+        ],
+        [
+          "C",
+          6,
+          "a",
+          null
+        ],
+        [
+          "C",
+          6,
+          "b",
+          null
+        ],
+        [
+          "C",
+          6,
+          "c",
+          null
+        ],
+        [
+          "C",
+          6,
+          "d",
+          null
+        ],
+        [
+          "C",
+          7,
+          "a",
+          null
+        ],
+        [
+          "C",
+          7,
+          "b",
+          null
+        ],
+        [
+          "C",
+          7,
+          "c",
+          null
+        ],
+        [
+          "C",
+          7,
+          "d",
+          null
+        ]
+      ],
+      "continuityFlags": [],
+      "heldPracticeScoring": [
+        {
+          "task": "A6",
+          "printedMarks": 6,
+          "reason": "Explicit all-candidates historical award, confidence-only practice; eight original models and full notice retained"
+        }
+      ],
+      "classifiedSelectionDirectives": {
+        "2": [
+          "Compulsory",
+          "Compulsory",
+          "Compulsory",
+          "any four"
+        ],
+        "9": [
+          "One of",
+          "one of"
+        ],
+        "15": [
+          "both"
+        ],
+        "31": [
+          "both"
+        ]
+      },
+      "originalVideo": "Official listing, headers and QuickTime prefix verified; no full-file hash claimed",
+      "nativePlayback": "pending root release QA",
+      "reconciliation": "Independent 66-page visual census predates parser/card inspection. All43 separately priced tasks preserved, including both3-mark C5(c) leaves. C6(a) and C7(b) restored without altering any41 prior identities. Historical universal award is separate from missing-task or release-completeness claims."
+    },
+    "regeneration": {
+      "regenerations": 1,
+      "filesChecked": 22,
+      "unrelatedCardsPreserved": 326,
+      "original2023IdsRetained": 41,
+      "addedCards": 2,
+      "nonLcvpRecordsUnchanged": true
+    },
+    "coverage": {
+      "previous": {
+        "cards": 367,
+        "contentHash": "4fa175325453cc6e",
+        "coveragePct": 52.7,
+        "covered": 377,
+        "excluded": 8,
+        "leaves": 730,
+        "open": 345,
+        "orphans": 0,
+        "papers": {
+          "count": 25,
+          "hash": "aec10355e05833e6"
+        },
+        "refsHash": "6a2cc0892f0cc12d"
+      },
+      "current": {
+        "cards": 369,
+        "contentHash": "f028a4adefd18140",
+        "coveragePct": 53.0,
+        "covered": 379,
+        "excluded": 8,
+        "leaves": 730,
+        "open": 343,
+        "orphans": 0,
+        "papers": {
+          "count": 25,
+          "hash": "aec10355e05833e6"
+        },
+        "refsHash": "66dee1849150c18a"
+      },
+      "targetSitting": {
+        "year": 2023,
+        "level": "cl",
+        "paper": null,
+        "leaves": 43,
+        "covered": 43,
+        "excluded": 0,
+        "open": []
+      },
+      "otherSubjectsUnchanged": true
+    },
+    "requiredAndTargetedTestsPassed": 242,
+    "matchingCoverageTestsPassed": 3,
+    "logs": [
+      {
+        "path": "tmp/lcvp-2023-source-gate.json",
+        "sha256": "bed6cd8f5c9d26f11732aed819e923422f84cce2d367f29a6a41c7bc2a91459a"
+      },
+      {
+        "path": "tmp/lcvp-2023-cardlint.json",
+        "sha256": "4e24ee3479012723679c6cd131eb012ecef4a7a5eec3b0887b431f4ab39d84c9"
+      },
+      {
+        "path": "tmp/lcvp-2023-ratchet.log",
+        "sha256": "3e9e12b227557510ef2c5cc53ec7d40130e26ac3c79afdfea48326259d444bf6"
+      },
+      {
+        "path": "tmp/lcvp-2023-regeneration.log",
+        "sha256": "f7d1bb28c1d7e24b6fe09cfa1bd81b3d3e4deba25d5a1668193ba9fc52e138df"
+      },
+      {
+        "path": "tmp/lcvp-2023-tests.log",
+        "sha256": "18e776056d40be52a1816e95e77d697d2303ea959b6b8c8e8552858c33dd6253"
+      },
+      {
+        "path": "tmp/lcvp-2023-coverage.log",
+        "sha256": "773edad094c30614211bdcabc1a411bc46d6bda427e7a358988abb1e092eb95d"
+      },
+      {
+        "path": "tmp/lcvp-2023-lint.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "checks": "Original PDF/media source gate; cardlint/reconcile; mandatory preservation/curriculum/deck and targeted 2023 contracts; LCVP coverage cases; scoped lint; one deterministic regeneration with other-subject/full/decoded and prior LCVP records unchanged.",
+    "cadence": "Data-only sitting under BRIEF.md cadence, confirmed by coordinator. Broad subject tests, app/scoped types and normal/PWA build passed at preceding 2025 checkpoint 837d0dbfc; next broad batch gate after about four data-only sittings, or earlier for shared runtime changes/new concerns. Browser/native playback QA belongs to coordinator.",
+    "releaseDistinction": "This is a reviewed written sitting, not a whole-subject or native-video release-readiness claim."
+  }
+}

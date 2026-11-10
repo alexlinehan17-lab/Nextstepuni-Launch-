@@ -2965,13 +2965,44 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-a1", topicId: "lcvp-link-modules-0-2", conceptId: "title-job-molly-interested",
+    id: "lcvp-2023-cl-a1", topicId: "lcvp-link-modules-0-2", conceptId: "a1",
     section: "A", questionRef: "2023 CL Section A Q1",
-    stem: "You will be shown a DVD with a Career Investigation as the theme.",
     questionText: "What is the title of the job that Molly is interested in?",
-    tariffModel: {"kind":"fixed","notation":"1 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 1,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Quantity Surveyor", marks: 1, contextNote: "1 mark for this answer.", openList: true },
+    { id: "job", kind: "point", verbatim: "Quantity Surveyor", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2023 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2023 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Career Investigation sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -2979,13 +3010,44 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-a2", topicId: "lcvp-link-modules-0-2", conceptId: "methods-research-molly-used",
+    id: "lcvp-2023-cl-a2", topicId: "lcvp-link-modules-0-2", conceptId: "a2",
     section: "A", questionRef: "2023 CL Section A Q2",
-    stem: "You will be shown a DVD with a Career Investigation as the theme.",
     questionText: "List the methods of research that Molly used.",
-    tariffModel: {"kind":"bestNofParts","notation":"2x1","answer":2,"ofParts":4,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "List the methods of research that Molly used. Two — any 2", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Online careers portal","Interviewed her uncle","Talked to her Careers Guidance teacher","Looking up prospectus"]} },
+    { id: "responses", kind: "anyN", verbatim: "List the methods of research that Molly used. Two valid methods 2 marks (2x1)", marks: 2, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":1,"options":["Online careers portal","Interviewed her uncle","Talked to her Careers Guidance teacher","Looking up prospectus"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2023 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2023 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Career Investigation sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -2993,13 +3055,44 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-a3", topicId: "lcvp-link-modules-0-2", conceptId: "did-molly-learn-about-career-while",
+    id: "lcvp-2023-cl-a3", topicId: "lcvp-link-modules-0-2", conceptId: "a3",
     section: "A", questionRef: "2023 CL Section A Q3",
-    stem: "You will be shown a DVD with a Career Investigation as the theme.",
     questionText: "What did Molly learn about the career while completing her career investigation?",
-    tariffModel: {"kind":"bestNofParts","notation":"3x1","answer":3,"ofParts":6,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Hours","Salary/Pay","Duties of the work","Negotiating costs","Promotion opportunities","Travel"]} },
+    { id: "responses", kind: "anyN", verbatim: "What did Molly learn about the career while completing her career investigation? Three valid answers 3 marks (3x1)", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":3,"perOption":1,"options":["Hours","Salary/Pay","Duties of the work","Negotiating costs","Promotion opportunities","Travel"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2023 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2023 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Career Investigation sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -3007,13 +3100,44 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-a4", topicId: "lcvp-link-modules-0-2", conceptId: "did-odhran-think-molly-s-email",
+    id: "lcvp-2023-cl-a4", topicId: "lcvp-link-modules-0-1", conceptId: "a4",
     section: "A", questionRef: "2023 CL Section A Q4",
-    stem: "You will be shown a DVD with a Career Investigation as the theme.",
     questionText: "Why did Odhran think that Molly’s email was well written?",
-    tariffModel: {"kind":"bestNofParts","notation":"2x1","answer":2,"ofParts":5,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Good layout/structure to her email","Introduces herself/provides context","Gets to the point quickly","Content - suitability/availability/follow-up request/previous experience","Contact details provided"]} },
+    { id: "responses", kind: "anyN", verbatim: "Why did Odhran think that Molly’s email was well written? 2 marks (2x1)", marks: 2, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":1,"options":["Good layout/structure to her email","Introduces herself/provides context","Gets to the point quickly","Content - suitability/availability/follow-up request/previous experience","Contact details provided"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2023 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2023 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Career Investigation sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -3021,13 +3145,44 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-a5", topicId: "lcvp-link-modules-0-2", conceptId: "does-odhran-believe-molly-suitable-candidate",
+    id: "lcvp-2023-cl-a5", topicId: "lcvp-link-modules-0-3", conceptId: "a5",
     section: "A", questionRef: "2023 CL Section A Q5",
-    stem: "You will be shown a DVD with a Career Investigation as the theme.",
     questionText: "Why does Odhran believe Molly is a suitable candidate for work experience at Meitheal Ltd?",
-    tariffModel: {"kind":"bestNofParts","notation":"2@2 (1+1)","answer":2,"ofParts":4,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Volunteers regularly with homeless charity/suits the companies’ ethos","Safe pass completed during TY/ allows her to go onto building sites","References given to contact/ can check suitability for the work experience","Investigated this career and knows what is involved so he knows she wants to learn about the job"]} },
+    { id: "responses", kind: "criterion", verbatim: "Why does Odhran believe Molly is a suitable candidate for work experience at Meitheal Ltd? 4 marks 2@2 (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Why does Odhran believe Molly is a suitable candidate for work experience at Meitheal Ltd? 4 marks 2@2 (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Volunteers regularly with homeless charity/suits the companies’ ethos | 2. Safe pass completed during TY/ allows her to go onto building sites | 3. References given to contact/ can check suitability for the work experience | 4. Investigated this career and knows what is involved so he knows she wants to learn about the job", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2023 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2023 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Career Investigation sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -3035,13 +3190,52 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-a6", topicId: "lcvp-link-modules-0-1", conceptId: "will-odhran-ensure-molly-s-work",
+    id: "lcvp-2023-cl-a6", topicId: "lcvp-link-modules-0-3", conceptId: "a6",
     section: "A", questionRef: "2023 CL Section A Q6",
-    stem: "You will be shown a DVD with a Career Investigation as the theme.",
     questionText: "How will Odhran ensure that Molly’s work placement is meaningful? Give reasons for your answers.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 3 marks (0/3)","answer":2,"ofParts":8,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 6, contextNote: "2 answers at 3 marks each; (0/3) — all or nothing on each answer.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Sending on Job spec/ Job description/what the work involves","Schedule for the week","Training given in a variety of tasks","Health and safety/PPE","Respecting employment legislation/no discrimination/treat the student as a full-time employee","Appoints a mentor to answer any questions she has/ provides feedback","Time to interview people in the job/gather information on career path","Provide a variety of tasks to broaden the experience"]} },
+    { id: "historical-award", kind: "point", verbatim: "Award 6 marks to all candidates due to the incorrect positioning of this question under the heading for Part 2 rather than for Part 3. 6 marks Three valid reasons 2 x 3 marks (0/3)", marks: null, contextNote: "The final scheme awarded SIX marks to ALL candidates for a misplaced question. This historical award is not an answer-dependent practice tariff. The same block also prints Three valid reasons beside 2 x 3 marks (0/3); neither is silently repaired. Compare the complete practice answer using confidence only. Automatic historical-award support is a separate follow-up; no default zero is called unassessed." },
+    { id: "model-1", kind: "point", verbatim: "Sending on Job spec/ Job description/what the work involves", marks: null },
+    { id: "model-2", kind: "point", verbatim: "Schedule for the week", marks: null },
+    { id: "model-3", kind: "point", verbatim: "Training given in a variety of tasks", marks: null },
+    { id: "model-4", kind: "point", verbatim: "Health and safety/PPE", marks: null },
+    { id: "model-5", kind: "point", verbatim: "Respecting employment legislation/no discrimination/treat the student as a full-time employee", marks: null },
+    { id: "model-6", kind: "point", verbatim: "Appoints a mentor to answer any questions she has/ provides feedback", marks: null },
+    { id: "model-7", kind: "point", verbatim: "Time to interview people in the job/gather information on career path", marks: null },
+    { id: "model-8", kind: "point", verbatim: "Provide a variety of tasks to broaden the experience", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2023 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2023 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Career Investigation sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -3049,13 +3243,44 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-a7", topicId: "lcvp-link-modules-0-2", conceptId: "reasons-interpersonal-skills-so-important-workplace",
+    id: "lcvp-2023-cl-a7", topicId: "lcvp-link-modules-0-0", conceptId: "a7",
     section: "A", questionRef: "2023 CL Section A Q7",
-    stem: "You will be shown a DVD with a Career Investigation as the theme.",
     questionText: "Explain two reasons why interpersonal skills are so important in the workplace.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 3 marks (1 +1 + 1)","answer":2,"ofParts":2,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 6, contextNote: "2 answers at 3 marks each; each split 1 +1 + 1.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Clients - Core part of the job when meeting clients so they will listen to your feedback Being able to negotiate and offer alternatives if something is not in budget is a big part of the job","Co Workers – as part of a team clear communication is essential so everyone is on the same page/problems can be aired and resolved quickly Any relevant stakeholder in the work place"]} },
+    { id: "responses", kind: "criterion", verbatim: "Explain two reasons why interpersonal skills are so important in the workplace. 6 marks 2 x 3 marks (1 +1 + 1) Two valid reasons", marks: 6, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Explain two reasons why interpersonal skills are so important in the workplace. 6 marks 2 x 3 marks (1 +1 + 1) Two valid reasons Each response follows the printed component ladder; do not count the same expansion twice. TWO reasons, each with three content components (1+1+1). Both full examples and the any-relevant-stakeholder allowance remain visible. Complete original guidance: 1. Clients - Core part of the job when meeting clients so they will listen to your feedback Being able to negotiate and offer alternatives if something is not in budget is a big part of the job | 2. Co Workers – as part of a team clear communication is essential so everyone is on the same page/problems can be aired and resolved quickly Any relevant stakeholder in the work place", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2023 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2023 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Career Investigation sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -3063,13 +3288,44 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-a8", topicId: "lcvp-link-modules-0-2", conceptId: "does-meitheal-ltd-benefit-having-diverse",
+    id: "lcvp-2023-cl-a8", topicId: "lcvp-link-modules-0-0", conceptId: "a8",
     section: "A", questionRef: "2023 CL Section A Q8",
-    stem: "You will be shown a DVD with a Career Investigation as the theme.",
     questionText: "How does Meitheal Ltd benefit from having a diverse workforce?",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "How does Meitheal Ltd benefit from a diverse workforce? Three — any 3", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Attract good workers who will stay with the company/reduces cost of training staff/less employee turnover","People from different backgrounds will have a different outlook and viewpoint/aids decision making","Employees share/learn from each other/ new up-to-date techniques and approaches/learn new skills/mentoring/languages /company providing the best possible service to its customers","Reputation could improve and benefit a business/Competitive advantage/better public image","Happier employees/more creative/more productive","Greater understanding of customers/improved customer satisfaction/customers will recommend the business to other potential customers","Different work attitudes will have a positive effect on others/ attract new customers"]} },
+    { id: "responses", kind: "criterion", verbatim: "How does Meitheal Ltd benefit from a diverse workforce? 6 marks Three valid answers/no repetition of expansions 3 x 2 marks (1+1) State + benefit", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: How does Meitheal Ltd benefit from a diverse workforce? 6 marks Three valid answers/no repetition of expansions 3 x 2 marks (1+1) State + benefit Each response follows the printed component ladder; do not count the same expansion twice. State plus benefit; no repeated expansions. Complete original guidance: 1. Attract good workers who will stay with the company/reduces cost of training staff/less employee turnover | 2. People from different backgrounds will have a different outlook and viewpoint/aids decision making | 3. Employees share/learn from each other/ new up-to-date techniques and approaches/learn new skills/mentoring/languages /company providing the best possible service to its customers | 4. Reputation could improve and benefit a business/Competitive advantage/better public image | 5. Happier employees/more creative/more productive | 6. Greater understanding of customers/improved customer satisfaction/customers will recommend the business to other potential customers | 7. Different work attitudes will have a positive effect on others/ attract new customers", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2023 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2023 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Career Investigation sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -3077,517 +3333,928 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-b1", topicId: "lcvp-link-modules-1-4", conceptId: "benefits-refugees-may-bring-town-ballyfert",
+    id: "lcvp-2023-cl-b1", topicId: "lcvp-link-modules-1-2", conceptId: "b1",
     section: "B", questionRef: "2023 CL Section B Q1",
-    stem: "Explain three benefits the refugees may bring to the town of Ballyfert.",
+    stem: "Ballyfert Ballyfert is a small, picturesque town with a population of approximately 1,200 people. It is situated on the popular Wild Atlantic Way tourist route and it is very dependent on its tourism trade. In recent years it has suffered from rural depopulation. A large number of young people have left to attend third level education in other parts of the country. Upon graduation they have moved to big cities to secure employment and have not returned to live in Ballyfert. The town is now hosting 320 refugees and the local people have extended a very warm welcome to them. The local community held a family festival to help increase visitors to the local area and integrate the refugees. One of the main events at the festival was an open‐air market, where local producers showcased their produce and the refugees performed cookery demonstrations of their country’s cuisine. Locals and tourists sampled the produce on show. The event was a great success. A local Community Development Committee has been in existence for a number of years. They noticed a change in the demographics of Ballyfert. They undertook some research which identified two key areas that needed to be focused on. Firstly, in order to make it more attractive for locals to stay, and to encourage people to relocate to Ballyfert, suitable work spaces would have to be available. The committee is aware that future trends in the workplace include more employees working remotely and support for new innovations. The Covid‐19 pandemic has shown the benefits of remote working and having a better work life balance. Secondly, the research also found that to support the integration of the refugees in the local community, a number of initiatives needed to be set up. Suggestions made included English language classes, Start Your Own Business programmes and also clothing and toy appeals. The Community Development Committee must plan continuously so that they can capitalise on their findings. To do this, they requested advice from the Western Development Commission on different types of remote working facilities and Innovation Centres. They were informed that there are numerous options available, for which suitable vacant properties have been identified. It also learned that one of the key areas to the success of the plan is broadband provision. The committee is relieved that Ballyfert has recently benefitted from the National Broadband Plan and the town now has access to high‐speed broadband. The Community Development Committee had a lot of work to do to put their plan into action, all suggestions made are now up and running. A public meeting was called by the chairperson to outline the plans to the community and everyone was invited to become involved. The Community Development Committee plan has now been in operation for six months. A recent evaluation of the plan showed that Ballyfert’s population is growing, bringing back life, activity, enterprise and innovation to the town. The capacity of the community is increasing, leading it to be more sustainable in the long term.",
     questionText: "Explain three benefits the refugees may bring to the town of Ballyfert.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Increase in population will benefit local schools/ other services","Spending in the local economy/spin off effects for local businesses","Multicultural/Diverse community/creating a more vibrant town","Increased social activity for the town / more vibrant clubs and society","Festival/showcase food/increase tourism","Employment/diverse workforce/broader talent pool/employment supporting refugees/Boosts the working age population/fills skills gap","Improves community spirit/tidy towns/restoration of buildings etc"]} },
+    { id: "responses", kind: "criterion", verbatim: "Explain three benefits the refugees may bring to the town of Ballyfert. Three valid points 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Explain three benefits the refugees may bring to the town of Ballyfert. Three valid points 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Increase in population will benefit local schools/ other services | 2. Spending in the local economy/spin off effects for local businesses | 3. Multicultural/Diverse community/creating a more vibrant town | 4. Increased social activity for the town / more vibrant clubs and society | 5. Festival/showcase food/increase tourism | 6. Employment/diverse workforce/broader talent pool/employment supporting refugees/Boosts the working age population/fills skills gap | 7. Improves community spirit/tidy towns/restoration of buildings etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Ballyfert — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2023 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      10
+                ],
+                "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-b2i", topicId: "lcvp-link-modules-1-2", conceptId: "ways-promote-volunteering-community",
+    id: "lcvp-2023-cl-b2i", topicId: "lcvp-link-modules-1-2", conceptId: "b2i",
     section: "B", questionRef: "2023 CL Section B Q2(i)",
+    stem: "Ballyfert Ballyfert is a small, picturesque town with a population of approximately 1,200 people. It is situated on the popular Wild Atlantic Way tourist route and it is very dependent on its tourism trade. In recent years it has suffered from rural depopulation. A large number of young people have left to attend third level education in other parts of the country. Upon graduation they have moved to big cities to secure employment and have not returned to live in Ballyfert. The town is now hosting 320 refugees and the local people have extended a very warm welcome to them. The local community held a family festival to help increase visitors to the local area and integrate the refugees. One of the main events at the festival was an open‐air market, where local producers showcased their produce and the refugees performed cookery demonstrations of their country’s cuisine. Locals and tourists sampled the produce on show. The event was a great success. A local Community Development Committee has been in existence for a number of years. They noticed a change in the demographics of Ballyfert. They undertook some research which identified two key areas that needed to be focused on. Firstly, in order to make it more attractive for locals to stay, and to encourage people to relocate to Ballyfert, suitable work spaces would have to be available. The committee is aware that future trends in the workplace include more employees working remotely and support for new innovations. The Covid‐19 pandemic has shown the benefits of remote working and having a better work life balance. Secondly, the research also found that to support the integration of the refugees in the local community, a number of initiatives needed to be set up. Suggestions made included English language classes, Start Your Own Business programmes and also clothing and toy appeals. The Community Development Committee must plan continuously so that they can capitalise on their findings. To do this, they requested advice from the Western Development Commission on different types of remote working facilities and Innovation Centres. They were informed that there are numerous options available, for which suitable vacant properties have been identified. It also learned that one of the key areas to the success of the plan is broadband provision. The committee is relieved that Ballyfert has recently benefitted from the National Broadband Plan and the town now has access to high‐speed broadband. The Community Development Committee had a lot of work to do to put their plan into action, all suggestions made are now up and running. A public meeting was called by the chairperson to outline the plans to the community and everyone was invited to become involved. The Community Development Committee plan has now been in operation for six months. A recent evaluation of the plan showed that Ballyfert’s population is growing, bringing back life, activity, enterprise and innovation to the town. The capacity of the community is increasing, leading it to be more sustainable in the long term.",
     questionText: "Identify three ways to promote volunteering in the community.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 1 mark","answer":3,"ofParts":10,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Word of mouth","Social media e.g. Instagram","Notices in shops/Local newspapers/Parish church bulletins/Flyers","Radio","Websites","Celebrity endorsement","Talks/information sessions","Visits to local schools","Stands","Community group"]} },
+    { id: "responses", kind: "anyN", verbatim: "Identify three ways to promote volunteering in the community. Three valid points 3 x 1 mark", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":3,"perOption":1,"options":["Word of mouth","Social media e.g. Instagram","Notices in shops/Local newspapers/Parish church bulletins/Flyers","Radio","Websites","Celebrity endorsement","Talks/information sessions","Visits to local schools","Stands","Community group"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Ballyfert — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2023 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-b2ii", topicId: "lcvp-link-modules-0-0", conceptId: "advantages-disadvantages-remote-working-employee",
+    id: "lcvp-2023-cl-b2ii", topicId: "lcvp-link-modules-0-0", conceptId: "b2ii",
     section: "B", questionRef: "2023 CL Section B Q2(ii)",
+    stem: "Ballyfert Ballyfert is a small, picturesque town with a population of approximately 1,200 people. It is situated on the popular Wild Atlantic Way tourist route and it is very dependent on its tourism trade. In recent years it has suffered from rural depopulation. A large number of young people have left to attend third level education in other parts of the country. Upon graduation they have moved to big cities to secure employment and have not returned to live in Ballyfert. The town is now hosting 320 refugees and the local people have extended a very warm welcome to them. The local community held a family festival to help increase visitors to the local area and integrate the refugees. One of the main events at the festival was an open‐air market, where local producers showcased their produce and the refugees performed cookery demonstrations of their country’s cuisine. Locals and tourists sampled the produce on show. The event was a great success. A local Community Development Committee has been in existence for a number of years. They noticed a change in the demographics of Ballyfert. They undertook some research which identified two key areas that needed to be focused on. Firstly, in order to make it more attractive for locals to stay, and to encourage people to relocate to Ballyfert, suitable work spaces would have to be available. The committee is aware that future trends in the workplace include more employees working remotely and support for new innovations. The Covid‐19 pandemic has shown the benefits of remote working and having a better work life balance. Secondly, the research also found that to support the integration of the refugees in the local community, a number of initiatives needed to be set up. Suggestions made included English language classes, Start Your Own Business programmes and also clothing and toy appeals. The Community Development Committee must plan continuously so that they can capitalise on their findings. To do this, they requested advice from the Western Development Commission on different types of remote working facilities and Innovation Centres. They were informed that there are numerous options available, for which suitable vacant properties have been identified. It also learned that one of the key areas to the success of the plan is broadband provision. The committee is relieved that Ballyfert has recently benefitted from the National Broadband Plan and the town now has access to high‐speed broadband. The Community Development Committee had a lot of work to do to put their plan into action, all suggestions made are now up and running. A public meeting was called by the chairperson to outline the plans to the community and everyone was invited to become involved. The Community Development Committee plan has now been in operation for six months. A recent evaluation of the plan showed that Ballyfert’s population is growing, bringing back life, activity, enterprise and innovation to the town. The capacity of the community is increasing, leading it to be more sustainable in the long term.",
     questionText: "Outline the advantages and the disadvantages of remote working for an employee.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1 + 1)","answer":3,"ofParts":10,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Less time commuting","Better work life balance/spend more time with family/wear comfortable clothes","More time to engage in exercise/mindfulness/hobbies/eat healthier","Cost savings/travel cost/lunch/child care","Flexibility due to availability of working from anywhere/may choose their own working hours","Less exposure to illness/time to recover from illness/less sick days","May be able to buy their own home due to ability of purchasing in an affordable area","More productive/fewer disruptions/Better creativity when workers are relaxed and under less pressure","May be able to create your own custom-built work environment/ good ergonomic","Avoid office politics/employees are happier/better morale"]} },
+    { id: "first-category", kind: "criterion", verbatim: "Advantages", marks: 2, contextNote: "THREE different responses: one from EACH required category, then one other from EITHER category. No repetition. Complete original pools: Advantages 1. Less time commuting 2. Better work life balance/spend more time with family/wear comfortable clothes 3. More time to engage in exercise/mindfulness/hobbies/eat healthier 4. Cost savings/travel cost/lunch/child care 5. Flexibility due to availability of working from anywhere/may choose their own working hours 6. Less exposure to illness/time to recover from illness/less sick days 7. May be able to buy their own home due to ability of purchasing in an affordable area 8. More productive/fewer disruptions/Better creativity when workers are relaxed and under less pressure 9. May be able to create your own custom-built work environment/ good ergonomic 10. Avoid office politics/employees are happier/better morale | Disadvantages 1. Cost of Power (light, heat, charging of equipment) 2. Overworked employee/ no breaks/out of hours contact/available 24/7 3. Unhappy employee due to isolation/no help/disconnection from fellow employees 4. Lack of control/poor connectivity to broadband/have to sort out technology yourself 5. Distractions at home which they would not have at work 6. Increased need for online meetings due to lack of informal in-house meeting 7. Bad for your health/ posture/eye strain/too much screen time", permittedMarks: [0,1,2] },
+    { id: "second-category", kind: "criterion", verbatim: "Disadvantages", marks: 2, contextNote: "Required second category; it cannot be replaced by an extra response from the first category.", permittedMarks: [0,1,2] },
+    { id: "other", kind: "criterion", verbatim: "one other", marks: 2, contextNote: "ONE further distinct response from either complete pool; do not repeat a point already claimed.", permittedMarks: [0,1,2] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Ballyfert — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2023 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-b3i", topicId: "lcvp-link-modules-0-1", conceptId: "different-types-research-may-have-been",
+    id: "lcvp-2023-cl-b3i", topicId: "lcvp-link-modules-1-3", conceptId: "b3i",
     section: "B", questionRef: "2023 CL Section B Q3(i)",
+    stem: "Ballyfert Ballyfert is a small, picturesque town with a population of approximately 1,200 people. It is situated on the popular Wild Atlantic Way tourist route and it is very dependent on its tourism trade. In recent years it has suffered from rural depopulation. A large number of young people have left to attend third level education in other parts of the country. Upon graduation they have moved to big cities to secure employment and have not returned to live in Ballyfert. The town is now hosting 320 refugees and the local people have extended a very warm welcome to them. The local community held a family festival to help increase visitors to the local area and integrate the refugees. One of the main events at the festival was an open‐air market, where local producers showcased their produce and the refugees performed cookery demonstrations of their country’s cuisine. Locals and tourists sampled the produce on show. The event was a great success. A local Community Development Committee has been in existence for a number of years. They noticed a change in the demographics of Ballyfert. They undertook some research which identified two key areas that needed to be focused on. Firstly, in order to make it more attractive for locals to stay, and to encourage people to relocate to Ballyfert, suitable work spaces would have to be available. The committee is aware that future trends in the workplace include more employees working remotely and support for new innovations. The Covid‐19 pandemic has shown the benefits of remote working and having a better work life balance. Secondly, the research also found that to support the integration of the refugees in the local community, a number of initiatives needed to be set up. Suggestions made included English language classes, Start Your Own Business programmes and also clothing and toy appeals. The Community Development Committee must plan continuously so that they can capitalise on their findings. To do this, they requested advice from the Western Development Commission on different types of remote working facilities and Innovation Centres. They were informed that there are numerous options available, for which suitable vacant properties have been identified. It also learned that one of the key areas to the success of the plan is broadband provision. The committee is relieved that Ballyfert has recently benefitted from the National Broadband Plan and the town now has access to high‐speed broadband. The Community Development Committee had a lot of work to do to put their plan into action, all suggestions made are now up and running. A public meeting was called by the chairperson to outline the plans to the community and everyone was invited to become involved. The Community Development Committee plan has now been in operation for six months. A recent evaluation of the plan showed that Ballyfert’s population is growing, bringing back life, activity, enterprise and innovation to the town. The capacity of the community is increasing, leading it to be more sustainable in the long term.",
     questionText: "Identify two different types of research that may have been used by the Community Development Committee and give an example of each. Give an advantage of each method.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 3 mark (1+1+1)","answer":2,"ofParts":11,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 6, contextNote: "2 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Survey/questionnaire","Publications/census","Face to face interviews","Internet","Focus groups","Case studies","Suggestion boxes","Press releases","Visit to other locations/observation etc","Telephone interviews","Postal surveys Any relevant advantage – no repetition"]} },
+    { id: "research-1", kind: "criterion", verbatim: "Primary/Field", marks: 3, contextNote: "TWO DIFFERENT types of research are required. This profile: type 1 + matching example 1 + relevant advantage 1. Do not repeat the advantage. Complete original example pool: Survey/questionnaire | Face to face interviews | Focus groups | Suggestion boxes | Visit to other locations/observation | Telephone interviews | Postal surveys. The source gives no completed model advantage; none is invented.", permittedMarks: [0,1,2,3], parts: [{"id":"type","verbatim":"type","marks":1,"permittedMarks":[0,1]},{"id":"example","verbatim":"example","marks":1,"permittedMarks":[0,1]},{"id":"advantage","verbatim":"advantage","marks":1,"permittedMarks":[0,1]}] },
+    { id: "research-2", kind: "criterion", verbatim: "Secondary/Desk", marks: 3, contextNote: "TWO DIFFERENT types of research are required. This profile: type 1 + matching example 1 + relevant advantage 1. Do not repeat the advantage. Complete original example pool: Publications/census | Internet | Case studies | Press releases etc.. The source gives no completed model advantage; none is invented.", permittedMarks: [0,1,2,3], parts: [{"id":"type","verbatim":"type","marks":1,"permittedMarks":[0,1]},{"id":"example","verbatim":"example","marks":1,"permittedMarks":[0,1]},{"id":"advantage","verbatim":"advantage","marks":1,"permittedMarks":[0,1]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Ballyfert — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2023 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-b3ii", topicId: "lcvp-link-modules-1-3", conceptId: "committee-had-lot-work-get-their",
+    id: "lcvp-2023-cl-b3ii", topicId: "lcvp-link-modules-1-3", conceptId: "b3ii",
     section: "B", questionRef: "2023 CL Section B Q3(ii)",
+    stem: "Ballyfert Ballyfert is a small, picturesque town with a population of approximately 1,200 people. It is situated on the popular Wild Atlantic Way tourist route and it is very dependent on its tourism trade. In recent years it has suffered from rural depopulation. A large number of young people have left to attend third level education in other parts of the country. Upon graduation they have moved to big cities to secure employment and have not returned to live in Ballyfert. The town is now hosting 320 refugees and the local people have extended a very warm welcome to them. The local community held a family festival to help increase visitors to the local area and integrate the refugees. One of the main events at the festival was an open‐air market, where local producers showcased their produce and the refugees performed cookery demonstrations of their country’s cuisine. Locals and tourists sampled the produce on show. The event was a great success. A local Community Development Committee has been in existence for a number of years. They noticed a change in the demographics of Ballyfert. They undertook some research which identified two key areas that needed to be focused on. Firstly, in order to make it more attractive for locals to stay, and to encourage people to relocate to Ballyfert, suitable work spaces would have to be available. The committee is aware that future trends in the workplace include more employees working remotely and support for new innovations. The Covid‐19 pandemic has shown the benefits of remote working and having a better work life balance. Secondly, the research also found that to support the integration of the refugees in the local community, a number of initiatives needed to be set up. Suggestions made included English language classes, Start Your Own Business programmes and also clothing and toy appeals. The Community Development Committee must plan continuously so that they can capitalise on their findings. To do this, they requested advice from the Western Development Commission on different types of remote working facilities and Innovation Centres. They were informed that there are numerous options available, for which suitable vacant properties have been identified. It also learned that one of the key areas to the success of the plan is broadband provision. The committee is relieved that Ballyfert has recently benefitted from the National Broadband Plan and the town now has access to high‐speed broadband. The Community Development Committee had a lot of work to do to put their plan into action, all suggestions made are now up and running. A public meeting was called by the chairperson to outline the plans to the community and everyone was invited to become involved. The Community Development Committee plan has now been in operation for six months. A recent evaluation of the plan showed that Ballyfert’s population is growing, bringing back life, activity, enterprise and innovation to the town. The capacity of the community is increasing, leading it to be more sustainable in the long term.",
     questionText: "The committee had a lot of work to do to get their plans up and running. Describe three key areas, other than those already mentioned in the case study, that the committee would have considered.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 (1 + 1)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Costs – to know how much is needed to set up/budgeting/cash flow forecast/price to charge","Funding – sources of finance/loans/grants","Advertising","Legalities – zoning issues, planning permission, safety statement, employee contracts, business formation/Insurance/Health and Safety","Location/ Availability of land/building/approach local property owner","Staffing/Personnel/HR - how many people will be required to run the facility/classes etc","Infrastructure/facilities – road and public transport/car parking/provision of housing, shops, schools, financial services, environmental, recreation and cultural facilities"]} },
+    { id: "responses", kind: "criterion", verbatim: "The committee had a lot of work to do to get their plans up and running. Describe three key areas, other than those mentioned in the case study, that the committee would have considered. Three valid areas 3 x 2 (1 + 1) mark No marks for headings", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: The committee had a lot of work to do to get their plans up and running. Describe three key areas, other than those mentioned in the case study, that the committee would have considered. Three valid areas 3 x 2 (1 + 1) mark No marks for headings Each response follows the printed component ladder; do not count the same expansion twice. No marks for headings. Each credited response needs valid content; areas already mentioned in the complete case are excluded by the original question. Complete original guidance: 1. Costs – to know how much is needed to set up/budgeting/cash flow forecast/price to charge | 2. Funding – sources of finance/loans/grants | 3. Advertising | 4. Legalities – zoning issues, planning permission, safety statement, employee contracts, business formation/Insurance/Health and Safety | 5. Location/ Availability of land/building/approach local property owner | 6. Staffing/Personnel/HR - how many people will be required to run the facility/classes etc. | 7. Infrastructure/facilities – road and public transport/car parking/provision of housing, shops, schools, financial services, environmental, recreation and cultural facilities", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Ballyfert — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2023 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-b3iii", topicId: "lcvp-link-modules-1-3", conceptId: "opinion-important-community-development-committee-hold",
+    id: "lcvp-2023-cl-b3iii", topicId: "lcvp-link-modules-1-3", conceptId: "b3iii",
     section: "B", questionRef: "2023 CL Section B Q3(iii)",
+    stem: "Ballyfert Ballyfert is a small, picturesque town with a population of approximately 1,200 people. It is situated on the popular Wild Atlantic Way tourist route and it is very dependent on its tourism trade. In recent years it has suffered from rural depopulation. A large number of young people have left to attend third level education in other parts of the country. Upon graduation they have moved to big cities to secure employment and have not returned to live in Ballyfert. The town is now hosting 320 refugees and the local people have extended a very warm welcome to them. The local community held a family festival to help increase visitors to the local area and integrate the refugees. One of the main events at the festival was an open‐air market, where local producers showcased their produce and the refugees performed cookery demonstrations of their country’s cuisine. Locals and tourists sampled the produce on show. The event was a great success. A local Community Development Committee has been in existence for a number of years. They noticed a change in the demographics of Ballyfert. They undertook some research which identified two key areas that needed to be focused on. Firstly, in order to make it more attractive for locals to stay, and to encourage people to relocate to Ballyfert, suitable work spaces would have to be available. The committee is aware that future trends in the workplace include more employees working remotely and support for new innovations. The Covid‐19 pandemic has shown the benefits of remote working and having a better work life balance. Secondly, the research also found that to support the integration of the refugees in the local community, a number of initiatives needed to be set up. Suggestions made included English language classes, Start Your Own Business programmes and also clothing and toy appeals. The Community Development Committee must plan continuously so that they can capitalise on their findings. To do this, they requested advice from the Western Development Commission on different types of remote working facilities and Innovation Centres. They were informed that there are numerous options available, for which suitable vacant properties have been identified. It also learned that one of the key areas to the success of the plan is broadband provision. The committee is relieved that Ballyfert has recently benefitted from the National Broadband Plan and the town now has access to high‐speed broadband. The Community Development Committee had a lot of work to do to put their plan into action, all suggestions made are now up and running. A public meeting was called by the chairperson to outline the plans to the community and everyone was invited to become involved. The Community Development Committee plan has now been in operation for six months. A recent evaluation of the plan showed that Ballyfert’s population is growing, bringing back life, activity, enterprise and innovation to the town. The capacity of the community is increasing, leading it to be more sustainable in the long term.",
     questionText: "Why in your opinion was it important for the Community Development Committee to hold a public meeting? Justify your answer.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 3 marks (1 +1 + 1)","answer":1,"ofParts":6,"perPart":3}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 1 of the answers the scheme states", marks: 3, contextNote: "1 answer at 3 marks each; each split 1 +1 + 1.", openList: true, group: {"claimMax":1,"perOption":3,"options":["To inform locals of the CDC plans/its existence/the hub/information sharing/create awareness of an issue or of a proposal/potential impact","Allows for public discussion/chance for participants to voice concerns/get clarification/address concerns/issues/ explore alternative solutions and build consensus","Get ideas from the local community/Brainstorm","Get volunteers/assess to the different skill sets in the community","Ownership by all/builds a feeling of community/more likely to support the plan","To try get funding/sponsorship/donations from local people / business"]} },
+    { id: "responses", kind: "criterion", verbatim: "Why in your opinion was it important for the Community Development Committee to hold a public meeting? Justify your answer. 1 x 3 marks (1 +1 + 1) Statement & two expansions", marks: 3, contextNote: "Choose any 1 distinct responses across the full pool. Original allocation: Why in your opinion was it important for the Community Development Committee to hold a public meeting? Justify your answer. 1 x 3 marks (1 +1 + 1) Statement & two expansions Each response follows the printed component ladder; do not count the same expansion twice. ONE statement and TWO matching expansions. Complete original guidance: 1. To inform locals of the CDC plans/its existence/the hub/information sharing/create awareness of an issue or of a proposal/potential impact | 2. Allows for public discussion/chance for participants to voice concerns/get clarification/address concerns/issues/ explore alternative solutions and build consensus | 3. Get ideas from the local community/Brainstorm | 4. Get volunteers/assess to the different skill sets in the community | 5. Ownership by all/builds a feeling of community/more likely to support the plan | 6. To try get funding/sponsorship/donations from local people / business", permittedMarks: [0,1,2,3] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Ballyfert — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2023 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c1a", topicId: "lcvp-link-modules-1-0", conceptId: "characteristics-entrepreneur",
+    id: "lcvp-2023-cl-c1a", topicId: "lcvp-link-modules-1-0", conceptId: "c1a",
     section: "C", questionRef: "2023 CL Section C Q1(a)",
     stem: "Entrepreneurs can encourage the Irish economy to grow and expand.",
     questionText: "Outline two characteristics of an entrepreneur.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks (1+1)","answer":2,"ofParts":9,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Risk- taker - willing to take a chance even if there is a risk of failure; personal risk (damage to reputation/self - esteem if business fails); financial risk (losing money invested in business)","Innovative – creative; able to come up with new ideas; think outside the box; inventive","Hardworking – willing to put in lots of time and effort to make the business a success","Communicator – can talk to others; listen to staff etc.; get his/her point across so action is taken","Future focused – thinking about the future of the business; future plans for the business; setting goals and ways to achieve them","Motivated – willing to make the business successful; a drive to achieve","Determined – having reached a decision he/she are resolved to complete it","Decisive – can weigh up a situation (pros and cons) and come up with the best solution for the business; is resolute about decisions; can make decisions in a timely manner so as to not miss out on opportunities","Self-confident - belief in him/herself and his/her ability to make the business successful; confidence in the product/service offered List is not exhaustive"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline two characteristics of an entrepreneur. 2 x 2 marks (1+1) Name & Explain", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Outline two characteristics of an entrepreneur. 2 x 2 marks (1+1) Name & Explain Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Risk- taker - willing to take a chance even if there is a risk of failure; personal risk (damage to reputation/self - esteem if business fails); financial risk (losing money invested in business) | 2. Innovative – creative; able to come up with new ideas; think outside the box; inventive | 3. Hardworking – willing to put in lots of time and effort to make the business a success | 4. Communicator – can talk to others; listen to staff etc.; get his/her point across so action is taken | 5. Future focused – thinking about the future of the business; future plans for the business; setting goals and ways to achieve them | 6. Motivated – willing to make the business successful; a drive to achieve | 7. Determined – having reached a decision he/she are resolved to complete it | 8. Decisive – can weigh up a situation (pros and cons) and come up with the best solution for the business; is resolute about decisions; can make decisions in a timely manner so as to not miss out on opportunities | 9. Self-confident - belief in him/herself and his/her ability to make the business successful; confidence in the product/service offered List is not exhaustive", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c1b", topicId: "lcvp-link-modules-1-1", conceptId: "supports-available-start-up-businesses-local",
+    id: "lcvp-2023-cl-c1b", topicId: "lcvp-link-modules-1-1", conceptId: "c1b",
     section: "C", questionRef: "2023 CL Section C Q1(b)",
     stem: "Entrepreneurs can encourage the Irish economy to grow and expand.",
     questionText: "Describe the supports available to start‐up businesses from a Local Enterprise Office (LEO).",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1 + 1)","answer":3,"ofParts":6,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Mentoring services","Gives advice","Start your own business course/management development courses","Provide training courses/ bookkeeping / H&S/ IT etc","Grants for feasibility studies","Capital grants for business start-up/business expansion/ trading online voucher"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe the supports available to start-up businesses from a Local Enterprise Office (LEO). 3 x 2 marks (1 + 1) Three valid supports", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe the supports available to start-up businesses from a Local Enterprise Office (LEO). 3 x 2 marks (1 + 1) Three valid supports Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Mentoring services | 2. Gives advice | 3. Start your own business course/management development courses | 4. Provide training courses/ bookkeeping / H&S/ IT etc. | 5. Grants for feasibility studies | 6. Capital grants for business start-up/business expansion/ trading online voucher", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c1c", topicId: "lcvp-link-modules-0-3", conceptId: "benefits-entrepreneurs-can-bring-local-economy",
+    id: "lcvp-2023-cl-c1c", topicId: "lcvp-link-modules-1-1", conceptId: "c1c",
     section: "C", questionRef: "2023 CL Section C Q1(c)",
     stem: "Entrepreneurs can encourage the Irish economy to grow and expand.",
     questionText: "Outline the benefits that entrepreneurs can bring to the local economy.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":10,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Employment/ Improved standard of living","Tax Revenue – e.g. commercial rates","Improves local economy/community spirit","Competition/Greater choice of goods and services","Spin-off business- e.g. construction of housing for employees","Encourage an enterprise culture – encourage others to set up businesses","Sponsorship of local teams, events/invest in community projects","Preparation for employment/work experience","May lead to improved infrastructure in local area","Provides a product or service to the local community"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline the benefits that entrepreneurs can bring to the local economy. No repetitions of expansions 6 marks 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Outline the benefits that entrepreneurs can bring to the local economy. No repetitions of expansions 6 marks 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Employment/ Improved standard of living | 2. Tax Revenue – e.g. commercial rates | 3. Improves local economy/community spirit | 4. Competition/Greater choice of goods and services | 5. Spin-off business- e.g. construction of housing for employees | 6. Encourage an enterprise culture – encourage others to set up businesses | 7. Sponsorship of local teams, events/invest in community projects | 8. Preparation for employment/work experience | 9. May lead to improved infrastructure in local area | 10. Provides a product or service to the local community No repetition of expansions.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c1d", topicId: "lcvp-link-modules-1-0", conceptId: "assess-implications-withdrawal-united-kingdom-european",
+    id: "lcvp-2023-cl-c1d", topicId: "lcvp-link-modules-1-1", conceptId: "c1d",
     section: "C", questionRef: "2023 CL Section C Q1(d)",
     stem: "Entrepreneurs can encourage the Irish economy to grow and expand.",
     questionText: "Assess the implications the withdrawal of the United Kingdom from the European Union (Brexit) has for businesses and consumers in Ireland.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 3 marks (1+ 1 + 1)","answer":3,"ofParts":7,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+ 1 + 1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Irelands largest import/export market has left the EU, some Irish companies have lost customers","Customs duties and tarrifs which has led to higher import/export costs","Delays in supply chain/have to source products elsewhere which can be more expensive","Border checks on goods and extra paperwork and permits/ delays","Company and consumer laws are different in the UK","Irish businesses importing/exporting into and out if the UK need to register for custom duties","Irish businesses have less competition with UK firms/ people are shopping locally/increase in"]} },
+    { id: "first-category", kind: "criterion", verbatim: "Business", marks: 3, contextNote: "THREE different responses: one from EACH required category, then one other from EITHER category. No repetition. Complete original pools: Business 1. Irelands largest import/export market has left the EU, some Irish companies have lost customers 2. Customs duties and tarrifs which has led to higher import/export costs 3. Delays in supply chain/have to source products elsewhere which can be more expensive 4. Border checks on goods and extra paperwork and permits/ delays 5. Company and consumer laws are different in the UK 6. Irish businesses importing/exporting into and out if the UK need to register for custom duties 7. Irish businesses have less competition with UK firms/ people are shopping locally/increase in sales/profit | Consumers 1. Costs more to purchase goods from the UK due to customs duties and VAT 2. Takes longer for the goods to arrive as they have to go through customs security checks 3. Less choice of goods available to the Irish consumer as UK companies do not want to deal with the paperwork involved 4. Mobile phone roaming charges for Irish customers travelling to the UK are no longer guaranteed 5. Importing Cars from the UK has become much more expensive to due to much higher VRT payments 6. Delivery/shipping costs more expensive/more likely to buy an EU product", permittedMarks: [0,1,2,3] },
+    { id: "second-category", kind: "criterion", verbatim: "Consumers", marks: 3, contextNote: "Required second category; it cannot be replaced by an extra response from the first category.", permittedMarks: [0,1,2,3] },
+    { id: "other", kind: "criterion", verbatim: "one other", marks: 3, contextNote: "ONE further distinct response from either complete pool; do not repeat a point already claimed.", permittedMarks: [0,1,2,3] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c2a", topicId: "lcvp-link-modules-0-2", conceptId: "committe-has-been-set-up-organise",
+    id: "lcvp-2023-cl-c2a", topicId: "lcvp-link-modules-1-0", conceptId: "c2a",
     section: "C", questionRef: "2023 CL Section C Q2(a)",
     stem: "Your LCVP class has been asked to organise a careers exhibition for the senior students in your school.",
     questionText: "A committe has been set up to organise the exhibition. Explain two duties of the secretary of a committee.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 (1 + 1)","answer":2,"ofParts":7,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A committee has been set up to organise the exhibition. Explain two duties of the… — any 2", marks: 4, contextNote: "2 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Draws up and sends out the notice and agenda for a meeting with the chairperson","Organises the venue, resources (laptop), refreshments","Takes notes at the meeting and writes up the minutes/record attendees","Reads out the minutes at the start of the meeting","Deals with all correspondence","Keeps a file of all past and present meetings and reports","Keeps a record of all the members"]} },
+    { id: "responses", kind: "criterion", verbatim: "A committee has been set up to organise the exhibition. Explain two duties of the secretary of a committee. 4 marks Two valid duties 2 x 2 (1 + 1) marks", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: A committee has been set up to organise the exhibition. Explain two duties of the secretary of a committee. 4 marks Two valid duties 2 x 2 (1 + 1) marks Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Draws up and sends out the notice and agenda for a meeting with the chairperson | 2. Organises the venue, resources (laptop), refreshments | 3. Takes notes at the meeting and writes up the minutes/record attendees | 4. Reads out the minutes at the start of the meeting | 5. Deals with all correspondence | 6. Keeps a file of all past and present meetings and reports | 7. Keeps a record of all the members", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c2b", topicId: "lcvp-link-modules-0-2", conceptId: "skills-good-secretary-explaining-these-skills",
+    id: "lcvp-2023-cl-c2b", topicId: "lcvp-link-modules-1-0", conceptId: "c2b",
     section: "C", questionRef: "2023 CL Section C Q2(b)",
     stem: "Your LCVP class has been asked to organise a careers exhibition for the senior students in your school.",
     questionText: "Identify the skills of a good secretary, explaining why these skills are important.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 (1+1)","answer":3,"ofParts":9,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Organisational skills – organises the venue/equipment etc., send notice and agenda","IT skills – emails etc","Planning skills – planning for AGM etc","Communication skills – liaise with chairperson re organizing meeting","Listening skills for writing up accurate minutes","Writing skills – writing up minutes/composing emails","Time Management skills – ensure meeting organised on time and minutes completed for next meeting","Interpersonal skills","Confidentiality – Tact/discretion/diplomacy Etc"]} },
+    { id: "responses", kind: "criterion", verbatim: "Identify the skills of a good secretary, explaining why these skills are important. 6 marks 3 x 2 (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Identify the skills of a good secretary, explaining why these skills are important. 6 marks 3 x 2 (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Organisational skills – organises the venue/equipment etc., send notice and agenda | 2. IT skills – emails etc. | 3. Planning skills – planning for AGM etc. | 4. Communication skills – liaise with chairperson re organizing meeting | 5. Listening skills for writing up accurate minutes | 6. Writing skills – writing up minutes/composing emails | 7. Time Management skills – ensure meeting organised on time and minutes completed for next meeting | 8. Interpersonal skills | 9. Confidentiality – Tact/discretion/diplomacy Etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c2c", topicId: "lcvp-link-modules-0-2", conceptId: "benefits-working-team-when-organising-exhibition",
+    id: "lcvp-2023-cl-c2c", topicId: "lcvp-link-modules-1-0", conceptId: "c2c",
     section: "C", questionRef: "2023 CL Section C Q2(c)",
     stem: "Your LCVP class has been asked to organise a careers exhibition for the senior students in your school.",
     questionText: "Discuss three benefits of working as a team when organising the exhibition.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work is shared/job gets done quicker/better quality work","You have students with different skills which make the exhibition more successful","Variety of ideas/ easier to solve problems quicker/better decisions made","The Exhibition is run well when students are happier and working well together with students who have a common interest/makes new friendships","In case of absenteeism of another student it is easier to take over as you have been working closely together","No one person has too much responsibility/is under too much pressure/everyone takes ownership of the parts of the task they are responsible for/no duplication of roles","Skills learned"]} },
+    { id: "responses", kind: "criterion", verbatim: "Discuss three benefits of working as a team when organising the exhibition. 6 marks Three benefits explained 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Discuss three benefits of working as a team when organising the exhibition. 6 marks Three benefits explained 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Work is shared/job gets done quicker/better quality work | 2. You have students with different skills which make the exhibition more successful | 3. Variety of ideas/ easier to solve problems quicker/better decisions made | 4. The Exhibition is run well when students are happier and working well together with students who have a common interest/makes new friendships | 5. In case of absenteeism of another student it is easier to take over as you have been working closely together | 6. No one person has too much responsibility/is under too much pressure/everyone takes ownership of the parts of the task they are responsible for/no duplication of roles | 7. Skills learned", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c2d", topicId: "lcvp-link-modules-0-2", conceptId: "forming-first-stage-process-creating-team",
+    id: "lcvp-2023-cl-c2d", topicId: "lcvp-link-modules-1-0", conceptId: "c2d",
     section: "C", questionRef: "2023 CL Section C Q2(d)",
     stem: "Your LCVP class has been asked to organise a careers exhibition for the senior students in your school.",
     questionText: "Forming is the first stage in the process of creating a team (group dynamics). Describe three other stages of team development.",
-    tariffModel: {"kind":"fixed","notation":"3 x 3 marks (1+1+1)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Describe three other stages of group development", marks: 9, accepts: ["Name & Explain Storming – as team members get to know each other a bit better, conflict occurs. Arguments arise as strong personalities emerge within the team. Rows/disagreement/disputes occur when team members try to establish themselves and their position on the team/leadership needed at this stage Norming – Team members resolve their conflicts, reach a consensus and start working together. They agree on ground rules and procedures and start working together. They focus more on the task. They start to trust each other. Performing – Team members pull together as one and focus on getting the job done. They co- operate with each other and work together as a unit. There is a strong sense of unity on the team/ goals are achieved"], contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true },
+    { id: "stage-1", kind: "criterion", verbatim: "Storming – as team members get to know each other a bit better, conflict occurs. Arguments arise as strong personalities emerge within the team. Rows/disagreement/disputes occur when team members try to establish themselves and their position on the team/leadership needed at this stage", marks: 3, contextNote: "This required stage: name and explanation, three content points (1+1+1). All THREE stages other than Forming are required; do not repeat Forming or substitute three points about one stage.", permittedMarks: [0,1,2,3] },
+    { id: "stage-2", kind: "criterion", verbatim: "Norming – Team members resolve their conflicts, reach a consensus and start working together. They agree on ground rules and procedures and start working together. They focus more on the task. They start to trust each other.", marks: 3, contextNote: "This required stage: name and explanation, three content points (1+1+1). All THREE stages other than Forming are required; do not repeat Forming or substitute three points about one stage.", permittedMarks: [0,1,2,3] },
+    { id: "stage-3", kind: "criterion", verbatim: "Performing – Team members pull together as one and focus on getting the job done. They co- operate with each other and work together as a unit. There is a strong sense of unity on the team/ goals are achieved", marks: 3, contextNote: "This required stage: name and explanation, three content points (1+1+1). All THREE stages other than Forming are required; do not repeat Forming or substitute three points about one stage.", permittedMarks: [0,1,2,3] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c3a", topicId: "lcvp-link-modules-0-0", conceptId: "areas-where-information-communication-technology-ict",
+    id: "lcvp-2023-cl-c3a", topicId: "lcvp-link-modules-1-1", conceptId: "c3a",
     section: "C", questionRef: "2023 CL Section C Q3(a)",
     stem: "Technology has enabled the online market to flourish.",
     questionText: "State four areas where Information and Communication Technology (ICT) is used by a business.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 1 mark","answer":4,"ofParts":11,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Research -Internet/website/online uses","Marketing- Social media","Written Communication- Email","Documents- Word processing","Filing- Database","Finance- Spreadsheets","Design- CAD/CAM","Video conferencing/calls/remote working for staff/zoom/teams","Online shopping","Payments/money transfers/banking","Provide free Wi-Fi to attract customers List is not exhaustive"]} },
+    { id: "responses", kind: "anyN", verbatim: "State four areas where Information and Communication Technology (ICT) is used by a business. 4 marks Any four valid areas 4 x 1 mark", marks: 4, contextNote: "Choose any 4 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":4,"perOption":1,"options":["Research -Internet/website/online uses","Marketing- Social media","Written Communication- Email","Documents- Word processing","Filing- Database","Finance- Spreadsheets","Design- CAD/CAM","Video conferencing/calls/remote working for staff/zoom/teams","Online shopping","Payments/money transfers/banking","Provide free Wi-Fi to attract customers List is not exhaustive"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c3b", topicId: "lcvp-link-modules-1-0", conceptId: "challenges-business-may-face-when-moving",
+    id: "lcvp-2023-cl-c3b", topicId: "lcvp-link-modules-1-1", conceptId: "c3b",
     section: "C", questionRef: "2023 CL Section C Q3(b)",
     stem: "Technology has enabled the online market to flourish.",
     questionText: "Outline three challenges a business may face when moving into online sales.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2marks (1 + 1)","answer":3,"ofParts":16,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Cost of purchasing hardware/software - finance","Staffing / lack of skills/upskilling","Maintenance of hardware/software/website","Cyber & Data Security","Competition from other businesses selling online","Shipping logistics/costs","Product Return & Refund Policies","Website design – user friendly/App development","Securing online sales/processing payments","Online Identity verification","Availability of broadband","Extra expenses- packaging /storage/equipment/warehousing/space","Customer loyalty","Cross border tariffs","Changing a shopper into a paying customer","Showing sustainability/carbon footprint/impact on the environment"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline three challenges a business may face when moving into online sales. 6 marks Three challenges outlined 3 x 2marks (1 + 1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Outline three challenges a business may face when moving into online sales. 6 marks Three challenges outlined 3 x 2marks (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Cost of purchasing hardware/software - finance | 2. Staffing / lack of skills/upskilling | 3. Maintenance of hardware/software/website | 4. Cyber & Data Security. | 5. Competition from other businesses selling online | 6. Shipping logistics/costs | 7. Product Return & Refund Policies | 8. Website design – user friendly/App development | 9. Securing online sales/processing payments | 10. Online Identity verification | 11. Availability of broadband | 12. Extra expenses- packaging /storage/equipment/warehousing/space | 13. Customer loyalty | 14. Cross border tariffs | 15. Changing a shopper into a paying customer | 16. Showing sustainability/carbon footprint/impact on the environment", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c3c", topicId: "lcvp-link-modules-1-0", conceptId: "benefits-business-having-social-media-presence",
+    id: "lcvp-2023-cl-c3c", topicId: "lcvp-link-modules-1-1", conceptId: "c3c",
     section: "C", questionRef: "2023 CL Section C Q3(c)",
     stem: "Technology has enabled the online market to flourish.",
     questionText: "Identify and explain the benefits to a business of having a social media presence.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 X 2 marks (1+1)","answer":3,"ofParts":8,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Faster, easier communication with customers/customers can contact customer service faster and easier/can respond to customer’s complaints/queries in real time","Increased sales and profit /attract new customers","Using an influencer who has a lot of followers can increase awareness of your business/affiliated links etc","Social media platforms connect potential customers to the businesses website where they can book/purchase/read customer reviews","A business can show off their brand/building brand awareness/ humanising their brand","Social media helps you keep an eye on your competitors: prices/services/products","Networking and partnerships can lead to business opportunities/attract investors","Keeps a business relevant/up to date in the modern business world No repetition of expansions"]} },
+    { id: "responses", kind: "criterion", verbatim: "Identify and explain the benefits to a business of having a social media presence. 6 marks Three valid points 3 X 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Identify and explain the benefits to a business of having a social media presence. 6 marks Three valid points 3 X 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Faster, easier communication with customers/customers can contact customer service faster and easier/can respond to customer’s complaints/queries in real time | 2. Increased sales and profit /attract new customers | 3. Using an influencer who has a lot of followers can increase awareness of your business/affiliated links etc. | 4. Social media platforms connect potential customers to the businesses website where they can book/purchase/read customer reviews | 5. A business can show off their brand/building brand awareness/ humanising their brand | 6. Social media helps you keep an eye on your competitors: prices/services/products | 7. Networking and partnerships can lead to business opportunities/attract investors | 8. Keeps a business relevant/up to date in the modern business world No repetition of expansions No repetition of expansions.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c3d", topicId: "lcvp-link-modules-1-2", conceptId: "business-has-received-negative-reviews-online",
+    id: "lcvp-2023-cl-c3d", topicId: "lcvp-link-modules-1-1", conceptId: "c3d",
     section: "C", questionRef: "2023 CL Section C Q3(d)",
     stem: "Technology has enabled the online market to flourish.",
     questionText: "A business has received negative reviews online. What can the business do to improve its online reputation?",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 3 marks (1 + 1 + 1)","answer":3,"ofParts":8,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1 + 1 + 1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Employ a dedicated person to deal with the business’s online platforms","Have good customer service/after sales service/listen to the issue and fix problem promptly/ Listen to customers and make genuine improvements to a customer’s experience","Variety of services offered/be adaptable/convenient opening hours/deliveries on time","Market research/plan ahead/anticipate changes in demand/have stock available/customer tastes","Price the product or service competitively/keep an eye on competitors","Use social media/influencers/advertising campaign/ tag your business/ Blog regularly/live shows","Check current reviews to understand what people are saying about your business/builds awareness of your product/service/have an online review strategy to respond promptly and openly to all reviews/encourage satisfied customers to leave a review","Give back to charity by donating some of the profit from your sales"]} },
+    { id: "responses", kind: "criterion", verbatim: "A business has received negative reviews online. What can the business do to improve its online reputation? 9 marks 3 x 3 marks (1 + 1 + 1)", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: A business has received negative reviews online. What can the business do to improve its online reputation? 9 marks 3 x 3 marks (1 + 1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Employ a dedicated person to deal with the business’s online platforms | 2. Have good customer service/after sales service/listen to the issue and fix problem promptly/ Listen to customers and make genuine improvements to a customer’s experience | 3. Variety of services offered/be adaptable/convenient opening hours/deliveries on time | 4. Market research/plan ahead/anticipate changes in demand/have stock available/customer tastes | 5. Price the product or service competitively/keep an eye on competitors | 6. Use social media/influencers/advertising campaign/ tag your business/ Blog regularly/live shows | 7. Check current reviews to understand what people are saying about your business/builds awareness of your product/service/have an online review strategy to respond promptly and openly to all reviews/encourage satisfied customers to leave a review | 8. Give back to charity by donating some of the profit from your sales", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c4a", topicId: "lcvp-link-modules-1-4", conceptId: "important-business-plan-future",
+    id: "lcvp-2023-cl-c4a", topicId: "lcvp-link-modules-1-1", conceptId: "c4a",
     section: "C", questionRef: "2023 CL Section C Q4(a)",
     stem: "A business requires many elements to be successful.",
     questionText: "Why is it important for a business to plan for the future?",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks (1 + 1)","answer":2,"ofParts":8,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["To foresee and anticipate future trends/changes in consumer tastes/problems","It allows you set realistic aims/ objectives/goals/targets which are achievable","You can review existing position and see if any changes are needed/make decisions","You are aware of financial requirements and a plan is needed if applying for a loan or grant/ attract investors","You can draw up budgets and limit spending/finance resources in the future","To keep ahead of the competition","Carry out a SWOT analysis to help the business to identify their Strength, Weaknesses, Opportunity and Threats","Plan for resources needed e.g. staff"]} },
+    { id: "responses", kind: "criterion", verbatim: "Why is it important for a business to plan for the future? 4 marks Two valid reasons 2 x 2 marks (1 + 1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Why is it important for a business to plan for the future? 4 marks Two valid reasons 2 x 2 marks (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. To foresee and anticipate future trends/changes in consumer tastes/problems | 2. It allows you set realistic aims/ objectives/goals/targets which are achievable | 3. You can review existing position and see if any changes are needed/make decisions | 4. You are aware of financial requirements and a plan is needed if applying for a loan or grant/ attract investors | 5. You can draw up budgets and limit spending/finance resources in the future | 6. To keep ahead of the competition. | 7. Carry out a SWOT analysis to help the business to identify their Strength, Weaknesses, Opportunity and Threats | 8. Plan for resources needed e.g. staff", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c4b", topicId: "lcvp-link-modules-1-4", conceptId: "consider-location-business-local-area-reasons",
+    id: "lcvp-2023-cl-c4b", topicId: "lcvp-link-modules-1-1", conceptId: "c4b",
     section: "C", questionRef: "2023 CL Section C Q4(b)",
     stem: "A business requires many elements to be successful.",
     questionText: "Consider the location of a business in your local area. Outline two reasons why it is located there.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks (1+1)","answer":2,"ofParts":6,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Close to markets/availability of raw materials/customers/accessible","Premises was available, tradition, there a long time/industrial estate/ cost of premises","Availability of suitable workforce","Legal/Environmental issues","Economic reasons/grant for being in a Business Centre/rural area","Infrastructure/close to good roads/parking/transport links/ Wi-Fi speeds"]} },
+    { id: "responses", kind: "criterion", verbatim: "Consider the location of a business in your local area. Outline two reasons why it is located there. 4 marks Two valid reasons 2 x 2 marks (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Consider the location of a business in your local area. Outline two reasons why it is located there. 4 marks Two valid reasons 2 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Close to markets/availability of raw materials/customers/accessible. | 2. Premises was available, tradition, there a long time/industrial estate/ cost of premises | 3. Availability of suitable workforce | 4. Legal/Environmental issues | 5. Economic reasons/grant for being in a Business Centre/rural area. | 6. Infrastructure/close to good roads/parking/transport links/ Wi-Fi speeds", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c4c", topicId: "lcvp-link-modules-1-0", conceptId: "apply-marketing-mix-product-price-promotion",
+    id: "lcvp-2023-cl-c4c", topicId: "lcvp-link-modules-1-1", conceptId: "c4c",
     section: "C", questionRef: "2023 CL Section C Q4(c)",
     stem: "A business requires many elements to be successful.",
     questionText: "Apply the marketing mix (Product, Price, Promotion, Place) to a business enterprise that you are familiar with.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 2 marks (1+1)","answer":4,"ofParts":4,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Product/service description 2 valid applications for","Price each of the 4 Ps","Place","Promotion"]} },
+    { id: "marketing-p-1", kind: "criterion", verbatim: "Product/service", marks: 2, contextNote: "TWO valid applications for this P to the SAME familiar business, 1 mark each. NO marks for headings. All FOUR Ps are required. Complete original application pool: Product/service Name of product USP Description Packaging Quality Good design", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "marketing-p-2", kind: "criterion", verbatim: "Price", marks: 2, contextNote: "TWO valid applications for this P to the SAME familiar business, 1 mark each. NO marks for headings. All FOUR Ps are required. Complete original application pool: Price Pricing/price strategy/Premium penetration/skimming/high price strategy/low price You will be able to sell at a price which customers are willing to pay You can cover your costs (raw materials/staff) as well as make a profit Be in line with competitors", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "marketing-p-3", kind: "criterion", verbatim: "Place", marks: 2, contextNote: "TWO valid applications for this P to the SAME familiar business, 1 mark each. NO marks for headings. All FOUR Ps are required. Complete original application pool: Place Where to sell your product Channels of distribution – how the product gets to market/ wholesalers/retailer/internet/telesales Logistics/transportation of product", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    { id: "marketing-p-4", kind: "criterion", verbatim: "Promotion", marks: 2, contextNote: "TWO valid applications for this P to the SAME familiar business, 1 mark each. NO marks for headings. All FOUR Ps are required. Complete original application pool: Promotion Advertise the product/target market Sales promotion Personal selling Public Relations – sponsorship/celebrity endorsement/influencer/giving back to local community", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c4d", topicId: "lcvp-link-modules-1-3", conceptId: "methods-business-may-use-evaluate-its",
+    id: "lcvp-2023-cl-c4d", topicId: "lcvp-link-modules-1-1", conceptId: "c4d",
     section: "C", questionRef: "2023 CL Section C Q4(d)",
     stem: "A business requires many elements to be successful.",
     questionText: "Explain three methods a business may use to evaluate its success. Give reasons why the business may have chosen these methods.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 3 marks (1+1+1)","answer":3,"ofParts":8,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Profits/turnover/sales - increased from previous years. Meeting targeted profits/Improved share price","Comparisons with competitors/market share/being the dominant business in a particular industry or for a particular product","Winning awards/recognition from the industry/ISO awards","Good staff relations/no strikes/low staff turnover/committed hardworking staff","Customer loyalty/customers stay with the business, keep coming back/customer feedback","Size of the business/expansion/gaining new markets/new products/diversification","Continuity/length of time in business","Evaluate the success by comparing your business plan to your progress/achieving aims"]} },
+    { id: "profile-1", kind: "criterion", verbatim: "Method", marks: 3, contextNote: "THREE matched method/explanation/reason profiles. NO repetition of reasons. Complete original models: Profits/turnover/sales - increased from previous years. Meeting targeted profits/Improved share price | Comparisons with competitors/market share/being the dominant business in a particular industry or for a particular product | Winning awards/recognition from the industry/ISO awards | Good staff relations/no strikes/low staff turnover/committed hardworking staff | Customer loyalty/customers stay with the business, keep coming back/customer feedback | Size of the business/expansion/gaining new markets/new products/diversification | Continuity/length of time in business | Evaluate the success by comparing your business plan to your progress/achieving aims", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Method","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Explanation of Method","marks":1,"permittedMarks":[0,1]},{"id":"component-3","verbatim":"reason of choosing Method","marks":1,"permittedMarks":[0,1]}] },
+    { id: "profile-2", kind: "criterion", verbatim: "Method", marks: 3, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Method","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Explanation of Method","marks":1,"permittedMarks":[0,1]},{"id":"component-3","verbatim":"reason of choosing Method","marks":1,"permittedMarks":[0,1]}] },
+    { id: "profile-3", kind: "criterion", verbatim: "Method", marks: 3, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Method","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Explanation of Method","marks":1,"permittedMarks":[0,1]},{"id":"component-3","verbatim":"reason of choosing Method","marks":1,"permittedMarks":[0,1]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c5a", topicId: "lcvp-link-modules-1-3", conceptId: "differences-between-work-school",
+    id: "lcvp-2023-cl-c5a", topicId: "lcvp-link-modules-0-0", conceptId: "c5a",
     section: "C", questionRef: "2023 CL Section C Q5(a)",
     stem: "The workplace and its environment are constantly changing and evolving.",
     questionText: "Identify two differences between work and school.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks (1 + 1)","answer":2,"ofParts":11,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Longer hours in work than school","Work is more practical/different skills needed","More day to day variety in work than school","More teamwork in work than school","Different demands - work requires commitment to a time plan/school is a choice","Bad grades in school versus getting fired","Remuneration/paid for work, not for school","Technology more up to date in the workplace","Promotion available","Uniform","More holidays Etc"]} },
+    { id: "responses", kind: "criterion", verbatim: "Identify two differences between work and school. 4 marks Two differences outlined 2 x 2 marks (1 + 1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Identify two differences between work and school. 4 marks Two differences outlined 2 x 2 marks (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Longer hours in work than school | 2. Work is more practical/different skills needed | 3. More day to day variety in work than school | 4. More teamwork in work than school | 5. Different demands - work requires commitment to a time plan/school is a choice | 6. Bad grades in school versus getting fired | 7. Remuneration/paid for work, not for school | 8. Technology more up to date in the workplace | 9. Promotion available | 10. Uniform | 11. More holidays Etc.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c5b", topicId: "lcvp-link-modules-0-4", conceptId: "can-unemployed-people-help-themselves-return",
+    id: "lcvp-2023-cl-c5b", topicId: "lcvp-link-modules-0-1", conceptId: "c5b",
     section: "C", questionRef: "2023 CL Section C Q5(b)",
     stem: "The workplace and its environment are constantly changing and evolving.",
     questionText: "What can unemployed people do to help themselves to return to the workplace?",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1 + 1)","answer":3,"ofParts":14,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Retrain to get the necessary skills / qualifications","Train or Upskill","Set up your own business","Volunteer to get experience/work experience","Work on their CV to bring it up to date","Network with personal contacts","Attend meeting with recruitment agency","Attend meeting with government agency","Update their profile on LinkedIn","Meet their own physical needs/well being","Send CV, personally contact the business/apply to jobs","Emigrate","Career coach","Dress or proper attire/presentation for an interview"]} },
+    { id: "responses", kind: "criterion", verbatim: "What can unemployed people do to help themselves to return to the workplace? 6 marks 3 x 2 marks (1 + 1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: What can unemployed people do to help themselves to return to the workplace? 6 marks 3 x 2 marks (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Retrain to get the necessary skills / qualifications | 2. Train or Upskill | 3. Set up your own business | 4. Volunteer to get experience/work experience | 5. Work on their CV to bring it up to date | 6. Network with personal contacts | 7. Attend meeting with recruitment agency | 8. Attend meeting with government agency | 9. Update their profile on LinkedIn | 10. Meet their own physical needs/well being | 11. Send CV, personally contact the business/apply to jobs | 12. Emigrate | 13. Career coach | 14. Dress or proper attire/presentation for an interview", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c5ci", topicId: "lcvp-link-modules-0-0", conceptId: "contract-employment",
+    id: "lcvp-2023-cl-c5ci", topicId: "lcvp-link-modules-0-0", conceptId: "c5ci",
     section: "C", questionRef: "2023 CL Section C Q5(c)(i)",
     stem: "The workplace and its environment are constantly changing and evolving.",
     questionText: "Describe what a contract of employment is.",
-    tariffModel: {"kind":"fixed","notation":"(1 + 1 + 1)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "(1 + 1 + 1) A legally binding agreement (a written statement) (1) between the employer and the employee (1) detailing the terms and conditions of the employment (1)", marks: 3, contextNote: "3 answers at 1 mark each.", permittedMarks: [0,1,2,3], parts: [{"id":"p1","verbatim":"A legally binding agreement (a written statement)","marks":1,"permittedMarks":[0,1]},{"id":"p2","verbatim":"between the employer and the employee","marks":1,"permittedMarks":[0,1]},{"id":"p3","verbatim":"detailing the terms and conditions of the employment","marks":1,"permittedMarks":[0,1]}], openList: true },
+    { id: "definition-1", kind: "point", verbatim: "A legally binding agreement (a written statement)", marks: 1 },
+    { id: "definition-2", kind: "point", verbatim: "between the employer and the employee", marks: 1 },
+    { id: "definition-3", kind: "point", verbatim: "detailing the terms and conditions of the employment", marks: 1 },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c5cii", topicId: "lcvp-link-modules-0-0", conceptId: "key-areas-included-contract-employment",
+    id: "lcvp-2023-cl-c5cii", topicId: "lcvp-link-modules-0-0", conceptId: "c5cii",
     section: "C", questionRef: "2023 CL Section C Q5(c)(ii)",
     stem: "The workplace and its environment are constantly changing and evolving.",
     questionText: "List the key areas included in a contract of employment.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 1 marks","answer":3,"ofParts":13,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Employer and Employee Name and address","Title of job/description of work","Start date/duration of contract","Remuneration including pay, overtime, bonus, commission","Hours of work including start and finish times","Probationary period","Holiday entitlements","Sick pay/sick leave entitlements","Notice to be given of termination of employment","Dismissal procedures","Pension details","Employer/Employee signature","Statutory leave e.g. Maternity/paternity leave"]} },
+    { id: "responses", kind: "anyN", verbatim: "List the key areas included in a contract of employment 3 marks 3 x 1 marks", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":3,"perOption":1,"options":["Employer and Employee Name and address","Title of job/description of work","Start date/duration of contract","Remuneration including pay, overtime, bonus, commission","Hours of work including start and finish times","Probationary period","Holiday entitlements","Sick pay/sick leave entitlements","Notice to be given of termination of employment","Dismissal procedures","Pension details","Employer/Employee signature","Statutory leave e.g. Maternity/paternity leave"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c5d", topicId: "lcvp-link-modules-0-3", conceptId: "many-employers-having-problems-recruiting-employees",
+    id: "lcvp-2023-cl-c5d", topicId: "lcvp-link-modules-0-1", conceptId: "c5d",
     section: "C", questionRef: "2023 CL Section C Q5(d)",
     stem: "The workplace and its environment are constantly changing and evolving.",
     questionText: "Many employers are having problems recruiting employees. What can an employer do to attract potential employees to their organisation? Explain your answers.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 3 marks (1+1+1)","answer":3,"ofParts":15,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Attractive remuneration/pay","Rewards/Good bonuses/share options/health insurance/accommodation/company car/fuel card","Good working conditions/healthy work environment","Flexible working hours/4 day working week","Holidays","Training / upskilling of existing staff to fill in house positions","Promotion Prospects","Opportunities to travel","Advertise the positions available","recruit from abroad","Head hunt","Offer incentivised work experience/funded courses to 3rd level students","Wellbeing, gym, subsidised canteen, therapists, free food, Yoga sessions","Allow people to work from home","Having a diverse/ inclusive work force"]} },
+    { id: "responses", kind: "criterion", verbatim: "Many employers are having problems recruiting employees. What can an employer do to attract potential employees to their organisation? Explain your answers. 9 marks 3 answers 3 x 3 marks (1+1+1) Statement & 2 expansions", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Many employers are having problems recruiting employees. What can an employer do to attract potential employees to their organisation? Explain your answers. 9 marks 3 answers 3 x 3 marks (1+1+1) Statement & 2 expansions Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Attractive remuneration/pay | 2. Rewards/Good bonuses/share options/health insurance/accommodation/company car/fuel card | 3. Good working conditions/healthy work environment | 4. Flexible working hours/4 day working week | 5. Holidays | 6. Training / upskilling of existing staff to fill in house positions | 7. Promotion Prospects | 8. Opportunities to travel | 9. Advertise the positions available | 10. recruit from abroad | 11. Head hunt | 12. Offer incentivised work experience/funded courses to 3rd level students | 13. Wellbeing, gym, subsidised canteen, therapists, free food, Yoga sessions | 14. Allow people to work from home | 15. Having a diverse/ inclusive work force", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c6b", topicId: "lcvp-link-modules-1-1", conceptId: "skills-learned-improved-result-planning-visit",
+    id: "lcvp-2023-cl-c6a", topicId: "lcvp-link-modules-1-1", conceptId: "c6a",
+    section: "C", questionRef: "2023 CL Section C Q6(a)",
+    stem: "The visit out and visit in activities in Link Modules can provide many learning opportunities.",
+    questionText: "Name two Leaving Certificate subjects you are studying and outline how both would be useful in helping you to understand the operation of a business.",
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 4,
+    rows: [
+    { id: "profile-1", kind: "criterion", verbatim: "subject", marks: 2, contextNote: "TWO subjects you study, each paired with how THAT subject helps you understand the operation of a business. Subject 1 + matching application 1. The source supplies criteria, not personal model answers; none is invented. Original guidance: 1m for subject, 1m for operation of business Two subjects named (1 +1) How the subject was useful in understanding the operation of the business (1+1)", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"subject","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"operation of business","marks":1,"permittedMarks":[0,1]}] },
+    { id: "profile-2", kind: "criterion", verbatim: "subject", marks: 2, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"subject","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"operation of business","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
+    id: "lcvp-2023-cl-c6b", topicId: "lcvp-link-modules-1-1", conceptId: "c6b",
     section: "C", questionRef: "2023 CL Section C Q6(b)",
     stem: "The visit out and visit in activities in Link Modules can provide many learning opportunities.",
     questionText: "Explain three skills you learned/improved as a result of planning your visit out/visit in.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1 + 1)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Communication","Organisation","Planning","Teamwork","Interpersonal","Financial skills","Research skills List is not exhaustive"]} },
+    { id: "responses", kind: "criterion", verbatim: "Explain three skills you learned/improved as a result of planning your visit out/visit in. 6 marks 3 x 2 marks (1 + 1) 1m for skill, 1m for expansion", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Explain three skills you learned/improved as a result of planning your visit out/visit in. 6 marks 3 x 2 marks (1 + 1) 1m for skill, 1m for expansion Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Communication | 2. Organisation | 3. Planning | 4. Teamwork | 5. Interpersonal | 6. Financial skills | 7. Research skills List is not exhaustive", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c6c", topicId: "lcvp-link-modules-1-2", conceptId: "organisations-businesses-encourage-visits-out-visits",
+    id: "lcvp-2023-cl-c6c", topicId: "lcvp-link-modules-1-1", conceptId: "c6c",
     section: "C", questionRef: "2023 CL Section C Q6(c)",
     stem: "The visit out and visit in activities in Link Modules can provide many learning opportunities.",
     questionText: "Why do organisations/businesses encourage visits out/visits in from schools?",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1 + 1)","answer":3,"ofParts":5,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Inform the community about their organisation","To improve their image/enhance reputation","Give back to the community/part of their CSR strategy","Identify future employees","Attract customers/increase sales"]} },
+    { id: "responses", kind: "criterion", verbatim: "Why do organisations/businesses encourage visits out/visits in from schools? 6 marks 3 x 2 marks (1 + 1) Statement and Expansion", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Why do organisations/businesses encourage visits out/visits in from schools? 6 marks 3 x 2 marks (1 + 1) Statement and Expansion Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Inform the community about their organisation | 2. To improve their image/enhance reputation | 3. Give back to the community/part of their CSR strategy | 4. Identify future employees | 5. Attract customers/increase sales", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c6d", topicId: "lcvp-link-modules-0-4", conceptId: "reasons-class-should-evaluate-visit-out",
+    id: "lcvp-2023-cl-c6d", topicId: "lcvp-link-modules-1-1", conceptId: "c6d",
     section: "C", questionRef: "2023 CL Section C Q6(d)",
     stem: "The visit out and visit in activities in Link Modules can provide many learning opportunities.",
     questionText: "State and explain reasons why your class should evaluate the visit out/visit in.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 3 marks (1 + 1+ 1)","answer":3,"ofParts":6,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1 + 1+ 1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Was the visit a success/were the aims met/did everything go according to plan","Skills learned/improved","Recommendations for improvement/what would you do better","How they worked as a team","To be able to write a good quality summary report","See if you would recommend it to future groups"]} },
+    { id: "responses", kind: "criterion", verbatim: "State and explain reasons why your class should evaluate the visit out/visit in. 9 marks 3 x 3 marks (1 + 1+ 1)", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: State and explain reasons why your class should evaluate the visit out/visit in. 9 marks 3 x 3 marks (1 + 1+ 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Was the visit a success/were the aims met/did everything go according to plan | 2. Skills learned/improved | 3. Recommendations for improvement/what would you do better | 4. How they worked as a team | 5. To be able to write a good quality summary report | 6. See if you would recommend it to future groups", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c7a", topicId: "lcvp-link-modules-1-2", conceptId: "term-corporate-social-responsibility-csr",
+    id: "lcvp-2023-cl-c7a", topicId: "lcvp-link-modules-1-1", conceptId: "c7a",
     section: "C", questionRef: "2023 CL Section C Q7(a)",
     stem: "Corporate Social Responsibility plays a valuable role in society.",
     questionText: "Explain the term Corporate Social Responsibility (CSR).",
-    tariffModel: {"kind":"fixed","notation":"4 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "4 statements at", marks: 4, accepts: ["each CSR stands for Corporate Social Responsibility. It means that companies try to do good things for people and the planet. They think about how their actions affect their employees, customers, communities, and the environment. It is not about making money but also about being responsible and making a positive impact on society. This includes things like being environmentally friendly, helping others, and being fair in how they do business"], contextNote: "4 marks for this answer.", openList: true },
+    { id: "definition", kind: "criterion", verbatim: "CSR stands for Corporate Social Responsibility. It means that companies try to do good things for people and the planet. They think about how their actions affect their employees, customers, communities, and the environment. It is not about making money but also about being responsible and making a positive impact on society. This includes things like being environmentally friendly, helping others, and being fair in how they do business.", marks: 4, contextNote: "FOUR valid statements, 1 mark each, from the complete original explanation. No additional compulsory phrase or invented definition is imposed.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]},{"id":"response-4","verbatim":"Response 4","marks":1,"permittedMarks":[0,1]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c7c", topicId: "lcvp-link-modules-0-1", conceptId: "benefits-employers-who-focus-employee-wellbeing",
+    id: "lcvp-2023-cl-c7b", topicId: "lcvp-link-modules-1-1", conceptId: "c7b",
+    section: "C", questionRef: "2023 CL Section C Q7(b)",
+    stem: "Corporate Social Responsibility plays a valuable role in society.",
+    questionText: "Identify an enterprise that has an active CSR policy and explain how this policy impacts on the stakeholders (e.g. employees, suppliers etc.) of this enterprise.",
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 7,
+    rows: [
+    { id: "enterprise", kind: "point", verbatim: "1m for enterprise e.g. Fast food restaurant", marks: 1, contextNote: "Identify ONE enterprise with an active CSR policy, 1 mark. All three impacts must concern this SAME enterprise; the printed fast-food restaurant is illustrative." },
+    { id: "stakeholder-impacts", kind: "criterion", verbatim: "impacts on stakeholders", marks: 6, contextNote: "THREE stakeholder impacts, statement + matching expansion, 1+1 each. Complete original models: Customers – More fruit and vegetables on their menu/less salt/low fat dairy/calorie count given Employees – Training/apprenticeships/promotion of diversity/gender equality/ageism Suppliers – Human rights/Ethical practices/Carbon footprint/Sustainable resources/production Community - Charities/ disaster relief/ donations /sponsorship Environment - Waste reduction/recycling/electric vehicles Government – Pay taxes on time/ providing employment Shareholders – receive higher dividend", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
+    id: "lcvp-2023-cl-c7c", topicId: "lcvp-link-modules-0-0", conceptId: "c7c",
     section: "C", questionRef: "2023 CL Section C Q7(c)",
     stem: "Corporate Social Responsibility plays a valuable role in society.",
     questionText: "Describe the benefits to employers who focus on employee wellbeing.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Increases profits for the employer","Builds and helps sustain high employee morale – Happier employees/content/positive atmosphere","Less conflict/better industrial relations","Improves productivity/engagement","Improves employee health/Decrease in employee absenteeism/less sick pay/less pay to cover absent employee","Low employee turnover/higher retention rates/loyal to business/expertise remains/continuity with clients and customers","Improves employee recruitment/higher calibre of people applying for jobs/better image/stronger brand/reputation"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe the benefits to employers who focus on employee wellbeing. 6 marks 3 x 2 marks (1+1) 1m for statement 1m for expansion", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe the benefits to employers who focus on employee wellbeing. 6 marks 3 x 2 marks (1+1) 1m for statement 1m for expansion Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Increases profits for the employer | 2. Builds and helps sustain high employee morale – Happier employees/content/positive atmosphere | 3. Less conflict/better industrial relations | 4. Improves productivity/engagement | 5. Improves employee health/Decrease in employee absenteeism/less sick pay/less pay to cover absent employee | 6. Low employee turnover/higher retention rates/loyal to business/expertise remains/continuity with clients and customers | 7. Improves employee recruitment/higher calibre of people applying for jobs/better image/stronger brand/reputation", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2023 Common Level — © State Examinations Commission.",
-    id: "lcvp-2023-cl-c7d", topicId: "lcvp-link-modules-1-2", conceptId: "modern-businesses-strive-be-inclusive-all",
+    id: "lcvp-2023-cl-c7d", topicId: "lcvp-link-modules-0-0", conceptId: "c7d",
     section: "C", questionRef: "2023 CL Section C Q7(d)",
-    stem: "Corporate Social Responsibility plays a valuable role in society. Link Modules Examination Wednesday 3 May Morning 10:00 - 12:30",
+    stem: "Corporate Social Responsibility plays a valuable role in society.",
     questionText: "Modern businesses strive to be inclusive of all. Outline four examples of actions an employer can take to ensure an inclusive workplace for all.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 2 marks (1 +1)","answer":4,"ofParts":13,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2023 allocation; historical universal award retained for A6"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; each split 1 +1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Teach what inclusivity means/training programs","Manage bias/favoritism/don’t discriminate","Pay equity","Mix up teams","Wheel chair accessibility","Acknowledge different cultural holidays","Multilingual signage","Fair praise/recognition for work completed","Inviting or involving employees in decisions being made","Areas for new mothers to breastfeed","Workplace crèche","New Employees welcomed/induction given","Offer work placements to individuals from the national learning network Etc"]} },
+    { id: "responses", kind: "criterion", verbatim: "Modern businesses strive to be inclusive of all. Outline four examples of actions an employer can take to ensure an inclusive workplace for all. 8 marks 4 x 2 marks (1 +1) Statement and expansion Any relevant example that supports a workplace where employees feel respected and included. Suggested Examples (list not exhaustive)", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: Modern businesses strive to be inclusive of all. Outline four examples of actions an employer can take to ensure an inclusive workplace for all. 8 marks 4 x 2 marks (1 +1) Statement and expansion Any relevant example that supports a workplace where employees feel respected and included. Suggested Examples (list not exhaustive) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Teach what inclusivity means/training programs | 2. Manage bias/favoritism/don’t discriminate | 3. Pay equity | 4. Mix up teams | 5. Wheel chair accessibility | 6. Acknowledge different cultural holidays | 7. Multilingual signage | 8. Fair praise/recognition for work completed | 9. Inviting or involving employees in decisions being made | 10. Areas for new mothers to breastfeed | 11. Workplace crèche | 12. New Employees welcomed/induction given | 13. Offer work placements to individuals from the national learning network Etc.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC LCVP Link Modules 2023 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
