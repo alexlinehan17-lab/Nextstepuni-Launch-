@@ -4187,13 +4187,44 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-a1", topicId: "lcvp-link-modules-1-2", conceptId: "manager-charity-shop",
+    id: "lcvp-2025-cl-a1", topicId: "lcvp-link-modules-1-2", conceptId: "a1",
     section: "A", questionRef: "2025 CL Section A Q1",
-    stem: "You will be shown a DVD about Voluntary Work in a Charity Shop as the theme.",
     questionText: "Name the manager of the charity shop.",
-    tariffModel: {"kind":"fixed","notation":"1 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 1,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Aoife O’ Neill", marks: 1, contextNote: "1 mark for this answer.", openList: true },
+    { id: "manager-name", kind: "point", verbatim: "Aoife O’ Neill", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2025 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2025 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original charity-shop sequence with its sound before answering. The paper allows three minutes to read Section A, then the complete sequence, its three parts, and the complete sequence again. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -4201,13 +4232,44 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-a2", topicId: "lcvp-link-modules-1-2", conceptId: "did-teacher-think-good-idea-have",
+    id: "lcvp-2025-cl-a2", topicId: "lcvp-link-modules-1-2", conceptId: "a2",
     section: "A", questionRef: "2025 CL Section A Q2",
-    stem: "You will be shown a DVD about Voluntary Work in a Charity Shop as the theme.",
     questionText: "Why did the teacher think it was a good idea to have a speaker from a charity organisation?",
-    tariffModel: {"kind":"bestNofParts","notation":"2 marks","answer":1,"ofParts":2,"perPart":2}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 1 of the answers the scheme states", marks: 2, contextNote: "1 answer at 2 marks each; (0/2) — all or nothing on each answer.", openList: true, group: {"claimMax":1,"perOption":2,"options":["The money made there is going back into the local community","They had already had people in from local businesses"]} },
+    { id: "whole-response", kind: "criterion", verbatim: "1. The money made there is going back into the local community 2. They had already had people in from local businesses", marks: 2, contextNote: "Original whole-response allocation: 2 marks (0/2). No internal reason quota or 1-mark step is printed. Complete original models: The money made there is going back into the local community | They had already had people in from local businesses", permittedMarks: [0,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2025 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2025 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original charity-shop sequence with its sound before answering. The paper allows three minutes to read Section A, then the complete sequence, its three parts, and the complete sequence again. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -4215,13 +4277,44 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-a3", topicId: "lcvp-link-modules-1-2", conceptId: "manager-accepted-invitation-speak-lcvp-class",
+    id: "lcvp-2025-cl-a3", topicId: "lcvp-link-modules-1-2", conceptId: "a3",
     section: "A", questionRef: "2025 CL Section A Q3",
-    stem: "You will be shown a DVD about Voluntary Work in a Charity Shop as the theme.",
     questionText: "Explain why the manager accepted the invitation to speak to the LCVP class.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@1m","answer":3,"ofParts":5,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["It is an opportunity to recruit new volunteers","They always need volunteers","A charity shop wouldn’t survive without them","It was made clear what was required in the presentation/speaking to 25 students/forty minutes","The manager can raise awareness of the work this charity does"]} },
+    { id: "responses", kind: "anyN", verbatim: "Explain why the manager accepted the invitation to speak to the LCVP class. 3 marks 3@1m", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":3,"perOption":1,"options":["It is an opportunity to recruit new volunteers","They always need volunteers","A charity shop wouldn’t survive without them","It was made clear what was required in the presentation/speaking to 25 students/forty minutes","The manager can raise awareness of the work this charity does"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2025 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2025 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original charity-shop sequence with its sound before answering. The paper allows three minutes to read Section A, then the complete sequence, its three parts, and the complete sequence again. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -4229,13 +4322,44 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-a4", topicId: "lcvp-link-modules-1-2", conceptId: "jobs-involved-charity-shop",
+    id: "lcvp-2025-cl-a4", topicId: "lcvp-link-modules-1-2", conceptId: "a4",
     section: "A", questionRef: "2025 CL Section A Q4",
-    stem: "You will be shown a DVD about Voluntary Work in a Charity Shop as the theme.",
     questionText: "List the jobs involved in the charity shop.",
-    tariffModel: {"kind":"bestNofParts","notation":"2@1m","answer":2,"ofParts":5,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Dress the windows","Do up the floor displays","Online marketing and promotion","Cash flow","Stock taking"]} },
+    { id: "responses", kind: "anyN", verbatim: "List the jobs involved in the charity shop. 2 marks 2@1m", marks: 2, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":1,"options":["Dress the windows","Do up the floor displays","Online marketing and promotion","Cash flow","Stock taking"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2025 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2025 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original charity-shop sequence with its sound before answering. The paper allows three minutes to read Section A, then the complete sequence, its three parts, and the complete sequence again. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -4243,13 +4367,44 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-a5", topicId: "lcvp-link-modules-0-4", conceptId: "students-benefit-volunteering",
+    id: "lcvp-2025-cl-a5", topicId: "lcvp-link-modules-1-2", conceptId: "a5",
     section: "A", questionRef: "2025 CL Section A Q5",
-    stem: "You will be shown a DVD about Voluntary Work in a Charity Shop as the theme.",
     questionText: "Explain how the students benefit from volunteering.",
-    tariffModel: {"kind":"bestNofParts","notation":"2@2m (1+1)","answer":2,"ofParts":7,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["It is a great way to get work experience, working hours are flexible","You gain experience working in a number of different areas- creative/financial/marketing/how to run a business","Learn a new skill/ teamwork/communication/problem solving/you will benefit from h&s/manual handling training","Make new friends/meet new people","Feel good factor/by helping others/self-esteem/proud","Add to your CV/ looks good on a CV/can help get jobs in the future","Get an understanding of community and people’s needs"]} },
+    { id: "responses", kind: "criterion", verbatim: "Explain how the students benefit from volunteering. 4 marks 2@2m (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Explain how the students benefit from volunteering. 4 marks 2@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. It is a great way to get work experience, working hours are flexible | 2. You gain experience working in a number of different areas- creative/financial/marketing/how to run a business | 3. Learn a new skill/ teamwork/communication/problem solving/you will benefit from h&s/manual handling training | 4. Make new friends/meet new people | 5. Feel good factor/by helping others/self-esteem/proud | 6. Add to your CV/ looks good on a CV/can help get jobs in the future | 7. Get an understanding of community and people’s needs", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2025 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2025 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original charity-shop sequence with its sound before answering. The paper allows three minutes to read Section A, then the complete sequence, its three parts, and the complete sequence again. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -4257,13 +4412,44 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-a6i", topicId: "lcvp-link-modules-1-2", conceptId: "resources-needed-presentation",
+    id: "lcvp-2025-cl-a6i", topicId: "lcvp-link-modules-1-4", conceptId: "a6i",
     section: "A", questionRef: "2025 CL Section A Q6(i)",
-    stem: "You will be shown a DVD about Voluntary Work in a Charity Shop as the theme.",
     questionText: "What resources are needed for the presentation?",
-    tariffModel: {"kind":"bestNofParts","notation":"2@1m","answer":2,"ofParts":4,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "What resources does Ciara need for the presentation — any 2", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Laptop","Data projector","USB","Notes"]} },
+    { id: "responses", kind: "anyN", verbatim: "2@1m", marks: 2, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":1,"options":["Laptop","Data projector","USB","Notes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2025 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2025 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original charity-shop sequence with its sound before answering. The paper allows three minutes to read Section A, then the complete sequence, its three parts, and the complete sequence again. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -4271,13 +4457,89 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-a7", topicId: "lcvp-link-modules-1-2", conceptId: "can-volunteer-work-enhance-social-skills",
+    id: "lcvp-2025-cl-a6ii", topicId: "lcvp-link-modules-1-4", conceptId: "a6ii",
+    section: "A", questionRef: "2025 CL Section A Q6(ii)",
+    questionText: "Why is using ICT beneficial when doing a presentation?",
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "2@2m (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: 2@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Keep the speaker on track/ visual cues for speaker/easier as you can read from the presentation | 2. Slide show (PowerPoint) lets the audience know the main points/conveys information effectively/shows information clearly | 3. Creates engaging visual aids for audience/enhances audience engagement/understanding/grabs attention | 4. Convenient as the presentation can be prepared in advance and brought in using a USB | 5. Helps with doing research in preparing the presentation/ makes the presentation more professional | 6. Sustainability /cost of printing reduced/presentation can be emailed", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2025 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2025 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original charity-shop sequence with its sound before answering. The paper allows three minutes to read Section A, then the complete sequence, its three parts, and the complete sequence again. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
+    id: "lcvp-2025-cl-a7", topicId: "lcvp-link-modules-1-2", conceptId: "a7",
     section: "A", questionRef: "2025 CL Section A Q7",
-    stem: "You will be shown a DVD about Voluntary Work in a Charity Shop as the theme.",
     questionText: "How can volunteer work enhance social skills and community involvement?",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m (1+1)","answer":3,"ofParts":6,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Increased social interaction: Interacting with the public/other volunteers/ allowing for increased interaction/make new friends and connections/networking/improve interpersonal skills","Understanding of the community: Gain an understanding of the needs of the community/making it a better place for everyone/solve real problems in the local area","Teamwork collaboration: Helps develop skills/conflict resolution/compromise etc./Gain an understanding of the work that goes into a charity shop/work in groups/learn to support each other","Builds a sense of belonging/helps people feel more connected to their community/inspire others to get involved","Enhances communication: working with other teaches you how to talk and listen better","Personal and professional development: empathy and compassion/confidence/ self-esteem/ Problem solving/adaptability/leadership skills/sense of achievement"]} },
+    { id: "responses", kind: "criterion", verbatim: "How can volunteer work enhance social skills and community involvement? 6 marks 3@2m (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: How can volunteer work enhance social skills and community involvement? 6 marks 3@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Increased social interaction: Interacting with the public/other volunteers/ allowing for increased interaction/make new friends and connections/networking/improve interpersonal skills | 2. Understanding of the community: Gain an understanding of the needs of the community/making it a better place for everyone/solve real problems in the local area | 3. Teamwork collaboration: Helps develop skills/conflict resolution/compromise etc./Gain an understanding of the work that goes into a charity shop/work in groups/learn to support each other | 4. Builds a sense of belonging/helps people feel more connected to their community/inspire others to get involved | 5. Enhances communication: working with other teaches you how to talk and listen better | 6. Personal and professional development: empathy and compassion/confidence/ self-esteem/ Problem solving/adaptability/leadership skills/sense of achievement", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2025 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2025 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original charity-shop sequence with its sound before answering. The paper allows three minutes to read Section A, then the complete sequence, its three parts, and the complete sequence again. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -4285,13 +4547,44 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-a8", topicId: "lcvp-link-modules-0-3", conceptId: "charity-shop-good-example-social-enterprise",
+    id: "lcvp-2025-cl-a8", topicId: "lcvp-link-modules-1-2", conceptId: "a8",
     section: "A", questionRef: "2025 CL Section A Q8",
-    stem: "You will be shown a DVD about Voluntary Work in a Charity Shop as the theme.",
     questionText: "Why is the charity shop a good example of a social enterprise?",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m (1+1)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Social Enterprise is a business: Generates revenue that provides essential services to address issues in their community","Use of Funding: The charity shop has funded the youth café, a wheelchair bus for the nursing home and other projects over the years","Purpose driven: Surplus funds are reinvested into achieving social objectives rather than maximising profit for owners","Community support: rely on donations/ improves the lives of people/ providing resources/money/counselling","Employs staff: providing employment and volunteer opportunities/ help people gain work experience/ potential skill training or upskill training","Environmental benefit: promote recycling and reduces waste/ improves sustainability","Affordable goods: offer affordable priced items/ selling second hand clothes"]} },
+    { id: "responses", kind: "criterion", verbatim: "Why is the charity shop a good example of a social enterprise? 6 marks 3@2m (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Why is the charity shop a good example of a social enterprise? 6 marks 3@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Social Enterprise is a business: Generates revenue that provides essential services to address issues in their community | 2. Use of Funding: The charity shop has funded the youth café, a wheelchair bus for the nursing home and other projects over the years | 3. Purpose driven: Surplus funds are reinvested into achieving social objectives rather than maximising profit for owners | 4. Community support: rely on donations/ improves the lives of people/ providing resources/money/counselling | 5. Employs staff: providing employment and volunteer opportunities/ help people gain work experience/ potential skill training or upskill training | 6. Environmental benefit: promote recycling and reduces waste/ improves sustainability | 7. Affordable goods: offer affordable priced items/ selling second hand clothes", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2025 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2025 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original charity-shop sequence with its sound before answering. The paper allows three minutes to read Section A, then the complete sequence, its three parts, and the complete sequence again. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -4299,217 +4592,366 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-b1", topicId: "lcvp-link-modules-1-4", conceptId: "swot-analysis-study-undertaken-strengths-weaknessess",
+    id: "lcvp-2025-cl-b1", topicId: "lcvp-link-modules-1-4", conceptId: "b1",
     section: "B", questionRef: "2025 CL Section B Q1",
-    stem: "A SWOT analysis is a study undertaken to identify Strengths, Weaknessess, Opportunities and Threats of an organisation or an area. Using the case study, identify one strength, one weakness, one opportunity and one threat of the town of Glenhale.",
+    stem: "Glenhale Glenhale, a market town, is located in the midlands of Ireland with easy access to a motorway offering connectivity to two large cities. It is steeped in architectural and historical heritage with a castle and gardens attracting tourists during the summer months. The town has a very active historical society who have identified a number of sites which, if developed, could increase the town's tourism potential. Glenhale has a business and innovation park on the outskirts of the town. There is potential for growth in the pharmaceutical and food sectors. Enterprise Ireland and the IDA are actively seeking appropriate enterprises to occupy the last remaining business units to ensure there are adequate job opportunities for local people. The local education and training centres are offering courses relevant to the pharmaceutical and food sectors, attracting students from outside the town. The town has five primary schools and one large co-educational secondary school. Three of the primary schools are located in the town centre. During school drop off and collection times there is major traffic congestion and the town is inaccessible to the local people trying to get to work or use the businesses in the town. Business owners have complained that it is affecting footfall, sales and ability to recruit staff. Fewer businesses are setting up in the town centre due to issues with traffic congestion, including major international retailers who chose alternative towns. To maintain the vibrancy and vitality of the town centre, the Glenhale Improvement Team was formed which consisted of all local major stakeholders. At its inaugural meeting many issues were identified including the areas of traffic congestion in the town. Developing tourism potential and securing suitable industry for the area were also discussed. The Glenhale Improvement Team set about undertaking a public consultation process to identify the concerns and suggestions of the local community in relation to the development of the town centre. Locals were surveyed for their thoughts. After analysing the suggestions put forward the Glenhale Improvement Team have prioritised and costed some of the suggestions made and created a number of action plans to put these projects in place. They communicate with the local townspeople about their progress via an email mailing list, a dedicated website and social media accounts. They also use these channels to appeal for volunteers to assist with certain aspects of the projects. They have appealed to local businesses to stay open while the traffic congestion solutions are being put in place. The Glenhale Improvement Team model is a collaborative approach which has promoted genuine solutions to sustain and revive the town centre.",
     questionText: "A SWOT analysis is a study undertaken to identify Strengths, Weaknessess, Opportunities and Threats of an organisation or an area. Using the case study, identify one strength, one weakness, one opportunity and one threat of the town of Glenhale.",
-    tariffModel: {"kind":"fixed","notation":"(2+2+1+1)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(2+2+1+1)", marks: 6, contextNote: "6 marks for this answer.", openList: true },
+    { id: "swot-i", kind: "point", verbatim: "Strength: location, tourism, education facilities, active committee in the town, active historical society, connectivity by motorway to two large towns, business/innovation park", marks: null, contextNote: "Numeric scoring held: the source prints 6 marks (2+2+1+1) for the whole SWOT and requires ONE strength, ONE weakness, ONE opportunity and ONE threat. It does not label the category weights or prescribe best-two scoring. This is an allocation ambiguity, not an arithmetical contradiction. All four complete category pools remain visible; compare the whole response using confidence only pending authoritative clarification." },
+    { id: "swot-ii", kind: "point", verbatim: "Weakness: traffic congestion, filling the business units, declining business activity in the units/dependency on external agencies", marks: null },
+    { id: "swot-iii", kind: "point", verbatim: "Opportunity: potential for growth in the pharmaceutical/food/ sector/disused railway line, age friendly town, development of historical sites, events and festivals, opportunity for IDA/EI to source appropriate enterprises for the business units/develop other educational opportunities like apprenticeships/get ideas from the public consultation", marks: null },
+    { id: "swot-iv", kind: "point", verbatim: "Threat: competition from other towns, funding, aging population, effect of traffic congestion/ the town being inaccessible/decline in footfall, sales and staff recruitment/ uncertain economic conditions", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Glenhale — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2025 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      10
+                ],
+                "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-b2i", topicId: "lcvp-link-modules-1-3", conceptId: "important-committee-engage-market-research",
+    id: "lcvp-2025-cl-b2i", topicId: "lcvp-link-modules-1-3", conceptId: "b2i",
     section: "B", questionRef: "2025 CL Section B Q2(i)",
+    stem: "Glenhale Glenhale, a market town, is located in the midlands of Ireland with easy access to a motorway offering connectivity to two large cities. It is steeped in architectural and historical heritage with a castle and gardens attracting tourists during the summer months. The town has a very active historical society who have identified a number of sites which, if developed, could increase the town's tourism potential. Glenhale has a business and innovation park on the outskirts of the town. There is potential for growth in the pharmaceutical and food sectors. Enterprise Ireland and the IDA are actively seeking appropriate enterprises to occupy the last remaining business units to ensure there are adequate job opportunities for local people. The local education and training centres are offering courses relevant to the pharmaceutical and food sectors, attracting students from outside the town. The town has five primary schools and one large co-educational secondary school. Three of the primary schools are located in the town centre. During school drop off and collection times there is major traffic congestion and the town is inaccessible to the local people trying to get to work or use the businesses in the town. Business owners have complained that it is affecting footfall, sales and ability to recruit staff. Fewer businesses are setting up in the town centre due to issues with traffic congestion, including major international retailers who chose alternative towns. To maintain the vibrancy and vitality of the town centre, the Glenhale Improvement Team was formed which consisted of all local major stakeholders. At its inaugural meeting many issues were identified including the areas of traffic congestion in the town. Developing tourism potential and securing suitable industry for the area were also discussed. The Glenhale Improvement Team set about undertaking a public consultation process to identify the concerns and suggestions of the local community in relation to the development of the town centre. Locals were surveyed for their thoughts. After analysing the suggestions put forward the Glenhale Improvement Team have prioritised and costed some of the suggestions made and created a number of action plans to put these projects in place. They communicate with the local townspeople about their progress via an email mailing list, a dedicated website and social media accounts. They also use these channels to appeal for volunteers to assist with certain aspects of the projects. They have appealed to local businesses to stay open while the traffic congestion solutions are being put in place. The Glenhale Improvement Team model is a collaborative approach which has promoted genuine solutions to sustain and revive the town centre.",
     questionText: "Why is it important for the committee to engage in market research?",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 1m","answer":3,"ofParts":8,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["To gather up to-date knowledge/set goals","To identify local concerns","To get suggestions","To gain insight into customer behaviour","To stay competitive","To make informed decisions","To manage risk","To measure success"]} },
+    { id: "responses", kind: "anyN", verbatim: "Why is it important for the committee to engage in market research? 3 @ 1m", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":3,"perOption":1,"options":["To gather up to-date knowledge/set goals","To identify local concerns","To get suggestions","To gain insight into customer behaviour","To stay competitive","To make informed decisions","To manage risk","To measure success"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Glenhale — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2025 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-b2ii", topicId: "lcvp-link-modules-0-1", conceptId: "ways-could-ask-people-glenhale-their",
+    id: "lcvp-2025-cl-b2ii", topicId: "lcvp-link-modules-1-3", conceptId: "b2ii",
     section: "B", questionRef: "2025 CL Section B Q2(ii)",
+    stem: "Glenhale Glenhale, a market town, is located in the midlands of Ireland with easy access to a motorway offering connectivity to two large cities. It is steeped in architectural and historical heritage with a castle and gardens attracting tourists during the summer months. The town has a very active historical society who have identified a number of sites which, if developed, could increase the town's tourism potential. Glenhale has a business and innovation park on the outskirts of the town. There is potential for growth in the pharmaceutical and food sectors. Enterprise Ireland and the IDA are actively seeking appropriate enterprises to occupy the last remaining business units to ensure there are adequate job opportunities for local people. The local education and training centres are offering courses relevant to the pharmaceutical and food sectors, attracting students from outside the town. The town has five primary schools and one large co-educational secondary school. Three of the primary schools are located in the town centre. During school drop off and collection times there is major traffic congestion and the town is inaccessible to the local people trying to get to work or use the businesses in the town. Business owners have complained that it is affecting footfall, sales and ability to recruit staff. Fewer businesses are setting up in the town centre due to issues with traffic congestion, including major international retailers who chose alternative towns. To maintain the vibrancy and vitality of the town centre, the Glenhale Improvement Team was formed which consisted of all local major stakeholders. At its inaugural meeting many issues were identified including the areas of traffic congestion in the town. Developing tourism potential and securing suitable industry for the area were also discussed. The Glenhale Improvement Team set about undertaking a public consultation process to identify the concerns and suggestions of the local community in relation to the development of the town centre. Locals were surveyed for their thoughts. After analysing the suggestions put forward the Glenhale Improvement Team have prioritised and costed some of the suggestions made and created a number of action plans to put these projects in place. They communicate with the local townspeople about their progress via an email mailing list, a dedicated website and social media accounts. They also use these channels to appeal for volunteers to assist with certain aspects of the projects. They have appealed to local businesses to stay open while the traffic congestion solutions are being put in place. The Glenhale Improvement Team model is a collaborative approach which has promoted genuine solutions to sustain and revive the town centre.",
     questionText: "Describe three ways you could ask the people of Glenhale for their opinion as part of the public consultation process.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@ 2m (1+1)","answer":3,"ofParts":6,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Survey/Questionnaire","Interview/direct questioning","Focus group/discussion","Social media platforms","Public meetings","Suggestion Box"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe three ways you could ask the people of Glenhale for their opinion as part of the public consultation process. 3@ 2m (1+1) Valid expansion required/no repetition", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe three ways you could ask the people of Glenhale for their opinion as part of the public consultation process. 3@ 2m (1+1) Valid expansion required/no repetition Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Survey/Questionnaire | 2. Interview/direct questioning | 3. Focus group/discussion | 4. Social media platforms | 5. Public meetings | 6. Suggestion Box", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Glenhale — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2025 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-b2iii", topicId: "lcvp-link-modules-0-0", conceptId: "methods-described-part-ii-above-consider",
+    id: "lcvp-2025-cl-b2iii", topicId: "lcvp-link-modules-1-3", conceptId: "b2iii",
     section: "B", questionRef: "2025 CL Section B Q2(iii)",
+    stem: "Glenhale Glenhale, a market town, is located in the midlands of Ireland with easy access to a motorway offering connectivity to two large cities. It is steeped in architectural and historical heritage with a castle and gardens attracting tourists during the summer months. The town has a very active historical society who have identified a number of sites which, if developed, could increase the town's tourism potential. Glenhale has a business and innovation park on the outskirts of the town. There is potential for growth in the pharmaceutical and food sectors. Enterprise Ireland and the IDA are actively seeking appropriate enterprises to occupy the last remaining business units to ensure there are adequate job opportunities for local people. The local education and training centres are offering courses relevant to the pharmaceutical and food sectors, attracting students from outside the town. The town has five primary schools and one large co-educational secondary school. Three of the primary schools are located in the town centre. During school drop off and collection times there is major traffic congestion and the town is inaccessible to the local people trying to get to work or use the businesses in the town. Business owners have complained that it is affecting footfall, sales and ability to recruit staff. Fewer businesses are setting up in the town centre due to issues with traffic congestion, including major international retailers who chose alternative towns. To maintain the vibrancy and vitality of the town centre, the Glenhale Improvement Team was formed which consisted of all local major stakeholders. At its inaugural meeting many issues were identified including the areas of traffic congestion in the town. Developing tourism potential and securing suitable industry for the area were also discussed. The Glenhale Improvement Team set about undertaking a public consultation process to identify the concerns and suggestions of the local community in relation to the development of the town centre. Locals were surveyed for their thoughts. After analysing the suggestions put forward the Glenhale Improvement Team have prioritised and costed some of the suggestions made and created a number of action plans to put these projects in place. They communicate with the local townspeople about their progress via an email mailing list, a dedicated website and social media accounts. They also use these channels to appeal for volunteers to assist with certain aspects of the projects. They have appealed to local businesses to stay open while the traffic congestion solutions are being put in place. The Glenhale Improvement Team model is a collaborative approach which has promoted genuine solutions to sustain and revive the town centre. Describe three ways you could ask the people of Glenhale for their opinion as part of the public consultation process.",
     questionText: "Of the methods described in part (ii) above, which one do you consider to be the most successful method? Give reasons for your answer.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 1m","answer":3,"ofParts":9,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Cost effective","Quality of information received","Potential to ask for other questions/flexibility to ask a wide range of questions","Speed/rapid data collection/results","Responses from a large sample/response rate","Validity/reliability","Easy to fill","Accessible","Anonymous"]} },
+    { id: "responses", kind: "anyN", verbatim: "Of the methods described in part (ii) above, which one do you consider to be the most successful method. Give reasons for your answer 3 reasons 3 @ 1m Answers may refer to the following:", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred.  All three reasons must support the ONE method chosen from your B2(ii) responses. No mark for naming the method is printed.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Cost effective","Quality of information received","Potential to ask for other questions/flexibility to ask a wide range of questions","Speed/rapid data collection/results","Responses from a large sample/response rate","Validity/reliability","Easy to fill","Accessible","Anonymous"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Glenhale — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2025 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-b3i", topicId: "lcvp-link-modules-1-3", conceptId: "important-consult-stakeholders-project-when-developing",
+    id: "lcvp-2025-cl-b3i", topicId: "lcvp-link-modules-1-3", conceptId: "b3i",
     section: "B", questionRef: "2025 CL Section B Q3(i)",
+    stem: "Glenhale Glenhale, a market town, is located in the midlands of Ireland with easy access to a motorway offering connectivity to two large cities. It is steeped in architectural and historical heritage with a castle and gardens attracting tourists during the summer months. The town has a very active historical society who have identified a number of sites which, if developed, could increase the town's tourism potential. Glenhale has a business and innovation park on the outskirts of the town. There is potential for growth in the pharmaceutical and food sectors. Enterprise Ireland and the IDA are actively seeking appropriate enterprises to occupy the last remaining business units to ensure there are adequate job opportunities for local people. The local education and training centres are offering courses relevant to the pharmaceutical and food sectors, attracting students from outside the town. The town has five primary schools and one large co-educational secondary school. Three of the primary schools are located in the town centre. During school drop off and collection times there is major traffic congestion and the town is inaccessible to the local people trying to get to work or use the businesses in the town. Business owners have complained that it is affecting footfall, sales and ability to recruit staff. Fewer businesses are setting up in the town centre due to issues with traffic congestion, including major international retailers who chose alternative towns. To maintain the vibrancy and vitality of the town centre, the Glenhale Improvement Team was formed which consisted of all local major stakeholders. At its inaugural meeting many issues were identified including the areas of traffic congestion in the town. Developing tourism potential and securing suitable industry for the area were also discussed. The Glenhale Improvement Team set about undertaking a public consultation process to identify the concerns and suggestions of the local community in relation to the development of the town centre. Locals were surveyed for their thoughts. After analysing the suggestions put forward the Glenhale Improvement Team have prioritised and costed some of the suggestions made and created a number of action plans to put these projects in place. They communicate with the local townspeople about their progress via an email mailing list, a dedicated website and social media accounts. They also use these channels to appeal for volunteers to assist with certain aspects of the projects. They have appealed to local businesses to stay open while the traffic congestion solutions are being put in place. The Glenhale Improvement Team model is a collaborative approach which has promoted genuine solutions to sustain and revive the town centre.",
     questionText: "Why is it important to consult the stakeholders of a project when developing an action plan?",
-    tariffModel: {"kind":"bestNofParts","notation":"2@2m (1+1)","answer":2,"ofParts":6,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["They are a valuable source of information/have an understanding of an issue","To help identify and control external risks/ensure project success as potential problems are identified early on that may have been missed","It can form a basis for future collaboration/effective decision making","To generate a greater sense of ownership/build strong relationships/reduces the potential for conflict/resistance to change","To build trust and transparency showing the process is fair","Stakeholders can monitor the progress being made and help ensure the project stays on track"]} },
+    { id: "responses", kind: "criterion", verbatim: "Why is it important to consult the stakeholders of a project when developing an action plan? 4 marks 2@2m (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Why is it important to consult the stakeholders of a project when developing an action plan? 4 marks 2@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. They are a valuable source of information/have an understanding of an issue | 2. To help identify and control external risks/ensure project success as potential problems are identified early on that may have been missed | 3. It can form a basis for future collaboration/effective decision making | 4. To generate a greater sense of ownership/build strong relationships/reduces the potential for conflict/resistance to change | 5. To build trust and transparency showing the process is fair | 6. Stakeholders can monitor the progress being made and help ensure the project stays on track", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Glenhale — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2025 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-b3ii", topicId: "lcvp-link-modules-1-3", conceptId: "locals-put-forward-suggestions-improve-their",
+    id: "lcvp-2025-cl-b3ii", topicId: "lcvp-link-modules-1-3", conceptId: "b3ii",
     section: "B", questionRef: "2025 CL Section B Q3(ii)",
+    stem: "Glenhale Glenhale, a market town, is located in the midlands of Ireland with easy access to a motorway offering connectivity to two large cities. It is steeped in architectural and historical heritage with a castle and gardens attracting tourists during the summer months. The town has a very active historical society who have identified a number of sites which, if developed, could increase the town's tourism potential. Glenhale has a business and innovation park on the outskirts of the town. There is potential for growth in the pharmaceutical and food sectors. Enterprise Ireland and the IDA are actively seeking appropriate enterprises to occupy the last remaining business units to ensure there are adequate job opportunities for local people. The local education and training centres are offering courses relevant to the pharmaceutical and food sectors, attracting students from outside the town. The town has five primary schools and one large co-educational secondary school. Three of the primary schools are located in the town centre. During school drop off and collection times there is major traffic congestion and the town is inaccessible to the local people trying to get to work or use the businesses in the town. Business owners have complained that it is affecting footfall, sales and ability to recruit staff. Fewer businesses are setting up in the town centre due to issues with traffic congestion, including major international retailers who chose alternative towns. To maintain the vibrancy and vitality of the town centre, the Glenhale Improvement Team was formed which consisted of all local major stakeholders. At its inaugural meeting many issues were identified including the areas of traffic congestion in the town. Developing tourism potential and securing suitable industry for the area were also discussed. The Glenhale Improvement Team set about undertaking a public consultation process to identify the concerns and suggestions of the local community in relation to the development of the town centre. Locals were surveyed for their thoughts. After analysing the suggestions put forward the Glenhale Improvement Team have prioritised and costed some of the suggestions made and created a number of action plans to put these projects in place. They communicate with the local townspeople about their progress via an email mailing list, a dedicated website and social media accounts. They also use these channels to appeal for volunteers to assist with certain aspects of the projects. They have appealed to local businesses to stay open while the traffic congestion solutions are being put in place. The Glenhale Improvement Team model is a collaborative approach which has promoted genuine solutions to sustain and revive the town centre.",
     questionText: "Locals put forward suggestions to improve their town centre. Identify one specific suggestion that may have been put forward by the locals and develop an action plan for your suggestion.",
-    tariffModel: {"kind":"bestNofParts","notation":"5 @ 1m","answer":5,"ofParts":8,"perPart":1}, totalMarks: 5,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 5 of the answers the scheme states", marks: 5, contextNote: "5 answers at 1 mark each.", openList: true, group: {"claimMax":5,"perOption":1,"options":["Reduction in traffic congestion","Becoming an age friendly town","Organising events/festivals","Active Travel promotion/ pedestrian/cycle friendly/infrastructure improvements","Promotes local businesses-Introducing a town voucher scheme","Enhanced public places","Attracting businesses/residents to vacant properties","Relocate the schools outside the town"]} },
+    { id: "suggestion", kind: "criterion", verbatim: "Suggestion", marks: 1, contextNote: "Choose ONE specific suggestion and develop the same suggestion in the action plan. Original models: Reduction in traffic congestion | Becoming an age friendly town | Organising events/festivals | Active Travel promotion/ pedestrian/cycle friendly/infrastructure improvements | Promotes local businesses-Introducing a town voucher scheme | Enhanced public places | Attracting businesses/residents to vacant properties | Relocate the schools outside the town | Etc.", permittedMarks: [0,1] },
+    { id: "action-plan-content", kind: "criterion", verbatim: "Action Plan", marks: 5, contextNote: "Five CONTENT points, 5 @ 1m; NO MARKS FOR HEADINGS. Original scaffold: Aims/Objectives | Research methods | Analysis of research | Resources/action steps | Schedule of time | Costings/finance | Evaluation methods. No completed model action plan is printed; none is invented.", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]},{"id":"response-4","verbatim":"Response 4","marks":1,"permittedMarks":[0,1]},{"id":"response-5","verbatim":"Response 5","marks":1,"permittedMarks":[0,1]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Glenhale — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2025 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-b3iii", topicId: "lcvp-link-modules-1-3", conceptId: "people-glenhale-evaluate-their-action-plan",
+    id: "lcvp-2025-cl-b3iii", topicId: "lcvp-link-modules-1-3", conceptId: "b3iii",
     section: "B", questionRef: "2025 CL Section B Q3(iii)",
+    stem: "Glenhale Glenhale, a market town, is located in the midlands of Ireland with easy access to a motorway offering connectivity to two large cities. It is steeped in architectural and historical heritage with a castle and gardens attracting tourists during the summer months. The town has a very active historical society who have identified a number of sites which, if developed, could increase the town's tourism potential. Glenhale has a business and innovation park on the outskirts of the town. There is potential for growth in the pharmaceutical and food sectors. Enterprise Ireland and the IDA are actively seeking appropriate enterprises to occupy the last remaining business units to ensure there are adequate job opportunities for local people. The local education and training centres are offering courses relevant to the pharmaceutical and food sectors, attracting students from outside the town. The town has five primary schools and one large co-educational secondary school. Three of the primary schools are located in the town centre. During school drop off and collection times there is major traffic congestion and the town is inaccessible to the local people trying to get to work or use the businesses in the town. Business owners have complained that it is affecting footfall, sales and ability to recruit staff. Fewer businesses are setting up in the town centre due to issues with traffic congestion, including major international retailers who chose alternative towns. To maintain the vibrancy and vitality of the town centre, the Glenhale Improvement Team was formed which consisted of all local major stakeholders. At its inaugural meeting many issues were identified including the areas of traffic congestion in the town. Developing tourism potential and securing suitable industry for the area were also discussed. The Glenhale Improvement Team set about undertaking a public consultation process to identify the concerns and suggestions of the local community in relation to the development of the town centre. Locals were surveyed for their thoughts. After analysing the suggestions put forward the Glenhale Improvement Team have prioritised and costed some of the suggestions made and created a number of action plans to put these projects in place. They communicate with the local townspeople about their progress via an email mailing list, a dedicated website and social media accounts. They also use these channels to appeal for volunteers to assist with certain aspects of the projects. They have appealed to local businesses to stay open while the traffic congestion solutions are being put in place. The Glenhale Improvement Team model is a collaborative approach which has promoted genuine solutions to sustain and revive the town centre.",
     questionText: "Why would the people of Glenhale evaluate their action plan?",
-    tariffModel: {"kind":"bestNofParts","notation":"2 @ 1m","answer":2,"ofParts":4,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Why would Glenhale evaluate their action plan — any 2", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["To see if they have achieved their aims/objectives/what went well","To find out what did not go well and why","To make judgements about the action plan/what corrective action to take","To inform future decisions"]} },
+    { id: "responses", kind: "anyN", verbatim: "Why would Glenhale evaluate their action plan? 2 marks 2 @ 1m", marks: 2, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":1,"options":["To see if they have achieved their aims/objectives/what went well","To find out what did not go well and why","To make judgements about the action plan/what corrective action to take","To inform future decisions"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Glenhale — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2025 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c1a", topicId: "lcvp-link-modules-1-4", conceptId: "reasons-think-school-located-where",
+    id: "lcvp-2025-cl-c1a", topicId: "lcvp-link-modules-1-4", conceptId: "c1a",
     section: "C", questionRef: "2025 CL Section C Q1(a)",
     stem: "Consider your local area.",
     questionText: "State two reasons why you think your school is located where it is.",
-    tariffModel: {"kind":"bestNofParts","notation":"2@2m (0/2)","answer":2,"ofParts":5,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; (0/2) — all or nothing on each answer.", openList: true, group: {"claimMax":2,"perOption":2,"options":["In a town/ large student population","Proximity to road network /out of the way of major roads","Close to facilities, library, town hall, community centres","Easily accessible to students, walk, cycle, good bus route","Tradition in the area/always there"]} },
+    { id: "responses", kind: "anyN", verbatim: "State two reasons why you think your school is located where it is. 4 marks 2@2m (0/2)", marks: 4, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 2 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":2,"perOption":2,"options":["In a town/ large student population","Proximity to road network /out of the way of major roads","Close to facilities, library, town hall, community centres","Easily accessible to students, walk, cycle, good bus route","Tradition in the area/always there"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c1b", topicId: "lcvp-link-modules-1-4", conceptId: "benefits-recreational-facilities-organised-activities-teenagers",
+    id: "lcvp-2025-cl-c1b", topicId: "lcvp-link-modules-1-4", conceptId: "c1b",
     section: "C", questionRef: "2025 CL Section C Q1(b)",
     stem: "Consider your local area.",
     questionText: "Outline the benefits of recreational facilities and organised activities for teenagers in local areas.",
-    tariffModel: {"kind":"bestNofParts","notation":"2@2 (1+1)","answer":2,"ofParts":6,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Reduces anti-social behaviour eg vandalism/loitering etc","Helps physical wellbeing/improves fitness and cardiovascular health/improved sleep","Helps mental wellbeing/reducing stress/gives them something to do","Helps develop social skills/shared experiences/improved relationships/builds confidence/self-esteem/sense of belonging","Develops team building skills which will helps them in the future","Personal skills/qualities developed or learned"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline the benefits of recreational facilities and organised activities for teenagers in local areas. 4 marks 2@2 (1+1) + valid expansion", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Outline the benefits of recreational facilities and organised activities for teenagers in local areas. 4 marks 2@2 (1+1) + valid expansion Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Reduces anti-social behaviour eg vandalism/loitering etc. | 2. Helps physical wellbeing/improves fitness and cardiovascular health/improved sleep | 3. Helps mental wellbeing/reducing stress/gives them something to do | 4. Helps develop social skills/shared experiences/improved relationships/builds confidence/self-esteem/sense of belonging | 5. Develops team building skills which will helps them in the future | 6. Personal skills/qualities developed or learned The source also prints “Etc.”.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c1c", topicId: "lcvp-link-modules-1-4", conceptId: "group-local-area-wants-improve-facilities",
+    id: "lcvp-2025-cl-c1c", topicId: "lcvp-link-modules-1-4", conceptId: "c1c",
     section: "C", questionRef: "2025 CL Section C Q1(c)",
     stem: "Consider your local area.",
     questionText: "A group in your local area wants to improve facilities for young people. Design a questionnaire, with five questions, this group would use to carry out the research.",
-    tariffModel: {"kind":"fixed","notation":"3 @ 1 mark","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Layout: Heading / variety of question styles / instructions", marks: 8, accepts: ["Questions: 5 questions required"], contextNote: "8 marks for this answer.", openList: true },
+    { id: "layout-1", kind: "point", verbatim: "Heading", marks: 1, contextNote: "Required questionnaire layout component, 1 or 0. The source prints a grid, not a model questionnaire; no model is invented." },
+    { id: "layout-2", kind: "point", verbatim: "variety of question styles", marks: 1 },
+    { id: "layout-3", kind: "point", verbatim: "instructions", marks: 1 },
+    { id: "questions", kind: "criterion", verbatim: "5 questions required", marks: 5, contextNote: "Five questions for the SAME local youth-facilities questionnaire, 1 mark each, in addition to all three layout components.", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]},{"id":"response-4","verbatim":"Response 4","marks":1,"permittedMarks":[0,1]},{"id":"response-5","verbatim":"Response 5","marks":1,"permittedMarks":[0,1]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c1d", topicId: "lcvp-link-modules-1-4", conceptId: "factors-group-part-c-need-consider",
+    id: "lcvp-2025-cl-c1d", topicId: "lcvp-link-modules-1-4", conceptId: "c1d",
     section: "C", questionRef: "2025 CL Section C Q1(d)",
-    stem: "Consider your local area.",
+    stem: "Consider your local area. A group in your local area wants to improve facilities for young people. Design a questionnaire, with five questions, this group would use to carry out the research.",
     questionText: "What factors would the group in part (c) need to consider to ensure the success of the research?",
-    tariffModel: {"kind":"bestNofParts","notation":"3@3m (1+1+1)","answer":3,"ofParts":6,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Timeline/steps: plan ahead/ outline research steps/time schedule/realistic timeline","Questions: clearly defined/provide focus/narrow/specific/answerable/avoid bias","Target respondents: target group/sample size/age range/incentives/","Location/distribution method: online platforms/right location where target audience will see it/appropriate time","Collate and analyse data: technology requirements/gather data/interpret/draw conclusions","Cost/resources required: paper based/printing/mailing costs/online/respondents needs/personnel/software"]} },
+    { id: "responses", kind: "criterion", verbatim: "What factors would the group in part (c) need to consider to ensure the success of the research. 9 marks 3@3m (1+1+1)", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: What factors would the group in part (c) need to consider to ensure the success of the research. 9 marks 3@3m (1+1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Timeline/steps: plan ahead/ outline research steps/time schedule/realistic timeline | 2. Questions: clearly defined/provide focus/narrow/specific/answerable/avoid bias | 3. Target respondents: target group/sample size/age range/incentives/ | 4. Location/distribution method: online platforms/right location where target audience will see it/appropriate time | 5. Collate and analyse data: technology requirements/gather data/interpret/draw conclusions | 6. Cost/resources required: paper based/printing/mailing costs/online/respondents needs/personnel/software", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original youth-facilities research context",
+                "pages": [
+                      17
+                ],
+                "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -4517,322 +4959,608 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c2b", topicId: "lcvp-link-modules-0-2", conceptId: "characteristics-employers-look-potential-employees-think",
+    id: "lcvp-2025-cl-c2a", topicId: "lcvp-link-modules-0-2", conceptId: "c2a",
+    section: "C", questionRef: "2025 CL Section C Q2(a)",
+    stem: "You have been asked to complete an investigation on a career of your choice.",
+    questionText: "(i) Name two Leaving Certificate subjects you are studying. (ii) Outline how these subjects have helped in completing your work experience.",
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "profile-1", kind: "criterion", verbatim: "Subject", marks: 2, contextNote: "Two different Leaving Certificate subjects you study; each subject name earns 1 mark and its matching outline of how it helped YOUR work experience earns 1 mark. Original allocation: (i) Two subjects 2 marks 2@1m (ii) Outline 2 marks 2@1m. No prescribed subject pair or model personal response is printed.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Subject","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Outline for this subject","marks":1,"permittedMarks":[0,1]}] },
+    { id: "profile-2", kind: "criterion", verbatim: "Subject", marks: 2, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Subject","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Outline for this subject","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
+    id: "lcvp-2025-cl-c2b", topicId: "lcvp-link-modules-0-1", conceptId: "c2b",
     section: "C", questionRef: "2025 CL Section C Q2(b)",
     stem: "You have been asked to complete an investigation on a career of your choice.",
     questionText: "List three characteristics that employers look for in potential employees. Explain why you think each is important.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m (1+1)","answer":3,"ofParts":8,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["A hard worker/ productive, hardworking people are better for a business","Honest/trustworthy: it is essential that workers do an honest day’s work for their pay. Do not steal from employer/loyal","A good communicator/ individual need to be able to communicate with managers/ other workers and customers","Adaptability","Reliable/punctual","Shows initiative: employers need workers who can work on their own and do not need constant direction/positive attitude","Problem solving abilities/how they handle challenges","A team player/major feature of a workplace/perform assigned tasks within a team/ Willing to do their share"]} },
+    { id: "responses", kind: "criterion", verbatim: "List three characteristics that employers look for in potential employees. Explain why you think each is important. 6 marks 3@2m (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: List three characteristics that employers look for in potential employees. Explain why you think each is important. 6 marks 3@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. A hard worker/ productive, hardworking people are better for a business | 2. Honest/trustworthy: it is essential that workers do an honest day’s work for their pay. Do not steal from employer/loyal | 3. A good communicator/ individual need to be able to communicate with managers/ other workers and customers | 4. Adaptability | 5. Reliable/punctual | 6. Shows initiative: employers need workers who can work on their own and do not need constant direction/positive attitude | 7. Problem solving abilities/how they handle challenges | 8. A team player/major feature of a workplace/perform assigned tasks within a team/ Willing to do their share The source also prints “Etc.”.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c2c", topicId: "lcvp-link-modules-0-4", conceptId: "work-experience-shadowing-might-influence-choice",
+    id: "lcvp-2025-cl-c2c", topicId: "lcvp-link-modules-0-2", conceptId: "c2c",
     section: "C", questionRef: "2025 CL Section C Q2(c)",
     stem: "You have been asked to complete an investigation on a career of your choice.",
     questionText: "Describe how your work experience/shadowing might influence you in your choice of career.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m (1+1)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Can help make a decision regarding career choice/do or do not want to pursue the career after they leave school/plan career path","Experience the type of work involved in the career/enjoyed it or not","Found out about job prospects/pay/hours/working conditions","Gives an insight into the behaviour/attitude expected in the particular job","Realise what skills/qualities are required for this career/have or have not these skills/qualities","Feedback from adults other than teachers can help the student be more realistic about their career path/work involved","You will have a referee for your CV which may help you achieve work in the career in the future/networking"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe how your work experience/shadowing might influence you in your choice of career. 6 marks 3@2m (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe how your work experience/shadowing might influence you in your choice of career. 6 marks 3@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Can help make a decision regarding career choice/do or do not want to pursue the career after they leave school/plan career path | 2. Experience the type of work involved in the career/enjoyed it or not | 3. Found out about job prospects/pay/hours/working conditions | 4. Gives an insight into the behaviour/attitude expected in the particular job | 5. Realise what skills/qualities are required for this career/have or have not these skills/qualities | 6. Feedback from adults other than teachers can help the student be more realistic about their career path/work involved | 7. You will have a referee for your CV which may help you achieve work in the career in the future/networking", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c2d", topicId: "lcvp-link-modules-0-1", conceptId: "sources-information-used-when-investigating-chosen",
+    id: "lcvp-2025-cl-c2d", topicId: "lcvp-link-modules-0-2", conceptId: "c2d",
     section: "C", questionRef: "2025 CL Section C Q2(d)",
     stem: "You have been asked to complete an investigation on a career of your choice.",
     questionText: "Describe three sources of information you used when investigating your chosen career. Give a reason for choosing each source.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@3m (1+1+1)","answer":3,"ofParts":7,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Career Guidance Teacher: this is where the student will book an appointment to review test results/suitability for career/course options","Internet/websites e.g. Careers Portal/Qualifax/CAO/college websites","Open Day/Career fairs: organised day to talk to lecturers/students/ attend lectures/get to see facilities/speak to students/lecturers/careers exhibition e.g. His /her options variety of third level institutions in one place","Work Experience/shadowing: this is where a student will get to experience the day to day duties involved in the career","Interview: talking to someone doing this job allows you to ask questions e.g. salary, advantages and disadvantages of the job","College prospectus/brochures/newspaper articles/pamphlets/library","Self-assessment/aptitude tests: These are tests students can take to show their abilities/aptitude towards a particular career/highlights personal attributes"]} },
+    { id: "profile-1", kind: "criterion", verbatim: "Source", marks: 3, contextNote: "THREE complete source + description + reason profiles. Original allocation: 3@3m (1+1+1). Keep the description and reason matched to the SAME source. Full original guidance: Career Guidance Teacher: this is where the student will book an appointment to review test results/suitability for career/course options | Internet/websites e.g. Careers Portal/Qualifax/CAO/college websites | Open Day/Career fairs: organised day to talk to lecturers/students/ attend lectures/get to see facilities/speak to students/lecturers/careers exhibition e.g. His /her options variety of third level institutions in one place | Work Experience/shadowing: this is where a student will get to experience the day to day duties involved in the career | Interview: talking to someone doing this job allows you to ask questions e.g. salary, advantages and disadvantages of the job | College prospectus/brochures/newspaper articles/pamphlets/library | Self-assessment/aptitude tests: These are tests students can take to show their abilities/aptitude towards a particular career/highlights personal attributes", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Source","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Description","marks":1,"permittedMarks":[0,1]},{"id":"component-3","verbatim":"Reason","marks":1,"permittedMarks":[0,1]}] },
+    { id: "profile-2", kind: "criterion", verbatim: "Source", marks: 3, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Source","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Description","marks":1,"permittedMarks":[0,1]},{"id":"component-3","verbatim":"Reason","marks":1,"permittedMarks":[0,1]}] },
+    { id: "profile-3", kind: "criterion", verbatim: "Source", marks: 3, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Source","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Description","marks":1,"permittedMarks":[0,1]},{"id":"component-3","verbatim":"Reason","marks":1,"permittedMarks":[0,1]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c3a", topicId: "lcvp-link-modules-0-4", conceptId: "student-use-cv-apply-job",
+    id: "lcvp-2025-cl-c3a", topicId: "lcvp-link-modules-0-4", conceptId: "c3a",
     section: "C", questionRef: "2025 CL Section C Q3(a)",
     stem: "The world of work.",
     questionText: "Why would a student use a CV to apply for a job?",
-    tariffModel: {"kind":"bestNofParts","notation":"4 @1m","answer":4,"ofParts":8,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Give a summary of their personal details","Give a summary of their education","Give a summary of work experience","Give a summary of interests/hobbies etc","To show the prospective employer why they should hire you/highlight skills applicable to the job","Gives details of referees a potential employer may contact/to verify suitability for the job","All your information is in the one place/to make a good impression","Give a summary of achievements"]} },
+    { id: "responses", kind: "anyN", verbatim: "Why would a student use a CV to apply for a job? 4 marks 4 @1m", marks: 4, contextNote: "Choose any 4 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":4,"perOption":1,"options":["Give a summary of their personal details","Give a summary of their education","Give a summary of work experience","Give a summary of interests/hobbies etc","To show the prospective employer why they should hire you/highlight skills applicable to the job","Gives details of referees a potential employer may contact/to verify suitability for the job","All your information is in the one place/to make a good impression","Give a summary of achievements"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c3b", topicId: "lcvp-link-modules-1-3", conceptId: "ways-world-work-differs-school",
+    id: "lcvp-2025-cl-c3b", topicId: "lcvp-link-modules-0-0", conceptId: "c3b",
     section: "C", questionRef: "2025 CL Section C Q3(b)",
     stem: "The world of work.",
     questionText: "Outline two ways the world of work differs from school.",
-    tariffModel: {"kind":"bestNofParts","notation":"2@2marks (1+1)","answer":2,"ofParts":8,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work has longer hours/less holidays than in school","Work is more practical than school/different skillset needed/school is often theory based","Work has a more day-to-day variety than in school","Work has more Teamwork evident than in school","In work different demands are made on you/different to those made in school","If you are not fully committed in work, you may get a bad review/let go. In school, you will get a bad report/poor grades","In work you get paid, you do not get paid to go to school","ICT is usually more current in the workplace than in school"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline two ways the world of work differs from school. 4 marks 2@2marks (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Outline two ways the world of work differs from school. 4 marks 2@2marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Work has longer hours/less holidays than in school. | 2. Work is more practical than school/different skillset needed/school is often theory based. | 3. Work has a more day-to-day variety than in school. | 4. Work has more Teamwork evident than in school. | 5. In work different demands are made on you/different to those made in school | 6. If you are not fully committed in work, you may get a bad review/let go. In school, you will get a bad report/poor grades. | 7. In work you get paid, you do not get paid to go to school. | 8. ICT is usually more current in the workplace than in school.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c3c", topicId: "lcvp-link-modules-0-0", conceptId: "be-helpful-have-clearly-defined-role",
+    id: "lcvp-2025-cl-c3c", topicId: "lcvp-link-modules-0-0", conceptId: "c3c",
     section: "C", questionRef: "2025 CL Section C Q3(c)",
     stem: "The world of work.",
     questionText: "Why would it be helpful to have a clearly defined role in the workplace?",
-    tariffModel: {"kind":"bestNofParts","notation":"4 @ 2m (1+1)","answer":4,"ofParts":7,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["So that work can be divided up/employee’s skills can be matched to a specific job","Each worker knows who their supervisor/manager is/less supervision","Each employee knows their job and each person knows what are responsible for","Work will be carried out to a higher standard if employees concentrate on certain jobs or what they are good at/Productivity","Less disputes/confusion/less boredom","Safety aspect/employees are trained for a particular job","Motivation/Morale/better atmosphere in workplace/less stress"]} },
+    { id: "responses", kind: "criterion", verbatim: "Why would it be helpful to have a clearly defined role in the workplace? 8 marks 4 @ 2m (1+1)", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: Why would it be helpful to have a clearly defined role in the workplace? 8 marks 4 @ 2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. So that work can be divided up/employee’s skills can be matched to a specific job. | 2. Each worker knows who their supervisor/manager is/less supervision. | 3. Each employee knows their job and each person knows what are responsible for. | 4. Work will be carried out to a higher standard if employees concentrate on certain jobs or what they are good at/Productivity. | 5. Less disputes/confusion/less boredom. | 6. Safety aspect/employees are trained for a particular job. | 7. Motivation/Morale/better atmosphere in workplace/less stress.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c3d", topicId: "lcvp-link-modules-1-3", conceptId: "legal-responsibilities-employers-have-when-employing",
+    id: "lcvp-2025-cl-c3d", topicId: "lcvp-link-modules-0-0", conceptId: "c3d",
     section: "C", questionRef: "2025 CL Section C Q3(d)",
     stem: "The world of work.",
     questionText: "Outline three legal responsibilities that employers have when employing workers under 18 years of age.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@3m (1+1+1)","answer":3,"ofParts":10,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Employer must keep a copy of their birth certificate/passport/safe/secure/data protection","Detailed records must be kept of name/DOB/start time/end time/pay rate","Must comply with law in relation to hours worked-early morning start times/late evening finishing/21 days of holiday during term time","Breaks-young workers are entitled to more breaks/30 minutes after 4 hours(u16)/4.5 hours (16&17)","Written permission is required for u16/consent from parent or guardian","Poster detailing the rights of young people in the workplace must be displayed in an appropriate place","Provide the minimum wage for u18s (70% of minimum wage, €9.45)","Must provide employees with a copy of official summary of the Protection of Young Person’s (Employment Act) along with details of their employment/contract","Employers have a legal obligation not to let u18s sell alcohol or cigarettes to the public","Garda vetting – required for over 16s when working with children/vulnerable adults"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline three legal responsibilities that employers have when employing workers under 18 years of age. 9 marks 3@3m (1+1+1)", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Outline three legal responsibilities that employers have when employing workers under 18 years of age. 9 marks 3@3m (1+1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Employer must keep a copy of their birth certificate/passport/safe/secure/data protection | 2. Detailed records must be kept of name/DOB/start time/end time/pay rate | 3. Must comply with law in relation to hours worked-early morning start times/late evening finishing/21 days of holiday during term time | 4. Breaks-young workers are entitled to more breaks/30 minutes after 4 hours(u16)/4.5 hours (16&17) | 5. Written permission is required for u16/consent from parent or guardian | 6. Poster detailing the rights of young people in the workplace must be displayed in an appropriate place | 7. Provide the minimum wage for u18s (70% of minimum wage, €9.45) | 8. Must provide employees with a copy of official summary of the Protection of Young Person’s (Employment Act) along with details of their employment/contract | 9. Employers have a legal obligation not to let u18s sell alcohol or cigarettes to the public | 10. Garda vetting – required for over 16s when working with children/vulnerable adults These figures and age qualifications are the original 2025 examination guidance; they have not been silently updated.", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c4a", topicId: "lcvp-link-modules-1-1", conceptId: "business-enterprise-visited-product-service-provides",
+    id: "lcvp-2025-cl-c4a", topicId: "lcvp-link-modules-1-1", conceptId: "c4a",
     section: "C", questionRef: "2025 CL Section C Q4(a)",
     stem: "Your Link Modules class took part in a visit out to a local business enterprise.",
     questionText: "Name a business enterprise that you visited. Identify the product/service it provides.",
-    tariffModel: {"kind":"fixed","notation":"4 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Name of the business", marks: 4, accepts: ["Product/Service it provides"], contextNote: "4 marks for this answer.", openList: true },
+    { id: "business", kind: "criterion", verbatim: "Name of the business", marks: 2, contextNote: "Name the business YOU visited, 2 or 0. The next required component must match this same business; no model business is invented.", permittedMarks: [0,2] },
+    { id: "product-service", kind: "criterion", verbatim: "Product/Service it provides", marks: 2, contextNote: "Required product or service of that SAME business, 2 or 0. No internal 1-mark step is printed.", permittedMarks: [0,2] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c4b", topicId: "lcvp-link-modules-1-2", conceptId: "key-areas-informed-about-during-visit",
+    id: "lcvp-2025-cl-c4b", topicId: "lcvp-link-modules-1-1", conceptId: "c4b",
     section: "C", questionRef: "2025 CL Section C Q4(b)",
     stem: "Your Link Modules class took part in a visit out to a local business enterprise.",
     questionText: "Outline four key areas you were informed about during this visit.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 1 mark","answer":4,"ofParts":10,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Background/history of entrepreneur","Description of Product/Service","Marketing","Health & Safety","Staffing","Finance","Challenges faced","Future plans","Environment/CSR/Sustainability","Production/Manufacturing process"]} },
+    { id: "visit-content", kind: "criterion", verbatim: "Outline four key areas", marks: 4, contextNote: "Four CONTENT points from YOUR visit, 4 x 1 mark. The source explicitly states No marks for headings. These are the complete original scaffold areas, not paid label selections: Background/history of entrepreneur | Description of Product/Service | Marketing | Health & Safety | Staffing | Finance | Challenges faced | Future plans | Environment/CSR/Sustainability | Production/Manufacturing process | Etc", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]},{"id":"response-4","verbatim":"Response 4","marks":1,"permittedMarks":[0,1]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c4c", topicId: "lcvp-link-modules-1-1", conceptId: "steps-should-be-taken-ensure-visit",
+    id: "lcvp-2025-cl-c4c", topicId: "lcvp-link-modules-1-1", conceptId: "c4c",
     section: "C", questionRef: "2025 CL Section C Q4(c)",
     stem: "Your Link Modules class took part in a visit out to a local business enterprise.",
     questionText: "What steps should be taken to ensure that this visit is organised and run efficiently?",
-    tariffModel: {"kind":"bestNofParts","notation":"4x2 (1+1)","answer":4,"ofParts":8,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Contact the enterprise/arrange a date and time","Get permission from principal/parents/permission slips","Research the company/prepare questions to ask","Ask the teacher to review/ questions prepared/plan of action for the day","Arrange transport/collect money","Prepare necessary materials for the visit/questionnaire/notebook & pen","Decide who is doing to do what/assign roles","Business makes necessary preparation, ppe,powerpoint, booklet"]} },
+    { id: "responses", kind: "criterion", verbatim: "What steps should be taken to ensure that this visit is organised and run efficiently? 8 marks 4x2 (1+1)", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: What steps should be taken to ensure that this visit is organised and run efficiently? 8 marks 4x2 (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Contact the enterprise/arrange a date and time | 2. Get permission from principal/parents/permission slips | 3. Research the company/prepare questions to ask | 4. Ask the teacher to review/ questions prepared/plan of action for the day | 5. Arrange transport/collect money | 6. Prepare necessary materials for the visit/questionnaire/notebook & pen | 7. Decide who is doing to do what/assign roles | 8. Business makes necessary preparation, ppe,powerpoint, booklet The source also prints “Etc.”.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c5a", topicId: "lcvp-link-modules-1-2", conceptId: "prepare-agenda-first-meeting-plan-organise",
+    id: "lcvp-2025-cl-c4d", topicId: "lcvp-link-modules-1-1", conceptId: "c4d",
+    section: "C", questionRef: "2025 CL Section C Q4(d)",
+    stem: "Your Link Modules class took part in a visit out to a local business enterprise.",
+    questionText: "Describe the challenges facing this business enterprise and how they can be overcome.",
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 9,
+    rows: [
+    { id: "profile-1", kind: "criterion", verbatim: "Challenge description", marks: 3, contextNote: "THREE different complete challenge/solution profiles. Original allocation: Challenge description 1m; Way(s) to overcome 2m (1+1). Solutions must match the SAME challenge. Full original table, each cell kept intact: 1. Funding cashflow/securing funding/managing debt Proper budgeting/monitor expenses/look at all alternative funding sources/options/develop a repayment schedule/strategy How to over come keeping costs as low as possible/ negotiate with suppliers/negotiate with landlords on rent/negotiate with banks on interest rates/restructure repayments /make workers redundant | 2. Staffing retaining staff/finding new staff/filling skills gap in a business How to over come Offer good wages/bonus options/good work environment/partner with universities/colleges/invest in employee training/consider temporary hire of individuals with necessary skills | 3. Location May be a located in an area with no parking/poor transport links/poor broadband/too remote How to over come Enhance its online presence, offer delivery, facilities for parking or transport solutions. Flexible work options and low- band width tech can address poor broadband or transport links. Clear communication about access and services option | 4. Competition Staying competitive/adapting to a new market How to over come Do market research and analysis/ have a unique product/service/flexible and responsive to customers’ needs Introduce new product lines/diversify/expand into other countries | 5. Brexit/ U.S. Tariffs Disrupts trade flow, increasing costs and creating regulatory uncertainty How to over come Diversify into other export markets/source locally where possible | 6. Increasing Business Costs It has become more expensive to run a business due to increased cost of raw materials, labour costs, rent electricity costs etc. How to over come Shop around to get cheaper prices Reduce waste in the business by turning off electrical appliances/negotiate with banks to get the best rates/train staff to be more efficient | 7. Customer relations Poor communication with customers/slow response times, poor service/ negative feedback or reviews online/complaints How to over come Flexible responsive to customer needs/ know what the customer wants/give clear information about a product/service/address customer inquiries/complaint/ provide good customer service | 8. Technology staying current/adopting new technologies How to over come Purchase/upgrade/ invest in new technology equipment/ train staff on new technologies/stay informed", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Challenge description","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Way(s) to overcome","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "profile-2", kind: "criterion", verbatim: "Challenge description", marks: 3, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Challenge description","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Way(s) to overcome","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "profile-3", kind: "criterion", verbatim: "Challenge description", marks: 3, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Challenge description","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Way(s) to overcome","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
+    id: "lcvp-2025-cl-c5a", topicId: "lcvp-link-modules-1-3", conceptId: "c5a",
     section: "C", questionRef: "2025 CL Section C Q5(a)",
     stem: "Your Link Modules class has been asked to fundraise for a charity of your choice.",
     questionText: "Prepare the agenda for the first meeting to plan and organise the fundraising activity.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@1m","answer":3,"ofParts":10,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Election of officers (chairperson/secretary/treasurer/PRO)","Decide what charity to donate to","Draw up a plan of work/schedule of time","Finance","Permission from Principal","Decide the fundraising event","Arrange a time/date/location for the event","Assign roles/tasks/duties","Date and time of next meeting","AOB"]} },
+    { id: "agenda-heading", kind: "point", verbatim: "Heading (Agenda)", marks: 1, contextNote: "The required Agenda heading earns 1 mark; THREE agenda items earn 1 each. Do not add unprinted date, time or address marks." },
+    { id: "responses", kind: "anyN", verbatim: "Prepare the agenda for the first meeting to plan and organise the fundraising activity. 4 marks Heading (Agenda) 1m Agenda items 3@1m AGENDA", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":3,"perOption":1,"options":["Election of officers (chairperson/secretary/treasurer/PRO)","Decide what charity to donate to","Draw up a plan of work/schedule of time","Finance","Permission from Principal","Decide the fundraising event","Arrange a time/date/location for the event","Assign roles/tasks/duties","Date and time of next meeting","AOB"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c5b", topicId: "lcvp-link-modules-1-2", conceptId: "important-plan-activity",
+    id: "lcvp-2025-cl-c5b", topicId: "lcvp-link-modules-1-3", conceptId: "c5b",
     section: "C", questionRef: "2025 CL Section C Q5(b)",
     stem: "Your Link Modules class has been asked to fundraise for a charity of your choice.",
     questionText: "Why is it important to plan for this activity?",
-    tariffModel: {"kind":"bestNofParts","notation":"2@2m (1+1)","answer":2,"ofParts":7,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Why is it important to plan for this activity? (1+1) — any 2", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Aims and objectives are clearly established/sets clear goals","Everyone knows what they are working towards/Everyone knows their roles/focused and on track","You can check progress against the plan and take corrective action where necessary","To draw up budgets/schedule of costs/resources/ensures you have the material people and finance needed","To do a SWOT analysis/can help anticipate problems/give you time to prepare solutions","Saves time/ reduces stress/makes the activity more enjoyable","Helps measure the success/ what worked well/ what could be improved"]} },
+    { id: "responses", kind: "criterion", verbatim: "Why is it important to plan for this activity? 4 marks 2@2m (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Why is it important to plan for this activity? 4 marks 2@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Aims and objectives are clearly established/sets clear goals | 2. Everyone knows what they are working towards/Everyone knows their roles/focused and on track | 3. You can check progress against the plan and take corrective action where necessary | 4. To draw up budgets/schedule of costs/resources/ensures you have the material people and finance needed | 5. To do a SWOT analysis/can help anticipate problems/give you time to prepare solutions | 6. Saves time/ reduces stress/makes the activity more enjoyable | 7. Helps measure the success/ what worked well/ what could be improved", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c5c", topicId: "lcvp-link-modules-1-2", conceptId: "benefits-doing-whole-class-project-rather",
+    id: "lcvp-2025-cl-c5c", topicId: "lcvp-link-modules-1-3", conceptId: "c5c",
     section: "C", questionRef: "2025 CL Section C Q5(c)",
     stem: "Your Link Modules class has been asked to fundraise for a charity of your choice.",
     questionText: "What are the benefits of doing a whole class project rather than an individual project?",
-    tariffModel: {"kind":"bestNofParts","notation":"3@3m (1+1+1)","answer":3,"ofParts":7,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Share workload/goals are achieved quicker/more work is done/ in case of absenteeism","Decisions are made more quickly/solutions to problems found more easily","Wellbeing - responsibility is shared so no one person is under too much pressure/everyone takes ownership for their part of the task they are responsible for/improved relationships with their peers/more motivation to take part","Members of a team will have a variety of strengths/skills/experience","More ideas will be generated as there will be a group of people rather than one","Communication/interpersonal skills are improved","Helps to develop team work skills/prepares students for real life situations in the work place"]} },
+    { id: "responses", kind: "criterion", verbatim: "What are the benefits of doing a whole class project rather than an individual project? 9 marks 3@3m (1+1+1)", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: What are the benefits of doing a whole class project rather than an individual project? 9 marks 3@3m (1+1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Share workload/goals are achieved quicker/more work is done/ in case of absenteeism | 2. Decisions are made more quickly/solutions to problems found more easily | 3. Wellbeing - responsibility is shared so no one person is under too much pressure/everyone takes ownership for their part of the task they are responsible for/improved relationships with their peers/more motivation to take part | 4. Members of a team will have a variety of strengths/skills/experience | 5. More ideas will be generated as there will be a group of people rather than one | 6. Communication/interpersonal skills are improved | 7. Helps to develop team work skills/prepares students for real life situations in the work place", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c5d", topicId: "lcvp-link-modules-0-4", conceptId: "key-areas-information-include-body-report",
+    id: "lcvp-2025-cl-c5d", topicId: "lcvp-link-modules-1-3", conceptId: "c5d",
     section: "C", questionRef: "2025 CL Section C Q5(d)",
     stem: "Your Link Modules class has been asked to fundraise for a charity of your choice.",
     questionText: "Describe four key areas of information that you would include in the body of the report on this activity.",
-    tariffModel: {"kind":"bestNofParts","notation":"4@2m (1+1)","answer":4,"ofParts":7,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Summary of activity/Introduction/Background/Purpose","Finance/Projected costs/money raised/ Sponsorship/donations","Allocation of roles/Committee members selected","Organising the event/Resources needed","Planning- Date/time /location","Market research/marketing/advertising","Day of event/my responsibilities on the day"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe four key areas of information that you would include in the body of the report on this activity. 8 marks 4@2m (1+1)", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: Describe four key areas of information that you would include in the body of the report on this activity. 8 marks 4@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Summary of activity/Introduction/Background/Purpose | 2. Finance/Projected costs/money raised/ Sponsorship/donations | 3. Allocation of roles/Committee members selected | 4. Organising the event/Resources needed | 5. Planning- Date/time /location | 6. Market research/marketing/advertising | 7. Day of event/my responsibilities on the day The source also prints “Etc.”.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c6a", topicId: "lcvp-link-modules-0-0", conceptId: "information-communication-technology-ict-skills-important",
+    id: "lcvp-2025-cl-c6a", topicId: "lcvp-link-modules-1-1", conceptId: "c6a",
     section: "C", questionRef: "2025 CL Section C Q6(a)",
     stem: "Technology is keeping people connected in today’s business world.",
     questionText: "Why are Information and Communication Technology (ICT) skills important in the world of business today?",
-    tariffModel: {"kind":"bestNofParts","notation":"4 @1 mark","answer":4,"ofParts":13,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Source raw materials","Marketing your product/service/ Social media promotion","Selling to customers online","Communication/connection","Create business documents","Manage customer information","Manage files","For budgeting/stock/financial control","Product design and manufacture","Creation of posters/brochures/marketing materials","For better employment chances/makes you better at your job","Enables remote working","To be able to use the available resources from the internet/ to improve/protect your business"]} },
+    { id: "responses", kind: "anyN", verbatim: "Why are Information and Communication Technology (ICT) skills important in the world of business today? 4 marks 4 @1 mark", marks: 4, contextNote: "Choose any 4 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Source raw materials","Marketing your product/service/ Social media promotion","Selling to customers online","Communication/connection","Create business documents","Manage customer information","Manage files","For budgeting/stock/financial control","Product design and manufacture","Creation of posters/brochures/marketing materials","For better employment chances/makes you better at your job","Enables remote working","To be able to use the available resources from the internet/ to improve/protect your business"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c6b", topicId: "lcvp-link-modules-0-1", conceptId: "ways-have-used-ict-during-lcvp",
+    id: "lcvp-2025-cl-c6b", topicId: "lcvp-link-modules-1-4", conceptId: "c6b",
     section: "C", questionRef: "2025 CL Section C Q6(b)",
     stem: "Technology is keeping people connected in today’s business world.",
     questionText: "List four ways you have used ICT during LCVP.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 @1 mark","answer":4,"ofParts":12,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Publisher/Desktop Publishing/Canva","PowerPoint","Word – writing letters, permissions slips/portfolio","Databases","Excel – tables, charts","Online research","YouTube/Videos","Use of apps","Recording interviews","Email","Printing of portfolio items/report","Revision"]} },
+    { id: "responses", kind: "anyN", verbatim: "List four ways you have used ICT during LCVP. (4 marks) (4 @1 mark)", marks: 4, contextNote: "Choose any 4 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Publisher/Desktop Publishing/Canva","PowerPoint","Word – writing letters, permissions slips/portfolio","Databases","Excel – tables, charts","Online research","YouTube/Videos","Use of apps","Recording interviews","Email","Printing of portfolio items/report","Revision"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c6c", topicId: "lcvp-link-modules-0-0", conceptId: "advantages-disadvantages-using-technology-employee-who",
+    id: "lcvp-2025-cl-c6c", topicId: "lcvp-link-modules-1-1", conceptId: "c6c",
     section: "C", questionRef: "2025 CL Section C Q6(c)",
     stem: "Technology is keeping people connected in today’s business world.",
     questionText: "Discuss two advantages and two disadvantages of using technology by an employee who is working from home.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 @2 (1+1)","answer":4,"ofParts":5,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Work life balance/flexible work schedules/time with family/increased employee satisfaction/reducing commute times/distractions of a busy work place","Easy to communicate with the office/customers/suppliers/video conferencing tools/regardless of location","Ease of collaboration remotely/online collaboration platforms/google docs/everyone stays informed and connected","Fewer sick days/not interacting with people","Saving money/fuel cost/childcare cost/lunch costs"]} },
+    { id: "advantages", kind: "criterion", verbatim: "Advantages", marks: 4, contextNote: "TWO advantages are required, each 2 marks (1+1); they cannot replace either required disadvantage. Complete original pool: Work life balance/flexible work schedules/time with family/increased employee satisfaction/reducing commute times/distractions of a busy work place | Easy to communicate with the office/customers/suppliers/video conferencing tools/regardless of location | Ease of collaboration remotely/online collaboration platforms/google docs/everyone stays informed and connected | Fewer sick days/not interacting with people | Saving money/fuel cost/childcare cost/lunch costs", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "disadvantages", kind: "criterion", verbatim: "Disadvantages", marks: 4, contextNote: "TWO disadvantages are required, each 2 marks (1+1); they cannot replace either required advantage. Complete original pool: Reliance on internet stability/glitches | Reliance on equipment e.g. laptop/printer/workstation | Cybersecurity risks e.g. hacking | Always available leading to inability to switch off/overworked employee/lead to burn out/stress | Distractions and lack of focus/other household activities compete for attention/difficult to maintain productivity | Bad for health – too much screentime/eye strain | Isolation/low morale/loneliness/not building relationships/connections | Cost of equipment and infrastructure/potential energy bill", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c6d", topicId: "lcvp-link-modules-1-0", conceptId: "may-business-fund-cost-upgrading-or",
+    id: "lcvp-2025-cl-c6d", topicId: "lcvp-link-modules-1-1", conceptId: "c6d",
     section: "C", questionRef: "2025 CL Section C Q6(d)",
     stem: "Technology is keeping people connected in today’s business world.",
     questionText: "How may a business fund the cost of upgrading or improving ICT in their organisation?",
-    tariffModel: {"kind":"bestNofParts","notation":"3@3m (1+1+1)","answer":3,"ofParts":8,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Retained earnings/using the profits of the business /re-sell old ICT equipment","Grants/subsidies","Sell shares in the business/bring in a new investor","Bank loan/financing","Leasing option from a technology provider","Crowd funding","Sell assets of the business e.g. land","Cost saving measures"]} },
+    { id: "responses", kind: "criterion", verbatim: "How may a business fund the cost of upgrading or improving ICT in their organisation? 9 marks 3@3m (1+1+1)", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: How may a business fund the cost of upgrading or improving ICT in their organisation? 9 marks 3@3m (1+1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Retained earnings/using the profits of the business /re-sell old ICT equipment | 2. Grants/subsidies | 3. Sell shares in the business/bring in a new investor | 4. Bank loan/financing | 5. Leasing option from a technology provider | 6. Crowd funding | 7. Sell assets of the business e.g. land | 8. Cost saving measures", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c7ai", topicId: "lcvp-link-modules-0-0", conceptId: "trade-union",
+    id: "lcvp-2025-cl-c7ai", topicId: "lcvp-link-modules-0-0", conceptId: "c7ai",
     section: "C", questionRef: "2025 CL Section C Q7(a)(i)",
     stem: "Trade unions play a vital role in maintaining good industrial relations.",
     questionText: "What is a trade union?",
-    tariffModel: {"kind":"fixed","notation":"(1+1)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(1+1) A trade union is an organisation of workers who try to improve the pay and/or working conditions of its workers/represent workers in disputes", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true },
+    { id: "definition", kind: "criterion", verbatim: "A trade union is an organisation of workers who try to improve the pay and/or working conditions of its workers/represent workers in disputes.", marks: 2, contextNote: "Explain the term using the complete original definition. Printed allocation: 2 marks (1+1); no required named union or invented internal quota.", permittedMarks: [0,1,2] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c7aii", topicId: "lcvp-link-modules-0-0", conceptId: "trade-union",
+    id: "lcvp-2025-cl-c7aii", topicId: "lcvp-link-modules-0-0", conceptId: "c7aii",
     section: "C", questionRef: "2025 CL Section C Q7(a)(ii)",
     stem: "Trade unions play a vital role in maintaining good industrial relations.",
     questionText: "Name one trade union.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 marks","answer":1,"ofParts":6,"perPart":2}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 1 of the answers the scheme states", marks: 2, contextNote: "1 answer at 2 marks each; (0/2) — all or nothing on each answer.", openList: true, group: {"claimMax":1,"perOption":2,"options":["SIPTU","IMPACT","ASTI","TUI","UNITE","INTO"]} },
+    { id: "responses", kind: "anyN", verbatim: "Name one trade union. (2 marks (0/2))", marks: 2, contextNote: "Choose any 1 distinct responses across the complete original pool. Each response receives 2 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":1,"perOption":2,"options":["SIPTU","IMPACT","ASTI","TUI","UNITE","INTO"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c7b", topicId: "lcvp-link-modules-0-0", conceptId: "advantages-employee-being-member-trade-union",
+    id: "lcvp-2025-cl-c7b", topicId: "lcvp-link-modules-0-0", conceptId: "c7b",
     section: "C", questionRef: "2025 CL Section C Q7(b)",
     stem: "Trade unions play a vital role in maintaining good industrial relations.",
     questionText: "Outline two advantages to an employee from being a member of a trade union.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 @2m (1+1)","answer":2,"ofParts":7,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Trade union negotiate agreements on workers’ pay and conditions","The trade union will represent members during major changes to the workplace","They can provide members with information, advice and support on entitlements","They can provide education facilities and training","They mediate with employers to resolve disputes","Trade unions can lead to greater solidarity among workers/strength in numbers","Consumer benefits such as discounted insurance/VHI/optical benefits"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline two advantages to an employee from being a member of a trade union. (4 marks) 2 @2m (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Outline two advantages to an employee from being a member of a trade union. (4 marks) 2 @2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Trade union negotiate agreements on workers’ pay and conditions | 2. The trade union will represent members during major changes to the workplace | 3. They can provide members with information, advice and support on entitlements | 4. They can provide education facilities and training | 5. They mediate with employers to resolve disputes | 6. Trade unions can lead to greater solidarity among workers/strength in numbers | 7. Consumer benefits such as discounted insurance/VHI/optical benefits", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c7c", topicId: "lcvp-link-modules-0-0", conceptId: "responsibilities-employers-have-when-employing-workers",
+    id: "lcvp-2025-cl-c7c", topicId: "lcvp-link-modules-0-0", conceptId: "c7c",
     section: "C", questionRef: "2025 CL Section C Q7(c)",
     stem: "Trade unions play a vital role in maintaining good industrial relations.",
     questionText: "What responsibilities do employers have when employing workers in their business? Four points required.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 @2m (1+1)","answer":4,"ofParts":8,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Provide a safe work place - risk assessment, safe equipment","Fair treatment- equal opportunities/avoid discrimination","Pay - A fair day’s pay for a fair day’s work/pay workers on time","Leave – allow workers to take holidays/maternity/parental/parents/paternity","Provide proper training /induction/safe pass/mentoring etc","Obey legal obligations – contract of employment, health and safety obligations etc","Provide PPE to workers e.g. Hard hat, hair nets, ear plugs, masks","Keep records of hours worked- pay/holidays/absences/and maintain confidentiality"]} },
+    { id: "responses", kind: "criterion", verbatim: "What responsibilities do employers have when employing workers in their business? Four points required. 8 marks 4 @2m (1+1)", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: What responsibilities do employers have when employing workers in their business? Four points required. 8 marks 4 @2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Provide a safe work place - risk assessment, safe equipment | 2. Fair treatment- equal opportunities/avoid discrimination | 3. Pay - A fair day’s pay for a fair day’s work/pay workers on time | 4. Leave – allow workers to take holidays/maternity/parental/parents/paternity | 5. Provide proper training /induction/safe pass/mentoring etc | 6. Obey legal obligations – contract of employment, health and safety obligations etc | 7. Provide PPE to workers e.g. Hard hat, hair nets, ear plugs, masks | 8. Keep records of hours worked- pay/holidays/absences/and maintain confidentiality", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2025 Common Level — © State Examinations Commission.",
-    id: "lcvp-2025-cl-c7d", topicId: "lcvp-link-modules-0-0", conceptId: "implications-business-poor-industrial-relations-between",
+    id: "lcvp-2025-cl-c7d", topicId: "lcvp-link-modules-0-0", conceptId: "c7d",
     section: "C", questionRef: "2025 CL Section C Q7(d)",
-    stem: "Trade unions play a vital role in maintaining good industrial relations. Link Modules Examination Wednesday 30 April Morning 10:00 - 12:30",
+    stem: "Trade unions play a vital role in maintaining good industrial relations.",
     questionText: "Explain three implications to a business of poor industrial relations between workers and management.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@3m (1+1+1)","answer":3,"ofParts":7,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2025 allocation; complete source guidance retained"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Loss of sales -reduction in profits","Loss of customers -due to damage to reputation/negative industrial relations /customers may never return","Increased training costs due to high staff turnover- employees leave to work in a better work environment","Poor morale: reduced productivity - loss of experienced staff/decreased motivation and efficiency/ increased absenteeism/harder to get staff","Industrial action- due to disputes in the workplace/hostile work environment/go slows/strikes etc","Decreased innovation - due to lack of motivation in the workplace","Quality of work- substandard products/sales returns/lawsuits/product recalls"]} },
+    { id: "responses", kind: "criterion", verbatim: "Explain three implications to a business of poor industrial relations between workers and management. 9 marks 3@3m (1+1+1)", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Explain three implications to a business of poor industrial relations between workers and management. 9 marks 3@3m (1+1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Loss of sales -reduction in profits | 2. Loss of customers -due to damage to reputation/negative industrial relations /customers may never return | 3. Increased training costs due to high staff turnover- employees leave to work in a better work environment | 4. Poor morale: reduced productivity - loss of experienced staff/decreased motivation and efficiency/ increased absenteeism/harder to get staff | 5. Industrial action- due to disputes in the workplace/hostile work environment/go slows/strikes etc. | 6. Decreased innovation - due to lack of motivation in the workplace | 7. Quality of work- substandard products/sales returns/lawsuits/product recalls", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC LCVP Link Modules 2025 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
