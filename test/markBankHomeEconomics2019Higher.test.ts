@@ -14,11 +14,13 @@ const get = (id: string) => {
   return c;
 };
 describe('2019 Higher Home Economics: independently swept original sources', () => {
-  it('retains all 51 priced tasks and 627 offered marks', () => {
+  it('retains all 51 tasks and 627 offered marks, with one 20-mark scoring hold', () => {
     expect(all).toHaveLength(51);
     expect(all.map(c => c.id).sort()).toEqual(review.tasks.map(c => c.id).sort());
     expect(['sa', 'sb', 'sc'].map(s => all.filter(c => c.id.includes(`-${s}-`)).length)).toEqual([12, 18, 21]);
     expect(all.reduce((sum, c) => sum + c.totalMarks, 0)).toBe(627);
+    expect(all.filter(c => c.kind === 'question' && c.tariffModel.kind === 'questionTotal').map(c => c.id)).toEqual(['he-2019-hl-sb-q3b']);
+    expect(all.filter(c => c.kind === 'question' && c.tariffModel.kind === 'fixed').reduce((sum, c) => sum + c.totalMarks, 0)).toBe(607);
     for (const c of all) {
       if (c.kind !== 'question') throw new Error(c.id);
       expect(tariffReconciles(c), c.id).toBe(true);
@@ -61,18 +63,28 @@ describe('2019 Higher Home Economics: independently swept original sources', () 
     expect(get('sb-q5a').rows.map(r => r.marks)).toEqual([3, 3, 3, 3, 2]);
     expect(get('sb-q5c').rows.map(r => r.marks)).toEqual([8, 8, 8]);
   });
-  it('preserves coherent bacteria models and holds the disputed one-mark case visibly', () => {
+  it('preserves all eight coherent bacteria routes while holding the complete task for confidence review', () => {
     const c = get('sb-q3b');
+    expect(c.tariffModel.kind).toBe('questionTotal');
+    expect(c.totalMarks).toBe(20);
     expect(c.answerVariants?.map(v => v.label)).toEqual(['Salmonella', 'Listeria', 'E.coli', 'Clostridium botulinum', 'Staphylococcus Aureus', 'Clostridium Perfringens', 'Campylobacter', 'Another valid food-poisoning bacterium']);
+    expect(c.rows).toEqual(c.answerVariants?.[0].rows);
     for (const v of c.answerVariants ?? []) {
-      expect(v.rows.map(r => r.marks)).toEqual([2, 6, 2, 6, 4]);
-      for (const id of ['conditions', 'source', 'foods']) {
-        const row = v.rows.find(r => r.id === id)!;
-        expect(row.contextNote).toContain('page 12 prints 2:1:0');
-        expect(row.contextNote).toContain('page 13 table headers print 2:0');
-        expect(row.contextNote).toContain('Leave a response that may merit the disputed 1 mark unassessed');
-        for (const p of row.parts ?? [row]) expect(p.permittedMarks).toEqual([0, 2]);
+      expect(v.rows.map(r => r.marks)).toEqual([null, null, null, null, null]);
+      expect(v.rows[0].contextNote).toContain('page 12 prints 2:1:0');
+      expect(v.rows[0].contextNote).toContain('page 13 table headers print 2:0');
+      expect(v.rows[0].contextNote).toContain('confidence review only');
+      for (const original of ['3 conditions @ 2 marks (graded 2:1:0)', '1 source@ 2 marks (graded 2:1:0)', '3 points @ 2 marks (graded 2:0)', '2 foods @ 2 marks (graded 2:1:0)']) {
+        expect(v.rows[0].contextNote).toContain(original);
       }
+      for (const row of v.rows) {
+        expect(row.permittedMarks).toBeUndefined();
+        expect(row.parts).toBeUndefined();
+      }
+      expect(v.rows[1].contextNote).toContain('THREE conditions');
+      expect(v.rows[2].contextNote).toContain('ONE source');
+      expect(v.rows[3].contextNote).toContain('THREE points');
+      expect(v.rows[4].contextNote).toContain('TWO high-risk foods');
     }
     expect(c.answerVariants?.[1].rows[1].contextNote).toContain('psychrophilic 5 – 20°C');
     expect(c.answerVariants?.[3].rows[4].contextNote).toContain('oil infused with garlic');

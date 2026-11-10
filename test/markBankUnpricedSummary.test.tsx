@@ -18,18 +18,52 @@ vi.mock('@/components/PaperTrail/vaultDocs', () => ({ vaultPdf: vi.fn(() => new 
 import MarkBank from '@/components/MarkBank/MarkBank';
 import SessionScreen from '@/components/MarkBank/SessionScreen';
 import { CARDS as LCVP_CARDS } from '@/components/MarkBank/cards/lcvp/common';
+import { CARDS as HE_CARDS } from '@/components/MarkBank/cards/home-economics/higher';
 import { REVIEWED_CARDS } from '@/components/MarkBank/cards/japanese/reviewed';
 
 const original = REVIEWED_CARDS.find(card => card.id === 'ja-2022-ol-lb-1-v')! as SecQuestionCard;
+const bacteria = HE_CARDS.find(card => card.id === 'he-2019-hl-sb-q3b')! as SecQuestionCard;
 beforeEach(() => { vi.clearAllMocks(); localStorage.clear(); mocks.loadCards.mockResolvedValue([original]); });
-const start = async () => {
-  render(<MarkBank uid="student-a" studentSubjects={[{ subjectName: 'Japanese', level: 'ordinary' }]} now={() => 1_700_000_000_000} />);
+const start = async (subjectName = 'Japanese', level = 'ordinary', answerVariant?: string) => {
+  render(<MarkBank uid="student-a" studentSubjects={[{ subjectName, level }]} now={() => 1_700_000_000_000} />);
   const button = await screen.findByRole('button', { name: 'Start test review' });
   // The real shell waits for both the deck and local review state.
   await waitFor(() => expect(button).toBeEnabled());
   fireEvent.click(button);
+  if (answerVariant) fireEvent.click(await screen.findByRole('button', { name: answerVariant }));
   fireEvent.click(await screen.findByRole('button', { name: 'Reveal the marking scheme' }));
 };
+
+test.each([false, true])('all eight HE bacteria routes remain unpriced in paper layout=%s', paperLayout => {
+  const onGrade = vi.fn();
+  render(<SessionScreen paperLayout={paperLayout} cards={[bacteria]} subjectLabel="Home Economics"
+    onGrade={onGrade} onFinish={vi.fn()} onExit={vi.fn()} />);
+  expect(bacteria.answerVariants).toHaveLength(8);
+  expect(screen.getByRole('button', { name: 'Choose your answer route first' })).toBeDisabled();
+  fireEvent.click(screen.getByRole('button', { name: 'Salmonella' }));
+  fireEvent.click(screen.getByRole('button', { name: 'Reveal the marking scheme' }));
+  for (const variant of bacteria.answerVariants!) {
+    fireEvent.click(screen.getByRole('button', { name: variant.label }));
+    expect(screen.getByRole('button', { name: variant.label })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByText(/page 12 prints 2:1:0/)).toHaveTextContent('page 13 table headers print 2:0');
+    expect(screen.getByText(/Give THREE conditions/)).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /^Award \d/ })).not.toBeInTheDocument();
+    expect(screen.queryByText('20m')).not.toBeInTheDocument();
+    expect(screen.getByText(/Marks are not calculated for this task/)).toBeInTheDocument();
+  }
+  fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
+  expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({ cardId: bacteria.id, marksClaimed: 0, marksAvailable: 0 }));
+});
+
+test('the actual HE source-conflict review saves confidence without numeric accuracy analytics', async () => {
+  mocks.loadCards.mockResolvedValue([bacteria]);
+  await start('Home Economics', 'higher', 'Another valid food-poisoning bacterium');
+  fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
+  expect(await screen.findByText('Your review is complete.')).toBeInTheDocument();
+  expect(screen.getByText('1 answer review had no calculated marks.')).toBeInTheDocument();
+  expect(mocks.commitReview).toHaveBeenCalledTimes(1);
+  expect(mocks.track).not.toHaveBeenCalled();
+});
 
 test('an unpriced source review is retained without zero-score analytics or a perfect-score summary', async () => {
   await start();

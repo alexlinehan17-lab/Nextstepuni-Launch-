@@ -50058,13 +50058,13 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2019 HL Section B Q3(b)",
     stem: "Food spoilage is a disagreeable change in a food’s normal state. Such changes can be detected by smell, taste, touch or sight.",
     questionText: "Name and give details of one common food poisoning bacteria. Refer to: • conditions necessary for growth • source • reproduction/growth of bacteria • high risk foods.",
-    tariffModel: {"kind":"fixed","notation":"Name2 + conditions3×2 + source2 + reproduction3×2 + high-risk foods2×2; disputed one-mark case held"}, totalMarks: 20,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
     rows: [
-    { id: "name", kind: "point", verbatim: "Salmonella", marks: 2 },
-    { id: "conditions", kind: "criterion", verbatim: "conditions necessary for growth", marks: 6, contextNote: "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Salmonella profile: Food: saprophytic or parasitic; Temp: mesophilic 20 – 45°C; Moisture: etc. Oxygen: facultative; etc. pH: neutral; etc. Time: etc.", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
-    { id: "source", kind: "criterion", verbatim: "source", marks: 2, contextNote: "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Salmonella profile: Human, animal and bird intestines; faeces; unwashed hands; etc.", permittedMarks: [0,2] },
-    { id: "reproduction", kind: "criterion", verbatim: "reproduction/growth of bacteria", marks: 6, contextNote: "Use the SAME Salmonella profile. Original scientific wording is reproduced: Asexual; Binary fission; Mitosis;", permittedMarks: [0,2,4,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,2]}] },
-    { id: "foods", kind: "criterion", verbatim: "high risk foods", marks: 4, contextNote: "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Salmonella profile: Raw or undercooked meat, fish, eggs; unpasteurised dairy products; etc.", permittedMarks: [0,2,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,2]}] },
+    { id: "name", kind: "point", verbatim: "Salmonella", marks: null, contextNote: "Name ONE food-poisoning bacterium. Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. This complete 20-mark task is available for confidence review only; no numeric marks are calculated until the conflict is clarified. Review ONE bacterium and every required heading against the original guidance. Original scheme physical page 12: Name and give details of one common food poisoning bacteria. Refer to: • conditions necessary for growth 3 conditions @ 2 marks (graded 2:1:0) • source 1 source@ 2 marks (graded 2:1:0) • reproduction/growth of bacteria 3 points @ 2 marks (graded 2:0) • high risk foods 2 foods @ 2 marks (graded 2:1:0) (20) Name of food poisoning bacteria 2 marks" },
+    { id: "conditions", kind: "point", verbatim: "conditions necessary for growth", marks: null, contextNote: "Give THREE conditions necessary for growth. For the SAME Salmonella profile: Food: saprophytic or parasitic; Temp: mesophilic 20 – 45°C; Moisture: etc. Oxygen: facultative; etc. pH: neutral; etc. Time: etc." },
+    { id: "source", kind: "point", verbatim: "source", marks: null, contextNote: "Give ONE source. For the SAME Salmonella profile: Human, animal and bird intestines; faeces; unwashed hands; etc." },
+    { id: "reproduction", kind: "point", verbatim: "reproduction/growth of bacteria", marks: null, contextNote: "Give THREE points about reproduction/growth. Use the SAME Salmonella profile. Original scientific wording is reproduced: Asexual; Binary fission; Mitosis;" },
+    { id: "foods", kind: "point", verbatim: "high risk foods", marks: null, contextNote: "Give TWO high-risk foods. For the SAME Salmonella profile: Raw or undercooked meat, fish, eggs; unpasteurised dairy products; etc." },
     ],
     answerVariants: [
           {
@@ -50075,134 +50075,36 @@ export const CARDS: SecCard[] = [
                             "id": "name",
                             "kind": "point",
                             "verbatim": "Salmonella",
-                            "marks": 2
+                            "marks": null,
+                            "contextNote": "Name ONE food-poisoning bacterium. Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. This complete 20-mark task is available for confidence review only; no numeric marks are calculated until the conflict is clarified. Review ONE bacterium and every required heading against the original guidance. Original scheme physical page 12: Name and give details of one common food poisoning bacteria. Refer to: • conditions necessary for growth 3 conditions @ 2 marks (graded 2:1:0) • source 1 source@ 2 marks (graded 2:1:0) • reproduction/growth of bacteria 3 points @ 2 marks (graded 2:0) • high risk foods 2 foods @ 2 marks (graded 2:1:0) (20) Name of food poisoning bacteria 2 marks"
                       },
                       {
                             "id": "conditions",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "conditions necessary for growth",
-                            "marks": 6,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4,
-                                  6
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Salmonella profile: Food: saprophytic or parasitic; Temp: mesophilic 20 – 45°C; Moisture: etc. Oxygen: facultative; etc. pH: neutral; etc. Time: etc.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-3",
-                                        "verbatim": "Point 3",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give THREE conditions necessary for growth. For the SAME Salmonella profile: Food: saprophytic or parasitic; Temp: mesophilic 20 – 45°C; Moisture: etc. Oxygen: facultative; etc. pH: neutral; etc. Time: etc."
                       },
                       {
                             "id": "source",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "source",
-                            "marks": 2,
-                            "permittedMarks": [
-                                  0,
-                                  2
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Salmonella profile: Human, animal and bird intestines; faeces; unwashed hands; etc."
+                            "marks": null,
+                            "contextNote": "Give ONE source. For the SAME Salmonella profile: Human, animal and bird intestines; faeces; unwashed hands; etc."
                       },
                       {
                             "id": "reproduction",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "reproduction/growth of bacteria",
-                            "marks": 6,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4,
-                                  6
-                            ],
-                            "contextNote": "Use the SAME Salmonella profile. Original scientific wording is reproduced: Asexual; Binary fission; Mitosis;",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-3",
-                                        "verbatim": "Point 3",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give THREE points about reproduction/growth. Use the SAME Salmonella profile. Original scientific wording is reproduced: Asexual; Binary fission; Mitosis;"
                       },
                       {
                             "id": "foods",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "high risk foods",
-                            "marks": 4,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Salmonella profile: Raw or undercooked meat, fish, eggs; unpasteurised dairy products; etc.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give TWO high-risk foods. For the SAME Salmonella profile: Raw or undercooked meat, fish, eggs; unpasteurised dairy products; etc."
                       }
                 ]
           },
@@ -50214,134 +50116,36 @@ export const CARDS: SecCard[] = [
                             "id": "name",
                             "kind": "point",
                             "verbatim": "Listeria",
-                            "marks": 2
+                            "marks": null,
+                            "contextNote": "Name ONE food-poisoning bacterium. Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. This complete 20-mark task is available for confidence review only; no numeric marks are calculated until the conflict is clarified. Review ONE bacterium and every required heading against the original guidance. Original scheme physical page 12: Name and give details of one common food poisoning bacteria. Refer to: • conditions necessary for growth 3 conditions @ 2 marks (graded 2:1:0) • source 1 source@ 2 marks (graded 2:1:0) • reproduction/growth of bacteria 3 points @ 2 marks (graded 2:0) • high risk foods 2 foods @ 2 marks (graded 2:1:0) (20) Name of food poisoning bacteria 2 marks"
                       },
                       {
                             "id": "conditions",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "conditions necessary for growth",
-                            "marks": 6,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4,
-                                  6
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Listeria profile: Food: saprophytic or parasitic; Temp: psychrophilic 5 – 20°C mesophilic 20 – 45°C; Moisture: etc. Oxygen; facultative; etc. pH: neutral/slightly acidic; etc. Time: etc.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-3",
-                                        "verbatim": "Point 3",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give THREE conditions necessary for growth. For the SAME Listeria profile: Food: saprophytic or parasitic; Temp: psychrophilic 5 – 20°C mesophilic 20 – 45°C; Moisture: etc. Oxygen; facultative; etc. pH: neutral/slightly acidic; etc. Time: etc."
                       },
                       {
                             "id": "source",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "source",
-                            "marks": 2,
-                            "permittedMarks": [
-                                  0,
-                                  2
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Listeria profile: Uncooked foods; cooked chill foods; foods not heated to sufficiently high temperatures; soil; human & animal waste; etc."
+                            "marks": null,
+                            "contextNote": "Give ONE source. For the SAME Listeria profile: Uncooked foods; cooked chill foods; foods not heated to sufficiently high temperatures; soil; human & animal waste; etc."
                       },
                       {
                             "id": "reproduction",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "reproduction/growth of bacteria",
-                            "marks": 6,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4,
-                                  6
-                            ],
-                            "contextNote": "Use the SAME Listeria profile. Original scientific wording is reproduced: Asexual; Binary fission; Mitosis;",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-3",
-                                        "verbatim": "Point 3",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give THREE points about reproduction/growth. Use the SAME Listeria profile. Original scientific wording is reproduced: Asexual; Binary fission; Mitosis;"
                       },
                       {
                             "id": "foods",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "high risk foods",
-                            "marks": 4,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Listeria profile: Soft cheese; pâté; unpasteurised milk, cheese; raw or undercooked meats; pre- prepared salads; cook-chill foods; etc.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give TWO high-risk foods. For the SAME Listeria profile: Soft cheese; pâté; unpasteurised milk, cheese; raw or undercooked meats; pre- prepared salads; cook-chill foods; etc."
                       }
                 ]
           },
@@ -50353,134 +50157,36 @@ export const CARDS: SecCard[] = [
                             "id": "name",
                             "kind": "point",
                             "verbatim": "E.coli",
-                            "marks": 2
+                            "marks": null,
+                            "contextNote": "Name ONE food-poisoning bacterium. Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. This complete 20-mark task is available for confidence review only; no numeric marks are calculated until the conflict is clarified. Review ONE bacterium and every required heading against the original guidance. Original scheme physical page 12: Name and give details of one common food poisoning bacteria. Refer to: • conditions necessary for growth 3 conditions @ 2 marks (graded 2:1:0) • source 1 source@ 2 marks (graded 2:1:0) • reproduction/growth of bacteria 3 points @ 2 marks (graded 2:0) • high risk foods 2 foods @ 2 marks (graded 2:1:0) (20) Name of food poisoning bacteria 2 marks"
                       },
                       {
                             "id": "conditions",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "conditions necessary for growth",
-                            "marks": 6,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4,
-                                  6
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME E.coli profile: Food: saprophytic or parasitic; Temp: mesophilic 20 – 45°C; Moisture: etc. Oxygen: aerobic; etc. pH: neutral; etc. Time: etc.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-3",
-                                        "verbatim": "Point 3",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give THREE conditions necessary for growth. For the SAME E.coli profile: Food: saprophytic or parasitic; Temp: mesophilic 20 – 45°C; Moisture: etc. Oxygen: aerobic; etc. pH: neutral; etc. Time: etc."
                       },
                       {
                             "id": "source",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "source",
-                            "marks": 2,
-                            "permittedMarks": [
-                                  0,
-                                  2
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME E.coli profile: Human and animal intestines; human & animal excreta; polluted water; unwashed hands; etc."
+                            "marks": null,
+                            "contextNote": "Give ONE source. For the SAME E.coli profile: Human and animal intestines; human & animal excreta; polluted water; unwashed hands; etc."
                       },
                       {
                             "id": "reproduction",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "reproduction/growth of bacteria",
-                            "marks": 6,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4,
-                                  6
-                            ],
-                            "contextNote": "Use the SAME E.coli profile. Original scientific wording is reproduced: Asexual; Sexual; Binary fission; Mitosis;",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-3",
-                                        "verbatim": "Point 3",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give THREE points about reproduction/growth. Use the SAME E.coli profile. Original scientific wording is reproduced: Asexual; Sexual; Binary fission; Mitosis;"
                       },
                       {
                             "id": "foods",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "high risk foods",
-                            "marks": 4,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME E.coli profile: Undercooked meats; raw meats; unpasteurised milk and cheese; etc.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give TWO high-risk foods. For the SAME E.coli profile: Undercooked meats; raw meats; unpasteurised milk and cheese; etc."
                       }
                 ]
           },
@@ -50492,134 +50198,36 @@ export const CARDS: SecCard[] = [
                             "id": "name",
                             "kind": "point",
                             "verbatim": "Clostridium botulinum",
-                            "marks": 2
+                            "marks": null,
+                            "contextNote": "Name ONE food-poisoning bacterium. Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. This complete 20-mark task is available for confidence review only; no numeric marks are calculated until the conflict is clarified. Review ONE bacterium and every required heading against the original guidance. Original scheme physical page 12: Name and give details of one common food poisoning bacteria. Refer to: • conditions necessary for growth 3 conditions @ 2 marks (graded 2:1:0) • source 1 source@ 2 marks (graded 2:1:0) • reproduction/growth of bacteria 3 points @ 2 marks (graded 2:0) • high risk foods 2 foods @ 2 marks (graded 2:1:0) (20) Name of food poisoning bacteria 2 marks"
                       },
                       {
                             "id": "conditions",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "conditions necessary for growth",
-                            "marks": 6,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4,
-                                  6
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Clostridium botulinum profile: Food: saprophytic or parasitic; Temp: mesophilic 20 – 45°C; Moisture: etc. Oxygen: anaerobic; pH: 4.6 or higher; etc. Time: etc.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-3",
-                                        "verbatim": "Point 3",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give THREE conditions necessary for growth. For the SAME Clostridium botulinum profile: Food: saprophytic or parasitic; Temp: mesophilic 20 – 45°C; Moisture: etc. Oxygen: anaerobic; pH: 4.6 or higher; etc. Time: etc."
                       },
                       {
                             "id": "source",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "source",
-                            "marks": 2,
-                            "permittedMarks": [
-                                  0,
-                                  2
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Clostridium botulinum profile: Soil; decaying matter; unwashed hands; human and animal faeces; etc."
+                            "marks": null,
+                            "contextNote": "Give ONE source. For the SAME Clostridium botulinum profile: Soil; decaying matter; unwashed hands; human and animal faeces; etc."
                       },
                       {
                             "id": "reproduction",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "reproduction/growth of bacteria",
-                            "marks": 6,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4,
-                                  6
-                            ],
-                            "contextNote": "Use the SAME Clostridium botulinum profile. Original scientific wording is reproduced: Asexual; Sexual; Binary fission; Mitosis;",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-3",
-                                        "verbatim": "Point 3",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give THREE points about reproduction/growth. Use the SAME Clostridium botulinum profile. Original scientific wording is reproduced: Asexual; Sexual; Binary fission; Mitosis;"
                       },
                       {
                             "id": "foods",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "high risk foods",
-                            "marks": 4,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. For the SAME Clostridium botulinum profile: Unpasteurised cheese, milk, yoghurt; faulty processing of low acid canned foods; vacuum-packed foods; smoked fish; oil infused with garlic; etc.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give TWO high-risk foods. For the SAME Clostridium botulinum profile: Unpasteurised cheese, milk, yoghurt; faulty processing of low acid canned foods; vacuum-packed foods; smoked fish; oil infused with garlic; etc."
                       }
                 ]
           },
@@ -50631,134 +50239,36 @@ export const CARDS: SecCard[] = [
                             "id": "name",
                             "kind": "point",
                             "verbatim": "Staphylococcus Aureus",
-                            "marks": 2
+                            "marks": null,
+                            "contextNote": "Name ONE food-poisoning bacterium. Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. This complete 20-mark task is available for confidence review only; no numeric marks are calculated until the conflict is clarified. Review ONE bacterium and every required heading against the original guidance. Original scheme physical page 12: Name and give details of one common food poisoning bacteria. Refer to: • conditions necessary for growth 3 conditions @ 2 marks (graded 2:1:0) • source 1 source@ 2 marks (graded 2:1:0) • reproduction/growth of bacteria 3 points @ 2 marks (graded 2:0) • high risk foods 2 foods @ 2 marks (graded 2:1:0) (20) Name of food poisoning bacteria 2 marks"
                       },
                       {
                             "id": "conditions",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "conditions necessary for growth",
-                            "marks": 6,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4,
-                                  6
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME Staphylococcus Aureus throughout. This bacterium is accepted by name only in the original source; no conditions necessary for growth model is printed or invented.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-3",
-                                        "verbatim": "Point 3",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give THREE conditions necessary for growth. Use the SAME Staphylococcus Aureus throughout. This bacterium is accepted by name only in the original source; no conditions necessary for growth model is printed or invented."
                       },
                       {
                             "id": "source",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "source",
-                            "marks": 2,
-                            "permittedMarks": [
-                                  0,
-                                  2
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME Staphylococcus Aureus throughout. This bacterium is accepted by name only in the original source; no source model is printed or invented."
+                            "marks": null,
+                            "contextNote": "Give ONE source. Use the SAME Staphylococcus Aureus throughout. This bacterium is accepted by name only in the original source; no source model is printed or invented."
                       },
                       {
                             "id": "reproduction",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "reproduction/growth of bacteria",
-                            "marks": 6,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4,
-                                  6
-                            ],
-                            "contextNote": "Use the SAME Staphylococcus Aureus throughout. This bacterium is accepted by name only in the original source; no reproduction/growth of bacteria model is printed or invented.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-3",
-                                        "verbatim": "Point 3",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give THREE points about reproduction/growth. Use the SAME Staphylococcus Aureus throughout. This bacterium is accepted by name only in the original source; no reproduction/growth of bacteria model is printed or invented."
                       },
                       {
                             "id": "foods",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "high risk foods",
-                            "marks": 4,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME Staphylococcus Aureus throughout. This bacterium is accepted by name only in the original source; no high risk foods model is printed or invented.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give TWO high-risk foods. Use the SAME Staphylococcus Aureus throughout. This bacterium is accepted by name only in the original source; no high risk foods model is printed or invented."
                       }
                 ]
           },
@@ -50770,134 +50280,36 @@ export const CARDS: SecCard[] = [
                             "id": "name",
                             "kind": "point",
                             "verbatim": "Clostridium Perfringens",
-                            "marks": 2
+                            "marks": null,
+                            "contextNote": "Name ONE food-poisoning bacterium. Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. This complete 20-mark task is available for confidence review only; no numeric marks are calculated until the conflict is clarified. Review ONE bacterium and every required heading against the original guidance. Original scheme physical page 12: Name and give details of one common food poisoning bacteria. Refer to: • conditions necessary for growth 3 conditions @ 2 marks (graded 2:1:0) • source 1 source@ 2 marks (graded 2:1:0) • reproduction/growth of bacteria 3 points @ 2 marks (graded 2:0) • high risk foods 2 foods @ 2 marks (graded 2:1:0) (20) Name of food poisoning bacteria 2 marks"
                       },
                       {
                             "id": "conditions",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "conditions necessary for growth",
-                            "marks": 6,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4,
-                                  6
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME Clostridium Perfringens throughout. This bacterium is accepted by name only in the original source; no conditions necessary for growth model is printed or invented.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-3",
-                                        "verbatim": "Point 3",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give THREE conditions necessary for growth. Use the SAME Clostridium Perfringens throughout. This bacterium is accepted by name only in the original source; no conditions necessary for growth model is printed or invented."
                       },
                       {
                             "id": "source",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "source",
-                            "marks": 2,
-                            "permittedMarks": [
-                                  0,
-                                  2
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME Clostridium Perfringens throughout. This bacterium is accepted by name only in the original source; no source model is printed or invented."
+                            "marks": null,
+                            "contextNote": "Give ONE source. Use the SAME Clostridium Perfringens throughout. This bacterium is accepted by name only in the original source; no source model is printed or invented."
                       },
                       {
                             "id": "reproduction",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "reproduction/growth of bacteria",
-                            "marks": 6,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4,
-                                  6
-                            ],
-                            "contextNote": "Use the SAME Clostridium Perfringens throughout. This bacterium is accepted by name only in the original source; no reproduction/growth of bacteria model is printed or invented.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-3",
-                                        "verbatim": "Point 3",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give THREE points about reproduction/growth. Use the SAME Clostridium Perfringens throughout. This bacterium is accepted by name only in the original source; no reproduction/growth of bacteria model is printed or invented."
                       },
                       {
                             "id": "foods",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "high risk foods",
-                            "marks": 4,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME Clostridium Perfringens throughout. This bacterium is accepted by name only in the original source; no high risk foods model is printed or invented.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give TWO high-risk foods. Use the SAME Clostridium Perfringens throughout. This bacterium is accepted by name only in the original source; no high risk foods model is printed or invented."
                       }
                 ]
           },
@@ -50909,134 +50321,36 @@ export const CARDS: SecCard[] = [
                             "id": "name",
                             "kind": "point",
                             "verbatim": "Campylobacter",
-                            "marks": 2
+                            "marks": null,
+                            "contextNote": "Name ONE food-poisoning bacterium. Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. This complete 20-mark task is available for confidence review only; no numeric marks are calculated until the conflict is clarified. Review ONE bacterium and every required heading against the original guidance. Original scheme physical page 12: Name and give details of one common food poisoning bacteria. Refer to: • conditions necessary for growth 3 conditions @ 2 marks (graded 2:1:0) • source 1 source@ 2 marks (graded 2:1:0) • reproduction/growth of bacteria 3 points @ 2 marks (graded 2:0) • high risk foods 2 foods @ 2 marks (graded 2:1:0) (20) Name of food poisoning bacteria 2 marks"
                       },
                       {
                             "id": "conditions",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "conditions necessary for growth",
-                            "marks": 6,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4,
-                                  6
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME Campylobacter throughout. This bacterium is accepted by name only in the original source; no conditions necessary for growth model is printed or invented.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-3",
-                                        "verbatim": "Point 3",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give THREE conditions necessary for growth. Use the SAME Campylobacter throughout. This bacterium is accepted by name only in the original source; no conditions necessary for growth model is printed or invented."
                       },
                       {
                             "id": "source",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "source",
-                            "marks": 2,
-                            "permittedMarks": [
-                                  0,
-                                  2
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME Campylobacter throughout. This bacterium is accepted by name only in the original source; no source model is printed or invented."
+                            "marks": null,
+                            "contextNote": "Give ONE source. Use the SAME Campylobacter throughout. This bacterium is accepted by name only in the original source; no source model is printed or invented."
                       },
                       {
                             "id": "reproduction",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "reproduction/growth of bacteria",
-                            "marks": 6,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4,
-                                  6
-                            ],
-                            "contextNote": "Use the SAME Campylobacter throughout. This bacterium is accepted by name only in the original source; no reproduction/growth of bacteria model is printed or invented.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-3",
-                                        "verbatim": "Point 3",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give THREE points about reproduction/growth. Use the SAME Campylobacter throughout. This bacterium is accepted by name only in the original source; no reproduction/growth of bacteria model is printed or invented."
                       },
                       {
                             "id": "foods",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "high risk foods",
-                            "marks": 4,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME Campylobacter throughout. This bacterium is accepted by name only in the original source; no high risk foods model is printed or invented.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give TWO high-risk foods. Use the SAME Campylobacter throughout. This bacterium is accepted by name only in the original source; no high risk foods model is printed or invented."
                       }
                 ]
           },
@@ -51046,141 +50360,38 @@ export const CARDS: SecCard[] = [
                 "rows": [
                       {
                             "id": "name",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "Name of food poisoning bacteria",
-                            "marks": 2,
-                            "permittedMarks": [
-                                  0,
-                                  2
-                            ],
-                            "contextNote": "Name ONE valid food-poisoning bacterium. The original source ends its named alternatives with “etc.”; this open alternative preserves that scope without inventing another model."
+                            "marks": null,
+                            "contextNote": "Name ONE food-poisoning bacterium. Name ONE valid food-poisoning bacterium. The original source ends its named alternatives with “etc.”; this open alternative preserves that scope without inventing another model. Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. This complete 20-mark task is available for confidence review only; no numeric marks are calculated until the conflict is clarified. Review ONE bacterium and every required heading against the original guidance. Original scheme physical page 12: Name and give details of one common food poisoning bacteria. Refer to: • conditions necessary for growth 3 conditions @ 2 marks (graded 2:1:0) • source 1 source@ 2 marks (graded 2:1:0) • reproduction/growth of bacteria 3 points @ 2 marks (graded 2:0) • high risk foods 2 foods @ 2 marks (graded 2:1:0) (20) Name of food poisoning bacteria 2 marks"
                       },
                       {
                             "id": "conditions",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "conditions necessary for growth",
-                            "marks": 6,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4,
-                                  6
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME selected bacterium throughout. No additional source model is printed or invented.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-3",
-                                        "verbatim": "Point 3",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give THREE conditions necessary for growth. Use the SAME selected bacterium throughout. No additional source model is printed or invented."
                       },
                       {
                             "id": "source",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "source",
-                            "marks": 2,
-                            "permittedMarks": [
-                                  0,
-                                  2
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME selected bacterium throughout. No additional source model is printed or invented."
+                            "marks": null,
+                            "contextNote": "Give ONE source. Use the SAME selected bacterium throughout. No additional source model is printed or invented."
                       },
                       {
                             "id": "reproduction",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "reproduction/growth of bacteria",
-                            "marks": 6,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4,
-                                  6
-                            ],
-                            "contextNote": "Use the SAME selected bacterium throughout. No additional source model is printed or invented.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-3",
-                                        "verbatim": "Point 3",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give THREE points about reproduction/growth. Use the SAME selected bacterium throughout. No additional source model is printed or invented."
                       },
                       {
                             "id": "foods",
-                            "kind": "criterion",
+                            "kind": "point",
                             "verbatim": "high risk foods",
-                            "marks": 4,
-                            "permittedMarks": [
-                                  0,
-                                  2,
-                                  4
-                            ],
-                            "contextNote": "Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2. Use the SAME selected bacterium throughout. No additional source model is printed or invented.",
-                            "parts": [
-                                  {
-                                        "id": "point-1",
-                                        "verbatim": "Point 1",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  },
-                                  {
-                                        "id": "point-2",
-                                        "verbatim": "Point 2",
-                                        "marks": 2,
-                                        "permittedMarks": [
-                                              0,
-                                              2
-                                        ]
-                                  }
-                            ]
+                            "marks": null,
+                            "contextNote": "Give TWO high-risk foods. Use the SAME selected bacterium throughout. No additional source model is printed or invented."
                       }
                 ]
           }

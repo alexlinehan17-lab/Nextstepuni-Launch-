@@ -5,6 +5,22 @@ from paper_census import census_sections,leaves_of,key_label,continuity_flags
 from he_review_2019_hl_main import documents
 def verify_higher():
  d=documents();assert [len(d[k]) for k in ['paper','scheme']]==[12,36]
+ # The source genuinely disagrees about partial credit for three headings.
+ # Verify both originals and retain the whole task as confidence-only.
+ from he_review_2019_hl_main import text,table_rows
+ from he_review_2019_hl_main_b import build
+ allocation=text(d['scheme'],12).split('(b)',1)[1]
+ assert allocation.count('(graded 2:1:0)')==3,allocation
+ assert '3 conditions @ 2 marks' in allocation and '2 foods @ 2 marks' in allocation
+ table=table_rows(d['scheme'][12].find_tables().tables[0],d['scheme'][12])
+ assert all('(graded 2:0)' in cell for cell in table[0]),table[0]
+ bacteria=next(c for c in build() if c['id']=='he-2019-hl-sb-q3b')
+ assert bacteria['totalMarks']==20 and bacteria['tariffModel']['kind']=='questionTotal'
+ assert len(bacteria['answerVariants'])==8
+ assert [v['label'] for v in bacteria['answerVariants'][:4]]==[row[0] for row in table[1:]]
+ for variant in bacteria['answerVariants']:
+  assert all(r['marks'] is None and 'parts' not in r and 'permittedMarks' not in r for r in variant['rows'])
+  assert allocation in variant['rows'][0]['contextNote']
  expected=[f'Section A Q{n}' for n in range(1,13)]
  expected += [f'Section B Q1({l})' for l in 'abcde']
  expected += ['Section B Q2(a)','Section B Q2(b)(i)','Section B Q2(b)(ii)','Section B Q2(c)']
@@ -16,7 +32,7 @@ def verify_higher():
  parts,texts,_=census_sections('home-economics',2019,'hl');actual={key_label(k,'home-economics') for k in leaves_of(parts)}
  assert actual==set(expected),dict(missing=sorted(set(expected)-actual),unexpected=sorted(actual-set(expected)))
  flags=continuity_flags(parts,texts,'home-economics');assert not flags,flags
- return dict(level='higher',sourceHashes='verified',expectedSourceLeaves=51,observedSourceLeaves=len(actual),continuityFlags=flags,keys=sorted(actual),reconciliation='Independent 48-page original visual sweep pinned 51 original leaves A12/B18/C21 before parser/author inspection. One-to-one mapping to 51 priced tasks, 627 marks. B2(b) has two separately allocated roman tasks 8/12. Paired snack and sketch/description asks remain coherent within their original leaf.')
+ return dict(level='higher',sourceHashes='verified',expectedSourceLeaves=51,observedSourceLeaves=len(actual),continuityFlags=flags,keys=sorted(actual),reconciliation='Independent 48-page original visual sweep pinned 51 original leaves A12/B18/C21 before parser/author inspection. One-to-one mapping to 51 tasks, 627 offered marks; 607 numerically assessable and B3(b)20 held for confidence review. B2(b) has two separately allocated roman tasks 8/12. Paired snack and sketch/description asks remain coherent within their original leaf.')
 def verify_ordinary():
  from he_review_2019_ol_main import documents as ordinary_documents
  d=ordinary_documents();assert [len(d[k]) for k in ['paper','scheme']]==[12,36]

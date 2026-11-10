@@ -25,7 +25,7 @@
   "coveragePolicy": "Manual original-page sweeps, source-priced task boundaries and full printed choice pools establish source coverage. Raw leaves and emitted cards are distinct reconciliation counts and neither is a substitute for the visual ledgers. Offered practice marks include alternatives and must not be mistaken for candidate exam totals.",
   "deferredInventory": "deferred-source-inventory.json",
   "heldNumericIssue": "2019-hl-bacteria-authority-check-20261109.json",
-  "releaseStatus": "Not a release-complete claim. Coordinator retains integration, student-facing scoring of the held 2019 case, and browser/release QA. Per-sitting historical browser-pending annotations remain preserved.",
+  "releaseStatus": "Source integration continues. HE2019 B3(b) now has a whole-task confidence-only hold; authoritative numeric clarification and native/release QA remain pending. Historical validation records below retain their original scope.",
   "finalSittingValidation": {
     "runtime": "248 affected/required tests passed: eight 2020 Ordinary and eight 2020 Higher plus 232 preservation/curriculum/deck. maxWorkers=1; owned temporary test caches removed automatically.",
     "mandatoryRawSourceGate": "Explicit 2010-2020 original-PDF hash/key gates passed. Independent 78-page visual census and saved pre-parser manual ledger pinned 55 source leaves A13/B20/C22 and 56 priced tasks A15/B19/C22, 627 offered marks. A2 named roman definitions retained in one whole task; three A companion asks separately priced. B3(a) two inline source roman leaves restored narrowly; shared flexible tariff stays one task. No source marker removed.",
@@ -766,7 +766,7 @@
       "reviewRecords": [
         {
           "path": "scripts/markbank/authoring/home-economics/2019-hl-main-review.json",
-          "sha256": "be9785baa12cd3cf24e82235bc990d4ef9ac1b43105931c21e45e6e4a9f82404"
+          "sha256": "3b7118e81bbf05feee1e9326ebbc477339de6bd112ef95cd28fd833a6fa214ab"
         }
       ],
       "sourceFiles": [
@@ -796,7 +796,10 @@
       ],
       "diagnosticRawLeaves": 51,
       "runtimeCardIdentitySha256": "0245d534bd1c113e8f1a82233bad8ab4452f5d8cc1da7e83917ac36772c2d0ae",
-      "heldNumericSourceAmbiguity": "B3(b) disputed 1-mark case remains unassessed; see 2019-hl-bacteria-authority-check-20261109.json. Review completion does not resolve it."
+      "heldNumericSourceAmbiguity": "B3(b) source 2:1:0 versus 2:0 remains unresolved. Whole task confidence-only; all eight variants and source20 retained.",
+      "numericallyAssessedTasks": 50,
+      "confidenceOnlyTasks": 1,
+      "numericallyAssessedOfferedMarks": 607
     },
     {
       "year": 2019,
@@ -1583,5 +1586,13 @@
       "runtimeCardIdentitySha256": "af8fc9fcfbd4e9a5c2bc75be0110c74c836b62f227d5055d6b0fd6fb56465a93"
     }
   ],
-  "sharedParserPreservation": "AST-level proof: removing exactly the new conditional expression whose test is (subject, year, level) == (home-economics, 2020, ol), with the original [block] else, makes the entire parser AST identical to HEAD. Therefore every non-HE execution takes the identical original code. Earlier HE census rows, all other emitted decks, full/decoded non-HE Atlas and other subject baselines were independently compared unchanged; no other subject content or reconciliation logic changed."
+  "sharedParserPreservation": "AST-level proof: removing exactly the new conditional expression whose test is (subject, year, level) == (home-economics, 2020, ol), with the original [block] else, makes the entire parser AST identical to HEAD. Therefore every non-HE execution takes the identical original code. Earlier HE census rows, all other emitted decks, full/decoded non-HE Atlas and other subject baselines were independently compared unchanged; no other subject content or reconciliation logic changed.",
+  "emittedTasks": 1953,
+  "countSemantics": "Historical emittedPricedTasks fields count tasks at published source mark boundaries, including confidence-only tasks; they do not assert that every task currently calculates numeric marks.",
+  "heldNumericPracticeCorrection": {
+    "date": "2026-11-10",
+    "cardId": "he-2019-hl-sb-q3b",
+    "scoring": "Whole20-mark task confidence-only; original partial-credit disagreement remains unresolved.",
+    "routes": 8
+  }
 }

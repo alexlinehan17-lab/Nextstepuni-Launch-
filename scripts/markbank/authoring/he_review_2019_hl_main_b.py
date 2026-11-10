@@ -2,7 +2,7 @@
 """2019 Higher B: source allocations, full choices and explicit unresolved tariff conflict."""
 from copy import deepcopy
 from he_review_2019_hl_main import *
-AMBIGUITY='Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. Only common 0/2 awards are offered here. Leave a response that may merit the disputed 1 mark unassessed pending authoritative clarification; do not force it to 0 or 2.'
+AMBIGUITY='Unresolved numeric source ambiguity: scheme physical page 12 prints 2:1:0 for conditions, source and high-risk foods; the corresponding page 13 table headers print 2:0. Neither establishes precedence. This complete 20-mark task is available for confidence review only; no numeric marks are calculated until the conflict is clarified. Review ONE bacterium and every required heading against the original guidance.'
 def build():
  d=documents();p={n:text(d['paper'],n) for n in range(6,9)};s={n:text(d['scheme'],n) for n in range(8,16)}
  q={1:select(p[6],'1. Over',include=True)[3:],2:select(p[7],'2.','3.'),3:select(p[7],'3.'),4:select(p[8],'4.','5.'),5:select(p[8],'5.')};cards=[]
@@ -42,7 +42,22 @@ def build():
  rows=[criterion('name','Name of food poisoning bacteria',1,[0,2],'Name ONE valid food-poisoning bacterium. The original source ends its named alternatives with “etc.”; this open alternative preserves that scope without inventing another model.')]
  for key,label,count in [('conditions','conditions necessary for growth',3),('source','source',1),('reproduction','reproduction/growth of bacteria',3),('foods','high risk foods',2)]:rows.append(criterion(key,label,count,[0,2],(AMBIGUITY+' ' if key!='reproduction' else '')+'Use the SAME selected bacterium throughout. No additional source model is printed or invented.'))
  variants.append(dict(id='other-bacterium',label='Another valid food-poisoning bacterium',rows=rows))
- add(3,'b','0-4',20,deepcopy(variants[0]['rows']),'Name2 + conditions3×2 + source2 + reproduction3×2 + high-risk foods2×2; disputed one-mark case held',answerVariants=variants)
+ # Holding only a disputed one-mark award in prose leaves a default numeric
+ # zero in the actual UI. Hold the complete task's scoring instead, keeping
+ # every original model and all required quantities visible for review.
+ requirements={'name':'Name ONE food-poisoning bacterium.',
+  'conditions':'Give THREE conditions necessary for growth.',
+  'source':'Give ONE source.',
+  'reproduction':'Give THREE points about reproduction/growth.',
+  'foods':'Give TWO high-risk foods.'}
+ for variant in variants:
+  for row in variant['rows']:
+   row.update(kind='point',marks=None)
+   row.pop('permittedMarks',None);row.pop('parts',None)
+   note=row.get('contextNote','').removeprefix(AMBIGUITY+' ')
+   row['contextNote']=(requirements[row['id']]+' '+note).strip()
+  variant['rows'][0]['contextNote']+=' '+AMBIGUITY+' Original scheme physical page 12: '+guide(12,'(b)')
+ add(3,'b','0-4',20,deepcopy(variants[0]['rows']),answerVariants=variants,tariffModel=dict(kind='questionTotal'),notation='')
  judged(3,'c','0-4',2,[0,3,5],'role',guide(13,'(graded 5:3:0)'))
  judged(4,'a','1-1',5,[0,2,4],'factors',select(s[14].split('(b)',1)[0],'(graded 4:2:0)'))
  judged(4,'b','1-1',5,[0,2,4],'strategies',select(select(s[14],'(b)','(c)'),'(graded 4:2:0)'))
@@ -54,5 +69,5 @@ def build():
  return cards
 if __name__=='__main__':
  cards=build()
- if '--write' in sys.argv:write_section('B',cards,dict(tasks=18,marks=280,selectionDecisions='Original survey/choice pools, paired snack merits, calcium and Vitamin C headings, exact packaging quotas, vegetable category caps, both separately priced B2(b) romans, seven coherent bacterium alternatives, all five sociology definitions and three compulsory change categories. Source gaps visible; no model answers invented.',unresolvedNumericSourceAmbiguity=AMBIGUITY))
+ if '--write' in sys.argv:write_section('B',cards,dict(tasks=18,marks=280,selectionDecisions='Original survey/choice pools, paired snack merits, calcium and Vitamin C headings, exact packaging quotas, vegetable category caps, both separately priced B2(b) romans, eight coherent bacterium alternatives (seven named and one open), all five sociology definitions and three compulsory change categories. Source gaps visible; no model answers invented.',unresolvedNumericSourceAmbiguity=AMBIGUITY))
  else:print(json.dumps(cards,ensure_ascii=False,indent=2))
