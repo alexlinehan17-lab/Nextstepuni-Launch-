@@ -16,6 +16,8 @@ vi.mock('@/components/MarkBank/MarkBankLibrary', () => ({ default: ({ ready, onS
 vi.mock('@/utils/programmeAnalytics', () => ({ trackProgrammeEvent: mocks.track }));
 vi.mock('@/components/PaperTrail/vaultDocs', () => ({ vaultPdf: vi.fn(() => new Promise(() => {})) }));
 import MarkBank from '@/components/MarkBank/MarkBank';
+import SessionScreen from '@/components/MarkBank/SessionScreen';
+import { CARDS as LCVP_CARDS } from '@/components/MarkBank/cards/lcvp/common';
 import { REVIEWED_CARDS } from '@/components/MarkBank/cards/japanese/reviewed';
 
 const original = REVIEWED_CARDS.find(card => card.id === 'ja-2022-ol-lb-1-v')! as SecQuestionCard;
@@ -32,6 +34,8 @@ const start = async () => {
 test('an unpriced source review is retained without zero-score analytics or a perfect-score summary', async () => {
   await start();
   expect(screen.getByText(/Marks are not calculated for this task/)).toBeInTheDocument();
+  expect(screen.getByText('Confidence review')).toBeInTheDocument();
+  expect(screen.queryByText(`${original.totalMarks}m`)).not.toBeInTheDocument();
   expect(screen.queryByText(/mark-based suggestion/)).not.toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
   expect(await screen.findByText('Your review is complete.')).toBeInTheDocument();
@@ -48,6 +52,8 @@ test.each([false, true])('a priced answer still reports its assessed accuracy wh
     rows: [{ id: 'answer', kind: 'point', verbatim: 'Synthetic complete answer', marks: 4 }] };
   mocks.loadCards.mockResolvedValue([priced]);
   await start();
+  expect(screen.getByText(/^4 marks · Question/)).toBeInTheDocument();
+  expect(screen.queryByText('Confidence review')).not.toBeInTheDocument();
   if (claimed) fireEvent.click(screen.getByRole('button', { name: /Synthetic complete answer/ }));
   fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
   expect(await screen.findByText(claimed ? 'Every mark banked.' : 'Good work. Keep building.')).toBeInTheDocument();
@@ -73,4 +79,22 @@ test('mixed sessions retain both reviews while reporting only the priced answer 
   expect(mocks.commitReview).toHaveBeenCalledTimes(2);
   expect(mocks.track).toHaveBeenCalledTimes(1);
   expect(mocks.track).toHaveBeenCalledWith('practice_attempt_completed', expect.objectContaining({ accuracyBand: 'full' }));
+});
+
+test.each([false, true])('conflicting source totals remain visible without an assessed maximum in paper layout=%s', paperLayout => {
+  const card = LCVP_CARDS.find(candidate => candidate.id === 'lcvp-2026-cl-c5d')!;
+  const onGrade = vi.fn();
+  render(<SessionScreen paperLayout={paperLayout} cards={[card]} subjectLabel="LCVP"
+    onGrade={onGrade} onFinish={vi.fn()} onExit={vi.fn()} />);
+  expect(screen.getAllByText(/Confidence review/)).toHaveLength(paperLayout ? 2 : 1);
+  expect(screen.queryByText('8m')).not.toBeInTheDocument();
+  expect(screen.queryByText(/^8 marks · Question/)).not.toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'Reveal the marking scheme' }));
+  expect(screen.getByText(/Type of Training 2@2m \(1\+1\)/)).toHaveTextContent('6, not 8');
+  expect(screen.queryByText(/Assess your complete answer against the 8-mark total/)).not.toBeInTheDocument();
+  expect(screen.getByText(/Marks are not calculated for this task/)).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
+  expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({
+    cardId: card.id, marksClaimed: 0, marksAvailable: 0,
+  }));
 });
