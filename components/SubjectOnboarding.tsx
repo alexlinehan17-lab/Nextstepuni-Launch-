@@ -11,14 +11,14 @@ import { TextField } from './ui/FormControls';
 import { SubjectCardPicker, SubjectGradeCards } from './shared/SubjectProfileCards';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
-  LC_SUBJECTS, LEVEL_LABELS, defaultGradesForLevel, defaultSubjectConfig, getPointsForGrade,
+  LC_SUBJECTS, LCA_SUBJECTS, lcaSubjectLevels, LEVEL_LABELS, defaultGradesForLevel, defaultSubjectConfig, getPointsForGrade,
   gradeRank, DAYS_OF_WEEK,
-  type LCSubject,
+  type LCSubject, type YearGroup,
 } from './subjectData';
 import { getDefaultExamDate } from '../utils/examDates';
 
 interface SubjectOnboardingProps {
-  user: { uid: string };
+  user: { uid: string; yearGroup?: YearGroup };
   existingProfile?: StudentSubjectProfile;
   onComplete: (profile: StudentSubjectProfile) => void;
   onClose: () => void;
@@ -44,8 +44,14 @@ const DAY_SHORTS: Record<string, string> = {
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
-const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, existingProfile, onComplete, onClose }) => {
+const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingProfile, onComplete, onClose }) => {
   const isEditMode = !!existingProfile;
+  const yearGroup = existingProfile?.yearGroup ?? user.yearGroup;
+  const isLca = yearGroup === 'LCA1' || yearGroup === 'LCA2';
+  const isLcaGradedSubject = (name: string) => isLca && lcaSubjectLevels(name).some(level => level !== 'common');
+  const newConfig = (name: string) => isLcaGradedSubject(name)
+    ? { level: 'common' as Level, currentGrade: undefined, targetGrade: undefined }
+    : defaultSubjectConfig(name);
 
   const [step, setStep] = useState<Step>(isEditMode ? 2 : 1);
 
@@ -56,9 +62,9 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
   });
 
   // Grade configs
-  const [subjectConfigs, setSubjectConfigs] = useState<Record<string, { level: Level; currentGrade: Grade; targetGrade: Grade }>>(() => {
+  const [subjectConfigs, setSubjectConfigs] = useState<Record<string, { level: Level; currentGrade?: Grade; targetGrade?: Grade }>>(() => {
     if (existingProfile) {
-      const configs: Record<string, { level: Level; currentGrade: Grade; targetGrade: Grade }> = {};
+      const configs: Record<string, { level: Level; currentGrade?: Grade; targetGrade?: Grade }> = {};
       for (const s of existingProfile.subjects) {
         configs[s.subjectName] = { level: s.level, currentGrade: s.currentGrade, targetGrade: s.targetGrade };
       }
@@ -92,7 +98,7 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
         if (!subjectConfigs[name]) {
           setSubjectConfigs(prev => ({
             ...prev,
-            [name]: defaultSubjectConfig(name),
+            [name]: newConfig(name),
           }));
         }
       }
@@ -110,7 +116,7 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
       if (field === 'level') {
         const newLevel = value as Level;
         next.level = newLevel;
-        Object.assign(next, defaultGradesForLevel(newLevel));
+        Object.assign(next, isLcaGradedSubject(subjectName) ? { currentGrade: undefined, targetGrade: undefined } : defaultGradesForLevel(newLevel));
       } else if (field === 'currentGrade') {
         next.currentGrade = value as Grade;
         if (gradeRank(next.targetGrade) < gradeRank(next.currentGrade)) {
@@ -142,7 +148,6 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
     // `currentGrade: undefined` for them makes setDoc throw and the edit is
     // silently lost behind a connectivity toast.
     const isJunior = existingProfile?.curriculumLevel === 'junior';
-    const isLca = existingProfile?.yearGroup === 'LCA1' || existingProfile?.yearGroup === 'LCA2';
     const subjects: StudentSubject[] = Array.from(selectedSubjects).map(name => {
       if (isJunior) {
         const prev = existingProfile?.subjects.find(s => s.subjectName === name);
@@ -153,7 +158,7 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
           targetBand: prev?.targetBand ?? 'Higher Merit',
         };
       }
-      if (isLca) return { subjectName: name, level: 'common' as Level };
+      if (isLca && !isLcaGradedSubject(name)) return { subjectName: name, level: 'common' as Level };
       const config = subjectConfigs[name] || defaultSubjectConfig(name);
       return {
         subjectName: name,
@@ -171,7 +176,7 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
       // leaves the student curriculum-less for the rest of the session.
       // Conditional spreads, not plain assignment: an absent optional field
       // must be omitted, never written as undefined (see the grades above).
-      ...(existingProfile?.yearGroup ? { yearGroup: existingProfile.yearGroup } : {}),
+      ...(yearGroup ? { yearGroup } : {}),
       ...(existingProfile?.curriculumLevel ? { curriculumLevel: existingProfile.curriculumLevel } : {}),
       ...(existingProfile?.defaultBlockDuration ? { defaultBlockDuration: existingProfile.defaultBlockDuration } : {}),
       createdAt: existingProfile?.createdAt || now,
@@ -199,12 +204,12 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
 
   const groupedSubjects = useMemo(() => {
     const groups: Record<string, LCSubject[]> = {};
-    for (const subj of LC_SUBJECTS) {
+    for (const subj of (isLca ? LCA_SUBJECTS : LC_SUBJECTS)) {
       if (!groups[subj.group]) groups[subj.group] = [];
       groups[subj.group].push(subj);
     }
     return groups;
-  }, []);
+  }, [isLca]);
 
   // ─── Step validation ───────────────────────────────────────────────────
 
@@ -214,7 +219,8 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
       case 2: return selectedSubjects.size > 0;
       case 3: {
         for (const name of selectedSubjects) {
-          if (!subjectConfigs[name]) return false;
+          if (isLca && !isLcaGradedSubject(name)) continue;
+          if (!subjectConfigs[name] || (isLcaGradedSubject(name) && !lcaSubjectLevels(name).includes(subjectConfigs[name].level))) return false;
         }
         return true;
       }
@@ -243,7 +249,7 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
       <div className="sc-welcome-list"><div><span>01</span><p className="text-sm">Your subjects and grade targets</p></div><div><span>02</span><p className="text-sm">Your exam date and study week</p></div></div>
     </div>}
     {step === 2 && <SubjectCardPicker groups={groupedSubjects} selected={selectedSubjects} onToggle={toggleSubject} />}
-    {step === 3 && <SubjectGradeCards selected={selectedSubjects} configs={subjectConfigs} onUpdate={updateConfig} />}
+    {step === 3 && <SubjectGradeCards yearGroup={yearGroup} selected={selectedSubjects} configs={subjectConfigs} onUpdate={updateConfig} />}
     {step === 4 && <div>
       <p className="sc-muted text-sm">We'll use this to plan your study intensity.</p>
       <label htmlFor="subject-setup-exam-date" className="sc-date-label">Exam start date</label>
@@ -259,14 +265,16 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
     </div>}
     {step === 6 && <div>
       {Array.from(selectedSubjects).map(name => {
-        const config = subjectConfigs[name]; if (!config) return null;
+        const config = subjectConfigs[name];
+        if (isLca && !isLcaGradedSubject(name)) return <div key={name} className="sc-review-row"><strong>{name}</strong><span className="sc-small">Common level · LCA credits</span></div>;
+        if (!config) return null;
         const isMaths = LC_SUBJECTS.find(subject => subject.name === name)?.isMaths || false;
         const gain = getPointsForGrade(config.targetGrade, isMaths) - getPointsForGrade(config.currentGrade, isMaths);
-        return <div key={name} className="sc-review-row"><div><strong>{name}</strong><small className="sc-small">{LEVEL_LABELS[config.level]} Level</small></div><div className="text-right"><span className="text-sm">{config.currentGrade} → {config.targetGrade}</span>{gain > 0 && <small className="sc-small">+{gain} pts</small>}</div></div>;
+        return <div key={name} className="sc-review-row"><div><strong>{name}</strong><small className="sc-small">{LEVEL_LABELS[config.level]} Level</small></div><div className="text-right"><span className="text-sm">{config.currentGrade} → {config.targetGrade}</span>{!isLca && gain > 0 && <small className="sc-small">+{gain} pts</small>}</div></div>;
       })}
       <div className="sc-review-row"><strong>Exams start</strong><span className="sc-muted text-sm">{new Date(`${examDate}T12:00:00`).toLocaleDateString('en-IE',{ day: 'numeric', month: 'short', year: 'numeric' })}</span></div>
       <div className="sc-review-row"><strong>Rest days</strong><span className="sc-muted text-sm">{restDays.size ? Array.from(restDays).map(day => DAY_SHORTS[day]).join(', ') : 'None selected'}</span></div>
-      {existingProfile?.curriculumLevel !== 'junior' && <p className="sc-points-gain"><span className="sc-small">Projected CAO points gain</span><strong>{projectedGain > 0 ? `+${projectedGain}` : projectedGain}</strong></p>}
+      {!isLca && existingProfile?.curriculumLevel !== 'junior' && <p className="sc-points-gain"><span className="sc-small">Projected CAO points gain</span><strong>{projectedGain > 0 ? `+${projectedGain}` : projectedGain}</strong></p>}
       <p className="sc-small">{daysLeft} days left · {restDays.size} rest {restDays.size === 1 ? 'day' : 'days'}</p>
     </div>}
   </SignatureCard>;

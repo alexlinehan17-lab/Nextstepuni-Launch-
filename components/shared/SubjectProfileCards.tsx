@@ -1,8 +1,8 @@
 import React from 'react';
 import SubjectAvatar from '../SubjectAvatar';
-import { LC_SUBJECTS, LEVEL_LABELS, SUBJECT_GROUP_LABELS, defaultSubjectConfig, fixedLevelNote, getGradesForLevel, getPointsForGrade, gradeRank, lcSubjectLevels, targetGradesFor, type Grade, type Level, type LCSubject } from '../subjectData';
+import { LC_SUBJECTS, LEVEL_LABELS, SUBJECT_GROUP_LABELS, defaultSubjectConfig, fixedLevelNote, getGradesForLevel, getPointsForGrade, gradeRank, lcaSubjectLevels, lcSubjectLevels, targetGradesFor, type Grade, type Level, type LCSubject, type YearGroup } from '../subjectData';
 
-export interface GradeConfig { level: Level; currentGrade: Grade; targetGrade: Grade }
+export interface GradeConfig { level: Level; currentGrade?: Grade; targetGrade?: Grade }
 export function SubjectCardPicker({ groups, selected, onToggle }: { groups: Record<string, LCSubject[]>; selected: Set<string>; onToggle: (name: string) => void }) {
   return <>{Object.entries(groups).map(([group, subjects]) => <section key={group} className="sc-subject-group">
     <p className="sc-eyebrow">{SUBJECT_GROUP_LABELS[group as LCSubject['group']]}</p>
@@ -12,10 +12,13 @@ export function SubjectCardPicker({ groups, selected, onToggle }: { groups: Reco
   </section>)}</>;
 }
 
-export function SubjectGradeCards({ selected, configs, onUpdate }: { selected: Set<string>; configs: Record<string, GradeConfig>; onUpdate: (name: string, field: 'level' | 'currentGrade' | 'targetGrade', value: string) => void }) {
+export function SubjectGradeCards({ selected, configs, onUpdate, yearGroup }: { yearGroup?: YearGroup; selected: Set<string>; configs: Record<string, GradeConfig>; onUpdate: (name: string, field: 'level' | 'currentGrade' | 'targetGrade', value: string) => void }) {
   return <>{Array.from(selected).map(name => {
     const config = configs[name] || defaultSubjectConfig(name);
-    const levels = lcSubjectLevels(name);
+    const lca = yearGroup === 'LCA1' || yearGroup === 'LCA2';
+    const levels = lca ? lcaSubjectLevels(name) : lcSubjectLevels(name);
+    if (lca && levels.length === 1 && levels[0] === 'common') return <section key={name} className="sc-grade-card"><header className="sc-grade-header"><h3>{name}</h3></header><p className="sc-small">Common level · LCA credits</p></section>;
+    const validLevel = levels.includes(config.level);
     const levelNote = fixedLevelNote(name);
     const grades = getGradesForLevel(config.level);
     const targetGrades = targetGradesFor(config.level);
@@ -26,13 +29,14 @@ export function SubjectGradeCards({ selected, configs, onUpdate }: { selected: S
         {levels.map((level: Level) => <button key={level} type="button" className="sc-level" aria-pressed={config.level === level} onClick={() => onUpdate(name, 'level', level)}>{LEVEL_LABELS[level]}</button>)}
       </div> : null}</header>
       {levelNote && <p className="sc-small">{levelNote}</p>}
-      {(['currentGrade','targetGrade'] as const).map(field => <div key={field}>
+      {!validLevel && <p className="sc-small">Choose your level. Grades can be added later.</p>}
+      {validLevel && (['currentGrade','targetGrade'] as const).map(field => <div key={field}>
         <p className={`sc-grade-label${field === 'targetGrade' ? ' sc-target-label' : ''}`}>{field === 'currentGrade' ? 'Where I am now' : 'My target'}</p>
         <div className="sc-grade-options" role="group" aria-label={`${name} ${field === 'currentGrade' ? 'current grade' : 'target grade'}`}>
           {(field === 'targetGrade' ? targetGrades : grades).map(grade => <button key={grade} type="button" className={`sc-grade${field === 'targetGrade' ? ' sc-grade--target' : ''}`} aria-pressed={config[field] === grade} disabled={field === 'targetGrade' && gradeRank(grade) < gradeRank(config.currentGrade)} onClick={() => onUpdate(name,field,grade)}>{grade}</button>)}
         </div>
       </div>)}
-      {gradeRank(config.targetGrade) > gradeRank(config.currentGrade) && <p className="sc-grade-result"><span>{config.currentGrade} → {config.targetGrade}</span><span>+{gain} pts</span></p>}
+      {!lca && gradeRank(config.targetGrade) > gradeRank(config.currentGrade) && <p className="sc-grade-result"><span>{config.currentGrade} → {config.targetGrade}</span><span>+{gain} pts</span></p>}
     </section>;
   })}</>;
 }

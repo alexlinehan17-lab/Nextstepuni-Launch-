@@ -118,12 +118,12 @@ export const LCA_SUBJECTS: LCSubject[] = [
   { name: 'Sign Language', group: 'languages' },
   // STEM
   { name: 'Mathematical Applications', group: 'stem', isMaths: true },
-  { name: 'Leaving Cert Maths', group: 'stem', aliases: ['Mathematics', 'Ordinary Maths', 'Maths'] },
+  { name: 'Leaving Cert Maths', group: 'stem', levels: ['higher', 'ordinary', 'foundation'], aliases: ['Mathematics', 'Ordinary Maths', 'Maths'] },
   { name: 'Information & Communication Tech.', group: 'stem', aliases: ['ICT', 'Information and Communication Technology'] },
   { name: 'Introduction to ICT', group: 'stem', noWrittenExam: true, aliases: ['Introduction to Information and Communication Technology'] },
   { name: 'Science', group: 'stem', noWrittenExam: true },
   // Business / vocational
-  { name: 'Vocational Preparation & Guidance', group: 'business', noWrittenExam: true, aliases: ['VPG', 'Vocational Preparation and Guidance'] },
+  { name: 'Vocational Preparation & Guidance', group: 'business', noWrittenExam: true, aliases: ['VPG', 'Vocational Preparation and Guidance', 'Vocational Studies', 'Vocational Studies and Preparation'] },
   { name: 'Office Admin And Customer', group: 'business', aliases: ['Office Administration and Customer Care'] },
   { name: 'Hotel / Catering & Tourism', group: 'business', aliases: ['Hotel, Catering and Tourism'] },
   // Humanities
@@ -131,7 +131,7 @@ export const LCA_SUBJECTS: LCSubject[] = [
   { name: 'Religious Education', group: 'humanities', noWrittenExam: true },
   // Practical / vocational specialisms
   { name: 'Engineering', group: 'practical' },
-  { name: 'Graphics And Construction Studies', group: 'practical' },
+  { name: 'Graphics And Construction Studies', group: 'practical', aliases: ['Wood Technology', 'Woodwork', 'Woodcraft'] },
   { name: 'Agriculture / Horticulture', group: 'practical' },
   { name: 'Childcare / Community Care', group: 'practical' },
   { name: 'Hair And Beauty', group: 'practical' },
@@ -224,7 +224,12 @@ const DEFAULT_LC_LEVELS: Level[] = ['higher', 'ordinary'];
 
 /** The levels a Leaving Cert subject is examined at, in display order. */
 export function lcSubjectLevels(name: string): Level[] {
-  return LC_SUBJECTS.find(subject => subject.name === name)?.levels ?? DEFAULT_LC_LEVELS;
+  return LC_SUBJECTS.find(subject => subject.name === name)?.levels ?? LCA_SUBJECTS.find(subject => subject.name === name)?.levels ?? DEFAULT_LC_LEVELS;
+}
+
+/** LCA courses use common level; the separately examined LC Maths keeps its own levels. */
+export function lcaSubjectLevels(name: string): Level[] {
+  return LCA_SUBJECTS.find(subject => subject.name === name)?.levels ?? ['common'];
 }
 
 export const LEVEL_LABELS: Record<Level, string> = { higher: 'Higher', ordinary: 'Ordinary', foundation: 'Foundation', common: 'Common' };

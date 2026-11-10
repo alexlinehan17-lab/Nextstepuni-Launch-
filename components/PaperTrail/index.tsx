@@ -1,3 +1,5 @@
+import { LCA_SUBJECTS } from '../subjectData';
+import { resolveSubjectId } from '../../curriculumRegistry';
 import { peekTopicPractice, clearTopicPractice } from '../../utils/topicLaunch';
 /**
  * @license
@@ -130,11 +132,21 @@ export const paperTrailSubjectVisibleForProfile = (
   ? subject.cycle === 'jc'
   : subject.cycle === 'lc' || (isLca && subject.cycle === 'lca');
 
+// A separately examined LC subject selected through the LCA catalogue keeps
+// its canonical LC paper id. Same-named common-level LCA courses stay separate.
+const lcaEstablishedSubjects = LCA_SUBJECTS.filter(course => course.levels?.some(level => level !== 'common'));
+export const paperTrailSubjectMatchesStudentName = (subject: Pick<PaperTrailSubject, 'name' | 'aliases' | 'cycle' | 'id'>, name: string) =>
+  baseName(name) === baseName(subject.name) || (subject.aliases ?? []).some(alias => baseName(alias) === baseName(name)) ||
+  (subject.cycle === 'lc' && lcaEstablishedSubjects.some(course => baseName(course.name) === baseName(name) && resolveSubjectId(course.name) === subject.id));
+
 export const paperTrailSubjectMatchesProfileCycle = (
-  subject: Pick<PaperTrailSubject, 'cycle'>,
+  subject: Pick<PaperTrailSubject, 'cycle'> & Partial<Pick<PaperTrailSubject, 'id'>>,
   junior: boolean,
   isLca: boolean,
-) => subject.cycle === (junior ? 'jc' : isLca ? 'lca' : 'lc');
+  studentSubjects: readonly string[] = [],
+) => subject.cycle === (junior ? 'jc' : isLca ? 'lca' : 'lc') ||
+  (!junior && isLca && subject.cycle === 'lc' && lcaEstablishedSubjects.some(course =>
+    studentSubjects.some(name => baseName(name) === baseName(course.name)) && resolveSubjectId(course.name) === subject.id));
 
 const subjectLabelForId = (id: string) => {
   const subject = subjectById.get(id);
@@ -287,7 +299,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   // ── matching the student's profile to paper subjects ──
   const matchesStudent = useCallback(
     (s: PaperTrailSubject, names: Set<string>) =>
-      names.has(baseName(s.name)) || (s.aliases ?? []).some(a => names.has(baseName(a))),
+      [...names].some(name => paperTrailSubjectMatchesStudentName(s, name)),
     [],
   );
 
@@ -305,7 +317,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       paperTrailSubjectLabel(a).localeCompare(paperTrailSubjectLabel(b)),
     );
     const mineIds = [
-      ...main.filter(s => !isLca && matchesStudent(s, mineNames)).map(s => s.id),
+      ...main.filter(s => paperTrailSubjectMatchesProfileCycle(s, junior, isLca, studentSubjects) && matchesStudent(s, mineNames)).map(s => s.id),
       ...lca.filter(s => matchesStudent(s, mineNames)).map(s => s.id),
     ];
     return { main, lca, mineIds };
@@ -316,7 +328,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     (subj: PaperTrailSubject): PaperLevel | null => {
       for (const sl of studentLevels ?? []) {
         const n = baseName(sl.name);
-        if (n === baseName(subj.name) || (subj.aliases ?? []).some(a => baseName(a) === n)) {
+        if (paperTrailSubjectMatchesStudentName(subj, n)) {
           const lv = sl.level.toLowerCase();
           if (subj.levels.includes(lv as PaperLevel)) return lv as PaperLevel;
         }
@@ -629,7 +641,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       <ReviseByTopic
         subjects={inCycleTagged.map(s => ({ id: s.id, label: paperTrailSubjectLabel(s) }))}
         mineIds={inCycleTagged.filter(s => (
-          paperTrailSubjectMatchesProfileCycle(s, junior, isLca)
+          paperTrailSubjectMatchesProfileCycle(s, junior, isLca, studentSubjects)
           && matchesStudent(s, mineNames)
         )).map(s => s.id)}
         uid={uid}
@@ -656,7 +668,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         now={Date.now()}
         subjects={inCycleTagged.map(s => ({ id: s.id, label: paperTrailSubjectLabel(s) }))}
         mineIds={inCycleTagged.filter(s => (
-          paperTrailSubjectMatchesProfileCycle(s, junior, isLca)
+          paperTrailSubjectMatchesProfileCycle(s, junior, isLca, studentSubjects)
           && matchesStudent(s, mineNames)
         )).map(s => s.id)}
         subjectLabel={subjectLabelForId}
