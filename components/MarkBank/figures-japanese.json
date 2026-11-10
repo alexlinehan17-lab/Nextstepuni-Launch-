@@ -3897,5 +3897,229 @@
         0.525
       ]
     }
+  },
+  "ja-2013-hl-1aa": {
+    "src": "/exam-figures/japanese/ja-2013-hl-1aa.png",
+    "md5": "5007707f46f40129bcd52e1eeb4057dc",
+    "alt": "Which event would you attend if you were interested in the following? Write in Japanese as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 3,
+      "region": [
+        0.065,
+        0.025,
+        0.97,
+        0.37
+      ]
+    }
+  },
+  "ja-2013-hl-1b": {
+    "src": "/exam-figures/japanese/ja-2013-hl-1b.png",
+    "md5": "6cff132a5b58ceef3cf9e1f83a15e802",
+    "alt": "Complete the biography of Atsushi Nakashima in English:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 4,
+      "region": [
+        0.085,
+        0.51,
+        0.96,
+        0.94
+      ]
+    }
+  },
+  "ja-2013-hl-2a-1": {
+    "src": "/exam-figures/japanese/ja-2013-hl-2a-1.png",
+    "md5": "23f725a446113967a6324ad013c82261",
+    "alt": "Complete the table in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 6,
+      "region": [
+        0.055,
+        0.025,
+        0.97,
+        0.34
+      ]
+    }
+  },
+  "ja-2013-hl-2b": {
+    "src": "/exam-figures/japanese/ja-2013-hl-2b.png",
+    "md5": "e5296432f71fa9251c5e0a36c234d739",
+    "alt": "Circle the correct reading for the following Kanji and write the meaning as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.01,
+        0.035,
+        0.97,
+        0.36
+      ]
+    }
+  },
+  "ja-2013-hl-2c-1": {
+    "src": "/exam-figures/japanese/ja-2013-hl-2c-1.png",
+    "md5": "b7d7d1f5d8ae8208395041fe81b53a2a",
+    "alt": "1. Insert the correct particle into each blank (a) to (g) below. There may be more than one correct answer.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.055,
+        0.39,
+        0.97,
+        0.94
+      ]
+    }
+  },
+  "ja-2013-hl-2c-2": {
+    "src": "/exam-figures/japanese/ja-2013-hl-2c-2.png",
+    "md5": "8510667f5c3df2f5bbbf377ebfc66ef5",
+    "alt": "Write the underlined in the negative.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.055,
+        0.035,
+        0.97,
+        0.435
+      ]
+    }
+  },
+  "ja-2013-hl-2c-3": {
+    "src": "/exam-figures/japanese/ja-2013-hl-2c-3.png",
+    "md5": "2192d1383dc321711e2e020a63a95724",
+    "alt": "Write the verbs in brackets in ‘te’ form.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.055,
+        0.48,
+        0.97,
+        0.85
+      ]
+    }
+  },
+  "ja-2013-hl-3b-1": {
+    "src": "/exam-figures/japanese/ja-2013-hl-3b-1.png",
+    "md5": "bcd728533b43481ea4a0c745b8ffd6ad",
+    "alt": "Write the meaning of the Kanji in English as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 11,
+      "region": [
+        0.06,
+        0.04,
+        0.97,
+        0.36
+      ]
+    }
+  },
+  "ja-2013-hl-3b-2": {
+    "src": "/exam-figures/japanese/ja-2013-hl-3b-2.png",
+    "md5": "195d769eda93ab84dc9ff58be3b1cc17",
+    "alt": "Write the reading of the Kanji in Hiragana as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 11,
+      "region": [
+        0.06,
+        0.36,
+        0.97,
+        0.68
+      ]
+    }
+  },
+  "ja-2013-hl-4": {
+    "src": "/exam-figures/japanese/ja-2013-hl-4.png",
+    "md5": "efe295e9fb5fd58bf3cfe44819ebc292",
+    "alt": "Write about (a) OR (b) in approximately 200 characters.\n(a) 「学校を卒 業（そつぎょう）してから、仕事（しごと）をしたい です。」 After finishing school, you want to find a job. Write the script of a speech to your Japanese class about your plans.\nOR\n(b) 「学校を卒 業（そつぎょう）してから、大学に行き たいです。」 After finishing school, you want to go to college. Write the script of a speech to your Japanese class about your plans.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.045,
+        0.025,
+        0.975,
+        0.74
+      ]
+    }
+  },
+  "ja-2013-hl-5": {
+    "src": "/exam-figures/japanese/ja-2013-hl-5.png",
+    "md5": "8a08987088595206f4259eb22787398b",
+    "alt": "Choose (a) OR (b) and write approximately 320 characters.\n(a) You have just returned home from a family holiday during the Easter holidays. Write an e-mail to your Japanese e-pal and answer any four of the following six questions.\n1. イースターの休みにどこに行きましたか。\n2. 天気はどうでしたか。\n3. ホテルはどうでしたか。\n4. 何をしましたか。\n5. 何が一番（ばん）たのしかったですか。\n6. 何が一番（ばん）つまらなかったですか。\nOR\n(b) You are just back to school after the Easter holidays which you spent at home. Write an e- mail to your Japanese e-pal and answer any four of the following six questions.\n1.   天気はどうでしたか。\n2. 毎日、何をしましたか。\n3. だれと会（あ）いましたか。\n4. 日本語の勉強をしましたか。\n5. 何が一番（ばん）たのしかったですか。\n6. 何が一番（ばん）つまらなかったですか。",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 15,
+      "region": [
+        0.035,
+        0.025,
+        0.975,
+        0.92
+      ]
+    }
+  },
+  "ja-2013-hl-la": {
+    "src": "/exam-figures/japanese/ja-2013-hl-la.png",
+    "md5": "b545bcc9e256e88d8363dfdf1b43f600",
+    "alt": "Complete the table below in English.\nWhat weather is expected?\nWhat are the plans for the Saturday?\nWhat should they bring?",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 2,
+      "region": [
+        0.06,
+        0.035,
+        0.97,
+        0.83
+      ]
+    }
+  },
+  "ja-2013-hl-lb-2-iv": {
+    "src": "/exam-figures/japanese/ja-2013-hl-lb-2-iv.png",
+    "md5": "f28e1112ebaac9e2423cd0aa65f22b14",
+    "alt": "To make a reservation, you should call:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 3,
+      "region": [
+        0.06,
+        0.735,
+        0.97,
+        0.885
+      ]
+    }
+  },
+  "ja-2013-hl-ld": {
+    "src": "/exam-figures/japanese/ja-2013-hl-ld.png",
+    "md5": "7718313f75a439fd7e73bd04d52a6a2a",
+    "alt": "Interview with a Japanese assistant language teacher.\nHometown\nAge\nTwo hobbies\nOne comment about where he is living now\nHow he gets to school?\nDays of the week he goes to English language school\nOne reason he came to Ireland\nOne thing he likes about Ireland\nOne thing he misses about Japan",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 5,
+      "region": [
+        0.06,
+        0.035,
+        0.97,
+        0.95
+      ]
+    }
   }
 }
