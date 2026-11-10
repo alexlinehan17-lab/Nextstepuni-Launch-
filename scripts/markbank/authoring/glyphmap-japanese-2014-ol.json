@@ -1,0 +1,7465 @@
+{
+  "source": "examiner-reports/japanese/schemes/2014-ol.pdf",
+  "sha256": "69355ed48177aeaec82eb22b281381acfe9cea433c3a39a8791b88c662472f9f",
+  "outlineMethod": "original-image-glyph-crops-and-proven-zero-ink-spaces",
+  "repairs": {
+    "Calibri": {
+      "3": {
+        "text": " ",
+        "outlines": [],
+        "evidence": [
+          {
+            "fontSha256": "e076e34d34188aeea2a23a1364a923280d9f2b25aa0133a1819e2f833fad168e",
+            "method": "original-CFF-optional-width-and-endchar-only",
+            "charstringHex": "f7760e"
+          }
+        ]
+      }
+    },
+    "MSMincho": {
+      "3": {
+        "text": " ",
+        "outlines": [],
+        "evidence": [
+          {
+            "fontSha256": "db81535e8ac6df6163b0f3b970f311f3a7c868027c44b52fb53a3c24377e4e0e",
+            "method": "original-CFF-optional-width-and-endchar-only",
+            "charstringHex": "200e"
+          }
+        ]
+      },
+      "11": {
+        "text": "(",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              215.886,
+              564.696
+            ],
+            "imageSha256": "e1dc6c18636122982d0c846b8ef0615a5853aa9a858004a30a768f21df857801"
+          }
+        ]
+      },
+      "2058": {
+        "text": "、",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              133.866,
+              543.876
+            ],
+            "imageSha256": "d84e2d3212c26dadd4f3f57715dd5d43d8b8cb21bfec4850dff7f7d4ea0a564c"
+          }
+        ]
+      },
+      "2059": {
+        "text": "。",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              287.944,
+              476.856
+            ],
+            "imageSha256": "b1880ac98c8a886d2959b06b786e0f3b1804c315c896346523186a31fac8c1a0"
+          }
+        ]
+      },
+      "2102": {
+        "text": "あ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 6,
+            "origin": [
+              164.466,
+              642.096
+            ],
+            "imageSha256": "fcbaf6993de318b2327865a1d1bdcccf9123cc609affd57d373d1c2bdf3cf126"
+          }
+        ]
+      },
+      "2104": {
+        "text": "い",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              170.007,
+              193.716
+            ],
+            "imageSha256": "fb0a2b1b9b85fd6936fc66c5d349d5592c3e84cde4de8bd2a5e217ebc8f8775b"
+          }
+        ]
+      },
+      "2106": {
+        "text": "う",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              169.973,
+              345.456
+            ],
+            "imageSha256": "9b6e95fac728ab70dec738431eaa8e3286358b047dcccf61123127e21dc9299d"
+          }
+        ]
+      },
+      "2110": {
+        "text": "お",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 6,
+            "origin": [
+              112.446,
+              485.196
+            ],
+            "imageSha256": "bc783a40b0b45f6637bfa8b9b97a138e8c1dd90c0aaf798b1bd538f66e365c54"
+          }
+        ]
+      },
+      "2111": {
+        "text": "か",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              143.886,
+              193.716
+            ],
+            "imageSha256": "4b493b6249a23bdddf727869c4b7004cf99ab3696fe6cb227429c995a1f6e5b4"
+          }
+        ]
+      },
+      "2112": {
+        "text": "が",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              209.886,
+              476.856
+            ],
+            "imageSha256": "cbd5dbb56cc4c9851baaa846f621405c294a2c1201d31d746778a81dd1ba0077"
+          }
+        ]
+      },
+      "2113": {
+        "text": "き",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              156.946,
+              294.876
+            ],
+            "imageSha256": "90936e6478828e29b56b5984549f94873c78490666e19009f609932d3395eba1"
+          }
+        ]
+      },
+      "2115": {
+        "text": "く",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              169.973,
+              244.296
+            ],
+            "imageSha256": "d837f382d63c9785a6895d4371f18969bfb61b34ad048b89f8d601e44026d1d4"
+          }
+        ]
+      },
+      "2117": {
+        "text": "け",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 8,
+            "origin": [
+              143.586,
+              619.356
+            ],
+            "imageSha256": "6bb6dc46c8da0cfcaa60ddde0a9683691b956f3868f68cb3cc97da4d26742f1b"
+          }
+        ]
+      },
+      "2119": {
+        "text": "こ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              336.297,
+              519.036
+            ],
+            "imageSha256": "fd1c40168b6ba689fb4e4a71893b7aa3c46e1f0f50c5d11bb1b48883f3d66c04"
+          }
+        ]
+      },
+      "2120": {
+        "text": "ご",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 7,
+            "origin": [
+              148.266,
+              243.936
+            ],
+            "imageSha256": "5462621a11080e4e6b049f3634b4fd3c72d10766d441716ff8dc64cd6ec30160"
+          }
+        ]
+      },
+      "2121": {
+        "text": "さ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              143.886,
+              345.456
+            ],
+            "imageSha256": "71f200bda94fc6281519e9e638e669940903ffb22568bccf03abfdb198ee036a"
+          }
+        ]
+      },
+      "2123": {
+        "text": "し",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              156.966,
+              218.976
+            ],
+            "imageSha256": "7c3656ecf886169d74c2eddc56076b75c8ad0ce345e1ad3bbcceb46fee633028"
+          }
+        ]
+      },
+      "2124": {
+        "text": "じ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 7,
+            "origin": [
+              215.886,
+              357.816
+            ],
+            "imageSha256": "b21da5ad9682cd4913717d189ef45c7a7e98f5d0a82ab802946b64ed5bf5893c"
+          }
+        ]
+      },
+      "2125": {
+        "text": "す",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              183.067,
+              294.876
+            ],
+            "imageSha256": "c54ff8142bd91d9164267a980e2a8052b9ee5535ecea68c8ac69a9c507b496f0"
+          }
+        ]
+      },
+      "2127": {
+        "text": "せ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 7,
+            "origin": [
+              240.006,
+              342.276
+            ],
+            "imageSha256": "eeb9d96e6f3e5e3a29483c953939798fad6e664114b73c242ad61b4e1d6310b0"
+          }
+        ]
+      },
+      "2129": {
+        "text": "そ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              159.924,
+              476.856
+            ],
+            "imageSha256": "438c84afa40b9d5e3b44032c8be3b3da3658bcd99c8cee9aa2178ebcc7b15b70"
+          }
+        ]
+      },
+      "2131": {
+        "text": "た",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              170.046,
+              218.976
+            ],
+            "imageSha256": "2d32deb1e3a7a2f50e7e8259a4134cbb713b09bba6eb8ec85405bb6e5ff5d66c"
+          }
+        ]
+      },
+      "2132": {
+        "text": "だ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              170.007,
+              143.136
+            ],
+            "imageSha256": "65cbdf478524c17d5f749fe96ed34c5e7c070fa42476e4f2b4cd171a693543c8"
+          }
+        ]
+      },
+      "2133": {
+        "text": "ち",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              183.067,
+              143.136
+            ],
+            "imageSha256": "7e13b77ff41e7c7bad52d11ce585910a4cb355c8bf20f1d3a6c373b144943e73"
+          }
+        ]
+      },
+      "2135": {
+        "text": "っ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              116.826,
+              553.716
+            ],
+            "imageSha256": "da81977cd5b8479cfd17c627b488d8fd124d7984b24bd54d5081f57f0963edbe"
+          }
+        ]
+      },
+      "2138": {
+        "text": "て",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              146.915,
+              476.856
+            ],
+            "imageSha256": "e4d1f687fcfea3c9e5f59b6f4be40ee991d8387dc7f6c6b9f9b8e10a78efa9dc"
+          }
+        ]
+      },
+      "2139": {
+        "text": "で",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              143.886,
+              218.976
+            ],
+            "imageSha256": "af0b2d9a329151ab6796bc6cdf90258fcd0ce9f92539fe325a05740c0e7031b4"
+          }
+        ]
+      },
+      "2140": {
+        "text": "と",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              143.886,
+              143.136
+            ],
+            "imageSha256": "d65a49a84ce81d423b96a81199e1247f2dce2786085b27704b5cb75eb8add687"
+          }
+        ]
+      },
+      "2141": {
+        "text": "ど",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              107.886,
+              476.856
+            ],
+            "imageSha256": "1a4f80666e23b5f98394872b6e87d9b837236d3d7b776b240939e58d0e750120"
+          }
+        ]
+      },
+      "2142": {
+        "text": "な",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              183.016,
+              345.456
+            ],
+            "imageSha256": "54a2d72c31440d0a81ab8739aa7dcf79d159b357356380476ad24276bdb8ba9c"
+          }
+        ]
+      },
+      "2143": {
+        "text": "に",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              172.908,
+              519.036
+            ],
+            "imageSha256": "f6eae8ae22edbe6982838d0d373002fc3a67f2d0930947f2c8d0061ea7d7fcfb"
+          }
+        ]
+      },
+      "2145": {
+        "text": "ね",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 8,
+            "origin": [
+              251.554,
+              619.356
+            ],
+            "imageSha256": "9a3bbe1cc0868eb2f25ddd176d1364228b5aa7bd829d76f95aa5de7b898d4fee"
+          }
+        ]
+      },
+      "2146": {
+        "text": "の",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              172.934,
+              476.856
+            ],
+            "imageSha256": "dbad3ee7ce510bccaa71bbbd26c780516e7155d51d8cf08e7dbfdf8fbc66fba1"
+          }
+        ]
+      },
+      "2147": {
+        "text": "は",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              172.866,
+              502.176
+            ],
+            "imageSha256": "195f9ae866a0f35f23875db2d89511d3b315281c084e95d7949c3688d05ed7be"
+          }
+        ]
+      },
+      "2157": {
+        "text": "べ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 7,
+            "origin": [
+              148.266,
+              212.796
+            ],
+            "imageSha256": "62f9451d62b39b4c281440e5d544121131e27c79c2b6a89f998d1c2a679d1b83"
+          }
+        ]
+      },
+      "2162": {
+        "text": "ま",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              170.007,
+              294.876
+            ],
+            "imageSha256": "658ea4ab96d5b26636a02a3eb815e3091eddbd11e676d767f9f4758a6f28743f"
+          }
+        ]
+      },
+      "2163": {
+        "text": "み",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 6,
+            "origin": [
+              140.466,
+              642.096
+            ],
+            "imageSha256": "f7543ecb70bece1e754b32ae476fcc1711f23d8fb2ab9d70324e647b7fa29da6"
+          }
+        ]
+      },
+      "2166": {
+        "text": "も",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              156.946,
+              143.136
+            ],
+            "imageSha256": "db1831e977a75904783e6209e701ee31792d19cad6ba18dfd6c748e3ba83d515"
+          }
+        ]
+      },
+      "2167": {
+        "text": "ゃ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 7,
+            "origin": [
+              227.935,
+              357.816
+            ],
+            "imageSha256": "f6bdfd692010f7ae1d560c0cbe28c448e38d9e4aeff6521592877c953864f2ae"
+          }
+        ]
+      },
+      "2169": {
+        "text": "ゅ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              156.93,
+              244.296
+            ],
+            "imageSha256": "020e7fc224043295c54ac14164467bccdc3a55339e9c887faabedd71477e50d3"
+          }
+        ]
+      },
+      "2172": {
+        "text": "よ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              156.93,
+              345.456
+            ],
+            "imageSha256": "1584e1d1033573d6a1b4942537f3796cacbd43f3c5cc061b760d80e6bb98b970"
+          }
+        ]
+      },
+      "2173": {
+        "text": "ら",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              196.06,
+              345.456
+            ],
+            "imageSha256": "bd0accc0ff90b7394b36745e462def2568ad85579210e127343de22327b52257"
+          }
+        ]
+      },
+      "2174": {
+        "text": "り",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 7,
+            "origin": [
+              252.034,
+              357.816
+            ],
+            "imageSha256": "31320bcf1378fc49c2e89d861a344771a7f66026ba163e39c6b7674d63c15b8f"
+          }
+        ]
+      },
+      "2175": {
+        "text": "る",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 7,
+            "origin": [
+              160.266,
+              212.796
+            ],
+            "imageSha256": "bbf48f9e0cbf476a2fd66b0096ad9c86f7e91493b1f09417304e1247c4b7d66d"
+          }
+        ]
+      },
+      "2176": {
+        "text": "れ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 6,
+            "origin": [
+              196.446,
+              485.196
+            ],
+            "imageSha256": "4401f40666b5eba7461b488afb79a86a7b4defcf2d7ba4496296afd9c42c2152"
+          }
+        ]
+      },
+      "2179": {
+        "text": "わ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              156.946,
+              193.716
+            ],
+            "imageSha256": "ac40519755cc78d172f641522e363f8f7c767fbfcc842ddb16878aba2c4e5e6d"
+          }
+        ]
+      },
+      "2182": {
+        "text": "を",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              170.886,
+              543.876
+            ],
+            "imageSha256": "c57e291740eed5969aca415e3379625d5177497b84719cc8874a82db78a3ee02"
+          }
+        ]
+      },
+      "2183": {
+        "text": "ん",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 7,
+            "origin": [
+              172.266,
+              243.936
+            ],
+            "imageSha256": "92fb129b05608e1ab1b9a6aa86cddac96e01a471ed8b46be9e7dcb417998b5e0"
+          }
+        ]
+      },
+      "2198": {
+        "text": "イ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              143.886,
+              117.876
+            ],
+            "imageSha256": "a7f2d37c2e36f0565a7316d1c689d9e6794560ef0e7e2d9696f2c099909b1e0f"
+          }
+        ]
+      },
+      "2205": {
+        "text": "カ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 8,
+            "origin": [
+              332.286,
+              560.616
+            ],
+            "imageSha256": "ba2dac323a1155ea2e6b43d89fddc31a91e32c968c46d6f12c95dca93c0ce408"
+          }
+        ]
+      },
+      "2209": {
+        "text": "ク",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 5,
+            "origin": [
+              227.946,
+              581.196
+            ],
+            "imageSha256": "19190a9d8099349963a1fc1ec909c29e7385c81f9700c656fbe9b41e27d3d764"
+          }
+        ]
+      },
+      "2213": {
+        "text": "コ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              107.886,
+              519.036
+            ],
+            "imageSha256": "e542dfc8a037d2359907b807f57a2716040307c1ae2f8c54b4102179dfac607c"
+          }
+        ]
+      },
+      "2215": {
+        "text": "サ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              133.895,
+              519.036
+            ],
+            "imageSha256": "05824ace00bf101ad11ab63c61094d013e180ad451d3e9312da5db4959c079c2"
+          }
+        ]
+      },
+      "2219": {
+        "text": "ス",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              169.994,
+              117.876
+            ],
+            "imageSha256": "3a5ec419e952981f1cf468282c2fb339764854a1ee827b1ddf0cc2c74407e681"
+          }
+        ]
+      },
+      "2220": {
+        "text": "ズ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 5,
+            "origin": [
+              227.946,
+              551.796
+            ],
+            "imageSha256": "461ef248f0f3155acee74a0a3ea358c360644b6415306d3cd83c050f331784cf"
+          }
+        ]
+      },
+      "2225": {
+        "text": "タ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              183.048,
+              117.876
+            ],
+            "imageSha256": "8df72789e5a1d3625df22fe609d2a36d7733816c25277520f0f9997a2ab1c67a"
+          }
+        ]
+      },
+      "2226": {
+        "text": "ダ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              143.886,
+              168.396
+            ],
+            "imageSha256": "57873176c579ee9ccac60f6c58d793aaefa1e0babef0051cb02586714ffc356b"
+          }
+        ]
+      },
+      "2229": {
+        "text": "ッ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 8,
+            "origin": [
+              344.286,
+              560.616
+            ],
+            "imageSha256": "464d3d6e212360cbc3856f77d97aafc5ade7bc0b40dfdddc31af3df959a4edba"
+          }
+        ]
+      },
+      "2233": {
+        "text": "デ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              248.317,
+              117.876
+            ],
+            "imageSha256": "f4c0e928381435d6d68450cae331f8a9f6c283138ead89ade11d1676b506f266"
+          }
+        ]
+      },
+      "2234": {
+        "text": "ト",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              159.904,
+              519.036
+            ],
+            "imageSha256": "82cecffeace49ee6a48ed691a8666d8046b6e1d28fd2ddf31d239a721c173df7"
+          }
+        ]
+      },
+      "2235": {
+        "text": "ド",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 8,
+            "origin": [
+              308.286,
+              560.616
+            ],
+            "imageSha256": "3db0337cddfaf62f56084deedd797e36d2e68bc05892dbb60c7fb141ea4ed9d3"
+          }
+        ]
+      },
+      "2239": {
+        "text": "ネ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 5,
+            "origin": [
+              215.886,
+              581.196
+            ],
+            "imageSha256": "d41cc813c818803907d25448b853962209355be905d75cb61940c05e753f5fbe"
+          }
+        ]
+      },
+      "2243": {
+        "text": "パ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 5,
+            "origin": [
+              215.886,
+              551.796
+            ],
+            "imageSha256": "836b238e92bf8f9b58afb5e014860efc8038874b7bb7475702f4ef0c4d0820a5"
+          }
+        ]
+      },
+      "2247": {
+        "text": "フ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              143.886,
+              320.136
+            ],
+            "imageSha256": "def0d7aad710e778e83aca657178658928580efd88625fdd1161afa6f7fca252"
+          }
+        ]
+      },
+      "2248": {
+        "text": "ブ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              156.946,
+              168.396
+            ],
+            "imageSha256": "ca07b6fea6fd0ef229a2aa2af4df6d8ccee7b35c782dca0989b24ccdc6476b82"
+          }
+        ]
+      },
+      "2249": {
+        "text": "プ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 8,
+            "origin": [
+              356.286,
+              560.616
+            ],
+            "imageSha256": "f1a5b08c42857b5ce233e8b1c4d629dbec26dedde84cb90eff169cbd3650c825"
+          }
+        ]
+      },
+      "2253": {
+        "text": "ホ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              222.209,
+              117.876
+            ],
+            "imageSha256": "fa869800c75dbb02abb3a5fee5aca3fb923e1ff58fda482ca08e5f50aae28d1a"
+          }
+        ]
+      },
+      "2267": {
+        "text": "ラ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              156.93,
+              320.136
+            ],
+            "imageSha256": "d9a34ff9496de2a5cd0676414ad86fefa26774d2dfc24076eed1426a342d7c1e"
+          }
+        ]
+      },
+      "2268": {
+        "text": "リ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              235.263,
+              117.876
+            ],
+            "imageSha256": "26a70994242a32d8990f73bc34b0169e16e9e3442df937b1dcc0bd5181bb2887"
+          }
+        ]
+      },
+      "2269": {
+        "text": "ル",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 5,
+            "origin": [
+              240.006,
+              551.796
+            ],
+            "imageSha256": "b77fc4ffb9c42254edfbec7d3fb368266a387c4af861433117f862c7a297f8c1"
+          }
+        ]
+      },
+      "2270": {
+        "text": "レ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 8,
+            "origin": [
+              152.286,
+              560.616
+            ],
+            "imageSha256": "cf75020f68a9d11a2f13dbcd22844bc313acb89af20e0cf3b7727dfe9b39a258"
+          }
+        ]
+      },
+      "2271": {
+        "text": "ロ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 8,
+            "origin": [
+              140.286,
+              560.616
+            ],
+            "imageSha256": "00e2af54696be4cd4b1f5c4f2f6e4390cbf7abd78932c4b01f9512d75ced9440"
+          }
+        ]
+      },
+      "2273": {
+        "text": "ワ",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 8,
+            "origin": [
+              272.286,
+              560.616
+            ],
+            "imageSha256": "b4e9aa518a99a92e8ffa8e2e7740cc938c928389c1ee0f26cecd78af18df052c"
+          }
+        ]
+      },
+      "2277": {
+        "text": "ン",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              183.067,
+              168.396
+            ],
+            "imageSha256": "608867d55654d62aab4d7915309fb078177bc9c5558326f65430e2ab8ca1d1ee"
+          }
+        ]
+      },
+      "2285": {
+        "text": "・",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              209.155,
+              117.876
+            ],
+            "imageSha256": "40e9caeb22dc3502f0ac7538ac7eb745f8e5026a1e0869e4b452e69b0ef9ea31"
+          }
+        ]
+      },
+      "2286": {
+        "text": "ー",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              156.94,
+              117.876
+            ],
+            "imageSha256": "14b64dfb556c53e0aea855b15666c92d345e193e91310269c6482c24560c3f82"
+          }
+        ]
+      },
+      "2901": {
+        "text": "三",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 6,
+            "origin": [
+              160.446,
+              593.196
+            ],
+            "imageSha256": "f8e4e70ca1eb4c345605b4b79585a38b03f327395cdac19545853ba1cfb28f5b"
+          }
+        ]
+      },
+      "2983": {
+        "text": "二",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 7,
+            "origin": [
+              136.266,
+              166.116
+            ],
+            "imageSha256": "28b8593a804ab1db83808036a4d8f268dba8b4025c5c714791a7699b92654b42"
+          }
+        ]
+      },
+      "3015": {
+        "text": "人",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 6,
+            "origin": [
+              172.446,
+              593.196
+            ],
+            "imageSha256": "d81d0415e9bd74b5f1125e169af3a6a21d4791de600f1cc7b37be4acb93fd390"
+          }
+        ]
+      },
+      "3026": {
+        "text": "今",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 7,
+            "origin": [
+              136.266,
+              181.656
+            ],
+            "imageSha256": "08a7e518ac9aeaa1ee118579cf62ef181570b446524079d3977f88e272cd99a6"
+          }
+        ]
+      },
+      "3121": {
+        "text": "何",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 8,
+            "origin": [
+              221.924,
+              678.096
+            ],
+            "imageSha256": "ba4d8f0631410c27788e91b5296856d7c6c2b03cd625a55206e3afdb802f4d8f"
+          }
+        ]
+      },
+      "3667": {
+        "text": "前",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 8,
+            "origin": [
+              245.917,
+              678.096
+            ],
+            "imageSha256": "a0a96167d7ee6ecb51e0a2f1c0f9cc6dc4cdb321f98939269ac0ef79ff19e7dd"
+          }
+        ]
+      },
+      "4350": {
+        "text": "器",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              119.886,
+              564.696
+            ],
+            "imageSha256": "d3dfba7f64afedea61b00d4a7f8d0e9184a1cfa81cc1ea91ffbf46e56c0fd738"
+          }
+        ]
+      },
+      "4420": {
+        "text": "四",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              143.886,
+              269.556
+            ],
+            "imageSha256": "f6b16d6a3f9c7e30c42dad1a173268be324abde6d51e0eef28a4604b80d0e0b2"
+          }
+        ]
+      },
+      "4785": {
+        "text": "大",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 7,
+            "origin": [
+              136.266,
+              228.336
+            ],
+            "imageSha256": "14e8a0b7ecf4a1b4dc539fbbc25cfe2f03cb394de6d91f3a5b68822833ad31d2"
+          }
+        ]
+      },
+      "4842": {
+        "text": "女",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 7,
+            "origin": [
+              136.266,
+              103.836
+            ],
+            "imageSha256": "0f4f7402248db6430bcb63951a10c2471dc838adab78c2280f95f549aa2af2c1"
+          }
+        ]
+      },
+      "4850": {
+        "text": "好",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              222.896,
+              476.856
+            ],
+            "imageSha256": "43de183ca54d0807d16a5abc65303180778aa6ebcd8d73076e6bc1350843767c"
+          }
+        ]
+      },
+      "5066": {
+        "text": "子",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 6,
+            "origin": [
+              112.446,
+              593.196
+            ],
+            "imageSha256": "9ae13d3e7fb781e357ba1012a2e02f84494c16076b674732d59e6f25e4bb83ba"
+          }
+        ]
+      },
+      "5469": {
+        "text": "川",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 7,
+            "origin": [
+              136.266,
+              119.436
+            ],
+            "imageSha256": "8272d0f5579eae8651b86dc3095c88682c6561f6427804578e7dba9764dec16a"
+          }
+        ]
+      },
+      "5562": {
+        "text": "年",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 8,
+            "origin": [
+              233.921,
+              678.096
+            ],
+            "imageSha256": "14bc6c564e33acda12b950b9c60e43cff23fc491da2c809410da267d6f9ef3d8"
+          }
+        ]
+      },
+      "5585": {
+        "text": "店",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 6,
+            "origin": [
+              196.446,
+              530.496
+            ],
+            "imageSha256": "47af844ee0fee91ca69d1b479ca9323913baf60b10d5699f99dcdbbe61dcd700"
+          }
+        ]
+      },
+      "6253": {
+        "text": "手",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              159.919,
+              502.176
+            ],
+            "imageSha256": "31b402923e922763fea480f0b0be0cc99f926a66bc545375c60c4d517f80b472"
+          }
+        ]
+      },
+      "6821": {
+        "text": "日",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              120.906,
+              543.876
+            ],
+            "imageSha256": "bb4f3074be540e23be65c491a61b770b9e4a83dcd71d108435a5c4ce4c4071d0"
+          }
+        ]
+      },
+      "6892": {
+        "text": "時",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              156.966,
+              269.556
+            ],
+            "imageSha256": "aaab66b7ba41e82f1eed89bbf3c3754e576a129a1587586a31f2db51242d9ab0"
+          }
+        ]
+      },
+      "7045": {
+        "text": "朝",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 7,
+            "origin": [
+              136.266,
+              243.936
+            ],
+            "imageSha256": "8213dab5fcb0dae6abeb3f4da6d08bda4026ae61c98e1fcbeae91d5110115acd"
+          }
+        ]
+      },
+      "7055": {
+        "text": "本",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 8,
+            "origin": [
+              281.906,
+              678.096
+            ],
+            "imageSha256": "d9c96318bb1a718f17ad100e8697e8c8494656928a510f9c319a436e01d883fb"
+          }
+        ]
+      },
+      "7094": {
+        "text": "来",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 8,
+            "origin": [
+              305.899,
+              678.096
+            ],
+            "imageSha256": "c96b0e58ac8ec644c572f2390d9c0fd45bb4d7838138a9d0d17c8e5f7a487b94"
+          }
+        ]
+      },
+      "7462": {
+        "text": "楽",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              155.346,
+              453.276
+            ],
+            "imageSha256": "cb4b16e7ddb3dec34e314556854e33899a64a892dae8f7760d4846d5332484ba"
+          }
+        ]
+      },
+      "7735": {
+        "text": "歌",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              146.911,
+              502.176
+            ],
+            "imageSha256": "fb831b0ce32aa4d5598741cb5b0adb1c4f3a239c584a0246d2039054158871f7"
+          }
+        ]
+      },
+      "7830": {
+        "text": "毎",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              107.886,
+              543.876
+            ],
+            "imageSha256": "913389d8930e3498f24c549158c913f05935a0589ce6bc1de040f48027b1c5a7"
+          }
+        ]
+      },
+      "8727": {
+        "text": "父",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 8,
+            "origin": [
+              137.946,
+              576.156
+            ],
+            "imageSha256": "60b77d3fe138e12085591cab43094384605f5460d90b40765f1d8c03c36b1b21"
+          }
+        ]
+      },
+      "8768": {
+        "text": "物",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 6,
+            "origin": [
+              188.466,
+              642.096
+            ],
+            "imageSha256": "0196ce79d7d92915818c0da7b2c22c0a2c329a8ebffe560a6d97ea4f4b0a0517"
+          }
+        ]
+      },
+      "9192": {
+        "text": "男",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 7,
+            "origin": [
+              136.266,
+              150.516
+            ],
+            "imageSha256": "60deb7face6e5b0ed530a5b8d4e5206ce06b9c36f81db8cd1861acae8b42d0da"
+          }
+        ]
+      },
+      "10938": {
+        "text": "聞",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              183.846,
+              543.876
+            ],
+            "imageSha256": "c75379ea4cea0e461bd72e7803dfe02ac501789ff5dc0e357351b23817cddcf4"
+          }
+        ]
+      },
+      "12188": {
+        "text": "行",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              143.886,
+              294.876
+            ],
+            "imageSha256": "7c7ddef8ccaa6246b2ed0028b86e680dde5a641333c25244b81b07a9c22bda60"
+          }
+        ]
+      },
+      "12562": {
+        "text": "語",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              196.06,
+              320.136
+            ],
+            "imageSha256": "1f9280d8373f971a4e211c5a3b1af7e2a8e4db330fba08cdd45855e6181e4591"
+          }
+        ]
+      },
+      "12577": {
+        "text": "誰",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              185.886,
+              502.176
+            ],
+            "imageSha256": "ba3c57e9c70aca5521b2c77d63e5248f63e04a4b2c8e221dc2121366746e702e"
+          }
+        ]
+      },
+      "14434": {
+        "text": "音",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              143.346,
+              453.276
+            ],
+            "imageSha256": "047b491106b8313284856bc1eab99f74e86b39afbff820dae76a8b998d1ff812"
+          }
+        ]
+      },
+      "14551": {
+        "text": "食",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 7,
+            "origin": [
+              136.266,
+              212.796
+            ],
+            "imageSha256": "b873f1c096b9a047ae093f3aac9e794700df144ec6708f053033cfe950a13129"
+          }
+        ]
+      },
+      "14567": {
+        "text": "飲",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 7,
+            "origin": [
+              125.886,
+              388.956
+            ],
+            "imageSha256": "6bb1850811af72755819041078de853160ecd86d25b35bc745f6f4d21570478b"
+          }
+        ]
+      },
+      "14902": {
+        "text": "魚",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 6,
+            "origin": [
+              112.446,
+              696.696
+            ],
+            "imageSha256": "7c0b105fa04266809220f2640b3b82afd06ef3185c0ad118cfccd7b0cf81e81e"
+          }
+        ]
+      },
+      "15910": {
+        "text": "（",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              105.246,
+              101.316
+            ],
+            "imageSha256": "055bc5cc4ad8ed032b77e1ba3e4745a744e141df2da6f6eb4c70454a1e67f800"
+          }
+        ]
+      },
+      "15911": {
+        "text": "）",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 9,
+            "origin": [
+              164.946,
+              101.316
+            ],
+            "imageSha256": "339b31c769da59b646d250a825b445f3ecbc9770a219bc82fae844c8db9daf15"
+          }
+        ]
+      },
+      "15917": {
+        "text": "／",
+        "outlines": [],
+        "evidence": [
+          {
+            "visualProof": "scripts/markbank/authoring/reviews/japanese-2014-ol-glyph-proof.json",
+            "sha256": "e5ef4f2e8d12c611bb339c43bd24b1d0c1636e66bb0e48267d454c8cc45eebda",
+            "page": 7,
+            "origin": [
+              300.23,
+              357.816
+            ],
+            "imageSha256": "6967755032ee619a6106ee08024a13db91cacd1b29dd6f9bd57f7760c1568eb8"
+          }
+        ]
+      }
+    }
+  },
+  "unresolvedImageOnly": [
+    {
+      "font": "MSMincho",
+      "gid": 2101,
+      "occurrences": 5,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            107.886,
+            327.096
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            131.886,
+            523.596
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            123.246,
+            691.656
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            119.886,
+            377.076
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            131.886,
+            485.676
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2108,
+      "occurrences": 13,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            107.886,
+            508.056
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            119.886,
+            508.056
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            159.906,
+            340.776
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            287.886,
+            340.776
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            307.926,
+            513.636
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            107.886,
+            501.216
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            119.886,
+            501.216
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            251.886,
+            501.216
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            107.886,
+            307.296
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            107.886,
+            377.916
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            107.886,
+            479.616
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            343.926,
+            514.656
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            491.946,
+            514.656
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2116,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            251.886,
+            605.856
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            410.886,
+            478.536
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            446.886,
+            502.056
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2118,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            179.886,
+            492.456
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            179.886,
+            508.056
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            263.886,
+            119.436
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2122,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            368.886,
+            399.816
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2130,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            251.886,
+            110.676
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2136,
+      "occurrences": 13,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            223.926,
+            143.556
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            211.926,
+            366.216
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            211.926,
+            562.716
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            179.886,
+            502.056
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            247.926,
+            184.836
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            415.926,
+            223.896
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            203.886,
+            392.676
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            219.906,
+            524.796
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            251.886,
+            548.316
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            287.886,
+            626.496
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            359.886,
+            626.496
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            339.906,
+            271.776
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            247.866,
+            573.756
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2148,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            268.926,
+            143.016
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            359.286,
+            236.736
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            327.906,
+            318.816
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            271.866,
+            597.276
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2151,
+      "occurrences": 5,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            167.946,
+            340.776
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            295.926,
+            340.776
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            223.926,
+            201.156
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            467.886,
+            401.436
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            359.886,
+            432.516
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2153,
+      "occurrences": 14,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            147.906,
+            299.556
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            442.866,
+            426.876
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            463.926,
+            449.376
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            287.886,
+            502.056
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            291.906,
+            365.076
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            203.886,
+            610.956
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            279.906,
+            638.016
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            411.906,
+            201.156
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            191.886,
+            330.816
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            475.866,
+            330.816
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            235.866,
+            342.336
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            277.866,
+            365.916
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            133.866,
+            389.436
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            107.886,
+            526.656
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2154,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            183.906,
+            341.556
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2155,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            203.886,
+            587.436
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            119.886,
+            650.016
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2156,
+      "occurrences": 10,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            159.906,
+            425.856
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            119.886,
+            605.856
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            167.886,
+            194.076
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            107.886,
+            189.636
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            107.886,
+            260.256
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            289.866,
+            271.776
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            169.866,
+            295.296
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            157.866,
+            318.816
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            107.886,
+            416.976
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            107.886,
+            597.276
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2159,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            236.886,
+            399.816
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            187.926,
+            466.536
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            339.906,
+            525.636
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            269.886,
+            342.336
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2165,
+      "occurrences": 5,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            322.967,
+            376.296
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            502.926,
+            376.296
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            308.886,
+            399.816
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            419.886,
+            392.676
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            182.886,
+            456.096
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2168,
+      "occurrences": 13,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            167.886,
+            492.456
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            167.886,
+            508.056
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            227.886,
+            170.556
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            275.886,
+            170.556
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            259.326,
+            236.736
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            239.886,
+            525.636
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            265.866,
+            575.436
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            181.866,
+            638.016
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            263.886,
+            166.116
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            301.866,
+            271.776
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            181.866,
+            295.296
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            169.866,
+            318.816
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            110.886,
+            456.096
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2170,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            479.886,
+            341.796
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2171,
+      "occurrences": 13,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            487.926,
+            256.896
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            209.886,
+            387.696
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            263.886,
+            617.376
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            497.886,
+            341.796
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            506.886,
+            478.536
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            95.886,
+            525.636
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            167.886,
+            341.556
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            155.886,
+            501.216
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            231.906,
+            201.156
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            118.926,
+            224.736
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            443.886,
+            260.256
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            311.886,
+            432.516
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            218.886,
+            456.096
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2177,
+      "occurrences": 6,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            363.906,
+            365.076
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            475.926,
+            365.076
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            487.866,
+            330.816
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            247.866,
+            342.336
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            289.866,
+            365.916
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            145.866,
+            389.436
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2195,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            203.886,
+            166.116
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2196,
+      "occurrences": 8,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            363.906,
+            196.836
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            465.906,
+            196.836
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            227.886,
+            353.556
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            131.886,
+            377.916
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            134.886,
+            456.096
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            131.886,
+            479.616
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            251.886,
+            526.656
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            399.906,
+            526.656
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2197,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            328.326,
+            329.196
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2200,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            316.326,
+            329.196
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            203.886,
+            173.256
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            155.886,
+            485.676
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2201,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            263.886,
+            170.556
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            215.886,
+            173.256
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            167.886,
+            485.676
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2203,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            496.326,
+            329.196
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2204,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            295.686,
+            131.436
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            220.686,
+            225.216
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2206,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            143.886,
+            378.216
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2207,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            131.886,
+            461.376
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            164.286,
+            644.976
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2208,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            71.886,
+            155.016
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2210,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            379.866,
+            311.556
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            275.886,
+            508.056
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            343.866,
+            629.376
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            308.286,
+            644.976
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2211,
+      "occurrences": 5,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            311.886,
+            590.316
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            119.886,
+            660.516
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            352.686,
+            225.216
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            83.886,
+            248.736
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            215.286,
+            248.736
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2217,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            131.886,
+            155.556
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            348.606,
+            508.056
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            383.886,
+            377.076
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            395.886,
+            401.436
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2218,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            287.886,
+            233.316
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2221,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            275.286,
+            248.736
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2227,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            215.886,
+            676.056
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            340.686,
+            225.216
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            71.886,
+            248.736
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            203.286,
+            248.736
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2230,
+      "occurrences": 6,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            372.606,
+            508.056
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            131.886,
+            131.436
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            463.686,
+            131.436
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            131.886,
+            194.076
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            407.886,
+            377.076
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            71.886,
+            392.676
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2232,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            155.886,
+            150.516
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2236,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            340.326,
+            329.196
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2237,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            131.886,
+            171.096
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            347.886,
+            392.676
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2242,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            489.906,
+            196.836
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2246,
+      "occurrences": 5,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            143.886,
+            110.676
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            383.886,
+            110.676
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            107.886,
+            173.256
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            401.706,
+            306.516
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            122.886,
+            456.096
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2250,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            131.886,
+            256.896
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2251,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            373.866,
+            629.376
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2254,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            359.886,
+            352.776
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2256,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            263.886,
+            508.056
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            71.886,
+            352.776
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2257,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            251.886,
+            233.316
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            215.886,
+            166.116
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2258,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            131.886,
+            150.516
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2259,
+      "occurrences": 16,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            131.886,
+            378.216
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            188.286,
+            644.976
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            450.606,
+            155.016
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            71.886,
+            103.836
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            191.886,
+            119.436
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            71.886,
+            134.976
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            71.886,
+            166.116
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            71.886,
+            213.156
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            71.886,
+            283.776
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            71.886,
+            330.816
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            71.886,
+            401.436
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            71.886,
+            432.516
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            479.886,
+            432.516
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            71.886,
+            503.136
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            155.886,
+            526.656
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            71.886,
+            573.756
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2260,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            311.886,
+            587.436
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            227.886,
+            650.016
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2261,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            143.886,
+            461.376
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            360.606,
+            508.056
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            395.886,
+            377.076
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            407.886,
+            401.436
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2263,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            143.886,
+            171.096
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            263.886,
+            233.316
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2265,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            143.886,
+            155.556
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            227.886,
+            676.056
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2266,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            167.886,
+            171.096
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2893,
+      "occurrences": 9,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            191.886,
+            398.676
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            241.866,
+            629.376
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            254.886,
+            155.016
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            97.866,
+            272.256
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            202.806,
+            352.776
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            307.866,
+            282.996
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            239.886,
+            548.316
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            347.886,
+            626.496
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            313.866,
+            330.816
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2900,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            161.886,
+            353.556
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2902,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            193.866,
+            236.736
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2905,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            463.926,
+            461.376
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2913,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            216.664,
+            155.016
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2928,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            119.886,
+            170.556
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2938,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            395.886,
+            213.156
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2956,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            215.886,
+            256.896
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2979,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            251.286,
+            248.736
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            179.886,
+            478.536
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            167.886,
+            550.236
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 2982,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            287.886,
+            173.256
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            275.886,
+            189.636
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3007,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            83.886,
+            131.436
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            415.686,
+            131.436
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            83.886,
+            194.076
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            131.886,
+            478.536
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3033,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            275.886,
+            173.256
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            263.886,
+            189.636
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3079,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            231.906,
+            155.556
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            219.906,
+            378.216
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            219.906,
+            574.716
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            255.906,
+            196.836
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3113,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            140.886,
+            399.816
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3197,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            475.926,
+            461.376
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3322,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            188.826,
+            352.776
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3331,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            393.846,
+            194.076
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3390,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            113.886,
+            330.036
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3459,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            481.386,
+            352.776
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3478,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            155.886,
+            134.976
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3483,
+      "occurrences": 10,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            155.556
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            378.216
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            71.886,
+            414.276
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            71.886,
+            492.456
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            71.886,
+            523.596
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            574.716
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            71.886,
+            605.856
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            660.516
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            71.886,
+            691.656
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            263.886,
+            432.516
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3504,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            113.886,
+            354.336
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            311.886,
+            377.916
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            263.886,
+            401.436
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3527,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            430.086,
+            225.216
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            155.286,
+            248.736
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            193.266,
+            259.416
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            373.266,
+            282.996
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3615,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            421.866,
+            629.376
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            343.866,
+            194.076
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3624,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            80.286,
+            209.616
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3652,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            277.866,
+            377.076
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3656,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            263.886,
+            610.956
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            335.886,
+            650.016
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3758,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            255.246,
+            503.136
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            199.866,
+            573.756
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3774,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            496.386,
+            352.776
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            406.933,
+            376.296
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3851,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            275.886,
+            213.156
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            263.886,
+            260.256
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3863,
+      "occurrences": 6,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            71.886,
+            225.216
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            143.286,
+            225.216
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            239.886,
+            478.536
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            95.886,
+            502.056
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            347.886,
+            502.056
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            179.886,
+            525.636
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3969,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            319.866,
+            194.076
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3985,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            379.866,
+            194.076
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 3989,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            377.286,
+            248.736
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4001,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            174.846,
+            352.776
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            299.886,
+            352.776
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4037,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            245.886,
+            354.336
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            287.886,
+            377.916
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            143.886,
+            401.436
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4084,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            323.886,
+            283.776
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4423,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            113.886,
+            272.256
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4444,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            167.886,
+            590.316
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4469,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            487.926,
+            235.896
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4631,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            191.886,
+            478.536
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4762,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            161.886,
+            437.856
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4767,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            217.866,
+            155.556
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            205.866,
+            378.216
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            205.866,
+            574.716
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            241.866,
+            196.836
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4773,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            155.886,
+            590.316
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4778,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            449.886,
+            256.896
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            253.866,
+            306.516
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            487.686,
+            306.516
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4787,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            155.886,
+            478.536
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4789,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            177.906,
+            353.556
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 4972,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            407.886,
+            213.156
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5016,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            356.886,
+            456.096
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5083,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            183.906,
+            149.736
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            263.886,
+            416.976
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            143.886,
+            432.516
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            131.886,
+            573.756
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5123,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            179.886,
+            550.236
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5130,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            335.886,
+            283.776
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5145,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            155.886,
+            398.676
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5255,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            299.886,
+            283.776
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            179.886,
+            307.296
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            167.886,
+            330.816
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5520,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            301.866,
+            525.636
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            337.866,
+            526.656
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            485.886,
+            526.656
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5592,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            398.886,
+            478.536
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            434.886,
+            502.056
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5658,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            279.846,
+            236.736
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5705,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            267.246,
+            503.136
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            211.866,
+            573.756
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5724,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            295.866,
+            236.736
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            287.886,
+            354.336
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5771,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            155.286,
+            225.216
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            107.886,
+            502.056
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            359.886,
+            502.056
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            191.886,
+            525.636
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5776,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            95.886,
+            171.096
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            95.886,
+            398.676
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            95.886,
+            590.316
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            239.886,
+            479.616
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5825,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            297.246,
+            503.136
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 5870,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            335.886,
+            416.976
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 6757,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            244.386,
+            470.076
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 6769,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            112.866,
+            236.736
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 6793,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            215.886,
+            194.076
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 6808,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            167.886,
+            398.676
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 7001,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            449.886,
+            235.896
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            501.906,
+            235.896
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 7030,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            242.286,
+            131.436
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            239.886,
+            526.656
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 7033,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            149.886,
+            311.556
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            293.886,
+            377.076
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 7054,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            407.886,
+            235.896
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 7102,
+      "occurrences": 5,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            71.886,
+            131.436
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            403.686,
+            131.436
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            71.886,
+            194.076
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            307.866,
+            194.076
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            119.886,
+            478.536
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 7215,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            215.886,
+            196.836
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            275.886,
+            416.976
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            155.886,
+            432.516
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 7756,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            481.866,
+            194.076
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 7763,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            133.866,
+            352.776
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            481.866,
+            110.676
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            121.866,
+            149.736
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 7829,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            143.886,
+            676.056
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            215.886,
+            189.636
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            467.886,
+            213.156
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 7868,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            167.886,
+            478.536
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            347.886,
+            478.536
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            383.886,
+            502.056
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            167.886,
+            134.976
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 7880,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            215.886,
+            548.316
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            323.886,
+            626.496
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 8000,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            229.386,
+            470.076
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 8018,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            133.866,
+            311.556
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 8056,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            253.866,
+            194.076
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 8079,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            229.866,
+            461.376
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 8194,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            359.886,
+            478.536
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            395.886,
+            502.056
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 8605,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            263.886,
+            587.436
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            179.886,
+            650.016
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 8631,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            239.886,
+            587.436
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            155.886,
+            650.016
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 9006,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            128.886,
+            236.736
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 9173,
+      "occurrences": 15,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            95.886,
+            155.556
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            171.096
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            95.886,
+            378.216
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            398.676
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            414.276
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            492.456
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            523.596
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            95.886,
+            574.716
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            590.316
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            605.856
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            95.886,
+            660.516
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            691.656
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            219.306,
+            149.736
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            275.886,
+            432.516
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            227.886,
+            479.616
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 9210,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            228.728,
+            155.016
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 9234,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            270.906,
+            155.016
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            361.266,
+            248.736
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            329.886,
+            330.816
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 9242,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            137.886,
+            307.296
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            125.886,
+            330.816
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 9299,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            230.886,
+            213.156
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 9425,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            357.846,
+            377.076
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 9918,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            131.886,
+            398.676
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            131.886,
+            590.316
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            263.886,
+            283.776
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 10457,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            263.286,
+            248.736
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 10533,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            137.886,
+            259.416
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            173.886,
+            282.996
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 10612,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            203.886,
+            398.676
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            257.886,
+            629.376
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 10885,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            287.886,
+            213.156
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            275.886,
+            260.256
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 11081,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            275.886,
+            650.016
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 11425,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            269.886,
+            194.076
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 11974,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            160.866,
+            352.776
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            287.886,
+            352.776
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 12377,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            299.886,
+            590.316
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 12386,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            335.886,
+            233.316
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            244.326,
+            329.196
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 12445,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            127.866,
+            272.256
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 12528,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            347.286,
+            248.736
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 12747,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            263.886,
+            650.016
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 12825,
+      "occurrences": 8,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            383.886,
+            233.316
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            119.886,
+            287.976
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            223.866,
+            311.556
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            427.866,
+            311.556
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            203.886,
+            492.456
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            396.606,
+            508.056
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            191.886,
+            660.516
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            299.886,
+            676.056
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 13087,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            275.886,
+            610.956
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            347.886,
+            650.016
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 13254,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            289.866,
+            353.556
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 13324,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            179.886,
+            186.636
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            104.286,
+            202.236
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            295.866,
+            437.856
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            387.906,
+            235.896
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 13362,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            269.886,
+            461.376
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 13450,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            287.886,
+            283.776
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            167.886,
+            307.296
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            155.886,
+            330.816
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 13511,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            181.866,
+            524.796
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 13600,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            435.906,
+            235.896
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            211.866,
+            282.996
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 14059,
+      "occurrences": 6,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            191.886,
+            186.636
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            116.286,
+            202.236
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            307.866,
+            437.856
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            131.886,
+            629.376
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            331.866,
+            282.996
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            227.886,
+            306.516
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 14128,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            212.886,
+            213.156
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 14150,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            439.866,
+            437.856
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 14164,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 14,
+          "origin": [
+            248.886,
+            213.156
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 14261,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            415.866,
+            437.856
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            263.886,
+            502.056
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 14273,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            335.286,
+            248.736
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 14506,
+      "occurrences": 2,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            277.866,
+            548.316
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            313.866,
+            610.956
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 14524,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            155.886,
+            502.056
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            233.886,
+            354.336
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            275.886,
+            377.916
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            131.886,
+            401.436
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 14672,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            283.866,
+            194.076
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 14807,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            286.926,
+            155.016
+          ]
+        },
+        {
+          "page": 12,
+          "origin": [
+            385.488,
+            155.016
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            203.886,
+            196.836
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 15342,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            469.866,
+            377.076
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 15903,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            416.886,
+            399.816
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            335.886,
+            485.676
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            367.866,
+            330.816
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            319.866,
+            597.276
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 15908,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            95.886,
+            665.616
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 15919,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            485.676
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            548.316
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            610.956
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            665.616
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 15920,
+      "occurrences": 4,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            524.796
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            207.906,
+            524.796
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            587.436
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            107.886,
+            665.616
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 15923,
+      "occurrences": 1,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 12,
+          "origin": [
+            230.286,
+            131.436
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 15928,
+      "occurrences": 58,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            107.886,
+            155.556
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            107.886,
+            171.096
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            186.636
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            202.236
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            217.776
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            233.316
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            287.976
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            311.556
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            327.096
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            107.886,
+            398.676
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            95.886,
+            414.276
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            437.856
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            95.886,
+            492.456
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            508.056
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            95.886,
+            523.596
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            107.886,
+            574.716
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            107.886,
+            590.316
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            95.886,
+            605.856
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            629.376
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            107.886,
+            660.516
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            83.886,
+            676.056
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            110.676
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            149.736
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            173.256
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            196.836
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            235.896
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            282.996
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            306.516
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            353.556
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            377.076
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            408.216
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            470.076
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            95.886,
+            485.676
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            501.216
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            95.886,
+            524.796
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            95.886,
+            548.316
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            563.856
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            95.886,
+            587.436
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            95.886,
+            610.956
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            83.886,
+            626.496
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            119.886,
+            665.616
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            95.886,
+            119.436
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            107.886,
+            134.976
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            95.886,
+            150.516
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            107.886,
+            166.116
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            95.886,
+            189.636
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            107.886,
+            213.156
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            95.886,
+            260.256
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            107.886,
+            283.776
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            95.886,
+            307.296
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            107.886,
+            330.816
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            95.886,
+            377.916
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            107.886,
+            401.436
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            107.886,
+            432.516
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            95.886,
+            479.616
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            95.886,
+            526.656
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            107.886,
+            573.756
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            95.886,
+            597.276
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 15929,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            107.886,
+            378.216
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            107.886,
+            103.836
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            95.886,
+            416.976
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 15933,
+      "occurrences": 16,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 13,
+          "origin": [
+            269.886,
+            470.076
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            347.886,
+            501.216
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            299.886,
+            119.436
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            215.886,
+            150.516
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            335.886,
+            189.636
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            467.886,
+            260.256
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            119.886,
+            307.296
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            251.886,
+            307.296
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            119.886,
+            377.916
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            371.886,
+            377.916
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            167.886,
+            401.436
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            359.886,
+            416.976
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            242.886,
+            456.096
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            119.886,
+            479.616
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            335.886,
+            479.616
+          ]
+        },
+        {
+          "page": 14,
+          "origin": [
+            191.886,
+            550.236
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    },
+    {
+      "font": "MSMincho",
+      "gid": 16003,
+      "occurrences": 3,
+      "outlines": [],
+      "locations": [
+        {
+          "page": 11,
+          "origin": [
+            355.866,
+            629.376
+          ]
+        },
+        {
+          "page": 11,
+          "origin": [
+            320.286,
+            644.976
+          ]
+        },
+        {
+          "page": 13,
+          "origin": [
+            387.906,
+            196.836
+          ]
+        }
+      ],
+      "presentation": "Original transcript PDF image only; forbidden in published text"
+    }
+  ]
+}
