@@ -8,6 +8,7 @@ import { CONSTRUCTION_2025_HIGHER_ADDED_IDS, CONSTRUCTION_2025_ORDINARY_ADDED_ID
 import { CONSTRUCTION_2024_HIGHER_ADDED_IDS, CONSTRUCTION_2024_ORDINARY_ADDED_IDS } from './fixtures/construction2024Reviewed';
 import { CONSTRUCTION_2023_HIGHER_ADDED_IDS, CONSTRUCTION_2023_ORDINARY_ADDED_IDS } from './fixtures/construction2023Reviewed';
 import { CONSTRUCTION_REVIEWED_HIGHER_ADDED_IDS, CONSTRUCTION_REVIEWED_ORDINARY_ADDED_IDS } from './fixtures/constructionReviewedPapers';
+import { LCVP_2026_ADDED_IDS } from './fixtures/lcvpReviewed';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -1857,8 +1858,10 @@ const japaneseAliasIds = Object.keys(japaneseAliases);
 // 2015 Higher adds all 60 independently censused tasks, including one unpriced confidence-review task; original 600 hashes and 391 aliases stay frozen.
 const japaneseAdditionIds = new Set([japanese2015HigherCensus, japanese2016OrdinaryCensus, japanese2016HigherCensus, japanese2017OrdinaryCensus, japanese2017HigherCensus, japanese2018OrdinaryCensus, japanese2018HigherCensus, japanese2019OrdinaryCensus, japanese2019HigherCensus, japanese2020HigherCensus, japanese2021OrdinaryCensus, japanese2021HigherCensus, japanese2022OrdinaryCensus, japanese2022HigherCensus, japanese2026HigherCensus, japanese2026OrdinaryCensus, japanese2025HigherCensus, japanese2025OrdinaryCensus, japanese2024HigherCensus, japanese2024OrdinaryCensus, japanese2023HigherCensus, japanese2023OrdinaryCensus].flatMap(census => census.tasks.map(task =>
   `ja-${census.year}-${census.level}-${task.key.filter(part => part !== null).join('-').toLowerCase()}`)).filter(id => !japaneseLiteralIds.has(id)));
+const lcvpAdditionIds = new Set<string>(LCVP_2026_ADDED_IDS);
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
+  if (name === 'lcvp:common') return ids.filter(id => !lcvpAdditionIds.has(id));
   if (name.startsWith('russian:')) {
     const published = new Set(ids);
     return russianOriginalCardIds[name.endsWith(':higher') ? 'higher' : 'ordinary']
@@ -1933,7 +1936,8 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   return ids;
 };
 const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
-  name.startsWith('russian:') ? cards.filter(card => russianFrozen.has(card.id)).length
+  name === 'lcvp:common' ? cards.filter(card => !lcvpAdditionIds.has(card.id)).length
+    : name.startsWith('russian:') ? cards.filter(card => russianFrozen.has(card.id)).length
     : name.startsWith('maths:') ? cards.filter(card => mathsFrozen.has(card.id)).length
     : name.startsWith('japanese:') ? cards.filter(card => !japaneseAdditionIds.has(card.id)).length
     : name.startsWith('home-economics:') ? cards.filter(card => !homeEconomicsAdditionIds.has(card.id)).length
@@ -1952,6 +1956,12 @@ const peAdditions = {
 } as const;
 
 describe('Mark Bank card preservation', () => {
+  it('retains all 44 reviewed LCVP additions beside the unchanged original 314 identities', () => {
+    const added = LCVP_COMMON.filter(card => lcvpAdditionIds.has(card.id));
+    expect(added.map(card => card.id).sort()).toEqual([...LCVP_2026_ADDED_IDS].sort());
+    expect(lcvpAdditionIds.size).toBe(44);
+    expect(LCVP_COMMON).toHaveLength(358);
+  });
   it('retains reviewed Russian additions beside the original frozen identities', () => {
     const additions = [...RUSSIAN_HIGHER, ...RUSSIAN_ORDINARY].filter(card => !russianFrozen.has(card.id));
     expect(additions.map(card => card.id).sort()).toEqual([...russianAdditionIds].sort());
@@ -2070,7 +2080,7 @@ describe('Mark Bank card preservation', () => {
       name.startsWith('economics:') || name.startsWith('agricultural-science:') || name.startsWith('construction-studies:')
         || name.startsWith('geography:') || name.startsWith('english:') || name.startsWith('biology:')
         || name.startsWith('chemistry:') || name.startsWith('maths:') || name.startsWith('physics:')
-        || name.startsWith('home-economics:') || name.startsWith('japanese:')
+        || name.startsWith('home-economics:') || name.startsWith('japanese:') || name.startsWith('lcvp:')
         ? frozenIds(name, cards).length - cards.length : 0;
     const artNet = artAdded('higher') + artAdded('ordinary') - artAliasIds.length;
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
@@ -2086,7 +2096,7 @@ describe('Mark Bank card preservation', () => {
         + biologyAdditionIds.size - biologyAliasIds.length
         + chemistryAdded.size - chemistryWithdrawnShipped.length + mathsNet
         + physicsAdditionIds.size - physicsAliasIds.length + homeEconomicsAdditionIds.size - homeEconomicsAliasIds.length
-        + japaneseAdditionIds.size - japaneseAliasIds.length);
+        + japaneseAdditionIds.size - japaneseAliasIds.length + lcvpAdditionIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

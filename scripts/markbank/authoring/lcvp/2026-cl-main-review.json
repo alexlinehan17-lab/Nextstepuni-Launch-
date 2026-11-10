@@ -4,7 +4,7 @@
   "level": "common",
   "sitting": "main",
   "language": "ev",
-  "status": "independent-manual-source-sweep-complete; authoring-not-started",
+  "status": "source-authored; independent-sweep-complete; two-numeric-scoring-holds",
   "createdAt": "2026-11-10T11:29:07.308175+00:00",
   "sources": [
     {
@@ -403,5 +403,324 @@
     "movieDurationSeconds": 281.28,
     "nativePlaybackVerified": false,
     "sharedSupportCommit": "41b211026"
+  },
+  "tasks": [
+    {
+      "id": "lcvp-2026-cl-a1",
+      "questionRef": "2026 CL Section A Q1",
+      "marks": 1,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2026-cl-a2",
+      "questionRef": "2026 CL Section A Q2",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2026-cl-a3",
+      "questionRef": "2026 CL Section A Q3",
+      "marks": 3,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2026-cl-a4",
+      "questionRef": "2026 CL Section A Q4",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2026-cl-a5",
+      "questionRef": "2026 CL Section A Q5",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2026-cl-a6",
+      "questionRef": "2026 CL Section A Q6",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2026-cl-a7",
+      "questionRef": "2026 CL Section A Q7",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2026-cl-a8",
+      "questionRef": "2026 CL Section A Q8",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2026-cl-b1",
+      "questionRef": "2026 CL Section B Q1",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2026-cl-b2i",
+      "questionRef": "2026 CL Section B Q2(i)",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2026-cl-b2ii",
+      "questionRef": "2026 CL Section B Q2(ii)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2026-cl-b2iii",
+      "questionRef": "2026 CL Section B Q2(iii)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2026-cl-b3i",
+      "questionRef": "2026 CL Section B Q3(i)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2026-cl-b3ii",
+      "questionRef": "2026 CL Section B Q3(ii)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2026-cl-b3iii",
+      "questionRef": "2026 CL Section B Q3(iii)",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2026-cl-c1a",
+      "questionRef": "2026 CL Section C Q1(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-1"
+    },
+    {
+      "id": "lcvp-2026-cl-c1b",
+      "questionRef": "2026 CL Section C Q1(b)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-1"
+    },
+    {
+      "id": "lcvp-2026-cl-c1c",
+      "questionRef": "2026 CL Section C Q1(c)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-0-1"
+    },
+    {
+      "id": "lcvp-2026-cl-c1d",
+      "questionRef": "2026 CL Section C Q1(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2026-cl-c2a",
+      "questionRef": "2026 CL Section C Q2(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2026-cl-c2b",
+      "questionRef": "2026 CL Section C Q2(b)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2026-cl-c2c",
+      "questionRef": "2026 CL Section C Q2(c)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2026-cl-c2d",
+      "questionRef": "2026 CL Section C Q2(d)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-0"
+    },
+    {
+      "id": "lcvp-2026-cl-c3a",
+      "questionRef": "2026 CL Section C Q3(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2026-cl-c3b",
+      "questionRef": "2026 CL Section C Q3(b)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2026-cl-c3c",
+      "questionRef": "2026 CL Section C Q3(c)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2026-cl-c3d",
+      "questionRef": "2026 CL Section C Q3(d)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2026-cl-c4a",
+      "questionRef": "2026 CL Section C Q4(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-3"
+    },
+    {
+      "id": "lcvp-2026-cl-c4b",
+      "questionRef": "2026 CL Section C Q4(b)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-3"
+    },
+    {
+      "id": "lcvp-2026-cl-c4c",
+      "questionRef": "2026 CL Section C Q4(c)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-0-3"
+    },
+    {
+      "id": "lcvp-2026-cl-c4d",
+      "questionRef": "2026 CL Section C Q4(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-4"
+    },
+    {
+      "id": "lcvp-2026-cl-c5a",
+      "questionRef": "2026 CL Section C Q5(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-2"
+    },
+    {
+      "id": "lcvp-2026-cl-c5b",
+      "questionRef": "2026 CL Section C Q5(b)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-2"
+    },
+    {
+      "id": "lcvp-2026-cl-c5c",
+      "questionRef": "2026 CL Section C Q5(c)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-0-2"
+    },
+    {
+      "id": "lcvp-2026-cl-c5d",
+      "questionRef": "2026 CL Section C Q5(d)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2026-cl-c6a",
+      "questionRef": "2026 CL Section C Q6(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2026-cl-c6b",
+      "questionRef": "2026 CL Section C Q6(b)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2026-cl-c6c",
+      "questionRef": "2026 CL Section C Q6(c)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2026-cl-c6d",
+      "questionRef": "2026 CL Section C Q6(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2026-cl-c7a",
+      "questionRef": "2026 CL Section C Q7(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2026-cl-c7bi",
+      "questionRef": "2026 CL Section C Q7(b)(i)",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2026-cl-c7bii",
+      "questionRef": "2026 CL Section C Q7(b)(ii)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2026-cl-c7c",
+      "questionRef": "2026 CL Section C Q7(c)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2026-cl-c7d",
+      "questionRef": "2026 CL Section C Q7(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-3"
+    }
+  ],
+  "heldNumericScoring": [
+    "lcvp-2026-cl-a2",
+    "lcvp-2026-cl-c5d"
+  ],
+  "selectionPolicy": {
+    "outerSectionC": "Answer any four of seven. Retain seven independently selectable questions because their topics and priced structures differ; no four-question combination cards.",
+    "internalChoices": "All ordinary open-response and numbered model pools remain whole tasks. Numbered scheme examples are not a mandate to create one card per example or combination.",
+    "C5a": "The required career and matching qualification are two original leaves in one coherent four-mark profile. Preserve both exact prompts and independently claimable 0/2 rows.",
+    "C5c": "One personal activity with its explanation and two pieces learned remains one nine-mark task; all seven illustrative source activities retained, no invented personal model.",
+    "C5d": "Two complete training/benefit profiles from all six source examples; no cross-product of training and benefits. Numeric allocation conflict explicitly held.",
+    "C7d": "Three required responses: one group, one personal and one other group/personal. Preserve distinct claim slots and all nine source models.",
+    "B3iii": "Eight printed action-plan headings are a scaffold, not paid answer options; source explicitly forbids marks for headings. Two content points at one mark each."
+  },
+  "scoringScope": {
+    "printedOfferedMarks": 235,
+    "pricedTaskMarks": 225,
+    "heldWholeTaskMarks": 10,
+    "heldTasks": 2,
+    "distinction": "All 44 source tasks are retained. Two tasks worth 10 printed marks use confidence-only review; their numerical splits are unresolved. These holds are not missing/excluded source tasks or a release-readiness claim."
+  },
+  "reviewedBy": "Codex /root/home_economics",
+  "validation": {
+    "checkedAt": "2026-11-10T12:08:14.708708+00:00",
+    "sourceGate": "lcvp_validate_2026_source.py: all three PDF hashes and full original video hash verified; 45 raw/manual leaves, 44 tasks, zero continuity flags",
+    "requiredAndAffectedTests": 248,
+    "focusedCorrection": "A negative test assertion now treats an omitted empty stem as an empty string; all 8 sitting tests passed. No card correction was required.",
+    "coverageTests": 2,
+    "originalAuthoredAndEmittedCardsUnchanged": 314,
+    "originalAtlasIdentitiesPreserved": 18,
+    "nonLcvpFullAndDecodedRecordsUnchanged": true,
+    "regenerations": 2,
+    "regenerationFilesChecked": 31707,
+    "cardlint": {
+      "cardsRead": 358,
+      "flags": 0
+    },
+    "appTypes": "passed",
+    "scopedTestTypes": "passed with repository 8 GiB Node setting; initial default 4 GiB heap exhausted, no type diagnostic",
+    "scopedLint": "passed",
+    "productionBuild": "passed; own reproducible nonsymlink dist removed",
+    "scope": "2026 English main only; historical backlog and two available deferred sittings continue. Numeric A2 total-only and C5(d) conflicting allocations remain held confidence-only. Native video playback remains pending root release QA.",
+    "localLogHashes": {
+      "tmp/lcvp-2026-tests.log": "69459fe59e5bd7fc9e772bb7ef52b7e5d0dd3012eb3f0d41a53cc85e083179af",
+      "tmp/lcvp-2026-focused-recheck.log": "537f5be4144d4e931a9512f55bbf08eb7485394a62f001c287e178fc0b0350d9",
+      "tmp/lcvp-2026-source-gate.json": "68d3d7ed10c290cf8bd7ca323b62302c0758d3c890dbffc99d91a07ccbe21503",
+      "tmp/lcvp-2026-regeneration.log": "da5f64fdfedb6dcf060eb05cb2bb008abef295bc9925d62013c70580e1ed986c",
+      "tmp/lcvp-2026-coverage.log": "1193ded97fa2255647d8b758e7f19b7ae2201dd759e9c5a67a6adf92f0a33e27",
+      "tmp/lcvp-2026-types.log": "59925f4b026bd55ff54374e4d96c1d662f0018373be22840bf14358894b759f6",
+      "tmp/lcvp-2026-test-types.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tmp/lcvp-2026-lint.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tmp/lcvp-2026-build.log": "8d819bda29ed8b39e507a18a26fad9eda8e604e3592de162902b5c4857820423"
+    }
   }
 }
