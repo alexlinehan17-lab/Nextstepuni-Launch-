@@ -38,7 +38,7 @@ describe('Russian 2016 Higher published allocations',()=>{
     expect(languageMarks(c,score)).toBe(4);
     expect(languageMarks(c,{...score,[languageFlagId('missed-return-delay')]:1})).toBe(2);
     expect(languageMarks(c,{...score,[languageFlagId('incomplete-response')]:1})).toBe(3);
-    expect(languageMarks(c,{...score,[languageOtherLanguageId('response')]:1})).toBe(0);
+    expect(languageMarks(c,{...score,[languageOtherLanguageId('response')]:1})).toBe(2);
   });
   it('keeps five chosen phrases with independently priced adjective and noun forms',()=>{
     const c=points('la1');expect(c.rubric.groups).toHaveLength(6);expect(c.rubric.count).toBe(5);

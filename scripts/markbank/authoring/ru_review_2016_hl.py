@@ -407,7 +407,8 @@ def build():
     assert sum(c['totalMarks'] for c in cards)==300
     assert sum(bool(c.get('answerLanguageRule')) for c in cards)==19
     for doc in docs.values():doc.close()
-    return cards
+    from ru_summary_language_rules import attach_reviewed_summary_language_exceptions
+    return attach_reviewed_summary_language_exceptions(cards)
 
 
 if __name__=='__main__':save_reviewed(build())

@@ -47,7 +47,7 @@ describe('Russian 2022 Higher original source review',()=>{
     expect(languageMarks(card,scores)).toBe(9);
     expect(languageMarks(card,{...scores,[languageRowId('answer-4','full')]:2})).toBe(10);
     expect(languageMarks(card,{...scores,[languageFlagId('incomplete-response')]:1})).toBe(8);
-    expect(languageMarks(card,{...scores,[languageOtherLanguageId('response')]:1})).toBe(0);
+    expect(languageMarks(card,{...scores,[languageOtherLanguageId('response')]:1})).toBe(2);
   });
   it('preserves the 33-term vocabulary pool and both five-row case/matching tables',()=>{
     const vocabulary=get('la2-i'),matching=get('la1-ii'),cases=get('la2-ii');

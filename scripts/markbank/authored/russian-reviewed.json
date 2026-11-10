@@ -1278,7 +1278,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -1621,7 +1630,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -1862,7 +1880,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -2171,7 +2198,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -14310,7 +14346,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -14497,7 +14542,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -14793,7 +14847,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -15089,7 +15152,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -28271,7 +28343,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          8
+        ]
+      }
     }
   },
   {
@@ -28532,7 +28613,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          8
+        ]
+      }
     }
   },
   {
@@ -28742,7 +28832,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          8
+        ]
+      }
     }
   },
   {
@@ -28986,7 +29085,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          8
+        ]
+      }
     }
   },
   {
@@ -47424,7 +47532,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -47787,7 +47904,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -48133,7 +48259,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -48598,7 +48733,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -112495,7 +112639,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -112943,7 +113096,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -113289,7 +113451,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -113652,7 +113823,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks.",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian- language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -119411,7 +119591,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English (Сибирский газ): award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks Use of Latin alphabet instead of Cyrillic In continuous writing exercises: Assign expression mark using the Lower A category where a candidate has a high degree of fluency. In grammar/language awareness exercises: Assign no marks (as these are either right or wrong and the marking scheme penalises minor orthographical error in other candidates).",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
     }
   },
   {
@@ -119671,7 +119860,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English (Сибирский газ): award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks Use of Latin alphabet instead of Cyrillic In continuous writing exercises: Assign expression mark using the Lower A category where a candidate has a high degree of fluency. In grammar/language awareness exercises: Assign no marks (as these are either right or wrong and the marking scheme penalises minor orthographical error in other candidates).",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
     }
   },
   {
@@ -119965,7 +120163,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English (Сибирский газ): award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks Use of Latin alphabet instead of Cyrillic In continuous writing exercises: Assign expression mark using the Lower A category where a candidate has a high degree of fluency. In grammar/language awareness exercises: Assign no marks (as these are either right or wrong and the marking scheme penalises minor orthographical error in other candidates).",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
     }
   },
   {
@@ -120258,7 +120465,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English (Сибирский газ): award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks Use of Latin alphabet instead of Cyrillic In continuous writing exercises: Assign expression mark using the Lower A category where a candidate has a high degree of fluency. In grammar/language awareness exercises: Assign no marks (as these are either right or wrong and the marking scheme penalises minor orthographical error in other candidates).",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
     }
   },
   {
@@ -126273,7 +126489,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
     }
   },
   {
@@ -126601,7 +126826,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
     }
   },
   {
@@ -126980,7 +127214,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
     }
   },
   {
@@ -127274,7 +127517,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
     }
   },
   {
@@ -133222,7 +133474,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -133516,7 +133777,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -133810,7 +134080,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -134087,7 +134366,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+        "schemePages": [
+          7
+        ]
+      }
     }
   },
   {
@@ -147314,7 +147602,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
     }
   },
   {
@@ -147485,7 +147782,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
     }
   },
   {
@@ -147728,7 +148034,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
     }
   },
   {
@@ -148022,7 +148337,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks (as opposed to content marks) may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include an excessive number of Russian-language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
     }
   },
   {
@@ -153780,7 +154104,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian-language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
     }
   },
   {
@@ -153955,7 +154288,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian-language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
     }
   },
   {
@@ -154266,7 +154608,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian-language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
     }
   },
   {
@@ -154526,7 +154877,16 @@
       "sourceText": "Language of answer: If an answer is supplied in the wrong language: When it should be English: award NO marks (except in the listening comprehension where there is no penalty for answering in the wrong language) When it should be Russian: award NO marks",
       "schemePages": [
         3
-      ]
+      ],
+      "manualCriterionExceptions": {
+        "criterionIds": [
+          "summary-skills"
+        ],
+        "sourceText": "Discretionary marks may be awarded where candidates provide evidence of understanding a significant amount of detail but are unable to express what they understand in intelligible English (where they, for instance, include Russian-language words in their answers).",
+        "schemePages": [
+          6
+        ]
+      }
     }
   },
   {

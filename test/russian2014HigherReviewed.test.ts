@@ -64,7 +64,7 @@ describe('Russian 2014 Higher source allocations',()=>{
     const c=points('c2-2');const score={...slot('detail-1',1),...slot('detail-2',2),[languageScoreId('summary-skills')]:2};
     expect(languageMarks(c,score)).toBe(5);
     expect(languageMarks(c,{...score,[languageFlagId('incomplete-response')]:1})).toBe(4);
-    expect(languageMarks(c,{...score,[languageOtherLanguageId('response')]:1})).toBe(0);
+    expect(languageMarks(c,{...score,[languageOtherLanguageId('response')]:1})).toBe(2);
     expect(c.rubric.taskRequirements.join(' ')).toContain('Do not deduct a discretionary mark if names are not mentioned');
     expect(c.rubric.markingGuideNote).toContain('an identical fact printed in both lists earns once');
   });

@@ -51,7 +51,7 @@ describe('Russian 2023 Higher original source review',()=>{
     const scores={...selected('answer-1','full',2),...selected('answer-2','full',2),...selected('answer-3','full',2),...selected('answer-4','full',1),[languageScoreId('summary-skills')]:2};
     expect(languageMarks(c,scores)).toBe(9);
     expect(languageMarks(c,{...scores,[languageFlagId('incomplete-response')]:1})).toBe(8);
-    expect(languageMarks(c,{...scores,[languageOtherLanguageId('response')]:1})).toBe(0);
+    expect(languageMarks(c,{...scores,[languageOtherLanguageId('response')]:1})).toBe(2);
     expect(c.rubric.taskRequirements.join(' ')).toContain('Supply additional details');
   });
   it('keeps 18 music terms and prices 15 forms within 14 grammar gaps',()=>{

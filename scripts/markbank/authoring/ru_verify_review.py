@@ -40,6 +40,25 @@ def verify_allocation_sources(document, card):
         assert claim and any(claim in source for source in sources), (card['id'], rule.get('id', 'allocation-cap'), rule['sourceText'])
 
 
+
+def verify_manual_criterion_exception_sources(document, card):
+    """A manual language exception must name existing top-level awards and quote its own pages."""
+    exception = card.get('answerLanguageRule', {}).get('manualCriterionExceptions')
+    if not exception:
+        return
+    rubric = card.get('rubric', {})
+    assert rubric.get('system') == 'language-points', card['id']
+    criteria = {criterion['id']: criterion for criterion in rubric.get('criteria', [])}
+    identifiers = exception['criterionIds']
+    assert identifiers and all(isinstance(identifier, str) and identifier.strip() for identifier in identifiers), card['id']
+    assert len(identifiers) == len(set(identifiers)), card['id']
+    assert all(identifier in criteria and criteria[identifier].get('kind') != 'deduction' for identifier in identifiers), card['id']
+    pages = exception['schemePages']
+    assert pages and all(type(page) is int and 1 <= page <= len(document) for page in pages), card['id']
+    claim = normal(exception['sourceText'])
+    sources = [normal('\n'.join(document[page-1].get_text(sort=sort) for page in pages)) for sort in (False, True)]
+    assert claim and any(claim in source for source in sources), (card['id'], 'manual-criterion-language-exception', exception['sourceText'])
+
 def criterion_claims(criteria):
     for criterion in criteria:
         yield from criterion['guidance']
@@ -54,6 +73,8 @@ def criterion_claims(criteria):
 def claims(card):
     if card.get('answerLanguageRule'):
         yield card['answerLanguageRule']['sourceText']
+        if card['answerLanguageRule'].get('manualCriterionExceptions'):
+            yield card['answerLanguageRule']['manualCriterionExceptions']['sourceText']
     if card['kind'] == 'question':
         rows = [row for variant in card.get('answerVariants', []) for row in variant['rows']] or card['rows']
         for row in rows:
@@ -86,8 +107,10 @@ def verify(cards=None):
         with open_scheme(card['year'], level) as document:
             verify_alternative_sources(document, card)
             verify_allocation_sources(document, card)
+            verify_manual_criterion_exception_sources(document, card)
             pages = sorted(set(card['review']['schemePages'] + card['review'].get('guidancePages', [])
                                + card.get('answerLanguageRule', {}).get('schemePages', [])
+                               + card.get('answerLanguageRule', {}).get('manualCriterionExceptions', {}).get('schemePages', [])
                                + card.get('rubric', {}).get('allocationCap', {}).get('schemePages', [])
                                + [page for limit in card.get('rubric', {}).get('allocationCap', {}).get('limits', [])
                                   for page in limit['schemePages']]))

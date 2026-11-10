@@ -46,7 +46,7 @@ describe('Russian 2024 Higher original source review',()=>{
     expect(languageMarks(card,scores)).toBe(9);
     expect(languageMarks(card,{...scores,[languageRowId('answer-4','full')]:2})).toBe(10);
     expect(languageMarks(card,{...scores,[languageFlagId('incomplete-response')]:1})).toBe(8);
-    expect(languageMarks(card,{...scores,[languageOtherLanguageId('response')]:1})).toBe(0);
+    expect(languageMarks(card,{...scores,[languageOtherLanguageId('response')]:1})).toBe(2);
     for(const n of [1,2,3,4])expect(get(`c2-${n}`).totalMarks).toBe(10);
   });
   it('keeps the distinct shed partial under its two-detail quota and retains page continuations',()=>{

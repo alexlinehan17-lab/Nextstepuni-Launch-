@@ -382,6 +382,7 @@ def build():
     assert sum(bool(c.get('answerLanguageRule')) for c in cards)==18
     assert not any(c['id']=='ru-2013-hl-ca1' for c in cards)
     for doc in docs.values():doc.close()
-    return cards
+    from ru_summary_language_rules import attach_reviewed_summary_language_exceptions
+    return attach_reviewed_summary_language_exceptions(cards)
 
 if __name__=='__main__':save_reviewed(build())
