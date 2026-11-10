@@ -89,6 +89,7 @@ import japanese2024OrdinaryCensus from '../scripts/markbank/authoring/reviews/ja
 import japanese2023OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2023-ol-census.json';
 import japanese2018OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2018-ol-census.json';
 import japanese2018HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2018-hl-census.json';
+import japanese2014HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2014-hl-census.json';
 import japanese2015OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2015-ol-census.json';
 import japanese2015HigherCensus from '../scripts/markbank/authoring/reviews/japanese-2015-hl-census.json';
 import japanese2016OrdinaryCensus from '../scripts/markbank/authoring/reviews/japanese-2016-ol-census.json';
@@ -1857,7 +1858,7 @@ const japaneseAliasIds = Object.keys(japaneseAliases);
 // original fragments bound to six complete source-reviewed tasks.
 // 2015 Ordinary adds all 51 independently censused tasks; all frozen identities and aliases remain unchanged.
 // 2015 Higher adds all 60 independently censused tasks, including one unpriced confidence-review task; original 600 hashes and 391 aliases stay frozen.
-const japaneseAdditionIds = new Set([japanese2015OrdinaryCensus, japanese2015HigherCensus, japanese2016OrdinaryCensus, japanese2016HigherCensus, japanese2017OrdinaryCensus, japanese2017HigherCensus, japanese2018OrdinaryCensus, japanese2018HigherCensus, japanese2019OrdinaryCensus, japanese2019HigherCensus, japanese2020HigherCensus, japanese2021OrdinaryCensus, japanese2021HigherCensus, japanese2022OrdinaryCensus, japanese2022HigherCensus, japanese2026HigherCensus, japanese2026OrdinaryCensus, japanese2025HigherCensus, japanese2025OrdinaryCensus, japanese2024HigherCensus, japanese2024OrdinaryCensus, japanese2023HigherCensus, japanese2023OrdinaryCensus].flatMap(census => census.tasks.map(task =>
+const japaneseAdditionIds = new Set([japanese2014HigherCensus, japanese2015OrdinaryCensus, japanese2015HigherCensus, japanese2016OrdinaryCensus, japanese2016HigherCensus, japanese2017OrdinaryCensus, japanese2017HigherCensus, japanese2018OrdinaryCensus, japanese2018HigherCensus, japanese2019OrdinaryCensus, japanese2019HigherCensus, japanese2020HigherCensus, japanese2021OrdinaryCensus, japanese2021HigherCensus, japanese2022OrdinaryCensus, japanese2022HigherCensus, japanese2026HigherCensus, japanese2026OrdinaryCensus, japanese2025HigherCensus, japanese2025OrdinaryCensus, japanese2024HigherCensus, japanese2024OrdinaryCensus, japanese2023HigherCensus, japanese2023OrdinaryCensus].flatMap(census => census.tasks.map(task =>
   `ja-${census.year}-${census.level}-${task.key.filter(part => part !== null).join('-').toLowerCase()}`)).filter(id => !japaneseLiteralIds.has(id)));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);

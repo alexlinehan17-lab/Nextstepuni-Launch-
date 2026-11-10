@@ -3577,5 +3577,181 @@
         0.52
       ]
     }
+  },
+  "ja-2014-hl-2a-1": {
+    "src": "/exam-figures/japanese/ja-2014-hl-2a-1.png",
+    "md5": "ed532c0128c7800dd628046672b4cfa7",
+    "alt": "Complete the following table in English.\nWhere are they living?\nReason for living overseas\nPlanned return to Japan\nMiyu Kawasaki\nHidemi Mori\nMakoto Hayashi",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.065,
+        0.04,
+        0.95,
+        0.335
+      ]
+    }
+  },
+  "ja-2014-hl-2b-1": {
+    "src": "/exam-figures/japanese/ja-2014-hl-2b-1.png",
+    "md5": "5e7a1a9487697756dfdeb0557ea960c4",
+    "alt": "Write the meaning of the following Kanji in English.\n(i) 四年生\n(ii) 勉強\n(iii) 話します\n(iv) 三年間\n(v) 言語",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.04,
+        0.025,
+        0.975,
+        0.34
+      ]
+    }
+  },
+  "ja-2014-hl-2b-2": {
+    "src": "/exam-figures/japanese/ja-2014-hl-2b-2.png",
+    "md5": "822fc9964874b531fd10fb06cbbf3f63",
+    "alt": "Write the reading of the following Kanji in Hiragana.\n(i) 好き\n(ii) 母\n(iii) 思います\n(iv) 九月\n(v) 学校",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.04,
+        0.345,
+        0.975,
+        0.68
+      ]
+    }
+  },
+  "ja-2014-hl-2c-1": {
+    "src": "/exam-figures/japanese/ja-2014-hl-2c-1.png",
+    "md5": "d9049c5389a16f0a2264f836464322ba",
+    "alt": "Write the underlined in the past tense.\n(i)  アイルランドが好きだ。\n(ii) 南アフリカはおもしろい。\n(iii)  英語を勉強する。\n(iv) 日本に帰（かえ）らない。\n(v) おいしい中 華 料 理（ちゅうかりょうり）を食べる。",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.04,
+        0.025,
+        0.975,
+        0.34
+      ]
+    }
+  },
+  "ja-2014-hl-2c-2": {
+    "src": "/exam-figures/japanese/ja-2014-hl-2c-2.png",
+    "md5": "9aa63b2aa90b3b2cd13945150f5ae797",
+    "alt": "Write the correct form of each verb.\n(i) 日本に（住（す）みます）____________________たい です。\n(ii) アイルランドに（来ます）___________________前に、大 阪（おおさか）にいました。\n(iii) 夏（なつ）に、日本に（行きません）___________________かもしれません。\n(iv) 日本のアニメを（見ます）___________________り、音 楽（おんがく）を聞いたりします。\n(v) 名前（なまえ）を漢字（かんじ）で（書きます）__________________ください。",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.04,
+        0.345,
+        0.975,
+        0.68
+      ]
+    }
+  },
+  "ja-2014-hl-3c": {
+    "src": "/exam-figures/japanese/ja-2014-hl-3c.png",
+    "md5": "453fb63952a88b74449a613e1aa9057f",
+    "alt": "Circle the correct reading of the following Kanji and write the meaning in English as in the example.\n(i) 出します a. でします b. けします c. だします d. はなします\n(ii) 今 a. きょう b. こん c. いま d. あさ\n(iii) 高い a. やすい b. こうい c. あつい d. たかい\n(iv) 人気 a. にんき b. じんき c. きぶん d. ひとり\n(v) 電車 a. でんわ b. でんしゃ c. でんき d. じてんしゃ",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.04,
+        0.025,
+        0.975,
+        0.375
+      ]
+    }
+  },
+  "ja-2014-hl-3d": {
+    "src": "/exam-figures/japanese/ja-2014-hl-3d.png",
+    "md5": "bd54cb35d20c75f9c1b1f9469d439000",
+    "alt": "Insert the correct particle into each blank space below.  There may be more than one correct answer.\n(i) 私の 弟（おとうと） は、エコ・トイ＿＿＿＿好きです。\n(ii) 日本の夏（なつ）＿＿＿＿ほうが、アイルランドの夏（なつ）＿＿＿＿あついです。\n(iii) タカラ・トミーは、千葉（ちば）＿＿＿＿近（ちか）く＿＿＿＿あります。\n(iv) 父は、電気の車＿＿＿＿、会 社（かいしゃ）＿＿＿＿行きます。\n(v) うち＿＿＿＿会 社（かいしゃ）＿＿＿＿30 分かかります。\n(vi) エコ・カーは、いい＿＿＿＿思います。",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.04,
+        0.4,
+        0.975,
+        0.84
+      ]
+    }
+  },
+  "ja-2014-hl-4": {
+    "src": "/exam-figures/japanese/ja-2014-hl-4.png",
+    "md5": "1d2a44801759efe2763dc89f0d9f10f5",
+    "alt": "Write about (a) OR (b) in approximately 200 Japanese characters.\n(a) きのうは、クリスマスの日でした。日記（にっき）を書いてください。下の質 問（しつもん）にも答（こた）えてください。\nYesterday was Christmas day. Write a diary entry. Include answers to the following questions.\n• 何をしましたか。\n• どんなプレゼントをもらいましたか。\n• クリスマスはどうでしたか。\nNÓ / OR\n(b) きのうは、あなたの誕 生 日（たんじょうび）でした。日記（にっき）を書いてください。下の質 問（しつもん）にも答（こた）えて\nください。\nYesterday was your birthday. Write a diary entry. Include answers to the following questions.\n• 何をしましたか。\n• どんなプレゼントをもらいましたか。\n• 誕 生 日（たんじょうび）はどうでしたか。",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 14,
+      "region": [
+        0.045,
+        0.025,
+        0.975,
+        0.92
+      ]
+    }
+  },
+  "ja-2014-hl-5": {
+    "src": "/exam-figures/japanese/ja-2014-hl-5.png",
+    "md5": "e286a77cc36f5369d2cf2a18fbba70ab",
+    "alt": "You are taking part in a Japanese speech contest. The theme of the contest is 私の学校. Write the script of your speech in approximately 320 Japanese characters incorporating ANY 4 of the following headings.\n1. 所（ところ） Suíomh / Location\n2. 建 物（たてもの）・施設（しせつ） Foirgneamh / building,  áiseanna / facilities\n3. 先生と生徒（せいと） Múinteoirí agus mic léinn / Teachers and pupils\n4. 学校のイベント Imeachtaí scoile / School events\n5. 校（こう） 則（そく） Rialacha na scoile / School rules\n6. 制 服（せいふく） Éide scoile / Uniform\n7. 休み時間 Am sosa / Break time\n8. クラブ活 動（かつどう） Gníomhaíochtaí clubanna / Club activities",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 16,
+      "region": [
+        0.045,
+        0.025,
+        0.975,
+        0.92
+      ]
+    }
+  },
+  "ja-2014-hl-la": {
+    "src": "/exam-figures/japanese/ja-2014-hl-la.png",
+    "md5": "1b6b160bcb371a9dd889024bf44217e4",
+    "alt": "Complete the table below.\nWhere did they go on holiday?\nFor how long?\nHow was the trip? Give details.\nWhat did they buy?",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 2,
+      "region": [
+        0.05,
+        0.025,
+        0.975,
+        0.68
+      ]
+    }
+  },
+  "ja-2014-hl-lb-1-iv": {
+    "src": "/exam-figures/japanese/ja-2014-hl-lb-1-iv.png",
+    "md5": "5784b7a00a2a57953d137305e2f9fa74",
+    "alt": "To book a ticket, call:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 3,
+      "region": [
+        0.515,
+        0.49,
+        0.97,
+        0.575
+      ]
+    }
   }
 }
