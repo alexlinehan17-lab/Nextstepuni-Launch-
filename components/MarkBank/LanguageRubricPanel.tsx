@@ -109,6 +109,8 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
         const anotherAlternativeSelected = group.alternativeSet !== undefined && rubric.groups.some(other => other.id !== group.id
           && other.alternativeSet === group.alternativeSet && scores[languageGroupId(other.id)] === 1);
         const conflicting = !!group.alternativeSet && alternativeConflicts.has(group.alternativeSet);
+        const groupFlags = [...new Map((group.criteria ?? []).flatMap(criterion => (criterion.limits ?? []).flatMap(limit =>
+          limit.when.any.flatMap(condition => 'flag' in condition ? [[condition.flag, condition] as const] : [])))).values()];
         return <section className="mb-language-criterion" key={group.id}>
           <button type="button" className="mb-language-choice" aria-pressed={selected}
             disabled={!selected && (selectedGroups >= rubric.count || anotherAlternativeSelected)}
@@ -123,6 +125,11 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
               {otherLanguageControl(`row:${group.id}:${row.id}`, row.text, !selected)}
             </React.Fragment>;
           })}
+          {groupFlags.map(condition => <label className="mb-language-flag" key={condition.flag}>
+            <input type="checkbox" disabled={!selected || conflicting} checked={scores[languageFlagId(condition.flag)] === 1}
+              onChange={event => onScore(languageFlagId(condition.flag), event.currentTarget.checked ? 1 : 0)} />
+            <span>{condition.prompt}</span>
+          </label>)}
           {group.criteria?.map(criterion => renderCriterion(criterion, { ...writingRubric, criteria: group.criteria! }, !selected || conflicting))}
           {!!group.criteria?.length && otherLanguageControl(`group:${group.id}`, group.label, !selected)}
         </section>;
