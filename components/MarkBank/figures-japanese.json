@@ -4313,5 +4313,197 @@
         0.972
       ]
     }
+  },
+  "ja-2012-hl-1a": {
+    "src": "/exam-figures/japanese/ja-2012-hl-1a.png",
+    "md5": "cb7364396dd1147e109ca3b781fe50a1",
+    "alt": "A: Which link on the webpage would you click on to do the following?  Write in Japanese as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 3,
+      "region": [
+        0.065,
+        0.025,
+        0.97,
+        0.495
+      ]
+    }
+  },
+  "ja-2012-hl-1b-1": {
+    "src": "/exam-figures/japanese/ja-2012-hl-1b-1.png",
+    "md5": "8743799fca22adc2cd2634c024743698",
+    "alt": "Comhlánaigh an tábla. / Complete the table.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 3,
+      "region": [
+        0.07,
+        0.505,
+        0.97,
+        0.7
+      ]
+    }
+  },
+  "ja-2012-hl-1b-4-i": {
+    "src": "/exam-figures/japanese/ja-2012-hl-1b-4-i.png",
+    "md5": "219c81e2999159228c7fc026f23cbfec",
+    "alt": "4. (i) Complete the table.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 4,
+      "region": [
+        0.11,
+        0.025,
+        0.97,
+        0.255
+      ]
+    }
+  },
+  "ja-2012-hl-2d-1": {
+    "src": "/exam-figures/japanese/ja-2012-hl-2d-1.png",
+    "md5": "a84a5c141ff856a815d55ad9cd9ee870",
+    "alt": "1. Write the meaning of the following Kanji in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.07,
+        0.235,
+        0.97,
+        0.378
+      ]
+    }
+  },
+  "ja-2012-hl-2d-2": {
+    "src": "/exam-figures/japanese/ja-2012-hl-2d-2.png",
+    "md5": "7d28643902497e5746279f00618764b6",
+    "alt": "2. Write the reading of the following Kanji in Hiragana.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.07,
+        0.375,
+        0.97,
+        0.56
+      ]
+    }
+  },
+  "ja-2012-hl-2e-1": {
+    "src": "/exam-figures/japanese/ja-2012-hl-2e-1.png",
+    "md5": "ddd23a780d7797fe0de39a8cde440dfe",
+    "alt": "1. Insert a correct particle into each blank (a) – (h) below. There may be more than one correct answer.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.065,
+        0.565,
+        0.97,
+        0.92
+      ]
+    }
+  },
+  "ja-2012-hl-2e-2": {
+    "src": "/exam-figures/japanese/ja-2012-hl-2e-2.png",
+    "md5": "033a699bb5e55aa748d1ee20e67b2013",
+    "alt": "2. Write the underlined in the plain form.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.065,
+        0.025,
+        0.97,
+        0.51
+      ]
+    }
+  },
+  "ja-2012-hl-3c": {
+    "src": "/exam-figures/japanese/ja-2012-hl-3c.png",
+    "md5": "ab5c5b9efc35de0f22bee226b9eb5f54",
+    "alt": "Circle the correct reading for the following Kanji and write the meaning as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 11,
+      "region": [
+        0.06,
+        0.632,
+        0.98,
+        0.955
+      ]
+    }
+  },
+  "ja-2012-hl-4": {
+    "src": "/exam-figures/japanese/ja-2012-hl-4.png",
+    "md5": "0b47a66ce2d706e1118b2dc3436af97b",
+    "alt": "Write about (a) OR (b) in approximately 200 characters.\n(a) It’s your last day of school and you are remembering your best day there. Write an entry in your diary.\n学校で、一（いち） 番（ばん） 楽（たの）しかった日\n• 何をしましたか。\n• どうして楽（たの）しかったですか。\nOR\n(b) It’s your last day of school and you are remembering your worst day there. Write an entry in your diary.\n学校で、一（いち） 番（ばん）つまらなかった日\n• 何をしましたか。\n• どうしてつまらなかったですか。",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.055,
+        0.025,
+        0.97,
+        0.59
+      ]
+    }
+  },
+  "ja-2012-hl-5": {
+    "src": "/exam-figures/japanese/ja-2012-hl-5.png",
+    "md5": "cc6f35f552d4f87c5d04200dbcb72c07",
+    "alt": "Please choose (a) OR (b) and write approximately 320 characters.\n(a) You have just arrived in Hiroshima for a two month home-stay. You have been asked to write a short introduction of Ireland for the international page of a local Japanese newsletter. Write an article answering any four of the following six headings.\n1.  私の住（す）んでいるところ／私の町\n2.  アイルランドの天気（てんき）\n3.  アイルランドの料 理（りょうり）\n4.  アイルランドの有 名（ゆうめい）な人\n5.  アイルランドの学校\n6.  アイルランドのスポーツ\nOR\n(b) You have just returned from a two month summer home-stay in Hiroshima. You have been asked to write a  short report of your home-stay for your school’s Japanese web-page. Write a report under any four of the following six headings.\n1.  ホームスティの家族（かぞく）\n2.  日本の天気（てんき）\n3.  日本の料 理（りょうり）\n4.  日本の有 名（ゆうめい）なところ\n5.  日本の学校\n6.  日本のスポーツ",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 15,
+      "region": [
+        0.055,
+        0.025,
+        0.97,
+        0.945
+      ]
+    }
+  },
+  "ja-2012-hl-la": {
+    "src": "/exam-figures/japanese/ja-2012-hl-la.png",
+    "md5": "90b640ef3f174a5f34971a5f5894f600",
+    "alt": "Complete the table below in English.\nWhat is the request?\nIs it accepted or declined?\nReason for accepting or declining",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 2,
+      "region": [
+        0.07,
+        0.025,
+        0.99,
+        0.68
+      ]
+    }
+  },
+  "ja-2012-hl-lc-2-iii": {
+    "src": "/exam-figures/japanese/ja-2012-hl-lc-2-iii.png",
+    "md5": "b6edeb344ac9acc1d67af8fd93629da3",
+    "alt": "What phone number should you contact for more information?",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 4,
+      "region": [
+        0.49,
+        0.61,
+        0.97,
+        0.765
+      ]
+    }
   }
 }

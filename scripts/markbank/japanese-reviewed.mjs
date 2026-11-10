@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { resolvePaperFileid } from './paperIndex.mjs';
 import { audioMaterialFault, audioQuestionPaperFileid } from './audioMaterial.mjs';
 import { comparableScheme, claimMatches, LIGATURES } from './schemeText.mjs';
-import { matchesNamedLanguageCondition } from './japanese-source-rules.mjs';
+import { assertJapaneseConditionLabel, matchesNamedLanguageCondition } from './japanese-source-rules.mjs';
 import { assertJapaneseVariantSources, japaneseAnswerRows, japaneseBoundBankAnswers } from './japanese-source-answers.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
@@ -60,6 +60,7 @@ for (const name of readdirSync(reviewsDir).filter(name => /^japanese-\d{4}-(?:hl
   for (const original of review.cards) {
     const card = structuredClone(original);
     const evidence = card.sourceEvidence;
+    assertJapaneseConditionLabel(card, review);
     if (card.answerLanguageRule) {
       const rule = card.answerLanguageRule;
       const sourceBound = review.selectors.some(selector => selector.document === 'scheme'
