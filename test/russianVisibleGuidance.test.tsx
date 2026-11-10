@@ -13,6 +13,63 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('shows the 2014 reserved neighbour slots and applies independent full and partial marks',async()=>{
+    reveal('c1-3-i','hl',2014);
+    await waitFor(()=>expect(screen.getByRole('button',{name:'Neighbours did not: distinct detail 1'})).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'Neighbours did not: distinct detail 1'}));
+    fireEvent.click(screen.getByRole('button',{name:'Set Neighbours did not: detail 1 to 2 marks'}));
+    fireEvent.click(screen.getByRole('button',{name:'Neighbours did not: distinct detail 2'}));
+    fireEvent.click(screen.getByRole('button',{name:'Set Neighbours did not: detail 2 to 2 marks'}));
+    fireEvent.click(screen.getByRole('button',{name:'Other distinct detail 1 — exclude the four neighbours-did-not actions'}));
+    fireEvent.click(screen.getByRole('button',{name:'Set Other detail 1, excluding the four neighbours-did-not actions to 1 marks'}));
+    await waitFor(()=>expect(screen.getByText(/placement is 5 of 6 marks/)).toBeVisible());
+    expect(screen.getByRole('button',{name:'Other distinct detail 2 — exclude the four neighbours-did-not actions'})).toBeDisabled();
+    expect(screen.getByText(/The bad\/boring partial association is not uniquely specified/)).toBeVisible();
+    expect(screen.getByText(/the paper reading heading gives 40 marks/)).toBeVisible();
+  });
+  it('shows the 2014 full-translation exception without allowing two routes for one phrase',async()=>{
+    reveal('la1','hl',2014);
+    await waitFor(()=>expect(screen.getByRole('button',{name:'русские студенты — Russian form'})).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'русские студенты — Russian form'}));
+    const russian=screen.getByRole('button',{name:'русские студенты — Russian form'}).closest('section');
+    if(!russian)throw new Error('Russian phrase');
+    fireEvent.click(within(russian).getByRole('button',{name:'Set Modifier to 1 marks'}));
+    expect(screen.getByRole('button',{name:'русские студенты — correct translation'})).toBeDisabled();
+    await waitFor(()=>expect(screen.getByText(/placement is 1 of 6 marks/)).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'русские студенты — Russian form'}));
+    fireEvent.click(screen.getByRole('button',{name:'русские студенты — correct translation'}));
+    const translated=screen.getByRole('button',{name:'русские студенты — correct translation'}).closest('section');
+    if(!translated)throw new Error('Translated phrase');
+    fireEvent.click(within(translated).getByRole('button',{name:'Set Correct translation of the complete phrase to 2 marks'}));
+    await waitFor(()=>expect(screen.getByText(/placement is 2 of 6 marks/)).toBeVisible());
+    expect(screen.getByText(/Correct translations receive full credit/)).toBeVisible();
+    expect(screen.queryByRole('checkbox',{name:/another language/})).not.toBeInTheDocument();
+  });
+  it('shows the 2014 cultural language allowance and the anomalous concert partial placement',async()=>{
+    reveal('ca1','hl',2014);
+    await waitFor(()=>expect(screen.getByText(/English, Irish and Russian are permitted/)).toBeVisible());
+    cleanup();reveal('l1-3-i','hl',2014);
+    await waitFor(()=>expect(screen.getByText(/Source placement: the one-mark concert/)).toBeVisible());
+    expect(screen.getByText(/Source placement:/)).toHaveTextContent('before the separate upcoming-event question');
+    expect(screen.getByText(/Accept answers written in Russian/)).toBeVisible();
+    fireEvent.click(screen.getByRole('button',{name:'Set Distinct detail 1 to 1 marks'}));
+    await waitFor(()=>expect(screen.getByText(/placement is 1 of 4 marks/)).toBeVisible());
+  });
+  it('shows 2014 choice-specific guided-writing categories and both named accuracy scales',async()=>{
+    reveal('gw','hl',2014);
+    await waitFor(()=>expect(screen.getByText(/When the best time to visit would be/,{selector:'li'})).toBeVisible());
+    expect(screen.getByText(/Question and Answer 7/)).toBeVisible();
+    expect(screen.getByText(/does not fully match those lists/)).toBeVisible();
+    fireEvent.click(screen.getByRole('button',{name:'Set Communication/content (C) to 7 marks'}));
+    fireEvent.change(screen.getByRole('spinbutton',{name:/Response length \(words\)/}),{target:{value:'140'}});
+    fireEvent.click(screen.getByRole('checkbox',{name:/If the expression is very fluent/}));
+    const expression=screen.getByRole('heading',{name:'Language + expression (E)'}).closest('section');
+    if(!expression)throw new Error('expression');
+    expect(within(expression).getByText('Lower E')).toBeVisible();expect(within(expression).getByText('Lower A')).toBeVisible();
+    expect(within(expression).getByText(/Both source scales apply/)).toBeVisible();
+    expect(screen.getByRole('button',{name:'Set Language + expression (E) to 7 marks'})).toBeEnabled();
+    expect(screen.queryByRole('button',{name:'Set Language + expression (E) to 11 marks'})).not.toBeInTheDocument();
+  });
   it('shows fractional 2016 handwriting controls and the global joining condition',async()=>{
     reveal('la1','ol',2016);
     await waitFor(()=>expect(screen.getByRole('button',{name:'Set For everyday life to 2.5 marks'})).toBeVisible());
