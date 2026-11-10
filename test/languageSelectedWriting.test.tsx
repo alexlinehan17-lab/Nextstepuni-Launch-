@@ -48,12 +48,11 @@ describe('selected language writing responses and source-defined half credit', (
     expect(tariffReconciles(missing)).toBe(false);
   });
 
-  it('rejects grouped controls that have no response-scoped length or flag input', () => {
-    for (const condition of [{ length: 'characters' as const, below: 20 }, { flag: 'wrong-task', prompt: 'Wrong task' }]) {
-      const unsupported = structuredClone(card);
-      unsupported.rubric.groups[0].criteria![1].limits = [{ id: 'limited', maxMarks: 3, when: { any: [condition] }, guidance: [] }];
-      expect(tariffReconciles(unsupported)).toBe(false);
-    }
+  it('rejects grouped length conditions until response-scoped length controls exist', () => {
+    const unsupported = structuredClone(card);
+    unsupported.rubric.groups[0].criteria![1].limits = [{ id: 'limited', maxMarks: 3,
+      when: { any: [{ length: 'characters', below: 20 }] }, guidance: [] }];
+    expect(tariffReconciles(unsupported)).toBe(false);
   });
 
   it('refuses language rules on scoring systems that do not apply them', () => {

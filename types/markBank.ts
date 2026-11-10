@@ -1375,8 +1375,9 @@ export interface LanguagePointsRubric {
     rows: Array<{ id: string; text: string; marks: number; steps?: number[] }>;
     /** Independently placed content/expression for this selected response.
      * IDs must be unique across all groups and whole-task criteria. Limits
-     * may reference this group's criteria; length/flag inputs are whole-task
-     * controls and are not supported inside an individual response. */
+     * may reference this group's criteria or an explicitly assessed flag.
+     * Group flag IDs must be distinct from other groups and whole-task flags.
+     * Response-specific length controls are not supported. */
     criteria?: LanguageWritingCriterion[];
   }>;
   markingGuideNote: string;
@@ -1685,11 +1686,23 @@ export function tariffReconciles(card: SecCard): boolean {
       const groupCriterionTotal = (group: typeof groups[number]) => (group.criteria ?? []).filter(criterion => criterion.kind !== 'deduction')
         .reduce((sum, criterion) => sum + criterion.maxMarks, 0);
       if (!groups.every(group => group.id && group.label.trim() && (group.rows.length > 0 || (group.criteria?.length ?? 0) > 0)
-        && (group.criteria ?? []).every(criterion => (criterion.limits ?? []).every(limit => limit.when.any.every(condition => 'criterionIds' in condition)))
+        && (group.criteria ?? []).every(criterion => (criterion.limits ?? []).every(limit => limit.when.any.every(condition => 'criterionIds' in condition || 'flag' in condition)))
         && (!group.criteria || tariffReconciles({ ...card, totalMarks: groupCriterionTotal(group), rubric: { system: 'language-writing', criteria: group.criteria, taskRequirements: rubric.taskRequirements, markingGuideNote: rubric.markingGuideNote } }))
         && new Set(group.rows.map(row => row.id)).size === group.rows.length
         && (group.answerCount === undefined || (Number.isInteger(group.answerCount) && group.answerCount >= 1 && group.answerCount <= group.rows.length))
         && group.rows.every(row => row.id && row.text.trim() && Number.isInteger(row.marks) && row.marks > 0 && (!row.steps || validSteps(row.steps, row.marks))))) return false;
+      const responseFlags = new Set([
+        ...criteria.flatMap(criterion => (criterion.limits ?? []).flatMap(limit => limit.when.any.flatMap(condition => 'flag' in condition ? [condition.flag] : []))),
+        ...(rubric.allocationCap?.limits ?? []).map(limit => limit.when.flag),
+      ]);
+      const groupFlags = new Map<string, { groupId: string; prompt: string }>();
+      for (const group of groups) for (const criterion of group.criteria ?? []) for (const limit of criterion.limits ?? []) {
+        for (const condition of limit.when.any) if ('flag' in condition) {
+          const previous = groupFlags.get(condition.flag);
+          if (responseFlags.has(condition.flag) || (previous && (previous.groupId !== group.id || previous.prompt !== condition.prompt))) return false;
+          groupFlags.set(condition.flag, { groupId: group.id, prompt: condition.prompt });
+        }
+      }
       const families = new Map<string, typeof groups>();
       for (const group of groups) {
         const key = group.alternativeSet === undefined ? `group:${group.id}` : `alternative:${group.alternativeSet}`;
