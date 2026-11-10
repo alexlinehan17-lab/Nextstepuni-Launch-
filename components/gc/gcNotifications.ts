@@ -6,6 +6,7 @@
 import { db } from '../../firebase';
 import { awaitWriteOrTimeout } from '../../utils/firestoreWrite';
 import { doc, getDoc, runTransaction } from 'firebase/firestore';
+import { Capacitor } from '@capacitor/core';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -66,10 +67,19 @@ function generateId(): string {
 /** Read notifications for a user, sorted newest-first. */
 export async function getNotifications(uid: string): Promise<AppNotification[]> {
   try {
-    const snap = await getDoc(doc(db, 'notifications', uid));
-    if (!snap.exists()) return [];
-    const items = (snap.data().items || []) as AppNotification[];
-    return items.sort((a, b) => b.timestamp - a.timestamp);
+    const [shared, browser] = await Promise.all([
+      getDoc(doc(db, 'notifications', uid)),
+      Capacitor.isNativePlatform() ? null : getDoc(doc(db, 'browserNotifications', uid)).catch(err => {
+        console.error('Failed to read browser notifications:', err);
+        return null;
+      }),
+    ]);
+    const browserItems = (browser?.data()?.items || []) as AppNotification[];
+    const browserIds = new Set(browserItems.map(n => n.id));
+    const sharedItems = (shared.data()?.items || []) as AppNotification[];
+    // A staged campaign keeps its browser read state when its app copy launches.
+    return [...browserItems, ...sharedItems.filter(n => !browserIds.has(n.id))]
+      .sort((a, b) => b.timestamp - a.timestamp);
   } catch (err) {
     console.error('Failed to read notifications:', err);
     return [];
@@ -90,7 +100,7 @@ export async function addNotification(uid: string, notification: Omit<AppNotific
         read: false,
       };
       const updated = [newItem, ...existing].slice(0, MAX_ITEMS);
-      txn.set(ref, { items: updated });
+      txn.set(ref, { items: updated }, { merge: true });
     }), 'gcNotifications.txn');
   } catch (err) {
     console.error('Failed to add notification:', err);
@@ -99,33 +109,34 @@ export async function addNotification(uid: string, notification: Omit<AppNotific
 
 /** Mark a single notification as read. */
 export async function markNotificationRead(uid: string, notificationId: string): Promise<void> {
-  const ref = doc(db, 'notifications', uid);
-  try {
-    await awaitWriteOrTimeout(runTransaction(db, async (txn) => {
-      const snap = await txn.get(ref);
-      if (!snap.exists()) return;
-      const items: AppNotification[] = snap.data().items || [];
-      const updated = items.map(n => n.id === notificationId ? { ...n, read: true } : n);
-      txn.set(ref, { items: updated });
-    }), 'gcNotifications.txn');
-  } catch (err) {
-    console.error('Failed to mark notification read:', err);
-  }
+  await markRead(uid, notificationId);
 }
 
 /** Mark all notifications as read. */
 export async function markAllRead(uid: string): Promise<void> {
+  await markRead(uid);
+}
+
+async function markRead(uid: string, notificationId?: string): Promise<void> {
   const ref = doc(db, 'notifications', uid);
+  const browserRef = Capacitor.isNativePlatform() ? null : doc(db, 'browserNotifications', uid);
   try {
     await awaitWriteOrTimeout(runTransaction(db, async (txn) => {
-      const snap = await txn.get(ref);
-      if (!snap.exists()) return;
-      const items: AppNotification[] = snap.data().items || [];
-      const updated = items.map(n => ({ ...n, read: true }));
-      txn.set(ref, { items: updated });
+      const [shared, browser] = await Promise.all([txn.get(ref), browserRef ? txn.get(browserRef) : null]);
+      const browserItems: AppNotification[] = browser?.data()?.items || [];
+      const browserIds = new Set(browserItems.map(n => n.id));
+      const matches = (n: AppNotification) => !n.read && (notificationId === undefined || n.id === notificationId);
+      const sharedItems: AppNotification[] = shared.data()?.items || [];
+      const markShared = (n: AppNotification) => !browserIds.has(n.id) && matches(n);
+      if (sharedItems.some(markShared)) {
+        txn.set(ref, { items: sharedItems.map(n => markShared(n) ? { ...n, read: true } : n) }, { merge: true });
+      }
+      if (browserRef && browserItems.some(matches)) {
+        txn.set(browserRef, { items: browserItems.map(n => matches(n) ? { ...n, read: true } : n) }, { merge: true });
+      }
     }), 'gcNotifications.txn');
   } catch (err) {
-    console.error('Failed to mark all read:', err);
+    console.error('Failed to mark notifications read:', err);
   }
 }
 

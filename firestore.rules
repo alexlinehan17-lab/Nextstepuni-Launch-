@@ -349,6 +349,15 @@ service cloud.firestore {
                   && get(/databases/$(database)/documents/users/$(userId)).data.school == callerSchool();
     }
 
+    // Browser-only release announcements. Separate documents keep older native
+    // clients from displaying or overwriting announcements before app release.
+    match /browserNotifications/{userId} {
+      allow read, update: if request.auth != null
+                          && request.auth.uid == userId
+                          && hasActiveSession();
+      // Announcements are created by the owner through the Admin SDK.
+    }
+
     // Kudos collection: peer encouragement notes
     match /kudos/{kudosId} {
       // Recipient can read kudos sent to them
