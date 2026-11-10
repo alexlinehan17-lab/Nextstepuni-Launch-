@@ -443,3 +443,29 @@ describe('year islands: classmates in the same school and year only', () => {
     await assertFails(setDoc(doc(fresh, 'users/fresh-visibility'), { name: 'New', avatar: 'N', islandVisibility: 'everyone' }));
   });
 });
+
+describe('Private saved study plans',()=>{
+  const path='progress/alice/studyPlans/current';
+  it('allows the owner to merge plan state and read it back',async()=>{
+    const db=environment.authenticatedContext('alice',{auth_time:1}).firestore();
+    await assertSucceeds(setDoc(doc(db,path),{version:1,tasks:{first:{status:'completed'}}},{merge:true}));
+    await assertSucceeds(setDoc(doc(db,path),{version:1,tasks:{second:{status:'planned'}}},{merge:true}));
+    const data=(await assertSucceeds(getDoc(doc(db,path)))).data();
+    expect(data?.tasks.first.status).toBe('completed');
+  });
+  it('denies other students, staff, anonymous access and unrelated fields',async()=>{
+    await environment.withSecurityRulesDisabled(async context=>{await setDoc(doc(context.firestore(),path),{version:1,tasks:{}});});
+    for(const db of [environment.unauthenticatedContext().firestore(),environment.authenticatedContext('bob',{auth_time:1}).firestore(),environment.authenticatedContext('gc-a',{auth_time:1}).firestore()]){
+      await assertFails(getDoc(doc(db,path)));
+      await assertFails(setDoc(doc(db,path),{version:1,tasks:{}},{merge:true}));
+    }
+    const owner=environment.authenticatedContext('alice',{auth_time:1}).firestore();
+    await assertFails(setDoc(doc(owner,path),{version:1,points:999},{merge:true}));
+  });
+  it('rejects a revoked session',async()=>{
+    await environment.withSecurityRulesDisabled(async context=>{await updateDoc(doc(context.firestore(),'users/alice'),{sessionValidAfterSeconds:200});});
+    const db=environment.authenticatedContext('alice',{auth_time:200}).firestore();
+    await assertFails(getDoc(doc(db,path)));
+    await assertFails(setDoc(doc(db,path),{version:1,tasks:{}}));
+  });
+});

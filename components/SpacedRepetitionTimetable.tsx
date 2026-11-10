@@ -15,6 +15,8 @@ import CrewEmptyState from './CrewEmptyState';
 import PlannerExplanation from './launchpad/PlannerExplanation';
 import PlannerWorkbench from './launchpad/PlannerWorkbench';
 import { Button } from './approved-ui-runtime';
+import { useDatedStudyPlan } from '../hooks/useDatedStudyPlan';
+import DatedPlanner from './launchpad/DatedPlanner';
 
 export interface TimetableBlockInfo {
   subject: string;
@@ -59,7 +61,8 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   const isPreExamJunior = isJunior && (yearGroup === '1st' || yearGroup === '2nd');
   const [weekOffset, setWeekOffset] = useState(0);
   const [showExplainer, setShowExplainer] = useState(false);
-  const restDaysArray = useMemo(() => (profile.restDays ?? []).slice(0, 3), [profile.restDays]);
+  const restDaysArray = useMemo(() => profile.restDays ?? [], [profile.restDays]);
+  const dated = useDatedStudyPlan(profile, uid);
   const { topicMastery: topicMasteryHook } = useInnovationData();
   const topicMastery = topicMasteryHook.mastery;
   // Strategy hints from Learning DNA (per-subject best strategy)
@@ -128,6 +131,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
 
 
   if (!profile.subjects.length) return <CrewEmptyState title="A little room for a plan." action="Choose your subjects" onAction={onOpenSettings}>Start with your subjects. We’ll help you shape a week with time to study, revisit and rest.</CrewEmptyState>;
+  if (dated.enabled) return <DatedPlanner schoolEvents={schoolEvents} onEditSubjects={onOpenSettings} scope={dated.scope} onComplete={onToggleCompletion} onStudy={onStudyNow ? task => onStudyNow({subject:task.subjectName,sessionType:task.sessionType,durationMinutes:task.durationMinutes,dateKey:task.date,blockId:task.id}) : undefined}/>;
   return <PlannerWorkbench uid={uid ?? 'guest'} timetable={timetable} subjects={profile.subjects.map(subject => subject.subjectName)} weekStart={weekStart} weekOffset={weekOffset} onWeekChange={setWeekOffset} restDays={restDaysArray} duration={blockDuration} onSettings={onOpenSettings}
     onPlanSettingsChange={(days, minutes) => { if (onPlanSettingsChange) onPlanSettingsChange(days, minutes); else { onRestDaysChange?.(days); onBlockDurationChange?.('', '', minutes); } }}
     isComplete={entry => completions[entry.dateKey]?.includes(entry.id) ?? false}

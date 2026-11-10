@@ -40,6 +40,8 @@ import { QUICK_DEBRIEF_POINTS, FULL_REFLECTION_POINTS } from '../ReflectionModal
 import StudyJournalModal from '../StudyJournalModal';
 import { type DebriefEntry } from '../StudyDebrief';
 import { type WeeklyChallengeState } from '../../hooks/useWeeklyChallenge';
+import { useDatedStudyPlan } from '../../hooks/useDatedStudyPlan';
+import { setTaskStatus } from '../../services/studyPlanStore';
 import { computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, computeWeeksUntilExam } from '../timetableAlgorithm';
 import { getBlockId, toDateKey } from '../subjectData';
 import { processDebriefSideEffects } from '../../hooks/useDebriefSideEffects';
@@ -233,7 +235,9 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const subjects = studentProfile?.subjects ?? [];
 
   // Compute today's remaining timetable blocks for quick-start shortcuts
+  const dated = useDatedStudyPlan(studentProfile, user.uid);
   const computedTodayBlocks = useMemo((): TimetableBlockContext[] => {
+    if (dated.enabled) return (dated.saved?.plan.tasks ?? []).filter(t=>t.date===toDateKey(new Date())&&t.status==='planned').map(t=>({subject:t.subjectName,sessionType:t.sessionType,durationMinutes:t.durationMinutes,dateKey:t.date,blockId:t.id}));
     if (!studentProfile || todayBlocks.length > 0) return todayBlocks;
     try {
       const today = new Date();
@@ -258,7 +262,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       console.error('Failed to build timetable blocks:', err);
       return [];
     }
-  }, [studentProfile, todayBlocks]);
+  }, [studentProfile, todayBlocks, dated.enabled, dated.saved, dated.today]);
 
   const learnedStrategyIds = STRATEGY_REGISTRY
     .filter(s => {
@@ -309,6 +313,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     if (timetableBlock && onTimetableBlockComplete) {
       const actualMinutes = Math.round(session.elapsedSeconds / 60);
       onTimetableBlockComplete(timetableBlock.dateKey, timetableBlock.blockId, actualMinutes);
+      if (dated.enabled) setTaskStatus(dated.scope,timetableBlock.blockId,'completed');
 
       // Compute X/Y blocks done today for banner
       const _alreadyDone = todayBlocks.filter(b =>

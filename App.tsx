@@ -1,3 +1,4 @@
+import { preparePlannedStudy } from './services/plannedStudyLaunch';
 
 /**
  * @license
@@ -466,9 +467,10 @@ const App: React.FC = () => {
   }), []);
 
   const handleStudyFromTimetable = useCallback((block: { subject: string; sessionType: 'new-learning' | 'practice' | 'revision'; durationMinutes: number; dateKey: string; blockId: string }) => {
+    if(user?.uid)preparePlannedStudy(user.uid,block.blockId,block.dateKey);
     setTimetableBlockContext(block);
     nav.navigateToStudySession();
-  }, [nav]);
+  }, [nav,user?.uid]);
 
   const handleGoToInsights = useCallback(() => { nav.navigateToInsights(); }, [nav]);
 

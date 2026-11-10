@@ -419,3 +419,33 @@ capped at `MAX_LONG_OPTION_ROWS`), while the five-row cap is for required-recall
 - **Simulator check without an account** (Debug builds only): `xcrun simctl launch booted com.nextstepuni.app
   -NSUStudyTimerDemo '{"notifyIn":45,"remaining":1110,"mode":"running"}'` (`mode`: running, paused, countup, done;
   `roomOpen: true` suppresses the in-app banner). See `services/studyTimerDemo.ts`.
+
+
+## Dated study plan — feedback implementation, November 2026
+
+- `useDatedStudyPlan` supplies one account-scoped dated plan to Home, Planner,
+  Progress, War Room and both Study Room variants. Use `getBlockId`; never make
+  `block-${index}` identities or recompute a separate timetable in an enabled consumer.
+- The Study Room's existing layout, timer, controls and styling are preserved at
+  Alex's explicit request on 10 November. Planner work changes its data handoff only.
+- Availability is student-entered. Deduct assigned work, breaks and buffer once;
+  zero study days are valid. Completed/manual tasks survive replanning and excess
+  work stays visible. Task IDs identify an occurrence across week rollover.
+- Confidence, completion and independent recall are distinct signals. Canonical
+  topic evidence uses the curriculum registry; Junior Cycle/LCA use subject coverage
+  without borrowing senior topics. Mark Bank retains ownership of card review dates.
+- `progress/{uid}/studyPlans/current` stores the bounded working plan (28 days of
+  past tasks plus the current fortnight), settings and retrieval evidence. Actual
+  study history stays in existing sessions/completions. Include this subcollection
+  in owner rules, account erasure and exports. No points or streaks live here.
+- Sync hydrates before uploading defaults. Use `mergeFields` at individual task and
+  topic map entries, and at complete settings/deadline/requirement fields: ordinary
+  recursive merge cannot remove a deleted date exception. Never write empty task
+  maps. An account-scoped local outbox retains failed changes for retry. Separate
+  tasks merge independently; concurrent edits of the same task use last server write.
+- `data/studyEvidence.ts` pairs student guidance with primary studies and their
+  limits. Hours, duration, priority weights and exact intervals are product policy,
+  not research-proven optimal doses. Rotating school subjects is coverage, not the
+  same intervention as interleaving mathematical problem types.
+- The isolated sample preview is `npm exec vite -- --config vite.planner-review.config.ts`,
+  then `/study-planner-local.html`. It contains only synthetic student data.
