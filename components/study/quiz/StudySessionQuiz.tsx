@@ -11,6 +11,8 @@ import { formatStudyTime } from '../../../utils/studyTime';
 import type { StudyTopicSelection } from '../../../types/studyTopics';
 import type { StudentSubject } from '../../subjectData';
 import { loadQuiz, quizCardTopic, type LoadedQuiz, type QuizResult } from './studyQuizPlan';
+import { recordStudyQuizResults } from '../../../services/studyQuizEvidence';
+import type { SecCard } from '../../../types/markBank';
 import './study-quiz.css';
 
 interface Props {
@@ -34,6 +36,8 @@ export default function StudySessionQuiz({ uid, subject, seconds = 0, topicSelec
   const [expanded, setExpanded] = useState(false);
   const [results, setResults] = useState<QuizResult[]>([]);
   const committed = useRef(new Set<string>());
+  const quizEvidence = useRef<{ card: SecCard; result: SessionCardResult }[]>([]);
+  const quizSessionId = useRef<string | null>(null);
   const responses = useRef<Record<string, SessionResponse>>({});
   const { play, setEnabled } = useDeckSound();
   const muted = useSoundMuted();
@@ -62,6 +66,9 @@ export default function StudySessionQuiz({ uid, subject, seconds = 0, topicSelec
     const after = gradeCard(memoryFor(local, card.id), result.grade, t, retentionFor(t, local.examTs));
     commitReview(uid, quiz.deck.deckId, card.id, after, t);
     committed.current.add(card.id);
+    quizSessionId.current ??= crypto.randomUUID();
+    quizEvidence.current.push({ card, result });
+    recordStudyQuizResults(uid, input.current.topicSelection, quizEvidence.current, quizSessionId.current, t);
     setResults(previous => [...previous, { ...result, questionRef: card.questionRef }]);
   }, [quiz, uid, now]);
 

@@ -437,9 +437,23 @@ capped at `MAX_LONG_OPTION_ROWS`), while the five-row cap is for required-recall
   Previously configured explicit budgets remain bounded. The engine can deduct
   assigned work, breaks and buffer if supplied, but does not invent these inputs.
   Completed/manual tasks and their occurrence IDs survive replanning/week rollover.
+- Routine opportunities stay within their own week and prefer less-loaded days;
+  actual due reviews retain their dates. Keep every task's declared duration:
+  leftover minutes must not silently shorten the student's chosen practice block.
+  Resolve prerequisites before follow-ups. When there is room for two whole
+  practice blocks, favour an early first contact and a separate later date.
+  These spacing and placement rules are product policy, not an optimal-dose claim.
 - Confidence, completion and independent recall are distinct signals. Canonical
   topic evidence uses the curriculum registry; Junior Cycle/LCA use subject coverage
   without borrowing senior topics. Mark Bank retains ownership of card review dates.
+- `StudySessionQuiz` passes actual marked questions to `studyQuizEvidence` as each
+  answer is committed, so closing partway through retains completed results.
+  Aggregate once per canonical topic and quiz session; skips have no result.
+  Self-assessed full marks schedule a short follow-up without increasing independent
+  retrieval successes. Zero/partial marks bring practice forward. Store source and
+  aggregate marks, never answer text. Ambiguous multi-topic marks remain card-only;
+  do not assign a whole-question score to every topic selected for the session.
+  Existing topic confidence must not erase observed quiz evidence during sync.
 - `progress/{uid}/studyPlans/current` stores the bounded working plan (28 days of
   past tasks plus the current fortnight), settings and retrieval evidence. Actual
   study history stays in existing sessions/completions. Include this subcollection

@@ -35,10 +35,18 @@ export interface TopicEvidence {
   topicName: string;
   taught: boolean;
   confidence?: "shaky" | "solid" | "not-started";
-  result?: "failed" | "partial" | "independent";
+  result?: "failed" | "partial" | "independent" | "self-assessed";
   observedOn?: string;
   dueOn?: string;
   successfulReviews?: number;
+  assessment?: {
+    source: "study-quiz";
+    sessionId: string;
+    recordedAt: number;
+    questionCount: number;
+    marksClaimed: number;
+    marksAvailable: number;
+  };
 }
 export interface CardReviewNeed {
   id: string;
@@ -105,7 +113,7 @@ export interface StudyPlan {
   }[];
   notices: string[];
 }
-export const PLAN_POLICY_VERSION = 2;
+export const PLAN_POLICY_VERSION = 3;
 export const minutes = (n: number) =>
   Number.isFinite(n) ? Math.max(0, Math.round(n)) : 0;
 export const dateKey = (d: Date) =>
@@ -199,6 +207,9 @@ type Candidate = Omit<PlanTask, "date" | "status"> & {
   priority: number;
   coverage: boolean;
   afterSourceId?: string;
+  /** Routine opportunities belong to this week, not an invented Monday deadline. */
+  routineEnd?: string;
+  preferBefore?: string;
 };
 const token = (value: string) => encodeURIComponent(value);
 
@@ -357,6 +368,7 @@ export function buildStudyPlan(
         `${req ? `Entry requirement: ${req.note}. ` : ""}${target}. ${contact[s.subjectName] ? `Last recorded contact: ${contact[s.subjectName]}.` : "No recent subject contact recorded."} Keep a place for this subject across the fortnight.`,
         {
           earliest: anchor,
+          routineEnd: addDays(anchor, 6),
           coverage: true,
           sessionType: input.settings.source === "profile" ? "practice" : "revision",
           next: "Choose something already taught. Use the result to decide what needs practice.",
@@ -368,7 +380,7 @@ export function buildStudyPlan(
         add(s.subjectName, `practice-${anchor}`, "Practise recent classwork", "practice",
           addDays(anchor, 3), preferred, 12 + gap + targetWeight,
           `${target}. Choose material already taught, attempt a question and check it. This is a planning suggestion, not a diagnosis of weak recall.`,
-          { earliest: addDays(anchor, 3), afterSourceId: `contact-${anchor}` });
+          { earliest: addDays(anchor, 3), routineEnd: addDays(anchor, 6), afterSourceId: `contact-${anchor}` });
       for (const e of topics) {
         const key = `${e.specificationId}::${e.topicId}`;
         const due =
@@ -383,7 +395,7 @@ export function buildStudyPlan(
         const kind = needsPractice ? "practice" : "retrieval";
         const dueDate = due < anchor ? anchor : due;
         const reason = e.result
-          ? `Last independent attempt: ${e.result}, ${e.observedOn}. Review due ${due}.`
+          ? `Last ${e.assessment ? "self-assessed quiz" : "independent attempt"}: ${e.result}, ${e.observedOn}. Review due ${due}.`
           : "No independent retrieval result yet; start with a short check.";
         const practiceSource = `${key}-${due}-${e.observedOn ?? "unknown"}-${e.dueOn ?? "unknown"}-${e.result ?? "unknown"}`;
         add(
@@ -489,6 +501,26 @@ export function buildStudyPlan(
             t.sourceId === c.sourceId),
       ),
   );
+  // Where a second whole practice block can fit, favour an early first contact
+  // so its spaced follow-up still has room later that week. This is a preference,
+  // never a reason to discard coverage when dated or preserved work fills a day.
+  for (let week = 0; week < 2; week++) {
+    const weekDays = days.slice(week * 7, week * 7 + 7).filter(d => d.date >= today);
+    const slots = Math.min(
+      Math.floor(Math.max(0, cap(week) - weekUsed(week)) / preferred),
+      weekDays.reduce((sum, d) => sum + Math.floor(Math.max(0, d.capacity - d.planned) / preferred), 0),
+    );
+    const endOfWeek = addDays(start, week * 7 + 6);
+    const contacts = pending.filter(c => c.coverage && c.routineEnd === endOfWeek);
+    const extras = pending.filter(c => c.kind === "practice" && c.routineEnd === endOfWeek)
+      .sort((a, b) => b.priority - a.priority || a.id.localeCompare(b.id))
+      .slice(0, Math.max(0, slots - contacts.length));
+    const lastAvailable = weekDays.filter(d => d.capacity - d.planned >= preferred).at(-1);
+    if (lastAvailable) for (const extra of extras) {
+      const parent = contacts.find(c => c.sourceId === extra.afterSourceId && c.subjectName === extra.subjectName);
+      if (parent) parent.preferBefore = addDays(lastAvailable.date, -3);
+    }
+  }
   // Ensure scarce coverage rotates towards subjects absent from the preceding fortnight.
   pending.sort(
     (a, b) =>
@@ -499,6 +531,8 @@ export function buildStudyPlan(
   while (pending.length) {
     pending.sort((a, b) => {
       const score = (c: Candidate) => {
+        // A long gap in routine subject contact must not outrank a dated deadline.
+        if (c.kind === "deadline") return 1000 + c.priority;
         const already = tasks.some(
           (t) =>
             t.status !== "dropped" &&
@@ -506,12 +540,15 @@ export function buildStudyPlan(
             t.date >= start &&
             t.date <= end,
         );
+        const inWeek = tasks.some(t => t.status !== "dropped" && t.subjectName === c.subjectName
+          && t.date >= c.earliest && t.date <= (c.routineEnd ?? end));
         return (
           c.priority +
           // A large inventory of untested topic-confidence records must not
           // crowd whole subjects out of the plan. Deadlines still rank first.
-          (c.coverage && !already ? 80 : 0) -
-          (already && c.coverage ? 50 : 0)
+          (c.coverage && !inWeek ? 80 : 0) +
+          (c.coverage && !already ? 20 : 0) -
+          (inWeek && c.coverage ? 50 : 0)
         );
       };
       return (
@@ -520,7 +557,12 @@ export function buildStudyPlan(
         a.id.localeCompare(b.id)
       );
     });
-    const c = pending.shift()!;
+    // Defer a dependent candidate while its prerequisite is still pending.
+    // Otherwise a high-priority follow-up can be rejected before we even try
+    // to place its parent. Each pass removes one candidate, including orphans.
+    const ready = pending.findIndex(c => !c.afterSourceId || !pending.some(parent =>
+      parent.sourceId === c.afterSourceId && parent.subjectName === c.subjectName));
+    const c = pending.splice(ready < 0 ? 0 : ready, 1)[0];
     const predecessor = c.afterSourceId
       ? tasks.find(
           (t) => t.sourceId === c.afterSourceId && t.subjectName === c.subjectName && t.status !== "dropped",
@@ -535,6 +577,7 @@ export function buildStudyPlan(
           (!c.afterSourceId || !!predecessor) &&
           d.date >= today &&
           d.date >= earliest &&
+          (!c.routineEnd || d.date <= c.routineEnd) &&
           (!c.deadline || d.date < c.deadline),
       )
       .map((d) => {
@@ -563,24 +606,21 @@ export function buildStudyPlan(
             t.date === d.date &&
             t.subjectName === c.subjectName,
         );
-        const score =
-          Math.abs(dayDistance(c.due, d.date)) * 5 +
-          d.planned / 20 +
-          (sameSubject ? 16 : 0);
+        const occupied = days.slice(w * 7, w * 7 + 7).filter(day => day.planned > 0);
+        const separation = occupied.length
+          ? Math.min(...occupied.map(day => Math.abs(dayDistance(day.date, d.date)))) : 0;
+        const score = c.routineEnd
+          ? (c.preferBefore && d.date > c.preferBefore ? 1000 : 0)
+            + 100 * d.planned / Math.max(1, d.capacity) - separation * 2 + (sameSubject ? 16 : 0)
+          : Math.abs(dayDistance(c.due, d.date)) * 5 + d.planned / 20 + (sameSubject ? 16 : 0);
         return { d, room, score, sameTopic };
       })
-      .filter((o) => o.room >= 10 && !o.sameTopic)
+      .filter((o) => o.room >= c.durationMinutes && !o.sameTopic)
       .sort((a, b) => a.score - b.score || a.d.date.localeCompare(b.d.date));
-    const chosen =
-      c.kind === "deadline" || c.kind === "cards"
-        ? options.find((o) => o.room >= c.durationMinutes)
-        : options[0];
-    // A deadline/card batch is indivisible here: disclose overflow rather than hide part of it.
-    if (
-      !chosen ||
-      ((c.kind === "deadline" || c.kind === "cards") &&
-        chosen.room < c.durationMinutes)
-    ) {
+    const chosen = options[0];
+    // Preserve the selected block length. Explicit short checks keep their own
+    // duration; leftover minutes do not silently turn practice into a short check.
+    if (!chosen) {
       unscheduled.push({
         id: c.id,
         subjectName: c.subjectName,
@@ -592,14 +632,14 @@ export function buildStudyPlan(
       });
       continue;
     }
-    const duration = Math.min(c.durationMinutes, chosen.room);
-    const { due: _due, priority: _priority, coverage: _coverage, ...task } = c;
+    const duration = c.durationMinutes;
+    const { due: _due, priority: _priority, coverage: _coverage,
+      routineEnd: _routineEnd, preferBefore: _preferBefore, ...task } = c;
     tasks.push({
       ...task,
       date: chosen.d.date,
       durationMinutes: duration,
       status: "planned",
-      why: `${c.why}${duration < c.durationMinutes ? ` Shortened to ${duration} minutes to fit the available time; do one small task.` : ""}`,
     });
     chosen.d.planned += duration;
   }
@@ -657,7 +697,7 @@ export function recordRetrieval(
       ? 1
       : result === "partial"
         ? 2
-        : Math.min(
+        : result === "self-assessed" ? 3 : Math.min(
             35,
             Math.max(2, Math.round(3 * Math.pow(1.8, successes - 1))),
           );
@@ -668,8 +708,9 @@ export function recordRetrieval(
           Math.max(1, Math.floor(dayDistance(on, examDate) / 2)),
         )
       : interval;
+  const { assessment: _assessment, ...topic } = e;
   return {
-    ...e,
+    ...topic,
     result,
     observedOn: on,
     dueOn: addDays(on, bounded),

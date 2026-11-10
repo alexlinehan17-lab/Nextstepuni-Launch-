@@ -8,6 +8,7 @@ import {
 import {
   connectStudyPlan,
   planCloudPatch,
+  mergeCloudPlan,
   cloudKey,
   type PlanCloudData,
 } from "../services/studyPlanSync";
@@ -61,6 +62,23 @@ const settle = async () => {
   await Promise.resolve();
   await Promise.resolve();
 };
+
+test("quiz evidence survives account sync and an older not-started confidence record", () => {
+  const input = studyPlannerSample("sixth");
+  const topic = input.evidence.find(e => e.taught)!;
+  topic.taught = false;
+  topic.confidence = "not-started";
+  const local = createStudyPlan("sync-quiz-evidence", input, SAMPLE_START, SAMPLE_START, true);
+  const evidence = { ...topic, taught: true, result: "self-assessed" as const,
+    observedOn: SAMPLE_START, dueOn: "2026-11-05", successfulReviews: 0,
+    assessment: { source: "study-quiz" as const, sessionId: "quiz-a", recordedAt: Date.now(), questionCount: 1, marksClaimed: 6, marksAvailable: 6 },
+  };
+  const incoming = planCloudPatch(local, { ...local, inputs: { ...local.inputs, evidence: [evidence] } });
+  const merged = mergeCloudPlan(local, incoming, SAMPLE_START);
+  const synced = merged.inputs.evidence.find(e => e.topicId === topic.topicId)!;
+  expect(synced).toMatchObject({ taught: true, confidence: "not-started", result: "self-assessed", successfulReviews: 0, assessment: evidence.assessment });
+  expect(merged.plan.tasks.some(t => t.topicKey === `${topic.specificationId}::${topic.topicId}`)).toBe(true);
+});
 
 test("waits for account hydration, then patches only the task actually changed", async () => {
   const uid = "sync-owner",

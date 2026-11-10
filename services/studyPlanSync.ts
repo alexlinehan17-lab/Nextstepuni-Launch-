@@ -82,7 +82,7 @@ export function mergeCloudPlan(
     evidence.set(key, {
       ...e,
       ...(current
-        ? { taught: current.taught, confidence: current.confidence }
+        ? { taught: current.taught || Boolean(e.result), confidence: current.confidence }
         : {}),
     });
   }

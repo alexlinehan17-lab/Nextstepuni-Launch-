@@ -196,7 +196,7 @@ export function useDatedStudyPlan(
       merged.set(key, {
         ...e,
         ...(latest
-          ? { confidence: latest.confidence, taught: latest.taught }
+          ? { confidence: latest.confidence, taught: latest.taught || Boolean(e.result) }
           : {}),
       });
     }
