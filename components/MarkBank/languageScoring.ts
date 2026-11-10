@@ -80,6 +80,22 @@ export function languageAllocationMaximum(rubric: LanguagePointsRubric, scores: 
     .filter(limit => scores[languageFlagId(limit.when.flag)] === 1).map(limit => limit.maxMarks));
 }
 
+/** Only a valid, explicitly selected reduced category funds an increased one.
+ * Invalid restored combinations retain normal credit and require reassessment;
+ * never silently choose which of several increased categories gets priority. */
+export function languageCategoryCompensation(rubric: LanguagePointsRubric, scores: LanguageScores) {
+  const rule = rubric.allocationCap?.categoryCompensation;
+  if (!rule) return undefined;
+  const values = new Map(rubric.groups.filter(group => scores[languageGroupId(group.id)] === 1).slice(0, rubric.count).map(group => {
+    const row = group.rows[0];
+    const raw = row ? scores[languageRowId(group.id, row.id)] ?? 0 : 0;
+    return [group.id, row?.steps?.includes(raw) ? raw : 0] as const;
+  }));
+  const reducedCount = [...values.values()].filter(mark => mark === rule.reducedMarks).length;
+  const increasedCount = [...values.values()].filter(mark => mark > rule.normalMarks).length;
+  return { ...rule, values, reducedCount, increasedCount, needsReview: increasedCount > reducedCount };
+}
+
 export function languagePointsMarks(rubric: LanguagePointsRubric, scores: LanguageScores, rule?: SecCardBase['answerLanguageRule']): number {
   // A wholly wrong-language response includes its discretionary criteria.
   // This explicit whole-response flag supersedes, rather than compounds,
@@ -91,10 +107,12 @@ export function languagePointsMarks(rubric: LanguagePointsRubric, scores: Langua
   const conflicts = languageAlternativeConflicts(rubric, scores);
   const selectedGroups = rubric.groups.filter(group => scores[languageGroupId(group.id)] === 1
     && (!group.alternativeSet || !conflicts.has(group.alternativeSet))).slice(0, rubric.count);
+  const compensation = languageCategoryCompensation(rubric, scores);
   const rowMarks = selectedGroups.flatMap(group => group.rows.map(row => {
       const selected = scores[languageRowId(group.id, row.id)] ?? 0;
       const earned = row.steps ? row.steps.includes(selected) ? selected : 0 : selected === 1 ? row.marks : 0;
-      return earned * languageCreditMultiplier(individualRule, scores, `row:${group.id}:${row.id}`);
+      const placed = compensation?.needsReview ? Math.min(earned, compensation.normalMarks) : earned;
+      return placed * languageCreditMultiplier(individualRule, scores, `row:${group.id}:${row.id}`);
     }).sort((a, b) => b - a).slice(0, group.answerCount ?? group.rows.length));
   const rowAllocation = rowMarks.sort((a, b) => b - a).slice(0, rubric.allocationCap?.answerCount ?? rowMarks.length)
     .reduce((sum, mark) => sum + mark, 0);

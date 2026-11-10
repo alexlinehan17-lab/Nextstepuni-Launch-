@@ -1,7 +1,7 @@
 import React from 'react';
 import type { LanguageWritingRubric, LanguageWritingCriterion, LanguagePointsRubric, SecRubricCard } from '../../types/markBank';
 import { ClaimRow, MarkStrip } from './ClaimRows';
-import { languageMarks, languageScoreId, languageLengthId, languageFlagId, languageGroupId, languageRowId, languageCriterionPlacement, languageCriterionValue, languageAlternativeConflicts, languageAllocationMaximum, languageOtherLanguageId, type LanguageScoreId, type LanguageScores } from './languageScoring';
+import { languageMarks, languageScoreId, languageLengthId, languageFlagId, languageGroupId, languageRowId, languageCriterionPlacement, languageCriterionValue, languageAlternativeConflicts, languageAllocationMaximum, languageCategoryCompensation, languageOtherLanguageId, type LanguageScoreId, type LanguageScores } from './languageScoring';
 import './language-rubric.css';
 
 export default function LanguageRubricPanel({ card, scores, onScore }: {
@@ -16,6 +16,7 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
   const flags = [...new Map(conditions.flatMap(condition => 'flag' in condition ? [[condition.flag, condition] as const] : [])).values()];
   const selectedGroups = rubric.system === 'language-points' ? rubric.groups.filter(group => scores[languageGroupId(group.id)] === 1).length : 0;
   const alternativeConflicts = rubric.system === 'language-points' ? languageAlternativeConflicts(rubric, scores) : new Set<string>();
+  const compensation = rubric.system === 'language-points' ? languageCategoryCompensation(rubric, scores) : undefined;
   const claimedDetails = rubric.system === 'language-points' ? rubric.groups
     .filter(group => scores[languageGroupId(group.id)] === 1)
     .reduce((sum, group) => sum + group.rows.filter(row => (scores[languageRowId(group.id, row.id)] ?? 0) > 0).length, 0) : 0;
@@ -89,6 +90,7 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
       {rubric.allocationCap && <>
         <p>These answers earn up to {languageAllocationMaximum(rubric, scores)} marks altogether.</p>
         <p>{rubric.allocationCap.sourceText}</p>
+        {compensation?.needsReview && <p role="status">Review the increased category marks. Each category placed at {compensation.reducedMarks} marks permits one other category at {compensation.increasedMarks}. Until these placements agree, each category earns at most {compensation.normalMarks} marks.</p>}
         {rubric.allocationCap.limits?.map(limit => <React.Fragment key={limit.id}>
           {limit.sourceText !== rubric.allocationCap!.sourceText && <p>{limit.sourceText}</p>}
           <label className="mb-language-flag">
@@ -119,7 +121,10 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
             const value = scores[languageRowId(group.id, row.id)] ?? 0;
             const quotaReached = claimed >= (group.answerCount ?? group.rows.length)
               || claimedDetails >= (rubric.allocationCap?.answerCount ?? Infinity);
-            return <React.Fragment key={row.id}><ClaimRow text={row.text} marks={row.marks} steps={row.steps} claimed={value > 0} value={value} disabled={!selected || conflicting || (value === 0 && quotaReached)}
+            const otherIncreased = compensation ? compensation.increasedCount - ((compensation.values.get(group.id) ?? 0) > compensation.normalMarks ? 1 : 0) : 0;
+            const otherReduced = compensation ? compensation.reducedCount - (compensation.values.get(group.id) === compensation.reducedMarks ? 1 : 0) : 0;
+            const disabledSteps = compensation && otherReduced <= otherIncreased ? row.steps?.filter(mark => mark > compensation.normalMarks) : undefined;
+            return <React.Fragment key={row.id}><ClaimRow text={row.text} marks={row.marks} steps={row.steps} disabledSteps={disabledSteps} claimed={value > 0} value={value} disabled={!selected || conflicting || (value === 0 && quotaReached)}
               onToggle={() => onScore(languageRowId(group.id, row.id), value ? 0 : 1)}
               onStep={mark => onScore(languageRowId(group.id, row.id), value === mark ? 0 : mark)} />
               {otherLanguageControl(`row:${group.id}:${row.id}`, row.text, !selected)}

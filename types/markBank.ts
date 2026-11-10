@@ -1353,6 +1353,15 @@ export interface LanguagePointsRubric {
     answerCount?: number;
     sourceText: string;
     schemePages: number[];
+    /** A published transfer between manually assessed categories. One
+     * category at reducedMarks permits one other at increasedMarks; otherwise
+     * each is limited to normalMarks. Each group is one stepped category row.
+     * The enclosing sourceText/pages must contain this precise rule. */
+    categoryCompensation?: {
+      normalMarks: number;
+      reducedMarks: number;
+      increasedMarks: number;
+    };
     /** Explicit source conditions reduce the whole allocation, without
      * inventing partial credit for an otherwise full-mark detail. */
     limits?: Array<{
@@ -1717,6 +1726,19 @@ export function tariffReconciles(card: SecCard): boolean {
       if (cap) {
         if (!Number.isInteger(cap.maxMarks) || cap.maxMarks <= 0 || !cap.sourceText.trim()
           || !cap.schemePages.length || !cap.schemePages.every(page => Number.isInteger(page) && page > 0)) return false;
+        const compensation = cap.categoryCompensation;
+        if (compensation) {
+          const { normalMarks, reducedMarks, increasedMarks } = compensation;
+          if (![normalMarks, reducedMarks, increasedMarks].every(Number.isInteger)
+            || reducedMarks <= 0 || reducedMarks >= normalMarks || increasedMarks <= normalMarks
+            || increasedMarks - normalMarks !== normalMarks - reducedMarks
+            || count !== groups.length || count < 2 || cap.answerCount !== undefined
+            || cap.maxMarks !== normalMarks * count
+            || groups.some(group => group.alternativeSet !== undefined || !!group.criteria?.length || group.rows.length !== 1
+              || group.rows[0].marks !== increasedMarks || !group.rows[0].steps?.includes(normalMarks)
+              || !group.rows[0].steps.includes(reducedMarks)
+              || group.rows[0].steps.some(mark => mark > normalMarks && mark !== increasedMarks))) return false;
+        }
         const limits = cap.limits ?? [];
         if (new Set(limits.map(limit => limit.id)).size !== limits.length
           || !limits.every(limit => limit.id.trim() && Number.isInteger(limit.maxMarks)
