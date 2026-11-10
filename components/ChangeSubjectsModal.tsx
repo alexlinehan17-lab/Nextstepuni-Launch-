@@ -10,7 +10,7 @@ import ActionButton from './ui/ActionButton';
 import { SubjectCardPicker, SubjectGradeCards } from './shared/SubjectProfileCards';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
-  LC_SUBJECTS, LCA_SUBJECTS, defaultGradesForLevel, defaultSubjectConfig, gradeRank, type LCSubject,
+  LC_SUBJECTS, LCA_SUBJECTS, lcaSubjectLevels, defaultGradesForLevel, defaultSubjectConfig, gradeRank, type LCSubject,
 } from './subjectData';
 
 // ─── Props ───────────────────────────────────────────────────────────────────
@@ -25,6 +25,11 @@ interface ChangeSubjectsModalProps {
 // ─── Component ───────────────────────────────────────────────────────────────
 
 const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClose, onSave, currentProfile }) => {
+  const isLca = currentProfile.yearGroup === 'LCA1' || currentProfile.yearGroup === 'LCA2';
+  const isLcaGradedSubject = (name: string) => isLca && lcaSubjectLevels(name).some(level => level !== 'common');
+  const newConfig = (name: string) => isLcaGradedSubject(name)
+    ? { level: 'common' as Level, currentGrade: undefined, targetGrade: undefined }
+    : defaultSubjectConfig(name);
   const [step, setStep] = useState<1 | 2>(1);
 
   // Initialise from current profile
@@ -32,8 +37,8 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
     new Set(currentProfile.subjects.map(s => s.subjectName))
   );
 
-  const [subjectConfigs, setSubjectConfigs] = useState<Record<string, { level: Level; currentGrade: Grade; targetGrade: Grade }>>(() => {
-    const configs: Record<string, { level: Level; currentGrade: Grade; targetGrade: Grade }> = {};
+  const [subjectConfigs, setSubjectConfigs] = useState<Record<string, { level: Level; currentGrade?: Grade; targetGrade?: Grade }>>(() => {
+    const configs: Record<string, { level: Level; currentGrade?: Grade; targetGrade?: Grade }> = {};
     for (const s of currentProfile.subjects) {
       configs[s.subjectName] = { level: s.level, currentGrade: s.currentGrade, targetGrade: s.targetGrade };
     }
@@ -45,7 +50,7 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
   if (currentProfile !== lastProfile) {
     setLastProfile(currentProfile);
     setSelectedSubjects(new Set(currentProfile.subjects.map(s => s.subjectName)));
-    const configs: Record<string, { level: Level; currentGrade: Grade; targetGrade: Grade }> = {};
+    const configs: Record<string, { level: Level; currentGrade?: Grade; targetGrade?: Grade }> = {};
     for (const s of currentProfile.subjects) {
       configs[s.subjectName] = { level: s.level, currentGrade: s.currentGrade, targetGrade: s.targetGrade };
     }
@@ -65,7 +70,7 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
         if (!subjectConfigs[name]) {
           setSubjectConfigs(prev => ({
             ...prev,
-            [name]: defaultSubjectConfig(name),
+            [name]: newConfig(name),
           }));
         }
       }
@@ -83,7 +88,7 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
       if (field === 'level') {
         const newLevel = value as Level;
         next.level = newLevel;
-        Object.assign(next, defaultGradesForLevel(newLevel));
+        Object.assign(next, isLcaGradedSubject(subjectName) ? { currentGrade: undefined, targetGrade: undefined } : defaultGradesForLevel(newLevel));
       } else if (field === 'currentGrade') {
         next.currentGrade = value as Grade;
         if (gradeRank(next.targetGrade) < gradeRank(next.currentGrade)) {
@@ -100,7 +105,7 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
   // ─── Grouped subjects ───────────────────────────────────────────────────
 
   // LCA students pick from the LCA course list; everyone else the LC list.
-  const isLca = currentProfile.yearGroup === 'LCA1' || currentProfile.yearGroup === 'LCA2';
+  const missingLcaLevel = Array.from(selectedSubjects).some(name => isLcaGradedSubject(name) && !lcaSubjectLevels(name).includes(subjectConfigs[name]?.level));
   const groupedSubjects = useMemo(() => {
     const groups: Record<string, LCSubject[]> = {};
     for (const subj of (isLca ? LCA_SUBJECTS : LC_SUBJECTS)) {
@@ -113,7 +118,8 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
   // ─── Save handler ───────────────────────────────────────────────────────
 
   const handleSave = () => {
-    // Junior Cycle subjects carry bands, LCA subjects carry level only, and
+    if (missingLcaLevel) return;
+    // Junior Cycle subjects carry bands, LCA courses carry level only, and
     // neither has an H/O grade. Emitting `currentGrade: undefined` for them
     // made setDoc throw before anything was written (the SDK rejects undefined
     // unless ignoreUndefinedProperties is set, and it deliberately isn't), so
@@ -131,7 +137,7 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
           targetBand: prev?.targetBand ?? 'Higher Merit',
         };
       }
-      if (isLca) return { subjectName: name, level: 'common' as Level };
+      if (isLca && !isLcaGradedSubject(name)) return { subjectName: name, level: 'common' as Level };
       const config = subjectConfigs[name] || defaultSubjectConfig(name);
       return {
         subjectName: name,
@@ -160,9 +166,9 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
 
   return <SignatureCard open={isOpen} onClose={onClose} wide title={step === 1 ? 'Change Your Subjects' : 'Set Your Grades'} eyebrow={`Change subjects · ${step} of 2`} description={step === 1 ? <>{currentProfile.curriculumLevel === 'junior' ? 'Tap to select your subjects.' : 'Tap to select your Leaving Cert subjects.'} {selectedSubjects.size} selected</> : 'Set where you are now and where you want to be.'} progress={{ current: step, total: 2 }} footer={<>
     <ActionButton intent="quiet" onClick={step === 2 ? () => setStep(1) : onClose}>{step === 2 ? <><ArrowLeft size={14} aria-hidden="true" />Back</> : 'Cancel'}</ActionButton>
-    {step === 1 ? <ActionButton onClick={() => setStep(2)} disabled={selectedSubjects.size === 0}>Continue<ArrowRight size={14} aria-hidden="true" /></ActionButton> : <ActionButton onClick={handleSave}>Save Changes</ActionButton>}
+    {step === 1 ? <ActionButton onClick={() => setStep(2)} disabled={selectedSubjects.size === 0}>Continue<ArrowRight size={14} aria-hidden="true" /></ActionButton> : <ActionButton onClick={handleSave} disabled={missingLcaLevel}>Save Changes</ActionButton>}
   </>}>
-    {step === 1 ? <SubjectCardPicker groups={groupedSubjects} selected={selectedSubjects} onToggle={toggleSubject} /> : <SubjectGradeCards selected={selectedSubjects} configs={subjectConfigs} onUpdate={updateConfig} />}
+    {step === 1 ? <SubjectCardPicker groups={groupedSubjects} selected={selectedSubjects} onToggle={toggleSubject} /> : <SubjectGradeCards yearGroup={currentProfile.yearGroup} selected={selectedSubjects} configs={subjectConfigs} onUpdate={updateConfig} />}
   </SignatureCard>;
 };
 
