@@ -2,6 +2,7 @@ import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import SessionScreen, { answerLanguageClaimId, extraneousMaterialClaimId, marksClaimed, partClaimId, type SessionResponse } from '../components/MarkBank/SessionScreen';
 import { emptyWaysInWork } from '../components/MarkBank/WaysInPanel';
+import { REVIEWED_CARDS as JAPANESE_REVIEWED } from '../components/MarkBank/cards/japanese/reviewed';
 import { tariffReconciles, type SecQuestionCard } from '../types/markBank';
 
 afterEach(cleanup);
@@ -36,6 +37,26 @@ const quotationFixture = (): SecQuestionCard => ({
 });
 
 describe('source-defined extraneous-material credit', () => {
+  it.each([1, 2, 3, 4, 5])('renders and grades the exact 2012 Higher Q3B%i condition without stacking penalties', number => {
+    const card = JAPANESE_REVIEWED.find(c => c.id === `ja-2012-hl-3b-${number}`);
+    if (!card || card.kind !== 'question') throw new Error('Missing reviewed 2012 task');
+    const onGrade = vi.fn();
+    render(<SessionScreen cards={[card]} subjectLabel="Japanese" onGrade={onGrade} onFinish={vi.fn()} onExit={vi.fn()} />);
+    fireEvent.click(screen.getByRole('button', { name: 'Reveal the marking scheme' }));
+    for (const row of card.rows) {
+      const answers = row.group ? row.group.options.slice(0, row.group.claimMax) : [row.verbatim];
+      for (const answer of answers) {
+        fireEvent.click(screen.getByRole('button', { name: name => name.startsWith(answer) }));
+        fireEvent.click(screen.getByRole('checkbox', { name: `${answer} answered in English` }));
+      }
+    }
+    fireEvent.click(screen.getByRole('checkbox', { name: quotationCondition }));
+    expect(screen.getByText(card.extraneousMaterialRule!.sourceText)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Shaky' }));
+    expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({ cardId: card.id,
+      marksClaimed: card.totalMarks / 2, marksAvailable: card.totalMarks }));
+  });
+
   it('shows the complete published condition and applies overlapping half-credit conditions once', () => {
     const card = quotationFixture();
     const onGrade = vi.fn();
