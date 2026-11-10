@@ -3594,13 +3594,44 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-a1", topicId: "lcvp-link-modules-0-1", conceptId: "ava-o-rourke-s-title",
+    id: "lcvp-2024-cl-a1", topicId: "lcvp-link-modules-1-2", conceptId: "a1",
     section: "A", questionRef: "2024 CL Section A Q1",
-    stem: "You will be shown a DVD with Recruitment of Volunteers as the theme.",
     questionText: "What is Ava O’Rourke’s title?",
-    tariffModel: {"kind":"fixed","notation":"1 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 1,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "CEO of Pax", marks: 1, contextNote: "1 mark for this answer.", openList: true },
+    { id: "title", kind: "point", verbatim: "CEO of Pax", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2024 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2024 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Recruitment of Volunteers sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -3608,13 +3639,44 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-a2", topicId: "lcvp-link-modules-0-1", conceptId: "purpose-pax",
+    id: "lcvp-2024-cl-a2", topicId: "lcvp-link-modules-1-2", conceptId: "a2",
     section: "A", questionRef: "2024 CL Section A Q2",
-    stem: "You will be shown a DVD with Recruitment of Volunteers as the theme.",
     questionText: "What is the purpose of Pax?",
-    tariffModel: {"kind":"bestNofParts","notation":"2 @ 1m","answer":2,"ofParts":4,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Voluntary Organisation for teenagers dealing with mental health issues","Provides counselling – online and face to face","Raise awareness about mental health issues","Conducts research to understand how to combat mental health challenges"]} },
+    { id: "responses", kind: "anyN", verbatim: "What is the purpose of Pax? 2 marks 2 @ 1m", marks: 2, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":1,"options":["Voluntary Organisation for teenagers dealing with mental health issues","Provides counselling – online and face to face","Raise awareness about mental health issues","Conducts research to understand how to combat mental health challenges"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2024 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2024 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Recruitment of Volunteers sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -3622,13 +3684,44 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-a3", topicId: "lcvp-link-modules-0-1", conceptId: "does-pax-attract-volunteers",
+    id: "lcvp-2024-cl-a3", topicId: "lcvp-link-modules-1-2", conceptId: "a3",
     section: "A", questionRef: "2024 CL Section A Q3",
-    stem: "You will be shown a DVD with Recruitment of Volunteers as the theme.",
     questionText: "How does Pax attract volunteers?",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 1m","answer":3,"ofParts":4,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Flyers","Promotional video on social media","Register with volunteer centre nationwide","Engage in radio and podcasts"]} },
+    { id: "responses", kind: "anyN", verbatim: "How does Pax attract volunteers? 3 marks 3 @ 1m", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":3,"perOption":1,"options":["Flyers","Promotional video on social media","Register with volunteer centre nationwide","Engage in radio and podcasts"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2024 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2024 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Recruitment of Volunteers sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -3636,13 +3729,44 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-a4", topicId: "lcvp-link-modules-0-4", conceptId: "headings-does-ava-suggest-include-cv",
+    id: "lcvp-2024-cl-a4", topicId: "lcvp-link-modules-0-4", conceptId: "a4",
     section: "A", questionRef: "2024 CL Section A Q4",
-    stem: "You will be shown a DVD with Recruitment of Volunteers as the theme.",
     questionText: "What headings does Ava suggest to include in a CV?",
-    tariffModel: {"kind":"bestNofParts","notation":"2 @ 1m","answer":2,"ofParts":5,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Personal Details","Work Experience","Skills and Qualities","Hobbies and Interests","Referees"]} },
+    { id: "responses", kind: "anyN", verbatim: "What headings does Ava suggest to include in a CV? 2 marks 2 @ 1m", marks: 2, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":1,"options":["Personal Details","Work Experience","Skills and Qualities","Hobbies and Interests","Referees"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2024 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2024 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Recruitment of Volunteers sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -3650,13 +3774,44 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-a5", topicId: "lcvp-link-modules-0-4", conceptId: "other-than-headings-advice-does-ava",
+    id: "lcvp-2024-cl-a5", topicId: "lcvp-link-modules-0-4", conceptId: "a5",
     section: "A", questionRef: "2024 CL Section A Q5",
-    stem: "You will be shown a DVD with Recruitment of Volunteers as the theme.",
     questionText: "Other than headings, what advice does Ava give for completing a CV and a cover letter?",
-    tariffModel: {"kind":"bestNofParts","notation":"2 @ 2m (1 + 1)","answer":2,"ofParts":4,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Proof reading – no errors","Honesty – CVs are checked/don’t want to be caught out","Two good referees – don’t want a bad reference","Well written cover letter – introducing themselves/creates a good impression/ state availability"]} },
+    { id: "responses", kind: "criterion", verbatim: "Other than headings, what advice does Ava give for completing a CV and a cover letter? 4 marks 2 @ 2m (1 + 1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Other than headings, what advice does Ava give for completing a CV and a cover letter? 4 marks 2 @ 2m (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Proof reading – no errors | 2. Honesty – CVs are checked/don’t want to be caught out | 3. Two good referees – don’t want a bad reference | 4. Well written cover letter – introducing themselves/creates a good impression/ state availability", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2024 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2024 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Recruitment of Volunteers sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -3664,13 +3819,44 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-a6", topicId: "lcvp-link-modules-0-1", conceptId: "benefits-teamwork-volunteers-pax",
+    id: "lcvp-2024-cl-a6", topicId: "lcvp-link-modules-1-2", conceptId: "a6",
     section: "A", questionRef: "2024 CL Section A Q6",
-    stem: "You will be shown a DVD with Recruitment of Volunteers as the theme.",
     questionText: "Outline the benefits of teamwork to the volunteers at Pax.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 2m (0/2)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; (0/2) — all or nothing on each answer.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Sharing the workload, not doing all the work yourself, work is completed quicker, reduces stress, less responsibility, no one person is under too much pressure","Working together to achieve a common goal, more motivated","Builds friendships, meet new people, sense of belonging","Encourages communication, collaboration, creativity, builds empathy (any one of these points with an expansion)","Helps volunteers to feel good by doing good, sense of wellbeing","Decisions can be made, problems solved more quickly","Team members will have a variety of skills, strengths, more ideas, experience"]} },
+    { id: "responses", kind: "anyN", verbatim: "Outline the benefits of teamwork to the volunteers at Pax. 6 marks 3 @ 2m (0/2) expansion needed", marks: 6, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 2 or 0 marks; no unprinted partial step is inferred.  Original allocation is 3 @ 2m (0/2), expansion needed. Each complete expanded response receives 2 or 0; there is no 1-mark step.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Sharing the workload, not doing all the work yourself, work is completed quicker, reduces stress, less responsibility, no one person is under too much pressure","Working together to achieve a common goal, more motivated","Builds friendships, meet new people, sense of belonging","Encourages communication, collaboration, creativity, builds empathy (any one of these points with an expansion)","Helps volunteers to feel good by doing good, sense of wellbeing","Decisions can be made, problems solved more quickly","Team members will have a variety of skills, strengths, more ideas, experience"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2024 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2024 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Recruitment of Volunteers sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -3678,13 +3864,44 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-a7", topicId: "lcvp-link-modules-0-4", conceptId: "ava-prepares-interviewing-potential-volunteers",
+    id: "lcvp-2024-cl-a7", topicId: "lcvp-link-modules-0-1", conceptId: "a7",
     section: "A", questionRef: "2024 CL Section A Q7",
-    stem: "You will be shown a DVD with Recruitment of Volunteers as the theme.",
     questionText: "Describe how Ava prepares for interviewing potential volunteers.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 2m (0/2)","answer":3,"ofParts":4,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; (0/2) — all or nothing on each answer.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Reads CV, skills/qualities/experience, are they a fit","Prepares questions based on CV to give a format for the interview, encourage applicants to show their suitability","Choosing a suitable location, quiet, available WIFI etc","Interview selection form, this keeps track of the interview, helps decide on the most suitable candidate once the interviews have been completed"]} },
+    { id: "responses", kind: "anyN", verbatim: "Describe how Ava prepares for interviewing potential volunteers. 6 marks 3 @ 2m (0/2) expansion needed", marks: 6, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 2 or 0 marks; no unprinted partial step is inferred.  Original allocation is 3 @ 2m (0/2), expansion needed. Each complete expanded response receives 2 or 0; there is no 1-mark step.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Reads CV, skills/qualities/experience, are they a fit","Prepares questions based on CV to give a format for the interview, encourage applicants to show their suitability","Choosing a suitable location, quiet, available WIFI etc.","Interview selection form, this keeps track of the interview, helps decide on the most suitable candidate once the interviews have been completed"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2024 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2024 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Recruitment of Volunteers sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -3692,13 +3909,44 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-a8", topicId: "lcvp-link-modules-0-1", conceptId: "effective-communication-essential-when-giving-feedback",
+    id: "lcvp-2024-cl-a8", topicId: "lcvp-link-modules-0-1", conceptId: "a8",
     section: "A", questionRef: "2024 CL Section A Q8",
-    stem: "You will be shown a DVD with Recruitment of Volunteers as the theme.",
     questionText: "Outline why effective communication is essential when giving feedback following an interview.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 2m (1 + 1)","answer":3,"ofParts":6,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["To inform candidates of how they have done in the interview/professional growth","Leaves candidates with a positive impression of the organisation so that they will support it in the future","Candidates’ confidence will be boosted as they will know what they have done well in","If the feedback is clear there will be no misunderstanding","Negative feedback will be given in a sensitive way so as not to upset the candidate","Giving suggestions to the candidates/organisation on how they can improve will help them know what they need to work on in the future"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline why effective communication is essential when giving feedback. 6 marks 3 @ 2m (1 + 1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Outline why effective communication is essential when giving feedback. 6 marks 3 @ 2m (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. To inform candidates of how they have done in the interview/professional growth | 2. Leaves candidates with a positive impression of the organisation so that they will support it in the future | 3. Candidates’ confidence will be boosted as they will know what they have done well in | 4. If the feedback is clear there will be no misunderstanding | 5. Negative feedback will be given in a sensitive way so as not to upset the candidate | 6. Giving suggestions to the candidates/organisation on how they can improve will help them know what they need to work on in the future", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2024 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2024 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Recruitment of Volunteers sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -3706,481 +3954,974 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-b1", topicId: "lcvp-link-modules-1-0", conceptId: "enterprising-characteristics-skills-shown-sandra",
+    id: "lcvp-2024-cl-b1", topicId: "lcvp-link-modules-1-0", conceptId: "b1",
     section: "B", questionRef: "2024 CL Section B Q1",
-    stem: "Explain three enterprising characteristics/skills shown by Sandra.",
+    stem: "So Soft by Sandra Sandra always had an interest in fashion and graduated from college with a degree in Business. Having worked as a fashion buyer for several years, she was promoted to team leader. She enjoyed her job and gained experience in contract negotiation, budgetary control, logistics, predicting future trends and people management. A few years later, Sandra had a baby born with sensitive skin. She found it very difficult to source baby clothes in Ireland that did not irritate his skin. She realised there was a gap in the market for sustainable organic clothing for children and babies. Following her return to work after maternity leave, Sandra was made redundant. Her employer left the Irish market due to a downturn in the global economy. Remembering her organic clothing idea, Sandra arranged a meeting with her Local Enterprise Office (LEO). They explained the importance of preparing a business plan and advised her how to secure funding for her new venture. She was also informed that she may be eligible for social welfare supports. With this knowledge, Sandra decided to take the risk to start up So Soft by Sandra. Using her own savings, a small loan from her local bank, and a grant from LEO, Sandra launched her online business. She became a member of a local co‐operative, buying recycled organic clothing from local suppliers and using the services of dressmakers to make her clothes. It was important to Sandra to stay true to her core values and to reduce waste while promoting a circular economy. After two years of trading, Sandra felt that there was no more capacity to expand in the organic baby clothes market. She had already added organic baby accessories and personalised gifts to her product range. Sticking to her theme of a circular economy and having completed online surveys and focus groups with clients, Sandra now offers an online marketplace, called Babyboo, where pre‐loved baby clothes can be bought and sold. Sandra’s business model takes 15% of each sale made on the Babyboo platform. By reselling baby clothes, Sandra is keeping these clothes in use for longer. Despite the hard work involved in running a small business, Sandra does not regret moving from being an employee to being a business owner. She has won several industry awards for her innovative product design and sustainable business practices. Sandra has been offered the opportunity to sell her clothing range and accessories in a large Dublin department store. It will mean that she will reach a wider audience and grow her business but it will require further financial investment. At the same time, the online fashion retailer, Zebra, has offered her €1 million for her Babyboo platform. She is presently examining the various options available to her.",
     questionText: "Explain three enterprising characteristics/skills shown by Sandra.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m (1 + 1)","answer":3,"ofParts":10,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Proactive","Creative/Innovative","Risk Taker","Flexible/Adaptable","Independent","Future focussed/long term focus","Decisive","Self-aware","Persistent","Hardworking List is not exhaustive, but answer must be relevant to Sandra"]} },
+    { id: "responses", kind: "criterion", verbatim: "Explain three enterprising characteristics/skills shown by Sandra. 6 marks 3@2m (1 + 1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Explain three enterprising characteristics/skills shown by Sandra. 6 marks 3@2m (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Proactive | 2. Creative/Innovative | 3. Risk Taker | 4. Flexible/Adaptable | 5. Independent | 6. Future focussed/long term focus | 7. Decisive | 8. Self-aware | 9. Persistent | 10. Hardworking List is not exhaustive, but answer must be relevant to Sandra", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "So Soft by Sandra — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2024 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      10
+                ],
+                "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-b2i", topicId: "lcvp-link-modules-1-1", conceptId: "benefits-sandra-asking-assistance-leo",
+    id: "lcvp-2024-cl-b2i", topicId: "lcvp-link-modules-1-1", conceptId: "b2i",
     section: "B", questionRef: "2024 CL Section B Q2(i)",
+    stem: "So Soft by Sandra Sandra always had an interest in fashion and graduated from college with a degree in Business. Having worked as a fashion buyer for several years, she was promoted to team leader. She enjoyed her job and gained experience in contract negotiation, budgetary control, logistics, predicting future trends and people management. A few years later, Sandra had a baby born with sensitive skin. She found it very difficult to source baby clothes in Ireland that did not irritate his skin. She realised there was a gap in the market for sustainable organic clothing for children and babies. Following her return to work after maternity leave, Sandra was made redundant. Her employer left the Irish market due to a downturn in the global economy. Remembering her organic clothing idea, Sandra arranged a meeting with her Local Enterprise Office (LEO). They explained the importance of preparing a business plan and advised her how to secure funding for her new venture. She was also informed that she may be eligible for social welfare supports. With this knowledge, Sandra decided to take the risk to start up So Soft by Sandra. Using her own savings, a small loan from her local bank, and a grant from LEO, Sandra launched her online business. She became a member of a local co‐operative, buying recycled organic clothing from local suppliers and using the services of dressmakers to make her clothes. It was important to Sandra to stay true to her core values and to reduce waste while promoting a circular economy. After two years of trading, Sandra felt that there was no more capacity to expand in the organic baby clothes market. She had already added organic baby accessories and personalised gifts to her product range. Sticking to her theme of a circular economy and having completed online surveys and focus groups with clients, Sandra now offers an online marketplace, called Babyboo, where pre‐loved baby clothes can be bought and sold. Sandra’s business model takes 15% of each sale made on the Babyboo platform. By reselling baby clothes, Sandra is keeping these clothes in use for longer. Despite the hard work involved in running a small business, Sandra does not regret moving from being an employee to being a business owner. She has won several industry awards for her innovative product design and sustainable business practices. Sandra has been offered the opportunity to sell her clothing range and accessories in a large Dublin department store. It will mean that she will reach a wider audience and grow her business but it will require further financial investment. At the same time, the online fashion retailer, Zebra, has offered her €1 million for her Babyboo platform. She is presently examining the various options available to her.",
     questionText: "What were the benefits to Sandra of asking for assistance from LEO?",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m (1 + 1)","answer":3,"ofParts":5,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["She had support/not alone/preparation of a business plan/research/ development & innovation support","Was able to avail of help/how to secure funding/social welfare supports","Grants/loans/trading online voucher scheme","Was able to avail of training/start your own business course","Was able to avail of mentoring"]} },
+    { id: "responses", kind: "criterion", verbatim: "What were the benefits to Sandra of asking for assistance from LEO? 6 marks 3@2m (1 + 1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: What were the benefits to Sandra of asking for assistance from LEO? 6 marks 3@2m (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. She had support/not alone/preparation of a business plan/research/ development & innovation support | 2. Was able to avail of help/how to secure funding/social welfare supports | 3. Grants/loans/trading online voucher scheme | 4. Was able to avail of training/start your own business course | 5. Was able to avail of mentoring", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "So Soft by Sandra — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2024 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-b2ii", topicId: "lcvp-link-modules-1-4", conceptId: "did-sandra-promote-circular-economy-within",
+    id: "lcvp-2024-cl-b2ii", topicId: "lcvp-link-modules-1-1", conceptId: "b2ii",
     section: "B", questionRef: "2024 CL Section B Q2(ii)",
+    stem: "So Soft by Sandra Sandra always had an interest in fashion and graduated from college with a degree in Business. Having worked as a fashion buyer for several years, she was promoted to team leader. She enjoyed her job and gained experience in contract negotiation, budgetary control, logistics, predicting future trends and people management. A few years later, Sandra had a baby born with sensitive skin. She found it very difficult to source baby clothes in Ireland that did not irritate his skin. She realised there was a gap in the market for sustainable organic clothing for children and babies. Following her return to work after maternity leave, Sandra was made redundant. Her employer left the Irish market due to a downturn in the global economy. Remembering her organic clothing idea, Sandra arranged a meeting with her Local Enterprise Office (LEO). They explained the importance of preparing a business plan and advised her how to secure funding for her new venture. She was also informed that she may be eligible for social welfare supports. With this knowledge, Sandra decided to take the risk to start up So Soft by Sandra. Using her own savings, a small loan from her local bank, and a grant from LEO, Sandra launched her online business. She became a member of a local co‐operative, buying recycled organic clothing from local suppliers and using the services of dressmakers to make her clothes. It was important to Sandra to stay true to her core values and to reduce waste while promoting a circular economy. After two years of trading, Sandra felt that there was no more capacity to expand in the organic baby clothes market. She had already added organic baby accessories and personalised gifts to her product range. Sticking to her theme of a circular economy and having completed online surveys and focus groups with clients, Sandra now offers an online marketplace, called Babyboo, where pre‐loved baby clothes can be bought and sold. Sandra’s business model takes 15% of each sale made on the Babyboo platform. By reselling baby clothes, Sandra is keeping these clothes in use for longer. Despite the hard work involved in running a small business, Sandra does not regret moving from being an employee to being a business owner. She has won several industry awards for her innovative product design and sustainable business practices. Sandra has been offered the opportunity to sell her clothing range and accessories in a large Dublin department store. It will mean that she will reach a wider audience and grow her business but it will require further financial investment. At the same time, the online fashion retailer, Zebra, has offered her €1 million for her Babyboo platform. She is presently examining the various options available to her.",
     questionText: "How did Sandra promote the circular economy within her business model?",
-    tariffModel: {"kind":"bestNofParts","notation":"2@2m (1 + 1)","answer":2,"ofParts":3,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Used recycled organic clothing purchased from local suppliers/gives clothing a new life","Used the services of a local dressmaker to make her clothes/keeping money in the local area","Set up Babyboo to sell pre-loved baby clothing/worked to reduce waste"]} },
+    { id: "responses", kind: "criterion", verbatim: "How did Sandra promote the circular economy within her business model? 4 marks 2@2m (1 + 1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: How did Sandra promote the circular economy within her business model? 4 marks 2@2m (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Used recycled organic clothing purchased from local suppliers/gives clothing a new life | 2. Used the services of a local dressmaker to make her clothes/keeping money in the local area | 3. Set up Babyboo to sell pre-loved baby clothing/worked to reduce waste", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "So Soft by Sandra — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2024 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-b3i", topicId: "lcvp-link-modules-1-1", conceptId: "benefits-sandra-s-business-winning-industry",
+    id: "lcvp-2024-cl-b3i", topicId: "lcvp-link-modules-1-1", conceptId: "b3i",
     section: "B", questionRef: "2024 CL Section B Q3(i)",
+    stem: "So Soft by Sandra Sandra always had an interest in fashion and graduated from college with a degree in Business. Having worked as a fashion buyer for several years, she was promoted to team leader. She enjoyed her job and gained experience in contract negotiation, budgetary control, logistics, predicting future trends and people management. A few years later, Sandra had a baby born with sensitive skin. She found it very difficult to source baby clothes in Ireland that did not irritate his skin. She realised there was a gap in the market for sustainable organic clothing for children and babies. Following her return to work after maternity leave, Sandra was made redundant. Her employer left the Irish market due to a downturn in the global economy. Remembering her organic clothing idea, Sandra arranged a meeting with her Local Enterprise Office (LEO). They explained the importance of preparing a business plan and advised her how to secure funding for her new venture. She was also informed that she may be eligible for social welfare supports. With this knowledge, Sandra decided to take the risk to start up So Soft by Sandra. Using her own savings, a small loan from her local bank, and a grant from LEO, Sandra launched her online business. She became a member of a local co‐operative, buying recycled organic clothing from local suppliers and using the services of dressmakers to make her clothes. It was important to Sandra to stay true to her core values and to reduce waste while promoting a circular economy. After two years of trading, Sandra felt that there was no more capacity to expand in the organic baby clothes market. She had already added organic baby accessories and personalised gifts to her product range. Sticking to her theme of a circular economy and having completed online surveys and focus groups with clients, Sandra now offers an online marketplace, called Babyboo, where pre‐loved baby clothes can be bought and sold. Sandra’s business model takes 15% of each sale made on the Babyboo platform. By reselling baby clothes, Sandra is keeping these clothes in use for longer. Despite the hard work involved in running a small business, Sandra does not regret moving from being an employee to being a business owner. She has won several industry awards for her innovative product design and sustainable business practices. Sandra has been offered the opportunity to sell her clothing range and accessories in a large Dublin department store. It will mean that she will reach a wider audience and grow her business but it will require further financial investment. At the same time, the online fashion retailer, Zebra, has offered her €1 million for her Babyboo platform. She is presently examining the various options available to her.",
     questionText: "State the benefits to Sandra’s business from winning an industry award.",
-    tariffModel: {"kind":"bestNofParts","notation":"2@2m (1+1)","answer":2,"ofParts":7,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Enhanced reputation/increased visibility/publicity","Increased sales/attract new customers/may put up your prices","Easier to raise finance","Easier to launch new products","Attract new talent/employees","Networking opportunities/make connections e.g. department store","Competitive advantage"]} },
+    { id: "responses", kind: "criterion", verbatim: "State the benefits to Sandra’s business from winning an industry award. 4 marks 2@2m (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: State the benefits to Sandra’s business from winning an industry award. 4 marks 2@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Enhanced reputation/increased visibility/publicity | 2. Increased sales/attract new customers/may put up your prices | 3. Easier to raise finance | 4. Easier to launch new products | 5. Attract new talent/employees | 6. Networking opportunities/make connections e.g. department store | 7. Competitive advantage", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "So Soft by Sandra — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2024 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-b3ii", topicId: "lcvp-link-modules-1-0", conceptId: "sandra-s-management-ability-led-success",
+    id: "lcvp-2024-cl-b3ii", topicId: "lcvp-link-modules-1-0", conceptId: "b3ii",
     section: "B", questionRef: "2024 CL Section B Q3(ii)",
+    stem: "So Soft by Sandra Sandra always had an interest in fashion and graduated from college with a degree in Business. Having worked as a fashion buyer for several years, she was promoted to team leader. She enjoyed her job and gained experience in contract negotiation, budgetary control, logistics, predicting future trends and people management. A few years later, Sandra had a baby born with sensitive skin. She found it very difficult to source baby clothes in Ireland that did not irritate his skin. She realised there was a gap in the market for sustainable organic clothing for children and babies. Following her return to work after maternity leave, Sandra was made redundant. Her employer left the Irish market due to a downturn in the global economy. Remembering her organic clothing idea, Sandra arranged a meeting with her Local Enterprise Office (LEO). They explained the importance of preparing a business plan and advised her how to secure funding for her new venture. She was also informed that she may be eligible for social welfare supports. With this knowledge, Sandra decided to take the risk to start up So Soft by Sandra. Using her own savings, a small loan from her local bank, and a grant from LEO, Sandra launched her online business. She became a member of a local co‐operative, buying recycled organic clothing from local suppliers and using the services of dressmakers to make her clothes. It was important to Sandra to stay true to her core values and to reduce waste while promoting a circular economy. After two years of trading, Sandra felt that there was no more capacity to expand in the organic baby clothes market. She had already added organic baby accessories and personalised gifts to her product range. Sticking to her theme of a circular economy and having completed online surveys and focus groups with clients, Sandra now offers an online marketplace, called Babyboo, where pre‐loved baby clothes can be bought and sold. Sandra’s business model takes 15% of each sale made on the Babyboo platform. By reselling baby clothes, Sandra is keeping these clothes in use for longer. Despite the hard work involved in running a small business, Sandra does not regret moving from being an employee to being a business owner. She has won several industry awards for her innovative product design and sustainable business practices. Sandra has been offered the opportunity to sell her clothing range and accessories in a large Dublin department store. It will mean that she will reach a wider audience and grow her business but it will require further financial investment. At the same time, the online fashion retailer, Zebra, has offered her €1 million for her Babyboo platform. She is presently examining the various options available to her.",
     questionText: "Explain how Sandra’s management ability led to the success of her business.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m (1 + 1)","answer":3,"ofParts":9,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Planning – e.g. to sell the business/to extend her product line/to start Babyboo","Organising the resources – e.g. getting finance","Controlling resources","People Management-Having previously lead teams she has the ability to manage people such as local suppliers and dressmakers she was working with","Motivating","Communication","Being innovative and capable of coming up with ideas/spotting trends","Digital skills","Ability to manage finance/budget/funding"]} },
+    { id: "responses", kind: "criterion", verbatim: "Explain how Sandra’s management ability led to the success of her business. 6 marks 3@2m (1 + 1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Explain how Sandra’s management ability led to the success of her business. 6 marks 3@2m (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Planning – e.g. to sell the business/to extend her product line/to start Babyboo | 2. Organising the resources – e.g. getting finance | 3. Controlling resources | 4. People Management-Having previously lead teams she has the ability to manage people such as local suppliers and dressmakers she was working with | 5. Motivating | 6. Communication | 7. Being innovative and capable of coming up with ideas/spotting trends | 8. Digital skills | 9. Ability to manage finance/budget/funding", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "So Soft by Sandra — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2024 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c1a", topicId: "lcvp-link-modules-1-4", conceptId: "methods-business-enterprise-could-use-generate",
+    id: "lcvp-2024-cl-b3iii", topicId: "lcvp-link-modules-1-1", conceptId: "b3iii",
+    section: "B", questionRef: "2024 CL Section B Q3(iii)",
+    stem: "So Soft by Sandra Sandra always had an interest in fashion and graduated from college with a degree in Business. Having worked as a fashion buyer for several years, she was promoted to team leader. She enjoyed her job and gained experience in contract negotiation, budgetary control, logistics, predicting future trends and people management. A few years later, Sandra had a baby born with sensitive skin. She found it very difficult to source baby clothes in Ireland that did not irritate his skin. She realised there was a gap in the market for sustainable organic clothing for children and babies. Following her return to work after maternity leave, Sandra was made redundant. Her employer left the Irish market due to a downturn in the global economy. Remembering her organic clothing idea, Sandra arranged a meeting with her Local Enterprise Office (LEO). They explained the importance of preparing a business plan and advised her how to secure funding for her new venture. She was also informed that she may be eligible for social welfare supports. With this knowledge, Sandra decided to take the risk to start up So Soft by Sandra. Using her own savings, a small loan from her local bank, and a grant from LEO, Sandra launched her online business. She became a member of a local co‐operative, buying recycled organic clothing from local suppliers and using the services of dressmakers to make her clothes. It was important to Sandra to stay true to her core values and to reduce waste while promoting a circular economy. After two years of trading, Sandra felt that there was no more capacity to expand in the organic baby clothes market. She had already added organic baby accessories and personalised gifts to her product range. Sticking to her theme of a circular economy and having completed online surveys and focus groups with clients, Sandra now offers an online marketplace, called Babyboo, where pre‐loved baby clothes can be bought and sold. Sandra’s business model takes 15% of each sale made on the Babyboo platform. By reselling baby clothes, Sandra is keeping these clothes in use for longer. Despite the hard work involved in running a small business, Sandra does not regret moving from being an employee to being a business owner. She has won several industry awards for her innovative product design and sustainable business practices. Sandra has been offered the opportunity to sell her clothing range and accessories in a large Dublin department store. It will mean that she will reach a wider audience and grow her business but it will require further financial investment. At the same time, the online fashion retailer, Zebra, has offered her €1 million for her Babyboo platform. She is presently examining the various options available to her.",
+    questionText: "Sandra’s options for the future include selling to Zebra or expanding into the large Dublin department store. Which option would you recommend for Sandra? Give reasons for your choice.",
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "option", kind: "criterion", verbatim: "Option", marks: 1, contextNote: "Choose ONE of the two complete printed options, 1 mark. All THREE reasons must support that SAME option. Option 1 - Sell Babyboo to Zebra | Option 2 - Expand into the Department store", permittedMarks: [0,1] },
+    { id: "reasons", kind: "criterion", verbatim: "3 valid reasons", marks: 3, contextNote: "Three distinct matching reasons, 1 mark each. Both full source pools are preserved: Option 1 - Sell Babyboo to Zebra: Make a lot of money/€1 million on sale / Less responsibility / Better work life balance / More time and energy to focus on So Soft / Reinvest money into So Soft / Start a new business with the €1 million proceeds from the sale of Babyboo | Option 2 - Expand into the Department store: Retain control of the business/core values / Grow her sales and business / Make greater profits / Self-Actualisation / Company could become more valuable / Professional marketing including merchandising, advertising and display / Opportunity for collaboration with other brands or baby products / Access to established customer base", permittedMarks: [0,1,2,3], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "So Soft by Sandra — complete case study",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
+    id: "lcvp-2024-cl-c1a", topicId: "lcvp-link-modules-1-0", conceptId: "c1a",
     section: "C", questionRef: "2024 CL Section C Q1(a)",
     stem: "Marketing is an essential part of business.",
     questionText: "Explain two methods a business enterprise could use to generate ideas.",
-    tariffModel: {"kind":"bestNofParts","notation":"2@2m (1 + 1)","answer":2,"ofParts":11,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Brainstorming","Online research","Solutions to previous problems","Adapt existing products/service","Competition/current trends","Intrapreneurship/staff suggestion box","Surveys/market research/consultants/customers","Ideas from abroad/import substitution","Hobbies/interests","Friends and family","Focus group"]} },
+    { id: "responses", kind: "criterion", verbatim: "Explain two methods a business enterprise could use to generate ideas. 4 marks 2@2m (1 + 1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Explain two methods a business enterprise could use to generate ideas. 4 marks 2@2m (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Brainstorming | 2. Online research | 3. Solutions to previous problems | 4. Adapt existing products/service | 5. Competition/current trends | 6. Intrapreneurship/staff suggestion box | 7. Surveys/market research/consultants/customers | 8. Ideas from abroad/import substitution | 9. Hobbies/interests | 10. Friends and family | 11. Focus group", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c1cii", topicId: "lcvp-link-modules-1-0", conceptId: "ways-business-selling-sportswear-might-promote",
+    id: "lcvp-2024-cl-c1bi", topicId: "lcvp-link-modules-1-1", conceptId: "c1bi",
+    section: "C", questionRef: "2024 CL Section C Q1(b)(i)",
+    stem: "Marketing is an essential part of business. Information, like that in the table below, is available to all businesses. Forecast Growth in Irish Economy Years 2022 2023 2024 2025 % 9.5 2.9 2.6 2.3 (www.centralbank.ie, 2023)",
+    questionText: "What is the term used to describe this type of market research? Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "research-type", kind: "point", verbatim: "Desk/Secondary", marks: 1, contextNote: "Required type of research, 1 mark; explanation is a separate required three-mark component." },
+    { id: "explanation", kind: "criterion", verbatim: "Desk Research is a type of market research that involves collecting/and examining information/that already exists/and is easy to get such as published government reports to get initial ideas about your research topic/helps to make decisions.", marks: 3, contextNote: "Explanation 3@1m. Credit three valid content points in the complete source definition; no additional mandatory phrase set is inferred.", permittedMarks: [0,1,2,3], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original growth table, attribution and question",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
+    id: "lcvp-2024-cl-c1bii", topicId: "lcvp-link-modules-1-1", conceptId: "c1bii",
+    section: "C", questionRef: "2024 CL Section C Q1(b)(ii)",
+    stem: "Marketing is an essential part of business. Information, like that in the table below, is available to all businesses. Forecast Growth in Irish Economy Years 2022 2023 2024 2025 % 9.5 2.9 2.6 2.3 (www.centralbank.ie, 2023)",
+    questionText: "Give one relevant conclusion from the table above.",
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 2,
+    rows: [
+    { id: "conclusion", kind: "criterion", verbatim: "Any relevant conclusion e.g. (must include reference to the table-years or %) • Slowdown in the economy • The forecasted economic growth in the economy has declined • Economy not growing as quickly • Decrease forecasted for the growth of the Irish economy", marks: 2, contextNote: "ONE relevant conclusion, 2 marks (1+1). It MUST refer to the table years or percentages. All four original examples remain visible.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original growth table, attribution and question",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
+    id: "lcvp-2024-cl-c1ci", topicId: "lcvp-link-modules-1-1", conceptId: "c1ci",
+    section: "C", questionRef: "2024 CL Section C Q1(c)(i)",
+    stem: "Marketing is an essential part of business. Promotion is one of the 4Ps of marketing.",
+    questionText: "Explain what is meant by promotion.",
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 2,
+    rows: [
+    { id: "definition", kind: "criterion", verbatim: "Any communication strategy used to inform the target market about the product", marks: 2, contextNote: "Complete original definition; 2 marks (1+1). No extra internal quota is inferred.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
+    id: "lcvp-2024-cl-c1cii", topicId: "lcvp-link-modules-1-1", conceptId: "c1cii",
     section: "C", questionRef: "2024 CL Section C Q1(c)(ii)",
-    stem: "Marketing is an essential part of business.",
+    stem: "Marketing is an essential part of business. Promotion is one of the 4Ps of marketing.",
     questionText: "Outline two ways a business selling sportswear might promote its products.",
-    tariffModel: {"kind":"bestNofParts","notation":"2@2m (1 + 1)","answer":2,"ofParts":6,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Advertising – TV/radio/posters/social media/billboards","Sales Promotion – Buy two, get the second half price, BOGOF","Public Relations – Sponsorship/celebrity endorsement/influencers","Use email promotions","Direct marketing – catalogues etc","Trade fairs"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline two ways a business selling sportswear might promote its products. 4 marks 2@2m (1 + 1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Outline two ways a business selling sportswear might promote its products. 4 marks 2@2m (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Advertising – TV/radio/posters/social media/billboards | 2. Sales Promotion – Buy two, get the second half price, BOGOF | 3. Public Relations – Sponsorship/celebrity endorsement/influencers | 4. Use email promotions | 5. Direct marketing – catalogues etc. | 6. Trade fairs", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c1d", topicId: "lcvp-link-modules-1-4", conceptId: "reasons-business-might-fail",
+    id: "lcvp-2024-cl-c1d", topicId: "lcvp-link-modules-1-1", conceptId: "c1d",
     section: "C", questionRef: "2024 CL Section C Q1(d)",
     stem: "Marketing is an essential part of business.",
     questionText: "Explain three reasons why a business might fail.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@3m (1 + 1 + 1)","answer":3,"ofParts":13,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1 + 1 + 1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Lack of planning","Lack of finance","Poor market research","Lack of availability of skilled work force/badly trained workers","Lack of management skills","Poor location","Slowdown in the economy/ economic factors/recession/high unemployment/government policy e.g. minimum wage","Poor quality product/service/lack of customers","Industrial relations issues","Competition","Poor customer service","Continuity of the business – death of the owner","Not having the correct price point/price too high/too low"]} },
+    { id: "responses", kind: "criterion", verbatim: "Explain three reasons why a business might fail. 9 marks 3@3m (1 + 1 + 1) Reason and 2 valid expansions No repetition of expansions", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Explain three reasons why a business might fail. 9 marks 3@3m (1 + 1 + 1) Reason and 2 valid expansions No repetition of expansions Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Lack of planning | 2. Lack of finance | 3. Poor market research | 4. Lack of availability of skilled work force/badly trained workers | 5. Lack of management skills | 6. Poor location | 7. Slowdown in the economy/ economic factors/recession/high unemployment/government policy e.g. minimum wage | 8. Poor quality product/service/lack of customers | 9. Industrial relations issues | 10. Competition | 11. Poor customer service | 12. Continuity of the business – death of the owner | 13. Not having the correct price point/price too high/too low Each profile is a reason plus TWO valid expansions; no repetition of expansions.", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c2b", topicId: "lcvp-link-modules-1-1", conceptId: "prepare-agenda-first-meeting-plan-organise",
+    id: "lcvp-2024-cl-c2a", topicId: "lcvp-link-modules-1-1", conceptId: "c2a",
+    section: "C", questionRef: "2024 CL Section C Q2(a)",
+    stem: "Your Link Modules class is organising a visit in from a business enterprise.",
+    questionText: "(i) Name the business enterprise you invited to your school. (ii) Explain why you chose to invite this business to your school.",
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "business", kind: "criterion", verbatim: "Name of any business", marks: 2, contextNote: "Name the business YOU invited, 2 or 0. The reason must refer to this same business; no personal model is invented.", permittedMarks: [0,2] },
+    { id: "reason", kind: "criterion", verbatim: "Any valid reason", marks: 2, contextNote: "Explain why YOU chose to invite that SAME business, 2 or 0. No internal 1-mark step is printed.", permittedMarks: [0,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
+    id: "lcvp-2024-cl-c2b", topicId: "lcvp-link-modules-1-1", conceptId: "c2b",
     section: "C", questionRef: "2024 CL Section C Q2(b)",
     stem: "Your Link Modules class is organising a visit in from a business enterprise.",
     questionText: "Prepare the agenda for the first meeting to plan and organise the visit in.",
-    tariffModel: {"kind":"fixed","notation":"5@1m","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Heading AGENDA", marks: 1, contextNote: "1 mark for this, priced on its own beside the list below.", openList: true },
-    { id: "r-2", kind: "anyN", verbatim: "Any 5 of the answers the scheme states", marks: 5, contextNote: "5 answers at 1 mark each.", openList: true, group: {"claimMax":5,"perOption":1,"options":["Election of Officers (Chairperson, secretary, treasurer, PRO)* (compulsory point)","Resources required e.g. location/projector/Wi-Fi","Finance","Action steps/plan of work to complete","Date/time for the visit in","Assign duties/tasks/roles/delegate jobs","Date/Time/Location of next meeting","AOB"]} },
+    { id: "heading", kind: "point", verbatim: "AGENDA", marks: 1, contextNote: "Required heading AGENDA, 1 mark." },
+    { id: "officers", kind: "point", verbatim: "Election of Officers (Chairperson, secretary, treasurer, PRO)* (compulsory point)", marks: 1, contextNote: "COMPULSORY agenda item: election of officers, 1 mark. Four other distinct valid agenda items earn 1 each." },
+    { id: "other-items", kind: "anyN", verbatim: "Other agenda items", marks: 4, contextNote: "Choose FOUR other items across the complete seven-item pool. These cannot replace the required heading or election of officers.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Resources required e.g. location/projector/Wi-Fi","Finance","Action steps/plan of work to complete","Date/time for the visit in","Assign duties/tasks/roles/delegate jobs","Date/Time/Location of next meeting","AOB"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c2c", topicId: "lcvp-link-modules-1-1", conceptId: "different-ways-students-used-ict-when",
+    id: "lcvp-2024-cl-c2c", topicId: "lcvp-link-modules-1-1", conceptId: "c2c",
     section: "C", questionRef: "2024 CL Section C Q2(c)",
     stem: "Your Link Modules class is organising a visit in from a business enterprise.",
     questionText: "Outline three different ways students used ICT when participating in this activity.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m (1 + 1)","answer":3,"ofParts":10,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Internet/social media – to undertake research about the business","Email/mobile phone – to contact the business to arrange their visit/ask the principal for permission","Word processing - to type up their portfolio item","Spreadsheets – to track costs","File Management – to manage the documents created (portfolio item, spreadsheets etc.)","PowerPoint – of the main aspects of the visit","Online meeting/Zoom/Teams/Google meet","Using the school’s communication platforms to spread information about the visit e.g. school app, Microsoft Teams, Google Classroom","Preparation for the visit in by the organising computers, data projectors etc. for the visitor to use","Use printer to print questions/reports/flyers"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline three different ways students used ICT when participating in this activity. 6 marks 3@2m (1 + 1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Outline three different ways students used ICT when participating in this activity. 6 marks 3@2m (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Internet/social media – to undertake research about the business | 2. Email/mobile phone – to contact the business to arrange their visit/ask the principal for permission | 3. Word processing - to type up their portfolio item | 4. Spreadsheets – to track costs | 5. File Management – to manage the documents created (portfolio item, spreadsheets etc.) | 6. PowerPoint – of the main aspects of the visit | 7. Online meeting/Zoom/Teams/Google meet | 8. Using the school’s communication platforms to spread information about the visit e.g. school app, Microsoft Teams, Google Classroom | 9. Preparation for the visit in by the organising computers, data projectors etc. for the visitor to use | 10. Use printer to print questions/reports/flyers", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c2d", topicId: "lcvp-link-modules-1-1", conceptId: "methods-could-be-used-evaluate-visit",
+    id: "lcvp-2024-cl-c2d", topicId: "lcvp-link-modules-1-1", conceptId: "c2d",
     section: "C", questionRef: "2024 CL Section C Q2(d)",
     stem: "Your Link Modules class is organising a visit in from a business enterprise.",
     questionText: "Describe three methods that could be used to evaluate the visit in. Give one reason for each method chosen.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@3m (1 + 1 + 1)","answer":3,"ofParts":7,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1 + 1 + 1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Analyse the success of the activity/were the aims achieved – comparison to the action plan/schedule of time/information received etc. Measure the results against the aims/objectives. This is a good method to choose as it allows you to see clearly if the aims of the activity have been met, discover what we would do differently next time","Group discussion – everyone gets a chance to speak/review of how the team worked/disagreements/how were disputes settled – easy to do/inexpensive/variety of opinions given","Ask teacher/visitor/another adult – can give objective opinion on how they think the event went - This allows the class to practise communication skills If questions are unclear they can be explained It is very easy to organise and carry out There is no cost involved/honest feedback/review of the activity can be received","Survey/Questionnaire – can be given to all parties involved-anonymous/easy to administer/collate results/generally inexpensive/good response rate/objectivity","Compare your performance with other teams/other year groups – will be able to see the similarities and differences. Review teamwork – what teamwork elements worked well/didn’t work well? Did all team members work well as a team? Were all class members aware of their role and function? How were any conflicts handled?","Self-evaluation – students can gain an insight into what was learned/set future goals for improvement/consider what strengths and weaknesses they have – may critique their own future work within a team","Quality of portfolio item written – if you have enough information to complete the portfolio item. This is an easy method to use as class members must produce a report for the Portfolio of Coursework. Reports can be discussed/compared for quality and content"]} },
+    { id: "profile-1", kind: "criterion", verbatim: "Method", marks: 3, contextNote: "THREE matching method + expansion + reason profiles. No repetition of reason allowed. Full original guidance: Analyse the success of the activity/were the aims achieved – comparison to the action plan/schedule of time/information received etc. Measure the results against the aims/objectives. This is a good method to choose as it allows you to see clearly if the aims of the activity have been met, discover what we would do differently next time | Group discussion – everyone gets a chance to speak/review of how the team worked/disagreements/how were disputes settled – easy to do/inexpensive/variety of opinions given | Ask teacher/visitor/another adult – can give objective opinion on how they think the event went - This allows the class to practise communication skills If questions are unclear they can be explained It is very easy to organise and carry out There is no cost involved/honest feedback/review of the activity can be received | Survey/Questionnaire – can be given to all parties involved-anonymous/easy to administer/collate results/generally inexpensive/good response rate/objectivity | Compare your performance with other teams/other year groups – will be able to see the similarities and differences. Review teamwork – what teamwork elements worked well/didn’t work well? Did all team members work well as a team? Were all class members aware of their role and function? How were any conflicts handled? | Self-evaluation – students can gain an insight into what was learned/set future goals for improvement/consider what strengths and weaknesses they have – may critique their own future work within a team | Quality of portfolio item written – if you have enough information to complete the portfolio item. This is an easy method to use as class members must produce a report for the Portfolio of Coursework. Reports can be discussed/compared for quality and content", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Method","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Expansion","marks":1,"permittedMarks":[0,1]},{"id":"component-3","verbatim":"Reason method chosen","marks":1,"permittedMarks":[0,1]}] },
+    { id: "profile-2", kind: "criterion", verbatim: "Method", marks: 3, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Method","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Expansion","marks":1,"permittedMarks":[0,1]},{"id":"component-3","verbatim":"Reason method chosen","marks":1,"permittedMarks":[0,1]}] },
+    { id: "profile-3", kind: "criterion", verbatim: "Method", marks: 3, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Method","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Expansion","marks":1,"permittedMarks":[0,1]},{"id":"component-3","verbatim":"Reason method chosen","marks":1,"permittedMarks":[0,1]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c3a", topicId: "lcvp-link-modules-1-4", conceptId: "key-aspects-local-area",
+    id: "lcvp-2024-cl-c3a", topicId: "lcvp-link-modules-1-4", conceptId: "c3a",
     section: "C", questionRef: "2024 CL Section C Q3(a)",
     stem: "My Own Place encourages change for the future.",
     questionText: "List four key aspects of your local area.",
-    tariffModel: {"kind":"fixed","notation":"4 @ 1m","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Employment Social Services Religion Job Creation agencies Transport Education Principal economic Financial institutions Diversity activities Tourism History Sports and Recreation Arts/Culture/Entertainment Geographical aspects Voluntary Organisations Retail Healthcare", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true },
+    { id: "responses", kind: "anyN", verbatim: "List four aspects of your local area.", marks: 4, contextNote: "FOUR distinct responses at 1 mark each. All 17 original table cells are preserved as separate options.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Employment","Social Services","Religion","Job Creation agencies","Transport","Education","Financial institutions","Principal economic activities","Diversity","Tourism","History","Sports and Recreation","Arts/Culture/Entertainment","Geographical aspects","Voluntary Organisations","Retail","Healthcare"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c3b", topicId: "lcvp-link-modules-1-4", conceptId: "design-suitable-questions-be-used-questionnaire",
+    id: "lcvp-2024-cl-c3b", topicId: "lcvp-link-modules-1-4", conceptId: "c3b",
     section: "C", questionRef: "2024 CL Section C Q3(b)",
-    stem: "My Own Place encourages change for the future.",
+    stem: "My Own Place encourages change for the future. List four key aspects of your local area.",
     questionText: "Design three suitable questions to be used in a questionnaire investigating an aspect mentioned in (a) above.",
-    tariffModel: {"kind":"fixed","notation":"3@2m (0/2)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Three questions relevant to the aspect mentioned in part (a). No repetition of questions/need to be specific to the one aspect only", marks: 6, contextNote: "3 answers at 2 marks each; (0/2) — all or nothing on each answer.", openList: true },
+    { id: "questions", kind: "criterion", verbatim: "Three questions", marks: 6, contextNote: "Three suitable questions about ONE aspect chosen in C3(a), 2 or 0 each. No repetition; each question must be specific to that same aspect. Original guidance: Three questions relevant to the aspect mentioned in part (a). No repetition of questions/need to be specific to the one aspect only.. The source supplies a grid, not completed model questions; no models are invented.", permittedMarks: [0,2,4,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c3c", topicId: "lcvp-link-modules-0-3", conceptId: "benefits-businesses-bring-local-area",
+    id: "lcvp-2024-cl-c3c", topicId: "lcvp-link-modules-1-4", conceptId: "c3c",
     section: "C", questionRef: "2024 CL Section C Q3(c)",
     stem: "My Own Place encourages change for the future.",
     questionText: "Outline three benefits that businesses bring to your local area.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m (1 + 1)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Employment provided in the area which is good for the local economy/raise the standard of living in the area as employees have money to spend","Support local area through sponsorship of local events/donations/use of facilities/community spirit","Fosters a spirit of entrepreneurship in an area/other businesses are attracted to the area","May improve the infrastructure of the area","Other services and supply businesses benefit such as hotels B&Bs, financial services, shops/spin off businesses/tourists","Opportunities provided to students – work experience, visits in, visits out, mentors for school projects","Provides a service/product"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline three benefits that businesses bring to your local area. 6 marks 3@2m (1 + 1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Outline three benefits that businesses bring to your local area. 6 marks 3@2m (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Employment provided in the area which is good for the local economy/raise the standard of living in the area as employees have money to spend | 2. Support local area through sponsorship of local events/donations/use of facilities/community spirit | 3. Fosters a spirit of entrepreneurship in an area/other businesses are attracted to the area | 4. May improve the infrastructure of the area | 5. Other services and supply businesses benefit such as hotels B&Bs, financial services, shops/spin off businesses/tourists | 6. Opportunities provided to students – work experience, visits in, visits out, mentors for school projects | 7. Provides a service/product", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c3d", topicId: "lcvp-link-modules-1-4", conceptId: "issues-might-arise-local-communities-these",
+    id: "lcvp-2024-cl-c3d", topicId: "lcvp-link-modules-1-4", conceptId: "c3d",
     section: "C", questionRef: "2024 CL Section C Q3(d)",
     stem: "My Own Place encourages change for the future.",
     questionText: "Identify three issues that might arise in local communities. Explain how these issues may be overcome.",
-    tariffModel: {"kind":"fixed","notation":"3@3m (1 + 1 + 1)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Explain how these might be overcome", marks: 9, accepts: ["Challenge/Issue 1m + 2 ways to overcome 1m, 1m Challenge/Issue Way to overcome (Examples) Housing/homelessness Discussion with council/politicians Attract new employers to the local Employment/availability of jobs/lack areas/work with education partners to of workers provide training to attract certain industries Lobby transport companies/council to Transport/Infrastructure provide infrastructure/local link buses Education/school places Contact Dept. of Education to increase places Promote environmental awareness in Environment/Litter/pollution the local area/voluntary groups/clean ups/electric car charging points Politicians/Local Lack of facilities Authority/Funding/Fundraise/Donations Social issues Community groups /cameras/available (vandalism/crime/gangs/addiction) funding Any other relevant point"], contextNote: "3 answers at 3 marks each; each split 1 + 1 + 1.", openList: true },
+    { id: "profile-1", kind: "criterion", verbatim: "Challenge/Issue", marks: 3, contextNote: "THREE different issue profiles: issue 1 mark + TWO matching ways to overcome, 1 mark each. Each source row is kept paired. Some printed examples contain only one illustrative way; no second model is invented. Full table: Challenge/Issue → Way to overcome (Examples) | Housing/homelessness → Discussion with council/politicians | Employment/availability of jobs/lack of workers → Attract new employers to the local areas/work with education partners to provide training to attract certain industries | Transport/Infrastructure → Lobby transport companies/council to provide infrastructure/local link buses | Education/school places → Contact Dept. of Education to increase places | Environment/Litter/pollution → Promote environmental awareness in the local area/voluntary groups/clean ups/electric car charging points | Lack of facilities → Politicians/Local Authority/Funding/Fundraise/Donations | Social issues (vandalism/crime/gangs/addiction) → Community groups /cameras/available funding | Any other relevant point", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Challenge/Issue","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"First way to overcome","marks":1,"permittedMarks":[0,1]},{"id":"component-3","verbatim":"Second way to overcome","marks":1,"permittedMarks":[0,1]}] },
+    { id: "profile-2", kind: "criterion", verbatim: "Challenge/Issue", marks: 3, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Challenge/Issue","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"First way to overcome","marks":1,"permittedMarks":[0,1]},{"id":"component-3","verbatim":"Second way to overcome","marks":1,"permittedMarks":[0,1]}] },
+    { id: "profile-3", kind: "criterion", verbatim: "Challenge/Issue", marks: 3, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Challenge/Issue","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"First way to overcome","marks":1,"permittedMarks":[0,1]},{"id":"component-3","verbatim":"Second way to overcome","marks":1,"permittedMarks":[0,1]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c4a", topicId: "lcvp-link-modules-0-1", conceptId: "characteristics-make-person-more-employable",
+    id: "lcvp-2024-cl-c4a", topicId: "lcvp-link-modules-0-1", conceptId: "c4a",
     section: "C", questionRef: "2024 CL Section C Q4(a)",
     stem: "Work experience/shadowing helps students to make decisions about career choices.",
     questionText: "Explain two characteristics that make a person more employable.",
-    tariffModel: {"kind":"bestNofParts","notation":"2@2m (1 + 1)","answer":2,"ofParts":7,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Hard working: productive, hardworking people are better for a business","Good communicator: individuals need to be able to communicate with managers, other workers and customers","Punctual: it is essential that all workers are on time for work","Team player: teamwork is a major feature of any work place, workers need to get on with other team member and also perform their assigned tasks","Shows initiative: employers need workers who can work on their own and do not need constant direction/positive attitude","Honest/trustworthy: it is essential that workers do an honest day’s work for their pay. Do not steal from employer/loyal","Any other relevant characteristic with valid explanations"]} },
+    { id: "responses", kind: "criterion", verbatim: "Explain two characteristics that make a person more employable. 4 marks 2@2m (1 + 1) List is not exhaustive Explanation of the characteristic and why it makes them more employable", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Explain two characteristics that make a person more employable. 4 marks 2@2m (1 + 1) List is not exhaustive Explanation of the characteristic and why it makes them more employable Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Hard working: productive, hardworking people are better for a business | 2. Good communicator: individuals need to be able to communicate with managers, other workers and customers | 3. Punctual: it is essential that all workers are on time for work | 4. Team player: teamwork is a major feature of any work place, workers need to get on with other team member and also perform their assigned tasks | 5. Shows initiative: employers need workers who can work on their own and do not need constant direction/positive attitude | 6. Honest/trustworthy: it is essential that workers do an honest day’s work for their pay. Do not steal from employer/loyal | 7. Any other relevant characteristic with valid explanations", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c4b", topicId: "lcvp-link-modules-0-2", conceptId: "responsibilities-have-work-placement-employer",
+    id: "lcvp-2024-cl-c4b", topicId: "lcvp-link-modules-0-3", conceptId: "c4b",
     section: "C", questionRef: "2024 CL Section C Q4(b)",
     stem: "Work experience/shadowing helps students to make decisions about career choices.",
     questionText: "Explain three responsibilities you have to your work placement employer.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m (1 + 1)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["To work hard/act responsibly/ensure standards/attend training","To turn up on time to make a good impression","To follow Health & Safety instructions/wear PPE/follow rules/keep work area clean and tidy","To dress appropriately/take pride in uniform etc","Be pleasant to work colleagues/customers/show respect/team player","Confidentiality/not disclosing any personal information/GDPR","Honesty/trustworthy/ loyalty to organisation"]} },
+    { id: "responses", kind: "criterion", verbatim: "Explain three responsibilities you have to your work placement employer. 6 marks 3@2m (1 + 1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Explain three responsibilities you have to your work placement employer. 6 marks 3@2m (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. To work hard/act responsibly/ensure standards/attend training | 2. To turn up on time to make a good impression | 3. To follow Health & Safety instructions/wear PPE/follow rules/keep work area clean and tidy | 4. To dress appropriately/take pride in uniform etc. | 5. Be pleasant to work colleagues/customers/show respect/team player | 6. Confidentiality/not disclosing any personal information/GDPR | 7. Honesty/trustworthy/ loyalty to organisation", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c4c", topicId: "lcvp-link-modules-0-4", conceptId: "prepared-work-experience-shadowing-placement",
+    id: "lcvp-2024-cl-c4c", topicId: "lcvp-link-modules-0-3", conceptId: "c4c",
     section: "C", questionRef: "2024 CL Section C Q4(c)",
     stem: "Work experience/shadowing helps students to make decisions about career choices.",
     questionText: "Outline how you prepared for your work experience/shadowing placement.",
-    tariffModel: {"kind":"bestNofParts","notation":"6@1m","answer":6,"ofParts":11,"perPart":1}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 6 of the answers the scheme states", marks: 6, contextNote: "6 answers at 1 mark each.", openList: true, group: {"claimMax":6,"perOption":1,"options":["Do Career Interest test","Investigate the places where it was possible to do work experience","Prepare a CV","Contacted the employer/wrote letter/telephoned/emailed/personal contacts","Handed in Parental Consent form","Gave insurance details/documents to the employer","Researched the type of work to be done/company where placement is to take place/questions I could ask while in the placement/prepare day to day log","Checked the starting/finishing times/confirm dates and times","Make arrangements for travel/lunch/necessary equipment/went to bed early","Underwent relevant training/security checks/garda vetting","Organise suitable work attire"]} },
+    { id: "responses", kind: "anyN", verbatim: "Outline how you prepared for your work experience/shadowing placement. 6 marks 6@1m", marks: 6, contextNote: "Choose any 6 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":6,"perOption":1,"options":["Do Career Interest test","Investigate the places where it was possible to do work experience","Prepare a CV","Contacted the employer/wrote letter/telephoned/emailed/personal contacts","Handed in Parental Consent form","Gave insurance details/documents to the employer","Researched the type of work to be done/company where placement is to take place/questions I could ask while in the placement/prepare day to day log","Checked the starting/finishing times/confirm dates and times","Make arrangements for travel/lunch/necessary equipment/went to bed early","Underwent relevant training/security checks/garda vetting","Organise suitable work attire"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c4di", topicId: "lcvp-link-modules-0-2", conceptId: "important-evaluate-work-experience-shadowing-placement",
+    id: "lcvp-2024-cl-c4di", topicId: "lcvp-link-modules-0-3", conceptId: "c4di",
     section: "C", questionRef: "2024 CL Section C Q4(d)(i)",
     stem: "Work experience/shadowing helps students to make decisions about career choices.",
     questionText: "Why is it important to evaluate your work experience/shadowing placement?",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 1m","answer":3,"ofParts":7,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Evaluation is important as you can reflect on what you have learned/met aims or objectives","It helps you in the future e.g. decide on the career you want/don’t want","Evaluation will identify if you have areas you need to improve for the future/ what went well or not well","To see if the experience can help in any of your Leaving Certificate subjects","To review how you coped with challenges and problems during your placement","Feedback for other students/teacher","To identify how skills and knowledge can help you in your School/Home/ Community/Future"]} },
+    { id: "responses", kind: "anyN", verbatim: "Why is it important to evaluate your work experience/shadowing placement? 3 marks 3 @ 1m", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":3,"perOption":1,"options":["Evaluation is important as you can reflect on what you have learned/met aims or objectives","It helps you in the future e.g. decide on the career you want/don’t want","Evaluation will identify if you have areas you need to improve for the future/ what went well or not well","To see if the experience can help in any of your Leaving Certificate subjects","To review how you coped with challenges and problems during your placement","Feedback for other students/teacher","To identify how skills and knowledge can help you in your School/Home/ Community/Future"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c4dii", topicId: "lcvp-link-modules-0-2", conceptId: "evaluation-prepared-part-work-experience-shadowing",
+    id: "lcvp-2024-cl-c4dii", topicId: "lcvp-link-modules-0-3", conceptId: "c4dii",
     section: "C", questionRef: "2024 CL Section C Q4(d)(ii)",
     stem: "Work experience/shadowing helps students to make decisions about career choices.",
     questionText: "Outline the evaluation you prepared as part of your work experience/shadowing diary.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m (1 + 1)","answer":3,"ofParts":4,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Career aspiration/future studies - Do they still want/does not want to pursue the career and why. How are they going to achieve the career/career plan/course? * Compulsory point","How what is learnt can be applied at - home?","How what is learnt can be applied at - school?","How what is learnt can be applied in the - community?"]} },
+    { id: "career", kind: "criterion", verbatim: "Career aspiration/future studies - Do they still want/does not want to pursue the career and why. How are they going to achieve the career/career plan/course? * Compulsory point.", marks: 2, contextNote: "COMPULSORY career aspirations/future studies response, 2 marks (1+1). Explain YOUR evaluation; no completed personal model is invented.", permittedMarks: [0,1,2] },
+    { id: "other-applications", kind: "criterion", verbatim: "How what is learnt can be applied", marks: 4, contextNote: "TWO other applications, each 2 marks (1+1). These cannot replace the compulsory career/future studies point. Full original guidance: How what is learnt can be applied at - home? | How what is learnt can be applied at - school? | How what is learnt can be applied in the - community?", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c5a", topicId: "lcvp-link-modules-0-1", conceptId: "careers-apprenticeships-can-be-completed",
+    id: "lcvp-2024-cl-c5a", topicId: "lcvp-link-modules-0-2", conceptId: "c5a",
     section: "C", questionRef: "2024 CL Section C Q5(a)",
     stem: "Your Link Modules class has decided to run an Apprenticeship Fair for the students in your school.",
     questionText: "List four careers in which apprenticeships can be completed.",
-    tariffModel: {"kind":"fixed","notation":"4@1m","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Agriculture and Horticulture BioPharma Motor Plumbing Electrical Property Services Engineering Finance/Accounting Recruitment Hairdressing Healthcare Sales Hospitality & Food ICT Public Sector Insurance Logistics Carpentry", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true },
+    { id: "responses", kind: "anyN", verbatim: "List four careers in which apprenticeships can be completed.", marks: 4, contextNote: "FOUR distinct responses at 1 mark each. All 18 original table cells are preserved as separate options.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Agriculture and Horticulture","BioPharma","Motor","Plumbing","Electrical","Property Services","Engineering","Finance/Accounting","Recruitment","Hairdressing","Healthcare","Sales","Hospitality & Food","ICT","Public Sector","Insurance","Logistics","Carpentry"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c5b", topicId: "lcvp-link-modules-0-4", conceptId: "benefits-being-apprentice",
+    id: "lcvp-2024-cl-c5b", topicId: "lcvp-link-modules-0-2", conceptId: "c5b",
     section: "C", questionRef: "2024 CL Section C Q5(b)",
     stem: "Your Link Modules class has decided to run an Apprenticeship Fair for the students in your school.",
     questionText: "Describe three benefits to being an apprentice.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m (1 + 1)","answer":3,"ofParts":12,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Avoid high college costs","Variety in the job","On the job training – hands on experience","Off the job training in education centres – get a chance to mix with other apprentices","Paid while working/learning","Educated by experienced people","Helps make a decision in the area you would like to specialise in as you’ve had hands on experience","Have a formal contract","Certification once the training is completed satisfactorily/Improve CV","Apprenticeship may lead to full time employment once qualified","Allows people to change career whilst still earning","No Leaving Certificate points required for an apprenticeship which makes it easier to get a place"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe three benefits to being an apprentice. 6 marks 3@2m (1 + 1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe three benefits to being an apprentice. 6 marks 3@2m (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Avoid high college costs | 2. Variety in the job | 3. On the job training – hands on experience | 4. Off the job training in education centres – get a chance to mix with other apprentices | 5. Paid while working/learning | 6. Educated by experienced people | 7. Helps make a decision in the area you would like to specialise in as you’ve had hands on experience | 8. Have a formal contract | 9. Certification once the training is completed satisfactorily/Improve CV | 10. Apprenticeship may lead to full time employment once qualified | 11. Allows people to change career whilst still earning | 12. No Leaving Certificate points required for an apprenticeship which makes it easier to get a place", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c5c", topicId: "lcvp-link-modules-0-2", conceptId: "resources-needed-run-apprenticeship-fair-each",
+    id: "lcvp-2024-cl-c5c", topicId: "lcvp-link-modules-1-3", conceptId: "c5c",
     section: "C", questionRef: "2024 CL Section C Q5(c)",
     stem: "Your Link Modules class has decided to run an Apprenticeship Fair for the students in your school.",
     questionText: "Identify the resources needed to run this Apprenticeship Fair. Outline why each resource is needed.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m (1 + 1)","answer":3,"ofParts":6,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Exhibitors – businesses/colleges to come into school and students","Staffing – e.g. need teachers involved to help with organising the event e.g. Career Guidance teacher/Caretakers","Materials – exhibitor booths/refreshments/socket points/free merchandise","Facilities – location of the exhibition/right venue","Finance – attendance fee/sponsorship","Internet and ICT - customise an event page/promotion of the fair/set up registration Any relevant statement why the resource is needed for the Apprenticeship Fair"]} },
+    { id: "profile-1", kind: "criterion", verbatim: "Resource", marks: 2, contextNote: "THREE matched resource/reason profiles, 1+1 each. The reason MUST relate to this Apprenticeship Fair. Full original guidance: Exhibitors – businesses/colleges to come into school and students | Staffing – e.g. need teachers involved to help with organising the event e.g. Career Guidance teacher/Caretakers | Materials – exhibitor booths/refreshments/socket points/free merchandise | Facilities – location of the exhibition/right venue | Finance – attendance fee/sponsorship | Internet and ICT - customise an event page/promotion of the fair/set up registration Any relevant statement why the resource is needed for the Apprenticeship Fair", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Resource","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Why needed","marks":1,"permittedMarks":[0,1]}] },
+    { id: "profile-2", kind: "criterion", verbatim: "Resource", marks: 2, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Resource","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Why needed","marks":1,"permittedMarks":[0,1]}] },
+    { id: "profile-3", kind: "criterion", verbatim: "Resource", marks: 2, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Resource","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Why needed","marks":1,"permittedMarks":[0,1]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c5d", topicId: "lcvp-link-modules-0-2", conceptId: "reasons-employer-run-apprenticeship-programme-their",
+    id: "lcvp-2024-cl-c5d", topicId: "lcvp-link-modules-0-2", conceptId: "c5d",
     section: "C", questionRef: "2024 CL Section C Q5(d)",
     stem: "Your Link Modules class has decided to run an Apprenticeship Fair for the students in your school.",
     questionText: "Explain the reasons why an employer would run an apprenticeship programme in their workplace.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@3m (1 + 1 + 1)","answer":3,"ofParts":5,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Explain reasons why an employer would run an apprenticeship programme in their… — any 3", marks: 9, contextNote: "3 answers at 3 marks each; each split 1 + 1 + 1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Apprentices are trained on the job and upskilled and this reduces training costs/ensures the workers are trained properly","Upskill their own current employees as apprentices have the most up to date skills and knowledge/learn from each other","Cheaper labour – apprentices aren’t paid as much as fully qualified employees/businesses may get a grant","Provides a good image for the business – seen to employ and train local people","Employers get the opportunity to develop and retain high calibre staff through links created with the training colleges/creates loyalty/reduces staff turnover"]} },
+    { id: "responses", kind: "criterion", verbatim: "Explain reasons why an employer would run an apprenticeship programme in their workplace. 9 marks 3@3m (1 + 1 + 1)", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Explain reasons why an employer would run an apprenticeship programme in their workplace. 9 marks 3@3m (1 + 1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Apprentices are trained on the job and upskilled and this reduces training costs/ensures the workers are trained properly | 2. Upskill their own current employees as apprentices have the most up to date skills and knowledge/learn from each other | 3. Cheaper labour – apprentices aren’t paid as much as fully qualified employees/businesses may get a grant | 4. Provides a good image for the business – seen to employ and train local people | 5. Employers get the opportunity to develop and retain high calibre staff through links created with the training colleges/creates loyalty/reduces staff turnover", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c6b", topicId: "lcvp-link-modules-0-4", conceptId: "benefits-employment-employee",
+    id: "lcvp-2024-cl-c6a", topicId: "lcvp-link-modules-0-0", conceptId: "c6a",
+    section: "C", questionRef: "2024 CL Section C Q6(a)",
+    stem: "The working environment should be diverse, equitable and inclusive.",
+    questionText: "Explain what is meant by the term ‘inclusive workplace’.",
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "mix", kind: "point", verbatim: "Mix of people", marks: 1, contextNote: "Required opening component, 1 mark. Original definition: An inclusive workplace is one whereby people of all identities and backgrounds can be themselves and contribute while feeling valued and included. It’s about creating a culture where everyone feels welcomed, has access to opportunities and is supported to thrive." },
+    { id: "expansions", kind: "criterion", verbatim: "3 expansions", marks: 3, contextNote: "THREE expansion points, 1 mark each, in addition to the required mix of people. Complete original guidance: Not discriminated, treated equally due to age/gender/sexuality/family status/marital status/race/beliefs/disabilities Everyone is equal/respected Differences are acknowledged", permittedMarks: [0,1,2,3], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
+    id: "lcvp-2024-cl-c6b", topicId: "lcvp-link-modules-0-0", conceptId: "c6b",
     section: "C", questionRef: "2024 CL Section C Q6(b)",
     stem: "The working environment should be diverse, equitable and inclusive.",
     questionText: "What are the benefits of employment to an employee?",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m (1 + 1)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Earn a salary – to be able to provide a standard of living","You may get benefits-in-kind/company car/travel/shares","Gain experience which may help you to get promoted/change to a better paid job","Learn new skills relevant to the job e.g. communication/interpersonal/teamwork skills","Personal wellbeing - improve your own self-esteem/more confident/self- fulfilment/sociable activity/friendships/quality of life/interpersonal aspect","Job security so you can plan for the future/pension","CV improved by having work/reference/referee/contact for the future"]} },
+    { id: "responses", kind: "criterion", verbatim: "What are the benefits of employment to an employee? 6 marks 3@2m (1 + 1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: What are the benefits of employment to an employee? 6 marks 3@2m (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Earn a salary – to be able to provide a standard of living | 2. You may get benefits-in-kind/company car/travel/shares | 3. Gain experience which may help you to get promoted/change to a better paid job | 4. Learn new skills relevant to the job e.g. communication/interpersonal/teamwork skills | 5. Personal wellbeing - improve your own self-esteem/more confident/self- fulfilment/sociable activity/friendships/quality of life/interpersonal aspect | 6. Job security so you can plan for the future/pension | 7. CV improved by having work/reference/referee/contact for the future", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c6c", topicId: "lcvp-link-modules-0-0", conceptId: "day-working-week-may-soon-be",
+    id: "lcvp-2024-cl-c6c", topicId: "lcvp-link-modules-0-0", conceptId: "c6c",
     section: "C", questionRef: "2024 CL Section C Q6(c)",
     stem: "The working environment should be diverse, equitable and inclusive.",
     questionText: "A four day working week may soon be a reality. Describe three benefits to an employee of a four day working week.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m (1 + 1)","answer":3,"ofParts":6,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Employees get to spend more time with family","Cost saving - less childcare required/less travel costs","Happier employees, greater morale, and engagement","Employees may stay longer with the company which builds up their experience","Healthier life style as less contact with workplace and more time to spend on wellbeing and hobbies/good for mental health","Time to do college courses/upskill/earn money"]} },
+    { id: "responses", kind: "criterion", verbatim: "A four-day working week may soon be a reality. Describe three benefits to an employee of a four-day working week. 6 marks 3@2m (1 + 1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: A four-day working week may soon be a reality. Describe three benefits to an employee of a four-day working week. 6 marks 3@2m (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Employees get to spend more time with family | 2. Cost saving - less childcare required/less travel costs | 3. Happier employees, greater morale, and engagement | 4. Employees may stay longer with the company which builds up their experience | 5. Healthier life style as less contact with workplace and more time to spend on wellbeing and hobbies/good for mental health | 6. Time to do college courses/upskill/earn money", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c6d", topicId: "lcvp-link-modules-0-0", conceptId: "benefits-health-safety-regulations-workplace",
+    id: "lcvp-2024-cl-c6d", topicId: "lcvp-link-modules-0-0", conceptId: "c6d",
     section: "C", questionRef: "2024 CL Section C Q6(d)",
     stem: "The working environment should be diverse, equitable and inclusive.",
     questionText: "Explain three benefits of Health and Safety regulations in the workplace.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@3 (1 + 1 + 1)","answer":3,"ofParts":10,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1 + 1 + 1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Workers are protected from unsafe work practices/less accidents as a result","Workers take responsibility for own safety/reporting H&S incidences","All employees have up to date information/training","Ensures that workers are treated with dignity/happier workplace e.g. no bullying or harassment","Prevents risks to other people visiting the workplace e.g. visitors, customers, suppliers, reps - avoids claims/threat of legal action","Provision of PPE/safeguards on machinery - reduction of insurance costs/less chance of claims","Informed employees/safety statement provided/awareness of responsibilities/emergency plan and procedures/written in all languages of the employees","Prevents damage to the business reputation or brand/also better reputation for corporate responsibility among investors, customers, and communities","Business benefits from increased productivity as the workers are working in a safe environment/less staff turnover/fewer sick days","Compliance with Health and Safety regulations leads to less chance of inspections and therefore less chance your business will be closed down/avoids fines"]} },
+    { id: "responses", kind: "criterion", verbatim: "Explain three benefits of Health and Safety regulations in the workplace. 9 marks 3@3 (1 + 1 + 1) No repetition of points", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Explain three benefits of Health and Safety regulations in the workplace. 9 marks 3@3 (1 + 1 + 1) No repetition of points Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Workers are protected from unsafe work practices/less accidents as a result | 2. Workers take responsibility for own safety/reporting H&S incidences | 3. All employees have up to date information/training | 4. Ensures that workers are treated with dignity/happier workplace e.g. no bullying or harassment | 5. Prevents risks to other people visiting the workplace e.g. visitors, customers, suppliers, reps - avoids claims/threat of legal action | 6. Provision of PPE/safeguards on machinery - reduction of insurance costs/less chance of claims | 7. Informed employees/safety statement provided/awareness of responsibilities/emergency plan and procedures/written in all languages of the employees | 8. Prevents damage to the business reputation or brand/also better reputation for corporate responsibility among investors, customers, and communities | 9. Business benefits from increased productivity as the workers are working in a safe environment/less staff turnover/fewer sick days | 10. Compliance with Health and Safety regulations leads to less chance of inspections and therefore less chance your business will be closed down/avoids fines No repetition of points.", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c7aii", topicId: "lcvp-link-modules-1-3", conceptId: "brief-overview-role-activity",
-    section: "C", questionRef: "2024 CL Section C Q7(a)(ii)",
+    id: "lcvp-2024-cl-c7aii", topicId: "lcvp-link-modules-1-3", conceptId: "c7aii",
+    section: "C", questionRef: "2024 CL Section C Q7(a)",
     stem: "Teamwork is an important part of any enterprise.",
-    questionText: "Give a brief overview of your role in this activity.",
-    tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    questionText: "(i) Name one LCVP team activity in which you participated. (ii) Give a brief overview of your role in this activity.",
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Brief explanation of the role", marks: 2, contextNote: "1 answer at 2 marks each; (0/2) — all or nothing on each answer.", openList: true },
+    { id: "activity", kind: "criterion", verbatim: "Name of the activity", marks: 2, contextNote: "Name ONE LCVP team activity YOU participated in, 2 or 0. Keep the matching role within the same task.", permittedMarks: [0,2] },
+    { id: "role", kind: "criterion", verbatim: "Brief explanation of the role", marks: 2, contextNote: "Briefly explain YOUR role in that SAME activity, 2 or 0. No completed personal activity/role model is printed or invented.", permittedMarks: [0,2] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c7b", topicId: "lcvp-link-modules-1-3", conceptId: "characteristics-effective-team-member",
+    id: "lcvp-2024-cl-c7b", topicId: "lcvp-link-modules-0-0", conceptId: "c7b",
     section: "C", questionRef: "2024 CL Section C Q7(b)",
     stem: "Teamwork is an important part of any enterprise.",
     questionText: "Outline three characteristics of an effective team member.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m (1 + 1)","answer":3,"ofParts":8,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["A good listener/communicator","Willing to do their share/share ideas","Be good at encouraging others to participate","Asking for help from others when needed/offering to help others","Good at keeping deadlines/reach targets/time management","Tolerant of others ideas and views/accepts feedback","Good at recording what was decided, who does what etc","Good decision maker, capable of making good decisions for the benefit of the team"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline three characteristics of an effective team member. 6 marks 3@2m (1 + 1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Outline three characteristics of an effective team member. 6 marks 3@2m (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. A good listener/communicator | 2. Willing to do their share/share ideas | 3. Be good at encouraging others to participate | 4. Asking for help from others when needed/offering to help others | 5. Good at keeping deadlines/reach targets/time management | 6. Tolerant of others ideas and views/accepts feedback | 7. Good at recording what was decided, who does what etc. | 8. Good decision maker, capable of making good decisions for the benefit of the team", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c7c", topicId: "lcvp-link-modules-1-3", conceptId: "ways-employer-can-ensure-effective-teamwork",
+    id: "lcvp-2024-cl-c7c", topicId: "lcvp-link-modules-0-0", conceptId: "c7c",
     section: "C", questionRef: "2024 CL Section C Q7(c)",
     stem: "Teamwork is an important part of any enterprise.",
     questionText: "Describe the ways in which an employer can ensure effective teamwork in their organisation.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@2m (1 + 1)","answer":3,"ofParts":11,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Ensure that each member of the team understands the task/targets/goals","Make sure that the roles and responsibilities of the team are clearly defined","Job rotation to ensure that workers become multi-skilled and understand the role of each member of the team","Adequate resources are made available to complete the task successfully/meeting room","Training provided to upskill team members","Regular review meetings/to monitor progress and take corrective action if necessary/ to help solve conflict","Have a variety of skills on the team so that workers can learn from each other/hire people with teamwork skills","Appoint a competent team leader who encourages and motivates team members","Ensure that all team members’ opinions are heard and valued so everyone feels part of the team","Incentives offered for successful completion of tasks","Engage in team building exercises"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe the ways in which an employer can ensure effective teamwork in their organisation. 6 marks 3@2m (1 + 1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe the ways in which an employer can ensure effective teamwork in their organisation. 6 marks 3@2m (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Ensure that each member of the team understands the task/targets/goals | 2. Make sure that the roles and responsibilities of the team are clearly defined | 3. Job rotation to ensure that workers become multi-skilled and understand the role of each member of the team | 4. Adequate resources are made available to complete the task successfully/meeting room | 5. Training provided to upskill team members | 6. Regular review meetings/to monitor progress and take corrective action if necessary/ to help solve conflict | 7. Have a variety of skills on the team so that workers can learn from each other/hire people with teamwork skills | 8. Appoint a competent team leader who encourages and motivates team members | 9. Ensure that all team members’ opinions are heard and valued so everyone feels part of the team | 10. Incentives offered for successful completion of tasks | 11. Engage in team building exercises", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2024 Common Level — © State Examinations Commission.",
-    id: "lcvp-2024-cl-c7d", topicId: "lcvp-link-modules-1-3", conceptId: "staff-turnover-issue-some-sectors-economy",
+    id: "lcvp-2024-cl-c7d", topicId: "lcvp-link-modules-0-0", conceptId: "c7d",
     section: "C", questionRef: "2024 CL Section C Q7(d)",
-    stem: "Teamwork is an important part of any enterprise. Link Modules Examination Wednesday 1 May Morning 10:00 - 12:30",
+    stem: "Teamwork is an important part of any enterprise.",
     questionText: "Staff turnover is an issue in some sectors of the economy. What can employers do to retain staff? Explain your answers.",
-    tariffModel: {"kind":"bestNofParts","notation":"3@3m (1 + 1 + 1)","answer":3,"ofParts":14,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2024 allocation; complete source guidance retained"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1 + 1 + 1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Pay appropriate wage rates for the work completed","Offer bonuses if targets are achieved/rewards etc","Maintain good working conditions/healthy work environment/work space","Offer flexible working hours/job share/four day working week/full hours","Allow people to work from home","Make sure employees get the required number of holidays","Offer promotions to suitable employees","Have upskilling and training courses periodically","Look after their wellbeing/gym/therapists/free food/yoga sessions/crèche for staff’s children","Have a diverse and inclusive hiring policy","Treat employees with respect, fairness and equality","Provide accommodation/subsidise rent/offer employees assistance","Benefit in kind/non-cash payment to staff such as free or subsidised canteen/ company car/reduction in the price of company products/fuel card","Keep the employees motivated/job rotation/job enrichment/job enlargement/empowerment"]} },
+    { id: "responses", kind: "criterion", verbatim: "Staff turnover is an issue in some sectors of the economy. What can employers do to retain staff? Explain your answers. 9 marks 3@3m (1 + 1 + 1)", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Staff turnover is an issue in some sectors of the economy. What can employers do to retain staff? Explain your answers. 9 marks 3@3m (1 + 1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Pay appropriate wage rates for the work completed | 2. Offer bonuses if targets are achieved/rewards etc. | 3. Maintain good working conditions/healthy work environment/work space | 4. Offer flexible working hours/job share/four day working week/full hours | 5. Allow people to work from home | 6. Make sure employees get the required number of holidays | 7. Offer promotions to suitable employees | 8. Have upskilling and training courses periodically | 9. Look after their wellbeing/gym/therapists/free food/yoga sessions/crèche for staff’s children | 10. Have a diverse and inclusive hiring policy | 11. Treat employees with respect, fairness and equality | 12. Provide accommodation/subsidise rent/offer employees assistance | 13. Benefit in kind/non-cash payment to staff such as free or subsidised canteen/ company car/reduction in the price of company products/fuel card | 14. Keep the employees motivated/job rotation/job enrichment/job enlargement/empowerment", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC LCVP Link Modules 2024 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
