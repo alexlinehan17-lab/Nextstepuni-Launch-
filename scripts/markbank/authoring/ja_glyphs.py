@@ -1,9 +1,11 @@
-"""Recover only the hash-pinned 2017 written PDF's missing ToUnicode glyphs.
+"""Recover missing ToUnicode only in two hash-pinned original Japanese PDFs.
 
 The repair table uses identical embedded TrueType glyph outlines in original
 PDFs and one independently read original-image glyph, bound to its exact
-page, font, glyph ID and origin. Every source path and hash is retained.
-Known characters and every other PDF are unchanged. Missing derivation fails.
+page, font, glyph ID and origin. The 2014 Ordinary CFF scheme uses separately
+reviewed original-image glyph proofs and proven zero-ink spaces. Every source
+path and hash is retained. Known characters and every other PDF are unchanged.
+Missing derivation fails.
 """
 import hashlib
 import json
@@ -11,6 +13,7 @@ from functools import lru_cache
 from pathlib import Path
 
 MANIFEST = Path(__file__).with_name('glyphmap-japanese-2017.json')
+SCHEME_MANIFEST = Path(__file__).with_name('glyphmap-japanese-2014-ol.json')
 
 
 @lru_cache(maxsize=1)
@@ -18,11 +21,18 @@ def manifest():
     return json.loads(MANIFEST.read_text())
 
 
+@lru_cache(maxsize=1)
+def scheme_manifest():
+    return json.loads(SCHEME_MANIFEST.read_text())
+
+
 @lru_cache(maxsize=64)
 def document_repairs(name, modified, size):
-    data = manifest()
     digest = hashlib.sha256(Path(name).read_bytes()).hexdigest()
-    return data if digest == data['sha256'] else None
+    for data in [manifest(), scheme_manifest()]:
+        if digest == data['sha256']:
+            return data
+    return None
 
 
 def repaired_rawdict(page, raw):
