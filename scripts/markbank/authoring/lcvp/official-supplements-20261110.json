@@ -1,0 +1,53 @@
+[
+  {
+    "year": 2010,
+    "fileid": "LC462CCLP000EV.pdf",
+    "officialUrl": "https://www.examinations.ie/archive/markingschemes/2010/LC462CCLP000EV.pdf",
+    "localPath": "tmp/pdfs/lcvp-review/official-supplements/2010-LC462CCLP000EV.pdf",
+    "sha256": "488a5897231de7d8bc7d4ea99b987ec23d5eff05ea9f88539dcf2380843e7b70",
+    "bytes": 208433,
+    "existingLocalAlias": "paper-trail-corpus/markingschemes/2010/LC462CLP000EV.pdf",
+    "aliasSha256": "488a5897231de7d8bc7d4ea99b987ec23d5eff05ea9f88539dcf2380843e7b70",
+    "aliasByteIdentical": true
+  },
+  {
+    "year": 2021,
+    "fileid": "LC462CLP044EV.pdf",
+    "officialUrl": "https://www.examinations.ie/archive/markingschemes/2021/LC462CLP044EV.pdf",
+    "localPath": "tmp/pdfs/lcvp-review/official-supplements/2021-LC462CLP044EV.pdf",
+    "sha256": "879eeb3af548ef46bbdd234f951882afbd9211b9dd9af34ded2b002897459a41",
+    "bytes": 103367
+  },
+  {
+    "year": 2022,
+    "fileid": "LC462CLP044EV.pdf",
+    "officialUrl": "https://www.examinations.ie/archive/markingschemes/2022/LC462CLP044EV.pdf",
+    "localPath": "tmp/pdfs/lcvp-review/official-supplements/2022-LC462CLP044EV.pdf",
+    "sha256": "d91116b1dcc1673849bd7c293c27856c96481aaad0abdbc02a480c6c53e27143",
+    "bytes": 108934
+  },
+  {
+    "year": 2023,
+    "fileid": "LC462CLP044EV.pdf",
+    "officialUrl": "https://www.examinations.ie/archive/markingschemes/2023/LC462CLP044EV.pdf",
+    "localPath": "tmp/pdfs/lcvp-review/official-supplements/2023-LC462CLP044EV.pdf",
+    "sha256": "efd814736f74804071eafbc07816ed6b012e1bd9f1de8f57aefeca905d5daf2b",
+    "bytes": 142844
+  },
+  {
+    "year": 2024,
+    "fileid": "LC462CLP044EV.pdf",
+    "officialUrl": "https://www.examinations.ie/archive/markingschemes/2024/LC462CLP044EV.pdf",
+    "localPath": "tmp/pdfs/lcvp-review/official-supplements/2024-LC462CLP044EV.pdf",
+    "sha256": "5352ea1be46e7bae2917994b0f2f8e38de37fb883e669058d0e16e07e0625409",
+    "bytes": 195533
+  },
+  {
+    "year": 2025,
+    "fileid": "LC462CLP044EV.pdf",
+    "officialUrl": "https://www.examinations.ie/archive/markingschemes/2025/LC462CLP044EV.pdf",
+    "localPath": "tmp/pdfs/lcvp-review/official-supplements/2025-LC462CLP044EV.pdf",
+    "sha256": "bbf38c48081e46adbdfd8e11594ddfb3a43f0388fc49a8fded7edf6705173940",
+    "bytes": 196268
+  }
+]
