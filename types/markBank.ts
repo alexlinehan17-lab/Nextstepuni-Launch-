@@ -469,7 +469,14 @@ export interface SecCardBase extends CardBase {
   /** An explicitly published half-credit condition for the complete priced
    * response. This and wrong-language half credit apply once, not cumulatively.
    * Supported only on fixed point cards; never infer extraneous material. */
-  extraneousMaterialRule?: { multiplier: 0.5; sourceText: string; schemePages: number[] };
+  extraneousMaterialRule?: {
+    multiplier: 0.5;
+    sourceText: string;
+    schemePages: number[];
+    /** Exact source clause when the published condition includes more than
+     * extraneous material. Must occur in sourceText; does not change scoring. */
+    conditionLabel?: string;
+  };
   /** Verbatim from the QUESTION PAPER — not the scheme. Required, always. */
   questionText: string;
   /** Names a separately priced task within a shared printed instruction. */
@@ -1602,6 +1609,10 @@ export function tariffReconciles(card: SecCard): boolean {
   if (card.extraneousMaterialRule && (card.extraneousMaterialRule.multiplier !== 0.5
     || !card.extraneousMaterialRule.sourceText.trim() || !card.extraneousMaterialRule.schemePages.length
     || !card.extraneousMaterialRule.schemePages.every(page => Number.isInteger(page) && page > 0)
+    || (card.extraneousMaterialRule.conditionLabel !== undefined
+      && (!card.extraneousMaterialRule.conditionLabel.trim()
+        || !card.extraneousMaterialRule.sourceText.replace(/\s+/g, ' ').includes(
+          card.extraneousMaterialRule.conditionLabel.trim().replace(/\s+/g, ' '))))
     || !isPointCard(card) || card.tariffModel.kind !== 'fixed' || !!card.mathematicsScale)) return false;
   if (card.answerLanguageRule && (![0, 0.5].includes(card.answerLanguageRule.otherLanguageMultiplier)
     || !card.answerLanguageRule.sourceText.trim() || !card.answerLanguageRule.schemePages.length
