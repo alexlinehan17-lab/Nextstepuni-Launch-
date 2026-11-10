@@ -427,6 +427,43 @@ capped at `MAX_LONG_OPTION_ROWS`), while the five-row cap is for required-recall
   -NSUStudyTimerDemo '{"notifyIn":45,"remaining":1110,"mode":"running"}'` (`mode`: running, paused, countup, done;
   `roomOpen: true` suppresses the in-app banner). See `services/studyTimerDemo.ts`.
 
+### Optional study app blocking — iPhone/iPad
+
+- Alex approved iPhone/iPad first on 10 November. Keep the existing Study Room
+  design. `StudyFocusChoice` uses its existing option row, switch and button;
+  unsupported devices render nothing. No CSS, artwork or planner changes.
+- `useStudyFocusSession` runs in the account-scoped session engine. Wait for
+  `identityReady` before reconciling a native launch, so initial auth restoration
+  does not erase saved choices. Pause, completion, discard and sign-out release
+  the shield; resume/extension reschedules it. Never put this lifecycle in a view.
+- `StudyFocusPlugin` uses individual Screen Time authorization on iOS 16+,
+  requested only by a tap. The system picker returns opaque tokens stored in
+  `group.com.nextstepuni.app.studyfocus`. Only counts/status cross the bridge;
+  never upload tokens, application names or usage. The state file is excluded
+  from device backups. Switching accounts or signing
+  out clears choices. Revoking authorization invalidates tokens and clears them.
+- `StudyFocusMonitor` is a DeviceActivity extension sharing `StudyFocusStore` and
+  its file lock with the app. Register monitoring and persist the generation and
+  deadline BEFORE shielding. Old callbacks cannot clear a newer generation.
+  Errors release this named store only; never clear another feature's settings.
+- DeviceActivity requires intervals of at least 15 minutes. For shorter sessions
+  use an already-ongoing 16-minute monitoring window ending at the actual timer
+  deadline. No usage events are requested. This preserves 5/10-minute sessions
+  and short extensions. Validate this path on signed physical devices before
+  release. Apple delivers interval callbacks when the device is in use; do not
+  promise exact-second cleanup while the device is asleep.
+- Run `ruby scripts/ios/add-study-focus.rb` for project updates. It provisions
+  nothing and is idempotent. The app and monitor need the Family Controls
+  capability and shared App Group; distribution needs Apple's approval for BOTH
+  bundle IDs. Keep the monitor version/build aligned with the app. The existing
+  Live Activity widget does not use Screen Time and needs no new entitlement.
+- Before release: verify real picker/permission handling, blocking selected apps
+  while notes remain available, 5/10/25-minute deadlines, stopwatch cap, pause,
+  resume, extension, force quit, lock/unlock, denied/revoked permission, relaunch
+  and account changes. Unit checks and simulator compilation are not evidence of
+  Screen Time enforcement. See `test/studyFocus*.test.tsx` and the Foundation-only
+  policy checks in `scripts/ios/test-study-focus.swift`.
+
 
 ## Dated study plan — feedback implementation, November 2026
 

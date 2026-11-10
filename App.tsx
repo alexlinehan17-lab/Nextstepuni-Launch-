@@ -932,7 +932,7 @@ const App: React.FC = () => {
 
   return (
     <SettingsContext.Provider value={{ settings, updateSetting, unlockedThemes, unlockedCardStyles }}>
-    <StudySessionProvider uid={studyUid} userProgress={userProgress} allCourses={studentCourses} roomOpen={viewState === 'study-session'}>
+    <StudySessionProvider uid={studyUid} userProgress={userProgress} allCourses={studentCourses} roomOpen={viewState === 'study-session'} identityReady={authResolved}>
     <OfflineBanner />
     <div className="min-h-screen bg-white dark:bg-zinc-950">
       {/* Achievements remain available while account controls live in the sidebar. */}

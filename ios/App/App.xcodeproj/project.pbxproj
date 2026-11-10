@@ -9,9 +9,12 @@
 /* Begin PBXBuildFile section */
 		07F2C725166C70DE7238C336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3585679FB28DBEC3591828AA /* Assets.xcassets */; };
 		0B1620CF43DF8EB1E56CFE73 /* NextStepBridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003D14C342EAF98CF9E1C80F /* NextStepBridgeViewController.swift */; };
+		0CE947674E7CEF1C4B7EFFCE /* StudyFocusStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE068049A92ADEE1C15D2E /* StudyFocusStore.swift */; };
 		143C778B08CB4C075DCBC8B3 /* StudyTimerWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF514625628C86F7BA8BA77 /* StudyTimerWidgetBundle.swift */; };
 		2FAD9763203C412B000D30F8 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2FAD9762203C412B000D30F8 /* config.xml */; };
 		358962C5E9CE9CDE597A144B /* StudyTimerLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BA937F1699505505CD202F /* StudyTimerLiveActivity.swift */; };
+		377C4DAB17CC5144BD40F9FB /* StudyFocusStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE068049A92ADEE1C15D2E /* StudyFocusStore.swift */; };
+		4B899E96AA4A80A8DB7FE480 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7218F86EFC129B60DF0743 /* ManagedSettings.framework */; };
 		4D22ABE92AF431CB00220026 /* CapApp-SPM in Frameworks */ = {isa = PBXBuildFile; productRef = 4D22ABE82AF431CB00220026 /* CapApp-SPM */; };
 		50379B232058CBB4000EE86E /* capacitor.config.json in Resources */ = {isa = PBXBuildFile; fileRef = 50379B222058CBB4000EE86E /* capacitor.config.json */; };
 		504EC3081FED79650016851F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504EC3071FED79650016851F /* AppDelegate.swift */; };
@@ -20,18 +23,37 @@
 		504EC3121FED79650016851F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504EC3101FED79650016851F /* LaunchScreen.storyboard */; };
 		50B271D11FEDC1A000F3C39B /* public in Resources */ = {isa = PBXBuildFile; fileRef = 50B271D01FEDC1A000F3C39B /* public */; };
 		6392FAEF4B70B163B106D565 /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34D77A6AB20F659B1CDF888 /* ActivityKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		64CF8C8845BF15CAA3E102B1 /* StudyFocusPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2F9EA7AFB1C55B37E6ABEF /* StudyFocusPolicy.swift */; };
+		7017310FFC84CEE409E00516 /* StudyFocusPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2F9EA7AFB1C55B37E6ABEF /* StudyFocusPolicy.swift */; };
+		7F0A62F09466A51F254823A9 /* StudyFocusMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811074471426171D51AA90B4 /* StudyFocusMonitor.swift */; };
+		8934E9629448656BA6FEED51 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64F7455484853EC4206BFAA /* DeviceActivity.framework */; };
 		8B2948D88DD4808C8745E10C /* StudyLiveActivityPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23FE3F285D6EE853F7A312C /* StudyLiveActivityPlugin.swift */; };
+		8FDD068A6FB63C7624F51850 /* StudyFocusPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4A21FD8A8C75260401FC60 /* StudyFocusPlugin.swift */; };
+		9A74F97F8348804C64F676CA /* FamilyControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8180C2EFAEE9734A23267850 /* FamilyControls.framework */; };
 		A4C43A592E6A3AF70041A9C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4C43A582E6A3AF70041A9C2 /* GoogleService-Info.plist */; };
+		AF26179ED7F8739FB53D63EE /* StudyFocusMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6B31449D0F13958FC5844F15 /* StudyFocusMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BB01DB7AC89CDA198CFACE09 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE90F5FFD0EE318245977C44 /* SwiftUI.framework */; };
 		BF586B88C7D7D31B0C095C15 /* SignInWithApplePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C8CEFE33101D66FF89C62C /* SignInWithApplePlugin.swift */; };
 		C46C7029CC2E800B17139C36 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B43020F5AA93E27D959BECE /* WidgetKit.framework */; };
+		DDCD1FD7D5AA80ADAE282961 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146C75732AA1386AA4B18E5C /* Foundation.framework */; };
 		E0BE1BE0964B907250D2F384 /* StudyTimerWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9FBE2648781FCDFD8BD6D8A8 /* StudyTimerWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E12AC69195D2CFB0A70E0E72 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7218F86EFC129B60DF0743 /* ManagedSettings.framework */; };
 		E1DCC0BA823D7595AFE3C4DC /* StudyTimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F9607A360C4BB54A262F2 /* StudyTimerAttributes.swift */; };
+		E24CF4BB30FA98FEDF7F7F50 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE90F5FFD0EE318245977C44 /* SwiftUI.framework */; };
+		EAEA908017E41C861EE84DDA /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64F7455484853EC4206BFAA /* DeviceActivity.framework */; };
+		F8C24720EF1A2F0452971034 /* FamilyControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8180C2EFAEE9734A23267850 /* FamilyControls.framework */; };
 		F98DBA8855367668C4631AEC /* StudyTimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F9607A360C4BB54A262F2 /* StudyTimerAttributes.swift */; };
 		FC8EACE00B96C886C3748904 /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34D77A6AB20F659B1CDF888 /* ActivityKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3A7B84F891EF02EED3E7F14A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504EC2FC1FED79650016851F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEB323EE2245C442FFCCC7FE;
+			remoteInfo = StudyFocusMonitor;
+		};
 		D9A05B2F4D0910E9F703DD82 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 504EC2FC1FED79650016851F /* Project object */;
@@ -49,6 +71,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				E0BE1BE0964B907250D2F384 /* StudyTimerWidget.appex in Embed Foundation Extensions */,
+				AF26179ED7F8739FB53D63EE /* StudyFocusMonitor.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,8 +81,11 @@
 /* Begin PBXFileReference section */
 		003D14C342EAF98CF9E1C80F /* NextStepBridgeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NextStepBridgeViewController.swift; sourceTree = "<group>"; };
 		05C8CEFE33101D66FF89C62C /* SignInWithApplePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithApplePlugin.swift; sourceTree = "<group>"; };
+		146C75732AA1386AA4B18E5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		269013C960F4EDA34B493125 /* StudyFocusMonitor.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = StudyFocusMonitor.entitlements; sourceTree = "<group>"; };
 		2FAD9762203C412B000D30F8 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
 		3585679FB28DBEC3591828AA /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F7218F86EFC129B60DF0743 /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
 		50379B222058CBB4000EE86E /* capacitor.config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capacitor.config.json; sourceTree = "<group>"; };
 		504EC3041FED79650016851F /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		504EC3071FED79650016851F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,25 +95,48 @@
 		504EC3131FED79650016851F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B271D01FEDC1A000F3C39B /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
 		63BA937F1699505505CD202F /* StudyTimerLiveActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StudyTimerLiveActivity.swift; sourceTree = "<group>"; };
+		6B31449D0F13958FC5844F15 /* StudyFocusMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StudyFocusMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B43020F5AA93E27D959BECE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		811074471426171D51AA90B4 /* StudyFocusMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StudyFocusMonitor.swift; sourceTree = "<group>"; };
+		8180C2EFAEE9734A23267850 /* FamilyControls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FamilyControls.framework; path = System/Library/Frameworks/FamilyControls.framework; sourceTree = SDKROOT; };
 		958DCC722DB07C7200EA8C5F /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = debug.xcconfig; path = ../debug.xcconfig; sourceTree = SOURCE_ROOT; };
 		989F9607A360C4BB54A262F2 /* StudyTimerAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StudyTimerAttributes.swift; sourceTree = "<group>"; };
+		9EFE068049A92ADEE1C15D2E /* StudyFocusStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StudyFocusStore.swift; sourceTree = "<group>"; };
 		9FBE2648781FCDFD8BD6D8A8 /* StudyTimerWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StudyTimerWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A34D77A6AB20F659B1CDF888 /* ActivityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActivityKit.framework; path = System/Library/Frameworks/ActivityKit.framework; sourceTree = SDKROOT; };
 		A4006195A3E8322A9D940158 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4C43A582E6A3AF70041A9C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AA4A21FD8A8C75260401FC60 /* StudyFocusPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StudyFocusPlugin.swift; sourceTree = "<group>"; };
+		BF2F9EA7AFB1C55B37E6ABEF /* StudyFocusPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StudyFocusPolicy.swift; sourceTree = "<group>"; };
 		CE90F5FFD0EE318245977C44 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		D23FE3F285D6EE853F7A312C /* StudyLiveActivityPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StudyLiveActivityPlugin.swift; sourceTree = "<group>"; };
+		D64F7455484853EC4206BFAA /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
 		FCF514625628C86F7BA8BA77 /* StudyTimerWidgetBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StudyTimerWidgetBundle.swift; sourceTree = "<group>"; };
+		FF81F5F9A5071D09658A72ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		17579510712E1A310E47ABB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDCD1FD7D5AA80ADAE282961 /* Foundation.framework in Frameworks */,
+				F8C24720EF1A2F0452971034 /* FamilyControls.framework in Frameworks */,
+				4B899E96AA4A80A8DB7FE480 /* ManagedSettings.framework in Frameworks */,
+				8934E9629448656BA6FEED51 /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		504EC3011FED79650016851F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4D22ABE92AF431CB00220026 /* CapApp-SPM in Frameworks */,
 				FC8EACE00B96C886C3748904 /* ActivityKit.framework in Frameworks */,
+				9A74F97F8348804C64F676CA /* FamilyControls.framework in Frameworks */,
+				E12AC69195D2CFB0A70E0E72 /* ManagedSettings.framework in Frameworks */,
+				EAEA908017E41C861EE84DDA /* DeviceActivity.framework in Frameworks */,
+				E24CF4BB30FA98FEDF7F7F50 /* SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,10 +153,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E584ABA1F81D183CE21274B /* StudyFocusMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				811074471426171D51AA90B4 /* StudyFocusMonitor.swift */,
+				FF81F5F9A5071D09658A72ED /* Info.plist */,
+				269013C960F4EDA34B493125 /* StudyFocusMonitor.entitlements */,
+			);
+			name = StudyFocusMonitor;
+			path = StudyFocusMonitor;
+			sourceTree = "<group>";
+		};
 		1167FF58259FF644DC5E28DD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				989F9607A360C4BB54A262F2 /* StudyTimerAttributes.swift */,
+				BF2F9EA7AFB1C55B37E6ABEF /* StudyFocusPolicy.swift */,
+				9EFE068049A92ADEE1C15D2E /* StudyFocusStore.swift */,
 			);
 			name = Shared;
 			path = Shared;
@@ -142,6 +204,7 @@
 				1167FF58259FF644DC5E28DD /* Shared */,
 				2177778ADF065D6270B200DE /* StudyTimerWidget */,
 				1EAA355D6F3C7989F3C0AFE8 /* Frameworks */,
+				0E584ABA1F81D183CE21274B /* StudyFocusMonitor */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +213,7 @@
 			children = (
 				504EC3041FED79650016851F /* App.app */,
 				9FBE2648781FCDFD8BD6D8A8 /* StudyTimerWidget.appex */,
+				6B31449D0F13958FC5844F15 /* StudyFocusMonitor.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,6 +233,7 @@
 				50B271D01FEDC1A000F3C39B /* public */,
 				003D14C342EAF98CF9E1C80F /* NextStepBridgeViewController.swift */,
 				D23FE3F285D6EE853F7A312C /* StudyLiveActivityPlugin.swift */,
+				AA4A21FD8A8C75260401FC60 /* StudyFocusPlugin.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -179,6 +244,10 @@
 				6B43020F5AA93E27D959BECE /* WidgetKit.framework */,
 				CE90F5FFD0EE318245977C44 /* SwiftUI.framework */,
 				A34D77A6AB20F659B1CDF888 /* ActivityKit.framework */,
+				146C75732AA1386AA4B18E5C /* Foundation.framework */,
+				8180C2EFAEE9734A23267850 /* FamilyControls.framework */,
+				3F7218F86EFC129B60DF0743 /* ManagedSettings.framework */,
+				D64F7455484853EC4206BFAA /* DeviceActivity.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -216,6 +285,7 @@
 			);
 			dependencies = (
 				2A3DF7D167402578FEF56093 /* PBXTargetDependency */,
+				92EF3F2BE4EA60186FAA7E7D /* PBXTargetDependency */,
 			);
 			name = App;
 			packageProductDependencies = (
@@ -224,6 +294,23 @@
 			productName = App;
 			productReference = 504EC3041FED79650016851F /* App.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BEB323EE2245C442FFCCC7FE /* StudyFocusMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F70232BAD299B07148C8E3E0 /* Build configuration list for PBXNativeTarget "StudyFocusMonitor" */;
+			buildPhases = (
+				F7625FE3213B9DFC222D9371 /* Sources */,
+				17579510712E1A310E47ABB7 /* Frameworks */,
+				82F4C2A3E78AD7F8274F9623 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudyFocusMonitor;
+			productName = StudyFocusMonitor;
+			productReference = 6B31449D0F13958FC5844F15 /* StudyFocusMonitor.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -242,6 +329,26 @@
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 1100;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.FamilyControls = {
+								enabled = 1;
+							};
+						};
+					};
+					BEB323EE2245C442FFCCC7FE = {
+						CreatedOnToolsVersion = 26.3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.FamilyControls = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -263,6 +370,7 @@
 			targets = (
 				504EC3031FED79650016851F /* App */,
 				00848F6287F292C432174727 /* StudyTimerWidget */,
+				BEB323EE2245C442FFCCC7FE /* StudyFocusMonitor */,
 			);
 		};
 /* End PBXProject section */
@@ -279,6 +387,13 @@
 				504EC30D1FED79650016851F /* Main.storyboard in Resources */,
 				2FAD9763203C412B000D30F8 /* config.xml in Resources */,
 				A4C43A592E6A3AF70041A9C2 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F4C2A3E78AD7F8274F9623 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +417,9 @@
 				0B1620CF43DF8EB1E56CFE73 /* NextStepBridgeViewController.swift in Sources */,
 				8B2948D88DD4808C8745E10C /* StudyLiveActivityPlugin.swift in Sources */,
 				E1DCC0BA823D7595AFE3C4DC /* StudyTimerAttributes.swift in Sources */,
+				64CF8C8845BF15CAA3E102B1 /* StudyFocusPolicy.swift in Sources */,
+				377C4DAB17CC5144BD40F9FB /* StudyFocusStore.swift in Sources */,
+				8FDD068A6FB63C7624F51850 /* StudyFocusPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +433,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7625FE3213B9DFC222D9371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7017310FFC84CEE409E00516 /* StudyFocusPolicy.swift in Sources */,
+				0CE947674E7CEF1C4B7EFFCE /* StudyFocusStore.swift in Sources */,
+				7F0A62F09466A51F254823A9 /* StudyFocusMonitor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -323,6 +451,12 @@
 			name = StudyTimerWidget;
 			target = 00848F6287F292C432174727 /* StudyTimerWidget */;
 			targetProxy = D9A05B2F4D0910E9F703DD82 /* PBXContainerItemProxy */;
+		};
+		92EF3F2BE4EA60186FAA7E7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StudyFocusMonitor;
+			target = BEB323EE2245C442FFCCC7FE /* StudyFocusMonitor */;
+			targetProxy = 3A7B84F891EF02EED3E7F14A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -560,6 +694,63 @@
 			};
 			name = Release;
 		};
+		CC144ACE7C110D39D33F5EEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = StudyFocusMonitor/StudyFocusMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 14;
+				DEVELOPMENT_TEAM = LHTS3Y4JLJ;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StudyFocusMonitor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextstepuni.app.StudyFocusMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD07BEC688E7166B878EF629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = StudyFocusMonitor/StudyFocusMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 14;
+				DEVELOPMENT_TEAM = LHTS3Y4JLJ;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StudyFocusMonitor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextstepuni.app.StudyFocusMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -586,6 +777,15 @@
 			buildConfigurations = (
 				7926942900D797A977471408 /* Release */,
 				13C0DB833C2275FCACFF7557 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F70232BAD299B07148C8E3E0 /* Build configuration list for PBXNativeTarget "StudyFocusMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC144ACE7C110D39D33F5EEF /* Release */,
+				FD07BEC688E7166B878EF629 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
