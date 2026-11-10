@@ -4121,5 +4121,197 @@
         0.95
       ]
     }
+  },
+  "ja-2013-ol-1a": {
+    "src": "/exam-figures/japanese/ja-2013-ol-1a.png",
+    "md5": "3f2acb57389928762c384c220a78139f",
+    "alt": "Write the number of the area where you can do the following.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 2,
+      "region": [
+        0.065,
+        0.025,
+        0.95,
+        0.957
+      ]
+    }
+  },
+  "ja-2013-ol-1b": {
+    "src": "/exam-figures/japanese/ja-2013-ol-1b.png",
+    "md5": "dea564cbc0295372bb0428623ace9850",
+    "alt": "In which building (main or annex) and on what floor can you find the following?",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 3,
+      "region": [
+        0.075,
+        0.04,
+        0.95,
+        0.94
+      ]
+    }
+  },
+  "ja-2013-ol-2a-1": {
+    "src": "/exam-figures/japanese/ja-2013-ol-2a-1.png",
+    "md5": "7a414180b9f5fd242026b5e4dacc51b1",
+    "alt": "Match the person with their favourite character.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.065,
+        0.035,
+        0.95,
+        0.235
+      ]
+    }
+  },
+  "ja-2013-ol-2a-2": {
+    "src": "/exam-figures/japanese/ja-2013-ol-2a-2.png",
+    "md5": "b0efb00b644f4ee260aa59379a395560",
+    "alt": "Answer in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.065,
+        0.238,
+        0.95,
+        0.455
+      ]
+    }
+  },
+  "ja-2013-ol-2b": {
+    "src": "/exam-figures/japanese/ja-2013-ol-2b.png",
+    "md5": "9bd8af02c816a6a6d7c4afd3b0088276",
+    "alt": "Write whether the following sentences are True or False. Choose a phrase from the text to support your answer, as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.055,
+        0.455,
+        0.95,
+        0.947
+      ]
+    }
+  },
+  "ja-2013-ol-3a-1": {
+    "src": "/exam-figures/japanese/ja-2013-ol-3a-1.png",
+    "md5": "4e867684679a1e58168597ce58eaa762",
+    "alt": "Complete the grid.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 9,
+      "region": [
+        0.065,
+        0.025,
+        0.9,
+        0.26
+      ]
+    }
+  },
+  "ja-2013-ol-3b": {
+    "src": "/exam-figures/japanese/ja-2013-ol-3b.png",
+    "md5": "5740529532d8cef86d945607c99435c1",
+    "alt": "Circle the correct reading (a, b, c or d) for the following kanji.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 10,
+      "region": [
+        0.065,
+        0.035,
+        0.95,
+        0.52
+      ]
+    }
+  },
+  "ja-2013-ol-3c-1": {
+    "src": "/exam-figures/japanese/ja-2013-ol-3c-1.png",
+    "md5": "a4a8f814764c65568d0e0c88b398ae5e",
+    "alt": "Write the following sentences in the present tense, as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 10,
+      "region": [
+        0.065,
+        0.52,
+        0.95,
+        0.85
+      ]
+    }
+  },
+  "ja-2013-ol-3c-2": {
+    "src": "/exam-figures/japanese/ja-2013-ol-3c-2.png",
+    "md5": "06781ac4a90a067654c324568f3c4fd2",
+    "alt": "Circle the correct particle a, b, or c below, as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 11,
+      "region": [
+        0.065,
+        0.04,
+        0.97,
+        0.35
+      ]
+    }
+  },
+  "ja-2013-ol-4": {
+    "src": "/exam-figures/japanese/ja-2013-ol-4.png",
+    "md5": "f7e26076d2e2e404a78963dbddd8078e",
+    "alt": "Insert the missing words from the box below, as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.065,
+        0.025,
+        0.95,
+        0.957
+      ]
+    }
+  },
+  "ja-2013-ol-5": {
+    "src": "/exam-figures/japanese/ja-2013-ol-5.png",
+    "md5": "549b0c980d3d4e901970e3618a50bb4f",
+    "alt": "Answer ANY 5 of the following 7 questions, writing about yourself in Japanese in the spaces provided.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 13,
+      "region": [
+        0.055,
+        0.03,
+        0.97,
+        0.94
+      ]
+    }
+  },
+  "ja-2013-ol-lb-2-v": {
+    "src": "/exam-figures/japanese/ja-2013-ol-lb-2-v.png",
+    "md5": "995daf35e472260f8b9d722f19edbc3a",
+    "alt": "To make a reservation, you should call:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 3,
+      "region": [
+        0.035,
+        0.887,
+        0.97,
+        0.972
+      ]
+    }
   }
 }

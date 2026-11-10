@@ -6,10 +6,11 @@ export const japaneseAnswerRows = card => [
   ...(card.answerVariants ?? []).flatMap(variant => variant.rows),
 ];
 
-/** One reviewed cloze-bank spelling, never a general Japanese normalization. */
+/** Explicit reviewed cloze-bank spellings, never a general normalization. */
 export function japaneseBoundBankAnswers(card, review) {
   const bindings = (review.sourceAnswerBindings ?? []).filter(binding => binding.cardId === card.id);
   if (!bindings.length) return new Set();
+  if (card.id === 'ja-2013-ol-4') return japanese2013BankAnswers(card, review, bindings);
   const expected = {
     cardId: 'ja-2015-ol-4', answer: '日本りょうり', rowIds: ['r-1', 'r-4'],
     paperSelector: { document: 'paper', page: 11, row: 17, group: 1, text: '日本りょうり' },
@@ -38,6 +39,40 @@ export function japaneseBoundBankAnswers(card, review) {
     throw new Error(`${card.id}: bank spelling lost its row scope or visible original wording`);
   }
   return new Set([expected.answer]);
+}
+
+function japanese2013BankAnswers(card, review, bindings) {
+  const same = (left, right) => JSON.stringify(left) === JSON.stringify(right);
+  const schemeSelectors = [
+    { document: 'scheme', page: 9, row: 10, group: 1, text: 'ともだち/ せんせい/ ２年生/クラス' },
+    { document: 'scheme', page: 9, row: 1, group: null, text: 'Q.4     （30 marks）The same word may not be used twice.' },
+  ];
+  const expected = [
+    { cardId: 'ja-2013-ol-4', answer: '先生', rowIds: ['r-5', 'r-9'],
+      paperSelector: { document: 'paper', page: 12, row: 20, group: 0, text: '先生' }, schemeSelectors },
+    { cardId: 'ja-2013-ol-4', answer: '二年生', rowIds: ['r-2', 'r-9'],
+      paperSelector: { document: 'paper', page: 12, row: 15, group: 1, text: '二年生' }, schemeSelectors },
+  ];
+  if (!same(bindings, expected) || review.sitting !== '2013-ol'
+    || card.kind !== 'question' || card.tariffModel?.kind !== 'fixed'
+    || card.answerVariants?.length || card.rows?.length !== 10
+    || card.sourceEvidence?.component !== 'paper'
+    || !same(card.sourceEvidence?.paperPages, [12]) || !same(card.sourceEvidence?.schemePages, [9])) {
+    throw new Error(`${card.id}: unsupported source-local bank spelling binding`);
+  }
+  for (const binding of expected) {
+    if (![binding.paperSelector, ...binding.schemeSelectors].every(selector => review.selectors.some(actual => same(actual, selector)))) {
+      throw new Error(`${card.id}: bank spelling is not bound to the exact original selectors`);
+    }
+    const matching = card.rows.filter(row => row.kind === 'anyN' && row.group.options.includes(binding.answer));
+    if (!same(matching.map(row => row.id), binding.rowIds)
+      || !matching.every(row => row.contextNote?.includes('せんせい/先生')
+        && row.contextNote.includes('２年生/二年生') && row.contextNote.includes('only once')
+        && row.contextNote.includes(schemeSelectors[0].text))) {
+      throw new Error(`${card.id}: bank spelling lost its row scope or visible original wording`);
+    }
+  }
+  return new Set(expected.map(binding => binding.answer));
 }
 
 /** A selectable route must also bind to this task's reviewed physical pages. */
