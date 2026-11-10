@@ -61,8 +61,8 @@ export function resolveQuizDeck(
 
 /** Questions with native numeric marking controls, including full rubric tasks. */
 export function isQuizCard(card: SecCard): boolean {
-  if (card.totalMarks <= 0 || card.audioMaterial) return false;
-  // Long listening exercises do not fit a quick check. All other question,
+  if (card.totalMarks <= 0 || card.audioMaterial || card.videoMaterial) return false;
+  // Listening and video exercises do not fit a quick check. All other question,
   // source and scoring formats are handled by the native Mark Bank screen.
   return !isPointCard(card) || (card.tariffModel.kind === 'fixed' && card.rows.length > 0
     && card.rows.every(row => row.marks !== null || Boolean(row.group)));

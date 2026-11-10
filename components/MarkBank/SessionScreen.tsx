@@ -87,6 +87,7 @@ import AppliedMathematicsRubricPanel, {
 } from './AppliedMathematicsRubricPanel';
 import MathematicsScalePanel, { mathematicsScaleMarks, type MathematicsScaleCard } from './MathematicsScalePanel';
 import AudioSourcePlayer from './AudioSourcePlayer';
+import VideoSourcePlayer from './VideoSourcePlayer';
 import AccountingAssessment, { accountingMarks, accountingScoreId } from './AccountingAssessment';
 import type { AccountingScoreId } from './AccountingAssessment';
 import BusinessRubricPanel from './BusinessRubricPanel';
@@ -3011,6 +3012,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             )}
 
             {audioMaterial && <AudioSourcePlayer source={audioMaterial} />}
+            {assessmentCard.videoMaterial && <VideoSourcePlayer source={assessmentCard.videoMaterial} />}
             {!printedQuestionReplacesText && (audioMaterial && !listeningKey ? (
               <>
                 <QuestionText text={assessmentCard.questionChoices ? assessmentCard.questionText.split('\n')[0] : assessmentCard.questionText} />
