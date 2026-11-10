@@ -4068,6 +4068,183 @@
           "Required-test startup encountered temporary unavailable shared dependencies. Verified restored pinned local versions and reran the complete required/types/lint remainder successfully using explicit local binaries. No dependency or source mutation."
         ]
       }
+    },
+    {
+      "year": 2012,
+      "level": "higher",
+      "reviewedAt": "2026-11-10",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "auralPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "fullSizeTariffPages": [
+        6,
+        9,
+        13,
+        18,
+        22,
+        23,
+        24
+      ],
+      "independentPracticeTasks": 40,
+      "sourceReviewedSupportedTasks": 39,
+      "writtenTasks": 20,
+      "listeningTasks": 20,
+      "supportedWrittenTasks": 19,
+      "printedWrittenMarks": 220,
+      "printedListeningMarks": 80,
+      "supportedPracticeMarks": 296,
+      "sourceLeafTotal": 302,
+      "newCards": 39,
+      "correctedCards": 0,
+      "previousIdsPreserved": 199,
+      "sourceReview": "partial:39 supported tasks; C1Q2(ii) allocation conflict remains open",
+      "heldTasks": [
+        {
+          "unit": "C1Q2(ii)",
+          "paperPages": [
+            3
+          ],
+          "schemePages": [
+            6
+          ],
+          "sourceRate": "2 x 2 = 6",
+          "reason": "Both original question and scheme request two details, but scheme prints2x2=6. No invented third response, silent change, exclusion or full sitting completion."
+        }
+      ],
+      "diagnosedReaderIssues": [
+        "All 52 original pages visually inspected before authoring. Original PDFs are unchanged.",
+        "C1 reading paper40, LA1 6 and CA1 4 yield50. Scheme Q2(ii) explicitly prints 2x2=6, so leaf totals4/6/4/6/4/4/6/8 sum42. Question asks two details and compulsory mother sad/unhappy/not happy. Unresolved allocation conflict: do not silently replace6 with4 or invent third answer.",
+        "C1 Q1(ii) must refer to both girls, cannot attain full marks with only one. Coordinator independently reviewed p5: on the integer 0–6 scale, the explicit prohibition on full marks permits a derived upper ceiling of 5 when only one girl is addressed. This is not a printed fixed deduction or awarded score; lower totals and zero remain unchanged. Preserve named partials and no-award phrases. General repeated information best answer only, inferred unstated elements0, synthetic brother+sister stilltwo concepts.",
+        "LA1 three case examples2 each, accepts nominative or requested case, instrumental одним explicitly1. No exemplar answer pool printed; use source criteria, no invented samples. CA1 any two of four topics, two details each1, explicitly accepts both/either language.",
+        "C2 four summaries max10 each: original scheme p9 permits four details2 + discretion2 OR five details2 because the exam paper omitted the general rubric. Must preserve both alternative routes without adding maxima. Russian answers expressly unpenalised. Main and secondary detail pools retained; general intelligible partial1; incomplete section/subsection discretionmax1.",
+        "C2 Q3 requires both exhibits and importance. Q2 upward movement/height/hill1. Do not treat secondary details as additional unrestricted discretion slots.",
+        "Paper p8 heading Language awareness10 covers two tasks; scheme explicitly5 for travel-word task and5 infinitives. Travel answers1 each, nouns/verbs/adjectives permitted, text or dictionary form, walking0, no printed exemplar pool. Infinitives1, correct aspect; найти vs printed penalise наити kept exact.",
+        "SD10x2. Source explicitly do not penalise same number twice. Rows1/3/7 accept4,6,9 each; others8/7/10/5/2/1/3. Do not impose unique-use/swap constraints.",
+        "GR15x2, no partial-capitalization rule printed this year. Includes congratulated past/present alternatives, two distinct university positions; lift original full forms.",
+        "SE six complete topics, C10/E20,2/detail, introductory opinionmax2, title omission-1 content. LowerE14 when C<=5 except title deduction or <25words. LowerA9-14 conditional allowed range (9-10/11-12/13-14), softsign1 or2.",
+        "GW four complete choices (two narrative routes, interview, discussion) within one choice card, C15/E15/TC10. Source labels categories per route,1/content detail and at least one each, no invented category prices. Interview five category rows each says Question/Answer1; preserve as published, do not reinterpret as five one-mark allocation. LowerE10 when C<=7 or <60words; LowerA7-12 with source p18 middle9-11 overlapping11-12, prose9/10. Softsign2.",
+        "Listening general2/detail; noninvalidating excess and wrong-place answers accepted. Written p3 expressly exempts listening wrong-language penalties, though listening p20 has no separate accept-Russian bullet. Do not inherit other years blindly.",
+        "Listening quotas L1 five tasks2 each; L2 2/3/2/3; L3 1/2/2/2/1/2; L4 five tasks2 each. All section totals20.",
+        "L1 DeNiro context/judge2, mere presence1, acting0; festival Estonia/Tallin1, birthday irrelevant0; Dovlatov correspondent and3newspapers partial1. Preserve exact alternatives.",
+        "L2 Q2 has bracketed [2 details of:2004+(Meteor)award+bestfolk/traditionalsinger] and [full marks for any two of:in2011+IrishTV+documentary+owncompositions+EasterRising1916] within global three-detail quota. Do not price nested atoms as independent full details. Young-for-career27 accepted, bare27 rejected. Named partials1 retained.",
+        "L2 Q4 exact source:2venue+2time+2price; if a category scores1, another can score3. Requires reviewed compensatory scoring, not unrestricted3percategory or arbitrary detail pooling. Full-size p24 inspected. No implied fractional atom tariffs.",
+        "Original source conflicts/model requirements reported to root. No browser/audio-playback QA claim.",
+        "Structured source draft verifies all40 original question/answer blocks. Source leaf totals302 versus printed300 remain unresolved. Guided-writing holiday prompt uses present tense in paper but past in scheme; preserve both without silently changing the student prompt. Scheme content/footer overlap requires exact footer removal rather than a y760 cutoff.",
+        "10 November independent coordinator review of original p24: each bracketed Pauline award/documentary entry is one outer two-mark response requiring two inner details. Three distinct manual 0/1/2 responses preserve full pools and named partials; no 1 mark is inferred for an arbitrary lone bracket atom. Bare age remains zero.",
+        "Four literal multi-page quotations were split at independently verified original boundaries (p5/6,p7/8,p9/10,p16/17) so each verified slice remains contiguous despite intervening bilingual footer text. Exact recombination preserves every word; original source blocks remain complete. No source verifier relaxation."
+      ],
+      "independentReview": {
+        "reviewers": [
+          "Codex coordinator"
+        ],
+        "findings": [
+          "Confirmed original C1Q2(ii) arithmetic conflict.",
+          "Confirmed original both-girls prohibition; five is a derived upper ceiling on the integer0–6 grid, not an award or fixed deduction.",
+          "Confirmed literal CA1 both/either language without named pair.",
+          "Confirmed both summary routes and incomplete discretion cap.",
+          "Confirmed category compensation on physicalp24 and two inner components per bracketed Pauline full answer."
+        ]
+      },
+      "validation": {
+        "status": "passed for all 39 supported tasks; C1Q2(ii) allocation remains open",
+        "browserQa": "pending; root integration owns native UI QA",
+        "sittingCompletion": false,
+        "heldNumericTasks": [
+          "C1Q2(ii)"
+        ],
+        "sourceSlicesVerified": 380,
+        "combinedSourceSlicesVerified": 10992,
+        "mandatoryPythonSourceTestsPassed": 53,
+        "focusedTestsPassed": 143,
+        "requiredTestsPassed": 637,
+        "requiredTestFiles": 41,
+        "russianCoverageTestsPassed": 3,
+        "appTypecheck": "passed",
+        "scopedTestTypecheck": "passed",
+        "targetedLint": "passed",
+        "productionBuild": "passed",
+        "productionBuildSeconds": 155.0,
+        "deterministicRegenerations": 2,
+        "all1153PriorReviewedCardsUnchanged": true,
+        "all1153PriorAuthoredRecordsUnchanged": true,
+        "otherSubjectsPreserved": true,
+        "decodedNonRussianAtlasPreserved": true,
+        "nonRussianIndexBytesPreserved": true,
+        "sittingOpenTasks": 1,
+        "sittingExcludedTasks": 0,
+        "sittingOrphans": 0,
+        "sourceGateCorrection": "Four quotations crossing bilingual page footers were split at independently verified page boundaries. Exact recombination preserves all words; all53 mandatory original-source cases and the unchanged verifier then passed."
+      },
+      "totalReconciliation": {
+        "nominalExamTotal": 300,
+        "sourcePricedSupported": 296,
+        "sourcePrintedHeld": 6,
+        "allSourceLeaves": 302,
+        "readingLeaves": 42,
+        "readingHeading": 40,
+        "languageCulture": 10,
+        "remainingBlocks": [
+          50,
+          100,
+          80
+        ],
+        "reason": "C1Q2(ii) explicitly prints2x2=6 while requiring two details. Preserve every printed boundary; do not assign a replacement4 to that held task."
+      }
     }
   ]
 }

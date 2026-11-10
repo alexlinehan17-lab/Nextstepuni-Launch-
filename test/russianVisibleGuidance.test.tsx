@@ -13,6 +13,62 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('shows the 2012 derived both-girls ceiling without automatically awarding five',async()=>{
+    reveal('c1-1-ii','hl',2012);
+    await waitFor(()=>expect(screen.getByText(/not a printed award or a fixed one-mark deduction/)).toBeVisible());
+    for(const n of [1,2,3]){
+      fireEvent.click(screen.getByRole('button',{name:`Distinct detail ${n}`}));
+      fireEvent.click(screen.getByRole('button',{name:`Set Distinct detail ${n} to 2 marks`}));
+    }
+    await waitFor(()=>expect(screen.getByText(/placement is 6 of 6 marks/)).toBeVisible());
+    fireEvent.click(screen.getByRole('checkbox',{name:'The response refers to only one girl’s feelings.'}));
+    await waitFor(()=>expect(screen.getByText(/placement is 5 of 6 marks/)).toBeVisible());
+    fireEvent.click(screen.getByRole('checkbox',{name:'The response refers to only one girl’s feelings.'}));
+    await waitFor(()=>expect(screen.getByText(/placement is 6 of 6 marks/)).toBeVisible());
+  });
+  it('shows and scores both 2012 summary routes with the scoped incomplete cap',async()=>{
+    reveal('c2-3','hl',2012);
+    await waitFor(()=>expect(screen.getByRole('button',{name:'Four details plus discretionary marks'})).toBeVisible());
+    const standard=screen.getByRole('button',{name:'Four details plus discretionary marks'}),five=screen.getByRole('button',{name:'Five details without discretionary marks'});
+    const standardSection=standard.closest('section'),fiveSection=five.closest('section');
+    if(!standardSection||!fiveSection)throw new Error('routes');
+    fireEvent.click(standard);
+    for(const n of [1,2,3,4])fireEvent.click(within(standardSection).getByRole('button',{name:`Set Distinct detail ${n} to 2 marks`}));
+    fireEvent.click(within(standardSection).getByRole('button',{name:'Set Discretionary marks to 2 marks'}));
+    await waitFor(()=>expect(screen.getByText(/placement is 10 of 10 marks/)).toBeVisible());
+    const flag=screen.getByRole('checkbox',{name:/If a candidate fails to answer all sections/});fireEvent.click(flag);
+    await waitFor(()=>expect(screen.getByText(/placement is 9 of 10 marks/)).toBeVisible());
+    fireEvent.click(standard);expect(flag).toBeDisabled();fireEvent.click(five);
+    for(const n of [1,2,3,4,5])fireEvent.click(within(fiveSection).getByRole('button',{name:`Set Distinct detail ${n} to 2 marks`}));
+    await waitFor(()=>expect(screen.getByText(/placement is 10 of 10 marks/)).toBeVisible());
+    expect(screen.getByText(/BOTH the exhibits and their importance/)).toBeVisible();
+    expect(screen.queryByRole('checkbox',{name:'All answers answered in another language'})).not.toBeInTheDocument();
+  });
+  it('shows the original 2012 category compensation and keeps an invalid increase clearable',async()=>{
+    reveal('l2-4','hl',2012);
+    await waitFor(()=>expect(screen.getByRole('button',{name:'Venue'})).toBeVisible());
+    const sections=['Venue','Time','Price'].map(name=>{
+      const button=screen.getByRole('button',{name}),section=button.closest('section');if(!section)throw new Error(name);
+      fireEvent.click(button);fireEvent.click(within(section).getByRole('button',{name:/^Claim 2 marks for/}));return section;
+    });
+    expect(within(sections[0]).getByRole('button',{name:/^Claim 3 marks for/})).toBeDisabled();
+    fireEvent.click(within(sections[2]).getByRole('button',{name:/^Claim 1 marks for/}));
+    fireEvent.click(within(sections[0]).getByRole('button',{name:/^Claim 3 marks for/}));
+    await waitFor(()=>expect(screen.getByText(/placement is 6 of 6 marks/)).toBeVisible());
+    fireEvent.click(within(sections[2]).getByRole('button',{name:/^Clear 1 marks for/}));
+    await waitFor(()=>expect(screen.getByText(/placement is 4 of 6 marks/)).toBeVisible());
+    expect(screen.getByText(/Review the increased category marks/)).toBeVisible();
+    expect(within(sections[0]).getByRole('button',{name:/^Clear 3 marks for/})).toBeEnabled();
+    expect(screen.getByText(/No per-word or per-line allocation is inferred/)).toBeVisible();
+  });
+  it('shows the 2012 cultural language exception and holiday tense discrepancy',async()=>{
+    reveal('ca1','hl',2012);
+    await waitFor(()=>expect(screen.getByText(/English column asks for English; the Irish column asks for Irish/)).toBeVisible());
+    expect(screen.queryByRole('checkbox',{name:'All answers answered in another language'})).not.toBeInTheDocument();
+    cleanup();reveal('gw','hl',2012);
+    await waitFor(()=>expect(screen.getByText(/holiday blog prompt uses present-tense requirements/)).toBeVisible());
+    expect(screen.getAllByText(/What you did/)[0]).toBeVisible();
+  });
   it('shows 2013 two-places wording alongside three independent detail placements',async()=>{
     reveal('c1-3-ii','hl',2013);
     await waitFor(()=>expect(screen.getByText(/The question requires details about TWO PLACES/)).toBeVisible());

@@ -11,6 +11,25 @@ from pathlib import Path
 
 
 def reviewed_keys(year, level):
+    if (year, level) == (2012, 'hl'):
+        # Independent 52-page visual census:20 written +20 listening.
+        # C1Q2(ii) remains in the denominator despite its unresolved 2x2=6.
+        root=Path(__file__).resolve().parents[3]/'examiner-reports/russian'
+        for relative,digest in {
+            'papers/2012-hl-000-paper.pdf':'b7757711e6c73bd6f4d7648501364cb252d771bce02177a4c52893137c6ff04a',
+            'papers/2012-hl-A00-paper.pdf':'6391789ba2e09bca4df17e74473f2355d32c0fa11516b9e824bebb82aad8efad',
+            'schemes/2012-hl.pdf':'eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe',
+        }.items():assert hashlib.sha256((root/relative).read_bytes()).hexdigest()==digest
+        keys=[('C1',q,None,r) for q,rs in [(1,('i','ii')),(2,('i','ii','iii')),(3,('i','ii')),(4,(None,))] for r in rs]
+        keys += [('C2',q,None,None) for q in (1,2,3,4)]+[(u,None,None,None) for u in ('LA1','CA1')]
+        keys += [('LA2',q,None,None) for q in (1,2)]+[(u,q,None,None) for u,q in [('SD',3),('GR',1),('SE',2),('GW',3)]]
+        assert len(keys)==20
+        keys += [('L1',q,None,r) for q,r in [(1,None),(2,None),(3,'i'),(3,'ii'),(4,None)]]
+        keys += [('L2',q,None,None) for q in (1,2,3,4)]
+        keys += [('L3',q,None,r) for q in (1,2,3) for r in ('i','ii')]
+        keys += [('L4',q,None,r) for q,r in [(1,None),(2,'i'),(2,'ii'),(3,None),(4,None)]]
+        assert len(keys)==len(set(keys))==40
+        return set(keys)
     if (year, level) == (2013, 'hl'):
         # Independent 44-page visual census. The conflicting CA1 allocation
         # remains in this denominator even while its runtime task is held.
