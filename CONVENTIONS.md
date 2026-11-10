@@ -414,6 +414,13 @@ capped at `MAX_LONG_OPTION_ROWS`), while the five-row cap is for required-recall
   `ios/App/Shared/StudyTimerAttributes.swift`, compiled into both targets. Project changes go through
   `scripts/ios/add-study-timer-widget.rb` (xcodeproj gem), not hand edits. Its colours are fixed per colour scheme
   inside the view: asset-catalog colours were resolved in two appearances on the iOS 26 Lock Screen.
+- **One timer limit across app and native UI.** `StudyActivityState.totalSeconds` includes the open-ended
+  session's four-hour cap. Swift's `timerEndsAt` supplies both the system clock range and the ActivityKit
+  stale deadline, including when JavaScript is suspended. A stale stopwatch says "Ready to log".
+- **Accept one extension per completion.** `useStudySession` claims an extension synchronously before
+  React renders again. Repeated requests must not inflate saved minutes or disagree with the deadline;
+  the guard resets when the extended countdown completes. Keep interruption/relaunch regressions in
+  `test/studyTimerInterruption.test.tsx` alongside extension and notification coverage.
 - **Release bumps:** the extension carries its own `MARKETING_VERSION` / `CURRENT_PROJECT_VERSION` (Debug and
   Release). Bump all four with the app's or App Store Connect flags the mismatch.
 - **Simulator check without an account** (Debug builds only): `xcrun simctl launch booted com.nextstepuni.app

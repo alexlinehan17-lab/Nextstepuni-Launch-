@@ -66,6 +66,60 @@ beforeEach(() => {
 afterEach(() => vi.useRealTimers());
 
 describe('Keep going', () => {
+  test('repeated five-minute extensions save one session without counting the time spent deciding', async () => {
+    const { result } = renderHook(() => useStudySession(UID, {}, []));
+    act(() => { result.current.startSession('Irish', 'practice', 25); });
+    act(() => { vi.advanceTimersByTime(25 * MINUTE); });
+    act(() => { vi.advanceTimersByTime(7 * MINUTE); });
+    act(() => { expect(result.current.extendSession(5)).toBe(true); });
+    expect(result.current.endsAt).toBe(NOW + 37 * MINUTE);
+    act(() => { vi.advanceTimersByTime(5 * MINUTE); });
+    act(() => { expect(result.current.extendSession(5)).toBe(true); });
+    act(() => { vi.advanceTimersByTime(5 * MINUTE); });
+
+    expect(result.current.elapsedSeconds).toBe(35 * 60);
+    expect(result.current.totalDuration).toBe(35 * 60);
+    expect(result.current.plannedMinutes).toBe(25);
+    await act(async () => { await result.current.saveSession(0); });
+    expect(savedRecord()).toMatchObject({ actualSeconds: 35 * 60, plannedMinutes: 25, extendedMinutes: 10, extensionBonus: 10 });
+    expect(mocks.batchSet.mock.calls.filter(([ref]) => String(ref.path).includes('/sessions/'))).toHaveLength(1);
+  });
+
+  test('a rapid duplicate extension cannot add minutes that the countdown never runs', async () => {
+    const { result } = renderHook(() => useStudySession(UID, {}, []));
+    act(() => { result.current.startSession('Irish', 'practice', 25); });
+    act(() => { vi.advanceTimersByTime(25 * MINUTE); });
+    act(() => {
+      expect(result.current.extendSession(5)).toBe(true);
+      expect(result.current.extendSession(5)).toBe(false);
+    });
+    expect(result.current.extendedMinutes).toBe(5);
+    act(() => { vi.advanceTimersByTime(5 * MINUTE); });
+    expect(result.current.phase).toBe('complete');
+    expect(result.current.elapsedSeconds).toBe(result.current.totalDuration);
+    await act(async () => { await result.current.saveSession(0); });
+    expect(savedRecord()).toMatchObject({ actualSeconds: 30 * 60, plannedMinutes: 25, extendedMinutes: 5, extensionBonus: 10 });
+  });
+
+  test('pausing and reopening an extension preserves its remaining time and early-finish total', async () => {
+    const first = renderHook(() => useStudySession(UID, {}, []));
+    act(() => { first.result.current.startSession('Irish', 'practice', 25); });
+    act(() => { vi.advanceTimersByTime(25 * MINUTE); });
+    act(() => { first.result.current.extendSession(5); });
+    act(() => { vi.advanceTimersByTime(2 * MINUTE); });
+    act(() => { first.result.current.pauseSession(); });
+    first.unmount();
+    vi.setSystemTime(Date.now() + 10 * MINUTE);
+    const restored = renderHook(() => useStudySession(UID, {}, []));
+    expect(restored.result.current.phase).toBe('paused');
+    expect(restored.result.current.elapsedSeconds).toBe(27 * 60);
+    act(() => { restored.result.current.resumeSession(); });
+    act(() => { vi.advanceTimersByTime(MINUTE); });
+    act(() => { expect(restored.result.current.endSession()).toBe(true); });
+    await act(async () => { await restored.result.current.saveSession(0); });
+    expect(savedRecord()).toMatchObject({ actualSeconds: 28 * 60, extendedMinutes: 5, extensionBonus: 0 });
+  });
+
   test('adds time to the same session and pays a bonus for finishing it', async () => {
     const { result } = renderHook(() => useStudySession(UID, {}, []));
     act(() => { result.current.startSession('Irish', 'practice', 25); });
