@@ -17,14 +17,15 @@ class Original2013HigherSources(unittest.TestCase):
 
     def get(self,suffix):return copy.deepcopy(next(c for c in self.cards if c['id']=='ru-2013-hl-'+suffix))
 
-    def test_39_supported_tasks_keep_conflicting_cultural_task_open(self):
+    def test_all_40_original_asks_are_covered_with_cultural_numeric_conflict_retained(self):
         verify(self.cards);keys=set()
         for c in self.cards:
             ref=parse_ref(c['questionRef']);self.assertIsNotNone(ref)
             keys.update((ref['section'],ref['q'],letter,roman) for letter,roman in ref['paths'])
         census=reviewed_keys(2013,'hl');self.assertEqual(len(census),40)
-        self.assertEqual(census-keys,{('CA1',None,None,None)})
-        self.assertEqual(len(keys),39);self.assertEqual(sum(c['totalMarks'] for c in self.cards),292)
+        self.assertEqual(census,keys)
+        self.assertEqual(len(keys),40)
+        self.assertEqual(sum(c['totalMarks'] for c in self.cards if c['section']!='CA1'),292)
 
     def test_published_supported_cards_equal_original_derivation(self):
         root=Path(__file__).resolve().parents[3]
@@ -47,16 +48,38 @@ class Original2013HigherSources(unittest.TestCase):
         finally:
             for d in docs.values():d.close()
 
-    def test_cultural_paper_scheme_conflict_is_preserved_without_runtime_card(self):
+    def verify_cultural_original(self,card):
         docs,source=source_records()
         try:
             c=next(c for c in source['tasks'] if c['unit']=='CA1')
             self.assertEqual((c['paperTotal'],c['publishedTotal']),(8,4))
             self.assertIn(normal('Assign 1 mark for each relevant detail 2 х 2 = 4'),normal(c['publishedSourceBlock']))
             self.assertIn(normal('Freagair i nGaeilge nó i Rúisis'),normal(docs['paper'][4].get_text()))
-            self.assertFalse(any(c['id']=='ru-2013-hl-ca1' for c in self.cards))
+            self.assertEqual(card['questionText'],c['question'])
+            self.assertIn(normal(card['questionText']),normal(docs['paper'][4].get_text(clip=fitz.Rect(295,30,580,793))))
+            self.assertEqual(card['review']['questionPages'],[5])
+            self.assertEqual(card['review']['schemePages'],[5])
+            self.assertEqual(card['totalMarks'],8)
+            self.assertEqual(card['tariffModel'],{'kind':'questionTotal'})
+            self.assertEqual(len(card['rows']),1)
+            self.assertEqual(card['rows'][0]['verbatim'],c['publishedSourceBlock'])
+            self.assertIsNone(card['rows'][0]['marks'])
+            self.assertNotIn('answerLanguageRule',card)
+            self.assertIn('not an agreed scoring maximum',card['rows'][0]['contextNote'])
         finally:
             for d in docs.values():d.close()
+
+    def test_cultural_original_options_and_conflicting_totals_survive_as_unpriced_review(self):
+        self.verify_cultural_original(self.get('ca1'))
+
+    def test_cultural_omitted_option_invented_allocation_and_wrong_page_are_rejected(self):
+        for mutation in [lambda c:c.update(questionText=c['questionText'].replace('Санкт-Петербург','')),
+                         lambda c:c['rows'][0].update(marks=4),
+                         lambda c:c['rows'][0].update(verbatim='Assign two marks for each relevant detail.'),
+                         lambda c:c['review'].update(schemePages=[4]),
+                         lambda c:c.update(answerLanguageRule={'otherLanguageMultiplier':0})]:
+            card=self.get('ca1');mutation(card)
+            with self.assertRaises(AssertionError):self.verify_cultural_original(card)
 
     def test_two_places_wording_and_explicit_two_mark_scale_are_both_original(self):
         docs,source=source_records()
