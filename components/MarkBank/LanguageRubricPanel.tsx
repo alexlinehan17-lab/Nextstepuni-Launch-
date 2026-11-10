@@ -60,11 +60,14 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
         {criterion.kind !== 'deduction' && languageCriterionValue(criterionRubric, criterion.id, scores) !== selected && <p>After published deductions: {languageCriterionValue(criterionRubric, criterion.id, scores)} marks.</p>}
       </section>;
   };
+  const manualExceptions = card.answerLanguageRule?.manualCriterionExceptions;
+  const exceptionLabels = writingRubric.criteria.filter(criterion => manualExceptions?.criterionIds.includes(criterion.id))
+    .map(criterion => criterion.label);
   const otherLanguageControl = (target: string, label: string, disabled = false) => card.answerLanguageRule && <label className="mb-language-flag">
     <input type="checkbox" disabled={disabled || (target !== 'response' && scores[languageOtherLanguageId('response')] === 1)} aria-label={`${label} answered in another language`}
       checked={scores[languageOtherLanguageId(target)] === 1}
       onChange={event => onScore(languageOtherLanguageId(target), event.currentTarget.checked ? 1 : 0)} />
-    <span>{target === 'response' && rubric.system === 'language-points' ? 'All answers use' : 'This answer uses'} a language other than specified · {card.answerLanguageRule.otherLanguageMultiplier === 0 ? 'no credit' : 'half credit'}</span>
+    <span>{target === 'response' && rubric.system === 'language-points' ? 'All answers use' : 'This answer uses'} a language other than specified · {target === 'response' && exceptionLabels.length > 0 ? 'content: ' : ''}{card.answerLanguageRule.otherLanguageMultiplier === 0 ? 'no credit' : 'half credit'}</span>
   </label>;
   return <div className="mb-language-rubric">
     <h3>Assess your response</h3>
@@ -84,6 +87,10 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
     {rubric.system === 'language-writing' && otherLanguageControl('response', 'Response')}
     {rubric.system === 'language-points' && <>
       {otherLanguageControl('response', 'All answers')}
+      {manualExceptions && <>
+        <p>Assess {exceptionLabels.join(', ')} separately under the source guidance.</p>
+        <p>{manualExceptions.sourceText}</p>
+      </>}
       <p>{rubric.allocationCap?.answerCount
         ? `Select up to ${rubric.count} groups, then claim up to ${rubric.allocationCap.answerCount} details in total.`
         : `Select the ${rubric.count} items you answered, then claim each component.`}</p>
