@@ -340,6 +340,12 @@ export interface CardAudioMaterial {
   presentationNote: string;
 }
 
+/** An official audiovisual source required by the question, including its sound.
+ * Keep its original SEC identity even when a verified playback copy is used. */
+export interface CardVideoMaterial extends Omit<CardAudioMaterial, 'kind'> {
+  kind: 'source-video';
+}
+
 /** Fields every card shares, whatever its provenance. */
 interface CardBase {
   /** No dots: a dot is a Firestore field-path separator, and card ids are used as
@@ -456,6 +462,8 @@ export interface SecCardBase extends CardBase {
   additionalSourceMaterials?: CardSourceMaterial[];
   /** Required listening recording, available on the question side. */
   audioMaterial?: CardAudioMaterial;
+  /** Required original video, available before revealing any marking points. */
+  videoMaterial?: CardVideoMaterial;
   /** Apply only the verified sitting's explicit wrong-language rule, after
    * earning marks under its unchanged source tariff. Never infer language. */
   answerLanguageRule?: {
