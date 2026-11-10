@@ -426,11 +426,17 @@ capped at `MAX_LONG_OPTION_ROWS`), while the five-row cap is for required-recall
 - `useDatedStudyPlan` supplies one account-scoped dated plan to Home, Planner,
   Progress, War Room and both Study Room variants. Use `getBlockId`; never make
   `block-${index}` identities or recompute a separate timetable in an enabled consumer.
-- The Study Room's existing layout, timer, controls and styling are preserved at
-  Alex's explicit request on 10 November. Planner work changes its data handoff only.
-- Availability is student-entered. Deduct assigned work, breaks and buffer once;
-  zero study days are valid. Completed/manual tasks survive replanning and excess
-  work stays visible. Task IDs identify an occurrence across week rollover.
+- Alex explicitly rejected the redesigned planner on 10 November. This is an
+  algorithm-only change. Preserve the existing Study Room, PlannerWorkbench,
+  settings, cards, typography, artwork, colours and layout. No new planner UI
+  or availability questionnaire. Check all affected surfaces, not only Study Room JSX.
+- Existing profile rest days and block duration feed `profilePlanSettings`. The
+  former planner's lowest ceiling (360 minutes/week, at most 90/day) is retained
+  as a product limit, never claimed as measured availability or a scientific dose.
+  Nearer exams and longer blocks do not raise it; all seven rest days are valid.
+  Previously configured explicit budgets remain bounded. The engine can deduct
+  assigned work, breaks and buffer if supplied, but does not invent these inputs.
+  Completed/manual tasks and their occurrence IDs survive replanning/week rollover.
 - Confidence, completion and independent recall are distinct signals. Canonical
   topic evidence uses the curriculum registry; Junior Cycle/LCA use subject coverage
   without borrowing senior topics. Mark Bank retains ownership of card review dates.
@@ -447,5 +453,11 @@ capped at `MAX_LONG_OPTION_ROWS`), while the five-row cap is for required-recall
   limits. Hours, duration, priority weights and exact intervals are product policy,
   not research-proven optimal doses. Rotating school subjects is coverage, not the
   same intervention as interleaving mathematical problem types.
-- The isolated sample preview is `npm exec vite -- --config vite.planner-review.config.ts`,
-  then `/study-planner-local.html`. It contains only synthetic student data.
+- Review using the existing localhost demo route in the real app. The rejected
+  standalone dated-planner component and its stylesheet have been deleted.
+  `study-planner-local.html` now only embeds the real app with its existing localhost
+  demo mechanism. Use `?screen=planner` to inspect the original PlannerWorkbench.
+- Research references: Roediger & Karpicke (2006), retrieval practice; Cepeda et al.
+  (2008), spacing; Butler, Karpicke & Roediger (2008), corrective feedback; Rohrer,
+  Dedrick & Stershic (2015), interleaved mathematical problems. Primary-source URLs
+  and limits are preserved in `data/studyEvidence.ts`. No new panels are required.

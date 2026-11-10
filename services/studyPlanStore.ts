@@ -104,12 +104,13 @@ export function setTaskStatus(
   status: PlanTask["status"],
 ): void {
   updateStudyPlan(scope, (value) => {
-    const source = value.plan.tasks.find((t) => t.id === id)?.sourceId;
+    const sourceTask = value.plan.tasks.find((t) => t.id === id);
+    const source = sourceTask?.sourceId;
     const tasks = value.plan.tasks.map((t) =>
       t.id === id
         ? { ...t, status, locked: true }
         : status === "dropped" &&
-            t.afterSourceId === source &&
+            t.afterSourceId === source && t.subjectName === sourceTask?.subjectName &&
             t.status === "planned"
           ? { ...t, status: "dropped" as const, locked: true }
           : t,
@@ -129,6 +130,13 @@ export function setTaskStatus(
     };
   });
 }
+
+/** Retain an explicitly chosen future-week projection before launching or completing it. */
+export function retainPlannedTask(scope: string, task: PlanTask): void {
+  updateStudyPlan(scope, value => value.plan.tasks.some(item => item.id === task.id)
+    ? value
+    : { ...value, plan: { ...value.plan, tasks: [...value.plan.tasks, { ...task, locked: true }] } });
+}
 export function movePlanTask(
   scope: string,
   id: string,
@@ -145,7 +153,7 @@ export function movePlanTask(
   const requested = duration ?? task.durationMinutes;
   const predecessor = task.afterSourceId
     ? value.plan.tasks.find(
-        (t) => t.sourceId === task.afterSourceId && t.status !== "dropped",
+        (t) => t.sourceId === task.afterSourceId && t.subjectName === task.subjectName && t.status !== "dropped",
       )
     : undefined;
   if (
@@ -155,7 +163,7 @@ export function movePlanTask(
     return "Keep this check at least three days after its practice session, or move the practice first.";
   const dependent = value.plan.tasks.find(
     (t) =>
-      t.afterSourceId === task.sourceId &&
+      t.afterSourceId === task.sourceId && t.subjectName === task.subjectName &&
       t.status !== "dropped" &&
       t.date < addDays(date, 3),
   );

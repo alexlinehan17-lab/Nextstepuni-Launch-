@@ -10,7 +10,6 @@ interface Props {
   blocks: StudyBlock[];
   completions: string[];
   hasProfile: boolean;
-  needsAvailability?: boolean;
   ready?: boolean;
   error?: boolean;
   gamification?: GamificationState | null;
@@ -20,7 +19,7 @@ interface Props {
   onProgress: () => void;
 }
 
-export default function HomeNextStep({ blocks, completions, hasProfile, needsAvailability = false, ready = true, error = false, gamification, onStudy, onPlannedStudy, onPlan, onProgress }: Props) {
+export default function HomeNextStep({ blocks, completions, hasProfile, ready = true, error = false, gamification, onStudy, onPlannedStudy, onPlan, onProgress }: Props) {
   const goal = gamification ? generateWeeklyGoals(gamification.currentRank.id, getWeekNumber()).find(item => item.metric === 'sessions') : undefined;
   const current = gamification?.weeklyGoalProgress.sessions ?? 0;
   const remaining = goal ? Math.max(0, goal.target - current) : 0;
@@ -29,7 +28,7 @@ export default function HomeNextStep({ blocks, completions, hasProfile, needsAva
   return <>
     <section className="home-today" data-coach="study" aria-labelledby="home-today-title">
       <div className="home-section-heading"><h2 id="home-today-title">Today’s plan</h2>{onPlan && <button type="button" onClick={onPlan}>Your plan <ArrowRight size={14} aria-hidden="true" /></button>}</div>
-      {!ready ? <p role="status" className="home-supporting">Getting your plan ready…</p> : error ? <div className="home-empty-plan"><p role="status">Your plan couldn’t load.</p><span>Try opening your plan, or start a session without it.</span>{onPlan && <button type="button" className="home-text-action" onClick={onPlan}>Open your plan <ArrowRight size={15} aria-hidden="true" /></button>}{onStudy && <button type="button" className="home-text-action" onClick={onStudy}>Start a session <ArrowRight size={15} aria-hidden="true" /></button>}</div> : needsAvailability ? <div className="home-empty-plan"><p>Make room for your real week.</p><span>Set your available time to build a study plan.</span>{onPlan&&<button type="button" className="home-text-action" onClick={onPlan}>Set my available time <ArrowRight size={15}/></button>}</div> : blocks.length ? <>
+      {!ready ? <p role="status" className="home-supporting">Getting your plan ready…</p> : error ? <div className="home-empty-plan"><p role="status">Your plan couldn’t load.</p><span>Try opening your plan, or start a session without it.</span>{onPlan && <button type="button" className="home-text-action" onClick={onPlan}>Open your plan <ArrowRight size={15} aria-hidden="true" /></button>}{onStudy && <button type="button" className="home-text-action" onClick={onStudy}>Start a session <ArrowRight size={15} aria-hidden="true" /></button>}</div> : blocks.length ? <>
         {blocks.slice(0, 4).map((block, index) => {
           const complete = (completions.includes(getBlockId(block, index)) || ('status' in block && block.status === 'completed'));
           const type = block.sessionType === 'new-learning' ? 'New learning' : block.sessionType === 'practice' ? 'Practice' : 'Revision';

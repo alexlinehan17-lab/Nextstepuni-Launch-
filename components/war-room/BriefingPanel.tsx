@@ -102,7 +102,10 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
       const gradeGap = latestResult ? Math.max(0, targetPoints - latestPoints) : 0;
       const allocation = allocations.find(item => item.subjectName === subject.subjectName);
       const sessionsPlanned = allocation?.sessions ?? 1;
-      const sessionsCompleted = completedThisWeek[subject.subjectName] ?? 0;
+      const sessionsCompleted = Math.min(
+        sessionsPlanned,
+        completedThisWeek[subject.subjectName] ?? 0,
+      );
       const sessionsRemaining = Math.max(0, sessionsPlanned - sessionsCompleted);
       const hasEvidence = topics.length > 0 || results.length > 0;
 
@@ -227,8 +230,8 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
           steps={[{ label: 'Recall what you know before opening your notes.' }, { label: 'Check the gaps and work through one example.' }, { label: 'Finish with your usual session reflection.' }]}
           visibleSteps={3} approveLabel="Prepare session" approveDisabled={!focusBlock || !onStudyNow} onApprove={() => { if (focusBlock) onStudyNow?.(focusBlock); }}
           viewLabel="Learning record" onView={() => onOpenRecord(focus.subject)} />
-        <div className="wr-week-queue"><div className="wr-queue-heading"><h4>Your weekly queue</h4><span>{totalCompleted} completed · {totalPlanned} planned</span></div>
-          <div className="wr-progress" role="progressbar" aria-label="Weekly queue progress" aria-valuemin={0} aria-valuemax={Math.max(totalPlanned,totalCompleted,1)} aria-valuenow={totalCompleted}><span style={{ width: `${totalProgress}%` }} /></div>
+        <div className="wr-week-queue"><div className="wr-queue-heading"><h4>Your weekly queue</h4><span>{totalCompleted}/{totalPlanned}</span></div>
+          <div className="wr-progress" role="progressbar" aria-label="Weekly queue progress" aria-valuemin={0} aria-valuemax={totalPlanned} aria-valuenow={totalCompleted}><span style={{ width: `${totalProgress}%` }} /></div>
           <ol aria-label="Weekly subject queue">{visibleQueue.map((row, index) => <li key={row.subject}><span className="wr-row-number">{String(index + 1).padStart(2, '0')}</span><div><strong>{row.subject}</strong><p>{row.action}</p></div><span>{row.sessionsRemaining === 0 ? 'Complete' : `${row.sessionsRemaining} left`}</span></li>)}</ol>
           {queue.length > 3 && <Button variant="link" onClick={() => setShowAllSubjects(value => !value)} aria-expanded={showAllSubjects}>{showAllSubjects ? 'Show less' : `Show all ${queue.length} subjects`}</Button>}
         </div>
@@ -236,8 +239,8 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
       <section className="wr-week-quiet"><header className="wr-section-heading"><span>03</span><h3>The work is adding up.</h3></header><strong aria-label={formatStudyTime(recorded.seconds)}>{compactStudyTime(recorded.seconds)}</strong><p>recorded for {focus.subject} / {recorded.count} saved {recorded.count === 1 ? 'session' : 'sessions'}</p>
         <div className="wr-rule" />
         {focus.latestGrade && focus.targetGrade && <><p>{mockResults.some(result => result.subject === focus.subject) ? 'Latest recorded grade' : 'Your current grade'}</p><div className="wr-grade-path"><span>{focus.latestGrade}</span><ArrowRight size={19} /><span>{focus.targetGrade}</span></div><small>Your target</small></>}
-        <p className="wr-week-summary">{focus.sessionsCompleted} sessions completed this week · {focus.sessionsPlanned} planned.</p>
-        <div className="wr-progress" role="progressbar" aria-label={`${focus.subject} weekly sessions`} aria-valuemin={0} aria-valuemax={Math.max(focus.sessionsPlanned,focus.sessionsCompleted,1)} aria-valuenow={focus.sessionsCompleted}><span style={{ width: `${focus.sessionsPlanned ? Math.min(100,focus.sessionsCompleted / focus.sessionsPlanned * 100) : 0}%` }} /></div>
+        <p className="wr-week-summary">{focus.sessionsCompleted} of {focus.sessionsPlanned} planned sessions completed this week.</p>
+        <div className="wr-progress" role="progressbar" aria-label={`${focus.subject} weekly sessions`} aria-valuemin={0} aria-valuemax={focus.sessionsPlanned} aria-valuenow={focus.sessionsCompleted}><span style={{ width: `${focus.sessionsPlanned ? focus.sessionsCompleted / focus.sessionsPlanned * 100 : 0}%` }} /></div>
         <Button variant="link" onClick={() => onOpenRecord(focus.subject)}>Open your learning record <ArrowRight size={16} /></Button>
       </section>
     </div>

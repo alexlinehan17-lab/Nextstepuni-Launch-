@@ -1,10 +1,8 @@
 import {
   act,
   cleanup,
-  fireEvent,
   render,
   screen,
-  within,
 } from "@testing-library/react";
 import { afterEach, expect, test, vi } from "vitest";
 import { writeLocal } from "../components/MarkBank/store";
@@ -23,7 +21,7 @@ import {
   preserveLegacyCompletions,
   buildStudyPlan,
 } from "../services/studyPlanEngine";
-import DatedPlanner from "../components/launchpad/DatedPlanner";
+
 
 vi.mock("../contexts/ProgressContext", () => ({
   useOptionalProgress: () => null,
@@ -63,31 +61,6 @@ test("two different views observe the same task IDs and completion immediately",
   expect(screen.getByLabelText("Home").textContent).toBe(
     screen.getByLabelText("Planner").textContent,
   );
-});
-test("the settings editor can preserve a zero-day week and expose unscheduled work", () => {
-  const input = studyPlannerSample("fifth");
-  createStudyPlan("settings-zero", input, SAMPLE_START, SAMPLE_START, true);
-  render(<DatedPlanner scope="settings-zero" sample today={SAMPLE_START} />);
-  fireEvent.click(screen.getByRole("button", { name: "Shape my week" }));
-  const dialog = screen.getByRole("dialog");
-  for (const day of [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ])
-    fireEvent.change(within(dialog).getByLabelText(`${day} windowMinutes`), {
-      target: { value: "0" },
-    });
-  fireEvent.click(
-    within(dialog).getByRole("button", { name: "Save & fit my plan" }),
-  );
-  expect(readStudyPlan("settings-zero")!.plan.tasks).toHaveLength(0);
-  expect(screen.getByText("A little breathing room.")).toBeInTheDocument();
-  expect(screen.getByText(/unscheduled opportunities/)).toBeInTheDocument();
 });
 test("legacy completions survive activation with their original IDs and visible uncertainty", () => {
   const inputs = studyPlannerSample("fifth");

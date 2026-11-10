@@ -1,7 +1,7 @@
 import { readStudyPlan } from "./studyPlanStore";
 import { studyTopicSelection } from "./studyTopicHistory";
 import { queueTopicStudy } from "../utils/topicLaunch";
-import { savePlannerTodos } from "../components/launchpad/plannerTodos";
+import { readPlannerTodos, savePlannerTodos } from "../components/launchpad/plannerTodos";
 
 /** Carry the actual task's instructions and canonical topic into the study room. */
 export function preparePlannedStudy(
@@ -12,7 +12,7 @@ export function preparePlannedStudy(
   const saved = readStudyPlan(uid);
   const task = saved?.plan.tasks.find((t) => t.id === taskId);
   if (!saved || !task) return;
-  savePlannerTodos(
+  if (!readPlannerTodos(uid, date, taskId)) savePlannerTodos(
     uid,
     date,
     taskId,

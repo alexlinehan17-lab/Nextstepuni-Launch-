@@ -11,6 +11,7 @@ import {
   examinationYearFromDate,
   resolveCurriculumSpecification,
 } from "../curriculumRegistry";
+import { computeSubjectPrioritiesForCurriculum } from "../components/timetableAlgorithm";
 
 export interface DayCapacity {
   windowMinutes: number;
@@ -19,6 +20,8 @@ export interface DayCapacity {
   bufferMinutes: number;
 }
 export interface PlanSettings {
+  /** Existing rest-day/block-length controls; these are planning limits, not measured availability. */
+  source?: "profile";
   days: DayCapacity[];
   revisionMinutes: number;
   preferredMinutes: number;
@@ -89,6 +92,7 @@ export interface PlanDay extends DayCapacity {
 }
 export interface StudyPlan {
   version: 1;
+  policy?: number;
   start: string;
   tasks: PlanTask[];
   days: PlanDay[];
@@ -101,6 +105,7 @@ export interface StudyPlan {
   }[];
   notices: string[];
 }
+export const PLAN_POLICY_VERSION = 2;
 export const minutes = (n: number) =>
   Number.isFinite(n) ? Math.max(0, Math.round(n)) : 0;
 export const dateKey = (d: Date) =>
@@ -151,6 +156,28 @@ export function initialPlanSettings(
     confirmed: false,
   };
 }
+/** Compatibility with the existing planner. No additional setup form is required.
+ * Six hours is the former planner's lowest product ceiling, not a research-backed
+ * requirement. Exam proximity and longer blocks never increase that ceiling.
+ * The existing rest-day controls can reduce it all the way to zero.
+ */
+export function profilePlanSettings(profile: StudentSubjectProfile): PlanSettings {
+  const preferredMinutes = Math.max(10, Math.min(90, minutes(profile.defaultBlockDuration ?? 45)));
+  const days = DAYS_OF_WEEK.map(day => ({
+    windowMinutes: profile.restDays?.includes(day) ? 0 : 90,
+    breakMinutes: 0,
+    assignedMinutes: 0,
+    bufferMinutes: 0,
+  }));
+  return {
+    source: "profile",
+    days,
+    revisionMinutes: Math.min(360, days.reduce((sum, day) => sum + day.windowMinutes, 0)),
+    preferredMinutes,
+    exceptions: {},
+    confirmed: true,
+  };
+}
 export function validEvidence(input: PlanInputs): TopicEvidence[] {
   const year = examinationYearFromDate(input.profile.examStartDate);
   return input.evidence.filter((e) => {
@@ -174,6 +201,12 @@ type Candidate = Omit<PlanTask, "date" | "status"> & {
   afterSourceId?: string;
 };
 const token = (value: string) => encodeURIComponent(value);
+
+export function studyPlanPriorities(input: PlanInputs) {
+  // Self-reported confidence does not establish a learning deficit or successful recall.
+  return computeSubjectPrioritiesForCurriculum(input.profile.subjects, undefined,
+    input.profile.curriculumLevel ?? "senior", input.profile.examStartDate);
+}
 
 export function buildStudyPlan(
   input: PlanInputs,
@@ -232,6 +265,7 @@ export function buildStudyPlan(
       "Assigned work, breaks or buffer exceed a day window. No extra revision is added to that day.",
     );
   const active = input.profile.subjects;
+  const priorities = studyPlanPriorities(input);
   const candidates: Candidate[] = [];
   const contact = { ...input.lastContact };
   for (const t of tasks.filter((t) => t.status === "completed"))
@@ -282,6 +316,7 @@ export function buildStudyPlan(
     Math.min(90, minutes(input.settings.preferredMinutes)),
   );
   for (const s of active) {
+    const targetWeight = Math.min(12, Math.log1p(priorities.find(p => p.subjectName === s.subjectName)?.priorityScore ?? 0));
     const req = input.requirements.find((r) => r.subjectName === s.subjectName);
     const gap =
       input.profile.curriculumLevel === "junior"
@@ -317,15 +352,23 @@ export function buildStudyPlan(
         "A short check of recent classwork",
         "maintenance",
         anchor,
-        15,
-        28 + staleContact + gap + (req ? 15 : 0) - week * 5,
+        input.settings.source === "profile" ? preferred : 15,
+        28 + staleContact + gap + targetWeight + (req ? 15 : 0) - week * 5,
         `${req ? `Entry requirement: ${req.note}. ` : ""}${target}. ${contact[s.subjectName] ? `Last recorded contact: ${contact[s.subjectName]}.` : "No recent subject contact recorded."} Keep a place for this subject across the fortnight.`,
         {
           earliest: anchor,
           coverage: true,
+          sessionType: input.settings.source === "profile" ? "practice" : "revision",
           next: "Choose something already taught. Use the result to decide what needs practice.",
         },
       );
+      // An optional second practice opportunity uses the existing chosen block
+      // length. It is fitted after subject coverage, never added above the cap.
+      if (input.settings.source === "profile" && gap > 0)
+        add(s.subjectName, `practice-${anchor}`, "Practise recent classwork", "practice",
+          addDays(anchor, 3), preferred, 12 + gap + targetWeight,
+          `${target}. Choose material already taught, attempt a question and check it. This is a planning suggestion, not a diagnosis of weak recall.`,
+          { earliest: addDays(anchor, 3), afterSourceId: `contact-${anchor}` });
       for (const e of topics) {
         const key = `${e.specificationId}::${e.topicId}`;
         const due =
@@ -465,7 +508,9 @@ export function buildStudyPlan(
         );
         return (
           c.priority +
-          (c.coverage && !already ? 20 : 0) -
+          // A large inventory of untested topic-confidence records must not
+          // crowd whole subjects out of the plan. Deadlines still rank first.
+          (c.coverage && !already ? 80 : 0) -
           (already && c.coverage ? 50 : 0)
         );
       };
@@ -478,7 +523,7 @@ export function buildStudyPlan(
     const c = pending.shift()!;
     const predecessor = c.afterSourceId
       ? tasks.find(
-          (t) => t.sourceId === c.afterSourceId && t.status !== "dropped",
+          (t) => t.sourceId === c.afterSourceId && t.subjectName === c.subjectName && t.status !== "dropped",
         )
       : undefined;
     const earliest = predecessor
@@ -521,7 +566,7 @@ export function buildStudyPlan(
         const score =
           Math.abs(dayDistance(c.due, d.date)) * 5 +
           d.planned / 20 +
-          (sameSubject ? 4 : 0);
+          (sameSubject ? 16 : 0);
         return { d, room, score, sameTopic };
       })
       .filter((o) => o.room >= 10 && !o.sameTopic)
@@ -588,6 +633,7 @@ export function buildStudyPlan(
     );
   return {
     version: 1,
+    policy: PLAN_POLICY_VERSION,
     start,
     tasks: tasks.sort(
       (a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id),

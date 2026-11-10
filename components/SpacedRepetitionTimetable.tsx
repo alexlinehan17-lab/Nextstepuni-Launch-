@@ -16,7 +16,8 @@ import PlannerExplanation from './launchpad/PlannerExplanation';
 import PlannerWorkbench from './launchpad/PlannerWorkbench';
 import { Button } from './approved-ui-runtime';
 import { useDatedStudyPlan } from '../hooks/useDatedStudyPlan';
-import DatedPlanner from './launchpad/DatedPlanner';
+import { retainPlannedTask, setTaskStatus } from '../services/studyPlanStore';
+import { studyPlanPriorities, type PlanTask } from '../services/studyPlanEngine';
 
 export interface TimetableBlockInfo {
   subject: string;
@@ -62,7 +63,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   const [weekOffset, setWeekOffset] = useState(0);
   const [showExplainer, setShowExplainer] = useState(false);
   const restDaysArray = useMemo(() => profile.restDays ?? [], [profile.restDays]);
-  const dated = useDatedStudyPlan(profile, uid);
+  const dated = useDatedStudyPlan(profile, uid, weekOffset);
   const { topicMastery: topicMasteryHook } = useInnovationData();
   const topicMastery = topicMasteryHook.mastery;
   // Strategy hints from Learning DNA (per-subject best strategy)
@@ -103,25 +104,25 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
     : (profile.examStartDate ? computeWeeksUntilExam(profile.examStartDate) : 22);
 
   const priorities = useMemo(
-    () => computeSubjectPrioritiesForCurriculum(profile.subjects, topicMastery, curriculumLevel, profile.examStartDate),
-    [profile.subjects, topicMastery, curriculumLevel, profile.examStartDate]
+    () => dated.saved ? studyPlanPriorities(dated.saved.inputs) : computeSubjectPrioritiesForCurriculum(profile.subjects, topicMastery, curriculumLevel, profile.examStartDate),
+    [profile.subjects, topicMastery, curriculumLevel, profile.examStartDate, dated.saved]
   );
 
   const blockDuration = profile.defaultBlockDuration ?? 45;
   const effectiveWeeksUntilExam = Math.max(0, weeksUntilExam - weekOffset);
   const weeklyTarget = useMemo(
-    () => computeWeeklyStudyTarget(effectiveWeeksUntilExam),
-    [effectiveWeeksUntilExam]
+    () => dated.enabled ? { explanation: `Your existing rest days and block length shape this plan. ${dated.saved?.inputs.settings.revisionMinutes ?? 360} minutes is a planning ceiling, not a required amount of study. Due reviews take priority; longer sessions and approaching exams do not raise the ceiling.` } : computeWeeklyStudyTarget(effectiveWeeksUntilExam),
+    [effectiveWeeksUntilExam, dated.enabled, dated.saved]
   );
 
   const allocations = useMemo(
-    () => allocateSessions(priorities, effectiveWeeksUntilExam, sm2States, blockDuration),
-    [priorities, effectiveWeeksUntilExam, sm2States, blockDuration]
+    () => dated.enabled ? priorities.map(priority => ({subjectName: priority.subjectName, sessions: dated.timetable?.flatMap(day => day.blocks).filter(block => block.subjectName === priority.subjectName).length ?? 0, priorityLabel: 'Medium' as const, priorityScore: priority.priorityScore})) : allocateSessions(priorities, effectiveWeeksUntilExam, sm2States, blockDuration),
+    [priorities, effectiveWeeksUntilExam, sm2States, blockDuration, dated.enabled, dated.timetable]
   );
 
   const timetable = useMemo(
-    () => generateWeeklyTimetable(allocations, weeksUntilExam, weekOffset, restDaysArray, blockDuration, sm2States, topicMastery),
-    [allocations, weeksUntilExam, weekOffset, restDaysArray, blockDuration, sm2States, topicMastery]
+    () => dated.enabled ? dated.timetable ?? [] : generateWeeklyTimetable(allocations, weeksUntilExam, weekOffset, restDaysArray, blockDuration, sm2States, topicMastery),
+    [allocations, weeksUntilExam, weekOffset, restDaysArray, blockDuration, sm2States, topicMastery, dated.enabled, dated.timetable]
   );
 
   const weekStart = getWeekStartDate(weekOffset);
@@ -131,17 +132,16 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
 
 
   if (!profile.subjects.length) return <CrewEmptyState title="A little room for a plan." action="Choose your subjects" onAction={onOpenSettings}>Start with your subjects. We’ll help you shape a week with time to study, revisit and rest.</CrewEmptyState>;
-  if (dated.enabled) return <DatedPlanner schoolEvents={schoolEvents} onEditSubjects={onOpenSettings} scope={dated.scope} onComplete={onToggleCompletion} onStudy={onStudyNow ? task => onStudyNow({subject:task.subjectName,sessionType:task.sessionType,durationMinutes:task.durationMinutes,dateKey:task.date,blockId:task.id}) : undefined}/>;
   return <PlannerWorkbench uid={uid ?? 'guest'} timetable={timetable} subjects={profile.subjects.map(subject => subject.subjectName)} weekStart={weekStart} weekOffset={weekOffset} onWeekChange={setWeekOffset} restDays={restDaysArray} duration={blockDuration} onSettings={onOpenSettings}
     onPlanSettingsChange={(days, minutes) => { if (onPlanSettingsChange) onPlanSettingsChange(days, minutes); else { onRestDaysChange?.(days); onBlockDurationChange?.('', '', minutes); } }}
-    isComplete={entry => completions[entry.dateKey]?.includes(entry.id) ?? false}
+    isComplete={entry => (completions[entry.dateKey]?.includes(entry.id) ?? false) || dated.saved?.plan.tasks.some(task => task.id === entry.id && task.status === 'completed') === true}
     isSkipped={entry => skippedSessions.includes(entry.key) || deferredBlocks.includes(entry.key)}
     isDeferred={entry => deferredBlocks.includes(entry.key)}
-    onComplete={onToggleCompletion ? (entry, done) => onToggleCompletion(entry.dateKey, entry.id, done) : undefined}
+    onComplete={onToggleCompletion ? (entry, done) => { if (dated.enabled) { retainPlannedTask(dated.scope, entry.block as PlanTask); setTaskStatus(dated.scope, entry.id, done ? 'completed' : 'planned'); } onToggleCompletion(entry.dateKey, entry.id, done); } : undefined}
     onSkip={onSkipBlock ? (entry, skipped) => onSkipBlock(entry.dateKey, entry.id, skipped) : undefined}
-    onStudy={onStudyNow ? entry => onStudyNow({ subject: entry.block.subjectName, sessionType: entry.block.sessionType, durationMinutes: entry.block.durationMinutes, dateKey: entry.dateKey, blockId: entry.id }) : undefined}
+    onStudy={onStudyNow ? entry => { if (dated.enabled) retainPlannedTask(dated.scope, entry.block as PlanTask); onStudyNow({ subject: entry.block.subjectName, sessionType: entry.block.sessionType, durationMinutes: entry.block.durationMinutes, dateKey: entry.dateKey, blockId: entry.id }); } : undefined}
     schoolEvents={schoolEvents} hints={strategyHints} cues={planCues} onCueSave={setPlanCue}
-    explanation={<><p>{weeklyTarget.explanation}</p><p>Work is spread across your available days, with repeat sessions spaced apart and room for rest.</p><p>{isJunior ? 'Subjects furthest below your target band receive more practice; every subject still receives maintenance time.' : 'Subjects with the strongest combination of grade gap, achievable marks and topics to revisit receive more time; every subject still receives maintenance time.'}</p>{!isJunior && <><Button variant="ghost" onClick={() => setShowExplainer(true)}>See the allocation in detail</Button><PlannerExplanation open={showExplainer} onClose={() => setShowExplainer(false)} priorities={priorities} allocations={allocations} totalSessions={totalSessions} totalMinutes={totalMinutes} workloadExplanation={weeklyTarget.explanation} /></>}</>}
+    explanation={<><p>{weeklyTarget.explanation}</p><p>Work is spread across your available days, with repeat sessions spaced apart and room for rest.</p><p>{isJunior ? 'Target bands, due reviews and recent subject contact guide the allocation. Topics are checked before assuming they need more practice.' : 'Targets, due reviews and recent subject contact guide the allocation. Confidence alone does not prove recall; a completed session does not postpone a review.'}</p>{!isJunior && <><Button variant="ghost" onClick={() => setShowExplainer(true)}>See the allocation in detail</Button><PlannerExplanation open={showExplainer} onClose={() => setShowExplainer(false)} priorities={priorities} allocations={allocations} totalSessions={totalSessions} totalMinutes={totalMinutes} workloadExplanation={weeklyTarget.explanation} /></>}</>}
   />;
 };
 export default SpacedRepetitionTimetable;

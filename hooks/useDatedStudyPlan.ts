@@ -5,8 +5,10 @@ import { useOptionalProgress } from "../contexts/ProgressContext";
 import type { StudentSubjectProfile } from "../components/subjectData";
 import {
   buildStudyPlan,
+  PLAN_POLICY_VERSION,
   preserveLegacyCompletions,
-  initialPlanSettings,
+  profilePlanSettings,
+  addDays,
   dateKey,
   mondayOf,
   planTimetable,
@@ -198,8 +200,17 @@ export function useDatedStudyPlan(
           : {}),
       });
     }
-    const settings =
-      existing?.inputs.settings ?? initialPlanSettings(effective);
+    const settings = !existing?.inputs.settings.confirmed || existing.inputs.settings.source === "profile"
+      ? profilePlanSettings(effective)
+      : {
+          ...existing.inputs.settings,
+          preferredMinutes: effective.defaultBlockDuration ?? 45,
+          days: existing.inputs.settings.days.map((day, index) =>
+            effective.restDays?.includes(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"][index])
+              ? { ...day, windowMinutes: 0 }
+              : day,
+          ),
+        };
     const lastContact = { ...(existing?.inputs.lastContact ?? {}) };
     for (const session of sessions)
       if (
@@ -225,6 +236,7 @@ export function useDatedStudyPlan(
     );
     if (
       !existing ||
+      existing.plan.policy !== PLAN_POLICY_VERSION ||
       existing.plan.start !== start ||
       previous !== existing.plan ||
       JSON.stringify(existing.inputs) !== JSON.stringify(inputs)
@@ -247,8 +259,11 @@ export function useDatedStudyPlan(
     sessionKey,
   ]);
   const timetable = useMemo(
-    () => (saved ? planTimetable(saved.plan, weekOffset) : undefined),
-    [saved, weekOffset],
+    () => saved ? weekOffset < 2
+      ? planTimetable(saved.plan, weekOffset)
+      : planTimetable(buildStudyPlan(saved.inputs, addDays(start, weekOffset * 7), saved.plan, today))
+      : undefined,
+    [saved, weekOffset, start, today],
   );
   return { scope, saved, timetable, enabled, today };
 }

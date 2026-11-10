@@ -1,14 +1,16 @@
 import { preparePlannedStudy } from "../services/plannedStudyLaunch";
 import { peekTopicStudy } from "../utils/topicLaunch";
-import { readPlannerTodos } from "../components/launchpad/plannerTodos";
+import { readPlannerTodos, savePlannerTodos } from "../components/launchpad/plannerTodos";
 import { cleanup, render, screen } from "@testing-library/react";
 import { afterEach, expect, test } from "vitest";
 import HomeNextStep from "../components/HomeNextStep";
+import { resolveCurriculumSpecification, examinationYearFromDate } from "../curriculumRegistry";
 import { studyPlannerSample, SAMPLE_START } from "../data/studyPlannerSamples";
 import {
   addDays,
   buildStudyPlan,
   initialPlanSettings,
+  profilePlanSettings,
 } from "../services/studyPlanEngine";
 import {
   createStudyPlan,
@@ -25,6 +27,50 @@ import {
 } from "../services/studyPlanSync";
 
 afterEach(cleanup);
+test("many untested topic-confidence records cannot displace whole subjects from a normal week", () => {
+  const input = studyPlannerSample("sixth");
+  input.settings = profilePlanSettings({...input.profile, restDays: ["Sunday"]});
+  input.cards = [];
+  input.deadlines = [];
+  input.evidence = input.profile.subjects.flatMap(subject => {
+    const spec = resolveCurriculumSpecification(subject.subjectName, examinationYearFromDate(input.profile.examStartDate));
+    return spec?.groups.flatMap(group => group.topics.map(topic => ({
+      specificationId: spec.id, topicId: topic.id, topicName: topic.title,
+      subjectName: subject.subjectName, taught: true, confidence: "shaky" as const,
+    }))) ?? [];
+  });
+  input.lastContact = Object.fromEntries(input.profile.subjects.map(s => [s.subjectName, SAMPLE_START]));
+  const plan = buildStudyPlan(input, SAMPLE_START);
+  const firstWeek = plan.tasks.filter(t => t.date < addDays(SAMPLE_START, 7));
+  for (const subject of input.profile.subjects)
+    expect(firstWeek.some(task => task.subjectName === subject.subjectName)).toBe(true);
+  expect(firstWeek.reduce((sum, task) => sum + task.durationMinutes, 0)).toBeLessThanOrEqual(360);
+});
+test("existing duration and rest-day settings work without inflating the budget near exams", () => {
+  const input = studyPlannerSample("sixth");
+  for (const duration of [25, 45, 90]) {
+    const profile = {...input.profile, restDays: ["Sunday"], defaultBlockDuration: duration, examStartDate: "2026-11-03"};
+    input.settings = profilePlanSettings(profile);
+    expect(input.settings.preferredMinutes).toBe(duration);
+    expect(input.settings.revisionMinutes).toBe(360);
+    expect(input.settings.days[6].windowMinutes).toBe(0);
+    const plan = buildStudyPlan(input, SAMPLE_START);
+    for (let week = 0; week < 2; week++)
+      expect(plan.days.slice(week * 7, week * 7 + 7).reduce((sum, day) => sum + day.planned, 0)).toBeLessThanOrEqual(360);
+  }
+  input.settings = profilePlanSettings({...input.profile, restDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]});
+  expect(buildStudyPlan(input, SAMPLE_START).tasks).toHaveLength(0);
+});
+
+test("opening a planned session preserves the student's edited to-dos", () => {
+  const scope = "edited-todos-original-ui";
+  const saved = createStudyPlan(scope, studyPlannerSample("sixth"), SAMPLE_START, SAMPLE_START, true);
+  const task = saved.plan.tasks[0];
+  const steps = [{label: "My teacher's assigned question", done: false}];
+  savePlannerTodos(scope, task.date, task.id, steps);
+  preparePlannedStudy(scope, task.id, task.date);
+  expect(readPlannerTodos(scope, task.date, task.id)).toEqual(steps);
+});
 test("Home recognises canonical completion IDs and out-of-order completed tasks", () => {
   const input = studyPlannerSample("sixth");
   const tasks = buildStudyPlan(input, SAMPLE_START).tasks.slice(0, 2);
