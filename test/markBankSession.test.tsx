@@ -346,7 +346,9 @@ describe('the question comes first and stays', () => {
     expect(screen.getByText('Check your complete response.')).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Select all/ })).not.toBeInTheDocument();
     expect(screen.getByText(/Explain the hidden economy and give one example other than/)).toBeInTheDocument();
-    expect(screen.getByText(/Assess your complete answer against the 8-mark total/)).toBeInTheDocument();
+    expect(economicsCard.totalMarks).toBe(8);
+    expect(screen.getByText('Confidence review')).toBeInTheDocument();
+    expect(screen.getByText(/Review your complete answer against the source guidance and required parts above/)).toBeInTheDocument();
   });
 
   test('keeps a multi-row complete route under one published total', () => {
@@ -357,7 +359,9 @@ describe('the question comes first and stays', () => {
     expect(screen.queryByRole('button', { name: /Select all/ })).not.toBeInTheDocument();
     expect(screen.getByText(/Explain the market diagram: supernormal profit attracts entry/)).toBeInTheDocument();
     expect(screen.getByText(/Answer \(b\) as well as both diagrams and their explanations/)).toBeInTheDocument();
-    expect(screen.getByText(/Assess your complete answer against the 15-mark total/)).toBeInTheDocument();
+    expect(economicsCard.totalMarks).toBe(15);
+    expect(screen.getByText('Confidence review')).toBeInTheDocument();
+    expect(screen.getByText(/Review your complete answer against the source guidance and required parts above/)).toBeInTheDocument();
   });
 
   test('opens the Irish edition and reveals its distinct labels only with the answer', () => {
