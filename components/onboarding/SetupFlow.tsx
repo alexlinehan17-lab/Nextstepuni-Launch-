@@ -402,7 +402,7 @@ export default function SetupFlow(props: OnboardingProps) {
                         aria-pressed={draft.subjects.includes(item.name)}
                         onClick={() => toggleSubject(item.name)}
                       >
-                        <span className="setup-subject-name"><SubjectAvatar subject={item.name} /><span>{item.name}</span></span>
+                        <span className="setup-subject-name"><SubjectAvatar subject={item.name} /><span>{item.label ?? item.name}</span></span>
                         <span className="setup-subject-state" aria-hidden="true">
                           {draft.subjects.includes(item.name) ? "Added" : "Add"}
                         </span>
