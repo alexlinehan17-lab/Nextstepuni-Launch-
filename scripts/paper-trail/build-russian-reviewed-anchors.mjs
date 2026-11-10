@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { reviewedRussianJointTask, verifyRussianJointAnchors } from '../markbank/russianJointTasks.mjs';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const read = file => JSON.parse(fs.readFileSync(path.join(ROOT, file), 'utf8'));
 const cards = read('components/MarkBank/cards/russian/reviewed.json');
@@ -30,16 +31,25 @@ for (const fileid of new Set(sources.map(source => `${source.year}/${source.pape
   }
   for(const task of tasks) {
     const card = cards.find(card=>card.id===task.id);
-    const n = task.id.replace(/^ru-\d+-[a-z]+-/, '');
-    const question = {n,label:task.questionRef.replace(/^\d+ (?:HL|OL) /,''),printOrder:map.q.length+1,
-      pP:(task.questionPages??task.paperPages)[0],pY:[0,1],paperRegion:task.paperPages.map(p=>({p,r:[0,0,1,1]})),
-      region:task.schemePages.map(p=>({p,r:[0,0,1,1]})),mode:'pagejump',conf:1};
-    const existing = map.q.find(row=>row.n===n);
-    if(existing)Object.assign(existing,question,{printOrder:existing.printOrder});
-    else map.q.push(question);
-    const questionTag={n,primary:task.topicId,...(card.additionalTopicIds?.length?{secondary:card.additionalTopicIds[0]}:{})};
-    const existingTag=tag.q.find(row=>row.n===n);
-    if(existingTag)Object.assign(existingTag,questionTag);else tag.q.push(questionTag);
+    const joint = reviewedRussianJointTask(task, card);
+    const questions = joint ?? [{
+      n: task.id.replace(/^ru-\d+-[a-z]+-/, ''), questionRef: task.questionRef,
+      questionPages: task.questionPages ?? task.paperPages, schemePages: task.schemePages,
+    }];
+    for (const original of questions) {
+      const n = original.n;
+      const question = {n,label:original.questionRef.replace(/^\d+ (?:HL|OL) /,''),printOrder:map.q.length+1,
+        pP:original.questionPages[0],pY:[0,1],paperRegion:task.paperPages.map(p=>({p,r:[0,0,1,1]})),
+        region:original.schemePages.map(p=>({p,r:[0,0,1,1]})),mode:'pagejump',conf:1,
+        ...(joint ? {markBankCardId:card.id} : {})};
+      const existing = map.q.find(row=>row.n===n);
+      if(existing)Object.assign(existing,question,{printOrder:existing.printOrder});
+      else map.q.push(question);
+      const questionTag={n,primary:task.topicId,...(card.additionalTopicIds?.length?{secondary:card.additionalTopicIds[0]}:{})};
+      const existingTag=tag.q.find(row=>row.n===n);
+      if(existingTag)Object.assign(existingTag,questionTag);else tag.q.push(questionTag);
+    }
+    verifyRussianJointAnchors(task, card, map);
   }
   map.maxCropPages=Math.max(3,...tasks.map(task=>Math.max(...task.paperPages)-Math.min(...task.paperPages)+1));
   write(file,map);

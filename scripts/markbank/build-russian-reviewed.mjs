@@ -5,6 +5,7 @@ import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { paperEntry, resolvePaperFileid, resolveCompanionFileid } from './paperIndex.mjs';
 import { audioMaterialFault } from './audioMaterial.mjs';
+import { reviewedRussianJointTask } from './russianJointTasks.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const read = relative => JSON.parse(readFileSync(resolve(ROOT, relative), 'utf8'));
@@ -26,8 +27,10 @@ const cards = authored.map(({ review, ...card }) => {
   if (!paper?.scheme?.f || !review.paperPages.length || !review.schemePages.length) throw new Error(`Unbound Russian source ${card.id}`);
   const audioFault = audioMaterialFault(card, 'russian');
   if (audioFault || (review.component === 'A00' && !card.audioMaterial)) throw new Error(`${card.id}: ${audioFault ?? 'missing recording'}`);
-  records.push({ id: card.id, year: card.year, level: card.level, questionRef: card.questionRef,
-    topicId: card.topicId, paperFileid: paper.doc.f, schemeFileid: paper.scheme.f, ...review });
+  const record = { id: card.id, year: card.year, level: card.level, questionRef: card.questionRef,
+    topicId: card.topicId, paperFileid: paper.doc.f, schemeFileid: paper.scheme.f, ...review };
+  reviewedRussianJointTask(record, card);
+  records.push(record);
   return { ...card, source: 'sec', paperFileid, specVersion: 'lc-russian-syllabus',
     schemeCitation: `SEC Russian ${card.year} ${card.level === 'higher' ? 'Higher' : 'Ordinary'} Level marking scheme, pages ${review.schemePages.join(', ')} — © State Examinations Commission.`,
     schemeRegion: { schemeFileid: paper.scheme.f, p: review.schemePages[0], r: [0, 0, 1, 1] },

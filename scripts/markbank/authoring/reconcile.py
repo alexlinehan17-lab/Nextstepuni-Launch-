@@ -646,9 +646,18 @@ def reconcile_subject(subject, census=None):
     orphans, unparsed = [], []
 
     cards = shipped_cards(subject)
+    # Russian alone has an audited shared summary allocation spanning four
+    # original questions. Expand only exact coverage references, never the
+    # runtime card count or the independent printed-task denominator.
+    joint_refs = {}
+    if subject == 'russian':
+        from ru_joint_tasks import reviewed_joint_coverage
+        joint_refs = reviewed_joint_coverage(cards, idx)
+    coverage_refs = [(cid, ref) for cid, refstr in cards
+                     for ref in joint_refs.get(cid, [refstr])]
     exact_papers = reviewed_maths_paper_keys() if subject == 'maths' else {}
     exact_japanese_refs = reviewed_japanese_refs() if subject == 'japanese' else {}
-    for cid, refstr in cards:
+    for cid, refstr in coverage_refs:
         ref = parse_ref(refstr)
         if subject == 'japanese':
             ref = bind_japanese_ref(cid, refstr, ref, exact_japanese_refs)
