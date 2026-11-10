@@ -4834,4 +4834,1392 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Loss of sales -reduction in profits","Loss of customers -due to damage to reputation/negative industrial relations /customers may never return","Increased training costs due to high staff turnover- employees leave to work in a better work environment","Poor morale: reduced productivity - loss of experienced staff/decreased motivation and efficiency/ increased absenteeism/harder to get staff","Industrial action- due to disputes in the workplace/hostile work environment/go slows/strikes etc","Decreased innovation - due to lack of motivation in the workplace","Quality of work- substandard products/sales returns/lawsuits/product recalls"]} },
     ],
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-a1", topicId: "lcvp-link-modules-1-1", conceptId: "a1",
+    section: "A", questionRef: "2026 CL Section A Q1",
+    questionText: "What is the name of the business?",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 1,
+    rows: [
+    { id: "business-name", kind: "point", verbatim: "Aisling’s Designs", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2026 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2026 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original sequence with its sound before answering. The paper allows three minutes to read Section A, then the complete sequence, its three parts, and the complete sequence again. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-a2", topicId: "lcvp-link-modules-1-1", conceptId: "a2",
+    section: "A", questionRef: "2026 CL Section A Q2",
+    questionText: "Why does Aisling sell products made by other local designers?",
+    tariffModel: {"kind":"questionTotal","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 2,
+    rows: [
+    { id: "model-1", kind: "point", verbatim: "Gives our customers more choice", marks: null, contextNote: "The source prints a total of 2 marks and these three models, but no response quota, component allocation or partial ladder. Numeric scoring is held; compare the complete response." },
+    { id: "model-2", kind: "point", verbatim: "Supporting the local community", marks: null },
+    { id: "model-3", kind: "point", verbatim: "Less harm on the environment/less carbon foot print", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2026 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2026 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original sequence with its sound before answering. The paper allows three minutes to read Section A, then the complete sequence, its three parts, and the complete sequence again. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-a3", topicId: "lcvp-link-modules-1-0", conceptId: "a3",
+    section: "A", questionRef: "2026 CL Section A Q3",
+    questionText: "Why did Aisling want to set up her own business?",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 3,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "Why did Aisling want to set up her own business? 3 marks 3@1m", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":3,"perOption":1,"options":["She studied art in college","Wanted to work with her hands","She saw her father run his own business","She wanted to be her own boss and make her own decisions","She wanted flexible hours/didn’t want to work 9 to 5"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2026 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2026 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original sequence with its sound before answering. The paper allows three minutes to read Section A, then the complete sequence, its three parts, and the complete sequence again. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-a4", topicId: "lcvp-link-modules-1-1", conceptId: "a4",
+    section: "A", questionRef: "2026 CL Section A Q4",
+    questionText: "What challenges has the business faced over the past number of years?",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 2,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "What challenges has the business faced over the past number of years? 2 marks 2@1m", marks: 2, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":1,"options":["Drop in sales 2010/Recession","Pandemic","Increased competition/globalisation/online shopping","Availability and pricing of raw materials"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2026 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2026 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original sequence with its sound before answering. The paper allows three minutes to read Section A, then the complete sequence, its three parts, and the complete sequence again. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-a5", topicId: "lcvp-link-modules-1-1", conceptId: "a5",
+    section: "A", questionRef: "2026 CL Section A Q5",
+    questionText: "Outline what Aisling has done to help her business overcome the challenges it has faced in recent years.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "Outline what Aisling has done to help her business overcome the challenges it has faced in recent years. 4 marks 2@2m", marks: 4, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 2 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":2,"options":["Communicates with/consults/asks staff","Going online / zoom call / website","Doesn’t live outside her means / Puts money aside","Trains staff so they overcome challenges","Increased the price of goods to cover rising costs of raw materials","Introduced new production methods"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2026 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2026 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original sequence with its sound before answering. The paper allows three minutes to read Section A, then the complete sequence, its three parts, and the complete sequence again. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-a6", topicId: "lcvp-link-modules-1-1", conceptId: "a6",
+    section: "A", questionRef: "2026 CL Section A Q6",
+    questionText: "Why does Aisling consult with staff?",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "Why does Aisling consult with staff? 6 marks 3@2m", marks: 6, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 2 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":3,"perOption":2,"options":["They are making the goods / meeting the customers / keeping things running day to day","It helps build trust between her and her employees / makes the business more efficient","It encourages problem solving / to get solutions / to make the best decisions / brings new ideas / incentives on commission","It keeps everyone motivated/allows all employees to feel an important part of the business","When making changes / keeps everyone on the same page / in line"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2026 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2026 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original sequence with its sound before answering. The paper allows three minutes to read Section A, then the complete sequence, its three parts, and the complete sequence again. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-a7", topicId: "lcvp-link-modules-0-0", conceptId: "a7",
+    section: "A", questionRef: "2026 CL Section A Q7",
+    questionText: "Why does Aisling prefer not to make staff redundant?",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Why does Aisling prefer not to make staff redundant? 6 marks 3@2m (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Why does Aisling prefer not to make staff redundant? 6 marks 3@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Hiring/training staff is expensive/time-consuming / when the economy improves she doesn’t have to retrain staff | 2. Hurts morale and productivity of those still working in the business / high staff turnover is unproductive | 3. Encourages loyalty among staff / her turnover of staff is very low / she has had the same staff for years | 4. Don’t lose staff as they are an asset to the business / new staff take time to settle in", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2026 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2026 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original sequence with its sound before answering. The paper allows three minutes to read Section A, then the complete sequence, its three parts, and the complete sequence again. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-a8", topicId: "lcvp-link-modules-1-0", conceptId: "a8",
+    section: "A", questionRef: "2026 CL Section A Q8",
+    questionText: "Describe the factors that contribute to the success of a business.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Describe the factors that contribute to the success of a business. 6 marks 3@2m (1+1) No repetition of expansions", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe the factors that contribute to the success of a business. 6 marks 3@2m (1+1) No repetition of expansions Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Managing finance / not living outside your means, applies this to her business as well / money put aside to fall back on | 2. Good quality product/service / USP / good aftersales service | 3. Interest in your project / passions | 4. Good staff relations /staff wellbeing / investing in your people/staff, changing work practices before making people redundant / staff’s ability to work as a team | 5. Customer loyalty / support from the community | 6. Resilience / Ability to adapt / innovation | 7. Open communication | 8. Marketing/sales | 9. Proper planning / having a good business plan and reviewing it regularly | 10. Winning awards / getting recognition from the industry you operate in | 11. Good management / ability to motivate employees / to diversify if needed The source also prints “Etc.”.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2026 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2026 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original sequence with its sound before answering. The paper allows three minutes to read Section A, then the complete sequence, its three parts, and the complete sequence again. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-b1", topicId: "lcvp-link-modules-1-2", conceptId: "b1",
+    section: "B", questionRef: "2026 CL Section B Q1",
+    stem: "Slí Abhaile Michael worked for a multinational company in the IT sector as a manufacturing technician. The company underwent a restructuring process leading to large scale job losses in its Irish facility. Unfortunately, Michael lost his job and was made unemployed for the first time in his life. He found it difficult to get another job as his skillset was specific to the IT sector. With his redundancy and savings used up, Michael could no longer afford to pay his rent and was evicted. Michael found himself homeless and turned to Depaul Ireland for help and support. They gave him temporary accommodation in a hostel and helped him to secure a place on a training course allowing him to upskill. Thankfully, on completion of the course, he secured a job and managed to get permanent accommodation. He was able to rebuild his life. Remembering the friendship and support he received from Depaul Ireland, Michael found ways to give back to the charity whenever he could. He helped with fundraising campaigns and volunteered on the soup run one night a week. As part of a new job, Michael was relocated to Drumbridge, a medium size town, in the south west. Recently, Michael noticed that there were people sleeping rough in the town centre. The impact of the recent surge in homelessness on the local community has been seen economically and socially in the town. Michael soon realised there wasn’t any homeless charity providing supports in the town. He decided to help by starting a soup run and distributing personal care packs to any homeless people he encountered. It was just himself and his wife, Rita, to begin with which meant they could only help a small number of people. Through setting up a social media account showing the work that they are doing, Michael and Rita now have 20 volunteers helping out regularly, which means they can help a greater number of clients. This account has also helped them to secure sponsorship and donations. As demand for their services grew, Michael decided to set up a charity, Slí Abhaile. He contacted the Charity Regulator who advised him that the trustees of the charity (Michael and Rita) must apply for a Registered Charity number, as it is a legal requirement. Michael has decided to form a committee, ‘The Slí Abhaile Action Group’, as he has many plans for the charity. He hopes to expand the range of supports he is currently offering, including a hostel in the medium term and building social housing in the long term. The action group will need a variety of skills and expertise to help develop and execute these plans successfully.",
+    questionText: "Explain three sources of finance that could be used to start a charity.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Explain three sources of finance that could be used to start a charity. 6 marks 3m @ 2 (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Explain three sources of finance that could be used to start a charity. 6 marks 3m @ 2 (1+1) Each response follows the printed component ladder; do not count the same expansion twice. The literal source “3m @ 2 (1+1)” is retained; the question asks for three sources and totals six. Complete original guidance: 1. Government funding/grants | 2. Donations/individuals or corporations | 3. Sponsorship/provide financial support for brand exposure | 4. Fundraising/events to boost finances and profile | 5. Personal funds | 6. Crowdfunding/Go fund me | 7. Loans", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Slí Abhaile — complete case study",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      10
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-b2i", topicId: "lcvp-link-modules-1-2", conceptId: "b2i",
+    section: "B", questionRef: "2026 CL Section B Q2(i)",
+    stem: "Slí Abhaile Michael worked for a multinational company in the IT sector as a manufacturing technician. The company underwent a restructuring process leading to large scale job losses in its Irish facility. Unfortunately, Michael lost his job and was made unemployed for the first time in his life. He found it difficult to get another job as his skillset was specific to the IT sector. With his redundancy and savings used up, Michael could no longer afford to pay his rent and was evicted. Michael found himself homeless and turned to Depaul Ireland for help and support. They gave him temporary accommodation in a hostel and helped him to secure a place on a training course allowing him to upskill. Thankfully, on completion of the course, he secured a job and managed to get permanent accommodation. He was able to rebuild his life. Remembering the friendship and support he received from Depaul Ireland, Michael found ways to give back to the charity whenever he could. He helped with fundraising campaigns and volunteered on the soup run one night a week. As part of a new job, Michael was relocated to Drumbridge, a medium size town, in the south west. Recently, Michael noticed that there were people sleeping rough in the town centre. The impact of the recent surge in homelessness on the local community has been seen economically and socially in the town. Michael soon realised there wasn’t any homeless charity providing supports in the town. He decided to help by starting a soup run and distributing personal care packs to any homeless people he encountered. It was just himself and his wife, Rita, to begin with which meant they could only help a small number of people. Through setting up a social media account showing the work that they are doing, Michael and Rita now have 20 volunteers helping out regularly, which means they can help a greater number of clients. This account has also helped them to secure sponsorship and donations. As demand for their services grew, Michael decided to set up a charity, Slí Abhaile. He contacted the Charity Regulator who advised him that the trustees of the charity (Michael and Rita) must apply for a Registered Charity number, as it is a legal requirement. Michael has decided to form a committee, ‘The Slí Abhaile Action Group’, as he has many plans for the charity. He hopes to expand the range of supports he is currently offering, including a hostel in the medium term and building social housing in the long term. The action group will need a variety of skills and expertise to help develop and execute these plans successfully.",
+    questionText: "List two stakeholders that should be involved in the Slí Abhaile Action Group.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 2,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "List two stakeholders that should be involved in the Slí Abhaile Action Group. 2 @ 1m", marks: 2, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":1,"options":["Michael","Rita","Volunteers","Service Users","Other voluntary groups in the local area e.g. Depaul Ireland","Members of local government (councils etc.)","Members of the local community","Suppliers","Donors/sponsors/investors","Businesses in the local area"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Slí Abhaile — complete case study",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-b2ii", topicId: "lcvp-link-modules-1-2", conceptId: "b2ii",
+    section: "B", questionRef: "2026 CL Section B Q2(ii)",
+    stem: "Slí Abhaile Michael worked for a multinational company in the IT sector as a manufacturing technician. The company underwent a restructuring process leading to large scale job losses in its Irish facility. Unfortunately, Michael lost his job and was made unemployed for the first time in his life. He found it difficult to get another job as his skillset was specific to the IT sector. With his redundancy and savings used up, Michael could no longer afford to pay his rent and was evicted. Michael found himself homeless and turned to Depaul Ireland for help and support. They gave him temporary accommodation in a hostel and helped him to secure a place on a training course allowing him to upskill. Thankfully, on completion of the course, he secured a job and managed to get permanent accommodation. He was able to rebuild his life. Remembering the friendship and support he received from Depaul Ireland, Michael found ways to give back to the charity whenever he could. He helped with fundraising campaigns and volunteered on the soup run one night a week. As part of a new job, Michael was relocated to Drumbridge, a medium size town, in the south west. Recently, Michael noticed that there were people sleeping rough in the town centre. The impact of the recent surge in homelessness on the local community has been seen economically and socially in the town. Michael soon realised there wasn’t any homeless charity providing supports in the town. He decided to help by starting a soup run and distributing personal care packs to any homeless people he encountered. It was just himself and his wife, Rita, to begin with which meant they could only help a small number of people. Through setting up a social media account showing the work that they are doing, Michael and Rita now have 20 volunteers helping out regularly, which means they can help a greater number of clients. This account has also helped them to secure sponsorship and donations. As demand for their services grew, Michael decided to set up a charity, Slí Abhaile. He contacted the Charity Regulator who advised him that the trustees of the charity (Michael and Rita) must apply for a Registered Charity number, as it is a legal requirement. Michael has decided to form a committee, ‘The Slí Abhaile Action Group’, as he has many plans for the charity. He hopes to expand the range of supports he is currently offering, including a hostel in the medium term and building social housing in the long term. The action group will need a variety of skills and expertise to help develop and execute these plans successfully.",
+    questionText: "Outline the benefits to any stakeholder of being involved in the Slí Abhaile Action Group.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Outline the benefits to any stakeholder of being involved in the Slí Abhaile Action Group. 3@ 2m (1+1) Valid expansion required/no repetition", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Outline the benefits to any stakeholder of being involved in the Slí Abhaile Action Group. 3@ 2m (1+1) Valid expansion required/no repetition Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Ability to influence decisions / have a voice | 2. Builds trust and good will | 3. Builds their reputation / tax breaks / improves CV | 4. Give them a chance to network with other stakeholders | 5. Allow for skills development | 6. Personal fulfilment/ gives purpose and meaning to personal values / align with charities mission | 7. Can see change/ impact of contribution / donation / volunteering | 8. Sense of belonging / identity / improved mental health", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Slí Abhaile — complete case study",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-b2iii", topicId: "lcvp-link-modules-1-3", conceptId: "b2iii",
+    section: "B", questionRef: "2026 CL Section B Q2(iii)",
+    stem: "Slí Abhaile Michael worked for a multinational company in the IT sector as a manufacturing technician. The company underwent a restructuring process leading to large scale job losses in its Irish facility. Unfortunately, Michael lost his job and was made unemployed for the first time in his life. He found it difficult to get another job as his skillset was specific to the IT sector. With his redundancy and savings used up, Michael could no longer afford to pay his rent and was evicted. Michael found himself homeless and turned to Depaul Ireland for help and support. They gave him temporary accommodation in a hostel and helped him to secure a place on a training course allowing him to upskill. Thankfully, on completion of the course, he secured a job and managed to get permanent accommodation. He was able to rebuild his life. Remembering the friendship and support he received from Depaul Ireland, Michael found ways to give back to the charity whenever he could. He helped with fundraising campaigns and volunteered on the soup run one night a week. As part of a new job, Michael was relocated to Drumbridge, a medium size town, in the south west. Recently, Michael noticed that there were people sleeping rough in the town centre. The impact of the recent surge in homelessness on the local community has been seen economically and socially in the town. Michael soon realised there wasn’t any homeless charity providing supports in the town. He decided to help by starting a soup run and distributing personal care packs to any homeless people he encountered. It was just himself and his wife, Rita, to begin with which meant they could only help a small number of people. Through setting up a social media account showing the work that they are doing, Michael and Rita now have 20 volunteers helping out regularly, which means they can help a greater number of clients. This account has also helped them to secure sponsorship and donations. As demand for their services grew, Michael decided to set up a charity, Slí Abhaile. He contacted the Charity Regulator who advised him that the trustees of the charity (Michael and Rita) must apply for a Registered Charity number, as it is a legal requirement. Michael has decided to form a committee, ‘The Slí Abhaile Action Group’, as he has many plans for the charity. He hopes to expand the range of supports he is currently offering, including a hostel in the medium term and building social housing in the long term. The action group will need a variety of skills and expertise to help develop and execute these plans successfully.",
+    questionText: "How can the Slí Abhaile Action Group ensure that meetings are effective?",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "How can the Slí Abhaile Action Group ensure that meetings are effective? 4@1m Answers may refer to the following:", marks: 4, contextNote: "Choose any 4 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Inform people in advance of the meeting taking place/invite the right people","Have an agenda prepared for items to be discussed","Have all resources prepared in advance – room, equipment, documentation, refreshments etc.","Have a chairperson and secretary","Stick to the agenda / keep meeting focused","Only allow one person to speak at a time / give everyone a chance to speak / encourage people to speak /use appropriate language","Make sure minutes are being taken/read/sent out","Decide on actions to be taken from the meeting, appoint people to the actions and dates for completion","Have a start and end time"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Slí Abhaile — complete case study",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-b3i", topicId: "lcvp-link-modules-1-2", conceptId: "b3i",
+    section: "B", questionRef: "2026 CL Section B Q3(i)",
+    stem: "Slí Abhaile Michael worked for a multinational company in the IT sector as a manufacturing technician. The company underwent a restructuring process leading to large scale job losses in its Irish facility. Unfortunately, Michael lost his job and was made unemployed for the first time in his life. He found it difficult to get another job as his skillset was specific to the IT sector. With his redundancy and savings used up, Michael could no longer afford to pay his rent and was evicted. Michael found himself homeless and turned to Depaul Ireland for help and support. They gave him temporary accommodation in a hostel and helped him to secure a place on a training course allowing him to upskill. Thankfully, on completion of the course, he secured a job and managed to get permanent accommodation. He was able to rebuild his life. Remembering the friendship and support he received from Depaul Ireland, Michael found ways to give back to the charity whenever he could. He helped with fundraising campaigns and volunteered on the soup run one night a week. As part of a new job, Michael was relocated to Drumbridge, a medium size town, in the south west. Recently, Michael noticed that there were people sleeping rough in the town centre. The impact of the recent surge in homelessness on the local community has been seen economically and socially in the town. Michael soon realised there wasn’t any homeless charity providing supports in the town. He decided to help by starting a soup run and distributing personal care packs to any homeless people he encountered. It was just himself and his wife, Rita, to begin with which meant they could only help a small number of people. Through setting up a social media account showing the work that they are doing, Michael and Rita now have 20 volunteers helping out regularly, which means they can help a greater number of clients. This account has also helped them to secure sponsorship and donations. As demand for their services grew, Michael decided to set up a charity, Slí Abhaile. He contacted the Charity Regulator who advised him that the trustees of the charity (Michael and Rita) must apply for a Registered Charity number, as it is a legal requirement. Michael has decided to form a committee, ‘The Slí Abhaile Action Group’, as he has many plans for the charity. He hopes to expand the range of supports he is currently offering, including a hostel in the medium term and building social housing in the long term. The action group will need a variety of skills and expertise to help develop and execute these plans successfully.",
+    questionText: "Identify three methods of promoting the charity Slí Abhaile.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "Identify three methods of promoting the charity Slí Abhaile. 6 marks 3@2m", marks: 6, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 2 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":3,"perOption":2,"options":["Social media/Twitter/Instagram/Snapchat/TikTok/Facebook","YouTube videos","Notice‐boards/posters in public buildings around the community","Leaflets/Flyers/direct mail campaign/door to door","TV","Radio","Visits to schools/local community groups","Website/App/Email","Word of mouth","Local business partnerships/ donation jar, newsletter on counter","Google ads","Influencers","Organising events","Sponsorship","Newspapers."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Slí Abhaile — complete case study",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-b3ii", topicId: "lcvp-link-modules-1-2", conceptId: "b3ii",
+    section: "B", questionRef: "2026 CL Section B Q3(ii)",
+    stem: "Slí Abhaile Michael worked for a multinational company in the IT sector as a manufacturing technician. The company underwent a restructuring process leading to large scale job losses in its Irish facility. Unfortunately, Michael lost his job and was made unemployed for the first time in his life. He found it difficult to get another job as his skillset was specific to the IT sector. With his redundancy and savings used up, Michael could no longer afford to pay his rent and was evicted. Michael found himself homeless and turned to Depaul Ireland for help and support. They gave him temporary accommodation in a hostel and helped him to secure a place on a training course allowing him to upskill. Thankfully, on completion of the course, he secured a job and managed to get permanent accommodation. He was able to rebuild his life. Remembering the friendship and support he received from Depaul Ireland, Michael found ways to give back to the charity whenever he could. He helped with fundraising campaigns and volunteered on the soup run one night a week. As part of a new job, Michael was relocated to Drumbridge, a medium size town, in the south west. Recently, Michael noticed that there were people sleeping rough in the town centre. The impact of the recent surge in homelessness on the local community has been seen economically and socially in the town. Michael soon realised there wasn’t any homeless charity providing supports in the town. He decided to help by starting a soup run and distributing personal care packs to any homeless people he encountered. It was just himself and his wife, Rita, to begin with which meant they could only help a small number of people. Through setting up a social media account showing the work that they are doing, Michael and Rita now have 20 volunteers helping out regularly, which means they can help a greater number of clients. This account has also helped them to secure sponsorship and donations. As demand for their services grew, Michael decided to set up a charity, Slí Abhaile. He contacted the Charity Regulator who advised him that the trustees of the charity (Michael and Rita) must apply for a Registered Charity number, as it is a legal requirement. Michael has decided to form a committee, ‘The Slí Abhaile Action Group’, as he has many plans for the charity. He hopes to expand the range of supports he is currently offering, including a hostel in the medium term and building social housing in the long term. The action group will need a variety of skills and expertise to help develop and execute these plans successfully.",
+    questionText: "Outline the factors that Slí Abhaile may consider when deciding the location for their hostel.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Outline the factors that Slí Abhaile may consider when deciding the location for their hostel? 4 marks 2@2m (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Outline the factors that Slí Abhaile may consider when deciding the location for their hostel? 4 marks 2@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Accessibility / close to the service users / close to public transport | 2. Availability/cost of premises | 3. Proximity/Availability of volunteers | 4. Legal/Environmental issues | 5. Area with the greatest need | 6. Whether there will be objections from local people | 7. Close to essential services like hospitals, social workers/education facilities The source also prints “Etc.”.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Slí Abhaile — complete case study",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-b3iii", topicId: "lcvp-link-modules-1-3", conceptId: "b3iii",
+    section: "B", questionRef: "2026 CL Section B Q3(iii)",
+    stem: "Slí Abhaile Michael worked for a multinational company in the IT sector as a manufacturing technician. The company underwent a restructuring process leading to large scale job losses in its Irish facility. Unfortunately, Michael lost his job and was made unemployed for the first time in his life. He found it difficult to get another job as his skillset was specific to the IT sector. With his redundancy and savings used up, Michael could no longer afford to pay his rent and was evicted. Michael found himself homeless and turned to Depaul Ireland for help and support. They gave him temporary accommodation in a hostel and helped him to secure a place on a training course allowing him to upskill. Thankfully, on completion of the course, he secured a job and managed to get permanent accommodation. He was able to rebuild his life. Remembering the friendship and support he received from Depaul Ireland, Michael found ways to give back to the charity whenever he could. He helped with fundraising campaigns and volunteered on the soup run one night a week. As part of a new job, Michael was relocated to Drumbridge, a medium size town, in the south west. Recently, Michael noticed that there were people sleeping rough in the town centre. The impact of the recent surge in homelessness on the local community has been seen economically and socially in the town. Michael soon realised there wasn’t any homeless charity providing supports in the town. He decided to help by starting a soup run and distributing personal care packs to any homeless people he encountered. It was just himself and his wife, Rita, to begin with which meant they could only help a small number of people. Through setting up a social media account showing the work that they are doing, Michael and Rita now have 20 volunteers helping out regularly, which means they can help a greater number of clients. This account has also helped them to secure sponsorship and donations. As demand for their services grew, Michael decided to set up a charity, Slí Abhaile. He contacted the Charity Regulator who advised him that the trustees of the charity (Michael and Rita) must apply for a Registered Charity number, as it is a legal requirement. Michael has decided to form a committee, ‘The Slí Abhaile Action Group’, as he has many plans for the charity. He hopes to expand the range of supports he is currently offering, including a hostel in the medium term and building social housing in the long term. The action group will need a variety of skills and expertise to help develop and execute these plans successfully.",
+    questionText: "Construct an action plan for Slí Abhaile to set up the hostel, using relevant headings.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 2,
+    rows: [
+    { id: "action-plan-content", kind: "criterion", verbatim: "Construct an action plan", marks: 2, contextNote: "The source allocates 2@1m to content and explicitly states NO MARKS FOR HEADINGS. Two valid content points are claimable; selecting a heading alone earns no mark. The complete original scaffold is: Aims/Objectives | Research methods | Analysis of research | Resources | Action steps | Schedule of time | Costings/finance | Evaluation methods. No completed model action plan is printed; none has been invented.", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Slí Abhaile — complete case study",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c1a", topicId: "lcvp-link-modules-0-1", conceptId: "c1a",
+    section: "C", questionRef: "2026 CL Section C Q1(a)",
+    stem: "Read the job advertisement below and answer the questions which follow. Beauty by Lola, a make‐up brand on the rise, is looking for a Content Creator Key responsibilities include video production, content creation, video editing, storytelling and social media management. The successful applicant must have technical, creative and communication skills. Send your Curriculum Vitae and examples of your work to careers@beautybylola.ie.",
+    questionText: "Identify two skills necessary for this job.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "Identify two skills necessary for this job. 4 marks 2@2m (0/2)", marks: 4, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 2 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Technical / IT","Creative","Communication"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-text",
+                "label": "OFFICIAL SOURCE",
+                "title": "Complete Beauty by Lola job advertisement",
+                "pages": [
+                      16
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c1b", topicId: "lcvp-link-modules-0-1", conceptId: "c1b",
+    section: "C", questionRef: "2026 CL Section C Q1(b)",
+    stem: "Read the job advertisement below and answer the questions which follow. Beauty by Lola, a make‐up brand on the rise, is looking for a Content Creator Key responsibilities include video production, content creation, video editing, storytelling and social media management. The successful applicant must have technical, creative and communication skills. Send your Curriculum Vitae and examples of your work to careers@beautybylola.ie.",
+    questionText: "Why have the applicants been asked to submit examples of their work when applying for this position?",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Why have the applicants been asked to submit examples of their work when applying for this position? 4 marks 2@2m (1+1) + valid expansion (no repetition)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Why have the applicants been asked to submit examples of their work when applying for this position? 4 marks 2@2m (1+1) + valid expansion (no repetition) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. To prove/verify skills / that they have worked in this area in the past / being honest about their previous experience | 2. To show their technical ability / creativity in the areas that are required for the job | 3. To show that the quality of their work is a good fit for the business | 4. To check their understanding of the industry, they would need knowledge of makeup and skincare products and trends, worked samples show that they understand their target audience | 5. To make the interview process more efficient / to enable comparison of candidates based on real examples of their work rather than qualifications | 6. To see engagement with their previous posts from followers / will show how they attract and engage an audience.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-text",
+                "label": "OFFICIAL SOURCE",
+                "title": "Complete Beauty by Lola job advertisement",
+                "pages": [
+                      16
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c1c", topicId: "lcvp-link-modules-0-1", conceptId: "c1c",
+    section: "C", questionRef: "2026 CL Section C Q1(c)",
+    stem: "Read the job advertisement below and answer the questions which follow. Beauty by Lola, a make‐up brand on the rise, is looking for a Content Creator Key responsibilities include video production, content creation, video editing, storytelling and social media management. The successful applicant must have technical, creative and communication skills. Send your Curriculum Vitae and examples of your work to careers@beautybylola.ie.",
+    questionText: "Describe four ways you would prepare for a job interview.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 8,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Describe four ways you would prepare for a job interview. 8 marks 4@2m (1+1)", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: Describe four ways you would prepare for a job interview. 8 marks 4@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Carefully examine the job description, the more you can align yourself to these details, there is more chance of you getting this job | 2. Research the company, their products or services online / in the newspapers / trade magazines | 3. Do an interview preparation course / prepare and practice questions and answers / do a mock interview with a friend or family member. This will help to improve your confidence, give you a chance to practice your interview | 4. Interview etiquette - proper handshake / maintaining eye contact / sitting up straight / gestures / diction, so you come across well in the interview | 5. Pick appropriate clothes to wear for the interview / make sure your clothes are clean and appropriate for the interview / you should also be well groomed. This will make a good first impression | 6. Plan your transport to the interview / do a dry run the day before to make sure you know where to go and how long it will take to get there. This will ensure you will arrive on time for the interview / be early | 7. Reread your application form or CV, to refresh your memory and prepare for potential questions on them | 8. Prepare in advance additional documents / portfolio work / you may have been asked to bring to the interview / safe pass / certification, so as to not be looking for these minutes before your interview | 9. Prepare questions you would like to ask at the end of you interview, shows you have given some thought to the job / contract / duties etc | 10. Mentally prepare, good night’s sleep, eat well before the interview so you’re not tired, hungry.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-text",
+                "label": "OFFICIAL SOURCE",
+                "title": "Complete Beauty by Lola job advertisement",
+                "pages": [
+                      16
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c1d", topicId: "lcvp-link-modules-0-0", conceptId: "c1d",
+    section: "C", questionRef: "2026 CL Section C Q1(d)",
+    stem: "Read the job advertisement below and answer the questions which follow. Beauty by Lola, a make‐up brand on the rise, is looking for a Content Creator Key responsibilities include video production, content creation, video editing, storytelling and social media management. The successful applicant must have technical, creative and communication skills. Send your Curriculum Vitae and examples of your work to careers@beautybylola.ie.",
+    questionText: "Identify and explain three obligations an employer has regarding the health, safety and welfare of their employees at work.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 9,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Identify and explain three obligations an employer has regarding the health, safety and welfare of their employees at work. 9 marks 3@3m (1+1+1)", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Identify and explain three obligations an employer has regarding the health, safety and welfare of their employees at work. 9 marks 3@3m (1+1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. They must prepare a safety statement (a document that outlines how a company manages health and safety / ensure risks are assessed) | 2. To provide safe working conditions / proper facilities / breaks / machines working correctly etc. The employer must ensure that equipment is safe and workable/maintained | 3. To provide proper training / instruction in appropriate language | 4. Provide P.P.E. (Personal Protective Equipment) where necessary e.g. goggles, steel- toe cap boots, helmets, hard hats, ear plugs, gloves, aprons, hair nets etc | 5. Adequate signs displayed / fire drills / fire equipment / fire exits / emergency procedures | 6. Take steps to prevent bullying. There should be procedures in place to deal with harassment, these issues should be dealt with immediately | 7. Appoint a Safety Officer / report accidents to Health and Safety Officer", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-text",
+                "label": "OFFICIAL SOURCE",
+                "title": "Complete Beauty by Lola job advertisement",
+                "pages": [
+                      16
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c2a", topicId: "lcvp-link-modules-1-0", conceptId: "c2a",
+    section: "C", questionRef: "2026 CL Section C Q2(a)",
+    stem: "Enterprise Skills.",
+    questionText: "What are the characteristics of a good leader?",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "What are the characteristics of a good leader? 4 marks 2@2m (0/2)", marks: 4, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 2 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":2,"perOption":2,"options":["A good planner to ensure goals are achieved and carried out","A good decision maker so that progress can be made","A good communicator and listener","Ability to solve problems","Fair in all their dealings with people (integrity /honesty/empathy), results in high levels of trust by employees","Being innovative and not afraid to try out new things","A good motivator so that he/she can encourage others in the organisation","The ability to delegate and not take on all task themselves","Decisive/able to make a decision and take the consequences","Loyal: stands up for and defends the team in times of crisis","Enthusiastic/positive attitude/energises the team","Conscientiousness: accountable for reaching the organisation’s goals. Having a sense of responsibility or duty motivates the team to follow suit","Time management","Competent: has complete knowledge and familiarity of the work of the team"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c2b", topicId: "lcvp-link-modules-1-0", conceptId: "c2b",
+    section: "C", questionRef: "2026 CL Section C Q2(b)",
+    stem: "Enterprise Skills.",
+    questionText: "Explain the steps you might take to improve personal enterprise skills.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Explain the steps you might take to improve personal enterprise skills. 4 marks 2@2m (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Explain the steps you might take to improve personal enterprise skills. 4 marks 2@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Make sure to understand clearly what personal enterprise skills are | 2. Do research on what skills are good to have and how to improve them e.g. read books/websites/videos/follow on social media | 3. Develop a personal development plan | 4. Ask for feedback from a trusted person on skills needed to improve | 5. Do a training course/workshop/webinar/online course | 6. Practice the skill whenever you can/start a small project | 7. Network/peers/clients/partners/mentors/other entrepreneurs | 8. Get experience using the skill by volunteering / work shadowing", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c2c", topicId: "lcvp-link-modules-1-0", conceptId: "c2c",
+    section: "C", questionRef: "2026 CL Section C Q2(c)",
+    stem: "Enterprise Skills.",
+    questionText: "Name three barriers to good communication and describe how they might be overcome.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 9,
+    rows: [
+    { id: "barrier-1", kind: "criterion", verbatim: "Name of barrier", marks: 3, contextNote: "Choose THREE different barriers. Each response requires the barrier name (1) and how to overcome THAT barrier (1+1). No repetition of descriptions. Complete original paired profiles: Language: the person giving the information uses terms that are too technical or difficult for the receiver to understand Overcome: Use simple language that everyone can understand | Authority: Too many people may be giving one-person instructions Overcome: Have a clear chain of command so that the receiver knows who is in charge. | Noise: People cannot hear the message that is being conveyed/interference Overcome: Give the message at a time when the receiver can hear/is not distracted | Time: The message may be relayed in a rush/the receiver does not have time to listen/understand/respond to the message Overcome: Ensure that the message is given at a time when it can be given slowly and clearly and received with time to ask question/seek clarification if questions arise | Information Overload: A person may be receiving too much information at one time, leading to confusion or communications being missed Overcome: Reduce the number of communications being directed at one time/to one person | No Record: Important messages are not given in writing, which may lead to disagreements later over what was relayed Overcome: Always make sure, if important, that written evidence of the message exists to avoid confusion later | Emotional state: stress/anger/conflict/lack of confidence/prejudice/doesn’t get on with the person/ not listening/ can affect how messages are sent, received or interpreted Overcome: stay calm and respectful, practice active listening, manage your own emotions, try create a supportive environment where people can express themselves | Cultural differences: people have different values, beliefs, body language/ways of expression, which can lead to misunderstandings Overcome: be respectful, open minded, learn about other cultures, avoid assumption and stereotypes / ask for clarification if unsure.", permittedMarks: [0,1,2,3], parts: [{"id":"name","verbatim":"Name of barrier","marks":1,"permittedMarks":[0,1]},{"id":"overcome","verbatim":"Description of how to overcome","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "barrier-2", kind: "criterion", verbatim: "Name of barrier", marks: 3, contextNote: "Use a different barrier and its matching solution. Name 1; explanation 0–2 on the printed 1+1 allocation.", permittedMarks: [0,1,2,3], parts: [{"id":"name","verbatim":"Name of barrier","marks":1,"permittedMarks":[0,1]},{"id":"overcome","verbatim":"Description of how to overcome","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "barrier-3", kind: "criterion", verbatim: "Name of barrier", marks: 3, contextNote: "Use a different barrier and its matching solution. Name 1; explanation 0–2 on the printed 1+1 allocation.", permittedMarks: [0,1,2,3], parts: [{"id":"name","verbatim":"Name of barrier","marks":1,"permittedMarks":[0,1]},{"id":"overcome","verbatim":"Description of how to overcome","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c2d", topicId: "lcvp-link-modules-1-0", conceptId: "c2d",
+    section: "C", questionRef: "2026 CL Section C Q2(d)",
+    stem: "Enterprise Skills.",
+    questionText: "Outline the benefits of teamwork to an individual team member.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 8,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Outline the benefits of teamwork to an individual team member. 8 marks 4@2m (1+1)", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: Outline the benefits of teamwork to an individual team member. 8 marks 4@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Work is shared / job gets done quicker / better quality work / reduced stress levels | 2. They will be more likely to be part of a successful event because they will work with people who have a variety of skills | 3. The team member will be exposed to a variety of ideas / will find it easier to solve problems quicker / better decisions made | 4. The student will be happier and will work better when they are working with people who have a common interest / makes new friendships | 5. In case of absenteeism of another team member it is easier to take over as you have been working closely together | 6. No one person has too much responsibility / is under too much pressure / everyone takes ownership of the parts of the task they are responsible for | 7. Skills learned: Learning / new skill development / adopt best practice from peers. Individuals learn from each other’s knowledge and experience | 8. They will have increased confidence. Contributing to the success of the task can improve a person’s self-confidence. Positive feedback may encourage the team member to contribute more to the task to help them improve.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c3a", topicId: "lcvp-link-modules-1-1", conceptId: "c3a",
+    section: "C", questionRef: "2026 CL Section C Q3(a)",
+    stem: "Visitors to the classroom are a valuable way of learning about local businesses/community organisations.",
+    questionText: "Describe two ways your class would decide on which business/organisation to invite in.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "Describe two ways your class would decide on which business/organisation to invite in. 4 marks 2@2m (0/2)", marks: 4, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 2 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Class discussion","Take a vote","Brainstorming activity","Different groups research various business in the area. Each group makes a class presentation about different businesses. Class can decide on business to invite in","School or family member has links with a business/organisation","Look at companies they are interested in/area of the course being studied","Career Opportunities/help them to decide on a career they want to pursue","Class teacher/past/current LCVP students may have advice on the best business to invite in / businesses willing to talk part","Survey/questionnaire on Google/Teams"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c3b", topicId: "lcvp-link-modules-0-0", conceptId: "c3b",
+    section: "C", questionRef: "2026 CL Section C Q3(b)",
+    stem: "Visitors to the classroom are a valuable way of learning about local businesses/community organisations.",
+    questionText: "Explain what is meant by an ‘inclusive workplace’.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "definition", kind: "criterion", verbatim: "Mix of people", marks: 1, contextNote: "One opening concept: “Mix of people” OR “Not discriminated”, not both. Complete original guidance: An inclusive workplace is one whereby people of all identities and backgrounds can be themselves and contribute while feeling valued and included. It’s about creating a culture where everyone feels welcomed, has access to opportunities and is supported to thrive. Mix of people (1m) + 3 expansions (3@1m) or Not discriminated (1m) + 3 expansions (3@1m) treated equally due to age/gender/sexuality/family status/marital status/race/beliefs/disabilities etc Everyone is equal/respected Differences are acknowledged Empowered to contribute their best work", permittedMarks: [0,1] },
+    { id: "expansions", kind: "criterion", verbatim: "Everyone is equal/respected", marks: 3, contextNote: "THREE valid expansions of the same definition, 1 mark each; use the full original guidance above. The opening and expansions are different required components.", permittedMarks: [0,1,2,3], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c3c", topicId: "lcvp-link-modules-1-1", conceptId: "c3c",
+    section: "C", questionRef: "2026 CL Section C Q3(c)",
+    stem: "Visitors to the classroom are a valuable way of learning about local businesses/community organisations.",
+    questionText: "Describe three ways participation in the organisation and running of this activity would benefit you in preparing for your Leaving Certificate.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 9,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Describe three ways participation in the organisation and running of this activity would benefit you in preparing for your Leaving Certificate. 9 marks 3@3m (1 + 1+1)", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe three ways participation in the organisation and running of this activity would benefit you in preparing for your Leaving Certificate. 9 marks 3@3m (1 + 1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. To learn about the business and its benefit to the local area. | 2. It gives the students an opportunity to improve their communication skills. | 3. It gives the class an opportunity to put teamwork into practice/planning/setting goals/managing time /questions/review/evaluation | 4. It can be used to prepare a portfolio item e.g. Summary Report. | 5. They can find out about employment / career opportunities in the local area. | 6. May develop links with the local business and get an opportunity to do work experience as a result of the visit. | 7. To learn about the world of work / health and safety. | 8. To improve/develop their personal skills e.g. planning, organisation, interpersonal etc./problem solving | 9. Increased confidence/independence/take ownership/feel capable and proactive | 10. Adaption to new environment/type of learning/cope with challenges | 11. May give you some knowledge that can apply to some Leaving Certificate exams e.g. Business, Link Modules etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c3d", topicId: "lcvp-link-modules-1-1", conceptId: "c3d",
+    section: "C", questionRef: "2026 CL Section C Q3(d)",
+    stem: "Visitors to the classroom are a valuable way of learning about local businesses/community organisations.",
+    questionText: "Discuss how tariffs imposed by other countries affect businesses in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 8,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Discuss how tariffs imposed by other countries affect businesses in Ireland. 8 marks 4@2m (1+1)", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: Discuss how tariffs imposed by other countries affect businesses in Ireland. 8 marks 4@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Increased costs as tariffs act as a tax on goods entering other country / costs of raw materials become higher / making Irish products more expensive abroad. This can reduce demand as customers switch to cheaper local/alternative products /may shut down | 2. Reduced sales/output/reduced profits. Companies must decide whether to absorb the higher costs or pass the higher costs onto the customer / risk of reducing sales | 3. Increased competition from countries that do not have tariffs imposed on them. When tariffs are applied Irish goods are less competitive to local producers. Businesses may struggle to maintain a market share in key export markets. | 4. The company may have to reduce its workforce. Many Irish businesses depend on exports/ tariffs lead to reduced output / slower economic growth / fewer jobs being created / reduced work hours / possible job losses | 5. The company may have to seek out new markets | 6. It may affect only certain industries, leaving certain sectors more vulnerable | 7. Uncertainty around trade tariffs / delays future investment decisions / job creation | 8. Irish companies are part of a global supply chain. Tariffs disrupt these chains / increasing costs and delays. Businesses may need to find new suppliers | 9. Businesses could produce the product themselves instead, which alleviates the costs of tariffs", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c4a", topicId: "lcvp-link-modules-0-3", conceptId: "c4a",
+    section: "C", questionRef: "2026 CL Section C Q4(a)",
+    stem: "Work experience/shadowing is a great learning experience.",
+    questionText: "State two personal goals you may have had in relation to your work experience/shadowing.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "State two personal goals you may have had in relation to your work experience/ shadowing. 4 marks 2@2m (0/2)", marks: 4, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 2 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":2,"perOption":2,"options":["To decide if this job/career is for me.","To experience the world of work/time keeping/longer day.","To learn a new skill/teamwork/communication.","To be more confident when interacting with adults.","To improve my CV by having work experience or a referee.","To be able to write up my Diary of Work Experience for my portfolio.","To gain a contact for future employment/summer work/part-time job."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c4b", topicId: "lcvp-link-modules-0-3", conceptId: "c4b",
+    section: "C", questionRef: "2026 CL Section C Q4(b)",
+    stem: "Work experience/shadowing is a great learning experience.",
+    questionText: "Interpersonal skills are very important in the workplace. Describe two different situations where interpersonal skills could be demonstrated during work placement.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Interpersonal skills are very important in the workplace. Describe two different situations where interpersonal skills could be demonstrated during work placement. 4 marks 2@2m (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Interpersonal skills are very important in the workplace. Describe two different situations where interpersonal skills could be demonstrated during work placement. 4 marks 2@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Dealing with customers/clients, answering queries/professionalism | 2. Asking others for help with a task/interacting with other staff/teamwork/ collaboration | 3. Interviewing a supervisor/owner about the type of work/preparing my career investigation | 4. Dealing with a difficult task/stressful situation/problem solving | 5. Feedback/review | 6. Active listening / participating in meetings / note taking / eye contact / clarifying duties The source also prints “Etc.”.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c4c", topicId: "lcvp-link-modules-0-3", conceptId: "c4c",
+    section: "C", questionRef: "2026 CL Section C Q4(c)",
+    stem: "Work experience/shadowing is a great learning experience.",
+    questionText: "Write the email you could have sent when seeking your work experience/shadowing placement.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 8,
+    rows: [
+    { id: "email-1", kind: "point", verbatim: "To: email address", marks: 1, contextNote: "Required component of YOUR placement request email, 1 or 0 marks. The source prints this eight-component grid, not a model email; none is invented." },
+    { id: "email-2", kind: "point", verbatim: "Subject line", marks: 1 },
+    { id: "email-3", kind: "point", verbatim: "Salutation", marks: 1 },
+    { id: "email-4", kind: "point", verbatim: "Introduction", marks: 1 },
+    { id: "email-5", kind: "point", verbatim: "Reason for email", marks: 1 },
+    { id: "email-6", kind: "point", verbatim: "Dates", marks: 1 },
+    { id: "email-7", kind: "point", verbatim: "CV attached", marks: 1 },
+    { id: "email-8", kind: "point", verbatim: "Closing", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c4d", topicId: "lcvp-link-modules-1-4", conceptId: "c4d",
+    section: "C", questionRef: "2026 CL Section C Q4(d)",
+    stem: "Work experience/shadowing is a great learning experience.",
+    questionText: "Outline the areas you would address as part of the evaluation of your work experience/ shadowing diary.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 9,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Outline the areas you would address as part of the evaluation of your work experience/shadowing diary. 9 mark 3@3m (1+1+1)", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Outline the areas you would address as part of the evaluation of your work experience/shadowing diary. 9 mark 3@3m (1+1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Evaluation of key accomplishments/results/skills learnt/information gained | 2. Career aspiration/future studies - Do they still want/does not want to pursue the career and why. How are they going to achieve the career/career plan/course? | 3. How what is learnt can be applied at - home? | 4. How what is learnt can be applied at - school? | 5. How what is learnt can be applied in the - community?", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c5a", topicId: "lcvp-link-modules-0-2", conceptId: "c5a",
+    section: "C", questionRef: "2026 CL Section C Q5(a)",
+    stem: "Career Investigation.",
+    questionText: "(i) What job would you like to do when you leave school? (ii) What qualification would help you to achieve this career?",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "career", kind: "criterion", verbatim: "Any career mentioned", marks: 2, contextNote: "Choose your career. The next required row must name a valid qualification/training for THIS SAME career; no career combinations or invented models.", permittedMarks: [0,2] },
+    { id: "qualification", kind: "criterion", verbatim: "One valid qualification/training", marks: 2, contextNote: "Required qualification/training matching the career named above; 2 or 0 marks.", permittedMarks: [0,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c5b", topicId: "lcvp-link-modules-0-2", conceptId: "c5b",
+    section: "C", questionRef: "2026 CL Section C Q5(b)",
+    stem: "Career Investigation.",
+    questionText: "What are the benefits of carrying out a career investigation?",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "What are the benefits of carrying out a career investigation? 4 marks 2@2m (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: What are the benefits of carrying out a career investigation? 4 marks 2@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Get information on the work involved/duties of the career | 2. Find out the skills/qualities necessary for the career/ identify personal skills gaps | 3. Find entry routes/qualifications needed/ into the career/pathways/ do you have the necessary subjects/levels | 4. Find out if you are suitable/if you would still like to pursue this career/academic motivation | 5. You may get to carry out work experience/interview someone in the career | 6. Evaluate the career: You can find out the pros/cons of the career, so you can make an informed decision | 7. Evaluate undertaking the career investigation: You get to develop skills/research/interview/report writing etc. | 8. Can be used to create an item for their portfolio.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c5c", topicId: "lcvp-link-modules-0-2", conceptId: "c5c",
+    section: "C", questionRef: "2026 CL Section C Q5(c)",
+    stem: "Career Investigation. (i) What job would you like to do when you leave school? (ii) What qualification would help you to achieve this career?",
+    questionText: "Explain an out of school activity you engaged in to investigate this career. Give two pieces of information that you learned from this activity.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 9,
+    rows: [
+    { id: "experience-name", kind: "criterion", verbatim: "name the experience", marks: 1, contextNote: "Choose ONE out-of-school experience you actually used to investigate the SAME career. All original activity models: Work experience/job | Work shadowing | Relevant taster course | Careers exhibition | Interview a person in your chosen career | College open days | Volunteering/internships.", permittedMarks: [0,1] },
+    { id: "experience-explanation", kind: "criterion", verbatim: "Explain the experience", marks: 2, contextNote: "Explain that SAME experience using the source’s 1m + 1m allocation.", permittedMarks: [0,1,2] },
+    { id: "information-learned", kind: "criterion", verbatim: "2 pieces of information", marks: 6, contextNote: "Two pieces learned from that SAME experience, 3 marks each (1+1+1). The source does not print a personal experience or learned-information model; none is invented.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original career and qualification context",
+                "pages": [
+                      28
+                ],
+                "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c5d", topicId: "lcvp-link-modules-0-0", conceptId: "c5d",
+    section: "C", questionRef: "2026 CL Section C Q5(d)",
+    stem: "Career Investigation.",
+    questionText: "Explain two types of training in the workplace and how each can benefit an employee.",
+    tariffModel: {"kind":"questionTotal","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 8,
+    rows: [
+    { id: "training-profile-1", kind: "point", verbatim: "On the job / hands on training / coaching / mentoring / job shadowing. Training is carried out while the employee is doing the job Benefit: learns a practical skill in a real work environment,hands on experience, can ask questions, get feedback,builds confidence in performing the task", marks: null, contextNote: "Numeric scoring held: the source prints a total of 8 marks, “Type of Training 2@2m (1+1)” and “2 Benefits 2@1m”. Those listed components total 6, not 8. Both allocations are preserved; no extra marks or revised per-benefit tariff are inferred. Compare TWO complete training/benefit profiles from the full pool; confidence only pending authoritative clarification." },
+    { id: "training-profile-2", kind: "point", verbatim: "Off the Job / daily work environment /workshops. Training takes place away from the workplace, eg classroom,college or training centre. Benefit: can focus fully with out work place distractions, learn new theories / ideas, improve qualifications and knowledge, opportunity to interact with others from different workplaces", marks: null },
+    { id: "training-profile-3", kind: "point", verbatim: "Induction/orientation. Training given to a new employee. It introduces them to the company, its policies, procedures and their role. Benefits: helpd them to settle in, reduces anxiety and confusion, gives a clear understanding of job responsibilities, improves confidence", marks: null },
+    { id: "training-profile-4", kind: "point", verbatim: "E- Learning / online training / digital training modules. Training delivered through online courses or digital platforms. Benefit: Flexible, can learn at their own pace, accessible from anywhere, can revisit material, saves time and travel costs", marks: null },
+    { id: "training-profile-5", kind: "point", verbatim: "Health and safety training: trains the employee to work safely and follow regulations to prevent accidents or injuries. Benefit: keeps them safe at work, reduces accidents, build awareness of hazards, builds confidence in handling emergencies", marks: null },
+    { id: "training-profile-6", kind: "point", verbatim: "Skills training/staff development training: training to improve a specific skill/ability eg. Food safety, IT skills, communication or technical skills. Benefit: improved job performance, increased efficiency and productivity, keeping up with changes in technology, enhanced career opportunities, builds leadership/management skill, increased motivation / job satisfaction, opens up promotion opportunities, enhances your CV, greater renumeration.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c6a", topicId: "lcvp-link-modules-1-1", conceptId: "c6a",
+    section: "C", questionRef: "2026 CL Section C Q6(a)",
+    stem: "A Corporate Social Responsibility policy can have a positive or negative effect on stakeholders.",
+    questionText: "Explain the term Corporate Social Responsibility (CSR).",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "Explain the term Corporate Social Responsibility (CSR). 4 marks 2@2m (0/2)", marks: 4, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 2 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":2,"options":["It means that companies try to do good things for people and the planet","They think about how their actions affect their employees, customers and the environment","It is not about making money but also about being responsible and making a positive impact on society/communities","This includes things like being environmentally friendly, helping others, and being fair in how they do business."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c6b", topicId: "lcvp-link-modules-1-1", conceptId: "c6b",
+    section: "C", questionRef: "2026 CL Section C Q6(b)",
+    stem: "A Corporate Social Responsibility policy can have a positive or negative effect on stakeholders.",
+    questionText: "When developing a CSR policy, suggest four items a company can include to support the environment.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "When developing a CSR policy, suggest four items a company can include to support the environment. 4 marks 4 @1 mark", marks: 4, contextNote: "Choose any 4 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Consider using solar panels to supply your own energy","Go paperless","Reduce packaging on your products","Recycle waste","Reuse where raw materials/end products where possible","Allow remote working to reduce emissions from commuting/provide charging stations for employees","Source raw materials as locally as possible","Use electric vehicles","Source produce only from eco-friendly suppliers","Conserve water usage","Train employees on green initiatives","Get involved in community initiatives that support the environment – beach clean ups","Conduct a carbon footprint assessment and set net zero targets – carbon measure it","Adopt sustainable purchasing/supply chain- source responsibly","Foster environmental awareness and employee engagement- train and engage employees","Bike to work scheme"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c6c", topicId: "lcvp-link-modules-1-1", conceptId: "c6c",
+    section: "C", questionRef: "2026 CL Section C Q6(c)",
+    stem: "A Corporate Social Responsibility policy can have a positive or negative effect on stakeholders.",
+    questionText: "Discuss the benefits that businesses bring to their local area.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 8,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Discuss the benefits that businesses bring to their local area. 8 marks 4 @2m (1+1)", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: Discuss the benefits that businesses bring to their local area. 8 marks 4 @2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Employment given in the area | 2. Employees have money to spend, other businesses will do well / raise the standard of living in the area | 3. Support local area through sponsorship of local events/donations/facilities. | 4. Fosters a spirit of entrepreneurship in an area/other businesses are attracted to the area / reputation of the area improved | 5. May improve the infrastructure of the area | 6. Other services and supply businesses benefit such as hotels B&Bs, financial services, shops | 7. Opportunities provided to students – work experience, work shadowing, visits in, visits out, mentors for school projects | 8. Provides a service/product that was not available previously.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c6d", topicId: "lcvp-link-modules-1-1", conceptId: "c6d",
+    section: "C", questionRef: "2026 CL Section C Q6(d)",
+    stem: "A Corporate Social Responsibility policy can have a positive or negative effect on stakeholders.",
+    questionText: "Explain the value of CSR to a business.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 9,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Explain the value of CSR to a business. 9 marks 3@3m (1+1+1)", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Explain the value of CSR to a business. 9 marks 3@3m (1+1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Attract staff / staff retention / prefer to work for purpose driven/responsible companies. CSR activities e.g. volunteering improves staff morale and teamwork, higher job satisfaction/productivity | 2. Attracts new customers / trust / fuels creativity and innovation / consistent support of community initiatives | 3. Improved supplier relationships / suppliers will be loyal as the business has good practices | 4. Support from the community as the business is environmentally aware / competitive edge from its competitors | 5. May increase the profit of a business / cost savings / reduced costs. Environmental actions like saving energy and lowering waste can lower expenses / improves efficiency and profitability | 6. Good/enhanced reputation / brand image / good advertisement / builds positive brand image / customer loyalty | 7. helps businesses follow laws related to environmental and ethical practices / risks of fines / legal issues / bad publicity | 8. May attract investors to the business / investor more likely to invest in businesses that manage risks and act ethically / improves access to funding and growth opportunities.", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c7a", topicId: "lcvp-link-modules-1-3", conceptId: "c7a",
+    section: "C", questionRef: "2026 CL Section C Q7(a)",
+    stem: "Your Link Modules class has been involved in carrying out an enterprise activity.",
+    questionText: "List four methods of idea generation for a class enterprise activity.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "anyN", verbatim: "List four methods of idea generation for a class enterprise activity. 4 marks 4@1m", marks: 4, contextNote: "Choose any 4 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Brainstorming / suggestion box / mind map / class discussion / placemats","Asking other students / ask teacher/family/friends","Researching projects – online/books/newspapers/library/magazines","Reviewing needs in school/locality / study hobbies and interests / look at what is on sale in the shops","Adapt competitor’s ideas/ideas from abroad","Finding solutions to problems","Do market research/survey/questionnaire","Copy idea from a previous business"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c7bi", topicId: "lcvp-link-modules-1-3", conceptId: "c7bi",
+    section: "C", questionRef: "2026 CL Section C Q7(b)(i)",
+    stem: "Your Link Modules class has been involved in carrying out an enterprise activity.",
+    questionText: "Explain what is meant by the term ‘market research’.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 2,
+    rows: [
+    { id: "definition", kind: "criterion", verbatim: "Market research involves gathering and analysing information about the market for a particular product or service/this allows you make decisions about how to proceed in business.", marks: 2, contextNote: "Original allocation 2@1m. Explain the term using two valid pieces of the complete source definition. Source emphasis identifies gathering, analysing and decisions; it does not create a three-part quota.", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c7bii", topicId: "lcvp-link-modules-1-3", conceptId: "c7bii",
+    section: "C", questionRef: "2026 CL Section C Q7(b)(ii)",
+    stem: "Your Link Modules class has been involved in carrying out an enterprise activity.",
+    questionText: "Why is market research necessary for this activity?",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Why is market research necessary for this activity? 4 marks 2@2m (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Why is market research necessary for this activity? 4 marks 2@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Can help you find out if there is a demand for your product- find out what product students/year group are interested in, so you can plan the product around them | 2. Can help decide on the price to charge – you get an idea of what price students will pay | 3. Can help you find out what your competitors are doing – what’s in the shops | 4. Can help you adapt your product to a product customer want/look at trends | 5. Can lead to better decision making in the business- make sure money is not wasted, produce the correct quantities | 6. Can help minimise risk and the risk of failure- potential problems are identified e.g. quality of the product, need for raw materials/start-up capital.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c7c", topicId: "lcvp-link-modules-1-3", conceptId: "c7c",
+    section: "C", questionRef: "2026 CL Section C Q7(c)",
+    stem: "Your Link Modules class has been involved in carrying out an enterprise activity.",
+    questionText: "Outline three ways your participation in this enterprise activity will benefit you in future employment.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 6,
+    rows: [
+    { id: "responses", kind: "criterion", verbatim: "Outline three ways your participation in this enterprise activity will benefit you in future employment. 6 marks 3@2m (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Outline three ways your participation in this enterprise activity will benefit you in future employment. 6 marks 3@2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Personal skills: learned or developed; teamwork skills learned / planning skills developed / problem solving / flexibility / adaptability / leadership / decisive / learn tolerance of others views | 2. Personal qualities: good listener/communicator/initiative/hardworking | 3. Knowledge of different aspects of running an activity, finance, advertising etc | 4. Awareness of broader issues / commitment to a team and its success | 5. Gain networking contacts which may be useful in the future The source also prints “Etc.”.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2026 Common Level — © State Examinations Commission.",
+    id: "lcvp-2026-cl-c7d", topicId: "lcvp-link-modules-1-3", conceptId: "c7d",
+    section: "C", questionRef: "2026 CL Section C Q7(d)",
+    stem: "Your Link Modules class has been involved in carrying out an enterprise activity.",
+    questionText: "Explain the methods you would use to review your personal and group performance when evaluating an activity.",
+    tariffModel: {"kind":"fixed","notation":"Original 2026 allocation; complete source guidance retained"}, totalMarks: 9,
+    rows: [
+    { id: "evaluation", kind: "criterion", verbatim: "Explain the methods you would use", marks: 9, contextNote: "Required selection: ONE group method, ONE personal method, and ONE other (group OR personal). Each receives 3@1, not three interchangeable responses with no category requirement. Complete original guidance: Analyse the success of the activity/what was achieved/targets/aims/goals met/how successful was the activity/profits made | Group discussion/everyone gets an opportunity to speak / use the feedback to evaluate the group performance | Ask teacher/other adults who may have been involved in the activity for their opinion/were class members organised and completing tasks on time / teacher gives feedback on the group performance | Compare your performance with other teams. Evaluate the differences and similarities between the actions of your group and another group(s) | Create a questionnaire/survey/anonymous so people will give honest responses. Use this feedback to analyse the group performance | Review of how the team worked / disagreements / how were they settled | Teams can review how each member has developed / new skills learnt / quality of what was learnt / use SWOT or SCOT / peer evaluation | Self-evaluation so students gain greater insight / reflect on what was learnt / set future goals for improvement / consider what their strengths and weaknesses are/critiquing their own work with in the team | Review of portfolio item – have enough information to write up an Enterprise Report/Action Plan/Summary Report.", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"group","verbatim":"Group method","marks":3,"permittedMarks":[0,1,2,3]},{"id":"personal","verbatim":"Personal method","marks":3,"permittedMarks":[0,1,2,3]},{"id":"other","verbatim":"Other group or personal method","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC LCVP Link Modules 2026 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
 ];
