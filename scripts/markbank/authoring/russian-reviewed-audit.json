@@ -3917,6 +3917,157 @@
         ],
         "bottomContentAudit": "Every non-footer word span below y755 on scheme sourcepages3–17 is present in the extracted source drafts, including Neva/Hermitage, names-discretion exception, final matching sentence and final marathon details."
       }
+    },
+    {
+      "year": 2013,
+      "level": "higher",
+      "reviewedAt": "2026-11-10",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "auralPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "fullSizeTariffPages": [
+        4,
+        5,
+        6,
+        7,
+        13,
+        15,
+        16
+      ],
+      "fullSizePaperPages": [
+        4,
+        5
+      ],
+      "independentPracticeTasks": 40,
+      "sourceReviewedSupportedTasks": 39,
+      "writtenTasks": 21,
+      "listeningTasks": 19,
+      "supportedWrittenTasks": 20,
+      "printedWrittenMarks": 220,
+      "printedListeningMarks": 80,
+      "supportedPracticeMarks": 292,
+      "sourceLeafTotal": 296,
+      "newCards": 39,
+      "correctedCards": 0,
+      "previousIdsPreserved": 199,
+      "sourceReview": "partial:39 supported tasks; cultural allocation conflict remains open",
+      "heldTasks": [
+        {
+          "unit": "CA1",
+          "paperPages": [
+            5
+          ],
+          "schemePages": [
+            5
+          ],
+          "paperTotal": 8,
+          "schemeTotal": 4,
+          "sourceRate": "Assign 1 mark for each relevant detail",
+          "reason": "Original paper8 versus explicit scheme1/detail and2x2=4. No adjudication, silent doubling, exclusion or whole-sitting completion claim."
+        }
+      ],
+      "diagnosedReaderIssues": [
+        "Independent40-task census remains the denominator. CA1 is held without exclusion;39 supported cards total292. Original scheme leaf totals296 versus paper300 because of CA1 conflict.",
+        "C1Q3(ii) was previously labelled contradictory in preparation. Original paper asks details about TWO PLACES, not two details; both sources give6 and scheme explicitly gives2 per full detail. Three distinct0/1/2 slots preserve this, with both-places requirement and no invented per-place cap.",
+        "Pool-level reading partials use independent manual detail placements without unsupported unique associations. Both Q2 questions share the entire published pool, and the source repeated-information/best-answer rule remains visible across them.",
+        "Full2013 scheme extraction removes only exact hash-bound page-number blocks. Originalp6 final no-full-credit line of famous people+she took photos of artists overlaps footer vertically; current PyMuPDF1.26.5 reproduction proves y775 crop omission. Full sentence retained. Mandatory original positive/negative footer regression added.",
+        "Summary1 permits two collection examples inside four-detail content maximum, with source postage half credit and marks0 in the stamps row. Summary2 requires both mother and father; distinct slots preserve full restrictions and incomplete-response discretionarycap1 without invented per-parent allocation. All summaries retain content8/discretion2 and whole wrong-language0.",
+        "All six original infinitives, five multilingual word-class rows, ten discourse rows with bracketed partials, and15 original grammar forms retained. Same мы prompt appears twice with distinct нас/нам answers. Grammar half credit applies only to source capitalization condition, not misspelling/transcription.",
+        "The original essay table includes its own content descriptor column, retained alongside normal/LowerE/LowerA expression bands and all seven topics. Title/no-content/length conditions and softsign1or2 preserved. Guided LowerA numeric7–12 is consistent while table9–11 overlaps11–12; both literal versions remain visible without trimmed descriptors. Choice-specific categories are quoted; no equal per-category tariff invented.",
+        "Listening L3Q1 two ONE OF pools each allow one detail under totaltwo. L3Q4 two reserved country slots share the globalthree-detail quota with independent website details, preserving full country span and no extra partial tariff.",
+        "Listening L2Q2 has a bare1mark line with no partial answer. Complete2mark facts remain available and the missing partial text is explicit; no invented answer. Diploma1 remains an exclusive partial of degree2. All listening Russian-answer/excess-material guidance preserved.",
+        "CA1 original bilingual language allowance is retained in source evidence: English/Russian in English column, Irish/Russian in Irish column, all three in scheme. No runtime cultural tariff is selected."
+      ],
+      "independentReview": {
+        "reviewers": [
+          "Codex coordinator"
+        ],
+        "findings": [
+          "Original2013p5 and paperpp4–5 confirm two-places wording plus2/detail/6 total; reject prior impossible-tariff inference.",
+          "Independently confirmed CA1 paper8 versus scheme4.",
+          "Independently viewedp6 final no-full-credit sentence and both-parent requirement; no per-parent allocation supplied."
+        ]
+      },
+      "validation": {
+        "status": "passed for all 39 supported tasks; CA1 allocation remains open",
+        "sourceSlicesVerified": 364,
+        "browserQa": "pending; root integration owns native UI QA",
+        "sittingCompletion": false,
+        "heldNumericTasks": [
+          "CA1"
+        ],
+        "combinedSourceSlicesVerified": 10612,
+        "mandatoryPythonSourceTestsPassed": 43,
+        "focusedTestsPassed": 113,
+        "requiredTestsPassed": 583,
+        "requiredTestFiles": 37,
+        "russianCoverageTestsPassed": 3,
+        "appTypecheck": "passed",
+        "scopedTestTypecheck": "passed",
+        "targetedLint": "passed",
+        "productionBuild": "passed",
+        "productionBuildSeconds": 164.0,
+        "deterministicRegenerations": 2,
+        "all1114PriorReviewedCardsUnchanged": true,
+        "all1114PriorAuthoredRecordsUnchanged": true,
+        "otherSubjectsPreserved": true,
+        "decodedNonRussianAtlasPreserved": true,
+        "nonRussianIndexBytesPreserved": true,
+        "sittingOpenTasks": 1,
+        "sittingExcludedTasks": 0,
+        "sittingOrphans": 0,
+        "harnessCorrections": [
+          "Coverage harness expected Section CA1 Q; corrected to its actual canonical key Section CA1, without changing source/census.",
+          "Required-test startup encountered temporary unavailable shared dependencies. Verified restored pinned local versions and reran the complete required/types/lint remainder successfully using explicit local binaries. No dependency or source mutation."
+        ]
+      }
     }
   ]
 }

@@ -11,6 +11,24 @@ from pathlib import Path
 
 
 def reviewed_keys(year, level):
+    if (year, level) == (2013, 'hl'):
+        # Independent 44-page visual census. The conflicting CA1 allocation
+        # remains in this denominator even while its runtime task is held.
+        root=Path(__file__).resolve().parents[3]/'examiner-reports/russian'
+        for relative,digest in {
+            'papers/2013-hl-000-paper.pdf':'36835056dd0dbc40697f132b2a00484df1118ece3f364a8263992dc1a3c4dbc0',
+            'papers/2013-hl-A00-paper.pdf':'849f2d530c3a5d5cfc2667bff1f4b38be719483beab856f06d826b51b1640f02',
+            'schemes/2013-hl.pdf':'b14c59425b38ee71743c5b59b119baad4071759692f069d143abc421b5ac4b6d',
+        }.items():assert hashlib.sha256((root/relative).read_bytes()).hexdigest()==digest
+        keys=[('C1',q,None,r) for q,rs in [(1,('i','ii','iii')),(2,('i','ii')),(3,('i','ii','iii')),(4,('i','ii'))] for r in rs]
+        keys += [('C2',q,None,None) for q in (1,2,3,4)]+[(u,None,None,None) for u in ('LA1','CA1','LA2')]
+        keys += [(u,q,None,None) for u,q in [('SD',3),('GR',1),('SE',2),('GW',3)]]
+        assert len(keys)==21
+        keys += [('L1',q,None,r) for q,r in [(1,None),(2,None),(3,'i'),(3,'ii'),(4,'i'),(4,'ii')]]
+        keys += [('L2',q,None,None) for q in (1,2,3)]+[('L3',q,None,None) for q in (1,2,3,4)]
+        keys += [('L4',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,None),(3,None),(4,'i'),(4,'ii')]]
+        assert len(keys)==len(set(keys))==40
+        return set(keys)
     if (year, level) == (2014, 'hl'):
         # Independent 44-page visual census:20 written and20 listening.
         # CA1 is separate from LA1; each complete writing choice pool is one task.

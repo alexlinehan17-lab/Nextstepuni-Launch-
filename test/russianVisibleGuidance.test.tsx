@@ -13,6 +13,45 @@ function reveal(suffix:string, level='hl', year=2026) {
 }
 
 describe('Russian source directions visible in the practice session',()=>{
+  it('shows 2013 two-places wording alongside three independent detail placements',async()=>{
+    reveal('c1-3-ii','hl',2013);
+    await waitFor(()=>expect(screen.getByText(/The question requires details about TWO PLACES/)).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'Set Distinct detail 1 to 2 marks'}));
+    fireEvent.click(screen.getByRole('button',{name:'Set Distinct detail 2 to 2 marks'}));
+    fireEvent.click(screen.getByRole('button',{name:'Set Distinct detail 3 to 2 marks'}));
+    await waitFor(()=>expect(screen.getByText(/placement is 6 of 6 marks/)).toBeVisible());
+    expect(screen.getByText(/no per-place split or numeric incomplete-place cap/)).toBeVisible();
+  });
+  it('shows the complete 2013 recovered restriction and applies incomplete-response discretion',async()=>{
+    reveal('c2-2','hl',2013);
+    await waitFor(()=>expect(screen.getByText(/mother AND one about the father/)).toBeVisible());
+    expect(screen.getAllByText(/she collected photographs of artists \/ of famous people \+ she took photos of artists/)[0]).toBeVisible();
+    fireEvent.click(screen.getByRole('button',{name:'Distinct detail 1'}));
+    fireEvent.click(screen.getByRole('button',{name:'Set Distinct detail 1 to 2 marks'}));
+    fireEvent.click(screen.getByRole('button',{name:'Set Discretionary marks to 2 marks'}));
+    await waitFor(()=>expect(screen.getByText(/placement is 4 of 10 marks/)).toBeVisible());
+    fireEvent.click(screen.getByRole('checkbox',{name:/If a candidate fails to answer all sections/}));
+    await waitFor(()=>expect(screen.getByText(/placement is 3 of 10 marks/)).toBeVisible());
+    fireEvent.click(screen.getByRole('checkbox',{name:'All answers answered in another language'}));
+    await waitFor(()=>expect(screen.getByText(/placement is 0 of 10 marks/)).toBeVisible());
+  });
+  it('shows 2013 essay content bands and the literal guided Lower A overlap',async()=>{
+    reveal('se','hl',2013);
+    await waitFor(()=>expect(screen.getByRole('heading',{name:'Communication/content (C)'})).toBeVisible());
+    const content=screen.getByRole('heading',{name:'Communication/content (C)'}).closest('section');
+    if(!content)throw new Error('content');
+    expect(within(content).getByText(/Excellent response. Extremely clear/)).toBeVisible();
+    cleanup();reveal('gw','hl',2013);
+    await waitFor(()=>expect(screen.getByRole('button',{name:'Set Communication/content (C) to 15 marks'})).toBeVisible());
+    fireEvent.click(screen.getByRole('button',{name:'Set Communication/content (C) to 15 marks'}));
+    fireEvent.change(screen.getByRole('spinbutton',{name:/Response length \(words\)/}),{target:{value:'140'}});
+    fireEvent.click(screen.getByRole('checkbox',{name:/If the expression is very fluent/}));
+    const expression=screen.getByRole('heading',{name:'Language + expression (E)'}).closest('section');
+    if(!expression)throw new Error('expression');
+    expect(within(expression).getByText(/9\s*[-–]\s*11 Vocabulary/)).toBeVisible();
+    expect(within(expression).queryByText(/11–15 marks/)).not.toBeInTheDocument();
+    expect(screen.getByText(/The choice-specific category letters/)).toBeVisible();
+  });
   it('shows the 2014 reserved neighbour slots and applies independent full and partial marks',async()=>{
     reveal('c1-3-i','hl',2014);
     await waitFor(()=>expect(screen.getByRole('button',{name:'Neighbours did not: distinct detail 1'})).toBeVisible());
