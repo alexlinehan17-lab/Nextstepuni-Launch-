@@ -63,8 +63,8 @@ describe('Japanese 2015 Higher independent source review', () => {
     expect(originalIds.some(id => id.startsWith('ja-2015-'))).toBe(false);
     expect(review.consolidations).toEqual([]);
     expect(Object.keys(aliases)).toHaveLength(391);
-    expect(rawCards.filter(card => !originalIds.includes(card.id))).toHaveLength(1179);
-    expect(live.size).toBe(600 + 1179 - 391);
+    expect(rawCards.filter(card => !originalIds.includes(card.id))).toHaveLength(1236);
+    expect(live.size).toBe(600 + 1236 - 391);
   });
 
   it('keeps every required link, kanji and grammar pool whole', () => {
