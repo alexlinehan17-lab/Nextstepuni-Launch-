@@ -1,0 +1,1140 @@
+{
+  "schemaVersion": 1,
+  "year": 2025,
+  "level": "common",
+  "sitting": "main",
+  "language": "ev",
+  "status": "validated-source-reviewed; one-explicit-numeric-allocation-hold; native-video-QA-pending",
+  "createdAt": "2026-11-10T12:16:51.716032+00:00",
+  "reviewedBy": "Codex /root/home_economics",
+  "sources": [
+    {
+      "kind": "exampapers",
+      "year": 2025,
+      "path": "paper-trail-corpus/exampapers/2025/LC462CLP000EV.pdf",
+      "fileid": "LC462CLP000EV.pdf",
+      "sha256": "070e0bc008f187ce2fdb833997be0d9a640ded62a5c92282bf33de6fefa6c0ce",
+      "pages": 40
+    },
+    {
+      "kind": "markingschemes",
+      "year": 2025,
+      "path": "paper-trail-corpus/markingschemes/2025/LC462CLP000EV.pdf",
+      "fileid": "LC462CLP000EV.pdf",
+      "sha256": "c1d5ecb2fae99f3b47d8c21e0ae5af69291efeb1b925203f2418a117642f29af",
+      "pages": 20
+    },
+    {
+      "kind": "portfolio-markingscheme",
+      "year": 2025,
+      "path": "tmp/pdfs/lcvp-review/official-supplements/2025-LC462CLP044EV.pdf",
+      "fileid": "LC462CLP044EV.pdf",
+      "sha256": "bbf38c48081e46adbdfd8e11594ddfb3a43f0388fc49a8fded7edf6705173940",
+      "pages": 2
+    }
+  ],
+  "visualSweep": {
+    "paper": "All40 original pages individually viewed on ten four-page contact sheets: cover1, instructions2, audiovisual instructions3, A4–8, complete Glenhale case study9, B10–12, ruled extra page13, repeated C overview14–15, C1 16–18, C2 19–21, C3 22–24, C4 25–27, C5 28–30, C6 31–33, C7 34–36, extra-work37–39, backcover40.",
+    "writtenScheme": "All20 original pages individually viewed on five contact sheets: cover1, source-use notice2, marking annotations3, A4–6, B6–8, C1 page9, C2 pages10–11, C3 pages11–12, C4 pages13–14 including the complete two-column/eight-cell challenge/solution table, C5 pages15–16, C6 pages16–18, C7 pages18–19, backcover20.",
+    "portfolio": "Both separately labelled 2025 portfolio-grid pages viewed. CV40 plus two other core items65 each gives170, plus ONE optional item70: maximum240. Eight portfolio item grids are a separate assessment component, not extra written-paper questions."
+  },
+  "evidence": "tmp/pdfs/lcvp-review/2025-main/paper-01..10, scheme-01..05, portfolio-01. All were viewed before parser or existing-card inspection.",
+  "manualOriginalLeaves": 46,
+  "manualSectionLeaves": {
+    "A": 9,
+    "B": 7,
+    "C": 30
+  },
+  "manualPricedTasks": 45,
+  "manualSectionTasks": {
+    "A": 9,
+    "B": 7,
+    "C": 29
+  },
+  "candidateWrittenMarks": 160,
+  "offeredPracticeMarks": 235,
+  "pricedTaskLedger": [
+    {
+      "section": "A",
+      "question": 1,
+      "part": null,
+      "marks": 1,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "A",
+      "question": 2,
+      "part": null,
+      "marks": 2,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "A",
+      "question": 3,
+      "part": null,
+      "marks": 3,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "A",
+      "question": 4,
+      "part": null,
+      "marks": 2,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "A",
+      "question": 5,
+      "part": null,
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "A",
+      "question": 6,
+      "part": "i",
+      "marks": 2,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "A",
+      "question": 6,
+      "part": "ii",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "A",
+      "question": 7,
+      "part": null,
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "A",
+      "question": 8,
+      "part": null,
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "B",
+      "question": 1,
+      "part": null,
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "B",
+      "question": 2,
+      "part": "i",
+      "marks": 3,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "B",
+      "question": 2,
+      "part": "ii",
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "B",
+      "question": 2,
+      "part": "iii",
+      "marks": 3,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "B",
+      "question": 3,
+      "part": "i",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "B",
+      "question": 3,
+      "part": "ii",
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "B",
+      "question": 3,
+      "part": "iii",
+      "marks": 2,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 1,
+      "part": "a",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 1,
+      "part": "b",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 1,
+      "part": "c",
+      "marks": 8,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 1,
+      "part": "d",
+      "marks": 9,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 2,
+      "part": "a",
+      "marks": 4,
+      "sourceLeaves": 2
+    },
+    {
+      "section": "C",
+      "question": 2,
+      "part": "b",
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 2,
+      "part": "c",
+      "marks": 6,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 2,
+      "part": "d",
+      "marks": 9,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 3,
+      "part": "a",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 3,
+      "part": "b",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 3,
+      "part": "c",
+      "marks": 8,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 3,
+      "part": "d",
+      "marks": 9,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 4,
+      "part": "a",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 4,
+      "part": "b",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 4,
+      "part": "c",
+      "marks": 8,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 4,
+      "part": "d",
+      "marks": 9,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 5,
+      "part": "a",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 5,
+      "part": "b",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 5,
+      "part": "c",
+      "marks": 9,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 5,
+      "part": "d",
+      "marks": 8,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 6,
+      "part": "a",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 6,
+      "part": "b",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 6,
+      "part": "c",
+      "marks": 8,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 6,
+      "part": "d",
+      "marks": 9,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 7,
+      "part": "a(i)",
+      "marks": 2,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 7,
+      "part": "a(ii)",
+      "marks": 2,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 7,
+      "part": "b",
+      "marks": 4,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 7,
+      "part": "c",
+      "marks": 8,
+      "sourceLeaves": 1
+    },
+    {
+      "section": "C",
+      "question": 7,
+      "part": "d",
+      "marks": 9,
+      "sourceLeaves": 1
+    }
+  ],
+  "taskBoundaryDecisions": {
+    "A6": "The two independently practicable asks have distinct original allocations: resources2 (2@1), ICT benefits4 (2@2,1+1). Keep two tasks with original video and presentation context.",
+    "B1": "Independent worker and root visual review confirm whole-task6 and literal(2+2+1+1), four required SWOT categories, no category-specific labels or best-two rule. Keep the complete task and all category pools as questionTotal6/confidence-only pending authoritative allocation clarification. This is an allocation ambiguity, not an arithmetical contradiction.",
+    "B2iii": "Three reasons,3@1, for ONE best method from the methods described in B2(ii). Carry the exact preceding ask and preserve all nine reason models; no mark for naming the method is printed.",
+    "B3ii": "One coherent suggestion/action plan6: suggestion1 plus five CONTENT points1 each. Explicit NO MARKS FOR HEADINGS; the seven source headings are scaffold only. Preserve all eight suggestion models plus Etc.; no invented completed plan.",
+    "C1c": "One eight-mark questionnaire: heading, variety of question styles and instructions at1 each, plus FIVE questions at1 each. Source grid only; no model questionnaire is printed.",
+    "C2a": "Two subject names and two linked explanations form one coherent four-mark paired-subject task. Two original roman leaves retained within one task, with all four required one-mark components; no arbitrary pair combinations.",
+    "C2d": "Three complete source-description-reason profiles,3 each(1+1+1); all seven source models retained, no mixing names from one profile with details from another.",
+    "C4a": "One coherent named-business/product-or-service profile4, with the two published2-mark components. Preserve both original asks.",
+    "C4b": "Four own-visit CONTENT points,4@1; explicit No marks for headings. All ten source area headings plus Etc. are scaffold, not paid model responses.",
+    "C4d": "One nine-mark task with three complete challenge/solution responses: challenge description1, matching ways to overcome2(1+1). Preserve all eight two-column table profiles by cell geometry: Funding, Staffing, Location, Competition, Brexit/U.S.Tariffs, Increasing Business Costs, Customer relations, Technology.",
+    "C5a": "Agenda heading1 plus ANY THREE agenda items1 each; all ten printed items retained. Do not add unsupported date/time/address marks.",
+    "C6c": "Two advantages AND two disadvantages of employee technology use while working from home; each response2(1+1). Separate required categories4+4; preserve five advantage and eight disadvantage models.",
+    "C7a": "Generic trade-union definition2(1+1) and name of one union2(0/2) are independently practicable, separately allocated tasks. No required matching relationship changes the definition; preserve both original roman tasks.",
+    "outerChoice": "Section C any four of seven; seven questions have different topics/mark structures, so retain all seven without four-question combination cards. Overview pages14–15 repeat the same asks, not new tasks.",
+    "openChoices": "Personal school subjects, career, local business, charity, methods and examples are open choices/illustrative pools, not finite combinations to expand."
+  },
+  "importantTariffs": {
+    "A2": "The 2025 source explicitly prints whole-question(0/2), unlike 2026 A2. Preserve the two printed models and the published whole-response0/2 ladder; do not infer2x1 or a fixed reason quota.",
+    "A": "A1 1; A2 whole0/2; A3 3@1 with five models; A4 2@1 with five models; A5 2@2(1+1) with seven models; A6(i)2@1 with four models; A6(ii)2@2(1+1) with six models; A7 3@2(1+1) with six models; A8 3@2(1+1) with seven models.",
+    "B": "B1 6(2+2+1+1), category mapping unspecified; B2(i)3@1, (ii)3@2(1+1), (iii)3@1; B3(i)2@2(1+1), (ii)suggestion1+content5@1/no headings, (iii)2@1.",
+    "C3d": "Keep historical 2025 under-18 employment guidance exactly as printed, including source numbers/age qualifiers; no silent current-law update.",
+    "C5": "Source C5(c) is9 (3@3,1+1+1), C5(d) is8 (4@2,1+1). The varied c/d order is preserved rather than assumed from neighbouring questions."
+  },
+  "media": {
+    "officialUrl": "https://www.examinations.ie/archive/exampapers/2025/LC462CLP031EV.mov",
+    "verifiedScope": "Official listing, response headers and first4096bytes; see media-inventory-20261110.json. No full-file hash or native playback claim for2025 yet.",
+    "sourceTheme": "Voluntary Work in a Charity Shop",
+    "fullFileDownloaded": false
+  },
+  "rawCensus": {
+    "sourceLeaves": 46,
+    "offeredMarks": 235,
+    "continuityFlags": [],
+    "command": "python3 tmp/lcvp-2025-preflight.py",
+    "manualLedgerPredatesParserInspection": true
+  },
+  "restoredExcludedSourceLeaves": {
+    "refs": [
+      "2025 CL Section C Q2(a)(i)",
+      "2025 CL Section C Q2(a)(ii)"
+    ],
+    "decision": "Both required subject/explanation leaves are restored inside the coherent four-mark C2(a) task, with source-priced criteria. A personal response has no invented model; it remains a complete practicable task rather than an exclusion."
+  },
+  "tasks": [
+    {
+      "id": "lcvp-2025-cl-a1",
+      "questionRef": "2025 CL Section A Q1",
+      "marks": 1,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2025-cl-a2",
+      "questionRef": "2025 CL Section A Q2",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2025-cl-a3",
+      "questionRef": "2025 CL Section A Q3",
+      "marks": 3,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2025-cl-a4",
+      "questionRef": "2025 CL Section A Q4",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2025-cl-a5",
+      "questionRef": "2025 CL Section A Q5",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2025-cl-a6i",
+      "questionRef": "2025 CL Section A Q6(i)",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-1-4"
+    },
+    {
+      "id": "lcvp-2025-cl-a6ii",
+      "questionRef": "2025 CL Section A Q6(ii)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-4"
+    },
+    {
+      "id": "lcvp-2025-cl-a7",
+      "questionRef": "2025 CL Section A Q7",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2025-cl-a8",
+      "questionRef": "2025 CL Section A Q8",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-2"
+    },
+    {
+      "id": "lcvp-2025-cl-b1",
+      "questionRef": "2025 CL Section B Q1",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-4"
+    },
+    {
+      "id": "lcvp-2025-cl-b2i",
+      "questionRef": "2025 CL Section B Q2(i)",
+      "marks": 3,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2025-cl-b2ii",
+      "questionRef": "2025 CL Section B Q2(ii)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2025-cl-b2iii",
+      "questionRef": "2025 CL Section B Q2(iii)",
+      "marks": 3,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2025-cl-b3i",
+      "questionRef": "2025 CL Section B Q3(i)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2025-cl-b3ii",
+      "questionRef": "2025 CL Section B Q3(ii)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2025-cl-b3iii",
+      "questionRef": "2025 CL Section B Q3(iii)",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2025-cl-c1a",
+      "questionRef": "2025 CL Section C Q1(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-4"
+    },
+    {
+      "id": "lcvp-2025-cl-c1b",
+      "questionRef": "2025 CL Section C Q1(b)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-4"
+    },
+    {
+      "id": "lcvp-2025-cl-c1c",
+      "questionRef": "2025 CL Section C Q1(c)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-4"
+    },
+    {
+      "id": "lcvp-2025-cl-c1d",
+      "questionRef": "2025 CL Section C Q1(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-4"
+    },
+    {
+      "id": "lcvp-2025-cl-c2a",
+      "questionRef": "2025 CL Section C Q2(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-2"
+    },
+    {
+      "id": "lcvp-2025-cl-c2b",
+      "questionRef": "2025 CL Section C Q2(b)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-1"
+    },
+    {
+      "id": "lcvp-2025-cl-c2c",
+      "questionRef": "2025 CL Section C Q2(c)",
+      "marks": 6,
+      "topicId": "lcvp-link-modules-0-2"
+    },
+    {
+      "id": "lcvp-2025-cl-c2d",
+      "questionRef": "2025 CL Section C Q2(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-0-2"
+    },
+    {
+      "id": "lcvp-2025-cl-c3a",
+      "questionRef": "2025 CL Section C Q3(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-4"
+    },
+    {
+      "id": "lcvp-2025-cl-c3b",
+      "questionRef": "2025 CL Section C Q3(b)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2025-cl-c3c",
+      "questionRef": "2025 CL Section C Q3(c)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2025-cl-c3d",
+      "questionRef": "2025 CL Section C Q3(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2025-cl-c4a",
+      "questionRef": "2025 CL Section C Q4(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2025-cl-c4b",
+      "questionRef": "2025 CL Section C Q4(b)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2025-cl-c4c",
+      "questionRef": "2025 CL Section C Q4(c)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2025-cl-c4d",
+      "questionRef": "2025 CL Section C Q4(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2025-cl-c5a",
+      "questionRef": "2025 CL Section C Q5(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2025-cl-c5b",
+      "questionRef": "2025 CL Section C Q5(b)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2025-cl-c5c",
+      "questionRef": "2025 CL Section C Q5(c)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2025-cl-c5d",
+      "questionRef": "2025 CL Section C Q5(d)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-3"
+    },
+    {
+      "id": "lcvp-2025-cl-c6a",
+      "questionRef": "2025 CL Section C Q6(a)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2025-cl-c6b",
+      "questionRef": "2025 CL Section C Q6(b)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-1-4"
+    },
+    {
+      "id": "lcvp-2025-cl-c6c",
+      "questionRef": "2025 CL Section C Q6(c)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2025-cl-c6d",
+      "questionRef": "2025 CL Section C Q6(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-1-1"
+    },
+    {
+      "id": "lcvp-2025-cl-c7ai",
+      "questionRef": "2025 CL Section C Q7(a)(i)",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2025-cl-c7aii",
+      "questionRef": "2025 CL Section C Q7(a)(ii)",
+      "marks": 2,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2025-cl-c7b",
+      "questionRef": "2025 CL Section C Q7(b)",
+      "marks": 4,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2025-cl-c7c",
+      "questionRef": "2025 CL Section C Q7(c)",
+      "marks": 8,
+      "topicId": "lcvp-link-modules-0-0"
+    },
+    {
+      "id": "lcvp-2025-cl-c7d",
+      "questionRef": "2025 CL Section C Q7(d)",
+      "marks": 9,
+      "topicId": "lcvp-link-modules-0-0"
+    }
+  ],
+  "heldNumericScoring": [
+    "lcvp-2025-cl-b1"
+  ],
+  "scoringScope": {
+    "printedOfferedMarks": 235,
+    "pricedTaskMarks": 229,
+    "heldWholeTaskMarks": 6,
+    "heldTasks": 1,
+    "distinction": "All 45 source tasks (46 original leaves) are retained. The complete six-mark SWOT uses confidence-only review because the category allocation is unresolved. This is not a missing/excluded source task or a release-readiness claim."
+  },
+  "legacyCorrections": {
+    "retainedStableIds": 42,
+    "addedIds": [
+      "lcvp-2025-cl-a6ii",
+      "lcvp-2025-cl-c2a",
+      "lcvp-2025-cl-c4d"
+    ],
+    "guidance": "Restore three omitted tasks, complete SWOT pools, B3(ii) suggestion mark and content-only plan, C1(c) eight-component questionnaire, C4(a) paired profile, C4(b) content-only credit, C5(a) Agenda heading mark, C6(c) two advantages AND two disadvantages, explicit partial ladders, required context and original video."
+  },
+  "validation": {
+    "completedAt": "2026-11-10T14:01:58.850937+00:00",
+    "sourceGate": {
+      "year": 2025,
+      "sitting": "main",
+      "sourceHashes": "verified",
+      "sourcePages": [
+        40,
+        20,
+        2
+      ],
+      "manualLeaves": 46,
+      "rawLeaves": 46,
+      "tasks": 45,
+      "marks": 235,
+      "leafKeys": [
+        [
+          "A",
+          1,
+          null,
+          null
+        ],
+        [
+          "A",
+          2,
+          null,
+          null
+        ],
+        [
+          "A",
+          3,
+          null,
+          null
+        ],
+        [
+          "A",
+          4,
+          null,
+          null
+        ],
+        [
+          "A",
+          5,
+          null,
+          null
+        ],
+        [
+          "A",
+          6,
+          null,
+          "i"
+        ],
+        [
+          "A",
+          6,
+          null,
+          "ii"
+        ],
+        [
+          "A",
+          7,
+          null,
+          null
+        ],
+        [
+          "A",
+          8,
+          null,
+          null
+        ],
+        [
+          "B",
+          1,
+          null,
+          null
+        ],
+        [
+          "B",
+          2,
+          null,
+          "i"
+        ],
+        [
+          "B",
+          2,
+          null,
+          "ii"
+        ],
+        [
+          "B",
+          2,
+          null,
+          "iii"
+        ],
+        [
+          "B",
+          3,
+          null,
+          "i"
+        ],
+        [
+          "B",
+          3,
+          null,
+          "ii"
+        ],
+        [
+          "B",
+          3,
+          null,
+          "iii"
+        ],
+        [
+          "C",
+          1,
+          "a",
+          null
+        ],
+        [
+          "C",
+          1,
+          "b",
+          null
+        ],
+        [
+          "C",
+          1,
+          "c",
+          null
+        ],
+        [
+          "C",
+          1,
+          "d",
+          null
+        ],
+        [
+          "C",
+          2,
+          "a",
+          "i"
+        ],
+        [
+          "C",
+          2,
+          "a",
+          "ii"
+        ],
+        [
+          "C",
+          2,
+          "b",
+          null
+        ],
+        [
+          "C",
+          2,
+          "c",
+          null
+        ],
+        [
+          "C",
+          2,
+          "d",
+          null
+        ],
+        [
+          "C",
+          3,
+          "a",
+          null
+        ],
+        [
+          "C",
+          3,
+          "b",
+          null
+        ],
+        [
+          "C",
+          3,
+          "c",
+          null
+        ],
+        [
+          "C",
+          3,
+          "d",
+          null
+        ],
+        [
+          "C",
+          4,
+          "a",
+          null
+        ],
+        [
+          "C",
+          4,
+          "b",
+          null
+        ],
+        [
+          "C",
+          4,
+          "c",
+          null
+        ],
+        [
+          "C",
+          4,
+          "d",
+          null
+        ],
+        [
+          "C",
+          5,
+          "a",
+          null
+        ],
+        [
+          "C",
+          5,
+          "b",
+          null
+        ],
+        [
+          "C",
+          5,
+          "c",
+          null
+        ],
+        [
+          "C",
+          5,
+          "d",
+          null
+        ],
+        [
+          "C",
+          6,
+          "a",
+          null
+        ],
+        [
+          "C",
+          6,
+          "b",
+          null
+        ],
+        [
+          "C",
+          6,
+          "c",
+          null
+        ],
+        [
+          "C",
+          6,
+          "d",
+          null
+        ],
+        [
+          "C",
+          7,
+          "a",
+          "i"
+        ],
+        [
+          "C",
+          7,
+          "a",
+          "ii"
+        ],
+        [
+          "C",
+          7,
+          "b",
+          null
+        ],
+        [
+          "C",
+          7,
+          "c",
+          null
+        ],
+        [
+          "C",
+          7,
+          "d",
+          null
+        ]
+      ],
+      "numericHolds": [
+        "lcvp-2025-cl-b1"
+      ],
+      "continuityFlags": [],
+      "classifiedSelectionDirectives": {
+        "2": [
+          "any four"
+        ],
+        "11": [
+          "which one"
+        ],
+        "12": [
+          "one specific"
+        ],
+        "14": [
+          "any four",
+          "choice",
+          "choice"
+        ],
+        "15": [
+          "choice",
+          "two advantages and two disadvantages"
+        ],
+        "19": [
+          "choice"
+        ],
+        "20": [
+          "choice"
+        ],
+        "28": [
+          "choice"
+        ],
+        "32": [
+          "two advantages and two disadvantages"
+        ]
+      },
+      "originalVideo": "Official listing, response headers and QuickTime prefix verified; no full-file hash claimed",
+      "nativePlayback": "pending root release QA",
+      "reconciliation": "Manual census predates parser/card review. C2(a) preserves two subject/explanation leaves as one coherent task. A6(i)/(ii) and C7(a)(i)/(ii) remain separately priced tasks. All source tasks are present; the B1 numeric allocation hold is not a coverage exclusion."
+    },
+    "regeneration": {
+      "regenerations": 2,
+      "filesChecked": 31719,
+      "unrelatedCardsPreserved": 316,
+      "original2025IdsRetained": 42,
+      "addedCards": 3,
+      "nonLcvpRecordsUnchanged": true
+    },
+    "coverage": {
+      "previous": {
+        "cards": 358,
+        "contentHash": "d0ea1d2c2d2df9e2",
+        "coveragePct": 51.8,
+        "covered": 365,
+        "excluded": 13,
+        "leaves": 730,
+        "open": 352,
+        "orphans": 0,
+        "papers": {
+          "count": 25,
+          "hash": "aec10355e05833e6"
+        },
+        "refsHash": "ce76f3121058abec"
+      },
+      "current": {
+        "cards": 361,
+        "contentHash": "1336063b50602206",
+        "coveragePct": 52.1,
+        "covered": 369,
+        "excluded": 11,
+        "leaves": 730,
+        "open": 350,
+        "orphans": 0,
+        "papers": {
+          "count": 25,
+          "hash": "aec10355e05833e6"
+        },
+        "refsHash": "1a3e7e8af2f29724"
+      },
+      "targetSitting": {
+        "year": 2025,
+        "level": "cl",
+        "paper": null,
+        "leaves": 46,
+        "covered": 46,
+        "excluded": 0,
+        "open": []
+      },
+      "otherSubjectsUnchanged": true
+    },
+    "logs": [
+      {
+        "path": "tmp/lcvp-2025-source-gate.json",
+        "sha256": "d08a1456a58cde9d7c47d308f96dc3c2aef98ecb13d61271d42bc6b47cc2c26c"
+      },
+      {
+        "path": "tmp/lcvp-2025-initial-tests.log",
+        "sha256": "6a39008d30843c80ed1a8d1f323fb66a3e9328316db5217ac27d4bc3736ef09d"
+      },
+      {
+        "path": "tmp/lcvp-2025-tests.log",
+        "sha256": "28f6ea9730bf365e6e68c5d6d8fa0b80349868a4131e4d5bff4452daf88dedb1"
+      },
+      {
+        "path": "tmp/lcvp-2025-regeneration.log",
+        "sha256": "fe3e6c3ea13ea6809dd28d0c0d7cea8b7ed0ed9bf2078bf5cbacfb1d628f7131"
+      },
+      {
+        "path": "tmp/lcvp-2025-cardlint.json",
+        "sha256": "35b1790188d425fd6b63e4fca6329d031df9c4de9e21b20f7b64561a30173f42"
+      },
+      {
+        "path": "tmp/lcvp-2025-ratchet.log",
+        "sha256": "65d231acffb9606094700d16a37c29a3d5dc7df313dccfe368d7396633bdd68b"
+      },
+      {
+        "path": "tmp/lcvp-2025-coverage.log",
+        "sha256": "9ef42d2a08bcb50f7faf240caa3a57204f02bd5bf1b21b6a55b69edb84cb6bc7"
+      },
+      {
+        "path": "tmp/lcvp-2025-types.log",
+        "sha256": "59925f4b026bd55ff54374e4d96c1d662f0018373be22840bf14358894b759f6"
+      },
+      {
+        "path": "tmp/lcvp-2025-test-types.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "tmp/lcvp-2025-lint.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "tmp/lcvp-2025-build.log",
+        "sha256": "515875d32dab140689c04b2e57a4fb56f5b0ba5c2dabe951885c76610fbd863c"
+      }
+    ],
+    "checks": "Required preservation/curriculum/deck, 2025 and 2026 LCVP contracts, canonical Atlas tests, measured LCVP coverage, app and scoped test types, scoped lint, normal production build. Owned ignored nonsymlink dist removed after successful build.",
+    "releaseDistinction": "Source/task completeness for this sitting is separate from the B1 numeric allocation hold and pending native video playback QA."
+  }
+}
