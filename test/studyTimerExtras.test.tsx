@@ -46,6 +46,8 @@ vi.mock('@/contexts/ProgressContext', () => ({
   }),
 }));
 vi.mock('@/hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => false }));
+// This suite exercises the timer; the shared planner has its own integration tests.
+vi.mock('@/hooks/useDatedStudyPlan', () => ({ useDatedStudyPlan: () => ({ enabled: false }) }));
 vi.mock('@/hooks/useStudyTransitionSound', () => ({ useStudyTransitionSound: () => ({ play: vi.fn(), muted: false }) }));
 
 const UID = 'student-1';
