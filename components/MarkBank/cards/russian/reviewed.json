@@ -181399,5 +181399,64 @@
       "humanReviewedBy": "Codex source review; browser QA pending",
       "humanReviewedAt": "2026-11-06"
     }
+  },
+  {
+    "id": "ru-2013-hl-ca1",
+    "subjectId": "russian",
+    "level": "higher",
+    "year": 2013,
+    "section": "CA1",
+    "topicId": "russian-2-0",
+    "conceptId": "cultural-awareness-select-words-phrases-listed",
+    "questionRef": "2013 HL Section CA1",
+    "questionText": "Cultural awareness: Select two of the words/phrases listed below and give two details explaining each of them. Answer in English or Russian. (8 marks) 1. церковь 2. Третьяковская галерея 3. Санкт-Петербург",
+    "tariffModel": {
+      "kind": "questionTotal"
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "published-guidance",
+        "kind": "point",
+        "verbatim": "1.3. Select two of the words / phrases listed below and give two details in English / Irish or Russian explaining each of them. Assign 1 mark for each relevant detail 2 х 2 = 4 1. Церковь 2. Третьяковская галерея 3. Санкт-Петербург",
+        "marks": null,
+        "contextNote": "Source discrepancy: the original question paper prints 8 marks; the marking scheme prints “Assign 1 mark for each relevant detail” and “2 х 2 = 4”. The recorded 8 is the paper’s printed total, not an agreed scoring maximum. Choose two of the three original topics and give two details about each. The scheme supplies these instructions and topic names, without exemplar factual answers. Review your response against the complete source guidance; this card does not calculate a numerical score. The English paper column allows English or Russian; the Irish column and the scheme also allow Irish."
+      }
+    ],
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Official question and source",
+      "title": "2013 Higher Russian — CA1",
+      "pages": [
+        5
+      ],
+      "attribution": "© State Examinations Commission.",
+      "presentationNote": "Read the complete printed source and instructions before answering."
+    },
+    "notes": "Source reviewed against the original paper and marking scheme, pages 5.",
+    "kind": "question",
+    "source": "sec",
+    "paperFileid": "LC099ALP000EV",
+    "specVersion": "lc-russian-syllabus",
+    "schemeCitation": "SEC Russian 2013 Higher Level marking scheme, pages 5 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "original-pdf-review",
+        "printed-task-census",
+        "source-defined-tariff"
+      ],
+      "humanReviewedBy": "Codex source review; browser QA pending",
+      "humanReviewedAt": "2026-11-06"
+    }
   }
 ]

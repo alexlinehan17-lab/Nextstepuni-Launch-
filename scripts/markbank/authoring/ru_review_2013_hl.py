@@ -1,4 +1,4 @@
-"""Russian 2013 Higher source authoring; cultural allocation conflict remains open."""
+"""Russian 2013 Higher source authoring; cultural scoring conflict stays explicit."""
 import hashlib
 import json
 import re
@@ -163,6 +163,19 @@ def base(*args,**kwargs):
 def source_card(r):
     pages=r.get('sourcePages') or ([2,3,4] if r['unit']=='C1' else [6,7,8,9] if r['unit']=='LA2' else [6,7,8] if r['unit']=='C2' else r['questionPages'])
     c=base(r['unit'],r['question'],r['publishedTotal'],pages,r['schemePages'],r['item'],r['roman']);c['review']['questionPages']=r['questionPages'];return c
+
+def cultural_awareness(source):
+    """Retain the complete source task without selecting a disputed numeric tariff."""
+    record=next(task for task in source['tasks'] if task['unit']=='CA1')
+    assert (record['paperTotal'],record['publishedTotal'])==(8,4)
+    card=source_card(record)
+    card['kind']='question'
+    card['questionRef']='2013 HL Section CA1'
+    card['totalMarks']=record['paperTotal']
+    card['tariffModel']={'kind':'questionTotal'}
+    card['rows']=[{'id':'published-guidance','kind':'point','verbatim':record['publishedSourceBlock'],'marks':None,
+        'contextNote':'Source discrepancy: the original question paper prints 8 marks; the marking scheme prints “Assign 1 mark for each relevant detail” and “2 х 2 = 4”. The recorded 8 is the paper’s printed total, not an agreed scoring maximum. Choose two of the three original topics and give two details about each. The scheme supplies these instructions and topic names, without exemplar factual answers. Review your response against the complete source guidance; this card does not calculate a numerical score. The English paper column allows English or Russian; the Irish column and the scheme also allow Irish.'}]
+    return [card]
 
 def reading(source):
     result=[]
@@ -375,12 +388,14 @@ def source_language_rules(cards,source):
 
 def build():
     docs,source=source_records()
-    cards=reading(source)+summaries(source)+language_and_matching(docs,source)+grammar(docs,source)+writing(docs,source,base)+listening(docs,source)
+    cards=reading(source)+summaries(source)+language_and_matching(docs,source)+cultural_awareness(source)+grammar(docs,source)+writing(docs,source,base)+listening(docs,source)
     source_language_rules(cards,source)
-    assert len(cards)==39 and len({c['id'] for c in cards})==39
-    assert sum(c['totalMarks'] for c in cards)==292
+    assert len(cards)==40 and len({c['id'] for c in cards})==40
+    assert sum(c['totalMarks'] for c in cards if c['section']!='CA1')==292
     assert sum(bool(c.get('answerLanguageRule')) for c in cards)==18
-    assert not any(c['id']=='ru-2013-hl-ca1' for c in cards)
+    culture=next(c for c in cards if c['id']=='ru-2013-hl-ca1')
+    assert culture['totalMarks']==8 and all(row['marks'] is None for row in culture['rows'])
+    assert 'answerLanguageRule' not in culture
     for doc in docs.values():doc.close()
     from ru_summary_language_rules import attach_reviewed_summary_language_exceptions
     return attach_reviewed_summary_language_exceptions(cards)

@@ -26001,5 +26001,24 @@
     "guidancePages": [
       18
     ]
+  },
+  {
+    "id": "ru-2013-hl-ca1",
+    "year": 2013,
+    "level": "higher",
+    "questionRef": "2013 HL Section CA1",
+    "topicId": "russian-2-0",
+    "paperFileid": "LC099ALP000EV.pdf",
+    "schemeFileid": "LC099ALP000EV.pdf",
+    "paperPages": [
+      5
+    ],
+    "schemePages": [
+      5
+    ],
+    "component": "000",
+    "questionPages": [
+      5
+    ]
   }
 ]

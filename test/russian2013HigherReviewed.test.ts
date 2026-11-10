@@ -10,10 +10,15 @@ const row=(group:string,id='full',value=1)=>({[languageGroupId(group)]:1,[langua
 const slot=(id:string,value:number)=>({[languageGroupId(id)]:1,[languageScoreId(id)]:value});
 
 describe('Russian 2013 Higher supported source tasks',()=>{
-  it('publishes thirty-nine supported tasks without hiding the cultural allocation conflict',()=>{
-    expect(sitting).toHaveLength(39);expect(sitting.some(c=>c.id==='ru-2013-hl-ca1')).toBe(false);
+  it('covers forty original tasks while keeping the cultural allocation numerically unresolved',()=>{
+    expect(sitting).toHaveLength(40);
+    const culture=sitting.find(c=>c.id==='ru-2013-hl-ca1');
+    if(!culture||isRubricCard(culture))throw new Error('unpriced cultural question');
+    expect(culture.tariffModel.kind).toBe('questionTotal');
+    expect(culture.rows.every(row=>row.marks===null)).toBe(true);
+    expect(culture.totalMarks).toBe(8);
     expect(sitting.filter(c=>!tariffReconciles(c)).map(c=>c.id)).toEqual([]);
-    expect(sitting.reduce((s,c)=>s+c.totalMarks,0)).toBe(292);
+    expect(sitting.filter(c=>c.id!=='ru-2013-hl-ca1').reduce((s,c)=>s+c.totalMarks,0)).toBe(292);
     expect(sitting.filter(c=>c.audioMaterial)).toHaveLength(19);
     expect(sitting.filter(c=>c.audioMaterial).reduce((s,c)=>s+c.totalMarks,0)).toBe(80);
   });
