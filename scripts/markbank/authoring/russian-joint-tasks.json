@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "ru-2011-hl-c2",
+      "year": 2011,
+      "level": "higher",
+      "questionRef": "2011 HL Section C2 — Summary Sections 1–4",
+      "component": "000",
+      "paperFileid": "LC099ALP000EV.pdf",
+      "schemeFileid": "LC099ALP000EV.pdf",
+      "paperPages": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "schemePages": [
+        8,
+        9
+      ],
+      "paperSha256": "282f90bd9437359bb15917f4254fbd1e2c79b07912d7211abc7272c0be0429d9",
+      "schemeSha256": "0e0ba4dc7e9bffee7675b899d8380ed4102c50d5c0c84ffb7decf39362e5979e",
+      "independentSittingAsks": 39,
+      "questions": [
+        {
+          "n": "c2-1",
+          "questionRef": "2011 HL Section C2 Q1",
+          "questionText": "How did the writer end up spending two years in two English boarding schools? Give five details.",
+          "questionPages": [
+            6
+          ],
+          "schemePages": [
+            8,
+            9
+          ],
+          "leafKey": [
+            "C2",
+            1,
+            null,
+            null
+          ]
+        },
+        {
+          "n": "c2-2",
+          "questionRef": "2011 HL Section C2 Q2",
+          "questionText": "Anna describes how the British educational system differs from the Russian one. Give five details.",
+          "questionPages": [
+            7
+          ],
+          "schemePages": [
+            8,
+            9
+          ],
+          "leafKey": [
+            "C2",
+            2,
+            null,
+            null
+          ]
+        },
+        {
+          "n": "c2-3",
+          "questionRef": "2011 HL Section C2 Q3",
+          "questionText": "Apart from classroom learning, what activities do British boarding schools support? Give five details.",
+          "questionPages": [
+            8
+          ],
+          "schemePages": [
+            8,
+            9
+          ],
+          "leafKey": [
+            "C2",
+            3,
+            null,
+            null
+          ]
+        },
+        {
+          "n": "c2-4",
+          "questionRef": "2011 HL Section C2 Q4",
+          "questionText": "What benefits has Anna derived from studying in British schools? Give five details.",
+          "questionPages": [
+            9
+          ],
+          "schemePages": [
+            8,
+            9
+          ],
+          "leafKey": [
+            "C2",
+            4,
+            null,
+            null
+          ]
+        }
+      ],
+      "section": "C2"
+    }
+  ]
+}

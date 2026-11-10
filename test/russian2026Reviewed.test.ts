@@ -12,6 +12,7 @@ import { isRubricCard, tariffReconciles } from '../types/markBank';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import { PAPER_TRAIL_INDEX } from '../paperTrailData';
 import { HOSTED_ANSWER_OVERRIDES } from '../components/PaperTrail/vaultResolve';
+import { reviewedRussianJointTask } from '../scripts/markbank/russianJointTasks.mjs';
 
 const get = (suffix: string) => {
   const card = REVIEWED_CARDS.find(card=>card.id===`ru-2026-hl-${suffix}`);
@@ -92,15 +93,25 @@ describe('Russian 2026 Higher independent source review', () => {
   });
   it('binds every task to reachable original-paper and scheme anchors', () => {
     for(const source of sources) {
-      const n=source.id.replace(/^ru-\d+-[a-z]+-/,'');
+      const card=REVIEWED_CARDS.find(card=>card.id===source.id);
+      if(!card)throw new Error(`Missing reviewed Russian task ${source.id}`);
+      const joint=reviewedRussianJointTask(source,card);
+      const questions=joint??[{n:source.id.replace(/^ru-\d+-[a-z]+-/,''),
+        questionPages:source.questionPages??source.paperPages,schemePages:source.schemePages}];
       const file=`${source.year}/${source.paperFileid}.json`;
       const map=JSON.parse(readFileSync(resolve(__dirname,'../public/paper-answers',file),'utf8'));
-      const question=map.q.find((q:{n:string})=>q.n===n);
-      expect(question?.paperRegion.map((region:{p:number})=>region.p)).toEqual(source.paperPages);
-      expect(question?.region.map((region:{p:number})=>region.p)).toEqual(source.schemePages);
+      for(const original of questions) {
+        const matching=map.q.filter((q:{n:string})=>q.n===original.n);
+        expect(matching).toHaveLength(1);
+        const question=matching[0];
+        expect(question.paperRegion.map((region:{p:number})=>region.p)).toEqual(source.paperPages);
+        expect(question.region.map((region:{p:number})=>region.p)).toEqual(original.schemePages);
+        expect(question.pP).toBe(original.questionPages[0]);
+        if(joint)expect(question.markBankCardId).toBe(source.id);
+        expect(PAPER_TOPIC_TAGS.find(p=>p.subjectId==='russian'&&p.year===source.year&&p.fileid===source.paperFileid)?.q.some(q=>q.n===original.n&&q.primary===source.topicId)).toBe(true);
+      }
       expect(map.schemeFileid).toBe(source.schemeFileid);
       expect(HOSTED_ANSWER_OVERRIDES.has(`russian|${source.year}|${source.paperFileid}`)).toBe(true);
-      expect(PAPER_TOPIC_TAGS.find(p=>p.subjectId==='russian'&&p.year===source.year&&p.fileid===source.paperFileid)?.q.some(q=>q.n===n&&q.primary===source.topicId)).toBe(true);
       expect(PAPER_TRAIL_INDEX.russian.find(p=>p.year===source.year&&p.level===source.level&&p.lang==='ev')?.papers.find(p=>p.doc.f===source.paperFileid)?.answers).toBe(1);
     }
   });

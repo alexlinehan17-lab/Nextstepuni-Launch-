@@ -11,6 +11,26 @@ from pathlib import Path
 
 
 def reviewed_keys(year, level):
+    if (year, level) == (2011, 'hl'):
+        # Independent visual review of all16 paper,8 aural and24 scheme pages.
+        # Four summary asks retain four leaves under one collective45 task.
+        root=Path(__file__).resolve().parents[3]/'examiner-reports/russian'
+        for relative,digest in {
+            'papers/2011-hl-000-paper.pdf':'282f90bd9437359bb15917f4254fbd1e2c79b07912d7211abc7272c0be0429d9',
+            'papers/2011-hl-A00-paper.pdf':'d914563a421a1aeb5dcadcd0a70e5d0e0c4c2c538075452df12be1445645ee1d',
+            'schemes/2011-hl.pdf':'0e0ba4dc7e9bffee7675b899d8380ed4102c50d5c0c84ffb7decf39362e5979e',
+        }.items():assert hashlib.sha256((root/relative).read_bytes()).hexdigest()==digest
+        keys=[('C1',q,None,r) for q in (1,2,3,4) for r in ('i','ii')]
+        keys += [('C2',q,None,None) for q in (1,2,3,4)]
+        keys += [(u,None,None,None) for u in ('LA1','CA1','LA2')]
+        keys += [(u,q,None,None) for u,q in [('SD',3),('GR',1),('SE',2),('GW',3)]]
+        assert len(keys)==19
+        keys += [('L1',q,None,r) for q,r in [(1,None),(2,None),(3,None),(4,'i'),(4,'ii')]]
+        keys += [('L2',q,None,r) for q,r in [(1,None),(2,None),(3,'i'),(3,'ii'),(3,'iii')]]
+        keys += [('L3',q,None,r) for q,r in [(1,None),(2,'i'),(2,'ii'),(3,None)]]
+        keys += [('L4',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,None),(3,None),(4,'i'),(4,'ii')]]
+        assert len(keys)==len(set(keys))==39
+        return set(keys)
     if (year, level) == (2012, 'hl'):
         # Independent 52-page visual census:20 written +20 listening.
         # C1Q2(ii) remains in the denominator despite its unresolved 2x2=6.

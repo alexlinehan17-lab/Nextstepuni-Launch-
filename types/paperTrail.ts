@@ -60,6 +60,9 @@ export interface PaperAnswerQuestion {
    * must not truncate that parent (or a preceding question) when deriving
    * whole-question paper crops. The child supplies its own explicit region. */
   parentN?: string;
+  /** Reviewed original question sharing a published Mark Bank allocation.
+   * Multiple distinct Atlas anchors may resolve to the same retained card. */
+  markBankCardId?: string;
   /** Optional display label shown in the reveal header instead of "Question {n}",
    *  for papers whose questions restart per section (e.g. "Text II · Q1"). */
   label?: string;

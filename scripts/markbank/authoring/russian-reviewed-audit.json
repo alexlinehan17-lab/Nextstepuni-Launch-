@@ -4245,6 +4245,168 @@
         ],
         "reason": "C1Q2(ii) explicitly prints2x2=6 while requiring two details. Preserve every printed boundary; do not assign a replacement4 to that held task."
       }
+    },
+    {
+      "year": 2011,
+      "level": "higher",
+      "reviewedAt": "2026-11-10",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "auralPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "fullSizeTariffPages": [
+        8,
+        9,
+        16,
+        7
+      ],
+      "independentPracticeTasks": 39,
+      "writtenTasks": 19,
+      "listeningTasks": 20,
+      "publishedPracticeCards": 36,
+      "printedWrittenMarks": 220,
+      "printedListeningMarks": 80,
+      "publishedPracticeMarks": 300,
+      "newCards": 36,
+      "correctedCards": 0,
+      "previousIdsPreserved": 199,
+      "sourceReview": "All original questions reviewed; validation pending",
+      "diagnosedReaderIssues": [
+        "All 48 original pages visually inspected before authoring. No runtime additions.",
+        "C1 scheme36+14=50, paper reading header40 conflicts. Eight source leaf totals4/6/6/6/4/6/2/2=36. Preserve source priced leaves and visible heading discrepancy.",
+        "C1 Q1(i) both out walking full4 alternative versus individual2 details with minimum one about each person; avoid4+2 overclaim. Q2(ii) fantasy/sciencefiction only if not already credited Q2(i); general repeated info best answer only applies. Named partial1 and no-award phrases retained.",
+        "LA1 six infinitives1 each, no partial; original p7 explicitly rejects поити forпошел, нравится forнравятся, забывать forзабыл. Accepted нравиться is printed in the table; prior preparation note mistook the invalid forms and is corrected after full-size original inspection. CA1 choose2 of3 topics,2details each2, both/either language accepted.",
+        "C2 scheme45+LA5=50 versus paper summary40. Original p8 five details2 each, main or secondary, AND1 (OR IN THE CASE OF A PARTICULARLY WELL ANSWERED QUESTION2) discretionary mark. The2 is the alternative amount, not Section2; Japanese peer independently confirmed. No source basis for11/12/11/11 allocation. Preserve full rule and collective45; per-summary maxima/cumulative allocation unresolved. General partial1; incomplete sections/subsections discretion0. No2012 Russian-summary exemption.",
+        "C2 section2 all four subject categories required for2; subject lists within categories max2. Section3 any two boys sports form a subpool; named leisure details explicitly1 each up to4. Preserve these caps inside global5detail/10content boundary; do not reprice secondary details all2 or invent category splits.",
+        "LA2 five parts-of-speech rows1:4/2/5/1/3, all sourceforms exact. SD10rows2, full6/4/7/8/1/2/10/3/9/5; named1 alternatives row1=5or8,row2=3or10,row4=6,row10=2. No inferred unique-use restriction.",
+        "GR fifteen forms2 across two texts under one30 task; no separately printed text subtotals. Wrong capitalization expressly0 (unlike2013 half). Compare Amsterdam/August initials if uncertain. Source accepts вуза/ВУЗа, allotherexactforms. Bothtexts preserved.",
+        "SE seven complete options, C10/E20,2/detail, introductory opinionmax2, title omission-1 content, LowerE14 (C<=5 except title penalty or <25words), LowerA9-14 (9-10/11-12/13-14), softsign1 or2.",
+        "GW four complete options Facebook/blog/interview/discussion; C15/E15/TC10,1 per content detail and required sourcecategory coverage. Facebook D/E refer two photos, no invented separate equal tariff. Discussion p16 directly lifted comprehension material earns0content; adapted/changed verbs/summarised details earn2each (explicit exception). Preserve rule visibly and numerically without guessing exemplar claims. LowerE10 (C<=7 or <60words); LowerA7-12 table9-11 overlaps11-12, prose9/10. Softsign2.",
+        "Listening all2/detail, explicitly accepts Russian and noninvalidating excess, wrong-place answers. Quotas L1:2/2/3/1/2; L2 five tasks2each; L3:3/2/1/4; L4:2/1/2/2/2/1. All sections20.",
+        "L4 birth pool is TWO OF17May/1992/Moscow, preserving when/where wording without inferred date/place quota, same independently reviewed2011OL case. Named partials for goodhearing/music andTVprogramme1 remain; vagueOlympics1 versusJuniorOlympics2; accommodationfurniture1 versusinrooms2. L1 countrieslistCIS retained asprinted, no inventedcountrymembership options.",
+        "Independent task census39=19written+20listening. Original source allocations and manual assessment are validated; native browser/audio QA remains coordinator-owned.",
+        "Original paper pages7 and10 repeat identical boundary glyphs across text spans. Deduplicate only identical glyphs at the same physical coordinates; retain literal original wording.",
+        "Summary Section2 crosses physical scheme8–9; all four subject categories and list maximum remain visible. Section3 preserves any-two boys sports and one-mark leisure details up to four.",
+        "2011 grammar explicitly gives zero for inappropriate Upper Case or Lower Case; retain both published вуза/ВУЗа forms. No later-year partial capitalization tariff inherited.",
+        "Guided LowerA numeric7–12 is consistent but descriptor9–11 overlaps11–12; retain both literal versions without descriptor reassignment. All seven essay choices and four guided choices are preserved.",
+        "Initial original-source gate caught a stale NARRATIVE heading in the prepared Facebook guide; corrected to the literal FACEBOOK before publication. Two multi-page quotations are split at exact reviewed boundaries (summary8/9 and guided15/16), with exact recombination and original heading assertions. No verifier relaxation."
+      ],
+      "independentReview": {
+        "reviewers": [
+          "Codex coordinator"
+        ],
+        "findings": [
+          "Original scheme physical8–9 supports a collective45 summary allocation with no fixed section11/12 split. Preserve all four original prompts under four manual content0–10 and discretion0/1/2 controls, capped45 overall.",
+          "Original p3 general wrong-language NO marks and p8 summary-specific weak-English/Russian-word discretion exception must both remain visible. No source-defined wholly/mixed threshold exists; joint-summary language assessment remains manual, without automatic multiplier or language flags.",
+          "All four original Atlas questions must resolve to the shared card; retain the independent39-ask census and every pre-existing anchor."
+        ]
+      },
+      "validation": {
+        "status": "all source, runtime and preservation gates passed; native Atlas-to-practice consumer remains pending",
+        "browserQa": "pending; root integration owns native UI QA",
+        "sittingCompletion": false,
+        "sourceCoverageComplete": true,
+        "sourceAsks": 39,
+        "representedCards": 36,
+        "publishedSchemeMarks": 300,
+        "sourceSlicesVerified": 345,
+        "combinedSourceSlicesVerified": 11337,
+        "mandatoryPythonSourceTestsPassed": 63,
+        "initialFocusedRuntimeTestsPassed": 75,
+        "initialMappingTestsPassed": 10,
+        "requiredCasesResolved": 659,
+        "requiredTestFiles": 43,
+        "initialRequiredTestsPassed": 658,
+        "correctedAnchorSuitesTestsPassed": 18,
+        "russianCoverageTestsPassed": 3,
+        "appTypecheck": "passed",
+        "scopedTestTypecheck": "passed",
+        "targetedLint": "passed",
+        "productionBuild": "passed",
+        "productionBuildSeconds": 37.96,
+        "deterministicRegenerations": 2,
+        "all1192PriorReviewedCardsUnchanged": true,
+        "all1192PriorAuthoredRecordsUnchanged": true,
+        "otherSubjectsPreserved": true,
+        "decodedNonRussianAtlasPreserved": true,
+        "nonRussianIndexBytesPreserved": true,
+        "availableNonRussianReconcileReportsUnchanged": 16,
+        "unchangedUnavailableOtherSourceChecks": 37,
+        "sittingOpenTasks": 0,
+        "sittingExcludedTasks": 0,
+        "sittingOrphans": 0,
+        "atlasDataMapping": "Four original anchors c2-1 through c2-4 carry exact markBankCardId ru-2011-hl-c2; original question pages6/7/8/9 and full passage6-9 retained. All8 prior reading anchors unchanged.",
+        "nativeAtlasNavigation": "pending; generic answer-map markBankCardId consumer is not present and click-to-practice behavior is not claimed",
+        "anchorTestCorrection": "Existing all-source test now validates each manifest-bound original question for joint cards instead of assuming a single ID-derived anchor. Includes exact pages, unique anchors, card target and topic tags. No source/runtime records changed."
+      },
+      "jointAllocations": [
+        {
+          "cardId": "ru-2011-hl-c2",
+          "coveredQuestionRefs": [
+            "2011 HL Section C2 Q1",
+            "2011 HL Section C2 Q2",
+            "2011 HL Section C2 Q3",
+            "2011 HL Section C2 Q4"
+          ],
+          "printedPaperMarks": 40,
+          "printedSchemeMarks": 45,
+          "sourcePages": [
+            8,
+            9
+          ],
+          "manualAssessment": "Four content0–10 and four discretion0/1/2 controls under collective45. Nested semantic conditions remain full literal manual guidance, not automatically classified detail slots."
+        }
+      ]
     }
   ]
 }
