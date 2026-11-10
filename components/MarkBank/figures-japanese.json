@@ -3753,5 +3753,149 @@
         0.575
       ]
     }
+  },
+  "ja-2014-ol-2a-3": {
+    "src": "/exam-figures/japanese/ja-2014-ol-2a-3.png",
+    "md5": "9f462c4c0619fb5a9ad678a25d9c3ad4",
+    "alt": "Give details about any two of the oldest people in Japan as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.07,
+        0.3,
+        0.96,
+        0.54
+      ]
+    }
+  },
+  "ja-2014-ol-2a-4": {
+    "src": "/exam-figures/japanese/ja-2014-ol-2a-4.png",
+    "md5": "5621d8a7b1be21560ee120b21886b650",
+    "alt": "Write whether the following sentences are True or False. Choose a phrase from the text to support your answer, as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.07,
+        0.555,
+        0.97,
+        0.961
+      ]
+    }
+  },
+  "ja-2014-ol-2b": {
+    "src": "/exam-figures/japanese/ja-2014-ol-2b.png",
+    "md5": "9a7916c0fb3b188c2645815ef387178a",
+    "alt": "Circle the correct meaning for the following Kanji as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 6,
+      "region": [
+        0.06,
+        0.51,
+        0.96,
+        0.95
+      ]
+    }
+  },
+  "ja-2014-ol-2c-1": {
+    "src": "/exam-figures/japanese/ja-2014-ol-2c-1.png",
+    "md5": "0aac9ca6a13049d10addcb8c6d45b359",
+    "alt": "Write the following sentences in the negative as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.07,
+        0.04,
+        0.96,
+        0.37
+      ]
+    }
+  },
+  "ja-2014-ol-2c-2": {
+    "src": "/exam-figures/japanese/ja-2014-ol-2c-2.png",
+    "md5": "2c86bb4009f38a10ac2904cb7b1dbf8b",
+    "alt": "Circle the correct particle (a), (b) or (c) as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 7,
+      "region": [
+        0.07,
+        0.39,
+        0.97,
+        0.7
+      ]
+    }
+  },
+  "ja-2014-ol-3-1": {
+    "src": "/exam-figures/japanese/ja-2014-ol-3-1.png",
+    "md5": "6766f4d597e97f892029ec9cf649c8e7",
+    "alt": "Match the person with the place they will visit:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 11,
+      "region": [
+        0.51,
+        0.03,
+        0.96,
+        0.21
+      ]
+    }
+  },
+  "ja-2014-ol-4": {
+    "src": "/exam-figures/japanese/ja-2014-ol-4.png",
+    "md5": "b73714ddc0c96ed5dc222a81e39af10f",
+    "alt": "Insert the missing words from the box below as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.065,
+        0.055,
+        0.97,
+        0.94
+      ]
+    }
+  },
+  "ja-2014-ol-5": {
+    "src": "/exam-figures/japanese/ja-2014-ol-5.png",
+    "md5": "05e8311fd61ca20ef7afc0045ac8cdd8",
+    "alt": "Answer ANY 5 of the following 7 questions about music in Japanese in the spaces provided.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 13,
+      "region": [
+        0.065,
+        0.03,
+        0.97,
+        0.96
+      ]
+    }
+  },
+  "ja-2014-ol-lb-1-iii": {
+    "src": "/exam-figures/japanese/ja-2014-ol-lb-1-iii.png",
+    "md5": "48d6d60445c849f019f8313dea9c3e1b",
+    "alt": "To contact Tokyo Sky Tree, you should call",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 3,
+      "region": [
+        0.51,
+        0.43,
+        0.97,
+        0.525
+      ]
+    }
   }
 }

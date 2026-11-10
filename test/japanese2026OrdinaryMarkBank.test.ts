@@ -5,6 +5,7 @@ import { CARDS as ordinary } from '../components/MarkBank/cards/japanese/ordinar
 import reviewed from '../components/MarkBank/cards/japanese/reviewed.json';
 import census from '../scripts/markbank/authoring/reviews/japanese-2026-ol-census.json';
 import review from '../scripts/markbank/authoring/reviews/japanese-2026-ol.json';
+import census2014 from '../scripts/markbank/authoring/reviews/japanese-2014-ol-census.json';
 import census2015 from '../scripts/markbank/authoring/reviews/japanese-2015-ol-census.json';
 import { languagePointsMarks, type LanguageScores } from '../components/MarkBank/languageScoring';
 import { tariffReconciles, UNPRINTED_ANSWER, type LanguagePointsRubric } from '../types/markBank';
@@ -58,8 +59,10 @@ describe('Japanese 2026 Ordinary independent source review', () => {
     }
     // Global frozen-ID/content and alias accounting is pinned independently by
     // markBankCardPreservation and the 2025/2026 Higher review tests.
-    expect(ordinary.filter(card => card.year !== 2026)).toHaveLength(261 + 42 - 22 + 40 - 40 + 41 - 34 + 40 - 41 + 39 - 39 + 56 + 57 + 54 + 52 + census2015.tasks.length);
+    expect(ordinary.filter(card => card.year !== 2026)).toHaveLength(261 + 42 - 22 + 40 - 40 + 41 - 34 + 40 - 41 + 39 - 39 + 56 + 57 + 54 + 52 + census2015.tasks.length + census2014.tasks.length);
     expect(census2015.tasks).toHaveLength(51);
+    expect(census2014.tasks).toHaveLength(52);
+    expect(ordinary.filter(card => card.year === 2014).map(card => card.id).sort()).toEqual(census2014.tasks.map(task => `ja-2014-ol-${task.key.filter(part => part !== null).join('-').toLowerCase()}`).sort());
     expect(ordinary.filter(card => card.year === 2015).map(card => card.id).sort()).toEqual(census2015.tasks.map(task => `ja-2015-ol-${task.key.filter(part => part !== null).join('-').toLowerCase()}`).sort());
     expect(cards.some(card => card.questionText.trim().length === 0)).toBe(false);
   });
