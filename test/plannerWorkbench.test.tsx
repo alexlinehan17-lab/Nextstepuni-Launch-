@@ -46,18 +46,17 @@ test('editing to-dos blocks the start shortcut and keeps account/date/block-scop
   expect(readPlannerTodos('student-b',entry.dateKey,entry.id)).toBeNull();
   expect(readPlannerTodos('student-a','2026-10-05',entry.id)).toBeNull();
 });
-test('rest days and duration save atomically and rest days are capped at three', async () => {
+test('rest days and duration save atomically without restricting the student to four study days', async () => {
   const handlers = props(); const user = userEvent.setup(); render(<PlannerWorkbench {...handlers} />);
   await user.click(screen.getByRole('button', { name:'Plan settings' }));
   const dialog = screen.getByRole('dialog', { name:'Make room for your week.' });
   await user.click(within(dialog).getByRole('checkbox', { name:'Saturday' }));
   await user.click(within(dialog).getByRole('checkbox', { name:'Friday' }));
-  expect(within(dialog).getByRole('checkbox', { name:'Thursday' })).toHaveAttribute('aria-disabled', 'true');
   await user.click(within(dialog).getByRole('checkbox', { name:'Thursday' }));
-  expect(within(dialog).getByRole('checkbox', { name:'Thursday' })).toHaveAttribute('aria-checked', 'false');
+  expect(within(dialog).getByRole('checkbox', { name:'Thursday' })).toHaveAttribute('aria-checked', 'true');
   await user.selectOptions(within(dialog).getByRole('combobox'), '30');
   await user.click(within(dialog).getByRole('button', { name:'Save plan settings' }));
-  expect(handlers.onPlanSettingsChange).toHaveBeenCalledWith(['Sunday','Saturday','Friday'],30);
+  expect(handlers.onPlanSettingsChange).toHaveBeenCalledWith(['Sunday','Saturday','Friday','Thursday'],30);
 });
 
 test('week view omits empty rest days but retains school events and day navigation', async () => {

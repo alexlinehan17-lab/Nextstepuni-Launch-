@@ -60,6 +60,7 @@ vi.mock('@/hooks/useStudySession', () => ({
 }));
 
 vi.mock('@/contexts/ProgressContext', () => ({
+  useOptionalProgress: () => null,
   useProgress: () => ({ rawProgressDoc: {}, updateDemoProgress: vi.fn() }),
 }));
 

@@ -25,6 +25,7 @@ import { setSoundMuted, useSoundMuted } from '../approved-ui-runtime';
 import StudySubjectPicker, { StudySubjectArtwork } from './StudySubjectPicker';
 import { SessionTodos } from './SessionTodos';
 import StudyTopicPicker from './StudyTopicPicker';
+import StudyFocusChoice from './StudyFocusChoice';
 import './study-kobra.css';
 
 type SessionType = 'new-learning' | 'practice' | 'revision';
@@ -338,6 +339,7 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
                 />
               </div>
             )}
+            <StudyFocusChoice />
             {todayBlocks.length > 0 && (
               <section className="ks-timetable" aria-label="Today’s timetable">
                 <h2>On your plan today</h2>

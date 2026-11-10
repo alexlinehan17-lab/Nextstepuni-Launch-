@@ -67,6 +67,8 @@ export interface StudentSubjectProfile {
 }
 
 export interface StudyBlock {
+  /** Persisted identity; legacy blocks retain the old fallback. */
+  id?: string;
   subjectName: string;
   sessionType: 'new-learning' | 'practice' | 'revision';
   durationMinutes: number;
@@ -576,7 +578,7 @@ export interface TimetableStreak {
 
 /** Returns a stable block ID: "SubjectName|sessionType|blockIndex" */
 export function getBlockId(block: StudyBlock, blockIndex: number): string {
-  return `${block.subjectName}|${block.sessionType}|${blockIndex}`;
+  return block.id ?? `${block.subjectName}|${block.sessionType}|${blockIndex}`;
 }
 
 /** Returns "YYYY-MM-DD" for a Date */

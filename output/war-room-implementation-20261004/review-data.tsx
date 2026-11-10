@@ -48,3 +48,5 @@ export function useInnovationData() {
   return value;
 }
 export const useOptionalProgress = () => ({ studySessions: sessions, studyDebriefs: [], rawProgressDoc: { sm2States: [] } });
+// The shared planner may read auth, but this portable review has no signed-in account.
+export const useAuth = () => ({ user: null });
