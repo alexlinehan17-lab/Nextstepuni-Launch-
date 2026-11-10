@@ -3284,10 +3284,12 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       </p>}
                       {assessmentCard.extraneousMaterialRule && <div>
                         <label className="mb-language-flag">
-                          <input type="checkbox" aria-label="Strong evidence of extraneous material in this response"
+                          <input type="checkbox" aria-label={assessmentCard.extraneousMaterialRule.conditionLabel
+                            ?? 'Strong evidence of extraneous material in this response'}
                             checked={rowClaims[extraneousMaterialClaimId] === 1}
                             onChange={event => setClaim(extraneousMaterialClaimId, event.currentTarget.checked ? 1 : 0)} />
-                          <span>Strong evidence of extraneous material · half credit</span>
+                          <span>{assessmentCard.extraneousMaterialRule.conditionLabel
+                            ?? 'Strong evidence of extraneous material'} · half credit</span>
                         </label>
                         <p style={{ font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
                           {assessmentCard.extraneousMaterialRule.sourceText}
