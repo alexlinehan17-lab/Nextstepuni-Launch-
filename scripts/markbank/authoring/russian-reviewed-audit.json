@@ -3788,6 +3788,135 @@
         ],
         "interruptionRecovery": "Transient ENOSPC opening a log: all JSON parsed and all1001 prior authored records proved intact before rerunning the entire mandatory source/initial gate. Full production build ran after disk preflight and safe download-cache cleanup; no reduced build."
       }
+    },
+    {
+      "year": 2014,
+      "level": "higher",
+      "reviewedAt": "2026-11-10",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "auralPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "fullSizeTariffPages": [
+        4,
+        5,
+        8,
+        13,
+        15,
+        16,
+        17
+      ],
+      "independentPracticeTasks": 40,
+      "writtenTasks": 20,
+      "listeningTasks": 20,
+      "printedWrittenMarks": 220,
+      "printedListeningMarks": 80,
+      "allAlternativePracticeMarks": 300,
+      "newCards": 40,
+      "correctedCards": 0,
+      "previousIdsPreserved": 199,
+      "sourceReview": "complete; published source discrepancies retained visibly",
+      "diagnosedReaderIssues": [
+        "All40 independent tasks retained. Reading local tariffs sum38 under scheme50[38+12], although original paper heading says40. Preserve every local allocation and a visible discrepancy; no moved2marks.",
+        "C1Q3(i) reserves two manual0/2 slots for the four neighbours-did-not actions and three Other distinct0/1/2 slots explicitly excluding those actions, under three-answer/six-mark maximum. The pool-level bad1 does not establish a unique bad-to-boring pairing. All literal full/partial lines remain visible; actual distinct details must not repeat.",
+        "C1Q1(i) good1 similarly remains a pool-level manual partial. Reading rejections, no-penalty proper names and explanation requirements are preserved.",
+        "LA1 permits three of six phrases, one noun mark plus one modifier mark, OR full2 for a correct translation. Source-bound alternatives prevent claiming both routes for one phrase; no translated model answers or translation partial tariff invented.",
+        "CA1 three full2 details bind schemep4 generalQ1 allocation plus localp5 and the explicit50[38+12] heading. Original bilingual paper allows English/Irish/Russian; no Russian-only penalty or factual examples invented.",
+        "C2.1/C2.2 literal main/secondary pools overlap, so four distinct manual0/1/2 answer slots avoid automatic duplicate fact credit. All summaries preserve2/detail, intelligiblepartial1,2discretion, incompletecap1 and wholewronglanguage0 includingdiscretion. Lucy/Serezha names explicitly need not be mentioned for discretion.",
+        "All13 schoolwords, five exact infinitives, ten matching rows with every allowed number, and fifteen original grammar gaps retained. Nearest fixed words bind grammar answers despite unrelated connective prose differences in scheme; no guessed variants.",
+        "2014 LowerA numeric and descriptor grids are nonoverlapping9–14essay/7–12guided. Exact LowerE conditions, title exception, no-content0 and source-specific softsign1or2essay/2guided retained. Guidedwriting has explicit choice-specific category lists onp12 whose later minimum-category shorthand does not fully match; both remain visible, without invented allocation mapping.",
+        "L1Q3(i) literal one-mark concert/May/8:00 list is printed below band details before the event question. Preserve that placement and visible anomaly, not inferred relocation. Two manual0/1/2 answer slots retain full and partial pools. L3Q2(i) and L4Q3(i) use manual slots where partial association is not unique.",
+        "Listening clear percentage/place partials,30offices partial of first30stations, andSurikov-famous-artist partial of great-grandfather identification remain exclusive full/partial concepts. Other printed plus units remain independent; slash alternatives stay together. All original2/detail quotas and complete dates/times remain intact.",
+        "L3Q4 expressly accepts details from other sections. Two extra manual full2 detail slots share the originaltwo-answer quota, with visible distinct-detail/no-repeat requirement. No inferred1markpartial or narrowing of othersections.",
+        "All20 listening tasks show original Russian-answer/non-invalidating-excess exceptions. Seventeen written tasks carry source-boundwronglanguage0; translation/cultural/matching exceptions do not inherit it."
+      ],
+      "independentReview": {
+        "reviewers": [
+          "Codex coordinator"
+        ],
+        "findings": [
+          "Independently reviewedp4/p5 cultural-rate scope and neighbours pool limit. Rejected source-explicit bad-to-boring pairing and approved explicit reserved/manual slots with Other exclusion. Confirmed anomalous listening partial placement must remain literal."
+        ]
+      },
+      "validation": {
+        "status": "all source, runtime and preservation gates passed",
+        "sourceSlicesVerified": 412,
+        "browserQa": "pending; root integration owns native UI QA",
+        "sourceLimitations": [
+          "L1Q3(i) concert partial placement is internally anomalous and remains explicit.",
+          "Guided-writing generic category shorthand does not fully match its own choice-specific guides.",
+          "Manual distinct-answer assessment is required for pool-level partials and overlapping summary facts; no invented automatic association."
+        ],
+        "combinedSourceSlicesVerified": 10248,
+        "mandatoryOriginalAndSyntheticSourceTestsPassed": 36,
+        "focusedAndSharedTestsPassed": 110,
+        "requiredTestsPassed": 567,
+        "russianCoverageTestsPassed": 3,
+        "appTypecheck": "passed",
+        "scopedTestTypecheck": "passed",
+        "targetedLint": "passed",
+        "productionBuild": "passed",
+        "productionBuildSeconds": 58.05,
+        "deterministicRegenerations": 2,
+        "all1074PriorReviewedCardsUnchanged": true,
+        "all1074PriorAuthoredRecordsUnchanged": true,
+        "otherSubjectsPreserved": true,
+        "decodedNonRussianAtlasPreserved": true,
+        "nonRussianIndexBytesPreserved": true,
+        "sittingOpenTasks": 0,
+        "sittingExcludedTasks": 0,
+        "sittingOrphans": 0,
+        "testCorrections": [
+          "Two rendered queries were scoped to the selected phrase and source-guidance list because identical text correctly appears in multiple controls/paper prompts. All567 required tests passed afterward."
+        ],
+        "bottomContentAudit": "Every non-footer word span below y755 on scheme sourcepages3–17 is present in the extracted source drafts, including Neva/Hermitage, names-discretion exception, final matching sentence and final marathon details."
+      }
     }
   ]
 }

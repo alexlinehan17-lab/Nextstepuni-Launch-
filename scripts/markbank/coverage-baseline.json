@@ -708,19 +708,19 @@
     "refsHash": "8dc6e8622a1ca48e"
   },
   "russian": {
-    "cards": 1091,
-    "contentHash": "0156bed14f82ab4e",
-    "coveragePct": 87.7,
-    "covered": 1092,
+    "cards": 1131,
+    "contentHash": "0c724eff9b21a93d",
+    "coveragePct": 89.0,
+    "covered": 1132,
     "excluded": 26,
-    "leaves": 1275,
-    "open": 157,
+    "leaves": 1301,
+    "open": 143,
     "orphans": 0,
     "papers": {
       "count": 66,
       "hash": "ff06e1bdb6b5283e"
     },
-    "refsHash": "9a0ee62fb1777629"
+    "refsHash": "fd6b457f564d1a80"
   },
   "slovakian": {
     "cards": 140,

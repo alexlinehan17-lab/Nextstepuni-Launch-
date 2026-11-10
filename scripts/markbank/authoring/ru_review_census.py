@@ -11,6 +11,27 @@ from pathlib import Path
 
 
 def reviewed_keys(year, level):
+    if (year, level) == (2014, 'hl'):
+        # Independent 44-page visual census:20 written and20 listening.
+        # CA1 is separate from LA1; each complete writing choice pool is one task.
+        root = Path(__file__).resolve().parents[3] / 'examiner-reports/russian'
+        for relative, digest in {
+            'papers/2014-hl-000-paper.pdf':'2260a53d30344848d06148108aac814aa7b99616d68dddec815ce79604877b91',
+            'papers/2014-hl-A00-paper.pdf':'3cf21d1f34576eda4ce0b6bc126152ea7f8b289c105cd5e7e711774bf10f1f66',
+            'schemes/2014-hl.pdf':'fb5cfc36f2f64fc1a8fc068bbad392ff99eb2ff5792c37267dfcabc0d0ad1f48',
+        }.items():
+            assert hashlib.sha256((root / relative).read_bytes()).hexdigest() == digest
+        keys=[('C1',q,None,r) for q,rs in [(1,('i','ii')),(2,('i','ii','iii')),(3,('i','ii')),(4,(None,))] for r in rs]
+        keys += [('C2',q,None,None) for q in (1,2,3,4)]
+        keys += [(u,None,None,None) for u in ('LA1','CA1')]+[('LA2',None,None,r) for r in ('i','ii')]
+        keys += [(u,q,None,None) for u,q in [('SD',3),('GR',1),('SE',2),('GW',3)]]
+        assert len(keys)==20
+        keys += [('L1',q,None,r) for q,r in [(1,None),(2,None),(3,'i'),(3,'ii'),(4,None)]]
+        keys += [('L2',q,None,r) for q,r in [(1,None),(2,None),(3,'i'),(3,'ii')]]
+        keys += [('L3',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,'i'),(2,'ii'),(3,None),(4,None)]]
+        keys += [('L4',q,None,r) for q,r in [(1,None),(2,'i'),(2,'ii'),(3,'i'),(3,'ii')]]
+        assert len(keys)==len(set(keys))==40
+        return set(keys)
     if (year, level) == (2016, 'ol'):
         # Independent 44-page visual census: 34 written and 39 listening.
         # Handwriting IR1(i) is LA1; language awareness contributes4 inside IR2.
