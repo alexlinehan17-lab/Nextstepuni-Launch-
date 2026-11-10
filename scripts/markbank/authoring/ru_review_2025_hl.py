@@ -291,7 +291,8 @@ def build():
             c['review']['correctsExisting'] = True
     attach_language_rule(cards, docs['scheme'])
     assert sum(c['review'].get('correctsExisting', False) for c in cards) == 16
-    return cards
+    from ru_summary_language_rules import attach_reviewed_summary_language_exceptions
+    return attach_reviewed_summary_language_exceptions(cards)
 
 
 if __name__ == '__main__':

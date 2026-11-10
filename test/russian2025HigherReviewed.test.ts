@@ -52,7 +52,7 @@ describe('Russian 2025 Higher original source review',()=>{
     expect(languageMarks(card,scores)).toBe(9);
     scores[languageRowId('disadvantages','detail-2')]=2;
     expect(languageMarks(card,scores)).toBe(10);
-    expect(languageMarks(card,{...scores,[languageOtherLanguageId('response')]:1})).toBe(0);
+    expect(languageMarks(card,{...scores,[languageOtherLanguageId('response')]:1})).toBe(2);
     expect(languageMarks(card,{...scores,[languageOtherLanguageId('row:advantages:detail-1')]:1})).toBe(10);
     expect(card.rubric.system==='language-points' && card.rubric.criteria?.[0].guidance).toContain('speaks two languages since early childhood');
   });

@@ -46,13 +46,13 @@ describe('Russian 2015 Higher published allocations',()=>{
     expect(c.rubric.groups[5].rows.map(r=>r.text)).toEqual(['решил','решал']);
     expect(languageMarks(c,Object.assign({},...c.rubric.groups.flatMap(g=>g.rows.map(r=>row(g.id,r.id)))))).toBe(30);
   });
-  it('keeps summary partials, incomplete discretion and whole-language zero distinct',()=>{
+  it('keeps summary partials, incomplete discretion and the content-language adjustment distinct',()=>{
     const c=points('c2-1'),g=c.rubric.groups.find(g=>g.label==='Secondary detail');if(!g)throw new Error('secondary');
     const score={...row(g.id,'full',2),[languageScoreId('summary-skills')]:2};
     expect(languageMarks(c,score)).toBe(4);
     expect(languageMarks(c,{...score,[languageRowId(g.id,'full')]:1})).toBe(3);
     expect(languageMarks(c,{...score,[languageFlagId('incomplete-response')]:1})).toBe(3);
-    expect(languageMarks(c,{...score,[languageOtherLanguageId('response')]:1})).toBe(0);
+    expect(languageMarks(c,{...score,[languageOtherLanguageId('response')]:1})).toBe(2);
   });
   it('uses the source essay deductions without importing the later unsubstantiated-fact rule',()=>{
     const c=writing('se');const score={[languageScoreId('content')]:10,[languageScoreId('expression')]:20,[languageLengthId('words')]:50};

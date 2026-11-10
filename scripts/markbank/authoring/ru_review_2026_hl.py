@@ -417,7 +417,8 @@ def build():
     cards.extend(listening(docs, P))
     attach_language_rule(cards, docs['scheme'])
     assert len(cards) == 46
-    return cards
+    from ru_summary_language_rules import attach_reviewed_summary_language_exceptions
+    return attach_reviewed_summary_language_exceptions(cards)
 
 
 def attach_language_rule(cards, scheme):

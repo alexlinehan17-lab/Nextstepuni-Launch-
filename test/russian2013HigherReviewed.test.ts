@@ -37,14 +37,14 @@ describe('Russian 2013 Higher supported source tasks',()=>{
     expect(languageMarks(c,row(g.id,'example-1',2))).toBe(2);
     expect(languageMarks(c,{...row(g.id,'example-1',2),...row(g.id,'example-2',2),...row(g.id,'example-3',2)})).toBe(4);
     const all={...row(g.id,'example-1',2),...row(g.id,'example-2',2),...row('answer-1','full',2),...row('answer-2','full',2),...row('answer-3','full',2),[languageScoreId('summary-skills')]:2};
-    expect(languageMarks(c,all)).toBe(10);expect(languageMarks(c,{...all,[languageOtherLanguageId('response')]:1})).toBe(0);
+    expect(languageMarks(c,all)).toBe(10);expect(languageMarks(c,{...all,[languageOtherLanguageId('response')]:1})).toBe(2);
   });
   it('preserves the complete no-full-credit sentence and both-parent requirement with the explicit discretion cap',()=>{
     const c=points('c2-2');expect(c.rubric.taskRequirements.join(' ')).toContain('she collected photographs of artists / of famous people + she took photos of artists');
     expect(c.rubric.markingGuideNote).toContain('mother AND one about the father');
     const score={...slot('detail-1',1),...slot('detail-2',2),[languageScoreId('summary-skills')]:2};
     expect(languageMarks(c,score)).toBe(5);expect(languageMarks(c,{...score,[languageFlagId('incomplete-response')]:1})).toBe(4);
-    expect(languageMarks(c,{...score,[languageOtherLanguageId('response')]:1})).toBe(0);
+    expect(languageMarks(c,{...score,[languageOtherLanguageId('response')]:1})).toBe(2);
   });
   it('retains exact infinitives and multilingual word-class labels',()=>{
     expect(points('la1').rubric.groups.map(g=>g.rows[0].text)).toEqual(['появиться','ходить','переезжать','зазвонить','заниматься','предложить']);

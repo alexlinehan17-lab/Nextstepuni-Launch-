@@ -111,8 +111,15 @@ describe('Russian source directions visible in the practice session',()=>{
     await waitFor(()=>expect(screen.getByText(/placement is 4 of 10 marks/)).toBeVisible());
     fireEvent.click(screen.getByRole('checkbox',{name:/If a candidate fails to answer all sections/}));
     await waitFor(()=>expect(screen.getByText(/placement is 3 of 10 marks/)).toBeVisible());
-    fireEvent.click(screen.getByRole('checkbox',{name:'All answers answered in another language'}));
-    await waitFor(()=>expect(screen.getByText(/placement is 0 of 10 marks/)).toBeVisible());
+    const languageFlag=screen.getByRole('checkbox',{name:'All answers answered in another language'});
+    fireEvent.click(languageFlag);
+    await waitFor(()=>expect(screen.getByText(/placement is 1 of 10 marks/)).toBeVisible());
+    expect(screen.getByText('Assess Discretionary marks separately under the source guidance.')).toBeVisible();
+    expect(screen.getAllByText(/Discretionary marks may be awarded/)[0]).toBeVisible();
+    fireEvent.click(languageFlag);
+    await waitFor(()=>expect(screen.getByText(/placement is 3 of 10 marks/)).toBeVisible());
+    fireEvent.click(screen.getByRole('checkbox',{name:/If a candidate fails to answer all sections/}));
+    await waitFor(()=>expect(screen.getByText(/placement is 4 of 10 marks/)).toBeVisible());
   });
   it('shows 2013 essay content bands and the literal guided Lower A overlap',async()=>{
     reveal('se','hl',2013);

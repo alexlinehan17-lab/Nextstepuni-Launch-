@@ -63,7 +63,7 @@ describe('Russian 2017 Higher original source review',()=>{
     const scores={...selected('answer-8','full',2),[languageScoreId('summary-skills')]:2};
     expect(languageMarks(c,scores)).toBe(4);
     expect(languageMarks(c,{...scores,[languageFlagId('incomplete-response')]:1})).toBe(3);
-    expect(languageMarks(c,{...scores,[languageOtherLanguageId('response')]:1})).toBe(0);
+    expect(languageMarks(c,{...scores,[languageOtherLanguageId('response')]:1})).toBe(2);
   });
   it('prevents crowd-general and crowd-specific routes from earning duplicate credit',()=>{
     const c=points('c2-4');
