@@ -42,6 +42,43 @@ afterAll(async () => {
   await environment.cleanup();
 });
 
+describe('Browser announcement ownership', () => {
+  it('lets the recipient read and mark a delivered announcement read', async () => {
+    await environment.withSecurityRulesDisabled(async context => {
+      await setDoc(doc(context.firestore(), 'browserNotifications/alice'), { items: [{ id: 'release', read: false }] });
+    });
+    const db = environment.authenticatedContext('alice', { auth_time: 1 }).firestore();
+    await assertSucceeds(getDoc(doc(db, 'browserNotifications/alice')));
+    await assertSucceeds(updateDoc(doc(db, 'browserNotifications/alice'), { items: [{ id: 'release', read: true }] }));
+  });
+  it('denies cross-account, staff and anonymous access and client-created campaigns', async () => {
+    await environment.withSecurityRulesDisabled(async context => {
+      await setDoc(doc(context.firestore(), 'browserNotifications/alice'), { items: [] });
+    });
+    for (const db of [
+      environment.unauthenticatedContext().firestore(),
+      environment.authenticatedContext('bob', { auth_time: 1 }).firestore(),
+      environment.authenticatedContext('gc-a', { auth_time: 1 }).firestore(),
+    ]) {
+      await assertFails(getDoc(doc(db, 'browserNotifications/alice')));
+      await assertFails(updateDoc(doc(db, 'browserNotifications/alice'), { items: [] }));
+    }
+    const alice = environment.authenticatedContext('alice', { auth_time: 1 }).firestore();
+    await assertFails(deleteDoc(doc(alice, 'browserNotifications/alice')));
+    const bob = environment.authenticatedContext('bob', { auth_time: 1 }).firestore();
+    await assertFails(setDoc(doc(bob, 'browserNotifications/bob'), { items: [] }));
+  });
+  it('denies a revoked session', async () => {
+    await environment.withSecurityRulesDisabled(async context => {
+      await updateDoc(doc(context.firestore(), 'users/alice'), { sessionValidAfterSeconds: 200 });
+      await setDoc(doc(context.firestore(), 'browserNotifications/alice'), { items: [] });
+    });
+    const stale = environment.authenticatedContext('alice', { auth_time: 200 }).firestore();
+    await assertFails(getDoc(doc(stale, 'browserNotifications/alice')));
+    await assertFails(updateDoc(doc(stale, 'browserNotifications/alice'), { items: [] }));
+  });
+});
+
 describe('Firestore ownership and staff boundaries', () => {
   it('allows repeatable 100 JP credits to the owner while preserving spending and other progress', async () => {
     await environment.withSecurityRulesDisabled(async context => {

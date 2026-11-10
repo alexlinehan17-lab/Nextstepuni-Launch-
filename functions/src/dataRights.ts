@@ -172,11 +172,12 @@ async function cascadeDeleteUser(
     ["settings", "settingsDeleted"],
     ["responses", "responsesDeleted"],
     ["notifications", "notificationsDeleted"],
+    ["browserNotifications", "notificationsDeleted"],
     ["islandPublic", "islandPublicDeleted"],
   ];
   for (const [coll, key] of singles) {
     const ref = db.collection(coll).doc(uid);
-    if ((await ref.get()).exists) { await ref.delete(); (r[key] as number) = 1; }
+    if ((await ref.get()).exists) { await ref.delete(); (r[key] as number) += 1; }
   }
 
   // Peer-feature docs sent by or to this student.
@@ -432,6 +433,7 @@ export const exportMyData = onCall(CALLABLE_OPTIONS, async (request) => {
   data.settings = await get1("settings");
   data.responses = await get1("responses");
   data.notifications = await get1("notifications");
+  data.browserNotifications = await get1("browserNotifications");
   // The classmate-visible copy of the island (year islands), so the student
   // can see exactly what their year group sees. Null when it is hidden.
   data.islandSharedWithYear = await get1("islandPublic");
