@@ -3465,5 +3465,117 @@
         0.55
       ]
     }
+  },
+  "ja-2015-ol-2b": {
+    "src": "/exam-figures/japanese/ja-2015-ol-2b.png",
+    "md5": "25c2ecdceafa417729da3f5f2f2d9dc4",
+    "alt": "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to support your answer as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.07,
+        0.42,
+        0.97,
+        0.953
+      ]
+    }
+  },
+  "ja-2015-ol-2c": {
+    "src": "/exam-figures/japanese/ja-2015-ol-2c.png",
+    "md5": "28a38ad8fee28f13ce4e58aa77867fb8",
+    "alt": "Circle the correct meaning (a), (b), (c) or (d) for the following Kanji as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 6,
+      "region": [
+        0.07,
+        0.51,
+        0.97,
+        0.95
+      ]
+    }
+  },
+  "ja-2015-ol-3b-1": {
+    "src": "/exam-figures/japanese/ja-2015-ol-3b-1.png",
+    "md5": "ab295b8007ac449f1b61686710d684e9",
+    "alt": "Write the following sentences in the present tense as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 10,
+      "region": [
+        0.07,
+        0.04,
+        0.97,
+        0.405
+      ]
+    }
+  },
+  "ja-2015-ol-3b-2": {
+    "src": "/exam-figures/japanese/ja-2015-ol-3b-2.png",
+    "md5": "b613386de26ebcd9289415f473abb89e",
+    "alt": "Circle the correct particle (a), (b) or (c) below as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 10,
+      "region": [
+        0.07,
+        0.405,
+        0.97,
+        0.79
+      ]
+    }
+  },
+  "ja-2015-ol-4": {
+    "src": "/exam-figures/japanese/ja-2015-ol-4.png",
+    "md5": "2f0a1518d8825ab01c44dccb15b07626",
+    "alt": "Insert the missing words from the box below as in the example. A word should be used only once.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 11,
+      "region": [
+        0.05,
+        0.045,
+        0.97,
+        0.95
+      ]
+    }
+  },
+  "ja-2015-ol-5": {
+    "src": "/exam-figures/japanese/ja-2015-ol-5.png",
+    "md5": "06c033ecaf1c30ffdccff16cf7ef6b38",
+    "alt": "Answer ANY 5 of the following 7 questions about the weekend in Japanese in the spaces provided.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 12,
+      "region": [
+        0.05,
+        0.035,
+        0.97,
+        0.977
+      ]
+    }
+  },
+  "ja-2015-ol-lb-1-iii": {
+    "src": "/exam-figures/japanese/ja-2015-ol-lb-1-iii.png",
+    "md5": "456bb74e156b05d89ad58e27ecdcb68e",
+    "alt": "To enquire, you should call:",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 3,
+      "region": [
+        0.54,
+        0.425,
+        0.96,
+        0.52
+      ]
+    }
   }
 }

@@ -7,7 +7,7 @@ import { resolvePaperFileid } from './paperIndex.mjs';
 import { audioMaterialFault, audioQuestionPaperFileid } from './audioMaterial.mjs';
 import { comparableScheme, claimMatches, LIGATURES } from './schemeText.mjs';
 import { matchesNamedLanguageCondition } from './japanese-source-rules.mjs';
-import { assertJapaneseVariantSources, japaneseAnswerRows } from './japanese-source-answers.mjs';
+import { assertJapaneseVariantSources, japaneseAnswerRows, japaneseBoundBankAnswers } from './japanese-source-answers.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const reviewsDir = resolve(root, 'scripts/markbank/authoring/reviews');
@@ -114,7 +114,8 @@ for (const name of readdirSync(reviewsDir).filter(name => /^japanese-\d{4}-(?:hl
       guidance.push(...card.rubric.groups.flatMap(group => (group.criteria ?? []).flatMap(criterionGuidance)));
     }
     if (['language-points', 'language-writing'].includes(card.rubric?.system)) guidance.push(...(card.rubric.criteria ?? []).flatMap(criterionGuidance));
-    const unsupported = answers.filter(answer => !claimMatches(scheme, answer));
+    const boundBankAnswers = japaneseBoundBankAnswers(card, review);
+    const unsupported = answers.filter(answer => !claimMatches(scheme, answer) && !boundBankAnswers.has(answer));
     if (unsupported.length) throw new Error(`${card.id}: answer not found in original scheme: ${JSON.stringify(unsupported)}`);
     const unsupportedGuidance = guidance.filter(text => !claimMatches(scheme, text) && !claimMatches(selectedScheme, text));
     if (unsupportedGuidance.length) throw new Error(`${card.id}: rubric guidance not found in original scheme selectors: ${JSON.stringify(unsupportedGuidance)}`);
