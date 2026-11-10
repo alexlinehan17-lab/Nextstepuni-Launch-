@@ -473,6 +473,14 @@ export interface SecCardBase extends CardBase {
     /** Some schemes name a particular response language; do not broaden that
      * condition to every language other than the question's requested one. */
     penalizedLanguage?: 'English' | 'Japanese';
+    /** A published exception can leave named manual criteria assessable after
+     * the response-language adjustment. Only top-level language-points
+     * criteria are supported; their ordinary source caps still apply. */
+    manualCriterionExceptions?: {
+      criterionIds: string[];
+      sourceText: string;
+      schemePages: number[];
+    };
   };
   /** An explicitly published half-credit condition for the complete priced
    * response. This and wrong-language half credit apply once, not cumulatively.
@@ -1662,6 +1670,17 @@ export function tariffReconciles(card: SecCard): boolean {
   if (card.answerLanguageRule && (isRubricCard(card)
     ? !['language-writing', 'language-points'].includes(card.rubric.system)
     : card.tariffModel.kind !== 'fixed' || !!card.mathematicsScale)) return false;
+  const manualExceptions = card.answerLanguageRule?.manualCriterionExceptions;
+  if (manualExceptions) {
+    if (!isRubricCard(card) || card.rubric.system !== 'language-points') return false;
+    const criteria = card.rubric.criteria ?? [];
+    if (!manualExceptions.criterionIds.length
+      || new Set(manualExceptions.criterionIds).size !== manualExceptions.criterionIds.length
+      || manualExceptions.criterionIds.some(id => !id.trim()
+        || !criteria.some(criterion => criterion.id === id && criterion.kind !== 'deduction'))
+      || !manualExceptions.sourceText.trim() || !manualExceptions.schemePages.length
+      || !manualExceptions.schemePages.every(page => Number.isInteger(page) && page > 0)) return false;
+  }
   if (isRubricCard(card)) {
     if (card.rubric.system === 'language-writing' || card.rubric.system === 'language-points') {
       const rubric = card.rubric;
@@ -1721,7 +1740,11 @@ export function tariffReconciles(card: SecCard): boolean {
         .reduce((sum, criterion) => sum + criterion.maxMarks, 0);
       if (!groups.every(group => group.id && group.label.trim() && (group.rows.length > 0 || (group.criteria?.length ?? 0) > 0)
         && (group.criteria ?? []).every(criterion => (criterion.limits ?? []).every(limit => limit.when.any.every(condition => 'criterionIds' in condition || 'flag' in condition)))
-        && (!group.criteria || tariffReconciles({ ...card, totalMarks: groupCriterionTotal(group), rubric: { system: 'language-writing', criteria: group.criteria, taskRequirements: rubric.taskRequirements, markingGuideNote: rubric.markingGuideNote } }))
+        && (!group.criteria || tariffReconciles({ ...card, totalMarks: groupCriterionTotal(group),
+          // The parent validated its response-level exceptions. A group-only
+          // criterion check must not inherit those top-level criterion IDs.
+          answerLanguageRule: card.answerLanguageRule && { ...card.answerLanguageRule, manualCriterionExceptions: undefined },
+          rubric: { system: 'language-writing', criteria: group.criteria, taskRequirements: rubric.taskRequirements, markingGuideNote: rubric.markingGuideNote } }))
         && new Set(group.rows.map(row => row.id)).size === group.rows.length
         && (group.answerCount === undefined || (Number.isInteger(group.answerCount) && group.answerCount >= 1 && group.answerCount <= group.rows.length))
         && group.rows.every(row => row.id && row.text.trim() && Number.isInteger(row.marks) && row.marks > 0 && (!row.steps || validSteps(row.steps, row.marks))))) return false;

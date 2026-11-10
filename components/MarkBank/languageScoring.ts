@@ -103,9 +103,9 @@ export function languageCategoryCompensation(rubric: LanguagePointsRubric, score
 }
 
 export function languagePointsMarks(rubric: LanguagePointsRubric, scores: LanguageScores, rule?: SecCardBase['answerLanguageRule']): number {
-  // A wholly wrong-language response includes its discretionary criteria.
-  // This explicit whole-response flag supersedes, rather than compounds,
-  // individual adjustments. Clearing it restores the stored mixed answers.
+  // The response flag supersedes individual adjustments without compounding
+  // them. Source-defined exceptions can retain named manual criteria; neither
+  // those exceptions nor clearing the flag changes the stored placements.
   const responseMultiplier = languageCreditMultiplier(rule, scores, 'response');
   const individualRule = responseMultiplier === 1 ? rule : undefined;
   // Selection is explicit even if every component of an option earned zero.
@@ -126,7 +126,13 @@ export function languagePointsMarks(rubric: LanguagePointsRubric, scores: Langua
     ? languageWritingMarks({ ...rubric, system: 'language-writing', criteria: group.criteria }, scores)
       * languageCreditMultiplier(individualRule, scores, `group:${group.id}`) : 0), 0);
   const allocation = Math.min(rowAllocation + groupCriteria, languageAllocationMaximum(rubric, scores));
-  return (allocation + (rubric.criteria ? languageWritingMarks({ ...rubric, system: 'language-writing', criteria: rubric.criteria }, scores) : 0)) * responseMultiplier;
+  const manualRubric: LanguageWritingRubric = { ...rubric, system: 'language-writing', criteria: rubric.criteria ?? [] };
+  const exceptions = rule?.manualCriterionExceptions?.criterionIds ?? [];
+  if (!exceptions.length) return (allocation + languageWritingMarks(manualRubric, scores)) * responseMultiplier;
+  const manualMarks = manualRubric.criteria.filter(criterion => criterion.kind !== 'deduction')
+    .reduce((sum, criterion) => sum + languageCriterionValue(manualRubric, criterion.id, scores)
+      * (exceptions.includes(criterion.id) ? 1 : responseMultiplier), 0);
+  return allocation * responseMultiplier + manualMarks;
 }
 
 export function languageMarks(card: SecRubricCard, scores: LanguageScores): number {
