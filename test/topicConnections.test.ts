@@ -44,16 +44,15 @@ describe('topic connections', () => {
     const reachable = new Set(menu.strands.flatMap(strand => strand.topics.flatMap(topic => cardsForCurriculumNode(topic.id, cards, menu.spec).map(card => card.id))));
     expect(reachable.size).toBe(cards.length);
   });
-  // One test per subject, so each has its own time budget: swept as a single
-  // test the whole bank took 119.5 s of a 120 s limit on CI (4 Nov 2026) and
-  // every new subject's cards pushed it closer. The check itself is unchanged.
-  it.each(SUBJECTS.map(subject => [subject.id]))('keeps all original card IDs reachable in old and current cohort menus: %s', async subjectId => {
-    for (const level of levelsFor(subjectId)) {
-      const cards = await loadCards(subjectId, level);
+  // Keep the complete corpus sweep, with a timeout per subject rather than one
+  // shared deadline for every deck as the published corpus grows.
+  it.each(SUBJECTS)('keeps all original $id card IDs reachable in old and current cohort menus', async subject => {
+    for (const level of levelsFor(subject.id)) {
+      const cards = await loadCards(subject.id, level);
       for (const year of [2026, 2027, 2029]) {
-        const menu = markBankCurriculumMenu(subjectId, level, `${year}-06-02`, cards);
+        const menu = markBankCurriculumMenu(subject.id, level, `${year}-06-02`, cards);
         const reachable = new Set(menu.strands.flatMap(strand => strand.topics.flatMap(topic => cardsForCurriculumNode(topic.id, cards, menu.spec).map(card => card.id))));
-        expect(cards.filter(card => !reachable.has(card.id)).map(card => card.id), `${subjectId}/${level}/${year}`).toEqual([]);
+        expect(cards.filter(card => !reachable.has(card.id)).map(card => card.id), `${subject.id}/${level}/${year}`).toEqual([]);
       }
     }
   }, 120000);

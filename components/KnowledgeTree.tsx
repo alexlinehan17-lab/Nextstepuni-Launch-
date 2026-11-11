@@ -13,6 +13,7 @@ import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import { type GamificationState } from '../gamificationConfig';
 import { type CourseData } from './Library';
 import { type UserSettings } from '../types';
+import { useDatedStudyPlan } from '../hooks/useDatedStudyPlan';
 import { toDateKey } from './subjectData';
 import { type StudyBlock } from './subjectData';
 
@@ -126,11 +127,13 @@ const MobileKnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _
 
   
   // ── Dashboard computed values ──────────────────────────────────────────
+  const dated = useDatedStudyPlan(undefined,uid);
   const [todayBlocks, setTodayBlocks] = useState<StudyBlock[]>([]);
   const [planReady, setPlanReady] = useState(false);
   const [planError, setPlanError] = useState(false);
   useEffect(() => {
     setPlanError(false);
+    if (dated.enabled) {setTodayBlocks(dated.timetable?.[(new Date().getDay()+6)%7]?.blocks ?? []);setPlanReady(!!dated.saved);return;}
     if (!studentProfile || studentProfile.subjects.length === 0) { setTodayBlocks([]); setPlanReady(true); return; }
     setPlanReady(false);
     let cancelled = false;
@@ -154,10 +157,10 @@ const MobileKnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _
       if (!cancelled) { setTodayBlocks([]); setPlanReady(true); setPlanError(true); }
     });
     return () => { cancelled = true; };
-  }, [studentProfile]);
+  }, [studentProfile,dated.enabled,dated.timetable,dated.saved,dated.today]);
 
   const todayKey = toDateKey(new Date());
-  const todayCompletions = timetableCompletions?.[todayKey] || [];
+  const todayCompletions = [...(timetableCompletions?.[todayKey] || []),...(dated.saved?.plan.tasks.filter(t=>t.date===todayKey&&t.status==='completed').map(t=>t.id)??[])];
 
   return (
     <div className="mobile-home-shell product-shell dashboard-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] overflow-x-hidden relative selection:bg-[rgba(var(--accent),0.2)]">

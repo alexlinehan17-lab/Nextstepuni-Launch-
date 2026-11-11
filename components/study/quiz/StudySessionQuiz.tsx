@@ -11,6 +11,8 @@ import { formatStudyTime } from '../../../utils/studyTime';
 import type { StudyTopicSelection } from '../../../types/studyTopics';
 import type { StudentSubject } from '../../subjectData';
 import { loadQuiz, quizCardTopic, type LoadedQuiz, type QuizResult } from './studyQuizPlan';
+import { recordStudyQuizResults } from '../../../services/studyQuizEvidence';
+import type { SecCard } from '../../../types/markBank';
 import './study-quiz.css';
 
 interface Props {
@@ -20,13 +22,14 @@ interface Props {
   topicSelection?: StudyTopicSelection;
   profileSubjects?: StudentSubject[];
   examDate?: string | null;
+  initialQuiz?: LoadedQuiz;
   onDone: (results: QuizResult[]) => void;
   onSkip: () => void;
   now?: () => number;
 }
 
-export default function StudySessionQuiz({ uid, subject, seconds = 0, topicSelection, profileSubjects, examDate, onDone, onSkip, now = Date.now }: Props) {
-  const [quiz, setQuiz] = useState<LoadedQuiz | null>();
+export default function StudySessionQuiz({ uid, subject, seconds = 0, topicSelection, profileSubjects, examDate, initialQuiz, onDone, onSkip, now = Date.now }: Props) {
+  const [quiz, setQuiz] = useState<LoadedQuiz | null | undefined>(initialQuiz);
   const [failed, setFailed] = useState(false);
   const [attempt, setAttempt] = useState(0);
   const [finished, setFinished] = useState(false);
@@ -34,6 +37,8 @@ export default function StudySessionQuiz({ uid, subject, seconds = 0, topicSelec
   const [expanded, setExpanded] = useState(false);
   const [results, setResults] = useState<QuizResult[]>([]);
   const committed = useRef(new Set<string>());
+  const quizEvidence = useRef<{ card: SecCard; result: SessionCardResult }[]>([]);
+  const quizSessionId = useRef<string | null>(null);
   const responses = useRef<Record<string, SessionResponse>>({});
   const { play, setEnabled } = useDeckSound();
   const muted = useSoundMuted();
@@ -43,13 +48,14 @@ export default function StudySessionQuiz({ uid, subject, seconds = 0, topicSelec
   // must never reload the queue or change the student's selected topics.
   const input = useRef({ uid, subjectName: subject, topicSelection, profileSubjects, examDate, now: now() });
   useEffect(() => {
+    if (initialQuiz) return;
     let live = true;
     setFailed(false);
     loadQuiz(input.current)
       .then(loaded => { if (live) setQuiz(loaded); })
       .catch(() => { if (live) setFailed(true); });
     return () => { live = false; };
-  }, [attempt]);
+  }, [attempt, initialQuiz]);
   useEffect(() => { if (quiz === null) onDone([]); }, [quiz, onDone]);
 
   const commit = useCallback((result: SessionCardResult) => {
@@ -62,6 +68,9 @@ export default function StudySessionQuiz({ uid, subject, seconds = 0, topicSelec
     const after = gradeCard(memoryFor(local, card.id), result.grade, t, retentionFor(t, local.examTs));
     commitReview(uid, quiz.deck.deckId, card.id, after, t);
     committed.current.add(card.id);
+    quizSessionId.current ??= crypto.randomUUID();
+    quizEvidence.current.push({ card, result });
+    recordStudyQuizResults(uid, input.current.topicSelection, quizEvidence.current, quizSessionId.current, t);
     setResults(previous => [...previous, { ...result, questionRef: card.questionRef }]);
   }, [quiz, uid, now]);
 

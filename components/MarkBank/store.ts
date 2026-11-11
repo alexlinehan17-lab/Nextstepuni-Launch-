@@ -254,6 +254,7 @@ export function commitReview(
   };
   writeLocal(uid, deckId, next);
   saveCard(uid, deckId, cardId, memory, now);
+  window.dispatchEvent(new Event('nsu:mark-bank-review'));
   return next;
 }
 
