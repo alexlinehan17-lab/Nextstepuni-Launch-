@@ -107,6 +107,10 @@ FURNITURE = re.compile(
     r'|Design\s*&\s*Comm'
     r'|\d{1,2}$'
     r'|N\.?B\.?:?\s*Scale\b|Scale\s*\d?\s*1\s*:\s*\d'
+    # An ENLARGED scale prints the other way round, "Scale 5:1", "Scale 4:1
+    # (Enlarged scale)", and the caption was read as the end of 2020 Higher
+    # C-3(d)'s and 2021 Higher C-4(b)'s asks.
+    r'|Scale\s*\d{1,2}\s*:\s*\d'
     # The banner is CAPITALS. Matched case-blind it also ate prose that wraps
     # onto "Section A, shows ground contours at five metre" -- 2017 Higher
     # C-1(a) lost that whole printed line.
@@ -131,6 +135,10 @@ FURNITURE = re.compile(
     # chart in 2016 Higher A-2's picture reads "DCG Results" (its "T1" is
     # already too short to keep). Read as text it ended A-2(b)'s ask.
     r'|DCG\s+Results\s*$'
+    # A label set inside a drawing, one word to a line: 2016 Ordinary C-5's
+    # centre support is annotated "Regular" / "Octagon" in the figure, and
+    # the two words were read as the end of the question.
+    r'|(?:Regular|Octagon)\s*$'
     # The cover's sitting-and-booklet code, "2018. M81BC". The 2016-2018
     # Higher B and C booklets also carry a stale "2016.  M81BC" in the top
     # corner of one question page, hidden under the option banner's fill:
