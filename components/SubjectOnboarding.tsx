@@ -10,15 +10,18 @@ import ActionButton from './ui/ActionButton';
 import { TextField } from './ui/FormControls';
 import { SubjectCardPicker, SubjectGradeCards } from './shared/SubjectProfileCards';
 import {
-  type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
-  LC_SUBJECTS, LEVEL_LABELS, defaultGradesForLevel, defaultSubjectConfig, getPointsForGrade,
-  gradeRank, DAYS_OF_WEEK,
-  type LCSubject,
+  type StudentSubjectProfile,
+  LC_SUBJECTS, catalogueForProgramme, subjectProgramme, subjectLevels, subjectUsesExamGrades, subjectAssessmentNote, LEVEL_LABELS, getPointsForGrade,
+  DAYS_OF_WEEK,
+  type LCSubject, type YearGroup,
 } from './subjectData';
 import { getDefaultExamDate } from '../utils/examDates';
 
+import { newSubjectConfig, updateSubjectConfig, saveSubjectConfig, type GradeConfig, type SubjectConfigField } from './shared/subjectProfileModel';
+import { yearGroupToCurriculumLevel } from '../utils/authUtils';
+
 interface SubjectOnboardingProps {
-  user: { uid: string };
+  user: { uid: string; yearGroup?: YearGroup };
   existingProfile?: StudentSubjectProfile;
   onComplete: (profile: StudentSubjectProfile) => void;
   onClose: () => void;
@@ -44,9 +47,13 @@ const DAY_SHORTS: Record<string, string> = {
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
-const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, existingProfile, onComplete, onClose }) => {
+const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user, existingProfile, onComplete, onClose }) => {
   const isEditMode = !!existingProfile;
-
+  const yearGroup = existingProfile?.yearGroup ?? user.yearGroup;
+  const programme = subjectProgramme(yearGroup, existingProfile?.curriculumLevel);
+  const isJunior = programme === 'jc';
+  const isLca = programme === 'lca';
+  const newConfig = (name: string) => newSubjectConfig(programme, name);
   const [step, setStep] = useState<Step>(isEditMode ? 2 : 1);
 
   // Subject selection
@@ -56,11 +63,11 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
   });
 
   // Grade configs
-  const [subjectConfigs, setSubjectConfigs] = useState<Record<string, { level: Level; currentGrade: Grade; targetGrade: Grade }>>(() => {
+  const [subjectConfigs, setSubjectConfigs] = useState<Record<string, GradeConfig>>(() => {
     if (existingProfile) {
-      const configs: Record<string, { level: Level; currentGrade: Grade; targetGrade: Grade }> = {};
+      const configs: Record<string, GradeConfig> = {};
       for (const s of existingProfile.subjects) {
-        configs[s.subjectName] = { level: s.level, currentGrade: s.currentGrade, targetGrade: s.targetGrade };
+        configs[s.subjectName] = { level: s.level, currentGrade: s.currentGrade, targetGrade: s.targetGrade, currentBand: s.currentBand, targetBand: s.targetBand };
       }
       return configs;
     }
@@ -92,7 +99,7 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
         if (!subjectConfigs[name]) {
           setSubjectConfigs(prev => ({
             ...prev,
-            [name]: defaultSubjectConfig(name),
+            [name]: newConfig(name),
           }));
         }
       }
@@ -102,26 +109,9 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
 
   // ─── Grade config update ────────────────────────────────────────────────
 
-  const updateConfig = (subjectName: string, field: 'level' | 'currentGrade' | 'targetGrade', value: string) => {
-    setSubjectConfigs(prev => {
-      const current = prev[subjectName] || defaultSubjectConfig(subjectName);
-      const next = { ...current };
-
-      if (field === 'level') {
-        const newLevel = value as Level;
-        next.level = newLevel;
-        Object.assign(next, defaultGradesForLevel(newLevel));
-      } else if (field === 'currentGrade') {
-        next.currentGrade = value as Grade;
-        if (gradeRank(next.targetGrade) < gradeRank(next.currentGrade)) {
-          next.targetGrade = next.currentGrade;
-        }
-      } else {
-        next.targetGrade = value as Grade;
-      }
-
-      return { ...prev, [subjectName]: next };
-    });
+  const updateConfig = (subjectName: string, field: SubjectConfigField, value: string) => {
+    setSubjectConfigs(prev => ({ ...prev, [subjectName]: updateSubjectConfig(programme, subjectName,
+      prev[subjectName] ?? newConfig(subjectName), field, value) }));
   };
 
   // ─── Rest day toggle ────────────────────────────────────────────────────
@@ -137,42 +127,19 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
   // ─── Build final profile ────────────────────────────────────────────────
 
   const buildProfile = (): StudentSubjectProfile => {
-    // Same rule as ChangeSubjectsModal: never emit an undefined grade. JC
-    // subjects carry bands and LCA subjects carry level only — writing
-    // `currentGrade: undefined` for them makes setDoc throw and the edit is
-    // silently lost behind a connectivity toast.
-    const isJunior = existingProfile?.curriculumLevel === 'junior';
-    const isLca = existingProfile?.yearGroup === 'LCA1' || existingProfile?.yearGroup === 'LCA2';
-    const subjects: StudentSubject[] = Array.from(selectedSubjects).map(name => {
-      if (isJunior) {
-        const prev = existingProfile?.subjects.find(s => s.subjectName === name);
-        return {
-          subjectName: name,
-          level: prev?.level ?? 'common',
-          currentBand: prev?.currentBand ?? 'Merit',
-          targetBand: prev?.targetBand ?? 'Higher Merit',
-        };
-      }
-      if (isLca) return { subjectName: name, level: 'common' as Level };
-      const config = subjectConfigs[name] || defaultSubjectConfig(name);
-      return {
-        subjectName: name,
-        level: config.level,
-        ...(config.currentGrade ? { currentGrade: config.currentGrade } : {}),
-        ...(config.targetGrade ? { targetGrade: config.targetGrade } : {}),
-      };
-    });
+    const subjects = Array.from(selectedSubjects).map(name =>
+      saveSubjectConfig(programme, name, subjectConfigs[name] ?? newConfig(name)));
     const now = new Date().toISOString();
     return {
       subjects,
-      examStartDate: examDate,
+      examStartDate: isJunior && yearGroup !== '3rd' ? null : examDate,
       restDays: Array.from(restDays),
       // Preserve the curriculum plumbing — rebuilding the profile without it
       // leaves the student curriculum-less for the rest of the session.
       // Conditional spreads, not plain assignment: an absent optional field
       // must be omitted, never written as undefined (see the grades above).
-      ...(existingProfile?.yearGroup ? { yearGroup: existingProfile.yearGroup } : {}),
-      ...(existingProfile?.curriculumLevel ? { curriculumLevel: existingProfile.curriculumLevel } : {}),
+      ...(yearGroup ? { yearGroup } : {}),
+      ...(yearGroup ? { curriculumLevel: yearGroupToCurriculumLevel(yearGroup) } : existingProfile?.curriculumLevel ? { curriculumLevel: existingProfile.curriculumLevel } : {}),
       ...(existingProfile?.defaultBlockDuration ? { defaultBlockDuration: existingProfile.defaultBlockDuration } : {}),
       createdAt: existingProfile?.createdAt || now,
       updatedAt: now,
@@ -199,12 +166,12 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
 
   const groupedSubjects = useMemo(() => {
     const groups: Record<string, LCSubject[]> = {};
-    for (const subj of LC_SUBJECTS) {
+    for (const subj of catalogueForProgramme(programme)) {
       if (!groups[subj.group]) groups[subj.group] = [];
       groups[subj.group].push(subj);
     }
     return groups;
-  }, []);
+  }, [programme]);
 
   // ─── Step validation ───────────────────────────────────────────────────
 
@@ -212,13 +179,9 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
     switch (step) {
       case 1: return true;
       case 2: return selectedSubjects.size > 0;
-      case 3: {
-        for (const name of selectedSubjects) {
-          if (!subjectConfigs[name]) return false;
-        }
-        return true;
-      }
-      case 4: return examDate.length > 0 && getDaysUntil(examDate) > 0;
+      case 3: return Array.from(selectedSubjects).every(name =>
+        subjectLevels(programme, name).includes(subjectConfigs[name]?.level ?? 'common'));
+      case 4: return (isJunior && yearGroup !== '3rd') || examDate.length > 0 && getDaysUntil(examDate) > 0;
       case 5: return restDays.size < 7; // must have at least 1 study day
       case 6: return true;
       default: return false;
@@ -239,11 +202,11 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
     {step < TOTAL_STEPS ? <ActionButton onClick={goNext} disabled={!canProceed()}>{step === 1 ? 'Get Started' : 'Continue'}<ArrowRight size={14} aria-hidden="true" /></ActionButton> : <ActionButton onClick={() => onComplete(buildProfile())}>{isEditMode ? 'Update & Save' : 'Save & Continue'}</ActionButton>}
   </>}>
     {step === 1 && <div>
-      <p className="sc-muted text-sm leading-relaxed">{existingProfile?.curriculumLevel === 'junior' ? 'Tell us about your subjects.' : 'Tell us about your Leaving Cert subjects.'} This takes about 2 minutes.</p>
+      <p className="sc-muted text-sm leading-relaxed">{isJunior ? 'Tell us about your subjects.' : 'Tell us about your Leaving Cert subjects.'} This takes about 2 minutes.</p>
       <div className="sc-welcome-list"><div><span>01</span><p className="text-sm">Your subjects and grade targets</p></div><div><span>02</span><p className="text-sm">Your exam date and study week</p></div></div>
     </div>}
     {step === 2 && <SubjectCardPicker groups={groupedSubjects} selected={selectedSubjects} onToggle={toggleSubject} />}
-    {step === 3 && <SubjectGradeCards selected={selectedSubjects} configs={subjectConfigs} onUpdate={updateConfig} />}
+    {step === 3 && <SubjectGradeCards programme={programme} selected={selectedSubjects} configs={subjectConfigs} onUpdate={updateConfig} />}
     {step === 4 && <div>
       <p className="sc-muted text-sm">We'll use this to plan your study intensity.</p>
       <label htmlFor="subject-setup-exam-date" className="sc-date-label">Exam start date</label>
@@ -259,14 +222,16 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
     </div>}
     {step === 6 && <div>
       {Array.from(selectedSubjects).map(name => {
-        const config = subjectConfigs[name]; if (!config) return null;
+        const config = subjectConfigs[name];
+        if (!subjectUsesExamGrades(programme, name)) return <div key={name} className="sc-review-row"><strong>{name}</strong><span className="sc-small">{subjectAssessmentNote(programme, name)}</span></div>;
+        if (!config) return null;
         const isMaths = LC_SUBJECTS.find(subject => subject.name === name)?.isMaths || false;
         const gain = getPointsForGrade(config.targetGrade, isMaths) - getPointsForGrade(config.currentGrade, isMaths);
-        return <div key={name} className="sc-review-row"><div><strong>{name}</strong><small className="sc-small">{LEVEL_LABELS[config.level]} Level</small></div><div className="text-right"><span className="text-sm">{config.currentGrade} → {config.targetGrade}</span>{gain > 0 && <small className="sc-small">+{gain} pts</small>}</div></div>;
+        return <div key={name} className="sc-review-row"><div><strong>{name}</strong><small className="sc-small">{LEVEL_LABELS[config.level]} Level</small></div><div className="text-right"><span className="text-sm">{(isJunior ? config.currentBand : config.currentGrade) ?? 'Set later'} → {(isJunior ? config.targetBand : config.targetGrade) ?? 'Set later'}</span>{!isLca && !isJunior && gain > 0 && <small className="sc-small">+{gain} pts</small>}</div></div>;
       })}
       <div className="sc-review-row"><strong>Exams start</strong><span className="sc-muted text-sm">{new Date(`${examDate}T12:00:00`).toLocaleDateString('en-IE',{ day: 'numeric', month: 'short', year: 'numeric' })}</span></div>
       <div className="sc-review-row"><strong>Rest days</strong><span className="sc-muted text-sm">{restDays.size ? Array.from(restDays).map(day => DAY_SHORTS[day]).join(', ') : 'None selected'}</span></div>
-      {existingProfile?.curriculumLevel !== 'junior' && <p className="sc-points-gain"><span className="sc-small">Projected CAO points gain</span><strong>{projectedGain > 0 ? `+${projectedGain}` : projectedGain}</strong></p>}
+      {!isLca && !isJunior && <p className="sc-points-gain"><span className="sc-small">Projected CAO points gain</span><strong>{projectedGain > 0 ? `+${projectedGain}` : projectedGain}</strong></p>}
       <p className="sc-small">{daysLeft} days left · {restDays.size} rest {restDays.size === 1 ? 'day' : 'days'}</p>
     </div>}
   </SignatureCard>;

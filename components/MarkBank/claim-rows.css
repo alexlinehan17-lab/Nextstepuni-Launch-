@@ -47,7 +47,22 @@ button.mb-claim-row:disabled { cursor: default; opacity: .55; }
   border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
   font: 700 11px/1 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums;
 }
+.mb-claim-steps button { display: inline-flex; align-items: center; justify-content: center; gap: 4px; }
 .mb-claim-steps button[aria-pressed="true"] { border-color: var(--mb-on-claim); background: var(--mb-on-claim); color: var(--mb-claim); }
+/* On a claimed (charcoal) row the chosen mark is the one filled face; the
+   marks not chosen go hollow. Both used to draw as paper buttons, so on
+   Politics, Geography and PE bands the chosen mark looked like its
+   neighbours. In dark mode the row inverts and so does this. */
+.mb-claim-row { --mb-step-off-line: rgba(255, 255, 255, .5); }
+.dark .mb-claim-row { --mb-step-off-line: rgba(41, 41, 37, .45); }
+.mb-claim-row[data-claimed="true"]:not([data-tone="deduction"]) .mb-claim-steps button:not([aria-pressed="true"]) {
+  border-color: var(--mb-step-off-line); background: transparent; color: var(--mb-on-claim); font-weight: 500;
+}
+.mb-claim-row[data-claimed="true"]:not([data-tone="deduction"]) .mb-claim-steps button[aria-pressed="true"] {
+  box-shadow: 0 0 0 2px var(--mb-claim), 0 0 0 3.5px var(--mb-on-claim);
+}
+/* A claimed deduction row is a raised paper face, so its chosen mark is charcoal. */
+.mb-claim-row[data-tone="deduction"][data-claimed="true"] .mb-claim-steps button[aria-pressed="true"] { border-color: var(--mb-claim); background: var(--mb-claim); color: var(--mb-on-claim); }
 .mb-claim-marks { display: flex; gap: 5px; flex-wrap: wrap; }
 .mb-claim-marks button[aria-pressed="true"] { border-color: var(--mb-claim); background: var(--mb-claim); color: var(--mb-on-claim); }
 .mb-claim-marks button:disabled { cursor: default; opacity: .45; }

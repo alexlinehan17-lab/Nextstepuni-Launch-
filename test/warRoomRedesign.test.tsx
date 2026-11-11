@@ -83,14 +83,9 @@ vi.mock('@/contexts/InnovationDataContext', () => ({
 import WarRoom, { type WarRoomStudyBlock } from '@/components/WarRoom';
 import { getStudyTopicOptions } from '@/services/studyTopicHistory';
 import { createDevStudentProfile } from '@/data/devStudent';
-import { DAYS_OF_WEEK, getBlockId } from '@/components/subjectData';
-import {
-  allocateSessions,
-  computeSubjectPriorities,
-  computeWeeksUntilExam,
-  generateWeeklyTimetable,
-  type SubjectSM2State,
-} from '@/components/timetableAlgorithm';
+import { DAYS_OF_WEEK } from '@/components/subjectData';
+import { readStudyPlan } from '@/services/studyPlanStore';
+import { dateKey } from '@/services/studyPlanEngine';
 
 const NOW = new Date('2026-08-10T12:00:00.000Z');
 const TODAY_BLOCK: WarRoomStudyBlock = {
@@ -443,67 +438,14 @@ describe('War Room minimalist workspace', () => {
       .toHaveAttribute('aria-valuenow', '1');
   });
 
-  test('derives the launch payload from the same mastery, SM-2, and rest-day plan as the Planner', async () => {
-    const now = new Date();
-    const jsDay = now.getDay();
-    const todayIndex = jsDay === 0 ? 6 : jsDay - 1;
-    const todayName = DAYS_OF_WEEK[todayIndex];
-    const otherRestDays = DAYS_OF_WEEK.filter(day => day !== todayName).slice(0, 3);
-    const profile = {
-      ...createDevStudentProfile(now),
-      restDays: [...otherRestDays, todayName],
-    };
-    const sm2States: SubjectSM2State[] = profile.subjects.map((subject, index) => ({
-      subjectName: subject.subjectName,
-      easeFactor: index === 0 ? 1.4 : 2.5,
-      interval: index === 0 ? 1 : 14,
-      repetitions: index === 0 ? 0 : 3,
-      nextReviewDate: TODAY_BLOCK.dateKey,
-      lastQuality: index === 0 ? 2 : 4,
-    }));
-    innovationState.mastery = {
-      Geography: {
-        'Physical environments': { confidence: 'shaky', updatedAt: 1, source: 'manual' },
-      },
-    };
-    firestoreState.progress = { sm2States };
-    const onStudyNow = vi.fn();
-
-    render(
-      <WarRoom
-        uid="student-parity"
-        profile={profile}
-        timetableCompletions={{}}
-        skippedSessions={[]}
-        onStudyNow={onStudyNow}
-      />,
-    );
-
-    fireEvent.click(await screen.findByRole('button', { name: /Start a \d+-minute session/ }));
-
-    const weeksUntilExam = computeWeeksUntilExam(profile.examStartDate!);
-    const priorities = computeSubjectPriorities(profile.subjects, innovationState.mastery, profile.examStartDate);
-    const allocations = allocateSessions(priorities, weeksUntilExam, sm2States, profile.defaultBlockDuration);
-    const timetable = generateWeeklyTimetable(
-      allocations,
-      weeksUntilExam,
-      0,
-      profile.restDays.slice(0, 3),
-      profile.defaultBlockDuration,
-      sm2States,
-      innovationState.mastery,
-    );
-    const dateKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
-    const expectedPayloads = timetable[todayIndex].blocks.map((block, blockIndex) => ({
-      subject: block.subjectName,
-      sessionType: block.sessionType,
-      durationMinutes: block.durationMinutes,
-      dateKey,
-      blockId: getBlockId(block, blockIndex),
-    }));
-
-    expect(onStudyNow).toHaveBeenCalledTimes(1);
-    expect(expectedPayloads).toContainEqual(onStudyNow.mock.calls[0][0]);
+  test('respects a fourth rest day instead of inventing a session today', async () => {
+    const todayIndex=(new Date().getDay()+6)%7;
+    const todayName=DAYS_OF_WEEK[todayIndex];
+    const profile={...createDevStudentProfile(new Date()),restDays:[...DAYS_OF_WEEK.filter(d=>d!==todayName).slice(0,3),todayName]};
+    render(<WarRoom uid="student-rest-day-parity" profile={profile} timetableCompletions={{}} skippedSessions={[]} onStudyNow={vi.fn()}/>);
+    await waitFor(()=>expect(readStudyPlan('student-rest-day-parity')).toBeDefined());
+    expect(readStudyPlan('student-rest-day-parity')!.plan.tasks.filter(t=>t.date===dateKey(new Date())&&t.status==='planned')).toHaveLength(0);
+    expect(screen.queryByRole('button',{name:/Start a \d+-minute session/})).not.toBeInTheDocument();
   });
 
   test('supports keyboard navigation through every Kobra workspace tab', async () => {

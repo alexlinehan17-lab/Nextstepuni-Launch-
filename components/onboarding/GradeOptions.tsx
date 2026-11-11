@@ -9,6 +9,7 @@ import {
   emptyChoice,
   levelOptions,
   pointsFor,
+  requiresGradeSetup,
   type GradeChoice,
   type SetupDraft,
   type SubjectChoice,
@@ -99,18 +100,19 @@ export default function GradeOptions({
   const junior = cycleFor(draft.year) === "junior";
   // CAO points exist for the established Leaving Cert only.
   const showPointsGuide = !junior && !isLcaYear(draft.year ?? undefined);
+  const gradeSubjects = draft.subjects.filter(name => requiresGradeSetup(draft.year, name));
   const counted = {
     ...draft,
     configs: Object.fromEntries(
       Object.entries(draft.configs).map(([name, c]) => [
         name,
-        { ...c, reviewed: choiceReady(draft.year, c) },
+        { ...c, reviewed: choiceReady(draft.year, c, name) },
       ]),
     ),
   };
   const points = pointsFor(counted);
-  const complete = draft.subjects.filter((name) =>
-    choiceReady(draft.year, draft.configs[name]),
+  const complete = gradeSubjects.filter((name) =>
+    choiceReady(draft.year, draft.configs[name], name),
   ).length;
   const display = (value: GradeChoice) =>
     value === "later" ? "Later" : value || "—";
@@ -140,8 +142,8 @@ export default function GradeOptions({
     field: "current" | "target",
   ) => {
     const grades = field === "target"
-      ? targetChoicesFor(draft.year, config.level)
-      : choicesFor(draft.year, config.level);
+      ? targetChoicesFor(draft.year, config.level, name)
+      : choicesFor(draft.year, config.level, name);
     const accessible = `${name} ${field} ${junior ? "band" : "grade"}`;
     if (layout === "sheet")
       return (
@@ -246,7 +248,7 @@ export default function GradeOptions({
           <br />
           Where you want to go.
         </p>
-        {!junior ? (
+        {showPointsGuide ? (
           <>
             <div className="grade-points-bars" aria-label="Live points preview">
               {(["current", "target"] as const).map((field) => (
@@ -286,12 +288,12 @@ export default function GradeOptions({
         )}
         <div className="grade-completion">
           <span>
-            {complete} of {draft.subjects.length} subjects ready
+            {complete} of {gradeSubjects.length} subjects ready
           </span>
           <div>
             <span
               style={{
-                width: `${draft.subjects.length ? (complete / draft.subjects.length) * 100 : 0}%`,
+                width: `${gradeSubjects.length ? (complete / gradeSubjects.length) * 100 : 0}%`,
               }}
             />
           </div>
@@ -315,7 +317,7 @@ export default function GradeOptions({
           </div>
         )}
         <div className="grade-rows">
-          {draft.subjects.map((name) => {
+          {gradeSubjects.map((name) => {
             const config = draft.configs[name] ?? emptyChoice(draft.year, name);
             return (
               <section

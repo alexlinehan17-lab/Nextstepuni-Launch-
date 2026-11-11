@@ -28,7 +28,7 @@ const mocks = vi.hoisted(() => ({
 }));
 
 vi.mock('@/hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => mocks.mobile }));
-vi.mock('@/hooks/useStudyTransitionSound', () => ({ useStudyTransitionSound: () => ({ play: vi.fn(), muted: false }) }));
+vi.mock('@/hooks/useStudyTransitionSound', () => ({ useStudyTransitionSound: () => ({ play: vi.fn(), prepare: vi.fn(), muted: false }) }));
 
 vi.mock('@/hooks/useStudySession', () => ({
   MIN_STUDY_SESSION_MINUTES: 5,
@@ -60,6 +60,7 @@ vi.mock('@/hooks/useStudySession', () => ({
 }));
 
 vi.mock('@/contexts/ProgressContext', () => ({
+  useOptionalProgress: () => null,
   useProgress: () => ({ rawProgressDoc: {}, updateDemoProgress: vi.fn() }),
 }));
 

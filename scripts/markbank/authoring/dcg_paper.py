@@ -119,6 +119,12 @@ FURNITURE = re.compile(
     r'|There is no examination material'
     r'|Core\s*[-–]|Applied Graphics'
     r'|from this section on drawing paper'
+    # The cover's sitting-and-booklet code, "2018. M81BC". The 2016-2018
+    # Higher B and C booklets also carry a stale "2016.  M81BC" in the top
+    # corner of one question page, hidden under the option banner's fill:
+    # invisible in print, present in the text layer, and read as the first
+    # words of 2016 B-1's, 2017 B-1's and 2018 C-3's stems.
+    r'|\d{4}\.\s*M\d{2}[A-Z]{0,2}\s*$'
     r')', re.I)
 
 # The drawing's own caption, printed beside the graphic: "Fig. B-1", "Fig.

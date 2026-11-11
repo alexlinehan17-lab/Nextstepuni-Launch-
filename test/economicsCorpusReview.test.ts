@@ -1,14 +1,37 @@
 import { describe, expect, it } from 'vitest';
 import { execFileSync } from 'node:child_process';
-import { existsSync, readdirSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { CARDS as HIGHER_CARDS } from '../components/MarkBank/cards/economics/higher';
 import { CARDS as ORDINARY_CARDS } from '../components/MarkBank/cards/economics/ordinary';
 import { isPointCard, type SecDiagramCard, type SecPointCard, type SecQuestionCard } from '../types/markBank';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 import { reviewedArchiveEntries } from '../components/PaperTrail/indexLookup';
+import { PAPER_TRAIL_INDEX } from '../paperTrailData';
 import { curriculumNodeIdsForExamTopic, examTopicIdsForQuestion } from '../data/examTopics/registry';
 import reviews from '../data/examTopics/economics-sec-topic-reviews.json';
 import inventory from '../scripts/markbank/authoring/economics-source-inventory.json';
+import higher2019Review from '../scripts/markbank/authoring/reviews/economics-2019-hl-ev.json';
+import ordinary2019Review from '../scripts/markbank/authoring/reviews/economics-2019-ol-ev.json';
+import higher2020Review from '../scripts/markbank/authoring/reviews/economics-2020-hl-ev.json';
+import higher2018Review from '../scripts/markbank/authoring/reviews/economics-2018-hl-ev.json';
+import ordinary2018Review from '../scripts/markbank/authoring/reviews/economics-2018-ol-ev.json';
+import higher2017Review from '../scripts/markbank/authoring/reviews/economics-2017-hl-ev.json';
+import ordinary2017Review from '../scripts/markbank/authoring/reviews/economics-2017-ol-ev.json';
+import higher2016Review from '../scripts/markbank/authoring/reviews/economics-2016-hl-ev.json';
+import ordinary2016Review from '../scripts/markbank/authoring/reviews/economics-2016-ol-ev.json';
+import higher2015Review from '../scripts/markbank/authoring/reviews/economics-2015-hl-ev.json';
+import ordinary2015Review from '../scripts/markbank/authoring/reviews/economics-2015-ol-ev.json';
+import higher2014Review from '../scripts/markbank/authoring/reviews/economics-2014-hl-ev.json';
+import ordinary2014Review from '../scripts/markbank/authoring/reviews/economics-2014-ol-ev.json';
+import higher2013Review from '../scripts/markbank/authoring/reviews/economics-2013-hl-ev.json';
+import ordinary2013Review from '../scripts/markbank/authoring/reviews/economics-2013-ol-ev.json';
+import higher2012Review from '../scripts/markbank/authoring/reviews/economics-2012-hl-ev.json';
+import ordinary2012Review from '../scripts/markbank/authoring/reviews/economics-2012-ol-ev.json';
+import higher2011Review from '../scripts/markbank/authoring/reviews/economics-2011-hl-ev.json';
+import ordinary2011Review from '../scripts/markbank/authoring/reviews/economics-2011-ol-ev.json';
+import higher2010Review from '../scripts/markbank/authoring/reviews/economics-2010-hl-ev.json';
+import ordinary2010Review from '../scripts/markbank/authoring/reviews/economics-2010-ol-ev.json';
+import higher2022DeferredReview from '../scripts/markbank/authoring/reviews/economics-2022-hl-deferred-ev.json';
 import higher2021Review from '../scripts/markbank/authoring/reviews/economics-2021-hl-ev.json';
 import ordinary2021Review from '../scripts/markbank/authoring/reviews/economics-2021-ol-ev.json';
 import paperReview from '../scripts/markbank/authoring/reviews/economics-2022-hl-ev.json';
@@ -68,7 +91,11 @@ if (CARDS.length !== HIGHER_CARDS.length || ORDINARY.length !== ORDINARY_CARDS.l
   throw new Error('Economics ships a card that is not a marking-point card');
 }
 
-const sectionA = CARDS.filter(card => card.year === 2022 && card.section === 'A');
+// The 2022 Higher deferred sitting is a paper of its own ("econ-2022-hl-deferred-"):
+// the June 2022 Higher checks below read June's cards alone.
+const june = (card: { id: string }) => !card.id.includes('-deferred-');
+const sectionA = CARDS.filter(card => card.year === 2022 && june(card) && card.section === 'A');
+const cards2022Deferred = () => CARDS.filter(card => card.id.startsWith('econ-2022-hl-deferred-'));
 
 describe('Economics SEC source review (completion remains pending)', () => {
   it('carries 2024 Ordinary Irish labels, field order and the missing tariff explanation', () => {
@@ -310,17 +337,22 @@ describe('Economics SEC source review (completion remains pending)', () => {
   });
 
   it('inventories every indexed paper, including earlier years and Irish editions', () => {
-    // The reviewed window: June sittings 2010-2026 (pre-2010 and deferred
-    // papers are archive-only).
-    const indexed = reviewedArchiveEntries('economics').flatMap(entry => entry.papers.map(paper =>
+    // The reviewed window: June sittings 2010-2026 and the 2022 Higher deferred
+    // sitting in English, its own paper (pre-2010 papers are archive-only).
+    const indexed = [
+      ...reviewedArchiveEntries('economics'),
+      ...(PAPER_TRAIL_INDEX.economics ?? []).filter(entry => entry.sitting === 'deferred' && entry.lang === 'ev'),
+    ].flatMap(entry => entry.papers.map(paper =>
       [entry.year, entry.level, entry.lang, paper.doc.f].join('|'))).sort();
     const inventoried = inventory.papers.map(paper =>
       [paper.year, paper.level, paper.lang, paper.fileid].join('|')).sort();
     expect(inventoried).toEqual(indexed);
     expect(inventory.complete).toBe(false);
-    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(48);
-    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(54);
-    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(18);
+    // Old syllabus English: every sitting from 2010 through 2020 Higher reviewed (variants 19-39).
+    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(27);
+    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(33);
+    // ... and the 2022 Higher deferred sitting (variant 40).
+    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(40);
     expect(inventory.papers.every(paper => paper.paper.sha256.length === 64
       && paper.scheme.sha256.length === 64 && paper.paper.pages > 0 && paper.scheme.pages > 0)).toBe(true);
   });
@@ -374,7 +406,7 @@ describe('Economics SEC source review (completion remains pending)', () => {
   });
 
   it('matches the independent visual census, including every reviewed tariff and source page', () => {
-    const cards = CARDS.filter(card => card.year === 2022);
+    const cards = CARDS.filter(card => card.year === 2022 && june(card));
     const tasks = paperReview.questions.flatMap(question => question.tasks);
     expect(tasks).toHaveLength(75);
     expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
@@ -659,7 +691,7 @@ print('targeted evidence mutations rejected')
       expect(card(s).figure?.solution, s).toBe(true);
       expect(card(s).questionFigure?.src, s).toContain(`economics-2022-HL-paper-${crop}-question.png`);
     }
-    for (const c of CARDS.filter(item => item.year === 2022 && item.questionFigure)) {
+    for (const c of CARDS.filter(item => item.year === 2022 && june(item) && item.questionFigure)) {
       expect(c.figure?.solution, c.id).toBe(true);
     }
     // Data figures are cropped to the data alone, not to neighbouring asks or answer boxes.
@@ -681,7 +713,7 @@ print('targeted evidence mutations rejected')
     expect(card('sa-q5-a').rows[0].group?.options).toHaveLength(4);
     expect(card('sa-q5-a').rows[0].group?.options.join(' ')).not.toContain('Adapted from');
     expect(card('q11-a-ii').rows[0].group?.options).toHaveLength(5);
-    const text = CARDS.filter(c => c.year === 2022)
+    const text = CARDS.filter(c => c.year === 2022 && june(c))
       .map(c => JSON.stringify([c.stem, c.questionText, c.rows])).join('\n');
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'Adapted from', 'Leaving Certificate']) {
       expect(text, junk).not.toContain(junk);
@@ -805,9 +837,13 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
     expect(definitions.rows[0].verbatim).toContain('Individual Demand refers');
     expect(definitions.rows[1].verbatim).toContain('Market Demand refers');
     expect(demand.rows.map(r => r.marks)).toEqual([7, 8]);
-    expect(exclusions).toHaveLength(1);
-    expect(exclusions[0].ref).toBe('2024 HL Section A Q10(a)(i)');
-    expect(exclusions[0].evidence).toContain('Part (i) has been completed for you');
+    // 2024 HL Section A Q10(a)(i) is printed completed for the candidate ("Part (i) has been
+    // completed for you", worked to Ans: €325 bn): printed matter, not an ask. It is out of the
+    // census denominator (PRINTED_EXAMPLES in paper_census.py), so no exclusion is needed for it.
+    expect(exclusions).toEqual([]);
+    const census = readFileSync('scripts/markbank/authoring/paper_census.py', 'utf8');
+    expect(census).toContain("('economics', 2024, 'hl', 'Q10(a)(i)')");
+    expect(census).toContain('Part (i) has been');
   });
 
   it('matches the independent Ordinary census, tariffs, source pages and Atlas topics', () => {
@@ -922,6 +958,1388 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
     const text = ORDINARY.filter(c => c.year === 2022)
       .map(c => JSON.stringify([c.stem, c.questionText, c.rows])).join('\n');
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'Adapted from', 'Leaving Certificate']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 70 independently counted 2019 Higher routes, tariffs, sources and Atlas topics', () => {
+    // The old-syllabus paper: Section B restarts at Question 1, so the Atlas numbers it B1-B8
+    // and every citation names its section.
+    const cards = CARDS.filter(card => card.year === 2019);
+    const tasks = higher2019Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(70);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2019Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2019, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2019 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with the Q8(a)(ii) stance counted once.
+      const once = question.tasks.filter(task => !task.cardId.endsWith('-no'))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(once, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('lifts 2019 Higher wording from the paper and hides its solutions until reveal', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2019-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // Workings set as fractions and every completed diagram wait for the reveal.
+    for (const [s, crop] of [['sa-q1-b', 'p06-q1b-working'], ['sa-q2', 'p06-q2-ticks'], ['sa-q5-ii', 'p07-q5-diagram'],
+      ['sb-q1-b-i', 'p11-q1bi-diagram'], ['sb-q2-b-i', 'p15-q2bi-diagram'], ['sb-q3-c-i', 'p19-q3ci-working'],
+      ['sb-q7-b-iii', 'p32-q7biii-working']] as const) {
+      expect(card(s).figure?.solution, s).toBe(true);
+      expect(card(s).figure?.src, s).toContain(`economics-2019-HL-scheme-${crop}.png`);
+    }
+    // A solution in the figure slot takes the whole printed question as the question crop.
+    for (const c of CARDS.filter(item => item.year === 2019 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+    }
+    expect(card('sa-q2').questionFigure?.src).toContain('economics-2019-HL-paper-p02-q2-question.png');
+    // Rows carry the scheme's answer, never a flattened fraction or the marks column.
+    expect(card('sa-q1-b').rows[0].verbatim).toBe('MUO = 5 utils.');
+    expect(card('sb-q3-c-i').rows[0].verbatim).toBe('+ 2.43');
+    expect(card('sa-q2').rows.map(r => r.verbatim.split(' — ')[0])).toEqual(['TRUE', 'FALSE', 'TRUE', 'TRUE']);
+    // The lifted text only: stems, asks, rows and options (guidance notes may say "Graded.").
+    const text = CARDS.filter(c => c.year === 2019)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    // The text layer's modifier arrowheads for the printed "<" and ">" (B3(b)(ii)) are set back as the signs.
+    expect(card('sb-q3-b-ii').rows[2].verbatim).toContain('PED <1.');
+    expect(card('sb-q3-b-ii').rows[3].verbatim).toContain('PED > 1');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'inflation2', '˂', '˃']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 66 independently counted 2019 Ordinary routes, tariffs, sources and Atlas topics', () => {
+    const cards = ORDINARY.filter(card => card.year === 2019);
+    const tasks = ordinary2019Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(66);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of ordinary2019Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'ordinary', 2019, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034GLP000EV');
+        expect(card.questionRef.startsWith(`2019 OL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with the Q4(c)(ii) stance counted once.
+      const once = question.tasks.filter(task => !task.cardId.endsWith('-no'))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(once, `OL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('lifts 2019 Ordinary wording from the paper and hides its solutions until reveal', () => {
+    const card = (s: string) => {
+      const found = ORDINARY.find(c => c.id === `econ-2019-ol-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    for (const [s, crop] of [['sa-q2-ii', 'p06-q2-diagram'], ['sa-q5-ii', 'p07-q5ii-working'], ['sa-q6', 'p08-q6-table'],
+      ['sb-q1-a-ii', 'p10-q1a-diagram'], ['sb-q2-a-i', 'p13-q2a-graph'], ['sb-q2-a-ii', 'p13-q2a-graph'],
+      ['sb-q2-a-iii', 'p13-q2a-graph'], ['sb-q7-c-ii', 'p32-q7cii-working']] as const) {
+      expect(card(s).figure?.solution, s).toBe(true);
+      expect(card(s).figure?.src, s).toContain(`economics-2019-OL-scheme-${crop}.png`);
+    }
+    // A solution in the figure slot takes the whole printed question as the question crop.
+    for (const c of ORDINARY.filter(item => item.year === 2019 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+    }
+    expect(card('sa-q6').questionFigure?.src).toContain('economics-2019-OL-paper-p03-q6-question.png');
+    // Rows carry the scheme's printed answer; the fraction working is the hidden crop.
+    expect(card('sa-q5-ii').rows[0].verbatim).toBe('Answer: 5%');
+    expect(card('sb-q7-c-ii').rows[0].verbatim).toBe('2');
+    // Q6: the first correct placement 8, the other three 3 each, every option naming its column.
+    const placed = card('sa-q6').rows[0].group!;
+    expect(placed.perOptionSteps).toEqual([8, 3, 3, 3]);
+    expect(placed.options.map(o => o.split(' — ')[0])).toEqual(['INJECTIONS', 'INJECTIONS', 'LEAKAGES', 'LEAKAGES']);
+    // B6(c): every argument is listed under the measure the scheme prints it beneath.
+    const measures = ['Increase in social welfare payments of €5 per week',
+      'Increase of 50c in the price of a packet of 20 cigarettes',
+      'Introduction of 2 extra weeks paid parental leave to every parent of a child under one year of age.'];
+    for (const row of card('sb-q6-c').rows) {
+      for (const option of row.group!.options) expect(measures, option).toContain(option.split(' — ')[0]);
+    }
+    expect(card('sb-q6-c').rows.map(r => r.group!.options.length)).toEqual([10, 12]);
+    // Q2(a): the scheme's summary (p5) prints the four label marks as (i) + 1, (ii) + 1, (iii) + 1 + 1, so
+    // each label is its own 1-mark row; the labels line's "= 4 marks" never sits on a row worth less.
+    expect(card('sb-q2-a-i').rows.map(r => [r.verbatim, r.marks])).toEqual([['D/C: 5 points at 2 marks each = 10 marks', 10], ['D/C', 1]]);
+    expect(card('sb-q2-a-iii').rows.map(r => [r.verbatim, r.marks])).toEqual([['P1 and Q1 : 2 x 3 marks each = 6 marks', 6], ['P', 1], ['Q', 1]]);
+    for (const c of [...CARDS, ...ORDINARY].filter(item => item.year === 2019)) {
+      for (const row of c.rows) {
+        const printed = /=\s*(\d+)\s*marks?\b/.exec(row.verbatim ?? '');
+        if (printed) expect(Number(printed[1]), `${c.id} ${row.id}`).toBe(row.marks);
+      }
+    }
+    const text = ORDINARY.filter(c => c.year === 2019)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 62 independently counted 2017 Higher routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.year === 2017);
+    const tasks = higher2017Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(62);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2017Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2017, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2017 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with the (b)(ii) good/bad stance counted once.
+      const once = question.tasks.filter(task => !task.cardId.endsWith('-bad'))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(once, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('keeps each 2017 Higher printed choice on one card, claimed at the printed steps', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2017-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // Any two of three pairs: six definitions, four claimed at 7, 6, 6, 6.
+    expect(card('sb-q1-a').rows[0].group!.options).toHaveLength(6);
+    expect(card('sb-q1-a').rows[0].group!.perOptionSteps).toEqual([7, 6, 6, 6]);
+    // Any three of five economists, two contributions each: 9 (5 + 4) for the first economist, then 8.
+    expect(card('sb-q7-c').rows[0].group!.options.map(o => o.split(' ').slice(0, 2).join(' ')))
+      .toEqual(['Adam Smith', 'Milton Friedman', 'Karl Marx', 'Thomas Robert', 'John Maynard']);
+    expect(card('sb-q7-c').rows[0].group!.perOptionSteps).toEqual([9, 8, 8]);
+    expect(card('sa-q2').rows[0].group!.perOptionSteps).toEqual([6, 4, 3, 3]);
+    expect(card('sa-q4').rows[0].group!.perOptionSteps).toEqual([6, 5, 5]);
+    expect(card('sa-q8').rows[0].group!.perOptionSteps).toEqual([12, 5]);
+    expect(card('sb-q8-b').rows[0].group!.perOptionSteps).toEqual([7, 6, 6, 6]);
+    // Each diagram element is its own claimable option.
+    expect(card('sb-q1-b-i').rows[0].group!.options).toEqual(['D', 'S1', 'S2', 'Indication of lower equilibrium price', 'higher quantity']);
+    expect(card('sb-q3-a-iv').rows.map(r => r.group!.claimMax)).toEqual([6, 6, 4]);
+    for (const c of CARDS.filter(item => item.year === 2017 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = CARDS.filter(c => c.year === 2017)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 63 independently counted 2017 Ordinary routes, tariffs, sources and Atlas topics', () => {
+    const cards = ORDINARY.filter(card => card.year === 2017);
+    const tasks = ordinary2017Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(63);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of ordinary2017Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'ordinary', 2017, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034GLP000EV');
+        expect(card.questionRef.startsWith(`2017 OL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with the B6(c)(ii) YES/NO stance counted once.
+      const once = question.tasks.filter(task => !task.cardId.endsWith('-no'))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(once, `OL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('keeps 2017 Ordinary shared tariffs on one card and claims each working by its printed marks', () => {
+    const card = (s: string) => {
+      const found = ORDINARY.find(c => c.id === `econ-2017-ol-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // A barrier with its note, and one graph whose labels line spans (i) and (ii): one card each.
+    expect(card('sb-q1-b').questionRef).toBe('2017 OL Section B Q1(b)(i)–(ii)');
+    expect(card('sb-q2-b').questionRef).toBe('2017 OL Section B Q2(b)(i)–(iii)');
+    expect(card('sb-q2-b').rows.map(r => r.marks)).toEqual([10, 10, 4, 3, 3]);
+    // Ladders at the printed steps: first correct response 10 then 7; 7 then 6.
+    expect(card('sa-q8').rows[0].group!.perOptionSteps).toEqual([10, 7]);
+    expect(card('sb-q3-c-ii').rows[0].group!.perOptionSteps).toEqual([7, 6]);
+    // The raised marks beside each figure of a working, a row per printed mark or printed line.
+    expect(card('sb-q5-a-ii').rows.map(r => r.marks)).toEqual([2, 3, 3, 2]);
+    expect(card('sb-q5-a-iii').rows.map(r => r.marks)).toEqual([2, 2, 2]);
+    expect(card('sb-q6-a-i').rows.map(r => r.marks)).toEqual([1, 2, 2]);
+    expect(card('sb-q7-a-iii').rows.map(r => r.marks)).toEqual([3, 3, 2]);
+    // A total the scheme prints over several answers is never split.
+    for (const s of ['sa-q2-ii', 'sb-q1-a-ii', 'sb-q7-a-ii']) expect(card(s).tariffModel.kind, s).toBe('questionTotal');
+    // Category tables: every option names its development or area first.
+    expect(card('sb-q4-c-ii').rows[0].group!.options.map(o => o.split(' — ')[0])).toEqual([
+      'Increase in world oil prices.', 'Decrease in the rates of Irish indirect taxes.', 'Decrease in the Irish level of savings.']);
+    expect(card('sb-q7-c-ii').rows[0].group!.options.map(o => o.split(' — ')[0])).toEqual([
+      'Irish firms exporting to UK', 'Irish firms exporting to UK', 'Irish firms exporting to UK',
+      'Tourism between Ireland & UK', 'Tourism between Ireland & UK', 'Tourism between Ireland & UK', 'Consumers in Ireland']);
+    for (const c of ORDINARY.filter(item => item.year === 2017 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    for (const c of ORDINARY.filter(item => item.year === 2017)) {
+      for (const row of c.rows) {
+        const printed = /=\s*(\d+)\s*marks?\b/.exec(row.verbatim ?? '');
+        if (printed) expect(Number(printed[1]), `${c.id} ${row.id}`).toBe(row.marks);
+      }
+    }
+    const text = ORDINARY.filter(c => c.year === 2017)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    // The scheme's text layer sets no-break spaces; none reaches a card.
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', ' ', ' in Q Ireland']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 62 independently counted 2016 Higher routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.year === 2016);
+    const tasks = higher2016Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(62);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2016Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2016, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2016 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75 (B8(a) is four area cards of 5, each counted).
+      const total = question.tasks.reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2016 Higher ladders at their printed steps and each working by its marked items', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2016-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // One ladder over two parts or four terms is one card citing every part it prices.
+    expect(card('sa-q8').questionRef).toBe('2016 HL Section A Q8(a)–(b)');
+    expect(card('sa-q8').rows[0].group!.perOptionSteps).toEqual([7, 5, 5]);
+    expect(card('sb-q3-a').questionRef).toBe('2016 HL Section B Q3(a)(i)–(iv)');
+    expect(card('sb-q3-a').rows[0].group!.perOptionSteps).toEqual([8, 4, 4, 4]);
+    expect(card('sa-q9').rows[0].group!.perOptionSteps).toEqual([7, 5, 5]);
+    expect(card('sb-q7-c').rows[0].group!.perOptionSteps).toEqual([7, 6, 6, 6]);
+    expect(card('sb-q3-b-ii').rows.map(r => r.group!.perOptionSteps ?? null)).toEqual([[4, 3], null]);
+    // Each marked item of a working is its own claim.
+    expect(card('sa-q6-i').rows[0].group!.options).toEqual(['+ 100', 'x', '€57,000', '€63,000', '+ €6,000', '100', '200', '+', '6.67']);
+    expect(card('sa-q7-a').rows.map(r => r.marks)).toEqual([3, 3, 3]);
+    expect(card('sb-q5-b-iv').rows.map(r => r.marks)).toEqual([2, 2, 2, 2, 2]);
+    expect(card('sb-q4-b-iii').rows[0].group!.options).toEqual(['Price', 'Quantity', 'MR', 'MC', 'Identify profit max. output']);
+    // Each printed area of B8(a) is its own card, the scheme's 5 not split across its rows.
+    for (const area of ['growth', 'prices', 'unemployment', 'interest']) {
+      expect(card(`sb-q8-a-${area}`).tariffModel.kind, area).toBe('questionTotal');
+    }
+    for (const c of CARDS.filter(item => item.year === 2016 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = CARDS.filter(c => c.year === 2016)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    // The scheme's text layer sets its bullets as U+0002; none reaches a card.
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '\u0002']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 58 independently counted 2015 Higher routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.year === 2015);
+    const tasks = higher2015Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(58);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2015Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2015, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2015 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with each stance counted once.
+      const total = question.tasks.filter(task => !task.cardId.endsWith('-disagree')).reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2015 Higher ladders at their printed steps and splits the Keynes table by its columns', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2015-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    expect(card('sa-q1').rows[0].group!.perOptionSteps).toEqual([8, 4, 4]);
+    expect(card('sa-q6').rows[0].group!.perOptionSteps).toEqual([9, 8]);
+    expect(card('sa-q7').rows[0].group!.perOptionSteps).toEqual([5, 4, 4, 4]);
+    expect(card('sb-q5-b').rows[0].group!.perOptionSteps).toEqual([7, 7, 6]);
+    expect(card('sb-q5-c').rows[0].group!.perOptionSteps).toEqual([7, 6, 6, 6]);
+    // The true/false statements must be read to answer, so they follow the ask.
+    expect(card('sa-q7').questionText).toContain('demand for any one of them should be highly elastic.');
+    // The monopoly explanation under the scheme's five numbered heads, 14 in all, beside the 11-point diagram.
+    expect(card('sb-q2-a-ii').rows.map(r => r.marks)).toEqual([11, 3, 3, 2, 3, 3]);
+    // Keynes's motives: the scheme's 3 at 5 (1 + 2 + 2) read by its Statement / Explanation / Influence columns.
+    expect(card('sb-q4-c-i').rows.map(r => r.marks)).toEqual([3, 3, 3]);
+    expect(card('sb-q4-c-ii').rows.map(r => r.marks)).toEqual([2, 2, 2]);
+    // The agree / disagree stance: one route per side, each with the Irish-economy reference.
+    for (const side of ['agree', 'disagree']) {
+      expect(card(`sb-q8-a-${side}`).rows.map(r => r.marks), side).toEqual([6, 14]);
+    }
+    expect(card('sb-q1-b-i').rows.map(r => r.verbatim)).toContain('New higher equilibrium price PE²');
+    for (const c of CARDS.filter(item => item.year === 2015 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = CARDS.filter(c => c.year === 2015)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    // No stem carries a table's text: each table is the crop beside the ask.
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '1,000 20 120', '0 100 100 200']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 71 independently counted 2015 Ordinary routes, tariffs, sources and Atlas topics', () => {
+    const cards = ORDINARY.filter(card => card.year === 2015);
+    const tasks = ordinary2015Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(71);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of ordinary2015Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'ordinary', 2015, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034GLP000EV');
+        expect(card.questionRef.startsWith(`2015 OL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with each stance counted once.
+      const total = question.tasks.filter(task => !['-smith', '-malthus', '-ricardo'].some(s => task.cardId.endsWith(s)))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `OL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2015 Ordinary ladders at their printed steps and prices the shared columns apart', () => {
+    const card = (s: string) => {
+      const found = ORDINARY.find(c => c.id === `econ-2015-ol-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // First-correct-response ladders, each at its printed steps.
+    for (const [id, steps] of [['sa-q1', [8, 4, 2, 2]], ['sa-q2', [8, 4, 2, 2]], ['sa-q4', [6, 6, 2, 2]],
+      ['sa-q5', [6, 6, 4]], ['sa-q6', [6, 6, 5]], ['sa-q7-ii', [4, 3]], ['sb-q1-a-ii', [3, 2]],
+      ['sb-q3-c-ii', [6, 3]], ['sb-q5-c', [12, 6, 6]]] as const) {
+      expect(card(id).rows[0].group!.perOptionSteps, id).toEqual(steps);
+    }
+    // The printed items that must be read to answer follow the ask.
+    expect(card('sa-q2').questionText).toContain('(iv) The goods are close substitutes.');
+    expect(card('sa-q6').questionText).toContain('ECB CPI WTO');
+    expect(card('sb-q5-c').questionText).toContain('(iii) Employment in Ireland.');
+    // The national minimum wage at 6: the scheme sets it as 4 + 2, and only 6 fits the paper's (24).
+    expect(card('sb-q3-b-i').rows.map(r => r.marks)).toEqual([6, 6]);
+    // The Statement and Explanation columns are priced apart, 2 at 3 marks each.
+    expect(card('sb-q6-b-iii').rows.map(r => [r.marks, r.group!.claimMax, r.group!.perOption])).toEqual([[6, 2, 3], [6, 2, 3]]);
+    // The raised marks beside the budget working, each its own claim.
+    expect(card('sb-q6-a-i').rows.map(r => r.marks)).toEqual([1, 2, 2]);
+    // The scheme's alternative answer for the design fault is accepted beside its own.
+    expect(card('sb-q2-b-i').rows[0].accepts).toEqual(['Reputational damage may cause Demand Curve to shift to the left.']);
+    // One route per economist the scheme names, each 2 + 3 + 3.
+    for (const who of ['marx', 'smith', 'malthus', 'ricardo']) {
+      expect(card(`sb-q4-c-ii-${who}`).rows.map(r => r.marks), who).toEqual([2, 3, 3]);
+    }
+    for (const c of ORDINARY.filter(item => item.year === 2015 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = ORDINARY.filter(c => c.year === 2015)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    // No stem carries a table's text: each table is the crop beside the ask.
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '100 50,000',
+      '2,000 1,000', 'Factor of Production', 'SENTENCE']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 54 independently counted 2014 Higher routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.year === 2014);
+    const tasks = higher2014Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(54);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2014Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2014, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2014 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75.
+      const total = question.tasks.reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2014 Higher ladders at their printed steps and reads the SymbolMT bullets as one response', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2014-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // First-correct-response ladders, each at its printed steps.
+    for (const [id, steps] of [['sa-q5', [6, 5, 5]], ['sa-q6', [10, 7]], ['sa-q7', [10, 7]], ['sa-q8', [11, 6]],
+      ['sa-q9', [5, 4, 4, 4]], ['sb-q2-a-i', [5, 4, 4]], ['sb-q6-c', [7, 6, 6, 6]], ['sb-q8-b-ii', [6, 5]]] as const) {
+      expect(card(id).rows[0].group!.perOptionSteps, id).toEqual(steps);
+    }
+    expect(card('sb-q2-c').rows[1].group!.perOptionSteps).toEqual([5, 5, 5, 4]);
+    // The scheme draws its bullets in SymbolMT, which the text layer reports as the letter x: none reaches a card.
+    const text = CARDS.filter(c => c.year === 2014)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    expect(text).not.toMatch(/(?:^|[\s"])x [A-Z]/);
+    expect(card('sb-q1-c-i').rows[1].verbatim).toContain('vertical or perfectly inelastic. The equilibrium quantity is 80,000.');
+    // A diagram the scheme prints without words is claimed by the card's own ask, beside the hidden figure.
+    for (const id of ['sb-q1-b-i', 'sb-q1-c-i', 'sb-q2-b-i']) {
+      const diagram = card(id).rows.find(r => r.id === 'r-diagram')!;
+      expect(card(id).questionText, id).toContain(diagram.verbatim);
+      expect(card(id).figure?.solution, id).toBe(true);
+    }
+    // B4(a): each term's explanation at 3, and an example of each at 2.
+    expect(card('sb-q4-a').rows.map(r => r.marks)).toEqual([3, 3, 3, 3, 8]);
+    for (const c of CARDS.filter(item => item.year === 2014 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    // No stem carries a table's text: each table is the crop beside the ask.
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '20 45 60',
+      '€80,000 €?']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 70 independently counted 2014 Ordinary routes, tariffs, sources and Atlas topics', () => {
+    const cards = ORDINARY.filter(card => card.year === 2014);
+    const tasks = ordinary2014Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(70);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of ordinary2014Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'ordinary', 2014, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034GLP000EV');
+        expect(card.questionRef.startsWith(`2014 OL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with two of B4(c)'s three measures counted.
+      const total = question.tasks.filter(task => !task.cardId.endsWith('-tobacco'))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `OL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2014 Ordinary ladders at their printed steps and counts two of the three budget measures', () => {
+    const card = (s: string) => {
+      const found = ORDINARY.find(c => c.id === `econ-2014-ol-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // First-correct-response ladders, each at its printed steps.
+    for (const [id, steps] of [['sa-q1', [8, 4, 4]], ['sa-q2', [10, 2, 2, 2]], ['sa-q3', [12, 4]], ['sa-q4', [10, 6]],
+      ['sa-q6', [7, 7, 3]], ['sa-q7', [11, 6]], ['sa-q8', [8, 3, 3, 3]], ['sa-q9', [8, 3, 3, 3]], ['sb-q1-a-ii', [6, 4]],
+      ['sb-q4-b-i', [5, 4]], ['sb-q5-a-ii', [8, 4]], ['sb-q8-b-ii', [7, 4, 4]], ['sb-q8-c-i', [8, 4]]] as const) {
+      expect(card(id).rows[0].group!.perOptionSteps, id).toEqual(steps);
+    }
+    // The printed items that must be read to answer follow the ask.
+    expect(card('sa-q2').questionText).toContain('Irish consumers buying Abercrombie hoodies from USA on-line.');
+    expect(card('sa-q6').questionText).toContain('Trade Union members will work below wage rate W1.');
+    expect(card('sa-q8').questionText).toContain('Economist: 1. John Maynard Keynes 2. Karl Marx 3. Adam Smith 4. Thomas Malthus');
+    // Section B Q4(c): any two of three measures, one route each at 8 + 4.
+    for (const m of ['jobseekers', 'dirt', 'tobacco']) {
+      expect(card(`sb-q4-c-${m}`).totalMarks, m).toBe(12);
+      expect(card(`sb-q4-c-${m}`).rows[0].group!.perOptionSteps, m).toEqual([8, 4]);
+    }
+    // A repeated "Explain the underlined term." carries its own stem, so the card names its term.
+    expect(card('sb-q5-b-i').questionText.startsWith('Patrick Joy was named Entrepreneur')).toBe(true);
+    expect(card('sb-q6-b-ii').questionText.startsWith('In November 2013 the ECB reduced interest rates.')).toBe(true);
+    for (const c of ORDINARY.filter(item => item.year === 2014 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = ORDINARY.filter(c => c.year === 2014)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    // SymbolMT bullets reach no card, and no stem carries a table's text.
+    expect(text).not.toMatch(/(?:^|[\s"])x [A-Z]/);
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'Visible Invisible',
+      'Statement TRUE FALSE', '¨']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 57 independently counted 2013 Higher routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.year === 2013);
+    const tasks = higher2013Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(57);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2013Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2013, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2013 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with B6(a)(i)'s two alternatives counted once.
+      const total = question.tasks.filter(task => !task.cardId.endsWith('-balance-sheet'))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2013 Higher ladders at their printed steps and keeps both credit-creation alternatives', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2013-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // First-correct-response ladders, each at its printed steps.
+    for (const [id, steps] of [['sa-q5', [6, 5, 5]], ['sa-q7', [5, 4, 4, 4]], ['sa-q9', [5, 4, 4, 4]], ['sb-q1-a-i', [7, 4]],
+      ['sb-q3-a', [7, 7, 7, 4]], ['sb-q4-c', [10, 5]], ['sb-q5-c-ii', [8, 4]]] as const) {
+      expect(card(id).rows[0].group!.perOptionSteps, id).toEqual(steps);
+    }
+    // The paradox of thrift is priced 7 + 6 + 4 over one answer the scheme does not divide.
+    expect(card('sa-q6').tariffModel.kind).toBe('questionTotal');
+    // Section B Q6(a)(i): one route per alternative the scheme prints, each 20.
+    expect(card('sb-q6-a-i-reserve-ratio').rows.map(r => r.marks)).toEqual([4, 4, 4, 4, 4]);
+    expect(card('sb-q6-a-i-balance-sheet').rows.map(r => r.marks)).toEqual([4, 6, 10]);
+    // The monopoly diagram's ten points, then the explanation under its five numbered heads.
+    expect(card('sb-q2-b').rows.map(r => r.marks)).toEqual([10, 4, 4, 2, 3, 2]);
+    // A diagram the scheme prices without words is claimed by its own ask, beside the hidden figure.
+    for (const row of card('sb-q3-b').rows.filter(r => r.id.endsWith('-diagram'))) {
+      expect(card('sb-q3-b').questionText, row.id).toContain(row.verbatim);
+    }
+    expect(card('sb-q3-b').figure?.solution).toBe(true);
+    for (const c of CARDS.filter(item => item.year === 2013 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = CARDS.filter(c => c.year === 2013)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    // No stem carries a table's text: each table is the crop beside the ask.
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'Disposable Income Savings',
+      'STATEMENT ELASTIC', ' at 1m', ' at 2m']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 70 independently counted 2013 Ordinary routes, tariffs, sources and Atlas topics', () => {
+    const cards = ORDINARY.filter(card => card.year === 2013);
+    const tasks = ordinary2013Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(70);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of ordinary2013Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'ordinary', 2013, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034GLP000EV');
+        expect(card.questionRef.startsWith(`2013 OL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75.
+      const total = question.tasks.reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `OL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2013 Ordinary ladders at their printed steps and reads each Statement / Explanation row whole', () => {
+    const card = (s: string) => {
+      const found = ORDINARY.find(c => c.id === `econ-2013-ol-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // First-correct-response ladders, each at its printed steps.
+    for (const [id, steps] of [['sa-q1', [6, 6, 2, 2]], ['sa-q2', [6, 6, 2, 2]], ['sa-q4', [10, 3, 3]], ['sa-q6-a', [3, 2, 2, 2]],
+      ['sb-q6-a-ii', [6, 2]], ['sb-q6-a-iii', [8, 4]], ['sb-q6-b-i', [8, 4]], ['sb-q6-c-ii', [8, 4]], ['sb-q6-c-iii', [8, 4]],
+      ['sb-q7-a-ii', [8, 4]], ['sb-q7-a-iii', [8, 4]], ['sb-q7-b-i', [8, 4]], ['sb-q7-b-ii', [8, 4]], ['sb-q7-c-iii', [8, 4]]] as const) {
+      expect(card(id).rows[0].group!.perOptionSteps, id).toEqual(steps);
+    }
+    // The printed items that must be read to answer follow the ask.
+    expect(card('sa-q2').questionText).toContain('(iv) The state of the firm’s production technology.');
+    expect(card('sa-q4').questionText).toContain('Transactionary Precautionary Speculative');
+    // A Statement / Explanation row is the statement with its own explanation, never a neighbour's.
+    expect(card('sb-q5-c-ii').rows[0].group!.options).toContain(
+      'Unemployment — Those who have lost jobs cannot afford VAT inclusive prices and/or are prepared to take a job for cash only, to avoid paying income tax.');
+    expect(card('sb-q7-c-iii').rows[0].group!.options[0].startsWith('Employment — The Irish MNCs will create jobs')).toBe(true);
+    // Section B Q4(c): all three measures, each one argument in favour and one against at 5.
+    expect(card('sb-q4-c').rows.map(r => r.marks)).toEqual([5, 5, 5, 5, 5, 5]);
+    for (const c of ORDINARY.filter(item => item.year === 2013 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = ORDINARY.filter(c => c.year === 2013)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    // No list numeral or table header reaches a card, and no stem carries a table's text.
+    expect(text).not.toMatch(/"\d\. [A-Z]/);
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'Statement Explanation',
+      'Quantity Demanded', 'ANSWER BOX']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 60 independently counted 2012 Higher routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.year === 2012);
+    const tasks = higher2012Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(60);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2012Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2012, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2012 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with each stance counted once.
+      const total = question.tasks.filter(task => !['-no', '-pull', '-option-2', '-option-3'].some(s => task.cardId.endsWith(s))).reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2012 Higher ladders at their printed steps and keeps one route per credited side or option', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2012-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // First-correct-response ladders, each at its printed steps.
+    for (const [id, steps] of [['sa-q1', [6, 5, 5]], ['sa-q2', [6, 5, 5]], ['sa-q7', [6, 6, 5]], ['sb-q5-c-i', [4, 4, 2]],
+      ['sb-q6-b-iii', [4, 3]], ['sb-q8-c-i', [9, 4]]] as const) {
+      expect(card(id).rows[0].group!.perOptionSteps, id).toEqual(steps);
+    }
+    // Answers the scheme prices whole, without dividing them, claim the complete answer.
+    for (const id of ['sa-q5-b', 'sa-q9-b', 'sb-q6-b-i', 'sb-q7-a-ii-option-2', 'sb-q7-a-ii-option-3']) {
+      expect(card(id).tariffModel.kind, id).toBe('questionTotal');
+    }
+    // A printed choice the scheme credits side by side: one route per side, the same total.
+    for (const [a, b] of [['sa-q8-yes', 'sa-q8-no'], ['sb-q5-c-ii-yes', 'sb-q5-c-ii-no'], ['sb-q8-a-i-push', 'sb-q8-a-i-pull'],
+      ['sb-q7-a-ii-option-1', 'sb-q7-a-ii-option-2'], ['sb-q7-a-ii-option-1', 'sb-q7-a-ii-option-3']] as const) {
+      expect(card(a).totalMarks, a).toBe(card(b).totalMarks);
+      expect(card(a).questionRef.split(' — ')[0], a).toBe(card(b).questionRef.split(' — ')[0]);
+    }
+    // Section B Q4(c)(ii) is printed inside the line of (c)(i), and is its own card.
+    expect(card('sb-q4-c-i').totalMarks + card('sb-q4-c-ii').totalMarks).toBe(25);
+    // Section A Q4's "(a) economy of scale or (b) diseconomy of scale" labels the table; one card, four ticks.
+    expect(card('sa-q4').rows.map(r => r.marks)).toEqual([4, 4, 4, 4]);
+    // A diagram the scheme prices without words is claimed by its own ask, beside the hidden figure.
+    for (const id of ['sb-q4-a-i', 'sb-q4-a-ii']) {
+      const row = card(id).rows.find(r => r.id === 'r-diagram')!;
+      expect(card(id).questionText, id).toContain(row.verbatim);
+      expect(card(id).figure?.solution, id).toBe(true);
+    }
+    // A price chosen where the scheme leaves the split open says so in its note.
+    expect(card('sb-q4-a-i').rows[0].contextNote).toContain('read here in that order');
+    expect(card('sb-q7-a-iii').rows[0].contextNote).toContain('does not say which four');
+    for (const c of CARDS.filter(item => item.year === 2012 && item.level === 'higher' && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = CARDS.filter(c => c.year === 2012 && c.level === 'higher')
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    // No stem carries a table's text: each table is the crop beside the ask.
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'National Income Consumption',
+      'Population in Billions', 'United Kingdom 40 units', 'Statement Internal']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 70 independently counted 2012 Ordinary routes, tariffs, sources and Atlas topics', () => {
+    const cards = ORDINARY.filter(card => card.year === 2012);
+    const tasks = ordinary2012Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(70);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of ordinary2012Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'ordinary', 2012, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034GLP000EV');
+        expect(card.questionRef.startsWith(`2012 OL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75.
+      const total = question.tasks.reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `OL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2012 Ordinary ladders at their printed steps and keeps one card per group answer', () => {
+    const card = (s: string) => {
+      const found = ORDINARY.find(c => c.id === `econ-2012-ol-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // First-correct-response ladders, each at its printed steps.
+    for (const [id, steps] of [['sa-q1-b', [4, 4, 3, 3]], ['sa-q2', [12, 4]], ['sa-q3', [8, 4, 4]], ['sa-q4', [12, 4]],
+      ['sa-q6', [8, 3, 3, 3]], ['sa-q7', [12, 5]], ['sa-q8', [11, 6]], ['sa-q9', [9, 4, 4]], ['sb-q1-a-ii', [4, 4, 2]],
+      ['sb-q1-c-ii', [8, 4, 4]], ['sb-q4-c-iii', [7, 4, 4]]] as const) {
+      expect(card(id).rows[0].group!.perOptionSteps, id).toEqual(steps);
+    }
+    // Section B Q1(b)(ii)-(iii): the scheme prices each characteristic stated and explained, one card for both asks.
+    expect(card('sb-q1-b-ii').questionRef).toContain('(b)(ii)–(iii)');
+    expect(card('sb-q1-b-ii').totalMarks).toBe(14);
+    // Section B Q3(a)(ii): the printed 3 + 1 beside each definition and the example's 2, with the reading in the note.
+    expect(card('sb-q3-a-ii').rows.map(r => r.marks)).toEqual([3, 1, 2, 3, 1, 2]);
+    expect(card('sb-q3-a-ii').rows[0].contextNote).toContain('3 marks');
+    // A short ask the paper prints for several parts carries its stem in its question, so no two cards read alike.
+    const asked = ORDINARY.filter(c => c.year === 2012).map(c => c.questionText);
+    expect(new Set(asked).size).toBe(asked.length);
+    for (const c of ORDINARY.filter(item => item.year === 2012 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = ORDINARY.filter(c => c.year === 2012)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'CANON A B C D',
+      'Germany 1600 litres']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 51 independently counted 2011 Higher routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.year === 2011);
+    const tasks = higher2011Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(51);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2011Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2011, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2011 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with each stance counted once.
+      const total = question.tasks.filter(task => !task.cardId.endsWith('-against')).reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2011 Higher ladders at their printed steps and reads its bracketed tariffs in printed order', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2011-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // "17 marks (10+5+2)" over a list of responses is a ladder, claimed in the order the answers are correct.
+    for (const [id, steps] of [['sa-q4', [10, 4, 2]], ['sa-q6', [9, 8]], ['sa-q7', [10, 5, 2]], ['sa-q9', [5, 4, 4, 4]],
+      ['sb-q2-c', [7, 6, 6, 6]], ['sb-q4-c', [4, 4, 4, 3]], ['sb-q5-c', [7, 7, 3, 3]]] as const) {
+      expect(card(id).rows[0].group!.perOptionSteps, id).toEqual(steps);
+    }
+    // Over printed parts of different kinds it is read in printed order, and the note says so.
+    expect(card('sa-q2').rows.map(r => r.marks)).toEqual([12, 4]);
+    expect(card('sa-q2').rows[0].contextNote).toContain('16 marks (12+4)');
+    expect(card('sa-q8').rows.map(r => r.marks)).toEqual([8, 5, 2, 2]);
+    expect(card('sa-q8').rows[0].contextNote).toContain('read here in that order');
+    // Asks the scheme prices together are one card each, cited as a range.
+    for (const [id, cite] of [['sa-q3', '(i)–(iv)'], ['sb-q2-b', '(b)(i)–(ii)'], ['sb-q2-c', '(c)(i)–(ii)']] as const) {
+      expect(card(id).questionRef, id).toContain(cite);
+    }
+    // Section B Q5(b)(ii): in favour OR against, one route each, the same total.
+    expect(card('sb-q5-b-ii-favour').totalMarks).toBe(card('sb-q5-b-ii-against').totalMarks);
+    // Undivided prices claim the complete answer.
+    for (const id of ['sb-q1-a-i', 'sb-q4-a-i', 'sb-q7-b-iii']) {
+      expect(card(id).tariffModel.kind, id).toBe('questionTotal');
+    }
+    for (const c of CARDS.filter(item => item.year === 2011 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = CARDS.filter(c => c.year === 2011)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'Step 2:',
+      'Number of units of output Fixed Costs', 'CO emissions / 2']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 71 independently counted 2011 Ordinary routes, tariffs, sources and Atlas topics', () => {
+    const cards = ORDINARY.filter(card => card.year === 2011);
+    const tasks = ordinary2011Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(71);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of ordinary2011Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'ordinary', 2011, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034GLP000EV');
+        expect(card.questionRef.startsWith(`2011 OL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with each stance counted once.
+      const total = question.tasks.filter(task => !['-disadvantage', '-disagree'].some(s => task.cardId.endsWith(s))).reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `OL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2011 Ordinary ladders at their printed steps and keeps the asks the scheme prices together on one card', () => {
+    const card = (s: string) => {
+      const found = ORDINARY.find(c => c.id === `econ-2011-ol-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    for (const [id, steps] of [['sa-q2', [8, 4, 4]], ['sa-q3', [12, 4]], ['sa-q5', [6, 6, 2, 2]], ['sa-q7', [6, 6, 3, 2]],
+      ['sa-q8', [9, 4, 4]], ['sb-q1-b', [11, 5, 5]], ['sb-q8-c-i', [4, 2]]] as const) {
+      expect(card(id).rows[0].group!.perOptionSteps, id).toEqual(steps);
+    }
+    // Asks the scheme prices together are one card each, cited as a range.
+    for (const [id, cite] of [['sa-q1', '(i)–(iii)'], ['sa-q2', '(i)–(iii)'], ['sa-q7', '(i)–(iv)'], ['sb-q1-b', '(b)(i)–(ii)'],
+      ['sb-q2-a', '(a)(i)–(iii)'], ['sb-q2-b', '(b)(i)–(iii)']] as const) {
+      expect(card(id).questionRef, id).toContain(cite);
+    }
+    // Each missing word at its printed price.
+    expect(card('sa-q1').rows.map(r => r.marks)).toEqual([2, 2, 3, 3, 3, 3]);
+    // Printed choices the scheme credits side by side: one route each, the same total.
+    for (const [a, b] of [['sb-q2-c-i-advantage', 'sb-q2-c-i-disadvantage'], ['sb-q7-c-ii-agree', 'sb-q7-c-ii-disagree']] as const) {
+      expect(card(a).totalMarks, a).toBe(card(b).totalMarks);
+    }
+    // One answer for each group the paper names.
+    expect(card('sb-q7-b-ii').rows.map(r => r.marks)).toEqual([6, 6, 6]);
+    expect(card('sb-q8-a-iii').rows.map(r => r.marks)).toEqual([4, 4, 4]);
+    for (const c of ORDINARY.filter(item => item.year === 2011 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = ORDINARY.filter(c => c.year === 2011)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '10. Maintain',
+      'Price Quantity Demanded', 'Visible Exports Visible Imports']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 54 independently counted 2010 Higher routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.year === 2010);
+    const tasks = higher2010Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(54);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2010Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2010, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2010 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with each stance counted once.
+      const total = question.tasks.filter(task => !['-long-run', '-world-bank'].some(s => task.cardId.endsWith(s))).reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2010 Higher ladders at their printed steps and keeps one route per reading the scheme credits', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2010-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    for (const [id, steps] of [['sa-q1', [6, 5, 5]], ['sa-q5', [6, 5, 5]], ['sa-q7', [9, 8]], ['sa-q9', [6, 6, 5]],
+      ['sb-q8-a', [7, 6, 6, 6]]] as const) {
+      expect(card(id).rows[0].group!.perOptionSteps, id).toEqual(steps);
+    }
+    // Section B Q8(a)(i)-(iv): four areas of one instruction, one card on one ladder, cited as a range.
+    expect(card('sb-q8-a').questionRef).toContain('(a)(i)–(iv)');
+    expect(card('sb-q8-a').rows[0].contextNote).toContain('does not say which area earns the 7');
+    // Section B Q5(b): the scheme prints the price effect and the long run, each 4 + 6; Q7(c) the IMF or the World Bank.
+    for (const [a, b] of [['sb-q5-b-i-prices', 'sb-q5-b-i-long-run'], ['sb-q5-b-ii-prices', 'sb-q5-b-ii-long-run'],
+      ['sb-q7-c-imf', 'sb-q7-c-world-bank']] as const) {
+      expect(card(a).totalMarks, a).toBe(card(b).totalMarks);
+      expect(card(a).questionRef.split(' — ')[0], a).toBe(card(b).questionRef.split(' — ')[0]);
+    }
+    // Starred and itemised workings: each printed figure at its printed mark, beside the hidden working.
+    expect(card('sa-q3').rows.map(r => r.marks)).toEqual([12, 4]);
+    expect(card('sa-q6').rows.map(r => r.marks)).toEqual([5, 12]);
+    expect(card('sb-q5-a-i').rows.map(r => r.marks)).toEqual([2, 2, 2, 4]);
+    expect(card('sb-q5-a-ii').rows.map(r => r.marks)).toEqual([3, 3, 4]);
+    for (const c of CARDS.filter(item => item.year === 2010 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = CARDS.filter(c => c.year === 2010)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'Quantity Demanded Quantity Supplied']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 65 independently counted 2010 Ordinary routes, tariffs, sources and Atlas topics', () => {
+    const cards = ORDINARY.filter(card => card.year === 2010);
+    const tasks = ordinary2010Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(65);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of ordinary2010Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'ordinary', 2010, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034GLP000EV');
+        expect(card.questionRef.startsWith(`2010 OL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75.
+      const total = question.tasks.reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `OL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2010 Ordinary ladders at their printed steps and keys the misprinted Section B Q6(b) romans as the scheme does', () => {
+    const card = (s: string) => {
+      const found = ORDINARY.find(c => c.id === `econ-2010-ol-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    for (const [id, steps] of [['sa-q3', [8, 4, 4]], ['sa-q6', [10, 7]], ['sa-q7', [5, 4, 4, 4]], ['sb-q1-a-ii', [5, 4]],
+      ['sb-q1-b', [12, 6, 6]], ['sb-q5-a', [7, 7, 6]], ['sb-q6-a', [7, 7, 6]]] as const) {
+      expect(card(id).rows[0].group!.perOptionSteps, id).toEqual(steps);
+    }
+    // A Q1: 4 + 2 + 2 beside each name, the first correct word at 4.
+    expect(card('sa-q1').rows.map(r => r.group!.perOptionSteps)).toEqual([[4, 2, 2], [4, 2, 2]]);
+    // The paper prints Section B Q6(b) as (i), (i), (ii); the scheme numbers them (i)-(iii), and so do the cards.
+    for (const [id, cite] of [['sb-q6-b-i', '(b)(i)'], ['sb-q6-b-ii', '(b)(ii)'], ['sb-q6-b-iii', '(b)(iii)']] as const) {
+      expect(card(id).questionRef.endsWith(cite), id).toBe(true);
+    }
+    expect(card('sb-q6-b-ii').rows[0].contextNote).toContain('misprint');
+    // Undivided prices claim the complete answer.
+    for (const id of ['sa-q4', 'sa-q9']) expect(card(id).tariffModel.kind, id).toBe('questionTotal');
+    // Asks the scheme prices together are one card each, cited as a range.
+    for (const [id, cite] of [['sa-q1', '(i)–(ii)'], ['sa-q3', '(i)–(iii)'], ['sb-q5-a', '(a)(i)–(iii)'], ['sb-q6-a', '(a)(i)–(iii)']] as const) {
+      expect(card(id).questionRef, id).toContain(cite);
+    }
+    const asked = ORDINARY.filter(c => c.year === 2010).map(c => c.questionText);
+    expect(new Set(asked).size).toBe(asked.length);
+    for (const c of ORDINARY.filter(item => item.year === 2010 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = ORDINARY.filter(c => c.year === 2010)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 70 independently counted 2022 Higher deferred routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.id.startsWith('econ-2022-hl-deferred-'));
+    const tasks = higher2022DeferredReview.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(70);
+    expect(higher2022DeferredReview.fileid).toBe('LC034ALP000EV-deferred');
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    expect(cards.filter(card => card.section === 'A')).toHaveLength(23);
+    for (const question of higher2022DeferredReview.questions) {
+      const n = Number(question.n);
+      // The deferred booklet joins on its own file id, never on June's Q of the same number.
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2022, 'main', question.n,
+        'single', 'ev', 'LC034ALP000EV-deferred.pdf').flatMap(curriculumNodeIdsForExamTopic);
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.sourceMaterial?.sourceFileid, task.cardId).toBe('LC034ALP000EV-deferred');
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV-deferred');
+        expect(card.schemeCitation, task.cardId).toContain('2022 Higher Level, deferred examination');
+        expect(card.questionRef.startsWith(`2022 HL ${n <= 10 ? 'Section A ' : ''}Q${n}(`), task.cardId).toBe(true);
+        expect(card.questionRef.endsWith(' — Deferred sitting'), task.cardId).toBe(true);
+      }
+      // Section A 15, its printed (b) or (c) alternatives counted once; Section B 75.
+      const once = question.tasks.filter(task => !([5, 7, 9].includes(n) && task.key === 'c'))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(once, `Q${question.n}`).toBe(n <= 10 ? 15 : 75);
+    }
+  });
+
+  it('reads the 2022 Higher deferred scheme\'s open prices with a visible note on each card', () => {
+    const card = (s: string) => CARDS.find(c => c.id === `econ-2022-hl-deferred-${s}`)!;
+    const notes = (s: string) => card(s).rows.map(r => r.contextNote).join(' ');
+    // Q1: both tariffs printed beside (a); (a) asks for two, so it takes the 6 and (b) the 3 x 3.
+    expect(card('sa-q1-a').rows[0].group).toMatchObject({ claimMax: 2, perOption: 3 });
+    expect(card('sa-q1-b').rows[0].group).toMatchObject({ claimMax: 3, perOption: 3 });
+    expect(notes('sa-q1-a')).toContain('1 x 6 (3+3)');
+    // One response asked, "2 x 4 (2+2)" printed: the one response earns the part's 8.
+    for (const s of ['sa-q9-b', 'sa-q9-c']) {
+      expect(card(s).rows[0].group, s).toMatchObject({ claimMax: 1, perOption: 8 });
+      expect(notes(s), s).toContain('2 x 4');
+    }
+    // "7 (4+3)" with no number asked is one response, as beside the asks for one benefit.
+    for (const s of ['sa-q10-b', 'q12-c-i']) expect(card(s).rows[0].group, s).toMatchObject({ claimMax: 1, perOption: 7 });
+    // Two prices read in the order the paper asks and the scheme answers.
+    expect(card('q12-b-ii').rows.map(r => r.marks)).toEqual([6, 4]);
+    expect(card('q16-a-ii').rows.map(r => r.marks)).toEqual([8, 4]);
+    expect(card('sa-q3-b').rows.map(r => r.marks)).toEqual([3, 2]);
+    // "6 (2 x 3)" beside three effects: any two at 3.
+    expect(card('q16-b-i').rows[1].group).toMatchObject({ claimMax: 2, perOption: 3 });
+    // The scheme's misprints are named, never silently corrected in its words.
+    expect(notes('q12-a-i')).toContain('2001');
+    expect(notes('q11-b-i')).toContain('00%');
+    // One-sided printed choices are one card on the scheme's side.
+    expect(card('sa-q4-b').rows[1].verbatim.startsWith('No — ')).toBe(true);
+    expect(card('q11-a-iii').rows[0].verbatim).toBe('Expansionary');
+    expect(card('sa-q8-b').rows[0].verbatim).toBe('True');
+    // Every drawing answer is held back as the scheme's solution figure; the printed data is shown.
+    for (const c of cards2022Deferred()) {
+      if (c.rows.some(r => r.ask)) expect(c.figure?.solution, c.id).toBe(true);
+      if (c.questionFigure) {
+        expect(c.figure?.solution, c.id).toBe(true);
+        expect(c.questionFigure.includesPrompt, c.id).toBe(false);
+      }
+    }
+    const asked = cards2022Deferred().map(c => c.questionText);
+    expect(new Set(asked).size).toBe(asked.length);
+    const text = cards2022Deferred()
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'Adapted from', 'Leaving Certificate']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 81 independently counted 2016 Ordinary routes, tariffs, sources and Atlas topics', () => {
+    const cards = ORDINARY.filter(card => card.year === 2016);
+    const tasks = ordinary2016Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(81);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of ordinary2016Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'ordinary', 2016, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034GLP000EV');
+        expect(card.questionRef.startsWith(`2016 OL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with the B5(a)(iii) for/against stance counted once.
+      const once = question.tasks.filter(task => !task.cardId.endsWith('-against'))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(once, `OL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2016 Ordinary ladders at their printed steps and keeps shared tariffs on one card', () => {
+    const card = (s: string) => {
+      const found = ORDINARY.find(c => c.id === `econ-2016-ol-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // First-correct-response ladders, each at its printed steps.
+    expect(card('sa-q1').rows[0].group!.perOptionSteps).toEqual([8, 4, 4]);
+    expect(card('sa-q2').rows[0].group!.perOptionSteps).toEqual([8, 4, 2, 2]);
+    expect(card('sa-q5').rows[0].group!.perOptionSteps).toEqual([8, 4, 2, 2]);
+    expect(card('sa-q8-b').rows[0].group!.perOptionSteps).toEqual([8, 4]);
+    expect(card('sa-q9').rows[0].group!.perOptionSteps).toEqual([8, 3, 3, 3]);
+    // One ladder over two parts, and one head over two parts: one card each, citing both.
+    expect(card('sa-q6').questionRef).toBe('2016 OL Section A Q6(a)–(b)');
+    expect(card('sa-q6').rows[0].group!.perOptionSteps).toEqual([10, 7]);
+    expect(card('sb-q1-b-ii').questionRef).toBe('2016 OL Section B Q1(b)(ii)–(iii)');
+    // The paper prints Y1 and Q2; only the four blank symbols are claimed.
+    expect(card('sa-q9').rows[0].group!.options.map(o => o.split(' — ')[0])).toEqual(['∆Q', '∆Y', 'Y2', 'Q1']);
+    // The scheme's item table prices each label and equilibrium mark on its own.
+    expect(card('sb-q2-a-i').rows.map(r => r.marks)).toEqual([2, 2, 2]);
+    expect(card('sb-q2-a-ii').rows.map(r => r.marks)).toEqual([2, 2]);
+    expect(card('sb-q2-b-i').rows.map(r => r.verbatim)).toEqual([
+      'Income levels in the economy fall — Demand Curve', 'The firm’s production technology improves — Supply Curve']);
+    expect(card('sb-q1-c-ii').rows[0].group!.options).toContain('Age restrictions: raise the legal age for the consumption of alcohol to 21.');
+    for (const c of ORDINARY.filter(item => item.year === 2016 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = ORDINARY.filter(c => c.year === 2016)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '', 'jus- tify']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 72 independently counted 2018 Ordinary routes, tariffs, sources and Atlas topics', () => {
+    const cards = ORDINARY.filter(card => card.year === 2018);
+    const tasks = ordinary2018Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(72);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of ordinary2018Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'ordinary', 2018, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034GLP000EV');
+        expect(card.questionRef.startsWith(`2018 OL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75. Q4(ii) is one route per economist, counted once.
+      const once = question.tasks.filter(task => !/-(malthus|ricardo|marx|keynes|friedman)$/.test(task.cardId))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(once, `OL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2018 Ordinary ladders at their printed steps and names every table option by its head', () => {
+    const card = (s: string) => {
+      const found = ORDINARY.find(c => c.id === `econ-2018-ol-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    expect(card('sa-q3').rows[0].group!.perOptionSteps).toEqual([6, 6, 2, 2]);
+    expect(card('sa-q3').rows[0].group!.options.map(o => o.split(' — ')[0])).toEqual(['True', 'False', 'True', 'True']);
+    expect(card('sa-q9').rows[0].group!.perOptionSteps).toEqual([9, 4, 4]);
+    expect(card('sa-q1').rows.map(r => r.marks)).toEqual([9, 4, 3]);
+    // One route per economist, each with the scheme's own contributions.
+    expect(['smith', 'malthus', 'ricardo', 'marx', 'keynes', 'friedman']
+      .map(k => card(`sa-q4-ii-${k}`).rows[0].group!.options.length)).toEqual([10, 1, 3, 4, 7, 5]);
+    expect(card('sb-q3-a').rows[0].verbatim).toBe('Land — Return: Rent — anything supplied by nature which helps in the production of output.');
+    expect(card('sb-q3-c').rows.map(r => r.group!.options.length)).toEqual([5, 4, 4]);
+    expect(card('sb-q5-a-i').tariffModel.kind).toBe('questionTotal');
+    for (const c of ORDINARY.filter(item => item.year === 2018 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = ORDINARY.filter(c => c.year === 2018)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'SENTENCE TRUE']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 72 independently counted 2018 Higher routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.year === 2018);
+    const tasks = higher2018Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(72);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2018Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2018, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2018 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with each route pair (NO/YES, monetary/fiscal) counted once.
+      const once = question.tasks.filter(task => !/-(no|fiscal)$/.test(task.cardId))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(once, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2018 Higher ladders at their printed steps and keeps every crop to the part the ask needs', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2018-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    expect(card('sa-q5').rows[0].group!.perOptionSteps).toEqual([6, 6, 2, 2]);
+    expect(card('sa-q5').rows[0].group!.options.map(o => o.split(' — ')[0])).toEqual(['FALSE', 'TRUE', 'FALSE', 'FALSE']);
+    expect(card('sa-q6').rows[0].group!.perOptionSteps).toEqual([5, 4, 4, 4]);
+    expect(card('sa-q8').rows[0].group!.perOptionSteps).toEqual([6, 6, 5]);
+    for (const s of ['sb-q6-b', 'sb-q7-b', 'sb-q8-b']) {
+      expect(card(s).rows[0].group!.perOptionSteps, s).toEqual([7, 6, 6, 6]);
+      // Each side's list is read from the table cells, clear of the marks column's notes.
+      for (const o of card(s).rows[0].group!.options) expect(o, s).not.toMatch(/Two points|Minimum of|Two benefits|favour and two/);
+    }
+    for (const c of CARDS.filter(item => item.year === 2018 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    expect(card('sb-q8-a-iv').rows[0].verbatim).toBe('1.25');
+    expect(card('sb-q5-b-iii').rows[0].group!.options).toContain(
+      'Government grants The government could provide grants for retrofitting of houses / encouraging better energy use etc.');
+    const text = CARDS.filter(c => c.year === 2018)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 75 independently counted 2020 Higher routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.year === 2020);
+    const tasks = higher2020Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(75);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2020Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2020, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2020 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with each stance counted once.
+      const once = question.tasks.filter(task => !task.cardId.endsWith('-no'))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(once, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('prices 2020 Higher ladders as printed and keeps every crop to the part the ask needs', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2020-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // One ladder across two parts is one card claimed at the printed steps.
+    expect(card('sa-q1').rows[0].group!.perOptionSteps).toEqual([10, 6]);
+    expect(card('sa-q7').rows[0].group!.perOptionSteps).toEqual([9, 4, 4]);
+    expect(card('sa-q8').rows[0].group!.perOptionSteps).toEqual([9, 4, 4]);
+    expect(card('sb-q3-c').rows[0].group!.perOptionSteps).toEqual([8, 7, 5, 5]);
+    expect(card('sb-q3-c').rows[0].group!.options).toHaveLength(15);
+    // A question crop never replaces the typed ask: each is the printed data, beside it.
+    for (const c of CARDS.filter(item => item.year === 2020 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+      expect(c.questionFigure?.src, c.id).not.toMatch(/-question\.png$/);
+    }
+    for (const [s, crop] of [['sa-q4-i', 'p06-q4i-diagram'], ['sa-q9-ii', 'p11-q9-diagram'],
+      ['sb-q1-b-i', 'p13-q1bi-diagram'], ['sb-q2-b-i', 'p17-q2bi-diagram'], ['sb-q2-b-ii', 'p18-q2bii-diagram'],
+      ['sb-q4-b-i', 'p25-q4bi-table'], ['sb-q4-b-ii', 'p25-q4bii-graph'], ['sb-q8-b-iv', 'p39-q8biv-working'],
+      ['sb-q8-b-v', 'p39-q8bv-working']] as const) {
+      expect(card(s).figure?.solution, s).toBe(true);
+      expect(card(s).figure?.src, s).toContain(`economics-2020-HL-scheme-${crop}.png`);
+    }
+    // A drawn answer the scheme prints no words for is claimed as the card's own ask.
+    for (const s of ['sa-q4-i', 'sb-q2-b-ii', 'sb-q4-b-ii']) {
+      const ask = card(s).rows.find(r => r.ask)!;
+      expect(card(s).questionText, s).toContain(ask.verbatim);
+    }
+    expect(card('sb-q8-b-iv').rows[0].verbatim).toBe('0.1');
+    expect(card('sb-q1-b-ii').rows[0].group!.options).toContain(
+      'Age restrictions: raise the legal age for the consumption of alcohol from 18 to 21.');
+    const text = CARDS.filter(c => c.year === 2020)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '1st:', '2nd:', '1st x', '1st @']) {
       expect(text, junk).not.toContain(junk);
     }
   });

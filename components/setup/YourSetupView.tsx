@@ -236,7 +236,7 @@ export default function YourSetupView({
             {settingsContext && (
               <Section index="06" title="After each session">
                 <h2 id="ys-06" className="ys-value">{quizOn ? 'Quiz on' : 'Quiz off'}</h2>
-                <p className="ys-meta">A few real exam questions on what you just studied, marked by you. Takes about five minutes.</p>
+                <p className="ys-meta">We’ll ask whether you want to try questions from the topics you studied. You choose whether to start.</p>
                 <Tabs value={quizOn ? 'on' : 'off'} onValueChange={value => settingsContext.updateSetting('studyQuiz', value === 'on')}>
                   <TabsList aria-label="End-of-session quiz">
                     <TabsTrigger value="off">Off</TabsTrigger>

@@ -24,8 +24,8 @@
   "ordinary": 266
  },
  "economics": {
-  "higher": 469,
-  "ordinary": 384
+  "higher": 1214,
+  "ordinary": 1083
  },
  "construction-studies": {
   "higher": 735,
@@ -52,16 +52,16 @@
   "ordinary": 2146
  },
  "computer-science": {
-  "higher": 209,
-  "ordinary": 127
+  "higher": 350,
+  "ordinary": 232
  },
  "engineering": {
-  "higher": 360,
-  "ordinary": 194
+  "higher": 1452,
+  "ordinary": 817
  },
  "religious-education": {
-  "higher": 135,
-  "ordinary": 153
+  "higher": 377,
+  "ordinary": 409
  },
  "lcvp": {
   "common": 314
@@ -71,8 +71,8 @@
   "ordinary": 501
  },
  "history": {
-  "higher": 80,
-  "ordinary": 669
+  "higher": 1855,
+  "ordinary": 3088
  },
  "french": {
   "higher": 883,
@@ -180,8 +180,8 @@
   "higher": 20
  },
  "dcg": {
-  "higher": 307,
-  "ordinary": 238
+  "higher": 355,
+  "ordinary": 272
  },
  "physical-education": {
   "higher": 382,
