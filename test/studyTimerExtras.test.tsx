@@ -48,7 +48,7 @@ vi.mock('@/contexts/ProgressContext', () => ({
 vi.mock('@/hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => false }));
 // This suite exercises the timer; the shared planner has its own integration tests.
 vi.mock('@/hooks/useDatedStudyPlan', () => ({ useDatedStudyPlan: () => ({ enabled: false }) }));
-vi.mock('@/hooks/useStudyTransitionSound', () => ({ useStudyTransitionSound: () => ({ play: vi.fn(), muted: false }) }));
+vi.mock('@/hooks/useStudyTransitionSound', () => ({ useStudyTransitionSound: () => ({ play: vi.fn(), prepare: vi.fn(), muted: false }) }));
 
 const UID = 'student-1';
 const MINUTE = 60_000;
@@ -271,14 +271,15 @@ describe('Time’s up, then the island', () => {
     expect(screen.getByRole('timer')).toHaveTextContent('05:00');
     act(() => { vi.advanceTimersByTime(5 * MINUTE); });
     expect(screen.getByRole('heading', { name: 'You kept going.' })).toBeInTheDocument();
-    expect(screen.getByText(`+${STUDY_SESSION_POINTS.EXTENSION_COMPLETED} JP for finishing your extra time`)).toBeInTheDocument();
+    expect(screen.getByText(`Includes +${STUDY_SESSION_POINTS.EXTENSION_COMPLETED} JP for finishing your extra time.`)).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole('button', { name: /Finish and log/ }));
     fireEvent.click(screen.getByRole('button', { name: 'Skip this step' }));
     await act(async () => { fireEvent.click(screen.getByRole('button', { name: 'Save without a debrief' })); });
 
     // 30 minutes (three 10-minute blocks) plus the finishing bonus.
-    expect(screen.getByRole('heading', { name: '+40 JP' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Session saved.' })).toBeInTheDocument();
+    expect(screen.getByLabelText('Session details')).toHaveTextContent('+40JP');
     fireEvent.click(screen.getByRole('button', { name: /Spend them on your island/ }));
     expect(onGoToIsland).toHaveBeenCalledTimes(1);
     fireEvent.click(screen.getByRole('button', { name: 'Back to the study room' }));

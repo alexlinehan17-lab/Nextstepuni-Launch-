@@ -323,10 +323,10 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
             {props.onQuizAtEndChange && (
               <div className="ks-appearance-choice">
                 <div>
-                  <label htmlFor={`${id}-quiz`}>Quiz me when I finish</label>
+                  <label htmlFor={`${id}-quiz`}>Offer me questions when I finish</label>
                   <p id={`${id}-quiz-help`}>
                     {props.quizAtEnd
-                      ? 'A few real exam questions on what you just studied, marked by you.'
+                      ? 'Choose whether to try real exam questions on the topics you studied.'
                       : 'Straight to your points when you log the session.'}
                   </p>
                 </div>
@@ -334,7 +334,7 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
                   id={`${id}-quiz`}
                   checked={!!props.quizAtEnd}
                   onCheckedChange={props.onQuizAtEndChange}
-                  aria-label="Quiz me when I finish"
+                  aria-label="Offer me questions when I finish"
                   aria-describedby={`${id}-quiz-help`}
                 />
               </div>
