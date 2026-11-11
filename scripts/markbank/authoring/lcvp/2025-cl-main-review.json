@@ -1136,5 +1136,13 @@
     ],
     "checks": "Required preservation/curriculum/deck, 2025 and 2026 LCVP contracts, canonical Atlas tests, measured LCVP coverage, app and scoped test types, scoped lint, normal production build. Owned ignored nonsymlink dist removed after successful build.",
     "releaseDistinction": "Source/task completeness for this sitting is separate from the B1 numeric allocation hold and pending native video playback QA."
+  },
+  "identityCorrection": {
+    "sourceCommit": "ecd7ff846",
+    "originalConceptIdsRestored": 42,
+    "correction": "Earlier checkpoint wording claiming original concepts were unchanged was incorrect: card IDs were stable, but the authoring module replaced conceptId with task suffixes. This narrow follow-up restores original conceptId values and pins all314 original card/concept pairs. Every other authored/emitted card field is unchanged. The original validation hashes remain historical evidence for the earlier checkpoint.",
+    "fixture": "scripts/markbank/authoring/lcvp/original-concept-identities.json",
+    "regression": "test/markBankLcvpIdentity.test.ts",
+    "validation": "scripts/markbank/authoring/lcvp/concept-identity-correction.json"
   }
 }

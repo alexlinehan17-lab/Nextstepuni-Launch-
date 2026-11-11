@@ -137,7 +137,7 @@ describe('LCVP 2024: complete source tasks and required components', () => {
     expect(get('c6a').rows.map(r => r.marks)).toEqual([1, 3]);
     expect(get('c6a').rows[0].verbatim).toBe('Mix of people');
     expect(get('c6a').rows[1].parts).toHaveLength(3);
-    expect(get('c7aii').conceptId).toBe('c7aii');
+    expect(get('c7aii').conceptId).toBe('brief-overview-role-activity');
     expect(get('c7aii').questionRef).toContain('Q7(a)');
     expect(get('c7aii').totalMarks).toBe(4);
     expect(get('c7aii').rows.map(r => r.permittedMarks)).toEqual([[0, 2], [0, 2]]);

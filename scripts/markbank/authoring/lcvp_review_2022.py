@@ -5,6 +5,7 @@ import json
 import re
 import sys
 import fitz
+from lcvp_identity import concept_id
 from lcvp_review_2026 import ROOT, tidy, select, numbered, point, criterion, menu, partial
 from lcvp_review_2025 import paired_rows
 from lcvp_review_2024 import split_raw
@@ -316,7 +317,7 @@ def build():
         suffix = section.lower() + str(q) + (letter or '') + (roman or '')
         ref = f'2022 CL Section {section} Q{q}' + (f'({letter})' if letter else '') + (f'({roman})' if roman else '')
         card = dict(id='lcvp-2022-cl-' + suffix, subjectId='lcvp', topicId='lcvp-link-modules-' + topics[key],
-            conceptId=suffix, level='common', year=2022, section=section, questionRef=ref,
+            conceptId=concept_id('lcvp-2022-cl-' + suffix, suffix), level='common', year=2022, section=section, questionRef=ref,
             questionText=question(paper, key), stem=stems[q] if section == 'C' else case if section == 'B' else '',
             figureKey='', labelKey=[], totalMarks=totals[key], rows=rows[key],
             tariffModel=dict(kind='fixed', notation='Original 2022 allocation; complete source guidance retained'),
