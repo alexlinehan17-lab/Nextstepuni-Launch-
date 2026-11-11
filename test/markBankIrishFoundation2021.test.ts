@@ -8,6 +8,14 @@ import { combinedListeningAssessment, irishMarks } from '../components/MarkBank/
 import { examTopicIdsForQuestion, curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
 import { tariffReconciles } from '../types/markBank';
 import { PAPERS_PENDING_FULL_REVIEW } from './fixtures/irishArchiveProgress';
+import { irishRowScoreId } from '../components/MarkBank/irishScoring';
+// Foundation answers are claimable rows (foundationAnswers.ts): a printed mark is reached by claiming the row the scheme prices at it.
+const claimAt = (card: (typeof ALL_CARDS)[number], marks: number) => {
+  if (card.rubric.system !== 'irish') throw new Error(card.id);
+  const part = card.rubric.criteria[0].allocation!.parts[0];
+  const row = part.rows.find(candidate => candidate.marks === marks);
+  return row ? irishMarks(card, { [irishRowScoreId('answer', part.id, row.id)]: 1 }) : 0;
+};
 
 const cards=ALL_CARDS.filter(c=>c.year===2021);
 const get=(key:string)=>authored.cards.find(c=>c.atlasQuestionId===key)!;
@@ -74,7 +82,7 @@ describe('2021 Foundation independently reviewed boundaries',()=>{
     ]);
     for(const [id,scores] of [['r-3a-4',[0,3,4,6]],['r-3c-5',[0,4,6]]] as const) {
       const card=cards.find(c=>c.id===`irish-2021-fl-${id}`)!;
-      for(const score of scores) expect(irishMarks(card,{'irish:answer':score})).toBe(score);
+      for(const score of scores) expect(claimAt(card,score)).toBe(score);
     }
     expect(get('R-3A-4').criteria[0].permittedMarks).toEqual([0,3,4,6]);
     expect(get('R-3C-5').criteria[0].permittedMarks).toEqual([0,4,6]);

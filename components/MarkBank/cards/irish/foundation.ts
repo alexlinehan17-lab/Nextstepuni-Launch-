@@ -1,4 +1,5 @@
 import type { IrishCriterion, SecRubricCard } from '../../../../types/markBank';
+import { foundationCriterion } from './foundationAnswers';
 import { resolveCurriculumSpecification } from '../../../../curriculumRegistry';
 import authored from './foundation-authored.json';
 import authored2024 from './foundation-2024-authored.json';
@@ -50,7 +51,7 @@ export const CARDS: SecRubricCard[] = [authored2010, authored2010Aural, authored
   rubric: {
     system: 'irish',
     taskRequirements: [...card.taskRequirements],
-    criteria: structuredClone(card.criteria) as IrishCriterion[],
+    criteria: (structuredClone(card.criteria) as IrishCriterion[]).map(criterion => foundationCriterion(card.id, criterion)),
     markingGuideNote: card.markingGuideNote,
   },
 })));
