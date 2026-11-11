@@ -8,7 +8,6 @@ import { db } from '../firebase';
 import { saveInBackground } from '../utils/firestoreWrite';
 import { type TopicMasteryMap, type TopicMasteryV2, type UnifiedConfidence } from '../types';
 import { type DebriefEntry } from '../components/StudyDebrief';
-import { qualityFromDebrief, updateSM2, initSM2States, type SubjectSM2State } from '../components/timetableAlgorithm';
 import {
   mergeTopicMasteryV2,
   migrateTopicMastery,
@@ -19,7 +18,7 @@ import {
 /**
  * Process all side effects when a study debrief is submitted.
  * - Updates topic mastery based on confidence gain
- * - Updates SM-2 spaced repetition state
+ * - Keeps self-reported confidence separate from independent retrieval evidence
  * - Auto-adds the hardest topic to mastery if not present
  */
 export async function processDebriefSideEffects(
@@ -46,7 +45,6 @@ export async function processDebriefSideEffects(
     const topic = entry.hardestTopic;
 
     if (topic && topic !== 'Not specified') {
-      const existing = topicMastery[subject]?.[topic];
       let newConfidence: UnifiedConfidence = 'shaky';
 
       if (entry.confidenceAfter >= 4 && entry.confidenceAfter > entry.confidenceBefore) {
@@ -54,12 +52,7 @@ export async function processDebriefSideEffects(
       } else if (entry.confidenceAfter >= 3) {
         newConfidence = 'shaky';
       } else {
-        newConfidence = existing?.confidence || 'shaky';
-      }
-
-      // Only advance confidence, never regress from debrief
-      if (existing?.confidence === 'solid' && newConfidence !== 'solid') {
-        newConfidence = 'solid';
+        newConfidence = 'shaky';
       }
 
       topicMasteryV2 = upsertCanonicalMastery(topicMasteryV2, subject, topic, {
@@ -67,7 +60,6 @@ export async function processDebriefSideEffects(
         updatedAt: Date.now(),
         source: 'debrief' as const,
         lastDebriefDate: entry.date,
-        sm2Quality: qualityFromDebrief(entry.confidenceBefore, entry.confidenceAfter, true),
       }, examDate);
       topicMastery = projectTopicMastery(topicMasteryV2);
       masteryChanged = true;
@@ -98,25 +90,9 @@ export async function processDebriefSideEffects(
       updates.topicMastery = topicMastery;
     }
 
-    // 2. Update SM-2 state for the subject
-    let sm2States: SubjectSM2State[] = data.sm2States || [];
-    let subjectState = sm2States.find(s => s.subjectName === subject);
-
-    if (!subjectState) {
-      // Initialize SM-2 state for this subject
-      const newStates = initSM2States([subject]);
-      subjectState = newStates[0];
-      sm2States.push(subjectState);
-    }
-
-    const quality = qualityFromDebrief(entry.confidenceBefore, entry.confidenceAfter, true);
-    const updatedState = updateSM2(subjectState, quality);
-
-    sm2States = sm2States.map(s =>
-      s.subjectName === subject ? updatedState : s
-    );
-
-    updates.sm2States = sm2States;
+    // Confidence is a self-report, not evidence of independent recall.
+    // Leave legacy SM-2 history intact; new dated plans use canonical retrieval
+    // outcomes and Mark Bank’s own card dates instead.
 
     // 3. Write all updates at once
     if (Object.keys(updates).length > 0) {

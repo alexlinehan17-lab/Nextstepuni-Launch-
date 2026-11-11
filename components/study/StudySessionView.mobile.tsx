@@ -8,7 +8,7 @@ import { readPlannerTodos } from '../launchpad/plannerTodos';
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { lazy, Suspense, useState, useEffect, useMemo, useRef } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { BookOpen, Target, RotateCcw, type LucideIcon } from 'lucide-react';
@@ -31,15 +31,15 @@ import { type StreakData } from '../../hooks/useStreak';
 import { MIN_STUDY_SESSION_MINUTES } from '../../hooks/useStudySession';
 import { useSharedStudySession } from '../../contexts/StudySessionContext';
 import StudyTimeUp from './StudyTimeUp';
-import StudySessionSaved from './StudySessionSaved';
-// The quiz pulls in a Mark Bank deck, so it loads only when a session is saved
-// with the quiz on — never as part of the study room itself.
-const StudySessionQuiz = lazy(() => import('./quiz/StudySessionQuiz'));
+import { useStudyTransitionSound } from '../../hooks/useStudyTransitionSound';
+import StudySessionCompletion from './StudySessionCompletion';
 import StrategyPickerStep from './StrategyPickerStep';
 import { QUICK_DEBRIEF_POINTS, FULL_REFLECTION_POINTS } from '../ReflectionModal';
 import StudyJournalModal from '../StudyJournalModal';
 import { type DebriefEntry } from '../StudyDebrief';
 import { type WeeklyChallengeState } from '../../hooks/useWeeklyChallenge';
+import { useDatedStudyPlan } from '../../hooks/useDatedStudyPlan';
+import { setTaskStatus } from '../../services/studyPlanStore';
 import { computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, computeWeeksUntilExam } from '../timetableAlgorithm';
 import { getBlockId, toDateKey } from '../subjectData';
 import { processDebriefSideEffects } from '../../hooks/useDebriefSideEffects';
@@ -136,7 +136,6 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     subject: string; seconds: number; points: number;
     /** The topics studied, kept for the end-of-session quiz (resetSession clears them). */
     topicSelection?: StudyTopicSelection;
-    quizDone?: boolean;
   } | null>(null);
   useEffect(() => { if (session.phase !== 'complete') setFinishing(false); }, [session.phase]);
   const [timerAppearance, setTimerAppearance] = useStudyTimerAppearance(user.uid);
@@ -233,7 +232,9 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const subjects = studentProfile?.subjects ?? [];
 
   // Compute today's remaining timetable blocks for quick-start shortcuts
+  const dated = useDatedStudyPlan(studentProfile, user.uid);
   const computedTodayBlocks = useMemo((): TimetableBlockContext[] => {
+    if (dated.enabled) return (dated.saved?.plan.tasks ?? []).filter(t=>t.date===toDateKey(new Date())&&t.status==='planned').map(t=>({subject:t.subjectName,sessionType:t.sessionType,durationMinutes:t.durationMinutes,dateKey:t.date,blockId:t.id}));
     if (!studentProfile || todayBlocks.length > 0) return todayBlocks;
     try {
       const today = new Date();
@@ -258,7 +259,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       console.error('Failed to build timetable blocks:', err);
       return [];
     }
-  }, [studentProfile, todayBlocks]);
+  }, [studentProfile, todayBlocks, dated.enabled, dated.saved, dated.today]);
 
   const learnedStrategyIds = STRATEGY_REGISTRY
     .filter(s => {
@@ -287,8 +288,10 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
         ? `Choose at least ${MIN_STUDY_SESSION_MINUTES} minutes`
         : null;
 
+  const transitionSound = useStudyTransitionSound();
   const handleStart = () => {
     if (!canStart || !selectedType) return;
+    transitionSound.prepare();
     setSavedSummary(null);
     session.startSession(selectedSubject, selectedType, openEndedChoice ? 0 : selectedMinutes, studyTopicSelection(selectedSubject, selectedTopicIds, studentProfile?.examStartDate, subjects.find(subject => subject.subjectName === selectedSubject)?.level), { openEnded: openEndedChoice });
   };
@@ -309,6 +312,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     if (timetableBlock && onTimetableBlockComplete) {
       const actualMinutes = Math.round(session.elapsedSeconds / 60);
       onTimetableBlockComplete(timetableBlock.dateKey, timetableBlock.blockId, actualMinutes);
+      if (dated.enabled) setTaskStatus(dated.scope,timetableBlock.blockId,'completed');
 
       // Compute X/Y blocks done today for banner
       const _alreadyDone = todayBlocks.filter(b =>
@@ -325,6 +329,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const [reflectionMode, setReflectionMode] = useState<'quick' | 'full'>('quick');
 
   const handleSaveWithReflection = async (reflectionText: string, allocations?: StudyTopicAllocation[]) => {
+    transitionSound.prepare();
     if (!session.canRecordSession) {
       session.cancelSession();
       return;
@@ -395,6 +400,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   };
 
   const handleSkipReflection = async (allocations?: StudyTopicAllocation[]) => {
+    transitionSound.prepare();
     if (!session.canRecordSession) {
       session.cancelSession();
       return;
@@ -456,21 +462,15 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     session.resetSession();
   };
 
-  // Keep the existing saved screen underneath the review. The receipt/debrief
-  // has already saved the session; closing practice simply returns here.
+  // After the receipt/debrief is saved, offer questions before the final screen.
   if (session.phase === 'idle' && savedSummary) {
-    const finishQuiz = () => setSavedSummary(current => current ? { ...current, quizDone: true } : current);
-    return <>
-      <StudySessionSaved
-        subject={savedSummary.subject} seconds={savedSummary.seconds} points={savedSummary.points}
-        character={user.avatar} onIsland={onGoToIsland} onStudyAgain={() => setSavedSummary(null)}
-      />
-      {quizEnabled && !savedSummary.quizDone && <Suspense fallback={null}>
-        <StudySessionQuiz uid={user.uid} subject={savedSummary.subject} seconds={savedSummary.seconds}
-          topicSelection={savedSummary.topicSelection} profileSubjects={studentProfile?.subjects}
-          examDate={studentProfile?.examStartDate} onDone={finishQuiz} onSkip={finishQuiz} />
-      </Suspense>}
-    </>;
+    return <StudySessionCompletion
+      uid={user.uid} subject={savedSummary.subject} seconds={savedSummary.seconds} points={savedSummary.points}
+      character={user.avatar} onIsland={onGoToIsland} onStudyAgain={() => setSavedSummary(null)}
+      quizEnabled={quizEnabled} topicSelection={savedSummary.topicSelection}
+      onInvitationOpen={() => transitionSound.play('pause')}
+      profileSubjects={studentProfile?.subjects} examDate={studentProfile?.examStartDate}
+    />;
   }
 
   // ── SETUP PHASE ──
@@ -540,8 +540,16 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     );
   }
 
+  // Keep the real timer mounted beneath the completion reveal.
+  const timeUp = session.phase === 'complete' && !session.openEnded
+    && session.elapsedSeconds >= session.totalDuration && !finishing && session.extendSession
+    ? <StudyTimeUp subject={session.subject} elapsedSeconds={session.elapsedSeconds}
+        extendedMinutes={session.extendedMinutes ?? 0} extensionBonus={session.extensionBonus ?? 0}
+        sessionPoints={sessionPoints} onKeepGoing={minutes => { session.extendSession(minutes); }}
+        onFinish={() => setFinishing(true)} /> : null;
+
   // ── ACTIVE / PAUSED PHASE ──
-  if (session.phase === 'active' || session.phase === 'paused') {
+  if (session.phase === 'active' || session.phase === 'paused' || timeUp) {
     const subjectHex = getSubjectFill(session.subject);
     const typeConfig = SESSION_TYPE_CONFIG[session.sessionType];
 
@@ -557,8 +565,10 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     };
 
     return (
-      <div className="ss-timer-view">
+      <div className={`ss-timer-view${timeUp ? ' ss-timer-complete' : ''}`}>
         <StudySessionRoom
+          completion={timeUp}
+          sound={transitionSound}
           appearance={timerAppearance}
           subject={session.subject}
           subjectColor={subjectHex}
@@ -643,19 +653,6 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
   // ── COMPLETE PHASE ──
   if (session.phase === 'complete') {
-    // The countdown ran out (not an early end): offer to keep going first.
-    const ranOut = !session.openEnded && session.elapsedSeconds >= session.totalDuration;
-    if (ranOut && !finishing && session.extendSession) {
-      return <StudyTimeUp
-        subject={session.subject}
-        elapsedSeconds={session.elapsedSeconds}
-        extendedMinutes={session.extendedMinutes ?? 0}
-        extensionBonus={session.extensionBonus ?? 0}
-        sessionPoints={sessionPoints}
-        onKeepGoing={minutes => { session.extendSession(minutes); }}
-        onFinish={() => setFinishing(true)}
-      />;
-    }
     // Show strategy picker before stats — all strategies shown regardless of module completion
     if (!pickerDone) {
       return (
