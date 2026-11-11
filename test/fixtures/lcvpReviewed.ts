@@ -1,5 +1,15 @@
 // Reviewed additions beside the unchanged original 314 IDs; source corrections
 // retain those identities and are covered by sitting-specific contracts.
+export const LCVP_2022_ADDED_IDS = [
+  'lcvp-2022-cl-b2i',
+  'lcvp-2022-cl-c1c',
+  'lcvp-2022-cl-c2a',
+  'lcvp-2022-cl-c2b',
+  'lcvp-2022-cl-c2d',
+  'lcvp-2022-cl-c5b',
+  'lcvp-2022-cl-c6c',
+] as const;
+
 export const LCVP_2023_ADDED_IDS = [
   'lcvp-2023-cl-c6a',
   'lcvp-2023-cl-c7b',

@@ -2375,13 +2375,44 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-a1", topicId: "lcvp-link-modules-1-2", conceptId: "benefit-doing-group-project",
+    id: "lcvp-2022-cl-a1", topicId: "lcvp-link-modules-1-0", conceptId: "a1",
     section: "A", questionRef: "2022 CL Section A Q1",
-    stem: "You will be shown a DVD with Corporate Social Responsibility (CSR) as the theme.",
     questionText: "Name one benefit of doing a group project.",
-    tariffModel: {"kind":"fixed","notation":"1 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 1,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Not doing it all on your own/work as part of a team Less stressful. The work is divided. Share ideas", marks: 1, contextNote: "1 answer at 1 mark each.", openList: true },
+    { id: "responses", kind: "anyN", verbatim: "one benefit", marks: 1, openList: true, group: {"claimMax":1,"perOption":1,"options":["Not doing it all on your own/work as part of a team","Less stressful.","The work is divided.","Share ideas"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2022 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2022 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Corporate Social Responsibility sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -2389,13 +2420,44 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-a2", topicId: "lcvp-link-modules-1-2", conceptId: "tourism-jobs-kilabbey-area",
+    id: "lcvp-2022-cl-a2", topicId: "lcvp-link-modules-0-0", conceptId: "a2",
     section: "A", questionRef: "2022 CL Section A Q2",
-    stem: "You will be shown a DVD with Corporate Social Responsibility (CSR) as the theme.",
     questionText: "Name two tourism jobs in the Kilabbey area.",
-    tariffModel: {"kind":"fixed","notation":"2 x 1 mark","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Two tourism jobs", marks: 2, accepts: ["Hotel Restaurants B&Bs Work in the surf and sail school. Bike hire"], contextNote: "2 answers at 1 mark each.", openList: true },
+    { id: "responses", kind: "anyN", verbatim: "Two tourism jobs", marks: 2, openList: true, group: {"claimMax":2,"perOption":1,"options":["Hotel","Restaurants","B&Bs","Work in the surf and sail school.","Bike hire."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2022 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2022 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Corporate Social Responsibility sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -2403,13 +2465,44 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-a3", topicId: "lcvp-link-modules-1-2", conceptId: "aims-corporate-social-responsibility-csr",
+    id: "lcvp-2022-cl-a3", topicId: "lcvp-link-modules-1-1", conceptId: "a3",
     section: "A", questionRef: "2022 CL Section A Q3",
-    stem: "You will be shown a DVD with Corporate Social Responsibility (CSR) as the theme.",
     questionText: "What are the aims of Corporate Social Responsibility (CSR)?",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 1 mark","answer":3,"ofParts":4,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Build trust within communities","Raise awareness about the environment","Raise awareness about society","Encourage social change"]} },
+    { id: "responses", kind: "anyN", verbatim: "What are the aims of Corporate Social Responsibility? 3 x 1 mark It aims to:", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":3,"perOption":1,"options":["Build trust within communities","Raise awareness about the environment","Raise awareness about society","Encourage social change"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2022 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2022 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Corporate Social Responsibility sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -2417,13 +2510,44 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-a4", topicId: "lcvp-link-modules-1-2", conceptId: "csr-affects-employees-supermarket",
+    id: "lcvp-2022-cl-a4", topicId: "lcvp-link-modules-1-1", conceptId: "a4",
     section: "A", questionRef: "2022 CL Section A Q4",
-    stem: "You will be shown a DVD with Corporate Social Responsibility (CSR) as the theme.",
     questionText: "Describe how CSR affects employees in this supermarket.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 mark","answer":2,"ofParts":8,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["The staff are all local","Different ages","Different abilities","Different cultural backgrounds","It's very diverse and inclusive","They work hard","Seem very happy","There’s a great atmosphere in the place"]} },
+    { id: "responses", kind: "anyN", verbatim: "Describe how CSR affects employees in this supermarket. Two valid reasons 2 x 1 mark", marks: 2, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":1,"options":["The staff are all local","Different ages","Different abilities","Different cultural backgrounds","It's very diverse and inclusive","They work hard","Seem very happy","There’s a great atmosphere in the place"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2022 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2022 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Corporate Social Responsibility sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -2431,13 +2555,44 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-a5", topicId: "lcvp-link-modules-1-2", conceptId: "value-csr-business",
+    id: "lcvp-2022-cl-a5", topicId: "lcvp-link-modules-1-1", conceptId: "a5",
     section: "A", questionRef: "2022 CL Section A Q5",
-    stem: "You will be shown a DVD with Corporate Social Responsibility (CSR) as the theme.",
     questionText: "Explain the value of CSR to a business.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 1m","answer":4,"ofParts":7,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Staff stay in the workplace","Can attract new customers/customers stay loyal","Suppliers will be loyal as the business has good practices","Support from the community as the business is environmentally aware","May increase the profit of a business","Good reputation/good advertisement","Reduced costs due to using electric delivery trucks"]} },
+    { id: "responses", kind: "anyN", verbatim: "Explain the value of CSR to a business. 4 x 1m", marks: 4, contextNote: "Choose any 4 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":4,"perOption":1,"options":["Staff stay in the workplace","Can attract new customers/customers stay loyal","Suppliers will be loyal as the business has good practices","Support from the community as the business is environmentally aware","May increase the profit of a business","Good reputation/good advertisement","Reduced costs due to using electric delivery trucks"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2022 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2022 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Corporate Social Responsibility sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -2445,13 +2600,44 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-a6", topicId: "lcvp-link-modules-1-2", conceptId: "opinion-areas-csr-more-important-reasons",
+    id: "lcvp-2022-cl-a6", topicId: "lcvp-link-modules-1-1", conceptId: "a6",
     section: "A", questionRef: "2022 CL Section A Q6",
-    stem: "You will be shown a DVD with Corporate Social Responsibility (CSR) as the theme.",
-    questionText: "In your opinion which of the four areas of CSR is more important? Give reasons for your answer. (6 marks) Community ☐ Workplace ☐ Environment ☐ Marketplace ☐",
-    tariffModel: {"kind":"fixed","notation":"6 x 1m","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    questionText: "In your opinion which of the four areas of CSR is more important? Give reasons for your answer. Community ☐ Workplace ☐ Environment ☐ Marketplace ☐",
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Give reasons for your answer", marks: 6, accepts: ["Community Other businesses are supported. Sponsorship for local teams means a good atmosphere/loyalty is being created. People will be attracted to the area to live which further develops the area. Provide electricity charging points for their customers. Provide employment which is diverse and inclusive. Age friendly, Autism Awareness, Homeless. Electric delivery truck, better air quality in the community. Workplace Businesses need to attract good staff. Standards are high when workers work hard, good for business. No complaints to be dealt with from workers re: discrimination/pay. Builds employee loyalty Happier atmosphere in the work place Local staff/different ages/different abilities and cultural backgrounds Can foster teamwork Environment Everyone benefits from lack of pollution Safeguarding the future provision of goods and services. Providing a service e.g. electric points Compostable fruit and veg bags Electric delivery trucks 3 R’s, Reduce, Reuse, Recycle Marketplace Customers and how products are sourced Treating suppliers fairly will encourage them to be conscientious. Environmental awareness The business will profit in the long run. Consumer will benefit as new products/business will evolve. Promotes an enhanced company image Not spending as much on supplies or energy Ensuring high safety standards for consumers"], contextNote: "6 answers at 1 mark each.", openList: true },
+    { id: "chosen-area", kind: "criterion", verbatim: "Give reasons for your answer.", marks: 6, contextNote: "Choose ONE of the FOUR printed areas and support that SAME area with six distinct content points, 1 mark each. No separate mark for naming the area is printed. Do not mix reasons from different choices. Complete original pools: Community: Other businesses are supported. / Sponsorship for local teams means a good atmosphere/loyalty is being created. / People will be attracted to the area to live which further develops the area. / Provide electricity charging points for their customers. / Provide employment which is diverse and inclusive. / Age friendly, Autism Awareness, Homeless. / Electric delivery truck, better air quality in the community. | Workplace: Businesses need to attract good staff. / Standards are high when workers work hard, good for business. / No complaints to be dealt with from workers re: discrimination/pay. / Builds employee loyalty / Happier atmosphere in the work place / Local staff/different ages/different abilities and cultural backgrounds / Can foster teamwork | Environment: Everyone benefits from lack of pollution / Safeguarding the future provision of goods and services. / Providing a service e.g. electric points / Compostable fruit and veg bags / Electric delivery trucks / 3 R’s, Reduce, Reuse, Recycle | Marketplace: Customers and how products are sourced / Treating suppliers fairly will encourage them to be conscientious. / Environmental awareness / The business will profit in the long run. / Consumer will benefit as new products/business will evolve. / Promotes an enhanced company image / Not spending as much on supplies or energy / Ensuring high safety standards for consumers", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]},{"id":"response-4","verbatim":"Response 4","marks":1,"permittedMarks":[0,1]},{"id":"response-5","verbatim":"Response 5","marks":1,"permittedMarks":[0,1]},{"id":"response-6","verbatim":"Response 6","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2022 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2022 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Corporate Social Responsibility sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -2459,13 +2645,44 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-a7", topicId: "lcvp-link-modules-1-2", conceptId: "agree-br-d-customers-prepared-pay",
+    id: "lcvp-2022-cl-a7", topicId: "lcvp-link-modules-1-1", conceptId: "a7",
     section: "A", questionRef: "2022 CL Section A Q7",
-    stem: "You will be shown a DVD with Corporate Social Responsibility (CSR) as the theme.",
     questionText: "Do you agree with Bríd that customers are prepared to pay more for something? Justify your answer.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2m (1+1)","answer":3,"ofParts":4,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Environment: People are more aware of the environment and possible future consequences","Social issues: More people are aware of social issues and minimum standards for others","Community: Customers want to support businesses who care about local issues","Employment for local people that is diverse and inclusive"]} },
+    { id: "responses", kind: "criterion", verbatim: "Do you agree with Bríd that customers are prepared to pay more for something? Justify your answer. 3 x 2m (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Do you agree with Bríd that customers are prepared to pay more for something? Justify your answer. 3 x 2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice. Retain the printed agree/disagree question. No separate agreement mark or invented dissent model is added. Complete original guidance: 1. Environment: People are more aware of the environment and possible future consequences | 2. Social issues: More people are aware of social issues and minimum standards for others. | 3. Community: Customers want to support businesses who care about local issues. | 4. Employment for local people that is diverse and inclusive.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2022 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2022 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Corporate Social Responsibility sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -2473,13 +2690,44 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-a8", topicId: "lcvp-link-modules-1-2", conceptId: "br-d-says-csr-win-win",
+    id: "lcvp-2022-cl-a8", topicId: "lcvp-link-modules-1-1", conceptId: "a8",
     section: "A", questionRef: "2022 CL Section A Q8",
-    stem: "You will be shown a DVD with Corporate Social Responsibility (CSR) as the theme.",
-    questionText: "Bríd says that CSR is a win:win for all involved. Do you agree with her? Give three reasons for your answer. (6 marks) Section B – Case Study and Section C – General Questions 100 marks: 4 x 25 marks Answer Section B and any three questions from Section C or Answer any four questions from Section C.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2m (1+1)","answer":3,"ofParts":6,"perPart":2}, totalMarks: 6,
+    questionText: "Bríd says that CSR is a win:win for all involved. Do you agree with her? Give three reasons for your answer.",
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Energy efficient systems means the business saves money","Suppliers are paid on time, treated fairly/delivery on time to the business","Environment looked after, compostable bags/electric trucks/good publicity/eco-friendly shop","Customers get a service so customers stay loyal to supermarket who increase their profit","Creates employment/employees treated well so they will be loyal, work hard/remain in the job","Community benefit from CSR, the shop benefits from an improved reputation"]} },
+    { id: "responses", kind: "criterion", verbatim: "Bríd says that CSR is a win: win for all involved. Do you agree with her? Give three reasons for your answer. 3 x 2m (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Bríd says that CSR is a win: win for all involved. Do you agree with her? Give three reasons for your answer. 3 x 2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice. Retain the printed agree/disagree question. No separate agreement mark or invented dissent model is added. Complete original guidance: 1. Energy efficient systems means the business saves money | 2. Suppliers are paid on time, treated fairly/delivery on time to the business | 3. Environment looked after, compostable bags/electric trucks/good publicity/eco-friendly shop | 4. Customers get a service so customers stay loyal to supermarket who increase their profit | 5. Creates employment/employees treated well so they will be loyal, work hard/remain in the job | 6. Community benefit from CSR, the shop benefits from an improved reputation", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2022 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC462CLP031EV.mov",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC462CLP031EV.mov",
+          "secFileid": "LC462CLP031EV.mov",
+          "attribution": "State Examinations Commission — original 2022 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Corporate Social Responsibility sequence with its sound before answering. Follow the original printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -2487,478 +2735,994 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-b1", topicId: "lcvp-link-modules-1-1", conceptId: "ways-alex-rami-have-shown-themselves",
+    id: "lcvp-2022-cl-b1", topicId: "lcvp-link-modules-1-0", conceptId: "b1",
     section: "B", questionRef: "2022 CL Section B Q1",
-    stem: "Describe three ways in which Alex and Rami have shown themselves to be enterprising.",
+    stem: "Alex and Rami both worked in the retail sector for many years. In 2015, having identified a gap in the market for young fashion, they set up their own shop selling a number of popular clothing fashion brands. They rented a premises on the main street of a busy large town which meant they had plenty of passing trade. As with many businesses such as theirs, overheads, including rent and wages for four full-time staff were quite high. However, after five years of hard work, the business was doing so well they were thinking of expanding - setting up a second shop diversifying into accessories and footwear. Then the COVID-19 pandemic happened. During the first lockdown in March 2020 everything closed down. At that point, Alex and Rami found themselves with a lot of stock and more on the way from suppliers. These clothes were already paid for but now there were no customers to sell them to. As the shop had only a very basic online presence, their loyal customers had no option but to shop elsewhere online if they wanted to buy clothes. Having reviewed their current situation, the partners decided to research what their competitors were doing. They discovered that in order for their business to survive they needed to establish an online presence. Alex and Rami sought help from their Local Enterprise Office (LEO) with a view to creating an online shop promoting their clothes to potential customers in the virtual world. Through the Government’s National Digital Strategy, they were eligible for the Trading Online Voucher Scheme. They used their voucher to pay for the design and development of their website and social media accounts. They invested in photography and video equipment in order to take professional quality photographs and videos. They also set up a secure payment system and adopted a transparent and fair returns policy. On their online platforms, Alex and Rami wrote clear product descriptions, issued daily updates and carried out weekly fashion shows. They made themselves available by email, chat and phone in order to answer queries from customers and to offer personal style advice. They contacted a couple of well-known personalities to become influencers for their online shop promoting their clothes and generating sales. Soon their dedication and innovation paid off and the orders started to come in. Six months post-lockdown online sales have overtaken shop sales. They are now looking to hire new staff in the areas of website development and maintenance, product promotion, digital marketing and cyber security. Other local businesses having seen their success have asked Alex to mentor them, whilst Rami looks after the day to day running of the business. Given the success of the diversification of the business into online sales they have updated their business objectives to include business consultancy. Alex and Rami are seriously considering not renewing their lease on the shop premises in 6 months’ time in order to concentrate on the online business.",
     questionText: "Describe three ways in which Alex and Rami have shown themselves to be enterprising.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":8,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["They set up the business in 2015/identified a gap in the market","Planning expansion to 2nd shop","Moved to online selling","Sought advice from LEO","Contacted influencers to help with marketing","Thinking ahead and using opportunities e.g. consultancy","Updating their business objectives","Using the business voucher to pay for the design/development of their website"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe three ways in which Alex and Rami have shown themselves to be enterprising. Three ways. 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe three ways in which Alex and Rami have shown themselves to be enterprising. Three ways. 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. They set up the business in 2015/identified a gap in the market | 2. Planning expansion to 2nd shop | 3. Moved to online selling | 4. Sought advice from LEO | 5. Contacted influencers to help with marketing | 6. Thinking ahead and using opportunities e.g. consultancy | 7. Updating their business objectives | 8. Using the business voucher to pay for the design/development of their website", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Alex and Rami — complete case study",
           "pages": [
                 10
           ],
-          "attribution": "SEC Link Modules 2022 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-b2ii", topicId: "lcvp-link-modules-0-1", conceptId: "job-description-new-member-staff-now",
+    id: "lcvp-2022-cl-b2i", topicId: "lcvp-link-modules-1-1", conceptId: "b2i",
+    section: "B", questionRef: "2022 CL Section B Q2(i)",
+    stem: "Alex and Rami both worked in the retail sector for many years. In 2015, having identified a gap in the market for young fashion, they set up their own shop selling a number of popular clothing fashion brands. They rented a premises on the main street of a busy large town which meant they had plenty of passing trade. As with many businesses such as theirs, overheads, including rent and wages for four full-time staff were quite high. However, after five years of hard work, the business was doing so well they were thinking of expanding - setting up a second shop diversifying into accessories and footwear. Then the COVID-19 pandemic happened. During the first lockdown in March 2020 everything closed down. At that point, Alex and Rami found themselves with a lot of stock and more on the way from suppliers. These clothes were already paid for but now there were no customers to sell them to. As the shop had only a very basic online presence, their loyal customers had no option but to shop elsewhere online if they wanted to buy clothes. Having reviewed their current situation, the partners decided to research what their competitors were doing. They discovered that in order for their business to survive they needed to establish an online presence. Alex and Rami sought help from their Local Enterprise Office (LEO) with a view to creating an online shop promoting their clothes to potential customers in the virtual world. Through the Government’s National Digital Strategy, they were eligible for the Trading Online Voucher Scheme. They used their voucher to pay for the design and development of their website and social media accounts. They invested in photography and video equipment in order to take professional quality photographs and videos. They also set up a secure payment system and adopted a transparent and fair returns policy. On their online platforms, Alex and Rami wrote clear product descriptions, issued daily updates and carried out weekly fashion shows. They made themselves available by email, chat and phone in order to answer queries from customers and to offer personal style advice. They contacted a couple of well-known personalities to become influencers for their online shop promoting their clothes and generating sales. Soon their dedication and innovation paid off and the orders started to come in. Six months post-lockdown online sales have overtaken shop sales. They are now looking to hire new staff in the areas of website development and maintenance, product promotion, digital marketing and cyber security. Other local businesses having seen their success have asked Alex to mentor them, whilst Rami looks after the day to day running of the business. Given the success of the diversification of the business into online sales they have updated their business objectives to include business consultancy. Alex and Rami are seriously considering not renewing their lease on the shop premises in 6 months’ time in order to concentrate on the online business.",
+    questionText: "Describe one reward and one risk associated with diversification.",
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 2,
+    rows: [
+    { id: "reward", kind: "point", verbatim: "Opportunity to make the business bigger by expanding into more profitable areas Minimises the risk of loss as you spread the risk so less chance of failure Increased sales and revenue help achieve higher profits", marks: 1, contextNote: "ONE reward, 1 mark; keep all three source examples. A risk cannot replace the required reward." },
+    { id: "risk", kind: "point", verbatim: "Costs associated with expansion. May lose money if the product line fails Might reduce productivity/quality of work if there is a strain put on staff/operation of the existing business Can confuse customers when they specialise in a specific brand", marks: 1, contextNote: "ONE risk, 1 mark; all four source examples retained. Both categories are required." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Alex and Rami — complete case study",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
+    id: "lcvp-2022-cl-b2ii", topicId: "lcvp-link-modules-0-1", conceptId: "b2ii",
     section: "B", questionRef: "2022 CL Section B Q2(ii)",
+    stem: "Alex and Rami both worked in the retail sector for many years. In 2015, having identified a gap in the market for young fashion, they set up their own shop selling a number of popular clothing fashion brands. They rented a premises on the main street of a busy large town which meant they had plenty of passing trade. As with many businesses such as theirs, overheads, including rent and wages for four full-time staff were quite high. However, after five years of hard work, the business was doing so well they were thinking of expanding - setting up a second shop diversifying into accessories and footwear. Then the COVID-19 pandemic happened. During the first lockdown in March 2020 everything closed down. At that point, Alex and Rami found themselves with a lot of stock and more on the way from suppliers. These clothes were already paid for but now there were no customers to sell them to. As the shop had only a very basic online presence, their loyal customers had no option but to shop elsewhere online if they wanted to buy clothes. Having reviewed their current situation, the partners decided to research what their competitors were doing. They discovered that in order for their business to survive they needed to establish an online presence. Alex and Rami sought help from their Local Enterprise Office (LEO) with a view to creating an online shop promoting their clothes to potential customers in the virtual world. Through the Government’s National Digital Strategy, they were eligible for the Trading Online Voucher Scheme. They used their voucher to pay for the design and development of their website and social media accounts. They invested in photography and video equipment in order to take professional quality photographs and videos. They also set up a secure payment system and adopted a transparent and fair returns policy. On their online platforms, Alex and Rami wrote clear product descriptions, issued daily updates and carried out weekly fashion shows. They made themselves available by email, chat and phone in order to answer queries from customers and to offer personal style advice. They contacted a couple of well-known personalities to become influencers for their online shop promoting their clothes and generating sales. Soon their dedication and innovation paid off and the orders started to come in. Six months post-lockdown online sales have overtaken shop sales. They are now looking to hire new staff in the areas of website development and maintenance, product promotion, digital marketing and cyber security. Other local businesses having seen their success have asked Alex to mentor them, whilst Rami looks after the day to day running of the business. Given the success of the diversification of the business into online sales they have updated their business objectives to include business consultancy. Alex and Rami are seriously considering not renewing their lease on the shop premises in 6 months’ time in order to concentrate on the online business.",
     questionText: "Write the job description for one new member of staff now needed by this enterprise.",
-    tariffModel: {"kind":"fixed","notation":"3 x 1m","answer":null,"ofParts":null,"perPart":null}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "3 Duties", marks: 3, accepts: ["Website development and maintenance Digital marketing Product Promotion Cyber Security"], contextNote: "3 answers at 1 mark each.", openList: true },
+    { id: "responses", kind: "anyN", verbatim: "3 Duties", marks: 3, contextNote: "THREE duties for the ONE new staff member, 1 mark each; the complete source examples are retained.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Website development and maintenance","Digital marketing","Product Promotion","Cyber Security"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Alex and Rami — complete case study",
           "pages": [
                 10
           ],
-          "attribution": "SEC Link Modules 2022 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-b2iii", topicId: "lcvp-link-modules-0-1", conceptId: "person-specification-new-staff-member-describes",
+    id: "lcvp-2022-cl-b2iii", topicId: "lcvp-link-modules-0-1", conceptId: "b2iii",
     section: "B", questionRef: "2022 CL Section B Q2(iii)",
+    stem: "Alex and Rami both worked in the retail sector for many years. In 2015, having identified a gap in the market for young fashion, they set up their own shop selling a number of popular clothing fashion brands. They rented a premises on the main street of a busy large town which meant they had plenty of passing trade. As with many businesses such as theirs, overheads, including rent and wages for four full-time staff were quite high. However, after five years of hard work, the business was doing so well they were thinking of expanding - setting up a second shop diversifying into accessories and footwear. Then the COVID-19 pandemic happened. During the first lockdown in March 2020 everything closed down. At that point, Alex and Rami found themselves with a lot of stock and more on the way from suppliers. These clothes were already paid for but now there were no customers to sell them to. As the shop had only a very basic online presence, their loyal customers had no option but to shop elsewhere online if they wanted to buy clothes. Having reviewed their current situation, the partners decided to research what their competitors were doing. They discovered that in order for their business to survive they needed to establish an online presence. Alex and Rami sought help from their Local Enterprise Office (LEO) with a view to creating an online shop promoting their clothes to potential customers in the virtual world. Through the Government’s National Digital Strategy, they were eligible for the Trading Online Voucher Scheme. They used their voucher to pay for the design and development of their website and social media accounts. They invested in photography and video equipment in order to take professional quality photographs and videos. They also set up a secure payment system and adopted a transparent and fair returns policy. On their online platforms, Alex and Rami wrote clear product descriptions, issued daily updates and carried out weekly fashion shows. They made themselves available by email, chat and phone in order to answer queries from customers and to offer personal style advice. They contacted a couple of well-known personalities to become influencers for their online shop promoting their clothes and generating sales. Soon their dedication and innovation paid off and the orders started to come in. Six months post-lockdown online sales have overtaken shop sales. They are now looking to hire new staff in the areas of website development and maintenance, product promotion, digital marketing and cyber security. Other local businesses having seen their success have asked Alex to mentor them, whilst Rami looks after the day to day running of the business. Given the success of the diversification of the business into online sales they have updated their business objectives to include business consultancy. Alex and Rami are seriously considering not renewing their lease on the shop premises in 6 months’ time in order to concentrate on the online business. Write the job description for one new member of staff now needed by this enterprise.",
     questionText: "Write the person specification for this new staff member which describes the attributes, skills, qualifications and experience which Alex and Rami would like this person to have.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 1m","answer":4,"ofParts":4,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Skills: Teamwork skills, ability to work with others etc","Qualification: LC/Cert/Degree","Personal attributes: Flexible etc","Experience: digital marketing/web design in a retail context"]} },
+    { id: "category-1", kind: "point", verbatim: "Skills: Teamwork skills, ability to work with others etc.", marks: 1, contextNote: "All FOUR person-specification categories are required, 1 mark each. Apply them to the SAME new staff member/job from B2(ii); source examples are illustrative." },
+    { id: "category-2", kind: "point", verbatim: "Qualification: LC/Cert/Degree.", marks: 1 },
+    { id: "category-3", kind: "point", verbatim: "Personal attributes: Flexible etc.", marks: 1 },
+    { id: "category-4", kind: "point", verbatim: "Experience: digital marketing/web design in a retail context.", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Alex and Rami — complete case study",
           "pages": [
                 10
           ],
-          "attribution": "SEC Link Modules 2022 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-b3i", topicId: "lcvp-link-modules-1-4", conceptId: "business-carry-out-swot-scot-analysis",
+    id: "lcvp-2022-cl-b3i", topicId: "lcvp-link-modules-1-1", conceptId: "b3i",
     section: "B", questionRef: "2022 CL Section B Q3(i)",
-    stem: "Section B – Case Study and Section C – General Questions : 4 x Answer Section B and any three questions from Section C or Answer any four questions from Section C.",
+    stem: "Alex and Rami both worked in the retail sector for many years. In 2015, having identified a gap in the market for young fashion, they set up their own shop selling a number of popular clothing fashion brands. They rented a premises on the main street of a busy large town which meant they had plenty of passing trade. As with many businesses such as theirs, overheads, including rent and wages for four full-time staff were quite high. However, after five years of hard work, the business was doing so well they were thinking of expanding - setting up a second shop diversifying into accessories and footwear. Then the COVID-19 pandemic happened. During the first lockdown in March 2020 everything closed down. At that point, Alex and Rami found themselves with a lot of stock and more on the way from suppliers. These clothes were already paid for but now there were no customers to sell them to. As the shop had only a very basic online presence, their loyal customers had no option but to shop elsewhere online if they wanted to buy clothes. Having reviewed their current situation, the partners decided to research what their competitors were doing. They discovered that in order for their business to survive they needed to establish an online presence. Alex and Rami sought help from their Local Enterprise Office (LEO) with a view to creating an online shop promoting their clothes to potential customers in the virtual world. Through the Government’s National Digital Strategy, they were eligible for the Trading Online Voucher Scheme. They used their voucher to pay for the design and development of their website and social media accounts. They invested in photography and video equipment in order to take professional quality photographs and videos. They also set up a secure payment system and adopted a transparent and fair returns policy. On their online platforms, Alex and Rami wrote clear product descriptions, issued daily updates and carried out weekly fashion shows. They made themselves available by email, chat and phone in order to answer queries from customers and to offer personal style advice. They contacted a couple of well-known personalities to become influencers for their online shop promoting their clothes and generating sales. Soon their dedication and innovation paid off and the orders started to come in. Six months post-lockdown online sales have overtaken shop sales. They are now looking to hire new staff in the areas of website development and maintenance, product promotion, digital marketing and cyber security. Other local businesses having seen their success have asked Alex to mentor them, whilst Rami looks after the day to day running of the business. Given the success of the diversification of the business into online sales they have updated their business objectives to include business consultancy. Alex and Rami are seriously considering not renewing their lease on the shop premises in 6 months’ time in order to concentrate on the online business.",
     questionText: "Why would a business carry out a SWOT/SCOT analysis?",
-    tariffModel: {"kind":"fixed","notation":"2 x 1m","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "It would be carried out to identify strengths, weaknesses/challenges, opportunities, threats. This provides information which will inform planning", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true },
+    { id: "purpose", kind: "criterion", verbatim: "It would be carried out to identify strengths, weaknesses/challenges, opportunities, threats. This provides information which will inform planning.", marks: 2, contextNote: "Two valid content points, 1 mark each. Preserve the full original explanation without adding category-name quotas.", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Alex and Rami — complete case study",
           "pages": [
                 10
           ],
-          "attribution": "SEC Link Modules 2022 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      13
+                ],
+                "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-b3ii", topicId: "lcvp-link-modules-1-0", conceptId: "contrast-selling-online-selling-person",
+    id: "lcvp-2022-cl-b3ii", topicId: "lcvp-link-modules-1-1", conceptId: "b3ii",
     section: "B", questionRef: "2022 CL Section B Q3(ii)",
-    stem: "Section B – Case Study and Section C – General Questions : 4 x Answer Section B and any three questions from Section C or Answer any four questions from Section C.",
+    stem: "Alex and Rami both worked in the retail sector for many years. In 2015, having identified a gap in the market for young fashion, they set up their own shop selling a number of popular clothing fashion brands. They rented a premises on the main street of a busy large town which meant they had plenty of passing trade. As with many businesses such as theirs, overheads, including rent and wages for four full-time staff were quite high. However, after five years of hard work, the business was doing so well they were thinking of expanding - setting up a second shop diversifying into accessories and footwear. Then the COVID-19 pandemic happened. During the first lockdown in March 2020 everything closed down. At that point, Alex and Rami found themselves with a lot of stock and more on the way from suppliers. These clothes were already paid for but now there were no customers to sell them to. As the shop had only a very basic online presence, their loyal customers had no option but to shop elsewhere online if they wanted to buy clothes. Having reviewed their current situation, the partners decided to research what their competitors were doing. They discovered that in order for their business to survive they needed to establish an online presence. Alex and Rami sought help from their Local Enterprise Office (LEO) with a view to creating an online shop promoting their clothes to potential customers in the virtual world. Through the Government’s National Digital Strategy, they were eligible for the Trading Online Voucher Scheme. They used their voucher to pay for the design and development of their website and social media accounts. They invested in photography and video equipment in order to take professional quality photographs and videos. They also set up a secure payment system and adopted a transparent and fair returns policy. On their online platforms, Alex and Rami wrote clear product descriptions, issued daily updates and carried out weekly fashion shows. They made themselves available by email, chat and phone in order to answer queries from customers and to offer personal style advice. They contacted a couple of well-known personalities to become influencers for their online shop promoting their clothes and generating sales. Soon their dedication and innovation paid off and the orders started to come in. Six months post-lockdown online sales have overtaken shop sales. They are now looking to hire new staff in the areas of website development and maintenance, product promotion, digital marketing and cyber security. Other local businesses having seen their success have asked Alex to mentor them, whilst Rami looks after the day to day running of the business. Given the success of the diversification of the business into online sales they have updated their business objectives to include business consultancy. Alex and Rami are seriously considering not renewing their lease on the shop premises in 6 months’ time in order to concentrate on the online business.",
     questionText: "Contrast selling online with selling in-person.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2m (1+1)","answer":3,"ofParts":11,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["You do not need a shop for online so rent will be cheaper","Dealing with returns is more complex/time consuming when selling online, this is more straightforward in person","You have to consider costs such as packaging or delivery dates with online/overheads like rent and rates","With online you need a good website/product description to make it easy for customers to order, not as important for in-person selling","Greater security risks/fees to be paid for online payments which you do not have in person","Hours of work different which may be easier to attract staff with online","Better relationship/rapport/attention with in person sales. People can be distracted when on line with ads, social media, and other websites competing for attention","More stock on hand as area for shop sales is not reduced/warehouse","Online sales can have reviews where in person sales need word of mouth","Selling online can offer promotional discount codes, deals etc. easier than in store shop sales","Online platforms can develop a bigger customer base than a shop base/accessible"]} },
+    { id: "responses", kind: "criterion", verbatim: "Contrast selling online with selling in-person 3 x 2m (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Contrast selling online with selling in-person 3 x 2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. You do not need a shop for online so rent will be cheaper. | 2. Dealing with returns is more complex/time consuming when selling online, this is more straightforward in person. | 3. You have to consider costs such as packaging or delivery dates with online/overheads like rent and rates. | 4. With online you need a good website/product description to make it easy for customers to order, not as important for in-person selling. | 5. Greater security risks/fees to be paid for online payments which you do not have in person. | 6. Hours of work different which may be easier to attract staff with online. | 7. Better relationship/rapport/attention with in person sales. People can be distracted when on line with ads, social media, and other websites competing for attention. | 8. More stock on hand as area for shop sales is not reduced/warehouse. | 9. Online sales can have reviews where in person sales need word of mouth. | 10. Selling online can offer promotional discount codes, deals etc. easier than in store shop sales. | 11. Online platforms can develop a bigger customer base than a shop base/accessible.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Alex and Rami — complete case study",
           "pages": [
                 10
           ],
-          "attribution": "SEC Link Modules 2022 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      13
+                ],
+                "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-b3iii", topicId: "lcvp-link-modules-1-1", conceptId: "think-alex-rami-successful-diversifying-into",
+    id: "lcvp-2022-cl-b3iii", topicId: "lcvp-link-modules-1-1", conceptId: "b3iii",
     section: "B", questionRef: "2022 CL Section B Q3(iii)",
-    stem: "Section B – Case Study and Section C – General Questions : 4 x Answer Section B and any three questions from Section C or Answer any four questions from Section C.",
+    stem: "Alex and Rami both worked in the retail sector for many years. In 2015, having identified a gap in the market for young fashion, they set up their own shop selling a number of popular clothing fashion brands. They rented a premises on the main street of a busy large town which meant they had plenty of passing trade. As with many businesses such as theirs, overheads, including rent and wages for four full-time staff were quite high. However, after five years of hard work, the business was doing so well they were thinking of expanding - setting up a second shop diversifying into accessories and footwear. Then the COVID-19 pandemic happened. During the first lockdown in March 2020 everything closed down. At that point, Alex and Rami found themselves with a lot of stock and more on the way from suppliers. These clothes were already paid for but now there were no customers to sell them to. As the shop had only a very basic online presence, their loyal customers had no option but to shop elsewhere online if they wanted to buy clothes. Having reviewed their current situation, the partners decided to research what their competitors were doing. They discovered that in order for their business to survive they needed to establish an online presence. Alex and Rami sought help from their Local Enterprise Office (LEO) with a view to creating an online shop promoting their clothes to potential customers in the virtual world. Through the Government’s National Digital Strategy, they were eligible for the Trading Online Voucher Scheme. They used their voucher to pay for the design and development of their website and social media accounts. They invested in photography and video equipment in order to take professional quality photographs and videos. They also set up a secure payment system and adopted a transparent and fair returns policy. On their online platforms, Alex and Rami wrote clear product descriptions, issued daily updates and carried out weekly fashion shows. They made themselves available by email, chat and phone in order to answer queries from customers and to offer personal style advice. They contacted a couple of well-known personalities to become influencers for their online shop promoting their clothes and generating sales. Soon their dedication and innovation paid off and the orders started to come in. Six months post-lockdown online sales have overtaken shop sales. They are now looking to hire new staff in the areas of website development and maintenance, product promotion, digital marketing and cyber security. Other local businesses having seen their success have asked Alex to mentor them, whilst Rami looks after the day to day running of the business. Given the success of the diversification of the business into online sales they have updated their business objectives to include business consultancy. Alex and Rami are seriously considering not renewing their lease on the shop premises in 6 months’ time in order to concentrate on the online business.",
     questionText: "Why do you think Alex and Rami were successful diversifying into online sales?",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 mark","answer":2,"ofParts":8,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["They got the help they needed from LEO","They invested their money well and developed a good website","They worked hard to change their business quickly due to the pandemic","They knew their customers and were able to meet demand","Stock was readily available to meet online demand","They had the skills to do a good online campaign. They gave personal style advice etc","Were eligible and used the online voucher scheme for selling online so they developed a good website","They researched well and had a plan in place"]} },
+    { id: "responses", kind: "anyN", verbatim: "Why do you think Alex and Rami were successful diversifying into online sales? 2 x 1 mark", marks: 2, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":1,"options":["They got the help they needed from LEO.","They invested their money well and developed a good website.","They worked hard to change their business quickly due to the pandemic.","They knew their customers and were able to meet demand.","Stock was readily available to meet online demand.","They had the skills to do a good online campaign. They gave personal style advice etc.","Were eligible and used the online voucher scheme for selling online so they developed a good website.","They researched well and had a plan in place."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Alex and Rami — complete case study",
           "pages": [
                 10
           ],
-          "attribution": "SEC Link Modules 2022 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      13
+                ],
+                "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c1a", topicId: "lcvp-link-modules-1-2", conceptId: "items-agenda-first-meeting-be-held",
+    id: "lcvp-2022-cl-c1a", topicId: "lcvp-link-modules-1-3", conceptId: "c1a",
     section: "C", questionRef: "2022 CL Section C Q1(a)",
     stem: "A fashion show is an example of an LCVP enterprise activity to raise funds for a local charity.",
     questionText: "Name four items for the agenda of the first meeting to be held to plan the fashion show.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 1 mark","answer":4,"ofParts":10,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Election of officers (chairperson/secretary/treasurer/PRO)","Decide which charity to donate to","Draw up a plan of work/schedule of time","Finance","Permission from Principal","Decide on a venue","Arrange a date for the fashion show","Assign roles/tasks/duties","Date and time of next meeting","AOB"]} },
+    { id: "responses", kind: "anyN", verbatim: "Name four items for the agenda of the first meeting to be held to plan the fashion show. Four agenda items required 4 x 1 mark Agenda", marks: 4, contextNote: "Choose any 4 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred.  No compulsory election-of-officers item or separate Agenda-heading mark is printed for THIS sitting.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Election of officers (chairperson/secretary/treasurer/PRO)","Decide which charity to donate to","Draw up a plan of work/schedule of time","Finance","Permission from Principal","Decide on a venue","Arrange a date for the fashion show","Assign roles/tasks/duties","Date and time of next meeting","AOB"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c1b", topicId: "lcvp-link-modules-1-2", conceptId: "planning-important-setting-up-running-enterprise",
+    id: "lcvp-2022-cl-c1b", topicId: "lcvp-link-modules-1-3", conceptId: "c1b",
     section: "C", questionRef: "2022 CL Section C Q1(b)",
     stem: "A fashion show is an example of an LCVP enterprise activity to raise funds for a local charity.",
     questionText: "Outline why planning is important in setting up and running this enterprise activity.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks (1+1)","answer":2,"ofParts":6,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Aims and objectives for the activity are established clearly","Everyone knows what they are working towards/their roles","You can check the progress of the activity against the plan/to see if changes are needed/helps to make decisions","It allows a time frame and deadlines to be set, which keeps everyone on track","To draw up budgets/schedule of costs/identifying resources","Carrying out a SWOT analysis looks at competition/identifies weaknesses and anticipates problems which can be addressed"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline why planning is important in setting up and running this enterprise activity. Two valid answers 2 x 2 marks (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Outline why planning is important in setting up and running this enterprise activity. Two valid answers 2 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Aims and objectives for the activity are established clearly. | 2. Everyone knows what they are working towards/their roles. | 3. You can check the progress of the activity against the plan/to see if changes are needed/helps to make decisions. | 4. It allows a time frame and deadlines to be set, which keeps everyone on track. | 5. To draw up budgets/schedule of costs/identifying resources. | 6. Carrying out a SWOT analysis looks at competition/identifies weaknesses and anticipates problems which can be addressed.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c1d", topicId: "lcvp-link-modules-1-2", conceptId: "dispute-has-arisen-among-students-class",
+    id: "lcvp-2022-cl-c1c", topicId: "lcvp-link-modules-1-3", conceptId: "c1c",
+    section: "C", questionRef: "2022 CL Section C Q1(c)",
+    stem: "A fashion show is an example of an LCVP enterprise activity to raise funds for a local charity.",
+    questionText: "Set out the section of the Enterprise/Action Plan which deals with the running of this activity.",
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 8,
+    rows: [
+    { id: "day", kind: "point", verbatim: "Day of the event", marks: 2, contextNote: "The event-day action is a distinct TWO-mark component; no internal 1-mark step is printed. The full original illustrative schedule is retained below." },
+    { id: "actions", kind: "criterion", verbatim: "actions", marks: 5, contextNote: "FIVE other valid actions, 1 mark each, in addition to the two-mark event-day action. The scheme says Six valid actions overall. Complete original two-page schedule: Schedule of Time Action Nov. 1-5 Hold a planning meeting Get permission from principal/ask teachers to oversee event Contact charity Nov. 8-12 Set up committees and assign tasks Source clothes from shops Book venue, lighting, sound, catwalk Nov. 15-19 Get models and encourage them to practice walking Match clothes shops with models/try on outfits Advertise the fashion show in school and locality Nov. 22-26 Organise a raffle and prizes Script for MC to rehearse Running order for the night/music Advertise over the school intercom Dec 2nd night of show Distribute running order so the class know what they must do Catwalk setup in the gym/lights/sound Dress rehearsal with all models Hold fashion show Dec 6th Present cheque to charity Evaluation of activity", permittedMarks: [0,1,2,3,4,5], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]},{"id":"response-4","verbatim":"Response 4","marks":1,"permittedMarks":[0,1]},{"id":"response-5","verbatim":"Response 5","marks":1,"permittedMarks":[0,1]}] },
+    { id: "sequence", kind: "point", verbatim: "sequence of time", marks: 1, contextNote: "Sequence of time, 1 mark. Use a coherent running section for THIS fashion-show activity." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
+    id: "lcvp-2022-cl-c1d", topicId: "lcvp-link-modules-1-3", conceptId: "c1d",
     section: "C", questionRef: "2022 CL Section C Q1(d)",
     stem: "A fashion show is an example of an LCVP enterprise activity to raise funds for a local charity.",
     questionText: "A dispute has arisen among the students in the class about responsibilities. Describe three steps that could be taken to resolve this dispute.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 3 marks (1+1+1)","answer":3,"ofParts":4,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Ask the teacher to act as a mediator/is impartial/listens to everyone’s opinions/teacher will get written opinions from the class/speaks to each member individually/works to help resolve the dispute","Ask each person separately what went wrong/can explain their side/get suggestions for a solution","Bring both sides together to find common ground/agree on a best solution/redefine responsibilities/identify points of agreement and disagreement","Class discussion to gather ideas on how to address the conflict from within the class/ look to class members to give a solution to the conflict/develop a plan to help overcome the difficulty"]} },
+    { id: "responses", kind: "criterion", verbatim: "A dispute has arisen among the students in the class about responsibilities. Describe three steps that could be taken to resolve this dispute. Three valid steps described 3 x 3 marks (1+1+1)", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: A dispute has arisen among the students in the class about responsibilities. Describe three steps that could be taken to resolve this dispute. Three valid steps described 3 x 3 marks (1+1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Ask the teacher to act as a mediator/is impartial/listens to everyone’s opinions/teacher will get written opinions from the class/speaks to each member individually/works to help resolve the dispute. | 2. Ask each person separately what went wrong/can explain their side/get suggestions for a solution | 3. Bring both sides together to find common ground/agree on a best solution/redefine responsibilities/identify points of agreement and disagreement. | 4. Class discussion to gather ideas on how to address the conflict from within the class/ look to class members to give a solution to the conflict/develop a plan to help overcome the difficulty.", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c2c", topicId: "lcvp-link-modules-0-1", conceptId: "challenges-undertaking-career-investigation",
+    id: "lcvp-2022-cl-c2a", topicId: "lcvp-link-modules-0-2", conceptId: "c2a",
+    section: "C", questionRef: "2022 CL Section C Q2(a)",
+    stem: "A career investigation is useful when making a choice about your future career.",
+    questionText: "(i) Name the career you would like to investigate. (ii) Outline three duties that would be involved in the above named career.",
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "career", kind: "point", verbatim: "One valid career", marks: 1, contextNote: "Name ONE career, 1 mark. All three duties must refer to THAT SAME career; no personal model is invented." },
+    { id: "duties", kind: "criterion", verbatim: "Three relevant duties", marks: 3, contextNote: "THREE relevant duties for the career you named, 1 mark each. No source model duties are printed or invented.", permittedMarks: [0,1,2,3], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
+    id: "lcvp-2022-cl-c2b", topicId: "lcvp-link-modules-0-2", conceptId: "c2b",
+    section: "C", questionRef: "2022 CL Section C Q2(b)",
+    stem: "A career investigation is useful when making a choice about your future career.",
+    questionText: "Describe an out-of-school learning experience you could undertake to help you choose your future career.",
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "experience", kind: "point", verbatim: "name the experience", marks: 1, contextNote: "Name ONE out-of-school learning experience, 1 mark. Full original options: Work experience/job | Work shadowing | Relevant taster course | Careers exhibition | Interview a person in your chosen career | College open days" },
+    { id: "description", kind: "criterion", verbatim: "description", marks: 3, contextNote: "THREE valid description points about that SAME experience, 1 mark each. The source gives six possible experiences, not a completed personal description; none is invented.", permittedMarks: [0,1,2,3], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
+    id: "lcvp-2022-cl-c2c", topicId: "lcvp-link-modules-0-2", conceptId: "c2c",
     section: "C", questionRef: "2022 CL Section C Q2(c)",
     stem: "A career investigation is useful when making a choice about your future career.",
     questionText: "Describe the challenges of undertaking a career investigation.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 2m (1+1)","answer":4,"ofParts":11,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Deciding on the career they would investigate in line with their aptitudes/interests","Identifying personal aptitudes and interests","Having the correct skills to carry out the investigation","Identifying skills and qualities required to pursue a specific career","Describing/finding/understanding relevant qualifications and training required for entry to the selected career","Planning and setting up opportunities to interview a person in a selected career","Planning and setting up opportunities to work shadow a person in a selected career/carry out work experience","Integrating information from a variety of sources to prepare a final report","Reflecting on and evaluating the experience","Not having access or finding the relevant/reliable information you need to make an informed decision","Only one pathway e.g. Garda, finding another pathway/related area for access into the career"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe the challenges of undertaking a career investigation. 8 marks - 4 x 2m (1+1)", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: Describe the challenges of undertaking a career investigation. 8 marks - 4 x 2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Deciding on the career they would investigate in line with their aptitudes/interests. | 2. Identifying personal aptitudes and interests. | 3. Having the correct skills to carry out the investigation. | 4. Identifying skills and qualities required to pursue a specific career. | 5. Describing/finding/understanding relevant qualifications and training required for entry to the selected career | 6. Planning and setting up opportunities to interview a person in a selected career | 7. Planning and setting up opportunities to work shadow a person in a selected career/carry out work experience. | 8. Integrating information from a variety of sources to prepare a final report. | 9. Reflecting on and evaluating the experience. | 10. Not having access or finding the relevant/reliable information you need to make an informed decision. | 11. Only one pathway e.g. Garda, finding another pathway/related area for access into the career.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c3a", topicId: "lcvp-link-modules-1-3", conceptId: "understanding-teamwork",
+    id: "lcvp-2022-cl-c2d", topicId: "lcvp-link-modules-0-0", conceptId: "c2d",
+    section: "C", questionRef: "2022 CL Section C Q2(d)",
+    stem: "A career investigation is useful when making a choice about your future career.",
+    questionText: "During the pandemic many people worked from home. Outline the benefits and challenges for employees of working from home.",
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 9,
+    rows: [
+    { id: "benefits", kind: "anyN", verbatim: "Benefits", marks: 4, contextNote: "FOUR benefits, 1 mark each. These cannot replace the required FOUR challenges.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Employees working from home have a better work-life balance/spend more time with family and friends/wear comfortable clothes/be more comfortable.","Employees will have more time to engage in exercise/hobbies/mindfulness/better mental health/eat healthier.","Better/increases productivity rates for employees/fewer disruptions/Zoom/Teams meetings.","Better creativity when workers are relaxed and under less pressure.","Low staff turnover rates/improved employee retention.","Saving money as less - travel to work, lunch, child care/reducing their carbon footprint.","Flexible working hours/working arrangements not tied to 9 to 5.","Less exposure to illness/time to recover from illness/less sick days.","Create your own custom built work environment/good ergonomic.","Less time commuting.","Positive work place atmosphere/employees are happier/better morale/avoid office politics."]} },
+    { id: "challenges", kind: "anyN", verbatim: "Challenges", marks: 4, contextNote: "FOUR challenges, 1 mark each. These cannot replace the required FOUR benefits.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Connectivity to broadband.","Disconnection from fellow employees/loneliness/no help/demotivated.","Blending of work and home life/no breaks/home distractions/burn out.","Out of hours contact/available 24/7.","Extra costs associated with working from home, heat, lighting, work-space.","Managing security risk/information security/GDPR.","Suitable workspace/availability of devices/resources.","Technology issues sorted easier at work.","Bad for your health/bad posture/eye strain/too much screen time."]} },
+    { id: "other", kind: "criterion", verbatim: "One other point", marks: 1, contextNote: "ONE additional distinct benefit OR challenge, 1 mark. Do not repeat any of the eight points already claimed.", permittedMarks: [0,1] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
+    id: "lcvp-2022-cl-c3a", topicId: "lcvp-link-modules-1-0", conceptId: "c3a",
     section: "C", questionRef: "2022 CL Section C Q3(a)",
     stem: "Teamwork plays a vital role in the majority of LCVP activities.",
     questionText: "What is your understanding of teamwork?",
-    tariffModel: {"kind":"fixed","notation":"2 x 2m (0/2)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "When a group of people work together/co-operatively with each other to achieve a common goal/aim/job", marks: 4, contextNote: "2 answers at 2 marks each; (0/2) — all or nothing on each answer.", openList: true },
+    { id: "definition", kind: "criterion", verbatim: "When a group of people work together/co-operatively with each other to achieve a common goal/aim/job", marks: 4, contextNote: "Original allocation is 2 x 2m (0/2). Each of the TWO response units is worth 2 or 0; there is no 1-mark partial step. The complete definition is preserved without inventing a compulsory phrase split.", permittedMarks: [0,2,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c3b", topicId: "lcvp-link-modules-1-3", conceptId: "characteristics-effective-team-member",
+    id: "lcvp-2022-cl-c3b", topicId: "lcvp-link-modules-1-0", conceptId: "c3b",
     section: "C", questionRef: "2022 CL Section C Q3(b)",
     stem: "Teamwork plays a vital role in the majority of LCVP activities.",
     questionText: "Describe two characteristics of an effective team member.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks (1+1)","answer":2,"ofParts":10,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["A good listener","A good communicator","Willing to do their share/share ideas","Being good at encouraging others to participate/motivating others","Asking for help form others when needed/offering help to others","Good at keeping deadline/reaching targets","Committed to the team and its success","Tolerant of others ideas and views/accepts criticism","Good leadership ability","Is flexible, decisive etc"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe two characteristics of an effective team member. 2 x 2 marks (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Describe two characteristics of an effective team member. 2 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. A good listener | 2. A good communicator | 3. Willing to do their share/share ideas | 4. Being good at encouraging others to participate/motivating others | 5. Asking for help form others when needed/offering help to others | 6. Good at keeping deadline/reaching targets | 7. Committed to the team and its success | 8. Tolerant of others ideas and views/accepts criticism | 9. Good leadership ability | 10. Is flexible, decisive etc. The source also prints “Etc.”.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c3c", topicId: "lcvp-link-modules-1-3", conceptId: "can-team-students-ensure-they-successfully",
+    id: "lcvp-2022-cl-c3c", topicId: "lcvp-link-modules-1-0", conceptId: "c3c",
     section: "C", questionRef: "2022 CL Section C Q3(c)",
     stem: "Teamwork plays a vital role in the majority of LCVP activities.",
     questionText: "How can a team of students ensure they successfully complete an activity?",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 2 marks (1+1)","answer":4,"ofParts":9,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Do good planning at the beginning","Listen and contribute/do the work assigned to them","Make decisions as and when required. Allow time for discussion","Adhere to a time plan/all areas can be covered in order/good time","Assign appropriate people to the jobs/appoint a leader. Have clearly set out roles at the beginning and adhere to them. Break down the jobs into manageable parts","Ensure at the beginning the group aspect is stressed and perhaps have a reward for the whole team if successful","If there is a lack of certain skills among members training can be offered or mentors assigned to upskill these team members","Have regular meetings to ensure everyone is staying on task/ascertain where difficulties are and rectify these","Ask the teacher/other adult about the activity/get feedback/advice/opinion"]} },
+    { id: "responses", kind: "criterion", verbatim: "How can a team of students ensure they successfully complete an activity? Four valid points 4 x 2 marks (1+1)", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: How can a team of students ensure they successfully complete an activity? Four valid points 4 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Do good planning at the beginning. | 2. Listen and contribute/do the work assigned to them. | 3. Make decisions as and when required. Allow time for discussion | 4. Adhere to a time plan/all areas can be covered in order/good time. | 5. Assign appropriate people to the jobs/appoint a leader. Have clearly set out roles at the beginning and adhere to them. Break down the jobs into manageable parts. | 6. Ensure at the beginning the group aspect is stressed and perhaps have a reward for the whole team if successful. | 7. If there is a lack of certain skills among members training can be offered or mentors assigned to upskill these team members. | 8. Have regular meetings to ensure everyone is staying on task/ascertain where difficulties are and rectify these. | 9. Ask the teacher/other adult about the activity/get feedback/advice/opinion.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c3d", topicId: "lcvp-link-modules-1-3", conceptId: "ways-team-could-evaluate-its-group",
+    id: "lcvp-2022-cl-c3d", topicId: "lcvp-link-modules-1-0", conceptId: "c3d",
     section: "C", questionRef: "2022 CL Section C Q3(d)",
     stem: "Teamwork plays a vital role in the majority of LCVP activities.",
     questionText: "Describe three ways a team could evaluate its group performance.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 3 marks (1+1+1)","answer":3,"ofParts":8,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Analyse the success of the activity/what was achieved/targets/aims/goals met/how successful was the activity/profits made","Group discussion/everyone gets an opportunity to speak/use the feedback to evaluate the group performance","Ask teacher/other adults who may have been involved in the activity for their opinion/were class members organised and completing tasks on time/teacher gives feedback on the group performance","Create a questionnaire/survey/anonymous so people will give honest responses. Use this feedback to analyse the group performance","Review of how the team worked/disagreements/how were they settled","Teams can review how each member has developed/new skills learnt/quality of what was learnt/use SWOT or SCOT/peer evaluation","Self-evaluation so students gain greater insight/reflect on what was learnt/set future goals for improvement/consider what their strengths and weaknesses are/critiquing their own work with in the team","Compare your performance with other teams. Evaluate the differences and similarities between the actions of your group and another group(s)"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe three ways a team could evaluate its group performance. Describe three methods 3 x 3 marks (1+1+1)", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe three ways a team could evaluate its group performance. Describe three methods 3 x 3 marks (1+1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Analyse the success of the activity/what was achieved/targets/aims/goals met/how successful was the activity/profits made. | 2. Group discussion/everyone gets an opportunity to speak/use the feedback to evaluate the group performance. | 3. Ask teacher/other adults who may have been involved in the activity for their opinion/were class members organised and completing tasks on time/teacher gives feedback on the group performance. | 4. Create a questionnaire/survey/anonymous so people will give honest responses. Use this feedback to analyse the group performance. | 5. Review of how the team worked/disagreements/how were they settled. | 6. Teams can review how each member has developed/new skills learnt/quality of what was learnt/use SWOT or SCOT/peer evaluation. | 7. Self-evaluation so students gain greater insight/reflect on what was learnt/set future goals for improvement/consider what their strengths and weaknesses are/critiquing their own work with in the team. | 8. Compare your performance with other teams. Evaluate the differences and similarities between the actions of your group and another group(s).", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c4a", topicId: "lcvp-link-modules-0-4", conceptId: "non-financial-benefits-employment",
+    id: "lcvp-2022-cl-c4a", topicId: "lcvp-link-modules-0-0", conceptId: "c4a",
     section: "C", questionRef: "2022 CL Section C Q4(a)",
     stem: "Participation in LCVP provides valuable knowledge of the world of work.",
     questionText: "Outline two non-financial benefits of employment.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks (1+1)","answer":2,"ofParts":11,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Job satisfaction/have a job you like and are successful/performance good","Gain experience in a job area, this allows movement to other jobs through promotion","Development of social/interpersonal/communication skills through meeting with many other people","Development of skills","Opportunities to take on leadership roles, decision-making","Friendships/collegial relationships","Informed decisions for future career","CV easier to write as you have a placement to describe/referees to include","Security/being able to plan ahead","Improves your self-esteem/your sense of achievement/your mental health","Possibility of travel"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline two non-financial benefits of employment. 2 x 2 marks (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Outline two non-financial benefits of employment. 2 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Job satisfaction/have a job you like and are successful/performance good. | 2. Gain experience in a job area, this allows movement to other jobs through promotion. | 3. Development of social/interpersonal/communication skills through meeting with many other people. | 4. Development of skills. | 5. Opportunities to take on leadership roles, decision-making. | 6. Friendships/collegial relationships. | 7. Informed decisions for future career. | 8. CV easier to write as you have a placement to describe/referees to include. | 9. Security/being able to plan ahead | 10. Improves your self-esteem/your sense of achievement/your mental health. | 11. Possibility of travel.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c4b", topicId: "lcvp-link-modules-0-0", conceptId: "reasons-employee-needs-clearly-defined-role",
+    id: "lcvp-2022-cl-c4b", topicId: "lcvp-link-modules-0-0", conceptId: "c4b",
     section: "C", questionRef: "2022 CL Section C Q4(b)",
     stem: "Participation in LCVP provides valuable knowledge of the world of work.",
     questionText: "Give two reasons why an employee needs a clearly defined role in the workplace.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks (1+1)","answer":2,"ofParts":7,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["So that work can be divided up/employees skills can be matched to a specific job","Each worker knows who their supervisor/manager is/less supervision","Each employee knows their job and each person knows what they are responsible for","Productivity/work will be carried out to a higher standard if employees concentrate on certain jobs or what they are good at","Less disputes/confusion/less boredom","Safety aspect/employees are trained for a particular job","Motivation/morale/better atmosphere in workplace/less stress"]} },
+    { id: "responses", kind: "criterion", verbatim: "Give two reasons why an employee needs a clearly defined role in the workplace. 2 x 2 marks (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Give two reasons why an employee needs a clearly defined role in the workplace. 2 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. So that work can be divided up/employees skills can be matched to a specific job. | 2. Each worker knows who their supervisor/manager is/less supervision. | 3. Each employee knows their job and each person knows what they are responsible for. | 4. Productivity/work will be carried out to a higher standard if employees concentrate on certain jobs or what they are good at. | 5. Less disputes/confusion/less boredom. | 6. Safety aspect/employees are trained for a particular job. | 7. Motivation/morale/better atmosphere in workplace/less stress.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c4c", topicId: "lcvp-link-modules-0-0", conceptId: "benefits-employee-being-member-trade-union",
+    id: "lcvp-2022-cl-c4c", topicId: "lcvp-link-modules-0-0", conceptId: "c4c",
     section: "C", questionRef: "2022 CL Section C Q4(c)",
     stem: "Participation in LCVP provides valuable knowledge of the world of work.",
     questionText: "Describe four benefits to an employee of being a member of a trade union.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 2 marks (1+1)","answer":4,"ofParts":7,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Trade unions negotiate agreements with employers on pay/conditions","The trade union will represent members during major changes to the work place such as large scale redundancies","They can provide their members with information, advice and support on entitlements e.g. holidays","They can provide education/facilities and training/grants for courses/courses for shop stewards/libraries/publish journals","They mediate with employers to resolve disputes/bullying incidents","Trade unions lead to greater solidarity among workers/a group can achieve more than one/strength in numbers","Consumer benefits e.g. discounted insurance/credit union/pension"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe four benefits to an employee of being a member of a trade union. Four valid benefits 4 x 2 marks (1+1)", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: Describe four benefits to an employee of being a member of a trade union. Four valid benefits 4 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Trade unions negotiate agreements with employers on pay/conditions. | 2. The trade union will represent members during major changes to the work place such as large scale redundancies. | 3. They can provide their members with information, advice and support on entitlements e.g. holidays. | 4. They can provide education/facilities and training/grants for courses/courses for shop stewards/libraries/publish journals. | 5. They mediate with employers to resolve disputes/bullying incidents. | 6. Trade unions lead to greater solidarity among workers/a group can achieve more than one/strength in numbers. | 7. Consumer benefits e.g. discounted insurance/credit union/pension.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c4d", topicId: "lcvp-link-modules-0-0", conceptId: "benefits-employees-employers-when-business-complies",
+    id: "lcvp-2022-cl-c4d", topicId: "lcvp-link-modules-0-0", conceptId: "c4d",
     section: "C", questionRef: "2022 CL Section C Q4(d)",
     stem: "Participation in LCVP provides valuable knowledge of the world of work.",
     questionText: "Discuss three benefits to employees and employers when a business complies with Health and Safety regulations.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 3 marks (1+1+1)","answer":3,"ofParts":11,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Workers are protected from unsafe work practices/happier workplace","Workers take responsibility for their own safety/less accidents as a result","Ensures that standards are the same for all","Have up to date proper information/training/fire drills/instruction - which they use in the course of their work","Ensures that workers are treated with dignity e.g. no bullying or harassment/equality","Prevents risks to other people visiting the work place e.g. visitors, customers, suppliers, reps - avoids claims/threat of legal action","Provision of PPE/safe guards on machinery - reduction of insurance costs/less chance of claims","Informed employees/safety statement provided/awareness of responsibilities/emergency plan and procedures/written in all languages of the employees","Prevents damage to the business reputation or brand/also better reputation for corporate responsibility among investors, customers and communities","Business benefits from increased productivity as the workers are working in a safe environment/less staff turnover/less sick days","Compliance with Health and Safety regulations leads to less chance of inspections and therefore less chance your business will be closed down/avoids fines"]} },
+    { id: "benefit-1", kind: "criterion", verbatim: "Employee benefit", marks: 3, contextNote: "THREE benefit profiles (1+1+1): ONE employee benefit, ONE employer benefit and ONE other. The source gives one undivided model pool; no per-model category assignment is invented. Complete original models: Workers are protected from unsafe work practices/happier workplace. | Workers take responsibility for their own safety/less accidents as a result. | Ensures that standards are the same for all. | Have up to date proper information/training/fire drills/instruction - which they use in the course of their work. | Ensures that workers are treated with dignity e.g. no bullying or harassment/equality. | Prevents risks to other people visiting the work place e.g. visitors, customers, suppliers, reps - avoids claims/threat of legal action. | Provision of PPE/safe guards on machinery - reduction of insurance costs/less chance of claims. | Informed employees/safety statement provided/awareness of responsibilities/emergency plan and procedures/written in all languages of the employees. | Prevents damage to the business reputation or brand/also better reputation for corporate responsibility among investors, customers and communities. | Business benefits from increased productivity as the workers are working in a safe environment/less staff turnover/less sick days. | Compliance with Health and Safety regulations leads to less chance of inspections and therefore less chance your business will be closed down/avoids fines.", permittedMarks: [0,1,2,3] },
+    { id: "benefit-2", kind: "criterion", verbatim: "Employer benefit", marks: 3, contextNote: "Retain this required category; choose a distinct benefit and keep its matching expansions.", permittedMarks: [0,1,2,3] },
+    { id: "benefit-3", kind: "criterion", verbatim: "other benefit point", marks: 3, contextNote: "Retain this required category; choose a distinct benefit and keep its matching expansions.", permittedMarks: [0,1,2,3] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c5a", topicId: "lcvp-link-modules-1-1", conceptId: "sources-employment-local-area",
+    id: "lcvp-2022-cl-c5a", topicId: "lcvp-link-modules-1-4", conceptId: "c5a",
     section: "C", questionRef: "2022 CL Section C Q5(a)",
     stem: "Learning about your local area.",
     questionText: "List four sources of employment in your local area.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 1 mark","answer":4,"ofParts":8,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Local factory","Retail","Financial institution","Care home","Hospital","Hotel","Restaurant","Tourism"]} },
+    { id: "responses", kind: "anyN", verbatim: "sources of employment", marks: 4, contextNote: "FOUR valid local sources, 1 mark each; source Etc. retains equivalent alternatives.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Local factory","Retail","Financial institution","Care home","Hospital","Hotel","Restaurant","Tourism"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c5c", topicId: "lcvp-link-modules-0-1", conceptId: "value-completing-my-own-place-investigation",
+    id: "lcvp-2022-cl-c5b", topicId: "lcvp-link-modules-1-4", conceptId: "c5b",
+    section: "C", questionRef: "2022 CL Section C Q5(b)",
+    stem: "Learning about your local area.",
+    questionText: "Identify and explain two principal economic activities in your area.",
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 4,
+    rows: [
+    { id: "activities", kind: "criterion", verbatim: "principal economic activities", marks: 4, contextNote: "TWO activity/explanation profiles, 1+1 each. Complete original eleven-option pool: Industry, gives employment | Finance - provides services, convenience for locals | Transport - provides a service | Services - hotels give employment, brings in visitors | Retail - shopping centers, convenient for locals, provides choice. | Health services - hospital/care home | Farming | Fishing | Mining | Forestry | Construction", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
+    id: "lcvp-2022-cl-c5c", topicId: "lcvp-link-modules-1-4", conceptId: "c5c",
     section: "C", questionRef: "2022 CL Section C Q5(c)",
     stem: "Learning about your local area.",
     questionText: "What is the value of completing a ‘My Own Place’ investigation? Give four reasons for your answer.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 2 marks (1+1)","answer":4,"ofParts":6,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["You learn information about your own area/that may be useful in other subjects","You now know have possible locations for work experience as you will have investigated business/services in the area","You can identify problems and possible solutions/you can be encouraged to join a voluntary organisation/local teams/clubs to help. This can be good for the community and your wellbeing","Loyalty to the area as you often have a new appreciation of the facilities or opportunities in the area","You have an item to write for your link module’s portfolio","You can develop skills that can be used in the future, research/interviewing/typing/ communication"]} },
+    { id: "responses", kind: "criterion", verbatim: "What is the value of completing a ‘My Own Place’ investigation? Give four reasons for your answer. 4 x 2 marks (1+1)", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: What is the value of completing a ‘My Own Place’ investigation? Give four reasons for your answer. 4 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. You learn information about your own area/that may be useful in other subjects. | 2. You now know have possible locations for work experience as you will have investigated business/services in the area. | 3. You can identify problems and possible solutions/you can be encouraged to join a voluntary organisation/local teams/clubs to help. This can be good for the community and your wellbeing. | 4. Loyalty to the area as you often have a new appreciation of the facilities or opportunities in the area. | 5. You have an item to write for your link module’s portfolio. | 6. You can develop skills that can be used in the future, research/interviewing/typing/ communication", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c5d", topicId: "lcvp-link-modules-1-4", conceptId: "challenges-might-local-area-face-over",
+    id: "lcvp-2022-cl-c5d", topicId: "lcvp-link-modules-1-4", conceptId: "c5d",
     section: "C", questionRef: "2022 CL Section C Q5(d)",
     stem: "Learning about your local area.",
     questionText: "What challenges might your local area face over the next five years? How might these be overcome?",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 3 marks (1+1+1)","answer":3,"ofParts":8,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Lack of affordable housing/homelessness - discussion with council/politicians to plan for this","Availability of jobs - attract in new employers so that jobs can be created. Work with local colleges or SOLAS to provide training so that locals have the skills for new jobs or due to high employment rates it may be hard to fill certain positions in workplaces. Allow asylum seekers the opportunity to work","Transport/infrastructure - locals can go to council to raise concerns and lobby for improved road network","School places - locals should plan in advance so that there are schools for the primary & second level population. Approach department for new schools or extensions to existing schools","Environmental issues – Pollution/area specific solutions/voluntary groups/available funding/ car charging points","Lack of facilities – Garda station/post office/childcare/youth clubs/playground – politicians/ local authorities/available funding/premises/land","Vandalism/drug addiction/alcoholism - community groups/surveillance cameras/available funding","Any local point relevant to their local area"]} },
+    { id: "profile-1", kind: "criterion", verbatim: "Challenge", marks: 3, contextNote: "THREE coherent challenge/solution profiles. Each challenge is worth TWO content marks (1+1); its matching way to overcome is worth ONE. Do not reverse these allocations. Full original paired examples and open local alternative: Lack of affordable housing/homelessness - discussion with council/politicians to plan for this. | Availability of jobs - attract in new employers so that jobs can be created. Work with local colleges or SOLAS to provide training so that locals have the skills for new jobs or due to high employment rates it may be hard to fill certain positions in workplaces. Allow asylum seekers the opportunity to work. | Transport/infrastructure - locals can go to council to raise concerns and lobby for improved road network. | School places - locals should plan in advance so that there are schools for the primary & second level population. Approach department for new schools or extensions to existing schools. | Environmental issues – Pollution/area specific solutions/voluntary groups/available funding/ car charging points. | Lack of facilities – Garda station/post office/childcare/youth clubs/playground – politicians/ local authorities/available funding/premises/land. | Vandalism/drug addiction/alcoholism - community groups/surveillance cameras/available funding. | Any local point relevant to their local area.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Challenge","marks":2,"permittedMarks":[0,1,2]},{"id":"component-2","verbatim":"way to overcome","marks":1,"permittedMarks":[0,1]}] },
+    { id: "profile-2", kind: "criterion", verbatim: "Challenge", marks: 3, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Challenge","marks":2,"permittedMarks":[0,1,2]},{"id":"component-2","verbatim":"way to overcome","marks":1,"permittedMarks":[0,1]}] },
+    { id: "profile-3", kind: "criterion", verbatim: "Challenge", marks: 3, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2,3], parts: [{"id":"component-1","verbatim":"Challenge","marks":2,"permittedMarks":[0,1,2]},{"id":"component-2","verbatim":"way to overcome","marks":1,"permittedMarks":[0,1]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c6ai", topicId: "lcvp-link-modules-1-4", conceptId: "voluntary-organisations-provide-service-area",
+    id: "lcvp-2022-cl-c6ai", topicId: "lcvp-link-modules-1-2", conceptId: "c6ai",
     section: "C", questionRef: "2022 CL Section C Q6(a)(i)",
     stem: "Voluntary organisations enhance the communities they operate in.",
     questionText: "Name two voluntary organisations that provide a service in your area.",
-    tariffModel: {"kind":"fixed","notation":"2 x 1 mark","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Two named voluntary organisations", marks: 2, accepts: ["St. Vincent de Paul, Focus Ireland, GAA, Tidy Towns etc"], contextNote: "2 answers at 1 mark each.", openList: true },
+    { id: "responses", kind: "anyN", verbatim: "Two named voluntary organisations", marks: 2, contextNote: "TWO organisations serving your area, 1 mark each; full four-name example pool and etc. remain.", openList: true, group: {"claimMax":2,"perOption":1,"options":["St. Vincent de Paul","Focus Ireland","GAA","Tidy Towns etc."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c6aii", topicId: "lcvp-link-modules-1-0", conceptId: "sources-funding-voluntary-organisations",
+    id: "lcvp-2022-cl-c6aii", topicId: "lcvp-link-modules-1-2", conceptId: "c6aii",
     section: "C", questionRef: "2022 CL Section C Q6(a)(ii)",
     stem: "Voluntary organisations enhance the communities they operate in.",
     questionText: "State two sources of funding for voluntary organisations.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 mark","answer":2,"ofParts":6,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["State funding/grants","Membership/client fees and charges","Fundraising in local community e.g. sponsored walks/club lotto/bag packing in shops, etc","Corporate sponsorship","Bequests/donations","Income from their shops/café/restaurants etc"]} },
+    { id: "responses", kind: "anyN", verbatim: "State two sources of funding for voluntary organisations. Two sources named 2 x 1 mark", marks: 2, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":1,"options":["State funding/grants","Membership/client fees and charges","Fundraising in local community e.g. sponsored walks/club lotto/bag packing in shops, etc.","Corporate sponsorship","Bequests/donations","Income from their shops/café/restaurants etc."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c6b", topicId: "lcvp-link-modules-1-2", conceptId: "voluntary-organisation-differs-commercial-business",
+    id: "lcvp-2022-cl-c6b", topicId: "lcvp-link-modules-1-2", conceptId: "c6b",
     section: "C", questionRef: "2022 CL Section C Q6(b)",
     stem: "Voluntary organisations enhance the communities they operate in.",
     questionText: "Explain how a voluntary organisation differs from a commercial business.",
-    tariffModel: {"kind":"fixed","notation":"2 x 2m (1+1)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Two valid comparisons", marks: 4, accepts: ["Voluntary Organisation Commercial Business Rely on people who work for no payment e.g. Employ staff and pay wages to workers. volunteers. Non-profit making/concerned with social Motivated by making profit. issues. They are financed by donations, grants, Raise finance through loans, investors. fundraising. They are accountable to those who avail of They are accountable to shareholders/owners. services/clients. Aim is to produce a product or supply a Aim is to help others. service. Benefits the community. Benefits owners/investors"], contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true },
+    { id: "profile-1", kind: "criterion", verbatim: "Voluntary Organisation", marks: 2, contextNote: "TWO valid paired comparisons, 1 mark for each side. Keep each voluntary-organisation statement paired with its matching commercial-business contrast. Complete original six-pair table: Rely on people who work for no payment e.g. volunteers. → Employ staff and pay wages to workers. | Non-profit making/concerned with social issues. → Motivated by making profit. | They are financed by donations, grants, fundraising. → Raise finance through loans, investors. | They are accountable to those who avail of services/clients. → They are accountable to shareholders/owners. | Aim is to help others. → Aim is to produce a product or supply a service. | Benefits the community. → Benefits owners/investors.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Voluntary Organisation","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Commercial Business","marks":1,"permittedMarks":[0,1]}] },
+    { id: "profile-2", kind: "criterion", verbatim: "Voluntary Organisation", marks: 2, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"Voluntary Organisation","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"Commercial Business","marks":1,"permittedMarks":[0,1]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c6d", topicId: "lcvp-link-modules-1-2", conceptId: "detail-challenges-new-voluntary-organisation-setting",
+    id: "lcvp-2022-cl-c6c", topicId: "lcvp-link-modules-1-2", conceptId: "c6c",
+    section: "C", questionRef: "2022 CL Section C Q6(c)",
+    stem: "Voluntary organisations enhance the communities they operate in.",
+    questionText: "Write the email you would send to a local voluntary organisation when seeking volunteer work.",
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 8,
+    rows: [
+    { id: "email-1", kind: "point", verbatim: "To: email address", marks: 1, contextNote: "EIGHT required email components, 1 mark each. No extra layout or grammar marks. Complete original model: To: paul_d@svp.ie Subject: Volunteer Work Dear Paul, I am a 6th year LCVP student at XXXX Community School. We have been learning about voluntary organisations as part of our studies and I have become very interested in the work of St. Vincent do Paul. I would like to work as a volunteer and I feel my skills would be suited to your charity. Please send me information on how I can apply and the process you use to select volunteers. I will be available for 2-3 hours per week. I look forward to hearing from you. Yours sincerely/Regards, Rebecca O’Sullivan" },
+    { id: "email-2", kind: "point", verbatim: "Subject line", marks: 1 },
+    { id: "email-3", kind: "point", verbatim: "Salutation", marks: 1 },
+    { id: "email-4", kind: "point", verbatim: "Introduction", marks: 1 },
+    { id: "email-5", kind: "point", verbatim: "Reason for email", marks: 1 },
+    { id: "email-6", kind: "point", verbatim: "Availability", marks: 1 },
+    { id: "email-7", kind: "point", verbatim: "Concluding statement", marks: 1 },
+    { id: "email-8", kind: "point", verbatim: "Closing", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
+    id: "lcvp-2022-cl-c6d", topicId: "lcvp-link-modules-1-2", conceptId: "c6d",
     section: "C", questionRef: "2022 CL Section C Q6(d)",
     stem: "Voluntary organisations enhance the communities they operate in.",
     questionText: "Describe in detail three challenges for a new voluntary organisation setting up in your area.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 3 marks (1+1+1)","answer":3,"ofParts":8,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Funding/financing/setup costs/running costs","Finding a suitable location/building with the right space etc./proximity to clients, time not wasted travelling","Volunteers/having suitable volunteers at the times you want. Hiring qualified skilled staff/volunteers, need for hardworking committed staff/properly qualified/skilled staff, suitable volunteers","Attitude of locals/getting the backing of the community so that they do not object to the organisation/bad publicity","Obtaining suitable permits/compliance with regulations. Legal issues – around the start-up of the organisation/planning/health and safety/ownership","Assign roles: who is responsible for the setup/roles, define who does what/deciding what people need to do. Lack of skills/expertise needed to manage or run the organisation","Marketing their service/product – finding customers, clients, volunteers, creating awareness of the organisation","Dealing with competitors – dealing with competing voluntary organizations for funding, volunteers/stock etc"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe in detail three challenges for a new voluntary organisation setting up in your area. Three valid challenges 3 x 3 marks (1+1+1)", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe in detail three challenges for a new voluntary organisation setting up in your area. Three valid challenges 3 x 3 marks (1+1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Funding/financing/setup costs/running costs | 2. Finding a suitable location/building with the right space etc./proximity to clients, time not wasted travelling. | 3. Volunteers/having suitable volunteers at the times you want. Hiring qualified skilled staff/volunteers, need for hardworking committed staff/properly qualified/skilled staff, suitable volunteers. | 4. Attitude of locals/getting the backing of the community so that they do not object to the organisation/bad publicity. | 5. Obtaining suitable permits/compliance with regulations. Legal issues – around the start-up of the organisation/planning/health and safety/ownership. | 6. Assign roles: who is responsible for the setup/roles, define who does what/deciding what people need to do. Lack of skills/expertise needed to manage or run the organisation. | 7. Marketing their service/product – finding customers, clients, volunteers, creating awareness of the organisation. | 8. Dealing with competitors – dealing with competing voluntary organizations for funding, volunteers/stock etc.", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c7a", topicId: "lcvp-link-modules-0-4", conceptId: "job-applicants-asked-submit-references-or",
+    id: "lcvp-2022-cl-c7a", topicId: "lcvp-link-modules-0-1", conceptId: "c7a",
     section: "C", questionRef: "2022 CL Section C Q7(a)",
     stem: "A rigorous recruitment process is essential to select the right candidate for the job.",
     questionText: "Why are job applicants asked to submit references or to name referees on their CV?",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 1m","answer":4,"ofParts":5,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["References are used to check the reliability of the potential employee/background check","References are used to check the quality of their work","Their suitability for the job","Referees provide vital information for a potential employer","Referees verify that details/information given are correct"]} },
+    { id: "responses", kind: "anyN", verbatim: "Why are job applicants asked to submit references or name referees on their CV? Four valid points 4 x 1m", marks: 4, contextNote: "Choose any 4 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":4,"perOption":1,"options":["References are used to check the reliability of the potential employee/background check.","References are used to check the quality of their work.","Their suitability for the job.","Referees provide vital information for a potential employer.","Referees verify that details/information given are correct."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c7b", topicId: "lcvp-link-modules-0-1", conceptId: "pieces-advice-friend-when-filling-out",
+    id: "lcvp-2022-cl-c7b", topicId: "lcvp-link-modules-0-1", conceptId: "c7b",
     section: "C", questionRef: "2022 CL Section C Q7(b)",
     stem: "A rigorous recruitment process is essential to select the right candidate for the job.",
     questionText: "List four pieces of advice you would give to a friend when filling out a job application form.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 1 mark","answer":4,"ofParts":8,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Follow instructions carefully/use black ink/block capitals/include photo/documents if requested","Take a photocopy of the blank form and practice filling it in","Print details/ensure it is legible/complete on computer if option is available/watch spelling/ ask someone to proofread it","Answer all parts/be honest/make sure you sign it","Keep a copy of the completed form for interview preparation","Submit in good time so you are not disqualified for being late/note the closing date","Don’t rush filling in the form/do not leave it to the last minute/take your time","Advice relating to content"]} },
+    { id: "responses", kind: "anyN", verbatim: "List four pieces of advice you would give to a friend when filling out a job application form. Four valid points 4 x 1 mark", marks: 4, contextNote: "Choose any 4 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":4,"perOption":1,"options":["Follow instructions carefully/use black ink/block capitals/include photo/documents if requested.","Take a photocopy of the blank form and practice filling it in.","Print details/ensure it is legible/complete on computer if option is available/watch spelling/ ask someone to proofread it.","Answer all parts/be honest/make sure you sign it.","Keep a copy of the completed form for interview preparation.","Submit in good time so you are not disqualified for being late/note the closing date.","Don’t rush filling in the form/do not leave it to the last minute/take your time.","Advice relating to content."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c7c", topicId: "lcvp-link-modules-0-4", conceptId: "ways-prepare-job-interview-stating-each",
+    id: "lcvp-2022-cl-c7c", topicId: "lcvp-link-modules-0-1", conceptId: "c7c",
     section: "C", questionRef: "2022 CL Section C Q7(c)",
     stem: "A rigorous recruitment process is essential to select the right candidate for the job.",
     questionText: "Describe four ways you would prepare for a job interview, stating why in each case.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 2 marks","answer":4,"ofParts":10,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Carefully examine the job description, the more you can align yourself to these details, there is more chance of you getting this job","Research the company, their products or services online/in the newspapers/trade magazines. This shows you are interested in the business, you will have questions to ask the interviewer and you will know the answers to their questions","Do an interview preparation course/practice questions/do a mock interview with a friend or family member. This will help to improve your confidence, give you a chance to practice your interview","Interview etiquette - proper handshake/maintaining eye contact/sitting up straight/gestures/ diction, so you come across well in the interview","Pick appropriate clothes to wear for the interview/make sure your clothes are clean and appropriate for the interview/you should also be well groomed. This will make a good first impression","Plan your transport to the interview/do a dry run the day before to make sure you know where to go and how long it will take to get there. This will ensure you will arrive on time for the interview/be early","Reread your application form or CV, to refresh your memory and prepare for potential questions on them","Prepare in advance additional documents you may have been asked to bring to the interview/ safe pass/certification, so as to not be looking for these minutes before your interview","Prepare questions you would like to ask at the end of you interview, shows you have given some thought to the job/contract/duties etc","Mentally prepare, good night’s sleep, eat well before the interview so you’re not tired, hungry - there is less stress on you and you are ready for the interview"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe four ways you would prepare for a job interview, stating why in each case. Four valid points 4 x 2 marks (1m (way) + 1m (why))", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: Describe four ways you would prepare for a job interview, stating why in each case. Four valid points 4 x 2 marks (1m (way) + 1m (why)) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Carefully examine the job description, the more you can align yourself to these details, there is more chance of you getting this job. | 2. Research the company, their products or services online/in the newspapers/trade magazines. This shows you are interested in the business, you will have questions to ask the interviewer and you will know the answers to their questions. | 3. Do an interview preparation course/practice questions/do a mock interview with a friend or family member. This will help to improve your confidence, give you a chance to practice your interview. | 4. Interview etiquette - proper handshake/maintaining eye contact/sitting up straight/gestures/ diction, so you come across well in the interview. | 5. Pick appropriate clothes to wear for the interview/make sure your clothes are clean and appropriate for the interview/you should also be well groomed. This will make a good first impression. | 6. Plan your transport to the interview/do a dry run the day before to make sure you know where to go and how long it will take to get there. This will ensure you will arrive on time for the interview/be early. | 7. Reread your application form or CV, to refresh your memory and prepare for potential questions on them. | 8. Prepare in advance additional documents you may have been asked to bring to the interview/ safe pass/certification, so as to not be looking for these minutes before your interview. | 9. Prepare questions you would like to ask at the end of you interview, shows you have given some thought to the job/contract/duties etc. | 10. Mentally prepare, good night’s sleep, eat well before the interview so you’re not tired, hungry - there is less stress on you and you are ready for the interview. Each response must pair the preparation WAY with its matching WHY, 1+1.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                37
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c7di", topicId: "lcvp-link-modules-0-4", conceptId: "preparation-should-interviewer-prior-interview",
+    id: "lcvp-2022-cl-c7di", topicId: "lcvp-link-modules-0-1", conceptId: "c7di",
     section: "C", questionRef: "2022 CL Section C Q7(d)(i)",
-    stem: "A rigorous recruitment process is essential to select the right candidate for the job. Link Modules Examination Wednesday 4 May Morning 10:00 - 12:30",
+    stem: "A rigorous recruitment process is essential to select the right candidate for the job.",
     questionText: "What preparation should an interviewer do prior to an interview?",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 1m","answer":3,"ofParts":8,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Prepare interview questions that will allow them get to know the candidate","Make sure that all questions are fair, no bias etc","Ensure that interview arrangements - room, waiting room, signage are to standard, glass of water","Check all technology is working - for an online interview/recording the interview","Review candidates CV or application form so that they can ask relevant questions","Liaise with other interviewers to set questions, discuss the job description","Plan a time schedule so as to ask all candidates all questions","Prepare a scoring sheet"]} },
+    { id: "responses", kind: "anyN", verbatim: "What preparation should an interviewer do prior to an interview? 3 marks (3 x 1m)", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":3,"perOption":1,"options":["Prepare interview questions that will allow them get to know the candidate.","Make sure that all questions are fair, no bias etc.","Ensure that interview arrangements - room, waiting room, signage are to standard, glass of water.","Check all technology is working - for an online interview/recording the interview.","Review candidates CV or application form so that they can ask relevant questions.","Liaise with other interviewers to set questions, discuss the job description.","Plan a time schedule so as to ask all candidates all questions.","Prepare a scoring sheet."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                38
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2022 Common Level — © State Examinations Commission.",
-    id: "lcvp-2022-cl-c7dii", topicId: "lcvp-link-modules-0-1", conceptId: "necessary-interviewer-have-good-interviewing-skills",
+    id: "lcvp-2022-cl-c7dii", topicId: "lcvp-link-modules-0-1", conceptId: "c7dii",
     section: "C", questionRef: "2022 CL Section C Q7(d)(ii)",
-    stem: "A rigorous recruitment process is essential to select the right candidate for the job. Link Modules Examination Wednesday 4 May Morning 10:00 - 12:30",
+    stem: "A rigorous recruitment process is essential to select the right candidate for the job.",
     questionText: "Why is it necessary for an interviewer to have good interviewing skills?",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2m (1+1)","answer":3,"ofParts":4,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2022 allocation; complete source guidance retained"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["They will ask the right questions. They know to keep the questions relevant","Have the ability to put interviewees at ease, they will allow candidates to sell themselves","They know not to ask any discriminatory questions thus avoiding an appeal","They know how to ascertain if a candidate is appropriate for the job, meets criteria needed"]} },
+    { id: "responses", kind: "criterion", verbatim: "Why is it necessary for an interviewer to have good interviewing skills? 3 x 2m (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Why is it necessary for an interviewer to have good interviewing skills? 3 x 2m (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. They will ask the right questions. They know to keep the questions relevant. | 2. Have the ability to put interviewees at ease, they will allow candidates to sell themselves. | 3. They know not to ask any discriminatory questions thus avoiding an appeal. | 4. They know how to ascertain if a candidate is appropriate for the job, meets criteria needed.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                38
+          ],
+          "attribution": "SEC LCVP Link Modules 2022 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
