@@ -1,4 +1,136 @@
 {
+ "dcg-2017-HL-paper-secA-q1-art": {
+  "alt": "Question A-1 as printed. A photograph of a cube-shaped Bluetooth mini-speaker with its faces cut, beside an incomplete axonometric projection of a similar cube by the axonometric axes method, with the axes X, Y and Z, the elevation and plan shown in their required positions, and lines a-b and c-d drawn on the visible faces.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "ad1c89b7b876aa7c971a398e02169b6f",
+  "questionRef": "2017 HL Section A Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secA-q1-art.png",
+  "year": 2017
+ },
+ "dcg-2017-HL-paper-secA-q2-art": {
+  "alt": "Question A-2 as printed. A photograph of a female golfer beside the Ladies Professional Golf Association logo, and the drawing of the axis AA1, the directrix DD1 and the focus F of a similar parabola.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "db7b44e63f9b6ef1e9010210c21d5e84",
+  "questionRef": "2017 HL Section A Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secA-q2-art.png",
+  "year": 2017
+ },
+ "dcg-2017-HL-paper-secA-q3-art": {
+  "alt": "Question A-3 as printed. A photograph of a patio fireplace based on a regular dodecahedron, beside the elevation and plan of a similar solid with faces A and B marked and the given X1Y1 line.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "cc054b983c031e4295e4939cd6030c11",
+  "questionRef": "2017 HL Section A Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secA-q3-art.png",
+  "year": 2017
+ },
+ "dcg-2017-HL-paper-secA-q4-art": {
+  "alt": "Question A-4 as printed. A photograph of an archery target with an arrow, beside the plan, elevation and end view of the elliptical target and the line PA representing the plan of an arrow, with the point P.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "006b638880818175ee84c725ca6a1f2c",
+  "questionRef": "2017 HL Section A Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secA-q4-art.png",
+  "year": 2017
+ },
+ "dcg-2017-HL-paper-secB-q1-art": {
+  "alt": "Question B-1 as printed. A photograph of the 'Cloud Gate' sculpture, and Fig. B-1: the elevation of the semi-ellipse ABC (18m across, 6m and 4m heights) with the parabolic cut DEF (10m), the end view with a rotation arrow, the elliptical plan, and a 3D graphic of the sculpture viewed from underneath. Scale 1:100.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "e113b2f6ab284b5d0fd00109e3b3d372",
+  "questionRef": "2017 HL Section B Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secB-q1-art.png",
+  "year": 2017
+ },
+ "dcg-2017-HL-paper-secB-q2-art": {
+  "alt": "Question B-2 as printed. A photograph of a blue playground unit shaped like the bow of a boat, Fig. B-2 giving the plan and elevation of the two intersecting planes ABCD and ABEF, and a table of the horizontal and vertical coordinates of A, B, C, D, E and F. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "b1216e48e8bdf5a5573bd6006bccfcf9",
+  "questionRef": "2017 HL Section B Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secB-q2-art.png",
+  "year": 2017
+ },
+ "dcg-2017-HL-paper-secB-q3-art": {
+  "alt": "Question B-3 as printed. A photograph of a hexagonal display box, Fig. B-3: a pictorial view of the truncated hexagonal prism with surfaces A, B and C, its elevation (0.4m, 0.9m and 0.15m) and its hexagonal plan (0.4m side) against the picture plane PP, with the spectator point S. Scale 1:10.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "223a25a31844cb8c7fb3e5aefeef7be0",
+  "questionRef": "2017 HL Section B Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secB-q3-art.png",
+  "year": 2017
+ },
+ "dcg-2017-HL-paper-secC-q1-art": {
+  "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and photographs of a skier and a ski lift; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "710b081ab9e357ea5ba0c22f6aa8e4b3",
+  "questionRef": "2017 HL Section C Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q1-art.png",
+  "year": 2017
+ },
+ "dcg-2017-HL-paper-secC-q2-art": {
+  "alt": "Question C-2, Structural Forms, as printed. The option banner, a photograph of a sun canopy over an umpire's chair, and Fig. C-2: the elevation of the hyperbolic paraboloid canopy (C,A; B; D and E; 150), the end view of the generating parabola ABC (700 across, 200 deep), the plan (700 deep; 175, 700 and 175 across, with arcs of radius R and 60 degree angles at each end) and a pictorial view of the canopy. Scale 1:5.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "fbd3fe99f99373b7cc30d1c708c16342",
+  "questionRef": "2017 HL Section C Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q2-art.png",
+  "year": 2017
+ },
+ "dcg-2017-HL-paper-secC-q3-art": {
+  "alt": "Question C-3, Surface Geometry, as printed. The option banner, a photograph of a recycling bin with a sloping top, Fig. C-3(a): the elevation and plan of the transition piece made of surfaces A, B and C (360, 90, 120, 90, 360; 180; 60, 60 and 240), and Fig. C-3(b): its one-piece surface development. Scale 1:6.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "0b93c524002dabddbab25d5b650fc61f",
+  "questionRef": "2017 HL Section C Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q3-art.png",
+  "year": 2017
+ },
+ "dcg-2017-HL-paper-secC-q4-art": {
+  "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner, part (a)'s cam motion listed in three bullets beside a photograph of a quad bike with its camshaft circled, then part (b): photographs of a robotic gripper arm, its three romans, and Fig. C-4(b): the line diagram of the jaw AB (60) and link BC at 30 degrees, with the arrow X and the points C1 and C2 (120 and 60 apart). Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "47c05bc046afcd7fbaede8d72ca18b51",
+  "questionRef": "2017 HL Section C Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q4-art.png",
+  "year": 2017
+ },
+ "dcg-2017-HL-paper-secC-q5-art": {
+  "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of a monitor on a stand, Fig. C-5: dimensioned details of the eight numbered parts of a desk monitor stand with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Vertical Hinge Post, Parallel Arms, Top Cranked Arm, LCD Mount Bracket, Vertical Hinge Pin, Parallel Arm Pin and LCD Mount Pin with their quantities.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "2475a3f98a0e48a6ddbe0d3a0d51190c",
+  "questionRef": "2017 HL Section C Q5",
+  "src": "/exam-figures/dcg/markbank/dcg-2017-HL-paper-secC-q5-art.png",
+  "year": 2017
+ },
  "dcg-2018-HL-paper-secA-q1-art": {
   "alt": "Question A-1 as printed. A photograph of a steel bicycle shelter with a glass roof and bike stands, beside an incomplete dimetric projection drawn by the axonometric axes method: construction lines in red and green, the points Y and B marked, the axes X and Z, and a grey shaded horizontal plane.",
   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Higher Level — © State Examinations Commission",
