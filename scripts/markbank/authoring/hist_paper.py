@@ -64,6 +64,23 @@ def papers_dir():
     return os.path.join(ROOT, 'examiner-reports', 'history', 'papers')
 
 
+# The SEC's DEFERRED sittings of History, as the Paper Trail index lists them
+# (paperTrailData.ts, entries with "sitting": "deferred"): 2022 and 2023 only,
+# Later Modern only, both levels. The archive's deferredexams/ holds LC004 (the
+# Later Modern paper) for those two years and no LC096, and no History paper
+# at all for 2024 or 2025. Each is its own sitting: its own paper and scheme,
+# its own census paper ('Deferred'), cited "... — Deferred sitting".
+DEFERRED_PAPERS = [(2022, 'hl', 'lm'), (2022, 'ol', 'lm'), (2023, 'hl', 'lm'), (2023, 'ol', 'lm')]
+
+
+def deferred_paper_path(year, level, field):
+    """The deferred sitting's English paper, read straight from the archive."""
+    if (year, level, field) not in DEFERRED_PAPERS:
+        raise FileNotFoundError(f'no deferred History paper for {year} {level} {field}')
+    return os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year),
+                        f'LC004{"A" if level == "hl" else "G"}LP000EV.pdf')
+
+
 def _glyphs():
     table = {}
     for name in ('glyphmap.json', 'glyphmap-history.json'):
@@ -84,7 +101,10 @@ FURNITURE = re.compile(
     r'|Coimisi[uú]n na Scr[uú]duithe St[aá]it'
     r'|State Examinations Commission'
     r'|LEAVING CERTIFICATE EXAMINATION'
-    r'|HISTORY\b|FIELD OF STUDY'
+    # The paper's running head in capitals only: "history, this person has made
+    # France his prey" (2015 Ordinary, Victor Hugo on Napoleon III) is a line of
+    # the extract, and the case-blind match dropped it from the stem.
+    r'|(?-i:HISTORY)\b|FIELD OF STUDY'
     r'|Written examination|Pre-submitted Research Study Report'
     r'|Instructions to candidates|Use ONE of the following sets'
     r'|\d?\.?\s*(?:Usual instructions|Alternative instructions)'
@@ -92,16 +112,21 @@ FURNITURE = re.compile(
     r'|Answer one of the following|Answer the following'
     r'|Write a short paragraph on one of the following'
     r'|Study the documents? (?:opposite|below)'
-    r'|Read it and answer|Read the (?:extract|following)'
     r'|Recommended maximum time'
     r'|Section \d \(\d+ marks\)|Sections? \d(?: (?:&|and) \d)? \(\d+ marks\)'
     r'|(?:Ireland|Europe and the wider world)\s*:\s*Topics\b'
-    r'|OR \d\.|Do not hand up|It will not be returned'
+    r'|OR \d\.|Do not hand up|It will not be returned|Blank Page$'
     r'|Copyright notice|Acknowledgements?\b'
     r'|This examination paper|Any subsequent use|The Commission does not'
     r'|examination paper has been prepared|owner, and which may'
-    r'|accept liability|Monday|Tuesday|Wednesday|Thursday|Friday'
-    r'|\d{4}\.\s*M\d+|\d{4}L\d+|Page \d+$|\d{1,3}$)', re.I)
+    r'|accept liability'
+    # The examination's own date line ("WEDNESDAY, 16 JUNE – AFTERNOON, 2.00 –
+    # 4.50", "Wednesday 15th June"), and never a dated line of an extract:
+    # "Thursday, 11 October. He sailed west-south-west." (2011 Ordinary Early
+    # Modern, Columbus's log) was dropped as furniture. A date line names June
+    # and carries no sentence of its own.
+    r'|(?:Monday|Tuesday|Wednesday|Thursday|Friday)\b(?=[^.]*\b(?:JUNE|June)\b)(?![^.]*\.\s+[A-Z])'
+    r'|\d{4}\.\s*M\d+|\d{4}L\d+|Page \d+$|Page \d+ of \d+(?:\s*\[Turn over\]?)?$|\d{1,3}$)', re.I)
 
 # Where the examination material stops.
 END_OF_MATERIAL = re.compile(r'^(?:Copyright notice|Acknowledgements?)\b', re.I)
@@ -111,8 +136,11 @@ SECTION = re.compile(r'^SECTION\s+(\d)\s*:', re.I)
 # Early Modern paper heads its documents question "Europe: Topic 1" — the same
 # area, abbreviated — and the full-name-only pattern left that paper's DBQ with
 # no case-study topic at all.
+# 2016 Ordinary Later Modern prints "Ireland: Topic5", with no space.
 TOPIC = re.compile(
-    r'^(Ireland|Europe(?: and the wider world)?)\s*:\s*Topic\s+(\d)\s*$', re.I)
+    # 2011 Ordinary Later Modern names its documents question's topic with its
+    # field in front: "Later Modern Ireland: Topic 5".
+    r'^(?:(?:Later|Early) Modern )?(Ireland|Europe(?: and the wider world)?)\s*:\s*Topic\s*(\d)\s*$', re.I)
 # "A (30 marks)" heads an Ordinary topic's first priced part. 2021 Ordinary
 # Early Modern prints "B 30 marks)" for Europe Topic 1 — the opening bracket is
 # missing from the SEC's own page. It is a MISPRINT, recorded below rather than
@@ -122,29 +150,106 @@ PART = re.compile(r'^([ABC])\s*\((\d{2})\s*marks\)\s*$')
 MISPRINTS = {
     # (year, level, field): {printed line: the line the SEC meant}
     (2021, 'ol', 'em'): {'B 30 marks)': 'B (30 marks)'},
+    # 2018 Ordinary Later Modern, Ireland Topic 3 (page 6): the third part's
+    # head is printed "(40 marks)", its letter missing from the page itself
+    # (not only from the text layer). Every other topic on the paper prints
+    # "C (40 marks)", and the scheme prices "C - Max CM = 30 marks Max OE = 10
+    # marks" under the topic. Unread, the part's four questions ran on as
+    # part B's, and the census lost the ask.
+    (2018, 'ol', 'lm'): {'(40 marks)': 'C (40 marks)'},
+    # 2015 Ordinary Early Modern prints two part B heads without their letter:
+    # "30 marks)" over Europe Topic 3 B (page 11) and "(30 marks)" over Europe
+    # Topic 6 B (page 14), both checked on the rendered page. Every other
+    # topic prints "B (30 marks)".
+    (2015, 'ol', 'em'): {'30 marks)': 'B (30 marks)', '(30 marks)': 'B (30 marks)'},
+    # 2014 Ordinary Early Modern heads its documents question "Europe and the
+    # wider world: Topic2" on page 2, while its cover sets "Documents-based
+    # question (Ireland: Topic 2)", Section 2 offers Ireland Topics 1, 3, 4, 5,
+    # 6, Section 3 prints Europe Topic 2 as a unit of its own, and the case
+    # study is Meiler Magrath. The Irish edition prints "Éire: Topaic 2".
+    (2014, 'ol', 'em'): {'Europe and the wider world: Topic2': 'Ireland: Topic 2'},
+    # 2013 Ordinary prints two part heads without their letter, both checked
+    # on the rendered page: "(40 marks)" over Later Modern Ireland Topic 2 C
+    # (page 5) and "(30 marks)" over Early Modern Europe Topic 6 B (page 14).
+    (2013, 'ol', 'lm'): {'(40 marks)': 'C (40 marks)'},
+    (2013, 'ol', 'em'): {'(30 marks)': 'B (30 marks)'},
+    # 2010 Ordinary Later Modern numbers its last Section 2 topic "Ireland:
+    # Topic 5" (page 8), titled "Government, economy and society in the
+    # Republic of Ireland, 1949-1989": that is Topic 6. The cover sets the
+    # documents question on "Later Modern Ireland: Topic 5" and offers
+    # "Ireland: Topics 1, 2, 3, 4, 6" in Section 2, and the scheme heads the
+    # same answers "Ireland: Topic 6". The documents question's own head,
+    # "Later Modern Ireland: Topic 5" (page 2), is printed right and untouched.
+    (2010, 'ol', 'lm'): {'Ireland: Topic 5': 'Ireland: Topic 6'},
+    # The 2022 deferred Ordinary paper prints two question numbers without
+    # their stop, both checked on the rendered page: "4 Apart from security,
+    # ..." (Ireland Topic 3 A, page 6) and "3 Why did the astronauts have to
+    # work hard?" (Europe Topic 6 A, page 14). Unread, each question ran on
+    # into the one before it and the census lost an ask in each unit.
+    (2022, 'ol', 'lm', 'deferred'): {
+        '4 Apart from security, what was one other reason the animals were shot?':
+            '4. Apart from security, what was one other reason the animals were shot?',
+        '3 Why did the astronauts have to work hard?':
+            '3. Why did the astronauts have to work hard?'},
 }
 EXTRA = re.compile(r'^Answer the questions below if you are following the '
                    r'Alternative Instructions', re.I)
 # "1." / "1. (a) ..." — a numbered ask at the margin.
-QNUM = re.compile(r'^(\d{1,2})\.\s*(.*)$')
+# Not a time of day: 2020 Ordinary's diary extract logs "4.30 House filling
+# quickly." and "6.40 Parnell up.", which read as questions 4 and 6.
+QNUM = re.compile(r'^(\d{1,2})\.(?!\d)\s*(.*)$')
 LETTER = re.compile(r'^\(([a-f])\)\s*(.*)$')
 # The tariff the paper prints for an ask: "(20)", "(100)", "(40)".
 TARIFF = re.compile(r'\((\d{2,3})\)\s*$')
 # The SEC's attribution under a printed extract — never part of the ask.
 SOURCE_LINE = re.compile(r'^(?:Source|Adapted from)\s*:', re.I)
+# The same attribution printed without its "Source:" (2012 and 2014 Ordinary
+# Early Modern): "Henry A. Jefferies, The Irish Church and The Tudor
+# Reformations, Dublin: Four Courts Press, 2010." and "Georgio Vasari, Lives of
+# three Renaissance Artists, (London: Penguin Classics, 2006)." A line naming a
+# place and a publisher, then the year, and nothing after it.
+CITATION_LINE = re.compile(
+    r'^[A-Z][^,]{0,60},.*\b[A-Z][a-z]+: [^,]*\b(?:Press|Classics|Books|Publishing|Publications)\b'
+    r'[^,]*, \d{4}\)?\.?$')
 # The dash the SEC sets around a document label is not always the ASCII one:
 # 2022 uses U+2010 HYPHEN throughout, and the narrower class missed every
 # document head on that paper.
-DOCUMENT_HEAD = re.compile('^[\u2010-\u2015\\-]\\s*Document\\s+([AB])\\s*[\u2010-\u2015\\-]')
+# 2011 Higher Later Modern prints its first head bare, "Document A", and its
+# second framed, "-Document B-".
+DOCUMENT_HEAD = re.compile('^(?:[\u2010-\u2015\\-]\\s*Document\\s+([AB])\\s*[\u2010-\u2015\\-]|Document\\s+[AB]\\s*$)')
 # The SEC drops the definite article on some papers: "Case study to which
 # documents relate:". Requiring it left three Ordinary papers with no case
 # study on their documents cards.
 CASE_STUDY = re.compile(r'^Case study to which (?:the )?documents? relate', re.I)
 COVER_MARKS = re.compile(r'Written examination:\s*(\d{3})\s*marks', re.I)
+# The instruction an Ordinary part B or C prints over its four alternatives.
+# It is page furniture to the census (it is no ask), but it is the card's own
+# instruction, so it is kept against the unit.
+CHOICE_INSTRUCTION = re.compile(
+    r'^(?:Write a short paragraph on one of the following|Answer one of the following)\b.*:\s*$')
+
+
+class Line(tuple):
+    """One printed line: its page, where it starts and ends across the page,
+    its text, its top and bottom, the width of its first word, and the widest
+    space between two of its words. A plain tuple underneath, so the reader can
+    unpack the first three as it always has."""
+    __slots__ = ()
+    page = property(lambda self: self[0])
+    x0 = property(lambda self: self[1])
+    text = property(lambda self: self[2])
+    top = property(lambda self: self[3])
+    bottom = property(lambda self: self[4])
+    x1 = property(lambda self: self[5])
+    first_width = property(lambda self: self[6])
+    widest_space = property(lambda self: self[7])
 
 
 def lines(path):
-    """(page, x0, text) for every printed line, in reading order."""
+    """A `Line` for every printed line, in reading order.
+
+    The geometry rides along so a printed extract can keep its own paragraphs:
+    see `paragraphs`."""
     with pymupdf.open(path) as doc:
         for pno in range(doc.page_count):
             rows = []
@@ -156,12 +261,187 @@ def lines(path):
                 for row in rows:
                     if abs(row['mid'] - mid) <= 4.0:
                         row['w'].append((x0, x1, word))
+                        row['top'] = min(row['top'], y0)
+                        row['bottom'] = max(row['bottom'], y1)
                         break
                 else:
-                    rows.append({'mid': mid, 'w': [(x0, x1, word)]})
+                    rows.append({'mid': mid, 'w': [(x0, x1, word)],
+                                 'top': y0, 'bottom': y1})
             for row in sorted(rows, key=lambda r: r['mid']):
                 ws = sorted(row['w'])
-                yield pno + 1, ws[0][0], ' '.join(w for _a, _b, w in ws)
+                # A bullet is set apart from its item's first word on purpose,
+                # and so is a diary entry's date ("03/02/1829:" and then a tab
+                # to the entry): the space after a line's first word is the
+                # label's, not a column's, so only the spaces after it count.
+                body = ws[1:] if BULLET.fullmatch(ws[0][2]) else ws
+                spaces = [b[0] - a[1] for a, b in zip(ws[1:], ws[2:])]
+                yield Line((pno + 1, ws[0][0],
+                            ' '.join(w for _a, _b, w in ws),
+                            row['top'], row['bottom'], max(x for _a, x, _w in ws),
+                            body[0][1] - body[0][0] if body else 0.0,
+                            max(spaces, default=0.0)))
+
+
+# How a printed extract's paragraphs are found again; see `paragraphs`.
+#   PARAGRAPH_GAP     a gap above a line wider than this share of the line's
+#                     own height opens a new block (the leading between the
+#                     lines of one paragraph is about a fifth of it, the gap the
+#                     SEC leaves between instruction and extract more than all
+#                     of it; 2011-2012 Ordinary Early Modern leave half a line
+#                     between the instruction and each of the extract's
+#                     paragraphs alike);
+#   PARAGRAPH_INDENT  points a line must start in from its block's left edge
+#                     to count as indented;
+#   COLUMN_SPACE      a space between two words wider than this is a table's
+#                     column, not a word space (word spaces measure 2-6 points
+#                     on these papers).
+#   NARROW            see below.
+PARAGRAPH_GAP = 0.45
+PARAGRAPH_INDENT = 8.0
+COLUMN_SPACE = 12.0
+# A block whose longest line stops this share of the stem's measure short of
+# the stem's right edge is set line by line (verse, a list, a table).
+NARROW = 0.12
+BULLET = re.compile(r'[•●▪◦‣]')
+SENTENCE_END = re.compile(r'[.?!:;…][\'"’”»)\]]*$')
+
+
+def _short(prev, line, right):
+    """Whether `prev` stopped short where `line`'s first word would have fitted.
+
+    A line set by wrapping runs on until the next word will not fit, so a line
+    that stops earlier was ended on purpose: the last line of a paragraph, a
+    date over an entry, a heading, a line of verse, a row of a table — or, now
+    and then, a line the setter broke by hand in mid-sentence ("... in a
+    speech to the Reichstag," and then "11 December 1899, ...")."""
+    return right - prev.x1 > line.first_width + 0.3 * (prev.bottom - prev.top)
+
+
+def _opens_paragraph(prev, line, edge, right, verse):
+    """Whether the paper starts a new printed line at `line`."""
+    if BULLET.match(line.text):
+        return True                             # a bulleted item
+    if prev.widest_space > COLUMN_SPACE or line.widest_space > COLUMN_SPACE:
+        return True                             # a row of a printed table
+    indented = line.x0 > edge + PARAGRAPH_INDENT
+    finished = bool(SENTENCE_END.search(prev.text))
+    if verse:
+        # Every line of verse is its own line, bar the indented rest of an
+        # item whose first line is unfinished.
+        return not (indented and not finished)
+    if _short(prev, line, right) and (finished or indented):
+        # The paragraph above ended there. A short line that ends in mid-
+        # sentence and is followed by a line at the edge is a hand-made wrap,
+        # not a paragraph, so it runs on.
+        return True
+    # A first-line indent opens a paragraph only after a finished sentence;
+    # after an unfinished one the indent is a hanging indent, the rest of an
+    # item that opened at the edge ("03/02/1829: I have been appointed ...").
+    return indented and finished
+
+
+def paragraphs(stem_lines):
+    """The printed lines of an extract as the paper sets them out, as text.
+
+    The instruction and the extract are two blocks, a blank line between
+    them. Where the paper also leaves a gap between the extract's own
+    paragraphs (2010-2012 Ordinary), each paragraph still opens a new line,
+    as it does on every paper from 2013, and the one blank line stays the
+    instruction's."""
+    blocks = ['\n'.join(' '.join(' '.join(t for t, _l in para).split()) for para in block)
+              for block in layout(stem_lines) if block]
+    if len(blocks) > 2:
+        blocks = [blocks[0], '\n'.join(blocks[1:])]
+    return '\n\n'.join(blocks)
+
+
+def layout(stem_lines):
+    """The printed lines of an extract as the paper sets them out.
+
+    An Ordinary Part A opens with the SEC's own instruction ("In this edited
+    extract, ... Read it and answer the questions which follow."), leaves a gap,
+    and then prints the extract: paragraphs that open on an indent, dated diary
+    entries, bulleted items, now and then a table. Joined as one run of words,
+    the instruction ran straight into the extract and the extract's paragraphs
+    into each other. Nothing is added or taken away here: every word is the
+    word the reader lifted, in order, and only the breaks the page prints come
+    back — a blank line where the paper leaves a gap, a new line where it
+    starts one.
+
+    `stem_lines` are (text, Line) pairs: the text is the reader's own, misprint
+    repairs and all; the Line says where it sat. The edges are measured within
+    the lines between two gaps, so an extract set in from the margin as a whole
+    is one block, not one paragraph to a line. A page turn is not a gap.
+
+    Returns the blocks, each a list of paragraphs, each a list of the (text,
+    Line) pairs it was set from."""
+    blocks = []
+    for text, line in stem_lines:
+        prev = blocks[-1][-1][1] if blocks else None
+        if (prev is None or (line.page == prev.page and line.top - prev.bottom
+                             > PARAGRAPH_GAP * (prev.bottom - prev.top))):
+            blocks.append([])
+        blocks[-1].append((text, line))
+    stem_edge = min(line.x0 for _t, line in stem_lines)
+    stem_right = max(line.x1 for _t, line in stem_lines)
+    out = []
+    for block in blocks:
+        edge = min(line.x0 for _t, line in block)
+        right = max(line.x1 for _t, line in block)
+        # Verse, and lists set line by line: a block of three or more lines
+        # whose longest stops well short of the measure the rest of the stem
+        # is set to, or whose lines mostly stop short of its longest and mostly
+        # in mid-sentence. Its right edge is then no measure of where a line
+        # should have wrapped, so each printed line stands as the paper sets
+        # it. (Prose set as a run of one-line paragraphs stops short too, but
+        # at the end of a sentence each time, and runs to the full measure.)
+        shorts = [a[1] for a, b in zip(block, block[1:])
+                  if _short(a[1], b[1], right)]
+        unfinished = [x for x in shorts if not SENTENCE_END.search(x.text)]
+        narrow = stem_right - right > NARROW * (stem_right - stem_edge)
+        verse = len(block) >= 3 and (narrow or (
+            2 * len(shorts) > len(block) - 1
+            and 2 * len(unfinished) > len(shorts)))
+        paras = []
+        for i, (text, line) in enumerate(block):
+            if i == 0 or _opens_paragraph(block[i - 1][1], line, edge, right,
+                                          verse):
+                paras.append([])
+            paras[-1].append((text, line))
+        out.append(paras)
+    return out
+
+
+def _numbered_extract(printed_lines, misprints):
+    """Line indices of an extract's own numbered paragraphs.
+
+    2013 Ordinary Early Modern prints Sir John Davies's letter as five
+    numbered points ("1. First the land assigned to the natives ...") above
+    its five questions ("1. What proclamation did Sir John Davies make ...?").
+    Read as questions, the letter's points opened Q1-Q5 and the real questions
+    ran on behind them. A numbered line is the extract's when it sits between
+    a Part A head and that unit's "Source:" line and questions follow the
+    source line, before the unit's next head."""
+    texts = [misprints.get(' '.join(p[2].split()), ' '.join(p[2].split())) for p in printed_lines]
+    head = re.compile(r'^(?:[ABC]\s*\(\d{2}\s*marks\)\s*$)')
+    out = set()
+    start = None
+    for i, text in enumerate(texts):
+        if head.match(text) or SECTION.match(text) or TOPIC.match(text) or EXTRA.match(text):
+            start = i if (text.startswith('A') or EXTRA.match(text)) else None
+            continue
+        if start is not None and SOURCE_LINE.match(text):
+            numbered = [j for j in range(start + 1, i) if QNUM.match(texts[j])]
+            after = []
+            for j in range(i + 1, len(texts)):
+                if head.match(texts[j]) or SECTION.match(texts[j]) or TOPIC.match(texts[j]):
+                    break
+                if QNUM.match(texts[j]):
+                    after.append(j)
+            if numbered and after:
+                out.update(numbered)
+            start = None
+    return out
 
 
 class HistPaper:
@@ -173,10 +453,11 @@ class HistPaper:
     every topic, so a bare question number is not an address here.
     """
 
-    def __init__(self, year, level, field):
+    def __init__(self, year, level, field, sitting=None):
         self.year, self.level, self.field = year, level, field
-        self.path = os.path.join(papers_dir(),
-                                 f'{year}-{level}-{field}-paper.pdf')
+        self.sitting = sitting
+        self.path = (deferred_paper_path(year, level, field) if sitting == 'deferred'
+                     else os.path.join(papers_dir(), f'{year}-{level}-{field}-paper.pdf'))
         if not os.path.exists(self.path):
             raise FileNotFoundError(self.path)
         self.asks = {}
@@ -189,11 +470,14 @@ class HistPaper:
         self.case_title = None
         self.document_pages = []
         self.cover_marks = None
+        self.instructions = {}
+        self.tables = {}
         self._read()
 
     # -- reading ---------------------------------------------------------
     def _read(self):
-        misprints = MISPRINTS.get((self.year, self.level, self.field), {})
+        misprints = MISPRINTS.get((self.year, self.level, self.field)
+                                  + ((self.sitting,) if self.sitting else ()), {})
         section = None          # '1' | '2' | '3'
         topic = None            # int
         part = None             # 'A' | 'B' | 'C' | None
@@ -238,10 +522,17 @@ class HistPaper:
             token = f'{section} Topic {topic}'
             return f'{token} {part}' if part else token
 
-        for pno, _x, raw in lines(self.path):
+        printed_lines = list(lines(self.path))
+        numbered_extract = _numbered_extract(printed_lines, misprints)
+        for index, printed in enumerate(printed_lines):
+            pno, _x, raw = printed[:3]
             page = pno
             line = ' '.join(raw.split())
             line = misprints.get(line, line)
+            if index in numbered_extract and not stem_closed:
+                # A numbered paragraph of the extract itself, not a question.
+                stem_buf.append((line, printed))
+                continue
             if not line:
                 continue
             if self.cover_marks is None:
@@ -329,7 +620,14 @@ class HistPaper:
                 self.case_title = line
                 want_case = False
                 continue
+            if (part in ('B', 'C') and cur is not None
+                    and CHOICE_INSTRUCTION.match(line)):
+                self.instructions.setdefault(cur[0], line)
             if FURNITURE.match(line):
+                continue
+            if (CITATION_LINE.match(line) and (part == 'A' or extra)
+                    and cur is None and not stem_closed):
+                stem_closed = True
                 continue
             if SOURCE_LINE.match(line):
                 # The SEC's attribution under a printed extract, and it CLOSES
@@ -384,14 +682,26 @@ class HistPaper:
                 cur = (unit_key(), int(m.group(1)), None, None)
                 buf = [m.group(2)]
                 if part == 'A' and stem_buf:
-                    self.stems[unit_key()] = ' '.join(
-                        ' '.join(stem_buf).split())
+                    if any(line.widest_space > COLUMN_SPACE for _t, line in stem_buf):
+                        # A unit set on a printed TABLE (the election charts of
+                        # 2015, 2016, 2018 and 2020 Ordinary). Its rows read as
+                        # text are a run of words ("Fianna Fáil Eamon de Valera
+                        # 69 77"), never a table, so the stem is the printed
+                        # instruction alone, and the chart's own lines (its
+                        # title, header and rows) are kept to be cropped from
+                        # the page as the card's question figure (hist_figures).
+                        first = layout(stem_buf)[0][0]
+                        self.stems[unit_key()] = ' '.join(
+                            ' '.join(t for t, _l in first).split())
+                        self.tables[unit_key()] = [l for _t, l in stem_buf[len(first):]]
+                    else:
+                        self.stems[unit_key()] = paragraphs(stem_buf)
                     stem_buf = []
                 continue
             if cur is not None:
                 buf.append(line)
             elif (part == 'A' or extra) and not stem_closed:
-                stem_buf.append(line)
+                stem_buf.append((line, printed))
         flush()
         # Every Ordinary A part carries the printed extract its questions ask
         # about; the stem is recorded against the unit, not the leaf, because

@@ -8,6 +8,14 @@ import { combinedListeningAssessment, irishMarks } from '../components/MarkBank/
 import { examTopicIdsForQuestion, curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
 import { tariffReconciles } from '../types/markBank';
 import { PAPERS_PENDING_FULL_REVIEW } from './fixtures/irishArchiveProgress';
+import { irishRowScoreId } from '../components/MarkBank/irishScoring';
+// Foundation answers are claimable rows (foundationAnswers.ts): a printed mark is reached by claiming the row the scheme prices at it.
+const claimAt = (card: (typeof ALL_CARDS)[number], marks: number) => {
+  if (card.rubric.system !== 'irish') throw new Error(card.id);
+  const part = card.rubric.criteria[0].allocation!.parts[0];
+  const row = part.rows.find(candidate => candidate.marks === marks);
+  return row ? irishMarks(card, { [irishRowScoreId('answer', part.id, row.id)]: 1 }) : 0;
+};
 
 const cards=ALL_CARDS.filter(c=>c.year===2022);
 const get=(key:string)=>authored.cards.find(c=>c.atlasQuestionId===key)!;
@@ -37,8 +45,8 @@ describe('2022 Foundation independently reviewed boundaries',()=>{
     expect(get('A-5b').criteria[0]).toMatchObject({maxMarks:8,permittedMarks:[0,6,8],guidance:['28 céim Celsius: 8 marc. 22 céim Celsius: 6 mharc.']});
     for(const [id,partial,max] of [['1b',5,7],['5b',6,8]] as const) {
       const card=cards.find(c=>c.id===`irish-2022-fl-a-${id}`)!;
-      expect(irishMarks(card,{'irish:answer':partial})).toBe(partial);
-      expect(irishMarks(card,{'irish:answer':max})).toBe(max);
+      expect(claimAt(card,partial)).toBe(partial);
+      expect(claimAt(card,max)).toBe(max);
     }
     expect(authored.cards.filter(c=>c.atlasQuestionId.startsWith('A-')).map(c=>c.criteria[0].guidance[0])).toEqual([
       'Múinteoir ceoil = an dara pictiúr','Páirt i scannáin mhóra: 7 marc. Páirt i Ros na Rún: 5 mharc.',

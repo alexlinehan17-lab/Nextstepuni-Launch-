@@ -168,19 +168,19 @@
     "refsHash": "d22e9502e212efb6"
   },
   "computer-science": {
-    "cards": 336,
-    "contentHash": "a98238edb379ba3a",
-    "coveragePct": 82.2,
-    "covered": 398,
+    "cards": 582,
+    "contentHash": "023d1dc407016e6e",
+    "coveragePct": 100.0,
+    "covered": 620,
     "excluded": 0,
-    "leaves": 484,
-    "open": 86,
+    "leaves": 620,
+    "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 20,
-      "hash": "4eb8d8bb7c8ce50b"
+      "count": 26,
+      "hash": "73a50648a2aeefe2"
     },
-    "refsHash": "ba197c3dcfdb616b"
+    "refsHash": "6dcc84c8a1d24027"
   },
   "construction-studies": {
     "cards": 1261,
@@ -243,19 +243,19 @@
     "refsHash": "b8748a474c6a2507"
   },
   "dcg": {
-    "cards": 545,
-    "contentHash": "36de9f64f1b6b8b9",
-    "coveragePct": 100.0,
-    "covered": 478,
+    "cards": 627,
+    "contentHash": "d22f5b28ca051c4c",
+    "coveragePct": 53.6,
+    "covered": 547,
     "excluded": 0,
-    "leaves": 478,
-    "open": 0,
+    "leaves": 1021,
+    "open": 474,
     "orphans": 0,
     "papers": {
       "count": 66,
       "hash": "9c8982e337e2c8b1"
     },
-    "refsHash": "f905271c383d21ea"
+    "refsHash": "9f9802673f3a0d7f"
   },
   "dutch": {
     "cards": 42,
@@ -273,34 +273,34 @@
     "refsHash": "4bab4f79d784d94c"
   },
   "economics": {
-    "cards": 853,
-    "contentHash": "71508a355e28403e",
+    "cards": 2297,
+    "contentHash": "ac3c362030d1724a",
     "coveragePct": 100.0,
-    "covered": 792,
-    "excluded": 1,
-    "leaves": 793,
+    "covered": 2268,
+    "excluded": 0,
+    "leaves": 2268,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 12,
-      "hash": "9af332fc7210be3d"
+      "count": 33,
+      "hash": "fd2ae3c6caa8ebea"
     },
-    "refsHash": "02e4590c91471059"
+    "refsHash": "503f614d5e735dc3"
   },
   "engineering": {
-    "cards": 554,
-    "contentHash": "be3d66f30f1d86b3",
-    "coveragePct": 83.2,
-    "covered": 679,
+    "cards": 2269,
+    "contentHash": "b4bd45ce5785d0e7",
+    "coveragePct": 100.0,
+    "covered": 2807,
     "excluded": 0,
-    "leaves": 816,
-    "open": 137,
+    "leaves": 2807,
+    "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 10,
-      "hash": "d6f8e4ccadef7bbf"
+      "count": 62,
+      "hash": "2aec42953a94588e"
     },
-    "refsHash": "9804a181ceb67113"
+    "refsHash": "54b019b55d441af5"
   },
   "english": {
     "cards": 2685,
@@ -393,19 +393,19 @@
     "refsHash": "39be4a22419bc8c6"
   },
   "history": {
-    "cards": 749,
-    "contentHash": "5a5803ac3a0f3bfe",
+    "cards": 4943,
+    "contentHash": "85712f0b53bc9068",
     "coveragePct": 100.0,
-    "covered": 749,
-    "excluded": 681,
-    "leaves": 1430,
+    "covered": 4943,
+    "excluded": 0,
+    "leaves": 4943,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 20,
-      "hash": "cb5c8677ec1bca17"
+      "count": 66,
+      "hash": "c5dad2eeaf2c2bfd"
     },
-    "refsHash": "eab7907b0ead2f31"
+    "refsHash": "1a23027de607a73b"
   },
   "home-economics": {
     "cards": 549,
@@ -438,19 +438,19 @@
     "refsHash": "65d66ad3a304022c"
   },
   "irish": {
-    "cards": 2063,
-    "contentHash": "c5de35ad49aa8b96",
+    "cards": 2567,
+    "contentHash": "ee829dbea48536f0",
     "coveragePct": 100.0,
-    "covered": 2063,
+    "covered": 2567,
     "excluded": 0,
-    "leaves": 2063,
+    "leaves": 2567,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 30,
       "hash": "9d84f99397f0fb11"
     },
-    "refsHash": "6a8b2e4e44d31035"
+    "refsHash": "c816a15dd228a2d8"
   },
   "italian": {
     "cards": 350,
@@ -678,19 +678,19 @@
     "refsHash": "c737847455bc4dc6"
   },
   "religious-education": {
-    "cards": 288,
-    "contentHash": "674bdf82cd359c98",
+    "cards": 786,
+    "contentHash": "50593cccbc5dc4bb",
     "coveragePct": 100.0,
-    "covered": 288,
+    "covered": 786,
     "excluded": 0,
-    "leaves": 288,
+    "leaves": 786,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 10,
-      "hash": "df029832e957a46e"
+      "count": 31,
+      "hash": "138b8842e0c6dc51"
     },
-    "refsHash": "608205b9e7e5d4b8"
+    "refsHash": "3cd697c2c27583ae"
   },
   "romanian": {
     "cards": 50,

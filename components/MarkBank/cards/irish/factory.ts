@@ -57,8 +57,29 @@ import higher2014P1 from './higher-2014-p1-authored.json';
 import higher2014P2 from './higher-2014-p2-authored.json';
 import ordinary2014P1 from './ordinary-2014-p1-authored.json';
 import ordinary2014P2 from './ordinary-2014-p2-authored.json';
+import higher2013P1 from './higher-2013-p1-authored.json';
+import higher2013P2 from './higher-2013-p2-authored.json';
+import ordinary2013P1 from './ordinary-2013-p1-authored.json';
+import ordinary2013P2 from './ordinary-2013-p2-authored.json';
+import higher2012P1 from './higher-2012-p1-authored.json';
+import higher2012P2 from './higher-2012-p2-authored.json';
+import ordinary2012P1 from './ordinary-2012-p1-authored.json';
+import ordinary2012P2 from './ordinary-2012-p2-authored.json';
+import ordinary2011Aural from './ordinary-2011-aural-authored.json';
+import ordinary2011P1 from './ordinary-2011-p1-authored.json';
+import ordinary2011P2 from './ordinary-2011-p2-authored.json';
+import higher2011Aural from './higher-2011-aural-authored.json';
+import higher2011P1 from './higher-2011-p1-authored.json';
+import higher2011P2 from './higher-2011-p2-authored.json';
+import ordinary2010Aural from './ordinary-2010-aural-authored.json';
+import ordinary2010P1 from './ordinary-2010-p1-authored.json';
+import ordinary2010P2 from './ordinary-2010-p2-authored.json';
+import higher2010Aural from './higher-2010-aural-authored.json';
+import higher2010P1 from './higher-2010-p1-authored.json';
+import higher2010P2 from './higher-2010-p2-authored.json';
 import { irishAnswersFor, stepSingleAnswerLadders } from './answers';
-import { irishTariffsFor, stepPrintedScales } from './tariffs';
+import { splitSlashRows } from './slashSplits';
+import { closeBrackets, irishTariffsFor, stepPrintedScales } from './tariffs';
 import { resolveCurriculumSpecification } from '../../../../curriculumRegistry';
 
 type IrishLevel = 'higher' | 'ordinary';
@@ -68,7 +89,8 @@ interface AuthoredIrishCard {
   year: number;
   level: IrishLevel;
   paper: 1 | 2;
-  section: '1' | '2';
+  /** The paper's number; 'A' for 2010-2011's separate aural paper (scripts/markbank/paperIndex.mjs). */
+  section: '1' | '2' | 'A';
   questionRef: string;
   /** The lead-in the paper prints before the question proper, e.g. 2B's "Níl cead aon ábhar …" restriction. */
   stem?: string;
@@ -91,7 +113,7 @@ interface AuthoredIrishCard {
 }
 
 // Paper-reviewed components ship as their own files beside the legacy census output.
-const DATA = [...authored.cards, ...higher2026P1.cards, ...higher2026P2.cards, ...ordinary2026P1.cards, ...ordinary2026P2.cards, ...higher2025P2.cards, ...ordinary2025P2.cards, ...ordinary2024P2.cards, ...higher2023P2.cards, ...ordinary2023P2.cards, ...ordinary2022P2.cards, ...higher2022P2.cards, ...higher2021P2.cards, ...ordinary2021P2.cards, ...higher2020P1.cards, ...higher2020P2.cards, ...ordinary2020P1.cards, ...ordinary2020P2.cards, ...higher2019P1.cards, ...higher2019P2.cards, ...ordinary2019P1.cards, ...ordinary2019P2.cards, ...higher2018P1.cards, ...higher2018P2.cards, ...ordinary2018P1.cards, ...ordinary2018P2.cards, ...higher2017P1.cards, ...higher2017P2.cards, ...ordinary2017P1.cards, ...ordinary2017P2.cards, ...higher2016P1.cards, ...higher2016P2.cards, ...ordinary2016P1.cards, ...ordinary2016P2.cards, ...higher2015P1.cards, ...higher2015P2.cards, ...ordinary2015P1.cards, ...ordinary2015P2.cards, ...higher2014P1.cards, ...higher2014P2.cards, ...ordinary2014P1.cards, ...ordinary2014P2.cards] as AuthoredIrishCard[];
+const DATA = [...authored.cards, ...higher2026P1.cards, ...higher2026P2.cards, ...ordinary2026P1.cards, ...ordinary2026P2.cards, ...higher2025P2.cards, ...ordinary2025P2.cards, ...ordinary2024P2.cards, ...higher2023P2.cards, ...ordinary2023P2.cards, ...ordinary2022P2.cards, ...higher2022P2.cards, ...higher2021P2.cards, ...ordinary2021P2.cards, ...higher2020P1.cards, ...higher2020P2.cards, ...ordinary2020P1.cards, ...ordinary2020P2.cards, ...higher2019P1.cards, ...higher2019P2.cards, ...ordinary2019P1.cards, ...ordinary2019P2.cards, ...higher2018P1.cards, ...higher2018P2.cards, ...ordinary2018P1.cards, ...ordinary2018P2.cards, ...higher2017P1.cards, ...higher2017P2.cards, ...ordinary2017P1.cards, ...ordinary2017P2.cards, ...higher2016P1.cards, ...higher2016P2.cards, ...ordinary2016P1.cards, ...ordinary2016P2.cards, ...higher2015P1.cards, ...higher2015P2.cards, ...ordinary2015P1.cards, ...ordinary2015P2.cards, ...higher2014P1.cards, ...higher2014P2.cards, ...ordinary2014P1.cards, ...ordinary2014P2.cards, ...higher2013P1.cards, ...higher2013P2.cards, ...ordinary2013P1.cards, ...ordinary2013P2.cards, ...higher2012P1.cards, ...higher2012P2.cards, ...ordinary2012P1.cards, ...ordinary2012P2.cards, ...ordinary2011Aural.cards, ...ordinary2011P1.cards, ...ordinary2011P2.cards, ...higher2011Aural.cards, ...higher2011P1.cards, ...higher2011P2.cards, ...ordinary2010Aural.cards, ...ordinary2010P1.cards, ...ordinary2010P2.cards, ...higher2010Aural.cards, ...higher2010P1.cards, ...higher2010P2.cards] as AuthoredIrishCard[];
 
 /** Listening and reading cards carry the scheme's exact answers; cut them
  *  into rows where the parts add up to the criterion (cards/irish/answers.ts).
@@ -102,10 +124,13 @@ const EXACT_ANSWER_CARD = /Cluastuiscint|Léamhthuiscint|Paper 1 Cuid [ABC] · (
  *  their Eolas tariff is cut into rows by cards/irish/tariffs.ts, as is the last
  *  reading question's composite tariff when the answer cutter cannot read it.
  *  Reviewed cards cite the paper's own Irish headings (Prós, Filíocht, Litríocht),
- *  the generated corpus the English ones; both name the same printed questions. */
-const LITERATURE_CARD = /Prose|Poetry|Literature|Prós|Filíocht|Litríocht/;
+ *  the generated corpus the English ones; both name the same printed questions. Before 2012 the Higher Páipéar 2 ends
+ *  with Stair na Gaeilge, priced as the literature is ("13 + 12 (Eolas)"). */
+const LITERATURE_CARD = /Prose|Poetry|Literature|Prós|Filíocht|Litríocht|Stair na Gaeilge/;
 const COMPOSITE_READING = /Léamhthuiscint .* Ceist 6/;
-const PRICED = /\d+\s*m?h?arc\b/;
+/** A criterion prices its answer where its guidance prints marks, "= 13 mharc", "(14 marc)", or (2012 Higher 2A and 2B, whose scheme
+ *  prints only its note after both) "an marc as 25 (Ábhar)". */
+const PRICED = /\d+\s*m?h?arc\b|\ban marc as \d+ \(Ábhar\)/;
 
 /** The 2022 and 2024 Higher prose routes (irish_higher_routes.py) open each Eolas criterion with the whole of the
  *  section's first scheme page: its notes on the 25 + 5 split and its band table, ending at the last band
@@ -251,7 +276,8 @@ const cloneCriteria = (card: AuthoredIrishCard): IrishCriterion[] =>
   card.criteria.map(criterion => {
     const found = primaryAllocation(card, criterion) ?? derivedAllocation(card, criterion)
       ?? (pricedAward(criterion) ? freagraiAllocation(criterion) : undefined);
-    const allocation = found && stepPrintedScales(stepSingleAnswerLadders(found), criterion.guidance);
+    const allocation = found && splitSlashRows(card.id, criterion.id, closeBrackets(stepPrintedScales(stepSingleAnswerLadders(found),
+      criterion.guidance, card.criteria.flatMap(sibling => sibling.guidance)), criterion.guidance));
     return {
       ...criterion,
       permittedMarks: [...criterion.permittedMarks],

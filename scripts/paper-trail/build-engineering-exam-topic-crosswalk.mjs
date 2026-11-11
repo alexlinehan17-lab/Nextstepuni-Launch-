@@ -10,6 +10,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -339,15 +340,60 @@ for (const paper of additions) {
   }
 }
 
+// Source-reviewed Mark Bank cards supplement the factual reference
+// associations, the way Construction Studies' do: each sitting's paired review
+// (scripts/markbank/atlas-reviews/engineering-<year>-<level>.json) names, per
+// printed question, every topic its cards' content needs, and those join the
+// question's reference topics. Nothing is removed and no question is added;
+// a review whose source PDFs have changed stops the build.
+const reviewedTopics = new Map();
+const reviewDirectory = path.join(ROOT, 'scripts/markbank/atlas-reviews');
+for (const name of fs.readdirSync(reviewDirectory)
+  .filter(name => name.startsWith(`${SUBJECT_ID}-`) && name.endsWith('.json'))) {
+  const review = readJson(path.join(reviewDirectory, name));
+  if (review.subjectId !== SUBJECT_ID || review.sitting !== 'main' || review.paperKey !== 'single') {
+    throw new Error(`Unsupported Engineering source identity: ${name}`);
+  }
+  for (const [file, hash] of Object.entries(review.sourceHashes)) {
+    const full = path.join(ROOT, file);
+    // The PDFs are gitignored; without the corpus the hash cannot be checked
+    // here, and markBankTopicAtlas.test.ts checks it wherever the corpus is.
+    if (fs.existsSync(full)
+      && createHash('sha256').update(fs.readFileSync(full)).digest('hex') !== hash) {
+      throw new Error(`Engineering source changed: ${file}`);
+    }
+  }
+  for (const question of review.questions) {
+    const paper = localPapers.find(p => p.level === review.level && p.year === review.year
+      && p.lang === review.lang && p.paperKey === review.paperKey && p.fileid === question.fileid);
+    if (!paper?.q.some(q => q.n === question.n)) {
+      throw new Error(`Missing original Engineering anchor: ${name} Q${question.n}`);
+    }
+    const indexes = question.topicIds.map(id => {
+      const index = topicIndex.get(id);
+      if (index === undefined || allTopics[index].level !== review.level) {
+        throw new Error(`Invalid Engineering topic in ${name}: ${id}`);
+      }
+      return index;
+    });
+    if (!indexes.length) throw new Error(`Empty Engineering topic union: ${name} Q${question.n}`);
+    const key = logicalIdentity(review.level, review.year, question.n);
+    reviewedTopics.set(key, [...new Set([...(reviewedTopics.get(key) ?? []), ...indexes])]);
+  }
+}
+
 const logicalEnglishPapers = localPapers.filter(paper => paper.lang === 'ev');
 const questionMappings = [];
+let reviewedTopicAdditions = 0;
 for (const paper of logicalEnglishPapers) {
   for (const question of paper.q) {
     const key = logicalIdentity(paper.level, paper.year, question.n);
-    const indexes = exactTopicsByCard.get(key);
-    if (!indexes?.length) {
+    const exact = exactTopicsByCard.get(key);
+    if (!exact?.length) {
       throw new Error(`${key}: local Engineering card is absent from the audited hierarchy`);
     }
+    const indexes = [...new Set([...exact, ...(reviewedTopics.get(key) ?? [])])];
+    reviewedTopicAdditions += indexes.length - exact.length;
     questionMappings.push([
       paper.level === 'higher' ? 'h' : 'o',
       paper.year - 2000,
@@ -469,6 +515,7 @@ const summary = {
   sourceBlockedBreakdown,
   matchedLogicalCards: exactTopicsByCard.size,
   matchedQuestionTopicLinks,
+  reviewedQuestionTopicAdditions: reviewedTopicAdditions,
   retainedLocalLogicalCards: 0,
   localPaperVariants: localPapers.length,
   localPhysicalMappings: physicalMappings,

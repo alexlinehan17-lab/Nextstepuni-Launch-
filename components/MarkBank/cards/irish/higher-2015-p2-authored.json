@@ -338,7 +338,8 @@
     "literatureRouteCardIds": [
       "irish-2015-hl-p2-prose-2a-caca-milis",
       "irish-2015-hl-p2-prose-2a-an-lasair-choille",
-      "irish-2015-hl-p2-prose-2b",
+      "irish-2015-hl-p2-prose-2b-scannan",
+      "irish-2015-hl-p2-prose-2b-drama",
       "irish-2015-hl-p2-poetry-3a",
       "irish-2015-hl-p2-poetry-3b",
       "irish-2015-hl-p2-literature-4-a",
@@ -360,8 +361,8 @@
       "Reading (2015: Léamhthuiscint A and B both compulsory): all twelve questions of both passages are carded as whole questions; each printed part is also a practice card at its published tariff. A 1(b)(ii) and B 2(b)(i) (“{1 mharc + 1 mharc}”) and A 5(b)(i) (“{2 mharc} (2 phointe eolais) {1 mharc + 1 mharc}”) price two independent one-mark answers and expose one-mark slots; every (a) part of Q1–5 (2 mharc + 1 mharc) and both 6(a) stay whole as 0/2/3.",
       "A 6(b) prices an opinion 2 and two reasons with an example each (Cúis 2 + Sampla 3 = 5, twice); B 6(b) the genre 2 and two traits with an example each (Tréith 2 + Sampla 3 = 5, twice). The 5s are accepted only with the opinion or the correctly named genre, so neither 6(b) is split into practice slots (the 2017 B 6(b) shape). Both must be in the candidate’s own words.",
       "Single-answer parts allow only the mark values the scheme prints for them (0, the printed partials and the full tariff).",
-      "Prose: 2A prints two prescribed texts (the film Cáca Milis or the play An Lasair Choille), a card each as in 2018; 2B prints an optional film or an optional play, one card carrying both alternatives. Poetry 3A (Colscaradh) and 3B (an optional modern poem) and the six Q4 options are one card each; the optional text itself is open content chosen inside one route.",
-      "2B is one card for two printed alternatives the scheme prices differently (the film “Tréithe agus Léiriú (25)”, capped at 14 where one trait is discussed; the play “Príomhthéama (2) = Forbairt (23)”). Its Eolas criterion is one 25-mark judgement led by the scheme’s choice line, with both pricings in its guidance; a single criterion cannot carry alternative splits."
+      "Prose: 2A prints two prescribed texts (the film Cáca Milis or the play An Lasair Choille), a card each as in 2018; 2B prints an optional film or an optional play, a card each, as the scheme marks them differently. Poetry 3A (Colscaradh) and 3B (an optional modern poem) and the six Q4 options are one card each; the optional text itself is open content chosen inside one route.",
+      "2B's two printed alternatives are a card each (coordinator ruling, batch 6; BRIEF rule 5: the scheme marks them differently): the film “Tréithe agus Léiriú (25)”, capped at 14 where one trait is discussed, and the play “Príomhthéama (2) = Forbairt (23)”. Each card's Eolas criterion is led by the scheme's choice line and closes with its note “Ní mór don Scrúdaitheoir an marc ar eolas as 25 marc …”, printed once after both alternatives and governing either; both file under the one optional-prose Atlas heading."
     ],
     "openIssues": [],
     "caveats": [
@@ -374,7 +375,7 @@
       "Scheme misprints kept as printed in the guidance: A 1(a) answer “as gach cearn den domhain” (the passage: “domhan”); A 4(b)(i) reprint “Cén socrú ata déanta” (the paper: “atá”); B 1(b)(ii) reprint “tráchtáirí” and “(Alt1)” (the paper: “tráchtairí”, “(Alt 1)”); B 5(b)(ii)’s answers read “go bhfuilimid ag geallúint ‘cearta cothroma agus deiseanna cothroma’” where the passage prints “go bhfuilimid dílis d’aidhm Fhorógra na Poblachta a gheallann ‘cearta cothroma agus deiseanna cothroma’”; the Ceist 4 Treoracha read “usáid” (úsáid) and the heading “(A, B, C D, E nó F)” (a comma missing; the paper prints “(A, B, C, D, E nó F)”). The card questions are the paper’s.",
       "The scheme’s bullets (SymbolMT U+F0B7) are read as “•”."
     ],
-    "boundaries": "12 whole reading questions with 34 published parts and 6 independent one-mark answer slots; 2 prescribed prose routes (2A Cáca Milis or An Lasair Choille), 1 optional film-or-play route (2B), 2 poetry and 6 additional-literature routes."
+    "boundaries": "12 whole reading questions with 34 published parts and 6 independent one-mark answer slots; 2 prescribed prose routes (2A Cáca Milis or An Lasair Choille), 2 optional prose routes (2B scannán or dráma), 2 poetry and 6 additional-literature routes."
   },
   "cards": [
     {
@@ -4094,17 +4095,17 @@
       "stem": "Freagair Ceist 2A (Prós Ainmnithe) nó Ceist 2B (Prós Roghnach) thíos.\n2A. Prós Ainmnithe"
     },
     {
-      "id": "irish-2015-hl-p2-prose-2b",
+      "id": "irish-2015-hl-p2-prose-2b-scannan",
       "year": 2015,
       "level": "higher",
       "paper": 2,
       "section": "2",
-      "atlasQuestionId": "P-2B",
-      "questionRef": "2015 HL Paper 2 Prós 2B · Scannán nó dráma roghnach",
-      "questionText": "Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach.\n\nMaidir leis an scannán roghnach a ndearna tú staidéar air le linn do chúrsa, cad iad tréithe an phríomhcharachtair (na príomhphearsan) sa scannán? Déan plé ar an léiriú a dhéantar ar na tréithe sin ó thús deireadh an scannáin.\nNí mór teideal an scannáin sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc)\n\nnó\n\nMaidir leis an dráma roghnach a ndearna tú staidéar air le linn do chúrsa, cad é príomhthéama an dráma sin? Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dráma.\nNí mór teideal an dráma sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc)",
+      "atlasQuestionId": "P-2B-scannan",
+      "questionRef": "2015 HL Paper 2 Prós 2B · Scannán roghnach",
+      "questionText": "Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach.\n\nMaidir leis an scannán roghnach a ndearna tú staidéar air le linn do chúrsa, cad iad tréithe an phríomhcharachtair (na príomhphearsan) sa scannán? Déan plé ar an léiriú a dhéantar ar na tréithe sin ó thús deireadh an scannáin.\nNí mór teideal an scannáin sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc)",
       "totalMarks": 30,
       "topicId": "irish-4-7",
-      "conceptId": "irish-hl-p2-prose-2b",
+      "conceptId": "irish-hl-p2-prose-2b-scannan",
       "paperFileid": "LC001ALP200IV",
       "schemeFileid": "LC001ALP000IV",
       "schemePage": 24,
@@ -4159,7 +4160,7 @@
           "guidance": [
             "Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach.",
             "Tréithe agus Léiriú (25) = Gaeilge (5) = Nóta: Ní mór don iarrthóir plé agus léiriú a dhéanamh ar dhá thréith, ar a laghad, de chuid an phríomhcharachtair. Mura bhfuil ach plé agus léiriú ar thréith amháin de chuid an phríomhcharachtair, marcáil an t-eolas as 14 mharc.",
-            "Príomhthéama (2) = Forbairt (23) = Ní mór don Scrúdaitheoir an marc ar eolas as 25 marc mar aon le marc ar Ghaeilge as 5 mharc a thaispeáint sa fhreagarleabhar.",
+            "Ní mór don Scrúdaitheoir an marc ar eolas as 25 marc mar aon le marc ar Ghaeilge as 5 mharc a thaispeáint sa fhreagarleabhar.",
             "Grádú Marcála sna Ceisteanna N. B. Den bhfíorthábhacht é go mbeifeá ag machnamh i ngráid agus i gcéatadáin le linn na marcála. (Féach an scéim ghrádaithe sa Cheapadóireacht ar lgh. 11-13.) An freagra a ghrádú agus a chéatadánú i d’aigne i dtosach, ansin cinneadh ar an marc. GRÁD 200 160 100 68 60 56 44 40 35 30 25 22 18 A 170 136 85 58 51 48 38 34 30 26 22 19 16 B 140 112 70 48 42 40 31 28 25 21 18 16 13 C 110 88 55 38 33 31 25 22 20 17 14 13 10 D 80 64 40 28 24 23 18 16 14 12 10 9 8 GRÁD 17 16 14 13 12 11 10 9 8 7 6 5 A 15 14 12 12 11 10 9 8 7 6 6 5 B 12 12 10 10 9 8 7 7 6 5 5 4 C 10 9 8 8 7 7 6 5 5 4 4 3 D 7 7 6 6 5 5 4 4 4 3 3 2"
           ]
         },
@@ -4183,11 +4184,113 @@
           ]
         }
       ],
-      "markingGuideNote": "One complete SEC response: Eolas 25 and a single shared 5-mark Gaeilge award; the film and the play are two printed alternatives of one route. The scheme prices the film as Tréithe agus Léiriú 25 (Eolas out of 14 where only one trait is discussed and illustrated) and the play as Príomhthéama 2 + Forbairt 23; its general grading table (PDF 29) converts a grade to a mark.",
+      "markingGuideNote": "One complete SEC response: Eolas 25 and a single shared 5-mark Gaeilge award. The scheme prices the optional film as Tréithe agus Léiriú 25, with Eolas out of 14 where only one trait is discussed and illustrated; the play, the other printed alternative of 2B, is priced differently and has its own card. Its general grading table (PDF 29) converts a grade to a mark.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Prós",
-        "title": "Scannán nó dráma roghnach",
+        "title": "Scannán roghnach",
+        "pages": [
+          8
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "stem": "Freagair Ceist 2A (Prós Ainmnithe) nó Ceist 2B (Prós Roghnach) thíos.\n2B. Prós Roghnach\nNíl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach."
+    },
+    {
+      "id": "irish-2015-hl-p2-prose-2b-drama",
+      "year": 2015,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-2B-drama",
+      "questionRef": "2015 HL Paper 2 Prós 2B · Dráma roghnach",
+      "questionText": "Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach.\n\nMaidir leis an dráma roghnach a ndearna tú staidéar air le linn do chúrsa, cad é príomhthéama an dráma sin? Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dráma.\nNí mór teideal an dráma sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc)",
+      "totalMarks": 30,
+      "topicId": "irish-4-7",
+      "conceptId": "irish-hl-p2-prose-2b-drama",
+      "paperFileid": "LC001ALP200IV",
+      "schemeFileid": "LC001ALP000IV",
+      "schemePage": 25,
+      "schemePages": [
+        25,
+        29
+      ],
+      "reviewedAt": "2026-11-05",
+      "reviewedPaperPages": [
+        8
+      ],
+      "taskRequirements": [
+        "Answer every printed part of the question.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 25,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach.",
+            "Príomhthéama (2) = Forbairt (23) =",
+            "Ní mór don Scrúdaitheoir an marc ar eolas as 25 marc mar aon le marc ar Ghaeilge as 5 mharc a thaispeáint sa fhreagarleabhar.",
+            "Grádú Marcála sna Ceisteanna N. B. Den bhfíorthábhacht é go mbeifeá ag machnamh i ngráid agus i gcéatadáin le linn na marcála. (Féach an scéim ghrádaithe sa Cheapadóireacht ar lgh. 11-13.) An freagra a ghrádú agus a chéatadánú i d’aigne i dtosach, ansin cinneadh ar an marc. GRÁD 200 160 100 68 60 56 44 40 35 30 25 22 18 A 170 136 85 58 51 48 38 34 30 26 22 19 16 B 140 112 70 48 42 40 31 28 25 21 18 16 13 C 110 88 55 38 33 31 25 22 20 17 14 13 10 D 80 64 40 28 24 23 18 16 14 12 10 9 8 GRÁD 17 16 14 13 12 11 10 9 8 7 6 5 A 15 14 12 12 11 10 9 8 7 6 6 5 B 12 12 10 10 9 8 7 7 6 5 5 4 C 10 9 8 8 7 7 6 5 5 4 4 3 D 7 7 6 6 5 5 4 4 4 3 3 2"
+          ]
+        },
+        {
+          "id": "gaeilge",
+          "label": "Gaeilge",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "Nóta: I gcás na gceisteanna 2 (Prós), 3 (Filíocht), agus 4 (Litríocht Bhreise) beidh 5 mharc le bronnadh i ngach cás ar chaighdeán na Gaeilge. Sa Phrós mar sin 25 ar Eolas agus 5 ar Ghaeilge; san Fhilíocht 25 ar Eolas agus 5 ar Ghaeilge; sa Litríocht Bhreise 35 ar Eolas agus 5 ar Ghaeilge.",
+            "Grádú Marcála sna Ceisteanna N. B. Den bhfíorthábhacht é go mbeifeá ag machnamh i ngráid agus i gcéatadáin le linn na marcála. (Féach an scéim ghrádaithe sa Cheapadóireacht ar lgh. 11-13.) An freagra a ghrádú agus a chéatadánú i d’aigne i dtosach, ansin cinneadh ar an marc. GRÁD 200 160 100 68 60 56 44 40 35 30 25 22 18 A 170 136 85 58 51 48 38 34 30 26 22 19 16 B 140 112 70 48 42 40 31 28 25 21 18 16 13 C 110 88 55 38 33 31 25 22 20 17 14 13 10 D 80 64 40 28 24 23 18 16 14 12 10 9 8 GRÁD 17 16 14 13 12 11 10 9 8 7 6 5 A 15 14 12 12 11 10 9 8 7 6 6 5 B 12 12 10 10 9 8 7 7 6 5 5 4 C 10 9 8 8 7 7 6 5 5 4 4 3 D 7 7 6 6 5 5 4 4 4 3 3 2"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: Eolas 25 and a single shared 5-mark Gaeilge award. The scheme prices the optional play as Príomhthéama 2 + Forbairt 23; the film, the other printed alternative of 2B, is priced differently and has its own card. Its general grading table (PDF 29) converts a grade to a mark.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós",
+        "title": "Dráma roghnach",
         "pages": [
           8
         ],

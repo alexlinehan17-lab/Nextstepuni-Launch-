@@ -31,6 +31,871 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-a1a", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
+    section: "A", questionRef: "2018 OL Section A Q1(a)",
+    stem: "The 3D graphic below shows the proposed design for the new children’s hospital in Dublin. It consists of an ellipse and two inner circular arcs. The drawing on the right shows the major and minor circles for the ellipse. Portions of the ellipse and of the inner arcs are also shown.",
+    questionText: "Locate the remaining points on the ellipse and draw the curve.",
+    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
+    rows: [
+    { id: "dcg-2018-ol-a1a-r1", kind: "point", verbatim: "Appropriate use of given major and minor axes", marks: 1 },
+    { id: "dcg-2018-ol-a1a-r2", kind: "point", verbatim: "Required constructions for additional points", marks: 2 },
+    { id: "dcg-2018-ol-a1a-r3", kind: "point", verbatim: "Locate required additional points", marks: 4 },
+    { id: "dcg-2018-ol-a1a-r4", kind: "point", verbatim: "Complete curve", marks: 3 },
+    { id: "dcg-2018-ol-a1a-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secA-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secA-q1-art.png",
+          "srcHash": "7602c01e28cab5d0c1949c91189b9c85",
+          "alt": "Question A-1 as printed. An aerial image of the oval design for the new children's hospital in Dublin, beside the drawing of the ellipse's major and minor auxiliary circles in red, portions of the ellipse and of the inner arcs in black, and a radius R marked in green.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-a1b", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
+    section: "A", questionRef: "2018 OL Section A Q1(b)",
+    stem: "The 3D graphic below shows the proposed design for the new children’s hospital in Dublin. It consists of an ellipse and two inner circular arcs. The drawing on the right shows the major and minor circles for the ellipse. Portions of the ellipse and of the inner arcs are also shown.",
+    questionText: "Locate the focal points of the ellipse.",
+    tariffModel: {"kind":"fixed","notation":"(5)"}, totalMarks: 5,
+    rows: [
+    { id: "dcg-2018-ol-a1b-r1", kind: "point", verbatim: "Locate required focal points", marks: 5 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secA-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secA-q1-art.png",
+          "srcHash": "7602c01e28cab5d0c1949c91189b9c85",
+          "alt": "Question A-1 as printed. An aerial image of the oval design for the new children's hospital in Dublin, beside the drawing of the ellipse's major and minor auxiliary circles in red, portions of the ellipse and of the inner arcs in black, and a radius R marked in green.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-a1c", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
+    section: "A", questionRef: "2018 OL Section A Q1(c)",
+    stem: "The 3D graphic below shows the proposed design for the new children’s hospital in Dublin. It consists of an ellipse and two inner circular arcs. The drawing on the right shows the major and minor circles for the ellipse. Portions of the ellipse and of the inner arcs are also shown.",
+    questionText: "Locate the centre point for the lower arc and complete the drawing.",
+    tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
+    rows: [
+    { id: "dcg-2018-ol-a1c-r1", kind: "point", verbatim: "Locate centre point", marks: 2 },
+    { id: "dcg-2018-ol-a1c-r2", kind: "point", verbatim: "Draw remainder of second arc", marks: 1 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secA-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secA-q1-art.png",
+          "srcHash": "7602c01e28cab5d0c1949c91189b9c85",
+          "alt": "Question A-1 as printed. An aerial image of the oval design for the new children's hospital in Dublin, beside the drawing of the ellipse's major and minor auxiliary circles in red, portions of the ellipse and of the inner arcs in black, and a radius R marked in green.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-a2a", topicId: "design-and-communication-graphics-0-12", conceptId: "dcg-0-12",
+    section: "A", questionRef: "2018 OL Section A Q2(a)",
+    stem: "Three stone containers for growing flowers are shown in the 3D graphic below. The containers are in the form of geometrical objects which are in contact as shown. The drawing on the right shows the elevation and partially completed plan of the objects. The arrangement consists of a cylinder, a truncated cone and a hemisphere.",
+    questionText: "Draw the plan of the cylinder B.",
+    tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
+    rows: [
+    { id: "dcg-2018-ol-a2a-r1", kind: "point", verbatim: "Projection from centre in elevation", marks: 3 },
+    { id: "dcg-2018-ol-a2a-r2", kind: "point", verbatim: "Locate centre in plan", marks: 4 },
+    { id: "dcg-2018-ol-a2a-r3", kind: "point", verbatim: "Draw plan of cylinder … (incl. hidden detail)", marks: 4 },
+    { id: "dcg-2018-ol-a2a-r4", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secA-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secA-q2-art.png",
+          "srcHash": "86184a933a279fade60d734439242833",
+          "alt": "Question A-2 as printed. A photograph of three stone flower containers, beside the elevation of the cylinder B, the truncated cone A and the hemisphere C standing on the XY line, and the partially completed plan showing the cone A.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-a2b", topicId: "design-and-communication-graphics-0-12", conceptId: "dcg-0-12",
+    section: "A", questionRef: "2018 OL Section A Q2(b)",
+    stem: "Three stone containers for growing flowers are shown in the 3D graphic below. The containers are in the form of geometrical objects which are in contact as shown. The drawing on the right shows the elevation and partially completed plan of the objects. The arrangement consists of a cylinder, a truncated cone and a hemisphere.",
+    questionText: "Draw the plan of the hemisphere C.",
+    tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
+    rows: [
+    { id: "dcg-2018-ol-a2b-r1", kind: "point", verbatim: "Constructions in elevation", marks: 1 },
+    { id: "dcg-2018-ol-a2b-r2", kind: "point", verbatim: "Projections to plan", marks: 2 },
+    { id: "dcg-2018-ol-a2b-r3", kind: "point", verbatim: "Locate centre in plan", marks: 2 },
+    { id: "dcg-2018-ol-a2b-r4", kind: "point", verbatim: "Draw hemisphere in plan ….(incl. hidden detail)", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secA-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secA-q2-art.png",
+          "srcHash": "86184a933a279fade60d734439242833",
+          "alt": "Question A-2 as printed. A photograph of three stone flower containers, beside the elevation of the cylinder B, the truncated cone A and the hemisphere C standing on the XY line, and the partially completed plan showing the cone A.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-a3", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
+    section: "A", questionRef: "2018 OL Section A Q3",
+    questionText: "The image below shows the Mary McAleese Boyne Valley Bridge, a suspension bridge across the river Boyne in County Meath. The drawing on the right shows the plan and a partially completed perspective view of the concrete tower part of the bridge. Complete the perspective drawing of the bridge tower.",
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
+    rows: [
+    { id: "dcg-2018-ol-a3-r1", kind: "point", verbatim: "Radiate lines to correct vanishing points", marks: 2 },
+    { id: "dcg-2018-ol-a3-r2", kind: "point", verbatim: "Projections from plan", marks: 2 },
+    { id: "dcg-2018-ol-a3-r3", kind: "point", verbatim: "Complete right leg of tower", marks: 8 },
+    { id: "dcg-2018-ol-a3-r4", kind: "point", verbatim: "Complete left leg of tower", marks: 2 },
+    { id: "dcg-2018-ol-a3-r5", kind: "point", verbatim: "Complete perspective", marks: 4 },
+    { id: "dcg-2018-ol-a3-r6", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secA-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secA-q3-art.png",
+          "srcHash": "e9edcec0ca42a4cb6991c7e5758a4796",
+          "alt": "Question A-3 as printed. A photograph of the Mary McAleese Boyne Valley Bridge, beside the plan of the bridge tower above the picture plane PP, the spectator point S, the vanishing points VP1 and VP2, the ground line GL and a partially completed perspective view of the tower.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-a4a", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    section: "A", questionRef: "2018 OL Section A Q4(a)",
+    stem: "The image below shows a concertina. The instrument is hexagonal in cross-section. The plan, elevation and the partially completed end view of the instrument are also shown.",
+    questionText: "Complete the end view.",
+    tariffModel: {"kind":"fixed","notation":"(17)"}, totalMarks: 17,
+    rows: [
+    { id: "dcg-2018-ol-a4a-r1", kind: "point", verbatim: "Projections from plan", marks: 8 },
+    { id: "dcg-2018-ol-a4a-r2", kind: "point", verbatim: "Points defined in end view", marks: 3 },
+    { id: "dcg-2018-ol-a4a-r3", kind: "point", verbatim: "Complete visible end", marks: 2 },
+    { id: "dcg-2018-ol-a4a-r4", kind: "point", verbatim: "Complete end view….(incl. hidden detail)", marks: 2 },
+    { id: "dcg-2018-ol-a4a-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secA-q4-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secA-q4-art.png",
+          "srcHash": "98f1ac238f2f6e355f4341ad74dfd0a1",
+          "alt": "Question A-4 as printed. A photograph of a hexagonal concertina, beside the elevation of the instrument on the XY line, its plan at an angle below, and a partially completed end view, with red projection arcs between the views.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-a4b", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    section: "A", questionRef: "2018 OL Section A Q4(b)",
+    stem: "The image below shows a concertina. The instrument is hexagonal in cross-section. The plan, elevation and the partially completed end view of the instrument are also shown.",
+    questionText: "Draw the true shape of the end of the instrument.",
+    tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
+    rows: [
+    { id: "dcg-2018-ol-a4b-r1", kind: "point", verbatim: "Apply correct length of edge", marks: 1 },
+    { id: "dcg-2018-ol-a4b-r2", kind: "point", verbatim: "Use correct angles", marks: 1 },
+    { id: "dcg-2018-ol-a4b-r3", kind: "point", verbatim: "Draw required true shape", marks: 1 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secA-q4-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secA-q4-art.png",
+          "srcHash": "98f1ac238f2f6e355f4341ad74dfd0a1",
+          "alt": "Question A-4 as printed. A photograph of a hexagonal concertina, beside the elevation of the instrument on the XY line, its plan at an angle below, and a partially completed end view, with red projection arcs between the views.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-b1a", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    section: "B", questionRef: "2018 OL Section B Q1(a)",
+    stem: "The graphic on the right shows a portion of a house and a bay window. Fig. B-1 below shows an isometric view of a similar structure.",
+    questionText: "Draw the elevation of the complete structure looking in the direction of the arrow.",
+    tariffModel: {"kind":"fixed","notation":"(22)"}, totalMarks: 22,
+    rows: [
+    { id: "dcg-2018-ol-b1a-r1", kind: "point", verbatim: "Draw wall of house", marks: 8 },
+    { id: "dcg-2018-ol-b1a-r2", kind: "point", verbatim: "Outline of bay window", marks: 5 },
+    { id: "dcg-2018-ol-b1a-r3", kind: "point", verbatim: "Complete bay window", marks: 5 },
+    { id: "dcg-2018-ol-b1a-r4", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secB-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secB-q1-art.png",
+          "srcHash": "28f6086c7512ff0f3b9382c98d864acd",
+          "alt": "Question B-1 as printed. A photograph of a house with a bay window, and Fig. B-1: an isometric view of a similar structure with the surface A, an arrow showing the viewing direction, and dimensions 120, 34, 35, 60, 80, 10, 15, 30 and a 30 degree angle. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-b1b", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    section: "B", questionRef: "2018 OL Section B Q1(b)",
+    stem: "The graphic on the right shows a portion of a house and a bay window. Fig. B-1 below shows an isometric view of a similar structure.",
+    questionText: "Project a plan from the elevation.",
+    tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
+    rows: [
+    { id: "dcg-2018-ol-b1b-r1", kind: "point", verbatim: "Plan of wall", marks: 5 },
+    { id: "dcg-2018-ol-b1b-r2", kind: "point", verbatim: "Outline of bay window", marks: 3 },
+    { id: "dcg-2018-ol-b1b-r3", kind: "point", verbatim: "Complete the plan", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secB-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secB-q1-art.png",
+          "srcHash": "28f6086c7512ff0f3b9382c98d864acd",
+          "alt": "Question B-1 as printed. A photograph of a house with a bay window, and Fig. B-1: an isometric view of a similar structure with the surface A, an arrow showing the viewing direction, and dimensions 120, 34, 35, 60, 80, 10, 15, 30 and a 30 degree angle. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-b1c", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    section: "B", questionRef: "2018 OL Section B Q1(c)",
+    stem: "The graphic on the right shows a portion of a house and a bay window. Fig. B-1 below shows an isometric view of a similar structure.",
+    questionText: "Draw the auxiliary elevation of the structure, projected from the plan, which will include the true shape of surface A.",
+    tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
+    rows: [
+    { id: "dcg-2018-ol-b1c-r1", kind: "point", verbatim: "X1Y1 parallel to plan of surface A", marks: 1 },
+    { id: "dcg-2018-ol-b1c-r2", kind: "point", verbatim: "Projections from plan", marks: 1 },
+    { id: "dcg-2018-ol-b1c-r3", kind: "point", verbatim: "Transfer of heights from elevation", marks: 3 },
+    { id: "dcg-2018-ol-b1c-r4", kind: "point", verbatim: "Draw surface A", marks: 2 },
+    { id: "dcg-2018-ol-b1c-r5", kind: "point", verbatim: "Complete auxiliary elevation", marks: 6 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secB-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secB-q1-art.png",
+          "srcHash": "28f6086c7512ff0f3b9382c98d864acd",
+          "alt": "Question B-1 as printed. A photograph of a house with a bay window, and Fig. B-1: an isometric view of a similar structure with the surface A, an arrow showing the viewing direction, and dimensions 120, 34, 35, 60, 80, 10, 15, 30 and a 30 degree angle. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-b2a", topicId: "design-and-communication-graphics-0-8", conceptId: "dcg-0-8",
+    section: "B", questionRef: "2018 OL Section B Q2(a)",
+    stem: "The 3D graphic on the right shows a climbing pole from a children’s playground. It consists of a central rectangular pillar with horizontal steps attached. Fig. B-2 below shows the plan and incomplete elevation of a portion of the arrangement. A section through the horizontal step is also shown.",
+    questionText: "Draw the given plan and the completed elevation, showing all lines of interpenetration.",
+    tariffModel: {"kind":"fixed","notation":"(37)"}, totalMarks: 37,
+    rows: [
+    { id: "dcg-2018-ol-b2a-r1", kind: "criterion", verbatim: "Plan and Elevation", marks: 33, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,33], parts: [{"id":"step-1","verbatim":"Draw plan of pillar as given","marks":6,"permittedMarks":[0,6]},{"id":"step-2","verbatim":"Draw the plan of step as given","marks":5,"permittedMarks":[0,5]},{"id":"step-3","verbatim":"Draw the elevation of the pillar as given","marks":4,"permittedMarks":[0,4]},{"id":"step-4","verbatim":"Draw the elevation of the step as given","marks":4,"permittedMarks":[0,4]},{"id":"step-5","verbatim":"Projections from LHS of plan","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Locate points on LHS in elevation","marks":2,"permittedMarks":[0,2]},{"id":"step-7","verbatim":"Complete LHS of elevation","marks":3,"permittedMarks":[0,3]},{"id":"step-8","verbatim":"Projections from RHS of plan","marks":2,"permittedMarks":[0,2]},{"id":"step-9","verbatim":"Locate points on RHS in elevation","marks":2,"permittedMarks":[0,2]},{"id":"step-10","verbatim":"Complete RHS of elevation","marks":3,"permittedMarks":[0,3]}] },
+    { id: "dcg-2018-ol-b2a-r2", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secB-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secB-q2-art.png",
+          "srcHash": "463e673987c89757961e72d8a41a715d",
+          "alt": "Question B-2 as printed. A graphic of a child beside a climbing pole with an enlarged detail of the steps, and Fig. B-2: the section through a step (20 at the top, 50 at the base, 50 high), the incomplete elevation of the pillar and steps on the XY line (30, 100 and 20), and the plan of the pillar set at 45 degrees with sides 70 and 100. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-b2b", topicId: "design-and-communication-graphics-0-8", conceptId: "dcg-0-8",
+    section: "B", questionRef: "2018 OL Section B Q2(b)",
+    stem: "The 3D graphic on the right shows a climbing pole from a children’s playground. It consists of a central rectangular pillar with horizontal steps attached. Fig. B-2 below shows the plan and incomplete elevation of a portion of the arrangement. A section through the horizontal step is also shown.",
+    questionText: "Draw an end view of the structure.",
+    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
+    rows: [
+    { id: "dcg-2018-ol-b2b-r1", kind: "point", verbatim: "Transfer of widths from plan", marks: 2 },
+    { id: "dcg-2018-ol-b2b-r2", kind: "point", verbatim: "Projection of heights from elevation", marks: 2 },
+    { id: "dcg-2018-ol-b2b-r3", kind: "point", verbatim: "End view of pillar", marks: 2 },
+    { id: "dcg-2018-ol-b2b-r4", kind: "point", verbatim: "Complete end view", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secB-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secB-q2-art.png",
+          "srcHash": "463e673987c89757961e72d8a41a715d",
+          "alt": "Question B-2 as printed. A graphic of a child beside a climbing pole with an enlarged detail of the steps, and Fig. B-2: the section through a step (20 at the top, 50 at the base, 50 high), the incomplete elevation of the pillar and steps on the XY line (30, 100 and 20), and the plan of the pillar set at 45 degrees with sides 70 and 100. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-b3a", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    section: "B", questionRef: "2018 OL Section B Q3(a)",
+    stem: "The graphic on the right shows a clock. Fig. B-3 below shows an incomplete isometric projection of a similar clock. The elevation and plan of the clock are also shown in their required positions.",
+    questionText: "Draw the given equilateral triangle abc and the axonometric axes X, Y, and Z.",
+    tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
+    rows: [
+    { id: "dcg-2018-ol-b3a-r1", kind: "point", verbatim: "Draw equilateral triangle", marks: 3 },
+    { id: "dcg-2018-ol-b3a-r2", kind: "point", verbatim: "Draw X, Y and Z axes", marks: 2 },
+    { id: "dcg-2018-ol-b3a-r3", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secB-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secB-q3-art.png",
+          "srcHash": "1cdcae05bb6288f75e4d1cbff187fce2",
+          "alt": "Question B-3 as printed. A photograph of a crystal clock, and Fig. B-3: the equilateral triangle abc with the axonometric axes X, Y and Z and a 30 degree angle, the elevation of the clock positioned at the top right with its circular face of radius R30 (80, 25, 35 and 115), and the plan positioned below at 45 degrees (100 and 45), with construction semicircles in blue. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-b3b", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    section: "B", questionRef: "2018 OL Section B Q3(b)",
+    stem: "The graphic on the right shows a clock. Fig. B-3 below shows an incomplete isometric projection of a similar clock. The elevation and plan of the clock are also shown in their required positions.",
+    questionText: "Draw the elevation and plan positioned as shown.",
+    tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
+    rows: [
+    { id: "dcg-2018-ol-b3b-r1", kind: "point", verbatim: "Projections to set up elevation", marks: 2 },
+    { id: "dcg-2018-ol-b3b-r2", kind: "point", verbatim: "Semicircle in elevation", marks: 1 },
+    { id: "dcg-2018-ol-b3b-r3", kind: "point", verbatim: "Draw elevation in the correct position", marks: 2 },
+    { id: "dcg-2018-ol-b3b-r4", kind: "point", verbatim: "Projections to set up plan", marks: 2 },
+    { id: "dcg-2018-ol-b3b-r5", kind: "point", verbatim: "Semicircle in plan (or 45° lines)", marks: 1 },
+    { id: "dcg-2018-ol-b3b-r6", kind: "point", verbatim: "Draw plan in the correct position", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secB-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secB-q3-art.png",
+          "srcHash": "1cdcae05bb6288f75e4d1cbff187fce2",
+          "alt": "Question B-3 as printed. A photograph of a crystal clock, and Fig. B-3: the equilateral triangle abc with the axonometric axes X, Y and Z and a 30 degree angle, the elevation of the clock positioned at the top right with its circular face of radius R30 (80, 25, 35 and 115), and the plan positioned below at 45 degrees (100 and 45), with construction semicircles in blue. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-b3c", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    section: "B", questionRef: "2018 OL Section B Q3(c)",
+    stem: "The graphic on the right shows a clock. Fig. B-3 below shows an incomplete isometric projection of a similar clock. The elevation and plan of the clock are also shown in their required positions.",
+    questionText: "Draw the axonometric projection of the main body of the clock.",
+    tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
+    rows: [
+    { id: "dcg-2018-ol-b3c-r1", kind: "point", verbatim: "Projections from elevation", marks: 2 },
+    { id: "dcg-2018-ol-b3c-r2", kind: "point", verbatim: "Projections from plan", marks: 2 },
+    { id: "dcg-2018-ol-b3c-r3", kind: "point", verbatim: "Draw axonometric projection of right vertical surface", marks: 2 },
+    { id: "dcg-2018-ol-b3c-r4", kind: "point", verbatim: "Draw axonometric projection of front face", marks: 2 },
+    { id: "dcg-2018-ol-b3c-r5", kind: "point", verbatim: "Draw axonometric projection of the top surfaces", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secB-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secB-q3-art.png",
+          "srcHash": "1cdcae05bb6288f75e4d1cbff187fce2",
+          "alt": "Question B-3 as printed. A photograph of a crystal clock, and Fig. B-3: the equilateral triangle abc with the axonometric axes X, Y and Z and a 30 degree angle, the elevation of the clock positioned at the top right with its circular face of radius R30 (80, 25, 35 and 115), and the plan positioned below at 45 degrees (100 and 45), with construction semicircles in blue. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-b3d", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    section: "B", questionRef: "2018 OL Section B Q3(d)",
+    stem: "The graphic on the right shows a clock. Fig. B-3 below shows an incomplete isometric projection of a similar clock. The elevation and plan of the clock are also shown in their required positions.",
+    questionText: "Draw the axonometric projection of the circular face of the clock.",
+    tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
+    rows: [
+    { id: "dcg-2018-ol-b3d-r1", kind: "point", verbatim: "Divisions on circle in elevation", marks: 5 },
+    { id: "dcg-2018-ol-b3d-r2", kind: "point", verbatim: "Corresponding divisions in plan", marks: 5 },
+    { id: "dcg-2018-ol-b3d-r3", kind: "point", verbatim: "Projections from circle in elevation", marks: 2 },
+    { id: "dcg-2018-ol-b3d-r4", kind: "point", verbatim: "Projections from circle in plan", marks: 2 },
+    { id: "dcg-2018-ol-b3d-r5", kind: "point", verbatim: "Draw axonometric projection of the circular face", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secB-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secB-q3-art.png",
+          "srcHash": "1cdcae05bb6288f75e4d1cbff187fce2",
+          "alt": "Question B-3 as printed. A photograph of a crystal clock, and Fig. B-3: the equilateral triangle abc with the axonometric axes X, Y and Z and a 30 degree angle, the elevation of the clock positioned at the top right with its circular face of radius R30 (80, 25, 35 and 115), and the plan positioned below at 45 degrees (100 and 45), with construction semicircles in blue. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-c1a", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
+    section: "C", questionRef: "2018 OL Section C Q1(a)",
+    stem: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
+    questionText: "On the drawing supplied, draw a vertical section (profile) on the line AB.",
+    tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
+    rows: [
+    { id: "dcg-2018-ol-c1a-r1", kind: "point", verbatim: "Measure heights and draw horizontal lines", marks: 6 },
+    { id: "dcg-2018-ol-c1a-r2", kind: "point", verbatim: "Projections from intersections between line AB and contours", marks: 5 },
+    { id: "dcg-2018-ol-c1a-r3", kind: "point", verbatim: "Draw outline of profile", marks: 8 },
+    { id: "dcg-2018-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secC-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q1-art.png",
+          "srcHash": "2320deb76564b72efff7e838e7557e40",
+          "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a motorway in a cutting; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-c1b", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
+    section: "C", questionRef: "2018 OL Section C Q1(b)",
+    stem: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
+    questionText: "A vertical pylon is to be built at point A. On the profile, determine the minimum height of the pylon, if its top is to be visible from the ground at point B.",
+    tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
+    rows: [
+    { id: "dcg-2018-ol-c1b-r1", kind: "point", verbatim: "Draw tangent from B to profile", marks: 2 },
+    { id: "dcg-2018-ol-c1b-r2", kind: "point", verbatim: "Draw pylon and indicate minimum height", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secC-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q1-art.png",
+          "srcHash": "2320deb76564b72efff7e838e7557e40",
+          "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a motorway in a cutting; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-c1c", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
+    section: "C", questionRef: "2018 OL Section C Q1(c)",
+    stem: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
+    questionText: "The image on the right shows a section of the new M17 motorway linking Galway and Clare. Earthworks were necessary to accommodate the roadway as shown. CD is the centreline of a roadway which is level at an altitude of 25m. Using side slopes of 1:1 for the cuttings and 1:2 for the embankments, complete the earthworks on the northern side, which are necessary to accommodate the roadway. (Note: The earthworks on the southern side of the roadway have already been completed.)",
+    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    rows: [
+    { id: "dcg-2018-ol-c1c-r1", kind: "point", verbatim: "Parallel lines at 5m intervals for cuttings", marks: 3 },
+    { id: "dcg-2018-ol-c1c-r2", kind: "point", verbatim: "Identify points on cutting curves", marks: 3 },
+    { id: "dcg-2018-ol-c1c-r3", kind: "point", verbatim: "Draw cutting curves", marks: 4 },
+    { id: "dcg-2018-ol-c1c-r4", kind: "point", verbatim: "Parallel lines at 10m intervals for embankment", marks: 3 },
+    { id: "dcg-2018-ol-c1c-r5", kind: "point", verbatim: "Identify points on embankment curve", marks: 3 },
+    { id: "dcg-2018-ol-c1c-r6", kind: "point", verbatim: "Draw embankment curve", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secC-q1-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q1-art.png",
+          "srcHash": "2320deb76564b72efff7e838e7557e40",
+          "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a motorway in a cutting; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-c2a", topicId: "design-and-communication-graphics-2-1", conceptId: "dcg-2-1",
+    section: "C", questionRef: "2018 OL Section C Q2(a)",
+    stem: "The image on the right shows the newly opened Crossrail train station in London’s docklands area. The structure is based on a parabola and has been shaped as shown. Fig. C-2 below shows the plan, elevation and end view of a model of the front part of the station. A 3D view of the model is also given.",
+    questionText: "Draw the given elevation. The vertex of the parabolic curve ABC is located at B.",
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
+    rows: [
+    { id: "dcg-2018-ol-c2a-r1", kind: "criterion", verbatim: "Elevation", marks: 16, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,16], parts: [{"id":"step-1","verbatim":"Draw base of structure","marks":3,"permittedMarks":[0,3]},{"id":"step-2","verbatim":"Draw inner stand section","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Division of RHS for parabola","marks":4,"permittedMarks":[0,4]},{"id":"step-4","verbatim":"Draw right hand curve","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"Locate points on LHS for parabola","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Draw curve on left side","marks":2,"permittedMarks":[0,2]}] },
+    { id: "dcg-2018-ol-c2a-r2", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secC-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q2-art.png",
+          "srcHash": "26cef5adf7e3302cfd776500a02c08d2",
+          "alt": "Question C-2, Structural Forms, as printed. The option banner, a photograph of the Crossrail station in London's docklands, and Fig. C-2: the elevation of the model with the parabolic curve ABC (vertex B, 120 wide, 110 high) over a base (35, 70, 35, 10), the end view (140 across, 35 and 55, a 90 degree angle, 30, 70 and 10) and the plan below (110), with a 3D view of the model. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-c2b", topicId: "design-and-communication-graphics-2-1", conceptId: "dcg-2-1",
+    section: "C", questionRef: "2018 OL Section C Q2(b)",
+    stem: "The image on the right shows the newly opened Crossrail train station in London’s docklands area. The structure is based on a parabola and has been shaped as shown. Fig. C-2 below shows the plan, elevation and end view of a model of the front part of the station. A 3D view of the model is also given.",
+    questionText: "Draw the given end view.",
+    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    rows: [
+    { id: "dcg-2018-ol-c2b-r1", kind: "point", verbatim: "Draw base of structure", marks: 3 },
+    { id: "dcg-2018-ol-c2b-r2", kind: "point", verbatim: "Draw roof section", marks: 3 },
+    { id: "dcg-2018-ol-c2b-r3", kind: "point", verbatim: "Construction to locate 90° angle", marks: 2 },
+    { id: "dcg-2018-ol-c2b-r4", kind: "point", verbatim: "Complete the end view", marks: 3 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secC-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q2-art.png",
+          "srcHash": "26cef5adf7e3302cfd776500a02c08d2",
+          "alt": "Question C-2, Structural Forms, as printed. The option banner, a photograph of the Crossrail station in London's docklands, and Fig. C-2: the elevation of the model with the parabolic curve ABC (vertex B, 120 wide, 110 high) over a base (35, 70, 35, 10), the end view (140 across, 35 and 55, a 90 degree angle, 30, 70 and 10) and the plan below (110), with a 3D view of the model. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-c2c", topicId: "design-and-communication-graphics-2-1", conceptId: "dcg-2-1",
+    section: "C", questionRef: "2018 OL Section C Q2(c)",
+    stem: "The image on the right shows the newly opened Crossrail train station in London’s docklands area. The structure is based on a parabola and has been shaped as shown. Fig. C-2 below shows the plan, elevation and end view of a model of the front part of the station. A 3D view of the model is also given.",
+    questionText: "Project the given plan, clearly showing how the points on the curve are located. (Note: Hidden detail is not required.)",
+    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
+    rows: [
+    { id: "dcg-2018-ol-c2c-r1", kind: "criterion", verbatim: "Plan of the structure", marks: 14, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,14], parts: [{"id":"step-1","verbatim":"Projections from elevation","marks":2,"permittedMarks":[0,2]},{"id":"step-2","verbatim":"Projections from end view","marks":2,"permittedMarks":[0,2]},{"id":"step-3","verbatim":"Draw rectangular base section","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Locate extremities of curved section","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"Locate remaining points on curved section","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Draw curve","marks":2,"permittedMarks":[0,2]},{"id":"step-7","verbatim":"Complete plan","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secC-q2-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q2-art.png",
+          "srcHash": "26cef5adf7e3302cfd776500a02c08d2",
+          "alt": "Question C-2, Structural Forms, as printed. The option banner, a photograph of the Crossrail station in London's docklands, and Fig. C-2: the elevation of the model with the parabolic curve ABC (vertex B, 120 wide, 110 high) over a base (35, 70, 35, 10), the end view (140 across, 35 and 55, a 90 degree angle, 30, 70 and 10) and the plan below (110), with a 3D view of the model. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-c3a", topicId: "design-and-communication-graphics-2-3", conceptId: "dcg-2-3",
+    section: "C", questionRef: "2018 OL Section C Q3(a)",
+    stem: "The graphic on the right shows a lady carrying a handbag. The projections of the bag are shown in Fig. C-3 below.",
+    questionText: "Draw the given views of the bag, showing clearly how the centre of the arc is located.",
+    tariffModel: {"kind":"fixed","notation":"(28)"}, totalMarks: 28,
+    rows: [
+    { id: "dcg-2018-ol-c3a-r1", kind: "point", verbatim: "Draw straight lines in elevation", marks: 10 },
+    { id: "dcg-2018-ol-c3a-r2", kind: "criterion", verbatim: "Determine centre and draw arc ……(1,2)", marks: 3, permittedMarks: [0,1,2,3] },
+    { id: "dcg-2018-ol-c3a-r3", kind: "point", verbatim: "Draw the outline plan", marks: 7 },
+    { id: "dcg-2018-ol-c3a-r4", kind: "point", verbatim: "Complete the plan", marks: 4 },
+    { id: "dcg-2018-ol-c3a-r5", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secC-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q3-art.png",
+          "srcHash": "f69fb9767b888079ec85ee9e72ed7e23",
+          "alt": "Question C-3, Surface Geometry, as printed. The option banner, a photograph of a woman carrying a handbag, and Fig. C-3: the elevation of the bag (70 across the top with a curved top edge of radius R60, 80 high, 60 across the base, 20 and a 60 degree angle) and its plan, 25 deep. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-c3b", topicId: "design-and-communication-graphics-2-3", conceptId: "dcg-2-3",
+    section: "C", questionRef: "2018 OL Section C Q3(b)",
+    stem: "The graphic on the right shows a lady carrying a handbag. The projections of the bag are shown in Fig. C-3 below.",
+    questionText: "Project an end view of the bag.",
+    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
+    rows: [
+    { id: "dcg-2018-ol-c3b-r1", kind: "point", verbatim: "Draw the outline", marks: 4 },
+    { id: "dcg-2018-ol-c3b-r2", kind: "point", verbatim: "Complete the end view", marks: 4 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secC-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q3-art.png",
+          "srcHash": "f69fb9767b888079ec85ee9e72ed7e23",
+          "alt": "Question C-3, Surface Geometry, as printed. The option banner, a photograph of a woman carrying a handbag, and Fig. C-3: the elevation of the bag (70 across the top with a curved top edge of radius R60, 80 high, 60 across the base, 20 and a 60 degree angle) and its plan, 25 deep. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-c3c", topicId: "design-and-communication-graphics-2-3", conceptId: "dcg-2-3",
+    section: "C", questionRef: "2018 OL Section C Q3(c)",
+    stem: "The graphic on the right shows a lady carrying a handbag. The projections of the bag are shown in Fig. C-3 below.",
+    questionText: "Draw a one-piece surface development of the bag (including the curved top surface). Ignore the handle for the purpose of your drawing.",
+    tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
+    rows: [
+    { id: "dcg-2018-ol-c3c-r1", kind: "criterion", verbatim: "Surface Development", marks: 9, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,9], parts: [{"id":"step-1","verbatim":"Appropriate layout of surface development","marks":1,"permittedMarks":[0,1]},{"id":"step-2","verbatim":"Development of bottom surface","marks":2,"permittedMarks":[0,2]},{"id":"step-3","verbatim":"Development of front and back surfaces","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Development of two short inclined surfaces","marks":1,"permittedMarks":[0,1]},{"id":"step-5","verbatim":"Development of two long inclined surfaces","marks":1,"permittedMarks":[0,1]},{"id":"step-6","verbatim":"Division of arc","marks":1,"permittedMarks":[0,1]},{"id":"step-7","verbatim":"Development of curved surface","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secC-q3-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q3-art.png",
+          "srcHash": "f69fb9767b888079ec85ee9e72ed7e23",
+          "alt": "Question C-3, Surface Geometry, as printed. The option banner, a photograph of a woman carrying a handbag, and Fig. C-3: the elevation of the bag (70 across the top with a curved top edge of radius R60, 80 high, 60 across the base, 20 and a 60 degree angle) and its plan, 25 deep. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-c4a", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
+    section: "C", questionRef: "2018 OL Section C Q4(a)",
+    stem: "The graphic below shows various images of the Orbit Tower which is located in London’s Olympic Village. At over 100m in height, it is the UK’s tallest sculpture and also incorporates the world’s longest, fastest and tallest tunnel slide. Part of the slide is in the form of a cylindrical helix as shown. Fig. C-4(a) on the right shows the projections of a cylinder and a portion of such a helix.",
+    questionText: "(i) Draw the given plan and elevation of the cylinder. (ii) Complete the projections of a regular helix which moves in a clockwise direction about the cylinder, from point A at the base, to point B at the top, in one revolution.",
+    tariffModel: {"kind":"fixed","notation":"(25)"}, totalMarks: 25,
+    rows: [
+    { id: "dcg-2018-ol-c4a-r1", kind: "criterion", verbatim: "Helix", marks: 21, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,21], parts: [{"id":"step-1","verbatim":"Draw circle in plan","marks":3,"permittedMarks":[0,3]},{"id":"step-2","verbatim":"Draw outline elevation","marks":2,"permittedMarks":[0,2]},{"id":"step-3","verbatim":"Division of plan","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Draw horizontal divisions in elevation","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"Complete projections from plan of helix","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Locate points in elevation","marks":5,"permittedMarks":[0,5]},{"id":"step-7","verbatim":"Draw helix in elevation","marks":3,"permittedMarks":[0,3]}] },
+    { id: "dcg-2018-ol-c4a-r2", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secC-q4-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q4-art.png",
+          "srcHash": "b2f48bcb5583c5562afa695f60519048",
+          "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner, a photograph of the Orbit Tower with its tunnel slide, Fig. C-4(a): the elevation of a cylinder (130 high) with a portion of the helix from A at the base and the point B at the top, and its plan, a circle of diameter 100 divided into twelve with a 30 degree angle and the points B,A; then part (b), the cam motion listed in four bullets. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-c4b", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
+    section: "C", questionRef: "2018 OL Section C Q4(b)",
+    stem: "The graphic below shows various images of the Orbit Tower which is located in London’s Olympic Village. At over 100m in height, it is the UK’s tallest sculpture and also incorporates the world’s longest, fastest and tallest tunnel slide. Part of the slide is in the form of a cylindrical helix as shown.",
+    questionText: "A cam is used as part of the braking system for an elevator, which is located in the central tower of the sculpture. Draw the displacement diagram for a cam which imparts the following motion to an inline knife edge follower: to 120° Rise 70mm with uniform velocity 120° to 180° Dwell 180° Vertical fall of 22mm 180° to 360° Fall 48mm with uniform acceleration and retardation. (In the displacement diagram, use a distance of 15mm to represent each 30° interval.) Note: It is not necessary to draw the cam profile.",
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
+    rows: [
+    { id: "dcg-2018-ol-c4b-r1", kind: "criterion", verbatim: "Displacement diagram", marks: 20, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,20], parts: [{"id":"step-1","verbatim":"360° division (widths on displacement diagram.)","marks":2,"permittedMarks":[0,2]},{"id":"step-2","verbatim":"Correct use of 70mm height","marks":2,"permittedMarks":[0,2]},{"id":"step-3","verbatim":"Establish follower position at 0°, 120°, 180° and 360°","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"0° to 120°, Uniform Velocity","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"120° to 180°, Dwell","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"180°, vertical fall 22mm","marks":2,"permittedMarks":[0,2]},{"id":"step-7","verbatim":"180° to 360°, Uniform Acceleration and Retardation (UAR)","marks":4,"permittedMarks":[0,4]},{"id":"step-8","verbatim":"Complete displacement diagram (freehand curve)","marks":3,"permittedMarks":[0,3]}] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secC-q4-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q4-art.png",
+          "srcHash": "b2f48bcb5583c5562afa695f60519048",
+          "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner, a photograph of the Orbit Tower with its tunnel slide, Fig. C-4(a): the elevation of a cylinder (130 high) with a portion of the helix from A at the base and the point B at the top, and its plan, a circle of diameter 100 divided into twelve with a 30 degree angle and the points B,A; then part (b), the cam motion listed in four bullets. Scale 1:1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-c5-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2018 OL Section C Q5 — Assembly",
+    stem: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
+    questionText: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
+    tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
+    rows: [
+    { id: "dcg-2018-ol-c5-1-r1", kind: "point", verbatim: "Relative positioning of components", marks: 8 },
+    { id: "dcg-2018-ol-c5-1-r2", kind: "point", verbatim: "Use of Section View", marks: 3 },
+    { id: "dcg-2018-ol-c5-1-r3", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q5-art.png",
+          "srcHash": "35774a2daa5eec59dda031eda06ab75f",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a graphic of a space toy figure, Fig. C-5: dimensioned details of the four numbered parts of a toy spaceship (the main body with the section line A-A, the nose cone, the thruster and the wing), coloured 3D views of the parts, and the parts list naming Main body, Nose cone, Thruster and Wing with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-c5-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2018 OL Section C Q5 — Main body",
+    stem: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
+    questionText: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
+    tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
+    rows: [
+    { id: "dcg-2018-ol-c5-2-r1", kind: "point", verbatim: "Outline", marks: 5 },
+    { id: "dcg-2018-ol-c5-2-r2", kind: "point", verbatim: "Holes", marks: 2 },
+    { id: "dcg-2018-ol-c5-2-r3", kind: "point", verbatim: "Side slots", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q5-art.png",
+          "srcHash": "35774a2daa5eec59dda031eda06ab75f",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a graphic of a space toy figure, Fig. C-5: dimensioned details of the four numbered parts of a toy spaceship (the main body with the section line A-A, the nose cone, the thruster and the wing), coloured 3D views of the parts, and the parts list naming Main body, Nose cone, Thruster and Wing with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-c5-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2018 OL Section C Q5 — Nose Cone",
+    stem: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
+    questionText: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
+    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    rows: [
+    { id: "dcg-2018-ol-c5-3-r1", kind: "point", verbatim: "Upper section", marks: 4 },
+    { id: "dcg-2018-ol-c5-3-r2", kind: "point", verbatim: "Spigot", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q5-art.png",
+          "srcHash": "35774a2daa5eec59dda031eda06ab75f",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a graphic of a space toy figure, Fig. C-5: dimensioned details of the four numbered parts of a toy spaceship (the main body with the section line A-A, the nose cone, the thruster and the wing), coloured 3D views of the parts, and the parts list naming Main body, Nose cone, Thruster and Wing with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-c5-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2018 OL Section C Q5 — Thruster",
+    stem: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
+    questionText: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
+    tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
+    rows: [
+    { id: "dcg-2018-ol-c5-4-r1", kind: "point", verbatim: "Lower section", marks: 2 },
+    { id: "dcg-2018-ol-c5-4-r2", kind: "point", verbatim: "Spigot", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q5-art.png",
+          "srcHash": "35774a2daa5eec59dda031eda06ab75f",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a graphic of a space toy figure, Fig. C-5: dimensioned details of the four numbered parts of a toy spaceship (the main body with the section line A-A, the nose cone, the thruster and the wing), coloured 3D views of the parts, and the parts list naming Main body, Nose cone, Thruster and Wing with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-c5-5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2018 OL Section C Q5 — Wings",
+    stem: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
+    questionText: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
+    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
+    rows: [
+    { id: "dcg-2018-ol-c5-5-r1", kind: "point", verbatim: "Wing outlines", marks: 6 },
+    { id: "dcg-2018-ol-c5-5-r2", kind: "point", verbatim: "Connectors", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q5-art.png",
+          "srcHash": "35774a2daa5eec59dda031eda06ab75f",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a graphic of a space toy figure, Fig. C-5: dimensioned details of the four numbered parts of a toy spaceship (the main body with the section line A-A, the nose cone, the thruster and the wing), coloured 3D views of the parts, and the parts list naming Main body, Nose cone, Thruster and Wing with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC562GLP015EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
+    id: "dcg-2018-ol-c5-6", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
+    section: "C", questionRef: "2018 OL Section C Q5 — Drawing Completion",
+    stem: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
+    questionText: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
+    tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
+    rows: [
+    { id: "dcg-2018-ol-c5-6-r1", kind: "criterion", verbatim: "Hatching and Centrelines …(2,1)", marks: 3, permittedMarks: [0,1,2,3] },
+    ],
+    questionFigure: {
+          "candId": "dcg-2018-OL-paper-secC-q5-art",
+          "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q5-art.png",
+          "srcHash": "35774a2daa5eec59dda031eda06ab75f",
+          "alt": "Question C-5, Assemblies, as printed. The option banner, a graphic of a space toy figure, Fig. C-5: dimensioned details of the four numbered parts of a toy spaceship (the main body with the section line A-A, the nose cone, the thruster and the wing), coloured 3D views of the parts, and the parts list naming Main body, Nose cone, Thruster and Wing with their quantities.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC562GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission.",
@@ -38,9 +903,11 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2019 OL Section A Q1(a)",
     stem: "The 3D graphic below shows a modern sculpture in the grounds of Trinity College, Dublin. It consists of a series of spheres which are in contact as shown. The entire structure rests on a square base. The drawing on the right shows the incomplete projections of the three lower spheres, centrally positioned on the square base.",
     questionText: "Draw the plan of sphere A.",
-    tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
-    { id: "dcg-2019-ol-a1a-r1", kind: "anyN", verbatim: "Centre in plan", marks: 4, contextNote: "The scheme prices this drawing step by step: 2, 2 — 4 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Centre in plan","Draw sphere A"]} },
+    { id: "dcg-2019-ol-a1a-r1", kind: "point", verbatim: "Centre in plan", marks: 2 },
+    { id: "dcg-2019-ol-a1a-r2", kind: "point", verbatim: "Draw sphere A", marks: 2 },
+    { id: "dcg-2019-ol-a1a-r3", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secA-q1-art",
@@ -62,7 +929,9 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the elevation of the sphere B when it has been moved into position C, as indicated by the arrow, so that it is in contact with sphere A at the point P.",
     tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
     rows: [
-    { id: "dcg-2019-ol-a1b-r1", kind: "anyN", verbatim: "Extended normal at point P", marks: 9, contextNote: "The scheme prices this drawing step by step: 1, 2, 6 — 9 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Extended normal at point P","Locate new centre for sphere B","Draw sphere B in position C"],"perOptionSteps":[1,2,6]} },
+    { id: "dcg-2019-ol-a1b-r1", kind: "point", verbatim: "Extended normal at point P", marks: 1 },
+    { id: "dcg-2019-ol-a1b-r2", kind: "point", verbatim: "Locate new centre for sphere B", marks: 2 },
+    { id: "dcg-2019-ol-a1b-r3", kind: "point", verbatim: "Draw sphere B in position C", marks: 6 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secA-q1-art",
@@ -84,7 +953,10 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the plan of sphere B in its new position and complete the drawing of the structure.",
     tariffModel: {"kind":"fixed","notation":"(5)"}, totalMarks: 5,
     rows: [
-    { id: "dcg-2019-ol-a1c-r1", kind: "anyN", verbatim: "Projections from centre in elevation", marks: 5, contextNote: "The scheme prices this drawing step by step: 1, 1, 2, 1 — 5 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Projections from centre in elevation","Locate centre in plan","Draw sphere B","Complete the plan"],"perOptionSteps":[1,1,2,1]} },
+    { id: "dcg-2019-ol-a1c-r1", kind: "point", verbatim: "Projections from centre in elevation", marks: 1 },
+    { id: "dcg-2019-ol-a1c-r2", kind: "point", verbatim: "Locate centre in plan", marks: 1 },
+    { id: "dcg-2019-ol-a1c-r3", kind: "point", verbatim: "Draw sphere B", marks: 2 },
+    { id: "dcg-2019-ol-a1c-r4", kind: "point", verbatim: "Complete the plan", marks: 1 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secA-q1-art",
@@ -103,9 +975,14 @@ export const CARDS: SecCard[] = [
     id: "dcg-2019-ol-a2", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
     section: "A", questionRef: "2019 OL Section A Q2",
     questionText: "The image below shows a coffee machine. The drawing on the right shows the plan and the partially completed perspective view of the main body of a similar coffee machine. Complete the perspective drawing.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
-    { id: "dcg-2019-ol-a2-r1", kind: "anyN", verbatim: "Radiate lines to correct vanishing points", marks: 18, contextNote: "The scheme prices this drawing step by step: 5, 2, 7, 3, 1 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":5,"options":["Radiate lines to correct vanishing points","Projections from plan","Complete base section","Complete top section","Complete perspective"],"perOptionSteps":[5,2,7,3,1]} },
+    { id: "dcg-2019-ol-a2-r1", kind: "point", verbatim: "Radiate lines to correct vanishing points", marks: 5 },
+    { id: "dcg-2019-ol-a2-r2", kind: "point", verbatim: "Projections from plan", marks: 2 },
+    { id: "dcg-2019-ol-a2-r3", kind: "point", verbatim: "Complete base section", marks: 7 },
+    { id: "dcg-2019-ol-a2-r4", kind: "point", verbatim: "Complete top section", marks: 3 },
+    { id: "dcg-2019-ol-a2-r5", kind: "point", verbatim: "Complete perspective", marks: 1 },
+    { id: "dcg-2019-ol-a2-r6", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secA-q2-art",
@@ -125,9 +1002,13 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2019 OL Section A Q3(a)",
     stem: "The images below show a cutter which is part of a paper punch. The cutter appears as a parabola in elevation. The drawing shows the outline elevation of the cutter. A portion of the left hand side of the parabola, which is inscribed in rectangle ABCD is shown. V is the vertex of the parabola.",
     questionText: "Locate the remaining points on the left hand side of the parabola.",
-    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
-    { id: "dcg-2019-ol-a3a-r1", kind: "anyN", verbatim: "Division of vertical line", marks: 11, contextNote: "The scheme prices this drawing step by step: 5, 2, 2, 2 — 11 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Division of vertical line","Complete division of top line","Construction lines (2 sets)","Identify remaining points on LHS"],"perOptionSteps":[5,2,2,2]} },
+    { id: "dcg-2019-ol-a3a-r1", kind: "point", verbatim: "Division of vertical line", marks: 5 },
+    { id: "dcg-2019-ol-a3a-r2", kind: "point", verbatim: "Complete division of top line", marks: 2 },
+    { id: "dcg-2019-ol-a3a-r3", kind: "point", verbatim: "Construction lines (2 sets)", marks: 2 },
+    { id: "dcg-2019-ol-a3a-r4", kind: "point", verbatim: "Identify remaining points on LHS", marks: 2 },
+    { id: "dcg-2019-ol-a3a-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secA-q3-art",
@@ -149,7 +1030,7 @@ export const CARDS: SecCard[] = [
     questionText: "Locate the points on the right hand side of the parabola.",
     tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
     rows: [
-    { id: "dcg-2019-ol-a3b-r1", kind: "anyN", verbatim: "Locate points on RHS curve", marks: 3, contextNote: "The scheme prices this drawing step by step: 3 — 3 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Locate points on RHS curve"]} },
+    { id: "dcg-2019-ol-a3b-r1", kind: "point", verbatim: "Locate points on RHS curve", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secA-q3-art",
@@ -171,7 +1052,8 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the complete parabola.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
-    { id: "dcg-2019-ol-a3c-r1", kind: "anyN", verbatim: "Complete curve on LHS", marks: 4, contextNote: "The scheme prices this drawing step by step: 2, 2 — 4 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Complete curve on LHS","Draw curve on RHS"]} },
+    { id: "dcg-2019-ol-a3c-r1", kind: "point", verbatim: "Complete curve on LHS", marks: 2 },
+    { id: "dcg-2019-ol-a3c-r2", kind: "point", verbatim: "Draw curve on RHS", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secA-q3-art",
@@ -187,13 +1069,15 @@ export const CARDS: SecCard[] = [
     year: 2019, level: "ordinary",
     paperFileid: "LC562GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2019-ol-a4a", topicId: "design-and-communication-graphics-0-4", conceptId: "dcg-0-4",
+    id: "dcg-2019-ol-a4a", topicId: "design-and-communication-graphics-0-0", conceptId: "dcg-0-0",
     section: "A", questionRef: "2019 OL Section A Q4(a)",
     stem: "The image below shows an artist’s impression of a structure in the ‘Centre Parcs’ holiday resort, currently under construction in county Longford. The drawing on the right shows the outline of a similar structure. The design of the structure is based on lines and tangential arcs. The structure has a uniform thickness. A small portion of the inner parallel surface is also shown.",
     questionText: "Complete the drawing of the inner surface of the structure.",
-    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
+    tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
     rows: [
-    { id: "dcg-2019-ol-a4a-r1", kind: "anyN", verbatim: "Mark the correct thickness of the structure", marks: 14, contextNote: "The scheme prices this drawing step by step: 6, 8 — 14 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Mark the correct thickness of the structure","Complete the drawing of the inner surface"],"perOptionSteps":[6,8]} },
+    { id: "dcg-2019-ol-a4a-r1", kind: "point", verbatim: "Mark the correct thickness of the structure", marks: 6 },
+    { id: "dcg-2019-ol-a4a-r2", kind: "point", verbatim: "Complete the drawing of the inner surface", marks: 8 },
+    { id: "dcg-2019-ol-a4a-r3", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secA-q4-art",
@@ -209,13 +1093,15 @@ export const CARDS: SecCard[] = [
     year: 2019, level: "ordinary",
     paperFileid: "LC562GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2019-ol-a4b", topicId: "design-and-communication-graphics-0-4", conceptId: "dcg-0-4",
+    id: "dcg-2019-ol-a4b", topicId: "design-and-communication-graphics-0-0", conceptId: "dcg-0-0",
     section: "A", questionRef: "2019 OL Section A Q4(b)",
     stem: "The image below shows an artist’s impression of a structure in the ‘Centre Parcs’ holiday resort, currently under construction in county Longford. The drawing on the right shows the outline of a similar structure. The design of the structure is based on lines and tangential arcs. The structure has a uniform thickness. A small portion of the inner parallel surface is also shown.",
     questionText: "Show the exact points of contact between all arcs and lines in the structure.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
-    { id: "dcg-2019-ol-a4b-r1", kind: "anyN", verbatim: "Constructions to establish points of contact", marks: 4, contextNote: "The scheme prices this drawing step by step: 2, 1, 1 — 4 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Constructions to establish points of contact","Define points of contact on the inner surface","Define the points of contact on the outer surface"],"perOptionSteps":[2,1,1]} },
+    { id: "dcg-2019-ol-a4b-r1", kind: "point", verbatim: "Constructions to establish points of contact", marks: 2 },
+    { id: "dcg-2019-ol-a4b-r2", kind: "point", verbatim: "Define points of contact on the inner surface", marks: 1 },
+    { id: "dcg-2019-ol-a4b-r3", kind: "point", verbatim: "Define the points of contact on the outer surface", marks: 1 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secA-q4-art",
@@ -235,14 +1121,18 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2019 OL Section B Q1(a), (b)",
     stem: "The 3D graphic on the right shows a piece of equipment from a children’s play area. It consists of a shaped main structure with a crawl tunnel passing through it. Fig. B-1 below shows the elevation and incomplete plan of a model of the structure. The outline profile of the tunnel is also shown on the left below.",
     questionText: "Using the information provided in the 3D graphic and in Fig. B-1, draw the elevation and the incomplete plan of the structure as given. Complete the plan showing all lines of interpenetration.",
-    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"(24)"}, totalMarks: 24,
     rows: [
-    { id: "dcg-2019-ol-b1-r1", kind: "anyN", verbatim: "Draw the outline elevation as given", marks: 20, contextNote: "The scheme prices this drawing step by step: 10, 4, 4, 2 — 20 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":10,"options":["Draw the outline elevation as given","Complete the elevation","Draw the outline of the plan as given","Complete the plan as given"],"perOptionSteps":[10,4,4,2]} },
+    { id: "dcg-2019-ol-b1-r1", kind: "point", verbatim: "Draw the outline elevation as given", marks: 10 },
+    { id: "dcg-2019-ol-b1-r2", kind: "point", verbatim: "Complete the elevation", marks: 4 },
+    { id: "dcg-2019-ol-b1-r3", kind: "point", verbatim: "Draw the outline of the plan as given", marks: 4 },
+    { id: "dcg-2019-ol-b1-r4", kind: "point", verbatim: "Complete the plan as given", marks: 2 },
+    { id: "dcg-2019-ol-b1-r5", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secB-q1-art.png",
-          "srcHash": "741ede1285248f2d013d44e8759e03fe",
+          "srcHash": "3c97ce465af5e4651bfd3243baa541e8",
           "alt": "Question B-1 as printed. A rendered 3D view of a red children's play structure, a shaped main block with a crawl tunnel through it, beside Fig. B-1: at the left the outline profile of the tunnel dimensioned 40 wide, 30 high and 15 to the apex with a 10 top; in the centre and right, the elevation of the structure above the XY line dimensioned 35, 30, 30 and 55; and below it the incomplete plan dimensioned 130 by 80, with centre lines in green and dimension lines in red.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -259,12 +1149,14 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the plan showing all lines of interpenetration.",
     tariffModel: {"kind":"fixed","notation":"(5)"}, totalMarks: 5,
     rows: [
-    { id: "dcg-2019-ol-b1b-1-r1", kind: "anyN", verbatim: "Projection from LHS of elevation", marks: 5, contextNote: "The scheme prices this drawing step by step: 1, 2, 2 — 5 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Projection from LHS of elevation","Locate points on LHS in plan","Complete LHS of plan"],"perOptionSteps":[1,2,2]} },
+    { id: "dcg-2019-ol-b1b-1-r1", kind: "point", verbatim: "Projection from LHS of elevation", marks: 1 },
+    { id: "dcg-2019-ol-b1b-1-r2", kind: "point", verbatim: "Locate points on LHS in plan", marks: 2 },
+    { id: "dcg-2019-ol-b1b-1-r3", kind: "point", verbatim: "Complete LHS of plan", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secB-q1-art.png",
-          "srcHash": "741ede1285248f2d013d44e8759e03fe",
+          "srcHash": "3c97ce465af5e4651bfd3243baa541e8",
           "alt": "Question B-1 as printed. A rendered 3D view of a red children's play structure, a shaped main block with a crawl tunnel through it, beside Fig. B-1: at the left the outline profile of the tunnel dimensioned 40 wide, 30 high and 15 to the apex with a 10 top; in the centre and right, the elevation of the structure above the XY line dimensioned 35, 30, 30 and 55; and below it the incomplete plan dimensioned 130 by 80, with centre lines in green and dimension lines in red.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -281,12 +1173,14 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the plan showing all lines of interpenetration.",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
-    { id: "dcg-2019-ol-b1b-2-r1", kind: "anyN", verbatim: "Projections from RHS of elevation", marks: 6, contextNote: "The scheme prices this drawing step by step: 2, 2, 2 — 6 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Projections from RHS of elevation","Locate points on RHS in plan","Complete RHS of plan"]} },
+    { id: "dcg-2019-ol-b1b-2-r1", kind: "point", verbatim: "Projections from RHS of elevation", marks: 2 },
+    { id: "dcg-2019-ol-b1b-2-r2", kind: "point", verbatim: "Locate points on RHS in plan", marks: 2 },
+    { id: "dcg-2019-ol-b1b-2-r3", kind: "point", verbatim: "Complete RHS of plan", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secB-q1-art.png",
-          "srcHash": "741ede1285248f2d013d44e8759e03fe",
+          "srcHash": "3c97ce465af5e4651bfd3243baa541e8",
           "alt": "Question B-1 as printed. A rendered 3D view of a red children's play structure, a shaped main block with a crawl tunnel through it, beside Fig. B-1: at the left the outline profile of the tunnel dimensioned 40 wide, 30 high and 15 to the apex with a 10 top; in the centre and right, the elevation of the structure above the XY line dimensioned 35, 30, 30 and 55; and below it the incomplete plan dimensioned 130 by 80, with centre lines in green and dimension lines in red.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -297,18 +1191,21 @@ export const CARDS: SecCard[] = [
     year: 2019, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2019-ol-b1c", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    id: "dcg-2019-ol-b1c", topicId: "design-and-communication-graphics-0-8", conceptId: "dcg-0-8",
     section: "B", questionRef: "2019 OL Section B Q1(c)",
     stem: "The 3D graphic on the right shows a piece of equipment from a children’s play area. It consists of a shaped main structure with a crawl tunnel passing through it. Fig. B-1 below shows the elevation and incomplete plan of a model of the structure. The outline profile of the tunnel is also shown on the left below.",
     questionText: "Draw an end view of the structure.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
-    { id: "dcg-2019-ol-b1c-r1", kind: "anyN", verbatim: "Transfer of widths from plan", marks: 10, contextNote: "The scheme prices this drawing step by step: 2, 2, 3, 3 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Transfer of widths from plan","Projection of heights from elevation","End view of structure outline","Complete end view"],"perOptionSteps":[2,2,3,3]} },
+    { id: "dcg-2019-ol-b1c-r1", kind: "point", verbatim: "Transfer of widths from plan", marks: 2 },
+    { id: "dcg-2019-ol-b1c-r2", kind: "point", verbatim: "Projection of heights from elevation", marks: 2 },
+    { id: "dcg-2019-ol-b1c-r3", kind: "point", verbatim: "End view of structure outline", marks: 3 },
+    { id: "dcg-2019-ol-b1c-r4", kind: "point", verbatim: "Complete end view", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secB-q1-art.png",
-          "srcHash": "741ede1285248f2d013d44e8759e03fe",
+          "srcHash": "3c97ce465af5e4651bfd3243baa541e8",
           "alt": "Question B-1 as printed. A rendered 3D view of a red children's play structure, a shaped main block with a crawl tunnel through it, beside Fig. B-1: at the left the outline profile of the tunnel dimensioned 40 wide, 30 high and 15 to the apex with a 10 top; in the centre and right, the elevation of the structure above the XY line dimensioned 35, 30, 30 and 55; and below it the incomplete plan dimensioned 130 by 80, with centre lines in green and dimension lines in red.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -323,14 +1220,16 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2019 OL Section B Q2(a)",
     stem: "The graphic on the right shows a candle holder and a candle. Fig. B-2 below shows an incomplete isometric projection of a similar candle holder. The elevation and plan of the holder are also shown in their required positions.",
     questionText: "Draw the given equilateral triangle abc and the axonometric axes X, Y and Z.",
-    tariffModel: {"kind":"fixed","notation":"(5)"}, totalMarks: 5,
+    tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
     rows: [
-    { id: "dcg-2019-ol-b2a-r1", kind: "anyN", verbatim: "Draw equilateral triangle", marks: 5, contextNote: "The scheme prices this drawing step by step: 3, 2 — 5 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Draw equilateral triangle","Draw X, Y and Z axes"],"perOptionSteps":[3,2]} },
+    { id: "dcg-2019-ol-b2a-r1", kind: "point", verbatim: "Draw equilateral triangle", marks: 3 },
+    { id: "dcg-2019-ol-b2a-r2", kind: "point", verbatim: "Draw X, Y and Z axes", marks: 2 },
+    { id: "dcg-2019-ol-b2a-r3", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secB-q2-art.png",
-          "srcHash": "cab65ebeecb43c142720076dfe5d908c",
+          "srcHash": "e938a41aa70c8782a8599ab576adeaf6",
           "alt": "Question B-2 as printed. Rendered 3D views of a red candle and a wooden candle holder, beside Fig. B-2: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z and the equilateral triangle abc drawn in magenta and green, a 30 degree angle marked, the elevation of the tapered holder positioned at the top right dimensioned 40, 35, 45 and 20, and the square plan below dimensioned 100 across and 60 on each side with a 45 degree angle and a circular hole of radius R15.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -347,12 +1246,17 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the elevation and plan, positioned as shown.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
-    { id: "dcg-2019-ol-b2b-r1", kind: "anyN", verbatim: "Projections to set up elevation", marks: 10, contextNote: "The scheme prices this drawing step by step: 2, 1, 2, 2, 1, 2 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":6,"perOption":2,"options":["Projections to set up elevation","Semicircle in elevation","Draw elevation in the correct position","Projections to set up plan","Semicircle in plan (or 45° lines)","Draw plan in the correct position"],"perOptionSteps":[2,1,2,2,1,2]} },
+    { id: "dcg-2019-ol-b2b-r1", kind: "point", verbatim: "Projections to set up elevation", marks: 2 },
+    { id: "dcg-2019-ol-b2b-r2", kind: "point", verbatim: "Semicircle in elevation", marks: 1 },
+    { id: "dcg-2019-ol-b2b-r3", kind: "point", verbatim: "Draw elevation in the correct position", marks: 2 },
+    { id: "dcg-2019-ol-b2b-r4", kind: "point", verbatim: "Projections to set up plan", marks: 2 },
+    { id: "dcg-2019-ol-b2b-r5", kind: "point", verbatim: "Semicircle in plan (or 45° lines)", marks: 1 },
+    { id: "dcg-2019-ol-b2b-r6", kind: "point", verbatim: "Draw plan in the correct position", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secB-q2-art.png",
-          "srcHash": "cab65ebeecb43c142720076dfe5d908c",
+          "srcHash": "e938a41aa70c8782a8599ab576adeaf6",
           "alt": "Question B-2 as printed. Rendered 3D views of a red candle and a wooden candle holder, beside Fig. B-2: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z and the equilateral triangle abc drawn in magenta and green, a 30 degree angle marked, the elevation of the tapered holder positioned at the top right dimensioned 40, 35, 45 and 20, and the square plan below dimensioned 100 across and 60 on each side with a 45 degree angle and a circular hole of radius R15.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -369,12 +1273,16 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the axonometric projection of the body of the candle holder.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
-    { id: "dcg-2019-ol-b2c-r1", kind: "anyN", verbatim: "Projections from elevation", marks: 10, contextNote: "The scheme prices this drawing step by step: 2, 2, 2, 2, 2 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":2,"options":["Projections from elevation","Projections from plan","Axonometric projection of lower section","Axonometric projection inclined surfaces","Axonometric projection of top outline"]} },
+    { id: "dcg-2019-ol-b2c-r1", kind: "point", verbatim: "Projections from elevation", marks: 2 },
+    { id: "dcg-2019-ol-b2c-r2", kind: "point", verbatim: "Projections from plan", marks: 2 },
+    { id: "dcg-2019-ol-b2c-r3", kind: "point", verbatim: "Axonometric projection of lower section", marks: 2 },
+    { id: "dcg-2019-ol-b2c-r4", kind: "point", verbatim: "Axonometric projection inclined surfaces", marks: 2 },
+    { id: "dcg-2019-ol-b2c-r5", kind: "point", verbatim: "Axonometric projection of top outline", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secB-q2-art.png",
-          "srcHash": "cab65ebeecb43c142720076dfe5d908c",
+          "srcHash": "e938a41aa70c8782a8599ab576adeaf6",
           "alt": "Question B-2 as printed. Rendered 3D views of a red candle and a wooden candle holder, beside Fig. B-2: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z and the equilateral triangle abc drawn in magenta and green, a 30 degree angle marked, the elevation of the tapered holder positioned at the top right dimensioned 40, 35, 45 and 20, and the square plan below dimensioned 100 across and 60 on each side with a 45 degree angle and a circular hole of radius R15.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -391,12 +1299,16 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the axonometric projection of the circular hole on the top surface of the candle holder.",
     tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
     rows: [
-    { id: "dcg-2019-ol-b2d-r1", kind: "anyN", verbatim: "Divisions on circle in plan", marks: 16, contextNote: "The scheme prices this drawing step by step: 5, 5, 2, 2, 2 — 16 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":5,"options":["Divisions on circle in plan","Corresponding divisions in elevation","Projections from circle in plan","Projections from elevation","Draw axonometric projection of the circular hole"],"perOptionSteps":[5,5,2,2,2]} },
+    { id: "dcg-2019-ol-b2d-r1", kind: "point", verbatim: "Divisions on circle in plan", marks: 5 },
+    { id: "dcg-2019-ol-b2d-r2", kind: "point", verbatim: "Corresponding divisions in elevation", marks: 5 },
+    { id: "dcg-2019-ol-b2d-r3", kind: "point", verbatim: "Projections from circle in plan", marks: 2 },
+    { id: "dcg-2019-ol-b2d-r4", kind: "point", verbatim: "Projections from elevation", marks: 2 },
+    { id: "dcg-2019-ol-b2d-r5", kind: "point", verbatim: "Draw axonometric projection of the circular hole", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secB-q2-art.png",
-          "srcHash": "cab65ebeecb43c142720076dfe5d908c",
+          "srcHash": "e938a41aa70c8782a8599ab576adeaf6",
           "alt": "Question B-2 as printed. Rendered 3D views of a red candle and a wooden candle holder, beside Fig. B-2: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z and the equilateral triangle abc drawn in magenta and green, a 30 degree angle marked, the elevation of the tapered holder positioned at the top right dimensioned 40, 35, 45 and 20, and the square plan below dimensioned 100 across and 60 on each side with a 45 degree angle and a circular hole of radius R15.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -407,13 +1319,16 @@ export const CARDS: SecCard[] = [
     year: 2019, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2019-ol-b3a", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2019-ol-b3a", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2019 OL Section B Q3(a)",
     stem: "The graphic on the right shows steps and portion of a wall. Fig. B-3 below shows an isometric view of a similar structure.",
     questionText: "Draw the elevation of the complete structure looking in the direction of the arrow.",
-    tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
-    { id: "dcg-2019-ol-b3a-r1", kind: "anyN", verbatim: "Draw wall", marks: 16, contextNote: "The scheme prices this drawing step by step: 4, 6, 6 — 16 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Draw wall","Outline of steps","Complete structure"],"perOptionSteps":[4,6,6]} },
+    { id: "dcg-2019-ol-b3a-r1", kind: "point", verbatim: "Draw wall", marks: 4 },
+    { id: "dcg-2019-ol-b3a-r2", kind: "point", verbatim: "Outline of steps", marks: 6 },
+    { id: "dcg-2019-ol-b3a-r3", kind: "point", verbatim: "Complete structure", marks: 6 },
+    { id: "dcg-2019-ol-b3a-r4", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secB-q3-art",
@@ -429,13 +1344,15 @@ export const CARDS: SecCard[] = [
     year: 2019, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2019-ol-b3b", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2019-ol-b3b", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2019 OL Section B Q3(b)",
     stem: "The graphic on the right shows steps and portion of a wall. Fig. B-3 below shows an isometric view of a similar structure.",
     questionText: "Project a plan from the elevation.",
     tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
-    { id: "dcg-2019-ol-b3b-r1", kind: "anyN", verbatim: "Draw wall", marks: 12, contextNote: "The scheme prices this drawing step by step: 4, 4, 4 — 12 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Draw wall","Outline of steps","Complete elevation"]} },
+    { id: "dcg-2019-ol-b3b-r1", kind: "point", verbatim: "Draw wall", marks: 4 },
+    { id: "dcg-2019-ol-b3b-r2", kind: "point", verbatim: "Outline of steps", marks: 4 },
+    { id: "dcg-2019-ol-b3b-r3", kind: "point", verbatim: "Complete elevation", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secB-q3-art",
@@ -451,13 +1368,17 @@ export const CARDS: SecCard[] = [
     year: 2019, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2019-ol-b3c", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2019-ol-b3c", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2019 OL Section B Q3(c)",
     stem: "The graphic on the right shows steps and portion of a wall. Fig. B-3 below shows an isometric view of a similar structure.",
     questionText: "Draw the auxiliary elevation of the structure, projected from the plan, which will include the true shape of surface A.",
     tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
-    { id: "dcg-2019-ol-b3c-r1", kind: "anyN", verbatim: "X1Y1 parallel to plan of surface A", marks: 13, contextNote: "The scheme prices this drawing step by step: 1, 1, 3, 3, 5 — 13 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":1,"options":["X1Y1 parallel to plan of surface A","Projections from plan","Transfer of heights from elevation","Draw surface A","Complete auxiliary elevation"],"perOptionSteps":[1,1,3,3,5]} },
+    { id: "dcg-2019-ol-b3c-r1", kind: "point", verbatim: "X1Y1 parallel to plan of surface A", marks: 1 },
+    { id: "dcg-2019-ol-b3c-r2", kind: "point", verbatim: "Projections from plan", marks: 1 },
+    { id: "dcg-2019-ol-b3c-r3", kind: "point", verbatim: "Transfer of heights from elevation", marks: 3 },
+    { id: "dcg-2019-ol-b3c-r4", kind: "point", verbatim: "Draw surface A", marks: 3 },
+    { id: "dcg-2019-ol-b3c-r5", kind: "point", verbatim: "Complete auxiliary elevation", marks: 5 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secB-q3-art",
@@ -477,14 +1398,31 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 OL Section C Q1(a)",
     stem: "The image on the right shows an aerial view of an open mine. A portion of a similar mine area is represented on the accompanying map, located on the back page of Section A. The map shows ground contours at five metre vertical intervals.",
     questionText: "On the map supplied, draw a vertical section (profile) on the line AB.",
-    tariffModel: {"kind":"fixed","notation":"(30)"}, totalMarks: 30,
+    tariffModel: {"kind":"fixed","notation":"(34)"}, totalMarks: 34,
     rows: [
-    { id: "dcg-2019-ol-c1a-r1", kind: "anyN", verbatim: "Measure heights and draw horizontal lines", marks: 30, contextNote: "The scheme prices this drawing step by step: 12, 8, 10 — 30 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":12,"options":["Measure heights and draw horizontal lines","Projections from intersections between line AB and contours","Draw the profile"],"perOptionSteps":[12,8,10]} },
+    { id: "dcg-2019-ol-c1a-r1", kind: "point", verbatim: "Measure heights and draw horizontal lines", marks: 12 },
+    { id: "dcg-2019-ol-c1a-r2", kind: "point", verbatim: "Projections from intersections between line AB and contours", marks: 8 },
+    { id: "dcg-2019-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 10 },
+    { id: "dcg-2019-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q1-art.png",
-          "srcHash": "24509b60a9b7ac17b0a3f40a8474c402",
+          "srcHash": "19b3625ae16a103e978b4eca8c89d6dd",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and an aerial photograph of an open-cast mine; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -501,12 +1439,27 @@ export const CARDS: SecCard[] = [
     questionText: "Points C, D and E are outcrop points on the surface of a stratum of ore. Draw the plan and elevation of the triangle CDE.",
     tariffModel: {"kind":"fixed","notation":"(5)"}, totalMarks: 5,
     rows: [
-    { id: "dcg-2019-ol-c1b-r1", kind: "anyN", verbatim: "Plan of triangle CDE", marks: 5, contextNote: "The scheme prices this drawing step by step: 4, 1 — 5 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Plan of triangle CDE","Elevation of triangle CDE"],"perOptionSteps":[4,1]} },
+    { id: "dcg-2019-ol-c1b-r1", kind: "point", verbatim: "Plan of triangle CDE", marks: 4 },
+    { id: "dcg-2019-ol-c1b-r2", kind: "point", verbatim: "Elevation of triangle CDE", marks: 1 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q1-art.png",
-          "srcHash": "24509b60a9b7ac17b0a3f40a8474c402",
+          "srcHash": "19b3625ae16a103e978b4eca8c89d6dd",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and an aerial photograph of an open-cast mine; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -523,12 +1476,29 @@ export const CARDS: SecCard[] = [
     questionText: "Determine the strike and dip of the stratum.",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
-    { id: "dcg-2019-ol-c1c-r1", kind: "anyN", verbatim: "Horizontal line in elevation", marks: 6, contextNote: "The scheme prices this drawing step by step: 1, 1, 2, 2 — 6 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Horizontal line in elevation","Strike in plan","Viewing direction for dip","Determine dip (2 heights, edge view)"],"perOptionSteps":[1,1,2,2]} },
+    { id: "dcg-2019-ol-c1c-r1", kind: "point", verbatim: "Horizontal line in elevation", marks: 1 },
+    { id: "dcg-2019-ol-c1c-r2", kind: "point", verbatim: "Strike in plan", marks: 1 },
+    { id: "dcg-2019-ol-c1c-r3", kind: "point", verbatim: "Viewing direction for dip", marks: 2 },
+    { id: "dcg-2019-ol-c1c-r4", kind: "point", verbatim: "Determine dip (2 heights, edge view)", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q1-art.png",
-          "srcHash": "24509b60a9b7ac17b0a3f40a8474c402",
+          "srcHash": "19b3625ae16a103e978b4eca8c89d6dd",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and an aerial photograph of an open-cast mine; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -543,14 +1513,19 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 OL Section C Q2(a)",
     stem: "The image on the right shows a wooden watch face. The top surface of the watch face is a hyperbolic paraboloid. The watch face is a square in plan.",
     questionText: "Draw the given plan and elevation of the hyperbolic paraboloid surface of the watch.",
-    tariffModel: {"kind":"fixed","notation":"(25)"}, totalMarks: 25,
+    tariffModel: {"kind":"fixed","notation":"(29)"}, totalMarks: 29,
     rows: [
-    { id: "dcg-2019-ol-c2a-r1", kind: "anyN", verbatim: "Outline of surface ABCD in plan", marks: 25, contextNote: "The scheme prices this drawing step by step: 6, 6, 6, 5, 2 — 25 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":6,"options":["Outline of surface ABCD in plan","Elements in plan (incl. division)","Outline of surface in elevation","Elements in elevation (incl. division or proj.)","Completion of elevation (curve and hidden detail)"],"perOptionSteps":[6,6,6,5,2]} },
+    { id: "dcg-2019-ol-c2a-r1", kind: "point", verbatim: "Outline of surface ABCD in plan", marks: 6 },
+    { id: "dcg-2019-ol-c2a-r2", kind: "point", verbatim: "Elements in plan (incl. division)", marks: 6 },
+    { id: "dcg-2019-ol-c2a-r3", kind: "point", verbatim: "Outline of surface in elevation", marks: 6 },
+    { id: "dcg-2019-ol-c2a-r4", kind: "point", verbatim: "Elements in elevation (incl. division or proj.)", marks: 5 },
+    { id: "dcg-2019-ol-c2a-r5", kind: "point", verbatim: "Completion of elevation (curve and hidden detail)", marks: 2 },
+    { id: "dcg-2019-ol-c2a-r6", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q2-art.png",
-          "srcHash": "bf2ed72222856b11ebd45077cf3195c8",
+          "srcHash": "200fdacd814f2469b7f43ca5918fec34",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a wooden watch with a saddle-shaped face, beside Fig. C-2: above the XY line the elevation of the hyperbolic paraboloid, two straight edges meeting at B and D over a sagging green curve, dimensioned 40 high, with the corners A and C on the XY line; below it the plan, a square ABCD of 100 side set at 60 degrees to the horizontal and ruled with green elements in both directions.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -567,12 +1542,15 @@ export const CARDS: SecCard[] = [
     questionText: "Project an end view of this hyperbolic paraboloid surface.",
     tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
     rows: [
-    { id: "dcg-2019-ol-c2b-r1", kind: "anyN", verbatim: "Determine heights and widths for surface ABCD", marks: 16, contextNote: "The scheme prices this drawing step by step: 6, 4, 4, 2 — 16 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":6,"options":["Determine heights and widths for surface ABCD","Draw the outline of hyperbolic paraboloid surface","Draw elements","Completion of end view (curve and hidden detail)"],"perOptionSteps":[6,4,4,2]} },
+    { id: "dcg-2019-ol-c2b-r1", kind: "point", verbatim: "Determine heights and widths for surface ABCD", marks: 6 },
+    { id: "dcg-2019-ol-c2b-r2", kind: "point", verbatim: "Draw the outline of hyperbolic paraboloid surface", marks: 4 },
+    { id: "dcg-2019-ol-c2b-r3", kind: "point", verbatim: "Draw elements", marks: 4 },
+    { id: "dcg-2019-ol-c2b-r4", kind: "point", verbatim: "Completion of end view (curve and hidden detail)", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q2-art.png",
-          "srcHash": "bf2ed72222856b11ebd45077cf3195c8",
+          "srcHash": "200fdacd814f2469b7f43ca5918fec34",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a wooden watch with a saddle-shaped face, beside Fig. C-2: above the XY line the elevation of the hyperbolic paraboloid, two straight edges meeting at B and D over a sagging green curve, dimensioned 40 high, with the corners A and C on the XY line; below it the plan, a square ABCD of 100 side set at 60 degrees to the horizontal and ruled with green elements in both directions.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -587,14 +1565,18 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 OL Section C Q3(a)",
     stem: "The graphic on the right shows a measuring tape and a storage box for the tape. The projections of the storage box are shown in Fig. C-3 below.",
     questionText: "Draw the given views of the storage box, showing clearly how you located the centre of the 40mm arc.",
-    tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
+    tariffModel: {"kind":"fixed","notation":"(27)"}, totalMarks: 27,
     rows: [
-    { id: "dcg-2019-ol-c3a-r1", kind: "anyN", verbatim: "Draw straight edges in elevation", marks: 23, contextNote: "The scheme prices this drawing step by step: 10, 3, 6, 4 — 23 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":10,"options":["Draw straight edges in elevation","Determine centre and draw arc ……(1,2)","Draw outline plan","Complete plan"],"perOptionSteps":[10,3,6,4]} },
+    { id: "dcg-2019-ol-c3a-r1", kind: "point", verbatim: "Draw straight edges in elevation", marks: 10 },
+    { id: "dcg-2019-ol-c3a-r2", kind: "criterion", verbatim: "Determine centre and draw arc ……(1,2)", marks: 3, permittedMarks: [0,1,2,3] },
+    { id: "dcg-2019-ol-c3a-r3", kind: "point", verbatim: "Draw outline plan", marks: 6 },
+    { id: "dcg-2019-ol-c3a-r4", kind: "point", verbatim: "Complete plan", marks: 4 },
+    { id: "dcg-2019-ol-c3a-r5", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q3-art.png",
-          "srcHash": "a8586c77fc12bc348aeccc1096e687a6",
+          "srcHash": "b117e994211dd11c9643af98f141084a",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a yellow Stanley tape measure and its storage box, beside Fig. C-3: the elevation of the box, a rectangle with a sloping top and a quarter arc of radius R40 whose centre is marked, dimensioned 65, 80, 60, 70 and 15; and below it the plan, a plain rectangle 25 deep.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -611,12 +1593,13 @@ export const CARDS: SecCard[] = [
     questionText: "Project an end view of the storage box.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2019-ol-c3b-r1", kind: "anyN", verbatim: "Draw outline", marks: 8, contextNote: "The scheme prices this drawing step by step: 6, 2 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Draw outline","Complete end view"],"perOptionSteps":[6,2]} },
+    { id: "dcg-2019-ol-c3b-r1", kind: "point", verbatim: "Draw outline", marks: 6 },
+    { id: "dcg-2019-ol-c3b-r2", kind: "point", verbatim: "Complete end view", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q3-art.png",
-          "srcHash": "a8586c77fc12bc348aeccc1096e687a6",
+          "srcHash": "b117e994211dd11c9643af98f141084a",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a yellow Stanley tape measure and its storage box, beside Fig. C-3: the elevation of the box, a rectangle with a sloping top and a quarter arc of radius R40 whose centre is marked, dimensioned 65, 80, 60, 70 and 15; and below it the plan, a plain rectangle 25 deep.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -633,12 +1616,12 @@ export const CARDS: SecCard[] = [
     questionText: "Draw a one-piece surface development of the storage box.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
-    { id: "dcg-2019-ol-c3c-r1", kind: "anyN", verbatim: "Appropriate layout of surface development", marks: 10, contextNote: "The scheme prices this drawing step by step: 1, 2, 2, 1, 1, 1, 1, 1 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":8,"perOption":1,"options":["Appropriate layout of surface development","Development of bottom surface","Development of front and back surfaces","Development of vertical left surface","Development of vertical right surface","Development of top surface","Division of arc","Development of curved surface"],"perOptionSteps":[1,2,2,1,1,1,1,1]} },
+    { id: "dcg-2019-ol-c3c-r1", kind: "criterion", verbatim: "Surface Development", marks: 10, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,10], parts: [{"id":"step-1","verbatim":"Appropriate layout of surface development","marks":1,"permittedMarks":[0,1]},{"id":"step-2","verbatim":"Development of bottom surface","marks":2,"permittedMarks":[0,2]},{"id":"step-3","verbatim":"Development of front and back surfaces","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Development of vertical left surface","marks":1,"permittedMarks":[0,1]},{"id":"step-5","verbatim":"Development of vertical right surface","marks":1,"permittedMarks":[0,1]},{"id":"step-6","verbatim":"Development of top surface","marks":1,"permittedMarks":[0,1]},{"id":"step-7","verbatim":"Division of arc","marks":1,"permittedMarks":[0,1]},{"id":"step-8","verbatim":"Development of curved surface","marks":1,"permittedMarks":[0,1]}] },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q3-art.png",
-          "srcHash": "a8586c77fc12bc348aeccc1096e687a6",
+          "srcHash": "b117e994211dd11c9643af98f141084a",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a yellow Stanley tape measure and its storage box, beside Fig. C-3: the elevation of the box, a rectangle with a sloping top and a quarter arc of radius R40 whose centre is marked, dimensioned 65, 80, 60, 70 and 15; and below it the plan, a plain rectangle 25 deep.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -653,14 +1636,15 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 OL Section C Q4(a)",
     stem: "Cams, cranks and pistons are parts of the engine of a motorbike.",
     questionText: "The graphic shows an enlarged view of a cam from a motorbike engine. A cam, similar to the one shown, imparts the following motion to an inline knife-edge follower: to 30° Dwell 30° to 120° Rise 70mm with uniform velocity 120° to 180° Fall 14mm with uniform velocity 180° to 360° Fall 56mm with simple harmonic motion. Draw the displacement diagram for the cam. Note: It is not necessary to draw the cam profile. (In the displacement diagram, use a distance of 15mm to represent each 30° interval.)",
-    tariffModel: {"kind":"fixed","notation":"(22)"}, totalMarks: 22,
+    tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
     rows: [
-    { id: "dcg-2019-ol-c4a-r1", kind: "anyN", verbatim: "360° division (widths on displacement diagram)", marks: 22, contextNote: "The scheme prices this drawing step by step: 4, 1, 5, 2, 2, 2, 3, 3 — 22 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":8,"perOption":4,"options":["360° division (widths on displacement diagram)","Correct use of 70mm height","Establish follower position at 0°, 30°, 120°, 180° and 360°","0° to 30°, Dwell","30° to 120°, Rise 70mm with Uniform Velocity","120° to 180°, Fall 14mm with Uniform Velocity","180° to 360°, Simple Harmonic Motion (SHM) construction","Complete Displacement Diagram"],"perOptionSteps":[4,1,5,2,2,2,3,3]} },
+    { id: "dcg-2019-ol-c4a-r1", kind: "criterion", verbatim: "Displacement Diagram", marks: 22, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,22], parts: [{"id":"step-1","verbatim":"360° division (widths on displacement diagram)","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Correct use of 70mm height","marks":1,"permittedMarks":[0,1]},{"id":"step-3","verbatim":"Establish follower position at 0°, 30°, 120°, 180° and 360°","marks":5,"permittedMarks":[0,5]},{"id":"step-4","verbatim":"0° to 30°, Dwell","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"30° to 120°, Rise 70mm with Uniform Velocity","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"120° to 180°, Fall 14mm with Uniform Velocity","marks":2,"permittedMarks":[0,2]},{"id":"step-7","verbatim":"180° to 360°, Simple Harmonic Motion (SHM) construction","marks":3,"permittedMarks":[0,3]},{"id":"step-8","verbatim":"Complete Displacement Diagram","marks":3,"permittedMarks":[0,3]}] },
+    { id: "dcg-2019-ol-c4a-r2", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q4-art.png",
-          "srcHash": "00d88117688d5a02a1a25ed651b57ea6",
+          "srcHash": "27b983d8eae2b5d2d85d55c474151598",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) prints a photograph of a red Ducati motorbike and a rendered camshaft with the displacement data as text, and no drawing. Part (b) prints a rendered view of a piston-and-crank assembly beside Fig. C-4(b): a line diagram with the crank OA of 45 horizontal from O, the rod AC of 100 rising to C on a green vertical axis, the point B marked on AC at 35 from A, and blue arrows showing C moving on the axis and A turning clockwise.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -677,12 +1661,17 @@ export const CARDS: SecCard[] = [
     questionText: "The graphic below shows an enlarged view of the piston and crank mechanism from the motorbike engine. Fig. C-4(b) shows a line diagram for this mechanism. Crank OA and the rod AC are pin jointed at A. Point B is located on the rigid rod AC as shown. Crank OA rotates in a clockwise direction, about point O, for one revolution. Point C moves on the vertical axis as shown. Plot the locus of point B for this movement.",
     tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
-    { id: "dcg-2019-ol-c4b-r1", kind: "anyN", verbatim: "Set up line diagram (O, A, B & C.)", marks: 19, contextNote: "The scheme prices this drawing step by step: 8, 2, 2, 2, 2, 3 — 19 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":6,"perOption":8,"options":["Set up line diagram (O, A, B & C.)","Draw circle about O","Division of circle","Arm AC in rotated positions","Points on locus","Draw locus"],"perOptionSteps":[8,2,2,2,2,3]} },
+    { id: "dcg-2019-ol-c4b-r1", kind: "point", verbatim: "Set up line diagram (O, A, B & C.)", marks: 8 },
+    { id: "dcg-2019-ol-c4b-r2", kind: "point", verbatim: "Draw circle about O", marks: 2 },
+    { id: "dcg-2019-ol-c4b-r3", kind: "point", verbatim: "Division of circle", marks: 2 },
+    { id: "dcg-2019-ol-c4b-r4", kind: "point", verbatim: "Arm AC in rotated positions", marks: 2 },
+    { id: "dcg-2019-ol-c4b-r5", kind: "point", verbatim: "Points on locus", marks: 2 },
+    { id: "dcg-2019-ol-c4b-r6", kind: "point", verbatim: "Draw locus", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q4-art.png",
-          "srcHash": "00d88117688d5a02a1a25ed651b57ea6",
+          "srcHash": "27b983d8eae2b5d2d85d55c474151598",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) prints a photograph of a red Ducati motorbike and a rendered camshaft with the displacement data as text, and no drawing. Part (b) prints a rendered view of a piston-and-crank assembly beside Fig. C-4(b): a line diagram with the crank OA of 45 horizontal from O, the rod AC of 100 rising to C on a green vertical axis, the point B marked on AC at 35 from A, and blue arrows showing C moving on the axis and A turning clockwise.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -697,14 +1686,16 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 OL Section C Q5 — Assembly",
     stem: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.) Part Name Qty. Base Upright Branch Cap",
     questionText: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.)",
-    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
     rows: [
-    { id: "dcg-2019-ol-c5-1-r1", kind: "anyN", verbatim: "Relative positioning of components", marks: 11, contextNote: "The scheme prices this drawing step by step: 8, 3 — 11 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":8,"options":["Relative positioning of components","Use of Section View"],"perOptionSteps":[8,3]} },
+    { id: "dcg-2019-ol-c5-1-r1", kind: "point", verbatim: "Relative positioning of components", marks: 8 },
+    { id: "dcg-2019-ol-c5-1-r2", kind: "point", verbatim: "Use of Section View", marks: 3 },
+    { id: "dcg-2019-ol-c5-1-r3", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q5-art.png",
-          "srcHash": "0b5e1f5738b90d1bb8a944b4510d8ba4",
+          "srcHash": "8840765403a193ca9d585974a6cfa1b2",
           "alt": "Question C-5, Assemblies, as printed. Photographs of two mugs, beside Fig. C-5: dimensioned orthographic details of the four numbered parts of a mug tree -- the base with Ø50 and Ø20 diameters, the turned upright dimensioned 35, 45, 45, 55 with Ø10 holes, a branch of Ø10 and 55 plus 25 long, and the cap with R35 and Ø30 -- with the horizontal section line A-A drawn through the R75 and R90 plan, a rendered 3D view of the loose parts, and a parts-list table naming base, upright, branch and cap with quantities 1, 1, 6 and 1.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -721,12 +1712,13 @@ export const CARDS: SecCard[] = [
     questionText: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2019-ol-c5-2-r1", kind: "anyN", verbatim: "Outline of base", marks: 8, contextNote: "The scheme prices this drawing step by step: 6, 2 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Outline of base","Spigot"],"perOptionSteps":[6,2]} },
+    { id: "dcg-2019-ol-c5-2-r1", kind: "point", verbatim: "Outline of base", marks: 6 },
+    { id: "dcg-2019-ol-c5-2-r2", kind: "point", verbatim: "Spigot", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q5-art.png",
-          "srcHash": "0b5e1f5738b90d1bb8a944b4510d8ba4",
+          "srcHash": "8840765403a193ca9d585974a6cfa1b2",
           "alt": "Question C-5, Assemblies, as printed. Photographs of two mugs, beside Fig. C-5: dimensioned orthographic details of the four numbered parts of a mug tree -- the base with Ø50 and Ø20 diameters, the turned upright dimensioned 35, 45, 45, 55 with Ø10 holes, a branch of Ø10 and 55 plus 25 long, and the cap with R35 and Ø30 -- with the horizontal section line A-A drawn through the R75 and R90 plan, a rendered 3D view of the loose parts, and a parts-list table naming base, upright, branch and cap with quantities 1, 1, 6 and 1.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -743,12 +1735,14 @@ export const CARDS: SecCard[] = [
     questionText: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
     rows: [
-    { id: "dcg-2019-ol-c5-3-r1", kind: "anyN", verbatim: "Outline", marks: 9, contextNote: "The scheme prices this drawing step by step: 4, 2, 3 — 9 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Outline","Hole for spigot","Remaining holes"],"perOptionSteps":[4,2,3]} },
+    { id: "dcg-2019-ol-c5-3-r1", kind: "point", verbatim: "Outline", marks: 4 },
+    { id: "dcg-2019-ol-c5-3-r2", kind: "point", verbatim: "Hole for spigot", marks: 2 },
+    { id: "dcg-2019-ol-c5-3-r3", kind: "point", verbatim: "Remaining holes", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q5-art.png",
-          "srcHash": "0b5e1f5738b90d1bb8a944b4510d8ba4",
+          "srcHash": "8840765403a193ca9d585974a6cfa1b2",
           "alt": "Question C-5, Assemblies, as printed. Photographs of two mugs, beside Fig. C-5: dimensioned orthographic details of the four numbered parts of a mug tree -- the base with Ø50 and Ø20 diameters, the turned upright dimensioned 35, 45, 45, 55 with Ø10 holes, a branch of Ø10 and 55 plus 25 long, and the cap with R35 and Ø30 -- with the horizontal section line A-A drawn through the R75 and R90 plan, a rendered 3D view of the loose parts, and a parts-list table naming base, upright, branch and cap with quantities 1, 1, 6 and 1.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -765,12 +1759,13 @@ export const CARDS: SecCard[] = [
     questionText: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
-    { id: "dcg-2019-ol-c5-4-r1", kind: "anyN", verbatim: "Profile view", marks: 4, contextNote: "The scheme prices this drawing step by step: 3, 1 — 4 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Profile view","Circular section"],"perOptionSteps":[3,1]} },
+    { id: "dcg-2019-ol-c5-4-r1", kind: "point", verbatim: "Profile view", marks: 3 },
+    { id: "dcg-2019-ol-c5-4-r2", kind: "point", verbatim: "Circular section", marks: 1 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q5-art.png",
-          "srcHash": "0b5e1f5738b90d1bb8a944b4510d8ba4",
+          "srcHash": "8840765403a193ca9d585974a6cfa1b2",
           "alt": "Question C-5, Assemblies, as printed. Photographs of two mugs, beside Fig. C-5: dimensioned orthographic details of the four numbered parts of a mug tree -- the base with Ø50 and Ø20 diameters, the turned upright dimensioned 35, 45, 45, 55 with Ø10 holes, a branch of Ø10 and 55 plus 25 long, and the cap with R35 and Ø30 -- with the horizontal section line A-A drawn through the R75 and R90 plan, a rendered 3D view of the loose parts, and a parts-list table naming base, upright, branch and cap with quantities 1, 1, 6 and 1.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -787,12 +1782,13 @@ export const CARDS: SecCard[] = [
     questionText: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
-    { id: "dcg-2019-ol-c5-5-r1", kind: "anyN", verbatim: "Locate arc centre", marks: 6, contextNote: "The scheme prices this drawing step by step: 2, 4 — 6 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Locate arc centre","Draw cap"],"perOptionSteps":[2,4]} },
+    { id: "dcg-2019-ol-c5-5-r1", kind: "point", verbatim: "Locate arc centre", marks: 2 },
+    { id: "dcg-2019-ol-c5-5-r2", kind: "point", verbatim: "Draw cap", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q5-art.png",
-          "srcHash": "0b5e1f5738b90d1bb8a944b4510d8ba4",
+          "srcHash": "8840765403a193ca9d585974a6cfa1b2",
           "alt": "Question C-5, Assemblies, as printed. Photographs of two mugs, beside Fig. C-5: dimensioned orthographic details of the four numbered parts of a mug tree -- the base with Ø50 and Ø20 diameters, the turned upright dimensioned 35, 45, 45, 55 with Ø10 holes, a branch of Ø10 and 55 plus 25 long, and the cap with R35 and Ø30 -- with the horizontal section line A-A drawn through the R75 and R90 plan, a rendered 3D view of the loose parts, and a parts-list table naming base, upright, branch and cap with quantities 1, 1, 6 and 1.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -809,12 +1805,12 @@ export const CARDS: SecCard[] = [
     questionText: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
     rows: [
-    { id: "dcg-2019-ol-c5-6-r1", kind: "anyN", verbatim: "Hatching and Centrelines …(2,1)", marks: 3, contextNote: "The scheme prices this drawing step by step: 3 — 3 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Hatching and Centrelines …(2,1)"]} },
+    { id: "dcg-2019-ol-c5-6-r1", kind: "criterion", verbatim: "Hatching and Centrelines …(2,1)", marks: 3, permittedMarks: [0,1,2,3] },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q5-art.png",
-          "srcHash": "0b5e1f5738b90d1bb8a944b4510d8ba4",
+          "srcHash": "8840765403a193ca9d585974a6cfa1b2",
           "alt": "Question C-5, Assemblies, as printed. Photographs of two mugs, beside Fig. C-5: dimensioned orthographic details of the four numbered parts of a mug tree -- the base with Ø50 and Ø20 diameters, the turned upright dimensioned 35, 45, 45, 55 with Ø10 holes, a branch of Ø10 and 55 plus 25 long, and the cap with R35 and Ø30 -- with the horizontal section line A-A drawn through the R75 and R90 plan, a rendered 3D view of the loose parts, and a parts-list table naming base, upright, branch and cap with quantities 1, 1, 6 and 1.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission"
@@ -829,9 +1825,13 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Section A Q1(a)",
     stem: "The image below shows a bee hive hut which is situated on the side of the M1 motorway near Drogheda, Co. Louth. The outline of the structure is a parabola. The drawing on the right shows a portion of a similar parabola, which is inscribed in rectangle ABCD. V is the vertex of the curve.",
     questionText: "Locate the remaining points on the right hand side of the parabola.",
-    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
-    { id: "dcg-2021-ol-a1a-r1", kind: "anyN", verbatim: "Complete division of line CD", marks: 11, contextNote: "The scheme prices this drawing step by step: 4, 3, 2, 2 — 11 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Complete division of line CD","Complete division of line VC","Construction lines (2 sets)","Identify remaining points on RHS"],"perOptionSteps":[4,3,2,2]} },
+    { id: "dcg-2021-ol-a1a-r1", kind: "point", verbatim: "Complete division of line CD", marks: 4 },
+    { id: "dcg-2021-ol-a1a-r2", kind: "point", verbatim: "Complete division of line VC", marks: 3 },
+    { id: "dcg-2021-ol-a1a-r3", kind: "point", verbatim: "Construction lines (2 sets)", marks: 2 },
+    { id: "dcg-2021-ol-a1a-r4", kind: "point", verbatim: "Identify remaining points on RHS", marks: 2 },
+    { id: "dcg-2021-ol-a1a-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secA-q1-art",
@@ -853,7 +1853,7 @@ export const CARDS: SecCard[] = [
     questionText: "Locate the points on the left hand side of the parabola.",
     tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
     rows: [
-    { id: "dcg-2021-ol-a1b-r1", kind: "anyN", verbatim: "Locate points on LHS curve", marks: 3, contextNote: "The scheme prices this drawing step by step: 3 — 3 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Locate points on LHS curve"]} },
+    { id: "dcg-2021-ol-a1b-r1", kind: "point", verbatim: "Locate points on LHS curve", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secA-q1-art",
@@ -875,7 +1875,8 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the parabola in the rectangle ABCD.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
-    { id: "dcg-2021-ol-a1c-r1", kind: "anyN", verbatim: "Complete curve on RHS", marks: 4, contextNote: "The scheme prices this drawing step by step: 2, 2 — 4 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Complete curve on RHS","Draw curve on LHS"]} },
+    { id: "dcg-2021-ol-a1c-r1", kind: "point", verbatim: "Complete curve on RHS", marks: 2 },
+    { id: "dcg-2021-ol-a1c-r2", kind: "point", verbatim: "Draw curve on LHS", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secA-q1-art",
@@ -891,13 +1892,15 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC562GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2021-ol-a2a", topicId: "design-and-communication-graphics-0-12", conceptId: "dcg-0-12",
+    id: "dcg-2021-ol-a2a", topicId: "design-and-communication-graphics-0-0", conceptId: "dcg-0-0",
     section: "A", questionRef: "2021 OL Section A Q2(a)",
     stem: "The image below shows a bridge in Fitzgerald Park, Cork. The symmetrically designed structure includes tangential arcs A, B, and C which have the same radius. The drawing on the right shows a partially completed view of the structure.",
     questionText: "Complete the upper section of the bridge by drawing arc C tangential to the given arcs A and B. Show clearly how the centre point for arc C is located.",
-    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
     rows: [
-    { id: "dcg-2021-ol-a2a-r1", kind: "anyN", verbatim: "Locate centre for arc C", marks: 12, contextNote: "The scheme prices this drawing step by step: 6, 6 — 12 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Locate centre for arc C","Draw tangential arc C"]} },
+    { id: "dcg-2021-ol-a2a-r1", kind: "point", verbatim: "Locate centre for arc C", marks: 6 },
+    { id: "dcg-2021-ol-a2a-r2", kind: "point", verbatim: "Draw tangential arc C", marks: 6 },
+    { id: "dcg-2021-ol-a2a-r3", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secA-q2-art",
@@ -913,13 +1916,14 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC562GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2021-ol-a2b", topicId: "design-and-communication-graphics-0-4", conceptId: "dcg-0-4",
+    id: "dcg-2021-ol-a2b", topicId: "design-and-communication-graphics-0-0", conceptId: "dcg-0-0",
     section: "A", questionRef: "2021 OL Section A Q2(b)",
     stem: "The image below shows a bridge in Fitzgerald Park, Cork. The symmetrically designed structure includes tangential arcs A, B, and C which have the same radius. The drawing on the right shows a partially completed view of the structure.",
     questionText: "Show all points of contact.",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
-    { id: "dcg-2021-ol-a2b-r1", kind: "anyN", verbatim: "Locate top contact points", marks: 6, contextNote: "The scheme prices this drawing step by step: 3, 3 — 6 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Locate top contact points","Locate bottom contact points"]} },
+    { id: "dcg-2021-ol-a2b-r1", kind: "point", verbatim: "Locate top contact points", marks: 3 },
+    { id: "dcg-2021-ol-a2b-r2", kind: "point", verbatim: "Locate bottom contact points", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secA-q2-art",
@@ -938,9 +1942,14 @@ export const CARDS: SecCard[] = [
     id: "dcg-2021-ol-a3", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
     section: "A", questionRef: "2021 OL Section A Q3",
     questionText: "The image below shows a garden bench. The drawing shows the plan and a partially completed perspective view of a similar bench. Complete the perspective drawing.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
-    { id: "dcg-2021-ol-a3-r1", kind: "anyN", verbatim: "Radiate lines to correct vanishing points (5 lines)", marks: 18, contextNote: "The scheme prices this drawing step by step: 5, 2, 3, 2, 6 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":5,"options":["Radiate lines to correct vanishing points (5 lines)","Projections from plan or radiated lines","Complete the front face","Complete the legs","Complete top of bench"],"perOptionSteps":[5,2,3,2,6]} },
+    { id: "dcg-2021-ol-a3-r1", kind: "point", verbatim: "Radiate lines to correct vanishing points (5 lines)", marks: 5 },
+    { id: "dcg-2021-ol-a3-r2", kind: "point", verbatim: "Projections from plan or radiated lines", marks: 2 },
+    { id: "dcg-2021-ol-a3-r3", kind: "point", verbatim: "Complete the front face", marks: 3 },
+    { id: "dcg-2021-ol-a3-r4", kind: "point", verbatim: "Complete the legs", marks: 2 },
+    { id: "dcg-2021-ol-a3-r5", kind: "point", verbatim: "Complete top of bench", marks: 6 },
+    { id: "dcg-2021-ol-a3-r6", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secA-q3-art",
@@ -960,9 +1969,12 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Section A Q4(a)",
     stem: "The 3D graphic below shows a selection of personal care products in geometrical form. The objects rest on a dressing table and are in contact as shown. The arrangement consists of a truncated cone A, a cylinder B and a hemisphere C. The drawing on the right shows the partially completed elevation and plan of the objects.",
     questionText: "Draw the elevation of the cylinder B.",
-    tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
-    { id: "dcg-2021-ol-a4a-r1", kind: "anyN", verbatim: "Projection from centre in plan", marks: 10, contextNote: "The scheme prices this drawing step by step: 2, 4, 4 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Projection from centre in plan","Locate centre in elevation","Draw elevation of cylinder"],"perOptionSteps":[2,4,4]} },
+    { id: "dcg-2021-ol-a4a-r1", kind: "point", verbatim: "Projection from centre in plan", marks: 2 },
+    { id: "dcg-2021-ol-a4a-r2", kind: "point", verbatim: "Locate centre in elevation", marks: 4 },
+    { id: "dcg-2021-ol-a4a-r3", kind: "point", verbatim: "Draw elevation of cylinder", marks: 4 },
+    { id: "dcg-2021-ol-a4a-r4", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secA-q4-art",
@@ -984,7 +1996,9 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the plan of the hemisphere C.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2021-ol-a4b-r1", kind: "anyN", verbatim: "Projection from centre of hemisphere in elevation", marks: 8, contextNote: "The scheme prices this drawing step by step: 2, 2, 4 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Projection from centre of hemisphere in elevation","Locate centre in plan","Draw hemisphere C"],"perOptionSteps":[2,2,4]} },
+    { id: "dcg-2021-ol-a4b-r1", kind: "point", verbatim: "Projection from centre of hemisphere in elevation", marks: 2 },
+    { id: "dcg-2021-ol-a4b-r2", kind: "point", verbatim: "Locate centre in plan", marks: 2 },
+    { id: "dcg-2021-ol-a4b-r3", kind: "point", verbatim: "Draw hemisphere C", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secA-q4-art",
@@ -1000,13 +2014,16 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2021-ol-b1a", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2021-ol-b1a", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2021 OL Section B Q1(a)",
     stem: "and Section C on drawing paper. The 3D graphic on the right shows a dog kennel with the door in the open position. Fig. B-1 below shows an isometric view of a similar kennel.",
     questionText: "Draw the elevation of the kennel looking in the direction of the arrow and project the plan.",
-    tariffModel: {"kind":"fixed","notation":"(22)"}, totalMarks: 22,
+    tariffModel: {"kind":"fixed","notation":"(27)"}, totalMarks: 27,
     rows: [
-    { id: "dcg-2021-ol-b1a-r1", kind: "anyN", verbatim: "Draw the outline elevation of main structure", marks: 22, contextNote: "The scheme prices this drawing step by step: 9, 5, 8 — 22 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":9,"options":["Draw the outline elevation of main structure","Draw the square door opening","Draw the plan of the main structure"],"perOptionSteps":[9,5,8]} },
+    { id: "dcg-2021-ol-b1a-r1", kind: "point", verbatim: "Draw the outline elevation of main structure", marks: 9 },
+    { id: "dcg-2021-ol-b1a-r2", kind: "point", verbatim: "Draw the square door opening", marks: 5 },
+    { id: "dcg-2021-ol-b1a-r3", kind: "point", verbatim: "Draw the plan of the main structure", marks: 8 },
+    { id: "dcg-2021-ol-b1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secB-q1-art",
@@ -1022,13 +2039,14 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2021-ol-b1b", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2021-ol-b1b", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2021 OL Section B Q1(b)",
     stem: "and Section C on drawing paper. The 3D graphic on the right shows a dog kennel with the door in the open position. Fig. B-1 below shows an isometric view of a similar kennel.",
     questionText: "Draw the plan and elevation of the door in the open position as shown.",
     tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
     rows: [
-    { id: "dcg-2021-ol-b1b-r1", kind: "anyN", verbatim: "Draw plan of door in open position", marks: 14, contextNote: "The scheme prices this drawing step by step: 7, 7 — 14 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":7,"options":["Draw plan of door in open position","Draw elevation of door in open position"]} },
+    { id: "dcg-2021-ol-b1b-r1", kind: "point", verbatim: "Draw plan of door in open position", marks: 7 },
+    { id: "dcg-2021-ol-b1b-r2", kind: "point", verbatim: "Draw elevation of door in open position", marks: 7 },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secB-q1-art",
@@ -1044,13 +2062,17 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2021-ol-b1c", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2021-ol-b1c", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2021 OL Section B Q1(c)",
     stem: "and Section C on drawing paper. The 3D graphic on the right shows a dog kennel with the door in the open position. Fig. B-1 below shows an isometric view of a similar kennel.",
     questionText: "Draw the auxiliary elevation of the kennel, projected from the plan, which will include the true shape of face A of the door.",
     tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
-    { id: "dcg-2021-ol-b1c-r1", kind: "anyN", verbatim: "X1Y1 line parallel to plan of surface A", marks: 19, contextNote: "The scheme prices this drawing step by step: 1, 1, 4, 4, 9 — 19 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":1,"options":["X1Y1 line parallel to plan of surface A","Projections from plan","Transfer of heights from elevation","Draw surface A","Complete auxiliary elevation"],"perOptionSteps":[1,1,4,4,9]} },
+    { id: "dcg-2021-ol-b1c-r1", kind: "point", verbatim: "X1Y1 line parallel to plan of surface A", marks: 1 },
+    { id: "dcg-2021-ol-b1c-r2", kind: "point", verbatim: "Projections from plan", marks: 1 },
+    { id: "dcg-2021-ol-b1c-r3", kind: "point", verbatim: "Transfer of heights from elevation", marks: 4 },
+    { id: "dcg-2021-ol-b1c-r4", kind: "point", verbatim: "Draw surface A", marks: 4 },
+    { id: "dcg-2021-ol-b1c-r5", kind: "point", verbatim: "Complete auxiliary elevation", marks: 9 },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secB-q1-art",
@@ -1070,9 +2092,11 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 OL Section B Q2(a)",
     stem: "The image on the right shows a lifebuoy and its box. Fig. B-2 below shows the axonometric axes and an incomplete isometric projection of a similar box. A 3D graphic is also given. The elevation and plan of the box are also shown in their required positions.",
     questionText: "Draw the given equilateral triangle abc and the axonometric axes X, Y, and Z.",
-    tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
+    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
-    { id: "dcg-2021-ol-b2a-r1", kind: "anyN", verbatim: "Draw equilateral triangle", marks: 7, contextNote: "The scheme prices this drawing step by step: 4, 3 — 7 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Draw equilateral triangle","Draw X, Y and Z axes"],"perOptionSteps":[4,3]} },
+    { id: "dcg-2021-ol-b2a-r1", kind: "point", verbatim: "Draw equilateral triangle", marks: 4 },
+    { id: "dcg-2021-ol-b2a-r2", kind: "point", verbatim: "Draw X, Y and Z axes", marks: 3 },
+    { id: "dcg-2021-ol-b2a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secB-q2-art",
@@ -1094,7 +2118,12 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the elevation and plan positioned as shown.",
     tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
-    { id: "dcg-2021-ol-b2b-r1", kind: "anyN", verbatim: "Projections to set up elevation", marks: 13, contextNote: "The scheme prices this drawing step by step: 3, 1, 3, 3, 1, 2 — 13 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":6,"perOption":3,"options":["Projections to set up elevation","Semicircle in elevation","Draw elevation in the correct position","Projections to set up plan","Semicircle in plan (or 45° lines)","Draw plan in the correct position"],"perOptionSteps":[3,1,3,3,1,2]} },
+    { id: "dcg-2021-ol-b2b-r1", kind: "point", verbatim: "Projections to set up elevation", marks: 3 },
+    { id: "dcg-2021-ol-b2b-r2", kind: "point", verbatim: "Semicircle in elevation", marks: 1 },
+    { id: "dcg-2021-ol-b2b-r3", kind: "point", verbatim: "Draw elevation in the correct position", marks: 3 },
+    { id: "dcg-2021-ol-b2b-r4", kind: "point", verbatim: "Projections to set up plan", marks: 3 },
+    { id: "dcg-2021-ol-b2b-r5", kind: "point", verbatim: "Semicircle in plan (or 45° lines)", marks: 1 },
+    { id: "dcg-2021-ol-b2b-r6", kind: "point", verbatim: "Draw plan in the correct position", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secB-q2-art",
@@ -1116,7 +2145,11 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the axonometric projection of the rectangular outline of the lifebuoy box.",
     tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
-    { id: "dcg-2021-ol-b2c-r1", kind: "anyN", verbatim: "Projections from elevation", marks: 13, contextNote: "The scheme prices this drawing step by step: 3, 2, 3, 2, 3 — 13 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":3,"options":["Projections from elevation","Projections from plan","Axonometric projection of rectangular front surface","Axonometric projection right hand flat surface","Axonometric projection of left flat surface"],"perOptionSteps":[3,2,3,2,3]} },
+    { id: "dcg-2021-ol-b2c-r1", kind: "point", verbatim: "Projections from elevation", marks: 3 },
+    { id: "dcg-2021-ol-b2c-r2", kind: "point", verbatim: "Projections from plan", marks: 2 },
+    { id: "dcg-2021-ol-b2c-r3", kind: "point", verbatim: "Axonometric projection of rectangular front surface", marks: 3 },
+    { id: "dcg-2021-ol-b2c-r4", kind: "point", verbatim: "Axonometric projection right hand flat surface", marks: 2 },
+    { id: "dcg-2021-ol-b2c-r5", kind: "point", verbatim: "Axonometric projection of left flat surface", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secB-q2-art",
@@ -1138,7 +2171,12 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the axonometric projection of the lifebuoy box including the semi-circular top.",
     tariffModel: {"kind":"fixed","notation":"(22)"}, totalMarks: 22,
     rows: [
-    { id: "dcg-2021-ol-b2d-r1", kind: "anyN", verbatim: "Divisions on semi-circle in elevation", marks: 22, contextNote: "The scheme prices this drawing step by step: 5, 6, 3, 2, 4, 2 — 22 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":6,"perOption":5,"options":["Divisions on semi-circle in elevation","Corresponding divisions in plan","Projections from elevation","Projections from plan","Draw axonometric projection of the semi-circular curves","Complete the axonometric projection"],"perOptionSteps":[5,6,3,2,4,2]} },
+    { id: "dcg-2021-ol-b2d-r1", kind: "point", verbatim: "Divisions on semi-circle in elevation", marks: 5 },
+    { id: "dcg-2021-ol-b2d-r2", kind: "point", verbatim: "Corresponding divisions in plan", marks: 6 },
+    { id: "dcg-2021-ol-b2d-r3", kind: "point", verbatim: "Projections from elevation", marks: 3 },
+    { id: "dcg-2021-ol-b2d-r4", kind: "point", verbatim: "Projections from plan", marks: 2 },
+    { id: "dcg-2021-ol-b2d-r5", kind: "point", verbatim: "Draw axonometric projection of the semi-circular curves", marks: 4 },
+    { id: "dcg-2021-ol-b2d-r6", kind: "point", verbatim: "Complete the axonometric projection", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secB-q2-art",
@@ -1158,14 +2196,18 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 OL Section B Q3(a), (b)",
     stem: "The 3D graphic on the right shows a model of a structure from a crazy-golf park. The design is based on the shape of a car body, through which a tunnel has been created. Fig. B-3 below shows the elevation and incomplete plan of the structure. The outline profile of the tunnel is also shown.",
     questionText: "Draw the given elevation and incomplete plan of the structure. Complete the plan, showing all lines of interpenetration between the tunnel and both ends of the structure.",
-    tariffModel: {"kind":"fixed","notation":"(25)"}, totalMarks: 25,
+    tariffModel: {"kind":"fixed","notation":"(30)"}, totalMarks: 30,
     rows: [
-    { id: "dcg-2021-ol-b3-r1", kind: "anyN", verbatim: "Draw the outline elevation as given", marks: 25, contextNote: "The scheme prices this drawing step by step: 10, 4, 6, 5 — 25 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":10,"options":["Draw the outline elevation as given","Complete the elevation","Draw the outline plan as given","Complete the plan as given"],"perOptionSteps":[10,4,6,5]} },
+    { id: "dcg-2021-ol-b3-r1", kind: "point", verbatim: "Draw the outline elevation as given", marks: 10 },
+    { id: "dcg-2021-ol-b3-r2", kind: "point", verbatim: "Complete the elevation", marks: 4 },
+    { id: "dcg-2021-ol-b3-r3", kind: "point", verbatim: "Draw the outline plan as given", marks: 6 },
+    { id: "dcg-2021-ol-b3-r4", kind: "point", verbatim: "Complete the plan as given", marks: 5 },
+    { id: "dcg-2021-ol-b3-r5", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secB-q3-art.png",
-          "srcHash": "dce367bd2769cbc32338797a57d1e8c3",
+          "srcHash": "d531e32c6b79112524480df1a64a55eb",
           "alt": "Question B-3 as printed. A rendered 3D view of a crazy-golf obstacle shaped like a car body with a tunnel through it, beside Fig. B-3: at the left the magenta outline profile of the tunnel dimensioned 20, 40, 10, 25 and 15; in the centre the elevation of the structure above the XY line dimensioned 55, 20, 65, 50 and 60; and below it the incomplete plan dimensioned 170 long by 90 deep with the divisions 25, 40 and 25.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1182,12 +2224,14 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the plan, showing all lines of interpenetration between the tunnel and both ends of the structure.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2021-ol-b3b-1-r1", kind: "anyN", verbatim: "Projection from LHS of elevation", marks: 8, contextNote: "The scheme prices this drawing step by step: 2, 3, 3 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Projection from LHS of elevation","Locate points on LHS in plan","Complete LHS of plan"],"perOptionSteps":[2,3,3]} },
+    { id: "dcg-2021-ol-b3b-1-r1", kind: "point", verbatim: "Projection from LHS of elevation", marks: 2 },
+    { id: "dcg-2021-ol-b3b-1-r2", kind: "point", verbatim: "Locate points on LHS in plan", marks: 3 },
+    { id: "dcg-2021-ol-b3b-1-r3", kind: "point", verbatim: "Complete LHS of plan", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secB-q3-art.png",
-          "srcHash": "dce367bd2769cbc32338797a57d1e8c3",
+          "srcHash": "d531e32c6b79112524480df1a64a55eb",
           "alt": "Question B-3 as printed. A rendered 3D view of a crazy-golf obstacle shaped like a car body with a tunnel through it, beside Fig. B-3: at the left the magenta outline profile of the tunnel dimensioned 20, 40, 10, 25 and 15; in the centre the elevation of the structure above the XY line dimensioned 55, 20, 65, 50 and 60; and below it the incomplete plan dimensioned 170 long by 90 deep with the divisions 25, 40 and 25.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1204,12 +2248,14 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the plan, showing all lines of interpenetration between the tunnel and both ends of the structure.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2021-ol-b3b-2-r1", kind: "anyN", verbatim: "Projection from RHS of elevation", marks: 8, contextNote: "The scheme prices this drawing step by step: 2, 3, 3 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Projection from RHS of elevation","Locate points RHS of plan","Complete RHS of plan"],"perOptionSteps":[2,3,3]} },
+    { id: "dcg-2021-ol-b3b-2-r1", kind: "point", verbatim: "Projection from RHS of elevation", marks: 2 },
+    { id: "dcg-2021-ol-b3b-2-r2", kind: "point", verbatim: "Locate points RHS of plan", marks: 3 },
+    { id: "dcg-2021-ol-b3b-2-r3", kind: "point", verbatim: "Complete RHS of plan", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secB-q3-art.png",
-          "srcHash": "dce367bd2769cbc32338797a57d1e8c3",
+          "srcHash": "d531e32c6b79112524480df1a64a55eb",
           "alt": "Question B-3 as printed. A rendered 3D view of a crazy-golf obstacle shaped like a car body with a tunnel through it, beside Fig. B-3: at the left the magenta outline profile of the tunnel dimensioned 20, 40, 10, 25 and 15; in the centre the elevation of the structure above the XY line dimensioned 55, 20, 65, 50 and 60; and below it the incomplete plan dimensioned 170 long by 90 deep with the divisions 25, 40 and 25.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1220,18 +2266,21 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2021-ol-b3c", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    id: "dcg-2021-ol-b3c", topicId: "design-and-communication-graphics-0-8", conceptId: "dcg-0-8",
     section: "B", questionRef: "2021 OL Section B Q3(c)",
     stem: "The 3D graphic on the right shows a model of a structure from a crazy-golf park. The design is based on the shape of a car body, through which a tunnel has been created. Fig. B-3 below shows the elevation and incomplete plan of the structure. The outline profile of the tunnel is also shown.",
     questionText: "Draw an end view of the structure. Show all hidden detail.",
     tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
     rows: [
-    { id: "dcg-2021-ol-b3c-r1", kind: "anyN", verbatim: "Transfer of widths from plan", marks: 14, contextNote: "The scheme prices this drawing step by step: 3, 2, 5, 4 — 14 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Transfer of widths from plan","Projection of heights from elevation","End view of main structure (incl. hidden detail)","End view of tunnel"],"perOptionSteps":[3,2,5,4]} },
+    { id: "dcg-2021-ol-b3c-r1", kind: "point", verbatim: "Transfer of widths from plan", marks: 3 },
+    { id: "dcg-2021-ol-b3c-r2", kind: "point", verbatim: "Projection of heights from elevation", marks: 2 },
+    { id: "dcg-2021-ol-b3c-r3", kind: "point", verbatim: "End view of main structure (incl. hidden detail)", marks: 5 },
+    { id: "dcg-2021-ol-b3c-r4", kind: "point", verbatim: "End view of tunnel", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secB-q3-art.png",
-          "srcHash": "dce367bd2769cbc32338797a57d1e8c3",
+          "srcHash": "d531e32c6b79112524480df1a64a55eb",
           "alt": "Question B-3 as printed. A rendered 3D view of a crazy-golf obstacle shaped like a car body with a tunnel through it, beside Fig. B-3: at the left the magenta outline profile of the tunnel dimensioned 20, 40, 10, 25 and 15; in the centre the elevation of the structure above the XY line dimensioned 55, 20, 65, 50 and 60; and below it the incomplete plan dimensioned 170 long by 90 deep with the divisions 25, 40 and 25.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1246,14 +2295,31 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C Q1(a)",
     stem: "and Section C on drawing paper. The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
     questionText: "On the map supplied, draw a vertical section (profile) on the line AB.",
-    tariffModel: {"kind":"fixed","notation":"(37)"}, totalMarks: 37,
+    tariffModel: {"kind":"fixed","notation":"(42)"}, totalMarks: 42,
     rows: [
-    { id: "dcg-2021-ol-c1a-r1", kind: "anyN", verbatim: "Measure heights and draw horizontal lines", marks: 37, contextNote: "The scheme prices this drawing step by step: 13, 11, 13 — 37 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":13,"options":["Measure heights and draw horizontal lines","Projections from intersections between line AB and contours","Draw the profile"],"perOptionSteps":[13,11,13]} },
+    { id: "dcg-2021-ol-c1a-r1", kind: "point", verbatim: "Measure heights and draw horizontal lines", marks: 13 },
+    { id: "dcg-2021-ol-c1a-r2", kind: "point", verbatim: "Projections from intersections between line AB and contours", marks: 11 },
+    { id: "dcg-2021-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 13 },
+    { id: "dcg-2021-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q1-art.png",
-          "srcHash": "da4ddf46a8b635e22a6dce88c6aea73c",
+          "srcHash": "72871ce51f4be919a9dd25fd17b04213",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a terraced open-cast mine; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1270,12 +2336,27 @@ export const CARDS: SecCard[] = [
     questionText: "Points C, D and E are outcrop points on the surface of a stratum of ore. Draw the plan and elevation of the triangle CDE.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2021-ol-c1b-r1", kind: "anyN", verbatim: "Plan of triangle CDE", marks: 8, contextNote: "The scheme prices this drawing step by step: 5, 3 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Plan of triangle CDE","Elevation of triangle CDE"],"perOptionSteps":[5,3]} },
+    { id: "dcg-2021-ol-c1b-r1", kind: "point", verbatim: "Plan of triangle CDE", marks: 5 },
+    { id: "dcg-2021-ol-c1b-r2", kind: "point", verbatim: "Elevation of triangle CDE", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q1-art.png",
-          "srcHash": "da4ddf46a8b635e22a6dce88c6aea73c",
+          "srcHash": "72871ce51f4be919a9dd25fd17b04213",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a terraced open-cast mine; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1292,12 +2373,29 @@ export const CARDS: SecCard[] = [
     questionText: "Determine the strike and dip of the stratum.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
-    { id: "dcg-2021-ol-c1c-r1", kind: "anyN", verbatim: "Horizontal line in elevation", marks: 10, contextNote: "The scheme prices this drawing step by step: 1, 3, 3, 3 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Horizontal line in elevation","Strike in plan","Viewing direction for dip","Determine dip (2 heights, edge view)"],"perOptionSteps":[1,3,3,3]} },
+    { id: "dcg-2021-ol-c1c-r1", kind: "point", verbatim: "Horizontal line in elevation", marks: 1 },
+    { id: "dcg-2021-ol-c1c-r2", kind: "point", verbatim: "Strike in plan", marks: 3 },
+    { id: "dcg-2021-ol-c1c-r3", kind: "point", verbatim: "Viewing direction for dip", marks: 3 },
+    { id: "dcg-2021-ol-c1c-r4", kind: "point", verbatim: "Determine dip (2 heights, edge view)", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q1-art.png",
-          "srcHash": "da4ddf46a8b635e22a6dce88c6aea73c",
+          "srcHash": "72871ce51f4be919a9dd25fd17b04213",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a terraced open-cast mine; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1312,14 +2410,19 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C Q2(a)",
     stem: "The image on the right shows a climbing frame from a children’s playground. It contains a series of hyperbolic paraboloid surfaces. Fig. C-2 below shows the projections of a similar hyperbolic paraboloid surface.",
     questionText: "Draw the elevation and plan of the given hyperbolic paraboloid surface.",
-    tariffModel: {"kind":"fixed","notation":"(33)"}, totalMarks: 33,
+    tariffModel: {"kind":"fixed","notation":"(38)"}, totalMarks: 38,
     rows: [
-    { id: "dcg-2021-ol-c2a-r1", kind: "anyN", verbatim: "Outline of surface ABCD in elevation", marks: 33, contextNote: "The scheme prices this drawing step by step: 8, 7, 8, 7, 3 — 33 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":8,"options":["Outline of surface ABCD in elevation","Elements in elevation (incl. division)","Outline of surface in plan","Elements in plan (incl. division or proj.)","Completion of plan (curve and hidden detail)"],"perOptionSteps":[8,7,8,7,3]} },
+    { id: "dcg-2021-ol-c2a-r1", kind: "point", verbatim: "Outline of surface ABCD in elevation", marks: 8 },
+    { id: "dcg-2021-ol-c2a-r2", kind: "point", verbatim: "Elements in elevation (incl. division)", marks: 7 },
+    { id: "dcg-2021-ol-c2a-r3", kind: "point", verbatim: "Outline of surface in plan", marks: 8 },
+    { id: "dcg-2021-ol-c2a-r4", kind: "point", verbatim: "Elements in plan (incl. division or proj.)", marks: 7 },
+    { id: "dcg-2021-ol-c2a-r5", kind: "point", verbatim: "Completion of plan (curve and hidden detail)", marks: 3 },
+    { id: "dcg-2021-ol-c2a-r6", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q2-art.png",
-          "srcHash": "aa9df81085c392f150ddf4c7974cbb5f",
+          "srcHash": "cd532748d03833346f0fe543bd63c6bf",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a timber playground climbing frame with net panels, beside Fig. C-2: above the XY line the elevation of the hyperbolic paraboloid surface, a triangle-like outline from A up to B, across to C and down to D, ruled with green elements, dimensioned 85 and 65 high and 110 across with 30 degree angles at each side; below it the plan, a zig-zag of the same four corners with the 45 degree angle at B, ruled with green elements and dimensioned 50 and 25.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1336,12 +2439,15 @@ export const CARDS: SecCard[] = [
     questionText: "Project an end view of the surface.",
     tariffModel: {"kind":"fixed","notation":"(22)"}, totalMarks: 22,
     rows: [
-    { id: "dcg-2021-ol-c2b-r1", kind: "anyN", verbatim: "Determine heights and widths for surface ABCD", marks: 22, contextNote: "The scheme prices this drawing step by step: 8, 6, 5, 3 — 22 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":8,"options":["Determine heights and widths for surface ABCD","Draw the outline of hyperbolic paraboloid surface","Draw elements","Completion of end view (curve and hidden detail)"],"perOptionSteps":[8,6,5,3]} },
+    { id: "dcg-2021-ol-c2b-r1", kind: "point", verbatim: "Determine heights and widths for surface ABCD", marks: 8 },
+    { id: "dcg-2021-ol-c2b-r2", kind: "point", verbatim: "Draw the outline of hyperbolic paraboloid surface", marks: 6 },
+    { id: "dcg-2021-ol-c2b-r3", kind: "point", verbatim: "Draw elements", marks: 5 },
+    { id: "dcg-2021-ol-c2b-r4", kind: "point", verbatim: "Completion of end view (curve and hidden detail)", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q2-art.png",
-          "srcHash": "aa9df81085c392f150ddf4c7974cbb5f",
+          "srcHash": "cd532748d03833346f0fe543bd63c6bf",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a timber playground climbing frame with net panels, beside Fig. C-2: above the XY line the elevation of the hyperbolic paraboloid surface, a triangle-like outline from A up to B, across to C and down to D, ruled with green elements, dimensioned 85 and 65 high and 110 across with 30 degree angles at each side; below it the plan, a zig-zag of the same four corners with the 45 degree angle at B, ruled with green elements and dimensioned 50 and 25.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1356,14 +2462,18 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C Q3(a)",
     stem: "The image on the right shows a ‘Magnum’ ice cream and a wrapper. The projections of a similar wrapper are shown in Fig. C-3 below.",
     questionText: "Draw the given elevation and plan of the wrapper. Show clearly how the points of contact are located in the elevation.",
-    tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
+    tariffModel: {"kind":"fixed","notation":"(31)"}, totalMarks: 31,
     rows: [
-    { id: "dcg-2021-ol-c3a-r1", kind: "anyN", verbatim: "Draw the elevation", marks: 26, contextNote: "The scheme prices this drawing step by step: 12, 3, 7, 4 — 26 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":12,"options":["Draw the elevation","Show contact points","Draw outline plan","Complete plan"],"perOptionSteps":[12,3,7,4]} },
+    { id: "dcg-2021-ol-c3a-r1", kind: "point", verbatim: "Draw the elevation", marks: 12 },
+    { id: "dcg-2021-ol-c3a-r2", kind: "point", verbatim: "Show contact points", marks: 3 },
+    { id: "dcg-2021-ol-c3a-r3", kind: "point", verbatim: "Draw outline plan", marks: 7 },
+    { id: "dcg-2021-ol-c3a-r4", kind: "point", verbatim: "Complete plan", marks: 4 },
+    { id: "dcg-2021-ol-c3a-r5", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q3-art.png",
-          "srcHash": "0aeb8de9c4c2672664684e1019b94f62",
+          "srcHash": "07ce07dc996527c84da08d511d1e4db2",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a Magnum ice cream and its wrapper, beside Fig. C-3: above the XY line the elevation of the wrapper, a tall shape with an R20 semicircular top over flared sides that narrow to a 16 wide neck, dimensioned 50, 40, 20 and 20 with a red tangent circle drawn inside the top; below, the plan, a plain rectangle 20 deep with two broken lines across it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1380,12 +2490,13 @@ export const CARDS: SecCard[] = [
     questionText: "Project an end view of the wrapper.",
     tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
     rows: [
-    { id: "dcg-2021-ol-c3b-r1", kind: "anyN", verbatim: "Correct heights and widths for end view", marks: 11, contextNote: "The scheme prices this drawing step by step: 5, 6 — 11 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Correct heights and widths for end view","Draw the end view"],"perOptionSteps":[5,6]} },
+    { id: "dcg-2021-ol-c3b-r1", kind: "point", verbatim: "Correct heights and widths for end view", marks: 5 },
+    { id: "dcg-2021-ol-c3b-r2", kind: "point", verbatim: "Draw the end view", marks: 6 },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q3-art.png",
-          "srcHash": "0aeb8de9c4c2672664684e1019b94f62",
+          "srcHash": "07ce07dc996527c84da08d511d1e4db2",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a Magnum ice cream and its wrapper, beside Fig. C-3: above the XY line the elevation of the wrapper, a tall shape with an R20 semicircular top over flared sides that narrow to a 16 wide neck, dimensioned 50, 40, 20 and 20 with a red tangent circle drawn inside the top; below, the plan, a plain rectangle 20 deep with two broken lines across it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1402,12 +2513,12 @@ export const CARDS: SecCard[] = [
     questionText: "Draw a one-piece surface development of the wrapper.",
     tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
     rows: [
-    { id: "dcg-2021-ol-c3c-r1", kind: "anyN", verbatim: "Appropriate layout of surface development", marks: 18, contextNote: "The scheme prices this drawing step by step: 1, 1, 3, 3, 3, 3, 2, 2 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":8,"perOption":1,"options":["Appropriate layout of surface development","Development of bottom surface","Development of vertical surfaces","Development of horizontal surfaces","Development of inclined surfaces","Development of front and back surfaces","Division of arc","Development of curved surface"],"perOptionSteps":[1,1,3,3,3,3,2,2]} },
+    { id: "dcg-2021-ol-c3c-r1", kind: "criterion", verbatim: "Surface Development", marks: 18, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,18], parts: [{"id":"step-1","verbatim":"Appropriate layout of surface development","marks":1,"permittedMarks":[0,1]},{"id":"step-2","verbatim":"Development of bottom surface","marks":1,"permittedMarks":[0,1]},{"id":"step-3","verbatim":"Development of vertical surfaces","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Development of horizontal surfaces","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"Development of inclined surfaces","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Development of front and back surfaces","marks":3,"permittedMarks":[0,3]},{"id":"step-7","verbatim":"Division of arc","marks":2,"permittedMarks":[0,2]},{"id":"step-8","verbatim":"Development of curved surface","marks":2,"permittedMarks":[0,2]}] },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q3-art.png",
-          "srcHash": "0aeb8de9c4c2672664684e1019b94f62",
+          "srcHash": "07ce07dc996527c84da08d511d1e4db2",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a Magnum ice cream and its wrapper, beside Fig. C-3: above the XY line the elevation of the wrapper, a tall shape with an R20 semicircular top over flared sides that narrow to a 16 wide neck, dimensioned 50, 40, 20 and 20 with a red tangent circle drawn inside the top; below, the plan, a plain rectangle 20 deep with two broken lines across it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1422,14 +2533,15 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C Q4(a)",
     stem: "A cam, as shown, is often used as part of a sewing machine.",
     questionText: "Draw the displacement diagram for a cam which imparts the following motion to an inline knife edge follower: to 90° Rise 60mm with uniform velocity 90° to 180° Dwell 180° to 360° Fall 60mm with uniform acceleration and retardation. (In the displacement diagram, use a distance of 15mm to represent each 30° interval.) Note: It is not necessary to draw the cam profile.",
-    tariffModel: {"kind":"fixed","notation":"(29)"}, totalMarks: 29,
+    tariffModel: {"kind":"fixed","notation":"(34)"}, totalMarks: 34,
     rows: [
-    { id: "dcg-2021-ol-c4a-r1", kind: "anyN", verbatim: "360° division (widths on displacement diagram)", marks: 29, contextNote: "The scheme prices this drawing step by step: 5, 1, 7, 4, 4, 4, 4 — 29 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":7,"perOption":5,"options":["360° division (widths on displacement diagram)","Correct use of 60mm height","Establish follower position at 0°, 90°, 180° and 360°","0° to 90°, Rise 60mm with Uniform Velocity","90° to 180°, Dwell","180° to 360°, Fall 60mm with UAR construction","Complete Displacement Diagram"],"perOptionSteps":[5,1,7,4,4,4,4]} },
+    { id: "dcg-2021-ol-c4a-r1", kind: "criterion", verbatim: "Displacement Diagram", marks: 29, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,29], parts: [{"id":"step-1","verbatim":"360° division (widths on displacement diagram)","marks":5,"permittedMarks":[0,5]},{"id":"step-2","verbatim":"Correct use of 60mm height","marks":1,"permittedMarks":[0,1]},{"id":"step-3","verbatim":"Establish follower position at 0°, 90°, 180° and 360°","marks":7,"permittedMarks":[0,7]},{"id":"step-4","verbatim":"0° to 90°, Rise 60mm with Uniform Velocity","marks":4,"permittedMarks":[0,4]},{"id":"step-5","verbatim":"90° to 180°, Dwell","marks":4,"permittedMarks":[0,4]},{"id":"step-6","verbatim":"180° to 360°, Fall 60mm with UAR construction","marks":4,"permittedMarks":[0,4]},{"id":"step-7","verbatim":"Complete Displacement Diagram","marks":4,"permittedMarks":[0,4]}] },
+    { id: "dcg-2021-ol-c4a-r2", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q4-art.png",
-          "srcHash": "1450768952b1ef59e1140a94b428ce38",
+          "srcHash": "27cf84987408cf74285554326ffeee83",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a Singer sewing machine with a magnified inset of its cam, and prints the displacement data as text with no drawing. Part (b) shows a photograph of fabric being fed under a sewing machine foot, beside Fig. C-4(b): a line diagram with the crank OA of 55 horizontal from O, the rod AC of 95 falling to C on a red chain-dotted vertical axis, the point B on AC 45 above C, and blue arrows showing A turning clockwise and C moving on the axis.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1446,12 +2558,17 @@ export const CARDS: SecCard[] = [
     questionText: "The image below shows an enlarged view of the sewing machine mechanism. Fig. C-4(b) shows a line diagram of this mechanism. Crank OA and rod AC are pin jointed at A. Point B is located on the rigid rod AC as shown. Crank OA rotates in a clockwise direction, about point O, for one revolution. Point C moves on the vertical axis as shown. Plot the locus of point B for this movement.",
     tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
     rows: [
-    { id: "dcg-2021-ol-c4b-r1", kind: "anyN", verbatim: "Set up line diagram (O, A, B & C.)", marks: 26, contextNote: "The scheme prices this drawing step by step: 10, 3, 3, 3, 3, 4 — 26 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":6,"perOption":10,"options":["Set up line diagram (O, A, B & C.)","Draw circle about O","Division of circle","Arm AC in rotated positions","Points on locus","Draw locus"],"perOptionSteps":[10,3,3,3,3,4]} },
+    { id: "dcg-2021-ol-c4b-r1", kind: "point", verbatim: "Set up line diagram (O, A, B & C.)", marks: 10 },
+    { id: "dcg-2021-ol-c4b-r2", kind: "point", verbatim: "Draw circle about O", marks: 3 },
+    { id: "dcg-2021-ol-c4b-r3", kind: "point", verbatim: "Division of circle", marks: 3 },
+    { id: "dcg-2021-ol-c4b-r4", kind: "point", verbatim: "Arm AC in rotated positions", marks: 3 },
+    { id: "dcg-2021-ol-c4b-r5", kind: "point", verbatim: "Points on locus", marks: 3 },
+    { id: "dcg-2021-ol-c4b-r6", kind: "point", verbatim: "Draw locus", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q4-art.png",
-          "srcHash": "1450768952b1ef59e1140a94b428ce38",
+          "srcHash": "27cf84987408cf74285554326ffeee83",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a Singer sewing machine with a magnified inset of its cam, and prints the displacement data as text with no drawing. Part (b) shows a photograph of fabric being fed under a sewing machine foot, beside Fig. C-4(b): a line diagram with the crank OA of 55 horizontal from O, the rod AC of 95 falling to C on a red chain-dotted vertical axis, the point B on AC 45 above C, and blue arrows showing A turning clockwise and C moving on the axis.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1466,14 +2583,16 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C Q5 — Assembly",
     stem: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.) Part Name Qty. Main Body Handle Roller",
     questionText: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.)",
-    tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
-    { id: "dcg-2021-ol-c5-1-r1", kind: "anyN", verbatim: "Relative positioning of components", marks: 15, contextNote: "The scheme prices this drawing step by step: 11, 4 — 15 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":11,"options":["Relative positioning of components","Draw a Section View"],"perOptionSteps":[11,4]} },
+    { id: "dcg-2021-ol-c5-1-r1", kind: "point", verbatim: "Relative positioning of components", marks: 11 },
+    { id: "dcg-2021-ol-c5-1-r2", kind: "point", verbatim: "Draw a Section View", marks: 4 },
+    { id: "dcg-2021-ol-c5-1-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q5-art.png",
-          "srcHash": "b6eec37c03b82c7072c82adadfb3feac",
+          "srcHash": "27591166dad761ed106d20f87ef8563a",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a paint roller with a green handle, beside Fig. C-5: dimensioned orthographic details of the three numbered parts -- the main body, a Ø8 rod 160 long with an R20 bend and a 134 stem, the waisted handle dimensioned 90, 40, 40, R10, R160, Ø60 and Ø8, and the roller of Ø48 and Ø38 dimensioned 134, 124 and 28 -- with the horizontal section line A-A drawn through the body, and a parts-list table naming main body, handle and roller with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1490,12 +2609,14 @@ export const CARDS: SecCard[] = [
     questionText: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
-    { id: "dcg-2021-ol-c5-2-r1", kind: "anyN", verbatim: "Roller insert", marks: 12, contextNote: "The scheme prices this drawing step by step: 4, 4, 4 — 12 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Roller insert","Handle insert","Completion"]} },
+    { id: "dcg-2021-ol-c5-2-r1", kind: "point", verbatim: "Roller insert", marks: 4 },
+    { id: "dcg-2021-ol-c5-2-r2", kind: "point", verbatim: "Handle insert", marks: 4 },
+    { id: "dcg-2021-ol-c5-2-r3", kind: "point", verbatim: "Completion", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q5-art.png",
-          "srcHash": "b6eec37c03b82c7072c82adadfb3feac",
+          "srcHash": "27591166dad761ed106d20f87ef8563a",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a paint roller with a green handle, beside Fig. C-5: dimensioned orthographic details of the three numbered parts -- the main body, a Ø8 rod 160 long with an R20 bend and a 134 stem, the waisted handle dimensioned 90, 40, 40, R10, R160, Ø60 and Ø8, and the roller of Ø48 and Ø38 dimensioned 134, 124 and 28 -- with the horizontal section line A-A drawn through the body, and a parts-list table naming main body, handle and roller with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1512,12 +2633,15 @@ export const CARDS: SecCard[] = [
     questionText: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
     rows: [
-    { id: "dcg-2021-ol-c5-3-r1", kind: "anyN", verbatim: "Four circles 10R", marks: 16, contextNote: "The scheme prices this drawing step by step: 5, 3, 5, 3 — 16 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Four circles 10R","Centres for 160R arcs","Complete outline","Hole for handle"],"perOptionSteps":[5,3,5,3]} },
+    { id: "dcg-2021-ol-c5-3-r1", kind: "point", verbatim: "Four circles 10R", marks: 5 },
+    { id: "dcg-2021-ol-c5-3-r2", kind: "point", verbatim: "Centres for 160R arcs", marks: 3 },
+    { id: "dcg-2021-ol-c5-3-r3", kind: "point", verbatim: "Complete outline", marks: 5 },
+    { id: "dcg-2021-ol-c5-3-r4", kind: "point", verbatim: "Hole for handle", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q5-art.png",
-          "srcHash": "b6eec37c03b82c7072c82adadfb3feac",
+          "srcHash": "27591166dad761ed106d20f87ef8563a",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a paint roller with a green handle, beside Fig. C-5: dimensioned orthographic details of the three numbered parts -- the main body, a Ø8 rod 160 long with an R20 bend and a 134 stem, the waisted handle dimensioned 90, 40, 40, R10, R160, Ø60 and Ø8, and the roller of Ø48 and Ø38 dimensioned 134, 124 and 28 -- with the horizontal section line A-A drawn through the body, and a parts-list table naming main body, handle and roller with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1534,12 +2658,13 @@ export const CARDS: SecCard[] = [
     questionText: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2021-ol-c5-4-r1", kind: "anyN", verbatim: "Outline", marks: 8, contextNote: "The scheme prices this drawing step by step: 5, 3 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Outline","Hole for handle"],"perOptionSteps":[5,3]} },
+    { id: "dcg-2021-ol-c5-4-r1", kind: "point", verbatim: "Outline", marks: 5 },
+    { id: "dcg-2021-ol-c5-4-r2", kind: "point", verbatim: "Hole for handle", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q5-art.png",
-          "srcHash": "b6eec37c03b82c7072c82adadfb3feac",
+          "srcHash": "27591166dad761ed106d20f87ef8563a",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a paint roller with a green handle, beside Fig. C-5: dimensioned orthographic details of the three numbered parts -- the main body, a Ø8 rod 160 long with an R20 bend and a 134 stem, the waisted handle dimensioned 90, 40, 40, R10, R160, Ø60 and Ø8, and the roller of Ø48 and Ø38 dimensioned 134, 124 and 28 -- with the horizontal section line A-A drawn through the body, and a parts-list table naming main body, handle and roller with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1556,12 +2681,12 @@ export const CARDS: SecCard[] = [
     questionText: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
-    { id: "dcg-2021-ol-c5-5-r1", kind: "anyN", verbatim: "Hatching and Centrelines … (3,1)", marks: 4, contextNote: "The scheme prices this drawing step by step: 4 — 4 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":4,"options":["Hatching and Centrelines … (3,1)"]} },
+    { id: "dcg-2021-ol-c5-5-r1", kind: "criterion", verbatim: "Hatching and Centrelines … (3,1)", marks: 4, permittedMarks: [0,1,3,4] },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q5-art.png",
-          "srcHash": "b6eec37c03b82c7072c82adadfb3feac",
+          "srcHash": "27591166dad761ed106d20f87ef8563a",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a paint roller with a green handle, beside Fig. C-5: dimensioned orthographic details of the three numbered parts -- the main body, a Ø8 rod 160 long with an R20 bend and a 134 stem, the waisted handle dimensioned 90, 40, 40, R10, R160, Ø60 and Ø8, and the roller of Ø48 and Ø38 dimensioned 134, 124 and 28 -- with the horizontal section line A-A drawn through the body, and a parts-list table naming main body, handle and roller with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission"
@@ -1575,9 +2700,14 @@ export const CARDS: SecCard[] = [
     id: "dcg-2022-ol-a1", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
     section: "A", questionRef: "2022 OL Section A Q1",
     questionText: "The image below shows a storage bunker. The drawing shows the plan and a partially completed perspective view of a similar storage bunker. Complete the perspective drawing.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
-    { id: "dcg-2022-ol-a1-r1", kind: "anyN", verbatim: "Radiate lines to correct vanishing points (3 lines)", marks: 18, contextNote: "The scheme prices this drawing step by step: 3, 6, 2, 1, 6 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":3,"options":["Radiate lines to correct vanishing points (3 lines)","Complete the bunker outline","Projections from plan or radiated lines","Radiate line to correct vanishing point for bunker division","Complete bunker division"],"perOptionSteps":[3,6,2,1,6]} },
+    { id: "dcg-2022-ol-a1-r1", kind: "point", verbatim: "Radiate lines to correct vanishing points (3 lines)", marks: 3 },
+    { id: "dcg-2022-ol-a1-r2", kind: "point", verbatim: "Complete the bunker outline", marks: 6 },
+    { id: "dcg-2022-ol-a1-r3", kind: "point", verbatim: "Projections from plan or radiated lines", marks: 2 },
+    { id: "dcg-2022-ol-a1-r4", kind: "point", verbatim: "Radiate line to correct vanishing point for bunker division", marks: 1 },
+    { id: "dcg-2022-ol-a1-r5", kind: "point", verbatim: "Complete bunker division", marks: 6 },
+    { id: "dcg-2022-ol-a1-r6", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secA-q1-art",
@@ -1597,9 +2727,13 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 OL Section A Q2(a)",
     stem: "The image below shows the Wembley arch that supports the roof of the football stadium. The arch is in the shape of a parabola. The drawing on the right shows a portion of a similar parabola, which is inscribed in rectangle ABCD. V is the vertex of the parabola.",
     questionText: "Locate the remaining points on the left hand side of the parabola.",
-    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
-    { id: "dcg-2022-ol-a2a-r1", kind: "anyN", verbatim: "Complete division of line AB", marks: 11, contextNote: "The scheme prices this drawing step by step: 4, 3, 2, 2 — 11 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Complete division of line AB","Complete division of line BV","Construction lines (2 sets)","Identify remaining points on LHS"],"perOptionSteps":[4,3,2,2]} },
+    { id: "dcg-2022-ol-a2a-r1", kind: "point", verbatim: "Complete division of line AB", marks: 4 },
+    { id: "dcg-2022-ol-a2a-r2", kind: "point", verbatim: "Complete division of line BV", marks: 3 },
+    { id: "dcg-2022-ol-a2a-r3", kind: "point", verbatim: "Construction lines (2 sets)", marks: 2 },
+    { id: "dcg-2022-ol-a2a-r4", kind: "point", verbatim: "Identify remaining points on LHS", marks: 2 },
+    { id: "dcg-2022-ol-a2a-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secA-q2-art",
@@ -1621,7 +2755,7 @@ export const CARDS: SecCard[] = [
     questionText: "Locate the points on the right hand side of the parabola.",
     tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
     rows: [
-    { id: "dcg-2022-ol-a2b-r1", kind: "anyN", verbatim: "Locate points on RHS curve", marks: 3, contextNote: "The scheme prices this drawing step by step: 3 — 3 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Locate points on RHS curve"]} },
+    { id: "dcg-2022-ol-a2b-r1", kind: "point", verbatim: "Locate points on RHS curve", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secA-q2-art",
@@ -1643,7 +2777,8 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the parabola in the rectangle ABCD.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
-    { id: "dcg-2022-ol-a2c-r1", kind: "anyN", verbatim: "Complete curve on LHS", marks: 4, contextNote: "The scheme prices this drawing step by step: 2, 2 — 4 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Complete curve on LHS","Draw curve on RHS"]} },
+    { id: "dcg-2022-ol-a2c-r1", kind: "point", verbatim: "Complete curve on LHS", marks: 2 },
+    { id: "dcg-2022-ol-a2c-r2", kind: "point", verbatim: "Draw curve on RHS", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secA-q2-art",
@@ -1663,9 +2798,13 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 OL Section A Q3(a)",
     stem: "The image below shows a set of inflatable geometric shapes for a children’s outdoor play area. The arrangement includes a cone A, cylinder B and sphere C which are in mutual contact. The drawing on the right shows the elevation and partially completed plan of the three solids.",
     questionText: "Draw the plan of the sphere C.",
-    tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"(17)"}, totalMarks: 17,
     rows: [
-    { id: "dcg-2022-ol-a3a-r1", kind: "anyN", verbatim: "Constructions in elevation", marks: 15, contextNote: "The scheme prices this drawing step by step: 4, 2, 3, 6 — 15 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Constructions in elevation","Projections to plan","Locate centre point in plan","Draw sphere C"],"perOptionSteps":[4,2,3,6]} },
+    { id: "dcg-2022-ol-a3a-r1", kind: "point", verbatim: "Constructions in elevation", marks: 4 },
+    { id: "dcg-2022-ol-a3a-r2", kind: "point", verbatim: "Projections to plan", marks: 2 },
+    { id: "dcg-2022-ol-a3a-r3", kind: "point", verbatim: "Locate centre point in plan", marks: 3 },
+    { id: "dcg-2022-ol-a3a-r4", kind: "point", verbatim: "Draw sphere C", marks: 6 },
+    { id: "dcg-2022-ol-a3a-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secA-q3-art",
@@ -1687,7 +2826,8 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the plan, showing all hidden detail.",
     tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
     rows: [
-    { id: "dcg-2022-ol-a3b-r1", kind: "anyN", verbatim: "Complete cone A", marks: 3, contextNote: "The scheme prices this drawing step by step: 2, 1 — 3 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Complete cone A","Hidden detail"],"perOptionSteps":[2,1]} },
+    { id: "dcg-2022-ol-a3b-r1", kind: "point", verbatim: "Complete cone A", marks: 2 },
+    { id: "dcg-2022-ol-a3b-r2", kind: "point", verbatim: "Hidden detail", marks: 1 },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secA-q3-art",
@@ -1707,9 +2847,11 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 OL Section A Q4(a)",
     stem: "The image below shows a ring box with the lid opened through 90⁰. The plan, partially completed elevation and partially completed end view of the box with the lid in the open position are also shown.",
     questionText: "Complete the elevation.",
-    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
-    { id: "dcg-2022-ol-a4a-r1", kind: "anyN", verbatim: "Projections from plan", marks: 8, contextNote: "The scheme prices this drawing step by step: 2, 6 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Projections from plan","Complete the elevation"],"perOptionSteps":[2,6]} },
+    { id: "dcg-2022-ol-a4a-r1", kind: "point", verbatim: "Projections from plan", marks: 2 },
+    { id: "dcg-2022-ol-a4a-r2", kind: "point", verbatim: "Complete the elevation", marks: 6 },
+    { id: "dcg-2022-ol-a4a-r3", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secA-q4-art",
@@ -1731,7 +2873,9 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the end view.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
-    { id: "dcg-2022-ol-a4b-r1", kind: "anyN", verbatim: "Projections from plan", marks: 10, contextNote: "The scheme prices this drawing step by step: 3, 2, 5 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Projections from plan","Identify correct points","Complete the end view…. (incl. Hidden detail)"],"perOptionSteps":[3,2,5]} },
+    { id: "dcg-2022-ol-a4b-r1", kind: "point", verbatim: "Projections from plan", marks: 3 },
+    { id: "dcg-2022-ol-a4b-r2", kind: "point", verbatim: "Identify correct points", marks: 2 },
+    { id: "dcg-2022-ol-a4b-r3", kind: "point", verbatim: "Complete the end view…. (incl. Hidden detail)", marks: 5 },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secA-q4-art",
@@ -1751,14 +2895,16 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2022 OL Section B Q1(a)",
     stem: "and Section C on drawing paper. The image on the right shows a Tesla charging station. Fig B-1 below shows an incomplete isometric projection of a similar charging station. The elevation and plan of the station are also shown in their required positions.",
     questionText: "Draw the given equilateral triangle abc and the axonometric axes X, Y, and Z.",
-    tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
+    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
-    { id: "dcg-2022-ol-b1a-r1", kind: "anyN", verbatim: "Draw equilateral triangle", marks: 7, contextNote: "The scheme prices this drawing step by step: 4, 3 — 7 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Draw equilateral triangle","Draw X, Y and Z axes"],"perOptionSteps":[4,3]} },
+    { id: "dcg-2022-ol-b1a-r1", kind: "point", verbatim: "Draw equilateral triangle", marks: 4 },
+    { id: "dcg-2022-ol-b1a-r2", kind: "point", verbatim: "Draw X, Y and Z axes", marks: 3 },
+    { id: "dcg-2022-ol-b1a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secB-q1-art.png",
-          "srcHash": "5e8af1dc59f7b6114a14f39e99958039",
+          "srcHash": "893e6dfcbe538050734234fc1b82b5b2",
           "alt": "Question B-1 as printed. A photograph of a Tesla charging station beside a car, and Fig. B-1: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z in magenta and the equilateral triangle abc in green, a 30 degree angle marked, the elevation of the station positioned at the top right with a central cut-out and an R20 semicircular head, dimensioned 40, 15, 35, 30, 15 and 15, and the plan below dimensioned 100 across, 60 and 25 at 45 degrees.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -1775,12 +2921,17 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the elevation and plan, positioned as shown.",
     tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
-    { id: "dcg-2022-ol-b1b-r1", kind: "anyN", verbatim: "Projections to set up elevation", marks: 13, contextNote: "The scheme prices this drawing step by step: 3, 1, 3, 3, 1, 2 — 13 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":6,"perOption":3,"options":["Projections to set up elevation","Semi-circle in elevation","Draw elevation in the correct position","Projections to set up plan","Semi-circle in plan (or 45⁰° lines)","Draw plan in the correct position"],"perOptionSteps":[3,1,3,3,1,2]} },
+    { id: "dcg-2022-ol-b1b-r1", kind: "point", verbatim: "Projections to set up elevation", marks: 3 },
+    { id: "dcg-2022-ol-b1b-r2", kind: "point", verbatim: "Semi-circle in elevation", marks: 1 },
+    { id: "dcg-2022-ol-b1b-r3", kind: "point", verbatim: "Draw elevation in the correct position", marks: 3 },
+    { id: "dcg-2022-ol-b1b-r4", kind: "point", verbatim: "Projections to set up plan", marks: 3 },
+    { id: "dcg-2022-ol-b1b-r5", kind: "point", verbatim: "Semi-circle in plan (or 45⁰° lines)", marks: 1 },
+    { id: "dcg-2022-ol-b1b-r6", kind: "point", verbatim: "Draw plan in the correct position", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secB-q1-art.png",
-          "srcHash": "5e8af1dc59f7b6114a14f39e99958039",
+          "srcHash": "893e6dfcbe538050734234fc1b82b5b2",
           "alt": "Question B-1 as printed. A photograph of a Tesla charging station beside a car, and Fig. B-1: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z in magenta and the equilateral triangle abc in green, a 30 degree angle marked, the elevation of the station positioned at the top right with a central cut-out and an R20 semicircular head, dimensioned 40, 15, 35, 30, 15 and 15, and the plan below dimensioned 100 across, 60 and 25 at 45 degrees.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -1797,12 +2948,16 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the axonometric projection of the rectangular outline of the charging station.",
     tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
     rows: [
-    { id: "dcg-2022-ol-b1c-r1", kind: "anyN", verbatim: "Projections from elevation", marks: 15, contextNote: "The scheme prices this drawing step by step: 3, 2, 5, 2, 3 — 15 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":3,"options":["Projections from elevation","Projections from plan","Axonometric projection of front surface","Axonometric projection of the top surface","Axonometric projection of right vertical surfaces"],"perOptionSteps":[3,2,5,2,3]} },
+    { id: "dcg-2022-ol-b1c-r1", kind: "point", verbatim: "Projections from elevation", marks: 3 },
+    { id: "dcg-2022-ol-b1c-r2", kind: "point", verbatim: "Projections from plan", marks: 2 },
+    { id: "dcg-2022-ol-b1c-r3", kind: "point", verbatim: "Axonometric projection of front surface", marks: 5 },
+    { id: "dcg-2022-ol-b1c-r4", kind: "point", verbatim: "Axonometric projection of the top surface", marks: 2 },
+    { id: "dcg-2022-ol-b1c-r5", kind: "point", verbatim: "Axonometric projection of right vertical surfaces", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secB-q1-art.png",
-          "srcHash": "5e8af1dc59f7b6114a14f39e99958039",
+          "srcHash": "893e6dfcbe538050734234fc1b82b5b2",
           "alt": "Question B-1 as printed. A photograph of a Tesla charging station beside a car, and Fig. B-1: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z in magenta and the equilateral triangle abc in green, a 30 degree angle marked, the elevation of the station positioned at the top right with a central cut-out and an R20 semicircular head, dimensioned 40, 15, 35, 30, 15 and 15, and the plan below dimensioned 100 across, 60 and 25 at 45 degrees.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -1819,12 +2974,17 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the axonometric projection of the central cut-out including the semi-circle.",
     tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
-    { id: "dcg-2022-ol-b1d-r1", kind: "anyN", verbatim: "Divisions on semi-circle in elevation", marks: 20, contextNote: "The scheme prices this drawing step by step: 5, 5, 2, 2, 4, 2 — 20 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":6,"perOption":5,"options":["Divisions on semi-circle in elevation","Corresponding divisions in plan","Projections from elevation","Projections from plan","Draw axonometric projection of the semi-circular curves","Complete the axonometric projection"],"perOptionSteps":[5,5,2,2,4,2]} },
+    { id: "dcg-2022-ol-b1d-r1", kind: "point", verbatim: "Divisions on semi-circle in elevation", marks: 5 },
+    { id: "dcg-2022-ol-b1d-r2", kind: "point", verbatim: "Corresponding divisions in plan", marks: 5 },
+    { id: "dcg-2022-ol-b1d-r3", kind: "point", verbatim: "Projections from elevation", marks: 2 },
+    { id: "dcg-2022-ol-b1d-r4", kind: "point", verbatim: "Projections from plan", marks: 2 },
+    { id: "dcg-2022-ol-b1d-r5", kind: "point", verbatim: "Draw axonometric projection of the semi-circular curves", marks: 4 },
+    { id: "dcg-2022-ol-b1d-r6", kind: "point", verbatim: "Complete the axonometric projection", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secB-q1-art.png",
-          "srcHash": "5e8af1dc59f7b6114a14f39e99958039",
+          "srcHash": "893e6dfcbe538050734234fc1b82b5b2",
           "alt": "Question B-1 as printed. A photograph of a Tesla charging station beside a car, and Fig. B-1: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z in magenta and the equilateral triangle abc in green, a 30 degree angle marked, the elevation of the station positioned at the top right with a central cut-out and an R20 semicircular head, dimensioned 40, 15, 35, 30, 15 and 15, and the plan below dimensioned 100 across, 60 and 25 at 45 degrees.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -1835,13 +2995,17 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2022-ol-b2a", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    id: "dcg-2022-ol-b2a", topicId: "design-and-communication-graphics-0-8", conceptId: "dcg-0-8",
     section: "B", questionRef: "2022 OL Section B Q2(a)",
     stem: "The image on the right shows a BMX freestyler at the 2020 Olympic Games. The BMX course consisted of a number of ramp structures. Fig. B-2 below shows the elevation and incomplete plan of a similar BMX ramp structure. The outline profile of a second ramp is also shown on the right below. A 3D graphic is also given.",
     questionText: "Draw the given elevation and incomplete plan of the structure.",
-    tariffModel: {"kind":"fixed","notation":"(25)"}, totalMarks: 25,
+    tariffModel: {"kind":"fixed","notation":"(30)"}, totalMarks: 30,
     rows: [
-    { id: "dcg-2022-ol-b2a-r1", kind: "anyN", verbatim: "Draw the outline elevation as given", marks: 25, contextNote: "The scheme prices this drawing step by step: 10, 4, 6, 5 — 25 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":10,"options":["Draw the outline elevation as given","Complete the elevation","Draw the outline plan as given","Complete the plan as given"],"perOptionSteps":[10,4,6,5]} },
+    { id: "dcg-2022-ol-b2a-r1", kind: "point", verbatim: "Draw the outline elevation as given", marks: 10 },
+    { id: "dcg-2022-ol-b2a-r2", kind: "point", verbatim: "Complete the elevation", marks: 4 },
+    { id: "dcg-2022-ol-b2a-r3", kind: "point", verbatim: "Draw the outline plan as given", marks: 6 },
+    { id: "dcg-2022-ol-b2a-r4", kind: "point", verbatim: "Complete the plan as given", marks: 5 },
+    { id: "dcg-2022-ol-b2a-r5", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secB-q2-art",
@@ -1863,7 +3027,9 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the plan showing all lines of interpenetration.",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
-    { id: "dcg-2022-ol-b2b-1-r1", kind: "anyN", verbatim: "Projection from elevation", marks: 7, contextNote: "The scheme prices this drawing step by step: 1, 2, 4 — 7 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Projection from elevation","Locate points in plan","Complete the plan"],"perOptionSteps":[1,2,4]} },
+    { id: "dcg-2022-ol-b2b-1-r1", kind: "point", verbatim: "Projection from elevation", marks: 1 },
+    { id: "dcg-2022-ol-b2b-1-r2", kind: "point", verbatim: "Locate points in plan", marks: 2 },
+    { id: "dcg-2022-ol-b2b-1-r3", kind: "point", verbatim: "Complete the plan", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secB-q2-art",
@@ -1885,7 +3051,10 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the plan showing all lines of interpenetration.",
     tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
     rows: [
-    { id: "dcg-2022-ol-b2b-2-r1", kind: "anyN", verbatim: "Projection from elevation", marks: 9, contextNote: "The scheme prices this drawing step by step: 2, 2, 2, 3 — 9 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Projection from elevation","Projection from end view","Locate points in plan","Complete the plan"],"perOptionSteps":[2,2,2,3]} },
+    { id: "dcg-2022-ol-b2b-2-r1", kind: "point", verbatim: "Projection from elevation", marks: 2 },
+    { id: "dcg-2022-ol-b2b-2-r2", kind: "point", verbatim: "Projection from end view", marks: 2 },
+    { id: "dcg-2022-ol-b2b-2-r3", kind: "point", verbatim: "Locate points in plan", marks: 2 },
+    { id: "dcg-2022-ol-b2b-2-r4", kind: "point", verbatim: "Complete the plan", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secB-q2-art",
@@ -1901,13 +3070,16 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2022-ol-b2c", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    id: "dcg-2022-ol-b2c", topicId: "design-and-communication-graphics-0-8", conceptId: "dcg-0-8",
     section: "B", questionRef: "2022 OL Section B Q2(c)",
     stem: "The image on the right shows a BMX freestyler at the 2020 Olympic Games. The BMX course consisted of a number of ramp structures. Fig. B-2 below shows the elevation and incomplete plan of a similar BMX ramp structure. The outline profile of a second ramp is also shown on the right below. A 3D graphic is also given.",
     questionText: "Draw an end view of the structure.",
     tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
     rows: [
-    { id: "dcg-2022-ol-b2c-r1", kind: "anyN", verbatim: "Transfer of widths from plan", marks: 14, contextNote: "The scheme prices this drawing step by step: 3, 2, 5, 4 — 14 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Transfer of widths from plan","Projection of heights from elevation","End view of main structure (incl. hidden detail)","End view of ramp"],"perOptionSteps":[3,2,5,4]} },
+    { id: "dcg-2022-ol-b2c-r1", kind: "point", verbatim: "Transfer of widths from plan", marks: 3 },
+    { id: "dcg-2022-ol-b2c-r2", kind: "point", verbatim: "Projection of heights from elevation", marks: 2 },
+    { id: "dcg-2022-ol-b2c-r3", kind: "point", verbatim: "End view of main structure (incl. hidden detail)", marks: 5 },
+    { id: "dcg-2022-ol-b2c-r4", kind: "point", verbatim: "End view of ramp", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secB-q2-art",
@@ -1923,13 +3095,16 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2022-ol-b3a", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2022-ol-b3a", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2022 OL Section B Q3(a)",
     stem: "The 3D graphic on the right shows a birdhouse. Fig. B-3 below shows an isometric view of the birdhouse. Note: The hole is not required to be drawn.",
     questionText: "Draw the elevation of the birdhouse looking in the direction of the arrow.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
     rows: [
-    { id: "dcg-2022-ol-b3a-r1", kind: "anyN", verbatim: "Draw base of birdhouse", marks: 18, contextNote: "The scheme prices this drawing step by step: 6, 4, 8 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":6,"options":["Draw base of birdhouse","Outline of top","Complete elevation"],"perOptionSteps":[6,4,8]} },
+    { id: "dcg-2022-ol-b3a-r1", kind: "point", verbatim: "Draw base of birdhouse", marks: 6 },
+    { id: "dcg-2022-ol-b3a-r2", kind: "point", verbatim: "Outline of top", marks: 4 },
+    { id: "dcg-2022-ol-b3a-r3", kind: "point", verbatim: "Complete elevation", marks: 8 },
+    { id: "dcg-2022-ol-b3a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secB-q3-art",
@@ -1945,13 +3120,15 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2022-ol-b3b", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2022-ol-b3b", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2022 OL Section B Q3(b)",
     stem: "The 3D graphic on the right shows a birdhouse. Fig. B-3 below shows an isometric view of the birdhouse. Note: The hole is not required to be drawn.",
     questionText: "Project a plan from the elevation.",
     tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
     rows: [
-    { id: "dcg-2022-ol-b3b-r1", kind: "anyN", verbatim: "Draw base", marks: 18, contextNote: "The scheme prices this drawing step by step: 6, 4, 8 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":6,"options":["Draw base","Outline of top","Complete plan"],"perOptionSteps":[6,4,8]} },
+    { id: "dcg-2022-ol-b3b-r1", kind: "point", verbatim: "Draw base", marks: 6 },
+    { id: "dcg-2022-ol-b3b-r2", kind: "point", verbatim: "Outline of top", marks: 4 },
+    { id: "dcg-2022-ol-b3b-r3", kind: "point", verbatim: "Complete plan", marks: 8 },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secB-q3-art",
@@ -1967,13 +3144,17 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2022-ol-b3c", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2022-ol-b3c", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2022 OL Section B Q3(c)",
     stem: "The 3D graphic on the right shows a birdhouse. Fig. B-3 below shows an isometric view of the birdhouse. Note: The hole is not required to be drawn.",
     questionText: "Draw the auxiliary elevation of the birdhouse, projected from the plan, which will include the true shape of surface A.",
     tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
-    { id: "dcg-2022-ol-b3c-r1", kind: "anyN", verbatim: "X1Y1 line parallel to plan of surface A", marks: 19, contextNote: "The scheme prices this drawing step by step: 1, 1, 4, 4, 9 — 19 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":1,"options":["X1Y1 line parallel to plan of surface A","Projections from plan","Transfer of heights from elevation","Draw surface A","Complete auxiliary elevation"],"perOptionSteps":[1,1,4,4,9]} },
+    { id: "dcg-2022-ol-b3c-r1", kind: "point", verbatim: "X1Y1 line parallel to plan of surface A", marks: 1 },
+    { id: "dcg-2022-ol-b3c-r2", kind: "point", verbatim: "Projections from plan", marks: 1 },
+    { id: "dcg-2022-ol-b3c-r3", kind: "point", verbatim: "Transfer of heights from elevation", marks: 4 },
+    { id: "dcg-2022-ol-b3c-r4", kind: "point", verbatim: "Draw surface A", marks: 4 },
+    { id: "dcg-2022-ol-b3c-r5", kind: "point", verbatim: "Complete auxiliary elevation", marks: 9 },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secB-q3-art",
@@ -1993,14 +3174,31 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2022 OL Section C Q1(a)",
     stem: "and Section C on drawing paper. The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
     questionText: "On the map supplied, draw a vertical section (profile) on the line AB.",
-    tariffModel: {"kind":"fixed","notation":"(28)"}, totalMarks: 28,
+    tariffModel: {"kind":"fixed","notation":"(33)"}, totalMarks: 33,
     rows: [
-    { id: "dcg-2022-ol-c1a-r1", kind: "anyN", verbatim: "Measure heights and draw horizontal lines", marks: 28, contextNote: "The scheme prices this drawing step by step: 10, 8, 10 — 28 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":10,"options":["Measure heights and draw horizontal lines","Projections from intersections between line AB and contours","Draw the profile"],"perOptionSteps":[10,8,10]} },
+    { id: "dcg-2022-ol-c1a-r1", kind: "point", verbatim: "Measure heights and draw horizontal lines", marks: 10 },
+    { id: "dcg-2022-ol-c1a-r2", kind: "point", verbatim: "Projections from intersections between line AB and contours", marks: 8 },
+    { id: "dcg-2022-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 10 },
+    { id: "dcg-2022-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secC-q1-art.png",
-          "srcHash": "ed0f67fc2575e49cdaa5c1834edafc26",
+          "srcHash": "a6a05182981a968538104efddf575c5d",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a dual carriageway on the M8 motorway; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -2017,12 +3215,31 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a section of the M8 motorway which links Dublin to Cork. CD is the centreline of the roadway which is level at an altitude of 50m. Using side slopes of 1:1 for the embankments and 1:2 for the cuttings, complete the earthworks on the northern side, which are necessary to accommodate the roadway. Note: The earthworks on the southern side of the roadway have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(27)"}, totalMarks: 27,
     rows: [
-    { id: "dcg-2022-ol-c1b-r1", kind: "anyN", verbatim: "Parallel lines at 5m intervals for embankments", marks: 27, contextNote: "The scheme prices this drawing step by step: 4, 4, 5, 4, 5, 5 — 27 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":6,"perOption":4,"options":["Parallel lines at 5m intervals for embankments","Identify points on embankment curve","Draw embankment curve","Parallel lines at 10m intervals for cuttings","Identify points on cutting curve","Draw cutting curves"],"perOptionSteps":[4,4,5,4,5,5]} },
+    { id: "dcg-2022-ol-c1b-r1", kind: "point", verbatim: "Parallel lines at 5m intervals for embankments", marks: 4 },
+    { id: "dcg-2022-ol-c1b-r2", kind: "point", verbatim: "Identify points on embankment curve", marks: 4 },
+    { id: "dcg-2022-ol-c1b-r3", kind: "point", verbatim: "Draw embankment curve", marks: 5 },
+    { id: "dcg-2022-ol-c1b-r4", kind: "point", verbatim: "Parallel lines at 10m intervals for cuttings", marks: 4 },
+    { id: "dcg-2022-ol-c1b-r5", kind: "point", verbatim: "Identify points on cutting curve", marks: 5 },
+    { id: "dcg-2022-ol-c1b-r6", kind: "point", verbatim: "Draw cutting curves", marks: 5 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secC-q1-art.png",
-          "srcHash": "ed0f67fc2575e49cdaa5c1834edafc26",
+          "srcHash": "a6a05182981a968538104efddf575c5d",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a dual carriageway on the M8 motorway; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -2037,14 +3254,19 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2022 OL Section C Q2(a)",
     stem: "The image on the right shows a beach art structure at a holiday destination. The top of the structure consists of a hyperbolic paraboloid. The structure appears as a square in plan. Fig. C-2 below shows the projections of a similar hyperbolic paraboloid.",
     questionText: "Draw the plan and elevation of the given structure.",
-    tariffModel: {"kind":"fixed","notation":"(32)"}, totalMarks: 32,
+    tariffModel: {"kind":"fixed","notation":"(37)"}, totalMarks: 37,
     rows: [
-    { id: "dcg-2022-ol-c2a-r1", kind: "anyN", verbatim: "Outline of surface ABCD in plan", marks: 32, contextNote: "The scheme prices this drawing step by step: 8, 6, 8, 6, 4 — 32 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":8,"options":["Outline of surface ABCD in plan","Elements in plan (incl. division)","Outline of surface in elevation","Elements in elevation (incl. division or proj.)","Completion of elevation (vertical legs)"],"perOptionSteps":[8,6,8,6,4]} },
+    { id: "dcg-2022-ol-c2a-r1", kind: "point", verbatim: "Outline of surface ABCD in plan", marks: 8 },
+    { id: "dcg-2022-ol-c2a-r2", kind: "point", verbatim: "Elements in plan (incl. division)", marks: 6 },
+    { id: "dcg-2022-ol-c2a-r3", kind: "point", verbatim: "Outline of surface in elevation", marks: 8 },
+    { id: "dcg-2022-ol-c2a-r4", kind: "point", verbatim: "Elements in elevation (incl. division or proj.)", marks: 6 },
+    { id: "dcg-2022-ol-c2a-r5", kind: "point", verbatim: "Completion of elevation (vertical legs)", marks: 4 },
+    { id: "dcg-2022-ol-c2a-r6", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secC-q2-art.png",
-          "srcHash": "e3cc35ef20364e7a60cf82c0441f206e",
+          "srcHash": "56c0c1e5a5d79d479fd9482729a28269",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a white beach art structure with a saddle-shaped top, beside Fig. C-2: above the XY line the elevation of the hyperbolic paraboloid, the two high corners B and D with the low corners C and A between them, ruled with green elements, dimensioned 80 and 32 high; below it the plan, a square ABCD of 96 side set at 60 degrees to the horizontal and ruled with green elements in one direction.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -2061,12 +3283,15 @@ export const CARDS: SecCard[] = [
     questionText: "Project an end view of the structure.",
     tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
     rows: [
-    { id: "dcg-2022-ol-c2b-r1", kind: "anyN", verbatim: "Determine heights and widths for surface ABCD", marks: 23, contextNote: "The scheme prices this drawing step by step: 8, 6, 5, 4 — 23 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":8,"options":["Determine heights and widths for surface ABCD","Draw the outline of hyperbolic paraboloid surface","Draw elements","Completion of end view (vertical legs)"],"perOptionSteps":[8,6,5,4]} },
+    { id: "dcg-2022-ol-c2b-r1", kind: "point", verbatim: "Determine heights and widths for surface ABCD", marks: 8 },
+    { id: "dcg-2022-ol-c2b-r2", kind: "point", verbatim: "Draw the outline of hyperbolic paraboloid surface", marks: 6 },
+    { id: "dcg-2022-ol-c2b-r3", kind: "point", verbatim: "Draw elements", marks: 5 },
+    { id: "dcg-2022-ol-c2b-r4", kind: "point", verbatim: "Completion of end view (vertical legs)", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secC-q2-art.png",
-          "srcHash": "e3cc35ef20364e7a60cf82c0441f206e",
+          "srcHash": "56c0c1e5a5d79d479fd9482729a28269",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a white beach art structure with a saddle-shaped top, beside Fig. C-2: above the XY line the elevation of the hyperbolic paraboloid, the two high corners B and D with the low corners C and A between them, ruled with green elements, dimensioned 80 and 32 high; below it the plan, a square ABCD of 96 side set at 60 degrees to the horizontal and ruled with green elements in one direction.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -2081,14 +3306,18 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2022 OL Section C Q3(a)",
     stem: "The image on the right shows a digger bucket. The projections of a similar digger bucket are shown in Fig. C-3 below. All teeth are equal in width.",
     questionText: "Draw the given plan and elevation of the digger bucket.",
-    tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
+    tariffModel: {"kind":"fixed","notation":"(31)"}, totalMarks: 31,
     rows: [
-    { id: "dcg-2022-ol-c3a-r1", kind: "anyN", verbatim: "Draw straight edges in elevation", marks: 26, contextNote: "The scheme prices this drawing step by step: 8, 4, 6, 8 — 26 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":8,"options":["Draw straight edges in elevation","Determine centre and draw semi-circle","Draw outline plan","Complete plan"],"perOptionSteps":[8,4,6,8]} },
+    { id: "dcg-2022-ol-c3a-r1", kind: "point", verbatim: "Draw straight edges in elevation", marks: 8 },
+    { id: "dcg-2022-ol-c3a-r2", kind: "point", verbatim: "Determine centre and draw semi-circle", marks: 4 },
+    { id: "dcg-2022-ol-c3a-r3", kind: "point", verbatim: "Draw outline plan", marks: 6 },
+    { id: "dcg-2022-ol-c3a-r4", kind: "point", verbatim: "Complete plan", marks: 8 },
+    { id: "dcg-2022-ol-c3a-r5", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secC-q3-art.png",
-          "srcHash": "6477ccff36a93ccceaee346879c68e15",
+          "srcHash": "97fe4387466bfb655434abfa214f023d",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a black excavator digger bucket, beside Fig. C-3: above the XY line the elevation, a curved profile with an R40 arc and a straight back falling to the XY line, dimensioned 80 high, 107 long and 10 at the top; below it the plan, a rectangle 70 deep by 50 plus 45 long, with four equal teeth of 10 and 10 and a 12 projection at the right-hand end.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -2105,12 +3334,13 @@ export const CARDS: SecCard[] = [
     questionText: "Project an end view of the bucket.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
-    { id: "dcg-2022-ol-c3b-r1", kind: "anyN", verbatim: "Correct heights and widths for end view", marks: 10, contextNote: "The scheme prices this drawing step by step: 4, 6 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Correct heights and widths for end view","Draw the end view"],"perOptionSteps":[4,6]} },
+    { id: "dcg-2022-ol-c3b-r1", kind: "point", verbatim: "Correct heights and widths for end view", marks: 4 },
+    { id: "dcg-2022-ol-c3b-r2", kind: "point", verbatim: "Draw the end view", marks: 6 },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secC-q3-art.png",
-          "srcHash": "6477ccff36a93ccceaee346879c68e15",
+          "srcHash": "97fe4387466bfb655434abfa214f023d",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a black excavator digger bucket, beside Fig. C-3: above the XY line the elevation, a curved profile with an R40 arc and a straight back falling to the XY line, dimensioned 80 high, 107 long and 10 at the top; below it the plan, a rectangle 70 deep by 50 plus 45 long, with four equal teeth of 10 and 10 and a 12 projection at the right-hand end.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -2127,12 +3357,12 @@ export const CARDS: SecCard[] = [
     questionText: "Draw a one-piece surface development of the digger bucket.",
     tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
-    { id: "dcg-2022-ol-c3c-r1", kind: "anyN", verbatim: "Appropriate layout of surface development", marks: 19, contextNote: "The scheme prices this drawing step by step: 1, 4, 3, 3, 2, 4, 2 — 19 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":7,"perOption":1,"options":["Appropriate layout of surface development","Development of bottom surface","Development of front surface","Development of back surface","Division of arc","Development of curved surface","Division of top surface"],"perOptionSteps":[1,4,3,3,2,4,2]} },
+    { id: "dcg-2022-ol-c3c-r1", kind: "criterion", verbatim: "Surface Development", marks: 19, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,19], parts: [{"id":"step-1","verbatim":"Appropriate layout of surface development","marks":1,"permittedMarks":[0,1]},{"id":"step-2","verbatim":"Development of bottom surface","marks":4,"permittedMarks":[0,4]},{"id":"step-3","verbatim":"Development of front surface","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Development of back surface","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"Division of arc","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Development of curved surface","marks":4,"permittedMarks":[0,4]},{"id":"step-7","verbatim":"Division of top surface","marks":2,"permittedMarks":[0,2]}] },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secC-q3-art.png",
-          "srcHash": "6477ccff36a93ccceaee346879c68e15",
+          "srcHash": "97fe4387466bfb655434abfa214f023d",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a black excavator digger bucket, beside Fig. C-3: above the XY line the elevation, a curved profile with an R40 arc and a straight back falling to the XY line, dimensioned 80 high, 107 long and 10 at the top; below it the plan, a rectangle 70 deep by 50 plus 45 long, with four equal teeth of 10 and 10 and a 12 projection at the right-hand end.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -2146,14 +3376,15 @@ export const CARDS: SecCard[] = [
     id: "dcg-2022-ol-c4a", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
     section: "C", questionRef: "2022 OL Section C Q4(a)",
     questionText: "A cam mechanism is a profiled shape (similar to the one shown on the right) mounted on a shaft that is used to convert rotary motion into linear motion. Draw the displacement diagram for a cam which imparts the following motion to an inline knife edge follower: 90⁰ Rise 70mm with uniform velocity 90⁰ 120⁰ Dwell 120⁰ 180⁰ Fall 20mm with uniform velocity 180⁰ 360⁰ Fall 50mm with simple harmonic motion. (In the displacement diagram, use a distance of 15mm to represent each 30⁰ interval.) Note: It is not necessary to draw the cam profile.",
-    tariffModel: {"kind":"fixed","notation":"(29)"}, totalMarks: 29,
+    tariffModel: {"kind":"fixed","notation":"(34)"}, totalMarks: 34,
     rows: [
-    { id: "dcg-2022-ol-c4a-r1", kind: "anyN", verbatim: "360⁰ division (widths on displacement diagram)", marks: 29, contextNote: "The scheme prices this drawing step by step: 5, 1, 7, 3, 3, 3, 3, 4 — 29 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":8,"perOption":5,"options":["360⁰ division (widths on displacement diagram)","Correct use of 70mm height","Establish follower position at 0⁰, 90⁰, 120°, 180⁰ and 360⁰","0⁰ to 90⁰, Rise 70mm with Uniform Velocity","90⁰ to 120⁰, Dwell","120⁰ to 180⁰, Fall 20mm with Uniform Velocity","180⁰ to 360⁰, Fall 50mm with Simple Harmonic Motion","Complete Displacement Diagram"],"perOptionSteps":[5,1,7,3,3,3,3,4]} },
+    { id: "dcg-2022-ol-c4a-r1", kind: "criterion", verbatim: "Displacement Diagram", marks: 29, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,29], parts: [{"id":"step-1","verbatim":"360⁰ division (widths on displacement diagram)","marks":5,"permittedMarks":[0,5]},{"id":"step-2","verbatim":"Correct use of 70mm height","marks":1,"permittedMarks":[0,1]},{"id":"step-3","verbatim":"Establish follower position at 0⁰, 90⁰, 120°, 180⁰ and 360⁰","marks":7,"permittedMarks":[0,7]},{"id":"step-4","verbatim":"0⁰ to 90⁰, Rise 70mm with Uniform Velocity","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"90⁰ to 120⁰, Dwell","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"120⁰ to 180⁰, Fall 20mm with Uniform Velocity","marks":3,"permittedMarks":[0,3]},{"id":"step-7","verbatim":"180⁰ to 360⁰, Fall 50mm with Simple Harmonic Motion","marks":3,"permittedMarks":[0,3]},{"id":"step-8","verbatim":"Complete Displacement Diagram","marks":4,"permittedMarks":[0,4]}] },
+    { id: "dcg-2022-ol-c4a-r2", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secC-q4-art.png",
-          "srcHash": "674e2ca0aa4183871404826b64f8bf06",
+          "srcHash": "805bde5b7a30ccff82c36bd3bd5105ef",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a rendered grey plate cam on a shaft and prints the displacement data as text, with no drawing to copy. Part (b) shows a photograph of a helical silver earring on an ear, beside Fig. C-4(b): above the XY line the elevation of a cylinder 120 high with the point A on its base and B at the top, and a broken portion of the helix drawn from A; below it the plan, a circle of 90 diameter divided by twelve magenta radii at 30 degree intervals with A and B coincident on the right.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -2166,15 +3397,16 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2022-ol-c4b", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
     section: "C", questionRef: "2022 OL Section C Q4(b)",
+    stem: "The graphic below shows an earring which is based on the profile of a cylindrical helix. Fig. C-4(b) on the right shows the projections of a cylinder and a portion of such a helix.",
     questionText: "(i) Draw the given plan and elevation of the cylinder. (ii) Complete the projections of a regular helix which moves in an anticlockwise direction about the cylinder, from point A on the base to point B at the top, in one revolution.",
     tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
     rows: [
-    { id: "dcg-2022-ol-c4b-r1", kind: "anyN", verbatim: "Draw circle in plan", marks: 26, contextNote: "The scheme prices this drawing step by step: 4, 4, 3, 3, 2, 6, 4 — 26 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":7,"perOption":4,"options":["Draw circle in plan","Draw outline elevation","Division in plan","Draw horizontal divisions in elevation","Complete projections from plan of helix","Locate points in elevation","Draw helix in elevation"],"perOptionSteps":[4,4,3,3,2,6,4]} },
+    { id: "dcg-2022-ol-c4b-r1", kind: "criterion", verbatim: "Helix", marks: 26, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,26], parts: [{"id":"step-1","verbatim":"Draw circle in plan","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Draw outline elevation","marks":4,"permittedMarks":[0,4]},{"id":"step-3","verbatim":"Division in plan","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Draw horizontal divisions in elevation","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"Complete projections from plan of helix","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Locate points in elevation","marks":6,"permittedMarks":[0,6]},{"id":"step-7","verbatim":"Draw helix in elevation","marks":4,"permittedMarks":[0,4]}] },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secC-q4-art.png",
-          "srcHash": "674e2ca0aa4183871404826b64f8bf06",
+          "srcHash": "805bde5b7a30ccff82c36bd3bd5105ef",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a rendered grey plate cam on a shaft and prints the displacement data as text, with no drawing to copy. Part (b) shows a photograph of a helical silver earring on an ear, beside Fig. C-4(b): above the XY line the elevation of a cylinder 120 high with the point A on its base and B at the top, and a broken portion of the helix drawn from A; below it the plan, a circle of 90 diameter divided by twelve magenta radii at 30 degree intervals with A and B coincident on the right.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -2189,14 +3421,15 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2022 OL Section C Q5 — Assembly",
     stem: "Stove-top coffee pots are a very popular method of brewing coffee at home. Details of a stove-top coffee pot are given in Fig. C-5 below. A parts list and 3D graphic of the coffee pot are also shown. Draw the elevation of the assembled coffee pot. Note: Any omitted dimensions may be estimated. Unnecessary dimensions and hidden detail have been omitted for clarity. Part Name Qty. Main Body Lid Base",
     questionText: "Stove-top coffee pots are a very popular method of brewing coffee at home. Details of a stove-top coffee pot are given in Fig. C-5 below. A parts list and 3D graphic of the coffee pot are also shown. Draw the elevation of the assembled coffee pot. Note: Any omitted dimensions may be estimated. Unnecessary dimensions and hidden detail have been omitted for clarity.",
-    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
-    { id: "dcg-2022-ol-c5-1-r1", kind: "anyN", verbatim: "Relative positioning of components", marks: 8, contextNote: "The scheme prices this drawing step by step: 8 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":8,"options":["Relative positioning of components"]} },
+    { id: "dcg-2022-ol-c5-1-r1", kind: "point", verbatim: "Relative positioning of components", marks: 8 },
+    { id: "dcg-2022-ol-c5-1-r2", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secC-q5-art.png",
-          "srcHash": "e91508fd07d241bacb94e645784bf022",
+          "srcHash": "10ff6009ea09e59f8e8db75708a00e4e",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a stove-top coffee pot, beside Fig. C-5: dimensioned orthographic details of the three numbered parts -- the main body with its handle, dimensioned 25, 25, 5, 20, 20, 85, 15, 25, 10 and 20 with a hexagonal plan across Ø40, Ø60 and Ø80 at 30 degrees; the lid dimensioned 20, 10, 15, 10 and 5 over a hexagonal plan; and the base dimensioned 20 and 30 over concentric circles of Ø40, Ø60 and Ø80 -- with a parts-list table naming main body, lid and base with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -2213,12 +3446,13 @@ export const CARDS: SecCard[] = [
     questionText: "Stove-top coffee pots are a very popular method of brewing coffee at home. Details of a stove-top coffee pot are given in Fig. C-5 below. A parts list and 3D graphic of the coffee pot are also shown. Draw the elevation of the assembled coffee pot. Note: Any omitted dimensions may be estimated. Unnecessary dimensions and hidden detail have been omitted for clarity.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
-    { id: "dcg-2022-ol-c5-2-r1", kind: "anyN", verbatim: "Base outline", marks: 10, contextNote: "The scheme prices this drawing step by step: 8, 2 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":8,"options":["Base outline","Hidden detail"],"perOptionSteps":[8,2]} },
+    { id: "dcg-2022-ol-c5-2-r1", kind: "point", verbatim: "Base outline", marks: 8 },
+    { id: "dcg-2022-ol-c5-2-r2", kind: "point", verbatim: "Hidden detail", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secC-q5-art.png",
-          "srcHash": "e91508fd07d241bacb94e645784bf022",
+          "srcHash": "10ff6009ea09e59f8e8db75708a00e4e",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a stove-top coffee pot, beside Fig. C-5: dimensioned orthographic details of the three numbered parts -- the main body with its handle, dimensioned 25, 25, 5, 20, 20, 85, 15, 25, 10 and 20 with a hexagonal plan across Ø40, Ø60 and Ø80 at 30 degrees; the lid dimensioned 20, 10, 15, 10 and 5 over a hexagonal plan; and the base dimensioned 20 and 30 over concentric circles of Ø40, Ø60 and Ø80 -- with a parts-list table naming main body, lid and base with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -2235,12 +3469,16 @@ export const CARDS: SecCard[] = [
     questionText: "Stove-top coffee pots are a very popular method of brewing coffee at home. Details of a stove-top coffee pot are given in Fig. C-5 below. A parts list and 3D graphic of the coffee pot are also shown. Draw the elevation of the assembled coffee pot. Note: Any omitted dimensions may be estimated. Unnecessary dimensions and hidden detail have been omitted for clarity.",
     tariffModel: {"kind":"fixed","notation":"(25)"}, totalMarks: 25,
     rows: [
-    { id: "dcg-2022-ol-c5-3-r1", kind: "anyN", verbatim: "Locate width of hexagons", marks: 25, contextNote: "The scheme prices this drawing step by step: 3, 10, 7, 2, 3 — 25 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":3,"options":["Locate width of hexagons","Body outline","Handle","Spout","Complete body"],"perOptionSteps":[3,10,7,2,3]} },
+    { id: "dcg-2022-ol-c5-3-r1", kind: "point", verbatim: "Locate width of hexagons", marks: 3 },
+    { id: "dcg-2022-ol-c5-3-r2", kind: "point", verbatim: "Body outline", marks: 10 },
+    { id: "dcg-2022-ol-c5-3-r3", kind: "point", verbatim: "Handle", marks: 7 },
+    { id: "dcg-2022-ol-c5-3-r4", kind: "point", verbatim: "Spout", marks: 2 },
+    { id: "dcg-2022-ol-c5-3-r5", kind: "point", verbatim: "Complete body", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secC-q5-art.png",
-          "srcHash": "e91508fd07d241bacb94e645784bf022",
+          "srcHash": "10ff6009ea09e59f8e8db75708a00e4e",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a stove-top coffee pot, beside Fig. C-5: dimensioned orthographic details of the three numbered parts -- the main body with its handle, dimensioned 25, 25, 5, 20, 20, 85, 15, 25, 10 and 20 with a hexagonal plan across Ø40, Ø60 and Ø80 at 30 degrees; the lid dimensioned 20, 10, 15, 10 and 5 over a hexagonal plan; and the base dimensioned 20 and 30 over concentric circles of Ø40, Ø60 and Ø80 -- with a parts-list table naming main body, lid and base with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -2257,12 +3495,14 @@ export const CARDS: SecCard[] = [
     questionText: "Stove-top coffee pots are a very popular method of brewing coffee at home. Details of a stove-top coffee pot are given in Fig. C-5 below. A parts list and 3D graphic of the coffee pot are also shown. Draw the elevation of the assembled coffee pot. Note: Any omitted dimensions may be estimated. Unnecessary dimensions and hidden detail have been omitted for clarity.",
     tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
-    { id: "dcg-2022-ol-c5-4-r1", kind: "anyN", verbatim: "Bottom outline", marks: 12, contextNote: "The scheme prices this drawing step by step: 6, 3, 3 — 12 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":6,"options":["Bottom outline","Handle","Complete lid (incl. hidden detail)"],"perOptionSteps":[6,3,3]} },
+    { id: "dcg-2022-ol-c5-4-r1", kind: "point", verbatim: "Bottom outline", marks: 6 },
+    { id: "dcg-2022-ol-c5-4-r2", kind: "point", verbatim: "Handle", marks: 3 },
+    { id: "dcg-2022-ol-c5-4-r3", kind: "point", verbatim: "Complete lid (incl. hidden detail)", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secC-q5-art.png",
-          "srcHash": "e91508fd07d241bacb94e645784bf022",
+          "srcHash": "10ff6009ea09e59f8e8db75708a00e4e",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a stove-top coffee pot, beside Fig. C-5: dimensioned orthographic details of the three numbered parts -- the main body with its handle, dimensioned 25, 25, 5, 20, 20, 85, 15, 25, 10 and 20 with a hexagonal plan across Ø40, Ø60 and Ø80 at 30 degrees; the lid dimensioned 20, 10, 15, 10 and 5 over a hexagonal plan; and the base dimensioned 20 and 30 over concentric circles of Ø40, Ø60 and Ø80 -- with a parts-list table naming main body, lid and base with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission"
@@ -2277,9 +3517,12 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Section A Q1(a)",
     stem: "The image below shows an elliptical pool table from a science museum. The top of the pool table consists of an ellipse and an outer frame. The drawing on the right shows the outer frame and the major and minor circles of the ellipse. A portion of the ellipse is also shown.",
     questionText: "Locate the remaining points on the ellipse.",
-    tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
-    { id: "dcg-2023-ol-a1a-r1", kind: "anyN", verbatim: "Appropriate use of given major and minor axis", marks: 10, contextNote: "The scheme prices this drawing step by step: 1, 3, 6 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Appropriate use of given major and minor axis","Required construction for additional points","Locate additional points"],"perOptionSteps":[1,3,6]} },
+    { id: "dcg-2023-ol-a1a-r1", kind: "point", verbatim: "Appropriate use of given major and minor axis", marks: 1 },
+    { id: "dcg-2023-ol-a1a-r2", kind: "point", verbatim: "Required construction for additional points", marks: 3 },
+    { id: "dcg-2023-ol-a1a-r3", kind: "point", verbatim: "Locate additional points", marks: 6 },
+    { id: "dcg-2023-ol-a1a-r4", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secA-q1-art",
@@ -2301,7 +3544,7 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the curve.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
-    { id: "dcg-2023-ol-a1b-r1", kind: "anyN", verbatim: "Draw curve", marks: 4, contextNote: "The scheme prices this drawing step by step: 4 — 4 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":4,"options":["Draw curve"]} },
+    { id: "dcg-2023-ol-a1b-r1", kind: "point", verbatim: "Draw curve", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secA-q1-art",
@@ -2323,7 +3566,7 @@ export const CARDS: SecCard[] = [
     questionText: "Locate the focal points of the ellipse.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
-    { id: "dcg-2023-ol-a1c-r1", kind: "anyN", verbatim: "Locate required focal points", marks: 4, contextNote: "The scheme prices this drawing step by step: 4 — 4 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":4,"options":["Locate required focal points"]} },
+    { id: "dcg-2023-ol-a1c-r1", kind: "point", verbatim: "Locate required focal points", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secA-q1-art",
@@ -2342,9 +3585,13 @@ export const CARDS: SecCard[] = [
     id: "dcg-2023-ol-a2", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
     section: "A", questionRef: "2023 OL Section A Q2",
     questionText: "The image below shows a sun lounger. The drawing shows the plan and partially completed perspective view of a similar sun lounger. Complete the perspective drawing of the sun lounger.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
-    { id: "dcg-2023-ol-a2-r1", kind: "anyN", verbatim: "Radiate lines to correct vanishing points", marks: 18, contextNote: "The scheme prices this drawing step by step: 6, 3, 4, 5 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":6,"options":["Radiate lines to correct vanishing points","Complete front RHS surface","Complete the top","Complete the LHS sloping surface"],"perOptionSteps":[6,3,4,5]} },
+    { id: "dcg-2023-ol-a2-r1", kind: "point", verbatim: "Radiate lines to correct vanishing points", marks: 6 },
+    { id: "dcg-2023-ol-a2-r2", kind: "point", verbatim: "Complete front RHS surface", marks: 3 },
+    { id: "dcg-2023-ol-a2-r3", kind: "point", verbatim: "Complete the top", marks: 4 },
+    { id: "dcg-2023-ol-a2-r4", kind: "point", verbatim: "Complete the LHS sloping surface", marks: 5 },
+    { id: "dcg-2023-ol-a2-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secA-q2-art",
@@ -2364,9 +3611,12 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Section A Q3(a)",
     stem: "The image below shows three tennis balls and a cylindrical container A which are in mutual contact. The drawing on the right shows the partially completed elevation and plan of similar solids. The spherical tennis balls B, C, and D are all of the same diameter.",
     questionText: "Draw the elevation of sphere C.",
-    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
-    { id: "dcg-2023-ol-a3a-r1", kind: "anyN", verbatim: "Project centre from plan", marks: 8, contextNote: "The scheme prices this drawing step by step: 3, 3, 2 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Project centre from plan","Locate centre height in elevation","Draw sphere C"],"perOptionSteps":[3,3,2]} },
+    { id: "dcg-2023-ol-a3a-r1", kind: "point", verbatim: "Project centre from plan", marks: 3 },
+    { id: "dcg-2023-ol-a3a-r2", kind: "point", verbatim: "Locate centre height in elevation", marks: 3 },
+    { id: "dcg-2023-ol-a3a-r3", kind: "point", verbatim: "Draw sphere C", marks: 2 },
+    { id: "dcg-2023-ol-a3a-r4", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secA-q3-art",
@@ -2388,7 +3638,11 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the elevation and plan of sphere D which is in contact with sphere B and sphere C.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
-    { id: "dcg-2023-ol-a3b-r1", kind: "anyN", verbatim: "Locate centre LHS and RHS", marks: 10, contextNote: "The scheme prices this drawing step by step: 2, 2, 2, 2, 2 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":2,"options":["Locate centre LHS and RHS","Rotation of centre in plan","Locate centre in plan","Projection of centre to elevation","Draw sphere D in elevation and plan"]} },
+    { id: "dcg-2023-ol-a3b-r1", kind: "point", verbatim: "Locate centre LHS and RHS", marks: 2 },
+    { id: "dcg-2023-ol-a3b-r2", kind: "point", verbatim: "Rotation of centre in plan", marks: 2 },
+    { id: "dcg-2023-ol-a3b-r3", kind: "point", verbatim: "Locate centre in plan", marks: 2 },
+    { id: "dcg-2023-ol-a3b-r4", kind: "point", verbatim: "Projection of centre to elevation", marks: 2 },
+    { id: "dcg-2023-ol-a3b-r5", kind: "point", verbatim: "Draw sphere D in elevation and plan", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secA-q3-art",
@@ -2408,9 +3662,11 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Section A Q4(a)",
     stem: "The image below shows a caution sign. The drawing on the right shows the plan, partially completed elevation and partially completed end view of a similar sign.",
     questionText: "Complete the elevation.",
-    tariffModel: {"kind":"fixed","notation":"(5)"}, totalMarks: 5,
+    tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
-    { id: "dcg-2023-ol-a4a-r1", kind: "anyN", verbatim: "Projection from plan to elevation", marks: 5, contextNote: "The scheme prices this drawing step by step: 2, 3 — 5 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Projection from plan to elevation","Complete elevation"],"perOptionSteps":[2,3]} },
+    { id: "dcg-2023-ol-a4a-r1", kind: "point", verbatim: "Projection from plan to elevation", marks: 2 },
+    { id: "dcg-2023-ol-a4a-r2", kind: "point", verbatim: "Complete elevation", marks: 3 },
+    { id: "dcg-2023-ol-a4a-r3", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secA-q4-art",
@@ -2432,7 +3688,11 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the end view.",
     tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
-    { id: "dcg-2023-ol-a4b-r1", kind: "anyN", verbatim: "Projection from plan", marks: 13, contextNote: "The scheme prices this drawing step by step: 2, 2, 4, 4, 1 — 13 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":2,"options":["Projection from plan","Projections from elevation","Points defined in end view","Complete end view","Complete hidden detail"],"perOptionSteps":[2,2,4,4,1]} },
+    { id: "dcg-2023-ol-a4b-r1", kind: "point", verbatim: "Projection from plan", marks: 2 },
+    { id: "dcg-2023-ol-a4b-r2", kind: "point", verbatim: "Projections from elevation", marks: 2 },
+    { id: "dcg-2023-ol-a4b-r3", kind: "point", verbatim: "Points defined in end view", marks: 4 },
+    { id: "dcg-2023-ol-a4b-r4", kind: "point", verbatim: "Complete end view", marks: 4 },
+    { id: "dcg-2023-ol-a4b-r5", kind: "point", verbatim: "Complete hidden detail", marks: 1 },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secA-q4-art",
@@ -2448,13 +3708,16 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2023-ol-b1a", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2023-ol-b1a", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2023 OL Section B Q1(a)",
     stem: "The image on the right shows an outdoor play area in the shape of a boat. Fig. B-1 below shows an isometric view of a similar boat.",
     questionText: "Draw an elevation of the boat looking in the direction of the arrow.",
-    tariffModel: {"kind":"fixed","notation":"(24)"}, totalMarks: 24,
+    tariffModel: {"kind":"fixed","notation":"(29)"}, totalMarks: 29,
     rows: [
-    { id: "dcg-2023-ol-b1a-r1", kind: "anyN", verbatim: "Draw base", marks: 24, contextNote: "The scheme prices this drawing step by step: 13, 10, 1 — 24 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":13,"options":["Draw base","Draw top","Complete elevation"],"perOptionSteps":[13,10,1]} },
+    { id: "dcg-2023-ol-b1a-r1", kind: "point", verbatim: "Draw base", marks: 13 },
+    { id: "dcg-2023-ol-b1a-r2", kind: "point", verbatim: "Draw top", marks: 10 },
+    { id: "dcg-2023-ol-b1a-r3", kind: "point", verbatim: "Complete elevation", marks: 1 },
+    { id: "dcg-2023-ol-b1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secB-q1-art",
@@ -2470,13 +3733,14 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2023-ol-b1b", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2023-ol-b1b", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2023 OL Section B Q1(b)",
     stem: "The image on the right shows an outdoor play area in the shape of a boat. Fig. B-1 below shows an isometric view of a similar boat.",
     questionText: "Project a plan from the elevation.",
     tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
     rows: [
-    { id: "dcg-2023-ol-b1b-r1", kind: "anyN", verbatim: "Draw base", marks: 18, contextNote: "The scheme prices this drawing step by step: 9, 9 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":9,"options":["Draw base","Draw top"]} },
+    { id: "dcg-2023-ol-b1b-r1", kind: "point", verbatim: "Draw base", marks: 9 },
+    { id: "dcg-2023-ol-b1b-r2", kind: "point", verbatim: "Draw top", marks: 9 },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secB-q1-art",
@@ -2492,13 +3756,17 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2023-ol-b1c", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2023-ol-b1c", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2023 OL Section B Q1(c)",
     stem: "The image on the right shows an outdoor play area in the shape of a boat. Fig. B-1 below shows an isometric view of a similar boat.",
     questionText: "Draw the auxiliary elevation of the boat, projected from the plan, which will include the true shape of surface A.",
     tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
-    { id: "dcg-2023-ol-b1c-r1", kind: "anyN", verbatim: "X1Y1 line parallel to plan of surface A", marks: 13, contextNote: "The scheme prices this drawing step by step: 1, 1, 3, 3, 5 — 13 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":1,"options":["X1Y1 line parallel to plan of surface A","Projections from plan","Transfer of heights from elevation","Draw surface A","Complete auxiliary elevation"],"perOptionSteps":[1,1,3,3,5]} },
+    { id: "dcg-2023-ol-b1c-r1", kind: "point", verbatim: "X1Y1 line parallel to plan of surface A", marks: 1 },
+    { id: "dcg-2023-ol-b1c-r2", kind: "point", verbatim: "Projections from plan", marks: 1 },
+    { id: "dcg-2023-ol-b1c-r3", kind: "point", verbatim: "Transfer of heights from elevation", marks: 3 },
+    { id: "dcg-2023-ol-b1c-r4", kind: "point", verbatim: "Draw surface A", marks: 3 },
+    { id: "dcg-2023-ol-b1c-r5", kind: "point", verbatim: "Complete auxiliary elevation", marks: 5 },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secB-q1-art",
@@ -2514,18 +3782,22 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2023-ol-b2a", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    id: "dcg-2023-ol-b2a", topicId: "design-and-communication-graphics-0-8", conceptId: "dcg-0-8",
     section: "B", questionRef: "2023 OL Section B Q2(a)",
     stem: "The image on the right shows a modern A-frame house. The house consists of an equilateral triangular prism which is intersected by a second triangular prism. Fig. B-2 below shows the elevation and incomplete plan of a similar house. The outline profile of the second intersecting prism is also shown on the right below. A 3D graphic is also given.",
     questionText: "Draw the given elevation and incomplete plan of the house.",
-    tariffModel: {"kind":"fixed","notation":"(24)"}, totalMarks: 24,
+    tariffModel: {"kind":"fixed","notation":"(29)"}, totalMarks: 29,
     rows: [
-    { id: "dcg-2023-ol-b2a-r1", kind: "anyN", verbatim: "Draw the outline elevation as given", marks: 24, contextNote: "The scheme prices this drawing step by step: 7, 3, 10, 4 — 24 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":7,"options":["Draw the outline elevation as given","Complete the elevation","Draw the outline plan as given","Complete the plan as given"],"perOptionSteps":[7,3,10,4]} },
+    { id: "dcg-2023-ol-b2a-r1", kind: "point", verbatim: "Draw the outline elevation as given", marks: 7 },
+    { id: "dcg-2023-ol-b2a-r2", kind: "point", verbatim: "Complete the elevation", marks: 3 },
+    { id: "dcg-2023-ol-b2a-r3", kind: "point", verbatim: "Draw the outline plan as given", marks: 10 },
+    { id: "dcg-2023-ol-b2a-r4", kind: "point", verbatim: "Complete the plan as given", marks: 4 },
+    { id: "dcg-2023-ol-b2a-r5", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secB-q2-art.png",
-          "srcHash": "fa00bb3dbd4d00fdb71910ec6e70123a",
+          "srcHash": "0032ff0c0ebda06b948b6defec703f07",
           "alt": "Question B-2 as printed. A photograph of a modern dark A-frame house among pine trees, and a blue and yellow 3D view of two intersecting triangular prisms, beside Fig. B-2: above the XY line the elevation of the house, a triangular prism with 60 degree base angles crossing a second one, dimensioned 20, 25, 10 and 15, and at the right the blue outline profile of the second prism, 50 across and 60 high; below, the incomplete plan dimensioned 30, 90 and 55 long by 25, 50 and 25 deep.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2542,12 +3814,12 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the plan, showing all lines of interpenetration.",
     tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
     rows: [
-    { id: "dcg-2023-ol-b2b-r1", kind: "anyN", verbatim: "Projection from LHS of elevation", marks: 18, contextNote: "The scheme prices this drawing step by step: 2, 3, 3, 2, 2, 3, 3 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":7,"perOption":2,"options":["Projection from LHS of elevation","Locate points on LHS in plan","Complete LHS of plan","Projection from RHS of elevation","Projection from end view","Locate points RHS of plan","Complete RHS of plan"],"perOptionSteps":[2,3,3,2,2,3,3]} },
+    { id: "dcg-2023-ol-b2b-r1", kind: "criterion", verbatim: "Interpenetration", marks: 18, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,18], parts: [{"id":"step-1","verbatim":"Projection from LHS of elevation","marks":2,"permittedMarks":[0,2]},{"id":"step-2","verbatim":"Locate points on LHS in plan","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Complete LHS of plan","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Projection from RHS of elevation","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"Projection from end view","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Locate points RHS of plan","marks":3,"permittedMarks":[0,3]},{"id":"step-7","verbatim":"Complete RHS of plan","marks":3,"permittedMarks":[0,3]}] },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secB-q2-art.png",
-          "srcHash": "fa00bb3dbd4d00fdb71910ec6e70123a",
+          "srcHash": "0032ff0c0ebda06b948b6defec703f07",
           "alt": "Question B-2 as printed. A photograph of a modern dark A-frame house among pine trees, and a blue and yellow 3D view of two intersecting triangular prisms, beside Fig. B-2: above the XY line the elevation of the house, a triangular prism with 60 degree base angles crossing a second one, dimensioned 20, 25, 10 and 15, and at the right the blue outline profile of the second prism, 50 across and 60 high; below, the incomplete plan dimensioned 30, 90 and 55 long by 25, 50 and 25 deep.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2558,18 +3830,21 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2023-ol-b2c", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    id: "dcg-2023-ol-b2c", topicId: "design-and-communication-graphics-0-8", conceptId: "dcg-0-8",
     section: "B", questionRef: "2023 OL Section B Q2(c)",
     stem: "The image on the right shows a modern A-frame house. The house consists of an equilateral triangular prism which is intersected by a second triangular prism. Fig. B-2 below shows the elevation and incomplete plan of a similar house. The outline profile of the second intersecting prism is also shown on the right below. A 3D graphic is also given.",
     questionText: "Draw an end view of the house.",
     tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
-    { id: "dcg-2023-ol-b2c-r1", kind: "anyN", verbatim: "Transfer of widths from plan", marks: 13, contextNote: "The scheme prices this drawing step by step: 3, 2, 4, 4 — 13 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Transfer of widths from plan","Projection of heights from elevation","End view of main structure","Complete the end view"],"perOptionSteps":[3,2,4,4]} },
+    { id: "dcg-2023-ol-b2c-r1", kind: "point", verbatim: "Transfer of widths from plan", marks: 3 },
+    { id: "dcg-2023-ol-b2c-r2", kind: "point", verbatim: "Projection of heights from elevation", marks: 2 },
+    { id: "dcg-2023-ol-b2c-r3", kind: "point", verbatim: "End view of main structure", marks: 4 },
+    { id: "dcg-2023-ol-b2c-r4", kind: "point", verbatim: "Complete the end view", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secB-q2-art.png",
-          "srcHash": "fa00bb3dbd4d00fdb71910ec6e70123a",
+          "srcHash": "0032ff0c0ebda06b948b6defec703f07",
           "alt": "Question B-2 as printed. A photograph of a modern dark A-frame house among pine trees, and a blue and yellow 3D view of two intersecting triangular prisms, beside Fig. B-2: above the XY line the elevation of the house, a triangular prism with 60 degree base angles crossing a second one, dimensioned 20, 25, 10 and 15, and at the right the blue outline profile of the second prism, 50 across and 60 high; below, the incomplete plan dimensioned 30, 90 and 55 long by 25, 50 and 25 deep.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2584,14 +3859,16 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2023 OL Section B Q3(a)",
     stem: "The image on the right shows a wooden arbor bench. Fig. B-3 below shows an incomplete isometric projection of a similar arbor bench. A 3D graphic is also given. The elevation and plan of the arbor bench are shown in their required positions.",
     questionText: "Draw the given equilateral triangle abc and the axonometric axes X, Y, and Z.",
-    tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
+    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
-    { id: "dcg-2023-ol-b3a-r1", kind: "anyN", verbatim: "Draw equilateral triangle", marks: 7, contextNote: "The scheme prices this drawing step by step: 4, 3 — 7 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Draw equilateral triangle","Draw X, Y and Z axes"],"perOptionSteps":[4,3]} },
+    { id: "dcg-2023-ol-b3a-r1", kind: "point", verbatim: "Draw equilateral triangle", marks: 4 },
+    { id: "dcg-2023-ol-b3a-r2", kind: "point", verbatim: "Draw X, Y and Z axes", marks: 3 },
+    { id: "dcg-2023-ol-b3a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secB-q3-art.png",
-          "srcHash": "60d5a3efb87f7a9d2b91bfa76119663e",
+          "srcHash": "197425d0f985e6547632b6a1de9f57b6",
           "alt": "Question B-3 as printed. A photograph of a timber arbor bench with an arched opening, and a rendered 3D view of the same arbor, beside Fig. B-3: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z in blue from the origin and the equilateral triangle abc in green, a 30 degree angle marked, the elevation positioned at the top right showing the gabled outline with an R24 arched seating recess dimensioned 60, 80, 15, 30 and 15, and the plan below dimensioned 100 across, 60, 25 and 30 at 45 degrees.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2608,12 +3885,17 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the elevation and plan positioned as shown.",
     tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
-    { id: "dcg-2023-ol-b3b-r1", kind: "anyN", verbatim: "Projections to set up elevation", marks: 13, contextNote: "The scheme prices this drawing step by step: 3, 1, 3, 3, 1, 2 — 13 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":6,"perOption":3,"options":["Projections to set up elevation","Semi-circle in elevation","Draw elevation in the correct position","Projections to set up plan","Semi-circle in plan (or 45° lines)","Draw plan in the correct position"],"perOptionSteps":[3,1,3,3,1,2]} },
+    { id: "dcg-2023-ol-b3b-r1", kind: "point", verbatim: "Projections to set up elevation", marks: 3 },
+    { id: "dcg-2023-ol-b3b-r2", kind: "point", verbatim: "Semi-circle in elevation", marks: 1 },
+    { id: "dcg-2023-ol-b3b-r3", kind: "point", verbatim: "Draw elevation in the correct position", marks: 3 },
+    { id: "dcg-2023-ol-b3b-r4", kind: "point", verbatim: "Projections to set up plan", marks: 3 },
+    { id: "dcg-2023-ol-b3b-r5", kind: "point", verbatim: "Semi-circle in plan (or 45° lines)", marks: 1 },
+    { id: "dcg-2023-ol-b3b-r6", kind: "point", verbatim: "Draw plan in the correct position", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secB-q3-art.png",
-          "srcHash": "60d5a3efb87f7a9d2b91bfa76119663e",
+          "srcHash": "197425d0f985e6547632b6a1de9f57b6",
           "alt": "Question B-3 as printed. A photograph of a timber arbor bench with an arched opening, and a rendered 3D view of the same arbor, beside Fig. B-3: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z in blue from the origin and the equilateral triangle abc in green, a 30 degree angle marked, the elevation positioned at the top right showing the gabled outline with an R24 arched seating recess dimensioned 60, 80, 15, 30 and 15, and the plan below dimensioned 100 across, 60, 25 and 30 at 45 degrees.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2630,15 +3912,15 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the axonometric projection of the outline of the arbor bench.",
     tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
-    { id: "dcg-2023-ol-b3c-r1", kind: "criterion", verbatim: "Projections from elevation (2) and plan (2)", marks: 4, permittedMarks: [0,1,2,3,4], parts: [{"id":"elevation","verbatim":"elevation","marks":2,"permittedMarks":[0,1,2]},{"id":"plan","verbatim":"plan","marks":2,"permittedMarks":[0,1,2]}] },
-    { id: "dcg-2023-ol-b3c-r2", kind: "criterion", verbatim: "Axonometric projection of front surface", marks: 3, permittedMarks: [0,1,2,3] },
-    { id: "dcg-2023-ol-b3c-r3", kind: "criterion", verbatim: "Axonometric projection side surface", marks: 2, permittedMarks: [0,1,2] },
-    { id: "dcg-2023-ol-b3c-r4", kind: "criterion", verbatim: "Axonometric projection of roof", marks: 4, permittedMarks: [0,1,2,3,4] },
+    { id: "dcg-2023-ol-b3c-r1", kind: "criterion", verbatim: "Projections from elevation (2) and plan (2)", marks: 4, permittedMarks: [0,4], parts: [{"id":"elevation","verbatim":"elevation","marks":2,"permittedMarks":[0,2]},{"id":"plan","verbatim":"plan","marks":2,"permittedMarks":[0,2]}] },
+    { id: "dcg-2023-ol-b3c-r2", kind: "point", verbatim: "Axonometric projection of front surface", marks: 3 },
+    { id: "dcg-2023-ol-b3c-r3", kind: "point", verbatim: "Axonometric projection side surface", marks: 2 },
+    { id: "dcg-2023-ol-b3c-r4", kind: "point", verbatim: "Axonometric projection of roof", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secB-q3-art.png",
-          "srcHash": "60d5a3efb87f7a9d2b91bfa76119663e",
+          "srcHash": "197425d0f985e6547632b6a1de9f57b6",
           "alt": "Question B-3 as printed. A photograph of a timber arbor bench with an arched opening, and a rendered 3D view of the same arbor, beside Fig. B-3: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z in blue from the origin and the equilateral triangle abc in green, a 30 degree angle marked, the elevation positioned at the top right showing the gabled outline with an R24 arched seating recess dimensioned 60, 80, 15, 30 and 15, and the plan below dimensioned 100 across, 60, 25 and 30 at 45 degrees.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2655,12 +3937,16 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the axonometric projection of the inner seating area including the semi-circular top.",
     tariffModel: {"kind":"fixed","notation":"(22)"}, totalMarks: 22,
     rows: [
-    { id: "dcg-2023-ol-b3d-r1", kind: "anyN", verbatim: "Divisions on semi-circle in elevation", marks: 22, contextNote: "The scheme prices this drawing step by step: 4, 4, 4, 5, 5 — 22 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":4,"options":["Divisions on semi-circle in elevation","Corresponding divisions in plan","Projections from elevation (2) and plan (2)","Draw semi-circular curve and front opening","Complete internal seat"],"perOptionSteps":[4,4,4,5,5]} },
+    { id: "dcg-2023-ol-b3d-r1", kind: "point", verbatim: "Divisions on semi-circle in elevation", marks: 4 },
+    { id: "dcg-2023-ol-b3d-r2", kind: "point", verbatim: "Corresponding divisions in plan", marks: 4 },
+    { id: "dcg-2023-ol-b3d-r3", kind: "criterion", verbatim: "Projections from elevation (2) and plan (2)", marks: 4, permittedMarks: [0,4], parts: [{"id":"elevation","verbatim":"elevation","marks":2,"permittedMarks":[0,2]},{"id":"plan","verbatim":"plan","marks":2,"permittedMarks":[0,2]}] },
+    { id: "dcg-2023-ol-b3d-r4", kind: "point", verbatim: "Draw semi-circular curve and front opening", marks: 5 },
+    { id: "dcg-2023-ol-b3d-r5", kind: "point", verbatim: "Complete internal seat", marks: 5 },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secB-q3-art.png",
-          "srcHash": "60d5a3efb87f7a9d2b91bfa76119663e",
+          "srcHash": "197425d0f985e6547632b6a1de9f57b6",
           "alt": "Question B-3 as printed. A photograph of a timber arbor bench with an arched opening, and a rendered 3D view of the same arbor, beside Fig. B-3: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z in blue from the origin and the equilateral triangle abc in green, a 30 degree angle marked, the elevation positioned at the top right showing the gabled outline with an R24 arched seating recess dimensioned 60, 80, 15, 30 and 15, and the plan below dimensioned 100 across, 60, 25 and 30 at 45 degrees.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2675,14 +3961,31 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C Q1(a)",
     stem: "The image on the right shows a section of roadway which required cuttings to accommodate it. The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
     questionText: "On the map supplied, draw a vertical section (profile) on the line AB.",
-    tariffModel: {"kind":"fixed","notation":"(35)"}, totalMarks: 35,
+    tariffModel: {"kind":"fixed","notation":"(40)"}, totalMarks: 40,
     rows: [
-    { id: "dcg-2023-ol-c1a-r1", kind: "anyN", verbatim: "Measure heights and draw horizontal lines", marks: 35, contextNote: "The scheme prices this drawing step by step: 13, 10, 12 — 35 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":13,"options":["Measure heights and draw horizontal lines","Projections from intersections between line AB and contours","Draw the profile"],"perOptionSteps":[13,10,12]} },
+    { id: "dcg-2023-ol-c1a-r1", kind: "point", verbatim: "Measure heights and draw horizontal lines", marks: 13 },
+    { id: "dcg-2023-ol-c1a-r2", kind: "point", verbatim: "Projections from intersections between line AB and contours", marks: 10 },
+    { id: "dcg-2023-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 12 },
+    { id: "dcg-2023-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q1-art.png",
-          "srcHash": "8c1b5a1aa88015d2c10121f7b459886a",
+          "srcHash": "4670b1ad9c9023ad3f4b0640250d6b22",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a dual carriageway running through a cutting; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2699,12 +4002,28 @@ export const CARDS: SecCard[] = [
     questionText: "CD is the centreline of a proposed roadway which is level at an altitude of 20 m. Using side slopes of 1 in 1 for the cuttings, complete the earthworks necessary to accommodate the roadway. Note: The earthworks on the southern side of the roadway have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
-    { id: "dcg-2023-ol-c1b-r1", kind: "anyN", verbatim: "Parallel lines at 5 m intervals for cutting", marks: 20, contextNote: "The scheme prices this drawing step by step: 6, 8, 6 — 20 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":6,"options":["Parallel lines at 5 m intervals for cutting","Identify points on cutting curve","Draw cutting curve"],"perOptionSteps":[6,8,6]} },
+    { id: "dcg-2023-ol-c1b-r1", kind: "point", verbatim: "Parallel lines at 5 m intervals for cutting", marks: 6 },
+    { id: "dcg-2023-ol-c1b-r2", kind: "point", verbatim: "Identify points on cutting curve", marks: 8 },
+    { id: "dcg-2023-ol-c1b-r3", kind: "point", verbatim: "Draw cutting curve", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q1-art.png",
-          "srcHash": "8c1b5a1aa88015d2c10121f7b459886a",
+          "srcHash": "4670b1ad9c9023ad3f4b0640250d6b22",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a dual carriageway running through a cutting; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2719,14 +4038,19 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C Q2(a)",
     stem: "The image on the right shows a seating area on a beach which has a canopy based on a hyperbolic paraboloid. Fig. C-2 below shows the projections of a similar hyperbolic paraboloid surface.",
     questionText: "Draw the plan and elevation of the given hyperbolic paraboloid surface.",
-    tariffModel: {"kind":"fixed","notation":"(33)"}, totalMarks: 33,
+    tariffModel: {"kind":"fixed","notation":"(38)"}, totalMarks: 38,
     rows: [
-    { id: "dcg-2023-ol-c2a-r1", kind: "anyN", verbatim: "Outline of surface ABCD in plan", marks: 33, contextNote: "The scheme prices this drawing step by step: 8, 7, 8, 7, 3 — 33 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":8,"options":["Outline of surface ABCD in plan","Elements in plan (incl. division)","Outline of surface ABCD in elevation","Elements in elevation (incl. division or proj.)","Completion of elevation (curve and hidden detail)"],"perOptionSteps":[8,7,8,7,3]} },
+    { id: "dcg-2023-ol-c2a-r1", kind: "point", verbatim: "Outline of surface ABCD in plan", marks: 8 },
+    { id: "dcg-2023-ol-c2a-r2", kind: "point", verbatim: "Elements in plan (incl. division)", marks: 7 },
+    { id: "dcg-2023-ol-c2a-r3", kind: "point", verbatim: "Outline of surface ABCD in elevation", marks: 8 },
+    { id: "dcg-2023-ol-c2a-r4", kind: "point", verbatim: "Elements in elevation (incl. division or proj.)", marks: 7 },
+    { id: "dcg-2023-ol-c2a-r5", kind: "point", verbatim: "Completion of elevation (curve and hidden detail)", marks: 3 },
+    { id: "dcg-2023-ol-c2a-r6", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q2-art.png",
-          "srcHash": "12f7b206d3481052a8229da291f7b284",
+          "srcHash": "0f41936b98cb723267a905d8448ee4c0",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a white saddle-shaped shade canopy over beach seating, beside Fig. C-2: above the XY line the elevation of the hyperbolic paraboloid, the high corners A at 70 and C at 60 with the low corners B at 15 and D at 10, ruled with green elements; below it the plan, the quadrilateral ABCD with 45 degree angles at A, dimensioned 40, 60 and 140 across, ruled with two families of green elements.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2743,12 +4067,15 @@ export const CARDS: SecCard[] = [
     questionText: "Project an end view of the surface.",
     tariffModel: {"kind":"fixed","notation":"(22)"}, totalMarks: 22,
     rows: [
-    { id: "dcg-2023-ol-c2b-r1", kind: "anyN", verbatim: "Determine heights and widths for surface ABCD", marks: 22, contextNote: "The scheme prices this drawing step by step: 8, 6, 5, 3 — 22 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":8,"options":["Determine heights and widths for surface ABCD","Draw the outline of hyperbolic paraboloid surface","Draw elements","Completion of end view (curve and hidden detail)"],"perOptionSteps":[8,6,5,3]} },
+    { id: "dcg-2023-ol-c2b-r1", kind: "point", verbatim: "Determine heights and widths for surface ABCD", marks: 8 },
+    { id: "dcg-2023-ol-c2b-r2", kind: "point", verbatim: "Draw the outline of hyperbolic paraboloid surface", marks: 6 },
+    { id: "dcg-2023-ol-c2b-r3", kind: "point", verbatim: "Draw elements", marks: 5 },
+    { id: "dcg-2023-ol-c2b-r4", kind: "point", verbatim: "Completion of end view (curve and hidden detail)", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q2-art.png",
-          "srcHash": "12f7b206d3481052a8229da291f7b284",
+          "srcHash": "0f41936b98cb723267a905d8448ee4c0",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a white saddle-shaped shade canopy over beach seating, beside Fig. C-2: above the XY line the elevation of the hyperbolic paraboloid, the high corners A at 70 and C at 60 with the low corners B at 15 and D at 10, ruled with green elements; below it the plan, the quadrilateral ABCD with 45 degree angles at A, dimensioned 40, 60 and 140 across, ruled with two families of green elements.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2763,14 +4090,16 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C Q3(a)",
     stem: "The image on the right shows a storage box for BIC biros. The projections of a similar storage box are shown in Fig. C-3 below. A 3D graphic is also given.",
     questionText: "Draw the given elevation and end view of the storage box.",
-    tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
+    tariffModel: {"kind":"fixed","notation":"(31)"}, totalMarks: 31,
     rows: [
-    { id: "dcg-2023-ol-c3a-r1", kind: "anyN", verbatim: "Draw the elevation", marks: 26, contextNote: "The scheme prices this drawing step by step: 12, 14 — 26 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":12,"options":["Draw the elevation","Draw end view"],"perOptionSteps":[12,14]} },
+    { id: "dcg-2023-ol-c3a-r1", kind: "point", verbatim: "Draw the elevation", marks: 12 },
+    { id: "dcg-2023-ol-c3a-r2", kind: "point", verbatim: "Draw end view", marks: 14 },
+    { id: "dcg-2023-ol-c3a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q3-art.png",
-          "srcHash": "818de60ea1e51fb77f6df63aa6b97516",
+          "srcHash": "50e267904459b1cf0916b37c72532991",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a BIC biro storage box, and a blue and yellow 3D view of the same box, beside Fig. C-3: above the XY line the elevation at the left, a 60 wide upright 145 high with an R10 semicircular thumb cut-out, and the end view at the right, 60 wide with a 50 degree sloping top, dimensioned 90 and 120 high.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2787,12 +4116,13 @@ export const CARDS: SecCard[] = [
     questionText: "Project a plan.",
     tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
     rows: [
-    { id: "dcg-2023-ol-c3b-r1", kind: "anyN", verbatim: "Projections from elevation and end view", marks: 11, contextNote: "The scheme prices this drawing step by step: 5, 6 — 11 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Projections from elevation and end view","Draw the plan"],"perOptionSteps":[5,6]} },
+    { id: "dcg-2023-ol-c3b-r1", kind: "point", verbatim: "Projections from elevation and end view", marks: 5 },
+    { id: "dcg-2023-ol-c3b-r2", kind: "point", verbatim: "Draw the plan", marks: 6 },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q3-art.png",
-          "srcHash": "818de60ea1e51fb77f6df63aa6b97516",
+          "srcHash": "50e267904459b1cf0916b37c72532991",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a BIC biro storage box, and a blue and yellow 3D view of the same box, beside Fig. C-3: above the XY line the elevation at the left, a 60 wide upright 145 high with an R10 semicircular thumb cut-out, and the end view at the right, 60 wide with a 50 degree sloping top, dimensioned 90 and 120 high.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2809,12 +4139,17 @@ export const CARDS: SecCard[] = [
     questionText: "Draw a one-piece surface development of the storage box.",
     tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
     rows: [
-    { id: "dcg-2023-ol-c3c-r1", kind: "anyN", verbatim: "Appropriate layout of surface development", marks: 18, contextNote: "The scheme prices this drawing step by step: 1, 3, 4, 4, 2, 4 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":6,"perOption":1,"options":["Appropriate layout of surface development","Development of back surface","Development of LHS surface","Development of RHS surface","Development of bottom surface","Development of front surface"],"perOptionSteps":[1,3,4,4,2,4]} },
+    { id: "dcg-2023-ol-c3c-r1", kind: "point", verbatim: "Appropriate layout of surface development", marks: 1 },
+    { id: "dcg-2023-ol-c3c-r2", kind: "point", verbatim: "Development of back surface", marks: 3 },
+    { id: "dcg-2023-ol-c3c-r3", kind: "point", verbatim: "Development of LHS surface", marks: 4 },
+    { id: "dcg-2023-ol-c3c-r4", kind: "point", verbatim: "Development of RHS surface", marks: 4 },
+    { id: "dcg-2023-ol-c3c-r5", kind: "point", verbatim: "Development of bottom surface", marks: 2 },
+    { id: "dcg-2023-ol-c3c-r6", kind: "point", verbatim: "Development of front surface", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q3-art.png",
-          "srcHash": "818de60ea1e51fb77f6df63aa6b97516",
+          "srcHash": "50e267904459b1cf0916b37c72532991",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a BIC biro storage box, and a blue and yellow 3D view of the same box, beside Fig. C-3: above the XY line the elevation at the left, a 60 wide upright 145 high with an R10 semicircular thumb cut-out, and the end view at the right, 60 wide with a 50 degree sloping top, dimensioned 90 and 120 high.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2827,15 +4162,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2023-ol-c4a", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
     section: "C", questionRef: "2023 OL Section C Q4(a)",
+    stem: "The image below shows an airport control tower. The tower staircase is based on a helix. Fig. C-4 opposite shows the projections of the tower and partially completed helix.",
     questionText: "(i) Draw the given elevation and plan of the tower. (ii) Complete the projections of the helix which moves in a clockwise direction from point A on the base to point B in one revolution.",
-    tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
+    tariffModel: {"kind":"fixed","notation":"(31)"}, totalMarks: 31,
     rows: [
-    { id: "dcg-2023-ol-c4a-r1", kind: "anyN", verbatim: "Set up given elevation and plan (incl. points A & B)", marks: 26, contextNote: "The scheme prices this drawing step by step: 10, 3, 3, 3, 3, 4 — 26 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":6,"perOption":10,"options":["Set up given elevation and plan (incl. points A & B)","Division of circle in plan","Projections from plan","Draw horizontal divisions in elevation","Locate points on helix","Draw helix in elevation"],"perOptionSteps":[10,3,3,3,3,4]} },
+    { id: "dcg-2023-ol-c4a-r1", kind: "criterion", verbatim: "Helix", marks: 26, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,26], parts: [{"id":"step-1","verbatim":"Set up given elevation and plan (incl. points A & B)","marks":10,"permittedMarks":[0,10]},{"id":"step-2","verbatim":"Division of circle in plan","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Projections from plan","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Draw horizontal divisions in elevation","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"Locate points on helix","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Draw helix in elevation","marks":4,"permittedMarks":[0,4]}] },
+    { id: "dcg-2023-ol-c4a-r2", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q4-art.png",
-          "srcHash": "6e24ebd843518c68bf9c32eb15d5b6d3",
+          "srcHash": "37fbedd6618dc874e60a05558231d128",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of a circular airport control tower with a helical ramp, beside Fig. C-4: above the XY line the elevation of the tower, a Ø60 shaft 90 high under a 120 wide drum 40 deep, with A at the foot and B at the top of the shaft and a partly drawn helix between them; below it the plan, the Ø60 circle divided by twelve blue radii inside the larger drum circle, with A and B coincident. Part (b) shows photographs of a truck camshaft and a blue DAF truck, and prints the displacement data as text with no drawing.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2851,12 +4188,12 @@ export const CARDS: SecCard[] = [
     questionText: "A cam from the fuel system of a DAF truck is shown. The cam imparts the following motion to the follower: 90° Rise 60 mm with uniform velocity 90° 180° Dwell 180° 360° Fall 60 mm with simple harmonic motion. Draw the displacement diagram, using a distance of 15 mm to represent each 30° interval. Note: It is not necessary to draw the cam profile.",
     tariffModel: {"kind":"fixed","notation":"(29)"}, totalMarks: 29,
     rows: [
-    { id: "dcg-2023-ol-c4b-r1", kind: "anyN", verbatim: "360° division (widths on displacement diagram)", marks: 29, contextNote: "The scheme prices this drawing step by step: 5, 1, 7, 4, 4, 4, 4 — 29 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":7,"perOption":5,"options":["360° division (widths on displacement diagram)","Correct use of 60mm height","Establish follower position at 0°, 90°, 180° and 360°","0° to 90°, Rise 60 mm with Uniform Velocity","90° to 180°, Dwell","180° to 360°, Fall 60 mm with SHM construction","Complete Displacement Diagram"],"perOptionSteps":[5,1,7,4,4,4,4]} },
+    { id: "dcg-2023-ol-c4b-r1", kind: "criterion", verbatim: "Displacement Diagram", marks: 29, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,29], parts: [{"id":"step-1","verbatim":"360° division (widths on displacement diagram)","marks":5,"permittedMarks":[0,5]},{"id":"step-2","verbatim":"Correct use of 60mm height","marks":1,"permittedMarks":[0,1]},{"id":"step-3","verbatim":"Establish follower position at 0°, 90°, 180° and 360°","marks":7,"permittedMarks":[0,7]},{"id":"step-4","verbatim":"0° to 90°, Rise 60 mm with Uniform Velocity","marks":4,"permittedMarks":[0,4]},{"id":"step-5","verbatim":"90° to 180°, Dwell","marks":4,"permittedMarks":[0,4]},{"id":"step-6","verbatim":"180° to 360°, Fall 60 mm with SHM construction","marks":4,"permittedMarks":[0,4]},{"id":"step-7","verbatim":"Complete Displacement Diagram","marks":4,"permittedMarks":[0,4]}] },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q4-art.png",
-          "srcHash": "6e24ebd843518c68bf9c32eb15d5b6d3",
+          "srcHash": "37fbedd6618dc874e60a05558231d128",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of a circular airport control tower with a helical ramp, beside Fig. C-4: above the XY line the elevation of the tower, a Ø60 shaft 90 high under a 120 wide drum 40 deep, with A at the foot and B at the top of the shaft and a partly drawn helix between them; below it the plan, the Ø60 circle divided by twelve blue radii inside the larger drum circle, with A and B coincident. Part (b) shows photographs of a truck camshaft and a blue DAF truck, and prints the displacement data as text with no drawing.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2871,14 +4208,16 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C Q5 — Assembly",
     stem: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.) Part Name Qty. Base Holder Lamp Top",
     questionText: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.)",
-    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
+    tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
-    { id: "dcg-2023-ol-c5-1-r1", kind: "anyN", verbatim: "Relative positioning of components", marks: 14, contextNote: "The scheme prices this drawing step by step: 10, 4 — 14 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":10,"options":["Relative positioning of components","Use of Section view"],"perOptionSteps":[10,4]} },
+    { id: "dcg-2023-ol-c5-1-r1", kind: "point", verbatim: "Relative positioning of components", marks: 10 },
+    { id: "dcg-2023-ol-c5-1-r2", kind: "point", verbatim: "Use of Section view", marks: 4 },
+    { id: "dcg-2023-ol-c5-1-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q5-art.png",
-          "srcHash": "6f23fdf027a32cf4c2abb99a83a3857e",
+          "srcHash": "28bb25ea6c344fb1215444b5448f96c4",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a purple lava lamp and an exploded 3D view of its parts, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the base dimensioned 30, 50, 10, 8 and 8 over a Ø100 and Ø50 plan with the section line A-A across it, the holder dimensioned 60, 30, 10, 40 and 10 over a Ø90 and Ø50 plan, the tapered lamp dimensioned 30, 15, 5, 160, 5 and 10 over a Ø90 and Ø60 plan, and the R32 domed top dimensioned 15 over a Ø60 and Ø30 plan -- with a parts-list table naming base, holder, lamp and top with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2895,12 +4234,13 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2023-ol-c5-2-r1", kind: "anyN", verbatim: "Outline", marks: 8, contextNote: "The scheme prices this drawing step by step: 4, 4 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Outline","Inner details"]} },
+    { id: "dcg-2023-ol-c5-2-r1", kind: "point", verbatim: "Outline", marks: 4 },
+    { id: "dcg-2023-ol-c5-2-r2", kind: "point", verbatim: "Inner details", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q5-art.png",
-          "srcHash": "6f23fdf027a32cf4c2abb99a83a3857e",
+          "srcHash": "28bb25ea6c344fb1215444b5448f96c4",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a purple lava lamp and an exploded 3D view of its parts, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the base dimensioned 30, 50, 10, 8 and 8 over a Ø100 and Ø50 plan with the section line A-A across it, the holder dimensioned 60, 30, 10, 40 and 10 over a Ø90 and Ø50 plan, the tapered lamp dimensioned 30, 15, 5, 160, 5 and 10 over a Ø90 and Ø60 plan, and the R32 domed top dimensioned 15 over a Ø60 and Ø30 plan -- with a parts-list table naming base, holder, lamp and top with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2917,12 +4257,12 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2023-ol-c5-3-r1", kind: "anyN", verbatim: "Outline", marks: 8, contextNote: "The scheme prices this drawing step by step: 8 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":8,"options":["Outline"]} },
+    { id: "dcg-2023-ol-c5-3-r1", kind: "point", verbatim: "Outline", marks: 8 },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q5-art.png",
-          "srcHash": "6f23fdf027a32cf4c2abb99a83a3857e",
+          "srcHash": "28bb25ea6c344fb1215444b5448f96c4",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a purple lava lamp and an exploded 3D view of its parts, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the base dimensioned 30, 50, 10, 8 and 8 over a Ø100 and Ø50 plan with the section line A-A across it, the holder dimensioned 60, 30, 10, 40 and 10 over a Ø90 and Ø50 plan, the tapered lamp dimensioned 30, 15, 5, 160, 5 and 10 over a Ø90 and Ø60 plan, and the R32 domed top dimensioned 15 over a Ø60 and Ø30 plan -- with a parts-list table naming base, holder, lamp and top with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2939,12 +4279,13 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
-    { id: "dcg-2023-ol-c5-4-r1", kind: "anyN", verbatim: "Outline", marks: 10, contextNote: "The scheme prices this drawing step by step: 6, 4 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Outline","Inner details"],"perOptionSteps":[6,4]} },
+    { id: "dcg-2023-ol-c5-4-r1", kind: "point", verbatim: "Outline", marks: 6 },
+    { id: "dcg-2023-ol-c5-4-r2", kind: "point", verbatim: "Inner details", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q5-art.png",
-          "srcHash": "6f23fdf027a32cf4c2abb99a83a3857e",
+          "srcHash": "28bb25ea6c344fb1215444b5448f96c4",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a purple lava lamp and an exploded 3D view of its parts, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the base dimensioned 30, 50, 10, 8 and 8 over a Ø100 and Ø50 plan with the section line A-A across it, the holder dimensioned 60, 30, 10, 40 and 10 over a Ø90 and Ø50 plan, the tapered lamp dimensioned 30, 15, 5, 160, 5 and 10 over a Ø90 and Ø60 plan, and the R32 domed top dimensioned 15 over a Ø60 and Ø30 plan -- with a parts-list table naming base, holder, lamp and top with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2961,12 +4302,13 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2023-ol-c5-5-r1", kind: "anyN", verbatim: "Locate centre point for arc", marks: 8, contextNote: "The scheme prices this drawing step by step: 4, 4 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Locate centre point for arc","Outline"]} },
+    { id: "dcg-2023-ol-c5-5-r1", kind: "point", verbatim: "Locate centre point for arc", marks: 4 },
+    { id: "dcg-2023-ol-c5-5-r2", kind: "point", verbatim: "Outline", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q5-art.png",
-          "srcHash": "6f23fdf027a32cf4c2abb99a83a3857e",
+          "srcHash": "28bb25ea6c344fb1215444b5448f96c4",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a purple lava lamp and an exploded 3D view of its parts, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the base dimensioned 30, 50, 10, 8 and 8 over a Ø100 and Ø50 plan with the section line A-A across it, the holder dimensioned 60, 30, 10, 40 and 10 over a Ø90 and Ø50 plan, the tapered lamp dimensioned 30, 15, 5, 160, 5 and 10 over a Ø90 and Ø60 plan, and the R32 domed top dimensioned 15 over a Ø60 and Ø30 plan -- with a parts-list table naming base, holder, lamp and top with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -2983,12 +4325,12 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
-    { id: "dcg-2023-ol-c5-6-r1", kind: "anyN", verbatim: "Hidden detail, Hatching and Centrelines … (3,3,1)", marks: 7, contextNote: "The scheme prices this drawing step by step: 7 — 7 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":7,"options":["Hidden detail, Hatching and Centrelines … (3,3,1)"]} },
+    { id: "dcg-2023-ol-c5-6-r1", kind: "criterion", verbatim: "Hidden detail, Hatching and Centrelines … (3,3,1)", marks: 7, permittedMarks: [0,1,3,4,6,7] },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q5-art.png",
-          "srcHash": "6f23fdf027a32cf4c2abb99a83a3857e",
+          "srcHash": "28bb25ea6c344fb1215444b5448f96c4",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a purple lava lamp and an exploded 3D view of its parts, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the base dimensioned 30, 50, 10, 8 and 8 over a Ø100 and Ø50 plan with the section line A-A across it, the holder dimensioned 60, 30, 10, 40 and 10 over a Ø90 and Ø50 plan, the tapered lamp dimensioned 30, 15, 5, 160, 5 and 10 over a Ø90 and Ø60 plan, and the R32 domed top dimensioned 15 over a Ø60 and Ø30 plan -- with a parts-list table naming base, holder, lamp and top with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission"
@@ -3003,9 +4345,13 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Section A Q1(a)",
     stem: "The image below shows the Gateway Arch monument located in the United States. The monument is in the shape of a parabola. The drawing on the right shows a portion of a similar parabola, which is inscribed in the rectangle ABCD. V is the vertex of the parabola.",
     questionText: "Locate the remaining points on the right hand side of the parabola.",
-    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
-    { id: "dcg-2024-ol-a1a-r1", kind: "anyN", verbatim: "Complete division of line CD", marks: 11, contextNote: "The scheme prices this drawing step by step: 4, 3, 2, 2 — 11 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Complete division of line CD","Complete division of line CV","Construction lines (2 sets)","Identify remaining points on RHS"],"perOptionSteps":[4,3,2,2]} },
+    { id: "dcg-2024-ol-a1a-r1", kind: "point", verbatim: "Complete division of line CD", marks: 4 },
+    { id: "dcg-2024-ol-a1a-r2", kind: "point", verbatim: "Complete division of line CV", marks: 3 },
+    { id: "dcg-2024-ol-a1a-r3", kind: "point", verbatim: "Construction lines (2 sets)", marks: 2 },
+    { id: "dcg-2024-ol-a1a-r4", kind: "point", verbatim: "Identify remaining points on RHS", marks: 2 },
+    { id: "dcg-2024-ol-a1a-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secA-q1-art",
@@ -3027,7 +4373,7 @@ export const CARDS: SecCard[] = [
     questionText: "Locate the points on the left hand side of the parabola.",
     tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
     rows: [
-    { id: "dcg-2024-ol-a1b-r1", kind: "anyN", verbatim: "Locate points on LHS curve", marks: 3, contextNote: "The scheme prices this drawing step by step: 3 — 3 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Locate points on LHS curve"]} },
+    { id: "dcg-2024-ol-a1b-r1", kind: "point", verbatim: "Locate points on LHS curve", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secA-q1-art",
@@ -3049,7 +4395,8 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the parabola in the rectangle ABCD.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
-    { id: "dcg-2024-ol-a1c-r1", kind: "anyN", verbatim: "Complete curve on RHS", marks: 4, contextNote: "The scheme prices this drawing step by step: 2, 2 — 4 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Complete curve on RHS","Draw curve on LHS"]} },
+    { id: "dcg-2024-ol-a1c-r1", kind: "point", verbatim: "Complete curve on RHS", marks: 2 },
+    { id: "dcg-2024-ol-a1c-r2", kind: "point", verbatim: "Draw curve on LHS", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secA-q1-art",
@@ -3068,9 +4415,13 @@ export const CARDS: SecCard[] = [
     id: "dcg-2024-ol-a2", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
     section: "A", questionRef: "2024 OL Section A Q2",
     questionText: "The image below shows a USB flash drive. The drawing shows the plan and partially completed perspective view of a similar flash drive. Complete the perspective drawing of the flash drive.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
-    { id: "dcg-2024-ol-a2-r1", kind: "anyN", verbatim: "Radiate lines to correct vanishing points", marks: 18, contextNote: "The scheme prices this drawing step by step: 4, 6, 4, 4 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Radiate lines to correct vanishing points","Complete front RHS","Complete the LHS","Complete the top surface"],"perOptionSteps":[4,6,4,4]} },
+    { id: "dcg-2024-ol-a2-r1", kind: "point", verbatim: "Radiate lines to correct vanishing points", marks: 4 },
+    { id: "dcg-2024-ol-a2-r2", kind: "point", verbatim: "Complete front RHS", marks: 6 },
+    { id: "dcg-2024-ol-a2-r3", kind: "point", verbatim: "Complete the LHS", marks: 4 },
+    { id: "dcg-2024-ol-a2-r4", kind: "point", verbatim: "Complete the top surface", marks: 4 },
+    { id: "dcg-2024-ol-a2-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secA-q2-art",
@@ -3090,9 +4441,12 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Section A Q3(a)",
     stem: "The image below shows a set of shakers. One shaker is based on a rectangular based pyramid which has been cut at the top. The drawing on the right shows the completed elevation, partially completed plan and partially completed end view of a similar pyramid.",
     questionText: "Complete the plan to show the cut surface.",
-    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
     rows: [
-    { id: "dcg-2024-ol-a3a-r1", kind: "anyN", verbatim: "Projections from elevation", marks: 12, contextNote: "The scheme prices this drawing step by step: 3, 3, 6 — 12 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Projections from elevation","Locate points in plan","Draw surface"],"perOptionSteps":[3,3,6]} },
+    { id: "dcg-2024-ol-a3a-r1", kind: "point", verbatim: "Projections from elevation", marks: 3 },
+    { id: "dcg-2024-ol-a3a-r2", kind: "point", verbatim: "Locate points in plan", marks: 3 },
+    { id: "dcg-2024-ol-a3a-r3", kind: "point", verbatim: "Draw surface", marks: 6 },
+    { id: "dcg-2024-ol-a3a-r4", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secA-q3-art",
@@ -3114,7 +4468,8 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the end view.",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
-    { id: "dcg-2024-ol-a3b-r1", kind: "anyN", verbatim: "Locate points in end view", marks: 6, contextNote: "The scheme prices this drawing step by step: 3, 3 — 6 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Locate points in end view","Complete the end view"]} },
+    { id: "dcg-2024-ol-a3b-r1", kind: "point", verbatim: "Locate points in end view", marks: 3 },
+    { id: "dcg-2024-ol-a3b-r2", kind: "point", verbatim: "Complete the end view", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secA-q3-art",
@@ -3130,13 +4485,17 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC562GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2024-ol-a4a", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    id: "dcg-2024-ol-a4a", topicId: "design-and-communication-graphics-0-12", conceptId: "dcg-0-12",
     section: "A", questionRef: "2024 OL Section A Q4(a)",
     stem: "The image below shows the Google Maps icon, which includes a location pin. The location pin is symmetrical. The drawing on the right shows a partially completed drawing of the pin.",
     questionText: "Complete the left hand side of the pin.",
-    tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
+    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
     rows: [
-    { id: "dcg-2024-ol-a4a-r1", kind: "anyN", verbatim: "Draw R30 arc", marks: 16, contextNote: "The scheme prices this drawing step by step: 5, 5, 4, 2 — 16 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Draw R30 arc","Draw R15 arc","Locate centre of R70 arc","Draw R70 arc"],"perOptionSteps":[5,5,4,2]} },
+    { id: "dcg-2024-ol-a4a-r1", kind: "point", verbatim: "Draw R30 arc", marks: 5 },
+    { id: "dcg-2024-ol-a4a-r2", kind: "point", verbatim: "Draw R15 arc", marks: 5 },
+    { id: "dcg-2024-ol-a4a-r3", kind: "point", verbatim: "Locate centre of R70 arc", marks: 4 },
+    { id: "dcg-2024-ol-a4a-r4", kind: "point", verbatim: "Draw R70 arc", marks: 2 },
+    { id: "dcg-2024-ol-a4a-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secA-q4-art",
@@ -3158,7 +4517,7 @@ export const CARDS: SecCard[] = [
     questionText: "Locate a point of contact.",
     tariffModel: {"kind":"fixed","notation":"(2)"}, totalMarks: 2,
     rows: [
-    { id: "dcg-2024-ol-a4b-r1", kind: "anyN", verbatim: "Locate point of contact", marks: 2, contextNote: "The scheme prices this drawing step by step: 2 — 2 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Locate point of contact"]} },
+    { id: "dcg-2024-ol-a4b-r1", kind: "point", verbatim: "Locate point of contact", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secA-q4-art",
@@ -3174,18 +4533,20 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2024-ol-b1a", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2024-ol-b1a", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2024 OL Section B Q1(a)",
     stem: "The image on the right shows an indoor electronic garden. Fig. B-1 below shows an isometric view of a similar indoor garden. A 3D graphic is also given.",
     questionText: "Draw an elevation of the indoor garden looking in the direction of the arrow.",
-    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"(25)"}, totalMarks: 25,
     rows: [
-    { id: "dcg-2024-ol-b1a-r1", kind: "anyN", verbatim: "Draw base", marks: 20, contextNote: "The scheme prices this drawing step by step: 10, 10 — 20 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":10,"options":["Draw base","Draw top"]} },
+    { id: "dcg-2024-ol-b1a-r1", kind: "point", verbatim: "Draw base", marks: 10 },
+    { id: "dcg-2024-ol-b1a-r2", kind: "point", verbatim: "Draw top", marks: 10 },
+    { id: "dcg-2024-ol-b1a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secB-q1-art.png",
-          "srcHash": "a39204d65b9e069614480e8412efcf41",
+          "srcHash": "a49e2172b02e4af275dda18333c87232",
           "alt": "Question B-1 as printed. A photograph of a blue indoor electronic garden with a lamp arm over planted herbs, and a simplified 3D view of the same, beside Fig. B-1: an isometric view of the structure, a base block 120 by 70 by 40 with a chamfered end face lettered A at 30 degrees, a 20 wide upright rising 70, and a 40 by 40 lamp head at the top dimensioned 20 and 15, with a green centre line and a small pencil symbol showing the direction of view.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3196,18 +4557,19 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2024-ol-b1b", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2024-ol-b1b", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2024 OL Section B Q1(b)",
     stem: "The image on the right shows an indoor electronic garden. Fig. B-1 below shows an isometric view of a similar indoor garden. A 3D graphic is also given.",
     questionText: "Project a plan from the elevation.",
     tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
-    { id: "dcg-2024-ol-b1b-r1", kind: "anyN", verbatim: "Draw base", marks: 20, contextNote: "The scheme prices this drawing step by step: 10, 10 — 20 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":10,"options":["Draw base","Draw top"]} },
+    { id: "dcg-2024-ol-b1b-r1", kind: "point", verbatim: "Draw base", marks: 10 },
+    { id: "dcg-2024-ol-b1b-r2", kind: "point", verbatim: "Draw top", marks: 10 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secB-q1-art.png",
-          "srcHash": "a39204d65b9e069614480e8412efcf41",
+          "srcHash": "a49e2172b02e4af275dda18333c87232",
           "alt": "Question B-1 as printed. A photograph of a blue indoor electronic garden with a lamp arm over planted herbs, and a simplified 3D view of the same, beside Fig. B-1: an isometric view of the structure, a base block 120 by 70 by 40 with a chamfered end face lettered A at 30 degrees, a 20 wide upright rising 70, and a 40 by 40 lamp head at the top dimensioned 20 and 15, with a green centre line and a small pencil symbol showing the direction of view.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3218,18 +4580,22 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2024-ol-b1c", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2024-ol-b1c", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2024 OL Section B Q1(c)",
     stem: "The image on the right shows an indoor electronic garden. Fig. B-1 below shows an isometric view of a similar indoor garden. A 3D graphic is also given.",
     questionText: "Draw the auxiliary elevation of the indoor garden, projected from the plan, which will include the true shape of surface A.",
     tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
     rows: [
-    { id: "dcg-2024-ol-b1c-r1", kind: "anyN", verbatim: "X1Y1 line parallel to plan of surface A", marks: 15, contextNote: "The scheme prices this drawing step by step: 1, 1, 3, 4, 6 — 15 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":1,"options":["X1Y1 line parallel to plan of surface A","Projections from plan","Transfer of heights from elevation","Draw surface A","Complete auxiliary elevation"],"perOptionSteps":[1,1,3,4,6]} },
+    { id: "dcg-2024-ol-b1c-r1", kind: "point", verbatim: "X1Y1 line parallel to plan of surface A", marks: 1 },
+    { id: "dcg-2024-ol-b1c-r2", kind: "point", verbatim: "Projections from plan", marks: 1 },
+    { id: "dcg-2024-ol-b1c-r3", kind: "point", verbatim: "Transfer of heights from elevation", marks: 3 },
+    { id: "dcg-2024-ol-b1c-r4", kind: "point", verbatim: "Draw surface A", marks: 4 },
+    { id: "dcg-2024-ol-b1c-r5", kind: "point", verbatim: "Complete auxiliary elevation", marks: 6 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secB-q1-art.png",
-          "srcHash": "a39204d65b9e069614480e8412efcf41",
+          "srcHash": "a49e2172b02e4af275dda18333c87232",
           "alt": "Question B-1 as printed. A photograph of a blue indoor electronic garden with a lamp arm over planted herbs, and a simplified 3D view of the same, beside Fig. B-1: an isometric view of the structure, a base block 120 by 70 by 40 with a chamfered end face lettered A at 30 degrees, a 20 wide upright rising 70, and a 40 by 40 lamp head at the top dimensioned 20 and 15, with a green centre line and a small pencil symbol showing the direction of view.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3244,14 +4610,16 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2024 OL Section B Q2(a)",
     stem: "The image on the right shows a bridge on the Waterford Greenway. Fig. B-2 below shows an incomplete isometric projection of a portion of a similar bridge. A 3D graphic is also given. The elevation and plan of the bridge are shown in their required positions.",
     questionText: "Draw the given equilateral triangle abc and the axonometric axes X, Y, and Z.",
-    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
     rows: [
-    { id: "dcg-2024-ol-b2a-r1", kind: "anyN", verbatim: "Draw equilateral triangle", marks: 6, contextNote: "The scheme prices this drawing step by step: 3, 3 — 6 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Draw equilateral triangle","Draw X, Y and Z axes"]} },
+    { id: "dcg-2024-ol-b2a-r1", kind: "point", verbatim: "Draw equilateral triangle", marks: 3 },
+    { id: "dcg-2024-ol-b2a-r2", kind: "point", verbatim: "Draw X, Y and Z axes", marks: 3 },
+    { id: "dcg-2024-ol-b2a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secB-q2-art.png",
-          "srcHash": "bd0db1636d37e211244fdb13ff7dce09",
+          "srcHash": "177cd8ca9dd13e8f694b1bbf806a2489",
           "alt": "Question B-2 as printed. An aerial photograph of a stone arch viaduct on the Waterford Greenway, and a rendered 3D view of one arch, beside Fig. B-2: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z in magenta and the equilateral triangle abc in green, a 30 degree angle marked, the elevation of the bridge positioned at the top right, 60 wide and 90 high with an R25 semicircular arch and a 45 deep pier and a 10 cycle lane, and the plan below, a 50 by 50 square at 45 degrees dimensioned 60, 40 and 100.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3268,12 +4636,15 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the elevation and plan positioned as shown.",
     tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
     rows: [
-    { id: "dcg-2024-ol-b2b-r1", kind: "anyN", verbatim: "Projections & semi-circle to set up elevation", marks: 14, contextNote: "The scheme prices this drawing step by step: 4, 3, 4, 3 — 14 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Projections & semi-circle to set up elevation","Draw elevation in the correct position","Projections & semi-circle (or 45° lines) to set up plan","Draw plan in the correct position"],"perOptionSteps":[4,3,4,3]} },
+    { id: "dcg-2024-ol-b2b-r1", kind: "point", verbatim: "Projections & semi-circle to set up elevation", marks: 4 },
+    { id: "dcg-2024-ol-b2b-r2", kind: "point", verbatim: "Draw elevation in the correct position", marks: 3 },
+    { id: "dcg-2024-ol-b2b-r3", kind: "point", verbatim: "Projections & semi-circle (or 45° lines) to set up plan", marks: 4 },
+    { id: "dcg-2024-ol-b2b-r4", kind: "point", verbatim: "Draw plan in the correct position", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secB-q2-art.png",
-          "srcHash": "bd0db1636d37e211244fdb13ff7dce09",
+          "srcHash": "177cd8ca9dd13e8f694b1bbf806a2489",
           "alt": "Question B-2 as printed. An aerial photograph of a stone arch viaduct on the Waterford Greenway, and a rendered 3D view of one arch, beside Fig. B-2: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z in magenta and the equilateral triangle abc in green, a 30 degree angle marked, the elevation of the bridge positioned at the top right, 60 wide and 90 high with an R25 semicircular arch and a 45 deep pier and a 10 cycle lane, and the plan below, a 50 by 50 square at 45 degrees dimensioned 60, 40 and 100.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3290,12 +4661,15 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the axonometric projection of the outline of the bridge and include the top cycle lane.",
     tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
     rows: [
-    { id: "dcg-2024-ol-b2c-r1", kind: "anyN", verbatim: "Projections from elevation and plan", marks: 23, contextNote: "The scheme prices this drawing step by step: 6, 5, 7, 5 — 23 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":6,"options":["Projections from elevation and plan","Axonometric projection of RHS surface","Axonometric projection LHS surface","Axonometric projection of roadway"],"perOptionSteps":[6,5,7,5]} },
+    { id: "dcg-2024-ol-b2c-r1", kind: "point", verbatim: "Projections from elevation and plan", marks: 6 },
+    { id: "dcg-2024-ol-b2c-r2", kind: "point", verbatim: "Axonometric projection of RHS surface", marks: 5 },
+    { id: "dcg-2024-ol-b2c-r3", kind: "point", verbatim: "Axonometric projection LHS surface", marks: 7 },
+    { id: "dcg-2024-ol-b2c-r4", kind: "point", verbatim: "Axonometric projection of roadway", marks: 5 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secB-q2-art.png",
-          "srcHash": "bd0db1636d37e211244fdb13ff7dce09",
+          "srcHash": "177cd8ca9dd13e8f694b1bbf806a2489",
           "alt": "Question B-2 as printed. An aerial photograph of a stone arch viaduct on the Waterford Greenway, and a rendered 3D view of one arch, beside Fig. B-2: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z in magenta and the equilateral triangle abc in green, a 30 degree angle marked, the elevation of the bridge positioned at the top right, 60 wide and 90 high with an R25 semicircular arch and a 45 deep pier and a 10 cycle lane, and the plan below, a 50 by 50 square at 45 degrees dimensioned 60, 40 and 100.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3312,12 +4686,15 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the axonometric projection of the inner semi-circular opening.",
     tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
-    { id: "dcg-2024-ol-b2d-r1", kind: "anyN", verbatim: "Divisions on semi-circle in elevation", marks: 12, contextNote: "The scheme prices this drawing step by step: 3, 3, 3, 3 — 12 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Divisions on semi-circle in elevation","Corresponding divisions in plan","Projections from elevation and plan","Draw axonometric projection of the semi-circular curve"]} },
+    { id: "dcg-2024-ol-b2d-r1", kind: "point", verbatim: "Divisions on semi-circle in elevation", marks: 3 },
+    { id: "dcg-2024-ol-b2d-r2", kind: "point", verbatim: "Corresponding divisions in plan", marks: 3 },
+    { id: "dcg-2024-ol-b2d-r3", kind: "point", verbatim: "Projections from elevation and plan", marks: 3 },
+    { id: "dcg-2024-ol-b2d-r4", kind: "point", verbatim: "Draw axonometric projection of the semi-circular curve", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secB-q2-art.png",
-          "srcHash": "bd0db1636d37e211244fdb13ff7dce09",
+          "srcHash": "177cd8ca9dd13e8f694b1bbf806a2489",
           "alt": "Question B-2 as printed. An aerial photograph of a stone arch viaduct on the Waterford Greenway, and a rendered 3D view of one arch, beside Fig. B-2: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z in magenta and the equilateral triangle abc in green, a 30 degree angle marked, the elevation of the bridge positioned at the top right, 60 wide and 90 high with an R25 semicircular arch and a 45 deep pier and a 10 cycle lane, and the plan below, a 50 by 50 square at 45 degrees dimensioned 60, 40 and 100.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3328,18 +4705,21 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2024-ol-b3a", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    id: "dcg-2024-ol-b3a", topicId: "design-and-communication-graphics-0-8", conceptId: "dcg-0-8",
     section: "B", questionRef: "2024 OL Section B Q3(a)",
     stem: "The image on the right shows the Céide Fields visitor center in Co. Mayo. The building is based on a square based pyramid which is set into the landscape. Fig. B-3 below shows the elevation and incomplete plan of a similar building. The outline profile of the entrance is shown on the left below. A 3D graphic is also given.",
     questionText: "Draw the given elevation and incomplete plan of the building.",
-    tariffModel: {"kind":"fixed","notation":"(24)"}, totalMarks: 24,
+    tariffModel: {"kind":"fixed","notation":"(29)"}, totalMarks: 29,
     rows: [
-    { id: "dcg-2024-ol-b3a-r1", kind: "anyN", verbatim: "Draw the outline plan as given", marks: 24, contextNote: "The scheme prices this drawing step by step: 9, 3, 12 — 24 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":9,"options":["Draw the outline plan as given","Projections from plan","Draw the elevation as given"],"perOptionSteps":[9,3,12]} },
+    { id: "dcg-2024-ol-b3a-r1", kind: "point", verbatim: "Draw the outline plan as given", marks: 9 },
+    { id: "dcg-2024-ol-b3a-r2", kind: "point", verbatim: "Projections from plan", marks: 3 },
+    { id: "dcg-2024-ol-b3a-r3", kind: "point", verbatim: "Draw the elevation as given", marks: 12 },
+    { id: "dcg-2024-ol-b3a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secB-q3-art.png",
-          "srcHash": "f4d777872c94620c0f6f682674a29c8a",
+          "srcHash": "852cea9fd59ad2ebe54366b38941beea",
           "alt": "Question B-3 as printed. A photograph of the Ceide Fields visitor centre, a glazed pyramid set into a hillside, and a yellow and blue 3D view of two intersecting pyramids, beside Fig. B-3: at the left the magenta outline profile of the entrance, 70 wide, 20 and 15 high with a 25 ridge; in the centre the elevation of the building, a 40 high truncated pyramid carrying a 20 wide upper pyramid 40 high; below, the incomplete plan, a 150 by 150 square with its diagonals and the 20 deep entrance projecting from the left.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3356,12 +4736,17 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the plan, showing all lines of interpenetration.",
     tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
     rows: [
-    { id: "dcg-2024-ol-b3b-r1", kind: "anyN", verbatim: "Projection from LHS of elevation", marks: 16, contextNote: "The scheme prices this drawing step by step: 2, 3, 3, 2, 3, 3 — 16 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":6,"perOption":2,"options":["Projection from LHS of elevation","Locate points on LHS in plan","Complete LHS of plan","Projection from top of elevation","Locate points on top of plan","Complete top of plan"],"perOptionSteps":[2,3,3,2,3,3]} },
+    { id: "dcg-2024-ol-b3b-r1", kind: "point", verbatim: "Projection from LHS of elevation", marks: 2 },
+    { id: "dcg-2024-ol-b3b-r2", kind: "point", verbatim: "Locate points on LHS in plan", marks: 3 },
+    { id: "dcg-2024-ol-b3b-r3", kind: "point", verbatim: "Complete LHS of plan", marks: 3 },
+    { id: "dcg-2024-ol-b3b-r4", kind: "point", verbatim: "Projection from top of elevation", marks: 2 },
+    { id: "dcg-2024-ol-b3b-r5", kind: "point", verbatim: "Locate points on top of plan", marks: 3 },
+    { id: "dcg-2024-ol-b3b-r6", kind: "point", verbatim: "Complete top of plan", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secB-q3-art.png",
-          "srcHash": "f4d777872c94620c0f6f682674a29c8a",
+          "srcHash": "852cea9fd59ad2ebe54366b38941beea",
           "alt": "Question B-3 as printed. A photograph of the Ceide Fields visitor centre, a glazed pyramid set into a hillside, and a yellow and blue 3D view of two intersecting pyramids, beside Fig. B-3: at the left the magenta outline profile of the entrance, 70 wide, 20 and 15 high with a 25 ridge; in the centre the elevation of the building, a 40 high truncated pyramid carrying a 20 wide upper pyramid 40 high; below, the incomplete plan, a 150 by 150 square with its diagonals and the 20 deep entrance projecting from the left.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3372,18 +4757,21 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2024-ol-b3c", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    id: "dcg-2024-ol-b3c", topicId: "design-and-communication-graphics-0-8", conceptId: "dcg-0-8",
     section: "B", questionRef: "2024 OL Section B Q3(c)",
     stem: "The image on the right shows the Céide Fields visitor center in Co. Mayo. The building is based on a square based pyramid which is set into the landscape. Fig. B-3 below shows the elevation and incomplete plan of a similar building. The outline profile of the entrance is shown on the left below. A 3D graphic is also given.",
     questionText: "Draw an end view of the building.",
     tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
     rows: [
-    { id: "dcg-2024-ol-b3c-r1", kind: "anyN", verbatim: "Transfer of widths from plan", marks: 15, contextNote: "The scheme prices this drawing step by step: 4, 3, 4, 4 — 15 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Transfer of widths from plan","Projection of heights from elevation","Complete the end view of main structure","Complete the end view profile"],"perOptionSteps":[4,3,4,4]} },
+    { id: "dcg-2024-ol-b3c-r1", kind: "point", verbatim: "Transfer of widths from plan", marks: 4 },
+    { id: "dcg-2024-ol-b3c-r2", kind: "point", verbatim: "Projection of heights from elevation", marks: 3 },
+    { id: "dcg-2024-ol-b3c-r3", kind: "point", verbatim: "Complete the end view of main structure", marks: 4 },
+    { id: "dcg-2024-ol-b3c-r4", kind: "point", verbatim: "Complete the end view profile", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secB-q3-art.png",
-          "srcHash": "f4d777872c94620c0f6f682674a29c8a",
+          "srcHash": "852cea9fd59ad2ebe54366b38941beea",
           "alt": "Question B-3 as printed. A photograph of the Ceide Fields visitor centre, a glazed pyramid set into a hillside, and a yellow and blue 3D view of two intersecting pyramids, beside Fig. B-3: at the left the magenta outline profile of the entrance, 70 wide, 20 and 15 high with a 25 ridge; in the centre the elevation of the building, a 40 high truncated pyramid carrying a 20 wide upper pyramid 40 high; below, the incomplete plan, a 150 by 150 square with its diagonals and the 20 deep entrance projecting from the left.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3398,14 +4786,31 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2024 OL Section C Q1(a)",
     stem: "The image on the right shows an open mine in operation. The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
     questionText: "On the map supplied, draw a vertical section (profile) on the line AB.",
-    tariffModel: {"kind":"fixed","notation":"(37)"}, totalMarks: 37,
+    tariffModel: {"kind":"fixed","notation":"(42)"}, totalMarks: 42,
     rows: [
-    { id: "dcg-2024-ol-c1a-r1", kind: "anyN", verbatim: "Measure heights and draw horizontal lines", marks: 37, contextNote: "The scheme prices this drawing step by step: 13, 11, 13 — 37 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":13,"options":["Measure heights and draw horizontal lines","Projections from intersections between line AB and contours","Draw the profile"],"perOptionSteps":[13,11,13]} },
+    { id: "dcg-2024-ol-c1a-r1", kind: "point", verbatim: "Measure heights and draw horizontal lines", marks: 13 },
+    { id: "dcg-2024-ol-c1a-r2", kind: "point", verbatim: "Projections from intersections between line AB and contours", marks: 11 },
+    { id: "dcg-2024-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 13 },
+    { id: "dcg-2024-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q1-art.png",
-          "srcHash": "0d5cc3438751e7bcd35c99a2b3be27fe",
+          "srcHash": "044328ac9a33b7d7164215ca101ab316",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and an aerial photograph of a working open mine with haul roads and a green pool; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3422,12 +4827,27 @@ export const CARDS: SecCard[] = [
     questionText: "Points C, D, and E are outcrop points on the surface of a stratum of ore. Draw the plan and elevation of the triangle CDE.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2024-ol-c1b-r1", kind: "anyN", verbatim: "Plan of CDE", marks: 8, contextNote: "The scheme prices this drawing step by step: 3, 5 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Plan of CDE","Elevation of CDE"],"perOptionSteps":[3,5]} },
+    { id: "dcg-2024-ol-c1b-r1", kind: "point", verbatim: "Plan of CDE", marks: 3 },
+    { id: "dcg-2024-ol-c1b-r2", kind: "point", verbatim: "Elevation of CDE", marks: 5 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q1-art.png",
-          "srcHash": "0d5cc3438751e7bcd35c99a2b3be27fe",
+          "srcHash": "044328ac9a33b7d7164215ca101ab316",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and an aerial photograph of a working open mine with haul roads and a green pool; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3444,12 +4864,29 @@ export const CARDS: SecCard[] = [
     questionText: "Determine the strike and dip of the stratum.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
-    { id: "dcg-2024-ol-c1c-r1", kind: "anyN", verbatim: "Horizontal line in elevation", marks: 10, contextNote: "The scheme prices this drawing step by step: 1, 3, 4, 2 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Horizontal line in elevation","Strike in plan","Viewing direction for dip","Determine dip (2 heights, edge view)"],"perOptionSteps":[1,3,4,2]} },
+    { id: "dcg-2024-ol-c1c-r1", kind: "point", verbatim: "Horizontal line in elevation", marks: 1 },
+    { id: "dcg-2024-ol-c1c-r2", kind: "point", verbatim: "Strike in plan", marks: 3 },
+    { id: "dcg-2024-ol-c1c-r3", kind: "point", verbatim: "Viewing direction for dip", marks: 4 },
+    { id: "dcg-2024-ol-c1c-r4", kind: "point", verbatim: "Determine dip (2 heights, edge view)", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q1-art.png",
-          "srcHash": "0d5cc3438751e7bcd35c99a2b3be27fe",
+          "srcHash": "044328ac9a33b7d7164215ca101ab316",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and an aerial photograph of a working open mine with haul roads and a green pool; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3464,14 +4901,18 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2024 OL Section C Q2(a)",
     stem: "The image on the right shows a 3D printed pencil holder. The shape of the pencil holder is based on a hyperboloid of revolution which is formed by straight line elements. Fig. C-2 below shows the plan and elevation of a similar hyperboloid of revolution constructed using 12 equally spaced elements.",
     questionText: "Draw the two given circles in plan and locate 12 equally spaced points on the circumference of the inner circle as shown. Draw the 12 elements tangential to the inner circle at these points.",
-    tariffModel: {"kind":"fixed","notation":"(27)"}, totalMarks: 27,
+    tariffModel: {"kind":"fixed","notation":"(32)"}, totalMarks: 32,
     rows: [
-    { id: "dcg-2024-ol-c2a-r1", kind: "anyN", verbatim: "Draw outer circle", marks: 27, contextNote: "The scheme prices this drawing step by step: 8, 8, 5, 6 — 27 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":8,"options":["Draw outer circle","Draw inner circle","Division of inner circle","Twelve elements"],"perOptionSteps":[8,8,5,6]} },
+    { id: "dcg-2024-ol-c2a-r1", kind: "point", verbatim: "Draw outer circle", marks: 8 },
+    { id: "dcg-2024-ol-c2a-r2", kind: "point", verbatim: "Draw inner circle", marks: 8 },
+    { id: "dcg-2024-ol-c2a-r3", kind: "point", verbatim: "Division of inner circle", marks: 5 },
+    { id: "dcg-2024-ol-c2a-r4", kind: "point", verbatim: "Twelve elements", marks: 6 },
+    { id: "dcg-2024-ol-c2a-r5", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q2-art.png",
-          "srcHash": "46d95e63eb439a13479dc88935199458",
+          "srcHash": "de882df5b37590fd03105fe9d63dc31e",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a 3D printed pencil holder with pencils splayed in it, beside Fig. C-2: above the XY line the elevation of the hyperboloid of revolution, its waisted outline drawn over twelve crossing blue straight-line elements, dimensioned 70 and 70 high; below it the plan, an outer circle of Ø100 and an inner circle of Ø60 with twelve points spaced at 30 degrees round the inner circle and the blue elements drawn tangential to it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3488,12 +4929,15 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the elevation showing the elements projected from the plan.",
     tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
-    { id: "dcg-2024-ol-c2b-r1", kind: "anyN", verbatim: "Draw the outline of the structure", marks: 20, contextNote: "The scheme prices this drawing step by step: 10, 4, 3, 3 — 20 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":10,"options":["Draw the outline of the structure","Projection of elements from plan","Locate extremities of elements","Draw elements"],"perOptionSteps":[10,4,3,3]} },
+    { id: "dcg-2024-ol-c2b-r1", kind: "point", verbatim: "Draw the outline of the structure", marks: 10 },
+    { id: "dcg-2024-ol-c2b-r2", kind: "point", verbatim: "Projection of elements from plan", marks: 4 },
+    { id: "dcg-2024-ol-c2b-r3", kind: "point", verbatim: "Locate extremities of elements", marks: 3 },
+    { id: "dcg-2024-ol-c2b-r4", kind: "point", verbatim: "Draw elements", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q2-art.png",
-          "srcHash": "46d95e63eb439a13479dc88935199458",
+          "srcHash": "de882df5b37590fd03105fe9d63dc31e",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a 3D printed pencil holder with pencils splayed in it, beside Fig. C-2: above the XY line the elevation of the hyperboloid of revolution, its waisted outline drawn over twelve crossing blue straight-line elements, dimensioned 70 and 70 high; below it the plan, an outer circle of Ø100 and an inner circle of Ø60 with twelve points spaced at 30 degrees round the inner circle and the blue elements drawn tangential to it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3510,12 +4954,12 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the elevation by drawing the freehand curves tangential to the elements as shown.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2024-ol-c2c-r1", kind: "anyN", verbatim: "Draw freehand curves", marks: 8, contextNote: "The scheme prices this drawing step by step: 8 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":8,"options":["Draw freehand curves"]} },
+    { id: "dcg-2024-ol-c2c-r1", kind: "point", verbatim: "Draw freehand curves", marks: 8 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q2-art.png",
-          "srcHash": "46d95e63eb439a13479dc88935199458",
+          "srcHash": "de882df5b37590fd03105fe9d63dc31e",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a 3D printed pencil holder with pencils splayed in it, beside Fig. C-2: above the XY line the elevation of the hyperboloid of revolution, its waisted outline drawn over twelve crossing blue straight-line elements, dimensioned 70 and 70 high; below it the plan, an outer circle of Ø100 and an inner circle of Ø60 with twelve points spaced at 30 degrees round the inner circle and the blue elements drawn tangential to it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3530,14 +4974,17 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2024 OL Section C Q3(a)",
     stem: "The image on the right shows a car tissue box. The projections of a similar tissue box are shown in Fig. C-3 below.",
     questionText: "Draw the given elevation and plan of the tissue box.",
-    tariffModel: {"kind":"fixed","notation":"(28)"}, totalMarks: 28,
+    tariffModel: {"kind":"fixed","notation":"(33)"}, totalMarks: 33,
     rows: [
-    { id: "dcg-2024-ol-c3a-r1", kind: "anyN", verbatim: "Draw the outline of the plan", marks: 28, contextNote: "The scheme prices this drawing step by step: 10, 6, 12 — 28 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":10,"options":["Draw the outline of the plan","Draw the opening in plan","Draw the elevation"],"perOptionSteps":[10,6,12]} },
+    { id: "dcg-2024-ol-c3a-r1", kind: "point", verbatim: "Draw the outline of the plan", marks: 10 },
+    { id: "dcg-2024-ol-c3a-r2", kind: "point", verbatim: "Draw the opening in plan", marks: 6 },
+    { id: "dcg-2024-ol-c3a-r3", kind: "point", verbatim: "Draw the elevation", marks: 12 },
+    { id: "dcg-2024-ol-c3a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q3-art.png",
-          "srcHash": "2cd4c656d9d4104b788a9231de694e85",
+          "srcHash": "01663e3ade2bb3c57c119c7c1ee30389",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a red Honda car tissue box with a tissue drawn through its top, beside Fig. C-3: above the XY line the elevation of the box, a long low shape with R30 rounded ends; below it the plan, a rectangle 130 by 60 carrying a rounded-end slot dimensioned 20 and 20 with R10 ends, drawn on green centre lines.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3554,12 +5001,13 @@ export const CARDS: SecCard[] = [
     questionText: "Project an end view.",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
-    { id: "dcg-2024-ol-c3b-r1", kind: "anyN", verbatim: "Projections from elevation and plan", marks: 6, contextNote: "The scheme prices this drawing step by step: 3, 3 — 6 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Projections from elevation and plan","Draw the end view"]} },
+    { id: "dcg-2024-ol-c3b-r1", kind: "point", verbatim: "Projections from elevation and plan", marks: 3 },
+    { id: "dcg-2024-ol-c3b-r2", kind: "point", verbatim: "Draw the end view", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q3-art.png",
-          "srcHash": "2cd4c656d9d4104b788a9231de694e85",
+          "srcHash": "01663e3ade2bb3c57c119c7c1ee30389",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a red Honda car tissue box with a tissue drawn through its top, beside Fig. C-3: above the XY line the elevation of the box, a long low shape with R30 rounded ends; below it the plan, a rectangle 130 by 60 carrying a rounded-end slot dimensioned 20 and 20 with R10 ends, drawn on green centre lines.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3576,12 +5024,16 @@ export const CARDS: SecCard[] = [
     questionText: "Draw a one-piece surface development of the tissue box.",
     tariffModel: {"kind":"fixed","notation":"(21)"}, totalMarks: 21,
     rows: [
-    { id: "dcg-2024-ol-c3c-r1", kind: "anyN", verbatim: "Appropriate layout of surface development", marks: 21, contextNote: "The scheme prices this drawing step by step: 1, 4, 4, 8, 4 — 21 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":1,"options":["Appropriate layout of surface development","Development of bottom surface","Development of front and back","Development of two curved surfaces","Development of top surface"],"perOptionSteps":[1,4,4,8,4]} },
+    { id: "dcg-2024-ol-c3c-r1", kind: "point", verbatim: "Appropriate layout of surface development", marks: 1 },
+    { id: "dcg-2024-ol-c3c-r2", kind: "point", verbatim: "Development of bottom surface", marks: 4 },
+    { id: "dcg-2024-ol-c3c-r3", kind: "point", verbatim: "Development of front and back", marks: 4 },
+    { id: "dcg-2024-ol-c3c-r4", kind: "point", verbatim: "Development of two curved surfaces", marks: 8 },
+    { id: "dcg-2024-ol-c3c-r5", kind: "point", verbatim: "Development of top surface", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q3-art.png",
-          "srcHash": "2cd4c656d9d4104b788a9231de694e85",
+          "srcHash": "01663e3ade2bb3c57c119c7c1ee30389",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a red Honda car tissue box with a tissue drawn through its top, beside Fig. C-3: above the XY line the elevation of the box, a long low shape with R30 rounded ends; below it the plan, a rectangle 130 by 60 carrying a rounded-end slot dimensioned 20 and 20 with R10 ends, drawn on green centre lines.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3594,15 +5046,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2024-ol-c4a", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
     section: "C", questionRef: "2024 OL Section C Q4(a)",
+    stem: "The image on the right shows a cherry picker. The movement of the cherry picker arm is generated by a link mechanism. Fig. C-4 shows a line diagram of a similar mechanism. Crank OA and the rod AC are pin jointed at A. Point B is located on the rigid rod AC as shown. Crank OA rotates in a clockwise direction, about point O, for one revolution. Point C moves on the horizontal axis as shown.",
     questionText: "(i) Draw the given diagram. (ii) Plot the locus of point B for this movement.",
-    tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
+    tariffModel: {"kind":"fixed","notation":"(31)"}, totalMarks: 31,
     rows: [
-    { id: "dcg-2024-ol-c4a-r1", kind: "anyN", verbatim: "Set up line diagram (O, A, B & C)", marks: 26, contextNote: "The scheme prices this drawing step by step: 10, 3, 3, 3, 3, 4 — 26 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":6,"perOption":10,"options":["Set up line diagram (O, A, B & C)","Draw circle about O","Division of circle","Arm AC in rotated positions","Points on locus","Draw locus"],"perOptionSteps":[10,3,3,3,3,4]} },
+    { id: "dcg-2024-ol-c4a-r1", kind: "criterion", verbatim: "Link mechanism", marks: 26, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,26], parts: [{"id":"step-1","verbatim":"Set up line diagram (O, A, B & C)","marks":10,"permittedMarks":[0,10]},{"id":"step-2","verbatim":"Draw circle about O","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Division of circle","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Arm AC in rotated positions","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"Points on locus","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Draw locus","marks":4,"permittedMarks":[0,4]}] },
+    { id: "dcg-2024-ol-c4a-r2", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q4-art.png",
-          "srcHash": "f0b33eebbf358839068bb30c49f1a8fd",
+          "srcHash": "4e3e7b5da8e8f1d3be867606ace8767a",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of an orange cherry picker working against a wall, beside Fig. C-4: a line diagram with the crank OA of 50 vertical from O, the rod AC of 105 falling to C on a green horizontal axis, the point B on AC 50 from C, a blue arc showing A turning clockwise and a blue arrow showing C moving along the axis. Part (b) shows a rendered dark red plate cam and prints the displacement data as text, with no drawing.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3618,12 +5072,12 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a cam from the fuel system of the cherry picker. The cam imparts the following motion to the follower: 90° Rise 70 mm with uniform velocity 90° 120° Dwell 120° 180° Fall 20 mm with uniform velocity 180° 360° Fall 50 mm with simple harmonic motion. Draw the displacement diagram, using a distance of 15 mm to represent each 30° interval. Note: It is not necessary to draw the cam profile.",
     tariffModel: {"kind":"fixed","notation":"(29)"}, totalMarks: 29,
     rows: [
-    { id: "dcg-2024-ol-c4b-r1", kind: "anyN", verbatim: "360° division (widths on displacement diagram)", marks: 29, contextNote: "The scheme prices this drawing step by step: 5, 1, 7, 3, 3, 3, 4, 3 — 29 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":8,"perOption":5,"options":["360° division (widths on displacement diagram)","Correct use of 70 mm height","Establish follower position at 0°, 90°, 120°, 180° and 360°","0° to 90°, Rise 70 mm with Uniform Velocity","90° to 120°, Dwell","120° to 180°, Fall 20 mm with Uniform Velocity","180° to 360°, Fall 50 mm with SHM construction","Complete Displacement Diagram"],"perOptionSteps":[5,1,7,3,3,3,4,3]} },
+    { id: "dcg-2024-ol-c4b-r1", kind: "criterion", verbatim: "Displacement Diagram", marks: 29, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,29], parts: [{"id":"step-1","verbatim":"360° division (widths on displacement diagram)","marks":5,"permittedMarks":[0,5]},{"id":"step-2","verbatim":"Correct use of 70 mm height","marks":1,"permittedMarks":[0,1]},{"id":"step-3","verbatim":"Establish follower position at 0°, 90°, 120°, 180° and 360°","marks":7,"permittedMarks":[0,7]},{"id":"step-4","verbatim":"0° to 90°, Rise 70 mm with Uniform Velocity","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"90° to 120°, Dwell","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"120° to 180°, Fall 20 mm with Uniform Velocity","marks":3,"permittedMarks":[0,3]},{"id":"step-7","verbatim":"180° to 360°, Fall 50 mm with SHM construction","marks":4,"permittedMarks":[0,4]},{"id":"step-8","verbatim":"Complete Displacement Diagram","marks":3,"permittedMarks":[0,3]}] },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q4-art.png",
-          "srcHash": "f0b33eebbf358839068bb30c49f1a8fd",
+          "srcHash": "4e3e7b5da8e8f1d3be867606ace8767a",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of an orange cherry picker working against a wall, beside Fig. C-4: a line diagram with the crank OA of 50 vertical from O, the rod AC of 105 falling to C on a green horizontal axis, the point B on AC 50 from C, a blue arc showing A turning clockwise and a blue arrow showing C moving along the axis. Part (b) shows a rendered dark red plate cam and prints the displacement data as text, with no drawing.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3638,14 +5092,16 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2024 OL Section C Q5 — Assembly",
     stem: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.) Part Name Qty. Top Lamp Pole Solar panel",
     questionText: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.)",
-    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
+    tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
-    { id: "dcg-2024-ol-c5-1-r1", kind: "anyN", verbatim: "Relative positioning of components", marks: 14, contextNote: "The scheme prices this drawing step by step: 10, 4 — 14 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":10,"options":["Relative positioning of components","Draw Section"],"perOptionSteps":[10,4]} },
+    { id: "dcg-2024-ol-c5-1-r1", kind: "point", verbatim: "Relative positioning of components", marks: 10 },
+    { id: "dcg-2024-ol-c5-1-r2", kind: "point", verbatim: "Draw Section", marks: 4 },
+    { id: "dcg-2024-ol-c5-1-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q5-art.png",
-          "srcHash": "6e369862a18ee232de6ccbcc690c9d7e",
+          "srcHash": "f7153028f6a7c49cbd2dd1eef10e9d43",
           "alt": "Question C-5, Assemblies, as printed. A photograph of lit solar pathway lamps and a rendered 3D view of the lamp's parts, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the top dimensioned 60, R30, 8, 10, 30 and 5 over a Ø120, Ø110 and Ø60 plan with the section line A-A across it, the conical lamp dimensioned 60, 5, 5 and Ø20 over a Ø110 and Ø60 plan, the pole dimensioned 145, 25, 15, 8, 5 and Ø20 over a Ø60, Ø40 and Ø24 plan, and the solar panel, a 60 by 40 plate 8 thick -- with a parts-list table naming top, lamp, pole and solar panel with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3662,12 +5118,13 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
-    { id: "dcg-2024-ol-c5-2-r1", kind: "anyN", verbatim: "Outline", marks: 10, contextNote: "The scheme prices this drawing step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Outline","Inner"]} },
+    { id: "dcg-2024-ol-c5-2-r1", kind: "point", verbatim: "Outline", marks: 5 },
+    { id: "dcg-2024-ol-c5-2-r2", kind: "point", verbatim: "Inner", marks: 5 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q5-art.png",
-          "srcHash": "6e369862a18ee232de6ccbcc690c9d7e",
+          "srcHash": "f7153028f6a7c49cbd2dd1eef10e9d43",
           "alt": "Question C-5, Assemblies, as printed. A photograph of lit solar pathway lamps and a rendered 3D view of the lamp's parts, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the top dimensioned 60, R30, 8, 10, 30 and 5 over a Ø120, Ø110 and Ø60 plan with the section line A-A across it, the conical lamp dimensioned 60, 5, 5 and Ø20 over a Ø110 and Ø60 plan, the pole dimensioned 145, 25, 15, 8, 5 and Ø20 over a Ø60, Ø40 and Ø24 plan, and the solar panel, a 60 by 40 plate 8 thick -- with a parts-list table naming top, lamp, pole and solar panel with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3684,12 +5141,13 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
-    { id: "dcg-2024-ol-c5-3-r1", kind: "anyN", verbatim: "Outline", marks: 6, contextNote: "The scheme prices this drawing step by step: 4, 2 — 6 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Outline","Inner"],"perOptionSteps":[4,2]} },
+    { id: "dcg-2024-ol-c5-3-r1", kind: "point", verbatim: "Outline", marks: 4 },
+    { id: "dcg-2024-ol-c5-3-r2", kind: "point", verbatim: "Inner", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q5-art.png",
-          "srcHash": "6e369862a18ee232de6ccbcc690c9d7e",
+          "srcHash": "f7153028f6a7c49cbd2dd1eef10e9d43",
           "alt": "Question C-5, Assemblies, as printed. A photograph of lit solar pathway lamps and a rendered 3D view of the lamp's parts, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the top dimensioned 60, R30, 8, 10, 30 and 5 over a Ø120, Ø110 and Ø60 plan with the section line A-A across it, the conical lamp dimensioned 60, 5, 5 and Ø20 over a Ø110 and Ø60 plan, the pole dimensioned 145, 25, 15, 8, 5 and Ø20 over a Ø60, Ø40 and Ø24 plan, and the solar panel, a 60 by 40 plate 8 thick -- with a parts-list table naming top, lamp, pole and solar panel with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3706,12 +5164,13 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
-    { id: "dcg-2024-ol-c5-4-r1", kind: "anyN", verbatim: "Locate centre points for arcs", marks: 12, contextNote: "The scheme prices this drawing step by step: 4, 8 — 12 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Locate centre points for arcs","Outline"],"perOptionSteps":[4,8]} },
+    { id: "dcg-2024-ol-c5-4-r1", kind: "point", verbatim: "Locate centre points for arcs", marks: 4 },
+    { id: "dcg-2024-ol-c5-4-r2", kind: "point", verbatim: "Outline", marks: 8 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q5-art.png",
-          "srcHash": "6e369862a18ee232de6ccbcc690c9d7e",
+          "srcHash": "f7153028f6a7c49cbd2dd1eef10e9d43",
           "alt": "Question C-5, Assemblies, as printed. A photograph of lit solar pathway lamps and a rendered 3D view of the lamp's parts, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the top dimensioned 60, R30, 8, 10, 30 and 5 over a Ø120, Ø110 and Ø60 plan with the section line A-A across it, the conical lamp dimensioned 60, 5, 5 and Ø20 over a Ø110 and Ø60 plan, the pole dimensioned 145, 25, 15, 8, 5 and Ø20 over a Ø60, Ø40 and Ø24 plan, and the solar panel, a 60 by 40 plate 8 thick -- with a parts-list table naming top, lamp, pole and solar panel with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3728,12 +5187,12 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
-    { id: "dcg-2024-ol-c5-5-r1", kind: "anyN", verbatim: "Outline", marks: 6, contextNote: "The scheme prices this drawing step by step: 6 — 6 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":6,"options":["Outline"]} },
+    { id: "dcg-2024-ol-c5-5-r1", kind: "point", verbatim: "Outline", marks: 6 },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q5-art.png",
-          "srcHash": "6e369862a18ee232de6ccbcc690c9d7e",
+          "srcHash": "f7153028f6a7c49cbd2dd1eef10e9d43",
           "alt": "Question C-5, Assemblies, as printed. A photograph of lit solar pathway lamps and a rendered 3D view of the lamp's parts, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the top dimensioned 60, R30, 8, 10, 30 and 5 over a Ø120, Ø110 and Ø60 plan with the section line A-A across it, the conical lamp dimensioned 60, 5, 5 and Ø20 over a Ø110 and Ø60 plan, the pole dimensioned 145, 25, 15, 8, 5 and Ø20 over a Ø60, Ø40 and Ø24 plan, and the solar panel, a 60 by 40 plate 8 thick -- with a parts-list table naming top, lamp, pole and solar panel with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3750,12 +5209,12 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
-    { id: "dcg-2024-ol-c5-6-r1", kind: "anyN", verbatim: "Hidden detail, Hatching and Centrelines … (4,2,1)", marks: 7, contextNote: "The scheme prices this drawing step by step: 7 — 7 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":7,"options":["Hidden detail, Hatching and Centrelines … (4,2,1)"]} },
+    { id: "dcg-2024-ol-c5-6-r1", kind: "criterion", verbatim: "Hidden detail, Hatching and Centrelines … (4,2,1)", marks: 7, permittedMarks: [0,1,2,3,4,5,6,7] },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q5-art.png",
-          "srcHash": "6e369862a18ee232de6ccbcc690c9d7e",
+          "srcHash": "f7153028f6a7c49cbd2dd1eef10e9d43",
           "alt": "Question C-5, Assemblies, as printed. A photograph of lit solar pathway lamps and a rendered 3D view of the lamp's parts, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the top dimensioned 60, R30, 8, 10, 30 and 5 over a Ø120, Ø110 and Ø60 plan with the section line A-A across it, the conical lamp dimensioned 60, 5, 5 and Ø20 over a Ø110 and Ø60 plan, the pole dimensioned 145, 25, 15, 8, 5 and Ø20 over a Ø60, Ø40 and Ø24 plan, and the solar panel, a 60 by 40 plate 8 thick -- with a parts-list table naming top, lamp, pole and solar panel with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission"
@@ -3769,9 +5228,13 @@ export const CARDS: SecCard[] = [
     id: "dcg-2025-ol-a1", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
     section: "A", questionRef: "2025 OL Section A Q1",
     questionText: "The graphic below shows a television unit. The drawing shows the plan and partially completed perspective view of a similar television unit. Complete the perspective drawing of the television unit.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
-    { id: "dcg-2025-ol-a1-r1", kind: "anyN", verbatim: "Radiate lines to correct vanishing points", marks: 18, contextNote: "The scheme prices this drawing step by step: 4, 5, 6, 3 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Radiate lines to correct vanishing points","Complete front RHS","Complete the LHS","Complete the top surface"],"perOptionSteps":[4,5,6,3]} },
+    { id: "dcg-2025-ol-a1-r1", kind: "point", verbatim: "Radiate lines to correct vanishing points", marks: 4 },
+    { id: "dcg-2025-ol-a1-r2", kind: "point", verbatim: "Complete front RHS", marks: 5 },
+    { id: "dcg-2025-ol-a1-r3", kind: "point", verbatim: "Complete the LHS", marks: 6 },
+    { id: "dcg-2025-ol-a1-r4", kind: "point", verbatim: "Complete the top surface", marks: 3 },
+    { id: "dcg-2025-ol-a1-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secA-q1-art",
@@ -3791,9 +5254,12 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2025 OL Section A Q2(a)",
     stem: "The image below shows an elliptical outdoor seat. The plan of the seat consists of an inner and outer ellipse. The drawing on the right shows the inner ellipse and the major and minor circles of the outer ellipse. A portion of the outer ellipse is also shown.",
     questionText: "Locate the remaining points on the outer ellipse.",
-    tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
-    { id: "dcg-2025-ol-a2a-r1", kind: "anyN", verbatim: "Appropriate use of given major and minor axis", marks: 10, contextNote: "The scheme prices this drawing step by step: 1, 3, 6 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Appropriate use of given major and minor axis","Required construction for additional points","Locate additional points"],"perOptionSteps":[1,3,6]} },
+    { id: "dcg-2025-ol-a2a-r1", kind: "point", verbatim: "Appropriate use of given major and minor axis", marks: 1 },
+    { id: "dcg-2025-ol-a2a-r2", kind: "point", verbatim: "Required construction for additional points", marks: 3 },
+    { id: "dcg-2025-ol-a2a-r3", kind: "point", verbatim: "Locate additional points", marks: 6 },
+    { id: "dcg-2025-ol-a2a-r4", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secA-q2-art",
@@ -3815,7 +5281,7 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the ellipse.",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
-    { id: "dcg-2025-ol-a2b-r1", kind: "anyN", verbatim: "Draw curve", marks: 6, contextNote: "The scheme prices this drawing step by step: 6 — 6 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":6,"options":["Draw curve"]} },
+    { id: "dcg-2025-ol-a2b-r1", kind: "point", verbatim: "Draw curve", marks: 6 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secA-q2-art",
@@ -3837,7 +5303,7 @@ export const CARDS: SecCard[] = [
     questionText: "Locate the focal points of the outer ellipse.",
     tariffModel: {"kind":"fixed","notation":"(2)"}, totalMarks: 2,
     rows: [
-    { id: "dcg-2025-ol-a2c-r1", kind: "anyN", verbatim: "Locate required focal points", marks: 2, contextNote: "The scheme prices this drawing step by step: 2 — 2 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Locate required focal points"]} },
+    { id: "dcg-2025-ol-a2c-r1", kind: "point", verbatim: "Locate required focal points", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secA-q2-art",
@@ -3856,9 +5322,12 @@ export const CARDS: SecCard[] = [
     id: "dcg-2025-ol-a3-1", topicId: "design-and-communication-graphics-0-13", conceptId: "dcg-0-13",
     section: "A", questionRef: "2025 OL Section A Q3 — Rotation of door",
     questionText: "The image below shows a round baler. The baler releases bales by opening and closing the rear door. The drawing below shows the elevation of a similar baler with the rear door in the fully open position. The rear door rotates downward, about point P, until point A reaches A1. Complete the elevation to show the door in the fully closed position.",
-    tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
+    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
     rows: [
-    { id: "dcg-2025-ol-a3-1-r1", kind: "anyN", verbatim: "Rotation of points", marks: 16, contextNote: "The scheme prices this drawing step by step: 4, 6, 6 — 16 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Rotation of points","Locate points","Draw door"],"perOptionSteps":[4,6,6]} },
+    { id: "dcg-2025-ol-a3-1-r1", kind: "point", verbatim: "Rotation of points", marks: 4 },
+    { id: "dcg-2025-ol-a3-1-r2", kind: "point", verbatim: "Locate points", marks: 6 },
+    { id: "dcg-2025-ol-a3-1-r3", kind: "point", verbatim: "Draw door", marks: 6 },
+    { id: "dcg-2025-ol-a3-1-r4", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secA-q3-art",
@@ -3879,7 +5348,7 @@ export const CARDS: SecCard[] = [
     questionText: "The image below shows a round baler. The baler releases bales by opening and closing the rear door. The drawing below shows the elevation of a similar baler with the rear door in the fully open position. The rear door rotates downward, about point P, until point A reaches A1. Complete the elevation to show the door in the fully closed position.",
     tariffModel: {"kind":"fixed","notation":"(2)"}, totalMarks: 2,
     rows: [
-    { id: "dcg-2025-ol-a3-2-r1", kind: "anyN", verbatim: "Complete hidden detail", marks: 2, contextNote: "The scheme prices this drawing step by step: 2 — 2 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Complete hidden detail"]} },
+    { id: "dcg-2025-ol-a3-2-r1", kind: "point", verbatim: "Complete hidden detail", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secA-q3-art",
@@ -3895,13 +5364,14 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC562GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2025-ol-a4a", topicId: "design-and-communication-graphics-0-4", conceptId: "dcg-0-4",
+    id: "dcg-2025-ol-a4a", topicId: "design-and-communication-graphics-2-3", conceptId: "dcg-2-3",
     section: "A", questionRef: "2025 OL Section A Q4(a)",
     stem: "The image below shows the Nintendo Switch logo. The outline of the logo is symmetrical. Shown below on the right is a partially completed drawing of the logo.",
     questionText: "Draw a circle of radius 10 mm at point P.",
-    tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
-    { id: "dcg-2025-ol-a4a-r1", kind: "anyN", verbatim: "Draw R10 mm circle", marks: 4, contextNote: "The scheme prices this drawing step by step: 4 — 4 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":4,"options":["Draw R10 mm circle"]} },
+    { id: "dcg-2025-ol-a4a-r1", kind: "point", verbatim: "Draw R10 mm circle", marks: 4 },
+    { id: "dcg-2025-ol-a4a-r2", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secA-q4-art",
@@ -3917,13 +5387,16 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC562GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2025-ol-a4b", topicId: "design-and-communication-graphics-0-4", conceptId: "dcg-0-4",
+    id: "dcg-2025-ol-a4b", topicId: "design-and-communication-graphics-2-3", conceptId: "dcg-2-3",
     section: "A", questionRef: "2025 OL Section A Q4(b)",
     stem: "The image below shows the Nintendo Switch logo. The outline of the logo is symmetrical. Shown below on the right is a partially completed drawing of the logo.",
     questionText: "Complete the top portion of the logo.",
     tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
     rows: [
-    { id: "dcg-2025-ol-a4b-r1", kind: "anyN", verbatim: "Construct vertical lines", marks: 14, contextNote: "The scheme prices this drawing step by step: 6, 2, 2, 4 — 14 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":6,"options":["Construct vertical lines","Determine required heights","Determine centre of arcs","Draw arcs to complete logo"],"perOptionSteps":[6,2,2,4]} },
+    { id: "dcg-2025-ol-a4b-r1", kind: "point", verbatim: "Construct vertical lines", marks: 6 },
+    { id: "dcg-2025-ol-a4b-r2", kind: "point", verbatim: "Determine required heights", marks: 2 },
+    { id: "dcg-2025-ol-a4b-r3", kind: "point", verbatim: "Determine centre of arcs", marks: 2 },
+    { id: "dcg-2025-ol-a4b-r4", kind: "point", verbatim: "Draw arcs to complete logo", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secA-q4-art",
@@ -3939,18 +5412,21 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2025-ol-b1a", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    id: "dcg-2025-ol-b1a", topicId: "design-and-communication-graphics-0-8", conceptId: "dcg-0-8",
     section: "B", questionRef: "2025 OL Section B Q1(a)",
     stem: "The image on the right shows a modern house. The design of the house consists of three intersecting structures. Fig. B-1 below shows the elevation and incomplete plan of a similar house. The outline profile of the central structure is shown on the right below. A 3D graphic is also given.",
     questionText: "Draw the given elevation and incomplete plan of the house.",
-    tariffModel: {"kind":"fixed","notation":"(27)"}, totalMarks: 27,
+    tariffModel: {"kind":"fixed","notation":"(32)"}, totalMarks: 32,
     rows: [
-    { id: "dcg-2025-ol-b1a-r1", kind: "anyN", verbatim: "Draw the outline plan as given", marks: 27, contextNote: "The scheme prices this drawing step by step: 14, 3, 10 — 27 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":14,"options":["Draw the outline plan as given","Projections from plan","Draw the elevation as given"],"perOptionSteps":[14,3,10]} },
+    { id: "dcg-2025-ol-b1a-r1", kind: "point", verbatim: "Draw the outline plan as given", marks: 14 },
+    { id: "dcg-2025-ol-b1a-r2", kind: "point", verbatim: "Projections from plan", marks: 3 },
+    { id: "dcg-2025-ol-b1a-r3", kind: "point", verbatim: "Draw the elevation as given", marks: 10 },
+    { id: "dcg-2025-ol-b1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secB-q1-art.png",
-          "srcHash": "cff116d602102627db448bce35dd20db",
+          "srcHash": "4b421486deef616e8b9978a55975b11b",
           "alt": "Question B-1 as printed. A photograph of a modern two-gable house, and a green and blue 3D view of three intersecting gabled structures, beside Fig. B-1: above the XY line the elevation, a 65 high gable at 45 degrees beside a lower gable at 40 degrees, and at the right the blue outline profile of the central structure, 60 wide, 50 to the eaves and 25 to the ridge; below it the incomplete plan, 120 and 80 deep by 60, 50 and 70 across.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -3967,12 +5443,17 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the plan, showing all lines of interpenetration.",
     tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
     rows: [
-    { id: "dcg-2025-ol-b1b-r1", kind: "anyN", verbatim: "Projection from RHS of elevation", marks: 16, contextNote: "The scheme prices this drawing step by step: 2, 3, 3, 2, 3, 3 — 16 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":6,"perOption":2,"options":["Projection from RHS of elevation","Locate points on RHS in plan","Complete RHS of plan","Projection from LHS of elevation","Locate points on LHS of plan","Complete LHS of plan"],"perOptionSteps":[2,3,3,2,3,3]} },
+    { id: "dcg-2025-ol-b1b-r1", kind: "point", verbatim: "Projection from RHS of elevation", marks: 2 },
+    { id: "dcg-2025-ol-b1b-r2", kind: "point", verbatim: "Locate points on RHS in plan", marks: 3 },
+    { id: "dcg-2025-ol-b1b-r3", kind: "point", verbatim: "Complete RHS of plan", marks: 3 },
+    { id: "dcg-2025-ol-b1b-r4", kind: "point", verbatim: "Projection from LHS of elevation", marks: 2 },
+    { id: "dcg-2025-ol-b1b-r5", kind: "point", verbatim: "Locate points on LHS of plan", marks: 3 },
+    { id: "dcg-2025-ol-b1b-r6", kind: "point", verbatim: "Complete LHS of plan", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secB-q1-art.png",
-          "srcHash": "cff116d602102627db448bce35dd20db",
+          "srcHash": "4b421486deef616e8b9978a55975b11b",
           "alt": "Question B-1 as printed. A photograph of a modern two-gable house, and a green and blue 3D view of three intersecting gabled structures, beside Fig. B-1: above the XY line the elevation, a 65 high gable at 45 degrees beside a lower gable at 40 degrees, and at the right the blue outline profile of the central structure, 60 wide, 50 to the eaves and 25 to the ridge; below it the incomplete plan, 120 and 80 deep by 60, 50 and 70 across.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -3983,18 +5464,21 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2025-ol-b1c", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    id: "dcg-2025-ol-b1c", topicId: "design-and-communication-graphics-0-8", conceptId: "dcg-0-8",
     section: "B", questionRef: "2025 OL Section B Q1(c)",
     stem: "The image on the right shows a modern house. The design of the house consists of three intersecting structures. Fig. B-1 below shows the elevation and incomplete plan of a similar house. The outline profile of the central structure is shown on the right below. A 3D graphic is also given.",
     questionText: "Draw an end view of the house.",
     tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
-    { id: "dcg-2025-ol-b1c-r1", kind: "anyN", verbatim: "Transfer of widths from plan", marks: 12, contextNote: "The scheme prices this drawing step by step: 2, 2, 4, 4 — 12 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Transfer of widths from plan","Projection of heights from elevation","Complete the end view of main structure","Complete the end view profile"],"perOptionSteps":[2,2,4,4]} },
+    { id: "dcg-2025-ol-b1c-r1", kind: "point", verbatim: "Transfer of widths from plan", marks: 2 },
+    { id: "dcg-2025-ol-b1c-r2", kind: "point", verbatim: "Projection of heights from elevation", marks: 2 },
+    { id: "dcg-2025-ol-b1c-r3", kind: "point", verbatim: "Complete the end view of main structure", marks: 4 },
+    { id: "dcg-2025-ol-b1c-r4", kind: "point", verbatim: "Complete the end view profile", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secB-q1-art.png",
-          "srcHash": "cff116d602102627db448bce35dd20db",
+          "srcHash": "4b421486deef616e8b9978a55975b11b",
           "alt": "Question B-1 as printed. A photograph of a modern two-gable house, and a green and blue 3D view of three intersecting gabled structures, beside Fig. B-1: above the XY line the elevation, a 65 high gable at 45 degrees beside a lower gable at 40 degrees, and at the right the blue outline profile of the central structure, 60 wide, 50 to the eaves and 25 to the ridge; below it the incomplete plan, 120 and 80 deep by 60, 50 and 70 across.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -4009,9 +5493,11 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2025 OL Section B Q2(a)",
     stem: "The image on the right shows a sports dugout. Fig. B-2 below shows an incomplete isometric projection of a similar dugout. A 3D graphic is also given. The elevation and plan of the dugout are shown in their required positions.",
     questionText: "Draw the given equilateral triangle abc and the axonometric axes X, Y, and Z.",
-    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
     rows: [
-    { id: "dcg-2025-ol-b2a-r1", kind: "anyN", verbatim: "Draw equilateral triangle", marks: 6, contextNote: "The scheme prices this drawing step by step: 3, 3 — 6 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Draw equilateral triangle","Draw X, Y, and Z axes"]} },
+    { id: "dcg-2025-ol-b2a-r1", kind: "point", verbatim: "Draw equilateral triangle", marks: 3 },
+    { id: "dcg-2025-ol-b2a-r2", kind: "point", verbatim: "Draw X, Y, and Z axes", marks: 3 },
+    { id: "dcg-2025-ol-b2a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secB-q2-art",
@@ -4033,7 +5519,10 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the elevation and plan positioned as shown.",
     tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
     rows: [
-    { id: "dcg-2025-ol-b2b-r1", kind: "anyN", verbatim: "Projections & semi-circle to set up elevation", marks: 14, contextNote: "The scheme prices this drawing step by step: 4, 3, 4, 3 — 14 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Projections & semi-circle to set up elevation","Draw elevation in the correct position","Projections & semicircle (or 45° lines) to set up plan","Draw plan in the correct position"],"perOptionSteps":[4,3,4,3]} },
+    { id: "dcg-2025-ol-b2b-r1", kind: "point", verbatim: "Projections & semi-circle to set up elevation", marks: 4 },
+    { id: "dcg-2025-ol-b2b-r2", kind: "point", verbatim: "Draw elevation in the correct position", marks: 3 },
+    { id: "dcg-2025-ol-b2b-r3", kind: "point", verbatim: "Projections & semicircle (or 45° lines) to set up plan", marks: 4 },
+    { id: "dcg-2025-ol-b2b-r4", kind: "point", verbatim: "Draw plan in the correct position", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secB-q2-art",
@@ -4055,7 +5544,10 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the axonometric projection of the base of the dugout.",
     tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
     rows: [
-    { id: "dcg-2025-ol-b2c-r1", kind: "anyN", verbatim: "Projections from elevation and plan", marks: 18, contextNote: "The scheme prices this drawing step by step: 6, 6, 3, 3 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":6,"options":["Projections from elevation and plan","Axonometric projection of base","Axonometric projection of dugout opening","Axonometric projection of seat"],"perOptionSteps":[6,6,3,3]} },
+    { id: "dcg-2025-ol-b2c-r1", kind: "point", verbatim: "Projections from elevation and plan", marks: 6 },
+    { id: "dcg-2025-ol-b2c-r2", kind: "point", verbatim: "Axonometric projection of base", marks: 6 },
+    { id: "dcg-2025-ol-b2c-r3", kind: "point", verbatim: "Axonometric projection of dugout opening", marks: 3 },
+    { id: "dcg-2025-ol-b2c-r4", kind: "point", verbatim: "Axonometric projection of seat", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secB-q2-art",
@@ -4077,7 +5569,11 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the axonometric projection of the dugout top shelter and seat.",
     tariffModel: {"kind":"fixed","notation":"(17)"}, totalMarks: 17,
     rows: [
-    { id: "dcg-2025-ol-b2d-r1", kind: "anyN", verbatim: "Divisions on semi-circle in elevation", marks: 17, contextNote: "The scheme prices this drawing step by step: 3, 3, 4, 4, 3 — 17 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":3,"options":["Divisions on semi-circle in elevation","Corresponding divisions in plan","Projections from elevation and plan","Draw axonometric projection of the curves","Complete the outline of the dugout"],"perOptionSteps":[3,3,4,4,3]} },
+    { id: "dcg-2025-ol-b2d-r1", kind: "point", verbatim: "Divisions on semi-circle in elevation", marks: 3 },
+    { id: "dcg-2025-ol-b2d-r2", kind: "point", verbatim: "Corresponding divisions in plan", marks: 3 },
+    { id: "dcg-2025-ol-b2d-r3", kind: "point", verbatim: "Projections from elevation and plan", marks: 4 },
+    { id: "dcg-2025-ol-b2d-r4", kind: "point", verbatim: "Draw axonometric projection of the curves", marks: 4 },
+    { id: "dcg-2025-ol-b2d-r5", kind: "point", verbatim: "Complete the outline of the dugout", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secB-q2-art",
@@ -4093,13 +5589,15 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2025-ol-b3a", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2025-ol-b3a", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2025 OL Section B Q3(a)",
     stem: "The image on the right shows a popular arcade game. Fig. B-3 below shows an isometric view of a similar arcade game. A 3D graphic is also given.",
     questionText: "Draw an elevation of the arcade game looking in the direction of the arrow.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
     rows: [
-    { id: "dcg-2025-ol-b3a-r1", kind: "anyN", verbatim: "Draw base", marks: 18, contextNote: "The scheme prices this drawing step by step: 12, 6 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":12,"options":["Draw base","Draw top"],"perOptionSteps":[12,6]} },
+    { id: "dcg-2025-ol-b3a-r1", kind: "point", verbatim: "Draw base", marks: 12 },
+    { id: "dcg-2025-ol-b3a-r2", kind: "point", verbatim: "Draw top", marks: 6 },
+    { id: "dcg-2025-ol-b3a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secB-q3-art",
@@ -4115,13 +5613,14 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2025-ol-b3b", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2025-ol-b3b", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2025 OL Section B Q3(b)",
     stem: "The image on the right shows a popular arcade game. Fig. B-3 below shows an isometric view of a similar arcade game. A 3D graphic is also given.",
     questionText: "Project a plan from the elevation.",
     tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
     rows: [
-    { id: "dcg-2025-ol-b3b-r1", kind: "anyN", verbatim: "Draw base", marks: 18, contextNote: "The scheme prices this drawing step by step: 12, 6 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":12,"options":["Draw base","Draw top"],"perOptionSteps":[12,6]} },
+    { id: "dcg-2025-ol-b3b-r1", kind: "point", verbatim: "Draw base", marks: 12 },
+    { id: "dcg-2025-ol-b3b-r2", kind: "point", verbatim: "Draw top", marks: 6 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secB-q3-art",
@@ -4137,13 +5636,17 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2025-ol-b3c", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2025-ol-b3c", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2025 OL Section B Q3(c)",
     stem: "The image on the right shows a popular arcade game. Fig. B-3 below shows an isometric view of a similar arcade game. A 3D graphic is also given.",
     questionText: "Draw the auxiliary elevation of the arcade game, projected from the plan, which will include the true shape of surface A.",
     tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
-    { id: "dcg-2025-ol-b3c-r1", kind: "anyN", verbatim: "X1Y1 line parallel to plan of surface A", marks: 19, contextNote: "The scheme prices this drawing step by step: 1, 1, 3, 4, 10 — 19 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":1,"options":["X1Y1 line parallel to plan of surface A","Projections from plan","Transfer of heights from elevation","Draw surface A","Complete auxiliary elevation"],"perOptionSteps":[1,1,3,4,10]} },
+    { id: "dcg-2025-ol-b3c-r1", kind: "point", verbatim: "X1Y1 line parallel to plan of surface A", marks: 1 },
+    { id: "dcg-2025-ol-b3c-r2", kind: "point", verbatim: "Projections from plan", marks: 1 },
+    { id: "dcg-2025-ol-b3c-r3", kind: "point", verbatim: "Transfer of heights from elevation", marks: 3 },
+    { id: "dcg-2025-ol-b3c-r4", kind: "point", verbatim: "Draw surface A", marks: 4 },
+    { id: "dcg-2025-ol-b3c-r5", kind: "point", verbatim: "Complete auxiliary elevation", marks: 10 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secB-q3-art",
@@ -4163,14 +5666,31 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2025 OL Section C Q1(a)",
     stem: "The image on the right shows a country road which required cuttings to accommodate it. The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
     questionText: "On the map supplied, draw a vertical section (profile) on the line AB.",
-    tariffModel: {"kind":"fixed","notation":"(35)"}, totalMarks: 35,
+    tariffModel: {"kind":"fixed","notation":"(40)"}, totalMarks: 40,
     rows: [
-    { id: "dcg-2025-ol-c1a-r1", kind: "anyN", verbatim: "Measure heights and draw horizontal lines", marks: 35, contextNote: "The scheme prices this drawing step by step: 13, 10, 12 — 35 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":13,"options":["Measure heights and draw horizontal lines","Projections from intersections between line AB and contours","Draw the profile"],"perOptionSteps":[13,10,12]} },
+    { id: "dcg-2025-ol-c1a-r1", kind: "point", verbatim: "Measure heights and draw horizontal lines", marks: 13 },
+    { id: "dcg-2025-ol-c1a-r2", kind: "point", verbatim: "Projections from intersections between line AB and contours", marks: 10 },
+    { id: "dcg-2025-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 12 },
+    { id: "dcg-2025-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q1-art.png",
-          "srcHash": "c66a55bd20c78af206081383a95cf688",
+          "srcHash": "e364d0ede0bb447c7934dadd804ee246",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a country road running between two cuttings; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -4187,12 +5707,28 @@ export const CARDS: SecCard[] = [
     questionText: "CD is the centreline of a proposed roadway which is level at an altitude of 30 m. Using side slopes of 1 in 1 for the cuttings, complete the earthworks necessary to accommodate the roadway. Note: The earthworks on the southern side of the roadway have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
-    { id: "dcg-2025-ol-c1b-r1", kind: "anyN", verbatim: "Parallel lines at 5 m intervals for cutting", marks: 20, contextNote: "The scheme prices this drawing step by step: 6, 8, 6 — 20 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":6,"options":["Parallel lines at 5 m intervals for cutting","Identify points on cutting curve","Draw cutting curve"],"perOptionSteps":[6,8,6]} },
+    { id: "dcg-2025-ol-c1b-r1", kind: "point", verbatim: "Parallel lines at 5 m intervals for cutting", marks: 6 },
+    { id: "dcg-2025-ol-c1b-r2", kind: "point", verbatim: "Identify points on cutting curve", marks: 8 },
+    { id: "dcg-2025-ol-c1b-r3", kind: "point", verbatim: "Draw cutting curve", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q1-art.png",
-          "srcHash": "c66a55bd20c78af206081383a95cf688",
+          "srcHash": "e364d0ede0bb447c7934dadd804ee246",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a country road running between two cuttings; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -4207,14 +5743,19 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2025 OL Section C Q2(a), (b)",
     stem: "The image on the right shows pieces from the HyperTiles game. The game is made up of various forms of hyperbolic paraboloid pieces. Fig. C-2 below shows the plan and elevation of a similar hyperbolic paraboloid piece which is square in plan.",
     questionText: "Draw the given plan of the hyperbolic paraboloid piece. Project an elevation from the plan.",
-    tariffModel: {"kind":"fixed","notation":"(37)"}, totalMarks: 37,
+    tariffModel: {"kind":"fixed","notation":"(42)"}, totalMarks: 42,
     rows: [
-    { id: "dcg-2025-ol-c2-r1", kind: "anyN", verbatim: "Outline of surface ABCD in plan", marks: 37, contextNote: "The scheme prices this drawing step by step: 10, 6, 10, 6, 5 — 37 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":10,"options":["Outline of surface ABCD in plan","Elements in plan (incl. division)","Outline of surface ABCD in elevation","Elements in elevation (incl. division or proj.)","Completion of elevation (curve and hidden detail)"],"perOptionSteps":[10,6,10,6,5]} },
+    { id: "dcg-2025-ol-c2-r1", kind: "point", verbatim: "Outline of surface ABCD in plan", marks: 10 },
+    { id: "dcg-2025-ol-c2-r2", kind: "point", verbatim: "Elements in plan (incl. division)", marks: 6 },
+    { id: "dcg-2025-ol-c2-r3", kind: "point", verbatim: "Outline of surface ABCD in elevation", marks: 10 },
+    { id: "dcg-2025-ol-c2-r4", kind: "point", verbatim: "Elements in elevation (incl. division or proj.)", marks: 6 },
+    { id: "dcg-2025-ol-c2-r5", kind: "point", verbatim: "Completion of elevation (curve and hidden detail)", marks: 5 },
+    { id: "dcg-2025-ol-c2-r6", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q2-art.png",
-          "srcHash": "467cc1e921a3716e62ef504ee603abe8",
+          "srcHash": "e8b193bc8e01c7444ab9d3f6947800eb",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of coloured HyperTiles hyperbolic paraboloid game pieces on a table, beside Fig. C-2: above the XY line the elevation, a tall triangle with D at the apex 95 high, A and C on the XY line, the point B at 70, and a sagging green-ruled surface beneath the apex; below it the plan, a square ABCD of 105 side set at 45 degrees, ruled with two families of green elements.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -4231,12 +5772,15 @@ export const CARDS: SecCard[] = [
     questionText: "Project an end view.",
     tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
     rows: [
-    { id: "dcg-2025-ol-c2c-r1", kind: "anyN", verbatim: "Determine heights and widths for surface ABCD", marks: 18, contextNote: "The scheme prices this drawing step by step: 6, 4, 5, 3 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":6,"options":["Determine heights and widths for surface ABCD","Draw the outline of hyperbolic paraboloid surface","Draw elements","Completion of end view (curve)"],"perOptionSteps":[6,4,5,3]} },
+    { id: "dcg-2025-ol-c2c-r1", kind: "point", verbatim: "Determine heights and widths for surface ABCD", marks: 6 },
+    { id: "dcg-2025-ol-c2c-r2", kind: "point", verbatim: "Draw the outline of hyperbolic paraboloid surface", marks: 4 },
+    { id: "dcg-2025-ol-c2c-r3", kind: "point", verbatim: "Draw elements", marks: 5 },
+    { id: "dcg-2025-ol-c2c-r4", kind: "point", verbatim: "Completion of end view (curve)", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q2-art.png",
-          "srcHash": "467cc1e921a3716e62ef504ee603abe8",
+          "srcHash": "e8b193bc8e01c7444ab9d3f6947800eb",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of coloured HyperTiles hyperbolic paraboloid game pieces on a table, beside Fig. C-2: above the XY line the elevation, a tall triangle with D at the apex 95 high, A and C on the XY line, the point B at 70, and a sagging green-ruled surface beneath the apex; below it the plan, a square ABCD of 105 side set at 45 degrees, ruled with two families of green elements.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -4251,14 +5795,17 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2025 OL Section C Q3(a)",
     stem: "The image on the right shows an electric car charging station. A 3D graphic of a similar charging station is also shown. The projections of a similar charging station are shown in Fig. C-3 below.",
     questionText: "Draw the given elevation and plan of the charging station.",
-    tariffModel: {"kind":"fixed","notation":"(30)"}, totalMarks: 30,
+    tariffModel: {"kind":"fixed","notation":"(35)"}, totalMarks: 35,
     rows: [
-    { id: "dcg-2025-ol-c3a-r1", kind: "anyN", verbatim: "Draw the outline of the plan", marks: 30, contextNote: "The scheme prices this drawing step by step: 6, 12, 12 — 30 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":6,"options":["Draw the outline of the plan","Draw the outline elevation","Draw the inner detail in elevation"],"perOptionSteps":[6,12,12]} },
+    { id: "dcg-2025-ol-c3a-r1", kind: "point", verbatim: "Draw the outline of the plan", marks: 6 },
+    { id: "dcg-2025-ol-c3a-r2", kind: "point", verbatim: "Draw the outline elevation", marks: 12 },
+    { id: "dcg-2025-ol-c3a-r3", kind: "point", verbatim: "Draw the inner detail in elevation", marks: 12 },
+    { id: "dcg-2025-ol-c3a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q3-art.png",
-          "srcHash": "ce43ac6be1b417556f17313fc23c38b9",
+          "srcHash": "d9f1425961339e13d71af828ddfa0ba4",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a white Zappi electric car charging station on a brick wall, and a blue and yellow 3D view of the same shape, beside Fig. C-3: above the XY line the elevation, an arched outline with R45 and R35 arcs over straight sides that meet in a point at the foot, dimensioned 95 high, 25 at the foot and 10 across the wall; below it the plan, a plain rectangle 25 deep with a broken centre line.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -4275,12 +5822,13 @@ export const CARDS: SecCard[] = [
     questionText: "Project an end view.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2025-ol-c3b-r1", kind: "anyN", verbatim: "Projections from elevation and plan", marks: 8, contextNote: "The scheme prices this drawing step by step: 3, 5 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Projections from elevation and plan","Draw the end view"],"perOptionSteps":[3,5]} },
+    { id: "dcg-2025-ol-c3b-r1", kind: "point", verbatim: "Projections from elevation and plan", marks: 3 },
+    { id: "dcg-2025-ol-c3b-r2", kind: "point", verbatim: "Draw the end view", marks: 5 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q3-art.png",
-          "srcHash": "ce43ac6be1b417556f17313fc23c38b9",
+          "srcHash": "d9f1425961339e13d71af828ddfa0ba4",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a white Zappi electric car charging station on a brick wall, and a blue and yellow 3D view of the same shape, beside Fig. C-3: above the XY line the elevation, an arched outline with R45 and R35 arcs over straight sides that meet in a point at the foot, dimensioned 95 high, 25 at the foot and 10 across the wall; below it the plan, a plain rectangle 25 deep with a broken centre line.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -4297,12 +5845,16 @@ export const CARDS: SecCard[] = [
     questionText: "Draw a one-piece surface development of the charging station.",
     tariffModel: {"kind":"fixed","notation":"(17)"}, totalMarks: 17,
     rows: [
-    { id: "dcg-2025-ol-c3c-r1", kind: "anyN", verbatim: "Appropriate layout of surface development", marks: 17, contextNote: "The scheme prices this drawing step by step: 1, 4, 4, 4, 4 — 17 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":1,"options":["Appropriate layout of surface development","Development of front and back surfaces","Development of right and left sides","Development of the bottom surfaces","Development of the curved surfaces"],"perOptionSteps":[1,4,4,4,4]} },
+    { id: "dcg-2025-ol-c3c-r1", kind: "point", verbatim: "Appropriate layout of surface development", marks: 1 },
+    { id: "dcg-2025-ol-c3c-r2", kind: "point", verbatim: "Development of front and back surfaces", marks: 4 },
+    { id: "dcg-2025-ol-c3c-r3", kind: "point", verbatim: "Development of right and left sides", marks: 4 },
+    { id: "dcg-2025-ol-c3c-r4", kind: "point", verbatim: "Development of the bottom surfaces", marks: 4 },
+    { id: "dcg-2025-ol-c3c-r5", kind: "point", verbatim: "Development of the curved surfaces", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q3-art.png",
-          "srcHash": "ce43ac6be1b417556f17313fc23c38b9",
+          "srcHash": "d9f1425961339e13d71af828ddfa0ba4",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a white Zappi electric car charging station on a brick wall, and a blue and yellow 3D view of the same shape, beside Fig. C-3: above the XY line the elevation, an arched outline with R45 and R35 arcs over straight sides that meet in a point at the foot, dimensioned 95 high, 25 at the foot and 10 across the wall; below it the plan, a plain rectangle 25 deep with a broken centre line.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -4315,15 +5867,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2025-ol-c4a", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
     section: "C", questionRef: "2025 OL Section C Q4(a)",
+    stem: "The image below shows an excavator boring a hole. The auger of the excavator is based on a helix. Fig. C-4 opposite shows the projections of portion of a similar partially completed helix.",
     questionText: "(i) Draw the given elevation and plan. (ii) Complete the projections of the helix which moves in a clockwise direction from point A on the base to point B in one revolution.",
-    tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
+    tariffModel: {"kind":"fixed","notation":"(31)"}, totalMarks: 31,
     rows: [
-    { id: "dcg-2025-ol-c4a-r1", kind: "anyN", verbatim: "Set up given elevation and plan (incl. points A & B)", marks: 26, contextNote: "The scheme prices this drawing step by step: 10, 3, 3, 3, 3, 4 — 26 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":6,"perOption":10,"options":["Set up given elevation and plan (incl. points A & B)","Division of circle in plan","Projections from plan","Draw horizontal divisions in elevation","Locate points on helix","Draw helix in elevation"],"perOptionSteps":[10,3,3,3,3,4]} },
+    { id: "dcg-2025-ol-c4a-r1", kind: "criterion", verbatim: "Helix", marks: 26, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,26], parts: [{"id":"step-1","verbatim":"Set up given elevation and plan (incl. points A & B)","marks":10,"permittedMarks":[0,10]},{"id":"step-2","verbatim":"Division of circle in plan","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Projections from plan","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Draw horizontal divisions in elevation","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"Locate points on helix","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Draw helix in elevation","marks":4,"permittedMarks":[0,4]}] },
+    { id: "dcg-2025-ol-c4a-r2", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q4-art.png",
-          "srcHash": "bedfd3468f9f8e789bca81fd14926784",
+          "srcHash": "bc65f3be8a125fe73245770ddcb6b5d7",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of a JCB excavator boring with an auger, beside Fig. C-4: above the XY line the elevation of the cylinder 120 high with A at the foot right and B at the top, and a partly drawn helix between them; below it the plan, a Ø90 circle divided by twelve blue radii with A and B coincident at the foot. Part (b) shows a photograph of a camshaft and prints the displacement data as text, with no drawing.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -4339,12 +5893,12 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a camshaft from the fuel system of the excavator. A cam imparts the following motion to the follower: 90° Rise 60 mm with uniform velocity 90° 180° Dwell 180° 360° Fall 60 mm with simple harmonic motion. Draw the displacement diagram, using a distance of 15 mm to represent each 30° interval. Note: It is not necessary to draw the cam profile.",
     tariffModel: {"kind":"fixed","notation":"(29)"}, totalMarks: 29,
     rows: [
-    { id: "dcg-2025-ol-c4b-r1", kind: "anyN", verbatim: "360° division (widths on displacement diagram)", marks: 29, contextNote: "The scheme prices this drawing step by step: 5, 1, 7, 4, 4, 4, 4 — 29 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":7,"perOption":5,"options":["360° division (widths on displacement diagram)","Correct use of 60 mm height","Establish follower position at 0°, 90°, 180° and 360°","0° to 90°, Rise 60 mm with Uniform Velocity","90° to 180°, Dwell","180° to 360°, Fall 60 mm with SHM construction","Complete Displacement Diagram"],"perOptionSteps":[5,1,7,4,4,4,4]} },
+    { id: "dcg-2025-ol-c4b-r1", kind: "criterion", verbatim: "Displacement Diagram", marks: 29, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,29], parts: [{"id":"step-1","verbatim":"360° division (widths on displacement diagram)","marks":5,"permittedMarks":[0,5]},{"id":"step-2","verbatim":"Correct use of 60 mm height","marks":1,"permittedMarks":[0,1]},{"id":"step-3","verbatim":"Establish follower position at 0°, 90°, 180° and 360°","marks":7,"permittedMarks":[0,7]},{"id":"step-4","verbatim":"0° to 90°, Rise 60 mm with Uniform Velocity","marks":4,"permittedMarks":[0,4]},{"id":"step-5","verbatim":"90° to 180°, Dwell","marks":4,"permittedMarks":[0,4]},{"id":"step-6","verbatim":"180° to 360°, Fall 60 mm with SHM construction","marks":4,"permittedMarks":[0,4]},{"id":"step-7","verbatim":"Complete Displacement Diagram","marks":4,"permittedMarks":[0,4]}] },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q4-art.png",
-          "srcHash": "bedfd3468f9f8e789bca81fd14926784",
+          "srcHash": "bc65f3be8a125fe73245770ddcb6b5d7",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of a JCB excavator boring with an auger, beside Fig. C-4: above the XY line the elevation of the cylinder 120 high with A at the foot right and B at the top, and a partly drawn helix between them; below it the plan, a Ø90 circle divided by twelve blue radii with A and B coincident at the foot. Part (b) shows a photograph of a camshaft and prints the displacement data as text, with no drawing.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -4359,14 +5913,16 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2025 OL Section C Q5 — Assembly",
     stem: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated. Part Name Qty. Camera Stem Base SD Card",
     questionText: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
-    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
+    tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
-    { id: "dcg-2025-ol-c5-1-r1", kind: "anyN", verbatim: "Relative positioning of components", marks: 14, contextNote: "The scheme prices this drawing step by step: 10, 4 — 14 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":10,"options":["Relative positioning of components","Draw Section"],"perOptionSteps":[10,4]} },
+    { id: "dcg-2025-ol-c5-1-r1", kind: "point", verbatim: "Relative positioning of components", marks: 10 },
+    { id: "dcg-2025-ol-c5-1-r2", kind: "point", verbatim: "Draw Section", marks: 4 },
+    { id: "dcg-2025-ol-c5-1-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q5-art.png",
-          "srcHash": "ed593256cdd33f085ff0d3f64ab35611",
+          "srcHash": "7c1bb4317b69bc1b88b825845a2dc1d3",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a white wireless camera on its stand and a second photograph of the assembled camera on a shelf, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the camera, a 120 by 120 rounded square 65 deep with R15 and R25 corners and a Ø30 and Ø20 lens, carrying the section line A-A; the stem, Ø8 and R12 dimensioned 15 and 45 over a Ø24 and Ø16 plan; the base, a shallow R12 and R5 form dimensioned 100, 132, 16 and 12 with Ø40 seats; and the SD card, 30 by 22 and 5 thick -- with a parts-list table naming camera, stem, base and SD card with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -4383,12 +5939,13 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
-    { id: "dcg-2025-ol-c5-2-r1", kind: "anyN", verbatim: "Outline", marks: 10, contextNote: "The scheme prices this drawing step by step: 8, 2 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":8,"options":["Outline","Fillets"],"perOptionSteps":[8,2]} },
+    { id: "dcg-2025-ol-c5-2-r1", kind: "point", verbatim: "Outline", marks: 8 },
+    { id: "dcg-2025-ol-c5-2-r2", kind: "point", verbatim: "Fillets", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q5-art.png",
-          "srcHash": "ed593256cdd33f085ff0d3f64ab35611",
+          "srcHash": "7c1bb4317b69bc1b88b825845a2dc1d3",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a white wireless camera on its stand and a second photograph of the assembled camera on a shelf, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the camera, a 120 by 120 rounded square 65 deep with R15 and R25 corners and a Ø30 and Ø20 lens, carrying the section line A-A; the stem, Ø8 and R12 dimensioned 15 and 45 over a Ø24 and Ø16 plan; the base, a shallow R12 and R5 form dimensioned 100, 132, 16 and 12 with Ø40 seats; and the SD card, 30 by 22 and 5 thick -- with a parts-list table naming camera, stem, base and SD card with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -4405,12 +5962,14 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
-    { id: "dcg-2025-ol-c5-3-r1", kind: "anyN", verbatim: "Locate centre points for circle", marks: 12, contextNote: "The scheme prices this drawing step by step: 4, 4, 4 — 12 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Locate centre points for circle","Outline","Connector"]} },
+    { id: "dcg-2025-ol-c5-3-r1", kind: "point", verbatim: "Locate centre points for circle", marks: 4 },
+    { id: "dcg-2025-ol-c5-3-r2", kind: "point", verbatim: "Outline", marks: 4 },
+    { id: "dcg-2025-ol-c5-3-r3", kind: "point", verbatim: "Connector", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q5-art.png",
-          "srcHash": "ed593256cdd33f085ff0d3f64ab35611",
+          "srcHash": "7c1bb4317b69bc1b88b825845a2dc1d3",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a white wireless camera on its stand and a second photograph of the assembled camera on a shelf, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the camera, a 120 by 120 rounded square 65 deep with R15 and R25 corners and a Ø30 and Ø20 lens, carrying the section line A-A; the stem, Ø8 and R12 dimensioned 15 and 45 over a Ø24 and Ø16 plan; the base, a shallow R12 and R5 form dimensioned 100, 132, 16 and 12 with Ø40 seats; and the SD card, 30 by 22 and 5 thick -- with a parts-list table naming camera, stem, base and SD card with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -4427,12 +5986,13 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
-    { id: "dcg-2025-ol-c5-4-r1", kind: "anyN", verbatim: "Outline", marks: 10, contextNote: "The scheme prices this drawing step by step: 8, 2 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":8,"options":["Outline","Inner"],"perOptionSteps":[8,2]} },
+    { id: "dcg-2025-ol-c5-4-r1", kind: "point", verbatim: "Outline", marks: 8 },
+    { id: "dcg-2025-ol-c5-4-r2", kind: "point", verbatim: "Inner", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q5-art.png",
-          "srcHash": "ed593256cdd33f085ff0d3f64ab35611",
+          "srcHash": "7c1bb4317b69bc1b88b825845a2dc1d3",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a white wireless camera on its stand and a second photograph of the assembled camera on a shelf, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the camera, a 120 by 120 rounded square 65 deep with R15 and R25 corners and a Ø30 and Ø20 lens, carrying the section line A-A; the stem, Ø8 and R12 dimensioned 15 and 45 over a Ø24 and Ø16 plan; the base, a shallow R12 and R5 form dimensioned 100, 132, 16 and 12 with Ø40 seats; and the SD card, 30 by 22 and 5 thick -- with a parts-list table naming camera, stem, base and SD card with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -4449,12 +6009,12 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
-    { id: "dcg-2025-ol-c5-5-r1", kind: "anyN", verbatim: "Outline", marks: 4, contextNote: "The scheme prices this drawing step by step: 4 — 4 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":4,"options":["Outline"]} },
+    { id: "dcg-2025-ol-c5-5-r1", kind: "point", verbatim: "Outline", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q5-art.png",
-          "srcHash": "ed593256cdd33f085ff0d3f64ab35611",
+          "srcHash": "7c1bb4317b69bc1b88b825845a2dc1d3",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a white wireless camera on its stand and a second photograph of the assembled camera on a shelf, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the camera, a 120 by 120 rounded square 65 deep with R15 and R25 corners and a Ø30 and Ø20 lens, carrying the section line A-A; the stem, Ø8 and R12 dimensioned 15 and 45 over a Ø24 and Ø16 plan; the base, a shallow R12 and R5 form dimensioned 100, 132, 16 and 12 with Ø40 seats; and the SD card, 30 by 22 and 5 thick -- with a parts-list table naming camera, stem, base and SD card with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -4471,12 +6031,12 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(5)"}, totalMarks: 5,
     rows: [
-    { id: "dcg-2025-ol-c5-6-r1", kind: "anyN", verbatim: "Hatching and Centreline", marks: 5, contextNote: "The scheme prices this drawing step by step: 5 — 5 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Hatching and Centreline"]} },
+    { id: "dcg-2025-ol-c5-6-r1", kind: "point", verbatim: "Hatching and Centreline", marks: 5 },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q5-art.png",
-          "srcHash": "ed593256cdd33f085ff0d3f64ab35611",
+          "srcHash": "7c1bb4317b69bc1b88b825845a2dc1d3",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a white wireless camera on its stand and a second photograph of the assembled camera on a shelf, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the camera, a 120 by 120 rounded square 65 deep with R15 and R25 corners and a Ø30 and Ø20 lens, carrying the section line A-A; the stem, Ø8 and R12 dimensioned 15 and 45 over a Ø24 and Ø16 plan; the base, a shallow R12 and R5 form dimensioned 100, 132, 16 and 12 with Ø40 seats; and the SD card, 30 by 22 and 5 thick -- with a parts-list table naming camera, stem, base and SD card with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission"
@@ -4491,9 +6051,13 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2026 OL Section A Q1(a)",
     stem: "The image below shows a building from Montserrat in Spain. The building is in the shape of a parabola. The drawing on the right shows a portion of a similar parabola, which is inscribed in rectangle ABCD. V is the vertex of the parabola.",
     questionText: "Locate the remaining points on the right hand side of the parabola.",
-    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
-    { id: "dcg-2026-ol-a1a-r1", kind: "anyN", verbatim: "Complete division of line CD", marks: 11, contextNote: "The scheme prices this drawing step by step: 4, 3, 2, 2 — 11 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Complete division of line CD","Complete division of line CV","Construction lines (2 sets)","Identify remaining points on RHS"],"perOptionSteps":[4,3,2,2]} },
+    { id: "dcg-2026-ol-a1a-r1", kind: "point", verbatim: "Complete division of line CD", marks: 4 },
+    { id: "dcg-2026-ol-a1a-r2", kind: "point", verbatim: "Complete division of line CV", marks: 3 },
+    { id: "dcg-2026-ol-a1a-r3", kind: "point", verbatim: "Construction lines (2 sets)", marks: 2 },
+    { id: "dcg-2026-ol-a1a-r4", kind: "point", verbatim: "Identify remaining points on RHS", marks: 2 },
+    { id: "dcg-2026-ol-a1a-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secA-q1-art",
@@ -4515,7 +6079,7 @@ export const CARDS: SecCard[] = [
     questionText: "Locate the points on the left hand side of the parabola.",
     tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
     rows: [
-    { id: "dcg-2026-ol-a1b-r1", kind: "anyN", verbatim: "Locate points on LHS curve", marks: 3, contextNote: "The scheme prices this drawing step by step: 3 — 3 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Locate points on LHS curve"]} },
+    { id: "dcg-2026-ol-a1b-r1", kind: "point", verbatim: "Locate points on LHS curve", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secA-q1-art",
@@ -4537,7 +6101,8 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the parabola in the rectangle ABCD.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
-    { id: "dcg-2026-ol-a1c-r1", kind: "anyN", verbatim: "Complete curve on RHS", marks: 4, contextNote: "The scheme prices this drawing step by step: 2, 2 — 4 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Complete curve on RHS","Draw curve on LHS"]} },
+    { id: "dcg-2026-ol-a1c-r1", kind: "point", verbatim: "Complete curve on RHS", marks: 2 },
+    { id: "dcg-2026-ol-a1c-r2", kind: "point", verbatim: "Draw curve on LHS", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secA-q1-art",
@@ -4553,13 +6118,14 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC562GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2026-ol-a2a", topicId: "design-and-communication-graphics-0-4", conceptId: "dcg-0-4",
+    id: "dcg-2026-ol-a2a", topicId: "design-and-communication-graphics-0-0", conceptId: "dcg-0-0",
     section: "A", questionRef: "2026 OL Section A Q2(a)",
     stem: "The image below shows a disco lights projector. The elevation of the projector is symmetrical. Shown below on the right is a partially completed elevation of the projector.",
     questionText: "Draw a circle radius 18 mm at point P.",
-    tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"(5)"}, totalMarks: 5,
     rows: [
-    { id: "dcg-2026-ol-a2a-r1", kind: "anyN", verbatim: "Draw R18 circle", marks: 3, contextNote: "The scheme prices this drawing step by step: 3 — 3 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Draw R18 circle"]} },
+    { id: "dcg-2026-ol-a2a-r1", kind: "point", verbatim: "Draw R18 circle", marks: 3 },
+    { id: "dcg-2026-ol-a2a-r2", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secA-q2-art",
@@ -4581,7 +6147,10 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the left hand side of the projector.",
     tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
     rows: [
-    { id: "dcg-2026-ol-a2b-r1", kind: "anyN", verbatim: "Construct horizontal lines", marks: 15, contextNote: "The scheme prices this drawing step by step: 6, 3, 4, 2 — 15 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":6,"options":["Construct horizontal lines","Determine required widths","Complete the main body","Complete the holder"],"perOptionSteps":[6,3,4,2]} },
+    { id: "dcg-2026-ol-a2b-r1", kind: "point", verbatim: "Construct horizontal lines", marks: 6 },
+    { id: "dcg-2026-ol-a2b-r2", kind: "point", verbatim: "Determine required widths", marks: 3 },
+    { id: "dcg-2026-ol-a2b-r3", kind: "point", verbatim: "Complete the main body", marks: 4 },
+    { id: "dcg-2026-ol-a2b-r4", kind: "point", verbatim: "Complete the holder", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secA-q2-art",
@@ -4597,13 +6166,16 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC562GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2026-ol-a3a", topicId: "design-and-communication-graphics-0-6", conceptId: "dcg-0-6",
+    id: "dcg-2026-ol-a3a", topicId: "design-and-communication-graphics-0-0", conceptId: "dcg-0-0",
     section: "A", questionRef: "2026 OL Section A Q3(a)",
     stem: "The image below shows an award winning building in Clontarf, Dublin. The drawing on the right below shows an auxiliary elevation, partially completed plan, and partially completed elevation of a similar building.",
     questionText: "Complete the plan.",
-    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2026-ol-a3a-r1", kind: "anyN", verbatim: "Projection from auxiliary", marks: 6, contextNote: "The scheme prices this drawing step by step: 2, 2, 2 — 6 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Projection from auxiliary","Locate points in plan","Complete the plan"]} },
+    { id: "dcg-2026-ol-a3a-r1", kind: "point", verbatim: "Projection from auxiliary", marks: 2 },
+    { id: "dcg-2026-ol-a3a-r2", kind: "point", verbatim: "Locate points in plan", marks: 2 },
+    { id: "dcg-2026-ol-a3a-r3", kind: "point", verbatim: "Complete the plan", marks: 2 },
+    { id: "dcg-2026-ol-a3a-r4", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secA-q3-art",
@@ -4619,13 +6191,15 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC562GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2026-ol-a3b", topicId: "design-and-communication-graphics-0-6", conceptId: "dcg-0-6",
+    id: "dcg-2026-ol-a3b", topicId: "design-and-communication-graphics-0-0", conceptId: "dcg-0-0",
     section: "A", questionRef: "2026 OL Section A Q3(b)",
     stem: "The image below shows an award winning building in Clontarf, Dublin. The drawing on the right below shows an auxiliary elevation, partially completed plan, and partially completed elevation of a similar building.",
     questionText: "Complete the elevation including hidden detail.",
     tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
-    { id: "dcg-2026-ol-a3b-r1", kind: "anyN", verbatim: "Projection from plan", marks: 12, contextNote: "The scheme prices this drawing step by step: 3, 3, 6 — 12 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Projection from plan","Locate points in elevation","Complete the elevation"],"perOptionSteps":[3,3,6]} },
+    { id: "dcg-2026-ol-a3b-r1", kind: "point", verbatim: "Projection from plan", marks: 3 },
+    { id: "dcg-2026-ol-a3b-r2", kind: "point", verbatim: "Locate points in elevation", marks: 3 },
+    { id: "dcg-2026-ol-a3b-r3", kind: "point", verbatim: "Complete the elevation", marks: 6 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secA-q3-art",
@@ -4644,9 +6218,14 @@ export const CARDS: SecCard[] = [
     id: "dcg-2026-ol-a4", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
     section: "A", questionRef: "2026 OL Section A Q4",
     questionText: "The image below shows a sofa. The drawing on the right shows the plan and a partially completed perspective view of a similar sofa. Complete the perspective view.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
-    { id: "dcg-2026-ol-a4-r1", kind: "anyN", verbatim: "Radiate lines to correct vanishing points", marks: 18, contextNote: "The scheme prices this drawing step by step: 3, 5, 3, 4, 3 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":3,"options":["Radiate lines to correct vanishing points","Complete the base surface","Complete the seat surface","Complete the back surface","Complete the top surface"],"perOptionSteps":[3,5,3,4,3]} },
+    { id: "dcg-2026-ol-a4-r1", kind: "point", verbatim: "Radiate lines to correct vanishing points", marks: 3 },
+    { id: "dcg-2026-ol-a4-r2", kind: "point", verbatim: "Complete the base surface", marks: 5 },
+    { id: "dcg-2026-ol-a4-r3", kind: "point", verbatim: "Complete the seat surface", marks: 3 },
+    { id: "dcg-2026-ol-a4-r4", kind: "point", verbatim: "Complete the back surface", marks: 4 },
+    { id: "dcg-2026-ol-a4-r5", kind: "point", verbatim: "Complete the top surface", marks: 3 },
+    { id: "dcg-2026-ol-a4-r6", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secA-q4-art",
@@ -4662,18 +6241,20 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2026-ol-b1a", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2026-ol-b1a", topicId: "design-and-communication-graphics-0-0", conceptId: "dcg-0-0",
     section: "B", questionRef: "2026 OL Section B Q1(a)",
     stem: "The image on the right shows a card terminal machine. Fig. B-1 below shows an isometric view of a similar card machine. A 3D graphic is also given.",
     questionText: "Draw an elevation of the card machine looking in the direction of the arrow.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
     rows: [
-    { id: "dcg-2026-ol-b1a-r1", kind: "anyN", verbatim: "Draw outline", marks: 18, contextNote: "The scheme prices this drawing step by step: 14, 4 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":14,"options":["Draw outline","Draw inner details"],"perOptionSteps":[14,4]} },
+    { id: "dcg-2026-ol-b1a-r1", kind: "point", verbatim: "Draw outline", marks: 14 },
+    { id: "dcg-2026-ol-b1a-r2", kind: "point", verbatim: "Draw inner details", marks: 4 },
+    { id: "dcg-2026-ol-b1a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secB-q1-art.png",
-          "srcHash": "185218f148cb285c7865f3bd9abbb304",
+          "srcHash": "871d44502e1ca85bb0b23ef4d4499021",
           "alt": "Question B-1 as printed. A photograph of a black card terminal machine, and a grey 3D view of the same shape, beside Fig. B-1: an isometric view of the machine, 140 long, 60 wide and 45 high, with a raised keypad block dimensioned 20, 15, 50, 20, 20, 20 and 25 and a 45 degree chamfered front face lettered A in red, green centre lines, and a blue arrow showing the direction of view for the elevation.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -4684,18 +6265,19 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2026-ol-b1b", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2026-ol-b1b", topicId: "design-and-communication-graphics-0-0", conceptId: "dcg-0-0",
     section: "B", questionRef: "2026 OL Section B Q1(b)",
     stem: "The image on the right shows a card terminal machine. Fig. B-1 below shows an isometric view of a similar card machine. A 3D graphic is also given.",
     questionText: "Project a plan from the elevation.",
     tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
     rows: [
-    { id: "dcg-2026-ol-b1b-r1", kind: "anyN", verbatim: "Draw outline", marks: 18, contextNote: "The scheme prices this drawing step by step: 12, 6 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":12,"options":["Draw outline","Draw inner details"],"perOptionSteps":[12,6]} },
+    { id: "dcg-2026-ol-b1b-r1", kind: "point", verbatim: "Draw outline", marks: 12 },
+    { id: "dcg-2026-ol-b1b-r2", kind: "point", verbatim: "Draw inner details", marks: 6 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secB-q1-art.png",
-          "srcHash": "185218f148cb285c7865f3bd9abbb304",
+          "srcHash": "871d44502e1ca85bb0b23ef4d4499021",
           "alt": "Question B-1 as printed. A photograph of a black card terminal machine, and a grey 3D view of the same shape, beside Fig. B-1: an isometric view of the machine, 140 long, 60 wide and 45 high, with a raised keypad block dimensioned 20, 15, 50, 20, 20, 20 and 25 and a 45 degree chamfered front face lettered A in red, green centre lines, and a blue arrow showing the direction of view for the elevation.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -4706,18 +6288,22 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2026-ol-b1c", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
+    id: "dcg-2026-ol-b1c", topicId: "design-and-communication-graphics-0-0", conceptId: "dcg-0-0",
     section: "B", questionRef: "2026 OL Section B Q1(c)",
     stem: "The image on the right shows a card terminal machine. Fig. B-1 below shows an isometric view of a similar card machine. A 3D graphic is also given.",
     questionText: "Draw the auxiliary elevation of the card machine, projected from the plan, which will include the true shape of surface A.",
     tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
-    { id: "dcg-2026-ol-b1c-r1", kind: "anyN", verbatim: "X1Y1 line parallel to plan of surface A", marks: 19, contextNote: "The scheme prices this drawing step by step: 1, 1, 3, 4, 10 — 19 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":1,"options":["X1Y1 line parallel to plan of surface A","Projections from plan","Transfer of heights from elevation","Draw surface A","Complete auxiliary elevation"],"perOptionSteps":[1,1,3,4,10]} },
+    { id: "dcg-2026-ol-b1c-r1", kind: "point", verbatim: "X1Y1 line parallel to plan of surface A", marks: 1 },
+    { id: "dcg-2026-ol-b1c-r2", kind: "point", verbatim: "Projections from plan", marks: 1 },
+    { id: "dcg-2026-ol-b1c-r3", kind: "point", verbatim: "Transfer of heights from elevation", marks: 3 },
+    { id: "dcg-2026-ol-b1c-r4", kind: "point", verbatim: "Draw surface A", marks: 4 },
+    { id: "dcg-2026-ol-b1c-r5", kind: "point", verbatim: "Complete auxiliary elevation", marks: 10 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secB-q1-art.png",
-          "srcHash": "185218f148cb285c7865f3bd9abbb304",
+          "srcHash": "871d44502e1ca85bb0b23ef4d4499021",
           "alt": "Question B-1 as printed. A photograph of a black card terminal machine, and a grey 3D view of the same shape, beside Fig. B-1: an isometric view of the machine, 140 long, 60 wide and 45 high, with a raised keypad block dimensioned 20, 15, 50, 20, 20, 20 and 25 and a 45 degree chamfered front face lettered A in red, green centre lines, and a blue arrow showing the direction of view for the elevation.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -4732,14 +6318,16 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2026 OL Section B Q2(a)",
     stem: "The image on the right shows a greenhouse. Fig. B-2 below shows an incomplete isometric projection of a similar greenhouse. A 3D graphic is also given. The elevation and plan of the greenhouse are shown in their required positions.",
     questionText: "Draw the given equilateral triangle abc and the axonometric axes X, Y, and Z.",
-    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
     rows: [
-    { id: "dcg-2026-ol-b2a-r1", kind: "anyN", verbatim: "Draw equilateral triangle", marks: 6, contextNote: "The scheme prices this drawing step by step: 3, 3 — 6 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Draw equilateral triangle","Draw X, Y and Z axes"]} },
+    { id: "dcg-2026-ol-b2a-r1", kind: "point", verbatim: "Draw equilateral triangle", marks: 3 },
+    { id: "dcg-2026-ol-b2a-r2", kind: "point", verbatim: "Draw X, Y and Z axes", marks: 3 },
+    { id: "dcg-2026-ol-b2a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secB-q2-art.png",
-          "srcHash": "c19fd87324cffcfc38e0603deda83b45",
+          "srcHash": "eb4931a8a060a46e61dffd435ce2815b",
           "alt": "Question B-2 as printed. A photograph of a green polytunnel greenhouse with a person and plants inside, and a green 3D view of the same shape, beside Fig. B-2: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z in blue and the equilateral triangle abc in green, a 30 degree angle marked, the elevation positioned at the top right showing the 76 wide house with a semicircular top dimensioned 40, 20, 20 and 20 and the doorway inside it, and the plan below, a 76 by 95 rectangle set at 45 degrees inside a green semicircle, with a 100 dimension across.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -4756,12 +6344,15 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the elevation and plan positioned as shown.",
     tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
     rows: [
-    { id: "dcg-2026-ol-b2b-r1", kind: "anyN", verbatim: "Projections & Semicircle to set up elevation", marks: 14, contextNote: "The scheme prices this drawing step by step: 4, 4, 4, 2 — 14 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Projections & Semicircle to set up elevation","Draw elevation in the correct position","Projections & semi-circle (or 45° lines) to set up plan","Draw plan in the correct position"],"perOptionSteps":[4,4,4,2]} },
+    { id: "dcg-2026-ol-b2b-r1", kind: "point", verbatim: "Projections & Semicircle to set up elevation", marks: 4 },
+    { id: "dcg-2026-ol-b2b-r2", kind: "point", verbatim: "Draw elevation in the correct position", marks: 4 },
+    { id: "dcg-2026-ol-b2b-r3", kind: "point", verbatim: "Projections & semi-circle (or 45° lines) to set up plan", marks: 4 },
+    { id: "dcg-2026-ol-b2b-r4", kind: "point", verbatim: "Draw plan in the correct position", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secB-q2-art.png",
-          "srcHash": "c19fd87324cffcfc38e0603deda83b45",
+          "srcHash": "eb4931a8a060a46e61dffd435ce2815b",
           "alt": "Question B-2 as printed. A photograph of a green polytunnel greenhouse with a person and plants inside, and a green 3D view of the same shape, beside Fig. B-2: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z in blue and the equilateral triangle abc in green, a 30 degree angle marked, the elevation positioned at the top right showing the 76 wide house with a semicircular top dimensioned 40, 20, 20 and 20 and the doorway inside it, and the plan below, a 76 by 95 rectangle set at 45 degrees inside a green semicircle, with a 100 dimension across.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -4778,12 +6369,15 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the axonometric projection of the outline of the greenhouse to include the semi-circular top.",
     tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
     rows: [
-    { id: "dcg-2026-ol-b2c-r1", kind: "anyN", verbatim: "Projections from elevation and plan", marks: 16, contextNote: "The scheme prices this drawing step by step: 4, 4, 4, 4 — 16 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Projections from elevation and plan","Axonometric projection of RHS surface","Axonometric projection LHS surface","Axonometric projection of door"]} },
+    { id: "dcg-2026-ol-b2c-r1", kind: "point", verbatim: "Projections from elevation and plan", marks: 4 },
+    { id: "dcg-2026-ol-b2c-r2", kind: "point", verbatim: "Axonometric projection of RHS surface", marks: 4 },
+    { id: "dcg-2026-ol-b2c-r3", kind: "point", verbatim: "Axonometric projection LHS surface", marks: 4 },
+    { id: "dcg-2026-ol-b2c-r4", kind: "point", verbatim: "Axonometric projection of door", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secB-q2-art.png",
-          "srcHash": "c19fd87324cffcfc38e0603deda83b45",
+          "srcHash": "eb4931a8a060a46e61dffd435ce2815b",
           "alt": "Question B-2 as printed. A photograph of a green polytunnel greenhouse with a person and plants inside, and a green 3D view of the same shape, beside Fig. B-2: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z in blue and the equilateral triangle abc in green, a 30 degree angle marked, the elevation positioned at the top right showing the 76 wide house with a semicircular top dimensioned 40, 20, 20 and 20 and the doorway inside it, and the plan below, a 76 by 95 rectangle set at 45 degrees inside a green semicircle, with a 100 dimension across.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -4800,12 +6394,16 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the axonometric projection of the opening in the greenhouse.",
     tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
-    { id: "dcg-2026-ol-b2d-r1", kind: "anyN", verbatim: "Divisions on semi-circle in elevation", marks: 19, contextNote: "The scheme prices this drawing step by step: 3, 4, 4, 6, 2 — 19 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":3,"options":["Divisions on semi-circle in elevation","Corresponding divisions in plan","Projections from elevation and plan","Draw axonometric projection of the semi-circular curves","Complete the outline of the house"],"perOptionSteps":[3,4,4,6,2]} },
+    { id: "dcg-2026-ol-b2d-r1", kind: "point", verbatim: "Divisions on semi-circle in elevation", marks: 3 },
+    { id: "dcg-2026-ol-b2d-r2", kind: "point", verbatim: "Corresponding divisions in plan", marks: 4 },
+    { id: "dcg-2026-ol-b2d-r3", kind: "point", verbatim: "Projections from elevation and plan", marks: 4 },
+    { id: "dcg-2026-ol-b2d-r4", kind: "point", verbatim: "Draw axonometric projection of the semi-circular curves", marks: 6 },
+    { id: "dcg-2026-ol-b2d-r5", kind: "point", verbatim: "Complete the outline of the house", marks: 2 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secB-q2-art.png",
-          "srcHash": "c19fd87324cffcfc38e0603deda83b45",
+          "srcHash": "eb4931a8a060a46e61dffd435ce2815b",
           "alt": "Question B-2 as printed. A photograph of a green polytunnel greenhouse with a person and plants inside, and a green 3D view of the same shape, beside Fig. B-2: an incomplete isometric projection by the axonometric axes method, with the axes X, Y and Z in blue and the equilateral triangle abc in green, a 30 degree angle marked, the elevation positioned at the top right showing the 76 wide house with a semicircular top dimensioned 40, 20, 20 and 20 and the doorway inside it, and the plan below, a 76 by 95 rectangle set at 45 degrees inside a green semicircle, with a 100 dimension across.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -4816,13 +6414,16 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2026-ol-b3a", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    id: "dcg-2026-ol-b3a", topicId: "design-and-communication-graphics-0-8", conceptId: "dcg-0-8",
     section: "B", questionRef: "2026 OL Section B Q3(a)",
     stem: "The image on the right shows a skate park in Castlebar, Co. Mayo. The park consists of a number of skating ramps. Fig. B-3 below shows the elevation and incomplete plan of a similar skating ramp. A 3D graphic is also given.",
     questionText: "Draw the given elevation and incomplete plan of the ramp.",
-    tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
+    tariffModel: {"kind":"fixed","notation":"(28)"}, totalMarks: 28,
     rows: [
-    { id: "dcg-2026-ol-b3a-r1", kind: "anyN", verbatim: "Draw the outline plan as given", marks: 23, contextNote: "The scheme prices this drawing step by step: 10, 3, 10 — 23 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":10,"options":["Draw the outline plan as given","Projections from plan","Draw the elevation as given"],"perOptionSteps":[10,3,10]} },
+    { id: "dcg-2026-ol-b3a-r1", kind: "point", verbatim: "Draw the outline plan as given", marks: 10 },
+    { id: "dcg-2026-ol-b3a-r2", kind: "point", verbatim: "Projections from plan", marks: 3 },
+    { id: "dcg-2026-ol-b3a-r3", kind: "point", verbatim: "Draw the elevation as given", marks: 10 },
+    { id: "dcg-2026-ol-b3a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secB-q3-art",
@@ -4844,7 +6445,12 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the plan showing all lines of interpenetration.",
     tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
     rows: [
-    { id: "dcg-2026-ol-b3b-r1", kind: "anyN", verbatim: "Projection from LHS of elevation", marks: 18, contextNote: "The scheme prices this drawing step by step: 2, 4, 3, 3, 2, 4 — 18 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":6,"perOption":2,"options":["Projection from LHS of elevation","Locate points on LHS in plan","Complete LHS of plan","Projection from RHS of elevation","Locate points on RHS of plan","Complete RHS of plan"],"perOptionSteps":[2,4,3,3,2,4]} },
+    { id: "dcg-2026-ol-b3b-r1", kind: "point", verbatim: "Projection from LHS of elevation", marks: 2 },
+    { id: "dcg-2026-ol-b3b-r2", kind: "point", verbatim: "Locate points on LHS in plan", marks: 4 },
+    { id: "dcg-2026-ol-b3b-r3", kind: "point", verbatim: "Complete LHS of plan", marks: 3 },
+    { id: "dcg-2026-ol-b3b-r4", kind: "point", verbatim: "Projection from RHS of elevation", marks: 3 },
+    { id: "dcg-2026-ol-b3b-r5", kind: "point", verbatim: "Locate points on RHS of plan", marks: 2 },
+    { id: "dcg-2026-ol-b3b-r6", kind: "point", verbatim: "Complete RHS of plan", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secB-q3-art",
@@ -4860,13 +6466,15 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC562GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission.",
-    id: "dcg-2026-ol-b3c", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
+    id: "dcg-2026-ol-b3c", topicId: "design-and-communication-graphics-0-8", conceptId: "dcg-0-8",
     section: "B", questionRef: "2026 OL Section B Q3(c)",
     stem: "The image on the right shows a skate park in Castlebar, Co. Mayo. The park consists of a number of skating ramps. Fig. B-3 below shows the elevation and incomplete plan of a similar skating ramp. A 3D graphic is also given.",
     questionText: "Draw an end view of the ramp.",
     tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
     rows: [
-    { id: "dcg-2026-ol-b3c-r1", kind: "anyN", verbatim: "Transfer of widths from plan", marks: 14, contextNote: "The scheme prices this drawing step by step: 3, 3, 8 — 14 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Transfer of widths from plan","Projection of heights from elevation","Complete the end view"],"perOptionSteps":[3,3,8]} },
+    { id: "dcg-2026-ol-b3c-r1", kind: "point", verbatim: "Transfer of widths from plan", marks: 3 },
+    { id: "dcg-2026-ol-b3c-r2", kind: "point", verbatim: "Projection of heights from elevation", marks: 3 },
+    { id: "dcg-2026-ol-b3c-r3", kind: "point", verbatim: "Complete the end view", marks: 8 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secB-q3-art",
@@ -4886,14 +6494,31 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2026 OL Section C Q1(a)",
     stem: "The image on the right shows a mining process. The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
     questionText: "On the map supplied, draw a vertical section (profile) on the line AB.",
-    tariffModel: {"kind":"fixed","notation":"(37)"}, totalMarks: 37,
+    tariffModel: {"kind":"fixed","notation":"(42)"}, totalMarks: 42,
     rows: [
-    { id: "dcg-2026-ol-c1a-r1", kind: "anyN", verbatim: "Measure heights and draw horizontal lines", marks: 37, contextNote: "The scheme prices this drawing step by step: 13, 11, 13 — 37 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":13,"options":["Measure heights and draw horizontal lines","Projections from intersections between line AB and contours","Draw the profile"],"perOptionSteps":[13,11,13]} },
+    { id: "dcg-2026-ol-c1a-r1", kind: "point", verbatim: "Measure heights and draw horizontal lines", marks: 13 },
+    { id: "dcg-2026-ol-c1a-r2", kind: "point", verbatim: "Projections from intersections between line AB and contours", marks: 11 },
+    { id: "dcg-2026-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 13 },
+    { id: "dcg-2026-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q1-art.png",
-          "srcHash": "62c56fb009c62e0c98d51b7b3e3a75be",
+          "srcHash": "0d22860e6f52b6f2b1e779f2ca7afd4f",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of an excavator loading a haul truck at a mine; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -4910,12 +6535,27 @@ export const CARDS: SecCard[] = [
     questionText: "Points C, D, and E are outcrop points on the surface of a stratum of ore. Draw the plan and elevation of the triangle CDE.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2026-ol-c1b-r1", kind: "anyN", verbatim: "Plan of CDE", marks: 8, contextNote: "The scheme prices this drawing step by step: 3, 5 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Plan of CDE","Elevation of CDE"],"perOptionSteps":[3,5]} },
+    { id: "dcg-2026-ol-c1b-r1", kind: "point", verbatim: "Plan of CDE", marks: 3 },
+    { id: "dcg-2026-ol-c1b-r2", kind: "point", verbatim: "Elevation of CDE", marks: 5 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q1-art.png",
-          "srcHash": "62c56fb009c62e0c98d51b7b3e3a75be",
+          "srcHash": "0d22860e6f52b6f2b1e779f2ca7afd4f",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of an excavator loading a haul truck at a mine; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -4932,12 +6572,29 @@ export const CARDS: SecCard[] = [
     questionText: "Determine the strike and dip of the stratum.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
-    { id: "dcg-2026-ol-c1c-r1", kind: "anyN", verbatim: "Horizontal line in elevation", marks: 10, contextNote: "The scheme prices this drawing step by step: 1, 3, 4, 2 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Horizontal line in elevation","Strike in plan","Viewing direction for dip","Determine dip (2 heights, edge view)"],"perOptionSteps":[1,3,4,2]} },
+    { id: "dcg-2026-ol-c1c-r1", kind: "point", verbatim: "Horizontal line in elevation", marks: 1 },
+    { id: "dcg-2026-ol-c1c-r2", kind: "point", verbatim: "Strike in plan", marks: 3 },
+    { id: "dcg-2026-ol-c1c-r3", kind: "point", verbatim: "Viewing direction for dip", marks: 4 },
+    { id: "dcg-2026-ol-c1c-r4", kind: "point", verbatim: "Determine dip (2 heights, edge view)", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q1-art.png",
-          "srcHash": "62c56fb009c62e0c98d51b7b3e3a75be",
+          "srcHash": "0d22860e6f52b6f2b1e779f2ca7afd4f",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of an excavator loading a haul truck at a mine; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -4952,14 +6609,19 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2026 OL Section C Q2(a)",
     stem: "The image on the right shows a kitchen table. The table is based on a hyperboloid of revolution which is formed by straight line elements. Fig. C-2 below shows the plan and elevation of a similar table. The hyperboloid of revolution is constructed using 12 equally spaced elements.",
     questionText: "Draw the given plan. Locate 12 equally spaced points on the circumference of the inner circle and draw the 12 elements tangential to the circle at these points as shown.",
-    tariffModel: {"kind":"fixed","notation":"(27)"}, totalMarks: 27,
+    tariffModel: {"kind":"fixed","notation":"(32)"}, totalMarks: 32,
     rows: [
-    { id: "dcg-2026-ol-c2a-r1", kind: "anyN", verbatim: "Draw the table top", marks: 27, contextNote: "The scheme prices this drawing step by step: 4, 6, 6, 5, 6 — 27 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":4,"options":["Draw the table top","Draw outer circle","Draw inner circle","Division of inner circle","Twelve elements"],"perOptionSteps":[4,6,6,5,6]} },
+    { id: "dcg-2026-ol-c2a-r1", kind: "point", verbatim: "Draw the table top", marks: 4 },
+    { id: "dcg-2026-ol-c2a-r2", kind: "point", verbatim: "Draw outer circle", marks: 6 },
+    { id: "dcg-2026-ol-c2a-r3", kind: "point", verbatim: "Draw inner circle", marks: 6 },
+    { id: "dcg-2026-ol-c2a-r4", kind: "point", verbatim: "Division of inner circle", marks: 5 },
+    { id: "dcg-2026-ol-c2a-r5", kind: "point", verbatim: "Twelve elements", marks: 6 },
+    { id: "dcg-2026-ol-c2a-r6", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q2-art.png",
-          "srcHash": "2ae92f2cb185b29f32110758b01b089e",
+          "srcHash": "79a1e1168a1eee9e2f5b8763affbc204",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a round kitchen table on a splayed timber pedestal, beside Fig. C-2: above the XY line the elevation of the hyperboloid of revolution pedestal, its waisted outline drawn over twelve crossing blue straight-line elements under the table top, dimensioned 62, 130 and 62; below it the plan, an outer circle of Ø120 with Ø90 and Ø50 circles inside it, twelve points spaced at 30 degrees round the inner circle and the blue elements drawn tangential to it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -4976,12 +6638,16 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the elevation showing the elements projected from the plan.",
     tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
-    { id: "dcg-2026-ol-c2b-r1", kind: "anyN", verbatim: "Draw the inner and outer circles", marks: 20, contextNote: "The scheme prices this drawing step by step: 6, 3, 4, 4, 3 — 20 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":6,"options":["Draw the inner and outer circles","Draw top of table","Projection of elements from plan","Locate extremities of elements","Draw elements"],"perOptionSteps":[6,3,4,4,3]} },
+    { id: "dcg-2026-ol-c2b-r1", kind: "point", verbatim: "Draw the inner and outer circles", marks: 6 },
+    { id: "dcg-2026-ol-c2b-r2", kind: "point", verbatim: "Draw top of table", marks: 3 },
+    { id: "dcg-2026-ol-c2b-r3", kind: "point", verbatim: "Projection of elements from plan", marks: 4 },
+    { id: "dcg-2026-ol-c2b-r4", kind: "point", verbatim: "Locate extremities of elements", marks: 4 },
+    { id: "dcg-2026-ol-c2b-r5", kind: "point", verbatim: "Draw elements", marks: 3 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q2-art.png",
-          "srcHash": "2ae92f2cb185b29f32110758b01b089e",
+          "srcHash": "79a1e1168a1eee9e2f5b8763affbc204",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a round kitchen table on a splayed timber pedestal, beside Fig. C-2: above the XY line the elevation of the hyperboloid of revolution pedestal, its waisted outline drawn over twelve crossing blue straight-line elements under the table top, dimensioned 62, 130 and 62; below it the plan, an outer circle of Ø120 with Ø90 and Ø50 circles inside it, twelve points spaced at 30 degrees round the inner circle and the blue elements drawn tangential to it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -4998,12 +6664,12 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the elevation by drawing the freehand curves tangential to the elements as shown.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2026-ol-c2c-r1", kind: "anyN", verbatim: "Draw freehand curves", marks: 8, contextNote: "The scheme prices this drawing step by step: 8 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":8,"options":["Draw freehand curves"]} },
+    { id: "dcg-2026-ol-c2c-r1", kind: "point", verbatim: "Draw freehand curves", marks: 8 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q2-art.png",
-          "srcHash": "2ae92f2cb185b29f32110758b01b089e",
+          "srcHash": "79a1e1168a1eee9e2f5b8763affbc204",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a round kitchen table on a splayed timber pedestal, beside Fig. C-2: above the XY line the elevation of the hyperboloid of revolution pedestal, its waisted outline drawn over twelve crossing blue straight-line elements under the table top, dimensioned 62, 130 and 62; below it the plan, an outer circle of Ø120 with Ø90 and Ø50 circles inside it, twelve points spaced at 30 degrees round the inner circle and the blue elements drawn tangential to it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -5018,14 +6684,18 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2026 OL Section C Q3(a)",
     stem: "The image on the right shows a pencil case. The projections of a similar pencil case are shown in Fig. C-3 below. A 3D graphic is also given.",
     questionText: "Draw the given elevation and end view of the pencil case.",
-    tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
+    tariffModel: {"kind":"fixed","notation":"(31)"}, totalMarks: 31,
     rows: [
-    { id: "dcg-2026-ol-c3a-r1", kind: "anyN", verbatim: "Draw the elevation", marks: 26, contextNote: "The scheme prices this drawing step by step: 8, 6, 5, 7 — 26 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":8,"options":["Draw the elevation","Draw the edges of the end view","Establish centre and draw arc","Complete the end view"],"perOptionSteps":[8,6,5,7]} },
+    { id: "dcg-2026-ol-c3a-r1", kind: "point", verbatim: "Draw the elevation", marks: 8 },
+    { id: "dcg-2026-ol-c3a-r2", kind: "point", verbatim: "Draw the edges of the end view", marks: 6 },
+    { id: "dcg-2026-ol-c3a-r3", kind: "point", verbatim: "Establish centre and draw arc", marks: 5 },
+    { id: "dcg-2026-ol-c3a-r4", kind: "point", verbatim: "Complete the end view", marks: 7 },
+    { id: "dcg-2026-ol-c3a-r5", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q3-art.png",
-          "srcHash": "872d8ca42aacb80632eed6ebfd3b4a18",
+          "srcHash": "95a44c7f39c1ef5bd14b884d9c4d22f1",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a blue pencil case full of pencils, and a blue 3D view of the same shape, beside Fig. C-3: above the XY line the elevation at the left, a plain rectangle 100 long divided by a line near its foot, and the end view at the right, 60 wide and 45 high with an R18 domed top over splayed sides and a 12 base.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -5042,12 +6712,13 @@ export const CARDS: SecCard[] = [
     questionText: "Project a plan.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2026-ol-c3b-r1", kind: "anyN", verbatim: "Projections from elevation and end view", marks: 8, contextNote: "The scheme prices this drawing step by step: 4, 4 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Projections from elevation and end view","Draw the plan"]} },
+    { id: "dcg-2026-ol-c3b-r1", kind: "point", verbatim: "Projections from elevation and end view", marks: 4 },
+    { id: "dcg-2026-ol-c3b-r2", kind: "point", verbatim: "Draw the plan", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q3-art.png",
-          "srcHash": "872d8ca42aacb80632eed6ebfd3b4a18",
+          "srcHash": "95a44c7f39c1ef5bd14b884d9c4d22f1",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a blue pencil case full of pencils, and a blue 3D view of the same shape, beside Fig. C-3: above the XY line the elevation at the left, a plain rectangle 100 long divided by a line near its foot, and the end view at the right, 60 wide and 45 high with an R18 domed top over splayed sides and a 12 base.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -5064,12 +6735,16 @@ export const CARDS: SecCard[] = [
     questionText: "Draw a one-piece surface development of the pencil case.",
     tariffModel: {"kind":"fixed","notation":"(21)"}, totalMarks: 21,
     rows: [
-    { id: "dcg-2026-ol-c3c-r1", kind: "anyN", verbatim: "Appropriate layout of surface development", marks: 21, contextNote: "The scheme prices this drawing step by step: 1, 3, 4, 6, 7 — 21 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":1,"options":["Appropriate layout of surface development","Development of bottom surface","Development of front and back surfaces","Development of the left and right surfaces","Development of the curved surface"],"perOptionSteps":[1,3,4,6,7]} },
+    { id: "dcg-2026-ol-c3c-r1", kind: "point", verbatim: "Appropriate layout of surface development", marks: 1 },
+    { id: "dcg-2026-ol-c3c-r2", kind: "point", verbatim: "Development of bottom surface", marks: 3 },
+    { id: "dcg-2026-ol-c3c-r3", kind: "point", verbatim: "Development of front and back surfaces", marks: 4 },
+    { id: "dcg-2026-ol-c3c-r4", kind: "point", verbatim: "Development of the left and right surfaces", marks: 6 },
+    { id: "dcg-2026-ol-c3c-r5", kind: "point", verbatim: "Development of the curved surface", marks: 7 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q3-art.png",
-          "srcHash": "872d8ca42aacb80632eed6ebfd3b4a18",
+          "srcHash": "95a44c7f39c1ef5bd14b884d9c4d22f1",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a blue pencil case full of pencils, and a blue 3D view of the same shape, beside Fig. C-3: above the XY line the elevation at the left, a plain rectangle 100 long divided by a line near its foot, and the end view at the right, 60 wide and 45 high with an R18 domed top over splayed sides and a 12 base.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -5082,15 +6757,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2026-ol-c4a", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
     section: "C", questionRef: "2026 OL Section C Q4(a)",
+    stem: "The image on the right shows a child’s push along toy. Fig. C-4 below shows a circle C which represents one wheel of the toy as it rolls along the ground AB.",
     questionText: "(i) Draw the given diagram. (ii) The circle C rolls clockwise along the line AB until the point P reaches the line AB. Draw the locus of point P for this movement.",
-    tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
+    tariffModel: {"kind":"fixed","notation":"(31)"}, totalMarks: 31,
     rows: [
-    { id: "dcg-2026-ol-c4a-r1", kind: "anyN", verbatim: "Set up given diagram (A, B, C & P)", marks: 26, contextNote: "The scheme prices this drawing step by step: 10, 4, 4, 4, 4 — 26 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":5,"perOption":10,"options":["Set up given diagram (A, B, C & P)","Division of circle","Correct widths on line AB","Points on locus","Draw locus"],"perOptionSteps":[10,4,4,4,4]} },
+    { id: "dcg-2026-ol-c4a-r1", kind: "point", verbatim: "Set up given diagram (A, B, C & P)", marks: 10 },
+    { id: "dcg-2026-ol-c4a-r2", kind: "point", verbatim: "Division of circle", marks: 4 },
+    { id: "dcg-2026-ol-c4a-r3", kind: "point", verbatim: "Correct widths on line AB", marks: 4 },
+    { id: "dcg-2026-ol-c4a-r4", kind: "point", verbatim: "Points on locus", marks: 4 },
+    { id: "dcg-2026-ol-c4a-r5", kind: "point", verbatim: "Draw locus", marks: 4 },
+    { id: "dcg-2026-ol-c4a-r6", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q4-art.png",
-          "srcHash": "5ea1a1f9003bb41899f9aae99fe035a2",
+          "srcHash": "69db26b0239c2d1be7a5f24c76f530e3",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of a green push-along dog toy, beside Fig. C-4: the circle C of Ø70 standing on the ground line AB, divided by twelve magenta radii, with the point P marked at the top of the circle, a blue arrow showing clockwise rotation, and magenta ordinates stepped out along AB to the right. Part (b) shows a rendered green plate cam and prints the displacement data as text, with no drawing.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -5106,12 +6787,12 @@ export const CARDS: SecCard[] = [
     questionText: "The head of the toy moves from side to side as the toy is pushed along. This movement is created by a cam and follower. The cam imparts the following motion to the follower: 90° Rise 50 mm with uniform velocity 90° 120° Dwell 120° 180° Rise 20 mm with uniform velocity 180° 360° Fall 70 mm with uniform acceleration and retardation. Draw the displacement diagram, using a distance of 15 mm to represent each 30° interval. Note: It is not necessary to draw the cam profile.",
     tariffModel: {"kind":"fixed","notation":"(29)"}, totalMarks: 29,
     rows: [
-    { id: "dcg-2026-ol-c4b-r1", kind: "anyN", verbatim: "360° division (widths on displacement diagram)", marks: 29, contextNote: "The scheme prices this drawing step by step: 5, 1, 5, 3, 3, 3, 5, 4 — 29 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":8,"perOption":5,"options":["360° division (widths on displacement diagram)","Correct use of 70mm height","Establish follower position at 0°, 90°, 120°, 180°, and 360°","0° to 90°, Rise 50 mm with Uniform Velocity","90° to 120°, Dwell","120° to 180°, Rise 20 mm with Uniform Velocity","180° to 360°, Fall 70 mm with UAR construction","Complete Displacement Diagram"],"perOptionSteps":[5,1,5,3,3,3,5,4]} },
+    { id: "dcg-2026-ol-c4b-r1", kind: "criterion", verbatim: "Displacement Diagram", marks: 29, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,29], parts: [{"id":"step-1","verbatim":"360° division (widths on displacement diagram)","marks":5,"permittedMarks":[0,5]},{"id":"step-2","verbatim":"Correct use of 70mm height","marks":1,"permittedMarks":[0,1]},{"id":"step-3","verbatim":"Establish follower position at 0°, 90°, 120°, 180°, and 360°","marks":5,"permittedMarks":[0,5]},{"id":"step-4","verbatim":"0° to 90°, Rise 50 mm with Uniform Velocity","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"90° to 120°, Dwell","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"120° to 180°, Rise 20 mm with Uniform Velocity","marks":3,"permittedMarks":[0,3]},{"id":"step-7","verbatim":"180° to 360°, Fall 70 mm with UAR construction","marks":5,"permittedMarks":[0,5]},{"id":"step-8","verbatim":"Complete Displacement Diagram","marks":4,"permittedMarks":[0,4]}] },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q4-art.png",
-          "srcHash": "5ea1a1f9003bb41899f9aae99fe035a2",
+          "srcHash": "69db26b0239c2d1be7a5f24c76f530e3",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of a green push-along dog toy, beside Fig. C-4: the circle C of Ø70 standing on the ground line AB, divided by twelve magenta radii, with the point P marked at the top of the circle, a blue arrow showing clockwise rotation, and magenta ordinates stepped out along AB to the right. Part (b) shows a rendered green plate cam and prints the displacement data as text, with no drawing.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -5126,14 +6807,16 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2026 OL Section C Q5 — Assembly",
     stem: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated. Part Name Qty. Body Lid Handle Divider",
     questionText: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
-    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
+    tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
-    { id: "dcg-2026-ol-c5-1-r1", kind: "anyN", verbatim: "Relative positioning of components", marks: 14, contextNote: "The scheme prices this drawing step by step: 10, 4 — 14 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":10,"options":["Relative positioning of components","Draw Section"],"perOptionSteps":[10,4]} },
+    { id: "dcg-2026-ol-c5-1-r1", kind: "point", verbatim: "Relative positioning of components", marks: 10 },
+    { id: "dcg-2026-ol-c5-1-r2", kind: "point", verbatim: "Draw Section", marks: 4 },
+    { id: "dcg-2026-ol-c5-1-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q5-art.png",
-          "srcHash": "61bdf30159e9b1e56634295325f372b0",
+          "srcHash": "d790a6e48e6232f1f296d9decb56e31f",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a red Igloo cool box and a 3D view of its parts, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the body, 140 by 84 in elevation over a 150 by 100 rounded plan with R20 and R15 corners and the section line A-A across it; the lid, 15 and 12 thick over a 150 by 100 rounded plan with R20 corners; the handle, an inverted U 186 long and 60 high with R20 and R10 bends and a 70 side view; and the divider, 84 by 55 and 5 thick -- with a parts-list table naming body, lid, handle and divider with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -5150,12 +6833,12 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2026-ol-c5-2-r1", kind: "anyN", verbatim: "Outline", marks: 8, contextNote: "The scheme prices this drawing step by step: 8 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":8,"options":["Outline"]} },
+    { id: "dcg-2026-ol-c5-2-r1", kind: "point", verbatim: "Outline", marks: 8 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q5-art.png",
-          "srcHash": "61bdf30159e9b1e56634295325f372b0",
+          "srcHash": "d790a6e48e6232f1f296d9decb56e31f",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a red Igloo cool box and a 3D view of its parts, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the body, 140 by 84 in elevation over a 150 by 100 rounded plan with R20 and R15 corners and the section line A-A across it; the lid, 15 and 12 thick over a 150 by 100 rounded plan with R20 corners; the handle, an inverted U 186 long and 60 high with R20 and R10 bends and a 70 side view; and the divider, 84 by 55 and 5 thick -- with a parts-list table naming body, lid, handle and divider with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -5172,12 +6855,13 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2026-ol-c5-3-r1", kind: "anyN", verbatim: "Outline", marks: 8, contextNote: "The scheme prices this drawing step by step: 4, 4 — 8 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Outline","Fillets"]} },
+    { id: "dcg-2026-ol-c5-3-r1", kind: "point", verbatim: "Outline", marks: 4 },
+    { id: "dcg-2026-ol-c5-3-r2", kind: "point", verbatim: "Fillets", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q5-art.png",
-          "srcHash": "61bdf30159e9b1e56634295325f372b0",
+          "srcHash": "d790a6e48e6232f1f296d9decb56e31f",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a red Igloo cool box and a 3D view of its parts, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the body, 140 by 84 in elevation over a 150 by 100 rounded plan with R20 and R15 corners and the section line A-A across it; the lid, 15 and 12 thick over a 150 by 100 rounded plan with R20 corners; the handle, an inverted U 186 long and 60 high with R20 and R10 bends and a 70 side view; and the divider, 84 by 55 and 5 thick -- with a parts-list table naming body, lid, handle and divider with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -5194,12 +6878,13 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
-    { id: "dcg-2026-ol-c5-4-r1", kind: "anyN", verbatim: "Locate centre points for arcs", marks: 12, contextNote: "The scheme prices this drawing step by step: 4, 8 — 12 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Locate centre points for arcs","Outline"],"perOptionSteps":[4,8]} },
+    { id: "dcg-2026-ol-c5-4-r1", kind: "point", verbatim: "Locate centre points for arcs", marks: 4 },
+    { id: "dcg-2026-ol-c5-4-r2", kind: "point", verbatim: "Outline", marks: 8 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q5-art.png",
-          "srcHash": "61bdf30159e9b1e56634295325f372b0",
+          "srcHash": "d790a6e48e6232f1f296d9decb56e31f",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a red Igloo cool box and a 3D view of its parts, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the body, 140 by 84 in elevation over a 150 by 100 rounded plan with R20 and R15 corners and the section line A-A across it; the lid, 15 and 12 thick over a 150 by 100 rounded plan with R20 corners; the handle, an inverted U 186 long and 60 high with R20 and R10 bends and a 70 side view; and the divider, 84 by 55 and 5 thick -- with a parts-list table naming body, lid, handle and divider with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -5216,12 +6901,12 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
-    { id: "dcg-2026-ol-c5-5-r1", kind: "anyN", verbatim: "Inner", marks: 7, contextNote: "The scheme prices this drawing step by step: 7 — 7 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":7,"options":["Inner"]} },
+    { id: "dcg-2026-ol-c5-5-r1", kind: "point", verbatim: "Inner", marks: 7 },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q5-art.png",
-          "srcHash": "61bdf30159e9b1e56634295325f372b0",
+          "srcHash": "d790a6e48e6232f1f296d9decb56e31f",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a red Igloo cool box and a 3D view of its parts, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the body, 140 by 84 in elevation over a 150 by 100 rounded plan with R20 and R15 corners and the section line A-A across it; the lid, 15 and 12 thick over a 150 by 100 rounded plan with R20 corners; the handle, an inverted U 186 long and 60 high with R20 and R10 bends and a 70 side view; and the divider, 84 by 55 and 5 thick -- with a parts-list table naming body, lid, handle and divider with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"
@@ -5238,12 +6923,12 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
-    { id: "dcg-2026-ol-c5-6-r1", kind: "anyN", verbatim: "Hatching and Centrelines … (5,1)", marks: 6, contextNote: "The scheme prices this drawing step by step: 6 — 6 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":1,"perOption":6,"options":["Hatching and Centrelines … (5,1)"]} },
+    { id: "dcg-2026-ol-c5-6-r1", kind: "criterion", verbatim: "Hatching and Centrelines … (5,1)", marks: 6, permittedMarks: [0,1,5,6] },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q5-art.png",
-          "srcHash": "61bdf30159e9b1e56634295325f372b0",
+          "srcHash": "d790a6e48e6232f1f296d9decb56e31f",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a red Igloo cool box and a 3D view of its parts, beside Fig. C-5: dimensioned orthographic details of the four numbered parts -- the body, 140 by 84 in elevation over a 150 by 100 rounded plan with R20 and R15 corners and the section line A-A across it; the lid, 15 and 12 thick over a 150 by 100 rounded plan with R20 corners; the handle, an inverted U 186 long and 60 high with R20 and R10 bends and a 70 side view; and the divider, 84 by 55 and 5 thick -- with a parts-list table naming body, lid, handle and divider with a quantity of one each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission"

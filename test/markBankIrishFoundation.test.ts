@@ -13,7 +13,8 @@ const CARDS = ALL_CARDS.filter(c => c.year === 2025);
 
 describe('reviewed 2025 Irish Foundation tasks', () => {
   it('loads and remembers Foundation without changing other subjects’ available levels', async () => {
-    expect(await loadCards('irish', 'foundation')).toHaveLength(984);
+    // 984 + the 22 parts of the 2010 listening paper (carded without audio, 2026-11-11).
+    expect(await loadCards('irish', 'foundation')).toHaveLength(1006);
     expect(builtDecks()).toContainEqual({ subjectId: 'irish', level: 'foundation', label: 'Irish Foundation' });
     // The level picker offers the levels with a built deck (deck.ts levelsFor).
     expect(levelsFor('irish')).toEqual(['higher', 'ordinary', 'foundation']);

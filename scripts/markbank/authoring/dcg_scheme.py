@@ -103,6 +103,25 @@ LEADER = re.compile(r'[\s.…·]{2,}$')
 # A marker at the head of a logical entry, whether or not its mark has arrived.
 OPENS = re.compile(r'^\((?:[A-Ha-h]|' + '|'.join(ROMANS) + r')\)')
 
+# The degree sign as the 2018 schemes print it: a raised small letter o after
+# the digits, which the markdown flattens to "0o to 120o, Uniform Velocity".
+# append-scheme-degrees.py writes every line the PDF shows a raised o in, with
+# a degree sign, into a block at the foot of the markdown. A line here takes
+# the degree sign only where that block holds it -- compared without the
+# leading marker, which the Ordinary scheme sets as a line of its own -- so
+# nothing becomes a degree sign on the strength of a pattern alone.
+DEGREE_BLOCK = re.compile(r'<!-- markbank:degree-signs -->\n(.*?)'
+                          r'<!-- /markbank:degree-signs -->\n?', re.S)
+DEGREE_O = re.compile(r'(\d)o(?=[\s,.;:)]|$)')
+MARKER = re.compile(r'^\((?:[A-Ha-h]|' + '|'.join(ROMANS) + r')\)\s*')
+
+
+def _degrees(line, confirmed):
+    candidate = DEGREE_O.sub(r'\1°', line)
+    if candidate != line and MARKER.sub('', candidate) in confirmed:
+        return candidate
+    return line
+
 # Where the SEC's own arithmetic contradicts itself, keyed (year, level,
 # section, question, letter) and never inferred. Each entry records the mark
 # the scheme PRINTS, the mark its own steps and its own "Total =" line
@@ -354,7 +373,14 @@ class DcgScheme:
         stopped = False
         with open(self.path, encoding='utf-8') as fh:
             raw = fh.read()
+        block = DEGREE_BLOCK.search(raw)
+        confirmed = {MARKER.sub('', ' '.join(l.split()))
+                     for l in (block.group(1).split('\n') if block else [])
+                     if l.strip()}
+        raw = DEGREE_BLOCK.sub('', raw)
         lines = [' '.join(l.split()) for l in raw.split('\n')]
+        if confirmed:
+            lines = [_degrees(l, confirmed) for l in lines]
         for line in _entries([l for l in lines if l]):
             if line.startswith('## Page'):
                 page = int(line.split()[-1])

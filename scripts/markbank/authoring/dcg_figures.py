@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Cut the printed drawing each DCG question is answered from.
 
-    python3 scripts/markbank/authoring/dcg_figures.py --cut
+    python3 scripts/markbank/authoring/dcg_figures.py --cut --sitting 2018 hl
     python3 scripts/markbank/authoring/dcg_figures.py --sheets   # to look at
     python3 scripts/markbank/authoring/dcg_figures.py --catalogue alt.json
 
@@ -83,12 +83,29 @@ RUNNING_FOOT = re.compile(
     r'^(?:Leaving Certificate\b|Page\s+\d+\s+of\s+\d+'
     r'|Design\s*&\s*Comm)', re.I)
 FOOT_BAND = 0.90
+# A body line of the Sections B and C pages, top to foot, in points.
+LINE = 13
 
 
-def foliation(row, height):
-    """Is this row the page number, rather than a number on a drawing?"""
+def foliation(row, height, page_rows=None, width=None):
+    """Is this row the page number, rather than a number on a drawing?
+
+    Given the page's rows and width, it must also sit on the running foot's
+    own line and in the middle of the page. The bottom tenth alone is not
+    enough: 2018 Ordinary C-5 sets its parts list down to y=771, and the
+    part number "4" and the quantity "2" on its last row both passed, which
+    put the crop's foot above the table's last row and, once furniture is
+    painted out, would have erased two numbers from the table.
+    """
     text = row[3].strip()
-    return text.isdigit() and len(text) <= 3 and row[0] > height * FOOT_BAND
+    if not (text.isdigit() and len(text) <= 3 and row[0] > height * FOOT_BAND):
+        return False
+    if page_rows is None:
+        return True
+    centred = abs((row[1] + row[2]) / 2 - width / 2) < 40
+    on_foot = any(RUNNING_FOOT.match(r[3]) and abs(r[0] - row[0]) < 6
+                  for r in page_rows)
+    return centred and on_foot
 
 # The banner the SEC rules across the foot of the A3 sheet. It is not part of
 # any question, and a quadrant cut to a fixed margin caught the top of its
@@ -161,7 +178,8 @@ def page_box(page, page_rows, head):
         if row[3].strip().lower() in DP.OPTIONS and row[0] < top:
             top = row[0]
     def is_foot(row):
-        return RUNNING_FOOT.match(row[3]) or foliation(row, H)
+        return RUNNING_FOOT.match(row[3]) or foliation(
+            row, H, page_rows, page.rect.width)
 
     feet = [row[0] for row in page_rows
             if row[0] > head[0] and is_foot(row)]
@@ -174,10 +192,65 @@ def page_box(page, page_rows, head):
     # the foot, five of the thirteen parts went with it. Where the question's
     # own content reaches into the foot band the crop follows the content and
     # takes a line of running foot with it, which is the cheaper loss.
-    if content and max(content) > bottom - 4:
-        bottom = max(content) + 13
-    return pymupdf.Rect(PAGE_SIDES[0], max(top - 14, 18),
-                        page.rect.width - PAGE_SIDES[1], min(bottom, H - 26))
+    #
+    # A row is read by its TOP, and a printed line is a body line tall, so the
+    # test allows a whole line: 2018 Higher B-3 sets "Scale 1:1" with its top
+    # at y=765.9 and its foot at 777.9, the cut fell at 771.6 between the two,
+    # and the crop sliced the line in half. Tested at 4pt it was never seen.
+    if content and max(content) > bottom - LINE:
+        bottom = max(content) + LINE
+    # The ARTWORK may be set past the margins too. 2018 Higher C-5 prints its
+    # detail drawings from x=27, seven points left of the side margin, so the
+    # "120" on part 1 was cut off, and runs its exploded 3D view down to
+    # y=782.5, past the running foot's top, so its lower edge was lost. A crop
+    # takes the whole of every image and drawing that starts on the question's
+    # page body; whatever furniture that brings in is painted out by
+    # foot_boxes() when the crop is cut.
+    W = page.rect.width
+    foot_top = min(feet) if feet else H - 46
+    left, right = PAGE_SIDES[0], W - PAGE_SIDES[1]
+    for box in artwork(page):
+        if box.y0 < top - 14 or box.y0 >= foot_top or box.is_empty:
+            continue
+        left = min(left, box.x0 - 3)
+        right = max(right, box.x1 + 3)
+        bottom = max(bottom, box.y1 + 3)
+    return pymupdf.Rect(max(left, 8), max(top - 14, 18),
+                        min(right, W - 8), min(bottom, H - 26))
+
+
+def artwork(page):
+    """Every image and drawn path on a page, as page rectangles."""
+    out = [pymupdf.Rect(info['bbox']) for info in page.get_image_info()]
+    out += [pymupdf.Rect(d['rect']) for d in page.get_drawings()]
+    return out
+
+
+def foot_boxes(page, rect):
+    """The running foot's printed lines that fall inside a crop, to paint out.
+
+    A crop that follows the question's content down into the foot band takes
+    the foot with it, and cut at the content's edge it shows half a line of
+    "Leaving Certificate 2018" (2018 Higher C-4, whose "Scale 1:1" sits beside
+    the page number). The foot is page furniture, never the question.
+    """
+    H, W = page.rect.height, page.rect.width
+    lines = []
+    for block in page.get_text('dict')['blocks']:
+        if block['type'] != 0:
+            continue
+        for line in block['lines']:
+            text = ''.join(sp['text'] for sp in line['spans']).strip()
+            if text:
+                box = pymupdf.Rect(line['bbox'])
+                lines.append(((box.y0, box.x0, box.x1, text), box))
+    page_rows = [row for row, _box in lines]
+    out = []
+    for row, box in lines:
+        if (RUNNING_FOOT.match(row[3]) or foliation(row, H, page_rows, W)) \
+                and box.intersects(rect):
+            out.append(box + (-1, -1, 1, 1))
+    return out
 
 
 def _thin(values, gap):
@@ -188,13 +261,20 @@ def _thin(values, gap):
     return out
 
 
-def cut(census=None):
-    """Write one PNG per question. Returns [(key, path, year, level, sec, q)]."""
+def cut(census=None, sitting=None):
+    """Write one PNG per question. Returns [(key, path, year, level, sec, q)].
+
+    `sitting` = (year, level) cuts that sitting alone. A crop already shipped
+    is pinned by its md5 in the manifest, so re-cutting the whole corpus to add
+    one sitting risks every catalogued crop for nothing.
+    """
     os.makedirs(OUT_DIR, exist_ok=True)
     census = census or PC.census_subject(SUBJECT)
     made = []
     for paper in census['papers']:
         year, level = paper['year'], paper['level']
+        if sitting and (year, level) != sitting:
+            continue
         P = DP.load(year, level, SUBJECT)
         for path in P.files:
             doc = pymupdf.open(path)
@@ -212,6 +292,12 @@ def cut(census=None):
                 for (section, q), rect in boxes.items():
                     key = key_for(year, level, section, q)
                     out = os.path.join(OUT_DIR, f'{key}.png')
+                    if len(heads) == 1:
+                        # Painted on the in-memory page only; the PDF on
+                        # disk is never written.
+                        for box in foot_boxes(page, rect):
+                            page.draw_rect(box, color=None, fill=(1, 1, 1),
+                                           overlay=True)
                     pix = page.get_pixmap(dpi=DPI, clip=rect)
                     pix.save(out)
                     made.append((key, out, year, level, section, q))
@@ -308,9 +394,11 @@ def main():
     ap.add_argument('--sheets', action='store_true')
     ap.add_argument('--worklist', action='store_true')
     ap.add_argument('--catalogue')
+    ap.add_argument('--sitting', nargs=2, metavar=('YEAR', 'LEVEL'))
     args = ap.parse_args()
     if args.cut or args.sheets:
-        made = cut()
+        made = cut(sitting=(int(args.sitting[0]), args.sitting[1])
+                   if args.sitting else None)
         print(f'{len(made)} question crop(s) written to {OUT_DIR}')
         by = collections.Counter((r[2], r[3]) for r in made)
         for k in sorted(by):

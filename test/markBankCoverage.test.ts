@@ -45,6 +45,8 @@ import { CARDS as ACCOUNTING_ORDINARY } from '../components/MarkBank/cards/accou
 import { CARDS as BUSINESS_HIGHER } from '../components/MarkBank/cards/business/higher';
 import { CARDS as BUSINESS_ORDINARY } from '../components/MarkBank/cards/business/ordinary';
 import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/higher';
+import { CARDS as RE_HIGHER } from '../components/MarkBank/cards/religious-education/higher';
+import { CARDS as RE_ORDINARY } from '../components/MarkBank/cards/religious-education/ordinary';
 import { CARDS as FRENCH_ORDINARY } from '../components/MarkBank/cards/french/ordinary';
 
 const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
@@ -85,6 +87,11 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
     // printed routes to the literal cards; reconcile.py counts the same set.
     return [...BUSINESS_HIGHER, ...BUSINESS_ORDINARY]
       .map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
+  if (subject === 'religious-education') {
+    // The literal point cards plus the band-grid cards rubric.ts folds in
+    // (re_lane.py); reconcile.py counts the same set, sorted.
+    return [...RE_HIGHER, ...RE_ORDINARY].map(({ id, questionRef: ref }) => ({ id, ref }));
   }
   if (subject === 'geography') {
     return [...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY]
@@ -184,7 +191,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     // display ordering is not the manifest ordering. Coverage pins identity,
     // not presentation order.
     if (subject === 'english' || subject === 'irish' || subject === 'art'
-      || subject === 'geography' || subject === 'politics-and-society' || subject === 'physical-education' || subject === 'applied-maths' || subject === 'accounting' || subject === 'business') identities.sort();
+      || subject === 'geography' || subject === 'politics-and-society' || subject === 'physical-education' || subject === 'applied-maths' || subject === 'accounting' || subject === 'business' || subject === 'religious-education') identities.sort();
     const digest = createHash('sha256')
       .update(identities.join('\n'))
       .digest('hex').slice(0, 16);
@@ -209,9 +216,12 @@ describe('Mark Bank paper-coverage ratchet', () => {
           // segments and their printed questions (the 2026 papers drop the
           // "Cluastuiscint" prefix), reading parts down to an answer slot,
           // and Irish-headed literature routes named after their text. A slot is
-          // named by the scheme's own unit (2023 HL A 6(b) prices "Tréith 1/2", 2020 HL A 6(b) "Aidhm 1/2", 2016 HL B 6(b) "Pointe eolais 1/2", 2014 HL B 6(b) "Ábhar imní 1/2"). The 2020
+          // named by the scheme's own unit (2023 HL A 6(b) prices "Tréith 1/2", 2020 HL A 6(b) "Aidhm 1/2", 2016 HL B 6(b) "Pointe eolais 1/2", 2014 HL B 6(b) "Ábhar imní 1/2", 2013 HL A 6(b) "Fáth 1/2"). The 2020
           // Higher paper prints one question for each of 2A, 2B, 3A and 3B, so those routes carry no option letter.
-          return !/^\d{4} (?:HL|OL) Paper [12] (?:(?:Cluastuiscint )?Cuid [ABC] · (?:Fógra|Comhrá|Píosa) a (?:hAon|Dó)(?: · An (?:Chéad Mhír|Dara Mír))?(?: · Ceist [1-9](?:\([a-e]\))?)?|Ceapadóireacht [A-D]\((?:[a-e]|i{1,3})\)|Léamhthuiscint [AB] · Ceist [1-6](?:\([ab]\)(?:\((?:i|ii)\))?)?(?: · (?:Pointe(?: eolais)?|Freagra|Léargas|Dúshlán|Sampla|Ceist|Cúis|Tréith|Aidhm|Ábhar imní) [1-9])?|(?:Prose|Poetry) [23][AB]\([a-c]\)|Literature 4\([a-f]\)|(?:Prós 2|Filíocht 3)[AB](?:\([a-c]\))? · .+|Litríocht 4[A-F](?: ·|\.) .+)$/.test(ref);
+          // 2010-2011 print the listening as its own paper (Triail Chluastuisceana: "2011 OL Cluastuiscint Cuid A · Fógra a Trí")
+          // and the literature as Prós/Filíocht Ainmnithe or Roghnach (a)/(b); Higher Paper 2 prints Ceist 1 Prós, Ceist 2 Próstéacs
+          // Breise (A-D), Ceist 3 Filíocht (A-C) and Ceist 4 Stair na Gaeilge.
+          return !/^\d{4} (?:HL|OL) (?:Paper [12] |(?=Cluastuiscint ))(?:(?:Cluastuiscint )?Cuid [ABC] · (?:Fógra|Comhrá|Píosa) a (?:hAon|Dó|Trí)(?: · An (?:Chéad Mhír|Dara Mír))?(?: · Ceist [1-9](?:\([a-e]\))?)?|Ceapadóireacht [A-D]\((?:[a-e]|i{1,3})\)|Léamhthuiscint [AB] · Ceist [1-6](?:\([ab]\)(?:\((?:i|ii)\))?)?(?: · (?:Pointe(?: eolais)?|Freagra|Léargas|Dúshlán|Sampla|Ceist|Cúis|Tréith|Aidhm|Ábhar imní|Fáth) [1-9])?|(?:Prose|Poetry) [23][AB]\([a-c]\)|Literature 4\([a-f]\)|(?:Prós [12]|Próstéacs 2|Filíocht 3)[A-D](?:\([a-c]\))? · .+|Stair na Gaeilge 4|Litríocht 4[A-F](?: ·|\.) .+|(?:Prós|Filíocht) (?:Ainmnithe|Roghnach) \([ab]\)(?:\((?:i|ii)\))? · .+)$/.test(ref);
         }
         if (subject === 'geography') {
           // Reviewed sittings cite the printed part: "Q2(ii)(a)", "Q5A(iii)", "Q8A(vii)";
@@ -265,6 +275,13 @@ describe('Mark Bank paper-coverage ratchet', () => {
     if (subject === 'physical-education' || subject === 'applied-maths') {
       // PE's bands and rows are cut from the reviewed guidance at load (answers.ts).
       for (const name of subject === 'physical-education' ? ['factory.ts', 'reviewed.json', 'answers.ts'] : ['reviewed.ts', 'reviewed.json']) {
+        h.update(readFileSync(resolve(
+          __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
+      }
+    }
+    if (subject === 'religious-education') {
+      // Same files and order as reconcile.py's content hash.
+      for (const name of ['rubric-authored.json', 'rubric.ts']) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }

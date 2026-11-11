@@ -281,8 +281,8 @@
     "boundaries": "48 individually marked task/option cards; 22 per-combination cards withdrawn (choice is not a route).",
     "separateListeningComponent": {
       "paperFileid": "LC001BLPA00IV.pdf",
-      "status": "source-gap: official Foundation recording unavailable; no cards, transcript or substitute audio",
-      "decision": "The listening component stays pending with no Bank cards, no transcript and no substitute audio until the official Foundation recording is recovered."
+      "status": "reviewed; no official recording exists, carded without audio (Alex, 2026-11-11)",
+      "decision": "Alex, 2026-11-11: every printed listening part is carded without audio: its question and printed options from the paper, its answer and tariff from the scheme’s key (PDF 2). No transcript and no substitute audio."
     },
     "choicePolicy": "Choice is not a route (2026-10-12): when the candidate chooses which printed options to answer, no per-combination cards are published. Each printed option keeps its own card with its own scheme marking, and the printed choice instruction is carried in that card’s task requirements. Selection decisions that describe pair or product expansions record how the paper was read; the expansions themselves are withdrawn.",
     "variantPolicy": "One printed task, one card (coordinator decision 5, 2026-11-04): where a Foundation writing task prints a tick-box date, a job to choose or a recipient alternative inside ONE task, and every option carries the same printed text and the same scheme marking, the task is one card. The options stay in the printed text; no card adds a line choosing one.",

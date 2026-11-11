@@ -41,6 +41,10 @@ vi.mock('@/components/PaperTrail/vaultDocs', () => ({ vaultPdf: vi.fn(() => new 
 import { CURRICULUM_SPECIFICATIONS } from '@/curriculumRegistry';
 import { CARDS as politicsCards } from '@/components/MarkBank/cards/politics-and-society/higher';
 import StudySessionQuiz from '@/components/study/quiz/StudySessionQuiz';
+import { studyPlannerSample } from '@/data/studyPlannerSamples';
+import { createStudyPlan, readStudyPlan } from '@/services/studyPlanStore';
+import { profilePlanSettings } from '@/services/studyPlanEngine';
+import { recordStudyQuizResults } from '@/services/studyQuizEvidence';
 
 const base = {
   source: 'sec' as const, subjectId: 'chemistry', level: 'ordinary' as const, year: 2021, paperFileid: 'LC022GLP000EV',
@@ -200,4 +204,78 @@ test('a failed deck load offers retry and can return to the safely saved session
   fireEvent.click(screen.getByRole('button', { name: 'Try again' }));
   expect(await screen.findByText('Is ethene planar or tetrahedral?')).toBeInTheDocument();
   expect(mocks.commitReview).not.toHaveBeenCalled();
+});
+
+function quizPlan(scope: string) {
+  const input = studyPlannerSample('sixth');
+  input.profile = { ...input.profile, subjects: profile, examStartDate: '2027-06-07' };
+  input.settings = profilePlanSettings(input.profile);
+  input.evidence = []; input.cards = []; input.deadlines = []; input.requirements = [];
+  return createStudyPlan(scope, input, '2026-11-09', '2026-11-09', true);
+}
+const quizNow = new Date('2026-11-09T12:00:00Z').getTime();
+const assessed = (c: SecCard, marks: number) => ({ card: c, result: {
+  cardId: c.id, marksClaimed: marks, marksAvailable: c.totalMarks, grade: marks === c.totalMarks ? 'got' as const : 'missed' as const,
+} });
+
+test('the real quiz updates topic follow-up immediately, including when the student closes before finishing', async () => {
+  const scope = 'quiz-planner-integration';
+  quizPlan(scope);
+  render(<StudySessionQuiz uid={scope} subject="Chemistry" topicSelection={selection} profileSubjects={profile} onDone={vi.fn()} onSkip={vi.fn()} now={() => quizNow} />);
+  fireEvent.click(await screen.findByRole('button', { name: /Reveal the marking scheme/ }));
+  fireEvent.click(screen.getByRole('button', { name: /planar/ }));
+  fireEvent.click(screen.getByRole('button', { name: 'Next question' }));
+  expect(readStudyPlan(scope)!.inputs.evidence).toEqual([expect.objectContaining({
+    topicId: 'chem-2-2', result: 'self-assessed', dueOn: '2026-11-12', successfulReviews: 0,
+    assessment: expect.objectContaining({ source: 'study-quiz', questionCount: 1, marksClaimed: 6, marksAvailable: 6 }),
+  })]);
+  // No marks claimed for the next answered question; the topic now needs practice.
+  fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/ }));
+  fireEvent.click(screen.getByRole('button', { name: 'Next question' }));
+  const saved = readStudyPlan(scope)!;
+  expect(saved.inputs.evidence[0]).toMatchObject({ result: 'partial', dueOn: '2026-11-11', assessment: { questionCount: 2 } });
+  expect(saved.plan.tasks.some(t => t.topicKey === `${chemistry.id}::chem-2-2` && t.kind === 'practice' && t.date >= '2026-11-11')).toBe(true);
+  fireEvent.click(screen.getByRole('button', { name: 'Close practice' }));
+  expect(readStudyPlan(scope)!.inputs.evidence[0].assessment!.questionCount).toBe(2);
+  expect(mocks.commitReview).toHaveBeenCalledTimes(2);
+});
+
+test('quiz evidence is account scoped, idempotent and never awards independent successes', () => {
+  const scope = 'quiz-evidence-dedup';
+  quizPlan(scope); quizPlan('quiz-other-account');
+  recordStudyQuizResults(scope, selection, [assessed(cards[0], 6), assessed(cards[0], 6)], 'session-one', quizNow);
+  const first = readStudyPlan(scope);
+  recordStudyQuizResults(scope, selection, [assessed(cards[0], 6)], 'session-one', quizNow);
+  expect(readStudyPlan(scope)).toBe(first);
+  recordStudyQuizResults(scope, selection, [assessed(cards[0], 6)], 'session-two', quizNow + 1000);
+  expect(readStudyPlan(scope)!.inputs.evidence[0]).toMatchObject({ result: 'self-assessed', successfulReviews: 0, dueOn: '2026-11-12' });
+  expect(readStudyPlan('quiz-other-account')!.inputs.evidence).toEqual([]);
+});
+
+test('skipped, invalid, ambiguous and wrong-cohort questions do not create topic evidence', () => {
+  const scope = 'quiz-evidence-guards';
+  quizPlan(scope);
+  recordStudyQuizResults(scope, selection, [], 'skip', quizNow);
+  recordStudyQuizResults(scope, selection, [assessed(cards[0], 999)], 'invalid', quizNow);
+  const other = chemistry.groups.flatMap(g => g.topics).find(t => t.id !== 'chem-2-2')!;
+  recordStudyQuizResults(scope, selection, [assessed({ ...cards[0], additionalTopicIds: [other.id] }, 6)], 'ambiguous', quizNow);
+  recordStudyQuizResults(scope, selection, [assessed({ ...cards[0], additionalTopicIds: ['unmatched-topic'] }, 6)], 'partly-unmatched', quizNow);
+  recordStudyQuizResults(scope, { ...selection, specificationId: 'wrong-cohort' }, [assessed(cards[0], 6)], 'wrong', quizNow);
+  expect(readStudyPlan(scope)!.inputs.evidence).toEqual([]);
+  recordStudyQuizResults(scope, selection, [assessed(cards[0], 0)], 'missed', quizNow);
+  expect(readStudyPlan(scope)!.inputs.evidence[0]).toMatchObject({ result: 'failed', dueOn: '2026-11-10' });
+});
+
+test('a registry alias and its canonical topic are one topic, not an ambiguous question', () => {
+  const scope = 'quiz-canonical-alias';
+  const input = studyPlannerSample('sixth');
+  input.profile = { ...input.profile, subjects: [{ subjectName: 'Business', level: 'higher' }], examStartDate: '2027-06-07' };
+  input.settings = profilePlanSettings(input.profile);
+  input.evidence = []; input.cards = []; input.deadlines = []; input.requirements = [];
+  createStudyPlan(scope, input, '2026-11-09', '2026-11-09', true);
+  const spec = CURRICULUM_SPECIFICATIONS.find(s => s.id === 'business:2027')!;
+  const [alias, canonical] = Object.entries(spec.legacyTopicAliases!)[0];
+  const question = { ...cards[0], subjectId: 'business', topicId: alias };
+  recordStudyQuizResults(scope, { subjectId: 'business', specificationId: spec.id, topicIds: [canonical] }, [assessed(question, 6)], 'alias', quizNow);
+  expect(readStudyPlan(scope)!.inputs.evidence).toEqual([expect.objectContaining({ topicId: canonical, specificationId: spec.id, result: 'self-assessed' })]);
 });

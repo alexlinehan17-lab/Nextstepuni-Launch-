@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-11-10",
+  "sources": {
+    "jcGradeBands": "https://www.gov.ie/en/department-of-education/press-releases/minister-mcentee-announces-changes-to-junior-cycle-grade-bands/",
+    "jc": "https://www.curriculumonline.ie/junior-cycle/junior-cycle-subjects/",
+    "jcShortCourses": "https://www.curriculumonline.ie/junior-cycle/short-courses/",
+    "lc": "https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/",
+    "lca": "https://www.curriculumonline.ie/senior-cycle/lca/",
+    "lcaLanguageAccess": "https://www.curriculumonline.ie/getmedia/1b33d283-3f21-4013-823c-89586e882c9e/Final-FAQ-Document.pdf",
+    "nonCurricularLanguages": "https://secexaminer.ie/wp-content/uploads/2026/05/General-Instructions-to-Superintendents-2026-EV-1.pdf",
+    "religionNonExam": "https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/religious-education/",
+    "lcvpTransition": "https://www.curriculumonline.ie/senior-cycle/leaving-certificate-vocational-programme-(lcvp)/"
+  },
+  "scope": "Official subjects, NCCA-published short courses and senior-cycle SPHE/PE/RE non-exam courses. Programme-wide learning units and school-designed local courses are not separate subjects in these catalogues. Existing legacy selections remain available.",
+  "jc": ["Applied Technology", "Business Studies", "Classics", "Engineering", "English", "Gaeilge", "Gaeilge T1", "Geography", "Graphics", "History", "Home Economics", "Jewish Studies", "Mathematics", "French", "German", "Italian", "Spanish", "Music", "Religious Education", "Science", "Visual Art", "Wood Technology"],
+  "jcShortCourses": ["A Personal Project: Caring for Animals (Level 2)", "Around the world in eighty days (Level 1)", "Artistic Performance", "Chinese Language and Culture", "Coding", "CSI: Exploring Forensic Science (Level 2)", "CSPE", "Digital Media Literacy", "Enterprise in Animation (Level 2)", "Food glorious food (Level 1)", "History (Level 2)", "Keeping well, looking good, feeling great (Level 1)", "Philosophy", "Physical Education", "SPHE"],
+  "lc": ["Accounting", "Agricultural Science", "Ancient Greek", "Applied Mathematics", "Design and Communication Graphics", "Arabic", "Art", "Biology", "Business", "Climate Action and Sustainable Development", "Chemical and Physical Science", "Chemistry", "Classical Studies", "Computer Science", "Construction Technology", "Drama, Film and Theatre Studies", "English", "Economics", "Engineering", "French", "Gaeilge", "Geography", "German", "Hebrew Studies", "History", "Home Economics", "Italian", "Japanese", "Latin", "Lithuanian", "Mandarin Chinese", "Mathematics", "Music", "Physical Education", "Physics", "Polish", "Politics and Society", "Portuguese", "Religious Education", "Russian", "Spanish", "Technology", "Life, Community and Work"],
+  "lcNonExam": ["SPHE", "Physical Education (non-exam)", "Religious Education (non-exam)"],
+  "lca": ["Active Leisure Studies", "Agriculture/ Horticulture", "Childcare/Community Care", "Craft and Design", "Dance", "Drama", "Engineering", "English and Communication", "Gaeilge Chumarsáideach", "Graphics And Construction Studies", "Hair And Beauty", "Hotel Catering and Tourism", "Information and Communications Technology (Voc. Specialism)", "Introduction to Information and Communications Technology", "Leisure and Recreation", "Mathematical Applications", "French", "German", "Italian", "Spanish", "Music", "Office Administration and Customer Care", "Religious Education", "Science", "Sign Language", "Social Education", "Technology", "Visual Art", "Vocational Preparation and Guidance", "SPHE", "Leaving Cert Maths"],
+  "modernForeignLanguages": ["French", "German", "Italian", "Spanish", "Japanese", "Mandarin Chinese", "Russian", "Arabic", "Lithuanian", "Polish", "Portuguese"],
+  "nonCurricularLanguages": ["Bulgarian", "Croatian", "Czech", "Danish", "Dutch", "Estonian", "Finnish", "Hungarian", "Latvian", "Maltese", "Modern Greek", "Romanian", "Slovakian", "Slovenian", "Swedish", "Ukrainian"]
+}

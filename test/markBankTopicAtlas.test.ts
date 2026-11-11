@@ -21,9 +21,16 @@ interface AtlasReview {
   questions: Array<{ n: string; fileid: string; topicIds: string[] }>;
   cards: Array<{ cardId: string; markBankTopicId: string; questionNumber: string; atlasTopicIds: string[] }>;
   unchangedCards?: AtlasReview['cards'];
+  sitting?: 'main' | 'deferred';
 }
+// A review covers ONE sitting. The SEC's deferred sitting of a year is a paper
+// of its own, and its cards say so in their citation ("2022 HL Q1(a) —
+// Deferred sitting", ids "eng-2022-hl-deferred-..."), so a main-sitting review
+// scopes the year's June cards alone and a deferred review its deferred ones.
+const DEFERRED_REF = / — Deferred sitting$/;
 function cardsInReviewScope(deck: SecCard[], review: AtlasReview) {
-  return deck.filter(c => c.year === review.year);
+  const deferred = review.sitting === 'deferred';
+  return deck.filter(c => c.year === review.year && DEFERRED_REF.test(c.questionRef) === deferred);
 }
 const directory = path.resolve('scripts/markbank/atlas-reviews');
 const hasCorpus = fs.existsSync(path.resolve('paper-trail-corpus'));
@@ -91,8 +98,13 @@ describe('paired Mark Bank / Topic Atlas source reviews', () => {
         expect(new Set(bindings.map(c => c.cardId)).size).toBe(bindings.length);
         expect(new Set(review.questions.map(q => q.n)).size).toBe(review.questions.length);
         for (const q of review.questions) {
-          const anchor = JSON.parse(fs.readFileSync(`public/paper-anchors/${review.year}/${q.fileid}.json`, 'utf8'));
-          expect(anchor.paperOnly).toBe(1);
+          // A hosted paper-only anchor where the paper has one (Construction
+          // Studies); otherwise the classic scheme-crop answer map the viewer
+          // loads (Engineering), which must exist and hold the question.
+          const hosted = `public/paper-anchors/${review.year}/${q.fileid}.json`;
+          const classic = `scripts/paper-trail/answers/${review.year}/${q.fileid}.json`;
+          const anchor = JSON.parse(fs.readFileSync(fs.existsSync(hosted) ? hosted : classic, 'utf8'));
+          if (fs.existsSync(hosted)) expect(anchor.paperOnly).toBe(1);
           expect(anchor.q.some((item: { n: string }) => item.n === q.n)).toBe(true);
         }
       });

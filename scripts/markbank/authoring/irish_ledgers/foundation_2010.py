@@ -91,8 +91,27 @@ ledger=dict(
 LEDGER = ledger
 
 # Later, dated edits (see _ledger.py).
-AMENDMENTS = []
-RECORDED = {'runtimeVerification': {'date': '2026-10-11',
+# 2026-11-11 (Alex): the SEC has no 2010 Foundation recording; the listening paper is carded without audio.
+AMENDMENTS = [(AURAL, 'Separate listening paper: every answer required; tick/map instructions select the correct answer, not alternative tasks.')]
+RECORDED = {'status': 'reviewed',
+ 'componentStatus': {'LC001BLP100IV.pdf': 'reviewed',
+                     'LC001BLPA00IV.pdf': 'reviewed; no official recording exists, carded without audio (Alex, 2026-11-11)'},
+ 'audio': {'status': 'unavailable',
+           'expectedComponent': '2010|foundation|LC001BLPA00IV.pdf',
+           'checkedUrls': [
+               {'url': 'https://www.examinations.ie/archive/exampapers/2010/LC001BLP017IV.mp3', 'result': 'HTTP 404 (2026-10-08, 2026-11-04, 2026-11-11)'},
+               {'url': 'https://www.examinations.ie/archive/exampapers/2010/LC001BLPO17IV.mp3', 'result': 'HTTP 404 (2026-10-08, 2026-11-11)'},
+               {'url': 'https://www.examinations.ie/archive/exampapers/2010/LC001BLPA17IV.mp3', 'result': 'HTTP 404 (2026-11-04)'},
+               {'url': 'https://www.examinations.ie/archive/exampapers/2010/LC001BLP017EV.mp3', 'result': 'HTTP 404 (2026-11-11)'}],
+           'secArchiveListing': 'The SEC archive lists “Sound File / Foundation Level (IV)” for every Irish sitting 2011–2026 (LC001BLP017IV.mp3; 2012 LC001BLPO17IV.mp3) and, for 2010, only “Sound File (IV)”, LC001ZLP017IV.mp3 (the archive enumeration, scripts/paper-trail/out/manifest.jsonl).',
+           'sharedRecording': {'url': 'https://www.examinations.ie/archive/exampapers/2010/LC001ZLP017IV.mp3',
+                               'result': 'HTTP 200, 38,471,356 bytes (2026-10-08, 2026-11-11)',
+                               'decision': 'The Higher/Ordinary recording, never substituted: it is the size of 2011’s shared file (39,464,427 bytes), whose Foundation recording is a separate 29,851,366-byte file, and the Foundation paper asks different questions (Sorcha, Ciarán, Cluain Eois, mionmharatón, FÁS).'},
+           'corroboration': 'St Munchin’s College Irish aural page labels the 2010 Foundation recording unavailable: https://stmunchinscollege.com/academics/leaving-cert-programme/irish/',
+           'scheme': 'Scheme PDF 2 gives the full listening key: 22 parts, 180 marks; Q1–3 (a)/(b) 7 each; Q4, Q5 7 each; Q6–9 (a)/(b) 8 each; Q10–12 (a)/(b) 10 each; map answer bottom right.',
+           'decision': 'Alex, 2026-11-11: every printed listening part is carded without audio: its question and printed options from the paper, its answer and tariff from the scheme’s key (PDF 2). No transcript and no substitute audio.'},
+ 'remainingWork': [],
+ 'runtimeVerification': {'date': '2026-10-11',
                          'mobileViewport': [390, 844],
                          'markBankRoutes': 19,
                          'atlasRoutes': 17,

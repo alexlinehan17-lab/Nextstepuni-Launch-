@@ -1,4 +1,4 @@
-import { DAYS_OF_WEEK, JC_BANDS, JC_SUBJECTS, LC_SUBJECTS, LCA_SUBJECTS, getGradesForLevel, getPointsForGrade, lcSubjectLevels, targetGradesFor, type Grade, type JCBand, type Level, type StudentSubject, type StudentSubjectProfile, type YearGroup } from '../subjectData';
+import { DAYS_OF_WEEK, JC_BANDS, LC_SUBJECTS, catalogueForProgramme, subjectProgramme, subjectLevels, subjectUsesExamGrades, getGradesForLevel, getPointsForGrade, targetGradesFor, type Grade, type JCBand, type Level, type StudentSubject, type StudentSubjectProfile, type YearGroup } from '../subjectData';
 import { getActiveCategories, getVisionCardsForLevel } from '../../northStarData';
 import { isLcaYear, yearGroupToCurriculumLevel } from '../../utils/authUtils';
 import { getDefaultExamDate } from '../../utils/examDates';
@@ -24,27 +24,24 @@ export interface SetupDraft {
 export const draftKey = (uid: string, mode: string) => `nextstepuni:onboarding-draft:v2:${uid}:${mode}`;
 export const legacyDraftKey = (uid: string, mode: string) => `nextstepuni:onboarding-draft:v1:${uid}:${mode}`;
 export const cycleFor = (year: YearGroup | null) => year ? yearGroupToCurriculumLevel(year) : 'senior';
-export const subjectsFor = (year: YearGroup | null) => cycleFor(year) === 'junior' ? JC_SUBJECTS : isLcaYear(year ?? undefined) ? LCA_SUBJECTS : LC_SUBJECTS;
+export const subjectsFor = (year: YearGroup | null) => catalogueForProgramme(subjectProgramme(year));
 export const needsDate = (year: YearGroup | null) => year !== '1st' && year !== '2nd';
 export const daysUntil = (value: string, today = new Date()) => {
   const now = new Date(today.getFullYear(), today.getMonth(), today.getDate());
   return Math.ceil((new Date(`${value}T00:00:00`).getTime() - now.getTime()) / 86400000);
 };
 /** The levels a student may choose between for a subject in their programme. */
-export function levelOptions(year: YearGroup | null, name: string): Level[] {
-  if (isLcaYear(year ?? undefined)) return ['common'];
-  if (cycleFor(year) === 'junior') return JC_SUBJECTS.find(s => s.name === name)?.jcHasLevelChoice ? ['higher', 'ordinary'] : ['common'];
-  return lcSubjectLevels(name);
-}
+export const levelOptions = (year: YearGroup | null, name: string): Level[] => subjectLevels(subjectProgramme(year), name);
+export const requiresGradeSetup = (year: YearGroup | null, name: string) => subjectUsesExamGrades(subjectProgramme(year), name);
 export function emptyChoice(year: YearGroup | null, name: string): SubjectChoice {
   // A subject examined at one level only starts on that level.
   const levels = levelOptions(year, name);
   return { level: levels.length === 1 ? levels[0] : null, current: '', target: '', reviewed: false };
 }
 /** Grade choices for a level. LCA courses have none here (credits, no CAO
- *  points); in the established LC the one common-level subject is LCVP Link
+ *  points), except separately examined Leaving Cert Maths and languages; in the established LC the one common-level subject is LCVP Link
  *  Modules, graded Distinction / Merit / Pass. */
-export const choicesFor = (year: YearGroup | null, level: Level | null): readonly string[] => cycleFor(year) === 'junior' ? JC_BANDS : !level || isLcaYear(year ?? undefined) ? [] : getGradesForLevel(level);
+export const choicesFor = (year: YearGroup | null, level: Level | null, name = ''): readonly string[] => !level || !requiresGradeSetup(year, name) ? [] : cycleFor(year) === 'junior' ? JC_BANDS : getGradesForLevel(level);
 /** Height (percent) of a grade's bar: CAO points for Leaving Cert grades, so an
  *  Ordinary current and a Higher target compare honestly; position on the band
  *  scale for Junior Cycle. 0 when nothing is chosen. */
@@ -55,17 +52,17 @@ export function gradeBarHeight(year: YearGroup | null, value: string, bands: rea
   return Math.max(10, getPointsForGrade(value as Grade));
 }
 /** Grades a student may aim for: their level's and every level above it. */
-export const targetChoicesFor = (year: YearGroup | null, level: Level | null): readonly string[] =>
-  cycleFor(year) === 'junior' ? JC_BANDS : !level || isLcaYear(year ?? undefined) ? [] : targetGradesFor(level);
-export function choiceReady(year: YearGroup | null, choice?: SubjectChoice): boolean {
-  if (!choice?.level) return false;
-  const current = choicesFor(year, choice.level);
-  const target = targetChoicesFor(year, choice.level);
+export const targetChoicesFor = (year: YearGroup | null, level: Level | null, name = ''): readonly string[] =>
+  !level || !requiresGradeSetup(year, name) ? [] : cycleFor(year) === 'junior' ? JC_BANDS : targetGradesFor(level);
+export function choiceReady(year: YearGroup | null, choice?: SubjectChoice, name = ''): boolean {
+  if (!choice?.level || (name && !levelOptions(year, name).includes(choice.level))) return false;
+  const current = choicesFor(year, choice.level, name);
+  const target = targetChoicesFor(year, choice.level, name);
   return (choice.current === 'later' || current.includes(choice.current)) && (choice.target === 'later' || target.includes(choice.target));
 }
-export const hasGrades = (year: YearGroup | null, choice?: SubjectChoice) => Boolean(choice?.reviewed && choiceReady(year, choice) && choice.current !== 'later' && choice.target !== 'later');
+export const hasGrades = (year: YearGroup | null, choice?: SubjectChoice, name = '') => Boolean(requiresGradeSetup(year, name) && choice?.reviewed && choiceReady(year, choice, name) && choice.current !== 'later' && choice.target !== 'later');
 export function pointsFor(draft: SetupDraft) {
-  const known = draft.subjects.filter(name => hasGrades(draft.year, draft.configs[name]));
+  const known = draft.subjects.filter(name => hasGrades(draft.year, draft.configs[name], name));
   if (cycleFor(draft.year) === 'junior' || isLcaYear(draft.year ?? undefined)) return { count: 0, current: 0, target: 0 };
   const sum = (field: 'current' | 'target') => Math.min(625, known.map(name => getPointsForGrade(draft.configs[name][field] as Grade, !!LC_SUBJECTS.find(s => s.name === name)?.isMaths)).sort((a, b) => b - a).slice(0, 6).reduce((a, b) => a + b, 0));
   return { count: known.length, current: sum('current'), target: sum('target') };
@@ -92,13 +89,13 @@ export function readDraft(uid: string, mode: string, targetYear?: 'TY' | '5th', 
       const config = raw ? saved.configs?.[name] : cycleFor(year) === 'junior' ? saved.subjectBands?.[name] : saved.subjectConfigs?.[name];
       if (config && typeof config === 'object') {
         if (next.level === null && levelOptions(year, name).includes(config.level)) next.level = config.level;
-        const values = choicesFor(year, next.level);
-        const targetValues = targetChoicesFor(year, next.level);
+        const values = choicesFor(year, next.level, name);
+        const targetValues = targetChoicesFor(year, next.level, name);
         const current = config.current ?? config.currentGrade ?? config.currentBand;
         const target = config.target ?? config.targetGrade ?? config.targetBand;
         if (values.includes(current) || current === 'later') next.current = current;
         if (targetValues.includes(target) || target === 'later') next.target = target;
-        next.reviewed = Boolean(raw && config.reviewed === true && choiceReady(year, next));
+        next.reviewed = Boolean(raw && config.reviewed === true && choiceReady(year, next, name));
       }
       configs[name] = next;
     }
@@ -112,23 +109,23 @@ export function readDraft(uid: string, mode: string, targetYear?: 'TY' | '5th', 
     let step = raw && steps.includes(saved.step) ? saved.step : legacySteps[saved.step] ?? base.step;
     if (!year && step !== 'welcome') step = 'year';
     if (targetYear && ['welcome', 'year'].includes(step)) step = 'subjects';
-    if (step === 'grades' && (!subjects.length || isLcaYear(year))) step = 'subjects';
+    const gradeSubjects = subjects.filter(name => requiresGradeSetup(year, name));
+    if (step === 'grades' && !gradeSubjects.length) step = 'subjects';
     return { ...base, year, step, category, vision, subjects, configs,
       appearance: saved.appearance === 'light' ? 'light' : 'dark',
       rest: DAYS_OF_WEEK.filter(day => (saved.rest ?? saved.restDays ?? base.rest).includes?.(day)),
       date: typeof (saved.date ?? saved.examDate) === 'string' ? saved.date ?? saved.examDate : base.date,
       dateConfirmed: raw ? saved.dateConfirmed === true : false,
-      gradeSubject: subjects.includes(saved.gradeSubject) ? saved.gradeSubject : subjects[0] ?? null };
+      gradeSubject: gradeSubjects.includes(saved.gradeSubject) ? saved.gradeSubject : gradeSubjects[0] ?? null };
   } catch { return base; }
 }
 export function buildProfile(draft: SetupDraft): StudentSubjectProfile {
   if (!draft.year) throw new Error('Choose your school year.');
   const junior = cycleFor(draft.year) === 'junior';
-  const lca = isLcaYear(draft.year);
   const subjects: StudentSubject[] = draft.subjects.map(name => {
     const config = draft.configs[name];
-    if (lca) return { subjectName: name, level: 'common' };
-    if (!config?.reviewed || !choiceReady(draft.year, config) || !config.level) throw new Error(`Review the level and grades for ${name}.`);
+    if (!requiresGradeSetup(draft.year, name)) return { subjectName: name, level: 'common' };
+    if (!config?.reviewed || !choiceReady(draft.year, config, name) || !config.level) throw new Error(`Review the level and grades for ${name}.`);
     return { subjectName: name, level: config.level,
       ...(config.current !== 'later' ? junior ? { currentBand: config.current as JCBand } : { currentGrade: config.current as Grade } : {}),
       ...(config.target !== 'later' ? junior ? { targetBand: config.target as JCBand } : { targetGrade: config.target as Grade } : {}) };
