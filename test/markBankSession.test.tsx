@@ -28,6 +28,7 @@ import { isRubricCard, tariffReconciles, type IrishCriterion, type MarkRow, type
 import { irishPartCount } from '@/components/MarkBank/irishScoring';
 import { CARDS as ART_HIGHER } from '@/components/MarkBank/cards/art/higher';
 import { CARDS as IRISH_HIGHER } from '@/components/MarkBank/cards/irish/higher';
+import { CARDS as IRISH_ORDINARY } from '@/components/MarkBank/cards/irish/ordinary';
 import { CARDS as ECONOMICS_HIGHER } from '@/components/MarkBank/cards/economics/higher';
 import { CARDS as ECONOMICS_ORDINARY } from '@/components/MarkBank/cards/economics/ordinary';
 
@@ -518,6 +519,16 @@ describe('the question comes first and stays', () => {
     const parts = [...screen.getByTestId('mark-bank-question-text').querySelectorAll('[data-question-depth="0"]')];
     expect(parts.map(part => part.firstElementChild?.textContent)).toEqual(['(a)', '(b)', '(c)']);
     expect(parts[2]).toHaveTextContent('Justify your answer at part (b) above.');
+  });
+
+  test('keeps the Irish "(a) thuas" (part (a) above) in the part that refers to it', () => {
+    // 2010 Ordinary Paper 2, Filíocht Roghnach (b)(ii): the "(a)" is a reference back to part (a), not a sub-part.
+    const printed = IRISH_ORDINARY.find(entry => entry.id === 'irish-2010-ol-p2-poetry-roghnach-b-ii')!;
+    renderSession([printed]);
+
+    const rendered = screen.getByTestId('mark-bank-question-text');
+    expect(rendered.querySelectorAll('[data-question-depth="1"]')).toHaveLength(0);
+    expect(rendered).toHaveTextContent('agus nár úsáid tú i gcuid (a) thuas, roghnaigh dán amháin díobh a chum bean.');
   });
 
   test('sets a printed bullet list in the stem one item to a line', () => {
