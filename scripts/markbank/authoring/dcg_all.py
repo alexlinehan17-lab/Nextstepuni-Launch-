@@ -63,7 +63,8 @@ LEVEL_TOKEN = {'higher': 'hl', 'ordinary': 'ol'}
 # cards, crops, paper link and Atlas question have been checked. A sitting not
 # yet admitted shows in the ledger as OPEN instead of vanishing behind a window.
 CARDED = ({(year, level) for year in range(2019, 2027) for level in ('hl', 'ol')}
-          | {(2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol')})
+          | {(2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'),
+             (2016, 'hl')})
 
 # Cards edited by hand after generation, kept exactly as shipped. None since
 # November 2026: #294 had cut 2023 Ordinary B-3(c) into its four priced lines
@@ -311,6 +312,7 @@ SUB_PRICE = re.compile(r'\(([^()]*\d[^()]*)\)')
 ANY_PRICE = re.compile(r'^\s*any\s*=?\s*(\d{1,2})(?:\s*-\s*(\d{1,2}))?\s*$',
                        re.I)
 COUNT = re.compile(r'^(\d{1,2})\s*[x×X]\s*(\d{1,2})$')
+LABELLED = re.compile(r'^([A-Za-z]+)\s*=\s*(\d{1,2})$')
 # "Projections from elevation (2) and plan (2)": the step names its parts.
 NAMED_PRICE = re.compile(r"([A-Za-z][A-Za-z'’ -]*?)\s*\((\d{1,2})\)")
 
@@ -330,6 +332,16 @@ def sub_ladder(text, marks):
     single claim, wherever the printed parts do not add up to the step's own
     printed mark -- 2024 Higher A-4 prints "(1,2)" against a 2-mark step.
     """
+    # Two or more printed prices NAMED by what earns them, on one step: 2016
+    # Higher B-3(c) prints "Draw correct curve (Any = 1) ... (Ellipse = 2)"
+    # against 3 -- any curve earns 1, an ellipse 2, the correct curve the
+    # step's 3. Each named price is a value the SEC printed; nothing between.
+    named = [LABELLED.match(m.strip()) for m in SUB_PRICE.findall(text)]
+    named = [n for n in named if n]
+    if len(named) >= 2:
+        values = sorted({int(n.group(2)) for n in named})
+        return [0, *values, marks] if all(0 < v < marks for v in values) \
+            else None
     for m in reversed(SUB_PRICE.findall(text)):
         inner = m.strip()
         a = ANY_PRICE.match(inner)

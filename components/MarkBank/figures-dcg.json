@@ -1,4 +1,136 @@
 {
+ "dcg-2016-HL-paper-secA-q1-art": {
+  "alt": "Question A-1 as printed. Photographs of a set of traffic lights and of a curved metal shade from them, beside the circular end view and the elevation of the truncated cylindrical shade with the point P, and the incomplete surface development projected beneath the elevation.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "64b970ad3ac9f2455ced341ed5d7b02f",
+  "questionRef": "2016 HL Section A Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secA-q1-art.png",
+  "year": 2016
+ },
+ "dcg-2016-HL-paper-secA-q2-art": {
+  "alt": "Question A-2 as printed. A photograph of a bar graph presentation on a paper flip chart, beside the incomplete elevation and the plan of a similar bar graph and flip chart with the diagonal AB marked in both views.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "2d30082b4e8deea025ff5b4c01f77f3d",
+  "questionRef": "2016 HL Section A Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secA-q2-art.png",
+  "year": 2016
+ },
+ "dcg-2016-HL-paper-secA-q3-art": {
+  "alt": "Question A-3 as printed. A 3D graphic of a pencil in a sharpener, beside the drawing of the axis AA1, the directrix DD1 and the focus F of one hyperbola.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "c9ee5ad806ad195410861f145f6e5cdc",
+  "questionRef": "2016 HL Section A Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secA-q3-art.png",
+  "year": 2016
+ },
+ "dcg-2016-HL-paper-secA-q4-art": {
+  "alt": "Question A-4 as printed. A photograph of the Atomium in Brussels, beside the incomplete projections of a similar inclined cube: an auxiliary view on X1Y1, the plan and the incomplete elevation on XY.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "5d92d4109dc499155b15f1b75f9c67de",
+  "questionRef": "2016 HL Section A Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secA-q4-art.png",
+  "year": 2016
+ },
+ "dcg-2016-HL-paper-secB-q1-art": {
+  "alt": "Question B-1 as printed. A photograph of a restaurant made of intersecting triangular glass surfaces, and Fig. B-1: the elevation and plan of the four intersecting planes defined by the points A, B, C, D, E and F, beside a table of their horizontal and vertical coordinates (F's second coordinate printed as a question mark). Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "863fecdb3f43d1faf3e76208a375373f",
+  "questionRef": "2016 HL Section B Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secB-q1-art.png",
+  "year": 2016
+ },
+ "dcg-2016-HL-paper-secB-q2-art": {
+  "alt": "Question B-2 as printed. A photograph of a curved hotel tower beside a river at night, two 3D graphics of a model of the structure with a red steel band around it, and Fig. B-2: the elevation (10m wide, 12m and 14m high with the parabolic top ABC rising 4m) and the elliptical plan (9m and 6m, flattened 2m from one end), with the traces VT and HT of the cutting plane and the arrow E. Scale 1:100.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "e8cfef290cdf7ab1f20dae403346346a",
+  "questionRef": "2016 HL Section B Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secB-q2-art.png",
+  "year": 2016
+ },
+ "dcg-2016-HL-paper-secB-q3-art": {
+  "alt": "Question B-3 as printed. A photograph of a boat-shaped sculpture on legs, Fig. B-3(a): the elevation of the model (diameter 150, heights 40 and 115) with the profile ABC, the top portion EFGH and the legs L1 and L2, and its plan with the arcs BCD and BAD of radius 90; and Fig. B-3(b): a 3D view of the top portion being removed. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "b22e9fab51b29c6593b9928d514d29f5",
+  "questionRef": "2016 HL Section B Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secB-q3-art.png",
+  "year": 2016
+ },
+ "dcg-2016-HL-paper-secC-q1-art": {
+  "alt": "Question C-1, Geologic Geometry, as printed. The option banner, the question text and a photograph of a garden swimming pool; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:100.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "72c426aadee8b4dc557c0d7847e4dff1",
+  "questionRef": "2016 HL Section C Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q1-art.png",
+  "year": 2016
+ },
+ "dcg-2016-HL-paper-secC-q2-art": {
+  "alt": "Question C-2, Structural Forms, as printed. The option banner, a photograph of a building supported on lattice towers, and Fig. C-2: the elevation and end view of one tower (half a hyperboloid of revolution, 10m high, with a truncated cylinder 3m high on top), its plan (diameters 12m and 5m) and a pictorial view. Scale 1:100.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "8890a2889df74828ecf07834a88898cb",
+  "questionRef": "2016 HL Section C Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q2-art.png",
+  "year": 2016
+ },
+ "dcg-2016-HL-paper-secC-q3-art": {
+  "alt": "Question C-3, Surface Geometry, as printed. The option banner, a photograph of a jelly bean package, Fig. C-3(a): the elevation (100 and 25 high) and plan (60 square, set at 60 degrees) of the transition piece with its triangular divisions and points A to H, and Fig. C-3(b): the partial surface development. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "4d770ae9127ff0f5b276a4c83f771fed",
+  "questionRef": "2016 HL Section C Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q3-art.png",
+  "year": 2016
+ },
+ "dcg-2016-HL-paper-secC-q4-art": {
+  "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner; part (a): a photograph of a ring sculpture and Fig. C-4(a), the concentric circles and slots of a similar design (R100, R96, R60, R46, R40, 16 and 60 degrees) with the points A and B; part (b): a photograph of a toy tipper truck and Fig. C-4(b), the tipped truck body pivoting about A through 60 degrees, the tailgate TT1, and the wheel W of diameter 50 (102, 85, 55 and 45). Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "c377ceeffa8199643137f533951ccaa9",
+  "questionRef": "2016 HL Section C Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q4-art.png",
+  "year": 2016
+ },
+ "dcg-2016-HL-paper-secC-q5-art": {
+  "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of crushed cans, the question text, Fig. C-5: dimensioned details of the eight numbered parts of a can crusher with the section line A-A on the base, a partially exploded 3D graphic, and the parts list naming Base, Moving Jaw, Vertical Slide Column, Hinge Plate, Link Plate, Handle, the 6mm Link Plate Pin and the 8mm Moving Jaw Pin with their quantities.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2016 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "c1ef59874e507f21317edd9f31f9f783",
+  "questionRef": "2016 HL Section C Q5",
+  "src": "/exam-figures/dcg/markbank/dcg-2016-HL-paper-secC-q5-art.png",
+  "year": 2016
+ },
  "dcg-2017-HL-paper-secA-q1-art": {
   "alt": "Question A-1 as printed. A photograph of a cube-shaped Bluetooth mini-speaker with its faces cut, beside an incomplete axonometric projection of a similar cube by the axonometric axes method, with the axes X, Y and Z, the elevation and plan shown in their required positions, and lines a-b and c-d drawn on the visible faces.",
   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2017 Higher Level — © State Examinations Commission",

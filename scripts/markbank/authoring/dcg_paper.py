@@ -127,6 +127,10 @@ FURNITURE = re.compile(
     # of both levels (31 shipped cards; eleven C-1 cards had it as their
     # whole stem).
     r'|and\s+Section\s+C\s+on\s+drawing\s+paper'
+    # Lettering inside a PHOTOGRAPH that the SEC set as live text: the flip
+    # chart in 2016 Higher A-2's picture reads "DCG Results" (its "T1" is
+    # already too short to keep). Read as text it ended A-2(b)'s ask.
+    r'|DCG\s+Results\s*$'
     # The cover's sitting-and-booklet code, "2018. M81BC". The 2016-2018
     # Higher B and C booklets also carry a stale "2016.  M81BC" in the top
     # corner of one question page, hidden under the option banner's fill:
