@@ -735,9 +735,30 @@ const decks = [
   ['geography:ordinary', GEOGRAPHY_ORDINARY, 309, '350dc90c7120b0efe314d07115ceb88f3ea49a55d79a55b48b819c188068cee7'],
   /* Recovered from the completed Computer Science authoring branch and rebuilt
    * through the same source, tariff, figure and structural guards as every
-   * other subject. */
-  ['computer-science:higher', COMPUTER_SCIENCE_HIGHER, 209, '1030050a22b237ea5ab74477d630b55d18620313c352fe167eb91691ae933abd'],
-  ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 127, '15c1f77f5c96c66290a8f9d59845a12aa4c851a8b5177410f08a651146332731'],
+   * other subject.
+   * 2026-11-05, the every-printed-ask lane (compsci_lane.py, one module per
+   * sitting): the 336 shipped cards are unchanged and keep their ids; each
+   * sitting's open asks are added on top. 2026 Higher, 48 asks, 48 cards:
+   * 209 -> 257. 2026 Ordinary, 41 asks, 41 cards: 127 -> 168.
+   * 2025 Higher, the 15 asks the August cards missed: 257 -> 272.
+   * 2025 Ordinary, the 8 asks the August cards missed: 168 -> 176.
+   * 2024 Higher, the 3 asks the August cards missed: 272 -> 275.
+   * 2024 Ordinary, the 3 asks the August cards missed: 176 -> 179.
+   * 2023 Higher, the 10 asks the August cards missed: 275 -> 285.
+   * 2023 Ordinary, the 10 asks the August cards missed: 179 -> 189.
+   * 2022 Higher, the 8 asks the August cards missed: 285 -> 293.
+   * 2022 Ordinary, the 16 asks the August cards missed: 189 -> 205.
+   * 2021 Higher, the 9 asks the August cards missed: 293 -> 302.
+   * 2021 Ordinary, the 4 asks the August cards missed: 205 -> 209.
+   * 2020 Higher, every printed ask (the bank held none): 302 -> 349.
+   * 2023 Ordinary Q13 split (coordinator, 5 Nov): cs-2023-ol-q13, a card for all of Q13 beside its part cards, withdrawn and aliased onto cs-2023-ol-q13-b-i; (b)(i)-(iv) and (c)(i) carded: 209 -> 213.
+   * 2025 Ordinary re-authored (batch 1b); its whole-question cards cs-2025-ol-q13, -q14 and -q15 split per the coordinator's ruling of 5 Nov and withdrawn onto -q13-a-ii, -q14-c and -q15-b-i: 213 -> 215.
+   * 2022 Higher re-authored (batch 1b); its whole-question card cs-2022-hl-q14 split per the coordinator's ruling of 5 Nov and withdrawn onto -q14-a-i: 349 -> 350.
+   * 2022 Ordinary re-authored (batch 1b); its Section C card cs-2022-ol-q16 (seven parts, over the six-row cap) split into Q16(a)(i)-(vii) and withdrawn onto -q16-a-i: 215 -> 221.
+   * 2024 Ordinary re-authored (batch 1b); its whole-question card cs-2024-ol-q16, beside cs-2024-ol-q16-b, split per the coordinator's ruling of 5 Nov into Q16(a)(i)-(vi) and withdrawn onto -q16-a-i: 221 -> 226.
+   * 2021 Ordinary re-authored (batch 1b); cs-2021-ol-q15 (whole Q15 beside its part cards) withdrawn onto -q15-b-i and cs-2021-ol-q16 (whole Section C, seven parts) onto -q16-a-i, per the coordinator's ruling of 5 Nov: 226 -> 232. */
+  ['computer-science:higher', COMPUTER_SCIENCE_HIGHER, 350, '909b43be51e58055828602aafa0b8ee95b8735dbc7d18422b15f89a8374a4249'],
+  ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 232, '73a289b4847405f7c65dfc4fb6b2fa059345d43a855e4c87ad2910e3ebad1ba1'],
   /* Engineering landed after this test's previous update. Enrol it explicitly
    * so a later regeneration cannot silently omit or replace any of its cards. */
   /* 2026-09-11: five agents, one per sitting, worked Engineering's open asks
@@ -772,9 +793,41 @@ const decks = [
   ['engineering:ordinary', ENGINEERING_ORDINARY, 194, '4db6b2da1890e2bb262ee816e1bbb8d97e86ead5cb99531609170a75594a075b'],
   /* 2026-09-10: Religious Education, the sixteenth subject, lands complete —
    * 288 cards against the 288 asks its ten papers print, every one of them
-   * added and none replacing anything. Nothing in any other deck moved. */
-  ['religious-education:higher', RE_HIGHER, 135, '9a6117ccc7be90492858b10d071528bbfee33de42ec8a368c51d6e2c76c596f3'],
-  ['religious-education:ordinary', RE_ORDINARY, 153, 'ebad0ef90313b7b75bfb75aecca5c93c5372ee0745f58ffc407481bf74ee5569'],
+   * added and none replacing anything. Nothing in any other deck moved.
+   * 2026-11-05: the RE lane builds a sitting at a time as band-grid cards (re_lane.py, rubric-authored.json), ids kept. 2026 Higher, 28 cards, added.
+   * 2026 Ordinary, 29 band-grid cards, added.
+   * 2025 Higher's 28 point cards rebuilt as band-grid cards, ids kept; nothing withdrawn.
+   * 2025 Ordinary's 33 point cards rebuilt as band-grid cards, ids kept; nothing withdrawn.
+   * 2020 Higher, 25 band-grid cards, added.
+   * 2019 Higher, 24 band-grid cards, added; I(b)(i) held for a ruling, no card.
+   * 2019 Ordinary, 23 band-grid cards, added.
+   * 2018 Higher, 22 band-grid cards, added; B(a)(i) held for a ruling, no card.
+   * 2018 Ordinary, 27 band-grid cards, added.
+   * 2019 Higher I(b)(i) and 2018 Higher B(a)(i), held for the overlapping-band ruling, added: 2 band-grid cards.
+   * 2017 Higher, 21 band-grid cards, added.
+   * 2017 Ordinary, 25 band-grid cards, added; C(a) held.
+   * 2016 Higher, 18 band-grid cards, added.
+   * 2016 Ordinary, 20 band-grid cards, added; six held.
+   * 2015 Higher, 23 band-grid cards, added; B(a)(ii) held.
+   * 2015 Ordinary, 26 band-grid cards, added.
+   * 2014 Higher, 19 band-grid cards, added.
+   * 2014 Ordinary, 20 band-grid cards, added; three held.
+   * 2017 Higher re-read with the Question Descriptor table; ids kept.
+   * 2017 Ordinary C(a), held for the 10-mark ruling, added.
+   * 2016 Higher re-read with the Question Descriptor table; ids kept.
+   * 2016 Ordinary's six held 10-mark asks added.
+   * 2015 Higher B(a)(ii), held for the 10-mark ruling, added.
+   * 2015 Ordinary re-read with the Question Descriptor table; ids kept.
+   * 2014 Higher re-read with the Question Descriptor table; ids kept.
+   * 2014 Ordinary's three held 10-mark asks added.
+   * 2012 Higher, 20 band-grid cards, added.
+   * 2012 Ordinary, 25 band-grid cards, added.
+   * 2011 Higher, 20 band-grid cards, added.
+   * 2011 Ordinary, 24 band-grid cards, added.
+   * 2010 Higher, 19 band-grid cards, added.
+   * 2010 Ordinary, 27 band-grid cards, added; RE 786/786. */
+  ['religious-education:higher', RE_HIGHER, 377, 'e1ddd166820471f24d92b0f1dd503e76b88358236a711083e810180cd3039082'],
+  ['religious-education:ordinary', RE_ORDINARY, 409, '5636dcd4ddba13d3760eee5d50ba7075a5fc3df46bb4c2c6490ad6c0ead11da4'],
   /* 2026-09-10: LCVP's Link Modules enrolled, 321 cards, NONE removed or
    * replaced — it is a new subject and this is its first baseline. It ships
    * as ONE deck because the paper is common level: there is no Higher or
@@ -1018,6 +1071,8 @@ const decks = [
   ['accounting:ordinary', ACCOUNTING_ORDINARY, 644, '0a35e37e0360979df909459b44024d1a62b749b268594b214bf620ebaf18db86'],
 ] as const;
 
+// [count, idHash] of eng_residue/additions.json, re-pinned as each sitting lands.
+const ENGINEERING_ADDITIONS = [1715, 'c1ec971168a80aeb0ede9e80cded118f1e330946232b46c222b750ca3fbc5501'] as const;
 const idHash = (ids: readonly string[]) => createHash('sha256')
   .update([...ids].sort().join('\n'))
   .digest('hex');
@@ -1091,6 +1146,13 @@ const businessAdditionIds = new Set([
   ...businessReviewed.cards,
   ...expandBusinessRoutePools(businessRoutePools.pools),
 ].map(card => card.id).filter(id => !businessOriginalIds.has(id)));
+// Engineering lane (2026-11-04 on): the 554 pre-lane cards stay frozen in the
+// deck pins; each sitting's added cards are listed in the lane's ledger
+// (scripts/markbank/authoring/eng_residue/additions.json) and counted on top,
+// pinned by their own count and hash below. Cards a sitting rebuilds under
+// their own ids are not additions and stay in the frozen hash.
+const engineeringAdditionIds = new Set<string>((JSON.parse(readFileSync(resolve(__dirname, '..',
+  'scripts/markbank/authoring/eng_residue/additions.json'), 'utf8')) as { ids: string[] }).ids);
 // Keep the original French count/hash frozen. Reviewed additions have their own
 // source-and-route audit in frenchWriting.test.ts; never rebaseline missing IDs.
 const frenchAdditionIds = new Set([
@@ -1670,8 +1732,28 @@ const isBiologyAdded = (id: string) => {
 const biologyAdditionIds = new Set([...BIO_HIGHER, ...BIO_ORDINARY]
   .map(card => card.id).filter(isBiologyAdded));
 const biologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('bio-'));
+/* 2026-11-04: History's essays, its Ordinary parts B and C and the documents
+ * question's Q4 are carded as `history-essay` rubric cards (the scheme marks
+ * them by paragraph or by Core Statement and prints no model answer); 2026 is
+ * carded for the first time; and the one documents part priced by its split
+ * alone becomes a point card. Every one is NEW: no id is replaced and the
+ * frozen History set above is unchanged, so the additions are pinned on their
+ * own below. The years before 2021 join the same way, a paper at a time,
+ * from 2020 back (lane batch 3). */
+const HISTORY_NEW_POINT_IDS = new Set(['hist-2021-ol-lm-s1-q3b']);
+const HISTORY_ADDITIONS = {
+  counts: [1775, 2419],
+  hashes: ['edd7cca52497d08fc3979826d166f90f4f0e57b385e56d918bd61fc55fc4c69d', 'bdd6851049300440081b2e6e59d5695fcbd0466a08b7a95594508aeb9651eb28'],
+};
+// The deferred sittings (2022-2023, "hist-2023-hl-deferred-lm-...") join the
+// same way, each its own sitting and every id new.
+const historyEssayIds = new Set([...HISTORY_HIGHER, ...HISTORY_ORDINARY]
+  .filter(card => card.kind === 'rubric' || card.year === 2026 || card.year <= 2020 || HISTORY_NEW_POINT_IDS.has(card.id)
+    || card.id.includes('-deferred-'))
+  .map(card => card.id));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
+  if (name.startsWith('history:')) return ids.filter(id => !historyEssayIds.has(id));
   if (name === 'technology:higher') {
     // The reviewed split of 2024 Higher B3(d) replaces its one old card with
     // two independently priced tasks. Keep the old progress identity in the
@@ -1690,6 +1772,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
     ];
   }
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
+  if (name.startsWith('engineering:')) return ids.filter(id => !engineeringAdditionIds.has(id));
   if (name.startsWith('biology:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
     return [...ids.filter(id => !isBiologyAdded(id)), ...biologyAliasIds.filter(id => id.includes(level))];
@@ -1773,6 +1856,61 @@ describe('Mark Bank card preservation', () => {
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
     expect(idHash(additions)).toBe(hash);
+  });
+
+  it('pins the Engineering lane additions beside the frozen set', () => {
+    // One line per sitting, as each lands (eng_residue/<sitting>.py says why
+    // every card exists; rebuilt cards keep their ids and are not listed).
+    //   2021 HL: +9 (554 -> 563); q2-d-ii, q3-b-iii, q5-b-i, q5-b-iii, q7-c-i rebuilt in place
+    //   2021 OL: +18 (563 -> 581); q1-i, q3-d, q3-d-i, q3-d-ii, q7-a-i, q7-c-ii rebuilt in place
+    //   2022 HL: +10 (581 -> 591); q3-b-i rebuilt in place
+    //   2022 OL: +17 (591 -> 608; two more than its 15 open asks: Q3(d)'s OR branch carded per roman); q3-d, q3-d-i rebuilt in place
+    //   2023 HL: +12 (608 -> 620); q3-b-i, q3-b-ii, q3-b-iii rebuilt in place
+    //   2023 OL: +9 (620 -> 629); q2-c-ii, q3-d-i, q3-d-ii, q5-a-ii, q6-c-i, q7-b-i, q7-b-iv rebuilt in place
+    //   2024 HL: +9 (629 -> 638); q7-a-iii, q9-b-ii rebuilt in place
+    //   2024 OL: +16 (638 -> 654; Q6(c)(ii)/(iii)'s CNC branch carded apart, priced differently); q1-k, q2-b-iii, q2-c-ii, q3-a, q5-a-ii, q6-a, q6-b, q6-c-ii, q6-c-iii, q7-a-i, q7-b, q7-b-iv rebuilt in place
+    //   2025 HL: +10 (654 -> 664; Q3(b)(i) and (ii) on one card, one graph answering both); q3-b-iii rebuilt in place
+    //   2025 OL: +24 (664 -> 688); eng-2025-ol-q2-c-i stays withdrawn, its successor is q2-c-i-v2; q1-l, q2-c-ii, q3-a, q4-c-i, q4-c-iv, q5-a-i, q5-d, q6-c-i, q6-c-iii rebuilt in place
+    //   2026 HL: +89 (688 -> 777; the sitting's first cards; Q6(c)'s robotic-arm branch carded apart, priced differently)
+    //   2026 OL: +60 (777 -> 837; the sitting's first cards; Q7(c)'s PCB branch carded apart, priced differently)
+    //   2020 HL: +78 (837 -> 915; the sitting's first cards; Q1 Section B (n)-(r) newly in the census; Q7(c)'s CNC branch carded apart, priced differently)
+    //   2019 HL: +75 (915 -> 990)
+    //   2019 OL: +53 (990 -> 1043)
+    //   2018 HL: +76 (1043 -> 1119)
+    //   2018 OL: +54 (1119 -> 1173)
+    //   2017 HL: +76 (1173 -> 1249)
+    //   2017 OL: +50 (1249 -> 1299)
+    //   2016 HL: +73 (1299 -> 1372)
+    //   2016 OL: +48 (1372 -> 1420)
+    //   2015 HL: +66
+    //   2015 OL: +49
+    //   2014 HL: +70
+    //   2014 OL: +46
+    //   2013 HL: +72
+    //   2013 OL: +46
+    //   2012 HL: +72
+    //   2012 OL: +45
+    //   2011 HL: +70
+    //   2011 OL: +46
+    //   2010 HL: +69
+    //   2010 OL: +42
+    //   2022 HL deferred: +74
+    //   2023 HL deferred: +82
+    const live = new Set([...ENGINEERING_HIGHER, ...ENGINEERING_ORDINARY].map(card => card.id));
+    for (const id of engineeringAdditionIds) expect(live.has(id), `missing Engineering addition ${id}`).toBe(true);
+    expect(engineeringAdditionIds.size).toBe(ENGINEERING_ADDITIONS[0]);
+    expect(idHash([...engineeringAdditionIds])).toBe(ENGINEERING_ADDITIONS[1]);
+  });
+
+  it('pins the History additions beside the frozen set', () => {
+    // Re-pinned at every History sitting (lane batch 2): the counts and hashes
+    // are the additions as shipped, so a regeneration that drops or renames
+    // one fails here.
+    const higher = HISTORY_HIGHER.map(card => card.id).filter(id => historyEssayIds.has(id));
+    const ordinary = HISTORY_ORDINARY.map(card => card.id).filter(id => historyEssayIds.has(id));
+    expect([higher.length, ordinary.length]).toEqual(HISTORY_ADDITIONS.counts);
+    expect([idHash(higher), idHash(ordinary)]).toEqual(HISTORY_ADDITIONS.hashes);
+    for (const id of [...higher, ...ordinary]) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
   });
 
   it.each(Object.entries(dcgAdditions))('pins the DCG %s 2010-2018 additions beside the frozen set', (_, [cards, count, hash]) => {
@@ -1875,10 +2013,64 @@ describe('Mark Bank card preservation', () => {
     // and 2022 OL C2(d) split into (i) and (ii), the old id aliased onto (i):
     // 23,254 + 87 + 1 = 23,342. Then the whole-bank audit: 2024 HL B3(d)
     // split the same way (the scheme misprints its "(ii)" as "(iii)"): 23,343.
+    // Computer Science (2026-11-05, the every-printed-ask lane): its 336 cards
+    // are unchanged and each sitting's open asks are carded on top, none
+    // withdrawn. 2026 Higher, 48 asks, 48 cards: 23,391. 2026 Ordinary, 41
+    // asks, 41 cards: 23,432.
+    // 2025 Higher residue, 15 asks, 15 cards: 23,447.
+    // 2025 Ordinary residue, 8 asks, 8 cards: 23,455.
+    // 2024 Higher residue, 3 asks, 3 cards: 23,458.
+    // 2024 Ordinary residue, 3 asks, 3 cards: 23,461.
+    // 2023 Higher residue, 10 asks, 10 cards: 23,471.
+    // 2023 Ordinary residue, 10 asks, 10 cards: 23,481.
+    // 2022 Higher residue, 8 asks, 8 cards: 23,489.
+    // 2022 Ordinary residue, 16 asks, 16 cards: 23,505.
+    // 2021 Higher residue, 9 asks, 9 cards: 23,514.
+    // 2021 Ordinary residue, 4 asks, 4 cards: 23,518.
+    // 2020 Higher, 47 asks, 47 cards: 23,565.
+    // 2023 Ordinary Q13 split, -1 whole + 5 parts: 23,569.
+    // 2025 Ordinary splits, -3 whole + 5 parts: 23,571.
+    // 2022 Higher split, -1 whole + 2 parts: 23,572.
+    // 2022 Ordinary Q16 split, -1 whole + 7 parts: 23,578.
+    // 2024 Ordinary Q16 split, -1 whole + 6 parts: 23,583.
+    // 2021 Ordinary splits, -2 whole + 8 parts: 23,589.
+    // Religious Education 2026 Higher, 28 asks, 28 band-grid cards: 23,617.
+    // Religious Education 2026 Ordinary, 29 asks, 29 band-grid cards: 23,646.
+    // Religious Education 2025 Higher rebuilt in place, 28 ids kept: 23,646.
+    // Religious Education 2025 Ordinary rebuilt in place, 33 ids kept: 23,646.
+    // Religious Education 2020 Higher, 25 asks, 25 band-grid cards: 23,671.
+    // Religious Education 2019 Higher, 25 asks, 24 band-grid cards (I(b)(i) held): 23,695.
+    // Religious Education 2019 Ordinary, 23 asks, 23 band-grid cards: 23,718.
+    // Religious Education 2018 Higher, 23 asks, 22 band-grid cards (B(a)(i) held): 23,740.
+    // Religious Education 2018 Ordinary, 27 asks, 27 band-grid cards: 23,767.
+    // Religious Education 2019 HL I(b)(i) and 2018 HL B(a)(i), 2 band-grid cards: 23,769.
+    // Religious Education 2017 Higher, 21 asks, 21 band-grid cards: 23,790.
+    // Religious Education 2017 Ordinary, 26 asks, 25 band-grid cards (1 held): 23,815.
+    // Religious Education 2016 Higher, 18 asks, 18 band-grid cards: 23,833.
+    // Religious Education 2016 Ordinary, 26 asks, 20 band-grid cards (6 held): 23,853.
+    // Religious Education 2015 Higher, 24 asks, 23 band-grid cards (1 held): 23,876.
+    // Religious Education 2015 Ordinary, 26 asks, 26 band-grid cards: 23,902.
+    // Religious Education 2014 Higher, 19 asks, 19 band-grid cards: 23,921.
+    // Religious Education 2014 Ordinary, 23 asks, 20 band-grid cards (3 held): 23,941.
+    // Religious Education 2017 Higher re-read, 21 ids kept: 23,941.
+    // Religious Education 2017 Ordinary C(a) carded: 23,942.
+    // Religious Education 2016 Higher re-read, 18 ids kept: 23,942.
+    // Religious Education 2016 Ordinary, six held asks carded: 23,948.
+    // Religious Education 2015 Higher B(a)(ii) carded: 23,949.
+    // Religious Education 2015 Ordinary re-read, 26 ids kept: 23,949.
+    // Religious Education 2014 Higher re-read, 19 ids kept: 23,949.
+    // Religious Education 2014 Ordinary, three held asks carded: 23,952.
+    // Religious Education 2012 Higher, 20 asks, 20 band-grid cards: 23,972.
+    // Religious Education 2012 Ordinary, 25 asks, 25 band-grid cards: 23,997.
+    // Religious Education 2011 Higher, 20 asks, 20 band-grid cards: 24,017.
+    // Religious Education 2011 Ordinary, 24 asks, 24 band-grid cards: 24,041.
+    // Religious Education 2010 Higher, 19 asks, 19 band-grid cards: 24,060.
+    // Religious Education 2010 Ordinary, 27 asks, 27 band-grid cards: 24,087.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length
         // Technology's 2010-2019 and DCG's 2010-2018 additions count on top of the bank the same way.
         : name.startsWith('technology:') ? cards.filter(card => isTechnologyAdded(card.id)).length
+        : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length
         : name.startsWith('dcg:') ? cards.filter(card => isDcgAdded(card.id)).length : 0;
     const technologyAddedCount = [...TECHNOLOGY_HIGHER, ...TECHNOLOGY_ORDINARY]
       .filter(card => isTechnologyAdded(card.id)).length;
@@ -1891,21 +2083,24 @@ describe('Mark Bank card preservation', () => {
     const economicsFrozenDelta = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('economics:') || name.startsWith('agricultural-science:') || name.startsWith('construction-studies:')
         || name.startsWith('geography:') || name.startsWith('english:') || name.startsWith('biology:')
-        || name.startsWith('chemistry:')
+        || name.startsWith('chemistry:') || name.startsWith('history:')
         ? frozenIds(name, cards).length - cards.length : 0;
     const artNet = artAdded('higher') + artAdded('ordinary') - artAliasIds.length;
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(23_343 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(24_087 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(23_343 + frenchAdditionIds.size + businessAdditionIds.size + technologyAddedCount + dcgAddedCount
+      .toBe(24_087 + frenchAdditionIds.size + businessAdditionIds.size + technologyAddedCount + dcgAddedCount
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length
         + englishAdditionIds.size - englishAliasIds.length
         + biologyAdditionIds.size - biologyAliasIds.length
-        + chemistryAdded.size - chemistryWithdrawnShipped.length);
+        + chemistryAdded.size - chemistryWithdrawnShipped.length
+        + engineeringAdditionIds.size
+        // History (2026-11-04): its 749 frozen cards gain the essay cards: + historyEssayIds.
+        + historyEssayIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -2275,9 +2470,14 @@ describe('Mark Bank card preservation', () => {
     // carded as (i) and (ii) with the old id reading its progress from (i).
     const technologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('tech-'));
     expect(technologyAliasIds).toEqual(['tech-2022-ol-c2d', 'tech-2024-hl-b3d']);
+    // ...and the Computer Science batch 1b splits (cs- keys, coordinator 5 Nov): a
+    // shipped card for a whole question beside that question's part cards is
+    // withdrawn onto the question's first new part card.
+    const computerScienceAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('cs-'));
+    expect(computerScienceAliasIds).toEqual(['cs-2021-ol-q15', 'cs-2021-ol-q16', 'cs-2022-hl-q14', 'cs-2022-ol-q16', 'cs-2023-ol-q13', 'cs-2024-ol-q16', 'cs-2025-ol-q13', 'cs-2025-ol-q14', 'cs-2025-ol-q15']);
     expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length
       + geographyAliasedIds.length + englishAliasIds.length + biologyAliasIds.length
-      + chemistryAuditAliases.length + technologyAliasIds.length);
+      + chemistryAuditAliases.length + technologyAliasIds.length + computerScienceAliasIds.length);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -2335,8 +2535,9 @@ describe('Mark Bank card preservation', () => {
     // withdrew, now alias keys: net 0), and its audit aliased eighteen
     // pre-audit ids the base build never shipped (+18).
     // Technology is a new subject, outside this tally; its alias key is not
-    // one of these cards.
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length - technologyAliasIds.length).toBe(9_768 + 18);
+    // one of these cards. Nor are Computer Science's (a new subject too).
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length - technologyAliasIds.length
+      - computerScienceAliasIds.length).toBe(9_768 + 18);
   });
 
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {

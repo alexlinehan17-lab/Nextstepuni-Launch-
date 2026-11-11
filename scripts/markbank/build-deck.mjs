@@ -26,7 +26,7 @@ import { execFileSync } from 'node:child_process';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { resolvePaperFileid, resolveCompanionFileid, corpusSubjectFor, deferredPaperEntry } from './paperIndex.mjs';
+import { resolvePaperFileid, resolveCompanionFileid, corpusSubjectFor, paperEntry, deferredPaperEntry } from './paperIndex.mjs';
 import { normalise, comparableScheme, claimMatches } from './schemeText.mjs';
 import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
 import { isContentFreeRow } from './contentFree.mjs';
@@ -612,6 +612,60 @@ const schemeCache = new Map();
  *  printed ask. Mirrors UNPRINTED_ANSWER in types/markBank.ts. */
 const UNPRINTED_ANSWER = 'The scheme prints no answer for this part.';
 
+/** The one line on a History essay card that is NextStepUni's, not the SEC's.
+ *  Mirrors HISTORY_ESSAY_NO_MODEL_ANSWER in types/markBank.ts; the panel prints
+ *  it, so no card carries it as data. */
+const HISTORY_ESSAY_NO_MODEL_ANSWER = 'The scheme prints no model answer for this question.';
+
+/**
+ * A History essay rubric card (types/markBank.ts HistoryEssayRubric), checked
+ * the way a point card's rows are: every string the card shows from the
+ * scheme must be found in that year's scheme, the two ladders must cover
+ * their marks exactly once, and CM + OE must be the paper's total. Returns
+ * the reason to drop the card, or null.
+ */
+function historyEssayFault(c, scheme) {
+  const r = c.rubric;
+  if (SUBJECT_ID !== 'history' || r?.system !== 'history-essay') return 'a rubric card here must be a History essay';
+  if ('schemeFileid' in r) return 'schemeFileid is resolved by the build, never authored';
+  const ladder = (bands, top) => {
+    const marks = bands.flatMap(b => b.marks).sort((a, b) => a - b);
+    return bands.length > 0 && marks.length === top + 1 && marks.every((m, i) => m === i)
+      && bands.every(b => b.marks.length && b.marks.every((m, i) => Number.isInteger(m) && (i === 0 || m === b.marks[i - 1] + 1))
+        && b.printed.startsWith(`${b.label}: ${b.marks[0]}-${b.marks.at(-1)} mark`));
+  };
+  const { cm, oe } = r;
+  if (cm.max + (oe?.max ?? 0) !== c.totalMarks) return `CM ${cm.max} + OE ${oe?.max ?? 0} is not the paper's ${c.totalMarks}`;
+  if (cm.mode === 'paragraph') {
+    const top = Math.max(...cm.bands.flatMap(b => b.marks));
+    if (!ladder(cm.bands, top) || top > cm.max) return 'the CM paragraph ladder does not cover its marks once';
+  } else if (cm.mode === 'core-statement') {
+    // The value and the partial range are READ from the scheme's own
+    // procedure sentences, which must themselves trace below.
+    if (!cm.procedure.some(line => line.includes(`awarded ${cm.perStatement} marks`))) return 'the Core Statement value is not the printed one';
+    if (!cm.procedure.some(line => line.includes(`merit ${cm.incomplete[0]}-${cm.incomplete.at(-1)} marks`))) return 'the incomplete Core Statement marks are not the printed ones';
+  } else return `unknown CM mode ${cm.mode}`;
+  if (oe && !ladder(oe.bands, oe.max)) return 'the OE ladder does not cover 0 to its maximum once';
+  if (cm.elementRule && !(cm.elementRule.caps.length && cm.elementRule.caps.every(cap => cap.max > 0 && cap.max < cm.max
+    && cm.elementRule.note.includes(cap.when)))) return 'a NOTE ceiling is not below the CM maximum or not in its note';
+  if (!r.schemePages?.length || !r.schemePages.every(page => Number.isInteger(page) && page > 0)) return 'no scheme pages';
+  const lifted = [
+    ...r.schemeGuidance, cm.definition, ...cm.directions,
+    ...(cm.mode === 'paragraph'
+      ? [cm.paragraphLead, ...cm.paragraphKinds, ...cm.bands.map(b => `${b.printed}${b.descriptor ? ` ${b.descriptor}` : ''}`)]
+      : [cm.statementLead, ...cm.statementKinds, cm.procedureLead, ...cm.procedure]),
+    // A note set out over several printed lines (2018 Q4's elements, then its
+    // ceiling under the CM and OE maxima) is traced a line at a time.
+    ...(cm.elementRule ? cm.elementRule.note.split('\n') : []),
+    ...(oe ? [...oe.bands.map(b => `${b.printed}${b.descriptor ? ` ${b.descriptor}` : ''}`),
+      ...[oe.definition, oe.lead, oe.directionsLead].filter(Boolean), ...oe.directions] : []),
+  ];
+  const untraced = lifted.find(text => !String(text).trim() || !claimMatches(scheme, text));
+  if (untraced !== undefined) return `a marking line not found in the ${c.year} ${c.level} scheme, "${String(untraced).slice(0, 60)}"`;
+  if (lifted.includes(HISTORY_ESSAY_NO_MODEL_ANSWER)) return 'the no-model-answer line is the panel\'s, not data';
+  return null;
+}
+
 /** The level tokens a deck may carry.
  *
  * 'common' is not a third grade of difficulty: LCVP's Link Modules paper is
@@ -625,14 +679,20 @@ const LEVEL_TOKEN = { higher: 'hl', ordinary: 'ol', common: 'cl' };
 const LEVEL_WORD = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common' };
 
 /* A card from the SEC's DEFERRED sitting ("econ-2022-hl-deferred-sa-q1-a",
- * cited "... — Deferred sitting"): its own paper, scheme and index entry.
- * History marks its deferred cards the same way on claude/history-lane-
- * 20261104 (c1306cc45), and Physics, Home Economics and Maths theirs on
- * codex/home-economics-continuation-20261101. No other subject's id matches,
- * so every other deck builds exactly as before. */
-const DEFERRED_ID = { economics: /^econ-\d{4}-(?:hl|ol)-deferred-/ };
+ * "eng-2022-hl-deferred-q1-a",
+ * "hist-2023-hl-deferred-lm-s1-q1a", cited "... — Deferred sitting"): its own
+ * paper, scheme and index entry. Physics, Home Economics and Maths mark theirs
+ * the same way on codex/home-economics-continuation-20261101. No other
+ * subject's id matches, so every other deck builds exactly as before. */
+const DEFERRED_ID = {
+  economics: /^econ-\d{4}-(?:hl|ol)-deferred-/,
+  engineering: /^eng-\d{4}-(?:hl|ol)-deferred-/,
+  history: /^hist-\d{4}-(?:hl|ol)-deferred-/,
+};
 const deferredCard = (subjectId, card) =>
   Boolean(DEFERRED_ID[subjectId]?.test(String(card?.id ?? '')));
+const historyDeferred = (subjectId, card) =>
+  subjectId === 'history' && deferredCard(subjectId, card);
 
 function schemeFor(subjectId, card) {
   const deferred = deferredCard(subjectId, card);
@@ -859,8 +919,13 @@ const input = JSON.parse(readFileSync(cardsPath, 'utf8'));
 const rawCards = Array.isArray(input) ? input : (input.accepted ?? input.cards ?? []);
 
 /* The subject comes from the cards. Mixed input is a mistake, not a feature:
- * one run writes one subject's modules, so a stray card would vanish silently. */
-const subjectIds = [...new Set(rawCards.map(c => c.subjectId ?? 'biology'))];
+ * one run writes one subject's modules, so a stray card would vanish silently.
+ * Religious Education's point file empties once every shipped sitting is a
+ * band-grid card (rubric-authored.json), and that empty file is still its
+ * deck's input: the subject is then read off the file's own name. */
+const subjectIds = rawCards.length || !/\/religious-education\.json$/.test(cardsPath)
+  ? [...new Set(rawCards.map(c => c.subjectId ?? 'biology'))]
+  : ['religious-education'];
 if (subjectIds.length !== 1) {
   console.error(`cards span ${subjectIds.length} subjects (${subjectIds.join(', ')}) — build one subject at a time`);
   process.exit(1);
@@ -1355,6 +1420,8 @@ for (const c of cards) {
 }
 
 const out = [];
+/** History essay rubric cards: each level's distinct marking-by-paragraph apparatus, as emitted. */
+const historyEssayMarking = { higher: [], ordinary: [], common: [] };
 const dropped = [];
 const repaired = [];
 const overCap = [];
@@ -1363,6 +1430,58 @@ const seenHash = new Map();
 let unresolvedPapers = 0;
 
 for (const c of cards) {
+  /* A History essay is a RUBRIC card: no rows, a paragraph-marking apparatus
+   * instead. It gets its own gates and its own literal, and nothing else in
+   * this loop applies to it. No other subject authors kind 'rubric' into its
+   * JSON (Business's rubric cards arrive by rubric-authored.json), so every
+   * other deck takes exactly the path it took before. */
+  if (c.kind === 'rubric') {
+    if (seenId.has(c.id)) { dropped.push(`${c.id}: duplicate id`); continue; }
+    const badQ = badQuestion(c.questionText, c);
+    if (badQ) { dropped.push(`${c.id}: ${badQ} — "${c.questionText}"`); continue; }
+    const scheme = schemeFor(SUBJECT_ID, c);
+    if (!scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
+    const fault = historyEssayFault(c, scheme);
+    if (fault) { dropped.push(`${c.id}: ${fault}`); continue; }
+    repairGlyphs(c);
+    const mangled = mangledText(c);
+    if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
+    const deferredEntry = historyDeferred(SUBJECT_ID, c) ? deferredPaperEntry(SUBJECT_ID, c.year, c.level) : null;
+    const fileid = deferredEntry
+      ? String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null
+      : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
+    if (!fileid) unresolvedPapers++;
+    // ONE scheme answers both fields of study, indexed under History itself.
+    const schemeFile = (deferredEntry ?? paperEntry(SUBJECT_ID, c.year, c.level))?.papers?.find(p => p.scheme?.f)?.scheme?.f;
+    if (!schemeFile) { dropped.push(`${c.id}: no scheme document in the Paper Trail index`); continue; }
+    const rubric = { ...c.rubric, schemeFileid: String(schemeFile).replace(/\.pdf$/i, '') };
+    /* A sitting's marking by paragraph is the same for every essay on it
+     * (and for its Q4, the other unit): emitted once per level module as
+     * ESSAY_MARKING and spread into each card, which adds only what is its
+     * own -- the scheme pages and the question's NOTE. Inlined whole it put
+     * 4 KB of identical ladders on every card. */
+    const { schemePages, cm: { elementRule, ...cmShared }, ...rest } = rubric;
+    const marking = historyEssayMarking[c.level];
+    const shared = JSON.stringify({ ...rest, cm: cmShared }, null, 1);
+    if (!marking.includes(shared)) marking.push(shared);
+    const ref = `ESSAY_MARKING[${marking.indexOf(shared)}]`;
+    const rubricCode = elementRule
+      ? `{ ...${ref}, cm: { ...${ref}.cm, elementRule: ${JSON.stringify(elementRule)} }, schemePages: ${JSON.stringify(schemePages)} }`
+      : `{ ...${ref}, schemePages: ${JSON.stringify(schemePages)} }`;
+    seenId.add(c.id);
+    out.push({ id: c.id, level: c.level, code: `  {
+    ...base, kind: "rubric",
+    year: ${c.year}, level: ${q(c.level)},
+    paperFileid: ${fileid ? q(fileid) : 'null'},
+    schemeCitation: ${q(`Marking ${c.rubric.cm.mode === 'core-statement' ? 'by Core Statement' : 'by paragraph'} quoted from the SEC marking scheme, ${SUBJECT.title} ${c.year} ${LEVEL_WORD[c.level] ?? 'Higher'} Level${deferredEntry ? ', deferred examination' : ''} — © State Examinations Commission.`)},
+    id: ${q(c.id)}, topicId: ${q(c.topicId)}, conceptId: ${q(c.conceptId)},
+    section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
+    questionText: ${q(c.questionText)},
+    totalMarks: ${c.totalMarks},
+    rubric: ${rubricCode},
+  } as SecCard,` });
+    continue;
+  }
   if (c.questionFigureIncludesPrompt !== undefined
       && (typeof c.questionFigureIncludesPrompt !== 'boolean' || !c.questionFigureKey)) {
     throw new Error(`${c.id}: questionFigureIncludesPrompt requires a question figure and a boolean value`);
@@ -1483,7 +1602,17 @@ for (const c of cards) {
   // "labelled X" as an anatomy-style label dropped two complete Maths cards.
   const selfNamingMathsPoints = SUBJECT_ID === 'maths'
     && /\b(?:points?|complex numbers?),?\s+(?:which are\s+)?labelled\s+[A-Z]\b/i.test(c.questionText);
-  const namesLetters = !invitesDrawing && !selfNamingMathsPoints
+  // Engineering labels a picture's parts with their own NAMES -- "roll cage",
+  // "seat", "wheel rim" round the 2022 Ordinary dune buggy -- and asks for "a
+  // suitable material for each of the labelled parts". The printed label is
+  // the decoding; there is no letter to key. Only the bare "labelled parts"
+  // phrase, never a capital letter, and only with the picture on the question
+  // side. Engineering only, like the Maths case above: no other deck's
+  // verdict can move.
+  const wordLabelledEngineering = SUBJECT_ID === 'engineering' && Boolean(c.questionFigureKey)
+    && /\blabelled\s+parts\b/.test(c.questionText)
+    && !/\blabelled [A-Z]\b|\bstructures? [A-Z](,| and )|\bparts? [A-Z](,| and )/.test(c.questionText);
+  const namesLetters = !invitesDrawing && !selfNamingMathsPoints && !wordLabelledEngineering
     && /\blabelled [A-Z]\b|\bstructures? [A-Z](,| and )|\bparts? [A-Z](,| and )|\blabelled\s+(parts|structures)\b/.test(c.questionText);
   // Not merely "has a figure": a question about labelled parts needs those
   // labels DECODED, so it must carry a label key as well as the picture.
@@ -1728,9 +1857,15 @@ if (businessRubrics.length) {
 // Subject-specific imports for the generated module. A subject with none gets
 // no line for them, so its module stays byte-identical to the one it had
 // before French and Applied Maths added theirs.
+// Religious Education's band-grid cards (re_lane.py) live beside the point
+// deck in rubric-authored.json; the sittings rebuilt into them have left the
+// point-card source, so each printed ask is carded once.
+const reRubricCards = SUBJECT_ID === 'religious-education' && existsSync(resolve(OUT_DIR, 'rubric-authored.json'))
+  ? JSON.parse(readFileSync(resolve(OUT_DIR, 'rubric-authored.json'), 'utf8')).cards : [];
 const moduleImports = SUBJECT_ID === 'applied-maths' ? "import { withReviewedCards } from './reviewed';"
   : SUBJECT_ID === 'french' ? "import { writingCardsForLevel } from './writing';\nimport { readingCardsForLevel } from './reading';\nimport { clozeCardsForLevel } from './cloze';\nimport { listeningCardsForLevel } from './listening';\n"
-    : businessRubrics.length ? "import { businessRubricCards } from './rubric';\n" : '';
+    : businessRubrics.length ? "import { businessRubricCards } from './rubric';\n"
+      : reRubricCards.length ? "import { rubricCardsForLevel } from './rubric';\n" : '';
 // Cards carrying exam-year curriculum nodes (Agricultural Science's reviewed
 // historical papers) spread examCardCurriculum into each card, so their level
 // module imports it. Every other module's import line is unchanged.
@@ -1754,7 +1889,7 @@ const moduleFor = (level, cards) => `/**
  * ${SUBJECT.specNote}
  */
 
-import type { SecCard } from '../../../../types/markBank';
+import type { ${historyEssayMarking[level]?.length ? 'HistoryEssayRubric, ' : ''}SecCard } from '../../../../types/markBank';
 ${moduleImportsFor(level) ? `${moduleImportsFor(level)}\n` : ''}${cards.length ? `
 const base = {
   source: 'sec' as const,
@@ -1762,10 +1897,16 @@ const base = {
   specVersion: ${q(SUBJECT.specVersion)},
   qa: { gates: ['verbatim', 'tariff', 'figure'], humanReviewedBy: 'agent-verified', humanReviewedAt: '2026-07-31' },
 };
+` : ''}${historyEssayMarking[level]?.length ? `
+/* The scheme's marking by paragraph, once per sitting and unit (a Section 2
+ * or 3 essay, or the documents question's Q4), spread into each essay card. */
+const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
+${historyEssayMarking[level].map(json => `  ${json.replace(/\n/g, '\n  ')},`).join('\n')}
+];
 ` : ''}
 export const CARDS: SecCard[] = ${SUBJECT_ID === 'applied-maths' ? 'withReviewedCards(' : ''}[
 ${cards.join('\n')}
-${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readingCardsForLevel(${q(level)}),\n  ...clozeCardsForLevel(${q(level)}),\n  ...listeningCardsForLevel(${q(level)}),\n` : businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : ''}]${SUBJECT_ID === 'applied-maths' ? `, '${level}')` : ''};
+${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readingCardsForLevel(${q(level)}),\n  ...clozeCardsForLevel(${q(level)}),\n  ...listeningCardsForLevel(${q(level)}),\n` : businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : reRubricCards.length ? `  ...rubricCardsForLevel(${q(level)}),\n` : ''}]${SUBJECT_ID === 'applied-maths' ? `, '${level}')` : ''};
 `;
 
 /* A level gets a module when the subject HAS that level, never as a matter of
@@ -1774,10 +1915,11 @@ ${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readi
  * always rewritten, so a subject that loses every card at a level still ends
  * up with an honestly empty module rather than a stale one. */
 const sizes = {};
-const rubricIds = new Set(businessRubrics.map(card => card.id));
+const rubricIds = new Set([...businessRubrics, ...reRubricCards].map(card => card.id));
 for (const level of LEVELS) {
   const levelCards = out.filter(c => c.level === level && !rubricIds.has(c.id)).map(c => c.code);
-  const levelRubrics = businessRubrics.filter(card => card.level === level).length;
+  const levelRubrics = businessRubrics.filter(card => card.level === level).length
+    + reRubricCards.filter(card => card.level === level).length;
   const path = resolve(OUT_DIR, `${level}.ts`);
   if (!levelCards.length && !levelRubrics && !existsSync(path)) continue;
   writeFileSync(path, moduleFor(level, levelCards));

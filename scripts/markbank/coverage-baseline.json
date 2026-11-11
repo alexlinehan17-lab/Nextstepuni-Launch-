@@ -168,19 +168,19 @@
     "refsHash": "d22e9502e212efb6"
   },
   "computer-science": {
-    "cards": 336,
-    "contentHash": "a98238edb379ba3a",
-    "coveragePct": 82.2,
-    "covered": 398,
+    "cards": 582,
+    "contentHash": "023d1dc407016e6e",
+    "coveragePct": 100.0,
+    "covered": 620,
     "excluded": 0,
-    "leaves": 484,
-    "open": 86,
+    "leaves": 620,
+    "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 20,
-      "hash": "4eb8d8bb7c8ce50b"
+      "count": 26,
+      "hash": "73a50648a2aeefe2"
     },
-    "refsHash": "ba197c3dcfdb616b"
+    "refsHash": "6dcc84c8a1d24027"
   },
   "construction-studies": {
     "cards": 1261,
@@ -288,19 +288,19 @@
     "refsHash": "503f614d5e735dc3"
   },
   "engineering": {
-    "cards": 554,
-    "contentHash": "be3d66f30f1d86b3",
-    "coveragePct": 83.2,
-    "covered": 679,
+    "cards": 2269,
+    "contentHash": "b4bd45ce5785d0e7",
+    "coveragePct": 100.0,
+    "covered": 2807,
     "excluded": 0,
-    "leaves": 816,
-    "open": 137,
+    "leaves": 2807,
+    "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 10,
-      "hash": "d6f8e4ccadef7bbf"
+      "count": 62,
+      "hash": "2aec42953a94588e"
     },
-    "refsHash": "9804a181ceb67113"
+    "refsHash": "54b019b55d441af5"
   },
   "english": {
     "cards": 2685,
@@ -393,19 +393,19 @@
     "refsHash": "39be4a22419bc8c6"
   },
   "history": {
-    "cards": 749,
-    "contentHash": "5a5803ac3a0f3bfe",
+    "cards": 4943,
+    "contentHash": "85712f0b53bc9068",
     "coveragePct": 100.0,
-    "covered": 749,
-    "excluded": 681,
-    "leaves": 1430,
+    "covered": 4943,
+    "excluded": 0,
+    "leaves": 4943,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 20,
-      "hash": "cb5c8677ec1bca17"
+      "count": 66,
+      "hash": "c5dad2eeaf2c2bfd"
     },
-    "refsHash": "eab7907b0ead2f31"
+    "refsHash": "1a23027de607a73b"
   },
   "home-economics": {
     "cards": 549,
@@ -678,19 +678,19 @@
     "refsHash": "c737847455bc4dc6"
   },
   "religious-education": {
-    "cards": 288,
-    "contentHash": "674bdf82cd359c98",
+    "cards": 786,
+    "contentHash": "50593cccbc5dc4bb",
     "coveragePct": 100.0,
-    "covered": 288,
+    "covered": 786,
     "excluded": 0,
-    "leaves": 288,
+    "leaves": 786,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 10,
-      "hash": "df029832e957a46e"
+      "count": 31,
+      "hash": "138b8842e0c6dc51"
     },
-    "refsHash": "608205b9e7e5d4b8"
+    "refsHash": "3cd697c2c27583ae"
   },
   "romanian": {
     "cards": 50,

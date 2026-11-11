@@ -136,6 +136,25 @@ MARKER = re.compile(r'^\(([a-z]{1,4})\)\s*')
 # Physics (ix)-(xii), and the old alternation topped out at viii so '(ix)'
 # could never split a block or key a part.
 LETTER = re.compile(r'[a-hj-m]')
+# And past (m), for one sitting: 2020 HL Engineering sets Question 1 as Section
+# A, "(a)" to "(m)", and Section B, "(n)" to "(r)" (paper pages 3-4), each
+# Section B part with romans of its own. Read with the class above, (n) to (r)
+# were no markers at all: their romans were filed under Q1(m) and the
+# census counted 18 of Question 1's 28 asks, with no flag, because a letter
+# run that stops early has no gap in it. No roman uses n to r, so the wider
+# class cannot steal a roman. Gated to the sitting, and every 2010-2019 Higher
+# paper sets the same Section B: each was switched on only after its pages were
+# rendered and its Question 1 read against them (2026-11-04). The class alone
+# read some of them whole; the rest needed the run's markers widened with it
+# (INLINE_MARKER_WIDE, TRAILING_MARKER_WIDE, LINE_OPENING_MARKER_WIDE), a
+# lower-case roman run split (_split_roman_run) and the ninth-letter test of
+# _i_is_letter, all four used by these sittings alone. Engineering Questions 2-8
+# read identically either way in all eleven.
+LETTER_RUNS = {('engineering', y, 'hl'): re.compile(r'[a-hj-r]')
+               for y in range(2010, 2021)}
+# The marker patterns below stop at (l) or (m) for the same reason; a sitting in
+# LETTER_RUNS reads them to (r) as well (see _wide_marker).
+_WIDE_LETTERS = 'a-hj-r'
 ROMAN = re.compile(r'i{1,3}|iv|vi{0,3}|ix|xi{0,3}')
 RUBRIC = re.compile(r'^Answer (either|any|all)\b')
 # A part marker orphaned at the very end of a block: pymupdf glues a marker
@@ -146,6 +165,8 @@ RUBRIC = re.compile(r'^Answer (either|any|all)\b')
 # is never stripped.
 TRAILING_MARKER = re.compile(
     r'[.?!:]\s+(\((?:[a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\))\s*$')
+TRAILING_MARKER_WIDE = re.compile(
+    r'[.?!:]\s+(\((?:[a-hj-r]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\))\s*$')
 # A cross-reference that lands at a block start — "(b) (iii) above." — reads
 # as a real letter+roman marker and re-files the tail of the current ask into
 # an earlier leaf. 25 instances across eight Biology papers.
@@ -283,6 +304,19 @@ WELDED_HEADS = {
     # split off, Question 4's head filed as the tail of Q3(g), and its (a)-(d)
     # were read as repeats of Q3's letters and lost.
     ('biology', 2012, 'ol'): ['(g) An organ is a group of systems. T F'],
+    # 2016 OL Engineering page 3 sets Question 2's "(a)" on a line of its own
+    # under the head, and the text layer reads it into the head's block after
+    # "(45 marks)", with no full stop before it for TRAILING_MARKER to carry.
+    # With no (a) read, (b), (c) and (d) were not taken as letters either, and
+    # Question 2's asks filed as three letterless romans.
+    ('engineering', 2016, 'ol'): ['Question 2. (45 marks)'],
+    # 2014 OL Engineering page 2 reads Q1(j)-(m) as one block that ends "(m)
+    # Name the two drive systems shown at (i) and (ii). (i) (ii)": the last two
+    # markers are the labels printed beside the two drive photographs, and
+    # TRAILING_MARKER carried the "(ii)" into a part of its own (census
+    # Q1(m)(i) 'and', Q1(m)(ii) holding the page footer). Split off after the
+    # ask, the labels stand as a block FIGURE_BLOCKS takes out.
+    ('engineering', 2014, 'ol'): ['(m) Name the two drive systems shown at (i) and (ii).'],
 }
 # Subjects where a letter going BACKWARDS inside a question is never a new
 # part. Biology prints genotypes in brackets: 2020 OL Q11(c) sets the dogs'
@@ -296,6 +330,36 @@ BACKWARD_LETTER_IS_TEXT = {'biology'}
 # Each marker in such a block is read on its own.
 BARE_MARKER_RUNS = {'biology'}
 _BARE_RUN = re.compile(r'^\([a-h]\)(?:\s+\([a-h]\))+$')
+# Engineering captions a row of photographs with nothing but their romans, and
+# the text layer can hand two captions over as one block: 2026 OL Q2(d) (paper
+# page 3, y 757) sets three mechanism photographs captioned "(i)", "(ii)" and
+# "(iii)", the block "(ii) (iii)" was taken as one marker -- the last -- and
+# (ii) vanished (census flag roman-gap Q2(d), sub-markers found i and iii).
+# Each caption in such a block is read on its own, as Biology's letters are.
+# Gated to the sitting, each switched on only after its pages were rendered and
+# every caption the split recovers was found printed there (2026-11-04):
+#   2010 OL Q6(a)(iii), Q7(c)(iii); 2013 OL Q4(b)(ii), Q6(a)(i), Q7(c)(iii);
+#   2016 OL Q6(a)(iii); 2017 OL Q1(h)(i), Q7(c)(iii); 2018 OL Q2(a)(ii),
+#   Q7(c)(iii); 2019 OL Q6(a)(iii); 2026 OL Q2(d)(ii).
+# Left off where the split would put a caption somewhere the page does not:
+# 2015 OL's Q1(h) captions would take over the letter (i) and
+# lose (i)-(m). 2012 and 2014 OL lose no caption romans. On the Higher papers it
+# moves other readings (Q8(a)(i)) and is never on.
+BARE_ROMAN_RUNS = {('engineering', y, 'ol') for y in (2010, 2013, 2016, 2017, 2018, 2019, 2026)}
+# 2015 OL, switched on once FIGURE_BLOCKS takes Q1(h)'s and Q1(m)'s captions
+# out first (below): the split then recovers Q2(a)(ii), the second furnace
+# drawing's caption, and Q6(a)(iii), the third lathe component's, both printed
+# on paper page 3 and page 5 (rendered and read 2026-11-04).
+BARE_ROMAN_RUNS.add(('engineering', 2015, 'ol'))
+# 2011 OL, switched on once STRIP_SET_PAGES reads its page 5 line by line
+# (below): that text layer printed Q6(a)'s four captions after (b), so the
+# split, alone, added a (b)(iii). Read in printed order the captions fall under
+# (a), and the split recovers Q2(a)(iii), the third furnace drawing's caption
+# on page 3, and Q6(a)(i)-(iv), the four work-holding photographs' (rendered
+# and read 2026-11-05).
+BARE_ROMAN_RUNS.add(('engineering', 2011, 'ol'))
+_BARE_ROMAN = r'\((?:i{1,3}|iv|vi{0,3}|ix|x)\)'
+_BARE_ROMAN_RUN = re.compile(rf'^{_BARE_ROMAN}(?:\s+{_BARE_ROMAN})+$')
 # Chemistry prints 'Leaving Certificate Examination, 2021' (comma), Physics
 # 'Leaving Certificate, 2021' — the strict form let footers leak into leaf
 # text.
@@ -325,6 +389,9 @@ TERMINAL = re.compile(r'[.?!]$')
 # "ΔH =" straight after a formula.
 INLINE_MARKER = re.compile(
     r'\s(?=\((?:[a-hj-m]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
+    '\s+[A-Z(0-9"\u201c\u2018\'\u0391-\u03a9\U0001d400-\U0001d7ff])')
+INLINE_MARKER_WIDE = re.compile(
+    r'\s(?=\((?:[a-hj-r]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
     '\s+[A-Z(0-9"\u201c\u2018\'\u0391-\u03a9\U0001d400-\U0001d7ff])')
 # Chemistry goes further: a "(g)" or "(l)" written straight after a formula is
 # that formula's state, whatever follows it. 2019 HL Q9 ends its stem's
@@ -398,9 +465,11 @@ LINE_OPENING_MARKER = re.compile(
 ANY_SPACE_MARKER_SUBJECTS = {'chemistry'}
 LINE_OPENING_MARKER_ANY_SPACE = re.compile(
     r'^\(([a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)(?:\s*$|\s+(?=[a-z]))')
+LINE_OPENING_MARKER_WIDE = re.compile(
+    r'^\(([a-hj-r]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)(?:[ \t]*$|[ \t]+(?=[a-z]))')
 
 
-def _split_own_line_markers(raw, any_space=False):
+def _split_own_line_markers(raw, any_space=False, wide=False):
     """Flatten a block, but let a marker printed ALONE on its line start one.
 
     A block is flattened to a single line, and INLINE_MARKER -- which finds the
@@ -426,7 +495,8 @@ def _split_own_line_markers(raw, any_space=False):
     lines = [l.strip() for l in raw.splitlines() if l.strip()]
     out, cur, last = [], [], None
     for i, line in enumerate(lines):
-        m = (LINE_OPENING_MARKER_ANY_SPACE if any_space else LINE_OPENING_MARKER).match(line)
+        m = (LINE_OPENING_MARKER_WIDE if wide else
+             LINE_OPENING_MARKER_ANY_SPACE if any_space else LINE_OPENING_MARKER).match(line)
         tok = m.group(1) if m else None
         alone = m and line == m.group(0).strip()
         # Alone on its line, with the ask starting below it: a marker.
@@ -441,6 +511,13 @@ def _split_own_line_markers(raw, any_space=False):
         # sits mid-line and is rightly left alone -- into a phantom second
         # part. The census's own roman-gap flag caught it: a lone (ii).
         if cur and m and not alone and last and tok == _next_marker(last):
+            split = True
+        # A wide-run sitting (LETTER_RUNS) opens a letter's romans in lower
+        # case straight under the letter's own line: 2010 HL Engineering sets
+        # "(n)" alone, its ask, then "(i) mobile phone;", and the run test
+        # above never fires because (i) does not follow (n).
+        if wide and cur and m and not alone and tok == 'i' and last \
+                and last not in ROMAN_RUN:
             split = True
         if split:
             out.append(' '.join(' '.join(x.split()) for x in cur))
@@ -546,6 +623,41 @@ DRAWN_RULE_HEADS = {('chemistry', 2015, 'ol'): ['5. The diagram shows a small pa
 FIGURE_BLOCKS = {('chemistry', 2012, 'hl'): [
     '(i) C6H14 (l) → 4H2 (g) + (l) (ii) C14H30 (l) → C7H16 (l) + C3H6 (g) + X (g) '
     '(iii) CH3(CH2)6CH3 (l) → (l)']}
+# 2026 OL Engineering Q2(c) (paper page 3) labels its mountain-bike photograph
+# "saddle seat", "frame", "tyre" and "mountain bike" (x 291-549, y 496-641), and
+# the text layer sets those callouts after Q2(d)'s captions, so they were read
+# as the words of Q2(d)(iii), the third mechanism photograph's caption. They are
+# the photograph's labels, which Q2(c)(i) asks about ("for each of the parts
+# labelled on the mountain bike shown"): no ask is printed there. Gated to the
+# sitting.
+FIGURE_BLOCKS[('engineering', 2026, 'ol')] = ['saddle seat frame', 'tyre', 'mountain bike']
+# 2011 HL Engineering Q1(m) (paper page 3) captions its two thread drawings "(i)"
+# and "(ii)", which the ask names ("the thread machined at (i) and ... the
+# thread rolled at (ii) shown below"); read as markers, the captions made a
+# Q1(m)(ii) holding the page footer and the Section B heading. One ask, no parts.
+FIGURE_BLOCKS[('engineering', 2011, 'hl')] = ['(i) (ii)']
+# 2015 OL Engineering paper page 2. Q1(h) captions its two thread pictures
+# "(i)" and "(ii)" ("Name the thread forms suitable for each of the following:
+# (i) Engineering machine vice, (ii) Machine screw.", the names set on the same
+# line), and the text layer hands the two labels over as a block of their own
+# after Section B's "(i) Describe the main operating features ...": read as
+# markers they made the letter (i) a roman run, the census counting Q1(i)(i)
+# "...of the following: A" and Q1(i)(ii) "Spot welding machine ...". Q1(m)
+# names its two tool photographs "(i)" and "(ii)" in its own sentence ("Name
+# the two cutting tools shown at (i) and (ii).") and the labels came as two
+# more blocks, making a Q1(m)(i) with no words and a Q1(m)(ii) holding the
+# page footer. "A" is (g)'s label on the cam drawing ("Name the mechanism
+# labelled A"), read into Q1(i)'s words. All four are the pictures' labels:
+# no ask is printed there, so each part is one ask, as 2011 HL Q1(m) is.
+FIGURE_BLOCKS[('engineering', 2015, 'ol')] = ['(i) (ii)', '(i)', '(ii)', 'A']
+# 2014 OL Engineering paper page 2, the same two layouts: Q1(g) captions its
+# two thread drawings "(i)" and "(ii)" ("Identify the two thread forms
+# shown."), and the text layer sets the pair as a block of its own after
+# Section B's "(i) Describe ...", where, read as markers, it made the letter
+# (i) a roman run (the census counted Q1(i)(i) and Q1(i)(ii)); Q1(m)'s two
+# photograph labels, split off its block by WELDED_HEADS, are the same pair.
+# One ask each.
+FIGURE_BLOCKS[('engineering', 2014, 'ol')] = ['(i) (ii)']
 _TRAILING_OR = re.compile(r'\s+OR\s*$')
 _BARE_MARKER = re.compile(r'^\((?:[ivx]{1,4}|[a-m])\)$')
 
@@ -698,6 +810,24 @@ def _unweld(block, anchors):
 # level) -> {file name: pages}; strip_set_lines() reads those pages instead.
 STRIP_SET_PAGES = {
     ('biology', 2011, 'ol'): {'2011-ol-paper.pdf': (11, 12, 13)},
+    # 2013 OL Engineering page 5 sets Q6(b) and Q6(c)'s lead-in, "(c) A
+    # turning process used on a centre lathe is shown below.", in ONE text
+    # block that starts above Q6(b)'s four photograph captions, so the
+    # captions "(i) (ii) (iii) (iv)" were read after (c) and filed as (c)'s
+    # romans (census Q6(c)(iv), a part the paper does not print). Read line by
+    # line, top to bottom, the captions fall under (b) where they are printed.
+    ('engineering', 2013, 'ol'): {'2013-ol-paper.pdf': (5,)},
+    # 2011 OL Engineering page 5 the same way: Q6(a)'s four photograph
+    # captions "(i) (ii) (iii) (iv)" sit in the text layer after (b), and were
+    # read as (b)'s romans (census Q6(b)(iv), a part the paper does not print,
+    # and roman-gap Q6(b)). Read line by line they fall under (a).
+    ('engineering', 2011, 'ol'): {'2011-ol-paper.pdf': (5,)},
+    # 2010 OL Engineering page 3: Question 3's head and (a) share one block
+    # with Question 2's (d), and (a)'s two romans "(i) soften copper ...;" and
+    # "(ii) reduce the hardness ..." sit inside it indented, where the reader
+    # does not split them (census Q3(a), one leaf for two asks). Read line by
+    # line they are (a)(i) and (a)(ii).
+    ('engineering', 2010, 'ol'): {'2010-ol-paper.pdf': (3,)},
 }
 
 
@@ -734,7 +864,7 @@ def strip_set_lines(page):
     return out
 
 
-def _blocks(path, subject=None, strip_pages=(), any_space=False):
+def _blocks(path, subject=None, strip_pages=(), any_space=False, wide=False):
     """Every non-empty text block, in page then top-to-bottom, left-to-right order.
     A strip-set page (STRIP_SET_PAGES) gives one block per rebuilt line."""
     with pymupdf.open(path) as doc:
@@ -746,20 +876,30 @@ def _blocks(path, subject=None, strip_pages=(), any_space=False):
         pages = [_join_gutter_markers(p) for p in pages]
     for page in pages:
         for b in page:
-            for text in _split_own_line_markers(_repair(b[4], subject) if subject else b[4], any_space):
+            for text in _split_own_line_markers(_repair(b[4], subject) if subject else b[4], any_space,
+                                                wide):
                 if text and not PAGE_FURNITURE.match(text):
                     yield text
 
 
-def _i_is_letter(blocks, index):
+def _i_is_letter(blocks, index, letters=None):
     """Is a lone "(i)" after "(h)" the ninth letter or the first roman?
 
     Decided by what follows: a "(j)" ahead of any "(ii)" means the letter run
     continues. Chemistry 2024 HL Q4 runs (a)-(l); Biology prints (h)(i)(ii)
     roman runs. Neither side can be a default without breaking the other.
+
+    In a sitting whose letter run goes past (m) (LETTER_RUNS), a second "(i)"
+    ahead of any "(ii)" decides it too: a roman run never restarts at (i), so
+    the first was the letter and the second opens its own romans. 2010 HL
+    Engineering sets "(i) What contribution did any one of the following make
+    to technology? (i) Steve Jobs (ii) John Logie Baird (iii) John P. Holland."
+    and the old test, meeting the (ii), filed Q1(i)-(r) under (h).
     """
     for text in blocks[index + 1:index + 10]:
         t = text.strip()
+        if letters is not None and re.match(r'^\(i\)', t):
+            return True
         if re.match(r'^\(ii\)', t):
             return False
         if re.match(r'^\(j\)', t):
@@ -767,7 +907,7 @@ def _i_is_letter(blocks, index):
     return False
 
 
-def _opens_a_question(blocks, index, open_letter=None):
+def _opens_a_question(blocks, index, open_letter=None, letters=None):
     """Does a bare number here start a question, or label a graph?
 
     A question's first part is (a), or (i), or prose. So if the next part
@@ -784,7 +924,7 @@ def _opens_a_question(blocks, index, open_letter=None):
     """
     prose = False
     for text in blocks[index + 1:index + 7]:
-        letter, roman, _ = _leading(text)
+        letter, roman, _ = _leading(text, letters)
         if letter or roman:
             # A roman straight after the bare number while a letter is open is
             # that letter's own numbering (the Maths figure-label case) — but
@@ -799,15 +939,35 @@ def _opens_a_question(blocks, index, open_letter=None):
     return True
 
 
-def _leading(text):
-    """Strip leading part markers. '(a) (i) Explain x' -> ('a', 'i', 'Explain x')."""
+def _split_roman_run(piece):
+    """A piece that opens a roman run, cut before each next roman in it.
+
+    For wide-run sittings (LETTER_RUNS) only. 2010 HL Engineering prints
+    "(i) LED (ii) IC (iii) http (iv) DVD." on one line; INLINE_MARKER wants a
+    capital after a marker, so "(iii) http" stayed inside "(ii) IC". A roman
+    that CONTINUES the run the piece opens is a marker whatever its case.
+    """
+    m = re.match(r'^\((i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)\s', piece)
+    if not m:
+        return [piece]
+    nxt = _next_marker(m.group(1))
+    at = piece.find(f' ({nxt}) ') if nxt else -1
+    if at < 0:
+        return [piece]
+    return [piece[:at].strip()] + _split_roman_run(piece[at:].strip())
+
+
+def _leading(text, letters=None):
+    """Strip leading part markers. '(a) (i) Explain x' -> ('a', 'i', 'Explain x').
+
+    `letters` is the sitting's letter class where LETTER_RUNS widens it."""
     letter = roman = None
     while True:
         m = MARKER.match(text)
         if not m:
             break
         tok = m.group(1)
-        if LETTER.fullmatch(tok):
+        if (letters or LETTER).fullmatch(tok):
             letter, roman = tok, None
         elif ROMAN.fullmatch(tok):
             roman = tok
@@ -858,6 +1018,7 @@ class Paper:
         dot_heads = 0            # how many 'N.'-style heads were accepted
         qkind = {}               # q -> 'letter'|'roman': which marker opened it
         blocks = list(self._all_blocks())
+        letters = LETTER_RUNS.get((subject, year, level))
         # A contents page lists "Question 12", "Question 13" and so on as bare
         # blocks with nothing under them. The second Biology booklet prints one,
         # and reading those as heads walked the parser up to 15 before the real
@@ -896,7 +1057,7 @@ class Paper:
 
         def _opens_part(i):
             m = re.match(r'^\d{1,2}\.\s+', blocks[i])
-            return m is not None and _leading(blocks[i][m.end():])[:2] != (None, None)
+            return m is not None and _leading(blocks[i][m.end():], letters)[:2] != (None, None)
 
         dotted = collections.defaultdict(list)
         for i in range(len(blocks)):
@@ -992,7 +1153,7 @@ class Paper:
                                       == loose.group(1))))
                 if loose and dot_heads and (index not in axis or twin_page) \
                         and int(loose.group(1)) == q + 1 \
-                        and _opens_a_question(blocks, index, letter):
+                        and _opens_a_question(blocks, index, letter, letters):
                     text = f'{loose.group(1)}. {text[loose.end():]}'.strip()
                     m = QHEAD.match(text) or QHEAD.match(text + ' X')
             if not m:
@@ -1039,7 +1200,7 @@ class Paper:
                     # of Q5(a)(ii) and vanished from the census. Both readings
                     # agree on what follows: it is this question's part.
                     tail = text[m.end():].strip()
-                    if found == abs(q) and _leading(tail)[:2] != (None, None):
+                    if found == abs(q) and _leading(tail, letters)[:2] != (None, None):
                         text = tail
                 else:
                     if m.group(2):
@@ -1049,7 +1210,7 @@ class Paper:
                     letter, roman, open_key = None, None, None
                     self.stems.setdefault((q, None), [])
                     rest = text[m.end():].strip()
-                    if rest and _leading(rest)[:2] != (None, None):
+                    if rest and _leading(rest, letters)[:2] != (None, None):
                         # "7. (a) Define an acid ..." — the head is welded to its
                         # own first part, and filing that as stimulus prose loses
                         # the part: 2021 HL Chemistry read Question 7(a) as stem
@@ -1081,9 +1242,9 @@ class Paper:
                     self.stems.setdefault((q, letter), []).append(text)
                 continue
 
-            found_letter, found_roman, rest = _leading(text)
+            found_letter, found_roman, rest = _leading(text, letters)
             if found_roman == 'i' and not found_letter and letter == 'h' \
-                    and _i_is_letter(blocks, index):
+                    and _i_is_letter(blocks, index, letters):
                 # Not gated on (h) being roman-free: Physics 2025 HL Q6 sets
                 # romans UNDER (h) and then continues the letter run at (i) —
                 # the (j) ahead already decides, and demanding a roman-free (h)
@@ -1244,12 +1405,15 @@ class Paper:
             '|\\s+(?=' + re.escape(h) + ')'
             for h in DRAWN_RULE_HEADS.get((self.subject, self.year, self.level), []))
         welded = WELDED_HEADS.get((self.subject, self.year, self.level), [])
+        wide = (self.subject, self.year, self.level) in LETTER_RUNS
+        trailing = TRAILING_MARKER_WIDE if wide else TRAILING_MARKER
         carry = ''
         for path in self.files:
             blocks = _blocks(path, subject=self.subject if self.subject in MANGLED_PAPERS else None,
                              strip_pages=STRIP_SET_PAGES.get((self.subject, self.year, self.level), {})
                              .get(os.path.basename(path), ()),
-                             any_space=self.subject in ANY_SPACE_MARKER_SUBJECTS)
+                             any_space=self.subject in ANY_SPACE_MARKER_SUBJECTS,
+                             wide=wide)
             if welded:
                 blocks = [piece for block in blocks for piece in _unweld(block, welded)]
             for block in blocks:
@@ -1270,8 +1434,10 @@ class Paper:
                 if head:
                     prefix, text = head.group(1) + ' ', text[head.end():]
                 marker = (INLINE_MARKER_STATES if self.subject in STATE_SYMBOL_SUBJECTS
-                          else INLINE_MARKER)
+                          else INLINE_MARKER_WIDE if wide else INLINE_MARKER)
                 pieces = [p.strip() for p in marker.split(text) if p.strip()]
+                if wide:
+                    pieces = [q for p in pieces for q in _split_roman_run(p)]
                 # (2016 HL Chemistry Q6(e): a sentence's romans; see INLINE_NOT_MARKERS.)
                 for joined in INLINE_NOT_MARKERS.get((self.subject, self.year, self.level), []):
                     at = [j for j, p in enumerate(pieces) if j and p.startswith(joined)]
@@ -1284,11 +1450,13 @@ class Paper:
                     for prefix_txt, fix in fixes:
                         if piece.startswith(prefix_txt):
                             piece = fix(piece)
-                    t = TRAILING_MARKER.search(piece)
+                    t = trailing.search(piece)
                     if t:
                         carry = t.group(1)
                         piece = piece[:t.start(1)].rstrip()
-                    if piece and self.subject in BARE_MARKER_RUNS and _BARE_RUN.match(piece):
+                    if piece and ((self.subject in BARE_MARKER_RUNS and _BARE_RUN.match(piece))
+                                  or ((self.subject, self.year, self.level) in BARE_ROMAN_RUNS
+                                      and _BARE_ROMAN_RUN.match(piece))):
                         yield from piece.split()
                     elif piece:
                         yield piece
