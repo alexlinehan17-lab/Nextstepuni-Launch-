@@ -12,7 +12,7 @@
  * polices it cannot drift apart.
  */
 
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -97,11 +97,22 @@ export const corpusSubjectFor = (subjectId, questionRef) =>
     ? 'history-early-modern'
     : subjectId);
 
-/** The sitting of one subject, year and level in its authored paper language. */
-export const paperEntry = (subjectId, year, level) =>
+/** The sitting of one subject, year and level in its authored paper language.
+ *  Given a paper file id, the entry that holds that paper (a deferred sitting
+ *  is a second entry for the same year), as on codex/home-economics-
+ *  continuation-20261101. */
+export const paperEntry = (subjectId, year, level, paperFileid) =>
   (paperIndex[CORPUS_KEY[subjectId] ?? subjectId] ?? [])
     .find(e => e.year === year && e.level === level
-      && e.lang === (subjectId === 'irish' ? 'iv' : 'ev'));
+      && e.lang === (subjectId === 'irish' ? 'iv' : 'ev')
+      && (!paperFileid || e.papers.some(p => p.doc?.f.replace(/\.pdf$/, '') === paperFileid.replace(/\.pdf$/, ''))));
+
+/** The SEC's DEFERRED sitting of one subject, year and level (from 2022), in
+ *  English: its own index entry, listed after June's and marked
+ *  `sitting: "deferred"`. Economics, Engineering and History ask for it here. */
+export const deferredPaperEntry = (subjectId, year, level) =>
+  (paperIndex[CORPUS_KEY[subjectId] ?? subjectId] ?? [])
+    .find(e => e.year === year && e.level === level && e.lang === 'ev' && e.sitting === 'deferred');
 
 /**
  * The sections a paper's label covers: "Section A&B" -> {A, B}, "Section 2 & 3"
@@ -220,6 +231,10 @@ export function resolveCompanionFileid(subjectId, year, level, label) {
   const entry = paperEntry(subjectId, year, level);
   const want = String(label ?? '').trim().toLowerCase();
   if (!want || !entry?.papers?.length) return null;
+  // DCG's Section A booklet carries the contour map Section C's Geologic
+  // Geometry cards open. Its label is wrong in 2011 (see dcgBookletFor), so it
+  // is found by what it prints, as resolvePaperFileid finds it.
+  if (subjectId === 'dcg' && want === 'section a') return dcgBookletFor(entry, 'A');
   const hits = entry.papers.filter(p => String(p.label).trim().toLowerCase() === want);
   if (hits.length === 1) return stripPdf(hits[0].doc?.f);
   // The labels could not name one document. Where the file ids can — one
@@ -233,6 +248,37 @@ export function resolveCompanionFileid(subjectId, year, level, label) {
 }
 
 /**
+ * Design & Communication Graphics: the booklet that PRINTS a section.
+ *
+ * DCG is sat as two booklets under one scheme: Section A (SEC M81A/M80A, one
+ * A3 sheet, "A-1" to "A-4") and Sections B and C together (M81BC/M80BC,
+ * "B-1" to "C-5", its cover reading "Sections B and C (180 marks)"). The
+ * index's labels say so only from 2019, "Section A" and "Section B&C". In
+ * 2012-2018 the second booklet is labelled "Section B", in 2010 "Exam
+ * Paper", and 2011 carries the two labels the wrong way round: the SEC
+ * swapped its component codes that year, so 000 is Section A and 014 is
+ * Sections B and C. Read by label, every Section C card of 2010-2018 resolved
+ * to null and every Section A card of 2011 to the wrong booklet.
+ *
+ * So the booklet is identified by the questions it prints, read from its
+ * anchor file (public/paper-anchors/<year>/<fileid>.json, harvested from the
+ * booklet itself), and only where exactly ONE booklet of the sitting prints
+ * the section. dcg_paper.py identifies the booklets the same way for the
+ * census. Null otherwise, never a guess.
+ */
+const ANCHOR_DIR = resolve(ROOT, 'public', 'paper-anchors');
+function dcgBookletFor(entry, section) {
+  const prints = entry.papers.filter(p => {
+    const f = p.doc?.f;
+    const file = f ? resolve(ANCHOR_DIR, String(entry.year), `${f}.json`) : null;
+    if (!file || !existsSync(file)) return false;
+    const anchor = JSON.parse(readFileSync(file, 'utf8'));
+    return (anchor.q ?? []).some(q => String(q.label ?? '').startsWith(`${section}-`));
+  });
+  return prints.length === 1 ? stripPdf(prints[0].doc.f) : null;
+}
+
+/**
  * The file id of the QUESTION PAPER holding a card's section, or null.
  *
  * Null rather than a guess: a wrong id sends a student to the wrong document,
@@ -241,6 +287,7 @@ export function resolveCompanionFileid(subjectId, year, level, label) {
 export function resolvePaperFileid(subjectId, year, level, section) {
   const entry = paperEntry(subjectId, year, level);
   if (!entry?.papers?.length) return null;
+  if (subjectId === 'dcg') return dcgBookletFor(entry, section);
   // One paper for the year means there is nothing to choose between.
   if (entry.papers.length === 1) return stripPdf(entry.papers[0].doc?.f);
   // Art's separate illustration booklet is indexed as a second "paper" even

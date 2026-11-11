@@ -1321,7 +1321,114 @@ export interface FrenchRubric {
   practiceNotes?: string[];
 }
 
-export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric | ReligiousEducationRubric;
+/** One band of a History CM or OE ladder, as the scheme prints it. */
+export interface HistoryEssayBand {
+  /** "Excellent", "Very good" … */
+  label: string;
+  /** Every mark the band permits, low to high: "8-10 marks" is [8, 9, 10]. */
+  marks: number[];
+  /** The band and its range as printed: "Very good: 8-10 marks". */
+  printed: string;
+  /** The band's descriptor, verbatim; absent where the scheme prints none
+   *  (the documents question's OE grading table). */
+  descriptor?: string;
+}
+
+/** A ceiling a question's NOTE prints for an answer that covers less than it
+ *  asks: "If only ONE" at 50. A NOTE may print several ("If only ONE, Max. CM
+ *  = 40 If only TWO, Max. CM = 50"). */
+export interface HistoryEssayCap {
+  /** The scheme's own words for when it applies: "If only ONE". */
+  when: string;
+  max: number;
+}
+
+interface HistoryEssayCmBase {
+  /** The printed Max. CM: 60 for a Higher essay, 24 for Higher Q4; 20 or 30
+   *  for an Ordinary part B or C, 20 for Ordinary Q4. */
+  max: number;
+  /** The question's own NOTE, verbatim, and the ceilings it prints. Only
+   *  where the scheme prints a NOTE for this question. */
+  elementRule?: { note: string; caps: HistoryEssayCap[] };
+  definition: string;
+  /** Examiner directions, verbatim: the summation cap, the excess-paragraph
+   *  annotation, a question's own note ("Note that the question is looking
+   *  for ..."). */
+  directions: string[];
+}
+
+/** Higher Level: each paragraph placed on one band of the paragraph ladder. */
+export interface HistoryParagraphCm extends HistoryEssayCmBase {
+  mode: 'paragraph';
+  /** "A paragraph or paragraph equivalent may be one of the following:" */
+  paragraphLead: string;
+  /** (i) … (vii), verbatim. */
+  paragraphKinds: string[];
+  bands: HistoryEssayBand[];
+}
+
+/** Ordinary Level: Core Statements, each completed one at a printed value,
+ *  and an incomplete last one at one of the printed marks below it. */
+export interface HistoryCoreStatementCm extends HistoryEssayCmBase {
+  mode: 'core-statement';
+  /** "A Core Statement may be defined as one of the following:" */
+  statementLead: string;
+  statementKinds: string[];
+  /** "To apply the principle of marking by Core Statement, examiners will
+   *  proceed as follows:" and its steps, verbatim. */
+  procedureLead: string;
+  procedure: string[];
+  /** Read from "Each completed Core Statement is awarded 5 marks." */
+  perStatement: number;
+  /** Read from "An incomplete Core Statement at the end of an answer may
+   *  merit 1-4 marks.": every mark it may take. */
+  incomplete: number[];
+}
+
+/**
+ * A History essay — a Higher Section 2 or 3 essay, an Ordinary part B or C,
+ * or the documents question's contextualisation part — marked the way the SEC
+ * marks it.
+ *
+ * The scheme prints no model answer for these. At Higher Level it prints a
+ * Cumulative Mark built paragraph by paragraph from a band ladder up to a
+ * printed maximum; at Ordinary Level a Cumulative Mark of Core Statements at a
+ * printed value each. Both add an Overall Evaluation on one band, except
+ * Ordinary Q4, which the scheme marks by Core Statement alone. Every string
+ * here is the scheme's own; the card adds no indicative content.
+ *
+ * Scoring (historyEssayScoring.ts): the CM is the sum of what the student
+ * places, in order, capped at the printed maximum — or at a NOTE's ceiling
+ * when the student judges it applies — so material past the maximum counts
+ * zero, as the scheme's annotation for an excess paragraph says. The OE is one
+ * mark inside one band.
+ */
+export interface HistoryEssayRubric {
+  system: 'history-essay';
+  /** The scheme's own words for how the answer is marked, verbatim. */
+  schemeGuidance: string[];
+  cm: HistoryParagraphCm | HistoryCoreStatementCm;
+  /** Absent where the scheme prints no Overall Evaluation (Ordinary Q4). */
+  oe?: {
+    max: number;
+    definition?: string;
+    /** The scheme's lead to its OE table, where it prints one. */
+    lead?: string;
+    bands: HistoryEssayBand[];
+    directionsLead?: string;
+    directions: string[];
+  };
+  schemeFileid: string;
+  schemePages: number[];
+  markingGuideNote: string;
+}
+
+/** The one line on a History essay card that is NextStepUni's, not the SEC's:
+ *  the scheme prints no model answer for these questions. Mirrored in
+ *  build-deck.mjs, which refuses any other wording. */
+export const HISTORY_ESSAY_NO_MODEL_ANSWER = 'The scheme prints no model answer for this question.';
+
+export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric | ReligiousEducationRubric | HistoryEssayRubric;
 
 /** A prose/short-answer SEC card. */
 export interface SecQuestionCard extends SecPointCardBase {
@@ -1705,6 +1812,35 @@ export function tariffReconciles(card: SecCard): boolean {
           return marks.length === allowed.length && new Set(marks).size === marks.length
             && marks.every(mark => allowed.includes(mark));
         });
+    }
+    if (card.rubric.system === 'history-essay') {
+      const { cm, oe, schemeFileid, schemePages } = card.rubric;
+      // A ladder covers 0..top exactly once, every band a run of whole marks.
+      const ladder = (bands: HistoryEssayBand[], top: number) => {
+        const marks = bands.flatMap(band => band.marks).sort((a, b) => a - b);
+        return bands.length > 0
+          && bands.every(band => band.marks.length > 0
+            && band.marks.every((mark, index) => Number.isInteger(mark)
+              && (index === 0 || mark === band.marks[index - 1] + 1)))
+          && marks.length === top + 1
+          && marks.every((mark, index) => mark === index);
+      };
+      const cmFits = cm.mode === 'paragraph'
+        ? ladder(cm.bands, Math.max(...cm.bands.flatMap(band => band.marks)))
+          && Math.max(...cm.bands.flatMap(band => band.marks)) <= cm.max
+        : Number.isInteger(cm.perStatement) && cm.perStatement > 0 && cm.perStatement <= cm.max
+          && cm.incomplete.length > 0
+          && cm.incomplete.every((mark, index) => Number.isInteger(mark) && mark > 0
+            && mark < cm.perStatement && (index === 0 || mark === cm.incomplete[index - 1] + 1));
+      return Boolean(schemeFileid)
+        && schemePages.length > 0
+        && schemePages.every(page => Number.isInteger(page) && page > 0)
+        && cm.max + (oe?.max ?? 0) === card.totalMarks
+        && cmFits
+        && (!oe || ladder(oe.bands, oe.max))
+        && (!cm.elementRule || (cm.elementRule.caps.length > 0
+          && cm.elementRule.caps.every(cap => Number.isInteger(cap.max) && cap.max > 0
+            && cap.max < cm.max && cap.when.trim().length > 0)));
     }
     if (card.rubric.system === 'geography' || card.rubric.system === 'physical-education') {
       const criteria: Array<{ id: string; maxMarks: number; permittedMarks: number[] }> = card.rubric.criteria;

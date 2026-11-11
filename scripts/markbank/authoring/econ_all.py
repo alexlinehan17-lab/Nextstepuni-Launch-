@@ -26,7 +26,7 @@ OUT = os.path.join(ROOT, 'scripts/markbank/authored/economics.json')
 
 scripts = sorted(
     f for f in os.listdir(DIR)
-    if re.fullmatch(r'econ_\d{4}_(hl|ol)(_sec[ab])?\.py', f)
+    if re.fullmatch(r'econ_\d{4}_(hl|ol)(_sec[ab]|_deferred)?\.py', f)
 )
 
 cards, seen, failed = [], {}, []
@@ -54,9 +54,11 @@ for name in scripts:
 # on the text a student actually reads.
 asked = {}
 for c in cards:
-    k = (c['year'], c['level'], ' '.join(c['questionText'].split()).lower())
+    # The deferred sitting is a paper of its own: its cards ("econ-2022-hl-
+    # deferred-...") are checked against each other, not against June's.
+    k = (c['year'], c['level'], '-deferred-' in c['id'], ' '.join(c['questionText'].split()).lower())
     if k in asked:
-        failed.append(f"{c['id']} asks the same question as {asked[k]}: {k[2][:70]}")
+        failed.append(f"{c['id']} asks the same question as {asked[k]}: {k[3][:70]}")
     asked[k] = c['id']
 
 if failed:
