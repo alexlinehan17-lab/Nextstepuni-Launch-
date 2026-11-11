@@ -131,7 +131,9 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const swipeStart = useRef<{ x: number; y: number; pointerId: number } | null>(null);
 
   const url = useMemo(() => paperUrl(paperStoragePath(
-    'lc', subjectId === 'applied-maths' ? resolveSubjectId(subjectId)! : subjectId, source.sourceYear ?? year,
+    // A deck id that is not the corpus's folder name: 'applied-maths' is filed
+    // as applied-mathematics and 'dcg' as design-and-communication-graphics.
+    'lc', subjectId === 'applied-maths' || subjectId === 'dcg' ? resolveSubjectId(subjectId)! : subjectId, source.sourceYear ?? year,
     isScheme ? 'scheme' : 'paper', withPdfExtension(source.sourceFileid ?? paperFileid),
   )), [paperFileid, source.sourceFileid, source.sourceYear, subjectId, year, isScheme]);
   const regions = useMemo(
