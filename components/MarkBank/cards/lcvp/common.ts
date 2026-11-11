@@ -1118,13 +1118,44 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-a1", topicId: "lcvp-link-modules-1-3", conceptId: "evidence-there-denise-environmentally-aware",
+    id: "lcvp-2020-cl-a1", topicId: "lcvp-link-modules-1-2", conceptId: "evidence-there-denise-environmentally-aware",
     section: "A", questionRef: "2020 CL Section A Q1",
-    stem: "You will be shown a DVD about Committee Meetings.",
     questionText: "What evidence is there that Denise is environmentally aware?",
-    tariffModel: {"kind":"fixed","notation":"1 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 1,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "She knows a lot about the danger bees are facing", marks: 1, accepts: ["She is a member of the ‘Save the Bees Committee’"], contextNote: "1 mark for this answer.", openList: true },
+    { id: "responses", kind: "anyN", verbatim: "What evidence is there that Denise is environmentally aware?", marks: 1, contextNote: "ONE valid piece of evidence,1mark; both original alternatives are retained.", openList: true, group: {"claimMax":1,"perOption":1,"options":["She knows a lot about the danger bees are facing.","She is a member of the ‘Save the Bees Committee’."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2020 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2020 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Committee Meetings sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -1132,13 +1163,44 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-a2", topicId: "lcvp-link-modules-1-3", conceptId: "goal-committee",
+    id: "lcvp-2020-cl-a2", topicId: "lcvp-link-modules-1-0", conceptId: "goal-committee",
     section: "A", questionRef: "2020 CL Section A Q2",
-    stem: "You will be shown a DVD about Committee Meetings.",
     questionText: "What is the goal of the committee?",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 mark","answer":2,"ofParts":4,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "What is the goal of the committee? Two — any 2", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Get organised","Raise awareness","Get the whole community involved","Make the change happen"]} },
+    { id: "responses", kind: "anyN", verbatim: "What is the goal of the committee? Two valid reasons 2 x 1 mark", marks: 2, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":1,"options":["Get organised.","Raise awareness.","Get the whole community involved.","Make the change happen."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2020 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2020 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Committee Meetings sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -1146,13 +1208,44 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-a3", topicId: "lcvp-link-modules-1-1", conceptId: "actions-identified-committee-its-plan",
+    id: "lcvp-2020-cl-a3", topicId: "lcvp-link-modules-1-0", conceptId: "actions-identified-committee-its-plan",
     section: "A", questionRef: "2020 CL Section A Q3",
-    stem: "You will be shown a DVD about Committee Meetings.",
     questionText: "Describe three actions identified by the committee in its plan.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 1 mark","answer":3,"ofParts":4,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Contact the Farmers Association about when to use pesticides","Contact the GAA about not cutting their hedges","Contact the county council about not cutting the grass in public areas until April","Get a local business on board to support and sponsor the plan"]} },
+    { id: "responses", kind: "anyN", verbatim: "Describe three actions identified by the committee in its plan. Three valid answers 3 x 1 mark", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":3,"perOption":1,"options":["Contact the Farmers Association about when to use pesticides.","Contact the GAA about not cutting their hedges.","Contact the county council about not cutting the grass in public areas until April.","Get a local business on board to support and sponsor the plan."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2020 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2020 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Committee Meetings sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -1160,13 +1253,44 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-a4", topicId: "lcvp-link-modules-1-3", conceptId: "means-take-minutes-meeting",
+    id: "lcvp-2020-cl-a4", topicId: "lcvp-link-modules-1-0", conceptId: "means-take-minutes-meeting",
     section: "A", questionRef: "2020 CL Section A Q4",
-    stem: "You will be shown a DVD about Committee Meetings.",
     questionText: "Explain what it means to take ‘minutes’ at a meeting.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 1 mark","answer":3,"ofParts":5,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Minutes are a record of the meeting","Minutes are a record of who attended the meeting","Minutes are a record of what was discussed","Minutes are a record of what plans or actions are decided","Minutes are a record of who is going to carry out which plan/action"]} },
+    { id: "responses", kind: "anyN", verbatim: "Explain what it means to take minutes at a meeting. Three valid answers 3 x 1 mark", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":3,"perOption":1,"options":["Minutes are a record of the meeting.","Minutes are a record of who attended the meeting.","Minutes are a record of what was discussed.","Minutes are a record of what plans or actions are decided.","Minutes are a record of who is going to carry out which plan/action."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2020 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2020 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Committee Meetings sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -1174,13 +1298,44 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-a5", topicId: "lcvp-link-modules-1-3", conceptId: "aside-taking-minutes-other-responsibilities-secretary",
+    id: "lcvp-2020-cl-a5", topicId: "lcvp-link-modules-1-0", conceptId: "aside-taking-minutes-other-responsibilities-secretary",
     section: "A", questionRef: "2020 CL Section A Q5",
-    stem: "You will be shown a DVD about Committee Meetings.",
     questionText: "Aside from taking minutes, describe the other responsibilities of the secretary of a committee.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 1 mark","answer":4,"ofParts":4,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["The secretary writes up the minutes","The secretary sends out an agenda to the people attending the meeting","The secretary deals with communication and correspondence","The secretary ensures a well-run committee"]} },
+    { id: "responses", kind: "anyN", verbatim: "Aside from taking minutes, describe the other responsibilities of the secretary of a committee. Four valid answers 4 x 1 mark", marks: 4, contextNote: "Choose any 4 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":4,"perOption":1,"options":["The secretary writes up the minutes.","The secretary sends out an agenda to the people attending the meeting.","The secretary deals with communication and correspondence.","The secretary ensures a well-run committee."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2020 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2020 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Committee Meetings sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -1188,13 +1343,44 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-a6i", topicId: "lcvp-link-modules-1-3", conceptId: "aims-first-meeting",
+    id: "lcvp-2020-cl-a6i", topicId: "lcvp-link-modules-1-0", conceptId: "aims-first-meeting",
     section: "A", questionRef: "2020 CL Section A Q6(i)",
-    stem: "You will be shown a DVD about Committee Meetings.",
     questionText: "What are the aims of this first meeting?",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 1 mark","answer":4,"ofParts":4,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "What are the aims of this first meeting? Four — any 4", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["State their purpose – Save the Bees","Elect officers to the committee","Make an action plan about this issue","To welcome new members/everyone to the committee"]} },
+    { id: "responses", kind: "anyN", verbatim: "What are the aims of this first meeting? Four valid answers 4 x 1 mark", marks: 4, contextNote: "Choose any 4 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":4,"perOption":1,"options":["State their purpose – Save the Bees.","Elect officers to the committee.","Make an action plan about this issue.","To welcome new members/everyone to the committee."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2020 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2020 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Committee Meetings sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -1202,13 +1388,45 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-a6ii", topicId: "lcvp-link-modules-1-3", conceptId: "evidence-there-committee-achieving-these-aims",
+    id: "lcvp-2020-cl-a6ii", topicId: "lcvp-link-modules-1-0", conceptId: "evidence-there-committee-achieving-these-aims",
     section: "A", questionRef: "2020 CL Section A Q6(ii)",
-    stem: "You will be shown a DVD about Committee Meetings.",
+    stem: " What are the aims of this first meeting?",
     questionText: "What evidence is there that this committee is achieving these aims?",
-    tariffModel: {"kind":"bestNofParts","notation":"1 marks","answer":1,"ofParts":5,"perPart":1}, totalMarks: 1,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 1 of the answers the scheme states", marks: 1, contextNote: "1 answer at 1 mark each.", openList: true, group: {"claimMax":1,"perOption":1,"options":["They have a clear purpose","They have decided to elect officers","They created an action plan","They welcome anyone who is interested/many people have joined/want to get involved","Ongoing communication between committee members/text received by Denise"]} },
+    { id: "responses", kind: "anyN", verbatim: "What evidence is there that this committee is achieving these aims? One valid reason 1 mark", marks: 1, contextNote: "Choose any 1 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":1,"perOption":1,"options":["They have a clear purpose.","They have decided to elect officers.","They created an action plan.","They welcome anyone who is interested/many people have joined/want to get involved.","Ongoing communication between committee members/text received by Denise."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2020 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2020 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Committee Meetings sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -1216,13 +1434,44 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-a7i", topicId: "lcvp-link-modules-1-3", conceptId: "characteristics-good-committee-member",
+    id: "lcvp-2020-cl-a7i", topicId: "lcvp-link-modules-1-0", conceptId: "characteristics-good-committee-member",
     section: "A", questionRef: "2020 CL Section A Q7(i)",
-    stem: "You will be shown a DVD about Committee Meetings.",
     questionText: "Describe the characteristics of a good committee member?",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks (1+1)","answer":2,"ofParts":6,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Attends meetings","Is passionate about the cause","Carries out the duties assigned to them","Able to work with other people/able to work as part of a team","Committed to the objectives of the committee","Good communication skills"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe the characteristics of a good committee member Two valid answers 2 x 2 marks (1+1)", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Describe the characteristics of a good committee member Two valid answers 2 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Attends meetings. | 2. Is passionate about the cause. | 3. Carries out the duties assigned to them. | 4. Able to work with other people/able to work as part of a team. | 5. Committed to the objectives of the committee. | 6. Good communication skills.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2020 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2020 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Committee Meetings sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -1230,13 +1479,44 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-a7ii", topicId: "lcvp-link-modules-1-3", conceptId: "important-have-all-young-people-committee",
+    id: "lcvp-2020-cl-a7ii", topicId: "lcvp-link-modules-1-0", conceptId: "important-have-all-young-people-committee",
     section: "A", questionRef: "2020 CL Section A Q7(ii)",
-    stem: "You will be shown a DVD about Committee Meetings.",
     questionText: "Is it important to have all young people on a committee? Give reasons for your answer.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 mark","answer":2,"ofParts":7,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Young people bring an energy/ideas to meetings","Young people can be very passionate about a specific cause that impacts on their lives and future","Young people may have less responsibilities and so can give more time to the committee","Young people may not have enough experience","There needs to be a balance between older and young people on a committee","Different age groups bring different experiences","If there are only young people on the committee other age profiles might not get involved"]} },
+    { id: "responses", kind: "anyN", verbatim: "Is it important to have all young people on a committee? Give reasons for your answer. Two valid reasons 2 x 1 mark", marks: 2, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred.  Preserve the opinion/reasons wording and all positive/negative source examples; no separate opinion mark is printed.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Young people bring an energy/ideas to meetings.","Young people can be very passionate about a specific cause that impacts on their lives and future.","Young people may have less responsibilities and so can give more time to the committee.","Young people may not have enough experience.","There needs to be a balance between older and young people on a committee.","Different age groups bring different experiences.","If there are only young people on the committee other age profiles might not get involved."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2020 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2020 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Committee Meetings sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -1244,13 +1524,44 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-a8i", topicId: "lcvp-link-modules-1-3", conceptId: "differences-between-well-run-committee-meeting",
+    id: "lcvp-2020-cl-a8i", topicId: "lcvp-link-modules-1-0", conceptId: "differences-between-well-run-committee-meeting",
     section: "A", questionRef: "2020 CL Section A Q8(i)",
-    stem: "You will be shown a DVD about Committee Meetings.",
     questionText: "Describe the differences between a well run committee meeting and a badly run committee meeting.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks (1+1)","answer":2,"ofParts":11,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Has a purpose","Has elected officers","Has a good chairperson","Formulates a plan","Records/minutes the meeting","Ensures that people have a voice at meetings/listens to people’s ideas and suggestions","Assigns tasks to people","Follows up on tasks assigned and actions planned","Is scheduled and members notified well in advance","Starts on time and finishes on time","Makes decisions"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe the differences between a well-run committee meeting and a badly run committee meeting. Two valid answers 2 x 2 marks (1+1) A well run committee meeting:", marks: 4, contextNote: "Choose any 2 distinct responses across the full pool. Original allocation: Describe the differences between a well-run committee meeting and a badly run committee meeting. Two valid answers 2 x 2 marks (1+1) A well run committee meeting: Each response follows the printed component ladder; do not count the same expansion twice. TWO comparisons,1+1each. The source lists only well-run meeting features; retain the badly-run comparison requirement without inventing a second model column. Complete original guidance: 1. Has a purpose. | 2. Has elected officers. | 3. Has a good chairperson. | 4. Formulates a plan. | 5. Records/minutes the meeting. | 6. Ensures that people have a voice at meetings/listens to people’s ideas and suggestions. | 7. Assigns tasks to people. | 8. Follows up on tasks assigned and actions planned. | 9. Is scheduled and members notified well in advance. | 10. Starts on time and finishes on time. | 11. Makes decisions.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2020 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2020 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Committee Meetings sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -1258,13 +1569,44 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-a8ii", topicId: "lcvp-link-modules-1-3", conceptId: "responsibilities-chairperson-committee",
+    id: "lcvp-2020-cl-a8ii", topicId: "lcvp-link-modules-1-0", conceptId: "responsibilities-chairperson-committee",
     section: "A", questionRef: "2020 CL Section A Q8(ii)",
-    stem: "You will be shown a DVD about Committee Meetings.",
     questionText: "Describe two responsibilities of a chairperson of a committee.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 mark","answer":2,"ofParts":7,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Follow the agenda/run the meeting/chair the meeting","Make sure that the meeting is orderly/people are not all speaking at once/stay on point","Ensure people are heard","Ensure that everyone is clear about their tasks","Ensure there is a record of the meeting","Ensure democratic decision-making","The chairperson has the casting vote in the event that voting is tied"]} },
+    { id: "responses", kind: "anyN", verbatim: "Describe two responsibilities of a chairperson Two valid answers 2 x 1 mark", marks: 2, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":1,"options":["Follow the agenda/run the meeting/chair the meeting.","Make sure that the meeting is orderly/people are not all speaking at once/stay on point.","Ensure people are heard.","Ensure that everyone is clear about their tasks.","Ensure there is a record of the meeting.","Ensure democratic decision-making.","The chairperson has the casting vote in the event that voting is tied."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2020 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2020/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2020 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Committee Meetings sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -1274,22 +1616,34 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
     id: "lcvp-2020-cl-b1", topicId: "lcvp-link-modules-1-1", conceptId: "following-terms-6-marks-i-mentor",
     section: "B", questionRef: "2020 CL Section B Q1",
-    stem: "Explain three of the following terms. (i) mentor (iii) sole trader (ii) bookkeeping (iv) upskill",
-    questionText: "Explain three of the following terms. (6 marks) (i) mentor (iii) sole trader (ii) bookkeeping (iv) upskill",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":4,"perPart":2}, totalMarks: 6,
+    stem: "Climate Entrepreneur In June 2019, the Government of Ireland launched the Climate Action Plan to address the impacts of the climate emergency on Ireland’s environment, society, economic and natural resources. Jim, a resident of Ballyglas, recently attended a meeting of his Local Community Group which has recently joined the Sustainable Energy Community Network and is working on an Energy Master Plan in partnership with Sustainable Energy Authority Ireland (SEAI). While sitting at this meeting, Jim realised that there were business opportunities involved in increasing the energy efficiency in homes. He learned that a key aim of the Climate Action Plan is to reduce Ireland’s dependency on fossil fuels. To achieve this, the installation of oil boilers will be banned by 2022 and gas boilers by 2025. In order to move from fossil fuels to renewable energy heating systems, 600,000 heat pumps will be installed by 2030, of which 400,000 will be retrofitted into existing buildings. Jim has worked as a qualified plumber for the last ten years. He enjoyed the job security that came with being an employee but has always aspired to setting up his own business one day. He believes he has the necessary skills to become an entrepreneur. After the meeting, he researched the new air to water heat pumps. He researched their sources, costs and installation criteria. He discovered he would need to upskill himself in order to meet the SEAI criteria to register as someone who can install heat pumps. He visited a house that had recently installed an air to water heat pump and spoke with the owners regarding their experience of this heating system. He met with a Technical Advisor from SEAI who recommended that Jim would attend a SEAI workshop on renewable energy heating systems. Jim made an appointment with the Local Enterprise Office to discuss the risks, challenges and benefits of setting up his own company. He was assigned a business mentor who discussed the different options for establishing himself as a sole-trader, a partnership or setting up a public limited company. He learned about professional indemnity; employers insurance; health and safety legislation. They discussed location, staff requirements and promoting his business. Jim’s mentor made him realise that preparation is the single most important thing he could do to ensure his business gets off the ground. His mentor suggested that Jim should sign up to the Local Enterprise Office Start Your Own Business programme. This programme guides potential entrepreneurs through the various aspects of business planning. In particular, Jim should attend the module dealing with basic bookkeeping as this is something he is not familiar with. Jim decided he was willing to take a risk and launched Jim’s Green Heating. He invested his personal savings in the business along with securing a small business loan from his local bank. Initially, he decided that he would set up as a sole-trader with a view to expansion if the business grows.",
+    questionText: "Explain three of the following terms. (i) mentor (iii) sole trader (ii) bookkeeping (iv) upskill",
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Explain three of the following terms Three — any 3", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Mentor: A mentor is a person who provides advice, guidance and support to a person while they are setting up and running their business. Where the knowledge, skills, insights and entrepreneurial capability of experienced business practitioners is matched with small business owner/managers who need practical and strategic one to one advice and guidance. The mentor contributes independent, informed observations and advice to aid decision making over a period of time. A free, trusted confidante. A mentor may be provided by the Local Enterprise Office","Bookkeeping: It involves recording on a daily basis the financial transactions of the business. Transactions (debits and credits) include purchases, sales, receipts, and payments by an individual person or an organisation/corporation. Bookkeeping is the term used to refer to the preparation of accounts for a business. It is part of the accounting process","Sole trader: A sole trader is a person who owns and runs their own business. Sole trader refers to the legal structure of the business, rather than the number of employees. As such, while a business registered as a sole trader might only consist of the owner, it might also consist of the owner and additional employees. They keep all the profits (if any). They make all the decisions but have unlimited liability, which means they could lose everything they have invested in the business, including personal assets if the business fails to succeed","Upskill: To learn new skills or to teach workers new skills. It focuses more on improving/updating worker’s skills so they can work within the same job. Upskilling requires an employee to enhance their value to his/her organisation by improving their current skill set"]} },
+    { id: "definitions", kind: "criterion", verbatim: "Explain three of the following terms", marks: 6, contextNote: "Choose THREE of FOUR original terms,1+1each; all four labels/models remain available. Complete original models: Mentor: A mentor is a person who provides advice, guidance and support to a person while they are setting up and running their business. Where the knowledge, skills, insights and entrepreneurial capability of experienced business practitioners is matched with small business owner/managers who need practical and strategic one to one advice and guidance. The mentor contributes independent, informed observations and advice to aid decision making over a period of time. A free, trusted confidante. A mentor may be provided by the Local Enterprise Office. | Bookkeeping: It involves recording on a daily basis the financial transactions of the business. Transactions (debits and credits) include purchases, sales, receipts, and payments by an individual person or an organisation/corporation. Bookkeeping is the term used to refer to the preparation of accounts for a business. It is part of the accounting process. | Sole trader: A sole trader is a person who owns and runs their own business. Sole trader refers to the legal structure of the business, rather than the number of employees. As such, while a business registered as a sole trader might only consist of the owner, it might also consist of the owner and additional employees. They keep all the profits (if any). They make all the decisions but have unlimited liability, which means they could lose everything they have invested in the business, including personal assets if the business fails to succeed. | Upskill: To learn new skills or to teach workers new skills. It focuses more on improving/updating worker’s skills so they can work within the same job. Upskilling requires an employee to enhance their value to his/her organisation by improving their current skill set.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Climate Entrepreneur — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2020 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      10
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1298,67 +1652,106 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
     id: "lcvp-2020-cl-b2i", topicId: "lcvp-link-modules-1-1", conceptId: "key-pieces-essential-research-jim-carried",
     section: "B", questionRef: "2020 CL Section B Q2(i)",
+    stem: "Climate Entrepreneur In June 2019, the Government of Ireland launched the Climate Action Plan to address the impacts of the climate emergency on Ireland’s environment, society, economic and natural resources. Jim, a resident of Ballyglas, recently attended a meeting of his Local Community Group which has recently joined the Sustainable Energy Community Network and is working on an Energy Master Plan in partnership with Sustainable Energy Authority Ireland (SEAI). While sitting at this meeting, Jim realised that there were business opportunities involved in increasing the energy efficiency in homes. He learned that a key aim of the Climate Action Plan is to reduce Ireland’s dependency on fossil fuels. To achieve this, the installation of oil boilers will be banned by 2022 and gas boilers by 2025. In order to move from fossil fuels to renewable energy heating systems, 600,000 heat pumps will be installed by 2030, of which 400,000 will be retrofitted into existing buildings. Jim has worked as a qualified plumber for the last ten years. He enjoyed the job security that came with being an employee but has always aspired to setting up his own business one day. He believes he has the necessary skills to become an entrepreneur. After the meeting, he researched the new air to water heat pumps. He researched their sources, costs and installation criteria. He discovered he would need to upskill himself in order to meet the SEAI criteria to register as someone who can install heat pumps. He visited a house that had recently installed an air to water heat pump and spoke with the owners regarding their experience of this heating system. He met with a Technical Advisor from SEAI who recommended that Jim would attend a SEAI workshop on renewable energy heating systems. Jim made an appointment with the Local Enterprise Office to discuss the risks, challenges and benefits of setting up his own company. He was assigned a business mentor who discussed the different options for establishing himself as a sole-trader, a partnership or setting up a public limited company. He learned about professional indemnity; employers insurance; health and safety legislation. They discussed location, staff requirements and promoting his business. Jim’s mentor made him realise that preparation is the single most important thing he could do to ensure his business gets off the ground. His mentor suggested that Jim should sign up to the Local Enterprise Office Start Your Own Business programme. This programme guides potential entrepreneurs through the various aspects of business planning. In particular, Jim should attend the module dealing with basic bookkeeping as this is something he is not familiar with. Jim decided he was willing to take a risk and launched Jim’s Green Heating. He invested his personal savings in the business along with securing a small business loan from his local bank. Initially, he decided that he would set up as a sole-trader with a view to expansion if the business grows.",
     questionText: "Describe three key pieces of essential research Jim carried out when considering setting up his own business.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":4,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Jim researched the new air to water heat pumps, he researched the sources, costs and installation criteria of the heat pumps","He visited a house that had installed one of the new pumps so that he could see it","He spoke with the home owners about their experience of the pumps","He met with a Technical Advisor from SEAI/meeting/discussion with LEO"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe three key pieces of essential research Jim carried out when considering setting up his own business. Three valid answers 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe three key pieces of essential research Jim carried out when considering setting up his own business. Three valid answers 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Jim researched the new air to water heat pumps, he researched the sources, costs and installation criteria of the heat pumps. | 2. He visited a house that had installed one of the new pumps so that he could see it. | 3. He spoke with the home owners about their experience of the pumps. | 4. He met with a Technical Advisor from SEAI/meeting/discussion with LEO.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Climate Entrepreneur — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2020 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-b2ii", topicId: "lcvp-link-modules-1-4", conceptId: "ways-jim-could-promote-his-business",
+    id: "lcvp-2020-cl-b2ii", topicId: "lcvp-link-modules-1-1", conceptId: "ways-jim-could-promote-his-business",
     section: "B", questionRef: "2020 CL Section B Q2(ii)",
+    stem: "Climate Entrepreneur In June 2019, the Government of Ireland launched the Climate Action Plan to address the impacts of the climate emergency on Ireland’s environment, society, economic and natural resources. Jim, a resident of Ballyglas, recently attended a meeting of his Local Community Group which has recently joined the Sustainable Energy Community Network and is working on an Energy Master Plan in partnership with Sustainable Energy Authority Ireland (SEAI). While sitting at this meeting, Jim realised that there were business opportunities involved in increasing the energy efficiency in homes. He learned that a key aim of the Climate Action Plan is to reduce Ireland’s dependency on fossil fuels. To achieve this, the installation of oil boilers will be banned by 2022 and gas boilers by 2025. In order to move from fossil fuels to renewable energy heating systems, 600,000 heat pumps will be installed by 2030, of which 400,000 will be retrofitted into existing buildings. Jim has worked as a qualified plumber for the last ten years. He enjoyed the job security that came with being an employee but has always aspired to setting up his own business one day. He believes he has the necessary skills to become an entrepreneur. After the meeting, he researched the new air to water heat pumps. He researched their sources, costs and installation criteria. He discovered he would need to upskill himself in order to meet the SEAI criteria to register as someone who can install heat pumps. He visited a house that had recently installed an air to water heat pump and spoke with the owners regarding their experience of this heating system. He met with a Technical Advisor from SEAI who recommended that Jim would attend a SEAI workshop on renewable energy heating systems. Jim made an appointment with the Local Enterprise Office to discuss the risks, challenges and benefits of setting up his own company. He was assigned a business mentor who discussed the different options for establishing himself as a sole-trader, a partnership or setting up a public limited company. He learned about professional indemnity; employers insurance; health and safety legislation. They discussed location, staff requirements and promoting his business. Jim’s mentor made him realise that preparation is the single most important thing he could do to ensure his business gets off the ground. His mentor suggested that Jim should sign up to the Local Enterprise Office Start Your Own Business programme. This programme guides potential entrepreneurs through the various aspects of business planning. In particular, Jim should attend the module dealing with basic bookkeeping as this is something he is not familiar with. Jim decided he was willing to take a risk and launched Jim’s Green Heating. He invested his personal savings in the business along with securing a small business loan from his local bank. Initially, he decided that he would set up as a sole-trader with a view to expansion if the business grows.",
     questionText: "Describe three ways Jim could promote his business and give an advantage of each method chosen.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":10,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Create a memorable brand image & logo this will get the business noticed/instantly recognisable","Create a website people will be able to read about his service","Use social media apps/blogpost which brings the business to younger people","Have a special offer/introductory offer secure some initial customers","Set up an email email potential customers with offers/details","Visit trade shows allows for public to view the product and get information","Social media contest/giveaways easy way to connect with customers","Host an event people will see the product and have an opportunity to speak with a representative","Local sponsorship local people will become more aware of his business/more likely to support his business","Flyers and posters and noticeboards cheap, easy, quick, seen in the local area"]} },
+    { id: "promotion", kind: "criterion", verbatim: "Three valid answers", marks: 6, contextNote: "THREE distinct methods with the advantage of EACH chosen method;1+1each. Full original paired models: Create a memorable brand image & logo → this will get the business noticed/instantly recognisable. | Create a website → people will be able to read about his service. | Use social media apps/blogpost → which brings the business to younger people. | Have a special offer/introductory offer → secure some initial customers. | Set up an email → email potential customers with offers/details. | Visit trade shows → allows for public to view the product and get information. | Social media contest/giveaways → easy way to connect with customers | Host an event → people will see the product and have an opportunity to speak with a representative | Local sponsorship → local people will become more aware of his business/more likely to support his business. | Flyers and posters and noticeboards → cheap, easy, quick, seen in the local area. | Etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Climate Entrepreneur — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2020 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-b3i", topicId: "lcvp-link-modules-0-0", conceptId: "importance-success-business-topics-discussed-jim",
+    id: "lcvp-2020-cl-b3i", topicId: "lcvp-link-modules-1-1", conceptId: "importance-success-business-topics-discussed-jim",
     section: "B", questionRef: "2020 CL Section B Q3(i)",
+    stem: "Climate Entrepreneur In June 2019, the Government of Ireland launched the Climate Action Plan to address the impacts of the climate emergency on Ireland’s environment, society, economic and natural resources. Jim, a resident of Ballyglas, recently attended a meeting of his Local Community Group which has recently joined the Sustainable Energy Community Network and is working on an Energy Master Plan in partnership with Sustainable Energy Authority Ireland (SEAI). While sitting at this meeting, Jim realised that there were business opportunities involved in increasing the energy efficiency in homes. He learned that a key aim of the Climate Action Plan is to reduce Ireland’s dependency on fossil fuels. To achieve this, the installation of oil boilers will be banned by 2022 and gas boilers by 2025. In order to move from fossil fuels to renewable energy heating systems, 600,000 heat pumps will be installed by 2030, of which 400,000 will be retrofitted into existing buildings. Jim has worked as a qualified plumber for the last ten years. He enjoyed the job security that came with being an employee but has always aspired to setting up his own business one day. He believes he has the necessary skills to become an entrepreneur. After the meeting, he researched the new air to water heat pumps. He researched their sources, costs and installation criteria. He discovered he would need to upskill himself in order to meet the SEAI criteria to register as someone who can install heat pumps. He visited a house that had recently installed an air to water heat pump and spoke with the owners regarding their experience of this heating system. He met with a Technical Advisor from SEAI who recommended that Jim would attend a SEAI workshop on renewable energy heating systems. Jim made an appointment with the Local Enterprise Office to discuss the risks, challenges and benefits of setting up his own company. He was assigned a business mentor who discussed the different options for establishing himself as a sole-trader, a partnership or setting up a public limited company. He learned about professional indemnity; employers insurance; health and safety legislation. They discussed location, staff requirements and promoting his business. Jim’s mentor made him realise that preparation is the single most important thing he could do to ensure his business gets off the ground. His mentor suggested that Jim should sign up to the Local Enterprise Office Start Your Own Business programme. This programme guides potential entrepreneurs through the various aspects of business planning. In particular, Jim should attend the module dealing with basic bookkeeping as this is something he is not familiar with. Jim decided he was willing to take a risk and launched Jim’s Green Heating. He invested his personal savings in the business along with securing a small business loan from his local bank. Initially, he decided that he would set up as a sole-trader with a view to expansion if the business grows.",
     questionText: "Describe the importance to the success of the business of three of the topics discussed by Jim with the mentor, other than promoting his own business.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":6,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Sole trader or PLC: Jim needs to know the advantages and disadvantages of each option. He needs to be aware that as a sole trader he would be held personally liable for the company’s debts/PLC has the advantage of limited liability for the company’s debts. It is easier to set up as a sole trader compared to setting up as a PLC where it is more complicated. He has to make an informed decision and chose the option that best suits his personal circumstances/he will do a starting your own business course which will help him in setting up and running his own business/making decisions","Professional indemnity: It is important to have Professional Indemnity Insurance which provides cover if Jim becomes legally liable to a member of the public following an error or omission in the professional advice or service he has provided a client and as a result has suffered a financial loss","Employers insurance: It is important to have Employers liability insurance which protects his business against the legal liability for injury, illness, disease or death of any employee under a contract of service with his business","Health and safety legislation: It is important to know his legal obligations in relation to health and safety legislation if he plans to have employees. The Health and Safety Act sets out the rights and obligations of both employers and employees and provides for substantial fines and penalties for breaches of the health and safety legislation","Location: It is important to decide where to locate his business – especially when starting out for the first time. Does he have money available to invest in a location? Could he work from home initially? Will he need the capacity to store equipment? Does he need internet access? Will he have employees? Does he need to provide an office for employees? Will he have a base for potential customers to visit him? He needs to make an informed cost effective decision","Staff requirements: It is important to be aware of his staffing needs in order to transact his business successfully. He needs to be able to identify areas of the business which he himself is unable to do, where he needs to employ someone to carry out these duties. He also needs to be aware of how much it will cost to employ specific expertise and if he has the potential to pay this"]} },
+    { id: "topics", kind: "criterion", verbatim: "Three valid answers", marks: 6, contextNote: "THREE mentor-discussed topics OTHER THAN promotion,1+1each. Keep the complete cross-page pools and application to Jim: Sole trader or PLC: Jim needs to know the advantages and disadvantages of each option. He needs to be aware that as a sole trader he would be held personally liable for the company’s debts/PLC has the advantage of limited liability for the company’s debts. It is easier to set up as a sole trader compared to setting up as a PLC where it is more complicated. He has to make an informed decision and chose the option that best suits his personal circumstances/he will do a starting your own business course which will help him in setting up and running his own business/making decisions. | Professional indemnity: It is important to have Professional Indemnity Insurance which provides cover if Jim becomes legally liable to a member of the public following an error or omission in the professional advice or service he has provided a client and as a result has suffered a financial loss. | Employers insurance: It is important to have Employers liability insurance which protects his business against the legal liability for injury, illness, disease or death of any employee under a contract of service with his business. | Health and safety legislation: It is important to know his legal obligations in relation to health and safety legislation if he plans to have employees. The Health and Safety Act sets out the rights and obligations of both employers and employees and provides for substantial fines and penalties for breaches of the health and safety legislation. | Location: It is important to decide where to locate his business – especially when starting out for the first time. Does he have money available to invest in a location? Could he work from home initially? Will he need the capacity to store equipment? Does he need internet access? Will he have employees? Does he need to provide an office for employees? Will he have a base for potential customers to visit him? He needs to make an informed cost effective decision. | Staff requirements: It is important to be aware of his staffing needs in order to transact his business successfully. He needs to be able to identify areas of the business which he himself is unable to do, where he needs to employ someone to carry out these duties. He also needs to be aware of how much it will cost to employ specific expertise and if he has the potential to pay this.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Climate Entrepreneur — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2020 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1367,35 +1760,58 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
     id: "lcvp-2020-cl-b3ii", topicId: "lcvp-link-modules-1-1", conceptId: "reasons-jim-successful-securing-business-loan",
     section: "B", questionRef: "2020 CL Section B Q3(ii)",
+    stem: "Climate Entrepreneur In June 2019, the Government of Ireland launched the Climate Action Plan to address the impacts of the climate emergency on Ireland’s environment, society, economic and natural resources. Jim, a resident of Ballyglas, recently attended a meeting of his Local Community Group which has recently joined the Sustainable Energy Community Network and is working on an Energy Master Plan in partnership with Sustainable Energy Authority Ireland (SEAI). While sitting at this meeting, Jim realised that there were business opportunities involved in increasing the energy efficiency in homes. He learned that a key aim of the Climate Action Plan is to reduce Ireland’s dependency on fossil fuels. To achieve this, the installation of oil boilers will be banned by 2022 and gas boilers by 2025. In order to move from fossil fuels to renewable energy heating systems, 600,000 heat pumps will be installed by 2030, of which 400,000 will be retrofitted into existing buildings. Jim has worked as a qualified plumber for the last ten years. He enjoyed the job security that came with being an employee but has always aspired to setting up his own business one day. He believes he has the necessary skills to become an entrepreneur. After the meeting, he researched the new air to water heat pumps. He researched their sources, costs and installation criteria. He discovered he would need to upskill himself in order to meet the SEAI criteria to register as someone who can install heat pumps. He visited a house that had recently installed an air to water heat pump and spoke with the owners regarding their experience of this heating system. He met with a Technical Advisor from SEAI who recommended that Jim would attend a SEAI workshop on renewable energy heating systems. Jim made an appointment with the Local Enterprise Office to discuss the risks, challenges and benefits of setting up his own company. He was assigned a business mentor who discussed the different options for establishing himself as a sole-trader, a partnership or setting up a public limited company. He learned about professional indemnity; employers insurance; health and safety legislation. They discussed location, staff requirements and promoting his business. Jim’s mentor made him realise that preparation is the single most important thing he could do to ensure his business gets off the ground. His mentor suggested that Jim should sign up to the Local Enterprise Office Start Your Own Business programme. This programme guides potential entrepreneurs through the various aspects of business planning. In particular, Jim should attend the module dealing with basic bookkeeping as this is something he is not familiar with. Jim decided he was willing to take a risk and launched Jim’s Green Heating. He invested his personal savings in the business along with securing a small business loan from his local bank. Initially, he decided that he would set up as a sole-trader with a view to expansion if the business grows.",
     questionText: "Describe three reasons why Jim was successful in securing the business loan from the bank.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":6,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["He had savings of his own which he invested","It was only a small loan","He did a lot of research into the product/new sustainable energy enterprise","He is well qualified, has the necessary skills and has a good work history","He undertook a lot of preparation e.g. visited the LEO, met with a mentor","He is prepared to upskill in order to be able to carry out the job properly"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe three reasons why Jim was successful in securing the business loan from the bank. Three valid answers 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe three reasons why Jim was successful in securing the business loan from the bank. Three valid answers 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. He had savings of his own which he invested. | 2. It was only a small loan. | 3. He did a lot of research into the product/new sustainable energy enterprise. | 4. He is well qualified, has the necessary skills and has a good work history. | 5. He undertook a lot of preparation e.g. visited the LEO, met with a mentor. | 6. He is prepared to upskill in order to be able to carry out the job properly.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Climate Entrepreneur — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2020 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-c1a", topicId: "lcvp-link-modules-0-4", conceptId: "underlined-terms",
+    id: "lcvp-2020-cl-c1a", topicId: "lcvp-link-modules-0-1", conceptId: "underlined-terms",
     section: "C", questionRef: "2020 CL Section C Q1(a)",
     stem: "Manray Technologies needs to recruit a Technical Solutions Engineer. The following job advertisement appeared on the company’s website. Technical Solutions Engineer required for a full-time position The successful applicant must possess a Bachelor’s Degree in Computer Science. They should have excellent troubleshooting, problem solving, written and verbal communication skills. We are offering an attractive salary and flexible working hours. Please apply with CV including two referees to hr@manraytechnologies.ie. Manray Technologies is an equal opportunities employer. www.manraytechnologies.ie",
     questionText: "Explain two of the underlined terms.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks (1+1)","answer":2,"ofParts":4,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Explain two of the underlined terms. Two terms explained (1+1) Problem Solving: The… — any 2", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Problem Solving: The process of defining a problem, determining its cause, identifying, prioritising and selecting a solution","Flexible Working Hours: System that allows employees, within limits, to choose when to work the required number of hours for their basic pay","Referees: These are people who know the job seeker and any potential employer can contact them to find out about their reliability etc","Equal Opportunities Employer: This means that the employer will not discriminate between applicants on the grounds of sexual orientation, age, race, religion, ethnic group, gender, disability etc./everyone gets the same chance/treated the same"]} },
+    { id: "terms", kind: "criterion", verbatim: "Two terms explained", marks: 4, contextNote: "Choose TWO of the FOUR underlined advert terms,1+1each. The complete original advert and all four definitions are retained: Problem Solving: The process of defining a problem, determining its cause, identifying, prioritising and selecting a solution. | Flexible Working Hours: System that allows employees, within limits, to choose when to work the required number of hours for their basic pay. | Referees: These are people who know the job seeker and any potential employer can contact them to find out about their reliability etc. | Equal Opportunities Employer: This means that the employer will not discriminate between applicants on the grounds of sexual orientation, age, race, religion, ethnic group, gender, disability etc./everyone gets the same chance/treated the same.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Complete Manray Technologies job advert",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1404,12 +1820,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
     id: "lcvp-2020-cl-c1b", topicId: "lcvp-link-modules-0-0", conceptId: "pieces-information-should-be-included-contract",
     section: "C", questionRef: "2020 CL Section C Q1(b)",
-    stem: "Manray Technologies needs to recruit a Technical Solutions Engineer. The following job advertisement appeared on the company’s website.",
+    stem: "Manray Technologies needs to recruit a Technical Solutions Engineer. The following job advertisement appeared on the company’s website. Technical Solutions Engineer required for a full-time position The successful applicant must possess a Bachelor’s Degree in Computer Science. They should have excellent troubleshooting, problem solving, written and verbal communication skills. We are offering an attractive salary and flexible working hours. Please apply with CV including two referees to hr@manraytechnologies.ie. Manray Technologies is an equal opportunities employer. www.manraytechnologies.ie",
     questionText: "State four pieces of information that should be included in a Contract of Employment.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 1 mark","answer":4,"ofParts":12,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["The place of work/employers name and address/employees name and address","The title of the job or the nature and description of the work","The date the employment started/duration of the contract","Wages/salary/pay (for example, weekly or monthly)/including overtime/bonus/ commission","Any terms or conditions relating to hours of work/start times/finish times","Paid leave (other than sick leave), including annual leave and public holiday entitlement","Sick pay/sick leave entitlements","Pension and pension schemes/details","Period of notice to be given by employer or employee/dismissal procedures","Details of any collective agreements that may affect your terms of employment","Probationary period","Employees and employers signature"]} },
+    { id: "responses", kind: "anyN", verbatim: "State four pieces of information that should be included in a Contract of Employment Four valid answers 4 x 1 mark", marks: 4, contextNote: "Choose any 4 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":4,"perOption":1,"options":["The place of work/employers name and address/employees name and address.","The title of the job or the nature and description of the work.","The date the employment started/duration of the contract.","Wages/salary/pay (for example, weekly or monthly)/including overtime/bonus/ commission.","Any terms or conditions relating to hours of work/start times/finish times.","Paid leave (other than sick leave), including annual leave and public holiday entitlement.","Sick pay/sick leave entitlements.","Pension and pension schemes/details.","Period of notice to be given by employer or employee/dismissal procedures.","Details of any collective agreements that may affect your terms of employment.","Probationary period.","Employees and employers signature."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Complete Manray Technologies job advert",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1418,11 +1844,33 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
     id: "lcvp-2020-cl-c1c", topicId: "lcvp-link-modules-0-0", conceptId: "reasons-employer-wants-employee-excellent-communication",
     section: "C", questionRef: "2020 CL Section C Q1(c)",
-    stem: "Manray Technologies needs to recruit a Technical Solutions Engineer. The following job advertisement appeared on the company’s website.",
+    stem: "Manray Technologies needs to recruit a Technical Solutions Engineer. The following job advertisement appeared on the company’s website. Technical Solutions Engineer required for a full-time position The successful applicant must possess a Bachelor’s Degree in Computer Science. They should have excellent troubleshooting, problem solving, written and verbal communication skills. We are offering an attractive salary and flexible working hours. Please apply with CV including two referees to hr@manraytechnologies.ie. Manray Technologies is an equal opportunities employer. www.manraytechnologies.ie",
     questionText: "Describe four reasons why this employer wants an employee with excellent communication skills.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 2 marks (1+1)","answer":4,"ofParts":8,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Excellent communication skills help with team building, and help to make sure that collaborative projects run smoothly","Better customer service/satisfaction: when queries or complaints are handled well/increase in returning business","Improved productivity/better communication with their manager/quality of work or product: employees understand what they are to do/their role/efficient work/no missed orders/no employee errors/tasks will be completed to a high standard/better decisions","Motivated employees: Better employee morale/employees are informed of changes/plans. Understand what is happening/less absenteeism/helps resolve conflicts and preventing potential ones from happening/better industrial relations","Better innovation: Business ideas/improvements are easily conveyed or acted on","Enhanced employer branding/sales: Better sales/more profit due to the job being completed correctly/on time/employees are a spokesperson/representative for the company. Express themselves in a positive, clear way when speaking to people","Health and safety: less accidents occur/less insurance implications/training or instructions understood","Ensures good business communication: written/verbal communication within the business and with other businesses. Businesses use phones/email/video conferencing/chat applications to interact with other people"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe four reasons why this employer wants an employee with excellent communication skills. Four valid reasons 4 x 2 marks (1+1)", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: Describe four reasons why this employer wants an employee with excellent communication skills. Four valid reasons 4 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Excellent communication skills help with team building, and help to make sure that collaborative projects run smoothly. | 2. Better customer service/satisfaction: when queries or complaints are handled well/increase in returning business. | 3. Improved productivity/better communication with their manager/quality of work or product: employees understand what they are to do/their role/efficient work/no missed orders/no employee errors/tasks will be completed to a high standard/better decisions. | 4. Motivated employees: Better employee morale/employees are informed of changes/plans. Understand what is happening/less absenteeism/helps resolve conflicts and preventing potential ones from happening/better industrial relations | 5. Better innovation: Business ideas/improvements are easily conveyed or acted on. | 6. Enhanced employer branding/sales: Better sales/more profit due to the job being completed correctly/on time/employees are a spokesperson/representative for the company. Express themselves in a positive, clear way when speaking to people. | 7. Health and safety: less accidents occur/less insurance implications/training or instructions understood. | 8. Ensures good business communication: written/verbal communication within the business and with other businesses. Businesses use phones/email/video conferencing/chat applications to interact with other people.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Complete Manray Technologies job advert",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      17
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -1430,13 +1878,35 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-c1di", topicId: "lcvp-link-modules-1-3", conceptId: "areas-should-be-included-presentation",
+    id: "lcvp-2020-cl-c1di", topicId: "lcvp-link-modules-0-1", conceptId: "areas-should-be-included-presentation",
     section: "C", questionRef: "2020 CL Section C Q1(d)(i)",
-    stem: "Manray Technologies needs to recruit a Technical Solutions Engineer. The following job advertisement appeared on the company’s website.",
+    stem: "Manray Technologies needs to recruit a Technical Solutions Engineer. The following job advertisement appeared on the company’s website. Technical Solutions Engineer required for a full-time position The successful applicant must possess a Bachelor’s Degree in Computer Science. They should have excellent troubleshooting, problem solving, written and verbal communication skills. We are offering an attractive salary and flexible working hours. Please apply with CV including two referees to hr@manraytechnologies.ie. Manray Technologies is an equal opportunities employer. www.manraytechnologies.ie As part of the interview process you are expected to give a presentation to the employer.",
     questionText: "Outline three areas that should be included in this presentation.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":5,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Skills/Qualities that make you suitable for the position e.g. teamwork, communication, flexible etc","Qualifications: this would show the applicant is qualified for the job/degree/masters","Relevant experience/projects they have worked on that show they are capable of the job","What they could bring to the company to enhance it/ideas to improve products or services","Hobbies/interests: these would give an insight to the work-life balance of the interviewee"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline three areas that should be included in this presentation. Three valid areas 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Outline three areas that should be included in this presentation. Three valid areas 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Skills/Qualities that make you suitable for the position e.g. teamwork, communication, flexible etc. | 2. Qualifications: this would show the applicant is qualified for the job/degree/masters. | 3. Relevant experience/projects they have worked on that show they are capable of the job. | 4. What they could bring to the company to enhance it/ideas to improve products or services. | 5. Hobbies/interests: these would give an insight to the work-life balance of the interviewee.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Complete Manray Technologies job advert",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      18
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -1444,13 +1914,35 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-c1dii", topicId: "lcvp-link-modules-1-1", conceptId: "can-make-presentation-stand-out-those",
+    id: "lcvp-2020-cl-c1dii", topicId: "lcvp-link-modules-0-1", conceptId: "can-make-presentation-stand-out-those",
     section: "C", questionRef: "2020 CL Section C Q1(d)(ii)",
-    stem: "Manray Technologies needs to recruit a Technical Solutions Engineer. The following job advertisement appeared on the company’s website.",
+    stem: "Manray Technologies needs to recruit a Technical Solutions Engineer. The following job advertisement appeared on the company’s website. Technical Solutions Engineer required for a full-time position The successful applicant must possess a Bachelor’s Degree in Computer Science. They should have excellent troubleshooting, problem solving, written and verbal communication skills. We are offering an attractive salary and flexible working hours. Please apply with CV including two referees to hr@manraytechnologies.ie. Manray Technologies is an equal opportunities employer. www.manraytechnologies.ie As part of the interview process you are expected to give a presentation to the employer.",
     questionText: "How can you make your presentation stand out from those by other interviewees?",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 1 mark","answer":3,"ofParts":7,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Keep your presentation relevant/not too short or too long","Keep your slides simple and easy to read, don’t overcrowd the slides with information","Use images and tables","Use contrasting colours for the slide background and text","Avoid flashy slide transitions/Use video or audio wisely","Engage the audience","Speak clearly. Be enthusiastic"]} },
+    { id: "responses", kind: "anyN", verbatim: "How can you make your presentation stand out from those by other interviewees? Three valid answers 3 x 1 mark", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":3,"perOption":1,"options":["Keep your presentation relevant/not too short or too long.","Keep your slides simple and easy to read, don’t overcrowd the slides with information.","Use images and tables.","Use contrasting colours for the slide background and text.","Avoid flashy slide transitions/Use video or audio wisely.","Engage the audience.","Speak clearly. Be enthusiastic."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Complete Manray Technologies job advert",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      18
+                ],
+                "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -1462,10 +1954,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2020 CL Section C Q2(a)(i)",
     stem: "Entreprenuers are the driving force for jobs in Ireland.",
     questionText: "Explain the term ‘entrepreneur’.",
-    tariffModel: {"kind":"fixed","notation":"2 x 1 mark","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "This is a person who uses their initiative/to come up with a business opportunity or idea/takes the risk/starts up a business/profit", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true },
+    { id: "definition", kind: "criterion", verbatim: "This is a person who uses their initiative/to come up with a business opportunity or idea/takes the risk/starts up a business/profit.", marks: 2, contextNote: "Original allocation2x1mark. Explain the term using two valid pieces from the whole source definition; no invented compulsory semantic split.", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1476,24 +1978,44 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2020 CL Section C Q2(a)(ii)",
     stem: "Entreprenuers are the driving force for jobs in Ireland.",
     questionText: "Name two necessary qualities of an entrepreneur.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 mark","answer":2,"ofParts":8,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Willing to take a risk","Focused","Determined","Constantly learning","Hard working","Motivated","Persistent","Decisive"]} },
+    { id: "responses", kind: "anyN", verbatim: "Two valid answers", marks: 2, openList: true, group: {"claimMax":2,"perOption":1,"options":["Willing to take a risk.","Focused.","Determined.","Constantly learning.","Hard working.","Motivated.","Persistent.","Decisive."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-c2b", topicId: "lcvp-link-modules-1-1", conceptId: "should-entrepreneurs-keep-up-date-new",
+    id: "lcvp-2020-cl-c2b", topicId: "lcvp-link-modules-1-0", conceptId: "should-entrepreneurs-keep-up-date-new",
     section: "C", questionRef: "2020 CL Section C Q2(b)",
     stem: "Entreprenuers are the driving force for jobs in Ireland.",
     questionText: "Why should entrepreneurs keep up-to-date with new technologies? Give two reasons.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":5,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Technology helps a business provide their customers with a better service","Technology keeps a business ahead of competitors","Technology ensures that a business does not fall behind or miss any opportunities","Technology can be used to protect financial data, confidential executive decisions and other proprietary information that leads to competitive advantages","Technology helps a business to grow sales/online/greater profits"]} },
+    { id: "responses", kind: "anyN", verbatim: "Why should entrepreneurs keep up-to-date with new technologies? Give two reasons. Two valid reasons 2 x 2 marks (0, 2)", marks: 4, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 2 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":2,"options":["Technology helps a business provide their customers with a better service.","Technology keeps a business ahead of competitors.","Technology ensures that a business does not fall behind or miss any opportunities.","Technology can be used to protect financial data, confidential executive decisions and other proprietary information that leads to competitive advantages.","Technology helps a business to grow sales/online/greater profits."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1504,52 +2026,99 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2020 CL Section C Q2(c)",
     stem: "Entreprenuers are the driving force for jobs in Ireland.",
     questionText: "Describe the advantages and the disadvantages of being self-employed.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 2 marks (1+1)","answer":4,"ofParts":10,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Independence: you work for yourself/own boss","Personal satisfaction from setting up a business","High profits if the business is successful","You have control over decisions made/set your own hours","Pride in your business/achievements","Lost your job – gain opportunity to make a new job to make money","It can be stressful/have to make all of the major decisions/need expertise in all areas of business","There is a risk of personal and financial failure","The business will be affected by the economic climate/hard to get finance/competition","You have to work long hours/can never switch off/effect on family life"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe the advantages and the disadvantages of being self-employed. Four valid answers 4 x 2 marks (1+1)", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: Describe the advantages and the disadvantages of being self-employed. Four valid answers 4 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice. The paper requires advantages AND disadvantages. Four responses total,1+1each, with both categories represented; the source gives no fixed category quota such as two-and-two. Complete original guidance: 1. Independence: you work for yourself/own boss. | 2. Personal satisfaction from setting up a business. | 3. High profits if the business is successful. | 4. You have control over decisions made/set your own hours. | 5. Pride in your business/achievements. | 6. Lost your job – gain opportunity to make a new job to make money. | 7. It can be stressful/have to make all of the major decisions/need expertise in all areas of business. | 8. There is a risk of personal and financial failure. | 9. The business will be affected by the economic climate/hard to get finance/competition. | 10. You have to work long hours/can never switch off/effect on family life.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-c2d", topicId: "lcvp-link-modules-1-3", conceptId: "detail-factors-may-cause-business-fail",
+    id: "lcvp-2020-cl-c2d", topicId: "lcvp-link-modules-1-0", conceptId: "detail-factors-may-cause-business-fail",
     section: "C", questionRef: "2020 CL Section C Q2(d)",
     stem: "Entreprenuers are the driving force for jobs in Ireland.",
     questionText: "Discuss in detail three factors which may cause a business to fail.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 3 marks","answer":3,"ofParts":10,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Lack of planning: you could lose out on opportunities in the market/run into financial difficulties/seasonality of the business/waste money producing the incorrect product/ advertise wrongly/bad product choice","Lack of finances: cash flow problems/not budgeting properly could mean you do not have enough money to meet your needs/you could over borrow","Poor market research: not meeting customer’s needs/failure to connect with potential customers: not using appropriate advertising/promotions/lack of demand","Badly trained employees: not able to get suitable employees/relevant experience/qualifications","Lack of managerial skills: not being able to run the business effectively","Bad location: too far away from customers/no parking/poor infrastructure","Economic factors: recession in the economy/high taxation/Brexit/Pandemic","Poor quality product: lack of quality control/no after-sales service","Poor industrial relations: poor communication between employees and management/low staff moral/lower output levels/high absenteeism/high staff turnover","Competition from new or larger business offering the same product/service/taking the business away"]} },
+    { id: "responses", kind: "criterion", verbatim: "Discuss in detail three factors which may cause a business to fail. Three valid factors 3 x 3 marks (1 + (1+1))", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Discuss in detail three factors which may cause a business to fail. Three valid factors 3 x 3 marks (1 + (1+1)) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Lack of planning: you could lose out on opportunities in the market/run into financial difficulties/seasonality of the business/waste money producing the incorrect product/ advertise wrongly/bad product choice. | 2. Lack of finances: cash flow problems/not budgeting properly could mean you do not have enough money to meet your needs/you could over borrow. | 3. Poor market research: not meeting customer’s needs/failure to connect with potential customers: not using appropriate advertising/promotions/lack of demand. | 4. Badly trained employees: not able to get suitable employees/relevant experience/qualifications. | 5. Lack of managerial skills: not being able to run the business effectively. | 6. Bad location: too far away from customers/no parking/poor infrastructure. | 7. Economic factors: recession in the economy/high taxation/Brexit/Pandemic. | 8. Poor quality product: lack of quality control/no after-sales service. | 9. Poor industrial relations: poor communication between employees and management/low staff moral/lower output levels/high absenteeism/high staff turnover. | 10. Competition from new or larger business offering the same product/service/taking the business away.", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-c3a", topicId: "lcvp-link-modules-0-4", conceptId: "further-preparation-carry-out-having-secured",
+    id: "lcvp-2020-cl-c3a", topicId: "lcvp-link-modules-0-3", conceptId: "further-preparation-carry-out-having-secured",
     section: "C", questionRef: "2020 CL Section C Q3(a)",
     stem: "Work Experience/Work Shadowing is a vital part of the LCVP.",
     questionText: "What further preparation would you carry out having secured your work experience/work shadowing placement?",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 mark (1+1)","answer":2,"ofParts":8,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"questionTotal","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Prepare a CV/work placement template","Contact employers/by letter/email/telephone/personal contact","Get consent from parents/principal","Give insurance details to employer","Research the company/type of work to be done","Check start time/finish time","Organise travel/clothes/lunch","Complete training/Garda vetting"]} },
+    { id: "model-1", kind: "point", verbatim: "Prepare a CV/work placement template.", marks: null, contextNote: "Numeric scoring held. Original conflicting instructions: Four valid points; 2 x 2 mark (1+1). The total is 4, but the response count and allocation disagree. Compare the complete response with all original models; confidence review only pending authoritative clarification. No quota, partial ladder or numeric claim is inferred." },
+    { id: "model-2", kind: "point", verbatim: "Contact employers/by letter/email/telephone/personal contact.", marks: null },
+    { id: "model-3", kind: "point", verbatim: "Get consent from parents/principal.", marks: null },
+    { id: "model-4", kind: "point", verbatim: "Give insurance details to employer.", marks: null },
+    { id: "model-5", kind: "point", verbatim: "Research the company/type of work to be done.", marks: null },
+    { id: "model-6", kind: "point", verbatim: "Check start time/finish time.", marks: null },
+    { id: "model-7", kind: "point", verbatim: "Organise travel/clothes/lunch.", marks: null },
+    { id: "model-8", kind: "point", verbatim: "Complete training/Garda vetting.", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-c3b", topicId: "lcvp-link-modules-0-4", conceptId: "personal-goals-had-relation-work-experience",
+    id: "lcvp-2020-cl-c3b", topicId: "lcvp-link-modules-0-3", conceptId: "personal-goals-had-relation-work-experience",
     section: "C", questionRef: "2020 CL Section C Q3(b)",
     stem: "Work Experience/Work Shadowing is a vital part of the LCVP.",
     questionText: "Explain three personal goals you had in relation to your work experience/work shadowing.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["To decide if this job/career is for me","To experience the world of work/time keeping/longer day","To learn a new skill/teamwork/communication","To be more confident when interacting with adults","To improve my CV by having work experience or a referee","To be able to write up my Diary of Work Experience for my portfolio","To gain a contact for future employment/summer work/part-time job"]} },
+    { id: "responses", kind: "criterion", verbatim: "Explain three personal goals you had in relation to your work experience/work shadowing. Three valid goals 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Explain three personal goals you had in relation to your work experience/work shadowing. Three valid goals 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. To decide if this job/career is for me. | 2. To experience the world of work/time keeping/longer day. | 3. To learn a new skill/teamwork/communication. | 4. To be more confident when interacting with adults. | 5. To improve my CV by having work experience or a referee. | 6. To be able to write up my Diary of Work Experience for my portfolio. | 7. To gain a contact for future employment/summer work/part-time job.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1560,10 +2129,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2020 CL Section C Q3(c)",
     stem: "Work Experience/Work Shadowing is a vital part of the LCVP.",
     questionText: "Explain three responsibilities of employees with regard to Health and Safety in the workplace.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":9,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Explain three responsibilities of workers with regard to Health and Safety in the… — any 3", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["To follow all safety instructions, guidelines and procedures e.g. fire drills","To use machinery and equipment correctly e.g. use safety guards","Wear all protective clothing/PPE e.g. hard hat","Report all accidents and hazards to management/safety officer/COVID officer","Attend all safety training (manual handling etc.) and practice skills/knowledge in work","Treat others with respect/do not bully in the workplace","Read safety statement/notices and adhere to them","To take reasonable care not to put other people at risk by what you do or don't do in the course of your work","Not to be under the influence of drink or drugs in the workplace"]} },
+    { id: "responses", kind: "criterion", verbatim: "Explain three responsibilities of workers with regard to Health and Safety in the workplace. Three valid points 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Explain three responsibilities of workers with regard to Health and Safety in the workplace. Three valid points 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. To follow all safety instructions, guidelines and procedures e.g. fire drills. | 2. To use machinery and equipment correctly e.g. use safety guards. | 3. Wear all protective clothing/PPE e.g. hard hat. | 4. Report all accidents and hazards to management/safety officer/COVID officer | 5. Attend all safety training (manual handling etc.) and practice skills/knowledge in work. | 6. Treat others with respect/do not bully in the workplace. | 7. Read safety statement/notices and adhere to them. | 8. To take reasonable care not to put other people at risk by what you do or don't do in the course of your work. | 9. Not to be under the influence of drink or drugs in the workplace.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1574,10 +2153,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2020 CL Section C Q3(d)(i)",
     stem: "Work Experience/Work Shadowing is a vital part of the LCVP.",
     questionText: "Describe three challenges that a student may experience during their work experience/work shadowing.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":6,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Not having meaningful work to do/boredom/trying to fill the time","Lack of training for tasks/no instructions given/finding the work difficult","Not being treated well by the organisation/employees/being overworked/exploited/long hours","Practical issues/transport/timekeeping/dress code","Being excluded/employees not interested in helping the student","Finding it hard to talk to other people/overcoming personal worries/shyness"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe three challenges that a student may experience during their work experience/ work shadowing. Describe three difficulties 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe three challenges that a student may experience during their work experience/ work shadowing. Describe three difficulties 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Not having meaningful work to do/boredom/trying to fill the time. | 2. Lack of training for tasks/no instructions given/finding the work difficult. | 3. Not being treated well by the organisation/employees/being overworked/exploited/long hours. | 4. Practical issues/transport/timekeeping/dress code. | 5. Being excluded/employees not interested in helping the student. | 6. Finding it hard to talk to other people/overcoming personal worries/shyness.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1586,12 +2175,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
     id: "lcvp-2020-cl-c3dii", topicId: "lcvp-link-modules-0-3", conceptId: "these-challenges-might-be-overcome",
     section: "C", questionRef: "2020 CL Section C Q3(d)(ii)",
-    stem: "Work Experience/Work Shadowing is a vital part of the LCVP.",
+    stem: "Work Experience/Work Shadowing is a vital part of the LCVP. Describe three challenges that a student may experience during their work experience/work shadowing.",
     questionText: "Outline how these challenges might be overcome.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 1 mark","answer":3,"ofParts":6,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Speak to the employer and explain that you do not have enough to do, watch and learn from what others are doing","Ask other employees for help and/or speak to the employer and explain the difficulties","Speak to your LCVP teacher and explain the difficulties","Speak to the employer and give reasons for these difficulties – offer solutions/alternatives","Try not to see this as personal, do the work, be friendly and polite – you are there to learn","Act confidently, practice what you might say"]} },
+    { id: "responses", kind: "anyN", verbatim: "Outline how these challenges might be overcome. 3 x 1 mark", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred.  Each solution must address the SAME challenge selected in part(i); retain all six source examples without assigning an unprinted fixed pairing.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Speak to the employer and explain that you do not have enough to do, watch and learn from what others are doing.","Ask other employees for help and/or speak to the employer and explain the difficulties.","Speak to your LCVP teacher and explain the difficulties.","Speak to the employer and give reasons for these difficulties – offer solutions/alternatives.","Try not to see this as personal, do the work, be friendly and polite – you are there to learn.","Act confidently, practice what you might say."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1602,24 +2201,45 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2020 CL Section C Q4(a)(i)",
     stem: "You have been asked to complete an investigation on a career of your choice.",
     questionText: "Name the career you chose and outline one benefit to you from undertaking this investigation.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 marks","answer":1,"ofParts":4,"perPart":1}, totalMarks: 1,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name the career you investigated and outline one benefit to you from undertaking this… — any 1", marks: 1, contextNote: "1 answer at 1 mark each.", openList: true, group: {"claimMax":1,"perOption":1,"options":["Get information on the work involved/duties of the career","Find entry routes into the career/pathways","Skills/Qualities necessary for the career","Find out if you are suitable/if you would still like to pursue this career"]} },
+    { id: "career", kind: "point", verbatim: "One valid career", marks: 1, contextNote: "Name the career investigated; the source prints no named career example and none is invented." },
+    { id: "benefit", kind: "point", verbatim: "One valid benefit", marks: 1, contextNote: "ONE benefit of investigating that SAME career. Full source pool: Get information on the work involved/duties of the career. | Find entry routes into the career/pathways. | Skills/Qualities necessary for the career. | Find out if you are suitable/if you would still like to pursue this career." },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-c4aii", topicId: "lcvp-link-modules-0-1", conceptId: "methods-research-used-investigate-career",
+    id: "lcvp-2020-cl-c4aii", topicId: "lcvp-link-modules-0-2", conceptId: "methods-research-used-investigate-career",
     section: "C", questionRef: "2020 CL Section C Q4(a)(ii)",
     stem: "You have been asked to complete an investigation on a career of your choice.",
     questionText: "Name two methods of research you used to investigate your career.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 mark","answer":2,"ofParts":7,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Career Guidance Teacher: book an appointment to review DAT’s results/suitability for career/ course options","Research: use careers library/websites e.g. Careers Portal, Qualifax, CAO, college websites","Open Day/careers exhibition in the school/college open day/get to see facilities/speak to students and lecturers/careers exhibition e.g. Higher Options variety of third level institutions in one place","Work Experience: get to experience the day-to-day duties involved in the career","Interview: talking to someone doing this job allows you to ask questions e.g. salary, advantages and disadvantages of the job","Self-assessment/DATS tests","Review books/trade journals/college prospectus"]} },
+    { id: "responses", kind: "anyN", verbatim: "Name two methods of research you used to investigate your career. Two valid methods 2 x 1 mark", marks: 2, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":1,"options":["Career Guidance Teacher: book an appointment to review DAT’s results/suitability for career/ course options.","Research: use careers library/websites e.g. Careers Portal, Qualifax, CAO, college websites.","Open Day/careers exhibition in the school/college open day/get to see facilities/speak to students and lecturers/careers exhibition e.g. Higher Options variety of third level institutions in one place.","Work Experience: get to experience the day-to-day duties involved in the career.","Interview: talking to someone doing this job allows you to ask questions e.g. salary, advantages and disadvantages of the job.","Self-assessment/DATS tests.","Review books/trade journals/college prospectus."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1630,136 +2250,321 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2020 CL Section C Q4(b)",
     stem: "You have been asked to complete an investigation on a career of your choice.",
     questionText: "Describe three reasons why you would chose one entry pathway into a career over another.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":12,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Describe three reasons why you would choose one entry pathway into a career over… — any 3", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Costs: HEAR: financial considerations. May not be able to afford to go into full time education","Points/entry requirements: less points required/easier entry requirements","Apprenticeship/Traineeships - work experience, like the idea of combining work with study/get paid/practical experience","Course content more appealing","DARE: disability to be taken into consideration","Further Education (FETAC) – unsure what you want to do, not prepared to make the commitment to college","Didn’t get to complete the leaving certificate","Length of course/number of years to complete a course","Internship/opportunity to study abroad – gain experience in advance of commiting to studying for a number of years","End qualification: preferred/more suitable","Location: course is closer to home/can stay at home during the college year/friend going to this college","History of family members attending the college/doing a course/college reputation"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe three reasons why you would choose one entry pathway into a career over another. Three valid reasons 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe three reasons why you would choose one entry pathway into a career over another. Three valid reasons 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Costs: HEAR: financial considerations. May not be able to afford to go into full time education. | 2. Points/entry requirements: less points required/easier entry requirements. | 3. Apprenticeship/Traineeships - work experience, like the idea of combining work with study/get paid/practical experience. | 4. Course content more appealing. | 5. DARE: disability to be taken into consideration. | 6. Further Education (FETAC) – unsure what you want to do, not prepared to make the commitment to college. | 7. Didn’t get to complete the leaving certificate. | 8. Length of course/number of years to complete a course. | 9. Internship/opportunity to study abroad – gain experience in advance of commiting to studying for a number of years. | 10. End qualification: preferred/more suitable. | 11. Location: course is closer to home/can stay at home during the college year/friend going to this college. | 12. History of family members attending the college/doing a course/college reputation.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-c4c", topicId: "lcvp-link-modules-0-2", conceptId: "ways-employee-can-demonstrate-strong-work",
+    id: "lcvp-2020-cl-c4c", topicId: "lcvp-link-modules-0-0", conceptId: "ways-employee-can-demonstrate-strong-work",
     section: "C", questionRef: "2020 CL Section C Q4(c)",
     stem: "You have been asked to complete an investigation on a career of your choice.",
     questionText: "Describe three ways in which you as an employee can demonstrate a strong work ethic.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Being dedicated and responsible which means being able to focus and complete tasks no matter the circumstances/willing to learn new skills","Being honest by owning and improving upon mistakes at work which shows willingness to take risks and learn from them","Having personal integrity by always doing the right thing no matter who is watching. Integrity results in gaining the trust of those in the workplace","Be organised and get tasks done on time/get work in on time and make sure it is done well and meets all requirements/show initiative","Be responsible and reliable in terms of what is expected and deliver on those expectations","Work well with others and have respect for others in the workplace","Manage time well so that deadlines are met. Be punctual at work"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe three ways in which you as an employee can demonstrate a strong work ethic. Three valid answers 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe three ways in which you as an employee can demonstrate a strong work ethic. Three valid answers 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Being dedicated and responsible which means being able to focus and complete tasks no matter the circumstances/willing to learn new skills. | 2. Being honest by owning and improving upon mistakes at work which shows willingness to take risks and learn from them. | 3. Having personal integrity by always doing the right thing no matter who is watching. Integrity results in gaining the trust of those in the workplace. | 4. Be organised and get tasks done on time/get work in on time and make sure it is done well and meets all requirements/show initiative. | 5. Be responsible and reliable in terms of what is expected and deliver on those expectations. | 6. Work well with others and have respect for others in the workplace. | 7. Manage time well so that deadlines are met. Be punctual at work.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-c4d", topicId: "lcvp-link-modules-0-2", conceptId: "employers-require-dynamic-workforce-compete-today",
+    id: "lcvp-2020-cl-c4d", topicId: "lcvp-link-modules-0-0", conceptId: "employers-require-dynamic-workforce-compete-today",
     section: "C", questionRef: "2020 CL Section C Q4(d)",
     stem: "You have been asked to complete an investigation on a career of your choice.",
     questionText: "Employers require a dynamic workforce to compete in today’s business world. Describe three benefits to the employer when they employ highly skilled and educated employees.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 3 marks","answer":3,"ofParts":5,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; (0/2) — all or nothing on each answer.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Less training required/reducing costs for the employer","Competent employees lead to higher productivity/more efficient/less accidents","Through training and education employees will have better teamwork skills/can upskill other employees","Better quality products and services/satisfied customers/higher sales/profits/good reputation","Up to date with technology/new production methods/new ideas/helps the business stay ahead of competitors"]} },
+    { id: "benefit-1", kind: "criterion", verbatim: "Three valid benefits", marks: 3, contextNote: "THREE distinct benefits. Literal allocation3x3marks(1m+(0/2)): each benefit1 plus explanation2or0; no1mark explanation step. Complete original pool: Less training required/reducing costs for the employer. | Competent employees lead to higher productivity/more efficient/less accidents. | Through training and education employees will have better teamwork skills/can upskill other employees. | Better quality products and services/satisfied customers/higher sales/profits/good reputation. | Up to date with technology/new production methods/new ideas/helps the business stay ahead of competitors.", permittedMarks: [0,1,2,3], parts: [{"id":"benefit","verbatim":"Benefit","marks":1,"permittedMarks":[0,1]},{"id":"explanation","verbatim":"Explanation","marks":2,"permittedMarks":[0,2]}] },
+    { id: "benefit-2", kind: "criterion", verbatim: "Three valid benefits", marks: 3, contextNote: "Use a different benefit and its matching explanation, following1+(0/2).", permittedMarks: [0,1,2,3], parts: [{"id":"benefit","verbatim":"Benefit","marks":1,"permittedMarks":[0,1]},{"id":"explanation","verbatim":"Explanation","marks":2,"permittedMarks":[0,2]}] },
+    { id: "benefit-3", kind: "criterion", verbatim: "Three valid benefits", marks: 3, contextNote: "Use a different benefit and its matching explanation, following1+(0/2).", permittedMarks: [0,1,2,3], parts: [{"id":"benefit","verbatim":"Benefit","marks":1,"permittedMarks":[0,1]},{"id":"explanation","verbatim":"Explanation","marks":2,"permittedMarks":[0,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-c5ai", topicId: "lcvp-link-modules-0-4", conceptId: "benefits-inviting-guest-speaker-address-lcvp",
+    id: "lcvp-2020-cl-c5ai", topicId: "lcvp-link-modules-1-0", conceptId: "benefits-inviting-guest-speaker-address-lcvp",
     section: "C", questionRef: "2020 CL Section C Q5(a)(i)",
     stem: "A visit in from a guest speaker.",
     questionText: "Outline the benefits of inviting a guest speaker to address the LCVP class.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 mark","answer":2,"ofParts":7,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"questionTotal","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Planning this visit is a good teamwork activity, the class learns from this","Learn about the business/organisation which may also help in a career choice","Develops a relationship which will help in the future/work experience/visit out/mentoring","Class have information which they can use to write up a portfolio item e.g. Summary Report","You have experience of what it takes to organise a visit in","Communication skills are improved as someone has to welcome/thank the visitor/ask questions","It is a new/different source of information for the class, other than the teacher or books"]} },
+    { id: "model-1", kind: "point", verbatim: "Planning this visit is a good teamwork activity, the class learns from this.", marks: null, contextNote: "Numeric scoring held. Original conflicting instructions: Three points; 2 x 1 mark. The total is 2, but the response count and allocation disagree. Compare the complete response with all original models; confidence review only pending authoritative clarification. No quota, partial ladder or numeric claim is inferred." },
+    { id: "model-2", kind: "point", verbatim: "Learn about the business/organisation which may also help in a career choice.", marks: null },
+    { id: "model-3", kind: "point", verbatim: "Develops a relationship which will help in the future/work experience/visit out/mentoring.", marks: null },
+    { id: "model-4", kind: "point", verbatim: "Class have information which they can use to write up a portfolio item e.g. Summary Report.", marks: null },
+    { id: "model-5", kind: "point", verbatim: "You have experience of what it takes to organise a visit in.", marks: null },
+    { id: "model-6", kind: "point", verbatim: "Communication skills are improved as someone has to welcome/thank the visitor/ask questions.", marks: null },
+    { id: "model-7", kind: "point", verbatim: "It is a new/different source of information for the class, other than the teacher or books.", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-c5aii", topicId: "lcvp-link-modules-1-1", conceptId: "leaving-certificate-subject-studying-other-than",
+    id: "lcvp-2020-cl-c5aii", topicId: "lcvp-link-modules-1-0", conceptId: "leaving-certificate-subject-studying-other-than",
     section: "C", questionRef: "2020 CL Section C Q5(a)(ii)",
     stem: "A visit in from a guest speaker.",
     questionText: "Name one Leaving Certificate subject you are studying other than Link Modules and outline how it was useful in the organisation/planning of your visit in.",
-    tariffModel: {"kind":"fixed","notation":"1 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 1,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Subject clearly named with an outline of skills or knowledge gained from the subject and how it was useful", marks: 1, contextNote: "1 mark for this answer.", openList: true },
+    { id: "subject-use", kind: "point", verbatim: "Subject clearly named with an outline of skills or knowledge gained from the subject and how it was useful.", marks: 1, contextNote: "ONE whole criterion: name an LC subject OTHER THAN Link Modules and explain how its skills/knowledge were useful. No internal split or personal model is printed or invented." },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-c5b", topicId: "lcvp-link-modules-1-1", conceptId: "reasons-teamwork-so-important-success-activity",
+    id: "lcvp-2020-cl-c5b", topicId: "lcvp-link-modules-1-0", conceptId: "reasons-teamwork-so-important-success-activity",
     section: "C", questionRef: "2020 CL Section C Q5(b)",
     stem: "A visit in from a guest speaker.",
     questionText: "Describe three reasons why teamwork is so important to the success of this activity.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Sharing of information and ideas","More problem-solving abilities","Sharing of goals","Greater sense of ownership","Sharing of tasks/sharing of responsibilities","Gets the job completed faster or on time","Activity runs smoothly"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe three reasons why teamwork is so important to the success of this activity. Three valid reasons 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe three reasons why teamwork is so important to the success of this activity. Three valid reasons 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Sharing of information and ideas. | 2. More problem-solving abilities. | 3. Sharing of goals. | 4. Greater sense of ownership. | 5. Sharing of tasks/sharing of responsibilities. | 6. Gets the job completed faster or on time. | 7. Activity runs smoothly.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-c5d", topicId: "lcvp-link-modules-0-4", conceptId: "methods-could-be-used-evaluate-visit",
+    id: "lcvp-2020-cl-c5c", topicId: "lcvp-link-modules-1-0", conceptId: "c5c",
+    section: "C", questionRef: "2020 CL Section C Q5(c)",
+    stem: "A visit in from a guest speaker.",
+    questionText: "Draft an email to brief the guest speaker in advance of the visit to your LCVP class.",
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 8,
+    rows: [
+    { id: "email-1", kind: "point", verbatim: "To: email address", marks: 1, contextNote: "Eight required marks: address1,subject1,salutation1,purpose1,three information points3,closing1. Complete original allocation: 8 marks To: email address 1m Subject line 1m Opening salutation 1m Purpose of email 1m Three points of information about the visit 3 x 1m Closing: Yours sincerely 1m" },
+    { id: "email-2", kind: "point", verbatim: "Subject line", marks: 1 },
+    { id: "email-3", kind: "point", verbatim: "Opening salutation", marks: 1 },
+    { id: "email-4", kind: "point", verbatim: "Purpose of email", marks: 1 },
+    { id: "information", kind: "criterion", verbatim: "Three points of information about the visit", marks: 3, contextNote: "THREE distinct relevant pieces of information about the visit,1each. The scheme prints criteria but no completed email model; none is invented.", permittedMarks: [0,1,2,3], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]}] },
+    { id: "email-6", kind: "point", verbatim: "Closing: Yours sincerely", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
+    id: "lcvp-2020-cl-c5d", topicId: "lcvp-link-modules-1-0", conceptId: "methods-could-be-used-evaluate-visit",
     section: "C", questionRef: "2020 CL Section C Q5(d)",
     stem: "A visit in from a guest speaker.",
     questionText: "Describe four methods that could be used to evaluate the visit in and give reasons for each method chosen.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 2marks (1 + 1)","answer":4,"ofParts":7,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; each split 1 + 1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Questionnaire: Can be given to the speaker as well as the class to get their opinion on the visit. Reason: Easy to administer/collate results Can be completed anonymously Generally inexpensive Good response rate They are objective","Class Discussion: The class can discuss the visit in/varying opinions can be taken on board. Reason: Easy to organise Everyone can participate Can see how much was learned Allows for everyone to contribute to the discussion Good to show improvement or practice communication skills","Portfolio Item e.g. Summary Report: Correct type of information to complete the report. Reason: Easy method to use as all class members must produce a report Reports can be compared easily","Contact the speaker via a follow-up phone call or e-mail. Reason: They are in a position to give feedback from their point of view as to how they felt about the visit, how the students engaged and whether they felt that the students benefitted from the visit","Ask Teacher: who can comment on how well this visit was organised/run. Reason: Allows the class to practice their interview/communication skills Questions can be explanied if necessary Easy to do No cost involved You will get honest feedback/review of teamwork","Review of Teamwork: Did the class put into practice what they have learned/how well did they work together as a team. Reason: Objective was to work as a team All class members are aware of what is involved Will give direction for future teamwork activities","Review Aims/Objectives: To see if the aims or objectives for the visit were met. Reason: Was the purpose of the activity achieved? Did they get the information they needed?"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe four methods that could be used to evaluate the visit in, and give reasons for each method chosen. Four valid methods 4 x 2marks (1 + 1)", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: Describe four methods that could be used to evaluate the visit in, and give reasons for each method chosen. Four valid methods 4 x 2marks (1 + 1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Questionnaire: Can be given to the speaker as well as the class to get their opinion on the visit. Reason: Easy to administer/collate results Can be completed anonymously Generally inexpensive Good response rate They are objective. | 2. Class Discussion: The class can discuss the visit in/varying opinions can be taken on board. Reason: Easy to organise Everyone can participate Can see how much was learned Allows for everyone to contribute to the discussion Good to show improvement or practice communication skills. | 3. Portfolio Item e.g. Summary Report: Correct type of information to complete the report. Reason: Easy method to use as all class members must produce a report Reports can be compared easily. | 4. Contact the speaker via a follow-up phone call or e-mail. Reason: They are in a position to give feedback from their point of view as to how they felt about the visit, how the students engaged and whether they felt that the students benefitted from the visit. | 5. Ask Teacher: who can comment on how well this visit was organised/run. Reason: Allows the class to practice their interview/communication skills Questions can be explanied if necessary Easy to do No cost involved You will get honest feedback/review of teamwork. | 6. Review of Teamwork: Did the class put into practice what they have learned/how well did they work together as a team. Reason: Objective was to work as a team All class members are aware of what is involved Will give direction for future teamwork activities. | 7. Review Aims/Objectives: To see if the aims or objectives for the visit were met. Reason: Was the purpose of the activity achieved? Did they get the information they needed? Every method must include its OWN reason. Preserve all seven complete method/reason pools, including the continuation page.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-c6a", topicId: "lcvp-link-modules-1-1", conceptId: "sources-finance-business-start-up",
+    id: "lcvp-2020-cl-c6a", topicId: "lcvp-link-modules-1-3", conceptId: "sources-finance-business-start-up",
     section: "C", questionRef: "2020 CL Section C Q6(a)",
     stem: "Planning for a business start-up.",
     questionText: "List four sources of finance for a business start-up.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 1 mark","answer":4,"ofParts":6,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "List four sources of finance for business start-ups. Any four — any 4", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Personal investment/own savings","Investment by family/friends/business angel","Bank loan/financing","Grants","Venture capital","Crowd funding"]} },
+    { id: "responses", kind: "anyN", verbatim: "List four sources of finance for business start-ups. Any four relevant sources 4 x 1 mark", marks: 4, contextNote: "Choose any 4 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":4,"perOption":1,"options":["Personal investment/own savings.","Investment by family/friends/business angel.","Bank loan/financing.","Grants.","Venture capital.","Crowd funding."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-c6b", topicId: "lcvp-link-modules-1-1", conceptId: "reasons-preparing-business-plan",
+    id: "lcvp-2020-cl-c6b", topicId: "lcvp-link-modules-1-3", conceptId: "reasons-preparing-business-plan",
     section: "C", questionRef: "2020 CL Section C Q6(b)",
     stem: "Planning for a business start-up.",
     questionText: "Outline three reasons for preparing a business plan.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Sets out aims/objectives of the business/is it worthwhile beginning the business/continuing with the business","Required when applying for a bank loan/grants","You can evaluate how your business is doing by comparing it to the plan/helps to measure progress as the business develops","Having a plan helps with the day to day decision making","To help your business run more efficiently","Helps anticipate trends or needs of the business","Helps identify weaknesses in the business"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline three reasons for preparing a business plan. Three relevant answers 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Outline three reasons for preparing a business plan. Three relevant answers 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Sets out aims/objectives of the business/is it worthwhile beginning the business/continuing with the business. | 2. Required when applying for a bank loan/grants. | 3. You can evaluate how your business is doing by comparing it to the plan/helps to measure progress as the business develops. | 4. Having a plan helps with the day to day decision making. | 5. To help your business run more efficiently. | 6. Helps anticipate trends or needs of the business. | 7. Helps identify weaknesses in the business.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2020, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
-    id: "lcvp-2020-cl-c6c", topicId: "lcvp-link-modules-1-1", conceptId: "success-business-enterprise-can-be-measured",
+    id: "lcvp-2020-cl-c6c", topicId: "lcvp-link-modules-1-3", conceptId: "success-business-enterprise-can-be-measured",
     section: "C", questionRef: "2020 CL Section C Q6(c)",
     stem: "Planning for a business start-up.",
     questionText: "Describe how the success of a business enterprise can be measured.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":8,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Profits/turnover/sales - increased from previous years. Meeting targeted profits/achieving aims. Improved share price","Comparisons with competitors/market share/being the dominant business in a particular industry or for a particular product","Winning awards/recognition from the industry/ISO awards","Good staff relations/no strikes/low staff turnover/committed hardworking staff","Customer loyalty/customers stay with the business, keep coming back/customer feedback","Size of the business/expansion/gaining new markets/new products/diversification","Continuity/length of time in business","Evaluate the success by comparing your business plan to your progress"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe how the success of a business enterprise can be measured. Three valid points 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe how the success of a business enterprise can be measured. Three valid points 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Profits/turnover/sales - increased from previous years. Meeting targeted profits/achieving aims. Improved share price. | 2. Comparisons with competitors/market share/being the dominant business in a particular industry or for a particular product. | 3. Winning awards/recognition from the industry/ISO awards. | 4. Good staff relations/no strikes/low staff turnover/committed hardworking staff. | 5. Customer loyalty/customers stay with the business, keep coming back/customer feedback. | 6. Size of the business/expansion/gaining new markets/new products/diversification. | 7. Continuity/length of time in business. | 8. Evaluate the success by comparing your business plan to your progress.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
+    id: "lcvp-2020-cl-c6di", topicId: "lcvp-link-modules-1-3", conceptId: "c6di",
+    section: "C", questionRef: "2020 CL Section C Q6(d)(i)",
+    stem: "Planning for a business start-up.",
+    questionText: "State and explain three key items that should be included in the body of a business plan.",
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 6,
+    rows: [
+    { id: "items", kind: "criterion", verbatim: "Three valid items", marks: 6, contextNote: "THREE key business-plan items stated and explained,1+1each. Importance has a separate3-mark task and is not counted again here. All FIVE original coherent item/importance profiles: Marketing/Market Research: Desk and field research/undertaken by the business or by a market research firm/identify target market/demand/competition/advertising/USP/price. Importance: to find out if your idea will be successful. | Finance: Sources of finance/loan/grants/cash flow forecast/budgeting income and expenditure/costs involved in purchasing equipment. Importance: to know how much is needed/where you will get the money/budgeting is important to ensure you have enough to meet your running costs. | Staff/Personnel/HR: Job description for employees/qualifications/salary/training required/ how many employees needed. Importance: to know how many employees are required/qualifications. | Production: raw materials/suppliers/production process/distribution/packaging/design. Importance: to know how long it will take to make the product/potential difficulties can be planned for. | Location/Premises: Near customers, staff and suppliers/parking/adequate room for future expansion. Near airport/good road network for deliveries. Importance: to plan for proper facilities and enough space/near good infrastructure.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2020 Common Level — © State Examinations Commission.",
+    id: "lcvp-2020-cl-c6dii", topicId: "lcvp-link-modules-1-3", conceptId: "c6dii",
+    section: "C", questionRef: "2020 CL Section C Q6(d)(ii)",
+    stem: "Planning for a business start-up. State and explain three key items that should be included in the body of a business plan.",
+    questionText: "Outline why each of these three items is important.",
+    tariffModel: {"kind":"fixed","notation":"Original 2020 allocation; conflicting quotas explicitly held"}, totalMarks: 3,
+    rows: [
+    { id: "importance", kind: "criterion", verbatim: "Importance of each item", marks: 3, contextNote: "ONE importance for EACH of the SAME THREE items chosen in part(i),1each. All FIVE original coherent item/importance profiles: Marketing/Market Research: Desk and field research/undertaken by the business or by a market research firm/identify target market/demand/competition/advertising/USP/price. Importance: to find out if your idea will be successful. | Finance: Sources of finance/loan/grants/cash flow forecast/budgeting income and expenditure/costs involved in purchasing equipment. Importance: to know how much is needed/where you will get the money/budgeting is important to ensure you have enough to meet your running costs. | Staff/Personnel/HR: Job description for employees/qualifications/salary/training required/ how many employees needed. Importance: to know how many employees are required/qualifications. | Production: raw materials/suppliers/production process/distribution/packaging/design. Importance: to know how long it will take to make the product/potential difficulties can be planned for. | Location/Premises: Near customers, staff and suppliers/parking/adequate room for future expansion. Near airport/good road network for deliveries. Importance: to plan for proper facilities and enough space/near good infrastructure.", permittedMarks: [0,1,2,3], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC LCVP Link Modules 2020 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
