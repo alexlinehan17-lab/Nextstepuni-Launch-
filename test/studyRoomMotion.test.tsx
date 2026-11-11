@@ -4,6 +4,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import StudySessionRoom from '../components/study/StudySessionRoom';
 import StudyTimeUp from '../components/study/StudyTimeUp';
 import StudyQuizInvitation from '../components/study/StudyQuizInvitation';
+import StudySessionSaved from '../components/study/StudySessionSaved';
 import { useStudyTransitionSound } from '../hooks/useStudyTransitionSound';
 import { useStudySession } from '../hooks/useStudySession';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
@@ -51,6 +52,19 @@ beforeEach(() => {
 afterEach(() => { cleanup(); setSoundMuted(false); vi.restoreAllMocks(); vi.unstubAllGlobals(); delete Element.prototype.animate; vi.useRealTimers(); });
 
 describe('the study room bloom and breathing guide', () => {
+  it.each([false, true])('settles the saved confirmation and respects reduced motion: %s', async reduced => {
+    preferences.reduced = reduced;
+    const cancel = vi.fn();
+    const animate = vi.fn(() => ({ finished: new Promise(() => {}), cancel }));
+    Object.defineProperty(Element.prototype, 'animate', { configurable: true, value: animate });
+    render(<StudySessionSaved subject="Mathematics" seconds={1500} points={30} onStudyAgain={vi.fn()} />);
+    expect(screen.getByRole('heading', { name: 'Session saved.' })).toHaveFocus();
+    expect(animate).toHaveBeenCalledTimes(reduced ? 0 : 1);
+    await advance(600);
+    expect(cancel).toHaveBeenCalledTimes(reduced ? 0 : 1);
+    expect(screen.getByRole('button', { name: 'Back to the study room' })).toBeEnabled();
+  });
+
   it('reveals completion from the real timer, plays one cue and can keep going', async () => {
     const view = render(<Harness />);
     const clock = screen.getByRole('timer');

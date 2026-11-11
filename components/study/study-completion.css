@@ -19,6 +19,7 @@
 .nsu-study-completion .sc-eyebrow { margin: 0; color: var(--sc-muted); font-size: 10px; font-weight: 600; line-height: 1.5; letter-spacing: .15em; text-transform: uppercase; }
 .nsu-study-completion .sc-eyebrow span { margin-inline: 9px; }
 .nsu-study-completion .sc-heading h1 { margin: 16px 0 0; font: 500 clamp(38px, 4.5vw, 56px)/1.06 var(--nsu-serif, Georgia, serif); letter-spacing: -.035em; color: var(--sc-ink); text-wrap: balance; }
+.nsu-study-completion .sc-heading h1:focus { outline: none; }
 .nsu-study-completion .sc-description { max-width: 48ch; margin: 18px 0 0; color: var(--sc-muted); font-size: 16px; line-height: 1.6; }
 .nsu-study-completion .sc-art { flex: none; }
 .nsu-study-completion .sc-art .crew-illustration,
@@ -52,7 +53,6 @@
 .nsu-study-completion .sc-extensions { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 14px; }
 .nsu-study-completion .sc-extensions > button { min-width: 100px; }
 .nsu-study-completion .sc-saved-actions { display: flex; flex-wrap: wrap; gap: 12px; }
-.sc-loading { position: fixed; inset: auto 20px 20px; margin: 0; padding: 12px 18px; border: 1px solid #777; background: #fff; color: #292925; z-index: 100; font: 14px 'DM Sans', sans-serif; }
 
 /* Split: a compact summary panel beside the decisions. */
 [data-study-completion='split'] .nsu-study-completion .sc-layout { max-width: 1000px; display: grid; grid-template-columns: minmax(220px, .75fr) minmax(0, 1.25fr); border: 1px solid var(--sc-line); border-radius: 14px; overflow: hidden; }
