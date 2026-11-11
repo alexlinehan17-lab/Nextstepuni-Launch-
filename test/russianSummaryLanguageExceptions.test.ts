@@ -4,8 +4,8 @@ import { languageFlagId, languageGroupId, languageMarks, languageOtherLanguageId
 import { tariffReconciles, type LanguagePointsRubric, type SecRubricCard } from '../types/markBank';
 
 type PointsCard = SecRubricCard & { rubric: LanguagePointsRubric };
-const pages = new Map([[2013,6],[2014,6],[2015,7],[2016,6],[2017,6],[2022,7],[2023,7],[2024,8],[2025,7],[2026,7]]);
-const ids = [...pages.keys()].flatMap(year => [1,2,3,4].map(number => `ru-${year}-hl-c2-${number}`));
+const pages = new Map([[2010,7],[2013,6],[2014,6],[2015,7],[2016,6],[2017,6],[2022,7],[2023,7],[2024,8],[2025,7],[2026,7]]);
+const ids = [...pages.keys()].flatMap(year => (year === 2010 ? [1,2,3,4,5] : [1,2,3,4]).map(number => `ru-${year}-hl-c2-${number}`));
 const get = (id: string): PointsCard => {
   const card = REVIEWED_CARDS.find(card => card.id === id);
   if (!card || card.kind !== 'rubric' || card.rubric.system !== 'language-points') throw new Error(id);
@@ -21,7 +21,7 @@ const placement = (card: PointsCard): LanguageScores => {
 };
 
 describe('source-reviewed Russian manual summary language exceptions', () => {
-  it('publishes only the forty independently reviewed summary exceptions', () => {
+  it('publishes only the forty prior and five 2010 source-reviewed summary exceptions', () => {
     const actual = REVIEWED_CARDS.filter(card => card.answerLanguageRule?.manualCriterionExceptions).map(card => card.id);
     expect(actual.sort()).toEqual([...ids].sort());
     expect(REVIEWED_CARDS.find(card => card.id === 'ru-2011-hl-c2')?.answerLanguageRule).toBeUndefined();

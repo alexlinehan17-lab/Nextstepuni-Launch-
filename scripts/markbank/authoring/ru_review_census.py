@@ -11,6 +11,25 @@ from pathlib import Path
 
 
 def reviewed_keys(year, level):
+    if (year, level) == (2010, 'hl'):
+        # Independent visual sweep: 16 written, 8 aural and 20 scheme pages.
+        # C1 Q5 is the cultural task; the missing city answer remains a leaf.
+        root=Path(__file__).resolve().parents[3]/'examiner-reports/russian'
+        for relative,digest in {
+            'papers/2010-hl-000-paper.pdf':'b31909e020b82ba2a6748f8b2ff59aa6bc5b0fc2c9351e7290d54c7e2215b475',
+            'papers/2010-hl-A00-paper.pdf':'98d9cd466281c69324f32e244a4734d9075c880d3d3850859dcc301120be03db',
+            'schemes/2010-hl.pdf':'15607f22c24d4502dee8d28cd319711c880d27d06eac33b1da96fa6554a0672c',
+        }.items():assert hashlib.sha256((root/relative).read_bytes()).hexdigest()==digest
+        keys=[('C1',q,None,r) for q,rs in [(1,(None,)),(2,('i','ii','iii')),(3,('i','ii')),(4,(None,)),(5,(None,))] for r in rs]
+        keys += [('C2',q,None,None) for q in (1,2,3,4,5)]+[('LA1',None,None,None)]
+        keys += [('LA2',q,None,None) for q in (1,2)]+[(u,q,None,None) for u,q in [('SD',3),('GR',1),('SE',2),('GW',3)]]
+        assert len(keys)==20
+        keys += [('L1',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,None),(3,None),(4,None)]]
+        keys += [('L2',q,None,r) for q,r in [(1,None),(2,None),(3,None),(4,'i'),(4,'ii')]]
+        keys += [('L3',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,None),(3,'i'),(3,'ii')]]
+        keys += [('L4',q,None,None) for q in (1,2,3)]
+        assert len(keys)==len(set(keys))==38
+        return set(keys)
     if (year, level) == (2011, 'hl'):
         # Independent visual review of all16 paper,8 aural and24 scheme pages.
         # Four summary asks retain four leaves under one collective45 task.

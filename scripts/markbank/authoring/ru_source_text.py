@@ -58,6 +58,9 @@ def repair_2010(document, path):
 
 
 def open_scheme(year, level):
+    if (year, level) == (2010, 'hl'):
+        from ru_2010_hl_fonts import open_repaired_scheme
+        return open_repaired_scheme()
     path = ROOT / f'examiner-reports/russian/schemes/{year}-{level}.pdf'
     document = fitz.open(path)
     if (year, level) == (2010, 'ol'):
