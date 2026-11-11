@@ -35,6 +35,7 @@ import { assertEconomicsReviewCoverage, bindEconomicsEditions } from './economic
 import { applyMathematicsReview, validateMathematicsReviewSources, assertReviewedMathematicsCards, reviewedMathematicsSource } from './mathematics/review.mjs';
 import { reviewedPhysicsSource } from './physicsSources.mjs';
 import { reviewedHomeEconomicsSource } from './homeEconomicsSources.mjs';
+import { reviewedLcvpSource, readLcvpDeferredScheme } from './lcvpSources.mjs';
 import { audioMaterialFault, audioQuestionPaperFileid } from './audioMaterial.mjs';
 import { videoMaterialFault } from './videoMaterial.mjs';
 
@@ -629,6 +630,12 @@ const LEVEL_TOKEN = { higher: 'hl', ordinary: 'ol', common: 'cl', foundation: 'f
 const LEVEL_WORD = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common', foundation: 'Foundation' };
 
 function schemeFor(subjectId, card) {
+  const lcvpSource = subjectId === 'lcvp' ? reviewedLcvpSource(card) : undefined;
+  if (lcvpSource) {
+    const file = lcvpSource.schemeTextPath;
+    if (!schemeCache.has(file)) schemeCache.set(file, comparableScheme(readLcvpDeferredScheme(lcvpSource)));
+    return schemeCache.get(file);
+  }
   const project = subjectId === 'maths' && /LP030EV\.pdf$/.test(reviewedMathematicsSource(card.id)?.schemeFileid ?? '');
   const deferred = (subjectId === 'maths' && reviewedMathematicsSource(card.id)?.sitting === 'deferred')
     || (subjectId === 'physics' && reviewedPhysicsSource(card.id)?.sitting === 'deferred')
@@ -1658,7 +1665,8 @@ for (const c of cards) {
    * corpusSubjectFor reads the field out of the citation; see paperIndex.mjs. */
   const reviewedSource = SUBJECT_ID === 'maths' ? reviewedMathematicsSource(c.id)
     : SUBJECT_ID === 'physics' ? reviewedPhysicsSource(c.id)
-    : SUBJECT_ID === 'home-economics' ? reviewedHomeEconomicsSource(c.id) : undefined;
+    : SUBJECT_ID === 'home-economics' ? reviewedHomeEconomicsSource(c.id)
+    : SUBJECT_ID === 'lcvp' ? reviewedLcvpSource(c) : undefined;
   const fileid = reviewedSource
     ? resolveIndexedPaperFileid(SUBJECT_ID, year, level, reviewedSource)
     : audioQuestionPaperFileid(c, SUBJECT_ID)
