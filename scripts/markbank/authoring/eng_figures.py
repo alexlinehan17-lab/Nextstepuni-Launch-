@@ -532,6 +532,142 @@ REJECTED = {
     (2024, 'ol', 5, 'a', 'ii'): 'one of the items the ask says are shown',
     (2024, 'ol', 5, 'a', 'ii'): 'the item captions are clipped in half at the foot',
     (2025, 'hl', 5, 'c', 'iii'): 'the last stages of the process are clipped off',
+    # 2026 Higher, looked at 2026-11-04 (the residue cuts each by eye):
+    (2026, 'hl', 1, 'f', None): 'clips the "dryer" label on the left',
+    **{(2026, 'hl', 4, 'b', r): 'clips the axis numbers and both axis titles'
+       for r in ('i', 'ii', 'iii')},
+    **{(2026, 'hl', 6, 'a', r): 'takes in the page\'s "(50 marks)" heading'
+       for r in ('i', 'ii', 'iii')},
+    **{(2026, 'hl', 7, 'c', r): 'a stray glyph from the ask in its corner'
+       for r in ('i', 'ii', 'iii')},
+    **{(2026, 'hl', 9, 'a', r): 'takes in the page\'s "(50 marks)" heading'
+       for r in ('i', 'ii')},
+    # 2026 Ordinary, looked at 2026-11-04 (the residue cuts each by eye):
+    (2026, 'ol', 1, 'm', None): 'takes in Q1(l)\'s "(iii) Pilot hole." above it',
+    **{(2026, 'ol', 7, 'b', r): 'cuts off the "Body" and "Hole" dimensions the ask reads'
+       for r in ('i', 'ii', 'iii', 'iv')},
+    # 2018 Ordinary, looked at 2026-11-04 (the residue cuts it by eye):
+    (2018, 'ol', 1, 'f', None): 'takes in the end of (d)\'s line above and the USB cable\'s '
+                                'corner',
+    # 2018 Higher, looked at 2026-11-04 (the residue cuts each by eye):
+    **{(2018, 'hl', 1, 'o', r): 'cuts off propellers B and C and their letters'
+       for r in ('i', 'ii')},
+    **{(2018, 'hl', 2, 'b', r): 'cuts off the strain axis and its "Strain (%)" label'
+       for r in ('i', 'ii', 'iii')},
+    **{(2018, 'hl', 3, 'b', r): 'cuts off the "% Carbon" axis and its values'
+       for r in ('i', 'ii', 'iii')},
+    **{(2018, 'hl', 4, 'a', r): 'cuts off the defect letters A and B'
+       for r in ('i', 'ii')},
+    # 2019 Ordinary, looked at 2026-11-04 (the residue cuts each by eye):
+    (2019, 'ol', 1, 'b', None): 'takes in the descender of (a)\'s "bandsaw." above it',
+    **{(2019, 'ol', 5, 'c', r): 'the products without their captions; the letter card '
+                                'carries them with the captions'
+       for r in ('i', 'ii', 'iii')},
+    (2019, 'ol', 6, 'a', None): 'carries the ask "Name any three of the lathe parts shown."',
+    # 2019 Higher, looked at 2026-11-04 (the residue cuts each by eye):
+    (2019, 'hl', 1, 'l', None): 'the safety signs beside (l) are Q1(m)\'s',
+    **{(2019, 'hl', 3, 'b', r): 'cuts off the "% Carbon" axis label'
+       for r in ('i', 'ii', 'iii')},
+    **{(2019, 'hl', 5, 'a', r): 'takes in the page\'s "(50 marks)" heading'
+       for r in ('i', 'ii')},
+    # 2020 Higher, looked at 2026-11-04 (the residue cuts it by eye):
+    **{(2020, 'hl', 8, 'a', r): 'a stray "d" from the ask in its corner'
+       for r in ('i', 'ii')},
+    # 2016 Ordinary, looked at 2026-11-04 (the residue cuts each by eye):
+    (2016, 'ol', 1, 'm', None): 'takes in the page footer "Page 2 of 7"',
+    **{(2016, 'ol', 2, 'a', r): 'takes in Question 2\'s head and (a)\'s prose'
+       for r in ('i', 'ii')},
+    **{(2016, 'ol', 5, 'a', r): 'cuts off the first drawing of A and half of C'
+       for r in ('i', 'ii')},
+    (2016, 'ol', 6, 'a', None): 'cuts the four drawings off at the waist',
+    # 2016 Higher, looked at 2026-11-04 (the residue cuts each by eye):
+    **{(2016, 'hl', 2, 'b', r): 'the axes sketch alone; the card shows it under the '
+                                'results table'
+       for r in ('i', 'ii', 'iii')},
+    **{(2016, 'hl', 3, 'b', r): 'cuts off the "% Carbon" axis values'
+       for r in ('i', 'ii', 'iii')},
+    **{(2016, 'hl', 3, 'c', r): 'a stray glyph from the prose at its left edge'
+       for r in ('i', 'ii')},
+    **{(2016, 'hl', 4, 'c', r): 'takes in (c)\'s prose beside the cooling curve'
+       for r in ('i', 'ii')},
+    **{(2016, 'hl', 8, 'c', r): 'a stray glyph from the prose at its left edge'
+       for r in ('i', 'ii')},
+    # 2017 Ordinary, looked at 2026-11-04 (the residue cuts each by eye):
+    **{(2017, 'ol', 3, 'b', r): 'cuts off the "Point" label and its arrow'
+       for r in ('i', 'ii')},
+    **{(2017, 'ol', 5, 'a', r): 'cuts off the first drawing of process A'
+       for r in ('i', 'ii', 'iii')},
+    (2017, 'ol', 6, 'b', None): 'carries the ask "Indentify any three of the lathe parts '
+                                'shown."',
+    (2017, 'ol', 6, 'c', 'ii'): 'the chuck alone; the card carries the OR branch\'s CNC '
+                                'lathe beside it',
+    # 2017 Higher, looked at 2026-11-04 (the residue cuts each by eye):
+    **{(2017, 'hl', 3, 'b', r): 'cuts off the "% Carbon" axis and its values'
+       for r in ('i', 'ii', 'iii')},
+    **{(2017, 'hl', 4, 'a', r): 'takes in (a)\'s prose beside the spring'
+       for r in ('i', 'ii')},
+    **{(2017, 'hl', 7, 'c', r): 'the magnetic chuck alone; the card carries the OR '
+                                'branch\'s 3-D printer beside it'
+       for r in ('i', 'ii')},
+    (2017, 'hl', 8, 'c', 'i'): 'a stray glyph from the ask at its left edge',
+    (2017, 'hl', 8, 'c', 'ii'): 'takes in (c)\'s prose beside the car',
+    # 2014 Higher, looked at 2026-11-04 (the residue cuts each by eye):
+    **{(2014, 'hl', 1, 'o', r): 'cuts off B and the containment structure\'s label'
+       for r in ('i', 'ii')},
+    **{(2014, 'hl', 3, 'b', r): 'cuts off the temperature axis and its values'
+       for r in ('i', 'ii')},
+    **{(2014, 'hl', 4, 'a', r): 'takes in the page\'s "(50 marks)"'
+       for r in ('i', 'ii')},
+    **{(2014, 'hl', 6, 'a', r): 'cuts off the label "casing for games controller"'
+       for r in ('i', 'ii')},
+    (2014, 'hl', 8, 'a', None): 'takes in the page\'s "(50 marks)"',
+    # 2010 Higher, looked at 2026-11-05 (the residue cuts each by eye):
+    (2010, 'hl', 1, 'a', None): 'cuts the captions (i)-(iii) under the three signs in half',
+    (2010, 'hl', 1, 'm', None): 'takes in the page footer "Page 3 of 12"',
+    (2010, 'hl', 1, 'p', None): 'takes in the foot of (p)\'s own line over the picture',
+    **{(2010, 'hl', 2, 'a', r): 'takes in (ii)\'s own lines beside the drawing'
+       for r in ('i', 'ii')},
+    **{(2010, 'hl', 4, 'b', r): 'cuts off the temperature axis title'
+       for r in ('i', 'ii', 'iii')},
+    **{(2010, 'hl', 7, 'b', r): 'takes in the foot of (b)\'s own line over the chips'
+       for r in ('i', 'ii', 'iii')},
+    # 2011 Higher, looked at 2026-11-05 (the residue cuts each by eye):
+    (2011, 'hl', 1, 'm', None): 'takes in the page footer "Page 3 of 12"',
+    **{(2011, 'hl', 3, 'b', r): 'takes in the foot of (b)\'s own line over the diagram'
+       for r in ('i', 'ii')},
+    **{(2011, 'hl', 3, 'c', r): 'takes in the foot of (c)\'s own line over the readings'
+       for r in ('i', 'ii')},
+    (2011, 'hl', 4, 'c', None): 'takes in the foot of (c)\'s own line over the drawings',
+    **{(2011, 'hl', 7, 'c', r): 'takes in the foot of (c)\'s own line over the cutters'
+       for r in ('i', 'ii')},
+    (2011, 'hl', 8, 'a', None): 'cuts off the captions (i) and (ii) under the two mechanisms',
+    # 2012 Higher, looked at 2026-11-05 (the residue cuts each by eye):
+    **{(2012, 'hl', 1, 'o', r): 'cuts off the laser beam leaving the tube at C'
+       for r in ('i', 'ii', 'iii')},
+    **{(2012, 'hl', 3, 'c', r): 'cuts off the temperature axis title and the "% Carbon" axis'
+       for r in ('i', 'ii')},
+    **{(2012, 'hl', 4, 'c', r): 'cuts the two shear-force arrows off at its edges'
+       for r in ('i', 'ii')},
+    **{(2012, 'hl', 7, 'b', r): 'takes in the foot of the line "engineering system shown." over '
+                                'the picture'
+       for r in ('i', 'ii')},
+    (2012, 'hl', 8, 'a', None): 'cuts off the captions (i) and (ii) under the two mechanisms',
+    # 2013 Higher, looked at 2026-11-05 (the residue cuts each by eye):
+    (2013, 'hl', 1, 'm', None): 'takes in the page footer "Page 3 of 12" and cuts off A',
+    **{(2013, 'hl', 1, 'o', r): 'cuts off the zones A and B'
+       for r in ('i', 'ii')},
+    **{(2013, 'hl', 2, 'c', r): 'the eddy current drawing is (c)(ii)\'s alone; cut by eye '
+                                'for it'
+       for r in ('i', 'ii')},
+    **{(2013, 'hl', 3, 'b', r): 'cuts off the carbon axis, its values and the temperature '
+                                'axis title'
+       for r in ('i', 'ii')},
+    # 2015 Higher, looked at 2026-11-04 (the residue cuts each by eye):
+    **{(2015, 'hl', 2, 'b', r): 'cuts off the stress axis, its values and the fractured '
+                                'specimen at C'
+       for r in ('i', 'ii')},
+    **{(2015, 'hl', 3, 'b', r): 'cuts off the "% Carbon" axis and its values'
+       for r in ('i', 'ii')},
 }
 
 
@@ -549,7 +685,17 @@ def worklist():
     import cardlint
     out = []
     idx = R.leaf_index(census_subject('engineering'))
-    for (year, level, _), leaves in sorted(idx.items()):
+    for (year, level, paper), leaves in sorted(
+            idx.items(), key=lambda kv: (kv[0][0], kv[0][1], kv[0][2] or '')):
+        # A deferred sitting's pictures are cut by hand in its eng_residue
+        # module; June's paper is not its paper.
+        if paper == 'Deferred':
+            continue
+        # A sitting whose scheme has not been extracted yet has nothing to
+        # card, and its Author cannot be built (eng_all skips it the same way).
+        if not os.path.exists(os.path.join(ROOT, 'examiner-reports', 'engineering',
+                                           'schemes', f'{year}-{level}.md')):
+            continue
         A = Author('engineering', year, level)
         for q, letter, roman in sorted(leaves):
             try:

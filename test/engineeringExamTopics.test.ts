@@ -276,7 +276,7 @@ describe('Engineering exam-topic registry', () => {
     expect({ schemeMaps, paperOnlyMaps }).toEqual({ schemeMaps: 64, paperOnlyMaps: 2 });
   });
 
-  it('surfaces 254 written questions and preserves all 554 Mark Bank cards', () => {
+  it('surfaces 254 written questions and preserves all 2269 Mark Bank cards', () => {
     expect(subjectAtlasStats('engineering')).toMatchObject({
       questions: 254,
       topics: 74,
@@ -288,10 +288,10 @@ describe('Engineering exam-topic registry', () => {
     // when eng-e3/e4/e5's missing pieces landed: five added (2025 Higher
     // Q1(h), Q4(a)(i), Q4(b)(i); 2025 Ordinary Q7(a)(i); 2022 Ordinary
     // Q7(c)(i)) and eng-2025-ol-q2-c-i withdrawn.
-    expect(ENGINEERING_HIGHER).toHaveLength(360);
-    expect(ENGINEERING_ORDINARY).toHaveLength(194);
+    expect(ENGINEERING_HIGHER).toHaveLength(1452);
+    expect(ENGINEERING_ORDINARY).toHaveLength(817);
     expect(new Set(
       [...ENGINEERING_HIGHER, ...ENGINEERING_ORDINARY].map(card => card.id),
-    ).size).toBe(554);
+    ).size).toBe(2269);
   });
 });

@@ -679,12 +679,14 @@ const LEVEL_TOKEN = { higher: 'hl', ordinary: 'ol', common: 'cl' };
 const LEVEL_WORD = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common' };
 
 /* A card from the SEC's DEFERRED sitting ("econ-2022-hl-deferred-sa-q1-a",
+ * "eng-2022-hl-deferred-q1-a",
  * "hist-2023-hl-deferred-lm-s1-q1a", cited "... — Deferred sitting"): its own
  * paper, scheme and index entry. Physics, Home Economics and Maths mark theirs
  * the same way on codex/home-economics-continuation-20261101. No other
  * subject's id matches, so every other deck builds exactly as before. */
 const DEFERRED_ID = {
   economics: /^econ-\d{4}-(?:hl|ol)-deferred-/,
+  engineering: /^eng-\d{4}-(?:hl|ol)-deferred-/,
   history: /^hist-\d{4}-(?:hl|ol)-deferred-/,
 };
 const deferredCard = (subjectId, card) =>
@@ -1595,7 +1597,17 @@ for (const c of cards) {
   // "labelled X" as an anatomy-style label dropped two complete Maths cards.
   const selfNamingMathsPoints = SUBJECT_ID === 'maths'
     && /\b(?:points?|complex numbers?),?\s+(?:which are\s+)?labelled\s+[A-Z]\b/i.test(c.questionText);
-  const namesLetters = !invitesDrawing && !selfNamingMathsPoints
+  // Engineering labels a picture's parts with their own NAMES -- "roll cage",
+  // "seat", "wheel rim" round the 2022 Ordinary dune buggy -- and asks for "a
+  // suitable material for each of the labelled parts". The printed label is
+  // the decoding; there is no letter to key. Only the bare "labelled parts"
+  // phrase, never a capital letter, and only with the picture on the question
+  // side. Engineering only, like the Maths case above: no other deck's
+  // verdict can move.
+  const wordLabelledEngineering = SUBJECT_ID === 'engineering' && Boolean(c.questionFigureKey)
+    && /\blabelled\s+parts\b/.test(c.questionText)
+    && !/\blabelled [A-Z]\b|\bstructures? [A-Z](,| and )|\bparts? [A-Z](,| and )/.test(c.questionText);
+  const namesLetters = !invitesDrawing && !selfNamingMathsPoints && !wordLabelledEngineering
     && /\blabelled [A-Z]\b|\bstructures? [A-Z](,| and )|\bparts? [A-Z](,| and )|\blabelled\s+(parts|structures)\b/.test(c.questionText);
   // Not merely "has a figure": a question about labelled parts needs those
   // labels DECODED, so it must carry a label key as well as the picture.
