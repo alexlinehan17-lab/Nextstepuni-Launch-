@@ -196,6 +196,13 @@ def shipped_cards(subject):
             assert 'reviewed-card-correction' in by_id[cid]['qa']['gates'], f'Unaudited correction: {cid}'
         out = [(cid, by_id[cid]['questionRef'] if cid in by_id else ref) for cid, ref in out]
         out.extend((card['id'], card['questionRef']) for card in reviewed if card['id'] not in originals)
+    if subject == 'religious-education':
+        # The band-grid cards (re_lane.py) are data folded in by rubric.ts; a
+        # sitting rebuilt into them has left the literal point cards.
+        supplement = os.path.join(DECKS, subject, 'rubric-authored.json')
+        if os.path.exists(supplement):
+            out.extend((card['id'], card['questionRef'])
+                       for card in json.load(open(supplement, encoding='utf-8'))['cards'])
     if subject == 'business':
         supplement = os.path.join(DECKS, 'business', 'rubric-authored.json')
         if os.path.exists(supplement):
@@ -541,6 +548,15 @@ def match_leaves(ref, leaves, sections_mode):
                     sec, kq, kl, kr = k
                     if ref['section'] and str(sec) != str(ref['section']):
                         continue
+                elif len(k) == 4:
+                    # A merged-mode paper keyed by section all the same: the
+                    # old-syllabus Economics paper restarts Section B at
+                    # Question 1 (econ_legacy_census.py), so "Q1" names two
+                    # questions and only the section tells them apart. A
+                    # citation that names no section matches neither.
+                    sec, kq, kl, kr = k
+                    if str(sec) != str(ref['section']):
+                        continue
                 else:
                     kq, kl, kr = k[-3], k[-2], k[-1]
                 if kq != q:
@@ -618,9 +634,36 @@ def reconcile_subject(subject, census=None):
         if not ref:
             unparsed.append({'id': cid, 'ref': refstr})
             continue
+        deferred = None
+        if subject == 'history':
+            # A deferred sitting is its own census paper, 'Deferred', and its
+            # card says so twice: the id ("hist-2023-hl-deferred-lm-...") and
+            # the citation ("... — Deferred sitting"). The two must agree. The
+            # same rule as Physics and Home Economics on codex/home-economics-
+            # continuation-20261101.
+            hist_deferred = bool(re.match(r'^hist-\d{4}-(?:hl|ol)-deferred-', cid))
+            # History keeps its paper-name filter below (deferred stays None):
+            if hist_deferred != (' — Deferred sitting' in refstr):
+                unparsed.append({'id': cid, 'ref': refstr})
+                continue
+            if hist_deferred:
+                ref['paper'] = 'Deferred'
+        if subject in ('economics', 'engineering'):
+            # A deferred sitting is its own census paper, 'Deferred', and its
+            # card says so twice: the id ("econ-2022-hl-deferred-...",
+            # "eng-2022-hl-deferred-...") and the citation ("... — Deferred
+            # sitting"). The two must agree. The same rule as Physics and Home
+            # Economics on codex/home-economics-continuation-20261101.
+            deferred = bool(re.match({'economics': r'^econ-\d{4}-(?:hl|ol)-deferred-',
+                                      'engineering': r'^eng-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
+            if deferred != (' — Deferred sitting' in refstr):
+                unparsed.append({'id': cid, 'ref': refstr})
+                continue
+            ref['paper'] = 'Deferred' if deferred else None
         candidates = [k for k in idx
                       if k[0] == ref['year'] and k[1] == ref['level']
-                      and (ref['paper'] is None or k[2] == ref['paper'])]
+                      and ((k[2] == 'Deferred') == deferred if deferred is not None
+                           else ref['paper'] is None or k[2] == ref['paper'])]
         hit = False
         for pk in candidates:
             got = match_leaves(ref, idx[pk], sections_mode)
@@ -784,6 +827,9 @@ def content_hash(subject):
         # PE's bands and rows are cut from the reviewed guidance at load (answers.ts).
         for name in (('factory.ts', 'reviewed.json', 'answers.ts') if subject == 'physical-education' else ('reviewed.ts', 'reviewed.json')):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
+    if subject == 'religious-education' and os.path.exists(os.path.join(DECKS, subject, 'rubric-authored.json')):
+        for name in ('rubric-authored.json', 'rubric.ts'):
+            h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     if subject == 'business':
         # Reviewed rubric cards and printed routes are data, not literal cards.
         for name in ('rubric-authored.json', 'route-pools.json', 'routes.mjs', 'rubric.ts'):
@@ -832,7 +878,7 @@ def refs_hash(subject):
     cards = shipped_cards(subject)
     # Data-driven language decks may order their runtime cards independently
     # from the manifest. Coverage identity is the stable id/ref pair.
-    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'physical-education', 'applied-maths', 'accounting', 'business'):
+    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'physical-education', 'applied-maths', 'accounting', 'business', 'religious-education'):
         cards = sorted(cards)
     text = '\n'.join(f'{cid}\t{ref}' for cid, ref in cards)
     return hashlib.sha256(text.encode('utf-8')).hexdigest()[:16]

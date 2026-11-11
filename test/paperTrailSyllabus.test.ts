@@ -67,13 +67,30 @@ describe('Paper Trail syllabus history', () => {
   });
 });
 
+// A deferred sitting joins the Atlas as its own paper only once it is carded
+// in the Mark Bank: Economics 2022 Higher (2026-11-04) and History's four Later
+// Modern deferred papers, 2022 and 2023 Higher and Ordinary (2026-11-04), their
+// questions kept apart from June's by logicalQuestionIdentity.
+const ADMITTED_DEFERRED = new Set([
+  'economics|2022|LC034ALP000EV-deferred.pdf',
+  'history|2022|LC004ALP000EV-deferred.pdf',
+  'history|2022|LC004GLP000EV-deferred.pdf',
+  'history|2023|LC004ALP000EV-deferred.pdf',
+  'history|2023|LC004GLP000EV-deferred.pdf',
+]);
+
 describe('Topic Atlas stays on the reviewed June papers', () => {
-  it('never surfaces a pre-2010, deferred or sample paper as a topic question', async () => {
+  it('never surfaces a pre-2010 or sample paper, or a deferred paper not yet carded, as a topic question', async () => {
     const { taggedSubjects, questionsForTopics } = await import('../components/PaperTrail/topics');
     const archiveOnly = new Set<string>();
     for (const [subjectId, entries] of Object.entries(PAPER_TRAIL_INDEX)) {
       for (const e of entries) {
-        if (e.sitting || e.year < 2010) for (const p of e.papers) archiveOnly.add(`${subjectId}|${e.year}|${p.doc.f}`);
+        if (e.sitting || e.year < 2010) {
+          for (const p of e.papers) {
+            const key = `${subjectId}|${e.year}|${p.doc.f}`;
+            if (!(e.sitting === 'deferred' && ADMITTED_DEFERRED.has(key))) archiveOnly.add(key);
+          }
+        }
       }
     }
     let checked = 0;
@@ -85,5 +102,15 @@ describe('Topic Atlas stays on the reviewed June papers', () => {
       }
     }
     expect(checked).toBeGreaterThan(1000);
+    // The admitted deferred paper surfaces as its own 16 questions, not as June's.
+    const deferred = questionsForTopics('economics', null).filter(q => q.fileid === 'LC034ALP000EV-deferred.pdf');
+    expect(deferred.map(q => q.n)).toEqual(Array.from({ length: 16 }, (_, i) => String(i + 1)));
+    // History's four deferred papers surface as their own 61 questions.
+    const historyDeferred = questionsForTopics('history', null).filter(q => q.fileid.endsWith('-deferred.pdf'));
+    expect(historyDeferred).toHaveLength(61);
+    expect(new Set(historyDeferred.map(q => `${q.year}|${q.fileid}`))).toEqual(new Set([
+      '2022|LC004ALP000EV-deferred.pdf', '2022|LC004GLP000EV-deferred.pdf',
+      '2023|LC004ALP000EV-deferred.pdf', '2023|LC004GLP000EV-deferred.pdf',
+    ]));
   });
 });

@@ -61,6 +61,10 @@ from lib import (Author, Refused, COMMAND_WORD,          # noqa: E402
 from eng_scheme import EngScheme                            # noqa: E402
 from eng_topics import topic_for, concept_for               # noqa: E402
 import cardlint                                             # noqa: E402
+import eng_lists                                            # noqa: E402
+import eng_rownotes                                         # noqa: E402
+import eng_residue                                          # noqa: E402
+import eng_deferred                                         # noqa: E402
 
 MAX_ROWS = 12
 
@@ -590,6 +594,33 @@ def rows_for(notation, total, rule, points, required=False):
     return ('point', None, {'kind': 'questionTotal'}, None)
 
 
+def topic_for_part(A, q, letter, roman, ask):
+    """The syllabus topic for a residue part, by the main loop's own order.
+
+    The ask first, then the part and question above it, then the stimulus --
+    the cascade main() applies inline, kept here for eng_residue so the loop
+    itself is untouched.
+    """
+    topic, _ = topic_for(ask)
+    if topic:
+        return topic
+    for above in ((q, letter, None), (q, None, None)):
+        if above == (q, letter, roman):
+            continue
+        try:
+            topic, _ = topic_for(A.paper.text(*above) or '')
+        except Exception:                                    # noqa: BLE001
+            topic = None
+        if topic:
+            return topic
+    try:
+        topic, _ = topic_for((A.paper.stem(q, letter) or '') + ' '
+                             + (A.paper.stem(q) or ''))
+    except Exception:                                        # noqa: BLE001
+        topic = None
+    return topic
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--report', action='store_true')
@@ -603,6 +634,9 @@ def main():
     # keyed by the part they were cut FOR. A card that carries the crop is no
     # longer a ghost, so this is read before the figure gate below.
     figs = {}
+    # A roman's crop offered to the rest of its letter, kept apart from the
+    # crops cut for a part itself -- see the lookup below.
+    shared = {}
     manifest = os.path.join(ROOT, 'components/MarkBank/figures.json')
     if os.path.exists(manifest):
         for key in json.load(open(manifest)):
@@ -618,15 +652,35 @@ def main():
                 # describes its operation from the labels on it. Registering
                 # the letter as well is what lets the siblings find it.
                 if rm:
-                    figs.setdefault((year, level, q, le, None), key)
+                    shared.setdefault((year, level, q, le, None), key)
 
     idx = R.leaf_index(census_subject('engineering'))
     cards, refused = [], collections.Counter()
+    residue = {}
+    figs_all = (json.load(open(manifest)) if os.path.exists(manifest) else {})
     verdicts = []
     examples = collections.defaultdict(list)
 
-    for (year, level, _), leaves in sorted(idx.items()):
-        A = Author('engineering', year, level)
+    # June's sittings, then each deferred one (keyed 'Deferred' by
+    # paper_census.census_engineering_deferred), which is read and carded as a
+    # sitting of its own under the level token '<level>-deferred'
+    # (eng_deferred): its own paper and scheme, its own ids and citations.
+    for (year, level, paper), leaves in sorted(
+            idx.items(), key=lambda kv: (kv[0][0], kv[0][1], kv[0][2] or '')):
+        deferred = paper == 'Deferred'
+        if deferred:
+            level = level + eng_deferred.SUFFIX
+        # A sitting is authored once its scheme has been extracted to the
+        # markdown the provenance gate reads; until then it stays open in the
+        # ledger rather than stopping every other sitting. The census now
+        # walks the whole 2010-2026 archive and the practical-test briefs
+        # ('cl', no written asks), and only 2021-2025 have schemes extracted.
+        if not leaves or not os.path.exists(os.path.join(
+                ROOT, 'examiner-reports', 'engineering', 'schemes',
+                f'{year}-{level}.md')):
+            continue
+        A = (eng_deferred.DeferredAuthor(year, level) if deferred
+             else Author('engineering', year, level))
         # The SAME scheme instance lib.card builds the card from, so that what
         # this loop resolves and selects with `use` is the list the card is
         # made of -- including which branch of an OR a key is answered from.
@@ -810,6 +864,43 @@ def main():
             figure = (figs.get((year, level, q, key[1], key[2]))
                       or figs.get((year, level, q, letter, roman))
                       or figs.get((year, level, q, key[1], None)))
+            # A sibling roman's picture only where this part, or the letter it
+            # sits under, points at printed matter. One iron-carbon diagram is
+            # printed for the whole of 2021 Higher Q4(b) -- "(b) The diagram
+            # shows ..." -- and every roman beneath it reads off it; but under
+            # "Answer any three of the following:" each roman is a question of
+            # its own, and 2021 Higher Q7(b)(i), "Describe the main differences
+            # between natural rubber and synthetic rubber", was shown the
+            # plastic pultrusion line printed for (b)(ii). Forty such cards
+            # across 2021-2025 carried a picture of a different question.
+            if not figure and shared.get((year, level, q, key[1], None)):
+                try:
+                    up = ' '.join(((A.paper.text(q, key[1], None) or '') + ' '
+                                   + (A.paper.stem(q, key[1]) or '')).split())
+                except Exception:                            # noqa: BLE001
+                    up = ''
+                need = f'{joined} {up}'
+                own = shared[(year, level, q, key[1], None)]
+                part = re.search(r'-q\d+([a-m])([ivx]+)-art$', own)
+                # ... or this part refers to the one the picture was cut for
+                # ("any one of the manufacturing processes named by you at
+                # 5(a)(i) above"), or the letter's stem is the picture's own
+                # caption and this ask names it ("Brake disc" over "a suitable
+                # hardening heat treatment process for the brake disc").
+                cites = bool(part) and re.search(
+                    rf'\b{q}\s*\(\s*{part.group(1)}\s*\)\s*\(\s*{part.group(2)}\s*\)',
+                    whole)
+                try:
+                    caption = ' '.join((A.paper.stem(q, key[1]) or '').split())
+                except Exception:                            # noqa: BLE001
+                    caption = ''
+                captioned = (caption and len(caption.split()) <= 4
+                             and not re.search(r'[.?!:]$', caption)
+                             and caption.lower() in ' '.join(whole.split()).lower())
+                if (cardlint.FIG_REF.search(need)
+                        or cardlint.NAMES_LETTERS.search(need)
+                        or cites or captioned):
+                    figure = own
             here = (year, level) + key
             if here in WITHHELD:
                 note(WITHHELD[here])
@@ -905,7 +996,7 @@ def main():
                            labels=labels,
                            use=[[i for i, _ in keep[:MAX_ROWS]]],
                            marks=[n * per], tariff='fixed',
-                           row_kind='anyN', total=n * per,
+                           row_kind='anyN', total=n * per, group=(n, per),
                            question_figure=question_fig, figure=answer_fig,
                            stem=keeps_stem(stem, figure),
                            notes=f'The scheme prints {notation_here!r}.')
@@ -989,7 +1080,29 @@ def main():
                 seen.add(key)
             except Refused as exc:
                 note(str(exc).split(':', 1)[-1].strip()[:60])
+        # The parts this loop refuses and a person has since authored from
+        # the page (eng_residue/), built by the same lib.card under the same
+        # gates. Last, so nothing above can move because of them.
+        residue[(year, level)] = eng_residue.build(
+            A, year, level, {c['id'] for c in A.cards}, set(figs_all),
+            topic_for_part, keeps_stem, concept_for,
+            checked=lambda key, y=year, lv=level: CHECKED.get((y, lv) + key),
+            withdrawn=set(WITHDRAWN))
         cards.extend(A.cards)
+
+    # Layout the page prints and a one-line string loses: a list the paper
+    # sets down the page, one item a row, and a scheme table's two cells.
+    # Line breaks and a " — " between cells only; every word stays the page's.
+    eng_lists.vertical_lists(cards)
+    eng_lists.table_cells(cards)
+    eng_lists.degree_signs(cards)
+    # Alternatives the session would run together with "or" in one row: each
+    # its own option in a count-1 menu at the row's price.
+    eng_lists.alternative_menus(cards)
+    # A card's notes never ship; what a student must see (an OR, the "12 + 12
+    # + 11" price, a reading of the scheme, scheme text no row carries, a
+    # misprint) goes on the row it qualifies, as the row's contextNote.
+    eng_rownotes.promote(cards)
 
     if args.verdicts:
         with open(args.verdicts, 'w', encoding='utf-8') as fh:
@@ -999,7 +1112,8 @@ def main():
         print(f'wrote {args.verdicts}: {len(verdicts)} refusals')
     if args.report:
         total = sum(len(v) for v in idx.values())
-        print(f'{len(cards)} card(s) from {total} asks')
+        print(f'{len(cards)} card(s) from {total} asks, '
+              f'{sum(len(v) for v in residue.values())} of them from eng_residue')
         limit = 60 if args.all else 3
         for reason, n in refused.most_common():
             print(f'   {n:4} REFUSED  {reason}')

@@ -388,7 +388,8 @@ describe('the question comes first and stays', () => {
     expect(screen.queryByText(/Príomhoifig Staidrimh/)).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /Read IRISH QUESTION PAGE/ }));
     expect(screen.getByRole('dialog', { name: /Irish question 2/ })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /Open the original illustration sheet/ }))
+    // The Irish edition is the question paper, not an illustration sheet.
+    expect(screen.getByRole('link', { name: /Open the original paper/ }))
       .toHaveAttribute('href', expect.stringContaining('LC034GLP000IV.pdf'));
     fireEvent.keyDown(document.body, { key: 'Escape' });
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
