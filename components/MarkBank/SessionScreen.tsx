@@ -81,6 +81,7 @@ import GeographyAllocationPanel from './GeographyAllocationPanel';
 import GeographyChoicePanel from './GeographyChoicePanel';
 import { geographyMarks, geographyScoreId, type GeographyScoreId } from './geographyScoring';
 import IrishAllocationPanel from './IrishAllocationPanel';
+import ListeningPromptOptions, { listeningPromptParts } from './ListeningPromptOptions';
 import { irishCriterionMarks } from './irishScoring';
 import { physicalEducationMarks, type PhysicalEducationScoreId } from './physicalEducationScoring';
 import AppliedMathematicsRubricPanel, {
@@ -2132,7 +2133,8 @@ const ListeningQuestionSet: React.FC<{ cards: ListeningQuestionCard[] }> = ({ ca
                           {prompt.label}
                         </span>
                         <div style={{ minWidth: 0, font: `500 16.5px/1.48 ${SERIF}`, color: INK }}>
-                          <Clause text={prompt.text} />
+                          <Clause text={listeningPromptParts(prompt.text).question} />
+                          <ListeningPromptOptions text={prompt.text} />
                         </div>
                       </div>
                     ))}
