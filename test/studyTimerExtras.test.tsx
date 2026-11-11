@@ -46,7 +46,9 @@ vi.mock('@/contexts/ProgressContext', () => ({
   }),
 }));
 vi.mock('@/hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => false }));
-vi.mock('@/hooks/useStudyTransitionSound', () => ({ useStudyTransitionSound: () => ({ play: vi.fn(), muted: false }) }));
+// This suite exercises the timer; the shared planner has its own integration tests.
+vi.mock('@/hooks/useDatedStudyPlan', () => ({ useDatedStudyPlan: () => ({ enabled: false }) }));
+vi.mock('@/hooks/useStudyTransitionSound', () => ({ useStudyTransitionSound: () => ({ play: vi.fn(), prepare: vi.fn(), muted: false }) }));
 
 const UID = 'student-1';
 const MINUTE = 60_000;
@@ -64,6 +66,60 @@ beforeEach(() => {
 afterEach(() => vi.useRealTimers());
 
 describe('Keep going', () => {
+  test('repeated five-minute extensions save one session without counting the time spent deciding', async () => {
+    const { result } = renderHook(() => useStudySession(UID, {}, []));
+    act(() => { result.current.startSession('Irish', 'practice', 25); });
+    act(() => { vi.advanceTimersByTime(25 * MINUTE); });
+    act(() => { vi.advanceTimersByTime(7 * MINUTE); });
+    act(() => { expect(result.current.extendSession(5)).toBe(true); });
+    expect(result.current.endsAt).toBe(NOW + 37 * MINUTE);
+    act(() => { vi.advanceTimersByTime(5 * MINUTE); });
+    act(() => { expect(result.current.extendSession(5)).toBe(true); });
+    act(() => { vi.advanceTimersByTime(5 * MINUTE); });
+
+    expect(result.current.elapsedSeconds).toBe(35 * 60);
+    expect(result.current.totalDuration).toBe(35 * 60);
+    expect(result.current.plannedMinutes).toBe(25);
+    await act(async () => { await result.current.saveSession(0); });
+    expect(savedRecord()).toMatchObject({ actualSeconds: 35 * 60, plannedMinutes: 25, extendedMinutes: 10, extensionBonus: 10 });
+    expect(mocks.batchSet.mock.calls.filter(([ref]) => String(ref.path).includes('/sessions/'))).toHaveLength(1);
+  });
+
+  test('a rapid duplicate extension cannot add minutes that the countdown never runs', async () => {
+    const { result } = renderHook(() => useStudySession(UID, {}, []));
+    act(() => { result.current.startSession('Irish', 'practice', 25); });
+    act(() => { vi.advanceTimersByTime(25 * MINUTE); });
+    act(() => {
+      expect(result.current.extendSession(5)).toBe(true);
+      expect(result.current.extendSession(5)).toBe(false);
+    });
+    expect(result.current.extendedMinutes).toBe(5);
+    act(() => { vi.advanceTimersByTime(5 * MINUTE); });
+    expect(result.current.phase).toBe('complete');
+    expect(result.current.elapsedSeconds).toBe(result.current.totalDuration);
+    await act(async () => { await result.current.saveSession(0); });
+    expect(savedRecord()).toMatchObject({ actualSeconds: 30 * 60, plannedMinutes: 25, extendedMinutes: 5, extensionBonus: 10 });
+  });
+
+  test('pausing and reopening an extension preserves its remaining time and early-finish total', async () => {
+    const first = renderHook(() => useStudySession(UID, {}, []));
+    act(() => { first.result.current.startSession('Irish', 'practice', 25); });
+    act(() => { vi.advanceTimersByTime(25 * MINUTE); });
+    act(() => { first.result.current.extendSession(5); });
+    act(() => { vi.advanceTimersByTime(2 * MINUTE); });
+    act(() => { first.result.current.pauseSession(); });
+    first.unmount();
+    vi.setSystemTime(Date.now() + 10 * MINUTE);
+    const restored = renderHook(() => useStudySession(UID, {}, []));
+    expect(restored.result.current.phase).toBe('paused');
+    expect(restored.result.current.elapsedSeconds).toBe(27 * 60);
+    act(() => { restored.result.current.resumeSession(); });
+    act(() => { vi.advanceTimersByTime(MINUTE); });
+    act(() => { expect(restored.result.current.endSession()).toBe(true); });
+    await act(async () => { await restored.result.current.saveSession(0); });
+    expect(savedRecord()).toMatchObject({ actualSeconds: 28 * 60, extendedMinutes: 5, extensionBonus: 0 });
+  });
+
   test('adds time to the same session and pays a bonus for finishing it', async () => {
     const { result } = renderHook(() => useStudySession(UID, {}, []));
     act(() => { result.current.startSession('Irish', 'practice', 25); });
@@ -215,14 +271,15 @@ describe('Time’s up, then the island', () => {
     expect(screen.getByRole('timer')).toHaveTextContent('05:00');
     act(() => { vi.advanceTimersByTime(5 * MINUTE); });
     expect(screen.getByRole('heading', { name: 'You kept going.' })).toBeInTheDocument();
-    expect(screen.getByText(`+${STUDY_SESSION_POINTS.EXTENSION_COMPLETED} JP for finishing your extra time`)).toBeInTheDocument();
+    expect(screen.getByText(`Includes +${STUDY_SESSION_POINTS.EXTENSION_COMPLETED} JP for finishing your extra time.`)).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole('button', { name: /Finish and log/ }));
     fireEvent.click(screen.getByRole('button', { name: 'Skip this step' }));
     await act(async () => { fireEvent.click(screen.getByRole('button', { name: 'Save without a debrief' })); });
 
     // 30 minutes (three 10-minute blocks) plus the finishing bonus.
-    expect(screen.getByRole('heading', { name: '+40 JP' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Session saved.' })).toBeInTheDocument();
+    expect(screen.getByLabelText('Session details')).toHaveTextContent('+40JP');
     fireEvent.click(screen.getByRole('button', { name: /Spend them on your island/ }));
     expect(onGoToIsland).toHaveBeenCalledTimes(1);
     fireEvent.click(screen.getByRole('button', { name: 'Back to the study room' }));
