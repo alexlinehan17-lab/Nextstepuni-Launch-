@@ -4445,6 +4445,169 @@
           "manualAssessment": "Four content0–10 and four discretion0/1/2 controls under collective45. Nested semantic conditions remain full literal manual guidance, not automatically classified detail slots."
         }
       ]
+    },
+    {
+      "year": 2010,
+      "level": "higher",
+      "reviewedAt": "2026-11-11",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "auralPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "fullSizeTariffPages": [
+        5,
+        10,
+        16
+      ],
+      "independentPracticeTasks": 38,
+      "writtenTasks": 20,
+      "listeningTasks": 18,
+      "sourceReviewedSupportedTasks": 38,
+      "publishedPracticeCards": 38,
+      "printedWrittenMarks": 220,
+      "printedListeningMarks": 80,
+      "publishedPracticeMarks": 296,
+      "sourceAccountedMarks": 300,
+      "confidenceOnlyDerivedMarks": 4,
+      "newCards": 38,
+      "correctedCards": 0,
+      "previousIdsPreserved": 199,
+      "sourceReview": "All 38 independently counted original asks represented; 12 mandatory original-source cases and 389 source slices passed. Runtime/publication gates remain incomplete. The missing city-answer task remains confidence-only.",
+      "diagnosedReaderIssues": [
+        "Independent census is 20 written plus 18 listening asks. C1 Q5 remains its original culture address, not CA1. All eight essay and seven guided-writing choices remain in complete same-grid pools.",
+        "C1 reading heading prints 28, while its seven source leaf tariffs total 24. Culture 14 and language 12 reconcile the complete 50. No leaf tariff is changed to force the heading.",
+        "All 115 missing Times glyphs are derived by original paper glyph IDs, pinned source/font hashes and visual source-CFF versus paper-TrueType outline pairs. Exact outline equality is not claimed. Two short Cambria spans were read from original pages 5/10 with repeated-glyph consistency.",
+        "Full page extraction excludes only 17 verified exact footer blocks. The prior x580 crop loses the closing parenthesis of the universal-award rule on physical page 5. The suspected Include loss on page 13 was not reproduced and is not claimed.",
+        "LA1 preserves all six prompts/four Section bindings and original story page 2. The plural-dative prompt receives the explicit universal two marks, including blank/saved-zero/reset states; the other five remain manual zero-or-two. Specific English-translation and dictionary-form allowances are retained; no language multiplier or invented noun.",
+        "LA2 infinitives retain the original worked example and all five requested verbs, formerly omitted by the temporary reader. The swimming task allows five different relevant words beyond the passage, with the complete non-exclusive printed pool and sailing/boating rejection.",
+        "Five summary tasks each retain three details at two marks, intelligible partial one, and discretion two. Incomplete sections/subsections cap discretion at one. The page 7 specific Russian-word/weak-English exception uses source-bound manual discretion metadata; prior language flag identities and content penalties remain applicable.",
+        "C1 Q5 has two traditional, two modern and three additional distinct manual detail slots. Only the printed traditional narrative-language reference without example/illustration permits one mark; there is no general partial tariff.",
+        "Grammar preserves all fifteen context-bound forms across original pages 11–12, the university singular/plural alternative, and explicit zero for inappropriate capitalization. The explanatory parenthesis (30–34 weeks) is not a sixteenth gap.",
+        "Guided Lower A numeric 7–12 is consistent, but the prose 9/10 and table 9–11 overlap with 11–12. Both are quoted literally without descriptor precedence. The general additional-information restriction and parenthesized additional-relevant-information options both remain visible for manual assessment; no new category prices.",
+        "Listening explicitly accepts Russian and noninvalidating excess material. The international/from-any-two-countries statement is one detail, not one priced row per country. Same-detail published partials cannot combine with their full versions; 8?? M long is kept literal.",
+        "Original Yaroslavl city question is absent from the scheme answer pools. Its English 1 / Irish 1(i) numbering, original audio, general guide and source gap are preserved in a confidence-only task. Four is derived from two requested details × the general two-mark rule, not a separately printed total. No Ordinary answer borrowing."
+      ],
+      "validation": {
+        "sourceCoverageComplete": true,
+        "sittingCompletion": false,
+        "sourceQuoteGate": {
+          "cards": 38,
+          "slices": 389,
+          "passed": true
+        },
+        "mandatoryOriginalTests": {
+          "passed": 12,
+          "log": "tmp/russian-review/2010-hl-initial-8.log"
+        },
+        "runtimeTests": {
+          "cases": 314,
+          "files": 7,
+          "passed": true,
+          "completedFilesNeverRepeated": true,
+          "progress": "tmp/russian-review/2010-hl-runtime-file-progress.json"
+        },
+        "preservation": {
+          "all1229PriorAuthoredRecordsUnchanged": true,
+          "original199IdentityHash": "704087dd0796c1c71da7a2c6f436138197fb157e689fc1045168d25469c9147d",
+          "all1229PriorRuntimeRecordsUnchanged": true,
+          "allOtherSubjectDecksBaselinesIndexAndDecodedAtlasUnchanged": true,
+          "scripts/paper-trail/answers/2010/LC099ALP000EV.pdf.json": {
+            "allPriorRowsUnchanged": 13,
+            "newRows": 20
+          },
+          "scripts/paper-trail/answers/2010/LC099ALPA00EV.pdf.json": {
+            "allPriorRowsUnchanged": 4,
+            "newRows": 18
+          },
+          "allPriorRussianTopicQuestionRecordsUnchanged": true
+        },
+        "deterministicRegenerations": 2,
+        "appTypes": "pending root combined integration",
+        "build": "pending root combined integration",
+        "browserQA": "coordinator-owned; not claimed",
+        "heldNumericTasks": [
+          {
+            "questionRef": "2010 HL Section L1 Q1(i)",
+            "reason": "Original scheme provides no accepted city-answer pool. Task is available for confidence review, with derived four-mark archival total and no numeric scoring."
+          }
+        ],
+        "prior2010AtlasRowsPreserved": 17,
+        "reconcile": {
+          "originalAsks": 38,
+          "coveredAsks": 38,
+          "open": 0,
+          "excluded": 0,
+          "wholeSubjectCovered": 1288,
+          "wholeSubjectLeaves": 1400,
+          "historicalStaleExclusionsUnchanged": 254
+        },
+        "allReviewedSourceCompatibility": {
+          "cards": 1267,
+          "slices": 11767,
+          "sittings": 28,
+          "passed": true
+        },
+        "actualRuntimeOverlayCardlint": {
+          "cards": 1284,
+          "findings": 0,
+          "rulesUnchanged": true
+        },
+        "targetedLint": "passed",
+        "russianCoverageTestsPassed": 3,
+        "older2010OrdinaryDispatchRegression": "passed",
+        "status": "Source/runtime checkpoint passed; combined full app/scoped types and production build remain required in root integration. Missing city answer remains numerically held.",
+        "scopedTestTypes": "pending root combined integration",
+        "integrationPrerequisites": [
+          "root automatic-award contract ba5223880, already fully validated in combined root checkpoint923d4c04b",
+          "root confidence-label correction3b4f4aba6, intentionally not ported into this older UI lane"
+        ]
+      }
     }
   ]
 }
