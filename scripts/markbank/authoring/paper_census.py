@@ -185,8 +185,20 @@ SUBJECTS = {
     # and C (Ordinary), so a bare question number addresses nothing: the
     # section token carries the topic and the Ordinary part with it, and a key
     # reads ('2 Topic 1 A', 1, None, None) -> "Section 2 Topic 1 A Q1".
+    #
+    # One sitting sets only ONE of the two papers. The 2020 examination was
+    # the November 2020 sitting (the June examinations were replaced by
+    # calculated grades), and the SEC set no Early Modern paper for it:
+    # paperTrailData.ts lists `history-early-modern` for 2019 and 2021 and no
+    # 2020 edition at either level or in either language; the archive's
+    # exampapers/2020/ holds LC004 (Later Modern) at both levels and no LC096;
+    # and the 2020 Higher and Ordinary schemes (16 and 12 pages) print a Later
+    # Modern half only, where 2019's prints both. `absent` names that sitting
+    # and that field and nothing else, so a missing Early Modern paper in any
+    # other year still stops the census.
     'history': {'mode': 'sections', 'walker': 'history',
-                'components': {'lm': 'Later Modern', 'em': 'Early Modern'}},
+                'components': {'lm': 'Later Modern', 'em': 'Early Modern'},
+                'absent': {(2020, 'hl'): ('em',), (2020, 'ol'): ('em',)}},
     # French sits TWO booklets at one sitting — the written paper and a
     # separate Listening Comprehension Test with its own SEC file id — and
     # numbers both from 1 inside every section, so the section carries the
@@ -3562,7 +3574,16 @@ def census_subject(subject):
             # chooses between, rather than two booklets of one paper. Each is
             # censused whole and named in the citation.
             units = sorted((cfg['components'][c], c) for c in comps if c)
-            missing = sorted(set(cfg['components']) - {c for c in comps if c})
+            present = {c for c in comps if c}
+            # A paper the SEC never set for this sitting (see the subject's
+            # 'absent' entry and its evidence) is not missing. One that is
+            # declared absent and yet on disk is a wrong declaration.
+            absent = set(cfg.get('absent', {}).get((year, level), ()))
+            if absent & present:
+                raise AssertionError(
+                    f'{subject} {year} {level}: declared absent but on disk: '
+                    f'{", ".join(cfg["components"][c] for c in sorted(absent & present))}')
+            missing = sorted(set(cfg['components']) - present - absent)
             if missing:
                 raise AssertionError(
                     f'{subject} {year} {level}: no paper on disk for '
@@ -3849,9 +3870,38 @@ def census_subject(subject):
                     'type': 'marks-checksum',
                     'where': f"{p['year']} {p['level']} {p.get('paper') or ''}",
                     'detail': f"marks sum {p['marksSum']}, other years say {want}"})
+    if subject == 'history':
+        papers.extend(census_history_deferred())
     if subject == 'economics':
         papers.extend(census_economics_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
+
+
+def census_history_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    History's deferred sittings (hist_paper.DEFERRED_PAPERS: 2022 and 2023,
+    Later Modern, both levels) are papers of their own, keyed 'Deferred' as
+    Physics and Home Economics key theirs (codex/home-economics-continuation-
+    20261101, census_physics_deferred), so a deferred ask never lands on a
+    June leaf with the same address. The checksum is not run on them.
+    """
+    from hist_paper import HistPaper, DEFERRED_PAPERS          # noqa: E402
+    papers = []
+    for year, level, field in DEFERRED_PAPERS:
+        P = HistPaper(year, level, field, 'deferred')
+        parts, texts = set(P.asks), dict(P.asks)
+        leaves = list(leaves_of(parts))
+        flags = [f for f in continuity_flags(parts, texts, 'history')
+                 if not short_ask_ok('history', year, level, f)]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'history'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
 
 
 # The SEC's deferred Economics sittings in the archive: 2022 Higher only

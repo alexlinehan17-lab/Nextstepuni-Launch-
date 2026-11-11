@@ -109,8 +109,7 @@ export const paperEntry = (subjectId, year, level, paperFileid) =>
 
 /** The SEC's DEFERRED sitting of one subject, year and level (from 2022), in
  *  English: its own index entry, listed after June's and marked
- *  `sitting: "deferred"`. Economics asks for it here (History does too, on
- *  claude/history-lane-20261104). */
+ *  `sitting: "deferred"`. Economics and History ask for it here. */
 export const deferredPaperEntry = (subjectId, year, level) =>
   (paperIndex[CORPUS_KEY[subjectId] ?? subjectId] ?? [])
     .find(e => e.year === year && e.level === level && e.lang === 'ev' && e.sitting === 'deferred');

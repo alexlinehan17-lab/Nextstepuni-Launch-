@@ -194,10 +194,12 @@ const ROOT = resolve(__dirname, '..');
  */
 const comparable = (text: string) => comparableScheme(text);
 
-// A card from the SEC's deferred sitting ("econ-2022-hl-deferred-...") traces
-// to that sitting's own scheme ("2022-hl-deferred.md"), as build-deck reads it.
+// A card from the SEC's deferred sitting ("econ-2022-hl-deferred-...",
+// "hist-2023-hl-deferred-lm-...") traces to that sitting's own scheme
+// ("2022-hl-deferred.md"), as build-deck reads it.
 const deferredCard = (card: { id?: string; subjectId: string }) =>
-  card.subjectId === 'economics' && /^econ-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? '');
+  (card.subjectId === 'economics' && /^econ-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'history' && /^hist-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''));
 
 const schemeFor = (card: { id?: string; year: number; level: string; subjectId: string }) =>
   resolve(ROOT, 'examiner-reports', card.subjectId, 'schemes',
