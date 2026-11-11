@@ -207,6 +207,8 @@ export interface SessionScreenProps {
     onResponse: (cardId: string, response: SessionResponse) => void;
     responses?: Record<string, SessionResponse>;
     revisit?: boolean;
+    /** Starting-point checks need an attempt before exposing an answer. */
+    requireAttempt?: boolean;
   };
   /** Resolved queue for this sitting. Snapshotted by the caller so it cannot
    *  shrink underneath the student mid-session. */
@@ -2253,6 +2255,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const advancedStudyCard = useRef<string | null>(null);
   const studyTitleRef = useRef<HTMLHeadingElement>(null);
   const [drafts, setDrafts] = useState<Record<string,string>>({});
+  const [paperAttempts, setPaperAttempts] = useState<Record<string, boolean>>({});
   const reduced = useReducedMotion() ?? false;
   const wide = useTwoPane();
   /* The scroller has to reserve exactly as much room as the action rail takes,
@@ -2310,6 +2313,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   }, [card?.id, isStudyReview]);
   const savedResponse = card && studyReview?.responses?.[card.id];
   const revisit = Boolean(studyReview?.revisit);
+  const needsAttempt = Boolean(studyReview?.requireAttempt && card && !revisit
+    && !drafts[card.id]?.trim() && !paperAttempts[card.id]);
   useEffect(() => {
     if (!revisit || !card) return;
     setClaims(savedResponse?.claims ?? {});
@@ -3264,10 +3269,15 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         {!revealed && (
           <div style={{ padding: `16px 16px calc(16px + var(--sab, 0px))` }}>
             <div style={{ maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto' }}>
+              {studyReview?.requireAttempt && <label className="mb-starting-attempt">
+                <input type="checkbox" checked={paperAttempts[card.id] ?? false}
+                  onChange={event => setPaperAttempts(previous => ({ ...previous, [card.id]: event.target.checked }))} />
+                I tried this on paper or in my head, even if I couldn’t recall an answer.
+              </label>}
               <button
                 type="button"
                 autoFocus={answerVariants.length === 0}
-                disabled={answerVariants.length > 0 && !answerVariantId}
+                disabled={needsAttempt || (answerVariants.length > 0 && !answerVariantId)}
                 // Clear any lingering whisper so the schedule note for the card
                 // just graded does not hang over the one now in front of them.
                 onClick={() => {
@@ -3283,11 +3293,12 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                   background: ACCENT, color: '#FFFFFF', border: 'none',
                   boxShadow: '0 5px 14px rgba(181,77,20,.22)',
                   font: `650 15px/1 ${SANS}`,
-                  cursor: answerVariants.length > 0 && !answerVariantId ? 'not-allowed' : 'pointer',
-                  opacity: answerVariants.length > 0 && !answerVariantId ? .48 : 1,
+                  cursor: needsAttempt || (answerVariants.length > 0 && !answerVariantId) ? 'not-allowed' : 'pointer',
+                  opacity: needsAttempt || (answerVariants.length > 0 && !answerVariantId) ? .48 : 1,
                 }}
               >
-                {answerVariants.length > 0 && !answerVariantId
+                {needsAttempt ? 'Try the question first'
+                  : answerVariants.length > 0 && !answerVariantId
                   ? 'Choose your answer route first'
                   : 'Reveal the marking scheme'}
               </button>

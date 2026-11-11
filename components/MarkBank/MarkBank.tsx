@@ -23,6 +23,7 @@ import { resolveSubjectId } from '../../curriculumRegistry';
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import MarkBankLibrary from './MarkBankLibrary';
+import StartingPointCheck from './StartingPointCheck';
 import { useSubjectAccess } from '../launchpad/SubjectAccess';
 import SessionScreen, { type SessionCardResult } from './SessionScreen';
 import {
@@ -64,6 +65,7 @@ const HAIRLINE = 'var(--mb-hairline)';
 
 type Screen =
   | { name: 'board' }
+  | { name: 'starting-point' }
   | { name: 'session'; cards: SecCard[]; topicId?: string }
   | { name: 'close'; results: SessionCardResult[]; topicId?: string };
 
@@ -270,6 +272,13 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
 
   /* ------------------------------------------------------------ session ---- */
 
+  if (screen.name === 'starting-point') return <StartingPointCheck
+    subjectLabel={subject.title} level={level} spec={cohortMenu.spec} cards={cards}
+    memories={memories} now={now} examTs={deck.examTs} onGrade={handleGrade}
+    onClose={() => setScreen({ name: 'board' })}
+    onPractice={(topicId, card) => startSession(topicId, [card])}
+  />;
+
   if (screen.name === 'session') {
     const reviewPool = screen.topicId ? topicCardsFor(screen.topicId, cards) : cards;
     const reviewPoolLabel = screen.topicId
@@ -388,6 +397,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
 
   return <MarkBankLibrary key={deckId} examDate={examDate} subjectId={subjectId} level={level} cards={cards} state={deck} now={now}
     chooseSubject={chooseSubject} chooseLevel={chooseLevel} canSelectSubject={canSelectSubject}
+    onStartingPoint={() => setScreen({ name: 'starting-point' })}
     onStart={startSession} busy={launchingTopicId!==null} ready={loaded&&!cardsLoading&&!cardsError}
     loading={cardsLoading} error={cardsError} onRetry={()=>setCardsAttempt(value=>value+1)} online={online}/>;
 };
