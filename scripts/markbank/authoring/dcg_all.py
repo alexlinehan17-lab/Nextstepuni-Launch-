@@ -70,6 +70,13 @@ CARDED = ({(year, level) for year in range(2019, 2027) for level in ('hl', 'ol')
 # by hand, with "elevation (2) and plan (2)" as parts, and step_row() now
 # builds exactly that from the scheme for every card.
 SHIPPED_EDITS = ()
+
+# Live card ids that a corrected citation would otherwise rename. An id keys a
+# student's review history and is never renamed: the citation is corrected,
+# the id is kept. 2019 Ordinary B-1's "(a) Given Elevation and Plan" shipped
+# as dcg-2019-ol-b1 citing "Q1(a), (b)" -- the old alignment spread it over
+# both letters; it prices (a), and November 2026's pairing cites it so.
+KEPT_IDS = {'dcg-2019-ol-b1a': 'dcg-2019-ol-b1'}
 AUTHORED = os.path.join(ROOT, 'scripts', 'markbank', 'authored', f'{SUBJECT}.json')
 
 # The Topic Atlas files every printed question under the syllabus headings it
@@ -139,6 +146,22 @@ def pair(units, leaves, texts):
             paper_letters.append(key[2])
     if m == len(paper_letters) and [u.letter for u in units] == paper_letters:
         return [(u, [k for k in leaves if k[2] == u.letter]) for u in units]
+    # The scheme letters the SAME parts as the paper, in the same order, and
+    # prices some of a part under extra unlettered heads printed beneath its
+    # letter: 2017 Higher B-3 prints "(a) Required Plan (11)", then
+    # "Perspective Drawing of Prism (21)" and "Perspective of required lines
+    # on surfaces B, A and C (6)", then "(b) Development of Display Box (7)".
+    # The two documents still agree on every address, so an unlettered head
+    # belongs to the letter printed above it. Where the letters do NOT match
+    # (2021 Ordinary B-3 prices the paper's (b) under unlettered heads and
+    # letters its (c) "(b)"), the alignment below decides, as before.
+    lettered = [u.letter for u in units if u.letter]
+    if units[0].letter and lettered == paper_letters:
+        out, letter = [], None
+        for u in units:
+            letter = u.letter or letter
+            out.append((u, [k for k in leaves if k[2] == letter]))
+        return out
 
     # Every pairing the alignment makes has to PAY for itself. Scored on the
     # wording alone, spreading one unit over two asks always scores more than
@@ -285,7 +308,8 @@ def card_id(year, level, section, q, covered, ordinal, many):
 # correct one the step's full marks. "(3 lines)" and "(12 min.)" are not
 # prices: a token that is not a number or a count of marks refuses the whole.
 SUB_PRICE = re.compile(r'\(([^()]*\d[^()]*)\)')
-ANY_PRICE = re.compile(r'^\s*any\s*=?\s*(\d{1,2})\s*$', re.I)
+ANY_PRICE = re.compile(r'^\s*any\s*=?\s*(\d{1,2})(?:\s*-\s*(\d{1,2}))?\s*$',
+                       re.I)
 COUNT = re.compile(r'^(\d{1,2})\s*[x×X]\s*(\d{1,2})$')
 # "Projections from elevation (2) and plan (2)": the step names its parts.
 NAMED_PRICE = re.compile(r"([A-Za-z][A-Za-z'’ -]*?)\s*\((\d{1,2})\)")
@@ -310,8 +334,13 @@ def sub_ladder(text, marks):
         inner = m.strip()
         a = ANY_PRICE.match(inner)
         if a:
-            k = int(a.group(1))
-            return [0, k, marks] if 0 < k < marks else None
+            # "(Any = 1)": any curve earns 1, the right one the step's marks.
+            # "(Any = 1-2)" (2017 Higher C-2): any curve earns 1 or 2.
+            lo = int(a.group(1))
+            hi = int(a.group(2)) if a.group(2) else lo
+            if not 0 < lo <= hi < marks:
+                return None
+            return [0, *range(lo, hi + 1), marks]
         reach = set()
         for route in re.split(r'\s+or\s+', inner):
             values = []
@@ -783,6 +812,7 @@ def author(bind_figures=True):
                         piece_id = f'{cid}-{piece_no}'
                     extra = presentation if not question_carded else []
                     question_carded = True
+                    piece_id = KEPT_IDS.get(piece_id, piece_id)
                     rows = step_rows(piece_id, title, steps, extra)
                     marks += sum(s.marks for s in extra)
                     cards.append({

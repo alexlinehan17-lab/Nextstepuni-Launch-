@@ -107,7 +107,10 @@ FURNITURE = re.compile(
     r'|Design\s*&\s*Comm'
     r'|\d{1,2}$'
     r'|N\.?B\.?:?\s*Scale\b|Scale\s*\d?\s*1\s*:\s*\d'
-    r'|SECTION\s+[ABC]\b|Section\s+[ABC]\s*[-–]'
+    # The banner is CAPITALS. Matched case-blind it also ate prose that wraps
+    # onto "Section A, shows ground contours at five metre" -- 2017 Higher
+    # C-1(a) lost that whole printed line.
+    r'|(?-i:SECTION\s+[ABC]\b)|Section\s+[ABC]\s*[-–]'
     r'|Section\s+[ABC]\s*$'
     r'|Answer\s+(?:any|one|Any)\b'
     r'|This examination\b|This document\b|Do not hand this up'
@@ -134,6 +137,10 @@ FURNITURE = re.compile(
 # stems opening mid-sentence with " of a similar studio desk."
 FIG_LABEL = re.compile(r'^Fig\.?\s*[ABC]\s*[-‐-―]\s*\d\s*(?:\([a-z]\))?\s*$',
                        re.I)
+
+# The motion table's own short runs: a single-digit angle and the word "to"
+# between two angles (2023 Ordinary C-4(b) sets "0°", "to" and "90°" apart).
+SHORT_ANGLE = re.compile(r'\d[°⁰º]|to')   # 2022 sets the degree as a superscript 0
 
 # The SEC sets a specification as a bulleted list and the bullet arrives as
 # its own drawing operation — sometimes glued to its line, sometimes a block
@@ -370,7 +377,12 @@ class DcgPaper:
             elif FURNITURE.match(text) or FIG_LABEL.match(text):
                 continue
             text = BULLET.sub('', text).strip()
-            if len(text) < 3:
+            # Too short to be anything but a stray glyph -- except a cam motion
+            # table's own runs. It sets "0°" (and in some years "to") apart on
+            # the bullet's line ("• 0°  to  120°  rise 36mm ..."), and dropping
+            # them left twelve shipped cards opening "follower: to 120° rise"
+            # or "follower: 90° Rise".
+            if len(text) < 3 and not SHORT_ANGLE.fullmatch(text):
                 continue
             elif text.strip().lower() in OPTIONS:
                 continue
