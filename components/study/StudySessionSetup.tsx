@@ -25,6 +25,7 @@ import { setSoundMuted, useSoundMuted } from '../approved-ui-runtime';
 import StudySubjectPicker, { StudySubjectArtwork } from './StudySubjectPicker';
 import { SessionTodos } from './SessionTodos';
 import StudyTopicPicker from './StudyTopicPicker';
+import StudyFocusChoice from './StudyFocusChoice';
 import './study-kobra.css';
 
 type SessionType = 'new-learning' | 'practice' | 'revision';
@@ -322,10 +323,10 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
             {props.onQuizAtEndChange && (
               <div className="ks-appearance-choice">
                 <div>
-                  <label htmlFor={`${id}-quiz`}>Quiz me when I finish</label>
+                  <label htmlFor={`${id}-quiz`}>Offer me questions when I finish</label>
                   <p id={`${id}-quiz-help`}>
                     {props.quizAtEnd
-                      ? 'A few real exam questions on what you just studied, marked by you.'
+                      ? 'Choose whether to try real exam questions on the topics you studied.'
                       : 'Straight to your points when you log the session.'}
                   </p>
                 </div>
@@ -333,11 +334,12 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
                   id={`${id}-quiz`}
                   checked={!!props.quizAtEnd}
                   onCheckedChange={props.onQuizAtEndChange}
-                  aria-label="Quiz me when I finish"
+                  aria-label="Offer me questions when I finish"
                   aria-describedby={`${id}-quiz-help`}
                 />
               </div>
             )}
+            <StudyFocusChoice />
             {todayBlocks.length > 0 && (
               <section className="ks-timetable" aria-label="Today’s timetable">
                 <h2>On your plan today</h2>

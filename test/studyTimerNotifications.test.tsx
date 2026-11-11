@@ -194,7 +194,7 @@ describe('The rules (pure)', () => {
     expect(studyActivityState(running)).toMatchObject({ phase: 'running', countsDown: true, endsAt: NOW + 25 * MINUTE, detail: '25 min · Revision' });
     expect(studyActivityState({ ...running, phase: 'paused', elapsedSeconds: 600 })).toMatchObject({ phase: 'paused', pausedSeconds: 900, endsAt: null });
     expect(studyActivityState({ ...running, phase: 'complete', elapsedSeconds: 1500 })).toMatchObject({ phase: 'done', doneLabel: 'Time’s up' });
-    expect(studyActivityState({ ...running, openEnded: true, endsAt: null, plannedMinutes: 0, totalDuration: 14400 })).toMatchObject({ countsDown: false, detail: 'Open-ended · Revision' });
+    expect(studyActivityState({ ...running, openEnded: true, endsAt: null, plannedMinutes: 0, totalDuration: 14400 })).toMatchObject({ countsDown: false, totalSeconds: 14400, detail: 'Open-ended · Revision' });
     expect(studyActivityState({ ...running, phase: 'idle' })).toBeNull();
   });
 });
