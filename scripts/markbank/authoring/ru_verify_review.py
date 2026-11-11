@@ -59,9 +59,32 @@ def verify_manual_criterion_exception_sources(document, card):
     sources = [normal('\n'.join(document[page-1].get_text(sort=sort) for page in pages)) for sort in (False, True)]
     assert claim and any(claim in source for source in sources), (card['id'], 'manual-criterion-language-exception', exception['sourceText'])
 
+def verify_automatic_award_sources(document, card):
+    """Fixed awards must quote their own original pages, not wider guidance."""
+    rubric = card.get('rubric', {})
+    for criterion in [*rubric.get('criteria', []),
+                      *[c for group in rubric.get('groups', []) for c in group.get('criteria', [])]]:
+        award = criterion.get('automaticAward')
+        if award is None:
+            continue
+        assert rubric.get('system') == 'language-writing' and not card.get('answerLanguageRule'), card['id']
+        assert type(award['marks']) is int and award['marks'] > 0, card['id']
+        assert award['marks'] == criterion['maxMarks'] and criterion['permittedMarks'] == [award['marks']], card['id']
+        assert criterion.get('kind') != 'deduction' and 'deductFrom' not in criterion, card['id']
+        assert 'limits' not in criterion and 'bands' not in criterion, card['id']
+        assert not any(other.get('deductFrom') == criterion['id'] for other in rubric['criteria']), card['id']
+        pages = award['schemePages']
+        assert pages and all(type(page) is int and 1 <= page <= len(document) for page in pages), card['id']
+        claim = normal(award['sourceText'])
+        sources = [normal('\n'.join(document[page-1].get_text(sort=sort) for page in pages)) for sort in (False, True)]
+        assert claim and any(claim in source for source in sources), (card['id'], criterion['id'], award['sourceText'])
+
+
 def criterion_claims(criteria):
     for criterion in criteria:
         yield from criterion['guidance']
+        if criterion.get('automaticAward'):
+            yield criterion['automaticAward']['sourceText']
         for band in criterion.get('bands', []):
             yield from band['guidance']
         for limit in criterion.get('limits', []):
@@ -108,10 +131,13 @@ def verify(cards=None):
             verify_alternative_sources(document, card)
             verify_allocation_sources(document, card)
             verify_manual_criterion_exception_sources(document, card)
+            verify_automatic_award_sources(document, card)
             pages = sorted(set(card['review']['schemePages'] + card['review'].get('guidancePages', [])
                                + card.get('answerLanguageRule', {}).get('schemePages', [])
                                + card.get('answerLanguageRule', {}).get('manualCriterionExceptions', {}).get('schemePages', [])
                                + card.get('rubric', {}).get('allocationCap', {}).get('schemePages', [])
+                               + [page for criterion in card.get('rubric', {}).get('criteria', [])
+                                  for page in criterion.get('automaticAward', {}).get('schemePages', [])]
                                + [page for limit in card.get('rubric', {}).get('allocationCap', {}).get('limits', [])
                                   for page in limit['schemePages']]))
             versions = ['\n'.join(document[p-1].get_text(sort=sort) for p in pages) for sort in (False,True)]

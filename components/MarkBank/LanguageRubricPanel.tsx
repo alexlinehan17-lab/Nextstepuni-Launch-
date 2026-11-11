@@ -21,6 +21,11 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
     .filter(group => scores[languageGroupId(group.id)] === 1)
     .reduce((sum, group) => sum + group.rows.filter(row => (scores[languageRowId(group.id, row.id)] ?? 0) > 0).length, 0) : 0;
   const renderCriterion = (criterion: LanguageWritingCriterion, criterionRubric: LanguageWritingRubric, disabled = false) => {
+      if (criterion.automaticAward) return <section className="mb-language-criterion" key={criterion.id}>
+        <div className="mb-language-heading"><h4>{criterion.label}</h4><span>{criterion.automaticAward.marks} marks awarded to all candidates</span></div>
+        {criterion.guidance.filter(text => text !== criterion.automaticAward!.sourceText).map((text, index) => <p key={index}>{text}</p>)}
+        <p>{criterion.automaticAward.sourceText}</p>
+      </section>;
       const { limits, permitted, selected, minimum, cap, needsRangeReview } = languageCriterionPlacement(criterionRubric, criterion, scores, [criterion.id]);
       const bandedLimits = [...limits].sort((a, b) => a.maxMarks - b.maxMarks).filter(limit => limit.bands);
       const sourceLimits = limits.filter(limit => limit.bands || limit.scaleLabel || (limit.minMarks ?? 0) > 0);
