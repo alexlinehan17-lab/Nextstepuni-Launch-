@@ -127,17 +127,19 @@ SUBJECTS = {
     # does not say which booklet is which -- 2011 swaps 000 and 014 -- so the
     # booklet is identified by the markers it prints, not by its file name.
     #
-    # The window is 2019 and later, and it is a decision, not the file
-    # listing: the corpus on disk holds 2010-2026 and every sitting of it
-    # reads, but Paper Trail labels the second booklet "Section B" in
-    # 2012-2018 and "Exam Paper" in 2010-2011 where the SEC's cover says
-    # "Sections B and C" -- so a Section C card from those years resolves to
-    # no paper at all, and roughly 270 cards would ship with no link to the
-    # document they came from. 2019 is where the SEC settled the pair of
-    # components the index names correctly, 014 "Section A" and 039 "Section
-    # B&C". It is three years wider than the bank's 2021-2025 default and it
-    # includes 2026, whose scheme is published and on disk.
-    'dcg': {'mode': 'sections', 'walker': 'dcg', 'from': 2019},
+    # The window is the whole corpus, 2010-2026: 33 sittings, 66 booklets.
+    # It stood at 2019 until November 2026 because Paper Trail labels the
+    # second booklet "Section B" in 2012-2018 and "Exam Paper" in 2010-2011
+    # where the SEC's cover says "Sections B and C", so a Section C card of
+    # those years resolved to no paper at all. That is a fault in CARDING,
+    # not in counting, and a window that hides 543 printed asks is the
+    # "100%" this census exists to prevent. The census now counts every
+    # sitting, the ledger shows the uncarded ones as OPEN, and dcg_all.py
+    # cards a sitting only once its paper link is settled (paperIndex.mjs).
+    # The SEC's component codes are 014 + 000 in 2010 (000 holds B and C),
+    # 000 + 014 in 2011 (swapped: 000 holds Section A), 014 + 015 in
+    # 2012-2018 and 014 + 039 from 2019 -- read off each booklet's own cover.
+    'dcg': {'mode': 'sections', 'walker': 'dcg', 'from': 2010},
     'politics-and-society': {'mode': 'politics'},
     'business': {'mode': 'sections'},
     # LCVP's Link Modules paper is COMMON level — one paper, sat by everyone,
@@ -508,13 +510,9 @@ def sittings(subject):
 
     A subject may state a window anyway, with `'from'` in SUBJECTS, and then
     the window is a DECISION rather than a side effect of what happened to be
-    fetched. DCG needs one: its corpus holds 2010-2026, and the papers before
-    2019 cannot be linked to the document they were printed in, because Paper
-    Trail labels the second booklet of those years "Section B" (2012-2018) or
-    "Exam Paper" (2010-2011) where the SEC's own cover says "Sections B and
-    C". Every Section C card of those years would ship with no paper link at
-    all. Stating the bound here keeps the census, the ledger and the deck
-    measuring the same thing; deleting the older papers would hide it.
+    fetched. A window must never be the way a sitting's asks stop counting:
+    DCG's stood at 2019 for a paper-LINK fault and hid nine years of printed
+    questions behind a "100%", until it was widened to the whole corpus.
     """
     root = PP.papers_dir(subject)
     first = SUBJECTS.get(subject, {}).get('from')
