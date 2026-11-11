@@ -919,8 +919,13 @@ const input = JSON.parse(readFileSync(cardsPath, 'utf8'));
 const rawCards = Array.isArray(input) ? input : (input.accepted ?? input.cards ?? []);
 
 /* The subject comes from the cards. Mixed input is a mistake, not a feature:
- * one run writes one subject's modules, so a stray card would vanish silently. */
-const subjectIds = [...new Set(rawCards.map(c => c.subjectId ?? 'biology'))];
+ * one run writes one subject's modules, so a stray card would vanish silently.
+ * Religious Education's point file empties once every shipped sitting is a
+ * band-grid card (rubric-authored.json), and that empty file is still its
+ * deck's input: the subject is then read off the file's own name. */
+const subjectIds = rawCards.length || !/\/religious-education\.json$/.test(cardsPath)
+  ? [...new Set(rawCards.map(c => c.subjectId ?? 'biology'))]
+  : ['religious-education'];
 if (subjectIds.length !== 1) {
   console.error(`cards span ${subjectIds.length} subjects (${subjectIds.join(', ')}) — build one subject at a time`);
   process.exit(1);
@@ -1852,9 +1857,15 @@ if (businessRubrics.length) {
 // Subject-specific imports for the generated module. A subject with none gets
 // no line for them, so its module stays byte-identical to the one it had
 // before French and Applied Maths added theirs.
+// Religious Education's band-grid cards (re_lane.py) live beside the point
+// deck in rubric-authored.json; the sittings rebuilt into them have left the
+// point-card source, so each printed ask is carded once.
+const reRubricCards = SUBJECT_ID === 'religious-education' && existsSync(resolve(OUT_DIR, 'rubric-authored.json'))
+  ? JSON.parse(readFileSync(resolve(OUT_DIR, 'rubric-authored.json'), 'utf8')).cards : [];
 const moduleImports = SUBJECT_ID === 'applied-maths' ? "import { withReviewedCards } from './reviewed';"
   : SUBJECT_ID === 'french' ? "import { writingCardsForLevel } from './writing';\nimport { readingCardsForLevel } from './reading';\nimport { clozeCardsForLevel } from './cloze';\nimport { listeningCardsForLevel } from './listening';\n"
-    : businessRubrics.length ? "import { businessRubricCards } from './rubric';\n" : '';
+    : businessRubrics.length ? "import { businessRubricCards } from './rubric';\n"
+      : reRubricCards.length ? "import { rubricCardsForLevel } from './rubric';\n" : '';
 // Cards carrying exam-year curriculum nodes (Agricultural Science's reviewed
 // historical papers) spread examCardCurriculum into each card, so their level
 // module imports it. Every other module's import line is unchanged.
@@ -1895,7 +1906,7 @@ ${historyEssayMarking[level].map(json => `  ${json.replace(/\n/g, '\n  ')},`).jo
 ` : ''}
 export const CARDS: SecCard[] = ${SUBJECT_ID === 'applied-maths' ? 'withReviewedCards(' : ''}[
 ${cards.join('\n')}
-${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readingCardsForLevel(${q(level)}),\n  ...clozeCardsForLevel(${q(level)}),\n  ...listeningCardsForLevel(${q(level)}),\n` : businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : ''}]${SUBJECT_ID === 'applied-maths' ? `, '${level}')` : ''};
+${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readingCardsForLevel(${q(level)}),\n  ...clozeCardsForLevel(${q(level)}),\n  ...listeningCardsForLevel(${q(level)}),\n` : businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : reRubricCards.length ? `  ...rubricCardsForLevel(${q(level)}),\n` : ''}]${SUBJECT_ID === 'applied-maths' ? `, '${level}')` : ''};
 `;
 
 /* A level gets a module when the subject HAS that level, never as a matter of
@@ -1904,10 +1915,11 @@ ${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readi
  * always rewritten, so a subject that loses every card at a level still ends
  * up with an honestly empty module rather than a stale one. */
 const sizes = {};
-const rubricIds = new Set(businessRubrics.map(card => card.id));
+const rubricIds = new Set([...businessRubrics, ...reRubricCards].map(card => card.id));
 for (const level of LEVELS) {
   const levelCards = out.filter(c => c.level === level && !rubricIds.has(c.id)).map(c => c.code);
-  const levelRubrics = businessRubrics.filter(card => card.level === level).length;
+  const levelRubrics = businessRubrics.filter(card => card.level === level).length
+    + reRubricCards.filter(card => card.level === level).length;
   const path = resolve(OUT_DIR, `${level}.ts`);
   if (!levelCards.length && !levelRubrics && !existsSync(path)) continue;
   writeFileSync(path, moduleFor(level, levelCards));
