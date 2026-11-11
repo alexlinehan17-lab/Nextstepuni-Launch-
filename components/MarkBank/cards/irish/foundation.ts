@@ -36,7 +36,9 @@ export const CARDS: SecRubricCard[] = [authored2010, authored2010Aural, authored
   questionRef: card.questionRef,
   questionText: card.questionText,
   totalMarks: card.totalMarks,
-  sourceMaterial: { ...card.sourceMaterial, kind: 'source-text' },
+  sourceMaterial: { ...card.sourceMaterial, kind: 'source-text',
+    // The ledger records no published recording (2010 aural, audio 'unavailable'): the reader says so.
+    ...((review as { audio?: { status?: string } }).audio?.status === 'unavailable' ? { recordingUnpublished: true } : {}) },
   audioMaterial: 'audioMaterial' in card && card.audioMaterial
     ? { ...card.audioMaterial, kind: 'source-audio' } : undefined,
   schemeCitation: `SEC Gaeilge Bonnleibhéal ${card.year}, PDF p.${card.schemePage}` +

@@ -463,6 +463,12 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
 
   return (
     <>
+      {source.recordingUnpublished && (
+        <p data-testid="mb-recording-unpublished"
+          style={{ margin: '12px 0 0', font: "400 14px/1.5 'DM Sans', system-ui, sans-serif", color: 'var(--mb-muted)' }}>
+          {RECORDING_UNPUBLISHED}
+        </p>
+      )}
       <button type="button" ref={triggerRef}
         className={`mb-source-material-trigger${inline ? ' mb-source-material-trigger-inline' : ''}`}
         onClick={show}>
@@ -483,5 +489,8 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
     </>
   );
 };
+
+/** Approved wording (coordinator, 2026-11-11) for a listening card whose recording the SEC never published. */
+export const RECORDING_UNPUBLISHED = 'The SEC has not published the recording for this paper. The question and the scheme’s answer are shown as printed.';
 
 export default SourceMaterialReader;

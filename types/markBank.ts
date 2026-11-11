@@ -278,6 +278,9 @@ export interface LinkedReading {
 }
 
 export interface CardSourceMaterial {
+  /** The SEC never published the recording this listening paper was set to (Irish 2010 Foundation aural, whose
+   * ledger records the audio as 'unavailable'): the reader says so, in one plain line, above its trigger. */
+  recordingUnpublished?: boolean;
   kind: 'source-text' | 'source-illustration' | 'source-data' | 'exam-material' | 'marking-scheme' | 'source-paper' | 'source-scheme' | 'source-table' | 'supplementary-text' | 'linked-reading';
   /** The paper's own identity for the source, e.g. "TEXT 1". */
   label: string;
