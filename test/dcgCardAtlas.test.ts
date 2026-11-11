@@ -79,8 +79,8 @@ describe('DCG Geologic Geometry carries its contour map', () => {
     }
     expect(wrong).toEqual([]);
     // Every C-1 card of every carded sitting: 75 for 2018-2026, then per
-    // sitting added (2017 Higher 6).
-    expect(cards.filter(c => c.sourceMaterial).length).toBe(81);
+    // sitting added (2017 Higher 6, 2017 Ordinary 3).
+    expect(cards.filter(c => c.sourceMaterial).length).toBe(84);
   });
 });
 
