@@ -41,6 +41,10 @@ export function languageCriterionLimits(rubric: LanguageWritingRubric, criterion
  * Retain raw saved choices so clearing a condition restores the placement.
  * A lower bound restricts positive choices; it never grants minimum credit. */
 export function languageCriterionPlacement(rubric: LanguageWritingRubric, criterion: LanguageWritingCriterion, scores: LanguageScores, visited: string[] = []) {
+  if (criterion.automaticAward) {
+    const marks = criterion.automaticAward.marks;
+    return { limits: [], permitted: [marks], selected: marks, minimum: marks, cap: marks, needsRangeReview: false };
+  }
   const limits = languageCriterionLimits(rubric, criterion, scores, visited);
   const ceiling = Math.min(criterion.maxMarks, ...limits.map(limit => limit.maxMarks));
   const minimum = Math.max(0, ...limits.map(limit => limit.minMarks ?? 0));

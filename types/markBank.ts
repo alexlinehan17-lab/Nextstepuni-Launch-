@@ -1341,6 +1341,14 @@ export interface LanguageWritingCriterion {
   maxMarks: number;
   permittedMarks: number[];
   guidance: string[];
+  /** An explicit published award to every candidate, independent of response
+   * or saved placements. Supported only on top-level language-writing
+   * criteria without deductions, conditions or response-language rules. */
+  automaticAward?: {
+    marks: number;
+    sourceText: string;
+    schemePages: number[];
+  };
   bands?: LanguageBand[];
   limits?: Array<{
     id: string;
@@ -1697,6 +1705,18 @@ export function tariffReconciles(card: SecCard): boolean {
       const rubric = card.rubric;
       const criteria = rubric.criteria ?? [];
       const ids = new Set(criteria.map(criterion => criterion.id));
+      const automatic = criteria.filter(criterion => criterion.automaticAward !== undefined);
+      if (automatic.length && (rubric.system !== 'language-writing' || !!card.answerLanguageRule
+        || automatic.some(criterion => {
+          const award = criterion.automaticAward!;
+          return !award || criterion.kind === 'deduction' || criterion.deductFrom !== undefined
+            || criterion.bands !== undefined || criterion.limits !== undefined
+            || criteria.some(other => other.deductFrom === criterion.id)
+            || !Number.isInteger(award.marks) || award.marks <= 0 || award.marks !== criterion.maxMarks
+            || criterion.permittedMarks.length !== 1 || criterion.permittedMarks[0] !== award.marks
+            || !award.sourceText.trim() || !award.schemePages.length
+            || !award.schemePages.every(page => Number.isInteger(page) && page > 0);
+        }))) return false;
       const validSteps = (marks: number[], max: number) => marks.length > 0
         && marks[0] === 0 && marks.at(-1) === max
         && marks.every((mark, index) => Number.isFinite(mark) && mark >= 0 && mark <= max && (index === 0 || mark > marks[index - 1]));
@@ -1712,7 +1732,7 @@ export function tariffReconciles(card: SecCard): boolean {
       if (ids.size !== criteria.length || !criteria.every(criterion => criterion.id && criterion.label.trim()
         && criterion.guidance.every(text => text.trim())
         && Number.isInteger(criterion.maxMarks) && criterion.maxMarks >= 0
-        && validSteps(criterion.permittedMarks, criterion.maxMarks)
+        && (criterion.automaticAward !== undefined || validSteps(criterion.permittedMarks, criterion.maxMarks))
         && validBands(criterion.bands, criterion.permittedMarks)
         && (criterion.kind !== 'deduction' || criteria.some(target => target.id === criterion.deductFrom && target.kind !== 'deduction'))
         && (criterion.limits ?? []).every(limit => limit.id && criterion.permittedMarks.includes(limit.maxMarks)
@@ -1750,6 +1770,7 @@ export function tariffReconciles(card: SecCard): boolean {
       const groupCriterionTotal = (group: typeof groups[number]) => (group.criteria ?? []).filter(criterion => criterion.kind !== 'deduction')
         .reduce((sum, criterion) => sum + criterion.maxMarks, 0);
       if (!groups.every(group => group.id && group.label.trim() && (group.rows.length > 0 || (group.criteria?.length ?? 0) > 0)
+        && !(group.criteria ?? []).some(criterion => criterion.automaticAward)
         && (group.criteria ?? []).every(criterion => (criterion.limits ?? []).every(limit => limit.when.any.every(condition => 'criterionIds' in condition || 'flag' in condition)))
         && (!group.criteria || tariffReconciles({ ...card, totalMarks: groupCriterionTotal(group),
           // The parent validated its response-level exceptions. A group-only
