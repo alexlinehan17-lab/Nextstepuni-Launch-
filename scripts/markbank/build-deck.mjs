@@ -678,15 +678,22 @@ const LEVELS = ['higher', 'ordinary', 'common'];
 const LEVEL_TOKEN = { higher: 'hl', ordinary: 'ol', common: 'cl' };
 const LEVEL_WORD = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common' };
 
-/* A History card from the SEC's deferred sitting ("hist-2023-hl-deferred-lm-
- * s1-q1a", cited "... — Deferred sitting"): its own paper, scheme and index
- * entry. Physics, Home Economics and Maths mark theirs the same way on
- * codex/home-economics-continuation-20261101. */
+/* A card from the SEC's DEFERRED sitting ("econ-2022-hl-deferred-sa-q1-a",
+ * "hist-2023-hl-deferred-lm-s1-q1a", cited "... — Deferred sitting"): its own
+ * paper, scheme and index entry. Physics, Home Economics and Maths mark theirs
+ * the same way on codex/home-economics-continuation-20261101. No other
+ * subject's id matches, so every other deck builds exactly as before. */
+const DEFERRED_ID = {
+  economics: /^econ-\d{4}-(?:hl|ol)-deferred-/,
+  history: /^hist-\d{4}-(?:hl|ol)-deferred-/,
+};
+const deferredCard = (subjectId, card) =>
+  Boolean(DEFERRED_ID[subjectId]?.test(String(card?.id ?? '')));
 const historyDeferred = (subjectId, card) =>
-  subjectId === 'history' && /^hist-\d{4}-(?:hl|ol)-deferred-/.test(String(card?.id ?? ''));
+  subjectId === 'history' && deferredCard(subjectId, card);
 
 function schemeFor(subjectId, card) {
-  const deferred = historyDeferred(subjectId, card);
+  const deferred = deferredCard(subjectId, card);
   const stem = `${card.year ?? 2025}-${LEVEL_TOKEN[card.level ?? 'higher'] ?? 'hl'}${deferred ? '-deferred' : ''}`;
   const file = resolve(ROOT, 'examiner-reports', subjectId, 'schemes', `${stem}.md`);
   if (!schemeCache.has(file)) {
@@ -1078,7 +1085,7 @@ for (const raw of rawCards) {
       ...(!Array.isArray(binding) && binding.sourceFileid
         ? { sourceFileid: binding.sourceFileid }
         : {}),
-      attribution: `SEC ${SUBJECT.title} ${card.year} ${LEVEL_WORD[card.level] ?? 'Higher'} Level examination paper — © State Examinations Commission.`,
+      attribution: `SEC ${SUBJECT.title} ${card.year} ${LEVEL_WORD[card.level] ?? 'Higher'} Level ${deferredCard(SUBJECT_ID, card) ? 'deferred ' : ''}examination paper — © State Examinations Commission.`,
       presentationNote: sourceKind === 'source-text'
         ? 'Read the exact source as it appeared in the examination paper, then answer the concise prompt above.'
         : 'Open the exact examination page to use its published chart, table, photograph or diagram.',
@@ -1738,7 +1745,7 @@ for (const c of cards) {
   /* History is examined in two FIELDS OF STUDY, printed as separate papers a
    * candidate chooses between, and Paper Trail indexes them as two subjects.
    * corpusSubjectFor reads the field out of the citation; see paperIndex.mjs. */
-  const deferredEntry = historyDeferred(SUBJECT_ID, c) ? deferredPaperEntry(SUBJECT_ID, year, level) : null;
+  const deferredEntry = deferredCard(SUBJECT_ID, c) ? deferredPaperEntry(SUBJECT_ID, year, level) : null;
   const fileid = deferredEntry
     ? String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null
     : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);

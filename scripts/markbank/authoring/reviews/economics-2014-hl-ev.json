@@ -1,0 +1,823 @@
+{
+  "subjectId": "economics",
+  "year": 2014,
+  "level": "higher",
+  "lang": "ev",
+  "fileid": "LC034ALP000EV",
+  "status": "paper-and-scheme-boundaries-reviewed",
+  "completeSubject": false,
+  "reviewedAt": "2026-11-04",
+  "visuallyInspectedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "visuallyInspectedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "unreviewedPaperPages": [],
+  "unreviewedSchemePages": [],
+  "paperSha256": "f1f48479f0b3298944436833fd4387987b08cad000c26c65751ce8bd2a8e3a24",
+  "schemeSha256": "2adf332b2f5dac8122a158c8c10dbad2b63a1dcab0b12988e301661ad1003b4c",
+  "questions": [
+    {
+      "n": "1",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        5
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 16,
+          "cardId": "econ-2014-hl-sa-q1",
+          "topicId": "economics-0-1"
+        }
+      ],
+      "boundaryReason": "The definition 8 + one example 8 from three sample responses: one card, two rows.",
+      "canonicalNodeIds": [
+        "economics-0-1",
+        "economics-3-1"
+      ],
+      "topicReason": "Opportunity cost is Scarcity & Choice (0-1); the government’s own choices are also Fiscal Policy & the Budget (3-1)."
+    },
+    {
+      "n": "2",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        5
+      ],
+      "tasks": [
+        {
+          "key": "i",
+          "marks": 1,
+          "cardId": "econ-2014-hl-sa-q2-i",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "ii",
+          "marks": 15,
+          "cardId": "econ-2014-hl-sa-q2-ii",
+          "topicId": "economics-1-5"
+        }
+      ],
+      "boundaryReason": "i the circled answer (YES) 1; ii the explanation 15.",
+      "canonicalNodeIds": [
+        "economics-1-5"
+      ],
+      "topicReason": "Marginal and average cost are Costs of Production, Revenue & Profit (1-5)."
+    },
+    {
+      "n": "3",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        5
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 16,
+          "cardId": "econ-2014-hl-sa-q3",
+          "topicId": "economics-3-2"
+        }
+      ],
+      "boundaryReason": "The definition 10 + one policy measure 6 from two.",
+      "canonicalNodeIds": [
+        "economics-3-2"
+      ],
+      "topicReason": "Structural unemployment and the policies to reduce it are Employment & Unemployment (3-2)."
+    },
+    {
+      "n": "4",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        6
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 16,
+          "cardId": "econ-2014-hl-sa-q4",
+          "topicId": "economics-1-1"
+        }
+      ],
+      "boundaryReason": "The explanation 12 + the example 4.",
+      "canonicalNodeIds": [
+        "economics-1-1"
+      ],
+      "topicReason": "Complementary goods (joint demand) are The Consumer (Demand) (1-1)."
+    },
+    {
+      "n": "5",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        6
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 16,
+          "cardId": "econ-2014-hl-sa-q5",
+          "topicId": "economics-2-0"
+        }
+      ],
+      "boundaryReason": "Three assumptions from five: the 1st correct answer 6, then 5 + 5.",
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "topicReason": "The assumptions of monopoly are Market Structures (2-0)."
+    },
+    {
+      "n": "6",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        6
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 17,
+          "cardId": "econ-2014-hl-sa-q6",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "boundaryReason": "Two effects from five: the 1st correct answer 10, the 2nd 7.",
+      "canonicalNodeIds": [
+        "economics-4-2"
+      ],
+      "topicReason": "The euro’s exchange rate against the dollar is International Trade & Competitiveness (4-2)."
+    },
+    {
+      "n": "7",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 17,
+          "cardId": "econ-2014-hl-sa-q7",
+          "topicId": "economics-0-1"
+        }
+      ],
+      "boundaryReason": "Two ways from three: the 1st correct response 10, the 2nd 7.",
+      "canonicalNodeIds": [
+        "economics-0-1"
+      ],
+      "topicReason": "Enterprise as a factor of production and its return are Scarcity & Choice (0-1)."
+    },
+    {
+      "n": "8",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        7
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 17,
+          "cardId": "econ-2014-hl-sa-q8",
+          "topicId": "economics-3-1"
+        }
+      ],
+      "boundaryReason": "Two implications from five: the 1st correct response 11, the 2nd 6.",
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-4-1"
+      ],
+      "topicReason": "Exiting the EU/IMF/ECB programme, fiscal discipline and the budget are Fiscal Policy & the Budget (3-1); the Troika and FDI are also Globalisation (4-1)."
+    },
+    {
+      "n": "9",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        8
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 17,
+          "cardId": "econ-2014-hl-sa-q9",
+          "topicId": "economics-2-2"
+        }
+      ],
+      "boundaryReason": "Two social costs and two social benefits on one ladder: the 1st correct response 5, the 2nd, 3rd and 4th 4 each: one card.",
+      "canonicalNodeIds": [
+        "economics-2-2",
+        "economics-0-1"
+      ],
+      "topicReason": "Social costs and benefits of a public investment are externalities, Market Failure (2-2); weighing them is also Scarcity & Choice (0-1)."
+    },
+    {
+      "n": "B1",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 13,
+          "cardId": "econ-2014-hl-sb-q1-a-i",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 12,
+          "cardId": "econ-2014-hl-sb-q1-a-ii",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 8,
+          "cardId": "econ-2014-hl-sb-q1-b-i",
+          "topicId": "economics-1-2"
+        },
+        {
+          "key": "b/ii",
+          "marks": 6,
+          "cardId": "econ-2014-hl-sb-q1-b-ii",
+          "topicId": "economics-1-2"
+        },
+        {
+          "key": "b/iii",
+          "marks": 16,
+          "cardId": "econ-2014-hl-sb-q1-b-iii",
+          "topicId": "economics-1-2"
+        },
+        {
+          "key": "c/i",
+          "marks": 12,
+          "cardId": "econ-2014-hl-sb-q1-c-i",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "c/ii",
+          "marks": 8,
+          "cardId": "econ-2014-hl-sb-q1-c-ii",
+          "topicId": "economics-1-1"
+        }
+      ],
+      "boundaryReason": "Seven tasks totalling 75. a(i) the statement 4 + the explanation 9; a(ii) 2 @ 6 from four. b(i) the statement 4 + the diagram 4 (hidden solution diagram); b(ii) 6; b(iii) 2 factors @ 8, each stated and explained with its diagram (hidden solution diagrams). c(i) the diagram 8 + the explanation 4 (hidden solution diagram); c(ii) 2 points @ 4 from three.",
+      "canonicalNodeIds": [
+        "economics-1-1",
+        "economics-1-2",
+        "economics-1-0"
+      ],
+      "topicReason": "Diminishing marginal utility and consumer surplus are The Consumer (Demand) (1-1); the law of supply and shifts in supply are The Firm (Supply) (1-2); a fixed-capacity market’s demand and supply are The Market Economy (1-0)."
+    },
+    {
+      "n": "B2",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        13,
+        14,
+        15
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 13,
+          "cardId": "econ-2014-hl-sb-q2-a-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 12,
+          "cardId": "econ-2014-hl-sb-q2-a-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/i",
+          "marks": 18,
+          "cardId": "econ-2014-hl-sb-q2-b-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 12,
+          "cardId": "econ-2014-hl-sb-q2-b-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c",
+          "marks": 20,
+          "cardId": "econ-2014-hl-sb-q2-c",
+          "topicId": "economics-2-0"
+        }
+      ],
+      "boundaryReason": "Five tasks totalling 75. a(i) three assumptions from six: the 1st correct answer 5, then 4 + 4; a(ii) perfect competition 6 + imperfect competition 6. b(i) the diagram 10 (hidden solution diagram) + the explanation 8; b(ii) 3 points @ 4. c the market structure 1 + four explanations at 5 + 5 + 5 + 4 from five, with reference to the Irish grocery market.",
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "topicReason": "Imperfect competition, its long-run equilibrium and oligopoly are Market Structures (2-0)."
+    },
+    {
+      "n": "B3",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        16,
+        17
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 15,
+          "cardId": "econ-2014-hl-sb-q3-a-i",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "a/ii",
+          "marks": 15,
+          "cardId": "econ-2014-hl-sb-q3-a-ii",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "b",
+          "marks": 20,
+          "cardId": "econ-2014-hl-sb-q3-b",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "c/i",
+          "marks": 12,
+          "cardId": "econ-2014-hl-sb-q3-c-i",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "c/ii",
+          "marks": 13,
+          "cardId": "econ-2014-hl-sb-q3-c-ii",
+          "topicId": "economics-1-4"
+        }
+      ],
+      "boundaryReason": "Five tasks totalling 75. a(i) the three definitions @ 5; a(ii) 3 factors @ 5 from five. b one part of three asks: the PED working 10 (hidden working crop) + inelastic 2 + the implication for government revenue 8. c(i) 12; c(ii) 13.",
+      "canonicalNodeIds": [
+        "economics-1-4",
+        "economics-3-1"
+      ],
+      "topicReason": "Price and income elasticity of demand are Elasticity (1-4); the carbon tax’s yield is also Fiscal Policy & the Budget (3-1)."
+    },
+    {
+      "n": "B4",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 20,
+          "cardId": "econ-2014-hl-sb-q4-a",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 10,
+          "cardId": "econ-2014-hl-sb-q4-b-i",
+          "topicId": "economics-0-1"
+        },
+        {
+          "key": "b/ii",
+          "marks": 15,
+          "cardId": "econ-2014-hl-sb-q4-b-ii",
+          "topicId": "economics-1-2"
+        },
+        {
+          "key": "c/i",
+          "marks": 15,
+          "cardId": "econ-2014-hl-sb-q4-c-i",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "c/ii",
+          "marks": 15,
+          "cardId": "econ-2014-hl-sb-q4-c-ii",
+          "topicId": "economics-3-4"
+        }
+      ],
+      "boundaryReason": "Five tasks totalling 75. a the four terms, each explanation 3 + example 2. b(i) 2 characteristics @ 5 from three; b(ii) 3 factors @ 5 from eight. c(i) 3 factors @ 5 from five; c(ii) one impact per category @ 5: households, the banking sector and the government, three heading rows.",
+      "canonicalNodeIds": [
+        "economics-2-1",
+        "economics-0-1",
+        "economics-1-2",
+        "economics-1-0",
+        "economics-3-4"
+      ],
+      "topicReason": "Derived demand, transfer earnings, supply price and economic rent are factor incomes, The Labour Market (2-1); land as a factor of production is Scarcity & Choice (0-1); where a firm locates is The Firm (Supply) (1-2); residential property prices are The Market Economy (1-0); mortgage arrears are Financial Sector (3-4)."
+    },
+    {
+      "n": "B5",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 5,
+          "cardId": "econ-2014-hl-sb-q5-a-i",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 5,
+          "cardId": "econ-2014-hl-sb-q5-a-ii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "a/iii",
+          "marks": 5,
+          "cardId": "econ-2014-hl-sb-q5-a-iii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "a/iv",
+          "marks": 5,
+          "cardId": "econ-2014-hl-sb-q5-a-iv",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b",
+          "marks": 20,
+          "cardId": "econ-2014-hl-sb-q5-b",
+          "topicId": "economics-4-1"
+        },
+        {
+          "key": "c/i",
+          "marks": 12,
+          "cardId": "econ-2014-hl-sb-q5-c-i",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "c/ii",
+          "marks": 8,
+          "cardId": "econ-2014-hl-sb-q5-c-ii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "c/iii",
+          "marks": 15,
+          "cardId": "econ-2014-hl-sb-q5-c-iii",
+          "topicId": "economics-3-0"
+        }
+      ],
+      "boundaryReason": "Eight tasks totalling 75. a(i)-(iv) each 5, the answer with its working (hidden working crops). b 4 points @ 5 from eleven. c(i) GDP 6 + GNP 6; c(ii) 8, the scheme’s one possible response; c(iii) 3 points @ 5 from six.",
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-4-1"
+      ],
+      "topicReason": "The national income identity, the MPC, the MPM, GDP, GNP and the limits of national income statistics are National Income (3-0); multinational companies are Globalisation (4-1)."
+    },
+    {
+      "n": "B6",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        27,
+        28,
+        29,
+        30
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 20,
+          "cardId": "econ-2014-hl-sb-q6-a-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 10,
+          "cardId": "econ-2014-hl-sb-q6-a-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b",
+          "marks": 20,
+          "cardId": "econ-2014-hl-sb-q6-b",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c",
+          "marks": 25,
+          "cardId": "econ-2014-hl-sb-q6-c",
+          "topicId": "economics-3-1"
+        }
+      ],
+      "boundaryReason": "Four tasks totalling 75. a(i) 4 points @ 5 from seven; a(ii) 2 conflicts @ 5 from four. b 2 arguments for @ 5 from six + 2 against @ 5 from five, both required. c four consequences from seven: the 1st correct response 7, the 2nd, 3rd and 4th 6.",
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-1-3"
+      ],
+      "topicReason": "The government’s economic aims, their conflicts and austerity are Fiscal Policy & the Budget (3-1); privatisation is Government Intervention (1-3)."
+    },
+    {
+      "n": "B7",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        31,
+        32,
+        33,
+        34
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 10,
+          "cardId": "econ-2014-hl-sb-q7-a-i",
+          "topicId": "economics-4-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 15,
+          "cardId": "econ-2014-hl-sb-q7-a-ii",
+          "topicId": "economics-4-0"
+        },
+        {
+          "key": "b/i",
+          "marks": 15,
+          "cardId": "econ-2014-hl-sb-q7-b-i",
+          "topicId": "economics-4-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 10,
+          "cardId": "econ-2014-hl-sb-q7-b-ii",
+          "topicId": "economics-4-0"
+        },
+        {
+          "key": "c/i",
+          "marks": 10,
+          "cardId": "econ-2014-hl-sb-q7-c-i",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "c/ii",
+          "marks": 15,
+          "cardId": "econ-2014-hl-sb-q7-c-ii",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "boundaryReason": "Six tasks totalling 75. a(i) economic development 5 + economic growth 5; a(ii) 3 points @ 5 from eight. b(i) 3 points @ 5 from seven; b(ii) 2 points @ 5 from six. c(i) 2 benefits @ 5 from four; c(ii) 3 reasons @ 5 from four.",
+      "canonicalNodeIds": [
+        "economics-4-0",
+        "economics-4-2",
+        "economics-4-1"
+      ],
+      "topicReason": "Economic development, LDCs and foreign aid are Growth & Development (4-0); free trade and barriers to it are International Trade & Competitiveness (4-2); the WTO is also Globalisation (4-1)."
+    },
+    {
+      "n": "B8",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        35,
+        36,
+        37
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 20,
+          "cardId": "econ-2014-hl-sb-q8-a",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 24,
+          "cardId": "econ-2014-hl-sb-q8-b-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/ii",
+          "marks": 11,
+          "cardId": "econ-2014-hl-sb-q8-b-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c",
+          "marks": 20,
+          "cardId": "econ-2014-hl-sb-q8-c",
+          "topicId": "economics-3-1"
+        }
+      ],
+      "boundaryReason": "Four tasks totalling 75. a the budget deficit 10 + the national debt 10. b(i) the four canons @ 6; b(ii) two principles from five: the 1st correct response 6, the 2nd 5. c 4 points @ 5 from six.",
+      "canonicalNodeIds": [
+        "economics-3-1"
+      ],
+      "topicReason": "The budget deficit, the national debt, the canons of taxation and the mix of direct and indirect taxes are Fiscal Policy & the Budget (3-1)."
+    }
+  ],
+  "selections": [
+    {
+      "page": 1,
+      "text": "Answer four questions.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section B); every printed task stays in the census."
+    },
+    {
+      "page": 1,
+      "text": "Answer six of the nine short response type questions in the spaces provided.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section A); every printed task stays in the census."
+    },
+    {
+      "page": 1,
+      "text": "Answer six questions from Section A and four questions from Section B.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; every printed task stays in the census."
+    },
+    {
+      "page": 1,
+      "text": "Page 1 of 8",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 2,
+      "text": "(i) Is this statement true? Circle the correct answer. YES / NO",
+      "classification": "answer-classification",
+      "reason": "Section A Q2(i) yes or no is the answer (YES); one card."
+    },
+    {
+      "page": 2,
+      "text": "Answer six of the nine short response type questions in the spaces provided.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section A); every printed task stays in the census."
+    },
+    {
+      "page": 2,
+      "text": "Page 2 of 8",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 3,
+      "text": "Page 3 of 8",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 4,
+      "text": "Page 4 of 8",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 5,
+      "text": "Answer four questions.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section B); every printed task stays in the census."
+    },
+    {
+      "page": 5,
+      "text": "No of Units Consumed 1 2 3 4 5",
+      "classification": "not-a-task-selection",
+      "reason": "Section B Q1(a) table header, read on \"No\"; not a selection."
+    },
+    {
+      "page": 5,
+      "text": "Page 5 of 8",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 6,
+      "text": "(i) If the firm wishes to maximise total sales revenue, should it lower or raise the price of the",
+      "classification": "answer-classification",
+      "reason": "Section B Q3(c)(i) lower or raise is the answer (reduce the price); one card."
+    },
+    {
+      "page": 6,
+      "text": "Is this demand for petrol price elastic or price inelastic? Outline the implication of your answer",
+      "classification": "answer-classification",
+      "reason": "Section B Q3(b) elastic or inelastic is the answer (inelastic); one card for the part."
+    },
+    {
+      "page": 6,
+      "text": "Page 6 of 8",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 7,
+      "text": "(b) Discuss arguments for and against the privatisation of state assets. (20)",
+      "classification": "not-a-task-selection",
+      "reason": "Section B Q6(b) \"for and against\" names both sides, both required: the scheme prices 2 for and 2 against."
+    },
+    {
+      "page": 7,
+      "text": "Page 7 of 8",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 8,
+      "text": "(ii) Outline three reasons why countries might choose to impose barriers to free trade.",
+      "classification": "not-a-task-selection",
+      "reason": "Section B Q7(c)(ii) ask wording, read on \"choose\"; not a selection."
+    },
+    {
+      "page": 8,
+      "text": "Page 8 of 8",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    }
+  ],
+  "reviewNote": "Review 2026-11-04 from a paired visual sweep of all 12 paper and 40 scheme pages (paper pages 9-12 are blank; scheme pages 1-4 are the SEC cover, the note on published schemes, the title page and the notes and index, and pages 38-40 blank or the back cover; scheme page numbers here are the PDF’s, two ahead of the printed ones; this scheme prints no Summary of Mark Allocations, so every tariff is read beside its part). The old-syllabus paper: Section A nine short questions (answer six), Section B eight long questions (answer four) numbered 1-8 again, keyed B1-B8 as the Atlas numbers them. 54 routes for 54 printed asks (10 Section A + 44 Section B), 19 raw directive lines classified. Every stem and ask is sliced from the paper and every marking point from the scheme (econ_2014_hl.py). One route per printed ask: Section A Q9’s two social costs and two social benefits share one ladder, and Section B Q3(b)’s three asks are one unnumbered part.",
+  "externalClarifications": [],
+  "curriculumSource": "https://www.curriculumonline.ie/getmedia/3342d8a2-1e22-4f17-b82b-a8134fe16eb3/LCEconomics_0219_EN.pdf",
+  "curriculumNote": "Sat on the outgoing syllabus. Its questions are filed under the Economics Topic Atlas taxonomy the Atlas uses for every sitting 2010-2026, whose canonical nodes are those of the 2019 specification; no Syllabus X-Ray link is claimed."
+}

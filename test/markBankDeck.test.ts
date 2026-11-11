@@ -194,14 +194,16 @@ const ROOT = resolve(__dirname, '..');
  */
 const comparable = (text: string) => comparableScheme(text);
 
-// A History card from the SEC's deferred sitting traces to that sitting's own
-// scheme ("2023-hl-deferred.md"), as build-deck reads it.
-const historyDeferred = (card: { id?: string; subjectId: string }) =>
-  card.subjectId === 'history' && /^hist-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? '');
+// A card from the SEC's deferred sitting ("econ-2022-hl-deferred-...",
+// "hist-2023-hl-deferred-lm-...") traces to that sitting's own scheme
+// ("2022-hl-deferred.md"), as build-deck reads it.
+const deferredCard = (card: { id?: string; subjectId: string }) =>
+  (card.subjectId === 'economics' && /^econ-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'history' && /^hist-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''));
 
 const schemeFor = (card: { id?: string; year: number; level: string; subjectId: string }) =>
   resolve(ROOT, 'examiner-reports', card.subjectId, 'schemes',
-    `${card.year}-${card.level === 'higher' ? 'hl' : 'ol'}${historyDeferred(card) ? '-deferred' : ''}.md`);
+    `${card.year}-${card.level === 'higher' ? 'hl' : 'ol'}${deferredCard(card) ? '-deferred' : ''}.md`);
 
 const schemeCache = new Map<string, string>();
 const schemeText = (card: { id?: string; year: number; level: string; subjectId: string }) => {
@@ -544,7 +546,7 @@ describe('every card points at the question paper it came from', () => {
       await import('../scripts/markbank/paperIndex.mjs');
     const bad = SAMPLE_CARDS
       .filter(c => {
-        if (historyDeferred(c)) {
+        if (deferredCard(c)) {
           const deferred = deferredPaperEntry(c.subjectId, c.year, c.level);
           return c.paperFileid !== null
             && c.paperFileid !== String(deferred?.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/, '');
