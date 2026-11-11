@@ -4505,5 +4505,165 @@
         0.765
       ]
     }
+  },
+  "ja-2012-ol-1-1": {
+    "src": "/exam-figures/japanese/ja-2012-ol-1-1.png",
+    "alt": "How much are the following items?",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 3,
+      "region": [
+        0.065,
+        0.025,
+        0.97,
+        0.345
+      ]
+    },
+    "md5": "79599e934e88ed2f3bab13551dc5ad35"
+  },
+  "ja-2012-ol-1-4": {
+    "src": "/exam-figures/japanese/ja-2012-ol-1-4.png",
+    "alt": "Write the following menu items in Katakana as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 3,
+      "region": [
+        0.065,
+        0.595,
+        0.97,
+        0.745
+      ]
+    },
+    "md5": "933aeff6632304755a1a64fe9bf74a81"
+  },
+  "ja-2012-ol-2a": {
+    "src": "/exam-figures/japanese/ja-2012-ol-2a.png",
+    "alt": "Answer the following questions in English.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.065,
+        0.025,
+        0.97,
+        0.35
+      ]
+    },
+    "md5": "d7734f5ba14773722c51abc469d9e851"
+  },
+  "ja-2012-ol-2b": {
+    "src": "/exam-figures/japanese/ja-2012-ol-2b.png",
+    "alt": "Write whether the following sentences are true of false. Choose a phrase from the text to support your answer as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 5,
+      "region": [
+        0.065,
+        0.37,
+        0.97,
+        0.975
+      ]
+    },
+    "md5": "5eb82f166f154ac095f4d8147450adcc"
+  },
+  "ja-2012-ol-3b": {
+    "src": "/exam-figures/japanese/ja-2012-ol-3b.png",
+    "alt": "Circle the correct meaning for the following Kanji as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.065,
+        0.025,
+        0.97,
+        0.48
+      ]
+    },
+    "md5": "42ae9224a845ceb9ceb551b4ea279342"
+  },
+  "ja-2012-ol-3c-1": {
+    "src": "/exam-figures/japanese/ja-2012-ol-3c-1.png",
+    "alt": "Write the following sentences in the negative as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.065,
+        0.48,
+        0.97,
+        0.7
+      ]
+    },
+    "md5": "b756a91e95b5bd04b7c9f9602805b8e0"
+  },
+  "ja-2012-ol-3c-2": {
+    "src": "/exam-figures/japanese/ja-2012-ol-3c-2.png",
+    "alt": "Circle the correct particle – (a), (b) or (c) – as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 8,
+      "region": [
+        0.065,
+        0.7,
+        0.97,
+        0.95
+      ]
+    },
+    "md5": "aae3ab96c2efed3599e308534b8394d6"
+  },
+  "ja-2012-ol-4": {
+    "src": "/exam-figures/japanese/ja-2012-ol-4.png",
+    "alt": "Insert the missing words from the box below as in the example.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 10,
+      "region": [
+        0.065,
+        0.025,
+        0.97,
+        0.93
+      ]
+    },
+    "md5": "e022da688229234fb9e6be3b329c0b68"
+  },
+  "ja-2012-ol-5": {
+    "src": "/exam-figures/japanese/ja-2012-ol-5.png",
+    "alt": "Answer ANY 5 of the following 7 questions about your school in Japanese in the spaces provided.",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "paper",
+      "page": 11,
+      "region": [
+        0.055,
+        0.025,
+        0.97,
+        0.95
+      ]
+    },
+    "md5": "1461099f46fd07a01186539870a03b9f"
+  },
+  "ja-2012-ol-lc-2-iii": {
+    "src": "/exam-figures/japanese/ja-2012-ol-lc-2-iii.png",
+    "alt": "To apply you should call",
+    "attribution": "© State Examinations Commission.",
+    "source": {
+      "document": "aural",
+      "page": 4,
+      "region": [
+        0.055,
+        0.66,
+        0.97,
+        0.73
+      ]
+    },
+    "md5": "45715c1f7c136a6aac7537edd5d9ec2e"
   }
 }
