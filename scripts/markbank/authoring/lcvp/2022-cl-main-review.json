@@ -1184,5 +1184,13 @@
     "checks": "Original PDF/media source gate; cardlint/reconcile; mandatory preservation/curriculum/deck and targeted 2022 contracts; LCVP coverage cases; scoped lint; one deterministic regeneration with other-subject/full/decoded and prior LCVP records unchanged.",
     "cadence": "Data-only sitting under BRIEF.md cadence, confirmed by coordinator. Broad subject tests, app/scoped types and normal/PWA build passed at preceding 2025 checkpoint 837d0dbfc; next broad batch gate after about four data-only sittings, or earlier for shared runtime changes/new concerns. Browser/native playback QA belongs to coordinator.",
     "releaseDistinction": "This is a reviewed written sitting, not a whole-subject or native-video release-readiness claim."
+  },
+  "identityCorrection": {
+    "sourceCommit": "ecd7ff846",
+    "originalConceptIdsRestored": 38,
+    "correction": "Earlier checkpoint wording claiming original concepts were unchanged was incorrect: card IDs were stable, but the authoring module replaced conceptId with task suffixes. This narrow follow-up restores original conceptId values and pins all314 original card/concept pairs. Every other authored/emitted card field is unchanged. The original validation hashes remain historical evidence for the earlier checkpoint.",
+    "fixture": "scripts/markbank/authoring/lcvp/original-concept-identities.json",
+    "regression": "test/markBankLcvpIdentity.test.ts",
+    "validation": "scripts/markbank/authoring/lcvp/concept-identity-correction.json"
   }
 }

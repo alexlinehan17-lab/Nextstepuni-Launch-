@@ -9,6 +9,7 @@ import json
 import re
 import sys
 import fitz
+from lcvp_identity import concept_id
 from lcvp_review_2026 import ROOT, tidy, select, numbered, point, criterion, menu, partial
 from lcvp_review_2025 import paired_rows
 
@@ -275,7 +276,7 @@ def build():
             suffix = 'c7aii'  # Stable old identity now contains the complete original profile.
         ref = f'2024 CL Section {section} Q{q}' + (f'({letter})' if letter else '') + (f'({roman})' if roman else '')
         card = dict(id='lcvp-2024-cl-' + suffix, subjectId='lcvp', topicId='lcvp-link-modules-' + topics[key],
-            conceptId=suffix, level='common', year=2024, section=section, questionRef=ref,
+            conceptId=concept_id('lcvp-2024-cl-' + suffix, suffix), level='common', year=2024, section=section, questionRef=ref,
             questionText=question(paper, key), stem=stems[q] if section == 'C' else case if section == 'B' else '',
             figureKey='', labelKey=[], totalMarks=totals[key], rows=rows[key],
             tariffModel=dict(kind='fixed', notation='Original 2024 allocation; complete source guidance retained'),

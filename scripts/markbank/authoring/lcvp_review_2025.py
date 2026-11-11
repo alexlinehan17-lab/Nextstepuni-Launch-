@@ -9,6 +9,7 @@ import json
 import re
 import sys
 import fitz
+from lcvp_identity import concept_id
 from lcvp_review_2026 import (ROOT, tidy, select, page_text, numbered, split_heads,
                               point, criterion, menu, partial)
 
@@ -277,7 +278,7 @@ def build():
         suffix = section.lower() + str(q) + (letter or '') + (roman or '')
         ref = f'2025 CL Section {section} Q{q}' + (f'({letter})' if letter else '') + (f'({roman})' if roman else '')
         card = dict(id='lcvp-2025-cl-' + suffix, subjectId='lcvp', topicId='lcvp-link-modules-' + topics[key],
-                    conceptId=suffix, level='common', year=2025, section=section, questionRef=ref,
+                    conceptId=concept_id('lcvp-2025-cl-' + suffix, suffix), level='common', year=2025, section=section, questionRef=ref,
                     questionText=question(paper, key), stem=stems[q] if section == 'C' else case if section == 'B' else '',
                     figureKey='', labelKey=[], totalMarks=totals[key], rows=rows[key],
                     tariffModel=dict(kind='questionTotal' if key == b(1) else 'fixed',
