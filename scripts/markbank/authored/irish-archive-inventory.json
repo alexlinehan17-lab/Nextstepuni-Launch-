@@ -28,17 +28,15 @@
       "higher",
       "ordinary"
     ],
-    "papersWithCards": 90,
-    "papersWithoutCards": 1,
-    "indexedCards": 3551,
+    "papersWithCards": 91,
+    "papersWithoutCards": 0,
+    "indexedCards": 3573,
     "orphanCardIds": [],
     "missingLocalPapers": [],
     "papersWithoutIndexedScheme": [],
     "missingLocalSchemes": [],
-    "papersPendingFullReview": 1,
-    "componentsWithSourceGaps": [
-      "2010|foundation|LC001BLPA00IV.pdf"
-    ]
+    "papersPendingFullReview": 0,
+    "componentsWithSourceGaps": []
   },
   "papers": [
     {
@@ -10205,7 +10203,30 @@
         "pages": 17,
         "sha256": "a29bb58dc74195783c6e67b36ea6eea22b027aa838907c014a2d26a18f410be0"
       },
-      "markBankCardIds": [],
+      "markBankCardIds": [
+        "irish-2010-fl-a-1a",
+        "irish-2010-fl-a-1b",
+        "irish-2010-fl-a-2a",
+        "irish-2010-fl-a-2b",
+        "irish-2010-fl-a-3a",
+        "irish-2010-fl-a-3b",
+        "irish-2010-fl-a-4",
+        "irish-2010-fl-a-5",
+        "irish-2010-fl-a-6a",
+        "irish-2010-fl-a-6b",
+        "irish-2010-fl-a-7a",
+        "irish-2010-fl-a-7b",
+        "irish-2010-fl-a-8a",
+        "irish-2010-fl-a-8b",
+        "irish-2010-fl-a-9a",
+        "irish-2010-fl-a-9b",
+        "irish-2010-fl-a-10a",
+        "irish-2010-fl-a-10b",
+        "irish-2010-fl-a-11a",
+        "irish-2010-fl-a-11b",
+        "irish-2010-fl-a-12a",
+        "irish-2010-fl-a-12b"
+      ],
       "atlasQuestionIds": [
         "1",
         "2",
@@ -10218,13 +10239,34 @@
         "9",
         "10",
         "11",
-        "12"
+        "12",
+        "A-1a",
+        "A-1b",
+        "A-2a",
+        "A-2b",
+        "A-3a",
+        "A-3b",
+        "A-4",
+        "A-5",
+        "A-6a",
+        "A-6b",
+        "A-7a",
+        "A-7b",
+        "A-8a",
+        "A-8b",
+        "A-9a",
+        "A-9b",
+        "A-10a",
+        "A-10b",
+        "A-11a",
+        "A-11b",
+        "A-12a",
+        "A-12b"
       ],
-      "questionCoverage": "missing-from-mark-bank",
-      "fullVisualReview": "pending",
-      "partAndSelectionReconciliation": "pending",
-      "bankAtlasTaskParity": "pending",
-      "sourceGap": "source-gap: official Foundation recording unavailable; no cards, transcript or substitute audio"
+      "questionCoverage": "reviewed",
+      "fullVisualReview": "complete",
+      "partAndSelectionReconciliation": "complete",
+      "bankAtlasTaskParity": "complete"
     }
   ]
 }

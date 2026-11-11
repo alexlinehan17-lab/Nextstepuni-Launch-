@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Reviewed 2010 Foundation written paper. Counts are assertions, not corpus-completeness proof.
+"""Reviewed 2010 Foundation written and listening papers. Counts are assertions, not corpus-completeness proof.
 
 2010 written pages 1–16, aural pages 1–8 and scheme pages 1–17 visually reviewed
 (sweep 2026-10-08, re-checked against the rendered pages 2026-10-11).
 Source hashes and classified raw selection directives guard the reviewed sources.
-The separate listening paper (LC001BLPA00IV) is a recorded source gap: the official
-Foundation recording is unavailable, so it has no cards, transcript or substitute audio.
+The separate listening paper (LC001BLPA00IV) is carded without audio (Alex, 2026-11-11): the SEC archive
+publishes no 2010 Foundation recording. Each question, and its options table, is read from the paper's own
+lines and ruled tables; each answer and tariff from the scheme's listening key (PDF 2). No transcript and
+no substitute audio.
 """
 from __future__ import annotations
 import argparse
@@ -23,6 +25,7 @@ FILE = 'LC001BLP100IV'
 AURAL_FILE = 'LC001BLPA00IV'
 SCHEME_FILE = 'LC001BLP000IV'
 OUT = ROOT / 'components/MarkBank/cards/irish/foundation-2010-authored.json'
+AURAL_OUT = ROOT / 'components/MarkBank/cards/irish/foundation-2010-aural-authored.json'
 SOURCE_REVIEW = ROOT / 'scripts/markbank/authored/irish-foundation-2010-source-review.json'
 DIRECTIVE = re.compile(r'rogha|roghna|Freagair|Cuir tic|Ainmnigh|Luaigh|\bchoose\b|\beither\b|\bany\b|one of|\bnó\b|dhá phointe|trí phointe|dhá rud|dheartháir|dheirfiúr|dó / d[ií]|dó/di|Cuir ciorcal|dhá thagairt', re.I)
 
@@ -39,6 +42,55 @@ def criterion(id, label, marks, guidance, exact=False):
     return dict(id=id, label=label, kind='award', maxMarks=marks,
                 permittedMarks=[0, marks] if exact else list(range(marks + 1)),
                 guidanceKind='exact-answer' if exact else 'quality', guidance=guidance)
+
+
+AURAL_HEAD = re.compile(r'Ceist (\d+)(?: \(([ab])\))?$')
+
+
+def aural_questions(aural):
+    """Every printed listening question: its head, its prompt (the lines printed beside the head) and its options
+    table (the ruled table level with the head). A picture question prints no options table."""
+    out = []
+    for pno in range(1, len(aural)):
+        page = aural[pno]
+        lines = [(line['bbox'], clean(''.join(span['text'] for span in line['spans'])))
+                 for block in page.get_text('dict')['blocks'] for line in block.get('lines', [])]
+        lines = [(box, text) for box, text in lines if text]
+        heads = sorted(((box[1], AURAL_HEAD.match(text)) for box, text in lines if box[0] < 60 and AURAL_HEAD.match(text)),
+                       key=lambda head: head[0])
+        tables = [(table.bbox, [row[0] for row in table.extract()]) for table in page.find_tables().tables]
+        assert all(any(abs(box[1] - y) <= 10 for y, _ in heads) for box, _ in tables), ('options table without a question', pno + 1)
+        for y, match in heads:
+            prompt = ' '.join(text for box, text in sorted(lines, key=lambda line: line[0][1])
+                              if 100 <= box[0] < 370 and y - 4 <= box[1] <= y + 20)
+            mine = [options for box, options in tables if abs(box[1] - y) <= 10]
+            assert len(mine) <= 1 and prompt, (pno + 1, match.group(0))
+            out.append(dict(n=match.group(1) + (match.group(2) or ''), page=pno + 1, prompt=prompt,
+                            options=[clean(option) for option in mine[0]] if mine else None))
+    return out
+
+
+AURAL_KEY = re.compile(r'Ceist (\d+)\s+(.*?)(?=Ceist \d+\s|$)')
+AURAL_PART = re.compile(r'\s*(?:\(([ab])\)\s*)?(.+?)\s*\.\.\.\s*(\d+)\s*marc\s*\)')
+
+
+def aural_key(scheme):
+    """The listening key on scheme PDF 2: each part's printed answer and its "... N marc )", checked against the
+    question totals the page prints ("= 14 marc") and the tariff table at its head."""
+    text = clean(scheme_text(scheme[1]))
+    head, body = text.split('3 × 20 marc.', 1)
+    assert 'CLUASTUISCINT (180 MARC)' in head and all(t in head for t in ['3 × 14 marc', '2 × 7 marc', '4 × 16 marc']), head
+    totals = [int(t) for t in re.findall(r'=\s*(\d+)\s*marc', body)]
+    body = re.sub(r'\s*=\s*\d+\s*marc\s*', ' ', body)
+    key, sums = {}, []
+    for number, block in AURAL_KEY.findall(body):
+        parts = AURAL_PART.findall(block)
+        assert parts and not AURAL_PART.sub('', block).strip(), (number, block)
+        for letter, answer, marks in parts:
+            key[number + letter] = (clean(answer), int(marks))
+        sums.append(sum(int(marks) for _, _, marks in parts))
+    assert sums == totals == [14] * 3 + [7] * 2 + [16] * 4 + [20] * 3, (sums, totals)
+    return key
 
 
 def scheme_text(page):
@@ -338,6 +390,33 @@ def build():
                 ' + '.join(c['questionRef'].replace('2010 FL ', '') for c in [first, second, third]), [first, second, third],
                 'FREAGAIR GACH CEIST (4, 5 AGUS 6). Ceist 4: Freagair (a) NÓ (b). Ceist 5: Freagair (a) NÓ (b). Ceist 6: Freagair (a) NÓ (b).')
 
+    # The separate listening paper: one card per printed part, question and options from the paper, answer and
+    # tariff from the scheme's key. The SEC publishes no 2010 Foundation recording, so no card carries audio.
+    key = aural_key(scheme)
+    # The paper's own instruction is the task check; its tick is a Wingdings glyph (U+F0FC), drawn as ✓ on the page.
+    tick = next(clean(line) for line in aural[1].get_text().splitlines() if clean(line).startswith('Cuir tic')).replace('\uf0fc', '✓')
+    assert tick == 'Cuir tic (✓) leis an bhfreagra ceart i ngach cás.', tick
+    listening = []
+    for q in aural_questions(aural):
+        answer, marks = key[q['n']]
+        if q['options']:
+            assert sum(comparable(option) == comparable(answer) for option in q['options']) == 1, (q['n'], answer)
+        ref = 'Cluastuiscint · Ceist ' + re.sub(r'([ab])$', r'(\1)', q['n'])
+        listening.append(dict(
+            id=f'irish-2010-fl-a-{q["n"]}', year=2010, level='foundation', paper=1, section='1',
+            atlasQuestionId='A-' + q['n'], questionRef='2010 FL ' + ref,
+            questionText=re.sub(r'^(\d+)([ab]?)$', lambda m: m[1] + '. ' + ('(' + m[2] + ') ' if m[2] else ''), q['n'])
+            + q['prompt'] + ('\n\n' + '\n'.join(q['options']) if q['options'] else ''),
+            totalMarks=marks, topicId='irish-1-3', examTopicKeys=['aural'], conceptId=f'irish-foundation-a-{q["n"]}',
+            paperFileid=AURAL_FILE, schemeFileid=SCHEME_FILE, schemePage=2, schemePages=[2],
+            taskRequirements=[tick],
+            criteria=[criterion('answer', 'Freagra', marks, [answer], True)],
+            markingGuideNote='Use the answer and tariff published by the SEC for this part.',
+            sourceMaterial=dict(kind='source-text', label=ref, title=f'Gaeilge Bonnleibhéal 2010 · {ref}', pages=[q['page']],
+                                attribution='© State Examinations Commission.',
+                                presentationNote='Original examination pages, including every required picture or passage.')))
+    assert [c['atlasQuestionId'] for c in listening] == ['A-' + n for n in key] and len(listening) == 22
+    assert sum(c['totalMarks'] for c in listening) == 180
     decisions = selection_decisions({FILE + '.pdf': paper, AURAL_FILE + '.pdf': aural})
     assert len(cards) == 70 and len({c['id'] for c in cards}) == 70
     for card in cards:
@@ -346,7 +425,7 @@ def build():
     products = [c for c in cards if re.match(r'W-4[AB]-5', c['atlasQuestionId'])]
     assert len(products) == 16 and {c['totalMarks'] for c in products} == {120}
     sr = json.loads(SOURCE_REVIEW.read_text())
-    assert sr['componentStatus'][AURAL_FILE + '.pdf'].startswith('source-gap')
+    assert sr['componentStatus'][AURAL_FILE + '.pdf'].startswith('reviewed') and sr['audio']['status'] == 'unavailable'
     review = dict(year=2010, level='foundation', paperFileid=FILE + '.pdf', schemeFileid=SCHEME_FILE + '.pdf',
                   paperSha256=hashlib.sha256(paper_path.read_bytes()).hexdigest(),
                   schemeSha256=hashlib.sha256(scheme_path.read_bytes()).hexdigest(),
@@ -360,25 +439,38 @@ def build():
                   boundaries='10 matching + 30 reading + 8 whole writing routes; 6 reading pairs and 16 full writing products.',
                   separateListeningComponent=dict(paperFileid=AURAL_FILE + '.pdf', status=sr['componentStatus'][AURAL_FILE + '.pdf'],
                                                   decision=sr['audio']['decision']))
-    return withdraw_combinations(dict(review=review, cards=cards)), scheme
+    aural_review = dict(year=2010, level='foundation', paperFileid=AURAL_FILE + '.pdf', schemeFileid=SCHEME_FILE + '.pdf',
+                        paperSha256=hashlib.sha256(aural_path.read_bytes()).hexdigest(),
+                        schemeSha256=hashlib.sha256(scheme_path.read_bytes()).hexdigest(),
+                        reviewedPaperPages=list(range(1, 9)), reviewedSchemePages=list(range(1, 18)),
+                        reviewDate='2026-11-11', status='reviewed', fullPaperAndApplicableSchemeVisualSweep=True,
+                        selectionDecisions=[d for d in decisions if d['paperFileid'] == AURAL_FILE + '.pdf'],
+                        atomicPracticeCardIds=[c['id'] for c in listening], pairedRouteCardIds=[],
+                        examStructure=dict(listening=180, total=180),
+                        nonPoolDecisions=sr['nonPoolDecisions'], openIssues=[], caveats=sr['sourceFindings'],
+                        boundaries='22 individually marked listening parts.', audio=sr['audio'])
+    return {OUT: withdraw_combinations(dict(review=review, cards=cards)),
+            AURAL_OUT: withdraw_combinations(dict(review=aural_review, cards=listening))}, scheme
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
-    result, scheme = build()
+    results, scheme = build()
     scheme_md = '# Gaeilge Bonnleibhéal 2010 — SEC marking scheme\n\n' + '\n\n'.join(
         f'## PDF page {i + 1}\n\n' + scheme_text(p) for i, p in enumerate(scheme))
-    scheme_words_in(result)  # guidance carries the SEC's words only (irish_lifted.py)
-    outputs = {OUT: json.dumps(result, ensure_ascii=False, indent=2) + '\n',
-               ROOT / 'examiner-reports/irish/schemes/2010-fl.md': '\n'.join(line.rstrip() for line in scheme_md.splitlines()).rstrip() + '\n'}
+    outputs = {}
+    for path, result in results.items():
+        scheme_words_in(result)  # guidance carries the SEC's words only (irish_lifted.py)
+        outputs[path] = json.dumps(result, ensure_ascii=False, indent=2) + '\n'
+    outputs |= {ROOT / 'examiner-reports/irish/schemes/2010-fl.md': '\n'.join(line.rstrip() for line in scheme_md.splitlines()).rstrip() + '\n'}
     for path, content in outputs.items():
         if args.check:
             assert path.exists() and path.read_text() == content, f'Stale Foundation output: {path}'
         else:
             path.write_text(content)
-    print('Irish Foundation 2010: 70 written task/selection cards. The separate listening paper remains a source gap (official recording unavailable); the archive is incomplete.')
+    print('Irish Foundation 2010: 70 written task/selection cards and 22 listening cards (no official recording; carded without audio).')
 
 
 if __name__ == '__main__':

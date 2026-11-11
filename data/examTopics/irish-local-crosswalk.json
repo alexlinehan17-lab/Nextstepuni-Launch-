@@ -28,15 +28,15 @@
     "referenceAnomalyAssociations": 2,
     "matchedLocalCardLinks": 742,
     "localPaperVariants": 91,
-    "localPhysicalMappings": 4268,
-    "distinctStudentFacingQuestions": 4268,
+    "localPhysicalMappings": 4290,
+    "distinctStudentFacingQuestions": 4290,
     "referenceMappedLocalQuestions": 686,
-    "retainedLocalQuestions": 3582,
+    "retainedLocalQuestions": 3604,
     "hostedPaperAnchorMaps": 91,
     "preservedBaselineVariants": 26,
     "preservedBaselineCards": 286,
     "newlyAddedPaperVariants": 65,
-    "newlyAddedPhysicalMappings": 3982,
+    "newlyAddedPhysicalMappings": 4004,
     "emptyOfficialReferenceTopics": [
       "irish-higher-danta-breise",
       "irish-higher-poetry-deireadh-na-feide",
@@ -15748,6 +15748,292 @@
       "paperKey": "single",
       "kind": "foundation-aural",
       "n": "12",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-1a",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-1b",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-2a",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-2b",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-3a",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-3b",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-4",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-5",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-6a",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-6b",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-7a",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-7b",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-8a",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-8b",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-9a",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-9b",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-10a",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-10b",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-11a",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-11b",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-12a",
+      "topicIds": [
+        "irish-foundation-aural-cluastuiscint"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "foundation",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001BLPA00IV.pdf",
+      "paperKey": "single",
+      "kind": "foundation-aural",
+      "n": "A-12b",
       "topicIds": [
         "irish-foundation-aural-cluastuiscint"
       ],
