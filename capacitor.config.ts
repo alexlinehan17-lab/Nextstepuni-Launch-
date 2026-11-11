@@ -30,6 +30,9 @@ const config: CapacitorConfig = {
           // Avoid the Firebase SwiftPM identity collision documented by the
           // Capacitor Firebase plugin. Requires Capacitor CLI 8.4+.
           '@capacitor-firebase/app-check': { symlink: true },
+          // Keep SwiftPM identities stable when a worktree shares node_modules.
+          '@capacitor/local-notifications': { symlink: true },
+          '@capacitor/status-bar': { symlink: true },
         },
       },
     },

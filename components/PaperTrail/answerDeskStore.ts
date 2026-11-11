@@ -40,23 +40,6 @@ export const emptyAnswer = (): AnswerRecord => ({
 });
 const responseKey = (ns: string, id: string) =>
   `pt:written:v1:${encodeURIComponent(ns)}:${encodeURIComponent(id)}`;
-const preferenceKey = (ns: string) =>
-  `pt:attempt-first:v1:${encodeURIComponent(ns.split("|")[0])}`;
-export function loadAttemptFirst(ns: string): boolean {
-  try {
-    return localStorage.getItem(preferenceKey(ns)) !== "off";
-  } catch {
-    return true;
-  }
-}
-export function saveAttemptFirst(ns: string, on: boolean): boolean {
-  try {
-    localStorage.setItem(preferenceKey(ns), on ? "on" : "off");
-    return true;
-  } catch {
-    return false;
-  }
-}
 export function loadDeskQuestion(ns: string): string | null {
   try {
     return localStorage.getItem(`pt:written-place:${ns}`);
