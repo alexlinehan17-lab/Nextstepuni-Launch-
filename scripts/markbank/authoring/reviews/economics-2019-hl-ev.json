@@ -1,0 +1,882 @@
+{
+  "subjectId": "economics",
+  "year": 2019,
+  "level": "higher",
+  "lang": "ev",
+  "fileid": "LC034ALP000EV",
+  "status": "paper-and-scheme-boundaries-reviewed",
+  "completeSubject": false,
+  "reviewedAt": "2026-11-04",
+  "visuallyInspectedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "visuallyInspectedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "unreviewedPaperPages": [],
+  "unreviewedSchemePages": [],
+  "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5",
+  "schemeSha256": "c825e4972bfd2367fe4de743cdd85bb3e7670434bd5f1980974652c807c6a7a7",
+  "questions": [
+    {
+      "n": "1",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        6
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "cardId": "econ-2019-hl-sa-q1-a",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "b",
+          "marks": 10,
+          "cardId": "econ-2019-hl-sa-q1-b",
+          "topicId": "economics-1-1"
+        }
+      ],
+      "boundaryReason": "a 6 (3 + 3) the equi-marginal principle. b 10 MU of the 7th orange = 5 utils (the working is printed as fractions; hidden crop).",
+      "canonicalNodeIds": [
+        "economics-1-1"
+      ],
+      "topicReason": "The equi-marginal principle of consumer behaviour is The Consumer (1-1)."
+    },
+    {
+      "n": "2",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        6
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 16,
+          "cardId": "econ-2019-hl-sa-q2",
+          "topicId": "economics-2-1"
+        }
+      ],
+      "boundaryReason": "Four TRUE/FALSE ticks at 4 @ 4, one card with a row per statement (completed table hidden until reveal).",
+      "canonicalNodeIds": [
+        "economics-2-1"
+      ],
+      "topicReason": "Derived demand for labour, the Live Register, cyclical unemployment and the backward-bending labour supply curve are The Labour Market (2-1)."
+    },
+    {
+      "n": "3",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        6
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 16,
+          "cardId": "econ-2019-hl-sa-q3",
+          "topicId": "economics-4-0"
+        }
+      ],
+      "boundaryReason": "2 @ 8 graded: economic development and economic growth, two required headings at 8.",
+      "canonicalNodeIds": [
+        "economics-4-0"
+      ],
+      "topicReason": "Development against growth is Growth & Development (4-0)."
+    },
+    {
+      "n": "4",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 16,
+          "cardId": "econ-2019-hl-sa-q4",
+          "topicId": "economics-0-0"
+        }
+      ],
+      "boundaryReason": "2 @ 8: any two of the scheme’s six headed contributions. The (i)/(ii) are ruled answer slots, not parts.",
+      "canonicalNodeIds": [
+        "economics-0-0"
+      ],
+      "topicReason": "The contributions of an economist to economic thought are Economics as a Way of Thinking (0-0)."
+    },
+    {
+      "n": "5",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "tasks": [
+        {
+          "key": "i",
+          "marks": 8,
+          "cardId": "econ-2019-hl-sa-q5-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "ii",
+          "marks": 3,
+          "cardId": "econ-2019-hl-sa-q5-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "iii",
+          "marks": 5,
+          "cardId": "econ-2019-hl-sa-q5-iii",
+          "topicId": "economics-2-0"
+        }
+      ],
+      "boundaryReason": "i 4 @ 2 the four labels; ii 3 @ 1 P1, C1, Q1; iii 2 (normal profit only) + 3 (AR = AC). 16.",
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "topicReason": "Long-run equilibrium in imperfect competition is Market Structures (2-0)."
+    },
+    {
+      "n": "6",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        8
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 17,
+          "cardId": "econ-2019-hl-sa-q6",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "boundaryReason": "One cell 11 + 6 beside the two definitions without naming which earns which: one card, unpriced rows.",
+      "canonicalNodeIds": [
+        "economics-4-2"
+      ],
+      "topicReason": "A free trade area against a customs union is International Trade & Competitiveness (4-2)."
+    },
+    {
+      "n": "7",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        8
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 9,
+          "cardId": "econ-2019-hl-sa-q7-a",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b",
+          "marks": 8,
+          "cardId": "econ-2019-hl-sa-q7-b",
+          "topicId": "economics-3-1"
+        }
+      ],
+      "boundaryReason": "a 5 + 4 beside the two ticks (70% debt-to-GDP, 6% unemployment) without naming which earns which: one card for (a)(i)-(ii), unpriced rows. b 4 + 4 one trend explanation per indicator.",
+      "canonicalNodeIds": [
+        "economics-3-1"
+      ],
+      "topicReason": "The debt-to-GDP ratio and the unemployment rate as indicators of the economy’s position are read here as Fiscal Policy & the Budget (3-1)."
+    },
+    {
+      "n": "8",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        8
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 17,
+          "cardId": "econ-2019-hl-sa-q8",
+          "topicId": "economics-3-1"
+        }
+      ],
+      "boundaryReason": "Advantages 1 @ 9 then 1 @ 4 (graded) from five headings; disadvantage 4 from two. 17. The (i)/(ii) are ruled answer slots.",
+      "canonicalNodeIds": [
+        "economics-3-1"
+      ],
+      "topicReason": "Raising the threshold for the higher income tax rate is Fiscal Policy & the Budget (3-1)."
+    },
+    {
+      "n": "9",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 13,
+          "cardId": "econ-2019-hl-sa-q9-a",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "b",
+          "marks": 4,
+          "cardId": "econ-2019-hl-sa-q9-b",
+          "topicId": "economics-2-1"
+        }
+      ],
+      "boundaryReason": "a 1 @ 9 then 1 @ 4 (graded) from six headings; b 4 one measure from seven. 17. The (i)/(ii) are ruled answer slots.",
+      "canonicalNodeIds": [
+        "economics-2-1",
+        "economics-3-1"
+      ],
+      "topicReason": "Older workers, the labour force and extended working lives are The Labour Market (2-1); the scheme’s reasons include income tax revenue and pension spending, so the question is also Fiscal Policy & the Budget (3-1)."
+    },
+    {
+      "n": "B1",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 10,
+          "cardId": "econ-2019-hl-sb-q1-a-i",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 15,
+          "cardId": "econ-2019-hl-sb-q1-a-ii",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 10,
+          "cardId": "econ-2019-hl-sb-q1-b-i",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 10,
+          "cardId": "econ-2019-hl-sb-q1-b-ii",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "b/iii",
+          "marks": 10,
+          "cardId": "econ-2019-hl-sb-q1-b-iii",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "c/i",
+          "marks": 12,
+          "cardId": "econ-2019-hl-sb-q1-c-i",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/ii",
+          "marks": 8,
+          "cardId": "econ-2019-hl-sb-q1-c-ii",
+          "topicId": "economics-1-3"
+        }
+      ],
+      "boundaryReason": "Seven tasks totalling 75. a(i) 5 + 5 the two definitions; a(ii) 3 @ 5 (2 + 3) from six bullets. b(i)-(iii) each diagram 5 (D1, S1, S2, price, quantity at 1 each) + explanation 5 (the reason 2, shift, price and quantity 1 each); hidden solution diagrams. c(i) 12 graded off the printed diagram; c(ii) 2 x 4 (2 + 2) from six.",
+      "canonicalNodeIds": [
+        "economics-1-1",
+        "economics-1-0",
+        "economics-1-3"
+      ],
+      "topicReason": "Individual and market demand are The Consumer (1-1); shifts in market equilibrium are The Market Economy (1-0); rent control as a price ceiling is Government Intervention (1-3)."
+    },
+    {
+      "n": "B2",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        14,
+        15,
+        16
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 15,
+          "cardId": "econ-2019-hl-sb-q2-a-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 5,
+          "cardId": "econ-2019-hl-sb-q2-a-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/i",
+          "marks": 20,
+          "cardId": "econ-2019-hl-sb-q2-b-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 10,
+          "cardId": "econ-2019-hl-sb-q2-b-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c/i",
+          "marks": 17,
+          "cardId": "econ-2019-hl-sb-q2-c-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c/ii",
+          "marks": 8,
+          "cardId": "econ-2019-hl-sb-q2-c-ii",
+          "topicId": "economics-1-3"
+        }
+      ],
+      "boundaryReason": "Six tasks totalling 75. a(i) 3 @ 5 (2 + 3) from five; a(ii) 5 graded. b(i) diagram 11 (11 @ 1) + explanation 9 (9 @ 1, the nine printed bullets); hidden solution diagram. b(ii) 5 + 5 (2 + 3) monopoly and perfect competition. c(i) 1 @ 9 then 2 @ 4 from six, an example required in each; c(ii) 2 x 4 from four.",
+      "canonicalNodeIds": [
+        "economics-2-0",
+        "economics-1-3"
+      ],
+      "topicReason": "Monopoly, price discrimination and large-scale firms are Market Structures (2-0); regulation of anti-competitive behaviour is Government Intervention (1-3)."
+    },
+    {
+      "n": "B3",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        17,
+        18,
+        19
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 5,
+          "cardId": "econ-2019-hl-sb-q3-a-i",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "a/ii",
+          "marks": 20,
+          "cardId": "econ-2019-hl-sb-q3-a-ii",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "b/i",
+          "marks": 10,
+          "cardId": "econ-2019-hl-sb-q3-b-i",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "b/ii",
+          "marks": 16,
+          "cardId": "econ-2019-hl-sb-q3-b-ii",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "b/iii",
+          "marks": 4,
+          "cardId": "econ-2019-hl-sb-q3-b-iii",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "c/i",
+          "marks": 16,
+          "cardId": "econ-2019-hl-sb-q3-c-i",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "c/ii",
+          "marks": 4,
+          "cardId": "econ-2019-hl-sb-q3-c-ii",
+          "topicId": "economics-1-4"
+        }
+      ],
+      "boundaryReason": "Seven tasks totalling 75. a(i) 5; a(ii) 2 @ 6 then 2 @ 4 from eight, an example required in each. b(i) 5 + 5 (2 + 3) for each consumer group; b(ii) diagrams 2 @ 6 (2 + 2 + 2) + explanations 2 + 2 (hidden solution diagrams); b(iii) 2 @ 2. c(i) calculation 12 (CED +2.43, working printed as fractions, hidden crop) + explanation 4 graded; c(ii) 4 graded.",
+      "canonicalNodeIds": [
+        "economics-1-4"
+      ],
+      "topicReason": "Price, cross and the uses of elasticity are Elasticity (1-4)."
+    },
+    {
+      "n": "B4",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        20,
+        21,
+        22
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 20,
+          "cardId": "econ-2019-hl-sb-q4-a-i",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "a/ii",
+          "marks": 10,
+          "cardId": "econ-2019-hl-sb-q4-a-ii",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 7,
+          "cardId": "econ-2019-hl-sb-q4-b-i",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b/ii",
+          "marks": 6,
+          "cardId": "econ-2019-hl-sb-q4-b-ii",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b/iii",
+          "marks": 3,
+          "cardId": "econ-2019-hl-sb-q4-b-iii",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b/iv",
+          "marks": 4,
+          "cardId": "econ-2019-hl-sb-q4-b-iv",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "c/i",
+          "marks": 15,
+          "cardId": "econ-2019-hl-sb-q4-c-i",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 10,
+          "cardId": "econ-2019-hl-sb-q4-c-ii",
+          "topicId": "economics-2-1"
+        }
+      ],
+      "boundaryReason": "Eight tasks totalling 75. a(i) any two of three pairs: the scheme prices four definitions 2 @ 6 and 2 @ 4 without tying either price to a pair or term: one menu of its six definitions, claim 4, steps 6, 6, 4, 4 (the 2021 HL Q12(a)(ii) layout); a(ii) 2 @ 5 (2 + 3) from six. b(i) 7 ATC 400; b(ii) 6 TC 900; b(iii) 3 MC 450; b(iv) 4 two units (MC = MR = 100). c(i) 3 @ 5 (2 + 3) from six; c(ii) 2 @ 5 (2 + 3) from six.",
+      "canonicalNodeIds": [
+        "economics-1-5",
+        "economics-2-1"
+      ],
+      "topicReason": "Average and marginal cost and the cost table are Costs of Production, Revenue & Profit (1-5); the marginal revenue product of labour and skills shortages are The Labour Market (2-1)."
+    },
+    {
+      "n": "B5",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 10,
+          "cardId": "econ-2019-hl-sb-q5-a-i",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "a/ii",
+          "marks": 20,
+          "cardId": "econ-2019-hl-sb-q5-a-ii",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "b",
+          "marks": 20,
+          "cardId": "econ-2019-hl-sb-q5-b",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "c/i",
+          "marks": 6,
+          "cardId": "econ-2019-hl-sb-q5-c-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 7,
+          "cardId": "econ-2019-hl-sb-q5-c-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/iii",
+          "marks": 12,
+          "cardId": "econ-2019-hl-sb-q5-c-iii",
+          "topicId": "economics-3-1"
+        }
+      ],
+      "boundaryReason": "Six tasks totalling 75. a(i) 2 @ 5 (2 + 3) from seven; a(ii) 4 @ 5 (2 + 3) beside the four printed lists (advantages and disadvantages, for the banking industry and for consumers), the four heads the ask names: one heading row each at 5. b 4 @ 4 (2 + 2) from six, + 4 printed beneath it beside the scheme’s note that answers must be linked to the current economic climate. c(i) 6; c(ii) 7; c(iii) 2 @ 6 (3 + 3) from five.",
+      "canonicalNodeIds": [
+        "economics-3-4",
+        "economics-3-3",
+        "economics-3-1"
+      ],
+      "topicReason": "Money and electronic money are Financial Sector (3-4); the ECB interest rate is Monetary Policy & Inflation (3-3); the budget surplus, the national debt and government objectives are Fiscal Policy & the Budget (3-1)."
+    },
+    {
+      "n": "B6",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        27,
+        28,
+        29
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 8,
+          "cardId": "econ-2019-hl-sb-q6-a-i",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "a/ii",
+          "marks": 8,
+          "cardId": "econ-2019-hl-sb-q6-a-ii",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "a/iii",
+          "marks": 9,
+          "cardId": "econ-2019-hl-sb-q6-a-iii",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "b/i",
+          "marks": 10,
+          "cardId": "econ-2019-hl-sb-q6-b-i",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "b/ii",
+          "marks": 12,
+          "cardId": "econ-2019-hl-sb-q6-b-ii",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "b/iii",
+          "marks": 8,
+          "cardId": "econ-2019-hl-sb-q6-b-iii",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "c",
+          "marks": 20,
+          "cardId": "econ-2019-hl-sb-q6-c",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "boundaryReason": "Seven tasks totalling 75. a(i) 8 graded over seven printed steps (unpriced rows); a(ii) 2 @ 4 nominal and real wage; a(iii) 9 graded over the three printed answers (unpriced rows). b(i) 5 + 5 (2 + 3) demand-pull and cost-push; b(ii) 3 @ 4 (2 + 2) from seven; b(iii) 8 graded over four printed steps (unpriced rows). c 4 @ 5 (2 + 3) from eight.",
+      "canonicalNodeIds": [
+        "economics-3-3",
+        "economics-4-2"
+      ],
+      "topicReason": "Price indices, real wages, inflation and deflation are Monetary Policy & Inflation (3-3); international competitiveness is International Trade & Competitiveness (4-2)."
+    },
+    {
+      "n": "B7",
+      "paperPages": [
+        10
+      ],
+      "schemePages": [
+        30,
+        31,
+        32
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 14,
+          "cardId": "econ-2019-hl-sb-q7-a-i",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 16,
+          "cardId": "econ-2019-hl-sb-q7-a-ii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b/i",
+          "marks": 5,
+          "cardId": "econ-2019-hl-sb-q7-b-i",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 5,
+          "cardId": "econ-2019-hl-sb-q7-b-ii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b/iii",
+          "marks": 9,
+          "cardId": "econ-2019-hl-sb-q7-b-iii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b/iv",
+          "marks": 6,
+          "cardId": "econ-2019-hl-sb-q7-b-iv",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "c/i",
+          "marks": 5,
+          "cardId": "econ-2019-hl-sb-q7-c-i",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "c/ii",
+          "marks": 15,
+          "cardId": "econ-2019-hl-sb-q7-c-ii",
+          "topicId": "economics-3-0"
+        }
+      ],
+      "boundaryReason": "Eight tasks totalling 75. a(i) 2 @ 7 graded from five; a(ii) 2 @ 8 graded from nine. b(i) 5; b(ii) 5 MPS 0.4; b(iii) calculation 5 (multiplier 1.25, printed as fractions, hidden crop) + explanation 4; b(iv) 6 €40bn. c(i) 5; c(ii) 3 @ 5 (2 + 3) from five.",
+      "canonicalNodeIds": [
+        "economics-3-0"
+      ],
+      "topicReason": "National income statistics, the multiplier and the shadow economy are National Income (3-0)."
+    },
+    {
+      "n": "B8",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        33,
+        34,
+        35
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 10,
+          "cardId": "econ-2019-hl-sb-q8-a-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 15,
+          "cardId": "econ-2019-hl-sb-q8-a-ii-yes",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 15,
+          "cardId": "econ-2019-hl-sb-q8-a-ii-no",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 15,
+          "cardId": "econ-2019-hl-sb-q8-b-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/ii",
+          "marks": 15,
+          "cardId": "econ-2019-hl-sb-q8-b-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/i",
+          "marks": 6,
+          "cardId": "econ-2019-hl-sb-q8-c-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 14,
+          "cardId": "econ-2019-hl-sb-q8-c-ii",
+          "topicId": "economics-3-1"
+        }
+      ],
+      "boundaryReason": "Seven routes; 75 with the (a)(ii) stance counted once. a(i) 5 + 5 (4 + 1) each tax with an example; a(ii) 3 @ 5 (2 + 3): the scheme credits YES and NO with different lists, so two stance routes. b(i) 3 @ 5 (2 + 3) from five; b(ii) 3 @ 5 (2 + 3) from four. c(i) 6 graded; c(ii) 2 @ 7 (4 + 3) from eight.",
+      "canonicalNodeIds": [
+        "economics-3-1"
+      ],
+      "topicReason": "Progressive and regressive taxes, carbon tax, overspending, corporation tax and a just social policy are Fiscal Policy & the Budget (3-1)."
+    }
+  ],
+  "selections": [
+    {
+      "page": 1,
+      "text": "Answer four questions.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section B); every printed task stays in the census."
+    },
+    {
+      "page": 1,
+      "text": "Answer six of the nine short response type questions in the spaces provided.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section A); every printed task stays in the census."
+    },
+    {
+      "page": 1,
+      "text": "Answer six questions from Section A and four questions from Section B.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; every printed task stays in the census."
+    },
+    {
+      "page": 2,
+      "text": "2. Indicate by means of a tick () whether each of the following statements is TRUE or FALSE.",
+      "classification": "answer-classification",
+      "reason": "Section A Q2 four objective ticks; one card, a row per statement at 4."
+    },
+    {
+      "page": 2,
+      "text": "Answer six of the nine short response type questions in the spaces provided.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section A); every printed task stays in the census."
+    },
+    {
+      "page": 3,
+      "text": "(iii) State whether or not the firm is earning supernormal profits. Give a reason for your",
+      "classification": "answer-classification",
+      "reason": "Section A Q5(iii) the scheme’s answer is normal profit only (2) with its reason (3); one card."
+    },
+    {
+      "page": 5,
+      "text": "(b) Suggest one measure which the government or firms could take to support extended",
+      "classification": "not-a-task-selection",
+      "reason": "Section A Q9(b) \"government or firms\" names who may act, not a choice of routes; one menu."
+    },
+    {
+      "page": 6,
+      "text": "Answer four questions.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section B); every printed task stays in the census."
+    },
+    {
+      "page": 7,
+      "text": "(ii) Outline four factors that affect the PED for a good or service, providing examples",
+      "classification": "not-a-task-selection",
+      "reason": "Section B Q3(a)(ii) \"four factors\": a count, read by the DIRECTIVE pattern on \"four\"; one menu."
+    },
+    {
+      "page": 8,
+      "text": "(ii) Outline measures which the government and / or firms could take to address",
+      "classification": "not-a-task-selection",
+      "reason": "Section B Q4(c)(ii) \"government and / or firms\" names who may act; one menu."
+    },
+    {
+      "page": 8,
+      "text": "4. (a) (i) In the case of any two of the following three pairs, distinguish between the",
+      "classification": "finite-route",
+      "reason": "Section B Q4(a)(i) any two of three pairs: one card, the six definitions as one menu claimed four times at 6, 6, 4, 4."
+    },
+    {
+      "page": 11,
+      "text": "(i) One of the government’s objectives is to achieve a just social policy.",
+      "classification": "not-a-task-selection",
+      "reason": "Section B Q8(c)(i) stimulus, read on \"one of\"; not a selection."
+    },
+    {
+      "page": 11,
+      "text": "(ii) Ireland’s corporation tax rate of 12.5% is one of the lowest in the EU.",
+      "classification": "not-a-task-selection",
+      "reason": "Section B Q8(b)(ii) stimulus, read on \"one of\"; not a selection."
+    },
+    {
+      "page": 11,
+      "text": "(ii) Outline measures which the government and/or firms could consider to address",
+      "classification": "not-a-task-selection",
+      "reason": "Section B Q8(c)(ii) \"government and/or firms\" names who may act; one menu."
+    },
+    {
+      "page": 12,
+      "text": "There is no examination material on this page",
+      "classification": "not-a-task-selection",
+      "reason": "Blank back page."
+    }
+  ],
+  "reviewNote": "Review 2026-11-04 from a paired visual sweep of all 12 paper and 36 scheme pages (scheme pages 1-5 are the cover, notes, index and the Summary of Mark Allocations, which agrees with every tariff here; paper page 12 is blank). The old-syllabus paper: Section A nine short questions (answer six), Section B eight long questions (answer four) numbered 1-8 again, keyed B1-B8 as the Atlas numbers them. 70 routes (14 Section A + 56 Section B), 15 raw directive lines classified. Every stem and ask is sliced from the paper and every marking point from the scheme (econ_2019_hl.py). Choose-N rule checked: Section B Q4(a)(i) \"any two of the following three pairs\" is one card; Q8(a)(ii) is two stance routes because the scheme credits each side with its own list.",
+  "externalClarifications": [],
+  "curriculumSource": "https://www.curriculumonline.ie/getmedia/3342d8a2-1e22-4f17-b82b-a8134fe16eb3/LCEconomics_0219_EN.pdf",
+  "curriculumNote": "Sat on the outgoing syllabus. Its questions are filed under the Economics Topic Atlas taxonomy the Atlas uses for every sitting 2010-2026, whose canonical nodes are those of the 2019 specification; no Syllabus X-Ray link is claimed."
+}

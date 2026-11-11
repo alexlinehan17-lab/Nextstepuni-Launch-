@@ -49,6 +49,8 @@ import unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import paper as PP  # noqa: E402
 from strip_pages import strip_cut, strip_lines  # noqa: E402
+from econ_legacy_census import LEGACY_LAST_YEAR as ECON_LEGACY_LAST_YEAR  # noqa: E402
+from econ_legacy_census import census_legacy as census_econ_legacy  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
@@ -600,6 +602,10 @@ SHORT_ASKS = {
                                                    'genetics:"'),
     ('biology', 2013, 'ol', 'Q11(a)(ii)'): ('Niche.', 'p9: the term "Niche." under "Explain the following terms as '
                                                      'used in ecology:"'),
+    ('economics', 2010, 'ol', 'Section A Q1(i)'): ('IMF', 'p2: the initials "IMF" under "What economic institutions '
+                                                          'do the following initials stand for?"'),
+    ('economics', 2014, 'ol', 'Section B Q6(a)(ii)'): ('Money;', 'p8: the term "Money;" under "(a) Explain the '
+                                                                 'following terms:"'),
 }
 
 
@@ -607,6 +613,29 @@ def short_ask_ok(subject, year, level, flag):
     """An empty-leaf flag on a printed ask recorded in SHORT_ASKS, read as recorded."""
     entry = SHORT_ASKS.get((subject, year, level, flag.get('where')))
     return bool(entry) and flag.get('type') == 'empty-leaf' and flag.get('detail') == f'extracted text: {entry[0]!r}'
+
+
+# Parts the paper prints COMPLETED for the candidate, as the worked example of
+# the ask beside them. The page numbers them like any part, so the reader keys
+# them, but nothing is asked: they are printed matter, not asks, and a leaf the
+# candidate cannot answer is not in the denominator. Each was rendered and read
+# on its page, and on its scheme page, which prices the ask and not the example.
+# Keyed (subject, year, level, census label) -> (the exact text the census
+# extracts, the evidence). The leaf stands down only while the reader extracts
+# exactly that text; a change in what it reads puts the leaf back and flags it.
+PRINTED_EXAMPLES = {
+    ('economics', 2024, 'hl', 'Q10(a)(i)'): (
+        '= Gross National Product (GNP) at Current Market Prices Ans: €325 bn Relationships / Workings:',
+        'paper p12: (a) reads "use the information above to calculate part (ii). Part (i) has been '
+        'completed for you." and the ladder prints (i) worked to "Ans: €325 bn"; scheme p14 prices (a) '
+        'at 6 for the (ii) calculation (GNI €326.5 bn) and nothing for (i).'),
+}
+
+
+def printed_example(subject, year, level, key, texts):
+    """Is this leaf a part the paper completes for the candidate (PRINTED_EXAMPLES)?"""
+    entry = PRINTED_EXAMPLES.get((subject, year, level, key_label(key, subject)))
+    return bool(entry) and texts.get(key, '') == entry[0]
 
 
 def continuity_flags(parts, texts, subject=None, continuous=False):
@@ -1062,8 +1091,8 @@ def census_agri_legacy(year, level):
     return parts, dict(texts), [path]
 
 
-def census_merged(subject, year, level, component=None):
-    P = PP.Paper(subject, year, level, component=component)
+def census_merged(subject, year, level, component=None, *, files=None):
+    P = PP.Paper(subject, year, level, component=component, files=files)
     P._adopt_unlettered()
     texts = {k: (P.text(*k) or '') for k in P.parts}
     parts = complete_leading_romans(P.parts, texts, stem=P.stem)
@@ -3543,6 +3572,7 @@ def census_subject(subject):
         for label, comp in units:
             marks = None
             cover = None
+            legacy_flags = []
             try:
                 if cfg.get('walker') == 'history':
                     parts, texts, files, marks, cover = census_history(
@@ -3603,17 +3633,34 @@ def census_subject(subject):
                     parts, texts, files = census_sections(subject, year, level)
                 elif subject == 'agricultural-science' and year <= AGRI_LEGACY_LAST_YEAR:
                     parts, texts, files = census_agri_legacy(year, level)
+                elif subject == 'economics' and year <= ECON_LEGACY_LAST_YEAR:
+                    # The old-syllabus paper restarts Section B at Question 1
+                    # (econ_legacy_census.py); its own marks checks come back
+                    # with it, and its printed marks feed the checksum below.
+                    parts, texts, files, marks, legacy_flags = census_econ_legacy(year, level)
                 else:
                     parts, texts, files = census_merged(subject, year, level, comp)
             except Exception as e:                       # noqa: BLE001
                 papers.append({'year': year, 'level': level, 'paper': label,
                                'error': f'{type(e).__name__}: {e}'})
                 continue
-            leaves = leaves_of(parts)
+            leaves = [k for k in leaves_of(parts)
+                      if not printed_example(subject, year, level, k, texts)]
             flags = continuity_flags(
                 parts, texts, subject,
                 continuous=cfg.get('numbering') == 'continuous')
             flags = [f for f in flags if not short_ask_ok(subject, year, level, f)]
+            flags += legacy_flags
+            for (s_, y_, l_, where), (want, _evidence) in PRINTED_EXAMPLES.items():
+                if (s_, y_, l_) == (subject, year, level) and not any(
+                        key_label(k, subject) == where and texts.get(k, '') == want for k in parts):
+                    flags.append({'type': 'printed-example', 'where': where,
+                                  'detail': 'recorded as printed matter, but the reader no longer '
+                                            'extracts the recorded text: read the page again'})
+            # The old-syllabus Economics paper is its own kind (748 printed
+            # marks over nine short and eight long questions); the checksum
+            # compares it with its own era, never with the 2021 paper.
+            era = 'old-syllabus' if subject == 'economics' and year <= ECON_LEGACY_LAST_YEAR else None
             if cfg.get('walker') == 'history':
                 # A History paper is almost entirely CHOICE: eleven topics are
                 # printed and a candidate answers two. Adding up every printed
@@ -3777,21 +3824,22 @@ def census_subject(subject):
                 'marksSum': sum(marks.values()) if marks else None,
                 'marksQuestions': len(marks),
                 'flags': flags,
+                **({'era': era} if era else {}),
             })
     # The checksum: a paper's total does not change year to year, so the mode
     # is the expectation and a deviating year has lost or invented content.
     sums = collections.Counter()
     for p in papers:
         if p.get('marksSum'):
-            sums[(p['level'], p.get('paper'), p['marksSum'])] += 1
+            sums[(p['level'], p.get('paper'), p.get('era'), p['marksSum'])] += 1
     expected = {}
-    for (level, label, total), n in sums.items():
-        cur = expected.get((level, label))
+    for (level, label, era, total), n in sums.items():
+        cur = expected.get((level, label, era))
         if cur is None or n > cur[1]:
-            expected[(level, label)] = (total, n)
+            expected[(level, label, era)] = (total, n)
     for p in papers:
-        if p.get('marksSum') and expected.get((p['level'], p.get('paper'))):
-            want, n = expected[(p['level'], p.get('paper'))]
+        if p.get('marksSum') and expected.get((p['level'], p.get('paper'), p.get('era'))):
+            want, n = expected[(p['level'], p.get('paper'), p.get('era'))]
             # Two sittings that disagree name no expectation: Technology 2020
             # Higher prints 128 and 2021 Higher 64, and a tie flagged 2021.
             if n < 2:
@@ -3801,7 +3849,42 @@ def census_subject(subject):
                     'type': 'marks-checksum',
                     'where': f"{p['year']} {p['level']} {p.get('paper') or ''}",
                     'detail': f"marks sum {p['marksSum']}, other years say {want}"})
+    if subject == 'economics':
+        papers.extend(census_economics_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
+
+
+# The SEC's deferred Economics sittings in the archive: 2022 Higher only
+# (deferredexams/ and deferredmarkingschemes/ hold LC034ALP000EV for 2022 and no
+# other Economics paper for 2022-2025; no Ordinary).
+ECON_DEFERRED_PAPERS = ((2022, 'hl', 'LC034ALP000EV'),)
+
+
+def census_economics_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    Economics' deferred sitting (ECON_DEFERRED_PAPERS) is a paper of its own,
+    keyed 'Deferred' as Physics and Home Economics key theirs (codex/home-
+    economics-continuation-20261101, census_physics_deferred) and History keys
+    its own (census_history_deferred), so a deferred ask never lands on a June
+    leaf with the same address. The checksum is not run on it.
+    """
+    papers = []
+    for year, level, fileid in ECON_DEFERRED_PAPERS:
+        pdf = os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year), f'{fileid}.pdf')
+        parts, texts, _ = census_merged('economics', year, level, files=[pdf])
+        leaves = [k for k in leaves_of(parts)
+                  if not printed_example('economics', year, level, k, texts)]
+        flags = [f for f in continuity_flags(parts, texts, 'economics')
+                 if not short_ask_ok('economics', year, level, f)]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'economics'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
 
 
 def report(result):
