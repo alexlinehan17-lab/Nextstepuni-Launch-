@@ -841,7 +841,9 @@ for (const reviewedFoundation of papers.filter(p => p.hasReviewedFoundationTasks
         if (!parts.length) throw new Error('Unreviewed Foundation listening question: ' + question.n);
         question.reviewedSchemePages = [...new Set(parts.flatMap(c => c.schemePages))].sort((a,b) => a-b);
         question.anchor.paperRegion = [...new Set(parts.flatMap(c => c.sourceMaterial.pages))].sort((a,b) => a-b).map(p => ({ p, r: [0,0,1,1] }));
-        question.audioMaterial = { ...parts[0].audioMaterial, label: 'Cluastuiscint · Ceist ' + question.n };
+        // 2010 has no published Foundation recording: its parts carry none, so its questions get none either
+        // (a label alone rendered an empty player).
+        if (parts[0].audioMaterial) question.audioMaterial = { ...parts[0].audioMaterial, label: 'Cluastuiscint · Ceist ' + question.n };
       }
       if (!question.reviewedSchemePages) throw new Error('Unreviewed Foundation aural scheme: ' + question.n);
     }

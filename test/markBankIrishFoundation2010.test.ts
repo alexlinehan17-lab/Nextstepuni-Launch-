@@ -1,5 +1,5 @@
 import {describe,expect,it} from 'vitest';
-import {existsSync,readFileSync} from 'node:fs';
+import {readFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import written from '../components/MarkBank/cards/irish/foundation-2010-authored.json';
 import aural from '../components/MarkBank/cards/irish/foundation-2010-aural-authored.json';
@@ -161,7 +161,8 @@ describe('2010 Foundation written paper and listening paper (no official recordi
       expect(t.paperRegion.map((r:{p:number})=>r.p)).toEqual(c.sourceMaterial.pages);
       expect((t.schemeRegion??t.region).map((r:{p:number})=>r.p)).toEqual([2]);expect(t.audioMaterial).toBeUndefined();
     }
-    for(let n=1;n<=12;n++)expect(a.q.find((q:{n:string})=>q.n===String(n)),String(n)).toBeDefined();
+    // No recording exists, so no printed question carries an audio player (a label alone rendered an empty one).
+    for(let n=1;n<=12;n++){const p=a.q.find((q:{n:string})=>q.n===String(n));expect(p,String(n)).toBeDefined();expect(p.audioMaterial,String(n)).toBeUndefined();}
   });
   it('rejects unknown or stale raw directives across both 2010 papers',()=>{
     const result=execFileSync('python3',['-c',String.raw`
