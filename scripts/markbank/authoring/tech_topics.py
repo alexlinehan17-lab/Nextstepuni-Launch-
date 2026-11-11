@@ -375,6 +375,15 @@ TOPIC_OVERRIDES = {
     'tech-2010-hl-b2d': 'tech-core-materials',     # spheres of sustainability, waste
     'tech-2010-hl-b3a': 'tech-core-design',        # designing for car safety
     'tech-2010-hl-b3d': 'tech-core-materials',     # helmet shell and lining materials
+    # 2010 Ordinary.
+    'tech-2010-ol-a1': 'tech-core-materials',      # solder, soldering safety
+    'tech-2010-ol-a5': 'tech-core-design',         # research and investigation
+    'tech-2010-ol-a9': 'tech-core-graphics',       # 3D sketch of the socket
+    'tech-2010-ol-b2a': 'tech-core-materials',     # the buggy body's material and process
+    'tech-2010-ol-b2c': 'tech-core-ict',           # sketches into an electronic portfolio
+    'tech-2010-ol-b3a': 'tech-core-materials',     # processes for the acrylic holder
+    'tech-2010-ol-b3b': 'tech-core-materials',     # making the side, template, adhesive
+    'tech-2010-ol-b3c': 'tech-core-design',        # scale model, work breakdown structure
 }
 
 ALL_TOPICS = [t for t, _ in CORE] + [OPTION_TOPIC[i] for i in sorted(OPTION_TOPIC)]

@@ -1829,6 +1829,9 @@ LISTED_STEPS = {
     (2011, 'ol', 'A', 10, None, None),
     # Q6, scheme page 5: each graphic's class and example, one per line.
     (2011, 'ol', 'A', 6, None, None),
+    # 2010 Ordinary Q9, scheme page 6: the sketch's four criteria, each with
+    # its printed price ("Parallel lines- 2 marks").
+    (2010, 'ol', 'A', 9, None, None),
 }
 
 # Scheme lines that reuse the ask's own words and are nonetheless a marking
@@ -3210,6 +3213,33 @@ MD_LINE_FIX[(2010, 'hl')] = [
     # (i), so 4(d) is carded whole at 14 and its crop shows the (4+4 marks).
     (r'^\(4\+4 marks\)$', ''),
 ]
+MD_LINE_FIX[(2010, 'ol')] = [
+    # Answers wrapped onto a second line the reader takes as a new point:
+    # Q1(ii)'s "...Eye protection," / "Clamp work etc."; Q10's "...stronger
+    # than leather," / "Foam blown polyurethane..."; 2(c)(ii)'s "...Parametric"
+    # / "CAD, ..."; 3(a)(i)'s "...Filing," / "Polishing etc."; Option 1(b)(ii)'s
+    # "...CNC Router" / "etc.". Each joined, in order.
+    (r'^(2\. Place iron in stand when not in use, Eye protection,)$', '\\1 Clamp work etc.'),
+    (r'^Clamp work etc\.$', ''),
+    (r'^(1\. Modern materials Kevlar\u2013 stronger than leather,)$',
+     '\\1 Foam blown polyurethane for cushioning etc.'),
+    (r'^Foam blown polyurethane for cushioning etc\.$', ''),
+    (r'^(Software in the following areas: Word processing, publishing, spreadsheets, Parametric)$',
+     '\\1 CAD, Gantt charts, Electronic simulation etc.'),
+    (r'^CAD, Gantt charts, Electronic simulation etc\.$', ''),
+    (r'^(Measuring, Marking Out, Cutting, Drilling, Filing,)$', '\\1 Polishing etc.'),
+    (r'^Polishing etc\.$', ''),
+    (r'^(Cartesian Robot: Three prismatic joints, XYZ co ordinates, pick and place, CNC Router)$',
+     '\\1 etc.'),
+    (r'^etc\.$', ''),
+    # The scheme's own reprints of the asks, worded apart from the paper:
+    # 2(b)(ii)'s second sentence ("the" dropped); Option 3(b)(ii)'s address;
+    # Option 5(d)(ii)'s "Discuss one example..." for the paper's "Give one".
+    (r'^Include the green and red LEDs in your circuit diagram\.$', ''),
+    (r'^darraghm@gmail\.com$', ''),
+    (r'^Discuss one example of each of the methods of corrosion prevention mentioned$', ''),
+    (r'^above\.$', ''),
+]
 MD_LINE_FIX[(2014, 'hl')] = [
     # 1(a)(ii): two columns of notes welded line by line; each column's
     # words, in order, on a line of its own.
@@ -4501,6 +4531,123 @@ LABEL_ZONES.setdefault((2010, 'hl'), []).extend([
     (24, (440, 613, 541, 754)),
 ])
 
+# 2010 Ordinary. PAPER pictures each stem or ask points at, each rect
+# rendered at 150 dpi and looked at.
+BY_EYE.update({
+    'technology-2010-OL-paper-secA-q1-art': ('014', 1, (438, 70, 526, 276)),
+    'technology-2010-OL-paper-secA-q2-art': ('014', 1, (165, 353, 422, 397)),
+    'technology-2010-OL-paper-secA-q3-art': ('014', 1, (366, 566, 524, 767)),
+    'technology-2010-OL-paper-secA-q4-art': ('014', 2, (328, 67, 528, 199)),
+    'technology-2010-OL-paper-secA-q6-art': ('014', 2, (76, 578, 522, 782)),
+    'technology-2010-OL-paper-secA-q7-art': ('014', 3, (73, 152, 213, 270)),
+    'technology-2010-OL-paper-secA-q8-art': ('014', 3, (352, 302, 529, 441)),
+    'technology-2010-OL-paper-secA-q9-art': ('014', 3, (75, 603, 219, 747)),
+    'technology-2010-OL-paper-secA-q10-art': ('014', 4, (336, 64, 534, 205)),
+    'technology-2010-OL-paper-secA-q11-art': ('014', 4, (359, 322, 531, 474)),
+    'technology-2010-OL-paper-secA-q12-art': ('014', 4, (198, 590, 380, 760)),
+    'technology-2010-OL-paper-secB-q2a-art': ('015', 1, (366, 87, 560, 272)),
+    'technology-2010-OL-paper-secB-q2d-art': ('015', 1, (39, 650, 211, 770)),
+    'technology-2010-OL-paper-secB-q3a-art': ('015', 2, (382, 77, 560, 263)),
+    'technology-2010-OL-paper-secB-q3d-art': ('015', 2, (218, 729, 411, 789)),
+    'technology-2010-OL-paper-secC-q1a-art': ('015', 3, (46, 115, 172, 201)),
+    'technology-2010-OL-paper-secC-q1b-art': ('015', 3, (36, 343, 154, 459)),
+    'technology-2010-OL-paper-secC-q1c-art': ('015', 3, (140, 594, 432, 665)),
+    'technology-2010-OL-paper-secC-q1d-art': ('015', 3, (429, 659, 543, 808)),
+    'technology-2010-OL-paper-secC-q2a-art': ('015', 4, (476, 67, 543, 222)),
+    'technology-2010-OL-paper-secC-q2b-art': ('015', 4, (63, 265, 315, 458)),
+    'technology-2010-OL-paper-secC-q2c-art': ('015', 4, (414, 481, 553, 619)),
+    'technology-2010-OL-paper-secC-q2d-art': ('015', 4, (418, 702, 543, 789)),
+    'technology-2010-OL-paper-secC-q3a-art': ('015', 5, (98, 53, 205, 163)),
+    'technology-2010-OL-paper-secC-q3b-art': ('015', 5, (228, 260, 543, 425)),
+    'technology-2010-OL-paper-secC-q3c-art': ('015', 5, (53, 469, 253, 630)),
+    'technology-2010-OL-paper-secC-q4a-art': ('015', 6, (79, 85, 186, 163)),
+    'technology-2010-OL-paper-secC-q4b-art': ('015', 6, (95, 201, 559, 452)),
+    'technology-2010-OL-paper-secC-q4d-art': ('015', 6, (69, 655, 241, 788)),
+    'technology-2010-OL-paper-secC-q5a-art': ('015', 7, (146, 135, 446, 270)),
+    'technology-2010-OL-paper-secC-q5b-art': ('015', 7, (423, 322, 543, 531)),
+    'technology-2010-OL-paper-secC-q5c-art': ('015', 7, (86, 584, 193, 678)),
+    'technology-2010-OL-paper-secC-q5d-art': ('015', 7, (467, 688, 555, 809)),
+})
+WHITEOUT.update({
+    # Q3: the ask's last word "energy" beside the motor; Q6: the two asks and
+    # their answer lines, set among the pictures; Option 3(b): the end of
+    # (iii)'s lines; Option 4(b): (i)-(iii)'s text between the products and
+    # the graph.
+    'technology-2010-OL-paper-secA-q3-art': [(366, 566, 412, 592)],
+    'technology-2010-OL-paper-secA-q6-art': [(246, 575, 522, 662), (76, 700, 265, 764), (76, 578, 84, 586)],
+    'technology-2010-OL-paper-secC-q3b-art': [(228, 286, 261, 336)],
+    'technology-2010-OL-paper-secC-q4b-art': [(95, 201, 322, 300), (95, 300, 559, 344), (305, 344, 559, 452)],
+})
+# 3(b)(i) asks how side A of 3(a)'s holder is made.
+FIGURE_SHARED.update({
+    'technology-2010-OL-paper-secB-q3b-art': 'technology-2010-OL-paper-secB-q3a-art',
+})
+SOLUTIONS.update({
+    'technology-2010-OL-scheme-secB-q2b': (9, (394, 295, 552, 465),
+        "The marking scheme's own sketches for 2010 OL Section B 2(b)(i) and "
+        '(ii), as the State Examinations Commission printed them: a typical LED'
+        ' with its lens, reflector, body, cathode (-) and anode (+) labelled; '
+        'and a circuit between 9V and 0V in which a two-way switch reverses the '
+        'supply to a motor, with two LEDs, set opposite ways round, and a 1K '
+        'resistor across the motor.'),
+    'technology-2010-OL-scheme-secB-q3c': (10, (135, 522, 472, 599),
+        "The marking scheme's own work breakdown structure for 2010 OL Section B "
+        '3(c)(ii), as the State Examinations Commission printed it: Design Sides '
+        'to Manufacture Sides, Design Shelves to Manufacture Shelves and Design '
+        'Back plate to Manufacture Back plate, all three leading to Assemble and '
+        'then Test.'),
+    'technology-2010-OL-scheme-secB-q3d': (10, (209, 700, 401, 761),
+        "The marking scheme's own cause and effect diagram for 2010 OL Section B "
+        '3(d)(ii), as the State Examinations Commission printed it: causes '
+        'Quality of Acrylic Edge, Human Error, Wrong Glue and Application Method '
+        'joined to a spine leading to Poor Glued Joint.'),
+    'technology-2010-OL-scheme-secC-q1a': (11, (462, 84, 554, 142),
+        "The marking scheme's own sketch for 2010 OL Section C 1(a)(i), as the "
+        'State Examinations Commission printed it: a PIC chip marked PICAXE-08, '
+        'an arrow labelled Pin No.1 pointing at the pin at one end of its top '
+        'row, and an arrow labelled Notch pointing at the notch in that end.'),
+    'technology-2010-OL-scheme-secC-q1b': (11, (100, 270, 236, 494),
+        "The marking scheme's own flowchart for 2010 OL Section C 1(b)(iii), as "
+        'the State Examinations Commission printed it: Start, then the decision '
+        'Foggy?; on Yes, Buzzer, Wait 5, Buzzer, Wait 2 and back up the left '
+        'side to above Foggy?; on No, Light, Wait 2, Light, Wait 1 and back up '
+        'the right side to the same point.'),
+    'technology-2010-OL-scheme-secC-q2a': (12, (406, 82, 468, 153),
+        "The marking scheme's own sketch for 2010 OL Section C 2(a)(i), as the "
+        'State Examinations Commission printed it: the transistor symbol with '
+        'its three leads labelled B, C and E.'),
+    'technology-2010-OL-scheme-secC-q2b': (12, (360, 312, 546, 440),
+        "The marking scheme's own redrawn circuit for 2010 OL Section C "
+        '2(b)(iii), as the State Examinations Commission printed it: the fan '
+        "circuit between 9V and 0V with the single transistor replaced by two "
+        'transistors joined as a Darlington pair.'),
+    'technology-2010-OL-scheme-secC-q5b': (15, (364, 410, 474, 470),
+        "The marking scheme's own sketch for 2010 OL Section C 5(b)(iii), as the "
+        'State Examinations Commission printed it: the plan of a step with a '
+        'double-headed arrow along its length, captioned Direction of wood '
+        'grain.'),
+})
+# B 2(b)'s and Option 1(a)'s crops sit over the ends of reprinted asks:
+# blanked in the image, and not zones, so the reprints stay whole in the .md;
+# 1(a)'s two labels are zoned on their own.
+SOLUTION_NOT_ZONE.update({
+    'technology-2010-OL-scheme-secB-q2b',
+    'technology-2010-OL-scheme-secC-q1a',
+})
+WHITEOUT.update({
+    'technology-2010-OL-scheme-secB-q2b': [(394, 300, 416, 322), (394, 345, 552, 368)],
+    'technology-2010-OL-scheme-secC-q1a': [(462, 84, 501, 99)],
+})
+LABEL_ZONES.setdefault((2010, 'ol'), []).extend([
+    (11, (501, 88, 528, 100)),    # Option 1(a): "Pin No.1"
+    (11, (532, 124, 553, 136)),   # "Notch"
+    (12, (63, 195, 215, 305)),    # Option 2(b): the reprinted circuit's lettering
+    (10, (548, 186, 563, 202)),   # 3(a): the picture's "A"
+    (14, (400, 236, 556, 247)),   # Option 4(b)(i): the products' captions
+    (14, (30, 376, 200, 457)),    # Option 4(b)(iii): the graph's lettering
+    (15, (190, 245, 420, 262)),   # Option 5(a): "Gear", "Bicycle Frame"
+])
+
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
 # them: an answer box's fill-in labels, a caption printed beside the prose.
@@ -4552,6 +4699,12 @@ ASK_STRIP = {
     (2010, 'hl', 'C', 4, 'd', None): [r'^\u20ac1,000 \u20ac900 From the graph, determine the set-up cost.*$'],
     (2010, 'hl', 'C', 5, 'd', None): [r'(?:^|\s+)Highlight two safety features integrated into the tool you have '
                                      r'described\. Material Cost \(cent per kg\).*$'],
+    # 2010 Ordinary: answer-box labels in the asks.
+    (2010, 'ol', 'A', 1, None, None): [r' 1 2(?= \(ii\))'],
+    (2010, 'ol', 'A', 4, None, None): [r' A: B:(?= Give)'],
+    (2010, 'ol', 'A', 6, None, None): [r' Function:(?= Calculate)'],
+    (2010, 'ol', 'A', 7, None, None): [r' Reason 1 Reason 2(?= Identify)'],
+    (2010, 'ol', 'A', 11, None, None): [r' A:(?= Give)'],
     # 2011 Ordinary: answer-box labels and the arrow letter in the asks.
     (2011, 'ol', 'A', 3, None, None): [r'\s+Light bulb OR gate$'],
     (2011, 'ol', 'A', 4, None, None): [r'^A\s+'],
@@ -4704,6 +4857,10 @@ PART_SPLITS = {
     # two for the wheels, 2 for the first and 1 for the second of each.
     (2010, 'hl', 'A', 14): {
         'lines': ('(2+1, 2+1 marks)',), 'terms': (3, 3), 'steps': {None: ((0, 2, 3), '(2+1, 2+1 marks)')}},
+    # 2010 Ordinary Q9, scheme page 6: no tariff line at all; each of the four
+    # criteria prints its own "- 2 marks" ("Parallel lines- 2 marks"), under
+    # the rubric's 8. The rows carry their prices.
+    (2010, 'ol', 'A', 9): {'lines': (), 'terms': (2, 2, 2, 2)},
 }
 
 # A printed note the text layer reads out of order, cut off an ask's end.

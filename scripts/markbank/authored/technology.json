@@ -2232,6 +2232,1688 @@
   "notes": "The scheme prints '(14 marks)' for this question."
  },
  {
+  "id": "tech-2010-ol-a1",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q1(i), (ii)",
+  "questionText": "(i) Solder is an alloy of two metals. Which two metals are typically used to produce solder? (ii) List two safety precautions you should observe when soldering.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secA-q1-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4 x 2 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Lead",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Tin etc.",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "1. Good Ventilation",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "2. Place iron in stand when not in use, Eye protection, Clamp work etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4 x 2 marks)' for this question."
+ },
+ {
+  "id": "tech-2010-ol-a2",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q2",
+  "questionText": "Methods of communication have evolved rapidly in recent years to include social networking. Briefly describe one positive impact and one negative impact of social networking sites.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secA-q2-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Positive Impact: Allows family and friends to keep in contact with each other around the world, upload pictures, free method of communication etc.",
+    "marks": 4,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Negative Impact: Cyber Bullying, Security issues, people less likely to meet up in person etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this question."
+ },
+ {
+  "id": "tech-2010-ol-a3",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q3",
+  "questionText": "The graphics show a DC motor and a solar panel. Name one energy conversion which takes place in each component.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secA-q3-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Electrical to mechanical, kinetic, heat etc.",
+    "marks": 4,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Solar to electrical, heat etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this question."
+ },
+ {
+  "id": "tech-2010-ol-a4",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q4",
+  "questionText": "The image shows a cable-stayed bridge. Identify the type of force acting on the elements A and B of the bridge. Give one advantage of this type of bridge when compared to a traditional arched bridge.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secA-q4-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3+2 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Compression (pushing)",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Tension (pulling)",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Greater span achievable between supports etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3+2 marks)' for this question."
+ },
+ {
+  "id": "tech-2010-ol-a5",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q5",
+  "questionText": "What is the purpose of Research and Investigation in relation to project design? List two methods that can be used to facilitate Research and Investigation.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+2+2 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To identify possible problems and solutions, provide inspiration etc.",
+    "marks": 4,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "1. Internet",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "2. Books, Magazines, Interviews etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+2+2 marks)' for this question."
+ },
+ {
+  "id": "tech-2010-ol-a6",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q6",
+  "questionText": "Outline the function of the gold band on the resistor shown. Calculate the total resistance (R) in the following resistor arrangement.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secA-q6-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Function: Indicates the tolerance band of the resistor (+/- 5%) etc.",
+    "marks": 4,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(R): 107.5 Ω (7.5 + 100) (Formula- 2 marks)",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this question."
+ },
+ {
+  "id": "tech-2010-ol-a7",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q7",
+  "questionText": "File management is very important when saving files on a computer. Outline two reasons why file management is important. Identify the root folder and one sub folder in a student’s Leaving Certificate Technology folder on the C drive.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secA-q7-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4 x 2 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reason 1. Know where files are saved",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Reason 2. To prevent duplication of files in different folders, reduce space on hard drive",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Root Folder: LC Technology",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Sub-Folder: Class Notes, Class Projects, Design",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4 x 2 marks)' for this question."
+ },
+ {
+  "id": "tech-2010-ol-a8",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q8",
+  "questionText": "Wavebob is an Irish developed example of how wave energy can be harnessed to contribute to the future energy needs of this country. Outline two other innovative technologies that can help reduce the demand for fossil fuels.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secA-q8-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Biomass",
+    "marks": 4,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Geothermal, Solar panels, wood pellet boilers, wind, hydro etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this question."
+ },
+ {
+  "id": "tech-2010-ol-a9",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q9",
+  "questionText": "In the box provided, make a well-proportioned 3D sketch of the electrical socket shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secA-q9-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "All questions carry 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Parallel lines- 2 marks",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Vertical Lines- 2 marks",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Proportions- 2 marks",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Holes- 2 marks",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 8 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-a10",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q10",
+  "questionText": "Technology has been used to improve sports shoes and thereby enhance the performance of athletes. Give two examples of how technology has improved sports shoes.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secA-q10-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Modern materials Kevlar– stronger than leather, Foam blown polyurethane for cushioning etc.",
+    "marks": 4,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Grip– stud/blade design etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this question."
+ },
+ {
+  "id": "tech-2010-ol-a11",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q11",
+  "questionText": "Name the gear arrangement at A. Give two examples of where this mechanism could be used.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+2+2 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Rack and Pinion",
+    "marks": 4,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "1: Drilling machine column/table",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "2: Steering racks etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+2+2 marks)' for this question."
+ },
+ {
+  "id": "tech-2010-ol-a12",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2010 OL Section A Q12",
+  "questionText": "Use two graphic techniques to enhance the graphic representation of the games controller shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Appropriate shading/rendering/colouring",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this question."
+ },
+ {
+  "id": "tech-2010-ol-b2a",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2010 OL Section B Q2(a)(i), (ii)",
+  "questionText": "(i) Choose a suitable material for the manufacture of the body of the buggy. Give one reason to justify your selection. (ii) Suggest a suitable manufacturing process for making the body and outline the key stages of this manufacturing process.",
+  "stem": "The 3D graphics show a model of a four-wheel buggy.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secB-q2a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "High Impact Polystyrene, ABS, PVC etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Thermoplastic, lightweight, excellent forming properties etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Vacuum Forming– manufacture mould, vacuum form the body, trim the body etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 8 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-b2b",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2010 OL Section B Q2(b)(i), (ii), (iii)",
+  "questionText": "(i) Sketch an LED and identify on your sketch the anode and the cathode. (ii) Draw a circuit diagram which will allow the buggy to move as outlined in 2(b) above. Include the green and the red LEDs in your circuit diagram. (iii) Outline using notes and annotated sketches a suitable method of joining the body of the buggy to the chassis. This method must facilitate the removal of the body when the batteries need to be changed.",
+  "stem": "The buggy is to be able to move both forward and in reverse. A green LED indicates when the buggy is moving forward and a red LED indicates when the buggy is reversing.",
+  "figureKey": "technology-2010-OL-scheme-secB-q2b",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Any appropriate sketch- screw fixture, snap on clip etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-b2c",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2010 OL Section B Q2(c)(i), (ii)",
+  "questionText": "(i) A student has produced design sketches of a buggy. Describe how these sketches could be captured electronically and incorporated into a design portfolio. (ii) The use of ICT can greatly enhance the presentation of a design portfolio. Outline two software applications that could be used for this purpose.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Scan image, crop/edit image, copy and paste into design portfolio etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Software in the following areas: Word processing, publishing, spreadsheets, Parametric CAD, Gantt charts, Electronic simulation etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 6 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-b2d",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2010 OL Section B Q2(d)(i), (ii)",
+  "questionText": "(i) The pulley system used to drive the buggy was found to slip frequently. Outline, using notes and an annotated sketch, a modification to the pulley system which would resolve this problem. (ii) Suggest an alternative drive mechanism that might be used in place of the pulley system. Give one advantage and one disadvantage of your suggested mechanism.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secB-q2d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Any appropriate sketch– Toothed belt, Idler Gear, Motor adjustment etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Motor gear box– no slippage, compact, more expensive, bulky etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 6 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-b3a",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2010 OL Section B Q3(a)(i), (ii)",
+  "questionText": "(i) List three manufacturing processes that could be used in making this DVD holder. (ii) Sketch a well-proportioned plan view of the DVD holder. Apply suitable rendering to your sketch.",
+  "stem": "The 3D graphic shows a student’s design for a DVD holder. The holder will be made from acrylic.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secB-q3a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Measuring, Marking Out, Cutting, Drilling, Filing, Polishing etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Any appropriate sketch of plan view.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 8 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-b3b",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2010 OL Section B Q3(b)(i), (ii), (iii)",
+  "questionText": "(i) Describe, using notes and annotated sketches, how the side A of the holder could be manufactured. (ii) When manufacturing the DVD holder, all the shelves should be exactly the same size and shape. Outline how this could best be achieved. (iii) Suggest a suitable adhesive for joining acrylic. Give one reason why the adhesive you have chosen is suitable.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secB-q3a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mark out design, Process slots, Cut out shape with scroll saw, file, finish with emery paper, etc. (CNC router- alternative)",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Use a template, shape all shelves together, CNC router alternatively etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Liquid Solvent Cement– quick drying, clean, odourless etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Tensol Cement- etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-b3c",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2010 OL Section B Q3(c)(i), (ii)",
+  "questionText": "(i) Describe how making a scale model of a proposed design can assist a student in finding the best solution to a design problem. (ii) Construct a Work Breakdown Structure (WBS) for the tasks associated with the manufacture of the DVD holder.",
+  "stem": "",
+  "figureKey": "technology-2010-OL-scheme-secB-q3c",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Helps to identify/clarify unforeseen issues, providing clearer understandings of the design problem etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 6 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-b3d",
+  "topicId": "tech-core-project",
+  "conceptId": "core-project",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2010 OL Section B Q3(d)(i), (ii)",
+  "questionText": "(i) Outline what any two parts of the PDSA Deming Cycle refer to in relation to quality management. (ii) Having glued together two pieces of acrylic for the DVD holder above, the quality of the glued joint was very poor. Using a cause and effect diagram identify possible causes of this problem.",
+  "stem": "",
+  "figureKey": "technology-2010-OL-scheme-secB-q3d",
+  "questionFigureKey": "technology-2010-OL-paper-secB-q3d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Plan, Do, Study, Act– any relevant explanation",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Any relevant cause etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 6 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c1a",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q1(a)(i), (ii)",
+  "questionText": "(i) Describe using a simple sketch, how pin no.1 can be identified and located on a Peripheral Interface Controller (PIC). (ii) Outline briefly why PICs are used in the manufacture of interactive toys such as the toy dog shown.",
+  "stem": "",
+  "figureKey": "technology-2010-OL-scheme-secC-q1a",
+  "questionFigureKey": "technology-2010-OL-paper-secC-q1a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Toys can be programmed to activate motors, lights, sound etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c1b",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q1(b)(i), (ii), (iii)",
+  "questionText": "(i) Outline what is meant by the term Robotics. (ii) Explain one of the following terms: Humanoid Robot; Cartesian Robot. (iii) For hundreds of years, lighthouses have served as beacons in the night for both navigators and those lost at sea. Countless ships and lives have been saved due to the use of warning lights and foghorns. Draw a flowchart to control the following output devices for a model lighthouse in the following sequence: • If conditions become foggy, sound the buzzer for 5 seconds and then switch it off for 2 seconds. • Repeat this process continuously. • If conditions are not foggy, switch the light on for 2 seconds, and then switch it off for 1 second. • Repeat this process continuously.",
+  "stem": "",
+  "figureKey": "technology-2010-OL-scheme-secC-q1b",
+  "questionFigureKey": "technology-2010-OL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 20 marks"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Using robots to perform tasks instead of humans, using programmes to control motors etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Humanoid Robots: Robots that resemble the human body form, e g help to do household chores etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Cartesian Robot: Three prismatic joints, XYZ co ordinates, pick and place, CNC Router etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 20 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c1c",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q1(c)(i), (ii)",
+  "questionText": "(i) Give two examples of the use of pneumatics in the food handling/production industry. Suggest one reason why pneumatics are suitable for each of the examples you have given. (ii) The graphics at A and B show the symbols for two pneumatic components. Name the components A and B and describe how one of them works.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secC-q1c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Food conveyor belt, packaging etc.– hygienically clean, sound reduction, safety etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A– Single Acting Actuator/Cylinder– air pushes piston rod in one direction only, spring return.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "B- 3/2 push button control valve– pressing the button allows the flow of air to an actuator, releasing the button allows air to escape to exhaust to the atmosphere.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c1d",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q1(d)(i), (ii)",
+  "questionText": "(i) Suggest two reasons why robots might be used instead of soldiers to dispose of bombs. (ii) Work Envelope is a term used in robotics. Outline what is meant by the term Work Envelope.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secC-q1d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Safety, reduce human error etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The volume of space that a robot can work in is called its work envelope etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c2a",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q2(a)(i), (ii)",
+  "questionText": "(i) The graphic shows a common transistor. Using a simple sketch show the pin arrangement for the collector, base and emitter. (ii) State two functions of transistors in circuit design.",
+  "stem": "",
+  "figureKey": "technology-2010-OL-scheme-secC-q2a",
+  "questionFigureKey": "technology-2010-OL-paper-secC-q2a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Automatic switch, amplifier of current etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c2b",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q2(b)(i), (ii), (iii)",
+  "questionText": "(i) What is the function of the resistor X? (ii) Name component Y and explain its function in the circuit. (iii) When the circuit was built it was found that the single transistor did not supply enough current to power the motor. Redraw the circuit replacing the single transistor with a Darlington Pair of transistors.",
+  "stem": "The transistor circuit shown is used to activate a motorised fan when a high temperature is detected.",
+  "figureKey": "technology-2010-OL-scheme-secC-q2b",
+  "questionFigureKey": "technology-2010-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 20 marks"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Protect the LED, reduce the flow of current etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Thermistor– its resistance changes with temperature (high when it’s cold, low when it’s hot) etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 20 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c2c",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q2(c)(i), (ii)",
+  "questionText": "(i) A relay is an example of a electro-mechanical switch. Give two examples of where relays could be used in everyday life. (ii) Outline why a relay is used in one of the examples you have given in 2(c)(i) above.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secC-q2c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Controlling motors, spotlights in cars etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Safety– control 220V motors using a switch operated at a lower voltage, e.g. 12 volts etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c2d",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q2(d)(i), (ii)",
+  "questionText": "(i) In producing circuits, students often prefer to use printed circuit boards (PCBs) rather than copper stripboard. Give two reasons why this might be the case. (ii) When designing a circuit, outline the main advantages of using a circuit simulation software program.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secC-q2d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Visually easier to understand, full copper removal allows soldering to be done more effectively, pad size can be increased etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Component capabilities can be explored without physically damaging them.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Circuit simulation allows students to visually understand how a circuit works prior to making the circuit etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c3a",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q3(a)(i), (ii)",
+  "questionText": "(i) Name two peripheral devices that can be connected to a computer. (ii) List two functions of a computer operating system (OS).",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secC-q3a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mouse, keyboard, monitor, printer, scanner, data projector etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Manages the operation of programmes and tasks, provides a user interface",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c3b",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q3(b)(i), (ii), (iii)",
+  "questionText": "(i) Outline two advantages for companies of using email, rather than the traditional postal service, when contacting customers. (ii) Explain what any two parts of the email address shown represent: (iii) Outline the difference between CC and BCC when sending an email to numerous recipients.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secC-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 20 marks"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Instant, free, send digital attachments instead of hard copies of attachments etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Username: darraghm, separator: @ , Service Provider: gmail, Domain: .com etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "CC: Carbon Copy– the email addresses in this area will receive the message as well as the addresses in the To: box",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "BCC: Blind Carbon Copy- The recipients entered in this area will not be aware of the other people receiving the email message etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 20 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c3c",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q3(c)(i), (ii), (iii)",
+  "questionText": "(i) Explain the meaning of the term motherboard. (ii) Name two components found on the motherboard. (iii) Explain the function of each component you have named.",
+  "stem": "The graphic shows a computer motherboard.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secC-q3c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "This is the main circuit board within a computer etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Memory sockets, power supply connectors, graphic cards, ports etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Memory sockets: Allows memory modules to be connected to the motherboard etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Power supply connectors: provide electricity to power the various parts of a computer etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Graphic cards: Manages images, organises pixels etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Ports: Allow peripheral devices to be connected to the computer etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c3d",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q3(d)(i), (ii)",
+  "questionText": "(i) When working on a computer, important files and programmes should be backed up regularly. Explain why regular back up is an important part of file management. (ii) Outline two methods which can be used to provide back up for your files.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Files are up to date, files that are deleted accidently are not lost all together etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Storage on external hard drives, CD, DVD, Server computers etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c4a",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q4(a)(i), (ii)",
+  "questionText": "(i) Give two reasons for carrying out market research prior to the manufacture of a new product. (ii) Outline two techniques that might be used to gather information when conducting market research.",
+  "stem": "Market research is a fundamental process which should be carried out before a new product is manufactured.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secC-q4a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Identify gaps in a market, compare to existing products, identify potential customers etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Feasibility studies/questionnaires, interviews, analyse existing products etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c4b",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q4(b)(i), (ii), (iii)",
+  "questionText": "(i) The graphics show three manufactured products. Select an appropriate manufacturing process for each of the items shown. (ii) Outline the reasons for your choice of manufacturing process in each case. (iii) A company conducted a process capability survey on how well their paper clips were being packed into boxes for distribution. Each box should contain approximately 100 clips. The results were presented in the graph shown below. Outline briefly what the graph indicates to the company about the process of packing the boxes.",
+  "stem": "Once-off, Batch and Mass Production are manufacturing processes used in producing everyday products.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 20 marks"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Once off: Satellite, Batch: Washing Machine, Mass: Paper Clip.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Once off: Satellites are not every day items, high levels of accuracy required.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Batch: Washing Machine models change and are modified regularly.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Mass: Paper Clip –just one part, large number of clips are produced worldwide etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "The process is not capable. A lot of boxes would be over and under filled, Cp<1 etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 20 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c4c",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q4(c)(i), (ii)",
+  "questionText": "(i) Describe what is meant by Just-In-Time manufacturing. (ii) Outline two benefits of JIT manufacturing for an aircraft manufacturer such as Boeing.",
+  "stem": "Just-In-Time (JIT) manufacturing was developed by the Toyota car company in the 1950s.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Only having the required amount of stock to manufacture a product when it is needed.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Streamlined and efficient way of manufacturing in order to eliminate waste etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Only a small floor area for incoming parts would be required, less waste if designs change for parts etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c4d",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q4(d)(i), (ii)",
+  "questionText": "(i) A quality characteristic of the stage production is sound quality. Describe one quality attribute of the sound system which would have an effect on this. (ii) Working as a team is essential in ensuring that the stage is completed on time at each new venue. Outline two elements of team work that you consider most important in achieving this task.",
+  "stem": "Stage productions such as U2’s 360o tour can have large operational costs, as well as presenting huge logistical challenges in moving the production to new venues in foreign countries.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secC-q4d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Amplification - decibel level, distortion, spec of speakers, ie frequency range",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Acoustics, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Identify team leader, delegate tasks to individuals/team, set target deadlines, assess/monitor how the team is performing etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c5a",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q5(a)(i), (ii)",
+  "questionText": "(i) The graphics show a gear and a bicycle frame. Name a suitable material for the manufacture of each item. (ii) In each case, outline two properties of the material that make it suitable for the product.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secC-q5a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Gear: Nylon etc. Bicycle Frame: Titanium/Aluminium Alloy etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Nylon: lightweight, hardwearing, no lubrication, noise reduction, corrosion and chemical resistant etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Titanium/Aluminium Alloy: lightweight, high weight to strength ratio, corrosion resistant, easy to finish, flexible etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c5b",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q5(b)(i), (ii), (iii)",
+  "questionText": "(i) Choose two materials that would be suitable for the production of the handrail for such a staircase. (ii) Using annotated sketches, describe a suitable method of joining the steps to the frame. (iii) Strength and safety when in use are two key requirements of wooden steps in a staircase. • Sketch a plan of a step indicating the direction of the wood grain which would best meet these requirements. • Outline one consequence if the step is not designed and manufactured with the direction of the wood grain in mind.",
+  "stem": "The graphic below shows a spiral staircase.",
+  "figureKey": "technology-2010-OL-scheme-secC-q5b",
+  "questionFigureKey": "technology-2010-OL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 20 marks"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Hand Rail: Hardwood (ash, beech etc.), composite material etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Any suitable sketch: methods– bolted, screw fixings, welded sections etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Consequences: Step snap very easily etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 20 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c5c",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q5(c)(i), (ii)",
+  "questionText": "(i) Smart Materials have become an important category of materials for designers and manufacturers. What is meant by the term Smart Material? (ii) Give two examples of Smart Materials and for each of your examples suggest an appropriate use.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secC-q5c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A smart material can be described as a material that has a useful response to external influences or stimuli etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Examples: Metal Springs, light bulb filament, heat shrink tubing, smart wire, smart link silicon tubing, piezo electric material, polymorph, chameleon colours etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Any appropriate use.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2010-ol-c5d",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2010,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2010 OL Section C Q5(d)(i), (ii)",
+  "questionText": "(i) Some materials are prone to corrosion. Explain the term corrosion. (ii) Corrosion can be avoided by choosing appropriate materials or by applying surface treatments. Give one example of each of the methods of corrosion prevention mentioned above.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2010-OL-paper-secC-q5d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Corrosion is the deterioration of a material as a result of a reaction with its environment etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Electroplating, paint, plastic powder coated, anodising e.g. aluminium, sacrificial protection, design related etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
   "id": "tech-2011-hl-a1",
   "topicId": "tech-core-energy",
   "conceptId": "core-energy",

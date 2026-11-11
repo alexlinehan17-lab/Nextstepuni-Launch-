@@ -2781,6 +2781,118 @@ REVIEWED.update({
         'Plastic 8.9, Steel 7.9, Wood 1.1.',
 })
 
+# 2010 Ordinary, each crop rendered and looked at.
+REVIEWED.update({
+    'technology-2010-OL-paper-secA-q1-art':
+        'Photograph of a reel of solder wire labelled omega and, below it, a '
+        'soldering iron resting in its stand beside a sponge tray.',
+    'technology-2010-OL-paper-secA-q2-art':
+        'The logos of two social networking sites, bebo and facebook, side by '
+        'side.',
+    'technology-2010-OL-paper-secA-q3-art':
+        'Photographs of a small cylindrical DC motor with a shaft at its front '
+        'and, below it, a small solar panel with two wires.',
+    'technology-2010-OL-paper-secA-q4-art':
+        'Photograph of a cable-stayed bridge: one tall tower with cables fanning '
+        'out to the deck, an arrow labelled A pointing at the tower and an arrow '
+        'labelled B at a cable.',
+    'technology-2010-OL-paper-secA-q6-art':
+        'Photograph of a resistor with coloured bands, the last band gold; '
+        'beside it a resistor arrangement, resistors of 30 and 10 side by side '
+        'in parallel, followed by a resistor of 100.',
+    'technology-2010-OL-paper-secA-q7-art':
+        'Screenshot of a folder window titled Design Folio, its address '
+        'C:\\LC Technology\\Class Projects\\Design Folio, the Folders pane showing '
+        'Desktop, My Documents, My Computer and Local Disk (C:), and under it LC '
+        'Technology holding Class Notes, Class Projects and Design Folio.',
+    'technology-2010-OL-paper-secA-q8-art':
+        'Photograph of the Wavebob wave energy device at sea: a large yellow '
+        'floating buoy marked wavebob.com, two workers standing on its deck.',
+    'technology-2010-OL-paper-secA-q9-art':
+        'Photograph of a white single electrical socket with a rocker switch, '
+        'three rectangular pin holes and two screw heads.',
+    'technology-2010-OL-paper-secA-q10-art':
+        'Photograph of a pair of white football boots with black stripes and '
+        'green trim, one turned to show its studded sole.',
+    'technology-2010-OL-paper-secA-q11-art':
+        'Rendering of a gear arrangement, two toothed metal parts meshing, the '
+        'letter A marking the arrangement.',
+    'technology-2010-OL-paper-secA-q12-art':
+        'Line drawing, in outline only, of a handheld games controller with a '
+        'group of round buttons on its top face.',
+    'technology-2010-OL-paper-secB-q2a-art':
+        'Drawing of a model four-wheel buggy with a green body, an arrow '
+        'labelled Body pointing at it; below, a curved arrow labelled Body '
+        'removed leads to the bare chassis on its four wheels.',
+    'technology-2010-OL-paper-secB-q2d-art':
+        "Drawing of the buggy's drive, ringed in red: a small motor whose pulley"
+        ' drives a large wheel by a belt.',
+    'technology-2010-OL-paper-secB-q3a-art':
+        'Rendering of a DVD holder: a stack of yellow acrylic shelves between '
+        'two curved blue side panels, an arrow labelled A pointing at a side '
+        'panel.',
+    'technology-2010-OL-paper-secB-q3d-art':
+        'An unfinished cause and effect diagram: boxes Cause A and Cause B, and '
+        'dashed boxes Cause C and Cause D, joined to a spine that leads to the '
+        'box Poor Glued Joint.',
+    'technology-2010-OL-paper-secC-q1a-art':
+        'Photograph of an interactive toy dog in bright colours, with floppy '
+        'red ears and a green ribbed body.',
+    'technology-2010-OL-paper-secC-q1b-art':
+        'The start of a flowchart: a green Start box, then an arrow down to a '
+        'blue decision diamond Foggy?, with a Yes exit below it and a No exit '
+        'to its right.',
+    'technology-2010-OL-paper-secC-q1c-art':
+        'Two pneumatic component symbols drawn in black outline, labelled A and'
+        ' B.',
+    'technology-2010-OL-paper-secC-q1d-art':
+        'Photograph of a tracked robot vehicle with a jointed arm and cameras.',
+    'technology-2010-OL-paper-secC-q2a-art':
+        'Photograph of a common transistor: a small metal can with three long '
+        'wire legs.',
+    'technology-2010-OL-paper-secC-q2b-art':
+        'Circuit diagram between 9V and 0V, a switch on the 9V rail: on the '
+        'left a component labelled Y above a variable resistor, their junction '
+        'feeding a transistor through a resistor; the transistor switches a '
+        'fan; on the right, a resistor labelled X in series with an LED.',
+    'technology-2010-OL-paper-secC-q2c-art':
+        'Photograph of a yellow-green plastic relay with its pins underneath.',
+    'technology-2010-OL-paper-secC-q2d-art':
+        'Screenshot of a circuit simulation program: a circuit drawn in colour '
+        'on a black background, with a switch, a resistor and two LEDs, one lit'
+        ' red.',
+    'technology-2010-OL-paper-secC-q3a-art':
+        'Photograph of a black and silver desktop computer tower with drive '
+        'bays at its front.',
+    'technology-2010-OL-paper-secC-q3b-art':
+        'The email address darraghm@gmail.com; below it, a screenshot of a new '
+        'email message window, arrows pointing at its Cc and Bcc buttons, '
+        'ringed in red, under the To button.',
+    'technology-2010-OL-paper-secC-q3c-art':
+        'Photograph of a computer motherboard, seen from above at an angle.',
+    'technology-2010-OL-paper-secC-q4a-art':
+        'Photograph of a magnifying glass held over a printed bar chart.',
+    'technology-2010-OL-paper-secC-q4b-art':
+        'Photographs of three products captioned Washing Machine, Paper Clip '
+        'and Satellite. Below, a graph whose axis runs 80, 90, 100, 110, 120: a '
+        'bell curve centred on 100, with two brackets above it labelled '
+        'Measured Range and Allowed Range.',
+    'technology-2010-OL-paper-secC-q4d-art':
+        "Photograph of a stage in a stadium for U2's 360 tour: a huge "
+        'four-legged structure over a round stage, surrounded by the crowd.',
+    'technology-2010-OL-paper-secC-q5a-art':
+        'Photographs of a blue gear and a black and red bicycle frame, captioned'
+        ' Gear and Bicycle Frame.',
+    'technology-2010-OL-paper-secC-q5b-art':
+        'Photograph of a spiral staircase: wooden steps fanning round a central'
+        ' black column, with black metal balusters.',
+    'technology-2010-OL-paper-secC-q5c-art':
+        'Photograph of fingers holding a small, clear, curved piece of material'
+        ' against a blue background.',
+    'technology-2010-OL-paper-secC-q5d-art':
+        'Photograph of a rusted chain wrapped round a rusted metal post.',
+})
+
 REJECTED = {
     'technology-2021-OL-paper-secA-q11-art': 'an empty ruled answer box, not a picture',
     'technology-2023-HL-paper-secA-q7-art': 'a ruled answer line is clipped along the bottom edge',

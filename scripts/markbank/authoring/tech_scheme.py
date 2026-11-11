@@ -290,7 +290,7 @@ class TechScheme:
                 if tuple(part_lines) != tuple(spec['lines']) or sum(spec['terms']) != total:
                     raise SystemExit(f'PART_SPLITS {self.year} {self.level} {section} {head_q}: '
                                      f'read {part_lines} for {total}')
-                terms, notation = list(spec['terms']), ' '.join(spec['lines'])
+                terms, notation = list(spec['terms']), ' '.join(spec['lines']) or notation
             part_lines = []
             if lines:
                 q = head_q

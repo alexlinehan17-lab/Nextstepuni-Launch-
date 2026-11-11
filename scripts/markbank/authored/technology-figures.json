@@ -180,6 +180,96 @@
   ]
  },
  {
+  "file": "technology-2010-OL-paper-secA-q6-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a resistor with coloured bands, the last band gold; beside it a resistor arrangement, resistors of 30 and 10 side by side in parallel, followed by a resistor of 100.",
+  "questionRef": "2010 OL Section A Q6",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   76,
+   578,
+   522,
+   782
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a white single electrical socket with a rocker switch, three rectangular pin holes and two screw heads.",
+  "questionRef": "2010 OL Section A Q9",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   75,
+   603,
+   219,
+   747
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Line drawing, in outline only, of a handheld games controller with a group of round buttons on its top face.",
+  "questionRef": "2010 OL Section A Q12",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   198,
+   590,
+   380,
+   760
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secC-q1a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an interactive toy dog in bright colours, with floppy red ears and a green ribbed body.",
+  "questionRef": "2010 OL Section C Q1(a)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   46,
+   115,
+   172,
+   201
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Circuit diagram between 9V and 0V, a switch on the 9V rail: on the left a component labelled Y above a variable resistor, their junction feeding a transistor through a resistor; the transistor switches a fan; on the right, a resistor labelled X in series with an LED.",
+  "questionRef": "2010 OL Section C Q2(b)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   63,
+   265,
+   315,
+   458
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secC-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The email address darraghm@gmail.com; below it, a screenshot of a new email message window, arrows pointing at its Cc and Bcc buttons, ringed in red, under the To button.",
+  "questionRef": "2010 OL Section C Q3(b)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   228,
+   260,
+   543,
+   425
+  ]
+ },
+ {
   "file": "technology-2011-HL-paper-secA-q6-art.png",
   "kind": "figure",
   "truncated": false,
@@ -11745,6 +11835,411 @@
   ]
  },
  {
+  "file": "technology-2010-OL-paper-secA-q1-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a reel of solder wire labelled omega and, below it, a soldering iron resting in its stand beside a sponge tray.",
+  "questionRef": "2010 OL Section A Q1",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   438,
+   70,
+   526,
+   276
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secA-q2-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The logos of two social networking sites, bebo and facebook, side by side.",
+  "questionRef": "2010 OL Section A Q2",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   165,
+   353,
+   422,
+   397
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secA-q3-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of a small cylindrical DC motor with a shaft at its front and, below it, a small solar panel with two wires.",
+  "questionRef": "2010 OL Section A Q3",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   366,
+   566,
+   524,
+   767
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secA-q4-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a cable-stayed bridge: one tall tower with cables fanning out to the deck, an arrow labelled A pointing at the tower and an arrow labelled B at a cable.",
+  "questionRef": "2010 OL Section A Q4",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   328,
+   67,
+   528,
+   199
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secA-q7-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Screenshot of a folder window titled Design Folio, its address C:\\LC Technology\\Class Projects\\Design Folio, the Folders pane showing Desktop, My Documents, My Computer and Local Disk (C:), and under it LC Technology holding Class Notes, Class Projects and Design Folio.",
+  "questionRef": "2010 OL Section A Q7",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   73,
+   152,
+   213,
+   270
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secA-q8-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of the Wavebob wave energy device at sea: a large yellow floating buoy marked wavebob.com, two workers standing on its deck.",
+  "questionRef": "2010 OL Section A Q8",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   352,
+   302,
+   529,
+   441
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secA-q10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a pair of white football boots with black stripes and green trim, one turned to show its studded sole.",
+  "questionRef": "2010 OL Section A Q10",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   336,
+   64,
+   534,
+   205
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Rendering of a gear arrangement, two toothed metal parts meshing, the letter A marking the arrangement.",
+  "questionRef": "2010 OL Section A Q11",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   359,
+   322,
+   531,
+   474
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secB-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Drawing of a model four-wheel buggy with a green body, an arrow labelled Body pointing at it; below, a curved arrow labelled Body removed leads to the bare chassis on its four wheels.",
+  "questionRef": "2010 OL Section B Q2(a)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   366,
+   87,
+   560,
+   272
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secB-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Drawing of the buggy's drive, ringed in red: a small motor whose pulley drives a large wheel by a belt.",
+  "questionRef": "2010 OL Section B Q2(d)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   39,
+   650,
+   211,
+   770
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secB-q3a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Rendering of a DVD holder: a stack of yellow acrylic shelves between two curved blue side panels, an arrow labelled A pointing at a side panel.",
+  "questionRef": "2010 OL Section B Q3(a)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   382,
+   77,
+   560,
+   263
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secB-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An unfinished cause and effect diagram: boxes Cause A and Cause B, and dashed boxes Cause C and Cause D, joined to a spine that leads to the box Poor Glued Joint.",
+  "questionRef": "2010 OL Section B Q3(d)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   218,
+   729,
+   411,
+   789
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secC-q1b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The start of a flowchart: a green Start box, then an arrow down to a blue decision diamond Foggy?, with a Yes exit below it and a No exit to its right.",
+  "questionRef": "2010 OL Section C Q1(b)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   36,
+   343,
+   154,
+   459
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secC-q1c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two pneumatic component symbols drawn in black outline, labelled A and B.",
+  "questionRef": "2010 OL Section C Q1(c)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   140,
+   594,
+   432,
+   665
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secC-q1d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a tracked robot vehicle with a jointed arm and cameras.",
+  "questionRef": "2010 OL Section C Q1(d)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   429,
+   659,
+   543,
+   808
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secC-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a common transistor: a small metal can with three long wire legs.",
+  "questionRef": "2010 OL Section C Q2(a)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   476,
+   67,
+   543,
+   222
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secC-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a yellow-green plastic relay with its pins underneath.",
+  "questionRef": "2010 OL Section C Q2(c)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   414,
+   481,
+   553,
+   619
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secC-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Screenshot of a circuit simulation program: a circuit drawn in colour on a black background, with a switch, a resistor and two LEDs, one lit red.",
+  "questionRef": "2010 OL Section C Q2(d)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   418,
+   702,
+   543,
+   789
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secC-q3a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a black and silver desktop computer tower with drive bays at its front.",
+  "questionRef": "2010 OL Section C Q3(a)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   98,
+   53,
+   205,
+   163
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secC-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a computer motherboard, seen from above at an angle.",
+  "questionRef": "2010 OL Section C Q3(c)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   53,
+   469,
+   253,
+   630
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secC-q4a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a magnifying glass held over a printed bar chart.",
+  "questionRef": "2010 OL Section C Q4(a)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   79,
+   85,
+   186,
+   163
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of three products captioned Washing Machine, Paper Clip and Satellite. Below, a graph whose axis runs 80, 90, 100, 110, 120: a bell curve centred on 100, with two brackets above it labelled Measured Range and Allowed Range.",
+  "questionRef": "2010 OL Section C Q4(b)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   95,
+   201,
+   559,
+   452
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secC-q4d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a stage in a stadium for U2's 360 tour: a huge four-legged structure over a round stage, surrounded by the crowd.",
+  "questionRef": "2010 OL Section C Q4(d)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   69,
+   655,
+   241,
+   788
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secC-q5a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of a blue gear and a black and red bicycle frame, captioned Gear and Bicycle Frame.",
+  "questionRef": "2010 OL Section C Q5(a)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   146,
+   135,
+   446,
+   270
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a spiral staircase: wooden steps fanning round a central black column, with black metal balusters.",
+  "questionRef": "2010 OL Section C Q5(b)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   423,
+   322,
+   543,
+   531
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secC-q5c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of fingers holding a small, clear, curved piece of material against a blue background.",
+  "questionRef": "2010 OL Section C Q5(c)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   86,
+   584,
+   193,
+   678
+  ]
+ },
+ {
+  "file": "technology-2010-OL-paper-secC-q5d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a rusted chain wrapped round a rusted metal post.",
+  "questionRef": "2010 OL Section C Q5(d)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   467,
+   688,
+   555,
+   809
+  ]
+ },
+ {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
   "kind": "figure",
   "truncated": false,
@@ -15220,5 +15715,69 @@
   "description": "The marking scheme's own pictures for 2010 HL Section C 5(d)(i), as the State Examinations Commission printed them: a photograph of an orbital sander and a photograph of a pillar drilling machine.",
   "solution": true,
   "questionRef": "2010 HL Section C Q5(d)"
+ },
+ {
+  "file": "technology-2010-OL-scheme-secB-q2b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketches for 2010 OL Section B 2(b)(i) and (ii), as the State Examinations Commission printed them: a typical LED with its lens, reflector, body, cathode (-) and anode (+) labelled; and a circuit between 9V and 0V in which a two-way switch reverses the supply to a motor, with two LEDs, set opposite ways round, and a 1K resistor across the motor.",
+  "solution": true,
+  "questionRef": "2010 OL Section B Q2(b)"
+ },
+ {
+  "file": "technology-2010-OL-scheme-secB-q3c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own work breakdown structure for 2010 OL Section B 3(c)(ii), as the State Examinations Commission printed it: Design Sides to Manufacture Sides, Design Shelves to Manufacture Shelves and Design Back plate to Manufacture Back plate, all three leading to Assemble and then Test.",
+  "solution": true,
+  "questionRef": "2010 OL Section B Q3(c)"
+ },
+ {
+  "file": "technology-2010-OL-scheme-secB-q3d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own cause and effect diagram for 2010 OL Section B 3(d)(ii), as the State Examinations Commission printed it: causes Quality of Acrylic Edge, Human Error, Wrong Glue and Application Method joined to a spine leading to Poor Glued Joint.",
+  "solution": true,
+  "questionRef": "2010 OL Section B Q3(d)"
+ },
+ {
+  "file": "technology-2010-OL-scheme-secC-q1a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2010 OL Section C 1(a)(i), as the State Examinations Commission printed it: a PIC chip marked PICAXE-08, an arrow labelled Pin No.1 pointing at the pin at one end of its top row, and an arrow labelled Notch pointing at the notch in that end.",
+  "solution": true,
+  "questionRef": "2010 OL Section C Q1(a)"
+ },
+ {
+  "file": "technology-2010-OL-scheme-secC-q1b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own flowchart for 2010 OL Section C 1(b)(iii), as the State Examinations Commission printed it: Start, then the decision Foggy?; on Yes, Buzzer, Wait 5, Buzzer, Wait 2 and back up the left side to above Foggy?; on No, Light, Wait 2, Light, Wait 1 and back up the right side to the same point.",
+  "solution": true,
+  "questionRef": "2010 OL Section C Q1(b)"
+ },
+ {
+  "file": "technology-2010-OL-scheme-secC-q2a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2010 OL Section C 2(a)(i), as the State Examinations Commission printed it: the transistor symbol with its three leads labelled B, C and E.",
+  "solution": true,
+  "questionRef": "2010 OL Section C Q2(a)"
+ },
+ {
+  "file": "technology-2010-OL-scheme-secC-q2b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own redrawn circuit for 2010 OL Section C 2(b)(iii), as the State Examinations Commission printed it: the fan circuit between 9V and 0V with the single transistor replaced by two transistors joined as a Darlington pair.",
+  "solution": true,
+  "questionRef": "2010 OL Section C Q2(b)"
+ },
+ {
+  "file": "technology-2010-OL-scheme-secC-q5b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2010 OL Section C 5(b)(iii), as the State Examinations Commission printed it: the plan of a step with a double-headed arrow along its length, captioned Direction of wood grain.",
+  "solution": true,
+  "questionRef": "2010 OL Section C Q5(b)"
  }
 ]
