@@ -761,7 +761,14 @@ def author(bind_figures=True):
                         continue
                     pieces = split
 
-                stem = ' '.join([' '.join((qq['stem'] or '').split())]
+                # The parts list an assembly prints is a table, and read as
+                # text it is two-word fragments: PARTS_LIST comes off the stem
+                # as it does off the ask. Left on, every C-5 stem ended "Part
+                # Name Qty. Main Body Base Brass Insert", and a C-5 asked whole
+                # printed its own words twice, the stem no longer matching the
+                # ask it repeats.
+                own = PARTS_LIST.sub('', ' '.join((qq['stem'] or '').split()))
+                stem = ' '.join([own.strip()]
                                 + parent_words(P, section, q, covered)).strip()
                 # A question the paper asks WHOLE has no ask of its own: its
                 # leaf text IS the stem, so the card would print the same

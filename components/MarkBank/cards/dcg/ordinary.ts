@@ -762,7 +762,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2018-ol-c5-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2018 OL Section C Q5 — Assembly",
-    stem: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
     questionText: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
     rows: [
@@ -786,7 +785,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2018-ol-c5-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2018 OL Section C Q5 — Main body",
-    stem: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
     questionText: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
     rows: [
@@ -810,7 +808,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2018-ol-c5-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2018 OL Section C Q5 — Nose Cone",
-    stem: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
     questionText: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -833,7 +830,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2018-ol-c5-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2018 OL Section C Q5 — Thruster",
-    stem: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
     questionText: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -856,7 +852,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2018-ol-c5-5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2018 OL Section C Q5 — Wings",
-    stem: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
     questionText: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
@@ -879,7 +874,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2018 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2018-ol-c5-6", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2018 OL Section C Q5 — Drawing Completion",
-    stem: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
     questionText: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
     rows: [
@@ -1684,7 +1678,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2019-ol-c5-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2019 OL Section C Q5 — Assembly",
-    stem: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.) Part Name Qty. Base Upright Branch Cap",
     questionText: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
     rows: [
@@ -1708,7 +1701,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2019-ol-c5-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2019 OL Section C Q5 — Base",
-    stem: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.) Part Name Qty. Base Upright Branch Cap",
     questionText: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
@@ -1731,7 +1723,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2019-ol-c5-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2019 OL Section C Q5 — Stem",
-    stem: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.) Part Name Qty. Base Upright Branch Cap",
     questionText: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
     rows: [
@@ -1755,7 +1746,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2019-ol-c5-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2019 OL Section C Q5 — Branches",
-    stem: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.) Part Name Qty. Base Upright Branch Cap",
     questionText: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -1778,7 +1768,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2019-ol-c5-5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2019 OL Section C Q5 — Cap",
-    stem: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.) Part Name Qty. Base Upright Branch Cap",
     questionText: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -1801,7 +1790,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2019 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2019-ol-c5-6", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2019 OL Section C Q5 — Drawing Completion",
-    stem: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.) Part Name Qty. Base Upright Branch Cap",
     questionText: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
     rows: [
@@ -2581,7 +2569,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2021-ol-c5-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 OL Section C Q5 — Assembly",
-    stem: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.) Part Name Qty. Main Body Handle Roller",
     questionText: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
@@ -2605,7 +2592,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2021-ol-c5-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 OL Section C Q5 — Main body",
-    stem: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.) Part Name Qty. Main Body Handle Roller",
     questionText: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
@@ -2629,7 +2615,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2021-ol-c5-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 OL Section C Q5 — Handle",
-    stem: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.) Part Name Qty. Main Body Handle Roller",
     questionText: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
     rows: [
@@ -2654,7 +2639,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2021-ol-c5-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 OL Section C Q5 — Roller",
-    stem: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.) Part Name Qty. Main Body Handle Roller",
     questionText: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
@@ -2677,7 +2661,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2021-ol-c5-5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 OL Section C Q5 — Drawing Completion",
-    stem: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.) Part Name Qty. Main Body Handle Roller",
     questionText: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -3419,7 +3402,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2022-ol-c5-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 OL Section C Q5 — Assembly",
-    stem: "Stove-top coffee pots are a very popular method of brewing coffee at home. Details of a stove-top coffee pot are given in Fig. C-5 below. A parts list and 3D graphic of the coffee pot are also shown. Draw the elevation of the assembled coffee pot. Note: Any omitted dimensions may be estimated. Unnecessary dimensions and hidden detail have been omitted for clarity. Part Name Qty. Main Body Lid Base",
     questionText: "Stove-top coffee pots are a very popular method of brewing coffee at home. Details of a stove-top coffee pot are given in Fig. C-5 below. A parts list and 3D graphic of the coffee pot are also shown. Draw the elevation of the assembled coffee pot. Note: Any omitted dimensions may be estimated. Unnecessary dimensions and hidden detail have been omitted for clarity.",
     tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
@@ -3442,7 +3424,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2022-ol-c5-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 OL Section C Q5 — Base",
-    stem: "Stove-top coffee pots are a very popular method of brewing coffee at home. Details of a stove-top coffee pot are given in Fig. C-5 below. A parts list and 3D graphic of the coffee pot are also shown. Draw the elevation of the assembled coffee pot. Note: Any omitted dimensions may be estimated. Unnecessary dimensions and hidden detail have been omitted for clarity. Part Name Qty. Main Body Lid Base",
     questionText: "Stove-top coffee pots are a very popular method of brewing coffee at home. Details of a stove-top coffee pot are given in Fig. C-5 below. A parts list and 3D graphic of the coffee pot are also shown. Draw the elevation of the assembled coffee pot. Note: Any omitted dimensions may be estimated. Unnecessary dimensions and hidden detail have been omitted for clarity.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
@@ -3465,7 +3446,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2022-ol-c5-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 OL Section C Q5 — Main Body",
-    stem: "Stove-top coffee pots are a very popular method of brewing coffee at home. Details of a stove-top coffee pot are given in Fig. C-5 below. A parts list and 3D graphic of the coffee pot are also shown. Draw the elevation of the assembled coffee pot. Note: Any omitted dimensions may be estimated. Unnecessary dimensions and hidden detail have been omitted for clarity. Part Name Qty. Main Body Lid Base",
     questionText: "Stove-top coffee pots are a very popular method of brewing coffee at home. Details of a stove-top coffee pot are given in Fig. C-5 below. A parts list and 3D graphic of the coffee pot are also shown. Draw the elevation of the assembled coffee pot. Note: Any omitted dimensions may be estimated. Unnecessary dimensions and hidden detail have been omitted for clarity.",
     tariffModel: {"kind":"fixed","notation":"(25)"}, totalMarks: 25,
     rows: [
@@ -3491,7 +3471,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2022-ol-c5-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 OL Section C Q5 — Lid",
-    stem: "Stove-top coffee pots are a very popular method of brewing coffee at home. Details of a stove-top coffee pot are given in Fig. C-5 below. A parts list and 3D graphic of the coffee pot are also shown. Draw the elevation of the assembled coffee pot. Note: Any omitted dimensions may be estimated. Unnecessary dimensions and hidden detail have been omitted for clarity. Part Name Qty. Main Body Lid Base",
     questionText: "Stove-top coffee pots are a very popular method of brewing coffee at home. Details of a stove-top coffee pot are given in Fig. C-5 below. A parts list and 3D graphic of the coffee pot are also shown. Draw the elevation of the assembled coffee pot. Note: Any omitted dimensions may be estimated. Unnecessary dimensions and hidden detail have been omitted for clarity.",
     tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
@@ -4206,7 +4185,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2023-ol-c5-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2023 OL Section C Q5 — Assembly",
-    stem: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.) Part Name Qty. Base Holder Lamp Top",
     questionText: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
@@ -4230,7 +4208,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2023-ol-c5-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2023 OL Section C Q5 — Base",
-    stem: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.) Part Name Qty. Base Holder Lamp Top",
     questionText: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
@@ -4253,7 +4230,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2023-ol-c5-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2023 OL Section C Q5 — Holder",
-    stem: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.) Part Name Qty. Base Holder Lamp Top",
     questionText: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
@@ -4275,7 +4251,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2023-ol-c5-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2023 OL Section C Q5 — Lamp",
-    stem: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.) Part Name Qty. Base Holder Lamp Top",
     questionText: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
@@ -4298,7 +4273,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2023-ol-c5-5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2023 OL Section C Q5 — Top",
-    stem: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.) Part Name Qty. Base Holder Lamp Top",
     questionText: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
@@ -4321,7 +4295,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2023 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2023-ol-c5-6", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2023 OL Section C Q5 — Drawing Completion",
-    stem: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.) Part Name Qty. Base Holder Lamp Top",
     questionText: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -5090,7 +5063,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2024-ol-c5-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2024 OL Section C Q5 — Assembly",
-    stem: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.) Part Name Qty. Top Lamp Pole Solar panel",
     questionText: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
@@ -5114,7 +5086,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2024-ol-c5-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2024 OL Section C Q5 — Pole",
-    stem: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.) Part Name Qty. Top Lamp Pole Solar panel",
     questionText: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
@@ -5137,7 +5108,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2024-ol-c5-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2024 OL Section C Q5 — Lamp",
-    stem: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.) Part Name Qty. Top Lamp Pole Solar panel",
     questionText: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -5160,7 +5130,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2024-ol-c5-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2024 OL Section C Q5 — Top",
-    stem: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.) Part Name Qty. Top Lamp Pole Solar panel",
     questionText: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
@@ -5183,7 +5152,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2024-ol-c5-5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2024 OL Section C Q5 — Solar panel",
-    stem: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.) Part Name Qty. Top Lamp Pole Solar panel",
     questionText: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -5205,7 +5173,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2024 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2024-ol-c5-6", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2024 OL Section C Q5 — Drawing Completion",
-    stem: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.) Part Name Qty. Top Lamp Pole Solar panel",
     questionText: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -5911,7 +5878,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2025-ol-c5-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2025 OL Section C Q5 — Assembly",
-    stem: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated. Part Name Qty. Camera Stem Base SD Card",
     questionText: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
@@ -5935,7 +5901,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2025-ol-c5-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2025 OL Section C Q5 — Base",
-    stem: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated. Part Name Qty. Camera Stem Base SD Card",
     questionText: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
@@ -5958,7 +5923,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2025-ol-c5-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2025 OL Section C Q5 — Stem",
-    stem: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated. Part Name Qty. Camera Stem Base SD Card",
     questionText: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
@@ -5982,7 +5946,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2025-ol-c5-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2025 OL Section C Q5 — Camera",
-    stem: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated. Part Name Qty. Camera Stem Base SD Card",
     questionText: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
@@ -6005,7 +5968,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2025-ol-c5-5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2025 OL Section C Q5 — SD card",
-    stem: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated. Part Name Qty. Camera Stem Base SD Card",
     questionText: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -6027,7 +5989,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2025 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2025-ol-c5-6", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2025 OL Section C Q5 — Drawing Completion",
-    stem: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated. Part Name Qty. Camera Stem Base SD Card",
     questionText: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(5)"}, totalMarks: 5,
     rows: [
@@ -6805,7 +6766,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2026-ol-c5-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 OL Section C Q5 — Assembly",
-    stem: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated. Part Name Qty. Body Lid Handle Divider",
     questionText: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
@@ -6829,7 +6789,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2026-ol-c5-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 OL Section C Q5 — Body",
-    stem: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated. Part Name Qty. Body Lid Handle Divider",
     questionText: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
@@ -6851,7 +6810,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2026-ol-c5-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 OL Section C Q5 — Lid",
-    stem: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated. Part Name Qty. Body Lid Handle Divider",
     questionText: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
@@ -6874,7 +6832,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2026-ol-c5-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 OL Section C Q5 — Handle",
-    stem: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated. Part Name Qty. Body Lid Handle Divider",
     questionText: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
@@ -6897,7 +6854,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2026-ol-c5-5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 OL Section C Q5 — Divider",
-    stem: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated. Part Name Qty. Body Lid Handle Divider",
     questionText: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -6919,7 +6875,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2026-ol-c5-6", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 OL Section C Q5 — Drawing Completion",
-    stem: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated. Part Name Qty. Body Lid Handle Divider",
     questionText: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [

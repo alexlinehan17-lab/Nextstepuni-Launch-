@@ -3364,7 +3364,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2019 Higher Level — © State Examinations Commission.",
     id: "dcg-2019-hl-c5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2019 HL Section C Q5",
-    stem: "The 3D graphic on the right shows a Manual Coffee Grinder, for grinding coffee beans. The details of the grinder are given in Fig. C-5 below. The parts list is also given in two tables. Power is transmitted from the horizontal top spindle to the vertical spindle by means of two friction cones in contact. There is a 2mm space between the hopper and the grinding disc. Draw a sectional elevation on A-A, with the parts fully assembled. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.) Part Name Qty. Base Coffee Hopper Top Driver Housing Vertical Column Ø16 Bush for Top Spindle Vertical Spindle Bush Part Name Qty. 10 Vertical Spindle Ø8 Driver Friction Cone Handle Assembly 11 Hopper Anchor Pin Ø6 Bottom Grinding Disc 12 Top Spindle Ø8 13 Transparent Top Cover",
     questionText: "The 3D graphic on the right shows a Manual Coffee Grinder, for grinding coffee beans. The details of the grinder are given in Fig. C-5 below. The parts list is also given in two tables. Power is transmitted from the horizontal top spindle to the vertical spindle by means of two friction cones in contact. There is a 2mm space between the hopper and the grinding disc. Draw a sectional elevation on A-A, with the parts fully assembled. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(45)"}, totalMarks: 45,
     rows: [
@@ -4192,7 +4191,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2020 Higher Level — © State Examinations Commission.",
     id: "dcg-2020-hl-c5-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2020 HL Section C Q5 — Assembly",
-    stem: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.) Part Name Qty. Lower Bracket Top Bracket Swivel Mount Swivel Arm Swivel Arm Spindle Phone Holder Body Cam Lever Lock Cam Lever Spindle",
     questionText: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -4214,7 +4212,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2020 Higher Level — © State Examinations Commission.",
     id: "dcg-2020-hl-c5-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2020 HL Section C Q5 — Lower Bracket",
-    stem: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.) Part Name Qty. Lower Bracket Top Bracket Swivel Mount Swivel Arm Swivel Arm Spindle Phone Holder Body Cam Lever Lock Cam Lever Spindle",
     questionText: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -4237,7 +4234,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2020 Higher Level — © State Examinations Commission.",
     id: "dcg-2020-hl-c5-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2020 HL Section C Q5 — Top Bracket",
-    stem: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.) Part Name Qty. Lower Bracket Top Bracket Swivel Mount Swivel Arm Swivel Arm Spindle Phone Holder Body Cam Lever Lock Cam Lever Spindle",
     questionText: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -4261,7 +4257,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2020 Higher Level — © State Examinations Commission.",
     id: "dcg-2020-hl-c5-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2020 HL Section C Q5 — Swivel Mount",
-    stem: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.) Part Name Qty. Lower Bracket Top Bracket Swivel Mount Swivel Arm Swivel Arm Spindle Phone Holder Body Cam Lever Lock Cam Lever Spindle",
     questionText: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -4284,7 +4279,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2020 Higher Level — © State Examinations Commission.",
     id: "dcg-2020-hl-c5-5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2020 HL Section C Q5 — Swivel Arm and Swivel Arm Spindle",
-    stem: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.) Part Name Qty. Lower Bracket Top Bracket Swivel Mount Swivel Arm Swivel Arm Spindle Phone Holder Body Cam Lever Lock Cam Lever Spindle",
     questionText: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -4308,7 +4302,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2020 Higher Level — © State Examinations Commission.",
     id: "dcg-2020-hl-c5-6", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2020 HL Section C Q5 — Phone Holder Body",
-    stem: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.) Part Name Qty. Lower Bracket Top Bracket Swivel Mount Swivel Arm Swivel Arm Spindle Phone Holder Body Cam Lever Lock Cam Lever Spindle",
     questionText: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -4331,7 +4324,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2020 Higher Level — © State Examinations Commission.",
     id: "dcg-2020-hl-c5-7", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2020 HL Section C Q5 — Cam Lever Lock and Cam Lever Spindle",
-    stem: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.) Part Name Qty. Lower Bracket Top Bracket Swivel Mount Swivel Arm Swivel Arm Spindle Phone Holder Body Cam Lever Lock Cam Lever Spindle",
     questionText: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -4355,7 +4347,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2020 Higher Level — © State Examinations Commission.",
     id: "dcg-2020-hl-c5-8", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2020 HL Section C Q5 — Completion of drawing",
-    stem: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.) Part Name Qty. Lower Bracket Top Bracket Swivel Mount Swivel Arm Swivel Arm Spindle Phone Holder Body Cam Lever Lock Cam Lever Spindle",
     questionText: "The 3D graphic on the right shows a phone holder for a bicycle. The details of the holder are given in Fig. C-5 below. The parts list is also given in a table. The swivel arm is inclined at 45°. The phone holder body is shown sectioned as required. Draw a sectional elevation on A-A, with the parts fully assembled. Screws and bolts need not be shown. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions and inner parts have been removed for clarity. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -5250,7 +5241,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c5-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 HL Section C Q5 — Assembly",
-    stem: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.) Part Name Qty. Main Body Clamping Jaw Jaw Pivot Pin Clamp Coupling M8 Stud Washer Jaw Clamping Nut Camera Swivel M6 x 40 Bolt Swivel Clamping Nut GoPro Lock Nut M6 x 24 Stud",
     questionText: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -5272,7 +5262,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c5-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 HL Section C Q5 — Main Body",
-    stem: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.) Part Name Qty. Main Body Clamping Jaw Jaw Pivot Pin Clamp Coupling M8 Stud Washer Jaw Clamping Nut Camera Swivel M6 x 40 Bolt Swivel Clamping Nut GoPro Lock Nut M6 x 24 Stud",
     questionText: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
@@ -5297,7 +5286,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c5-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 HL Section C Q5 — Clamping Jaw",
-    stem: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.) Part Name Qty. Main Body Clamping Jaw Jaw Pivot Pin Clamp Coupling M8 Stud Washer Jaw Clamping Nut Camera Swivel M6 x 40 Bolt Swivel Clamping Nut GoPro Lock Nut M6 x 24 Stud",
     questionText: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
     rows: [
@@ -5322,7 +5310,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c5-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 HL Section C Q5 — Clamp Coupling/M8 Stud",
-    stem: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.) Part Name Qty. Main Body Clamping Jaw Jaw Pivot Pin Clamp Coupling M8 Stud Washer Jaw Clamping Nut Camera Swivel M6 x 40 Bolt Swivel Clamping Nut GoPro Lock Nut M6 x 24 Stud",
     questionText: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
     rows: [
@@ -5345,7 +5332,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c5-5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 HL Section C Q5 — Jaw Clamping Nut/Washer",
-    stem: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.) Part Name Qty. Main Body Clamping Jaw Jaw Pivot Pin Clamp Coupling M8 Stud Washer Jaw Clamping Nut Camera Swivel M6 x 40 Bolt Swivel Clamping Nut GoPro Lock Nut M6 x 24 Stud",
     questionText: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -5368,7 +5354,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c5-6", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 HL Section C Q5 — Camera Swivel",
-    stem: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.) Part Name Qty. Main Body Clamping Jaw Jaw Pivot Pin Clamp Coupling M8 Stud Washer Jaw Clamping Nut Camera Swivel M6 x 40 Bolt Swivel Clamping Nut GoPro Lock Nut M6 x 24 Stud",
     questionText: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -5391,7 +5376,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c5-7", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 HL Section C Q5 — GoPro Lock Nut and M6 Stud",
-    stem: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.) Part Name Qty. Main Body Clamping Jaw Jaw Pivot Pin Clamp Coupling M8 Stud Washer Jaw Clamping Nut Camera Swivel M6 x 40 Bolt Swivel Clamping Nut GoPro Lock Nut M6 x 24 Stud",
     questionText: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -5414,7 +5398,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c5-8", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2021 HL Section C Q5 — Completion of drawing",
-    stem: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.) Part Name Qty. Main Body Clamping Jaw Jaw Pivot Pin Clamp Coupling M8 Stud Washer Jaw Clamping Nut Camera Swivel M6 x 40 Bolt Swivel Clamping Nut GoPro Lock Nut M6 x 24 Stud",
     questionText: "The image on the right shows a GoPro clamp for the handlebars of a bicycle. The details of a similar clamp are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. Clearly show all points of contact. (Unless otherwise stated, chamfers are 1×1mm. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -6303,7 +6286,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c5-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 HL Section C Q5 — Assembly",
-    stem: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
     questionText: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -6325,7 +6307,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c5-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 HL Section C Q5 — Base",
-    stem: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
     questionText: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
@@ -6350,7 +6331,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c5-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 HL Section C Q5 — Vertical Spindle",
-    stem: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
     questionText: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -6373,7 +6353,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c5-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 HL Section C Q5 — Vice Pivot",
-    stem: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
     questionText: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -6396,7 +6375,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c5-5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 HL Section C Q5 — Lower Jaw Spindle",
-    stem: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
     questionText: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
@@ -6419,7 +6397,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c5-6", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 HL Section C Q5 — Clamping Jaw",
-    stem: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
     questionText: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -6442,7 +6419,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c5-7", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 HL Section C Q5 — Rotating Boss & Dowel",
-    stem: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
     questionText: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -6466,7 +6442,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c5-8", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 HL Section C Q5 — Securing Screws",
-    stem: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
     questionText: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -6489,7 +6464,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c5-9", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2022 HL Section C Q5 — Completion of drawing",
-    stem: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
     questionText: "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -7416,7 +7390,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2023 Higher Level — © State Examinations Commission.",
     id: "dcg-2023-hl-c5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2023 HL Section C Q5",
-    stem: "The 3D graphic on the right shows a rivet punch. The details of the punch are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled, with the handle inclined at an angle of 20° to the horizontal plane. Clearly show all points of contact. (Note: Unless otherwise stated, fillets are 2 mm and chamfers are 1 × 1 mm. Any omitted dimensions may be estimated.) Part Name Qty. Main Body Handle Punch Lower Support Pin Spring M6 × 20 Set Screw (Not Shown)",
     questionText: "The 3D graphic on the right shows a rivet punch. The details of the punch are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled, with the handle inclined at an angle of 20° to the horizontal plane. Clearly show all points of contact. (Note: Unless otherwise stated, fillets are 2 mm and chamfers are 1 × 1 mm. Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(60)"}, totalMarks: 60,
     rows: [
@@ -8402,7 +8375,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2024 Higher Level — © State Examinations Commission.",
     id: "dcg-2024-hl-c5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2024 HL Section C Q5",
-    stem: "The 3D graphic on the right shows a clothes line winch. The details of the winch are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled, with the handle in the vertical position as shown. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Main Body Pawl Axle Bolt M6 × 20 Set Screw Ratchet Pulley M6 Plain Nut Pin Ø4 × 18 Handle Washer",
     questionText: "The 3D graphic on the right shows a clothes line winch. The details of the winch are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled, with the handle in the vertical position as shown. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(60)"}, totalMarks: 60,
     rows: [
@@ -9225,7 +9197,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2025 Higher Level — © State Examinations Commission.",
     id: "dcg-2025-hl-c5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2025 HL Section C Q5",
-    stem: "The 3D graphic on the right shows a potato chip maker. The details of the potato chip maker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the portion of the handle labelled X in a vertical position. Note: Any undimensioned holes are Ø4 mm. Any omitted dimensions may be estimated. Part Name Qty. Sliding Plunger End Cutter End Cap Handle Link Arm Plunger Guide Bar Potato Guide Bar M4 × 16 Set Screw Washer",
     questionText: "The 3D graphic on the right shows a potato chip maker. The details of the potato chip maker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the portion of the handle labelled X in a vertical position. Note: Any undimensioned holes are Ø4 mm. Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(60)"}, totalMarks: 60,
     rows: [
@@ -10136,7 +10107,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-1", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — Assembly",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -10158,7 +10128,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-2", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — Main Body",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
@@ -10181,7 +10150,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-3", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — Lever Arm",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -10204,7 +10172,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-4", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — Sliding Jaw Guide",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
@@ -10227,7 +10194,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-5", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — Link Arm",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -10249,7 +10215,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-6", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — Sliding Jaw",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -10271,7 +10236,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-7", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — Adjustable Jaw Guide",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -10293,7 +10257,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-8", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — Adjustable Jaw",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -10316,7 +10279,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-9", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — M3 x 14 Set Screws",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(2)"}, totalMarks: 2,
     rows: [
@@ -10338,7 +10300,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-10", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — M4 x 14 Set Screws",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
     rows: [
@@ -10360,7 +10321,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-c5-11", topicId: "design-and-communication-graphics-2-4", conceptId: "dcg-2-4",
     section: "C", questionRef: "2026 HL Section C Q5 — Completion of drawing",
-    stem: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated. Part Name Qty. Main Body Adjustable Jaw Guide Sliding Jaw Guide Link Arm Lever Arm Adjustable Jaw Sliding Jaw M3 × 14 Set Screw M3 Plain Nut M4 × 14 Set Screw M4 Plain Nut",
     questionText: "The 3D graphic below shows a lever nut-cracker. The details of the nut-cracker are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled with the lever arm inclined at an angle of 45° to the horizontal plane and the distance between the edges of the jaws, labelled X, equal to 26 mm. Note: Any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
