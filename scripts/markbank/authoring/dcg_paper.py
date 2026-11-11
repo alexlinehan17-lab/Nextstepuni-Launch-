@@ -122,6 +122,11 @@ FURNITURE = re.compile(
     r'|There is no examination material'
     r'|Core\s*[-–]|Applied Graphics'
     r'|from this section on drawing paper'
+    # The 2021 and 2022 rubric wraps its second line onto "and Section C on
+    # drawing paper." -- read as the first words of every B-1 and C-1 stem
+    # of both levels (31 shipped cards; eleven C-1 cards had it as their
+    # whole stem).
+    r'|and\s+Section\s+C\s+on\s+drawing\s+paper'
     # The cover's sitting-and-booklet code, "2018. M81BC". The 2016-2018
     # Higher B and C booklets also carry a stale "2016.  M81BC" in the top
     # corner of one question page, hidden under the option banner's fill:
@@ -138,9 +143,16 @@ FURNITURE = re.compile(
 FIG_LABEL = re.compile(r'^Fig\.?\s*[ABC]\s*[-‐-―]\s*\d\s*(?:\([a-z]\))?\s*$',
                        re.I)
 
-# The motion table's own short runs: a single-digit angle and the word "to"
-# between two angles (2023 Ordinary C-4(b) sets "0°", "to" and "90°" apart).
-SHORT_ANGLE = re.compile(r'\d[°⁰º]|to')   # 2022 sets the degree as a superscript 0
+# Short runs a table prints as runs of their own, which are content and not
+# stray glyphs:
+# - a cam motion table's single-digit angle and the word "to" between two
+#   angles (2023 Ordinary C-4(b) sets "0°", "to" and "90°" apart; 2022 sets
+#   the degree as a superscript 0);
+# - a coordinate table's point label and its unknown: the SEC sets "F:" on a
+#   line of its own above "? --- 10 --- ?" (2021 Higher B-2), and every label
+#   of 2016 Higher B-1's table so ("A:" / "130 --- 40 --- 80"). Dropped, the
+#   row read on from the one above it: "E: 145 --- 90 --- 10 --- 10 --- ?".
+SHORT_RUN = re.compile(r'\d[°⁰º]|to|[A-Z]:|\?')
 
 # The SEC sets a specification as a bulleted list and the bullet arrives as
 # its own drawing operation — sometimes glued to its line, sometimes a block
@@ -377,12 +389,13 @@ class DcgPaper:
             elif FURNITURE.match(text) or FIG_LABEL.match(text):
                 continue
             text = BULLET.sub('', text).strip()
-            # Too short to be anything but a stray glyph -- except a cam motion
-            # table's own runs. It sets "0°" (and in some years "to") apart on
-            # the bullet's line ("• 0°  to  120°  rise 36mm ..."), and dropping
-            # them left twelve shipped cards opening "follower: to 120° rise"
-            # or "follower: 90° Rise".
-            if len(text) < 3 and not SHORT_ANGLE.fullmatch(text):
+            # Too short to be anything but a stray glyph -- except a table's
+            # own runs (SHORT_RUN). A cam motion table sets "0°" (and in some
+            # years "to") apart on the bullet's line ("• 0°  to  120°  rise
+            # 36mm ..."), and dropping them left twelve shipped cards opening
+            # "follower: to 120° rise" or "follower: 90° Rise"; a coordinate
+            # table sets its point labels so.
+            if len(text) < 3 and not SHORT_RUN.fullmatch(text):
                 continue
             elif text.strip().lower() in OPTIONS:
                 continue

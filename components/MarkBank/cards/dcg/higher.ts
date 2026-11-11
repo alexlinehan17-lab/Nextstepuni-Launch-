@@ -3407,7 +3407,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-b1a", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
     section: "B", questionRef: "2021 HL Section B Q1(a)",
-    stem: "and Section C on drawing paper. The image on the right shows a pedestrian bridge in Newport, Wales. It is based on a parabola. Fig. B-1 shows the elevation, plan and end view of a model of the bridge. The curve ABC is a parabola in elevation with vertex at B. A pictorial view of the bridge is also shown.",
+    stem: "The image on the right shows a pedestrian bridge in Newport, Wales. It is based on a parabola. Fig. B-1 shows the elevation, plan and end view of a model of the bridge. The curve ABC is a parabola in elevation with vertex at B. A pictorial view of the bridge is also shown.",
     questionText: "Draw the given elevation and end view of the bridge.",
     tariffModel: {"kind":"fixed","notation":"(33)"}, totalMarks: 33,
     rows: [
@@ -3429,7 +3429,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-b1b", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
     section: "B", questionRef: "2021 HL Section B Q1(b)",
-    stem: "and Section C on drawing paper. The image on the right shows a pedestrian bridge in Newport, Wales. It is based on a parabola. Fig. B-1 shows the elevation, plan and end view of a model of the bridge. The curve ABC is a parabola in elevation with vertex at B. A pictorial view of the bridge is also shown.",
+    stem: "The image on the right shows a pedestrian bridge in Newport, Wales. It is based on a parabola. Fig. B-1 shows the elevation, plan and end view of a model of the bridge. The curve ABC is a parabola in elevation with vertex at B. A pictorial view of the bridge is also shown.",
     questionText: "Project the given plan.",
     tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
@@ -3456,7 +3456,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-b1c", topicId: "design-and-communication-graphics-0-5", conceptId: "dcg-0-5",
     section: "B", questionRef: "2021 HL Section B Q1(c)",
-    stem: "and Section C on drawing paper. The image on the right shows a pedestrian bridge in Newport, Wales. It is based on a parabola. Fig. B-1 shows the elevation, plan and end view of a model of the bridge. The curve ABC is a parabola in elevation with vertex at B. A pictorial view of the bridge is also shown.",
+    stem: "The image on the right shows a pedestrian bridge in Newport, Wales. It is based on a parabola. Fig. B-1 shows the elevation, plan and end view of a model of the bridge. The curve ABC is a parabola in elevation with vertex at B. A pictorial view of the bridge is also shown.",
     questionText: "Determine the true shape of the curve ABC.",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -3480,7 +3480,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-b2a", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2021 HL Section B Q2(a)",
-    stem: "The image on the right shows a car showroom in Qatar. The building includes a series of intersecting planar triangular surfaces. Fig. B-2 shows the plan and elevation of four intersecting triangular planes. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 145 --- 10 --- 70 B: 130 --- 45 --- 40 C: 180 --- 55 --- 30 D: 100 --- 60 --- 20 E: 145 --- 90 --- 10 --- 10 --- ?",
+    stem: "The image on the right shows a car showroom in Qatar. The building includes a series of intersecting planar triangular surfaces. Fig. B-2 shows the plan and elevation of four intersecting triangular planes. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 145 --- 10 --- 70 B: 130 --- 45 --- 40 C: 180 --- 55 --- 30 D: 100 --- 60 --- 20 E: 145 --- 90 --- 10 F: ? --- 10 --- ?",
     questionText: "Draw the given elevation and plan of the intersecting planes ABC, ABD, and BDE.",
     tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
     rows: [
@@ -3503,7 +3503,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-b2b", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2021 HL Section B Q2(b)",
-    stem: "The image on the right shows a car showroom in Qatar. The building includes a series of intersecting planar triangular surfaces. Fig. B-2 shows the plan and elevation of four intersecting triangular planes. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 145 --- 10 --- 70 B: 130 --- 45 --- 40 C: 180 --- 55 --- 30 D: 100 --- 60 --- 20 E: 145 --- 90 --- 10 --- 10 --- ?",
+    stem: "The image on the right shows a car showroom in Qatar. The building includes a series of intersecting planar triangular surfaces. Fig. B-2 shows the plan and elevation of four intersecting triangular planes. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 145 --- 10 --- 70 B: 130 --- 45 --- 40 C: 180 --- 55 --- 30 D: 100 --- 60 --- 20 E: 145 --- 90 --- 10 F: ? --- 10 --- ?",
     questionText: "Determine the dihedral angle between the planes ABC and ABD.",
     tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
     rows: [
@@ -3528,7 +3528,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-b2c", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2021 HL Section B Q2(c)",
-    stem: "The image on the right shows a car showroom in Qatar. The building includes a series of intersecting planar triangular surfaces. Fig. B-2 shows the plan and elevation of four intersecting triangular planes. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 145 --- 10 --- 70 B: 130 --- 45 --- 40 C: 180 --- 55 --- 30 D: 100 --- 60 --- 20 E: 145 --- 90 --- 10 --- 10 --- ?",
+    stem: "The image on the right shows a car showroom in Qatar. The building includes a series of intersecting planar triangular surfaces. Fig. B-2 shows the plan and elevation of four intersecting triangular planes. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 145 --- 10 --- 70 B: 130 --- 45 --- 40 C: 180 --- 55 --- 30 D: 100 --- 60 --- 20 E: 145 --- 90 --- 10 F: ? --- 10 --- ?",
     questionText: "A line is drawn from the point E. This line is parallel to the line AC and intersects the horizontal plane at a point P. Draw the projections of the line EP and determine its inclination to the horizontal plane.",
     tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
     rows: [
@@ -3552,7 +3552,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-b2d", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2021 HL Section B Q2(d)",
-    stem: "The image on the right shows a car showroom in Qatar. The building includes a series of intersecting planar triangular surfaces. Fig. B-2 shows the plan and elevation of four intersecting triangular planes. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 145 --- 10 --- 70 B: 130 --- 45 --- 40 C: 180 --- 55 --- 30 D: 100 --- 60 --- 20 E: 145 --- 90 --- 10 --- 10 --- ?",
+    stem: "The image on the right shows a car showroom in Qatar. The building includes a series of intersecting planar triangular surfaces. Fig. B-2 shows the plan and elevation of four intersecting triangular planes. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 145 --- 10 --- 70 B: 130 --- 45 --- 40 C: 180 --- 55 --- 30 D: 100 --- 60 --- 20 E: 145 --- 90 --- 10 F: ? --- 10 --- ?",
     questionText: "The true lengths of the edges AF and CF of the plane ACF are 70mm and 80mm, respectively. Complete the projections of the triangle ACF.",
     tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
     rows: [
@@ -3646,7 +3646,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c1a-1", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2021 HL Section C Q1(a) — Earthworks on curved section between A and B (Level) - Embankment",
-    stem: "and Section C on drawing paper.",
     questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on the bank of a river used for kayaking. ABCD is the edge of the river and O is the centre of the circular curve AB which forms part of the river edge. The river has the following specifications: the portion of the river edge between A and C is level at an altitude of 95m the portion from C to D is falling uniformly to a level of 90m at D. Using side slopes of 1 in 2 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the river on the northern side. Note: The earthworks on the southern side have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
     rows: [
@@ -3683,7 +3682,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c1a-2", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2021 HL Section C Q1(a) — Earthworks on curved section between A and B (Level) - Cutting",
-    stem: "and Section C on drawing paper.",
     questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on the bank of a river used for kayaking. ABCD is the edge of the river and O is the centre of the circular curve AB which forms part of the river edge. The river has the following specifications: the portion of the river edge between A and C is level at an altitude of 95m the portion from C to D is falling uniformly to a level of 90m at D. Using side slopes of 1 in 2 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the river on the northern side. Note: The earthworks on the southern side have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
     rows: [
@@ -3720,7 +3718,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c1a-3", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2021 HL Section C Q1(a) — Earthworks between B and C (Level) – Cutting",
-    stem: "and Section C on drawing paper.",
     questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on the bank of a river used for kayaking. ABCD is the edge of the river and O is the centre of the circular curve AB which forms part of the river edge. The river has the following specifications: the portion of the river edge between A and C is level at an altitude of 95m the portion from C to D is falling uniformly to a level of 90m at D. Using side slopes of 1 in 2 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the river on the northern side. Note: The earthworks on the southern side have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
@@ -3757,7 +3754,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c1a-4", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2021 HL Section C Q1(a) — Earthworks between C and D (falling embankment)",
-    stem: "and Section C on drawing paper.",
     questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on the bank of a river used for kayaking. ABCD is the edge of the river and O is the centre of the circular curve AB which forms part of the river edge. The river has the following specifications: the portion of the river edge between A and C is level at an altitude of 95m the portion from C to D is falling uniformly to a level of 90m at D. Using side slopes of 1 in 2 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the river on the northern side. Note: The earthworks on the southern side have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
     rows: [
@@ -3795,7 +3791,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c1a-5", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2021 HL Section C Q1(a) — Earthworks between C and D (falling cutting)",
-    stem: "and Section C on drawing paper.",
     questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on the bank of a river used for kayaking. ABCD is the edge of the river and O is the centre of the circular curve AB which forms part of the river edge. The river has the following specifications: the portion of the river edge between A and C is level at an altitude of 95m the portion from C to D is falling uniformly to a level of 90m at D. Using side slopes of 1 in 2 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the river on the northern side. Note: The earthworks on the southern side have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
@@ -3833,7 +3828,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Higher Level — © State Examinations Commission.",
     id: "dcg-2021-hl-c1b", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2021 HL Section C Q1(b)",
-    stem: "and Section C on drawing paper. On a separate diagram on the map, the elevation and plan of three boreholes drawn from points P, Q and R are shown. They reveal the top surface of a stratum of ore at distances of 13m, 15m and 10m from P, Q and R, respectively.",
+    stem: "On a separate diagram on the map, the elevation and plan of three boreholes drawn from points P, Q and R are shown. They reveal the top surface of a stratum of ore at distances of 13m, 15m and 10m from P, Q and R, respectively.",
     questionText: "(i) Draw the elevation and plan of the top surface of the stratum. (ii) Determine the strike and dip of the stratum. (iii) The length of the borehole from P as it passes through the stratum is 15m. Determine the thickness of the stratum.",
     tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
@@ -4466,7 +4461,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-b1a", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2022 HL Section B Q1(a)",
-    stem: "and Section C on drawing paper. The image on the right shows the Hooker sculpture in Eyre Square Galway. The geometry of the design comprises a series of planar surfaces. Fig. B-1 shows the plan and elevation of three intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and F are given. Partial coordinates for the point G are also given. The edges BD and FG are parallel. A: 160 --- 40 --- 70 B: 180 --- 80 --- 35 C: 200 --- 0 --- 115 D: 225 --- 105 --- 10 E: 245 --- 0 --- 95 190 --- 40 --- 75 G: 260 --- ? --- ?",
+    stem: "The image on the right shows the Hooker sculpture in Eyre Square Galway. The geometry of the design comprises a series of planar surfaces. Fig. B-1 shows the plan and elevation of three intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and F are given. Partial coordinates for the point G are also given. The edges BD and FG are parallel. A: 160 --- 40 --- 70 B: 180 --- 80 --- 35 C: 200 --- 0 --- 115 D: 225 --- 105 --- 10 E: 245 --- 0 --- 95 F: 190 --- 40 --- 75 G: 260 --- ? --- ?",
     questionText: "Draw the given elevation and plan of the intersecting planes ABC, ABD and EFG.",
     tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
     rows: [
@@ -4489,7 +4484,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-b1b", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2022 HL Section B Q1(b)",
-    stem: "and Section C on drawing paper. The image on the right shows the Hooker sculpture in Eyre Square Galway. The geometry of the design comprises a series of planar surfaces. Fig. B-1 shows the plan and elevation of three intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and F are given. Partial coordinates for the point G are also given. The edges BD and FG are parallel. A: 160 --- 40 --- 70 B: 180 --- 80 --- 35 C: 200 --- 0 --- 115 D: 225 --- 105 --- 10 E: 245 --- 0 --- 95 190 --- 40 --- 75 G: 260 --- ? --- ?",
+    stem: "The image on the right shows the Hooker sculpture in Eyre Square Galway. The geometry of the design comprises a series of planar surfaces. Fig. B-1 shows the plan and elevation of three intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and F are given. Partial coordinates for the point G are also given. The edges BD and FG are parallel. A: 160 --- 40 --- 70 B: 180 --- 80 --- 35 C: 200 --- 0 --- 115 D: 225 --- 105 --- 10 E: 245 --- 0 --- 95 F: 190 --- 40 --- 75 G: 260 --- ? --- ?",
     questionText: "Determine the dihedral angle between the planes ABC and ABD.",
     tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
     rows: [
@@ -4514,7 +4509,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-b1c", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2022 HL Section B Q1(c)",
-    stem: "and Section C on drawing paper. The image on the right shows the Hooker sculpture in Eyre Square Galway. The geometry of the design comprises a series of planar surfaces. Fig. B-1 shows the plan and elevation of three intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and F are given. Partial coordinates for the point G are also given. The edges BD and FG are parallel. A: 160 --- 40 --- 70 B: 180 --- 80 --- 35 C: 200 --- 0 --- 115 D: 225 --- 105 --- 10 E: 245 --- 0 --- 95 190 --- 40 --- 75 G: 260 --- ? --- ?",
+    stem: "The image on the right shows the Hooker sculpture in Eyre Square Galway. The geometry of the design comprises a series of planar surfaces. Fig. B-1 shows the plan and elevation of three intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and F are given. Partial coordinates for the point G are also given. The edges BD and FG are parallel. A: 160 --- 40 --- 70 B: 180 --- 80 --- 35 C: 200 --- 0 --- 115 D: 225 --- 105 --- 10 E: 245 --- 0 --- 95 F: 190 --- 40 --- 75 G: 260 --- ? --- ?",
     questionText: "Draw the elevation and plan of a horizontal line on the surface EFG and project an auxiliary elevation which will show an edge view of the plane EFG. Indicate the angle of inclination of the plane EFG to the horizontal plane.",
     tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
     rows: [
@@ -4539,7 +4534,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-b1d", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2022 HL Section B Q1(d)",
-    stem: "and Section C on drawing paper. The image on the right shows the Hooker sculpture in Eyre Square Galway. The geometry of the design comprises a series of planar surfaces. Fig. B-1 shows the plan and elevation of three intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and F are given. Partial coordinates for the point G are also given. The edges BD and FG are parallel. A: 160 --- 40 --- 70 B: 180 --- 80 --- 35 C: 200 --- 0 --- 115 D: 225 --- 105 --- 10 E: 245 --- 0 --- 95 190 --- 40 --- 75 G: 260 --- ? --- ?",
+    stem: "The image on the right shows the Hooker sculpture in Eyre Square Galway. The geometry of the design comprises a series of planar surfaces. Fig. B-1 shows the plan and elevation of three intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and F are given. Partial coordinates for the point G are also given. The edges BD and FG are parallel. A: 160 --- 40 --- 70 B: 180 --- 80 --- 35 C: 200 --- 0 --- 115 D: 225 --- 105 --- 10 E: 245 --- 0 --- 95 F: 190 --- 40 --- 75 G: 260 --- ? --- ?",
     questionText: "Locate the position of a point P on the plane EFG which is a distance of 40mm from the horizontal plane and 68mm from the vertical plane. Determine and indicate the true length of FP.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
@@ -4703,7 +4698,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c1a-1", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2022 HL Section C Q1(a) — Earthworks between A and B (Level, Sloping edge) - Embankment",
-    stem: "and Section C on drawing paper.",
     questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on a greenway. ABCD is the centreline of a proposed path. The path is widened between A and B to form a rest area as shown. The path and the rest area have the following specifications: the portion from A to B is level at an altitude of 65m and is widened as shown the portion from B to C is level at an altitude of 65m the portion from C to D is rising uniformly from a height of 65m at C to a height of 70m at D. Using side slopes of 1 in 1 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the path and rest area on the northern side. Note: The earthworks on the southern side have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
     rows: [
@@ -4740,7 +4734,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c1a-2", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2022 HL Section C Q1(a) — Earthworks between B and C (Level) - Embankment",
-    stem: "and Section C on drawing paper.",
     questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on a greenway. ABCD is the centreline of a proposed path. The path is widened between A and B to form a rest area as shown. The path and the rest area have the following specifications: the portion from A to B is level at an altitude of 65m and is widened as shown the portion from B to C is level at an altitude of 65m the portion from C to D is rising uniformly from a height of 65m at C to a height of 70m at D. Using side slopes of 1 in 1 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the path and rest area on the northern side. Note: The earthworks on the southern side have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
     rows: [
@@ -4777,7 +4770,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c1a-3", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2022 HL Section C Q1(a) — Earthworks between B and C (Level) - Cutting",
-    stem: "and Section C on drawing paper.",
     questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on a greenway. ABCD is the centreline of a proposed path. The path is widened between A and B to form a rest area as shown. The path and the rest area have the following specifications: the portion from A to B is level at an altitude of 65m and is widened as shown the portion from B to C is level at an altitude of 65m the portion from C to D is rising uniformly from a height of 65m at C to a height of 70m at D. Using side slopes of 1 in 1 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the path and rest area on the northern side. Note: The earthworks on the southern side have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
@@ -4814,7 +4806,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c1a-4", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2022 HL Section C Q1(a) — Earthworks between C and D - Embankment",
-    stem: "and Section C on drawing paper.",
     questionText: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals on a greenway. ABCD is the centreline of a proposed path. The path is widened between A and B to form a rest area as shown. The path and the rest area have the following specifications: the portion from A to B is level at an altitude of 65m and is widened as shown the portion from B to C is level at an altitude of 65m the portion from C to D is rising uniformly from a height of 65m at C to a height of 70m at D. Using side slopes of 1 in 1 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the path and rest area on the northern side. Note: The earthworks on the southern side have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
     rows: [
@@ -4852,7 +4843,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c1b", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2022 HL Section C Q1(b)",
-    stem: "and Section C on drawing paper.",
     questionText: "In the space provided at the top of the map, draw a vertical section (profile) on the line EF after the earthworks for the path and the rest area have been completed.",
     tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
     rows: [
@@ -4892,7 +4882,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Higher Level — © State Examinations Commission.",
     id: "dcg-2022-hl-c1c", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2022 HL Section C Q1(c)",
-    stem: "and Section C on drawing paper.",
     questionText: "A mobile phone mast is to be built at point E. Determine, and indicate in metres, the maximum height for the mast if the top of the mast is not to be visible from the ground at point F on the rest area.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
@@ -8482,7 +8471,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-b3a", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2026 HL Section B Q3(a)",
-    stem: "The image on the right shows a structure in Dublin Port. The geometry of the structure includes a series of planar triangular surfaces. Fig. B-3 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for the point F are also given. A: 100 --- 25 --- 55 B: 150 --- 20 --- 70 C: 205 --- 0 --- 75 D: 230 --- 60 --- 20 E: 260 --- 0 --- 65 280 --- ? --- 30",
+    stem: "The image on the right shows a structure in Dublin Port. The geometry of the structure includes a series of planar triangular surfaces. Fig. B-3 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for the point F are also given. A: 100 --- 25 --- 55 B: 150 --- 20 --- 70 C: 205 --- 0 --- 75 D: 230 --- 60 --- 20 E: 260 --- 0 --- 65 F: 280 --- ? --- 30",
     questionText: "Draw the given elevation and plan of the intersecting planes ABD, BCD, and CDE.",
     tariffModel: {"kind":"fixed","notation":"(17)"}, totalMarks: 17,
     rows: [
@@ -8505,7 +8494,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-b3b", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2026 HL Section B Q3(b)",
-    stem: "The image on the right shows a structure in Dublin Port. The geometry of the structure includes a series of planar triangular surfaces. Fig. B-3 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for the point F are also given. A: 100 --- 25 --- 55 B: 150 --- 20 --- 70 C: 205 --- 0 --- 75 D: 230 --- 60 --- 20 E: 260 --- 0 --- 65 280 --- ? --- 30",
+    stem: "The image on the right shows a structure in Dublin Port. The geometry of the structure includes a series of planar triangular surfaces. Fig. B-3 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for the point F are also given. A: 100 --- 25 --- 55 B: 150 --- 20 --- 70 C: 205 --- 0 --- 75 D: 230 --- 60 --- 20 E: 260 --- 0 --- 65 F: 280 --- ? --- 30",
     questionText: "Determine the dihedral angle between planes ABD and BCD.",
     tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
@@ -8530,7 +8519,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-b3c", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2026 HL Section B Q3(c)",
-    stem: "The image on the right shows a structure in Dublin Port. The geometry of the structure includes a series of planar triangular surfaces. Fig. B-3 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for the point F are also given. A: 100 --- 25 --- 55 B: 150 --- 20 --- 70 C: 205 --- 0 --- 75 D: 230 --- 60 --- 20 E: 260 --- 0 --- 65 280 --- ? --- 30",
+    stem: "The image on the right shows a structure in Dublin Port. The geometry of the structure includes a series of planar triangular surfaces. Fig. B-3 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for the point F are also given. A: 100 --- 25 --- 55 B: 150 --- 20 --- 70 C: 205 --- 0 --- 75 D: 230 --- 60 --- 20 E: 260 --- 0 --- 65 F: 280 --- ? --- 30",
     questionText: "Determine and indicate the angle of inclination of the plane CDE to the horizontal plane.",
     tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
     rows: [
@@ -8554,7 +8543,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2026 Higher Level — © State Examinations Commission.",
     id: "dcg-2026-hl-b3d", topicId: "design-and-communication-graphics-0-11", conceptId: "dcg-0-11",
     section: "B", questionRef: "2026 HL Section B Q3(d)",
-    stem: "The image on the right shows a structure in Dublin Port. The geometry of the structure includes a series of planar triangular surfaces. Fig. B-3 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for the point F are also given. A: 100 --- 25 --- 55 B: 150 --- 20 --- 70 C: 205 --- 0 --- 75 D: 230 --- 60 --- 20 E: 260 --- 0 --- 65 280 --- ? --- 30",
+    stem: "The image on the right shows a structure in Dublin Port. The geometry of the structure includes a series of planar triangular surfaces. Fig. B-3 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for the point F are also given. A: 100 --- 25 --- 55 B: 150 --- 20 --- 70 C: 205 --- 0 --- 75 D: 230 --- 60 --- 20 E: 260 --- 0 --- 65 F: 280 --- ? --- 30",
     questionText: "The dihedral angle between the planes CDE and DEF is 150°. Complete the projections of the plane DEF.",
     tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
     rows: [

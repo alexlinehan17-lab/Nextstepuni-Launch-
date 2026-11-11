@@ -2016,7 +2016,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2021-ol-b1a", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2021 OL Section B Q1(a)",
-    stem: "and Section C on drawing paper. The 3D graphic on the right shows a dog kennel with the door in the open position. Fig. B-1 below shows an isometric view of a similar kennel.",
+    stem: "The 3D graphic on the right shows a dog kennel with the door in the open position. Fig. B-1 below shows an isometric view of a similar kennel.",
     questionText: "Draw the elevation of the kennel looking in the direction of the arrow and project the plan.",
     tariffModel: {"kind":"fixed","notation":"(27)"}, totalMarks: 27,
     rows: [
@@ -2041,7 +2041,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2021-ol-b1b", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2021 OL Section B Q1(b)",
-    stem: "and Section C on drawing paper. The 3D graphic on the right shows a dog kennel with the door in the open position. Fig. B-1 below shows an isometric view of a similar kennel.",
+    stem: "The 3D graphic on the right shows a dog kennel with the door in the open position. Fig. B-1 below shows an isometric view of a similar kennel.",
     questionText: "Draw the plan and elevation of the door in the open position as shown.",
     tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
     rows: [
@@ -2064,7 +2064,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2021-ol-b1c", topicId: "design-and-communication-graphics-0-1", conceptId: "dcg-0-1",
     section: "B", questionRef: "2021 OL Section B Q1(c)",
-    stem: "and Section C on drawing paper. The 3D graphic on the right shows a dog kennel with the door in the open position. Fig. B-1 below shows an isometric view of a similar kennel.",
+    stem: "The 3D graphic on the right shows a dog kennel with the door in the open position. Fig. B-1 below shows an isometric view of a similar kennel.",
     questionText: "Draw the auxiliary elevation of the kennel, projected from the plan, which will include the true shape of face A of the door.",
     tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
@@ -2293,7 +2293,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2021-ol-c1a", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2021 OL Section C Q1(a)",
-    stem: "and Section C on drawing paper. The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
+    stem: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
     questionText: "On the map supplied, draw a vertical section (profile) on the line AB.",
     tariffModel: {"kind":"fixed","notation":"(42)"}, totalMarks: 42,
     rows: [
@@ -2332,7 +2332,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2021-ol-c1b", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2021 OL Section C Q1(b)",
-    stem: "and Section C on drawing paper. The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
+    stem: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
     questionText: "Points C, D and E are outcrop points on the surface of a stratum of ore. Draw the plan and elevation of the triangle CDE.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
@@ -2369,7 +2369,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2021 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2021-ol-c1c", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2021 OL Section C Q1(c)",
-    stem: "and Section C on drawing paper. The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
+    stem: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
     questionText: "Determine the strike and dip of the stratum.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
@@ -2893,7 +2893,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2022-ol-b1a", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
     section: "B", questionRef: "2022 OL Section B Q1(a)",
-    stem: "and Section C on drawing paper. The image on the right shows a Tesla charging station. Fig B-1 below shows an incomplete isometric projection of a similar charging station. The elevation and plan of the station are also shown in their required positions.",
+    stem: "The image on the right shows a Tesla charging station. Fig B-1 below shows an incomplete isometric projection of a similar charging station. The elevation and plan of the station are also shown in their required positions.",
     questionText: "Draw the given equilateral triangle abc and the axonometric axes X, Y, and Z.",
     tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
@@ -2917,7 +2917,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2022-ol-b1b", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
     section: "B", questionRef: "2022 OL Section B Q1(b)",
-    stem: "and Section C on drawing paper. The image on the right shows a Tesla charging station. Fig B-1 below shows an incomplete isometric projection of a similar charging station. The elevation and plan of the station are also shown in their required positions.",
+    stem: "The image on the right shows a Tesla charging station. Fig B-1 below shows an incomplete isometric projection of a similar charging station. The elevation and plan of the station are also shown in their required positions.",
     questionText: "Draw the elevation and plan, positioned as shown.",
     tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
@@ -2944,7 +2944,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2022-ol-b1c", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
     section: "B", questionRef: "2022 OL Section B Q1(c)",
-    stem: "and Section C on drawing paper. The image on the right shows a Tesla charging station. Fig B-1 below shows an incomplete isometric projection of a similar charging station. The elevation and plan of the station are also shown in their required positions.",
+    stem: "The image on the right shows a Tesla charging station. Fig B-1 below shows an incomplete isometric projection of a similar charging station. The elevation and plan of the station are also shown in their required positions.",
     questionText: "Draw the axonometric projection of the rectangular outline of the charging station.",
     tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
     rows: [
@@ -2970,7 +2970,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2022-ol-b1d", topicId: "design-and-communication-graphics-0-2", conceptId: "dcg-0-2",
     section: "B", questionRef: "2022 OL Section B Q1(d)",
-    stem: "and Section C on drawing paper. The image on the right shows a Tesla charging station. Fig B-1 below shows an incomplete isometric projection of a similar charging station. The elevation and plan of the station are also shown in their required positions.",
+    stem: "The image on the right shows a Tesla charging station. Fig B-1 below shows an incomplete isometric projection of a similar charging station. The elevation and plan of the station are also shown in their required positions.",
     questionText: "Draw the axonometric projection of the central cut-out including the semi-circle.",
     tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
@@ -3172,7 +3172,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2022-ol-c1a", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2022 OL Section C Q1(a)",
-    stem: "and Section C on drawing paper. The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
+    stem: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
     questionText: "On the map supplied, draw a vertical section (profile) on the line AB.",
     tariffModel: {"kind":"fixed","notation":"(33)"}, totalMarks: 33,
     rows: [
@@ -3211,7 +3211,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Design and Communication Graphics 2022 Ordinary Level — © State Examinations Commission.",
     id: "dcg-2022-ol-c1b", topicId: "design-and-communication-graphics-2-2", conceptId: "dcg-2-2",
     section: "C", questionRef: "2022 OL Section C Q1(b)",
-    stem: "and Section C on drawing paper. The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
+    stem: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
     questionText: "The image on the right shows a section of the M8 motorway which links Dublin to Cork. CD is the centreline of the roadway which is level at an altitude of 50m. Using side slopes of 1:1 for the embankments and 1:2 for the cuttings, complete the earthworks on the northern side, which are necessary to accommodate the roadway. Note: The earthworks on the southern side of the roadway have already been completed.",
     tariffModel: {"kind":"fixed","notation":"(27)"}, totalMarks: 27,
     rows: [
