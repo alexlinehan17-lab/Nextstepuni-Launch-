@@ -5340,979 +5340,1886 @@
  },
  {
   "id": "lcvp-2021-cl-a1",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-0-1",
   "conceptId": "way-job-may-be-advertised",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "A",
   "questionRef": "2021 CL Section A Q1",
   "questionText": "Name one way a job may be advertised.",
-  "stem": "You will be shown a DVD with interviewing for a job as the theme.",
+  "stem": "",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "1 marks",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
   "totalMarks": 1,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Agencies/online job sites/social media/their hotels",
+    "id": "responses",
+    "kind": "anyN",
+    "verbatim": "one way a job may be advertised",
     "marks": 1,
     "openList": true,
-    "contextNote": "1 answer at 1 mark each."
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Agencies",
+      "online job sites",
+      "social media",
+      "their hotels"
+     ]
+    },
+    "contextNote": ""
    }
   ],
-  "notes": ""
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "videoMaterial": {
+   "kind": "source-video",
+   "label": "OFFICIAL VIDEO",
+   "title": "2021 LCVP audiovisual examination",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "secFileid": "LC462CLP031EV.mov",
+   "attribution": "State Examinations Commission — original 2021 Common Level English audiovisual recording.",
+   "presentationNote": "Watch the original interviewing-for-a-job sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original audiovisual instructions",
+    "pages": [
+     3
+    ],
+    "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
  },
  {
   "id": "lcvp-2021-cl-a2",
-  "topicId": "lcvp-link-modules-0-4",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-0-1",
   "conceptId": "preparation-did-mark-interview",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "A",
   "questionRef": "2021 CL Section A Q2",
   "questionText": "What preparation did Mark do for this interview?",
-  "stem": "You will be shown a DVD with interviewing for a job as the theme.",
+  "stem": "",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 x 1 mark",
-   "answer": 2,
-   "ofParts": 7,
-   "perPart": 1
-  },
   "totalMarks": 2,
   "rows": [
    {
-    "id": "r-1",
+    "id": "responses",
     "kind": "anyN",
-    "verbatim": "Any 2 of the answers the scheme states",
+    "verbatim": "What preparation did Mark do for this interview? 2 x 1 mark Two valid reasons",
     "marks": 2,
     "openList": true,
-    "contextNote": "2 answers at 1 mark each.",
     "group": {
      "claimMax": 2,
      "perOption": 1,
      "options": [
-      "He put a lot of work into his online application",
-      "He printed out a copy before filling it in online",
-      "He made sure everything was spelled correctly",
-      "He spent time on the cover letter so that it was short and to the point",
-      "He got his dad to proof-read it",
-      "He puts some sticky notes with key phrases around the edge of his screen",
-      "He checks the background view in his laptop and repositions it so that a poster on the wall won’t be seen"
+      "He put a lot of work into his online application.",
+      "He printed out a copy before filling it in online.",
+      "He made sure everything was spelled correctly.",
+      "He spent time on the cover letter so that it was short and to the point.",
+      "He got his dad to proof-read it.",
+      "He puts some sticky notes with key phrases around the edge of his screen.",
+      "He checks the background view in his laptop and repositions it so that a poster on the wall won’t be seen."
      ]
-    }
+    },
+    "contextNote": "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. "
    }
   ],
-  "notes": "The scheme prices this ask \"2 x 1 mark\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "videoMaterial": {
+   "kind": "source-video",
+   "label": "OFFICIAL VIDEO",
+   "title": "2021 LCVP audiovisual examination",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "secFileid": "LC462CLP031EV.mov",
+   "attribution": "State Examinations Commission — original 2021 Common Level English audiovisual recording.",
+   "presentationNote": "Watch the original interviewing-for-a-job sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original audiovisual instructions",
+    "pages": [
+     3
+    ],
+    "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
  },
  {
   "id": "lcvp-2021-cl-a3",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-0-1",
   "conceptId": "preparation-did-kate-zoom-interview",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "A",
   "questionRef": "2021 CL Section A Q3",
   "questionText": "What preparation did Kate do for this Zoom interview?",
-  "stem": "You will be shown a DVD with interviewing for a job as the theme.",
+  "stem": "",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 1 mark",
-   "answer": 3,
-   "ofParts": 7,
-   "perPart": 1
-  },
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "responses",
     "kind": "anyN",
-    "verbatim": "Any 3 of the answers the scheme states",
+    "verbatim": "What preparation did Kate do for this Zoom interview? Three valid answers 3 x 1 mark",
     "marks": 3,
     "openList": true,
-    "contextNote": "3 answers at 1 mark each.",
     "group": {
      "claimMax": 3,
      "perOption": 1,
      "options": [
-      "She put an 'Interview in progress' sign on the door",
-      "She gets Zoom up on her computer",
-      "She has questions ready",
-      "She did up a scoring sheet so she can take notes on each person",
-      "She chose an office/room with reliable Wi-Fi",
-      "She made sure to look at the camera and not at the screen",
-      "She organized herself to record the interviews to justify her decisions to HR"
+      "She put an 'Interview in progress' sign on the door.",
+      "She gets Zoom up on her computer.",
+      "She has questions ready.",
+      "She did up a scoring sheet so she can take notes on each person.",
+      "She chose an office/room with reliable Wi-Fi.",
+      "She made sure to look at the camera and not at the screen.",
+      "She organized herself to record the interviews to justify her decisions to HR."
      ]
-    }
+    },
+    "contextNote": "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. "
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 1 mark\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "videoMaterial": {
+   "kind": "source-video",
+   "label": "OFFICIAL VIDEO",
+   "title": "2021 LCVP audiovisual examination",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "secFileid": "LC462CLP031EV.mov",
+   "attribution": "State Examinations Commission — original 2021 Common Level English audiovisual recording.",
+   "presentationNote": "Watch the original interviewing-for-a-job sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original audiovisual instructions",
+    "pages": [
+     3
+    ],
+    "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
  },
  {
   "id": "lcvp-2021-cl-a4",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-0-1",
   "conceptId": "mark-prefer-hotel-trainee-program-college",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "A",
   "questionRef": "2021 CL Section A Q4",
   "questionText": "Why would Mark prefer the hotel trainee program to a college course as his chosen career path? Give two reasons.",
-  "stem": "You will be shown a DVD with interviewing for a job as the theme.",
+  "stem": "",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 @ 1 mark",
-   "answer": 2,
-   "ofParts": 5,
-   "perPart": 1
-  },
   "totalMarks": 2,
   "rows": [
    {
-    "id": "r-1",
+    "id": "responses",
     "kind": "anyN",
-    "verbatim": "Any 2 of the answers the scheme states",
+    "verbatim": "Why would Mark prefer the hotel trainee program to a college course as his chosen career path? Give two reasons. Two valid answers 2 @ 1 mark",
     "marks": 2,
     "openList": true,
-    "contextNote": "2 answers at 1 mark each.",
     "group": {
      "claimMax": 2,
      "perOption": 1,
      "options": [
-      "He researched the hotel and found out it's one of the leading groups of hotels around the world, so the placement could be done anywhere",
-      "He likes the idea of doing a placement in the New York hotel with its famous conference center",
-      "He sees that Kate started as a trainee manager and is now general manager for all of Europe which means that there is great career possibilities through this program",
-      "After doing work experience in the local hotel, he got a weekend job in the hotel at weekends because he really liked the work",
-      "He liked the people he met"
+      "He researched the hotel and found out it's one of the leading groups of hotels around the world, so the placement could be done anywhere.",
+      "He likes the idea of doing a placement in the New York hotel with its famous conference center.",
+      "He sees that Kate started as a trainee manager and is now general manager for all of Europe which means that there is great career possibilities through this program.",
+      "After doing work experience in the local hotel, he got a weekend job in the hotel at weekends because he really liked the work.",
+      "He liked the people he met."
      ]
-    }
+    },
+    "contextNote": "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. "
    }
   ],
-  "notes": "The scheme prices this ask \"2 @ 1 mark\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "videoMaterial": {
+   "kind": "source-video",
+   "label": "OFFICIAL VIDEO",
+   "title": "2021 LCVP audiovisual examination",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "secFileid": "LC462CLP031EV.mov",
+   "attribution": "State Examinations Commission — original 2021 Common Level English audiovisual recording.",
+   "presentationNote": "Watch the original interviewing-for-a-job sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original audiovisual instructions",
+    "pages": [
+     3
+    ],
+    "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
  },
  {
   "id": "lcvp-2021-cl-a5",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-0-1",
   "conceptId": "mark-s-research-benefited-him-interview",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "A",
   "questionRef": "2021 CL Section A Q5",
   "questionText": "Describe how Mark’s research benefited him in the interview.",
-  "stem": "You will be shown a DVD with interviewing for a job as the theme.",
+  "stem": "",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 x 2 marks (0/2)",
-   "answer": 2,
-   "ofParts": 5,
-   "perPart": 2
-  },
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "responses",
     "kind": "anyN",
-    "verbatim": "Any 2 of the answers the scheme states",
+    "verbatim": "Describe how Mark’s research benefited him in the interview. Two valid reasons 2 x 2 marks (0/2)",
     "marks": 4,
     "openList": true,
-    "contextNote": "2 answers at 2 marks each; (0/2) — all or nothing on each answer.",
     "group": {
      "claimMax": 2,
      "perOption": 2,
      "options": [
-      "He showed his extensive knowledge of the hotel/job",
-      "By preparing for the interview he showed his interest in the job",
-      "He had confidence in answering the questions asked",
-      "He knew who the General Manager was and how she got promoted into that position",
-      "He impressed the interviewer because he was able to give good examples when needed"
+      "He showed his extensive knowledge of the hotel/job.",
+      "By preparing for the interview he showed his interest in the job.",
+      "He had confidence in answering the questions asked.",
+      "He knew who the General Manager was and how she got promoted into that position.",
+      "He impressed the interviewer because he was able to give good examples when needed."
      ]
-    }
+    },
+    "contextNote": "Choose any 2 distinct responses across the complete original pool. Each response receives 2 or 0 marks; no unprinted partial step is inferred. "
    }
   ],
-  "notes": "The scheme prices this ask \"2 x 2 marks (0/2)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "videoMaterial": {
+   "kind": "source-video",
+   "label": "OFFICIAL VIDEO",
+   "title": "2021 LCVP audiovisual examination",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "secFileid": "LC462CLP031EV.mov",
+   "attribution": "State Examinations Commission — original 2021 Common Level English audiovisual recording.",
+   "presentationNote": "Watch the original interviewing-for-a-job sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original audiovisual instructions",
+    "pages": [
+     3
+    ],
+    "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
+ },
+ {
+  "id": "lcvp-2021-cl-a6i",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-0-1",
+  "conceptId": "a6i",
+  "level": "common",
+  "year": 2021,
+  "section": "A",
+  "questionRef": "2021 CL Section A Q6(i)",
+  "questionText": "Name and explain one skill and one quality that Mark shows in his interview.",
+  "stem": "People are born with qualities but can learn skills.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "skill",
+    "kind": "criterion",
+    "verbatim": "one skill",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "ONE skill, name1 + explanation1; keep the explanation tied to Mark’s interview. Complete original skill pool: Organisation | Planning | Research | Teamwork | Problem solving | Leadership | Ability to work under pressure. | "
+   },
+   {
+    "id": "quality",
+    "kind": "criterion",
+    "verbatim": "one quality",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "ONE quality, name1 + explanation1; both skill and quality are required. Complete original quality pool: Honest | Flexible | Friendly | Hardworking | Patient | Motivated | Takes initiative | Dependable"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "videoMaterial": {
+   "kind": "source-video",
+   "label": "OFFICIAL VIDEO",
+   "title": "2021 LCVP audiovisual examination",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "secFileid": "LC462CLP031EV.mov",
+   "attribution": "State Examinations Commission — original 2021 Common Level English audiovisual recording.",
+   "presentationNote": "Watch the original interviewing-for-a-job sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original audiovisual instructions",
+    "pages": [
+     3
+    ],
+    "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
+ },
+ {
+  "id": "lcvp-2021-cl-a6ii",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-0-1",
+  "conceptId": "a6ii",
+  "level": "common",
+  "year": 2021,
+  "section": "A",
+  "questionRef": "2021 CL Section A Q6(ii)",
+  "questionText": "Which of these might be more important to Kate for this particular job? Give one reason for your answer.",
+  "stem": "People are born with qualities but can learn skills. Name and explain one skill and one quality that Mark shows in his interview.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "linked-reason",
+    "kind": "criterion",
+    "verbatim": "One valid reason linked to the skill or quality discussed in part (i)",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "ONE linked reason,1+1. It must concern the SAME skill or quality selected in part(i); the source supplies no completed personal explanation and none is invented."
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "videoMaterial": {
+   "kind": "source-video",
+   "label": "OFFICIAL VIDEO",
+   "title": "2021 LCVP audiovisual examination",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "secFileid": "LC462CLP031EV.mov",
+   "attribution": "State Examinations Commission — original 2021 Common Level English audiovisual recording.",
+   "presentationNote": "Watch the original interviewing-for-a-job sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original audiovisual instructions",
+    "pages": [
+     3
+    ],
+    "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
  },
  {
   "id": "lcvp-2021-cl-a7",
-  "topicId": "lcvp-link-modules-0-1",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-0-0",
   "conceptId": "important-hotel-employee-be-able-handle",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "A",
   "questionRef": "2021 CL Section A Q7",
   "questionText": "Why is it important for a hotel employee to be able to handle a conflict situation?",
-  "stem": "You will be shown a DVD with interviewing for a job as the theme.",
+  "stem": "",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 2 marks (1+1)",
-   "answer": 3,
-   "ofParts": 7,
-   "perPart": 2
-  },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 3 of the answers the scheme states",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Why is it important for a hotel employee to be able to handle a conflict situation? Three valid answers 3 x 2 marks (1+1)",
     "marks": 6,
-    "openList": true,
-    "contextNote": "3 answers at 2 marks each; each split 1+1.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "Complaints and conflicts can result in negative online reviews/these can frighten prospective guests away",
-      "The hotel could develop a bad reputation and consequently will lose clients/money",
-      "Hotel staff work to keep their customers happy on site, solving any issue they have so they have the best possible stay/repeat business/positive feedback",
-      "Catering events and occasions with groups of people can be very stressful e.g. weddings, funerals, parties, staff need to be mindful of this",
-      "Travelling can lead to tired and stressed guests and hotels can be intimidating and difficult to negotiate",
-      "If a member of senior management is not available to staff members when a situation occurs, they should have a procedure or know how to deal with the customer’s request",
-      "In order to prevent disruption to other guests in the hotel"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Choose any 3 distinct responses across the full pool. Original allocation: Why is it important for a hotel employee to be able to handle a conflict situation? Three valid answers 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Complaints and conflicts can result in negative online reviews/these can frighten prospective guests away. | 2. The hotel could develop a bad reputation and consequently will lose clients/money. | 3. Hotel staff work to keep their customers happy on site, solving any issue they have so they have the best possible stay/repeat business/positive feedback | 4. Catering events and occasions with groups of people can be very stressful e.g. weddings, funerals, parties, staff need to be mindful of this. | 5. Travelling can lead to tired and stressed guests and hotels can be intimidating and difficult to negotiate. | 6. If a member of senior management is not available to staff members when a situation occurs, they should have a procedure or know how to deal with the customer’s request. | 7. In order to prevent disruption to other guests in the hotel.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 2 marks (1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "videoMaterial": {
+   "kind": "source-video",
+   "label": "OFFICIAL VIDEO",
+   "title": "2021 LCVP audiovisual examination",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "secFileid": "LC462CLP031EV.mov",
+   "attribution": "State Examinations Commission — original 2021 Common Level English audiovisual recording.",
+   "presentationNote": "Watch the original interviewing-for-a-job sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original audiovisual instructions",
+    "pages": [
+     3
+    ],
+    "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
  },
  {
   "id": "lcvp-2021-cl-a8i",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-0-1",
   "conceptId": "scoring-sheet-essential-when-conducting-interview",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "A",
   "questionRef": "2021 CL Section A Q8(i)",
   "questionText": "Why is a scoring sheet essential when conducting an interview?",
-  "stem": "You will be shown a DVD with interviewing for a job as the theme.",
+  "stem": "",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 @ 1 mark",
-   "answer": 2,
-   "ofParts": 7,
-   "perPart": 1
-  },
   "totalMarks": 2,
   "rows": [
    {
-    "id": "r-1",
+    "id": "responses",
     "kind": "anyN",
-    "verbatim": "Any 2 of the answers the scheme states",
+    "verbatim": "Why is a scoring sheet essential when conducting an interview? Two valid reasons 2 @ 1 mark A scoring sheet:",
     "marks": 2,
     "openList": true,
-    "contextNote": "2 answers at 1 mark each.",
     "group": {
      "claimMax": 2,
      "perOption": 1,
      "options": [
-      "Can ensure that interviews are scored consistently/fairly",
-      "Allows interviewers to take notes about candidates’ answers",
-      "Can make interviews more effective/can be used to evaluate how the interview went",
-      "Can help to keep the interview focused",
-      "Can be useful for keeping each candidate separate/as a comparison",
-      "Can provide enough documentation to prove hiring decisions aren’t discriminatory",
-      "For applicant feedback purposes"
+      "Can ensure that interviews are scored consistently/fairly.",
+      "Allows interviewers to take notes about candidates’ answers.",
+      "Can make interviews more effective/can be used to evaluate how the interview went.",
+      "Can help to keep the interview focused.",
+      "Can be useful for keeping each candidate separate/as a comparison.",
+      "Can provide enough documentation to prove hiring decisions aren’t discriminatory.",
+      "For applicant feedback purposes."
      ]
-    }
+    },
+    "contextNote": "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. "
    }
   ],
-  "notes": "The scheme prices this ask \"2 @ 1 mark\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "videoMaterial": {
+   "kind": "source-video",
+   "label": "OFFICIAL VIDEO",
+   "title": "2021 LCVP audiovisual examination",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "secFileid": "LC462CLP031EV.mov",
+   "attribution": "State Examinations Commission — original 2021 Common Level English audiovisual recording.",
+   "presentationNote": "Watch the original interviewing-for-a-job sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original audiovisual instructions",
+    "pages": [
+     3
+    ],
+    "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
  },
  {
   "id": "lcvp-2021-cl-a8ii",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-0-1",
   "conceptId": "agree-kate-s-evaluation-mark-very",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "A",
   "questionRef": "2021 CL Section A Q8(ii)",
   "questionText": "Do you agree with Kate’s evaluation that Mark is a very strong candidate for this trainee programme? Give reasons for your answer.",
-  "stem": "You will be shown a DVD with interviewing for a job as the theme.",
+  "stem": "",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 x 2 marks (1+1)",
-   "answer": 2,
-   "ofParts": 7,
-   "perPart": 2
-  },
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 2 of the answers the scheme states",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Do you agree with Kate’s evaluation that Mark is a very strong candidates for this trainee programme? Give reasons for your answer. Two valid reasons 2 x 2 marks (1+1)",
     "marks": 4,
-    "openList": true,
-    "contextNote": "2 answers at 2 marks each; each split 1+1.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 2,
-     "options": [
-      "He has experience of the work",
-      "His preparation/research for the interview shows his interest",
-      "He has applied to study hotel management in college",
-      "He answered the questions very well – demonstrated that he had the necessary skills and qualities. Mark gave some great examples which demonstrated his experience of the work/shows his initiative",
-      "He demonstrated that he is hardworking",
-      "He was employee of the month",
-      "He got an excellent reference from the local hotel manager"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Choose any 2 distinct responses across the full pool. Original allocation: Do you agree with Kate’s evaluation that Mark is a very strong candidates for this trainee programme? Give reasons for your answer. Two valid reasons 2 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice. Retain the printed evaluation/opinion question. No separate agreement mark or invented dissent model is added. Complete original guidance: 1. He has experience of the work. | 2. His preparation/research for the interview shows his interest. | 3. He has applied to study hotel management in college. | 4. He answered the questions very well – demonstrated that he had the necessary skills and qualities. Mark gave some great examples which demonstrated his experience of the work/shows his initiative. | 5. He demonstrated that he is hardworking. | 6. He was employee of the month. | 7. He got an excellent reference from the local hotel manager.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"2 x 2 marks (1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "videoMaterial": {
+   "kind": "source-video",
+   "label": "OFFICIAL VIDEO",
+   "title": "2021 LCVP audiovisual examination",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2021/LC462CLP031EV.mov",
+   "secFileid": "LC462CLP031EV.mov",
+   "attribution": "State Examinations Commission — original 2021 Common Level English audiovisual recording.",
+   "presentationNote": "Watch the original interviewing-for-a-job sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original audiovisual instructions",
+    "pages": [
+     3
+    ],
+    "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
  },
  {
   "id": "lcvp-2021-cl-b1",
-  "topicId": "lcvp-link-modules-1-4",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-1",
   "conceptId": "following-terms",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "B",
   "questionRef": "2021 CL Section B Q1",
-  "questionText": "Explain three of the following terms",
-  "stem": "Explain three of the following terms",
+  "questionText": "Explain three of the following terms (i) Market research (iii) Diversification (ii) To invest (iv) Unique selling point",
+  "stem": "Grosvenor Hotel The Grosvenor Hotel is a small family run business situated in a historic town on the Wild Atlantic Way. The hotel has 45 bedrooms, a function room that can hold up to 200 people, a small dining room and a bar which hosts live music. The hotel employs 40 people, many of the staff are local to the town itself and have worked at the hotel for many years. The hotel supports the local community and economy. During the summer tourist season extra part-time staff are employed in the bar, kitchen and housekeeping sections of the hotel. Up until recently the Grosvenor Hotel was the only hotel in the town. However, an international chain of hotels has received planning permission to build a state of the art hotel on the outskirts of the town. This hotel will be open for the coming tourist season. It will have 150 bedrooms, a ballroom which can hold up to 300 people, a restaurant and a bar. It will also have a swimming pool, leisure centre and a spa. The owners of the Grosvenor Hotel are very concerned about the new hotel and the impact it will have on their business. They decided to commission a report from a business consultant who specialises in the travel and tourism sector. He conducted extensive market research to identify their target market and to establish ideas for diversification. Once the data from the market research was analysed the business consultant met with the owners to discuss the report. He reminded them that while they are a small hotel they can use this as their unique selling point. He outlined some of the positives, for example, the character and history of the hotel, the personal attention the guests receive and the location of the hotel. A number of negative factors were also highlighted; the dated décor in some of the rooms and accessibility for guests with disabilities. The owners reflected on the report, prioritised a number of the recommendations and drew up a business plan. They realised they needed to invest money in the hotel to bring all the bedrooms up to the same standard. As the hotel is an old Georgian building they have arranged for a visit from the National Disability Authority to advise them on the changes they need to undertake to make it more accessible for people with disabilities. Rebranding the hotel and creating a new logo was another area that required both attention and investment. The owners decided to update their website and establish a presence on social media. They contacted Fáilte Ireland for advice and assistance with marketing and promoting the hotel. Creating mutually beneficial partnerships with the local community and local businesses was another recommendation from the business consultant. The owners reached out to the local golf club and water sports centre as they realise activity holidays are very popular with tourists. The owners invested their personal savings along with securing a business loan from their local bank to finance the project. With a limited budget and time frame the owners set about safeguarding the future of their hotel.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 2 marks (1+1)",
-   "answer": 3,
-   "ofParts": 4,
-   "perPart": 2
-  },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Explain three of the following terms Three terms explained (1+1) — any 3",
+    "id": "definitions",
+    "kind": "criterion",
+    "verbatim": "Explain three of the following terms",
     "marks": 6,
-    "openList": true,
-    "contextNote": "3 answers at 2 marks each; each split 1+1.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "Market research: Is the process of gathering information and analysing it so that decisions can be made on how best to proceed with the business. Desk Research/Field Research",
-      "To invest: To put money (time/effort) into a financial scheme, shares, property or a commercial venture with the expectation of making a profit. An investment is an asset or item that is purchased with the hope that it will generate income or appreciate in value at some point in the future",
-      "Diversification: Is a business strategy which is designed to reduce risk by increasing or varying the range of products or services offered by a business using their existing skills to offer complimentary services or expanding into a completely different market",
-      "Unique selling point: Is a feature of a product or service that makes it stand out from its competitors e.g. aftersales service, reusable packaging, luxury at affordable prices"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Choose THREE of the FOUR printed definitions,1+1 each. Full original models: Market research: Is the process of gathering information and analysing it so that decisions can be made on how best to proceed with the business. Desk Research/Field Research. | To invest: To put money (time/effort) into a financial scheme, shares, property or a commercial venture with the expectation of making a profit. An investment is an asset or item that is purchased with the hope that it will generate income or appreciate in value at some point in the future. | Diversification: Is a business strategy which is designed to reduce risk by increasing or varying the range of products or services offered by a business using their existing skills to offer complimentary services or expanding into a completely different market. | Unique selling point: Is a feature of a product or service that makes it stand out from its competitors e.g. aftersales service, reusable packaging, luxury at affordable prices.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 2 marks (1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
   "sourceMaterial": {
    "kind": "source-text",
    "label": "OFFICIAL SOURCE",
-   "title": "Section B case study",
+   "title": "Grosvenor Hotel — complete case study",
    "pages": [
     10
    ],
-   "attribution": "SEC Link Modules 2021 Common Level examination paper — © State Examinations Commission.",
-   "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
-  }
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original question",
+    "pages": [
+     11
+    ],
+    "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
  },
  {
   "id": "lcvp-2021-cl-b2i",
-  "topicId": "lcvp-link-modules-1-0",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-1",
   "conceptId": "business-plan-important-when-securing-finance",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "B",
   "questionRef": "2021 CL Section B Q2(i)",
   "questionText": "Why is a business plan important when securing finance?",
-  "stem": "",
+  "stem": "Grosvenor Hotel The Grosvenor Hotel is a small family run business situated in a historic town on the Wild Atlantic Way. The hotel has 45 bedrooms, a function room that can hold up to 200 people, a small dining room and a bar which hosts live music. The hotel employs 40 people, many of the staff are local to the town itself and have worked at the hotel for many years. The hotel supports the local community and economy. During the summer tourist season extra part-time staff are employed in the bar, kitchen and housekeeping sections of the hotel. Up until recently the Grosvenor Hotel was the only hotel in the town. However, an international chain of hotels has received planning permission to build a state of the art hotel on the outskirts of the town. This hotel will be open for the coming tourist season. It will have 150 bedrooms, a ballroom which can hold up to 300 people, a restaurant and a bar. It will also have a swimming pool, leisure centre and a spa. The owners of the Grosvenor Hotel are very concerned about the new hotel and the impact it will have on their business. They decided to commission a report from a business consultant who specialises in the travel and tourism sector. He conducted extensive market research to identify their target market and to establish ideas for diversification. Once the data from the market research was analysed the business consultant met with the owners to discuss the report. He reminded them that while they are a small hotel they can use this as their unique selling point. He outlined some of the positives, for example, the character and history of the hotel, the personal attention the guests receive and the location of the hotel. A number of negative factors were also highlighted; the dated décor in some of the rooms and accessibility for guests with disabilities. The owners reflected on the report, prioritised a number of the recommendations and drew up a business plan. They realised they needed to invest money in the hotel to bring all the bedrooms up to the same standard. As the hotel is an old Georgian building they have arranged for a visit from the National Disability Authority to advise them on the changes they need to undertake to make it more accessible for people with disabilities. Rebranding the hotel and creating a new logo was another area that required both attention and investment. The owners decided to update their website and establish a presence on social media. They contacted Fáilte Ireland for advice and assistance with marketing and promoting the hotel. Creating mutually beneficial partnerships with the local community and local businesses was another recommendation from the business consultant. The owners reached out to the local golf club and water sports centre as they realise activity holidays are very popular with tourists. The owners invested their personal savings along with securing a business loan from their local bank to finance the project. With a limited budget and time frame the owners set about safeguarding the future of their hotel.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 1 mark",
-   "answer": 3,
-   "ofParts": 9,
-   "perPart": 1
-  },
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "responses",
     "kind": "anyN",
-    "verbatim": "Any 3 of the answers the scheme states",
+    "verbatim": "Why is a business plan important when securing finance? Three valid points 3 x 1 mark",
     "marks": 3,
     "openList": true,
-    "contextNote": "3 answers at 1 mark each.",
     "group": {
      "claimMax": 3,
      "perOption": 1,
      "options": [
-      "It is important for the bank to see that the business is on the right path before they grant the loan/to prove the viability of the business",
-      "The business plan will show cash flow projections and budgeted income and expenditure",
-      "It sets out the projected income it hopes to receive if they successfully complete the project",
-      "It sets out the costs involved including staff, equipment and materials, marketing",
-      "It sets out the product/service the business is intending to sell and gives details of same",
-      "Completing the business plan will help the business set goals/targets/aims – they want to see that you have set realistic targets to be achieved and that the business is capable of making a profit",
-      "Completing the business plan will help identify weaknesses and so the business can address them/iron out the kinks",
-      "It helps an investor understand your business and what you are trying to achieve - it will show that you have a product worth investing in",
-      "It will show the investors that you have the necessary staffing in place to run the business correctly"
+      "It is important for the bank to see that the business is on the right path before they grant the loan/to prove the viability of the business.",
+      "The business plan will show cash flow projections and budgeted income and expenditure.",
+      "It sets out the projected income it hopes to receive if they successfully complete the project.",
+      "It sets out the costs involved including staff, equipment and materials, marketing.",
+      "It sets out the product/service the business is intending to sell and gives details of same.",
+      "Completing the business plan will help the business set goals/targets/aims – they want to see that you have set realistic targets to be achieved and that the business is capable of making a profit.",
+      "Completing the business plan will help identify weaknesses and so the business can address them/iron out the kinks.",
+      "It helps an investor understand your business and what you are trying to achieve - it will show that you have a product worth investing in.",
+      "It will show the investors that you have the necessary staffing in place to run the business correctly."
      ]
-    }
+    },
+    "contextNote": "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. "
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 1 mark\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
   "sourceMaterial": {
    "kind": "source-text",
    "label": "OFFICIAL SOURCE",
-   "title": "Section B case study",
+   "title": "Grosvenor Hotel — complete case study",
    "pages": [
     10
    ],
-   "attribution": "SEC Link Modules 2021 Common Level examination paper — © State Examinations Commission.",
-   "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
-  }
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original question",
+    "pages": [
+     12
+    ],
+    "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
  },
  {
   "id": "lcvp-2021-cl-b2ii",
-  "topicId": "lcvp-link-modules-1-4",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-1",
   "conceptId": "set-out-marketing-section-business-plan",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "B",
   "questionRef": "2021 CL Section B Q2(ii)",
   "questionText": "Set out the marketing section of the business plan used by the owners to secure the bank loan. Use three relevant headings.",
-  "stem": "",
+  "stem": "Grosvenor Hotel The Grosvenor Hotel is a small family run business situated in a historic town on the Wild Atlantic Way. The hotel has 45 bedrooms, a function room that can hold up to 200 people, a small dining room and a bar which hosts live music. The hotel employs 40 people, many of the staff are local to the town itself and have worked at the hotel for many years. The hotel supports the local community and economy. During the summer tourist season extra part-time staff are employed in the bar, kitchen and housekeeping sections of the hotel. Up until recently the Grosvenor Hotel was the only hotel in the town. However, an international chain of hotels has received planning permission to build a state of the art hotel on the outskirts of the town. This hotel will be open for the coming tourist season. It will have 150 bedrooms, a ballroom which can hold up to 300 people, a restaurant and a bar. It will also have a swimming pool, leisure centre and a spa. The owners of the Grosvenor Hotel are very concerned about the new hotel and the impact it will have on their business. They decided to commission a report from a business consultant who specialises in the travel and tourism sector. He conducted extensive market research to identify their target market and to establish ideas for diversification. Once the data from the market research was analysed the business consultant met with the owners to discuss the report. He reminded them that while they are a small hotel they can use this as their unique selling point. He outlined some of the positives, for example, the character and history of the hotel, the personal attention the guests receive and the location of the hotel. A number of negative factors were also highlighted; the dated décor in some of the rooms and accessibility for guests with disabilities. The owners reflected on the report, prioritised a number of the recommendations and drew up a business plan. They realised they needed to invest money in the hotel to bring all the bedrooms up to the same standard. As the hotel is an old Georgian building they have arranged for a visit from the National Disability Authority to advise them on the changes they need to undertake to make it more accessible for people with disabilities. Rebranding the hotel and creating a new logo was another area that required both attention and investment. The owners decided to update their website and establish a presence on social media. They contacted Fáilte Ireland for advice and assistance with marketing and promoting the hotel. Creating mutually beneficial partnerships with the local community and local businesses was another recommendation from the business consultant. The owners reached out to the local golf club and water sports centre as they realise activity holidays are very popular with tourists. The owners invested their personal savings along with securing a business loan from their local bank to finance the project. With a limited budget and time frame the owners set about safeguarding the future of their hotel.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 2 marks (1+1)",
-   "answer": 3,
-   "ofParts": 7,
-   "perPart": 2
-  },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 3 of the answers the scheme states",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Set out the marketing section of the business plan used by the owners to secure the bank loan. Use three relevant headings. Three relevant sections 3 x 2 marks (1+1)",
     "marks": 6,
-    "openList": true,
-    "contextNote": "3 answers at 2 marks each; each split 1+1.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "Market Research Results: a) Results show information about existing customers/competitors/potential customers/target market b) What potential customers want from existing services c) Possible new areas of business d) How much customers are willing to pay e) Benefits of the location of the business and how it will help you access customers",
-      "Advertising/Promotion: a) Best methods to use – social media, print media, websites, radio b) Update the website c) Rebranding/creating a new logo d) Celebrity endorsement e) Message to get across/USP f) Cost of the advertising g) Will they employ an outside agency to do the advertising",
-      "Marketing Budget: a) Total cost of promoting the business b) How much needs to be spent on each area - advertising campaign, brochures etc. c) Cost of employing marketing specialists/outside agency d) What price should be charged to maximise profit",
-      "Marketing Personnel: a) Need expertise in different areas e.g. social media, print, radio, online b) Salaries for personnel",
-      "Product: a) Small Family run hotel b) 45 bedrooms, a function room that can hold up to 200 people, a small dining room and a bar which hosts live music c) Unique selling point character - and history of the hotel d) Dated décor e) Issue with disability access for guests f) Product deal with local golf club and water sports centre etc./activity holidays",
-      "Price – this determines how you will price your service: a) Premium pricing as hotel has such a unique selling point – make it stand out from the international hotel brand b) Cost plus pricing/price must also cover all the costs of the business plus include the profit margin they would like to achieve c) Competition based pricing – price themselves competitively against the chain of hotels in the town",
-      "Place: a) Sell through their own reservation dept – direct contact to the hotel b) Develop their website to reach customers online c) Give a certain percentage of their hotels to online booking agencies to get customers d) Make a booking through Fáilte Ireland e) Situated in a historic town on the Wild Atlantic Way, close to local amenities"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Choose any 3 distinct responses across the full pool. Original allocation: Set out the marketing section of the business plan used by the owners to secure the bank loan. Use three relevant headings. Three relevant sections 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice. THREE distinct marketing headings, each heading1 + matching case-applied content1. All SEVEN original section pools across both pages are retained. Complete original guidance: 1. Market Research Results: a) Results show information about existing customers/competitors/potential customers/target market b) What potential customers want from existing services c) Possible new areas of business d) How much customers are willing to pay e) Benefits of the location of the business and how it will help you access customers | 2. Advertising/Promotion: a) Best methods to use – social media, print media, websites, radio b) Update the website c) Rebranding/creating a new logo d) Celebrity endorsement e) Message to get across/USP f) Cost of the advertising g) Will they employ an outside agency to do the advertising | 3. Marketing Budget: a) Total cost of promoting the business b) How much needs to be spent on each area - advertising campaign, brochures etc. c) Cost of employing marketing specialists/outside agency d) What price should be charged to maximise profit | 4. Marketing Personnel: a) Need expertise in different areas e.g. social media, print, radio, online b) Salaries for personnel | 5. Product: a) Small Family run hotel b) 45 bedrooms, a function room that can hold up to 200 people, a small dining room and a bar which hosts live music c) Unique selling point character - and history of the hotel d) Dated décor e) Issue with disability access for guests f) Product deal with local golf club and water sports centre etc./activity holidays | 6. Price – this determines how you will price your service: a) Premium pricing as hotel has such a unique selling point – make it stand out from the international hotel brand b) Cost plus pricing/price must also cover all the costs of the business plus include the profit margin they would like to achieve c) Competition based pricing – price themselves competitively against the chain of hotels in the town | 7. Place: a) Sell through their own reservation dept – direct contact to the hotel b) Develop their website to reach customers online c) Give a certain percentage of their hotels to online booking agencies to get customers d) Make a booking through Fáilte Ireland e) Situated in a historic town on the Wild Atlantic Way, close to local amenities",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 2 marks (1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
   "sourceMaterial": {
    "kind": "source-text",
    "label": "OFFICIAL SOURCE",
-   "title": "Section B case study",
+   "title": "Grosvenor Hotel — complete case study",
    "pages": [
     10
    ],
-   "attribution": "SEC Link Modules 2021 Common Level examination paper — © State Examinations Commission.",
-   "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
-  }
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original question",
+    "pages": [
+     12
+    ],
+    "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
  },
  {
   "id": "lcvp-2021-cl-b3i",
-  "topicId": "lcvp-link-modules-1-0",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-1",
   "conceptId": "challenges-exist-other-than-competition-businesses",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "B",
   "questionRef": "2021 CL Section B Q3(i)",
   "questionText": "What challenges exist, other than competition, for businesses? How might these challenges be overcome?",
-  "stem": "Section B – Case Study and Section C – General Questions : 4 x Answer Section B and any three questions from Section C or Answer any four questions from Section C.",
+  "stem": "Grosvenor Hotel The Grosvenor Hotel is a small family run business situated in a historic town on the Wild Atlantic Way. The hotel has 45 bedrooms, a function room that can hold up to 200 people, a small dining room and a bar which hosts live music. The hotel employs 40 people, many of the staff are local to the town itself and have worked at the hotel for many years. The hotel supports the local community and economy. During the summer tourist season extra part-time staff are employed in the bar, kitchen and housekeeping sections of the hotel. Up until recently the Grosvenor Hotel was the only hotel in the town. However, an international chain of hotels has received planning permission to build a state of the art hotel on the outskirts of the town. This hotel will be open for the coming tourist season. It will have 150 bedrooms, a ballroom which can hold up to 300 people, a restaurant and a bar. It will also have a swimming pool, leisure centre and a spa. The owners of the Grosvenor Hotel are very concerned about the new hotel and the impact it will have on their business. They decided to commission a report from a business consultant who specialises in the travel and tourism sector. He conducted extensive market research to identify their target market and to establish ideas for diversification. Once the data from the market research was analysed the business consultant met with the owners to discuss the report. He reminded them that while they are a small hotel they can use this as their unique selling point. He outlined some of the positives, for example, the character and history of the hotel, the personal attention the guests receive and the location of the hotel. A number of negative factors were also highlighted; the dated décor in some of the rooms and accessibility for guests with disabilities. The owners reflected on the report, prioritised a number of the recommendations and drew up a business plan. They realised they needed to invest money in the hotel to bring all the bedrooms up to the same standard. As the hotel is an old Georgian building they have arranged for a visit from the National Disability Authority to advise them on the changes they need to undertake to make it more accessible for people with disabilities. Rebranding the hotel and creating a new logo was another area that required both attention and investment. The owners decided to update their website and establish a presence on social media. They contacted Fáilte Ireland for advice and assistance with marketing and promoting the hotel. Creating mutually beneficial partnerships with the local community and local businesses was another recommendation from the business consultant. The owners reached out to the local golf club and water sports centre as they realise activity holidays are very popular with tourists. The owners invested their personal savings along with securing a business loan from their local bank to finance the project. With a limited budget and time frame the owners set about safeguarding the future of their hotel.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 x 1 mark",
-   "answer": 2,
-   "ofParts": 14,
-   "perPart": 1
-  },
-  "totalMarks": 2,
+  "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 2 of the answers the scheme states",
+    "id": "profile-1",
+    "kind": "criterion",
+    "verbatim": "challenges",
     "marks": 2,
-    "openList": true,
-    "contextNote": "2 answers at 1 mark each.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 1,
-     "options": [
-      "Securing finance/lack of finance/limited budget",
-      "Availability of trained and experienced staff/retention of staff",
-      "Management workload/time management",
-      "Availability of raw materials/problems in the supply chain/JIT",
-      "Availability of suitable premises for expansion/parking/broadband",
-      "Location: accessible for customers/near staff/transport links/infrastructure",
-      "Unforeseen business closure: Covid-19/flood/storm damage",
-      "Brexit",
-      "Quality of product/service/décor outdated/rooms outdated/accessibility for guests with disabilities",
-      "Consumer tastes",
-      "Promotion",
-      "Legalities/public support/comply with building regulations (accessibility)",
-      "High Wages/Increasing costs",
-      "Recession"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "TWO challenge/solution pairs: challenge1 + matching way to overcome1. Complete original14 challenge models: Securing finance/lack of finance/limited budget | Availability of trained and experienced staff/retention of staff | Management workload/time management | Availability of raw materials/problems in the supply chain/JIT | Availability of suitable premises for expansion/parking/broadband | Location: accessible for customers/near staff/transport links/infrastructure | Unforeseen business closure: Covid-19/flood/storm damage | Brexit | Quality of product/service/décor outdated/rooms outdated/accessibility for guests with disabilities | Consumer tastes | Promotion | Legalities/public support/comply with building regulations (accessibility) | High Wages/Increasing costs. | Recession The source prints no separate model solutions; none is invented.",
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "challenges",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "ways to overcome",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "id": "profile-2",
+    "kind": "criterion",
+    "verbatim": "challenges",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Use a different complete profile with its matching components.",
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "challenges",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "ways to overcome",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"2 x 1 mark\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
   "sourceMaterial": {
    "kind": "source-text",
    "label": "OFFICIAL SOURCE",
-   "title": "Section B case study",
+   "title": "Grosvenor Hotel — complete case study",
    "pages": [
     10
    ],
-   "attribution": "SEC Link Modules 2021 Common Level examination paper — © State Examinations Commission.",
-   "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
-  }
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original question",
+    "pages": [
+     13
+    ],
+    "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
  },
  {
   "id": "lcvp-2021-cl-b3ii",
-  "topicId": "lcvp-link-modules-0-3",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-1",
   "conceptId": "benefits-grosvenor-hotel-mutually-beneficial-partnerships",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "B",
   "questionRef": "2021 CL Section B Q3(ii)",
   "questionText": "Describe the benefits to the Grosvenor Hotel from the mutually beneficial partnerships with the local community and local businesses.",
-  "stem": "Section B – Case Study and Section C – General Questions : 4 x Answer Section B and any three questions from Section C or Answer any four questions from Section C.",
+  "stem": "Grosvenor Hotel The Grosvenor Hotel is a small family run business situated in a historic town on the Wild Atlantic Way. The hotel has 45 bedrooms, a function room that can hold up to 200 people, a small dining room and a bar which hosts live music. The hotel employs 40 people, many of the staff are local to the town itself and have worked at the hotel for many years. The hotel supports the local community and economy. During the summer tourist season extra part-time staff are employed in the bar, kitchen and housekeeping sections of the hotel. Up until recently the Grosvenor Hotel was the only hotel in the town. However, an international chain of hotels has received planning permission to build a state of the art hotel on the outskirts of the town. This hotel will be open for the coming tourist season. It will have 150 bedrooms, a ballroom which can hold up to 300 people, a restaurant and a bar. It will also have a swimming pool, leisure centre and a spa. The owners of the Grosvenor Hotel are very concerned about the new hotel and the impact it will have on their business. They decided to commission a report from a business consultant who specialises in the travel and tourism sector. He conducted extensive market research to identify their target market and to establish ideas for diversification. Once the data from the market research was analysed the business consultant met with the owners to discuss the report. He reminded them that while they are a small hotel they can use this as their unique selling point. He outlined some of the positives, for example, the character and history of the hotel, the personal attention the guests receive and the location of the hotel. A number of negative factors were also highlighted; the dated décor in some of the rooms and accessibility for guests with disabilities. The owners reflected on the report, prioritised a number of the recommendations and drew up a business plan. They realised they needed to invest money in the hotel to bring all the bedrooms up to the same standard. As the hotel is an old Georgian building they have arranged for a visit from the National Disability Authority to advise them on the changes they need to undertake to make it more accessible for people with disabilities. Rebranding the hotel and creating a new logo was another area that required both attention and investment. The owners decided to update their website and establish a presence on social media. They contacted Fáilte Ireland for advice and assistance with marketing and promoting the hotel. Creating mutually beneficial partnerships with the local community and local businesses was another recommendation from the business consultant. The owners reached out to the local golf club and water sports centre as they realise activity holidays are very popular with tourists. The owners invested their personal savings along with securing a business loan from their local bank to finance the project. With a limited budget and time frame the owners set about safeguarding the future of their hotel.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 2 marks (1+1)",
-   "answer": 3,
-   "ofParts": 10,
-   "perPart": 2
-  },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 3 of the answers the scheme states",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Describe the benefits to the Grosvenor Hotel from the mutually beneficial partnerships with the local community and local businesses. Three valid points 3 x 2 marks (1+1)",
     "marks": 6,
-    "openList": true,
-    "contextNote": "3 answers at 2 marks each; each split 1+1.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "Working with other businesses increases the awareness of the hotel with potential customers e.g. a person could book to play golf and ask about accommodation/links on each other’s social media and websites",
-      "Being able to offer golf or water sports as part of a package will help sell more rooms/concierge facility - increased sales/profits",
-      "Expansion of the business/ which could lead to hiring more/local staff",
-      "Ensure the local community and local businesses use the hotel for their own personal events either onsite or offsite catering",
-      "Both companies have the opportunity to learn from each other, making it easier to work together/come up with new ideas and adapt to changes in the market",
-      "It would allow them to compete against the new hotel to provide services such as the swimming pool, leisure centre and spa",
-      "Good brand image by being associated with another successful business in the local area/sponsor local events/teams",
-      "Shared marketing costs as both firms are advertising to get customers to the area",
-      "Each business takes a proactive interest in the other business working together to bring about shared success/synergy",
-      "Working with local schools/work experience/part-time staff/summer staff/seasonal staff"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Choose any 3 distinct responses across the full pool. Original allocation: Describe the benefits to the Grosvenor Hotel from the mutually beneficial partnerships with the local community and local businesses. Three valid points 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Working with other businesses increases the awareness of the hotel with potential customers e.g. a person could book to play golf and ask about accommodation/links on each other’s social media and websites. | 2. Being able to offer golf or water sports as part of a package will help sell more rooms/concierge facility - increased sales/profits. | 3. Expansion of the business/ which could lead to hiring more/local staff. | 4. Ensure the local community and local businesses use the hotel for their own personal events either onsite or offsite catering. | 5. Both companies have the opportunity to learn from each other, making it easier to work together/come up with new ideas and adapt to changes in the market. | 6. It would allow them to compete against the new hotel to provide services such as the swimming pool, leisure centre and spa. | 7. Good brand image by being associated with another successful business in the local area/sponsor local events/teams. | 8. Shared marketing costs as both firms are advertising to get customers to the area. | 9. Each business takes a proactive interest in the other business working together to bring about shared success/synergy. | 10. Working with local schools/work experience/part-time staff/summer staff/seasonal staff.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 2 marks (1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
   "sourceMaterial": {
    "kind": "source-text",
    "label": "OFFICIAL SOURCE",
-   "title": "Section B case study",
+   "title": "Grosvenor Hotel — complete case study",
    "pages": [
     10
    ],
-   "attribution": "SEC Link Modules 2021 Common Level examination paper — © State Examinations Commission.",
-   "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
-  }
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  },
+  "additionalSourceMaterials": [
+   {
+    "kind": "source-question",
+    "label": "OFFICIAL SOURCE",
+    "title": "Original question",
+    "pages": [
+     13
+    ],
+    "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+    "presentationNote": "Read the complete original source and question in context."
+   }
+  ]
  },
  {
   "id": "lcvp-2021-cl-c1a",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-1-1",
   "conceptId": "class-decide-business-organisation-study",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q1(a)",
   "questionText": "Describe how your class would decide on which business/organisation to study.",
   "stem": "Learning about a local business/organisation – visit out/visit in.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "(1 + 1)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
   "totalMarks": 2,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "(1 + 1) Class discussion Take a vote Brainstorming activity Research various business in the area School or family member has links with a business/organisation Look at companies they are interested in Career Opportunities",
+    "id": "decision",
+    "kind": "criterion",
+    "verbatim": "One valid answer",
     "marks": 2,
-    "openList": true,
-    "contextNote": "2 answers at 1 mark each."
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "ONE explained decision method,1+1. Complete original examples: Class discussion | Take a vote | Brainstorming activity | Research various business in the area | School or family member has links with a business/organisation | Look at companies they are interested in | Career Opportunities"
    }
   ],
-  "notes": "The scheme prices this ask \"(1 + 1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    18
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c1b",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-1-1",
   "conceptId": "benefits-teamwork-lcvp-activity",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q1(b)",
   "questionText": "Outline three benefits of teamwork in this LCVP activity.",
   "stem": "Learning about a local business/organisation – visit out/visit in.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 2 marks (1+1)",
-   "answer": 3,
-   "ofParts": 8,
-   "perPart": 2
-  },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 3 of the answers the scheme states",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Outline three benefits of teamwork in this LCVP activity. Three valid answers 3 x 2 marks (1+1)",
     "marks": 6,
-    "openList": true,
-    "contextNote": "3 answers at 2 marks each; each split 1+1.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "Goals are achieved quicker/more work is done",
-      "Decisions can be made or problems solved more quickly",
-      "The responsibility is shared so no one person is under too much pressure/everyone takes ownership of the part of the task they are responsible for",
-      "Members of a team will have a variety of strength/skills or ideas/experience and skills are shared/more ideas",
-      "Disputes are avoided as communication is essential in team work/everyone has a say",
-      "Students can work closely with those who have a common interest",
-      "Communication/interpersonal skills are improved",
-      "Pupils are more contented as relationships with class members improve/better motivation"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Choose any 3 distinct responses across the full pool. Original allocation: Outline three benefits of teamwork in this LCVP activity. Three valid answers 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Goals are achieved quicker/more work is done. | 2. Decisions can be made or problems solved more quickly. | 3. The responsibility is shared so no one person is under too much pressure/everyone takes ownership of the part of the task they are responsible for. | 4. Members of a team will have a variety of strength/skills or ideas/experience and skills are shared/more ideas. | 5. Disputes are avoided as communication is essential in team work/everyone has a say. | 6. Students can work closely with those who have a common interest. | 7. Communication/interpersonal skills are improved. | 8. Pupils are more contented as relationships with class members improve/better motivation.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 2 marks (1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    18
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c1c",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-1-1",
   "conceptId": "factors-important-success-or-failure-visit",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q1(c)",
   "questionText": "Describe four factors important to the success or failure of a visit out/visit in.",
   "stem": "Learning about a local business/organisation – visit out/visit in.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "4 x 2 marks (1+1)",
-   "answer": 4,
-   "ofParts": 7,
-   "perPart": 2
-  },
   "totalMarks": 8,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 4 of the answers the scheme states",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Describe four factors important to the success or failure of the visit out/visit in. Four valid factors 4 x 2 marks (1+1)",
     "marks": 8,
-    "openList": true,
-    "contextNote": "4 answers at 2 marks each; each split 1+1.",
-    "group": {
-     "claimMax": 4,
-     "perOption": 2,
-     "options": [
-      "How well the visit was planned",
-      "Did arrangements work according to the plan?",
-      "Being organised",
-      "Participation of all the class members",
-      "How welcoming/prepared the business or organisation was for the group/room prepared within the school etc",
-      "The quality of the research on the business or organisation",
-      "Quality of the questions asked/information received"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "contextNote": "Choose any 4 distinct responses across the full pool. Original allocation: Describe four factors important to the success or failure of the visit out/visit in. Four valid factors 4 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. How well the visit was planned. | 2. Did arrangements work according to the plan? | 3. Being organised. | 4. Participation of all the class members. | 5. How welcoming/prepared the business or organisation was for the group/room prepared within the school etc. | 6. The quality of the research on the business or organisation. | 7. Quality of the questions asked/information received.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-4",
+      "verbatim": "Response 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"4 x 2 marks (1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    19
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c1di",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-0-4",
   "conceptId": "headings-be-included-summary-report-activity",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q1(d)(i)",
   "questionText": "List the headings that would be included in a summary report of this activity.",
   "stem": "Learning about a local business/organisation – visit out/visit in.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "3 x 1 mark",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Title Author’s name Date Aims/objectives/terms of reference Body: content related to the visit out Conclusions/evaluation Recommendations",
+    "id": "responses",
+    "kind": "anyN",
+    "verbatim": "Three headings",
     "marks": 3,
     "openList": true,
-    "contextNote": "3 answers at 1 mark each."
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "Title",
+      "Author’s name",
+      "Date",
+      "Aims/objectives/terms of reference",
+      "Body: content related to the visit out",
+      "Conclusions/evaluation",
+      "Recommendations"
+     ]
+    },
+    "contextNote": ""
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 1 mark\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    20
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c1dii",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-0-4",
   "conceptId": "value-completing-summary-report-reasons",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q1(d)(ii)",
   "questionText": "What is the value of completing a summary report? Give three reasons.",
   "stem": "Learning about a local business/organisation – visit out/visit in.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 2 marks (1+1)",
-   "answer": 3,
-   "ofParts": 9,
-   "perPart": 2
-  },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 3 of the answers the scheme states",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "What is the value of completing a summary report? Give three reasons. Three valid reasons 3 x 2 marks (1+1)",
     "marks": 6,
-    "openList": true,
-    "contextNote": "3 answers at 2 marks each; each split 1+1.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "To brief the reader on the details of a particular event",
-      "To analyse/reflect on a particular issue, allows you to evaluate the aim/objectives have been achieved/ draw conclusions and make recommendations",
-      "To convince the reader of the importance of taking a particular course of action/recommend to other LCVP classes",
-      "Improves report writing skills/the ability to present information in a manner that is concise, logical and easy to read is an important skill - one that is valued in education, business and in the community",
-      "Keep busy readers informed without demanding more time than necessary to get the information they need",
-      "Leaders of organisations rely on effective summaries that can efficiently present the most important information",
-      "To complete it as part of their Link Modules portfolio",
-      "To reflect back over before their exam in preparation for exam questions",
-      "To help improve typing skills/computer skills/research skills"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Choose any 3 distinct responses across the full pool. Original allocation: What is the value of completing a summary report? Give three reasons. Three valid reasons 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. To brief the reader on the details of a particular event. | 2. To analyse/reflect on a particular issue, allows you to evaluate the aim/objectives have been achieved/ draw conclusions and make recommendations. | 3. To convince the reader of the importance of taking a particular course of action/recommend to other LCVP classes. | 4. Improves report writing skills/the ability to present information in a manner that is concise, logical and easy to read is an important skill - one that is valued in education, business and in the community. | 5. Keep busy readers informed without demanding more time than necessary to get the information they need. | 6. Leaders of organisations rely on effective summaries that can efficiently present the most important information. | 7. To complete it as part of their Link Modules portfolio. | 8. To reflect back over before their exam in preparation for exam questions. | 9. To help improve typing skills/computer skills/research skills.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 2 marks (1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    20
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2021-cl-c2a",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-0-3",
+  "conceptId": "c2a",
+  "level": "common",
+  "year": 2021,
+  "section": "C",
+  "questionRef": "2021 CL Section C Q2(a)",
+  "questionText": "(i) Identify an employer/placement where you would like to do work experience. (ii) List two reasons why you chose this employer to carry out your work experience/ shadowing.",
+  "stem": "Work experience/shadowing is an important first step into the world of work.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "placement",
+    "kind": "point",
+    "verbatim": "Name of employer/placement",
+    "marks": 2,
+    "contextNote": "Name ONE employer/placement,2marks as printed; no internal1mark step. Both following reasons refer to this SAME placement."
+   },
+   {
+    "id": "reasons",
+    "kind": "criterion",
+    "verbatim": "Two valid reasons",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "TWO reasons for choosing the SAME named employer/placement,1each. No personal model answer is printed or invented.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    21
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2021-cl-c2b",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-0-3",
+  "conceptId": "c2b",
+  "level": "common",
+  "year": 2021,
+  "section": "C",
+  "questionRef": "2021 CL Section C Q2(b)",
+  "questionText": "Write the email you would send when seeking a work experience/shadowing placement.",
+  "stem": "Work experience/shadowing is an important first step into the world of work.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "email-1",
+    "kind": "point",
+    "verbatim": "To: email address",
+    "marks": 1,
+    "contextNote": "SIX required email components,1each. No extra marks for availability or dates. Complete original model: To: principal@stsenansns.ie Subject: LCVP Work Experience Dear Mrs Murphy I am a 5th year LCVP student at XXXX School. As part of my course I am required to complete work experience. I am looking for 3 days work experience from November 11th – 13th 2019. I am interested in primary school teaching and I would very much like to complete my work experience in your school. I am available for interview at any time. Please find my CV attached. I look forward to hearing from you. Yours sincerely/Regards, Mark Doyle"
+   },
+   {
+    "id": "email-2",
+    "kind": "point",
+    "verbatim": "Subject line",
+    "marks": 1
+   },
+   {
+    "id": "email-3",
+    "kind": "point",
+    "verbatim": "Salutation",
+    "marks": 1
+   },
+   {
+    "id": "email-4",
+    "kind": "point",
+    "verbatim": "Introduction",
+    "marks": 1
+   },
+   {
+    "id": "email-5",
+    "kind": "point",
+    "verbatim": "Reason for email",
+    "marks": 1
+   },
+   {
+    "id": "email-6",
+    "kind": "point",
+    "verbatim": "Closing",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    21
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c2c",
-  "topicId": "lcvp-link-modules-0-3",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-0-0",
   "conceptId": "legal-responsibilities-employers-have-when-employing",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q2(c)",
   "questionText": "Outline three legal responsibilities that employers have when employing workers under 18 years of age.",
   "stem": "Work experience/shadowing is an important first step into the world of work.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 2 marks (1+1)",
-   "answer": 3,
-   "ofParts": 10,
-   "perPart": 2
-  },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 3 of the answers the scheme states",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Outline three legal responsibilities that employers have when employing workers under 18 years of age. Three valid legal responsibilities 3 x 2 marks (1+1)",
     "marks": 6,
-    "openList": true,
-    "contextNote": "3 answers at 2 marks each; each split 1+1.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "Employer must keep a copy of their birth cert/passport",
-      "Detailed records must be kept of name/DOB/start time/end time/pay rate",
-      "Must comply with the law in relation to hours worked - early morning start times/late evening finishing/21 days of holiday during term time",
-      "Breaks - young workers are entitled to more breaks/30 minutes after 4 hours (u-16)/4.5 hours (16&17)",
-      "Written permission is required for u-16/consent from parent or guardian",
-      "Poster detailing the rights of young people in the workplace must be displayed",
-      "Provide the minimum wage for u-18s €7.14(70% of minimum wage) per hour",
-      "Must provide employees with a copy of official summary of the Protection of Young Person’s (Employment Act) along with details of their employment",
-      "Employers have a legal obligation not to let u-18s sell alcohol or cigarettes to the public",
-      "Garda vetting- required when working with children"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Choose any 3 distinct responses across the full pool. Original allocation: Outline three legal responsibilities that employers have when employing workers under 18 years of age. Three valid legal responsibilities 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Employer must keep a copy of their birth cert/passport | 2. Detailed records must be kept of name/DOB/start time/end time/pay rate | 3. Must comply with the law in relation to hours worked - early morning start times/late evening finishing/21 days of holiday during term time | 4. Breaks - young workers are entitled to more breaks/30 minutes after 4 hours (u-16)/4.5 hours (16&17) | 5. Written permission is required for u-16/consent from parent or guardian | 6. Poster detailing the rights of young people in the workplace must be displayed | 7. Provide the minimum wage for u-18s €7.14(70% of minimum wage) per hour | 8. Must provide employees with a copy of official summary of the Protection of Young Person’s (Employment Act) along with details of their employment | 9. Employers have a legal obligation not to let u-18s sell alcohol or cigarettes to the public | 10. Garda vetting- required when working with children. These are the original historical examination examples; their printed figures are retained exactly.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 2 marks (1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    22
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c2d",
-  "topicId": "lcvp-link-modules-0-4",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-0-3",
   "conceptId": "ways-work-experience-shadowing-placement-can",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q2(d)",
   "questionText": "Describe three ways the work experience/shadowing placement can help you in school and in your future career.",
   "stem": "Work experience/shadowing is an important first step into the world of work.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 3 marks (1+1+1)",
-   "answer": 3,
-   "ofParts": 11,
-   "perPart": 3
-  },
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 3 of the answers the scheme states",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Describe three ways the work experience/shadow placement can help you in school and in your future career. Three valid points 3 x 3 marks (1+1+1)",
     "marks": 9,
-    "openList": true,
-    "contextNote": "3 answers at 3 marks each; each split 1+1+1.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "Can help to make a decision regarding career choice/does or does not want to pursue the career after they leave school/plan career path",
-      "Experience the type of work involved in the career/enjoyed it or did not enjoy what was involved in this particular job/makes you more employable",
-      "Found out about the job prospects/hours/salary",
-      "Gives insight into the world of work and behaviour/attitudes expected in the workplace",
-      "Realise which skills/qualities are required for this career/have or do not have these skills/qualities",
-      "Feedback from adults other than teachers will help the student be more realistic about their career path or work involved",
-      "Can motivate the student to work harder in school to get the necessary points/entry requirements to study a course in college",
-      "May have developed certain skills in the work place which can help you at school e.g. communication skills, planning skills, organisational skills, typing skills. You may have improved your self-esteem/confidence from interacting with other adults",
-      "May have completed tasks in the workplace which links into the subjects they are taking in school making the topics more relevant for them",
-      "Can complete a part of their Link Modules portfolio after taking part in the work/shadow placement",
-      "You will have a referee for your CV which may help you in your future career/gain contact for future employment. It can help with CV preparation/completing application forms/good interview techniques as all of this must be done in order to get work experience/improves CV"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "Choose any 3 distinct responses across the full pool. Original allocation: Describe three ways the work experience/shadow placement can help you in school and in your future career. Three valid points 3 x 3 marks (1+1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Can help to make a decision regarding career choice/does or does not want to pursue the career after they leave school/plan career path. | 2. Experience the type of work involved in the career/enjoyed it or did not enjoy what was involved in this particular job/makes you more employable. | 3. Found out about the job prospects/hours/salary. | 4. Gives insight into the world of work and behaviour/attitudes expected in the workplace. | 5. Realise which skills/qualities are required for this career/have or do not have these skills/qualities. | 6. Feedback from adults other than teachers will help the student be more realistic about their career path or work involved. | 7. Can motivate the student to work harder in school to get the necessary points/entry requirements to study a course in college. | 8. May have developed certain skills in the work place which can help you at school e.g. communication skills, planning skills, organisational skills, typing skills. You may have improved your self-esteem/confidence from interacting with other adults. | 9. May have completed tasks in the workplace which links into the subjects they are taking in school making the topics more relevant for them. | 10. Can complete a part of their Link Modules portfolio after taking part in the work/shadow placement. | 11. You will have a referee for your CV which may help you in your future career/gain contact for future employment. It can help with CV preparation/completing application forms/good interview techniques as all of this must be done in order to get work experience/improves CV.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 3 marks (1+1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    23
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c3a",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-1-4",
   "conceptId": "key-areas-should-be-investigated-order",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q3(a)",
   "questionText": "Name four key areas that should be investigated in order to understand the area you live in.",
   "stem": "My Own Place develops an understanding of the area you live in.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "4 x 1 mark",
-   "answer": 4,
-   "ofParts": 15,
-   "perPart": 1
-  },
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "responses",
     "kind": "anyN",
-    "verbatim": "Any 4 of the answers the scheme states",
+    "verbatim": "Name four key areas that should be investigated in order to understand the area you live in. Four key areas 4 x 1 mark",
     "marks": 4,
     "openList": true,
-    "contextNote": "4 answers at 1 mark each.",
     "group": {
      "claimMax": 4,
      "perOption": 1,
@@ -6322,7 +7229,7 @@
       "Transport",
       "Financial institutions",
       "Principal economic activities",
-      "Tourism/Wild Atlantic Way/walks etc",
+      "Tourism/Wild Atlantic Way/walks etc.",
       "History of the area",
       "Culture in the area",
       "Geographical aspects",
@@ -6333,40 +7240,46 @@
       "Description of the local area/location",
       "Analysis of a local issue/possible solutions"
      ]
-    }
+    },
+    "contextNote": "Choose any 4 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. "
    }
   ],
-  "notes": "The scheme prices this ask \"4 x 1 mark\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    24
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c3b",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-1-4",
   "conceptId": "advantages-disadvantages-using-questionnaire-method-gathering",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q3(b)",
   "questionText": "Outline two advantages and two disadvantages of using a questionnaire as a method of gathering information.",
   "stem": "My Own Place develops an understanding of the area you live in.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 x 1 mark + 2 x 1 mark",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "advantages",
     "kind": "anyN",
-    "verbatim": "Any 2 of the answers the scheme states",
+    "verbatim": "Advantages",
     "marks": 2,
     "openList": true,
-    "contextNote": "2 answers at 1 mark each.",
     "group": {
      "claimMax": 2,
      "perOption": 1,
@@ -6378,15 +7291,15 @@
       "Results can be shown on charts and graphs",
       "Anonymity puts people at ease and encourages them to answer truthfully"
      ]
-    }
+    },
+    "contextNote": "TWO from this category,1each. The other category is separately required."
    },
    {
-    "id": "r-2",
+    "id": "disadvantages",
     "kind": "anyN",
-    "verbatim": "Any 2 of the answers the scheme states",
+    "verbatim": "Disadvantages",
     "marks": 2,
     "openList": true,
-    "contextNote": "2 answers at 1 mark each.",
     "group": {
      "claimMax": 2,
      "perOption": 1,
@@ -6399,293 +7312,553 @@
       "Questionnaire fatigue: if it is too long or complex",
       "Not suitable for the visually impaired",
       "Can be expensive to administer/print/distribute",
-      "Can be difficult to get an appropriate sample to complete the questionnaire/not representative of everyone as only sent to certain people in the population"
+      "Can be difficult to get an appropriate sample to complete the questionnaire/not representative of everyone as only sent to certain people in the population."
      ]
-    }
+    },
+    "contextNote": "TWO from this category,1each. The other category is separately required."
    }
   ],
-  "notes": "The scheme prices this ask \"2 x 1 mark; 2 x 1 mark\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    24
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c3c",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-1-4",
   "conceptId": "group-local-area-wants-improve-facilities",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q3(c)",
   "questionText": "A group in your local area wants to improve facilities for young people. Design the questionnaire this group would use to carry out the research.",
   "stem": "My Own Place develops an understanding of the area you live in.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "3 x 1 mark",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
   "totalMarks": 8,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Layout: heading + variety of question styles + instructions",
-    "marks": 8,
-    "openList": true,
-    "contextNote": "8 marks for this answer.",
-    "accepts": [
-     "Questions: 5 questions required",
-     "Questionnaire Please answer the following questions by ticking the boxes"
+    "id": "heading",
+    "kind": "point",
+    "verbatim": "heading",
+    "marks": 1
+   },
+   {
+    "id": "styles",
+    "kind": "point",
+    "verbatim": "variety of question styles",
+    "marks": 1
+   },
+   {
+    "id": "instructions",
+    "kind": "point",
+    "verbatim": "instructions",
+    "marks": 1
+   },
+   {
+    "id": "questions",
+    "kind": "criterion",
+    "verbatim": "5 questions required",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "contextNote": "FIVE distinct relevant questions,1each, alongside the three separately priced layout components. Complete original eight-question model with all printed choices: Questionnaire Please answer the following questions by ticking the boxes. Q.1 Male □ Female □ | Q.2 What age are you? 12-15 □ 16-18 □ >18 □ | Q.3 Estate/street/parish/area where you live ___________________________________ | Q.4 What activities are you interested in? ______________________________________ | Q.5 What clubs are you a member of? _________________________________________ | Q.6 What facilities would you like to see in the area? _____________________________ | Q.7 Are you willing to volunteer to fundraise/improve some facility etc.? Yes □ No □ | Q.8 Any further comments you would like to make ______________________________",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "response-4",
+      "verbatim": "Response 4",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "response-5",
+      "verbatim": "Response 5",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
     ]
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 1 mark\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    25
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c3d",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-1-4",
   "conceptId": "benefits-community-when-different-organisations-come",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q3(d)",
   "questionText": "Describe the benefits to a community when different organisations come together to work on a project.",
   "stem": "My Own Place develops an understanding of the area you live in.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 3 marks (1+1+1)",
-   "answer": 3,
-   "ofParts": 7,
-   "perPart": 3
-  },
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 3 of the answers the scheme states",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Describe the benefits to a community when different organisations come together to work on a project. Describe three benefits 3 x 3 marks (1+1+1)",
     "marks": 9,
-    "openList": true,
-    "contextNote": "3 answers at 3 marks each; each split 1+1+1.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "The project will get completed quicker as there will be more volunteers available to work on it",
-      "More skills/expertise when people from different organisations come together/new ideas/mix of ideas",
-      "Finance/grants can be secured for larger projects when organisations submit one application",
-      "Facilities/services in the community will be improved and available to more people/improves quality of life",
-      "Improves community spirit when people work together on one project. People make friends/ social aspect when working together",
-      "Tourism potential of the area could improve and attract more tourists/local economy improves",
-      "May provide employment/income to the people in the local area"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "Choose any 3 distinct responses across the full pool. Original allocation: Describe the benefits to a community when different organisations come together to work on a project. Describe three benefits 3 x 3 marks (1+1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. The project will get completed quicker as there will be more volunteers available to work on it. | 2. More skills/expertise when people from different organisations come together/new ideas/mix of ideas. | 3. Finance/grants can be secured for larger projects when organisations submit one application. | 4. Facilities/services in the community will be improved and available to more people/improves quality of life. | 5. Improves community spirit when people work together on one project. People make friends/ social aspect when working together. | 6. Tourism potential of the area could improve and attract more tourists/local economy improves. | 7. May provide employment/income to the people in the local area.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 3 marks (1+1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    26
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c4a",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-0-0",
   "conceptId": "meant-diversity-workplace",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q4(a)",
   "questionText": "What is meant by diversity in the workplace?",
   "stem": "Ireland has embraced diversity in the workplace.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "(2+1+1)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "(2+1+1) Mix of people -",
-    "marks": 4,
-    "openList": true,
-    "contextNote": "4 marks for this answer.",
-    "accepts": [
-     "+ 2 examples x",
-     "each There is a large mix of people working together of varying gender, religion, race, age, ethnicity, sexual orientation, education, and other attributes"
+    "id": "mix",
+    "kind": "point",
+    "verbatim": "mix of people",
+    "marks": 2,
+    "contextNote": "The source underlines the required phrase mix of people and allocates2marks to it; no1partial is printed. Complete original explanation: There is a large mix of people working together of varying gender, religion, race, age, ethnicity, sexual orientation, education, and other attributes."
+   },
+   {
+    "id": "examples",
+    "kind": "criterion",
+    "verbatim": "2 examples",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "TWO examples,1each, from the complete original definition above; do not count the required opening phrase again.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
     ]
    }
   ],
-  "notes": "The scheme prices this ask \"(2+1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    27
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c4b",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-0-0",
   "conceptId": "meant-equal-opportunities-workplace",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q4(b)",
   "questionText": "Explain what is meant by equal opportunities in the workplace.",
   "stem": "Ireland has embraced diversity in the workplace.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "(2+2)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "(2+2) Equal opportunity means that all people will be treated equally or similarly and not disadvantaged by prejudices or bias e.g. this means that the best person for a job or a promotion is the person who earns that position based on qualifications, experience and knowledge",
+    "id": "definition",
+    "kind": "criterion",
+    "verbatim": "Equal opportunity means that all people will be treated equally or similarly and not disadvantaged by prejudices or bias e.g. this means that the best person for a job or a promotion is the person who earns that position based on qualifications, experience and knowledge.",
     "marks": 4,
-    "openList": true,
-    "contextNote": "2 answers at 2 marks each."
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "TWO valid points,2each; no1mark step or compulsory internal semantic split is printed.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"(2+2)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    27
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c4c",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-0-0",
   "conceptId": "advantages-business-values-diversity-their-workplace",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q4(c)",
   "questionText": "Outline the advantages for a business that values diversity in their workplace.",
   "stem": "Ireland has embraced diversity in the workplace.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "4 x 2 marks (1+1)",
-   "answer": 4,
-   "ofParts": 8,
-   "perPart": 2
-  },
   "totalMarks": 8,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 4 of the answers the scheme states",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Outline the advantages for a business that values diversity in the workplace. Four valid advantages 4 x 2 marks (1+1)",
     "marks": 8,
-    "openList": true,
-    "contextNote": "4 answers at 2 marks each; each split 1+1.",
-    "group": {
-     "claimMax": 4,
-     "perOption": 2,
-     "options": [
-      "People from different backgrounds will have a different outlook and viewpoint which aids decision making",
-      "Younger and older employees learn from each other/new up-to-date techniques and approaches/experienced employees can mentor younger ones/learn new skills",
-      "A diverse hiring policy means access to/employing talented employees which could improve and benefit a business and help maintain a competitive advantage/better public image",
-      "Employees are happier/more creative/more engaged in work/spirit of inclusiveness",
-      "Happy employees means greater retention and less turnover",
-      "Can lead to a greater understanding of the customers",
-      "Different work attitudes will have a positive effect on others",
-      "Learn new languages/culture – could bring in new customers"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "contextNote": "Choose any 4 distinct responses across the full pool. Original allocation: Outline the advantages for a business that values diversity in the workplace. Four valid advantages 4 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. People from different backgrounds will have a different outlook and viewpoint which aids decision making. | 2. Younger and older employees learn from each other/new up-to-date techniques and approaches/experienced employees can mentor younger ones/learn new skills. | 3. A diverse hiring policy means access to/employing talented employees which could improve and benefit a business and help maintain a competitive advantage/better public image. | 4. Employees are happier/more creative/more engaged in work/spirit of inclusiveness. | 5. Happy employees means greater retention and less turnover. | 6. Can lead to a greater understanding of the customers. | 7. Different work attitudes will have a positive effect on others. | 8. Learn new languages/culture – could bring in new customers.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-4",
+      "verbatim": "Response 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"4 x 2 marks (1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    28
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c4d",
-  "topicId": "lcvp-link-modules-1-3",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-0-0",
   "conceptId": "steps-employee-can-take-if-they",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q4(d)",
   "questionText": "Outline the steps an employee can take if they have a dispute in the workplace.",
   "stem": "Ireland has embraced diversity in the workplace.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 3 marks (1+1+1)",
-   "answer": 3,
-   "ofParts": 12,
-   "perPart": 3
-  },
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 3 of the answers the scheme states",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Outline the steps an employee can take if they have a dispute in the workplace. Three valid steps 3 x 3 marks (1+1+1)",
     "marks": 9,
-    "openList": true,
-    "contextNote": "3 answers at 3 marks each; each split 1+1+1.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "Don’t ignore the situation/report the incident to management/HR",
-      "Read the employment contract",
-      "Follow the grievance procedure",
-      "Speak face-to-face with the relevant co-worker/manager to address the conflict/conciliation",
-      "Identify points of agreement and disagreement",
-      "Listen and try to agree a resolution",
-      "Keep a log/diary of events",
-      "Try to be objective when giving details of the dispute",
-      "Get advice from a co-worker",
-      "Request a meeting with the union representative for advice/arbitration",
-      "What policies are in place in the workplace? – Safety, Health and Welfare at Work Act",
-      "Develop a plan to help overcome the difficulty/use outside agencies"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "Choose any 3 distinct responses across the full pool. Original allocation: Outline the steps an employee can take if they have a dispute in the workplace. Three valid steps 3 x 3 marks (1+1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Don’t ignore the situation/report the incident to management/HR. | 2. Read the employment contract. | 3. Follow the grievance procedure. | 4. Speak face-to-face with the relevant co-worker/manager to address the conflict/conciliation. | 5. Identify points of agreement and disagreement. | 6. Listen and try to agree a resolution. | 7. Keep a log/diary of events. | 8. Try to be objective when giving details of the dispute. | 9. Get advice from a co-worker. | 10. Request a meeting with the union representative for advice/arbitration. | 11. What policies are in place in the workplace? – Safety, Health and Welfare at Work Act. | 12. Develop a plan to help overcome the difficulty/use outside agencies.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 3 marks (1+1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    29
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c5a",
-  "topicId": "lcvp-link-modules-1-4",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-0",
   "conceptId": "methods-business-enterprise-could-use-generate",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q5(a)",
   "questionText": "State four methods a business enterprise could use to generate ideas.",
   "stem": "Entrepreneurs are essential for the economy.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "4 x 1 mark",
-   "answer": 4,
-   "ofParts": 8,
-   "perPart": 1
-  },
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "responses",
     "kind": "anyN",
-    "verbatim": "Any 4 of the answers the scheme states",
+    "verbatim": "State four methods a business enterprise could use to generate ideas. Four methods 4 x 1 mark",
     "marks": 4,
     "openList": true,
-    "contextNote": "4 answers at 1 mark each.",
     "group": {
      "claimMax": 4,
      "perOption": 1,
@@ -6697,373 +7870,689 @@
       "Online research",
       "From their own research and development department",
       "Hobbies and interests",
-      "Ideas from abroad/import substitution"
+      "Ideas from abroad/import substitution."
      ]
-    }
+    },
+    "contextNote": "Choose any 4 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. "
    }
   ],
-  "notes": "The scheme prices this ask \"4 x 1 mark\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    30
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c5b",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-1-0",
   "conceptId": "role-entrepreneur-differs-manager-business",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q5(b)",
   "questionText": "Explain how the role of an entrepreneur differs from that of a manager in a business.",
   "stem": "Entrepreneurs are essential for the economy.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 2 marks (1+1)",
-   "answer": 3,
-   "ofParts": 10,
-   "perPart": 2
-  },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 3 of the answers the scheme states",
-    "marks": 6,
-    "openList": true,
-    "contextNote": "3 answers at 2 marks each; each split 1+1.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "Comes up with an idea- sets up a business Is an employee of the business",
-      "Makes all major decisions Implements entrepreneur’s decisions",
-      "Takes a risk Takes no personal/monetary risk",
-      "May make a large profit or make a loss Earns a salary",
-      "May not have specific skillset Usually qualified in the area",
-      "Has to be innovative for business survival Completes all duties relevant to the job",
-      "Future focused – always planning ahead/ Focused on now and getting the job done/ long term short term",
-      "Has to access finance Not responsible for financing the business",
-      "Ensures legal compliance Implements and abides by legislation Has",
-      "Long working hours/difficult to take holidays set holidays/hours of work"
-     ]
-    }
+    "id": "profile-1",
+    "kind": "criterion",
+    "verbatim": "Entrepreneur",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "THREE paired comparisons,1+1; contrast may be implicit or explicit. Preserve the original column/line placement, including Has at the end of the ninth manager line. Complete TEN pairs: Comes up with an idea- sets up a business → Is an employee of the business | Makes all major decisions → Implements entrepreneur’s decisions | Takes a risk → Takes no personal/monetary risk | May make a large profit or make a loss → Earns a salary | May not have specific skillset → Usually qualified in the area | Has to be innovative for business survival → Completes all duties relevant to the job | Future focused – always planning ahead/ long term → Focused on now and getting the job done/ short term | Has to access finance → Not responsible for financing the business | Ensures legal compliance → Implements and abides by legislation Has | Long working hours/difficult to take holidays → set holidays/hours of work",
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "Entrepreneur",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "Business manager",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "id": "profile-2",
+    "kind": "criterion",
+    "verbatim": "Entrepreneur",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Use a different complete profile with its matching components.",
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "Entrepreneur",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "Business manager",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "id": "profile-3",
+    "kind": "criterion",
+    "verbatim": "Entrepreneur",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Use a different complete profile with its matching components.",
+    "parts": [
+     {
+      "id": "component-1",
+      "verbatim": "Entrepreneur",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "component-2",
+      "verbatim": "Business manager",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 2 marks (1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    30
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
+ },
+ {
+  "id": "lcvp-2021-cl-c5c",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-0",
+  "conceptId": "c5c",
+  "level": "common",
+  "year": 2021,
+  "section": "C",
+  "questionRef": "2021 CL Section C Q5(c)",
+  "questionText": "Communication skills, time management skills, decision-making skills and creative skills are some of the skills associated with successful entrepreneurs. Explain why three of these skills are important for entrepreneurs.",
+  "stem": "Entrepreneurs are essential for the economy.",
+  "figureKey": "",
+  "labelKey": [],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "skills",
+    "kind": "criterion",
+    "verbatim": "Explain why three of these skills are important for entrepreneurs.",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Choose THREE distinct named skills from the FOUR printed choices, each1+1. Keep each explanation with its named skill; no combinations or repeated skill. Complete original cross-page pools: Communication skills - An entrepreneur needs to be able to communicate effectively, in order to: • Express themselves in a positive and clear manner • Persuade business investors, • Pitch and present an idea/vision/product • Collaborate with colleagues and employees • Build a team • Connect with customers • Deal with the complaints and queries • Represent their business • Ensure good business communication: written/verbal communication within the business and with other businesses. Time management skills ensure that: • tasks are scheduled on a priority basis • the correct amount of time is allocated to each task • work is delegated to others in the business to make sure the job is completed on time. • the efficiency and effectiveness of the entire company is maintained/improved. Decision-making skills - are necessary for an entrepreneur in order to decide: • which business to go into • how to proceed with the business • where to source funding • where to produce the product • where to locate the business • product production (in some cases) • how best to learn from mistakes • the validity of a potential opportunity Creative skills: • Creativity is the key to producing new ideas/processes/opportunities for innovation • Creativity is about identifying niches/gaps • Creative thinking is essential for competitive advantage • Thinking of novel ways to develop the product and improve the business",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    31
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c5di",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-1-0",
   "conceptId": "evaluation-important-business",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q5(d)(i)",
   "questionText": "Why is evaluation important to a business?",
   "stem": "Entrepreneurs are essential for the economy.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 1 mark",
-   "answer": 3,
-   "ofParts": 5,
-   "perPart": 1
-  },
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "responses",
     "kind": "anyN",
-    "verbatim": "Why is evaluation important to a business? Three — any 3",
+    "verbatim": "Why is evaluation important to a business? Three valid points 3 x 1 mark",
     "marks": 3,
     "openList": true,
-    "contextNote": "3 answers at 1 mark each.",
     "group": {
      "claimMax": 3,
      "perOption": 1,
      "options": [
       "To assess if aims were met/what worked well in the business/was it a success/did they make a profit?",
       "To find out what did not go well and why",
-      "You can take corrective action immediately/allows you to make decisions/make improvements",
+      "You can take corrective action immediately/allows you to make decisions/make improvements.",
       "You are informed for future products/services",
       "Employees work can be assessed and training provided if necessary"
      ]
-    }
+    },
+    "contextNote": "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. "
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 1 mark\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    32
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c5dii",
-  "topicId": "lcvp-link-modules-1-2",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-0",
   "conceptId": "areas-entrepreneurs-could-look-order-evaluate",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q5(d)(ii)",
   "questionText": "Discuss three areas entrepreneurs could look at in order to evaluate their enterprises.",
   "stem": "Entrepreneurs are essential for the economy.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 2 marks (1+1)",
-   "answer": 3,
-   "ofParts": 9,
-   "perPart": 2
-  },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Discuss three areas an entrepreneur could look at in order to evaluate their… — any 3",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Discuss three areas an entrepreneur could look at in order to evaluate their enterprise. Three valid points 3 x 2 marks (1+1)",
     "marks": 6,
-    "openList": true,
-    "contextNote": "3 answers at 2 marks each; each split 1+1.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "Profits/level of sales: amount made compared from year to year/other businesses in the same industry. Achieving aims improved share price",
-      "Reputation: Is their reputation good/are they environmentally and socially responsible/CSR",
-      "Surveys/Ask customers or staff their opinions/Customer reviews",
-      "Business Plan: does the business meet its aims/objectives",
-      "Employees: Is there good industrial relations/low turnover of staff/high moral/no strikes/committed staff/productivity",
-      "Awards won: Industry awards/quality awards/service awards",
-      "Expansion: Has the business expanded its market share/size of premises/hired more staff",
-      "Comparison with competitors Market Share/ Being the dominant business in a particular area for a particular product",
-      "Continuity/length of time in business"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Choose any 3 distinct responses across the full pool. Original allocation: Discuss three areas an entrepreneur could look at in order to evaluate their enterprise. Three valid points 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Profits/level of sales: amount made compared from year to year/other businesses in the same industry. Achieving aims improved share price. | 2. Reputation: Is their reputation good/are they environmentally and socially responsible/CSR. | 3. Surveys/Ask customers or staff their opinions/Customer reviews. | 4. Business Plan: does the business meet its aims/objectives. | 5. Employees: Is there good industrial relations/low turnover of staff/high moral/no strikes/committed staff/productivity. | 6. Awards won: Industry awards/quality awards/service awards. | 7. Expansion: Has the business expanded its market share/size of premises/hired more staff. | 8. Comparison with competitors Market Share/ Being the dominant business in a particular area for a particular product. | 9. Continuity/length of time in business.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 2 marks (1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    32
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c6a",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-1-0",
   "conceptId": "organisations-need-leader",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q6(a)",
   "questionText": "Why do organisations need a leader?",
   "stem": "Effective leadership is essential for organisations to be successful.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 x 2marks (0/2)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Any valid reasons",
+    "id": "reasons",
+    "kind": "criterion",
+    "verbatim": "Leaders are needed to create a vision and motivate people, direct and coordinate activities that lead to a desired outcome. Leaders inspire everyone in an organisation to achieve their very best. They need a leader to make sure the business runs effectively.",
     "marks": 4,
-    "openList": true,
-    "contextNote": "2 answers at 2 marks each; (0/2) — all or nothing on each answer.",
-    "accepts": [
-     "Leaders are needed to create a vision and motivate people, direct and coordinate activities that lead to a desired outcome. Leaders inspire everyone in an organisation to achieve their very best. They need a leader to make sure the business runs effectively"
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "TWO reasons,2or0each as explicitly printed. No1mark step is permitted; keep the complete original explanation.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
     ]
    }
   ],
-  "notes": "The scheme prices this ask \"2 x 2marks (0/2)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    33
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c6b",
+  "subjectId": "lcvp",
   "topicId": "lcvp-link-modules-1-0",
   "conceptId": "personal-characteristics-make-leaders-effective",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q6(b)",
   "questionText": "Outline the personal characteristics that make leaders effective.",
   "stem": "Effective leadership is essential for organisations to be successful.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 x 2 marks (1+1)",
-   "answer": 2,
-   "ofParts": 12,
-   "perPart": 2
-  },
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 2 of the answers the scheme states",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Outline the personal characteristics that make leaders effective. Two relevant characteristics 2 x 2 marks (1+1)",
     "marks": 4,
-    "openList": true,
-    "contextNote": "2 answers at 2 marks each; each split 1+1.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 2,
-     "options": [
-      "A good planner to ensure goals are achieved and carried out",
-      "A good decision maker so that progress can be made",
-      "A good communicator and listener",
-      "Fair in all their dealings with people, results in high levels of trust by employees",
-      "Being innovative and not afraid to try out new things",
-      "A good motivator so that he/she can encourage others in the organisation",
-      "The ability to delegate and not take on all task themselves",
-      "Decisive: able to make a decision and take the consequences",
-      "Loyal: stands up for and defends the team in times of crisis",
-      "Enthusiastic: energises the team",
-      "Conscientiousness: accountable for reaching the organisation’s goals. Having a sense of responsibility or duty motivates the team to follow suit",
-      "Competent: has complete knowledge and familiarity of the work of the team"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Choose any 2 distinct responses across the full pool. Original allocation: Outline the personal characteristics that make leaders effective. Two relevant characteristics 2 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. A good planner to ensure goals are achieved and carried out. | 2. A good decision maker so that progress can be made. | 3. A good communicator and listener. | 4. Fair in all their dealings with people, results in high levels of trust by employees. | 5. Being innovative and not afraid to try out new things. | 6. A good motivator so that he/she can encourage others in the organisation. | 7. The ability to delegate and not take on all task themselves. | 8. Decisive: able to make a decision and take the consequences. | 9. Loyal: stands up for and defends the team in times of crisis. | 10. Enthusiastic: energises the team. | 11. Conscientiousness: accountable for reaching the organisation’s goals. Having a sense of responsibility or duty motivates the team to follow suit. | 12. Competent: has complete knowledge and familiarity of the work of the team. The source also prints “Etc.”.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"2 x 2 marks (1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    33
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c6c",
-  "topicId": "lcvp-link-modules-0-0",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-0",
   "conceptId": "ways-organisation-can-ensure-its-employees",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q6(c)",
   "questionText": "Describe four ways an organisation can ensure its employees remain motivated.",
   "stem": "Effective leadership is essential for organisations to be successful.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "4 x 2 marks (1+1)",
-   "answer": 4,
-   "ofParts": 16,
-   "perPart": 2
-  },
   "totalMarks": 8,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 4 of the answers the scheme states",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Describe four ways an organisation can ensure its employees remain motivated. Four valid points 4 x 2 marks (1+1)",
     "marks": 8,
-    "openList": true,
-    "contextNote": "4 answers at 2 marks each; each split 1+1.",
-    "group": {
-     "claimMax": 4,
-     "perOption": 2,
-     "options": [
-      "Pay good wages/sick pay entitlements",
-      "Benefit-in-kind: non-cash payments to staff such as free or subsidised meals, company car, reduction in the price of company products",
-      "Shorter working hours and longer holidays",
-      "Less stressful work/quick resolution of disputes leads to better motivation and job satisfaction",
-      "Safe and pleasant physical surroundings/spacious/natural light/clean",
-      "Flexible working arrangements: job sharing/job rotation/flexitime/working from home",
-      "Opportunity to travel",
-      "Promotion prospects will encourage employees to work harder",
-      "Job enlargement/rotation: reduces employee boredom by increasing the variety of tasks the employee undertakes",
-      "Job enrichment: providing employees with work requiring greater responsibility, control and input into decision-making",
-      "Opportunity to upskill which could lead to job promotion",
-      "Positive appraisal on work done/bonus/commission/monetary Rewards",
-      "Employee of the month award",
-      "Staff training days/bonding sessions/workplace treats",
-      "Work as part of a team",
-      "Motivational talks"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "contextNote": "Choose any 4 distinct responses across the full pool. Original allocation: Describe four ways an organisation can ensure its employees remain motivated. Four valid points 4 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Pay good wages/sick pay entitlements. | 2. Benefit-in-kind: non-cash payments to staff such as free or subsidised meals, company car, reduction in the price of company products. | 3. Shorter working hours and longer holidays. | 4. Less stressful work/quick resolution of disputes leads to better motivation and job satisfaction. | 5. Safe and pleasant physical surroundings/spacious/natural light/clean. | 6. Flexible working arrangements: job sharing/job rotation/flexitime/working from home. | 7. Opportunity to travel. | 8. Promotion prospects will encourage employees to work harder. | 9. Job enlargement/rotation: reduces employee boredom by increasing the variety of tasks the employee undertakes. | 10. Job enrichment: providing employees with work requiring greater responsibility, control and input into decision-making. | 11. Opportunity to upskill which could lead to job promotion. | 12. Positive appraisal on work done/bonus/commission/monetary Rewards | 13. Employee of the month award. | 14. Staff training days/bonding sessions/workplace treats. | 15. Work as part of a team. | 16. Motivational talks.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-4",
+      "verbatim": "Response 4",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"4 x 2 marks (1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    34
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c6d",
-  "topicId": "lcvp-link-modules-0-0",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-0",
   "conceptId": "challenges-facing-organisation-result-poor-leadership",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q6(d)",
   "questionText": "Describe three challenges facing an organisation as a result of poor leadership.",
   "stem": "Effective leadership is essential for organisations to be successful.",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 3marks (1+1+1)",
-   "answer": 3,
-   "ofParts": 9,
-   "perPart": 3
-  },
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 3 of the answers the scheme states",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Describe three challenges facing an organisation as a result of poor leadership. Three valid challenges 3 x 3marks (1+1+1)",
     "marks": 9,
-    "openList": true,
-    "contextNote": "3 answers at 3 marks each; each split 1+1+1.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "Loss of profits/decline in turnover/less successful/unmet targets",
-      "Reputation is affected/loss of customers/bad experience/contact media/bad reviews online",
-      "Workers are not happy/poor morale/high staff turnover/poor industrial relations/absenteeism",
-      "Staff are demotivated/less productive/don’t know their roles",
-      "Lack of direction – employees are not aware of the goals of the company and the plans for the future",
-      "Lack of transparency and trust in the leadership leading to lack of respect",
-      "Lack of authority – inability to make decisions",
-      "Lack of communication within the workplace meaning jobs don’t get done",
-      "Lack of creativity/innovation"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "Choose any 3 distinct responses across the full pool. Original allocation: Describe three challenges facing an organisation as a result of poor leadership. Three valid challenges 3 x 3marks (1+1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Loss of profits/decline in turnover/less successful/unmet targets. | 2. Reputation is affected/loss of customers/bad experience/contact media/bad reviews online. | 3. Workers are not happy/poor morale/high staff turnover/poor industrial relations/absenteeism. | 4. Staff are demotivated/less productive/don’t know their roles. | 5. Lack of direction – employees are not aware of the goals of the company and the plans for the future. | 6. Lack of transparency and trust in the leadership leading to lack of respect. | 7. Lack of authority – inability to make decisions. | 8. Lack of communication within the workplace meaning jobs don’t get done. | 9. Lack of creativity/innovation.",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 3marks (1+1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    35
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c7a",
-  "topicId": "lcvp-link-modules-1-0",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-1",
   "conceptId": "reasons-business-move-selling-online",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q7(a)",
   "questionText": "Give two reasons why a business would move to selling online.",
   "stem": "A business wants to expand into online sales .",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 + 2 marks",
-   "answer": 2,
-   "ofParts": 10,
-   "perPart": 2
-  },
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "responses",
     "kind": "anyN",
-    "verbatim": "Any 2 of the answers the scheme states",
+    "verbatim": "Give two reasons why a business would move to selling online? Two valid reasons 2 + 2 marks",
     "marks": 4,
     "openList": true,
-    "contextNote": "2 answers at 2 marks each.",
     "group": {
      "claimMax": 2,
      "perOption": 2,
@@ -7079,158 +8568,267 @@
       "Increase profits",
       "Ease stress"
      ]
-    }
+    },
+    "contextNote": "Choose any 2 distinct responses across the complete original pool. Each response receives 2 or 0 marks; no unprinted partial step is inferred. "
    }
   ],
-  "notes": "The scheme prices this ask \"2 + 2 marks\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    36
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c7b",
-  "topicId": "lcvp-link-modules-1-0",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-1",
   "conceptId": "supports-available-business-owners-wishing-develop",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q7(b)",
   "questionText": "Outline the supports available to business owners wishing to develop their business.",
   "stem": "A business wants to expand into online sales .",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 2 marks (1+1)",
-   "answer": 3,
-   "ofParts": 8,
-   "perPart": 2
-  },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 3 of the answers the scheme states",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Outline the supports available to business owners wishing to develop their business. Three valid answers 3 x 2 marks (1+1)",
     "marks": 6,
-    "openList": true,
-    "contextNote": "3 answers at 2 marks each; each split 1+1.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "Mentoring services",
-      "Offers grants/loans",
-      "Gives advice",
-      "Training courses",
-      "Grants for feasibility studies",
-      "Provide premises",
-      "Capital grants for equipment",
-      "Networking"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Choose any 3 distinct responses across the full pool. Original allocation: Outline the supports available to business owners wishing to develop their business. Three valid answers 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Mentoring services | 2. Offers grants/loans | 3. Gives advice | 4. Training courses | 5. Grants for feasibility studies | 6. Provide premises | 7. Capital grants for equipment | 8. Networking",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 2 marks (1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    36
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c7c",
-  "topicId": "lcvp-link-modules-1-0",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-1",
   "conceptId": "key-items-should-be-included-funding",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q7(c)",
   "questionText": "State and explain three key items that should be included in a funding application when seeking finance for business development.",
   "stem": "A business wants to expand into online sales .",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 2marks (1+1)",
-   "answer": 3,
-   "ofParts": 7,
-   "perPart": 2
-  },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 3 of the answers the scheme states",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "State and explain three key items that should be included in a funding application when seeking finance for business development. Three valid items 3 x 2marks (1+1)",
     "marks": 6,
-    "openList": true,
-    "contextNote": "3 answers at 2 marks each; each split 1+1.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "Business plan submitted with a details/overview of the business/financial section included",
-      "Amount needed – lump sum or spread over a few months",
-      "Accounts of the business and expenditure to date – turnover, profit, loss…. (development)",
-      "Forecast/projected accounts (start-up)",
-      "The terms of the finance needed – period of the loan and repayment",
-      "Credit History",
-      "How the finance will be used: o Product development o Premises o Marketing o Hiring of staff o Training o Research o Debt repayment"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Choose any 3 distinct responses across the full pool. Original allocation: State and explain three key items that should be included in a funding application when seeking finance for business development. Three valid items 3 x 2marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Business plan submitted with a details/overview of the business/financial section included | 2. Amount needed – lump sum or spread over a few months | 3. Accounts of the business and expenditure to date – turnover, profit, loss…. (development) | 4. Forecast/projected accounts (start-up) | 5. The terms of the finance needed – period of the loan and repayment | 6. Credit History | 7. How the finance will be used: o Product development o Premises o Marketing o Hiring of staff o Training o Research o Debt repayment",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 2marks (1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    37
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2021-cl-c7d",
-  "topicId": "lcvp-link-modules-1-0",
+  "subjectId": "lcvp",
+  "topicId": "lcvp-link-modules-1-1",
   "conceptId": "detail-challenges-business-wants-move-online",
   "level": "common",
   "year": 2021,
-  "subjectId": "lcvp",
   "section": "C",
   "questionRef": "2021 CL Section C Q7(d)",
   "questionText": "Describe in detail three challenges for a business that wants to move to online sales.",
-  "stem": "A business wants to expand into online sales . Link Modules Examination Saturday 8 May Morning 10:00 – 12:30",
+  "stem": "A business wants to expand into online sales .",
   "figureKey": "",
   "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 3 marks (1+1+1)",
-   "answer": 3,
-   "ofParts": 16,
-   "perPart": 3
-  },
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any 3 of the answers the scheme states",
+    "id": "responses",
+    "kind": "criterion",
+    "verbatim": "Describe in detail three challenges for a business that wants to move to online sales. Three challenges 3 x 3 marks (1+1+1)",
     "marks": 9,
-    "openList": true,
-    "contextNote": "3 answers at 3 marks each; each split 1+1+1.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "Secure online sales/processing of payments",
-      "Developing a website",
-      "Managing the website",
-      "Lack of skills\\upskilling in order to establish a website",
-      "Using social media\\marketing",
-      "Communicating with customers /retaining loyal customers – newsletters, discounts",
-      "Refunds and returns",
-      "Product display and information",
-      "Competition",
-      "Data security",
-      "Delivery/cost of shipping",
-      "Finance",
-      "Availability of broadband",
-      "Workers don’t know how to use it/resist change",
-      "Extra expenses - shipping/boxes/equipment/location/warehousing/space/storage",
-      "Getting the supplies/stock in – pandemic/Brexit"
-     ]
-    }
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "Choose any 3 distinct responses across the full pool. Original allocation: Describe in detail three challenges for a business that wants to move to online sales. Three challenges 3 x 3 marks (1+1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Secure online sales/processing of payments | 2. Developing a website | 3. Managing the website | 4. Lack of skills\\upskilling in order to establish a website | 5. Using social media\\marketing | 6. Communicating with customers /retaining loyal customers – newsletters, discounts | 7. Refunds and returns | 8. Product display and information | 9. Competition | 10. Data security | 11. Delivery/cost of shipping | 12. Finance | 13. Availability of broadband | 14. Workers don’t know how to use it/resist change | 15. Extra expenses - shipping/boxes/equipment/location/warehousing/space/storage | 16. Getting the supplies/stock in – pandemic/Brexit",
+    "parts": [
+     {
+      "id": "response-1",
+      "verbatim": "Response 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "response-2",
+      "verbatim": "Response 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "response-3",
+      "verbatim": "Response 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ]
    }
   ],
-  "notes": "The scheme prices this ask \"3 x 3 marks (1+1+1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Original 2021 allocation; complete source guidance retained"
+  },
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL SOURCE",
+   "title": "Original question",
+   "pages": [
+    38
+   ],
+   "attribution": "SEC LCVP Link Modules 2021 Common Level — © State Examinations Commission.",
+   "presentationNote": "Read the complete original source and question in context."
+  }
  },
  {
   "id": "lcvp-2022-cl-a1",
