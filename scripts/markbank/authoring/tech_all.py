@@ -815,6 +815,13 @@ def author(bind_figures=True):
                 tail_move = TC.STEM_TAIL_TO_ASK.get((year, level, section, q, letter))
                 if tail_move and tail_move[0] == roman:
                     ask = clean_ask(f'{ask} {tail_move[1]}')
+                elif tail_move and roman is None and (section, q, letter, tail_move[0]) in covered:
+                    # ...and on a card for the whole question, onto that
+                    # roman's own words (2010 Higher Q7, priced as a whole).
+                    lifted = dict(leaves)
+                    key = (section, q, letter, tail_move[0])
+                    lifted[key] = f'{leaves.get(key, "")} {tail_move[1]}'
+                    ask = clean_ask(joined_ask(covered, lifted))
                 ref = joined_ref(year, level, covered)
 
                 def note(reason, ask_text=''):
@@ -1288,6 +1295,28 @@ def author(bind_figures=True):
                     rows[0].pop('openList', None)
                     if rows[0].get('ask'):
                         rows[0]['contextNote'] = f'{block.notation.strip()} {ASK_ROW_NOTE}'
+                split_spec = TC.PART_SPLITS.get((year, level, section, q)) if not letter else None
+                steps_for, printed = (split_spec or {}).get('steps', {}).get(roman) or (None, None)
+                if steps_for and model['kind'] == 'fixed':
+                    # tech_crops.PART_SPLITS: a part priced in printed steps
+                    # ("(Formula 2 marks)" and "(Answer 2 marks)"; "2+1"), so a
+                    # student who has the first step and not the second can
+                    # claim it. The printed tariff lines are the row's note.
+                    stepped = [r for r in rows if r['marks'] == steps_for[-1]]
+                    if len(stepped) != len(rows):
+                        note('the rows do not sit on the printed steps', question)
+                        continue
+                    for r in rows:
+                        r['kind'] = 'criterion'
+                        r['permittedMarks'] = list(steps_for)
+                        r.pop('openList', None)
+                        r['contextNote'] = ' '.join(
+                            t for t in (f'The scheme prints {printed}.', r.get('contextNote')) if t)
+                        parts = split_spec.get('parts', {}).get(roman)
+                        if parts:
+                            r['parts'] = [{'id': re.sub(r'[^a-z0-9]+', '-', word.lower()).strip('-'),
+                                           'verbatim': word, 'marks': m,
+                                           'permittedMarks': [0, m]} for word, m in parts]
                 cut = TC.SCHEME_BREAKS_OFF.get((year, level, section, q, letter, roman))
                 if cut:
                     # The printed scheme stops mid-sentence: the row is lifted

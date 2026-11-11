@@ -368,6 +368,13 @@ TOPIC_OVERRIDES = {
     'tech-2012-hl-b3a': 'tech-core-energy',        # hybrid cars
     'tech-2012-hl-b3c': 'tech-core-design',        # simulation and prototypes
     'tech-2012-hl-b3d': 'tech-core-structures',    # steering mechanism
+    # 2010 Higher.
+    'tech-2010-hl-a11': 'tech-core-project',       # table of tasks, critical path
+    'tech-2010-hl-a14': 'tech-core-materials',     # materials for a skateboard
+    'tech-2010-hl-b2c': 'tech-core-project',       # reliability, conformance (quality)
+    'tech-2010-hl-b2d': 'tech-core-materials',     # spheres of sustainability, waste
+    'tech-2010-hl-b3a': 'tech-core-design',        # designing for car safety
+    'tech-2010-hl-b3d': 'tech-core-materials',     # helmet shell and lining materials
 }
 
 ALL_TOPICS = [t for t, _ in CORE] + [OPTION_TOPIC[i] for i in sorted(OPTION_TOPIC)]

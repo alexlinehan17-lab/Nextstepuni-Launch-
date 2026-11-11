@@ -276,10 +276,22 @@ class TechScheme:
         rubric_marks = None
 
         last_closed = []
+        # tech_crops.PART_SPLITS: the printed part-price lines seen in the
+        # open block, which bound nothing (the rubric closes the block).
+        part_lines = []
 
         def close(total, terms, notation):
             """Emit the block the tariff just ended."""
-            nonlocal lines, roman, head_q, head_letter, last_q, pages
+            nonlocal lines, roman, head_q, head_letter, last_q, pages, part_lines
+            spec = TC.PART_SPLITS.get((self.year, self.level, section, head_q))
+            if spec and lines:
+                # Every printed line named must have been read, and the split
+                # they make must add up to the rubric's total, or nothing.
+                if tuple(part_lines) != tuple(spec['lines']) or sum(spec['terms']) != total:
+                    raise SystemExit(f'PART_SPLITS {self.year} {self.level} {section} {head_q}: '
+                                     f'read {part_lines} for {total}')
+                terms, notation = list(spec['terms']), ' '.join(spec['lines'])
+            part_lines = []
             if lines:
                 q = head_q
                 if q is None:
@@ -518,7 +530,17 @@ class TechScheme:
             # the page.
             if not lines and head_q is None and last_closed and last_closed[0].lines \
                     and text in TC.LATE_ANSWER_LINES.get((self.year, self.level), ()):
-                last_closed[0].lines.append((last_closed[0].lines[-1][0], text))
+                prev_roman, prev = last_closed[0].lines[-1]
+                if re.fullmatch(r'etc\.?', text) and prev.rstrip().endswith(','):
+                    # A wrapped "etc." closing the list above the tariff, as
+                    # the in-block rule below does (2010 Higher 2(c)(ii)).
+                    last_closed[0].lines[-1] = (prev_roman, f'{prev.rstrip()} etc.')
+                else:
+                    last_closed[0].lines.append((prev_roman, text))
+                continue
+            if section == 'A' and text in TC.PART_SPLITS.get(
+                    (self.year, self.level, section, head_q), {}).get('lines', ()):
+                part_lines.append(text)
                 continue
 
             rh = ROMAN_HEAD.match(text)

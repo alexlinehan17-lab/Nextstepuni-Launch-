@@ -1,5 +1,185 @@
 [
  {
+  "file": "technology-2010-HL-paper-secA-q1-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A yellow triangular safety sign with a black border, showing liquid dripping from two tilted test tubes, one onto a flat bar and one onto a hand.",
+  "questionRef": "2010 HL Section A Q1",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   446,
+   111,
+   568,
+   230
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secA-q2-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a white football boot with black stripes and red studs, beside a table with columns Material, Use and Property: Kevlar, Body of boot; Foamed polyurethane, Inner lining; Moulded polyurethane, Sole of boot; the Property column left empty.",
+  "questionRef": "2010 HL Section A Q2",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   54,
+   349,
+   556,
+   483
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a wind-up torch: a red and black body with a clear lens over three bulbs at the front and a black part folded flat on top.",
+  "questionRef": "2010 HL Section A Q9",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   408,
+   493,
+   537,
+   587
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A red star with a yellow centre and a hole for hanging; below, the table of tasks headed Task, Time (weeks), Depends on: A Design star 1 -; B Source materials 1 A; C Team 1—make star 4 B; D Team 2—build circuit 2 B; E Team 3—marketing 3; F Assembly 1; G Sell products 1; the Depends on cells for E, F and G left empty.",
+  "questionRef": "2010 HL Section A Q11",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   54,
+   434,
+   557,
+   725
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secA-q15-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Line drawing of an electric motor in outline only: a cylindrical body with a threaded shaft at the front, mounted on a flange plate with four bolt holes and two triangular ribs.",
+  "questionRef": "2010 HL Section A Q15",
+  "booklet": "014",
+  "page": 6,
+  "rect": [
+   151,
+   506,
+   430,
+   736
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secB-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Graph of Resistance in ohms, on a scale marked 10,000, 50,000 and 100,000, against Temperature in degrees C from 0 to 10, a single plotted line falling gently from left to right; beside it a circuit between 12V and 0V, a 33kΩ resistor above a thermistor, the point between them marked Vout.",
+  "questionRef": "2010 HL Section B Q2(b)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   100,
+   227,
+   480,
+   380
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secB-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Diagram of three overlapping circles labelled ENVIRONMENTAL, SOCIAL and ECONOMIC, the area where all three overlap labelled Sustainability.",
+  "questionRef": "2010 HL Section B Q2(d)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   389,
+   629,
+   569,
+   787
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Circuit diagram between 9V and 0V: a thermistor above a variable resistor VR forming one divider, resistors R1 and R2 forming another, both feeding an op-amp whose output lights an LED through a resistor; a note reads R1=R2.",
+  "questionRef": "2010 HL Section C Q2(b)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   45,
+   204,
+   233,
+   350
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secC-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two empty pairs of axes headed Digital signal and Analogue signal, each a vertical line and a horizontal arrow. Below, logo A, a black and white silhouette of a hammer and nails in a rounded shape, and logo B, a shiny chrome hammer head in full colour on a blue background.",
+  "questionRef": "2010 HL Section C Q3(d)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   90,
+   594,
+   486,
+   789
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Product life cycle graph, its stages Development, Introduction, Growth, Maturity and Decline marked along a Time axis, with a red curve labelled Fire v3 and a blue curve labelled Roller. Below, the Product Process Matrix: Volume, Low to High, against Standardisation, Low to High, four boxes A, B, C and D stepping up from bottom left to top right, and a circled X in the upper left corner.",
+  "questionRef": "2010 HL Section C Q4(b)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   162,
+   255,
+   430,
+   656
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of two guitars: Guitar A, a red electric guitar with a white scratchplate and a maple neck, and Guitar B, a pale grey game controller guitar with an angular body and a dark grey neck.",
+  "questionRef": "2010 HL Section C Q5(b)",
+  "booklet": "015",
+  "page": 8,
+  "rect": [
+   411,
+   170,
+   579,
+   386
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secC-q5d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The Repak logo, and a table of Material against Cost (cent per kg): Aluminium 8.4, Metal composite 11.1, Glass 0.9, Paper/cardboard 2.3, Plastic 8.9, Steel 7.9, Wood 1.1.",
+  "questionRef": "2010 HL Section C Q5(d)",
+  "booklet": "015",
+  "page": 8,
+  "rect": [
+   50,
+   625,
+   566,
+   787
+  ]
+ },
+ {
   "file": "technology-2011-HL-paper-secA-q6-art.png",
   "kind": "figure",
   "truncated": false,
@@ -11325,6 +11505,246 @@
   ]
  },
  {
+  "file": "technology-2010-HL-paper-secA-q3-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Close-up photograph of two black cables, one ending in a full-size USB plug and the other in a small mini-USB plug.",
+  "questionRef": "2010 HL Section A Q3",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   448,
+   641,
+   561,
+   745
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secA-q4-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a hand-operated winch: a large toothed gear and a strap drum on a grey steel frame, a crank handle with a black grip, and the strap ending in a hook.",
+  "questionRef": "2010 HL Section A Q4",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   425,
+   57,
+   552,
+   140
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secA-q5-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The list of file formats mp3, bmp, doc, tiff, gif, avi, xls and odf, above a table with columns Output and File format: Leaflet to outline a history of the site; Short video to demonstrate the variety of attractions in the local area; Colour logo of local tourist area for web use; Sound file for historical commentary; the File format column left empty.",
+  "questionRef": "2010 HL Section A Q5",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   106,
+   348,
+   467,
+   521
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secA-q6-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "3D drawing of a children's playground climbing frame with a blue domed tower, blue slides, yellow panels and wooden posts.",
+  "questionRef": "2010 HL Section A Q6",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   414,
+   582,
+   554,
+   670
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secA-q7-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Drawing of the prototype bridge, a yellow frame of four rectangular panels spanning a blue channel between grey supports; one upright bar is shown bent and broken, circled in red, with an enlarged view labelled Structural failure.",
+  "questionRef": "2010 HL Section A Q7",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   388,
+   38,
+   565,
+   146
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secA-q8-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The resistor colour code table, colour swatches black, brown, red, orange, yellow, green, blue, violet, grey and white numbered 0 to 9, beside a drawing of a resistor with coloured bands, arrows labelled Band 3 and Band 4 pointing at its third and fourth bands.",
+  "questionRef": "2010 HL Section A Q8",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   72,
+   312,
+   232,
+   436
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Drawing of the treadle linkage on a hatched base: a crank on the left, blue arrows showing it turning, joined by a light-blue link to the arm of the windscreen wiper labelled Wiper 1, a blue arc showing its swing; to its right a bare pivot labelled Wiper 2.",
+  "questionRef": "2010 HL Section A Q12",
+  "booklet": "014",
+  "page": 5,
+  "rect": [
+   185,
+   128,
+   407,
+   290
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secA-q13-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Underwater rendering of an OpenHydro tidal turbine: a white open-centre ring held in a frame on a tubular base resting on the seabed.",
+  "questionRef": "2010 HL Section A Q13",
+  "booklet": "014",
+  "page": 5,
+  "rect": [
+   42,
+   543,
+   233,
+   699
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secA-q14-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a skateboard with a black grip-tape deck and red wheels, an arrow labelled A pointing at the deck and an arrow labelled B at a wheel.",
+  "questionRef": "2010 HL Section A Q14",
+  "booklet": "014",
+  "page": 6,
+  "rect": [
+   288,
+   71,
+   512,
+   214
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secB-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Drawing of the lifting platform's scissor link: a platform on two crossed links pivoted at X, a red downward arrow marked 90kg at the upper end A and the lower end labelled B; beside it, a photograph of a red motorcycle on a black scissor-lift platform.",
+  "questionRef": "2010 HL Section B Q3(b)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   96,
+   197,
+   575,
+   346
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secB-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a black full-face motorcycle helmet decorated with red and orange flames, with a clear visor.",
+  "questionRef": "2010 HL Section B Q3(d)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   440,
+   636,
+   571,
+   765
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secC-q1b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The given flowchart: Start, LED/Buzzer Off, a decision Switch 1 on whose No exit joins a line back up to Start, and on Yes Wait 30 sec, LED/Buzzer on, Wait 1 sec, LED/Buzzer off, then a decision Switch 2 with no exits drawn; two open return lines rise on the right, one back to just above LED/Buzzer on and one back to Start.",
+  "questionRef": "2010 HL Section C Q1(b)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   455,
+   207,
+   555,
+   472
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secC-q1d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Pneumatic symbols, not connected: two push-button operated valves labelled A and B, each with ports numbered 1, 2 and 3, and a cylinder with a spring and a piston rod.",
+  "questionRef": "2010 HL Section C Q1(d)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   414,
+   636,
+   572,
+   793
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secC-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Graphic of oven: trays of cakes carried on a conveyor, labelled Conveyor, under a heating element labelled Heater, arrows showing the direction of travel. Below, a Schematic layout: boxes High temperature A, Conveyor B and Low temperature C wired into an empty dashed box, whose output X goes to a box Oven control.",
+  "questionRef": "2010 HL Section C Q2(d)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   55,
+   600,
+   466,
+   785
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secC-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Screenshot of the HARPOON® Ltd Online Registration form, with fields First Name, Surname, House No., Town, Postcode, Date of birth, Gender (Male or Female buttons) and Email, and a Submit button.",
+  "questionRef": "2010 HL Section C Q3(c)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   357,
+   317,
+   571,
+   516
+  ]
+ },
+ {
+  "file": "technology-2010-HL-paper-secC-q4d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a helmet with a metal face guard. Below, a graph of Cost (€0 to €1,000) against Quantity Made (0 to 400) with two straight lines, a red line starting partway up the cost axis and rising gently, and a blue line rising steeply from €0, the two crossing.",
+  "questionRef": "2010 HL Section C Q4(d)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   95,
+   390,
+   584,
+   639
+  ]
+ },
+ {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
   "kind": "figure",
   "truncated": false,
@@ -14656,5 +15076,149 @@
   "description": "The marking scheme's own diagram for 2011 OL Section C 5(b)(ii), as the State Examinations Commission printed it: an injection moulding machine in section, granules in a yellow hopper dropping into a barrel with a screw, the plastic turning orange and red as it is heated and forced into a two-part mould holding a red shell, an OPEN arrow under the mould and the finished shell released at the right; leader lines numbered 1 to 6 point at the parts, with no key printed.",
   "solution": true,
   "questionRef": "2011 OL Section C Q5(b)"
+ },
+ {
+  "file": "technology-2010-HL-scheme-secA-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own table for 2010 HL Section A Q2, as the State Examinations Commission printed it, columns Material, Use, Property: Kevlar, Body of boot, Tough, hard wearing, won't tear/good tensile strength etc.; Foamed polyurethane, Inner lining, Soft, comfortable etc.; Moulded polyurethane, Sole of boot, Impact resistant, mouldable, durable etc.",
+  "solution": true,
+  "questionRef": "2010 HL Section A Q2"
+ },
+ {
+  "file": "technology-2010-HL-scheme-secA-q4-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own calculation for 2010 HL Section A Q4(ii), as the State Examinations Commission printed it: Calculation: Gear Ratio/M.A. = 120/12= 10; Efficiency = (work output/ work input) * 100 = (95/10) over 10, written as a stacked fraction, * 100 = 95%; in the margin, (Formula 2 marks) and (Answer 2 marks).",
+  "solution": true,
+  "questionRef": "2010 HL Section A Q4(ii)"
+ },
+ {
+  "file": "technology-2010-HL-scheme-secA-q5.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own table for 2010 HL Section A Q5, as the State Examinations Commission printed it, columns Output, File format: Leaflet to outline a history of the site, doc/odf; Short video clip to demonstrate the variety of attractions in the local area, avi; Colour logo of local tourist area for web use, tiff/gif; Sound file for historical commentary, mp3.",
+  "solution": true,
+  "questionRef": "2010 HL Section A Q5"
+ },
+ {
+  "file": "technology-2010-HL-scheme-secA-q10.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own logic system and truth table for 2010 HL Section A Q10, as the State Examinations Commission printed them, in two boxes: an OR gate with inputs A and B and output o/p, captioned OR gate; and the truth table, A B O/P: 1 1 1, 1 0 1, 0 1 1, 0 0 0.",
+  "solution": true,
+  "questionRef": "2010 HL Section A Q10"
+ },
+ {
+  "file": "technology-2010-HL-scheme-secA-q11.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own completed table and critical path diagram for 2010 HL Section A Q11(i), as the State Examinations Commission printed them: the table's Depends on column completed, E on A, F on C,D and G on E,F; the diagram runs A (1 week) to B (1), then C (4) and D (2) side by side into F (1) and then G (1), with E (3) running from after A straight to G, each box's start and finish weeks printed above it.",
+  "solution": true,
+  "questionRef": "2010 HL Section A Q11"
+ },
+ {
+  "file": "technology-2010-HL-scheme-secA-q12-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own completed graphic for 2010 HL Section A Q12(i), as the State Examinations Commission printed it: a dash-dot line labelled Link runs from the joint on Wiper 1's arm across to a new pivot and down to Wiper 2's pivot; beside it, a small sketch of the two wiper arms standing parallel, joined by a bar.",
+  "solution": true,
+  "questionRef": "2010 HL Section A Q12(i)"
+ },
+ {
+  "file": "technology-2010-HL-scheme-secB-q2b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answers for 2010 HL Section B 2(b)(i) and (ii), as the State Examinations Commission printed them under the reprinted asks: (i) 66,000 ohms or 66k ohms, written with the ohm sign; (ii) VOUT = R2 over (R1 + R2) x V = 66,000 over (33,000 + 66,000) x 12 = 8V, written as stacked fractions.",
+  "solution": true,
+  "questionRef": "2010 HL Section B Q2(b)"
+ },
+ {
+  "file": "technology-2010-HL-scheme-secB-q3b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own picture for 2010 HL Section B 3(b)(i), as the State Examinations Commission printed it: a photograph of a red motorcycle on a scissor-lift platform, an arrow labelled Hydraulic ram pointing at the ram between the scissor legs.",
+  "solution": true,
+  "questionRef": "2010 HL Section B Q3(b)"
+ },
+ {
+  "file": "technology-2010-HL-scheme-secB-q3c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answers for 2010 HL Section B 3(c), as the State Examinations Commission printed them. (i): a wheel clamp stand labelled wheel clamped in position, and a bent steel bar labelled stabiliser. (ii): a task table, Task, Activity, Time (weeks): A Design clamping structure 2, B Source steel 1, C Cut to size 2, D Weld together 1, E Spray paint 1, F Test and attach to platform 1; and, captioned Example of a WBS, two rows, Source Steel to Cut Side A to Weld Together and Source Steel to Cut Side B to Weld Together, both leading to Spray Paint and then Test.",
+  "solution": true,
+  "questionRef": "2010 HL Section B Q3(c)"
+ },
+ {
+  "file": "technology-2010-HL-scheme-secC-q1b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own flowcharts for 2010 HL Section C 1(b), as the State Examinations Commission printed them, two, each captioned Possible Solution. The first: Start, LED/Buzzer, the decision Switch 1 on, back to Start on N; on Yes, Enable Interrupt, Wait 30, LED/Buzzer on, Wait, LED/Buzzer off, Wait, then the decision Switch 2, back to LED/Buzzer on on No and back to Start on Yes; beside it an interrupt routine, Interrupt, Outputs, End. The second: a Re-set input leading into Start, then LED/Buzzer, Switch 1 on, back to Start on No; on Yes, Wait 30, LED/Buzzer on, Wait 1 sec, LED/Buzzer on, Wait 1 sec, then Switch 2, back to the first LED/Buzzer on on No and back to Start on Yes.",
+  "solution": true,
+  "questionRef": "2010 HL Section C Q1(b)"
+ },
+ {
+  "file": "technology-2010-HL-scheme-secC-q1d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own pneumatic circuit for 2010 HL Section C 1(d)(ii), as the State Examinations Commission printed it: port 2 of push-button valve A and port 2 of push-button valve B each feed one side of a valve labelled Shuttle valve, whose output goes to the spring-return cylinder.",
+  "solution": true,
+  "questionRef": "2010 HL Section C Q1(d)"
+ },
+ {
+  "file": "technology-2010-HL-scheme-secC-q2b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own redrawn circuit for 2010 HL Section C 2(b)(ii), as the State Examinations Commission printed it: the temperature sensing circuit with the op-amp output driving a transistor through a resistor; the transistor switches a relay coil with a diode across it, and the relay contacts switch a motor M on a separate 12V to 0V supply.",
+  "solution": true,
+  "questionRef": "2010 HL Section C Q2(b)"
+ },
+ {
+  "file": "technology-2010-HL-scheme-secC-q2c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own working for 2010 HL Section C 2(c)(ii), as the State Examinations Commission printed it: Efficiency = Po over Pi x 100 = 1.6 over 2.0 x 100 = 80%, written as stacked fractions.",
+  "solution": true,
+  "questionRef": "2010 HL Section C Q2(c)"
+ },
+ {
+  "file": "technology-2010-HL-scheme-secC-q2d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own logic circuit and truth table for 2010 HL Section C 2(d), as the State Examinations Commission printed them: Conveyor B and Low temperature C go into an AND gate, whose output and High temperature A go into an OR gate giving X to Oven control, captioned Possible solution; the truth table, A B C X, gives X = 0 for 0 0 0, 0 0 1 and 0 1 0, and X = 1 for 0 1 1, 1 0 0, 1 0 1, 1 1 0 and 1 1 1.",
+  "solution": true,
+  "questionRef": "2010 HL Section C Q2(d)"
+ },
+ {
+  "file": "technology-2010-HL-scheme-secC-q3d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketches for 2010 HL Section C 3(d)(i), as the State Examinations Commission printed them, each on axes marked V: a square wave jumping between two levels, captioned Digital signal only recognises on or off states, and a smooth wave rising and falling through many levels, captioned Analogue signal can have different levels.",
+  "solution": true,
+  "questionRef": "2010 HL Section C Q3(d)"
+ },
+ {
+  "file": "technology-2010-HL-scheme-secC-q4d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer for 2010 HL Section C 4(d)(ii), as the State Examinations Commission printed it: Set-up cost = 500 euro; BEQ = Setup cost over (Manual cost/item - Automated cost/item) = 500 over (2.5 - 0.5) = 250 units, written as stacked fractions; (4+4 marks) printed at the right between the two lines.",
+  "solution": true,
+  "questionRef": "2010 HL Section C Q4(d)"
+ },
+ {
+  "file": "technology-2010-HL-scheme-secC-q5c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2010 HL Section C 5(c)(ii), as the State Examinations Commission printed it: an injection moulding machine, captioned Injection moulding, letters A to F marking the rotating screw, the hopper, the injection nozzle, the mould, the shaped cavity and the finished product.",
+  "solution": true,
+  "questionRef": "2010 HL Section C Q5(c)"
+ },
+ {
+  "file": "technology-2010-HL-scheme-secC-q5d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own pictures for 2010 HL Section C 5(d)(i), as the State Examinations Commission printed them: a photograph of an orbital sander and a photograph of a pillar drilling machine.",
+  "solution": true,
+  "questionRef": "2010 HL Section C Q5(d)"
  }
 ]

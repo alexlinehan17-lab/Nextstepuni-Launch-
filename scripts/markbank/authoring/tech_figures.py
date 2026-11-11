@@ -2649,6 +2649,138 @@ REVIEWED.update({
         'in red.',
 })
 
+# 2010 Higher, each crop rendered and looked at.
+REVIEWED.update({
+    'technology-2010-HL-paper-secA-q1-art':
+        'A yellow triangular safety sign with a black border, showing liquid '
+        'dripping from two tilted test tubes, one onto a flat bar and one onto a '
+        'hand.',
+    'technology-2010-HL-paper-secA-q2-art':
+        'Photograph of a white football boot with black stripes and red studs, '
+        'beside a table with columns Material, Use and Property: Kevlar, Body of '
+        'boot; Foamed polyurethane, Inner lining; Moulded polyurethane, Sole of '
+        'boot; the Property column left empty.',
+    'technology-2010-HL-paper-secA-q3-art':
+        'Close-up photograph of two black cables, one ending in a full-size USB '
+        'plug and the other in a small mini-USB plug.',
+    'technology-2010-HL-paper-secA-q4-art':
+        'Photograph of a hand-operated winch: a large toothed gear and a strap '
+        'drum on a grey steel frame, a crank handle with a black grip, and the '
+        'strap ending in a hook.',
+    'technology-2010-HL-paper-secA-q5-art':
+        'The list of file formats mp3, bmp, doc, tiff, gif, avi, xls and odf, '
+        'above a table with columns Output and File format: Leaflet to outline a '
+        'history of the site; Short video to demonstrate the variety of '
+        'attractions in the local area; Colour logo of local tourist area for web'
+        ' use; Sound file for historical commentary; the File format column left '
+        'empty.',
+    'technology-2010-HL-paper-secA-q6-art':
+        "3D drawing of a children's playground climbing frame with a blue domed "
+        'tower, blue slides, yellow panels and wooden posts.',
+    'technology-2010-HL-paper-secA-q7-art':
+        'Drawing of the prototype bridge, a yellow frame of four rectangular '
+        'panels spanning a blue channel between grey supports; one upright bar is'
+        ' shown bent and broken, circled in red, with an enlarged view labelled '
+        'Structural failure.',
+    'technology-2010-HL-paper-secA-q8-art':
+        'The resistor colour code table, colour swatches black, brown, red, '
+        'orange, yellow, green, blue, violet, grey and white numbered 0 to 9, '
+        'beside a drawing of a resistor with coloured bands, arrows labelled Band'
+        ' 3 and Band 4 pointing at its third and fourth bands.',
+    'technology-2010-HL-paper-secA-q9-art':
+        'Photograph of a wind-up torch: a red and black body with a clear lens '
+        'over three bulbs at the front and a black part folded flat on top.',
+    'technology-2010-HL-paper-secA-q11-art':
+        'A red star with a yellow centre and a hole for hanging; below, the table'
+        ' of tasks headed Task, Time (weeks), Depends on: A Design star 1 -; B '
+        'Source materials 1 A; C Team 1—make star 4 B; D Team 2—build circuit 2 '
+        'B; E Team 3—marketing 3; F Assembly 1; G Sell products 1; the Depends on'
+        ' cells for E, F and G left empty.',
+    'technology-2010-HL-paper-secA-q12-art':
+        'Drawing of the treadle linkage on a hatched base: a crank on the left, '
+        'blue arrows showing it turning, joined by a light-blue link to the arm '
+        'of the windscreen wiper labelled Wiper 1, a blue arc showing its swing; '
+        'to its right a bare pivot labelled Wiper 2.',
+    'technology-2010-HL-paper-secA-q13-art':
+        'Underwater rendering of an OpenHydro tidal turbine: a white open-centre '
+        'ring held in a frame on a tubular base resting on the seabed.',
+    'technology-2010-HL-paper-secA-q14-art':
+        'Photograph of a skateboard with a black grip-tape deck and red wheels, '
+        'an arrow labelled A pointing at the deck and an arrow labelled B at a '
+        'wheel.',
+    'technology-2010-HL-paper-secA-q15-art':
+        'Line drawing of an electric motor in outline only: a cylindrical body '
+        'with a threaded shaft at the front, mounted on a flange plate with four '
+        'bolt holes and two triangular ribs.',
+    'technology-2010-HL-paper-secB-q2b-art':
+        'Graph of Resistance in ohms, on a scale marked 10,000, 50,000 and '
+        '100,000, against Temperature in degrees C from 0 to 10, a single plotted'
+        ' line falling gently from left to right; beside it a circuit between 12V'
+        ' and 0V, a 33kΩ resistor above a thermistor, the point between them '
+        'marked Vout.',
+    'technology-2010-HL-paper-secB-q2d-art':
+        'Diagram of three overlapping circles labelled ENVIRONMENTAL, SOCIAL and '
+        'ECONOMIC, the area where all three overlap labelled Sustainability.',
+    'technology-2010-HL-paper-secB-q3b-art':
+        "Drawing of the lifting platform's scissor link: a platform on two "
+        'crossed links pivoted at X, a red downward arrow marked 90kg at the '
+        'upper end A and the lower end labelled B; beside it, a photograph of a '
+        'red motorcycle on a black scissor-lift platform.',
+    'technology-2010-HL-paper-secB-q3d-art':
+        'Photograph of a black full-face motorcycle helmet decorated with red and'
+        ' orange flames, with a clear visor.',
+    'technology-2010-HL-paper-secC-q1b-art':
+        'The given flowchart: Start, LED/Buzzer Off, a decision Switch 1 on whose'
+        ' No exit joins a line back up to Start, and on Yes Wait 30 sec, '
+        'LED/Buzzer on, Wait 1 sec, LED/Buzzer off, then a decision Switch 2 with'
+        ' no exits drawn; two open return lines rise on the right, one back to '
+        'just above LED/Buzzer on and one back to Start.',
+    'technology-2010-HL-paper-secC-q1d-art':
+        'Pneumatic symbols, not connected: two push-button operated valves '
+        'labelled A and B, each with ports numbered 1, 2 and 3, and a cylinder '
+        'with a spring and a piston rod.',
+    'technology-2010-HL-paper-secC-q2b-art':
+        'Circuit diagram between 9V and 0V: a thermistor above a variable '
+        'resistor VR forming one divider, resistors R1 and R2 forming another, '
+        'both feeding an op-amp whose output lights an LED through a resistor; a '
+        'note reads R1=R2.',
+    'technology-2010-HL-paper-secC-q2d-art':
+        'Graphic of oven: trays of cakes carried on a conveyor, labelled '
+        'Conveyor, under a heating element labelled Heater, arrows showing the '
+        'direction of travel. Below, a Schematic layout: boxes High temperature '
+        'A, Conveyor B and Low temperature C wired into an empty dashed box, '
+        'whose output X goes to a box Oven control.',
+    'technology-2010-HL-paper-secC-q3c-art':
+        'Screenshot of the HARPOON® Ltd Online Registration form, with fields '
+        'First Name, Surname, House No., Town, Postcode, Date of birth, Gender '
+        '(Male or Female buttons) and Email, and a Submit button.',
+    'technology-2010-HL-paper-secC-q3d-art':
+        'Two empty pairs of axes headed Digital signal and Analogue signal, each '
+        'a vertical line and a horizontal arrow. Below, logo A, a black and white'
+        ' silhouette of a hammer and nails in a rounded shape, and logo B, a '
+        'shiny chrome hammer head in full colour on a blue background.',
+    'technology-2010-HL-paper-secC-q4b-art':
+        'Product life cycle graph, its stages Development, Introduction, Growth, '
+        'Maturity and Decline marked along a Time axis, with a red curve labelled'
+        ' Fire v3 and a blue curve labelled Roller. Below, the Product Process '
+        'Matrix: Volume, Low to High, against Standardisation, Low to High, four '
+        'boxes A, B, C and D stepping up from bottom left to top right, and a '
+        'circled X in the upper left corner.',
+    'technology-2010-HL-paper-secC-q4d-art':
+        'Photograph of a helmet with a metal face guard. Below, a graph of Cost '
+        '(€0 to €1,000) against Quantity Made (0 to 400) with two straight lines,'
+        ' a red line starting partway up the cost axis and rising gently, and a '
+        'blue line rising steeply from €0, the two crossing.',
+    'technology-2010-HL-paper-secC-q5b-art':
+        'Photographs of two guitars: Guitar A, a red electric guitar with a white'
+        ' scratchplate and a maple neck, and Guitar B, a pale grey game '
+        'controller guitar with an angular body and a dark grey neck.',
+    'technology-2010-HL-paper-secC-q5d-art':
+        'The Repak logo, and a table of Material against Cost (cent per kg): '
+        'Aluminium 8.4, Metal composite 11.1, Glass 0.9, Paper/cardboard 2.3, '
+        'Plastic 8.9, Steel 7.9, Wood 1.1.',
+})
+
 REJECTED = {
     'technology-2021-OL-paper-secA-q11-art': 'an empty ruled answer box, not a picture',
     'technology-2023-HL-paper-secA-q7-art': 'a ruled answer line is clipped along the bottom edge',

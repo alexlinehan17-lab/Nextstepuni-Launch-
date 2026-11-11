@@ -1778,6 +1778,9 @@ LABEL_ZONES.setdefault((2018, 'hl'), []).extend([
 # Answer lines a scheme prints after the tariff that closes their block,
 # before the next head: (year, level) -> lines, exactly as extracted.
 LATE_ANSWER_LINES = {
+    # 2010 Higher: Option 1(a)(ii)'s last answer and 2(c)(ii)'s "etc.", each
+    # printed after the part's tariff.
+    (2010, 'hl'): ('The energy invested in manufacturing these items etc.', 'etc.'),
     (2016, 'ol'): ('TMO in rugby, hawk eye in GAA, flight simulation of golf balls, etc.',
                    'Semi-Permanent Joint: Nut and bolt joint, etc.'),
     (2015, 'ol'): ('F = 12N',),
@@ -3153,6 +3156,60 @@ MD_LINE_FIX[(2011, 'ol')] = [
     (r'^Identify the two most critical issues raised by the$', ''),
     (r'^reviewers\.$', ''),
 ]
+MD_LINE_FIX[(2010, 'hl')] = [
+    # Q4, Q6 and Q14 price their parts on lines TARIFF cannot read as one
+    # split; they stay, and PART_SPLITS below reads them.
+    # Q8(i): the colours reprinted and, set apart on the same row, the value.
+    (r'^(Red, Red, Red, Gold\.) (Value = 2200 ohm)$', '\\1\n\\2'),
+    # Q7: the two terms' headings over their answers; (ii)'s reprinted ask.
+    (r'^Prototype$', ''),
+    (r'^Destructive test$', ''),
+    (r'^\(ii\) Suggest a modification that would eliminate the failure\.$', '(ii)'),
+    # Q11(ii): the ask reprinted with its answer on the line.
+    (r'^\(ii\) How many weeks will the project take to complete\? (8 weeks)$', '(ii)\n\\1'),
+    # 2(b): (i) and (ii)'s asks, set side by side, welded line by line.
+    (r'^\(i\) Identify, from the graph, the \(ii\) Using the value from \(i\), Calculate the Vout$',
+     '(i) Identify, from the graph, the approximate resistance of the thermister at 4oC.'),
+    (r'^approximate resistance of the for this thermistor at 4oC\.$', ''),
+    (r'^thermister at 4oC\.$', ''),
+    # 3(c)(ii), Option 1(a)(ii), 1(c)(i), 2(b)(iii), 4(a)(ii), 5(d)(ii): the
+    # scheme's own reprints of the asks, worded apart from the paper; heads stay.
+    (r'^\(ii\) Draw up a work breakdown structure \(WBS\) for the manufacture of this new structure\.$', '(ii)'),
+    (r'^\(ii\) As microelectronic equipment gets more complex and price reduces with volume, there is a tendency$', '(ii)'),
+    (r'^for products to get obsolete quickly and be replaced by a newer versions\.$', ''),
+    (r'^Outline two environmental issues that arise out of such \u2018built-in\u2019 obsolescence\.$', ''),
+    (r'^\u2022 Precision, smooth movement of robot arm up to 45o\.$', ''),
+    (r'^\(iii\) Explain each of the following terms:$', '(iii)'),
+    (r'^Describe two motor design features to facilitate recycling\.$', ''),
+    (r'^With reference to this data given, outline two reasons for$', ''),
+    (r'^using cardboard instead of foamed polystyrene for$', ''),
+    (r'^packaging items such as guitar B\.$', ''),
+    # Option 2(b)(iii) and 5(b)(iii): an answer broken after "e.g.", joined.
+    (r'^(\u2022\uf020? ?Monostable configuration One mode, will stay in this mode until triggered or pulsed, e\.g\.)$',
+     '\\1 LED on until triggered to go off etc.'),
+    (r'^LED on until triggered to go off etc\.$', ''),
+    (r'^(An alloy is a mixture of two or more metals that will form a new metal with enhanced properties, e\.g\.)$',
+     '\\1 Brass (alloy of copper and zinc) etc.'),
+    (r'^Brass \(alloy of copper and zinc\) etc\.$', ''),
+    # Option 4(b)(ii): the matrix's axis word.
+    (r'^Volume C$', ''),
+    # Option 5(d)(i): two columns of safety notes (sander, drill) welded line
+    # by line; each column's words, in order, on a line of its own.
+    (r'^Safety: Safety:$', ''),
+    (r'^The sander is designed to be used by a single The gear or pulley is enclosed to avoid accidents\.$',
+     'The sander is designed to be used by a single operator. A dust extraction system is usually '
+     'incorporated into the machine.\n'
+     'The gear or pulley is enclosed to avoid accidents. The chuck has a guard to minimise swarf and '
+     'cuttings flying off the machine. Switches are designed to be operated by a single user.'),
+    (r'^operator\. The chuck has a guard to minimise swarf and$', ''),
+    (r'^A dust extraction system is usually cuttings flying off the machine\.$', ''),
+    (r'^incorporated into the machine\. Switches are designed to be operated by a single$', ''),
+    (r'^user\.$', ''),
+    # Option 4(d): (ii)'s "(4+4 marks)" above the part's "(14 marks)". Read as
+    # a tariff it priced (i) and (ii) at 4 each; the scheme prints no price for
+    # (i), so 4(d) is carded whole at 14 and its crop shows the (4+4 marks).
+    (r'^\(4\+4 marks\)$', ''),
+]
 MD_LINE_FIX[(2014, 'hl')] = [
     # 1(a)(ii): two columns of notes welded line by line; each column's
     # words, in order, on a line of its own.
@@ -4225,6 +4282,225 @@ LABEL_ZONES.setdefault((2011, 'ol'), []).extend([
     (10, (83, 735, 152, 796)),
 ])
 
+# 2010 Higher. PAPER pictures each stem or ask points at.
+BY_EYE.update({
+    'technology-2010-HL-paper-secA-q1-art': ('014', 1, (446, 111, 568, 230)),
+    'technology-2010-HL-paper-secA-q2-art': ('014', 1, (54, 349, 556, 483)),
+    'technology-2010-HL-paper-secA-q3-art': ('014', 1, (448, 641, 561, 745)),
+    'technology-2010-HL-paper-secA-q4-art': ('014', 2, (425, 57, 552, 140)),
+    'technology-2010-HL-paper-secA-q5-art': ('014', 2, (106, 348, 467, 521)),
+    'technology-2010-HL-paper-secA-q6-art': ('014', 2, (414, 582, 554, 670)),
+    'technology-2010-HL-paper-secA-q7-art': ('014', 3, (388, 38, 565, 146)),
+    'technology-2010-HL-paper-secA-q8-art': ('014', 3, (72, 312, 232, 436)),
+    'technology-2010-HL-paper-secA-q9-art': ('014', 3, (408, 493, 537, 587)),
+    'technology-2010-HL-paper-secA-q11-art': ('014', 4, (54, 434, 557, 725)),
+    'technology-2010-HL-paper-secA-q12-art': ('014', 5, (185, 128, 407, 290)),
+    'technology-2010-HL-paper-secA-q13-art': ('014', 5, (42, 543, 233, 699)),
+    'technology-2010-HL-paper-secA-q14-art': ('014', 6, (288, 71, 512, 214)),
+    'technology-2010-HL-paper-secA-q15-art': ('014', 6, (151, 506, 430, 736)),
+    'technology-2010-HL-paper-secB-q2b-art': ('015', 1, (100, 227, 480, 380)),
+    'technology-2010-HL-paper-secB-q2d-art': ('015', 1, (389, 629, 569, 787)),
+    'technology-2010-HL-paper-secB-q3b-art': ('015', 2, (96, 197, 575, 346)),
+    'technology-2010-HL-paper-secB-q3d-art': ('015', 2, (440, 636, 571, 765)),
+    'technology-2010-HL-paper-secC-q1b-art': ('015', 3, (455, 207, 555, 472)),
+    'technology-2010-HL-paper-secC-q1d-art': ('015', 3, (414, 636, 572, 793)),
+    'technology-2010-HL-paper-secC-q2b-art': ('015', 4, (45, 204, 233, 350)),
+    'technology-2010-HL-paper-secC-q2d-art': ('015', 4, (55, 600, 466, 785)),
+    'technology-2010-HL-paper-secC-q3c-art': ('015', 5, (357, 317, 571, 516)),
+    'technology-2010-HL-paper-secC-q3d-art': ('015', 5, (90, 594, 486, 789)),
+    'technology-2010-HL-paper-secC-q4b-art': ('015', 6, (162, 255, 430, 656)),
+    'technology-2010-HL-paper-secC-q4d-art': ('015', 7, (95, 390, 584, 639)),
+    'technology-2010-HL-paper-secC-q5b-art': ('015', 8, (411, 170, 579, 386)),
+    'technology-2010-HL-paper-secC-q5d-art': ('015', 8, (50, 625, 566, 787)),
+})
+WHITEOUT.update({
+    'technology-2010-HL-paper-secA-q7-art': [(540, 36, 567, 52)],
+    'technology-2010-HL-paper-secC-q5b-art': [(411, 201, 423.8, 216)],
+    'technology-2010-HL-paper-secA-q11-art': [(54, 434, 455, 540), (290, 530, 557, 725), (535, 430, 558, 440)],
+    'technology-2010-HL-paper-secA-q12-art': [(185, 123, 245, 175)],
+    'technology-2010-HL-paper-secB-q3b-art': [(96, 197, 420, 236)],
+    'technology-2010-HL-paper-secC-q2d-art': [(346, 680, 466, 785)],
+    'technology-2010-HL-paper-secC-q3d-art': [(90, 658, 545, 687), (270, 786, 330, 800)],
+    'technology-2010-HL-paper-secC-q4b-art': [(162, 398, 430, 507)],
+    'technology-2010-HL-paper-secC-q4d-art': [(95, 390, 478, 437)],
+    'technology-2010-HL-paper-secC-q5d-art': [(50, 625, 430, 698), (172, 698, 430, 760)],
+    'technology-2010-HL-scheme-secA-q12-i': [(156, 116, 300, 214)],
+    'technology-2010-HL-scheme-secB-q3c': [(85, 133, 330, 140), (85, 186, 325, 204), (85, 275, 563, 293), (495, 449, 563, 465)],
+    'technology-2010-HL-scheme-secC-q1b': [(485, 776, 559, 792), (270, 786, 330, 800)],
+    'technology-2010-HL-scheme-secC-q1d': [(498, 765, 510, 784)],
+    'technology-2010-HL-scheme-secC-q2d': [(68, 264, 225, 294), (68, 334, 240, 349), (260, 389, 542, 418)],
+    'technology-2010-HL-scheme-secC-q5d': [(285, 386, 504.3, 538), (202, 469, 285, 538)],
+})
+SOLUTIONS.update({
+    'technology-2010-HL-scheme-secA-q2': (3, (193, 346, 555, 482),
+        "The marking scheme's own table for 2010 HL Section A Q2, as the State "
+        'Examinations Commission printed it, columns Material, Use, Property: '
+        "Kevlar, Body of boot, Tough, hard wearing, won't tear/good tensile "
+        'strength etc.; Foamed polyurethane, Inner lining, Soft, comfortable '
+        'etc.; Moulded polyurethane, Sole of boot, Impact resistant, mouldable, '
+        'durable etc.'),
+    'technology-2010-HL-scheme-secA-q4-ii': (4, (99, 196, 547, 269),
+        "The marking scheme's own calculation for 2010 HL Section A Q4(ii), as "
+        'the State Examinations Commission printed it: Calculation: Gear '
+        'Ratio/M.A. = 120/12= 10; Efficiency = (work output/ work input) * 100 '
+        '= (95/10) over 10, written as a stacked fraction, * 100 = 95%; in the '
+        'margin, (Formula 2 marks) and (Answer 2 marks).'),
+    'technology-2010-HL-scheme-secA-q5': (4, (105, 362, 467, 514),
+        "The marking scheme's own table for 2010 HL Section A Q5, as the State "
+        'Examinations Commission printed it, columns Output, File format: Leaflet'
+        ' to outline a history of the site, doc/odf; Short video clip to '
+        'demonstrate the variety of attractions in the local area, avi; Colour '
+        'logo of local tourist area for web use, tiff/gif; Sound file for '
+        'historical commentary, mp3.'),
+    'technology-2010-HL-scheme-secA-q10': (6, (104, 189, 517, 383),
+        "The marking scheme's own logic system and truth table for 2010 HL "
+        'Section A Q10, as the State Examinations Commission printed them, in two'
+        ' boxes: an OR gate with inputs A and B and output o/p, captioned OR '
+        'gate; and the truth table, A B O/P: 1 1 1, 1 0 1, 0 1 1, 0 0 0.'),
+    'technology-2010-HL-scheme-secA-q11': (6, (54, 530, 562, 712),
+        "The marking scheme's own completed table and critical path diagram for "
+        '2010 HL Section A Q11(i), as the State Examinations Commission printed '
+        "them: the table's Depends on column completed, E on A, F on C,D and G on"
+        ' E,F; the diagram runs A (1 week) to B (1), then C (4) and D (2) side by'
+        ' side into F (1) and then G (1), with E (3) running from after A '
+        "straight to G, each box's start and finish weeks printed above it."),
+    'technology-2010-HL-scheme-secA-q12-i': (7, (156, 116, 531, 294),
+        "The marking scheme's own completed graphic for 2010 HL Section A Q12(i),"
+        ' as the State Examinations Commission printed it: a dash-dot line '
+        "labelled Link runs from the joint on Wiper 1's arm across to a new pivot"
+        " and down to Wiper 2's pivot; beside it, a small sketch of the two wiper"
+        ' arms standing parallel, joined by a bar.'),
+    'technology-2010-HL-scheme-secB-q2b': (11, (60, 533, 545, 697),
+        "The marking scheme's own answers for 2010 HL Section B 2(b)(i) and (ii),"
+        ' as the State Examinations Commission printed them under the reprinted '
+        'asks: (i) 66,000 ohms or 66k ohms, written with the ohm sign; (ii) VOUT '
+        '= R2 over (R1 + R2) x V = 66,000 over (33,000 + 66,000) x 12 = 8V, '
+        'written as stacked fractions.'),
+    'technology-2010-HL-scheme-secB-q3b': (13, (54, 352, 243, 528),
+        "The marking scheme's own picture for 2010 HL Section B 3(b)(i), as the "
+        'State Examinations Commission printed it: a photograph of a red '
+        'motorcycle on a scissor-lift platform, an arrow labelled Hydraulic ram '
+        'pointing at the ram between the scissor legs.'),
+    'technology-2010-HL-scheme-secB-q3c': (14, (85, 134, 563, 455),
+        "The marking scheme's own answers for 2010 HL Section B 3(c), as the "
+        'State Examinations Commission printed them. (i): a wheel clamp stand '
+        'labelled wheel clamped in position, and a bent steel bar labelled '
+        'stabiliser. (ii): a task table, Task, Activity, Time (weeks): A Design '
+        'clamping structure 2, B Source steel 1, C Cut to size 2, D Weld together'
+        ' 1, E Spray paint 1, F Test and attach to platform 1; and, captioned '
+        'Example of a WBS, two rows, Source Steel to Cut Side A to Weld Together '
+        'and Source Steel to Cut Side B to Weld Together, both leading to Spray '
+        'Paint and then Test.'),
+    'technology-2010-HL-scheme-secC-q1b': (15, (43, 456, 559, 791.5),
+        "The marking scheme's own flowcharts for 2010 HL Section C 1(b), as the "
+        'State Examinations Commission printed them, two, each captioned Possible'
+        ' Solution. The first: Start, LED/Buzzer, the decision Switch 1 on, back '
+        'to Start on N; on Yes, Enable Interrupt, Wait 30, LED/Buzzer on, Wait, '
+        'LED/Buzzer off, Wait, then the decision Switch 2, back to LED/Buzzer on '
+        'on No and back to Start on Yes; beside it an interrupt routine, '
+        'Interrupt, Outputs, End. The second: a Re-set input leading into Start, '
+        'then LED/Buzzer, Switch 1 on, back to Start on No; on Yes, Wait 30, '
+        'LED/Buzzer on, Wait 1 sec, LED/Buzzer on, Wait 1 sec, then Switch 2, '
+        'back to the first LED/Buzzer on on No and back to Start on Yes.'),
+    'technology-2010-HL-scheme-secC-q1d': (16, (153, 619, 509, 785),
+        "The marking scheme's own pneumatic circuit for 2010 HL Section C "
+        '1(d)(ii), as the State Examinations Commission printed it: port 2 of '
+        'push-button valve A and port 2 of push-button valve B each feed one side'
+        ' of a valve labelled Shuttle valve, whose output goes to the spring-'
+        'return cylinder.'),
+    'technology-2010-HL-scheme-secC-q2b': (17, (358, 397, 521, 492),
+        "The marking scheme's own redrawn circuit for 2010 HL Section C 2(b)(ii),"
+        ' as the State Examinations Commission printed it: the temperature '
+        'sensing circuit with the op-amp output driving a transistor through a '
+        'resistor; the transistor switches a relay coil with a diode across it, '
+        'and the relay contacts switch a motor M on a separate 12V to 0V supply.'),
+    'technology-2010-HL-scheme-secC-q2c': (17, (91, 712, 293, 742),
+        "The marking scheme's own working for 2010 HL Section C 2(c)(ii), as the "
+        'State Examinations Commission printed it: Efficiency = Po over Pi x 100 '
+        '= 1.6 over 2.0 x 100 = 80%, written as stacked fractions.'),
+    'technology-2010-HL-scheme-secC-q2d': (18, (68, 213, 542, 564),
+        "The marking scheme's own logic circuit and truth table for 2010 HL "
+        'Section C 2(d), as the State Examinations Commission printed them: '
+        'Conveyor B and Low temperature C go into an AND gate, whose output and '
+        'High temperature A go into an OR gate giving X to Oven control, '
+        'captioned Possible solution; the truth table, A B C X, gives X = 0 for 0'
+        ' 0 0, 0 0 1 and 0 1 0, and X = 1 for 0 1 1, 1 0 0, 1 0 1, 1 1 0 and 1 1 '
+        '1.'),
+    'technology-2010-HL-scheme-secC-q3d': (20, (93, 463, 537, 565),
+        "The marking scheme's own sketches for 2010 HL Section C 3(d)(i), as the "
+        'State Examinations Commission printed them, each on axes marked V: a '
+        'square wave jumping between two levels, captioned Digital signal only '
+        'recognises on or off states, and a smooth wave rising and falling '
+        'through many levels, captioned Analogue signal can have different '
+        'levels.'),
+    'technology-2010-HL-scheme-secC-q4d': (22, (88, 660, 545, 745),
+        "The marking scheme's own answer for 2010 HL Section C 4(d)(ii), as the "
+        'State Examinations Commission printed it: Set-up cost = 500 euro; BEQ '
+        '= Setup cost over (Manual cost/item - Automated cost/item) = 500 over '
+        '(2.5 - 0.5) = 250 units, written as stacked fractions; (4+4 marks) '
+        'printed at the right between the two lines.'),
+    'technology-2010-HL-scheme-secC-q5c': (24, (381, 199, 592, 290),
+        "The marking scheme's own sketch for 2010 HL Section C 5(c)(ii), as the "
+        'State Examinations Commission printed it: an injection moulding machine,'
+        ' captioned Injection moulding, letters A to F marking the rotating '
+        'screw, the hopper, the injection nozzle, the mould, the shaped cavity '
+        'and the finished product.'),
+    'technology-2010-HL-scheme-secC-q5d': (24, (202, 386, 561, 538),
+        "The marking scheme's own pictures for 2010 HL Section C 5(d)(i), as the "
+        'State Examinations Commission printed them: a photograph of an orbital '
+        'sander and a photograph of a pillar drilling machine.'),
+})
+ASK_ONLY.update({
+    'technology-2010-HL-scheme-secA-q10',
+    'technology-2010-HL-scheme-secA-q2',
+    'technology-2010-HL-scheme-secA-q5',
+    'technology-2010-HL-scheme-secC-q1b',
+    'technology-2010-HL-scheme-secA-q12-i',
+})
+# 3(c) and Option 2(d): the crops hold prose answers, blanked in the image;
+# their drawings are zoned on their own so the prose stays as rows.
+SOLUTION_NOT_ZONE.update({
+    'technology-2010-HL-scheme-secB-q3c',
+    'technology-2010-HL-scheme-secC-q2d',
+    # Q4(ii)'s crop takes in the printed "(Formula 2 marks)" / "(Answer 2
+    # marks)", which PART_SPLITS reads; B 2(b)'s takes in the reprinted asks.
+    # Each one's working is zoned on its own (LABEL_ZONES below).
+    'technology-2010-HL-scheme-secA-q4-ii',
+    'technology-2010-HL-scheme-secB-q2b',
+})
+LABEL_ZONES.setdefault((2010, 'hl'), []).extend([
+    (4, (102, 198.5, 350, 264)),  # Q4(ii)'s working
+    (11, (294, 575, 452, 695)),   # B 2(b)(ii)'s working
+    (11, (90, 587, 185, 605)),    # B 2(b)(i)'s answer, its ohm signs read as "W"
+    (14, (340, 150, 432, 180)),   # 3(c)(i)'s sketch labels
+    (14, (250, 225, 300, 241)),
+    (14, (370, 303, 560, 404)),   # 3(c)(ii)'s task table
+    (14, (85, 384, 450, 456)),    # 3(c)(ii)'s example WBS
+    (18, (228, 215, 542, 336)),   # Option 2(d)(i)'s gates
+    (18, (84, 380, 228, 558)),    # Option 2(d)(ii)'s truth table
+])
+FIGURE_SHARED.update({
+    'technology-2010-HL-paper-secB-q3c-art': 'technology-2010-HL-paper-secB-q3b-art',
+    'technology-2010-HL-paper-secC-q2c-art': 'technology-2010-HL-paper-secC-q2b-art',
+    'technology-2010-HL-paper-secC-q5c-art': 'technology-2010-HL-paper-secC-q5b-art',
+})
+LABEL_ZONES.setdefault((2010, 'hl'), []).extend([
+    (5, (386.5, 33, 567, 146)),
+    (5, (72, 312, 228, 436)),
+    (8, (288, 71, 512, 214)),
+    (11, (96, 372, 486, 524)),
+    (13, (56, 598, 235, 667)),
+    (18, (292, 103, 541, 172)),
+    (20, (349, 54, 564, 253)),
+    (20, (130, 640, 465, 745)),
+    (21, (380, 318, 550, 428)),
+    (21, (406, 497, 558, 597.5)),
+    (22, (379, 272, 557, 346)),
+    (23, (448, 309, 576, 404)),
+    (23, (480, 404, 572, 511)),
+    (24, (440, 613, 541, 754)),
+])
+
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
 # them: an answer box's fill-in labels, a caption printed beside the prose.
@@ -4262,6 +4538,20 @@ ASK_ZONES = {
 # pattern: (year, level, section, q, letter, roman) -> [regex, ...]. Each one
 # was read off the rendered page.
 ASK_STRIP = {
+    # 2010 Higher: answer-box labels, picture lettering and page furniture in
+    # asks and stems.
+    (2010, 'hl', 'A', 3, None, None): [r'\s+\(i\)$'],
+    (2010, 'hl', 'A', 7, None, None): [r' Structural failure(?= Prototype)'],
+    (2010, 'hl', 'A', 8, None, None): [r' Value = Band 3(?= \(ii\))'],
+    (2010, 'hl', 'A', 10, None, None): [r'\s+Logic gate system Truth table$'],
+    (2010, 'hl', 'A', 11, None, None): [r' Critical path diagram(?= \(ii\))'],
+    (2010, 'hl', 'A', 13, None, None): [r'\s+Silent Invisible Predictable Renewable$'],
+    (2010, 'hl', 'A', 14, None, None): [r' A B(?= The deck)', r'(?<=The deck A:) \(i\) \(ii\)',
+                                        r'(?<=The wheels B:) \(i\)(?: \(ii\))?$'],
+    (2010, 'hl', 'C', 3, 'd', None): [r' Digital signal Analogue signal(?= \(ii\))'],
+    (2010, 'hl', 'C', 4, 'd', None): [r'^\u20ac1,000 \u20ac900 From the graph, determine the set-up cost.*$'],
+    (2010, 'hl', 'C', 5, 'd', None): [r'(?:^|\s+)Highlight two safety features integrated into the tool you have '
+                                     r'described\. Material Cost \(cent per kg\).*$'],
     # 2011 Ordinary: answer-box labels and the arrow letter in the asks.
     (2011, 'ol', 'A', 3, None, None): [r'\s+Light bulb OR gate$'],
     (2011, 'ol', 'A', 4, None, None): [r'^A\s+'],
@@ -4386,6 +4676,34 @@ STEM_JOIN = {
 # (year, level, section, q, letter) -> (roman, the printed tail).
 STEM_TAIL_TO_ASK = {
     (2017, 'hl', 'A', 14, None): ('i', 'CAM: CNC:'),
+    # 2010 Higher Q7(i): "Explain the terms:" over "Prototype ____" and
+    # "Destructive test ____", filed at the end of the stem.
+    (2010, 'hl', 'A', 7, None): ('i', 'Prototype Destructive test'),
+}
+
+# A Section A question whose scheme prices its parts on lines of their own, or
+# in a shape TARIFF cannot read as one split, under the rubric's total:
+# (year, level, section, q) -> the printed lines exactly as extracted (each
+# must be seen in the block), the split they make (a roman's printed terms
+# added up, one term per card unit), and the printed steps a unit's row is
+# claimed on. The lines bound nothing and are no row; the rubric closes the
+# block. A step entry is (steps, the printed words that price that unit).
+# Each one read off the scheme page.
+PART_SPLITS = {
+    # 2010 Higher Q4, scheme page 5: "(2 marks)" under (i)'s answer;
+    # "(Formula 2 marks)" and "(Answer 2 marks)" beside (ii)'s working, which
+    # its crop shows. (ii) is claimed by its formula and its answer.
+    (2010, 'hl', 'A', 4): {
+        'lines': ('(2 marks)', '(Formula 2 marks)', '(Answer 2 marks)'),
+        'terms': (2, 4), 'steps': {'ii': ((0, 2, 4), '(Formula 2 marks) (Answer 2 marks)')},
+        'parts': {'ii': (('Formula', 2), ('Answer', 2))}},
+    # Q6, page 5: "(2+(2+2)marks)" -- 2 for (i), two reasons at 2 for (ii).
+    (2010, 'hl', 'A', 6): {
+        'lines': ('(2+(2+2)marks)',), 'terms': (2, 4), 'steps': {'ii': ((0, 2, 4), '(2+(2+2)marks)')}},
+    # Q14, page 9: "(2+1, 2+1 marks)" -- two considerations for the deck and
+    # two for the wheels, 2 for the first and 1 for the second of each.
+    (2010, 'hl', 'A', 14): {
+        'lines': ('(2+1, 2+1 marks)',), 'terms': (3, 3), 'steps': {None: ((0, 2, 3), '(2+1, 2+1 marks)')}},
 }
 
 # A printed note the text layer reads out of order, cut off an ask's end.
