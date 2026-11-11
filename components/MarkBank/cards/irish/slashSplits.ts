@@ -9,16 +9,14 @@
  * printed is an acceptable answer, each item is its own option row. The items share a group (the original row's id),
  * so the point counts once, at its best claimed item: the part scores exactly as the joined row did. Rows whose slash
  * sits inside one answer ("Bhí áthas/lúcháir/ríméad/gliondar air", "Is maith linn/leo an scoil", dates, "agus/nó",
- * criteria prose) stay whole. slashSplits.json lists every row cut, each read against its part (2026-11-11); the
+ * criteria prose) stay whole. slashSplitsTable.ts lists every row cut, each read against its part (2026-11-11); the
  * decision and reason for every slash row, cut and whole, are in scripts/markbank/authored/irish-slash-rows-20261111.json.
  */
 import type { IrishAllocation } from '../../../../types/markBank';
-import SPLITS from './slashSplits.json';
-
-interface Split { card: string; criterion: string; part: string; text: string; items: string[] }
+import { SLASH_SPLITS } from './slashSplitsTable';
 
 const keyOf = (card: string, criterion: string, part: string, text: string) => `${card}::${criterion}::${part}::${text}`;
-const BY_KEY = new Map((SPLITS as Split[]).map(split => [keyOf(split.card, split.criterion, split.part, split.text), split]));
+const BY_KEY = new Map(SLASH_SPLITS.map(split => [keyOf(split.card, split.criterion, split.part, split.text), split]));
 const joined = (text: string) => text.replace(/\s*\/\s*/g, '/');
 
 /** Every split applied while the decks were built: a split that no longer meets its row is a stale entry (tested). */
