@@ -22,13 +22,14 @@ interface Props {
   topicSelection?: StudyTopicSelection;
   profileSubjects?: StudentSubject[];
   examDate?: string | null;
+  initialQuiz?: LoadedQuiz;
   onDone: (results: QuizResult[]) => void;
   onSkip: () => void;
   now?: () => number;
 }
 
-export default function StudySessionQuiz({ uid, subject, seconds = 0, topicSelection, profileSubjects, examDate, onDone, onSkip, now = Date.now }: Props) {
-  const [quiz, setQuiz] = useState<LoadedQuiz | null>();
+export default function StudySessionQuiz({ uid, subject, seconds = 0, topicSelection, profileSubjects, examDate, initialQuiz, onDone, onSkip, now = Date.now }: Props) {
+  const [quiz, setQuiz] = useState<LoadedQuiz | null | undefined>(initialQuiz);
   const [failed, setFailed] = useState(false);
   const [attempt, setAttempt] = useState(0);
   const [finished, setFinished] = useState(false);
@@ -47,13 +48,14 @@ export default function StudySessionQuiz({ uid, subject, seconds = 0, topicSelec
   // must never reload the queue or change the student's selected topics.
   const input = useRef({ uid, subjectName: subject, topicSelection, profileSubjects, examDate, now: now() });
   useEffect(() => {
+    if (initialQuiz) return;
     let live = true;
     setFailed(false);
     loadQuiz(input.current)
       .then(loaded => { if (live) setQuiz(loaded); })
       .catch(() => { if (live) setFailed(true); });
     return () => { live = false; };
-  }, [attempt]);
+  }, [attempt, initialQuiz]);
   useEffect(() => { if (quiz === null) onDone([]); }, [quiz, onDone]);
 
   const commit = useCallback((result: SessionCardResult) => {
