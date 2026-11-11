@@ -557,5 +557,33 @@ for old, canonical, label, options, per in WITHDRAWN:
          f'Withdrawn: this part is answered within {D.prefix + canonical}.', stem=base.get('stem', ''),
          section=base['section'])
 
+def shipped_row_shapes(cards):
+    """The row shapes #294 gave three of this paper's workings (2026-10-27).
+
+    #294 edited the authored file and the deck, not this script, so a
+    regeneration would have reverted them. "6 @ 2 + 4" is parts (the six
+    figures at 2, the answer 4), split from the lifted row itself; "6 @ 3" and
+    "3 @ 3" are stepped rows.
+    """
+    for c in cards:
+        r = c['rows'][0]
+        if c['id'] == 'econ-2023-ol-q12-a-i':
+            assert r['id'] == 'r-total'
+            figures, answer = r['verbatim'].split(' = ')
+            figures = figures.split(' + ')
+            assert len(figures) == 6, figures
+            parts = [{'id': f'f{i}', 'verbatim': f, 'marks': 2, 'permittedMarks': [0, 1, 2]}
+                     for i, f in enumerate(figures, 1)]
+            parts.append({'id': 'answer', 'verbatim': answer, 'marks': 4, 'permittedMarks': list(range(5))})
+            c['rows'][0] = {'id': r['id'], 'kind': 'criterion', 'verbatim': r['verbatim'], 'marks': r['marks'],
+                            'openList': r['openList'], 'contextNote': r['contextNote'],
+                            'permittedMarks': list(range(17)), 'parts': parts}
+        elif c['id'] in ('econ-2023-ol-q13-b-ii', 'econ-2023-ol-q13-b-ii-trade'):
+            c['rows'][0] = {'id': r['id'], 'kind': 'criterion', 'verbatim': r['verbatim'], 'marks': r['marks'],
+                            'openList': r['openList'], 'contextNote': r['contextNote'],
+                            'permittedMarks': list(range(0, r['marks'] + 1, 3))}
+
+
 if __name__ == '__main__':
+    shipped_row_shapes(cards)
     emit(cards)

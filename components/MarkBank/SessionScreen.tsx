@@ -92,9 +92,11 @@ import { businessMarks, type BusinessScoreId } from './businessRubric';
 import FrenchRubricPanel from './FrenchRubricPanel';
 import FrenchQuestionChoices from './FrenchQuestionChoices';
 import { frenchMarks, type FrenchScoreId } from './frenchRubric';
+import HistoryEssayPanel from './HistoryEssayPanel';
+import { historyEssayMarks, historyEssayPlacementComplete, type HistoryEssayScoreId } from './historyEssayScoring';
 import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
 import { questionParts } from './questionParts';
-import { stemWithListBreaks } from './stemText';
+import { stemWithListBreaks, stemWithPrintedBreaks } from './stemText';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
@@ -361,7 +363,7 @@ export type IrishScoreId = `irish:${string}`;
 export type { GeographyScoreId } from './geographyScoring';
 export { artMarks, artScoreId };
 export type { ArtScoreId };
-export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | AccountingScoreId | FrenchScoreId | BusinessScoreId;
+export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | AccountingScoreId | FrenchScoreId | BusinessScoreId | HistoryEssayScoreId;
 export type RubricScores = Partial<Record<RubricScoreId, number>>;
 
 const componentCombinedId = (componentId: string) =>
@@ -525,6 +527,7 @@ export function rubricMarks(card: SecRubricCard, scores: RubricScores): number {
   if (card.rubric.system === 'art') return artMarks(card, scores);
   if (card.rubric.system === 'geography') return geographyMarks(card, scores);
   if (card.rubric.system === 'politics') return politicsMarks(card, scores);
+  if (card.rubric.system === 'history-essay') return historyEssayMarks(card, scores);
   return pclmMarks(card, scores as PclmScores);
 }
 
@@ -612,7 +615,10 @@ const MarkRowView: React.FC<{
   wholeResponse?: boolean;
   /** The claims on a row's parts, by part id; only a row with parts has them. */
   partClaims?: Record<string, RowClaim>;
-}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere, wholeResponse, partClaims }) => {
+  /** Keep the printed line breaks inside a row's text (History: a verdict on
+   *  its own line above its first reason). */
+  keepLines?: boolean;
+}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere, wholeResponse, partClaims, keepLines }) => {
   const claimed = claim !== 'no';
   const marks = rowMarks(row);
   const canSynonym = !row.exactTermRequired && (row.openList || row.kind === 'alt');
@@ -624,7 +630,7 @@ const MarkRowView: React.FC<{
     return (
       <section aria-label={`Marking criterion ${index + 1}`} style={{ padding: '16px 0', borderBottom: `1px solid ${HAIRLINE_2}` }}>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
-          <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}` }}>{row.verbatim}</strong>
+          <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}`, whiteSpace: keepLines ? 'pre-line' : undefined }}>{row.verbatim}</strong>
           <span style={{ font: `700 10.5px/1.7 ${MONO}`, color: placed > 0 ? SUCCESS_TEXT : MUTED, whiteSpace: 'nowrap' }}>{placed}m of {row.marks}m</span>
         </div>
         {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}` }}>{row.contextNote}</p> : null}
@@ -659,7 +665,7 @@ const MarkRowView: React.FC<{
     const selected = criterionMarksClaimed(row, claim);
     return (
       <section aria-label={`Marking criterion ${index + 1}`} style={{ padding: '16px 0', borderBottom: `1px solid ${HAIRLINE_2}` }}>
-        <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}` }}>{row.verbatim}</strong>
+        <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}`, whiteSpace: keepLines ? 'pre-line' : undefined }}>{row.verbatim}</strong>
         {row.accepts?.length ? <p style={{ color: MUTED }}>{row.accepts.join(' · ')}</p> : null}
         {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}` }}>{row.contextNote}</p> : null}
         <div role="group" aria-label={`Marks for ${row.verbatim}`} style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
@@ -870,7 +876,7 @@ const MarkRowView: React.FC<{
           )}
           {/* A marking point takes its direction from its own text, so an
               Arabic answer reads and aligns the way the scheme printed it. */}
-          <span dir="auto" style={{ color: claimed ? ON_CLAIM : INK_2, whiteSpace: wholeResponse ? 'pre-line' : undefined }}>
+          <span dir="auto" style={{ color: claimed ? ON_CLAIM : INK_2, whiteSpace: wholeResponse || keepLines ? 'pre-line' : undefined }}>
             {wholeResponse ? row.verbatim.replace(/ • /g, '\n\n') : row.verbatim}
             {/* The scheme's own alternatives, shown in full: a student who wrote
                 "heterotrophic" earned the mark and must be able to see that. */}
@@ -1710,6 +1716,11 @@ const RubricPanel: React.FC<{
       rubric: GeographyRubric;
     }} />;
   }
+  if (props.card.rubric.system === 'history-essay') {
+    return <HistoryEssayPanel card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'history-essay' }>;
+    }} scores={props.scores} onScore={props.onScore} />;
+  }
   return (
     <PclmRubricPanel
       {...props}
@@ -2409,6 +2420,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const suggested = assessmentCard
     ? isRubricCard(assessmentCard) ? suggestRubricGrade(assessmentCard, rubricScores) : suggestGrade(assessmentCard, rowClaims, picks)
     : 'shaky';
+  /* A History essay is placed in two halves, paragraph by paragraph and then
+     as a whole. Until the whole answer is placed on an OE band its marks are a
+     running total, and a grade suggested from them preselected "Missed it"
+     after two paragraphs. Every other rubric is placed in one go. */
+  const placementPending = Boolean(assessmentCard && isRubricCard(assessmentCard)
+    && assessmentCard.rubric.system === 'history-essay'
+    && !historyEssayPlacementComplete(assessmentCard.rubric, rubricScores));
   const rubricLabel = assessmentCard && isRubricCard(assessmentCard)
     ? assessmentCard.rubric.system === 'pclm' ? 'PCLM'
       : assessmentCard.rubric.system === 'irish' ? 'Irish rubric'
@@ -2418,7 +2436,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       : assessmentCard.rubric.system === 'applied-mathematics' ? 'SEC allocation'
       : assessmentCard.rubric.system === 'accounting' ? 'Accounting allocation'
       : assessmentCard.rubric.system === 'french' ? 'French marking grid'
-      : assessmentCard.rubric.system === 'business' ? 'Business allocation' : 'Geography allocation'
+      : assessmentCard.rubric.system === 'business' ? 'Business allocation'
+      : assessmentCard.rubric.system === 'history-essay' ? 'History essay' : 'Geography allocation'
     : 'rubric';
   const routeTaken = assessmentCard ? committedRoute(assessmentCard, rowClaims) : null;
 
@@ -2887,9 +2906,12 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             </div>
 
             {assessmentCard.stem && !printedQuestionReplacesText && (
-              /* A printed bullet list keeps one item to a line; see stemText. */
+              /* A printed bullet list keeps one item to a line; a History stem
+                 keeps the paper's own paragraph breaks. See stemText. */
               <p style={{ margin: '10px 0 0', font: `400 14.5px/1.6 ${SANS}`, color: INK_2, whiteSpace: 'pre-line' }}>
-                {stemWithListBreaks(assessmentCard.stem)}
+                {assessmentCard.subjectId === 'history'
+                  ? stemWithPrintedBreaks(assessmentCard.stem)
+                  : stemWithListBreaks(assessmentCard.stem)}
               </p>
             )}
 
@@ -3127,6 +3149,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                           <MarkRowView
                             row={row} id={id} index={i}
                             wholeResponse={wholeResponseAssessment}
+                            keepLines={assessmentCard.subjectId === 'history'}
                             claim={claimOf(id)}
                             showMarks={showsRowMarks(assessmentCard)}
                             blocked={
@@ -3347,7 +3370,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                         ? <>No {rubricLabel} placement selected yet. Use the SEC grid above for a mark-based suggestion, or choose your own grade now.</>
                         : <>No points selected yet. Select them above for a mark-based suggestion, or choose your own grade now.</>
                       : isRubricCard(assessmentCard)
-                        ? <>Your {rubricLabel} placement is {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
+                        ? placementPending
+                          ? <>Your {rubricLabel} placement is not finished. Place the whole answer on an OE band for a mark-based suggestion, or choose your own grade now.</>
+                          : <>Your {rubricLabel} placement is {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
                         : showsRowMarks(assessmentCard)
                         ? <>You claimed {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
                         : <>That looks like {GRADE_COPY[suggested]}.</>}
@@ -3359,7 +3384,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       360px hit area and makes the rail read as a toolbar. */}
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 168px))', gap: 8 }}>
                     {(['missed', 'shaky', 'got'] as MarkBankGrade[]).map(g => {
-                      const isSuggested = schemeInteracted && g === suggested;
+                      const isSuggested = schemeInteracted && !placementPending && g === suggested;
                       return (
                         <button
                           key={g}

@@ -243,19 +243,19 @@
     "refsHash": "b8748a474c6a2507"
   },
   "dcg": {
-    "cards": 545,
-    "contentHash": "36de9f64f1b6b8b9",
-    "coveragePct": 100.0,
-    "covered": 478,
+    "cards": 627,
+    "contentHash": "d22f5b28ca051c4c",
+    "coveragePct": 53.6,
+    "covered": 547,
     "excluded": 0,
-    "leaves": 478,
-    "open": 0,
+    "leaves": 1021,
+    "open": 474,
     "orphans": 0,
     "papers": {
       "count": 66,
       "hash": "9c8982e337e2c8b1"
     },
-    "refsHash": "f905271c383d21ea"
+    "refsHash": "9f9802673f3a0d7f"
   },
   "dutch": {
     "cards": 42,
@@ -273,19 +273,19 @@
     "refsHash": "4bab4f79d784d94c"
   },
   "economics": {
-    "cards": 853,
-    "contentHash": "71508a355e28403e",
+    "cards": 2297,
+    "contentHash": "ac3c362030d1724a",
     "coveragePct": 100.0,
-    "covered": 792,
-    "excluded": 1,
-    "leaves": 793,
+    "covered": 2268,
+    "excluded": 0,
+    "leaves": 2268,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 12,
-      "hash": "9af332fc7210be3d"
+      "count": 33,
+      "hash": "fd2ae3c6caa8ebea"
     },
-    "refsHash": "02e4590c91471059"
+    "refsHash": "503f614d5e735dc3"
   },
   "engineering": {
     "cards": 2269,
@@ -393,19 +393,19 @@
     "refsHash": "39be4a22419bc8c6"
   },
   "history": {
-    "cards": 749,
-    "contentHash": "5a5803ac3a0f3bfe",
+    "cards": 4943,
+    "contentHash": "85712f0b53bc9068",
     "coveragePct": 100.0,
-    "covered": 749,
-    "excluded": 681,
-    "leaves": 1430,
+    "covered": 4943,
+    "excluded": 0,
+    "leaves": 4943,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 20,
-      "hash": "cb5c8677ec1bca17"
+      "count": 66,
+      "hash": "c5dad2eeaf2c2bfd"
     },
-    "refsHash": "eab7907b0ead2f31"
+    "refsHash": "1a23027de607a73b"
   },
   "home-economics": {
     "cards": 549,

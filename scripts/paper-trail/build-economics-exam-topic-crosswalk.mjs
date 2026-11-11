@@ -68,8 +68,11 @@ const duplicatePaperIds = paperIds.filter((identity, index) => paperIds.indexOf(
 if (duplicatePaperIds.length) {
   throw new Error(`Duplicate Economics paper variants: ${[...new Set(duplicatePaperIds)].join(', ')}`);
 }
-if (localPapers.length !== 66) {
-  throw new Error(`Expected 66 Economics variants, found ${localPapers.length}`);
+// 66 June variants and the 2022 Higher deferred sitting, its own paper
+// ("LC034ALP000EV-deferred.pdf"), numbered 1-16 like June's.
+const isDeferred = paper => paper.fileid.endsWith('-deferred.pdf');
+if (localPapers.length !== 67) {
+  throw new Error(`Expected 67 Economics variants, found ${localPapers.length}`);
 }
 
 for (const paper of localPapers) {
@@ -120,22 +123,23 @@ const localNumber = parsed => (
     : String(parsed.question)
 );
 const referenceNumber = parsed => `${parsed.section}${parsed.question}`;
-const englishPaper = (level, year) => {
+const englishPaper = (level, year, sitting = 'main') => {
   const candidates = localPapers.filter(paper => (
     paper.level === level && paper.lang === 'ev' && paper.year === year
+    && isDeferred(paper) === (sitting === 'deferred')
   ));
   if (candidates.length > 1) throw new Error(`Ambiguous ${level} English Economics paper for ${year}`);
   return candidates[0] ?? null;
 };
 
-const blockedReason = parsed => {
+const blockedReason = (parsed, level) => {
   if (parsed.year < 2010) {
     return 'The entitled local SEC Economics corpus currently begins at 2010. This factual heading is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied.';
   }
   if (parsed.sitting === 'sample') {
     return 'The entitled Paper Trail corpus does not currently contain this new-specification sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied.';
   }
-  if (parsed.sitting === 'deferred') {
+  if (parsed.sitting === 'deferred' && !englishPaper(level, parsed.year, 'deferred')) {
     return 'The entitled Paper Trail corpus does not currently contain this deferred-sitting booklet. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied.';
   }
   return null;
@@ -146,8 +150,8 @@ for (const level of LEVELS) {
   for (const topic of reference.levels[level].topics) {
     for (const heading of topic.officialQuestionHeadings) {
       const parsed = parseHeading(heading);
-      const explicitBlock = blockedReason(parsed);
-      const paper = explicitBlock ? null : englishPaper(level, parsed.year);
+      const explicitBlock = blockedReason(parsed, level);
+      const paper = explicitBlock ? null : englishPaper(level, parsed.year, parsed.sitting);
       if (explicitBlock || !paper) {
         associations.push({
           topicId: topic.id,
@@ -204,9 +208,12 @@ if (associations.length !== referenceOfficialAssociations) {
   throw new Error(`Expected ${referenceOfficialAssociations} reconciliations, found ${associations.length}`);
 }
 
+// A deferred question is keyed apart from June's question of the same number.
+const logicalKeyOf = (level, year, n, deferred) => [level, year, ...(deferred ? ['deferred'] : []), n].join('|');
 const exactTopicsByCard = new Map();
 for (const association of associations.filter(item => item.resolution === 'matched')) {
-  const key = [association.level, association.year, association.target.questionNumber].join('|');
+  const key = logicalKeyOf(association.level, association.year, association.target.questionNumber,
+    association.sitting === 'deferred');
   const topics = exactTopicsByCard.get(key) ?? [];
   const index = topicIndex.get(association.topicId);
   if (index === undefined) throw new Error(`Unknown topic ${association.topicId}`);
@@ -237,7 +244,10 @@ for (const review of secTopicReviews.questions) {
   if (!review.reason || !review.pages.length || !review.canonicalNodeIds.length) {
     throw new Error(`Incomplete SEC topic review: ${key}`);
   }
-  const reviewedPdf = path.join(ROOT, 'paper-trail-corpus/exampapers', String(review.year), review.fileid);
+  // The archive files a deferred paper under deferredexams/ with the June file id.
+  const reviewedPdf = review.fileid.endsWith('-deferred.pdf')
+    ? path.join(ROOT, 'paper-trail-corpus/deferredexams', String(review.year), review.fileid.replace('-deferred', ''))
+    : path.join(ROOT, 'paper-trail-corpus/exampapers', String(review.year), review.fileid);
   if (createHash('sha256').update(fs.readFileSync(reviewedPdf)).digest('hex') !== review.paperSha256) {
     throw new Error(`SEC topic review source changed: ${key}`);
   }
@@ -250,7 +260,7 @@ for (const review of secTopicReviews.questions) {
 let appliedSecReviews = 0;
 for (const paper of localPapers) {
   for (const question of paper.q) {
-    const logicalKey = [paper.level, paper.year, question.n].join('|');
+    const logicalKey = logicalKeyOf(paper.level, paper.year, question.n, isDeferred(paper));
     let indexes = exactTopicsByCard.get(logicalKey);
     if (!indexes) {
       indexes = [...new Set(
@@ -282,6 +292,13 @@ for (const paper of localPapers) {
       appliedSecReviews += 1;
     }
     if (!indexes.length) throw new Error(`${paperIdentity(paper)} Q${question.n}: empty topic mapping`);
+    // The runtime's question mappings are keyed by year and number, which a
+    // deferred paper shares with June: its questions join through their SEC
+    // topic reviews, which carry the file id, so every one must have one.
+    if (isDeferred(paper)) {
+      if (!review) throw new Error(`${paperIdentity(paper)} Q${question.n}: a deferred question needs its SEC topic review`);
+      continue;
+    }
     questionMappings.push([
       paper.level === 'higher' ? 'h' : 'o',
       paper.lang === 'ev' ? 'e' : 'i',
@@ -327,6 +344,7 @@ const matchedQuestionTopicLinks = new Set(matchedAssociations.map(item => [
   item.topicId,
   item.level,
   item.year,
+  ...(item.sitting === 'deferred' ? ['deferred'] : []),
   item.target.questionNumber,
 ].join('|'))).size;
 const distinctStudentFacingQuestions = localPapers
@@ -334,14 +352,18 @@ const distinctStudentFacingQuestions = localPapers
   .reduce((sum, paper) => sum + paper.q.length, 0);
 const physicalMappings = localPapers.reduce((sum, paper) => sum + paper.q.length, 0);
 
-if (matchedAssociations.length + referenceAnomalyAssociations.length !== 903
-  || sourceBlockedAssociations.length !== 217) {
+// The 38 "Deferred Exam Paper" headings resolve to the 2022 Higher deferred
+// sitting (903 + 38 resolved, 217 - 38 still source-blocked).
+if (matchedAssociations.length + referenceAnomalyAssociations.length !== 941
+  || sourceBlockedAssociations.length !== 179) {
   throw new Error(`Unexpected Economics reconciliation split: ${matchedAssociations.length}+${referenceAnomalyAssociations.length}/${sourceBlockedAssociations.length}`);
 }
-if (exactTopicsByCard.size !== 517 || retainedLocalCards.length !== 32) {
-  throw new Error(`Expected 517 matched + 32 retained logical cards, found ${exactTopicsByCard.size} + ${retainedLocalCards.length}`);
+if (exactTopicsByCard.size !== 533 || retainedLocalCards.length !== 32) {
+  throw new Error(`Expected 533 matched + 32 retained logical cards, found ${exactTopicsByCard.size} + ${retainedLocalCards.length}`);
 }
-if (physicalMappings !== 1098 || distinctStudentFacingQuestions !== 549 || questionMappings.length !== 1098) {
+// The deferred paper's 16 questions join through their SEC topic reviews,
+// not the year-and-number question mappings.
+if (physicalMappings !== 1114 || distinctStudentFacingQuestions !== 565 || questionMappings.length !== 1098) {
   throw new Error('Economics local corpus totals changed unexpectedly');
 }
 
