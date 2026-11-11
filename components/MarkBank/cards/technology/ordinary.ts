@@ -877,7 +877,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2010 Ordinary Level — © State Examinations Commission.",
     id: "tech-2010-ol-c4d", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2010 OL Section C Q4(d)(i), (ii)",
-    stem: "Stage productions such as U2’s 360o tour can have large operational costs, as well as presenting huge logistical challenges in moving the production to new venues in foreign countries.",
+    stem: "Stage productions such as U2’s 360° tour can have large operational costs, as well as presenting huge logistical challenges in moving the production to new venues in foreign countries.",
     questionText: "(i) A quality characteristic of the stage production is sound quality. Describe one quality attribute of the sound system which would have an effect on this. (ii) Working as a team is essential in ensuring that the stage is completed on time at each new venue. Outline two elements of team work that you consider most important in achieving this task.",
     tariffModel: {"kind":"questionTotal","notation":"(c) OR (d) - 10 marks"}, totalMarks: 10,
     rows: [

@@ -538,7 +538,7 @@ export const CARDS: SecCard[] = [
     id: "tech-2010-hl-b2b", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2010 HL Section B Q2(b)(i), (ii), (iii)",
     stem: "Different types of thermistors are manufactured and each has its own characteristic pattern of resistance change with temperature. Part of the characteristic curve for a thermistor is shown.",
-    questionText: "(i) Identify, from the graph, the approximate resistance of the thermistor at 4oC. (ii) Using the value from (i), calculate the Vout for this thermistor at 4oC. (iii) Name a household appliance or consumer electronic product which uses a thermistor and outline the reasons for its inclusion in the product you have chosen.",
+    questionText: "(i) Identify, from the graph, the approximate resistance of the thermistor at 4°C. (ii) Using the value from (i), calculate the Vout for this thermistor at 4°C. (iii) Name a household appliance or consumer electronic product which uses a thermistor and outline the reasons for its inclusion in the product you have chosen.",
     tariffModel: {"kind":"questionTotal","notation":"(10 marks)"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Oven– control cooking temperature", marks: null, openList: true },
@@ -782,7 +782,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2010 Higher Level — © State Examinations Commission.",
     id: "tech-2010-hl-c1c", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2010 HL Section C Q1(c)(i), (ii)",
-    questionText: "(i) Compare the use of servo motors with the use of stepper motors for the following aspects of robotic control: • Accurate driving of a conveyor belt • Precision, smooth movement of a robot arm up to 45o. (ii) Explain the term electro-pneumatic control and give two advantages of its use.",
+    questionText: "(i) Compare the use of servo motors with the use of stepper motors for the following aspects of robotic control: • Accurate driving of a conveyor belt • Precision, smooth movement of a robot arm up to 45°. (ii) Explain the term electro-pneumatic control and give two advantages of its use.",
     tariffModel: {"kind":"questionTotal","notation":"(14 marks)"}, totalMarks: 14,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The stepper motor can rotate and be controlled with accuracy. The operation of a stepper motor requires pulsing to the correct sequence to move in a particular direction etc.", marks: null, openList: true },
@@ -1437,7 +1437,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the operation of the bell-crank mechanism used in the bicycle braking system shown. Outline the importance of friction in the operation of this braking system.",
     tariffModel: {"kind":"questionTotal","notation":"(3 + 3)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The bell crank will change the direction of movement through 90o. The cable is pulled vertically and the brake pads will grip the wheel horizontally.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "The bell crank will change the direction of movement through 90°. The cable is pulled vertically and the brake pads will grip the wheel horizontally.", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "An advantage is gained as both pads are moved at the same time in opposite directions.", marks: null, openList: true },
     { id: "r-3", kind: "point", verbatim: "A soft rubber material (high friction) is used for the brake pads to grip onto the fast-moving wheels and hold the wheels as they come to a halt etc.", marks: null, openList: true },
     ],
@@ -1868,7 +1868,7 @@ export const CARDS: SecCard[] = [
     id: "tech-2011-hl-b3b", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2011 HL Section B Q3(b)(i), (ii), (iii)",
     stem: "An airport car-hire company monitors its fleet of vehicles from the booking office. A number of surveillance cameras have been installed. One of the cameras can be manipulated by the office staff.",
-    questionText: "(i) Using annotated sketches, outline a control system at A to slowly rotate the camera in both directions. (ii) Name a mechanism at B to tilt the camera through an angle of 45o. (iii) Outline some possible effects on the camera casing of prolonged exposure to ultra-violet rays from sunlight and acidic pollution from the atmosphere.",
+    questionText: "(i) Using annotated sketches, outline a control system at A to slowly rotate the camera in both directions. (ii) Name a mechanism at B to tilt the camera through an angle of 45°. (iii) Outline some possible effects on the camera casing of prolonged exposure to ultra-violet rays from sunlight and acidic pollution from the atmosphere.",
     tariffModel: {"kind":"questionTotal","notation":"(b) - 10 marks"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Control system: worm and wheel with DPDT switch, servo motor etc.", marks: null, openList: true },

@@ -52,6 +52,7 @@ import paper_census as PC                                    # noqa: E402
 from tech_scheme import TechScheme, cue_score, normalise as SCHEME_NORM, _words as SCHEME_WORDS  # noqa: E402
 from tech_topics import topic_for, topic_for_option, TOPIC_OVERRIDES  # noqa: E402
 import tech_crops as TC                                      # noqa: E402
+import tech_degrees as TD                                    # noqa: E402
 
 SUBJECT = 'technology'
 MAX_ROWS = 16
@@ -787,6 +788,8 @@ def author(bind_figures=True):
         # the one belonging to these very leaves.
         stems = PC.SECTION_STEMS.get((SUBJECT, year, level), {})
         S = TechScheme(year, level)
+        # The paper's degree signs, each a raised o proven from its spans.
+        degree_proofs = TD.paper_proofs(year, level)
         confirmed = cueless = contradicted = 0
 
         for block in S.priced():
@@ -1351,6 +1354,17 @@ def author(bind_figures=True):
                                   f'answers; the first {len(rows)} are shown.')
 
                 topic = TOPIC_OVERRIDES.get(card_id(year, level, section, q, letter, roman), topic)
+                if degree_proofs:
+                    # tech_degrees: the paper sets its degree sign as a raised
+                    # small o ("at 4oC" in the text layer, read as 40C); each
+                    # one proven from the PDF's spans is shown as the degree
+                    # sign the page prints -- in the ask, the stem, and an ask
+                    # row, which is the ask.
+                    question, _n = TD.repair(question, degree_proofs)
+                    show_stem, _n = TD.repair(show_stem, degree_proofs)
+                    for r in rows:
+                        if r.get('ask'):
+                            r['verbatim'], _n = TD.repair(r['verbatim'], degree_proofs)
                 card = {
                     'id': card_id(year, level, section, q, letter, roman),
                     'topicId': topic,
