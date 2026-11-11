@@ -255,6 +255,9 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // Every row, prompt, sample and direction is a slice of the scheme's guidance or the
     // paper's question; a row that carries the answer the scheme printed for it
     // ("Ainm an fhile: Caitlín Maude") is two slices.
+    const pointSum = (part: IrishAllocation['parts'][number]) => [...part.rows.reduce((best, row) =>
+      best.set(row.group ?? row.id, Math.max(best.get(row.group ?? row.id) ?? 0, row.marks)), new Map<string, number>()).values()]
+      .reduce((sum, marks) => sum + marks, 0);
     const checkAllocation = (card: { id: string; questionText: string }, criterion: { guidance: string[]; maxMarks: number; allocation?: IrishAllocation }) => {
       const allocation = criterion.allocation!;
       const corpus = normalise(criterion.guidance.join(' ') + ' ' + card.questionText);
@@ -278,7 +281,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
         if (part.ladder) expect(part.ladder.at(-1), card.id).toBe(part.tariff);
         // A stepped row that is a whole answer on its own ("Gálaí: cáiliú (móra)" 0/1/2 of 2, 2013 Higher listening) is one
         // more alternative in an answer list, not a component of the tariff.
-        else if (part.rows.some(row => row.steps && row.marks < part.tariff) || part.rows.reduce((sum, row) => sum + row.marks, 0) === part.tariff) expect(part.rows.reduce((sum, row) => sum + row.marks, 0), `${card.id}: rows of a sub-question add to its tariff`).toBe(part.tariff);
+        // A group (one point's printed alternatives, a slash-joined row cut into its items) counts once, at its best row.
+        else if (part.rows.some(row => row.steps && row.marks < part.tariff) || pointSum(part) === part.tariff) expect(pointSum(part), `${card.id}: rows of a sub-question add to its tariff`).toBe(part.tariff);
         else expect(Math.max(...part.rows.map(row => row.marks)), card.id).toBeGreaterThan(0);
         total += part.tariff;
       }

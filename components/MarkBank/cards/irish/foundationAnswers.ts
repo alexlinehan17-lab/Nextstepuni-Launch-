@@ -14,6 +14,7 @@
  * against it when the module loads, so a row the scheme does not print cannot ship.
  */
 import type { IrishAllocation, IrishAnswerRow, IrishCriterion } from '../../../../types/markBank';
+import { splitSlashRows } from './slashSplits';
 
 type Row = readonly [text: string, marks: number];
 /** A priced item, or the scheme's own "X = 0" ruling (a direction, never a claimable row). */
@@ -150,5 +151,5 @@ export const foundationCriterion = (cardId: string, criterion: IrishCriterion): 
   if ((criterion.guidanceKind as string) !== 'exact-answer') return criterion;
   const allocation = foundationAllocation(cardId, criterion);
   if (!allocation) FOUNDATION_UNCUT.push(`${cardId}/${criterion.id}`);
-  return { ...criterion, guidanceKind: 'exact', ...(allocation ? { allocation } : {}) };
+  return { ...criterion, guidanceKind: 'exact', ...(allocation ? { allocation: splitSlashRows(cardId, criterion.id, allocation) } : {}) };
 };

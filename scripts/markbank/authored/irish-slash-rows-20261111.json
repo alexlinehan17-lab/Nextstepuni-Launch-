@@ -1,0 +1,3338 @@
+{
+ "date": "2026-11-11",
+ "rule": "A row whose text joins one point's alternatives with \"/\" is cut into its items where every item, read alone exactly as printed, is an acceptable answer (any 1 of the group earns the point); it stays whole where the slash sits inside one answer (a word or phrase alternation sharing a prefix or suffix, a pronoun alternation, two poem lines quoted together, a picture name, criteria prose, agus/nó).",
+ "review": "First pass by a helper (Opus), every one of the 317 rows then read by the Irish lane coordinator against its part.",
+ "counts": {
+  "split": 113,
+  "kept": 204
+ },
+ "split": [
+  {
+   "card": "irish-2021-hl-p1-listening-c-p1",
+   "criterion": "q3",
+   "part": "p1",
+   "row": "r1",
+   "text": "Tríocha a haon míle iontráil/31 000 iontráil",
+   "marks": 2,
+   "items": [
+    "Tríocha a haon míle iontráil",
+    "31 000 iontráil"
+   ],
+   "reason": "Irish words and digits each state the complete count of entries."
+  },
+  {
+   "card": "irish-2021-hl-p1-listening-c-p1",
+   "criterion": "q3",
+   "part": "p1",
+   "row": "r2",
+   "text": "Tríocha a haon míle focal/31 000 focal",
+   "marks": 2,
+   "items": [
+    "Tríocha a haon míle focal",
+    "31 000 focal"
+   ],
+   "reason": "Irish words and digits each state the complete count of words."
+  },
+  {
+   "card": "irish-2021-hl-p1-listening-c-p2",
+   "criterion": "q3",
+   "part": "p1",
+   "row": "r5",
+   "text": "An tAthrú Aeráide/Athrú Aeráide",
+   "marks": 2,
+   "items": [
+    "An tAthrú Aeráide",
+    "Athrú Aeráide"
+   ],
+   "reason": "Both forms name climate change completely."
+  },
+  {
+   "card": "irish-2021-hl-p1-listening-b-c1-first",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r4",
+   "text": "I nDún na nGall/I dTír Chonaill",
+   "marks": 1,
+   "items": [
+    "I nDún na nGall",
+    "I dTír Chonaill"
+   ],
+   "reason": "Two complete place answers (Donegal / Tír Chonaill)."
+  },
+  {
+   "card": "irish-2022-hl-p1-listening-a-f1",
+   "criterion": "q1b",
+   "part": "p1",
+   "row": "r6",
+   "text": "An scóráil/Scór",
+   "marks": 1,
+   "items": [
+    "An scóráil",
+    "Scór"
+   ],
+   "reason": "Two complete wordings of the same point (scoring)."
+  },
+  {
+   "card": "irish-2022-hl-p1-listening-a-f2",
+   "criterion": "q3",
+   "part": "p1",
+   "row": "r4",
+   "text": "Dramhaíl phlaisteach/bruscar plaisteach",
+   "marks": 2,
+   "items": [
+    "Dramhaíl phlaisteach",
+    "bruscar plaisteach"
+   ],
+   "reason": "Two complete wordings: plastic waste / plastic rubbish."
+  },
+  {
+   "card": "irish-2022-hl-p1-listening-a-f2",
+   "criterion": "q3",
+   "part": "p1",
+   "row": "r7",
+   "text": "Dramhaíl/bruscar",
+   "marks": 1,
+   "items": [
+    "Dramhaíl",
+    "bruscar"
+   ],
+   "reason": "Two complete synonyms: waste / rubbish."
+  },
+  {
+   "card": "irish-2023-hl-p1-listening-c-p1",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Cúrsaí oibre/obair/saol na hoibre",
+   "marks": 2,
+   "items": [
+    "Cúrsaí oibre",
+    "obair",
+    "saol na hoibre"
+   ],
+   "reason": "Each item (Cúrsaí oibre, obair, saol na hoibre) is a complete topic answer."
+  },
+  {
+   "card": "irish-2023-hl-p1-listening-b-c1-first",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r2",
+   "text": "Glantachán/ag glanadh",
+   "marks": 2,
+   "items": [
+    "Glantachán",
+    "ag glanadh"
+   ],
+   "reason": "Two complete wordings: cleaning-up / cleaning."
+  },
+  {
+   "card": "irish-2024-hl-p1-listening-a-f1",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Seisiúin chomhrá/seisiún comhrá",
+   "marks": 2,
+   "items": [
+    "Seisiúin chomhrá",
+    "seisiún comhrá"
+   ],
+   "reason": "Plural and singular forms are each complete."
+  },
+  {
+   "card": "irish-2024-hl-p1-listening-a-f2",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r5",
+   "text": "Stair na peile (Gaelaí)/stair na hiománaíochta",
+   "marks": 1,
+   "items": [
+    "Stair na peile (Gaelaí)",
+    "stair na hiománaíochta"
+   ],
+   "reason": "Each item names a complete history topic; alternatives for one point."
+  },
+  {
+   "card": "irish-2024-hl-p1-listening-b-c2-first",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r5",
+   "text": "Cás na ndaoine gan dídean/daoine gan dídean",
+   "marks": 1,
+   "items": [
+    "Cás na ndaoine gan dídean",
+    "daoine gan dídean"
+   ],
+   "reason": "Both items are complete wordings of the homeless cause."
+  },
+  {
+   "card": "irish-2024-hl-p1-listening-b-c2-second",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r1",
+   "text": "Bhí an talamh crua/talamh crua",
+   "marks": 2,
+   "items": [
+    "Bhí an talamh crua",
+    "talamh crua"
+   ],
+   "reason": "Both items are complete: the ground was hard / hard ground."
+  },
+  {
+   "card": "irish-2025-hl-p1-listening-c-p1",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r4",
+   "text": "I meaisín speisialta/sna meaisíní speisialta",
+   "marks": 1,
+   "items": [
+    "I meaisín speisialta",
+    "sna meaisíní speisialta"
+   ],
+   "reason": "Both items are complete location answers."
+  },
+  {
+   "card": "irish-2025-hl-p1-listening-b-c2-first",
+   "criterion": "q3",
+   "part": "p1",
+   "row": "r8",
+   "text": "Ábalta a bheith i láthair go fíorúil/i láthair go fíorúil",
+   "marks": 1,
+   "items": [
+    "Ábalta a bheith i láthair go fíorúil",
+    "i láthair go fíorúil"
+   ],
+   "reason": "Both items are complete wordings of attending virtually."
+  },
+  {
+   "card": "irish-2025-hl-p1-listening-b-c2-first",
+   "criterion": "q3",
+   "part": "p1",
+   "row": "r12",
+   "text": "Aipeanna teachtaireachtaí/aipeanna",
+   "marks": 1,
+   "items": [
+    "Aipeanna teachtaireachtaí",
+    "aipeanna"
+   ],
+   "reason": "Both items are complete: messaging apps / apps."
+  },
+  {
+   "card": "irish-2025-hl-p1-listening-b-c2-second",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r2",
+   "text": "I gcomhlacht/comhlacht",
+   "marks": 1,
+   "items": [
+    "I gcomhlacht",
+    "comhlacht"
+   ],
+   "reason": "Both items are complete: mutated and unmutated 'company'."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-a-f1-q3",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r3",
+   "text": "Ceithre euro déag/€14",
+   "marks": 1,
+   "items": [
+    "Ceithre euro déag",
+    "€14"
+   ],
+   "reason": "Words and figure each state the complete wage."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-a-f2-q3",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "12/dhá mhac léinn déag/a dó dhéag/dháréag",
+   "marks": 2,
+   "items": [
+    "12",
+    "dhá mhac léinn déag",
+    "a dó dhéag",
+    "dháréag"
+   ],
+   "reason": "Each item is a complete statement of the number twelve."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-b-c1-first-q2",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r3",
+   "text": "Leagadh go talamh é/leagadh é",
+   "marks": 2,
+   "items": [
+    "Leagadh go talamh é",
+    "leagadh é"
+   ],
+   "reason": "Both items are complete clauses."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-b-c1-first-q3",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r9",
+   "text": "Ní raibh sé in ann dul chuig an gcóisir/ní raibh sé ag an gcóisir",
+   "marks": 1,
+   "items": [
+    "Ní raibh sé in ann dul chuig an gcóisir",
+    "ní raibh sé ag an gcóisir"
+   ],
+   "reason": "Both items are complete clauses about missing the party."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-b-c1-first-q3",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r10",
+   "text": "Ní raibh sé in ann dul chuig an gclub(theach)/ní raibh sé sa chlub(theach)",
+   "marks": 1,
+   "items": [
+    "Ní raibh sé in ann dul chuig an gclub(theach)",
+    "ní raibh sé sa chlub(theach)"
+   ],
+   "reason": "Both items are complete clauses about missing the clubhouse."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-c-p2-q2",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r9",
+   "text": "Cúrsaí folláine/folláine",
+   "marks": 1,
+   "items": [
+    "Cúrsaí folláine",
+    "folláine"
+   ],
+   "reason": "Both items are complete: wellness matters / wellness."
+  },
+  {
+   "card": "irish-2026-hl-p2-poetry-3b-b",
+   "criterion": "eolas-ii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Tá/Níl",
+   "marks": 1,
+   "items": [
+    "Tá",
+    "Níl"
+   ],
+   "reason": "Yes/no stance: either 'Tá' or 'Níl' is a complete answer."
+  },
+  {
+   "card": "irish-2026-hl-p2-literature-4-f",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Tá/Níl",
+   "marks": 1,
+   "items": [
+    "Tá",
+    "Níl"
+   ],
+   "reason": "Yes/no stance: either 'Tá' or 'Níl' is a complete answer."
+  },
+  {
+   "card": "irish-2019-hl-p1-listening-a-f2",
+   "criterion": "q1b",
+   "part": "p1",
+   "row": "r6",
+   "text": "Drochaimsir/an aimsir go hainnis/go dona",
+   "marks": 2,
+   "items": [
+    "Drochaimsir",
+    "an aimsir go hainnis/go dona"
+   ],
+   "reason": "Mixed row: split only at the top-level slash; the second item keeps its internal go hainnis/go dona alternation."
+  },
+  {
+   "card": "irish-2018-hl-p1-listening-b-c2-first",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r4",
+   "text": "Poist/obair/jabanna",
+   "marks": 2,
+   "items": [
+    "Poist",
+    "obair",
+    "jabanna"
+   ],
+   "reason": "Three complete synonyms for jobs/work."
+  },
+  {
+   "card": "irish-2018-hl-p2-literature-4-f",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Sea/Ní hea",
+   "marks": 1,
+   "items": [
+    "Sea",
+    "Ní hea"
+   ],
+   "reason": "Yes/no stance: either 'Sea' or 'Ní hea' is a complete answer."
+  },
+  {
+   "card": "irish-2010-hl-listening-a-f1",
+   "criterion": "q1b",
+   "part": "p1",
+   "row": "r1",
+   "text": "Tráchtaire spóirt/Gaeilgeoir/Ciarraíoch/cuirfidh sé tús leis an oíche eolais",
+   "marks": 2,
+   "items": [
+    "Tráchtaire spóirt",
+    "Gaeilgeoir",
+    "Ciarraíoch",
+    "cuirfidh sé tús leis an oíche eolais"
+   ],
+   "reason": "Four different complete facts about Micheál Ó Muircheartaigh."
+  },
+  {
+   "card": "irish-2010-hl-listening-a-f3",
+   "criterion": "q3b",
+   "part": "p1",
+   "row": "r4",
+   "text": "Glaoigh ar Goal/ Scríobh chuig Goal/déan teagmháil le Goal",
+   "marks": 1,
+   "items": [
+    "Glaoigh ar Goal",
+    "Scríobh chuig Goal",
+    "déan teagmháil le Goal"
+   ],
+   "reason": "Three complete clauses (phone / write to / contact Goal)."
+  },
+  {
+   "card": "irish-2021-ol-p1-listening-a-f1",
+   "criterion": "g1",
+   "part": "p1",
+   "row": "r3",
+   "text": "Éireann/Éirinn/Éire",
+   "marks": 2,
+   "items": [
+    "Éireann",
+    "Éirinn",
+    "Éire"
+   ],
+   "reason": "Each form of the name is printed as a complete answer for this row."
+  },
+  {
+   "card": "irish-2021-ol-p1-listening-c-p2",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Ar eitleáin/ar eitleán",
+   "marks": 3,
+   "items": [
+    "Ar eitleáin",
+    "ar eitleán"
+   ],
+   "reason": "Plural and singular forms are each complete."
+  },
+  {
+   "card": "irish-2021-ol-p1-listening-c-p2",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r2",
+   "text": "Ar longa/ar long",
+   "marks": 3,
+   "items": [
+    "Ar longa",
+    "ar long"
+   ],
+   "reason": "Plural and singular forms are each complete."
+  },
+  {
+   "card": "irish-2021-ol-p1-listening-c-p2",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r3",
+   "text": "Ar bháid/ar bhád",
+   "marks": 3,
+   "items": [
+    "Ar bháid",
+    "ar bhád"
+   ],
+   "reason": "Plural and singular forms are each complete."
+  },
+  {
+   "card": "irish-2021-ol-p1-listening-c-p2",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r4",
+   "text": "Ar leoraithe/ar leoraí",
+   "marks": 3,
+   "items": [
+    "Ar leoraithe",
+    "ar leoraí"
+   ],
+   "reason": "Plural and singular forms are each complete."
+  },
+  {
+   "card": "irish-2021-ol-p1-listening-b-c1",
+   "criterion": "m1-q2",
+   "part": "p1",
+   "row": "r2",
+   "text": "Ar an trá/trá",
+   "marks": 3,
+   "items": [
+    "Ar an trá",
+    "trá"
+   ],
+   "reason": "Both items are complete: on the beach / beach."
+  },
+  {
+   "card": "irish-2021-ol-p1-listening-b-c1",
+   "criterion": "m2-q2",
+   "part": "p1",
+   "row": "r2",
+   "text": "Cluiche/cluichí",
+   "marks": 3,
+   "items": [
+    "Cluiche",
+    "cluichí"
+   ],
+   "reason": "Singular and plural are each complete."
+  },
+  {
+   "card": "irish-2021-ol-p1-listening-b-c2",
+   "criterion": "m1-q2",
+   "part": "p1",
+   "row": "r3",
+   "text": "Amhrán/Amhráin",
+   "marks": 3,
+   "items": [
+    "Amhrán",
+    "Amhráin"
+   ],
+   "reason": "Singular and plural are each complete."
+  },
+  {
+   "card": "irish-2021-ol-p2-poetry-3a-c",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2021-ol-p2-poetry-3b-c",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2022-ol-p1-listening-a-f2",
+   "criterion": "q2b",
+   "part": "p1",
+   "row": "r2",
+   "text": "Buidéil/buidéal",
+   "marks": 2,
+   "items": [
+    "Buidéil",
+    "buidéal"
+   ],
+   "reason": "Plural and singular are each complete."
+  },
+  {
+   "card": "irish-2022-ol-p1-listening-c-p2",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r1",
+   "text": "I gConamara/Conamara",
+   "marks": 3,
+   "items": [
+    "I gConamara",
+    "Conamara"
+   ],
+   "reason": "Both items are complete: in Connemara / Connemara."
+  },
+  {
+   "card": "irish-2022-ol-p1-listening-b-c2",
+   "criterion": "m1-q1",
+   "part": "p1",
+   "row": "r4",
+   "text": "Siopa carthanachta/Siopa de chuid Chumann Naomh Uinseann de Pól",
+   "marks": 3,
+   "items": [
+    "Siopa carthanachta",
+    "Siopa de chuid Chumann Naomh Uinseann de Pól"
+   ],
+   "reason": "Both items are complete descriptions of the shop."
+  },
+  {
+   "card": "irish-2022-ol-p1-listening-b-c2",
+   "criterion": "m1-q1",
+   "part": "p1",
+   "row": "r5",
+   "text": "Siopaí/Siopa",
+   "marks": 1,
+   "items": [
+    "Siopaí",
+    "Siopa"
+   ],
+   "reason": "Plural and singular are each complete."
+  },
+  {
+   "card": "irish-2022-ol-p1-listening-b-c2",
+   "criterion": "m2-q1",
+   "part": "p1",
+   "row": "r3",
+   "text": "Na héadaí/éadaí",
+   "marks": 3,
+   "items": [
+    "Na héadaí",
+    "éadaí"
+   ],
+   "reason": "Both items are complete: the clothes / clothes."
+  },
+  {
+   "card": "irish-2022-ol-p2-poetry-3a-a",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Tá/Níl",
+   "marks": 1,
+   "items": [
+    "Tá",
+    "Níl"
+   ],
+   "reason": "Yes/no stance: either 'Tá' or 'Níl' is a complete answer."
+  },
+  {
+   "card": "irish-2022-ol-p2-poetry-3a-c",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2022-ol-p2-poetry-3b-c",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2023-ol-p1-listening-a-f1",
+   "criterion": "q1b",
+   "part": "p1",
+   "row": "r6",
+   "text": "Gearrscéal/gearrscéalta",
+   "marks": 3,
+   "items": [
+    "Gearrscéal",
+    "gearrscéalta"
+   ],
+   "reason": "Singular and plural are each complete."
+  },
+  {
+   "card": "irish-2023-ol-p1-listening-a-f1",
+   "criterion": "q1b",
+   "part": "p1",
+   "row": "r8",
+   "text": "Scéal/scéalta",
+   "marks": 2,
+   "items": [
+    "Scéal",
+    "scéalta"
+   ],
+   "reason": "Singular and plural are each complete."
+  },
+  {
+   "card": "irish-2023-ol-p1-listening-b-c1",
+   "criterion": "m1-q2",
+   "part": "p1",
+   "row": "r2",
+   "text": "Plaisteach/Plaistigh",
+   "marks": 3,
+   "items": [
+    "Plaisteach",
+    "Plaistigh"
+   ],
+   "reason": "Both forms of 'plastic' are each complete."
+  },
+  {
+   "card": "irish-2023-ol-p1-listening-b-c2",
+   "criterion": "m2-q1",
+   "part": "p1",
+   "row": "r1",
+   "text": "Páirc phoiblí/páirc phobail",
+   "marks": 3,
+   "items": [
+    "Páirc phoiblí",
+    "páirc phobail"
+   ],
+   "reason": "Both items are complete park names."
+  },
+  {
+   "card": "irish-2023-ol-p2-poetry-3a-b",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Thaitin/níor thaitin",
+   "marks": 1,
+   "items": [
+    "Thaitin",
+    "níor thaitin"
+   ],
+   "reason": "Stance: either 'Thaitin' or 'níor thaitin' is a complete answer."
+  },
+  {
+   "card": "irish-2023-ol-p2-poetry-3a-c",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2023-ol-p2-poetry-3b-c",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2024-ol-p1-listening-c-p1",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r3",
+   "text": "(Mí) D(h)eireadh Fómhair/Deireadh Fómhair",
+   "marks": 3,
+   "items": [
+    "(Mí) D(h)eireadh Fómhair",
+    "Deireadh Fómhair"
+   ],
+   "reason": "Both items name the month completely; the bracket only qualifies the first."
+  },
+  {
+   "card": "irish-2024-ol-p1-listening-b-c2",
+   "criterion": "m1-q1",
+   "part": "p1",
+   "row": "r1",
+   "text": "I gcarrchlós/carrchlós",
+   "marks": 3,
+   "items": [
+    "I gcarrchlós",
+    "carrchlós"
+   ],
+   "reason": "Both items are complete: in a car park / car park."
+  },
+  {
+   "card": "irish-2024-ol-p2-prose-2a-a",
+   "criterion": "eolas-v",
+   "part": "p1",
+   "row": "r1",
+   "text": "Thaitin/Níor thaitin",
+   "marks": 1,
+   "items": [
+    "Thaitin",
+    "Níor thaitin"
+   ],
+   "reason": "Stance: either 'Thaitin' or 'Níor thaitin' is a complete answer."
+  },
+  {
+   "card": "irish-2024-ol-p2-poetry-3a-c",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2024-ol-p2-poetry-3b-c",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2025-ol-p2-poetry-3a-c",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2025-ol-p2-poetry-3b-c",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2026-ol-p1-listening-a-f2-q1b",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r3",
+   "text": "Míle/1000",
+   "marks": 3,
+   "items": [
+    "Míle",
+    "1000"
+   ],
+   "reason": "Word and figure each state the complete grant."
+  },
+  {
+   "card": "irish-2026-ol-p1-listening-b-c1-second-q1",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r2",
+   "text": "Rothar/rotha(i)r",
+   "marks": 3,
+   "items": [
+    "Rothar",
+    "rotha(i)r"
+   ],
+   "reason": "Both forms of 'bike' are each complete."
+  },
+  {
+   "card": "irish-2026-ol-p1-listening-b-c1-second-q1",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r3",
+   "text": "Rothaí/rothaithe",
+   "marks": 3,
+   "items": [
+    "Rothaí",
+    "rothaithe"
+   ],
+   "reason": "Both forms are each complete."
+  },
+  {
+   "card": "irish-2026-ol-p1-listening-b-c2-first-q1",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Bosca ceoil/bosca",
+   "marks": 3,
+   "items": [
+    "Bosca ceoil",
+    "bosca"
+   ],
+   "reason": "Both items are complete: accordion / box."
+  },
+  {
+   "card": "irish-2026-ol-p2-poetry-3a-b",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2026-ol-p2-poetry-3a-b-iii",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2026-ol-p2-poetry-3a-c",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Tá/Níl",
+   "marks": 1,
+   "items": [
+    "Tá",
+    "Níl"
+   ],
+   "reason": "Yes/no stance: either 'Tá' or 'Níl' is a complete answer."
+  },
+  {
+   "card": "irish-2026-ol-p2-poetry-3a-c-iii",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Tá/Níl",
+   "marks": 1,
+   "items": [
+    "Tá",
+    "Níl"
+   ],
+   "reason": "Yes/no stance: either 'Tá' or 'Níl' is a complete answer."
+  },
+  {
+   "card": "irish-2026-ol-p2-poetry-3b-b",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2025-ol-p2-poetry-3a-c-iii",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2024-ol-p2-prose-2a-a-v",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Thaitin/Níor thaitin",
+   "marks": 1,
+   "items": [
+    "Thaitin",
+    "Níor thaitin"
+   ],
+   "reason": "Stance: either 'Thaitin' or 'Níor thaitin' is a complete answer."
+  },
+  {
+   "card": "irish-2024-ol-p2-poetry-3a-c-iii",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2023-ol-p2-poetry-3a-b-iii",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Thaitin/níor thaitin",
+   "marks": 1,
+   "items": [
+    "Thaitin",
+    "níor thaitin"
+   ],
+   "reason": "Stance: either 'Thaitin' or 'níor thaitin' is a complete answer."
+  },
+  {
+   "card": "irish-2023-ol-p2-poetry-3a-c-iii",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2022-ol-p2-poetry-3a-a-iii",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Tá/Níl",
+   "marks": 1,
+   "items": [
+    "Tá",
+    "Níl"
+   ],
+   "reason": "Yes/no stance: either 'Tá' or 'Níl' is a complete answer."
+  },
+  {
+   "card": "irish-2022-ol-p2-poetry-3a-c-iii",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2021-ol-p2-poetry-3a-c-iii",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2019-ol-p1-listening-a-f1",
+   "criterion": "g2",
+   "part": "p1",
+   "row": "r3",
+   "text": "An t‐amhrán/amhrán",
+   "marks": 1,
+   "items": [
+    "An t‐amhrán",
+    "amhrán"
+   ],
+   "reason": "Both items are complete: the song / song."
+  },
+  {
+   "card": "irish-2019-ol-p1-listening-a-f2",
+   "criterion": "q1a",
+   "part": "p1",
+   "row": "r2",
+   "text": "Gaillimh/I nGaillimh",
+   "marks": 1,
+   "items": [
+    "Gaillimh",
+    "I nGaillimh"
+   ],
+   "reason": "Both items are complete: Galway / in Galway."
+  },
+  {
+   "card": "irish-2019-ol-p1-listening-a-f2",
+   "criterion": "q2a",
+   "part": "p1",
+   "row": "r3",
+   "text": "Báisteach/fearthainn",
+   "marks": 2,
+   "items": [
+    "Báisteach",
+    "fearthainn"
+   ],
+   "reason": "Two complete synonyms for rain."
+  },
+  {
+   "card": "irish-2019-ol-p1-listening-c-p1",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r10",
+   "text": "Fánaid/F(h)ánada",
+   "marks": 1,
+   "items": [
+    "Fánaid",
+    "F(h)ánada"
+   ],
+   "reason": "Both forms of the place name are each complete."
+  },
+  {
+   "card": "irish-2019-ol-p2-poetry-3a-a",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Tá/Níl",
+   "marks": 1,
+   "items": [
+    "Tá",
+    "Níl"
+   ],
+   "reason": "Yes/no stance: either 'Tá' or 'Níl' is a complete answer."
+  },
+  {
+   "card": "irish-2019-ol-p2-poetry-3a-b",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2019-ol-p2-poetry-3b-b",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2019-ol-p2-poetry-3a-a-iii",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Tá/Níl",
+   "marks": 1,
+   "items": [
+    "Tá",
+    "Níl"
+   ],
+   "reason": "Yes/no stance: either 'Tá' or 'Níl' is a complete answer."
+  },
+  {
+   "card": "irish-2019-ol-p2-poetry-3a-b-iii",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2018-ol-p1-listening-a-f1",
+   "criterion": "g2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Ar a seacht a chlog/7 a chlog/7 p.m./7.00",
+   "marks": 3,
+   "items": [
+    "Ar a seacht a chlog",
+    "7 a chlog",
+    "7 p.m.",
+    "7.00"
+   ],
+   "reason": "Each item is a complete statement of the start time (not a date format)."
+  },
+  {
+   "card": "irish-2018-ol-p1-listening-a-f1",
+   "criterion": "g3",
+   "part": "p1",
+   "row": "r3",
+   "text": "Amhránaíocht/amhráin",
+   "marks": 3,
+   "items": [
+    "Amhránaíocht",
+    "amhráin"
+   ],
+   "reason": "Both items are complete: singing / songs."
+  },
+  {
+   "card": "irish-2018-ol-p1-listening-a-f1",
+   "criterion": "g3",
+   "part": "p1",
+   "row": "r4",
+   "text": "Damhsa/rince",
+   "marks": 3,
+   "items": [
+    "Damhsa",
+    "rince"
+   ],
+   "reason": "Two complete synonyms for dance."
+  },
+  {
+   "card": "irish-2018-ol-p1-listening-b-c2",
+   "criterion": "m1-q2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Altra/Banaltra",
+   "marks": 3,
+   "items": [
+    "Altra",
+    "Banaltra"
+   ],
+   "reason": "Two complete synonyms for nurse."
+  },
+  {
+   "card": "irish-2018-ol-p2-poetry-3a-a",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2018-ol-p2-poetry-3b-a",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2018-ol-p2-poetry-3a-a-iii",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2017-ol-p1-listening-b-c2",
+   "criterion": "m1-q2",
+   "part": "p1",
+   "row": "r6",
+   "text": "Pléascanna/Buamaí/ionsaithe",
+   "marks": 1,
+   "items": [
+    "Pléascanna",
+    "Buamaí",
+    "ionsaithe"
+   ],
+   "reason": "Three complete nouns: explosions / bombs / attacks."
+  },
+  {
+   "card": "irish-2017-ol-p1-listening-c-p2",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r5",
+   "text": "Anuraidh/an bhliain seo caite/2016",
+   "marks": 2,
+   "items": [
+    "Anuraidh",
+    "an bhliain seo caite",
+    "2016"
+   ],
+   "reason": "Each item is a complete time answer (last year / 2016)."
+  },
+  {
+   "card": "irish-2017-ol-p2-prose-2a-a-caca-milis",
+   "criterion": "eolas-v",
+   "part": "p1",
+   "row": "r1",
+   "text": "Tá/Níl",
+   "marks": 1,
+   "items": [
+    "Tá",
+    "Níl"
+   ],
+   "reason": "Yes/no stance: either 'Tá' or 'Níl' is a complete answer."
+  },
+  {
+   "card": "irish-2017-ol-p2-prose-2a-a-an-lasair-choille",
+   "criterion": "eolas-v",
+   "part": "p1",
+   "row": "r1",
+   "text": "Tá/Níl",
+   "marks": 1,
+   "items": [
+    "Tá",
+    "Níl"
+   ],
+   "reason": "Yes/no stance: either 'Tá' or 'Níl' is a complete answer."
+  },
+  {
+   "card": "irish-2017-ol-p2-prose-2a-a-caca-milis-v",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Tá/Níl",
+   "marks": 1,
+   "items": [
+    "Tá",
+    "Níl"
+   ],
+   "reason": "Yes/no stance: either 'Tá' or 'Níl' is a complete answer."
+  },
+  {
+   "card": "irish-2017-ol-p2-prose-2a-a-an-lasair-choille-v",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Tá/Níl",
+   "marks": 1,
+   "items": [
+    "Tá",
+    "Níl"
+   ],
+   "reason": "Yes/no stance: either 'Tá' or 'Níl' is a complete answer."
+  },
+  {
+   "card": "irish-2014-ol-p1-listening-a-f2",
+   "criterion": "q2a",
+   "part": "p1",
+   "row": "r1",
+   "text": "Leadóg/leadóige",
+   "marks": 3,
+   "items": [
+    "Leadóg",
+    "leadóige"
+   ],
+   "reason": "Both forms of 'tennis' are each complete."
+  },
+  {
+   "card": "irish-2014-ol-p2-poetry-3b-b",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith/Ní maith",
+   "marks": 1,
+   "items": [
+    "Is maith",
+    "Ní maith"
+   ],
+   "reason": "Stance: either 'Is maith' or 'Ní maith' is a complete answer."
+  },
+  {
+   "card": "irish-2013-fl-r-3a-4",
+   "criterion": "answer",
+   "part": "p1",
+   "row": "r1",
+   "text": "In Éirinn / i mBaile Átha Cliath",
+   "marks": 6,
+   "items": [
+    "In Éirinn",
+    "i mBaile Átha Cliath"
+   ],
+   "reason": "Two places, each a complete answer as printed."
+  },
+  {
+   "card": "irish-2019-fl-r-3c-5",
+   "criterion": "answer",
+   "part": "p1",
+   "row": "r4",
+   "text": "Leathchéad bliain / Caoga bliain",
+   "marks": 4,
+   "items": [
+    "Leathchéad bliain",
+    "Caoga bliain"
+   ],
+   "reason": "Two wordings of fifty years, each complete."
+  },
+  {
+   "card": "irish-2022-fl-r-3a-5",
+   "criterion": "answer",
+   "part": "p1",
+   "row": "r1",
+   "text": "Moladh mór / a lán poiblíochta",
+   "marks": 6,
+   "items": [
+    "Moladh mór",
+    "a lán poiblíochta"
+   ],
+   "reason": "Two answers, each complete as printed."
+  },
+  {
+   "card": "irish-2022-fl-r-3c-5",
+   "criterion": "answer",
+   "part": "p1",
+   "row": "r1",
+   "text": "ar fán / i measc cat na gcomharsan",
+   "marks": 6,
+   "items": [
+    "ar fán",
+    "i measc cat na gcomharsan"
+   ],
+   "reason": "Two answers, each complete as printed."
+  },
+  {
+   "card": "irish-2023-fl-r-3a-5",
+   "criterion": "answer",
+   "part": "p1",
+   "row": "r1",
+   "text": "Sciliúil / láidir / tapa / cabhrach / cairdiúil",
+   "marks": 6,
+   "items": [
+    "Sciliúil",
+    "láidir",
+    "tapa",
+    "cabhrach",
+    "cairdiúil"
+   ],
+   "reason": "Five adjectives, each a complete answer."
+  },
+  {
+   "card": "irish-2023-fl-r-3b-5",
+   "criterion": "answer",
+   "part": "p1",
+   "row": "r1",
+   "text": "Taisteal / Thar lear / Meiriceá (Theas) / Eoraip / Áise / Saoire / (oileán) Árann",
+   "marks": 6,
+   "items": [
+    "Taisteal",
+    "Thar lear",
+    "Meiriceá (Theas)",
+    "Eoraip",
+    "Áise",
+    "Saoire",
+    "(oileán) Árann"
+   ],
+   "reason": "Seven answers, each complete as printed."
+  },
+  {
+   "card": "irish-2024-fl-r-3c-3",
+   "criterion": "answer",
+   "part": "p1",
+   "row": "r1",
+   "text": "Picnic / Bia",
+   "marks": 6,
+   "items": [
+    "Picnic",
+    "Bia"
+   ],
+   "reason": "Two answers, each complete."
+  },
+  {
+   "card": "irish-2025-fl-r-3c-3",
+   "criterion": "answer",
+   "part": "p1",
+   "row": "r1",
+   "text": "Ar ball beag / Nuair a rachaidh Seán ar scoil",
+   "marks": 6,
+   "items": [
+    "Ar ball beag",
+    "Nuair a rachaidh Seán ar scoil"
+   ],
+   "reason": "Two answers, each complete as printed."
+  },
+  {
+   "card": "irish-2026-fl-r-3a-3",
+   "criterion": "answer",
+   "part": "p1",
+   "row": "r1",
+   "text": "Ceithre bliana déag d’aois/14",
+   "marks": 7,
+   "items": [
+    "Ceithre bliana déag d’aois",
+    "14"
+   ],
+   "reason": "The age in words or figures, each complete."
+  },
+  {
+   "card": "irish-2026-fl-r-3b-2",
+   "criterion": "answer",
+   "part": "p1",
+   "row": "r1",
+   "text": "Bhí an-trua acu dó / chun aire a thabhairt dó",
+   "marks": 6,
+   "items": [
+    "Bhí an-trua acu dó",
+    "chun aire a thabhairt dó"
+   ],
+   "reason": "Two answers, each complete as printed."
+  }
+ ],
+ "kept": [
+  {
+   "card": "irish-2021-hl-p1-listening-a-f1",
+   "criterion": "q3",
+   "part": "p1",
+   "row": "r1",
+   "text": "Gaeilge líofa (den scoth/an-mhaith)",
+   "marks": 2,
+   "reason": "Slash alternates an adjective inside a bracket within one answer."
+  },
+  {
+   "card": "irish-2021-hl-p1-listening-b-c1-first",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r3",
+   "text": "I nGaeltacht Thír Chonaill/Dhún na nGall",
+   "marks": 2,
+   "reason": "'Dhún na nGall' alone needs the shared 'I nGaeltacht' prefix."
+  },
+  {
+   "card": "irish-2021-hl-p1-listening-b-c1-second",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r4",
+   "text": "Bhí bróga compordacha siúil orthu/acu/uirthi/aici",
+   "marks": 2,
+   "reason": "Pronoun alternation (orthu/acu/uirthi/aici) inside one sentence."
+  },
+  {
+   "card": "irish-2021-hl-p1-listening-b-c2-first",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r3",
+   "text": "As an taispeántas a thug sé sa cheoldráma/in Oilibhéar",
+   "marks": 2,
+   "reason": "'in Oilibhéar' alone needs the shared sentence prefix."
+  },
+  {
+   "card": "irish-2021-hl-p1-listening-b-c2-first",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r3",
+   "text": "Bhí áthas/lúcháir/ríméad/gliondar air",
+   "marks": 2,
+   "reason": "Emotion noun alternates inside 'Bhí ... air'."
+  },
+  {
+   "card": "irish-2021-hl-p1-listening-b-c2-first",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r5",
+   "text": "Ní raibh sé ag tnúth/ag súil leis",
+   "marks": 2,
+   "reason": "'ag súil leis' alone lacks the shared 'Ní raibh sé' prefix."
+  },
+  {
+   "card": "irish-2021-hl-p1-listening-b-c2-second",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r1",
+   "text": "D’éirigh siad ina seasamh chun bualadh bos a thabhairt dúinn/dóibh",
+   "marks": 2,
+   "reason": "Pronoun alternation dúinn/dóibh inside one sentence."
+  },
+  {
+   "card": "irish-2021-hl-p2-poetry-3a-b",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r2",
+   "text": "An mheadaracht: amhrán nó bunaithe ar mheadaracht an amhráin nó meadaracht/véarsaíocht aiceanta nó ré-aithris ar Ochtfhoclach Pointe amháin eolais",
+   "marks": 3,
+   "reason": "Scheme criterion prose about metre; slash is inside a description."
+  },
+  {
+   "card": "irish-2022-hl-p1-listening-a-f1",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r3",
+   "text": "Gaeilge líofa/shármhaith/an-mhaith",
+   "marks": 2,
+   "reason": "Adjective alternation inside 'Gaeilge ...'."
+  },
+  {
+   "card": "irish-2022-hl-p1-listening-c-p2",
+   "criterion": "q3",
+   "part": "p1",
+   "row": "r7",
+   "text": "Ag aisteoireacht trí mheán na Gaeilge/sa Ghaeilge",
+   "marks": 2,
+   "reason": "'sa Ghaeilge' alone needs the shared 'Ag aisteoireacht' prefix."
+  },
+  {
+   "card": "irish-2022-hl-p1-listening-b-c1-second",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r5",
+   "text": "Tá sé ábalta an Luas/an bus/a thógáil/a fháil go dtí an ollscoil",
+   "marks": 2,
+   "reason": "Nouns and verbs alternate inside one sentence with shared prefix and suffix."
+  },
+  {
+   "card": "irish-2022-hl-p1-listening-b-c1-second",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r6",
+   "text": "Téann sé ar an mbus/ar an Luas",
+   "marks": 2,
+   "reason": "'ar an Luas' alone lacks the shared 'Téann sé' prefix."
+  },
+  {
+   "card": "irish-2022-hl-p2-reading-b-q1",
+   "criterion": "bi",
+   "part": "p1",
+   "row": "r2",
+   "text": "Meallann sí ceoltóirí/amhránaithe/damhsóirí ó gach cearn den tír",
+   "marks": 2,
+   "reason": "Nouns alternate inside 'Meallann sí ...' with a shared prefix."
+  },
+  {
+   "card": "irish-2022-hl-p2-reading-b-q1",
+   "criterion": "bi",
+   "part": "p1",
+   "row": "r3",
+   "text": "Meallann sí ceoltóirí/amhránaithe/damhsóirí ó thíortha thar lear",
+   "marks": 2,
+   "reason": "Nouns alternate inside 'Meallann sí ...' with a shared prefix."
+  },
+  {
+   "card": "irish-2022-hl-p2-reading-b-q1",
+   "criterion": "bi",
+   "part": "p1",
+   "row": "r4",
+   "text": "Meallann sí ceoltóirí/amhránaithe/damhsóirí",
+   "marks": 1,
+   "reason": "Nouns alternate inside 'Meallann sí ...' with a shared prefix."
+  },
+  {
+   "card": "irish-2022-hl-p2-prose-2b-a",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "An príomhcharachtar (an phríomhphearsa) a ainmniú agus plé a dhéanamh ar iompar an duine sin mar aon le tionchar an iompair sin ar imeachtaí an scannáin/an dráma. Catagóir Eolas",
+   "marks": 25,
+   "reason": "Long scheme prose; slash is inside the criterion text."
+  },
+  {
+   "card": "irish-2022-hl-p2-literature-4-f",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r1",
+   "text": "An mheadaracht a ainmniú: meadaracht an amhráin/Rosc/véarsaíocht aiceanta Pointe amháin eolais: línte gearra le dhá nó trí bhéim iontu…an guta aiceanta céanna ann ag deireadh gach líne…línte aiceanta…uaim…comhfhuaim… Sampla cruinn ábhartha as an dán chun an ghné a luaitear sa phointe eolais a léiriú",
+   "marks": 2,
+   "reason": "Scheme criterion prose about metre; slash is inside a description."
+  },
+  {
+   "card": "irish-2023-hl-p1-listening-a-f1",
+   "criterion": "q1b",
+   "part": "p1",
+   "row": "r5",
+   "text": "Daoine a spreagadh chun leabha(i)r/úrscéal/cnuasach gearrscéalta/leabhar na míosa a léamh: (gan ‘Gaeilge’ luaite)",
+   "marks": 1,
+   "reason": "Nouns alternate inside one sentence with shared prefix and suffix."
+  },
+  {
+   "card": "irish-2023-hl-p1-listening-a-f1",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r1",
+   "text": "An saothar/é a phlé",
+   "marks": 2,
+   "reason": "'é a phlé' / 'An saothar' share the suffix; items are not complete alone."
+  },
+  {
+   "card": "irish-2023-hl-p1-listening-c-p1",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r2",
+   "text": "Cúrsaí/saol sóisialta",
+   "marks": 2,
+   "reason": "'Cúrsaí' alone is not the printed answer; shares 'sóisialta'."
+  },
+  {
+   "card": "irish-2023-hl-p1-listening-c-p1",
+   "criterion": "q3",
+   "part": "p1",
+   "row": "r1",
+   "text": "Podchraoladh Gaeilge de chuid Chumann Lúthchleas Gael/CLG is ea é",
+   "marks": 2,
+   "reason": "'CLG is ea é' alternates a name inside one sentence."
+  },
+  {
+   "card": "irish-2023-hl-p1-listening-b-c1-first",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r1",
+   "text": "Ag bailiú bruscair/plaistigh/earraí plaisteacha",
+   "marks": 2,
+   "reason": "Object nouns alternate after the shared 'Ag bailiú' prefix."
+  },
+  {
+   "card": "irish-2023-hl-p1-listening-b-c1-first",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r3",
+   "text": "Ag obair/ag glanadh leis an ngrúpa timpeallachta áitiúil",
+   "marks": 2,
+   "reason": "'Ag obair' alone lacks the shared suffix."
+  },
+  {
+   "card": "irish-2023-hl-p1-listening-b-c1-first",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r7",
+   "text": "(cáiliú ag teastáil ar ‘a ngnáthóga’ mura bhfuil ‘na héisc’ nó ‘na héin mhara’ luaite sa chúis imní eile a thugtar) Cuireann sé isteach ar ghnáthóga/ar na gnáthóga",
+   "marks": 2,
+   "reason": "Note plus a phrase alternation inside one clause."
+  },
+  {
+   "card": "irish-2023-hl-p1-listening-b-c1-second",
+   "criterion": "q3",
+   "part": "p1",
+   "row": "r1",
+   "text": "A dtrealamh/an trealamh go léir a thabhairt abhaile (leo)",
+   "marks": 2,
+   "reason": "Objects alternate inside 'a thabhairt abhaile (leo)'."
+  },
+  {
+   "card": "irish-2023-hl-p1-listening-b-c1-second",
+   "criterion": "q3",
+   "part": "p1",
+   "row": "r3",
+   "text": "A málaí codlata/a bpubaill a thabhairt abhaile (leo)",
+   "marks": 2,
+   "reason": "Objects alternate inside 'a thabhairt abhaile (leo)'."
+  },
+  {
+   "card": "irish-2023-hl-p2-reading-b-q6",
+   "criterion": "point-1",
+   "part": "p1",
+   "row": "r1",
+   "text": "B’fhiú/Níorbh fhiú… Pointe eolais 1 = Plé ar an bpointe le tagairt chruinn as an sliocht mar thacú leis",
+   "marks": 5,
+   "reason": "Scheme criterion prose (B'fhiú/Níorbh fhiú opening)."
+  },
+  {
+   "card": "irish-2023-hl-p2-poetry-3a-b",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r2",
+   "text": "An mheadaracht: amhrán nó bunaithe ar mheadaracht an amhráin nó meadaracht/véarsaíocht aiceanta nó ré-aithris ar an ochtfhoclach Pointe amháin eolais",
+   "marks": 3,
+   "reason": "Scheme criterion prose about metre; slash is inside a description."
+  },
+  {
+   "card": "irish-2024-hl-p1-listening-c-p1",
+   "criterion": "q3",
+   "part": "p1",
+   "row": "r1",
+   "text": "Go gcaitheann (líon ard) daoine an iomarca ama ar na meáin shóisialta/ar líne",
+   "marks": 2,
+   "reason": "'ar líne' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2024-hl-p1-listening-b-c1-first",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r1",
+   "text": "(Bhí) (teas) millteanach/uafásach/ollmhór/an-ard...",
+   "marks": 2,
+   "reason": "Bracketed shared words and adjective alternation inside one answer."
+  },
+  {
+   "card": "irish-2024-hl-p1-listening-b-c1-first",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r2",
+   "text": "(Bhí) an teocht os cionn daichead céim/40 céim/40° Celsius",
+   "marks": 2,
+   "reason": "Temperature forms alternate inside '(Bhí) an teocht ...'."
+  },
+  {
+   "card": "irish-2024-hl-p1-listening-b-c1-first",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r3",
+   "text": "(Bhí) an teocht daichead céim/40 céim/40° Celsius",
+   "marks": 1,
+   "reason": "Temperature forms alternate inside '(Bhí) an teocht ...'."
+  },
+  {
+   "card": "irish-2024-hl-p1-listening-b-c1-first",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r12",
+   "text": "Cuireadh na báid/na busanna ar ceal",
+   "marks": 1,
+   "reason": "'na busanna ar ceal' alone lacks 'Cuireadh'."
+  },
+  {
+   "card": "irish-2024-hl-p1-listening-b-c1-second",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Tá/Go bhfuil an Eoraip ag téamh níos tapa ná mór-roinn/áit/ceantar ar bith eile",
+   "marks": 2,
+   "reason": "Verb forms and nouns alternate inside one sentence."
+  },
+  {
+   "card": "irish-2024-hl-p1-listening-b-c1-second",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r2",
+   "text": "An Eoraip ag téamh níos tapa ná mór-roinn/áit/ceantar ar bith eile",
+   "marks": 1,
+   "reason": "Verb forms and nouns alternate inside one sentence."
+  },
+  {
+   "card": "irish-2024-hl-p1-listening-b-c1-second",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r3",
+   "text": "Tá/Go bhfuil an Eoraip ag téamh",
+   "marks": 1,
+   "reason": "Verb forms and nouns alternate inside one sentence."
+  },
+  {
+   "card": "irish-2024-hl-p1-listening-b-c2-second",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r3",
+   "text": "(Bhí sí) an-fhuar/préachta",
+   "marks": 2,
+   "reason": "Shared bracket '(Bhí sí)' applies to both adjectives."
+  },
+  {
+   "card": "irish-2024-hl-p1-listening-b-c2-second",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Go bhfuil daoine níos measa as ná mise/sise/ise/í féin",
+   "marks": 2,
+   "reason": "Pronoun alternation inside one sentence."
+  },
+  {
+   "card": "irish-2024-hl-p1-listening-b-c2-second",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r2",
+   "text": "Tá an t-ádh liom/léi díon a bheith os mo chionn/os a cionn",
+   "marks": 2,
+   "reason": "Pronoun alternation inside one sentence."
+  },
+  {
+   "card": "irish-2024-hl-p1-listening-b-c2-second",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r6",
+   "text": "Tá an t-ádh liom/léi",
+   "marks": 1,
+   "reason": "Pronoun alternation inside one sentence."
+  },
+  {
+   "card": "irish-2024-hl-p2-reading-a-q2",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r1",
+   "text": "Stop a chur le meath an daonra ar na hoileáin trí na coinníollacha a chruthú a spreagfaidh daoine chun fanacht ar na hoileáin/chun bogadh chucu",
+   "marks": 3,
+   "reason": "'chun bogadh chucu' alone lacks the long shared prefix."
+  },
+  {
+   "card": "irish-2024-hl-p2-reading-b-q2",
+   "criterion": "bii",
+   "part": "p1",
+   "row": "r1",
+   "text": "D’éirigh leis an ríomhaire sin an lámh in uachtar a fháil ar churadh fichille an domhain/Garry Kasparov",
+   "marks": 2,
+   "reason": "'Garry Kasparov' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2024-hl-p2-literature-4-a",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Freagair do rogha ceann amháin as Ceist 4 (A, B, C, D, E nó F). Treoracha: Iarrtar ar na hiarrthóirí plé a dhéanamh ar an ráiteas agus eolas/tuairimí a léiriú sa fhreagra agus úsáid a bhaint as samplaí cruinne, téagartha as an téacs. Déantar an freagra a mheas mar aonad agus an t-eolas a mharcáil as 35 marc agus an Ghaeilge san iarracht a mheas as 5 mharc. Catagóir Eolas 35 marc 25 marc Sármhaith Plé an-chuimsitheach ar an ráiteas Tuiscint an-shoiléir léirithe sna pointí eolais Tagairtí sármhaithe, sárthéagartha don téacs Smaointe forbartha go sármhaith 30-35 22-25 An-mhaith Plé cuimsitheach ar an ráiteas Tuiscint shoiléir léirithe sna pointí eolais Tagairtí an-téagartha don téacs Smaointe forbartha go han-mhaith 25-29 18-21 Maith Plé maith ar an ráiteas Insint mhaith ar phríomhghnéithe an téacs sna pointí eolais 20-24 14-17 Measartha Plé measartha ar an ráiteas Eolas bearnach, míchruinn agus lochtach 14-19 10-13 Lag/ An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-13 0-9 An Triail Sa dráma An Triail, is mór an tionchar atá ag an náire ar an gcaoi a gcaitheann cuid mhaith de na carachtair (na pearsana) leis an gcailín óg neamhphósta, Máire Ní Chathasaigh.’ Déan plé ar an ráiteas sin.",
+   "marks": 35,
+   "reason": "Literature band/instruction prose; 'eolas/tuairimí' and 'Lag/ An-lag' sit inside scheme text."
+  },
+  {
+   "card": "irish-2024-hl-p2-literature-4-b",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Freagair do rogha ceann amháin as Ceist 4 (A, B, C, D, E nó F). Treoracha: Iarrtar ar na hiarrthóirí plé a dhéanamh ar an ráiteas agus eolas/tuairimí a léiriú sa fhreagra agus úsáid a bhaint as samplaí cruinne, téagartha as an téacs. Déantar an freagra a mheas mar aonad agus an t-eolas a mharcáil as 35 marc agus an Ghaeilge san iarracht a mheas as 5 mharc. Catagóir Eolas 35 marc 25 marc Sármhaith Plé an-chuimsitheach ar an ráiteas Tuiscint an-shoiléir léirithe sna pointí eolais Tagairtí sármhaithe, sárthéagartha don téacs Smaointe forbartha go sármhaith 30-35 22-25 An-mhaith Plé cuimsitheach ar an ráiteas Tuiscint shoiléir léirithe sna pointí eolais Tagairtí an-téagartha don téacs Smaointe forbartha go han-mhaith 25-29 18-21 Maith Plé maith ar an ráiteas Insint mhaith ar phríomhghnéithe an téacs sna pointí eolais 20-24 14-17 Measartha Plé measartha ar an ráiteas Eolas bearnach, míchruinn agus lochtach 14-19 10-13 Lag/ An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-13 0-9 A Thig Ná Tit Orm ‘Sa dírbheathaisnéis A Thig Ná Tit Orm, is tríd an gcuntas ar eachtraí ó óige Mhaidhc a fhaighimid léargas ar shaol an phobail sa Ghaeltacht inar mhair sé.’ Déan plé ar an ráiteas sin.",
+   "marks": 35,
+   "reason": "Literature band/instruction prose; 'eolas/tuairimí' and 'Lag/ An-lag' sit inside scheme text."
+  },
+  {
+   "card": "irish-2024-hl-p2-literature-4-c",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Freagair do rogha ceann amháin as Ceist 4 (A, B, C, D, E nó F). Treoracha: Iarrtar ar na hiarrthóirí plé a dhéanamh ar an ráiteas agus eolas/tuairimí a léiriú sa fhreagra agus úsáid a bhaint as samplaí cruinne, téagartha as an téacs. Déantar an freagra a mheas mar aonad agus an t-eolas a mharcáil as 35 marc agus an Ghaeilge san iarracht a mheas as 5 mharc. Catagóir Eolas 35 marc 25 marc Sármhaith Plé an-chuimsitheach ar an ráiteas Tuiscint an-shoiléir léirithe sna pointí eolais Tagairtí sármhaithe, sárthéagartha don téacs Smaointe forbartha go sármhaith 30-35 22-25 An-mhaith Plé cuimsitheach ar an ráiteas Tuiscint shoiléir léirithe sna pointí eolais Tagairtí an-téagartha don téacs Smaointe forbartha go han-mhaith 25-29 18-21 Maith Plé maith ar an ráiteas Insint mhaith ar phríomhghnéithe an téacs sna pointí eolais 20-24 14-17 Measartha Plé measartha ar an ráiteas Eolas bearnach, míchruinn agus lochtach 14-19 10-13 Lag/ An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-13 0-9 Tóraíocht Dhiarmada agus Ghráinne ‘Tá léiriú le fáil sa Tóraíocht ar Dhiarmaid, fear atá i gcruachás de bharr go bhfuil sé faoi gheasa ag Gráinne agus go bhfuil ceangal dílseachta aige le Fionn.’ Déan plé ar an ráiteas sin.",
+   "marks": 35,
+   "reason": "Literature band/instruction prose; 'eolas/tuairimí' and 'Lag/ An-lag' sit inside scheme text."
+  },
+  {
+   "card": "irish-2024-hl-p2-literature-4-d",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Freagair do rogha ceann amháin as Ceist 4 (A, B, C, D, E nó F). Treoracha: Iarrtar ar na hiarrthóirí plé a dhéanamh ar an ráiteas agus eolas/tuairimí a léiriú sa fhreagra agus úsáid a bhaint as samplaí cruinne, téagartha as an téacs. Déantar an freagra a mheas mar aonad agus an t-eolas a mharcáil as 35 marc agus an Ghaeilge san iarracht a mheas as 5 mharc. Catagóir Eolas 35 marc 25 marc Sármhaith Plé an-chuimsitheach ar an ráiteas Tuiscint an-shoiléir léirithe sna pointí eolais Tagairtí sármhaithe, sárthéagartha don téacs Smaointe forbartha go sármhaith 30-35 22-25 An-mhaith Plé cuimsitheach ar an ráiteas Tuiscint shoiléir léirithe sna pointí eolais Tagairtí an-téagartha don téacs Smaointe forbartha go han-mhaith 25-29 18-21 Maith Plé maith ar an ráiteas Insint mhaith ar phríomhghnéithe an téacs sna pointí eolais 20-24 14-17 Measartha Plé measartha ar an ráiteas Eolas bearnach, míchruinn agus lochtach 14-19 10-13 Lag/ An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-13 0-9 Gafa Tugtar léiriú dúinn ar andúil an mhic, Eoin, agus ar an gcaoi a dtéann a thuismitheoirí, Eithne agus Breandán, i ngleic leis an bhfadhb sin sa sliocht as an úrscéal Gafa.’ Déan plé ar an ráiteas sin.",
+   "marks": 35,
+   "reason": "Literature band/instruction prose; 'eolas/tuairimí' and 'Lag/ An-lag' sit inside scheme text."
+  },
+  {
+   "card": "irish-2024-hl-p2-literature-4-e",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Freagair do rogha ceann amháin as Ceist 4 (A, B, C, D, E nó F). Treoracha: Iarrtar ar na hiarrthóirí plé a dhéanamh ar an ráiteas agus eolas/tuairimí a léiriú sa fhreagra agus úsáid a bhaint as samplaí cruinne, téagartha as an téacs. Déantar an freagra a mheas mar aonad agus an t-eolas a mharcáil as 35 marc agus an Ghaeilge san iarracht a mheas as 5 mharc. Catagóir Eolas 35 marc 25 marc Sármhaith Plé an-chuimsitheach ar an ráiteas Tuiscint an-shoiléir léirithe sna pointí eolais Tagairtí sármhaithe, sárthéagartha don téacs Smaointe forbartha go sármhaith 30-35 22-25 An-mhaith Plé cuimsitheach ar an ráiteas Tuiscint shoiléir léirithe sna pointí eolais Tagairtí an-téagartha don téacs Smaointe forbartha go han-mhaith 25-29 18-21 Maith Plé maith ar an ráiteas Insint mhaith ar phríomhghnéithe an téacs sna pointí eolais 20-24 14-17 Measartha Plé measartha ar an ráiteas Eolas bearnach, míchruinn agus lochtach 14-19 10-13 Lag/ An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-13 0-9 Canary Wharf ‘Sa scéal Saineolaí Teicneolaí, cuireann an comhrá aisteach atá ag Ultan le fear na féasóige ar an traein tús le sraith imeachtaí a bhfuil deireadh tubaisteach leo.’ Déan plé ar an ráiteas sin.",
+   "marks": 35,
+   "reason": "Literature band/instruction prose; 'eolas/tuairimí' and 'Lag/ An-lag' sit inside scheme text."
+  },
+  {
+   "card": "irish-2025-hl-p1-listening-a-f2",
+   "criterion": "q2b",
+   "part": "p1",
+   "row": "r1",
+   "text": "Scríobhfaidh siad cuntas ar thorthaí a gcuid oibre/ar a gcuid taighde/ar an obair/ar an taighde",
+   "marks": 2,
+   "reason": "Phrase alternation after the shared 'Scríobhfaidh siad cuntas' prefix."
+  },
+  {
+   "card": "irish-2025-hl-p1-listening-a-f2",
+   "criterion": "q2b",
+   "part": "p1",
+   "row": "r2",
+   "text": "Cuntas ar thorthaí/ar a gcuid oibre/ar a gcuid taighde/ar an obair/ar an taighde",
+   "marks": 2,
+   "reason": "Phrase alternation after the shared 'Cuntas' prefix."
+  },
+  {
+   "card": "irish-2025-hl-p1-listening-c-p2",
+   "criterion": "q3",
+   "part": "p1",
+   "row": "r11",
+   "text": "Cúrsaí teanga/Gaeilge",
+   "marks": 1,
+   "reason": "Read as 'Cúrsaí teanga/Gaeilge' sharing the 'Cúrsaí' prefix."
+  },
+  {
+   "card": "irish-2025-hl-p1-listening-b-c2-first",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r6",
+   "text": "Tá deiseanna fostaíochta níos fearr aici thall ansin/san Astráil",
+   "marks": 2,
+   "reason": "'san Astráil' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2025-hl-p1-listening-b-c2-first",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r7",
+   "text": "Deiseanna fostaíochta níos fearr aici thall ansin/san Astráil",
+   "marks": 2,
+   "reason": "'san Astráil' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2025-hl-p1-listening-b-c2-first",
+   "criterion": "q3",
+   "part": "p1",
+   "row": "r11",
+   "text": "I dteagmháil le Liam/lena muintir/leo",
+   "marks": 1,
+   "reason": "'lena muintir'/'leo' alone lack the shared 'I dteagmháil' prefix."
+  },
+  {
+   "card": "irish-2025-hl-p1-listening-b-c2-second",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r1",
+   "text": "I gcomhlacht/comhlacht margaíochta",
+   "marks": 2,
+   "reason": "'I gcomhlacht/comhlacht' alternate inside 'margaíochta' answer."
+  },
+  {
+   "card": "irish-2025-hl-p2-reading-a-q1",
+   "criterion": "bii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Mar chomóradh ar éachtaí an cheoltóra/Rory",
+   "marks": 2,
+   "reason": "'Rory' alone lacks the shared 'Mar chomóradh ar' prefix."
+  },
+  {
+   "card": "irish-2025-hl-p2-reading-a-q4",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r2",
+   "text": "Lena mháistreacht chun ceol corraitheach a sheinm ar an ngiotár/ar an Fender Stratocaster",
+   "marks": 0,
+   "reason": "'ar an Fender Stratocaster' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2025-hl-p2-reading-a-q6",
+   "criterion": "point-1",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pointe eolais 1 (P1) = Míniú/léiriú ar an bpointe eolais, i d’fhocail féin",
+   "marks": 6,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2025-hl-p2-reading-a-q6",
+   "criterion": "point-2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pointe eolais 2 (P2) = Míniú/léiriú ar an bpointe eolais, i d’fhocail féin",
+   "marks": 6,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2025-hl-p2-reading-b-q6",
+   "criterion": "point-1",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pointe eolais 1 (P1) = Míniú/léiriú ar an bpointe eolais, i d’fhocail féin",
+   "marks": 6,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2025-hl-p2-reading-b-q6",
+   "criterion": "point-2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pointe eolais 2 (P2) = Míniú/léiriú ar an bpointe eolais, i d’fhocail féin",
+   "marks": 6,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2025-hl-p2-poetry-3a-a",
+   "criterion": "eolas-iii",
+   "part": "p1",
+   "row": "r2",
+   "text": "An mheadaracht: amhrán nó bunaithe ar mheadaracht an amhráin nó meadaracht/véarsaíocht aiceanta nó ré-aithris ar an Ochtfhoclach Pointe amháin eolais",
+   "marks": 3,
+   "reason": "Scheme criterion prose about metre; slash is inside a description."
+  },
+  {
+   "card": "irish-2024-hl-p2-reading-a-q2-a",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r1",
+   "text": "Stop a chur le meath an daonra ar na hoileáin trí na coinníollacha a chruthú a spreagfaidh daoine chun fanacht ar na hoileáin/chun bogadh chucu",
+   "marks": 3,
+   "reason": "'chun bogadh chucu' alone lacks the long shared prefix."
+  },
+  {
+   "card": "irish-2024-hl-p2-reading-b-q2-bii",
+   "criterion": "bii",
+   "part": "p1",
+   "row": "r1",
+   "text": "D’éirigh leis an ríomhaire sin an lámh in uachtar a fháil ar churadh fichille an domhain/Garry Kasparov",
+   "marks": 2,
+   "reason": "'Garry Kasparov' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-a-f1-q2",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r5",
+   "text": "Teastas i sláinteachas/i sláinte bhia/i mbia sláintiúil/i mbia",
+   "marks": 1,
+   "reason": "Phrase alternation after the shared 'Teastas' prefix."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-a-f2-q2",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Lóistín a roinnt le cainteoirí Gaeilge/le Gaeilgeoirí (eile)",
+   "marks": 2,
+   "reason": "'le Gaeilgeoirí (eile)' alone lacks the shared prefix."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-a-f2-q2",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r4",
+   "text": "(A bheith) páirteach/páirt in imeachtaí Gaelacha/Gaeilge",
+   "marks": 2,
+   "reason": "Shared bracket and word alternations inside one answer."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-b-c1-first-q2",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r9",
+   "text": "Bhris/ghortaigh sé a rúitín",
+   "marks": 2,
+   "reason": "Verb alternation inside 'sé a rúitín'."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-b-c1-second-q1",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "(Saoire) rothaíochta/rotha(i)r/rothaí/rothaithe",
+   "marks": 2,
+   "reason": "Shared bracket '(Saoire)' and word-form alternation."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-b-c2-first-q2",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r2",
+   "text": "Mhothaigh/bhraith/bhí sí an-neirbhíseach",
+   "marks": 2,
+   "reason": "Verb alternation inside '... sí (an-)neirbhíseach'."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-b-c2-first-q2",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r3",
+   "text": "Mhothaigh/bhraith/bhí sí neirbhíseach",
+   "marks": 1,
+   "reason": "Verb alternation inside '... sí (an-)neirbhíseach'."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-b-c2-second-q1",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "(Go mbeadh sé) i láthair i gceann de na tithe tábhairne/i dteach tábhairne oíche Dé Máirt",
+   "marks": 2,
+   "reason": "Shared bracketed prefix and phrase alternation inside one answer."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-b-c2-second-q1",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r2",
+   "text": "Go mbeadh sé (i láthair) i gceann de na tithe tábhairne/I dteach tábhairne oíche Dé Máirt",
+   "marks": 2,
+   "reason": "Shared bracketed prefix and phrase alternation inside one answer."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-b-c2-second-q1",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r3",
+   "text": "(Go mbeadh sé) i láthair i gceann de na tithe tábhairne/i dteach tábhairne",
+   "marks": 1,
+   "reason": "Shared bracketed prefix and phrase alternation inside one answer."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-b-c2-second-q1",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r5",
+   "text": "Go mbeadh sé (i láthair) i gceann de na tithe tábhairne/i dteach tábhairne",
+   "marks": 1,
+   "reason": "Shared bracketed prefix and phrase alternation inside one answer."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-c-p2-q1",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Ar an aonú lá is fiche de mhí na Samhna/de Shamhain",
+   "marks": 2,
+   "reason": "Date: 'de Shamhain' alone lacks the shared date prefix."
+  },
+  {
+   "card": "irish-2026-hl-p1-listening-c-p2-q2",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r8",
+   "text": "Níos mó suime (a chur) i gcúrsaí folláine/i bhfolláine",
+   "marks": 2,
+   "reason": "'i bhfolláine' alone lacks the shared prefix."
+  },
+  {
+   "card": "irish-2026-hl-p2-reading-a-q6-b",
+   "criterion": "point-1",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pointe eolais 1 (P1) = Míniú/léiriú ar an bpointe eolais, i d’fhocail féin",
+   "marks": 6,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2026-hl-p2-reading-a-q6-b",
+   "criterion": "point-2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pointe eolais 2 (P2) = Míniú/léiriú ar an bpointe eolais, i d’fhocail féin",
+   "marks": 6,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2026-hl-p2-reading-a-q6-b-1",
+   "criterion": "point-1",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pointe eolais 1 (P1) = Míniú/léiriú ar an bpointe eolais, i d’fhocail féin",
+   "marks": 6,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2026-hl-p2-reading-a-q6-b-2",
+   "criterion": "point-2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pointe eolais 2 (P2) = Míniú/léiriú ar an bpointe eolais, i d’fhocail féin",
+   "marks": 6,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2026-hl-p2-reading-a-q6",
+   "criterion": "point-1",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pointe eolais 1 (P1) = Míniú/léiriú ar an bpointe eolais, i d’fhocail féin",
+   "marks": 6,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2026-hl-p2-reading-a-q6",
+   "criterion": "point-2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pointe eolais 2 (P2) = Míniú/léiriú ar an bpointe eolais, i d’fhocail féin",
+   "marks": 6,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2026-hl-p2-reading-b-q5-bii",
+   "criterion": "bii",
+   "part": "p1",
+   "row": "r4",
+   "text": "Uaschúrsáil ar dhramhábhair agus/nó ar earraí seanchaite",
+   "marks": 1,
+   "reason": "'agus/nó' inside one answer."
+  },
+  {
+   "card": "irish-2026-hl-p2-reading-b-q6-b",
+   "criterion": "reason-1",
+   "part": "p1",
+   "row": "r1",
+   "text": "Fáth 1 (F1) = Míniú/léiriú ar an bhfáth, i d’fhocail féin",
+   "marks": 5,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2026-hl-p2-reading-b-q6-b",
+   "criterion": "reason-2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Fáth 2 (F2) = Míniú/léiriú ar an bhfáth, i d’fhocail féin",
+   "marks": 5,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2026-hl-p2-reading-b-q5",
+   "criterion": "bii",
+   "part": "p1",
+   "row": "r4",
+   "text": "Uaschúrsáil ar dhramhábhair agus/nó ar earraí seanchaite",
+   "marks": 1,
+   "reason": "'agus/nó' inside one answer."
+  },
+  {
+   "card": "irish-2026-hl-p2-reading-b-q6",
+   "criterion": "reason-1",
+   "part": "p1",
+   "row": "r1",
+   "text": "Fáth 1 (F1) = Míniú/léiriú ar an bhfáth, i d’fhocail féin",
+   "marks": 5,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2026-hl-p2-reading-b-q6",
+   "criterion": "reason-2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Fáth 2 (F2) = Míniú/léiriú ar an bhfáth, i d’fhocail féin",
+   "marks": 5,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2025-hl-p2-reading-a-q1-bii",
+   "criterion": "bii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Mar chomóradh ar éachtaí an cheoltóra/Rory",
+   "marks": 2,
+   "reason": "'Rory' alone lacks the shared 'Mar chomóradh ar' prefix."
+  },
+  {
+   "card": "irish-2025-hl-p2-reading-a-q4-a",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r2",
+   "text": "Lena mháistreacht chun ceol corraitheach a sheinm ar an ngiotár/ar an Fender Stratocaster",
+   "marks": 0,
+   "reason": "'ar an Fender Stratocaster' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2025-hl-p2-reading-a-q6-b",
+   "criterion": "point-1",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pointe eolais 1 (P1) = Míniú/léiriú ar an bpointe eolais, i d’fhocail féin",
+   "marks": 6,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2025-hl-p2-reading-a-q6-b",
+   "criterion": "point-2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pointe eolais 2 (P2) = Míniú/léiriú ar an bpointe eolais, i d’fhocail féin",
+   "marks": 6,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2025-hl-p2-reading-a-q6-b-1",
+   "criterion": "point-1",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pointe eolais 1 (P1) = Míniú/léiriú ar an bpointe eolais, i d’fhocail féin",
+   "marks": 6,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2025-hl-p2-reading-a-q6-b-2",
+   "criterion": "point-2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pointe eolais 2 (P2) = Míniú/léiriú ar an bpointe eolais, i d’fhocail féin",
+   "marks": 6,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2025-hl-p2-reading-b-q6-b",
+   "criterion": "point-1",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pointe eolais 1 (P1) = Míniú/léiriú ar an bpointe eolais, i d’fhocail féin",
+   "marks": 6,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2025-hl-p2-reading-b-q6-b",
+   "criterion": "point-2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pointe eolais 2 (P2) = Míniú/léiriú ar an bpointe eolais, i d’fhocail féin",
+   "marks": 6,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2025-hl-p2-reading-b-q6-b-1",
+   "criterion": "point-1",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pointe eolais 1 (P1) = Míniú/léiriú ar an bpointe eolais, i d’fhocail féin",
+   "marks": 6,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2025-hl-p2-reading-b-q6-b-2",
+   "criterion": "point-2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pointe eolais 2 (P2) = Míniú/léiriú ar an bpointe eolais, i d’fhocail féin",
+   "marks": 6,
+   "reason": "Criterion prose 'Míniú/léiriú'; slash is inside one description."
+  },
+  {
+   "card": "irish-2023-hl-p2-reading-b-q6-b",
+   "criterion": "point-1",
+   "part": "p1",
+   "row": "r1",
+   "text": "B’fhiú/Níorbh fhiú… Pointe eolais 1 = Plé ar an bpointe le tagairt chruinn as an sliocht mar thacú leis",
+   "marks": 5,
+   "reason": "Scheme criterion prose (B'fhiú/Níorbh fhiú opening)."
+  },
+  {
+   "card": "irish-2022-hl-p2-reading-b-q1-bi",
+   "criterion": "bi",
+   "part": "p1",
+   "row": "r2",
+   "text": "Meallann sí ceoltóirí/amhránaithe/damhsóirí ó gach cearn den tír",
+   "marks": 2,
+   "reason": "Nouns alternate inside 'Meallann sí ...' with a shared prefix."
+  },
+  {
+   "card": "irish-2022-hl-p2-reading-b-q1-bi",
+   "criterion": "bi",
+   "part": "p1",
+   "row": "r3",
+   "text": "Meallann sí ceoltóirí/amhránaithe/damhsóirí ó thíortha thar lear",
+   "marks": 2,
+   "reason": "Nouns alternate inside 'Meallann sí ...' with a shared prefix."
+  },
+  {
+   "card": "irish-2022-hl-p2-reading-b-q1-bi",
+   "criterion": "bi",
+   "part": "p1",
+   "row": "r4",
+   "text": "Meallann sí ceoltóirí/amhránaithe/damhsóirí",
+   "marks": 1,
+   "reason": "Nouns alternate inside 'Meallann sí ...' with a shared prefix."
+  },
+  {
+   "card": "irish-2019-hl-p1-listening-b-c2-second",
+   "criterion": "q2",
+   "part": "p1",
+   "row": "r2",
+   "text": "Chun a bheith in am don ollscoil/don choláiste",
+   "marks": 1,
+   "reason": "'don choláiste' alone lacks the shared 'Chun a bheith in am' prefix."
+  },
+  {
+   "card": "irish-2018-hl-p2-literature-4-a",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "4A. An Triail “Tugtar léargas sa dráma An Triail ar an gcaoi chruálach mhíthrócaireach ar caitheadh le máthair neamhphósta in Éirinn sna seascaidí.” Déan plé ar an ráiteas sin. Treoir: Plé a dhéanamh ar chás Mháire…í torrach ach gan a bheith pósta…mar a chaith na carachtair (na pearsana) eile sa dráma léi… Treoir: Carachtar (pearsa) amháin luaite agus pléite, tá an freagra easnamhach. Déan an freagra a mharcáil mar seo a leanas: Eolas (35-10) (25) = Gaeilge (5) = Treoracha: Iarrtar ar na hiarrthóirí plé a dhéanamh ar an ráiteas agus eolas/tuairimí a léiriú sa fhreagra agus úsáid a bhaint as samplaí cruinne, téagartha ón téacs. Déantar an freagra a mheas mar aonad agus an t-eolas a mharcáil as 35 marc agus an Ghaeilge san iarracht a mheas as 5 mharc.",
+   "marks": 35,
+   "reason": "Literature band/instruction prose; 'eolas/tuairimí' and 'Lag/ An-lag' sit inside scheme text."
+  },
+  {
+   "card": "irish-2018-hl-p2-literature-4-b",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "4B. A Thig Ná Tit Orm “Sa dírbheathaisnéis A Thig Ná Tit Orm, tugann Maidhc Dainín cuntas spéisiúil dúinn ar na daoine ina theaghlach agus sa phobal timpeall air.” Déan plé ar an ráiteas sin. Treoir: Plé a dhéanamh ar bheirt, ar a laghad, de na daoine i dteaghlach Mhaidhc nó sa phobal timpeall air… Treoir: Carachtar (pearsa) amháin luaite agus pléite, tá an freagra easnamhach. Déan an freagra a mharcáil mar seo a leanas: Eolas (35-10) (25) = Gaeilge (5) = Treoracha: Iarrtar ar na hiarrthóirí plé a dhéanamh ar an ráiteas agus eolas/tuairimí a léiriú sa fhreagra agus úsáid a bhaint as samplaí cruinne, téagartha ón téacs. Déantar an freagra a mheas mar aonad agus an t-eolas a mharcáil as 35 marc agus an Ghaeilge san iarracht a mheas as 5 mharc.",
+   "marks": 35,
+   "reason": "Literature band/instruction prose; 'eolas/tuairimí' and 'Lag/ An-lag' sit inside scheme text."
+  },
+  {
+   "card": "irish-2018-hl-p2-literature-4-c",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "4C. Tóraíocht Dhiarmada agus Ghráinne “Tugtar léiriú éifeachtach dúinn ar an bpáirt thábhachtach a bhí ag na carachtair (na pearsana) Aonghus an Bhrogha agus Muadhán sa Tóraíocht.” Déan plé ar an ráiteas sin. Treoir: Plé cuimsitheach ar Aonghus an Bhrogha agus ar Mhuadhán agus léiriú ar a dtábhacht. Treoir: Duine amháin den bheirt pléite, tá an freagra easnamhach. Déan an freagra a mharcáil mar seo a leanas: Eolas (35-10) (25) = Gaeilge (5) = Treoracha: Iarrtar ar na hiarrthóirí plé a dhéanamh ar an ráiteas agus eolas/tuairimí a léiriú sa fhreagra agus úsáid a bhaint as samplaí cruinne, téagartha ón téacs. Déantar an freagra a mheas mar aonad agus an t-eolas a mharcáil as 35 marc agus an Ghaeilge san iarracht a mheas as 5 mharc.",
+   "marks": 35,
+   "reason": "Literature band/instruction prose; 'eolas/tuairimí' and 'Lag/ An-lag' sit inside scheme text."
+  },
+  {
+   "card": "irish-2018-hl-p2-literature-4-d",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "4D. Gafa “Tá an t-amhras agus an míshuaimhneas le brath go minic sa chaidreamh idir na carachtair (na pearsana) éagsúla sa sliocht as an úrscéal Gafa.” Déan plé ar an ráiteas sin. Treoir: Plé cuimsitheach a dhéanamh ar an amhras agus ar an míshuaimhneas sa chaidreamh idir na carachtair (na pearsana) éagsúla i bhfianaise na n-imeachtaí sa sliocht as an úrscéal. Treoracha: Iarrtar ar na hiarrthóirí plé a dhéanamh ar an ráiteas agus eolas/tuairimí a léiriú sa fhreagra agus úsáid a bhaint as samplaí cruinne, téagartha ón téacs. Déantar an freagra a mheas mar aonad agus an t-eolas a mharcáil as 35 marc agus an Ghaeilge san iarracht a mheas as 5 mharc.",
+   "marks": 35,
+   "reason": "Literature band/instruction prose; 'eolas/tuairimí' and 'Lag/ An-lag' sit inside scheme text."
+  },
+  {
+   "card": "irish-2014-hl-p2-reading-b-q1-a",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r1",
+   "text": "Ag breathnú roimhe/roimpi ar an Debs mar shampla",
+   "marks": 0,
+   "reason": "Pronoun alternation roimhe/roimpi inside one sentence."
+  },
+  {
+   "card": "irish-2014-hl-p2-reading-b-q1",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r1",
+   "text": "Ag breathnú roimhe/roimpi ar an Debs mar shampla",
+   "marks": 0,
+   "reason": "Pronoun alternation roimhe/roimpi inside one sentence."
+  },
+  {
+   "card": "irish-2012-hl-p1-listening-b-c1-second",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is maith linn/leo an scoil",
+   "marks": 2,
+   "reason": "Pronoun alternation linn/leo (and é/í) inside one answer."
+  },
+  {
+   "card": "irish-2012-hl-p1-listening-b-c1-second",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r2",
+   "text": "Is maith linn/leo é/í",
+   "marks": 2,
+   "reason": "Pronoun alternation linn/leo (and é/í) inside one answer."
+  },
+  {
+   "card": "irish-2012-hl-p1-listening-b-c1-second",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r4",
+   "text": "Is maith linn/leo",
+   "marks": 2,
+   "reason": "Pronoun alternation linn/leo (and é/í) inside one answer."
+  },
+  {
+   "card": "irish-2011-hl-p1-reading-a-q3-b",
+   "criterion": "b-treithe",
+   "part": "p1",
+   "row": "r2",
+   "text": "Is dócha go bhfuil tréithe eile intuigthe/inghlachta……..inspioráideach…. “spiorad na saoirse”iontu…… láidir….cróga….tírghrách……",
+   "marks": 2,
+   "reason": "Scheme prose; 'intuigthe/inghlachta' inside a sentence."
+  },
+  {
+   "card": "irish-2011-hl-p1-reading-a-q3",
+   "criterion": "b-treithe",
+   "part": "p1",
+   "row": "r2",
+   "text": "Is dócha go bhfuil tréithe eile intuigthe/inghlachta……..inspioráideach…. “spiorad na saoirse”iontu…… láidir….cróga….tírghrách……",
+   "marks": 2,
+   "reason": "Scheme prose; 'intuigthe/inghlachta' inside a sentence."
+  },
+  {
+   "card": "irish-2010-hl-listening-a-f1",
+   "criterion": "q3a",
+   "part": "p1",
+   "row": "r3",
+   "text": "Urraíocht a fháil: (ná glac le orr/oir.)",
+   "marks": 1,
+   "reason": "Slash is inside a marker's note ('orr/oir.')."
+  },
+  {
+   "card": "irish-2010-hl-listening-a-f3",
+   "criterion": "q3b",
+   "part": "p1",
+   "row": "r2",
+   "text": "Scríobh/déan teagmháil le Goal, Bosca OP 19, Dún Laoghaire, Co. B.Á.C",
+   "marks": 2,
+   "reason": "Verb alternation inside one address sentence."
+  },
+  {
+   "card": "irish-2010-hl-listening-a-f3",
+   "criterion": "q3b",
+   "part": "p1",
+   "row": "r5",
+   "text": "Seol ríomhphost/r-phost/e-phost chuig Goal",
+   "marks": 1,
+   "reason": "Noun alternation inside 'Seol ... chuig Goal'."
+  },
+  {
+   "card": "irish-2010-hl-p2-prose-1b",
+   "criterion": "eolas-a",
+   "part": "p1",
+   "row": "r2",
+   "text": "Dhá cheann de na gnéithe seo a leanas: (a) an suíomh is fearr leat ann agus an chaoi a gcuirtear le chéile é; (b) an radharc is fearr leat agus an modh a léirítear é; (c) an phearsa is fearr leat agus an chaoi a gcuirtear i láthair é/í; (d) cé chomh sásúil is atá críoch an scannáin. Teideal an scannáin agus ainm an údair. Ionramháil Ábhair",
+   "marks": 22,
+   "reason": "Scheme criterion prose; 'é/í' pronoun alternation."
+  },
+  {
+   "card": "irish-2021-ol-p1-listening-b-c2",
+   "criterion": "m1-q2",
+   "part": "p1",
+   "row": "r2",
+   "text": "Amhrán/Amhráin a chanadh",
+   "marks": 3,
+   "reason": "'Amhráin a chanadh' shares the suffix; 'Amhrán' alone is not the printed answer."
+  },
+  {
+   "card": "irish-2021-ol-p2-reading-a-q1",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r5",
+   "text": "Is féidir féachaint ar fhíseáin ar an bhfón cliste/air",
+   "marks": 0,
+   "reason": "'air' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2021-ol-p2-reading-a-q1",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r6",
+   "text": "Is féidir éisteacht le ceol ar an bhfón cliste/air",
+   "marks": 0,
+   "reason": "'air' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2022-ol-p2-reading-a-q1",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r4",
+   "text": "Sa bhliain 1800/tar éis Acht an Aontais/dúnadh an pharlaimint i mBaile Átha Cliath agus bhí ar Hans (agus ar na Feisirí Parlaiminte eile) bogadh go Westminster",
+   "marks": 0,
+   "reason": "Time phrases alternate inside one long sentence."
+  },
+  {
+   "card": "irish-2022-ol-p2-reading-a-q1",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r1",
+   "text": "Thóg sé Uimhir a Sé/an teach ar cíos ó Anne Segrave = 2 phíosa eolais",
+   "marks": 0,
+   "reason": "'an teach ar cíos ...' shares the prefix and suffix."
+  },
+  {
+   "card": "irish-2022-ol-p2-reading-b-q1",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r3",
+   "text": "Bíonn deis iontach ag daoine a bheith cruthaitheach nuair a bhíonn siad ag cumadh/ag scríobh an cheoil",
+   "marks": 0,
+   "reason": "'ag scríobh an cheoil' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2022-ol-p2-reading-b-q1",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r5",
+   "text": "Baineann daoine taitneamh as lá a chaitheamh lena gcairde ag ceolchoirm/ag féile cheoil",
+   "marks": 0,
+   "reason": "'ag féile cheoil' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2022-ol-p2-reading-b-q5",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r8",
+   "text": "Roinneann siad amhráin/seinnliostaí lena chéile ar na hardáin shóisialta éagsúla",
+   "marks": 0,
+   "reason": "Noun alternation inside one sentence."
+  },
+  {
+   "card": "irish-2022-ol-p2-reading-b-q5",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r1",
+   "text": "Ní cheannaíonn daoine an méid céanna ceirníní/dlúthdhioscaí anois",
+   "marks": 0,
+   "reason": "Noun alternation inside one sentence."
+  },
+  {
+   "card": "irish-2023-ol-p1-listening-a-f1",
+   "criterion": "q1b",
+   "part": "p1",
+   "row": "r7",
+   "text": "Scéalta/scéal Gaeilge",
+   "marks": 3,
+   "reason": "'scéal Gaeilge' shares the suffix 'Gaeilge'; 'Scéalta' alone is not the printed answer."
+  },
+  {
+   "card": "irish-2023-ol-p1-listening-b-c2",
+   "criterion": "m1-q2",
+   "part": "p1",
+   "row": "r1",
+   "text": "Ceithre/4 uair an chloig",
+   "marks": 3,
+   "reason": "'Ceithre' alone lacks the shared 'uair an chloig'."
+  },
+  {
+   "card": "irish-2023-ol-p2-reading-b-q3",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r2",
+   "text": "Taispeánadh ar na scáileáin den chéad uair é i mí Dheireadh Fómhair 2022/in 2022 = píosa amháin eolais",
+   "marks": 0,
+   "reason": "Date phrase alternation inside one sentence."
+  },
+  {
+   "card": "irish-2023-ol-p2-reading-b-q4",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r1",
+   "text": "Chun comóradh a dhéanamh ar imeachtaí an lae i 1922 nuair a threoraigh Michael Staines/an chéad Choimisinéir ar an nGarda Síochána, fórsa nua gardaí isteach trí gheataí an chaisleáin (le dualgas póilíneachta an stáit nua a ghlacadh ar láimh go foirmiúil ó na Sasanaigh)",
+   "marks": 5,
+   "reason": "Name alternation inside one long sentence."
+  },
+  {
+   "card": "irish-2023-ol-p2-reading-b-q5",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r2",
+   "text": "Beidh na feithiclí nua níos éifeachtúla ná na feithiclí díosail/peitril",
+   "marks": 0,
+   "reason": "Adjective alternation inside one sentence."
+  },
+  {
+   "card": "irish-2024-ol-p2-reading-b-q2",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r1",
+   "text": "Cuireann déantóirí an mhearfhaisin na stíleanna céanna éadaí ar díol i siopaí na mórshráide/ar líne",
+   "marks": 5,
+   "reason": "'ar líne' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2024-ol-p2-reading-b-q3",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r4",
+   "text": "Iompraítear na héadaí chuig na siopaí ar fud an domhain ar eitleáin/ar longa (agus déanann na modhanna taistil sin dochar don timpeallacht)",
+   "marks": 0,
+   "reason": "'ar longa' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2025-ol-p1-listening-c-p2",
+   "criterion": "q1",
+   "part": "p1",
+   "row": "r2",
+   "text": "Léargas ar an obair atá déanta ag an eagraíocht/acu",
+   "marks": 1,
+   "reason": "'acu' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2025-ol-p2-reading-a-q1",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r1",
+   "text": "Ardaíodh an coire, agus an bhladhm Oilimpeach ar lasadh istigh ann, suas san aer/os cionn na cathrach agus é ceangailte de bhalún te",
+   "marks": 5,
+   "reason": "'os cionn na cathrach' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2025-ol-p2-reading-b-q3",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r2",
+   "text": "Tá meascán de thailte féir/de choillte/de lochanna/de bhogaigh (sa pháirc) (Aon dá cheann = 2 phíosa eolais)",
+   "marks": 0,
+   "reason": "Nouns alternate inside 'Tá meascán de ...'."
+  },
+  {
+   "card": "irish-2025-ol-p2-reading-b-q3",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r5",
+   "text": "Tá éagsúlacht mhór crann/plandaí le fáil sa pháirc",
+   "marks": 0,
+   "reason": "'plandaí' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2025-ol-p2-reading-b-q3",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r1",
+   "text": "Chun taitneamh a bhaint as an spás glas/as an tírdhreach nádúrtha/as an atmaisféar síochánta (inti) (Aon dá cheann = 2 chúis)",
+   "marks": 0,
+   "reason": "Phrases alternate inside 'Chun taitneamh a bhaint ...'."
+  },
+  {
+   "card": "irish-2026-ol-p1-listening-b-c2-second-q2",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r2",
+   "text": "(Banna le) 1018/míle ocht déag ceoltóir",
+   "marks": 3,
+   "reason": "Shared bracket and suffix 'ceoltóir'; '1018' alone is incomplete."
+  },
+  {
+   "card": "irish-2026-ol-p2-reading-a-q3-b",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r1",
+   "text": "Fíonn sí scairfeanna/pluideanna/rugaí glúine as olann nádúrtha",
+   "marks": 5,
+   "reason": "Nouns alternate after the shared 'Fíonn sí' prefix."
+  },
+  {
+   "card": "irish-2026-ol-p2-reading-a-q3-b",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r2",
+   "text": "Fíonn sí scairfeanna/pluideanna/rugaí glúine ar sheol traidisiúnta",
+   "marks": 5,
+   "reason": "Nouns alternate after the shared 'Fíonn sí' prefix."
+  },
+  {
+   "card": "irish-2026-ol-p2-reading-a-q3-b",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r4",
+   "text": "Fíonn sí scairfeanna/pluideanna/rugaí glúine",
+   "marks": 3,
+   "reason": "Nouns alternate after the shared 'Fíonn sí' prefix."
+  },
+  {
+   "card": "irish-2026-ol-p2-reading-a-q3",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r1",
+   "text": "Fíonn sí scairfeanna/pluideanna/rugaí glúine as olann nádúrtha",
+   "marks": 5,
+   "reason": "Nouns alternate after the shared 'Fíonn sí' prefix."
+  },
+  {
+   "card": "irish-2026-ol-p2-reading-a-q3",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r2",
+   "text": "Fíonn sí scairfeanna/pluideanna/rugaí glúine ar sheol traidisiúnta",
+   "marks": 5,
+   "reason": "Nouns alternate after the shared 'Fíonn sí' prefix."
+  },
+  {
+   "card": "irish-2026-ol-p2-reading-a-q3",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r4",
+   "text": "Fíonn sí scairfeanna/pluideanna/rugaí glúine",
+   "marks": 3,
+   "reason": "Nouns alternate after the shared 'Fíonn sí' prefix."
+  },
+  {
+   "card": "irish-2026-ol-p2-reading-b-q1-a",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r4",
+   "text": "Bhí siad ina gcónaí i nDún Dealgan/i gCo. Lú",
+   "marks": 0,
+   "reason": "'i gCo. Lú' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2026-ol-p2-reading-b-q1-a",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r5",
+   "text": "Is clann thallannach/cheolmhar iad",
+   "marks": 0,
+   "reason": "Adjective alternation inside 'Is clann ... iad'."
+  },
+  {
+   "card": "irish-2026-ol-p2-reading-b-q4-a",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r1",
+   "text": "Labhraíodh sí faoi na rudaí gránna a bhíonn ar siúl ar fud an domhain/sa lá atá inniu ann",
+   "marks": 0,
+   "reason": "'sa lá atá inniu ann' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2026-ol-p2-reading-b-q1",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r4",
+   "text": "Bhí siad ina gcónaí i nDún Dealgan/i gCo. Lú",
+   "marks": 0,
+   "reason": "'i gCo. Lú' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2026-ol-p2-reading-b-q1",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r5",
+   "text": "Is clann thallannach/cheolmhar iad",
+   "marks": 0,
+   "reason": "Adjective alternation inside 'Is clann ... iad'."
+  },
+  {
+   "card": "irish-2026-ol-p2-reading-b-q4",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r1",
+   "text": "Labhraíodh sí faoi na rudaí gránna a bhíonn ar siúl ar fud an domhain/sa lá atá inniu ann",
+   "marks": 0,
+   "reason": "'sa lá atá inniu ann' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2025-ol-p2-reading-a-q1-b",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r1",
+   "text": "Ardaíodh an coire, agus an bhladhm Oilimpeach ar lasadh istigh ann, suas san aer/os cionn na cathrach agus é ceangailte de bhalún te",
+   "marks": 5,
+   "reason": "'os cionn na cathrach' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2025-ol-p2-reading-b-q3-a",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r2",
+   "text": "Tá meascán de thailte féir/de choillte/de lochanna/de bhogaigh (sa pháirc) (Aon dá cheann = 2 phíosa eolais)",
+   "marks": 0,
+   "reason": "Nouns alternate inside 'Tá meascán de ...'."
+  },
+  {
+   "card": "irish-2025-ol-p2-reading-b-q3-a",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r5",
+   "text": "Tá éagsúlacht mhór crann/plandaí le fáil sa pháirc",
+   "marks": 0,
+   "reason": "'plandaí' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2025-ol-p2-reading-b-q3-b",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r1",
+   "text": "Chun taitneamh a bhaint as an spás glas/as an tírdhreach nádúrtha/as an atmaisféar síochánta (inti) (Aon dá cheann = 2 chúis)",
+   "marks": 0,
+   "reason": "Phrases alternate inside 'Chun taitneamh a bhaint ...'."
+  },
+  {
+   "card": "irish-2024-ol-p2-reading-b-q2-a",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r1",
+   "text": "Cuireann déantóirí an mhearfhaisin na stíleanna céanna éadaí ar díol i siopaí na mórshráide/ar líne",
+   "marks": 5,
+   "reason": "'ar líne' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2024-ol-p2-reading-b-q3-b",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r4",
+   "text": "Iompraítear na héadaí chuig na siopaí ar fud an domhain ar eitleáin/ar longa (agus déanann na modhanna taistil sin dochar don timpeallacht)",
+   "marks": 0,
+   "reason": "'ar longa' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2023-ol-p2-reading-b-q3-b",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r2",
+   "text": "Taispeánadh ar na scáileáin den chéad uair é i mí Dheireadh Fómhair 2022/in 2022 = píosa amháin eolais",
+   "marks": 0,
+   "reason": "Date phrase alternation inside one sentence."
+  },
+  {
+   "card": "irish-2023-ol-p2-reading-b-q4-b",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r1",
+   "text": "Chun comóradh a dhéanamh ar imeachtaí an lae i 1922 nuair a threoraigh Michael Staines/an chéad Choimisinéir ar an nGarda Síochána, fórsa nua gardaí isteach trí gheataí an chaisleáin (le dualgas póilíneachta an stáit nua a ghlacadh ar láimh go foirmiúil ó na Sasanaigh)",
+   "marks": 5,
+   "reason": "Name alternation inside one long sentence."
+  },
+  {
+   "card": "irish-2023-ol-p2-reading-b-q5-b",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r2",
+   "text": "Beidh na feithiclí nua níos éifeachtúla ná na feithiclí díosail/peitril",
+   "marks": 0,
+   "reason": "Adjective alternation inside one sentence."
+  },
+  {
+   "card": "irish-2022-ol-p2-reading-a-q1-a",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r4",
+   "text": "Sa bhliain 1800/tar éis Acht an Aontais/dúnadh an pharlaimint i mBaile Átha Cliath agus bhí ar Hans (agus ar na Feisirí Parlaiminte eile) bogadh go Westminster",
+   "marks": 0,
+   "reason": "Time phrases alternate inside one long sentence."
+  },
+  {
+   "card": "irish-2022-ol-p2-reading-a-q1-b",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r1",
+   "text": "Thóg sé Uimhir a Sé/an teach ar cíos ó Anne Segrave = 2 phíosa eolais",
+   "marks": 0,
+   "reason": "'an teach ar cíos ...' shares the prefix and suffix."
+  },
+  {
+   "card": "irish-2022-ol-p2-reading-b-q1-b",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r3",
+   "text": "Bíonn deis iontach ag daoine a bheith cruthaitheach nuair a bhíonn siad ag cumadh/ag scríobh an cheoil",
+   "marks": 0,
+   "reason": "'ag scríobh an cheoil' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2022-ol-p2-reading-b-q1-b",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r5",
+   "text": "Baineann daoine taitneamh as lá a chaitheamh lena gcairde ag ceolchoirm/ag féile cheoil",
+   "marks": 0,
+   "reason": "'ag féile cheoil' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2022-ol-p2-reading-b-q5-a",
+   "criterion": "a",
+   "part": "p1",
+   "row": "r8",
+   "text": "Roinneann siad amhráin/seinnliostaí lena chéile ar na hardáin shóisialta éagsúla",
+   "marks": 0,
+   "reason": "Noun alternation inside one sentence."
+  },
+  {
+   "card": "irish-2022-ol-p2-reading-b-q5-b",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r1",
+   "text": "Ní cheannaíonn daoine an méid céanna ceirníní/dlúthdhioscaí anois",
+   "marks": 0,
+   "reason": "Noun alternation inside one sentence."
+  },
+  {
+   "card": "irish-2021-ol-p2-reading-a-q1-b",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r5",
+   "text": "Is féidir féachaint ar fhíseáin ar an bhfón cliste/air",
+   "marks": 0,
+   "reason": "'air' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2021-ol-p2-reading-a-q1-b",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r6",
+   "text": "Is féidir éisteacht le ceol ar an bhfón cliste/air",
+   "marks": 0,
+   "reason": "'air' alone lacks the shared sentence."
+  },
+  {
+   "card": "irish-2020-ol-p2-poetry-3a-b",
+   "criterion": "eolas-i",
+   "part": "p2",
+   "row": "r6",
+   "text": "Tá na mná ag comhoibriú/ag cabhrú le chéile",
+   "marks": 2,
+   "reason": "'ag cabhrú le chéile' alone lacks 'Tá na mná'."
+  },
+  {
+   "card": "irish-2020-ol-p2-poetry-3a-b-i",
+   "criterion": "eolas",
+   "part": "p2",
+   "row": "r6",
+   "text": "Tá na mná ag comhoibriú/ag cabhrú le chéile",
+   "marks": 2,
+   "reason": "'ag cabhrú le chéile' alone lacks 'Tá na mná'."
+  },
+  {
+   "card": "irish-2020-ol-p2-poetry-3a-b-i-b",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r6",
+   "text": "Tá na mná ag comhoibriú/ag cabhrú le chéile",
+   "marks": 2,
+   "reason": "'ag cabhrú le chéile' alone lacks 'Tá na mná'."
+  },
+  {
+   "card": "irish-2019-ol-p1-listening-a-f2",
+   "criterion": "q2a",
+   "part": "p1",
+   "row": "r4",
+   "text": "báisteach/fearthainn throm",
+   "marks": 3,
+   "reason": "'báisteach' alone lacks the shared 'throm'."
+  },
+  {
+   "card": "irish-2019-ol-p1-listening-b-c1",
+   "criterion": "m2-q1",
+   "part": "p1",
+   "row": "r3",
+   "text": "Ní bhíonn gluaisteáin/carranna orthu",
+   "marks": 3,
+   "reason": "Noun alternation inside 'Ní bhíonn ... orthu'."
+  },
+  {
+   "card": "irish-2019-ol-p2-reading-b-q4",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r2",
+   "text": "Is scannán é faoi Joe Éinniú, an t‐amhránaí cáiliúil sean‐nóis/as Carna/as Contae na Gaillimhe",
+   "marks": 0,
+   "reason": "Phrases alternate after the shared sentence prefix."
+  },
+  {
+   "card": "irish-2019-ol-p2-reading-b-q4-b",
+   "criterion": "b",
+   "part": "p1",
+   "row": "r2",
+   "text": "Is scannán é faoi Joe Éinniú, an t‐amhránaí cáiliúil sean‐nóis/as Carna/as Contae na Gaillimhe",
+   "marks": 0,
+   "reason": "Phrases alternate after the shared sentence prefix."
+  },
+  {
+   "card": "irish-2018-ol-p1-listening-b-c1",
+   "criterion": "m2-q1",
+   "part": "p1",
+   "row": "r4",
+   "text": "Caint/eolas ó Focus Ireland",
+   "marks": 3,
+   "reason": "'eolas ó Focus Ireland' shares the suffix; 'Caint' alone is not the printed answer."
+  },
+  {
+   "card": "irish-2018-ol-p1-listening-b-c2",
+   "criterion": "m1-q2",
+   "part": "p1",
+   "row": "r2",
+   "text": "Ag obair/post san ospidéal",
+   "marks": 2,
+   "reason": "'Ag obair' alone lacks the shared 'san ospidéal'."
+  },
+  {
+   "card": "irish-2017-ol-p1-listening-b-c2",
+   "criterion": "m1-q2",
+   "part": "p1",
+   "row": "r5",
+   "text": "Bhí buamaí/ionsaithe ann",
+   "marks": 2,
+   "reason": "'ionsaithe ann' shares 'Bhí' and 'ann'."
+  },
+  {
+   "card": "irish-2017-ol-p2-poetry-3a-a",
+   "criterion": "eolas-iii",
+   "part": "p2",
+   "row": "r1",
+   "text": "Is/Ní réiteach sásúil é",
+   "marks": 1,
+   "reason": "'Is' alone is incomplete; shares 'réiteach sásúil é'."
+  },
+  {
+   "card": "irish-2017-ol-p2-poetry-3a-a-iii",
+   "criterion": "eolas",
+   "part": "p2",
+   "row": "r1",
+   "text": "Is/Ní réiteach sásúil é",
+   "marks": 1,
+   "reason": "'Is' alone is incomplete; shares 'réiteach sásúil é'."
+  },
+  {
+   "card": "irish-2017-ol-p2-poetry-3a-a-iii-b",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r1",
+   "text": "Is/Ní réiteach sásúil é",
+   "marks": 1,
+   "reason": "'Is' alone is incomplete; shares 'réiteach sásúil é'."
+  },
+  {
+   "card": "irish-2011-ol-p2-prose-roghnach-a-2",
+   "criterion": "eolas-i",
+   "part": "p1",
+   "row": "r1",
+   "text": "Eachtra is mó a/nár thaitin leat sa ghearrscannán",
+   "marks": 23,
+   "reason": "Relative particle a/nár inside one criterion."
+  },
+  {
+   "card": "irish-2011-ol-p2-prose-roghnach-a-2",
+   "criterion": "eolas-ii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pearsa a thaitin (nó nár thaitin) leat. Dhá fháth ar/nár thaitin sé leat.",
+   "marks": 10,
+   "reason": "Criterion prose; 'ar/nár' inside one sentence."
+  },
+  {
+   "card": "irish-2011-ol-p2-poetry-roghnach-a-1",
+   "criterion": "teideal",
+   "part": "p1",
+   "row": "r1",
+   "text": "Teideal an dáin/file a chum.",
+   "marks": 2,
+   "reason": "Criterion text: title and poet's name, not alternative answers."
+  },
+  {
+   "card": "irish-2011-ol-p2-poetry-roghnach-a-2",
+   "criterion": "teideal",
+   "part": "p1",
+   "row": "r1",
+   "text": "Teideal an dáin/ainm an fhile.",
+   "marks": 2,
+   "reason": "Criterion text: title and poet's name, not alternative answers."
+  },
+  {
+   "card": "irish-2011-ol-p2-poetry-roghnach-b-i",
+   "criterion": "teideal",
+   "part": "p1",
+   "row": "r1",
+   "text": "Teideal an dáin/ainm an fhile",
+   "marks": 2,
+   "reason": "Criterion text: title and poet's name, not alternative answers."
+  },
+  {
+   "card": "irish-2011-ol-p2-poetry-roghnach-b-ii",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r2",
+   "text": "Cuntas gairid ar íomhá a thaitin/nár thaitin leat",
+   "marks": 6,
+   "reason": "Criterion prose; 'a thaitin/nár thaitin' inside one sentence."
+  },
+  {
+   "card": "irish-2011-ol-p2-poetry-roghnach-b-ii",
+   "criterion": "teideal",
+   "part": "p1",
+   "row": "r1",
+   "text": "Teideal an dáin/ainm an fhile",
+   "marks": 2,
+   "reason": "Criterion text: title and poet's name, not alternative answers."
+  },
+  {
+   "card": "irish-2010-ol-p2-prose-ainmnithe-a-2",
+   "criterion": "eolas-ii",
+   "part": "p1",
+   "row": "r2",
+   "text": "Fáth ar/nár thaitin sé leat.",
+   "marks": 4,
+   "reason": "Criterion prose; 'ar/nár' inside one sentence."
+  },
+  {
+   "card": "irish-2010-ol-p2-prose-ainmnithe-a-2-ii",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r2",
+   "text": "Fáth ar/nár thaitin sé leat.",
+   "marks": 4,
+   "reason": "Criterion prose; 'ar/nár' inside one sentence."
+  },
+  {
+   "card": "irish-2010-ol-p2-prose-roghnach-a-1",
+   "criterion": "eolas-ii",
+   "part": "p1",
+   "row": "r2",
+   "text": "Fáth ar/nár thaitin sí leat",
+   "marks": 4,
+   "reason": "Criterion prose; 'ar/nár' inside one sentence."
+  },
+  {
+   "card": "irish-2010-ol-p2-prose-roghnach-a-2",
+   "criterion": "eolas-ii",
+   "part": "p1",
+   "row": "r1",
+   "text": "Pearsa a thaitin(nó nár thaitin)leat. Dhá fháth ar/nár thaitin sé leat.",
+   "marks": 10,
+   "reason": "Criterion prose; 'ar/nár' inside one sentence."
+  },
+  {
+   "card": "irish-2010-ol-p2-poetry-roghnach-a-1",
+   "criterion": "teideal",
+   "part": "p1",
+   "row": "r1",
+   "text": "Teideal an dáin/file a chum.",
+   "marks": 2,
+   "reason": "Criterion text: title and poet's name, not alternative answers."
+  },
+  {
+   "card": "irish-2010-ol-p2-poetry-roghnach-a-2",
+   "criterion": "teideal",
+   "part": "p1",
+   "row": "r1",
+   "text": "Teideal an dáin/ainm an fhile.",
+   "marks": 2,
+   "reason": "Criterion text: title and poet's name, not alternative answers."
+  },
+  {
+   "card": "irish-2010-ol-p2-poetry-roghnach-b-i",
+   "criterion": "teideal",
+   "part": "p1",
+   "row": "r1",
+   "text": "Teideal an dáin/ainm an fhile",
+   "marks": 2,
+   "reason": "Criterion text: title and poet's name, not alternative answers."
+  },
+  {
+   "card": "irish-2010-ol-p2-poetry-roghnach-b-ii",
+   "criterion": "eolas",
+   "part": "p1",
+   "row": "r2",
+   "text": "Cuntas gairid ar íomhá a thaitin/nár thaitin leat",
+   "marks": 6,
+   "reason": "Criterion prose; 'a thaitin/nár thaitin' inside one sentence."
+  },
+  {
+   "card": "irish-2010-ol-p2-poetry-roghnach-b-ii",
+   "criterion": "teideal",
+   "part": "p1",
+   "row": "r1",
+   "text": "Teideal an dáin/ainm an fhile",
+   "marks": 2,
+   "reason": "Criterion text: title and poet's name, not alternative answers."
+  },
+  {
+   "card": "irish-2011-fl-r-3b-4",
+   "criterion": "answer",
+   "part": "p1",
+   "row": "r4",
+   "text": "D’fhill sé abhaile (ó Londain/go Contae an Chláir)",
+   "marks": 6,
+   "reason": "Alternation inside the bracket of one answer."
+  },
+  {
+   "card": "irish-2013-fl-r-3c-4",
+   "criterion": "answer",
+   "part": "p1",
+   "row": "r2",
+   "text": "Chuir mé orm mo bhuataisí / Is shiúil mé amach gan náire (an dá líne)",
+   "marks": 6,
+   "reason": "Two lines of the poem quoted together are one answer ('an dá líne')."
+  },
+  {
+   "card": "irish-2014-fl-r-3c-2",
+   "criterion": "answer",
+   "part": "p1",
+   "row": "r2",
+   "text": "Is deir sí linn go minic / Nach mbeidh sí óg arís (an dá líne)",
+   "marks": 6,
+   "reason": "Two lines of the poem quoted together are one answer ('an dá líne')."
+  },
+  {
+   "card": "irish-2015-fl-a-5a",
+   "criterion": "answer",
+   "part": "p1",
+   "row": "r1",
+   "text": "Tirim / Gaofar = an chéad phictiúr",
+   "marks": 8,
+   "reason": "The slash names one picture ('= an chéad phictiúr'); the answer is the picture."
+  },
+  {
+   "card": "irish-2020-fl-r-3c-5",
+   "criterion": "answer",
+   "part": "p1",
+   "row": "r1",
+   "text": "Brostóidh an file/mé/sé/sí ar bord",
+   "marks": 6,
+   "reason": "Pronoun alternation inside one sentence."
+  },
+  {
+   "card": "irish-2020-fl-r-3c-5",
+   "criterion": "answer",
+   "part": "p1",
+   "row": "r2",
+   "text": "Beidh an file/mé/sé/sí compordach istigh",
+   "marks": 3,
+   "reason": "Pronoun alternation inside one sentence."
+  }
+ ]
+}

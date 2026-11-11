@@ -78,6 +78,7 @@ import higher2010Aural from './higher-2010-aural-authored.json';
 import higher2010P1 from './higher-2010-p1-authored.json';
 import higher2010P2 from './higher-2010-p2-authored.json';
 import { irishAnswersFor, stepSingleAnswerLadders } from './answers';
+import { splitSlashRows } from './slashSplits';
 import { closeBrackets, irishTariffsFor, stepPrintedScales } from './tariffs';
 import { resolveCurriculumSpecification } from '../../../../curriculumRegistry';
 
@@ -275,8 +276,8 @@ const cloneCriteria = (card: AuthoredIrishCard): IrishCriterion[] =>
   card.criteria.map(criterion => {
     const found = primaryAllocation(card, criterion) ?? derivedAllocation(card, criterion)
       ?? (pricedAward(criterion) ? freagraiAllocation(criterion) : undefined);
-    const allocation = found && closeBrackets(stepPrintedScales(stepSingleAnswerLadders(found), criterion.guidance,
-      card.criteria.flatMap(sibling => sibling.guidance)), criterion.guidance);
+    const allocation = found && splitSlashRows(card.id, criterion.id, closeBrackets(stepPrintedScales(stepSingleAnswerLadders(found),
+      criterion.guidance, card.criteria.flatMap(sibling => sibling.guidance)), criterion.guidance));
     return {
       ...criterion,
       permittedMarks: [...criterion.permittedMarks],

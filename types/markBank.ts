@@ -704,6 +704,10 @@ export interface IrishAnswerRow {
    * = 4 mharc + 4 mharc" places at 0, 4 or 8; "Tréith 1 = 13 mharc" with a
    * published band table places anywhere from 0 to 13. Including 0 and `marks`. */
   steps?: number[];
+  /** Rows sharing a group are the printed alternatives for ONE point: a slash-joined scheme row
+   * ("Tráchtaire spóirt/Gaeilgeoir/Ciarraíoch/…") cut into its items. A group counts once, at its
+   * best claimed row, so the part scores exactly as the joined row did. */
+  group?: string;
 }
 
 /** One sub-question of the scheme ("1. Cad atá á lorg…? 2 mharc") with its answers. */
