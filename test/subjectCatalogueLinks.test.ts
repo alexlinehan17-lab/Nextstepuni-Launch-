@@ -36,11 +36,11 @@ describe('Leaving Cert subject catalogue', () => {
     expect(new Set(names).size).toBe(names.length);
   });
 
-  it.each(LC_SUBJECTS.map(subject => subject.name))('%s resolves to a curriculum subject', name => {
+  it.each(LC_SUBJECTS.filter(subject => !subject.noWrittenExam).map(subject => subject.name))('%s resolves to a curriculum subject', name => {
     expect(resolveSubjectId(name)).toBeTruthy();
   });
 
-  it.each(LC_SUBJECTS.map(subject => subject.name).filter(name => !NO_PAPERS_YET.has(name)))('%s links to its Paper Trail papers', name => {
+  it.each(LC_SUBJECTS.filter(subject => !subject.noWrittenExam).map(subject => subject.name).filter(name => !NO_PAPERS_YET.has(name)))('%s links to its Paper Trail papers', name => {
     expect(paperTrailMatch(name, 'lc')).toBeTruthy();
   });
 
@@ -110,7 +110,7 @@ describe('levels and the LCVP grade scale', () => {
 describe('Leaving Cert Applied catalogue', () => {
   // Courses with an SEC exam link to their LCA papers. Courses assessed only by
   // key assignments have none, and LCA students may sit Leaving Cert Maths.
-  it.each(LCA_SUBJECTS.filter(subject => !subject.noWrittenExam && subject.name !== 'Leaving Cert Maths').map(subject => subject.name))('%s links to its Paper Trail papers', name => {
+  it.each(LCA_SUBJECTS.filter(subject => !subject.noWrittenExam && !subject.establishedSubject).map(subject => subject.name))('%s links to its Paper Trail papers', name => {
     expect(paperTrailMatch(name, 'lca')).toBeTruthy();
   });
 

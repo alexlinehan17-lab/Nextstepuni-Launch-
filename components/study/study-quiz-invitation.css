@@ -1,0 +1,45 @@
+/* The framed, two-column treatment from the My Journey introduction. */
+.sq-completion-stage { min-height:100vh; min-height:100dvh; display:grid; place-items:center; background:#fff; color:#666662; font:400 14px/1.6 'DM Sans',sans-serif; }
+.dark .sq-completion-stage { background:#222220; color:#c1c1bc; }
+.sqi-overlay { position:fixed; inset:0; z-index:210; display:flex; align-items:center; justify-content:center; padding:24px; background:rgb(25 25 23 / .55); backdrop-filter:blur(5px); font-family:'DM Sans',sans-serif; }
+.sqi-dialog { --sqi-bg:#fff; --sqi-ink:#292925; --sqi-muted:#666662; --sqi-line:#d9d9d5; width:min(820px,100%); max-height:calc(100dvh - 48px); overflow:auto; overscroll-behavior:contain; background:var(--sqi-bg); color:var(--sqi-ink); border:1.5px solid var(--sqi-ink); border-radius:22px; box-shadow:7px 7px 0 #292925; outline:none; isolation:isolate; }
+.sqi-header { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:18px 28px; border-bottom:1px solid var(--sqi-line); }
+.sqi-brand { font:850 25px/1 'DM Sans',sans-serif; letter-spacing:-1.2px; }
+.sqi-dialog .sqi-close { width:36px; height:36px; flex:none; padding:0; border:1px solid var(--sqi-line); border-radius:50%; display:grid; place-items:center; cursor:pointer; background:var(--sqi-bg); color:var(--sqi-ink); }
+.sqi-body { display:grid; grid-template-columns:1fr 1.1fr; }
+.sqi-story { padding:30px; border-right:1px solid var(--sqi-line); }
+.sqi-eyebrow { margin:0 0 20px; font:600 10px/1.5 'DM Sans',sans-serif; letter-spacing:.14em; text-transform:uppercase; color:var(--sqi-muted); }
+.sqi-story h2 { margin:0; font:800 clamp(36px,4.5vw,50px)/1.05 'DM Sans',sans-serif; letter-spacing:-.055em; color:var(--sqi-ink); }
+.sqi-art { margin-top:22px; }
+.sqi-art .crew-illustration,.sqi-art .crew-original { width:132px; height:132px; }
+.sqi-choice { padding:30px; }
+.sqi-question { margin:0; font:600 18px/1.5 'DM Sans',sans-serif; letter-spacing:-.02em; }
+.sqi-topic { display:flex; flex-direction:column; gap:5px; padding:16px 0; margin:20px 0 16px; border-block:1px solid var(--sqi-line); font:500 13px/1.5 'DM Sans',sans-serif; }
+.sqi-topic strong { font-weight:600; }
+.sqi-topic span,.sqi-note { color:var(--sqi-muted); }
+.sqi-note { margin:0; font:400 13px/1.65 'DM Sans',sans-serif; }
+.sqi-actions { display:grid; gap:10px; margin-top:22px; }
+.sqi-dialog .sqi-actions button { display:flex; align-items:center; justify-content:center; gap:20px; width:100%; min-height:46px; padding:12px 18px; border:1.5px solid var(--sqi-ink); border-radius:8px; font:600 14px/1.4 'DM Sans',sans-serif; white-space:normal; cursor:pointer; }
+.sqi-dialog .sqi-actions .sqi-accept { justify-content:space-between; background:var(--sqi-ink); color:var(--sqi-bg); box-shadow:none; border-color:var(--sqi-ink); }
+.sqi-dialog .sqi-actions .sqi-decline { background:var(--sqi-bg); color:var(--sqi-ink); }
+.sqi-dialog .sqi-actions button:hover { filter:brightness(.94); }
+.sqi-dialog .sqi-actions button:active { transform:translateY(1px); }
+.sqi-dialog button:focus-visible { outline:2px solid var(--sqi-ink); outline-offset:3px; }
+.sqi-reassurance { margin:18px 0 0; color:var(--sqi-muted); font:400 11px/1.6 'DM Sans',sans-serif; }
+.dark .sqi-dialog { --sqi-bg:#222220; --sqi-ink:#fff; --sqi-muted:#c1c1bc; --sqi-line:#52524d; box-shadow:7px 7px 0 #0008; }
+@media(max-width:600px) {
+  .sqi-overlay { padding:14px; }
+  .sqi-dialog { max-height:calc(100dvh - 28px); border-radius:18px; box-shadow:4px 4px 0 #292925; }
+  .sqi-header { padding:15px 20px; }
+  .sqi-brand { font-size:22px; }
+  .sqi-body { grid-template-columns:1fr; }
+  .sqi-story { position:relative; padding:22px; border-right:0; border-bottom:1px solid var(--sqi-line); }
+  .sqi-eyebrow { margin-bottom:15px; font-size:9px; }
+  .sqi-story h2 { font-size:34px; padding-right:75px; }
+  .sqi-art { position:absolute; right:14px; bottom:18px; margin:0; }
+  .sqi-art .crew-illustration,.sqi-art .crew-original { width:76px; height:76px; }
+  .sqi-choice { padding:22px; }
+  .sqi-question { font-size:16px; }
+  .sqi-topic { margin-top:16px; padding-block:12px; }
+  .sqi-actions { margin-top:18px; }
+}

@@ -95,7 +95,7 @@ import './viewer-chrome.css';
 import AnswerDesk from './AnswerDesk';
 import AnswerInk, {type AnswerInkProps,type InkTool} from './AnswerInk';
 import {useAnswerBook} from './useAnswerBook';
-import {loadAttemptFirst,saveAttemptFirst,loadDeskQuestion,saveDeskQuestion,keepFirstAttempt,hasResponse,type InkStroke,type AnswerRecord} from './answerDeskStore';
+import {loadDeskQuestion,saveDeskQuestion,keepFirstAttempt,hasResponse,type InkStroke,type AnswerRecord} from './answerDeskStore';
 
 /** The scheme panel's compact square ink buttons (option E) for its step and text-size controls. */
 const E_SQUARE = 'inline-flex items-center justify-center h-8 min-w-[32px] px-2 rounded-md border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 bg-white dark:bg-zinc-900 text-[#1A1A1A] dark:text-zinc-100 text-[12.5px] font-bold shadow-[2px_2px_0_#1A1A1A] dark:shadow-[2px_2px_0_#E4E4E7] transition-[transform,box-shadow] duration-150 hover:-translate-x-px hover:-translate-y-px hover:shadow-[3px_3px_0_#1A1A1A] dark:hover:shadow-[3px_3px_0_#E4E4E7] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none disabled:opacity-35 disabled:pointer-events-none';
@@ -228,7 +228,9 @@ const Viewer: React.FC<ViewerProps> = ({
   const audioSource = useMemo(() => topics ? frenchAudioForPaper(topics) : null, [topics]);
   const deskNs = storageNs ?? `anon|${paper.url}`;
   const book = useAnswerBook(deskNs);
-  const [attemptFirst,setAttemptFirst] = useState(() => loadAttemptFirst(deskNs));
+  // Opening a paper never opts the student into the answer desk. Saved work
+  // remains available when they explicitly enable it for this visit.
+  const [attemptFirst,setAttemptFirst] = useState(false);
   const [deskId,setDeskId] = useState(() => focusQuestion ?? loadDeskQuestion(deskNs) ?? `page:${initialPaperPage}`);
   const [deskCollapsed,setDeskCollapsed] = useState(false);
   const [deskWidth,setDeskWidth] = useState(43);
@@ -239,7 +241,6 @@ const Viewer: React.FC<ViewerProps> = ({
   const deskDrag = useRef<{pointer:number;end:number;extent:number;wide:boolean} | null>(null);
   const [inkTool,setInkTool] = useState<InkTool>('move');
   const [inkView,setInkView] = useState<'first'|'retry'>('retry');
-  const [preferenceProblem,setPreferenceProblem] = useState(false);
   const inkHistory = useRef<Record<string,InkStroke[][]>>({});
   const deskRecord = book.get(deskId);
   const [side, setSide] = useState<Side>(initialSide === 'scheme' && scheme ? 'scheme' : 'paper');
@@ -252,7 +253,7 @@ const Viewer: React.FC<ViewerProps> = ({
   const bump = useCallback(() => forceRender(n => n + 1), []);
 
   // ── answers (per-question marking-scheme crops) ──
-  const [answersOn, setAnswersOn] = useState(() => !loadAttemptFirst(deskNs) && initialAnswersOn);
+  const [answersOn, setAnswersOn] = useState(initialAnswersOn);
   const [answerMap, setAnswerMap] = useState<PaperAnswerMap | null>(null);
   const [answerState, setAnswerState] = useState<'idle' | 'loading' | 'error'>('idle');
   const [focusAnchorMap, setFocusAnchorMap] = useState<PaperAnswerMap | null>(null);
@@ -1190,7 +1191,7 @@ const Viewer: React.FC<ViewerProps> = ({
     if(loop)persistLoopPlace();
     setLoop(null);setLoopDone(false);setReveal(null);setAnswersOn(false);setToolsOpen(false);
     if(on)setSelfMarkOn(false);
-    setAttemptFirst(on);setPreferenceProblem(!saveAttemptFirst(deskNs,on));
+    setAttemptFirst(on);
   };
   // Keep the same point on the paper while changing the drawer's footprint.
   const captureDeskPlace = () => {
@@ -1604,7 +1605,6 @@ const Viewer: React.FC<ViewerProps> = ({
       {audioSource && <div className="shrink-0 bg-white border-b border-zinc-200">
         <div className="max-w-3xl mx-auto"><FrenchPaperAudio source={audioSource} /></div>
       </div>}
-      {preferenceProblem && <p role="alert" className="px-4 py-2 text-sm">Your choice works for this visit, but this browser could not remember it.</p>}
       <div ref={workspaceRef} className="pt-reader-workspace" style={{'--ad-size':`${deskSizePercent}%`} as React.CSSProperties} data-resizing={deskResizing||undefined} data-attempt={attemptFirst && side==='paper' || undefined} data-split={inlineScheme || undefined}>
       {/* Body */}
       {session.state === 'ready' && session.pdf ? (

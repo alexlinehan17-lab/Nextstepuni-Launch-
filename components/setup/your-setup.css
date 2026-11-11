@@ -88,7 +88,7 @@
 .nsu-your-setup .ys-week li span { font-weight: 700; font-size: 13px; }
 .nsu-your-setup .ys-week li small { font-size: 11px; }
 .nsu-your-setup .ys-week li[data-study] { border: 1.5px solid var(--foreground); color: var(--foreground); background: var(--background); }
-.nsu-your-setup .ys-week li[data-study] small { color: var(--nsu-orange); font-weight: 600; }
+.nsu-your-setup .ys-week li[data-study] small { color: var(--foreground); font-weight: 600; }
 
 .nsu-your-setup .ys-card [data-slot="tabs"] { margin-top: 18px; }
 
