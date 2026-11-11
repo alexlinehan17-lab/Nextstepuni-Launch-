@@ -64,6 +64,10 @@ import {
 import type { MarkBankGrade } from './scheduler';
 import { figureUrl } from '../../utils/figureUrl';
 import { getSubjectHex } from '../../utils/subjectColors';
+import { anyNHeading, marksWord, unclaimedName } from './sessionText';
+import RouteHeading from './RouteHeading';
+import FigureZoom from './FigureZoom';
+import { cardRoutes, routeDisplayOrder, routeHeadAt, routeSelection } from './routes';
 import WaysInPanel, {
   WaysInAttemptReview,
   emptyWaysInWork,
@@ -718,9 +722,7 @@ const MarkRowView: React.FC<{
                 card) has no value per option, and printed "undefined marks
                 each" on 34 shipped cards; it states the choice alone and the
                 card's footnote says how the marks are given. */}
-            {requiresAll ? `All ${g.claimMax} of these` : `Any ${g.claimMax} of these`}{g.perOptionSteps
-              ? ` — ${g.perOptionSteps.slice(0, g.claimMax).join(' then ')} marks`
-              : Number.isFinite(g.perOption) ? ` — ${g.perOption} marks each` : ''}
+            {anyNHeading(g)}
           </span>
           {showMarks && (
             <span style={{
@@ -915,7 +917,8 @@ const MarkRowView: React.FC<{
           {blockedReason ?? 'This mark only counts if the point above was right.'}
         </span>
       )}
-      {canSynonym && !claimed && (
+      {/* Not on a locked row: claiming it would switch the card to the route it belongs to. */}
+      {canSynonym && !claimed && !blocked && (
         <button
           type="button"
           onClick={() => onClaim(id, 'synonym')}
@@ -2403,15 +2406,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         if (r.parts) return partsMarksClaimed(r, rowId(r, i), rowClaims) === 0;
         return (rowClaims[rowId(r, i)] ?? 'no') === 'no';
       })
-      // The scheme's own wording, minus any "Label — " prefix the card carries.
-      // Except on a matching or true/false card, where the scheme's whole answer
-      // IS the prefix's tail — a letter or a verdict. "e · a · d" and
-      // "false · false · false" name nothing; there the label is the content.
-      // Case is kept as printed: a gamete "R" is not "r", nor "C H O" "c h o".
-      .map(r => {
-        const tail = r.verbatim.split(/\s[—-]\s/).pop() ?? r.verbatim;
-        return tail.trim().length <= 6 ? r.verbatim : tail;
-      });
+      // The scheme's own wording, minus an unambiguous "Label — " prefix;
+      // working, dates and ranges keep their minus signs (see sessionText).
+      .map(r => unclaimedName(r.verbatim));
   }, [assessmentCard, rowClaims]);
   /* Three names fit the band; beyond that the count carries it. Naming all six
      would wrap the bar and push the grade buttons around. */
@@ -2520,6 +2517,17 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     if (assessmentCard.questionBonus) all[assessmentCard.questionBonus.id] = 'yes';
     setClaims(prev => ({ ...prev, ...all }));
     setPicks(prev => ({ ...prev, ...allPicks }));
+  }, [assessmentCard, studyReview]);
+
+  /** "Select all" on one answer route: only one route scores (routes.ts). */
+  const claimRoute = useCallback((route: string) => {
+    if (!assessmentCard || !isPointCard(assessmentCard)) return;
+    studyReview?.onCue('tap');
+    setSchemeInteracted(true);
+    const chosen = routeSelection(assessmentCard.rows, route);
+    if (assessmentCard.questionBonus) chosen.claims[assessmentCard.questionBonus.id] = 'yes';
+    setClaims(prev => ({ ...prev, ...chosen.claims }));
+    setPicks(prev => ({ ...prev, ...chosen.picks }));
   }, [assessmentCard, studyReview]);
 
   const advanceStudy = useCallback((result?: SessionCardResult) => {
@@ -2689,7 +2697,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           by a declared edge rather than adrift in a wide window. */}
       {studyReview?.banner}
       {paperLayout ? <header className="mb-paper-session-heading">
-        <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle ref={studyTitleRef} tabIndex={studyReview ? -1 : undefined}>{studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{assessmentCard.totalMarks} marks · Question {studyReview ? position + 1 : Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
+        <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle ref={studyTitleRef} tabIndex={studyReview ? -1 : undefined}>{studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{assessmentCard.totalMarks} {marksWord(assessmentCard.totalMarks)} · Question {studyReview ? position + 1 : Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
         <div><Button variant="outline" aria-label={expanded?'Contract to compact view':'Expand to full screen'} aria-pressed={expanded} onClick={()=>setExpanded(value=>!value)}>{expanded?<Minimize2 size={16}/>:<Maximize2 size={16}/>}<span>{expanded?'Contract':'Expand'}</span></Button><Button ref={leaveButtonRef} variant="ghost" size="icon" aria-label="Close practice" onClick={openExitConfirmation}><X size={18}/></Button></div>
       </header> : <div style={{
         position: 'sticky', top: 0, zIndex: 3,
@@ -2700,12 +2708,14 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           <span>{subjectLabel} · {assessmentCard.level === 'higher' ? 'HL' : assessmentCard.level === 'common' ? 'CL' : 'OL'}</span>
           <strong aria-label={`${Math.min(distinctDone + 1, exerciseTotal)} of ${exerciseTotal} this review`}>{Math.min(distinctDone + 1, exerciseTotal)} <small>/ {exerciseTotal}</small></strong>
         </div> : (
-        <div style={{
+        <div className="mb-session-bar" style={{
           maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '0 16px',
           height: 58, display: 'flex', alignItems: 'center', gap: 14,
         }}>
-          <ActionButton ref={leaveButtonRef} intent="secondary" onClick={openExitConfirmation}>
-            <LogOut size={16} aria-hidden="true" /> Leave review
+          {/* Icon-only on a phone (mark-bank-session-paper.css): the words wrapped
+              to two lines there and squeezed the subject to "Econo…". */}
+          <ActionButton ref={leaveButtonRef} intent="secondary" className="mb-session-leave" aria-label="Leave review" onClick={openExitConfirmation}>
+            <LogOut size={16} aria-hidden="true" /><span className="mb-session-leave-label">Leave review</span>
           </ActionButton>
 
           {/* One line where four stacked headings used to be. */}
@@ -2728,10 +2738,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap', textAlign: 'right',
           }}>
             <span style={{ display: 'block' }}>
-              {Math.min(distinctDone + 1, exerciseTotal)} of {exerciseTotal} this review
+              <span className="mb-session-count-long">{Math.min(distinctDone + 1, exerciseTotal)} of {exerciseTotal} this review</span>
+              <span className="mb-session-count-short">{Math.min(distinctDone + 1, exerciseTotal)} of {exerciseTotal}</span>
             </span>
             {reviewPoolTotal !== undefined && reviewPoolLabel && (
-              <span style={{ display: 'block', color: LABEL, fontSize: 9.5 }}>
+              <span className="mb-session-pool" style={{ display: 'block', color: LABEL, fontSize: 9.5 }}>
                 {reviewPoolTotal} {reviewPoolTotal === 1 ? 'card' : 'cards'} in {reviewPoolLabel}
               </span>
             )}
@@ -2921,13 +2932,14 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                  stem AND the retyped ask: re-telling either alongside the
                  print could only duplicate or contradict it. */
               <figure style={{ margin: '14px 0 0' }}>
-                <img
+                {/* Opens full screen to zoom: a wide crop sets 7.5-10 px text on a phone. */}
+                <FigureZoom
                   src={figureUrl(questionFigure.src)} alt={questionFigure.alt}
-                  style={{ maxWidth: '100%', maxHeight: 720, objectFit: 'contain', display: 'block' }}
+                  imgStyle={{ maxWidth: '100%', maxHeight: 720, objectFit: 'contain', display: 'block' }}
+                  kicker={printedQuestionReplacesText ? 'Printed question' : 'Figure'}
+                  caption={questionFigure.attribution}
+                  captionStyle={{ marginTop: 6, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}
                 />
-                <figcaption style={{ marginTop: 6, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}>
-                  {questionFigure.attribution}
-                </figcaption>
               </figure>
             )}
 
@@ -2959,19 +2971,18 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                  answer printed in the question area answers the question for
                  the student before they have tried it. */
               <figure style={{ margin: '16px -18px 0', padding: '14px 18px 0', borderTop: `1px solid ${HAIRLINE_2}` }}>
-                <div style={{ textAlign: 'center' }}>
-                  <img
-                    src={figureUrl(figure.src)} alt={figure.alt}
-                    style={{ maxWidth: '100%', maxHeight: 640, objectFit: 'contain', display: 'inline-block' }}
-                    /* 640, not 340: a Maths figure is a worked solution to be READ, and
-                       a tall one shrank to a 126px-wide thumbnail. Both bounds only ever
-                       shrink an image, so a wide diagram -- already limited by width --
-                       is unaffected and nothing is upscaled into blur. */
-                  />
-                </div>
-                <figcaption style={{ marginTop: 8, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}>
-                  {figure.attribution}
-                </figcaption>
+                <FigureZoom
+                  src={figureUrl(figure.src)} alt={figure.alt}
+                  imgWrapStyle={{ textAlign: 'center' }}
+                  imgStyle={{ maxWidth: '100%', maxHeight: 640, objectFit: 'contain', display: 'inline-block' }}
+                  /* 640, not 340: a Maths figure is a worked solution to be READ, and
+                     a tall one shrank to a 126px-wide thumbnail. Both bounds only ever
+                     shrink an image, so a wide diagram -- already limited by width --
+                     is unaffected and nothing is upscaled into blur. */
+                  kicker={figure.solution ? 'Marking scheme' : 'Figure'}
+                  caption={figure.attribution}
+                  captionStyle={{ marginTop: 8, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}
+                />
               </figure>
             )}
 
@@ -3107,7 +3118,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                     }}>
                       The scheme
                     </span>
-                    {isPointCard(assessmentCard) && !wholeResponseAssessment && (
+                    {isPointCard(assessmentCard) && !wholeResponseAssessment && cardRoutes(assessmentCard.rows).length < 2 && (
                       <button
                         type="button" onClick={claimAll}
                         style={{
@@ -3136,16 +3147,19 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                         </p>
                       </div>
 
-                      {assessmentCard.rows.map((row, i) => {
+                      {routeDisplayOrder(assessmentCard.rows).map(i => {
+                        const row = assessmentCard.rows[i];
                         const id = rowId(row, i);
                         const taskGroup = assessmentCard.taskGroups?.find(group => group.rowIds[0] === id);
+                        const routeHead = routeHeadAt(assessmentCard.rows, i);
                         return (
                           <React.Fragment key={id}>
                           {taskGroup && (
                             <h3 style={{ margin: '24px 0 8px', paddingTop: 12, borderTop: `1px solid ${HAIRLINE_2}`, font: `600 16px/1.4 ${SERIF}`, color: INK }}>
-                              {taskGroup.label} · {taskGroup.marks} marks
+                              {taskGroup.label} · {taskGroup.marks} {marksWord(taskGroup.marks)}
                             </h3>
                           )}
+                          {routeHead && <RouteHeading head={routeHead} taken={routeTaken} onSelectAll={claimRoute} />}
                           <MarkRowView
                             row={row} id={id} index={i}
                             wholeResponse={wholeResponseAssessment}
@@ -3205,7 +3219,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       {assessmentCard.tariffModel.kind === 'bestNofParts' && (
                         <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
                           Answer any {assessmentCard.tariffModel.answer} of these {assessmentCard.tariffModel.ofParts} —
-                          {' '}{assessmentCard.tariffModel.perPart} marks each.
+                          {' '}{assessmentCard.tariffModel.perPart} {marksWord(assessmentCard.tariffModel.perPart)} each.
                         </p>
                       )}
                     </>
@@ -3331,11 +3345,15 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 background: left === 0 ? SUCCESS_TINT : 'var(--mb-raised)',
                 color: left === 0 ? SUCCESS_TEXT : INK_2,
                 font: `500 12px/1.5 ${SANS}`,
-                // Whole-response criteria can be paragraphs long. This is a
-                // summary; the full wording remains in the scheme above.
-                display: '-webkit-box', WebkitBoxOrient: 'vertical',
-                WebkitLineClamp: 3, overflow: 'hidden',
               }}>
+                {/* Whole-response criteria can be paragraphs long. This is a
+                    summary; the full wording remains in the scheme above. The
+                    clamp sits INSIDE the padding: clamped on the padded box, a
+                    fourth line showed through the bottom padding. */}
+                <div data-testid="mark-bank-unclaimed-summary" style={{
+                  display: '-webkit-box', WebkitBoxOrient: 'vertical',
+                  WebkitLineClamp: 3, overflow: 'hidden',
+                }}>
                 {left === 0 ? (
                   <span style={{
                     font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.11em', textTransform: 'uppercase',
@@ -3358,6 +3376,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                     )}
                   </>
                 )}
+                </div>
               </div>
             )}
 
