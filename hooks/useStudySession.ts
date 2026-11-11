@@ -94,6 +94,7 @@ export function useStudySession(
   const [promptShownAt, setPromptShownAt] = useState<number>(0); // timestamp when current prompt appeared
 
   const intervalRef = useRef<number | null>(null);
+  const extensionPendingRef = useRef(false);
   const startTimeRef = useRef<number>(restored?.startedAt ?? 0);
   const expectedEndRef = useRef<number>(0);
   const promptQueueRef = useRef<StrategyPrompt[]>([]);
@@ -243,10 +244,17 @@ export function useStudySession(
 
   // ── Keep going ──
 
+  useEffect(() => {
+    if (phase === 'complete') extensionPendingRef.current = false;
+  }, [phase]);
+
   /** When a countdown has run out, add time to the same session. */
   const extendSession = useCallback((minutes: number): boolean => {
-    if (phase !== 'complete' || openEnded || elapsedSeconds < totalDuration) return false;
+    if (phase !== 'complete' || extensionPendingRef.current || openEnded || elapsedSeconds < totalDuration) return false;
     if (!(SESSION_EXTENSION_MINUTES as readonly number[]).includes(minutes)) return false;
+    // Claim this completion immediately: another tap before React renders the
+    // running timer must not add a second extension to the saved total.
+    extensionPendingRef.current = true;
     const nextTotal = totalDuration + minutes * 60;
     setExtendedMinutes(current => current + minutes);
     startTimeRef.current = Date.now() - elapsedSeconds * 1000;

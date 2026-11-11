@@ -49,6 +49,8 @@ import unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import paper as PP  # noqa: E402
 from strip_pages import strip_cut, strip_lines  # noqa: E402
+from econ_legacy_census import LEGACY_LAST_YEAR as ECON_LEGACY_LAST_YEAR  # noqa: E402
+from econ_legacy_census import census_legacy as census_econ_legacy  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
@@ -127,17 +129,19 @@ SUBJECTS = {
     # does not say which booklet is which -- 2011 swaps 000 and 014 -- so the
     # booklet is identified by the markers it prints, not by its file name.
     #
-    # The window is 2019 and later, and it is a decision, not the file
-    # listing: the corpus on disk holds 2010-2026 and every sitting of it
-    # reads, but Paper Trail labels the second booklet "Section B" in
-    # 2012-2018 and "Exam Paper" in 2010-2011 where the SEC's cover says
-    # "Sections B and C" -- so a Section C card from those years resolves to
-    # no paper at all, and roughly 270 cards would ship with no link to the
-    # document they came from. 2019 is where the SEC settled the pair of
-    # components the index names correctly, 014 "Section A" and 039 "Section
-    # B&C". It is three years wider than the bank's 2021-2025 default and it
-    # includes 2026, whose scheme is published and on disk.
-    'dcg': {'mode': 'sections', 'walker': 'dcg', 'from': 2019},
+    # The window is the whole corpus, 2010-2026: 33 sittings, 66 booklets.
+    # It stood at 2019 until November 2026 because Paper Trail labels the
+    # second booklet "Section B" in 2012-2018 and "Exam Paper" in 2010-2011
+    # where the SEC's cover says "Sections B and C", so a Section C card of
+    # those years resolved to no paper at all. That is a fault in CARDING,
+    # not in counting, and a window that hides 543 printed asks is the
+    # "100%" this census exists to prevent. The census now counts every
+    # sitting, the ledger shows the uncarded ones as OPEN, and dcg_all.py
+    # cards a sitting only once its paper link is settled (paperIndex.mjs).
+    # The SEC's component codes are 014 + 000 in 2010 (000 holds B and C),
+    # 000 + 014 in 2011 (swapped: 000 holds Section A), 014 + 015 in
+    # 2012-2018 and 014 + 039 from 2019 -- read off each booklet's own cover.
+    'dcg': {'mode': 'sections', 'walker': 'dcg', 'from': 2010},
     'politics-and-society': {'mode': 'politics'},
     'business': {'mode': 'sections'},
     # LCVP's Link Modules paper is COMMON level — one paper, sat by everyone,
@@ -514,13 +518,9 @@ def sittings(subject):
 
     A subject may state a window anyway, with `'from'` in SUBJECTS, and then
     the window is a DECISION rather than a side effect of what happened to be
-    fetched. DCG needs one: its corpus holds 2010-2026, and the papers before
-    2019 cannot be linked to the document they were printed in, because Paper
-    Trail labels the second booklet of those years "Section B" (2012-2018) or
-    "Exam Paper" (2010-2011) where the SEC's own cover says "Sections B and
-    C". Every Section C card of those years would ship with no paper link at
-    all. Stating the bound here keeps the census, the ledger and the deck
-    measuring the same thing; deleting the older papers would hide it.
+    fetched. A window must never be the way a sitting's asks stop counting:
+    DCG's stood at 2019 for a paper-LINK fault and hid nine years of printed
+    questions behind a "100%", until it was widened to the whole corpus.
     """
     root = PP.papers_dir(subject)
     first = SUBJECTS.get(subject, {}).get('from')
@@ -608,6 +608,10 @@ SHORT_ASKS = {
                                                    'genetics:"'),
     ('biology', 2013, 'ol', 'Q11(a)(ii)'): ('Niche.', 'p9: the term "Niche." under "Explain the following terms as '
                                                      'used in ecology:"'),
+    ('economics', 2010, 'ol', 'Section A Q1(i)'): ('IMF', 'p2: the initials "IMF" under "What economic institutions '
+                                                          'do the following initials stand for?"'),
+    ('economics', 2014, 'ol', 'Section B Q6(a)(ii)'): ('Money;', 'p8: the term "Money;" under "(a) Explain the '
+                                                                 'following terms:"'),
 }
 
 
@@ -615,6 +619,29 @@ def short_ask_ok(subject, year, level, flag):
     """An empty-leaf flag on a printed ask recorded in SHORT_ASKS, read as recorded."""
     entry = SHORT_ASKS.get((subject, year, level, flag.get('where')))
     return bool(entry) and flag.get('type') == 'empty-leaf' and flag.get('detail') == f'extracted text: {entry[0]!r}'
+
+
+# Parts the paper prints COMPLETED for the candidate, as the worked example of
+# the ask beside them. The page numbers them like any part, so the reader keys
+# them, but nothing is asked: they are printed matter, not asks, and a leaf the
+# candidate cannot answer is not in the denominator. Each was rendered and read
+# on its page, and on its scheme page, which prices the ask and not the example.
+# Keyed (subject, year, level, census label) -> (the exact text the census
+# extracts, the evidence). The leaf stands down only while the reader extracts
+# exactly that text; a change in what it reads puts the leaf back and flags it.
+PRINTED_EXAMPLES = {
+    ('economics', 2024, 'hl', 'Q10(a)(i)'): (
+        '= Gross National Product (GNP) at Current Market Prices Ans: €325 bn Relationships / Workings:',
+        'paper p12: (a) reads "use the information above to calculate part (ii). Part (i) has been '
+        'completed for you." and the ladder prints (i) worked to "Ans: €325 bn"; scheme p14 prices (a) '
+        'at 6 for the (ii) calculation (GNI €326.5 bn) and nothing for (i).'),
+}
+
+
+def printed_example(subject, year, level, key, texts):
+    """Is this leaf a part the paper completes for the candidate (PRINTED_EXAMPLES)?"""
+    entry = PRINTED_EXAMPLES.get((subject, year, level, key_label(key, subject)))
+    return bool(entry) and texts.get(key, '') == entry[0]
 
 
 def continuity_flags(parts, texts, subject=None, continuous=False):
@@ -1070,8 +1097,8 @@ def census_agri_legacy(year, level):
     return parts, dict(texts), [path]
 
 
-def census_merged(subject, year, level, component=None):
-    P = PP.Paper(subject, year, level, component=component)
+def census_merged(subject, year, level, component=None, *, files=None):
+    P = PP.Paper(subject, year, level, component=component, files=files)
     P._adopt_unlettered()
     texts = {k: (P.text(*k) or '') for k in P.parts}
     parts = complete_leading_romans(P.parts, texts, stem=P.stem)
@@ -3624,6 +3651,7 @@ def census_subject(subject):
         for label, comp in units:
             marks = None
             cover = None
+            legacy_flags = []
             try:
                 if cfg.get('walker') == 'history':
                     parts, texts, files, marks, cover = census_history(
@@ -3684,17 +3712,34 @@ def census_subject(subject):
                     parts, texts, files = census_sections(subject, year, level)
                 elif subject == 'agricultural-science' and year <= AGRI_LEGACY_LAST_YEAR:
                     parts, texts, files = census_agri_legacy(year, level)
+                elif subject == 'economics' and year <= ECON_LEGACY_LAST_YEAR:
+                    # The old-syllabus paper restarts Section B at Question 1
+                    # (econ_legacy_census.py); its own marks checks come back
+                    # with it, and its printed marks feed the checksum below.
+                    parts, texts, files, marks, legacy_flags = census_econ_legacy(year, level)
                 else:
                     parts, texts, files = census_merged(subject, year, level, comp)
             except Exception as e:                       # noqa: BLE001
                 papers.append({'year': year, 'level': level, 'paper': label,
                                'error': f'{type(e).__name__}: {e}'})
                 continue
-            leaves = leaves_of(parts)
+            leaves = [k for k in leaves_of(parts)
+                      if not printed_example(subject, year, level, k, texts)]
             flags = continuity_flags(
                 parts, texts, subject,
                 continuous=cfg.get('numbering') == 'continuous')
             flags = [f for f in flags if not short_ask_ok(subject, year, level, f)]
+            flags += legacy_flags
+            for (s_, y_, l_, where), (want, _evidence) in PRINTED_EXAMPLES.items():
+                if (s_, y_, l_) == (subject, year, level) and not any(
+                        key_label(k, subject) == where and texts.get(k, '') == want for k in parts):
+                    flags.append({'type': 'printed-example', 'where': where,
+                                  'detail': 'recorded as printed matter, but the reader no longer '
+                                            'extracts the recorded text: read the page again'})
+            # The old-syllabus Economics paper is its own kind (748 printed
+            # marks over nine short and eight long questions); the checksum
+            # compares it with its own era, never with the 2021 paper.
+            era = 'old-syllabus' if subject == 'economics' and year <= ECON_LEGACY_LAST_YEAR else None
             if cfg.get('walker') == 'history':
                 # A History paper is almost entirely CHOICE: eleven topics are
                 # printed and a candidate answers two. Adding up every printed
@@ -3858,21 +3903,22 @@ def census_subject(subject):
                 'marksSum': sum(marks.values()) if marks else None,
                 'marksQuestions': len(marks),
                 'flags': flags,
+                **({'era': era} if era else {}),
             })
     # The checksum: a paper's total does not change year to year, so the mode
     # is the expectation and a deviating year has lost or invented content.
     sums = collections.Counter()
     for p in papers:
         if p.get('marksSum'):
-            sums[(p['level'], p.get('paper'), p['marksSum'])] += 1
+            sums[(p['level'], p.get('paper'), p.get('era'), p['marksSum'])] += 1
     expected = {}
-    for (level, label, total), n in sums.items():
-        cur = expected.get((level, label))
+    for (level, label, era, total), n in sums.items():
+        cur = expected.get((level, label, era))
         if cur is None or n > cur[1]:
-            expected[(level, label)] = (total, n)
+            expected[(level, label, era)] = (total, n)
     for p in papers:
-        if p.get('marksSum') and expected.get((p['level'], p.get('paper'))):
-            want, n = expected[(p['level'], p.get('paper'))]
+        if p.get('marksSum') and expected.get((p['level'], p.get('paper'), p.get('era'))):
+            want, n = expected[(p['level'], p.get('paper'), p.get('era'))]
             # Two sittings that disagree name no expectation: Technology 2020
             # Higher prints 128 and 2021 Higher 64, and a tie flagged 2021.
             if n < 2:
@@ -3893,7 +3939,42 @@ def census_subject(subject):
                     'type': 'marks-checksum',
                     'where': f"{p['year']} {p['level']} {p.get('paper') or ''}",
                     'detail': f"marks sum {p['marksSum']}, other years say {want}"})
+    if subject == 'economics':
+        papers.extend(census_economics_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
+
+
+# The SEC's deferred Economics sittings in the archive: 2022 Higher only
+# (deferredexams/ and deferredmarkingschemes/ hold LC034ALP000EV for 2022 and no
+# other Economics paper for 2022-2025; no Ordinary).
+ECON_DEFERRED_PAPERS = ((2022, 'hl', 'LC034ALP000EV'),)
+
+
+def census_economics_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    Economics' deferred sitting (ECON_DEFERRED_PAPERS) is a paper of its own,
+    keyed 'Deferred' as Physics and Home Economics key theirs (codex/home-
+    economics-continuation-20261101, census_physics_deferred) and History keys
+    its own (census_history_deferred), so a deferred ask never lands on a June
+    leaf with the same address. The checksum is not run on it.
+    """
+    papers = []
+    for year, level, fileid in ECON_DEFERRED_PAPERS:
+        pdf = os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year), f'{fileid}.pdf')
+        parts, texts, _ = census_merged('economics', year, level, files=[pdf])
+        leaves = [k for k in leaves_of(parts)
+                  if not printed_example('economics', year, level, k, texts)]
+        flags = [f for f in continuity_flags(parts, texts, 'economics')
+                 if not short_ask_ok('economics', year, level, f)]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'economics'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
 
 
 def report(result):

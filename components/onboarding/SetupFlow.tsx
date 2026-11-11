@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowUpRight, X } from "lucide-react";
 import { DAYS_OF_WEEK, LEVEL_LABELS, SUBJECT_GROUP_LABELS, subjectMatchesQuery } from "../subjectData";
 import { VISION_CARD_ART } from "../../northStarData";
 import { NORTH_STAR_CATEGORY_BLOBS } from "../NorthStarCategoryIcon";
-import { daysUntil, gradeBarHeight, needsDate, type GradeChoice } from "./model";
+import { daysUntil, gradeBarHeight, needsDate, requiresGradeSetup, type GradeChoice } from "./model";
 import {
   useSetupFlow,
   PointsCount,
@@ -402,7 +402,7 @@ export default function SetupFlow(props: OnboardingProps) {
                         aria-pressed={draft.subjects.includes(item.name)}
                         onClick={() => toggleSubject(item.name)}
                       >
-                        <span className="setup-subject-name"><SubjectAvatar subject={item.name} /><span>{item.name}</span></span>
+                        <span className="setup-subject-name"><SubjectAvatar subject={item.name} /><span>{item.label ?? item.name}</span></span>
                         <span className="setup-subject-state" aria-hidden="true">
                           {draft.subjects.includes(item.name) ? "Added" : "Add"}
                         </span>
@@ -651,9 +651,9 @@ export default function SetupFlow(props: OnboardingProps) {
                     <div className="setup-review-subject" key={name}>
                       <span>
                         {name}
-                        {!lca && <small>{gradeLabel(name)}</small>}
+                        {requiresGradeSetup(draft.year, name) && <small>{gradeLabel(name)}</small>}
                       </span>
-                      {!lca && (
+                      {requiresGradeSetup(draft.year, name) && (
                         <button
                           type="button"
                           className="setup-text"

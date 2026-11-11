@@ -1410,6 +1410,92 @@
  {
   "subjectId": "economics",
   "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC034ALP000EV-deferred.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-3-5",
+    "secondary": "economics-4-0"
+   },
+   {
+    "n": "2",
+    "primary": "economics-0-0",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "economics-1-4"
+   },
+   {
+    "n": "4",
+    "primary": "economics-1-0",
+    "secondary": "economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "economics-3-5",
+    "secondary": "economics-4-0"
+   },
+   {
+    "n": "6",
+    "primary": "economics-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "economics-0-2",
+    "secondary": "economics-1-3"
+   },
+   {
+    "n": "8",
+    "primary": "economics-1-0",
+    "secondary": "economics-1-1"
+   },
+   {
+    "n": "9",
+    "primary": "economics-1-5"
+   },
+   {
+    "n": "10",
+    "primary": "economics-3-3"
+   },
+   {
+    "n": "11",
+    "primary": "economics-1-0",
+    "secondary": "economics-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "economics-1-3",
+    "secondary": "economics-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "economics-2-1",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "14",
+    "primary": "economics-1-5",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "economics-0-0",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "16",
+    "primary": "economics-0-0",
+    "secondary": "economics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "higher",
   "lang": "iv",
   "year": 2022,
   "fileid": "LC034ALP000IV.pdf",

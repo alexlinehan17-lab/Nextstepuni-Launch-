@@ -3761,6 +3761,17 @@ for (const [levelCode, langCode, year, n, topicIndexes] of economicsRuntime.ques
 }
 
 for (const [levelCode, langCode, year, fileid, n, indexes] of economicsRuntime.secReviewedQuestionMappings) {
+  // A deferred sitting ("LC034ALP000EV-deferred.pdf") is its own booklet,
+  // numbered 1-16 like June's: its reviews join on the booklet, so they never
+  // replace June's review of the question with the same number.
+  if (/-deferred\.pdf$/i.test(fileid)) {
+    FILE_QUESTION_TOPICS.set(
+      fileQuestionKey('economics', levelCode === 'h' ? 'higher' : 'ordinary', year, 'main', fileid, n,
+        'single', langCode === 'e' ? 'ev' : 'iv'),
+      indexes.map(index => economicsRuntime.topics[index][0]),
+    );
+    continue;
+  }
   SEC_REVIEWED_QUESTION_TOPICS.set(
     questionKey('economics', levelCode === 'h' ? 'higher' : 'ordinary', year,
       'main', n, 'single', langCode === 'e' ? 'ev' : 'iv'),

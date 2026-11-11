@@ -1,0 +1,860 @@
+{
+  "subjectId": "economics",
+  "year": 2016,
+  "level": "higher",
+  "lang": "ev",
+  "fileid": "LC034ALP000EV",
+  "status": "paper-and-scheme-boundaries-reviewed",
+  "completeSubject": false,
+  "reviewedAt": "2026-11-04",
+  "visuallyInspectedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "visuallyInspectedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "unreviewedPaperPages": [],
+  "unreviewedSchemePages": [],
+  "paperSha256": "977d09c938adfcd0b5bad113c246ec4bae1f3856362a1ef3d1be3e22cfaecabe",
+  "schemeSha256": "7e85cca37f8a9ba3c789770ef689acdbfa7a93af14ecc405b6980a37e7f35d26",
+  "questions": [
+    {
+      "n": "1",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        5
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 9,
+          "cardId": "econ-2016-hl-sa-q1-a",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/i",
+          "marks": 3,
+          "cardId": "econ-2016-hl-sa-q1-b-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 4,
+          "cardId": "econ-2016-hl-sa-q1-b-ii",
+          "topicId": "economics-2-0"
+        }
+      ],
+      "boundaryReason": "a 3 x 3 the three labelled lines; b(i) 3 the shaded supernormal profit (hidden solution diagram); b(ii) 4.",
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "topicReason": "Short-run equilibrium and supernormal profit in perfect competition are Market Structures (2-0)."
+    },
+    {
+      "n": "2",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        5
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 16,
+          "cardId": "econ-2016-hl-sa-q2",
+          "topicId": "economics-1-5"
+        }
+      ],
+      "boundaryReason": "10 the definition and 6 any suitable example explained: one card, two rows.",
+      "canonicalNodeIds": [
+        "economics-1-5"
+      ],
+      "topicReason": "The law of diminishing marginal returns is Costs of Production, Revenue & Profit (1-5)."
+    },
+    {
+      "n": "3",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        6
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 16,
+          "cardId": "econ-2016-hl-sa-q3",
+          "topicId": "economics-2-1"
+        }
+      ],
+      "boundaryReason": "2 x 8 two ways from eight, under the scheme’s occupational and geographical mobility heads.",
+      "canonicalNodeIds": [
+        "economics-2-1",
+        "economics-3-2"
+      ],
+      "topicReason": "The mobility of labour is The Labour Market (2-1); reducing unemployment is Employment & Unemployment (3-2)."
+    },
+    {
+      "n": "4",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        6
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 16,
+          "cardId": "econ-2016-hl-sa-q4",
+          "topicId": "economics-1-5"
+        }
+      ],
+      "boundaryReason": "10 the explanation and 6 one example from six, which must refer to the aircraft industry.",
+      "canonicalNodeIds": [
+        "economics-1-5"
+      ],
+      "topicReason": "Economies of scale are Costs of Production, Revenue & Profit (1-5)."
+    },
+    {
+      "n": "5",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 10,
+          "cardId": "econ-2016-hl-sa-q5-a",
+          "topicId": "economics-3-2"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2016-hl-sa-q5-b",
+          "topicId": "economics-3-2"
+        }
+      ],
+      "boundaryReason": "a 2 x 5 (2 + 3) two effects from eight; b 6 one policy from eight.",
+      "canonicalNodeIds": [
+        "economics-3-2"
+      ],
+      "topicReason": "Youth unemployment and policies against it are Employment & Unemployment (3-2)."
+    },
+    {
+      "n": "6",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        8
+      ],
+      "tasks": [
+        {
+          "key": "i",
+          "marks": 9,
+          "cardId": "econ-2016-hl-sa-q6-i",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "ii",
+          "marks": 8,
+          "cardId": "econ-2016-hl-sa-q6-ii",
+          "topicId": "economics-1-4"
+        }
+      ],
+      "boundaryReason": "i 9, the scheme’s raised 1 beside each of nine items of the working; ii 4 the + sign (a normal good) + 4 the 6.67 (a luxury good).",
+      "canonicalNodeIds": [
+        "economics-1-4"
+      ],
+      "topicReason": "Income elasticity of demand is Elasticity (1-4)."
+    },
+    {
+      "n": "7",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        8
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 9,
+          "cardId": "econ-2016-hl-sa-q7-a",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "b",
+          "marks": 8,
+          "cardId": "econ-2016-hl-sa-q7-b",
+          "topicId": "economics-3-3"
+        }
+      ],
+      "boundaryReason": "a 9, 3 each beside the money supply, interest rates and the availability of credit; b 2 x 4 two benefits from seven.",
+      "canonicalNodeIds": [
+        "economics-3-3"
+      ],
+      "topicReason": "Monetary policy and price stability are Monetary Policy & Inflation (3-3)."
+    },
+    {
+      "n": "8",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        9
+      ],
+      "tasks": [
+        {
+          "key": "a-b",
+          "marks": 17,
+          "cardId": "econ-2016-hl-sa-q8",
+          "topicId": "economics-1-3"
+        }
+      ],
+      "boundaryReason": "One card for both asks: the scheme prices the two effects of (a) and the one method of (b) on one ladder, 7 (4 + 3) for the first correct response and 5 (3 + 2) for each other, so neither part has a price of its own.",
+      "canonicalNodeIds": [
+        "economics-1-3",
+        "economics-3-1",
+        "economics-0-2"
+      ],
+      "topicReason": "A levy on insurance premiums and measures against flooding are Government Intervention (1-3); the levy is also a tax (Fiscal Policy & the Budget, 3-1), and climate measures Sustainability (0-2)."
+    },
+    {
+      "n": "9",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        10
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 17,
+          "cardId": "econ-2016-hl-sa-q9",
+          "topicId": "economics-2-1"
+        }
+      ],
+      "boundaryReason": "7 (4 + 3) + 5 (3 + 2) + 5 (3 + 2) any three impacts from fourteen, positive or negative, the first correct response 7.",
+      "canonicalNodeIds": [
+        "economics-2-1"
+      ],
+      "topicReason": "The national minimum wage is The Labour Market (2-1)."
+    },
+    {
+      "n": "B1",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        11,
+        12,
+        13
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 20,
+          "cardId": "econ-2016-hl-sb-q1-a-i",
+          "topicId": "economics-1-2"
+        },
+        {
+          "key": "a/ii",
+          "marks": 15,
+          "cardId": "econ-2016-hl-sb-q1-a-ii",
+          "topicId": "economics-1-2"
+        },
+        {
+          "key": "b/i",
+          "marks": 6,
+          "cardId": "econ-2016-hl-sb-q1-b-i",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "b/ii",
+          "marks": 6,
+          "cardId": "econ-2016-hl-sb-q1-b-ii",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "b/iii",
+          "marks": 6,
+          "cardId": "econ-2016-hl-sb-q1-b-iii",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "b/iv",
+          "marks": 6,
+          "cardId": "econ-2016-hl-sb-q1-b-iv",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "c",
+          "marks": 16,
+          "cardId": "econ-2016-hl-sb-q1-c",
+          "topicId": "economics-1-0"
+        }
+      ],
+      "boundaryReason": "Seven tasks totalling 75. a(i) 4 x 5 (2 + 3) four factors from six; a(ii) movement 8 (diagram 3 + explanation 5) and shift 7 (diagram 2 + explanation 5) (hidden solution diagrams). b(i)-(iv) each TRUE/FALSE 2 + explanation 4. c 12 the diagram + 4 the explanation (hidden solution diagram).",
+      "canonicalNodeIds": [
+        "economics-1-2",
+        "economics-1-4",
+        "economics-1-0"
+      ],
+      "topicReason": "The supply of a good and its curve are The Firm (Supply) (1-2); cross, price and income elasticity are Elasticity (1-4); a ticket shortage from demand and supply is The Market Economy (1-0)."
+    },
+    {
+      "n": "B2",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 7,
+          "cardId": "econ-2016-hl-sb-q2-a-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 10,
+          "cardId": "econ-2016-hl-sb-q2-a-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "a/iii",
+          "marks": 18,
+          "cardId": "econ-2016-hl-sb-q2-a-iii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/i",
+          "marks": 15,
+          "cardId": "econ-2016-hl-sb-q2-b-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 10,
+          "cardId": "econ-2016-hl-sb-q2-b-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c",
+          "marks": 15,
+          "cardId": "econ-2016-hl-sb-q2-c",
+          "topicId": "economics-2-0"
+        }
+      ],
+      "boundaryReason": "Six tasks totalling 75. a(i) 7 oligopoly with its reason, printed as one 7: questionTotal, unpriced rows; a(ii) 2 x 5 (2 + 3) from seven; a(iii) the diagram 5 (P, Q, AB, BC, P1 at 1 each), the overall curve 3, AB 5 and BC 5 (hidden solution diagram). b(i) 3 x 5 (2 + 3) from five; b(ii) 2 x 5 (2 + 3) from five. c 3 x 5 (2 + 3) from twelve, under the scheme’s small-firm and large-firm heads.",
+      "canonicalNodeIds": [
+        "economics-2-0",
+        "economics-1-5"
+      ],
+      "topicReason": "Oligopoly, the kinked demand curve, market entry and the size of firms are Market Structures (2-0); economies of scale are also Costs of Production, Revenue & Profit (1-5)."
+    },
+    {
+      "n": "B3",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        18,
+        19,
+        20
+      ],
+      "tasks": [
+        {
+          "key": "a/i-iv",
+          "marks": 20,
+          "cardId": "econ-2016-hl-sb-q3-a",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 20,
+          "cardId": "econ-2016-hl-sb-q3-b-i",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "b/ii",
+          "marks": 15,
+          "cardId": "econ-2016-hl-sb-q3-b-ii",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "c",
+          "marks": 20,
+          "cardId": "econ-2016-hl-sb-q3-c",
+          "topicId": "economics-2-1"
+        }
+      ],
+      "boundaryReason": "Four cards for seven asks, totalling 75. a(i)-(iv) share one ladder, the 1st correct response 8 and the 2nd, 3rd and 4th 4 each, so no term has a price of its own: one card covers the four. b(i) 4 x 5 (2 + 3) from six; b(ii) two challenges 7 (4 + 3) and a policy for each 8 (4 + 4), under the scheme’s excess supply and excess demand heads. c 4 x 5 (2 + 3) from nine.",
+      "canonicalNodeIds": [
+        "economics-2-1",
+        "economics-3-2"
+      ],
+      "topicReason": "The participation rate, real wages, productivity, derived demand, the supply of labour and wage differences are The Labour Market (2-1); the labour market’s challenges include unemployment (Employment & Unemployment, 3-2)."
+    },
+    {
+      "n": "B4",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 10,
+          "cardId": "econ-2016-hl-sb-q4-a-i",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "a/ii",
+          "marks": 5,
+          "cardId": "econ-2016-hl-sb-q4-a-ii",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b/i",
+          "marks": 10,
+          "cardId": "econ-2016-hl-sb-q4-b-i",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b/ii",
+          "marks": 8,
+          "cardId": "econ-2016-hl-sb-q4-b-ii",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b/iii",
+          "marks": 12,
+          "cardId": "econ-2016-hl-sb-q4-b-iii",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "c/i",
+          "marks": 15,
+          "cardId": "econ-2016-hl-sb-q4-c-i",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "c/ii",
+          "marks": 15,
+          "cardId": "econ-2016-hl-sb-q4-c-ii",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "boundaryReason": "Seven tasks totalling 75. a(i) 10 (5 + 5) the short run and the long run; a(ii) 5. b(i) 2 x 5; b(ii) 4 + 4 the MR and MC columns; b(iii) the graph 5 (price, quantity, MR, MC and the profit-maximising output at 1 each), the output 3 and the explanation 4 (hidden solution graph). c(i) 3 x 5 (2 + 3) from nine; c(ii) 3 x 5 (2 + 3) from eight.",
+      "canonicalNodeIds": [
+        "economics-1-5",
+        "economics-4-2"
+      ],
+      "topicReason": "Production periods, marginal revenue and cost and profit maximisation are Costs of Production, Revenue & Profit (1-5); competitiveness is International Trade & Competitiveness (4-2)."
+    },
+    {
+      "n": "B5",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        25,
+        26,
+        27
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 5,
+          "cardId": "econ-2016-hl-sb-q5-a-i",
+          "topicId": "economics-3-2"
+        },
+        {
+          "key": "a/ii",
+          "marks": 20,
+          "cardId": "econ-2016-hl-sb-q5-a-ii",
+          "topicId": "economics-3-2"
+        },
+        {
+          "key": "b/i",
+          "marks": 6,
+          "cardId": "econ-2016-hl-sb-q5-b-i",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 6,
+          "cardId": "econ-2016-hl-sb-q5-b-ii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b/iii",
+          "marks": 8,
+          "cardId": "econ-2016-hl-sb-q5-b-iii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b/iv",
+          "marks": 10,
+          "cardId": "econ-2016-hl-sb-q5-b-iv",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "c",
+          "marks": 20,
+          "cardId": "econ-2016-hl-sb-q5-c",
+          "topicId": "economics-3-0"
+        }
+      ],
+      "boundaryReason": "Seven tasks totalling 75. a(i) 5; a(ii) 2 x 5 (2 + 3) benefits and 2 x 5 (2 + 3) challenges. b(i) 6; b(ii) 6; b(iii) the starred working 4 (1 each, by either method) + the answer 4; b(iv) 10, 2 beside each of five figures of the working. c 2 x 10 (4 + 6) any two of three.",
+      "canonicalNodeIds": [
+        "economics-3-2",
+        "economics-3-0"
+      ],
+      "topicReason": "Full employment is Employment & Unemployment (3-2); the MPS, the multiplier, the injection needed and GDP are National Income (3-0)."
+    },
+    {
+      "n": "B6",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 5,
+          "cardId": "econ-2016-hl-sb-q6-a-i",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "a/ii",
+          "marks": 20,
+          "cardId": "econ-2016-hl-sb-q6-a-ii",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/i",
+          "marks": 17,
+          "cardId": "econ-2016-hl-sb-q6-b-i",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/ii",
+          "marks": 7,
+          "cardId": "econ-2016-hl-sb-q6-b-ii",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/iii",
+          "marks": 6,
+          "cardId": "econ-2016-hl-sb-q6-b-iii",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "c",
+          "marks": 20,
+          "cardId": "econ-2016-hl-sb-q6-c",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "boundaryReason": "Six tasks totalling 75. a(i) 5; a(ii) 4 x 5 (2 + 3) from five. b(i) 7 + 7 + 3 the current, capital and financial accounts; b(ii) 7; b(iii) 6 (3 + 3) one problem from seven. c 2 x 5 (2 + 3) benefits and 2 x 5 (2 + 3) challenges.",
+      "canonicalNodeIds": [
+        "economics-4-2",
+        "economics-4-1"
+      ],
+      "topicReason": "Exchange rates, the balance of payments and SMEs in foreign markets are International Trade & Competitiveness (4-2); trading abroad is also Globalisation (4-1)."
+    },
+    {
+      "n": "B7",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 20,
+          "cardId": "econ-2016-hl-sb-q7-a",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 16,
+          "cardId": "econ-2016-hl-sb-q7-b-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/ii",
+          "marks": 14,
+          "cardId": "econ-2016-hl-sb-q7-b-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c",
+          "marks": 25,
+          "cardId": "econ-2016-hl-sb-q7-c",
+          "topicId": "economics-0-2"
+        }
+      ],
+      "boundaryReason": "Four tasks totalling 75. a 2 x 10 (5 + 5) any two of three pairs: one card. b(i) 2 x 8 (3 + 5) from seven; b(ii) 2 x 7 (3 + 4) from five. c 4 points, 7 (4 + 3) for the first correct response and 6 (3 + 3) for each other, from five.",
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-0-2",
+        "economics-1-3"
+      ],
+      "topicReason": "Income and wealth, progressive and regressive taxes, the impact and incidence of a tax and policies against inequality are Fiscal Policy & the Budget (3-1); protecting the environment is Sustainability (0-2) and, by taxes, subsidies and regulation, Government Intervention (1-3)."
+    },
+    {
+      "n": "B8",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        36,
+        37,
+        38,
+        39
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 5,
+          "cardId": "econ-2016-hl-sb-q8-a-growth",
+          "topicId": "economics-3-5"
+        },
+        {
+          "key": "a",
+          "marks": 5,
+          "cardId": "econ-2016-hl-sb-q8-a-prices",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "a",
+          "marks": 5,
+          "cardId": "econ-2016-hl-sb-q8-a-unemployment",
+          "topicId": "economics-3-2"
+        },
+        {
+          "key": "a",
+          "marks": 5,
+          "cardId": "econ-2016-hl-sb-q8-a-interest",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "b/i",
+          "marks": 21,
+          "cardId": "econ-2016-hl-sb-q8-b-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/ii",
+          "marks": 14,
+          "cardId": "econ-2016-hl-sb-q8-b-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c",
+          "marks": 20,
+          "cardId": "econ-2016-hl-sb-q8-c",
+          "topicId": "economics-3-5"
+        }
+      ],
+      "boundaryReason": "Seven cards for four asks, totalling 75. a 4 x 5, one card for each printed area, each 2 (approximate figure) + 3 (trend 1 + comment 2) with no row the scheme ties them to: questionTotal, unpriced rows. b(i) 3 x 7 (3 + 4), at least one under each of the budget deficit and gross debt heads; b(ii) 2 x 7 (3 + 4) from four. c 4 x 5 (2 + 3), at least one positive and one negative.",
+      "canonicalNodeIds": [
+        "economics-3-5",
+        "economics-3-3",
+        "economics-3-2",
+        "economics-3-1"
+      ],
+      "topicReason": "Economic growth is Economic Growth (3-5), the price level and interest rates Monetary Policy & Inflation (3-3), unemployment Employment & Unemployment (3-2); the budget deficit, gross debt and their costs are Fiscal Policy & the Budget (3-1); an urbanising population is Economic Growth (3-5), as population change is filed."
+    }
+  ],
+  "selections": [
+    {
+      "page": 1,
+      "text": "Answer four questions.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section B); every printed task stays in the census."
+    },
+    {
+      "page": 1,
+      "text": "Answer six of the nine short response type questions in the spaces provided.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section A); every printed task stays in the census."
+    },
+    {
+      "page": 1,
+      "text": "Answer six questions from Section A and four questions from Section B.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; every printed task stays in the census."
+    },
+    {
+      "page": 1,
+      "text": "Page 1 of 12",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 2,
+      "text": "Answer six of the nine short response type questions in the spaces provided.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section A); every printed task stays in the census."
+    },
+    {
+      "page": 2,
+      "text": "Page 2 of 12",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 3,
+      "text": "Page 3 of 12",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 4,
+      "text": "Page 4 of 12",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 5,
+      "text": "(b) Read the following statements and indicate if they are TRUE or FALSE.",
+      "classification": "answer-classification",
+      "reason": "Section B Q1(b) TRUE or FALSE is the answer for each of four statements; one card each, the answer 2 and its explanation 4."
+    },
+    {
+      "page": 5,
+      "text": "1. (a) (i) Outline four factors that determine the supply of a good or service.",
+      "classification": "not-a-task-selection",
+      "reason": "Section B Q1(a)(i) ask wording, read on \"or\"; not a selection."
+    },
+    {
+      "page": 5,
+      "text": "Answer four questions.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section B); every printed task stays in the census."
+    },
+    {
+      "page": 5,
+      "text": "Page 5 of 12",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 6,
+      "text": "Page 6 of 12",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 7,
+      "text": "(c) Explain how Ireland’s Gross Domestic Product (GDP) could be affected by any two of the",
+      "classification": "finite-route",
+      "reason": "Section B Q5(c) any two of three developments: one card claimed twice at 10."
+    },
+    {
+      "page": 7,
+      "text": "Page 7 of 12",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 8,
+      "text": "7. (a) In the case of any two of the following three pairs, distinguish between the two concepts.",
+      "classification": "finite-route",
+      "reason": "Section B Q7(a) any two of three pairs: one card claimed twice at 10."
+    },
+    {
+      "page": 8,
+      "text": "Page 8 of 12",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    }
+  ],
+  "reviewNote": "Review 2026-11-04 from a paired visual sweep of all 12 paper and 40 scheme pages (paper pages 9-12 are blank; scheme pages 1-4 are the SEC cover, the note on published schemes, the title page and the notes and index, and page 40 the back cover; scheme page numbers here are the PDF’s, two ahead of the printed ones; this scheme prints no Summary of Mark Allocations, so every tariff is read beside its part). The old-syllabus paper: Section A nine short questions (answer six), Section B eight long questions (answer four) numbered 1-8 again, keyed B1-B8 as the Atlas numbers them. 62 routes for 63 printed asks (15 Section A + 48 Section B), 17 raw directive lines classified. Every stem and ask is sliced from the paper and every marking point from the scheme (econ_2016_hl.py). Two cards cover more than one printed ask because the scheme prices them on one ladder: Section A Q8(a)-(b) and Section B Q3(a)(i)-(iv). Section B Q8(a) is one card per printed area. Printed choices are one card each: Section B Q5(c) and Q7(a), any two of three.",
+  "externalClarifications": [],
+  "curriculumSource": "https://www.curriculumonline.ie/getmedia/3342d8a2-1e22-4f17-b82b-a8134fe16eb3/LCEconomics_0219_EN.pdf",
+  "curriculumNote": "Sat on the outgoing syllabus. Its questions are filed under the Economics Topic Atlas taxonomy the Atlas uses for every sitting 2010-2026, whose canonical nodes are those of the 2019 specification; no Syllabus X-Ray link is claimed."
+}

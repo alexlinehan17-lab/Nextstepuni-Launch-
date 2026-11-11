@@ -152,6 +152,7 @@ describe('Paper Trail viewer zoom', () => {
     const fetchSpy=vi.spyOn(globalThis,'fetch').mockResolvedValue({ok:true,json:async()=>({v:1,paperFileid:'paper.pdf',q:questions})} as Response);
     try {
       render(<Viewer title="Paper" paper={{url:'/paper.pdf',label:'Paper',bytes:0}} scheme={{url:'/scheme.pdf',label:'Scheme',bytes:0}} answersUrl="/map.json" storageNs="student|next-question" initialPaperPage={4} onClose={()=>{}} />);
+      fireEvent.click(screen.getByRole('switch',{name:'Attempt first'}));
       const reader=await screen.findByLabelText(`Paper, page 4 of ${PAGES}`);
       await waitFor(()=>expect(screen.getByLabelText('Working on')).toHaveValue('1'));
       await settle();

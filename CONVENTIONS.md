@@ -414,8 +414,108 @@ capped at `MAX_LONG_OPTION_ROWS`), while the five-row cap is for required-recall
   `ios/App/Shared/StudyTimerAttributes.swift`, compiled into both targets. Project changes go through
   `scripts/ios/add-study-timer-widget.rb` (xcodeproj gem), not hand edits. Its colours are fixed per colour scheme
   inside the view: asset-catalog colours were resolved in two appearances on the iOS 26 Lock Screen.
+- **One timer limit across app and native UI.** `StudyActivityState.totalSeconds` includes the open-ended
+  session's four-hour cap. Swift's `timerEndsAt` supplies both the system clock range and the ActivityKit
+  stale deadline, including when JavaScript is suspended. A stale stopwatch says "Ready to log".
+- **Accept one extension per completion.** `useStudySession` claims an extension synchronously before
+  React renders again. Repeated requests must not inflate saved minutes or disagree with the deadline;
+  the guard resets when the extended countdown completes. Keep interruption/relaunch regressions in
+  `test/studyTimerInterruption.test.tsx` alongside extension and notification coverage.
 - **Release bumps:** the extension carries its own `MARKETING_VERSION` / `CURRENT_PROJECT_VERSION` (Debug and
   Release). Bump all four with the app's or App Store Connect flags the mismatch.
 - **Simulator check without an account** (Debug builds only): `xcrun simctl launch booted com.nextstepuni.app
   -NSUStudyTimerDemo '{"notifyIn":45,"remaining":1110,"mode":"running"}'` (`mode`: running, paused, countup, done;
   `roomOpen: true` suppresses the in-app banner). See `services/studyTimerDemo.ts`.
+
+### Optional study app blocking — iPhone/iPad
+
+- Alex approved iPhone/iPad first on 10 November. Keep the existing Study Room
+  design. `StudyFocusChoice` uses its existing option row, switch and button;
+  unsupported devices render nothing. No CSS, artwork or planner changes.
+- `useStudyFocusSession` runs in the account-scoped session engine. Wait for
+  `identityReady` before reconciling a native launch, so initial auth restoration
+  does not erase saved choices. Pause, completion, discard and sign-out release
+  the shield; resume/extension reschedules it. Never put this lifecycle in a view.
+- `StudyFocusPlugin` uses individual Screen Time authorization on iOS 16+,
+  requested only by a tap. The system picker returns opaque tokens stored in
+  `group.com.nextstepuni.app.studyfocus`. Only counts/status cross the bridge;
+  never upload tokens, application names or usage. The state file is excluded
+  from device backups. Switching accounts or signing
+  out clears choices. Revoking authorization invalidates tokens and clears them.
+- `StudyFocusMonitor` is a DeviceActivity extension sharing `StudyFocusStore` and
+  its file lock with the app. Register monitoring and persist the generation and
+  deadline BEFORE shielding. Old callbacks cannot clear a newer generation.
+  Errors release this named store only; never clear another feature's settings.
+- DeviceActivity requires intervals of at least 15 minutes. For shorter sessions
+  use an already-ongoing 16-minute monitoring window ending at the actual timer
+  deadline. No usage events are requested. This preserves 5/10-minute sessions
+  and short extensions. Validate this path on signed physical devices before
+  release. Apple delivers interval callbacks when the device is in use; do not
+  promise exact-second cleanup while the device is asleep.
+- Run `ruby scripts/ios/add-study-focus.rb` for project updates. It provisions
+  nothing and is idempotent. The app and monitor need the Family Controls
+  capability and shared App Group; distribution needs Apple's approval for BOTH
+  bundle IDs. Keep the monitor version/build aligned with the app. The existing
+  Live Activity widget does not use Screen Time and needs no new entitlement.
+- Before release: verify real picker/permission handling, blocking selected apps
+  while notes remain available, 5/10/25-minute deadlines, stopwatch cap, pause,
+  resume, extension, force quit, lock/unlock, denied/revoked permission, relaunch
+  and account changes. Unit checks and simulator compilation are not evidence of
+  Screen Time enforcement. See `test/studyFocus*.test.tsx` and the Foundation-only
+  policy checks in `scripts/ios/test-study-focus.swift`.
+
+
+## Dated study plan — feedback implementation, November 2026
+
+- `useDatedStudyPlan` supplies one account-scoped dated plan to Home, Planner,
+  Progress, War Room and both Study Room variants. Use `getBlockId`; never make
+  `block-${index}` identities or recompute a separate timetable in an enabled consumer.
+- Alex explicitly rejected the redesigned planner on 10 November. This is an
+  algorithm-only change. Preserve the existing Study Room, PlannerWorkbench,
+  settings, cards, typography, artwork, colours and layout. No new planner UI
+  or availability questionnaire. Check all affected surfaces, not only Study Room JSX.
+- Existing profile rest days and block duration feed `profilePlanSettings`. The
+  former planner's lowest ceiling (360 minutes/week, at most 90/day) is retained
+  as a product limit, never claimed as measured availability or a scientific dose.
+  Nearer exams and longer blocks do not raise it; all seven rest days are valid.
+  Previously configured explicit budgets remain bounded. The engine can deduct
+  assigned work, breaks and buffer if supplied, but does not invent these inputs.
+  Completed/manual tasks and their occurrence IDs survive replanning/week rollover.
+- Routine opportunities stay within their own week and prefer less-loaded days;
+  actual due reviews retain their dates. Keep every task's declared duration:
+  leftover minutes must not silently shorten the student's chosen practice block.
+  Resolve prerequisites before follow-ups. When there is room for two whole
+  practice blocks, favour an early first contact and a separate later date.
+  These spacing and placement rules are product policy, not an optimal-dose claim.
+- Confidence, completion and independent recall are distinct signals. Canonical
+  topic evidence uses the curriculum registry; Junior Cycle/LCA use subject coverage
+  without borrowing senior topics. Mark Bank retains ownership of card review dates.
+- `StudySessionQuiz` passes actual marked questions to `studyQuizEvidence` as each
+  answer is committed, so closing partway through retains completed results.
+  Aggregate once per canonical topic and quiz session; skips have no result.
+  Self-assessed full marks schedule a short follow-up without increasing independent
+  retrieval successes. Zero/partial marks bring practice forward. Store source and
+  aggregate marks, never answer text. Ambiguous multi-topic marks remain card-only;
+  do not assign a whole-question score to every topic selected for the session.
+  Existing topic confidence must not erase observed quiz evidence during sync.
+- `progress/{uid}/studyPlans/current` stores the bounded working plan (28 days of
+  past tasks plus the current fortnight), settings and retrieval evidence. Actual
+  study history stays in existing sessions/completions. Include this subcollection
+  in owner rules, account erasure and exports. No points or streaks live here.
+- Sync hydrates before uploading defaults. Use `mergeFields` at individual task and
+  topic map entries, and at complete settings/deadline/requirement fields: ordinary
+  recursive merge cannot remove a deleted date exception. Never write empty task
+  maps. An account-scoped local outbox retains failed changes for retry. Separate
+  tasks merge independently; concurrent edits of the same task use last server write.
+- `data/studyEvidence.ts` pairs student guidance with primary studies and their
+  limits. Hours, duration, priority weights and exact intervals are product policy,
+  not research-proven optimal doses. Rotating school subjects is coverage, not the
+  same intervention as interleaving mathematical problem types.
+- Review using the existing localhost demo route in the real app. The rejected
+  standalone dated-planner component and its stylesheet have been deleted.
+  `study-planner-local.html` now only embeds the real app with its existing localhost
+  demo mechanism. Use `?screen=planner` to inspect the original PlannerWorkbench.
+- Research references: Roediger & Karpicke (2006), retrieval practice; Cepeda et al.
+  (2008), spacing; Butler, Karpicke & Roediger (2008), corrective feedback; Rohrer,
+  Dedrick & Stershic (2015), interleaved mathematical problems. Primary-source URLs
+  and limits are preserved in `data/studyEvidence.ts`. No new panels are required.

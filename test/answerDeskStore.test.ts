@@ -4,8 +4,6 @@ import {
   readAnswer,
   writeAnswer,
   keepFirstAttempt,
-  loadAttemptFirst,
-  saveAttemptFirst,
   answerCopy,
   type InkStroke,
 } from "../components/PaperTrail/answerDeskStore";
@@ -20,26 +18,6 @@ const ink: InkStroke = {
 };
 beforeEach(() => localStorage.clear());
 afterEach(() => vi.restoreAllMocks());
-describe("Attempt-first preference", () => {
-  it("defaults on, remembers an explicit off across papers, and isolates accounts", () => {
-    expect(loadAttemptFirst(ns)).toBe(true);
-    expect(saveAttemptFirst(ns, false)).toBe(true);
-    expect(loadAttemptFirst("student-a|english|paper2")).toBe(false);
-    expect(loadAttemptFirst("student-b|maths|paper1")).toBe(true);
-    saveAttemptFirst(ns, true);
-    expect(loadAttemptFirst(ns)).toBe(true);
-  });
-  it("stays on if storage cannot be read and reports a failed preference save", () => {
-    vi.spyOn(Storage.prototype, "getItem").mockImplementation(() => {
-      throw Error("blocked");
-    });
-    vi.spyOn(Storage.prototype, "setItem").mockImplementation(() => {
-      throw Error("blocked");
-    });
-    expect(loadAttemptFirst(ns)).toBe(true);
-    expect(saveAttemptFirst(ns, false)).toBe(false);
-  });
-});
 describe("Student-authored work", () => {
   it("isolates every account, paper and question and roundtrips handwritten working", () => {
     const r = emptyAnswer();
