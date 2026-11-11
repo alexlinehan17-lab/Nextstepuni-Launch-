@@ -18,6 +18,7 @@ class NextStepBridgeViewController: CAPBridgeViewController {
     override func capacitorDidLoad() {
         super.capacitorDidLoad()
         bridge?.registerPluginInstance(StudyLiveActivityPlugin())
+        bridge?.registerPluginInstance(StudyFocusPlugin())
         #if DEBUG
         installStudyTimerDemo()
         #endif

@@ -1,3 +1,4 @@
+import { getBlockId } from './subjectData';
 import { queueTopicStudy, queueTopicPractice } from '../utils/topicLaunch';
 /**
  * @license
@@ -748,7 +749,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
       onOpenMobileProfile={onOpenMobileProfile}
       hasUnreadNotifications={hasUnreadNotifications}
       gamificationState={gamification.isLoaded ? gamification.state : null}
-      onPlannedStudy={(block, index) => handleStudyFromTimetable({ subject: block.subjectName, sessionType: block.sessionType, durationMinutes: block.durationMinutes, dateKey: toDateKey(new Date()), blockId: `block-${index}` })}
+      onPlannedStudy={(block, index) => handleStudyFromTimetable({ subject: block.subjectName, sessionType: block.sessionType, durationMinutes: block.durationMinutes, dateKey: toDateKey(new Date()), blockId: getBlockId(block, index) })}
     />;
   }
 

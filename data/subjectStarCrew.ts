@@ -543,13 +543,34 @@ const ARTWORK_ALIASES: Record<string, string> = {
   "introduction to ict": "computer-science",
   "vocational preparation and guidance": "lcvp-link-modules",
   "leisure and recreation": "active-leisure-studies",
-  "arts education": "art"
+  "arts education": "art",
+  "visual art": "art",
+  "metalwork": "engineering",
+  "materials technology wood": "construction-studies",
+  "dance": "drama-film-and-theatre-studies",
+  "drama": "drama-film-and-theatre-studies",
+  "sphe": "social-education",
+  "cspe": "politics-and-society",
+  "religious education non exam": "religious-education",
+  "physical education non exam": "physical-education",
+  "artistic performance": "drama-film-and-theatre-studies",
+  "chinese language and culture": "mandarin-chinese",
+  "coding": "computer-science",
+  "digital media literacy": "computer-science",
+  "philosophy": "classical-studies",
+  "a personal project: caring for animals level 2": "agricultural-science",
+  "csi: exploring forensic science level 2": "science",
+  "enterprise in animation level 2": "art",
+  "history level 2": "history",
+  "around the world in eighty days level 1": "geography",
+  "food glorious food level 1": "home-economics",
+  "keeping well looking good feeling great level 1": "active-leisure-studies"
 };
 
 function artworkKey(subject: string): string {
   return subject.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
     .replace(/&/g, ' and ').replace(/\./g, '').replace(/[-,()/]/g, ' ')
-    .replace(/\s+/g, ' ').trim().replace(/^(?:jc|lca) /, '');
+    .replace(/\s+/g, ' ').trim().replace(/^(?:jc|lca|leaving cert) /, '');
 }
 
 // Artwork aliases are presentation-only; curriculum identities remain untouched.

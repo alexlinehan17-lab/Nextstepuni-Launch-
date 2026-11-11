@@ -6,8 +6,8 @@
   width: clamp(320px, var(--ad-size, 43%), min(70%, calc(100% - 290px)));
   flex-shrink: 0;
   overflow: auto;
-  border-left: 1px solid #d5d3cb;
-  background: #f7f6f2;
+  border: 1px solid #292925;
+  background: #fff;
   color: #222;
   min-height: 0;
 }
@@ -70,7 +70,7 @@
   flex: 1;
   padding: 9px;
   background: transparent;
-  border: 1px solid #a7a69c;
+  border: 1px solid #383833;
   border-radius: 7px;
   color: inherit;
   font-size: 13px;
@@ -88,7 +88,7 @@
   white-space: normal;
 }
 .ad-scope [data-slot="button"][aria-pressed="true"] {
-  color: #f7f6f1;
+  color: #fff;
 }
 .ad-scope [data-slot="button"][aria-pressed="true"]::before {
   background: #292925;
@@ -169,7 +169,7 @@
   font:
     400 15px/1.75 "DM Sans",
     sans-serif;
-  border: 1px solid #aaa99f;
+  border: 1px solid #383833;
   border-radius: 8px;
   background: #fff;
   color: #222;
@@ -251,10 +251,10 @@
 }
 .ad-kept {
   padding: 18px;
-  border: 1px solid #cdcec3;
+  border: 1px solid #383833;
   border-radius: 8px;
   margin: 18px 0;
-  background: #eeefe8;
+  background: #fff;
 }
 .dark .ad-kept {
   background: #20211e;
@@ -408,8 +408,6 @@
   }
   .ad-pane {
     width: 100%;
-    border-left: 0;
-    border-top: 1px solid #4b4b43;
     flex: 0 0 var(--ad-size, 49%);
     max-height: min(75%, calc(100% - 150px));
     min-height: min(160px, 45%);
@@ -428,7 +426,7 @@
     z-index: 9;
   }
   .ad-scope {
-    background: #f7f6f2 !important;
+    background: #fff !important;
   }
   .dark .ad-scope {
     background: #141414 !important;
@@ -502,7 +500,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #eeede8;
+  background: #fff;
   cursor: col-resize;
   touch-action: none;
   outline: none;

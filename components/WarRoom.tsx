@@ -13,6 +13,7 @@ import {
   type TimetableCompletions,
   getBlockId,
 } from './subjectData';
+import { useDatedStudyPlan } from '../hooks/useDatedStudyPlan';
 import {
   allocateSessions,
   computeSubjectPriorities,
@@ -210,14 +211,16 @@ const WarRoomWorkspace: React.FC<WarRoomProps> = ({
       ? computeWeeksUntilExam(profile.examStartDate)
       : 22
   ), [currentDateKey, parsedExamDate, profile.examStartDate]);
+  const dated = useDatedStudyPlan(profile, uid);
   const allocations = useMemo(() => {
+    if (dated.enabled && dated.timetable) return subjects.map(s=>({subjectName:s.subjectName,sessions:dated.timetable!.flatMap(d=>d.blocks).filter(b=>b.subjectName===s.subjectName).length,priorityLabel:'Medium' as const,priorityScore:0}));
     const priorities = computeSubjectPriorities(
       subjects,
       topicMastery.mastery,
       profile.examStartDate,
     );
     return allocateSessions(priorities, weeksUntilExam, sm2States, blockDuration);
-  }, [blockDuration, profile.examStartDate, sm2States, subjects, topicMastery.mastery, weeksUntilExam]);
+  }, [blockDuration, profile.examStartDate, sm2States, subjects, topicMastery.mastery, weeksUntilExam, dated.enabled, dated.timetable]);
   const plannedSessions = allocations.reduce((total, item) => total + item.sessions, 0);
   const hasGradeData = subjects.some(subject => Boolean(subject.currentGrade && subject.targetGrade));
   const currentPoints = hasGradeData ? computeCurrentTotal(subjects) : 0;
@@ -225,11 +228,11 @@ const WarRoomWorkspace: React.FC<WarRoomProps> = ({
   const generatedTodayBlocks = useMemo((): WarRoomStudyBlock[] => {
     const todayKey = currentDateKey;
     const todayDayIndex = currentDate.getDay() === 0 ? 6 : currentDate.getDay() - 1;
-    const timetable = generateWeeklyTimetable(
+    const timetable = dated.enabled ? dated.timetable ?? [] : generateWeeklyTimetable(
       allocations,
       weeksUntilExam,
       0,
-      (profile.restDays ?? []).slice(0, 3),
+      profile.restDays ?? [],
       blockDuration,
       sm2States,
       topicMastery.mastery,
@@ -239,7 +242,7 @@ const WarRoomWorkspace: React.FC<WarRoomProps> = ({
 
     return (timetable[todayDayIndex]?.blocks ?? []).flatMap((block, blockIndex) => {
       const blockId = getBlockId(block, blockIndex);
-      if (completedIds.includes(blockId) || skippedIds.has(`${todayKey}|${blockId}`)) return [];
+      if (completedIds.includes(blockId) || skippedIds.has(`${todayKey}|${blockId}`) || dated.saved?.plan.tasks.some(t=>t.id===blockId&&t.status==='completed')) return [];
       return [{
         subject: block.subjectName,
         sessionType: block.sessionType,
@@ -248,7 +251,7 @@ const WarRoomWorkspace: React.FC<WarRoomProps> = ({
         blockId,
       }];
     });
-  }, [allocations, blockDuration, currentDate, currentDateKey, profile.restDays, skippedSessions, sm2States, timetableCompletions, topicMastery.mastery, weeksUntilExam]);
+  }, [allocations, blockDuration, currentDate, currentDateKey, profile.restDays, skippedSessions, sm2States, timetableCompletions, topicMastery.mastery, weeksUntilExam, dated.enabled, dated.timetable, dated.saved]);
   const actionableTodayBlocks = todayBlocks ?? generatedTodayBlocks;
 
   const completedThisWeek = useMemo(() => {
@@ -256,7 +259,9 @@ const WarRoomWorkspace: React.FC<WarRoomProps> = ({
     const timetableCounts: Record<string, Record<string, number>> = {};
     const recordedSessionCounts: Record<string, Record<string, number>> = {};
 
-    for (const [dateKey, blockIds] of Object.entries(timetableCompletions)) {
+    const completions:Record<string,string[]> = Object.fromEntries(Object.entries(timetableCompletions).map(([date,ids])=>[date,[...ids]]));
+    for(const task of dated.saved?.plan.tasks??[])if(task.status==='completed')completions[task.date]=[...new Set([...(completions[task.date]??[]),task.id])];
+    for (const [dateKey, blockIds] of Object.entries(completions)) {
       if (!weekKeys.has(dateKey)) continue;
       timetableCounts[dateKey] = timetableCounts[dateKey] ?? {};
       for (const blockId of blockIds) {
@@ -285,7 +290,7 @@ const WarRoomWorkspace: React.FC<WarRoomProps> = ({
       ), 0);
     }
     return counts;
-  }, [currentDate, studySessions, subjects, timetableCompletions]);
+  }, [currentDate, studySessions, subjects, timetableCompletions, dated.saved]);
 
   const hoursStudiedMap = useMemo(() => Object.fromEntries(subjects.map(subject => [
     subject.subjectName, recordedSubjectActivity(studySessions, subject.subjectName).seconds / 3600,

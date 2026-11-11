@@ -10,7 +10,7 @@ const folder = fileURLToPath(new URL('.', import.meta.url));
 const destination = resolve(root, 'dist/war-room-review');
 await build({ configFile: false, root, publicDir: false, plugins: [react()], define: { 'process.env.NODE_ENV': JSON.stringify('production') },
   resolve: { alias: [
-    { find: /^.*\/contexts\/(?:InnovationDataContext|ProgressContext)(?:\.tsx)?$/, replacement: resolve(folder, 'review-data.tsx') },
+    { find: /^.*\/contexts\/(?:AuthContext|InnovationDataContext|ProgressContext)(?:\.tsx)?$/, replacement: resolve(folder, 'review-data.tsx') },
     { find: /^(?:.*\/)?firebase(?:\.ts)?$/, replacement: resolve(folder, 'firebase-review.ts') },
     { find: '@', replacement: root },
   ] },
