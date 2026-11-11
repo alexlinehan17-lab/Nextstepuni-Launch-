@@ -257,9 +257,12 @@ describe('History exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 514 distinct tasks through the 24-topic menu', () => {
+  // 514 June tasks plus the four deferred Later Modern papers' 61, which
+  // surface as their own questions once deferred sittings stop folding into
+  // June's (logicalQuestionIdentity, Economics #328).
+  it('surfaces all 575 distinct tasks through the 24-topic menu', () => {
     expect(subjectAtlasStats('history')).toMatchObject({
-      questions: 514,
+      questions: 575,
       topics: 24,
       yearMin: 2010,
       yearMax: 2026,
