@@ -121,10 +121,11 @@ Q2_HEAD = re.compile(r'^2\s*\.\s*\(\s*a\s*\)\s*(?:AND|OR)\s*\(\s*b\s*\)\s*'
 #   (a) LA ABEJA ES DECLARADA EL SER VIVO MÁS IMPORTANTE DEL PLANETA (10 marks)
 # 2016 prints the two titles with no tariff, "(a) HERIDO GRAVE POR HACERSE UN
 # 'SELFIE'", under "2. (a) and (b) = 20 marks": a title is then read only where
-# it is printed in capitals, and each part is priced by its own tariff.
+# it is printed in capitals (2014: "(a) El ROBOT JAPONÉS", one small letter at
+# most), and each part is priced by its own tariff.
 Q2_LETTER = re.compile(
     r'^\(\s*([ab])\s*\)\s*(.*?)\s*\((\d{1,3})\s*marks?\)\s*$', re.I)
-Q2_LETTER_UNPRICED = re.compile(r'^\(\s*([ab])\s*\)\s*([^a-z]*[A-Z][^a-z]*?)\s*$')
+Q2_LETTER_UNPRICED = re.compile(r'^\(\s*([ab])\s*\)\s*([A-ZÁÉÍÓÚÑ¿¡][^a-z]*?(?:[a-z][^a-z]*?)?)\s*$')
 
 # A question head inside Higher Section A or B.
 #   Q. 1 3 × 3m = 9 marks        Q.4 (6 marks)
@@ -169,7 +170,10 @@ BARE_TOTAL_OLD = re.compile(r'^(\d{1,3})\s*marks?(?:\s*\(\s*(\d{1,3})\s*m\s*\))?
 # A quota: the scheme's own statement of how many of the listed answers a
 # candidate must give. "Any three of:" and "Three of:" are the same thing.
 # 2019 Higher prints the count as a figure: "Any 4 of:".
-QUOTA = re.compile(r'^(?:Any\s+)?(one|two|three|four|five|[1-5])\s+of\s*:?\s*(.*)$', re.I)
+# The colon is the count's: 2014 Higher Q2(b)(iii) "One of his works hung in
+# the entrance of the Twin Towers." is a sentence, not a menu. (Every count
+# the schemes print has one, "Three of :" included.)
+QUOTA = re.compile(r'^(?:Any\s+)?(one|two|three|four|five|[1-5])\s+of\s*(?::\s*(.*)|$)', re.I)
 QUOTA_WORDS = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5,
                '1': 1, '2': 2, '3': 3, '4': 4, '5': 5}
 
@@ -271,6 +275,19 @@ LAYOUTS = {
     # 2015 Higher Question 2(b)(ii) numbers its two answers "(a)" and "(b)"
     # inside the roman part, priced (2+2 marks): read as the two answers they
     # are, each on its own line.
+    # 2014 Higher letters its literature Q4 answers "(a)", "(b)", "(c)" under
+    # "Any 3 of:", where the reader takes a letter for a part; and prints its
+    # listening Q7(a) letter without its full stop ("a to give information …",
+    # rendered and read). 2014 Ordinary does the same at listening Q6(b) ("b
+    # south").
+    (2014, 'hl'): [('(a) people who wanted to buy an apartment to live in/\n'
+                    '(b) people who want to buy an apartment in order to launder dirty money/\n'
+                    '(c) people who want to buy an apartment in the Olympic village.',
+                    '- people who wanted to buy an apartment to live in/\n'
+                    '- people who want to buy an apartment in order to launder dirty money/\n'
+                    '- people who want to buy an apartment in the Olympic village.'),
+                   ('\na to give information about the risks', '\na. to give information about the risks')],
+    (2014, 'ol'): [('\nb south (5 marks)', '\nb. south (5 marks)')],
     (2015, 'hl'): [("(ii) (a) It’s the company which has been in charge of the Christmas lights\n"
                     "for the past 45 years.\n(b) It will pay the costs. (2+2 marks)",
                     "(ii) - It’s the company which has been in charge of the Christmas lights\n"
@@ -295,6 +312,26 @@ MENU_CUTS = {
     # children (5m+5m)": "abandoned/orphaned" is one answer's two words.
     (2018, 'ol', 'A', 5, 'f', None): ('a family', 'a stable home',
                                       'a better education to abandoned/orphaned children'),
+    # 2014 Higher Section B Q4(b) and (c) wrap two of their answers over a
+    # line break ("Bookings used to be two months in advance," / "now (the
+    # industry) doesn't know …"; "… with their own house, looking for" /
+    # "(long) stays abroad"): each sentence is one answer.
+    (2014, 'hl', 'B', 4, 'b', None): (
+        'Uncertainty is attacking the nerves of all sectors /tourist industry',
+        'Bookings used to be two months in advance, now (the industry) doesn’t know how season/August will end',
+        'difficult to manage prices/tariffs and offers',
+        'People are not deciding until the last minute',
+        'Prices are going down',
+        'stays are shorter / used to be a month now more than two weeks is unusual',
+        'booking used to be for a minimum of one week/ and are now taken by days.',
+        'People are spending less even when they are on holidays.',
+        'House swap companies have benefited.'),
+    (2014, 'hl', 'B', 4, 'c', None): (
+        'The profile of the users is changing',
+        'previously they were families with their own house, looking for (long) stays abroad',
+        'seventy percent of house swaps are between people living in Spain',
+        'now more and more young people / couples are participating',
+        'the length of holidays are shorter / even just for the weekend'),
 }
 
 
@@ -1001,7 +1038,7 @@ class EsScheme:
             m = _menu_at(kept, i)
             if m:
                 quota = QUOTA_WORDS[m.group(1).lower()]
-                tail = m.group(2).strip()
+                tail = (m.group(2) or "").strip()
                 if tail:
                     rest.append(tail)
                 continue
@@ -1081,7 +1118,8 @@ class EsScheme:
                     # science fiction, biographies," / "cookery books or recipes".
                     bare = re.sub(r'\([^()]*\)', '', prev.rstrip(','))
                     slashes, commas_ = '/' in bare, ',' in bare
-                    if lines and (prev.endswith('/') or prev.count('(') > prev.count(')')
+                    if lines and (prev.endswith('/') or l.startswith('/')
+                                  or prev.count('(') > prev.count(')')
                                   # a sentence the line break split: 2017 Higher
                                   # listening Q3(c) "he got to know Marta" / "and
                                   # all her friends." (coordinator ruling, 12 Nov)
@@ -1187,7 +1225,7 @@ class EsScheme:
             options = answers
         elif (self.year <= OLD_LETTERS_LAST and not marked and terms and len(terms) >= 2
               and len([l for l in rest if l and l.strip()]) == len(terms)
-              and all(not re.search(r'(?:[,/(]|\b(?:and|or|y|o))$', ' '.join(l.split()))
+              and all(not re.search(r'(?:[/(]|\b(?:and|or|y|o))$', ' '.join(l.split()))
                       and l.count('(') == l.count(')')
                       for l in rest if l and l.strip())
               and all(re.match(r'^[A-ZÁÉÍÓÚÑ(¿¡“‘"…]', ' '.join(l.split()))
@@ -1197,7 +1235,11 @@ class EsScheme:
             # "Withdrawal of resources (2+2marks)". A line that runs on (a
             # comma, slash or "and" at its end, a bracket open, the next line
             # in lower case) is one answer wrapped instead.
-            points = list(zip([' '.join(l.split()) for l in rest if l and l.strip()], terms))
+            # (A comma closing a line closes that answer, as the next line
+            # opening in capitals shows: 2014 Higher listening Q5(c) "The
+            # August fair," / "Holy Week/Easter" / "(Spanish) Film Festival".)
+            points = list(zip([' '.join(l.split()).rstrip(',').strip() for l in rest if l and l.strip()],
+                              terms))
         elif answers:
             # One answer, however many marks it is worth. "(5+5m)" on a single
             # printed line is the SEC splitting ONE answer's marks across its
@@ -1231,7 +1273,7 @@ class EsScheme:
             # congratulate her," / "(ii) …". The connective at a cut is the
             # list's, not the answer's: each answer is the slice without it.
             def trim(a):
-                a = re.sub(r'\s+(?:and|or|y|o)$', '', a.strip().rstrip(',').strip())
+                a = re.sub(r'\s+(?:and|or|y|o)$', '', a.strip().rstrip(',/').strip())
                 return re.sub(r'^(?:and|y)\s+', '', a)
             options = [trim(o) for o in options]
             points = [(trim(t), m) for t, m in points]

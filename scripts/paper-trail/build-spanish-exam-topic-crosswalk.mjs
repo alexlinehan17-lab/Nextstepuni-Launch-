@@ -445,6 +445,7 @@ const HIGHER_WRITING_PAGES = {
   2025: { b5: 14, c2: 21 },
   2020: { b5: 9, c2: 13 },
   2026: { b5: 14, c2: 21 },
+  2014: { b5: 9, c2: 13 },
   2015: { b5: 9, c2: 13 },
   2016: { b5: 9, c2: 13 },
   2017: { b5: 9, c2: 13 },
@@ -483,6 +484,9 @@ for (const extra of [
   { year: 2017, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · 1(b) Journalistic · Q4', semantic: 'higher-journalistic', page: 5 },
   { year: 2016, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · Journalistic Text · Q4', semantic: 'higher-journalistic', page: 5 },
   { year: 2015, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · 1(b) Journalistic Text · Q4', semantic: 'higher-journalistic', page: 5 },
+  { year: 2014, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · Journalistic Text · Q4', semantic: 'higher-journalistic', page: 5 },
+  // 2014's Irish map anchors literature Q5 twice (n5, n6), so its journalistic Q3 is n9.
+  { year: 2014, langs: ['iv'], after: '9', n: 'A1b4', label: 'Section A · Journalistic Text · Q4', semantic: 'higher-journalistic', page: 5 },
   // 2022's English map anchors no Question 2 at all ("Question 2 (10 marks)
   // Answer EITHER (a) or (b) in ENGLISH.", p11); the Irish map has it (n 4).
   { year: 2022, langs: ['ev'], after: 'A1b4', n: 'A2', label: 'Section A · Q2 (short texts)', semantic: 'higher-short', page: 11 },
