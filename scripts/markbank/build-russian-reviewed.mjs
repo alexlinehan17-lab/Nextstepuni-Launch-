@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { paperEntry, resolvePaperFileid, resolveCompanionFileid } from './paperIndex.mjs';
 import { audioMaterialFault } from './audioMaterial.mjs';
 import { reviewedRussianJointTask } from './russianJointTasks.mjs';
+import { validateReviewedRussianQuestionTopics } from './russianJointTopics.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const read = relative => JSON.parse(readFileSync(resolve(ROOT, relative), 'utf8'));
@@ -37,6 +38,7 @@ const cards = authored.map(({ review, ...card }) => {
     qa: { gates: ['original-pdf-review', 'printed-task-census', 'source-defined-tariff', ...(previous ? ['reviewed-card-correction'] : [])],
       humanReviewedBy: 'Codex source review; browser QA pending', humanReviewedAt: '2026-11-06' } };
 });
+await validateReviewedRussianQuestionTopics(ROOT, records, cards);
 const out = resolve(ROOT, 'components/MarkBank/cards/russian');
 mkdirSync(out, { recursive: true });
 writeFileSync(resolve(out, 'reviewed.json'), JSON.stringify(cards, null, 2) + '\n');

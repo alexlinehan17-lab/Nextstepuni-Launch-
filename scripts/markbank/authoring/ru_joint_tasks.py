@@ -35,7 +35,24 @@ def validate_joint_task(source, card, registry=None):
     assert len(set(refs)) == len(refs) == len({q['n'] for q in questions}), source['id']
     compact = lambda text: ' '.join(text.split())
     for q in questions:
+        assert isinstance(q.get('n'), str) and q['n'].strip() == q['n'] and q['n'], 'Missing Russian joint question identity'
+        assert isinstance(q.get('questionRef'), str) and q['questionRef'].strip(), q['n']
+        for key, allowed in [('questionPages', expected['paperPages']), ('schemePages', expected['schemePages'])]:
+            pages = q.get(key)
+            assert isinstance(pages, list) and pages and len(set(pages)) == len(pages), (q['n'], key)
+            assert all(type(page) is int and page > 0 and page in allowed for page in pages), (q['n'], key)
         assert compact(q['questionText']) and compact(q['questionText']) in compact(card['questionText']), q['questionRef']
+    if any('topicId' in q or 'additionalTopicIds' in q for q in questions):
+        union=set()
+        for q in questions:
+            assert isinstance(q.get('topicId'),str) and q['topicId'].strip(), q['questionRef']
+            assert isinstance(q.get('additionalTopicIds'),list) and len(q['additionalTopicIds'])<=1, q['questionRef']
+            ids=[q['topicId'],*q['additionalTopicIds']]
+            assert all(isinstance(value,str) and value.strip()==value and value for value in ids), q['questionRef']
+            assert len(set(ids))==len(ids), q['questionRef']
+            union.update(ids)
+        ids=[card['topicId'],*card.get('additionalTopicIds',[])]
+        assert len(set(ids))==len(ids) and set(ids)==union, 'Incomplete Russian joint-card topic coverage'
     return expected
 
 
