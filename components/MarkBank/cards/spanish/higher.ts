@@ -3380,6 +3380,921 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-1-a", topicId: "spanish-3-0", conceptId: "surf-courses-offered",
+    section: "L", questionRef: "2022 HL Section L Q1(a)",
+    stem: "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. CURSOS DE SURF EN CÁDIZ (SURFING COURSES IN CADIZ)",
+    questionText: "What is said about the surf courses offered? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They are for all levels", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    { id: "r-2", kind: "point", verbatim: "they only accept children aged 6 and over", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 1 — CURSOS DE SURF EN CÁDIZ",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-1-b", topicId: "spanish-3-0", conceptId: "have-opportunity",
+    section: "L", questionRef: "2022 HL Section L Q1(b)",
+    stem: "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. CURSOS DE SURF EN CÁDIZ (SURFING COURSES IN CADIZ)",
+    questionText: "What do you have the opportunity to do? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":2,"perOption":2,"options":["improve your technique","enjoy nature","meet (new) people"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 1 — CURSOS DE SURF EN CÁDIZ",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-1-c", topicId: "spanish-3-0", conceptId: "things-included-price-classes",
+    section: "L", questionRef: "2022 HL Section L Q1(c)",
+    stem: "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. CURSOS DE SURF EN CÁDIZ (SURFING COURSES IN CADIZ)",
+    questionText: "Name three things included in the price of the classes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.” The scheme adds: “(qualified) monitor = 0m”.", group: {"claimMax":3,"perOption":0,"options":["accommodation","(qualified) instructor","all the (necessary) material","insurance"],"perOptionSteps":[0,0,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 1 — CURSOS DE SURF EN CÁDIZ",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-2-a", topicId: "spanish-3-2", conceptId: "translating-slow-process-pilar",
+    section: "L", questionRef: "2022 HL Section L Q2(a)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON PILAR RAMÍREZ, TRADUCTORA (INTERVIEW WITH THE TRANSLATOR, PILAR RAMÍREZ)",
+    questionText: "Why is translating a slow process for Pilar? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":2,"options":["she has to concentrate (a lot)","she takes a month to translate (about) 100 pages"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON PILAR RAMÍREZ, TRADUCTORA",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-2-b", topicId: "spanish-3-2", conceptId: "apart-from-books-must-translated",
+    section: "L", questionRef: "2022 HL Section L Q2(b)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON PILAR RAMÍREZ, TRADUCTORA (INTERVIEW WITH THE TRANSLATOR, PILAR RAMÍREZ)",
+    questionText: "Apart from books, what must be translated? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":2,"perOption":1,"options":["brochures","lists of ingredients","(computer) instructions"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON PILAR RAMÍREZ, TRADUCTORA",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-2-c", topicId: "spanish-3-2", conceptId: "does-she-love-working-from-home",
+    section: "L", questionRef: "2022 HL Section L Q2(c)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON PILAR RAMÍREZ, TRADUCTORA (INTERVIEW WITH THE TRANSLATOR, PILAR RAMÍREZ)",
+    questionText: "Why does she love working from home?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":4,"options":["no-one bothers her","she uses her breaks to exercise"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON PILAR RAMÍREZ, TRADUCTORA",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-2-d", topicId: "spanish-3-2", conceptId: "advice-does-she-future-translators",
+    section: "L", questionRef: "2022 HL Section L Q2(d)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. ENTREVISTA CON PILAR RAMÍREZ, TRADUCTORA (INTERVIEW WITH THE TRANSLATOR, PILAR RAMÍREZ)",
+    questionText: "What advice does she give to future translators?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(You must) spend (a lot of) time in a country where your second language is spoken", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 2 — ENTREVISTA CON PILAR RAMÍREZ, TRADUCTORA",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-3-a", topicId: "spanish-3-2", conceptId: "his-early-life-not-easy",
+    section: "L", questionRef: "2022 HL Section L Q3(a)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON EL COCINERO, KARLOS ARGUIÑANO (SPEAKING WITH THE CHEF, KARLOS ARGUIÑANO)",
+    questionText: "Why was his early life not easy? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(His) mother had (health) problems and he had to help with household chores", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON EL COCINERO, KARLOS ARGUIÑANO",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-3-b", topicId: "spanish-3-2", conceptId: "does-karlos-think-his-success-due",
+    section: "L", questionRef: "2022 HL Section L Q3(b)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON EL COCINERO, KARLOS ARGUIÑANO (SPEAKING WITH THE CHEF, KARLOS ARGUIÑANO)",
+    questionText: "What does Karlos think his success is due to?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(His) food", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    { id: "r-2", kind: "point", verbatim: "jokes", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "songs", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON EL COCINERO, KARLOS ARGUIÑANO",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-3-c", topicId: "spanish-3-2", conceptId: "does-say-cooking-home",
+    section: "L", questionRef: "2022 HL Section L Q3(c)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON EL COCINERO, KARLOS ARGUIÑANO (SPEAKING WITH THE CHEF, KARLOS ARGUIÑANO)",
+    questionText: "What does he say about cooking at home? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":2,"perOption":2,"options":["you don’t need to spend much money","(it’s a question of) being organised","not being afraid"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON EL COCINERO, KARLOS ARGUIÑANO",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-3-d", topicId: "spanish-3-2", conceptId: "who-does-love-teach",
+    section: "L", questionRef: "2022 HL Section L Q3(d)",
+    stem: "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO CON EL COCINERO, KARLOS ARGUIÑANO (SPEAKING WITH THE CHEF, KARLOS ARGUIÑANO)",
+    questionText: "Who does he love to teach? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Young people leaving (parents’) home for the first time", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 3 — HABLANDO CON EL COCINERO, KARLOS ARGUIÑANO",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-4-a", topicId: "spanish-3-1", conceptId: "where-exactly-santiago-cuba-situated",
+    section: "L", questionRef: "2022 HL Section L Q4(a)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. EL FESTIVAL DEL FUEGO (THE FESTIVAL OF FIRE)",
+    questionText: "Where exactly is Santiago de Cuba situated?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Southeast (of Cuba)", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    { id: "r-2", kind: "point", verbatim: "(about) 900 km from the capital", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — EL FESTIVAL DEL FUEGO",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-4-b", topicId: "spanish-3-1", conceptId: "festival-known-event-integration",
+    section: "L", questionRef: "2022 HL Section L Q4(b)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. EL FESTIVAL DEL FUEGO (THE FESTIVAL OF FIRE)",
+    questionText: "Why is the festival known as an event of integration?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It promotes exchange of opinions /experiences (among people)", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — EL FESTIVAL DEL FUEGO",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-4-c", topicId: "spanish-3-1", conceptId: "dancers",
+    section: "L", questionRef: "2022 HL Section L Q4(c)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. EL FESTIVAL DEL FUEGO (THE FESTIVAL OF FIRE)",
+    questionText: "What is said about the dancers?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(They wear) traditional clothes in bright colours", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — EL FESTIVAL DEL FUEGO",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-4-d", topicId: "spanish-3-1", conceptId: "should-devil-burns",
+    section: "L", questionRef: "2022 HL Section L Q4(d)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. EL FESTIVAL DEL FUEGO (THE FESTIVAL OF FIRE)",
+    questionText: "What should you do as the ‘devil’ burns? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Think about your problems and hope for a positive future", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 4 — EL FESTIVAL DEL FUEGO",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-5-a", topicId: "spanish-3-1", conceptId: "exactly-street-described",
+    section: "L", questionRef: "2022 HL Section L Q5(a)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA CHOCOLATERÍA SAN GINÉS (SAN GINES ‐ THE CHOCOLATE CAFÉ)",
+    questionText: "How exactly is the street described?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pedestrianised (street)", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, group: {"claimMax":1,"perOption":2,"options":["one of the narrowest in the capital","one of the narrowest","narrow"],"optionMarks":[2,2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — LA CHOCOLATERÍA SAN GINÉS",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-5-b", topicId: "spanish-3-1", conceptId: "did-this-chocolate-cafe-become-famous",
+    section: "L", questionRef: "2022 HL Section L Q5(b)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA CHOCOLATERÍA SAN GINÉS (SAN GINES ‐ THE CHOCOLATE CAFÉ)",
+    questionText: "Why did this chocolate café become famous? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(It was the) only place where one could drink something hot at night", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — LA CHOCOLATERÍA SAN GINÉS",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-5-c", topicId: "spanish-3-1", conceptId: "tradition-madrid",
+    section: "L", questionRef: "2022 HL Section L Q5(c)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA CHOCOLATERÍA SAN GINÉS (SAN GINES ‐ THE CHOCOLATE CAFÉ)",
+    questionText: "What is said about a tradition in Madrid?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":3,"options":["(It is a tradition) to visit (the chocolate café) with grandparents at Christmas","to visit with grandparents","to visit (the chocolate café) at Christmas","to visit the (chocolate) café"],"optionMarks":[3,2,2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — LA CHOCOLATERÍA SAN GINÉS",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-5-d", topicId: "spanish-3-1", conceptId: "interior-described",
+    section: "L", questionRef: "2022 HL Section L Q5(d)",
+    stem: "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA CHOCOLATERÍA SAN GINÉS (SAN GINES ‐ THE CHOCOLATE CAFÉ)",
+    questionText: "How is the interior described? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(a lot of) wood; lamps; photos (of famous customers)", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 5 — LA CHOCOLATERÍA SAN GINÉS",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-6-a", topicId: "spanish-3-3", conceptId: "will-weather-like-madrid",
+    section: "L", questionRef: "2022 HL Section L Q6(a)",
+    stem: "EL TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+    questionText: "What will the weather be like in Madrid? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Rainy (day) with cloudy (intervals)", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 6 — EL TIEMPO",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-6-b", topicId: "spanish-3-3", conceptId: "weather-expected-balearic-islands",
+    section: "L", questionRef: "2022 HL Section L Q6(b)",
+    stem: "EL TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+    questionText: "What weather is expected in the Balearic Islands? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Winds from the north at night", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 6 — EL TIEMPO",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-6-c", topicId: "spanish-3-3", conceptId: "will-weather-like-tomorrow",
+    section: "L", questionRef: "2022 HL Section L Q6(c)",
+    stem: "EL TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+    questionText: "What will the weather be like tomorrow? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":3,"options":["Sunnier (day) with clear (skies)","Sun"],"optionMarks":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 6 — EL TIEMPO",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-7-a", topicId: "spanish-3-4", conceptId: "has-barrio-sesamo-taught-children",
+    section: "L", questionRef: "2022 HL Section L Q7(a)",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. BARRIO SÉSAMO (SESAME STREET)",
+    questionText: "What has Barrio Sésamo taught children? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":2,"perOption":1,"options":["days of the week","(difference between) up and down","crossing the street"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — BARRIO SÉSAMO",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-7-b", topicId: "spanish-3-4", conceptId: "describe-world-barrio-sesamo-trying-create",
+    section: "L", questionRef: "2022 HL Section L Q7(b)",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. BARRIO SÉSAMO (SESAME STREET)",
+    questionText: "Describe the world Barrio Sésamo is trying to create.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(a world where) colour/ family circumstances (of its residents) don’t matter", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — BARRIO SÉSAMO",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-7-c", topicId: "spanish-3-4", conceptId: "did-videos-help-children-understand-pandemic",
+    section: "L", questionRef: "2022 HL Section L Q7(c)",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. BARRIO SÉSAMO (SESAME STREET)",
+    questionText: "What did their videos help children to understand about the pandemic?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":1,"perOption":3,"options":["danger","sadness","stress"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — BARRIO SÉSAMO",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALPA00EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-l-7-d", topicId: "spanish-3-4", conceptId: "does-elmo-explain-children",
+    section: "L", questionRef: "2022 HL Section L Q7(d)",
+    stem: "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. BARRIO SÉSAMO (SESAME STREET)",
+    questionText: "What does Elmo explain to children? Give full details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(the) importance of washing (your) hands for enough time", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION TEST",
+          "title": "Question 7 — BARRIO SÉSAMO",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC012ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 7 · listening",
+          "title": "2022 Spanish · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "secFileid": "LC012ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC012ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
     paperFileid: "LC012ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
     id: "es-2022-hl-a1a-1-a", topicId: "spanish-7-1", conceptId: "sufrimiento",
@@ -3555,6 +4470,29 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” The scheme adds: “First correct answer = 4m”.", group: {"claimMax":3,"perOption":4,"options":["enormous","black","equipped with floats for landing on water","a man was looking out of the cabin","he was examining the sea with a pair of black binoculars","it came so close he thought he could feel the engine’s movement on his face","he identified it from the letters on its wings","it was from the Coast Guard service of the Zona del Canal"],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Gabriel García Márquez: Relato de un náufrago — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-a1a-5", topicId: "spanish-7-1", conceptId: "discuss-role-animals-novel-may-not",
+    section: "A", questionRef: "2022 HL Section A1a Q5",
+    questionText: "Discuss the role of animals in the novel.\nYou may not support your answer by reference to the extract. Answer in English on page 6.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 12, contextNote: "The scheme prints no answer for this ask. In its place it prints “Discussion on any three relevant points” and “No marks given for answers supported by reference to the extract”, under the tariff “4 + 4 + 4 = 12 marks”. The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", permittedMarks: [0,4,8,12], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3824,6 +4762,30 @@ export const CARDS: SecCard[] = [
           "kind": "source-text",
           "label": "READING COMPREHENSION",
           "title": "(b) Journalistic Text. Read the article about Diana Trujillo and answer the acco — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2022 Higher Level — © State Examinations Commission.",
+    id: "es-2022-hl-a1b-4", topicId: "spanish-5-0", conceptId: "termine-trabajo-conocer-idioma",
+    section: "A", questionRef: "2022 HL Section A1b Q4",
+    stem: "Explica o (expresa de otro modo) en ESPAÑOL una de las frases siguientes:",
+    questionText: "(a) …terminé con un trabajo ... (para 3)\nO\n(b) …conocer el idioma. (para 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 6, contextNote: "The scheme prints no answer for this ask. In its place it prints “Any mark from 0 to 6 may be awarded for this question. No marks for answers in English”, under the tariff “(6 marks)”. The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", permittedMarks: [0,1,2,3,4,5,6], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "(b) Journalistic Text. Read the article about Diana Trujillo and answer the acco — answer in Spanish",
           "pages": [
                 8
           ],
@@ -4384,6 +5346,401 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Spanish 2022 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
           "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
           "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2022 Higher Level, p.9 — © State Examinations Commission.",
+    id: "es-2022-hl-b-5", topicId: "spanish-6-0", conceptId: "trabajo-mas-importante-cambios-son-positivos",
+    section: "B", questionRef: "2022 HL Section B Q5",
+    stem: "Escribe en ESPAÑOL tu opinión (entre 80 y 150 palabras) sobre una de las siguientes afirmaciones.",
+    questionText: "(a) El trabajo no es lo más importante.\nO\n(b) Los cambios son positivos.\nO\n(c) Todo es posible con la tecnología.",
+    totalMarks: 50,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Where no marks are awarded for Content 1, (i.e. effort totally irrelevant), no marks will be award for Language 2.",
+                "No marks will be awarded for phrases taken directly from the article."
+          ],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content/Communication",
+                      "maxMarks": 25,
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Top",
+                                  "marks": [18,19,20,21,22,23,24,25],
+                                  "guidance": [
+                                        "Little or no irrelevant material",
+                                        "High level of coherence",
+                                        "Clear argumentation",
+                                        "Communicative intention fulfilled"
+                                  ]
+                            },
+                            {
+                                  "label": "Middle",
+                                  "marks": [9,10,11,12,13,14,15,16,17],
+                                  "guidance": [
+                                        "Some irrelevant material",
+                                        "Reasonable level of coherence",
+                                        "Comprehensible to Spanish speaker",
+                                        "Communicative intention more or less respected"
+                                  ]
+                            },
+                            {
+                                  "label": "Bottom",
+                                  "marks": [0,1,2,3,4,5,6,7,8],
+                                  "guidance": [
+                                        "A lot of irrelevant material",
+                                        "Lack of coherence",
+                                        "Spanish speaker would have difficulty understanding",
+                                        "Communicative intention not fulfilled"
+                                  ]
+                            }
+                      ],
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 25,
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Top",
+                                  "marks": [18,19,20,21,22,23,24,25],
+                                  "guidance": [
+                                        "Idiomatic Spanish",
+                                        "Good level of vocabulary",
+                                        "Few grammatical/ spelling mistakes",
+                                        "Correct usage of tenses"
+                                  ]
+                            },
+                            {
+                                  "label": "Middle",
+                                  "marks": [9,10,11,12,13,14,15,16,17],
+                                  "guidance": [
+                                        "Vocabulary quite good - generally adequate and appropriate",
+                                        "Verbs generally correct",
+                                        "Not too many spelling/ grammatical mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "Bottom",
+                                  "marks": [0,1,2,3,4,5,6,7,8],
+                                  "guidance": [
+                                        "Problems with vocabulary – limited range of vocabulary",
+                                        "Most verbs incorrect",
+                                        "Many spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Choose a band for Content/Communication and one for Language, then the mark within each band."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "EL TRABAJO ESTÁ CAMBIANDO — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "es-2022-hl-c-1-a", topicId: "spanish-6-1", conceptId: "going-summer-camp-malaga-improve-spanish",
+    section: "C", questionRef: "2022 HL Section C Q1(a)",
+    stem: "Answer ONE of the four parts in these two questions. That is, answer ONE of: Question 1 (a) Dialogue Construction OR Question 1 (b) Letter OR Question 2 (a) Diary Entry OR Question 2 (b) Note",
+    questionText: "You are going to a summer camp in Malaga to improve your Spanish. Complete in Spanish the following dialogue. You should attempt any five of the following points:\nSeñora López: Hola, ¿piensas venir a nuestro campamento de verano?\nTú: Say you think it would be ideal for you because the facilities are excellent. You have heard that the classes are not just fun but educational also.\nSeñora López: Pues, ¡eso depende del profesor! ¿Has ido antes a un campamento?\nTú: Say that when you were younger, you did various sports camps in Ireland during the summer holidays. Your favourite was the tennis camp.\nSeñora López: ¿Eres deportista? Porque aquí se pueden practicar muchos deportes.\nTú: Tell her that you love sport and it is very important in your life. In fact, you are captain of your school basketball team this year.\nSeñora López: Hablas español bastante bien.\nTú: Say that you have been studying Spanish for five years. Until now you have never had the opportunity to practise with Spanish people.\nSeñora López: Pues aquí no está permitido hablar inglés en los campamentos.\nTú: Say you understand, it seems a good idea. You spent two weeks in Connemara learning Irish one summer and they had the same rule there.\nSeñora López: Bueno, pienso que este campamento será perfecto para ti.\nTú: Thank Señora Lopez. Tell her that you will arrive in Malaga at the end of June, after finishing your exams and you will stay for two weeks.",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Six ‘turns’. FIVE to be answered. If all ‘turns’ are answered, mark all and award marks for the highest scoring FIVE. Allow a maximum of 5 marks each. (5 x 5m = 25 marks)",
+                "TOTAL MARKS: 25 MARKS (Mark each ‘turn’/ point individually)",
+                "5 marks: Communicative intention fulfilled.",
+                "Good level of vocabulary. Verbs correct.",
+                "3 - 4 marks: Communicative intention more or less fulfilled.",
+                "Generally good level of vocabulary.",
+                "Verbs generally correct.",
+                "2 marks: Some communicative intention fulfilled.",
+                "Quite a few grammatical errors and spelling mistakes.",
+                "Verbs mostly incorrect/ tenses wrong.",
+                "1 mark: Very small part of communicative intention conveyed.",
+                "0 marks: No communication of message.",
+                "Question 1. When marking this question, the priorities indicated for Content and Language in Section B, Q.5. should be broadly adhered to."
+          ],
+          "criteria": [
+                {
+                      "id": "turn-1",
+                      "label": "First turn",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "turn-2",
+                      "label": "Second turn",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "turn-3",
+                      "label": "Third turn",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "turn-4",
+                      "label": "Fourth turn",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "turn-5",
+                      "label": "Fifth turn",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "• Should a candidate answer more than one item from Question 1 or Question 2, all items must be marked and marks awarded only for the ONE item with the higher scoring.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nNote: In any part of written production the same mistakes will not be penalised twice.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Mark each turn you wrote on its own against the scheme's ladder above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section C Question 1 (a) — answer in Spanish",
+          "pages": [
+                17,
+                18
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "es-2022-hl-c-1-b", topicId: "spanish-6-2", conceptId: "read-article-young-people-not-protecting",
+    section: "C", questionRef: "2022 HL Section C Q1(b)",
+    stem: "Answer ONE of the four parts in these two questions. That is, answer ONE of: Question 1 (a) Dialogue Construction OR Question 1 (b) Letter OR Question 2 (a) Diary Entry OR Question 2 (b) Note",
+    questionText: "You read an article about young people not protecting the environment. You decide to write a LETTER / EMAIL in Spanish to the editor of the newspaper.\n(You may loosely base your letter/email on the points mentioned below, either agreeing or disagreeing with them. You should make five relevant points out of the eight below and each of these points should be expanded and developed.)\n• Young people are not responsible for the problems of the planet.\n• Young people know they need to protect the environment.\n• Young people can make a difference.\n• Teenagers do not have time to worry about environmental issues.\n• The internet is a way of informing people about the environment.\n• Many animal species are in danger of extinction.\n• We should invest more in renewable energy.\n• We all can do more to conserve water.",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "• There are FIVE points to be made from a possible eight. Allow a maximum of 5 marks each.",
+                "If more than five points are answered, mark all and award marks for the highest scoring FIVE.",
+                "• Note that each point should be developed and expanded.",
+                "• Letter/email can be loosely based on the suggestions given.",
+                "• Candidates can make their own points and need not use the guidelines given.",
+                "(5 x 5m = 25 marks)",
+                "TOTAL MARKS: 25 MARKS (Mark each ‘turn’/ point individually)",
+                "5 marks: Communicative intention fulfilled.",
+                "Good level of vocabulary. Verbs correct.",
+                "3 - 4 marks: Communicative intention more or less fulfilled.",
+                "Generally good level of vocabulary.",
+                "Verbs generally correct.",
+                "2 marks: Some communicative intention fulfilled.",
+                "Quite a few grammatical errors and spelling mistakes.",
+                "Verbs mostly incorrect/ tenses wrong.",
+                "1 mark: Very small part of communicative intention conveyed.",
+                "0 marks: No communication of message.",
+                "Question 1. When marking this question, the priorities indicated for Content and Language in Section B, Q.5. should be broadly adhered to."
+          ],
+          "criteria": [
+                {
+                      "id": "point-1",
+                      "label": "First point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-2",
+                      "label": "Second point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-3",
+                      "label": "Third point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-4",
+                      "label": "Fourth point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                },
+                {
+                      "id": "point-5",
+                      "label": "Fifth point",
+                      "maxMarks": 5,
+                      "permittedMarks": [0,1,2,3,4,5],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "• Should a candidate answer more than one item from Question 1 or Question 2, all items must be marked and marks awarded only for the ONE item with the higher scoring.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nNote: In any part of written production the same mistakes will not be penalised twice.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Mark each point you wrote on its own against the scheme's ladder above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section C Question 1 (b) — answer in Spanish",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "es-2022-hl-c-2-a", topicId: "spanish-6-3", conceptId: "holidays-barcelona-with-family-spanish-friend",
+    section: "C", questionRef: "2022 HL Section C Q2(a)",
+    stem: "(a) Diary Entry or (b) Note.",
+    questionText: "You are on holidays in Barcelona with your family and your Spanish friend Sara. Write a diary entry in Spanish mentioning any four of the following points:\n− Explain how you and Sara met.\n− Describe the apartment where you are staying.\n− Talk about a tourist attraction that you visited.\n− Your sister is not enjoying the holiday. Explain why.\n− Say what you are going to do this evening.",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 2(a) and (b): Five points. Four to be answered. If all are answered, read all and apply a global mark to the best FOUR according to the criteria below. Development of points not essential.",
+                "Five points, FOUR to be answered.",
+                "TOTAL MARKS: 25 MARKS",
+                "23 - 25 marks Communicative intention fulfilled.",
+                "Very good level of vocabulary.",
+                "Verbs fully correct.",
+                "18 – 22 marks Communicative intention mostly fulfilled.",
+                "Good level of vocabulary.",
+                "Verbs mostly correct.",
+                "14 - 17 marks Communicative intention more or less fulfilled.",
+                "Generally good level of vocabulary.",
+                "Verbs generally correct.",
+                "10 - 13 marks Some communicative intention fulfilled.",
+                "Some correct vocabulary.",
+                "Quite a few errors.",
+                "5 - 9 marks Small amount of message conveyed.",
+                "0 - 4 marks Very small amount of message conveyed."
+          ],
+          "criteria": [
+                {
+                      "id": "global",
+                      "label": "Global mark",
+                      "maxMarks": 25,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "• Should a candidate answer more than one item from Question 1 or Question 2, all items must be marked and marks awarded only for the ONE item with the higher scoring.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nNote: In any part of written production the same mistakes will not be penalised twice.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Place the whole piece on the scheme's bands above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section C Question 2 (a) — answer in Spanish",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Spanish 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "es-2022-hl-c-2-b", topicId: "spanish-6-4", conceptId: "have-just-started-working-youth-hostel",
+    section: "C", questionRef: "2022 HL Section C Q2(b)",
+    stem: "(a) Diary Entry or (b) Note.",
+    questionText: "You have just started working in a youth hostel in Toledo. Leave a note in Spanish for the manager, Luis. Include four of the following points:\n− Say that you have cleaned the bedrooms.\n− Tell him that the WIFI is not working.\n− You are going to town now to buy summer clothes.\n− Mention that the group from Cork arrived this afternoon.\n− Say that you will start work tomorrow morning at 7am.",
+    totalMarks: 25,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Question 2(a) and (b): Five points. Four to be answered. If all are answered, read all and apply a global mark to the best FOUR according to the criteria below. Development of points not essential.",
+                "Five points, FOUR to be answered.",
+                "TOTAL MARKS: 25 MARKS",
+                "23 - 25 marks Communicative intention fulfilled.",
+                "Very good level of vocabulary.",
+                "Verbs fully correct.",
+                "18 – 22 marks Communicative intention mostly fulfilled.",
+                "Good level of vocabulary.",
+                "Verbs mostly correct.",
+                "14 - 17 marks Communicative intention more or less fulfilled.",
+                "Generally good level of vocabulary.",
+                "Verbs generally correct.",
+                "10 - 13 marks Some communicative intention fulfilled.",
+                "Some correct vocabulary.",
+                "Quite a few errors.",
+                "5 - 9 marks Small amount of message conveyed.",
+                "0 - 4 marks Very small amount of message conveyed."
+          ],
+          "criteria": [
+                {
+                      "id": "global",
+                      "label": "Global mark",
+                      "maxMarks": 25,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "• Should a candidate answer more than one item from Question 1 or Question 2, all items must be marked and marks awarded only for the ONE item with the higher scoring.\n• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.\n• Verbs must be correct for full marks.\nNote: In any part of written production the same mistakes will not be penalised twice.",
+          "practiceNotes": [
+                "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+                "Place the whole piece on the scheme's bands above."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "WRITTEN PRODUCTION",
+          "title": "Section C Question 2 (b) — answer in Spanish",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Spanish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
     },
   } as SecCard,
   {

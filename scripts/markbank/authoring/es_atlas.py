@@ -162,7 +162,8 @@ def _writing_n(level, section, q, letter):
 # their own numbered by their printed address (build-spanish-exam-topic-
 # crosswalk.mjs adds them): 2020 Higher journalistic Q4.
 EXTRA_N = {(2020, 'hl', 'A1b', 4): 'A1b4', (2025, 'hl', 'A1b', 4): 'A1b4',
-           (2024, 'hl', 'A1b', 4): 'A1b4'}
+           (2024, 'hl', 'A1b', 4): 'A1b4',
+           (2022, 'hl', 'A1b', 4): 'A1b4', (2022, 'hl', 'A2', None): 'A2'}
 
 
 FILEID = {('hl', 'written'): 'LC012ALP000EV.pdf', ('ol', 'written'): 'LC012GLP000EV.pdf',

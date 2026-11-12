@@ -44,9 +44,8 @@ describe('Spanish cards in the Topic Atlas', () => {
     // Q3/Q4 as short texts, Question 2 as journalism). Every card they touch is
     // named here; a repair moves it out, nothing moves it in. 2020 was repaired
     // on 12 Nov 2026 (A1b Q4 given its own question; n 5, 8, 9 retagged).
-    expect(Object.keys(map.gaps).sort()).toEqual([
-      ...['a-i', 'a-ii', 'a-iii', 'b-i', 'b-ii', 'b-iii'].map(part => `es-2022-hl-a2-${part}`),
-    ]);
+    // 2022 Question 2 was given its own question on 12 Nov 2026: no gaps left.
+    expect(Object.keys(map.gaps).sort()).toEqual([]);
     expect(map.topicResidue.length).toBeLessThanOrEqual(8);
     for (const id of [...Object.keys(map.gaps), ...map.topicResidue]) {
       expect(id, id).toMatch(/^es-202[1-5]-hl-/);

@@ -23,17 +23,17 @@
       "preCorpus": 51,
       "oralBooklet": 9
     },
-    "matchedLocalCardLinks": 549,
+    "matchedLocalCardLinks": 552,
     "localPaperVariants": 136,
-    "localPhysicalMappings": 1180,
-    "distinctStudentFacingQuestions": 629,
-    "referenceMappedLocalQuestions": 449,
-    "retainedLocalQuestions": 731,
+    "localPhysicalMappings": 1186,
+    "distinctStudentFacingQuestions": 633,
+    "referenceMappedLocalQuestions": 451,
+    "retainedLocalQuestions": 735,
     "hostedPaperAnchorMaps": 136,
     "preservedBaselineVariants": 124,
     "preservedBaselineCards": 909,
     "newlyAddedPaperVariants": 12,
-    "newlyAddedPhysicalMappings": 271,
+    "newlyAddedPhysicalMappings": 277,
     "emptyReferenceTopics": [
       "spanish-higher-oral-exam",
       "spanish-higher-write-a-dialogue",
@@ -2473,7 +2473,8 @@
         "fileid": "LC012ALP000EV.pdf",
         "questionNumbers": [
           "6",
-          "8"
+          "8",
+          "A1b4"
         ]
       }
     },
@@ -3203,7 +3204,8 @@
         "fileid": "LC012ALP000EV.pdf",
         "questionNumbers": [
           "2",
-          "7"
+          "7",
+          "A2"
         ]
       }
     },
@@ -3222,7 +3224,8 @@
         "fileid": "LC012ALP000EV.pdf",
         "questionNumbers": [
           "2",
-          "7"
+          "7",
+          "A2"
         ]
       }
     },
@@ -11828,6 +11831,32 @@
       "fileid": "LC012ALP000EV.pdf",
       "paperKey": "single",
       "kind": "written",
+      "n": "A1b4",
+      "topicIds": [
+        "spanish-higher-journalistic-text"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "A2",
+      "topicIds": [
+        "spanish-higher-short-comprehensions"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV.pdf",
+      "paperKey": "single",
+      "kind": "written",
       "n": "9",
       "topicIds": [
         "spanish-higher-opinion-text"
@@ -11880,6 +11909,19 @@
       "fileid": "LC012ALP000EV.pdf",
       "paperKey": "single",
       "kind": "written",
+      "n": "B5",
+      "topicIds": [
+        "spanish-higher-opinion-text"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV.pdf",
+      "paperKey": "single",
+      "kind": "written",
       "n": "13",
       "topicIds": [
         "spanish-higher-write-a-dialogue",
@@ -11887,6 +11929,19 @@
         "spanish-higher-write-a-letteremail"
       ],
       "provenance": "reference+retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC012ALP000EV.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "C2",
+      "topicIds": [
+        "spanish-higher-write-a-diary-entrynote"
+      ],
+      "provenance": "retained-local"
     },
     {
       "level": "higher",
@@ -12051,11 +12106,37 @@
       "fileid": "LC012ALP000IV.pdf",
       "paperKey": "single",
       "kind": "written",
+      "n": "B5",
+      "topicIds": [
+        "spanish-higher-opinion-text"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2022,
+      "fileid": "LC012ALP000IV.pdf",
+      "paperKey": "single",
+      "kind": "written",
       "n": "6",
       "topicIds": [
         "spanish-higher-write-a-dialogue",
         "spanish-higher-write-a-diary-entrynote",
         "spanish-higher-write-a-letteremail"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2022,
+      "fileid": "LC012ALP000IV.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "C2",
+      "topicIds": [
+        "spanish-higher-write-a-diary-entrynote"
       ],
       "provenance": "retained-local"
     },
