@@ -438,6 +438,7 @@ for (let year = 2010; year <= 2026; year++) {
 // … sa SPÁINNIS", "2. Freagair (a) IONTRÁIL DIALAINNE nó (b) NÓTA"), checked
 // on both for every year listed.
 const HIGHER_WRITING_PAGES = {
+  2025: { b5: 14, c2: 21 },
   2020: { b5: 9, c2: 13 },
   2026: { b5: 14, c2: 21 },
 };
@@ -456,15 +457,17 @@ for (const [year, pages] of Object.entries(HIGHER_WRITING_PAGES)) {
   }
 }
 
-// A printed question the classic map never anchored: 2020 Higher's
-// journalistic Question 4 ("4. Explica (o expresa de otro modo) en ESPAÑOL una
-// de las frases siguientes", page 5, below Q3; the Irish booklet prints the
-// same head at the same place). Its map anchors the Glovo text's Q1-Q3 only,
-// so it gets a card of its own after Q3 (n 8), in both editions.
+// Printed questions the classic maps never anchored. The journalistic text's
+// Question 4 ("4. Explica (o expresa de otro modo) en ESPAÑOL una de las
+// frases siguientes"), wherever a map anchors that text question by question
+// and stops at Q3: a card of its own after Q3, in each edition that does (an
+// edition anchoring the text as one card already holds it). Each page is
+// where the paper prints that head, checked in both booklets.
 for (const extra of [
-  { year: 2020, after: '8', n: 'A1b4', label: 'Section A · Texto periodístico (Glovo) · Q4', semantic: 'higher-journalistic', page: 5 },
+  { year: 2020, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · Texto periodístico (Glovo) · Q4', semantic: 'higher-journalistic', page: 5 },
+  { year: 2025, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · Q1(b) Journalistic Text · Q4', semantic: 'higher-journalistic', page: 10 },
 ]) {
-  for (const lang of ['ev', 'iv']) {
+  for (const lang of extra.langs) {
     const paper = findPaper(extra.year, 'higher', lang, 'written');
     const at = paper.q.findIndex(question => question.n === extra.after);
     if (at < 0 || paper.q.some(question => question.n === extra.n)) {

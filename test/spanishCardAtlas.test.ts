@@ -47,7 +47,7 @@ describe('Spanish cards in the Topic Atlas', () => {
     expect(Object.keys(map.gaps).sort()).toEqual([
       ...['a-i', 'a-ii', 'a-iii', 'b-i', 'b-ii', 'b-iii'].map(part => `es-2022-hl-a2-${part}`),
     ]);
-    expect(map.topicResidue.length).toBeLessThanOrEqual(40);
+    expect(map.topicResidue.length).toBeLessThanOrEqual(31);
     for (const id of [...Object.keys(map.gaps), ...map.topicResidue]) {
       expect(id, id).toMatch(/^es-202[1-5]-hl-/);
     }

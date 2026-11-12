@@ -74,15 +74,15 @@ CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS} | {
 FROZEN_SHAPES = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS}
 # The sittings whose "direction" asks (Higher A1a Q5, A1b Q4) are carded with
 # the scheme's own direction on an unprinted row. 2021-2025 still exclude them.
-DIRECTION_CARDED = {(2026, 'hl'), (2020, 'hl')}
+DIRECTION_CARDED = {(2026, 'hl'), (2020, 'hl'), (2025, 'hl')}
 # The sittings whose Listening Comprehension Test is carded: each ask with the
 # official SEC recording (data/spanishAudio.json, verified), scored on its own
 # as French listening is (coordinator ruling, 11 Nov 2026).
-LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol')}
+LISTENING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl')}
 # The sittings whose written production (Higher B Q5 and Section C, Ordinary
 # Section B) is carded on the scheme's own marking grid (es_writing.py), in the
 # French writing-rubric shape (coordinator ruling, 11 Nov 2026).
-WRITING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol')}
+WRITING_CARDED = {(2026, 'hl'), (2026, 'ol'), (2020, 'hl'), (2020, 'ol'), (2025, 'hl')}
 
 # The one row text a card may carry that is not a slice of the scheme, from
 # UNPRINTED_ANSWER in types/markBank.ts (build-deck.mjs refuses any other).
@@ -636,7 +636,7 @@ def _writing(year, level, P, section, q, letter):
     else:
         if level == 'hl':
             g = W.grid_c(year, level, q, letter)
-            requirements = (g['option'][1:] + g['criteriaHead'][1:] + g['ladder']
+            requirements = (g['lead'] + g['option'][1:] + g['criteriaHead'][1:] + g['ladder']
                             + g['direction'])
             note = '\n'.join(g['guidelines'])
         else:
@@ -645,14 +645,22 @@ def _writing(year, level, P, section, q, letter):
             note = '\n'.join(g['section'])
         topic = next(tid for rx, tid in WRITING_TOPIC if rx.search(t['question'][:200]))
         unit = 'turn' if topic == 'spanish-6-1' else 'point'
-        criteria = [{'id': f'{unit}-{i}', 'label': f'{ORDINALS[i - 1]} {unit}',
-                     'maxMarks': g['per'], 'permittedMarks': list(range(g['per'] + 1)),
-                     'guidance': []} for i in range(1, g['n'] + 1)]
+        if g.get('global'):
+            # 2021 and 2022 Higher mark the diary or note as a whole: "apply a
+            # global mark to the best FOUR according to the criteria below".
+            unit = 'piece'
+            criteria = [{'id': 'global', 'label': 'Global mark', 'maxMarks': g['per'],
+                         'permittedMarks': list(range(g['per'] + 1)), 'guidance': []}]
+        else:
+            criteria = [{'id': f'{unit}-{i}', 'label': f'{ORDINALS[i - 1]} {unit}',
+                         'maxMarks': g['per'], 'permittedMarks': list(range(g['per'] + 1)),
+                         'guidance': []} for i in range(1, g['n'] + 1)]
         assert g['n'] * g['per'] == g['total'], (ref, g['n'], g['per'], g['total'])
         rubric = {'system': 'french', 'taskRequirements': requirements,
                   'criteria': criteria, 'markingGuideNote': note}
-        practice.append(f'Mark each {unit} you wrote on its own against the scheme\'s '
-                        f'ladder above.')
+        practice.append('Place the whole piece on the scheme\'s bands above.' if unit == 'piece'
+                        else f'Mark each {unit} you wrote on its own against the scheme\'s '
+                             f'ladder above.')
         pages = g['pages']
     rubric['practiceNotes'] = practice
     total = sum(c['maxMarks'] for c in rubric['criteria'])
@@ -947,7 +955,10 @@ def _claimable_partials(ask, rows, partials):
             g['perOption'] = max(g['optionMarks'])
             row['group'] = g
         else:
-            assert row['kind'] == 'point' and not row.get('parts'), (ask, row)
+            # A point, or one answer placed at its printed split ("Sunnier (day)
+            # with clear (skies) (2+1m) [Sun = 2m]"): the one-pick group carries
+            # the full answer and the printed partial, each at its price.
+            assert row['kind'] in ('point', 'criterion') and not row.get('parts'), (ask, row)
             full = row['marks']
             assert all(m <= full for _t, m in parsed), (ask, parsed, full)
             rows[target] = {'id': row['id'], 'kind': 'anyN', 'verbatim': 'The answers the scheme accepts',
@@ -977,6 +988,12 @@ def _rows_core(ask, language, rule, stepped=False, skip_notes=()):
             return None
         lead = list(ask.lead_points or [])
         terms = ask.terms[len(lead):]
+        if stepped and len(terms) == 1 and ask.quota > 1:
+            # "Three of: - accommodation - (qualified) instructor - … (3m)"
+            # (2022 Higher listening Q1(c); 2023 Q4(c)): the scheme prices the
+            # three answers together and prints no split. Paid at the printed
+            # value only, when the third is claimed: never an inferred 1 + 1 + 1.
+            terms = [0] * (ask.quota - 1) + terms
         if len(terms) != ask.quota:
             return ('the scheme asks for a number of answers its tariff does '
                     'not price')
