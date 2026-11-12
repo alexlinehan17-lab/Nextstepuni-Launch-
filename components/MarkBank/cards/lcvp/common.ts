@@ -525,11 +525,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
     id: "lcvp-2019-cl-a1", topicId: "lcvp-link-modules-0-2", conceptId: "who-told-p-draig-about-apprenticeship",
     section: "A", questionRef: "2019 CL Section A Q1",
-    stem: "You will be shown a DVD with an Apprenticeship theme.",
     questionText: "Who told Pádraig about the Apprenticeship information evening?",
-    tariffModel: {"kind":"fixed","notation":"1 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 1,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "His LCVP teacher", marks: 1, contextNote: "1 mark for this answer.", openList: true },
+    { id: "teacher", kind: "point", verbatim: "His LCVP teacher", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2019 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2019 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Apprenticeship sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -539,11 +570,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
     id: "lcvp-2019-cl-a2", topicId: "lcvp-link-modules-0-2", conceptId: "does-anna-think-apprenticeship-aircraft-mechanics",
     section: "A", questionRef: "2019 CL Section A Q2",
-    stem: "You will be shown a DVD with an Apprenticeship theme.",
     questionText: "Why does Anna think an apprenticeship in Aircraft Mechanics would suit Pádraig?",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 mark","answer":2,"ofParts":6,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["He has always loved engineering","Better than 3 or 4 years in college","Work-based learning","Learning through working","Cuts out high college costs","Going to get paid while working / earn as you learn"]} },
+    { id: "responses", kind: "anyN", verbatim: "Why does Anna think an apprenticeship in Aircraft Mechanics would suit Pádraig? 2 valid reasons 2 x 1 mark", marks: 2, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":1,"options":["He has always loved engineering","Better than 3 or 4 years in college","Work-based learning","Learning through working","Cuts out high college costs","Going to get paid while working / earn as you learn"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2019 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2019 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Apprenticeship sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -553,11 +615,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
     id: "lcvp-2019-cl-a3", topicId: "lcvp-link-modules-0-2", conceptId: "who-will-be-involved-information-evenings",
     section: "A", questionRef: "2019 CL Section A Q3",
-    stem: "You will be shown a DVD with an Apprenticeship theme.",
     questionText: "Who will be involved in the information evenings?",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 1 mark","answer":3,"ofParts":4,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Co-ordinator from apprenticeship scheme","Different key speakers from different careers","Potential employers","College Lecturers / Lecturers from further education colleges"]} },
+    { id: "responses", kind: "anyN", verbatim: "Who will be involved in the information evening? 3 valid answers 3 x 1 mark", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":3,"perOption":1,"options":["Co-ordinator from apprenticeship scheme","Different key speakers from different careers","Potential employers","College Lecturers / Lecturers from further education colleges"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2019 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2019 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Apprenticeship sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -567,11 +660,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
     id: "lcvp-2019-cl-a4", topicId: "lcvp-link-modules-0-2", conceptId: "did-anna-decide-apprenticeship",
     section: "A", questionRef: "2019 CL Section A Q4",
-    stem: "You will be shown a DVD with an Apprenticeship theme.",
     questionText: "Why did Anna decide to do an apprenticeship?",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 1 mark","answer":4,"ofParts":5,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Why did Anna decide to do an apprenticeship? 4 — any 4", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Because of the information night","Because there is a variety of apprenticeships/courses","An adviser told her about apprenticeships such as accounting technician and insurance practitioner technician","Looked them up and liked what she saw","She gets paid while doing an apprenticeship"]} },
+    { id: "responses", kind: "anyN", verbatim: "Why did Anna decide to do an apprenticeship? 4 valid reasons 4 x 1 mark", marks: 4, contextNote: "Choose any 4 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":4,"perOption":1,"options":["Because of the information night","Because there is a variety of apprenticeships/courses","An adviser told her about apprenticeships such as accounting technician and insurance practitioner technician","Looked them up and liked what she saw","She gets paid while doing an apprenticeship"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2019 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2019 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Apprenticeship sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -581,11 +705,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
     id: "lcvp-2019-cl-a5i", topicId: "lcvp-link-modules-0-2", conceptId: "duration-apprenticeship-courses",
     section: "A", questionRef: "2019 CL Section A Q5(i)",
-    stem: "You will be shown a DVD with an Apprenticeship theme.",
     questionText: "What is the duration of apprenticeship courses?",
-    tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "2 / 3 / 4 years", marks: 2, contextNote: "2 marks for this answer.", openList: true },
+    { id: "duration", kind: "point", verbatim: "2 / 3 / 4 years", marks: 2, contextNote: "ONE accepted duration answer, 2 marks; preserve all original alternatives and no unprinted 1 mark step." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2019 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2019 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Apprenticeship sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -595,11 +750,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
     id: "lcvp-2019-cl-a5ii", topicId: "lcvp-link-modules-0-2", conceptId: "qualification-will-anna-receive-end-her",
     section: "A", questionRef: "2019 CL Section A Q5(ii)",
-    stem: "You will be shown a DVD with an Apprenticeship theme.",
     questionText: "What qualification will Anna receive at the end of her course?",
-    tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Level 8 NFQ / a degree", marks: 2, contextNote: "2 marks for this answer.", openList: true },
+    { id: "qualification", kind: "point", verbatim: "Level 8 NFQ / a degree", marks: 2, contextNote: "ONE accepted qualification answer, 2 marks; no unprinted internal split." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2019 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2019 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Apprenticeship sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -609,11 +795,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
     id: "lcvp-2019-cl-a6", topicId: "lcvp-link-modules-0-2", conceptId: "benefits-being-apprentice",
     section: "A", questionRef: "2019 CL Section A Q6",
-    stem: "You will be shown a DVD with an Apprenticeship theme.",
     questionText: "What are the benefits to being an apprentice?",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 1 mark","answer":4,"ofParts":12,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "What are the benefits to being an apprentice? Four — any 4", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Opportunity to experience different areas of business / get experience in lots of different areas","Get real life experience","Avoid high college costs","Variety in all areas of insurance from claims to direct client advice","Minimum of 50% ‘on the job’ training in all apprenticeships","When not in work ‘off the job’ training is at an education centre","Some courses offer an online element to the course","The apprentice is paid while on and off the job","Educated by experienced people","Helps in the decision about which area you wish to specialise in","Have a formal contract","Assessments to ensure the required standards are reached"]} },
+    { id: "responses", kind: "criterion", verbatim: "What are the benefits to being an apprentice? Four valid reasons 4 x 1 mark", marks: 4, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: What are the benefits to being an apprentice? Four valid reasons 4 x 1 mark Each response follows the printed component ladder; do not count the same expansion twice. The complete original model pool is retained below; each distinct answer receives 1 or 0 marks. Complete original guidance: 1. Opportunity to experience different areas of business / get experience in lots of different areas | 2. Get real life experience | 3. Avoid high college costs | 4. Variety in all areas of insurance from claims to direct client advice | 5. Minimum of 50% ‘on the job’ training in all apprenticeships | 6. When not in work ‘off the job’ training is at an education centre | 7. Some courses offer an online element to the course | 8. The apprentice is paid while on and off the job | 9. Educated by experienced people | 10. Helps in the decision about which area you wish to specialise in | 11. Have a formal contract | 12. Assessments to ensure the required standards are reached The source also prints “Etc.”.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]},{"id":"response-4","verbatim":"Response 4","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2019 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2019 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Apprenticeship sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -623,11 +840,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
     id: "lcvp-2019-cl-a7", topicId: "lcvp-link-modules-0-2", conceptId: "apprenticeship-programme-appeal-broad-range-individuals",
     section: "A", questionRef: "2019 CL Section A Q7",
-    stem: "You will be shown a DVD with an Apprenticeship theme.",
     questionText: "Why would the apprenticeship programme appeal to a broad range of individuals?",
-    tariffModel: {"kind":"bestNofParts","notation":"6 x 1 mark","answer":6,"ofParts":9,"perPart":1}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 6 of the answers the scheme states", marks: 6, contextNote: "6 answers at 1 mark each.", openList: true, group: {"claimMax":6,"perOption":1,"options":["Helps people to discover and develop their talents / skills in a different way / there are different ways to learn – suits people who are good with their hands / learn by doing / people who don’t feel they are suited to going to college can get qualifications by completing an apprenticeship / enjoy it instead of doing a college course","Day release/block release to do study during work","Online discussions / lectures / group sessions allow apprentices to get help from other apprentices while doing the course/more convenient","Opportunity to get paid while working","No college fees","So many new apprenticeships since the review/large choice of courses","Work experience can help you understand the world of work and the theory/ Get both on and off the job training","Apprenticeships may lead to full time employment for the trainee","Allows them to change career"]} },
+    { id: "responses", kind: "criterion", verbatim: "Why would the apprenticeship programme appeal to a broad range of individuals? 6 valid reasons 6 x 1 mark", marks: 6, contextNote: "Choose any 6 distinct responses across the full pool. Original allocation: Why would the apprenticeship programme appeal to a broad range of individuals? 6 valid reasons 6 x 1 mark Each response follows the printed component ladder; do not count the same expansion twice. The complete original model pool is retained below; each distinct answer receives 1 or 0 marks. Complete original guidance: 1. Helps people to discover and develop their talents / skills in a different way / there are different ways to learn – suits people who are good with their hands / learn by doing / people who don’t feel they are suited to going to college can get qualifications by completing an apprenticeship / enjoy it instead of doing a college course | 2. Day release/block release to do study during work | 3. Online discussions / lectures / group sessions allow apprentices to get help from other apprentices while doing the course/more convenient | 4. Opportunity to get paid while working | 5. No college fees | 6. So many new apprenticeships since the review/large choice of courses | 7. Work experience can help you understand the world of work and the theory/ Get both on and off the job training | 8. Apprenticeships may lead to full time employment for the trainee | 9. Allows them to change career The source also prints “Etc.”.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]},{"id":"response-4","verbatim":"Response 4","marks":1,"permittedMarks":[0,1]},{"id":"response-5","verbatim":"Response 5","marks":1,"permittedMarks":[0,1]},{"id":"response-6","verbatim":"Response 6","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2019 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2019 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Apprenticeship sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -637,11 +885,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
     id: "lcvp-2019-cl-a8", topicId: "lcvp-link-modules-0-2", conceptId: "benefits-effective-apprenticeship-programme-employer",
     section: "A", questionRef: "2019 CL Section A Q8",
-    stem: "You will be shown a DVD with an Apprenticeship theme.",
     questionText: "What are the benefits of an effective apprenticeship programme for an employer?",
-    tariffModel: {"kind":"bestNofParts","notation":"6 x 1 mark","answer":6,"ofParts":7,"perPart":1}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 6 of the answers the scheme states", marks: 6, contextNote: "6 answers at 1 mark each.", openList: true, group: {"claimMax":6,"perOption":1,"options":["Meets the needs of a changing economy - training in areas that have real need for qualified personnel","Employer gets graduates with both the theory and real life experiences which can help upskill current employees","Reduced training costs - people are being trained on the job and upskilled","Links are created between employers and training colleges meaning the training provided is relevant","Develop / retain high calibre staff - skilled workforce","Cheaper labour – apprentices don’t get paid as much","Provides a good image for business – better reputation"]} },
+    { id: "responses", kind: "anyN", verbatim: "What are the benefits of an effective apprenticeship programme for an employer? 6 valid answers 6 x 1 mark", marks: 6, contextNote: "Choose any 6 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":6,"perOption":1,"options":["Meets the needs of a changing economy - training in areas that have real need for qualified personnel","Employer gets graduates with both the theory and real life experiences which can help upskill current employees","Reduced training costs - people are being trained on the job and upskilled","Links are created between employers and training colleges meaning the training provided is relevant","Develop / retain high calibre staff - skilled workforce","Cheaper labour – apprentices don’t get paid as much","Provides a good image for business – better reputation"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    videoMaterial: {
+          "kind": "source-video",
+          "label": "OFFICIAL VIDEO",
+          "title": "2019 LCVP audiovisual examination",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2019/LC462CLP031EV.mp4",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2019/LC462CLP031EV.mp4",
+          "secFileid": "LC462CLP031EV.mp4",
+          "attribution": "State Examinations Commission — original 2019 Common Level English audiovisual recording.",
+          "presentationNote": "Watch the original Apprenticeship sequence with its sound before answering. Follow the printed viewing instructions. Use the original source link if embedded playback is unavailable."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original audiovisual instructions",
+                "pages": [
+                      3
+                ],
+                "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
     ],
   } as SecCard,
   {
@@ -649,117 +928,217 @@ export const CARDS: SecCard[] = [
     year: 2019, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
-    id: "lcvp-2019-cl-b1", topicId: "lcvp-link-modules-1-4", conceptId: "advantages-ballytiernan-area-enjoys",
+    id: "lcvp-2019-cl-b1", topicId: "lcvp-link-modules-1-2", conceptId: "advantages-ballytiernan-area-enjoys",
     section: "B", questionRef: "2019 CL Section B Q1",
-    stem: "Describe three advantages that the Ballytiernan area enjoys.",
+    stem: "Ballytiernan Community Co-operative Ballytiernan is a picturesque village situated on the banks of a river. It is located twenty kilometres from the nearest city and has an adequate bus service. Agriculture is the main economic activity while tourism is also important to the local economy. The village is popular with anglers and has hosted many angling competitions in the past. It has two primary schools and a co‐educational community college which offers Post Leaving Certificate (PLC) courses. An active local development group is in existence. The Local Development Group has been working on concerns raised by anglers about illegal dumping at a number of locations along the banks of the river and in the river. The group is afraid this could ruin the reputation of the town as a clean and beautiful area. A farm set on fifty acres of land at the edge of the town was bequeathed to the community of Ballytiernan by a local farmer. His express wish was that the farm should be used for the benefit of the community and in particular to teach young people the art of horticulture, gardening and sustainable animal husbandry. He had always been an advocate for sustainable and ethical business practices. The farm has been given to the Local Development Group to manage. The Local Development Group in Ballytiernan formed the Ballytiernan Community Co‐operative (Co‐op) to manage the 50 acre farm. Its aim is to establish community based enterprises operating from the farm site. It has received assistance from the County Council, The Irish Co‐ operative Organisation Society, and Teagasc. The Co‐op runs the farm itself, using organic and sustainable farming practices. It has established a farm shop which sells farm produce and local crafts and a café which uses locally sourced produce. Space is available for other appropriate local enterprises. The farm is also being used by Leaving Certificate students and college students, particularly those doing courses in agriculture and horticulture for work experience and to complete the practical components of their courses. Allotments have been created which the local community can use for a small fee. A large tract of land has been designated for use by local clubs, schools and organisations. The local Foróige club and the Men’s Shed group have already been using the farm buildings. Schools in the area have been invited to submit proposals / plans for how they would use the designated land. The Co‐Op is aware of the huge potential of the site both for the local and the extended community and it has drawn up a plan to manage current projects. The Co‐op is also assessing the economic viability of a number of projects, including glamping in luxury yurts, a weekend music festival and an open farm.",
     questionText: "Describe three advantages that the Ballytiernan area enjoys.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Picturesque village situation on the banks of the river","Located 20 kilometres from city","Adequate bus service","Good tourism potential – anglers etc","Good educational facilities","Well established active local development group which is working on improving the local area","Use of a 50 acre site for the use of the local community/Farm Shop"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe three advantages that the Ballytiernan area enjoys. Three valid answers 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe three advantages that the Ballytiernan area enjoys. Three valid answers 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Picturesque village situation on the banks of the river | 2. Located 20 kilometres from city | 3. Adequate bus service | 4. Good tourism potential – anglers etc. | 5. Good educational facilities | 6. Well established active local development group which is working on improving the local area | 7. Use of a 50 acre site for the use of the local community/Farm Shop The source also prints “Etc.”.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Ballytiernan Community Co-operative — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2019 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      10
+                ],
+                "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
-    id: "lcvp-2019-cl-b2i", topicId: "lcvp-link-modules-0-3", conceptId: "benefits-does-local-development-group-bring",
+    id: "lcvp-2019-cl-b2i", topicId: "lcvp-link-modules-1-2", conceptId: "benefits-does-local-development-group-bring",
     section: "B", questionRef: "2019 CL Section B Q2(i)",
+    stem: "Ballytiernan Community Co-operative Ballytiernan is a picturesque village situated on the banks of a river. It is located twenty kilometres from the nearest city and has an adequate bus service. Agriculture is the main economic activity while tourism is also important to the local economy. The village is popular with anglers and has hosted many angling competitions in the past. It has two primary schools and a co‐educational community college which offers Post Leaving Certificate (PLC) courses. An active local development group is in existence. The Local Development Group has been working on concerns raised by anglers about illegal dumping at a number of locations along the banks of the river and in the river. The group is afraid this could ruin the reputation of the town as a clean and beautiful area. A farm set on fifty acres of land at the edge of the town was bequeathed to the community of Ballytiernan by a local farmer. His express wish was that the farm should be used for the benefit of the community and in particular to teach young people the art of horticulture, gardening and sustainable animal husbandry. He had always been an advocate for sustainable and ethical business practices. The farm has been given to the Local Development Group to manage. The Local Development Group in Ballytiernan formed the Ballytiernan Community Co‐operative (Co‐op) to manage the 50 acre farm. Its aim is to establish community based enterprises operating from the farm site. It has received assistance from the County Council, The Irish Co‐ operative Organisation Society, and Teagasc. The Co‐op runs the farm itself, using organic and sustainable farming practices. It has established a farm shop which sells farm produce and local crafts and a café which uses locally sourced produce. Space is available for other appropriate local enterprises. The farm is also being used by Leaving Certificate students and college students, particularly those doing courses in agriculture and horticulture for work experience and to complete the practical components of their courses. Allotments have been created which the local community can use for a small fee. A large tract of land has been designated for use by local clubs, schools and organisations. The local Foróige club and the Men’s Shed group have already been using the farm buildings. Schools in the area have been invited to submit proposals / plans for how they would use the designated land. The Co‐Op is aware of the huge potential of the site both for the local and the extended community and it has drawn up a plan to manage current projects. The Co‐op is also assessing the economic viability of a number of projects, including glamping in luxury yurts, a weekend music festival and an open farm.",
     questionText: "What benefits does the Local Development Group bring to the area?",
-    tariffModel: {"kind":"bestNofParts","notation":"6 x 1 mark","answer":6,"ofParts":8,"perPart":1}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "What benefits does the existing Local Development Group bring to the area? Six — any 6", marks: 6, contextNote: "6 answers at 1 mark each.", openList: true, group: {"claimMax":6,"perOption":1,"options":["It encourages good community spirit in the area","Create new employment opportunities in the locality","Create/assist with new business opportunities/Encourages entrepreneurship/innovation/competition/investment","Local amenities/facilities are being improved – new walks","Local environment is being improved – working on anglers’ concerns – illegal dumping","Benefit to other local businesses/spin off businesses/tourists/Increased town prosperity/tourism generated income/financial gains","Manages the farm/advocates for sustainable and ethical business practices/Products from the farm","Work experience for students in the area"]} },
+    { id: "responses", kind: "anyN", verbatim: "What benefits does the existing Local Development Group bring to the area? Six valid reasons 6 x 1 mark", marks: 6, contextNote: "Choose any 6 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":6,"perOption":1,"options":["It encourages good community spirit in the area","Create new employment opportunities in the locality","Create/assist with new business opportunities/Encourages entrepreneurship/innovation/competition/investment","Local amenities/facilities are being improved – new walks","Local environment is being improved – working on anglers’ concerns – illegal dumping","Benefit to other local businesses/spin off businesses/tourists/Increased town prosperity/tourism generated income/financial gains","Manages the farm/advocates for sustainable and ethical business practices/Products from the farm","Work experience for students in the area"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Ballytiernan Community Co-operative — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2019 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
-    id: "lcvp-2019-cl-b2ii", topicId: "lcvp-link-modules-0-1", conceptId: "assistance-co-op-might-receive-agencies",
+    id: "lcvp-2019-cl-b2ii", topicId: "lcvp-link-modules-1-2", conceptId: "assistance-co-op-might-receive-agencies",
     section: "B", questionRef: "2019 CL Section B Q2(ii)",
+    stem: "Ballytiernan Community Co-operative Ballytiernan is a picturesque village situated on the banks of a river. It is located twenty kilometres from the nearest city and has an adequate bus service. Agriculture is the main economic activity while tourism is also important to the local economy. The village is popular with anglers and has hosted many angling competitions in the past. It has two primary schools and a co‐educational community college which offers Post Leaving Certificate (PLC) courses. An active local development group is in existence. The Local Development Group has been working on concerns raised by anglers about illegal dumping at a number of locations along the banks of the river and in the river. The group is afraid this could ruin the reputation of the town as a clean and beautiful area. A farm set on fifty acres of land at the edge of the town was bequeathed to the community of Ballytiernan by a local farmer. His express wish was that the farm should be used for the benefit of the community and in particular to teach young people the art of horticulture, gardening and sustainable animal husbandry. He had always been an advocate for sustainable and ethical business practices. The farm has been given to the Local Development Group to manage. The Local Development Group in Ballytiernan formed the Ballytiernan Community Co‐operative (Co‐op) to manage the 50 acre farm. Its aim is to establish community based enterprises operating from the farm site. It has received assistance from the County Council, The Irish Co‐ operative Organisation Society, and Teagasc. The Co‐op runs the farm itself, using organic and sustainable farming practices. It has established a farm shop which sells farm produce and local crafts and a café which uses locally sourced produce. Space is available for other appropriate local enterprises. The farm is also being used by Leaving Certificate students and college students, particularly those doing courses in agriculture and horticulture for work experience and to complete the practical components of their courses. Allotments have been created which the local community can use for a small fee. A large tract of land has been designated for use by local clubs, schools and organisations. The local Foróige club and the Men’s Shed group have already been using the farm buildings. Schools in the area have been invited to submit proposals / plans for how they would use the designated land. The Co‐Op is aware of the huge potential of the site both for the local and the extended community and it has drawn up a plan to manage current projects. The Co‐op is also assessing the economic viability of a number of projects, including glamping in luxury yurts, a weekend music festival and an open farm.",
     questionText: "Outline what assistance the Co‐Op might receive from state agencies.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 1 mark","answer":3,"ofParts":10,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Funding support – grants, capital grants for equipment","Grants for feasibility studies","Mentoring services","Training programmes/workshops/courses","Provide employees (SOLAS)/CE Scheme","Recruitment services","Advice","Legal support","Health and safety","Support to develop online tools"]} },
+    { id: "responses", kind: "anyN", verbatim: "Outline what assistance the Co-op might receive from state agencies. Three valid reasons 3 x 1 mark", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Funding support – grants, capital grants for equipment","Grants for feasibility studies","Mentoring services","Training programmes/workshops/courses","Provide employees (SOLAS)/CE Scheme","Recruitment services","Advice","Legal support","Health and safety","Support to develop online tools"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Ballytiernan Community Co-operative — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2019 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
-    id: "lcvp-2019-cl-b2iii", topicId: "lcvp-link-modules-1-0", conceptId: "does-co-op-need-assistance",
+    id: "lcvp-2019-cl-b2iii", topicId: "lcvp-link-modules-1-2", conceptId: "does-co-op-need-assistance",
     section: "B", questionRef: "2019 CL Section B Q2(iii)",
+    stem: "Ballytiernan Community Co-operative Ballytiernan is a picturesque village situated on the banks of a river. It is located twenty kilometres from the nearest city and has an adequate bus service. Agriculture is the main economic activity while tourism is also important to the local economy. The village is popular with anglers and has hosted many angling competitions in the past. It has two primary schools and a co‐educational community college which offers Post Leaving Certificate (PLC) courses. An active local development group is in existence. The Local Development Group has been working on concerns raised by anglers about illegal dumping at a number of locations along the banks of the river and in the river. The group is afraid this could ruin the reputation of the town as a clean and beautiful area. A farm set on fifty acres of land at the edge of the town was bequeathed to the community of Ballytiernan by a local farmer. His express wish was that the farm should be used for the benefit of the community and in particular to teach young people the art of horticulture, gardening and sustainable animal husbandry. He had always been an advocate for sustainable and ethical business practices. The farm has been given to the Local Development Group to manage. The Local Development Group in Ballytiernan formed the Ballytiernan Community Co‐operative (Co‐op) to manage the 50 acre farm. Its aim is to establish community based enterprises operating from the farm site. It has received assistance from the County Council, The Irish Co‐ operative Organisation Society, and Teagasc. The Co‐op runs the farm itself, using organic and sustainable farming practices. It has established a farm shop which sells farm produce and local crafts and a café which uses locally sourced produce. Space is available for other appropriate local enterprises. The farm is also being used by Leaving Certificate students and college students, particularly those doing courses in agriculture and horticulture for work experience and to complete the practical components of their courses. Allotments have been created which the local community can use for a small fee. A large tract of land has been designated for use by local clubs, schools and organisations. The local Foróige club and the Men’s Shed group have already been using the farm buildings. Schools in the area have been invited to submit proposals / plans for how they would use the designated land. The Co‐Op is aware of the huge potential of the site both for the local and the extended community and it has drawn up a plan to manage current projects. The Co‐op is also assessing the economic viability of a number of projects, including glamping in luxury yurts, a weekend music festival and an open farm. Outline what assistance the Co‐Op might receive from state agencies.",
     questionText: "Why does the Co‐Op need this assistance?",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 1 mark","answer":3,"ofParts":7,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Why does the Co-op need this assistance? Three — any 3", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["To get advice / they lack the expertise/skills/identifying ways of doing things","Mentoring assistance offers knowledge/skills from individuals to help the Co-op make important decisions","Financial support - to have the funding necessary both to set up the facilities/businesses and to maintain them","To get training in specific areas","To enable the projects to be successful/to test the feasibility of projects","To supplement income generated by the co-op itself","To have employees to complete the task/projects"]} },
+    { id: "responses", kind: "anyN", verbatim: "Why does the Co-op need this assistance? Three valid reasons Must link to answers in part (ii) 3 x 1 mark", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible. MUST link to the SAME assistance selected in part(ii), as explicitly required by the original scheme.", openList: true, group: {"claimMax":3,"perOption":1,"options":["To get advice / they lack the expertise/skills/identifying ways of doing things","Mentoring assistance offers knowledge/skills from individuals to help the Co-op make important decisions","Financial support - to have the funding necessary both to set up the facilities/businesses and to maintain them","To get training in specific areas","To enable the projects to be successful/to test the feasibility of projects","To supplement income generated by the co-op itself","To have employees to complete the task/projects"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Ballytiernan Community Co-operative — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2019 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      11
+                ],
+                "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
-    id: "lcvp-2019-cl-b3i", topicId: "lcvp-link-modules-1-0", conceptId: "suitable-enterprise-site",
+    id: "lcvp-2019-cl-b3i", topicId: "lcvp-link-modules-1-3", conceptId: "suitable-enterprise-site",
     section: "B", questionRef: "2019 CL Section B Q3(i)",
-    stem: "One of the local schools is interested in using the land.",
+    stem: "Ballytiernan Community Co-operative Ballytiernan is a picturesque village situated on the banks of a river. It is located twenty kilometres from the nearest city and has an adequate bus service. Agriculture is the main economic activity while tourism is also important to the local economy. The village is popular with anglers and has hosted many angling competitions in the past. It has two primary schools and a co‐educational community college which offers Post Leaving Certificate (PLC) courses. An active local development group is in existence. The Local Development Group has been working on concerns raised by anglers about illegal dumping at a number of locations along the banks of the river and in the river. The group is afraid this could ruin the reputation of the town as a clean and beautiful area. A farm set on fifty acres of land at the edge of the town was bequeathed to the community of Ballytiernan by a local farmer. His express wish was that the farm should be used for the benefit of the community and in particular to teach young people the art of horticulture, gardening and sustainable animal husbandry. He had always been an advocate for sustainable and ethical business practices. The farm has been given to the Local Development Group to manage. The Local Development Group in Ballytiernan formed the Ballytiernan Community Co‐operative (Co‐op) to manage the 50 acre farm. Its aim is to establish community based enterprises operating from the farm site. It has received assistance from the County Council, The Irish Co‐ operative Organisation Society, and Teagasc. The Co‐op runs the farm itself, using organic and sustainable farming practices. It has established a farm shop which sells farm produce and local crafts and a café which uses locally sourced produce. Space is available for other appropriate local enterprises. The farm is also being used by Leaving Certificate students and college students, particularly those doing courses in agriculture and horticulture for work experience and to complete the practical components of their courses. Allotments have been created which the local community can use for a small fee. A large tract of land has been designated for use by local clubs, schools and organisations. The local Foróige club and the Men’s Shed group have already been using the farm buildings. Schools in the area have been invited to submit proposals / plans for how they would use the designated land. The Co‐Op is aware of the huge potential of the site both for the local and the extended community and it has drawn up a plan to manage current projects. The Co‐op is also assessing the economic viability of a number of projects, including glamping in luxury yurts, a weekend music festival and an open farm. One of the local schools is interested in using the land.",
     questionText: "Name a suitable enterprise for the site. Explain why.",
-    tariffModel: {"kind":"bestNofParts","notation":"(1+1)","answer":2,"ofParts":6,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Primary school garden/plant native flowers/grow vegetables/allotment","TY horticulture module/grow vegetables and herbs/sell as part of mini company/bee hives collect honey and sell at local farmers market","LC Agricultural Science project/soil, crops, animals","Competitions/Awards: ECO UNESCO Young Environmentalist Awards/Young Scientist/Green Schools","Education and awareness of agriculture and horticulture and animal husbandry","Sporting facilities"]} },
+    { id: "enterprise", kind: "point", verbatim: "Name", marks: 1, contextNote: "MUST be a SCHOOL BASED ACTIVITY/ENTERPRISE. Complete original pool: Primary school garden/plant native flowers/grow vegetables/allotment | TY horticulture module/grow vegetables and herbs/sell as part of mini company/bee hives collect honey and sell at local farmers market | LC Agricultural Science project/soil, crops, animals | Competitions/Awards: ECO UNESCO Young Environmentalist Awards/Young Scientist/Green Schools | Education and awareness of agriculture and horticulture and animal husbandry | Sporting facilities | Etc." },
+    { id: "reason", kind: "criterion", verbatim: "1 valid reason", marks: 2, contextNote: "ONE reason for the SAME named school-based enterprise, 1+1. Original name 1 and reason 2 are separately printed; preserve the whole response.", permittedMarks: [0,1,2] },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "OFFICIAL SOURCE",
-          "title": "Section B case study",
+          "title": "Ballytiernan Community Co-operative — complete case study",
           "pages": [
                 9
           ],
-          "attribution": "SEC Link Modules 2019 Common Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the case study exactly as it appeared in the examination paper, then answer the question above."
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
     },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
+    id: "lcvp-2019-cl-b3ii", topicId: "lcvp-link-modules-1-3", conceptId: "b3ii",
+    section: "B", questionRef: "2019 CL Section B Q3(ii)",
+    stem: "Ballytiernan Community Co-operative Ballytiernan is a picturesque village situated on the banks of a river. It is located twenty kilometres from the nearest city and has an adequate bus service. Agriculture is the main economic activity while tourism is also important to the local economy. The village is popular with anglers and has hosted many angling competitions in the past. It has two primary schools and a co‐educational community college which offers Post Leaving Certificate (PLC) courses. An active local development group is in existence. The Local Development Group has been working on concerns raised by anglers about illegal dumping at a number of locations along the banks of the river and in the river. The group is afraid this could ruin the reputation of the town as a clean and beautiful area. A farm set on fifty acres of land at the edge of the town was bequeathed to the community of Ballytiernan by a local farmer. His express wish was that the farm should be used for the benefit of the community and in particular to teach young people the art of horticulture, gardening and sustainable animal husbandry. He had always been an advocate for sustainable and ethical business practices. The farm has been given to the Local Development Group to manage. The Local Development Group in Ballytiernan formed the Ballytiernan Community Co‐operative (Co‐op) to manage the 50 acre farm. Its aim is to establish community based enterprises operating from the farm site. It has received assistance from the County Council, The Irish Co‐ operative Organisation Society, and Teagasc. The Co‐op runs the farm itself, using organic and sustainable farming practices. It has established a farm shop which sells farm produce and local crafts and a café which uses locally sourced produce. Space is available for other appropriate local enterprises. The farm is also being used by Leaving Certificate students and college students, particularly those doing courses in agriculture and horticulture for work experience and to complete the practical components of their courses. Allotments have been created which the local community can use for a small fee. A large tract of land has been designated for use by local clubs, schools and organisations. The local Foróige club and the Men’s Shed group have already been using the farm buildings. Schools in the area have been invited to submit proposals / plans for how they would use the designated land. The Co‐Op is aware of the huge potential of the site both for the local and the extended community and it has drawn up a plan to manage current projects. The Co‐op is also assessing the economic viability of a number of projects, including glamping in luxury yurts, a weekend music festival and an open farm. One of the local schools is interested in using the land. Name a suitable enterprise for the site. Explain why.",
+    questionText: "Outline the proposal or plan they would submit to the co‐op. Set out your proposal or plan under three headings.",
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 9,
+    rows: [
+    { id: "plan", kind: "criterion", verbatim: "Set it out under three headings.", marks: 9, contextNote: "THREE distinct relevant headings, each 3 marks (1+1+1). Keep the plan applied to the SAME school enterprise and site. Retain ALL FOUR printed heading models; the paper requires three headings but does not restrict them to a named list. The general scheme accepts other valid responses. Original complete heading pool: Product / service | Financial details | Management/People | Marketing", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Ballytiernan Community Co-operative — complete case study",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+    additionalSourceMaterials: [
+          {
+                "kind": "source-question",
+                "label": "OFFICIAL SOURCE",
+                "title": "Original question",
+                "pages": [
+                      12
+                ],
+                "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+                "presentationNote": "Read the complete original source and question in context."
+          }
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -770,11 +1149,21 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 CL Section C Q1(a)",
     stem: "The world of work is dynamic and diverse.",
     questionText: "What is a Curriculum Vitae (CV) used for? List three headings which should be included on a CV.",
-    tariffModel: {"kind":"fixed","notation":"3 x 1 mark","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A CV is used when applying for a job/work experience/voluntary work/show skills/show experience", marks: 1, contextNote: "1 mark for this, priced on its own beside the list below.", openList: true },
-    { id: "r-2", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Personal details","Skills/qualities","Education/qualifications","Work experience","Hobbies/interests","Achievements","Referees"]} },
+    { id: "use", kind: "point", verbatim: "A CV is used when applying for a job/work experience/voluntary work/show skills/show experience", marks: 1 },
+    { id: "responses", kind: "anyN", verbatim: "Valid headings which should appear on a CV", marks: 3, contextNote: "THREE distinct headings,1 each, from ALL SEVEN original choices in the two printed columns. The purpose of the CV receives its separate1 mark.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Personal details","Skills/qualities","Education/qualifications","Work experience","Hobbies/interests","Achievements","Referees"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -785,10 +1174,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 CL Section C Q1(b)",
     stem: "The world of work is dynamic and diverse.",
     questionText: "State and explain three personal skills/qualities that help to make a job applicant more employable.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":7,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Hard working: productive, hardworking people are better for a business","Good communicator: individuals need to be able to communicate with managers, other workers and customers","Punctual: it is essential that all workers are on time for work","Team player: teamwork is a major feature of any work place, workers need to get on with other team member and also perform their assigned tasks","Shows initiative: employers need workers who can work on their own and do not need constant direction/positive attitude","Honest/trustworthy: it is essential that workers do an honest day’s work for their pay. Do not steal from employer/loyal","Any other relevant personal skill/quality with valid explanations"]} },
+    { id: "responses", kind: "criterion", verbatim: "State and explain three personal skills/qualities that help to make a job applicant more employable. Three valid answers 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: State and explain three personal skills/qualities that help to make a job applicant more employable. Three valid answers 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Hard working: productive, hardworking people are better for a business | 2. Good communicator: individuals need to be able to communicate with managers, other workers and customers | 3. Punctual: it is essential that all workers are on time for work | 4. Team player: teamwork is a major feature of any work place, workers need to get on with other team member and also perform their assigned tasks | 5. Shows initiative: employers need workers who can work on their own and do not need constant direction/positive attitude | 6. Honest/trustworthy: it is essential that workers do an honest day’s work for their pay. Do not steal from employer/loyal | 7. Any other relevant personal skill/quality with valid explanations", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -799,10 +1198,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 CL Section C Q1(c)",
     stem: "The world of work is dynamic and diverse.",
     questionText: "Outline three legal responsibilities that employers have when employing workers under 18 years of age.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":8,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Employer must keep a copy of their birth cert/passport","Detailed records must be kept of name/DOB/start time/end time/pay rate","Must comply with the law in relation to hours worked - early morning start times/late evening finishing/21 days of holiday during term time","Breaks - young workers are entitled to more breaks","Written permission is required for u-16/consent from parent or guardian","Poster detailing the rights of young people in the workplace must be displayed","Provide the minimum wage for u-18s €6.86 per hour","Must provide employees with a copy of official summary of the Protection of Young Person’s (Employment Act) along with details of their employment/contract"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline three legal responsibilities that employers have when employing workers under 18 years of age. Three valid legal responsibilities 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Outline three legal responsibilities that employers have when employing workers under 18 years of age. Three valid legal responsibilities 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Employer must keep a copy of their birth cert/passport | 2. Detailed records must be kept of name/DOB/start time/end time/pay rate | 3. Must comply with the law in relation to hours worked - early morning start times/late evening finishing/21 days of holiday during term time | 4. Breaks - young workers are entitled to more breaks | 5. Written permission is required for u-16/consent from parent or guardian | 6. Poster detailing the rights of young people in the workplace must be displayed | 7. Provide the minimum wage for u-18s €6.86 per hour | 8. Must provide employees with a copy of official summary of the Protection of Young Person’s (Employment Act) along with details of their employment/contract The source also prints “Etc.”. These are the original historical examination examples; the printed figures are retained exactly.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -811,26 +1220,46 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
     id: "lcvp-2019-cl-c1di", topicId: "lcvp-link-modules-0-0", conceptId: "meant-term-upskilling",
     section: "C", questionRef: "2019 CL Section C Q1(d)(i)",
-    stem: "The world of work is dynamic and diverse.",
+    stem: "The world of work is dynamic and diverse. Upskilling courses are offered to those seeking work.",
     questionText: "Explain what is meant by the term upskilling.",
-    tariffModel: {"kind":"fixed","notation":"(1+1+1)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "When workers learn new skills/update existing skills/engage in extra training/develop their capabiilities", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true },
+    { id: "definition", kind: "criterion", verbatim: "Three valid explanations", marks: 3, contextNote: "Original 3 marks (1+1+1); three valid pieces from the complete original explanation, with no invented compulsory semantic split. Full source model: When workers learn new skills/update existing skills/engage in extra training/develop their capabiilities | Etc.", permittedMarks: [0,1,2,3], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
-    id: "lcvp-2019-cl-c1dii", topicId: "lcvp-link-modules-0-4", conceptId: "does-participant-benefit-these-courses",
+    id: "lcvp-2019-cl-c1dii", topicId: "lcvp-link-modules-0-0", conceptId: "does-participant-benefit-these-courses",
     section: "C", questionRef: "2019 CL Section C Q1(d)(ii)",
-    stem: "The world of work is dynamic and diverse.",
+    stem: "The world of work is dynamic and diverse. Upskilling courses are offered to those seeking work.",
     questionText: "How does the participant benefit from these courses?",
-    tariffModel: {"kind":"bestNofParts","notation":"6 x 1 mark","answer":6,"ofParts":9,"perPart":1}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 6 of the answers the scheme states", marks: 6, contextNote: "6 answers at 1 mark each.", openList: true, group: {"claimMax":6,"perOption":1,"options":["Keep their social protection supports whilst undertaking the course","Learn new skills/develop existing ones/training opportunities","Recognised qualification on completion up to level 9","It may lead to employment and contacts for the future/ makes them more employable","It improves your CV so better chance of getting a job/better job","Good for self-esteem as it is a positive use of time/social aspect/satisfaction/motivation/new challenges","Keeps them up-to-date with the modern working environment/learn how to use new technology","Presents the possibility of a change of career","Higher pay/wages"]} },
+    { id: "responses", kind: "anyN", verbatim: "How does the participant benefit from these courses? Six valid answers 6 x 1 mark", marks: 6, contextNote: "Choose any 6 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":6,"perOption":1,"options":["Keep their social protection supports whilst undertaking the course","Learn new skills/develop existing ones/training opportunities","Recognised qualification on completion up to level 9","It may lead to employment and contacts for the future/ makes them more employable","It improves your CV so better chance of getting a job/better job","Good for self-esteem as it is a positive use of time/social aspect/satisfaction/motivation/new challenges","Keeps them up-to-date with the modern working environment/learn how to use new technology","Presents the possibility of a change of career","Higher pay/wages"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -841,10 +1270,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 CL Section C Q2(a)",
     stem: "Your Link Modules class has been asked to co‐ordinate an enterprise activity selling hoodies to the Leaving Certificate students of your school.",
     questionText: "List three methods of idea generation for a class activity.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 1 mark","answer":3,"ofParts":8,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Brainstorming/suggestion box/mind map/class discussion/placemats/double diamond technique","Asking other students/ask teacher/family/friends","Researching projects – online/books/newspapers/library/magazines","Reviewing needs in school/locality/study hobbies and interests/look at what is on sale in the shops","Adapt competitors ideas/ideas from abroad","Finding solutions to problems","Do market research/survey/questionnaire","Copy idea from a previous business"]} },
+    { id: "responses", kind: "anyN", verbatim: "List three methods of idea generation for a class activity. Three valid methods 3 x 1 mark", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Brainstorming/suggestion box/mind map/class discussion/placemats/double diamond technique","Asking other students/ask teacher/family/friends","Researching projects – online/books/newspapers/library/magazines","Reviewing needs in school/locality/study hobbies and interests/look at what is on sale in the shops","Adapt competitors ideas/ideas from abroad","Finding solutions to problems","Do market research/survey/questionnaire","Copy idea from a previous business"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -855,10 +1294,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 CL Section C Q2(b)(i)",
     stem: "Your Link Modules class has been asked to co‐ordinate an enterprise activity selling hoodies to the Leaving Certificate students of your school.",
     questionText: "Explain what is meant by the term ‘market research’.",
-    tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Market research involves gathering and analysing information about the market for a particular product or service/this allows you make decisions about how to proceed in business", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true },
+    { id: "definition", kind: "criterion", verbatim: "Market research involves gathering and analysing information about the market for a particular product or service/this allows you make decisions about how to proceed in business.", marks: 2, contextNote: "Original definition 2 marks (1+1); two valid pieces from the complete source definition, with no invented compulsory word split.", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -869,10 +1318,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 CL Section C Q2(b)(ii)",
     stem: "Your Link Modules class has been asked to co‐ordinate an enterprise activity selling hoodies to the Leaving Certificate students of your school.",
     questionText: "Explain why market research is necessary for this activity.",
-    tariffModel: {"kind":"bestNofParts","notation":"(1+1+1)","answer":3,"ofParts":6,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Can help you find out if there is a demand for your product","Can help decide on the price to charge","Can help you find out what your competitiors are doing","Can help you adapt your product to a product customers want","Can lead to better decision making in the business","Can help minimise risk and the risk of failure"]} },
+    { id: "responses", kind: "anyN", verbatim: "Explain why market research is necessary for this activity. 3 marks (1+1+1)", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":3,"perOption":1,"options":["Can help you find out if there is a demand for your product","Can help decide on the price to charge","Can help you find out what your competitiors are doing","Can help you adapt your product to a product customers want","Can lead to better decision making in the business","Can help minimise risk and the risk of failure"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -883,10 +1342,24 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 CL Section C Q2(c)",
     stem: "Your Link Modules class has been asked to co‐ordinate an enterprise activity selling hoodies to the Leaving Certificate students of your school.",
     questionText: "Design a questionnaire to carry out market research for this enterprise activity. It should contain at least five questions.",
-    tariffModel: {"kind":"fixed","notation":"8 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Questionnaire Please answer the following questions by ticking the boxes", marks: 8, contextNote: "8 marks for this answer.", openList: true },
+    { id: "heading", kind: "point", verbatim: "heading", marks: 1, contextNote: "Original layout 3x1: heading, variety of question styles, instructions. If activity is non-hoodie based, mark on LAYOUT ONLY; all five question-content marks must remain 0. Complete original six-question model, all choices and compulsory finance marker: Questionnaire Please answer the following questions by ticking the boxes. Q.1 Male ☐ Female ☐ | Q.2 Would you buy a hoodie? Yes ☐ No ☐ | Q.3 Which colour hoodie would you prefer? Blue ☐ Red ☐ Grey ☐ | Q.4 Would you like your initials on the sleeve of the hoodie? Yes ☐ No ☐ | Q.5 Which style hoodie would you prefer? Full zip ☐ No zip ☐ | Q.6* How much would you be willing to pay for a hoodie?" },
+    { id: "styles", kind: "point", verbatim: "variety of question styles", marks: 1 },
+    { id: "instructions", kind: "point", verbatim: "instructions", marks: 1 },
+    { id: "finance", kind: "point", verbatim: "Compulsory question relating to finance", marks: 1, contextNote: "ONE of the FIVE questions must relate to finance; this counts within the five, not an extra mark. Only a relevant hoodie question scores." },
+    { id: "questions", kind: "criterion", verbatim: "questions", marks: 4, contextNote: "FOUR other distinct relevant hoodie questions, 1 each, alongside the separately required finance question 1. Original allocation: 5 questions, 5 x 1 mark total. Non-hoodie activity receives LAYOUT ONLY; no question-content marks. At least five questions are required; preserve all six source examples as alternatives.", permittedMarks: [0,1,2,3,4], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]},{"id":"response-3","verbatim":"Response 3","marks":1,"permittedMarks":[0,1]},{"id":"response-4","verbatim":"Response 4","marks":1,"permittedMarks":[0,1]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -897,81 +1370,215 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 CL Section C Q2(d)(i)",
     stem: "Your Link Modules class has been asked to co‐ordinate an enterprise activity selling hoodies to the Leaving Certificate students of your school.",
     questionText: "Why is it important to evaluate this enterprise activity?",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 1 mark","answer":3,"ofParts":5,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["To assess if aims were met/what worked well/was it a success/did they make a profit?","You find out what did not go well and why","You can take corrective action if activity is still ongoing","You are informed for future activities","Individual team members can be evaluated on their contribution to the activity/ skills improved"]} },
+    { id: "responses", kind: "anyN", verbatim: "Why is it important to evaluate this enterprise activity? 3 x 1 mark", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":3,"perOption":1,"options":["To assess if aims were met/what worked well/was it a success/did they make a profit?","You find out what did not go well and why","You can take corrective action if activity is still ongoing","You are informed for future activities","Individual team members can be evaluated on their contribution to the activity/ skills improved"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
-    id: "lcvp-2019-cl-c2dii", topicId: "lcvp-link-modules-0-4", conceptId: "methods-can-be-used-evaluate-activity",
+    id: "lcvp-2019-cl-c2dii", topicId: "lcvp-link-modules-1-3", conceptId: "methods-can-be-used-evaluate-activity",
     section: "C", questionRef: "2019 CL Section C Q2(d)(ii)",
     stem: "Your Link Modules class has been asked to co‐ordinate an enterprise activity selling hoodies to the Leaving Certificate students of your school.",
     questionText: "State and explain three methods which can be used to evaluate this activity.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 (1+1)","answer":3,"ofParts":8,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Aims and objectives achieved/amount of funds raised by the activity/did it come in on budget: A large profit indicates the activity was a success. Easy to organise/objective","Questionnaire/survey: Given to the class members/teacher/customers to assess the quality of the product etc. Easy to do/ anonymous/inexpensive/good response rate/objective","Class discussion: Ask students for their opinions. Easy to do/ inexpensive/ wide variety of opinions given/honest feedback/can review teamwork/practice communication skills","Evaluate what skills were developed: what has been learnt/do a SCOT analysis/help with future activities/use of skills for the future","Ask teachers/customers involved for their opinion/no cost involved/honest feedback/easy to do","Teamwork/what teamwork elements worked well/didn’t work well/to see if the class put in to practice what they have learned","Review of portfolio item – have enough information to write up an Enterprise Report/Action Plan/Summary Report/all members must prepare a report/reports can be compared easily","Etc. NOTE: Repetition will not score"]} },
+    { id: "responses", kind: "criterion", verbatim: "State and explain three methods which can be used to evaluate the success of this activity. Explanation of the three methods 3 x 2 (1+1) marks", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: State and explain three methods which can be used to evaluate the success of this activity. Explanation of the three methods 3 x 2 (1+1) marks Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Aims and objectives achieved/amount of funds raised by the activity/did it come in on budget: A large profit indicates the activity was a success. Easy to organise/objective. | 2. Questionnaire/survey: Given to the class members/teacher/customers to assess the quality of the product etc. Easy to do/ anonymous/inexpensive/good response rate/objective | 3. Class discussion: Ask students for their opinions. Easy to do/ inexpensive/ wide variety of opinions given/honest feedback/can review teamwork/practice communication skills | 4. Evaluate what skills were developed: what has been learnt/do a SCOT analysis/help with future activities/use of skills for the future | 5. Ask teachers/customers involved for their opinion/no cost involved/honest feedback/easy to do | 6. Teamwork/what teamwork elements worked well/didn’t work well/to see if the class put in to practice what they have learned | 7. Review of portfolio item – have enough information to write up an Enterprise Report/Action Plan/Summary Report/all members must prepare a report/reports can be compared easily | 8. Etc. NOTE: Repetition will not score Original NOTE: Repetition will not score.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
-    id: "lcvp-2019-cl-c3b", topicId: "lcvp-link-modules-1-3", conceptId: "prepare-agenda-first-meeting-plan-organise",
-    section: "C", questionRef: "2019 CL Section C Q3(b)",
+    id: "lcvp-2019-cl-c3ai", topicId: "lcvp-link-modules-1-0", conceptId: "c3ai",
+    section: "C", questionRef: "2019 CL Section C Q3(a)(i)",
     stem: "Teamwork is an essential part of the LCVP.",
-    questionText: "Prepare the agenda for the first meeting to plan and organise the activity stated above.",
-    tariffModel: {"kind":"fixed","notation":"5 x 1 mark","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    questionText: "Name one LCVP team activity you participated in.",
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Heading - Agenda", marks: 1, contextNote: "1 mark for this, priced on its own beside the list below.", openList: true },
-    { id: "r-2", kind: "anyN", verbatim: "Any 5 of the answers the scheme states", marks: 5, contextNote: "5 answers at 1 mark each.", openList: true, group: {"claimMax":5,"perOption":1,"options":["Election of officers* (Chairperson/Managing Director/Secretary/Treasurer)","Explanation of roles","Finance","Draw up plan of work/action steps","Timeline/deadlines/completion dates/schedule of time","Assigning tasks/roles/delegation of duties/permission from principal","Date/time of next meeting","AOB"]} },
+    { id: "activity", kind: "point", verbatim: "Name of activity", marks: 1, contextNote: "Name ONE LCVP team activity actually participated in. The source gives no personal example; none is invented." },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
-    id: "lcvp-2019-cl-c3c", topicId: "lcvp-link-modules-1-3", conceptId: "characteristics-effective-team-member",
+    id: "lcvp-2019-cl-c3aii", topicId: "lcvp-link-modules-1-0", conceptId: "c3aii",
+    section: "C", questionRef: "2019 CL Section C Q3(a)(ii)",
+    stem: "Teamwork is an essential part of the LCVP. Name one LCVP team activity you participated in.",
+    questionText: "Describe your role in this activity.",
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 3,
+    rows: [
+    { id: "role", kind: "point", verbatim: "State role", marks: 1 },
+    { id: "explanation", kind: "point", verbatim: "explain role in activity", marks: 2, contextNote: "Explain the role in the SAME activity named in(i); original 3 marks (1+2), no internal 1 mark explanation step printed. No invented personal model." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
+    id: "lcvp-2019-cl-c3b", topicId: "lcvp-link-modules-1-0", conceptId: "prepare-agenda-first-meeting-plan-organise",
+    section: "C", questionRef: "2019 CL Section C Q3(b)",
+    stem: "Teamwork is an essential part of the LCVP. Name one LCVP team activity you participated in.",
+    questionText: "Prepare the agenda for the first meeting to plan and organise the activity stated above.",
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 6,
+    rows: [
+    { id: "heading", kind: "point", verbatim: "Heading - Agenda", marks: 1 },
+    { id: "responses", kind: "anyN", verbatim: "Agenda items", marks: 5, contextNote: "FIVE relevant agenda items, 1 each, for the first meeting of the SAME activity. Heading 1 is separately required; all 8 original item alternatives retained.", openList: true, group: {"claimMax":5,"perOption":1,"options":["Election of officers* (Chairperson/Managing Director/Secretary/Treasurer)","Explanation of roles","Finance","Draw up plan of work/action steps","Timeline/deadlines/completion dates/schedule of time","Assigning tasks/roles/delegation of duties/permission from principal","Date/time of next meeting","AOB"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
+    id: "lcvp-2019-cl-c3c", topicId: "lcvp-link-modules-1-0", conceptId: "characteristics-effective-team-member",
     section: "C", questionRef: "2019 CL Section C Q3(c)",
     stem: "Teamwork is an essential part of the LCVP.",
     questionText: "Outline three characteristics of an effective team member.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":9,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["A good listener/communicator","Willing to do their share/share ideas","Being good at encouraging others to participate","Asking for help form others when needed/offering help to others","Good at keeping deadline/reaching targets","Good at recording what was decided, who does what etc","Committed to the team and its success","Tolerant of others ideas and views/accepts criticism","Leadership ability"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline three characteristics of an effective team member. Three valid characteristics 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Outline three characteristics of an effective team member. Three valid characteristics 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. A good listener/communicator | 2. Willing to do their share/share ideas | 3. Being good at encouraging others to participate | 4. Asking for help form others when needed/offering help to others | 5. Good at keeping deadline/reaching targets | 6. Good at recording what was decided, who does what etc. | 7. Committed to the team and its success | 8. Tolerant of others ideas and views/accepts criticism | 9. Leadership ability The source also prints “Etc.”.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
-    id: "lcvp-2019-cl-c3di", topicId: "lcvp-link-modules-1-3", conceptId: "challenges-teamwork",
+    id: "lcvp-2019-cl-c3di", topicId: "lcvp-link-modules-1-0", conceptId: "challenges-teamwork",
     section: "C", questionRef: "2019 CL Section C Q3(d)(i)",
-    stem: "Teamwork is an essential part of the LCVP.",
+    stem: "Teamwork is an essential part of the LCVP. While organisations place an emphasis on teamwork it can also create challenges.",
     questionText: "Describe three challenges of teamwork.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 1 mark","answer":3,"ofParts":7,"perPart":1}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Describe three challenges of teamwork. Naming three challenges — any 3", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Team members not pulling their weight","Not turning up/turning up late","Team members may not be working well together/dominant personality/controlling/personality clash","Disagreement amongst team members – unequal distribution of roles","Poor leadership - It may be difficult to plan and co-ordinate the work of the team","There might be too much talking and not enough action","Lack of skills"]} },
+    { id: "responses", kind: "anyN", verbatim: "Describe three challenges of teamwork. Naming three challenges 3 x 1 mark", marks: 3, contextNote: "Choose any 3 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Team members not pulling their weight","Not turning up/turning up late","Team members may not be working well together/dominant personality/controlling/personality clash","Disagreement amongst team members – unequal distribution of roles","Poor leadership - It may be difficult to plan and co-ordinate the work of the team","There might be too much talking and not enough action","Lack of skills"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
-    id: "lcvp-2019-cl-c3dii", topicId: "lcvp-link-modules-1-3", conceptId: "these-challenges-may-be-overcome",
+    id: "lcvp-2019-cl-c3dii", topicId: "lcvp-link-modules-1-0", conceptId: "these-challenges-may-be-overcome",
     section: "C", questionRef: "2019 CL Section C Q3(d)(ii)",
-    stem: "Teamwork is an essential part of the LCVP.",
+    stem: "Teamwork is an essential part of the LCVP. While organisations place an emphasis on teamwork it can also create challenges. Describe three challenges of teamwork.",
     questionText: "Outline how these challenges may be overcome.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":6,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Outline how these challenges maybe overcome. Any three — any 3", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["There should be regular meetings to review progress of team members or to clearly define their duties","Provide a team building exercise for members/bring in a mediator","Members discuss decisions and agree to commit to final decisions or some decisions remain flexible so that agreement can be reached","A strong team leader is needed who clearly defines roles within the team/regular meeting","Training is needed. The importance of sticking to time schedules needs to be clearly established","Or any other valid answer"]} },
+    { id: "responses", kind: "criterion", verbatim: "Outline how these challenges maybe overcome. Any three valid explanations 3 x 2 marks (1+1)", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Outline how these challenges maybe overcome. Any three valid explanations 3 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. There should be regular meetings to review progress of team members or to clearly define their duties. | 2. Provide a team building exercise for members/bring in a mediator. | 3. Members discuss decisions and agree to commit to final decisions or some decisions remain flexible so that agreement can be reached. | 4. A strong team leader is needed who clearly defines roles within the team/regular meeting. | 5. Training is needed. The importance of sticking to time schedules needs to be clearly established. | 6. Or any other valid answer The source also prints “Etc.”. Each explanation must overcome the SAME challenge named in part(i); no fixed model pairing is inferred.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
+    id: "lcvp-2019-cl-c4a", topicId: "lcvp-link-modules-1-1", conceptId: "c4a",
+    section: "C", questionRef: "2019 CL Section C Q4(a)",
+    stem: "A visit to a local business enterprise.",
+    questionText: "Name the business enterprise your class visited and describe two reasons why you chose this particular business enterprise.",
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 3,
+    rows: [
+    { id: "business", kind: "point", verbatim: "Name of the business", marks: 1 },
+    { id: "reasons", kind: "criterion", verbatim: "Two reasons", marks: 2, contextNote: "TWO reasons for choosing the SAME named local business, 1 each; business name 1 separately. No personal model answer printed or invented.", permittedMarks: [0,1,2], parts: [{"id":"response-1","verbatim":"Response 1","marks":1,"permittedMarks":[0,1]},{"id":"response-2","verbatim":"Response 2","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -982,38 +1589,92 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 CL Section C Q4(b)",
     stem: "A visit to a local business enterprise.",
     questionText: "Outline four steps that should be taken in preparation for this visit.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 2 marks","answer":4,"ofParts":7,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Contact the enterprise to arrange date and time","Get permission from the principal/parents","Research the company/prepare questions to ask","Ask teacher to review the questions that were prepared","Arrange transport/collect money","Prepare necessary materials for the visit/questionnaire/notebook and pen","Decide who is doing what on the visit/assign roles to different people"]} },
+    { id: "responses", kind: "anyN", verbatim: "Outline four steps that should be taken in preparation for this visit. Four valid steps 4 x 2 marks", marks: 8, contextNote: "Choose any 4 distinct responses across the complete original pool. Each response receives 2 or 0 marks; no unprinted partial step is inferred. The source also prints “Etc.”; equivalent valid responses remain possible.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Contact the enterprise to arrange date and time","Get permission from the principal/parents","Research the company/prepare questions to ask","Ask teacher to review the questions that were prepared","Arrange transport/collect money","Prepare necessary materials for the visit/questionnaire/notebook and pen","Decide who is doing what on the visit/assign roles to different people"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
-    id: "lcvp-2019-cl-c4c", topicId: "lcvp-link-modules-1-2", conceptId: "key-areas-information-informed-about-during",
+    id: "lcvp-2019-cl-c4c", topicId: "lcvp-link-modules-1-1", conceptId: "key-areas-information-informed-about-during",
     section: "C", questionRef: "2019 CL Section C Q4(c)",
     stem: "A visit to a local business enterprise.",
     questionText: "Describe four key areas of information you were informed about during this visit.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 2 marks (1+1)","answer":4,"ofParts":10,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Background/history of Entrepreneur/description of business","Product/Service provided","Marketing","Health & Safety","Staffing","Finance","Challenges faced","Future Plans","Environment/CSR/sustainability","Production/manufacturing process"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe four key areas of information you were informed about during this visit. Four valid explanations 4 x 2 marks (1+1)", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: Describe four key areas of information you were informed about during this visit. Four valid explanations 4 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Background/history of Entrepreneur/description of business | 2. Product/Service provided | 3. Marketing | 4. Health & Safety | 5. Staffing | 6. Finance | 7. Challenges faced | 8. Future Plans | 9. Environment/CSR/sustainability | 10. Production/manufacturing process", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
-    id: "lcvp-2019-cl-c4d", topicId: "lcvp-link-modules-0-4", conceptId: "does-lcvp-prepare-students-skills-they",
+    id: "lcvp-2019-cl-c4d", topicId: "lcvp-link-modules-0-0", conceptId: "does-lcvp-prepare-students-skills-they",
     section: "C", questionRef: "2019 CL Section C Q4(d)",
     stem: "A visit to a local business enterprise.",
     questionText: "Does the LCVP prepare students with the skills they need to succeed in the modern world of work? Give three reasons for your answer.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks (1+1)","answer":3,"ofParts":12,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Helps students to develop communication skills which will enable students to communicate with employers/fellow employees/ customers in the future","Develop IT skills/typing which will enable them to engage effectively with IT in the future","Helps develop teamwork skills which will enable them to work as part of a team in their future workplace","Helps them develop presentation skills which will help them when making presentations within their workplace in the future","Develop research skills…","May have developed leadership skills…","Report writing skills","Planning skills","Organisation skills","Problem solving","Time management","Motivation"]} },
+    { id: "reasons", kind: "criterion", verbatim: "Three valid reasons YES or NO", marks: 6, contextNote: "THREE explained reasons, 1+1 each; YES or NO accepted, no separate opinion mark. Complete original 12-model pool and Etc, including both original columns: Helps students to develop communication skills which will enable students to communicate with employers/fellow employees/ customers in the future | Develop IT skills/typing which will enable them to engage effectively with IT in the future | Helps develop teamwork skills which will enable them to work as part of a team in their future workplace | Helps them develop presentation skills which will help them when making presentations within their workplace in the future | Develop research skills… | May have developed leadership skills… | Report writing skills | Planning skills | Organisation skills | Problem solving | Time management | Motivation | Etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
+    id: "lcvp-2019-cl-c5ai", topicId: "lcvp-link-modules-1-2", conceptId: "c5ai",
+    section: "C", questionRef: "2019 CL Section C Q5(a)(i)",
+    stem: "Voluntary organisations play a valuable role in our society.",
+    questionText: "What is the purpose of voluntary organisations?",
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 2,
+    rows: [
+    { id: "purpose", kind: "point", verbatim: "The purpose of voluntary organisations is to provide services/support/advice to individuals in need of help without profit as a motive.", marks: 2, contextNote: "ONE whole purpose response, 2 marks; no internal 1 mark split printed." },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1024,52 +1685,118 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 CL Section C Q5(a)(ii)",
     stem: "Voluntary organisations play a valuable role in our society.",
     questionText: "Name two voluntary organisations in your area.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 mark","answer":2,"ofParts":5,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Tidy towns","GAA","SVDP","Local Vol groups","Charity shops"]} },
+    { id: "responses", kind: "anyN", verbatim: "Name two voluntary organisations in your area. 2 x 1 mark", marks: 2, contextNote: "Choose any 2 distinct responses across the complete original pool. Each response receives 1 or 0 marks; no unprinted partial step is inferred. ", openList: true, group: {"claimMax":2,"perOption":1,"options":["Tidy towns","GAA","SVDP","Local Vol groups","Charity shops"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
-    id: "lcvp-2019-cl-c5b", topicId: "lcvp-link-modules-0-4", conceptId: "like-work-voluntary-organisation-ensure-good",
+    id: "lcvp-2019-cl-c5b", topicId: "lcvp-link-modules-1-2", conceptId: "like-work-voluntary-organisation-ensure-good",
     section: "C", questionRef: "2019 CL Section C Q5(b)",
     stem: "Voluntary organisations play a valuable role in our society.",
     questionText: "You would like to work in a voluntary organisation. To ensure that you do a good interview, what preparation would you carry out in advance?",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 (1+1)","answer":3,"ofParts":10,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 6, contextNote: "3 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Do research on the work of the voluntary organisation","Prepare questions to ask the interviewer at the end","Practice answering questions/do a mock interview","Prepare clothing/grooming/dress appropriately","Find out where the interview is located/organise transport/dummy run/arrive on time","Review your letter of application/CV/application form","Stay calm and eat","Research garda vetting and what you need to get it","Attend appropriate training courses if possible e.g. first aid/cpr","Let your referees know that you have an interview"]} },
+    { id: "responses", kind: "criterion", verbatim: "You would like to work in a voluntary organisation. To ensure that you do a good interview, what preparation would you carry out in advance? Three valid answers 3 x 2 (1+1) marks", marks: 6, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: You would like to work in a voluntary organisation. To ensure that you do a good interview, what preparation would you carry out in advance? Three valid answers 3 x 2 (1+1) marks Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Do research on the work of the voluntary organisation | 2. Prepare questions to ask the interviewer at the end | 3. Practice answering questions/do a mock interview | 4. Prepare clothing/grooming/dress appropriately | 5. Find out where the interview is located/organise transport/dummy run/arrive on time | 6. Review your letter of application/CV/application form | 7. Stay calm and eat | 8. Research garda vetting and what you need to get it | 9. Attend appropriate training courses if possible e.g. first aid/cpr | 10. Let your referees know that you have an interview The source also prints “Etc.”.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
-    id: "lcvp-2019-cl-c5c", topicId: "lcvp-link-modules-0-3", conceptId: "ways-local-community-benefits-existence-voluntary",
+    id: "lcvp-2019-cl-c5c", topicId: "lcvp-link-modules-1-2", conceptId: "ways-local-community-benefits-existence-voluntary",
     section: "C", questionRef: "2019 CL Section C Q5(c)",
     stem: "Voluntary organisations play a valuable role in our society.",
     questionText: "Describe three ways a local community benefits from the existence of a voluntary organisation.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 3 marks (1+1+1)","answer":3,"ofParts":8,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["They provide services to the community/to help people in need/support a local cause","They can create employment by hiring full time staff/ give volunteers an opportunity to upskill","Young people can get work experience with them and can experience the work of the voluntary body/visit in to school from voluntary organisation","Local amenities or environment can be improved/tidy towns/walkways, parks, cycle tracks etc","Attracts tourism/spin off business/B&Bs/restaurants/transport business. Money spent in the area raises the standard of living in the area","A good community spirit is generated/fosters pride in the local area/there might be an increase in the number of volunteers/provides an opportunity for people to volunteer/friendships","Grants received could be used locally e.g. improving local resources or facilities","Services in the community are improved/family members may benefit from the organisation"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe three ways a local community benefits from the existence of a voluntary organisation Three valid descriptions 3 x 3 marks (1+1+1)", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Describe three ways a local community benefits from the existence of a voluntary organisation Three valid descriptions 3 x 3 marks (1+1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. They provide services to the community/to help people in need/support a local cause | 2. They can create employment by hiring full time staff/ give volunteers an opportunity to upskill | 3. Young people can get work experience with them and can experience the work of the voluntary body/visit in to school from voluntary organisation | 4. Local amenities or environment can be improved/tidy towns/walkways, parks, cycle tracks etc. | 5. Attracts tourism/spin off business/B&Bs/restaurants/transport business. Money spent in the area raises the standard of living in the area | 6. A good community spirit is generated/fosters pride in the local area/there might be an increase in the number of volunteers/provides an opportunity for people to volunteer/friendships | 7. Grants received could be used locally e.g. improving local resources or facilities | 8. Services in the community are improved/family members may benefit from the organisation The source also prints “Etc.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
-    id: "lcvp-2019-cl-c6a", topicId: "lcvp-link-modules-0-1", conceptId: "ways-have-used-ict-during-lcvp",
+    id: "lcvp-2019-cl-c5d", topicId: "lcvp-link-modules-1-2", conceptId: "c5d",
+    section: "C", questionRef: "2019 CL Section C Q5(d)",
+    stem: "Voluntary organisations play a valuable role in our society.",
+    questionText: "Name three challenges facing voluntary organisations. Describe how these challenges can be overcome.",
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 6,
+    rows: [
+    { id: "profile-1", kind: "criterion", verbatim: "challenge", marks: 2, contextNote: "THREE distinct challenges 1 each plus THREE matching descriptions of how they can be overcome 1 each. Keep each solution linked to its challenge. Full original 10-model challenge pool: Funding/sponsorship/donations - to enable the organisation to set up/offer a service/cover running costs | Lack of volunteers/staff/having suitable volunteers at the times you want. Hiring qualified skilled/ hardworking committed staff/properly qualified | Retaining volunteers/volunteers with lack of time/aging volunteers | Lack of Confidentiality/GDPR issues/volunteers with access to sensitive material | Bad publicity/controversy over salaries and payments/attitude of locals/getting the backing of the community so that they do not object to the organisations/attitudes of people to corruption in voluntary organisations | Legal issues – Garda vetting/ health and safety/start-up of the organisations/planning/ownership/obtaining suitable permits/compliance with regulations. | Assigning roles - who is responsible for the setup/roles, define who does what/deciding what people need to do. Lack of skills/expertise needed to manage or run the organisation | Marketing their service/product – finding clients, volunteers, creating awareness of the organisation | Dealing with competitors – dealing with competing voluntary organisations | Finding a suitable location. The scheme prints no completed solution examples; none is invented.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"challenge","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"description relevant to the challenge","marks":1,"permittedMarks":[0,1]}] },
+    { id: "profile-2", kind: "criterion", verbatim: "challenge", marks: 2, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"challenge","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"description relevant to the challenge","marks":1,"permittedMarks":[0,1]}] },
+    { id: "profile-3", kind: "criterion", verbatim: "challenge", marks: 2, contextNote: "Use a different complete profile with its matching components.", permittedMarks: [0,1,2], parts: [{"id":"component-1","verbatim":"challenge","marks":1,"permittedMarks":[0,1]},{"id":"component-2","verbatim":"description relevant to the challenge","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "common",
+    paperFileid: "LC462CLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
+    id: "lcvp-2019-cl-c6a", topicId: "lcvp-link-modules-0-0", conceptId: "ways-have-used-ict-during-lcvp",
     section: "C", questionRef: "2019 CL Section C Q6(a)",
     stem: "Information and Communications Technology (ICT) is the driving force of the world of work in the 21st century.",
     questionText: "Name four ways you have used ICT during the LCVP.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 1 mark","answer":4,"ofParts":13,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name four ways you have used ICT during the LCVP. Any — any 4", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Publisher","Powerpoint","Word - writing letters/permission slips","Data bases","Excel - tables/charts items/reports/printing","Desk top publishing","Online research","Youtube/videos","Use of apps – Snapchat","Recording interviews","E-mailing","Production of portfolio","Revision"]} },
+    { id: "responses", kind: "anyN", verbatim: "Any relevant answer", marks: 4, contextNote: "FOUR distinct ICT uses during LCVP, 1 each. Full original 13-model two-column pool retained; the source also prints Etc.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Publisher","Powerpoint","Word - writing letters/permission slips","Data bases","Excel - tables/charts","Desk top publishing","Online research","Youtube/videos","Use of apps – Snapchat...","Recording interviews","E-mailing","Production of portfolio items/reports/printing","Revision"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1080,24 +1807,51 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 CL Section C Q6(b)",
     stem: "Information and Communications Technology (ICT) is the driving force of the world of work in the 21st century.",
     questionText: "Why are ICT skills necessary for an employee in today’s working environment?",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 1 mark","answer":4,"ofParts":7,"perPart":1}, totalMarks: 4,
+    tariffModel: {"kind":"questionTotal","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Why are IT skills necessary for an employee? Two — any 4", marks: 4, contextNote: "4 answers at 1 mark each.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Effectively communicate through e-mail to customers/suppliers/colleagues/online sales","Use/manage/update social media","Research online/checking out competitors","Create/design/code/maintain website","Create/design/develop/update Apps etc","Be competent in word processing/type letters and reports","Use software specific to their job"]} },
+    { id: "model-1", kind: "point", verbatim: "Effectively communicate through e-mail to customers/suppliers/colleagues/online sales", marks: null, contextNote: "Numeric scoring held. Original conflicting instructions: Two relevant answers; 4 x 1 mark. Employees need to: follows in the source. Paper total 4. All original models retained; confidence review only pending authoritative clarification. No two-answer 2+2 repair, four-answer quota, partial award or tariff precedence inferred." },
+    { id: "model-2", kind: "point", verbatim: "Use/manage/update social media", marks: null },
+    { id: "model-3", kind: "point", verbatim: "Research online/checking out competitors", marks: null },
+    { id: "model-4", kind: "point", verbatim: "Create/design/code/maintain website", marks: null },
+    { id: "model-5", kind: "point", verbatim: "Create/design/develop/update Apps etc.", marks: null },
+    { id: "model-6", kind: "point", verbatim: "Be competent in word processing/type letters and reports", marks: null },
+    { id: "model-7", kind: "point", verbatim: "Use software specific to their job", marks: null },
+    { id: "model-8", kind: "point", verbatim: "Etc.", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2019, level: "common",
     paperFileid: "LC462CLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
-    id: "lcvp-2019-cl-c6c", topicId: "lcvp-link-modules-0-1", conceptId: "ict-could-be-used-effectively-business",
+    id: "lcvp-2019-cl-c6c", topicId: "lcvp-link-modules-0-0", conceptId: "ict-could-be-used-effectively-business",
     section: "C", questionRef: "2019 CL Section C Q6(c)",
     stem: "Information and Communications Technology (ICT) is the driving force of the world of work in the 21st century.",
     questionText: "Describe how ICT could be used effectively by a business.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 2 marks (1+1)","answer":4,"ofParts":14,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 4 of the answers the scheme states", marks: 8, contextNote: "4 answers at 2 marks each; each split 1+1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["The internet/website/online - could be used to source and order raw materials at the lowest possible cost/advertisement/marketing/recruitment of staff","A social media presence could be created such as Facebook or Twitter to provide information and updates about the company’s products. It could also be used to take orders/Apps","Email could be used to contact customers/suppliers/staff","Word processing could be used to create invoices and other necessary documents. The mail merge facility could be used for sending letters to customers","A database programme could be used to set up the details for all customers / suppliers / staff / stock control","File management – ease of access to information","Spreadsheets could be used for budgeting purposes as well as presenting financial statements","CAD/CAM- product design and manufacture","Desk-top publishing could be used for creating brochures to showcase the company’s products/printing labels/posters","Allows for flexible work options/staff are always connected/working from home/video conferencing","Online shopping/money transfers/banking","Provide free WiFi to attract customers","Observe if employees are using their time effectively/Monitoring employees/GPS","Powerpoint keynote presentations"]} },
+    { id: "responses", kind: "criterion", verbatim: "Describe how ICT could be used effectively by a business. Four valid descriptions 4 x 2 marks (1+1)", marks: 8, contextNote: "Choose any 4 distinct responses across the full pool. Original allocation: Describe how ICT could be used effectively by a business. Four valid descriptions 4 x 2 marks (1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. The internet/website/online - could be used to source and order raw materials at the lowest possible cost/advertisement/marketing/recruitment of staff | 2. A social media presence could be created such as Facebook or Twitter to provide information and updates about the company’s products. It could also be used to take orders/Apps. | 3. Email could be used to contact customers/suppliers/staff | 4. Word processing could be used to create invoices and other necessary documents. The mail merge facility could be used for sending letters to customers | 5. A database programme could be used to set up the details for all customers / suppliers / staff / stock control | 6. File management – ease of access to information | 7. Spreadsheets could be used for budgeting purposes as well as presenting financial statements. | 8. CAD/CAM- product design and manufacture | 9. Desk-top publishing could be used for creating brochures to showcase the company’s products/printing labels/posters | 10. Allows for flexible work options/staff are always connected/working from home/video conferencing | 11. Online shopping/money transfers/banking | 12. Provide free WiFi to attract customers | 13. Observe if employees are using their time effectively/Monitoring employees/GPS | 14. Powerpoint keynote presentations The source also prints “Etc.”.", permittedMarks: [0,1,2,3,4,5,6,7,8], parts: [{"id":"response-1","verbatim":"Response 1","marks":2,"permittedMarks":[0,1,2]},{"id":"response-2","verbatim":"Response 2","marks":2,"permittedMarks":[0,1,2]},{"id":"response-3","verbatim":"Response 3","marks":2,"permittedMarks":[0,1,2]},{"id":"response-4","verbatim":"Response 4","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1106,12 +1860,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Link Modules 2019 Common Level — © State Examinations Commission.",
     id: "lcvp-2019-cl-c6d", topicId: "lcvp-link-modules-0-0", conceptId: "challenges-affect-organisations-businesses-use-ict",
     section: "C", questionRef: "2019 CL Section C Q6(d)",
-    stem: "Information and Communications Technology (ICT) is the driving force of the world of work in the 21st century. Wednesday 1 May Morning 10:00 – 12:30",
+    stem: "Information and Communications Technology (ICT) is the driving force of the world of work in the 21st century.",
     questionText: "Discuss three challenges that affect organisations and businesses that use ICT.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 3 marks (1+1+1)","answer":3,"ofParts":12,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Original 2019 allocation; C6(b) conflicting count held"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 3 of the answers the scheme states", marks: 9, contextNote: "3 answers at 3 marks each; each split 1+1+1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Cost - Technology requires a lot of capital investment/technology must be constantly updated/obsolete very quickly/ergonomics solutions","Ongoing maintenance and IT support","Availability of broadband","Staff have to be trained to use the technology and get the most from it","Security/antivirus software must be updated regularly/information must be kept secure from hackers/competitors may gain vital information","GDPR implications for businesses since May 2018 – data protection","Fraud/you could be conned when doing business on the internet/phishing","Some customers and markets do not have the technology to do business in this way","E-commerce/must ensure customers payment details and credit card details are secure","System failure/technology (hardware, software, broadband) can breakdown","Workers well-being – Repetitive Strain Injury(RSI), Eye Strain, Unmotivated","Negative/bad reviews of the business from customers/service/bad ratings Blank Page"]} },
+    { id: "responses", kind: "criterion", verbatim: "Discuss three challenges that affect organisations and businesses that use ICT. Three valid challenges 3 x 3 marks (1+1+1)", marks: 9, contextNote: "Choose any 3 distinct responses across the full pool. Original allocation: Discuss three challenges that affect organisations and businesses that use ICT. Three valid challenges 3 x 3 marks (1+1+1) Each response follows the printed component ladder; do not count the same expansion twice.  Complete original guidance: 1. Cost - Technology requires a lot of capital investment/technology must be constantly updated/obsolete very quickly/ergonomics solutions | 2. Ongoing maintenance and IT support | 3. Availability of broadband | 4. Staff have to be trained to use the technology and get the most from it | 5. Security/antivirus software must be updated regularly/information must be kept secure from hackers/competitors may gain vital information | 6. GDPR implications for businesses since May 2018 – data protection | 7. Fraud/you could be conned when doing business on the internet/phishing | 8. Some customers and markets do not have the technology to do business in this way | 9. E-commerce/must ensure customers payment details and credit card details are secure | 10. System failure/technology (hardware, software, broadband) can breakdown | 11. Workers well-being – Repetitive Strain Injury(RSI), Eye Strain, Unmotivated | 12. Negative/bad reviews of the business from customers/service/bad ratings", permittedMarks: [0,1,2,3,4,5,6,7,8,9], parts: [{"id":"response-1","verbatim":"Response 1","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-2","verbatim":"Response 2","marks":3,"permittedMarks":[0,1,2,3]},{"id":"response-3","verbatim":"Response 3","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL SOURCE",
+          "title": "Original question",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC LCVP Link Modules 2019 Common Level — © State Examinations Commission.",
+          "presentationNote": "Read the complete original source and question in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
