@@ -182,3 +182,19 @@ Everything needed to rebuild or audit the committed Irish cards lives in the rep
   pass, `regenerate.sh --check` reproduces every Irish output (its only drift is main's stale Art 2024 topic tags,
   fixed centrally), and the gate also checks every served card at all three levels, the claimable rows cut from
   its keys included, so no heading can reach a student as a button.
+
+## The deferred sittings
+
+`irish_deferred.py` cards the SEC's deferred sittings (deferredexams/, deferredmarkingschemes/; 2025 and 2024 so far,
+Higher and Ordinary, Papers 1 and 2) in the June shape for the same paper layout: one card per listening extract with a
+criterion per printed question, one per composition title, each reading question whole with every printed part (and each
+independently priced answer or point) as a practice card, one per literature option with its parts as criteria (and, at
+Ordinary Level, each part of a prescribed text as its own card). It runs the legacy builders on the deferred PDFs for the
+printed questions, then lifts every chunk from the deferred scheme. Ids read `irish-2025-hl-deferred-p1-…`, citations end
+"— Deferred sitting", cards open `LC001ALP100IV-deferred` and cite the deferred scheme; the scheme text is exported as
+`examiner-reports/irish/schemes/2025-hl-deferred.md` and `irish_lifted.card_corpus` checks a deferred card against its
+own sitting's print. Each manifest lists the census asks every card covers (`covers`), which `reconcile_manifest` reads.
+
+The deferred schemes print no key for some options (Higher 2B, 3B, 4C and 4E; Ordinary 2B, 3B and, in 2025, 2A(c) An
+Lasair Choille): a card for one is marked by what the scheme does print (its band table, Ceist 4's directions) or, where
+it prints nothing, at the paper's printed tariffs, and its note opens "The scheme prints no answer for this part."

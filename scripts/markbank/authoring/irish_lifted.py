@@ -43,17 +43,29 @@ def norm(text: str) -> str:
     return re.sub(r'[^a-z0-9áéíóú]+', '', unicodedata.normalize('NFKC', text).lower())
 
 
+# A card from the SEC's deferred sitting ("irish-2025-hl-deferred-p1-…", irish_deferred.py) is that sitting's print:
+# its own papers and scheme (deferredexams/, deferredmarkingschemes/, schemes/YEAR-LL-deferred.md), never June's.
+DEFERRED_CARD = re.compile(r'^irish-\d{4}-(?:hl|ol)-deferred-')
+
+
 @lru_cache(maxsize=None)
-def corpus(year: int) -> str:
+def corpus(year: int, deferred: bool = False) -> str:
     import fitz
     texts = []
-    for kind in ('markingschemes', 'exampapers'):
+    kinds = ('deferredmarkingschemes', 'deferredexams') if deferred else ('markingschemes', 'exampapers')
+    for kind in kinds:
         for path in sorted(glob.glob(os.path.join(ROOT, 'paper-trail-corpus', kind, str(year), 'LC001*.pdf'))):
             texts.append(' '.join(page.get_text() for page in fitz.open(path)))
     for path in sorted(glob.glob(os.path.join(ROOT, 'examiner-reports', 'irish', 'schemes', f'{year}-*.md'))):
-        texts.append(open(path, encoding='utf-8').read())
-    assert texts, f'No local Irish papers or schemes for {year}'
+        if path.endswith('-deferred.md') == deferred:
+            texts.append(open(path, encoding='utf-8').read())
+    assert texts, f'No local Irish papers or schemes for {year}' + (' (deferred)' if deferred else '')
     return norm(' '.join(texts))
+
+
+def card_corpus(card: dict) -> str:
+    """The print a card's words are checked against: its own sitting's papers and scheme."""
+    return corpus(card['year'], bool(DEFERRED_CARD.match(card.get('id', ''))))
 
 
 def sec(fragment: str, text: str) -> bool:
@@ -200,7 +212,7 @@ def printed_tasks(card: dict) -> dict:
     """A task check is the paper's own instruction or plain English: the student reads it under "Task check", and
     Irish there reads as the SEC's. A line the paper prints stays; a line of ours becomes the paper's sentence for
     the same instruction where it prints one (TASK_PRINTED), else its English (TASK_ENGLISH). Anything else fails."""
-    text = corpus(card['year'])
+    text = card_corpus(card)
     out: list[str] = []
     for line in card.get('taskRequirements', []):
         if line in ENGLISH_TASKS:
@@ -284,7 +296,7 @@ def printed_question(cards: list[dict]) -> list[dict]:
 
 
 def written(card: dict) -> list[str]:
-    text = corpus(card['year'])
+    text = card_corpus(card)
     out = [piece for criterion in card['criteria'] for line in criterion['guidance']
            for piece, _, is_sec in split_line(line, text) if piece.strip() and not is_sec]
     out += [f'{field}: {match.group(0)}' for field in ('questionText', 'stem', 'practiceFocus', 'practiceInstruction')
@@ -377,8 +389,10 @@ def relift_band_tables(card: dict) -> dict:
     # The legacy cards carry no scheme file id: each level's combined scheme is the one file the year prints for it.
     fileid = card.get('schemeFileid') or {'higher': 'LC001ALP000IV', 'ordinary': 'LC001GLP000IV',
                                           'foundation': 'LC001BLP000IV'}.get(card.get('level', ''), '')
+    deferred = bool(DEFERRED_CARD.match(card.get('id', '')))
+    fileid = fileid.removesuffix('-deferred')
     fileid = fileid if not fileid or fileid.endswith('.pdf') else fileid + '.pdf'
-    path = os.path.join(ROOT, 'paper-trail-corpus', 'markingschemes', str(card.get('year')), fileid)
+    path = os.path.join(ROOT, 'paper-trail-corpus', 'deferredmarkingschemes' if deferred else 'markingschemes', str(card.get('year')), fileid)
     if not fileid or not os.path.exists(path):
         return card
     # Widest first, and never inside a wider table: "Marc as 4 Sármhaith An-mhaith …" is also the tail of the two-column
@@ -399,7 +413,7 @@ def scheme_words(cards: list[dict]) -> list[dict]:
         relift_band_tables(card)
         return_band_tables(card)
     for card in cards:
-        text = corpus(card['year'])
+        text = card_corpus(card)
         notes: list[str] = []
 
         def leave(run: list[str]) -> None:

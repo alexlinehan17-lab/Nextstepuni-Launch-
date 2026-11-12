@@ -594,8 +594,9 @@ describe('the question comes first and stays', () => {
   });
 
   test('shows and grades an Irish listening section once, then advances past every child card', () => {
+    // June's two fógraí (the deferred sitting's play their own recording: markBankIrishDeferred.test.ts).
     const listening = IRISH_HIGHER.filter(entry =>
-      entry.year === 2025 && entry.topicId === 'irish-1-0');
+      entry.year === 2025 && entry.topicId === 'irish-1-0' && !entry.id.includes('-deferred-'));
     const next = card({ id: 'after-listening', questionText: 'The next visible exercise.' });
     const { onGrade, onFinish } = renderSession([...listening, next]);
 

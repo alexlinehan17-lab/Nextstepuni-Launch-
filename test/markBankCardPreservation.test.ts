@@ -252,6 +252,10 @@ const addedIrishRoutes = new Set([
 
 // Paper-reviewed Ordinary additions are tracked the same way beside the frozen
 // 185-ID Ordinary hash (2026 Ordinary Papers 1 and 2, reviewed 2026-10-11).
+// The SEC's deferred Irish sittings (irish_deferred.py, from 2026-11-12, "irish-2025-hl-deferred-p1-…") join as
+// additions, each its own sitting and every id new (pinned per level below).
+const irishDeferredIds = new Set([...IRISH_HIGHER, ...IRISH_ORDINARY]
+  .filter(card => /^irish-\d{4}-(?:hl|ol)-deferred-/.test(card.id)).map(card => card.id));
 const addedIrishOrdinaryRoutes = new Set([
   ...['a-f1-q1a','a-f1-q1b','a-f1-q2a','a-f1-q2b','a-f2-q1a','a-f2-q1b','a-f2-q2a','a-f2-q2b',
     'b-c1-first-q1','b-c1-first-q2','b-c1-second-q1','b-c1-second-q2','b-c2-first-q1','b-c2-first-q2','b-c2-second-q1','b-c2-second-q2',
@@ -913,8 +917,8 @@ const decks = [
   ['english:ordinary', ENGLISH_ORDINARY, 440, '9e667c2b7181e951fcb7b875ab7a0fb009f5db1389d75d89131dacebbc90994f'],
   /* Original 400 Irish identities. Their presence does not establish coverage
    * of every task or route; the full 2010–2026 review remains in progress. */
-  ['irish:higher', IRISH_HIGHER.filter(card => !addedIrishRoutes.has(card.id)), 215, '47cc840774127e9368d60a0965951e7fc39bd3a2a02c1d9fddd11738cc18255b'],
-  ['irish:ordinary', IRISH_ORDINARY.filter(card => !addedIrishOrdinaryRoutes.has(card.id)), 185, '34e18ac058529e14ac0337a030264ab74329f72dabdd0dee8d9b912107dd343c'],
+  ['irish:higher', IRISH_HIGHER.filter(card => !addedIrishRoutes.has(card.id) && !irishDeferredIds.has(card.id)), 215, '47cc840774127e9368d60a0965951e7fc39bd3a2a02c1d9fddd11738cc18255b'],
+  ['irish:ordinary', IRISH_ORDINARY.filter(card => !addedIrishOrdinaryRoutes.has(card.id) && !irishDeferredIds.has(card.id)), 185, '34e18ac058529e14ac0337a030264ab74329f72dabdd0dee8d9b912107dd343c'],
   /* 2026-08-30: complete Art written-paper launch. All 462 separately marked
    * tasks and finite printed answer routes across 2021–2025 are present. This
    * includes all ten heading pairs for 2025 OL Q4(a), while keeping Section
@@ -2056,8 +2060,8 @@ const technologyAdditions = {
   ordinary: [TECHNOLOGY_ORDINARY, 600, '08bec3e9d34162f043903934b63c8ba8a91a25c57ebe1f76264e3c4b79054a9b'],
 } as const;
 const dcgAdditions = {
-  higher: [DCG_HIGHER, 137, '4e3331295e914061f96be14d55e3689082202227750adfc970c931059e56b34e'],
-  ordinary: [DCG_ORDINARY, 99, '9b331a5a62d3149d3bebb09ce1a20354f299be8b24efac627bd8b19037d1e29b'],
+  higher: [DCG_HIGHER, 273, '717615c37bfaafff4c76b0d83b5845656bce7a801d7743c16a40d265a0f3ba5c'],
+  ordinary: [DCG_ORDINARY, 192, '4f8acb08271b7adab11c2cdd48c86ed272e650be1efa91dd6081ac94cdc6779d'],
 } as const;
 const peAdditions = {
   higher: [PE_HIGHER, 257, 'b66f69f293e90b2913862dbb646bc161bbff8eda4ea41ba78d88fbb66acd23bf'],
@@ -2151,7 +2155,15 @@ describe('Mark Bank card preservation', () => {
     // 33 for its 29 (C-5 in five named groups); 2016 Higher 43 for its 35
     // (C-1(a) in three earthworks pieces, C-5(a) in eight named groups);
     // 2016 Ordinary 32 for its 26 (A-2 in two printed heads, C-5 in six
-    // named groups).
+    // named groups); 2015 Higher 45 for its 33 (B-1(a) under three printed
+    // heads, B-2(c) two, C-1(a) four earthworks sections, C-5(a) eight);
+    // 2015 Ordinary 35 for its 28 (A-3 under two heads, C-5 in seven);
+    // 2014 Higher 47 for its 34 (B-2(b) under two heads, C-1(a) in five
+    // earthworks pieces, C-5(a) in nine named groups); 2014 Ordinary 29 for
+    // its 25 (A-4 under two heads, C-5 in four named groups); 2013 Higher 44
+    // for its 37 (B-2(b) under two heads, C-1(a) in four earthworks pieces,
+    // C-5(a) in nine named groups; C-1(a)(i)-(ii) one unit); 2013 Ordinary
+    // 29 for its 24 (A-3 priced with no head, one card; C-5 in six groups).
     const additions = cards.map(card => card.id).filter(isDcgAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
@@ -2659,10 +2671,12 @@ describe('Mark Bank card preservation', () => {
   it('adds the reviewed Irish internal routes alongside the frozen 215-card Higher baseline', () => {
     expect(IRISH_HIGHER.filter(card => addedIrishRoutes.has(card.id)).map(card => card.id).sort())
       .toEqual([...addedIrishRoutes].sort());
-    expect(IRISH_HIGHER).toHaveLength(215 + addedIrishRoutes.size);
+    const deferred = (cards: readonly { id: string }[]) => cards.filter(card => irishDeferredIds.has(card.id)).length;
+    expect([deferred(IRISH_HIGHER), deferred(IRISH_ORDINARY)]).toEqual([189, 150]);
+    expect(IRISH_HIGHER).toHaveLength(215 + addedIrishRoutes.size + deferred(IRISH_HIGHER));
     expect(IRISH_ORDINARY.filter(card => addedIrishOrdinaryRoutes.has(card.id)).map(card => card.id).sort())
       .toEqual([...addedIrishOrdinaryRoutes].sort());
-    expect(IRISH_ORDINARY).toHaveLength(185 + addedIrishOrdinaryRoutes.size);
+    expect(IRISH_ORDINARY).toHaveLength(185 + addedIrishOrdinaryRoutes.size + deferred(IRISH_ORDINARY));
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
