@@ -255,7 +255,9 @@ def source_material(P, token, region, language, level, year):
         assert title and title in text, (year, title)
         return {
             'kind': 'source-text',
-            'label': 'SECTION B — LOOSE SHEET',
+            # The source line says which print the student is reading
+            # (coordinator ruling, 11 Nov 2026).
+            'label': 'SECTION B — IRISH-VERSION LOOSE SHEET',
             'title': f'{title} — answer in {language}',
             'pages': pages,
             'sourceFileid': fileid,

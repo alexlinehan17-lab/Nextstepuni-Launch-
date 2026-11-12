@@ -1587,7 +1587,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "SECTION B — LOOSE SHEET",
+          "label": "SECTION B — IRISH-VERSION LOOSE SHEET",
           "title": "LA MODA RÁPIDA — answer in Spanish",
           "pages": [
                 1
@@ -1612,7 +1612,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "SECTION B — LOOSE SHEET",
+          "label": "SECTION B — IRISH-VERSION LOOSE SHEET",
           "title": "LA MODA RÁPIDA — answer in Spanish",
           "pages": [
                 1
@@ -1637,7 +1637,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "SECTION B — LOOSE SHEET",
+          "label": "SECTION B — IRISH-VERSION LOOSE SHEET",
           "title": "LA MODA RÁPIDA — answer in Spanish",
           "pages": [
                 1
@@ -1662,7 +1662,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "SECTION B — LOOSE SHEET",
+          "label": "SECTION B — IRISH-VERSION LOOSE SHEET",
           "title": "LA MODA RÁPIDA — answer in Spanish",
           "pages": [
                 1
@@ -1687,7 +1687,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "SECTION B — LOOSE SHEET",
+          "label": "SECTION B — IRISH-VERSION LOOSE SHEET",
           "title": "LA MODA RÁPIDA — answer in Spanish",
           "pages": [
                 1
@@ -1712,7 +1712,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "SECTION B — LOOSE SHEET",
+          "label": "SECTION B — IRISH-VERSION LOOSE SHEET",
           "title": "LA MODA RÁPIDA — answer in English",
           "pages": [
                 1
@@ -1737,7 +1737,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "SECTION B — LOOSE SHEET",
+          "label": "SECTION B — IRISH-VERSION LOOSE SHEET",
           "title": "LA MODA RÁPIDA — answer in English",
           "pages": [
                 1
@@ -1762,7 +1762,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "SECTION B — LOOSE SHEET",
+          "label": "SECTION B — IRISH-VERSION LOOSE SHEET",
           "title": "LA MODA RÁPIDA — answer in English",
           "pages": [
                 1
@@ -1787,7 +1787,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "SECTION B — LOOSE SHEET",
+          "label": "SECTION B — IRISH-VERSION LOOSE SHEET",
           "title": "LA MODA RÁPIDA — answer in Spanish",
           "pages": [
                 1
@@ -1812,7 +1812,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "SECTION B — LOOSE SHEET",
+          "label": "SECTION B — IRISH-VERSION LOOSE SHEET",
           "title": "LA MODA RÁPIDA — answer in Spanish",
           "pages": [
                 1
@@ -1837,7 +1837,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "SECTION B — LOOSE SHEET",
+          "label": "SECTION B — IRISH-VERSION LOOSE SHEET",
           "title": "LA MODA RÁPIDA — answer in Spanish",
           "pages": [
                 1
@@ -1862,7 +1862,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "SECTION B — LOOSE SHEET",
+          "label": "SECTION B — IRISH-VERSION LOOSE SHEET",
           "title": "LA MODA RÁPIDA — answer in Spanish",
           "pages": [
                 1
@@ -1887,7 +1887,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "SECTION B — LOOSE SHEET",
+          "label": "SECTION B — IRISH-VERSION LOOSE SHEET",
           "title": "LA MODA RÁPIDA — answer in Spanish",
           "pages": [
                 1
@@ -1914,7 +1914,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "SECTION B — LOOSE SHEET",
+          "label": "SECTION B — IRISH-VERSION LOOSE SHEET",
           "title": "LA MODA RÁPIDA — answer in English",
           "pages": [
                 1
@@ -1941,7 +1941,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "SECTION B — LOOSE SHEET",
+          "label": "SECTION B — IRISH-VERSION LOOSE SHEET",
           "title": "LA MODA RÁPIDA — answer in English",
           "pages": [
                 1
@@ -1966,7 +1966,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "SECTION B — LOOSE SHEET",
+          "label": "SECTION B — IRISH-VERSION LOOSE SHEET",
           "title": "LA MODA RÁPIDA — answer in English",
           "pages": [
                 1
@@ -2078,7 +2078,7 @@ export const CARDS: SecCard[] = [
     },
     sourceMaterial: {
           "kind": "source-text",
-          "label": "SECTION B — LOOSE SHEET",
+          "label": "SECTION B — IRISH-VERSION LOOSE SHEET",
           "title": "LA MODA RÁPIDA — answer in Spanish",
           "pages": [
                 1
