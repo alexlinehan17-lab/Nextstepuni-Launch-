@@ -196,10 +196,12 @@ const ROOT = resolve(__dirname, '..');
 const comparable = (text: string) => comparableScheme(text);
 
 // A card from the SEC's deferred sitting ("econ-2022-hl-deferred-...",
-// "eng-2022-hl-deferred-...", "hist-2023-hl-deferred-lm-...") traces to that
-// sitting's own scheme ("2022-hl-deferred.md"), as build-deck reads it.
+// "eng-2022-hl-deferred-...", "hist-2023-hl-deferred-lm-...",
+// "dcg-2022-hl-deferred-...") traces to that sitting's own scheme
+// ("2022-hl-deferred.md"), as build-deck reads it.
 const deferredCard = (card: { id?: string; subjectId: string }) =>
   (card.subjectId === 'economics' && /^econ-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'dcg' && /^dcg-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'engineering' && /^eng-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'history' && /^hist-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'irish' && /^irish-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''));
@@ -555,6 +557,12 @@ describe('every card points at the question paper it came from', () => {
           const entry = paperEntry('irish', c.year, c.level, c.paperFileid);
           const named = entry?.papers?.find((p: { label: string }) => p.label === `Deferred · Paper ${c.section === '1' ? 'One' : 'Two'}`);
           return entry?.sitting !== 'deferred' || String(named?.doc?.f ?? '').replace(/\.pdf$/, '') !== c.paperFileid;
+        }
+        // DCG's deferred sitting is two booklets, as June's is: a deferred
+        // card's paper is the one printing its section, found as June's is.
+        if (deferredCard(c) && c.subjectId === 'dcg') {
+          return c.paperFileid === null
+            || c.paperFileid !== resolvePaperFileid('dcg', c.year, c.level, c.section, 'deferred');
         }
         if (deferredCard(c)) {
           const deferred = deferredPaperEntry(c.subjectId, c.year, c.level);

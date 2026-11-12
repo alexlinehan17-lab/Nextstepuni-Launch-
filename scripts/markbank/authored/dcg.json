@@ -64024,5 +64024,3613 @@
    }
   ],
   "notes": "The scheme heads this 'Drawing Completion' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-a1",
+  "topicId": "design-and-communication-graphics-0-7",
+  "conceptId": "dcg-0-7",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q1 — Deferred sitting",
+  "questionText": "The 3D graphic below shows a metal rubbish bin. The drawing shows the elevation and end view of the lid of the bin. There are front and back openings in the surface of the lid as shown. The incomplete surface development of the lid has been projected from the elevation. Complete the surface development.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secA-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20)"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-a1-r1",
+    "kind": "point",
+    "verbatim": "Draw outline development of surface",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2022-hl-deferred-a1-r2",
+    "kind": "point",
+    "verbatim": "Draw development of rectangular surfaces",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2022-hl-deferred-a1-r3",
+    "kind": "point",
+    "verbatim": "Draw straight lines of openings in development",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2022-hl-deferred-a1-r4",
+    "kind": "point",
+    "verbatim": "Locate points on curves of openings",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2022-hl-deferred-a1-r5",
+    "kind": "point",
+    "verbatim": "Draw curves of openings",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme heads this 'Development of lid surface' and prices it at 20. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-a2a",
+  "topicId": "design-and-communication-graphics-0-5",
+  "conceptId": "dcg-0-5",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q2(a) — Deferred sitting",
+  "questionText": "Locate the vertex, ten additional points on the curve, and draw the parabola.",
+  "stem": "The image below shows a bridge with a parabolic supporting arch. The drawing on the right shows the axis AA1, directrix DD1, focus F and eccentricity line E of a similar parabola. Two points on the curve, P and Q, are given.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secA-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-a2a-r1",
+    "kind": "point",
+    "verbatim": "Locate vertex",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2022-hl-deferred-a2a-r2",
+    "kind": "point",
+    "verbatim": "Location of points on the Latus Rectum",
+    "marks": 1
+   },
+   {
+    "id": "dcg-2022-hl-deferred-a2a-r3",
+    "kind": "point",
+    "verbatim": "Location of points below the Latus Rectum",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2022-hl-deferred-a2a-r4",
+    "kind": "point",
+    "verbatim": "Location of points above the Latus Rectum",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2022-hl-deferred-a2a-r5",
+    "kind": "criterion",
+    "verbatim": "Draw curve …. (any = 1)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Location of Vertex and additional points of Parabola' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-a2b",
+  "topicId": "design-and-communication-graphics-0-5",
+  "conceptId": "dcg-0-5",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q2(b) — Deferred sitting",
+  "questionText": "Draw a tangent to the curve at point P.",
+  "stem": "The image below shows a bridge with a parabolic supporting arch. The drawing on the right shows the axis AA1, directrix DD1, focus F and eccentricity line E of a similar parabola. Two points on the curve, P and Q, are given.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secA-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-a2b-r1",
+    "kind": "criterion",
+    "verbatim": "Required construction and draw tangent …. (1,1,2)",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Tangent at P' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-a3a",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q3(a) — Deferred sitting",
+  "questionText": "Using the given X1Y1, draw the true length of the line of intersection between faces A and B, and hence determine the dihedral angle between the two faces.",
+  "stem": "The 3D graphic below shows a birdhouse. The drawing shows the elevation and plan of a similar birdhouse.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secA-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-a3a-r1",
+    "kind": "point",
+    "verbatim": "Projection of line of intersection on X1Y1",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2022-hl-deferred-a3a-r2",
+    "kind": "point",
+    "verbatim": "X2Y2 perpendicular to line of intersection",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2022-hl-deferred-a3a-r3",
+    "kind": "point",
+    "verbatim": "Projections of surfaces A & B (edge view) on X2Y2",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2022-hl-deferred-a3a-r4",
+    "kind": "point",
+    "verbatim": "Indicate required dihedral angle",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Line of intersection and dihedral angle' and prices it at 14. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-a3b",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q3(b) — Deferred sitting",
+  "questionText": "Determine, and indicate in degrees, the true inclination of the surface A to the horizontal plane.",
+  "stem": "The 3D graphic below shows a birdhouse. The drawing shows the elevation and plan of a similar birdhouse.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secA-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-a3b-r1",
+    "kind": "point",
+    "verbatim": "Construction to find inclination of surface A to H.P",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2022-hl-deferred-a3b-r2",
+    "kind": "point",
+    "verbatim": "Indicate angle of inclination",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Inclination of surface A to H.P' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-a4a",
+  "topicId": "design-and-communication-graphics-0-2",
+  "conceptId": "dcg-0-2",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q4(a) — Deferred sitting",
+  "questionText": "Draw the elevation of the speaker in the correct position on the XY plane.",
+  "stem": "The 3D graphic below shows a speaker from a music system. An incomplete trimetric projection, using the axonometric axes method, of a similar speaker is given. The plan is shown in its required position.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secA-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-a4a-r1",
+    "kind": "point",
+    "verbatim": "Location of point M",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2022-hl-deferred-a4a-r2",
+    "kind": "point",
+    "verbatim": "Set up of 90⁰ angle",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2022-hl-deferred-a4a-r3",
+    "kind": "point",
+    "verbatim": "Outline of elevation",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2022-hl-deferred-a4a-r4",
+    "kind": "point",
+    "verbatim": "Draw elevation of correct circle",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2022-hl-deferred-a4a-r5",
+    "kind": "point",
+    "verbatim": "Completion of elevation (including hidden detail)",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Elevation of speaker' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-a4b",
+  "topicId": "design-and-communication-graphics-0-2",
+  "conceptId": "dcg-0-2",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q4(b) — Deferred sitting",
+  "questionText": "Determine the true shape of the surface S.",
+  "stem": "The 3D graphic below shows a speaker from a music system. An incomplete trimetric projection, using the axonometric axes method, of a similar speaker is given. The plan is shown in its required position.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secA-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-a4b-r1",
+    "kind": "point",
+    "verbatim": "Construction to draw true shape",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2022-hl-deferred-a4b-r2",
+    "kind": "point",
+    "verbatim": "Completion true shape",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme heads this 'True shape of surface S' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-b1a",
+  "topicId": "design-and-communication-graphics-0-8",
+  "conceptId": "dcg-0-8",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2022 HL Section B Q1(a) — Deferred sitting",
+  "questionText": "Draw the given plan and elevation.",
+  "stem": "The 3D graphic on the right shows a piece of sculpture to represent basic geometrical shapes. The sculpture consists of a cube and a prism based on an equilateral triangle, which intersect each other as shown. Fig. B-1 shows the incomplete elevation and plan of a similar sculpture.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(29)"
+  },
+  "totalMarks": 29,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-b1a-r1",
+    "kind": "point",
+    "verbatim": "Draw outline plan of cube",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2022-hl-deferred-b1a-r2",
+    "kind": "point",
+    "verbatim": "Draw elevation of cube",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2022-hl-deferred-b1a-r3",
+    "kind": "point",
+    "verbatim": "Draw cross‐section of prism",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2022-hl-deferred-b1a-r4",
+    "kind": "point",
+    "verbatim": "Draw outline elevation of prism",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2022-hl-deferred-b1a-r5",
+    "kind": "point",
+    "verbatim": "Draw outline plan of prism",
+    "marks": 8
+   }
+  ],
+  "notes": "The scheme heads this 'Plan and Elevation of Intersecting Solids' and prices it at 29. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-b1b",
+  "topicId": "design-and-communication-graphics-0-8",
+  "conceptId": "dcg-0-8",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2022 HL Section B Q1(b) — Deferred sitting",
+  "questionText": "Complete the projections of the sculpture showing all lines of interpenetration.",
+  "stem": "The 3D graphic on the right shows a piece of sculpture to represent basic geometrical shapes. The sculpture consists of a cube and a prism based on an equilateral triangle, which intersect each other as shown. Fig. B-1 shows the incomplete elevation and plan of a similar sculpture.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(31)"
+  },
+  "totalMarks": 31,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-b1b-r1",
+    "kind": "point",
+    "verbatim": "Establish elev. of intersection points of prism with vertical surfaces of cube",
+    "marks": 7
+   },
+   {
+    "id": "dcg-2022-hl-deferred-b1b-r2",
+    "kind": "point",
+    "verbatim": "Establish plan of intersection points of prism with top surface of cube",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2022-hl-deferred-b1b-r3",
+    "kind": "point",
+    "verbatim": "Determine cross‐over points",
+    "marks": 8
+   },
+   {
+    "id": "dcg-2022-hl-deferred-b1b-r4",
+    "kind": "point",
+    "verbatim": "Draw lines of interpenetration including hidden detail",
+    "marks": 10
+   }
+  ],
+  "notes": "The scheme heads this 'Lines of interpenetration' and prices it at 31. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-b2a",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2022 HL Section B Q2(a) — Deferred sitting",
+  "questionText": "Draw the given elevation and plan of the intersecting planes.",
+  "stem": "The image on the right shows a lamp and shade. The shade is made from a number of intersecting triangles. Fig. B-2 shows the plan and elevation of three of the intersecting triangular planes ABC, ABD and AEF. The horizontal and vertical coordinates of the three planes are given. A: 150 --- 75 --- 20 B: 110 --- 10 --- 45 C: 170 --- 10 --- 70 D: 95 --- 60 --- 15 E: 180 --- 35 --- 15 F: 130 --- 15 --- 80",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secB-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(15)"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-b2a-r1",
+    "kind": "point",
+    "verbatim": "Use given coordinates to draw elevation of ABC, ABD and AEF",
+    "marks": 8
+   },
+   {
+    "id": "dcg-2022-hl-deferred-b2a-r2",
+    "kind": "point",
+    "verbatim": "Use given coordinates to draw plan of ABC, ABD and AEF",
+    "marks": 7
+   }
+  ],
+  "notes": "The scheme heads this 'Elevation and Plan of intersecting planes ABC, ABD and AEF' and prices it at 15. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-b2b",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2022 HL Section B Q2(b) — Deferred sitting",
+  "questionText": "Determine the dihedral angle between the planes ABC and ABD.",
+  "stem": "The image on the right shows a lamp and shade. The shade is made from a number of intersecting triangles. Fig. B-2 shows the plan and elevation of three of the intersecting triangular planes ABC, ABD and AEF. The horizontal and vertical coordinates of the three planes are given. A: 150 --- 75 --- 20 B: 110 --- 10 --- 45 C: 170 --- 10 --- 70 D: 95 --- 60 --- 15 E: 180 --- 35 --- 15 F: 130 --- 15 --- 80",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secB-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(18)"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-b2b-r1",
+    "kind": "point",
+    "verbatim": "X1Y1 parallel to line of intersection AB",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2022-hl-deferred-b2b-r2",
+    "kind": "point",
+    "verbatim": "Projection of planes and line of intersection on new X1Y1",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2022-hl-deferred-b2b-r3",
+    "kind": "point",
+    "verbatim": "New X2Y2 perpendicular to line of intersection",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2022-hl-deferred-b2b-r4",
+    "kind": "point",
+    "verbatim": "Projection of planes as lines and indicating dihedral angle",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme heads this 'Dihedral Angle between planes ABC and ABD' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-b2c",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2022 HL Section B Q2(c) — Deferred sitting",
+  "questionText": "Determine the line of intersection between the planes ABC and AEF.",
+  "stem": "The image on the right shows a lamp and shade. The shade is made from a number of intersecting triangles. Fig. B-2 shows the plan and elevation of three of the intersecting triangular planes ABC, ABD and AEF. The horizontal and vertical coordinates of the three planes are given. A: 150 --- 75 --- 20 B: 110 --- 10 --- 45 C: 170 --- 10 --- 70 D: 95 --- 60 --- 15 E: 180 --- 35 --- 15 F: 130 --- 15 --- 80",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secB-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-b2c-r1",
+    "kind": "point",
+    "verbatim": "Horizontal line in elevation",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2022-hl-deferred-b2c-r2",
+    "kind": "point",
+    "verbatim": "Determine point on line of intersection in plan",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2022-hl-deferred-b2c-r3",
+    "kind": "point",
+    "verbatim": "Projections of line of intersection",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme heads this 'Line of Intersection between ABC and AEF' and prices it at 14. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-b2d",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2022 HL Section B Q2(d) — Deferred sitting",
+  "questionText": "Determine the horizontal and vertical traces of the plane AEF.",
+  "stem": "The image on the right shows a lamp and shade. The shade is made from a number of intersecting triangles. Fig. B-2 shows the plan and elevation of three of the intersecting triangular planes ABC, ABD and AEF. The horizontal and vertical coordinates of the three planes are given. A: 150 --- 75 --- 20 B: 110 --- 10 --- 45 C: 170 --- 10 --- 70 D: 95 --- 60 --- 15 E: 180 --- 35 --- 15 F: 130 --- 15 --- 80",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secB-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(13)"
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-b2d-r1",
+    "kind": "point",
+    "verbatim": "Construction to find points on HT",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2022-hl-deferred-b2d-r2",
+    "kind": "point",
+    "verbatim": "Construction to find points on VT",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2022-hl-deferred-b2d-r3",
+    "kind": "point",
+    "verbatim": "Draw VTH",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme heads this 'Horizontal and vertical traces of plane AEF' and prices it at 13. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-b3",
+  "topicId": "design-and-communication-graphics-0-3",
+  "conceptId": "dcg-0-3",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2022 HL Section B Q3 — Deferred sitting",
+  "questionText": "Draw the given plan. Make a perspective drawing of the structure given the following: The spectator point S, is 160mm from corner A The picture plane is touching corner A The horizon line is 80mm above the ground line. Use an auxiliary vanishing point to determine the top sloping lines of the windows in the perspective drawing.",
+  "stem": "The 3D graphic on the right shows a memorial sculpture to commemorate the participants in an historic battle. Fig. B-3 shows the plan and elevation of a model of the structure. A pictorial view of the structure is also shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secB-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(60)"
+  },
+  "totalMarks": 60,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-b3-r1",
+    "kind": "criterion",
+    "verbatim": "Outline Plan and Perspective Drawing",
+    "marks": 60,
+    "permittedMarks": [
+     0,
+     60
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Draw plan as given",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       12
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Locate spectator",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Draw Picture Plane",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "Plan of Vanishing Points",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "Locate Ground Line, Horizon Line and Vanishing Points (1, 2, 2)",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "Draw base lines",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-7",
+      "verbatim": "Draw rectangular surface on right‐hand side",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-8",
+      "verbatim": "Draw surface on left‐hand side",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       8
+      ]
+     },
+     {
+      "id": "step-9",
+      "verbatim": "Complete perspective drawing of 45⁰ sloping surface",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "step-10",
+      "verbatim": "Complete perspective drawing of 30⁰ sloping surface",
+      "marks": 8,
+      "permittedMarks": [
+       0,
+       8
+      ]
+     },
+     {
+      "id": "step-11",
+      "verbatim": "Complete perspective drawing",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       6
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Outline Plan and Perspective Drawing' and prices it at 60. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-c1a",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q1(a) — Deferred sitting",
+  "questionText": "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals. ABC is the centreline of a proposed roadway. The roadway has the following specifications: the section of the roadway between A and B is level at an altitude of 35m the section from B to C has a gradient of 1 in 15 rising. Using side slopes of 1 in 1 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the roadway on its southern side. Note: The earthworks on the northern side of the roadway have already been completed.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(23)"
+  },
+  "totalMarks": 23,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-c1a-r1",
+    "kind": "point",
+    "verbatim": "Draw parallel lines at 5mm intervals",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c1a-r2",
+    "kind": "point",
+    "verbatim": "Identify intersections with contours and draw curves",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c1a-r3",
+    "kind": "point",
+    "verbatim": "Draw required arc (7.5mm or 15mm) and corresponding tangent",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c1a-r4",
+    "kind": "point",
+    "verbatim": "Draw parallel lines at 7.5mm intervals",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c1a-r5",
+    "kind": "point",
+    "verbatim": "Identify intersections with contours and draw curve",
+    "marks": 4
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "Contour Map",
+   "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+   "pages": [
+    3
+   ],
+   "pageRotations": {
+    "3": 270
+   },
+   "sourceLabel": "Section A",
+   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level, deferred examination, Section A — © State Examinations Commission.",
+   "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination."
+  },
+  "notes": "The scheme heads this 'Earthworks on roadway' and prices it at 23. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-c1b",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q1(b) — Deferred sitting",
+  "questionText": "(i) Draw the plan of the triangular portion DEF of the top surface of the stratum. (ii) Draw the elevation of the triangle DEF on the given XY line and determine the strike and dip of the stratum. (iii) Determine the true angle between the lines DE and DF.",
+  "stem": "On the map, D, E and F are outcrop points on the top surface of a stratum of ore.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(37)"
+  },
+  "totalMarks": 37,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-c1b-r1",
+    "kind": "criterion",
+    "verbatim": "Strike of stratum, outline of outcrop and true angle between line DE and DF",
+    "marks": 37,
+    "permittedMarks": [
+     0,
+     37
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Draw plan of triangle DEF",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Draw elevation of triangle DEF",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       9
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Establish required strike",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "X1Y1 perpendicular to plan of strike",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "Establish dip angle",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "Rebatement of plane DEF in auxiliary elevation",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-7",
+      "verbatim": "Projection of true lengths of lines DE & DF back to plan",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-8",
+      "verbatim": "Indication of true angle",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "Contour Map",
+   "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+   "pages": [
+    3
+   ],
+   "pageRotations": {
+    "3": 270
+   },
+   "sourceLabel": "Section A",
+   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level, deferred examination, Section A — © State Examinations Commission.",
+   "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination."
+  },
+  "notes": "The scheme heads this 'Strike of stratum, outline of outcrop and true angle between line DE and DF' and prices it at 37. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-c2a",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q2(a) — Deferred sitting",
+  "questionText": "Draw the given elevation including the elements as shown.",
+  "stem": "The image on the right shows the roof of an ice rink in Germany. The shape of the roof is based on a hyperbolic paraboloid. The projections of the roof are shown in Fig. C-2 below. The curve EBF in elevation is a parabola. B is the vertex of the parabola. The surface of the roof is formed by extending the hyperbolic paraboloid surface ABCD as shown in elevation.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(25)"
+  },
+  "totalMarks": 25,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-c2a-r1",
+    "kind": "point",
+    "verbatim": "Establish required rectangular outline for curve EBF",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c2a-r2",
+    "kind": "point",
+    "verbatim": "Construction to locate points on required parabola",
+    "marks": 8
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c2a-r3",
+    "kind": "criterion",
+    "verbatim": "Draw parabolic curve …… (Any = 1)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c2a-r4",
+    "kind": "point",
+    "verbatim": "Draw elevation of outline elements (parallelogram ABCD)",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c2a-r5",
+    "kind": "point",
+    "verbatim": "Draw inner elements extended in both directions",
+    "marks": 8
+   }
+  ],
+  "notes": "The scheme heads this 'Draw required elevation' and prices it at 25. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-c2b",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q2(b) — Deferred sitting",
+  "questionText": "Project the given plan from the elevation.",
+  "stem": "The image on the right shows the roof of an ice rink in Germany. The shape of the roof is based on a hyperbolic paraboloid. The projections of the roof are shown in Fig. C-2 below. The curve EBF in elevation is a parabola. B is the vertex of the parabola. The surface of the roof is formed by extending the hyperbolic paraboloid surface ABCD as shown in elevation.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(22)"
+  },
+  "totalMarks": 22,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-c2b-r1",
+    "kind": "point",
+    "verbatim": "Draw plan of corresponding outline elements",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c2b-r2",
+    "kind": "point",
+    "verbatim": "Draw inner elements in plan",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c2b-r3",
+    "kind": "point",
+    "verbatim": "Construction to determine points on curve in plan",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c2b-r4",
+    "kind": "point",
+    "verbatim": "Determine edges E and F in plan",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c2b-r5",
+    "kind": "criterion",
+    "verbatim": "Draw curve in plan …… (Any = 1)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Draw required plan' and prices it at 22. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-c2c",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q2(c) — Deferred sitting",
+  "questionText": "Show the curvature of the surface when intersected by a vertical cutting plane passing through points B and D.",
+  "stem": "The image on the right shows the roof of an ice rink in Germany. The shape of the roof is based on a hyperbolic paraboloid. The projections of the roof are shown in Fig. C-2 below. The curve EBF in elevation is a parabola. B is the vertex of the parabola. The surface of the roof is formed by extending the hyperbolic paraboloid surface ABCD as shown in elevation.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(13)"
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-c2c-r1",
+    "kind": "point",
+    "verbatim": "Line joining B and D in plan",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c2c-r2",
+    "kind": "point",
+    "verbatim": "Projections from intersections with elements in plan to auxiliary or end view",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c2c-r3",
+    "kind": "point",
+    "verbatim": "Establish heights in auxiliary or end view",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c2c-r4",
+    "kind": "criterion",
+    "verbatim": "Draw required curvature …… (Any = 1)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Surface curvature along vertical cutting plane containing B and D' and prices it at 13. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-c3a",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q3(a) — Deferred sitting",
+  "questionText": "Draw the given elevation and plan.",
+  "stem": "The image on the right shows an enlarged detail of a metal hopper from a sweet vending machine. Sweets are released through the hopper into the hatch at the bottom of the machine. Fig. C-3 shows the plan and elevation of a similar hopper.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-c3a-r1",
+    "kind": "point",
+    "verbatim": "Draw given plan",
+    "marks": 8
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c3a-r2",
+    "kind": "point",
+    "verbatim": "Draw given elevation",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme heads this 'Draw elevation and plan' and prices it at 14. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-c3b",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q3(b) — Deferred sitting",
+  "questionText": "Draw a one-piece surface development of surfaces A and B.",
+  "stem": "The image on the right shows an enlarged detail of a metal hopper from a sweet vending machine. Sweets are released through the hopper into the hatch at the bottom of the machine. Fig. C-3 shows the plan and elevation of a similar hopper.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-c3b-r1",
+    "kind": "point",
+    "verbatim": "Correct construction to determine the true shape of surface B",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c3b-r2",
+    "kind": "point",
+    "verbatim": "Correct construction to determine the true shape of surface A",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c3b-r3",
+    "kind": "point",
+    "verbatim": "Drawing of one‐piece surface development",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme heads this 'Development of surface A and B' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-c3c",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q3(c) — Deferred sitting",
+  "questionText": "Determine the dihedral angle between surfaces C and D.",
+  "stem": "The image on the right shows an enlarged detail of a metal hopper from a sweet vending machine. Sweets are released through the hopper into the hatch at the bottom of the machine. Fig. C-3 shows the plan and elevation of a similar hopper.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20)"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-c3c-r1",
+    "kind": "point",
+    "verbatim": "X1Y1 parallel to line of intersection",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c3c-r2",
+    "kind": "point",
+    "verbatim": "Projection of surfaces A and B and line of intersection on new X1Y1",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c3c-r3",
+    "kind": "point",
+    "verbatim": "New X2Y2 perpendicular to line of intersection",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c3c-r4",
+    "kind": "point",
+    "verbatim": "Projection of surfaces as lines and indicating dihedral angle",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme heads this 'Dihedral Angle between Surfaces A and B' and prices it at 20. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-c3d",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q3(d) — Deferred sitting",
+  "questionText": "Determine the radius of the largest spherical sweet which would pass through the hopper.",
+  "stem": "The image on the right shows an enlarged detail of a metal hopper from a sweet vending machine. Sweets are released through the hopper into the hatch at the bottom of the machine. Fig. C-3 shows the plan and elevation of a similar hopper.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-c3d-r1",
+    "kind": "point",
+    "verbatim": "Determine line MN",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c3d-r2",
+    "kind": "point",
+    "verbatim": "Bisect line MN",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c3d-r3",
+    "kind": "point",
+    "verbatim": "Draw sphere",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Largest spherical sweet to pass through' and prices it at 10. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-c4a",
+  "topicId": "design-and-communication-graphics-2-0",
+  "conceptId": "dcg-2-0",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q4(a) — Deferred sitting",
+  "questionText": "Draw the profile and displacement diagram for a plate cam rotating in a clockwise direction and imparting the following motion to an in-line roller follower of 18mm diameter: 0⁰ to 180⁰ Rise 48mm with Uniform Acceleration and Retardation (UAR) 180⁰ to 270⁰ Dwell 270⁰ to 360⁰ Fall 48mm with simple harmonic motion. The nearest approach of the roller centre to the camshaft centre is 45mm. The camshaft diameter is 20mm. (In the displacement diagram, use a distance of 12mm to represent each 30⁰ interval.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secC-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(33)"
+  },
+  "totalMarks": 33,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-c4a-r1",
+    "kind": "criterion",
+    "verbatim": "Profile and Displacement Diagram",
+    "marks": 33,
+    "permittedMarks": [
+     0,
+     33
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Horizontal divisions on displacement diagram",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Establish 48mm height",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Construction to determine points on U.A.R. curve",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       6
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "Draw UAR curve … (any = 1)",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "Draw correct horizontal ‘Dwell’ line",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "Construction to determine points on S.H.M. curve",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       6
+      ]
+     },
+     {
+      "id": "step-7",
+      "verbatim": "Draw SHM curve … (any = 1)",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "step-8",
+      "verbatim": "Establish correct centre of cam profile",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "step-9",
+      "verbatim": "Draw 30° divisions through cam centre",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-10",
+      "verbatim": "Transfer of points from displacement diagram to cam profile",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "step-11",
+      "verbatim": "Draw rollers on 30° division lines",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-12",
+      "verbatim": "Complete cam profile",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Profile and Displacement Diagram' and prices it at 33. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-c4b",
+  "topicId": "design-and-communication-graphics-2-0",
+  "conceptId": "dcg-2-0",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q4(b) — Deferred sitting",
+  "questionText": "(i) Draw the given line diagram with the wiper blade AB positioned as shown. (ii) The wiper blade AB pivots clockwise about point O through 135⁰ and back again to its initial position. During this movement a drop of water starts at point A and rolls along the wiper blade to point B at a constant rate. Plot the locus of the water drop for the combined movement. (Note: Use 30⁰ divisions in your solution.)",
+  "stem": "The image on the right shows a windscreen wiper. The wiper blade is represented in line diagram format in Fig. C-4 below.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secC-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(27)"
+  },
+  "totalMarks": 27,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-c4b-r1",
+    "kind": "point",
+    "verbatim": "Draw given line diagram",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c4b-r2",
+    "kind": "point",
+    "verbatim": "Draw 30⁰ lines to contain wiper in various positions",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c4b-r3",
+    "kind": "point",
+    "verbatim": "Locate points on curves",
+    "marks": 12
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c4b-r4",
+    "kind": "criterion",
+    "verbatim": "Draw required curves … (any = 1)",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     6
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Locus of drop of water on rotating wiper' and prices it at 27. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-c5-1",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q5 — Assembly — Deferred sitting",
+  "questionText": "Details of a beam balance weighing scales are given in Fig. C-5 below with the parts list tabulated on the right. A 3D graphic of the parts is also given. Draw a sectional elevation on A-A, with the parts fully assembled. (All fillets are 3mm.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-c5-1-r1",
+    "kind": "point",
+    "verbatim": "Relative positioning of components",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme heads this 'Assembly' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-c5-2",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q5 — Body — Deferred sitting",
+  "questionText": "Details of a beam balance weighing scales are given in Fig. C-5 below with the parts list tabulated on the right. A 3D graphic of the parts is also given. Draw a sectional elevation on A-A, with the parts fully assembled. (All fillets are 3mm.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(15)"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-c5-2-r1",
+    "kind": "point",
+    "verbatim": "Outline",
+    "marks": 9
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c5-2-r2",
+    "kind": "point",
+    "verbatim": "Inner detail",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c5-2-r3",
+    "kind": "point",
+    "verbatim": "Base relief",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Body' and prices it at 15. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-c5-3",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q5 — Pivot Support — Deferred sitting",
+  "questionText": "Details of a beam balance weighing scales are given in Fig. C-5 below with the parts list tabulated on the right. A 3D graphic of the parts is also given. Draw a sectional elevation on A-A, with the parts fully assembled. (All fillets are 3mm.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(7)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-c5-3-r1",
+    "kind": "point",
+    "verbatim": "Outline",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2022-hl-deferred-c5-3-r2",
+    "kind": "point",
+    "verbatim": "Circular hole",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme heads this 'Pivot Support' and prices it at 7. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-c5-4",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q5 — Beam Arm — Deferred sitting",
+  "questionText": "Details of a beam balance weighing scales are given in Fig. C-5 below with the parts list tabulated on the right. A 3D graphic of the parts is also given. Draw a sectional elevation on A-A, with the parts fully assembled. (All fillets are 3mm.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-c5-4-r1",
+    "kind": "point",
+    "verbatim": "Draw given section of Beam Arm",
+    "marks": 10
+   }
+  ],
+  "notes": "The scheme heads this 'Beam Arm' and prices it at 10. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-c5-5",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q5 — Weighing Pan — Deferred sitting",
+  "questionText": "Details of a beam balance weighing scales are given in Fig. C-5 below with the parts list tabulated on the right. A 3D graphic of the parts is also given. Draw a sectional elevation on A-A, with the parts fully assembled. (All fillets are 3mm.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-c5-5-r1",
+    "kind": "point",
+    "verbatim": "Draw required outline",
+    "marks": 10
+   }
+  ],
+  "notes": "The scheme heads this 'Weighing Pan' and prices it at 10. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-c5-6",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q5 — Hinge Pins — Deferred sitting",
+  "questionText": "Details of a beam balance weighing scales are given in Fig. C-5 below with the parts list tabulated on the right. A 3D graphic of the parts is also given. Draw a sectional elevation on A-A, with the parts fully assembled. (All fillets are 3mm.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-c5-6-r1",
+    "kind": "point",
+    "verbatim": "16mm and 10mm Hinge Pins",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme heads this 'Hinge Pins' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-deferred-c5-7",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q5 — Completion of drawing — Deferred sitting",
+  "questionText": "Details of a beam balance weighing scales are given in Fig. C-5 below with the parts list tabulated on the right. A 3D graphic of the parts is also given. Draw a sectional elevation on A-A, with the parts fully assembled. (All fillets are 3mm.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-deferred-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-deferred-c5-7-r1",
+    "kind": "point",
+    "verbatim": "Presentation, hatching and centrelines",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme heads this 'Completion of drawing' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-a1a",
+  "topicId": "design-and-communication-graphics-0-2",
+  "conceptId": "dcg-0-2",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q1(a) — Deferred sitting",
+  "questionText": "Complete the isometric view of the fitness cube.",
+  "stem": "The image below shows a fitness cube which can be used in a home gym. It consists of a cube with a cylindrical disk on the front surface. The drawing shows an incomplete isometric projection of the fitness cube. The elevation and incomplete end view are shown in their required positions.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secA-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-a1a-r1",
+    "kind": "point",
+    "verbatim": "Projections from elevation and end view",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2023-hl-deferred-a1a-r2",
+    "kind": "point",
+    "verbatim": "Completion of cube",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2023-hl-deferred-a1a-r3",
+    "kind": "point",
+    "verbatim": "Projections to determine points on curve",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2023-hl-deferred-a1a-r4",
+    "kind": "criterion",
+    "verbatim": "Draw circular disk (Any = 1)",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     4
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Completion of isometric view' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-a1b",
+  "topicId": "design-and-communication-graphics-0-2",
+  "conceptId": "dcg-0-2",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q1(b) — Deferred sitting",
+  "questionText": "Using the isometric view, complete the end view.",
+  "stem": "The image below shows a fitness cube which can be used in a home gym. It consists of a cube with a cylindrical disk on the front surface. The drawing shows an incomplete isometric projection of the fitness cube. The elevation and incomplete end view are shown in their required positions.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secA-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-a1b-r1",
+    "kind": "point",
+    "verbatim": "Projections from isometric view to end view",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2023-hl-deferred-a1b-r2",
+    "kind": "point",
+    "verbatim": "Complete end view",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Completion of end view' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-a2a",
+  "topicId": "design-and-communication-graphics-0-5",
+  "conceptId": "dcg-0-5",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q2(a) — Deferred sitting",
+  "questionText": "Locate the second vertex and draw the ellipse.",
+  "stem": "The image below shows a pair of earrings which are elliptical in shape and have two holes of the same radius. The drawing on the right shows axis AA1, directrix DD1, eccentricity line E, focal point F, and vertex V1 of a similar ellipse.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secA-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-a2a-r1",
+    "kind": "point",
+    "verbatim": "Locate vertex",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2023-hl-deferred-a2a-r2",
+    "kind": "point",
+    "verbatim": "Location of latus rectum",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2023-hl-deferred-a2a-r3",
+    "kind": "point",
+    "verbatim": "Location of points on and above latus rectum",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2023-hl-deferred-a2a-r4",
+    "kind": "point",
+    "verbatim": "Location of points below latus rectum",
+    "marks": 7
+   },
+   {
+    "id": "dcg-2023-hl-deferred-a2a-r5",
+    "kind": "criterion",
+    "verbatim": "Draw curve (Any = 1)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Construction of ellipse' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-a2b",
+  "topicId": "design-and-communication-graphics-0-5",
+  "conceptId": "dcg-0-5",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q2(b) — Deferred sitting",
+  "questionText": "Complete the earring by locating the second focal point and drawing the circular hole.",
+  "stem": "The image below shows a pair of earrings which are elliptical in shape and have two holes of the same radius. The drawing on the right shows axis AA1, directrix DD1, eccentricity line E, focal point F, and vertex V1 of a similar ellipse.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secA-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-a2b-r1",
+    "kind": "point",
+    "verbatim": "Locate F₁",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2023-hl-deferred-a2b-r2",
+    "kind": "point",
+    "verbatim": "Draw circular hole",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Second focal point and circular hole' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-a3a",
+  "topicId": "design-and-communication-graphics-0-10",
+  "conceptId": "dcg-0-10",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q3(a) — Deferred sitting",
+  "questionText": "Complete the elevation of the display marker including all hidden detail.",
+  "stem": "The graphic below shows a food product display marker used in a cafe. The incomplete drawing below shows the plan of the display marker and the oblique plane VTH which contains surface S.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secA-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(12)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-a3a-r1",
+    "kind": "point",
+    "verbatim": "Parallel extension of edges on surface S to XY line",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2023-hl-deferred-a3a-r2",
+    "kind": "point",
+    "verbatim": "Determine heights in elevation",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2023-hl-deferred-a3a-r3",
+    "kind": "point",
+    "verbatim": "Complete elevation, including hidden detail",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme heads this 'Elevation of display marker' and prices it at 12. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-a3b",
+  "topicId": "design-and-communication-graphics-0-10",
+  "conceptId": "dcg-0-10",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q3(b) — Deferred sitting",
+  "questionText": "Determine the angle of inclination of surface S to the horizontal plane.",
+  "stem": "The graphic below shows a food product display marker used in a cafe. The incomplete drawing below shows the plan of the display marker and the oblique plane VTH which contains surface S.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secA-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-a3b-r1",
+    "kind": "point",
+    "verbatim": "X₁Y₁ perpendicular to HT",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2023-hl-deferred-a3b-r2",
+    "kind": "point",
+    "verbatim": "Edge view of surface S",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2023-hl-deferred-a3b-r3",
+    "kind": "point",
+    "verbatim": "Indicate angle of inclination",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Angle of inclination' and prices it at 8. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-a4a",
+  "topicId": "design-and-communication-graphics-0-9",
+  "conceptId": "dcg-0-9",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q4(a) — Deferred sitting",
+  "questionText": "Determine the projections of the shortest horizontal line between the skew lines.",
+  "stem": "The image below shows the Silver Pencils kinetic sculpture at the University of Limerick. Two elements of the sculpture are represented by the skew lines AB and CD on the right.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secA-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(18)"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-a4a-r1",
+    "kind": "criterion",
+    "verbatim": "Shortest horizontal distance between skew lines",
+    "marks": 18,
+    "permittedMarks": [
+     0,
+     18
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Draw line from A parallel to CD (or C parallel to AB) in elevation",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Draw line from A parallel to CD (or C parallel to AB) in plan",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Determine plan of horizontal line on either plane",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "X1Y1 perpendicular to plan of horizontal line",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "Projections of AB and CD on X1Y1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "X2Y2 perpendicular to X1Y1 line",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-7",
+      "verbatim": "Projections of AB and CD on X2Y2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-8",
+      "verbatim": "Projections of required shortest horizontal distance to plan and elevation",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Shortest horizontal distance between skew lines' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-a4b",
+  "topicId": "design-and-communication-graphics-0-9",
+  "conceptId": "dcg-0-9",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q4(b) — Deferred sitting",
+  "questionText": "Determine, and indicate in millimeters, the height of this line from the horizontal plane.",
+  "stem": "The image below shows the Silver Pencils kinetic sculpture at the University of Limerick. Two elements of the sculpture are represented by the skew lines AB and CD on the right.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secA-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-a4b-r1",
+    "kind": "point",
+    "verbatim": "Correct height of horizontal distance to HP indicated in millimetres",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Length of shortest distance' and prices it at 2. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-b1a",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2023 HL Section B Q1(a) — Deferred sitting",
+  "questionText": "Draw the given elevation and plan of the intersecting planes ABC, ABD, and ADE.",
+  "stem": "The image on the right shows the headquarters of the Bilbao health department in Spain. The building includes a series of intersecting planar triangular surfaces. Fig. B-1 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 190 --- 25 --- 70 B: 130 --- 35 --- 30 C: 100 --- 5 --- 45 D: 175 --- 65 --- 10 E: 210 --- 50 --- 25 F: 235 --- ? --- 45",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-b1a-r1",
+    "kind": "point",
+    "verbatim": "Use given coordinates to draw elevation of ABC, ABD and ADE",
+    "marks": 8
+   },
+   {
+    "id": "dcg-2023-hl-deferred-b1a-r2",
+    "kind": "point",
+    "verbatim": "Draw the plan of planes ABC, ABD and ADE",
+    "marks": 8
+   }
+  ],
+  "notes": "The scheme heads this 'Elevation and Plan of intersecting planes ABC, ABD and ADE' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-b1b",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2023 HL Section B Q1(b) — Deferred sitting",
+  "questionText": "Determine the dihedral angle between the planes ABC and ABD.",
+  "stem": "The image on the right shows the headquarters of the Bilbao health department in Spain. The building includes a series of intersecting planar triangular surfaces. Fig. B-1 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 190 --- 25 --- 70 B: 130 --- 35 --- 30 C: 100 --- 5 --- 45 D: 175 --- 65 --- 10 E: 210 --- 50 --- 25 F: 235 --- ? --- 45",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(18)"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-b1b-r1",
+    "kind": "point",
+    "verbatim": "New X1Y1 parallel to line of intersection AB",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2023-hl-deferred-b1b-r2",
+    "kind": "point",
+    "verbatim": "Projection of planes and line of intersection on new X1Y1",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2023-hl-deferred-b1b-r3",
+    "kind": "point",
+    "verbatim": "Additional X2Y2 perpendicular to line of intersection AB",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2023-hl-deferred-b1b-r4",
+    "kind": "point",
+    "verbatim": "Projection of ABC and ABD as lines and indicating dihedral angle",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme heads this 'Dihedral Angle between ABC and ABD' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-b1c",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2023 HL Section B Q1(c) — Deferred sitting",
+  "questionText": "Draw the elevation and plan of a horizontal line on the surface ADE and project an auxiliary elevation which will show an edge view of the plane ADE. Indicate the angle of inclination of the plane ADE to the horizontal plane.",
+  "stem": "The image on the right shows the headquarters of the Bilbao health department in Spain. The building includes a series of intersecting planar triangular surfaces. Fig. B-1 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 190 --- 25 --- 70 B: 130 --- 35 --- 30 C: 100 --- 5 --- 45 D: 175 --- 65 --- 10 E: 210 --- 50 --- 25 F: 235 --- ? --- 45",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-b1c-r1",
+    "kind": "criterion",
+    "verbatim": "Projections of horizontal line on ADE … (2, 1, 2)",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "id": "dcg-2023-hl-deferred-b1c-r2",
+    "kind": "point",
+    "verbatim": "X1Y1 perpendicular to plan of correct horizontal line",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2023-hl-deferred-b1c-r3",
+    "kind": "point",
+    "verbatim": "Projection of plane ADE to auxiliary view",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2023-hl-deferred-b1c-r4",
+    "kind": "point",
+    "verbatim": "Indication of true inclination of ADE to HP",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme heads this 'Edge View of plane ADE and Inclination of ADE to horizontal plane' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-b1d",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2023 HL Section B Q1(d) — Deferred sitting",
+  "questionText": "The dihedral angle between planes ADE and AEF is 165°. Complete the projections of the plane AEF.",
+  "stem": "The image on the right shows the headquarters of the Bilbao health department in Spain. The building includes a series of intersecting planar triangular surfaces. Fig. B-1 shows the plan and elevation of four intersecting planar surfaces. The horizontal and vertical coordinates for points A, B, C, D, and E are given. Partial coordinates for point F are also given. A: 190 --- 25 --- 70 B: 130 --- 35 --- 30 C: 100 --- 5 --- 45 D: 175 --- 65 --- 10 E: 210 --- 50 --- 25 F: 235 --- ? --- 45",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-b1d-r1",
+    "kind": "point",
+    "verbatim": "Draw plan of plane AEF",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2023-hl-deferred-b1d-r2",
+    "kind": "point",
+    "verbatim": "Projection of plane ADE on X1Y1 parallel to AE",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2023-hl-deferred-b1d-r3",
+    "kind": "point",
+    "verbatim": "Projection of ADE as edge view, X2Y2 perpendicular to line of intersection AE",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2023-hl-deferred-b1d-r4",
+    "kind": "point",
+    "verbatim": "Drawing of dihedral angle 165° to determine F",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2023-hl-deferred-b1d-r5",
+    "kind": "point",
+    "verbatim": "Determine height of F",
+    "marks": 1
+   },
+   {
+    "id": "dcg-2023-hl-deferred-b1d-r6",
+    "kind": "point",
+    "verbatim": "Completion of elevation",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme heads this 'Projections of plane AEF' and prices it at 10. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-b2a",
+  "topicId": "design-and-communication-graphics-0-3",
+  "conceptId": "dcg-0-3",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2023 HL Section B Q2(a) — Deferred sitting",
+  "questionText": "Draw the given plan.",
+  "stem": "The image on the right shows a Luas tram. The tram uses an overhead catenary system to deliver electricity through an antenna connected to the tram. Fig B-2 shows the plan and elevation of a similar Luas tram with an antenna. A pictorial view of the tram is also shown. The antenna is inclined at 35°.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secB-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(12)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-b2a-r1",
+    "kind": "point",
+    "verbatim": "Draw the given plan of the Luas tram",
+    "marks": 12
+   }
+  ],
+  "notes": "The scheme heads this 'Draw given Plan' and prices it at 12. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-b2b",
+  "topicId": "design-and-communication-graphics-0-3",
+  "conceptId": "dcg-0-3",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2023 HL Section B Q2(b) — Deferred sitting",
+  "questionText": "Make a perspective drawing of the Luas tram given the following: The spectator point S, is 120 mm from point A The picture plane is touching point A The horizon line is 100 mm above the ground line. Use auxiliary vanishing points to determine the antenna in the perspective drawing.",
+  "stem": "The image on the right shows a Luas tram. The tram uses an overhead catenary system to deliver electricity through an antenna connected to the tram. Fig B-2 shows the plan and elevation of a similar Luas tram with an antenna. A pictorial view of the tram is also shown. The antenna is inclined at 35°.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secB-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(48)"
+  },
+  "totalMarks": 48,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-b2b-r1",
+    "kind": "criterion",
+    "verbatim": "Perspective of Structure",
+    "marks": 48,
+    "permittedMarks": [
+     0,
+     48
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Position spectator and plan of picture plane (2, 2)",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       2,
+       4
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Plan of vanishing points",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Ground line, horizon line, vanishing points in elevation (1, 2, 2)",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "Establish corner A in perspective view",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "Perspective of base lines of the Luas .... (3 × 2)",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       2,
+       4,
+       6
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "Apply height of 70mm and complete the side",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-7",
+      "verbatim": "Apply height of 20mm and complete front vertical surface",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-8",
+      "verbatim": "Complete construct of the inclined surfaces on front cab",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-9",
+      "verbatim": "Complete perspective door",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-10",
+      "verbatim": "Apply height of 60mm and complete perspective of windows",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-11",
+      "verbatim": "Use of AVP to complete bottom of aerial",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-12",
+      "verbatim": "Use of AVP to complete top of aerial",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-13",
+      "verbatim": "Complete perspective drawing of Luas",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Perspective of Structure' and prices it at 48. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-b3a",
+  "topicId": "design-and-communication-graphics-0-8",
+  "conceptId": "dcg-0-8",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2023 HL Section B Q3(a) — Deferred sitting",
+  "questionText": "Draw the given plan and elevation.",
+  "stem": "The image on the right shows football boots and a stud remover tool. Fig B-3 below shows the incomplete plan and incomplete elevation of a similar stud remover. The stud remover tool consists of a prism which intersects a truncated hexagonal pyramid as shown. A pictorial view of the stud remover tool is also shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secB-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(24)"
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-b3a-r1",
+    "kind": "point",
+    "verbatim": "Draw outline plan of truncated hexagonal pyramid",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2023-hl-deferred-b3a-r2",
+    "kind": "point",
+    "verbatim": "Draw outline elevation of truncated hexagonal pyramid",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2023-hl-deferred-b3a-r3",
+    "kind": "point",
+    "verbatim": "Locate and determine height of prism",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2023-hl-deferred-b3a-r4",
+    "kind": "point",
+    "verbatim": "Draw outline elevation of prism",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2023-hl-deferred-b3a-r5",
+    "kind": "point",
+    "verbatim": "Draw outline plan of prism",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme heads this 'Plan and Elevation of intersecting solids' and prices it at 24. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-b3b",
+  "topicId": "design-and-communication-graphics-0-8",
+  "conceptId": "dcg-0-8",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2023 HL Section B Q3(b) — Deferred sitting",
+  "questionText": "Complete the projections of the stud remover tool showing all lines of interpenetration. Include all hidden detail.",
+  "stem": "The image on the right shows football boots and a stud remover tool. Fig B-3 below shows the incomplete plan and incomplete elevation of a similar stud remover. The stud remover tool consists of a prism which intersects a truncated hexagonal pyramid as shown. A pictorial view of the stud remover tool is also shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secB-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(36)"
+  },
+  "totalMarks": 36,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-b3b-r1",
+    "kind": "criterion",
+    "verbatim": "Complete the projections of the stud remover",
+    "marks": 36,
+    "permittedMarks": [
+     0,
+     36
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Projections from elevation",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Draw lines of intersection in plan",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Projection from elevation to locate intersection of top surface of prism",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "Determine bottom intersection point in elevation and plan",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "Determine side cross over points in elevation and plan",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "Determine bottom cross over points in plan",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-7",
+      "verbatim": "Inclined sectional cut on left side of prism in elevation and plan",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-8",
+      "verbatim": "Sectional cut on right side of prism in elevation and plan",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       6
+      ]
+     },
+     {
+      "id": "step-9",
+      "verbatim": "Joining up of interpenetration and cross over points",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-10",
+      "verbatim": "Hidden detail",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Complete the projections of the stud remover' and prices it at 36. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-c1a-1",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q1(a) — Earthworks between A and B (Level) - Cutting — Deferred sitting",
+  "questionText": "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals. ABCD is the centreline of a proposed track for motorsport rallying. O is the centre of the circular curve. The track has the following specifications: the portion of the track between A and C is level at an altitude of 50 m the portion from C to D is falling uniformly to a level of 40 m at D. Using side slopes of 1 in 2 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the track on the northern side. Note: The earthworks on the southern side have already been completed.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(9)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-c1a-1-r1",
+    "kind": "point",
+    "verbatim": "Draw parallel lines at 10mm intervals",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c1a-1-r2",
+    "kind": "point",
+    "verbatim": "Identify intersections with contours and draw curves",
+    "marks": 4
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "Contour Map",
+   "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+   "pages": [
+    3
+   ],
+   "pageRotations": {
+    "3": 270
+   },
+   "sourceLabel": "Section A",
+   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level, deferred examination, Section A — © State Examinations Commission.",
+   "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination."
+  },
+  "notes": "The scheme heads this 'Earthworks between A and B (Level) - Cutting' and prices it at 9. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-c1a-2",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q1(a) — Earthworks between A and B (Level) - Embankment — Deferred sitting",
+  "questionText": "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals. ABCD is the centreline of a proposed track for motorsport rallying. O is the centre of the circular curve. The track has the following specifications: the portion of the track between A and C is level at an altitude of 50 m the portion from C to D is falling uniformly to a level of 40 m at D. Using side slopes of 1 in 2 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the track on the northern side. Note: The earthworks on the southern side have already been completed.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(9)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-c1a-2-r1",
+    "kind": "point",
+    "verbatim": "Draw parallel lines at 7.5mm intervals",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c1a-2-r2",
+    "kind": "point",
+    "verbatim": "Identify intersections with contours and draw curves",
+    "marks": 4
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "Contour Map",
+   "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+   "pages": [
+    3
+   ],
+   "pageRotations": {
+    "3": 270
+   },
+   "sourceLabel": "Section A",
+   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level, deferred examination, Section A — © State Examinations Commission.",
+   "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination."
+  },
+  "notes": "The scheme heads this 'Earthworks between A and B (Level) - Embankment' and prices it at 9. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-c1a-3",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q1(a) — Earthworks between B and C (Level) - Embankment — Deferred sitting",
+  "questionText": "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals. ABCD is the centreline of a proposed track for motorsport rallying. O is the centre of the circular curve. The track has the following specifications: the portion of the track between A and C is level at an altitude of 50 m the portion from C to D is falling uniformly to a level of 40 m at D. Using side slopes of 1 in 2 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the track on the northern side. Note: The earthworks on the southern side have already been completed.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(9)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-c1a-3-r1",
+    "kind": "point",
+    "verbatim": "Draw parallel lines at 7.5mm intervals",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c1a-3-r2",
+    "kind": "point",
+    "verbatim": "Identify intersections with contours and draw curve",
+    "marks": 4
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "Contour Map",
+   "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+   "pages": [
+    3
+   ],
+   "pageRotations": {
+    "3": 270
+   },
+   "sourceLabel": "Section A",
+   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level, deferred examination, Section A — © State Examinations Commission.",
+   "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination."
+  },
+  "notes": "The scheme heads this 'Earthworks between B and C (Level) - Embankment' and prices it at 9. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-c1a-4",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q1(a) — Earthworks between C and D - Cutting — Deferred sitting",
+  "questionText": "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals. ABCD is the centreline of a proposed track for motorsport rallying. O is the centre of the circular curve. The track has the following specifications: the portion of the track between A and C is level at an altitude of 50 m the portion from C to D is falling uniformly to a level of 40 m at D. Using side slopes of 1 in 2 for the cuttings and 1 in 1.5 for the embankments, complete the earthworks necessary to accommodate the track on the northern side. Note: The earthworks on the southern side have already been completed.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(11)"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-c1a-4-r1",
+    "kind": "point",
+    "verbatim": "Draw required 20mm arc at D and draw tangent",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c1a-4-r2",
+    "kind": "point",
+    "verbatim": "Draw parallel lines at 10mm intervals",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c1a-4-r3",
+    "kind": "point",
+    "verbatim": "Identify intersections with contours and draw curve",
+    "marks": 3
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "Contour Map",
+   "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+   "pages": [
+    3
+   ],
+   "pageRotations": {
+    "3": 270
+   },
+   "sourceLabel": "Section A",
+   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level, deferred examination, Section A — © State Examinations Commission.",
+   "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination."
+  },
+  "notes": "The scheme heads this 'Earthworks between C and D - Cutting' and prices it at 11. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-c1b",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q1(b) — Deferred sitting",
+  "questionText": "(i) Complete the elevation of the top surface of the stratum. (ii) Determine the strike and dip of the stratum. (iii) The thickness of the stratum of ore is 12 m. Determine the edge view of the bottom surface of the stratum.",
+  "stem": "On a separate diagram on the map, P, Q and R are three points on the top surface of a stratum of ore. P and Q are at altitudes of 20 m and 40 m respectively.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(22)"
+  },
+  "totalMarks": 22,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-c1b-r1",
+    "kind": "point",
+    "verbatim": "Determine points P and Q in elevation and draw surface",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c1b-r2",
+    "kind": "point",
+    "verbatim": "Determine strike of stratum",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c1b-r3",
+    "kind": "point",
+    "verbatim": "New X₁Y₁ perpendicular to strike",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c1b-r4",
+    "kind": "point",
+    "verbatim": "Edge view of top surface",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c1b-r5",
+    "kind": "point",
+    "verbatim": "Apply distance and complete bottom surface of stratum",
+    "marks": 3
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "Contour Map",
+   "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+   "pages": [
+    3
+   ],
+   "pageRotations": {
+    "3": 270
+   },
+   "sourceLabel": "Section A",
+   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level, deferred examination, Section A — © State Examinations Commission.",
+   "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination."
+  },
+  "notes": "The scheme heads this 'Stratum of ore' and prices it at 22. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-c2a",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q2(a) — Deferred sitting",
+  "questionText": "Draw the given elevation of the parabolic curve EBD.",
+  "stem": "The image on the right shows an outdoor pavilion. The projections of a similar pavilion are shown in Fig C-2 below. The curved surface is produced by translating the generating parabola ABC, in a vertical position, along the parabolic curve EBD, which is shown in elevation. In the outline end view, the dotted line shows the generating parabola ABC. B is the vertex of both the parabola ABC and the parabola EBD, as shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(15)"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-c2a-r1",
+    "kind": "point",
+    "verbatim": "Draw rectangular outline of parabola EBF",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c2a-r2",
+    "kind": "point",
+    "verbatim": "Construction to locate points on required parabola",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c2a-r3",
+    "kind": "point",
+    "verbatim": "Mirror points to other side",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c2a-r4",
+    "kind": "criterion",
+    "verbatim": "Draw parabolic curve in elevation …… (Any = 1)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Draw elevation of parabolic curve EBD' and prices it at 15. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-c2b",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q2(b) — Deferred sitting",
+  "questionText": "Draw the end view of the generating parabola ABC.",
+  "stem": "The image on the right shows an outdoor pavilion. The projections of a similar pavilion are shown in Fig C-2 below. The curved surface is produced by translating the generating parabola ABC, in a vertical position, along the parabolic curve EBD, which is shown in elevation. In the outline end view, the dotted line shows the generating parabola ABC. B is the vertex of both the parabola ABC and the parabola EBD, as shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(12)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-c2b-r1",
+    "kind": "point",
+    "verbatim": "Establish required rectangular outline for curve ABC",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c2b-r2",
+    "kind": "point",
+    "verbatim": "Construction to locate points on required parabola",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c2b-r3",
+    "kind": "criterion",
+    "verbatim": "Draw parabolic curve …… (Any = 1)",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'End view of generating parabola ABC' and prices it at 12. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-c2c",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q2(c) — Deferred sitting",
+  "questionText": "Project the plan and complete the elevation of the pavilion.",
+  "stem": "The image on the right shows an outdoor pavilion. The projections of a similar pavilion are shown in Fig C-2 below. The curved surface is produced by translating the generating parabola ABC, in a vertical position, along the parabolic curve EBD, which is shown in elevation. In the outline end view, the dotted line shows the generating parabola ABC. B is the vertex of both the parabola ABC and the parabola EBD, as shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(30)"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-c2c-r1",
+    "kind": "criterion",
+    "verbatim": "Plan and complete elevation of pavilion",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     30
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Locate points A, C, D and E in plan",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Establish widths on the curve on RHS in plan",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       6
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Draw curve on RHS in plan …… (Any = 1)",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       4
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "Establish widths on curve on LHS in plan",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "Draw curve on LHS in plan …… (Any = 1)",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "Draw circular curves",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-7",
+      "verbatim": "Establish positions and heights for circular cuts in elevation",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-8",
+      "verbatim": "Complete elevation",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Plan and complete elevation of pavilion' and prices it at 30. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-c2d",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q2(d) — Deferred sitting",
+  "questionText": "Determine the true shape of curve AEC.",
+  "stem": "The image on the right shows an outdoor pavilion. The projections of a similar pavilion are shown in Fig C-2 below. The curved surface is produced by translating the generating parabola ABC, in a vertical position, along the parabolic curve EBD, which is shown in elevation. In the outline end view, the dotted line shows the generating parabola ABC. B is the vertex of both the parabola ABC and the parabola EBD, as shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-c2d-r1",
+    "kind": "point",
+    "verbatim": "Establish widths on true shape (by rabattment or auxiliary view)",
+    "marks": 2
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c2d-r2",
+    "kind": "point",
+    "verbatim": "Locate points on true shape of curve AEC",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c2d-r3",
+    "kind": "point",
+    "verbatim": "Draw true shape of curve",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme heads this 'Determine true shape of curve AEC' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-c3a",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q3(a) — Deferred sitting",
+  "questionText": "Draw the given elevation and plan of the package without the octagonal logo (shaded in elevation).",
+  "stem": "The image on the right shows the packaging for Quality Street chocolates. Fig C-3 below shows the plan and elevation of a similar chocolate package. The base of the box is based on a hexagon of side 80 mm. A pictorial view is also given.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(15)"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-c3a-r1",
+    "kind": "point",
+    "verbatim": "Draw plan",
+    "marks": 9
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c3a-r2",
+    "kind": "point",
+    "verbatim": "Draw elevation",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme heads this 'Plan and Elevation of packaging' and prices it at 15. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-c3b",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q3(b) — Deferred sitting",
+  "questionText": "Determine the dihedral angle between the surfaces A and B.",
+  "stem": "The image on the right shows the packaging for Quality Street chocolates. Fig C-3 below shows the plan and elevation of a similar chocolate package. The base of the box is based on a hexagon of side 80 mm. A pictorial view is also given.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(22)"
+  },
+  "totalMarks": 22,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-c3b-r1",
+    "kind": "point",
+    "verbatim": "X1Y1 parallel to line of intersection",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c3b-r2",
+    "kind": "point",
+    "verbatim": "Projection of surfaces A and B and line of intersection on new X1Y1",
+    "marks": 6
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c3b-r3",
+    "kind": "point",
+    "verbatim": "New X2Y2 perpendicular to line of intersection",
+    "marks": 5
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c3b-r4",
+    "kind": "point",
+    "verbatim": "Projection of surfaces as lines and determine dihedral angle",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme heads this 'Dihedral angle between surfaces A and B' and prices it at 22. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-c3c",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q3(c) — Deferred sitting",
+  "questionText": "Draw a one-piece surface development of the surfaces B and C.",
+  "stem": "The image on the right shows the packaging for Quality Street chocolates. Fig C-3 below shows the plan and elevation of a similar chocolate package. The base of the box is based on a hexagon of side 80 mm. A pictorial view is also given.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(12)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-c3c-r1",
+    "kind": "point",
+    "verbatim": "Correct construction to determine true shape of surface B",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c3c-r2",
+    "kind": "point",
+    "verbatim": "Correct construction to determine true shape of surface C",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c3c-r3",
+    "kind": "point",
+    "verbatim": "Drawing of one-piece surface development",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme heads this 'One-piece Surface Development of Surfaces B and C' and prices it at 12. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-c3d",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q3(d) — Deferred sitting",
+  "questionText": "The octagonal Quality Street logo is positioned in elevation as shown. Draw the elevation and project the plan of the logo.",
+  "stem": "The image on the right shows the packaging for Quality Street chocolates. Fig C-3 below shows the plan and elevation of a similar chocolate package. The base of the box is based on a hexagon of side 80 mm. A pictorial view is also given.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(11)"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-c3d-r1",
+    "kind": "point",
+    "verbatim": "Draw elevation of octagonal logo",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c3d-r2",
+    "kind": "point",
+    "verbatim": "Projections of logo to plan",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c3d-r3",
+    "kind": "point",
+    "verbatim": "Draw plan of octagonal logo",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme heads this 'Projections of octagonal logo' and prices it at 11. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-c4a",
+  "topicId": "design-and-communication-graphics-2-0",
+  "conceptId": "dcg-2-0",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q4(a) — Deferred sitting",
+  "questionText": "(i) Draw the line diagram. (ii) On the diagram, redraw the mechanism when point A has rotated to position A1. Indicate the new depth for the plunger P.",
+  "stem": "The image on the right shows an oil pump. A line diagram representing a similar pump mechanism is shown in Fig. C-4(a) below. Point A rotates in a circular motion about O. AB is 80 mm in length with pin joints at points A and B. BD has a length of 140 mm and oscillates about the fixed point C. Link ED is pin-jointed at points E and D. Link EF is constrained to move vertically and operates the plunger P.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secC-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(25)"
+  },
+  "totalMarks": 25,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-c4a-r1",
+    "kind": "point",
+    "verbatim": "Draw line diagram as given",
+    "marks": 10
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c4a-r2",
+    "kind": "point",
+    "verbatim": "Establish position of B1 when A rotates to A1",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c4a-r3",
+    "kind": "point",
+    "verbatim": "Locate D1 in the correct position",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c4a-r4",
+    "kind": "point",
+    "verbatim": "Locate E1 in the correct position",
+    "marks": 4
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c4a-r5",
+    "kind": "point",
+    "verbatim": "Redraw the plunger P in the correct position",
+    "marks": 3
+   },
+   {
+    "id": "dcg-2023-hl-deferred-c4a-r6",
+    "kind": "point",
+    "verbatim": "Indicate the distance of the plunger from the ground",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme heads this 'Line Diagram and Combined movement' and prices it at 25. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-c4b",
+  "topicId": "design-and-communication-graphics-2-0",
+  "conceptId": "dcg-2-0",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q4(b) — Deferred sitting",
+  "questionText": "The image on the right shows a modern electric unicycle. The wheel is shown in line diagram format in Fig. C-4(b) below. P is a point on the outer surface of the unicycle wheel. The wheel rolls clockwise along the line AB. Plot the locus of point P for one full revolution of the wheel.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secC-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(35)"
+  },
+  "totalMarks": 35,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-c4b-r1",
+    "kind": "criterion",
+    "verbatim": "Plot the Trochoid",
+    "marks": 35,
+    "permittedMarks": [
+     0,
+     35
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Draw the given circle and the line AB",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Construct the 30° division lines and locate point P",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Locate points on the locus as the circle rolls along the HL (5 points)",
+      "marks": 10,
+      "permittedMarks": [
+       0,
+       10
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "Location of point P as the circle rests on the turn T1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "Location of point P as the circle rest on 30° line T2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "Locate points on locus as the circle rolls along the 30° line (7 points)",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       12
+      ]
+     },
+     {
+      "id": "step-7",
+      "verbatim": "Draw the required trochoid (Any = 1)",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Plot the Trochoid' and prices it at 35. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2023-hl-deferred-c5",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q5 — Deferred sitting",
+  "questionText": "The image on the right shows a pipe vice for holding round bars. The details of a similar vice are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled and the locking clamp (part 4) in the closed position. (Note: Any omitted dimensions may be estimated.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2023-HL-deferred-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(61)"
+  },
+  "totalMarks": 61,
+  "rows": [
+   {
+    "id": "dcg-2023-hl-deferred-c5-r1",
+    "kind": "criterion",
+    "verbatim": "Sectional Elevation",
+    "marks": 61,
+    "permittedMarks": [
+     0,
+     61
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Relative positioning of components",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       6
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Complete outline of Base",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Upper portion of base",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       9
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "Holes",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "Outline of the Frame",
+      "marks": 7,
+      "permittedMarks": [
+       0,
+       7
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "Curves",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-7",
+      "verbatim": "Vertical screw",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "step-8",
+      "verbatim": "Horizontal handle",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-9",
+      "verbatim": "Outline of Moving Jaw",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       5
+      ]
+     },
+     {
+      "id": "step-10",
+      "verbatim": "Outline of Locking Clamp",
+      "marks": 7,
+      "permittedMarks": [
+       0,
+       7
+      ]
+     },
+     {
+      "id": "step-11",
+      "verbatim": "Ø8 Hole",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-12",
+      "verbatim": "Presentation, hatching and centrelines",
+      "marks": 6,
+      "permittedMarks": [
+       0,
+       6
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "The scheme heads this 'Sectional Elevation' and prices it at 61. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
  }
 ]
