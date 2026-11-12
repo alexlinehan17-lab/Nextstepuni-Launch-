@@ -53,8 +53,10 @@ const BAND_TABLE = /\bCatagóir\b[\s\S]*?Lag\/An-lag[^•]*?\d+\s*-\s*\d+(?:\s+\
 const MARK_AS = /(?:^|\bagus\s+|[.;:]\s+|-\s?(?=an\s))((?:an|na)\s[^.;:]*?)\s+a mharcáil as (\d+)\s*m?h?arc\b/gi;
 /** "5 phointe eolais ag teastáil (5 mharc an ceann ar an gcéad trí phointe eolais + 4 mharc an ceann ar an dá phointe eolais eile)",
  *  also printed with a full stop before the bracket closes ("… ar na trí phointe eolais eile.)", 2017 Ordinary 2B(a)).
- *  The counts are words with fadas ("dá", "trí"), so they are read as \S+: a \w+ never matched them. */
-const LADDER = /(\d+)\s*phointe eolais ag teastáil\s*\(\s*(\d+)\s*m?h?arc an ceann ar an g?c?[ée]ad\s+(\S+)\s+phointe eolais(?:\s*\+\s*(\d+)\s*m?h?arc an ceann ar (?:an|na)\s+(\S+)\s+phointe eolais eile)?\.?\s*\)/i;
+ *  The counts are words with fadas ("dá", "trí"), so they are read as \S+: a \w+ never matched them. 2023's deferred Ordinary
+ *  2B(b) drops the second "eolais" ("… + 4 mharc an ceann ar na trí phointe eile)"), and its 2B(c) the closing bracket ("… ar an
+ *  dá phointe eolais eile. 5 mharc = 2 mharc ar lomphointe eolais …"). */
+const LADDER = /(\d+)\s*phointe eolais ag teastáil\s*\(\s*(\d+)\s*m?h?arc an ceann ar an g?c?[ée]ad\s+(\S+)\s+phointe eolais(?:\s*\+\s*(\d+)\s*m?h?arc an ceann ar (?:an|na)\s+(\S+)\s+phointe(?: eolais)? eile)?(?:\.?\s*\)|\.(?=\s*(?:¶|$)|\s+\d+\s*m?h?arc\s*=))/i;
 const NOTE = /(?<=^|\s|\()(?:Nóta:|Ní mór(?=\s)|Is leor(?=\s)|Caithfidh(?=\s)|Bainfear(?=\s)|Gearrfar(?=\s)|Glacfar(?=\s)|Tabharfar(?=\s)|Mura mbíonn(?=\s)|Cuir lúibíní(?=\s)|Dá bharr sin(?=\s)|Gan tréith(?=\s)|Tá [^\s]+ mharc ag gabháil(?=\s)|Sampla cruinn gan(?=\s)|Is samplaí de fhreagraí(?=\s)|Léirigh na marcanna(?=\s)|Ag bun(?=\s))[^•{}¶]*?(?:[.?!](?=\s|\)|$)|(?=\s\(?(?:i|ii|iii|iv|v)\)\s|\sNóta:|\sTreoir:|\s•|\s¶|\s\(\d+\s*m?h?arc\)|\s\{\d|$))/g;
 const DEDUCTION = /\[Gaeilge lochtach:[^\]]*\]/g;
 /** "Nóta: 1. Mura bhfuil an téama luaite … (3+3) 2. Téama luaite (2 mharc) agus … (2+2). 3. Gan an téama luaite … = 0" (2015
@@ -158,6 +160,12 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   }
   const directions: string[] = [];
   let text = source.guidance.filter((line, index) => index === 0 || !SECTION_SUMMARY.test(line.trim())).join(' ').replace(/[\uf0a7\uf0b7\u25aa\u2022]/g, ' • ').replace(/\s+/g, ' ').trim();
+  // "Dhá aidiacht as an téacs a lua = 2 mharc {1 + 1 = 2 mharc} Plé ar thábhacht na n-aidiachtaí = 5 mharc {3 + 2 mharc}"
+  // (2023 deferred Higher 3A(a)(iii)): a price followed by its own split in braces is the price in those printed parts,
+  // read as "= 1 mharc + 1 mharc", so the row steps through them as "Dhá phointe eolais = 4 mharc + 4 mharc" does.
+  text = text.replace(/=\s*(\d+)\s*(m?h?arc)\s*\{\s*(\d+)\s*(?:m?h?arc\s*)?\+\s*(\d+)\s*(?:m?h?arc\s*)?(?:=\s*\d+\s*m?h?arc\s*)?\}/g,
+    (whole: string, total: string, unit: string, first: string, second: string) =>
+      Number(first) + Number(second) === Number(total) ? `= ${first} mharc + ${second} mharc` : whole);
   // "Ní mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go soiléir. (2 mharc)" alone (2012 and 2013 Ordinary
   // 2B and 3B): the title line printed with its price and nothing under it is the ask that price is for, never a note: its own
   // words are the row, claimed whole (the scheme prints no split).
@@ -436,8 +444,15 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
       }
     }
     // Where nothing else in the text is priced and no band table prices it, each thing marked "out of N" is a judged row at N
-    // in single marks (MARK_AS).
-    if (tokens.length === 0 && !parts.length && !loose.length && !bands.length) {
+    // in single marks (MARK_AS). A band table headed by exactly those marks ("Catagóir 13 mharc 12 mharc Sármhaith 12 -13 11 –
+    // 12 …", 2022 deferred Higher 2A(b)) is their bands, not another price.
+    const markedAs = [...body.matchAll(MARK_AS)].filter(match => !/^an t-eolas$/i.test(match[1].trim())).map(match => Number(match[2]));
+    const ownBands = bands.length > 0 && markedAs.length > 0 && bands.every(band => {
+      const header = /^Catagóir((?:\s+\d+\s*m?h?arc)+)\s/.exec(band);
+      const marks = header ? [...header[1].matchAll(/\d+/g)].map(m => Number(m[0])) : [];
+      return marks.length > 0 && marks.every(mark => markedAs.includes(mark));
+    });
+    if (tokens.length === 0 && !parts.length && !loose.length && (!bands.length || ownBands)) {
       for (const match of body.matchAll(MARK_AS)) {
         // "an t-eolas a mharcáil as 35 marc" (Ceist 4A–E, 2016 and 2017) is the whole criterion's price: the Ceist 4 rule
         // below makes the criterion's own printed words its judged row, as 2017 and 2018 4A–E have.
@@ -674,7 +689,10 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   // 2012 prints only the note after both prose questions: "Caithfidh an Scrúdaitheoir an marc as 25 (Ábhar) agus as 5 (Gaeilge) a
   // thaispeáint" (Higher 2A, 2B).
   const treoirPrice = /an t-eolas a mharcáil as (\d+) marc|an marc ar eolas as (\d+) marc|an marc as (\d+) \(Ábhar\)/.exec(source.guidance.join(' '));
-  if (parts.length === 0 && !loose.length && loosePrompt
+  // The judged row is the criterion's own printed words, so they must read as printed: a prompt joined across a removed price
+  // ("… Déan plé ar an ráiteas sin. Nótaí Léirítear …" with "(30 marc)" between, 2022 deferred Higher 2A(a)) is not.
+  const asPrinted = (words: string) => source.guidance.join(' ').replace(/[^\p{L}\p{N}]+/gu, '').includes(words.replace(/[^\p{L}\p{N}]+/gu, ''));
+  if (parts.length === 0 && !loose.length && loosePrompt && asPrinted(loosePrompt)
     && (bands.some(band => Number(/^Catagóir\s+Eolas\s*\((\d+)\s*m?h?arc\)/.exec(band)?.[1]) === source.totalMarks)
       || Number(treoirPrice?.[1] ?? treoirPrice?.[2] ?? treoirPrice?.[3]) === source.totalMarks)) {
     parts.push({ prompt: loosePrompt, tariff: source.totalMarks, rows: [], samples: [] });
@@ -704,7 +722,28 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
       // The scheme prints the option's tariff twice, once per alternative text (scannán nó dráma): one set of rows.
       part.rows = part.rows.slice(0, part.rows.length / 2);
     } else if (sum !== part.tariff) {
-      return { ok: false, reason: `rows add to ${sum}, sub-question is ${part.tariff}` };
+      const restated = restatedTail(part.rows, part.tariff);
+      const counted = countedPoints(directions, part.tariff - sum);
+      const boxed = boxedBand(source.guidance.join(' '), part.tariff - sum);
+      if (boxed && !restated) {
+        // "Plé ar an bhforbairt … ó thús go deireadh an dáin P(11) = Catagóir Marc as 11 Sármhaith 10, 11 …" (2022 deferred
+        // Higher 3B(i)): the part's rest priced by the examiner's box and its own band table: a row in those bands.
+        part.rows.push({ id: '', text: boxed.text, marks: boxed.marks, steps: boxed.steps });
+      } else if (restated) {
+        // The scheme prices the part, then restates the same prices as a summary ("Dhá aidiacht … = 2 mharc Plé … = 5 mharc"
+        // then "Aidiachtaí a lua = 2 mharc Plé ar aidiacht a haon: 3 mharc …", 2023 deferred Higher 3A(a)(iii)): the
+        // restatement is a note under the rows, not more answers (the loose-rows rule above, for a part's own rows).
+        directions.push(...part.rows.slice(restated).map(row => row.text));
+        part.rows = part.rows.slice(0, restated);
+      } else if (counted) {
+        // The only price of the points is the count note ("Cur síos ar atmaisféar an dáin = 1 mharc Dhá phointe eolais ag
+        // teastáil anseo: 3 mharc an ceann ar an dá phointe eolais", 2023 deferred Higher 3B(a)(iii)): the note is their row,
+        // in its own steps, and no longer a direction.
+        directions.splice(directions.indexOf(counted.note), 1);
+        part.rows.push({ id: '', text: counted.note, marks: counted.marks, steps: counted.steps });
+      } else {
+        return { ok: false, reason: `rows add to ${sum}, sub-question is ${part.tariff}` };
+      }
     }
     total += part.tariff;
     built.push({
@@ -718,6 +757,44 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   const seen = new Set<string>();
   return { ok: true, allocation: { parts: built, directions: directions.filter(note => note && !seen.has(note) && seen.add(note)) } };
 }
+
+/** Where a part's rows overshoot its tariff because the scheme restates them: the count of leading rows that price the part
+ *  exactly, when every later row repeats a price already placed. Otherwise undefined. */
+const restatedTail = (rows: IrishAnswerRow[], tariff: number): number | undefined => {
+  let sum = 0;
+  for (let count = 1; count < rows.length; count++) {
+    sum += rows[count - 1].marks;
+    if (sum > tariff) return undefined;
+    if (sum !== tariff) continue;
+    const placed = new Set(rows.slice(0, count).map(row => row.marks));
+    const tail = rows.slice(count);
+    return tail.every(row => placed.has(row.marks)) && tail.reduce((acc, row) => acc + row.marks, 0) <= tariff ? count : undefined;
+  }
+  return undefined;
+};
+
+/** "<what is judged> P(11) = Catagóir Marc as 11 <bands>": a row priced by the examiner's box and its own band table, when its
+ *  marks are exactly what the part's rows leave unpriced and the bands cover every mark. Otherwise undefined. */
+const boxedBand = (text: string, short: number): { text: string; marks: number; steps: number[] } | undefined => {
+  if (short <= 0) return undefined;
+  const found = /(?:^|\d\s+|m?h?arc\s+|[.?]\s+)([A-ZÁÉÍÓÚ][^=•¶()]*?)\s+[A-Z]\((\d+)\)\s*=\s*(Catagóir Marc as (\d+)\b[^•¶]*?Lag\/An-lag\s*[\d,\s–-]+)/.exec(text);
+  if (!found || Number(found[2]) !== short || Number(found[4]) !== short || !covers(bandValues(found[3].replace(/^Catagóir Marc as \d+/, '')), short)) return undefined;
+  return { text: tidy(found[1]), marks: short, steps: range(short) };
+};
+
+/** A count note ("Dhá phointe eolais ag teastáil anseo: 3 mharc an ceann ar an dá phointe eolais") that prices exactly the
+ *  marks a part's rows leave unpriced: its points as one row in steps of one point. Otherwise undefined. */
+const countedPoints = (directions: string[], short: number): { note: string; marks: number; steps: number[] } | undefined => {
+  if (short <= 0) return undefined;
+  for (const note of directions) {
+    const match = /^(Dhá|Trí|Ceithre|Cúig|\d+)\s+phointe eolais ag teastáil(?: anseo)?:?\s*(\d+)\s*m?h?arc an ceann ar (?:an|na)\b/.exec(note);
+    if (!match) continue;
+    const count = /^\d+$/.test(match[1]) ? Number(match[1]) : WORDS[match[1].toLowerCase()];
+    const each = Number(match[2]);
+    if (count && count * each === short) return { note, marks: short, steps: Array.from({ length: count + 1 }, (_, index) => index * each) };
+  }
+  return undefined;
+};
 
 /** The marks a printed band table's values cover: "6-7 … 5 … 4 … 3 … 0-2", "10, 11 … 0, 1, 2, 3". */
 const bandValues = (table: string): Set<number> => {
@@ -906,9 +983,59 @@ export function parsePrintedAlternatives(source: IrishAnswerSource): IrishAnswer
   return { ok: true, allocation: { parts: [{ id: 'p1', tariff: source.totalMarks, rows }], directions } };
 }
 
+/** "(iii) Cén toradh a bhí ar an suirbhé …? 5 mharc Freagra Samplach: • …" (2022 deferred Ordinary 2A(c)(iii)): the question's
+ *  price printed bare in the margin, then unpriced samples under their heading. Read as the question's tariff ("(5 mharc)") for
+ *  the parse only; the rows keep the scheme's own words. Tried only where nothing else reads the criterion. */
+const BARE_PRICE = /([?.])\s+(\d+)\s*(m?h?arc)\b(?=\s+Freagra(?:í)? [Ss]amplach(?:a)?:\s*•)/;
+
 export function irishTariffsFor(source: IrishAnswerSource): IrishAllocation | undefined {
   const result = parseIrishTariffs(source);
   if (result.ok) return result.allocation;
   const alternatives = parsePrintedAlternatives(source);
-  return alternatives.ok ? alternatives.allocation : undefined;
+  if (alternatives.ok) return alternatives.allocation;
+  const bare = source.guidance.map(line => line.replace(BARE_PRICE, (_, stop: string, marks: string, unit: string) => `${stop} (${marks} ${unit})`));
+  if (bare.some((line, index) => line !== source.guidance[index])) {
+    const reread = parseIrishTariffs({ ...source, guidance: bare });
+    if (reread.ok && reread.allocation.parts.length === 1 && reread.allocation.parts[0].tariff === source.totalMarks) return reread.allocation;
+  }
+  return undefined;
+}
+
+/** What the Irish card factory tries for a priced criterion only after every other reading of it, its siblings' and its
+ *  question card's included, has failed: 2022 deferred Higher's caps printed without "=", and prose priced only by its band
+ *  table's header. */
+export function irishTariffsLastResort(source: IrishAnswerSource): IrishAllocation | undefined {
+  return unequalled(source) ?? bandOnly(source);
+}
+
+/** 2022 deferred Higher 4F prints its caps without "=": "Míniú – 7 marc", "Eolas 9 marc … Dhá phointe eolais 4 mharc + 4 mharc",
+ *  beside the paper's own part tariff ("(10 marc)", which includes the shared Gaeilge). Read with "=" for the parse only, and
+ *  without a printed tariff that is not this criterion's; the rows keep the scheme's words. A last resort. */
+function unequalled(source: IrishAnswerSource): IrishAllocation | undefined {
+  const total = source.totalMarks;
+  const capped = source.guidance.map(line => line
+    .replace(/\b(Míniú|Eolas)\s*[–-]\s*(\d+)\s*(m?h?arc)\b/g, '$1 = $2 $3')
+    .replace(/\bEolas\s+(\d+)\s*(m?h?arc)\b/g, 'Eolas = $1 $2')
+    .replace(/\b(Dhá phointe eolais)\s+(\d+\s*m?h?arc\s*\+\s*\d+\s*m?h?arc)/g, '$1 = $2'));
+  // Only a cap printed without "=" is read so; nothing else is.
+  if (capped.every((line, index) => line === source.guidance[index])) return undefined;
+  const equalled = capped.map(line => line.replace(/\(\s*(\d+)\s*m?h?arc\s*\)/g, (whole: string, marks: string) => (Number(marks) === total ? whole : ' ')));
+  const reread = parseIrishTariffs({ ...source, guidance: equalled });
+  return reread.ok && reread.allocation.parts.length === 1 && reread.allocation.parts[0].tariff === total ? reread.allocation : undefined;
+}
+
+/** A prose answer priced only by its band table's header ("Catagóir Eolas (25 marc) Gaeilge (5 mharc) Sármhaith … 22-25 …
+ *  0-9", 2022 deferred Higher 2A(a) and 2B(a), whose questions print only the option's 30): one judgement over the Eolas,
+ *  in the bands' single marks, as the 2018 Ceist 4 rule reads a criterion its band header prices. A last resort. */
+function bandOnly(source: IrishAnswerSource): IrishAllocation | undefined {
+  const total = source.totalMarks;
+  for (const line of source.guidance) {
+    const table = new RegExp(String.raw`Catagóir\s+Eolas\s*\(\s*${total}\s*m?h?arc\s*\)[\s\S]*?Lag\/\s?An-lag[^•]*?\d+\s*-\s*\d+`).exec(line);
+    if (!table) continue;
+    const ranges = [...table[0].matchAll(/(\d+)\s*-\s*(\d+)/g)].map(m => [Number(m[1]), Number(m[2])]);
+    const values = new Set(ranges.flatMap(([low, high]) => Array.from({ length: high - low + 1 }, (_, i) => low + i)));
+    if (!covers(values, total)) continue;
+    return { parts: [{ id: 'p1', tariff: total, rows: [{ id: 'r1', text: 'Eolas', marks: total, steps: range(total) }] }], directions: [] };
+  }
+  return undefined;
 }

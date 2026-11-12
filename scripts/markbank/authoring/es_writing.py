@@ -269,6 +269,7 @@ RANGE_END = re.compile(r'\s*(\d{1,2})\s*[–-]\s*(\d{1,2})\s+marks$')
 BAND = re.compile(r'^(TOP|MIDDLE|BOTTOM)$')
 # "1. CONTENT/COMMUNICATION 25 marks"; 2021 and 2022 print "25marks".
 CRITERION = re.compile(r'^(\d)\.\s+([A-Z][A-Z/ ]+?)\s*(\d{1,2})\s*marks$')
+CRITERION_UNPRICED = re.compile(r'^(\d)\.\s+(CONTENT/COMMUNICATION|LANGUAGE)\s*$')
 # "(5 x 6m = 30 marks)"; 2017 prints "(5 x 6 = 30marks)".
 TIMES = re.compile(r'\((\d)\s*x\s*(\d{1,2})\s*m?\s*=\s*(\d{1,3})\s*marks\)')
 # 2010-2019 print it the other way round: "8 marks x 5 = 40 marks", "5 marks x 4 = 20".
@@ -333,13 +334,12 @@ def grid_b5(year, level):
             in_note = True
             notes.append(s[len('Note:'):].strip())
             continue
-        m = CRITERION.match(s)
+        m = CRITERION.match(s) or CRITERION_UNPRICED.match(s)
         if m:
-            label = m.group(2).strip().title().replace('/C', '/C')
             cur = {'id': 'content' if m.group(1) == '1' else 'language',
                    'label': '/'.join(w.capitalize() for w in m.group(2).strip().split('/')),
-                   'maxMarks': int(m.group(3)), 'guidance': [], 'bands': []}
-            cur['permittedMarks'] = list(range(cur['maxMarks'] + 1))
+                   'maxMarks': int(m.group(3)) if m.lastindex >= 3 else None,
+                   'guidance': [], 'bands': []}
             criteria.append(cur)
             continue
         if BAND.match(s):
@@ -358,6 +358,12 @@ def grid_b5(year, level):
             band, desc = None, []
         else:
             desc.append(s)
+    for c in criteria:
+        if c['maxMarks'] is None:
+            # 2014 heads its first criterion "1. CONTENT/COMMUNICATION" with no
+            # total; its TOP band prints the top of the range, "18 – 25 marks".
+            c['maxMarks'] = max(max(b['marks']) for b in c['bands'])
+        c['permittedMarks'] = list(range(c['maxMarks'] + 1))
     requirements = _sentences(notes)
     # The scheme's own rule tying the two criteria: "Where no marks are awarded
     # for Content 1, (i.e. effort totally irrelevant), no marks will be awarded
@@ -503,8 +509,10 @@ def grid_ol_b(year, level, q, letter):
     o0 = next(k for k, s in enumerate(texts) if head.match(s))
     o1 = next((k for k in range(o0 + 1, len(texts)) if re.match(r'^Q\.?\s*2\b', texts[k])), len(texts)) \
         if q == 1 else len(texts)
-    # 2019 closes the section with its "Reasonable Accommodations:" note.
-    o1 = next((k for k in range(o0 + 1, o1) if re.match(r'^Reasonable Accommodations', texts[k])), o1)
+    # 2019 closes the section with its "Reasonable Accommodations:" note, and
+    # 2012 runs straight on into "Appendix One".
+    o1 = next((k for k in range(o0 + 1, o1)
+               if re.match(r'^(?:Reasonable Accommodations|Appendix\b)', texts[k], re.I)), o1)
     part = texts[o0 + 1:o1]
     t = next(k for k, s in enumerate(part) if _times(s))
     lead = _sentences(part[:t + 1])

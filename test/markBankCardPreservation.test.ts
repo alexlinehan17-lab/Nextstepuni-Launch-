@@ -1331,6 +1331,10 @@ const SPANISH_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2018: { higher: 74, ordinary: 55 },
   2017: { higher: 74, ordinary: 53 },
   2016: { higher: 75, ordinary: 53 },
+  2015: { higher: 76, ordinary: 57 },
+  2014: { higher: 76, ordinary: 54 },
+  2013: { higher: 76, ordinary: 57 },
+  2012: { higher: 76, ordinary: 55 },
 };
 /* 2021-2025 shipped their reading cards before the lane; their listening,
  * writing and direction asks were excluded then and are carded on top (batch
@@ -2687,7 +2691,7 @@ describe('Mark Bank card preservation', () => {
     expect(IRISH_HIGHER.filter(card => addedIrishRoutes.has(card.id)).map(card => card.id).sort())
       .toEqual([...addedIrishRoutes].sort());
     const deferred = (cards: readonly { id: string }[]) => cards.filter(card => irishDeferredIds.has(card.id)).length;
-    expect([deferred(IRISH_HIGHER), deferred(IRISH_ORDINARY)]).toEqual([189, 150]);
+    expect([deferred(IRISH_HIGHER), deferred(IRISH_ORDINARY)]).toEqual([364, 300]);
     expect(IRISH_HIGHER).toHaveLength(215 + addedIrishRoutes.size + deferred(IRISH_HIGHER));
     expect(IRISH_ORDINARY.filter(card => addedIrishOrdinaryRoutes.has(card.id)).map(card => card.id).sort())
       .toEqual([...addedIrishOrdinaryRoutes].sort());

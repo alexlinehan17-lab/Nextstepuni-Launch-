@@ -3158,26 +3158,9 @@
           "guidance": [
             "Ní mór teideal an scéil béaloidis sin a scríobh síos go cruinn."
           ]
-        },
-        {
-          "id": "gaeilge-deduction",
-          "label": "Gaeilge lochtach",
-          "kind": "deduction",
-          "maxMarks": 4,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]"
-          ]
         }
       ],
-      "markingGuideNote": "The scheme prints no answer for this part. The deferred scheme prints keys for the prescribed texts only; this option is marked at the paper’s printed tariffs, judged on merit, then the 0–4 Gaeilge deduction the scheme prints for literature once.",
+      "markingGuideNote": "The scheme prints no answer for this part. The deferred scheme prints keys for the prescribed texts only; this option is marked at the paper’s printed tariffs, judged on merit. The scheme prints its 0–4 Gaeilge deduction under the keyed options only, so none applies here.",
       "atlasQuestionId": "P-2B-a",
       "reviewedAt": "2026-11-12",
       "reviewedPaperPages": [
@@ -3270,26 +3253,9 @@
           "guidance": [
             "Ní mór teideal an úrscéil sin, mar aon le hainm an údair, a scríobh síos go cruinn."
           ]
-        },
-        {
-          "id": "gaeilge-deduction",
-          "label": "Gaeilge lochtach",
-          "kind": "deduction",
-          "maxMarks": 4,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]"
-          ]
         }
       ],
-      "markingGuideNote": "The scheme prints no answer for this part. The deferred scheme prints keys for the prescribed texts only; this option is marked at the paper’s printed tariffs, judged on merit, then the 0–4 Gaeilge deduction the scheme prints for literature once.",
+      "markingGuideNote": "The scheme prints no answer for this part. The deferred scheme prints keys for the prescribed texts only; this option is marked at the paper’s printed tariffs, judged on merit. The scheme prints its 0–4 Gaeilge deduction under the keyed options only, so none applies here.",
       "atlasQuestionId": "P-2B-b",
       "reviewedAt": "2026-11-12",
       "reviewedPaperPages": [
@@ -3384,26 +3350,9 @@
             "Ní mór teideal an scannáin sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn.",
             "Ní mór teideal an dráma sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn."
           ]
-        },
-        {
-          "id": "gaeilge-deduction",
-          "label": "Gaeilge lochtach",
-          "kind": "deduction",
-          "maxMarks": 4,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]"
-          ]
         }
       ],
-      "markingGuideNote": "The scheme prints no answer for this part. The deferred scheme prints keys for the prescribed texts only; this option is marked at the paper’s printed tariffs, judged on merit, then the 0–4 Gaeilge deduction the scheme prints for literature once.",
+      "markingGuideNote": "The scheme prints no answer for this part. The deferred scheme prints keys for the prescribed texts only; this option is marked at the paper’s printed tariffs, judged on merit. The scheme prints its 0–4 Gaeilge deduction under the keyed options only, so none applies here.",
       "atlasQuestionId": "P-2B-c",
       "reviewedAt": "2026-11-12",
       "reviewedPaperPages": [
@@ -3902,26 +3851,9 @@
           "guidance": [
             "Ní mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go cruinn."
           ]
-        },
-        {
-          "id": "gaeilge-deduction",
-          "label": "Gaeilge lochtach",
-          "kind": "deduction",
-          "maxMarks": 4,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]"
-          ]
         }
       ],
-      "markingGuideNote": "The scheme prints no answer for this part. The deferred scheme prints keys for the prescribed texts only; this option is marked at the paper’s printed tariffs, judged on merit, then the 0–4 Gaeilge deduction the scheme prints for literature once.",
+      "markingGuideNote": "The scheme prints no answer for this part. The deferred scheme prints keys for the prescribed texts only; this option is marked at the paper’s printed tariffs, judged on merit. The scheme prints its 0–4 Gaeilge deduction under the keyed options only, so none applies here.",
       "atlasQuestionId": "F-3B-a",
       "reviewedAt": "2026-11-12",
       "reviewedPaperPages": [
@@ -4041,26 +3973,9 @@
           "guidance": [
             "Ní mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go cruinn."
           ]
-        },
-        {
-          "id": "gaeilge-deduction",
-          "label": "Gaeilge lochtach",
-          "kind": "deduction",
-          "maxMarks": 4,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]"
-          ]
         }
       ],
-      "markingGuideNote": "The scheme prints no answer for this part. The deferred scheme prints keys for the prescribed texts only; this option is marked at the paper’s printed tariffs, judged on merit, then the 0–4 Gaeilge deduction the scheme prints for literature once.",
+      "markingGuideNote": "The scheme prints no answer for this part. The deferred scheme prints keys for the prescribed texts only; this option is marked at the paper’s printed tariffs, judged on merit. The scheme prints its 0–4 Gaeilge deduction under the keyed options only, so none applies here.",
       "atlasQuestionId": "F-3B-b",
       "reviewedAt": "2026-11-12",
       "reviewedPaperPages": [
@@ -4180,26 +4095,9 @@
           "guidance": [
             "Ní mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go cruinn."
           ]
-        },
-        {
-          "id": "gaeilge-deduction",
-          "label": "Gaeilge lochtach",
-          "kind": "deduction",
-          "maxMarks": 4,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]"
-          ]
         }
       ],
-      "markingGuideNote": "The scheme prints no answer for this part. The deferred scheme prints keys for the prescribed texts only; this option is marked at the paper’s printed tariffs, judged on merit, then the 0–4 Gaeilge deduction the scheme prints for literature once.",
+      "markingGuideNote": "The scheme prints no answer for this part. The deferred scheme prints keys for the prescribed texts only; this option is marked at the paper’s printed tariffs, judged on merit. The scheme prints its 0–4 Gaeilge deduction under the keyed options only, so none applies here.",
       "atlasQuestionId": "F-3B-c",
       "reviewedAt": "2026-11-12",
       "reviewedPaperPages": [
@@ -4379,26 +4277,9 @@
           "guidance": [
             "Tabhair cuntas ar na príomhimeachtaí (príomhrudaí) a tharlaíonn sa dráma An Lasair Choille ón uair a thagann Míoda isteach i dteach Mhicil go dtí go scaoileann Séamas Binncheol saor ag deireadh an dráma."
           ]
-        },
-        {
-          "id": "gaeilge-deduction",
-          "label": "Gaeilge lochtach",
-          "kind": "deduction",
-          "maxMarks": 4,
-          "permittedMarks": [
-            0,
-            1,
-            2,
-            3,
-            4
-          ],
-          "guidanceKind": "quality",
-          "guidance": [
-            "[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]"
-          ]
         }
       ],
-      "markingGuideNote": "The scheme prints no answer for this part. The deferred scheme prints keys for the prescribed texts only; this option is marked at the paper’s printed tariffs, judged on merit, then the 0–4 Gaeilge deduction the scheme prints for literature once.",
+      "markingGuideNote": "The scheme prints no answer for this part. The deferred scheme prints keys for the prescribed texts only; this option is marked at the paper’s printed tariffs, judged on merit. The scheme prints its 0–4 Gaeilge deduction under the keyed options only, so none applies here.",
       "atlasQuestionId": "P-2A-c-an-lasair-choille",
       "reviewedAt": "2026-11-12",
       "reviewedPaperPages": [
