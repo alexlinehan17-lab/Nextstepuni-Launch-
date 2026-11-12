@@ -163,19 +163,20 @@ describe('Spanish exam-topic registry', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'spanish');
     expect(spanishCrosswalk.summary).toMatchObject({
       localPaperVariants: 136,
-      // +8 (2026-11-12): Higher B5 and C2 for 2020 and 2026, both editions.
-      localPhysicalMappings: 1163,
-      distinctStudentFacingQuestions: 620,
-      referenceMappedLocalQuestions: 446,
-      retainedLocalQuestions: 717,
+      // +8 (2026-11-12): Higher B5 and C2 for 2020 and 2026, both editions;
+      // +2: 2020 Higher A1b4 (journalistic Q4), both editions.
+      localPhysicalMappings: 1165,
+      distinctStudentFacingQuestions: 621,
+      referenceMappedLocalQuestions: 447,
+      retainedLocalQuestions: 718,
       hostedPaperAnchorMaps: 136,
       preservedBaselineVariants: 124,
       preservedBaselineCards: 909,
       newlyAddedPaperVariants: 12,
-      newlyAddedPhysicalMappings: 254,
+      newlyAddedPhysicalMappings: 256,
     });
     expect(papers).toHaveLength(136);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1163);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1165);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
 
@@ -240,7 +241,7 @@ describe('Spanish exam-topic registry', () => {
     )).toEqual(['spanish-ordinary-write-a-diary-entry']);
   });
 
-  it('ships a finite paper-only fallback for all 1,163 cards', () => {
+  it('ships a finite paper-only fallback for all 1,165 cards', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'spanish');
     for (const paper of papers) {
       const mapPath = path.join(
@@ -261,9 +262,9 @@ describe('Spanish exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 620 distinct questions and only leaves unavailable oral buckets empty', () => {
+  it('surfaces all 621 distinct questions and only leaves unavailable oral buckets empty', () => {
     expect(subjectAtlasStats('spanish')).toMatchObject({
-      questions: 620,
+      questions: 621,
       topics: 34,
       yearMin: 2010,
       yearMax: 2026,

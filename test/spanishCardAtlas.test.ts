@@ -38,18 +38,18 @@ describe('Spanish cards in the Topic Atlas', () => {
   });
 
   it('pins the known Higher Atlas faults so they can only shrink', () => {
-    // The Higher Atlas of 2020-2025 predates this map: some printed questions
-    // have no Atlas entry of their own (2022 Question 2; 2020 A1b Q4), and some
-    // entries are tagged one task over (the literature Q5 as journalism, the
-    // journalistic Q3/Q4 as short texts, Question 2 as journalism). Every card
-    // they touch is named here; a repair moves it out, nothing moves it in.
+    // The Higher Atlas of 2021-2025 predates this map: some printed questions
+    // have no Atlas entry of their own (2022 Question 2), and some entries are
+    // tagged one task over (the literature Q5 as journalism, the journalistic
+    // Q3/Q4 as short texts, Question 2 as journalism). Every card they touch is
+    // named here; a repair moves it out, nothing moves it in. 2020 was repaired
+    // on 12 Nov 2026 (A1b Q4 given its own question; n 5, 8, 9 retagged).
     expect(Object.keys(map.gaps).sort()).toEqual([
-      'es-2020-hl-a1b-4',
       ...['a-i', 'a-ii', 'a-iii', 'b-i', 'b-ii', 'b-iii'].map(part => `es-2022-hl-a2-${part}`),
     ]);
-    expect(map.topicResidue.length).toBeLessThanOrEqual(49);
+    expect(map.topicResidue.length).toBeLessThanOrEqual(40);
     for (const id of [...Object.keys(map.gaps), ...map.topicResidue]) {
-      expect(id, id).toMatch(/^es-20(2[0-5])-hl-/);
+      expect(id, id).toMatch(/^es-202[1-5]-hl-/);
     }
   });
 

@@ -456,6 +456,24 @@ for (const [year, pages] of Object.entries(HIGHER_WRITING_PAGES)) {
   }
 }
 
+// A printed question the classic map never anchored: 2020 Higher's
+// journalistic Question 4 ("4. Explica (o expresa de otro modo) en ESPAÑOL una
+// de las frases siguientes", page 5, below Q3; the Irish booklet prints the
+// same head at the same place). Its map anchors the Glovo text's Q1-Q3 only,
+// so it gets a card of its own after Q3 (n 8), in both editions.
+for (const extra of [
+  { year: 2020, after: '8', n: 'A1b4', label: 'Section A · Texto periodístico (Glovo) · Q4', semantic: 'higher-journalistic', page: 5 },
+]) {
+  for (const lang of ['ev', 'iv']) {
+    const paper = findPaper(extra.year, 'higher', lang, 'written');
+    const at = paper.q.findIndex(question => question.n === extra.after);
+    if (at < 0 || paper.q.some(question => question.n === extra.n)) {
+      throw new Error(`${paperIdentity(paper)}: cannot place ${extra.n} after ${extra.after}`);
+    }
+    paper.q.splice(at + 1, 0, customQuestion({ ...extra, year: extra.year }));
+  }
+}
+
 // A few legacy language-edition sidecars omit a whole component even though
 // the indexed SEC booklet contains it. Both editions share their page layout,
 // so restore one umbrella card from the reviewed sibling edition's boundaries.

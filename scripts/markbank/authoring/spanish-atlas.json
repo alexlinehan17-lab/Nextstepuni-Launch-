@@ -81,6 +81,10 @@
    "fileid": "LC012ALP000EV.pdf",
    "n": "8"
   },
+  "es-2020-hl-a1b-4": {
+   "fileid": "LC012ALP000EV.pdf",
+   "n": "A1b4"
+  },
   "es-2020-hl-a2-a-i": {
    "fileid": "LC012ALP000EV.pdf",
    "n": "9"
@@ -2375,7 +2379,6 @@
   }
  },
  "gaps": {
-  "es-2020-hl-a1b-4": "anchor 8 \"Section A · Texto periodístico (Glovo) · Q3\" is Q3, the card is Q4",
   "es-2022-hl-a2-a-i": "anchor 8 \"Section A · 1(b) Journalistic · Q3\" is A1b, the card is A2",
   "es-2022-hl-a2-a-ii": "anchor 8 \"Section A · 1(b) Journalistic · Q3\" is A1b, the card is A2",
   "es-2022-hl-a2-a-iii": "anchor 8 \"Section A · 1(b) Journalistic · Q3\" is A1b, the card is A2",
@@ -2384,15 +2387,6 @@
   "es-2022-hl-a2-b-iii": "anchor 8 \"Section A · 1(b) Journalistic · Q3\" is A1b, the card is A2"
  },
  "topicResidue": [
-  "es-2020-hl-a1a-5",
-  "es-2020-hl-a1b-3-a",
-  "es-2020-hl-a1b-3-b",
-  "es-2020-hl-a1b-3-c",
-  "es-2020-hl-a2-a-i",
-  "es-2020-hl-a2-a-ii",
-  "es-2020-hl-a2-b-i",
-  "es-2020-hl-a2-b-ii",
-  "es-2020-hl-a2-b-iii",
   "es-2021-hl-a1b-3-a",
   "es-2021-hl-a1b-3-b",
   "es-2021-hl-a1b-3-c",

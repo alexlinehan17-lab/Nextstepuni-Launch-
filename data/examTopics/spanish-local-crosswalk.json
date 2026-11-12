@@ -25,15 +25,15 @@
     },
     "matchedLocalCardLinks": 547,
     "localPaperVariants": 136,
-    "localPhysicalMappings": 1163,
-    "distinctStudentFacingQuestions": 620,
-    "referenceMappedLocalQuestions": 446,
-    "retainedLocalQuestions": 717,
+    "localPhysicalMappings": 1165,
+    "distinctStudentFacingQuestions": 621,
+    "referenceMappedLocalQuestions": 447,
+    "retainedLocalQuestions": 718,
     "hostedPaperAnchorMaps": 136,
     "preservedBaselineVariants": 124,
     "preservedBaselineCards": 909,
     "newlyAddedPaperVariants": 12,
-    "newlyAddedPhysicalMappings": 254,
+    "newlyAddedPhysicalMappings": 256,
     "emptyReferenceTopics": [
       "spanish-higher-oral-exam",
       "spanish-higher-write-a-dialogue",
@@ -2517,7 +2517,9 @@
         "kind": "written",
         "fileid": "LC012ALP000EV.pdf",
         "questionNumbers": [
-          "6"
+          "6",
+          "8",
+          "A1b4"
         ]
       }
     },
@@ -3296,7 +3298,6 @@
         "questionNumbers": [
           "2",
           "7",
-          "8",
           "9"
         ]
       }
@@ -3317,7 +3318,6 @@
         "questionNumbers": [
           "2",
           "7",
-          "8",
           "9"
         ]
       }
@@ -13318,7 +13318,20 @@
       "kind": "written",
       "n": "8",
       "topicIds": [
-        "spanish-higher-short-comprehensions"
+        "spanish-higher-journalistic-text"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2020,
+      "fileid": "LC012ALP000EV.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "A1b4",
+      "topicIds": [
+        "spanish-higher-journalistic-text"
       ],
       "provenance": "reference"
     },
@@ -13619,7 +13632,20 @@
       "kind": "written",
       "n": "8",
       "topicIds": [
-        "spanish-higher-short-comprehensions"
+        "spanish-higher-journalistic-text"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2020,
+      "fileid": "LC012ALP000IV.pdf",
+      "paperKey": "single",
+      "kind": "written",
+      "n": "A1b4",
+      "topicIds": [
+        "spanish-higher-journalistic-text"
       ],
       "provenance": "retained-local"
     },
