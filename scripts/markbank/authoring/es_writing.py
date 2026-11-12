@@ -335,8 +335,22 @@ def grid_b5(year, level):
             band, desc = None, []
         else:
             desc.append(s)
-    return {'criteria': criteria, 'requirements': _sentences(notes), 'pages': pages,
-            'lines': [s for _p, s in block]}
+    requirements = _sentences(notes)
+    # The scheme's own rule tying the two criteria: "Where no marks are awarded
+    # for Content 1, (i.e. effort totally irrelevant), no marks will be awarded
+    # for Language 2." (2021 and 2022 print "will be award"). Where it is
+    # printed, Language is scored 0 while Content is 0 (FrenchCriterion.
+    # zeroWhenZero), and the line itself stays on the card as printed.
+    rule = next((r for r in requirements if ZERO_RULE.search(r)), None)
+    if rule:
+        for c in criteria:
+            if c['id'] == 'language':
+                c['zeroWhenZero'] = 'content'
+    return {'criteria': criteria, 'requirements': requirements, 'pages': pages,
+            'zeroRule': rule, 'lines': [s for _p, s in block]}
+
+
+ZERO_RULE = re.compile(r'no marks are awarded for Content\b.*no marks will be award(?:ed)? for Language\b', re.I)
 
 
 def _ladder(lines):
