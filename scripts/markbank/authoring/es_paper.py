@@ -310,6 +310,13 @@ def _dedup_words(page):
         cur = None
         for x0, x1, ch, y0, y1 in sorted(row['c']):
             if not ch.strip():
+                # A space breaks the word only where it stands clear of it: the
+                # 2011 Ordinary paper also paints runs of spaces on a second
+                # baseline OVER its bold instruction, and they cut "1. Lee" into
+                # "1 . L e e" (p2). A glyph that follows within a point of the
+                # word's end is still the word's.
+                if cur is not None and x0 < cur[2] - 0.5:
+                    continue
                 cur = None
                 continue
             if cur is not None and x0 - cur[2] <= 1.0:

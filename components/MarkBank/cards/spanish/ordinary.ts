@@ -2594,7 +2594,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2011 Ordinary Level — © State Examinations Commission.",
     id: "es-2011-ol-a-1-a", topicId: "spanish-5-2", conceptId: "septiembre-haran-alberto-ana",
     section: "A", questionRef: "2011 OL Section A Q1(a)",
-    stem: "L e e este artículo y contesta en ESPAÑOL a las preguntas.",
+    stem: "Lee este artículo y contesta en ESPAÑOL a las preguntas.",
     questionText: "¿En septiembre, qué harán Alberto y Ana?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -2618,7 +2618,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2011 Ordinary Level — © State Examinations Commission.",
     id: "es-2011-ol-a-1-b", topicId: "spanish-5-2", conceptId: "segun-senora-font-cual-problema-mas",
     section: "A", questionRef: "2011 OL Section A Q1(b)",
-    stem: "L e e este artículo y contesta en ESPAÑOL a las preguntas.",
+    stem: "Lee este artículo y contesta en ESPAÑOL a las preguntas.",
     questionText: "¿Según la Señora Font, cuál es el problema más grande que tienen los institutos?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -2642,7 +2642,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2011 Ordinary Level — © State Examinations Commission.",
     id: "es-2011-ol-a-1-c", topicId: "spanish-5-2", conceptId: "optan-unos-padres-sistema-educacion-tradicional",
     section: "A", questionRef: "2011 OL Section A Q1(c)",
-    stem: "L e e este artículo y contesta en ESPAÑOL a las preguntas.",
+    stem: "Lee este artículo y contesta en ESPAÑOL a las preguntas.",
     questionText: "¿Por qué no optan unos padres por el sistema de educación tradicional?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -2666,7 +2666,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2011 Ordinary Level — © State Examinations Commission.",
     id: "es-2011-ol-a-1-d", topicId: "spanish-5-2", conceptId: "cual-ventajas-estudiar-casa",
     section: "A", questionRef: "2011 OL Section A Q1(d)",
-    stem: "L e e este artículo y contesta en ESPAÑOL a las preguntas.",
+    stem: "Lee este artículo y contesta en ESPAÑOL a las preguntas.",
     questionText: "¿Cuál es una de las ventajas de estudiar en casa?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -2690,7 +2690,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2011 Ordinary Level — © State Examinations Commission.",
     id: "es-2011-ol-a-1-e-i", topicId: "spanish-5-2", conceptId: "cuales-son-asignaturas-favoritas-ana",
     section: "A", questionRef: "2011 OL Section A Q1(e)(i)",
-    stem: "L e e este artículo y contesta en ESPAÑOL a las preguntas.",
+    stem: "Lee este artículo y contesta en ESPAÑOL a las preguntas.",
     questionText: "¿Cuales son las asignaturas favoritas de:\n(i) Ana?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -2714,7 +2714,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2011 Ordinary Level — © State Examinations Commission.",
     id: "es-2011-ol-a-1-e-ii", topicId: "spanish-5-2", conceptId: "cuales-son-asignaturas-favoritas-alberto",
     section: "A", questionRef: "2011 OL Section A Q1(e)(ii)",
-    stem: "L e e este artículo y contesta en ESPAÑOL a las preguntas.",
+    stem: "Lee este artículo y contesta en ESPAÑOL a las preguntas.",
     questionText: "¿Cuales son las asignaturas favoritas de:\n(ii) Alberto?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -2738,7 +2738,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2011 Ordinary Level — © State Examinations Commission.",
     id: "es-2011-ol-a-1-f", topicId: "spanish-5-2", conceptId: "universidades-aceptan-mas-homeschoolers",
     section: "A", questionRef: "2011 OL Section A Q1(f)",
-    stem: "L e e este artículo y contesta en ESPAÑOL a las preguntas.",
+    stem: "Lee este artículo y contesta en ESPAÑOL a las preguntas.",
     questionText: "Las universidades aceptan más a los homeschoolers. ¿Por qué?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -2762,7 +2762,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2011 Ordinary Level — © State Examinations Commission.",
     id: "es-2011-ol-a-1-g", topicId: "spanish-5-2", conceptId: "como-sabemos-ana-alberto-son-buenos",
     section: "A", questionRef: "2011 OL Section A Q1(g)",
-    stem: "L e e este artículo y contesta en ESPAÑOL a las preguntas.",
+    stem: "Lee este artículo y contesta en ESPAÑOL a las preguntas.",
     questionText: "¿Cómo sabemos que Ana y Alberto son buenos estudiantes?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -2786,7 +2786,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2011 Ordinary Level — © State Examinations Commission.",
     id: "es-2011-ol-a-1-h", topicId: "spanish-5-2", conceptId: "opinan-expertos-nivel-ensenanza-imparten-senores",
     section: "A", questionRef: "2011 OL Section A Q1(h)",
-    stem: "L e e este artículo y contesta en ESPAÑOL a las preguntas.",
+    stem: "Lee este artículo y contesta en ESPAÑOL a las preguntas.",
     questionText: "¿Qué opinan los expertos sobre el nivel de enseñanza que imparten los señores Font?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -2810,7 +2810,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2011 Ordinary Level — © State Examinations Commission.",
     id: "es-2011-ol-a-1-i", topicId: "spanish-5-2", conceptId: "valores-sociales-aprenden-alumnos-colegio",
     section: "A", questionRef: "2011 OL Section A Q1(i)",
-    stem: "L e e este artículo y contesta en ESPAÑOL a las preguntas.",
+    stem: "Lee este artículo y contesta en ESPAÑOL a las preguntas.",
     questionText: "¿Qué valores sociales aprenden los alumnos en un colegio?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
