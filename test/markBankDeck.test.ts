@@ -31,7 +31,6 @@ import { reviewedHomeEconomicsSourceMetadata } from '../scripts/markbank/homeEco
 
 // These assertions join committed deck/Atlas/scheme identities. Original PDF
 // hashes remain mandatory in authoring; optional corpus tests verify those bytes.
-import { audioQuestionPaperFileid } from '../scripts/markbank/audioMaterial.mjs';
 import { createHash } from 'node:crypto';
 
 import { STRANDS, CHEMISTRY_STRANDS, PHYSICS_STRANDS, ALL_TOPICS, SUBJECTS, BLOCKED_FIGURES, deckSize } from '../components/MarkBank/deck';
