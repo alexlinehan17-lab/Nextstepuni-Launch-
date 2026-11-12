@@ -1,10 +1,10 @@
-"""Recover missing ToUnicode only in two hash-pinned original Japanese PDFs.
+"""Recover missing ToUnicode only in three hash-pinned original Japanese PDFs.
 
 The repair table uses identical embedded TrueType glyph outlines in original
 PDFs and one independently read original-image glyph, bound to its exact
-page, font, glyph ID and origin. The 2014 Ordinary CFF scheme uses separately
+page, font, glyph ID and origin. The 2014 Ordinary and 2010 Higher CFF schemes use
 reviewed original-image glyph proofs and proven zero-ink spaces. Every source
-path and hash is retained. Known characters and every other PDF are unchanged.
+path and hash is retained. Known trace characters and every other PDF are unchanged.
 Missing derivation fails.
 """
 import hashlib
@@ -14,6 +14,7 @@ from pathlib import Path
 
 MANIFEST = Path(__file__).with_name('glyphmap-japanese-2017.json')
 SCHEME_MANIFEST = Path(__file__).with_name('glyphmap-japanese-2014-ol.json')
+EARLY_SCHEME_MANIFEST = Path(__file__).with_name('glyphmap-japanese-2010-hl.json')
 
 
 @lru_cache(maxsize=1)
@@ -26,10 +27,15 @@ def scheme_manifest():
     return json.loads(SCHEME_MANIFEST.read_text())
 
 
+@lru_cache(maxsize=1)
+def early_scheme_manifest():
+    return json.loads(EARLY_SCHEME_MANIFEST.read_text())
+
+
 @lru_cache(maxsize=64)
 def document_repairs(name, modified, size):
     digest = hashlib.sha256(Path(name).read_bytes()).hexdigest()
-    for data in [manifest(), scheme_manifest()]:
+    for data in [manifest(), scheme_manifest(), early_scheme_manifest()]:
         if digest == data['sha256']:
             return data
     return None

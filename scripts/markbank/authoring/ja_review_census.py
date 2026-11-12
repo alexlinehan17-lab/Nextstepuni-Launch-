@@ -40,5 +40,11 @@ def reviewed_census(year, level):
         'listening': sum(t['marks'] for t in tasks if t['component'] == 'aural'),
         'total': sum(t['marks'] for t in tasks),
     }
+    if (year, level) == (2010, 'hl'):
+        # This original paper explicitly has SIX questions: Q1–3 reading100,
+        # Q4 grammar20, Q5–6 writing100, plus the separate listening80 booklet.
+        # Later sittings' five-question checksum remains exactly as before.
+        totals['grammar'] = sum(t['marks'] for t in tasks if t['key'][0][0] == '4')
+        totals['writing'] = sum(t['marks'] for t in tasks if t['key'][0][0] in '56')
     assert totals == review['checksums'], f'{path}: printed totals do not reconcile'
     return review

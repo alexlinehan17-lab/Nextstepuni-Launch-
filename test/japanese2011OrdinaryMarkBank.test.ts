@@ -74,6 +74,8 @@ describe('Japanese 2011 Ordinary original-source review', () => {
     for (const value of [0, 0.5, 1]) expect(marksClaimed(found, { 'r-1': value })).toBe(value);
     expect(marksClaimed(found, { 'r-1': 0.25 })).toBe(0);
     const original = review.cards.find(card => card.id === found.id)!;
+    const originalRow = original.rows![0];
+    if (!('contextNote' in originalRow) || !originalRow.contextNote) throw new Error('Missing original Naeba guidance');
     expect(() => assertJapaneseNaebaException(original, review)).not.toThrow();
     for (const patch of [
       { id: 'ja-2011-ol-1-2-i' }, { year: 2012 }, { totalMarks: 2 },
@@ -82,7 +84,7 @@ describe('Japanese 2011 Ordinary original-source review', () => {
       { sourceEvidence: { ...original.sourceEvidence, schemePages: [5] } },
       { sourceEvidence: { ...original.sourceEvidence, component: 'aural' } },
       { rows: [{ ...original.rows![0], permittedMarks: [0, 1] }] },
-      { rows: [{ ...original.rows![0], contextNote: original.rows![0].contextNote!.replace('0 for Hiragana', '0.5 for Hiragana') }] },
+      { rows: [{ ...original.rows![0], contextNote: originalRow.contextNote.replace('0 for Hiragana', '0.5 for Hiragana') }] },
     ]) expect(() => assertJapaneseNaebaException({ ...original, ...patch }, review)).toThrow();
     for (const changed of [
       { ...review, selectors: review.selectors.filter(selector => !('parts' in selector) || !selector.text.startsWith('(Half marks if not answered')) },
@@ -113,6 +115,8 @@ describe('Japanese 2011 Ordinary original-source review', () => {
 
   it('binds the single kanji correction to both literal sources and the same option letter', () => {
     const original = review.cards.find(card => card.id === 'ja-2011-ol-2c')!;
+    const originalRow = original.rows![0];
+    if (!('contextNote' in originalRow) || !originalRow.contextNote) throw new Error('Missing original kanji correction');
     expect([...japaneseBoundBankAnswers(original, review)]).toEqual(['b. にほん']);
     for (const changed of [
       { ...review, sourceAnswerBindings: [] },
@@ -124,8 +128,8 @@ describe('Japanese 2011 Ordinary original-source review', () => {
     ]) expect(() => japaneseBoundBankAnswers(original, changed)).toThrow();
     for (const patch of [
       { verbatim: 'a. にはん' }, { marks: 2 },
-      { contextNote: original.rows![0].contextNote!.replace('b.  にはん', 'b. にほん') },
-      { contextNote: original.rows![0].contextNote!.replace('b. にほん', 'an unspecified option') },
+      { contextNote: originalRow.contextNote.replace('b.  にはん', 'b. にほん') },
+      { contextNote: originalRow.contextNote.replace('b. にほん', 'an unspecified option') },
     ]) expect(() => japaneseBoundBankAnswers({ ...original, rows: [{ ...original.rows![0], ...patch }, ...original.rows!.slice(1)] }, review)).toThrow();
   });
 

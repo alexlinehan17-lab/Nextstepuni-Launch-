@@ -11,11 +11,11 @@
     "matchedHeadingAssociations": 230,
     "sourceBlockedHeadingAssociations": 2,
     "matchedLocalCardLinks": 436,
-    "localPaperVariants": 95,
-    "hostedPaperAnchorMaps": 95,
-    "localQuestionMappings": 1345,
+    "localPaperVariants": 96,
+    "hostedPaperAnchorMaps": 96,
+    "localQuestionMappings": 1365,
     "referenceMappedLocalQuestions": 388,
-    "retainedLocalQuestions": 957,
+    "retainedLocalQuestions": 977,
     "preservedBaselinePaperVariants": 93,
     "preservedBaselineCards": 1329
   },
@@ -16067,6 +16067,90 @@
     },
     {
       "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALP000EV.pdf",
+      "paperKey": "single",
+      "n": "4",
+      "topicIds": [
+        "japanese-common-translation-japanese-to-english"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALP000EV.pdf",
+      "paperKey": "single",
+      "n": "5",
+      "topicIds": [
+        "japanese-common-kanji"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALP000EV.pdf",
+      "paperKey": "single",
+      "n": "6",
+      "topicIds": [
+        "japanese-common-comprehension-general-reading"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALP000EV.pdf",
+      "paperKey": "single",
+      "n": "7",
+      "topicIds": [
+        "japanese-common-kanji"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALP000EV.pdf",
+      "paperKey": "single",
+      "n": "8",
+      "topicIds": [
+        "japanese-common-grammar"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALP000EV.pdf",
+      "paperKey": "single",
+      "n": "9",
+      "topicIds": [
+        "japanese-common-personal-writing-all"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALP000EV.pdf",
+      "paperKey": "single",
+      "n": "10",
+      "topicIds": [
+        "japanese-common-personal-writing-all"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
       "lang": "iv",
       "year": 2010,
       "fileid": "LC058ALP000IV.pdf",
@@ -19864,6 +19948,162 @@
       "fileid": "LC058GLPA00EV.pdf",
       "paperKey": "aural",
       "n": "4",
+      "topicIds": [
+        "japanese-common-aural-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALPA00EV.pdf",
+      "paperKey": "aural",
+      "n": "1",
+      "topicIds": [
+        "japanese-common-aural-interviewspeech"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALPA00EV.pdf",
+      "paperKey": "aural",
+      "n": "2",
+      "topicIds": [
+        "japanese-common-aural-interviewspeech"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALPA00EV.pdf",
+      "paperKey": "aural",
+      "n": "3",
+      "topicIds": [
+        "japanese-common-aural-interviewspeech"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALPA00EV.pdf",
+      "paperKey": "aural",
+      "n": "4",
+      "topicIds": [
+        "japanese-common-aural-interviewspeech"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALPA00EV.pdf",
+      "paperKey": "aural",
+      "n": "5",
+      "topicIds": [
+        "japanese-common-aural-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALPA00EV.pdf",
+      "paperKey": "aural",
+      "n": "6",
+      "topicIds": [
+        "japanese-common-aural-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALPA00EV.pdf",
+      "paperKey": "aural",
+      "n": "7",
+      "topicIds": [
+        "japanese-common-aural-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALPA00EV.pdf",
+      "paperKey": "aural",
+      "n": "8",
+      "topicIds": [
+        "japanese-common-aural-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALPA00EV.pdf",
+      "paperKey": "aural",
+      "n": "9",
+      "topicIds": [
+        "japanese-common-aural-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALPA00EV.pdf",
+      "paperKey": "aural",
+      "n": "10",
+      "topicIds": [
+        "japanese-common-aural-interviewspeech"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALPA00EV.pdf",
+      "paperKey": "aural",
+      "n": "11",
+      "topicIds": [
+        "japanese-common-aural-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALPA00EV.pdf",
+      "paperKey": "aural",
+      "n": "12",
+      "topicIds": [
+        "japanese-common-aural-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "fileid": "LC058ALPA00EV.pdf",
+      "paperKey": "aural",
+      "n": "13",
       "topicIds": [
         "japanese-common-aural-conversation"
       ],

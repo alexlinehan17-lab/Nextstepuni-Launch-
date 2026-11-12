@@ -2996,6 +2996,34 @@
    {
     "n": "3",
     "primary": "japanese-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-6"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-7"
    }
   ]
  },
@@ -3562,6 +3590,68 @@
    },
    {
     "n": "4",
+    "primary": "japanese-6-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC058ALPA00EV.pdf",
+  "paperKey": "aural",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-6-1"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-6-1"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-6-1"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-6-1"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-6-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-6-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-6-0"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-6-0"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-6-0"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-6-1"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-6-0"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-6-0"
+   },
+   {
+    "n": "13",
     "primary": "japanese-6-0"
    }
   ]
