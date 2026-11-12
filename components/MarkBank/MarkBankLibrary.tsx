@@ -23,7 +23,7 @@ import { markBankCurriculumMenu } from './curriculumMenu';
 import { SUBJECTS, LEVEL_LABEL, levelsFor, type Level } from './deck';
 import { completeListeningExercises, resolveSessionQueue } from './sessionPlanning';
 import type { DeckState } from './store';
-import type { SecCard } from '../../types/markBank';
+import { isPointCard, type SecCard } from '../../types/markBank';
 import './mark-bank-library.css';
 
 const serial = (n:number)=>String(n).padStart(2,'0');
@@ -177,7 +177,7 @@ export default function MarkBankLibrary({examDate,subjectId,level,cards,state,no
                 <p className="mb-start-note">Write an answer. Then open the scheme.</p>
                 <div className="mb-in-file">
                   <p className="mb-kicker">INSIDE THIS TOPIC</p>
-                  <ul>{selectedCards.slice(0,3).map((sample, index) => <li key={sample.id}><button type="button" className="mb-sample" onClick={() => begin(index)}><span className="mb-sample-copy"><strong>{sample.stem || selected.title}</strong><small>{sample.questionRef}</small></span><span className="mb-sample-marks">{sample.totalMarks}<small>marks</small></span></button></li>)}</ul>
+                  <ul>{selectedCards.slice(0,3).map((sample, index) => <li key={sample.id}><button type="button" className="mb-sample" onClick={() => begin(index)}><span className="mb-sample-copy"><strong>{sample.stem || selected.title}</strong><small>{sample.questionRef}</small></span><span className="mb-sample-marks">{isPointCard(sample) && sample.tariffModel.kind === 'questionTotal' ? <small>Confidence review</small> : <>{sample.totalMarks}<small>marks</small></>}</span></button></li>)}</ul>
                 </div>
               </> : <div className="mb-empty-topic"><p>No questions are available for this topic in the current corpus.</p><p>You can still explore the rest of the subject index.</p></div>}
             </>}
