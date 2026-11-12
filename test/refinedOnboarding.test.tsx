@@ -12,7 +12,7 @@ const key = draftKey(uid, 'fresh');
 function reviewDraft(): SetupDraft {
   return { ...initialDraft(), step: 'summary', year: '6th', category: 'college-learning', vision: ['campus'], subjects: ['English', 'Irish', 'Japanese'],
     configs: { English: { level: 'ordinary', current: 'O2', target: 'O1', reviewed: true }, Irish: { level: 'higher', current: 'H3', target: 'H1', reviewed: true }, Japanese: { level: 'higher', current: 'H3', target: 'H1', reviewed: true } },
-    date: '2030-06-05', dateConfirmed: true, rest: ['Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], gradeSubject: 'English' };
+    date: '2030-06-05', dateEdited: true, rest: ['Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], gradeSubject: 'English' };
 }
 function mount(draft?: SetupDraft, complete = vi.fn()) {
   if (draft) localStorage.setItem(key, JSON.stringify(draft));
@@ -49,11 +49,11 @@ describe('approved onboarding model', () => {
     draft.configs.English = { level: 'higher', current: 'H1', target: 'H3', reviewed: true };
     expect(buildProfile(draft).subjects[0]).toMatchObject({ currentGrade: 'H1', targetGrade: 'H3' });
   });
-  it('migrates old auto-filled drafts as unreviewed and requires date confirmation', () => {
+  it('migrates old auto-filled grades as unreviewed and keeps the saved exam date', () => {
     localStorage.setItem(legacyDraftKey(uid, 'fresh'), JSON.stringify({ version: 1, step: 9, yearGroup: '6th', selectedSubjects: ['English'], subjectConfigs: { English: { level: 'higher', currentGrade: 'H4', targetGrade: 'H2' } }, examDate: '2030-06-05', restDays: ['Sunday'] }));
     const draft = readDraft(uid, 'fresh');
     expect(draft.configs.English).toMatchObject({ current: 'H4', target: 'H2', reviewed: false });
-    expect(draft.dateConfirmed).toBe(false);
+    expect(draft.dateEdited).toBe(false);
     expect(pointsFor(draft).count).toBe(0);
   });
   it('recovers safely from malformed local storage and isolates accounts', () => {
@@ -141,11 +141,12 @@ describe('approved onboarding interactions', () => {
     expect(monday.textContent).toBe('MonRest');
     expect(screen.getByRole('button', { name: 'Continue' })).toBeDisabled();
   });
-  it('resets date confirmation after changing the date', () => {
+  it('accepts a changed future date without a confirmation checkbox', () => {
     mount({ ...reviewDraft(), step: 'schedule' });
     fireEvent.change(screen.getByLabelText('Your exam date'), { target: { value: '2030-06-06' } });
-    expect(screen.getByRole('checkbox')).not.toBeChecked();
-    expect(screen.getByRole('button', { name: 'Continue' })).toBeDisabled();
+    expect(screen.queryByRole('checkbox')).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Continue' })).toBeEnabled();
+    expect(JSON.parse(localStorage.getItem(key)!).date).toBe('2030-06-06');
   });
   it('cancel restores the review and does not persist provisional edits', async () => {
     const draft = reviewDraft(); mount(draft);

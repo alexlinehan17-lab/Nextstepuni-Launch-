@@ -18,7 +18,7 @@ import { useSettingsContext } from '../../contexts/SettingsContext';
 import type { StudentSubjectProfile, YearGroup } from '../subjectData';
 import type { NorthStar } from '../../types';
 import { canEditExamDate, examDateBounds, examDateProblem, summariseSetup } from './yourSetupModel';
-import { getDefaultExamDate } from '../../utils/examDates';
+import { getDefaultExamDateForYear } from '../../utils/examDates';
 import './your-setup.css';
 
 interface Props {
@@ -51,7 +51,7 @@ function Section({ index, title, action, className = '', children }: {
   );
 }
 
-function ExamDateEditor({ current, onSave }: { current: string | null; onSave: (examStartDate: string) => void }) {
+function ExamDateEditor({ current, year, onSave }: { current: string | null; year?: YearGroup; onSave: (examStartDate: string) => void }) {
   const [editing, setEditing] = useState(false);
   const [value, setValue] = useState('');
   const [problem, setProblem] = useState<string | null>(null);
@@ -60,7 +60,7 @@ function ExamDateEditor({ current, onSave }: { current: string | null; onSave: (
 
   if (!editing) {
     return (
-      <Button variant="outline" className="nsu-ink-outline ys-edit ys-date-edit" onClick={() => { setValue(current ?? getDefaultExamDate()); setProblem(null); setEditing(true); }}>
+      <Button variant="outline" className="nsu-ink-outline ys-edit ys-date-edit" onClick={() => { setValue(current ?? getDefaultExamDateForYear(year)); setProblem(null); setEditing(true); }}>
         {current ? 'Change exam date' : 'Set exam date'}<CalendarDays aria-hidden="true" />
       </Button>
     );
@@ -91,7 +91,7 @@ function ExamDateEditor({ current, onSave }: { current: string | null; onSave: (
         aria-describedby={`${id}-hint${problem ? ` ${id}-problem` : ''}`}
         onChange={event => { setValue(event.target.value); setProblem(null); }}
       />
-      <p id={`${id}-hint`} className="ys-meta">The Leaving Cert and Junior Cycle usually start on the first Wednesday of June.</p>
+      <p id={`${id}-hint`} className="ys-meta">Choose the date you’re working towards. You can change it again whenever you need to.</p>
       {problem && <p id={`${id}-problem`} className="ys-date-problem" role="alert">{problem}</p>}
       <div className="ys-date-actions">
         <Button type="submit" className="ys-primary">Save date</Button>
@@ -158,7 +158,7 @@ export default function YourSetupView({
                 </dl>
               )}
               {profile && onSaveExamDate && canEditExamDate(yearGroup ?? profile.yearGroup) && (
-                <div className="ys-date"><ExamDateEditor current={profile.examStartDate} onSave={onSaveExamDate} /></div>
+                <div className="ys-date"><ExamDateEditor current={profile.examStartDate} year={yearGroup ?? profile.yearGroup} onSave={onSaveExamDate} /></div>
               )}
             </Section>
 

@@ -40,3 +40,17 @@ export function getDefaultExamDate(today: Date = new Date()): string {
   if (examStart <= midnight) examStart = firstWednesdayOfJune(midnight.getFullYear() + 1);
   return toLocalISODate(examStart);
 }
+
+/** Product planning dates requested for the current Leaving Cert cohorts.
+ * These are editable defaults, not a published exam timetable. Other
+ * programmes retain their existing default. */
+export function getDefaultExamDateForYear(yearGroup: string | null | undefined, today: Date = new Date()): string {
+  if (yearGroup !== '5th' && yearGroup !== '6th') return getDefaultExamDate(today);
+  const academicEndYear = today.getFullYear() + (today.getMonth() >= 7 ? 1 : 0);
+  let examYear = academicEndYear + (yearGroup === '5th' ? 1 : 0);
+  const configured: Record<number, string> = { 2027: '2027-06-09', 2028: '2028-06-03' };
+  const dateFor = (year: number) => configured[year] ?? toLocalISODate(firstWednesdayOfJune(year));
+  const todayISO = toLocalISODate(today);
+  while (dateFor(examYear) <= todayISO) examYear += 1;
+  return dateFor(examYear);
+}
