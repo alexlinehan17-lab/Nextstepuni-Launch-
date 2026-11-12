@@ -33,7 +33,7 @@ describe('Russian 2018 confidence-only integration', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Reveal the marking scheme' }));
     await waitFor(() => expect(screen.getByText(/Confidence review: the whole question/)).toBeVisible());
     expect(screen.getAllByText(/between 9 and 14 \(9-11; 12-14; 15-16\)/)[0]).toBeVisible();
-    expect(screen.getAllByText(/lower A 15-16 lower E 12-14/)[0]).toBeVisible();
+    await waitFor(() => expect(screen.getAllByText(/lower A 15-16 lower E 12-14/)[0]).toBeVisible());
     expect(screen.queryByText(/Assess.*against.*30.mark total/)).not.toBeInTheDocument();
     expect(screen.getByText(/Review your complete answer against the source guidance/)).toBeVisible();
     expect(screen.queryByRole('button', { name: /^Claim \d+ marks/ })).not.toBeInTheDocument();
