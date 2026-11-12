@@ -161,7 +161,8 @@ def _writing_n(level, section, q, letter):
 # Printed questions the answer map never anchored, given an Atlas question of
 # their own numbered by their printed address (build-spanish-exam-topic-
 # crosswalk.mjs adds them): 2020 Higher journalistic Q4.
-EXTRA_N = {(2020, 'hl', 'A1b', 4): 'A1b4', (2025, 'hl', 'A1b', 4): 'A1b4'}
+EXTRA_N = {(2020, 'hl', 'A1b', 4): 'A1b4', (2025, 'hl', 'A1b', 4): 'A1b4',
+           (2024, 'hl', 'A1b', 4): 'A1b4'}
 
 
 FILEID = {('hl', 'written'): 'LC012ALP000EV.pdf', ('ol', 'written'): 'LC012GLP000EV.pdf',

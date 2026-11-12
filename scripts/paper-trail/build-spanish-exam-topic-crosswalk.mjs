@@ -438,6 +438,7 @@ for (let year = 2010; year <= 2026; year++) {
 // … sa SPÁINNIS", "2. Freagair (a) IONTRÁIL DIALAINNE nó (b) NÓTA"), checked
 // on both for every year listed.
 const HIGHER_WRITING_PAGES = {
+  2024: { b5: 14, c2: 21 },
   2025: { b5: 14, c2: 21 },
   2020: { b5: 9, c2: 13 },
   2026: { b5: 14, c2: 21 },
@@ -466,6 +467,7 @@ for (const [year, pages] of Object.entries(HIGHER_WRITING_PAGES)) {
 for (const extra of [
   { year: 2020, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · Texto periodístico (Glovo) · Q4', semantic: 'higher-journalistic', page: 5 },
   { year: 2025, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · Q1(b) Journalistic Text · Q4', semantic: 'higher-journalistic', page: 10 },
+  { year: 2024, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · 1(b) Journalistic · Q4', semantic: 'higher-journalistic', page: 10 },
 ]) {
   for (const lang of extra.langs) {
     const paper = findPaper(extra.year, 'higher', lang, 'written');
