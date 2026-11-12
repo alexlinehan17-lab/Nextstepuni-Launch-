@@ -1,0 +1,77 @@
+{
+  "name": "Russian2019 remaining220 runtime assertions",
+  "permissions": {
+    "contents": "read"
+  },
+  "on": {
+    "push": {
+      "branches": [
+        "codex/markbank-verify-russian2019-20261112"
+      ]
+    }
+  },
+  "concurrency": {
+    "group": "codex/markbank-verify-russian2019-20261112",
+    "cancel-in-progress": false
+  },
+  "jobs": {
+    "verify-candidate": {
+      "runs-on": "ubuntu-latest",
+      "timeout-minutes": 20,
+      "env": {
+        "VITEST_MAX_WORKERS": "1"
+      },
+      "steps": [
+        {
+          "uses": "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "with": {
+            "fetch-depth": 2
+          }
+        },
+        {
+          "name": "Verify exact candidate and workflow-only change",
+          "id": "integrity",
+          "shell": "bash",
+          "run": "test \"$(git rev-parse HEAD^)\" = e5b03d9f38dbefee15dd1acfb5ff1ab7d2df76ac\ntest \"$(git diff --name-only HEAD^ HEAD)\" = .github/workflows/markbank-russian2019-20261112.yml\ngit show --no-patch --format=fuller HEAD"
+        },
+        {
+          "uses": "actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+          "with": {
+            "node-version": 22,
+            "cache": "npm"
+          }
+        },
+        {
+          "name": "Install dependencies",
+          "id": "dependencies",
+          "run": "npm ci"
+        },
+        {
+          "name": "Required card preservation112",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "node --max-old-space-size=2048 node_modules/vitest/vitest.mjs run test/markBankCardPreservation.test.ts --pool=forks --maxWorkers=1 --no-file-parallelism --reporter=default"
+        },
+        {
+          "name": "Final canonical curriculum case",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "node --max-old-space-size=2048 node_modules/vitest/vitest.mjs run test/curriculumRegistry.test.ts --pool=forks --maxWorkers=1 --no-file-parallelism -t \"resolves every Mark Bank card into the correct canonical specification\" --reporter=default"
+        },
+        {
+          "name": "Required deck104",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "node --max-old-space-size=2048 node_modules/vitest/vitest.mjs run test/markBankDeck.test.ts --pool=forks --maxWorkers=1 --no-file-parallelism --reporter=default"
+        },
+        {
+          "name": "Russian coverage3",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "node --max-old-space-size=2048 node_modules/vitest/vitest.mjs run test/markBankCoverage.test.ts --pool=forks --maxWorkers=1 --no-file-parallelism -t russian --reporter=default"
+        },
+        {
+          "name": "Verify tracked files stayed unchanged",
+          "if": "${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.integrity.outcome == 'success' }}",
+          "run": "git diff --exit-code"
+        }
+      ]
+    }
+  }
+}
