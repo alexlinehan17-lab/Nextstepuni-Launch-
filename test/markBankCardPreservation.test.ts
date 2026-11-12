@@ -735,9 +735,30 @@ const decks = [
   ['geography:ordinary', GEOGRAPHY_ORDINARY, 309, '350dc90c7120b0efe314d07115ceb88f3ea49a55d79a55b48b819c188068cee7'],
   /* Recovered from the completed Computer Science authoring branch and rebuilt
    * through the same source, tariff, figure and structural guards as every
-   * other subject. */
-  ['computer-science:higher', COMPUTER_SCIENCE_HIGHER, 209, '1030050a22b237ea5ab74477d630b55d18620313c352fe167eb91691ae933abd'],
-  ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 127, '15c1f77f5c96c66290a8f9d59845a12aa4c851a8b5177410f08a651146332731'],
+   * other subject.
+   * 2026-11-05, the every-printed-ask lane (compsci_lane.py, one module per
+   * sitting): the 336 shipped cards are unchanged and keep their ids; each
+   * sitting's open asks are added on top. 2026 Higher, 48 asks, 48 cards:
+   * 209 -> 257. 2026 Ordinary, 41 asks, 41 cards: 127 -> 168.
+   * 2025 Higher, the 15 asks the August cards missed: 257 -> 272.
+   * 2025 Ordinary, the 8 asks the August cards missed: 168 -> 176.
+   * 2024 Higher, the 3 asks the August cards missed: 272 -> 275.
+   * 2024 Ordinary, the 3 asks the August cards missed: 176 -> 179.
+   * 2023 Higher, the 10 asks the August cards missed: 275 -> 285.
+   * 2023 Ordinary, the 10 asks the August cards missed: 179 -> 189.
+   * 2022 Higher, the 8 asks the August cards missed: 285 -> 293.
+   * 2022 Ordinary, the 16 asks the August cards missed: 189 -> 205.
+   * 2021 Higher, the 9 asks the August cards missed: 293 -> 302.
+   * 2021 Ordinary, the 4 asks the August cards missed: 205 -> 209.
+   * 2020 Higher, every printed ask (the bank held none): 302 -> 349.
+   * 2023 Ordinary Q13 split (coordinator, 5 Nov): cs-2023-ol-q13, a card for all of Q13 beside its part cards, withdrawn and aliased onto cs-2023-ol-q13-b-i; (b)(i)-(iv) and (c)(i) carded: 209 -> 213.
+   * 2025 Ordinary re-authored (batch 1b); its whole-question cards cs-2025-ol-q13, -q14 and -q15 split per the coordinator's ruling of 5 Nov and withdrawn onto -q13-a-ii, -q14-c and -q15-b-i: 213 -> 215.
+   * 2022 Higher re-authored (batch 1b); its whole-question card cs-2022-hl-q14 split per the coordinator's ruling of 5 Nov and withdrawn onto -q14-a-i: 349 -> 350.
+   * 2022 Ordinary re-authored (batch 1b); its Section C card cs-2022-ol-q16 (seven parts, over the six-row cap) split into Q16(a)(i)-(vii) and withdrawn onto -q16-a-i: 215 -> 221.
+   * 2024 Ordinary re-authored (batch 1b); its whole-question card cs-2024-ol-q16, beside cs-2024-ol-q16-b, split per the coordinator's ruling of 5 Nov into Q16(a)(i)-(vi) and withdrawn onto -q16-a-i: 221 -> 226.
+   * 2021 Ordinary re-authored (batch 1b); cs-2021-ol-q15 (whole Q15 beside its part cards) withdrawn onto -q15-b-i and cs-2021-ol-q16 (whole Section C, seven parts) onto -q16-a-i, per the coordinator's ruling of 5 Nov: 226 -> 232. */
+  ['computer-science:higher', COMPUTER_SCIENCE_HIGHER, 350, '909b43be51e58055828602aafa0b8ee95b8735dbc7d18422b15f89a8374a4249'],
+  ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 232, '73a289b4847405f7c65dfc4fb6b2fa059345d43a855e4c87ad2910e3ebad1ba1'],
   /* Engineering landed after this test's previous update. Enrol it explicitly
    * so a later regeneration cannot silently omit or replace any of its cards. */
   /* 2026-09-11: five agents, one per sitting, worked Engineering's open asks
@@ -772,9 +793,41 @@ const decks = [
   ['engineering:ordinary', ENGINEERING_ORDINARY, 194, '4db6b2da1890e2bb262ee816e1bbb8d97e86ead5cb99531609170a75594a075b'],
   /* 2026-09-10: Religious Education, the sixteenth subject, lands complete —
    * 288 cards against the 288 asks its ten papers print, every one of them
-   * added and none replacing anything. Nothing in any other deck moved. */
-  ['religious-education:higher', RE_HIGHER, 135, '9a6117ccc7be90492858b10d071528bbfee33de42ec8a368c51d6e2c76c596f3'],
-  ['religious-education:ordinary', RE_ORDINARY, 153, 'ebad0ef90313b7b75bfb75aecca5c93c5372ee0745f58ffc407481bf74ee5569'],
+   * added and none replacing anything. Nothing in any other deck moved.
+   * 2026-11-05: the RE lane builds a sitting at a time as band-grid cards (re_lane.py, rubric-authored.json), ids kept. 2026 Higher, 28 cards, added.
+   * 2026 Ordinary, 29 band-grid cards, added.
+   * 2025 Higher's 28 point cards rebuilt as band-grid cards, ids kept; nothing withdrawn.
+   * 2025 Ordinary's 33 point cards rebuilt as band-grid cards, ids kept; nothing withdrawn.
+   * 2020 Higher, 25 band-grid cards, added.
+   * 2019 Higher, 24 band-grid cards, added; I(b)(i) held for a ruling, no card.
+   * 2019 Ordinary, 23 band-grid cards, added.
+   * 2018 Higher, 22 band-grid cards, added; B(a)(i) held for a ruling, no card.
+   * 2018 Ordinary, 27 band-grid cards, added.
+   * 2019 Higher I(b)(i) and 2018 Higher B(a)(i), held for the overlapping-band ruling, added: 2 band-grid cards.
+   * 2017 Higher, 21 band-grid cards, added.
+   * 2017 Ordinary, 25 band-grid cards, added; C(a) held.
+   * 2016 Higher, 18 band-grid cards, added.
+   * 2016 Ordinary, 20 band-grid cards, added; six held.
+   * 2015 Higher, 23 band-grid cards, added; B(a)(ii) held.
+   * 2015 Ordinary, 26 band-grid cards, added.
+   * 2014 Higher, 19 band-grid cards, added.
+   * 2014 Ordinary, 20 band-grid cards, added; three held.
+   * 2017 Higher re-read with the Question Descriptor table; ids kept.
+   * 2017 Ordinary C(a), held for the 10-mark ruling, added.
+   * 2016 Higher re-read with the Question Descriptor table; ids kept.
+   * 2016 Ordinary's six held 10-mark asks added.
+   * 2015 Higher B(a)(ii), held for the 10-mark ruling, added.
+   * 2015 Ordinary re-read with the Question Descriptor table; ids kept.
+   * 2014 Higher re-read with the Question Descriptor table; ids kept.
+   * 2014 Ordinary's three held 10-mark asks added.
+   * 2012 Higher, 20 band-grid cards, added.
+   * 2012 Ordinary, 25 band-grid cards, added.
+   * 2011 Higher, 20 band-grid cards, added.
+   * 2011 Ordinary, 24 band-grid cards, added.
+   * 2010 Higher, 19 band-grid cards, added.
+   * 2010 Ordinary, 27 band-grid cards, added; RE 786/786. */
+  ['religious-education:higher', RE_HIGHER, 377, 'e1ddd166820471f24d92b0f1dd503e76b88358236a711083e810180cd3039082'],
+  ['religious-education:ordinary', RE_ORDINARY, 409, '5636dcd4ddba13d3760eee5d50ba7075a5fc3df46bb4c2c6490ad6c0ead11da4'],
   /* 2026-09-10: LCVP's Link Modules enrolled, 321 cards, NONE removed or
    * replaced — it is a new subject and this is its first baseline. It ships
    * as ONE deck because the paper is common level: there is no Higher or
@@ -1018,6 +1071,8 @@ const decks = [
   ['accounting:ordinary', ACCOUNTING_ORDINARY, 644, '0a35e37e0360979df909459b44024d1a62b749b268594b214bf620ebaf18db86'],
 ] as const;
 
+// [count, idHash] of eng_residue/additions.json, re-pinned as each sitting lands.
+const ENGINEERING_ADDITIONS = [1715, 'c1ec971168a80aeb0ede9e80cded118f1e330946232b46c222b750ca3fbc5501'] as const;
 const idHash = (ids: readonly string[]) => createHash('sha256')
   .update([...ids].sort().join('\n'))
   .digest('hex');
@@ -1064,6 +1119,11 @@ const ART_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2010: { higher: 58, ordinary: 57 },
 };
 const isArtAdded = (id: string) => Number(id.slice(4, 8)) in ART_ADDED;
+/* Technology (the 2010-2019 lane, from 2026-11-04): every 2010-2019 card is an
+ * addition on top of the frozen 2020-2026 set, never a replacement -- those
+ * sittings had no card at all before. Pinned per level, count and id hash,
+ * beside the frozen set (technologyAdditions below). */
+const isTechnologyAdded = (id: string) => /^tech-201\d-/.test(id);
 /* Design & Communication Graphics (the 2010-2018 lane, from 2026-11-05):
  * every 2010-2018 card is an addition on top of the frozen 2019-2026 set,
  * never a replacement -- those sittings had no card at all before. Pinned per
@@ -1086,6 +1146,13 @@ const businessAdditionIds = new Set([
   ...businessReviewed.cards,
   ...expandBusinessRoutePools(businessRoutePools.pools),
 ].map(card => card.id).filter(id => !businessOriginalIds.has(id)));
+// Engineering lane (2026-11-04 on): the 554 pre-lane cards stay frozen in the
+// deck pins; each sitting's added cards are listed in the lane's ledger
+// (scripts/markbank/authoring/eng_residue/additions.json) and counted on top,
+// pinned by their own count and hash below. Cards a sitting rebuilds under
+// their own ids are not additions and stay in the frozen hash.
+const engineeringAdditionIds = new Set<string>((JSON.parse(readFileSync(resolve(__dirname, '..',
+  'scripts/markbank/authoring/eng_residue/additions.json'), 'utf8')) as { ids: string[] }).ids);
 // Keep the original French count/hash frozen. Reviewed additions have their own
 // source-and-route audit in frenchWriting.test.ts; never rebaseline missing IDs.
 const frenchAdditionIds = new Set([
@@ -1189,6 +1256,407 @@ const economicsAdditionIds = new Set([
   'econ-2026-ol-sa-q5-advantage', 'econ-2026-ol-sa-q5-disadvantage', 'econ-2026-ol-sa-q6',
   'econ-2026-ol-sa-q7', 'econ-2026-ol-sa-q8-agree', 'econ-2026-ol-sa-q8-disagree',
   'econ-2026-ol-sa-q9',
+  // 2019 Higher (old syllabus, the paper's first cards, 2026-11-04): 70, none replacing a frozen ID
+  'econ-2019-hl-sa-q1-a', 'econ-2019-hl-sa-q1-b', 'econ-2019-hl-sa-q2', 'econ-2019-hl-sa-q3',
+  'econ-2019-hl-sa-q4', 'econ-2019-hl-sa-q5-i', 'econ-2019-hl-sa-q5-ii', 'econ-2019-hl-sa-q5-iii',
+  'econ-2019-hl-sa-q6', 'econ-2019-hl-sa-q7-a', 'econ-2019-hl-sa-q7-b', 'econ-2019-hl-sa-q8',
+  'econ-2019-hl-sa-q9-a', 'econ-2019-hl-sa-q9-b', 'econ-2019-hl-sb-q1-a-i', 'econ-2019-hl-sb-q1-a-ii',
+  'econ-2019-hl-sb-q1-b-i', 'econ-2019-hl-sb-q1-b-ii', 'econ-2019-hl-sb-q1-b-iii',
+  'econ-2019-hl-sb-q1-c-i', 'econ-2019-hl-sb-q1-c-ii', 'econ-2019-hl-sb-q2-a-i',
+  'econ-2019-hl-sb-q2-a-ii', 'econ-2019-hl-sb-q2-b-i', 'econ-2019-hl-sb-q2-b-ii',
+  'econ-2019-hl-sb-q2-c-i', 'econ-2019-hl-sb-q2-c-ii', 'econ-2019-hl-sb-q3-a-i',
+  'econ-2019-hl-sb-q3-a-ii', 'econ-2019-hl-sb-q3-b-i', 'econ-2019-hl-sb-q3-b-ii',
+  'econ-2019-hl-sb-q3-b-iii', 'econ-2019-hl-sb-q3-c-i', 'econ-2019-hl-sb-q3-c-ii',
+  'econ-2019-hl-sb-q4-a-i', 'econ-2019-hl-sb-q4-a-ii', 'econ-2019-hl-sb-q4-b-i',
+  'econ-2019-hl-sb-q4-b-ii', 'econ-2019-hl-sb-q4-b-iii', 'econ-2019-hl-sb-q4-b-iv',
+  'econ-2019-hl-sb-q4-c-i', 'econ-2019-hl-sb-q4-c-ii', 'econ-2019-hl-sb-q5-a-i',
+  'econ-2019-hl-sb-q5-a-ii', 'econ-2019-hl-sb-q5-b', 'econ-2019-hl-sb-q5-c-i',
+  'econ-2019-hl-sb-q5-c-ii', 'econ-2019-hl-sb-q5-c-iii', 'econ-2019-hl-sb-q6-a-i',
+  'econ-2019-hl-sb-q6-a-ii', 'econ-2019-hl-sb-q6-a-iii', 'econ-2019-hl-sb-q6-b-i',
+  'econ-2019-hl-sb-q6-b-ii', 'econ-2019-hl-sb-q6-b-iii', 'econ-2019-hl-sb-q6-c',
+  'econ-2019-hl-sb-q7-a-i', 'econ-2019-hl-sb-q7-a-ii', 'econ-2019-hl-sb-q7-b-i',
+  'econ-2019-hl-sb-q7-b-ii', 'econ-2019-hl-sb-q7-b-iii', 'econ-2019-hl-sb-q7-b-iv',
+  'econ-2019-hl-sb-q7-c-i', 'econ-2019-hl-sb-q7-c-ii', 'econ-2019-hl-sb-q8-a-i',
+  'econ-2019-hl-sb-q8-a-ii-yes', 'econ-2019-hl-sb-q8-a-ii-no', 'econ-2019-hl-sb-q8-b-i',
+  'econ-2019-hl-sb-q8-b-ii', 'econ-2019-hl-sb-q8-c-i', 'econ-2019-hl-sb-q8-c-ii',
+  // 2019 Ordinary (old syllabus, the paper's first cards, 2026-11-04): 66, none replacing a frozen ID
+  'econ-2019-ol-sa-q1', 'econ-2019-ol-sa-q2-i', 'econ-2019-ol-sa-q2-ii', 'econ-2019-ol-sa-q3',
+  'econ-2019-ol-sa-q4', 'econ-2019-ol-sa-q5-i', 'econ-2019-ol-sa-q5-ii', 'econ-2019-ol-sa-q6',
+  'econ-2019-ol-sa-q7-i', 'econ-2019-ol-sa-q7-ii', 'econ-2019-ol-sa-q8-a', 'econ-2019-ol-sa-q8-b',
+  'econ-2019-ol-sa-q9', 'econ-2019-ol-sb-q1-a-i', 'econ-2019-ol-sb-q1-a-ii', 'econ-2019-ol-sb-q1-b-i',
+  'econ-2019-ol-sb-q1-b-ii', 'econ-2019-ol-sb-q1-c', 'econ-2019-ol-sb-q2-a-i', 'econ-2019-ol-sb-q2-a-ii',
+  'econ-2019-ol-sb-q2-a-iii', 'econ-2019-ol-sb-q2-b-i', 'econ-2019-ol-sb-q2-b-ii', 'econ-2019-ol-sb-q2-b-iii',
+  'econ-2019-ol-sb-q2-c-i', 'econ-2019-ol-sb-q2-c-ii', 'econ-2019-ol-sb-q2-c-iii', 'econ-2019-ol-sb-q3-a',
+  'econ-2019-ol-sb-q3-b-i', 'econ-2019-ol-sb-q3-b-ii', 'econ-2019-ol-sb-q3-b-iii', 'econ-2019-ol-sb-q3-c-i',
+  'econ-2019-ol-sb-q3-c-ii', 'econ-2019-ol-sb-q4-a', 'econ-2019-ol-sb-q4-b-i', 'econ-2019-ol-sb-q4-b-ii',
+  'econ-2019-ol-sb-q4-b-iii', 'econ-2019-ol-sb-q4-c-i', 'econ-2019-ol-sb-q4-c-ii-yes',
+  'econ-2019-ol-sb-q4-c-ii-no', 'econ-2019-ol-sb-q4-c-iii', 'econ-2019-ol-sb-q5-a', 'econ-2019-ol-sb-q5-b',
+  'econ-2019-ol-sb-q5-c-i', 'econ-2019-ol-sb-q5-c-ii', 'econ-2019-ol-sb-q6-a-i', 'econ-2019-ol-sb-q6-a-ii',
+  'econ-2019-ol-sb-q6-b-i', 'econ-2019-ol-sb-q6-b-ii', 'econ-2019-ol-sb-q6-b-iii', 'econ-2019-ol-sb-q6-c',
+  'econ-2019-ol-sb-q7-a-i', 'econ-2019-ol-sb-q7-a-ii', 'econ-2019-ol-sb-q7-a-iii', 'econ-2019-ol-sb-q7-b-i',
+  'econ-2019-ol-sb-q7-b-ii', 'econ-2019-ol-sb-q7-b-iii', 'econ-2019-ol-sb-q7-c-i', 'econ-2019-ol-sb-q7-c-ii',
+  'econ-2019-ol-sb-q7-c-iii', 'econ-2019-ol-sb-q8-a', 'econ-2019-ol-sb-q8-b-i', 'econ-2019-ol-sb-q8-b-ii',
+  'econ-2019-ol-sb-q8-b-iii', 'econ-2019-ol-sb-q8-c-i', 'econ-2019-ol-sb-q8-c-ii',
+  // 2020 Higher (old syllabus, the paper's first cards, 2026-11-04): 75, none replacing a frozen ID
+  'econ-2020-hl-sa-q1', 'econ-2020-hl-sa-q2', 'econ-2020-hl-sa-q3-a', 'econ-2020-hl-sa-q3-b',
+  'econ-2020-hl-sa-q4-i', 'econ-2020-hl-sa-q4-ii', 'econ-2020-hl-sa-q5-a', 'econ-2020-hl-sa-q5-b',
+  'econ-2020-hl-sa-q6-i', 'econ-2020-hl-sa-q6-ii-yes', 'econ-2020-hl-sa-q6-ii-no', 'econ-2020-hl-sa-q7',
+  'econ-2020-hl-sa-q8', 'econ-2020-hl-sa-q9-i', 'econ-2020-hl-sa-q9-ii', 'econ-2020-hl-sa-q9-iii',
+  'econ-2020-hl-sb-q1-a-i', 'econ-2020-hl-sb-q1-a-ii', 'econ-2020-hl-sb-q1-a-iii', 'econ-2020-hl-sb-q1-a-iv',
+  'econ-2020-hl-sb-q1-b-i', 'econ-2020-hl-sb-q1-b-ii', 'econ-2020-hl-sb-q1-c-i', 'econ-2020-hl-sb-q1-c-ii',
+  'econ-2020-hl-sb-q2-a-i', 'econ-2020-hl-sb-q2-a-ii', 'econ-2020-hl-sb-q2-b-i', 'econ-2020-hl-sb-q2-b-ii',
+  'econ-2020-hl-sb-q2-c-i', 'econ-2020-hl-sb-q2-c-ii', 'econ-2020-hl-sb-q2-c-iii-yes',
+  'econ-2020-hl-sb-q2-c-iii-no', 'econ-2020-hl-sb-q3-a-i', 'econ-2020-hl-sb-q3-a-ii', 'econ-2020-hl-sb-q3-b',
+  'econ-2020-hl-sb-q3-c', 'econ-2020-hl-sb-q4-a-i', 'econ-2020-hl-sb-q4-a-ii', 'econ-2020-hl-sb-q4-b-i',
+  'econ-2020-hl-sb-q4-b-ii', 'econ-2020-hl-sb-q4-c-i', 'econ-2020-hl-sb-q4-c-ii', 'econ-2020-hl-sb-q4-c-iii',
+  'econ-2020-hl-sb-q5-a-i', 'econ-2020-hl-sb-q5-a-ii', 'econ-2020-hl-sb-q5-b-i', 'econ-2020-hl-sb-q5-b-ii',
+  'econ-2020-hl-sb-q5-b-iii', 'econ-2020-hl-sb-q5-c-i', 'econ-2020-hl-sb-q5-c-ii', 'econ-2020-hl-sb-q5-c-iii',
+  'econ-2020-hl-sb-q6-a-i', 'econ-2020-hl-sb-q6-a-ii', 'econ-2020-hl-sb-q6-a-iii', 'econ-2020-hl-sb-q6-b-i',
+  'econ-2020-hl-sb-q6-b-ii', 'econ-2020-hl-sb-q6-c-i', 'econ-2020-hl-sb-q6-c-ii', 'econ-2020-hl-sb-q7-a-i',
+  'econ-2020-hl-sb-q7-a-ii', 'econ-2020-hl-sb-q7-b-i', 'econ-2020-hl-sb-q7-b-ii', 'econ-2020-hl-sb-q7-b-iii',
+  'econ-2020-hl-sb-q7-c-i-yes', 'econ-2020-hl-sb-q7-c-i-no', 'econ-2020-hl-sb-q7-c-ii',
+  'econ-2020-hl-sb-q8-a', 'econ-2020-hl-sb-q8-b-i', 'econ-2020-hl-sb-q8-b-ii', 'econ-2020-hl-sb-q8-b-iii',
+  'econ-2020-hl-sb-q8-b-iv', 'econ-2020-hl-sb-q8-b-v', 'econ-2020-hl-sb-q8-c-i', 'econ-2020-hl-sb-q8-c-ii',
+  'econ-2020-hl-sb-q8-c-iii',
+  // 2018 Higher (old syllabus, the paper's first cards, 2026-11-04): 72, none replacing a frozen ID
+  'econ-2018-hl-sa-q1-a', 'econ-2018-hl-sa-q1-b', 'econ-2018-hl-sa-q2', 'econ-2018-hl-sa-q3',
+  'econ-2018-hl-sa-q4-a', 'econ-2018-hl-sa-q4-b', 'econ-2018-hl-sa-q5', 'econ-2018-hl-sa-q6',
+  'econ-2018-hl-sa-q7-a', 'econ-2018-hl-sa-q7-b', 'econ-2018-hl-sa-q8', 'econ-2018-hl-sa-q9-a',
+  'econ-2018-hl-sa-q9-b', 'econ-2018-hl-sb-q1-a-i', 'econ-2018-hl-sb-q1-a-ii', 'econ-2018-hl-sb-q1-b-i',
+  'econ-2018-hl-sb-q1-b-ii', 'econ-2018-hl-sb-q1-b-iii', 'econ-2018-hl-sb-q1-b-iv', 'econ-2018-hl-sb-q1-c-i',
+  'econ-2018-hl-sb-q1-c-ii', 'econ-2018-hl-sb-q2-a-i', 'econ-2018-hl-sb-q2-a-ii', 'econ-2018-hl-sb-q2-b-i',
+  'econ-2018-hl-sb-q2-b-ii', 'econ-2018-hl-sb-q2-c-i', 'econ-2018-hl-sb-q2-c-ii', 'econ-2018-hl-sb-q3-a-i',
+  'econ-2018-hl-sb-q3-a-ii', 'econ-2018-hl-sb-q3-a-iii', 'econ-2018-hl-sb-q3-a-iv', 'econ-2018-hl-sb-q3-b-i',
+  'econ-2018-hl-sb-q3-b-ii', 'econ-2018-hl-sb-q3-b-iii', 'econ-2018-hl-sb-q3-c-i', 'econ-2018-hl-sb-q3-c-ii',
+  'econ-2018-hl-sb-q4-a-i', 'econ-2018-hl-sb-q4-a-ii', 'econ-2018-hl-sb-q4-b-i', 'econ-2018-hl-sb-q4-b-ii',
+  'econ-2018-hl-sb-q4-b-iii', 'econ-2018-hl-sb-q4-c-i', 'econ-2018-hl-sb-q4-c-ii', 'econ-2018-hl-sb-q4-c-iii',
+  'econ-2018-hl-sb-q5-a-i', 'econ-2018-hl-sb-q5-a-ii-monetary', 'econ-2018-hl-sb-q5-a-ii-fiscal',
+  'econ-2018-hl-sb-q5-b-i', 'econ-2018-hl-sb-q5-b-ii', 'econ-2018-hl-sb-q5-b-iii', 'econ-2018-hl-sb-q5-c-i',
+  'econ-2018-hl-sb-q5-c-ii', 'econ-2018-hl-sb-q5-c-iii-no', 'econ-2018-hl-sb-q5-c-iii-yes',
+  'econ-2018-hl-sb-q6-a-i', 'econ-2018-hl-sb-q6-a-ii', 'econ-2018-hl-sb-q6-b', 'econ-2018-hl-sb-q6-c',
+  'econ-2018-hl-sb-q7-a-i', 'econ-2018-hl-sb-q7-a-ii', 'econ-2018-hl-sb-q7-a-iii', 'econ-2018-hl-sb-q7-a-iv',
+  'econ-2018-hl-sb-q7-b', 'econ-2018-hl-sb-q7-c-i', 'econ-2018-hl-sb-q7-c-ii', 'econ-2018-hl-sb-q8-a-i',
+  'econ-2018-hl-sb-q8-a-ii', 'econ-2018-hl-sb-q8-a-iii', 'econ-2018-hl-sb-q8-a-iv', 'econ-2018-hl-sb-q8-b',
+  'econ-2018-hl-sb-q8-c-i', 'econ-2018-hl-sb-q8-c-ii',
+  // 2018 Ordinary (old syllabus, the paper's first cards, 2026-11-04): 72, none replacing a frozen ID
+  'econ-2018-ol-sa-q1', 'econ-2018-ol-sa-q2-i', 'econ-2018-ol-sa-q2-ii', 'econ-2018-ol-sa-q3',
+  'econ-2018-ol-sa-q4-i', 'econ-2018-ol-sa-q4-ii-smith', 'econ-2018-ol-sa-q4-ii-malthus',
+  'econ-2018-ol-sa-q4-ii-ricardo', 'econ-2018-ol-sa-q4-ii-marx', 'econ-2018-ol-sa-q4-ii-keynes',
+  'econ-2018-ol-sa-q4-ii-friedman', 'econ-2018-ol-sa-q5', 'econ-2018-ol-sa-q6-i', 'econ-2018-ol-sa-q6-ii',
+  'econ-2018-ol-sa-q7-i', 'econ-2018-ol-sa-q7-ii', 'econ-2018-ol-sa-q8-i', 'econ-2018-ol-sa-q8-ii',
+  'econ-2018-ol-sa-q9', 'econ-2018-ol-sb-q1-a-i', 'econ-2018-ol-sb-q1-a-ii', 'econ-2018-ol-sb-q1-b-i',
+  'econ-2018-ol-sb-q1-b-ii', 'econ-2018-ol-sb-q1-b-iii', 'econ-2018-ol-sb-q1-c', 'econ-2018-ol-sb-q2-a-i',
+  'econ-2018-ol-sb-q2-a-ii', 'econ-2018-ol-sb-q2-a-iii', 'econ-2018-ol-sb-q2-b-i', 'econ-2018-ol-sb-q2-b-ii',
+  'econ-2018-ol-sb-q2-b-iii', 'econ-2018-ol-sb-q2-c-i', 'econ-2018-ol-sb-q2-c-ii', 'econ-2018-ol-sb-q3-a',
+  'econ-2018-ol-sb-q3-b-i', 'econ-2018-ol-sb-q3-b-ii', 'econ-2018-ol-sb-q3-b-iii', 'econ-2018-ol-sb-q3-c',
+  'econ-2018-ol-sb-q4-a', 'econ-2018-ol-sb-q4-b-i', 'econ-2018-ol-sb-q4-b-ii', 'econ-2018-ol-sb-q4-c-i',
+  'econ-2018-ol-sb-q4-c-ii', 'econ-2018-ol-sb-q5-a-i', 'econ-2018-ol-sb-q5-a-ii', 'econ-2018-ol-sb-q5-a-iii',
+  'econ-2018-ol-sb-q5-b-i', 'econ-2018-ol-sb-q5-b-ii', 'econ-2018-ol-sb-q5-b-iii', 'econ-2018-ol-sb-q5-c-i',
+  'econ-2018-ol-sb-q5-c-ii', 'econ-2018-ol-sb-q6-a-i', 'econ-2018-ol-sb-q6-a-ii', 'econ-2018-ol-sb-q6-b-i',
+  'econ-2018-ol-sb-q6-b-ii', 'econ-2018-ol-sb-q6-b-iii', 'econ-2018-ol-sb-q6-c-i', 'econ-2018-ol-sb-q6-c-ii',
+  'econ-2018-ol-sb-q6-c-iii', 'econ-2018-ol-sb-q7-a-i', 'econ-2018-ol-sb-q7-a-ii', 'econ-2018-ol-sb-q7-b-i',
+  'econ-2018-ol-sb-q7-b-ii', 'econ-2018-ol-sb-q7-b-iii', 'econ-2018-ol-sb-q7-c-i', 'econ-2018-ol-sb-q7-c-ii',
+  'econ-2018-ol-sb-q7-c-iii', 'econ-2018-ol-sb-q8-a-i', 'econ-2018-ol-sb-q8-a-ii', 'econ-2018-ol-sb-q8-b',
+  'econ-2018-ol-sb-q8-c-i', 'econ-2018-ol-sb-q8-c-ii',
+  // 2017 Higher (old syllabus, the paper's first cards, 2026-11-04): 62, none replacing a frozen ID
+  'econ-2017-hl-sa-q1', 'econ-2017-hl-sa-q2', 'econ-2017-hl-sa-q3-a', 'econ-2017-hl-sa-q3-b',
+  'econ-2017-hl-sa-q4', 'econ-2017-hl-sa-q5', 'econ-2017-hl-sa-q6-a', 'econ-2017-hl-sa-q6-b',
+  'econ-2017-hl-sa-q7-a', 'econ-2017-hl-sa-q7-b', 'econ-2017-hl-sa-q8', 'econ-2017-hl-sa-q9',
+  'econ-2017-hl-sb-q1-a', 'econ-2017-hl-sb-q1-b-i', 'econ-2017-hl-sb-q1-b-ii', 'econ-2017-hl-sb-q1-b-iii',
+  'econ-2017-hl-sb-q1-c-i', 'econ-2017-hl-sb-q1-c-ii', 'econ-2017-hl-sb-q2-a-i', 'econ-2017-hl-sb-q2-a-ii',
+  'econ-2017-hl-sb-q2-b-i', 'econ-2017-hl-sb-q2-b-ii', 'econ-2017-hl-sb-q2-c-i', 'econ-2017-hl-sb-q2-c-ii',
+  'econ-2017-hl-sb-q3-a-i', 'econ-2017-hl-sb-q3-a-ii', 'econ-2017-hl-sb-q3-a-iii', 'econ-2017-hl-sb-q3-a-iv',
+  'econ-2017-hl-sb-q3-b-i', 'econ-2017-hl-sb-q3-b-ii', 'econ-2017-hl-sb-q3-c-i', 'econ-2017-hl-sb-q3-c-ii',
+  'econ-2017-hl-sb-q4-a-i', 'econ-2017-hl-sb-q4-a-ii', 'econ-2017-hl-sb-q4-b-i', 'econ-2017-hl-sb-q4-b-ii',
+  'econ-2017-hl-sb-q4-c-i', 'econ-2017-hl-sb-q4-c-ii', 'econ-2017-hl-sb-q5-a-i', 'econ-2017-hl-sb-q5-a-ii',
+  'econ-2017-hl-sb-q5-b-i', 'econ-2017-hl-sb-q5-b-ii', 'econ-2017-hl-sb-q5-c-i', 'econ-2017-hl-sb-q5-c-ii',
+  'econ-2017-hl-sb-q5-c-iii', 'econ-2017-hl-sb-q6-a-i', 'econ-2017-hl-sb-q6-a-ii', 'econ-2017-hl-sb-q6-b-i',
+  'econ-2017-hl-sb-q6-b-ii-good', 'econ-2017-hl-sb-q6-b-ii-bad', 'econ-2017-hl-sb-q6-b-iii',
+  'econ-2017-hl-sb-q6-c-i', 'econ-2017-hl-sb-q6-c-ii', 'econ-2017-hl-sb-q7-a', 'econ-2017-hl-sb-q7-b-i',
+  'econ-2017-hl-sb-q7-b-ii', 'econ-2017-hl-sb-q7-c', 'econ-2017-hl-sb-q8-a-i', 'econ-2017-hl-sb-q8-a-ii',
+  'econ-2017-hl-sb-q8-a-iii', 'econ-2017-hl-sb-q8-b', 'econ-2017-hl-sb-q8-c',
+  // 2017 Ordinary (old syllabus, the paper's first cards, 2026-11-04): 63, none replacing a frozen ID
+  'econ-2017-ol-sa-q1', 'econ-2017-ol-sa-q2-i', 'econ-2017-ol-sa-q2-ii', 'econ-2017-ol-sa-q3', 'econ-2017-ol-sa-q4',
+  'econ-2017-ol-sa-q5', 'econ-2017-ol-sa-q6', 'econ-2017-ol-sa-q7-i', 'econ-2017-ol-sa-q7-ii', 'econ-2017-ol-sa-q8',
+  'econ-2017-ol-sa-q9-i', 'econ-2017-ol-sa-q9-ii', 'econ-2017-ol-sb-q1-a-i', 'econ-2017-ol-sb-q1-a-ii',
+  'econ-2017-ol-sb-q1-b', 'econ-2017-ol-sb-q1-c-i', 'econ-2017-ol-sb-q1-c-ii', 'econ-2017-ol-sb-q2-a-i',
+  'econ-2017-ol-sb-q2-a-ii', 'econ-2017-ol-sb-q2-b', 'econ-2017-ol-sb-q2-c-i', 'econ-2017-ol-sb-q2-c-ii',
+  'econ-2017-ol-sb-q3-a', 'econ-2017-ol-sb-q3-b-i', 'econ-2017-ol-sb-q3-b-ii', 'econ-2017-ol-sb-q3-b-iii',
+  'econ-2017-ol-sb-q3-c-i', 'econ-2017-ol-sb-q3-c-ii', 'econ-2017-ol-sb-q4-a-i', 'econ-2017-ol-sb-q4-a-ii',
+  'econ-2017-ol-sb-q4-a-iii', 'econ-2017-ol-sb-q4-b-i', 'econ-2017-ol-sb-q4-b-ii', 'econ-2017-ol-sb-q4-c-i',
+  'econ-2017-ol-sb-q4-c-ii', 'econ-2017-ol-sb-q5-a-i', 'econ-2017-ol-sb-q5-a-ii', 'econ-2017-ol-sb-q5-a-iii',
+  'econ-2017-ol-sb-q5-b-i', 'econ-2017-ol-sb-q5-b-ii', 'econ-2017-ol-sb-q5-b-iii', 'econ-2017-ol-sb-q5-c-i',
+  'econ-2017-ol-sb-q5-c-ii', 'econ-2017-ol-sb-q6-a-i', 'econ-2017-ol-sb-q6-a-ii', 'econ-2017-ol-sb-q6-a-iii',
+  'econ-2017-ol-sb-q6-b', 'econ-2017-ol-sb-q6-c-i', 'econ-2017-ol-sb-q6-c-ii-yes', 'econ-2017-ol-sb-q6-c-ii-no',
+  'econ-2017-ol-sb-q7-a-i', 'econ-2017-ol-sb-q7-a-ii', 'econ-2017-ol-sb-q7-a-iii', 'econ-2017-ol-sb-q7-b-i',
+  'econ-2017-ol-sb-q7-b-ii', 'econ-2017-ol-sb-q7-c-i', 'econ-2017-ol-sb-q7-c-ii', 'econ-2017-ol-sb-q8-a-i',
+  'econ-2017-ol-sb-q8-a-ii', 'econ-2017-ol-sb-q8-a-iii', 'econ-2017-ol-sb-q8-b', 'econ-2017-ol-sb-q8-c-i',
+  'econ-2017-ol-sb-q8-c-ii',
+  // 2016 Higher (old syllabus, the paper's first cards, 2026-11-04): 62, none replacing a frozen ID
+  'econ-2016-hl-sa-q1-a', 'econ-2016-hl-sa-q1-b-i', 'econ-2016-hl-sa-q1-b-ii', 'econ-2016-hl-sa-q2',
+  'econ-2016-hl-sa-q3', 'econ-2016-hl-sa-q4', 'econ-2016-hl-sa-q5-a', 'econ-2016-hl-sa-q5-b', 'econ-2016-hl-sa-q6-i',
+  'econ-2016-hl-sa-q6-ii', 'econ-2016-hl-sa-q7-a', 'econ-2016-hl-sa-q7-b', 'econ-2016-hl-sa-q8',
+  'econ-2016-hl-sa-q9', 'econ-2016-hl-sb-q1-a-i', 'econ-2016-hl-sb-q1-a-ii', 'econ-2016-hl-sb-q1-b-i',
+  'econ-2016-hl-sb-q1-b-ii', 'econ-2016-hl-sb-q1-b-iii', 'econ-2016-hl-sb-q1-b-iv', 'econ-2016-hl-sb-q1-c',
+  'econ-2016-hl-sb-q2-a-i', 'econ-2016-hl-sb-q2-a-ii', 'econ-2016-hl-sb-q2-a-iii', 'econ-2016-hl-sb-q2-b-i',
+  'econ-2016-hl-sb-q2-b-ii', 'econ-2016-hl-sb-q2-c', 'econ-2016-hl-sb-q3-a', 'econ-2016-hl-sb-q3-b-i',
+  'econ-2016-hl-sb-q3-b-ii', 'econ-2016-hl-sb-q3-c', 'econ-2016-hl-sb-q4-a-i', 'econ-2016-hl-sb-q4-a-ii',
+  'econ-2016-hl-sb-q4-b-i', 'econ-2016-hl-sb-q4-b-ii', 'econ-2016-hl-sb-q4-b-iii', 'econ-2016-hl-sb-q4-c-i',
+  'econ-2016-hl-sb-q4-c-ii', 'econ-2016-hl-sb-q5-a-i', 'econ-2016-hl-sb-q5-a-ii', 'econ-2016-hl-sb-q5-b-i',
+  'econ-2016-hl-sb-q5-b-ii', 'econ-2016-hl-sb-q5-b-iii', 'econ-2016-hl-sb-q5-b-iv', 'econ-2016-hl-sb-q5-c',
+  'econ-2016-hl-sb-q6-a-i', 'econ-2016-hl-sb-q6-a-ii', 'econ-2016-hl-sb-q6-b-i', 'econ-2016-hl-sb-q6-b-ii',
+  'econ-2016-hl-sb-q6-b-iii', 'econ-2016-hl-sb-q6-c', 'econ-2016-hl-sb-q7-a', 'econ-2016-hl-sb-q7-b-i',
+  'econ-2016-hl-sb-q7-b-ii', 'econ-2016-hl-sb-q7-c', 'econ-2016-hl-sb-q8-a-growth', 'econ-2016-hl-sb-q8-a-prices',
+  'econ-2016-hl-sb-q8-a-unemployment', 'econ-2016-hl-sb-q8-a-interest', 'econ-2016-hl-sb-q8-b-i',
+  'econ-2016-hl-sb-q8-b-ii', 'econ-2016-hl-sb-q8-c',
+  // 2016 Ordinary (old syllabus, the paper's first cards, 2026-11-04): 81, none replacing a frozen ID
+  'econ-2016-ol-sa-q1', 'econ-2016-ol-sa-q2', 'econ-2016-ol-sa-q3-a', 'econ-2016-ol-sa-q3-b', 'econ-2016-ol-sa-q4-a',
+  'econ-2016-ol-sa-q4-b', 'econ-2016-ol-sa-q4-c', 'econ-2016-ol-sa-q5', 'econ-2016-ol-sa-q6', 'econ-2016-ol-sa-q7-a',
+  'econ-2016-ol-sa-q7-b', 'econ-2016-ol-sa-q8-a', 'econ-2016-ol-sa-q8-b', 'econ-2016-ol-sa-q9',
+  'econ-2016-ol-sb-q1-a-i', 'econ-2016-ol-sb-q1-a-ii', 'econ-2016-ol-sb-q1-b-i', 'econ-2016-ol-sb-q1-b-ii',
+  'econ-2016-ol-sb-q1-c-i', 'econ-2016-ol-sb-q1-c-ii', 'econ-2016-ol-sb-q1-c-iii', 'econ-2016-ol-sb-q2-a-i',
+  'econ-2016-ol-sb-q2-a-ii', 'econ-2016-ol-sb-q2-a-iii', 'econ-2016-ol-sb-q2-a-iv', 'econ-2016-ol-sb-q2-b-i',
+  'econ-2016-ol-sb-q2-b-ii', 'econ-2016-ol-sb-q2-b-iii', 'econ-2016-ol-sb-q2-c-i', 'econ-2016-ol-sb-q2-c-ii',
+  'econ-2016-ol-sb-q2-c-iii', 'econ-2016-ol-sb-q3-a-i', 'econ-2016-ol-sb-q3-a-ii', 'econ-2016-ol-sb-q3-b-i',
+  'econ-2016-ol-sb-q3-b-ii', 'econ-2016-ol-sb-q3-b-iii', 'econ-2016-ol-sb-q3-c-i', 'econ-2016-ol-sb-q3-c-ii',
+  'econ-2016-ol-sb-q4-a-i', 'econ-2016-ol-sb-q4-a-ii', 'econ-2016-ol-sb-q4-a-iii', 'econ-2016-ol-sb-q4-a-iv',
+  'econ-2016-ol-sb-q4-b-i', 'econ-2016-ol-sb-q4-b-ii', 'econ-2016-ol-sb-q4-b-iii', 'econ-2016-ol-sb-q4-c-i',
+  'econ-2016-ol-sb-q4-c-ii', 'econ-2016-ol-sb-q4-c-iii', 'econ-2016-ol-sb-q5-a-i', 'econ-2016-ol-sb-q5-a-ii',
+  'econ-2016-ol-sb-q5-a-iii-for', 'econ-2016-ol-sb-q5-a-iii-against', 'econ-2016-ol-sb-q5-b-i',
+  'econ-2016-ol-sb-q5-b-ii', 'econ-2016-ol-sb-q5-c-i', 'econ-2016-ol-sb-q5-c-ii', 'econ-2016-ol-sb-q5-c-iii',
+  'econ-2016-ol-sb-q6-a-i', 'econ-2016-ol-sb-q6-a-ii', 'econ-2016-ol-sb-q6-b-i', 'econ-2016-ol-sb-q6-b-ii',
+  'econ-2016-ol-sb-q6-b-iii', 'econ-2016-ol-sb-q6-c-i', 'econ-2016-ol-sb-q6-c-ii', 'econ-2016-ol-sb-q6-c-iii',
+  'econ-2016-ol-sb-q6-c-iv', 'econ-2016-ol-sb-q7-a-i', 'econ-2016-ol-sb-q7-a-ii', 'econ-2016-ol-sb-q7-a-iii',
+  'econ-2016-ol-sb-q7-b-i', 'econ-2016-ol-sb-q7-b-ii', 'econ-2016-ol-sb-q7-c-i', 'econ-2016-ol-sb-q7-c-ii',
+  'econ-2016-ol-sb-q7-c-iii', 'econ-2016-ol-sb-q8-a-i', 'econ-2016-ol-sb-q8-a-ii', 'econ-2016-ol-sb-q8-a-iii',
+  'econ-2016-ol-sb-q8-b-i', 'econ-2016-ol-sb-q8-b-ii', 'econ-2016-ol-sb-q8-b-iii', 'econ-2016-ol-sb-q8-c',
+  // 2015 Higher (old syllabus, the paper's first cards, 2026-11-04): 58, none replacing a frozen ID
+  'econ-2015-hl-sa-q1', 'econ-2015-hl-sa-q2-a', 'econ-2015-hl-sa-q2-b', 'econ-2015-hl-sa-q3-a',
+  'econ-2015-hl-sa-q3-b', 'econ-2015-hl-sa-q4-a', 'econ-2015-hl-sa-q4-b', 'econ-2015-hl-sa-q5-a',
+  'econ-2015-hl-sa-q5-b', 'econ-2015-hl-sa-q6', 'econ-2015-hl-sa-q7', 'econ-2015-hl-sa-q8-a', 'econ-2015-hl-sa-q8-b',
+  'econ-2015-hl-sa-q9', 'econ-2015-hl-sb-q1-a-i', 'econ-2015-hl-sb-q1-a-ii', 'econ-2015-hl-sb-q1-b-i',
+  'econ-2015-hl-sb-q1-b-ii', 'econ-2015-hl-sb-q1-b-iii', 'econ-2015-hl-sb-q1-c', 'econ-2015-hl-sb-q2-a-i',
+  'econ-2015-hl-sb-q2-a-ii', 'econ-2015-hl-sb-q2-b-i', 'econ-2015-hl-sb-q2-b-ii', 'econ-2015-hl-sb-q2-c',
+  'econ-2015-hl-sb-q3-a', 'econ-2015-hl-sb-q3-b-i', 'econ-2015-hl-sb-q3-b-ii', 'econ-2015-hl-sb-q3-b-iii',
+  'econ-2015-hl-sb-q3-c', 'econ-2015-hl-sb-q4-a-i', 'econ-2015-hl-sb-q4-a-ii', 'econ-2015-hl-sb-q4-b-i',
+  'econ-2015-hl-sb-q4-b-ii', 'econ-2015-hl-sb-q4-c-i', 'econ-2015-hl-sb-q4-c-ii', 'econ-2015-hl-sb-q5-a-i',
+  'econ-2015-hl-sb-q5-a-ii', 'econ-2015-hl-sb-q5-b', 'econ-2015-hl-sb-q5-c', 'econ-2015-hl-sb-q6-a-i',
+  'econ-2015-hl-sb-q6-a-ii', 'econ-2015-hl-sb-q6-b-i', 'econ-2015-hl-sb-q6-b-ii', 'econ-2015-hl-sb-q6-c-i',
+  'econ-2015-hl-sb-q6-c-ii', 'econ-2015-hl-sb-q6-c-iii', 'econ-2015-hl-sb-q7-a-i', 'econ-2015-hl-sb-q7-a-ii',
+  'econ-2015-hl-sb-q7-b', 'econ-2015-hl-sb-q7-c-i', 'econ-2015-hl-sb-q7-c-ii', 'econ-2015-hl-sb-q8-a-agree',
+  'econ-2015-hl-sb-q8-a-disagree', 'econ-2015-hl-sb-q8-b-i', 'econ-2015-hl-sb-q8-b-ii', 'econ-2015-hl-sb-q8-c-i',
+  'econ-2015-hl-sb-q8-c-ii',
+  // 2015 Ordinary (old syllabus, the paper's first cards, 2026-11-04): 71, none replacing a frozen ID
+  'econ-2015-ol-sa-q1', 'econ-2015-ol-sa-q2', 'econ-2015-ol-sa-q3', 'econ-2015-ol-sa-q4', 'econ-2015-ol-sa-q5',
+  'econ-2015-ol-sa-q6', 'econ-2015-ol-sa-q7-i', 'econ-2015-ol-sa-q7-ii', 'econ-2015-ol-sa-q8',
+  'econ-2015-ol-sa-q9-a', 'econ-2015-ol-sa-q9-b', 'econ-2015-ol-sb-q1-a-i', 'econ-2015-ol-sb-q1-a-ii',
+  'econ-2015-ol-sb-q1-b-i', 'econ-2015-ol-sb-q1-b-ii', 'econ-2015-ol-sb-q1-c-i', 'econ-2015-ol-sb-q1-c-ii',
+  'econ-2015-ol-sb-q1-c-iii', 'econ-2015-ol-sb-q2-a', 'econ-2015-ol-sb-q2-b-i', 'econ-2015-ol-sb-q2-b-ii',
+  'econ-2015-ol-sb-q2-b-iii', 'econ-2015-ol-sb-q2-c-i', 'econ-2015-ol-sb-q2-c-ii', 'econ-2015-ol-sb-q3-a-i',
+  'econ-2015-ol-sb-q3-a-ii', 'econ-2015-ol-sb-q3-a-iii', 'econ-2015-ol-sb-q3-b-i', 'econ-2015-ol-sb-q3-b-ii',
+  'econ-2015-ol-sb-q3-c-i', 'econ-2015-ol-sb-q3-c-ii', 'econ-2015-ol-sb-q4-a', 'econ-2015-ol-sb-q4-b-i',
+  'econ-2015-ol-sb-q4-b-ii', 'econ-2015-ol-sb-q4-b-iii', 'econ-2015-ol-sb-q4-c-i', 'econ-2015-ol-sb-q4-c-ii-marx',
+  'econ-2015-ol-sb-q4-c-ii-smith', 'econ-2015-ol-sb-q4-c-ii-malthus', 'econ-2015-ol-sb-q4-c-ii-ricardo',
+  'econ-2015-ol-sb-q5-a-i', 'econ-2015-ol-sb-q5-a-ii', 'econ-2015-ol-sb-q5-a-iii', 'econ-2015-ol-sb-q5-b-i',
+  'econ-2015-ol-sb-q5-b-ii', 'econ-2015-ol-sb-q5-b-iii', 'econ-2015-ol-sb-q5-c', 'econ-2015-ol-sb-q6-a-i',
+  'econ-2015-ol-sb-q6-a-ii', 'econ-2015-ol-sb-q6-a-iii', 'econ-2015-ol-sb-q6-b-i', 'econ-2015-ol-sb-q6-b-ii',
+  'econ-2015-ol-sb-q6-b-iii', 'econ-2015-ol-sb-q6-c-i', 'econ-2015-ol-sb-q6-c-ii', 'econ-2015-ol-sb-q6-c-iii',
+  'econ-2015-ol-sb-q7-a-i', 'econ-2015-ol-sb-q7-a-ii', 'econ-2015-ol-sb-q7-a-iii', 'econ-2015-ol-sb-q7-b-i',
+  'econ-2015-ol-sb-q7-b-ii', 'econ-2015-ol-sb-q7-c-i', 'econ-2015-ol-sb-q7-c-ii', 'econ-2015-ol-sb-q8-a-i',
+  'econ-2015-ol-sb-q8-a-ii', 'econ-2015-ol-sb-q8-a-iii', 'econ-2015-ol-sb-q8-b-i', 'econ-2015-ol-sb-q8-b-ii',
+  'econ-2015-ol-sb-q8-b-iii', 'econ-2015-ol-sb-q8-c-i', 'econ-2015-ol-sb-q8-c-ii',
+  // 2014 Higher (old syllabus, the paper's first cards, 2026-11-04): 54, none replacing a frozen ID
+  'econ-2014-hl-sa-q1', 'econ-2014-hl-sa-q2-i', 'econ-2014-hl-sa-q2-ii', 'econ-2014-hl-sa-q3', 'econ-2014-hl-sa-q4',
+  'econ-2014-hl-sa-q5', 'econ-2014-hl-sa-q6', 'econ-2014-hl-sa-q7', 'econ-2014-hl-sa-q8', 'econ-2014-hl-sa-q9',
+  'econ-2014-hl-sb-q1-a-i', 'econ-2014-hl-sb-q1-a-ii', 'econ-2014-hl-sb-q1-b-i', 'econ-2014-hl-sb-q1-b-ii',
+  'econ-2014-hl-sb-q1-b-iii', 'econ-2014-hl-sb-q1-c-i', 'econ-2014-hl-sb-q1-c-ii', 'econ-2014-hl-sb-q2-a-i',
+  'econ-2014-hl-sb-q2-a-ii', 'econ-2014-hl-sb-q2-b-i', 'econ-2014-hl-sb-q2-b-ii', 'econ-2014-hl-sb-q2-c',
+  'econ-2014-hl-sb-q3-a-i', 'econ-2014-hl-sb-q3-a-ii', 'econ-2014-hl-sb-q3-b', 'econ-2014-hl-sb-q3-c-i',
+  'econ-2014-hl-sb-q3-c-ii', 'econ-2014-hl-sb-q4-a', 'econ-2014-hl-sb-q4-b-i', 'econ-2014-hl-sb-q4-b-ii',
+  'econ-2014-hl-sb-q4-c-i', 'econ-2014-hl-sb-q4-c-ii', 'econ-2014-hl-sb-q5-a-i', 'econ-2014-hl-sb-q5-a-ii',
+  'econ-2014-hl-sb-q5-a-iii', 'econ-2014-hl-sb-q5-a-iv', 'econ-2014-hl-sb-q5-b', 'econ-2014-hl-sb-q5-c-i',
+  'econ-2014-hl-sb-q5-c-ii', 'econ-2014-hl-sb-q5-c-iii', 'econ-2014-hl-sb-q6-a-i', 'econ-2014-hl-sb-q6-a-ii',
+  'econ-2014-hl-sb-q6-b', 'econ-2014-hl-sb-q6-c', 'econ-2014-hl-sb-q7-a-i', 'econ-2014-hl-sb-q7-a-ii',
+  'econ-2014-hl-sb-q7-b-i', 'econ-2014-hl-sb-q7-b-ii', 'econ-2014-hl-sb-q7-c-i', 'econ-2014-hl-sb-q7-c-ii',
+  'econ-2014-hl-sb-q8-a', 'econ-2014-hl-sb-q8-b-i', 'econ-2014-hl-sb-q8-b-ii', 'econ-2014-hl-sb-q8-c',
+  // 2014 Ordinary (old syllabus, the paper's first cards, 2026-11-04): 70, none replacing a frozen ID
+  'econ-2014-ol-sa-q1', 'econ-2014-ol-sa-q2', 'econ-2014-ol-sa-q3', 'econ-2014-ol-sa-q4', 'econ-2014-ol-sa-q5',
+  'econ-2014-ol-sa-q6', 'econ-2014-ol-sa-q7', 'econ-2014-ol-sa-q8', 'econ-2014-ol-sa-q9', 'econ-2014-ol-sb-q1-a-i',
+  'econ-2014-ol-sb-q1-a-ii', 'econ-2014-ol-sb-q1-b-i', 'econ-2014-ol-sb-q1-b-ii', 'econ-2014-ol-sb-q1-c-i',
+  'econ-2014-ol-sb-q1-c-ii', 'econ-2014-ol-sb-q2-a-i', 'econ-2014-ol-sb-q2-a-ii', 'econ-2014-ol-sb-q2-b-i',
+  'econ-2014-ol-sb-q2-b-ii', 'econ-2014-ol-sb-q2-b-iii', 'econ-2014-ol-sb-q2-c-i', 'econ-2014-ol-sb-q2-c-ii',
+  'econ-2014-ol-sb-q2-c-iii', 'econ-2014-ol-sb-q3-a-i', 'econ-2014-ol-sb-q3-a-ii', 'econ-2014-ol-sb-q3-a-iii',
+  'econ-2014-ol-sb-q3-b-i', 'econ-2014-ol-sb-q3-b-ii', 'econ-2014-ol-sb-q3-b-iii', 'econ-2014-ol-sb-q3-c-i',
+  'econ-2014-ol-sb-q3-c-ii', 'econ-2014-ol-sb-q4-a-i', 'econ-2014-ol-sb-q4-a-ii', 'econ-2014-ol-sb-q4-a-iii',
+  'econ-2014-ol-sb-q4-b-i', 'econ-2014-ol-sb-q4-b-ii', 'econ-2014-ol-sb-q4-c-jobseekers',
+  'econ-2014-ol-sb-q4-c-dirt', 'econ-2014-ol-sb-q4-c-tobacco', 'econ-2014-ol-sb-q5-a-i', 'econ-2014-ol-sb-q5-a-ii',
+  'econ-2014-ol-sb-q5-b-i', 'econ-2014-ol-sb-q5-b-ii', 'econ-2014-ol-sb-q5-b-iii', 'econ-2014-ol-sb-q5-c-i',
+  'econ-2014-ol-sb-q5-c-ii', 'econ-2014-ol-sb-q6-a-i', 'econ-2014-ol-sb-q6-a-ii', 'econ-2014-ol-sb-q6-a-iii',
+  'econ-2014-ol-sb-q6-b-i', 'econ-2014-ol-sb-q6-b-ii', 'econ-2014-ol-sb-q6-b-iii', 'econ-2014-ol-sb-q6-c-i',
+  'econ-2014-ol-sb-q6-c-ii', 'econ-2014-ol-sb-q6-c-iii', 'econ-2014-ol-sb-q7-a-i', 'econ-2014-ol-sb-q7-a-ii',
+  'econ-2014-ol-sb-q7-a-iii', 'econ-2014-ol-sb-q7-b-i', 'econ-2014-ol-sb-q7-b-ii', 'econ-2014-ol-sb-q7-b-iii',
+  'econ-2014-ol-sb-q7-c-i', 'econ-2014-ol-sb-q7-c-ii', 'econ-2014-ol-sb-q8-a-i', 'econ-2014-ol-sb-q8-a-ii',
+  'econ-2014-ol-sb-q8-a-iii', 'econ-2014-ol-sb-q8-b-i', 'econ-2014-ol-sb-q8-b-ii', 'econ-2014-ol-sb-q8-c-i',
+  'econ-2014-ol-sb-q8-c-ii',
+  // 2013 Higher (old syllabus, the paper's first cards, 2026-11-04): 57, none replacing a frozen ID
+  'econ-2013-hl-sa-q1', 'econ-2013-hl-sa-q2', 'econ-2013-hl-sa-q3', 'econ-2013-hl-sa-q4-a', 'econ-2013-hl-sa-q4-b',
+  'econ-2013-hl-sa-q5', 'econ-2013-hl-sa-q6', 'econ-2013-hl-sa-q7', 'econ-2013-hl-sa-q8', 'econ-2013-hl-sa-q9',
+  'econ-2013-hl-sb-q1-a-i', 'econ-2013-hl-sb-q1-a-ii', 'econ-2013-hl-sb-q1-b-i', 'econ-2013-hl-sb-q1-b-ii',
+  'econ-2013-hl-sb-q1-b-iii', 'econ-2013-hl-sb-q1-c-i', 'econ-2013-hl-sb-q1-c-ii', 'econ-2013-hl-sb-q2-a-i',
+  'econ-2013-hl-sb-q2-a-ii', 'econ-2013-hl-sb-q2-b', 'econ-2013-hl-sb-q2-c-i', 'econ-2013-hl-sb-q2-c-ii',
+  'econ-2013-hl-sb-q2-c-iii', 'econ-2013-hl-sb-q3-a', 'econ-2013-hl-sb-q3-b', 'econ-2013-hl-sb-q3-c-i',
+  'econ-2013-hl-sb-q3-c-ii', 'econ-2013-hl-sb-q3-d', 'econ-2013-hl-sb-q4-a-i', 'econ-2013-hl-sb-q4-a-ii',
+  'econ-2013-hl-sb-q4-b-i', 'econ-2013-hl-sb-q4-b-ii', 'econ-2013-hl-sb-q4-c', 'econ-2013-hl-sb-q5-a',
+  'econ-2013-hl-sb-q5-b-i', 'econ-2013-hl-sb-q5-b-ii', 'econ-2013-hl-sb-q5-b-iii', 'econ-2013-hl-sb-q5-c-i',
+  'econ-2013-hl-sb-q5-c-ii', 'econ-2013-hl-sb-q6-a-i-reserve-ratio', 'econ-2013-hl-sb-q6-a-i-balance-sheet',
+  'econ-2013-hl-sb-q6-a-ii', 'econ-2013-hl-sb-q6-b-i', 'econ-2013-hl-sb-q6-b-ii', 'econ-2013-hl-sb-q6-c-i',
+  'econ-2013-hl-sb-q6-c-ii', 'econ-2013-hl-sb-q6-c-iii', 'econ-2013-hl-sb-q7-a-i', 'econ-2013-hl-sb-q7-a-ii',
+  'econ-2013-hl-sb-q7-a-iii', 'econ-2013-hl-sb-q7-b', 'econ-2013-hl-sb-q7-c', 'econ-2013-hl-sb-q8-a-i',
+  'econ-2013-hl-sb-q8-a-ii', 'econ-2013-hl-sb-q8-b-i', 'econ-2013-hl-sb-q8-b-ii', 'econ-2013-hl-sb-q8-c',
+  // 2013 Ordinary (old syllabus, the paper's first cards, 2026-11-04): 70, none replacing a frozen ID
+  'econ-2013-ol-sa-q1', 'econ-2013-ol-sa-q2', 'econ-2013-ol-sa-q3', 'econ-2013-ol-sa-q4', 'econ-2013-ol-sa-q5',
+  'econ-2013-ol-sa-q6-a', 'econ-2013-ol-sa-q6-b-i', 'econ-2013-ol-sa-q6-b-ii', 'econ-2013-ol-sa-q7',
+  'econ-2013-ol-sa-q8-a', 'econ-2013-ol-sa-q8-b', 'econ-2013-ol-sa-q9', 'econ-2013-ol-sb-q1-a-i',
+  'econ-2013-ol-sb-q1-a-ii', 'econ-2013-ol-sb-q1-b-i', 'econ-2013-ol-sb-q1-b-ii', 'econ-2013-ol-sb-q1-c-i',
+  'econ-2013-ol-sb-q1-c-ii', 'econ-2013-ol-sb-q1-c-iii', 'econ-2013-ol-sb-q2-a', 'econ-2013-ol-sb-q2-b-i',
+  'econ-2013-ol-sb-q2-b-ii', 'econ-2013-ol-sb-q2-c-i', 'econ-2013-ol-sb-q2-c-ii', 'econ-2013-ol-sb-q3-a-i',
+  'econ-2013-ol-sb-q3-a-ii', 'econ-2013-ol-sb-q3-a-iii', 'econ-2013-ol-sb-q3-b-i', 'econ-2013-ol-sb-q3-b-ii',
+  'econ-2013-ol-sb-q3-b-iii', 'econ-2013-ol-sb-q3-c-i', 'econ-2013-ol-sb-q3-c-ii', 'econ-2013-ol-sb-q4-a-i',
+  'econ-2013-ol-sb-q4-a-ii', 'econ-2013-ol-sb-q4-a-iii', 'econ-2013-ol-sb-q4-b-i', 'econ-2013-ol-sb-q4-b-ii',
+  'econ-2013-ol-sb-q4-b-iii', 'econ-2013-ol-sb-q4-c', 'econ-2013-ol-sb-q5-a-i', 'econ-2013-ol-sb-q5-a-ii',
+  'econ-2013-ol-sb-q5-b-i', 'econ-2013-ol-sb-q5-b-ii', 'econ-2013-ol-sb-q5-c-i', 'econ-2013-ol-sb-q5-c-ii',
+  'econ-2013-ol-sb-q5-c-iii', 'econ-2013-ol-sb-q6-a-i', 'econ-2013-ol-sb-q6-a-ii', 'econ-2013-ol-sb-q6-a-iii',
+  'econ-2013-ol-sb-q6-b-i', 'econ-2013-ol-sb-q6-b-ii', 'econ-2013-ol-sb-q6-c-i', 'econ-2013-ol-sb-q6-c-ii',
+  'econ-2013-ol-sb-q6-c-iii', 'econ-2013-ol-sb-q7-a-i', 'econ-2013-ol-sb-q7-a-ii', 'econ-2013-ol-sb-q7-a-iii',
+  'econ-2013-ol-sb-q7-b-i', 'econ-2013-ol-sb-q7-b-ii', 'econ-2013-ol-sb-q7-c-i', 'econ-2013-ol-sb-q7-c-ii',
+  'econ-2013-ol-sb-q7-c-iii', 'econ-2013-ol-sb-q8-a-i', 'econ-2013-ol-sb-q8-a-ii', 'econ-2013-ol-sb-q8-a-iii',
+  'econ-2013-ol-sb-q8-b-i', 'econ-2013-ol-sb-q8-b-ii', 'econ-2013-ol-sb-q8-c-i', 'econ-2013-ol-sb-q8-c-ii',
+  'econ-2013-ol-sb-q8-c-iii',
+  // 2012 Higher (old syllabus, the paper's first cards, 2026-11-04): 60, none replacing a frozen ID
+  'econ-2012-hl-sa-q1', 'econ-2012-hl-sa-q2', 'econ-2012-hl-sa-q3', 'econ-2012-hl-sa-q4', 'econ-2012-hl-sa-q5-a',
+  'econ-2012-hl-sa-q5-b', 'econ-2012-hl-sa-q6-i', 'econ-2012-hl-sa-q6-ii', 'econ-2012-hl-sa-q7',
+  'econ-2012-hl-sa-q8-yes', 'econ-2012-hl-sa-q8-no', 'econ-2012-hl-sa-q9-a', 'econ-2012-hl-sa-q9-b',
+  'econ-2012-hl-sb-q1-a-i', 'econ-2012-hl-sb-q1-a-ii', 'econ-2012-hl-sb-q1-b', 'econ-2012-hl-sb-q1-c-i',
+  'econ-2012-hl-sb-q1-c-ii', 'econ-2012-hl-sb-q2-a-i', 'econ-2012-hl-sb-q2-a-ii', 'econ-2012-hl-sb-q2-b-i',
+  'econ-2012-hl-sb-q2-b-ii', 'econ-2012-hl-sb-q2-c', 'econ-2012-hl-sb-q3-a-i', 'econ-2012-hl-sb-q3-a-ii',
+  'econ-2012-hl-sb-q3-b-i', 'econ-2012-hl-sb-q3-b-ii', 'econ-2012-hl-sb-q3-c', 'econ-2012-hl-sb-q4-a-i',
+  'econ-2012-hl-sb-q4-a-ii', 'econ-2012-hl-sb-q4-b', 'econ-2012-hl-sb-q4-c-i', 'econ-2012-hl-sb-q4-c-ii',
+  'econ-2012-hl-sb-q5-a-i', 'econ-2012-hl-sb-q5-a-ii', 'econ-2012-hl-sb-q5-b-i', 'econ-2012-hl-sb-q5-b-ii',
+  'econ-2012-hl-sb-q5-c-i', 'econ-2012-hl-sb-q5-c-ii-yes', 'econ-2012-hl-sb-q5-c-ii-no', 'econ-2012-hl-sb-q6-a',
+  'econ-2012-hl-sb-q6-b-i', 'econ-2012-hl-sb-q6-b-ii', 'econ-2012-hl-sb-q6-b-iii', 'econ-2012-hl-sb-q6-c',
+  'econ-2012-hl-sb-q7-a-i', 'econ-2012-hl-sb-q7-a-ii-option-1', 'econ-2012-hl-sb-q7-a-ii-option-2',
+  'econ-2012-hl-sb-q7-a-ii-option-3', 'econ-2012-hl-sb-q7-a-iii', 'econ-2012-hl-sb-q7-b-i',
+  'econ-2012-hl-sb-q7-b-ii', 'econ-2012-hl-sb-q7-c', 'econ-2012-hl-sb-q8-a-i-push', 'econ-2012-hl-sb-q8-a-i-pull',
+  'econ-2012-hl-sb-q8-a-ii', 'econ-2012-hl-sb-q8-b-i', 'econ-2012-hl-sb-q8-b-ii', 'econ-2012-hl-sb-q8-c-i',
+  'econ-2012-hl-sb-q8-c-ii',
+  // 2012 Ordinary (old syllabus, the paper's first cards, 2026-11-04): 70, none replacing a frozen ID
+  'econ-2012-ol-sa-q1-a', 'econ-2012-ol-sa-q1-b', 'econ-2012-ol-sa-q2', 'econ-2012-ol-sa-q3', 'econ-2012-ol-sa-q4',
+  'econ-2012-ol-sa-q5', 'econ-2012-ol-sa-q6', 'econ-2012-ol-sa-q7', 'econ-2012-ol-sa-q8', 'econ-2012-ol-sa-q9',
+  'econ-2012-ol-sb-q1-a-i', 'econ-2012-ol-sb-q1-a-ii', 'econ-2012-ol-sb-q1-b-i', 'econ-2012-ol-sb-q1-b-ii',
+  'econ-2012-ol-sb-q1-c-i', 'econ-2012-ol-sb-q1-c-ii', 'econ-2012-ol-sb-q2-a-i', 'econ-2012-ol-sb-q2-a-ii',
+  'econ-2012-ol-sb-q2-a-iii', 'econ-2012-ol-sb-q2-b-i', 'econ-2012-ol-sb-q2-b-ii', 'econ-2012-ol-sb-q2-b-iii',
+  'econ-2012-ol-sb-q2-c-i', 'econ-2012-ol-sb-q2-c-ii', 'econ-2012-ol-sb-q3-a-i', 'econ-2012-ol-sb-q3-a-ii',
+  'econ-2012-ol-sb-q3-a-iii', 'econ-2012-ol-sb-q3-b-i', 'econ-2012-ol-sb-q3-b-ii', 'econ-2012-ol-sb-q3-b-iii',
+  'econ-2012-ol-sb-q3-c-i', 'econ-2012-ol-sb-q3-c-ii', 'econ-2012-ol-sb-q4-a-i', 'econ-2012-ol-sb-q4-a-ii',
+  'econ-2012-ol-sb-q4-a-iii', 'econ-2012-ol-sb-q4-b-i', 'econ-2012-ol-sb-q4-b-ii', 'econ-2012-ol-sb-q4-b-iii',
+  'econ-2012-ol-sb-q4-c-i', 'econ-2012-ol-sb-q4-c-ii', 'econ-2012-ol-sb-q4-c-iii', 'econ-2012-ol-sb-q5-a-i',
+  'econ-2012-ol-sb-q5-a-ii', 'econ-2012-ol-sb-q5-a-iii', 'econ-2012-ol-sb-q5-b-i', 'econ-2012-ol-sb-q5-b-ii',
+  'econ-2012-ol-sb-q5-c-i', 'econ-2012-ol-sb-q5-c-ii', 'econ-2012-ol-sb-q5-c-iii', 'econ-2012-ol-sb-q6-a-i',
+  'econ-2012-ol-sb-q6-a-ii', 'econ-2012-ol-sb-q6-a-iii', 'econ-2012-ol-sb-q6-b-i', 'econ-2012-ol-sb-q6-b-ii',
+  'econ-2012-ol-sb-q6-c-i', 'econ-2012-ol-sb-q6-c-ii', 'econ-2012-ol-sb-q7-a-i', 'econ-2012-ol-sb-q7-a-ii',
+  'econ-2012-ol-sb-q7-a-iii', 'econ-2012-ol-sb-q7-b-i', 'econ-2012-ol-sb-q7-b-ii', 'econ-2012-ol-sb-q7-c-i',
+  'econ-2012-ol-sb-q7-c-ii', 'econ-2012-ol-sb-q7-c-iii', 'econ-2012-ol-sb-q8-a', 'econ-2012-ol-sb-q8-b-i',
+  'econ-2012-ol-sb-q8-b-ii', 'econ-2012-ol-sb-q8-c-i', 'econ-2012-ol-sb-q8-c-ii', 'econ-2012-ol-sb-q8-c-iii',
+  // 2011 Higher (old syllabus, the paper's first cards, 2026-11-04): 51, none replacing a frozen ID
+  'econ-2011-hl-sa-q1', 'econ-2011-hl-sa-q2', 'econ-2011-hl-sa-q3', 'econ-2011-hl-sa-q4', 'econ-2011-hl-sa-q5',
+  'econ-2011-hl-sa-q6', 'econ-2011-hl-sa-q7', 'econ-2011-hl-sa-q8', 'econ-2011-hl-sa-q9', 'econ-2011-hl-sb-q1-a-i',
+  'econ-2011-hl-sb-q1-a-ii', 'econ-2011-hl-sb-q1-b-i', 'econ-2011-hl-sb-q1-b-ii', 'econ-2011-hl-sb-q1-c-i',
+  'econ-2011-hl-sb-q1-c-ii', 'econ-2011-hl-sb-q2-a-i', 'econ-2011-hl-sb-q2-a-ii', 'econ-2011-hl-sb-q2-b',
+  'econ-2011-hl-sb-q2-c', 'econ-2011-hl-sb-q3-a-i', 'econ-2011-hl-sb-q3-a-ii', 'econ-2011-hl-sb-q3-a-iii',
+  'econ-2011-hl-sb-q3-b-i', 'econ-2011-hl-sb-q3-b-ii', 'econ-2011-hl-sb-q3-c', 'econ-2011-hl-sb-q4-a-i',
+  'econ-2011-hl-sb-q4-a-ii', 'econ-2011-hl-sb-q4-b-i', 'econ-2011-hl-sb-q4-b-ii', 'econ-2011-hl-sb-q4-c',
+  'econ-2011-hl-sb-q5-a-i', 'econ-2011-hl-sb-q5-a-ii', 'econ-2011-hl-sb-q5-b-i', 'econ-2011-hl-sb-q5-b-ii-favour',
+  'econ-2011-hl-sb-q5-b-ii-against', 'econ-2011-hl-sb-q5-c', 'econ-2011-hl-sb-q6-a-i', 'econ-2011-hl-sb-q6-a-ii',
+  'econ-2011-hl-sb-q6-a-iii', 'econ-2011-hl-sb-q6-b', 'econ-2011-hl-sb-q6-c', 'econ-2011-hl-sb-q7-a-i',
+  'econ-2011-hl-sb-q7-a-ii', 'econ-2011-hl-sb-q7-b-i', 'econ-2011-hl-sb-q7-b-ii', 'econ-2011-hl-sb-q7-b-iii',
+  'econ-2011-hl-sb-q7-c', 'econ-2011-hl-sb-q8-a', 'econ-2011-hl-sb-q8-b', 'econ-2011-hl-sb-q8-c-i',
+  'econ-2011-hl-sb-q8-c-ii',
+  // 2011 Ordinary (old syllabus, the paper's first cards, 2026-11-04): 71, none replacing a frozen ID
+  'econ-2011-ol-sa-q1', 'econ-2011-ol-sa-q2', 'econ-2011-ol-sa-q3', 'econ-2011-ol-sa-q4-a', 'econ-2011-ol-sa-q4-b',
+  'econ-2011-ol-sa-q5', 'econ-2011-ol-sa-q6', 'econ-2011-ol-sa-q7', 'econ-2011-ol-sa-q8', 'econ-2011-ol-sa-q9',
+  'econ-2011-ol-sb-q1-a-i', 'econ-2011-ol-sb-q1-a-ii', 'econ-2011-ol-sb-q1-b', 'econ-2011-ol-sb-q1-c-i',
+  'econ-2011-ol-sb-q1-c-ii', 'econ-2011-ol-sb-q1-c-iii', 'econ-2011-ol-sb-q2-a', 'econ-2011-ol-sb-q2-b',
+  'econ-2011-ol-sb-q2-c-i-advantage', 'econ-2011-ol-sb-q2-c-i-disadvantage', 'econ-2011-ol-sb-q2-c-ii',
+  'econ-2011-ol-sb-q2-c-iii', 'econ-2011-ol-sb-q3-a-i', 'econ-2011-ol-sb-q3-a-ii', 'econ-2011-ol-sb-q3-a-iii',
+  'econ-2011-ol-sb-q3-b-i', 'econ-2011-ol-sb-q3-b-ii', 'econ-2011-ol-sb-q3-c-i', 'econ-2011-ol-sb-q3-c-ii',
+  'econ-2011-ol-sb-q3-c-iii', 'econ-2011-ol-sb-q4-a-i', 'econ-2011-ol-sb-q4-a-ii', 'econ-2011-ol-sb-q4-a-iii',
+  'econ-2011-ol-sb-q4-b-i', 'econ-2011-ol-sb-q4-b-ii', 'econ-2011-ol-sb-q4-c-i', 'econ-2011-ol-sb-q4-c-ii',
+  'econ-2011-ol-sb-q4-c-iii', 'econ-2011-ol-sb-q5-a-i', 'econ-2011-ol-sb-q5-a-ii', 'econ-2011-ol-sb-q5-b-i',
+  'econ-2011-ol-sb-q5-b-ii', 'econ-2011-ol-sb-q5-c-i', 'econ-2011-ol-sb-q5-c-ii', 'econ-2011-ol-sb-q5-c-iii',
+  'econ-2011-ol-sb-q5-c-iv', 'econ-2011-ol-sb-q6-a-i', 'econ-2011-ol-sb-q6-a-ii', 'econ-2011-ol-sb-q6-a-iii',
+  'econ-2011-ol-sb-q6-b-i', 'econ-2011-ol-sb-q6-b-ii', 'econ-2011-ol-sb-q6-b-iii', 'econ-2011-ol-sb-q6-c-i',
+  'econ-2011-ol-sb-q6-c-ii', 'econ-2011-ol-sb-q6-c-iii', 'econ-2011-ol-sb-q7-a-i', 'econ-2011-ol-sb-q7-a-ii',
+  'econ-2011-ol-sb-q7-a-iii', 'econ-2011-ol-sb-q7-b-i', 'econ-2011-ol-sb-q7-b-ii', 'econ-2011-ol-sb-q7-c-i',
+  'econ-2011-ol-sb-q7-c-ii-agree', 'econ-2011-ol-sb-q7-c-ii-disagree', 'econ-2011-ol-sb-q8-a-i',
+  'econ-2011-ol-sb-q8-a-ii', 'econ-2011-ol-sb-q8-a-iii', 'econ-2011-ol-sb-q8-b-i', 'econ-2011-ol-sb-q8-b-ii',
+  'econ-2011-ol-sb-q8-c-i', 'econ-2011-ol-sb-q8-c-ii', 'econ-2011-ol-sb-q8-c-iii',
+  // 2010 Higher (old syllabus, the paper's first cards, 2026-11-04): 54, none replacing a frozen ID
+  'econ-2010-hl-sa-q1', 'econ-2010-hl-sa-q2', 'econ-2010-hl-sa-q3', 'econ-2010-hl-sa-q4', 'econ-2010-hl-sa-q5',
+  'econ-2010-hl-sa-q6', 'econ-2010-hl-sa-q7', 'econ-2010-hl-sa-q8', 'econ-2010-hl-sa-q9', 'econ-2010-hl-sb-q1-a-i',
+  'econ-2010-hl-sb-q1-a-ii', 'econ-2010-hl-sb-q1-a-iii', 'econ-2010-hl-sb-q1-b-i', 'econ-2010-hl-sb-q1-b-ii',
+  'econ-2010-hl-sb-q1-c', 'econ-2010-hl-sb-q2-a-i', 'econ-2010-hl-sb-q2-a-ii', 'econ-2010-hl-sb-q2-b-i',
+  'econ-2010-hl-sb-q2-b-ii', 'econ-2010-hl-sb-q2-c', 'econ-2010-hl-sb-q3-a', 'econ-2010-hl-sb-q3-b-i',
+  'econ-2010-hl-sb-q3-b-ii', 'econ-2010-hl-sb-q3-c-i', 'econ-2010-hl-sb-q3-c-ii', 'econ-2010-hl-sb-q4-a-i',
+  'econ-2010-hl-sb-q4-a-ii', 'econ-2010-hl-sb-q4-b-i', 'econ-2010-hl-sb-q4-b-ii', 'econ-2010-hl-sb-q4-c',
+  'econ-2010-hl-sb-q5-a-i', 'econ-2010-hl-sb-q5-a-ii', 'econ-2010-hl-sb-q5-b-i-prices',
+  'econ-2010-hl-sb-q5-b-i-long-run', 'econ-2010-hl-sb-q5-b-ii-prices', 'econ-2010-hl-sb-q5-b-ii-long-run',
+  'econ-2010-hl-sb-q5-c-i', 'econ-2010-hl-sb-q5-c-ii', 'econ-2010-hl-sb-q6-a-i', 'econ-2010-hl-sb-q6-a-ii',
+  'econ-2010-hl-sb-q6-b-i', 'econ-2010-hl-sb-q6-b-ii', 'econ-2010-hl-sb-q6-c', 'econ-2010-hl-sb-q7-a-i',
+  'econ-2010-hl-sb-q7-a-ii', 'econ-2010-hl-sb-q7-b-i', 'econ-2010-hl-sb-q7-b-ii', 'econ-2010-hl-sb-q7-c-imf',
+  'econ-2010-hl-sb-q7-c-world-bank', 'econ-2010-hl-sb-q8-a', 'econ-2010-hl-sb-q8-b-i', 'econ-2010-hl-sb-q8-b-ii',
+  'econ-2010-hl-sb-q8-c-i', 'econ-2010-hl-sb-q8-c-ii',
+  // 2010 Ordinary (old syllabus, the paper's first cards, 2026-11-04): 65, none replacing a frozen ID
+  'econ-2010-ol-sa-q1', 'econ-2010-ol-sa-q2', 'econ-2010-ol-sa-q3', 'econ-2010-ol-sa-q4', 'econ-2010-ol-sa-q5',
+  'econ-2010-ol-sa-q6', 'econ-2010-ol-sa-q7', 'econ-2010-ol-sa-q8', 'econ-2010-ol-sa-q9', 'econ-2010-ol-sb-q1-a-i',
+  'econ-2010-ol-sb-q1-a-ii', 'econ-2010-ol-sb-q1-b', 'econ-2010-ol-sb-q1-c-i', 'econ-2010-ol-sb-q1-c-ii',
+  'econ-2010-ol-sb-q1-c-iii', 'econ-2010-ol-sb-q2-a-i', 'econ-2010-ol-sb-q2-a-ii', 'econ-2010-ol-sb-q2-a-iii',
+  'econ-2010-ol-sb-q2-b-i', 'econ-2010-ol-sb-q2-b-ii', 'econ-2010-ol-sb-q2-b-iii', 'econ-2010-ol-sb-q2-c-i',
+  'econ-2010-ol-sb-q2-c-ii', 'econ-2010-ol-sb-q2-c-iii', 'econ-2010-ol-sb-q3-a', 'econ-2010-ol-sb-q3-b-i',
+  'econ-2010-ol-sb-q3-b-ii', 'econ-2010-ol-sb-q3-b-iii', 'econ-2010-ol-sb-q3-c-i', 'econ-2010-ol-sb-q3-c-ii',
+  'econ-2010-ol-sb-q4-a-i', 'econ-2010-ol-sb-q4-a-ii', 'econ-2010-ol-sb-q4-b-i', 'econ-2010-ol-sb-q4-b-ii',
+  'econ-2010-ol-sb-q4-c-i', 'econ-2010-ol-sb-q4-c-ii', 'econ-2010-ol-sb-q4-c-iii', 'econ-2010-ol-sb-q5-a',
+  'econ-2010-ol-sb-q5-b-i', 'econ-2010-ol-sb-q5-b-ii', 'econ-2010-ol-sb-q5-c-i', 'econ-2010-ol-sb-q5-c-ii',
+  'econ-2010-ol-sb-q5-c-iii', 'econ-2010-ol-sb-q6-a', 'econ-2010-ol-sb-q6-b-i', 'econ-2010-ol-sb-q6-b-ii',
+  'econ-2010-ol-sb-q6-b-iii', 'econ-2010-ol-sb-q6-c-i', 'econ-2010-ol-sb-q6-c-ii', 'econ-2010-ol-sb-q6-c-iii',
+  'econ-2010-ol-sb-q7-a-i', 'econ-2010-ol-sb-q7-a-ii', 'econ-2010-ol-sb-q7-a-iii', 'econ-2010-ol-sb-q7-b-i',
+  'econ-2010-ol-sb-q7-b-ii', 'econ-2010-ol-sb-q7-b-iii', 'econ-2010-ol-sb-q7-c-i', 'econ-2010-ol-sb-q7-c-ii',
+  'econ-2010-ol-sb-q7-c-iii', 'econ-2010-ol-sb-q8-a-i', 'econ-2010-ol-sb-q8-a-ii', 'econ-2010-ol-sb-q8-b-i',
+  'econ-2010-ol-sb-q8-b-ii', 'econ-2010-ol-sb-q8-b-iii', 'econ-2010-ol-sb-q8-c',
+  // 2022 Higher, the deferred sitting (its own paper, 2026-11-04): 70, every ID new
+  'econ-2022-hl-deferred-sa-q1-a', 'econ-2022-hl-deferred-sa-q1-b', 'econ-2022-hl-deferred-sa-q2-a',
+  'econ-2022-hl-deferred-sa-q2-b', 'econ-2022-hl-deferred-sa-q3-a', 'econ-2022-hl-deferred-sa-q3-b',
+  'econ-2022-hl-deferred-sa-q4-a', 'econ-2022-hl-deferred-sa-q4-b', 'econ-2022-hl-deferred-sa-q5-a',
+  'econ-2022-hl-deferred-sa-q5-b', 'econ-2022-hl-deferred-sa-q5-c', 'econ-2022-hl-deferred-sa-q6-a',
+  'econ-2022-hl-deferred-sa-q6-b', 'econ-2022-hl-deferred-sa-q7-a', 'econ-2022-hl-deferred-sa-q7-b',
+  'econ-2022-hl-deferred-sa-q7-c', 'econ-2022-hl-deferred-sa-q8-a', 'econ-2022-hl-deferred-sa-q8-b',
+  'econ-2022-hl-deferred-sa-q9-a', 'econ-2022-hl-deferred-sa-q9-b', 'econ-2022-hl-deferred-sa-q9-c',
+  'econ-2022-hl-deferred-sa-q10-a', 'econ-2022-hl-deferred-sa-q10-b', 'econ-2022-hl-deferred-q11-a-i',
+  'econ-2022-hl-deferred-q11-a-ii', 'econ-2022-hl-deferred-q11-a-iii', 'econ-2022-hl-deferred-q11-b-i',
+  'econ-2022-hl-deferred-q11-b-ii', 'econ-2022-hl-deferred-q11-c-i', 'econ-2022-hl-deferred-q11-c-ii',
+  'econ-2022-hl-deferred-q11-c-iii', 'econ-2022-hl-deferred-q12-a-i', 'econ-2022-hl-deferred-q12-a-ii',
+  'econ-2022-hl-deferred-q12-b-i', 'econ-2022-hl-deferred-q12-b-ii', 'econ-2022-hl-deferred-q12-b-iii',
+  'econ-2022-hl-deferred-q12-c-i', 'econ-2022-hl-deferred-q12-c-ii', 'econ-2022-hl-deferred-q12-c-iii',
+  'econ-2022-hl-deferred-q13-a-i', 'econ-2022-hl-deferred-q13-a-ii', 'econ-2022-hl-deferred-q13-a-iii',
+  'econ-2022-hl-deferred-q13-b-i', 'econ-2022-hl-deferred-q13-b-ii', 'econ-2022-hl-deferred-q13-c-i',
+  'econ-2022-hl-deferred-q13-c-ii', 'econ-2022-hl-deferred-q13-c-iii', 'econ-2022-hl-deferred-q14-a-i',
+  'econ-2022-hl-deferred-q14-a-ii', 'econ-2022-hl-deferred-q14-a-iii', 'econ-2022-hl-deferred-q14-b-i',
+  'econ-2022-hl-deferred-q14-b-ii', 'econ-2022-hl-deferred-q14-c-i', 'econ-2022-hl-deferred-q14-c-ii',
+  'econ-2022-hl-deferred-q14-c-iii', 'econ-2022-hl-deferred-q15-a-i', 'econ-2022-hl-deferred-q15-a-ii',
+  'econ-2022-hl-deferred-q15-b-i', 'econ-2022-hl-deferred-q15-b-ii', 'econ-2022-hl-deferred-q15-c-i',
+  'econ-2022-hl-deferred-q15-c-ii', 'econ-2022-hl-deferred-q15-c-iii', 'econ-2022-hl-deferred-q16-a-i',
+  'econ-2022-hl-deferred-q16-a-ii', 'econ-2022-hl-deferred-q16-b-i', 'econ-2022-hl-deferred-q16-b-ii',
+  'econ-2022-hl-deferred-q16-b-iii', 'econ-2022-hl-deferred-q16-c-i', 'econ-2022-hl-deferred-q16-c-ii',
+  'econ-2022-hl-deferred-q16-c-iii',
 ]);
 const economicsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('econ-'));
 /* Agricultural Science keeps its 869 pre-audit IDs frozen (438 Higher + 431
@@ -1264,15 +1732,36 @@ const isBiologyAdded = (id: string) => {
 const biologyAdditionIds = new Set([...BIO_HIGHER, ...BIO_ORDINARY]
   .map(card => card.id).filter(isBiologyAdded));
 const biologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('bio-'));
+/* 2026-11-04: History's essays, its Ordinary parts B and C and the documents
+ * question's Q4 are carded as `history-essay` rubric cards (the scheme marks
+ * them by paragraph or by Core Statement and prints no model answer); 2026 is
+ * carded for the first time; and the one documents part priced by its split
+ * alone becomes a point card. Every one is NEW: no id is replaced and the
+ * frozen History set above is unchanged, so the additions are pinned on their
+ * own below. The years before 2021 join the same way, a paper at a time,
+ * from 2020 back (lane batch 3). */
+const HISTORY_NEW_POINT_IDS = new Set(['hist-2021-ol-lm-s1-q3b']);
+const HISTORY_ADDITIONS = {
+  counts: [1775, 2419],
+  hashes: ['edd7cca52497d08fc3979826d166f90f4f0e57b385e56d918bd61fc55fc4c69d', 'bdd6851049300440081b2e6e59d5695fcbd0466a08b7a95594508aeb9651eb28'],
+};
+// The deferred sittings (2022-2023, "hist-2023-hl-deferred-lm-...") join the
+// same way, each its own sitting and every id new.
+const historyEssayIds = new Set([...HISTORY_HIGHER, ...HISTORY_ORDINARY]
+  .filter(card => card.kind === 'rubric' || card.year === 2026 || card.year <= 2020 || HISTORY_NEW_POINT_IDS.has(card.id)
+    || card.id.includes('-deferred-'))
+  .map(card => card.id));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
+  if (name.startsWith('history:')) return ids.filter(id => !historyEssayIds.has(id));
   if (name === 'technology:higher') {
     // The reviewed split of 2024 Higher B3(d) replaces its one old card with
     // two independently priced tasks. Keep the old progress identity in the
     // frozen set through its alias; the two child IDs are additions.
     const splitIds = new Set(['tech-2024-hl-b3d-i', 'tech-2024-hl-b3d-ii']);
-    return [...ids.filter(id => !splitIds.has(id)), 'tech-2024-hl-b3d'];
+    return [...ids.filter(id => !splitIds.has(id) && !isTechnologyAdded(id)), 'tech-2024-hl-b3d'];
   }
+  if (name === 'technology:ordinary') return ids.filter(id => !isTechnologyAdded(id));
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
   if (name.startsWith('dcg:')) return ids.filter(id => !isDcgAdded(id));
   if (name.startsWith('economics:')) {
@@ -1283,6 +1772,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
     ];
   }
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
+  if (name.startsWith('engineering:')) return ids.filter(id => !engineeringAdditionIds.has(id));
   if (name.startsWith('biology:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
     return [...ids.filter(id => !isBiologyAdded(id)), ...biologyAliasIds.filter(id => id.includes(level))];
@@ -1333,6 +1823,10 @@ const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
     : name.startsWith('biology:') ? cards.filter(card => !isBiologyAdded(card.id)).length
     : name.startsWith('chemistry:') ? cards.filter(card => !chemistryAdded.has(card.id)).length
     : cards.length;
+const technologyAdditions = {
+  higher: [TECHNOLOGY_HIGHER, 651, 'ce17746e8c42370352bcd6cbc13f9c8cf09b69c1f62e3f5e91144b243f964563'],
+  ordinary: [TECHNOLOGY_ORDINARY, 600, '08bec3e9d34162f043903934b63c8ba8a91a25c57ebe1f76264e3c4b79054a9b'],
+} as const;
 const dcgAdditions = {
   higher: [DCG_HIGHER, 137, '4e3331295e914061f96be14d55e3689082202227750adfc970c931059e56b34e'],
   ordinary: [DCG_ORDINARY, 99, '9b331a5a62d3149d3bebb09ce1a20354f299be8b24efac627bd8b19037d1e29b'],
@@ -1349,6 +1843,74 @@ describe('Mark Bank card preservation', () => {
     expect(new Set(frozen).size, `${name}: duplicate frozen card IDs`).toBe(count);
     expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(cards.length);
     expect(idHash(frozen), `${name}: a card ID was removed or replaced`).toBe(hash);
+  });
+
+  it.each(Object.entries(technologyAdditions))('pins the Technology %s 2010-2019 additions beside the frozen set', (_, [cards, count, hash]) => {
+    // Added sitting by sitting, each a card per printed ask the census reads
+    // (reconcile.py technology): 2019 Higher 84, 2019 Ordinary 83, 2018 Higher 85
+    // (83 cards: Q8 is a printed choice, one card for its three terms), 2018 Ordinary 82,
+    // 2017 Higher 86, 2017 Ordinary 82 (79 cards: Q2, Q5 and Q8 print tariffs
+    // that are not one term per roman, so each is one card), 2016 Higher 88
+    // (87 cards: Q3's "(2+2+2)" over two romans is one card).
+    const additions = cards.map(card => card.id).filter(isTechnologyAdded);
+    expect(additions).toHaveLength(count);
+    expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
+    expect(idHash(additions)).toBe(hash);
+  });
+
+  it('pins the Engineering lane additions beside the frozen set', () => {
+    // One line per sitting, as each lands (eng_residue/<sitting>.py says why
+    // every card exists; rebuilt cards keep their ids and are not listed).
+    //   2021 HL: +9 (554 -> 563); q2-d-ii, q3-b-iii, q5-b-i, q5-b-iii, q7-c-i rebuilt in place
+    //   2021 OL: +18 (563 -> 581); q1-i, q3-d, q3-d-i, q3-d-ii, q7-a-i, q7-c-ii rebuilt in place
+    //   2022 HL: +10 (581 -> 591); q3-b-i rebuilt in place
+    //   2022 OL: +17 (591 -> 608; two more than its 15 open asks: Q3(d)'s OR branch carded per roman); q3-d, q3-d-i rebuilt in place
+    //   2023 HL: +12 (608 -> 620); q3-b-i, q3-b-ii, q3-b-iii rebuilt in place
+    //   2023 OL: +9 (620 -> 629); q2-c-ii, q3-d-i, q3-d-ii, q5-a-ii, q6-c-i, q7-b-i, q7-b-iv rebuilt in place
+    //   2024 HL: +9 (629 -> 638); q7-a-iii, q9-b-ii rebuilt in place
+    //   2024 OL: +16 (638 -> 654; Q6(c)(ii)/(iii)'s CNC branch carded apart, priced differently); q1-k, q2-b-iii, q2-c-ii, q3-a, q5-a-ii, q6-a, q6-b, q6-c-ii, q6-c-iii, q7-a-i, q7-b, q7-b-iv rebuilt in place
+    //   2025 HL: +10 (654 -> 664; Q3(b)(i) and (ii) on one card, one graph answering both); q3-b-iii rebuilt in place
+    //   2025 OL: +24 (664 -> 688); eng-2025-ol-q2-c-i stays withdrawn, its successor is q2-c-i-v2; q1-l, q2-c-ii, q3-a, q4-c-i, q4-c-iv, q5-a-i, q5-d, q6-c-i, q6-c-iii rebuilt in place
+    //   2026 HL: +89 (688 -> 777; the sitting's first cards; Q6(c)'s robotic-arm branch carded apart, priced differently)
+    //   2026 OL: +60 (777 -> 837; the sitting's first cards; Q7(c)'s PCB branch carded apart, priced differently)
+    //   2020 HL: +78 (837 -> 915; the sitting's first cards; Q1 Section B (n)-(r) newly in the census; Q7(c)'s CNC branch carded apart, priced differently)
+    //   2019 HL: +75 (915 -> 990)
+    //   2019 OL: +53 (990 -> 1043)
+    //   2018 HL: +76 (1043 -> 1119)
+    //   2018 OL: +54 (1119 -> 1173)
+    //   2017 HL: +76 (1173 -> 1249)
+    //   2017 OL: +50 (1249 -> 1299)
+    //   2016 HL: +73 (1299 -> 1372)
+    //   2016 OL: +48 (1372 -> 1420)
+    //   2015 HL: +66
+    //   2015 OL: +49
+    //   2014 HL: +70
+    //   2014 OL: +46
+    //   2013 HL: +72
+    //   2013 OL: +46
+    //   2012 HL: +72
+    //   2012 OL: +45
+    //   2011 HL: +70
+    //   2011 OL: +46
+    //   2010 HL: +69
+    //   2010 OL: +42
+    //   2022 HL deferred: +74
+    //   2023 HL deferred: +82
+    const live = new Set([...ENGINEERING_HIGHER, ...ENGINEERING_ORDINARY].map(card => card.id));
+    for (const id of engineeringAdditionIds) expect(live.has(id), `missing Engineering addition ${id}`).toBe(true);
+    expect(engineeringAdditionIds.size).toBe(ENGINEERING_ADDITIONS[0]);
+    expect(idHash([...engineeringAdditionIds])).toBe(ENGINEERING_ADDITIONS[1]);
+  });
+
+  it('pins the History additions beside the frozen set', () => {
+    // Re-pinned at every History sitting (lane batch 2): the counts and hashes
+    // are the additions as shipped, so a regeneration that drops or renames
+    // one fails here.
+    const higher = HISTORY_HIGHER.map(card => card.id).filter(id => historyEssayIds.has(id));
+    const ordinary = HISTORY_ORDINARY.map(card => card.id).filter(id => historyEssayIds.has(id));
+    expect([higher.length, ordinary.length]).toEqual(HISTORY_ADDITIONS.counts);
+    expect([idHash(higher), idHash(ordinary)]).toEqual(HISTORY_ADDITIONS.hashes);
+    for (const id of [...higher, ...ordinary]) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
   });
 
   it.each(Object.entries(dcgAdditions))('pins the DCG %s 2010-2018 additions beside the frozen set', (_, [cards, count, hash]) => {
@@ -1457,10 +2019,67 @@ describe('Mark Bank card preservation', () => {
     // and 2022 OL C2(d) split into (i) and (ii), the old id aliased onto (i):
     // 23,254 + 87 + 1 = 23,342. Then the whole-bank audit: 2024 HL B3(d)
     // split the same way (the scheme misprints its "(ii)" as "(iii)"): 23,343.
+    // Computer Science (2026-11-05, the every-printed-ask lane): its 336 cards
+    // are unchanged and each sitting's open asks are carded on top, none
+    // withdrawn. 2026 Higher, 48 asks, 48 cards: 23,391. 2026 Ordinary, 41
+    // asks, 41 cards: 23,432.
+    // 2025 Higher residue, 15 asks, 15 cards: 23,447.
+    // 2025 Ordinary residue, 8 asks, 8 cards: 23,455.
+    // 2024 Higher residue, 3 asks, 3 cards: 23,458.
+    // 2024 Ordinary residue, 3 asks, 3 cards: 23,461.
+    // 2023 Higher residue, 10 asks, 10 cards: 23,471.
+    // 2023 Ordinary residue, 10 asks, 10 cards: 23,481.
+    // 2022 Higher residue, 8 asks, 8 cards: 23,489.
+    // 2022 Ordinary residue, 16 asks, 16 cards: 23,505.
+    // 2021 Higher residue, 9 asks, 9 cards: 23,514.
+    // 2021 Ordinary residue, 4 asks, 4 cards: 23,518.
+    // 2020 Higher, 47 asks, 47 cards: 23,565.
+    // 2023 Ordinary Q13 split, -1 whole + 5 parts: 23,569.
+    // 2025 Ordinary splits, -3 whole + 5 parts: 23,571.
+    // 2022 Higher split, -1 whole + 2 parts: 23,572.
+    // 2022 Ordinary Q16 split, -1 whole + 7 parts: 23,578.
+    // 2024 Ordinary Q16 split, -1 whole + 6 parts: 23,583.
+    // 2021 Ordinary splits, -2 whole + 8 parts: 23,589.
+    // Religious Education 2026 Higher, 28 asks, 28 band-grid cards: 23,617.
+    // Religious Education 2026 Ordinary, 29 asks, 29 band-grid cards: 23,646.
+    // Religious Education 2025 Higher rebuilt in place, 28 ids kept: 23,646.
+    // Religious Education 2025 Ordinary rebuilt in place, 33 ids kept: 23,646.
+    // Religious Education 2020 Higher, 25 asks, 25 band-grid cards: 23,671.
+    // Religious Education 2019 Higher, 25 asks, 24 band-grid cards (I(b)(i) held): 23,695.
+    // Religious Education 2019 Ordinary, 23 asks, 23 band-grid cards: 23,718.
+    // Religious Education 2018 Higher, 23 asks, 22 band-grid cards (B(a)(i) held): 23,740.
+    // Religious Education 2018 Ordinary, 27 asks, 27 band-grid cards: 23,767.
+    // Religious Education 2019 HL I(b)(i) and 2018 HL B(a)(i), 2 band-grid cards: 23,769.
+    // Religious Education 2017 Higher, 21 asks, 21 band-grid cards: 23,790.
+    // Religious Education 2017 Ordinary, 26 asks, 25 band-grid cards (1 held): 23,815.
+    // Religious Education 2016 Higher, 18 asks, 18 band-grid cards: 23,833.
+    // Religious Education 2016 Ordinary, 26 asks, 20 band-grid cards (6 held): 23,853.
+    // Religious Education 2015 Higher, 24 asks, 23 band-grid cards (1 held): 23,876.
+    // Religious Education 2015 Ordinary, 26 asks, 26 band-grid cards: 23,902.
+    // Religious Education 2014 Higher, 19 asks, 19 band-grid cards: 23,921.
+    // Religious Education 2014 Ordinary, 23 asks, 20 band-grid cards (3 held): 23,941.
+    // Religious Education 2017 Higher re-read, 21 ids kept: 23,941.
+    // Religious Education 2017 Ordinary C(a) carded: 23,942.
+    // Religious Education 2016 Higher re-read, 18 ids kept: 23,942.
+    // Religious Education 2016 Ordinary, six held asks carded: 23,948.
+    // Religious Education 2015 Higher B(a)(ii) carded: 23,949.
+    // Religious Education 2015 Ordinary re-read, 26 ids kept: 23,949.
+    // Religious Education 2014 Higher re-read, 19 ids kept: 23,949.
+    // Religious Education 2014 Ordinary, three held asks carded: 23,952.
+    // Religious Education 2012 Higher, 20 asks, 20 band-grid cards: 23,972.
+    // Religious Education 2012 Ordinary, 25 asks, 25 band-grid cards: 23,997.
+    // Religious Education 2011 Higher, 20 asks, 20 band-grid cards: 24,017.
+    // Religious Education 2011 Ordinary, 24 asks, 24 band-grid cards: 24,041.
+    // Religious Education 2010 Higher, 19 asks, 19 band-grid cards: 24,060.
+    // Religious Education 2010 Ordinary, 27 asks, 27 band-grid cards: 24,087.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length
-        // DCG's 2010-2018 additions count on top of the bank the same way.
+        // Technology's 2010-2019 and DCG's 2010-2018 additions count on top of the bank the same way.
+        : name.startsWith('technology:') ? cards.filter(card => isTechnologyAdded(card.id)).length
+        : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length
         : name.startsWith('dcg:') ? cards.filter(card => isDcgAdded(card.id)).length : 0;
+    const technologyAddedCount = [...TECHNOLOGY_HIGHER, ...TECHNOLOGY_ORDINARY]
+      .filter(card => isTechnologyAdded(card.id)).length;
     const dcgAddedCount = [...DCG_HIGHER, ...DCG_ORDINARY].filter(card => isDcgAdded(card.id)).length;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
     // live non-additions plus its consolidated per-item cards, each an alias key.
@@ -1470,21 +2089,24 @@ describe('Mark Bank card preservation', () => {
     const economicsFrozenDelta = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('economics:') || name.startsWith('agricultural-science:') || name.startsWith('construction-studies:')
         || name.startsWith('geography:') || name.startsWith('english:') || name.startsWith('biology:')
-        || name.startsWith('chemistry:')
+        || name.startsWith('chemistry:') || name.startsWith('history:')
         ? frozenIds(name, cards).length - cards.length : 0;
     const artNet = artAdded('higher') + artAdded('ordinary') - artAliasIds.length;
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(23_343 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(24_087 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(23_343 + frenchAdditionIds.size + businessAdditionIds.size + dcgAddedCount
+      .toBe(24_087 + frenchAdditionIds.size + businessAdditionIds.size + technologyAddedCount + dcgAddedCount
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length
         + englishAdditionIds.size - englishAliasIds.length
         + biologyAdditionIds.size - biologyAliasIds.length
-        + chemistryAdded.size - chemistryWithdrawnShipped.length);
+        + chemistryAdded.size - chemistryWithdrawnShipped.length
+        + engineeringAdditionIds.size
+        // History (2026-11-04): its 749 frozen cards gain the essay cards: + historyEssayIds.
+        + historyEssayIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -1525,7 +2147,24 @@ describe('Mark Bank card preservation', () => {
   it('adds the reviewed Economics routes on top of the frozen 697 and resolves every withdrawn ID', () => {
     const higher = new Map(ECON_HIGHER.map(card => [card.id, card]));
     const ordinary = new Map(ECON_ORDINARY.map(card => [card.id, card]));
-    expect(economicsAdditionIds.size).toBe(192);
+    // 2026-11-04: + 70 for 2019 Higher, the first old-syllabus paper carded (192 -> 262);
+    // + 66 for 2019 Ordinary (262 -> 328); + 75 for 2020 Higher (328 -> 403); + 72 for 2018 Higher (403 -> 475);
+    // + 72 for 2018 Ordinary (475 -> 547); + 62 for 2017 Higher (547 -> 609); + 63 for 2017 Ordinary (609 -> 672);
+    // + 62 for 2016 Higher (672 -> 734); + 81 for 2016 Ordinary (734 -> 815).
+    // + 58 for 2015 Higher (815 -> 873).
+    // + 71 for 2015 Ordinary (873 -> 944).
+    // + 54 for 2014 Higher (944 -> 998).
+    // + 70 for 2014 Ordinary (998 -> 1068).
+    // + 57 for 2013 Higher (1068 -> 1125).
+    // + 70 for 2013 Ordinary (1125 -> 1195).
+    // + 60 for 2012 Higher (1195 -> 1255).
+    // + 70 for 2012 Ordinary (1255 -> 1325).
+    // + 51 for 2011 Higher (1325 -> 1376).
+    // + 71 for 2011 Ordinary (1376 -> 1447).
+    // + 54 for 2010 Higher (1447 -> 1501).
+    // + 65 for 2010 Ordinary (1501 -> 1566).
+    // + 70 for 2022 Higher, the deferred sitting (1566 -> 1636).
+    expect(economicsAdditionIds.size).toBe(1636);
     expect(economicsAliasIds).toHaveLength(36);
     for (const id of economicsAdditionIds) {
       const deck = id.includes('-hl-') ? higher : ordinary;
@@ -1542,7 +2181,7 @@ describe('Mark Bank card preservation', () => {
     }
     const additions = (level: string) => [...economicsAdditionIds].filter(id => id.includes(level)).length;
     const aliased = (level: string) => economicsAliasIds.filter(id => id.includes(level)).length;
-    expect([additions('-hl-'), aliased('-hl-'), additions('-ol-'), aliased('-ol-')]).toEqual([110, 24, 82, 12]);
+    expect([additions('-hl-'), aliased('-hl-'), additions('-ol-'), aliased('-ol-')]).toEqual([855, 24, 781, 12]);
     expect(ECON_HIGHER).toHaveLength(383 - aliased('-hl-') + additions('-hl-'));
     expect(ECON_ORDINARY).toHaveLength(314 - aliased('-ol-') + additions('-ol-'));
   });
@@ -1837,9 +2476,14 @@ describe('Mark Bank card preservation', () => {
     // carded as (i) and (ii) with the old id reading its progress from (i).
     const technologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('tech-'));
     expect(technologyAliasIds).toEqual(['tech-2022-ol-c2d', 'tech-2024-hl-b3d']);
+    // ...and the Computer Science batch 1b splits (cs- keys, coordinator 5 Nov): a
+    // shipped card for a whole question beside that question's part cards is
+    // withdrawn onto the question's first new part card.
+    const computerScienceAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('cs-'));
+    expect(computerScienceAliasIds).toEqual(['cs-2021-ol-q15', 'cs-2021-ol-q16', 'cs-2022-hl-q14', 'cs-2022-ol-q16', 'cs-2023-ol-q13', 'cs-2024-ol-q16', 'cs-2025-ol-q13', 'cs-2025-ol-q14', 'cs-2025-ol-q15']);
     expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length
       + geographyAliasedIds.length + englishAliasIds.length + biologyAliasIds.length
-      + chemistryAuditAliases.length + technologyAliasIds.length);
+      + chemistryAuditAliases.length + technologyAliasIds.length + computerScienceAliasIds.length);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -1897,8 +2541,9 @@ describe('Mark Bank card preservation', () => {
     // withdrew, now alias keys: net 0), and its audit aliased eighteen
     // pre-audit ids the base build never shipped (+18).
     // Technology is a new subject, outside this tally; its alias key is not
-    // one of these cards.
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length - technologyAliasIds.length).toBe(9_768 + 18);
+    // one of these cards. Nor are Computer Science's (a new subject too).
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length - technologyAliasIds.length
+      - computerScienceAliasIds.length).toBe(9_768 + 18);
   });
 
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {

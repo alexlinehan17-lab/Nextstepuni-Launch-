@@ -675,5 +675,24 @@ for old, canonical, label, options, per in WITHDRAWN:
          f'Withdrawn: this part is answered within {D.prefix + canonical}.', stem=base.get('stem', ''),
          section=base['section'])
 
+def shipped_row_shapes(cards):
+    """The row shapes #294 gave this paper's diagram labels (2026-10-27).
+
+    #294 edited the authored file and the deck, not this script, so a
+    regeneration would have reverted them: the 11 labels are an option group at
+    1 mark each, split from the lifted row itself.
+    """
+    for c in cards:
+        if c['id'] == 'econ-2022-hl-q12-b-ii':
+            r = c['rows'][0]
+            assert r['id'] == 'r-labels' and r['verbatim'].startswith('1 mark per label = 11 marks ')
+            labels = r['verbatim'][len('1 mark per label = 11 marks '):].split()
+            assert len(labels) == 11, labels
+            c['rows'][0] = {'id': r['id'], 'kind': 'anyN', 'verbatim': r['verbatim'], 'marks': r['marks'],
+                            'openList': r['openList'], 'contextNote': r['contextNote'],
+                            'group': {'claimMax': 11, 'perOption': 1, 'options': labels}}
+
+
 if __name__ == '__main__':
+    shipped_row_shapes(cards)
     emit(cards)

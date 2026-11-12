@@ -3761,6 +3761,17 @@ for (const [levelCode, langCode, year, n, topicIndexes] of economicsRuntime.ques
 }
 
 for (const [levelCode, langCode, year, fileid, n, indexes] of economicsRuntime.secReviewedQuestionMappings) {
+  // A deferred sitting ("LC034ALP000EV-deferred.pdf") is its own booklet,
+  // numbered 1-16 like June's: its reviews join on the booklet, so they never
+  // replace June's review of the question with the same number.
+  if (/-deferred\.pdf$/i.test(fileid)) {
+    FILE_QUESTION_TOPICS.set(
+      fileQuestionKey('economics', levelCode === 'h' ? 'higher' : 'ordinary', year, 'main', fileid, n,
+        'single', langCode === 'e' ? 'ev' : 'iv'),
+      indexes.map(index => economicsRuntime.topics[index][0]),
+    );
+    continue;
+  }
   SEC_REVIEWED_QUESTION_TOPICS.set(
     questionKey('economics', levelCode === 'h' ? 'higher' : 'ordinary', year,
       'main', n, 'single', langCode === 'e' ? 'ev' : 'iv'),
@@ -3932,6 +3943,49 @@ for (const [levelCode, yearOffset, n, topicIndexes] of technologyRuntime.questio
     ),
     topicIndexes.map(topicIndex => technologyTopicIdentity(topicIndex).id),
   );
+}
+
+// A Technology option question belongs on its option's page: Section C prints
+// Option 1 Applied Control Systems, 2 Electronics and Control, 3 ICT,
+// 4 Manufacturing Systems and 5 Materials Technology as Questions 1 to 5 in
+// every sitting 2010-2026. The factual file-scoped headings file seven of
+// them by content alone (2014 Higher C2, 2015 Ordinary C1, 2017 Higher C4 and
+// C5, 2017 Ordinary C3, 2019 Ordinary C3, 2026 Higher C3), and an exact file
+// match shadows the question-level mapping, so a student revising that option
+// never met them. The option is added beside the reference's own headings,
+// which stay, in every year.
+const TECHNOLOGY_OPTION_TOPICS: Record<PaperLevel, string[]> = {
+  higher: [
+    'technology-higher-option-applied-control-systems',
+    'technology-higher-option-electronics-control',
+    'technology-higher-option-information-communications-technology',
+    'technology-higher-option-manufacturing-systems',
+    'technology-higher-option-materials-technology',
+  ],
+  ordinary: [
+    'technology-ordinary-option-1-applied-control-systems',
+    'technology-ordinary-option-2-electronics-control',
+    'technology-ordinary-option-3-information-communications-technology',
+    'technology-ordinary-option-4-manufacturing-systems',
+    'technology-ordinary-option-5-materials-technology',
+  ],
+} as Record<PaperLevel, string[]>;
+for (const reference of technologyPartReferences) {
+  const option = /^C([1-5])$/.exec(reference.n);
+  if (!reference.fileid || !option) continue;
+  const topicId = TECHNOLOGY_OPTION_TOPICS[reference.level][Number(option[1]) - 1];
+  if (!TOPICS_BY_ID.has(topicId)) throw new Error(`Unknown Technology option topic: ${topicId}`);
+  for (const fileid of new Set([
+    reference.fileid,
+    reference.fileid.replace(/EV(?=\.pdf$)/i, 'IV'),
+    reference.fileid.replace(/IV(?=\.pdf$)/i, 'EV'),
+  ])) {
+    const key = fileQuestionKey(
+      reference.subjectId, reference.level, reference.year, 'main', fileid, reference.n, reference.paperKey,
+    );
+    const ids = FILE_QUESTION_TOPICS.get(key) ?? [];
+    if (!ids.includes(topicId)) FILE_QUESTION_TOPICS.set(key, [...ids, topicId]);
+  }
 }
 
 // Chemistry shares the audited mapping between both official-language

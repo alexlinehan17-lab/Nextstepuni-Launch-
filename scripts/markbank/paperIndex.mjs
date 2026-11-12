@@ -97,11 +97,22 @@ export const corpusSubjectFor = (subjectId, questionRef) =>
     ? 'history-early-modern'
     : subjectId);
 
-/** The sitting of one subject, year and level in its authored paper language. */
-export const paperEntry = (subjectId, year, level) =>
+/** The sitting of one subject, year and level in its authored paper language.
+ *  Given a paper file id, the entry that holds that paper (a deferred sitting
+ *  is a second entry for the same year), as on codex/home-economics-
+ *  continuation-20261101. */
+export const paperEntry = (subjectId, year, level, paperFileid) =>
   (paperIndex[CORPUS_KEY[subjectId] ?? subjectId] ?? [])
     .find(e => e.year === year && e.level === level
-      && e.lang === (subjectId === 'irish' ? 'iv' : 'ev'));
+      && e.lang === (subjectId === 'irish' ? 'iv' : 'ev')
+      && (!paperFileid || e.papers.some(p => p.doc?.f.replace(/\.pdf$/, '') === paperFileid.replace(/\.pdf$/, ''))));
+
+/** The SEC's DEFERRED sitting of one subject, year and level (from 2022), in
+ *  English: its own index entry, listed after June's and marked
+ *  `sitting: "deferred"`. Economics, Engineering and History ask for it here. */
+export const deferredPaperEntry = (subjectId, year, level) =>
+  (paperIndex[CORPUS_KEY[subjectId] ?? subjectId] ?? [])
+    .find(e => e.year === year && e.level === level && e.lang === 'ev' && e.sitting === 'deferred');
 
 /**
  * The sections a paper's label covers: "Section A&B" -> {A, B}, "Section 2 & 3"
@@ -311,6 +322,15 @@ export function resolvePaperFileid(subjectId, year, level, section) {
   }
   const direct = entry.papers.find(p => labelCovers(p.label).has(section));
   if (direct) return stripPdf(direct.doc?.f);
+  // Technology 2010-2018 prints Sections B AND C in one booklet, component
+  // 015 (its cover: "Section B - Core ... Section C - Options"), which the
+  // index labels "Section B" alone; from 2019 the same booklet (039) is
+  // "Section B&C". A Section C card belongs to that document, named by its
+  // component, not by a guess.
+  if (subjectId === 'technology' && section === 'C') {
+    const bc = entry.papers.filter(p => labelCovers(p.label).has('B') && componentOf(p.doc?.f) === '015');
+    if (bc.length === 1) return stripPdf(bc[0].doc?.f);
+  }
   // The 2022 Irish OL Paper 1 is labelled only "Exam Paper" in the SEC index,
   // beside an explicitly labelled Paper Two.  The sole unnumbered sibling is
   // therefore Paper 1; this evidence-based fallback stays null for ambiguous

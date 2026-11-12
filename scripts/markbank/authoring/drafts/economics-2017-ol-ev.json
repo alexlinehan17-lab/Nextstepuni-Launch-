@@ -1,0 +1,944 @@
+{
+  "subjectId": "economics",
+  "year": 2017,
+  "level": "ordinary",
+  "lang": "ev",
+  "fileid": "LC034GLP000EV",
+  "status": "independent-census-before-authoring",
+  "completeSubject": false,
+  "reviewedAt": "2026-11-04",
+  "visuallyInspectedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "visuallyInspectedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "unreviewedPaperPages": [],
+  "unreviewedSchemePages": [],
+  "paperSha256": "44276740a43074bba23f38431e47f6242311462f960ad786e33edb6f09f7ed41",
+  "schemeSha256": "af03a0bfb29e33cedb842e564ca53224a34393d6914435afd37438de0acaf8fa",
+  "questions": [
+    {
+      "n": "1",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        5
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 16,
+          "cardId": "econ-2017-ol-sa-q1",
+          "topicId": "economics-3-1"
+        }
+      ],
+      "boundaryReason": "4 x 4 the four matches (A 5, B 4, C 1, D 2): one card, a row per tax.",
+      "canonicalNodeIds": [
+        "economics-3-1"
+      ],
+      "topicReason": "VAT, DIRT, PAYE and customs duty are taxes: Fiscal Policy & the Budget (3-1)."
+    },
+    {
+      "n": "2",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        5
+      ],
+      "tasks": [
+        {
+          "key": "i",
+          "marks": 10,
+          "cardId": "econ-2017-ol-sa-q2-i",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "ii",
+          "marks": 6,
+          "cardId": "econ-2017-ol-sa-q2-ii",
+          "topicId": "economics-1-5"
+        }
+      ],
+      "boundaryReason": "i 3 + 3 + 4 the quantity axis, the costs axis and the fixed-cost line at €3,000 (hidden solution graph); ii 6 the explanation and an example, printed as one 6: questionTotal, unpriced rows.",
+      "canonicalNodeIds": [
+        "economics-1-5"
+      ],
+      "topicReason": "Fixed costs are Costs of Production, Revenue & Profit (1-5)."
+    },
+    {
+      "n": "3",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        6
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 16,
+          "cardId": "econ-2017-ol-sa-q3",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "boundaryReason": "2 x 8 one effect on retailers from three and one on the government’s finances from four: two heading rows.",
+      "canonicalNodeIds": [
+        "economics-4-2",
+        "economics-3-1"
+      ],
+      "topicReason": "Cross-border shopping is International Trade & Competitiveness (4-2); its effect on the government’s finances (VAT, excise duty, social welfare) is Fiscal Policy & the Budget (3-1)."
+    },
+    {
+      "n": "4",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        6
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 16,
+          "cardId": "econ-2017-ol-sa-q4",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "boundaryReason": "4 x 4 the four ticks, a row each.",
+      "canonicalNodeIds": [
+        "economics-4-2"
+      ],
+      "topicReason": "Visible and invisible exports and imports are International Trade & Competitiveness (4-2)."
+    },
+    {
+      "n": "5",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        6
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 16,
+          "cardId": "econ-2017-ol-sa-q5",
+          "topicId": "economics-4-1"
+        }
+      ],
+      "boundaryReason": "5 + 6 + 5 the three names (IMF 5, ECB 6, WTO 5), a row each.",
+      "canonicalNodeIds": [
+        "economics-4-1",
+        "economics-3-3"
+      ],
+      "topicReason": "The IMF and the WTO are Globalisation (4-1); the ECB is Monetary Policy & Inflation (3-3)."
+    },
+    {
+      "n": "6",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        7
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 17,
+          "cardId": "econ-2017-ol-sa-q6",
+          "topicId": "economics-0-1"
+        }
+      ],
+      "boundaryReason": "7 opportunity cost and 2 x 5 two advantages from five: one card, a row for the term and a two-claim row.",
+      "canonicalNodeIds": [
+        "economics-0-1",
+        "economics-3-1",
+        "economics-3-5"
+      ],
+      "topicReason": "Opportunity cost is Scarcity & Choice (0-1); spending on third-level education is Fiscal Policy & the Budget (3-1), and its advantages (a better educated workforce, productivity, FDI) are also Economic Growth (3-5)."
+    },
+    {
+      "n": "7",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        7
+      ],
+      "tasks": [
+        {
+          "key": "i",
+          "marks": 7,
+          "cardId": "econ-2017-ol-sa-q7-i",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "ii",
+          "marks": 10,
+          "cardId": "econ-2017-ol-sa-q7-ii",
+          "topicId": "economics-1-1"
+        }
+      ],
+      "boundaryReason": "i 7 the new demand curve D1 drawn and labelled (hidden solution diagram); ii 2 x 5 two reasons from five.",
+      "canonicalNodeIds": [
+        "economics-1-1"
+      ],
+      "topicReason": "A shift in the demand for new cars is The Consumer (1-1)."
+    },
+    {
+      "n": "8",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        8
+      ],
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 17,
+          "cardId": "econ-2017-ol-sa-q8",
+          "topicId": "economics-1-3"
+        }
+      ],
+      "boundaryReason": "10 + 7 one advantage from six and one disadvantage from four, priced on one ladder by order: the first correct response 10, the second 7.",
+      "canonicalNodeIds": [
+        "economics-1-3",
+        "economics-3-1",
+        "economics-0-2"
+      ],
+      "topicReason": "New taxes on disposable packaging are Government Intervention (1-3), as taxes also Fiscal Policy & the Budget (3-1), and as a measure against waste Sustainability (0-2)."
+    },
+    {
+      "n": "9",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        8
+      ],
+      "tasks": [
+        {
+          "key": "i",
+          "marks": 12,
+          "cardId": "econ-2017-ol-sa-q9-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "ii",
+          "marks": 5,
+          "cardId": "econ-2017-ol-sa-q9-ii",
+          "topicId": "economics-2-0"
+        }
+      ],
+      "boundaryReason": "i 4 + 4 + 4 the three labels; ii 5 No, with the reason (AR = AC).",
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "topicReason": "Long-run equilibrium in perfect competition is Market Structures (2-0)."
+    },
+    {
+      "n": "B1",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        9,
+        10,
+        11
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 24,
+          "cardId": "econ-2017-ol-sb-q1-a-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 6,
+          "cardId": "econ-2017-ol-sb-q1-a-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/i-ii",
+          "marks": 21,
+          "cardId": "econ-2017-ol-sb-q1-b",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c/i",
+          "marks": 8,
+          "cardId": "econ-2017-ol-sb-q1-c-i",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/ii",
+          "marks": 16,
+          "cardId": "econ-2017-ol-sb-q1-c-ii",
+          "topicId": "economics-1-3"
+        }
+      ],
+      "boundaryReason": "Five cards for six asks, totalling 75. a(i) 6 @ 4 the six labels; a(ii) 6 for P1 and C1 together (hidden solution diagram): questionTotal, unpriced rows. b(i) and (ii) share one 3 x 7, a barrier with its note, so one card covers both: three from six. c(i) 1 x 8 from four; c(ii) 2 x 8 from four.",
+      "canonicalNodeIds": [
+        "economics-2-0",
+        "economics-1-3"
+      ],
+      "topicReason": "Monopoly and barriers to entry are Market Structures (2-0); state companies and their losses are Government Intervention (1-3)."
+    },
+    {
+      "n": "B2",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        12,
+        13,
+        14
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 10,
+          "cardId": "econ-2017-ol-sb-q2-a-i",
+          "topicId": "economics-0-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 10,
+          "cardId": "econ-2017-ol-sb-q2-a-ii",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "b/i-iii",
+          "marks": 30,
+          "cardId": "econ-2017-ol-sb-q2-b",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "c/i",
+          "marks": 12,
+          "cardId": "econ-2017-ol-sb-q2-c-i",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "c/ii",
+          "marks": 13,
+          "cardId": "econ-2017-ol-sb-q2-c-ii",
+          "topicId": "economics-1-4"
+        }
+      ],
+      "boundaryReason": "Five cards for seven asks, totalling 75. a(i) 2 x 5 any two of three characteristics; a(ii) 2 x 5 any two of three terms. b(i)-(iii) share one graph priced D 10 (5 points at 2), S 10 (5 points at 2), the four labels P, Q, D/C and S/C 4 on one line, and P1 and Q1 2 x 3: the labels line spans (i) and (ii) and the scheme prints no Summary of Mark Allocations to split it, so one card covers the three (hidden solution graph). c(i) 6 x 2 the six symbols; c(ii) 5 the answer + 8 the reason.",
+      "canonicalNodeIds": [
+        "economics-0-1",
+        "economics-1-1",
+        "economics-1-0",
+        "economics-1-4"
+      ],
+      "topicReason": "Economic goods and their characteristics are Scarcity & Choice (0-1); normal, substitute and complementary goods are The Consumer (1-1); market demand, supply and equilibrium are The Market Economy (1-0); income elasticity of demand is Elasticity (1-4)."
+    },
+    {
+      "n": "B3",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        15,
+        16,
+        17
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 20,
+          "cardId": "econ-2017-ol-sb-q3-a",
+          "topicId": "economics-0-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 14,
+          "cardId": "econ-2017-ol-sb-q3-b-i",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "b/ii",
+          "marks": 8,
+          "cardId": "econ-2017-ol-sb-q3-b-ii",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "b/iii",
+          "marks": 8,
+          "cardId": "econ-2017-ol-sb-q3-b-iii",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "c/i",
+          "marks": 12,
+          "cardId": "econ-2017-ol-sb-q3-c-i",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 13,
+          "cardId": "econ-2017-ol-sb-q3-c-ii",
+          "topicId": "economics-3-2"
+        }
+      ],
+      "boundaryReason": "Six tasks totalling 75. a 4 x 5 the four factors. b(i) 2 x 7 (4 + 3) public and private sector with an example of each; b(ii) 1 x 8 (4 + 4) from five; b(iii) 1 x 8 (4 + 4) from six. c(i) 2 x 6 (3 + 3) from seven; c(ii) 7 (4 + 3) + 6 (3 + 3) by order, two measures from five.",
+      "canonicalNodeIds": [
+        "economics-0-1",
+        "economics-2-1",
+        "economics-3-2",
+        "economics-3-3"
+      ],
+      "topicReason": "The factors of production are Scarcity & Choice (0-1); public and private sector pay and wage differentials are The Labour Market (2-1); a wage increase’s inflation is also Monetary Policy & Inflation (3-3); emigrants returning are Employment & Unemployment (3-2)."
+    },
+    {
+      "n": "B4",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        18,
+        19,
+        20
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 10,
+          "cardId": "econ-2017-ol-sb-q4-a-i",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "a/ii",
+          "marks": 5,
+          "cardId": "econ-2017-ol-sb-q4-a-ii",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "a/iii",
+          "marks": 10,
+          "cardId": "econ-2017-ol-sb-q4-a-iii",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "b/i",
+          "marks": 12,
+          "cardId": "econ-2017-ol-sb-q4-b-i",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "b/ii",
+          "marks": 14,
+          "cardId": "econ-2017-ol-sb-q4-b-ii",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "c/i",
+          "marks": 8,
+          "cardId": "econ-2017-ol-sb-q4-c-i",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "c/ii",
+          "marks": 16,
+          "cardId": "econ-2017-ol-sb-q4-c-ii",
+          "topicId": "economics-3-3"
+        }
+      ],
+      "boundaryReason": "Seven tasks totalling 75. a(i) 2 x 5 money and barter; a(ii) 1 x 5 from three; a(iii) 2 x 5 from four. b(i) 2 x 6 interest rate and savings; b(ii) 2 x 7 (4 + 3) from seven. c(i) 8; c(ii) 2 x 8 (4 + 4) any two of three developments, each with its statement and explanation.",
+      "canonicalNodeIds": [
+        "economics-3-4",
+        "economics-3-3"
+      ],
+      "topicReason": "Money, barter, interest rates and savings are Financial Sector (3-4); price inflation is Monetary Policy & Inflation (3-3)."
+    },
+    {
+      "n": "B5",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        21,
+        22,
+        23
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 5,
+          "cardId": "econ-2017-ol-sb-q5-a-i",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 10,
+          "cardId": "econ-2017-ol-sb-q5-a-ii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "a/iii",
+          "marks": 6,
+          "cardId": "econ-2017-ol-sb-q5-a-iii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b/i",
+          "marks": 5,
+          "cardId": "econ-2017-ol-sb-q5-b-i",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/ii",
+          "marks": 15,
+          "cardId": "econ-2017-ol-sb-q5-b-ii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b/iii",
+          "marks": 10,
+          "cardId": "econ-2017-ol-sb-q5-b-iii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "c/i",
+          "marks": 8,
+          "cardId": "econ-2017-ol-sb-q5-c-i",
+          "topicId": "economics-3-5"
+        },
+        {
+          "key": "c/ii",
+          "marks": 16,
+          "cardId": "econ-2017-ol-sb-q5-c-ii",
+          "topicId": "economics-3-5"
+        }
+      ],
+      "boundaryReason": "Eight tasks totalling 75. a(i) 5; a(ii) 10 (2 + 3 + 3 + 2, printed beside the 1, the 0.15, the 0.25 and the 2.5); a(iii) 6 (2 + 2 + 2, beside the €10 million, the 2.5 and the €25 million). b(i) 5; b(ii) 3 x 5 the three lines; b(iii) 2 x 5 any two of three pairs. c(i) 8; c(ii) 2 x 8 (4 + 4) from six.",
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-4-2",
+        "economics-3-5"
+      ],
+      "topicReason": "The multiplier and the circular flow of income are National Income (3-0); an open economy is International Trade & Competitiveness (4-2); economic growth is Economic Growth (3-5)."
+    },
+    {
+      "n": "B6",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        24,
+        25,
+        26,
+        27
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 5,
+          "cardId": "econ-2017-ol-sb-q6-a-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 10,
+          "cardId": "econ-2017-ol-sb-q6-a-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/iii",
+          "marks": 10,
+          "cardId": "econ-2017-ol-sb-q6-a-iii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b",
+          "marks": 24,
+          "cardId": "econ-2017-ol-sb-q6-b",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/i",
+          "marks": 16,
+          "cardId": "econ-2017-ol-sb-q6-c-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 10,
+          "cardId": "econ-2017-ol-sb-q6-c-ii-yes",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 10,
+          "cardId": "econ-2017-ol-sb-q6-c-ii-no",
+          "topicId": "economics-3-1"
+        }
+      ],
+      "boundaryReason": "Six tasks totalling 75. a(i) 5 (1 + 1 + 1 + 2, printed beside the two figures, the minus sign and the €2,697m); a(ii) 2 x 5 one example each side from seven; a(iii) 2 x 5 (3 + 2) the two effects. b 4 x 6, one argument for and one against any two of three measures: one card, a two-claim row a side. c(i) 2 x 8 (4 + 4) from four; c(ii) 2 x 5 (3 + 2): YES and NO each with its own list, so one route per side, counted once.",
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-3-2"
+      ],
+      "topicReason": "The current budget, its income and spending, Budget 2017 measures and taxation rates are Fiscal Policy & the Budget (3-1); falling unemployment is Employment & Unemployment (3-2)."
+    },
+    {
+      "n": "B7",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        28,
+        29,
+        30
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 9,
+          "cardId": "econ-2017-ol-sb-q7-a-i",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "a/ii",
+          "marks": 8,
+          "cardId": "econ-2017-ol-sb-q7-a-ii",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "a/iii",
+          "marks": 8,
+          "cardId": "econ-2017-ol-sb-q7-a-iii",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/i",
+          "marks": 8,
+          "cardId": "econ-2017-ol-sb-q7-b-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/ii",
+          "marks": 16,
+          "cardId": "econ-2017-ol-sb-q7-b-ii",
+          "topicId": "economics-4-1"
+        },
+        {
+          "key": "c/i",
+          "marks": 6,
+          "cardId": "econ-2017-ol-sb-q7-c-i",
+          "topicId": "economics-4-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 20,
+          "cardId": "econ-2017-ol-sb-q7-c-ii",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "boundaryReason": "Seven tasks totalling 75. a(i) 9; a(ii) 8 the balance and deficit, printed as one 8: questionTotal, unpriced rows; a(iii) 8 (1 + 1 + 1, 1 + 1 + 1 and 2, printed beside each figure and the surplus). b(i) 8; b(ii) 2 x 8 (4 + 4) from nine. c(i) 6; c(ii) 2 x 10 (4 + 6) any two of three areas.",
+      "canonicalNodeIds": [
+        "economics-4-2",
+        "economics-3-1",
+        "economics-4-1"
+      ],
+      "topicReason": "The balance of trade and Brexit are International Trade & Competitiveness (4-2); corporation tax is Fiscal Policy & the Budget (3-1); where a multinational locates and the EU are Globalisation (4-1)."
+    },
+    {
+      "n": "B8",
+      "paperPages": [
+        10
+      ],
+      "schemePages": [
+        31,
+        32,
+        33
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 9,
+          "cardId": "econ-2017-ol-sb-q8-a-i",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 5,
+          "cardId": "econ-2017-ol-sb-q8-a-ii",
+          "topicId": "economics-3-5"
+        },
+        {
+          "key": "a/iii",
+          "marks": 16,
+          "cardId": "econ-2017-ol-sb-q8-a-iii",
+          "topicId": "economics-3-5"
+        },
+        {
+          "key": "b",
+          "marks": 20,
+          "cardId": "econ-2017-ol-sb-q8-b",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/i",
+          "marks": 9,
+          "cardId": "econ-2017-ol-sb-q8-c-i",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/ii",
+          "marks": 16,
+          "cardId": "econ-2017-ol-sb-q8-c-ii",
+          "topicId": "economics-3-5"
+        }
+      ],
+      "boundaryReason": "Six tasks totalling 75. a(i) 9; a(ii) 5; a(iii) 2 x 8 (4 + 4) any two of three areas. b 2 x 10 (5 + 5) from seven. c(i) 9; c(ii) 2 x 8 (4 + 4) from four.",
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-3-5",
+        "economics-1-3",
+        "economics-2-1",
+        "economics-3-1"
+      ],
+      "topicReason": "The CSO is National Income (3-0), as 2018 OL files it; the census and a growing population are Economic Growth (3-5), as are its effect on the labour market (The Labour Market, 2-1) and state services (Fiscal Policy & the Budget, 3-1); obesity measures and privatisation are Government Intervention (1-3); rural broadband’s advantages are Economic Growth (3-5)."
+    }
+  ],
+  "selections": [
+    {
+      "page": 1,
+      "text": "Answer four questions.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section B); every printed task stays in the census."
+    },
+    {
+      "page": 1,
+      "text": "Answer six of the nine short response type questions in the spaces provided.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section A); every printed task stays in the census."
+    },
+    {
+      "page": 1,
+      "text": "Answer six questions from Section A and four questions from Section B.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; every printed task stays in the census."
+    },
+    {
+      "page": 1,
+      "text": "Page 1 of 10",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 2,
+      "text": "(One explanation has no match.)",
+      "classification": "not-a-task-selection",
+      "reason": "Section A Q1 instruction, read on \"One\"; one card, four matches."
+    },
+    {
+      "page": 2,
+      "text": "Answer six of the nine short response type questions in the spaces provided.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section A); every printed task stays in the census."
+    },
+    {
+      "page": 2,
+      "text": "Page 2 of 10",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 3,
+      "text": "4. Indicate by means of a tick () the category to which each good or service belongs:",
+      "classification": "answer-classification",
+      "reason": "Section A Q4 each item’s category is the answer; one card, four ticks."
+    },
+    {
+      "page": 3,
+      "text": "Page 3 of 10",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 4,
+      "text": "(ii) Is the firm earning supernormal profit? Yes / No.",
+      "classification": "answer-classification",
+      "reason": "Section A Q9(ii) yes or no is the answer (No, as AR = AC); one card."
+    },
+    {
+      "page": 4,
+      "text": "Circle your choice and explain your answer.",
+      "classification": "answer-classification",
+      "reason": "Section A Q9(ii) the circled answer and its reason; one card."
+    },
+    {
+      "page": 4,
+      "text": "Page 4 of 10",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 5,
+      "text": "Answer four questions.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection (Section B); every printed task stays in the census."
+    },
+    {
+      "page": 5,
+      "text": "Page 5 of 10",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 6,
+      "text": "(i) Explain any two of the underlined terms, with reference to the Apple iPhone 7.",
+      "classification": "finite-route",
+      "reason": "Section B Q2(a)(i) any two of three characteristics: one card claimed twice at 5."
+    },
+    {
+      "page": 6,
+      "text": "(ii) Explain any two of the following economic terms:",
+      "classification": "finite-route",
+      "reason": "Section B Q2(a)(ii) any two of three terms: one card claimed twice at 5."
+    },
+    {
+      "page": 6,
+      "text": "Page 6 of 10",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 7,
+      "text": "(ii) State one economic effect which any two of the following developments may have on the",
+      "classification": "finite-route",
+      "reason": "Section B Q4(c)(ii) any two of three developments: one card claimed twice at 8."
+    },
+    {
+      "page": 7,
+      "text": "Page 7 of 10",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 7,
+      "text": "deciding whether to save or not. (26 marks)",
+      "classification": "not-a-task-selection",
+      "reason": "Section B Q4(b)(ii) ask wording, read on \"or\"; not a selection."
+    },
+    {
+      "page": 8,
+      "text": "(c) One of the aims of government is to achieve economic growth.",
+      "classification": "not-a-task-selection",
+      "reason": "Section B Q5(c) stimulus, read on \"One\"; not a selection."
+    },
+    {
+      "page": 8,
+      "text": "Page 8 of 10",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 8,
+      "text": "any two of the following:",
+      "classification": "finite-route",
+      "reason": "Section B Q5(b)(iii) any two of three pairs: one card claimed twice at 5."
+    },
+    {
+      "page": 9,
+      "text": "(b) Outline one economic argument in favour of and one economic argument against any two of",
+      "classification": "finite-route",
+      "reason": "Section B Q6(b) any two of three Budget 2017 measures, one argument for and one against each: one card, two claims a side at 6."
+    },
+    {
+      "page": 9,
+      "text": "(ii) Using the above data, calculate the Balance of Trade and state if it is a surplus or deficit.",
+      "classification": "answer-classification",
+      "reason": "Section B Q7(a)(ii) surplus or deficit is the answer (a deficit); one card."
+    },
+    {
+      "page": 9,
+      "text": "Page 9 of 10",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 9,
+      "text": "Trade and state if it is a surplus or deficit. Show your workings. (25 marks)",
+      "classification": "answer-classification",
+      "reason": "Section B Q7(a)(iii) surplus or deficit is the answer (a surplus); one card."
+    },
+    {
+      "page": 9,
+      "text": "any two of the following:",
+      "classification": "finite-route",
+      "reason": "Section B Q7(c)(ii) any two of three areas: one card claimed twice at 10."
+    },
+    {
+      "page": 10,
+      "text": "Page 10 of 10",
+      "classification": "not-a-task-selection",
+      "reason": "Page footer, read on \"of\"; not a selection."
+    },
+    {
+      "page": 10,
+      "text": "may have on any two of the following:",
+      "classification": "finite-route",
+      "reason": "Section B Q8(a)(iii) any two of three areas: one card claimed twice at 8."
+    }
+  ],
+  "reviewNote": "Review 2026-11-04 from a paired visual sweep of all 12 paper and 36 scheme pages (scheme pages 1-4 are the SEC cover, the note on published schemes, the title page and the notes and index; scheme pages 34-35 are blank and 36 the back cover, as paper pages 11-12 are blank; scheme page numbers here are the PDF’s, two ahead of the printed ones; this scheme prints no Summary of Mark Allocations, so every tariff is read beside its part). The old-syllabus paper: Section A nine short questions (answer six), Section B eight long questions (answer four) numbered 1-8 again, keyed B1-B8 as the Atlas numbers them. 63 routes for 65 printed asks (12 Section A + 53 Section B), 30 raw directive lines classified. Every stem and ask is sliced from the paper and every marking point from the scheme (econ_2017_ol.py). Two cards cover more than one printed ask because the scheme prices them together: Section B Q1(b)(i)-(ii), a barrier with its note at 7, and Q2(b)(i)-(iii), one graph whose labels line spans the parts. The stance route is Section B Q6(c)(ii), YES or NO, each credited with its own list.",
+  "externalClarifications": [],
+  "curriculumSource": "https://www.curriculumonline.ie/getmedia/3342d8a2-1e22-4f17-b82b-a8134fe16eb3/LCEconomics_0219_EN.pdf",
+  "curriculumNote": "Sat on the outgoing syllabus. Its questions are filed under the Economics Topic Atlas taxonomy the Atlas uses for every sitting 2010-2026, whose canonical nodes are those of the 2019 specification; no Syllabus X-Ray link is claimed."
+}
