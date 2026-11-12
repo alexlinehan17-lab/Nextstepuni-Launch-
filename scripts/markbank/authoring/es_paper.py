@@ -911,7 +911,15 @@ class EsPaper:
                 continue
             if cur is not None:
                 cur.lines.append(text)
-            elif region.title is None and text.isupper() and len(text) > 8:
+            elif region.title is None and len(text) > 8 and (
+                    text.isupper()
+                    # (an article set in lower case ahead of the capitals: the
+                    # 2022 deferred Higher Q2(a) "El PRIMER VEHÍCULO SIN
+                    # CONDUCTOR LLEGA A LANZAROTE". Read in the deferred sitting
+                    # only: 2021 Ordinary Q2 "El JABALÍ: UN CERDO SALVAJE" is a
+                    # frozen card's, which names its instruction instead.)
+                    or (self.sitting and re.fullmatch(r'(?:El|La|Los|Las|Un|Una)\s+\S.*', text)
+                        and text.split(None, 1)[1].isupper())):
                 region.title = text
                 region.lead_lines.append(text)
             elif (region.title is not None and not region.blocks

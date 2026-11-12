@@ -42361,7 +42361,7 @@ export const CARDS: SecCard[] = [
     sourceMaterial: {
           "kind": "source-text",
           "label": "READING COMPREHENSION",
-          "title": "Answer EITHER (a) OR (b) in ENGLISH — answer in English",
+          "title": "El PRIMER VEHÍCULO SIN CONDUCTOR LLEGA A LANZAROTE — answer in English",
           "pages": [
                 11
           ],
@@ -42384,7 +42384,7 @@ export const CARDS: SecCard[] = [
     sourceMaterial: {
           "kind": "source-text",
           "label": "READING COMPREHENSION",
-          "title": "Answer EITHER (a) OR (b) in ENGLISH — answer in English",
+          "title": "El PRIMER VEHÍCULO SIN CONDUCTOR LLEGA A LANZAROTE — answer in English",
           "pages": [
                 11
           ],
@@ -42407,7 +42407,7 @@ export const CARDS: SecCard[] = [
     sourceMaterial: {
           "kind": "source-text",
           "label": "READING COMPREHENSION",
-          "title": "Answer EITHER (a) OR (b) in ENGLISH — answer in English",
+          "title": "El PRIMER VEHÍCULO SIN CONDUCTOR LLEGA A LANZAROTE — answer in English",
           "pages": [
                 11
           ],
