@@ -89,7 +89,7 @@ def schemes_dir(subject=SUBJECT):
 # 2016 and 2017 Higher head the reading "WRITTEN PAPER: SECTION A (70 MARKS)".
 # 2016 Higher prints that sub-head in capitals, "SECTION B: Question 5 (50
 # marks)": it is Q5's head inside Section B, never a unit of its own.
-UNIT = re.compile(r'^(?:WRITTEN PAPER:\s*)?SECTION\s+([ABC])\b(?!\s*:\s*Question\b)')
+UNIT = re.compile(r'^(?:WRITTEN PAPER:\s*)?SECTION\s+([ABC])\b(?!\s*:\s*(?:Question|QUESTION)\b)')
 # Where a scheme prints no head for a unit (2016-2019): the listening test opens
 # at its first item, "1. Anuncio – FIESTAS ESPAÑOLAS", and the reading at its
 # first question, "Question 1. Un éxito cubano (50 marks)" (Ordinary) or "1. (a)
@@ -137,6 +137,13 @@ HL_Q_HEAD = re.compile(r'^Q\s*\.?\s*(\d)\s+(.*?)\s*$')
 # 2016 prints the total unbracketed: "Question 1. Pesadilla en el Paraíso 50 marks".
 OL_Q_HEAD = re.compile(
     r'^Question\s+(\d)\s*\.\s*(.*?)\s*\(?(\d{1,3})\s*marks?\)?\s*$', re.I)
+# 2012 prints the number alone: "1 Justin Bieber cantante extraordinario (50 marks)".
+OL_Q_HEAD_BARE = re.compile(r'^(\d)\s+(\S.*?)\s*\((\d{1,3})\s*marks?\)\s*$', re.I)
+# A scheme's own ruling on a question it set with an error: 2012 listening Q1
+# "[Due to the typographical error in question 1 – the superfluous word
+# 'pause' … mark each part out of 5 and accept the two highest scores.]". The
+# head then prices the two best parts, and each part is worth its own tariff.
+BEST_OF = re.compile(r'accept the (?:two|three) highest scores', re.I)
 # The listening test heads each item by number and title, with the tariff on
 # the line beneath. Read for the exclusion evidence only.
 L_HEAD = re.compile(r'^(\d)\s*\.\s*(?:(?:Anuncio|Di[áa]logo|Descriptivo|'
@@ -265,6 +272,17 @@ MISPRINTS = {
     # Q1(c) "El marido de María Josefa 5 marks)". Only the tariff's bracket
     # is repaired; no word a card shows changes.
     (2013, 'hl'): [('he had a good time. (1+1+1) marks)', 'he had a good time. (1+1+1 marks)')],
+    # 2012 Higher listening Q1 leaves its third part unlettered ("Two of: - Do
+    # training …") and letters its fourth "c."; the paper prints (a)-(d), and
+    # the scheme's own note names the misprint it answers ("the superfluous
+    # word 'pause' between parts (b) and (c)").
+    # 2012 Ordinary breaks the same note's line at "(b) and" / "(c) and …",
+    # where the reader takes "(c)" for a part.
+    (2012, 'ol'): [('between parts (b) and\n(c) and potential confusion',
+                    'between parts (b) and (c) and potential confusion')],
+    (2012, 'hl'): [('(3+2 marks)\nTwo of: - Do training increasing in intensity',
+                    '(3+2 marks)\nc. Two of: - Do training increasing in intensity'),
+                   ('\nc. Certificate of completion of the Camino.', '\nd. Certificate of completion of the Camino.')],
     (2013, 'ol'): [('El marido de María Josefa 5 marks)', 'El marido de María Josefa (5 marks)')],
 }
 
@@ -294,6 +312,13 @@ LAYOUTS = {
                     '- people who want to buy an apartment in the Olympic village.'),
                    ('\na to give information about the risks', '\na. to give information about the risks')],
     (2014, 'ol'): [('\nb south (5 marks)', '\nb. south (5 marks)')],
+    # 2013 Ordinary Q2(c) prints its tariff after the first of two
+    # alternatives, the second on the line under it: "… because of his hair./
+    # (5 marks)" / "He agrees with this son."
+    (2013, 'ol'): [('(c) He thinks it is unfair to expel Alberto because of his hair./ (5 marks)\n'
+                    'He agrees with this son.',
+                    '(c) He thinks it is unfair to expel Alberto because of his hair./\n'
+                    'He agrees with this son. (5 marks)')],
     (2015, 'hl'): [("(ii) (a) It’s the company which has been in charge of the Christmas lights\n"
                     "for the past 45 years.\n(b) It will pay the costs. (2+2 marks)",
                     "(ii) - It’s the company which has been in charge of the Christmas lights\n"
@@ -795,6 +820,9 @@ class EsScheme:
     def _read_ol_a(self, block, offset):
         heads = [(i, m) for i, m in
                  ((i, OL_Q_HEAD.match(l.strip())) for i, l in enumerate(block)) if m]
+        if not heads and self.year <= OLD_LETTERS_LAST:
+            heads = [(i, m) for i, m in
+                     ((i, OL_Q_HEAD_BARE.match(l.strip())) for i, l in enumerate(block)) if m]
         for n, (i, m) in enumerate(heads):
             end = heads[n + 1][0] if n + 1 < len(heads) else len(block)
             q = int(m.group(1))
@@ -911,6 +939,13 @@ class EsScheme:
         # prints. Where they do not, every part of that question is faulted —
         # a disagreement means a part may have been lost, and neither half of
         # the tariff can be trusted then.
+        best = ' '.join(' '.join((l or '').split()) for l in block)
+        if BEST_OF.search(best):
+            note = re.search(r'\[([^\]]*' + BEST_OF.pattern + r'[^\]]*)\]', best, re.I)
+            for a in got:
+                if note and note.group(1).strip() not in (a.notes or []):
+                    a.notes = list(a.notes or []) + [note.group(1).strip()]
+            total = None
         if total is not None and got:
             summed = sum(a.total for a in got if a.total is not None)
             if summed != total or any(a.total is None for a in got):
