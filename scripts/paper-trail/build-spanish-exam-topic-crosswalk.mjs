@@ -269,6 +269,8 @@ const canonicalForSemantic = (semantic, year) => {
   if (semantic === 'higher-short') return { primary: 'spanish-5-1' };
   if (semantic === 'higher-opinion') return { primary: 'spanish-5-0', secondary: 'spanish-1-1' };
   if (semantic === 'higher-writing-all') return { primary: 'spanish-6-1', secondary: 'spanish-6-2' };
+  if (semantic === 'higher-opinion-writing') return { primary: 'spanish-6-0' };
+  if (semantic === 'higher-writing-diary-note') return { primary: 'spanish-6-3', secondary: 'spanish-6-4' };
   if (semantic === 'ordinary-comprehension') return { primary: 'spanish-5-2' };
   if (semantic === 'ordinary-writing-letter') return { primary: 'spanish-6-2' };
   if (semantic === 'ordinary-writing-note') return { primary: 'spanish-6-4' };
@@ -421,6 +423,67 @@ for (let year = 2010; year <= 2026; year++) {
       n: 'B2B', label: 'Section B · Question 2(b) · Diary Entry',
       semantic: 'ordinary-writing-diary', page: pages.choice,
     });
+  }
+}
+
+// Higher Section B Question 5 (the opinion piece on the article's theme) and
+// Section C Question 2 (a diary entry or a note) are printed questions of
+// their own, but the classic Higher maps anchor Section B by its four reading
+// questions and Section C as one "Written production" card tagged to Q1's
+// dialogue and letter. Each gets its own card, placed in print order (B5 after
+// the reading questions, C2 after Section C's card), for every sitting whose
+// Mark Bank cards file under it (scripts/markbank/authoring/es_atlas.py). The
+// pages are where es_writing.py reads each question's head on the English
+// booklet; the Irish booklet prints the same head on the same page ("5. Scríobh
+// … sa SPÁINNIS", "2. Freagair (a) IONTRÁIL DIALAINNE nó (b) NÓTA"), checked
+// on both for every year listed.
+const HIGHER_WRITING_PAGES = {
+  2021: { b5: 12, c2: 19 },
+  2022: { b5: 14, c2: 21 },
+  2023: { b5: 14, c2: 21 },
+  2024: { b5: 14, c2: 21 },
+  2025: { b5: 14, c2: 21 },
+  2020: { b5: 9, c2: 13 },
+  2026: { b5: 14, c2: 21 },
+};
+for (const [year, pages] of Object.entries(HIGHER_WRITING_PAGES)) {
+  for (const lang of ['ev', 'iv']) {
+    const paper = findPaper(Number(year), 'higher', lang, 'written');
+    const sectionC = paper.q.findIndex(question => question.semantic === 'higher-writing-all');
+    if (sectionC < 0) throw new Error(`${paperIdentity(paper)}: no Section C card to place B5 and C2 around`);
+    for (const [n, label, semantic, page, at] of [
+      ['B5', 'Section B · Question 5 · Opinion', 'higher-opinion-writing', pages.b5, sectionC],
+      ['C2', 'Section C · Question 2 · Diary Entry / Note', 'higher-writing-diary-note', pages.c2, sectionC + 2],
+    ]) {
+      if (paper.q.some(question => question.n === n)) throw new Error(`${paperIdentity(paper)}: ${n} already exists`);
+      paper.q.splice(at, 0, customQuestion({ n, label, semantic, page, year: Number(year) }));
+    }
+  }
+}
+
+// Printed questions the classic maps never anchored. The journalistic text's
+// Question 4 ("4. Explica (o expresa de otro modo) en ESPAÑOL una de las
+// frases siguientes"), wherever a map anchors that text question by question
+// and stops at Q3: a card of its own after Q3, in each edition that does (an
+// edition anchoring the text as one card already holds it). Each page is
+// where the paper prints that head, checked in both booklets.
+for (const extra of [
+  { year: 2020, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · Texto periodístico (Glovo) · Q4', semantic: 'higher-journalistic', page: 5 },
+  { year: 2025, langs: ['ev', 'iv'], after: '8', n: 'A1b4', label: 'Section A · Q1(b) Journalistic Text · Q4', semantic: 'higher-journalistic', page: 10 },
+  { year: 2024, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · 1(b) Journalistic · Q4', semantic: 'higher-journalistic', page: 10 },
+  { year: 2021, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · Q1(b) Journalistic · Q4', semantic: 'higher-journalistic', page: 8 },
+  { year: 2022, langs: ['ev'], after: '8', n: 'A1b4', label: 'Section A · 1(b) Journalistic · Q4', semantic: 'higher-journalistic', page: 10 },
+  // 2022's English map anchors no Question 2 at all ("Question 2 (10 marks)
+  // Answer EITHER (a) or (b) in ENGLISH.", p11); the Irish map has it (n 4).
+  { year: 2022, langs: ['ev'], after: 'A1b4', n: 'A2', label: 'Section A · Q2 (short texts)', semantic: 'higher-short', page: 11 },
+]) {
+  for (const lang of extra.langs) {
+    const paper = findPaper(extra.year, 'higher', lang, 'written');
+    const at = paper.q.findIndex(question => question.n === extra.after);
+    if (at < 0 || paper.q.some(question => question.n === extra.n)) {
+      throw new Error(`${paperIdentity(paper)}: cannot place ${extra.n} after ${extra.after}`);
+    }
+    paper.q.splice(at + 1, 0, customQuestion({ ...extra, year: extra.year }));
   }
 }
 
@@ -613,6 +676,8 @@ const fallbackTopicIds = (paper, question) => {
   if (question.semantic === 'higher-prescribed-historic') return [IDS.higher.prescribedHistoric];
   if (question.semantic === 'higher-journalistic') return [IDS.higher.journalistic];
   if (question.semantic === 'higher-opinion') return [IDS.higher.opinion];
+  if (question.semantic === 'higher-opinion-writing') return [IDS.higher.opinion];
+  if (question.semantic === 'higher-writing-diary-note') return [IDS.higher.diaryNote];
   if (question.semantic === 'higher-short') return [IDS.higher.short];
   if (question.semantic === 'higher-writing-all') {
     return [IDS.higher.dialogueWritten, IDS.higher.diaryNote, IDS.higher.letter];

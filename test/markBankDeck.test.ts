@@ -51,6 +51,7 @@ import { CARDS as ENGLISH_HIGHER } from '../components/MarkBank/cards/english/hi
 import { CARDS as ENGLISH_ORDINARY } from '../components/MarkBank/cards/english/ordinary';
 import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
+import { CARDS as IRISH_FOUNDATION } from '../components/MarkBank/cards/irish/foundation';
 import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
@@ -133,7 +134,7 @@ const SAMPLE_CARDS = [
   ...BUS_HIGHER, ...BUS_ORDINARY, ...HE_HIGHER, ...HE_ORDINARY,
   ...ECON_HIGHER, ...ECON_ORDINARY, ...CONS_HIGHER, ...CONS_ORDINARY,
   ...MATHS_HIGHER, ...MATHS_ORDINARY, ...ENGLISH_HIGHER, ...ENGLISH_ORDINARY,
-  ...IRISH_HIGHER, ...IRISH_ORDINARY,
+  ...IRISH_HIGHER, ...IRISH_ORDINARY, ...IRISH_FOUNDATION,
   ...ART_HIGHER, ...ART_ORDINARY,
   ...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY,
   ...CS_HIGHER, ...CS_ORDINARY, ...ENG_HIGHER, ...ENG_ORDINARY,
@@ -194,12 +195,20 @@ const ROOT = resolve(__dirname, '..');
  */
 const comparable = (text: string) => comparableScheme(text);
 
-const schemeFor = (card: { year: number; level: string; subjectId: string }) =>
+// A card from the SEC's deferred sitting ("econ-2022-hl-deferred-...",
+// "eng-2022-hl-deferred-...", "hist-2023-hl-deferred-lm-...") traces to that
+// sitting's own scheme ("2022-hl-deferred.md"), as build-deck reads it.
+const deferredCard = (card: { id?: string; subjectId: string }) =>
+  (card.subjectId === 'economics' && /^econ-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'engineering' && /^eng-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'history' && /^hist-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''));
+
+const schemeFor = (card: { id?: string; year: number; level: string; subjectId: string }) =>
   resolve(ROOT, 'examiner-reports', card.subjectId, 'schemes',
-    `${card.year}-${card.level === 'higher' ? 'hl' : 'ol'}.md`);
+    `${card.year}-${card.level === 'higher' ? 'hl' : card.level === 'foundation' ? 'fl' : 'ol'}${deferredCard(card) ? '-deferred' : ''}.md`);
 
 const schemeCache = new Map<string, string>();
-const schemeText = (card: { year: number; level: string; subjectId: string }) => {
+const schemeText = (card: { id?: string; year: number; level: string; subjectId: string }) => {
   const path = schemeFor(card);
   if (!schemeCache.has(path)) {
     schemeCache.set(path, existsSync(path) ? comparable(readFileSync(path, 'utf8')) : '');
@@ -521,7 +530,7 @@ describe('every card points at the question paper it came from', () => {
       // papers under separate SEC subject codes; the citation names which,
       // and the corpus key follows it. Same helper the build uses.
       const entry = paperEntry(
-        corpusSubjectFor(card.subjectId, card.questionRef), card.year, card.level);
+        corpusSubjectFor(card.subjectId, card.questionRef), card.year, card.level, card.paperFileid);
       if (!entry) { bad.push(`${card.questionRef}: no ${card.subjectId} paper for ${card.year} ${card.level}`); continue; }
       const strip = (f?: string) => f?.replace(/\.pdf$/, '');
       const papers = entry.papers.map((p: { doc?: { f?: string } }) => strip(p.doc?.f));
@@ -535,10 +544,15 @@ describe('every card points at the question paper it came from', () => {
   });
 
   test('and at the paper holding its own section', async () => {
-    const { resolvePaperFileid, corpusSubjectFor } =
+    const { resolvePaperFileid, corpusSubjectFor, deferredPaperEntry } =
       await import('../scripts/markbank/paperIndex.mjs');
     const bad = SAMPLE_CARDS
       .filter(c => {
+        if (deferredCard(c)) {
+          const deferred = deferredPaperEntry(c.subjectId, c.year, c.level);
+          return c.paperFileid !== null
+            && c.paperFileid !== String(deferred?.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/, '');
+        }
         // Maths uses A/B for marking-scheme tariff sections, while the source
         // documents are Paper 1 and Paper 2. Resolve from the explicit paper
         // number exactly as build-deck does; never reinterpret B as Paper 2.
@@ -585,6 +599,7 @@ describe('the size manifest matches the decks it describes', () => {
     ['english', 'ordinary', ENGLISH_ORDINARY],
     ['irish', 'higher', IRISH_HIGHER],
     ['irish', 'ordinary', IRISH_ORDINARY],
+    ['irish', 'foundation', IRISH_FOUNDATION],
     ['art', 'higher', ART_HIGHER],
     ['art', 'ordinary', ART_ORDINARY],
     ['geography', 'higher', GEOGRAPHY_HIGHER],

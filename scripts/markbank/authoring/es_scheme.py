@@ -99,7 +99,11 @@ APPENDIX = re.compile(r'^APPENDIX\b', re.I)
 #   2. (a) AND (b) = 20 marks     /  2. (a) OR (b) =10 marks
 CHOICE_HEAD = re.compile(
     r'^1\s*\.\s*\(\s*([ab])\s*\)\s*(.*?)\s*\((\d{1,3})\s*marks?\)\s*$', re.I)
-Q2_HEAD = re.compile(r'^2\s*\.\s*\(\s*a\s*\)\s*(?:AND|OR)\s*\(\s*b\s*\)\s*=?\s*'
+# The 2010-2020 schemes print the parts' groups between the letters and the
+# total — "2. (a) and (b) (2+2) + (3 + 3) + (1 +1+1) + (1 +1+1) + 4= 20 marks" —
+# and those groups are read by each item's own tariffs, never from here.
+Q2_HEAD = re.compile(r'^2\s*\.\s*\(\s*a\s*\)\s*(?:AND|OR)\s*\(\s*b\s*\)\s*'
+                     r'(?:\(?[\d\s+()]*\)?\s*)?=?\s*'
                      r'(\d{1,3})\s*marks?\s*$', re.I)
 # Inside Question 2, each alternative is a titled 10-mark text.
 #   (a) LA ABEJA ES DECLARADA EL SER VIVO MÁS IMPORTANTE DEL PLANETA (10 marks)
@@ -121,8 +125,11 @@ L_HEAD = re.compile(r'^(\d)\s*\.\s*(?:(?:Anuncio|Di[áa]logo|Descriptivo|'
                     r'El Tiempo|Una Noticia)\s*[-–—]\s*)?(.+?)\s*$', re.I)
 
 # A part of a question: "(a) …", "(i) …". Roman numerals only appear under
-# Higher Section A Question 2, where the paper prints (i), (ii), (iii).
-PART = re.compile(r'^\(\s*(i{1,3}|iv|v|[a-h])\s*\)\s*(.*)$', re.I)
+# Higher Section A Question 2, where the paper prints (i), (ii), (iii). Letters
+# run to (j): 2026 Ordinary Q1 prints ten parts, and its scheme answers "(j)
+# para ciudadanos argentinos y jubilados" on a line of its own, which a grammar
+# that stopped at (i) welded onto (i)'s answer.
+PART = re.compile(r'^\(\s*(i{1,3}|iv|v|[a-h]|j)\s*\)\s*(.*)$', re.I)
 
 # The tariff a part prints at the END of its own body: "(5m)", "(4+3+3m)",
 # "(2+2+2 marks)", "(3+3m)".
@@ -156,6 +163,8 @@ DASH = '‐‑‒–—−●•-'
 # What opens a separate answer: one of the four dashes, or the scheme's own
 # "(1)" numbering, which 2021 Ordinary uses where the other years use dashes.
 ANSWER_START = re.compile(rf'^(?:[{DASH}]\s*|\(\s*\d{{1,2}}\s*\)\s+)')
+# A roman opening a line INSIDE a lettered part's body: one of its answers.
+ROMAN_ANSWER = re.compile(r'^\(\s*(?:i{1,3}|iv|v)\s*\)\s+')
 
 # An examiner instruction or a part-credit line, which the scheme prints in
 # square brackets: "[First correct answer=4m]", "[No marks awarded if extra
@@ -293,7 +302,7 @@ class Ask:
 
     __slots__ = ('section', 'q', 'letter', 'roman', 'title', 'terms', 'total',
                  'quota', 'options', 'points', 'notes', 'line', 'fault',
-                 'head_notation')
+                 'head_notation', 'lead_points', 'bracket_parts', 'raw', 'answer_lines')
 
     def __init__(self, **kw):
         for k in self.__slots__:
@@ -434,7 +443,12 @@ class EsScheme:
         for n, (section, i, title, total) in enumerate(spans):
             end = spans[n + 1][1] if n + 1 < len(spans) else len(block)
             if title is not None:
-                self.titles[(section, None)] = _clean_title(title)
+                # "1. (b) Journalistic Text GLOVO (50 marks)" (2020) names the
+                # text by its last word after the kind of text it is; the kind
+                # is not part of the title the paper prints.
+                self.titles[(section, None)] = _clean_title(re.sub(
+                    r'^(?:Journalistic\s+Text|Prescribed\s+literature)\s*[:–-]?\s*',
+                    '', title, flags=re.I))
             self.unit_totals.setdefault(section, total)
             if section == 'A2':
                 self._read_q2(block[i + 1:end], offset + i + 1)
@@ -460,11 +474,22 @@ class EsScheme:
         for n, (i, m) in enumerate(heads):
             end = heads[n + 1][0] if n + 1 < len(heads) else len(block)
             q = int(m.group(1))
-            total, groups = parse_head_tariff(m.group(2))
+            head = m.group(2)
+            body = block[i + 1:end]
+            # The 2010-2020 schemes can print the ask's whole direction on its
+            # head: "Q. 5 3m + 3m+ 3m+ 3m = 12 marks for any four relevant
+            # points (12m)". The tariff is read up to "marks", and what follows
+            # it is the part's first printed line.
+            tail = re.match(r'^(.+?=\s*\d{1,3}\s*marks?)\s+(\S.*)$', head, re.I)
+            if tail and parse_head_tariff(tail.group(1))[0] is not None \
+                    and parse_head_tariff(head)[0] is None:
+                head = tail.group(1)
+                body = [tail.group(2)] + list(body)
+            total, groups = parse_head_tariff(head)
             if total is not None:
                 self.q_totals[(section, q)] = total
-            self._read_parts(section, q, None, None, block[i + 1:end],
-                             offset + i + 1, total, groups, m.group(2))
+            self._read_parts(section, q, None, None, body,
+                             offset + i + 1, total, groups, head)
 
     # -- Higher Section B ---------------------------------------------------
     def _read_hl_b(self, block, offset):
@@ -575,6 +600,18 @@ class EsScheme:
         # Read per token, that part became ('Q1', None, 'i') while the paper
         # printed it under (1, 'i'), and the ask went unbound.
         as_roman = heads[0][1] in ROMANS
+        if not as_roman and letter0 is None:
+            # Romans INSIDE a lettered part are its answers, not more parts:
+            # 2020 Ordinary prints "(b) (i) cheese" then "(ii) honey (3+2m)",
+            # two answers to one printed ask. A roman is a part of its own only
+            # as the ninth letter, straight after (h).
+            kept_heads = []
+            for i, tok, rest in heads:
+                if tok in ROMANS and kept_heads and not (
+                        tok == 'i' and kept_heads[-1][1] == 'h'):
+                    continue
+                kept_heads.append((i, tok, rest))
+            heads = kept_heads
 
         # The head's own decomposition prices the parts only when it has one
         # group per part. Anything else and each part is priced from the tariff
@@ -616,6 +653,9 @@ class EsScheme:
         kept, notes = _split_notes(body)
         if not kept and total is None:
             return None
+        # The romans a lettered part prints for its answers ("(i) cheese",
+        # "(ii) honey") open separate answers, exactly as a dash does.
+        kept = [ROMAN_ANSWER.sub('- ', k) for k in kept]
 
         # The part's own printed tariff. Read from every line, because the SEC
         # prices a part in two different places: once at the END of the whole
@@ -639,7 +679,18 @@ class EsScheme:
             kept = stripped
         else:
             last = max((i for i, t in enumerate(line_terms) if t), default=None)
-            if last is not None:
+            after = [k for k in stripped[last + 1:] if k] if last is not None else []
+            menu = last is not None and any(
+                QUOTA.match(' '.join(k.split())) for k in kept[:last + 1])
+            if menu and after and all(ANSWER_START.match(k) for k in after):
+                # A menu whose price is printed on an EARLY option's line:
+                # 2020 Ordinary listening Q3(c) "One of: - (99% comes) from his
+                # (daily) work in the hospital (in Spain/Valencia) (4m)" then
+                # "- people give/donate money". Dashed lines after the price
+                # are more options of the same menu, not guidance.
+                own_terms = line_terms[last]
+                kept = [k for k in stripped[:last + 1] if k] + after
+            elif last is not None:
                 own_terms = line_terms[last]
                 # Everything printed AFTER a part's price is examiner guidance
                 # for that part, not another answer: 2025 Higher Section A
@@ -657,6 +708,12 @@ class EsScheme:
         elif own_terms is not None and sum(own_terms) != sum(terms):
             fault = (f'the question head prices this part {"+".join(map(str, terms))} '
                      f'and the part itself {"+".join(map(str, own_terms))}')
+        elif own_terms is not None and len(own_terms) > len(terms):
+            # The other way round: 2026 Higher heads its journalistic Q.1
+            # "4 + 4 + 4 + 4 + 4m" and closes part (c) "Two of: … (2+2m)". The
+            # part's own split is then the finer one, and it is what the
+            # examiner pays the two answers by.
+            terms = own_terms
         # The two agree on what the part is worth but not on how it is split —
         # Higher Q.5 heads itself "4 + 4 + 4 = 12 marks" and closes the ask
         # "(12m)". The head's split is the finer of the two and is what the
@@ -664,6 +721,38 @@ class EsScheme:
         # because the number that could be wrong on a card is the total.
         if terms is not None:
             total = sum(terms)
+
+        # A required answer printed AHEAD of a menu, each priced in its own
+        # square bracket: 2026 Higher journalistic Q.1(d) "He doesn't (have to)
+        # do (household) chores [2m] like" / "two of: [1+1m]" / three dashed
+        # chores, closed "(2+1+1m)". The bracket marks where the priced answer
+        # ends; what follows it ("like") introduces the menu.
+        lead_points = []
+        if terms and any(QUOTA.match(' '.join(k.split())) for k in kept):
+            quota_at = next(i for i, k in enumerate(kept)
+                            if QUOTA.match(' '.join(k.split())))
+            q_count = QUOTA_WORDS[QUOTA.match(' '.join(kept[quota_at].split()))
+                                  .group(1).lower()]
+            lead_line = ' '.join(kept[0].split()) if quota_at == 1 else ''
+            if (quota_at == 1 and q_count > 1 and len(terms) == 2
+                    and lead_line.endswith(';') and not ANSWER_START.match(lead_line)):
+                # A required answer printed on its own line, closed by the
+                # scheme's answer separator, ahead of a menu: 2021 Higher
+                # listening Q7(b) "Extra services;" / "Two of: travel agency/
+                # hairdressers/ postal service (1+2m)". The answer takes the
+                # tariff's first term; the menu, the second, for all its
+                # answers together.
+                lead_points = [(lead_line.rstrip(';').strip(), terms[0])]
+                kept = kept[1:]
+            elif len(terms) == q_count + 1 and quota_at == 1:
+                for raw in body[:2]:
+                    s_ = ' '.join((raw or '').split())
+                    m = re.match(r'^(.*?)\s*\[\s*(\d{1,2})\s*m(?:arks?)?\s*\]', s_, re.I)
+                    if (m and int(m.group(2)) == terms[0] and m.group(1).strip()
+                            and not ANSWER_START.match(s_)):
+                        lead_points = [(m.group(1).strip(), terms[0])]
+                        kept = kept[1:]
+                        break
 
         quota = None
         rest = []
@@ -722,10 +811,32 @@ class EsScheme:
             # two halves, not two answers.
             points = [(' '.join(' '.join(answers).split()), total)]
 
+        # One answer the scheme prices in pieces with square brackets: "He
+        # delivered newspapers and bottles of milk [3m] and was a jockey [1m]
+        # (4m)". The scheme's explanatory page says a square bracket shows "a
+        # breakdown of marks within the question", so each bracket closes a
+        # component the examiner pays on its own. Read only where the brackets
+        # account for the whole tariff and nothing priced follows the last one.
+        bracket_parts = None
+        # The part's printed lines joined, square brackets kept: es_all.py
+        # reads a bracketed price on one of several answers from it.
+        raw = ' '.join(' '.join((b or '').split()) for b in body
+                       if b and not PAGE.match(b.strip()))
+        raw = PART_TARIFF.sub('', raw).strip()
+        if not quota and len(points) == 1 and total:
+            segs = re.split(r'\[\s*(\d{1,2})\s*m(?:arks?)?\s*\]', raw)
+            if len(segs) >= 5 and not segs[-1].strip(' .,;'):
+                pieces = [(segs[i].strip(' ,;'), int(segs[i + 1]))
+                          for i in range(0, len(segs) - 1, 2)]
+                if all(p for p, _n in pieces) and sum(n for _p, n in pieces) == total:
+                    bracket_parts = pieces
+
         return Ask(section=section, q=q, letter=letter, roman=roman,
                    title=self.titles.get((section, q)), terms=terms, total=total,
                    quota=quota, options=options, points=points, notes=notes,
-                   line=line, fault=fault, head_notation=notation)
+                   line=line, fault=fault, head_notation=notation,
+                   lead_points=lead_points, bracket_parts=bracket_parts,
+                   raw=raw, answer_lines=list(rest))
 
     # -- lookups ------------------------------------------------------------
     def ref(self, ask):

@@ -18,6 +18,7 @@ import {
   frenchRowScoreId,
   frenchRowValue,
   frenchScoreId,
+  rubricLanguage,
   type FrenchScoreId,
   type FrenchScores,
 } from './frenchRubric';
@@ -146,7 +147,7 @@ export default function FrenchRubricPanel({ card, scores, onScore }: {
   const guided = !!rubric.answerGuide?.length;
   const allocation = rubric.allocation;
   return <div className="mb-french-rubric">
-    <p className="mb-french-eyebrow">SEC French marking scheme</p>
+    <p className="mb-french-eyebrow">SEC {rubricLanguage(card.subjectId)} marking scheme</p>
     <h3>{allocation ? 'Claim each answer you gave, as the scheme prices it.' : 'Assess your response'}</h3>
     {!guided && rubric.taskRequirements.length > 0 && <ul className="mb-french-requirements">
       {rubric.taskRequirements.map((text, index) => <li key={index}>{text}</li>)}
@@ -163,12 +164,16 @@ export default function FrenchRubricPanel({ card, scores, onScore }: {
       </button>}
     {!allocation && rubric.criteria.map(criterion => {
       const id = frenchScoreId(criterion.id);
-      const disabled = !!criterion.requiresAttempt && !attempted;
+      const gate = criterion.zeroWhenZero ? rubric.criteria.find(other => other.id === criterion.zeroWhenZero) : undefined;
+      const gated = !!gate && (scores[frenchScoreId(gate.id)] ?? 0) === 0;
+      const attemptBlocked = !!criterion.requiresAttempt && !attempted;
+      const disabled = attemptBlocked || gated;
       const selected = disabled ? 0 : scores[id] ?? 0;
       return <section key={criterion.id} className="mb-french-criterion">
         <div className="mb-french-criterion-heading"><h4>{criterion.label}</h4><span>/ {criterion.maxMarks}</span></div>
         {criterion.guidance.map((text, index) => <p key={index}>{text}</p>)}
-        {disabled && <p>Language marks require an attempted communicative task.</p>}
+        {attemptBlocked && <p>Language marks require an attempted communicative task.</p>}
+        {gated && !attemptBlocked && <p>{criterion.label} marks require a {gate!.label} mark above 0.</p>}
         {criterion.bands?.map(band => <div key={band.label} className="mb-french-band">
           <strong>{band.label} · {band.marks[0]}–{band.marks.at(-1)} marks</strong>
           <ul>{band.guidance.map((text, index) => <li key={index}>{text}</li>)}</ul>

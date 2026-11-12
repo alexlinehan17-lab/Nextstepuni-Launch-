@@ -37,7 +37,6 @@ import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geogra
 import { FRENCH_LISTENING_CARDS } from '../components/MarkBank/cards/french/listening';
 import { FRENCH_READING_CARDS } from '../components/MarkBank/cards/french/reading';
 import { FRENCH_CLOZE_CARDS } from '../components/MarkBank/cards/french/cloze';
-import irish from '../components/MarkBank/cards/irish/authored.json';
 import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
 import politics from '../components/MarkBank/cards/politics-and-society/authored.json';
@@ -246,12 +245,19 @@ describe('answer clarity: priced answers are rows, not prose', () => {
 
   it('Irish: listening and reading answers are rows; what is still welded prose is pinned by shape', () => {
     const normalise = (value: string) => value.toLowerCase().replace(/[^a-z0-9áéíóú’'-]+/g, '');
-    const exact = [...IRISH_HIGHER, ...IRISH_ORDINARY].filter(card =>
-      card.rubric.system === 'irish' && /Cluastuiscint|Léamhthuiscint/.test(card.questionRef));
-    const structured = exact.filter(card => card.rubric.system === 'irish' && card.rubric.criteria[0].allocation);
+    const irishCards = [...IRISH_HIGHER, ...IRISH_ORDINARY].flatMap(card => card.rubric.system === 'irish' ? [{ card, criteria: card.rubric.criteria }] : []);
+    // The 2026 Paper 1 question cards cite the extract itself ("Cuid A · Fógra a hAon · Ceist 1(a)").
+    const exact = irishCards.filter(({ card }) => /Cluastuiscint|Léamhthuiscint|Paper 1 Cuid [ABC] · (?:Fógra|Comhrá|Píosa)/.test(card.questionRef));
+    // A reviewed card keeps one criterion per printed question (the listening sheet's eight questions, a
+    // poem's (i), (ii) and (iii)), so every priced criterion is checked, not only the card's first.
+    const priced = (criterion: { guidanceKind: string; guidance: string[] }) =>
+      criterion.guidanceKind !== 'quality' && criterion.guidance.some(line => /\d+\s*m?h?arc\b/.test(line));
     // Every row, prompt, sample and direction is a slice of the scheme's guidance or the
     // paper's question; a row that carries the answer the scheme printed for it
     // ("Ainm an fhile: Caitlín Maude") is two slices.
+    const pointSum = (part: IrishAllocation['parts'][number]) => [...part.rows.reduce((best, row) =>
+      best.set(row.group ?? row.id, Math.max(best.get(row.group ?? row.id) ?? 0, row.marks)), new Map<string, number>()).values()]
+      .reduce((sum, marks) => sum + marks, 0);
     const checkAllocation = (card: { id: string; questionText: string }, criterion: { guidance: string[]; maxMarks: number; allocation?: IrishAllocation }) => {
       const allocation = criterion.allocation!;
       const corpus = normalise(criterion.guidance.join(' ') + ' ' + card.questionText);
@@ -273,7 +279,10 @@ describe('answer clarity: priced answers are rows, not prose', () => {
         // A ladder prices how many are right; tariff rows add up to the sub-question; an answer list
         // (listening and reading) prices each alternative, so its best row is what counts.
         if (part.ladder) expect(part.ladder.at(-1), card.id).toBe(part.tariff);
-        else if (part.rows.some(row => row.steps) || part.rows.reduce((sum, row) => sum + row.marks, 0) === part.tariff) expect(part.rows.reduce((sum, row) => sum + row.marks, 0), `${card.id}: rows of a sub-question add to its tariff`).toBe(part.tariff);
+        // A stepped row that is a whole answer on its own ("Gálaí: cáiliú (móra)" 0/1/2 of 2, 2013 Higher listening) is one
+        // more alternative in an answer list, not a component of the tariff.
+        // A group (one point's printed alternatives, a slash-joined row cut into its items) counts once, at its best row.
+        else if (part.rows.some(row => row.steps && row.marks < part.tariff) || pointSum(part) === part.tariff) expect(pointSum(part), `${card.id}: rows of a sub-question add to its tariff`).toBe(part.tariff);
         else expect(Math.max(...part.rows.map(row => row.marks)), card.id).toBeGreaterThan(0);
         total += part.tariff;
       }
@@ -282,44 +291,33 @@ describe('answer clarity: priced answers are rows, not prose', () => {
         expect(lifted(note), `${card.id}: direction "${note.slice(0, 40)}" is not lifted`).toBe(true);
       }
     };
-    for (const card of structured) {
-      if (card.rubric.system !== 'irish') continue;
-      checkAllocation(card, card.rubric.criteria[0]);
-    }
-    expect(exact).toHaveLength(180);
-    // 136 before irish_excerpts.py re-cut the reading excerpts across their pages and
-    // tariffs.ts read the last question's composite tariff.
-    expect(structured).toHaveLength(173);
+    for (const { card, criteria } of irishCards) for (const criterion of criteria) if (criterion.allocation) checkAllocation(card, criterion);
+    const unstructured = (criteria: typeof irishCards[number]['criteria']) => criteria.some(criterion => priced(criterion) && !criterion.allocation);
+    expect(exact).toHaveLength(1597);
+    const structured = exact.filter(({ criteria }) => !unstructured(criteria));
+    expect(structured).toHaveLength(1597);
 
-    // What is still prose, pinned by id: four reading excerpts whose answers the
-    // scheme prices in a shape answers.ts does not read yet (unpriced bullets under
-    // a ladder, a section total inside the excerpt) and three listening extracts
-    // whose tariff lines the text layer broke. Fix one and take it off this list.
-    const fallback = exact.filter(card => card.rubric.system === 'irish' && !card.rubric.criteria[0].allocation);
-    expect(fallback.map(card => card.id).sort()).toEqual([
-      'irish-2021-ol-p2-reading-a-q2', 'irish-2021-ol-p2-reading-b-q5', 'irish-2022-hl-p1-listening-a-f1', 'irish-2022-hl-p2-reading-b-q1',
-      'irish-2022-hl-p2-reading-b-q5', 'irish-2023-ol-p1-listening-b-c2', 'irish-2024-ol-p1-listening-b-c1',
-    ]);
+    // Nothing listening or reading is still prose. The archive review cuts one criterion per printed part, so the five
+    // cards that had no rows on main have them: the 2022 Higher Fógra a hAon (tariff lines the text layer broke),
+    // 2022 Higher Léamhthuiscint B Q1 and Q5 (a price inside the qualifier's brackets, a split printed before the
+    // brace) and 2021 Ordinary A Q2 and B Q5 (unpriced bullets under one whole-question ladder). Every reviewed
+    // practice card carries the rows of its printed scheme.
+    // Fix one and take it off this list.
+    const fallback = exact.filter(({ criteria }) => unstructured(criteria));
+    expect(fallback.map(({ card }) => card.id).sort()).toEqual([]);
 
     // Literature: the Eolas criterion prices what the student must do ("Príomhthéama = 2 mharc",
     // "Dhá phointe eolais = 4 mharc + 4 mharc", "Tréith 1 = 13 mharc" under a band table) and
     // tariffs.ts cuts that into rows and steps; the sample points stay a list under each part.
-    const literature = [...IRISH_HIGHER, ...IRISH_ORDINARY].filter(card => card.rubric.system === 'irish' && /Prose|Poetry|Literature/.test(card.questionRef));
-    expect(literature).toHaveLength(130);
-    const eolas = literature.map(card => ({ card, criterion: card.rubric.system === 'irish' ? card.rubric.criteria.find(criterion => criterion.guidanceKind === 'indicative')! : undefined! }));
-    expect(eolas.filter(({ criterion }) => criterion.guidance.some(line => /\d+\s*m?h?arc/.test(line)))).toHaveLength(130);
-    const literatureStructured = eolas.filter(({ criterion }) => criterion.allocation);
-    for (const { card, criterion } of literatureStructured) checkAllocation(card, criterion);
-    expect(literatureStructured).toHaveLength(127);
-    // An option whose tariff summary the parser does not read yet, pinned by id.
-    expect(eolas.filter(({ criterion }) => !criterion.allocation).map(({ card }) => card.id).sort()).toEqual([
-      'irish-2022-hl-p2-poetry-3b-a', 'irish-2023-ol-p2-prose-2b-c', 'irish-2025-ol-p2-poetry-3a-a',
-    ]);
-    // Every other exact criterion (the 45 Ordinary composition "Tasc" 0/2
-    // tariffs) is already a button; the welded ones above are the residue.
-    const welded = cardsOf(irish).reduce((count, card) =>
-      count + (card.criteria ?? []).filter(criterion => criterion.guidanceKind === 'exact').length, 0)
-      - structured.length;
+    const literature = irishCards.filter(({ card }) => /Prose|Poetry|Literature|Prós|Filíocht|Litríocht/.test(card.questionRef));
+    expect(literature).toHaveLength(662);
+    // Every literature option's priced parts cut into rows. The last, 2025 Ordinary 3A(a)(i) (rowless on main), cuts
+    // its "(2 mharc) Freagraí: …" sub-question list like its practice cards (cards/irish/factory.ts, freagraiAllocation).
+    expect(literature.filter(({ criteria }) => unstructured(criteria)).map(({ card }) => card.id).sort()).toEqual([]);
+    // Every other exact criterion (the Ordinary composition "Tasc" 0/2 tariffs) is already a button;
+    // the welded ones are the exact criteria above that are still prose.
+    const welded = irishCards.flatMap(({ criteria }) => criteria)
+      .filter(criterion => criterion.guidanceKind === 'exact' && !criterion.allocation && priced(criterion)).length;
     expect(welded).toBeLessThanOrEqual(BASELINE.irishExactCriteria);
   });
 
@@ -481,19 +479,194 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => row.kind === 'point' && (row.verbatim.match(inline) ?? []).length >= 2).map(({ card }) => card.id)).toEqual([]);
     // "… 5M + 5M Max =" left on a row by the tariff reader: the printed split is the row's note now.
     expect(rows.filter(({ row }) => /\d+\s*M\s*\+\s*\d+\s*M\s*Max\s*=\s*$/i.test(row.verbatim)).map(({ card }) => card.id)).toEqual([]);
-    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(7);
+    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(26);
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
-    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(59);
-    expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options)).toEqual([['Liverpool', 'Manchester', 'Birmingham', 'Leeds']]);
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(189);
+    // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
+    expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
+      ['A new life', 'Better wages', 'Better work standards'],
+      ['Chapel bell', 'convent chimes', 'organ'],
+      ['Church renewal', 'Christian unity', 'Opening to the contemporary world'],
+      ['Civil rights', 'Assassination', 'Vietnam'],
+      ['Closure of rail link to Donegal', 'Closure of rail link to Dublin', 'Downgrading of rail link to Belfast'],
+      ['Consecrating churches', 'Ordaining priests', 'Confirming children', 'Deciding marriage cases'],
+      ['Dental services', 'spectacles', 'drugs'],
+      ['Distinguished', 'Of illustrious or noble families', 'Renowned for great deeds or achievements', 'Valour or prowess'],
+      ['Efficient', 'Hard-working', 'Intelligent', 'Shrewd'],
+      ['England', 'France', 'Flanders'],
+      ['Hawks', 'nets', 'guns', 'setting dogs', 'greyhounds'],
+      ['He was tall', 'dark', 'scowling', 'wolf-like'],
+      ['Her father’s death', 'Talk of radiation sickness', 'Sense of impending doom', 'Concern about missile strikes'],
+      ['Intelligent and shrewd', 'Efficient and hard-working', 'Engaging and friendly'],
+      ['Liverpool', 'Manchester', 'Birmingham', 'Leeds'],
+      ['Members sat on the steps', 'They sat on the arms of benches', 'They sat on each other‟s knees'],
+      ['Mercilessness', 'ruthlessness and calculation', 'hot- and cold-bloodiness 1'],
+      ['Moluccas', 'Java', 'Malaya', 'India', 'Ceylon', 'Taiwan'],
+      ['Nantes', 'Bordeaux', 'Lisbon', 'Cadiz'],
+      ['On railways', 'as news vendors', 'bootblacks', 'lamplighters', 'barbers'],
+      ['Pheasant', 'partridge', 'grouse', 'hares'],
+      ['Pleasant situation', 'Gorgeous buildings', 'Population', 'Obedience and loyalty'],
+      ['Preach', 'Lead men astray', 'Incite rebellion'],
+      ['Ranks and titles', 'Civil laws', 'New social regulations', 'New customs and rules'],
+      ['Salt fish', 'hides', 'cattle', 'hobby-horses'],
+      ['Stoking the fire', 'Fetching water', 'Bringing in stacks of bread'],
+      ['Tapestries', 'Mirrors', 'Candle holders', 'Upholstered furniture'],
+      ['There was no roof', 'door', 'windscreen'],
+      ['They dressed badly', 'wore shaggy jackets', 'kept their hands in their pockets', 'did not speak clearly.'],
+      ['To watch over everyone', 'To warn in a friendly was those who are misbehaving', 'To report to ministers if necessary'],
+      ['Training', 'Maintenance allowance', 'Bonus pay'],
+    ]);
+    // A row that is the scheme pricing an answer it does not print says so.
+    // ("ONE valid export (e.g. wool, butter, etc.)" prints its examples, so it is an answer.)
+    const tariffWording = rows.filter(({ row }) => row.kind !== 'anyN'
+      && /^(?:ONE|TWO|THREE|One valid|Two valid|Any valid|Any (?:ONE|TWO|THREE))\b/.test(row.verbatim)
+      && !/\be\.g\./.test(row.verbatim));
+    expect(tariffWording.length).toBeGreaterThan(80);
+    expect(tariffWording.filter(({ row }) => !(row.contextNote ?? '').includes('The scheme prints no answer here')).map(({ card }) => card.id)).toEqual([]);
     // A six-mark answer with a printed partial ("Green ribbons (ribbons = 3m)") is a stepped row: the partial is its note.
+    // So is a row that prints a count and the price of each ("Any TWO ... @ 3M each"): 0, 3 or 6.
     expect(rows.filter(({ row }) => row.kind === 'criterion').map(({ row }) => [row.verbatim, row.marks, row.permittedMarks, row.contextNote]).sort()).toEqual([
+      // Each a printed partial or alternative as a step on its row ("Green ribbons (ribbons = 3m)",
+      // "Swastika 8M" / "Germanic cross = 4M"), a price for an answer the scheme does not print
+      // ("One opinion = 5M"), or the bank's unprinted row where the scheme prints no answer at all.
+      ['A or B – which is the more objective historical source?', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['A or B – which is the more valuable source about bardic schools and poets?', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['A or B – which offers more valuable depiction of life in Gaelic Ireland?', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Advantage is that with a visual source we can see for ourselves – we can look upon the scene as it actually was on the day. With the written source we have to rely on the writer that his description is fair and accurate.', 10, [0, 5, 10], undefined],
+      ['An attempt to bring guns into Northern Ireland (through Dublin Airport)', 6, [0, 3, 6], '„To bring in guns‟ only = 3M'],
+      ['Any TWO countries invaded by Napoleon 3M + 3M', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Any TWO features from second paragraph of text @ 3M each', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Any TWO of Beethoven’s compositions 3 + 3', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Any TWO valid aims from the war @ 3M each', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Any TWO valid aims of the Geraldine League (3M x 2)', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Any two valid countries of destination (3M + 3M)', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['As a colonist: Spenser considers the bardic poets a threat to the security of the colony because they encourage young men to admire the disobedient and rebellious He is very judgemental about the bards and their poems which gives the impression that, as a colonist, he is culturally superior', 5, [0, 1, 2, 3, 4, 5], undefined],
+      ['BBC (1) were very much in favour of the strike (2) did not monitor NI broadcasts (3) did not know what was going on (4) were effectively running a rebel radio station', 10, [0, 5, 10], undefined],
+      ['Battleship/ Warship', 6, [0, 3, 6], 'Ship = 3M'],
+      ['By launching the Dreadnought', 6, [0, 3, 6], '‘Quickly’ ALONE = 3M'],
       ['Clonmel prison', 6, [0, 3, 6], 'Clonmel only (3m), prison only (3m)'],
+      ['Compare role of poet as set out in Document A with role of poet as set out in Document B', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Compare the evidence in both documents', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Cusack was its founder/ One of its first Secretaries', 6, [0, 3, 6], 'Supporter ONLY = 3M'],
+      ['Do the documents agree about Irish attitudes to divorce? Yes or no, with supporting points from each document.', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Do the documents agree about Irish attitudes to marriage? Yes or no, with supporting points from each document.', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Document A describes the 1967 march as “a great folk festival” characterised by “good humour”, a colourful musical social and traditional occasion which set out to offend no-one\nDocument B describes the 1969 march as one fraught with tension, with Catholic Bogsiders feeling “sick of Protestants and police cordons and riot tenders and drumbeating”, oppressed by the marchers’ triumphalism and the security apparatus of the state\nCatholics were not part of the traditional spectacle but stayed at home “irritated, ill-humoured and apprehensive”\nThe intervening events in Northern Ireland 1967-1969 had clearly increased sectarian tensions and the entrenchment of the two communities in Derry', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], undefined],
+      ['Document A does not support the claim: Faulkner went by helicopter because he couldn’t travel by road to Stormont He could see evidence of paramilitary activity on the ground from his helicopter There were even barricades at Dundonald House in Stormont itself That barricade reappeared only an hour after it had been removed', 5, [0, 1, 2, 3, 4, 5], undefined],
+      ['Document A is a primary source because it is from a memoir/autobiography where the writer is remembering herself as a little girl witnessing the events from eighty years earlier.', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], undefined],
+      ['Document B They enjoy a great reputation among the people Their verses are taken up with general applause They glorify wrongdoers and so apparently earn respect', 5, [0, 1, 2, 3, 4, 5], undefined],
+      ['Document B does not support the claim: Rees writes that British authority in Northern Ireland was in question Rees himself had been warned of an assassination attempt His poor working conditions were a direct result of security problems He admits that effective administration was in the hands of the strikers, not of the government', 5, [0, 1, 2, 3, 4, 5], undefined],
+      ['Evidence that Spenser was curious about bardic poetry\nHe had many of the poems translated so that he could understand them', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], undefined],
+      ['Explanation', 5, undefined, 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Famine, Civil War, Political instability', 5, [0, 3, 5], 'Threats: two = 5M; one = 3M; “wolf and tiger” alone = 0'],
       ['Green ribbons', 6, [0, 3, 6], 'ribbons = 3m'],
+      ['Hans Place', 8, [0, 4, 8], 'London ONLY = 4M'],
+      ['Healy scored the first goal ever in an All-Ireland Championship', 6, [0, 3, 6], '‘first goal’ ONLY = 3M'],
+      ['In document A Whitaker tells us that he and his colleagues did not receive extra payment for their work. He says that here was “no hope of any reward”.', 10, [0, 5, 10], undefined],
+      ['It is an original document from the period called the Pacification of Ghent (8 Nov 1576) signed four days after the sack of Antwerp. It was actually drafted by the prelates, nobles, towns and states of the Netherlands.', 5, [0, 1, 2, 3, 4, 5], 'Mark quality of explanation on its merits. — Explanation be marked on a sliding scale out of 5: Excellent = 5 mks Very good = 4 mks Good = 3 mks Fair = 2 mks Weak = 0-1 mks — Max = 10M'],
+      ['Less than half', 6, [0, 3, 6], 'Half ONLY = 3M'],
       ['Massive German air raids', 6, [0, 3, 6], 'air raids alone = 3m'],
+      ['On the one hand Collins was “exuberant” as seen in the “horseplay” of throwing food and cushions. On the other hand he was religious as seen in his attendance at daily Mass.', 10, [0, 5, 10], undefined],
+      ['One opinion', 5, undefined, 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Opinions of him differed from pure white to deepest black/ from hero to villain', 6, [0, 3, 6], '„Opinions of him differed‟ only = 3M'],
+      ['Oriental rugs', 8, [0, 4, 8], 'Rugs ONLY = 4M'],
+      ['Primary or secondary?', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Private/ family houses', 6, [0, 3, 6], '„Houses‟ only = 3M'],
+      ['Reasons given for selecting phrase', 8, [0, 4, 8], 'Examples: If it is true that masked and armed men blocked roads, it is objective; If it is true that workers were threatened at workplaces such as H & W, it is objective; If it is not true that such things happened, it is biased. — Mark quality of explanation on its merits. — Max = 10M'],
+      ['Residents and foreign-owned businesses in the town', 5, [0, 3, 5], 'TWO groups = 5m, ONE group = 3m'],
+      ['Spenser’s preoccupations as a poet and as a colonist\nAs a poet: Spenser appreciates wit and invention, but more so the poet’s skill in the ornaments of poetry He believes that the purpose of poetry is to adorn and beautify virtue as opposed to the praise of vice', 5, [0, 1, 2, 3, 4, 5], undefined],
+      ['Swastika', 8, [0, 4, 8], 'Germanic cross = 4M'],
+      ['TWO New World commodities (@ 3M each) which were landed at Seville', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['TWO countries which were rivals to Dutch trade @ 3M each', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['TWO valid aims of the Apprentice Boys of Derry 3M x 2', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['The Nazi-Soviet Non-aggression Pact', 6, [0, 3, 6], 'Marriage/agreement between Hitler and Stalin (3M only) — Marriage/wedding only = 0M'],
+      ['The Tu-104 was one of the first jet passenger planes in the world', 6, [0, 3, 6], 'Plane ONLY = 3M'],
       ['The original six members had access to Irish, British and Danish fisheries', 6, [0, 3, 6], 'access to Irish fisheries alone = 3m'],
+      ['The scheme prints no answer for this part.', 10, undefined, 'The scheme prints one Criticism answer, under (a), and it is about the King’s proclamation (document B), which part (b) asks about. It prints nothing for this part.'],
+      ['Third class', 8, [0, 4, 8], 'Train ONLY = 4M'],
+      ['Two reasons for Yes or No', 8, [0, 4, 8], 'Sermon advised “restraint towards people of different religious persuasions” — Above quote only = 2M — Seems to be reasonable advice to behave respectfully to others, to not give offence which could lead to trouble At the same time the Apprentice Boys are asked to keep “firmness in defence of their Protestant heritage”, to assert themselves and keep the faith — Mark quality of explanation on its merits. — Max = 10M'],
+      ['Von Eckstadt Vienna 1848', 6, [0, 3, 6], 'Any TWO @ 3M each'],
+      ['We can see men, women and children – presumably families', 6, [0, 3, 6], 'Children ONLY = 3M'],
+      ['Which is more sympathetic to bardic poets, A or B?', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['While it is not clear from either document who was ultimately responsible for the crisis, it could be argued that the crisis was exacerbated by the Congolese cutting the rope (Document A) and by the behaviour of the Belgian paratroopers (Document B).', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], undefined],
+      ['Yes or No? Candidate makes choice and gives at least two reasons for choice', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Yes or No? One reason only required', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Yes or No?', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Yes, the documents agree that the bardic poet was an influential figure\nDocument A As a master of history and poetry he would be influential Influential because of his wealth and affluence He had gained victory over the Devil and the world', 5, [0, 1, 2, 3, 4, 5], undefined],
     ]);
     expect(rows.filter(({ row }) => !row.verbatim.trim()).map(({ card }) => card.id)).toEqual([]);
+    // 2020 OL Q3(a) prices each component and answers the one that needs an answer:
+    // "Document A is a primary source = 5M" / "Reason = 5M" / the reason / "5M + 5M 10M".
+    const answeredSplit = cards.find(card => card.id === 'hist-2020-ol-lm-s1-q3a')!;
+    expect([answeredSplit.tariffModel.kind, answeredSplit.totalMarks]).toEqual(['fixed', 10]);
+    expect(answeredSplit.rows.map(row => [row.verbatim.split('. ')[0], row.marks, row.contextNote])).toEqual([
+      ['Document A is a primary source', 5, undefined],
+      ['It is the recollection/words of a North Vietnamese soldier who fought against the US in Vietnam', 5, 'Reason = 5M'],
+    ]);
+    // Priced statements, the older Ordinary comparison part (2016 OL Q2): each statement at its printed
+    // marks, and document points the closing split prices, one term to a document.
+    const statements = cards.find(card => card.id === 'hist-2016-ol-lm-s1-q2a')!;
+    expect(statements.rows.map(row => [row.verbatim.split(' ').slice(0, 4).join(' '), row.marks])).toEqual([
+      ['Yes. Ellen Wilkinson took', 2], ['Document A is from', 4], ['Document B states that', 4],
+    ]);
+    expect(statements.rows[0].contextNote).toBe('Must be clearly stated');
+    const splitPriced = cards.find(card => card.id === 'hist-2016-ol-lm-s1-q2b')!;
+    expect(splitPriced.rows.map(row => [row.verbatim.split(' ').slice(0, 3).join(' '), row.marks])).toEqual([
+      ['Document B', 2], ['Document A describes', 4], ['Document B gives', 4],
+    ]);
+    // Closed by the part's marks printed bare: "... searchlights = 3M" / "... against the sky = 2M 5M" (2016 HL Q1(d)).
+    const bareTotal = cards.find(card => card.id === 'hist-2016-hl-lm-s1-q1d')!;
+    expect(bareTotal.rows.map(row => [row.verbatim, row.marks])).toEqual([
+      ['Huge burning urns; flood-lighting by hundreds of powerful searchlights', 3],
+      ['The mystical quality of the ritual was exaggerated; lights played eerily against the sky', 2],
+    ]);
+    // Priced items OR the answer after the solidus: "The spirit, content and enterprise (2M x 3)/
+    // A free Constitution" (2013 OL Q6 A4, (6)) is two routes; claiming one side locks the other.
+    const routed = cards.find(card => card.id === 'hist-2013-ol-em-s2t6a-q4')!;
+    expect(routed.rows.map(row => [row.verbatim, row.marks, row.route])).toEqual([
+      ['The spirit', 2, 'priced-items'], ['content', 2, 'priced-items'], ['enterprise', 2, 'priced-items'],
+      ['A free Constitution', 6, 'alternative'],
+    ]);
+    expect(rows.filter(({ row }) => row.route).map(({ card }) => card.id)).toEqual(Array(4).fill('hist-2013-ol-em-s2t6a-q4'));
+    // A verdict printed unstopped over its first reason ("Document A or B or both" / "Document A states ...")
+    // keeps its own line in the row, so the two never read as one sentence; so does one document's point run
+    // unstopped into the next ("... in document A Document B states ...", hist_all.document_lines).
+    expect(rows.filter(({ row }) => row.verbatim.includes('\n')).map(({ card }) => card.id).sort()).toEqual([
+      'hist-2010-hl-lm-s1-q2b',
+      'hist-2011-hl-em-s1-q2a',
+      'hist-2011-hl-em-s1-q2b',
+      'hist-2011-hl-em-s1-q3b',
+      'hist-2011-hl-lm-s1-q2a',
+      'hist-2011-hl-lm-s1-q3a',
+      'hist-2011-ol-em-s1-q3b',
+      'hist-2012-hl-em-s1-q2b',
+      'hist-2012-hl-em-s1-q3a',
+      'hist-2012-hl-lm-s1-q2a',
+      'hist-2012-hl-lm-s1-q2a',
+      'hist-2012-ol-em-s1-q2a',
+      'hist-2012-ol-em-s1-q2b',
+      'hist-2012-ol-lm-s1-q3a',
+      'hist-2013-hl-lm-s1-q2a',
+      'hist-2013-hl-lm-s1-q2b',
+      'hist-2013-ol-em-s1-q2a',
+      'hist-2013-ol-em-s1-q2b',
+      'hist-2014-ol-em-s1-q2b',
+      'hist-2015-hl-em-s1-q2b',
+      'hist-2015-ol-em-s1-q2b',
+      'hist-2016-hl-lm-s1-q2a',
+      'hist-2016-hl-lm-s1-q3b',
+      'hist-2016-ol-em-s1-q2a',
+      'hist-2023-ol-deferred-lm-s1-q2b',
+    ]);
+    // Where the closing prices the verdict, it is a row at its price: "Doc A and a valid reason 5M + 5M Max = 10M",
+    // "2M + 4M + 4M Max = 10M" (2025 OL).
+    expect(cards.find(card => card.id === 'hist-2025-ol-lm-s1-q3a')!.rows.map(row => row.marks)).toEqual([5, 5]);
+    expect(cards.find(card => card.id === 'hist-2025-ol-em-s1-q2b')!.rows.map(row => row.marks)).toEqual([2, 4, 4]);
+    // Bare-figure prices with the phrase running on: "In a slap-dash (3) meaningless (3) way" (2013 OL
+    // Topic 6 A1): the rows are the priced spans, never a joined row the scheme does not print whole.
+    expect(cards.find(card => card.id === 'hist-2013-ol-lm-s2t6a-q1')!.rows.map(row => [row.verbatim, row.marks])).toEqual([
+      ['In a slap-dash', 3], ['meaningless', 3],
+    ]);
   });
 
   it('Accounting: every task carries the scheme’s priced lines as rows that add up to it, or is listed in the residue with its reason', () => {
@@ -787,7 +960,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
  *  number is the priced lines left in the 50 opinion cards above. */
 const BASELINE = {
   frenchReading: 1,
-  irishExactCriteria: 52,
+  irishExactCriteria: 23,
   physicalEducationLines: 0,
 };
 

@@ -10,6 +10,7 @@ import {
   visibleSessionExercises,
 } from '@/components/MarkBank/sessionPlanning';
 import { CARDS as IRISH_HIGHER } from '@/components/MarkBank/cards/irish/higher';
+import { rubricLanguage } from '@/components/MarkBank/frenchRubric';
 import type { CardMemory } from '@/components/MarkBank/scheduler';
 import type { SecCard } from '@/types/markBank';
 
@@ -93,5 +94,25 @@ describe('Mark Bank session counts stay consistent across every screen', () => {
     ]);
     expect(sessionExerciseCount(announcements)).toBe(1);
     expect(new Set(announcements.map(card => card.id)).size).toBe(2);
+  });
+});
+
+describe('Spanish listening is scored one task at a time, as French is', () => {
+  const recording = { kind: 'source-audio', playbackUrl: 'https://www.examinations.ie/archive/exampapers/2026/LC012ZLP017BV.mp3' };
+  const listening = (subjectId: string, id: string) => ({
+    id, subjectId, year: 2026, level: 'higher', topicId: `${subjectId}-3-0`, audioMaterial: recording,
+  } as unknown as SecCard);
+
+  test('a Spanish or French listening card is its own exercise; an Irish one joins its recording', () => {
+    const spanish = [listening('spanish', 'es-2026-hl-l-1-a'), listening('spanish', 'es-2026-hl-l-1-b')];
+    expect(spanish.map(listeningExerciseKey)).toEqual([null, null]);
+    expect(visibleSessionExercises(spanish).map(card => card.id)).toEqual(['es-2026-hl-l-1-a', 'es-2026-hl-l-1-b']);
+    expect(listeningExerciseKey(listening('french', 'fr-1'))).toBeNull();
+    expect(listeningExerciseKey(listening('irish', 'ga-1'))).not.toBeNull();
+  });
+
+  test('the marking grid is named by the card\'s own language', () => {
+    expect(rubricLanguage('spanish')).toBe('Spanish');
+    expect(rubricLanguage('french')).toBe('French');
   });
 });

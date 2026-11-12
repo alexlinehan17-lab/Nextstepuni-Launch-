@@ -49,6 +49,29 @@ const withPdfExtension = (fileid: string) =>
 
 const clamp = (value: number, max: number) => Math.max(0, Math.min(max, value));
 
+/**
+ * What the pages of a `source-illustration` actually are.
+ *
+ * The reader called every one an "illustration sheet", which is true only of
+ * Art's companion booklet: most are pages of the card's own question paper
+ * (Economics, Agricultural Science, Geography Part 1, the sciences), and the
+ * other companions are Classical Studies' Paper X and Geography's map,
+ * photograph and legend. With no separate file the pages are the question
+ * paper; a separate file is named by subject, and an Irish-version edition
+ * of the paper is still the question paper.
+ */
+export function illustrationDocument(subjectId: string, source: Pick<CardSourceMaterial, 'label' | 'sourceFileid'>): string {
+  if (!source.sourceFileid) return 'question paper';
+  if (subjectId === 'art') return 'illustration sheet';
+  if (subjectId === 'classical-studies') return 'Paper X';
+  if (subjectId === 'geography') {
+    if (/legend/i.test(source.label)) return 'map legend';
+    if (/photograph/i.test(source.label)) return 'aerial photograph';
+    if (/\bmap\b/i.test(source.label)) return 'OS map';
+  }
+  return 'question paper';
+}
+
 const PageStackIcon = () => (
   <svg width="25" height="25" viewBox="0 0 25 25" fill="none" aria-hidden="true">
     <rect x="6.25" y="3.25" width="13.5" height="17.5" rx="2.25" stroke="currentColor" strokeWidth="1.5" />
@@ -91,7 +114,11 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
     : source.kind === 'source-data' ? 'source material'
     : source.kind === 'exam-material' ? 'exam material'
     : source.kind === 'source-paper' ? 'question pages'
-    : isIllustration ? 'illustration sheet' : 'source text';
+    : isIllustration ? illustrationDocument(subjectId, source) : 'source text';
+  // "ILLUSTRATION SHEET · Q1 · illustration sheet", "OS MAP · OS map": where
+  // the label already names the document, it is not named twice.
+  const headingNamesMaterial = labelNamesMaterial
+    || (isIllustration && source.label.toLowerCase().includes(materialLabel.toLowerCase()));
   const [open, setOpen] = useState(false);
   const [pdf, setPdf] = useState<PDFDocumentProxy | null>(null);
   const [failed, setFailed] = useState(false);
@@ -101,6 +128,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const closeRef = useRef<HTMLButtonElement | null>(null);
   const trackRef = useRef<HTMLDivElement | null>(null);
   const scrollFrame = useRef<number | null>(null);
+  const requestedPage = useRef<number | null>(null);
   const swipeStart = useRef<{ x: number; y: number; pointerId: number } | null>(null);
 
   const url = useMemo(() => paperUrl(paperStoragePath(
@@ -130,6 +158,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
 
   const show = useCallback(() => {
     setFailed(false);
+    requestedPage.current = null;
     setPageIndex(0);
     setZoom(1);
     setOpen(true);
@@ -169,6 +198,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const goTo = useCallback((next: number) => {
     const index = clamp(next, itemCount - 1);
     const activeControl = document.activeElement;
+    requestedPage.current = index;
     setPageIndex(index);
     const track = trackRef.current;
     if (track && typeof track.scrollTo === 'function') {
@@ -191,12 +221,18 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
     scrollFrame.current = requestAnimationFrame(() => {
       const track = trackRef.current;
       if (!track || track.clientWidth === 0) return;
+      // Intermediate smooth-scroll positions must not undo a second Next click.
+      if (requestedPage.current !== null) {
+        if (Math.abs(track.scrollLeft - requestedPage.current * track.clientWidth) > 1) return;
+        requestedPage.current = null;
+      }
       setPageIndex(clamp(Math.round(track.scrollLeft / track.clientWidth), itemCount - 1));
     });
   }, [itemCount]);
 
   const swipeStarted = useCallback((event: React.PointerEvent<HTMLDivElement>) => {
     if (zoom !== 1 || event.isPrimary === false) return;
+    requestedPage.current = null;
     swipeStart.current = { x: event.clientX, y: event.clientY, pointerId: event.pointerId };
     try { event.currentTarget.setPointerCapture?.(event.pointerId); } catch { /* capture is an enhancement */ }
   }, [zoom]);
@@ -224,6 +260,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   // also makes a desktop click-and-drag feel like the same physical reader.
   const mouseSwipeStarted = useCallback((event: React.MouseEvent<HTMLDivElement>) => {
     if (zoom !== 1 || event.button !== 0) return;
+    requestedPage.current = null;
     swipeStart.current = { x: event.clientX, y: event.clientY, pointerId: -1 };
   }, [zoom]);
 
@@ -237,6 +274,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   // has historically been inconsistent during nested overflow scrolling.
   const touchSwipeStarted = useCallback((event: React.TouchEvent<HTMLDivElement>) => {
     if (zoom !== 1 || event.touches.length !== 1) return;
+    requestedPage.current = null;
     const touch = event.touches[0];
     swipeStart.current = { x: touch.clientX, y: touch.clientY, pointerId: -2 };
   }, [zoom]);
@@ -278,7 +316,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
       >
         <header className={`mb-source-reader-header${isLinked ? ' mb-source-reader-header-linked' : ''}`}>
           <div className="mb-source-reader-heading">
-            <span>{labelNamesMaterial ? source.label : `${source.label} · ${materialLabel}`}</span>
+            <span>{headingNamesMaterial ? source.label : `${source.label} · ${materialLabel}`}</span>
             <h2 id="mb-source-reader-title">{source.title}</h2>
           </div>
           {!isLinked && <div className="mb-source-reader-tools" aria-label="Page display controls">
@@ -418,7 +456,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
             <strong>{isSupplementary ? texts[pageIndex]?.edition : source.attribution}</strong>
             {!isLinked && <span>{source.presentationNote}</span>}
             {!isLinked && <a href={isSupplementary ? texts[pageIndex]?.sourceUrl : isImage ? url : `${url}#page=${source.pages[pageIndex]}`} target="_blank" rel="noreferrer">
-              {isSupplementary ? 'View this edition and attribution' : `Open the original ${isScheme ? 'marking scheme' : isIllustration ? 'illustration sheet' : 'paper'}`}
+              {isSupplementary ? 'View this edition and attribution' : `Open the original ${isScheme ? 'marking scheme' : isIllustration && materialLabel !== 'question paper' ? materialLabel : 'paper'}`}
             </a>}
           </div>
           {!isLinked && <div className="mb-source-reader-navigation">
@@ -454,6 +492,12 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
 
   return (
     <>
+      {source.recordingUnpublished && (
+        <p data-testid="mb-recording-unpublished"
+          style={{ margin: '12px 0 0', font: "400 14px/1.5 'DM Sans', system-ui, sans-serif", color: 'var(--mb-muted)' }}>
+          {RECORDING_UNPUBLISHED}
+        </p>
+      )}
       <button type="button" ref={triggerRef}
         className={`mb-source-material-trigger${inline ? ' mb-source-material-trigger-inline' : ''}`}
         onClick={show}>
@@ -474,5 +518,8 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
     </>
   );
 };
+
+/** Approved wording (coordinator, 2026-11-11) for a listening card whose recording the SEC never published. */
+export const RECORDING_UNPUBLISHED = 'The SEC has not published the recording for this paper. The question and the scheme’s answer are shown as printed.';
 
 export default SourceMaterialReader;

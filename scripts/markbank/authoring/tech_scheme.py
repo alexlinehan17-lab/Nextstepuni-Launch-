@@ -49,7 +49,9 @@ ROMANS = ['i', 'ii', 'iii', 'iv', 'v']
 # "arks" as well as "marks": the SEC's own text layer drops the M of
 # "(10 Marks, 4+6)" on page 17 of the 2023 Ordinary scheme, and demanding the
 # spelling lost Option 5(c) -- a printed tariff, read as no tariff at all.
-_M = r'm?arks?'
+# "mharc" is the Irish word, printed once in an English scheme (2017 Higher
+# Q2's "(3 + 3 mharc)"): the same tariff, and unread the block never closed.
+_M = r'(?:m?arks?|mharc)'
 # A fourth shape, once: 2026 Higher prices Option 3(a) as "10 marks, (4 + 6)",
 # the total outside the bracket and the split inside it. Unread, the block
 # never closed and 3(a)'s two parts were filed under 3(b).
@@ -63,6 +65,15 @@ TARIFF = re.compile(
     # "(8,6,4,2 Marks)": 2026 Ordinary prices its sketch by quality, the
     # best first. The part is worth the top mark; the steps are not a split.
     r'|\(\s*(?P<ladder>\d{1,2}(?:\s*,\s*\d{1,2}){2,})\s*' + _M + r'\s*\)', re.I)
+
+# 2011 Higher prints each Section A question's split with no word "marks" --
+# "(2 + 2 + 2)" on a line of its own, or closing the last answer ("CNC
+# router/Laser cutter etc. (4+ 2)") -- under the rubric's "All questions
+# carry 6 marks". Read only where TARIFF and BAND find nothing, and only on a
+# line of its own or after prose, so a formula's bracket ("= (12 x 40) / (10 +
+# 40 +10)", 2026 Higher) is never a price.
+BARE_SPLIT = re.compile(
+    r'(?:^|(?<=[A-Za-z.]\s))\(\s*(?P<bare>\d{1,2}(?:\s*\+\s*\d{1,2})+)\s*\)\s*$')
 
 # The Ordinary papers price a pure sketch question by QUALITY, not by content:
 # "(Very good sketch - 8 marks, good sketch - 6 marks, fair sketch - 4 marks)".
@@ -78,6 +89,11 @@ BAND = re.compile(
 SECTION_TOTALS = {24, 40, 72, 200, 300, 130, 100}
 
 SECTION_HEAD = re.compile(r'^Section\s+([ABC])\b')
+# The paper code a booklet's cover prints top right: "2014. M104 BC".
+COVER_CODE = re.compile(r'^\d{4}\.\s*M\d{3}\b')
+# One letter's price in a Section B/C question's heading line: "(a) - 8 marks",
+# "(c) OR (d) - 6 marks" (2010-2014, where no part prints its own tariff).
+HEADER_PRICE = re.compile(r'\(([a-d])\)\s*(?:OR\s*\(([a-d])\)\s*)?[-\u2013]\s*(\d{1,2})\s*marks?\b', re.I)
 OPTION_HEAD = re.compile(r'^Option\s+(\d)\b')
 # "1." at Section A; "2(a)" and "2(a) (i)" in Sections B and C. The dot form
 # is Section A's alone -- Section B never prints "2." -- so the two heads
@@ -112,7 +128,19 @@ FURNITURE = re.compile(
     # Higher's "Section A" -- which landed in Question 1 as a row.
     r'|^\d{1,3}\s*marks?\s*$'
     r'|^Answer\s+\d\(\w\)\s+(?:and|or)\s+\d\(\w\)\s*$'
-    r'|^OR\s*$', re.I)
+    # A long question's own heading with its mark breakdown, "Question 3 -
+    # Answer 3(a) and 3(b) (a) - 8 marks, (b) - 10 marks, (c) OR (d) - 6
+    # marks": it falls inside the block the next tariff closes, and where that
+    # block prints no romans (2019 Higher 3(a)) it shipped as a marking point.
+    r'|^Question\s+\d\s*(?:[-\u2013]\s*Answer\b|\(a\)\s*[-\u2013]\s*\d)'
+    # ...and an option's breakdown on a line of its own, "(a) - 10 marks,
+    # (b) - 16 marks, (c) OR (d) - 14 marks" (2019 Higher Option 2).
+    r'|^\(a\)\s*[-\u2013]\s*\d{1,2}\s*marks?\s*,'
+    r'|^OR\s*$'
+    # The page's running footer, "Page 2 of 9" (2018 Higher): set after a
+    # block's tariff, it fell into the next block and shipped as 3(a)'s first
+    # row. And Section A's own, "Section A - Page 2 of 7".
+    r'|^(?:Section\s+[ABC]\s*[-\u2013]\s*)?Page\s+\d+\s+of\s+\d+(?:\s+Page\s+\d+\s+of\s+\d+)?\s*$', re.I)
 
 # The examiner talking to the examiner rather than stating an answer, and the
 # scheme's own lead-in to a list. Neither is a marking point.
@@ -247,9 +275,23 @@ class TechScheme:
         # 2025 Ordinary Q4's "(8,6,4,2 Marks)" is drawn inside its sketch box.
         rubric_marks = None
 
+        last_closed = []
+        # tech_crops.PART_SPLITS: the printed part-price lines seen in the
+        # open block, which bound nothing (the rubric closes the block).
+        part_lines = []
+
         def close(total, terms, notation):
             """Emit the block the tariff just ended."""
-            nonlocal lines, roman, head_q, head_letter, last_q, pages
+            nonlocal lines, roman, head_q, head_letter, last_q, pages, part_lines
+            spec = TC.PART_SPLITS.get((self.year, self.level, section, head_q))
+            if spec and lines:
+                # Every printed line named must have been read, and the split
+                # they make must add up to the rubric's total, or nothing.
+                if tuple(part_lines) != tuple(spec['lines']) or sum(spec['terms']) != total:
+                    raise SystemExit(f'PART_SPLITS {self.year} {self.level} {section} {head_q}: '
+                                     f'read {part_lines} for {total}')
+                terms, notation = list(spec['terms']), ' '.join(spec['lines']) or notation
+            part_lines = []
             if lines:
                 q = head_q
                 if q is None:
@@ -273,12 +315,40 @@ class TechScheme:
                     if block.key not in self.blocks:
                         order.append(block.key)
                     self.blocks[block.key] = block
+                    last_closed[:] = [block]
                     last_q = q
             lines, roman = [], None
             head_q, head_letter = None, None
             pages = set()
 
-        for text in _lines(raw):
+        # The 2010-2014 schemes print no tariff on a part: Section A is priced
+        # by its rubric ("All questions carry 6 marks") and each Section B/C
+        # question by the line under its heading, "(a) - 8 marks, (b) - 10
+        # marks, (c) OR (d) - 6 marks". A block those print the total for is
+        # closed by the next head, heading or option, at that total and with
+        # no split -- never a guessed one.
+        header_marks, header_note = {}, {}
+
+        def close_by_header():
+            if lines and head_q is not None and head_letter in header_marks:
+                close(header_marks[head_letter], [], header_note[head_letter])
+
+        def close_by_rubric():
+            if section == 'A' and lines and head_q is not None and rubric_marks:
+                close(rubric_marks, [], f'All questions carry {rubric_marks} marks')
+
+        all_lines = list(_lines(raw))
+
+        def head_again(at, number):
+            """Whether a later Section A line opens with this question number."""
+            for later in all_lines[at + 1:]:
+                if SECTION_HEAD.match(later):
+                    return False
+                if re.match(rf'{number}\.\s+\S', later):
+                    return True
+            return False
+
+        for idx, text in enumerate(all_lines):
             pm = PAGE_MARK.match(text)
             if pm:
                 page = int(pm.group(1)) - 1
@@ -296,7 +366,8 @@ class TechScheme:
             # blue "(14 marks, 6 + 4 + 4)" line; stripping that row as image
             # lettering erased the block and left a real paper ask uncovered.
             # Tariffs are metadata, never diagram labels.
-            if rects and not TARIFF.search(text) and not BAND.search(text):
+            if rects and not TARIFF.search(text) and not BAND.search(text) \
+                    and text not in TC.MD_KEEP.get((self.year, self.level, page), ()):
                 got = TC.strip_row_labels(text, TC.scheme_path(self.year, self.level),
                                           page, rects)
                 if got is not None:
@@ -311,7 +382,8 @@ class TechScheme:
             # three parts became one. tech_crops.LABEL_ZONES names the
             # drawing; the row it shares with the prose is cut by position.
             rects = TC.scheme_zones(self.year, self.level, page)
-            if rects and not TARIFF.search(text) and not BAND.search(text):
+            if rects and not TARIFF.search(text) and not BAND.search(text) \
+                    and text not in TC.MD_KEEP.get((self.year, self.level, page), ()):
                 got = TC.strip_row_labels(text, TC.scheme_path(self.year, self.level),
                                           page, rects)
                 if got is not None:
@@ -322,6 +394,29 @@ class TechScheme:
             # Ordinary scheme sets Question 3(d)'s "(6 Marks, 4+2)" on the same
             # line as the running footer, and dropping the line whole dropped
             # the tariff with it -- one priced block lost, silently.
+            prices = list(HEADER_PRICE.finditer(text))
+            if len(prices) >= 2:
+                close_by_header()
+                header_marks, header_note = {}, {}
+                for hp in prices:
+                    for letter in (hp.group(1), hp.group(2)):
+                        if letter:
+                            header_marks[letter.lower()] = int(hp.group(3))
+                            header_note[letter.lower()] = hp.group(0).strip()
+                if BC_HEAD.match(text) and section in ('B', 'C'):
+                    # "4(a) (a) - 10 marks, (b) - 20 marks, ..." (2019
+                    # Ordinary): the heading's prices printed level with the
+                    # first part's head. The head stays; the prices come off.
+                    text = (text[:prices[0].start()] + ' ' + text[prices[-1].end():]).strip()
+                elif not SECTION_HEAD.match(text):
+                    continue
+            if section == 'A' and (COVER_CODE.match(text) or text.strip() == 'Blank Page'):
+                # The end of the Section A booklet: its blank back page, then
+                # the next booklet's cover ("2014. M104 BC"). A rubric-priced
+                # last question closes here, or the cover's lines run on into
+                # it as answers (2014 Higher Q15).
+                close_by_rubric()
+                continue
             if FURNITURE.match(text):
                 if not TARIFF.search(text) and not BAND.search(text):
                     continue
@@ -339,6 +434,8 @@ class TechScheme:
                 # which shifted every real head out of reach of the
                 # forward-only guard and left all fifteen questions unnumbered
                 # and off by one.
+                close_by_rubric()
+                close_by_header()
                 lines, roman, head_q, head_letter = [], None, None, None
                 started = True
             if sh and sh.group(1) > section and any(
@@ -355,16 +452,26 @@ class TechScheme:
                 continue
             oh = OPTION_HEAD.match(text)
             if oh and section == 'C':
+                close_by_header()
                 lines, roman, head_q, head_letter = [], None, None, None
                 last_q = int(oh.group(1)) - 1
                 continue
 
             m = BC_HEAD.match(text) if section in ('B', 'C') else None
             if m:
+                if (int(m.group(1)), m.group(2)) != (head_q, head_letter):
+                    close_by_header()
                 started = True
                 head_q, head_letter = int(m.group(1)), m.group(2)
                 roman = None
                 text = text[m.end():]
+                if not text.strip() and not lines:
+                    # A part whose whole answer is a drawing: 2019 Higher
+                    # Option 1(c) prints "1(c)", two pneumatic circuits and its
+                    # tariff, and with no line of text the tariff closed
+                    # nothing and the part was never priced.
+                    lines.append((None, ''))
+                    pages.add(page)
             elif section == 'A':
                 m = A_HEAD.match(text)
                 # Forward only, and only within reach. A short question's
@@ -372,7 +479,27 @@ class TechScheme:
                 # work breakdown structure as "1. Research and design 2. Select
                 # materials" -- and reading those as heads re-opened Question 1
                 # inside Question 11.
-                if m and last_q < int(m.group(1)) <= last_q + 3:
+                # And never the number of the question already open: 2019
+                # Ordinary Q2(i) answers "1. Lower ongoing energy costs." /
+                # "2. Better for the environment", and that "2." re-opened
+                # Question 2 and threw its (i) away.
+                # Nor the next item of a numbered answer list the open
+                # question has started: 2015 Ordinary Q1(i) answers "1. Long
+                # Nose Pliers." / "2. Scissors/Knife, etc.", and that "2."
+                # opened Question 2, so every later block took its
+                # neighbour's number. A list item numbered one less, which was
+                # itself no head, makes this line its successor.
+                # ...but only where the number is printed again as a head
+                # further on in the section: 2013 Ordinary Q2 ends its answer
+                # "2. U.V resistant..." and the next line is Question 3's own
+                # head "3. The use of nuclear-thermal rockets...", which is
+                # never printed again.
+                list_next = bool(m and lines and head_q is not None
+                                 and int(m.group(1)) - 1 <= head_q
+                                 and re.match(rf'{int(m.group(1)) - 1}\.\s', lines[-1][1] or '')
+                                 and head_again(idx, int(m.group(1))))
+                if m and not list_next and last_q < int(m.group(1)) <= last_q + 3 \
+                        and (head_q is None or int(m.group(1)) > head_q):
                     if lines and head_q is not None and rubric_marks:
                         # The next head has arrived and this block was never
                         # priced: its tariff is the rubric's.
@@ -382,6 +509,38 @@ class TechScheme:
                     started = True
 
             if not started:
+                continue
+
+            # The tariff printed in the MIDDLE of a numbered answer list: 2019
+            # Ordinary Q3(ii) sets "1. Cross filing/draw filing", then
+            # "(4+4 marks)", then "2. Polishing, etc.", and the second item
+            # fell into Question 4. A line numbered one past the closed
+            # block's last line, before anything new has opened, is its.
+            nm = re.match(r'(\d)\.\s+\S', text)
+            if nm and not lines and head_q is None and last_closed \
+                    and last_closed[0].lines \
+                    and re.match(rf'{int(nm.group(1)) - 1}\.\s', last_closed[0].lines[-1][1]):
+                last_closed[0].lines.append((last_closed[0].lines[-1][0], text))
+                continue
+            # An answer the scheme prints BELOW the tariff it closes on:
+            # 2017 Ordinary 3(d)(ii) ends "...for data storage. (10 Marks,
+            # 6+4)" and its answer sits on the next line, above the page
+            # footer, where it opened Option 4 and swallowed 4(a). Named
+            # line by line in tech_crops.LATE_ANSWER_LINES, each read off
+            # the page.
+            if not lines and head_q is None and last_closed and last_closed[0].lines \
+                    and text in TC.LATE_ANSWER_LINES.get((self.year, self.level), ()):
+                prev_roman, prev = last_closed[0].lines[-1]
+                if re.fullmatch(r'etc\.?', text) and prev.rstrip().endswith(','):
+                    # A wrapped "etc." closing the list above the tariff, as
+                    # the in-block rule below does (2010 Higher 2(c)(ii)).
+                    last_closed[0].lines[-1] = (prev_roman, f'{prev.rstrip()} etc.')
+                else:
+                    last_closed[0].lines.append((prev_roman, text))
+                continue
+            if section == 'A' and text in TC.PART_SPLITS.get(
+                    (self.year, self.level, section, head_q), {}).get('lines', ()):
+                part_lines.append(text)
                 continue
 
             rh = ROMAN_HEAD.match(text)
@@ -412,15 +571,27 @@ class TechScheme:
                     # part due next, which the paper prints as (iii).
                     roman = ROMANS[ROMANS.index(roman) + 1]
                 text = text[rh.end():]
+                if not text.strip() and roman not in [r for r, _t in lines]:
+                    # A roman whose whole answer is a drawing can stand alone
+                    # on its line: 2019 Higher's "2(b) (i)" heads a sketch the
+                    # solution crop holds, and with no line under it the part
+                    # vanished and (ii) and (iii) were carded as one.
+                    lines.append((roman, ''))
+                    pages.add(page)
 
             # The tariff may end a line of prose ("...over budget, etc.
             # (4+4 marks)") as often as it has a line to itself.
             hit = TARIFF.search(text)
             band = None if hit else BAND.search(text)
-            if hit or band:
-                m = hit or band
-                total, terms = (_tariff(hit) if hit
-                                else (int(band.group(1)), []))
+            bare = None if (hit or band) else BARE_SPLIT.search(text)
+            if hit or band or bare:
+                m = hit or band or bare
+                if bare:
+                    terms = [int(x) for x in re.findall(r'\d+', bare.group('bare'))]
+                    total = sum(terms)
+                else:
+                    total, terms = (_tariff(hit) if hit
+                                    else (int(band.group(1)), []))
                 tail = (text[:m.start()] + ' ' + text[m.end():]).strip()
                 if not lines and not tail and total in SECTION_TOTALS and not terms:
                     continue            # a section or option heading's price
@@ -439,6 +610,8 @@ class TechScheme:
                 # above it (2026 Higher Q1: "...unused land around airport,"
                 # / "etc."); dropped, the list reads as closed.
                 lines[-1] = (lines[-1][0], f'{lines[-1][1].rstrip()} etc.')
+        close_by_rubric()
+        close_by_header()
         self.order = order
 
     def priced(self):
@@ -466,7 +639,13 @@ def _lines(raw):
             pending = None
         # An unclosed bracket that mentions marks, and nothing else: a tariff
         # cannot span more than the line after its own.
-        if text.count('(') > text.count(')') and re.search(r'\bm?arks?\b', text, re.I):
+        if text.count('(') > text.count(')') and (
+                re.search(r'\bm?arks?\b', text, re.I)
+                # ...or a band that breaks before its first mark, "(Very good
+                # sketch -" / "8 marks" / "Fair sketch - 4 marks)" (2018
+                # Ordinary Q7), whose "8 marks" alone reads as a section total.
+                or re.match(r'\(\s*(?:very good|good|fair)\s+(?:sketch|diagram|drawing)\b[^)]*$',
+                            text, re.I)):
             pending = text
             continue
         out.append(text)
