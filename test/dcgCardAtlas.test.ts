@@ -82,8 +82,8 @@ describe('DCG Geologic Geometry carries its contour map', () => {
     // sitting added (2017 Higher 6, 2017 Ordinary 3, 2016 Higher 6, 2016
     // Ordinary 2, 2015 Higher 6, 2015 Ordinary 3, 2014 Higher 7, 2014
     // Ordinary 2, 2013 Higher 6, 2013 Ordinary 2, 2012 Higher 5, 2012
-    // Ordinary 3).
-    expect(cards.filter(c => c.sourceMaterial).length).toBe(126);
+    // Ordinary 3, 2011 Higher 6).
+    expect(cards.filter(c => c.sourceMaterial).length).toBe(132);
   });
 });
 

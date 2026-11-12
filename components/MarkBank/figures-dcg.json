@@ -1,4 +1,136 @@
 {
+ "dcg-2011-HL-paper-secA-q1-art": {
+  "alt": "Question A-1 as printed. A 3D graphic of a methane molecule, beside the elevation on XY and the plan of a regular tetrahedron with the vertices a, b, c and d, and the given X1Y1 line.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "ee98571589405a610bce6313f017152c",
+  "questionRef": "2011 HL Section A Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-HL-paper-secA-q1-art.png",
+  "year": 2011
+ },
+ "dcg-2011-HL-paper-secA-q2-art": {
+  "alt": "Question A-2 as printed. A photograph of a patient on a kidney stone treatment table with a reflector, beside the directrix DD1, the focus F, the vertex V and the eccentricity line E (with a 45 degree line) of an ellipse, and the question text below.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "49ea9e0af876f5fd009dbf159f53c33e",
+  "questionRef": "2011 HL Section A Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-HL-paper-secA-q2-art.png",
+  "year": 2011
+ },
+ "dcg-2011-HL-paper-secA-q3-art": {
+  "alt": "Question A-3 as printed. A photograph of a sculpture with sloping arms supporting lights, beside the elevation on XY and the plan of the skew lines AB and CD.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "2b94da9c006ccb279dfb203bc14b3ff3",
+  "questionRef": "2011 HL Section A Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-HL-paper-secA-q3-art.png",
+  "year": 2011
+ },
+ "dcg-2011-HL-paper-secA-q4-art": {
+  "alt": "Question A-4 as printed. A photograph of a table soccer figure beside a ball, beside the elevation on XY of the sphere A and the hemisphere B in contact, the incomplete plan, and the position C.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "0e4ae9f04d1a5705813986cddad41b8c",
+  "questionRef": "2011 HL Section A Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-HL-paper-secA-q4-art.png",
+  "year": 2011
+ },
+ "dcg-2011-HL-paper-secB-q1-art": {
+  "alt": "Question B-1 as printed. A 3D graphic of an archery trophy of intersecting solids, and Fig. B-1: the incomplete elevation on XY of an irregular pyramid (80) penetrated by a triangular prism at 20 degrees (22), the prism's triangular end, and the incomplete plan (80; 30 and 30; 20 and 40). Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "11178d45b3b8c25d02bd9365b854e6e2",
+  "questionRef": "2011 HL Section B Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-HL-paper-secB-q1-art.png",
+  "year": 2011
+ },
+ "dcg-2011-HL-paper-secB-q2-art": {
+  "alt": "Question B-2 as printed. A photograph of the Dublin Port Tunnel exit with its outline in a thought bubble, and Fig. B-2: the axes X, Y and Z with the isosceles triangle abc (14m base, 115 and 90 degree angles), the incomplete dimetric projection, and the elevation and end view (3.5m, radius R). Scale 1:100.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "615ad441b3a780e1917395b5ebac60ed",
+  "questionRef": "2011 HL Section B Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-HL-paper-secB-q2-art.png",
+  "year": 2011
+ },
+ "dcg-2011-HL-paper-secB-q3-art": {
+  "alt": "Question B-3 as printed. A photograph of make-up items with the lipstick top enlarged in a balloon, and Fig. B-3: the elevation of the shaped cylinder (70 and 55 degree cuts, 13 high) with the arrow A, its plan (diameter 14) with the cut surface S, and a 3D graphic of the lipstick with its focal sphere. Scale 5:1 (Enlarged scale).",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "1a68dac8c1e1ac8bfe919d0ec54f0762",
+  "questionRef": "2011 HL Section B Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-HL-paper-secB-q3-art.png",
+  "year": 2011
+ },
+ "dcg-2011-HL-paper-secC-q1-art": {
+  "alt": "Question C-1, Geologic Geometry, as printed: the option banner and the question text with the roadway's specification (i), (ii) and (iii) and part (b)'s (i) and (ii). The contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "7e377281724ef8989703485b061736be",
+  "questionRef": "2011 HL Section C Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-HL-paper-secC-q1-art.png",
+  "year": 2011
+ },
+ "dcg-2011-HL-paper-secC-q2-art": {
+  "alt": "Question C-2, Structural Forms, as printed. The option banner, a photograph of an office chair with a mesh support cushion, and Fig. C-2: the end view of the cushion on XY (100 and 50) with the points A, B, D and C, and its elevation (semi-elliptical perimeter, 256 across; 40, 200 and 120; 360) with the hyperbolic paraboloid ABCD and the section S-S. Scale 1:2.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "7c01e6f83dbf0cab2e7e41a42d449fe7",
+  "questionRef": "2011 HL Section C Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-HL-paper-secC-q2-art.png",
+  "year": 2011
+ },
+ "dcg-2011-HL-paper-secC-q3-art": {
+  "alt": "Question C-3, Surface Geometry, as printed. The option banner, a photograph of the Grand Canal Theatre in Dublin, and Fig. C-3: the elevation of the sloping glass surfaces A to E with the edges pq and rs and the 50 degree pitch, and their plan (4m, 4m; 45 degree angles; 2m and 2m). Scale 1:100.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "cbbe0dff5b021fa50340c60473af667a",
+  "questionRef": "2011 HL Section C Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-HL-paper-secC-q3-art.png",
+  "year": 2011
+ },
+ "dcg-2011-HL-paper-secC-q4-art": {
+  "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner; part (a): a photograph of a lawnmower with its camshaft circled and the cam motion in three bullets; part (b): a photograph of a stone block on log rollers by the pyramids and Fig. C-4, the block B (1.8m by 0.5m) on three rollers with the roller L and the point P on XY. Scale 1:1 and 1:10.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "b493d565b9ddbd39317041d0691c821f",
+  "questionRef": "2011 HL Section C Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-HL-paper-secC-q4-art.png",
+  "year": 2011
+ },
+ "dcg-2011-HL-paper-secC-q5-art": {
+  "alt": "Question C-5, Assemblies, as printed. The option banner, the question text, Fig. C-5: dimensioned details of the six numbered parts of a bird feeder with the section line A-A on the base, a 3D graphic of the parts, a photograph of a bird, and the parts list naming Base, Seed Holder, Perch, Lid, 6mm Hinge Pin and 4mm Connecting Pin with their quantities.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2011 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "01770be19e382970af1813b33067dc27",
+  "questionRef": "2011 HL Section C Q5",
+  "src": "/exam-figures/dcg/markbank/dcg-2011-HL-paper-secC-q5-art.png",
+  "year": 2011
+ },
  "dcg-2012-HL-paper-secA-q1-art": {
   "alt": "Question A-1 as printed. A photograph of a speaker at a curved lectern, beside an incomplete trimetric projection of a similar lectern by the axonometric axes method, with the axes X, Y and Z, the end view and elevation in their positions, and construction lines in red, green and purple.",
   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2012 Higher Level — © State Examinations Commission",

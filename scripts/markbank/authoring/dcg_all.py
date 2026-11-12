@@ -66,7 +66,7 @@ CARDED = ({(year, level) for year in range(2019, 2027) for level in ('hl', 'ol')
           | {(2018, 'hl'), (2018, 'ol'), (2017, 'hl'), (2017, 'ol'),
              (2016, 'hl'), (2016, 'ol'), (2015, 'hl'), (2015, 'ol'),
              (2014, 'hl'), (2014, 'ol'), (2013, 'hl'), (2013, 'ol'),
-             (2012, 'hl'), (2012, 'ol')})
+             (2012, 'hl'), (2012, 'ol'), (2011, 'hl')})
 
 # Cards edited by hand after generation, kept exactly as shipped. None since
 # November 2026: #294 had cut 2023 Ordinary B-3(c) into its four priced lines
@@ -166,7 +166,16 @@ def pair(units, leaves, texts):
         out, letter = [], None
         for u in units:
             letter = u.letter or letter
-            out.append((u, [k for k in leaves if k[2] == letter]))
+            under = [k for k in leaves if k[2] == letter]
+            # A head that prints the ROMAN it prices: 2011 Higher C-1 sets
+            # "(b) (i) Strike Line (4)" and "(ii) Dip of stratum (6)" against
+            # the paper's (b)(i) and (b)(ii) (2010 Higher C-1 the same). The
+            # roman is the address the SEC printed; spread over the whole
+            # letter, each card cited both romans and asked both.
+            r = HEAD_ROMAN.match(u.title)
+            if r and (letter and any(k[3] == r.group(1) for k in under)):
+                under = [k for k in under if k[3] == r.group(1)]
+            out.append((u, under))
         return out
 
     # Every pairing the alignment makes has to PAY for itself. Scored on the
@@ -225,6 +234,9 @@ def pair(units, leaves, texts):
         else:
             j += 1
     return [(units[k], out[k]) for k in range(m)]
+
+
+HEAD_ROMAN = re.compile(r'^\((i{1,3}|iv|v|vi{1,3}|ix|x)\)\s')
 
 
 def by_address(units, leaves):
@@ -327,6 +339,9 @@ SUB_PRICE = re.compile(r'\(([^()]*\d[^()]*)\)')
 # 2)" (2010 and 2011 Higher).
 ANY_PRICE = re.compile(r'^\s*any(?:\s+[a-z]+)?\s*=?\s*(\d{1,2})'
                        r'(?:\s*-\s*(\d{1,2}))?\s*$', re.I)
+# "(<12 = 1)": fewer than the required divisions earns 1, the full number the
+# step's marks (2010 Higher C-4, 2011 Higher C-4). Read like "(Any = 1)".
+FEWER_PRICE = re.compile(r'^\s*<\s*\d{1,2}\s*=\s*(\d{1,2})()\s*$')
 # "(4×1)"; 2015 Higher A-1(b) adds what is counted: "(3 x 1 for each
 # surface)".
 COUNT = re.compile(r'^(\d{1,2})\s*[x×X]\s*(\d{1,2})(?:\s+for\s+each\s+[a-z]+)?$')
@@ -371,7 +386,7 @@ def sub_ladder(text, marks):
             return sorted(set().union(*each))
     for m in reversed(groups):
         inner = m.strip()
-        a = ANY_PRICE.match(inner)
+        a = ANY_PRICE.match(inner) or FEWER_PRICE.match(inner)
         if a:
             # "(Any = 1)": any curve earns 1, the right one the step's marks.
             # "(Any = 1-2)" (2017 Higher C-2): any curve earns 1 or 2.
