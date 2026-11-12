@@ -164,7 +164,43 @@ FIG_LABEL = re.compile(r'^Fig\.?\s*[ABC]\s*[-‐-―]\s*\d\s*(?:\([a-z]\))?\s*$'
 #   line of its own above "? --- 10 --- ?" (2021 Higher B-2), and every label
 #   of 2016 Higher B-1's table so ("A:" / "130 --- 40 --- 80"). Dropped, the
 #   row read on from the one above it: "E: 145 --- 90 --- 10 --- 10 --- ?".
-SHORT_RUN = re.compile(r'\d[°⁰º]|to|[A-Z]:|\?')
+# - the word "or" set alone between two tick-box options (2013 Higher A-4:
+#   "Skew lines" / "or" / "Intersecting lines").
+SHORT_RUN = re.compile(r'\d[°⁰º]|to|[A-Z]:|\?|or')
+
+# Symbol and Wingdings glyphs the text layer reports as private-use code
+# points, read by font and code point and checked against the rendered page
+# (2013 Higher A-4 prints a tick box before each option and asks for a tick
+# mark; 2015 sets its bullets in SymbolMT). A bullet becomes the bullet the
+# later years print, so BULLET treats it the same.
+PRIVATE_GLYPHS = str.maketrans({
+    '\uf0b7': '•',          # SymbolMT bullet
+    '\uf0a8': '\u2610',     # Wingdings ballot box
+    '\uf0fc': '\u2713',     # Wingdings check mark
+})
+
+# 2010-2015 set a coordinate table as "A" / "=" / "130 --- 55 ---" / "90",
+# each a run of its own on one baseline: the label, the sign and the shorter
+# values fell under the short-run rule and the row lost its point. A band
+# that opens with a lone capital and an "=" is one printed row, read whole.
+COORD_LABEL = re.compile(r'^[A-Z]$')
+
+
+def _coordinate_rows(rows_, tol=2.5):
+    out, i = [], 0
+    while i < len(rows_):
+        band = [rows_[i]]
+        while i + len(band) < len(rows_) and \
+                abs(rows_[i + len(band)][0] - rows_[i][0]) <= tol:
+            band.append(rows_[i + len(band)])
+        if len(band) > 2 and COORD_LABEL.match(band[0][3].strip()) \
+                and band[1][3].strip() == '=':
+            out.append((band[0][0], band[0][1], band[-1][2],
+                        ' '.join(' '.join(r[3].split()) for r in band)))
+        else:
+            out.extend(band)
+        i += len(band)
+    return out
 
 # The SEC sets a specification as a bulleted list and the bullet arrives as
 # its own drawing operation — sometimes glued to its line, sometimes a block
@@ -201,7 +237,8 @@ def rows(page):
         if block['type'] != 0:
             continue
         for line in block['lines']:
-            text = ''.join(s['text'] for s in line['spans']).strip()
+            text = ''.join(s['text'] for s in line['spans']).strip() \
+                .translate(PRIVATE_GLYPHS)
             if not text:
                 continue
             x0, y0, x1, y1 = line['bbox']
@@ -392,7 +429,7 @@ class DcgPaper:
         13pt line, so no two printed lines can share one.
         """
         lines = []
-        for row in _banded(owned):
+        for row in _coordinate_rows(_banded(owned)):
             text = ' '.join(row[3].split())
             if row == head:
                 text = QHEAD.sub('', text).strip()
