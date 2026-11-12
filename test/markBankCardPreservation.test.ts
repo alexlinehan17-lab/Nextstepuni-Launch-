@@ -2025,8 +2025,8 @@ const technologyAdditions = {
   ordinary: [TECHNOLOGY_ORDINARY, 600, '08bec3e9d34162f043903934b63c8ba8a91a25c57ebe1f76264e3c4b79054a9b'],
 } as const;
 const dcgAdditions = {
-  higher: [DCG_HIGHER, 48, '76123d0f8ce2e1b953849ddb63c80063dd3c9c28013e13f0f1fd805f36470e53'],
-  ordinary: [DCG_ORDINARY, 34, '1993648c9d5f7831b1ffacc16a12804129515b8cefc589ce9fb4d0c7249c5e30'],
+  higher: [DCG_HIGHER, 137, '4e3331295e914061f96be14d55e3689082202227750adfc970c931059e56b34e'],
+  ordinary: [DCG_ORDINARY, 99, '9b331a5a62d3149d3bebb09ce1a20354f299be8b24efac627bd8b19037d1e29b'],
 } as const;
 const peAdditions = {
   higher: [PE_HIGHER, 257, 'b66f69f293e90b2913862dbb646bc161bbff8eda4ea41ba78d88fbb66acd23bf'],
@@ -2114,7 +2114,13 @@ describe('Mark Bank card preservation', () => {
     // Added sitting by sitting, each a card per priced unit of the scheme
     // against the census's printed asks (reconcile.py dcg): 2018 Higher 48
     // cards for its 39 asks (B-1(a), C-1(a) and C-5(a) are priced in named
-    // groups, a card each), 2018 Ordinary 34 for its 30 (C-5 in six groups).
+    // groups, a card each), 2018 Ordinary 34 for its 30 (C-5 in six groups);
+    // 2017 Higher 46 for its 36 (B-3(a) under three printed heads, C-1(a) in
+    // four earthworks sections, C-5(a) in eight named groups); 2017 Ordinary
+    // 33 for its 29 (C-5 in five named groups); 2016 Higher 43 for its 35
+    // (C-1(a) in three earthworks pieces, C-5(a) in eight named groups);
+    // 2016 Ordinary 32 for its 26 (A-2 in two printed heads, C-5 in six
+    // named groups).
     const additions = cards.map(card => card.id).filter(isDcgAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
