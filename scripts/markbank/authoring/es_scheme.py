@@ -302,7 +302,7 @@ class Ask:
 
     __slots__ = ('section', 'q', 'letter', 'roman', 'title', 'terms', 'total',
                  'quota', 'options', 'points', 'notes', 'line', 'fault',
-                 'head_notation', 'lead_points', 'bracket_parts', 'raw')
+                 'head_notation', 'lead_points', 'bracket_parts', 'raw', 'answer_lines')
 
     def __init__(self, **kw):
         for k in self.__slots__:
@@ -825,7 +825,7 @@ class EsScheme:
                    quota=quota, options=options, points=points, notes=notes,
                    line=line, fault=fault, head_notation=notation,
                    lead_points=lead_points, bracket_parts=bracket_parts,
-                   raw=raw)
+                   raw=raw, answer_lines=list(rest))
 
     # -- lookups ------------------------------------------------------------
     def ref(self, ask):

@@ -826,9 +826,142 @@ def _separate_answers(text, n):
 
 
 def _rows_for(ask, language, rule, stepped=False):
+    """The card's marking rows, or None (a direction) or a refusal string.
+
+    Every non-zero partial the scheme prints ("[degree = 2m]") is then made
+    claimable on the row it belongs to (_claimable_partials).
+    """
+    partials = _partials(ask)
+    rows = _rows_core(ask, language, rule, stepped,
+                      skip_notes={note for note, _p, whole in partials if whole})
+    if partials and isinstance(rows, list):
+        rows = _claimable_partials(ask, rows, partials)
+    return rows
+
+
+# A partial the scheme prices in a bracket: "degree = 2m", "studying hard =
+# 2m", "to understand the language =1m". Read up to its price; what follows it
+# ("if only correct information given") is a condition, kept quoted.
+PARTIAL = re.compile(r'^\s*(.*?\S)\s*=\s*(\d{1,2})\s*m(?:arks?)?\b\s*(.*)$', re.I)
+ORDER_NOTE = re.compile(r'first correct answer|for the first', re.I)
+STOPWORDS = {'the', 'and', 'with', 'that', 'this', 'their', 'they', 'them', 'from', 'about',
+             'have', 'into', 'there', 'were', 'what', 'when', 'only', 'more', 'than'}
+
+
+def _words(text):
+    return {w for w in re.findall(r'[a-záéíóúñü]+', text.lower()) if len(w) > 3 and w not in STOPWORDS}
+
+
+def _partials(ask):
+    """[(note, [(answer, marks)], whole)]: every NON-ZERO partial a note prices.
+
+    A note that only orders a menu's tariff ("[First correct answer = 2m]") is
+    not one. A zero ("[largest = 0m]") is the scheme ruling an answer out: it
+    stays a note on the row. `whole` is whether the note is nothing but
+    priced partials, so it need not also be quoted.
+    """
+    out = []
+    notes = list(ask.notes or [])
+    for k, note in enumerate(notes):
+        if ORDER_NOTE.search(note):
+            continue
+        # A lead-in printed on the line above a partial ("If only answering:"
+        # / "[there is a necessity to build more domes = 1m]") is the partial's
+        # own condition: it travels with it as one option.
+        flat = ' '.join((ask.raw or '').split())
+        lead = next((n for n in notes if n.rstrip().endswith(':')
+                     and f'{" ".join(n.split())} [{" ".join(note.split())}' in flat), '')
+        parsed, whole = [], True
+        for piece in [p for p in note.split(';') if p.strip()]:
+            m = PARTIAL.match(piece)
+            if not m:
+                whole = False
+                continue
+            text, marks, tail = m.group(1).strip(), int(m.group(2)), m.group(3).strip()
+            if tail or not marks:
+                whole = False
+            if marks:
+                parsed.append((f'{lead} {text}' if lead else text, marks))
+        if parsed:
+            out.append((note, parsed, whole))
+            if lead and whole:
+                out.append((lead, [], True))
+    return out
+
+
+def _claimable_partials(ask, rows, partials):
+    """The rows with every non-zero partial claimable (coordinator ruling, 12 Nov
+    2026): the answer it belongs to becomes a one-pick group of the full answer
+    at its price and each printed partial at its own (optionMarks), counted
+    once at the best one claimed. A partial for a menu's answer is one more
+    option of the menu at its own price.
+
+    Which answer a partial belongs to is read from where the scheme prints it:
+    straight after an answer, it is that answer's ("A recognised qualification;
+    [degree = 2m] to understand how …"); after the last answer, it is the one it
+    shares words with ("[to understand the language = 1m]"), or, sharing none
+    and priced like every answer, an alternative to any of them ("Metro; bus
+    (3+3m) [airport = 3m]"), or else the last answer's.
+    """
+    rows = [dict(r) for r in rows]
+    # One answer per printed line, where a frozen card read two printed answers
+    # as one ("(Several) zones … cameras (installed)" / "There was a problem
+    # with the alarm" (2+2m)) and a partial belongs to one of them.
+    if (len(rows) == 1 and rows[0]['kind'] == 'point' and ask.terms and len(ask.terms) > 1
+            and ask.answer_lines and len(ask.answer_lines) == len(ask.terms)):
+        note = rows[0].get('contextNote')
+        rows = [{'id': f'r-{i}', 'kind': 'point', 'verbatim': text, 'marks': marks,
+                 **({'contextNote': note} if i == 1 and note else {})}
+                for i, (text, marks) in enumerate(zip(ask.answer_lines, ask.terms), start=1)]
+    raw = ' '.join((ask.raw or '').split())
+    for note, parsed, _whole in partials:
+        if not parsed:
+            continue
+        at = raw.find(' '.join(note.split()))
+        starts = [raw.find(' '.join(str(r.get('verbatim'))[:25].split())) for r in rows]
+        before = [i for i, st in enumerate(starts) if 0 <= st < at]
+        target = before[-1] if before else len(rows) - 1
+        if len(rows) > 1 and target == len(rows) - 1:
+            shared = [len(_words(r.get('verbatim') or '') & _words(' '.join(t for t, _m in parsed)))
+                      for r in rows]
+            prices = {r.get('marks') for r in rows}
+            if max(shared) > 0:
+                target = shared.index(max(shared))
+            elif (all(r['kind'] == 'point' for r in rows) and len(prices) == 1
+                    and all(m == next(iter(prices)) for _t, m in parsed)):
+                # An alternative to any one of the answers: one menu of them all.
+                price = next(iter(prices))
+                note_ = next((r.get('contextNote') for r in rows if r.get('contextNote')), None)
+                rows = [{'id': 'r-1', 'kind': 'anyN', 'verbatim': 'The answers the scheme accepts',
+                         'marks': None, **({'contextNote': note_} if note_ else {}),
+                         'group': {'claimMax': len(rows), 'perOption': price,
+                                   'options': [r['verbatim'] for r in rows] + [t for t, _m in parsed]}}]
+                continue
+        row = rows[target]
+        if row['kind'] == 'anyN':
+            g = dict(row['group'])
+            assert not g.get('perOptionSteps'), (ask, 'a partial beside a descending tariff')
+            marks = g.get('optionMarks') or [g['perOption']] * len(g['options'])
+            g['options'] = list(g['options']) + [t for t, _m in parsed]
+            g['optionMarks'] = list(marks) + [m for _t, m in parsed]
+            g['perOption'] = max(g['optionMarks'])
+            row['group'] = g
+        else:
+            assert row['kind'] == 'point' and not row.get('parts'), (ask, row)
+            full = row['marks']
+            assert all(m <= full for _t, m in parsed), (ask, parsed, full)
+            rows[target] = {'id': row['id'], 'kind': 'anyN', 'verbatim': 'The answers the scheme accepts',
+                            'marks': None, **({'contextNote': row['contextNote']} if row.get('contextNote') else {}),
+                            'group': {'claimMax': 1, 'perOption': full,
+                                      'options': [row['verbatim']] + [t for t, _m in parsed],
+                                      'optionMarks': [full] + [m for _t, m in parsed]}}
+    return rows
+
+
+def _rows_core(ask, language, rule, stepped=False, skip_notes=()):
     """The card's marking rows, or None (a direction) or a refusal string."""
     note = language_note(language, rule)
-    notes = list(ask.notes or [])
+    notes = [n for n in (ask.notes or []) if n not in skip_notes]
     if stepped:
         # A bracket that only states a price ("[2m]", "[1+1m]") is already on
         # the row as its marks; quoting it again says nothing.

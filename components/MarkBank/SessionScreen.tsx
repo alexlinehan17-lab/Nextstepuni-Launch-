@@ -42,6 +42,7 @@ import { splitForEmphasis } from './questionEmphasis';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from '../Motion';
 import {
+  bestClaimedMarks,
   groupMarks,
   isPointCard,
   isRubricCard,
@@ -314,6 +315,9 @@ export function marksClaimed(
     // A bounded "Any four 4(3)" group is scored by how many the student actually
     // had, not as one all-or-nothing block worth twelve marks.
     if (r.kind === 'anyN' && r.group) {
+      // Options priced one by one: the best claimed, each once, at its own price.
+      const optionMarks = r.group.optionMarks;
+      if (optionMarks) return n + bestClaimedMarks((picks[id] ?? []).map(oi => optionMarks[oi] ?? 0), r.group.claimMax);
       const chosen = Math.min(picks[id]?.length ?? 0, r.group.claimMax);
       return n + claimedMarks(r.group, chosen);
     }
@@ -757,7 +761,7 @@ const MarkRowView: React.FC<{
                 aria-pressed={on}
                 style={{
                   width: '100%', textAlign: 'left', display: 'grid',
-                  gridTemplateColumns: '16px 1fr', gap: 8, alignItems: 'center',
+                  gridTemplateColumns: g.optionMarks && showMarks ? '16px 1fr auto' : '16px 1fr', gap: 8, alignItems: 'center',
                   padding: '7px 9px', borderRadius: 9,
                   border: `1px solid ${on ? CLAIM : MUTED_BORDER}`,
                   background: on ? CLAIM : 'transparent',
@@ -797,6 +801,15 @@ const MarkRowView: React.FC<{
                     </em>
                   )}
                 </span>
+                {g.optionMarks && showMarks && (
+                  <span style={{
+                    font: `700 10.5px/1.7 ${MONO}`, borderRadius: 6, padding: '0 6px', whiteSpace: 'nowrap',
+                    fontVariantNumeric: 'tabular-nums',
+                    background: on ? ON_CLAIM : 'var(--mb-raised)', color: on ? CLAIM : INK_2,
+                  }}>
+                    {g.optionMarks[oi]}m
+                  </span>
+                )}
               </button>
             );
           })}

@@ -465,7 +465,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention one place where you can give English classes.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.” The scheme adds: “schools = 2m”.", group: {"claimMax":1,"perOption":4,"options":["private schools","academies","companies"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. Where answers are in Spanish, award half marks.”", group: {"claimMax":1,"perOption":4,"options":["private schools","academies","companies","schools"],"optionMarks":[4,4,4,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5429,8 +5429,7 @@ export const CARDS: SecCard[] = [
     questionText: "What types of public transport are mentioned?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Metro", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.” The scheme adds: “airport = 3m”." },
-    { id: "r-2", kind: "point", verbatim: "bus", marks: 3 },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “All answers must be in English. If the entire listening comprehension test is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”", group: {"claimMax":2,"perOption":3,"options":["Metro","bus","airport"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",

@@ -213,6 +213,18 @@ export interface MarkRow {
      * reading only that is never wrong by more than the tail.
      */
     perOptionSteps?: number[];
+    /**
+     * Each option's own printed price, where the scheme credits a different
+     * answer, or part of the answer, at a price of its own: "A recognised
+     * qualification (2m) [degree = 2m]", "to understand how the language works
+     * (2m) [to understand the language = 1m]". One entry per option, in option
+     * order; the full answer comes first. The group pays its best `claimMax`
+     * claimed options, each at its own price and each once
+     * (bestClaimedMarks), the rule an Irish slash-alternative part already
+     * follows (irishScoring.ts): a student who claims the full answer and its
+     * partial earns the full answer, once. perOption is the highest price.
+     */
+    optionMarks?: number[];
   };
 }
 
@@ -1649,8 +1661,19 @@ export function isContentFreeRow(verbatim: string): boolean {
  * the scheme does not define per-row values — so we assert the rows carry none
  * rather than pretending.
  */
+/**
+ * The best `count` claimed values, added: an answer the scheme credits in
+ * more than one way earns once, at the most it is worth. Shared by an Irish
+ * slash-alternative part (irishPartMarks) and a menu whose options carry
+ * their own printed prices (MarkRow.group.optionMarks).
+ */
+export function bestClaimedMarks(values: readonly number[], count: number): number {
+  return [...values].sort((a, b) => b - a).slice(0, Math.max(0, count)).reduce((sum, value) => sum + value, 0);
+}
+
 /** What one bounded group is worth when fully claimed. */
-export function groupMarks(g: { claimMax: number; perOption: number; perOptionSteps?: number[] }): number {
+export function groupMarks(g: { claimMax: number; perOption: number; perOptionSteps?: number[]; optionMarks?: number[] }): number {
+  if (g.optionMarks) return bestClaimedMarks(g.optionMarks, g.claimMax);
   return g.perOptionSteps
     ? g.perOptionSteps.slice(0, g.claimMax).reduce((n, m) => n + m, 0)
     : g.claimMax * g.perOption;

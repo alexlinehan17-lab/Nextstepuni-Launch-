@@ -21,6 +21,11 @@ export const marksWord = (n: number) => (n === 1 ? 'mark' : 'marks');
 export function anyNHeading(group: NonNullable<MarkRow['group']>): string {
   const choice = group.claimMax === group.options.length
     ? `All ${group.claimMax} of these` : `Any ${group.claimMax} of these`;
+  // Options priced one by one (a full answer and the part of it the scheme
+  // also credits): the menu pays the best one claimed, at its own marks.
+  if (group.optionMarks) {
+    return `${group.claimMax === 1 ? 'One of these' : `Any ${group.claimMax} of these`} — each at its own marks`;
+  }
   if (group.perOptionSteps) {
     const steps = group.perOptionSteps.slice(0, group.claimMax);
     return `${choice} — ${steps.join(' then ')} ${steps.length === 1 ? marksWord(steps[0]) : 'marks'}`;
