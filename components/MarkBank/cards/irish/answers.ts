@@ -1008,7 +1008,115 @@ export const stepSingleAnswerLadders = (allocation: IrishAllocation): IrishAlloc
     : part)),
 });
 
-export function irishAnswersFor(source: IrishAnswerSource): IrishAllocation | undefined {
-  const result = parseIrishAnswers(source);
-  return result.ok ? result.allocation : undefined;
+/** 2022's deferred Higher scheme sets some parts in layouts the reader above does not cut, or misreads (a row ") bail
+ *  réasúnta maith …"). Tried where it fails or misreads, or where the answers are marked "– pointe" (2022 deferred Higher's
+ *  alone), and only where the part's printed tariff is the criterion's marks. The rows are the scheme's own words at its own
+ *  prices:
+ *  - answers marked "– pointe" under a split price ("Dhá rud – 2mharc (1 mharc + 1 mharc) ag ól Pepsi -- pointe …", "Dhá
+ *    phointe 3 mharc (2 mharc + 1 mharc) Scannáin uafáis - pointe …"): a ladder over them, one answer earning the first share;
+ *  - answers run together under a split price ("Dhá phointe eolais 3 mharc (2 mharc + 1 mharc) bail réasúnta … Tá na doirse
+ *    ag titim as a chéile. 3 mharc"; "(2 mharc + 1 mharc) 3 mharc Breischéim na haidiachta …"): one row in those steps;
+ *  - one point among answers marked "– pointe" ("3 mharc Pointe amháin iad ag scairteadh - pointe ag caitheamh … -- pointe",
+ *    "Pointe amháin 2 mharc leis an gceol nua … -- pointe"): each answer at the price;
+ *  - one answer priced in halves after it ("Pointe amháin 2 mharc an baile a fhágáil … (1 mharc + 1mharc)"): those steps;
+ *  - alternatives priced on the first only ("2 mharc Is aoibhinn léi … = 2 mharc Is breá léi … = 2 mharc; Tá súil aici …"):
+ *    each at the part's price. */
+const LR_ASKED = /^(?:\d\.\s*)?(?:\([a-z]\)\s*)?(?:\((?:i|ii|iii|iv)\)\s*)?(.*?\(Alt \d+\)|[^?.]*[?.])\s+(.*)$/;
+const LR_POINT_MARK = /\s*(?:–|-{1,5})\s*pointe\b\.?/;
+const LR_SPLIT_PRICE = /^[^\d]*?(\d+)\s*m?h?arc\s*\(\s*(\d+)\s*m?h?arc\s*\+\s*(\d+)\s*m?h?arc\s*\)\s+(.+)$/;
+const LR_SPLIT_FIRST = /^\(\s*(\d+)\s*m?h?arc\s*\+\s*(\d+)\s*m?h?arc\s*\)\s*(\d+)\s*m?h?arc\s+(.+)$/;
+const LR_ONE_POINT = /^(?:Pointe amháin\s+)?(\d+)\s*m?h?arc\s+(?:Pointe amháin\s+)?(.+)$/;
+const LR_HALVES = /^Pointe amháin\s+(\d+)\s*m?h?arc\s+(.+?)\s*\(\s*(\d+)\s*m?h?arc\s*\+\s*(\d+)\s*m?h?arc\s*\)$/;
+const LR_ALTERNATIVES = /^(?:\((?:pointe amháin eolais)\)\s*)?\{?\s*(\d+)\s*m?h?arc\s*\}?\s+(.+)$/;
+const LR_MARKED = /\s(?:–|-{1,5})\s*pointe\b/;
+const LR_SPLIT_AFTER = /^[^\d]*?\(\s*(\d+)\s*m?h?arc\s*\)\s*(\d+)\s*m?h?arc\s*\+\s*(\d+)\s*m?h?arc\s+(.+)$/;
+const LR_PAIR = /^(?:\([^()]*\)\s*)?\{\s*(\d+)\s*m?h?arc\s*:\s*(\d+)\s*m?h?arc\s*\+\s*(\d+)\s*m?h?arc\s*\}\s*(An chéad [^•]*?atá ceart = \d+ mharc; an dara [^•]*?atá ceart = \d+ mharc)?\s*•?\s*(.+?)\s*\(\s*(\d+)\s*m?h?arc\s*\)\s*agus\s+(.+?)\s*\(\s*(\d+)\s*m?h?arc\s*\)$/;
+const LR_ONE_PRICED = /^(?:\(?pointe amháin eolais\)?\s*)?\(\s*(\d+)\s*m?h?arc\s*\)\s+(.+)$/;
+const LR_SHORT = /\s*(An dá rud de dhíth\.\s*Rud amháin\s*\(\s*(\d+)\s*-\s*(\d+)\s*\))\s*$/;
+
+function lastResort(source: IrishAnswerSource): IrishAllocation | undefined {
+  if (source.guidance.length === 0) return undefined;
+  const asked = LR_ASKED.exec(source.guidance[0].trim());
+  if (!asked) return undefined;
+  const prompt = tidy(asked[1]);
+  const rest = asked[2].trim();
+  const total = source.totalMarks;
+  const part = (rows: IrishAnswerRow[], ladder?: number[], directions: string[] = []): IrishAllocation => ({
+    parts: [{ id: 'p1', prompt, tariff: total, ...(ladder ? { ladder } : {}), rows: rows.map((row, index) => ({ ...row, id: `r${index + 1}` })) }],
+    directions,
+  });
+  // A run of answers under a split price: one right answer earns the first share, two the whole.
+  const stepsOf = (first: number) => [...new Set([0, first, total])].sort((x, y) => x - y);
+  // The price printed again after the answers ("… as a chéile. 3 mharc") is the part's, not an answer's.
+  const unpriced = (text: string) => tidy(text.replace(/\s*\b\d+\s*m?h?arc\s*$/, ''));
+  // "{3 mharc: 2 mharc + 1 mharc} An chéad rud atá ceart = 2 mharc; an dara rud atá ceart = 1 mharc A dheasc a fholmhú (2 mharc)
+  // agus carn mór cáipéisí a chrochadh leis (1 mharc)": the two things the answer names, on the part's ladder.
+  const pair = LR_PAIR.exec(rest);
+  if (pair && Number(pair[1]) === total && Number(pair[2]) + Number(pair[3]) === total && pair[2] === pair[6] && pair[3] === pair[8]) {
+    return part([{ id: '', text: tidy(pair[5]), marks: 0 }, { id: '', text: tidy(pair[7]), marks: 0 }], [Number(pair[2]), total],
+      pair[4] ? [tidy(pair[4])] : []);
+  }
+  // "pointe amháin eolais (2 mharc) As sin amach …", "(pointe amháin eolais) (2 mharc) Ag déanamh taighde … An dá rud de
+  // dhíth. Rud amháin (2-1)": the one answer at the price, in the step the scheme gives a half answer.
+  const priced = LR_ONE_PRICED.exec(rest);
+  if (priced && Number(priced[1]) === total) {
+    const short = LR_SHORT.exec(priced[2]);
+    const text = unpriced(short ? priced[2].slice(0, short.index) : priced[2]);
+    const reduced = short && Number(short[2]) === total ? Number(short[2]) - Number(short[3]) : undefined;
+    if (text) return part([{ id: '', text, marks: total, ...(reduced !== undefined ? { steps: [0, reduced, total] } : {}) }], undefined, short ? [tidy(short[1])] : []);
+  }
+  const split = LR_SPLIT_PRICE.exec(rest) ?? (() => {
+    const first = LR_SPLIT_FIRST.exec(rest) ?? LR_SPLIT_AFTER.exec(rest);
+    if (!first) return null;
+    return (first[0] === LR_SPLIT_FIRST.exec(rest)?.[0]
+      ? Object.assign([first[0], first[3], first[1], first[2], first[4]], { index: 0, input: rest })
+      : first) as RegExpExecArray;
+  })();
+  if (split && Number(split[1]) === total && Number(split[2]) + Number(split[3]) === total) {
+    const first = Number(split[2]);
+    if (LR_MARKED.test(` ${split[4]}`)) {
+      const pieces = ` ${split[4]}`.split(LR_POINT_MARK).map(tidy);
+      const answers = pieces.slice(0, -1).filter(Boolean);
+      const trailer = pieces[pieces.length - 1];
+      if (answers.length >= 2) return part(answers.map(text => ({ id: '', text, marks: 0 })), [first, total],
+        trailer && !/^\d+\s*m?h?arc$/.test(trailer) ? [trailer] : []);
+    } else {
+      return part([{ id: '', text: unpriced(split[4]), marks: total, steps: stepsOf(first) }]);
+    }
+  }
+  const halves = LR_HALVES.exec(rest);
+  if (halves && Number(halves[1]) === total && Number(halves[3]) + Number(halves[4]) === total) {
+    return part([{ id: '', text: tidy(halves[2]), marks: total, steps: [...new Set([0, Number(halves[3]), Number(halves[4]), total])].sort((x, y) => x - y) }]);
+  }
+  const one = LR_ONE_POINT.exec(rest);
+  if (one && Number(one[1]) === total && LR_MARKED.test(` ${one[2]}`)) {
+    const answers = ` ${one[2]}`.split(LR_POINT_MARK).map(tidy).filter(Boolean);
+    if (answers.length) return part(answers.map(text => ({ id: '', text, marks: total })));
+  }
+  const alternatives = LR_ALTERNATIVES.exec(rest);
+  if (alternatives && Number(alternatives[1]) === total) {
+    const price = new RegExp(`\\s*=\\s*${alternatives[1]}\\s*m?h?arc\\b[;.]?\\s*|\\s*•\\s*`);
+    const answers = alternatives[2].split(price).map(tidy).filter(Boolean);
+    if (answers.length >= 2 && new RegExp(`=\\s*${alternatives[1]}\\s*m?h?arc`).test(alternatives[2])) {
+      return part(answers.map(text => ({ id: '', text, marks: total })));
+    }
+  }
+  return undefined;
 }
+
+/** A reading the reader above made of a layout it does not know: a row or a note that is only a stray bracket. */
+const misread = (allocation: IrishAllocation) => allocation.parts.some(part => part.rows.some(row => /^\)|\($|^\($/.test(row.text.trim())))
+  || allocation.directions.some(note => /^[()]$/.test(note.trim()));
+
+export function irishAnswersFor(source: IrishAnswerSource): IrishAllocation | undefined {
+  // Answers marked "– pointe" are 2022 deferred Higher's alone, and the reader above misreads them (one row ") ag crochadóireacht
+  // … -- pointe ag ól Pepsi -- pointe …"): they are read as the list they are, first.
+  if (source.guidance.length && LR_MARKED.test(source.guidance[0])) {
+    const listed = lastResort(source);
+    if (listed) return listed;
+  }
+  const result = parseIrishAnswers(source);
+  if (result.ok && !misread(result.allocation)) return result.allocation;
+  return lastResort(source) ?? (result.ok ? result.allocation : undefined);
+}
+
