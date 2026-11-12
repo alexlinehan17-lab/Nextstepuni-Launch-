@@ -1,5 +1,3922 @@
 [
  {
+  "id": "es-2017-hl-l-1-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-0",
+  "conceptId": "where-these-festivals-take-place-spain",
+  "questionRef": "2017 HL Section L Q1(a)",
+  "questionText": "Where do these festivals take place in Spain?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "in every autonomous community",
+      "in every province",
+      "in every small town/ village"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2 marks; the listening booklet prints it on page 2.",
+  "stem": "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. FIESTAS ESPAÑOLAS (SPANISH FESTIVALS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 1 — FIESTAS ESPAÑOLAS",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-1-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-0",
+  "conceptId": "spanish-festivals-have-many-things-common",
+  "questionRef": "2017 HL Section L Q1(b)",
+  "questionText": "Spanish festivals have many things in common. Give three details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "they take place outdoors",
+      "with music",
+      "fireworks",
+      "great opportunity to liberate the Spanish spirit"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1+1 marks; the listening booklet prints it on page 2.",
+  "stem": "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. FIESTAS ESPAÑOLAS (SPANISH FESTIVALS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 1 — FIESTAS ESPAÑOLAS",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-1-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-0",
+  "conceptId": "know-that-these-festivals-important",
+  "questionRef": "2017 HL Section L Q1(c)",
+  "questionText": "How do we know that these festivals are important?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "they make the cities in which they are held popular",
+      "they become international events",
+      "which attract thousands of tourists"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1 marks; the listening booklet prints it on page 2.",
+  "stem": "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. FIESTAS ESPAÑOLAS (SPANISH FESTIVALS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 1 — FIESTAS ESPAÑOLAS",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-1-d",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-0",
+  "conceptId": "number-festivals",
+  "questionRef": "2017 HL Section L Q1(d)",
+  "questionText": "What is said about the number of festivals?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(There are so many festivals that) if you attend one a day you wouldn’t have time to see them all in one lifetime",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 2.",
+  "stem": "ANUNCIO: This will be played three times right through with a long pause after the SECOND hearing. FIESTAS ESPAÑOLAS (SPANISH FESTIVALS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 1 — FIESTAS ESPAÑOLAS",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-2-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "jim-student-exchange-badajoz",
+  "questionRef": "2017 HL Section L Q2(a)",
+  "questionText": "Give two details about Jim’s student exchange in Badajoz.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "he went after the Christmas holidays",
+      "he spent 2 months",
+      "in 4th Year",
+      "in a brilliant (secondary) school",
+      "he stayed in the home of his friend/ Ignacio"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1 marks; the listening booklet prints it on page 2.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO DE UN INTERCAMBIO EN ESPAÑA (TALKING ABOUT A STUDENT EXCHANGE IN SPAIN)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 2 — HABLANDO DE UN INTERCAMBIO EN ESPAÑA",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-2-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "does-jim-say-ignacio",
+  "questionRef": "2017 HL Section L Q2(b)",
+  "questionText": "What does Jim say about Ignacio? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "he is the eldest",
+      "he has a large family",
+      "he is very extrovert",
+      "he likes to play basketball",
+      "he introduced him to all his friends"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1+1+1 marks; the listening booklet prints it on page 2.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO DE UN INTERCAMBIO EN ESPAÑA (TALKING ABOUT A STUDENT EXCHANGE IN SPAIN)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 2 — HABLANDO DE UN INTERCAMBIO EN ESPAÑA",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-2-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "does-say-learning-spanish",
+  "questionRef": "2017 HL Section L Q2(c)",
+  "questionText": "What does he say about learning Spanish? Give two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "(to learn Spanish) you need to integrate (well)",
+      "listen (carefully to everyone)",
+      "ask for help (when you need it)"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2 marks; the listening booklet prints it on page 2.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO DE UN INTERCAMBIO EN ESPAÑA (TALKING ABOUT A STUDENT EXCHANGE IN SPAIN)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 2 — HABLANDO DE UN INTERCAMBIO EN ESPAÑA",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-2-d",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "does-ignacio-say-irish-eating-habits",
+  "questionRef": "2017 HL Section L Q2(d)",
+  "questionText": "What does Ignacio say about Irish eating habits?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "They (the Irish usually) eat a lot of junk food",
+    "marks": 2,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks; the listening booklet prints it on page 2.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. HABLANDO DE UN INTERCAMBIO EN ESPAÑA (TALKING ABOUT A STUDENT EXCHANGE IN SPAIN)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 2 — HABLANDO DE UN INTERCAMBIO EN ESPAÑA",
+   "pages": [
+    2
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-3-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "happened-pepe-when-arrived-party",
+  "questionRef": "2017 HL Section L Q3(a)",
+  "questionText": "What happened to Pepe when he arrived at the party? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "He tripped / fell, sprained his wrist, he ruined his shirt / jacket.",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the listening booklet prints it on page 3.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. PEPE VA A UNA FIESTA (PEPE GOES TO A PARTY)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 3 — PEPE VA A UNA FIESTA",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-3-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "did-marta",
+  "questionRef": "2017 HL Section L Q3(b)",
+  "questionText": "What did Marta do?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "She brought him to the kitchen and put his hand under the cold tap/ cold water to relieve the pain.",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the listening booklet prints it on page 3.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. PEPE VA A UNA FIESTA (PEPE GOES TO A PARTY)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 3 — PEPE VA A UNA FIESTA",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-3-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "did-things-change-better-pepe",
+  "questionRef": "2017 HL Section L Q3(c)",
+  "questionText": "How did things change for the better for Pepe? Give three details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "he got to know Marta",
+      "all her friends.",
+      "They all wanted to help him",
+      "brought him drinks and tapas.",
+      "He had a great time."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1+1 marks; the listening booklet prints it on page 3.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. PEPE VA A UNA FIESTA (PEPE GOES TO A PARTY)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 3 — PEPE VA A UNA FIESTA",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-3-d",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-2",
+  "conceptId": "were-pepe-friends-angry",
+  "questionRef": "2017 HL Section L Q3(d)",
+  "questionText": "Why were Pepe’s friends angry? Give one detail.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The girls were giving all their attention to Pepe / they had nobody to dance with.",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the listening booklet prints it on page 3.",
+  "stem": "DIÁLOGO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. PEPE VA A UNA FIESTA (PEPE GOES TO A PARTY)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 3 — PEPE VA A UNA FIESTA",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-4-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "things-have-enjoy-time-university",
+  "questionRef": "2017 HL Section L Q4(a)",
+  "questionText": "What two things do you have to do to enjoy your time at university?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Set your goals.",
+    "marks": 1,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Find a balance between your studies and social life",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1 marks; the listening booklet prints it on page 3.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA VIDA UNIVERSITARIA (UNIVERSITY LIFE)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 4 — LA VIDA UNIVERSITARIA",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-4-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "opportunities-that-student-life-offers",
+  "questionRef": "2017 HL Section L Q4(b)",
+  "questionText": "Mention two opportunities that student life offers.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "to study new subjects",
+      "enjoy a social life",
+      "(learn to live with greater) independence and responsibility"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1 marks; the listening booklet prints it on page 3.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA VIDA UNIVERSITARIA (UNIVERSITY LIFE)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 4 — LA VIDA UNIVERSITARIA",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-4-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "helps-majority-students-survive",
+  "questionRef": "2017 HL Section L Q4(c)",
+  "questionText": "What helps the majority of students to survive? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Scholarships",
+    "marks": 1,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "savings",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "help from their parents",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "(part-time) work",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1+1+1 marks; the listening booklet prints it on page 3.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA VIDA UNIVERSITARIA (UNIVERSITY LIFE)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 4 — LA VIDA UNIVERSITARIA",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-4-d",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "budget-some-students",
+  "questionRef": "2017 HL Section L Q4(d)",
+  "questionText": "What is said about the budget of some students? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "It only allows them to eat cheap food such as bananas, sausages and rice",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     3,
+     4
+    ],
+    "parts": [
+     {
+      "id": "p1",
+      "verbatim": "It only allows them to eat cheap food",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p2",
+      "verbatim": "such as bananas, sausages and rice",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the listening booklet prints it on page 3.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA VIDA UNIVERSITARIA (UNIVERSITY LIFE)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 4 — LA VIDA UNIVERSITARIA",
+   "pages": [
+    3
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-5-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "things-that-stop-when-holidays",
+  "questionRef": "2017 HL Section L Q5(a)",
+  "questionText": "Name three things that stop when you go on holidays.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(the rush) to bring the child to music class",
+    "marks": 1,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "preparing food / meals",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "endless hours in front of the computer",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1+1 marks; the listening booklet prints it on page 4.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. VACACIONES PARA LA FAMILIA (FAMILY HOLIDAYS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 5 — VACACIONES PARA LA FAMILIA",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-5-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "most-important-thing-holidays",
+  "questionRef": "2017 HL Section L Q5(b)",
+  "questionText": "What is the most important thing about holidays?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Quality time with the family",
+    "marks": 2,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks; the listening booklet prints it on page 4.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. VACACIONES PARA LA FAMILIA (FAMILY HOLIDAYS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 5 — VACACIONES PARA LA FAMILIA",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-5-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "whom-holiday-salou-recommended",
+  "questionRef": "2017 HL Section L Q5(c)",
+  "questionText": "For whom is a holiday in Salou recommended?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A family that likes adventure",
+    "marks": 2,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks; the listening booklet prints it on page 4.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. VACACIONES PARA LA FAMILIA (FAMILY HOLIDAYS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 5 — VACACIONES PARA LA FAMILIA",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-5-d",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-1",
+  "conceptId": "walking",
+  "questionRef": "2017 HL Section L Q5(d)",
+  "questionText": "What is said about walking?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "There are many routes to take with varying levels of difficulty",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the listening booklet prints it on page 4.",
+  "stem": "DESCRIPTIVO: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. VACACIONES PARA LA FAMILIA (FAMILY HOLIDAYS)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 5 — VACACIONES PARA LA FAMILIA",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-6-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-3",
+  "conceptId": "kind-weather-expected-galicia",
+  "questionRef": "2017 HL Section L Q6(a)",
+  "questionText": "What kind of weather is expected in Galicia?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Showers strong / northerly winds",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "p1",
+      "verbatim": "Showers",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p2",
+      "verbatim": "strong / northerly winds",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 1+2 marks; the listening booklet prints it on page 4.",
+  "stem": "El TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 6 — Question 6",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-6-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-3",
+  "conceptId": "forecast-andalucia",
+  "questionRef": "2017 HL Section L Q6(b)",
+  "questionText": "What is the forecast for Andalucía?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Clear skies maximum temperatures 27 degrees, minimum 11 degrees",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "p1",
+      "verbatim": "Clear skies",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p2",
+      "verbatim": "maximum temperatures 27 degrees, minimum 11 degrees",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 1+2 marks; the listening booklet prints it on page 4.",
+  "stem": "El TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 6 — Question 6",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-6-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-3",
+  "conceptId": "will-conditions-like-canaries",
+  "questionRef": "2017 HL Section L Q6(c)",
+  "questionText": "What will conditions be like in the Canaries? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Sunny (weather) with (the possibility of) storms in mountain areas",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "p1",
+      "verbatim": "Sunny (weather)",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p2",
+      "verbatim": "with (the possibility of) storms in mountain areas",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 1+2 marks; the listening booklet prints it on page 4.",
+  "stem": "El TIEMPO: This will be played three times right through with a long pause after the SECOND hearing.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 6 — Question 6",
+   "pages": [
+    4
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-7-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-4",
+  "conceptId": "happened-6th-july",
+  "questionRef": "2017 HL Section L Q7(a)",
+  "questionText": "What happened on the 6th of July?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(The virtual reality video game) Pokemon Go was officially launched in Spain",
+    "marks": 2,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks; the listening booklet prints it on page 5.",
+  "stem": "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA LOCURA DE POKÉMON GO (THE POKEMON GO CRAZE)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 7 — LA LOCURA DE POKÉMON GO",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 7 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-7-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-4",
+  "conceptId": "four-places-where-these-characters-can",
+  "questionRef": "2017 HL Section L Q7(b)",
+  "questionText": "Mention four places where these characters can be found.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Police stations",
+    "marks": 1,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "bridges",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "museums",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "historical places",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1+1+1 marks; the listening booklet prints it on page 5.",
+  "stem": "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA LOCURA DE POKÉMON GO (THE POKEMON GO CRAZE)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 7 — LA LOCURA DE POKÉMON GO",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 7 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-7-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-4",
+  "conceptId": "does-game-involve",
+  "questionRef": "2017 HL Section L Q7(c)",
+  "questionText": "What does the game involve?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Looking for, capturing and fighting with these creatures",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the listening booklet prints it on page 5.",
+  "stem": "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA LOCURA DE POKÉMON GO (THE POKEMON GO CRAZE)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 7 — LA LOCURA DE POKÉMON GO",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 7 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-l-7-d",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "L",
+  "topicId": "spanish-3-4",
+  "conceptId": "can-players-when-find-pokemon",
+  "questionRef": "2017 HL Section L Q7(d)",
+  "questionText": "What can players do when they find a Pokemon? Give full details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "They can trap it using the (touch) screen of their (smart) phone.",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the listening booklet prints it on page 5.",
+  "stem": "UNA NOTICIA: This will be played three times: first right through, then in two segments with a long pause after each segment, and finally, right through again. LA LOCURA DE POKÉMON GO (THE POKEMON GO CRAZE)",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING COMPREHENSION TEST",
+   "title": "Question 7 — LA LOCURA DE POKÉMON GO",
+   "pages": [
+    5
+   ],
+   "sourceLabel": "Aural Paper",
+   "attribution": "SEC Spanish 2017 Higher Level Listening Comprehension Test — © State Examinations Commission.",
+   "presentationNote": "The question page of the listening booklet. Play the recording, then answer."
+  },
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 7 · listening",
+   "title": "2017 Spanish · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "secFileid": "LC012ZLP017EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC012ZLP017EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Questions 1–7, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1a-1-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-7-3",
+  "conceptId": "paseo",
+  "questionRef": "2017 HL Section A1a Q1(a)",
+  "questionText": "un paseo (lines 1‐10)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "una vuelta",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in Spanish."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the paper prints it on page 2 of the question booklet.",
+  "stem": "Busca en el pasaje y escribe en los espacios correspondientes las frases del texto que correspondan (más o menos) a las siguientes:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "PRESCRIBED LITERATURE: Eduardo Mendoza: Sin noticias de Gurb — answer in Spanish",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1a-1-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-7-3",
+  "conceptId": "formal",
+  "questionRef": "2017 HL Section A1a Q1(b)",
+  "questionText": "formal (lines 11‐20)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(muy) serio",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in Spanish."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the paper prints it on page 2 of the question booklet.",
+  "stem": "Busca en el pasaje y escribe en los espacios correspondientes las frases del texto que correspondan (más o menos) a las siguientes:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "PRESCRIBED LITERATURE: Eduardo Mendoza: Sin noticias de Gurb — answer in Spanish",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1a-1-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-7-3",
+  "conceptId": "vivienda",
+  "questionRef": "2017 HL Section A1a Q1(c)",
+  "questionText": "vivienda (lines 21‐30)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "edificio/ inmueble",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in Spanish."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the paper prints it on page 2 of the question booklet.",
+  "stem": "Busca en el pasaje y escribe en los espacios correspondientes las frases del texto que correspondan (más o menos) a las siguientes:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "PRESCRIBED LITERATURE: Eduardo Mendoza: Sin noticias de Gurb — answer in Spanish",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1a-2-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-7-3",
+  "conceptId": "buen-ciudadano-apresura-ocupar-lugar-terrazas",
+  "questionRef": "2017 HL Section A1a Q2(a)",
+  "questionText": "…el buen ciudadano se apresura a ocupar su lugar en las terrazas... (line 2)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "…the good citizen hurries to take his place on the terraces (of the bars)…",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the paper prints it on page 3 of the question booklet.",
+  "stem": "Explain in ENGLISH the following phrases as they are used in the text.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "PRESCRIBED LITERATURE: Eduardo Mendoza: Sin noticias de Gurb — answer in English",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1a-2-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-7-3",
+  "conceptId": "encierro-casa",
+  "questionRef": "2017 HL Section A1a Q2(b)",
+  "questionText": "Me encierro en casa… (line 11)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "I lock myself in at home…",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the paper prints it on page 3 of the question booklet.",
+  "stem": "Explain in ENGLISH the following phrases as they are used in the text.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "PRESCRIBED LITERATURE: Eduardo Mendoza: Sin noticias de Gurb — answer in English",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1a-2-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-7-3",
+  "conceptId": "hablaremos-dicho-otros-asuntillos",
+  "questionRef": "2017 HL Section A1a Q2(c)",
+  "questionText": "Hablaremos de lo que te he dicho y de otros asuntillos,… (lines 21‐22)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "We will talk about what I have told you and other (bits) of business …",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the paper prints it on page 3 of the question booklet.",
+  "stem": "Explain in ENGLISH the following phrases as they are used in the text.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "PRESCRIBED LITERATURE: Eduardo Mendoza: Sin noticias de Gurb — answer in English",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1a-3",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-7-3",
+  "conceptId": "describe-alien-does-with-ice-cream",
+  "questionRef": "2017 HL Section A1a Q3",
+  "questionText": "Describe what the alien does with the ice‐cream.\nGive three details from the extract. (Answer in ENGLISH.)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "He eats the wafer / cone first",
+      "He doesn’t know what to do with the (scoop of) ice-cream (in his hands)",
+      "He gets confused",
+      "He ruins his clothes",
+      "He ends up throwing what’s left of it in the bin"
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 4+3+3 marks; the paper prints it on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "PRESCRIBED LITERATURE: Eduardo Mendoza: Sin noticias de Gurb — answer in English",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1a-4",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-7-3",
+  "conceptId": "does-alien-not-like-from-extract",
+  "questionRef": "2017 HL Section A1a Q4",
+  "questionText": "What does the alien not like?\nGive three details from the extract. (Answer in ENGLISH.)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "all forms of vegetables",
+      "brushing / cleaning his teeth",
+      "writing postcards",
+      "listening to the radio."
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 4+3+3 marks; the paper prints it on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "PRESCRIBED LITERATURE: Eduardo Mendoza: Sin noticias de Gurb — answer in English",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1a-5",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-7-3",
+  "conceptId": "discuss-important-characters-mentioned-novel-apart",
+  "questionRef": "2017 HL Section A1a Q5",
+  "questionText": "Discuss TWO of the important characters mentioned in the novel apart from the alien.\nYou may not support your answer by reference to the extract on this examination paper.\n(Answer in ENGLISH.)\nN.B. WRITE THE ANSWERS TO QUESTION 5 ON PAGE 14.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 12,
+    "unprinted": true,
+    "permittedMarks": [
+     0,
+     3,
+     6,
+     9,
+     12
+    ],
+    "contextNote": "The scheme prints no answer for this ask. In its place it prints “for any 4 relevant points” and “Discussion of one character 3 + 3m” and “Discussion of second character 3 + 3m” and “Characters can include Gurb, Mercedes, Joaquín, the neighbour, the caretaker etc.” and “The disguises that the alien/narrator adopts are not acceptable as characters for the purposes of this question.”, under the tariff “3+3+3+3 = 12 marks”. The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 3+3+3+3 marks; the paper prints it on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "PRESCRIBED LITERATURE: Eduardo Mendoza: Sin noticias de Gurb — answer in English",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1b-1-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-5-0",
+  "conceptId": "did-arnie-perez-make-history",
+  "questionRef": "2017 HL Section A1b Q1(a)",
+  "questionText": "How did Arnie Pérez make history? Give full details. (para 1)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "First to disembark in La Havana / Cuba from the first US boat to sail to Cuba in almost 50 years.",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the paper prints it on page 4 of the question booklet.",
+  "stem": "Answer the following questions in ENGLISH.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL PRIMER CRUCERO DE EE.UU HACIA CUBA — answer in English",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1b-1-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-5-0",
+  "conceptId": "describe-scene-havana-morning-ship-arrival",
+  "questionRef": "2017 HL Section A1b Q1(b)",
+  "questionText": "Describe the scene in Havana on the morning of the ship’s arrival. (para 2)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Thousands of Cubans lined the quay full of joy making everyone feel welcome in their country",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "p1",
+      "verbatim": "Thousands of Cubans lined the quay",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p2",
+      "verbatim": "full of joy",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p3",
+      "verbatim": "making everyone feel welcome in their country",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the paper prints it on page 4 of the question booklet.",
+  "stem": "Answer the following questions in ENGLISH.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL PRIMER CRUCERO DE EE.UU HACIA CUBA — answer in English",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1b-1-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-5-0",
+  "conceptId": "explain-reason-perez-chosen-represent-carnival",
+  "questionRef": "2017 HL Section A1b Q1(c)",
+  "questionText": "Explain in detail one reason why Pérez was chosen to represent Carnival. (para 3)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "as a lawyer and employee of the company, he negotiated with the governments of both countries the creation of a maritime link. / He was born in Cuba but his family brought him to Florida when he was nine months old because of the revolution."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Answer the following questions in ENGLISH.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL PRIMER CRUCERO DE EE.UU HACIA CUBA — answer in English",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1b-1-d",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-5-0",
+  "conceptId": "difficulty-will-majority-cuban-americans-have",
+  "questionRef": "2017 HL Section A1b Q1(d)",
+  "questionText": "What difficulty will the majority of Cuban‐Americans have? (para 4)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To save enough money to return to their homeland.",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Answer the following questions in ENGLISH.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL PRIMER CRUCERO DE EE.UU HACIA CUBA — answer in English",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1b-1-e",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-5-0",
+  "conceptId": "main-points-new-agreement",
+  "questionRef": "2017 HL Section A1b Q1(e)",
+  "questionText": "What are the three main points of the new agreement? (para 5)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Elimination of trade barriers.",
+    "marks": 2,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Cooperation in fields such as (the fight against) organised crime.",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Protection of the environment.",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2+2 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Answer the following questions in ENGLISH.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL PRIMER CRUCERO DE EE.UU HACIA CUBA — answer in English",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1b-2-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-5-0",
+  "conceptId": "salio-dia-antes",
+  "questionRef": "2017 HL Section A1b Q2(a)",
+  "questionText": "salió el día antes (para 1)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "había zarpado la tarde anterior",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in Spanish."
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Escribe en ESPAÑOL en los espacios correspondientes las frases del texto que tengan el mismo sentido (más o menos) que las siguientes:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL PRIMER CRUCERO DE EE.UU HACIA CUBA — answer in Spanish",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1b-2-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-5-0",
+  "conceptId": "casi-llorando",
+  "questionRef": "2017 HL Section A1b Q2(b)",
+  "questionText": "casi llorando (para 2)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "con lágrimas en los ojos",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in Spanish."
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Escribe en ESPAÑOL en los espacios correspondientes las frases del texto que tengan el mismo sentido (más o menos) que las siguientes:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL PRIMER CRUCERO DE EE.UU HACIA CUBA — answer in Spanish",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1b-2-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-5-0",
+  "conceptId": "primer-recorrido",
+  "questionRef": "2017 HL Section A1b Q2(c)",
+  "questionText": "el primer recorrido (para 3)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "el viaje inaugural",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in Spanish."
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Escribe en ESPAÑOL en los espacios correspondientes las frases del texto que tengan el mismo sentido (más o menos) que las siguientes:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL PRIMER CRUCERO DE EE.UU HACIA CUBA — answer in Spanish",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1b-3-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-5-0",
+  "conceptId": "habria-parecido-ciencia-ficcion-durante-guerra",
+  "questionRef": "2017 HL Section A1b Q3(a)",
+  "questionText": "…habría parecido ciencia‐ficción durante la Guerra Fría. (para 1)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "… would have seemed like science-fiction during the Cold War.",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Explain in ENGLISH the meaning of the following in their context:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL PRIMER CRUCERO DE EE.UU HACIA CUBA — answer in English",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1b-3-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-5-0",
+  "conceptId": "nivel-superior",
+  "questionRef": "2017 HL Section A1b Q3(b)",
+  "questionText": "…un nivel superior… (para 2)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "… a higher level…",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Explain in ENGLISH the meaning of the following in their context:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL PRIMER CRUCERO DE EE.UU HACIA CUBA — answer in English",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1b-3-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-5-0",
+  "conceptId": "mantiene-todavia-algunas-restricciones-viajes",
+  "questionRef": "2017 HL Section A1b Q3(c)",
+  "questionText": "…mantiene todavía algunas restricciones de viajes… (para 4)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "... some travel restrictions are still in place…",
+    "marks": 4,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Explain in ENGLISH the meaning of the following in their context:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL PRIMER CRUCERO DE EE.UU HACIA CUBA — answer in English",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a1b-4",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-5-0",
+  "conceptId": "expresa-otro-modo-espanol-frases-siguientes",
+  "questionRef": "2017 HL Section A1b Q4",
+  "questionText": "Explica (o expresa de otro modo) en ESPAÑOL una de las frases siguientes:\n…acompañado de su esposa… (para 2)\nO\nPor ahora… (para 4)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 6,
+    "unprinted": true,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "The scheme prints no answer for this ask. In its place it prints “Any mark from 0 to 6 may be awarded for this question”, under the tariff “6 marks”. The examination paper directs that this question be answered in Spanish."
+   }
+  ],
+  "notes": "The scheme prices this ask 6 marks; the paper prints it on page 5 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL PRIMER CRUCERO DE EE.UU HACIA CUBA — answer in Spanish",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a2-a-i",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-5-1",
+  "conceptId": "indian-rail-network",
+  "questionRef": "2017 HL Section A2 Q(a)(i)",
+  "questionText": "What is said about the Indian rail network? Give two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "It is the most extensive in the world.",
+      "It is very old.",
+      "Trains travel very slowly (in the majority of the journeys)."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2 marks; the paper prints it on page 6 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "TALGO LLEGA A INDIA — answer in English",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a2-a-ii",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-5-1",
+  "conceptId": "can-talgo-trains-travel-faster-than",
+  "questionRef": "2017 HL Section A2 Q(a)(ii)",
+  "questionText": "Why can Talgo trains travel faster than Indian ones?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "They are made of aluminium and so are lighter.",
+    "marks": 2,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 2 marks; the paper prints it on page 6 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "TALGO LLEGA A INDIA — answer in English",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a2-a-iii",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-5-1",
+  "conceptId": "train-that-arrived-april-21st-mumbai",
+  "questionRef": "2017 HL Section A2 Q(a)(iii)",
+  "questionText": "What is said about the train that arrived on April 21st in Mumbai from Barcelona?\nGive two details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Talgo does its tests in India on this train",
+      "runs on diesel.",
+      "has nine carriages.",
+      "(two) first class carriages",
+      "one dining car."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2 marks; the paper prints it on page 6 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "TALGO LLEGA A INDIA — answer in English",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a2-b-i",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-5-1",
+  "conceptId": "drones-used-beaches",
+  "questionRef": "2017 HL Section A2 Q(b)(i)",
+  "questionText": "What are the drones used for on the beaches? Give three details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The scheme adds: “to identify:”.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "to patrol (the beaches)",
+      "bathers in difficulty.",
+      "illegal activities.",
+      "badly parked cars.",
+      "accumulations of rubbish.",
+      "boats adrift/ in difficulty."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2+2 marks; the paper prints it on page 6 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "LOS DRONES PROTEGEN BENIDORM — answer in English",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-a2-b-ii",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "A",
+  "topicId": "spanish-5-1",
+  "conceptId": "technology-used",
+  "questionRef": "2017 HL Section A2 Q(b)(ii)",
+  "questionText": "Give two details about the technology used.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "(Equipped with) video cameras.",
+      "(Weighs) less than 2 kilos.",
+      "Sends live images to a police station.",
+      "Can operate above 500 meters"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2 marks; the paper prints it on page 6 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "LOS DRONES PROTEGEN BENIDORM — answer in English",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-b-1-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "topicId": "spanish-5-0",
+  "conceptId": "medio",
+  "questionRef": "2017 HL Section B Q1(a)",
+  "questionText": "por medio (para 1)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "a través",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in Spanish."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the paper prints it on page 8 of the question booklet.",
+  "stem": "Escribe las frases del texto que sean equivalentes (más o menos) a las siguientes:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION B — LOOSE SHEET",
+   "title": "EL DEPORTE — answer in Spanish",
+   "pages": [
+    1
+   ],
+   "sourceLabel": "Section B",
+   "attribution": "SEC Spanish 2017 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+   "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-b-1-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "topicId": "spanish-5-0",
+  "conceptId": "puede",
+  "questionRef": "2017 HL Section B Q1(b)",
+  "questionText": "no puede (para 2)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "es incapaz de",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in Spanish."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the paper prints it on page 8 of the question booklet.",
+  "stem": "Escribe las frases del texto que sean equivalentes (más o menos) a las siguientes:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION B — LOOSE SHEET",
+   "title": "EL DEPORTE — answer in Spanish",
+   "pages": [
+    1
+   ],
+   "sourceLabel": "Section B",
+   "attribution": "SEC Spanish 2017 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+   "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-b-1-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "topicId": "spanish-5-0",
+  "conceptId": "organizar",
+  "questionRef": "2017 HL Section B Q1(c)",
+  "questionText": "organizar (para 4)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "poner en marcha",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in Spanish."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the paper prints it on page 8 of the question booklet.",
+  "stem": "Escribe las frases del texto que sean equivalentes (más o menos) a las siguientes:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION B — LOOSE SHEET",
+   "title": "EL DEPORTE — answer in Spanish",
+   "pages": [
+    1
+   ],
+   "sourceLabel": "Section B",
+   "attribution": "SEC Spanish 2017 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+   "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-b-1-d",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "topicId": "spanish-5-0",
+  "conceptId": "bienestar",
+  "questionRef": "2017 HL Section B Q1(d)",
+  "questionText": "el bienestar (para 4)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "la salud",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in Spanish."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the paper prints it on page 8 of the question booklet.",
+  "stem": "Escribe las frases del texto que sean equivalentes (más o menos) a las siguientes:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION B — LOOSE SHEET",
+   "title": "EL DEPORTE — answer in Spanish",
+   "pages": [
+    1
+   ],
+   "sourceLabel": "Section B",
+   "attribution": "SEC Spanish 2017 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+   "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-b-1-e",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "topicId": "spanish-5-0",
+  "conceptId": "despues-regresar",
+  "questionRef": "2017 HL Section B Q1(e)",
+  "questionText": "después regresar (para 6)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "luego volver",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in Spanish."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the paper prints it on page 8 of the question booklet.",
+  "stem": "Escribe las frases del texto que sean equivalentes (más o menos) a las siguientes:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION B — LOOSE SHEET",
+   "title": "EL DEPORTE — answer in Spanish",
+   "pages": [
+    1
+   ],
+   "sourceLabel": "Section B",
+   "attribution": "SEC Spanish 2017 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+   "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-b-2-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "topicId": "spanish-5-0",
+  "conceptId": "contrario-conocimiento-deportistas-elite-enorme",
+  "questionRef": "2017 HL Section B Q2(a)",
+  "questionText": "Por lo contrario, el conocimiento sobre deportistas de élite es enorme… (para 2)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "On the other hand, the knowledge about elite sportspeople/athletes is enormous",
+    "marks": 5,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 5 marks; the paper prints it on page 8 of the question booklet.",
+  "stem": "Write in ENGLISH the meaning (in the context) of the following phrases:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION B — LOOSE SHEET",
+   "title": "EL DEPORTE — answer in English",
+   "pages": [
+    1
+   ],
+   "sourceLabel": "Section B",
+   "attribution": "SEC Spanish 2017 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+   "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-b-2-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "topicId": "spanish-5-0",
+  "conceptId": "podemos-permitir-mal-ejemplo-sea",
+  "questionRef": "2017 HL Section B Q2(b)",
+  "questionText": "No podemos permitir que el mal ejemplo sea... (para 3)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "We cannot allow bad example to be ...",
+    "marks": 5,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 5 marks; the paper prints it on page 8 of the question booklet.",
+  "stem": "Write in ENGLISH the meaning (in the context) of the following phrases:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION B — LOOSE SHEET",
+   "title": "EL DEPORTE — answer in English",
+   "pages": [
+    1
+   ],
+   "sourceLabel": "Section B",
+   "attribution": "SEC Spanish 2017 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+   "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-b-2-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "topicId": "spanish-5-0",
+  "conceptId": "marta-tiene-como-meta-vida",
+  "questionRef": "2017 HL Section B Q2(c)",
+  "questionText": "Marta tiene como meta en la vida… (para 6)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Marta has as a goal in life…",
+    "marks": 5,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 5 marks; the paper prints it on page 8 of the question booklet.",
+  "stem": "Write in ENGLISH the meaning (in the context) of the following phrases:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION B — LOOSE SHEET",
+   "title": "EL DEPORTE — answer in English",
+   "pages": [
+    1
+   ],
+   "sourceLabel": "Section B",
+   "attribution": "SEC Spanish 2017 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+   "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-b-3-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "topicId": "spanish-5-0",
+  "conceptId": "interes",
+  "questionRef": "2017 HL Section B Q3(a)",
+  "questionText": "el interés (1)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "la atención",
+    "marks": 1,
+    "contextNote": "The examination paper directs that this question be answered in Spanish."
+   }
+  ],
+  "notes": "The scheme prices this ask 1 marks; the paper prints it on page 9 of the question booklet.",
+  "stem": "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION B — LOOSE SHEET",
+   "title": "EL DEPORTE — answer in Spanish",
+   "pages": [
+    1
+   ],
+   "sourceLabel": "Section B",
+   "attribution": "SEC Spanish 2017 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+   "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-b-3-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "topicId": "spanish-5-0",
+  "conceptId": "cincuenta-ciento",
+  "questionRef": "2017 HL Section B Q3(b)",
+  "questionText": "cincuenta por ciento (2)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(la) mitad",
+    "marks": 1,
+    "contextNote": "The examination paper directs that this question be answered in Spanish."
+   }
+  ],
+  "notes": "The scheme prices this ask 1 marks; the paper prints it on page 9 of the question booklet.",
+  "stem": "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION B — LOOSE SHEET",
+   "title": "EL DEPORTE — answer in Spanish",
+   "pages": [
+    1
+   ],
+   "sourceLabel": "Section B",
+   "attribution": "SEC Spanish 2017 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+   "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-b-3-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "topicId": "spanish-5-0",
+  "conceptId": "ensenanza",
+  "questionRef": "2017 HL Section B Q3(c)",
+  "questionText": "enseñanza (3)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "educación/ formación",
+    "marks": 1,
+    "contextNote": "The examination paper directs that this question be answered in Spanish."
+   }
+  ],
+  "notes": "The scheme prices this ask 1 marks; the paper prints it on page 9 of the question booklet.",
+  "stem": "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION B — LOOSE SHEET",
+   "title": "EL DEPORTE — answer in Spanish",
+   "pages": [
+    1
+   ],
+   "sourceLabel": "Section B",
+   "attribution": "SEC Spanish 2017 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+   "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-b-3-d",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "topicId": "spanish-5-0",
+  "conceptId": "remedios",
+  "questionRef": "2017 HL Section B Q3(d)",
+  "questionText": "los remedios (5)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "las soluciones",
+    "marks": 1,
+    "contextNote": "The examination paper directs that this question be answered in Spanish."
+   }
+  ],
+  "notes": "The scheme prices this ask 1 marks; the paper prints it on page 9 of the question booklet.",
+  "stem": "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION B — LOOSE SHEET",
+   "title": "EL DEPORTE — answer in Spanish",
+   "pages": [
+    1
+   ],
+   "sourceLabel": "Section B",
+   "attribution": "SEC Spanish 2017 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+   "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-b-3-e",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "topicId": "spanish-5-0",
+  "conceptId": "fantastica",
+  "questionRef": "2017 HL Section B Q3(e)",
+  "questionText": "fantástica (6)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "fenomenal",
+    "marks": 1,
+    "contextNote": "The examination paper directs that this question be answered in Spanish."
+   }
+  ],
+  "notes": "The scheme prices this ask 1 marks; the paper prints it on page 9 of the question booklet.",
+  "stem": "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION B — LOOSE SHEET",
+   "title": "EL DEPORTE — answer in Spanish",
+   "pages": [
+    1
+   ],
+   "sourceLabel": "Section B",
+   "attribution": "SEC Spanish 2017 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+   "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-b-4-a",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "topicId": "spanish-5-0",
+  "conceptId": "lot-teachers-say-sports-young-people",
+  "questionRef": "2017 HL Section B Q4(a)",
+  "questionText": "What do a lot of teachers say about sports and young people? Give three details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "to improve self esteem",
+    "marks": 2,
+    "contextNote": "The examination paper directs that this question be answered in English. The scheme adds: “Helps them (young people)”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "to socialise",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "to learn fair play",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2+2 marks; the paper prints it on page 9 of the question booklet.",
+  "stem": "As a partial summary of the content of the article, write in ENGLISH (in the appropriate spaces) the information requested.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION B — LOOSE SHEET",
+   "title": "EL DEPORTE — answer in English",
+   "pages": [
+    1
+   ],
+   "sourceLabel": "Section B",
+   "attribution": "SEC Spanish 2017 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+   "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-b-4-b",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "topicId": "spanish-5-0",
+  "conceptId": "told-escuelas-deportivas",
+  "questionRef": "2017 HL Section B Q4(b)",
+  "questionText": "What are we told about the Escuelas Deportivas? Give three details.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Set up thirteen years ago.",
+      "Aim to promote sport as an educational means.",
+      "It is social programme",
+      "(It has succeeded in) improving the school progress and health of boys and girls (between the ages of 6 and 18)",
+      "There are 17 (of them).",
+      "Situated in poor areas of various Spanish cities.",
+      "Each one is linked with an elite athlete who voluntarily visits the school and shares their time and experience with the students.",
+      "Their (fundamental) aim is to teach (young people) that to be a good sportsperson you must first be a good person."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2+2 marks; the paper prints it on page 9 of the question booklet.",
+  "stem": "As a partial summary of the content of the article, write in ENGLISH (in the appropriate spaces) the information requested.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION B — LOOSE SHEET",
+   "title": "EL DEPORTE — answer in English",
+   "pages": [
+    1
+   ],
+   "sourceLabel": "Section B",
+   "attribution": "SEC Spanish 2017 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+   "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-b-4-c",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "topicId": "spanish-5-0",
+  "conceptId": "does-miguel-afaro-say-society-today",
+  "questionRef": "2017 HL Section B Q4(c)",
+  "questionText": "What does Miguel Afaro say about society today?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "We live in a society where young people easily fall into unhealthy habits caused by tobacco, drugs and alcohol.",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in English."
+   }
+  ],
+  "notes": "The scheme prices this ask 3 marks; the paper prints it on page 9 of the question booklet.",
+  "stem": "As a partial summary of the content of the article, write in ENGLISH (in the appropriate spaces) the information requested.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION B — LOOSE SHEET",
+   "title": "EL DEPORTE — answer in English",
+   "pages": [
+    1
+   ],
+   "sourceLabel": "Section B",
+   "attribution": "SEC Spanish 2017 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+   "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-b-5",
+  "kind": "rubric",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "B",
+  "topicId": "spanish-6-0",
+  "conceptId": "deporte-puede-cambiar-vida-importante-ser",
+  "questionRef": "2017 HL Section B Q5",
+  "questionText": "El deporte puede cambiar la vida.\nO\nEs importante ser activo.",
+  "totalMarks": 50,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Where no marks are awarded for Content 1 (i.e. effort totally irrelevant), no marks will be awarded for Language 2.",
+    "As a general rule, the difference between marks awarded for Content and Language should not exceed 6m."
+   ],
+   "criteria": [
+    {
+     "id": "content",
+     "label": "Content/Communication",
+     "maxMarks": 25,
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Top",
+       "marks": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+       ],
+       "guidance": [
+        "High level of coherence",
+        "Clear argumentation",
+        "Communicative intention fulfilled",
+        "Little or no irrelevant material"
+       ]
+      },
+      {
+       "label": "Middle",
+       "marks": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+       ],
+       "guidance": [
+        "Reasonable level of coherence",
+        "Comprehensible to Spanish speaker",
+        "Communicative intention more or less respected",
+        "Some irrelevant material"
+       ]
+      },
+      {
+       "label": "Bottom",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+       ],
+       "guidance": [
+        "Lack of coherence",
+        "Spanish speaker would have difficulty understanding",
+        "Communicative intention not fulfilled",
+        "A lot of irrelevant material"
+       ]
+      }
+     ],
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+     ]
+    },
+    {
+     "id": "language",
+     "label": "Language",
+     "maxMarks": 25,
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Top",
+       "marks": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+       ],
+       "guidance": [
+        "Idiomatic Spanish",
+        "Good level of vocabulary",
+        "Few grammatical/spelling mistakes",
+        "Correct usage of tenses"
+       ]
+      },
+      {
+       "label": "Middle",
+       "marks": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+       ],
+       "guidance": [
+        "Vocabulary quite good - generally adequate and appropriate",
+        "Verbs generally correct",
+        "Not too many spelling/grammatical mistakes"
+       ]
+      },
+      {
+       "label": "Bottom",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+       ],
+       "guidance": [
+        "Problems with vocabulary – limited range of vocabulary",
+        "Most verbs incorrect",
+        "Many spelling mistakes"
+       ]
+      }
+     ],
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+     ],
+     "zeroWhenZero": "content"
+    }
+   ],
+   "markingGuideNote": "",
+   "practiceNotes": [
+    "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+    "Choose a band for Content/Communication and one for Language, then the mark within each band."
+   ]
+  },
+  "schemePages": [
+   11
+  ],
+  "stem": "Escribe en ESPAÑOL tu opinión (entre 80 y 150 palabras) sobre una de las siguientes afirmaciones.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "SECTION B — LOOSE SHEET",
+   "title": "EL DEPORTE — answer in Spanish",
+   "pages": [
+    1
+   ],
+   "sourceLabel": "Section B",
+   "attribution": "SEC Spanish 2017 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+   "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer."
+  }
+ },
+ {
+  "id": "es-2017-hl-c-1-a",
+  "kind": "rubric",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "topicId": "spanish-6-1",
+  "conceptId": "working-pair-santander-tourist-office-first",
+  "questionRef": "2017 HL Section C Q1(a)",
+  "questionText": "You are working as an au pair in Santander. You go to the tourist office on the first morning to ask what activities there are for young people. Complete in SPANISH your side of the following DIALOGUE.\nJuan: ¿En qué puedo ayudarle?\nTú: Explain that you arrived in Santander two days ago. You only work in the mornings so would like to know what there is for young people to do in Santander.\nJuan: Bueno, ¿qué tipo de actividades le interesan?\nTú: Tell him that you are quite sporty and like outdoor activities but are also interested in Spanish culture. In particular, you hope to meet people of your own age.\nJuan: Y, ¿qué le parece un campamento de deporte o clases de cocina?\nTú: Explain that you play for your local tennis club. Tell him you would love to cook some typical dishes for your family when you return home as they have never been to Spain.\nJuan: Bueno, aquí en Santander hay muchas clases para usted. Otra cosa, debe visitar los Picos de Europa.\nTú: Brilliant! Say that you want to go hiking as you are near the mountains. You doubt if it’s possible to go this weekend but maybe later this month. Ask for a list of accommodation and a bus timetable.\nJuan: Pues, aquí tiene un folleto con toda la información que necesita.\nTú: Thank Juan very much and tell him that you will ring a hostel this afternoon. Tell him that you are going to the shopping center straight away to buy runners and a raincoat.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Five ‘turns’. Allow a maximum of 6 marks each. (5 x 6 = 30marks)",
+    "TOTAL MARKS: 30 MARKS (Mark each ‘turn’ individually.)",
+    "6 marks: Communicative intention fulfilled.",
+    "Good level of vocabulary.",
+    "4 - 5 marks: Communicative intention more or less respected.",
+    "Verbs generally correct.",
+    "2 - 3 marks: Some communicative intention realised.",
+    "Quite a few grammatical errors and spelling mistakes.",
+    "Incorrect verb usage/ tenses wrong.",
+    "1 mark: Very small part of communicative intention conveyed.",
+    "0 marks: No communication of message.",
+    "Question 1. When marking this question – either (a) or (b) – the priorities indicated for Content and Language in Section B, Q.5. should be broadly adhered to."
+   ],
+   "criteria": [
+    {
+     "id": "turn-1",
+     "label": "First turn",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    },
+    {
+     "id": "turn-2",
+     "label": "Second turn",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    },
+    {
+     "id": "turn-3",
+     "label": "Third turn",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    },
+    {
+     "id": "turn-4",
+     "label": "Fourth turn",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    },
+    {
+     "id": "turn-5",
+     "label": "Fifth turn",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    }
+   ],
+   "markingGuideNote": "TOTAL MARKS: 50 Candidates are required to attempt:- Either 1 (a) or 1 (b) AND Either 2 (a) or 2 (b)\nShould a candidate answer parts (a) and (b) of Question 1 or Question 2 in error, both must be corrected and marks awarded only for the higher scoring of the two.",
+   "practiceNotes": [
+    "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+    "Mark each turn you wrote on its own against the scheme's ladder above."
+   ]
+  },
+  "schemePages": [
+   12,
+   13
+  ],
+  "stem": "Attempt either (a) DIALOGUE CONSTRUCTION or (b) LETTER WRITING.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "WRITTEN PRODUCTION",
+   "title": "Section C Question 1 (a) — answer in Spanish",
+   "pages": [
+    10,
+    11
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "es-2017-hl-c-1-b",
+  "kind": "rubric",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "topicId": "spanish-6-2",
+  "conceptId": "article-spanish-newspaper-that-young-spanish",
+  "questionRef": "2017 HL Section C Q1(b)",
+  "questionText": "An article in a Spanish newspaper says that young Spanish people do not read books anymore. You decide to write a LETTER / EMAIL in SPANISH to the editor of the newspaper.\n(You may loosely base your letter/email on the points mentioned below, either agreeing or disagreeing with all or some of them. You should make five relevant points and each of these points should be expanded and developed.)\n• Parents should help their children to read.\n• Libraries and bookshops are changing because of technology.\n• There are other options apart from traditional books.\n• Some young people still read a lot.\n• Schools need to do more about this issue.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "There are five points to be made. Allow a maximum of 6 marks each. [Note that each point should be developed and expanded. Candidates can make their own points and need not use the guidelines given.",
+    "Five points should be made in total. Guidelines as for Question 1 (a).] (5 x 6 = 30 marks)",
+    "TOTAL MARKS: 30 MARKS (Mark each ‘turn’ individually.)",
+    "6 marks: Communicative intention fulfilled.",
+    "Good level of vocabulary.",
+    "4 - 5 marks: Communicative intention more or less respected.",
+    "Verbs generally correct.",
+    "2 - 3 marks: Some communicative intention realised.",
+    "Quite a few grammatical errors and spelling mistakes.",
+    "Incorrect verb usage/ tenses wrong.",
+    "1 mark: Very small part of communicative intention conveyed.",
+    "0 marks: No communication of message.",
+    "1a) Letter / Email:",
+    "• Correct formal layout for letter/ email is expected.",
+    "• Correct register is required for full marks.",
+    "• Letter / email can be loosely based on the suggestions given.",
+    "• Candidates are expected to make five relevant points.",
+    "Candidates should fully develop each point for full marks.",
+    "Question 1. When marking this question – either (a) or (b) – the priorities indicated for Content and Language in Section B, Q.5. should be broadly adhered to."
+   ],
+   "criteria": [
+    {
+     "id": "point-1",
+     "label": "First point",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-2",
+     "label": "Second point",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-3",
+     "label": "Third point",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-4",
+     "label": "Fourth point",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-5",
+     "label": "Fifth point",
+     "maxMarks": 6,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "guidance": []
+    }
+   ],
+   "markingGuideNote": "TOTAL MARKS: 50 Candidates are required to attempt:- Either 1 (a) or 1 (b) AND Either 2 (a) or 2 (b)\nShould a candidate answer parts (a) and (b) of Question 1 or Question 2 in error, both must be corrected and marks awarded only for the higher scoring of the two.",
+   "practiceNotes": [
+    "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+    "Mark each point you wrote on its own against the scheme's ladder above."
+   ]
+  },
+  "schemePages": [
+   12,
+   13
+  ],
+  "stem": "Attempt either (a) DIALOGUE CONSTRUCTION or (b) LETTER WRITING.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "WRITTEN PRODUCTION",
+   "title": "Section C Question 1 (b) — answer in Spanish",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "es-2017-hl-c-2-a",
+  "kind": "rubric",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "topicId": "spanish-6-3",
+  "conceptId": "segovia-studying-year-have-just-moved",
+  "questionRef": "2017 HL Section C Q2(a)",
+  "questionText": "You are in Segovia studying for the year. You have just moved into an apartment. Write a DIARY ENTRY in SPANISH mentioning all of the following points:\n− Say how you feel about living away from home for the first time.\n− Mention what you like most about your apartment.\n− Describe one of your neighbours.\n− Say that you hope some of your family will come to visit you.",
+  "totalMarks": 20,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Look for four valid well-made points. Allow a maximum of 5 marks each. (4 x 5 = 20 marks)",
+    "5 marks Communicative intention fulfilled",
+    "Good level of vocabulary",
+    "Verbs correct",
+    "4 marks Communicative intention more or less respected",
+    "Quite good level of vocabulary",
+    "Verbs generally correct",
+    "3 marks Communicative intention more or less respected",
+    "There may be quite a few errors",
+    "2 marks Some communicative intention fulfilled",
+    "Some correct vocabulary",
+    "Quite a few errors",
+    "1 mark Very small amount of message conveyed",
+    "0 marks Message not communicated",
+    "Note: In Q. 2 (a) and (b):",
+    "• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.",
+    "• Verbs must be correct for full marks.",
+    "• In any part of written production the same mistake will not be penalised twice."
+   ],
+   "criteria": [
+    {
+     "id": "point-1",
+     "label": "First point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-2",
+     "label": "Second point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-3",
+     "label": "Third point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-4",
+     "label": "Fourth point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    }
+   ],
+   "markingGuideNote": "TOTAL MARKS: 50 Candidates are required to attempt:- Either 1 (a) or 1 (b) AND Either 2 (a) or 2 (b)\nShould a candidate answer parts (a) and (b) of Question 1 or Question 2 in error, both must be corrected and marks awarded only for the higher scoring of the two.",
+   "practiceNotes": [
+    "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+    "Mark each point you wrote on its own against the scheme's ladder above."
+   ]
+  },
+  "schemePages": [
+   12,
+   13
+  ],
+  "stem": "Answer either (a) DIARY ENTRY or (b) NOTE.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "WRITTEN PRODUCTION",
+   "title": "Section C Question 2 (a) — answer in Spanish",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
+  "id": "es-2017-hl-c-2-b",
+  "kind": "rubric",
+  "subjectId": "spanish",
+  "level": "higher",
+  "year": 2017,
+  "section": "C",
+  "topicId": "spanish-6-4",
+  "conceptId": "have-arranged-concert-with-spanish-friend",
+  "questionRef": "2017 HL Section C Q2(b)",
+  "questionText": "You have arranged to go to a concert with a Spanish friend. Leave a NOTE in SPANISH for your friend including all of the following points:\n− Say that you have gone to town early to buy a present for your sister.\n− Tell him that you will meet him at the school gates at about five.\n− Remind him to bring the tickets for the concert.\n− You don’t think you will go to Roberto’s birthday party afterwards.",
+  "totalMarks": 20,
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "There are four points to be communicated. Allow maximum of 5 marks each. (4 x 5 = 20 marks)",
+    "5 marks Communicative intention fulfilled",
+    "Good level of vocabulary",
+    "Verbs correct",
+    "4 marks Communicative intention more or less respected",
+    "Quite good level of vocabulary",
+    "Verbs generally correct",
+    "3 marks Communicative intention more or less respected",
+    "There may be quite a few errors",
+    "2 marks Some communicative intention fulfilled",
+    "Some correct vocabulary",
+    "Quite a few errors",
+    "1 mark Very small amount of message conveyed",
+    "0 marks Message not communicated",
+    "Note: In Q. 2 (a) and (b):",
+    "• Minor inaccuracies (i.e. which do not distort ‘message’) should be ignored.",
+    "• Verbs must be correct for full marks.",
+    "• In any part of written production the same mistake will not be penalised twice."
+   ],
+   "criteria": [
+    {
+     "id": "point-1",
+     "label": "First point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-2",
+     "label": "Second point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-3",
+     "label": "Third point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    },
+    {
+     "id": "point-4",
+     "label": "Fourth point",
+     "maxMarks": 5,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "guidance": []
+    }
+   ],
+   "markingGuideNote": "TOTAL MARKS: 50 Candidates are required to attempt:- Either 1 (a) or 1 (b) AND Either 2 (a) or 2 (b)\nShould a candidate answer parts (a) and (b) of Question 1 or Question 2 in error, both must be corrected and marks awarded only for the higher scoring of the two.",
+   "practiceNotes": [
+    "Write your answer in Spanish, then place it on the published grid. You are marked on this task alone, and where it asks you to choose statements, turns or points, on the ones you chose.",
+    "Mark each point you wrote on its own against the scheme's ladder above."
+   ]
+  },
+  "schemePages": [
+   12,
+   13
+  ],
+  "stem": "Answer either (a) DIARY ENTRY or (b) NOTE.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "WRITTEN PRODUCTION",
+   "title": "Section C Question 2 (b) — answer in Spanish",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC Spanish 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "The task exactly as the examination printed it."
+  }
+ },
+ {
   "id": "es-2018-hl-l-1-a",
   "subjectId": "spanish",
   "level": "higher",

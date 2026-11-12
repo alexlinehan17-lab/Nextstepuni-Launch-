@@ -96,8 +96,9 @@ def place(found, page, y, section, q, letter=None):
         if section == 'A2' and letter and len(named) != 1:
             # 2018 Higher anchors Question 2's two texts at one height of page
             # 6, "Section A · 2(a) Short Comprehension (Circo …)" and "… 2(b)
-            # …": the label that names the card's own text is its question.
-            named = [a for a in tied if re.search(rf'\b2\s*\(\s*{letter}\s*\)', a['label'])]
+            # …" (2017: "Section A · Q2(a) Talgo", "… Q2(b) Drones"): the label
+            # that names the card's own text is its question.
+            named = [a for a in tied if re.search(rf'(?<!\d)2\s*\(\s*{letter}\s*\)', a['label'])]
         if len(named) != 1:
             return None, (f'{len(tied)} anchors begin at page {last[0]} height '
                           f'{last[1]} and the labels do not single out Q{q}')
@@ -170,7 +171,7 @@ EXTRA_N = {(2020, 'hl', 'A1b', 4): 'A1b4', (2025, 'hl', 'A1b', 4): 'A1b4',
            (2024, 'hl', 'A1b', 4): 'A1b4',
            (2022, 'hl', 'A1b', 4): 'A1b4', (2022, 'hl', 'A2', None): 'A2',
            (2021, 'hl', 'A1b', 4): 'A1b4', (2019, 'hl', 'A1b', 4): 'A1b4',
-           (2018, 'hl', 'A1b', 4): 'A1b4'}
+           (2018, 'hl', 'A1b', 4): 'A1b4', (2017, 'hl', 'A1b', 4): 'A1b4'}
 
 
 FILEID = {('hl', 'written'): 'LC012ALP000EV.pdf', ('ol', 'written'): 'LC012GLP000EV.pdf',

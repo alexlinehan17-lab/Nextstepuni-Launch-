@@ -122,7 +122,7 @@ describe('Spanish exam-topic registry', () => {
       matchedAssociations: 397,
       sourceBlockedAssociations: 74,
       sourceBlockedByReason: { preCorpus: 51, deferred: 14, oralBooklet: 9 },
-      matchedLocalCardLinks: 554,
+      matchedLocalCardLinks: 555,
     });
     expect(spanishCrosswalk.policy.excludedContent).toContain('No commercial mock question');
     const blocked = spanishCrosswalk.associations.filter(item => item.resolution === 'source-blocked');
@@ -138,10 +138,10 @@ describe('Spanish exam-topic registry', () => {
     const actual = [...new Set(references.map(reference => (
       `${reference.topicId}|${reference.subdivision}`
     )))].sort();
-    expect(references).toHaveLength(628);
+    expect(references).toHaveLength(629);
     expect(actual).toEqual(expected);
-    expect(references.filter(reference => reference.fileid)).toHaveLength(554);
-    expect(references.filter(reference => reference.paperKey === 'single')).toHaveLength(619);
+    expect(references.filter(reference => reference.fileid)).toHaveLength(555);
+    expect(references.filter(reference => reference.paperKey === 'single')).toHaveLength(620);
     expect(references.filter(reference => reference.paperKey === 'oral')).toHaveLength(9);
     expect(references.filter(reference => reference.sitting === 'deferred')).toHaveLength(14);
   });
@@ -167,18 +167,19 @@ describe('Spanish exam-topic registry', () => {
       // +2: 2020 Higher A1b4 (journalistic Q4), both editions.
       // +5: 2019 Higher B5 and C2, both editions, and A1b4 (English edition).
       // +6: 2018 Higher B5, C2 and A1b4, both editions.
-      localPhysicalMappings: 1202,
-      distinctStudentFacingQuestions: 642,
-      referenceMappedLocalQuestions: 454,
-      retainedLocalQuestions: 748,
+      // +6: 2017 Higher B5, C2 and A1b4, both editions.
+      localPhysicalMappings: 1208,
+      distinctStudentFacingQuestions: 645,
+      referenceMappedLocalQuestions: 455,
+      retainedLocalQuestions: 753,
       hostedPaperAnchorMaps: 136,
       preservedBaselineVariants: 124,
       preservedBaselineCards: 909,
       newlyAddedPaperVariants: 12,
-      newlyAddedPhysicalMappings: 293,
+      newlyAddedPhysicalMappings: 299,
     });
     expect(papers).toHaveLength(136);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1202);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1208);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
 
@@ -186,7 +187,7 @@ describe('Spanish exam-topic registry', () => {
       .toEqual(['1', '2', '3', '4', '5', 'B1', 'B2A', 'B2B']);
     // Higher Section B Q5 and Section C Q2 are cards of their own wherever
     // the Mark Bank has carded the sitting (es_atlas.py files them there).
-    for (const year of [2020, 2026, 2025, 2024, 2023, 2022, 2021, 2019, 2018]) {
+    for (const year of [2020, 2026, 2025, 2024, 2023, 2022, 2021, 2019, 2018, 2017]) {
       expect(topicsForPaper('spanish', year, 'higher', 'ev', 'LC012ALP000EV.pdf')?.q)
         .toEqual(expect.arrayContaining([
           { n: 'B5', primary: 'spanish-6-0' },
@@ -243,7 +244,7 @@ describe('Spanish exam-topic registry', () => {
     )).toEqual(['spanish-ordinary-write-a-diary-entry']);
   });
 
-  it('ships a finite paper-only fallback for all 1,202 cards', () => {
+  it('ships a finite paper-only fallback for all 1,208 cards', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'spanish');
     for (const paper of papers) {
       const mapPath = path.join(
@@ -264,9 +265,9 @@ describe('Spanish exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 642 distinct questions and only leaves unavailable oral buckets empty', () => {
+  it('surfaces all 645 distinct questions and only leaves unavailable oral buckets empty', () => {
     expect(subjectAtlasStats('spanish')).toMatchObject({
-      questions: 642,
+      questions: 645,
       topics: 34,
       yearMin: 2010,
       yearMax: 2026,
