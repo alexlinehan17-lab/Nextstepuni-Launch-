@@ -131,6 +131,138 @@
   "src": "/exam-figures/dcg/markbank/dcg-2014-HL-paper-secC-q5-art.png",
   "year": 2014
  },
+ "dcg-2014-OL-paper-secA-q1-art": {
+  "alt": "Question A-1 as printed. A photograph of a pair of earrings made of elliptical stones, beside the major and minor axes of an ellipse with their auxiliary circles and a portion of the curve already drawn.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "3b0d9ba53a017ba7ad629fd3b4eac862",
+  "questionRef": "2014 OL Section A Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-OL-paper-secA-q1-art.png",
+  "year": 2014
+ },
+ "dcg-2014-OL-paper-secA-q2-art": {
+  "alt": "Question A-2 as printed. A photograph of a Luas tram, beside the plan set at an angle, the elevation on XY and the partially completed end elevation of the outline of one section of the tram with its power supply connector on top.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "d071d006a2a75af756b4153ad071a66d",
+  "questionRef": "2014 OL Section A Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-OL-paper-secA-q2-art.png",
+  "year": 2014
+ },
+ "dcg-2014-OL-paper-secA-q3-art": {
+  "alt": "Question A-3 as printed. A photograph of a hand placing a blue sphere beside a yellow sphere and a red cone, beside the elevation on XY of the cone A and the spheres B and C in mutual contact, and the plan of the cone A.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "c4994e9fb2544f6f1da5a32d3deef340",
+  "questionRef": "2014 OL Section A Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-OL-paper-secA-q3-art.png",
+  "year": 2014
+ },
+ "dcg-2014-OL-paper-secA-q4-art": {
+  "alt": "Question A-4 as printed. A photograph of a tennis player in front of the MELBOURNE logo, and the partially completed drawing of the logo as pages of a book, with construction lines to two vanishing points on a horizontal line.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "83703e238ac9cd50ef225d6bb765c7a0",
+  "questionRef": "2014 OL Section A Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-OL-paper-secA-q4-art.png",
+  "year": 2014
+ },
+ "dcg-2014-OL-paper-secB-q1-art": {
+  "alt": "Question B-1 as printed. A 3D graphic of a hand holding a lotion bottle with a semicircular lid, and Fig. B-1: the triangle abc with the axes X, Y and Z at 30 degrees, the incomplete isometric projection, the elevation (60, with the lid of radius R20 and a 60 degree angle) and the plan (100 across; 20, 40, 50 and 30 at 45 degrees). Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "2fe263de6663397a78031e89ef99906e",
+  "questionRef": "2014 OL Section B Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-OL-paper-secB-q1-art.png",
+  "year": 2014
+ },
+ "dcg-2014-OL-paper-secB-q2-art": {
+  "alt": "Question B-2 as printed. A 3D graphic of a stone structure with a tunnel cut through it, and Fig. B-2: the end of the tunnel (20, 25, 75 and 44), the incomplete elevation on XY (120 high) and the plan (100 by 60, set at 45 degrees, with the tunnel 10 from the corner). Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "61ba5b788cf1bd2c21622808ff23dd67",
+  "questionRef": "2014 OL Section B Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-OL-paper-secB-q2-art.png",
+  "year": 2014
+ },
+ "dcg-2014-OL-paper-secB-q3-art": {
+  "alt": "Question B-3 as printed. A 3D graphic of the outline of a house with a conservatory, and Fig. B-3: an isometric view of the structure with its dimensions (45, 45, 25, 60, 100, 30, 15, 15, 45 and 60 degrees), the surface A, and the arrow giving the direction of the elevation. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "9f2d991a12e46f2d12610b72bb46ce24",
+  "questionRef": "2014 OL Section B Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-OL-paper-secB-q3-art.png",
+  "year": 2014
+ },
+ "dcg-2014-OL-paper-secC-q1-art": {
+  "alt": "Question C-1, Geologic Geometry, as printed: the option banner and the question text only. The contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "d878267a1e9c45900635f227f89d46cf",
+  "questionRef": "2014 OL Section C Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-OL-paper-secC-q1-art.png",
+  "year": 2014
+ },
+ "dcg-2014-OL-paper-secC-q2-art": {
+  "alt": "Question C-2, Structural Forms, as printed. The option banner, a photograph of a multimedia player with a curved top, and Fig. C-2: the elevation on XY of the hyperbolic paraboloid surface ABCD (60 and 20) and its rectangular plan (55 and 55, set at 30 and 60 degrees) with the elements. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "f2d7b941f9e716f0dab58ffcaa221931",
+  "questionRef": "2014 OL Section C Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-OL-paper-secC-q2-art.png",
+  "year": 2014
+ },
+ "dcg-2014-OL-paper-secC-q3-art": {
+  "alt": "Question C-3, Surface Geometry, as printed. The option banner, a 3D graphic of a leather car headrest, and Fig. C-3: the end view of the headrest (10, R40, 70, 10 and 20) and its elevation (75 across). Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "d6ee6c485d6c789ddf898a44a96cd246",
+  "questionRef": "2014 OL Section C Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-OL-paper-secC-q3-art.png",
+  "year": 2014
+ },
+ "dcg-2014-OL-paper-secC-q4-art": {
+  "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner; part (a): a 3D graphic of a piston and Fig. C-4(a), the crank OP (50) and the connecting rod PR (90 and 45, with Q on it); part (b): a photograph of a helical DNA sculpture and Fig. C-4(b), the elevation on XY (120 high) and plan (diameter 90) of a partially completed helix from S to T. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "ef386a3ea5f7990d27f4e39379a9a628",
+  "questionRef": "2014 OL Section C Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-OL-paper-secC-q4-art.png",
+  "year": 2014
+ },
+ "dcg-2014-OL-paper-secC-q5-art": {
+  "alt": "Question C-5, Assemblies, as printed. The option banner, a photograph of a toy tractor and trailer, the question text, Fig. C-5: dimensioned views of the tractor bracket (1), the trailer hitch (2) and the connecting pin (3), the parts list naming Tractor Bracket, Trailer Hitch and Connecting Pin with their quantities, and a 3D graphic of the parts.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Ordinary Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "ordinary",
+  "md5": "61dd73ab878301c01900a8487ed94a0d",
+  "questionRef": "2014 OL Section C Q5",
+  "src": "/exam-figures/dcg/markbank/dcg-2014-OL-paper-secC-q5-art.png",
+  "year": 2014
+ },
  "dcg-2015-HL-paper-secA-q1-art": {
   "alt": "Question A-1 as printed. A 3D graphic of a display box of chocolate eggs based on a truncated prism, the incomplete pictorial projection of a square-based prism cut by the oblique plane VTH, and its incomplete orthographic projection on XY with the traces VT and TH.",
   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2015 Higher Level — © State Examinations Commission",
