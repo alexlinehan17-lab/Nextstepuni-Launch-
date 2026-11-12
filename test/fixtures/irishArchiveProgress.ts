@@ -10,7 +10,7 @@
 export const PAPERS_PENDING_FULL_REVIEW = 0;
 /** Irish Topic Atlas entries (data/examTopics/irish-local-crosswalk.json summary); June's 4290, and from 2026-11-12 each
  *  carded deferred paper's section entries and one per carded task. */
-export const IRISH_ATLAS = { questions: 4405, retainedLocalQuestions: 3719, newlyAddedPhysicalMappings: 4119 } as const;
+export const IRISH_ATLAS = { questions: 4495, retainedLocalQuestions: 3809, newlyAddedPhysicalMappings: 4209 } as const;
 /** Irish entries in HOSTED_ANSWER_OVERRIDES (components/PaperTrail/vaultResolve.ts): reviewed papers' hosted answer maps. */
 export const IRISH_ANSWER_OVERRIDES = 91;
 /** Cards the archive inventory indexes (Higher, Ordinary and Foundation). */
