@@ -1334,7 +1334,7 @@ const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
     : name.startsWith('chemistry:') ? cards.filter(card => !chemistryAdded.has(card.id)).length
     : cards.length;
 const dcgAdditions = {
-  higher: [DCG_HIGHER, 229, 'd985bda3431daf3538cf63236077198e65bb160f837412abe5698fa5841c9b7d'],
+  higher: [DCG_HIGHER, 273, '717615c37bfaafff4c76b0d83b5845656bce7a801d7743c16a40d265a0f3ba5c'],
   ordinary: [DCG_ORDINARY, 163, '574d5aa2f72968bdcf9a58103b7ced8479aeb3f9b65a7785e0f79a766f8c7752'],
 } as const;
 const peAdditions = {
@@ -1366,7 +1366,9 @@ describe('Mark Bank card preservation', () => {
     // 2015 Ordinary 35 for its 28 (A-3 under two heads, C-5 in seven);
     // 2014 Higher 47 for its 34 (B-2(b) under two heads, C-1(a) in five
     // earthworks pieces, C-5(a) in nine named groups); 2014 Ordinary 29 for
-    // its 25 (A-4 under two heads, C-5 in four named groups).
+    // its 25 (A-4 under two heads, C-5 in four named groups); 2013 Higher 44
+    // for its 37 (B-2(b) under two heads, C-1(a) in four earthworks pieces,
+    // C-5(a) in nine named groups; C-1(a)(i)-(ii) one unit).
     const additions = cards.map(card => card.id).filter(isDcgAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);

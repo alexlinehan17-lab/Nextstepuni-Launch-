@@ -1,4 +1,136 @@
 {
+ "dcg-2013-HL-paper-secA-q1-art": {
+  "alt": "Question A-1 as printed. A photograph of a Rubik's Cube on its display stand, beside the incomplete projections of the cube and stand: the elevation and end view on XY and the plan.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "0c1a0a83b00727b952ac2eda7c48db6e",
+  "questionRef": "2013 HL Section A Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-HL-paper-secA-q1-art.png",
+  "year": 2013
+ },
+ "dcg-2013-HL-paper-secA-q2-art": {
+  "alt": "Question A-2 as printed. A photograph of a bowling ball and pins, beside the elevation on XY of a pin and the ball in contact (with the point P and the radius R) and the incomplete plan.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "46d9429c96f6d685b5b0a0a4bf5391a9",
+  "questionRef": "2013 HL Section A Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-HL-paper-secA-q2-art.png",
+  "year": 2013
+ },
+ "dcg-2013-HL-paper-secA-q3-art": {
+  "alt": "Question A-3 as printed. A photograph of the Key Technologies sign, a truncated copper pyramid pierced by a triangular steel prism, beside the elevation on XY and the incomplete plan of the solids, with the points a, b, c, d and e.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "5422202bb66ace509381f12c43986b68",
+  "questionRef": "2013 HL Section A Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-HL-paper-secA-q3-art.png",
+  "year": 2013
+ },
+ "dcg-2013-HL-paper-secA-q4-art": {
+  "alt": "Question A-4 as printed. A CSI title graphic with a laser beam, the question text with its two tick boxes, Skew lines or Intersecting lines, and the elevation and plan on XY of the two bullet paths AB and CD.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "8e56e9b9a55770e71d85d00c419bb1f7",
+  "questionRef": "2013 HL Section A Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-HL-paper-secA-q4-art.png",
+  "year": 2013
+ },
+ "dcg-2013-HL-paper-secB-q1-art": {
+  "alt": "Question B-1 as printed. Two photographs of the Fountain Place skyscraper in Dallas, and Fig. B-1: the elevation on XY (50m, 100m and 50m) with the planes A, B and C and the point S, and the plan (50m sides, set at 30 degrees). Scale 1:2000.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "a65522af8dce5667390f02086adf4355",
+  "questionRef": "2013 HL Section B Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-HL-paper-secB-q1-art.png",
+  "year": 2013
+ },
+ "dcg-2013-HL-paper-secB-q2-art": {
+  "alt": "Question B-2 as printed. Photographs of a goalkeeper diving at soccer goal posts and of a ball hitting the net, and Fig. B-2: the axes X, Y and Z with the isosceles triangle abc and its 110 degree angles, the incomplete dimetric projection of the goal posts (8.5m, 7m, 1m and R4m), the elevation and end view, the direction F and a pictorial view. Scale 1:100.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "cdf4f8c8fa6ec66c83de46b3417a3ca2",
+  "questionRef": "2013 HL Section B Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-HL-paper-secB-q2-art.png",
+  "year": 2013
+ },
+ "dcg-2013-HL-paper-secB-q3-art": {
+  "alt": "Question B-3 as printed. A photograph of the Egyptian pyramids, and Fig. B-3: the elevation (8m, with a 40 degree entrance) and the plan (8m square, with the 2m, 4m, 2m and 1m entrance, the corner A and the spectator S at 60 degrees), part (a)'s bulleted specification, and part (b)'s table of the coordinates of A, B, C and D. Scale 1:100 and 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "dafd2b30d03de2f7d55b9ffc4969361d",
+  "questionRef": "2013 HL Section B Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-HL-paper-secB-q3-art.png",
+  "year": 2013
+ },
+ "dcg-2013-HL-paper-secC-q1-art": {
+  "alt": "Question C-1, Geologic Geometry, as printed. The option banner, the question text with the specification (i) and (ii), and a photograph of a motorway overpass; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page. Scale 1:1000.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "4c47140c6a456ae73c06d37129457ad4",
+  "questionRef": "2013 HL Section C Q1",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-HL-paper-secC-q1-art.png",
+  "year": 2013
+ },
+ "dcg-2013-HL-paper-secC-q2-art": {
+  "alt": "Question C-2, Structural Forms, as printed. The option banner, a graphic of a hyperbolic paraboloid uplighter, and Fig. C-2: the elevation on XY (160 high) with the vertices V1 and V2 and the focal points F1 and F2, the end view with B and D, the plan with the parabola ABC (180; 60, 90, 90 and 60; 300 across), and an isometric view. Scale 1:2.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "049cc4fc8abf60298edb0ab6e91a0748",
+  "questionRef": "2013 HL Section C Q2",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-HL-paper-secC-q2-art.png",
+  "year": 2013
+ },
+ "dcg-2013-HL-paper-secC-q3-art": {
+  "alt": "Question C-3, Surface Geometry, as printed. The option banner, a photograph of a diamond engagement ring, and Fig. C-3: the elevation on XY of a cut diamond with the surfaces B, C, D, E and F (10 high), its octagonal plan (2.5, 7.5 and 2.5) with the surfaces A, B, C and E, and a pictorial view. Scale 10:1 (Enlarged scale).",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "1e2fdc59653a12e75a13751d32040893",
+  "questionRef": "2013 HL Section C Q3",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-HL-paper-secC-q3-art.png",
+  "year": 2013
+ },
+ "dcg-2013-HL-paper-secC-q4-art": {
+  "alt": "Question C-4, Dynamic Mechanisms, as printed. The option banner; part (a): a photograph of a cardboard baling machine and Fig. C-4(a), the crank OA at 60 degrees with the links to B, C and D (OA 30, BC 168, CD 20); part (b): a 3D graphic of a radial plate cam and Fig. C-4(b), the cam with the involute from A to B, R8, R15, R18 and R36. Scale 1:1.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "3481063b298888999d998f80b0646f6d",
+  "questionRef": "2013 HL Section C Q4",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-HL-paper-secC-q4-art.png",
+  "year": 2013
+ },
+ "dcg-2013-HL-paper-secC-q5-art": {
+  "alt": "Question C-5, Assemblies, as printed. The option banner, the question text, Fig. C-5: dimensioned details of the eight numbered parts of a wall mounted candle lantern with the section line A-A, the parts list naming Base Mount, Glass Body, Height Adjustment Lever, Lever Pivot Pin, Roller, Candle Platform, Platform Guide Rod and Lid with their quantities, and an exploded 3D graphic of the parts.",
+  "attribution": "SEC Leaving Certificate Design and Communication Graphics 2013 Higher Level — © State Examinations Commission",
+  "labelMeanings": [],
+  "lettersVisible": [],
+  "level": "higher",
+  "md5": "ab746c5828e6e2a340ff1bcf49c1a87c",
+  "questionRef": "2013 HL Section C Q5",
+  "src": "/exam-figures/dcg/markbank/dcg-2013-HL-paper-secC-q5-art.png",
+  "year": 2013
+ },
  "dcg-2014-HL-paper-secA-q1-art": {
   "alt": "Question A-1 as printed. A photograph of a goalkeeper diving at a penalty kick, beside the elevation and plan on XY of a set of goal posts, the ball at P, and the lines PS and PT showing the start of the two flight paths.",
   "attribution": "SEC Leaving Certificate Design and Communication Graphics 2014 Higher Level — © State Examinations Commission",
