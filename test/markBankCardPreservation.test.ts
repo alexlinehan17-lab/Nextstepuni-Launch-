@@ -2583,7 +2583,7 @@ describe('Mark Bank card preservation', () => {
     expect(IRISH_HIGHER.filter(card => addedIrishRoutes.has(card.id)).map(card => card.id).sort())
       .toEqual([...addedIrishRoutes].sort());
     const deferred = (cards: readonly { id: string }[]) => cards.filter(card => irishDeferredIds.has(card.id)).length;
-    expect([deferred(IRISH_HIGHER), deferred(IRISH_ORDINARY)]).toEqual([0, 0]);
+    expect([deferred(IRISH_HIGHER), deferred(IRISH_ORDINARY)]).toEqual([99, 0]);
     expect(IRISH_HIGHER).toHaveLength(215 + addedIrishRoutes.size + deferred(IRISH_HIGHER));
     expect(IRISH_ORDINARY.filter(card => addedIrishOrdinaryRoutes.has(card.id)).map(card => card.id).sort())
       .toEqual([...addedIrishOrdinaryRoutes].sort());

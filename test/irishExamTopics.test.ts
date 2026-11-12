@@ -183,18 +183,18 @@ describe('Irish exam-topic registry', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'irish');
     expect(irishCrosswalk.summary).toMatchObject({
       // June's 91 components and the carded deferred papers (two a sitting, irish_deferred.py).
-      localPaperVariants: 91,
+      localPaperVariants: 93,
       localPhysicalMappings: IRISH_ATLAS.questions,
       distinctStudentFacingQuestions: IRISH_ATLAS.questions,
       referenceMappedLocalQuestions: 686,
       retainedLocalQuestions: IRISH_ATLAS.retainedLocalQuestions,
-      hostedPaperAnchorMaps: 91,
+      hostedPaperAnchorMaps: 93,
       preservedBaselineVariants: 26,
       preservedBaselineCards: 286,
-      newlyAddedPaperVariants: 65,
+      newlyAddedPaperVariants: 67,
       newlyAddedPhysicalMappings: IRISH_ATLAS.newlyAddedPhysicalMappings,
     });
-    expect(papers).toHaveLength(91);
+    expect(papers).toHaveLength(93);
     // 2566 until 2026-11-04: decision 5 folds 30 Foundation option entries into their 11 printed tasks,
     // then decision 4 withdraws the three 2022 Higher 3B(a) device entries (2536 -> 2533); each paper reviewed
     // in batch 2 adds its per-question entries (fixtures/irishArchiveProgress.ts).

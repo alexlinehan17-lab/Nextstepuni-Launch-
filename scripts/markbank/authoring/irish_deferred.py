@@ -48,8 +48,8 @@ DEFERRED = ' — Deferred sitting'
 
 # The deferred sittings carded so far, and the SEC's deferred recording for each year (HEAD-checked 12 Nov 2026:
 # 2025 = 44,032,055 bytes, 2024 = 44,430,350 bytes; June's are 41,807,615 and 43,417,495).
-SITTINGS = {}
-AUDIO = {}
+SITTINGS = {2025: ('higher',)}
+AUDIO = {2025: 'available'}
 
 # Every deferred paper and scheme, pinned: a changed PDF must be read again.
 SHA = {  # (year, level, paper; 0 = the scheme)
